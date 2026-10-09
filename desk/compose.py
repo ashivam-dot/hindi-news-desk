@@ -134,12 +134,14 @@ class Camera:
         cx = plate.pw / 2 + px0 + (px1 - px0) * e
         cy = plate.ph / 2 + py0 + (py1 - py0) * e
         parx, pary = motion["par"][0] * (e - 0.5), motion["par"][1] * (e - 0.5)
-        bx = cx + self.gx / z
-        by = cy + self.gy / z
+        # OpenCV 5 remaps only float32 maps, and a NumPy scalar (a float64 u, an int64 plate size) promotes to float64.
+        f32 = np.float32
+        bx = (cx + self.gx / z).astype(f32, copy=False)
+        by = (cy + self.gy / z).astype(f32, copy=False)
         d = cv2.remap(plate.depth, bx, by, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
         zz = 1 + dz * d * 2
-        mx = cx + self.gx / (z * zz) - parx * d * 2
-        my = cy + self.gy / (z * zz) - pary * d * 2
+        mx = (cx + self.gx / (z * zz) - parx * d * 2).astype(f32, copy=False)
+        my = (cy + self.gy / (z * zz) - pary * d * 2).astype(f32, copy=False)
         return cv2.remap(plate.rgb, mx, my, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 

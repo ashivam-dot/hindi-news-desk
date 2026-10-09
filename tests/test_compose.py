@@ -72,6 +72,16 @@ def test_end_card_without_a_channel_name(monkeypatch):
     assert compose._end_layers((255, 205, 92))[0] is not None
 
 
+def test_camera_moves_with_numpy_scalars():
+    from types import SimpleNamespace
+
+    size = (np.int64(compose.H + 120), np.int64(compose.W + 120))
+    plate = SimpleNamespace(pw=size[1], ph=size[0], rgb=np.full((*size, 3), 90, np.uint8),
+                            depth=np.zeros(size, np.float32))
+    frame = compose.Camera().shoot(plate, np.float64(0.4), compose.MOTIONS[1], punch=np.float64(0.02))
+    assert frame.shape == (compose.H, compose.W, 3) and frame.dtype == np.uint8 and frame.mean() > 80
+
+
 def test_mix_lasts_as_long_as_the_video(tmp_path):
     import soundfile as sf
 
