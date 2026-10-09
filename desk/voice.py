@@ -320,7 +320,7 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
             end = int((words[-1]["end"] - LEAD_IN + 0.12) * SAMPLE_RATE) if after else len(raw)
             raw = raw[start:end]
         low = min(coverage) if coverage else 0.0
-        ok = clean and low >= MIN_COVERAGE and wpm is not None and HARD_WPM[0] <= wpm <= HARD_WPM[1]
+        ok = bool(clean and low >= MIN_COVERAGE and wpm is not None and HARD_WPM[0] <= wpm <= HARD_WPM[1])
         takes.append({"take": take, "model": record["served_model"], "coverage": [round(c, 3) for c in coverage],
                       "wpm": wpm, "clean": clean, "ok": ok})
         log.info("take %d (%s): coverage %s, %s wpm%s", take, record["served_model"],

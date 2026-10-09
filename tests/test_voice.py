@@ -79,6 +79,28 @@ def test_a_garbled_gemini_take_without_a_clone_is_retried_later(short, tmp_path,
         voice.synthesize(short, tmp_path)
 
 
+def test_a_good_gemini_take_is_timed_and_recorded(short, tmp_path, key, monkeypatch):
+    words = [w for b in short.beats for w in b.text.split()]
+    step = 60 / 147
+    seconds = len(words) * step
+    rng = np.random.default_rng(1)
+    take = (0.2 * rng.standard_normal(int(seconds * voice.SAMPLE_RATE))).astype(np.float32)
+    record = {"model": "gemini-3.8-flash-tts", "served_model": "gemini-3.8-flash-tts", "api": "interactions",
+              "voice": "Sulafat"}
+    monkeypatch.setattr(voice, "gemini_take", lambda *a, **k: (take, dict(record)))
+    # faster-whisper hands back NumPy floats; every record must still be plain JSON.
+    heard = [(w, np.float64(voice.LEAD_IN + i * step), np.float64(voice.LEAD_IN + (i + 0.9) * step))
+             for i, w in enumerate(words)]
+    monkeypatch.setattr(align, "heard", lambda wav: heard)
+    timing = voice._gemini_story(short, tmp_path)
+    takes = json.loads((tmp_path / "takes.json").read_text())
+    assert takes[0]["ok"] is True and len(takes) == 1
+    saved = json.loads((tmp_path / "timing.json").read_text())
+    assert saved["voice"]["engine"] == "gemini-sulafat" and saved["voice"]["preview"] is False
+    assert 140 <= saved["voice"]["wpm"] <= 155 and min(saved["voice"]["coverage"]) == 1.0
+    assert len(timing["beats"]) == len(short.beats) and len(timing["words"]) == len(words)
+
+
 def test_preview_uses_the_builtin_voice_and_is_marked(short, tmp_path, no_key, monkeypatch):
     seen = []
     monkeypatch.setattr(voice, "_chatterbox_story", lambda s, d, ref: seen.append(ref) or {})
@@ -197,7 +219,7 @@ def test_whisper_hears_16khz_mono_without_aliasing(tmp_path, monkeypatch):
             seen["audio"], seen["language"] = audio, kw["language"]
 
             class Word:
-                word, start, end = "नमस्ते", 0.1, 0.5
+                word, start, end = "नमस्ते", np.float64(0.1), np.float64(0.5)
 
             class Segment:
                 words = [Word]
@@ -205,6 +227,7 @@ def test_whisper_hears_16khz_mono_without_aliasing(tmp_path, monkeypatch):
 
     monkeypatch.setattr(align, "_whisper", Model)
     assert align.heard(tmp_path / "take.wav") == [("नमस्ते", 0.1, 0.5)]
+    assert all(type(x) is float for x in align.heard(tmp_path / "take.wav")[0][1:])
     assert isinstance(seen["audio"], np.ndarray) and seen["language"] == "hi"
 
 

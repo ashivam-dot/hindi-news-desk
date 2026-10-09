@@ -55,7 +55,7 @@ def heard(wav: Path) -> list[tuple[str, float, float]]:
     """[(word, start, end)] that Whisper heard in a Hindi recording."""
     segments, _ = _whisper().transcribe(samples(wav), language=LANGUAGE, word_timestamps=True, temperature=0.0,
                                         condition_on_previous_text=False)
-    return [(w.word, w.start, w.end) for s in segments for w in (s.words or [])]
+    return [(w.word, float(w.start), float(w.end)) for s in segments for w in (s.words or [])]
 
 
 def align(tokens: list[tuple[str, int]], spoken: list[tuple[str, float, float]]) -> tuple[list[dict], list[float]]:
