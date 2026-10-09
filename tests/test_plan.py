@@ -1,0 +1,171 @@
+from datetime import date, datetime, timezone
+
+import pytest
+
+from desk import ledger, news, plan, trends
+
+
+def utc(day, hour, minute=0):
+    return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
+
+
+def test_four_a_day_two_hours_apart_counted_in_ist(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    at = utc(9, 12)  # 17:30 IST
+    assert plan.can_publish(at) is None
+    ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:00:00+00:00", "loss": False})
+    assert "h ago" in plan.can_publish(at)
+    assert "h ago" in plan.can_publish(at, breaking=True)
+    assert plan.can_publish(utc(9, 12, 20), breaking=True) is None  # 80 minutes: the breaking gap is 75
+    assert plan.can_publish(utc(9, 13)) is None
+    # 03:00, 05:00 and 07:00 UTC are 08:30, 10:30 and 12:30 IST on 9 October: four that IST day with 11:00 UTC.
+    for i, hour in enumerate(("03", "05", "07")):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{hour}:00:00+00:00", "loss": False})
+    late = utc(9, 16)  # 21:30 IST
+    assert "today" in plan.can_publish(late)
+    assert plan.can_publish(late, breaking=True) is None
+    # 19:00 UTC on 9 October is already 00:30 IST on 10 October: a new IST day.
+    assert plan.can_publish(utc(9, 19)) is None
+
+
+def test_breaking_extra_is_one_and_can_be_switched_off(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    for i, hour in enumerate(("03", "05", "07", "09", "11")):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{hour}:00:00+00:00", "loss": False})
+    assert "today" in plan.can_publish(utc(9, 14), breaking=True)
+    monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)
+    ledger.save("published", ledger.published()[:4])
+    assert "today" in plan.can_publish(utc(9, 14), breaking=True)
+
+
+def test_a_scheduled_short_only_blocks_the_hours_around_it(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    ledger.record_publish({"id": "wk-s", "published_at": "2026-10-10T03:45:00+00:00", "loss": False})
+    assert plan.can_publish(utc(9, 22)) is None
+    assert "scheduled" in plan.can_publish(utc(10, 2, 30))
+    assert "h ago" in plan.can_publish(utc(10, 5))
+
+
+@pytest.mark.parametrize("at, open_", [(utc(9, 2, 29), False), (utc(9, 2, 30), True), (utc(9, 17, 29), True),
+                                       (utc(9, 17, 30), False), (utc(9, 20), False)])
+def test_window_is_eight_to_eleven_ist(at, open_):
+    # 02:30 UTC is 08:00 IST and 17:30 UTC is 23:00 IST.
+    assert plan.in_window(at) is open_
+
+
+def test_lineup_holds_regular_stories_at_night_but_not_breaking_ones(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    at = utc(9, 20)  # 01:30 IST
+    quiet = {"id": "wk-1", "kind": "incident", "region": "india", "fame": 150_000, "news_at": "2026-10-09T18:00:00+00:00"}
+    big = {"id": "wk-2", "kind": "incident", "region": "india", "fame": 900_000, "news_at": "2026-10-09T19:00:00+00:00"}
+    ready, notes = plan.lineup([quiet, big], at)
+    assert [c["id"] for c in ready] == ["wk-2"] and ready[0]["breaking"]
+    assert any("08:00-23:00 IST" in n for n in notes)
+    ready, _ = plan.lineup([quiet], utc(10, 5))
+    assert [c["id"] for c in ready] == ["wk-1"]
+
+
+def test_india_first():
+    at = utc(9, 14)
+    base = {"kind": "incident", "category": "flood", "fame": 200_000, "news_at": "2026-10-09T12:00:00+00:00"}
+    india, linked, world = base | {"region": "india"}, base | {"india_link": True}, base | {"region": "world"}
+    assert plan.priority(india, at) > plan.priority(linked, at) > plan.priority(world, at)
+    assert plan.priority(base | {"region": "india", "fame": 130_000}, at) > plan.priority(world, at)
+
+
+def test_a_story_without_dates_is_fresh():
+    assert plan.age_hours({"kind": "death", "fame": 1}, utc(9, 14)) == 0.0
+
+
+def test_fresh_story_beats_bigger_stale_one():
+    at = utc(9, 14)
+    fresh = {"id": "a", "kind": "incident", "category": "protest", "fame": 200_000, "news_at": "2026-10-09T12:00:00+00:00"}
+    stale = {"id": "b", "kind": "incident", "category": "flood", "fame": 600_000, "date": "2026-10-06"}
+    assert plan.priority(fresh, at) > plan.priority(stale, at)
+
+
+def test_breaking_lane():
+    at = utc(9, 14)
+    crash = {"kind": "incident", "category": "aviation", "fame": 900_000, "date": "2026-09-10",
+             "news_at": "2026-10-09T13:00:00+00:00"}
+    assert plan.age_hours(crash, at) > 600 and not plan.is_breaking(crash, at)
+    war = {"kind": "incident", "category": "conflict", "fame": 2_000_000, "news_at": "2026-10-09T13:00:00+00:00"}
+    assert not plan.is_breaking(war, at)
+    quake = {"kind": "incident", "category": "earthquake", "mag": 7.2, "age_h": 4, "fame": 90_000}
+    assert plan.is_breaking(quake, at) and not plan.is_breaking(quake | {"age_h": 30}, at)
+    assert plan.is_breaking(quake | {"mag": 6.4, "alert": "orange"}, at)
+    assert not plan.is_breaking(quake | {"mag": 6.4, "alert": "yellow"}, at)
+
+
+def test_trending_quakes_get_their_usgs_magnitude(monkeypatch):
+    from desk import usgs
+
+    q = usgs.Quake("us1", 7.1, "20 km N of X", datetime(2026, 10, 9, 3, tzinfo=timezone.utc), 10.0, 20.0, 10.0,
+                   "red", 900, "https://earthquake.usgs.gov/earthquakes/eventpage/us1")
+    monkeypatch.setattr(usgs, "recent", lambda: [q])
+    cands = [{"category": "earthquake", "coords": [10.5, 20.2], "date": "2026-10-09"},
+             {"category": "earthquake", "coords": [-30, 100], "date": "2026-10-09"}]
+    assert plan._quake_facts(cands) == []
+    assert cands[0]["mag"] == 7.1 and cands[0]["alert"] == "red" and "mag" not in cands[1]
+
+
+def test_ledger_skip_marks_done(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    assert not ledger.is_done("wk-x")
+    ledger.skip("wk-x", "gate: test")
+    assert ledger.is_done("wk-x")
+
+
+def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():
+    sunday = trends.story_id("Q1", "protest", date(2026, 10, 11))
+    monday = trends.story_id("Q1", "protest", date(2026, 10, 12))
+    assert sunday != monday and sunday.startswith("wk-Q1-2026w")
+    assert trends.story_id("Q1", "flood", date(2026, 10, 11)) == "wk-Q1"
+    rows = [{"id": "wk-Q1-p1", "published_at": "2026-10-11T23:00:00+00:00"}]
+    at = datetime(2026, 10, 12, 1, 7, tzinfo=timezone.utc)
+    assert plan.cooling({"qid": "Q1", "category": "protest", "id": monday}, at, rows)
+    assert not plan.cooling({"qid": "Q11", "category": "protest", "id": "wk-Q11-2026w42"}, at, rows)
+    assert not plan.cooling({"qid": "Q1", "category": "protest"}, datetime(2026, 10, 18, 2, tzinfo=timezone.utc), rows)
+
+
+def test_ended_or_old_movements_are_not_news():
+    def ent(**claims):
+        return {"claims": {p: [{"mainsnak": {"datavalue": {"value": {"time": v}}}}] for p, v in claims.items()}}
+    today = date(2026, 10, 9)
+    assert trends.is_current(ent(P571="+2026-05-00T00:00:00Z"), "movement", today)
+    assert not trends.is_current(ent(P580="+2026-06-06T00:00:00Z", P582="+2026-07-25T00:00:00Z"), "protest", today)
+    assert not trends.is_current(ent(P580="+2020-08-09T00:00:00Z"), "protest", today)
+    assert not trends.is_current(ent(), "movement", today)
+    assert not trends.is_current(ent(), "conflict", today)
+    assert trends.is_current(ent(P580="+2026-02-28T00:00:00Z"), "conflict", today)
+    assert trends.is_current(ent(), "protest", today)
+
+
+def test_india_link():
+    india = {"claims": {"P17": [{"mainsnak": {"datavalue": {"value": {"id": "Q668"}}}}]}}
+    abroad = {"claims": {"P17": [{"mainsnak": {"datavalue": {"value": {"id": "Q30"}}}}]}}
+    assert trends.region(india, set()) == "india"
+    assert trends.india_link(abroad, {"IN"}) and not trends.india_link(abroad, {"US"})
+    assert trends.india_link(abroad, {"US"}, hindi_news=1)
+
+
+def test_feed_dates_without_a_zone_do_not_break_the_feed(monkeypatch):
+    rss = ("<rss><channel><item><title>Quake hits city - Outlet</title><pubDate>Fri, 09 Oct 2026 10:00:00 -0000"
+           "</pubDate></item><item><title>No outlet here</title><pubDate>Fri, 09 Oct 2026 11:00:00 GMT</pubDate>"
+           "</item></channel></rss>")
+    monkeypatch.setattr(news.net, "get", lambda *a, **k: rss)
+    items = news.headlines("IN", utc(9, 12))
+    assert [i["outlet"] for i in items] == ["Outlet", ""] and all(i["at"].endswith("+00:00") for i in items)
+
+
+def test_hindi_google_news_is_watched(monkeypatch):
+    assert "hl=hi&gl=IN&ceid=IN:hi" in news.FEEDS["IN-hi"]
+    rss = ("<rss><channel><item><title>ब्रेकिंग: वाराणसी में बाढ़ से हालात गंभीर - अमर उजाला</title>"
+           "<pubDate>Fri, 09 Oct 2026 10:00:00 GMT</pubDate></item></channel></rss>")
+    monkeypatch.setattr(news.net, "get", lambda *a, **k: rss)
+    items = news.headlines("IN-hi", utc(9, 12))
+    assert items[0]["title"] == "वाराणसी में बाढ़ से हालात गंभीर" and items[0]["outlet"] == "अमर उजाला"
+
+
+def test_india_trends_come_first():
+    assert trends.GEOS[0] == "IN"

@@ -1,0 +1,47 @@
+{
+ "id": "wk-Q900001",
+ "kind": "death",
+ "title": "सुरों के सफ़र का अंत: रमेश प्रसाद वर्मा को श्रद्धांजलि",
+ "beats": [
+  {"text": "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे, 8 अक्टूबर 2026 को 81 वर्ष की उम्र में उनका निधन हुआ।", "shot": "photo:0", "card": {"big": "1945 – 2026", "small": ""}, "pause_after": 0.3},
+  {"text": "वाराणसी की गलियों में पले रमेश बचपन से ही मंदिर के भजनों में अपनी आवाज़ ढूंढते थे।", "shot": "photo:1", "card": {"big": "वाराणसी", "small": ""}, "pause_after": 0.3},
+  {"text": "1968 में उनका पहला एल्बम आया और पूरे देश ने उस नई आवाज़ को सुना।", "shot": "photo:2", "card": {"big": "पहला एल्बम 1968", "small": ""}, "pause_after": 0.3},
+  {"text": "उन्होंने 12 भाषाओं में गाया और 3 लाख से ज़्यादा लोग उनके एक संगीत समारोह में पहुंचे थे।", "shot": "photo:0", "card": {"big": "12 भाषाएं", "small": ""}, "pause_after": 0.3},
+  {"text": "1999 में उन्हें पद्म श्री से सम्मानित किया गया, जिसे उन्होंने अपने गुरु को समर्पित किया।", "shot": "photo:1", "card": {"big": "पद्म श्री 1999", "small": ""}, "pause_after": 0.3},
+  {"text": "मंच से उतरकर वे बच्चों को मुफ़्त में संगीत सिखाते थे, यही उनकी सबसे बड़ी खुशी थी।", "shot": "photo:2", "card": {"big": "गुरु", "small": ""}, "pause_after": 0.3},
+  {"text": "उनकी आवाज़ अब रिकॉर्ड में रहेगी, और उनके सुर हमेशा याद रहेंगे।", "shot": "photo:0", "card": {"big": "विरासत", "small": ""}, "pause_after": 0.3},
+  {"text": "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।", "shot": "outro", "card": {"big": "", "small": "स्रोत विवरण में"}, "pause_after": 0.5}
+ ],
+ "facts": [
+  {"key": "name", "value": "Ramesh Prasad Verma", "source": "https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "numbers": [], "evidence": "Wikipedia article title"},
+  {"key": "died", "value": "8 अक्टूबर 2026", "source": "https://www.wikidata.org/wiki/Q900001", "numbers": ["8", "2026"], "evidence": "Wikidata P570 = 2026-10-08"},
+  {"key": "born", "value": "2 मार्च 1945", "source": "https://www.wikidata.org/wiki/Q900001", "numbers": ["2", "1945"], "evidence": "Wikidata P569 = 1945-03-02"},
+  {"key": "age", "value": "81", "source": "https://www.wikidata.org/wiki/Q900001", "numbers": ["81"], "evidence": "computed from P569 and P570"},
+  {"key": "source-1968", "value": "1968", "source": "https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "numbers": ["1968"], "evidence": "His first album came out in 1968."},
+  {"key": "source-12", "value": "12", "source": "https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "numbers": ["12"], "evidence": "He sang in 12 languages."},
+  {"key": "source-300000", "value": "300000", "source": "https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "numbers": ["300000"], "evidence": "More than 300,000 people attended one concert."},
+  {"key": "source-1999", "value": "1999", "source": "https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "numbers": ["1999"], "evidence": "He received the Padma Shri in 1999."}
+ ],
+ "sources": ["https://en.wikipedia.org/wiki/Ramesh_Prasad_Verma", "https://www.wikidata.org/wiki/Q900001"],
+ "loss": true,
+ "scene": {
+  "template": "story", "mood": "tribute", "voice": "sulafat", "region": "india", "name_hi": "रमेश प्रसाद वर्मा",
+  "photos": [
+   {"file": "File:Ramesh Prasad Verma 2010.jpg", "license": "CC BY-SA 4.0", "page": "https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_2010.jpg", "credit": "फ़ोटो: Example Author / CC BY-SA 4.0 / Wikimedia Commons", "description": "Ramesh Prasad Verma performing in 2010", "path": "work/wk-Q900001/photos/0.jpg"},
+   {"file": "File:Ramesh Prasad Verma concert.jpg", "license": "CC BY 2.0", "page": "https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_concert.jpg", "credit": "फ़ोटो: Another Author / CC BY 2.0 / Wikimedia Commons", "description": "Ramesh Prasad Verma at a concert", "path": "work/wk-Q900001/photos/1.jpg"},
+   {"file": "File:Ramesh Prasad Verma Padma Shri.jpg", "license": "Public domain", "page": "https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_Padma_Shri.jpg", "credit": "फ़ोटो: President's Secretariat / Public domain / Wikimedia Commons", "description": "Ramesh Prasad Verma receiving the Padma Shri", "path": "work/wk-Q900001/photos/2.jpg"}
+  ],
+  "names": [{"hi": "रमेश प्रसाद वर्मा", "en": "Ramesh Prasad Verma"}, {"hi": "वाराणसी", "en": "Varanasi"}, {"hi": "पद्म श्री", "en": "Padma Shri"}],
+  "writer": {"models": ["gemini-3.8-flash", "gemini-3.8-flash"], "rejected": []}
+ },
+ "tags": ["Ramesh Prasad Verma", "रमेश प्रसाद वर्मा", "श्रद्धांजलि", "hindi news", "हिंदी समाचार"],
+ "summary": "रमेश प्रसाद वर्मा (1945–2026) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के तथ्यों से।",
+ "event_time": "2026-10-08",
+ "credits": [
+  "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)",
+  "फ़ोटो: Example Author / CC BY-SA 4.0 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_2010.jpg",
+  "फ़ोटो: Another Author / CC BY 2.0 / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_concert.jpg",
+  "फ़ोटो: President's Secretariat / Public domain / Wikimedia Commons https://commons.wikimedia.org/wiki/File:Ramesh_Prasad_Verma_Padma_Shri.jpg"
+ ],
+ "hashtags": ["रमेश प्रसाद वर्मा", "श्रद्धांजलि", "हिंदीसमाचार"]
+}

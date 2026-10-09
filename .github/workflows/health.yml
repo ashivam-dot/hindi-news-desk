@@ -1,0 +1,27 @@
+name: health
+# Every six hours: alert (an `alert` issue, which GitHub emails to the owner) when the desk has gone silent, its last
+# run failed, or it is holding (no Sulafat voice, no channel id). Quiet while the repository variable PAUSED is true.
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    if: vars.PAUSED != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/checkout@v5
+        with:
+          ref: state
+          path: state
+      - name: Check the last run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/health_check.py state/health.json

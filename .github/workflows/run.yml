@@ -1,0 +1,127 @@
+name: run
+# Every 30 minutes: watch the trend radar, make the best eligible Hindi Short, gate it, publish it, record the result.
+# The desk itself decides whether it may publish now (08:00-23:00 IST, at most 4 a day, 2 h apart, breaking lane).
+on:
+  schedule:
+    - cron: "22,52 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "Dry run: make the best candidate, never publish, keep the MP4 as an artifact"
+        type: boolean
+        default: true
+      event:
+        description: "Only make this wiki:<English Wikipedia article title> (never publishes)"
+        type: string
+        default: ""
+      voice_preview:
+        description: "Narrate with Chatterbox's built-in preview voice (dry runs and event only; never publishable)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: desk
+  cancel-in-progress: false
+
+jobs:
+  run:
+    # Repository variable PAUSED=true stops the schedule; manual dry runs still work.
+    if: github.event_name != 'schedule' || vars.PAUSED != 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 110
+    environment: youtube
+    env:
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      RUN_ID: ${{ github.run_id }}
+      DRY: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry) && 'true' || 'false' }}
+      EVENT: ${{ inputs.event }}
+      PREVIEW: ${{ inputs.voice_preview && 'true' || 'false' }}
+      PAUSED: ${{ vars.PAUSED }}
+      DESK_CHANNEL_ID: ${{ vars.DESK_CHANNEL_ID }}
+      DESK_CHANNEL_NAME: ${{ vars.DESK_CHANNEL_NAME }}
+      DESK_CHANNEL_NAME_HI: ${{ vars.DESK_CHANNEL_NAME_HI }}
+      DESK_CHANNEL_HANDLE: ${{ vars.DESK_CHANNEL_HANDLE }}
+    steps:
+      - name: Refuse to publish while paused
+        run: |
+          if [ "$PAUSED" = "true" ] && [ "$DRY" != "true" ] && [ -z "$EVENT" ]; then
+            echo "PAUSED is true: only dry runs (or event makes) may run"; exit 1
+          fi
+          if [ "$PREVIEW" = "true" ] && [ "$DRY" != "true" ] && [ -z "$EVENT" ]; then
+            echo "voice_preview is only for dry runs"; exit 1
+          fi
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - name: Check out the state branch
+        run: |
+          git fetch --depth 1 origin state
+          git worktree add state origin/state
+      - name: Free disk space for the models
+        run: sudo rm -rf /usr/local/lib/android /usr/share/dotnet /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      # The fallback writer's weights (7 GB) are fetched per run: with them the cache would pass GitHub's 10 GB limit.
+      - uses: actions/cache@v5
+        with:
+          path: |
+            ~/.cache/huggingface
+            work/cache
+            !work/cache/llm
+          key: models-${{ hashFiles('uv.lock', 'tts/uv.lock') }}
+          restore-keys: models-
+      - name: Install
+        run: |
+          uv sync --frozen
+          uv sync --frozen --project tts
+      - name: Run
+        env:
+          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          flag=""
+          if [ "$PREVIEW" = "true" ]; then flag="--voice-preview"; fi
+          if [ -n "$EVENT" ]; then uv run python -m desk.cli make "$EVENT" $flag
+          elif [ "$DRY" = "true" ]; then uv run python -m desk.cli run --dry $flag
+          else uv run python -m desk.cli run; fi
+      - name: Save state
+        if: always() && env.DRY != 'true' && env.EVENT == ''
+        run: |
+          cd state
+          git add -A
+          git -c user.name="hindi-news-desk bot" -c user.email="335661989+ashivam-dot@users.noreply.github.com" \
+            commit -q -m "state: run $RUN_ID" || exit 0
+          git pull -q --rebase origin state
+          git push -q origin HEAD:state
+      - name: Keep the Short
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: short-${{ github.run_id }}
+          path: |
+            work/*/short.mp4
+            work/*/short.json
+            work/*/timing.json
+            work/*/takes.json
+            work/*/render.json
+            work/*/writer_log.json
+            work/*/PREVIEW
+            work/*/stills/*.png
+            work/dry-health.json
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Alert on failure
+        if: failure() && env.DRY != 'true' && env.EVENT == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(gh issue list --state open --label alert --search "Desk run failed" --json number --jq '.[0].number')
+          if [ -n "$n" ]; then gh issue comment "$n" --body "Failed again: $RUN_URL"
+          else gh issue create --label alert --title "Desk run failed" --body "Run: $RUN_URL (details in state/health.json on the state branch)"; fi

@@ -1,0 +1,43 @@
+[project]
+name = "hindi-news-desk"
+version = "0.1.0"
+description = "An India-first Hindi news and incidents desk that writes, narrates and publishes sourced YouTube Shorts."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=2.0",
+    "pillow>=12",
+    "requests>=2.32",
+    "soundfile>=0.13",
+    "torch>=2.14",
+    "transformers>=5.17",
+    "faster-whisper>=1.2",
+    "fonttools>=4.55",
+    "google-auth>=2.40",
+    "google-auth-oauthlib>=1.2",
+    "google-api-python-client>=2.170",
+    "mwparserfromhell>=0.6",
+    "opencv-python-headless>=5.0.0.93",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+desk = "desk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["desk*"]
+
+[tool.setuptools.package-data]
+desk = ["fonts/*"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
