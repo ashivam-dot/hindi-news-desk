@@ -48,6 +48,8 @@ def test_wikidata_hindi_labels_and_sitelinks():
 
 
 def test_photo_relevance_keys():
+    assert media._text('Unknown author<span style="display: none;">Unknown author</span>') == "Unknown author"
+    assert media._text('<a href="//x">Jane &amp; Co</a> <span class="v">2010</span>') == "Jane & Co 2010"
     assert media._keys("Hurricane Isaias (2026)") == {"isaias"}
     assert media._keys("Nana Patekar") == {"nana", "patekar"}
     assert media._names("Nana Patekar at IFFI Goa, 2017", {"nana", "patekar"})

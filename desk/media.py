@@ -43,8 +43,11 @@ class Photo:
         return f"फ़ोटो: {self.author} / {self.license} / Wikimedia Commons"
 
 
+HIDDEN = re.compile(r"<(\w+)[^>]*display:\s*none[^>]*>.*?</\1>", re.I | re.S)
+
+
 def _text(value: str | None, limit: int = 200) -> str:
-    text = re.sub(r"<[^>]+>", " ", value or "")
+    text = re.sub(r"<[^>]+>", " ", HIDDEN.sub("", value or ""))
     text = re.sub(r"\s+", " ", html.unescape(text)).strip()
     return text[:limit]
 
