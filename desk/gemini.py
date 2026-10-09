@@ -20,6 +20,7 @@ FALLBACK = ("gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-
             "gemini-flash-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-flash-lite-latest")
 TEXT_MODEL = re.compile(r"^gemini-(?:(?P<v>\d+(?:\.\d+)?)-)?flash(?P<lite>-lite)?(?P<tail>-preview(?:-[\w.-]+)?|-latest)?$")
 MAX_WAIT = 70.0
+READ_TIMEOUT = 240
 MIN_GAP = 6.0
 log = logging.getLogger("desk.gemini")
 
@@ -137,11 +138,18 @@ def chat(messages: list[dict], schema: dict | None = None, temperature: float = 
             _last[model] = time.monotonic()
             try:
                 r = requests.post(f"{API}/{model}:generateContent", headers={"x-goog-api-key": key()}, json=body,
-                                  timeout=(20, 300))
+                                  timeout=(20, READ_TIMEOUT))
+            except requests.Timeout:
+                log.info("%s timed out after %.0f s; next model for the rest of this run", model,
+                         time.monotonic() - _last[model])
+                _spent.add(model)
+                errors.append(f"{model}: timeout")
+                break
             except requests.RequestException as exc:
                 errors.append(f"{model}: {type(exc).__name__}")
                 time.sleep(5)
                 continue
+            log.info("%s: HTTP %s in %.0f s", model, r.status_code, time.monotonic() - _last[model])
             if r.status_code == 200:
                 data = r.json()
                 cand = (data.get("candidates") or [{}])[0]

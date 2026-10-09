@@ -40,6 +40,15 @@ def test_a_script_number_must_have_its_value_in_a_source():
     assert hindi.unsupported_numbers("1234560 लोग", rounded) == ["1234560"]
 
 
+def test_english_sources_count_their_spelled_numbers():
+    source = hindi.values("She recorded songs in over thirty-six Indian languages, twelve of them abroad, "
+                          "and sang with Seventy two musicians. Someone, anyone, often went.")
+    assert {"36", "12", "72"} <= source
+    assert hindi.unsupported_numbers("36 से अधिक भाषाएं, 12 विदेश में, 72 संगीतकार", source) == []
+    assert hindi.unsupported_numbers("37 भाषाएं", source) == ["37"]
+    assert hindi.english_numbers("someone often went alone") == set()
+
+
 def test_hindi_source_numbers_count_too():
     source = hindi.values("बाढ़ से ४ लाख लोग प्रभावित हुए।")
     assert hindi.unsupported_numbers("4 लाख लोग", source) == []

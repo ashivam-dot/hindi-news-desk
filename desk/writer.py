@@ -5,7 +5,8 @@ The model writes; code decides. Gemini (free tier, GEMINI_API_KEY) writes first 
 when Gemini can't answer. Every number in the script must have its value in a source (Devanagari digits and लाख or
 करोड़ included), every proper noun must be listed as a {hi, en} pair whose English is in the sources and whose Hindi
 is in the script (Wikidata's Hindi label wins when there is one), Latin-script words must be in the English source,
-and a second model pass lists anything unsupported. A failing draft is rewritten twice, then the story is dropped.
+and a second model pass lists anything unsupported. A failing draft is rewritten up to three times (the fact check
+runs only on drafts that pass the code gates, so it needs rewrites left), then the story is dropped.
 Death and casualty facts still pass the same two-source gates as Orbitwire's.
 """
 from __future__ import annotations
@@ -23,6 +24,7 @@ MIN_PHOTOS = 3
 OUTRO = "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।"
 CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
 MIN_WORDS, MAX_WORDS = 80, 135
+DRAFTS = 4
 SCHEMA = {
     "type": "object",
     "properties": {
@@ -300,12 +302,12 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     own = pen is None
     pen = pen or Pen()
     try:
-        for attempt in range(3):
+        for attempt in range(DRAFTS):
             ignored = []
             draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi, hi_names, banned_names or [],
                                           kind, agreed_toll, angle)
-            if attempt < 2:
+            if attempt < DRAFTS - 1:
                 problems += monotone(draft)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])

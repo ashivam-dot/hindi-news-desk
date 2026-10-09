@@ -64,10 +64,31 @@ def numbers(text: str) -> list[tuple[str, bool]]:
     return out
 
 
+_UNITS = "one two three four five six seven eight nine".split()
+_TEENS = "ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split()
+_TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
+ENGLISH = {w: i + 1 for i, w in enumerate(_UNITS)} | {w: i + 10 for i, w in enumerate(_TEENS)}
+ENGLISH_WORD = re.compile(rf"\b(?:(?P<tens>{'|'.join(_TENS)})(?:[\s-](?P<unit>{'|'.join(_UNITS)}))?"
+                          rf"|(?P<small>{'|'.join(_TEENS + _UNITS)}))\b", re.I)
+
+
+def english_numbers(text: str) -> set[str]:
+    """Numbers an English source spells out below 100 ("over thirty-six languages" -> 36)."""
+    found = set()
+    for m in ENGLISH_WORD.finditer(text or ""):
+        if m.group("tens"):
+            found.add(str((_TENS.index(m.group("tens").lower()) + 2) * 10
+                          + (ENGLISH[m.group("unit").lower()] if m.group("unit") else 0)))
+        else:
+            found.add(str(ENGLISH[m.group("small").lower()]))
+    return found
+
+
 def values(text: str) -> set[str]:
-    """Every value a source states, scaled ("1.5 million" -> 1500000) and as written ("1.5")."""
+    """Every value a source states, scaled ("1.5 million" -> 1500000), as written ("1.5") and spelled out in English
+    ("thirty-six")."""
     text = ascii_digits(text)
-    found = {v for v, _ in numbers(text)}
+    found = {v for v, _ in numbers(text)} | english_numbers(text)
     found |= {n.replace(",", "") for n in re.findall(r"\d{1,3}(?:,\d{3})+|\d+(?:\.\d+)?", text)}
     return {_canon(float(v)) if ":" not in v else v for v in found}
 

@@ -180,7 +180,7 @@ def test_checker_items_that_quote_the_script_still_reject(tmp_path):
     assert out == draft() and [e["problems"] for e in log] == [
         ["unsupported: " + flagged[0]], ["unsupported: The concert size is not stated"]]
     with pytest.raises(ValueError, match="no draft passed"):
-        write([flagged, flagged, flagged], tmp_path)
+        write([flagged] * writer.DRAFTS, tmp_path)
 
 
 def test_the_hindi_source_is_dropped_when_missing():
