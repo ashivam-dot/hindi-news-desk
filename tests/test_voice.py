@@ -180,6 +180,34 @@ def test_hindi_alignment_keeps_script_words_and_scores_each_line():
     assert all(b["start"] >= a["start"] for a, b in zip(words, words[1:]))
 
 
+def test_whisper_hears_16khz_mono_without_aliasing(tmp_path, monkeypatch):
+    t = np.arange(24000) / 24000
+    tone = 0.4 * np.sin(2 * np.pi * 1000 * t) + 0.4 * np.sin(2 * np.pi * 10000 * t)
+    sf.write(tmp_path / "take.wav", np.stack([tone, tone], axis=1), 24000, subtype="PCM_16")
+    audio = align.samples(tmp_path / "take.wav")
+    assert audio.dtype == np.float32 and audio.shape == (16000,)
+    spectrum = np.abs(np.fft.rfft(audio))
+    # 1 kHz survives; 10 kHz is above the new Nyquist and must not fold back to 6 kHz.
+    assert spectrum[1000] > 100 * spectrum[6000]
+
+    seen = {}
+
+    class Model:
+        def transcribe(self, audio, **kw):
+            seen["audio"], seen["language"] = audio, kw["language"]
+
+            class Word:
+                word, start, end = "नमस्ते", 0.1, 0.5
+
+            class Segment:
+                words = [Word]
+            return [Segment], None
+
+    monkeypatch.setattr(align, "_whisper", Model)
+    assert align.heard(tmp_path / "take.wav") == [("नमस्ते", 0.1, 0.5)]
+    assert isinstance(seen["audio"], np.ndarray) and seen["language"] == "hi"
+
+
 def test_extra_speech_outside_the_script_is_found():
     words = [{"text": "रमेश", "start": 2.0, "end": 2.4, "beat": 0}]
     spoken = [("कृपया गर्मजोशी से पढ़ें", 0.0, 1.5), ("रमेश", 2.0, 2.4)]

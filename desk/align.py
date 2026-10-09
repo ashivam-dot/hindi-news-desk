@@ -13,8 +13,12 @@ import os
 import unicodedata
 from pathlib import Path
 
+import numpy as np
+import soundfile as sf
+
 MODEL = os.environ.get("DESK_ALIGN_MODEL", "large-v3-turbo")
 LANGUAGE = "hi"
+WHISPER_RATE = 16000
 MIN_COVERAGE = 0.75
 # More letters than this heard outside the script is speech the voice added (it sometimes reads its direction).
 EXTRA_LETTERS = 6
@@ -35,9 +39,21 @@ def _whisper():
     return _model
 
 
+def samples(wav: Path) -> np.ndarray:
+    """A recording as Whisper's 16 kHz mono float32, read with soundfile (faster-whisper 1.2.1's own decoder passes
+    PyAV an argument that PyAV 19 no longer accepts) and resampled band-limited, through the FFT."""
+    audio, rate = sf.read(str(wav), dtype="float32", always_2d=True)
+    audio = audio.mean(axis=1)
+    if rate == WHISPER_RATE or not len(audio):
+        return audio.astype(np.float32)
+    n = max(round(len(audio) * WHISPER_RATE / rate), 1)
+    spectrum = np.fft.rfft(audio)[: n // 2 + 1]
+    return (np.fft.irfft(spectrum, n) * (n / len(audio))).astype(np.float32)
+
+
 def heard(wav: Path) -> list[tuple[str, float, float]]:
     """[(word, start, end)] that Whisper heard in a Hindi recording."""
-    segments, _ = _whisper().transcribe(str(wav), language=LANGUAGE, word_timestamps=True, temperature=0.0,
+    segments, _ = _whisper().transcribe(samples(wav), language=LANGUAGE, word_timestamps=True, temperature=0.0,
                                         condition_on_previous_text=False)
     return [(w.word, w.start, w.end) for s in segments for w in (s.words or [])]
 
