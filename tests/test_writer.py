@@ -152,6 +152,37 @@ def test_headlines_used_as_context_must_be_confirmed(headline, ok):
     assert writer._headline_ok(headline, hindi.values(SOURCE_EN + " 81"), SOURCE_EN) is ok
 
 
+class FakePen:
+    def __init__(self, verdicts):
+        self.verdicts, self.used = list(verdicts), []
+
+    def chat(self, messages, schema=None, **kw):
+        self.used.append("fake")
+        if schema is writer.CHECK_SCHEMA:
+            return {"unsupported": self.verdicts.pop(0)}
+        return draft()
+
+
+def write(verdicts, tmp_path):
+    pen = FakePen(verdicts)
+    return writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                        log_path=tmp_path / "log.json", pen=pen)
+
+
+def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):
+    out, log, _ = write([["unsupported: पंडित दीनानाथ मंगेशकर", "कुन्दन लाल सहगल"]], tmp_path)
+    assert out == draft() and log == []
+
+
+def test_checker_items_that_quote_the_script_still_reject(tmp_path):
+    flagged = ["'हर किसी से प्यार से मिलते थे' is not in the sources"]
+    out, log, _ = write([flagged, ["The concert size is not stated"], []], tmp_path)
+    assert out == draft() and [e["problems"] for e in log] == [
+        ["unsupported: " + flagged[0]], ["unsupported: The concert size is not stated"]]
+    with pytest.raises(ValueError, match="no draft passed"):
+        write([flagged, flagged, flagged], tmp_path)
+
+
 def test_the_hindi_source_is_dropped_when_missing():
     msgs = writer._messages(writer.DEATH_BRIEF.format(name="X", pronoun="he", object="him"), ["f"], "src",
                             "हिंदी स्रोत", PHOTOS, "एक्स", {})

@@ -109,6 +109,19 @@ def contains(haystack: str, needle: str) -> bool:
     return False
 
 
+FUNCTION_WORDS = {norm(w) for w in (
+    "और का की के को ने में से पर है हैं था थी थे ही भी तो यह वह वे वो इस उस इन उन उन्हें उनके उनकी उनका उन्होंने "
+    "किया गया गई गए हो कर लिए जो बहुत साथ बाद").split()}
+
+
+def quotes(item: str, text: str) -> bool:
+    """Whether a checker's item quotes text: True when it quotes no Hindi, when its Hindi appears in text, or when
+    at least half of its quoted Hindi words do. False means it quotes Hindi that text never says."""
+    runs = re.findall(r"[\u0900-\u0963\u0966-\u097f]+(?:\s+[\u0900-\u0963\u0966-\u097f]+)*", item or "")
+    words = [w for r in runs for w in r.split() if len(norm(w)) >= 3 and norm(w) not in FUNCTION_WORDS]
+    return sum(contains(text, w) for w in words) * 2 >= len(words)
+
+
 def _letter(ch: str) -> bool:
     return unicodedata.category(ch)[0] in "LM" or ch.isdigit()
 

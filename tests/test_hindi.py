@@ -59,6 +59,20 @@ def test_devanagari_share_and_latin_words():
     assert hindi.latin_words("NDRF की टीम और Air India") == ["NDRF", "Air", "India"]
 
 
+def test_a_checker_item_must_quote_the_script():
+    script = ("लता मंगेशकर का 92 वर्ष की उम्र में निधन हो गया। उन्होंने 1974 में रॉयल अल्बर्ट हॉल में गाकर इतिहास रचा।"
+              " उनकी जादुई आवाज़ ने उन्हें कई भाषाओं में गाने का मौका दिया।")
+    # Real items from a run: the checker quoted the sources, not the script.
+    assert not hindi.quotes("पंडित दीनानाथ मंगेशकर", script)
+    assert not hindi.quotes("कुन्दन लाल सहगल", script)
+    assert not hindi.quotes("टाइम पत्रिका ने उन्हें भारतीय पार्श्वगायन की अपरिहार्य और एकछत्र साम्राज्ञी स्वीकार किया है",
+                            script)
+    assert hindi.quotes("'इतिहास रचा' is a superlative the sources do not state", script)
+    assert hindi.quotes("The claim about \"जादुई आवाज़ ने कई भाषाओं\"", script)
+    # An item that quotes no Hindi cannot be placed, so it still counts.
+    assert hindi.quotes("The 1974 Royal Albert Hall claim is not in the sources", script)
+
+
 def test_dates_in_hindi():
     assert hindi.date_hi(date(2026, 10, 10)) == "10 अक्टूबर 2026"
     assert hindi.date_hi(date(2026, 2, 1)) == "1 फ़रवरी 2026"

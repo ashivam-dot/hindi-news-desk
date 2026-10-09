@@ -182,8 +182,9 @@ def _check_messages(script: str, names: list[dict], facts: list[str], source_en:
             "quote, cause or superlative that the sources do not state, and any number that differs from the "
             "sources' (10 लाख is one million, 1 करोड़ is ten million). Also list any person, place, organisation or "
             "work named in SCRIPT that is missing from NAMES. Emotional or figurative phrasing that asserts no new "
-            "fact (\"एक युग का अंत\", \"हमेशा याद रहेंगे\") is fine. Write each item in English, quoting the Hindi "
-            "words. Return {\"unsupported\": []} when everything is supported."
+            "fact (\"एक युग का अंत\", \"हमेशा याद रहेंगे\") is fine. Check only what SCRIPT says: never list a fact "
+            "that only the SOURCES mention. Write each item in English, quoting the exact Hindi words from SCRIPT. "
+            "Return {\"unsupported\": []} when everything is supported."
             "\n\nCONFIRMED FACTS:\n" + "\n".join(f"- {f}" for f in facts) + "\n\nSOURCE (English):\n" + source_en
             + ("\n\nSOURCE (Hindi):\n" + source_hi if source_hi else "") + "\n\nNAMES:\n" + pairs + double
             + "\n\nSCRIPT:\n" + script)
@@ -300,6 +301,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     pen = pen or Pen()
     try:
         for attempt in range(3):
+            ignored = []
             draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi, hi_names, banned_names or [],
                                           kind, agreed_toll, angle)
@@ -309,10 +311,13 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
                                                    doubtful), CHECK_SCHEMA, temperature=0.0, max_tokens=800)
-                problems = [f"unsupported: {u}" for u in verdict.get("unsupported", []) if str(u).strip()]
+                items = [str(u).strip() for u in verdict.get("unsupported", []) if str(u).strip()]
+                ignored = [u for u in items if not hindi.quotes(u, script_text(draft))]
+                problems = [f"unsupported: {u}" for u in items if u not in ignored]
             if not problems:
                 return draft, log, pen.used
-            log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used)})
+            log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used),
+                        "ignored": ignored})
             if log_path:
                 log_path.parent.mkdir(parents=True, exist_ok=True)
                 log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")
