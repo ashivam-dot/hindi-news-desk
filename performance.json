@@ -1,0 +1,74 @@
+{
+ "at": "2026-10-10T07:51:53+00:00",
+ "videos": {
+  "WtXHPm0XgEQ": {
+   "id": "wk-Q141670823",
+   "published_at": "2026-10-10T05:00:15+00:00",
+   "snapshots": [
+    {
+     "age_h": 2.86,
+     "views": 48,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": null,
+   "region": null,
+   "views_24h": null
+  },
+  "osM-5cOV1Kk": {
+   "id": "wk-Q228928",
+   "published_at": "2026-10-10T05:57:03+00:00",
+   "snapshots": [
+    {
+     "age_h": 1.91,
+     "views": 32,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "death",
+   "category": null,
+   "region": null,
+   "views_24h": null
+  },
+  "TYsCL-64fSM": {
+   "id": "adv-delhi-cjp-2026-10-10",
+   "published_at": "2026-10-10T06:40:16+00:00",
+   "snapshots": [
+    {
+     "age_h": 1.19,
+     "views": 20,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "advisory",
+   "category": null,
+   "region": null,
+   "views_24h": null
+  },
+  "DiRMXLtNQn4": {
+   "id": "adv-delhi-cjp-2026-10-10-v2",
+   "published_at": "2026-10-10T07:34:18+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.29,
+     "views": 4,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "advisory",
+   "category": null,
+   "region": null,
+   "views_24h": null
+  }
+ },
+ "learned": {
+  "scored": 0,
+  "min_samples": 4,
+  "lifts": {}
+ }
+}
