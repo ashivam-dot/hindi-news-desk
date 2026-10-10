@@ -353,6 +353,69 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
                     "coverage": [round(c, 3) for c in coverage], "wpm": wpm, "tempo": factor, "takes": len(takes)})
 
 
+LINE_TRIES = 4
+LINE_GAP = 0.45
+
+
+def synthesize_lines(short: Short, out_dir: Path) -> dict:
+    """Sulafat narration read one beat per request, for list advisories: read in one go, a long list loses whole
+    lines, so each line is retried on its own. The joined track then gets the same whole-script check as a take."""
+    if not gemini.key():
+        raise VoiceHold("hold: no Sulafat voice: GEMINI_API_KEY is not set")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    direction = DIRECTION["news"]
+    part = out_dir / "line.wav"
+    pieces, records, tries, pinned = [], [], [], None
+    for i, beat in enumerate(short.beats):
+        tokens = [(w, 0) for w in beat.text.split()]
+        attempt = 0
+        while attempt < LINE_TRIES:
+            try:
+                raw, record = gemini_take(speakable(beat.text), direction, [pinned] if pinned else None)
+            except TTSUnavailable as exc:
+                if not pinned:
+                    raise VoiceHold(f"hold: no Sulafat voice: {exc}") from exc
+                pinned = None
+                continue
+            attempt += 1
+            pinned = record["model"]
+            head, tail = _bounds(raw)
+            raw = raw[head:tail]
+            sf.write(part, raw, SAMPLE_RATE)
+            words, coverage, spoken, _ = _listen(part, tokens)
+            clean = not any(align.outside(words, spoken))
+            heard = round(coverage[0], 3) if coverage else 0.0
+            tries.append({"beat": i, "try": attempt, "model": record["served_model"], "coverage": heard,
+                          "clean": clean})
+            log.info("line %d try %d (%s): coverage %.0f%%%s", i + 1, attempt, record["served_model"], heard * 100,
+                     "" if clean else ", extra speech")
+            if clean and heard >= MIN_COVERAGE:
+                pieces.append(raw)
+                records.append(record)
+                break
+        else:
+            raise TakeRejected(f"voice: line {i + 1} never read cleanly: {tries[-LINE_TRIES:]}"[:400])
+    part.unlink(missing_ok=True)
+    (out_dir / "takes.json").write_text(json.dumps(tries, indent=1), encoding="utf-8")
+    gap = np.zeros(int(LINE_GAP * SAMPLE_RATE), np.float32)
+    audio = np.concatenate([np.zeros(int(LEAD_IN * SAMPLE_RATE), np.float32)]
+                           + [x for p in pieces for x in (p, gap)][:-1])
+    wav = out_dir / "narration.wav"
+    sf.write(wav, audio, SAMPLE_RATE)
+    tokens = [(w, i) for i, b in enumerate(short.beats) for w in b.text.split()]
+    words, coverage, _, wpm = _listen(wav, tokens)
+    if not coverage or min(coverage) < MIN_COVERAGE or wpm is None or not HARD_WPM[0] <= wpm <= HARD_WPM[1]:
+        raise TakeRejected(f"voice: the joined lines failed the whole-script check: {coverage}, {wpm} wpm"[:400])
+    duration = sf.info(str(wav)).duration
+    words = [w | {"start": max(w["start"], LEAD_IN), "end": max(w["end"], LEAD_IN + 0.05)} for w in words]
+    models = sorted({r["served_model"] for r in records})
+    return _timing(out_dir, words, _spans(words, len(short.beats), duration, LEAD_IN), duration,
+                   {"engine": "gemini-sulafat", "identity": "sulafat", "preview": False, "voice": VOICE,
+                    "model": records[0]["model"], "served_model": ", ".join(models), "api": records[0]["api"],
+                    "by_line": True, "coverage": [round(c, 3) for c in coverage], "wpm": wpm, "tempo": 1.0,
+                    "takes": len(tries)})
+
+
 def _chatterbox(lines: list[str], out: Path, style: dict, seed: int, voice: Path | None) -> list[dict]:
     out.mkdir(parents=True, exist_ok=True)
     job = out / "job.json"

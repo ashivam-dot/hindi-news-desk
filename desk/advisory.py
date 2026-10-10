@@ -200,7 +200,7 @@ def make(spec: dict, work_root: Path) -> tuple[Short, dict]:
     work = work_root / short.id
     work.mkdir(parents=True, exist_ok=True)
     short.save(work / "short.json")
-    timing = voice.synthesize(short, work)
+    timing = voice.synthesize_lines(short, work)
     stats = render(short, timing, work)
     stats["voice"] = {k: timing["voice"].get(k) for k in ("engine", "identity", "preview", "served_model", "wpm",
                                                           "coverage", "tempo")}
