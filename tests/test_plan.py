@@ -9,18 +9,17 @@ def utc(day, hour, minute=0):
     return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
 
 
-def test_four_a_day_two_hours_apart_counted_in_ist(tmp_path, monkeypatch):
+def test_regular_shorts_go_out_half_an_hour_apart_up_to_ten_an_ist_day(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     at = utc(9, 12)  # 17:30 IST
     assert plan.can_publish(at) is None
-    ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:00:00+00:00", "loss": False})
+    ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:50:00+00:00", "loss": False})
     assert "h ago" in plan.can_publish(at)
-    assert "h ago" in plan.can_publish(at, breaking=True)
-    assert plan.can_publish(utc(9, 12, 20), breaking=True) is None  # 80 minutes: the breaking gap is 75
-    assert plan.can_publish(utc(9, 13)) is None
-    # 03:00, 05:00 and 07:00 UTC are 08:30, 10:30 and 12:30 IST on 9 October: four that IST day with 11:00 UTC.
-    for i, hour in enumerate(("03", "05", "07")):
-        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{hour}:00:00+00:00", "loss": False})
+    assert plan.can_publish(at, breaking=True) is None  # breaking news never waits for the last Short
+    assert plan.can_publish(utc(9, 12, 20)) is None
+    # Nine more that IST day (from 02:00 UTC = 07:30 IST): ten in all.
+    for i in range(9):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
     late = utc(9, 16)  # 21:30 IST
     assert "today" in plan.can_publish(late)
     assert plan.can_publish(late, breaking=True) is None
@@ -28,28 +27,28 @@ def test_four_a_day_two_hours_apart_counted_in_ist(tmp_path, monkeypatch):
     assert plan.can_publish(utc(9, 19)) is None
 
 
-def test_breaking_extra_is_one_and_can_be_switched_off(tmp_path, monkeypatch):
+def test_breaking_extra_is_two_and_can_be_switched_off(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
-    for i, hour in enumerate(("03", "05", "07", "09", "11")):
-        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{hour}:00:00+00:00", "loss": False})
-    assert "today" in plan.can_publish(utc(9, 14), breaking=True)
+    for i in range(12):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
+    assert "today" in plan.can_publish(utc(9, 15), breaking=True)
     monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)
-    ledger.save("published", ledger.published()[:4])
-    assert "today" in plan.can_publish(utc(9, 14), breaking=True)
+    ledger.save("published", ledger.published()[:10])
+    assert "today" in plan.can_publish(utc(9, 15), breaking=True)
 
 
-def test_a_scheduled_short_only_blocks_the_hours_around_it(tmp_path, monkeypatch):
+def test_a_scheduled_short_only_blocks_the_half_hour_around_it(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     ledger.record_publish({"id": "wk-s", "published_at": "2026-10-10T03:45:00+00:00", "loss": False})
-    assert plan.can_publish(utc(9, 22)) is None
-    assert "scheduled" in plan.can_publish(utc(10, 2, 30))
-    assert "h ago" in plan.can_publish(utc(10, 5))
+    assert plan.can_publish(utc(10, 3)) is None
+    assert "scheduled" in plan.can_publish(utc(10, 3, 30))
+    assert "h ago" in plan.can_publish(utc(10, 4))
 
 
-@pytest.mark.parametrize("at, open_", [(utc(9, 2, 29), False), (utc(9, 2, 30), True), (utc(9, 17, 29), True),
-                                       (utc(9, 17, 30), False), (utc(9, 20), False)])
-def test_window_is_eight_to_eleven_ist(at, open_):
-    # 02:30 UTC is 08:00 IST and 17:30 UTC is 23:00 IST.
+@pytest.mark.parametrize("at, open_", [(utc(9, 1, 29), False), (utc(9, 1, 30), True), (utc(9, 18, 29), True),
+                                       (utc(9, 18, 30), False), (utc(9, 20), False)])
+def test_window_is_seven_to_midnight_ist(at, open_):
+    # 01:30 UTC is 07:00 IST and 18:30 UTC is midnight IST.
     assert plan.in_window(at) is open_
 
 
@@ -60,9 +59,25 @@ def test_lineup_holds_regular_stories_at_night_but_not_breaking_ones(tmp_path, m
     big = {"id": "wk-2", "kind": "incident", "region": "india", "fame": 900_000, "news_at": "2026-10-09T19:00:00+00:00"}
     ready, notes = plan.lineup([quiet, big], at)
     assert [c["id"] for c in ready] == ["wk-2"] and ready[0]["breaking"]
-    assert any("08:00-23:00 IST" in n for n in notes)
+    assert any("07:00-24:00 IST" in n for n in notes)
     ready, _ = plan.lineup([quiet], utc(10, 5))
     assert [c["id"] for c in ready] == ["wk-1"]
+
+
+def test_a_story_that_missed_its_moment_is_dropped_not_held(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    at = utc(10, 6)  # 11:30 IST
+    old_death = {"id": "wk-d", "kind": "death", "category": "death", "fame": 300_000, "date": "2026-10-06",
+                 "views": 300_000, "traffic": 0, "news_at": None}
+    ready, notes = plan.lineup([old_death], at)
+    assert ready == [] and any(n.startswith("drop wk-d:") for n in notes)
+    # Still trending live: in Google Trends, or a lead headline under a day old.
+    for live in ({"traffic": 50_000}, {"news_at": "2026-10-10T01:00:00+00:00"}):
+        ready, _ = plan.lineup([old_death | live], at)
+        assert [c["id"] for c in ready] == ["wk-d"]
+    yesterday = old_death | {"date": "2026-10-09"}
+    ready, _ = plan.lineup([yesterday], at)
+    assert [c["id"] for c in ready] == ["wk-d"]
 
 
 def test_india_first():

@@ -13,7 +13,7 @@ The channel's name and id are not set yet (`desk/config.py`); until `DESK_CHANNE
 | Step | Module | What it does |
 |---|---|---|
 | Watch | `desk/trends.py`, `desk/news.py`, `desk/wiki.py` | Wikipedia most-read, Google Trends (IN, US, GB), Google News lead stories in English and Hindi (`hl=hi&gl=IN&ceid=IN:hi`), classified on Wikidata. Hindi headlines are matched on Hindi Wikipedia and mapped to English articles. |
-| Desk | `desk/plan.py` | Ranks by fame decayed by age, India first; 08:00–23:00 IST, four an IST day, two hours apart, plus a breaking lane. |
+| Desk | `desk/plan.py` | Ranks by fame decayed by age, India first; drops stories past their moment; 07:00–24:00 IST, up to ten an IST day, 30 minutes apart, plus a breaking lane. |
 | Orbitwire | `desk/orbitwire.py` | Reads Orbitwire's public `state` ledger; skips its stories unless high-profile, and gives those a new angle, other photos and a three-hour gap. Fails closed. |
 | Script | `desk/writer.py`, `desk/gemini.py`, `desk/llm.py` | Gemini (free tier, ListModels discovery, the next model on a 429), then local Gemma 4, writes Hindi beats from English and Hindi Wikipedia plus Wikidata; number, `{hi, en}` name, Latin-word and decorum gates, then a bilingual fact-check pass. |
 | Gate | `desk/gate.py`, `desk/hindi.py` | Devanagari-aware number normalisation (लाख, करोड़, Devanagari digits), Hindi and English banned words, casualty rule, free and credited photos, AI disclosure, Sulafat-only voice, Orbitwire rules. |
@@ -38,7 +38,7 @@ uv run pytest
 
 ## GitHub Actions
 
-- `run.yml`: every 30 minutes (:22, :52); `workflow_dispatch` with `dry` (default on), `event`
+- `run.yml`: every 15 minutes (:07, :22, :37, :52); `workflow_dispatch` with `dry` (default on), `event`
   (`wiki:<title>`, make only) and `voice_preview`. Dry runs never publish or write the ledger; the MP4, stills and
   JSON records are kept as the `short-<run id>` artifact for 14 days.
 - `health.yml`: every six hours; opens or updates an `alert` issue when the desk is silent, failing or holding.

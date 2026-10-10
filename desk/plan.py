@@ -4,13 +4,16 @@ The channel covers what India and the world are already looking at (see CHANNEL.
 movements that newsrooms lead with, famous deaths, and big earthquakes. India stories come first, then world stories
 with an India connection, then the rest.
 
-Priority is fame (Google News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by
-age, times the India boost, so a fresh story beats a bigger stale one. Regular Shorts go out 08:00-23:00 IST, at most
-MAX_PER_DAY an IST day, two hours apart. A breaking story (huge fame and under 12 hours old, or a quake USGS rates
-orange or red or magnitude 7+) may go out at any hour, 75 minutes after the last Short, as one extra that day; wars
-never take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No
-more than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told
-differently (desk/orbitwire.py).
+Timing is the channel: a story goes out while people are looking at it, not hours later. Priority is fame (Google
+News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by age, times the India boost,
+so a fresh story beats a bigger stale one. A story older than STALE_H is dropped unless a live signal (Google Trends
+traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
+day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
+most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame and under 12 hours old, or a quake USGS
+rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap; wars never
+take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
+than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
+(desk/orbitwire.py).
 """
 from __future__ import annotations
 
@@ -20,15 +23,17 @@ from . import ledger, orbitwire, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
-MAX_PER_DAY = 4
-BREAKING_EXTRA = 1  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
-MIN_GAP = timedelta(hours=2)
-BREAKING_GAP = timedelta(minutes=75)
+MAX_PER_DAY = 10
+BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
+MIN_GAP = timedelta(minutes=30)
+BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
 BREAKING_MAX_AGE_H = 12
+STALE_H = 48
+LIVE_NEWS_H = 24
 HALF_LIFE_H = {"death": 36, "protest": 18, "movement": 18, "conflict": 12, "earthquake": 18}
 DEFAULT_HALF_LIFE_H = 24
-WINDOW_IST = (8.0, 23.0)
+WINDOW_IST = (7.0, 24.0)
 INDIA_BOOST, LINK_BOOST = 1.6, 1.25
 QUAKE_BIG_MAG = 7.0
 COOLDOWN_DAYS = {"protest": 6, "movement": 6}
@@ -104,14 +109,32 @@ def in_window(at: datetime) -> bool:
     return WINDOW_IST[0] <= hour < WINDOW_IST[1]
 
 
+def trending_live(cand: dict, at: datetime) -> bool:
+    if cand.get("traffic", 0) > 0:
+        return True
+    news_at = cand.get("news_at")
+    return bool(news_at) and (at - datetime.fromisoformat(news_at)).total_seconds() / 3600 <= LIVE_NEWS_H
+
+
+def stale(cand: dict, at: datetime) -> str | None:
+    """Why a story has missed its moment, or None while people are still looking at it."""
+    age = age_hours(cand, at)
+    if age <= STALE_H or trending_live(cand, at):
+        return None
+    return f"{age:.0f} h old and no longer trending live"
+
+
 def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], list[str]]:
-    """Candidates the desk would publish now, best first, and a note for each one it is holding back."""
+    """Candidates the desk would publish now, best first, and a note for each one it is holding back or dropping."""
     at = at or datetime.now(timezone.utc)
     regular, urgent = can_publish(at), can_publish(at, breaking=True)
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
+        if why := stale(c, at):
+            notes.append(f"drop {c['id']}: {why}")
+            continue
         breaking = is_breaking(c, at)
-        wait = urgent if breaking else regular or (None if in_window(at) else "outside 08:00-23:00 IST")
+        wait = urgent if breaking else regular or (None if in_window(at) else "outside 07:00-24:00 IST")
         wait = wait or orbitwire.wait(c.get("orbitwire"), at)
         if wait:
             notes.append(f"hold {c['id']}: {wait}")

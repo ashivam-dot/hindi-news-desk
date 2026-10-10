@@ -1,9 +1,9 @@
 name: run
-# Every 30 minutes: watch the trend radar, make the best eligible Hindi Short, gate it, publish it, record the result.
-# The desk itself decides whether it may publish now (08:00-23:00 IST, at most 4 a day, 2 h apart, breaking lane).
+# Every 15 minutes: watch the trend radar, make the best eligible Hindi Short, gate it, publish it, record the result.
+# The desk itself decides whether it may publish now (fresh stories only, 07:00-24:00 IST, 30 min apart, breaking lane).
 on:
   schedule:
-    - cron: "22,52 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       dry:
