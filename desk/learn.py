@@ -97,12 +97,13 @@ def report(perf: dict) -> str:
         lines.append(f"- {key}: x{v['lift']} ranking lift ({v['n']} Shorts, typical {v['typical_views_24h']} views)")
     if not learned.get("lifts"):
         lines.append("- No lift yet: not enough scored Shorts per group. The desk ranks on fame and freshness alone.")
-    lines += ["", "| Short | published | category | region | views now | views at 24 h |", "|---|---|---|---|---|---|"]
+    lines += ["", "| Short | published | " + " | ".join(FEATURES) + " | views now | views at 24 h |",
+              "|---" * (len(FEATURES) + 4) + "|"]
     for v in sorted(perf.get("videos", {}).values(), key=lambda v: v["published_at"], reverse=True)[:30]:
         now = v["snapshots"][-1]["views"] if v.get("snapshots") else ""
         at24 = "" if v.get("views_24h") is None else round(v["views_24h"])
-        lines.append(f"| {v['id']} | {v['published_at'][:16]} | {v.get('category') or ''} | {v.get('region') or ''} "
-                     f"| {now} | {at24} |")
+        cells = " | ".join(str(v.get(f) or "") for f in FEATURES)
+        lines.append(f"| {v['id']} | {v['published_at'][:16]} | {cells} | {now} | {at24} |")
     return "\n".join(lines) + "\n"
 
 
@@ -124,7 +125,7 @@ def refresh(at: datetime | None = None, force: bool = False, api=None) -> dict |
             continue
         s = stats[vid]
         rec = perf["videos"].setdefault(vid, {"id": row["id"], "published_at": row["published_at"], "snapshots": []})
-        rec.update({"kind": row.get("kind"), **{f: row.get(f) or rec.get(f) for f in FEATURES}})
+        rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES})
         rec["snapshots"] = _thin(rec["snapshots"] + [{
             "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
             "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])
