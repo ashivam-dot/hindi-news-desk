@@ -124,18 +124,17 @@ def test_a_spent_pinned_model_hands_the_next_take_to_the_next_model(short, tmp_p
 
 
 def test_lines_are_read_one_by_one_and_only_a_garbled_line_is_retried(short, tmp_path, key, monkeypatch):
-    line = np.full(voice.SAMPLE_RATE, 0.2, np.float32)
+    step = 60 / 150
     asked = []
     monkeypatch.setattr(voice, "gemini_take", lambda text, d, models=None: asked.append(text) or (
-        line, {"model": "gemini-3.8-flash-lite-tts", "served_model": "gemini-3.8-flash-lite-tts", "api": "x"}))
+        np.full(int(len(text.split()) * step * voice.SAMPLE_RATE), 0.2, np.float32),
+        {"model": "gemini-3.8-flash-lite-tts", "served_model": "gemini-3.8-flash-lite-tts", "api": "x"}))
     first = iter([0.3, 1.0])
 
     def listen(wav, tokens):
-        if wav.name == "line.wav":
-            cover = next(first, 1.0) if len(asked) <= 2 else 1.0
-            return [{"text": t, "start": 0.1, "end": 0.2, "beat": 0} for t, _ in tokens], [cover], [], None
-        words = [{"text": t, "start": 0.4 + k * 0.3, "end": 0.6 + k * 0.3, "beat": b} for k, (t, b) in enumerate(tokens)]
-        return words, [1.0] * len(short.beats), [], 150.0
+        cover = next(first, 1.0) if len(asked) <= 2 else 1.0
+        return ([{"text": t, "start": k * step, "end": (k + 0.9) * step, "beat": 0} for k, (t, _) in enumerate(tokens)],
+                [cover], [], None)
 
     monkeypatch.setattr(voice, "_listen", listen)
     monkeypatch.setattr(align, "outside", lambda w, s: (0, 0))
@@ -143,6 +142,9 @@ def test_lines_are_read_one_by_one_and_only_a_garbled_line_is_retried(short, tmp
     assert len(asked) == len(short.beats) + 1 and asked[0] == asked[1]
     assert timing["voice"]["identity"] == "sulafat" and timing["voice"]["by_line"] is True
     assert len(timing["beats"]) == len(short.beats) and (tmp_path / "narration.wav").exists()
+    starts = [min(w["start"] for w in timing["words"] if w["beat"] == i) for i in range(len(short.beats))]
+    assert starts == sorted(starts) and starts[0] == voice.LEAD_IN
+    assert 115 <= timing["voice"]["wpm"] <= 185
 
 
 def test_preview_uses_the_builtin_voice_and_is_marked(short, tmp_path, no_key, monkeypatch):
