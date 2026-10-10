@@ -1,5 +1,5 @@
 {
- "at": "2026-10-10T07:51:53+00:00",
+ "at": "2026-10-10T10:51:57+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
@@ -8,6 +8,12 @@
     {
      "age_h": 2.86,
      "views": 48,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 5.86,
+     "views": 67,
      "likes": 0,
      "comments": 0
     }
@@ -26,6 +32,12 @@
      "views": 32,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 4.92,
+     "views": 88,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "death",
@@ -40,6 +52,12 @@
     {
      "age_h": 1.19,
      "views": 20,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 4.19,
+     "views": 23,
      "likes": 0,
      "comments": 0
     }
@@ -58,11 +76,33 @@
      "views": 4,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 3.29,
+     "views": 206,
+     "likes": 1,
+     "comments": 0
     }
    ],
    "kind": "advisory",
    "category": null,
    "region": null,
+   "views_24h": null
+  },
+  "GkhrGODmHjo": {
+   "id": "wk-Q141605182",
+   "published_at": "2026-10-10T09:19:43+00:00",
+   "snapshots": [
+    {
+     "age_h": 1.54,
+     "views": 5,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": "aviation",
+   "region": "world",
    "views_24h": null
   }
  },
