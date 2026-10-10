@@ -14,7 +14,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import config, gate, ledger, plan
+from . import config, gate, ledger, learn, plan
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
@@ -38,6 +38,7 @@ def prepare(target: str | dict):
             raise ValueError("orbitwire: " + "; ".join(notes))
         target = kept[0]
     short = writer.build(target)
+    short.scene.setdefault("category", target.get("category"))
     work = WORK / short.id
     work.mkdir(parents=True, exist_ok=True)
     short.save(work / "short.json")
@@ -115,7 +116,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     ledger.record_publish({"id": short.id, "kind": short.kind, "title": short.title, "loss": short.loss,
                            "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
                            "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
-                           **result})
+                           "category": short.scene.get("category"), "region": short.scene.get("region"), **result})
     return result
 
 
@@ -161,6 +162,13 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                     health["steps"].append(reason)
                     health["held"] = reason
                     return health
+            ledger.set_identity()
+            try:
+                learned = learn.refresh()
+                if learned is not None:
+                    health["steps"].append(f"learn: {learned['scored']} scored Shorts, lifts {learned['lifts']}"[:400])
+            except Exception as exc:  # the numbers steer ranking; reading them must never stop a publish
+                health["steps"].append(f"learn: {type(exc).__name__}: {exc}"[:300])
         if done := _advisory(health, dry):
             return done
         found = plan.watch(save=not dry)

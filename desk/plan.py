@@ -80,9 +80,12 @@ def boost(cand: dict) -> float:
 
 
 def priority(cand: dict, at: datetime) -> float:
-    """Fame halved every half-life, times the India boost: what this desk would lead with right now."""
+    """Fame halved every half-life, times the India boost and the channel's own learned lift: what this desk would
+    lead with right now."""
+    from . import learn
+
     half = HALF_LIFE_H.get(cand.get("kind"), HALF_LIFE_H.get(cand.get("category"), DEFAULT_HALF_LIFE_H))
-    return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand)
+    return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand) * learn.factor(cand)
 
 
 def is_breaking(cand: dict, at: datetime) -> bool:
