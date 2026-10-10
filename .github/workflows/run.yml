@@ -87,7 +87,7 @@ jobs:
           uv sync --frozen --project tts
       - name: Run
         env:
-          YOUTUBE_OAUTH_JSON: ${{ secrets.YOUTUBE_OAUTH_JSON }}
+          YOUTUBE_OAUTH_JSON: ${{ (env.DRY != 'true' && env.EVENT == '') && secrets.YOUTUBE_OAUTH_JSON || '' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           flag=""

@@ -56,13 +56,12 @@ def qid_of(story_id: str) -> str | None:
 def fetch() -> dict:
     """Orbitwire's published.json and candidates.json. Raises when they can't be read: the desk then fails closed."""
     published = json.loads(net.get(f"{config.ORBITWIRE_STATE}/published.json", tries=3, timeout=30))
-    try:
-        candidates = json.loads(net.get(f"{config.ORBITWIRE_STATE}/candidates.json", tries=3, timeout=30))
-    except Exception:
-        candidates = {}
+    candidates = json.loads(net.get(f"{config.ORBITWIRE_STATE}/candidates.json", tries=3, timeout=30))
     if not isinstance(published, list):
         raise ValueError("Orbitwire's published.json is not a list")
-    return {"published": published, "candidates": candidates if isinstance(candidates, dict) else {}}
+    if not isinstance(candidates, dict):
+        raise ValueError("Orbitwire's candidates.json is not an object")
+    return {"published": published, "candidates": candidates}
 
 
 def _at(value: str) -> datetime:
@@ -101,7 +100,7 @@ def high_profile(cand: dict, all_fame: list[float]) -> str | None:
     fame = cand.get("fame", 0)
     if fame >= HIGH_FAME:
         return f"fame {fame:,.0f} >= {HIGH_FAME:,}"
-    if all_fame and fame >= PERCENTILE_FLOOR:
+    if len(all_fame) >= 10 and fame >= PERCENTILE_FLOOR:
         ranked = sorted(all_fame)
         cut = ranked[min(len(ranked) - 1, int(HIGH_PERCENTILE * len(ranked)))]
         if fame >= cut:

@@ -162,6 +162,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 health["steps"].append(f"skip {cand['id']}: {exc}")
                 continue
             except Exception as exc:  # one malformed article must not stop the other candidates
+                note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
                 health.setdefault("warnings", []).append(f"{cand['id']}: {type(exc).__name__}: {exc}"[:300])
                 continue
             written += 1
@@ -175,9 +176,9 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 health["steps"].append(str(exc))
                 health["held"] = str(exc)
                 return health
-            except ValueError as exc:
-                note_retry(cand["id"], str(exc)[:300])
-                health["steps"].append(f"skip {cand['id']}: {exc}")
+            except Exception as exc:  # ffmpeg, a corrupt take or an encoder error: count it, try the next story
+                note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
+                health["steps"].append(f"skip {cand['id']}: {type(exc).__name__}: {exc}"[:400])
                 continue
             if dry:
                 health["steps"].append(f"dry run: made {short.id} ({stats['duration']} s, voice "
@@ -186,9 +187,9 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 return health
             try:
                 result = publish(short.id)
-            except ValueError as exc:
-                note_retry(cand["id"], str(exc)[:300])
-                health["steps"].append(f"hold {cand['id']}: {exc}")
+            except Exception as exc:
+                note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
+                health["steps"].append(f"hold {cand['id']}: {type(exc).__name__}: {exc}"[:400])
                 continue
             health["steps"].append(f"published {short.id}: {result['url']}")
             health["published"] = result

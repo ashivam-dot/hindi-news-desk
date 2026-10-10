@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from . import config, faces, gate, gemini, hindi, llm, media, orbitwire, stories, trends, wiki
@@ -21,6 +21,8 @@ from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
 MIN_PHOTOS = 3
+MAX_DEATH_DAYS = 7
+IST = timezone(timedelta(hours=5, minutes=30))
 OUTRO = "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।"
 CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
 MIN_WORDS, MAX_WORDS = 80, 135
@@ -195,6 +197,16 @@ def _check_messages(script: str, names: list[dict], facts: list[str], source_en:
             {"role": "user", "content": user}]
 
 
+def _today_ist() -> date:
+    return datetime.now(IST).date()
+
+
+def not_today(text: str) -> list[str]:
+    """Problems for wording that dates an older event to today."""
+    hits = re.findall(r"(?<![\u0900-\u097F])(आज|अभी)(?!\s*भी)(?![\u0900-\u097F])", text)
+    return ["this did not happen today: remove आज/अभी and give the date"] if hits else []
+
+
 def script_text(draft: dict) -> str:
     return " ".join(b.get("say", "") + " " + b.get("caption", "") for b in draft.get("beats", [])) + " " + \
         draft.get("title", "")
@@ -284,7 +296,8 @@ def monotone(draft: dict) -> list[str]:
 def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: str, source_hi: str,
           photos: list[dict], hi_names: dict[str, str], banned_names: list[str] | None = None,
           agreed_toll: bool = False, log_path: Path | None = None, headlines: list[str] | None = None,
-          angle: str | None = None, pen: Pen | None = None) -> tuple[dict, list[dict], list[str]]:
+          angle: str | None = None, pen: Pen | None = None,
+          today_ok: bool = True) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest"."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
@@ -294,6 +307,9 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
         brief += (f"\n\nANGLE ({orbitwire.ANGLES[angle]['label']}): the channel's English sister channel already told "
                   f"this story its usual way, so this Hindi Short must be different. {orbitwire.ANGLES[angle]['brief']} "
                   "Use a different hook from a plain retelling.")
+    if not today_ok:
+        brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy is "
+                  "fine); give the date instead.")
     name_hi = subject.get("hi") or subject["en"]
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines)
     ground_en = source_en + "\n" + "\n".join(facts) + "\n" + "\n".join(p["description"] for p in photos)
@@ -307,6 +323,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi, hi_names, banned_names or [],
                                           kind, agreed_toll, angle)
+            if not today_ok:
+                problems += not_today(script_text(draft))
             if attempt < DRAFTS - 1:
                 problems += monotone(draft)
             if not problems:
@@ -400,6 +418,10 @@ def build_death(cand: dict) -> Short:
         raise ValueError("gate: Wikidata lacks an exact birth or death date")
     if str(died.year) not in raw.get("death_date", ""):
         raise ValueError("gate: Wikipedia's infobox does not confirm the death yet")
+    days = (_today_ist() - died).days
+    if days > MAX_DEATH_DAYS:
+        raise ValueError(f"gate: the death was {days} days ago; the desk covers deaths of the last {MAX_DEATH_DAYS} "
+                         "days only (an old death must never read as news)")
     page, item = wiki.url(title), f"https://www.wikidata.org/wiki/{qid}"
     name = stories.plain_title(wiki.label(ent) or title)
     name_hi = wiki.label(ent, "hi")
@@ -432,7 +454,7 @@ def build_death(cand: dict) -> Short:
     subject = {"en": name, "hi": name_hi, "person": True}
     angle = ov["angle"] if ov else None
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
-                             log_path=work / "writer_log.json", angle=angle)
+                             log_path=work / "writer_log.json", angle=angle, today_ok=days == 0)
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
@@ -489,8 +511,8 @@ def build_incident(cand: dict) -> Short:
     source_hi, hi_title = _hindi_source(ent)
     if deaths is None:
         # Casualty numbers only when both sources agree: strip unconfirmed tolls from what the writer may use.
-        source = re.sub(r"[^.]*\b(killed|dead|deaths|died|fatalit\w*|casualt\w*|injured|wounded)\b[^.]*\.", "",
-                        source)
+        source = re.sub(r"[^.]*\b(killed|dead|deaths?|died|toll|fatalit\w*|casualt\w*|injured|wounded)\b[^.]*\.", "",
+                        source, flags=re.I)
         source_hi = _strip(source_hi, gate.CASUALTY)
     source = re.sub(r"[^.]*\bsuicid\w*[^.]*\.", "", source, flags=re.I)
     source_hi = _strip(source_hi, ["आत्महत्या", "खुदकुशी", "ख़ुदकुशी"])
@@ -503,7 +525,7 @@ def build_incident(cand: dict) -> Short:
     angle = ov["angle"] if ov else None
     draft, log, used = write(kind, subject, "It", facts_text, source, source_hi, photos, hi_names,
                              banned_names=banned, agreed_toll=deaths is not None, log_path=work / "writer_log.json",
-                             headlines=headlines, angle=angle)
+                             headlines=headlines, angle=angle, today_ok=ongoing or when == _today_ist())
     name_hi = name_hi or _pair_for(draft, name) or name
     loss = bool(deaths) or cat in ("attack", "strike", "conflict")
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),

@@ -22,6 +22,7 @@ WHISPER_RATE = 16000
 MIN_COVERAGE = 0.75
 # More letters than this heard outside the script is speech the voice added (it sometimes reads its direction).
 EXTRA_LETTERS = 6
+SECONDS_PER_LETTER = 0.15  # generous: Sulafat speaks about 12-15 Devanagari letters a second
 _model = None
 
 
@@ -89,29 +90,32 @@ def align(tokens: list[tuple[str, int]], spoken: list[tuple[str, float, float]])
     known = [i for i in range(len(tokens)) if first[i] is not None]
     if not known:
         return [], [0.0] * beats
-    words, floor = [], 0.0
+    words, floor, heard = [], 0.0, set(known)
     for i, (text, beat) in enumerate(tokens):
         if first[i] is None:
             before = max((j for j in known if j < i), default=None)
             after = min((j for j in known if j > i), default=None)
-            lo = last[before] if before is not None else spoken[0][1]
-            hi = first[after] if after is not None else spoken[-1][2]
             span = range(before + 1 if before is not None else 0, after if after is not None else len(tokens))
             sizes = [max(len(letters(tokens[j][0])), 1) for j in span]
+            # Unheard words at either end may not stretch over extra speech (a read-aloud direction, babble).
+            budget = sum(sizes) * SECONDS_PER_LETTER
+            lo = last[before] if before is not None else max(spoken[0][1], first[after] - budget)
+            hi = first[after] if after is not None else min(spoken[-1][2], last[before] + budget)
             done = sum(sizes[: i - span.start])
             first[i] = lo + (hi - lo) * done / sum(sizes)
             last[i] = lo + (hi - lo) * (done + sizes[i - span.start]) / sum(sizes)
         start = max(first[i], floor)
         words.append({"text": text, "start": round(start, 3), "end": round(max(last[i], start + 0.05), 3),
-                      "beat": beat})
+                      "beat": beat, "heard": i in heard})
         floor = start
     return words, [f / max(t, 1) for f, t in zip(found, total)]
 
 
 def outside(words: list[dict], spoken: list[tuple[str, float, float]]) -> tuple[int, int]:
     """Letters Whisper heard before the script's first word and after its last, when more than EXTRA_LETTERS."""
-    if not words:
+    heard = [w for w in words if w.get("heard", True)] or words
+    if not heard:
         return 0, 0
-    before = sum(len(letters(t)) for t, _, end in spoken if end <= words[0]["start"] - 0.1)
-    after = sum(len(letters(t)) for t, start, _ in spoken if start >= words[-1]["end"] + 0.1)
+    before = sum(len(letters(t)) for t, _, end in spoken if end <= heard[0]["start"] - 0.1)
+    after = sum(len(letters(t)) for t, start, _ in spoken if start >= heard[-1]["end"] + 0.1)
     return (before if before > EXTRA_LETTERS else 0), (after if after > EXTRA_LETTERS else 0)

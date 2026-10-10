@@ -281,12 +281,13 @@ def _credit_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
     font = _font("Medium", 26)
     text = drawable(text)
     while font.getlength(text) > W - 260 and len(text) > 20:
-        text = text[:-4] + "…"
+        cut = text.rstrip("…").rstrip()
+        text = (cut.rsplit(" ", 1)[0] if " " in cut[10:] else cut[:-4]) + "…"
     return _rgba(_text_layer([(text, font, (255, 255, 255, 200))], stroke=2))
 
 
 def _badge_layer() -> tuple[np.ndarray, np.ndarray]:
-    return _rgba(_text_layer([(AI_BADGE, _font("Bold", 30), (255, 255, 255, 235))], pad=12, box=(10, 10, 14, 165)))
+    return _rgba(_text_layer([(AI_BADGE, _font("Bold", 42), (255, 255, 255, 245))], pad=16, box=(10, 10, 14, 200)))
 
 
 def _hook_layer(name: str, sub: str, accent: tuple) -> tuple[np.ndarray, np.ndarray]:
@@ -401,7 +402,7 @@ def render(short: Short, timing: dict, work: Path) -> dict:
         else:
             cr = credits[shot["photo"]]
             _blit(frame, cr, 36, round(H * 0.785), 0.9)
-        _blit(frame, badge, 36, round(H * 0.745), 0.95)
+        _blit(frame, badge, 36, round(H * 0.732), 0.97)
         captions.draw(frame, t)
         enc.stdin.write(frame.tobytes())
         if i in still_at:

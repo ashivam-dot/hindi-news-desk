@@ -98,7 +98,11 @@ def test_fetch_fails_closed_on_a_bad_ledger(monkeypatch):
     monkeypatch.setattr(orbitwire.net, "get", lambda url, **k: "{}" if url.endswith("published.json") else "{}")
     with pytest.raises(ValueError):
         orbitwire.fetch()
+    # An unreadable candidates.json would hide Orbitwire's next story: that fails closed too.
     monkeypatch.setattr(orbitwire.net, "get", lambda url, **k: "[]" if url.endswith("published.json") else "not json")
+    with pytest.raises(ValueError):
+        orbitwire.fetch()
+    monkeypatch.setattr(orbitwire.net, "get", lambda url, **k: "[]" if url.endswith("published.json") else "{}")
     assert orbitwire.fetch() == {"published": [], "candidates": {}}
 
 

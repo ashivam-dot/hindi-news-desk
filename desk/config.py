@@ -12,7 +12,7 @@ HANDLE: str | None = os.environ.get("DESK_CHANNEL_HANDLE") or None  # TBD, e.g. 
 CHANNEL_ID: str = os.environ.get("DESK_CHANNEL_ID") or "TBD"  # "UC..." of the Hindi channel
 REPO = "ashivam-dot/hindi-news-desk"  # temporary slug; may be renamed
 SITE = f"https://github.com/{REPO}"
-CONTACT = "aksha.shivam18@gmail.com"
+CONTACT = "aksh.shivam17@gmail.com"
 
 # Every upload carries MARKER + story id as a tag, so a story is never uploaded twice. Never change it after the
 # first public upload.

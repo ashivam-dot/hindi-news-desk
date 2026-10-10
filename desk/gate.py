@@ -26,7 +26,7 @@ ACRONYMS = {"USGS", "UTC", "PAGER", "NASA", "NOAA", "GDACS", "EMSC", "ADS-B", "N
 # Without a death toll that two sources agree on, an incident Short may not speak of casualties at all.
 CASUALTY = ["casualt*", "death toll", "killed", "fatalit*", "wounded", "injured", "मौत", "मौतें", "मौतों", "मारे",
             "मृत", "मृतक", "मृतकों", "मृतकों", "घायल", "घायलों", "हताहत", "जान गई", "जानें", "जान गंवा*",
-            "जान गँवा*", "निधन", "शहीद"]
+            "जान गँवा*", "निधन", "शहीद", "जान चली", "मारा", "दम तोड़*", "मरने वाले*", "deaths", "toll"]
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}

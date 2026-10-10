@@ -1,0 +1,33 @@
+from desk import align, gate, orbitwire, writer
+
+
+def test_not_today_flags_aaj_and_abhi_but_not_lasting_or_other_words():
+    assert writer.not_today("सिनेमा के एक युग का आज अंत हो गया।")
+    assert writer.not_today("अभी खबर आई है")
+    assert not writer.not_today("उनके गीत आज भी गूंजते हैं।")
+    assert not writer.not_today("वे आज़ादी के बाद मशहूर हुईं, आजकल भी याद की जाती हैं।")
+    assert not writer.not_today("6 अक्टूबर 2026 को उनका निधन हुआ।")
+
+
+def test_casualty_words_cover_more_phrasings_but_not_inside_other_words():
+    assert gate.found("हादसे में 12 लोगों की जान चली गई", gate.CASUALTY)
+    assert gate.found("एक व्यक्ति मारा गया", gate.CASUALTY)
+    assert not gate.found("यह हमारा देश है", gate.CASUALTY)
+
+
+def test_percentile_rule_needs_ten_candidates():
+    small = [orbitwire.PERCENTILE_FLOOR + k for k in range(5)]
+    assert orbitwire.high_profile({"fame": max(small)}, small) is None
+    many = [orbitwire.PERCENTILE_FLOOR + k for k in range(20)]
+    assert orbitwire.high_profile({"fame": max(many)}, many)
+
+
+def test_extra_speech_before_the_script_is_not_hidden_by_an_unheard_first_word():
+    # A read-aloud direction (0-3 s) before the script; Whisper misses the script's first word.
+    tokens = [("पहला", 0), ("दूसरा", 0), ("वाक्य", 0), ("यहां", 0)]
+    spoken = [("speak calmly in a warm voice", 0.0, 3.0), ("दूसरा", 3.6, 4.0), ("वाक्य", 4.0, 4.5),
+              ("यहां", 4.5, 5.0)]
+    words, _ = align.align(tokens, spoken)
+    assert words[0]["heard"] is False and words[0]["start"] > 2.0
+    before, _ = align.outside(words, spoken)
+    assert before > 0
