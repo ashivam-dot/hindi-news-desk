@@ -1,21 +1,16 @@
 {
- "at": "2026-10-10T05:44:46+00:00",
+ "at": "2026-10-10T06:04:02+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "advisory adv-delhi-cjp-2026-10-10: VoiceHold: hold: no Sulafat voice: no Gemini TTS model read the script: gemini-3.8-flash-tts: HTTP 429; gemini-3.8-flash-tts: HTTP 429; gemini-3.8-flash-tts: HTTP 429, and the Chatterbox fallback has no reference clip (tools/make_reference.py)",
-  "watch: 7 candidates from 9 trending",
+  "advisory adv-delhi-cjp-2026-10-10: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.954, 0.716, 0.0, 0.269, 0.0, 0.0, 0.905, 0.944, 0.919], 'wpm': 167.9, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.972, 0.977, 0.702, 0.0, 0.795, 0.019, 0.0, 0.833, 0.946], 'wpm': ",
+  "watch: 6 candidates from 9 trending",
   "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
-  "hold wk-Q1355840: Orbitwire's top candidate: waiting for its release, then 3 h",
-  "skip wk-Q141681530: gate: only 1 usable photos of 2026 Panama earthquake on Wikimedia Commons (want 3)",
-  "skip wk-Q6831806: gate: only 1 usable photos of Michael Kearns on Wikimedia Commons (want 3)",
-  "published wk-Q228928: https://www.youtube.com/shorts/osM-5cOV1Kk"
- ],
- "published": {
-  "video_id": "osM-5cOV1Kk",
-  "url": "https://www.youtube.com/shorts/osM-5cOV1Kk",
-  "title": "हॉलीवुड की दिग्गज अभिनेत्री ईवा मैरी सेंट का 102 वर्ष की उम्र में निधन",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "hold wk-Q1355840: last Short went out 0.2 h ago",
+  "hold wk-Q141681530: last Short went out 0.2 h ago",
+  "hold wk-Q6831806: last Short went out 0.2 h ago",
+  "hold wk-Q5496741: last Short went out 0.2 h ago",
+  "hold wk-Q11628: last Short went out 0.2 h ago",
+  "hold wk-Q141605182: last Short went out 0.2 h ago"
+ ]
 }
