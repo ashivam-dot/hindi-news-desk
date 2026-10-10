@@ -32,6 +32,42 @@ def test_description_lists_the_closures_and_says_how_it_was_made():
     assert len(text.encode()) <= youtube.DESCRIPTION_BYTES
 
 
+def test_a_photo_advisory_names_a_photo_for_every_beat():
+    photo_specs = [s for s in advisory.load_all() if any(b.get("photo") for b in s["beats"])]
+    assert photo_specs
+    for spec in photo_specs:
+        assert all(b.get("photo", "").startswith("File:") for b in spec["beats"])
+
+
+def test_v2_replaces_the_plain_advisory_and_credits_its_photos():
+    spec = next(s for s in advisory.load_all() if s["id"] == "adv-delhi-cjp-2026-10-10-v2")
+    short = advisory.short_of(spec)
+    assert short.scene["replaces"] == "TYsCL-64fSM"
+    short.scene["photos"] = [{"author": f"Author {i}", "license": "CC BY-SA 4.0" if i % 3 else "CC BY 4.0"}
+                             for i in range(len(spec["beats"]))]
+    text = youtube.description(short, {"engine": "gemini-sulafat"})
+    assert "Author 0, Author 3, Author 6 (CC BY 4.0)" in text and "तस्वीरें असली हैं" in text
+    assert len(text.encode()) <= youtube.DESCRIPTION_BYTES
+
+
+def test_a_card_unrolls_from_the_top():
+    card = advisory.card_layer({"kind": "points", "big": "क्या करें", "lines": ["एक", "दो", "तीन"]}, advisory.GLASS)
+    _, a = advisory._unrolled(card, 0.3)
+    assert a[10].max() > 0 and a[-10].max() == 0
+    assert advisory._unrolled(card, 1.0) is card
+
+
+def test_frames_without_photos_keep_the_plain_backdrop():
+    spec = next(s for s in advisory.load_all() if s["id"] == "adv-delhi-cjp-2026-10-10")
+    short = advisory.short_of(spec)
+    backdrops = advisory.Backdrops(short)
+    shots = [{"start": i * 2.0, "end": (i + 1) * 2.0, "photo": None, "card": advisory.card_layer(b.card),
+              "motion": None} for i, b in enumerate(short.beats)]
+    frame = advisory.frame_at(2.05, shots, backdrops, [None, *([(advisory.np.zeros((2, 2, 3)),
+                                                                   advisory.np.zeros((2, 2, 1)))] * 2)])
+    assert frame.shape == (advisory.H, advisory.W, 3)
+
+
 def test_description_over_the_byte_limit_fails_closed():
     spec = next(s for s in advisory.load_all() if s["id"] == "adv-delhi-cjp-2026-10-10")
     long = advisory.short_of({**spec, "summary": "दिल्ली " * 900})

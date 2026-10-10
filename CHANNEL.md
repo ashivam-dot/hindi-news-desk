@@ -77,6 +77,11 @@ stories on the Wikidata QID in their `wk-<QID>` ids (suffixes such as `-2026w41`
   matched across the set. A gentle depth-parallax camera move brings each still to life; nothing in a photo is
   invented or altered.
 - **Never** generate a realistic image or video of a real person or a real incident.
+- **Backgrounds follow the topic (owner, 2026-10-10: a single background "looks very basic").** Nothing goes out on
+  one plain backdrop. Public-service advisories (`desk/advisory.py`, `advisories/*.json`) name a real Commons photo
+  for every beat (the closed station, the terminus, the road under diversion); it fills the frame with the parallax
+  camera move, the card sits on frosted glass over it and unrolls line by line, and every photo is credited on screen
+  and in the description.
 - **Story, not a résumé:** a hook that says plainly what happened; then where they began, the turning point, the work
   people loved (named, with years on screen), a human detail, and what they leave behind. On-screen chips name works,
   roles, honours or years, never places.

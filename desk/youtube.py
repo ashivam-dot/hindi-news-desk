@@ -78,6 +78,16 @@ def hashtag(text: str) -> str:
     return re.sub(r"[^0-9A-Za-z\u0900-\u097F]", "", text.replace("।", ""))
 
 
+def photo_credits(photos: list[dict]) -> str:
+    """Every photo's author under its licence, on one line: an advisory's list leaves little room in the description."""
+    by_licence: dict[str, list[str]] = {}
+    for p in photos:
+        names = by_licence.setdefault(p["license"], [])
+        if p["author"] not in names:
+            names.append(p["author"])
+    return "तस्वीरें (Wikimedia Commons): " + "; ".join(f"{', '.join(n)} ({lic})" for lic, n in by_licence.items())
+
+
 def description(short: Short, voice: dict) -> str:
     lines = [short.summary, ""]
     if short.kind != "advisory":
@@ -89,13 +99,16 @@ def description(short: Short, voice: dict) -> str:
                 lines += [card["big"] + ":", ", ".join(card["items"]), ""]
     lines += ["स्रोत:"] + short.sources + [""]
     made = ("यह सूची ऊपर दी गई रिपोर्टों में बताई गई DMRC, रेलवे और पुलिस की सूचनाओं से हाथ से मिलाकर बनाई गई है। "
-            "आवाज़ AI की है।" if short.kind == "advisory" else
+            + ("तस्वीरें असली हैं। " if short.scene.get("photos") else "") + "आवाज़ AI की है।"
+            if short.kind == "advisory" else
             "यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं (Wikimedia Commons), उन पर हल्की 3D कैमरा मूवमेंट जोड़ी "
             "गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
     lines += [made,
               VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
               "कोई गलती दिखे तो स्रोत के साथ कमेंट करें, हम सुधार करेंगे।", ""]
-    if short.kind != "advisory":
+    if short.kind == "advisory" and short.scene.get("photos"):
+        lines += ["श्रेय:", f"• {short.credits[0]}", f"• {photo_credits(short.scene['photos'])}", ""]
+    elif short.kind != "advisory":
         lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
     tags = [hashtag(h) for h in short.hashtags]
     lines.append(" ".join("#" + t for t in dict.fromkeys(tags) if t))
@@ -118,6 +131,20 @@ def tags(short: Short) -> list[str]:
         out.append(t)
         total += len(t) + 2
     return out + [marker]
+
+
+def retire(video_id: str) -> None:
+    """Make one of this channel's videos private (a version that was replaced); never touches another channel's."""
+    api = client()
+    identity(api)
+    items = api.videos().list(part="snippet,status", id=video_id).execute().get("items", [])
+    if not items or items[0]["status"]["privacyStatus"] == "private":
+        return
+    if items[0]["snippet"]["channelId"] != config.CHANNEL_ID:
+        raise WrongChannel(f"{video_id} is on another channel")
+    api.videos().update(part="status", body={"id": video_id, "status": {
+        "privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+        "embeddable": True, "publicStatsViewable": True}}).execute()
 
 
 def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_at: str | None = None) -> dict:
