@@ -300,9 +300,19 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
     transcript = "\n".join(speakable(b.text) for b in short.beats)
     tokens = [(w, i) for i, b in enumerate(short.beats) for w in b.text.split()]
     wav = out_dir / "narration.wav"
-    best, takes, pinned = None, [], None
-    for take in range(1, TAKES + 1):
-        raw, record = gemini_take(transcript, direction, [pinned] if pinned else None)
+    best, takes, pinned, take = None, [], None, 0
+    while take < TAKES:
+        try:
+            raw, record = gemini_take(transcript, direction, [pinned] if pinned else None)
+        except TTSUnavailable:
+            if best is not None:
+                break
+            if not pinned:
+                raise
+            # The pinned model ran out of quota before any take passed: the rest go to the next model.
+            pinned = None
+            continue
+        take += 1
         pinned = record["model"]
         head, tail = _bounds(raw)
         raw = raw[head:tail]

@@ -101,6 +101,28 @@ def test_a_good_gemini_take_is_timed_and_recorded(short, tmp_path, key, monkeypa
     assert len(timing["beats"]) == len(short.beats) and len(timing["words"]) == len(words)
 
 
+def test_a_spent_pinned_model_hands_the_next_take_to_the_next_model(short, tmp_path, key, monkeypatch):
+    words = [w for b in short.beats for w in b.text.split()]
+    step = 60 / 147
+    take = np.full(int(len(words) * step * voice.SAMPLE_RATE), 0.2, np.float32)
+    asked = []
+
+    def gemini_take(text, direction, models=None):
+        asked.append(models)
+        if models == ["gemini-3.8-flash-tts"]:
+            raise voice.TTSUnavailable("gemini-3.8-flash-tts: HTTP 429")
+        model = "gemini-3.8-flash-tts" if len(asked) == 1 else "gemini-3.8-flash-lite-tts"
+        return take, {"model": model, "served_model": model, "api": "interactions", "voice": "Sulafat"}
+
+    monkeypatch.setattr(voice, "gemini_take", gemini_take)
+    good = [(w, voice.LEAD_IN + i * step, voice.LEAD_IN + (i + 0.9) * step) for i, w in enumerate(words)]
+    heard = iter([good[: len(good) // 3]] + [good] * 10)
+    monkeypatch.setattr(align, "heard", lambda wav: next(heard))
+    timing = voice._gemini_story(short, tmp_path)
+    assert asked == [None, ["gemini-3.8-flash-tts"], None]
+    assert timing["voice"]["model"] == "gemini-3.8-flash-lite-tts"
+
+
 def test_preview_uses_the_builtin_voice_and_is_marked(short, tmp_path, no_key, monkeypatch):
     seen = []
     monkeypatch.setattr(voice, "_chatterbox_story", lambda s, d, ref: seen.append(ref) or {})
