@@ -1,5 +1,5 @@
 {
- "at": "2026-10-10T17:25:32+00:00",
+ "at": "2026-10-10T17:50:58+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -48,36 +48,6 @@
    "date": "2026-10-08"
   },
   {
-   "qid": "Q141681530",
-   "title": "2026 Panama earthquake",
-   "fame": 141867,
-   "views": 16867,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-10T02:53:00+00:00",
-   "headlines": [
-    "Panama rocked by 2 powerful earthquakes and multiple aftershocks, prompting evacuations"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-09",
-    "google-news:Panama rocked by 2 powerful earthquakes and multiple aftershocks, prompting evacuations"
-   ],
-   "id": "wk-Q141681530",
-   "kind": "incident",
-   "category": "earthquake",
-   "date": "2026-10-09",
-   "coords": null,
-   "has_coords": false
-  },
-  {
    "qid": "Q141605182",
    "title": "Flydubai Flight 1073",
    "fame": 125000,
@@ -90,10 +60,10 @@
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
+   "region": "india",
+   "india_link": true,
    "geos": [
-    "world"
+    "IN"
    ],
    "label_hi": "फ़्लाईदुबई उड़ान १०७३",
    "via": [
@@ -199,6 +169,31 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-06"
+  },
+  {
+   "qid": "Q141681530",
+   "title": "2026 Panama earthquake",
+   "fame": 16867,
+   "views": 16867,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-09"
+   ],
+   "id": "wk-Q141681530",
+   "kind": "incident",
+   "category": "earthquake",
+   "date": "2026-10-09",
+   "coords": null,
+   "has_coords": false
   },
   {
    "qid": "Q5496741",
