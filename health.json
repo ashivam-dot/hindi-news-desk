@@ -1,5 +1,5 @@
 {
- "at": "2026-10-10T04:03:12+00:00",
+ "at": "2026-10-10T04:41:16+00:00",
  "ok": true,
  "dry": false,
  "steps": [
@@ -8,8 +8,8 @@
   "hold wk-Q1355840: Orbitwire's top candidate: waiting for its release, then 3 h",
   "skip wk-Q141681530: gate: only 1 usable photos of 2026 Panama earthquake on Wikimedia Commons (want 3)",
   "skip wk-Q6831806: gate: only 1 usable photos of Michael Kearns on Wikimedia Commons (want 3)",
-  "skip wk-Q228928: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.926, 0.939, 0.954, 0.932, 0.682, 0.914, 0.875, 0.919], 'wpm': 141.4, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.926, 0.939, 0.954, 0.797, 0.682, 0.897, 0.938, 0.946], 'wpm': 141.4, 'clean': True, 'ok': Fals",
-  "skip wk-Q141670823: gate: no draft passed the fact checks: unsupported: \"तूफान से हुए कुल नुकसान के सटीक आंकड़ों का उस समय इंतज़ार किया जा रहा था।\"",
+  "hold wk-Q228928: RuntimeError: video osM-5cOV1Kk did not go public (private)",
+  "hold wk-Q141670823: RuntimeError: video WtXHPm0XgEQ did not go public (private)",
   "nothing eligible to publish"
  ]
 }
