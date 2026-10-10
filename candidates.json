@@ -1,23 +1,28 @@
 {
- "at": "2026-10-10T12:07:22+00:00",
+ "at": "2026-10-10T12:32:19+00:00",
  "trending": [
   {
    "qid": "Q1355840",
    "title": "Mike Ditka",
-   "fame": 627603,
+   "fame": 752603,
    "views": 627603,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-10-09T16:08:51+00:00",
+   "headlines": [
+    "Mike Ditka, legendary coach of 1985 Chicago Bears and first tight end inducted into Hall of Fame, dies"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-09"
+    "wikipedia-top-2026-10-09",
+    "google-news:Mike Ditka, legendary coach of 1985 Chicago Bears and first tight end inducted into Hall of Fame, dies"
    ],
    "id": "wk-Q1355840",
    "kind": "death",
@@ -48,6 +53,38 @@
    "date": "2026-10-08"
   },
   {
+   "qid": "Q141605182",
+   "title": "Flydubai Flight 1073",
+   "fame": 250000,
+   "views": 0,
+   "traffic": 0,
+   "news": 250000,
+   "news_at": "2026-10-10T00:10:22+00:00",
+   "headlines": [
+    "Flydubai co-pilot planned suicide attack in Israel inspired by 9/11",
+    "Attacker in FlyDubai Flight Meant to Crash Into Israeli Airport, Emiratis Say"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": "फ़्लाईदुबई उड़ान १०७३",
+   "via": [
+    "google-news:Flydubai co-pilot planned suicide attack in Israel inspired by 9/11",
+    "google-news:Attacker in FlyDubai Flight Meant to Crash Into Israeli Airport, Emiratis Say"
+   ],
+   "id": "wk-Q141605182",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-09-30",
+   "coords": null,
+   "has_coords": true
+  },
+  {
    "qid": "Q141681530",
    "title": "2026 Panama earthquake",
    "fame": 141867,
@@ -76,35 +113,6 @@
    "date": "2026-10-09",
    "coords": null,
    "has_coords": false
-  },
-  {
-   "qid": "Q141605182",
-   "title": "Flydubai Flight 1073",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-09T18:29:39+00:00",
-   "headlines": [
-    "Flydubai co-pilot planned suicide attack in Israel inspired by 9/11"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "फ़्लाईदुबई उड़ान १०७३",
-   "via": [
-    "google-news:Flydubai co-pilot planned suicide attack in Israel inspired by 9/11"
-   ],
-   "id": "wk-Q141605182",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-09-30",
-   "coords": null,
-   "has_coords": true
   },
   {
    "qid": "Q11628",
@@ -228,20 +236,25 @@
   {
    "qid": "Q1355840",
    "title": "Mike Ditka",
-   "fame": 627603,
+   "fame": 752603,
    "views": 627603,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-10-09T16:08:51+00:00",
+   "headlines": [
+    "Mike Ditka, legendary coach of 1985 Chicago Bears and first tight end inducted into Hall of Fame, dies"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-09"
+    "wikipedia-top-2026-10-09",
+    "google-news:Mike Ditka, legendary coach of 1985 Chicago Bears and first tight end inducted into Hall of Fame, dies"
    ],
    "id": "wk-Q1355840",
    "kind": "death",
@@ -254,7 +267,7 @@
     "orbitwire_published_at": "2026-10-10T12:08:34+00:00",
     "orbitwire_url": "https://www.youtube.com/shorts/IlQcJvBfNlQ",
     "orbitwire_title": "The Legacy of Mike Ditka: A Life of Grit and Football",
-    "high_profile": "fame 627,603 >= 400,000",
+    "high_profile": "fame 752,603 >= 400,000",
     "angle": "timeline"
    }
   },
