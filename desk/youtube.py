@@ -18,6 +18,7 @@ from .spec import Short
 TOKEN_FILE = Path(__file__).resolve().parents[1] / "secrets" / "token.json"
 CATEGORY = config.CATEGORY
 MARKER = config.MARKER  # published uploads carry it, so it must not change
+DESCRIPTION_BYTES = 5000  # the API counts UTF-8 bytes, and a Devanagari letter is three of them
 VOICE_LINE = {
     "gemini-sulafat": "आवाज़: AI (Google Gemini TTS की Sulafat आवाज़)",
     "chatterbox-sulafat-clone": "आवाज़: AI (Chatterbox Multilingual, Gemini की Sulafat आवाज़ के नमूने से)",
@@ -78,18 +79,31 @@ def hashtag(text: str) -> str:
 
 
 def description(short: Short, voice: dict) -> str:
-    lines = [short.summary, "", " ".join(b.text for b in short.beats[:-1]), ""]
+    lines = [short.summary, ""]
+    if short.kind != "advisory":
+        lines += [" ".join(b.text for b in short.beats[:-1]), ""]
+    else:
+        for b in short.beats:
+            card = b.card or {}
+            if card.get("kind") == "list":
+                lines += [card["big"] + ":", ", ".join(card["items"]), ""]
     lines += ["स्रोत:"] + short.sources + [""]
-    lines += ["यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं (Wikimedia Commons), उन पर हल्की 3D कैमरा मूवमेंट जोड़ी "
-              "गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।",
+    made = ("यह सूची ऊपर दी गई रिपोर्टों में बताई गई DMRC, रेलवे और पुलिस की सूचनाओं से हाथ से मिलाकर बनाई गई है। "
+            "आवाज़ AI की है।" if short.kind == "advisory" else
+            "यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं (Wikimedia Commons), उन पर हल्की 3D कैमरा मूवमेंट जोड़ी "
+            "गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
+    lines += [made,
               VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
               "कोई गलती दिखे तो स्रोत के साथ कमेंट करें, हम सुधार करेंगे।", ""]
-    lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
+    if short.kind != "advisory":
+        lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
     tags = [hashtag(h) for h in short.hashtags]
     lines.append(" ".join("#" + t for t in dict.fromkeys(tags) if t))
-    text = "\n".join(lines)
     # YouTube rejects < and > in descriptions.
-    return text.replace("<", "‹").replace(">", "›")[:4900]
+    text = "\n".join(lines).replace("<", "‹").replace(">", "›")
+    if len(text.encode()) > DESCRIPTION_BYTES:
+        raise ValueError(f"description is {len(text.encode())} bytes; YouTube allows {DESCRIPTION_BYTES}")
+    return text
 
 
 def tags(short: Short) -> list[str]:

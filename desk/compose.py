@@ -302,12 +302,12 @@ def _chip_layer(text: str, accent: tuple) -> tuple[np.ndarray, np.ndarray]:
     return _rgba(_text_layer([(text, font, (255, 255, 255, 255))], pad=22, box=(10, 10, 14, 175), accent=accent))
 
 
-def _end_layers(accent: tuple) -> list[tuple[np.ndarray, np.ndarray] | None]:
+def _end_layers(accent: tuple, disclosure: str = DISCLOSURE) -> list[tuple[np.ndarray, np.ndarray] | None]:
     """The end card: the channel's name (when it has one), where the sources are, and the disclosure."""
     name = config.NAME_HI or config.NAME
     logo = _rgba(_text_layer([(name, _fit("ExtraBold", 132, name, W - 140), accent + (255,))])) if name else None
     src = _rgba(_text_layer([("सभी स्रोत विवरण में", _font("SemiBold", 52), (255, 255, 255, 240))]))
-    disc = _rgba(_text_layer([(DISCLOSURE, _fit("Medium", 34, DISCLOSURE, W - 120), (255, 255, 255, 215))]))
+    disc = _rgba(_text_layer([(disclosure, _fit("Medium", 34, disclosure, W - 120), (255, 255, 255, 215))]))
     return [logo, src, disc]
 
 

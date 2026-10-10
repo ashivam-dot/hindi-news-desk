@@ -119,6 +119,31 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     return result
 
 
+def _advisory(health: dict, dry: bool) -> dict | None:
+    """A current public-service advisory goes out before any story; a dry run makes it and stops there."""
+    from . import advisory
+
+    for spec in advisory.pending():
+        try:
+            short, stats = advisory.make(spec, WORK)
+        except Exception as exc:
+            health["steps"].append(f"advisory {spec['id']}: {type(exc).__name__}: {exc}"[:400])
+            continue
+        if dry:
+            health["steps"].append(f"dry run: made advisory {short.id} ({stats['duration']} s), not published")
+            health["made"] = {"id": short.id, "title": short.title, **stats}
+            return health
+        try:
+            result = advisory.publish(short, WORK / short.id)
+        except Exception as exc:
+            health["steps"].append(f"advisory {spec['id']}: {type(exc).__name__}: {exc}"[:400])
+            continue
+        health["steps"].append(f"published advisory {short.id}: {result['url']}")
+        health["published"] = result
+        return health
+    return None
+
+
 def run(dry: bool = False, preview: bool = False) -> dict:
     """One scheduled pass: watch, pick the best eligible story, make it, gate it, publish it. A dry run makes the
     best candidate (outside the schedule if need be) and never publishes or changes the ledger."""
@@ -136,6 +161,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                     health["steps"].append(reason)
                     health["held"] = reason
                     return health
+        if done := _advisory(health, dry):
+            return done
         found = plan.watch(save=not dry)
         health["steps"].append(f"watch: {len(found['candidates'])} candidates from {len(found['trending'])} trending")
         health["steps"] += found["notes"][:8]
