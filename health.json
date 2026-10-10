@@ -1,16 +1,16 @@
 {
- "at": "2026-10-10T06:04:02+00:00",
+ "at": "2026-10-10T06:16:59+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "advisory adv-delhi-cjp-2026-10-10: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.954, 0.716, 0.0, 0.269, 0.0, 0.0, 0.905, 0.944, 0.919], 'wpm': 167.9, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.972, 0.977, 0.702, 0.0, 0.795, 0.019, 0.0, 0.833, 0.946], 'wpm': ",
+  "advisory adv-delhi-cjp-2026-10-10: TakeRejected: voice: the joined lines failed the whole-script check: [0.9541284403669725, 0.9886363636363636, 0.6842105263157895, 0.0, 0.3522727272727273, 0.024844720496894408, 0.0, 0.9305555555555556, 0.918918918918919], 157.9 wpm",
   "watch: 6 candidates from 9 trending",
   "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
-  "hold wk-Q1355840: last Short went out 0.2 h ago",
-  "hold wk-Q141681530: last Short went out 0.2 h ago",
-  "hold wk-Q6831806: last Short went out 0.2 h ago",
-  "hold wk-Q5496741: last Short went out 0.2 h ago",
-  "hold wk-Q11628: last Short went out 0.2 h ago",
-  "hold wk-Q141605182: last Short went out 0.2 h ago"
+  "hold wk-Q1355840: last Short went out 0.5 h ago",
+  "hold wk-Q141681530: last Short went out 0.5 h ago",
+  "hold wk-Q6831806: last Short went out 0.5 h ago",
+  "hold wk-Q5496741: last Short went out 0.5 h ago",
+  "hold wk-Q11628: last Short went out 0.5 h ago",
+  "hold wk-Q141605182: last Short went out 0.5 h ago"
  ]
 }
