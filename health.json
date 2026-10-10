@@ -1,15 +1,16 @@
 {
- "at": "2026-10-10T04:41:16+00:00",
+ "at": "2026-10-10T05:32:20+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "advisory adv-delhi-cjp-2026-10-10: VoiceHold: hold: no Sulafat voice: no Gemini TTS model read the script: gemini-3.8-flash-tts: HTTP 429; gemini-3.8-flash-tts: HTTP 429; gemini-3.8-flash-tts: HTTP 429, and the Chatterbox fallback has no reference clip (tools/make_reference.py)",
   "watch: 8 candidates from 9 trending",
   "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
   "hold wk-Q1355840: Orbitwire's top candidate: waiting for its release, then 3 h",
   "skip wk-Q141681530: gate: only 1 usable photos of 2026 Panama earthquake on Wikimedia Commons (want 3)",
   "skip wk-Q6831806: gate: only 1 usable photos of Michael Kearns on Wikimedia Commons (want 3)",
-  "hold wk-Q228928: RuntimeError: video osM-5cOV1Kk did not go public (private)",
-  "hold wk-Q141670823: RuntimeError: video WtXHPm0XgEQ did not go public (private)",
+  "skip wk-Q228928: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.516, 0.809, 0.967, 1.0, 0.941, 0.771, 0.969, 0.98, 0.973], 'wpm': 146.1, 'clean': False, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.645, 0.809, 0.951, 1.0, 0.912, 0.819, 0.954, 0.98, 0.946], 'wpm': 134.8, 'clean",
+  "skip wk-Q141670823: gate: title: not in Hindi",
   "nothing eligible to publish"
  ]
 }
