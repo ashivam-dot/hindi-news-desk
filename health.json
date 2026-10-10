@@ -1,16 +1,15 @@
 {
- "at": "2026-10-10T07:51:53+00:00",
+ "at": "2026-10-10T08:06:38+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 0 scored Shorts, lifts {}",
-  "watch: 6 candidates from 9 trending",
+  "watch: 5 candidates from 8 trending",
   "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
-  "hold wk-Q1355840: last Short went out 0.3 h ago",
-  "hold wk-Q141681530: last Short went out 0.3 h ago",
+  "hold wk-Q1355840: Orbitwire's top candidate: waiting for its release, then 3 h",
   "drop wk-Q6831806: 92 h old and no longer trending live",
   "drop wk-Q5496741: 116 h old and no longer trending live",
   "drop wk-Q11628: 236 h old and no longer trending live",
-  "hold wk-Q141605182: last Short went out 0.3 h ago"
+  "skip wk-Q141681530: gate: only 1 usable photos of 2026 Panama earthquake on Wikimedia Commons (want 3)",
+  "nothing eligible to publish"
  ]
 }
