@@ -1,15 +1,18 @@
 {
- "at": "2026-10-11T07:57:52+00:00",
+ "at": "2026-10-11T08:13:46+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 13 trending",
+  "watch: 7 candidates from 12 trending",
   "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again",
   "drop wk-Q2475741: 68 h old and no longer trending live",
-  "skip wp-2026_anti-CEC_protests: gate: only 2 usable photos of 2026 anti-CEC protests on Wikimedia Commons (want 3)",
-  "skip wp-2026_Budhi_Gandaki_flood: gate: the article is under 6 hours old; facts may still move",
-  "skip wp-October_2026_King_Khalid_International_Airport_attacks: gate: only 1 usable photos of October 2026 King Khalid International Airport attacks on Wikimedia Commons (want 3)",
-  "skip wk-Q141680327: gate: no draft passed the fact checks: write the narration in Hindi (Devanagari)",
-  "nothing eligible to publish"
- ]
+  "published wp-2026_anti-CEC_protests: https://www.youtube.com/shorts/wEqlvrhySYE"
+ ],
+ "published": {
+  "video_id": "wEqlvrhySYE",
+  "url": "https://www.youtube.com/shorts/wEqlvrhySYE",
+  "title": "2026 anti-CEC protests: चुनाव आयोग को लेकर जारी विवाद",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
