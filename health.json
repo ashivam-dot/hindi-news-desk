@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T10:52:22+00:00",
+ "at": "2026-10-11T11:07:54+00:00",
  "ok": true,
  "dry": false,
  "steps": [
@@ -7,9 +7,13 @@
   "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again",
   "drop wk-Q2475741: 71 h old and no longer trending live",
   "skip wp-2026_Budhi_Gandaki_flood: gate: the article is under 6 hours old; facts may still move",
-  "skip wk-Q141679225: gate: no draft passed the fact checks: unsupported: The claim that 24,000 police officers were deployed to guard 35,000 schools (\"24,000 पुलिसकर्मियों को 35,000 स्कूलों की सुरक्षा में तैनात किया\") misrepresents the sources, which state that 24,000 officers were mobilised when 15,000 schools were patrolled, and that 35,000 schools were patrolled in total by 5 p.m.; unsupported: The source does not state that it remained unclear by Octob",
-  "skip wk-Q141671500: gate: only 1 usable photos of 2026 Eritrean incursion into Ethiopia on Wikimedia Commons (want 3)",
-  "skip wk-Q141544931: gate: only 0 usable photos of 2026 Ethiopian offensive on Wikimedia Commons (want 3)",
-  "nothing eligible to publish"
- ]
+  "published wk-Q141679225: https://www.youtube.com/shorts/Wt7luuNX_tA"
+ ],
+ "published": {
+  "video_id": "Wt7luuNX_tA",
+  "url": "https://www.youtube.com/shorts/Wt7luuNX_tA",
+  "title": "2026 पोलैंड स्कूल चाकूबाजी: स्कूलों की सुरक्षा पर उठे सवाल",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
