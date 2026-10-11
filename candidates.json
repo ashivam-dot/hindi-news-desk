@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T07:30:11+00:00",
+ "at": "2026-10-11T07:33:57+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -25,15 +25,15 @@
    "date": "2026-10-09"
   },
   {
-   "qid": null,
-   "title": "2026 Erie shooting",
-   "fame": 125000,
-   "views": 0,
+   "qid": "Q141670823",
+   "title": "Hurricane Isaias (2026)",
+   "fame": 182340,
+   "views": 57340,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-10T22:57:00+00:00",
+   "news_at": "2026-10-10T23:19:55+00:00",
    "headlines": [
-    "Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+    "Four dead and thousands without power after Hurricane Isaias lashes US"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -44,16 +44,43 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+    "wikipedia-top-2026-10-10",
+    "google-news:Four dead and thousands without power after Hurricane Isaias lashes US"
    ],
-   "id": "wp-2026_Erie_shooting",
+   "id": "wk-Q141670823",
    "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-10",
-   "coords": [
-    42.1349,
-    -80.0644
+   "category": "cyclone",
+   "date": "2026-10-06",
+   "coords": null,
+   "has_coords": true
+  },
+  {
+   "qid": "Q141605182",
+   "title": "Flydubai Flight 1073",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-09T19:40:54+00:00",
+   "headlines": [
+    "Attacker in FlyDubai Flight Meant to Crash Into Israeli Airport, Emiratis Say"
    ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": "फ़्लाईदुबई उड़ान १०७३",
+   "via": [
+    "google-news:Attacker in FlyDubai Flight Meant to Crash Into Israeli Airport, Emiratis Say"
+   ],
+   "id": "wk-Q141605182",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-09-30",
+   "coords": null,
    "has_coords": true
   },
   {
@@ -78,31 +105,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-08"
-  },
-  {
-   "qid": "Q141670823",
-   "title": "Hurricane Isaias (2026)",
-   "fame": 57340,
-   "views": 57340,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-10"
-   ],
-   "id": "wk-Q141670823",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-06",
-   "coords": null,
-   "has_coords": true
   },
   {
    "qid": "Q141681530",
@@ -183,38 +185,6 @@
   }
  ],
  "candidates": [
-  {
-   "qid": null,
-   "title": "2026 Erie shooting",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-10T22:57:00+00:00",
-   "headlines": [
-    "Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
-   ],
-   "id": "wp-2026_Erie_shooting",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-10",
-   "coords": [
-    42.1349,
-    -80.0644
-   ],
-   "has_coords": true
-  },
   {
    "qid": "Q2475741",
    "title": "Nana Patekar",
