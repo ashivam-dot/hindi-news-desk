@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T02:54:05+00:00",
+ "at": "2026-10-11T05:54:15+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
@@ -46,12 +46,18 @@
      "views": 104,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 24.9,
+     "views": 104,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": null,
    "region": null,
-   "views_24h": null
+   "views_24h": 104.0
   },
   "osM-5cOV1Kk": {
    "id": "wk-Q228928",
@@ -95,6 +101,12 @@
     },
     {
      "age_h": 20.95,
+     "views": 108,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 23.95,
      "views": 108,
      "likes": 0,
      "comments": 0
@@ -150,6 +162,12 @@
      "views": 23,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 23.23,
+     "views": 23,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "advisory",
@@ -202,6 +220,12 @@
      "views": 319,
      "likes": 3,
      "comments": 0
+    },
+    {
+     "age_h": 22.33,
+     "views": 320,
+     "likes": 3,
+     "comments": 0
     }
    ],
    "kind": "advisory",
@@ -248,6 +272,12 @@
      "views": 281,
      "likes": 6,
      "comments": 0
+    },
+    {
+     "age_h": 20.58,
+     "views": 282,
+     "likes": 6,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -257,7 +287,7 @@
   }
  },
  "learned": {
-  "scored": 0,
+  "scored": 1,
   "min_samples": 4,
   "lifts": {}
  }
