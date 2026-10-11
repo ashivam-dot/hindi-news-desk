@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T10:25:31+00:00",
+ "at": "2026-10-11T10:52:22+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -27,21 +27,26 @@
   {
    "qid": "Q141670823",
    "title": "Hurricane Isaias (2026)",
-   "fame": 107340,
+   "fame": 232340,
    "views": 57340,
    "traffic": 0,
-   "news": 0,
+   "news": 125000,
    "news_at": "2026-10-11T00:00:00+00:00",
-   "headlines": [],
+   "headlines": [
+    "Four dead and thousands without power after Hurricane Isaias lashes US"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-10",
-    "wikipedia-current-events-2026-10-10"
+    "wikipedia-current-events-2026-10-10",
+    "google-news:Four dead and thousands without power after Hurricane Isaias lashes US"
    ],
    "id": "wk-Q141670823",
    "kind": "incident",
@@ -232,7 +237,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T10:25:34.551180+00:00",
+   "news_at": "2026-10-11T10:52:26.471235+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -339,7 +344,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T10:25:34.551180+00:00",
+   "news_at": "2026-10-11T10:52:26.471235+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -471,13 +476,5 @@
  ],
  "notes": [
   "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again"
- ],
- "trend_errors": [
-  "google news IN: HTTP 503",
-  "google news IN-nation: HTTP 503",
-  "google news IN-hi: HTTP 503",
-  "google news IN-hi-nation: HTTP 503",
-  "google news US: HTTP 503",
-  "google news world: HTTP 503"
  ]
 }
