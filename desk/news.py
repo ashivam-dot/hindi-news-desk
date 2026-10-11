@@ -48,20 +48,27 @@ def _tokens_hi(text: str) -> set[str]:
 
 
 def match(headline: str, now: datetime | None = None, lang: str = "en") -> str | None:
-    """The Wikipedia article (in lang) a headline is about: one of the top search hits, edited in the last
-    EDITED_WITHIN_H hours, whose title shares a distinctive word with the headline. None when nothing fits."""
+    """The Wikipedia article (in lang) a headline is about: among the top search hits edited in the last
+    EDITED_WITHIN_H hours whose title shares a distinctive word with the headline, an event article sharing two or
+    more words first ("2026 Erie shooting" over "Erie, Pennsylvania"), then the most shared words, then search order.
+    None when nothing fits."""
+    from .trends import title_kind
+
     now = now or datetime.now(timezone.utc)
     d = net.get_json(wiki.api(lang), params={"action": "query", "list": "search", "srsearch": headline, "srlimit": 5,
                                              "srprop": "timestamp", "format": "json", "formatversion": 2})
     words = _tokens_hi(headline) if lang == "hi" else _tokens(headline)
-    for hit in d["query"]["search"]:
+    fits = []
+    for rank, hit in enumerate(d["query"]["search"]):
         edited = datetime.fromisoformat(hit["timestamp"].replace("Z", "+00:00"))
         if (now - edited).total_seconds() > EDITED_WITHIN_H * 3600:
             continue
         title_words = _tokens_hi(hit["title"]) if lang == "hi" else _tokens(hit["title"]) - GENERIC
         if title_words & words:
-            return hit["title"]
-    return None
+            shared = len((_tokens_hi(hit["title"]) if lang == "hi" else _tokens(hit["title"])) & words)
+            event = lang == "en" and shared >= 2 and title_kind(hit["title"], now.date()) is not None
+            fits.append((not event, -shared, rank, hit["title"]))
+    return min(fits)[3] if fits else None
 
 
 def headlines(feed: str, now: datetime | None = None) -> list[dict]:

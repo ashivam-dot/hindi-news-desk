@@ -141,6 +141,16 @@ def test_fresh_event_articles_are_recognised_by_their_title(title, cat):
     assert trends.title_kind(title, date(2026, 10, 11)) == cat
 
 
+def test_a_headline_resolves_to_the_event_article_not_its_city(monkeypatch):
+    hits = [{"title": "Erie, Pennsylvania", "timestamp": "2026-10-11T05:00:00Z"},
+            {"title": "2026 Erie shooting", "timestamp": "2026-10-11T06:00:00Z"},
+            {"title": "Erie County", "timestamp": "2020-01-01T00:00:00Z"}]
+    monkeypatch.setattr(news.net, "get_json", lambda *a, **k: {"query": {"search": hits}})
+    now = utc(11, 7)
+    assert news.match("Shooting leaves 9 dead including suspect in Erie, Pennsylvania", now) == "2026 Erie shooting"
+    assert news.match("Erie mayor opens new library", now) == "Erie, Pennsylvania"
+
+
 def test_radar_keeps_a_fresh_article_wikidata_does_not_know_yet(monkeypatch):
     hits = {"2026 Erie shooting": {"views": 0, "traffic": 0, "via": ["google-news:x"], "news": 125_000,
                                    "news_at": "2026-10-11T03:00:00+00:00", "headlines": ["9 dead in Erie"],
