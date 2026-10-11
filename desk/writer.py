@@ -112,7 +112,7 @@ RULES = """RULES (all mandatory):
   you can, and the same photo at most twice.
 - caption: 1 to 4 Hindi words shown on screen that match what the beat says: the work it names with its year, a
   role, an honour, or a year. Never a place name: viewers read a place over a photo as where the photo was taken.
-- title: Hindi, 25 to 70 characters, factual and moving, includes "{name_hi}", no clickbait, no capitals for effect.
+- title: Hindi, 25 to 70 characters, factual and moving, includes {name_hi}, no clickbait, no capitals for effect.
 Return only the JSON."""
 
 
@@ -320,7 +320,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     if not today_ok:
         brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy is "
                   "fine); give the date instead.")
-    name_hi = subject.get("hi") or subject["en"]
+    name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
+               else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines)
     ground_en = source_en + "\n" + "\n".join(facts) + "\n" + "\n".join(p["description"] for p in photos)
     ground_hi = source_hi + "\n" + "\n".join(facts) + "\n" + "\n".join(hi_names.values())
