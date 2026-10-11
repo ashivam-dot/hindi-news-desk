@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T21:09:12+00:00",
+ "at": "2026-10-11T21:29:47+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -25,13 +25,42 @@
    "date": "2026-10-09"
   },
   {
+   "qid": null,
+   "title": "Hurricane Rachel (2026)",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-11T17:53:49+00:00",
+   "headlines": [
+    "Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "id": "wp-Hurricane_Rachel_2026",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-28",
+   "coords": null,
+   "has_coords": false
+  },
+  {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi Arabia airports",
    "fame": 100000,
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T21:09:16.954183+00:00",
+   "news_at": "2026-10-11T21:29:50.661549+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -45,7 +74,7 @@
    ],
    "id": "wk-Q141695384",
    "kind": "incident",
-   "category": "attack",
+   "category": "conflict",
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false
@@ -57,7 +86,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T21:09:16.954183+00:00",
+   "news_at": "2026-10-11T21:29:50.661549+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -208,7 +237,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T21:09:16.954183+00:00",
+   "news_at": "2026-10-11T21:29:50.661549+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -309,32 +338,6 @@
  ],
  "candidates": [
   {
-   "qid": "Q141695384",
-   "title": "October 2026 attacks on Saudi Arabia airports",
-   "fame": 100000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-11T21:09:16.954183+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-10",
-    "wikipedia-current-events-2026-10-11"
-   ],
-   "id": "wk-Q141695384",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-10",
-   "coords": null,
-   "has_coords": false
-  },
-  {
    "qid": "Q2475741",
    "title": "Nana Patekar",
    "fame": 99473,
@@ -368,6 +371,32 @@
    }
   },
   {
+   "qid": "Q141695384",
+   "title": "October 2026 attacks on Saudi Arabia airports",
+   "fame": 100000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T21:29:50.661549+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10",
+    "wikipedia-current-events-2026-10-11"
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false
+  },
+  {
    "qid": "Q6831806",
    "title": "Michael Kearns (actor)",
    "fame": 23304,
@@ -389,6 +418,35 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-06"
+  },
+  {
+   "qid": null,
+   "title": "Hurricane Rachel (2026)",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-11T17:53:49+00:00",
+   "headlines": [
+    "Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "id": "wp-Hurricane_Rachel_2026",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-28",
+   "coords": null,
+   "has_coords": false
   }
  ],
  "notes": []

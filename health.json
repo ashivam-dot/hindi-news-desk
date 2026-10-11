@@ -1,11 +1,12 @@
 {
- "at": "2026-10-11T21:09:11+00:00",
+ "at": "2026-10-11T21:29:46+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 3 candidates from 12 trending",
+  "watch: 4 candidates from 13 trending",
+  "drop wk-Q2475741: 82 h old and no longer trending live",
   "hold wk-Q141695384: outside 07:00-24:00 IST",
-  "drop wk-Q2475741: 81 h old and no longer trending live",
-  "drop wk-Q6831806: 129 h old and no longer trending live"
+  "drop wk-Q6831806: 130 h old and no longer trending live",
+  "hold wp-Hurricane_Rachel_2026: outside 07:00-24:00 IST"
  ]
 }
