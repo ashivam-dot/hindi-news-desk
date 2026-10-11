@@ -27,6 +27,7 @@ OUTRO = "पूरी जानकारी और सभी स्रोत व
 CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
 MIN_WORDS, MAX_WORDS = 80, 135
 DRAFTS = 4
+PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
 SCHEMA = {
     "type": "object",
     "properties": {
@@ -285,6 +286,15 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     return problems, doubtful
 
 
+def unlisted_but_sourced(item: str, ground_en: str) -> bool:
+    """A fact-check item that only says a name is missing from NAMES, for a name the English source does state."""
+    if not re.search(r"missing from (the )?NAMES", item, re.I) or re.search(r"\bnot (directly )?(supported|in)\b", item,
+                                                                            re.I):
+        return False
+    english = re.findall(r"\(([A-Z][^()\u0900-\u097F]{2,60})\)|['\"‘“]([A-Z][^'\"’”\u0900-\u097F]{2,60})['\"’”]", item)
+    return any(hindi.contains(ground_en, a or b) for a, b in english)
+
+
 def monotone(draft: dict) -> list[str]:
     """Openings repeated so often that the script reads as a list."""
     openers = [re.sub(r"[^\w\u0900-\u097f]", "", b["say"].split()[0]).lower() for b in draft.get("beats", [])
@@ -332,7 +342,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
                                                    doubtful), CHECK_SCHEMA, temperature=0.0, max_tokens=800)
                 items = [str(u).strip() for u in verdict.get("unsupported", []) if str(u).strip()]
-                ignored = [u for u in items if not hindi.quotes(u, script_text(draft))]
+                ignored = [u for u in items if not hindi.quotes(u, script_text(draft))
+                           or unlisted_but_sourced(u, ground_en)]
                 problems = [f"unsupported: {u}" for u in items if u not in ignored]
             if not problems:
                 return draft, log, pen.used
@@ -364,24 +375,29 @@ def _strip(text: str, words: list[str]) -> str:
 
 
 def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None = None,
-                files: list[str] | None = None, exclude: set[str] | None = None) -> list[dict]:
+                files: list[str] | None = None, exclude: set[str] | None = None, places: bool = False) -> list[dict]:
     """Downloaded photos as dicts with a "focus" box: for a person, only photos in which their face is matched.
-    files: Commons files an editor chose instead of searching; exclude: files that may not be used."""
+    files: Commons files an editor chose instead of searching; exclude: files that may not be used; places: see
+    media.find."""
     import cv2
 
     if files:
         found = media.picks([f for f in files if f not in (exclude or set())])
     else:
-        found = media.find(title, ent, limit=10, extra_qids=extra_qids, exclude=exclude, search=bool(exclude))
+        found = media.find(title, ent, limit=10, extra_qids=extra_qids, exclude=exclude, search=bool(exclude),
+                           places=places)
     found = media.download(found, folder)
     rows = media.as_dicts(found)
     images = [cv2.imread(r["path"]) for r in rows]
     detected = [faces.detect(img) if img is not None else [] for img in images]
     picks = faces.subject(detected) if person else [None] * len(rows)
     kept = []
-    for r, f in zip(rows, picks):
+    for r, f, img, seen in zip(rows, picks, images, detected):
         if person and f is None:
             continue
+        if r["origin"] == "place" and img is not None and any(d["box"][2] >= PLACE_FACE * min(img.shape[:2])
+                                                              for d in seen):
+            continue  # a place photo that features someone would pass them off as part of the story
         r["focus"] = [round(v) for v in f["box"]] if f else None
         kept.append(r)
     return kept[:8]
@@ -491,15 +507,15 @@ def build_incident(cand: dict) -> Short:
              if isinstance(c["value"], str) and c["value"].startswith("Q")]
     if not extra:
         # An article Wikidata does not describe yet: the places its infobox links to give the location photos.
-        links = re.findall(r"\[\[([^\]|#]+)", " ".join(raw.get(k, "") for k in ("location", "site", "place", "areas affected",
-                                                                                "areas", "country")))
+        links = re.findall(r"\[\[([^\]|#]+)", " ".join(raw.get(k, "") for k in ("target", "location", "site", "place",
+                                                                                "areas affected", "areas", "country")))
         found = wiki.page_info(list(dict.fromkeys(links))[:6]) if links else {}
         extra = list(dict.fromkeys(p["qid"] for p in found.values() if p.get("qid")))[:3]
     sid = cand.get("id") or f"wk-{qid}"
     work = WORK / sid
     ov, exclude = _shared(cand, article, ent, extra)
     photos = pick_photos(article, ent, work / "photos", person=False, extra_qids=extra, files=cand.get("photo_files"),
-                         exclude=exclude)
+                         exclude=exclude, places=not qid)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))

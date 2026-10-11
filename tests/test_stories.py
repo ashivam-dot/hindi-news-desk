@@ -80,6 +80,20 @@ def test_graphic_files_are_never_picked():
     assert media.GRAPHIC.search("Funeral of the actor.jpg")
     assert not media.GRAPHIC.search("Nana Patekar at IFFI Goa.jpg")
     assert media.NOT_PHOTO.search("File:2026 Iran war collage 2.jpg")
+    assert media.NOT_PHOTO.search("File:NepalGorkhaDistrictmap.png")
+    assert not media.NOT_PHOTO.search("File:Riyadh Skyline.jpg")
+
+
+def test_a_fresh_article_borrows_named_photos_of_its_places(monkeypatch):
+    ents = {"Q851": {"labels": {"en": {"value": "Riyadh"}}, "sitelinks": {"enwiki": {"title": "Riyadh"}}}}
+    pages = {"Riyadh": ["File:Riyadh Skyline 2.jpg", "File:Riyadh location map.svg", "File:Desert camp.jpg",
+                        "File:Riyadh Metro.jpg"], "Raid": []}
+    monkeypatch.setattr(media.wiki, "entities", lambda qids: {q: ents[q] for q in qids})
+    monkeypatch.setattr(media, "_article_files", lambda t: pages[t])
+    monkeypatch.setattr(media, "_usable", lambda ordered, keys, limit, exclude=None: ordered)
+    assert media.find("Raid", {}, extra_qids=["Q851"]) == []
+    assert media.find("Raid", {}, extra_qids=["Q851"], places=True) == [
+        ("File:Riyadh Skyline 2.jpg", "place"), ("File:Riyadh Metro.jpg", "place")]
 
 
 def test_excluded_photos_are_skipped(monkeypatch):

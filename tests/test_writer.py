@@ -183,6 +183,15 @@ def test_checker_items_that_quote_the_script_still_reject(tmp_path):
         write([flagged] * writer.DRAFTS, tmp_path)
 
 
+def test_a_sourced_name_missing_only_from_names_does_not_reject(tmp_path):
+    out, log, _ = write([["The organisation 'पद्म श्री' (Padma Shri) is mentioned in SCRIPT but is missing from "
+                          "NAMES."]], tmp_path)
+    assert out == draft() and log == []
+    assert not writer.unlisted_but_sourced("'पद्म श्री' (Bharat Ratna) is missing from NAMES.", SOURCE_EN)
+    assert not writer.unlisted_but_sourced("'पद्म श्री' (Padma Shri) is not supported and missing from NAMES.",
+                                           SOURCE_EN)
+
+
 def test_the_hindi_source_is_dropped_when_missing():
     msgs = writer._messages(writer.DEATH_BRIEF.format(name="X", pronoun="he", object="him"), ["f"], "src",
                             "हिंदी स्रोत", PHOTOS, "एक्स", {})

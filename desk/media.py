@@ -15,7 +15,7 @@ from . import net, wiki
 
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 FREE = re.compile(r"^(CC0|Public domain|PD\b|CC BY(-SA)? \d(\.\d)?( [a-z]{2,})?$|CC BY(-SA)?$)", re.I)
-NOT_PHOTO = re.compile(r"(\.svg$|\.gif$|\.tiff?$|\blogo|signature|autograph|\bmap\b|locator|location|\bflag\b|coat of arms|"
+NOT_PHOTO = re.compile(r"(\.svg$|\.gif$|\.tiff?$|\blogo|signature|autograph|\bmap\b|map\.\w+$|locator|location|\bflag\b|coat of arms|"
                        r"\bicon\b|\bseal\b|emblem|chart|graph|diagram|insignia|\bplan\b|route|blank|wordmark|"
                        r"collage|montage)", re.I)
 # Dignity: a Short never shows bodies, wounds or grief at a funeral.
@@ -110,7 +110,7 @@ def _shoot(file: str) -> str:
 
 
 def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = None,
-         exclude: set[str] | None = None, search: bool = False) -> list[Photo]:
+         exclude: set[str] | None = None, search: bool = False, places: bool = False) -> list[Photo]:
     """Up to `limit` usable photos: the Wikidata image first, then the article's own images, then its Commons category.
 
     Article and category files must name the story (the person's surname, the storm's name) in their file name or
@@ -118,6 +118,8 @@ def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = N
     extra_qids adds the main image of related items (a birthplace, an aircraft type, an airport) after those.
     exclude: Commons files that may not be used (the ones Orbitwire would pick); search: also search Commons for
     files naming the story. Without both, the ranking is exactly Orbitwire's (desk/orbitwire.py relies on that).
+    places: also take photos from each related item's own article whose file name names that item (a city skyline,
+    the airport's terminal), for an article so new that Commons has nothing of the event itself.
     """
     keys = _keys(wiki.label(ent) or title) | _keys(title)
     ordered: list[tuple[str, str]] = []
@@ -133,8 +135,16 @@ def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = N
         except Exception:
             pass
     if extra_qids:
-        for q, e in wiki.entities(extra_qids).items():
+        related = wiki.entities(extra_qids)
+        for q, e in related.items():
             ordered += [("File:" + c["value"], "related") for c in wiki.claims(e, "P18")[:1]]
+        for q, e in related.items() if places else ():
+            page, own = wiki.sitelink(e, "enwiki"), _keys(wiki.label(e) or "")
+            try:
+                files = _article_files(page) if page and own else []
+            except Exception:
+                files = []
+            ordered += [(f, "place") for f in files if _names(f.replace("_", " "), own) and not NOT_PHOTO.search(f)][:3]
     if search:
         try:
             ordered += [(f, "search") for f in _search_files(re.sub(r"\s*\([^)]*\)$", "", title))]
