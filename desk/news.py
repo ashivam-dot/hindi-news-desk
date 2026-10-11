@@ -9,6 +9,7 @@ they show how big a story is for this channel's audience.
 from __future__ import annotations
 
 import re
+import time
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -108,14 +109,23 @@ def signals(now: datetime | None = None) -> tuple[dict[str, dict], list[str]]:
         except Exception as exc:
             errors.append(f"google news {feed}: {exc}"[:200])
 
-    def safe_match(h):
-        try:
-            return match(h["title"], now, "hi" if h["feed"] in HINDI_FEEDS else "en")
-        except Exception:
-            return None
+    failed = []
 
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    def safe_match(h):
+        for attempt in range(2):
+            try:
+                return match(h["title"], now, "hi" if h["feed"] in HINDI_FEEDS else "en")
+            except Exception as exc:
+                if attempt:
+                    failed.append(type(exc).__name__ + (f" {exc}" if str(exc).startswith("HTTP") else ""))
+                else:
+                    time.sleep(2)
+        return None
+
+    with ThreadPoolExecutor(max_workers=4) as pool:
         titles = list(pool.map(safe_match, items))
+    if failed:
+        errors.append(f"wikipedia search failed for {len(failed)} of {len(items)} headlines ({failed[0]})"[:200])
     hindi = sorted({t for h, t in zip(items, titles) if t and h["feed"] in HINDI_FEEDS})
     try:
         to_en = wiki.hi_to_en(hindi) if hindi else {}

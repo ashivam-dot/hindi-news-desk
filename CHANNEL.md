@@ -17,7 +17,9 @@ second vertical Shorts, YouTube category News & Politics, language `hi`.
 
 A story qualifies only when people are already looking at it (Google News lead stories in Hindi and English for
 India, the US and the world; Google Trends for India first, then the US and the UK; English Wikipedia's most-read
-list; see `desk/news.py` and `desk/trends.py`) **and** it can be shown honestly:
+list; the story articles Wikipedia's editors list on today's and yesterday's Current events page, each counting like
+two lead headlines, an India story when listed under an India topic; see `desk/news.py` and `desk/trends.py`)
+**and** it can be shown honestly:
 
 - an incident at most 30 days old: flight incidents, storms, floods, wildfires, volcanoes, earthquakes, rail and
   maritime accidents, explosions, terror attacks, strikes in a war;

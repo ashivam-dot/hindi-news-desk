@@ -135,7 +135,8 @@ def test_ledger_skip_marks_done(tmp_path, monkeypatch):
     ("2026 Erie shooting", "attack"), ("2026 anti-CEC protests", "protest"), ("Flydubai Flight 1073", None),
     ("2026 Panama earthquake", "earthquake"), ("2026 Hyderabad building collapse", "disaster"),
     ("Cyclone Montha (2026)", "cyclone"), ("2026 Delhi riots", None), ("2026 Bihar Legislative Assembly election", None),
-    ("2019 Kerala floods", None), ("Strictly Come Dancing series 24", None), ("2026 FIFA World Cup", None),
+    ("2019 Kerala floods", None), ("October 2026 King Khalid International Airport attack", "attack"),
+    ("Tiger attack", None), ("Strictly Come Dancing series 24", None), ("2026 FIFA World Cup", None),
 ])
 def test_fresh_event_articles_are_recognised_by_their_title(title, cat):
     assert trends.title_kind(title, date(2026, 10, 11)) == cat
@@ -165,6 +166,45 @@ def test_radar_keeps_a_fresh_article_wikidata_does_not_know_yet(monkeypatch):
     out = trends.radar(date(2026, 10, 11))["candidates"]
     assert [(c["id"], c["category"], c["qid"], c["date"]) for c in out] == [
         ("wp-2026_Erie_shooting", "attack", None, "2026-10-11")]
+
+
+PORTAL = """{{Current events|year=2026|month=10|day=10}}
+'''Armed conflicts and attacks'''
+*[[Houthi–Saudi conflict]]
+**[[October 2026 King Khalid International Airport attack]]
+***Twelve people are killed in a [[Houthis|Houthi]] missile attack on [[King Khalid International Airport]].
+'''Law and crime'''
+*[[Censorship in India]]
+**[[2026 anti-CEC protests]]
+***Police detain protest leaders in [[New Delhi]].
+*[[2026 Erie shooting|Erie shooting]]
+"""
+
+
+def test_current_events_lists_story_articles_not_the_links_in_summaries(monkeypatch):
+    from desk import wiki
+    monkeypatch.setattr(wiki.net, "get_json", lambda *a, **k: {"parse": {"wikitext": PORTAL}})
+    assert wiki.current_events(date(2026, 10, 10)) == [
+        ("Houthi–Saudi conflict", False), ("October 2026 King Khalid International Airport attack", False),
+        ("Censorship in India", True), ("2026 anti-CEC protests", True), ("2026 Erie shooting", False)]
+    monkeypatch.setattr(wiki.net, "get_json", lambda *a, **k: {"error": {"code": "missingtitle"}})
+    assert wiki.current_events(date(2026, 10, 12)) == []
+
+
+def test_a_listed_protest_is_news_and_an_india_story(monkeypatch):
+    monkeypatch.setattr(trends.wiki, "top_articles", lambda: (date(2026, 10, 10), []))
+    monkeypatch.setattr(trends, "google_trends", lambda geo: [])
+    monkeypatch.setattr(trends.news, "signals", lambda: ({}, []))
+    monkeypatch.setattr(trends.wiki, "current_events",
+                        lambda day: [("2026 anti-CEC protests", True)] if day == date(2026, 10, 11) else [])
+    monkeypatch.setattr(trends, "datetime", type("D", (datetime,), {"now": staticmethod(lambda tz=None: utc(11, 7))}))
+    monkeypatch.setattr(trends.wiki, "page_info", lambda titles: {t: {"title": t, "qid": None, "lat": None, "lon": None}
+                                                                  for t in titles})
+    monkeypatch.setattr(trends.wiki, "classify", lambda qids: {})
+    monkeypatch.setattr(trends.wiki, "entities", lambda qids: {})
+    out = trends.radar(date(2026, 10, 11))["candidates"]
+    assert [(c["id"], c["category"], c["region"], c["fame"]) for c in out] == [
+        ("wp-2026_anti-CEC_protests", "protest", "india", trends.PORTAL_FAME)]
 
 
 def test_a_story_told_before_wikidata_knew_it_does_not_come_back(tmp_path, monkeypatch):

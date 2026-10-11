@@ -80,6 +80,32 @@ def page_info(titles: list[str]) -> dict[str, dict]:
     return out
 
 
+CURRENT_EVENTS = "Portal:Current events/{d.year} {d:%B} {d.day}"
+HEADING = re.compile(r"^(\*+)\s*\[\[([^\]|#]+)(?:\|[^\]]*)?\]\]\s*$")
+INDIA_WORDS = re.compile(r"\bIndia|Indian\b|Delhi|Mumbai|Kolkata|Chennai|Bengaluru|Hyderabad|Manipur|Kashmir|Bihar|"
+                         r"Uttar Pradesh|Maharashtra|Kerala|Punjab|Assam|Gujarat|Rajasthan|Odisha|Bengal")
+
+
+def current_events(day: date) -> list[tuple[str, bool]]:
+    """The story articles Wikipedia's editors list for a day (Portal:Current events), as (title, about India).
+
+    Each story there is a bullet holding nothing but a link, nested under its topic ("2026 anti-CEC protests" under
+    "Censorship in India"); the summary lines below it, and the links inside them, are not stories."""
+    d = net.get_json(API, params={"action": "parse", "page": CURRENT_EVENTS.format(d=day), "prop": "wikitext",
+                                  "format": "json", "formatversion": 2})
+    if "parse" not in d:
+        return []
+    out, path = [], {}
+    for line in d["parse"]["wikitext"].splitlines():
+        m = HEADING.match(line.strip())
+        if not m:
+            continue
+        depth, title = len(m.group(1)), m.group(2).strip()
+        path = {k: v for k, v in path.items() if k < depth} | {depth: title}
+        out.append((title, any(INDIA_WORDS.search(t) for t in path.values())))
+    return out
+
+
 def created(title: str) -> datetime | None:
     d = net.get_json(API, params={"action": "query", "prop": "revisions", "titles": title, "rvlimit": 1, "rvdir": "newer",
                                   "rvprop": "timestamp", "format": "json", "formatversion": 2})

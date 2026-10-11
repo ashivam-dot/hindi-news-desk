@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import re
 import xml.etree.ElementTree as ET
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 from . import net, news, wiki
 
@@ -26,6 +26,9 @@ ONGOING_MIN_HEADLINES = 2
 TRENDS_RSS = "https://trends.google.com/trending/rss?geo={geo}"
 HT = "{https://trends.google.com/trending/rss}"
 TOP_N = 400
+# A story Wikipedia's editors list on today's or yesterday's Current events page counts like two lead headlines.
+PORTAL_FAME = 50000
+PORTAL_LEADS = 2
 INCIDENT_MAX_DAYS = 30
 DEATH_MAX_DAYS = 10
 SUICIDE = "Q10737"
@@ -72,6 +75,22 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
             h["traffic"] += t["traffic"]
             h["via"].append(f"google-trends-{geo}:{t['query']}")
             h.setdefault("geos", set()).add(geo)
+    now = datetime.now(timezone.utc)
+    for back in (1, 0):
+        day = now.date() - timedelta(days=back)
+        try:
+            listed = wiki.current_events(day)
+        except Exception as exc:
+            errors.append(f"wikipedia current events {day}: {exc}"[:200])
+            continue
+        live_at = min(now, datetime.combine(day + timedelta(days=1), datetime.min.time(), timezone.utc)).isoformat()
+        for title, india in listed:
+            h = hits.setdefault(title, {"views": 0, "traffic": 0, "via": []})
+            h["portal"] = h.get("portal", 0) + PORTAL_FAME
+            h["portal_at"] = max(h.get("portal_at", live_at), live_at)
+            h["via"].append(f"wikipedia-current-events-{day}")
+            if india:
+                h.setdefault("geos", set()).add("IN")
     try:
         lead, news_errors = news.signals()
         errors += news_errors
@@ -169,7 +188,7 @@ ORDER = ("aviation", "attack", "explosion", "rail", "maritime", "strike", "earth
 # the way Wikipedia titles events ("2026 Erie shooting", "2026 anti-CEC protests"). Riots, trials and elections stay out.
 TITLE_KINDS = (
     (r"\bflight \d+\b|\b(air|plane|aircraft|helicopter|jet) ?crash", "aviation"),
-    (r"\b(shootings?|stabbings?|bombings?|massacre|terror(ist)? attacks?)\b", "attack"),
+    (r"\b(shootings?|stabbings?|bombings?|massacre|attacks?|airstrikes?|missile strikes?|drone strikes?)\b", "attack"),
     (r"\b(explosions?|blasts?)\b", "explosion"),
     (r"\bderailment\b|\btrain (crash|collision|accident)\b", "rail"),
     (r"\b(ferry|boat|ship) (sinking|capsizing|disaster|accident)\b|\bsinking of\b", "maritime"),
@@ -232,10 +251,11 @@ def radar(today: date | None = None) -> dict:
             if qid in seen or not cats or not ent:
                 continue
             seen.add(qid)
-        fame = h["views"] + h["traffic"] + h.get("news", 0)
+        fame = h["views"] + h["traffic"] + h.get("news", 0) + h.get("portal", 0)
         geos = h.get("geos", set())
+        news_at = max(filter(None, (h.get("news_at"), h.get("portal_at"))), default=None)
         base = {"qid": qid, "title": page["title"], "fame": fame, "views": h["views"], "traffic": h["traffic"],
-                "news": h.get("news", 0), "news_at": h.get("news_at"), "headlines": h.get("headlines", []),
+                "news": h.get("news", 0), "news_at": news_at, "headlines": h.get("headlines", []),
                 "hindi_news": h.get("hindi_news", 0), "hindi_headlines": h.get("hindi_headlines", []),
                 "region": region(ent, geos), "india_link": india_link(ent, geos, h.get("hindi_news", 0)),
                 "geos": sorted(geos), "label_hi": wiki.label(ent, "hi"), "via": h["via"]}
@@ -254,10 +274,11 @@ def radar(today: date | None = None) -> dict:
             continue
         when = _event_date(ent)
         if cat in ONGOING:
-            leads = len(h.get("headlines", [])) + len(h.get("hindi_headlines", []))
+            leads = (len(h.get("headlines", [])) + len(h.get("hindi_headlines", []))
+                     + (PORTAL_LEADS if h.get("portal") else 0))
             if leads < ONGOING_MIN_HEADLINES or not is_current(ent, cat, today):
                 continue  # only news while several lead stories are about it, and while it is still going on
-            when = date.fromisoformat(h["news_at"][:10])
+            when = date.fromisoformat(news_at[:10])
         if not when:
             made = wiki.created(page["title"])
             when = made.date() if made else None
