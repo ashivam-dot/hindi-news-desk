@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T05:54:15+00:00",
+ "at": "2026-10-11T09:09:50+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
@@ -50,6 +50,12 @@
     {
      "age_h": 24.9,
      "views": 104,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 28.16,
+     "views": 105,
      "likes": 0,
      "comments": 0
     }
@@ -110,12 +116,18 @@
      "views": 108,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 27.21,
+     "views": 108,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "death",
    "category": null,
    "region": null,
-   "views_24h": null
+   "views_24h": 108.0
   },
   "TYsCL-64fSM": {
    "id": "adv-delhi-cjp-2026-10-10",
@@ -168,12 +180,18 @@
      "views": 23,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 26.49,
+     "views": 23,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "advisory",
    "category": null,
    "region": null,
-   "views_24h": null
+   "views_24h": 23.0
   },
   "DiRMXLtNQn4": {
    "id": "adv-delhi-cjp-2026-10-10-v2",
@@ -226,12 +244,18 @@
      "views": 320,
      "likes": 3,
      "comments": 0
+    },
+    {
+     "age_h": 25.59,
+     "views": 320,
+     "likes": 3,
+     "comments": 0
     }
    ],
    "kind": "advisory",
    "category": null,
    "region": null,
-   "views_24h": null
+   "views_24h": 320.0
   },
   "GkhrGODmHjo": {
    "id": "wk-Q141605182",
@@ -278,17 +302,40 @@
      "views": 282,
      "likes": 6,
      "comments": 0
+    },
+    {
+     "age_h": 23.84,
+     "views": 282,
+     "likes": 6,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "aviation",
    "region": "world",
    "views_24h": null
+  },
+  "wEqlvrhySYE": {
+   "id": "wp-2026_anti-CEC_protests",
+   "published_at": "2026-10-11T08:26:00+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.73,
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": "protest",
+   "region": "india",
+   "views_24h": null
   }
  },
  "learned": {
-  "scored": 1,
+  "scored": 4,
   "min_samples": 4,
-  "lifts": {}
+  "lifts": {},
+  "baseline_views_24h": 96
  }
 }
