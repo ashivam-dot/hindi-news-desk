@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T10:03:47+00:00",
+ "at": "2026-10-11T10:25:31+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -27,26 +27,21 @@
   {
    "qid": "Q141670823",
    "title": "Hurricane Isaias (2026)",
-   "fame": 232340,
+   "fame": 107340,
    "views": 57340,
    "traffic": 0,
-   "news": 125000,
+   "news": 0,
    "news_at": "2026-10-11T00:00:00+00:00",
-   "headlines": [
-    "Four dead and thousands without power after Hurricane Isaias lashes US"
-   ],
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-10",
-    "wikipedia-current-events-2026-10-10",
-    "google-news:Four dead and thousands without power after Hurricane Isaias lashes US"
+    "wikipedia-current-events-2026-10-10"
    ],
    "id": "wk-Q141670823",
    "kind": "incident",
@@ -237,7 +232,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T10:03:52.460231+00:00",
+   "news_at": "2026-10-11T10:25:34.551180+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -344,7 +339,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-11T10:03:52.460231+00:00",
+   "news_at": "2026-10-11T10:25:34.551180+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -399,31 +394,6 @@
    }
   },
   {
-   "qid": "Q141680327",
-   "title": "Hurricane Simon",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-11T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-10"
-   ],
-   "id": "wk-Q141680327",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-07",
-   "coords": null,
-   "has_coords": false
-  },
-  {
    "qid": "Q141679225",
    "title": "2026 Poland school stabbings",
    "fame": 50000,
@@ -447,29 +417,6 @@
    "date": "2026-10-07",
    "coords": null,
    "has_coords": true
-  },
-  {
-   "qid": "Q6831806",
-   "title": "Michael Kearns (actor)",
-   "fame": 23304,
-   "views": 23304,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-10"
-   ],
-   "id": "wk-Q6831806",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-06"
   },
   {
    "qid": "Q141671500",
@@ -522,5 +469,15 @@
    "has_coords": false
   }
  ],
- "notes": []
+ "notes": [
+  "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "google news IN: HTTP 503",
+  "google news IN-nation: HTTP 503",
+  "google news IN-hi: HTTP 503",
+  "google news IN-hi-nation: HTTP 503",
+  "google news US: HTTP 503",
+  "google news world: HTTP 503"
+ ]
 }
