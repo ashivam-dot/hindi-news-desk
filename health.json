@@ -1,10 +1,12 @@
 {
- "at": "2026-10-11T07:07:55+00:00",
+ "at": "2026-10-11T07:30:11+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 0 candidates from 6 trending",
-  "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
-  "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again"
+  "watch: 2 candidates from 7 trending",
+  "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again",
+  "drop wk-Q2475741: 68 h old and no longer trending live",
+  "skip wp-2026_Erie_shooting: gate: neither Wikidata nor the infobox gives a date for this event",
+  "nothing eligible to publish"
  ]
 }

@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T07:07:55+00:00",
+ "at": "2026-10-11T07:30:11+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -23,6 +23,38 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-09"
+  },
+  {
+   "qid": null,
+   "title": "2026 Erie shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-10T22:57:00+00:00",
+   "headlines": [
+    "Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+   ],
+   "id": "wp-2026_Erie_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-10",
+   "coords": [
+    42.1349,
+    -80.0644
+   ],
+   "has_coords": true
   },
   {
    "qid": "Q2475741",
@@ -150,9 +182,74 @@
    "date": "2026-10-06"
   }
  ],
- "candidates": [],
+ "candidates": [
+  {
+   "qid": null,
+   "title": "2026 Erie shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-10T22:57:00+00:00",
+   "headlines": [
+    "Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Shooting leaves 9 dead including suspect in Erie, Pennsylvania, police say"
+   ],
+   "id": "wp-2026_Erie_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-10",
+   "coords": [
+    42.1349,
+    -80.0644
+   ],
+   "has_coords": true
+  },
+  {
+   "qid": "Q2475741",
+   "title": "Nana Patekar",
+   "fame": 99473,
+   "views": 99473,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "नाना पाटेकर",
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q2475741",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08",
+   "orbitwire": {
+    "qid": "Q2475741",
+    "status": "published",
+    "orbitwire_id": "wk-Q2475741",
+    "orbitwire_published_at": "2026-10-09T09:06:08+00:00",
+    "orbitwire_url": "https://www.youtube.com/shorts/oSAgE6PbG2k",
+    "orbitwire_title": "The Final Bow of Nana Patekar",
+    "high_profile": "an India story (fame 99,473): Hindi viewers are not Orbitwire's English audience",
+    "angle": "india"
+   }
+  }
+ ],
  "notes": [
-  "skip wk-Q2475741: Orbitwire published (wk-Q2475741), not high-profile enough to tell again",
   "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again"
  ]
 }
