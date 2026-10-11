@@ -1,9 +1,12 @@
 {
- "at": "2026-10-11T22:53:52+00:00",
+ "at": "2026-10-11T23:08:31+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 0 candidates from 0 trending",
-  "trend radar errors: ['wikidata: HTTP 429']"
+  "watch: 3 candidates from 13 trending",
+  "skip wk-Q141695384: Orbitwire top candidate (wk-Q141695384), not high-profile enough to tell again",
+  "drop wk-Q2475741: 83 h old and no longer trending live",
+  "drop wk-Q6831806: 131 h old and no longer trending live",
+  "hold wp-Hurricane_Rachel_2026: outside 07:00-24:00 IST"
  ]
 }

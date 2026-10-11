@@ -1,9 +1,437 @@
 {
- "at": "2026-10-11T22:53:52+00:00",
- "trending": [],
- "candidates": [],
- "notes": [],
- "trend_errors": [
-  "wikidata: HTTP 429"
+ "at": "2026-10-11T23:08:31+00:00",
+ "trending": [
+  {
+   "qid": "Q1355840",
+   "title": "Mike Ditka",
+   "fame": 361505,
+   "views": 361505,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q1355840",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-09"
+  },
+  {
+   "qid": "Q141695384",
+   "title": "October 2026 attacks on Saudi Arabia airports",
+   "fame": 350000,
+   "views": 0,
+   "traffic": 0,
+   "news": 250000,
+   "news_at": "2026-10-11T23:08:34.262408+00:00",
+   "headlines": [
+    "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
+    "Saudi Arabia vows retaliation against Houthis after airport strike kills at least 12"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10",
+    "wikipedia-current-events-2026-10-11",
+    "google-news:Saudi Arabia's Riyadh airport hit by second Houthi strike in two days",
+    "google-news:Saudi Arabia vows retaliation against Houthis after airport strike kills at least 12"
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": null,
+   "title": "Hurricane Rachel (2026)",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-11T20:20:11+00:00",
+   "headlines": [
+    "Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "id": "wp-Hurricane_Rachel_2026",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-28",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": null,
+   "title": "2026 anti-CEC protests",
+   "fame": 100000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T23:08:34.262408+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10",
+    "wikipedia-current-events-2026-10-11"
+   ],
+   "id": "wp-2026_anti-CEC_protests",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-11",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": "Q2475741",
+   "title": "Nana Patekar",
+   "fame": 99473,
+   "views": 99473,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "नाना पाटेकर",
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q2475741",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08"
+  },
+  {
+   "qid": "Q141670823",
+   "title": "Hurricane Isaias (2026)",
+   "fame": 57340,
+   "views": 57340,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q141670823",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-06",
+   "coords": null,
+   "has_coords": true
+  },
+  {
+   "qid": "Q141544931",
+   "title": "2026 Ethiopian offensive",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10"
+   ],
+   "id": "wk-Q141544931",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-09-23",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": "Q141671500",
+   "title": "2026 Eritrean incursion into Ethiopia",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10"
+   ],
+   "id": "wk-Q141671500",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-06",
+   "coords": null,
+   "has_coords": true
+  },
+  {
+   "qid": "Q141679225",
+   "title": "2026 Poland school stabbings",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-10"
+   ],
+   "id": "wk-Q141679225",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-10-07",
+   "coords": null,
+   "has_coords": true
+  },
+  {
+   "qid": null,
+   "title": "2026 Budhi Gandaki flood",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-11T23:08:34.262408+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-11"
+   ],
+   "id": "wp-2026_Budhi_Gandaki_flood",
+   "kind": "incident",
+   "category": "flood",
+   "date": "2026-10-11",
+   "coords": [
+    28.471,
+    84.965
+   ],
+   "has_coords": true
+  },
+  {
+   "qid": "Q141681530",
+   "title": "2026 Panama earthquake",
+   "fame": 23713,
+   "views": 23713,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q141681530",
+   "kind": "incident",
+   "category": "earthquake",
+   "date": "2026-10-09",
+   "coords": [
+    7.5868,
+    -80.769
+   ],
+   "has_coords": true,
+   "mag": 7.7,
+   "alert": "red",
+   "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k"
+  },
+  {
+   "qid": "Q6831806",
+   "title": "Michael Kearns (actor)",
+   "fame": 23304,
+   "views": 23304,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q6831806",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-06"
+  },
+  {
+   "qid": "Q228928",
+   "title": "Eva Marie Saint",
+   "fame": 15805,
+   "views": 15805,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "ईवा मैरी सेंट",
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q228928",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-06"
+  }
+ ],
+ "candidates": [
+  {
+   "qid": "Q2475741",
+   "title": "Nana Patekar",
+   "fame": 99473,
+   "views": 99473,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "नाना पाटेकर",
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q2475741",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08",
+   "orbitwire": {
+    "qid": "Q2475741",
+    "status": "published",
+    "orbitwire_id": "wk-Q2475741",
+    "orbitwire_published_at": "2026-10-09T09:06:08+00:00",
+    "orbitwire_url": "https://www.youtube.com/shorts/oSAgE6PbG2k",
+    "orbitwire_title": "The Final Bow of Nana Patekar",
+    "high_profile": "an India story (fame 99,473): Hindi viewers are not Orbitwire's English audience",
+    "angle": "india"
+   }
+  },
+  {
+   "qid": "Q6831806",
+   "title": "Michael Kearns (actor)",
+   "fame": 23304,
+   "views": 23304,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-10"
+   ],
+   "id": "wk-Q6831806",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-06"
+  },
+  {
+   "qid": null,
+   "title": "Hurricane Rachel (2026)",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-11T20:20:11+00:00",
+   "headlines": [
+    "Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Rachel downgraded from 'tropical' storm, but strong winds, rain and flooding hit Southern California"
+   ],
+   "id": "wp-Hurricane_Rachel_2026",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-28",
+   "coords": null,
+   "has_coords": false
+  }
+ ],
+ "notes": [
+  "skip wk-Q141695384: Orbitwire top candidate (wk-Q141695384), not high-profile enough to tell again"
  ]
 }
