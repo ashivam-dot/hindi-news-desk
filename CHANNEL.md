@@ -34,7 +34,9 @@ Sport, celebrity gossip, election results and crime trials are out of scope even
 has no Wikidata item for its first day, exactly while the story is hottest. It still qualifies when its English title
 names this or last year and an incident or protest shape, the way Wikipedia titles events ("2026 Erie shooting",
 "2026 anti-CEC protests"; riots, trials, elections and sport never). Its date comes from the infobox, its location
-photos from the places the infobox links to, its id is `wp-<article title>` (so it never comes back as `wk-<QID>` once
+photos from the places the infobox links to (target, location, site; each place's main image plus up to 3 photos from
+its own article whose file name names it, never a map and never one that features a person's face, since that would
+pass them off as part of the story), its id is `wp-<article title>` (so it never comes back as `wk-<QID>` once
 Wikidata catches up), and with no Wikidata to agree with, no casualty number is ever said.
 
 ## The editorial desk (`desk/plan.py`)
