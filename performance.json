@@ -1,5 +1,5 @@
 {
- "at": "2026-10-11T09:09:50+00:00",
+ "at": "2026-10-11T12:34:08+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
@@ -56,6 +56,12 @@
     {
      "age_h": 28.16,
      "views": 105,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 31.56,
+     "views": 108,
      "likes": 0,
      "comments": 0
     }
@@ -122,6 +128,12 @@
      "views": 108,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 30.62,
+     "views": 109,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "death",
@@ -183,6 +195,12 @@
     },
     {
      "age_h": 26.49,
+     "views": 23,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 29.9,
      "views": 23,
      "likes": 0,
      "comments": 0
@@ -250,6 +268,12 @@
      "views": 320,
      "likes": 3,
      "comments": 0
+    },
+    {
+     "age_h": 29.0,
+     "views": 320,
+     "likes": 3,
+     "comments": 0
     }
    ],
    "kind": "advisory",
@@ -308,12 +332,18 @@
      "views": 282,
      "likes": 6,
      "comments": 0
+    },
+    {
+     "age_h": 27.24,
+     "views": 283,
+     "likes": 7,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "aviation",
    "region": "world",
-   "views_24h": null
+   "views_24h": 282.0470588235294
   },
   "wEqlvrhySYE": {
    "id": "wp-2026_anti-CEC_protests",
@@ -324,18 +354,72 @@
      "views": 0,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 4.14,
+     "views": 4,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "protest",
    "region": "india",
    "views_24h": null
+  },
+  "yOzdJhLiMn4": {
+   "id": "wp-October_2026_King_Khalid_International_Airport_attacks",
+   "published_at": "2026-10-11T09:26:10+00:00",
+   "snapshots": [
+    {
+     "age_h": 3.13,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": "attack",
+   "region": "world",
+   "views_24h": null
+  },
+  "0LTdyNm7-TQ": {
+   "id": "wk-Q141680327",
+   "published_at": "2026-10-11T10:10:52+00:00",
+   "snapshots": [
+    {
+     "age_h": 2.39,
+     "views": 11,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": "cyclone",
+   "region": "world",
+   "views_24h": null
+  },
+  "Wt7luuNX_tA": {
+   "id": "wk-Q141679225",
+   "published_at": "2026-10-11T11:18:27+00:00",
+   "snapshots": [
+    {
+     "age_h": 1.26,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "incident",
+   "category": "disaster",
+   "region": "world",
+   "views_24h": null
   }
  },
  "learned": {
-  "scored": 4,
+  "scored": 5,
   "min_samples": 4,
   "lifts": {},
-  "baseline_views_24h": 96
+  "baseline_views_24h": 119
  }
 }
