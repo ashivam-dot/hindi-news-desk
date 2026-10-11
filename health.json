@@ -1,20 +1,15 @@
 {
- "at": "2026-10-11T09:09:50+00:00",
+ "at": "2026-10-11T09:40:16+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 4 scored Shorts, lifts {}",
   "watch: 6 candidates from 13 trending",
   "skip wk-Q6831806: Orbitwire top candidate (wk-Q6831806), not high-profile enough to tell again",
-  "drop wk-Q2475741: 69 h old and no longer trending live",
-  "skip wp-2026_Budhi_Gandaki_flood: gate: the article is under 6 hours old; facts may still move",
-  "published wp-October_2026_King_Khalid_International_Airport_attacks: https://www.youtube.com/shorts/yOzdJhLiMn4"
- ],
- "published": {
-  "video_id": "yOzdJhLiMn4",
-  "url": "https://www.youtube.com/shorts/yOzdJhLiMn4",
-  "title": "किंग खालिद इंटरनेशनल एयरपोर्ट हमले: 8 अक्टूबर 2026 की घटना",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "hold wp-2026_Budhi_Gandaki_flood: last Short went out 0.3 h ago",
+  "drop wk-Q2475741: 70 h old and no longer trending live",
+  "hold wk-Q141680327: last Short went out 0.3 h ago",
+  "hold wk-Q141679225: last Short went out 0.3 h ago",
+  "hold wk-Q141671500: last Short went out 0.3 h ago",
+  "hold wk-Q141544931: last Short went out 0.3 h ago"
+ ]
 }
