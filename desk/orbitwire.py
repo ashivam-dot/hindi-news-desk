@@ -23,6 +23,7 @@ HIGH_FAME = 400_000
 HIGH_PERCENTILE = 0.9
 PERCENTILE_FLOOR = 100_000
 HINDI_LEADS = 3
+INDIA_FAME = 25_000
 POOL = 12
 QID = re.compile(r"^wk-(Q\d+)(?:-|$)")
 
@@ -107,6 +108,8 @@ def high_profile(cand: dict, all_fame: list[float]) -> str | None:
             return f"fame {fame:,.0f} in the top {100 - int(HIGH_PERCENTILE * 100)}% of this run"
     if cand.get("region") == "india" and cand.get("hindi_news", 0) >= HINDI_LEADS:
         return f"an India story with {cand['hindi_news']} Hindi lead headlines"
+    if cand.get("region") == "india" and fame >= INDIA_FAME:
+        return f"an India story (fame {fame:,.0f}): Hindi viewers are not Orbitwire's English audience"
     return None
 
 

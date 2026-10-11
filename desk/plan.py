@@ -206,7 +206,8 @@ def watch(save: bool = True) -> dict:
     found["notes"] += _quake_facts(found["trending"])
     at = datetime.now(timezone.utc)
     rows = ledger.published()
-    stories = [c for c in found["trending"] if not ledger.is_done(c["id"]) and not cooling(c, at, rows)]
+    stories = [c for c in found["trending"] if not ledger.is_done(c["id"]) and not cooling(c, at, rows)
+               and not ledger.is_done(trends.article_id(c["title"]))]
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))

@@ -18,6 +18,16 @@ def test_toll_needs_both_sources_to_agree():
     assert stories.agreed("180", {"claims": {}}, "P1132", need_wikidata=False) == 180
 
 
+def test_infobox_date():
+    from datetime import date
+    assert stories.infobox_date({"date": "9 October 2026 (2026-10-09) 14:05 EDT"}) == date(2026, 10, 9)
+    assert stories.infobox_date({"date": "October 9, 2026"}) == date(2026, 10, 9)
+    assert stories.infobox_date({"date": "9–10 October 2026"}) == date(2026, 10, 9)
+    assert stories.infobox_date({"date": "October 2026"}) is None
+    assert stories.infobox_date({}) is None
+    assert stories.infobox_date({"formed": "September 28, 2026", "dissipated": "October 12, 2026"}) == date(2026, 9, 28)
+
+
 def test_single_number_prefers_preferred_rank():
     assert wiki.single_number({"claims": {"P1120": amount_claims(269, 260, preferred=260)}}, "P1120") == 260
     assert wiki.single_number({"claims": {"P1120": amount_claims(269, 260)}}, "P1120") is None

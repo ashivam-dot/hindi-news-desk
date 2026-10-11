@@ -50,6 +50,8 @@ def test_high_profile():
     assert orbitwire.high_profile({"fame": 90_000}, [1_000] * 9 + [90_000]) is None
     assert orbitwire.high_profile({"fame": 50_000, "region": "india", "hindi_news": 3}, [])
     assert orbitwire.high_profile({"fame": 50_000, "region": "world", "hindi_news": 5}, []) is None
+    assert orbitwire.high_profile({"fame": 99_473, "region": "india"}, [])
+    assert orbitwire.high_profile({"fame": 10_000, "region": "india"}, []) is None
 
 
 def test_waits_three_hours_after_orbitwire_and_for_its_top_candidate():

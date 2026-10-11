@@ -131,6 +131,42 @@ def test_ledger_skip_marks_done(tmp_path, monkeypatch):
     assert ledger.is_done("wk-x")
 
 
+@pytest.mark.parametrize("title,cat", [
+    ("2026 Erie shooting", "attack"), ("2026 anti-CEC protests", "protest"), ("Flydubai Flight 1073", None),
+    ("2026 Panama earthquake", "earthquake"), ("2026 Hyderabad building collapse", "disaster"),
+    ("Cyclone Montha (2026)", "cyclone"), ("2026 Delhi riots", None), ("2026 Bihar Legislative Assembly election", None),
+    ("2019 Kerala floods", None), ("Strictly Come Dancing series 24", None), ("2026 FIFA World Cup", None),
+])
+def test_fresh_event_articles_are_recognised_by_their_title(title, cat):
+    assert trends.title_kind(title, date(2026, 10, 11)) == cat
+
+
+def test_radar_keeps_a_fresh_article_wikidata_does_not_know_yet(monkeypatch):
+    hits = {"2026 Erie shooting": {"views": 0, "traffic": 0, "via": ["google-news:x"], "news": 125_000,
+                                   "news_at": "2026-10-11T03:00:00+00:00", "headlines": ["9 dead in Erie"],
+                                   "geos": {"US"}},
+            "Happy Days": {"views": 0, "traffic": 0, "via": ["google-news:y"], "news": 125_000}}
+    monkeypatch.setattr(trends, "_signals", lambda: (hits, []))
+    monkeypatch.setattr(trends.wiki, "page_info", lambda titles: {t: {"title": t, "qid": None if "Erie" in t else "Q1",
+                                                                       "lat": None, "lon": None} for t in titles})
+    monkeypatch.setattr(trends.wiki, "classify", lambda qids: {q: set() for q in qids})
+    monkeypatch.setattr(trends.wiki, "entities", lambda qids: {q: {} for q in qids})
+    monkeypatch.setattr(trends.wiki, "created", lambda title: datetime(2026, 10, 11, 4, tzinfo=timezone.utc))
+    out = trends.radar(date(2026, 10, 11))["candidates"]
+    assert [(c["id"], c["category"], c["qid"], c["date"]) for c in out] == [
+        ("wp-2026_Erie_shooting", "attack", None, "2026-10-11")]
+
+
+def test_a_story_told_before_wikidata_knew_it_does_not_come_back(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    ledger.skip(trends.article_id("2026 Erie shooting"), "published as wp-")
+    cand = {"id": "wk-Q9", "qid": "Q9", "title": "2026 Erie shooting", "category": "attack", "fame": 1}
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [cand], "errors": []})
+    monkeypatch.setattr(plan, "_quake_facts", lambda cands: [])
+    monkeypatch.setattr(plan.orbitwire, "fetch", lambda: {"published": [], "candidates": []})
+    assert plan.watch(save=False)["candidates"] == []
+
+
 def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():
     sunday = trends.story_id("Q1", "protest", date(2026, 10, 11))
     monday = trends.story_id("Q1", "protest", date(2026, 10, 12))

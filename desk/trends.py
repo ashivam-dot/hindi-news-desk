@@ -164,6 +164,39 @@ def candidate(title: str) -> dict:
 ORDER = ("aviation", "attack", "explosion", "rail", "maritime", "strike", "earthquake", "cyclone", "volcano", "flood",
          "wildfire", "landslide", "tsunami", "conflict", "disaster", "accident", "protest", "movement")
 
+# A brand-new event article often has no Wikidata item (or no instance-of) for its first day, exactly while the story
+# is hottest. Such an article still qualifies when its English title names the current year and one of these shapes,
+# the way Wikipedia titles events ("2026 Erie shooting", "2026 anti-CEC protests"). Riots, trials and elections stay out.
+TITLE_KINDS = (
+    (r"\bflight \d+\b|\b(air|plane|aircraft|helicopter|jet) ?crash", "aviation"),
+    (r"\b(shootings?|stabbings?|bombings?|massacre|terror(ist)? attacks?)\b", "attack"),
+    (r"\b(explosions?|blasts?)\b", "explosion"),
+    (r"\bderailment\b|\btrain (crash|collision|accident)\b", "rail"),
+    (r"\b(ferry|boat|ship) (sinking|capsizing|disaster|accident)\b|\bsinking of\b", "maritime"),
+    (r"\bearthquakes?\b", "earthquake"),
+    (r"\b(cyclone|hurricane|typhoon|tropical storm)\b", "cyclone"),
+    (r"\beruptions?\b", "volcano"),
+    (r"\b(floods?|flooding|cloudbursts?)\b", "flood"),
+    (r"\b(wild|bush|forest) ?fires?\b", "wildfire"),
+    (r"\b(landslides?|mudslides?|avalanches?)\b", "landslide"),
+    (r"\b(stampede|crowd crush|(building|bridge|dam) collapse|fire)\b", "disaster"),
+    (r"\b(bus|road|boat) (crash|accident)\b", "accident"),
+    (r"\b(protests?|demonstrations?)\b", "protest"),
+)
+TITLE_SKIP = r"\b(riots?|trials?|elections?|by-?elections?|referendum|season|tournament|championship|cup|league|film|series)\b"
+
+
+def title_kind(title: str, today: date) -> str | None:
+    """The category a fresh event article's title names, or None (see TITLE_KINDS)."""
+    if not re.search(rf"\b({today.year}|{today.year - 1})\b", title) or re.search(TITLE_SKIP, title, re.I):
+        return None
+    return next((cat for pattern, cat in TITLE_KINDS if re.search(pattern, title, re.I)), None)
+
+
+def article_id(title: str) -> str:
+    """The id of a story told from an article Wikidata did not know yet; kept so it never comes back as wk-<QID>."""
+    return "wp-" + re.sub(r"[^\w-]+", "_", title).strip("_")
+
 
 def radar(today: date | None = None) -> dict:
     """Trending candidates, ranked by fame. Written to state/trends.json by the caller."""
@@ -173,6 +206,9 @@ def radar(today: date | None = None) -> dict:
         info = wiki.page_info(list(hits))
         qids = sorted({i["qid"] for i in info.values() if i.get("qid")})
         kinds = wiki.classify(qids) if qids else {}
+        for page in info.values():
+            if page.get("qid") and not kinds.get(page["qid"]) and (cat := title_kind(page["title"], today)):
+                kinds[page["qid"]] = {cat, "by-title"}
         relevant = [q for q in qids if kinds.get(q)]
         ents = wiki.entities(relevant) if relevant else {}
     except Exception as exc:
@@ -182,13 +218,20 @@ def radar(today: date | None = None) -> dict:
     out, seen = [], set()
     for title, h in hits.items():
         page = info.get(title)
-        if not page or not page.get("qid") or page["qid"] in seen:
+        if not page:
             continue
-        qid, cats = page["qid"], kinds.get(page["qid"], set())
-        ent = ents.get(qid)
-        if not cats or not ent:
-            continue
-        seen.add(qid)
+        if not page.get("qid"):
+            cat = title_kind(page["title"], today)
+            if not cat or page["title"] in seen:
+                continue
+            qid, cats, ent = None, {cat, "by-title"}, {}
+            seen.add(page["title"])
+        else:
+            qid, cats = page["qid"], kinds.get(page["qid"], set())
+            ent = ents.get(qid)
+            if qid in seen or not cats or not ent:
+                continue
+            seen.add(qid)
         fame = h["views"] + h["traffic"] + h.get("news", 0)
         geos = h.get("geos", set())
         base = {"qid": qid, "title": page["title"], "fame": fame, "views": h["views"], "traffic": h["traffic"],
@@ -221,7 +264,8 @@ def radar(today: date | None = None) -> dict:
         if not when or not 0 <= (today - when).days <= INCIDENT_MAX_DAYS:
             continue
         coords = (page["lat"], page["lon"]) if page.get("lat") is not None else wiki.coords(ent)
-        out.append(base | {"id": story_id(qid, cat, when), "kind": "incident", "category": cat, "date": when.isoformat(),
+        sid = story_id(qid, cat, when) if qid else article_id(page["title"])
+        out.append(base | {"id": sid, "kind": "incident", "category": cat, "date": when.isoformat(),
                            "coords": coords,
                            "has_coords": bool(coords or wiki.claims(ent, "P276") or wiki.claims(ent, "P1427"))})
     out.sort(key=lambda c: -c["fame"])

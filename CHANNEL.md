@@ -28,6 +28,13 @@ list; see `desk/news.py` and `desk/trends.py`) **and** it can be shown honestly:
 
 Sport, celebrity gossip, election results and crime trials are out of scope even when they trend.
 
+**Fresh articles (2026-10-11; owner: "its a news channel it should be active most").** A brand-new event article often
+has no Wikidata item for its first day, exactly while the story is hottest. It still qualifies when its English title
+names this or last year and an incident or protest shape, the way Wikipedia titles events ("2026 Erie shooting",
+"2026 anti-CEC protests"; riots, trials, elections and sport never). Its date comes from the infobox, its location
+photos from the places the infobox links to, its id is `wp-<article title>` (so it never comes back as `wk-<QID>` once
+Wikidata catches up), and with no Wikidata to agree with, no casualty number is ever said.
+
 ## The editorial desk (`desk/plan.py`)
 
 The desk is India-first and runs unattended; it decides what goes out and when.
@@ -58,7 +65,8 @@ stories on the Wikidata QID in their `wk-<QID>` ids (suffixes such as `-2026w41`
 - A story is **shared** when Orbitwire published or scheduled that QID within the last 7 days, or it is Orbitwire's
   current top candidate.
 - A shared story is skipped unless it is **high-profile**: fame 400k+, or the top 10% of this run's candidates with at
-  least 100k, or an India story that at least three Hindi lead headlines are about.
+  least 100k, or an India story that at least three Hindi lead headlines are about, or any India story with fame 25k+
+  (Hindi viewers are not Orbitwire's English audience; 2026-10-11, after Nana Patekar's death was skipped).
 - A high-profile shared story is told differently: its own angle (India connection when it has one; otherwise a
   timeline for a death, an explainer for an incident or protest), a Hindi hook and a title that shows the angle,
   and photos Orbitwire would not use (Orbitwire's own deterministic photo ranking is recomputed with a margin and

@@ -471,21 +471,30 @@ def build_death(cand: dict) -> Short:
 
 
 def build_incident(cand: dict) -> Short:
-    article, qid, cat = cand["title"], cand["qid"], cand["category"]
+    article, qid, cat = cand["title"], cand.get("qid"), cand["category"]
     name = stories.plain_title(article)
     stories._check_age(article)
-    ent = wiki.entities([qid])[qid]
-    _, ib, _ = wiki.infobox(article)
+    ent = wiki.entities([qid])[qid] if qid else {}
+    _, ib, raw = wiki.infobox(article)
     ongoing = cat in trends.ONGOING
-    when = stories._event_date(ent)
+    when, date_src = stories._event_date(ent), "Wikidata date"
+    if not when and (when := stories.infobox_date(ib)):
+        date_src = "Wikipedia infobox date"
     if ongoing:
         when = date.fromisoformat((cand.get("news_at") or datetime.now(timezone.utc).isoformat())[:10])
     if not when:
-        raise ValueError("gate: Wikidata has no date for this event")
-    page, item = wiki.url(article), f"https://www.wikidata.org/wiki/{qid}"
+        raise ValueError("gate: neither Wikidata nor the infobox gives a date for this event")
+    page = wiki.url(article)
+    item = f"https://www.wikidata.org/wiki/{qid}" if qid else page
     # The same related items Orbitwire adds, so its photo ranking can be reproduced exactly.
     extra = [c["value"] for pid in ("P276", "P1427", "P1444", "P121", "P137") for c in wiki.claims(ent, pid)[:1]
              if isinstance(c["value"], str) and c["value"].startswith("Q")]
+    if not extra:
+        # An article Wikidata does not describe yet: the places its infobox links to give the location photos.
+        links = re.findall(r"\[\[([^\]|#]+)", " ".join(raw.get(k, "") for k in ("location", "site", "place", "areas affected",
+                                                                                "areas", "country")))
+        found = wiki.page_info(list(dict.fromkeys(links))[:6]) if links else {}
+        extra = list(dict.fromkeys(p["qid"] for p in found.values() if p.get("qid")))[:3]
     sid = cand.get("id") or f"wk-{qid}"
     work = WORK / sid
     ov, exclude = _shared(cand, article, ent, extra)
@@ -530,16 +539,17 @@ def build_incident(cand: dict) -> Short:
     loss = bool(deaths) or cat in ("attack", "strike", "conflict")
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("date", hindi.date_hi(when), item, [str(when.day), str(when.year)],
-                  f"Google News lead story on {when}" if ongoing else f"Wikidata date {when}")]
+                  f"Google News lead story on {when}" if ongoing else f"{date_src} {when}")]
     if deaths is not None:
         facts.append(Fact("deaths", str(deaths), page, [str(deaths)], "infobox and Wikidata P1120 agree"))
     region = stories.city_of(where) if where else None
-    sources = [page, item] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
+    sources = list(dict.fromkeys([page, item])) + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
     return _short(sid, "incident", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
                   photos, sources, when.isoformat(), loss=loss, mood="news", region=cand.get("region", "world"),
                   tags=[name, name_hi, cat, "हिंदी समाचार", "hindi news",
                         "india news" if cand.get("region") == "india" else "world news"] + ([region] if region else []),
-                  summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, Wikipedia और Wikidata के तथ्यों से।",
+                  summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, "
+                          f"{'Wikipedia और Wikidata' if qid else 'Wikipedia'} के तथ्यों से।",
                   hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov)
 
 

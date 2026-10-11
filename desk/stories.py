@@ -71,6 +71,28 @@ def _event_date(ent: dict) -> date | None:
     return None
 
 
+MONTHS = ("january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+          "november", "december")
+
+
+def infobox_date(fields: dict) -> date | None:
+    """The first full date in the infobox's date field, or a storm's 'formed' field ('9 October 2026',
+    'October 9, 2026', '9–10 October 2026')."""
+    text = (fields.get("date") or fields.get("formed") or "").lower()
+    m = re.search(r"(\d{1,2})(?:\s*[–-]\s*\d{1,2})?\s+(" + "|".join(MONTHS) + r")\s+(\d{4})", text)
+    if m:
+        day, month, year = int(m.group(1)), MONTHS.index(m.group(2)) + 1, int(m.group(3))
+    else:
+        m = re.search(r"(" + "|".join(MONTHS) + r")\s+(\d{1,2})(?:\s*[–-]\s*\d{1,2})?,?\s+(\d{4})", text)
+        if not m:
+            return None
+        day, month, year = int(m.group(2)), MONTHS.index(m.group(1)) + 1, int(m.group(3))
+    try:
+        return date(year, month, day)
+    except ValueError:
+        return None
+
+
 def _check_age(title: str) -> None:
     made = wiki.created(title)
     if made and datetime.now(timezone.utc) - made < MIN_ARTICLE_AGE:
