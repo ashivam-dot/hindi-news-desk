@@ -1,16 +1,10 @@
 {
- "at": "2026-10-12T07:36:36+00:00",
+ "at": "2026-10-12T10:58:41+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
    "published_at": "2026-10-10T05:00:15+00:00",
    "snapshots": [
-    {
-     "age_h": 2.86,
-     "views": 48,
-     "likes": 0,
-     "comments": 0
-    },
     {
      "age_h": 5.86,
      "views": 67,
@@ -100,6 +94,12 @@
      "views": 115,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 53.97,
+     "views": 115,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -111,12 +111,6 @@
    "id": "wk-Q228928",
    "published_at": "2026-10-10T05:57:03+00:00",
    "snapshots": [
-    {
-     "age_h": 1.91,
-     "views": 32,
-     "likes": 0,
-     "comments": 0
-    },
     {
      "age_h": 4.92,
      "views": 88,
@@ -206,6 +200,12 @@
      "views": 111,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 53.03,
+     "views": 111,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "death",
@@ -217,12 +217,6 @@
    "id": "adv-delhi-cjp-2026-10-10",
    "published_at": "2026-10-10T06:40:16+00:00",
    "snapshots": [
-    {
-     "age_h": 1.19,
-     "views": 20,
-     "likes": 0,
-     "comments": 0
-    },
     {
      "age_h": 4.19,
      "views": 23,
@@ -312,6 +306,12 @@
      "views": 20,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 52.31,
+     "views": 20,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "advisory",
@@ -323,12 +323,6 @@
    "id": "adv-delhi-cjp-2026-10-10-v2",
    "published_at": "2026-10-10T07:34:18+00:00",
    "snapshots": [
-    {
-     "age_h": 0.29,
-     "views": 4,
-     "likes": 0,
-     "comments": 0
-    },
     {
      "age_h": 3.29,
      "views": 206,
@@ -415,6 +409,12 @@
     },
     {
      "age_h": 48.04,
+     "views": 330,
+     "likes": 3,
+     "comments": 0
+    },
+    {
+     "age_h": 51.41,
      "views": 330,
      "likes": 3,
      "comments": 0
@@ -518,6 +518,12 @@
      "views": 310,
      "likes": 7,
      "comments": 0
+    },
+    {
+     "age_h": 49.65,
+     "views": 310,
+     "likes": 7,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -576,12 +582,18 @@
      "views": 7,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 26.54,
+     "views": 7,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "protest",
    "region": "india",
-   "views_24h": null
+   "views_24h": 7.0
   },
   "yOzdJhLiMn4": {
    "id": "wp-October_2026_King_Khalid_International_Airport_attacks",
@@ -628,12 +640,18 @@
      "views": 10,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 25.54,
+     "views": 10,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "attack",
    "region": "world",
-   "views_24h": null
+   "views_24h": 10.0
   },
   "0LTdyNm7-TQ": {
    "id": "wk-Q141680327",
@@ -680,12 +698,18 @@
      "views": 98,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 24.8,
+     "views": 100,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "cyclone",
    "region": "world",
-   "views_24h": null
+   "views_24h": 99.52522255192878
   },
   "Wt7luuNX_tA": {
    "id": "wk-Q141679225",
@@ -732,6 +756,12 @@
      "views": 7,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 23.67,
+     "views": 7,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -754,6 +784,12 @@
      "views": 1,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 8.96,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -763,9 +799,9 @@
   }
  },
  "learned": {
-  "scored": 5,
+  "scored": 8,
   "min_samples": 4,
   "lifts": {},
-  "baseline_views_24h": 119
+  "baseline_views_24h": 61
  }
 }
