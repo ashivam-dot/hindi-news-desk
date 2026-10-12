@@ -1,5 +1,5 @@
 {
- "at": "2026-10-12T23:27:39+00:00",
+ "at": "2026-10-12T23:54:34+00:00",
  "trending": [
   {
    "qid": "Q141695384",
@@ -8,7 +8,7 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-12T23:27:42.715970+00:00",
+   "news_at": "2026-10-12T23:54:37.378681+00:00",
    "headlines": [
     "Saudi minister vows 'serious response' to Houthi attacks on airports"
    ],
@@ -142,7 +142,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-12T23:27:42.715970+00:00",
+   "news_at": "2026-10-12T23:54:37.378681+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -242,6 +242,33 @@
  ],
  "candidates": [
   {
+   "qid": "Q2118568",
+   "title": "RJ Mitte",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-12T23:06:15+00:00",
+   "headlines": [
+    "RJ Mitte, \"Breaking Bad\" actor, dies at age 34"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:RJ Mitte, \"Breaking Bad\" actor, dies at age 34"
+   ],
+   "id": "wk-Q2118568",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-12"
+  },
+  {
    "qid": "Q2475741",
    "title": "Nana Patekar",
    "fame": 48903,
@@ -275,7 +302,5 @@
    }
   }
  ],
- "notes": [
-  "skip wk-Q2118568: Orbitwire top candidate (wk-Q2118568), not high-profile enough to tell again"
- ]
+ "notes": []
 }
