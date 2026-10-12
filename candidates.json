@@ -1,5 +1,5 @@
 {
- "at": "2026-10-12T04:28:49+00:00",
+ "at": "2026-10-12T04:58:34+00:00",
  "trending": [
   {
    "qid": "Q1355840",
@@ -31,9 +31,9 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-12T00:48:32+00:00",
+   "news_at": "2026-10-12T00:00:00+00:00",
    "headlines": [
-    "Saudi Arabia vows retaliation against Houthis after airport strike kills at least 12"
+    "Saudi Arabia's Riyadh airport hit by second Houthi strike in two days"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -45,7 +45,7 @@
    "label_hi": null,
    "via": [
     "wikipedia-current-events-2026-10-11",
-    "google-news:Saudi Arabia vows retaliation against Houthis after airport strike kills at least 12"
+    "google-news:Saudi Arabia's Riyadh airport hit by second Houthi strike in two days"
    ],
    "id": "wk-Q141695384",
    "kind": "incident",
@@ -57,20 +57,20 @@
   {
    "qid": null,
    "title": "2026 Budhi Gandaki flood",
-   "fame": 75000,
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
-   "news": 25000,
+   "news": 125000,
    "news_at": "2026-10-12T01:33:00+00:00",
    "headlines": [
     "Villages evacuated as flash flood from Budhi Gandaki River hits northern Nepal"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
+   "region": "world",
+   "india_link": false,
    "geos": [
-    "IN"
+    "world"
    ],
    "label_hi": null,
    "via": [
@@ -85,6 +85,35 @@
     28.471,
     84.965
    ],
+   "has_coords": true
+  },
+  {
+   "qid": "Q141679225",
+   "title": "2026 Poland school stabbings",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-11T15:18:52+00:00",
+   "headlines": [
+    "Poland stabbings driven by online glorification of violence, Tusk says"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Poland stabbings driven by online glorification of violence, Tusk says"
+   ],
+   "id": "wk-Q141679225",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-10-07",
+   "coords": null,
    "has_coords": true
   },
   {
