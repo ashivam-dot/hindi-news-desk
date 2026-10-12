@@ -1,5 +1,5 @@
 {
- "at": "2026-10-12T22:39:58+00:00",
+ "at": "2026-10-12T23:05:19+00:00",
  "trending": [
   {
    "qid": "Q141695384",
@@ -8,7 +8,7 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-12T22:40:03.165813+00:00",
+   "news_at": "2026-10-12T23:05:21.980712+00:00",
    "headlines": [
     "Saudi minister vows 'serious response' to Houthi attacks on airports"
    ],
@@ -115,7 +115,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-12T22:40:03.165813+00:00",
+   "news_at": "2026-10-12T23:05:21.980712+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -215,9 +215,9 @@
   {
    "qid": "Q2118568",
    "title": "RJ Mitte",
-   "fame": 5000,
+   "fame": 10000,
    "views": 0,
-   "traffic": 5000,
+   "traffic": 10000,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -271,32 +271,9 @@
     "high_profile": "an India story (fame 48,903): Hindi viewers are not Orbitwire's English audience",
     "angle": "india"
    }
-  },
-  {
-   "qid": "Q2118568",
-   "title": "RJ Mitte",
-   "fame": 5000,
-   "views": 0,
-   "traffic": 5000,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-IN:rj mitte"
-   ],
-   "id": "wk-Q2118568",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-12"
   }
  ],
- "notes": []
+ "notes": [
+  "skip wk-Q2118568: Orbitwire top candidate (wk-Q2118568), not high-profile enough to tell again"
+ ]
 }
