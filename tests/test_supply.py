@@ -12,6 +12,28 @@ from desk import cli, gdacs, ledger, media, news, orbitwire, plan, trends, write
 NOW = datetime(2026, 10, 13, 8, tzinfo=timezone.utc)
 
 
+def test_a_moved_article_keeps_its_wikidata_item(monkeypatch):
+    from desk import wiki
+
+    old, new = "October 2026 attacks on Saudi Arabia airports", "October 2026 attacks on Saudi airports"
+    calls = []
+
+    def get_json(url, params):
+        calls.append(url)
+        if url == wiki.API:
+            return {"query": {"redirects": [{"from": old, "to": new}],
+                              "pages": [{"title": new}, {"title": "2026 Aubagne school shooting"},
+                                        {"title": "Mike Ditka", "pageprops": {"wikibase_item": "Q1355840"}}]}}
+        assert params["titles"] == f"{new}|2026 Aubagne school shooting"
+        return {"entities": {"Q141695384": {"sitelinks": {"enwiki": {"title": new}}}, "-1": {"missing": ""}}}
+
+    monkeypatch.setattr(wiki.net, "get_json", get_json)
+    info = wiki.page_info([old, "2026 Aubagne school shooting", "Mike Ditka"])
+    assert info[old]["qid"] == info[new]["qid"] == "Q141695384" and info[old]["title"] == new
+    assert info["2026 Aubagne school shooting"]["qid"] is None and info["Mike Ditka"]["qid"] == "Q1355840"
+    assert calls == [wiki.API, wiki.WD_API]
+
+
 def test_a_young_article_waits_and_a_story_given_up_only_for_that_comes_back(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     young = "gate: the article is under 6 hours old; facts may still move"
