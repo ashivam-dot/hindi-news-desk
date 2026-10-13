@@ -1,16 +1,17 @@
 {
- "at": "2026-10-13T15:00:14+00:00",
+ "at": "2026-10-13T15:31:15+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi airports",
-   "fame": 296203,
+   "fame": 320703,
    "views": 45703,
-   "traffic": 500,
-   "news": 200000,
-   "news_at": "2026-10-13T14:53:39+00:00",
+   "traffic": 0,
+   "news": 225000,
+   "news_at": "2026-10-13T15:01:36+00:00",
    "headlines": [
-    "Saudi warning system stayed silent before deadly airport attacks",
+    "Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
     "Oil facility near Yemen capital Sanaa hit by Saudi Arabia, Houthis say",
     "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
     "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport"
@@ -21,27 +22,37 @@
    "india_link": true,
    "geos": [
     "IN",
-    "US",
     "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
     "wikipedia-top-2026-10-12",
-    "google-trends-US:delta riyadh flights",
     "wikipedia-current-events-2026-10-12",
-    "google-news:Saudi warning system stayed silent before deadly airport attacks",
+    "google-news:Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "google-news:Houthis threaten Saudi Arabia’s Aramco facilities and airports",
     "google-news:Oil facility near Yemen capital Sanaa hit by Saudi Arabia, Houthis say",
-    "google-news:Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
+    "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde",
     "outlet:HT Media",
     "outlet:Guardian Media Group"
    ],
    "owners": [
+    "Al Jazeera Media Network",
     "France Médias Monde",
     "HT Media",
     "Guardian Media Group"
    ],
    "reports": [
+    {
+     "title": "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+     "url": "https://www.aljazeera.com/news/2026/10/13/houthis-threaten-saudi-arabias-aramco-facilities-and-airports?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-13T15:01:36+00:00"
+    },
     {
      "title": "Oil facility near Yemen capital Sanaa hit by Saudi Arabia, Houthis say",
      "url": "https://www.france24.com/en/middle-east/20261013-oil-facility-near-yemen-capital-sanaa-hit-by-saudi-arabia-houthis-say",
@@ -366,16 +377,41 @@
    "date": "2026-10-06"
   }
  ],
- "candidates": [],
+ "candidates": [
+  {
+   "qid": "Q5300674",
+   "title": "Doug Loft",
+   "fame": 32602,
+   "views": 32602,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5300674",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-11"
+  }
+ ],
  "notes": [
-  "outlets: 724 headlines from 20 feeds (15 owners), 21 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
-  "skip wk-Q5300674: Orbitwire top candidate (wk-Q5300674), not high-profile enough to tell again"
+  "outlets: 722 headlines from 20 feeds (15 owners), 24 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)"
  ],
  "outlets": {
-  "headlines": 724,
+  "headlines": 722,
   "feeds": 20,
   "owners": 15,
-  "matched": 21,
+  "matched": 24,
   "corroborated": 1
  },
  "emerging": []
