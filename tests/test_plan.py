@@ -159,7 +159,8 @@ def test_radar_keeps_a_fresh_article_wikidata_does_not_know_yet(monkeypatch):
             "Happy Days": {"views": 0, "traffic": 0, "via": ["google-news:y"], "news": 125_000}}
     monkeypatch.setattr(trends, "_signals", lambda: (hits, []))
     monkeypatch.setattr(trends.wiki, "page_info", lambda titles: {t: {"title": t, "qid": None if "Erie" in t else "Q1",
-                                                                       "lat": None, "lon": None} for t in titles})
+                                                                       "lat": None, "lon": None, "unlinked": "Erie" in t}
+                                                                   for t in titles})
     monkeypatch.setattr(trends.wiki, "classify", lambda qids: {q: set() for q in qids})
     monkeypatch.setattr(trends.wiki, "entities", lambda qids: {q: {} for q in qids})
     monkeypatch.setattr(trends.wiki, "created", lambda title: datetime(2026, 10, 11, 4, tzinfo=timezone.utc))
@@ -200,8 +201,8 @@ def test_a_listed_protest_is_news_and_an_india_story(monkeypatch):
     monkeypatch.setattr(trends.wiki, "current_events",
                         lambda day: [("2026 anti-CEC protests", True)] if day == date(2026, 10, 11) else [])
     monkeypatch.setattr(trends, "datetime", type("D", (datetime,), {"now": staticmethod(lambda tz=None: utc(11, 7))}))
-    monkeypatch.setattr(trends.wiki, "page_info", lambda titles: {t: {"title": t, "qid": None, "lat": None, "lon": None}
-                                                                  for t in titles})
+    monkeypatch.setattr(trends.wiki, "page_info", lambda titles: {t: {"title": t, "qid": None, "lat": None, "lon": None,
+                                                                      "unlinked": True} for t in titles})
     monkeypatch.setattr(trends.wiki, "classify", lambda qids: {})
     monkeypatch.setattr(trends.wiki, "entities", lambda qids: {})
     out = trends.radar(date(2026, 10, 11))["candidates"]

@@ -30,8 +30,18 @@ def test_a_moved_article_keeps_its_wikidata_item(monkeypatch):
     monkeypatch.setattr(wiki.net, "get_json", get_json)
     info = wiki.page_info([old, "2026 Aubagne school shooting", "Mike Ditka"])
     assert info[old]["qid"] == info[new]["qid"] == "Q141695384" and info[old]["title"] == new
-    assert info["2026 Aubagne school shooting"]["qid"] is None and info["Mike Ditka"]["qid"] == "Q1355840"
+    assert info["2026 Aubagne school shooting"]["qid"] is None and info["2026 Aubagne school shooting"]["unlinked"]
+    assert info["Mike Ditka"]["qid"] == "Q1355840" and not info[new]["unlinked"]
     assert calls == [wiki.API, wiki.WD_API]
+
+    def wikidata_down(url, params):
+        if url == wiki.API:
+            return get_json(url, params)
+        raise RuntimeError("wikidata: HTTP 429")
+
+    monkeypatch.setattr(wiki.net, "get_json", wikidata_down)
+    info = wiki.page_info([old, "2026 Aubagne school shooting"])
+    assert info[old]["qid"] is None and not info[old]["unlinked"] and not info["2026 Aubagne school shooting"]["unlinked"]
 
 
 def test_a_young_article_waits_and_a_story_given_up_only_for_that_comes_back(tmp_path, monkeypatch):
