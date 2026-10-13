@@ -70,7 +70,7 @@ SKIP = re.compile(
     r"stocks? to buy|share price|target price|buy or sell|multibagger|penny stock|dividend|q[1-4] results?|"
     r"quarterly results?|net profit|earnings|"
     # anniversaries and greetings
-    r"birthday|anniversary|years? after|on this day|wishes|greetings)\b|"
+    r"birthday|anniversary|years? after|on this day|wishes(?! to\b)|greetings)\b|"
     r"^(how|why|what|who|when|where|is|are|can|should|will|inside|explained)\b|बड़ी खबरें|बड़ी ख़बरें|पढ़ें", re.I)
 # Institutions, leaders and big places named in too many stories to tell one by: two headlines naming only these must
 # share three distinctive words to be one story.
@@ -114,14 +114,27 @@ def keys(title: str) -> tuple[set[str], set[str], set[str]]:
     return keys_, names_, names_ | ({lead} if lead else set())
 
 
+def title_case(title: str) -> bool:
+    """Most of the headline's longer words are capitalised ("L Murugan Resigns As Union Minister"): its capitals
+    say nothing about which words are names."""
+    words = re.findall(r"[A-Za-z][A-Za-z'’\-]{3,}", title)[1:]
+    return len(words) >= 3 and sum(w[0].isupper() for w in words) >= 0.6 * len(words)
+
+
 def _same(a: dict, b: dict) -> bool:
     """Two headlines tell one story: they name the same person, place or institution, and share at least one more
-    distinctive word that is not part of a name (two different stories about one person share only the name)."""
-    named = a["maybe"] & b["maybe"] & (a["names"] | b["names"])
+    distinctive word that is not part of a name (two different stories about one person share only the name). A
+    title-case headline's names are read from the other headline; two title-case headlines must share 3 words."""
+    shared = {k for k in a["keys"] & b["keys"] if not _generic(k)}
+    if a.get("title_case") and b.get("title_case"):
+        named = a["maybe"] & b["maybe"]
+        return bool(named) and any(not _generic(n) for n in named) and len(shared) >= 3
+    names = set().union(*(r["names"] for r in (a, b) if not r.get("title_case")))
+    maybe = (a["keys"] if a.get("title_case") else a["maybe"]) & (b["keys"] if b.get("title_case") else b["maybe"])
+    named = maybe & names
     if not named:
         return False
-    shared = {k for k in a["keys"] & b["keys"] if not _generic(k)}
-    other = shared - (a["maybe"] & b["maybe"]) - a["names"] - b["names"]
+    other = shared - maybe - names
     if not other:
         return False
     if any(not _generic(n) for n in named):
@@ -139,9 +152,11 @@ def clusters(items: list[dict], now: datetime) -> list[dict]:
         if not cat:
             continue
         keys_, names_, maybe = keys(i["title"])
-        rows.append({"item": i, "cat": cat, "keys": keys_, "names": names_, "maybe": maybe})
+        rows.append({"item": i, "cat": cat, "keys": keys_, "names": names_, "maybe": maybe,
+                     "title_case": title_case(i["title"])})
     out: list[dict] = []
-    for row in sorted(rows, key=lambda r: r["item"]["at"]):
+
+    def join(row: dict) -> None:
         # A headline joins the story at least half of its headlines match, so one loose link never chains two stories.
         best, home = 0, None
         for c in out:
@@ -154,8 +169,16 @@ def clusters(items: list[dict], now: datetime) -> list[dict]:
         home["rows"].append(row)
         home["items"].append(row["item"])
         home["names"].update(row["maybe"])
-        home["named"] |= row["names"]
+        if not row["title_case"]:
+            home["named"] |= row["names"]
         home["cats"][row["cat"]] += 1
+
+    for row in sorted(rows, key=lambda r: r["item"]["at"]):
+        join(row)
+    # A headline left alone because the headline linking it to a story came later gets one more try.
+    for c in [c for c in out if len(c["rows"]) == 1]:
+        out.remove(c)
+        join(c["rows"][0])
     for c in out:
         c["owners"] = outlets.owners(c["items"])
     return sorted(out, key=lambda c: -len(c["owners"]))
@@ -174,7 +197,7 @@ def phrase(titles: list[str], key: str) -> str | None:
     """The capitalised run of 1-3 words around `key` the most headlines write ("Rahul Gandhi"); the full name beats a
     bare surname that a few headlines use alone ("L Murugan" over "Murugan")."""
     seen: Counter = Counter()
-    for t in dict.fromkeys(titles):
+    for t in dict.fromkeys([t for t in titles if not title_case(t)] or titles):
         words = re.findall(r"[A-Za-z][A-Za-z'’.\-]*", t)
         grams = set()
         for n in (1, 2, 3):

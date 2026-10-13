@@ -32,6 +32,8 @@ MURUGAN = [
     ("SC stays defamation proceedings against Rahul Gandhi", "court"),
     ("ISRO to launch PSLV with EOS satellite on Friday", "science"),
     ("L Murugan resigns as union minister", "politics"),
+    ("L Murugan resigns, wishes to return to Tamil Nadu as union minister quits", "politics"),
+    ("PM Modi wishes nation on Diwali, union minister joins", None),
     ("Merchant fee on UPI payments to be imposed after Diwali", "policy"),
     ("IMD issues orange alert for heavy rain in Kerala", "weather"),
     ("BJP releases first list of candidates for Bihar polls", None),
@@ -48,10 +50,23 @@ def test_category_keeps_explainable_topics_and_skips_the_rest(title, cat):
 
 def test_one_story_from_four_owners_with_its_full_name():
     found = [c for c in explain.clusters(MURUGAN, NOW) if len(c["owners"]) >= 3]
-    assert len(found) == 1 and len(found[0]["owners"]) == 3  # "quits" shares no word but the name: kept apart
+    assert len(found) == 1 and len(found[0]["owners"]) == 3  # "quits" matches 1 of 3 headlines: under half
     key = explain.centre(found[0])
     assert key == "murugan"
     assert explain.phrase([i["title"] for i in found[0]["items"]], key) == "L Murugan"
+
+
+def test_title_case_headlines_join_by_the_other_headlines_names():
+    rows = [item("ht", "L Murugan resigns as union minister, wishes to return to Tamil Nadu"),
+            item("news18", "L Murugan Resigns As Minister, PM Modi's Cabinet Reshuffle Imminent Before Diwali", 2),
+            item("ndtv", "Wish To Return To Grassroots: L Murugan Resigns As Union Minister", 3)]
+    assert explain.title_case(rows[1]["title"]) and not explain.title_case(rows[0]["title"])
+    [c] = explain.clusters(rows, NOW)
+    assert explain.centre(c) == "murugan"
+    assert explain.phrase([i["title"] for i in c["items"]], "murugan") == "L Murugan"
+    apart = [item("news18", "PM Modi Inaugurates New Airport Terminal In Navi Mumbai"),
+             item("ndtv", "PM Modi Speaks To Canada PM Mark Carney On Trade Ties", 2)]
+    assert all(len(c["items"]) == 1 for c in explain.clusters(apart, NOW))
 
 
 def test_shared_institution_alone_never_joins_two_stories():
