@@ -1,11 +1,15 @@
 {
- "at": "2026-10-13T08:32:09+00:00",
+ "at": "2026-10-13T08:59:13+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 2 candidates from 7 trending",
+  "learn: 10 scored Shorts, lifts {'region:world': {'n': 5, 'lift': 0.789, 'typical_views_24h': 24}}",
+  "watch: 4 candidates from 11 trending",
+  "skip wk-Q141712628: Orbitwire top candidate (wk-Q141712628), not high-profile enough to tell again",
   "drop wk-Q2475741: 117 h old and no longer trending live",
+  "drop wk-Q141712917: 381 h old and no longer trending live",
   "skip wk-Q13119635: gate: only 0 usable photos of Madhu Kambikar on Wikimedia Commons (want 3)",
+  "skip wk-Q5300674: gate: only 0 usable photos of Doug Loft on Wikimedia Commons (want 3)",
   "nothing eligible to publish"
  ]
 }

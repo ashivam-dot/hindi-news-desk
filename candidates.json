@@ -1,29 +1,36 @@
 {
- "at": "2026-10-13T08:32:09+00:00",
+ "at": "2026-10-13T08:59:15+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi Arabia airports",
-   "fame": 220703,
+   "fame": 595703,
    "views": 45703,
    "traffic": 0,
-   "news": 125000,
+   "news": 500000,
    "news_at": "2026-10-13T03:08:35+00:00",
    "headlines": [
-    "Houthi missile attack targets Saudi capital Riyadh for third day in a row"
+    "Houthi missile attack targets Saudi capital Riyadh for third day in a row",
+    "Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "Iran War Updates: Deadly Houthi attacks keep Saudi airport closed as Trump considers U.S. strikes in Yemen",
+    "Saudi Arabia’s Worst-Case Iran Scenario Hasn’t Even Begun"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
+   "region": "world",
    "india_link": true,
    "geos": [
-    "IN"
+    "IN",
+    "US",
+    "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
     "wikipedia-top-2026-10-12",
     "wikipedia-current-events-2026-10-12",
-    "google-news:Houthi missile attack targets Saudi capital Riyadh for third day in a row"
+    "google-news:Houthi missile attack targets Saudi capital Riyadh for third day in a row",
+    "google-news:Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "google-news:Iran War Updates: Deadly Houthi attacks keep Saudi airport closed as Trump considers U.S. strikes in Yemen"
    ],
    "id": "wk-Q141695384",
    "kind": "incident",
@@ -85,6 +92,37 @@
    "date": "2026-10-09"
   },
   {
+   "qid": "Q141681530",
+   "title": "2026 Panama earthquake",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-09T18:04:04+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "gdacs-EQ-1570339:Orange"
+   ],
+   "id": "wk-Q141681530",
+   "kind": "incident",
+   "category": "earthquake",
+   "date": "2026-10-09",
+   "coords": [
+    7.5868,
+    -80.769
+   ],
+   "has_coords": true,
+   "mag": 7.7,
+   "alert": "orange",
+   "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18k"
+  },
+  {
    "qid": "Q141712628",
    "title": "2026 Aubagne school shooting",
    "fame": 50000,
@@ -108,6 +146,29 @@
    "date": "2026-10-12",
    "coords": null,
    "has_coords": true
+  },
+  {
+   "qid": "Q5300674",
+   "title": "Doug Loft",
+   "fame": 32602,
+   "views": 32602,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "id": "wk-Q5300674",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-11"
   },
   {
    "qid": "Q2475741",
@@ -179,6 +240,54 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-12"
+  },
+  {
+   "qid": "Q141712917",
+   "title": "Hurricane Rachel (2026)",
+   "fame": 8756,
+   "views": 8756,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "id": "wk-Q141712917",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-27",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": "Q228928",
+   "title": "Eva Marie Saint",
+   "fame": 8446,
+   "views": 8446,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "ईवा मैरी सेंट",
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "id": "wk-Q228928",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-06"
   }
  ],
  "candidates": [
@@ -204,6 +313,29 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-12"
+  },
+  {
+   "qid": "Q5300674",
+   "title": "Doug Loft",
+   "fame": 32602,
+   "views": 32602,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "id": "wk-Q5300674",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-11"
   },
   {
    "qid": "Q2475741",
@@ -237,7 +369,34 @@
     "high_profile": "an India story (fame 31,329): Hindi viewers are not Orbitwire's English audience",
     "angle": "india"
    }
+  },
+  {
+   "qid": "Q141712917",
+   "title": "Hurricane Rachel (2026)",
+   "fame": 8756,
+   "views": 8756,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12"
+   ],
+   "id": "wk-Q141712917",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-09-27",
+   "coords": null,
+   "has_coords": false
   }
  ],
- "notes": []
+ "notes": [
+  "skip wk-Q141712628: Orbitwire top candidate (wk-Q141712628), not high-profile enough to tell again"
+ ]
 }
