@@ -39,6 +39,16 @@ its own article whose file name names it, never a map and never one that feature
 pass them off as part of the story), its id is `wp-<article title>` (so it never comes back as `wk-<QID>` once
 Wikidata catches up), and with no Wikidata to agree with, no casualty number is ever said.
 
+**Story supply (2026-10-13).** A young article waits: "under 6 hours old" never counts as a try (six tries, at a run
+about every 30 minutes, gave every fresh article up before it was 6 hours old), and a story once given up only for
+that comes back. Wikipedia's search ranks long-standing articles above a brand-new one, so headlines and Google
+Trends news items are also matched by their words to a pool of fresh stories: people Wikidata says died in the last
+10 days, and event articles created in the last 48 hours or listed on Current events (a person by their whole name
+in order, an event by its place or name plus one more title word, a Hindi headline by the item's Hindi label; a
+headline two items fit matches nothing). Any search Google Trends lists counts (traffic 100+). The most-read list is
+read 1000 deep for those deaths and fresh events. A GDACS Orange or Red alert from the last 4 days leads to its
+disaster's own article (`desk/gdacs.py`; worth 50k or 150k fame), and Google News' Hindi world section is read too.
+
 ## The editorial desk (`desk/plan.py`)
 
 The desk is India-first and runs unattended; it decides what goes out and when.
@@ -64,7 +74,8 @@ The desk is India-first and runs unattended; it decides what goes out and when.
 
 Before every run the desk reads Orbitwire's public ledger
 (`https://raw.githubusercontent.com/ashivam-dot/rebuilt-in-3d/state/published.json` and `candidates.json`) and matches
-stories on the Wikidata QID in their `wk-<QID>` ids (suffixes such as `-2026w41` or `-p2` included).
+stories on the Wikidata QID in their `wk-<QID>` ids (suffixes such as `-2026w41` or `-p2` included), and a story
+told before Wikidata knew it on its `wp-<article title>` id or the article Orbitwire recorded.
 
 - A story is **shared** when Orbitwire published or scheduled that QID within the last 7 days, or it is Orbitwire's
   current top candidate.
@@ -85,9 +96,11 @@ stories on the Wikidata QID in their `wk-<QID>` ids (suffixes such as `-2026w41`
 
 - **Pictures:** at least three real, freely licensed photos from Wikimedia Commons (CC0, public domain, CC BY,
   CC BY-SA; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
-  licence / Wikimedia Commons`) and in the description. For a person, every photo must show them: their face is
-  matched across the set. A gentle depth-parallax camera move brings each still to life; nothing in a photo is
-  invented or altered.
+  licence / Wikimedia Commons`) and in the description. For a person, every photo of a person must show them: their
+  face is matched across the set. A story with fewer than three photos of its own (a tribute needs at least one
+  matched photo of its subject) is filled with photos of the places and things it links to: a person's birthplace,
+  school, employer, team or award, an incident's places. A fill photo never features a face. A gentle
+  depth-parallax camera move brings each still to life; nothing in a photo is invented or altered.
 - **Never** generate a realistic image or video of a real person or a real incident.
 - **Backgrounds follow the topic (owner, 2026-10-10: a single background "looks very basic").** Nothing goes out on
   one plain backdrop. Public-service advisories (`desk/advisory.py`, `advisories/*.json`) name a real Commons photo

@@ -139,18 +139,36 @@ def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = N
         for q, e in related.items():
             ordered += [("File:" + c["value"], "related") for c in wiki.claims(e, "P18")[:1]]
         for q, e in related.items() if places else ():
-            page, own = wiki.sitelink(e, "enwiki"), _keys(wiki.label(e) or "")
-            try:
-                files = _article_files(page) if page and own else []
-            except Exception:
-                files = []
-            ordered += [(f, "place") for f in files if _names(f.replace("_", " "), own) and not NOT_PHOTO.search(f)][:3]
+            ordered += _place_files(e)
     if search:
         try:
             ordered += [(f, "search") for f in _search_files(re.sub(r"\s*\([^)]*\)$", "", title))]
         except Exception:
             pass
     return _usable(ordered, keys, limit, exclude=exclude)
+
+
+def _place_files(e: dict) -> list[tuple[str, str]]:
+    """Up to three files from an item's own article whose names name the item (a city skyline, a school's front)."""
+    page, own = wiki.sitelink(e, "enwiki"), _keys(wiki.label(e) or "")
+    try:
+        files = _article_files(page) if page and own else []
+    except Exception:
+        files = []
+    return [(f, "place") for f in files if _names(f.replace("_", " "), own) and not NOT_PHOTO.search(f)][:3]
+
+
+def context(qids: list[str], limit: int = 6, exclude: set[str] | None = None) -> list[Photo]:
+    """Photos of the places and things a story links to (a birthplace, a school, an award, the airport): each item's
+    main image, then files from its article that name it. They fill a Short whose own photos are too few, and are
+    never of the story's person (the caller drops any that feature a face)."""
+    if not qids:
+        return []
+    ordered = []
+    for e in wiki.entities(qids).values():
+        ordered += [("File:" + c["value"], "related") for c in wiki.claims(e, "P18")[:1]]
+        ordered += _place_files(e)
+    return _usable(ordered, set(), limit, exclude=exclude)
 
 
 def picks(files: list[str], limit: int = 8) -> list[Photo]:

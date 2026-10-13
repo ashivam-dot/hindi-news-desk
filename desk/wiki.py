@@ -106,6 +106,46 @@ def current_events(day: date) -> list[tuple[str, bool]]:
     return out
 
 
+RECENT_DEATHS = """SELECT ?p ?article ?hi ?links WHERE {{
+ ?p p:P570/psv:P570 [wikibase:timeValue ?died; wikibase:timePrecision 11] . FILTER(?died >= "{since}"^^xsd:dateTime)
+ ?p wdt:P31 wd:Q5 . ?article schema:about ?p; schema:isPartOf <https://en.wikipedia.org/> .
+ ?p wikibase:sitelinks ?links . OPTIONAL {{ ?p rdfs:label ?hi FILTER(LANG(?hi) = "hi") }}
+}} ORDER BY DESC(?links) LIMIT {limit}"""
+
+
+def recent_deaths(since: date, limit: int = 300) -> list[dict]:
+    """People with an English article whose Wikidata death date is on or after since, best known first:
+    [{title, qid, hi}]."""
+    from urllib.parse import unquote
+
+    query = RECENT_DEATHS.format(since=since.isoformat() + "T00:00:00Z", limit=limit)
+    rows = net.get_json(SPARQL, params={"query": query, "format": "json"})["results"]["bindings"]
+    out, seen = [], set()
+    for r in rows:
+        title = unquote(r["article"]["value"].rsplit("/wiki/", 1)[1]).replace("_", " ")
+        if title not in seen:
+            seen.add(title)
+            out.append({"title": title, "qid": r["p"]["value"].rsplit("/", 1)[1],
+                        "hi": (r.get("hi") or {}).get("value")})
+    return out
+
+
+def new_articles(hours: float = 48, now: datetime | None = None, pages: int = 6) -> list[str]:
+    """Titles of English articles created in the last `hours` (not redirects), newest first."""
+    now = now or datetime.now(timezone.utc)
+    since = (now - timedelta(hours=hours)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    out, cont = [], {}
+    for _ in range(pages):
+        d = net.get_json(API, params={"action": "query", "list": "recentchanges", "rctype": "new", "rcnamespace": 0,
+                                      "rcshow": "!redirect", "rclimit": 500, "rcend": since, "rcprop": "title",
+                                      "format": "json", "formatversion": 2, **cont})
+        out += [r["title"] for r in d["query"]["recentchanges"]]
+        if "continue" not in d:
+            break
+        cont = d["continue"]
+    return out
+
+
 def created(title: str) -> datetime | None:
     d = net.get_json(API, params={"action": "query", "prop": "revisions", "titles": title, "rvlimit": 1, "rvdir": "newer",
                                   "rvprop": "timestamp", "format": "json", "formatversion": 2})

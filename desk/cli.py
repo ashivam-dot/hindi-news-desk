@@ -18,8 +18,8 @@ from . import config, gate, ledger, learn, plan
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
-RETRYABLE = ("under 6 hours old", "words (want", "does not confirm the death", "usable photos", "no draft passed",
-             "came out garbled", "orbitwire")
+RETRYABLE = ("words (want", "does not confirm the death", "usable photos", "no draft passed", "came out garbled",
+             "orbitwire")
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")
@@ -39,6 +39,7 @@ def prepare(target: str | dict):
         target = kept[0]
     short = writer.build(target)
     short.scene.setdefault("category", target.get("category"))
+    short.scene.setdefault("article", target.get("title"))
     work = WORK / short.id
     work.mkdir(parents=True, exist_ok=True)
     short.save(work / "short.json")
@@ -90,9 +91,10 @@ def publish_refusal(short, work: Path, at: datetime) -> str | None:
         state = orbitwire.fetch()
     except Exception as exc:
         return f"orbitwire: its state is unreadable ({type(exc).__name__})"
-    ov = orbitwire.overlap(qid, state, at)
+    ov = orbitwire.overlap(qid, state, at, title=short.scene.get("article"), story_id=short.id)
     if ov and not short.scene.get("orbitwire"):
-        return f"orbitwire: Orbitwire now covers {qid} ({ov['status']}); this Short was not written as a new angle"
+        return (f"orbitwire: Orbitwire now covers {qid or short.id} ({ov['status']}); this Short was not written as a "
+                "new angle")
     return orbitwire.wait(ov, at) if ov else None
 
 
@@ -183,8 +185,11 @@ def run(dry: bool = False, preview: bool = False) -> dict:
         if not ready:
             return health
         recent_loss = [r.get("loss", False) for r in ledger.published()]
-        written = 0
-        for cand in ready[:4]:
+        written = tried = 0
+        for cand in ready:
+            if tried >= 4:
+                break
+            tried += 1
             if written >= MAX_WRITTEN:
                 health["steps"].append(f"later {cand['id']}: this run already wrote {written} scripts")
                 continue
@@ -192,7 +197,13 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 short = prepare(cand)
             except ValueError as exc:
                 written += "no draft passed" in str(exc)
-                # Young or thin articles, and stories still short of free photos, get another chance next run.
+                if ledger.waiting(str(exc)):
+                    # A brand-new article waits for its facts to settle; waiting is not a failed try, and it does
+                    # not take a slot from the stories that are ready now.
+                    tried -= 1
+                    health["steps"].append(f"wait {cand['id']}: {exc}")
+                    continue
+                # Thin articles, and stories still short of free photos, get another chance next run.
                 (note_retry if any(m in str(exc) for m in RETRYABLE) else note_skip)(cand["id"], str(exc)[:300])
                 health["steps"].append(f"skip {cand['id']}: {exc}")
                 continue

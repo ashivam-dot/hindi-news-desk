@@ -25,7 +25,16 @@ ONGOING_MAX_YEARS = 2
 ONGOING_MIN_HEADLINES = 2
 TRENDS_RSS = "https://trends.google.com/trending/rss?geo={geo}"
 HT = "{https://trends.google.com/trending/rss}"
+# Google Trends' RSS now lists about ten searches a country with traffic of "100+" to "5000+": any listed search is
+# trending now, so none is ignored for its size (a 1000 floor once left every Trends signal at zero).
+TRENDS_MIN_TRAFFIC = 100
 TOP_N = 400
+# Below the top TOP_N, Wikipedia's most-read list (1000 deep) still counts for people who just died and fresh events.
+TOP_DEEP = 1000
+NEW_ARTICLE_H = 48
+# A GDACS Orange or Red alert (EU JRC / UN OCHA) for a disaster counts like a Current events listing, or more.
+GDACS_FAME = {"Orange": 50000, "Red": 150000}
+GDACS_MAX_DAYS = 4
 # A story Wikipedia's editors list on today's or yesterday's Current events page counts like two lead headlines.
 PORTAL_FAME = 50000
 PORTAL_LEADS = 2
@@ -44,18 +53,84 @@ def google_trends(geo: str) -> list[dict]:
     return out
 
 
+def story_pool(today: date, errors: list[str]) -> list[dict]:
+    """Articles headlines and searches may be matched to by their words (news.reverse): people who died in the last
+    DEATH_MAX_DAYS days and event articles created in the last NEW_ARTICLE_H hours."""
+    pool = []
+    try:
+        pool += [news.pool_item(d["title"], person=True, qid=d["qid"], hi=d["hi"])
+                 for d in wiki.recent_deaths(today - timedelta(days=DEATH_MAX_DAYS))]
+    except Exception as exc:
+        errors.append(f"wikidata recent deaths: {exc}"[:200])
+    try:
+        pool += [news.pool_item(t) for t in wiki.new_articles(NEW_ARTICLE_H) if title_kind(t, today)]
+    except Exception as exc:
+        errors.append(f"wikipedia new articles: {exc}"[:200])
+    return pool
+
+
+def _add_events(pool: list[dict], titles, today: date) -> None:
+    """Add the event-shaped titles among titles to the pool (with their Hindi labels where Wikidata has them)."""
+    known = {p["title"] for p in pool}
+    fresh = [t for t in dict.fromkeys(titles) if t not in known and title_kind(t, today)]
+    if not fresh:
+        return
+    hi = {}
+    try:
+        info = wiki.page_info(fresh)
+        qids = {t: i["qid"] for t, i in info.items() if i.get("qid")}
+        ents = wiki.entities(sorted(set(qids.values()))) if qids else {}
+        hi = {t: wiki.label(ents.get(q, {}), "hi") for t, q in qids.items()}
+    except Exception:
+        pass
+    pool += [news.pool_item(t, hi=hi.get(t)) for t in fresh]
+
+
+def gdacs_hits(today: date) -> list[tuple[str, dict]]:
+    """(English article, alert) for each recent GDACS Orange or Red alert whose disaster has an article."""
+    from . import gdacs
+
+    out = []
+    for a in gdacs.alerts():
+        if not a.get("published") or (today - date.fromisoformat(a["published"][:10])).days > GDACS_MAX_DAYS:
+            continue
+        name, cat = gdacs.subject(a)
+        if not name:
+            continue
+        hits = net.get_json(wiki.API, params={"action": "query", "list": "search", "srlimit": 5, "format": "json",
+                                              "formatversion": 2, "srsearch": f"{today.year} {name} {gdacs.WORD[cat]}"})
+        title = next((h["title"] for h in hits["query"]["search"] if title_kind(h["title"], today) == cat
+                      and name.lower() in h["title"].lower()), None)
+        if title:
+            out.append((title, a))
+    return out
+
+
 def _signals() -> tuple[dict[str, dict], list[str]]:
     """title -> {views, traffic, via}; plus any errors (one failed source must not stop the radar)."""
     hits: dict[str, dict] = {}
     errors = []
+    now = datetime.now(timezone.utc)
+    pool = story_pool(now.date(), errors)
+    deep = {p["title"] for p in pool}
     try:
         day, top = wiki.top_articles()
-        for title, views in top[:TOP_N]:
+        for rank, (title, views) in enumerate(top[:TOP_DEEP]):
+            if rank >= TOP_N and title not in deep and not title_kind(title, now.date()):
+                continue
             hits.setdefault(title, {"views": 0, "traffic": 0, "via": []})
             hits[title]["views"] = views
             hits[title]["via"].append(f"wikipedia-top-{day.isoformat()}")
     except Exception as exc:
         errors.append(f"wikipedia top: {exc}"[:200])
+    listed = {}
+    for back in (1, 0):
+        d = now.date() - timedelta(days=back)
+        try:
+            listed[d] = wiki.current_events(d)
+        except Exception as exc:
+            errors.append(f"wikipedia current events {d}: {exc}"[:200])
+    _add_events(pool, list(hits) + [t for rows in listed.values() for t, _ in rows], now.date())
     for geo in GEOS:
         try:
             trends = google_trends(geo)
@@ -63,10 +138,12 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
             errors.append(f"google trends {geo}: {exc}"[:200])
             continue
         for t in trends:
-            if t["traffic"] < 1000:
+            if t["traffic"] < TRENDS_MIN_TRAFFIC:
                 continue
+            # A search is matched to the story its own news items name before Wikipedia's search is asked.
+            title = next(filter(None, (news.reverse(s, pool) for s in [t["query"]] + t["news"])), None)
             try:
-                title = _resolve(t["query"])
+                title = title or _resolve(t["query"])
             except Exception:
                 continue
             if not title:
@@ -75,16 +152,19 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
             h["traffic"] += t["traffic"]
             h["via"].append(f"google-trends-{geo}:{t['query']}")
             h.setdefault("geos", set()).add(geo)
-    now = datetime.now(timezone.utc)
-    for back in (1, 0):
-        day = now.date() - timedelta(days=back)
-        try:
-            listed = wiki.current_events(day)
-        except Exception as exc:
-            errors.append(f"wikipedia current events {day}: {exc}"[:200])
-            continue
+    try:
+        for title, a in gdacs_hits(now.date()):
+            h = hits.setdefault(title, {"views": 0, "traffic": 0, "via": []})
+            h["gdacs"] = max(h.get("gdacs", 0), GDACS_FAME.get(a["level"], 0))
+            h["gdacs_at"] = max(h.get("gdacs_at", a["published"]), a["published"])
+            h["via"].append(f"{a['id']}:{a['level']}")
+            if a.get("country") == "India":
+                h.setdefault("geos", set()).add("IN")
+    except Exception as exc:
+        errors.append(f"gdacs: {exc}"[:200])
+    for day, rows in listed.items():
         live_at = min(now, datetime.combine(day + timedelta(days=1), datetime.min.time(), timezone.utc)).isoformat()
-        for title, india in listed:
+        for title, india in rows:
             h = hits.setdefault(title, {"views": 0, "traffic": 0, "via": []})
             h["portal"] = h.get("portal", 0) + PORTAL_FAME
             h["portal_at"] = max(h.get("portal_at", live_at), live_at)
@@ -92,7 +172,7 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
             if india:
                 h.setdefault("geos", set()).add("IN")
     try:
-        lead, news_errors = news.signals()
+        lead, news_errors = news.signals(pool=pool)
         errors += news_errors
     except Exception as exc:
         lead = {}
@@ -202,7 +282,8 @@ TITLE_KINDS = (
     (r"\b(bus|road|boat) (crash|accident)\b", "accident"),
     (r"\b(protests?|demonstrations?)\b", "protest"),
 )
-TITLE_SKIP = r"\b(riots?|trials?|elections?|by-?elections?|referendum|season|tournament|championship|cup|league|film|series)\b"
+TITLE_SKIP = (r"\b(riots?|trials?|elections?|by-?elections?|referendums?|seasons?|tournaments?|championships?|cups?|"
+              r"leagues?|films?|series|games|olympics)\b")
 
 
 def title_kind(title: str, today: date) -> str | None:
@@ -251,9 +332,9 @@ def radar(today: date | None = None) -> dict:
             if qid in seen or not cats or not ent:
                 continue
             seen.add(qid)
-        fame = h["views"] + h["traffic"] + h.get("news", 0) + h.get("portal", 0)
+        fame = h["views"] + h["traffic"] + h.get("news", 0) + h.get("portal", 0) + h.get("gdacs", 0)
         geos = h.get("geos", set())
-        news_at = max(filter(None, (h.get("news_at"), h.get("portal_at"))), default=None)
+        news_at = max(filter(None, (h.get("news_at"), h.get("portal_at"), h.get("gdacs_at"))), default=None)
         base = {"qid": qid, "title": page["title"], "fame": fame, "views": h["views"], "traffic": h["traffic"],
                 "news": h.get("news", 0), "news_at": news_at, "headlines": h.get("headlines", []),
                 "hindi_news": h.get("hindi_news", 0), "hindi_headlines": h.get("hindi_headlines", []),

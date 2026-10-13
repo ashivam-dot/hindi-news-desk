@@ -375,11 +375,35 @@ def _strip(text: str, words: list[str]) -> str:
     return " ".join(p for p in parts if not gate.found(p, words))
 
 
+def featured_face(img, seen: list[dict]) -> bool:
+    """A face this big would pass whoever it is off as part of the story."""
+    return img is None or any(d["box"][2] >= PLACE_FACE * min(img.shape[:2]) for d in seen)
+
+
 def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None = None,
-                files: list[str] | None = None, exclude: set[str] | None = None, places: bool = False) -> list[dict]:
+                files: list[str] | None = None, exclude: set[str] | None = None, places: bool = False,
+                context_qids: list[str] | None = None) -> list[dict]:
     """Downloaded photos as dicts with a "focus" box: for a person, only photos in which their face is matched.
     files: Commons files an editor chose instead of searching; exclude: files that may not be used; places: see
-    media.find."""
+    media.find; context_qids: places and things the story links to, whose photos (with no featured face) fill in
+    when the story has fewer than MIN_PHOTOS of its own. A person needs at least one photo of their own face."""
+    import cv2
+
+    kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places)
+    if len(kept) >= MIN_PHOTOS or files or not context_qids or (person and not kept):
+        return kept
+    have = (exclude or set()) | {r["file"] for r in kept}
+    for r in media.as_dicts(media.download(media.context(context_qids, exclude=have), folder / "context")):
+        img = cv2.imread(r["path"])
+        if featured_face(img, faces.detect(img) if img is not None else []):
+            continue
+        r["focus"] = None
+        kept.append(r)
+    return kept[:8]
+
+
+def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None,
+                files: list[str] | None, exclude: set[str] | None, places: bool) -> list[dict]:
     import cv2
 
     if files:
@@ -396,20 +420,30 @@ def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
     for r, f, img, seen in zip(rows, picks, images, detected):
         if person and f is None:
             continue
-        if r["origin"] == "place" and img is not None and any(d["box"][2] >= PLACE_FACE * min(img.shape[:2])
-                                                              for d in seen):
+        if r["origin"] == "place" and img is not None and featured_face(img, seen):
             continue  # a place photo that features someone would pass them off as part of the story
         r["focus"] = [round(v) for v in f["box"]] if f else None
         kept.append(r)
     return kept[:8]
 
 
-def _shared(cand: dict, title: str, ent: dict, extra: list[str] | None) -> tuple[dict | None, set[str]]:
-    """Orbitwire's overlap record for a shared story, with the photo files Orbitwire would use."""
+PERSON_CONTEXT = ("P19", "P69", "P108", "P54", "P463", "P166", "P800")  # birthplace, school, employer, team, ...
+
+
+def person_context(ent: dict) -> list[str]:
+    """The places and things a person's life links to, whose photos may fill a tribute short of portraits."""
+    return list(dict.fromkeys(c["value"] for pid in PERSON_CONTEXT for c in wiki.claims(ent, pid)[:1]
+                              if isinstance(c["value"], str) and c["value"].startswith("Q")))[:6]
+
+
+def _shared(cand: dict, title: str, ent: dict, extra: list[str] | None,
+            context: list[str] | None = None) -> tuple[dict | None, set[str]]:
+    """Orbitwire's overlap record for a shared story, with the photo files Orbitwire would use (its fill photos of
+    the story's places too)."""
     ov = cand.get("orbitwire")
     if not ov:
         return None, set()
-    pool = orbitwire.photo_pool(title, ent, extra)
+    pool = orbitwire.photo_pool(title, ent, extra, context if context is not None else extra)
     return ov | {"excluded_photos": pool, "photo_pool_checked": True}, set(pool)
 
 
@@ -450,8 +484,9 @@ def build_death(cand: dict) -> Short:
     job_hi = next(iter(wiki.labels([c["value"] for c in wiki.claims(ent, "P106")[:1]], "hi").values()), "")
     sid = cand.get("id") or f"wk-{qid}"
     work = WORK / sid
-    ov, exclude = _shared(cand, title, ent, None)
-    photos = pick_photos(title, ent, work / "photos", person=True, exclude=exclude)
+    context = person_context(ent)
+    ov, exclude = _shared(cand, title, ent, None, context)
+    photos = pick_photos(title, ent, work / "photos", person=True, exclude=exclude, context_qids=context)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
@@ -516,7 +551,7 @@ def build_incident(cand: dict) -> Short:
     work = WORK / sid
     ov, exclude = _shared(cand, article, ent, extra)
     photos = pick_photos(article, ent, work / "photos", person=False, extra_qids=extra, files=cand.get("photo_files"),
-                         exclude=exclude, places=not qid)
+                         exclude=exclude, places=not qid, context_qids=extra)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))

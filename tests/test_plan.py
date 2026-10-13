@@ -194,7 +194,9 @@ def test_current_events_lists_story_articles_not_the_links_in_summaries(monkeypa
 def test_a_listed_protest_is_news_and_an_india_story(monkeypatch):
     monkeypatch.setattr(trends.wiki, "top_articles", lambda: (date(2026, 10, 10), []))
     monkeypatch.setattr(trends, "google_trends", lambda geo: [])
-    monkeypatch.setattr(trends.news, "signals", lambda: ({}, []))
+    monkeypatch.setattr(trends.news, "signals", lambda **k: ({}, []))
+    monkeypatch.setattr(trends, "story_pool", lambda today, errors: [])
+    monkeypatch.setattr(trends, "gdacs_hits", lambda today: [])
     monkeypatch.setattr(trends.wiki, "current_events",
                         lambda day: [("2026 anti-CEC protests", True)] if day == date(2026, 10, 11) else [])
     monkeypatch.setattr(trends, "datetime", type("D", (datetime,), {"now": staticmethod(lambda tz=None: utc(11, 7))}))

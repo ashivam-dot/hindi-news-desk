@@ -95,8 +95,10 @@ def infobox_date(fields: dict) -> date | None:
 
 def _check_age(title: str) -> None:
     made = wiki.created(title)
-    if made and datetime.now(timezone.utc) - made < MIN_ARTICLE_AGE:
-        raise ValueError(f"gate: the article is under {MIN_ARTICLE_AGE.seconds // 3600} hours old; facts may still move")
+    if made and (age := datetime.now(timezone.utc) - made) < MIN_ARTICLE_AGE:
+        left = (MIN_ARTICLE_AGE - age).total_seconds() / 3600
+        raise ValueError(f"gate: the article is under {MIN_ARTICLE_AGE.seconds // 3600} hours old; facts may still "
+                         f"move (ready in {left:.1f} h)")
 
 
 def _pronouns(ent: dict) -> tuple[str, str]:

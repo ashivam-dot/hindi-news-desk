@@ -174,7 +174,7 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
     fame = [c.get("fame", 0) for c in cands]
     kept, notes = [], []
     for c in cands:
-        ov = orbitwire.overlap(c.get("qid"), state, at)
+        ov = orbitwire.overlap(c.get("qid"), state, at, title=c.get("title"), story_id=c.get("id"))
         if not ov:
             kept.append(c)
             continue

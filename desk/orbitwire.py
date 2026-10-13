@@ -70,10 +70,27 @@ def _at(value: str) -> datetime:
     return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
 
 
-def overlap(qid: str | None, state: dict, at: datetime) -> dict | None:
-    """What Orbitwire did with this QID: its newest release in the last SHARED_DAYS days (or a scheduled one), else
-    whether it is Orbitwire's current top candidate; None when the story is not shared."""
-    if not qid:
+def _same(row: dict, qid: str | None, ids: set[str]) -> bool:
+    """One story: the same Wikidata item, or the same article id (a story told before Wikidata knew it is `wp-<title>`
+    on both channels, and Orbitwire records the article it told)."""
+    rid = row.get("id", "")
+    return bool((qid and (row.get("qid") or qid_of(rid)) == qid) or rid in ids
+                or (row.get("article") and article_id(row["article"]) in ids))
+
+
+def article_id(title: str) -> str:
+    from .trends import article_id as aid
+
+    return aid(title)
+
+
+def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None,
+            story_id: str | None = None) -> dict | None:
+    """What Orbitwire did with this story (by QID, or by article for a story Wikidata did not know yet): its newest
+    release in the last SHARED_DAYS days (or a scheduled one), else whether it is Orbitwire's current top candidate;
+    None when the story is not shared."""
+    ids = {i for i in (story_id, article_id(title) if title else None) if i and i.startswith("wp-")}
+    if not qid and not ids:
         return None
     rows = []
     for r in state.get("published", []):
@@ -81,7 +98,7 @@ def overlap(qid: str | None, state: dict, at: datetime) -> dict | None:
             when = _at(r["published_at"])
         except (KeyError, ValueError, TypeError):
             continue
-        if qid_of(r.get("id", "")) == qid and at - when < timedelta(days=SHARED_DAYS):
+        if _same(r, qid, ids) and at - when < timedelta(days=SHARED_DAYS):
             rows.append((when, r))
     if rows:
         when, r = max(rows, key=lambda x: x[0])
@@ -89,7 +106,7 @@ def overlap(qid: str | None, state: dict, at: datetime) -> dict | None:
                 "orbitwire_published_at": when.isoformat(timespec="seconds"), "orbitwire_url": r.get("url"),
                 "orbitwire_title": r.get("title")}
     top = (state.get("candidates", {}).get("candidates") or [None])[0]
-    if top and (top.get("qid") or qid_of(top.get("id", ""))) == qid:
+    if top and _same({"id": top.get("id", ""), "qid": top.get("qid"), "article": top.get("title")}, qid, ids):
         return {"qid": qid, "status": "top_candidate", "orbitwire_id": top.get("id"), "orbitwire_published_at": None,
                 "orbitwire_url": None, "orbitwire_title": top.get("title"),
                 "orbitwire_seen_at": state["candidates"].get("at")}
@@ -137,8 +154,11 @@ def wait(ov: dict | None, at: datetime) -> str | None:
     return None
 
 
-def photo_pool(title: str, ent: dict, extra_qids: list[str] | None = None) -> list[str]:
-    """The Commons files Orbitwire's own ranking would draw from for this story (with a margin)."""
+def photo_pool(title: str, ent: dict, extra_qids: list[str] | None = None,
+               context_qids: list[str] | None = None) -> list[str]:
+    """The Commons files Orbitwire's own ranking would draw from for this story (with a margin), and the photos of
+    the story's places it may fill in with when its own are too few."""
     from . import media
 
-    return [p.file for p in media.find(title, ent, limit=POOL, extra_qids=extra_qids)]
+    pool = [p.file for p in media.find(title, ent, limit=POOL, extra_qids=extra_qids, places=not ent)]
+    return pool + [p.file for p in media.context(context_qids or [], limit=POOL) if p.file not in pool]
