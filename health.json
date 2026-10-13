@@ -1,20 +1,11 @@
 {
- "at": "2026-10-13T12:35:49+00:00",
+ "at": "2026-10-13T13:06:28+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 10 scored Shorts, lifts {'region:world': {'n': 5, 'lift': 0.789, 'typical_views_24h': 24}}",
-  "watch: 2 candidates from 12 trending",
-  "outlets: 546 headlines from 14 feeds (12 owners), 23 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (off: DESK_NEW_STORIES)",
+  "watch: 1 candidates from 10 trending",
+  "outlets: 584 headlines from 16 feeds (13 owners), 19 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
   "skip wk-Q5300674: Orbitwire top candidate (wk-Q5300674), not high-profile enough to tell again",
-  "trend radar errors: ['outlet pib: HTTPError: 403 Client Error: Forbidden for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3', 'outlet pib-hi: HTTPError: 403 Client Error: Forbidden for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3']",
-  "published wk-Q2475741: https://www.youtube.com/shorts/FMKaXjYtmOk"
- ],
- "published": {
-  "video_id": "FMKaXjYtmOk",
-  "url": "https://www.youtube.com/shorts/FMKaXjYtmOk",
-  "title": "भारत के दिग्गज अभिनेता नाना पाटेकर का निधन",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "hold wk-Q141712917: last Short went out 0.2 h ago"
+ ]
 }
