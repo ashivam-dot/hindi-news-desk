@@ -247,6 +247,21 @@ def test_a_tribute_short_of_portraits_fills_in_with_its_places_but_never_other_f
     assert got[0]["focus"] and got[1]["focus"] is None
 
 
+def test_a_persons_own_portraits_go_before_photos_with_strangers(photos, monkeypatch):
+    shelf, order, tmp = photos
+    shelf["own"] = [_photo("Rahul with students"), _photo("Rahul portrait"), _photo("Rahul at a desk")]
+    me, other = np.ones(128) / np.sqrt(128), np.eye(128)[0]
+    faces = {"students": [(0, 0, 300, 300, me), (400, 0, 280, 280, other)], "portrait": [(0, 0, 300, 300, me)],
+             "desk": [(0, 0, 300, 300, me), (500, 500, 40, 40, other)]}
+    calls = iter(["students", "portrait", "desk"])
+    monkeypatch.setattr(writer.faces, "detect", lambda img: [
+        {"box": f[:4], "score": 0.9, "feature": f[4]} for f in faces[next(calls)]])
+    got = writer.pick_photos("Rahul Gandhi", {}, tmp, person=True)
+    assert [p["file"] for p in got] == ["File:Rahul portrait.jpg", "File:Rahul at a desk.jpg",
+                                       "File:Rahul with students.jpg"]
+    assert [p["others"] for p in got] == [0, 0, 1]
+
+
 def test_no_portrait_means_no_tribute_and_enough_photos_means_no_fill(photos):
     shelf, order, tmp = photos
     shelf["context"] = [_photo("Kolhapur skyline", "related")] * 3

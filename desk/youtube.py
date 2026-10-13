@@ -99,8 +99,18 @@ def source_lines(short: Short) -> list[str]:
 
 
 def description(short: Short, voice: dict) -> str:
+    """The full description; when it passes YouTube's limit, without the narration (the video says it), then with
+    the photo credits grouped by licence. The sources and the AI disclosure always stay."""
+    for narration, grouped in ((True, False), (False, False), (False, True)):
+        text = _description(short, voice, narration, grouped)
+        if len(text.encode()) <= DESCRIPTION_BYTES:
+            return text
+    raise ValueError(f"description is {len(text.encode())} bytes; YouTube allows {DESCRIPTION_BYTES}")
+
+
+def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> str:
     lines = [short.summary, ""]
-    if short.kind != "advisory":
+    if short.kind != "advisory" and narration:
         lines += [" ".join(b.text for b in short.beats[:-1]), ""]
     else:
         for b in short.beats:
@@ -116,17 +126,14 @@ def description(short: Short, voice: dict) -> str:
     lines += [made,
               VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
               "कोई गलती दिखे तो स्रोत के साथ कमेंट करें, हम सुधार करेंगे।", ""]
-    if short.kind == "advisory" and short.scene.get("photos"):
+    if (short.kind == "advisory" or grouped) and short.scene.get("photos"):
         lines += ["श्रेय:", f"• {short.credits[0]}", f"• {photo_credits(short.scene['photos'])}", ""]
     elif short.kind != "advisory":
         lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
     tags = [hashtag(h) for h in short.hashtags]
     lines.append(" ".join("#" + t for t in dict.fromkeys(tags) if t))
     # YouTube rejects < and > in descriptions.
-    text = "\n".join(lines).replace("<", "‹").replace(">", "›")
-    if len(text.encode()) > DESCRIPTION_BYTES:
-        raise ValueError(f"description is {len(text.encode())} bytes; YouTube allows {DESCRIPTION_BYTES}")
-    return text
+    return "\n".join(lines).replace("<", "‹").replace(">", "›")
 
 
 def tags(short: Short) -> list[str]:

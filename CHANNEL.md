@@ -121,7 +121,14 @@ as https.
   non-commercial, no-derivatives or the public-domain mark) fills in with photos of the places the story links to
   (Wikidata items with coordinates; never a person, group or work), never one that features a face; each is
   credited to its author, licence and host.
-- **Description:** "स्रोत: Wikipedia, BBC, The Hindu" names the outlets behind the facts, then every URL.
+- **Description:** "स्रोत: Wikipedia, BBC, The Hindu" names the outlets behind the facts, then every URL. When it
+  would pass YouTube's 5,000 bytes (eight photo credits with long Commons URLs did, 2026-10-14), the narration
+  paragraph goes first, then the photo credits are grouped by licence; the sources and AI disclosure always stay.
+- **A person's photos:** their own portraits come before photos where other prominent faces stand beside them, so
+  strangers are not shown as part of today's story.
+- **Explainers give the other side:** when one side acts against another, the response REPORTING carries, attributed,
+  or one line saying the reports carry none; English idioms are said as a Hindi bulletin would ("high tea" is
+  "चाय पर बैठक").
 
 ## The editorial desk (`desk/plan.py`)
 

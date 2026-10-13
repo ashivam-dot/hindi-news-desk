@@ -108,7 +108,9 @@ Shape:
 3. Why: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना है",
    "रिपोर्टों के अनुसार"). If no report gives a reason, say plainly that no official reason has been given.
 4. Background the viewer needs: who {name} is or what it does (from the SOURCE).
-5. The other side or the reaction, attributed, when REPORTING has it.
+5. The other side: when the story is one side acting against, accusing or protesting another (a party against the
+   government, the opposition against an official), say what the other side said in REPORTING, attributed; if
+   REPORTING carries no response from them, say "रिपोर्टों में <them> की प्रतिक्रिया नहीं है" in one short line.
 6. What happens next, or what is still unclear, said honestly. The last beat answers the hook in one short sentence.
 Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
 words, and attribute every claim, allegation and criticism to whoever made it. Never guess at motives, never predict,
@@ -119,7 +121,8 @@ RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
   or relationship that is not written there. If you are unsure, leave it out.
 - Write in Hindi (Devanagari): simple, spoken Hindi of a good Hindi news bulletin, neither heavily Sanskritised nor
-  slang. 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
+  slang. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
+  "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
   sentences of 10 to 18 words. Count the words before you answer.
 - Every beat must carry a specific fact from the SOURCES (a work, a year, an honour, a choice they made); feeling
   comes from how you tell those facts, not from vague praise.
@@ -499,8 +502,11 @@ def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
         if r["origin"] == "place" and img is not None and featured_face(img, seen):
             continue  # a place photo that features someone would pass them off as part of the story
         r["focus"] = [round(v) for v in f["box"]] if f else None
+        r["others"] = sum(g is not f and g["box"][2] * g["box"][3] >= 0.25 * f["box"][2] * f["box"][3]
+                          for g in seen) if f else 0
         kept.append(r)
-    return kept[:8]
+    # Strangers beside the person would be shown as part of today's story: their own portraits go first.
+    return sorted(kept, key=lambda r: r["others"] > 0)[:8]
 
 
 PERSON_CONTEXT = ("P19", "P69", "P108", "P54", "P463", "P166", "P800")  # birthplace, school, employer, team, ...

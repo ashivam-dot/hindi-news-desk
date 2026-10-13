@@ -60,6 +60,17 @@ def test_description_is_hindi_with_sources_credits_and_the_ai_label(short):
     assert "Chatterbox" in clone
 
 
+def test_a_long_description_drops_the_narration_before_any_source_or_credit(short):
+    url = "https://commons.wikimedia.org/wiki/File:" + "%CE%A3" * 70 + ".jpg"
+    many = replace(short, credits=short.credits + [f"फ़ोटो: Author {i} / CC BY-SA 2.0 / Wikimedia Commons {url}"
+                                                   for i in range(6)])
+    text = youtube.description(many, GEMINI)
+    assert len(text.encode()) <= youtube.DESCRIPTION_BYTES
+    assert short.beats[0].text not in text
+    assert all(s in text for s in short.sources) and "Author 5 / CC BY-SA 2.0" in text and "AI आवाज़" in text
+    assert short.beats[0].text in youtube.description(short, GEMINI)
+
+
 def test_hashtags_keep_devanagari(short):
     last = youtube.description(replace(short, hashtags=["रमेश प्रसाद वर्मा", "हिंदी समाचार", "news"]), GEMINI)
     assert last.splitlines()[-1] == "#रमेशप्रसादवर्मा #हिंदीसमाचार #news"
