@@ -87,6 +87,42 @@ def speakable(text: str) -> str:
     return text.replace("≈", "लगभग ").replace("%", " प्रतिशत")
 
 
+HI_0_99 = """शून्य एक दो तीन चार पाँच छह सात आठ नौ दस ग्यारह बारह तेरह चौदह पंद्रह सोलह सत्रह अठारह उन्नीस बीस इक्कीस
+बाईस तेईस चौबीस पच्चीस छब्बीस सत्ताईस अट्ठाईस उनतीस तीस इकतीस बत्तीस तैंतीस चौंतीस पैंतीस छत्तीस सैंतीस अड़तीस
+उनतालीस चालीस इकतालीस बयालीस तैंतालीस चवालीस पैंतालीस छियालीस सैंतालीस अड़तालीस उनचास पचास इक्यावन बावन तिरपन
+चौवन पचपन छप्पन सत्तावन अट्ठावन उनसठ साठ इकसठ बासठ तिरसठ चौंसठ पैंसठ छियासठ सड़सठ अड़सठ उनहत्तर सत्तर इकहत्तर
+बहत्तर तिहत्तर चौहत्तर पचहत्तर छिहत्तर सतहत्तर अठहत्तर उन्यासी अस्सी इक्यासी बयासी तिरासी चौरासी पचासी छियासी
+सत्तासी अट्ठासी नवासी नब्बे इक्यानवे बानवे तिरानवे चौरानवे पंचानवे छियानवे सत्तानवे अट्ठानवे निन्यानवे""".split()
+HI_SCALES = ((10 ** 9, "अरब"), (10 ** 7, "करोड़"), (10 ** 5, "लाख"), (1000, "हज़ार"), (100, "सौ"))
+
+
+def hindi_number(n: int) -> str:
+    """An integer in Hindi words on the Indian scale; 1100-1999 the way years and counts are said ('उन्नीस सौ')."""
+    if n < 100:
+        return HI_0_99[n]
+    if 1100 <= n < 2000:
+        return " ".join([HI_0_99[n // 100], "सौ"] + ([HI_0_99[n % 100]] if n % 100 else []))
+    out = []
+    for size, word in HI_SCALES:
+        if n >= size:
+            out += [hindi_number(n // size), word]
+            n %= size
+    return " ".join(out + ([HI_0_99[n]] if n else []))
+
+
+def spoken_numbers(text: str) -> str:
+    """Digits as Hindi words for Chatterbox, which misreads them (2026 heard as '2006'); Gemini reads digits itself."""
+    text = text.translate(str.maketrans("०१२३४५६७८९", "0123456789"))
+    text = re.sub(r"(?<=\d),(?=\d)", "", text)
+
+    def say(m: re.Match) -> str:
+        whole, _, frac = m.group().partition(".")
+        words = hindi_number(int(whole))
+        return words + (" दशमलव " + " ".join(HI_0_99[int(d)] for d in frac) if frac else "")
+
+    return re.sub(r"\d+(?:\.\d+)?", say, text)
+
+
 def reference_ready() -> bool:
     return REFERENCE.exists() and (TTS_DIR / ".venv" / "bin" / "python").exists()
 
@@ -435,7 +471,7 @@ def _chatterbox_story(short: Short, out_dir: Path, reference: Path | None) -> di
     out_dir.mkdir(parents=True, exist_ok=True)
     mood = short.scene.get("mood", "news")
     style = STYLE.get(mood, STYLE["news"])
-    texts = [speakable(b.text) for b in short.beats]
+    texts = [spoken_numbers(speakable(b.text)) for b in short.beats]
     takes = _chatterbox(texts, out_dir / "takes", style, 7, reference)
     clips = []
     for i, (beat, take) in enumerate(zip(short.beats, takes)):
@@ -451,8 +487,12 @@ def _chatterbox_story(short: Short, out_dir: Path, reference: Path | None) -> di
             audio = audio[head:tail]
             clip = out_dir / f"beat{i:02d}.wav"
             sf.write(clip, audio, SAMPLE_RATE)
-            words, coverage, _, _ = _listen(clip, tokens)
+            words, coverage, spoken, _ = _listen(clip, tokens)
             match = coverage[0] if coverage else 0.0
+            if texts[i] != beat.text:
+                # Whisper may write the spelled numbers as words or as digits; either is the line heard right.
+                said = align.align([(w, 0) for w in texts[i].split()], spoken)[1]
+                match = max(match, said[0] if said else 0.0)
             if best is None or match > best[2]:
                 best = (audio, words, match)
             if match >= MIN_COVERAGE:
