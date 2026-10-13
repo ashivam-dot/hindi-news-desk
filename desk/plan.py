@@ -31,7 +31,9 @@ BREAKING_FAME = 400_000
 BREAKING_MAX_AGE_H = 12
 STALE_H = 48
 LIVE_NEWS_H = 24
-HALF_LIFE_H = {"death": 36, "protest": 18, "movement": 18, "conflict": 12, "earthquake": 18}
+HALF_LIFE_H = {"death": 36, "protest": 18, "movement": 18, "conflict": 12, "earthquake": 18, "explainer": 14}
+# One person or institution is explained at most once in this many hours, whatever the story.
+EXPLAIN_REPEAT_H = 20
 DEFAULT_HALF_LIFE_H = 24
 WINDOW_IST = (7.0, 24.0)
 INDIA_BOOST, LINK_BOOST = 1.6, 1.25
@@ -89,7 +91,7 @@ def priority(cand: dict, at: datetime) -> float:
 
 
 def is_breaking(cand: dict, at: datetime) -> bool:
-    if age_hours(cand, at) > BREAKING_MAX_AGE_H or cand.get("category") == "conflict":
+    if age_hours(cand, at) > BREAKING_MAX_AGE_H or cand.get("category") == "conflict" or cand.get("kind") == "explainer":
         return False
     if cand.get("category") == "earthquake" and cand.get("mag"):
         return cand.get("mag", 0) >= QUAKE_BIG_MAG or (cand.get("alert") or "") in ("orange", "red")
@@ -115,7 +117,15 @@ def told_before(cand: dict, rows: list[dict], at: datetime) -> bool:
     the same place and kind, or an nw- story's headlines name the article."""
     urls = {r["url"] for r in cand.get("reports") or []}
     for r in rows:
-        if at - datetime.fromisoformat(r["published_at"]) > timedelta(days=TOLD_DAYS):
+        age = at - datetime.fromisoformat(r["published_at"])
+        if age > timedelta(days=TOLD_DAYS):
+            continue
+        if cand["id"].startswith("kh-") or r["id"].startswith("kh-"):
+            if urls & set(r.get("report_urls") or []):
+                return True
+            if cand["id"].startswith("kh-") and cand.get("qid") and r.get("qid") == cand["qid"] \
+                    and age < timedelta(hours=EXPLAIN_REPEAT_H):
+                return True
             continue
         if not (r["id"].startswith("nw-") or cand["id"].startswith("nw-")):
             continue  # stories told from Wikipedia on both sides are matched by their ids already
@@ -225,6 +235,15 @@ def outlet_note(stats: dict, emerging: list[dict]) -> str:
             f"{len(emerging)} nw- stories ({lane})" + (f": {', '.join(c['id'] for c in emerging[:3])}" if emerging else ""))
 
 
+def explainer_note(found: list[dict], dropped: list[str]) -> str:
+    from . import config
+
+    lane = "on" if config.EXPLAINERS else "off: DESK_EXPLAINERS"
+    return (f"explainers: {len(found)} kh- stories ({lane})"
+            + (f": {', '.join(c['id'] for c in found[:4])}" if found else "")
+            + (f"; dropped: {'; '.join(dropped[:3])}" if dropped else ""))
+
+
 def high_profile(cand: dict, fame: list[float]) -> str | None:
     return orbitwire.high_profile(cand, fame)
 
@@ -241,6 +260,8 @@ def watch(save: bool = True) -> dict:
             found["outlets"] = radar["outlets"]
             found["emerging"] = radar.get("emerging", [])
             found["notes"].append(outlet_note(radar["outlets"], found["emerging"]))
+            found["explainers"] = radar.get("explainers", [])
+            found["notes"].append(explainer_note(found["explainers"], radar.get("explainer_notes", [])))
     except Exception as exc:
         found["trend_errors"] = [f"{type(exc).__name__}: {exc}"[:200]]
     found["notes"] += _quake_facts(found["trending"])

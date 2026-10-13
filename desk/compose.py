@@ -215,6 +215,8 @@ def _text_layer(lines: list[tuple[str, ImageFont.FreeTypeFont, tuple]], stroke: 
 CAPTION_SIZE, CAPTION_STROKE = 92, 9
 CAPTION_WIDTH = W - 160
 BREAKS = ".,;:!?—।॥"
+# An abbreviated initial: one or two letters with no vowel sign, then a dot ("एल.", "डी.", "J.").
+INITIAL = re.compile(r"(?:[\u0900-\u0939\u0958-\u0961]{1,2}|[A-Za-z]{1,2})\.")
 
 
 def _chunks(words: list[dict], width=None) -> list[list[dict]]:
@@ -226,7 +228,8 @@ def _chunks(words: list[dict], width=None) -> list[list[dict]]:
             out.append(cur)
             cur = []
         cur.append(w)
-        if len(cur) >= 3 or w["text"][-1:] in BREAKS:
+        initial = bool(INITIAL.fullmatch(w["text"]))  # "एल." in "एल. मुरुगन" ends no sentence; "है." does
+        if len(cur) >= 3 or (w["text"][-1:] in BREAKS and not initial):
             out.append(cur)
             cur = []
     if cur:
@@ -306,6 +309,71 @@ def _hook_layer(name: str, sub: str, accent: tuple) -> tuple[np.ndarray, np.ndar
     return _rgba(_text_layer(lines, stroke=6, gap=18))
 
 
+def _question_layer(title: str, accent: tuple) -> tuple[np.ndarray, np.ndarray]:
+    """The explainer's question as its opening card: big, on at most two lines, its last line in the accent."""
+    rows = wrap2(title, "ExtraBold", 86, W - 120)
+    lines = [(r, _fit("ExtraBold", 86, r, W - 120, 48), (255, 255, 255, 255) if n < len(rows) - 1 or len(rows) == 1
+              else accent + (255,)) for n, r in enumerate(rows)]
+    return _rgba(_text_layer(lines, stroke=6, gap=16))
+
+
+def wrap2(text: str, weight: str, size: int, width: int) -> list[str]:
+    """text on one line when it fits at `size`, else split into the two most even lines at a space."""
+    font = _font(weight, size)
+    if font.getlength(text) <= width or " " not in text:
+        return [text]
+    words = text.split()
+    cuts = [(" ".join(words[:k]), " ".join(words[k:])) for k in range(1, len(words))]
+    return list(min(cuts, key=lambda ab: max(font.getlength(ab[0]), font.getlength(ab[1]))))
+
+
+# The kind of story, shown in the channel strip; an explainer shows its own category (राजनीति, अर्थव्यवस्था ...).
+LABELS = {"death": "श्रद्धांजलि", "incident": "घटना", "protest": "प्रदर्शन", "advisory": "ज़रूरी सूचना",
+          "explainer": "क्या और क्यों"}
+
+
+def label_for(short: Short) -> str:
+    if short.scene.get("category_hi"):
+        return short.scene["category_hi"]
+    if short.scene.get("category") in ("protest", "movement"):
+        return LABELS["protest"]
+    return LABELS.get(short.kind, "")
+
+
+def _strip_layer(label: str, accent: tuple) -> tuple[np.ndarray, np.ndarray] | None:
+    """The channel strip on every frame, the way a news channel brands its screen: name, then the story's kind."""
+    name = config.NAME_HI or config.NAME
+    if not name:
+        return None
+    lines = [(drawable(f"{name}  ·  {label}" if label else name, "ExtraBold"), _font("ExtraBold", 40),
+              (255, 255, 255, 250))]
+    return _rgba(_text_layer(lines, pad=14, box=(10, 10, 14, 190), accent=accent))
+
+
+def sources_line(short: Short) -> str:
+    """Where the facts come from, said on screen: the outlets whose reports back them, then Wikipedia."""
+    names = list(dict.fromkeys((r.get("outlet_hi") or r.get("outlet")) for r in short.scene.get("reporting") or []
+                               if r.get("outlet") or r.get("outlet_hi")))[:3]
+    if any("wikipedia.org" in s for s in short.sources):
+        names.append("Wikipedia")
+    return "स्रोत: " + " · ".join(names) if names else ""
+
+
+def _sources_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
+    text = drawable(text, "SemiBold")
+    font = _fit("SemiBold", 38, text, W - 160)
+    return _rgba(_text_layer([(text, font, (255, 255, 255, 240))], pad=14, box=(10, 10, 14, 175)))
+
+
+PROGRESS_H = 9
+
+
+def _progress(frame: np.ndarray, u: float, accent: tuple) -> None:
+    """A thin bar along the top edge that fills as the Short plays."""
+    frame[:PROGRESS_H] = (frame[:PROGRESS_H].astype(np.float32) * 0.45).astype(np.uint8)
+    frame[:PROGRESS_H, :max(1, round(W * min(max(u, 0.0), 1.0)))] = accent
+
+
 def _chip_layer(text: str, accent: tuple) -> tuple[np.ndarray, np.ndarray]:
     font = _fit("ExtraBold", 50, text, W - 220)
     return _rgba(_text_layer([(text, font, (255, 255, 255, 255))], pad=22, box=(10, 10, 14, 175), accent=accent))
@@ -364,7 +432,11 @@ def render(short: Short, timing: dict, work: Path) -> dict:
         sub = f"{years['born']} – {years['died']}" if len(years) == 2 else ""
     else:
         sub = shots[0]["beat"].card.get("big", "") if shots[0]["beat"].card else ""
-    hook = _hook_layer(name, sub, accent)
+    # An explainer's hook is its own question, which already names its centre.
+    hook = _question_layer(short.title, accent) if short.kind == "explainer" else _hook_layer(name, sub, accent)
+    strip = _strip_layer(label_for(short), accent)
+    said = sources_line(short)
+    sources = _sources_layer(said) if said else None
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
     end = _end_layers(accent, disclosure(photos))
     badge = _badge_layer()
@@ -398,6 +470,9 @@ def render(short: Short, timing: dict, work: Path) -> dict:
         if k == 0:
             # Fully visible from the first frame: YouTube may use it as the cover.
             _blit(frame, hook, (W - hook[1].shape[1]) // 2, round(H * 0.085))
+            if sources is not None:
+                _blit(frame, sources, (W - sources[1].shape[1]) // 2,
+                      round(H * 0.085) + hook[1].shape[0] + 26, min(1.0, t / 0.3))
         elif chips[k] is not None:
             a = min(1.0, (t - shot["start"]) / 0.25)
             _blit(frame, chips[k], 48, round(H * 0.095), a)
@@ -412,6 +487,9 @@ def render(short: Short, timing: dict, work: Path) -> dict:
             cr = credits[shot["photo"]]
             _blit(frame, cr, 36, round(H * 0.785), 0.9)
         _blit(frame, badge, 36, round(H * 0.732), 0.97)
+        if strip is not None and not shot["outro"]:
+            _blit(frame, strip, 36, round(H * 0.022), 0.96)
+        _progress(frame, t / duration, accent)
         captions.draw(frame, t)
         enc.stdin.write(frame.tobytes())
         if i in still_at:

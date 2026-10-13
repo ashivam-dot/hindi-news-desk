@@ -18,6 +18,10 @@ on:
         description: "Narrate with Chatterbox's built-in preview voice (dry runs and event only; never publishable)"
         type: boolean
         default: false
+      explainers:
+        description: "Turn the India explainer lane (kh- ids) on for this dry run, whatever DESK_EXPLAINERS says"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -50,6 +54,7 @@ jobs:
       DESK_CHANNEL_NAME_HI: ${{ vars.DESK_CHANNEL_NAME_HI }}
       DESK_CHANNEL_HANDLE: ${{ vars.DESK_CHANNEL_HANDLE }}
       DESK_NEW_STORIES: ${{ vars.DESK_NEW_STORIES }}
+      DESK_EXPLAINERS: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry && inputs.explainers) && 'true' || vars.DESK_EXPLAINERS }}
     steps:
       - name: Refuse to publish while paused
         run: |

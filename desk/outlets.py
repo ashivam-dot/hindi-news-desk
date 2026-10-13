@@ -73,6 +73,38 @@ OUTLETS = [
      "geo": None, "feed": "https://feeds.feedburner.com/ndtvnews-top-stories"},
     {"key": "ndtv-hi", "name": "NDTV India", "name_hi": "एनडीटीवी इंडिया", "owner": "NDTV", "group": "Hindi",
      "lang": "hi", "geo": None, "feed": "https://feeds.feedburner.com/ndtvkhabar-latest"},
+    # Added 2026-10-13 for the India explainer lane (desk/explain.py): feed readable and article text extracted.
+    {"key": "indianexpress", "name": "The Indian Express", "name_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group", "group": "Indian national", "lang": "en", "geo": "IN",
+     "feed": "https://indianexpress.com/section/india/feed/"},
+    {"key": "ie-business", "name": "The Indian Express", "name_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group", "group": "Indian national", "lang": "en", "geo": None,
+     "feed": "https://indianexpress.com/section/business/feed/"},
+    {"key": "news18", "name": "News18", "name_hi": "न्यूज़18", "owner": "Network18", "group": "Indian national",
+     "lang": "en", "geo": "IN", "feed": "https://www.news18.com/rss/india.xml"},
+    {"key": "indiatoday", "name": "India Today", "name_hi": "इंडिया टुडे", "owner": "India Today Group",
+     "group": "Indian national", "lang": "en", "geo": None, "feed": "https://www.indiatoday.in/rss/home"},
+    {"key": "mint", "name": "Mint", "name_hi": "मिंट", "owner": "HT Media", "group": "Indian national", "lang": "en",
+     "geo": None, "feed": "https://www.livemint.com/rss/news"},
+    {"key": "mint-economy", "name": "Mint", "name_hi": "मिंट", "owner": "HT Media", "group": "Indian national",
+     "lang": "en", "geo": None, "feed": "https://www.livemint.com/rss/economy"},
+    {"key": "et", "name": "The Economic Times", "name_hi": "द इकोनॉमिक टाइम्स", "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national", "lang": "en", "geo": None,
+     "feed": "https://economictimes.indiatimes.com/rssfeedstopstories.cms"},
+    {"key": "thehindu-business", "name": "The Hindu", "name_hi": "द हिंदू", "owner": "The Hindu Group",
+     "group": "Indian national", "lang": "en", "geo": None,
+     "feed": "https://www.thehindu.com/business/feeder/default.rss"},
+    {"key": "thehindu-scitech", "name": "The Hindu", "name_hi": "द हिंदू", "owner": "The Hindu Group",
+     "group": "Indian national", "lang": "en", "geo": None,
+     "feed": "https://www.thehindu.com/sci-tech/feeder/default.rss"},
+    {"key": "bhaskar", "name": "Dainik Bhaskar", "name_hi": "दैनिक भास्कर", "owner": "DB Corp", "group": "Hindi",
+     "lang": "hi", "geo": None, "feed": "https://www.bhaskar.com/rss-v1--category-1061.xml"},
+    {"key": "news18-hi", "name": "News18 Hindi", "name_hi": "न्यूज़18 हिंदी", "owner": "Network18", "group": "Hindi",
+     "lang": "hi", "geo": "IN", "feed": "https://hindi.news18.com/rss/khabar/nation/nation.xml"},
+    {"key": "zee-hi", "name": "Zee News", "name_hi": "ज़ी न्यूज़", "owner": "Zee Media", "group": "Hindi", "lang": "hi",
+     "geo": "IN", "feed": "https://zeenews.india.com/hindi/india.xml"},
+    {"key": "tv9-hi", "name": "TV9 Bharatvarsh", "name_hi": "टीवी9 भारतवर्ष", "owner": "TV9 Network", "group": "Hindi",
+     "lang": "hi", "geo": None, "feed": "https://www.tv9hindi.com/feed"},
 ]
 MAX_AGE_H = 36
 # PIB answers 403 to a bot User-Agent, and serves the Hindi feed to any request without &reg=. NDTV and France 24
@@ -262,19 +294,56 @@ def _rank(item: dict) -> tuple:
             -datetime.fromisoformat(item["at"]).timestamp())
 
 
+# Indian newsrooms print news-agency copy word for word: two outlets running one PTI story are one source, not two.
+WIRE = re.compile(r"\((PTI|ANI|IANS|UNI|Reuters|AFP|AP|Bloomberg)\)|\b(?:with inputs from|inputs from|source:?)\s+"
+                  r"(PTI|ANI|IANS|UNI|Reuters|AFP|AP|agencies)\b|^\s*(?:[A-Z][A-Za-z ,.]{2,40}[:,]\s*)?"
+                  r"(PTI|ANI|IANS|UNI)\b|\((भाषा|एजेंसी|पीटीआई|एएनआई|आईएएनएस|वार्ता)\)|"
+                  r"(?:इनपुट|इनपुट्स)[:\s-]+(भाषा|एजेंसी|पीटीआई|एएनआई|आईएएनएस)", re.I | re.M)
+SAME_TEXT = 0.5  # share of one article's sentences found word for word in another: the same copy
+
+
+def wire(body: str) -> str | None:
+    """The news agency an article's text credits (its dateline or an "inputs from" line), or None."""
+    for m in WIRE.finditer(body[:600] + "\n" + body[-400:]):
+        got = next(g for g in m.groups() if g)
+        got = {"भाषा": "PTI", "पीटीआई": "PTI", "एएनआई": "ANI", "आईएएनएस": "IANS", "वार्ता": "UNI",
+               "एजेंसी": "agencies"}.get(got, got)
+        return "agencies" if got.lower() == "agencies" else got.upper() if len(got) <= 4 else got.title()
+    return None
+
+
+def _same_copy(a: str, b: str) -> bool:
+    sa, sb = {s.lower() for s in _sentences(a) if len(s) > 60}, {s.lower() for s in _sentences(b) if len(s) > 60}
+    return bool(sa and sb) and len(sa & sb) >= SAME_TEXT * min(len(sa), len(sb))
+
+
 def reporting(items: list[dict], limit: int = REPORTS) -> list[dict]:
     """Up to `limit` readable articles about the story, each from a different owner (official, public broadcaster
-    and international outlets first, then the newest), with their text. Fewer than two owners give nothing to
+    and international outlets first, then the newest), with their text. An article that credits a news agency
+    counts as that agency's ("PTI via Mint"), and one whose sentences repeat an article already picked counts as that
+    article's owner, so syndicated copy never passes for independent reporting. Fewer than two owners give nothing to
     corroborate, so then the list is empty."""
     picked, have = [], set()
     for item in sorted(items, key=_rank):
         if item["owner"] in have or len(picked) >= limit:
             continue
         body = text(item["url"])
-        if body:
-            picked.append(compact(item) | {"text": body})
-            have.add(item["owner"])
-    return picked if len(have) >= 2 else []
+        if not body:
+            continue
+        agency = wire(body)
+        owner = f"{agency} (news agency)" if agency else item["owner"]
+        twin = next((p for p in picked if _same_copy(body, p["text"])), None)
+        if twin:
+            owner = twin["owner"]
+        if owner in have:
+            continue
+        row = compact(item) | {"text": body}
+        if owner != item["owner"]:
+            row |= {"owner": owner, "publisher": item["owner"]}
+        picked.append(row)
+        have.update({owner, item["owner"]})
+    owners_ = {p["owner"] for p in picked}
+    return picked if len(owners_) >= 2 else []
 
 
 def _sentences(body: str) -> list[str]:

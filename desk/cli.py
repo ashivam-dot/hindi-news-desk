@@ -124,7 +124,8 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
                            "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
                            "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
                            "category": short.scene.get("category"), "region": short.scene.get("region"),
-                           "article": short.scene.get("article"), "report_urls": report_urls(short),
+                           "article": short.scene.get("article"), "qid": short.scene.get("qid"),
+                           "report_urls": report_urls(short),
                            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
                            **result})
     return result

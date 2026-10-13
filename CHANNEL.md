@@ -30,6 +30,35 @@ two lead headlines, an India story when listed under an India topic; see `desk/n
 
 Sport, celebrity gossip, election results and crime trials are out of scope even when they trend.
 
+**India explainers (2026-10-13; owner: "active most with high rated topics, most popular topics, trending topics";
+"each and everything should be based on full real authorised facts").** `desk/explain.py` adds the day's biggest
+Indian stories that are not incidents or deaths: politics, policy, the economy, diplomacy, defence, the courts'
+public rulings, science and the weather (`kh-<IST yyyymmdd>-<centre's QID>`). One qualifies when at least 3
+independent owners' English headlines within 24 hours tell the same story (grouped only when most of its headlines
+match, never by an institution or a big place alone), its centre (the person or institution most headlines name, by
+full name) has a Wikipedia article and Wikidata item, and it is about India. Elections and campaigns, sport,
+entertainment, gossip, crime, arrests, raids, bail and trials, communal violence, deaths and attacks, protests (their
+own lane), market tips, roundups, opinion and live blogs never qualify; nor do dead people, people convicted of crimes,
+disambiguation pages or whole countries as a centre. Fame is one lead headline per independent owner (English and
+Hindi outlets, at most 8) plus Google News India lead stories naming the centre (at most 8); an explainer never takes
+the breaking lane, halves every 14 h, and one centre is explained at most once in 20 h. What happened and why comes
+only from at least two independent owners' articles (the writer's checks and the gate, as for every Short); a
+headline is context, never a source; the centre's Wikipedia article is background only. Sentences about deaths,
+injuries, suicide, suspects and arrests are removed from the articles. The Short is strictly neutral: every claim,
+allegation and reason attributed to whoever made it, each side as reported, no motives guessed, no predictions, no
+financial, legal or medical advice; when no report gives a reason it says so. Its title may ask the story's own
+question ("... ने इस्तीफ़ा क्यों दिया?"). Photos are the centre's own Commons photos (a person's face-matched portraits).
+A centre must be the subject of its article: a search for "<name> of India" counts only when the title is exactly
+that (or "<name> (India)"), or the name is the article's acronym (UPI, RBI); never "Greece–India relations" for a
+story about Greece.
+
+**Independent owners, across every lane (2026-10-13).** Wire copy is one owner, whoever prints it: an article
+crediting PTI, ANI, IANS, UNI, Reuters, AFP or AP (or भाषा) counts as that agency, and two articles whose text is
+mostly the same count once (`desk/outlets.py`, `wire`). Photo descriptions are never given to the writer as facts.
+The lane is behind the repository variable `DESK_EXPLAINERS=true`; with it off the radar still finds and records
+explainers (`explainers` in `state/candidates.json` and a note per run), and a manual dry run can turn it on for that
+run only (`explainers` input).
+
 **Fresh articles (2026-10-11; owner: "its a news channel it should be active most").** A brand-new event article often
 has no Wikidata item for its first day, exactly while the story is hottest. It still qualifies when its English title
 names this or last year and an incident or protest shape, the way Wikipedia titles events ("2026 Erie shooting",
@@ -53,9 +82,12 @@ disaster's own article (`desk/gdacs.py`; worth 50k or 150k fame), and Google New
 as well").** `desk/outlets.py` keeps an allowlist of trusted outlets with public RSS feeds: official (PIB in English
 and Hindi, UN News Hindi), public broadcasters (BBC World, BBC India, BBC Hindi, DW, NPR, France 24), international
 (Al Jazeera, The Guardian), Indian national (The Hindu, Hindustan Times, Times of India, NDTV) and Hindi (Live
-Hindustan, Amar Ujala, AajTak, ABP Live, NDTV India). Each outlet has an `owner`; sister brands count once (HT Media
-is Hindustan Times and Live Hindustan, the BBC is all three BBC feeds, the Government of India both PIB feeds, NDTV
-both NDTV feeds). PIB, NDTV and France 24 get a browser's request headers (they refuse others with 403); a headless
+Hindustan, Amar Ujala, AajTak, ABP Live, NDTV India). Added 2026-10-13 for the explainers (feed read and article
+text extracted): The Indian Express (India, business), News18, India Today, Mint (news, economy), The Economic Times,
+The Hindu (business, sci-tech), Dainik Bhaskar, News18 Hindi, Zee News and TV9 Bharatvarsh. Each outlet has an
+`owner`; sister brands count once (HT Media is Hindustan Times, Live Hindustan and Mint, the BBC is all three BBC
+feeds, the Government of India both PIB feeds, NDTV both NDTV feeds, Bennett, Coleman & Co. the Times of India and
+The Economic Times, Network18 both News18 feeds, the India Today Group AajTak and India Today). PIB, NDTV and France 24 get a browser's request headers (they refuse others with 403); a headless
 browser (Crawl4AI) was benchmarked on 2026-10-13 and read nothing more, with noisier text. Feeds are read in parallel once a
 run (36 hours back); a feed that fails is listed in the run's errors and the rest still count. Articles are read
 with trafilatura (20 s timeout, at most 12 a run, cached). Outlet photos are never used. Plain-http links are read
@@ -152,6 +184,13 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 - **Story, not a résumé:** a hook that says plainly what happened; then where they began, the turning point, the work
   people loved (named, with years on screen), a human detail, and what they leave behind. On-screen chips name works,
   roles, honours or years, never places.
+- **Engaging and visibly sourced (owner, 2026-10-13: "more attractive news ... 100% engaging ... real facts").**
+  Every frame carries the channel strip (`क्यों हुआ · राजनीति`, the story's kind or explainer category) and a thin
+  progress bar along the top edge; the opening shot names where the facts come from (`स्रोत: बीबीसी · द हिंदू ·
+  Wikipedia`); an explainer's question title is its two-line hook. The script's first five words carry the news (a
+  decision, a number, a first, a reversal; never a date or a slow introduction), every beat adds one new sourced
+  fact, chips carry the beat's key fact (a number with its unit, a decision), and the last beat closes what the
+  hook opened. Engagement never comes from hype: the banned-wording list and every fact check still apply.
 - **Hindi on screen:** Devanagari is shaped with HarfBuzz (Pillow's RAQM layout) in Mukta (OFL, bundled). Rendering
   refuses to run without RAQM, because basic layout breaks conjuncts and vowel signs. Captions appear word by word on
   Whisper's timings and always show the script's own words.

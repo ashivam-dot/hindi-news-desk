@@ -71,7 +71,7 @@ def decorum(text: str, kind: str, agreed_toll: bool) -> list[str]:
         problems.append(f"banned wording {word!r}")
     if EMOJI.search(text):
         problems.append("emoji")
-    if kind == "incident" and not agreed_toll:
+    if kind in ("incident", "explainer") and not agreed_toll:
         word = found(text, CASUALTY)
         if word:
             problems.append(f"casualties without an agreed toll ({word})")

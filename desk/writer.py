@@ -21,7 +21,7 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, wiki
+from . import config, explain, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, wiki
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -97,6 +97,24 @@ person, party, community or religion, and use no loaded words. Attribute every d
 arrest or crowd figure to whoever reported it ("पुलिस के मुताबिक", "आयोजकों के अनुसार"). Never urge anyone to join or
 avoid a protest. Never mention suicide."""
 
+EXPLAINER_BRIEF = """STORY: {name}, in today's news: the story the first of TODAY'S LEAD HEADLINES points at (a
+headline only shows which story; its words are not a source). Write a Hindi "क्यों हुआ" explainer Short: a viewer who
+saw only the headline understands, in 45 seconds, what happened, why, and what it means.
+
+Shape:
+1. Hook (beat 1, under 14 words): name {name} and either the newest, most striking reported fact, or the story's own
+   question with "क्यों" ("... ने इस्तीफ़ा क्यों दिया?"). The next beats answer it.
+2. What exactly happened, and when, in order (from REPORTING).
+3. Why: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना है",
+   "रिपोर्टों के अनुसार"). If no report gives a reason, say plainly that no official reason has been given.
+4. Background the viewer needs: who {name} is or what it does (from the SOURCE).
+5. The other side or the reaction, attributed, when REPORTING has it.
+6. What happens next, or what is still unclear, said honestly. The last beat answers the hook in one short sentence.
+Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
+words, and attribute every claim, allegation and criticism to whoever made it. Never guess at motives, never predict,
+never give financial, legal or medical advice. Never mention suicide, and never write "जानें" (it reads as "lives
+lost"). The title may be the story's own question (ending in "?"), never a teaser that hides the news."""
+
 RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
   or relationship that is not written there. If you are unsure, leave it out.
@@ -106,17 +124,23 @@ RULES = """RULES (all mandatory):
 - Every beat must carry a specific fact from the SOURCES (a work, a year, an honour, a choice they made); feeling
   comes from how you tell those facts, not from vague praise.
 - Tell it as a story, not a list: vary how beats open, and never start more than 2 beats with the same word.
+- Hook: beat 1 must make a scrolling viewer stop within its first 5 words: open on the most striking fact in the
+  SOURCES (a decision, a number, a first, a reversal), never on a date, a greeting or a slow introduction.
+- Keep them watching: every beat adds one new fact and leads into the next; no recap, no filler, no empty lines such
+  as "यह खबर चर्चा में है". The last beat closes what the hook opened.
 - Write every number as digits: years (1994), ages (75), dates ("10 अक्टूबर 2026"), and big numbers with लाख or
   करोड़ ("3 लाख", "1.5 करोड़"). A number must be exactly what the SOURCES say (a million is 10 लाख).
-- No hype or clickbait (सनसनीखेज, चौंकाने वाला, खौफनाक, ब्रेकिंग, बड़ी खबर), no emoji, no questions to the viewer, no
-  request to like, share, subscribe or follow.
+- No hype or clickbait (सनसनीखेज, चौंकाने वाला, खौफनाक, ब्रेकिंग, बड़ी खबर), no emoji, no questions put to the viewer
+  (an explainer's hook may ask the story's own "क्यों" question, which the Short then answers), no request to like,
+  share, subscribe or follow.
 - names: list EVERY proper noun you used (people, places, organisations, works, events, awards) as
   {{"hi": the name exactly as written in your Hindi text, "en": the same name exactly as the English SOURCE writes
   it}}. Where HINDI NAMES gives a Hindi spelling, use that spelling.
 - photo: the index of the PHOTO that best fits the beat. Beat 1 uses photo {best}. Use every photo at least once if
   you can, and the same photo at most twice.
-- caption: 1 to 4 Hindi words shown on screen that match what the beat says: the work it names with its year, a
-  role, an honour, or a year. Never a place name: viewers read a place over a photo as where the photo was taken.
+- caption: 1 to 4 Hindi words shown on screen that carry the beat's key fact: a number with its unit, a decision, the
+  work it names with its year, a role, an honour, or a year. Never a place name: viewers read a place over a photo
+  as where the photo was taken.
 - title: Hindi, 25 to 70 characters, factual and moving, includes {name_hi}, no clickbait, no capitals for effect.
 Return only the JSON."""
 
@@ -344,7 +368,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
-    brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF}.get(kind, INCIDENT_BRIEF)
+    brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF, "explainer": EXPLAINER_BRIEF}.get(kind, INCIDENT_BRIEF)
     brief = brief.format(name=subject["en"], pronoun=pronoun.lower(), object=obj)
     if angle:
         brief += (f"\n\nANGLE ({orbitwire.ANGLES[angle]['label']}): the channel's English sister channel already told "
@@ -356,7 +380,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
                else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports)
-    ground_en = source_en + "\n" + "\n".join(facts) + "\n" + "\n".join(p["description"] for p in photos)
+    # A Commons description is anyone's caption, not a source: the script's facts come from the sources alone.
+    ground_en = source_en + "\n" + "\n".join(facts)
     ground_hi = source_hi + "\n" + "\n".join(facts) + "\n" + "\n".join(hi_names.values())
     log = []
     own = pen is None
@@ -801,6 +826,8 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
 
 
 REPORT_CREDIT = "तथ्य: विश्वसनीय समाचार संस्थानों की रिपोर्टें; तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
+EXPLAIN_CREDIT = ("तथ्य: विश्वसनीय समाचार संस्थानों की रिपोर्टें, Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); "
+                  "तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
 
 
 def story_place(name: str) -> tuple[str | None, dict]:
@@ -874,7 +901,75 @@ def build_report(cand: dict) -> Short:
     return short
 
 
+EXPLAIN_SOURCE = 3500  # characters of the centre's Wikipedia article: background, never the news itself
+
+
+def build_explainer(cand: dict) -> Short:
+    """A kh- story (desk/explain.py): today's Indian story about one person or institution, told as a neutral "क्यों
+    हुआ" explainer. What happened comes only from at least two independent owners' articles; Wikipedia gives the
+    background; the photos are Commons photos of the centre (a person's own face-matched portraits)."""
+    sid, cat, qid = cand["id"], cand["category"], cand["qid"]
+    if not config.EXPLAINERS:
+        raise ValueError("gate: India explainers are off (DESK_EXPLAINERS)")
+    title = cand["title"]
+    ent = wiki.entities([qid])[qid]
+    person = bool(cand.get("person"))
+    name = stories.plain_title(wiki.label(ent) or title)
+    name_hi = wiki.label(ent, "hi")
+    phrase = cand.get("phrase") or name
+    work = WORK / sid
+    mine = [r for r in cand.get("reports") or [] if explain.about_story(r, phrase, cand.get("story_keys") or [])]
+    reports = _reporting(cand | {"reports": mine}, phrase, hi=name_hi, person=person, search=False)
+    if len(outlets.owners(reports)) < gate.OWNERS_NEEDED:
+        raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles about {name} could "
+                         "be read")
+    named = sorted(set(gate.reported(phrase, reports)) | set(gate.reported(name, reports)))
+    if len(named) < gate.OWNERS_NEEDED:
+        raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles name {name}")
+    context = person_context(ent) if person else incident_context(ent, [])
+    ov, exclude = _shared(cand, title, ent, None, context)
+    photos = pick_photos(title, ent, work / "photos", person=person, exclude=exclude, places=not person,
+                         context_qids=context)
+    if len(photos) < MIN_PHOTOS:
+        raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
+                         + (" not used by Orbitwire" if ov else ""))
+    story = cand.get("story") or (cand.get("headlines") or [title])[0]
+    words = [phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])
+    reports = clean_reports(reports, words, perpetrators=True)
+    source = _strip(wiki.article_text(title, limit=EXPLAIN_SOURCE, per_section=900), SUICIDE_WORDS)
+    source_hi, hi_title = _hindi_source(ent, limit=2500)
+    source_hi = _strip(source_hi, SUICIDE_WORDS)
+    # A headline is context, never a source (one outlet's words): it goes to the writer only as a lead headline.
+    facts_text = [f"Centre of the story: {name}" + (f" ({name_hi})" if name_hi else "") + ".",
+                  "What happened, and why, may come only from the REPORTING; the Wikipedia SOURCE is background on "
+                  f"{name} and is never today's news."]
+    she, _ = stories._pronouns(ent) if person else ("It", None)
+    subject = {"en": name, "hi": name_hi, "person": person}
+    when = date.fromisoformat(cand["date"])
+    draft, log, used = write("explainer", subject, she, facts_text, source, source_hi, photos, wiki.hindi_names(ent),
+                             log_path=work / "writer_log.json",
+                             headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
+                             angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports)
+    name_hi = name_hi or _pair_for(draft, name) or name
+    page = wiki.url(title)
+    facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
+                  + ", ".join(named), owners=named)]
+    sources = [page, f"https://www.wikidata.org/wiki/{qid}"] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi
+                                                                 else [])
+    label = cand.get("category_hi") or cat
+    short = _short(sid, "explainer", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
+                   photos, sources, when.isoformat(), loss=False, mood="news", region=cand.get("region", "india"),
+                   tags=[name, name_hi, label, cat, "क्यों हुआ", "हिंदी समाचार", "hindi news", "india news"],
+                   summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
+                           "Wikipedia से।",
+                   hashtags=[name_hi, label, "हिंदीसमाचार"], ov=ov, reports=reports, credit=EXPLAIN_CREDIT)
+    short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story)
+    return short
+
+
 def build(cand: dict) -> Short:
+    if (cand.get("id") or "").startswith("kh-"):
+        return build_explainer(cand)
     if (cand.get("id") or "").startswith("nw-"):
         return build_report(cand)
     return build_death(cand) if cand["kind"] == "death" else build_incident(cand)

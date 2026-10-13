@@ -12,7 +12,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 
-from . import config, net, news, outlets, wiki
+from . import config, explain, net, news, outlets, wiki
 
 GEOS = ("IN", "US", "GB")
 INDIA = "Q668"
@@ -393,9 +393,20 @@ def radar(today: date | None = None) -> dict:
         errors.append(f"outlet stories: {type(exc).__name__}: {exc}"[:200])
     if config.NEW_STORIES:
         out += emerging
+    try:
+        told = {c["qid"] for c in out if c.get("qid")}
+        urls = {r["url"] for c in out for r in c.get("reports") or []}
+        explainers, notes = explain.find(read, datetime.now(timezone.utc), skip_qids=told)
+        explainers = [c for c in explainers if not urls & {r["url"] for r in c["reports"]}]
+    except Exception as exc:
+        explainers, notes = [], []
+        errors.append(f"explainers: {type(exc).__name__}: {exc}"[:200])
+    if config.EXPLAINERS:
+        out += explainers
     out.sort(key=lambda c: -c["fame"])
     return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "candidates": out, "errors": errors,
-            "scanned": len(hits), "emerging": emerging, "outlets": outlet_stats(read, out)}
+            "scanned": len(hits), "emerging": emerging, "explainers": explainers, "explainer_notes": notes[:8],
+            "outlets": outlet_stats(read, out)}
 
 
 def outlet_stats(read: list[dict], cands: list[dict]) -> dict:
