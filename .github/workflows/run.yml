@@ -19,7 +19,7 @@ on:
         type: boolean
         default: false
       explainers:
-        description: "Turn the India explainer lane (kh- ids) on for this dry run, whatever DESK_EXPLAINERS says"
+        description: "Dry run of India explainers only (kh- ids), whatever DESK_EXPLAINERS says"
         type: boolean
         default: false
 
@@ -55,6 +55,7 @@ jobs:
       DESK_CHANNEL_HANDLE: ${{ vars.DESK_CHANNEL_HANDLE }}
       DESK_NEW_STORIES: ${{ vars.DESK_NEW_STORIES }}
       DESK_EXPLAINERS: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry && inputs.explainers) && 'true' || vars.DESK_EXPLAINERS }}
+      DESK_DRY_KIND: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry && inputs.explainers) && 'explainer' || '' }}
     steps:
       - name: Refuse to publish while paused
         run: |

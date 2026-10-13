@@ -191,6 +191,9 @@ def run(dry: bool = False, preview: bool = False) -> dict:
         health["steps"] += held[:6]
         if dry and not ready:
             ready = [c for c in found["candidates"] if not c.get("orbitwire")] or found["candidates"]
+        if dry and config.DRY_KIND:
+            ready = [c for c in found["candidates"] if c.get("kind") == config.DRY_KIND]
+            health["steps"].append(f"dry run: only {config.DRY_KIND} candidates ({len(ready)})")
         if not ready:
             return health
         recent_loss = [r.get("loss", False) for r in ledger.published()]

@@ -29,6 +29,8 @@ ORBITWIRE_STATE = f"https://raw.githubusercontent.com/{ORBITWIRE_REPO}/state"
 NEW_STORIES = os.environ.get("DESK_NEW_STORIES", "").lower() == "true"
 # India explainers (desk/explain.py, kh- ids) are found and recorded every run; DESK_EXPLAINERS=true lets them run.
 EXPLAINERS = os.environ.get("DESK_EXPLAINERS", "").lower() == "true"
+# A dry run that tries only one kind of candidate ("explainer"); ignored by runs that can publish.
+DRY_KIND = os.environ.get("DESK_DRY_KIND") or None
 
 CHANNEL_ID_FORMAT = re.compile(r"^UC[0-9A-Za-z_-]{22}$")
 
