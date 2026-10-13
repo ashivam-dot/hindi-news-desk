@@ -1,13 +1,14 @@
 # What this channel's own numbers say
 
-Updated 2026-10-13T08:59:13+00:00. Scored Shorts (views at 24 h): 10. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-13T12:35:49+00:00. Scored Shorts (views at 24 h): 10. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 37 views at 24 h.
 - region:world: x0.789 ranking lift (5 Shorts, typical 24 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| wk-Q2118568 | 2026-10-13T01:43 | death | world | 103 |  |
+| wk-Q141712628 | 2026-10-13T10:26 | attack | world | 0 |  |
+| wk-Q2118568 | 2026-10-13T01:43 | death | world | 119 |  |
 | wk-Q141695384 | 2026-10-12T02:01 | conflict | world | 3 | 3 |
 | wk-Q141679225 | 2026-10-11T11:18 | disaster | world | 8 | 7 |
 | wk-Q141680327 | 2026-10-11T10:10 | cyclone | world | 112 | 100 |

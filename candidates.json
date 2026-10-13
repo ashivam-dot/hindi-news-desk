@@ -1,29 +1,75 @@
 {
- "at": "2026-10-13T11:57:33+00:00",
+ "at": "2026-10-13T12:35:51+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi airports",
-   "fame": 220703,
+   "fame": 295703,
    "views": 45703,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-13T04:30:09+00:00",
+   "news": 200000,
+   "news_at": "2026-10-13T12:12:54+00:00",
    "headlines": [
-    "Saudi minister vows 'serious response' to Houthi attacks on airports"
+    "Saudi minister vows 'serious response' to Houthi attacks on airports",
+    "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
+    "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
-    "US"
+    "IN",
+    "US",
+    "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
     "wikipedia-top-2026-10-12",
     "wikipedia-current-events-2026-10-12",
-    "google-news:Saudi minister vows 'serious response' to Houthi attacks on airports"
+    "google-news:Saudi minister vows 'serious response' to Houthi attacks on airports",
+    "google-news:Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
+    "google-news:Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
+    "outlet:HT Media",
+    "outlet:BBC",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "HT Media",
+    "BBC",
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
+     "url": "https://www.hindustantimes.com/india-news/indians-in-emergency-willing-to-leave-saudi-arabia-can-travel-from-neighbouring-countries-embassy-bahrain-qatar-101791891459792.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-13T12:12:54+00:00"
+    },
+    {
+     "title": "Saudi minister vows 'serious response' to Houthi attacks on airports",
+     "url": "https://www.bbc.co.uk/news/articles/cjly0zqq27e4o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-13T04:30:09+00:00"
+    },
+    {
+     "title": "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport",
+     "url": "https://www.theguardian.com/world/2026/oct/12/saudi-arabia-suspends-flights-latest-deadly-houthi-attack-airport",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-12T15:42:37+00:00"
+    }
    ],
    "id": "wk-Q141695384",
    "kind": "incident",
@@ -35,30 +81,109 @@
   {
    "qid": "Q141712917",
    "title": "Hurricane Rachel (2026)",
-   "fame": 133756,
+   "fame": 158756,
    "views": 8756,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-12T23:12:50+00:00",
+   "news": 150000,
+   "news_at": "2026-10-13T09:16:00+00:00",
    "headlines": [
-    "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast"
+    "Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US"
+    "US",
+    "world"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-12",
-    "google-news:Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast"
+    "google-news:Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast",
+     "url": "https://www.theguardian.com/world/2026/oct/13/mexico-hurricane-simon-tropical-storm-rachel-kill-five-pacific-coast",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-13T04:29:46+00:00"
+    }
    ],
    "id": "wk-Q141712917",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-09-27",
+   "coords": null,
+   "has_coords": false
+  },
+  {
+   "qid": "Q141605182",
+   "title": "Flydubai Flight 1073",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-13T11:43:44+00:00",
+   "headlines": [
+    "Flydubai Case Takes New Turn As 2 More Pilots Arrested In UAE"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "फ़्लाईदुबई उड़ान १०७३",
+   "via": [
+    "google-news:Flydubai Case Takes New Turn As 2 More Pilots Arrested In UAE"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141605182",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-09-30",
+   "coords": null,
+   "has_coords": true
+  },
+  {
+   "qid": "Q141544931",
+   "title": "2026 Ethiopian offensive",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-12T18:01:58+00:00",
+   "headlines": [
+    "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Ethiopian forces enter strategic Tigray town of Adwa, witnesses say"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141544931",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-09-23",
    "coords": null,
    "has_coords": false
   },
@@ -80,10 +205,54 @@
    "via": [
     "wikipedia-top-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q1355840",
    "kind": "death",
    "category": "death",
    "date": "2026-10-09"
+  },
+  {
+   "qid": "Q2475741",
+   "title": "Nana Patekar",
+   "fame": 56329,
+   "views": 31329,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-12T14:37:50+00:00",
+   "headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "नाना पाटेकर",
+   "via": [
+    "wikipedia-top-2026-10-12",
+    "google-news:नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह",
+     "url": "https://www.aajtak.in/health/story/nana-patekar-death-heart-attack-cardiac-arrest-postmortem-report-confirmation-tvisa-dskc-2668788-2026-10-12?utm_source=rssfeed",
+     "outlet": "AajTak",
+     "outlet_hi": "आजतक",
+     "owner": "India Today Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-12T14:37:50+00:00"
+    }
+   ],
+   "id": "wk-Q2475741",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08"
   },
   {
    "qid": "Q141681530",
@@ -103,6 +272,8 @@
    "via": [
     "gdacs-EQ-1570339:Orange"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q141681530",
    "kind": "incident",
    "category": "earthquake",
@@ -134,6 +305,8 @@
    "via": [
     "wikipedia-current-events-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q141712628",
    "kind": "incident",
    "category": "attack",
@@ -159,62 +332,12 @@
    "via": [
     "wikipedia-top-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q5300674",
    "kind": "death",
    "category": "death",
    "date": "2026-10-11"
-  },
-  {
-   "qid": "Q2475741",
-   "title": "Nana Patekar",
-   "fame": 31329,
-   "views": 31329,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "नाना पाटेकर",
-   "via": [
-    "wikipedia-top-2026-10-12"
-   ],
-   "id": "wk-Q2475741",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-08"
-  },
-  {
-   "qid": "Q141544931",
-   "title": "2026 Ethiopian offensive",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-12T18:01:58+00:00",
-   "headlines": [
-    "Ethiopian forces enter strategic Tigray town of Adwa, witnesses say"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Ethiopian forces enter strategic Tigray town of Adwa, witnesses say"
-   ],
-   "id": "wk-Q141544931",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-09-23",
-   "coords": null,
-   "has_coords": false
   },
   {
    "qid": "Q141670823",
@@ -234,6 +357,8 @@
    "via": [
     "wikipedia-top-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q141670823",
    "kind": "incident",
    "category": "cyclone",
@@ -259,6 +384,8 @@
    "via": [
     "wikipedia-top-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q13119635",
    "kind": "death",
    "category": "death",
@@ -282,6 +409,8 @@
    "via": [
     "wikipedia-top-2026-10-12"
    ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q228928",
    "kind": "death",
    "category": "death",
@@ -290,45 +419,41 @@
  ],
  "candidates": [
   {
-   "qid": "Q5300674",
-   "title": "Doug Loft",
-   "fame": 32602,
-   "views": 32602,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-12"
-   ],
-   "id": "wk-Q5300674",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-11"
-  },
-  {
    "qid": "Q2475741",
    "title": "Nana Patekar",
-   "fame": 31329,
+   "fame": 56329,
    "views": 31329,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
+   "news": 25000,
+   "news_at": "2026-10-12T14:37:50+00:00",
    "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह"
+   ],
    "region": "india",
    "india_link": true,
    "geos": [],
    "label_hi": "नाना पाटेकर",
    "via": [
-    "wikipedia-top-2026-10-12"
+    "wikipedia-top-2026-10-12",
+    "google-news:नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "नाना पाटेकर की मौत पर सच निकली डॉक्टर की बात, बताई थी असली वजह",
+     "url": "https://www.aajtak.in/health/story/nana-patekar-death-heart-attack-cardiac-arrest-postmortem-report-confirmation-tvisa-dskc-2668788-2026-10-12?utm_source=rssfeed",
+     "outlet": "AajTak",
+     "outlet_hi": "आजतक",
+     "owner": "India Today Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-12T14:37:50+00:00"
+    }
    ],
    "id": "wk-Q2475741",
    "kind": "death",
@@ -341,32 +466,49 @@
     "orbitwire_published_at": "2026-10-09T09:06:08+00:00",
     "orbitwire_url": "https://www.youtube.com/shorts/oSAgE6PbG2k",
     "orbitwire_title": "The Final Bow of Nana Patekar",
-    "high_profile": "an India story (fame 31,329): Hindi viewers are not Orbitwire's English audience",
+    "high_profile": "an India story (fame 56,329): Hindi viewers are not Orbitwire's English audience",
     "angle": "india"
    }
   },
   {
    "qid": "Q141712917",
    "title": "Hurricane Rachel (2026)",
-   "fame": 133756,
+   "fame": 158756,
    "views": 8756,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-12T23:12:50+00:00",
+   "news": 150000,
+   "news_at": "2026-10-13T09:16:00+00:00",
    "headlines": [
-    "Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast"
+    "Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US"
+    "US",
+    "world"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-12",
-    "google-news:Two deaths reported as Hurricane Simon, storm Rachel batter Mexico’s coast"
+    "google-news:Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Hurricane Simon and Tropical Storm Rachel kill five people on Mexico’s Pacific coast",
+     "url": "https://www.theguardian.com/world/2026/oct/13/mexico-hurricane-simon-tropical-storm-rachel-kill-five-pacific-coast",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-13T04:29:46+00:00"
+    }
    ],
    "id": "wk-Q141712917",
    "kind": "incident",
@@ -376,5 +518,20 @@
    "has_coords": false
   }
  ],
- "notes": []
+ "notes": [
+  "outlets: 546 headlines from 14 feeds (12 owners), 23 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (off: DESK_NEW_STORIES)",
+  "skip wk-Q5300674: Orbitwire top candidate (wk-Q5300674), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "outlet pib: HTTPError: 403 Client Error: Forbidden for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+  "outlet pib-hi: HTTPError: 403 Client Error: Forbidden for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3"
+ ],
+ "outlets": {
+  "headlines": 546,
+  "feeds": 14,
+  "owners": 12,
+  "matched": 23,
+  "corroborated": 1
+ },
+ "emerging": []
 }
