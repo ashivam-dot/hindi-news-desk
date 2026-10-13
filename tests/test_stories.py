@@ -28,6 +28,15 @@ def test_infobox_date():
     assert stories.infobox_date({"formed": "September 28, 2026", "dissipated": "October 12, 2026"}) == date(2026, 9, 28)
 
 
+def test_infobox_span():
+    for text in ("6–12 October 2026", "9 October 2026 – present", "October 6 to 12, 2026", "6-12 October 2026"):
+        assert stories.infobox_span({"date": text}), text
+    assert stories.infobox_span({"formed": "September 28, 2026", "dissipated": "October 12, 2026"})
+    for text in ("9 October 2026 (2026-10-09) 14:05 EDT", "October 9, 2026"):
+        assert not stories.infobox_span({"date": text}), text
+    assert not stories.infobox_span({})
+
+
 def test_single_number_prefers_preferred_rank():
     assert wiki.single_number({"claims": {"P1120": amount_claims(269, 260, preferred=260)}}, "P1120") == 260
     assert wiki.single_number({"claims": {"P1120": amount_claims(269, 260)}}, "P1120") is None
