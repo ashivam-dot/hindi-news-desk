@@ -51,10 +51,12 @@ disaster's own article (`desk/gdacs.py`; worth 50k or 150k fame), and Google New
 
 **Trusted sources beyond Wikipedia (2026-10-13; owner: "don't relay on wikipedia only search for other trusted souces
 as well").** `desk/outlets.py` keeps an allowlist of trusted outlets with public RSS feeds: official (PIB in English
-and Hindi, UN News Hindi), public broadcasters (BBC World, BBC India, BBC Hindi, DW, NPR), international (Al Jazeera,
-The Guardian), Indian national (The Hindu, Hindustan Times, Times of India) and Hindi (Live Hindustan, Amar Ujala,
-AajTak, ABP Live). Each outlet has an `owner`; sister brands count once (HT Media is Hindustan Times and Live
-Hindustan, the BBC is all three BBC feeds, the Government of India both PIB feeds). Feeds are read in parallel once a
+and Hindi, UN News Hindi), public broadcasters (BBC World, BBC India, BBC Hindi, DW, NPR, France 24), international
+(Al Jazeera, The Guardian), Indian national (The Hindu, Hindustan Times, Times of India, NDTV) and Hindi (Live
+Hindustan, Amar Ujala, AajTak, ABP Live, NDTV India). Each outlet has an `owner`; sister brands count once (HT Media
+is Hindustan Times and Live Hindustan, the BBC is all three BBC feeds, the Government of India both PIB feeds, NDTV
+both NDTV feeds). PIB, NDTV and France 24 get a browser's request headers (they refuse others with 403); a headless
+browser (Crawl4AI) was benchmarked on 2026-10-13 and read nothing more, with noisier text. Feeds are read in parallel once a
 run (36 hours back); a feed that fails is listed in the run's errors and the rest still count. Articles are read
 with trafilatura (20 s timeout, at most 12 a run, cached). Outlet photos are never used. Plain-http links are read
 as https.
