@@ -1,17 +1,17 @@
 {
- "at": "2026-10-13T20:57:50+00:00",
+ "at": "2026-10-13T21:34:52+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 5 candidates from 15 trending",
-  "outlets: 1392 headlines from 31 feeds (19 owners), 51 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 3 kh- stories (on): kh-20261014-Q200667, kh-20261014-Q87570577, kh-20261014-Q1058; dropped: explainer Greece: no Indian Wikipedia article about it; explainer IMF: no Indian Wikipedia article about it; explainer Trump: no Indian Wikipedia article about it",
+  "outlets: 1385 headlines from 31 feeds (19 owners), 52 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 3 kh- stories (on): kh-20261014-Q87570577, kh-20261014-Q200667, kh-20261014-Q1058; dropped: explainer Greece: no Indian Wikipedia article about it; explainer Trump: no Indian Wikipedia article about it; explainer IMF: no Indian Wikipedia article about it",
   "skip wp-2026_Multan_train_derailment: Orbitwire top candidate (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261014-Q200667: outside 07:00-24:00 IST",
   "hold kh-20261014-Q87570577: outside 07:00-24:00 IST",
+  "hold kh-20261014-Q200667: outside 07:00-24:00 IST",
   "hold kh-20261014-Q1058: outside 07:00-24:00 IST",
   "hold wk-Q141718063: outside 07:00-24:00 IST",
-  "drop wk-Q5300674: 57 h old and no longer trending live"
+  "drop wk-Q5300674: 58 h old and no longer trending live"
  ]
 }
