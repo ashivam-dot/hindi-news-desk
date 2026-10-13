@@ -1,20 +1,20 @@
 {
- "at": "2026-10-13T17:55:13+00:00",
+ "at": "2026-10-13T18:34:48+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi airports",
-   "fame": 520703,
+   "fame": 495703,
    "views": 45703,
    "traffic": 0,
-   "news": 425000,
-   "news_at": "2026-10-13T17:42:33+00:00",
+   "news": 400000,
+   "news_at": "2026-10-13T18:16:43+00:00",
    "headlines": [
-    "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
     "As Houthis strike Riyadh, Saudi Arabia confronts the costs of U.S. war on Iran",
-    "Why billions spent on defense haven’t shielded Saudi Arabia from Houthi attacks",
-    "Saudi Arabia strikes strategic oil depots near Yemen capital",
-    "India asks its nationals in Saudi Arabia to ‘remain calm and vigilant’"
+    "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+    "Saudi Arabia strikes oil depots in Yemen as conflict with Houthis escalates",
+    "India asks its nationals in Saudi Arabia to ‘remain calm and vigilant’",
+    "Saudi Arabia's military struggle against Houthi attacks"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -29,9 +29,9 @@
    "via": [
     "wikipedia-top-2026-10-12",
     "wikipedia-current-events-2026-10-12",
-    "google-news:Houthis threaten Saudi Arabia’s Aramco facilities and airports",
     "google-news:As Houthis strike Riyadh, Saudi Arabia confronts the costs of U.S. war on Iran",
-    "google-news:Why billions spent on defense haven’t shielded Saudi Arabia from Houthi attacks",
+    "google-news:Houthis threaten Saudi Arabia’s Aramco facilities and airports",
+    "google-news:Saudi Arabia strikes oil depots in Yemen as conflict with Houthis escalates",
     "outlet:Guardian Media Group",
     "outlet:The Hindu Group",
     "outlet:Deutsche Welle",
@@ -49,7 +49,7 @@
    ],
    "reports": [
     {
-     "title": "Saudi Arabia strikes strategic oil depots near Yemen capital",
+     "title": "Saudi Arabia strikes oil depots in Yemen as conflict with Houthis escalates",
      "url": "https://www.theguardian.com/world/2026/oct/13/saudi-arabia-strikes-strategic-oil-depots-near-yemen-capital",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
@@ -97,16 +97,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-10-13T14:53:39+00:00"
-    },
-    {
-     "title": "French embassy in Riyadh tells citizens to avoid Saudi airports targeted by Houthis",
-     "url": "https://www.france24.com/en/middle-east/20261013-french-embassy-in-riyadh-tells-citizens-to-avoid-saudi-airports-targeted-by-houthis",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-13T13:51:23+00:00"
     },
     {
      "title": "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
@@ -296,6 +286,33 @@
    "has_coords": true
   },
   {
+   "qid": null,
+   "title": "2026 Multan train derailment",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-13T18:34:48.241726+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Multan_train_derailment",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-10-13",
+   "coords": null,
+   "has_coords": false
+  },
+  {
    "qid": "Q141712917",
    "title": "Hurricane Rachel (2026)",
    "fame": 33756,
@@ -445,13 +462,14 @@
   }
  ],
  "notes": [
-  "outlets: 730 headlines from 20 feeds (15 owners), 28 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)"
+  "outlets: 734 headlines from 20 feeds (15 owners), 26 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
+  "skip wp-2026_Multan_train_derailment: Orbitwire top candidate (wp-2026_Multan_train_derailment), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 730,
+  "headlines": 734,
   "feeds": 20,
   "owners": 15,
-  "matched": 28,
+  "matched": 26,
   "corroborated": 1
  },
  "emerging": []
