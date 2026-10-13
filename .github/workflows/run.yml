@@ -49,6 +49,7 @@ jobs:
       DESK_CHANNEL_NAME: ${{ vars.DESK_CHANNEL_NAME }}
       DESK_CHANNEL_NAME_HI: ${{ vars.DESK_CHANNEL_NAME_HI }}
       DESK_CHANNEL_HANDLE: ${{ vars.DESK_CHANNEL_HANDLE }}
+      DESK_NEW_STORIES: ${{ vars.DESK_NEW_STORIES }}
     steps:
       - name: Refuse to publish while paused
         run: |

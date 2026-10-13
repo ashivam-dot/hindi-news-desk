@@ -79,10 +79,10 @@ as https.
   Openverse; the place must be a Wikidata item with coordinates, never a person). Once Wikipedia writes the article,
   the story is
   not told again for 7 days (a shared report URL, the same nw- place and kind, or its headlines naming the article),
-  and Orbitwire's overlap rules match nw- ids and report URLs too. **This lane is off** until the run's environment
-  sets `DESK_NEW_STORIES=true` (to turn it on, add `DESK_NEW_STORIES: ${{ vars.DESK_NEW_STORIES }}` to the job's
-  `env` in `.github/workflows/run.yml` and set that repository variable): the radar still finds and logs these
-  stories ("emerging" in `state/trends.json`, counted in the run's outlets note) but does not offer them.
+  and Orbitwire's overlap rules match nw- ids and report URLs too. **The lane is on (2026-10-13)** through the
+  repository variable `DESK_NEW_STORIES=true`, passed into the run job's `env` in `.github/workflows/run.yml`. Set the
+  variable to anything else to turn it off: the radar then still finds and logs these stories ("emerging" in
+  `state/trends.json`, counted in the run's outlets note) but does not offer them.
 - **Photos:** when Commons has fewer than 3 usable photos, Openverse (keyless; CC0, CC BY and CC BY-SA only, never
   non-commercial, no-derivatives or the public-domain mark) fills in with photos of the places the story links to
   (Wikidata items with coordinates; never a person, group or work), never one that features a face; each is
