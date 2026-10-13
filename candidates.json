@@ -1,20 +1,20 @@
 {
- "at": "2026-10-13T15:31:15+00:00",
+ "at": "2026-10-13T15:58:25+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi airports",
-   "fame": 320703,
+   "fame": 445703,
    "views": 45703,
    "traffic": 0,
-   "news": 225000,
+   "news": 350000,
    "news_at": "2026-10-13T15:01:36+00:00",
    "headlines": [
     "Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "Why Saudi Arabia has returned to war in Yemen",
     "Houthis threaten Saudi Arabia’s Aramco facilities and airports",
     "Oil facility near Yemen capital Sanaa hit by Saudi Arabia, Houthis say",
-    "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes",
-    "Saudi Arabia further suspends flights after latest deadly Houthi attack on airport"
+    "Indians in emergency can leave Saudi Arabia via neighbouring countries: Embassy issues advisory amid Houthi strikes"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -22,6 +22,7 @@
    "india_link": true,
    "geos": [
     "IN",
+    "US",
     "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
@@ -29,8 +30,8 @@
     "wikipedia-top-2026-10-12",
     "wikipedia-current-events-2026-10-12",
     "google-news:Saudis probe how defense systems failed to stop deadly Houthi attack on Riyadh airport",
+    "google-news:Why Saudi Arabia has returned to war in Yemen",
     "google-news:Houthis threaten Saudi Arabia’s Aramco facilities and airports",
-    "google-news:Oil facility near Yemen capital Sanaa hit by Saudi Arabia, Houthis say",
     "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde",
     "outlet:HT Media",
@@ -100,6 +101,38 @@
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false
+  },
+  {
+   "qid": "Q141670823",
+   "title": "Hurricane Isaias (2026)",
+   "fame": 148833,
+   "views": 23833,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-13T15:24:46+00:00",
+   "headlines": [
+    "Hurricane Simon hitting western Mexico after tropical systems kill 5"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-12",
+    "google-news:Hurricane Simon hitting western Mexico after tropical systems kill 5"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141670823",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-06",
+   "coords": null,
+   "has_coords": true
   },
   {
    "qid": "Q1355840",
@@ -300,33 +333,6 @@
    "date": "2026-10-11"
   },
   {
-   "qid": "Q141670823",
-   "title": "Hurricane Isaias (2026)",
-   "fame": 23833,
-   "views": 23833,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141670823",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-06",
-   "coords": null,
-   "has_coords": true
-  },
-  {
    "qid": "Q13119635",
    "title": "Madhu Kambikar",
    "fame": 16879,
@@ -375,6 +381,35 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-06"
+  },
+  {
+   "qid": "Q6696719",
+   "title": "Lucian Piane",
+   "fame": 1200,
+   "views": 0,
+   "traffic": 1200,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:lucian piane",
+    "google-trends-GB:lucian piane"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6696719",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-12"
   }
  ],
  "candidates": [
@@ -402,16 +437,45 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-11"
+  },
+  {
+   "qid": "Q6696719",
+   "title": "Lucian Piane",
+   "fame": 1200,
+   "views": 0,
+   "traffic": 1200,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:lucian piane",
+    "google-trends-GB:lucian piane"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6696719",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-12"
   }
  ],
  "notes": [
-  "outlets: 722 headlines from 20 feeds (15 owners), 24 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)"
+  "outlets: 726 headlines from 20 feeds (15 owners), 26 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)"
  ],
  "outlets": {
-  "headlines": 722,
+  "headlines": 726,
   "feeds": 20,
   "owners": 15,
-  "matched": 24,
+  "matched": 26,
   "corroborated": 1
  },
  "emerging": []
