@@ -1,5 +1,5 @@
 {
- "at": "2026-10-12T23:54:32+00:00",
+ "at": "2026-10-13T02:56:14+00:00",
  "videos": {
   "WtXHPm0XgEQ": {
    "id": "wk-Q141670823",
@@ -78,12 +78,6 @@
      "comments": 0
     },
     {
-     "age_h": 57.13,
-     "views": 116,
-     "likes": 0,
-     "comments": 0
-    },
-    {
      "age_h": 60.5,
      "views": 116,
      "likes": 0,
@@ -97,6 +91,12 @@
     },
     {
      "age_h": 66.9,
+     "views": 116,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 69.93,
      "views": 116,
      "likes": 0,
      "comments": 0
@@ -184,12 +184,6 @@
      "comments": 0
     },
     {
-     "age_h": 56.18,
-     "views": 111,
-     "likes": 0,
-     "comments": 0
-    },
-    {
      "age_h": 59.55,
      "views": 111,
      "likes": 0,
@@ -203,6 +197,12 @@
     },
     {
      "age_h": 65.96,
+     "views": 111,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 68.99,
      "views": 111,
      "likes": 0,
      "comments": 0
@@ -290,12 +290,6 @@
      "comments": 0
     },
     {
-     "age_h": 55.46,
-     "views": 20,
-     "likes": 0,
-     "comments": 0
-    },
-    {
      "age_h": 58.83,
      "views": 20,
      "likes": 0,
@@ -309,6 +303,12 @@
     },
     {
      "age_h": 65.24,
+     "views": 20,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 68.27,
      "views": 20,
      "likes": 0,
      "comments": 0
@@ -396,12 +396,6 @@
      "comments": 0
     },
     {
-     "age_h": 54.56,
-     "views": 330,
-     "likes": 3,
-     "comments": 0
-    },
-    {
      "age_h": 57.93,
      "views": 330,
      "likes": 3,
@@ -415,6 +409,12 @@
     },
     {
      "age_h": 64.34,
+     "views": 330,
+     "likes": 3,
+     "comments": 0
+    },
+    {
+     "age_h": 67.37,
      "views": 330,
      "likes": 3,
      "comments": 0
@@ -502,12 +502,6 @@
      "comments": 0
     },
     {
-     "age_h": 52.81,
-     "views": 310,
-     "likes": 7,
-     "comments": 0
-    },
-    {
      "age_h": 56.18,
      "views": 310,
      "likes": 7,
@@ -521,6 +515,12 @@
     },
     {
      "age_h": 62.58,
+     "views": 310,
+     "likes": 7,
+     "comments": 0
+    },
+    {
+     "age_h": 65.61,
      "views": 310,
      "likes": 7,
      "comments": 0
@@ -612,6 +612,12 @@
      "views": 7,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 42.5,
+     "views": 7,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -691,6 +697,12 @@
     },
     {
      "age_h": 38.47,
+     "views": 10,
+     "likes": 0,
+     "comments": 0
+    },
+    {
+     "age_h": 41.5,
      "views": 10,
      "likes": 0,
      "comments": 0
@@ -776,6 +788,12 @@
      "views": 108,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 40.76,
+     "views": 108,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -858,6 +876,12 @@
      "views": 7,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 39.63,
+     "views": 7,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -910,24 +934,46 @@
      "views": 3,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 24.92,
+     "views": 3,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
    "category": "conflict",
    "region": "world",
+   "views_24h": 3.0
+  },
+  "geVN44H56QA": {
+   "id": "wk-Q2118568",
+   "published_at": "2026-10-13T01:43:24+00:00",
+   "snapshots": [
+    {
+     "age_h": 1.21,
+     "views": 60,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "death",
+   "category": "death",
+   "region": "world",
    "views_24h": null
   }
  },
  "learned": {
-  "scored": 9,
+  "scored": 10,
   "min_samples": 4,
   "lifts": {
    "region:world": {
-    "n": 4,
-    "lift": 0.897,
-    "typical_views_24h": 39
+    "n": 5,
+    "lift": 0.789,
+    "typical_views_24h": 24
    }
   },
-  "baseline_views_24h": 48
+  "baseline_views_24h": 37
  }
 }

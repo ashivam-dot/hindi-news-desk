@@ -1,9 +1,12 @@
 {
- "at": "2026-10-13T02:28:43+00:00",
+ "at": "2026-10-13T02:56:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 1 candidates from 7 trending",
-  "drop wk-Q2475741: 111 h old and no longer trending live"
+  "learn: 10 scored Shorts, lifts {'region:world': {'n': 5, 'lift': 0.789, 'typical_views_24h': 24}}",
+  "watch: 2 candidates from 7 trending",
+  "drop wk-Q2475741: 111 h old and no longer trending live",
+  "skip wk-Q13119635: gate: only 0 usable photos of Madhu Kambikar on Wikimedia Commons (want 3)",
+  "nothing eligible to publish"
  ]
 }
