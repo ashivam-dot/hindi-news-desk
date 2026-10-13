@@ -436,6 +436,14 @@ def person_context(ent: dict) -> list[str]:
                               if isinstance(c["value"], str) and c["value"].startswith("Q")))[:6]
 
 
+def incident_context(ent: dict, extra: list[str]) -> list[str]:
+    """The items an incident's fill photos come from: its related items, then the place it is located in (P131).
+    Orbitwire fills from the same items (studio/writer.py), so its fill photos are excluded from a shared story."""
+    located = [c["value"] for c in wiki.claims(ent, "P131")[:1] if isinstance(c["value"], str)
+               and c["value"].startswith("Q")]
+    return list(dict.fromkeys(extra + located))[:4]
+
+
 def _shared(cand: dict, title: str, ent: dict, extra: list[str] | None,
             context: list[str] | None = None) -> tuple[dict | None, set[str]]:
     """Orbitwire's overlap record for a shared story, with the photo files Orbitwire would use (its fill photos of
@@ -549,9 +557,10 @@ def build_incident(cand: dict) -> Short:
         extra = list(dict.fromkeys(p["qid"] for p in found.values() if p.get("qid")))[:3]
     sid = cand.get("id") or f"wk-{qid}"
     work = WORK / sid
-    ov, exclude = _shared(cand, article, ent, extra)
+    context = incident_context(ent, extra)
+    ov, exclude = _shared(cand, article, ent, extra, context)
     photos = pick_photos(article, ent, work / "photos", person=False, extra_qids=extra, files=cand.get("photo_files"),
-                         exclude=exclude, places=not qid, context_qids=extra)
+                         exclude=exclude, places=not qid, context_qids=context)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))

@@ -224,7 +224,10 @@ def test_no_portrait_means_no_tribute_and_enough_photos_means_no_fill(photos):
     assert [p["file"] for p in got] == [f"File:Flood {i}.jpg" for i in range(3)]
 
 
-def test_person_context_items():
+def test_person_and_incident_context_items():
     claims = {pid: [{"mainsnak": {"datavalue": {"value": {"id": q}}}}] for pid, q in
-              (("P19", "Q100"), ("P69", "Q200"), ("P166", "Q300"), ("P21", "Q6581072"))}
+              (("P19", "Q100"), ("P69", "Q200"), ("P166", "Q300"), ("P21", "Q6581072"), ("P131", "Q400"))}
     assert writer.person_context({"claims": claims}) == ["Q100", "Q200", "Q300"]
+    assert writer.incident_context({"claims": claims}, ["Q9", "Q400"]) == ["Q9", "Q400"]
+    assert writer.incident_context({"claims": claims}, []) == ["Q400"]
+    assert writer.incident_context({}, []) == []
