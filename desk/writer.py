@@ -8,6 +8,11 @@ is in the script (Wikidata's Hindi label wins when there is one), Latin-script w
 and a second model pass lists anything unsupported. A failing draft is rewritten up to three times (the fact check
 runs only on drafts that pass the code gates, so it needs rewrites left), then the story is dropped.
 Death and casualty facts still pass the same two-source gates as Orbitwire's.
+
+Trusted outlets (desk/outlets.py) are a second kind of source: the writer gets a REPORTING block of excerpts from 2-4
+of their articles about the story, each from a different owner. A number, name or claim that Wikipedia and Wikidata
+do not state must be in at least two independent owners' articles (gate.OWNERS_NEEDED); one outlet alone is never
+enough, and a death toll from reporting needs two owners giving the same exact number (or Wikidata agreeing).
 """
 from __future__ import annotations
 
@@ -16,7 +21,7 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, faces, gate, gemini, hindi, llm, media, orbitwire, stories, trends, wiki
+from . import config, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, wiki
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -159,8 +164,22 @@ def _headline_ok(headline: str, values: set[str], ground: str) -> bool:
     return all(re.sub(r"['’]s$", "", w).lower().strip("'’-") in low for w in words)
 
 
+REPORTING_RULE = ("a fact that only REPORTING gives may be used only when at least two reports from DIFFERENT owners "
+                  "state it; never use a fact that only one report states")
+
+
+def reporting_block(reports: list[dict] | None) -> str:
+    """The REPORTING section: each article's outlet, owner, date and headline, then its excerpt."""
+    if not reports:
+        return ""
+    rows = [f"[{n}] {r['outlet']} (owner: {r['owner']}), {r['at'][:10]}: {r['title']}\n{r['excerpt']}"
+            for n, r in enumerate(reports, 1)]
+    return f"\n\nREPORTING (trusted outlets; {REPORTING_RULE}):\n" + "\n\n".join(rows)
+
+
 def _messages(brief: str, facts: list[str], source_en: str, source_hi: str, photos: list[dict], name_hi: str,
-              hi_names: dict[str, str], headlines: list[str] | None = None) -> list[dict]:
+              hi_names: dict[str, str], headlines: list[str] | None = None,
+              reports: list[dict] | None = None) -> list[dict]:
     listing = "\n".join(f"{i}: {p['description'] or p['file']}" for i, p in enumerate(photos))
     lead = ""
     if headlines:
@@ -168,15 +187,17 @@ def _messages(brief: str, facts: list[str], source_en: str, source_hi: str, phot
                 "state only facts that are in CONFIRMED FACTS or the SOURCES):\n" + "\n".join(f"- {h}" for h in headlines))
     names = "\n".join(f"- {en} = {hi}" for en, hi in hi_names.items()) or "- (none)"
     user = (brief + "\n\nCONFIRMED FACTS:\n" + "\n".join(f"- {f}" for f in facts)
-            + "\n\nSOURCE (English Wikipedia):\n" + source_en
+            + ("\n\nSOURCE (English Wikipedia):\n" + source_en if source_en else "")
             + ("\n\nSOURCE (Hindi Wikipedia):\n" + source_hi if source_hi else "")
+            + reporting_block(reports)
             + "\n\nHINDI NAMES (Wikidata's Hindi labels; use these spellings):\n" + names
-            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=0, name_hi=name_hi))
+            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=0, name_hi=name_hi)
+            + ("\nREPORTING counts as a source under its own rule: " + REPORTING_RULE + "." if reports else ""))
     return [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
 
 
 def _check_messages(script: str, names: list[dict], facts: list[str], source_en: str, source_hi: str,
-                    doubtful: list[dict]) -> list[dict]:
+                    doubtful: list[dict], reports: list[dict] | None = None) -> list[dict]:
     pairs = "\n".join(f"- {p['hi']} = {p['en']}" for p in names) or "- (none)"
     double = ""
     if doubtful:
@@ -190,9 +211,11 @@ def _check_messages(script: str, names: list[dict], facts: list[str], source_en:
             "fact (\"एक युग का अंत\", \"हमेशा याद रहेंगे\") is fine. Check only what SCRIPT says: never list a fact "
             "that only the SOURCES mention. Write each item in English, quoting the exact Hindi words from SCRIPT. "
             "Return {\"unsupported\": []} when everything is supported."
-            "\n\nCONFIRMED FACTS:\n" + "\n".join(f"- {f}" for f in facts) + "\n\nSOURCE (English):\n" + source_en
-            + ("\n\nSOURCE (Hindi):\n" + source_hi if source_hi else "") + "\n\nNAMES:\n" + pairs + double
-            + "\n\nSCRIPT:\n" + script)
+            + (" A statement that only REPORTING supports counts as supported only when at least two reports from "
+               "different owners state it; list any statement only one report states." if reports else "")
+            + "\n\nCONFIRMED FACTS:\n" + "\n".join(f"- {f}" for f in facts) + "\n\nSOURCE (English):\n" + source_en
+            + ("\n\nSOURCE (Hindi):\n" + source_hi if source_hi else "") + reporting_block(reports)
+            + "\n\nNAMES:\n" + pairs + double + "\n\nSCRIPT:\n" + script)
     return [{"role": "system", "content": "You are a meticulous, bilingual (Hindi and English) fact-checker for a "
                                           "news channel."},
             {"role": "user", "content": user}]
@@ -233,9 +256,12 @@ def subject_in(text: str, subject: dict, names: list[dict]) -> bool:
 
 def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, ground_hi: str,
              hi_names: dict[str, str], banned_names: list[str], kind: str, agreed_toll: bool,
-             angle: str | None = None) -> tuple[list[str], list[dict]]:
-    """Problems with a draft, and the name pairs to double-check in the fact-check pass."""
+             angle: str | None = None, reports: list[dict] | None = None) -> tuple[list[str], list[dict]]:
+    """Problems with a draft, and the name pairs to double-check in the fact-check pass. A number or name the
+    Wikipedia/Wikidata ground lacks passes only when at least two independent owners' reports state it."""
     problems, doubtful = [], []
+    reports = reports or []
+    two = gate.OWNERS_NEEDED
     beats = draft.get("beats") or []
     says = " ".join(b.get("say", "") for b in beats)
     words = len(says.split())
@@ -250,10 +276,13 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         if not isinstance(b.get("photo"), int) or not 0 <= b["photo"] < len(photos):
             problems.append(f"photo {b.get('photo')} does not exist")
     text = script_text(draft)
-    values = hindi.values(ground_en + "\n" + ground_hi)
+    values = hindi.values(ground_en + "\n" + ground_hi) | gate.corroborated_values(reports)
     bad = hindi.unsupported_numbers(text, values)
     if bad:
-        problems.append("these numbers are not in the sources: " + ", ".join(bad))
+        single = [n for n in bad if gate.reported_values(reports).get(n)]
+        problems.append("these numbers are not in the sources: " + ", ".join(bad)
+                        + (f" ({', '.join(single)} only in one outlet's report: one outlet is not enough)"
+                           if single else ""))
     wikidata = {en.lower(): hi for en, hi in hi_names.items()}
     for p in names:
         hi, en = (p.get("hi") or "").strip(), (p.get("en") or "").strip()
@@ -263,8 +292,11 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         if not hindi.contains(text, hi):
             problems.append(f"names lists {hi!r}, but the script never writes it exactly like that")
         en_ok, hi_ok = hindi.contains(ground_en, en), hindi.contains(ground_hi, hi)
-        if not (en_ok or hi_ok):
-            problems.append(f"{en} ({hi}) is not in the sources")
+        reported = set(gate.reported(en, reports)) | set(gate.reported(hi, reports))
+        if not (en_ok or hi_ok) and len(reported) >= two:
+            hi_ok = bool(gate.reported(hi, reports))
+        elif not (en_ok or hi_ok):
+            problems.append(f"{en} ({hi}) is not in the sources" + (" (only one outlet reports it)" if reported else ""))
         label = wikidata.get(en.lower())
         if label and hindi.norm(label) != hindi.norm(hi) and not hindi.contains(text, label):
             problems.append(f"write {en} as {label} (Wikidata's Hindi name), not {hi}")
@@ -274,7 +306,7 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     for w in sorted(set(hindi.latin_words(text))):
         if w.upper() in gate.ACRONYMS and w.upper() == w:
             continue
-        if not hindi.contains(ground_en, w):
+        if not hindi.contains(ground_en, w) and len(gate.reported(w, reports)) < two:
             problems.append(f"{w!r} is not in the English source")
     for person in banned_names:
         for token in re.findall(r"[A-Z][a-z]{2,}", person):
@@ -307,9 +339,10 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           photos: list[dict], hi_names: dict[str, str], banned_names: list[str] | None = None,
           agreed_toll: bool = False, log_path: Path | None = None, headlines: list[str] | None = None,
           angle: str | None = None, pen: Pen | None = None,
-          today_ok: bool = True) -> tuple[dict, list[dict], list[str]]:
+          today_ok: bool = True, reports: list[dict] | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
-    log_path), and the models that answered. kind is "death", "incident" or "protest"."""
+    log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
+    articles ({outlet, owner, at, title, excerpt, text}), see the module docstring."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF}.get(kind, INCIDENT_BRIEF)
     brief = brief.format(name=subject["en"], pronoun=pronoun.lower(), object=obj)
@@ -322,7 +355,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                   "fine); give the date instead.")
     name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
                else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
-    messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines)
+    messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports)
     ground_en = source_en + "\n" + "\n".join(facts) + "\n" + "\n".join(p["description"] for p in photos)
     ground_hi = source_hi + "\n" + "\n".join(facts) + "\n" + "\n".join(hi_names.values())
     log = []
@@ -333,7 +366,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             ignored = []
             draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi, hi_names, banned_names or [],
-                                          kind, agreed_toll, angle)
+                                          kind, agreed_toll, angle, reports)
             if not today_ok:
                 problems += not_today(script_text(draft))
             if attempt < DRAFTS - 1:
@@ -341,7 +374,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
-                                                   doubtful), CHECK_SCHEMA, temperature=0.0, max_tokens=800)
+                                                   doubtful, reports), CHECK_SCHEMA, temperature=0.0, max_tokens=800)
                 items = [str(u).strip() for u in verdict.get("unsupported", []) if str(u).strip()]
                 ignored = [u for u in items if not hindi.quotes(u, script_text(draft))
                            or unlisted_but_sourced(u, ground_en)]
@@ -386,20 +419,38 @@ def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
     """Downloaded photos as dicts with a "focus" box: for a person, only photos in which their face is matched.
     files: Commons files an editor chose instead of searching; exclude: files that may not be used; places: see
     media.find; context_qids: places and things the story links to, whose photos (with no featured face) fill in
-    when the story has fewer than MIN_PHOTOS of its own. A person needs at least one photo of their own face."""
-    import cv2
-
-    kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places)
+    when the story has fewer than MIN_PHOTOS of its own: Commons first, then Openverse. A person needs at least one
+    photo of their own face."""
+    kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places) if title else []
     if len(kept) >= MIN_PHOTOS or files or not context_qids or (person and not kept):
         return kept
-    have = (exclude or set()) | {r["file"] for r in kept}
-    for r in media.as_dicts(media.download(media.context(context_qids, exclude=have), folder / "context")):
-        img = cv2.imread(r["path"])
-        if featured_face(img, faces.detect(img) if img is not None else []):
-            continue
-        r["focus"] = None
-        kept.append(r)
-    return kept[:8]
+    return (kept + fill_photos(context_qids, folder, (exclude or set()) | {r["file"] for r in kept},
+                               MIN_PHOTOS - len(kept)))[:8]
+
+
+def fill_photos(context_qids: list[str], folder: Path, exclude: set[str], need: int = MIN_PHOTOS) -> list[dict]:
+    """Photos of the places and things a story links to that feature no face: Commons (each item's main image and
+    files from its article naming it), then, while fewer than `need`, Openverse photos naming the item."""
+    import cv2
+
+    def faceless(found: list, sub: str) -> list[dict]:
+        out = []
+        for r in media.as_dicts(media.download(found, folder / sub)):
+            img = cv2.imread(r["path"])
+            if featured_face(img, faces.detect(img) if img is not None else []):
+                continue
+            r["focus"] = None
+            out.append(r)
+        return out
+
+    kept = faceless(media.context(context_qids, exclude=exclude), "context")
+    if len(kept) < need:
+        try:
+            found = media.openverse_for(context_qids, exclude=exclude | {r["file"] for r in kept})
+        except Exception:
+            found = []
+        kept += faceless(found, "openverse")
+    return kept
 
 
 def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None,
@@ -453,6 +504,78 @@ def _shared(cand: dict, title: str, ent: dict, extra: list[str] | None,
         return None, set()
     pool = orbitwire.photo_pool(title, ent, extra, context if context is not None else extra)
     return ov | {"excluded_photos": pool, "photo_pool_checked": True}, set(pool)
+
+
+SUICIDE_WORDS = ["suicid*", "आत्महत्या", "खुदकुशी", "ख़ुदकुशी"]
+# Reports name suspects and attackers; an incident Short never does, so such sentences never reach the writer.
+PERPETRATOR = re.compile(r"\b(suspect\w*|accused|attackers?|assailants?|gunm[ae]n|shooters?|perpetrators?|"
+                         r"identified as|named as|arrest\w*|detained|charged|held for)\b|आरोपी|संदिग्ध|हमलावर|"
+                         r"गिरफ्तार|गिरफ़्तार|हिरासत", re.I)
+# Casualty sentences never reach the writer from reports: an agreed toll comes as a confirmed fact, and any other
+# count (hedged, earlier, injured) must not be said beside it.
+REPORT_CASUALTY = gate.CASUALTY + ["dead", "died", "death", "deaths", "lives", "bodies", "body", "perish*",
+                                   "नहीं रहे", "शव", "लाश*"]
+
+
+def _reporting(cand: dict, title: str, hi: str | None = None, person: bool = False,
+               since: datetime | None = None, search: bool = True) -> list[dict]:
+    """2-4 trusted outlets' articles about the story, each from a different owner, with their text (outlets.reporting):
+    the reports matched to it at discovery, and (search) any recent outlet item that names it. [] when fewer than
+    two owners' articles can be read."""
+    found = [r for r in cand.get("reports") or [] if r.get("url")]
+    if search:
+        # Discovery matches a headline by one distinctive word; a report backs facts only when it names the story.
+        found = outlets.about(title, found, person=person, hi=hi)
+    found = {r["url"]: r for r in found}
+    if search:
+        try:
+            items, _ = outlets.recent()
+        except Exception:
+            items = []
+        for i in outlets.about(title, items, since=since, person=person, hi=hi):
+            found.setdefault(i["url"], i)
+    rows = [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
+    try:
+        return outlets.reporting(rows)
+    except Exception:
+        return []
+
+
+def clean_reports(reports: list[dict], words: list[str], perpetrators: bool) -> list[dict]:
+    """The reports as the writer and the checks see them: no sentence about suicide or casualties, none naming a
+    suspect or attacker in an incident; each with an excerpt naming the story."""
+    out = []
+    for r in reports:
+        body = _strip(_strip(r["text"], SUICIDE_WORDS), REPORT_CASUALTY)
+        if perpetrators:
+            body = " ".join(s for s in re.split(r"(?<=[.!?।])\s+", body) if not PERPETRATOR.search(s))
+        out.append(r | {"text": body, "excerpt": outlets.excerpt(body, words)})
+    return out
+
+
+def reported_toll(reports: list[dict], ent: dict, listed: str | None = None) -> tuple[int, list[str]] | None:
+    """A death toll the reporting agrees on (gate.reported_toll, checked against Wikidata P1120), never one that
+    differs from a number the infobox lists."""
+    got = gate.reported_toll(reports, {int(c["value"]) for c in wiki.claims(ent, "P1120")})
+    shown = wiki.leading_number(listed)
+    return got if got and shown in (None, got[0]) else None
+
+
+def toll_basis(owners: list[str]) -> str:
+    return " and ".join(owners) if len(owners) >= gate.OWNERS_NEEDED else f"{owners[0]} and Wikidata P1120"
+
+
+def toll_fact(deaths: int, owners: list[str], reports: list[dict], item: str | None) -> Fact:
+    """The deaths fact for a reported toll: the owners' reports, or Wikidata when only one owner states it."""
+    if len(owners) >= gate.OWNERS_NEEDED:
+        url = next(r["url"] for r in reports if r["owner"] in owners)
+        return Fact("deaths", str(deaths), url, [str(deaths)], f"reported alike by {toll_basis(owners)}",
+                    owners=owners)
+    return Fact("deaths", str(deaths), item or reports[0]["url"], [str(deaths)], f"{toll_basis(owners)} agree")
+
+
+def _since(day: date, back_days: int = 1) -> datetime:
+    return datetime.combine(day, datetime.min.time(), timezone.utc) - timedelta(days=back_days)
 
 
 def _hindi_source(ent: dict, limit: int = 5000) -> tuple[str, str | None]:
@@ -513,8 +636,10 @@ def build_death(cand: dict) -> Short:
     hi_names = wiki.hindi_names(ent)
     subject = {"en": name, "hi": name_hi, "person": True}
     angle = ov["angle"] if ov else None
+    reports = clean_reports(_reporting(cand, name, name_hi, person=True, since=_since(died)),
+                            [name] + ([name_hi] if name_hi else []), perpetrators=False)
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
-                             log_path=work / "writer_log.json", angle=angle, today_ok=days == 0)
+                             log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports)
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
@@ -527,7 +652,7 @@ def build_death(cand: dict) -> Short:
                   tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
                   summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
                           f"तथ्यों से।",
-                  hashtags=[name_hi, job_hi or "श्रद्धांजलि", "हिंदीसमाचार"], ov=ov)
+                  hashtags=[name_hi, job_hi or "श्रद्धांजलि", "हिंदीसमाचार"], ov=ov, reports=reports)
 
 
 def build_incident(cand: dict) -> Short:
@@ -565,8 +690,16 @@ def build_incident(cand: dict) -> Short:
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
-    deaths = stories.agreed(stories._first(ib, "total_fatalities", "fatalities", "deaths"), ent, "P1120", True)
+    listed = stories._first(ib, "total_fatalities", "fatalities", "deaths")
+    deaths = stories.agreed(listed, ent, "P1120", True)
     hurt = stories.agreed(stories._first(ib, "total_injuries", "injuries", "injured"), ent, "P1339", True)
+    name_hi = wiki.label(ent, "hi")
+    kind = "protest" if cat in ("protest", "movement") else "incident"
+    reports = _reporting(cand, name, name_hi, since=None if ongoing else _since(when))
+    toll = None
+    if deaths is None and (toll := reported_toll(reports, ent, listed)):
+        deaths = toll[0]
+    reports = clean_reports(reports, [name] + ([name_hi] if name_hi else []), perpetrators=kind == "incident")
     facts_text = [f"Today's date: {stories.date_words(when)}." if ongoing
                   else f"{name} {'began' if span else 'happened'} on {stories.date_words(when)}.",
                   f"आज की तारीख: {hindi.date_hi(when)}।" if ongoing
@@ -574,15 +707,18 @@ def build_incident(cand: dict) -> Short:
     where = stories._first(ib, "site", "location", "place", "areas affected", "areas")
     if where:
         facts_text.append(f"Location: {where}.")
-    if deaths is not None:
+    if toll:
+        facts_text.append(f"Death toll ({toll_basis(toll[1])} agree): {deaths:,}.")
+    elif deaths is not None:
         facts_text.append(f"Official death toll (Wikipedia and Wikidata agree): {deaths:,}.")
     if hurt:
         facts_text.append(f"Injured (Wikipedia and Wikidata agree): {hurt:,}.")
     banned = [v for k, v in ib.items() if re.match(r"(perpetrators?|assailants?|attackers?|suspects?|accused)$", k)]
     source = wiki.article_text(article)
     source_hi, hi_title = _hindi_source(ent)
-    if deaths is None:
-        # Casualty numbers only when both sources agree: strip unconfirmed tolls from what the writer may use.
+    if deaths is None or toll:
+        # Casualty numbers only when both sources agree (or, failing that, the reporting does): strip the other
+        # tolls from what the writer may use.
         source = re.sub(r"[^.]*\b(killed|dead|deaths?|died|toll|fatalit\w*|casualt\w*|injured|wounded)\b[^.]*\.", "",
                         source, flags=re.I)
         source_hi = _strip(source_hi, gate.CASUALTY)
@@ -591,19 +727,20 @@ def build_incident(cand: dict) -> Short:
     values = hindi.values(source)
     headlines = [h for h in cand.get("headlines") or [] if _headline_ok(h, values, source)]
     hi_names = wiki.hindi_names(ent)
-    name_hi = wiki.label(ent, "hi")
     subject = {"en": name, "hi": name_hi, "person": False}
-    kind = "protest" if cat in ("protest", "movement") else "incident"
     angle = ov["angle"] if ov else None
     draft, log, used = write(kind, subject, "It", facts_text, source, source_hi, photos, hi_names,
                              banned_names=banned, agreed_toll=deaths is not None, log_path=work / "writer_log.json",
-                             headlines=headlines, angle=angle, today_ok=ongoing or when == _today_ist())
+                             headlines=headlines, angle=angle, today_ok=ongoing or when == _today_ist(),
+                             reports=reports)
     name_hi = name_hi or _pair_for(draft, name) or name
     loss = bool(deaths) or cat in ("attack", "strike", "conflict")
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("date", hindi.date_hi(when), item, [str(when.day), str(when.year)],
                   f"Google News lead story on {when}" if ongoing else f"{date_src} {when}")]
-    if deaths is not None:
+    if toll:
+        facts.append(toll_fact(deaths, toll[1], reports, item if qid else None))
+    elif deaths is not None:
         facts.append(Fact("deaths", str(deaths), page, [str(deaths)], "infobox and Wikidata P1120 agree"))
     region = stories.city_of(where) if where else None
     sources = list(dict.fromkeys([page, item])) + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
@@ -613,7 +750,7 @@ def build_incident(cand: dict) -> Short:
                         "india news" if cand.get("region") == "india" else "world news"] + ([region] if region else []),
                   summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, "
                           f"{'Wikipedia और Wikidata' if qid else 'Wikipedia'} के तथ्यों से।",
-                  hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov)
+                  hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov, reports=reports)
 
 
 def _pair_for(draft: dict, name: str) -> str | None:
@@ -621,32 +758,123 @@ def _pair_for(draft: dict, name: str) -> str | None:
 
 
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
-           mood, tags, summary, hashtags, region="world", ov=None) -> Short:
+           mood, tags, summary, hashtags, region="world", ov=None, reports=None, credit=CREDIT) -> Short:
+    reports = reports or []
     beats = [Beat(b["say"].strip(), f"photo:{b['photo']}", {"big": b["caption"].strip(), "small": ""})
              for b in draft["beats"]]
     beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
                       pause_after=0.5))
     ground = source + "\n" + "\n".join(facts_text)
+    in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
     allowed = {n for f in facts for n in f.numbers}
     shown = " ".join(b.text + " " + (b.card or {}).get("big", "") for b in beats) + " " + draft["title"]
     for n in sorted({v for v, _ in hindi.numbers(shown)}):
         if n not in allowed:
-            facts.append(Fact(f"source-{n}", n, sources[0], [n], _sentence_with(n, ground)))
+            who = by_owner.get(n, [])
+            if who and n not in in_ground:
+                url = next(r["url"] for r in reports if r["owner"] in who)
+                facts.append(Fact(f"source-{n}", n, url, [n], "reported by " + ", ".join(who), owners=who))
+            else:
+                facts.append(Fact(f"source-{n}", n, sources[0], [n], _sentence_with(n, ground)))
             allowed.add(n)
     title = draft["title"].strip().strip('"')
     if not 15 <= len(title) <= 90:
         title = f"{name_hi} को श्रद्धांजलि" if kind == "death" else f"{name_hi}: पूरा मामला"
         if ov:
             title = f"{name_hi}: {orbitwire.ANGLES[ov['angle']]['label']}"
-    credits = [CREDIT] + sorted({p["credit"] + " " + p["page"] for p in photos})
+    if any(media.from_openverse(p) for p in photos):
+        credit = credit.replace("Wikimedia Commons", "Wikimedia Commons और Openverse")
+    if reports:
+        credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
+    credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
     scene = {"template": "story", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
              "name_hi": name_hi, "names": draft.get("names", []), "writer": {"models": used, "rejected": log}}
     if ov:
         scene["orbitwire"] = ov
+    if reports:
+        scene["reporting"] = [outlets.compact(r) for r in reports]
+        scene["outlets"] = outlets.names(reports)
+        sources = list(dict.fromkeys(sources + [r["url"] for r in reports]))
     return Short(id=sid, kind=kind, title=title[:90], beats=beats, facts=facts, sources=sources, loss=loss,
                  scene=scene, event_time=event_time, tags=[t for t in dict.fromkeys(tags) if t], summary=summary,
                  credits=credits, hashtags=[h for h in hashtags if h])
 
 
+REPORT_CREDIT = "तथ्य: विश्वसनीय समाचार संस्थानों की रिपोर्टें; तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
+
+
+def story_place(name: str) -> tuple[str | None, dict]:
+    """The Wikidata item of the place an nw- story names: Wikipedia's first search hit, when its title names it and
+    it is a place (it has coordinates and is not a person)."""
+    try:
+        title = wiki.search(name)
+    except Exception:
+        return None, {}
+    if not title or name.lower() not in title.lower():
+        return None, {}
+    qid = (wiki.page_info([title]).get(title) or {}).get("qid")
+    ent = wiki.entities([qid]).get(qid) if qid else None
+    if not ent or not media.place_like(ent):
+        return None, {}
+    return qid, ent
+
+
+def build_report(cand: dict) -> Short:
+    """A story Wikipedia has no article for yet (an nw- id, desk/outlets.py stories): told only from what at least
+    two independent owners' articles say, with photos of the place it happened (Commons, then Openverse), and no
+    casualty count unless the reports agree on one. Once Wikipedia writes the article, plan.told_before keeps the
+    story from being told again."""
+    sid, name, cat = cand["id"], cand["name"], cand["category"]
+    if not config.NEW_STORIES:
+        raise ValueError("gate: stories without a Wikipedia article are off (DESK_NEW_STORIES)")
+    when = date.fromisoformat(cand["date"])
+    work = WORK / sid
+    reports = _reporting(cand, name, search=False)
+    if len(outlets.owners(reports)) < gate.OWNERS_NEEDED:
+        raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles about {name} could "
+                         "be read")
+    named = gate.reported(name, reports)
+    if len(named) < gate.OWNERS_NEEDED:
+        raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles name {name}")
+    qid, place = story_place(name)
+    name_hi = wiki.label(place, "hi") if place else None
+    context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
+    ov, exclude = _shared(cand, "", {}, None, context)
+    photos = fill_photos(context, work / "photos", exclude)[:8] if context else []
+    if len(photos) < MIN_PHOTOS:
+        raise ValueError(f"gate: only {len(photos)} usable photos of {name} (want {MIN_PHOTOS})"
+                         + (" not used by Orbitwire" if ov else ""))
+    kind = "protest" if cat in ("protest", "movement") else "incident"
+    toll = gate.reported_toll(reports)
+    words = [name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(cand["title"])[0])
+    reports = clean_reports(reports, words, perpetrators=kind == "incident")
+    facts_text = [f"Place: {name}.", "Wikipedia has no article on this yet: only the reporting below may be used."]
+    if toll:
+        facts_text.append(f"Death toll ({toll_basis(toll[1])} agree): {toll[0]:,}.")
+    hi_names = wiki.hindi_names(place) if place else {}
+    subject = {"en": name, "hi": name_hi, "person": False}
+    angle = ov["angle"] if ov else None
+    draft, log, used = write(kind, subject, "It", facts_text, "", "", photos, hi_names, agreed_toll=toll is not None,
+                             log_path=work / "writer_log.json", angle=angle, today_ok=when == _today_ist(),
+                             reports=reports)
+    name_hi = name_hi or _pair_for(draft, name) or name
+    facts = [Fact("name", name, next((r["url"] for r in reports if r["owner"] in named), reports[0]["url"]),
+                  stories.numbers_in(name), "named in the reports of " + ", ".join(named), owners=named)]
+    if toll:
+        facts.append(toll_fact(toll[0], toll[1], reports, None))
+    short = _short(sid, "incident", name, name_hi, draft, log, used, facts, facts_text, "", photos,
+                   [r["url"] for r in reports], when.isoformat(), loss=bool(toll) or cat in ("attack", "conflict"),
+                   mood="news", region=cand.get("region", "world"),
+                   tags=[name, name_hi, cat, "हिंदी समाचार", "hindi news",
+                         "india news" if cand.get("region") == "india" else "world news"],
+                   summary=f"{name_hi}: क्या हुआ, {', '.join(outlets.names(reports))} की रिपोर्टों से।",
+                   hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov, reports=reports, credit=REPORT_CREDIT)
+    short.scene["article"] = None
+    short.scene["headlines"] = cand.get("headlines") or []
+    return short
+
+
 def build(cand: dict) -> Short:
+    if (cand.get("id") or "").startswith("nw-"):
+        return build_report(cand)
     return build_death(cand) if cand["kind"] == "death" else build_incident(cand)

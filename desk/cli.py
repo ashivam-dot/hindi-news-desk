@@ -73,6 +73,10 @@ def overlap_record(short) -> dict | None:
     return {k: ov.get(k) for k in ("qid", "status", "orbitwire_id", "orbitwire_published_at", "high_profile", "angle")}
 
 
+def report_urls(short) -> list[str]:
+    return [r["url"] for r in short.scene.get("reporting") or []]
+
+
 def publish_refusal(short, work: Path, at: datetime) -> str | None:
     """Why this Short may not go out now: preview voice, no Sulafat record, channel not configured, or Orbitwire."""
     from . import orbitwire
@@ -91,7 +95,8 @@ def publish_refusal(short, work: Path, at: datetime) -> str | None:
         state = orbitwire.fetch()
     except Exception as exc:
         return f"orbitwire: its state is unreadable ({type(exc).__name__})"
-    ov = orbitwire.overlap(qid, state, at, title=short.scene.get("article"), story_id=short.id)
+    ov = orbitwire.overlap(qid, state, at, title=short.scene.get("article"), story_id=short.id,
+                           reports=report_urls(short))
     if ov and not short.scene.get("orbitwire"):
         return (f"orbitwire: Orbitwire now covers {qid or short.id} ({ov['status']}); this Short was not written as a "
                 "new angle")
@@ -118,7 +123,10 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     ledger.record_publish({"id": short.id, "kind": short.kind, "title": short.title, "loss": short.loss,
                            "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
                            "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
-                           "category": short.scene.get("category"), "region": short.scene.get("region"), **result})
+                           "category": short.scene.get("category"), "region": short.scene.get("region"),
+                           "article": short.scene.get("article"), "report_urls": report_urls(short),
+                           "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
+                           **result})
     return result
 
 

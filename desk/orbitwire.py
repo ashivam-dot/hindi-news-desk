@@ -70,12 +70,18 @@ def _at(value: str) -> datetime:
     return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
 
 
-def _same(row: dict, qid: str | None, ids: set[str]) -> bool:
+def _same(row: dict, qid: str | None, ids: set[str], urls: set[str] | None = None) -> bool:
     """One story: the same Wikidata item, or the same article id (a story told before Wikidata knew it is `wp-<title>`
-    on both channels, and Orbitwire records the article it told)."""
+    on both channels, and Orbitwire records the article it told), or the same outlet story (nw- ids naming one place
+    and kind, or a trusted outlet's report URL both used)."""
+    from .outlets import same_story
+
     rid = row.get("id", "")
+    outlet_story = rid.startswith("nw-") or any(i.startswith("nw-") for i in ids)
     return bool((qid and (row.get("qid") or qid_of(rid)) == qid) or rid in ids
-                or (row.get("article") and article_id(row["article"]) in ids))
+                or (row.get("article") and article_id(row["article"]) in ids)
+                or any(same_story(rid, i) for i in ids)
+                or (outlet_story and urls and urls & set(row.get("report_urls") or [])))
 
 
 def article_id(title: str) -> str:
@@ -85,12 +91,13 @@ def article_id(title: str) -> str:
 
 
 def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None,
-            story_id: str | None = None) -> dict | None:
-    """What Orbitwire did with this story (by QID, or by article for a story Wikidata did not know yet): its newest
-    release in the last SHARED_DAYS days (or a scheduled one), else whether it is Orbitwire's current top candidate;
-    None when the story is not shared."""
-    ids = {i for i in (story_id, article_id(title) if title else None) if i and i.startswith("wp-")}
-    if not qid and not ids:
+            story_id: str | None = None, reports: list[str] | None = None) -> dict | None:
+    """What Orbitwire did with this story (by QID, by article for a story Wikidata did not know yet, or by outlet story
+    for one Wikipedia has no article for: an nw- id or a report URL): its newest release in the last SHARED_DAYS days
+    (or a scheduled one), else whether it is Orbitwire's current top candidate; None when the story is not shared."""
+    ids = {i for i in (story_id, article_id(title) if title else None) if i and i.startswith(("wp-", "nw-"))}
+    urls = set(reports or [])
+    if not qid and not ids and not urls:
         return None
     rows = []
     for r in state.get("published", []):
@@ -98,7 +105,7 @@ def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None
             when = _at(r["published_at"])
         except (KeyError, ValueError, TypeError):
             continue
-        if _same(r, qid, ids) and at - when < timedelta(days=SHARED_DAYS):
+        if _same(r, qid, ids, urls) and at - when < timedelta(days=SHARED_DAYS):
             rows.append((when, r))
     if rows:
         when, r = max(rows, key=lambda x: x[0])
@@ -106,7 +113,8 @@ def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None
                 "orbitwire_published_at": when.isoformat(timespec="seconds"), "orbitwire_url": r.get("url"),
                 "orbitwire_title": r.get("title")}
     top = (state.get("candidates", {}).get("candidates") or [None])[0]
-    if top and _same({"id": top.get("id", ""), "qid": top.get("qid"), "article": top.get("title")}, qid, ids):
+    if top and _same({"id": top.get("id", ""), "qid": top.get("qid"), "article": top.get("title"),
+                      "report_urls": [r.get("url") for r in top.get("reports") or []]}, qid, ids, urls):
         return {"qid": qid, "status": "top_candidate", "orbitwire_id": top.get("id"), "orbitwire_published_at": None,
                 "orbitwire_url": None, "orbitwire_title": top.get("title"),
                 "orbitwire_seen_at": state["candidates"].get("at")}
@@ -160,5 +168,10 @@ def photo_pool(title: str, ent: dict, extra_qids: list[str] | None = None,
     the story's places it may fill in with when its own are too few."""
     from . import media
 
-    pool = [p.file for p in media.find(title, ent, limit=POOL, extra_qids=extra_qids, places=not ent)]
-    return pool + [p.file for p in media.context(context_qids or [], limit=POOL) if p.file not in pool]
+    pool = [p.file for p in media.find(title, ent, limit=POOL, extra_qids=extra_qids, places=not ent)] if title else []
+    pool += [p.file for p in media.context(context_qids or [], limit=POOL) if p.file not in pool]
+    try:
+        pool += [p.file for p in media.openverse_for(context_qids or [], limit=POOL) if p.file not in pool]
+    except Exception:
+        pass
+    return pool

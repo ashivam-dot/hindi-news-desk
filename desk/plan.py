@@ -19,7 +19,7 @@ from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
 
-from . import ledger, orbitwire, trends, usgs
+from . import ledger, news, orbitwire, outlets, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -106,6 +106,32 @@ def cooling(cand: dict, at: datetime, rows: list[dict]) -> bool:
                for r in rows if at - datetime.fromisoformat(r["published_at"]) < timedelta(days=days))
 
 
+TOLD_DAYS = 7
+
+
+def told_before(cand: dict, rows: list[dict], at: datetime) -> bool:
+    """True when this story went out in the last TOLD_DAYS under another id: first told from outlet reporting (nw-)
+    and now from its Wikipedia article, or the other way round. One story shares a report URL, or its nw- ids name
+    the same place and kind, or an nw- story's headlines name the article."""
+    urls = {r["url"] for r in cand.get("reports") or []}
+    for r in rows:
+        if at - datetime.fromisoformat(r["published_at"]) > timedelta(days=TOLD_DAYS):
+            continue
+        if not (r["id"].startswith("nw-") or cand["id"].startswith("nw-")):
+            continue  # stories told from Wikipedia on both sides are matched by their ids already
+        if urls & set(r.get("report_urls") or []) or outlets.same_story(cand["id"], r["id"]):
+            return True
+        if r["id"].startswith("nw-") and not cand["id"].startswith("nw-"):
+            heads, title = r.get("headlines") or [], cand.get("title")
+        elif cand["id"].startswith("nw-") and not r["id"].startswith("nw-"):
+            heads, title = cand.get("headlines") or [], r.get("article")
+        else:
+            continue
+        if title and any(news.reverse(h, [news.pool_item(title)]) for h in heads):
+            return True
+    return False
+
+
 def in_window(at: datetime) -> bool:
     local = at.astimezone(IST)
     hour = local.hour + local.minute / 60
@@ -174,7 +200,8 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
     fame = [c.get("fame", 0) for c in cands]
     kept, notes = [], []
     for c in cands:
-        ov = orbitwire.overlap(c.get("qid"), state, at, title=c.get("title"), story_id=c.get("id"))
+        ov = orbitwire.overlap(c.get("qid"), state, at, title=c.get("title"), story_id=c.get("id"),
+                               reports=[r["url"] for r in c.get("reports") or []])
         if not ov:
             kept.append(c)
             continue
@@ -189,6 +216,15 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
     return kept, notes
 
 
+def outlet_note(stats: dict, emerging: list[dict]) -> str:
+    from . import config
+
+    lane = "on" if config.NEW_STORIES else "off: DESK_NEW_STORIES"
+    return (f"outlets: {stats['headlines']} headlines from {stats['feeds']} feeds ({stats['owners']} owners), "
+            f"{stats['matched']} matched to articles, {stats['corroborated']} candidates with 2+ owners, "
+            f"{len(emerging)} nw- stories ({lane})" + (f": {', '.join(c['id'] for c in emerging[:3])}" if emerging else ""))
+
+
 def high_profile(cand: dict, fame: list[float]) -> str | None:
     return orbitwire.high_profile(cand, fame)
 
@@ -201,13 +237,17 @@ def watch(save: bool = True) -> dict:
         found["trending"] = radar["candidates"]
         if radar["errors"]:
             found["trend_errors"] = radar["errors"]
+        if radar.get("outlets"):
+            found["outlets"] = radar["outlets"]
+            found["emerging"] = radar.get("emerging", [])
+            found["notes"].append(outlet_note(radar["outlets"], found["emerging"]))
     except Exception as exc:
         found["trend_errors"] = [f"{type(exc).__name__}: {exc}"[:200]]
     found["notes"] += _quake_facts(found["trending"])
     at = datetime.now(timezone.utc)
     rows = ledger.published()
     stories = [c for c in found["trending"] if not ledger.is_done(c["id"]) and not cooling(c, at, rows)
-               and not ledger.is_done(trends.article_id(c["title"]))]
+               and not ledger.is_done(trends.article_id(c["title"])) and not told_before(c, rows, at)]
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))

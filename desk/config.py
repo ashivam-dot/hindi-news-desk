@@ -24,6 +24,10 @@ LANGUAGE = "hi"
 ORBITWIRE_REPO = "ashivam-dot/rebuilt-in-3d"
 ORBITWIRE_STATE = f"https://raw.githubusercontent.com/{ORBITWIRE_REPO}/state"
 
+# Stories Wikipedia has no article for yet (nw- ids, told only from trusted outlets' reporting; see CHANNEL.md). Off
+# by default: the radar still finds and records them; the repository variable DESK_NEW_STORIES=true lets them run.
+NEW_STORIES = os.environ.get("DESK_NEW_STORIES", "").lower() == "true"
+
 CHANNEL_ID_FORMAT = re.compile(r"^UC[0-9A-Za-z_-]{22}$")
 
 

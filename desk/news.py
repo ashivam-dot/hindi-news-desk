@@ -4,7 +4,8 @@ Wikipedia's most-read list is a day behind and Google Trends shows searches, not
 News show what newsrooms are leading with right now. Each headline is matched to the Wikipedia article about it (a
 Hindi headline through Hindi Wikipedia, then the same item's English article); an article's heat is how many lead
 stories and outlets point at it, and how recent the newest one is. Hindi lead stories are also counted on their own:
-they show how big a story is for this channel's audience.
+they show how big a story is for this channel's audience. The trusted outlets' own feeds (desk/outlets.py) join the
+lead stories the same way, weighted by how many independent owners cover the story.
 """
 from __future__ import annotations
 
@@ -30,6 +31,10 @@ HINDI_FEEDS = ("IN-hi", "IN-hi-nation", "IN-hi-world")
 MAX_AGE_H = 36
 # One lead story counts like this much Google Trends traffic on the fame scale, times the outlets covering it.
 HEADLINE_FAME = 25000
+# A trusted outlet's headline (desk/outlets.py) adds one HEADLINE_FAME per independent owner, up to this many owners.
+OUTLET_MAX_OWNERS = 6
+# Outlet headlines looked up on Wikipedia's search each run (newest first); the rest are matched only to the pool.
+OUTLET_SEARCHES = 160
 NOISE = re.compile(r"^(BREAKING|LIVE|LIVE UPDATES|WATCH|EXCLUSIVE|EXPLAINED|ब्रेकिंग|लाइव|बड़ी खबर|बड़ी ख़बर)\s*[|:\-]\s*",
                    re.I)
 EDITED_WITHIN_H = 72
@@ -164,9 +169,21 @@ def headlines(feed: str, now: datetime | None = None) -> list[dict]:
     return out
 
 
-def signals(now: datetime | None = None, pool: list[dict] | None = None) -> tuple[dict[str, dict], list[str]]:
-    """English Wikipedia title -> {news, news_at, headlines, hindi_headlines, hindi_news, geos}; plus feed errors.
-    A headline Wikipedia's search does not resolve is matched against pool (see reverse)."""
+def _from_outlet(item: dict) -> dict:
+    return {"title": NOISE.sub("", item["title"]).strip(), "outlet": item["outlet"], "outlets": 1, "at": item["at"],
+            "feed": "outlet:" + item["feed"], "lang": item["lang"], "owner": item["owner"], "geo": item["geo"],
+            "src": item}
+
+
+def signals(now: datetime | None = None, pool: list[dict] | None = None,
+            outlet_items: list[dict] | None = None) -> tuple[dict[str, dict], list[str]]:
+    """English Wikipedia title -> {news, news_at, headlines, hindi_headlines, hindi_news, geos, owners, reports}; plus
+    feed errors. A headline Wikipedia's search does not resolve is matched against pool (see reverse).
+
+    outlet_items (desk/outlets.py) join the Google News lead stories: each independent owner covering an article adds
+    one HEADLINE_FAME, a Hindi outlet's headline is a Hindi headline, and the items are kept as the story's reports.
+    Each outlet item matched to an article is marked with it ("matched"); the newest OUTLET_SEARCHES are looked up on
+    Wikipedia's search, the rest only in pool."""
     hits: dict[str, dict] = {}
     errors = []
     items = []
@@ -175,13 +192,21 @@ def signals(now: datetime | None = None, pool: list[dict] | None = None) -> tupl
             items += headlines(feed, now)
         except Exception as exc:
             errors.append(f"google news {feed}: {exc}"[:200])
+    searchable = len(items) + OUTLET_SEARCHES
+    items += [_from_outlet(i) for i in outlet_items or []]
 
     failed = []
 
-    def safe_match(h):
+    def hindi_item(h: dict) -> bool:
+        return h["feed"] in HINDI_FEEDS or h.get("lang") == "hi"
+
+    def safe_match(numbered):
+        n, h = numbered
+        if n >= searchable:
+            return None
         for attempt in range(2):
             try:
-                return match(h["title"], now, "hi" if h["feed"] in HINDI_FEEDS else "en")
+                return match(h["title"], now, "hi" if hindi_item(h) else "en")
             except Exception as exc:
                 if attempt:
                     failed.append(type(exc).__name__ + (f" {exc}" if str(exc).startswith("HTTP") else ""))
@@ -190,10 +215,10 @@ def signals(now: datetime | None = None, pool: list[dict] | None = None) -> tupl
         return None
 
     with ThreadPoolExecutor(max_workers=4) as workers:
-        titles = list(workers.map(safe_match, items))
+        titles = list(workers.map(safe_match, enumerate(items)))
     if failed:
         errors.append(f"wikipedia search failed for {len(failed)} of {len(items)} headlines ({failed[0]})"[:200])
-    hindi = sorted({t for h, t in zip(items, titles) if t and h["feed"] in HINDI_FEEDS})
+    hindi = sorted({t for h, t in zip(items, titles) if t and hindi_item(h)})
     try:
         to_en = wiki.hi_to_en(hindi) if hindi else {}
     except Exception as exc:
@@ -201,7 +226,7 @@ def signals(now: datetime | None = None, pool: list[dict] | None = None) -> tupl
         errors.append(f"hindi wikipedia links: {exc}"[:200])
     pooled = {p["title"] for p in pool or []}
     for h, title in zip(items, titles):
-        is_hindi = h["feed"] in HINDI_FEEDS
+        is_hindi = hindi_item(h)
         if is_hindi:
             title = to_en.get(title) if title else None
         if pool and title not in pooled:
@@ -210,14 +235,27 @@ def signals(now: datetime | None = None, pool: list[dict] | None = None) -> tupl
         if not title:
             continue
         row = hits.setdefault(title, {"news": 0, "news_at": h["at"], "headlines": [], "hindi_headlines": [],
-                                      "hindi_news": 0, "geos": set()})
+                                      "hindi_news": 0, "geos": set(), "owners": [], "reports": []})
         bucket = row["hindi_headlines"] if is_hindi else row["headlines"]
-        if h["title"] in bucket:
+        if "src" in h:
+            h["src"]["matched"] = title
+            row["reports"].append(h["src"])
+            if h["owner"] in row["owners"]:
+                continue  # sister brands and a second headline from one newsroom count once
+            row["owners"].append(h["owner"])
+            if len(row["owners"]) <= OUTLET_MAX_OWNERS:
+                row["news"] += HEADLINE_FAME
+        elif h["title"] in bucket:
             continue
-        row["news"] += HEADLINE_FAME * min(h["outlets"], 6)
+        else:
+            row["news"] += HEADLINE_FAME * min(h["outlets"], 6)
         row["news_at"] = max(row["news_at"], h["at"])
-        bucket.append(h["title"])
+        if h["title"] not in bucket:
+            bucket.append(h["title"])
         row["hindi_news"] += is_hindi
         # A world section is not an Indian signal, whatever its edition (it must not make a story an India story).
-        row["geos"].add("world" if h["feed"].endswith("world") else h["feed"].split("-")[0])
+        geo = h.get("geo") if "src" in h else (
+            h.get("geo") or ("world" if h["feed"].endswith("world") else h["feed"].split("-")[0]))
+        if geo:
+            row["geos"].add(geo)
     return hits, errors

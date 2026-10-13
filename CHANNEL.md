@@ -49,6 +49,46 @@ headline two items fit matches nothing). Any search Google Trends lists counts (
 read 1000 deep for those deaths and fresh events. A GDACS Orange or Red alert from the last 4 days leads to its
 disaster's own article (`desk/gdacs.py`; worth 50k or 150k fame), and Google News' Hindi world section is read too.
 
+**Trusted sources beyond Wikipedia (2026-10-13; owner: "don't relay on wikipedia only search for other trusted souces
+as well").** `desk/outlets.py` keeps an allowlist of trusted outlets with public RSS feeds: official (PIB in English
+and Hindi, UN News Hindi), public broadcasters (BBC World, BBC India, BBC Hindi, DW, NPR), international (Al Jazeera,
+The Guardian), Indian national (The Hindu, Hindustan Times, Times of India) and Hindi (Live Hindustan, Amar Ujala,
+AajTak, ABP Live). Each outlet has an `owner`; sister brands count once (HT Media is Hindustan Times and Live
+Hindustan, the BBC is all three BBC feeds, the Government of India both PIB feeds). Feeds are read in parallel once a
+run (36 hours back); a feed that fails is listed in the run's errors and the rest still count. Articles are read
+with trafilatura (20 s timeout, at most 12 a run, cached). Outlet photos are never used. Plain-http links are read
+as https.
+- **Discovery:** outlet headlines join Google News: matched to a Wikipedia article the same way, each independent
+  owner adding one lead headline's fame (at most 6), and a Hindi outlet's headline counting as a Hindi headline.
+  Only national sections count as an India signal; a feed that mixes India and world news (Times of India top
+  stories, Amar Ujala breaking, AajTak and ABP Live home) never makes a story an India story.
+- **Corroboration:** the writer gets a REPORTING block of 2-4 articles about the story (named by its headline or
+  summary, inside its time window), each from a different owner, official, public and international ones first; a
+  report found at discovery is used only if it names the story. Every number, name and claim must be in
+  Wikipedia/Wikidata or in the articles of at least two independent owners; one outlet alone never backs a fact (the
+  writer's checks and `desk/gate.py` both refuse it). A casualty number still needs the infobox and Wikidata to
+  agree, or else two owners stating the same exact number (no hedge before or after it, such as "at least", "or
+  more" or "से अधिक"; no other number from any outlet; never a number different from the infobox's; and Wikidata
+  agreeing when it has one), or one owner and Wikidata's only toll. The toll reaches the writer as a confirmed fact:
+  every sentence about deaths, bodies or injuries is removed from the articles, as are sentences about suicide and,
+  for an incident, any naming a suspect, attacker or arrest.
+- **Stories Wikipedia has no article for yet** (`nw-<yyyymmdd>-<place>-<kind>`): at least 3 independent owners
+  within 24 hours, one of them official, a public broadcaster or international, whose English headlines name the
+  same incident or protest (same scope rules; sport, politics, trials and gossip never). They are told only from
+  the reporting (at least two owners' articles must name the place), with photos of the place (Commons, then
+  Openverse; the place must be a Wikidata item with coordinates, never a person). Once Wikipedia writes the article,
+  the story is
+  not told again for 7 days (a shared report URL, the same nw- place and kind, or its headlines naming the article),
+  and Orbitwire's overlap rules match nw- ids and report URLs too. **This lane is off** until the run's environment
+  sets `DESK_NEW_STORIES=true` (to turn it on, add `DESK_NEW_STORIES: ${{ vars.DESK_NEW_STORIES }}` to the job's
+  `env` in `.github/workflows/run.yml` and set that repository variable): the radar still finds and logs these
+  stories ("emerging" in `state/trends.json`, counted in the run's outlets note) but does not offer them.
+- **Photos:** when Commons has fewer than 3 usable photos, Openverse (keyless; CC0, CC BY and CC BY-SA only, never
+  non-commercial, no-derivatives or the public-domain mark) fills in with photos of the places the story links to
+  (Wikidata items with coordinates; never a person, group or work), never one that features a face; each is
+  credited to its author, licence and host.
+- **Description:** "स्रोत: Wikipedia, BBC, The Hindu" names the outlets behind the facts, then every URL.
+
 ## The editorial desk (`desk/plan.py`)
 
 The desk is India-first and runs unattended; it decides what goes out and when.

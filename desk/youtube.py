@@ -12,7 +12,7 @@ import re
 import time
 from pathlib import Path
 
-from . import config, gate
+from . import config, gate, media
 from .spec import Short
 
 TOKEN_FILE = Path(__file__).resolve().parents[1] / "secrets" / "token.json"
@@ -88,6 +88,16 @@ def photo_credits(photos: list[dict]) -> str:
     return "तस्वीरें (Wikimedia Commons): " + "; ".join(f"{', '.join(n)} ({lic})" for lic, n in by_licence.items())
 
 
+def source_lines(short: Short) -> list[str]:
+    """The sources block: "स्रोत: Wikipedia, BBC, The Hindu" naming who the facts come from (when trusted outlets'
+    reporting backs any), then every source URL."""
+    named = short.scene.get("outlets") or []
+    if not named:
+        return ["स्रोत:"] + short.sources + [""]
+    wiki = ["Wikipedia"] if any("wikipedia.org" in s or "wikidata.org" in s for s in short.sources) else []
+    return ["स्रोत: " + ", ".join(wiki + named)] + short.sources + [""]
+
+
 def description(short: Short, voice: dict) -> str:
     lines = [short.summary, ""]
     if short.kind != "advisory":
@@ -97,12 +107,12 @@ def description(short: Short, voice: dict) -> str:
             card = b.card or {}
             if card.get("kind") == "list":
                 lines += [card["big"] + ":", ", ".join(card["items"]), ""]
-    lines += ["स्रोत:"] + short.sources + [""]
+    lines += source_lines(short)
     made = ("यह सूची ऊपर दी गई रिपोर्टों में बताई गई DMRC, रेलवे और पुलिस की सूचनाओं से हाथ से मिलाकर बनाई गई है। "
             + ("तस्वीरें असली हैं। " if short.scene.get("photos") else "") + "आवाज़ AI की है।"
             if short.kind == "advisory" else
-            "यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं (Wikimedia Commons), उन पर हल्की 3D कैमरा मूवमेंट जोड़ी "
-            "गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
+            f"यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं ({media.hosts(short.scene.get('photos') or [])}), उन पर "
+            "हल्की 3D कैमरा मूवमेंट जोड़ी गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
     lines += [made,
               VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
               "कोई गलती दिखे तो स्रोत के साथ कमेंट करें, हम सुधार करेंगे।", ""]

@@ -12,7 +12,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 
-from . import net, news, wiki
+from . import config, net, news, outlets, wiki
 
 GEOS = ("IN", "US", "GB")
 INDIA = "Q668"
@@ -106,8 +106,12 @@ def gdacs_hits(today: date) -> list[tuple[str, dict]]:
     return out
 
 
+READ: list[dict] = []  # the trusted outlets' items the last _signals read, each marked with the article it matched
+
+
 def _signals() -> tuple[dict[str, dict], list[str]]:
-    """title -> {views, traffic, via}; plus any errors (one failed source must not stop the radar)."""
+    """title -> {views, traffic, via}; plus any errors (one failed source must not stop the radar). The trusted
+    outlets' items read are kept in READ."""
     hits: dict[str, dict] = {}
     errors = []
     now = datetime.now(timezone.utc)
@@ -172,7 +176,14 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
             if india:
                 h.setdefault("geos", set()).add("IN")
     try:
-        lead, news_errors = news.signals(pool=pool)
+        outlet_items, outlet_errors = outlets.recent()
+        errors += outlet_errors
+    except Exception as exc:
+        outlet_items = []
+        errors.append(f"outlets: {exc}"[:200])
+    READ.extend(outlet_items)
+    try:
+        lead, news_errors = news.signals(pool=pool, outlet_items=outlet_items)
         errors += news_errors
     except Exception as exc:
         lead = {}
@@ -181,8 +192,10 @@ def _signals() -> tuple[dict[str, dict], list[str]]:
         h = hits.setdefault(title, {"views": 0, "traffic": 0, "via": []})
         h["news"], h["news_at"], h["headlines"] = n["news"], n["news_at"], n["headlines"][:5]
         h["hindi_news"], h["hindi_headlines"] = n.get("hindi_news", 0), n.get("hindi_headlines", [])[:5]
+        h["owners"], h["reports"] = n.get("owners", []), n.get("reports", [])
         h.setdefault("geos", set()).update(n["geos"])
         h["via"] += [f"google-news:{t}" for t in (n["headlines"] + n.get("hindi_headlines", []))[:3]]
+        h["via"] += [f"outlet:{o}" for o in n.get("owners", [])]
     return hits, errors
 
 
@@ -301,7 +314,9 @@ def article_id(title: str) -> str:
 def radar(today: date | None = None) -> dict:
     """Trending candidates, ranked by fame. Written to state/trends.json by the caller."""
     today = today or datetime.now(timezone.utc).date()
+    READ.clear()
     hits, errors = _signals()
+    read = list(READ)
     try:
         info = wiki.page_info(list(hits))
         qids = sorted({i["qid"] for i in info.values() if i.get("qid")})
@@ -314,7 +329,7 @@ def radar(today: date | None = None) -> dict:
     except Exception as exc:
         errors.append(f"wikidata: {exc}"[:200])
         return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "candidates": [], "errors": errors,
-                "scanned": len(hits)}
+                "scanned": len(hits), "emerging": [], "outlets": outlet_stats(read, [])}
     out, seen = [], set()
     for title, h in hits.items():
         page = info.get(title)
@@ -339,7 +354,8 @@ def radar(today: date | None = None) -> dict:
                 "news": h.get("news", 0), "news_at": news_at, "headlines": h.get("headlines", []),
                 "hindi_news": h.get("hindi_news", 0), "hindi_headlines": h.get("hindi_headlines", []),
                 "region": region(ent, geos), "india_link": india_link(ent, geos, h.get("hindi_news", 0)),
-                "geos": sorted(geos), "label_hi": wiki.label(ent, "hi"), "via": h["via"]}
+                "geos": sorted(geos), "label_hi": wiki.label(ent, "hi"), "via": h["via"],
+                "owners": h.get("owners", []), "reports": [outlets.compact(r) for r in h.get("reports", [])][:8]}
         if "human" in cats:
             died = next((wiki.wd_time(c["value"]) for c in wiki.claims(ent, "P570")), None)
             if not died or not 0 <= (today - died).days <= DEATH_MAX_DAYS:
@@ -370,6 +386,20 @@ def radar(today: date | None = None) -> dict:
         out.append(base | {"id": sid, "kind": "incident", "category": cat, "date": when.isoformat(),
                            "coords": coords,
                            "has_coords": bool(coords or wiki.claims(ent, "P276") or wiki.claims(ent, "P1427"))})
+    try:
+        emerging = outlets.stories(read, datetime.now(timezone.utc), known=list(hits))
+    except Exception as exc:
+        emerging = []
+        errors.append(f"outlet stories: {type(exc).__name__}: {exc}"[:200])
+    if config.NEW_STORIES:
+        out += emerging
     out.sort(key=lambda c: -c["fame"])
     return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "candidates": out, "errors": errors,
-            "scanned": len(hits)}
+            "scanned": len(hits), "emerging": emerging, "outlets": outlet_stats(read, out)}
+
+
+def outlet_stats(read: list[dict], cands: list[dict]) -> dict:
+    """What the trusted outlets added this run (recorded in candidates.json and the run's health)."""
+    return {"headlines": len(read), "feeds": len({i["feed"] for i in read}), "owners": len(outlets.owners(read)),
+            "matched": sum(1 for i in read if i.get("matched")),
+            "corroborated": sum(1 for c in cands if len(outlets.owners(c.get("reports") or [])) >= 2)}

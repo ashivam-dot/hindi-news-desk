@@ -1,5 +1,6 @@
 """The checks a Short must pass before it can publish: grounded numbers, decorum (in Hindi and English), title rules,
-credited free photos, the AI-voice disclosure, the Sulafat voice, and Orbitwire's rules for shared stories."""
+credited free photos, the AI-voice disclosure, the Sulafat voice, Orbitwire's rules for shared stories, and two
+independent owners behind any fact taken from trusted outlets' reporting (desk/outlets.py)."""
 from __future__ import annotations
 
 import re
@@ -30,6 +31,23 @@ CASUALTY = ["casualt*", "death toll", "killed", "fatalit*", "wounded", "injured"
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
+# Outlet reporting (desk/outlets.py) backs a fact only when this many independent owners state it; a fact only one
+# outlet reports is never said.
+OWNERS_NEEDED = 2
+_N = r"\d{1,3}(?:,\d{3})+|\d+"
+_HEDGE = r"(?P<hedge>(?:at least|more than|over|nearly|about|around|up to|some|almost|roughly)\s+)?"
+TOLLS = [
+    re.compile(rf"(?<![\w.,]){_HEDGE}(?P<n>{_N})\s+(?:[A-Za-z-]+\s+){{0,3}}?(?:killed|dead|died|lost their lives)\b",
+               re.I),
+    re.compile(rf"\b(?:death toll|toll)\s+(?:[A-Za-z-]+\s+){{0,3}}?{_HEDGE}(?P<n>{_N})\b", re.I),
+    re.compile(rf"\b(?:killing|killed)\s+{_HEDGE}(?P<n>{_N})\s+(?:people|persons|passengers|civilians|workers)\b",
+               re.I),
+    re.compile(r"(?P<hedge>(?:कम से कम|करीब|क़रीब|लगभग|तकरीबन)\s+)?(?P<n>\d+)\s+(?:\S+\s+){0,2}?(?:की\s+)?"
+               r"(?:मौत|मौतें|जान\s+(?:चली|गई|गंवा|गँवा)|मारे\s+गए)"),
+]
+# A hedge written after the number ("12 or more killed", "50 से अधिक की मौत", "12 feared dead") is not exact either.
+_HEDGE_AFTER = re.compile(r"\b(?:or more|or so|plus|feared|presumed|believed|reportedly)\b|\+|से\s+(?:ज़्|ज्)?यादा|"
+                          r"से\s+अधिक|से\s+ऊपर", re.I)
 
 
 def found(text: str, words: list[str]) -> str | None:
@@ -64,6 +82,57 @@ def numbers(text: str) -> list[str]:
     return [v for v, _ in hindi.numbers(text)]
 
 
+def reported(needle: str, reports: list[dict]) -> list[str]:
+    """The independent owners whose articles write needle (whole words, Hindi spellings normalised)."""
+    return sorted({r["owner"] for r in reports if r.get("text") and hindi.contains(r["text"], needle)})
+
+
+def reported_values(reports: list[dict]) -> dict[str, list[str]]:
+    """Every number value the reports state (15 लाख = 1.5 million = 1500000) -> the owners stating it."""
+    by: dict[str, set[str]] = {}
+    for r in reports:
+        for v in hindi.values(r.get("text") or ""):
+            by.setdefault(v, set()).add(r["owner"])
+    return {v: sorted(o) for v, o in by.items()}
+
+
+def corroborated_values(reports: list[dict]) -> set[str]:
+    """Number values at least OWNERS_NEEDED independent owners state."""
+    return {v for v, o in reported_values(reports).items() if len(o) >= OWNERS_NEEDED}
+
+
+def reported_tolls(reports: list[dict]) -> dict[str, set[int]]:
+    """owner -> the exact death tolls its articles state ("12 people were killed", "12 लोगों की मौत"); hedged counts
+    ("at least 12") are not exact and are left out."""
+    by: dict[str, set[int]] = {}
+    for r in reports:
+        body = hindi.ascii_digits(r.get("text") or "")
+        for pattern in TOLLS:
+            for m in pattern.finditer(body):
+                n = int(m.group("n").replace(",", ""))
+                if m.group("hedge") or _HEDGE_AFTER.search(body[m.end("n"):m.end() + 12]):
+                    n = -1  # a hedged count: no exact toll may be said beside it
+                by.setdefault(r["owner"], set()).add(n)
+    return by
+
+
+def reported_toll(reports: list[dict], wikidata: set[int] | None = None) -> tuple[int, list[str]] | None:
+    """A death toll the reporting agrees on, with the owners stating it: two independent owners give the same exact
+    number (or one does and Wikidata's only toll is that number), no outlet gives a different or hedged one (a rising
+    toll is not said), and Wikidata, when it has a toll, agrees. None otherwise."""
+    by = reported_tolls(reports)
+    stated = {n for ns in by.values() for n in ns}
+    if len(stated) != 1:
+        return None
+    n = stated.pop()
+    who = sorted(o for o, ns in by.items() if n in ns)
+    if wikidata and n not in wikidata:
+        return None
+    if len(who) >= OWNERS_NEEDED or (who and wikidata == {n}):
+        return n, who
+    return None
+
+
 def check(short: Short) -> list[str]:
     problems = []
     allowed = {n.replace(",", "") for f in short.facts for n in f.numbers}
@@ -96,6 +165,7 @@ def check(short: Short) -> list[str]:
             problems.append(f"fact {f.key}: no https source")
     problems += _story(short)
     problems += _shared(short)
+    problems += _reported(short)
     if short.scene.get("voice_preview"):
         problems.append("voice: made with the preview voice; it can never be published")
     return problems
@@ -131,6 +201,23 @@ def _story(short: Short) -> list[str]:
         problems.append("beats: a beat points at a photo that does not exist")
     if "आवाज़: AI" not in compose.DISCLOSURE or "AI" not in compose.AI_BADGE:
         problems.append("end card: the AI-voice disclosure is missing")
+    return problems
+
+
+def _reported(short: Short) -> list[str]:
+    """A fact taken from outlet reporting needs OWNERS_NEEDED independent owners among the Short's reports, and the
+    outlets it comes from are named in the description."""
+    reports = short.scene.get("reporting") or []
+    known = {r["owner"] for r in reports}
+    urls = {r["url"] for r in reports}
+    problems = []
+    for f in short.facts:
+        if f.owners or f.source in urls:
+            who = set(f.owners) & known
+            if len(who) < OWNERS_NEEDED:
+                problems.append(f"fact {f.key}: {len(who)} independent outlet(s) report it (want {OWNERS_NEEDED})")
+    if reports and not short.scene.get("outlets"):
+        problems.append("sources: the outlets the facts come from are not named")
     return problems
 
 

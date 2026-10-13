@@ -27,6 +27,15 @@ FONTS = Path(__file__).resolve().parent / "fonts"
 WEIGHTS = {"ExtraBold": "Mukta-ExtraBold.ttf", "Bold": "Mukta-Bold.ttf", "SemiBold": "Mukta-SemiBold.ttf",
            "Medium": "Mukta-Medium.ttf"}
 DISCLOSURE = "असली तस्वीरें: Wikimedia Commons · आवाज़: AI"
+
+
+def disclosure(photos: list[dict]) -> str:
+    """The end card's disclosure, naming Openverse too when a photo comes from it."""
+    from . import media
+
+    return DISCLOSURE.replace("Wikimedia Commons", media.hosts(photos))
+
+
 # On screen for the whole Short (India's IT Rules ask synthetic content to carry a visible label).
 AI_BADGE = "AI आवाज़"
 ACCENT = {"tribute": (255, 205, 92), "news": (90, 200, 255)}
@@ -357,7 +366,7 @@ def render(short: Short, timing: dict, work: Path) -> dict:
         sub = shots[0]["beat"].card.get("big", "") if shots[0]["beat"].card else ""
     hook = _hook_layer(name, sub, accent)
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
-    end = _end_layers(accent)
+    end = _end_layers(accent, disclosure(photos))
     badge = _badge_layer()
     work.mkdir(parents=True, exist_ok=True)
     mixed = _mix(work / "narration.wav", short, duration, work)
