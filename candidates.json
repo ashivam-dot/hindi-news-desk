@@ -1,5 +1,5 @@
 {
- "at": "2026-10-13T02:56:15+00:00",
+ "at": "2026-10-13T03:28:00+00:00",
  "trending": [
   {
    "qid": "Q2118568",
@@ -8,9 +8,9 @@
    "views": 1406448,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-13T00:09:42+00:00",
+   "news_at": "2026-10-13T02:48:04+00:00",
    "headlines": [
-    "RJ Mitte, Who Played Walter White’s Son on ‘Breaking Bad,’ Dies at 34"
+    "RJ Mitte, \"Breaking Bad\" actor, dies at age 34"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -22,7 +22,7 @@
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-12",
-    "google-news:RJ Mitte, Who Played Walter White’s Son on ‘Breaking Bad,’ Dies at 34"
+    "google-news:RJ Mitte, \"Breaking Bad\" actor, dies at age 34"
    ],
    "id": "wk-Q2118568",
    "kind": "death",
@@ -32,21 +32,26 @@
   {
    "qid": "Q141695384",
    "title": "October 2026 attacks on Saudi Arabia airports",
-   "fame": 95703,
+   "fame": 220703,
    "views": 45703,
    "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-13T00:00:00+00:00",
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-10-13T01:26:02+00:00",
+   "headlines": [
+    "Saudi minister vows 'serious response' to Houthi attacks on airports"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "world"
+   ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-12",
-    "wikipedia-current-events-2026-10-12"
+    "wikipedia-current-events-2026-10-12",
+    "google-news:Saudi minister vows 'serious response' to Houthi attacks on airports"
    ],
    "id": "wk-Q141695384",
    "kind": "incident",
@@ -102,6 +107,31 @@
    "date": "2026-10-12",
    "coords": null,
    "has_coords": true
+  },
+  {
+   "qid": null,
+   "title": "2026 French supermarket cyber attack",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-13T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-12"
+   ],
+   "id": "wp-2026_French_supermarket_cyber_attack",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-13",
+   "coords": null,
+   "has_coords": false
   },
   {
    "qid": "Q2475741",
@@ -177,27 +207,29 @@
  ],
  "candidates": [
   {
-   "qid": "Q13119635",
-   "title": "Madhu Kambikar",
-   "fame": 16879,
-   "views": 16879,
+   "qid": null,
+   "title": "2026 French supermarket cyber attack",
+   "fame": 50000,
+   "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": null,
+   "news_at": "2026-10-13T00:00:00+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
+   "region": "world",
+   "india_link": false,
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-12"
+    "wikipedia-current-events-2026-10-12"
    ],
-   "id": "wk-Q13119635",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-12"
+   "id": "wp-2026_French_supermarket_cyber_attack",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-13",
+   "coords": null,
+   "has_coords": false
   },
   {
    "qid": "Q2475741",
@@ -233,5 +265,7 @@
    }
   }
  ],
- "notes": []
+ "notes": [
+  "skip wk-Q13119635: Orbitwire top candidate (wk-Q13119635), not high-profile enough to tell again"
+ ]
 }
