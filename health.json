@@ -1,20 +1,24 @@
 {
- "at": "2026-10-14T15:44:50+00:00",
+ "at": "2026-10-14T16:22:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 13 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.758, 'typical_views_24h': 37}}",
-  "watch: 8 candidates from 18 trending",
-  "outlets: 1452 headlines from 31 feeds (19 owners), 41 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261014-Q3633485, kh-20261014-Q139881668, kh-20261014-Q139857349, kh-20261014-Q123; dropped: explainer Houthis: fewer than 3 owners' headlines name it and the story",
+  "watch: 9 candidates from 20 trending",
+  "outlets: 1454 headlines from 31 feeds (19 owners), 40 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261014-hormuz-maritime",
+  "explainers: 7 kh- stories (on): kh-20261014-Q139881668, kh-20261014-Q139857349, kh-20261014-Q3633485, kh-20261014-Q116687309; dropped: explainer Saudi Aramco HQ: fewer than 3 owners' headlines name it and the story",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q5300674: 76 h old and no longer trending live",
   "drop wk-Q7327889: 196 h old and no longer trending live",
-  "skip kh-20261014-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
   "skip kh-20261014-Q139881668: gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
-  "skip kh-20261014-Q123: gate: no draft passed the fact checks: unsupported: रिपोर्टों में अन्य पक्षों की ओर से कोई आधिकारिक प्रतिक्रिया सामने नहीं आई है।",
-  "skip kh-20261014-Q6109517: gate: fewer than 2 independent outlets' articles about Leo XIV could be read",
-  "nothing eligible to publish"
- ]
+  "skip kh-20261014-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
+  "published kh-20261014-Q116687309: https://www.youtube.com/shorts/ON_PKczPZ4I"
+ ],
+ "published": {
+  "video_id": "ON_PKczPZ4I",
+  "url": "https://www.youtube.com/shorts/ON_PKczPZ4I",
+  "title": "अंकिता भंडारी हत्याकांड: दिल्ली में माता-पिता का प्रदर्शन",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
