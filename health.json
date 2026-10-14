@@ -1,24 +1,16 @@
 {
- "at": "2026-10-14T17:56:10+00:00",
+ "at": "2026-10-14T18:13:32+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 18 trending",
-  "outlets: 1446 headlines from 31 feeds (19 owners), 44 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261014-Q69906, kh-20261014-Q10218, kh-20261014-Q3633485, kh-20261014-Q6109517; dropped: explainer Starlink: fewer than 3 owners' headlines name it and the story",
+  "watch: 4 candidates from 18 trending",
+  "outlets: 1439 headlines from 31 feeds (19 owners), 42 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261014-Q69906, kh-20261014-Q3633485, kh-20261014-Q140632219, kh-20261014-Q6109517",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261014-Q3633485: last Short went out 0.2 h ago",
+  "hold kh-20261014-Q140632219: last Short went out 0.2 h ago",
   "drop wk-Q5300674: 78 h old and no longer trending live",
-  "drop wk-Q7327889: 198 h old and no longer trending live",
-  "skip kh-20261014-Q10218: gate: no draft passed the fact checks: unsupported: रिपोर्टों में इस मामले पर सरकार की प्रतिक्रिया उपलब्ध नहीं है।",
-  "skip kh-20261014-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
-  "published kh-20261014-Q123: https://www.youtube.com/shorts/A39rK3H0OwI"
- ],
- "published": {
-  "video_id": "A39rK3H0OwI",
-  "url": "https://www.youtube.com/shorts/A39rK3H0OwI",
-  "title": "सितम्बर महीने में थोक मूल्य सूचकांक आधारित मुद्रास्फीति में वृद्धि हुई",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "drop wk-Q7327889: 198 h old and no longer trending live"
+ ]
 }
