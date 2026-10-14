@@ -1,18 +1,19 @@
 {
- "at": "2026-10-14T21:37:31+00:00",
+ "at": "2026-10-14T22:09:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 19 trending",
-  "outlets: 1368 headlines from 30 feeds (19 owners), 54 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261015-Q19867977, kh-20261015-Q3633485, kh-20261015-Q6109517, kh-20261015-Q140632219; dropped: explainer Kenya’s Health Ministry: fewer than 3 owners' headlines name it and the story",
+  "learn: 13 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.758, 'typical_views_24h': 37}}",
+  "watch: 7 candidates from 18 trending",
+  "outlets: 1355 headlines from 30 feeds (19 owners), 47 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261015-Q19867977, kh-20261015-Q3633485, kh-20261015-Q140632219, kh-20261015-Q6109517; dropped: explainer Frankfurt-Delhi Air India / Frankfurt-Delhi Air India: no Wikipedia article that can be its centre",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
-  "trend radar errors: [\"outlet pib-hi: ReadTimeout: HTTPSConnectionPool(host='www.pib.gov.in', port=443): Read timed out. (read timeout=30)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261015-Q3633485: outside 07:00-24:00 IST",
   "hold kh-20261015-Q140632219: outside 07:00-24:00 IST",
   "hold kh-20261015-Q19867977: outside 07:00-24:00 IST",
-  "hold kh-20261015-Q6109517: outside 07:00-24:00 IST",
   "hold kh-20261015-Q3506475: outside 07:00-24:00 IST",
+  "hold kh-20261015-Q6109517: outside 07:00-24:00 IST",
   "drop wk-Q5300674: 82 h old and no longer trending live"
  ]
 }
