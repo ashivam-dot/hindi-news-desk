@@ -1,16 +1,15 @@
 {
- "at": "2026-10-14T03:44:36+00:00",
+ "at": "2026-10-14T04:18:11+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 12 trending",
-  "outlets: 1278 headlines from 31 feeds (19 owners), 29 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
+  "watch: 4 candidates from 12 trending",
+  "outlets: 1268 headlines from 31 feeds (19 owners), 26 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 1 kh- stories (on): kh-20261014-Q87570577; dropped: explainer Greece: no Indian Wikipedia article about it; explainer Trump: no Indian Wikipedia article about it; explainer MEA: no Indian Wikipedia article about it",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q5300674: 64 h old and no longer trending live",
   "drop wk-Q7327889: 184 h old and no longer trending live",
-  "skip kh-20261014-Q87570577: gate: fewer than 2 independent outlets' articles name L. Murugan",
-  "skip wp-Draft_2026_Multan_train_derailment: gate: only 0 usable photos of Draft:2026 Multan train derailment on Wikimedia Commons (want 3)",
+  "skip wp-Draft_2026_Multan_train_derailment: gate: neither Wikidata nor the infobox gives a date for this event",
   "skip wk-Q6696719: gate: only 0 usable photos of Lucian Piane on Wikimedia Commons (want 3)",
   "nothing eligible to publish"
  ]
