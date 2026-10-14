@@ -1,13 +1,16 @@
 {
- "at": "2026-10-14T06:53:44+00:00",
+ "at": "2026-10-14T07:34:36+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 1 candidates from 10 trending",
-  "outlets: 1301 headlines from 31 feeds (19 owners), 22 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261014-Q87570577; dropped: explainer Nirmala Sitharaman RBI: no Indian Wikipedia article about it; explainer Greece: no Indian Wikipedia article about it; explainer Rubio: no Indian Wikipedia article about it",
+  "watch: 4 candidates from 14 trending",
+  "outlets: 1315 headlines from 31 feeds (19 owners), 22 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261014-Q87570577; dropped: explainer Nirmala Sitharaman RBI: no Indian Wikipedia article about it; explainer Greece: no Indian Wikipedia article about it; explainer India-US: no Indian Wikipedia article about it",
   "skip wp-2026_Multan_train_derailment: Orbitwire top candidate (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
-  "trend radar errors: ['wikidata recent deaths: HTTP 429', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop wk-Q5300674: 68 h old and no longer trending live",
+  "drop wk-Q7327889: 188 h old and no longer trending live",
+  "skip wk-Q4655067: gate: only 0 usable photos of AVS Raju on Wikimedia Commons (want 3)",
   "skip wk-Q11738696: gate: only 0 usable photos of Ken Friar on Wikimedia Commons (want 3)",
   "nothing eligible to publish"
  ]
