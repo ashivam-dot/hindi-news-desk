@@ -153,8 +153,9 @@ RULES = """RULES (all mandatory):
 - caption: the beat's key fact as a news graphic shows it, 1 to 4 Hindi words: a number with its unit ("11.39%",
   "6 लाख घर", "2 घंटे"), a date, a decision ("उड़ान डायवर्ट"), a role or an honour. Prefer a number whenever the beat
   has one. Never a place name alone: viewers read a place over a photo as where the photo was taken.
-- label: 1 to 3 Hindi words under the caption that say what the caption is ("थोक महंगाई", "बिजली गुल", "कब",
-  "फ़ैसला", "आधिकारिक बयान", "आगे क्या"). No numbers in a label.
+- label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
+  "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
+  "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.
 - title: a Hindi news headline, 25 to 70 characters, that states the news (who, what), includes {name_hi}, no
   question, no clickbait, no capitals for effect.
 Return only the JSON."""
