@@ -1,16 +1,23 @@
 {
- "at": "2026-10-14T08:12:59+00:00",
+ "at": "2026-10-14T09:01:10+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 4 candidates from 13 trending",
-  "outlets: 1331 headlines from 31 feeds (19 owners), 20 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261014-Q87570577; dropped: explainer Nirmala Sitharaman RBI: no Indian Wikipedia article about it; explainer Greece: no Indian Wikipedia article about it",
+  "learn: 11 scored Shorts, lifts {'region:world': {'n': 6, 'lift': 0.859, 'typical_views_24h': 33}}",
+  "watch: 4 candidates from 14 trending",
+  "outlets: 1355 headlines from 31 feeds (19 owners), 48 matched to articles, 3 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 2 kh- stories (on): kh-20261014-Q87570577, kh-20261014-Q16186720; dropped: explainer Nirmala Sitharaman RBI: no Indian Wikipedia article about it; explainer Greece: no Indian Wikipedia article about it",
+  "skip wp-2026_Multan_train_derailment: Orbitwire top candidate (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 68 h old and no longer trending live",
-  "drop wk-Q7327889: 188 h old and no longer trending live",
-  "skip wp-2026_Multan_train_derailment: gate: no draft passed the fact checks: casualties without an agreed toll (मौत)",
-  "skip wk-Q11738696: gate: only 0 usable photos of Ken Friar on Wikimedia Commons (want 3)",
-  "nothing eligible to publish"
- ]
+  "drop wk-Q5300674: 69 h old and no longer trending live",
+  "drop wk-Q7327889: 189 h old and no longer trending live",
+  "published kh-20261014-Q16186720: https://www.youtube.com/shorts/k-SL6nXRTdw"
+ ],
+ "published": {
+  "video_id": "k-SL6nXRTdw",
+  "url": "https://www.youtube.com/shorts/k-SL6nXRTdw",
+  "title": "भारत-अमेरिका व्यापार समझौते पर सुब्रह्मण्यम जयशंकर ने क्या कहा?",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
