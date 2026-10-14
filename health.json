@@ -1,16 +1,19 @@
 {
- "at": "2026-10-14T18:13:32+00:00",
+ "at": "2026-10-14T19:04:56+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 4 candidates from 18 trending",
-  "outlets: 1439 headlines from 31 feeds (19 owners), 42 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261014-Q69906, kh-20261014-Q3633485, kh-20261014-Q140632219, kh-20261014-Q6109517",
+  "learn: 13 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.758, 'typical_views_24h': 37}}",
+  "watch: 7 candidates from 19 trending",
+  "outlets: 1432 headlines from 31 feeds (19 owners), 42 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261015-Q69906, kh-20261015-Q3633485, kh-20261015-Q19867977, kh-20261015-Q140632219; dropped: explainer Kenya’s Health Ministry: fewer than 3 owners' headlines name it and the story",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261014-Q3633485: last Short went out 0.2 h ago",
-  "hold kh-20261014-Q140632219: last Short went out 0.2 h ago",
-  "drop wk-Q5300674: 78 h old and no longer trending live",
-  "drop wk-Q7327889: 198 h old and no longer trending live"
+  "hold kh-20261015-Q3633485: outside 07:00-24:00 IST",
+  "hold kh-20261015-Q140632219: outside 07:00-24:00 IST",
+  "hold kh-20261015-Q19867977: outside 07:00-24:00 IST",
+  "hold kh-20261015-Q3506475: outside 07:00-24:00 IST",
+  "hold kh-20261015-Q6109517: outside 07:00-24:00 IST",
+  "drop wk-Q5300674: 79 h old and no longer trending live"
  ]
 }
