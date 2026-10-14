@@ -9,7 +9,8 @@ News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) 
 so a fresh story beats a bigger stale one. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
-most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame and under 12 hours old, or a quake USGS
+most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame or BREAKING_OWNERS independent outlets on
+one incident, and under 12 hours old, or a quake USGS
 rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap; wars never
 take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
 than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
@@ -28,6 +29,9 @@ BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking 
 MIN_GAP = timedelta(minutes=30)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
+# Or this many independent outlets on one incident, BREAKING_STRONG of them official, public or international: a big
+# story hours before Wikipedia's page views show it.
+BREAKING_OWNERS, BREAKING_STRONG = 5, 2
 BREAKING_MAX_AGE_H = 12
 STALE_H = 48
 LIVE_NEWS_H = 24
@@ -95,6 +99,10 @@ def is_breaking(cand: dict, at: datetime) -> bool:
         return False
     if cand.get("category") == "earthquake" and cand.get("mag"):
         return cand.get("mag", 0) >= QUAKE_BIG_MAG or (cand.get("alert") or "") in ("orange", "red")
+    who = cand.get("owners") or []
+    if cand.get("kind") == "incident" and cand.get("category") not in trends.ONGOING and len(who) >= BREAKING_OWNERS \
+            and len(outlets.strong(who)) >= BREAKING_STRONG:
+        return True
     return cand.get("fame", 0) >= BREAKING_FAME
 
 
@@ -131,6 +139,8 @@ def told_before(cand: dict, rows: list[dict], at: datetime) -> bool:
             continue  # stories told from Wikipedia on both sides are matched by their ids already
         if urls & set(r.get("report_urls") or []) or outlets.same_story(cand["id"], r["id"]):
             return True
+        if r.get("article") and r["article"] in (cand.get("title"), cand.get("article")):
+            return True  # told from the reporting while its article was too new to use
         if r["id"].startswith("nw-") and not cand["id"].startswith("nw-"):
             heads, title = r.get("headlines") or [], cand.get("title")
         elif cand["id"].startswith("nw-") and not r["id"].startswith("nw-"):

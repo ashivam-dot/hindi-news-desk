@@ -144,9 +144,16 @@ The desk is India-first and runs unattended; it decides what goes out and when.
 - A story more than 48 hours old is dropped unless it is trending live right now (Google Trends traffic, or a lead
   headline under 24 hours old). Wikipedia's most-read list is a day behind and never keeps an old story alive.
 - Regular Shorts go out 07:00–24:00 IST, at most ten an IST day, at least 30 minutes apart.
-- Breaking news (fame 400k+ and under 12 hours old, or an earthquake USGS rates magnitude 7+ or PAGER orange/red)
-  goes out at any hour with no gap, up to two beyond the daily cap (`BREAKING_EXTRA`, set to 0 to make ten a hard
-  cap). Wars never take the breaking lane.
+- Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
+  official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
+  hour with no gap, up to two beyond the daily cap (`BREAKING_EXTRA`, set to 0 to make ten a hard cap). Wars and
+  ongoing protests never take the breaking lane.
+- **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
+  publishing the videos as a big incident happen").** A Wikipedia article under 6 hours old is still not used (its
+  facts move), but when at least three independent outlets, one of them official, public or international, already
+  report the incident, it is told at once from that reporting, exactly as an nw- story (two owners for every fact,
+  no toll unless the reports agree on it). The published record keeps the article's title, so the story is not told
+  again from Wikipedia later.
 - An ongoing story comes back at most once in 6 days, whatever its id.
 - At most two loss stories in any three consecutive uploads.
 - The run happens every 15 minutes (:07, :22, :37 and :52).
