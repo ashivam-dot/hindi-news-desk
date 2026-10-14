@@ -1,5 +1,5 @@
 {
- "at": "2026-10-14T20:18:07+00:00",
+ "at": "2026-10-14T20:57:05+00:00",
  "trending": [
   {
    "id": "kh-20261015-Q3633485",
@@ -21,7 +21,7 @@
     "strategic"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
    "owners": [
     "Network18",
     "The Hindu Group",
@@ -60,7 +60,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
+     "at": "2026-10-14T20:57:31.306837+00:00"
     },
     {
      "title": "From RBI Action To Strategic Restructuring: Timeline Of IDBI Bank Stake Sale",
@@ -113,18 +113,137 @@
    ]
   },
   {
+   "id": "kh-20261015-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+   "story_keys": [
+    "access",
+    "limit",
+    "military",
+    "not",
+    "restricted"
+   ],
+   "date": "2026-10-14",
+   "news_at": "2026-10-14T20:55:24+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "HT Media",
+    "Deutsche Welle",
+    "India Today Group",
+    "BBC"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+    "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+    "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
+    "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
+    "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
+    "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot"
+   ],
+   "hindi_headlines": [
+    "संसद पहुंचा स्टारलिंक विवाद, मामले पर चर्चा करेगी संसदीय समिति"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "स्टारलिंक",
+   "reports": [
+    {
+     "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+     "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-14T20:55:24+00:00"
+    },
+    {
+     "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
+     "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-14T18:28:00+00:00"
+    },
+    {
+     "title": "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
+     "url": "https://www.theguardian.com/world/2026/oct/14/volodymyr-zelenskyy-feels-betrayed-by-donald-trump-over-starlink-access",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-14T19:35:55+00:00"
+    },
+    {
+     "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+     "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-14T16:18:46+00:00"
+    },
+    {
+     "title": "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot",
+     "url": "https://www.indiatoday.in/world/story/ukraine-starlink-support-restricted-after-trump-pivot-towards-russian-diesel-not-a-coincidence-3017600-2026-10-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T20:15:20+00:00"
+    },
+    {
+     "title": "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
+     "url": "https://www.livemint.com/news/world/zelensky-urges-musk-to-switch-on-starlink-as-ukraine-flags-us-difficulties-amid-military-disruptions-11792001077304.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T18:26:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:HT Media",
+    "outlet:Deutsche Welle",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Ukraine Says Musk's SpaceX Is Restricting Its Starlink Military Use—Drone Missions Affected"
+   ]
+  },
+  {
    "qid": "Q2475741",
    "title": "Nana Patekar",
-   "fame": 221750,
+   "fame": 246750,
    "views": 21750,
    "traffic": 0,
-   "news": 200000,
+   "news": 225000,
    "news_at": "2026-10-14T18:39:36+00:00",
    "headlines": [],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "hindi_headlines": [
     "नाना पाटेकर की प्रार्थना सभा में कौन-कौन पहुंचे, शिवाजी साटम से लेकर कमिश्नर तुकाराम मुंढे ने जताया शोक",
     "‘पक पक पकाक’ के ‘भूत्या’ को ‘सालू’ का आखिरी सलाम, नाना पाटेकर की याद में भावुक हुईं नारायणी शास्त्री",
+    "नाना पाटेकर की प्रेयर मीट में पहुंचे ये सेलेब्स, दिग्गज एक्टर को दी श्रद्धांजलि",
     "अमिताभ बच्चन से 1 रुपये ज्यादा फीस चाहते थे नाना पाटेकर! दृश्यम एक्टर ने सुनाया दिलचस्प किस्सा",
     "तरबूज पर उकेरा दिवंगत नाना पाटेकर का चेहरा, जोधपुर के शेफ ने 6 घंटे की मेहनत से बनाई कलाकृति, दी श्रद्धांजलि"
    ],
@@ -138,13 +257,15 @@
     "wikipedia-top-2026-10-13",
     "google-news:नाना पाटेकर की प्रार्थना सभा में कौन-कौन पहुंचे, शिवाजी साटम से लेकर कमिश्नर तुकाराम मुंढे ने जताया शोक",
     "google-news:‘पक पक पकाक’ के ‘भूत्या’ को ‘सालू’ का आखिरी सलाम, नाना पाटेकर की याद में भावुक हुईं नारायणी शास्त्री",
-    "google-news:अमिताभ बच्चन से 1 रुपये ज्यादा फीस चाहते थे नाना पाटेकर! दृश्यम एक्टर ने सुनाया दिलचस्प किस्सा",
+    "google-news:नाना पाटेकर की प्रेयर मीट में पहुंचे ये सेलेब्स, दिग्गज एक्टर को दी श्रद्धांजलि",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:NDTV",
     "outlet:Network18"
    ],
    "owners": [
     "TV9 Network",
+    "ABP Group",
     "NDTV",
     "Network18"
    ],
@@ -168,6 +289,16 @@
      "group": "Hindi",
      "lang": "hi",
      "at": "2026-10-14T16:59:46+00:00"
+    },
+    {
+     "title": "नाना पाटेकर की प्रेयर मीट में पहुंचे ये सेलेब्स, दिग्गज एक्टर को दी श्रद्धांजलि",
+     "url": "https://www.abplive.com/entertainment/bollywood/nana-patekar-prayer-meet-bollywod-celebs-spotted-pays-tribute-to-late-actor-3202124",
+     "outlet": "ABP Live",
+     "outlet_hi": "एबीपी लाइव",
+     "owner": "ABP Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-14T13:37:38+00:00"
     },
     {
      "title": "अमिताभ बच्चन से 1 रुपये ज्यादा फीस चाहते थे नाना पाटेकर! दृश्यम एक्टर ने सुनाया दिलचस्प किस्सा",
@@ -276,38 +407,6 @@
    ]
   },
   {
-   "qid": "Q141670823",
-   "title": "Hurricane Isaias (2026)",
-   "fame": 139865,
-   "views": 14865,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-13T08:47:00+00:00",
-   "headlines": [
-    "Hurricane Simon hitting western Mexico after tropical systems kill 5"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-13",
-    "google-news:Hurricane Simon hitting western Mexico after tropical systems kill 5"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141670823",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-06",
-   "coords": null,
-   "has_coords": true
-  },
-  {
    "id": "kh-20261015-Q69906",
    "qid": "Q69906",
    "title": "Air India",
@@ -330,7 +429,7 @@
     "scare"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T18:04:36+00:00",
+   "news_at": "2026-10-14T19:11:27+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -637,108 +736,6 @@
    ]
   },
   {
-   "id": "kh-20261015-Q19867977",
-   "qid": "Q19867977",
-   "title": "Starlink",
-   "name": "Starlink",
-   "phrase": "Starlink",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-   "story_keys": [
-    "access",
-    "military",
-    "restricted"
-   ],
-   "date": "2026-10-14",
-   "news_at": "2026-10-14T20:15:20+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "HT Media",
-    "Deutsche Welle",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-    "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
-    "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
-    "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
-    "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot"
-   ],
-   "hindi_headlines": [
-    "संसद पहुंचा स्टारलिंक विवाद, मामले पर चर्चा करेगी संसदीय समिति"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "स्टारलिंक",
-   "reports": [
-    {
-     "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
-     "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-14T18:28:00+00:00"
-    },
-    {
-     "title": "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
-     "url": "https://www.theguardian.com/world/2026/oct/14/volodymyr-zelenskyy-feels-betrayed-by-donald-trump-over-starlink-access",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-14T19:35:55+00:00"
-    },
-    {
-     "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-     "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-14T16:18:46+00:00"
-    },
-    {
-     "title": "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot",
-     "url": "https://www.indiatoday.in/world/story/ukraine-starlink-support-restricted-after-trump-pivot-towards-russian-diesel-not-a-coincidence-3017600-2026-10-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T20:15:20+00:00"
-    },
-    {
-     "title": "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
-     "url": "https://www.livemint.com/news/world/zelensky-urges-musk-to-switch-on-starlink-as-ukraine-flags-us-difficulties-amid-military-disruptions-11792001077304.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T18:26:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:HT Media",
-    "outlet:Deutsche Welle",
-    "outlet:India Today Group"
-   ]
-  },
-  {
    "id": "kh-20261015-Q3506475",
    "qid": "Q3506475",
    "title": "Rajnath Singh",
@@ -757,7 +754,7 @@
     "rajnath"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -789,7 +786,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
+     "at": "2026-10-14T20:57:31.306837+00:00"
     },
     {
      "title": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
@@ -1052,6 +1049,33 @@
    "date": "2026-10-13"
   },
   {
+   "qid": "Q141670823",
+   "title": "Hurricane Isaias (2026)",
+   "fame": 14865,
+   "views": 14865,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141670823",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-06",
+   "coords": null,
+   "has_coords": true
+  },
+  {
    "qid": "Q5300674",
    "title": "Doug Loft",
    "fame": 10932,
@@ -1150,7 +1174,7 @@
     "strategic"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
    "owners": [
     "Network18",
     "The Hindu Group",
@@ -1189,7 +1213,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
+     "at": "2026-10-14T20:57:31.306837+00:00"
     },
     {
      "title": "From RBI Action To Strategic Restructuring: Timeline Of IDBI Bank Stake Sale",
@@ -1322,86 +1346,6 @@
    ]
   },
   {
-   "id": "kh-20261015-Q3506475",
-   "qid": "Q3506475",
-   "title": "Rajnath Singh",
-   "name": "Rajnath Singh",
-   "phrase": "Rajnath Singh",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
-   "story_keys": [
-    "deeper",
-    "defence",
-    "development",
-    "military",
-    "rajnath"
-   ],
-   "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
-    "Rajnath Singh signals push for deeper military ties with ASEAN, offers radars, air defence systems",
-    "Union Agriculture and Farmers’ Welfare and Rural Development Minister Shri Shivraj Singh Chouhan participates in the 10th National Convention of Agrivision in Delhi"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राजनाथ सिंह",
-   "reports": [
-    {
-     "title": "Union Agriculture and Farmers’ Welfare and Rural Development Minister Shri Shivraj Singh Chouhan participates in the 10th National Convention of Agrivision in Delhi",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2323461",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
-    },
-    {
-     "title": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
-     "url": "https://www.thehindu.com/news/national/rajnath-singh-calls-for-deeper-india-asean-defence-cooperation-joint-development-of-military-technologies/article71584649.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T16:38:32+00:00"
-    },
-    {
-     "title": "Rajnath Singh signals push for deeper military ties with ASEAN, offers radars, air defence systems",
-     "url": "https://www.hindustantimes.com/india-news/rajnath-singh-asean-defence-systems-radars-india-defence-think-tank-forum-101791956954690.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T05:57:48+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Government of India"
-   ]
-  },
-  {
    "id": "kh-20261015-Q19867977",
    "qid": "Q19867977",
    "title": "Starlink",
@@ -1411,25 +1355,29 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+   "story": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
    "story_keys": [
     "access",
+    "limit",
     "military",
+    "not",
     "restricted"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:15:20+00:00",
+   "news_at": "2026-10-14T20:55:24+00:00",
    "owners": [
     "Guardian Media Group",
     "HT Media",
     "Deutsche Welle",
-    "India Today Group"
+    "India Today Group",
+    "BBC"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
     "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
     "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
     "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
@@ -1445,6 +1393,16 @@
    "india_link": true,
    "label_hi": "स्टारलिंक",
    "reports": [
+    {
+     "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+     "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-14T20:55:24+00:00"
+    },
     {
      "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
      "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-rdf",
@@ -1500,7 +1458,89 @@
     "outlet:Guardian Media Group",
     "outlet:HT Media",
     "outlet:Deutsche Welle",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Ukraine Says Musk's SpaceX Is Restricting Its Starlink Military Use—Drone Missions Affected"
+   ]
+  },
+  {
+   "id": "kh-20261015-Q3506475",
+   "qid": "Q3506475",
+   "title": "Rajnath Singh",
+   "name": "Rajnath Singh",
+   "phrase": "Rajnath Singh",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
+   "story_keys": [
+    "deeper",
+    "defence",
+    "development",
+    "military",
+    "rajnath"
+   ],
+   "date": "2026-10-14",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
+    "Rajnath Singh signals push for deeper military ties with ASEAN, offers radars, air defence systems",
+    "Union Agriculture and Farmers’ Welfare and Rural Development Minister Shri Shivraj Singh Chouhan participates in the 10th National Convention of Agrivision in Delhi"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राजनाथ सिंह",
+   "reports": [
+    {
+     "title": "Union Agriculture and Farmers’ Welfare and Rural Development Minister Shri Shivraj Singh Chouhan participates in the 10th National Convention of Agrivision in Delhi",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2323461",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-10-14T20:57:31.306837+00:00"
+    },
+    {
+     "title": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
+     "url": "https://www.thehindu.com/news/national/rajnath-singh-calls-for-deeper-india-asean-defence-cooperation-joint-development-of-military-technologies/article71584649.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T16:38:32+00:00"
+    },
+    {
+     "title": "Rajnath Singh signals push for deeper military ties with ASEAN, offers radars, air defence systems",
+     "url": "https://www.hindustantimes.com/india-news/rajnath-singh-asean-defence-systems-radars-india-defence-think-tank-forum-101791956954690.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T05:57:48+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Government of India"
    ]
   },
   {
@@ -1656,8 +1696,8 @@
   }
  ],
  "notes": [
-  "outlets: 1410 headlines from 31 feeds (19 owners), 46 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q140632219, kh-20261015-Q69906, kh-20261015-Q6109517; dropped: explainer Kenya’s Health Ministry: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1401 headlines from 31 feeds (19 owners), 58 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q19867977, kh-20261015-Q140632219, kh-20261015-Q69906; dropped: explainer Kenya’s Health Ministry: fewer than 3 owners' headlines name it and the story",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -1665,10 +1705,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1410,
+  "headlines": 1401,
   "feeds": 31,
   "owners": 19,
-  "matched": 46,
+  "matched": 58,
   "corroborated": 9
  },
  "emerging": [],
@@ -1693,7 +1733,7 @@
     "strategic"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
    "owners": [
     "Network18",
     "The Hindu Group",
@@ -1732,7 +1772,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
+     "at": "2026-10-14T20:57:31.306837+00:00"
     },
     {
      "title": "From RBI Action To Strategic Restructuring: Timeline Of IDBI Bank Stake Sale",
@@ -1782,6 +1822,124 @@
     "outlet:NDTV",
     "outlet:Government of India",
     "google-news:Fairfax Financial Buying Majority Stake in India’s IDBI Bank"
+   ]
+  },
+  {
+   "id": "kh-20261015-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+   "story_keys": [
+    "access",
+    "limit",
+    "military",
+    "not",
+    "restricted"
+   ],
+   "date": "2026-10-14",
+   "news_at": "2026-10-14T20:55:24+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "HT Media",
+    "Deutsche Welle",
+    "India Today Group",
+    "BBC"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+    "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+    "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
+    "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
+    "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
+    "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot"
+   ],
+   "hindi_headlines": [
+    "संसद पहुंचा स्टारलिंक विवाद, मामले पर चर्चा करेगी संसदीय समिति"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "स्टारलिंक",
+   "reports": [
+    {
+     "title": "Musk says any limits on Ukraine's Starlink access down to US, not his firm",
+     "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-14T20:55:24+00:00"
+    },
+    {
+     "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
+     "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-14T18:28:00+00:00"
+    },
+    {
+     "title": "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
+     "url": "https://www.theguardian.com/world/2026/oct/14/volodymyr-zelenskyy-feels-betrayed-by-donald-trump-over-starlink-access",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-14T19:35:55+00:00"
+    },
+    {
+     "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
+     "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-14T16:18:46+00:00"
+    },
+    {
+     "title": "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot",
+     "url": "https://www.indiatoday.in/world/story/ukraine-starlink-support-restricted-after-trump-pivot-towards-russian-diesel-not-a-coincidence-3017600-2026-10-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T20:15:20+00:00"
+    },
+    {
+     "title": "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
+     "url": "https://www.livemint.com/news/world/zelensky-urges-musk-to-switch-on-starlink-as-ukraine-flags-us-difficulties-amid-military-disruptions-11792001077304.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T18:26:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:HT Media",
+    "outlet:Deutsche Welle",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Ukraine Says Musk's SpaceX Is Restricting Its Starlink Military Use—Drone Missions Affected"
    ]
   },
   {
@@ -1887,7 +2045,7 @@
     "scare"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T18:04:36+00:00",
+   "news_at": "2026-10-14T19:11:27+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -2194,108 +2352,6 @@
    ]
   },
   {
-   "id": "kh-20261015-Q19867977",
-   "qid": "Q19867977",
-   "title": "Starlink",
-   "name": "Starlink",
-   "phrase": "Starlink",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-   "story_keys": [
-    "access",
-    "military",
-    "restricted"
-   ],
-   "date": "2026-10-14",
-   "news_at": "2026-10-14T20:15:20+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "HT Media",
-    "Deutsche Welle",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-    "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
-    "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
-    "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
-    "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot"
-   ],
-   "hindi_headlines": [
-    "संसद पहुंचा स्टारलिंक विवाद, मामले पर चर्चा करेगी संसदीय समिति"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "स्टारलिंक",
-   "reports": [
-    {
-     "title": "Ukraine says Musk's SpaceX limits Kyiv's Starlink access",
-     "url": "https://www.dw.com/en/ukraine-says-musk-s-spacex-limits-kyiv-s-starlink-access/a-79658015?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-14T18:28:00+00:00"
-    },
-    {
-     "title": "Volodymyr Zelenskyy feels ‘betrayed’ by Donald Trump over Starlink access",
-     "url": "https://www.theguardian.com/world/2026/oct/14/volodymyr-zelenskyy-feels-betrayed-by-donald-trump-over-starlink-access",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-14T19:35:55+00:00"
-    },
-    {
-     "title": "Ukrainian military’s access to Starlink satellite internet suddenly restricted",
-     "url": "https://www.theguardian.com/world/2026/oct/14/ukraine-soldiers-combat-access-starlink-satellite-internet-restricted",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-14T16:18:46+00:00"
-    },
-    {
-     "title": "Not a coincidence: Ukraine's Starlink access restricted after Trump's Russia pivot",
-     "url": "https://www.indiatoday.in/world/story/ukraine-starlink-support-restricted-after-trump-pivot-towards-russian-diesel-not-a-coincidence-3017600-2026-10-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T20:15:20+00:00"
-    },
-    {
-     "title": "Zelensky urges Musk to ‘switch on’ Starlink as Ukraine flags US ‘difficulties’ amid military disruptions",
-     "url": "https://www.livemint.com/news/world/zelensky-urges-musk-to-switch-on-starlink-as-ukraine-flags-us-difficulties-amid-military-disruptions-11792001077304.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-14T18:26:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:HT Media",
-    "outlet:Deutsche Welle",
-    "outlet:India Today Group"
-   ]
-  },
-  {
    "id": "kh-20261015-Q3506475",
    "qid": "Q3506475",
    "title": "Rajnath Singh",
@@ -2314,7 +2370,7 @@
     "rajnath"
    ],
    "date": "2026-10-14",
-   "news_at": "2026-10-14T20:19:39.499586+00:00",
+   "news_at": "2026-10-14T20:57:31.306837+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -2346,7 +2402,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-14T20:19:39.499586+00:00"
+     "at": "2026-10-14T20:57:31.306837+00:00"
     },
     {
      "title": "Rajnath Singh calls for deeper India-ASEAN defence cooperation, joint development of military technologies",
