@@ -1,21 +1,23 @@
 {
- "at": "2026-10-14T14:20:07+00:00",
+ "at": "2026-10-14T14:58:39+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 9 candidates from 19 trending",
-  "outlets: 1455 headlines from 31 feeds (19 owners), 40 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261014-Q69906, kh-20261014-Q3633485, kh-20261014-Q139881668, kh-20261014-Q123; dropped: explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Diwali: no Wikipedia article that can be its centre",
+  "watch: 9 candidates from 20 trending",
+  "outlets: 1454 headlines from 31 feeds (19 owners), 41 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261014-Q3633485, kh-20261014-Q69906, kh-20261014-Q139881668, kh-20261014-Q139857349; dropped: explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
   "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 74 h old and no longer trending live",
-  "drop wk-Q7327889: 194 h old and no longer trending live",
-  "published kh-20261014-Q69906: https://www.youtube.com/shorts/FDHF_VmV0fc"
+  "drop wk-Q5300674: 75 h old and no longer trending live",
+  "drop wk-Q7327889: 195 h old and no longer trending live",
+  "skip kh-20261014-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
+  "skip kh-20261014-Q139881668: gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
+  "published kh-20261014-Q131005: https://www.youtube.com/shorts/cAhvBmX7yPg"
  ],
  "published": {
-  "video_id": "FDHF_VmV0fc",
-  "url": "https://www.youtube.com/shorts/FDHF_VmV0fc",
-  "title": "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया",
+  "video_id": "cAhvBmX7yPg",
+  "url": "https://www.youtube.com/shorts/cAhvBmX7yPg",
+  "title": "एयर फ्रांस ने इज़राइल उड़ानों के लिए चालक दल पर प्रतिबंध लागू किया",
   "privacy": "public",
   "synthetic_declared": true
  }
