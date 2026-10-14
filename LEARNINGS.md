@@ -1,17 +1,18 @@
 # What this channel's own numbers say
 
-Updated 2026-10-14T09:01:10+00:00. Scored Shorts (views at 24 h): 11. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-14T12:12:38+00:00. Scored Shorts (views at 24 h): 12. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
-Baseline: a typical Short has 42 views at 24 h.
-- region:world: x0.859 ranking lift (6 Shorts, typical 33 views)
+Baseline: a typical Short has 45 views at 24 h.
+- region:world: x0.892 ranking lift (7 Shorts, typical 37 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| kh-20261014-Q200667 | 2026-10-14T02:22 | diplomacy | india | 76 |  |
+| kh-20261014-Q16186720 | 2026-10-14T09:15 | economy | india | 5 |  |
+| kh-20261014-Q200667 | 2026-10-14T02:22 | diplomacy | india | 77 |  |
 | wk-Q2475741 | 2026-10-13T12:57 | death | india | 1263 |  |
-| wk-Q141712628 | 2026-10-13T10:26 | attack | world | 79 |  |
-| wk-Q2118568 | 2026-10-13T01:43 | death | world | 148 | 145 |
-| wk-Q141695384 | 2026-10-12T02:01 | conflict | world | 5 | 3 |
+| wk-Q141712628 | 2026-10-13T10:26 | attack | world | 81 | 80 |
+| wk-Q2118568 | 2026-10-13T01:43 | death | world | 154 | 145 |
+| wk-Q141695384 | 2026-10-12T02:01 | conflict | world | 8 | 3 |
 | wk-Q141679225 | 2026-10-11T11:18 | disaster | world | 9 | 7 |
 | wk-Q141680327 | 2026-10-11T10:10 | cyclone | world | 115 | 100 |
 | wp-October_2026_King_Khalid_International_Airport_attacks | 2026-10-11T09:26 | attack | world | 10 | 10 |
