@@ -1,14 +1,22 @@
 {
- "at": "2026-10-14T13:45:52+00:00",
+ "at": "2026-10-14T14:20:07+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 2 candidates from 13 trending",
-  "outlets: 1442 headlines from 31 feeds (19 owners), 46 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261014-Q10244; dropped: explainer Kimberly Guilfoyle: no Indian Wikipedia article about it; explainer India-US: no Indian Wikipedia article about it; explainer September: no Indian Wikipedia article about it",
-  "skip wp-2026_Multan_train_derailment: Orbitwire top candidate (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
+  "watch: 9 candidates from 19 trending",
+  "outlets: 1455 headlines from 31 feeds (19 owners), 40 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261014-Q69906, kh-20261014-Q3633485, kh-20261014-Q139881668, kh-20261014-Q123; dropped: explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Diwali: no Wikipedia article that can be its centre",
+  "skip wp-2026_Multan_train_derailment: Orbitwire published (wp-2026_Multan_train_derailment), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q5300674: 74 h old and no longer trending live",
-  "drop wk-Q7327889: 194 h old and no longer trending live"
- ]
+  "drop wk-Q7327889: 194 h old and no longer trending live",
+  "published kh-20261014-Q69906: https://www.youtube.com/shorts/FDHF_VmV0fc"
+ ],
+ "published": {
+  "video_id": "FDHF_VmV0fc",
+  "url": "https://www.youtube.com/shorts/FDHF_VmV0fc",
+  "title": "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
