@@ -9,8 +9,13 @@ def utc(day, hour, minute=0):
     return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
 
 
-def test_regular_shorts_go_out_half_an_hour_apart_up_to_ten_an_ist_day(tmp_path, monkeypatch):
+def test_the_desk_is_built_to_be_the_most_active_channel():
+    assert plan.MAX_PER_DAY >= 20 and plan.MIN_GAP.total_seconds() <= 20 * 60
+
+
+def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
     at = utc(9, 12)  # 17:30 IST
     assert plan.can_publish(at) is None
     ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:50:00+00:00", "loss": False})
@@ -29,6 +34,7 @@ def test_regular_shorts_go_out_half_an_hour_apart_up_to_ten_an_ist_day(tmp_path,
 
 def test_breaking_extra_is_two_and_can_be_switched_off(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
     for i in range(12):
         ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
     assert "today" in plan.can_publish(utc(9, 15), breaking=True)

@@ -153,9 +153,36 @@ def test_the_india_search_counts_only_for_the_indian_article_itself(monkeypatch,
     assert (got and got[0]) == want
 
 
-def test_find_skips_items_that_are_not_indian(monkeypatch):
-    _stub_wiki(monkeypatch, extra={"P27": []})
-    assert explain.find(MURUGAN, NOW)[0] == []
+def test_a_centre_that_is_not_indian_tells_a_world_story(monkeypatch):
+    _stub_wiki(monkeypatch, extra={"P27": [{"mainsnak": {"datavalue": {"value": {"id": "Q30"}}}}]})
+    c = explain.find(MURUGAN, NOW)[0][0]
+    assert c["region"] == "world" and c["geos"] == []
+    assert c["india_link"]  # Hindi lead headlines name it
+
+
+def test_festivals_and_peoples_are_never_the_centre(monkeypatch):
+    _stub_wiki(monkeypatch)
+    ent = wiki.entities(["Q123"])["Q123"] | {"descriptions": {"en": {"value": "Hindu festival of lights"}}}
+    monkeypatch.setattr(wiki, "entities", lambda qids: {"Q123": ent})
+    monkeypatch.setattr(wiki, "search", lambda q, lang="en": "Diwali")
+    monkeypatch.setattr(wiki, "page_info", lambda titles: {t: {"title": t, "qid": "Q123"} for t in titles})
+    assert explain.resolve("Diwali", "diwali") is None
+
+
+def test_aliases_go_straight_to_the_indian_institution(monkeypatch):
+    _stub_wiki(monkeypatch)
+    monkeypatch.setattr(wiki, "search", lambda q, lang="en": pytest.fail("aliases never search"))
+    monkeypatch.setattr(wiki, "page_info", lambda titles: {t: {"title": t, "qid": "Q123"} for t in titles})
+    assert explain.resolve("Railway", "railway")[0] == "Indian Railways"
+
+
+def test_a_headline_with_no_special_topic_is_still_news():
+    assert explain.category("IDBI Bank strategic sale gets final nod") == "economy"
+    assert explain.category("Air India Frankfurt-Delhi flight diverted to Jaipur") == "aviation"
+    assert explain.category("Pope Leo XIV to undergo knee surgery") in ("health", "world")
+    assert explain.category("Odisha cabinet approves new textbooks") == "politics"
+    assert explain.category("Centre names new panel on river linking") == explain.FALLBACK
+    assert explain.category("Virat Kohli scores century in Test match") is None
 
 
 def test_find_skips_the_dead_disambiguations_and_known_items(monkeypatch):

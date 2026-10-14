@@ -31,7 +31,11 @@ KINDS = (
      "defence"),
     (r"\b(RBI|repo rate|inflation|GDP|rupee|forex|sensex|nifty|stock markets?|gold (price|rate)s?|silver "
      r"(price|rate)s?|petrol|diesel|LPG|fuel prices?|crude|IPO|budget|LTCG|STT|tariffs?|trade deal|exports?|"
-     r"imports?|unemployment|FDI|SEBI|economy|economic|fiscal|tax relief)\b", "economy"),
+     r"imports?|unemployment|FDI|SEBI|economy|economic|fiscal|tax relief|disinvestment|strategic sale|stake sale|"
+     r"privati[sz]\w*|acquisition|acquires|bonus|salary|wages|bank)\b", "economy"),
+    (r"\b(flights?|airlines?|airport|Air India|IndiGo|Akasa|SpiceJet|DGCA|diverted|emergency landing|hijack alert|"
+     r"bomb threat|aviation)\b", "aviation"),
+    (r"\b(WHO|hospitali[sz]ed|surgery|health|outbreak|virus|disease|vaccination|medical|AIIMS)\b", "health"),
     (r"\b(resign\w*|quits?|steps? down|sworn|oath|cabinet|reshuffle|chief minister|deputy CM|governor|Lok Sabha|"
      r"Rajya Sabha|parliament\w*|(monsoon|winter|budget) session|speaker|no-confidence|opposition|alliance|coalition|"
      r"INDIA bloc|NDA|union minister|defect\w*|merger)\b", "politics"),
@@ -44,9 +48,32 @@ KINDS = (
      r"Quad|UN Security Council|UNGA)\b", "diplomacy"),
     (r"\b(IMD|monsoon|heatwave|heat wave|cold wave|rain alert|heavy rain|orange alert|red alert|AQI|air quality|"
      r"pollution|smog|GRAP)\b", "weather"),
+    (r"\b(Pope|Vatican|UN|United Nations|White House|Kremlin|Pentagon|NATO|EU|European Union|Trump|Putin|Xi|"
+     r"Zelensky|Netanyahu|Houthis?|Israel|Iran|Ukraine|Russia|China|Pakistan|Bangladesh|Nepal|Sri Lanka)\b", "world"),
 )
+FALLBACK = "news"  # owner, 2026-10-14: the channel must be the most active; a 3-owner story needs no special topic
 CATEGORY_HI = {"court": "अदालत", "science": "विज्ञान", "defence": "रक्षा", "economy": "अर्थव्यवस्था",
-               "policy": "नीति", "diplomacy": "कूटनीति", "weather": "मौसम", "politics": "राजनीति"}
+               "policy": "नीति", "diplomacy": "कूटनीति", "weather": "मौसम", "politics": "राजनीति",
+               "aviation": "विमानन", "health": "स्वास्थ्य", "world": "दुनिया", FALLBACK: "समाचार"}
+# How headlines name the institutions Wikipedia's search misreads ("Supreme Court" finds the US court, "Railway" a
+# railway in general): straight to the Indian article.
+ALIASES = {
+    "railway": "Indian Railways", "railways": "Indian Railways", "indian railways": "Indian Railways",
+    "rbi": "Reserve Bank of India", "reserve bank": "Reserve Bank of India",
+    "supreme court": "Supreme Court of India", "sc": "Supreme Court of India", "cji": "Chief Justice of India",
+    "parliament": "Parliament of India", "imd": "India Meteorological Department",
+    "dgca": "Directorate General of Civil Aviation (India)", "air india": "Air India", "indigo": "IndiGo",
+    "isro": "Indian Space Research Organisation", "drdo": "Defence Research and Development Organisation",
+    "sebi": "Securities and Exchange Board of India", "cbse": "Central Board of Secondary Education",
+    "upsc": "Union Public Service Commission", "idbi": "IDBI Bank", "idbi bank": "IDBI Bank",
+    "jio": "Jio Platforms", "aiims": "All India Institute of Medical Sciences, New Delhi",
+    "mea": "Ministry of External Affairs (India)", "election commission": "Election Commission of India",
+    "nhai": "National Highways Authority of India", "lic": "Life Insurance Corporation",
+}
+# What a centre must never be: a festival, a holiday, a people, a country, a language or a religion (a story about
+# the railways' Diwali bonus is not about Diwali).
+NOT_A_CENTRE = re.compile(r"\b(festival|holiday|observance|ethnic group|nationality|citizens of|people of|"
+                          r"inhabitants of|country in|country of|sovereign state|language|religion|month of)\b", re.I)
 SKIP = re.compile(
     # elections and campaigns
     r"\b(elections?|electoral|polls?|polling|bypolls?|by-elections?|exit polls?|voting|vote count\w*|voters?|"
@@ -63,7 +90,8 @@ SKIP = re.compile(
     # crime, investigations, violence, deaths and incidents (their own lanes)
     r"murder\w*|rape\w*|molest\w*|sexual|dowry|suicide|lynch\w*|communal|riots?|clash\w*|stabb\w*|shot|shoots?|"
     r"gunfire|firing|body found|bodies|kidnap\w*|abduct\w*|acid|pocso|gang|gangster|encounter|drugs?|smuggl\w*|"
-    r"arrest\w*|detained|raids?|summons|probe|scam|money laundering|ED|CBI|NIA|chargesheet|FIR|bail|convicted|"
+    r"arrest\w*|detained|raids?|summons|probe|scam|money laundering|ED|CBI|NIA|chargesheet|FIRs?|bail|convicted|"
+    r"charged|indicted|trespass\w*|spy|spying|espionage|"
     r"sentenced|acquitted|trial|accused|killed|killings?|kills?|dies|died|dead|death|deaths|demise|passes away|"
     r"funeral|attack\w*|crash\w*|injur\w*|terror\w*|militants?|neutrali[sz]\w*|IED|trapped|missing|protests?|"
     # market tips and company results
@@ -80,7 +108,8 @@ hyderabad pune lucknow patna jaipur kerala keralam tamil nadu punjab bihar gujar
 pradesh rajasthan assam odisha telangana andhra haryana jharkhand madhya kashmir""".split())
 OWNERS = 3
 WINDOW_H = 24
-RESOLVE = 10
+RESOLVE = 25
+CENTRES_TRIED = 2
 LEAD_FEEDS = ("IN", "IN-nation", "IN-hi", "IN-hi-nation")
 LEAD_CAP = 8
 OWNER_CAP = 8
@@ -97,7 +126,7 @@ def category(title: str) -> str | None:
     """The explainer category a headline names, or None (a skipped topic, an incident, or no category)."""
     if SKIP.search(title) or any(re.search(p, title, re.I) for p, _ in outlets.HEADLINE_KINDS):
         return None
-    return next((cat for pattern, cat in KINDS if re.search(pattern, title, re.I)), None)
+    return next((cat for pattern, cat in KINDS if re.search(pattern, title, re.I)), FALLBACK)
 
 
 def _generic(word: str) -> bool:
@@ -184,13 +213,16 @@ def clusters(items: list[dict], now: datetime) -> list[dict]:
     return sorted(out, key=lambda c: -len(c["owners"]))
 
 
-def centre(c: dict) -> str | None:
-    """The stem of the name the story is about: the most common name across its headlines, people and places before
-    institutions; countries never."""
+def centres(c: dict) -> list[str]:
+    """Stems of the names the story may be about, best first: the most common names across its headlines, people
+    and places before institutions; countries never."""
     counts = [(n, k) for k, n in c["names"].items() if k in c["named"] and k not in outlets.GENERIC]
-    if not counts:
-        return None
-    return max(counts, key=lambda nk: (nk[0] - (0.5 if nk[1] in INSTITUTIONS else 0), len(nk[1])))[1]
+    ranked = sorted(counts, key=lambda nk: (nk[0] - (0.5 if nk[1] in INSTITUTIONS else 0), len(nk[1])), reverse=True)
+    return [k for _, k in ranked]
+
+
+def centre(c: dict) -> str | None:
+    return next(iter(centres(c)), None)
 
 
 def phrase(titles: list[str], key: str) -> str | None:
@@ -247,11 +279,29 @@ def names_article(article: str, key: str, name: str) -> bool:
     return name.isupper() and initials.upper() == name.upper()
 
 
-def resolve(name: str, key: str) -> tuple[str, str, dict] | None:
-    """(article, qid, entity) for the centre: Wikipedia's search for the name, then for "<name> of India" when
-    that article is "<name> of India" itself or the name's acronym ("Supreme Court" alone finds the US court;
-    "Greece of India" finds "Greece–India relations", a different subject), keeping the first match that is an
-    Indian item and not a disambiguation page or a given name."""
+def _item(article: str) -> tuple[str, str, dict] | None:
+    """(title, qid, entity) for an article that can be a story's centre."""
+    page = wiki.page_info([article]).get(article)
+    if not page or not page.get("qid") or page["qid"] in TOO_BROAD:
+        return None
+    ent = wiki.entities([page["qid"]]).get(page["qid"]) or {}
+    kinds = {x["value"] for x in wiki.claims(ent, "P31")}
+    about = ((ent.get("descriptions") or {}).get("en") or {}).get("value", "")
+    if DISAMBIGUATION in kinds or GIVEN_NAMES & kinds or NOT_A_CENTRE.search(about):
+        return None
+    return page["title"], page["qid"], ent
+
+
+def resolve(name: str, key: str) -> tuple[str, str, dict, bool] | None:
+    """(article, qid, entity, indian) for the centre. A name in ALIASES goes straight to its Indian article; otherwise
+    Wikipedia's search for the name, then for "<name> of India" when that article is "<name> of India" itself or the
+    name's acronym ("Supreme Court" alone finds the US court; "Greece of India" finds "Greece–India relations", a
+    different subject), keeping the first Indian item. With no Indian item, the name's own article tells a world
+    story (owner, 2026-10-14: the channel covers the world's big news too)."""
+    if name.lower() in ALIASES:
+        found = _item(ALIASES[name.lower()])
+        return found + (True,) if found else None
+    world = None
     for n, query in enumerate((name, f"{name} of India")):
         article = wiki.search(query)
         if not article or not names_article(article, key, name):
@@ -259,15 +309,13 @@ def resolve(name: str, key: str) -> tuple[str, str, dict] | None:
         indian_title = re.match(re.escape(name) + r"( of India|\s*\(India\)|, India)$", article, re.I)
         if n and not indian_title and not names_article(article, "", name):
             continue
-        page = wiki.page_info([article]).get(article)
-        if not page or not page.get("qid") or page["qid"] in TOO_BROAD:
+        found = _item(article)
+        if not found:
             continue
-        ent = wiki.entities([page["qid"]]).get(page["qid"]) or {}
-        kinds = {x["value"] for x in wiki.claims(ent, "P31")}
-        if DISAMBIGUATION in kinds or GIVEN_NAMES & kinds or not indian(ent):
-            continue
-        return page["title"], page["qid"], ent
-    return None
+        if indian(found[2]):
+            return found + (True,)
+        world = world or (found if not n else None)
+    return world + (False,) if world else None
 
 
 def hindi_names_of(label_hi: str | None) -> list[str]:
@@ -330,22 +378,29 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
     for c in clusters(items, now):
         if len(c["owners"]) < OWNERS or looked >= RESOLVE:
             break
-        key = centre(c)
         titles = [i["title"] for i in c["items"]]
-        name = phrase(titles, key) if key else None
-        if not name or (" " not in name and not name.isupper() and name.lower() in common):
+        found, name, tried = None, None, []
+        for key in centres(c)[:CENTRES_TRIED]:
+            name = phrase(titles, key)
+            if not name or (" " not in name and not name.isupper() and name.lower() in common
+                            and name.lower() not in ALIASES):
+                continue
+            tried.append(name)
+            looked += 1
+            try:
+                found = resolve(name, key)
+            except Exception as exc:
+                notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
+                continue
+            if found:
+                break
+        if not tried:
             notes.append(f"explainer {titles[0][:60]!r}: no name to tell it by")
             continue
-        looked += 1
-        try:
-            found = resolve(name, key)
-        except Exception as exc:
-            notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
-            continue
         if not found:
-            notes.append(f"explainer {name}: no Indian Wikipedia article about it")
+            notes.append(f"explainer {' / '.join(tried)}: no Wikipedia article that can be its centre")
             continue
-        article, qid, ent = found
+        article, qid, ent, home = found
         if qid in skip_qids or qid in seen:
             continue
         kinds = {x["value"] for x in wiki.claims(ent, "P31")}
@@ -378,8 +433,9 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
                     "views": 0, "traffic": 0,
                     "headlines": list(dict.fromkeys([story] + [i["title"] for i in own] + lead_en))[:6],
                     "hindi_headlines": list(dict.fromkeys([i["title"] for i in hi_rows] + lead_hi))[:5],
-                    "hindi_news": len(hi_rows) + len(lead_hi), "geos": ["IN"], "region": "india",
-                    "india_link": True, "label_hi": label_hi,
+                    "hindi_news": len(hi_rows) + len(lead_hi), "geos": ["IN"] if home else [],
+                    "region": "india" if home else "world", "india_link": home or bool(hi_rows or lead_hi),
+                    "label_hi": label_hi,
                     "reports": [outlets.compact(i) for i in ranked][:8],
                     "via": [f"outlet:{o}" for o in who] + [f"google-news:{t}" for t in (lead_en + lead_hi)[:3]]})
     return sorted(out, key=lambda c: -c["fame"]), notes

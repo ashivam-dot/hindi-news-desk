@@ -43,20 +43,21 @@ EDGE_KEEP = 0.05
 VOICE = "Sulafat"
 GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
 GEMINI_INTERACTIONS = "https://generativelanguage.googleapis.com/v1beta/interactions"
-# Newest first; each has its own free daily quota.
-GEMINI_TTS = ("gemini-3.8-flash-tts", "gemini-3.8-flash-lite-tts", "gemini-3.1-flash-tts-preview",
+# Each has its own free daily quota. flash-lite first: its measured, lower-energy read suits a bulletin better than
+# flash's livelier one (owner's review of the 10 and 13 Oct 2026 Shorts).
+GEMINI_TTS = ("gemini-3.8-flash-lite-tts", "gemini-3.8-flash-tts", "gemini-3.1-flash-tts-preview",
               "gemini-2.5-flash-preview-tts")
 MAX_QUOTA_WAIT = 90.0
 UNKNOWN_QUOTA_BACKOFF = (20.0, 40.0)
-_BASE = ("Read this Hindi news story aloud as a warm, clear and expressive Hindi news storyteller speaking to one "
-         "listener. Natural pauses between sentences and a slightly longer pause between lines. {mood} Never "
-         "sensational, never dramatic, no shouting. Pace: about 145 words a minute. Speak only the transcript.")
-DIRECTION = {"tribute": _BASE.format(mood="The story is a tribute: gentle, respectful and moving, with quiet warmth."),
-             "news": _BASE.format(mood="The story is news: calm, steady and caring, with feeling that fits what "
-                                       "happened.")}
+_BASE = ("Read this Hindi news bulletin aloud as a senior Hindi TV news anchor on air: formal, crisp, authoritative "
+         "and measured, with clear diction, firm sentence endings and a short pause between sentences and a longer "
+         "one between lines. {mood} Not conversational, not a storyteller, never sensational, never dramatic, no "
+         "shouting. Pace: about 135 words a minute. Speak only the transcript.")
+DIRECTION = {"tribute": _BASE.format(mood="This is an obituary report: grave, respectful and steady."),
+             "news": _BASE.format(mood="This is a news report: serious, neutral and steady.")}
 TAKES = 3
 MIN_COVERAGE = align.MIN_COVERAGE
-TARGET_WPM, AIM_WPM, HARD_WPM = (140.0, 155.0), 147.0, (115.0, 185.0)
+TARGET_WPM, AIM_WPM, HARD_WPM = (128.0, 148.0), 138.0, (110.0, 180.0)
 TEMPO_LIMITS = (0.85, 1.18)
 CUT_LEAD = 0.08
 TTS_DIR = Path(__file__).resolve().parents[1] / "tts"

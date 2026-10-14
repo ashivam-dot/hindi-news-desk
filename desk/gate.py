@@ -188,8 +188,9 @@ def _story(short: Short) -> list[str]:
 
     problems = []
     photos = short.scene.get("photos", [])
-    if len(photos) < 3:
-        problems.append(f"photos: only {len(photos)} (want 3 or more)")
+    need = 2 if short.id.startswith(("kh-", "nw-")) else 3
+    if len(photos) < need:
+        problems.append(f"photos: only {len(photos)} (want {need} or more)")
     credits = " ".join(short.credits)
     for p in photos:
         if not media.FREE.match(p.get("license", "")):

@@ -24,9 +24,9 @@ from . import ledger, news, orbitwire, outlets, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
-MAX_PER_DAY = 10
+MAX_PER_DAY = 20
 BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
-MIN_GAP = timedelta(minutes=30)
+MIN_GAP = timedelta(minutes=20)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
 # Or this many independent outlets on one incident, BREAKING_STRONG of them official, public or international: a big
@@ -35,7 +35,7 @@ BREAKING_OWNERS, BREAKING_STRONG = 5, 2
 BREAKING_MAX_AGE_H = 12
 STALE_H = 48
 LIVE_NEWS_H = 24
-HALF_LIFE_H = {"death": 36, "protest": 18, "movement": 18, "conflict": 12, "earthquake": 18, "explainer": 14}
+HALF_LIFE_H = {"death": 36, "protest": 18, "movement": 18, "conflict": 12, "earthquake": 18, "explainer": 10}
 # One person or institution is explained at most once in this many hours, whatever the story.
 EXPLAIN_REPEAT_H = 20
 DEFAULT_HALF_LIFE_H = 24

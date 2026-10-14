@@ -12,13 +12,14 @@ import functools
 import math
 import re
 import subprocess
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, features
 
-from . import config, depth, music
+from . import config, depth, hindi, music
 from .spec import Short
 
 W, H, FPS = 1080, 1920, 30
@@ -77,25 +78,27 @@ def _ease(u: float) -> float:
 
 
 class Plate:
-    """One photo prepared for camera moves: RGB and depth at plate size."""
+    """One photo prepared for camera moves: RGB and depth at plate size (the frame, or a bulletin's photo window)."""
 
-    def __init__(self, photo: dict, cache: Path):
+    def __init__(self, photo: dict, cache: Path, size: tuple[int, int] = (W, H), face_share: float = 0.17):
         img = Image.open(photo["path"]).convert("RGB")
         dep = depth.estimate(img, cache)
-        pw, ph = round(W * MARGIN), round(H * MARGIN)
+        tw, th = size
+        pw, ph = round(tw * MARGIN), round(th * MARGIN)
         iw, ih = img.size
         focus = photo.get("focus")
-        if focus or iw / ih <= 0.9:
+        # Fill the plate unless the photo is far wider than it (a panorama is shown whole on a blurred copy).
+        if focus or iw / ih <= max(0.9, 1.6 * tw / th):
             if focus:
                 fx, fy, fw, fh = focus
                 cx, cy = fx + fw / 2, fy + fh / 2
-                # Face about a sixth of the frame height, but never crop below 900 px (upscaling turns to mush).
-                ch = min(ih, max(fh / 0.17, min(ih, 900)))
+                # Face about face_share of the frame height, but never crop below 900 px (upscaling turns to mush).
+                ch = min(ih, max(fh / face_share, min(ih, 900 * th / H)))
             else:
                 cx, cy, ch = iw / 2, ih * 0.42, ih
-            cw = ch * 9 / 16
+            cw = ch * tw / th
             if cw > iw:
-                cw, ch = iw, iw * 16 / 9
+                cw, ch = iw, iw * th / tw
             ch = min(ch, ih)
             cw = min(cw, iw)
             x0 = min(max(cx - cw / 2, 0), iw - cw)
@@ -131,8 +134,9 @@ class Plate:
 
 
 class Camera:
-    def __init__(self):
-        gx, gy = np.meshgrid(np.arange(W, dtype=np.float32) - W / 2, np.arange(H, dtype=np.float32) - H / 2)
+    def __init__(self, size: tuple[int, int] = (W, H)):
+        tw, th = size
+        gx, gy = np.meshgrid(np.arange(tw, dtype=np.float32) - tw / 2, np.arange(th, dtype=np.float32) - th / 2)
         self.gx, self.gy = gx, gy
 
     def shoot(self, plate: Plate, u: float, motion: dict, punch: float = 0.0) -> np.ndarray:
@@ -155,17 +159,19 @@ class Camera:
 
 
 class Grade:
-    def __init__(self, mood: str, seed: int):
-        yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
-        r = np.sqrt(((xx - W / 2) / (W * 0.75)) ** 2 + ((yy - H * 0.45) / (H * 0.7)) ** 2)
+    def __init__(self, mood: str, seed: int, size: tuple[int, int] = (W, H), bands: bool = True):
+        tw, th = size
+        yy, xx = np.mgrid[0:th, 0:tw].astype(np.float32)
+        r = np.sqrt(((xx - tw / 2) / (tw * 0.75)) ** 2 + ((yy - th * 0.45) / (th * 0.7)) ** 2)
         vignette = np.clip(1.08 - 0.55 * r ** 2.2, 0.35, 1.0)
         # Darken behind the captions and the top chips so white text always reads.
-        band = 1 - 0.32 * np.exp(-((yy - H * CAPTION_Y) / (H * 0.09)) ** 2) - 0.25 * np.exp(-((yy - H * 0.1) / (H * 0.07)) ** 2)
-        self.mask = (vignette * band)[..., None].astype(np.float32)
+        band = 1 - 0.32 * np.exp(-((yy - th * CAPTION_Y) / (th * 0.09)) ** 2) - 0.25 * np.exp(-((yy - th * 0.1) / (th * 0.07)) ** 2)
+        self.mask = (vignette * (band if bands else 1.0))[..., None].astype(np.float32)
         self.tint = np.array([1.04, 1.0, 0.93] if mood == "tribute" else [0.97, 1.0, 1.04], np.float32)
         self.sat = 0.85 if mood == "tribute" else 0.95
+        self.size = size
         rng = np.random.default_rng(seed)
-        self.grain = [rng.normal(0, 5.0, (H // 2, W // 2, 1)).astype(np.float32) for _ in range(4)]
+        self.grain = [rng.normal(0, 5.0, (th // 2, tw // 2, 1)).astype(np.float32) for _ in range(4)]
 
     def apply(self, frame: np.ndarray, i: int) -> np.ndarray:
         f = frame.astype(np.float32)
@@ -173,7 +179,7 @@ class Grade:
         f = gray + (f - gray) * self.sat
         f = (f - 128) * 1.06 + 128
         f = f * self.tint * self.mask
-        g = cv2.resize(self.grain[i % 4], (W, H), interpolation=cv2.INTER_NEAREST)[..., None]
+        g = cv2.resize(self.grain[i % 4], self.size, interpolation=cv2.INTER_NEAREST)[..., None]
         return np.clip(f + g, 0, 255).astype(np.uint8)
 
 
@@ -238,18 +244,20 @@ def _chunks(words: list[dict], width=None) -> list[list[dict]]:
 
 
 class Captions:
-    def __init__(self, words: list[dict], accent: tuple):
-        self.font = _font("ExtraBold", CAPTION_SIZE)
+    def __init__(self, words: list[dict], accent: tuple, size: int = CAPTION_SIZE, y: float = CAPTION_Y,
+                 stroke: int = CAPTION_STROKE):
+        self.font = _font("ExtraBold", size)
         self.accent = accent
+        self.y, self.stroke = y, stroke
         self.groups = []
-        for chunk in _chunks(words, lambda text: self.font.getlength(text) + 2 * CAPTION_STROKE):
+        for chunk in _chunks(words, lambda text: self.font.getlength(text) + 2 * stroke):
             texts = [w["text"] for w in chunk]
             variants = [self._render(texts, k) for k in range(len(chunk))]
             self.groups.append({"start": chunk[0]["start"], "end": chunk[-1]["end"], "words": chunk,
                                 "variants": variants})
 
     def _render(self, texts: list[str], active: int) -> tuple[np.ndarray, np.ndarray]:
-        stroke = CAPTION_STROKE
+        stroke = self.stroke
         space = self.font.getlength(" ")
         widths = [self.font.getlength(t) + 2 * stroke for t in texts]
         ascent, descent = self.font.getmetrics()
@@ -278,7 +286,7 @@ class Captions:
                     rgb = cv2.resize(layer[0], (max(1, round(w * s)), max(1, round(h * s))))
                     a = cv2.resize(layer[1], (max(1, round(w * s)), max(1, round(h * s))))[..., None]
                     layer, (h, w) = (rgb, a), a.shape[:2]
-                _blit(frame, layer, (W - w) // 2, round(H * CAPTION_Y - h / 2))
+                _blit(frame, layer, (W - w) // 2, round(H * self.y - h / 2))
                 return
 
 
@@ -407,6 +415,8 @@ def _mix(narration: Path, short: Short, seconds: float, out: Path) -> Path:
 
 def render(short: Short, timing: dict, work: Path) -> dict:
     """short.mp4 (1080x1920, 30 fps, H.264 + AAC) and a few stills."""
+    if short.scene.get("template") == "bulletin":
+        return render_bulletin(short, timing, work)
     mood = short.scene.get("mood", "tribute")
     accent = ACCENT.get(mood, ACCENT["tribute"])
     photos = short.scene["photos"]
@@ -498,4 +508,310 @@ def render(short: Short, timing: dict, work: Path) -> dict:
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "story", "photos": len(photos),
+            "fps": FPS, "size": [W, H]}
+
+
+# The news bulletin (owner, 2026-10-14: "it really doesn't look like a news report, no facts nothing is shown"): a TV
+# news screen. A channel bar with the date, the photo in a window over a blurred copy of itself, a headline bar naming
+# the sources, a fact card for every beat (its sourced number or decision, what it is, and who reports it), subtitles,
+# a ticker of the story's facts, and a "मुख्य तथ्य" recap at the end. Every word on screen is the gated title, a gated
+# card or the narration itself.
+NEWS_RED = (200, 28, 44)
+NEWS_NAVY = (10, 20, 46)
+NEWS_GOLD = (255, 200, 70)
+WIN_Y, WIN_H = 140, 880
+HEAD_Y = WIN_Y + WIN_H
+CARD_X, CARD_GAP = 40, 34
+SUB_Y = 0.842
+BADGE_Y = 1700
+TICKER_H = 72
+TICKER_Y = H - TICKER_H - 14
+TICKER_SPEED = 150  # px a second
+NEWS_LABEL = "समाचार"
+FILE_PHOTO = "फ़ाइल फ़ोटो"
+RECAP = "मुख्य तथ्य"
+IST = timezone(timedelta(hours=5, minutes=30))
+
+
+def _center(d: ImageDraw.ImageDraw, box: tuple, text: str, font: ImageFont.FreeTypeFont, fill: tuple) -> None:
+    x0, y0, x1, y1 = box
+    b = font.getbbox(text)
+    d.text((x0 + (x1 - x0 - (b[2] - b[0])) / 2 - b[0], y0 + (y1 - y0 - (b[3] - b[1])) / 2 - b[1]), text, font=font,
+           fill=fill)
+
+
+def _pill(text: str, font: ImageFont.FreeTypeFont, fill: tuple, color=(255, 255, 255, 255), pad: int = 18,
+          height: int = 72) -> Image.Image:
+    text = drawable(text, "ExtraBold")
+    img = Image.new("RGBA", (round(font.getlength(text)) + 2 * pad, height), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, img.width - 1, height - 1), radius=10, fill=fill)
+    _center(d, (0, 0, img.width, height), text, font, color)
+    return img
+
+
+def event_day(short: Short) -> date | None:
+    try:
+        return date.fromisoformat((short.event_time or "")[:10])
+    except ValueError:
+        return None
+
+
+def _topbar_layer(label: str, when: date | None, fresh: bool) -> tuple[np.ndarray, np.ndarray]:
+    """The channel bar: the story's kind in red, the channel's name, ताज़ा for today's news, and the date."""
+    name = config.NAME_HI or config.NAME or ""
+    bar = Image.new("RGBA", (W - 72, 76), (0, 0, 0, 0))
+    x = 0
+    for text, fill, color in ((label or NEWS_LABEL, NEWS_RED + (255,), (255, 255, 255, 255)),
+                              (name, NEWS_NAVY + (235,), (255, 255, 255, 255)),
+                              ("ताज़ा" if fresh else "", NEWS_GOLD + (255,), NEWS_NAVY + (255,))):
+        if not text:
+            continue
+        pill = _pill(text, _font("ExtraBold", 40), fill, color, height=76)
+        bar.alpha_composite(pill, (x, 0))
+        x += pill.width + 14
+    if when:
+        pill = _pill(hindi.date_hi(when), _font("SemiBold", 34), (0, 0, 0, 165), height=64)
+        if x + pill.width <= bar.width:
+            bar.alpha_composite(pill, (bar.width - pill.width, 6))
+    return _rgba(bar)
+
+
+def _headline_layer(title: str, sources: str) -> tuple[np.ndarray, np.ndarray]:
+    """The headline bar under the photo: the title on at most two lines, then where the facts come from."""
+    title = drawable(title, "ExtraBold")
+    rows = wrap2(title, "ExtraBold", 64, W - 110)
+    fonts = [_fit("ExtraBold", 64, r, W - 110, 38) for r in rows]
+    src = drawable(sources, "SemiBold") if sources else ""
+    f_src = _fit("SemiBold", 34, src, W - 110, 24) if src else None
+    tall = [f.getbbox(r)[3] - f.getbbox(r)[1] for f, r in zip(fonts, rows)]
+    h = 36 + sum(tall) + 18 * (len(rows) - 1) + (26 + 38 if src else 0) + 30
+    img = Image.new("RGBA", (W, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle((0, 0, W, h), fill=NEWS_NAVY + (240,))
+    d.rectangle((0, 0, W, 8), fill=NEWS_RED + (255,))
+    d.rectangle((0, 8, 12, h), fill=NEWS_GOLD + (255,))
+    y = 36
+    for r, f, t in zip(rows, fonts, tall):
+        b = f.getbbox(r)
+        d.text((48 - b[0], y - b[1]), r, font=f, fill=(255, 255, 255, 255))
+        y += t + 18
+    if src:
+        b = f_src.getbbox(src)
+        d.text((48 - b[0], y + 8 - b[1]), src, font=f_src, fill=NEWS_GOLD + (255,))
+    return _rgba(img)
+
+
+def card_sources(short: Short, card: dict) -> str:
+    """The outlets whose reports state the card's number ("स्रोत: बीबीसी · द हिंदू"), or '' when no outlet fact backs
+    it (the headline bar already names the Short's sources)."""
+    outlet = {}
+    for r in short.scene.get("reporting") or []:
+        outlet.setdefault(r.get("owner"), r.get("outlet_hi") or r.get("outlet"))
+    nums = {v for v, _ in hindi.numbers(f"{card.get('big', '')} {card.get('small', '')}")}
+    owners = [o for f in short.facts if f.owners and set(f.numbers) & nums for o in f.owners]
+    names = [outlet[o] for o in dict.fromkeys(owners) if outlet.get(o)][:3]
+    return "स्रोत: " + " · ".join(names) if names else ""
+
+
+def _fact_layer(value: str, label: str, who: str) -> tuple[np.ndarray, np.ndarray]:
+    """A beat's fact card: the sourced value large, what it is, and who reports it."""
+    value, label, who = drawable(value, "ExtraBold"), drawable(label, "Bold"), drawable(who, "Medium")
+    width = W - 2 * CARD_X - 90
+    parts = [(value, _fit("ExtraBold", 92, value, width, 44), NEWS_GOLD)]
+    if label:
+        parts.append((label, _fit("Bold", 46, label, width, 28), (255, 255, 255)))
+    if who:
+        parts.append((who, _fit("Medium", 30, who, width, 22), (196, 208, 232)))
+    tall = [f.getbbox(t)[3] - f.getbbox(t)[1] for t, f, _ in parts]
+    w = round(max(f.getlength(t) for t, f, _ in parts)) + 92
+    h = 30 + sum(tall) + 16 * (len(parts) - 1) + 30
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=22, fill=(8, 14, 32, 228))
+    d.rounded_rectangle((0, 0, 14, h - 1), radius=7, fill=NEWS_RED + (255,))
+    y = 30
+    for (t, f, c), th in zip(parts, tall):
+        b = f.getbbox(t)
+        d.text((50 - b[0], y - b[1]), t, font=f, fill=c + (255,))
+        y += th + 16
+    return _rgba(img)
+
+
+def facts_on_screen(short: Short) -> list[tuple[str, str]]:
+    """(value, label) of every beat's card, in order, once each."""
+    rows = [((b.card or {}).get("big", "").strip(), (b.card or {}).get("small", "").strip()) for b in short.beats
+            if b.shot != "outro"]
+    return list(dict.fromkeys(r for r in rows if r[0]))
+
+
+class Ticker:
+    """The bottom strip: "मुख्य तथ्य" in red, then the story's facts scrolling right to left."""
+
+    def __init__(self, facts: list[tuple[str, str]]):
+        self.label = _rgba(_pill(RECAP, _font("ExtraBold", 36), NEWS_RED + (255,), height=TICKER_H))
+        text = "     •     ".join(f"{label}: {value}" if label else value for value, label in facts)
+        self.text = None
+        if text:
+            font = _font("SemiBold", 38)
+            text = drawable(text + "     •     ", "SemiBold")
+            img = Image.new("RGBA", (round(font.getlength(text)) + 8, TICKER_H), (0, 0, 0, 0))
+            _center(ImageDraw.Draw(img), (0, 0, img.width, TICKER_H), text, font, (255, 255, 255, 255))
+            self.text = _rgba(img)
+
+    def draw(self, frame: np.ndarray, t: float) -> None:
+        band = frame[TICKER_Y:TICKER_Y + TICKER_H].astype(np.float32)
+        frame[TICKER_Y:TICKER_Y + TICKER_H] = (band * 0.12 + np.array(NEWS_NAVY, np.float32) * 0.88).astype(np.uint8)
+        x0 = self.label[1].shape[1] + 16
+        if self.text is not None:
+            period = self.text[1].shape[1]
+            x = x0 - (t * TICKER_SPEED) % period
+            while x < W:
+                _blit(frame, self.text, round(x), TICKER_Y)
+                x += period
+        _blit(frame, self.label, 0, TICKER_Y)
+
+
+def _recap_layer(facts: list[tuple[str, str]]) -> tuple[np.ndarray, np.ndarray] | None:
+    """The end card's "मुख्य तथ्य": up to four of the Short's facts, value over label."""
+    facts = facts[:4]
+    if not facts:
+        return None
+    width = W - 160
+    head = _font("ExtraBold", 62)
+    rows = [(drawable(v, "ExtraBold"), drawable(lbl, "SemiBold")) for v, lbl in facts]
+    fonts = [(_fit("ExtraBold", 58, v, width - 60, 34), _fit("SemiBold", 38, lbl, width - 60, 24) if lbl else None)
+             for v, lbl in rows]
+    tall = [(fv.getbbox(v)[3] - fv.getbbox(v)[1], (fl.getbbox(lbl)[3] - fl.getbbox(lbl)[1]) if fl else 0)
+            for (v, lbl), (fv, fl) in zip(rows, fonts)]
+    h = 60 + 70 + sum(a + b + (12 if b else 0) + 40 for a, b in tall) + 20
+    img = Image.new("RGBA", (width, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, width - 1, h - 1), radius=26, fill=(8, 14, 32, 232))
+    d.rectangle((0, 0, width, 10), fill=NEWS_RED + (255,))
+    b = head.getbbox(RECAP)
+    d.text((44 - b[0], 44 - b[1]), RECAP, font=head, fill=NEWS_GOLD + (255,))
+    y = 60 + 70
+    for (v, lbl), (fv, fl), (a, bb) in zip(rows, fonts, tall):
+        d.ellipse((44, y + a / 2 - 8, 60, y + a / 2 + 8), fill=NEWS_RED + (255,))
+        g = fv.getbbox(v)
+        d.text((84 - g[0], y - g[1]), v, font=fv, fill=(255, 255, 255, 255))
+        y += a
+        if fl:
+            g = fl.getbbox(lbl)
+            d.text((84 - g[0], y + 12 - g[1]), lbl, font=fl, fill=(196, 208, 232, 255))
+            y += bb + 12
+        y += 40
+    return _rgba(img)
+
+
+def _backdrop(window: np.ndarray) -> np.ndarray:
+    """The whole frame behind the window: a dark, blurred copy of the photo."""
+    small = cv2.resize(window, (W // 8, WIN_H // 8), interpolation=cv2.INTER_AREA)
+    cw = round(small.shape[0] * W / H)
+    x0 = (small.shape[1] - cw) // 2
+    small = cv2.GaussianBlur(cv2.resize(small[:, x0:x0 + cw], (W // 8, H // 8)), (0, 0), 5)
+    big = cv2.resize(small, (W, H), interpolation=cv2.INTER_LINEAR).astype(np.float32)
+    return (big * 0.34 + np.array(NEWS_NAVY, np.float32) * 0.4).astype(np.uint8)
+
+
+def _slide(t: float, start: float, dur: float = 0.3) -> float:
+    return _ease((t - start) / dur)
+
+
+def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
+    """The news-bulletin Short (see the comment above NEWS_RED)."""
+    mood = short.scene.get("mood", "news")
+    accent = NEWS_GOLD
+    photos = short.scene["photos"]
+    size = (W, WIN_H)
+    plates = {i: Plate(p, Path(p["path"]).with_suffix(".depth.npy"), size=size, face_share=0.3)
+              for i, p in enumerate(photos)}
+    cam, grade = Camera(size), Grade(mood, seed=len(short.id), size=size, bands=False)
+    captions = Captions(timing["words"], accent, size=66, y=SUB_Y, stroke=7)
+    duration = timing["duration"] + 0.6
+    spans = timing["beats"]
+    shots = []
+    for i, (beat, (s, e)) in enumerate(zip(short.beats, spans)):
+        idx = int(beat.shot.split(":")[1]) if beat.shot.startswith("photo:") else None
+        if idx is None or idx not in plates:
+            idx = shots[-1]["photo"] if shots else 0
+        shots.append({"photo": idx, "start": s if i else 0.0, "end": e if i < len(spans) - 1 else duration,
+                      "motion": MOTIONS[i % len(MOTIONS)], "beat": beat, "outro": beat.shot == "outro"})
+    cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
+             if b["beat"].card and b["beat"].card.get("big") and not b["outro"] else None for b in shots]
+    day = event_day(short)
+    fresh = day is not None and day == datetime.now(IST).date()
+    top = _topbar_layer(label_for(short) or NEWS_LABEL, day, fresh)
+    headline = _headline_layer(short.title, sources_line(short))
+    facts = facts_on_screen(short)
+    ticker = Ticker(facts)
+    recap = _recap_layer(facts)
+    credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
+    file_tag = _rgba(_pill(FILE_PHOTO, _font("Bold", 30), (0, 0, 0, 170), height=48, pad=14))
+    end = _end_layers(accent, disclosure(photos))
+    badge = _badge_layer()
+    card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
+    work.mkdir(parents=True, exist_ok=True)
+    mixed = _mix(work / "narration.wav", short, duration, work)
+    out = work / "short.mp4"
+    stills = work / "stills"
+    stills.mkdir(exist_ok=True)
+    enc = subprocess.Popen(
+        ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+         "-i", "-", "-i", str(mixed), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
+    n = int(math.ceil(duration * FPS))
+    still_at = {int(n * k / 5) for k in range(5)}
+    for i in range(n):
+        t = i / FPS
+        k = next(j for j, s in enumerate(shots) if t < s["end"] or j == len(shots) - 1)
+        shot = shots[k]
+        u = (t - shot["start"]) / max(shot["end"] - shot["start"], 0.1)
+        punch = 0.03 * max(0.0, 1 - (t - shot["start"]) / 0.35) if k else 0.0
+        win = cam.shoot(plates[shot["photo"]], u, shot["motion"], punch)
+        if k and (t - shot["start"]) * FPS < CROSSFADE:
+            prev = shots[k - 1]
+            pu = (t - prev["start"]) / max(prev["end"] - prev["start"], 0.1)
+            a = (t - shot["start"]) * FPS / CROSSFADE
+            win = cv2.addWeighted(win, a, cam.shoot(plates[prev["photo"]], pu, prev["motion"]), 1 - a, 0)
+        win = grade.apply(win, i)
+        frame = _backdrop(win)
+        if shot["outro"]:
+            fade = min(1.0, (t - shot["start"]) / 0.5)
+            frame = cv2.addWeighted(frame, 1 - 0.4 * fade, np.zeros_like(frame), 0.4 * fade, 0)
+            a = min(1.0, (t - shot["start"]) / 0.4)
+            logo, src, disc = end
+            block = ((recap[1].shape[0] + 70) if recap is not None else 0) + \
+                ((logo[1].shape[0] + 30) if logo is not None else 0) + src[1].shape[0] + 24 + disc[1].shape[0]
+            y = max(WIN_Y + 40, (TICKER_Y - block) // 2)
+            if recap is not None:
+                _blit(frame, recap, (W - recap[1].shape[1]) // 2, y, a)
+                y += recap[1].shape[0] + 70
+            if logo is not None:
+                _blit(frame, logo, (W - logo[1].shape[1]) // 2, y, a)
+                y += logo[1].shape[0] + 30
+            _blit(frame, src, (W - src[1].shape[1]) // 2, y, a)
+            _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + src[1].shape[0] + 24, a)
+        else:
+            frame[WIN_Y:WIN_Y + WIN_H] = win
+            _blit(frame, file_tag, W - file_tag[1].shape[1] - 24, WIN_Y + 20, 0.95)
+            _blit(frame, credits[shot["photo"]], 24, WIN_Y + WIN_H - 50, 0.9)
+            _blit(frame, headline, 0, HEAD_Y)
+            if cards[k] is not None:
+                e = _slide(t, shot["start"]) if k else 1.0
+                cw = cards[k][1].shape[1]
+                _blit(frame, cards[k], round(CARD_X - (1 - e) * (cw + CARD_X)), card_y, e)
+        _blit(frame, top, 36, 40, 0.97)
+        _blit(frame, badge, 36, BADGE_Y, 0.97)
+        ticker.draw(frame, t)
+        _progress(frame, t / duration, NEWS_RED)
+        captions.draw(frame, t)
+        enc.stdin.write(frame.tobytes())
+        if i in still_at:
+            Image.fromarray(frame).save(stills / f"t{i // FPS:03d}.png")
+    enc.stdin.close()
+    if enc.wait() != 0:
+        raise RuntimeError("ffmpeg failed to encode the Short")
+    return {"duration": round(duration, 2), "frames": n, "template": "bulletin", "photos": len(photos),
             "fps": FPS, "size": [W, H]}

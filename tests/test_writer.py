@@ -44,6 +44,31 @@ def test_a_grounded_hindi_draft_passes():
     assert problems == [] and doubtful == []
 
 
+@pytest.mark.parametrize("say,title", [
+    ("आइए जानते हैं रमेश प्रसाद वर्मा के बारे में, 8 अक्टूबर 2026 को उनका निधन हो गया।", None),
+    ("दोस्तों, मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे, 8 अक्टूबर 2026 को उनका निधन हो गया!", None),
+    ("रमेश प्रसाद वर्मा क्यों याद किए जाएंगे? 8 अक्टूबर 2026 को उनका निधन हो गया।", None),
+    (None, "रमेश प्रसाद वर्मा क्यों याद किए जाएंगे?"),
+])
+def test_a_bulletin_never_chats_exclaims_or_asks(say, title):
+    d = draft()
+    if say:
+        d["beats"][0]["say"] = say
+    if title:
+        d["title"] = title
+    assert writer.casual(d)
+
+
+def test_the_card_label_is_shown_under_the_caption():
+    d = draft()
+    d["beats"][0]["label"] = "निधन"
+    short = writer._short("kh-x", "explainer", "Ramesh Prasad Verma", "रमेश प्रसाद वर्मा", d, [], [], [],
+                          [SOURCE_EN], SOURCE_EN, [{"credit": "c", "page": "p"}], ["https://x"], "2026-10-08",
+                          False, "news", [], "", [])
+    assert short.beats[0].card == {"big": "श्रद्धांजलि", "small": "निधन"}
+    assert short.scene["template"] == "bulletin"
+
+
 def test_a_number_not_in_the_sources_is_caught():
     d = draft()
     d["beats"][4]["say"] = "मुंबई के एक संगीत समारोह में 5 लाख से ज़्यादा लोग उन्हें सुनने आए थे।"

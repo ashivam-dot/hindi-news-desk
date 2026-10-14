@@ -203,7 +203,7 @@ def test_a_spent_daily_quota_moves_to_the_next_model(key, monkeypatch):
 
     def post(url, headers, json, timeout):
         calls.append((url, headers))
-        if "3.8-flash-tts" in url or json.get("model") == "gemini-3.8-flash-tts":
+        if "3.8-flash-lite-tts" in url or json.get("model") == "gemini-3.8-flash-lite-tts":
             return Resp(429, {"error": {"details": [{"@type": "type.googleapis.com/google.rpc.QuotaFailure",
                                                      "violations": [{"quotaId": "GenerateRequestsPerDayPerProject",
                                                                      "quotaValue": "10"}]}]}})
@@ -211,9 +211,9 @@ def test_a_spent_daily_quota_moves_to_the_next_model(key, monkeypatch):
                           "content": [{"type": "audio", "data": wav, "mime_type": "audio/wav"}]}]})
     monkeypatch.setattr(voice.requests, "post", post)
     audio, record = voice.gemini_take("नमस्ते", "warm")
-    assert record["model"] == "gemini-3.8-flash-lite-tts" and len(calls) == 2
+    assert record["model"] == "gemini-3.8-flash-tts" and len(calls) == 2
     assert all(h == {"x-goog-api-key": KEY} for _, h in calls)
-    assert "gemini-3.8-flash-tts" in voice._tts_spent
+    assert "gemini-3.8-flash-lite-tts" in voice._tts_spent
 
 
 def test_a_refused_key_is_unavailable_and_never_echoed(key, monkeypatch):

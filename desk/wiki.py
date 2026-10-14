@@ -198,7 +198,8 @@ def entities(qids: list[str]) -> dict[str, dict]:
     out = {}
     for i in range(0, len(qids), 50):
         d = net.get_json(WD_API, params={"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]),
-                                         "props": "claims|labels|sitelinks", "languages": "en|hi", "format": "json"})
+                                         "props": "claims|labels|descriptions|sitelinks", "languages": "en|hi",
+                                         "format": "json"})
         out.update(d.get("entities", {}))
     return out
 

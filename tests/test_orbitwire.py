@@ -36,12 +36,9 @@ def test_newest_release_and_scheduled_ones_count():
     assert ov["status"] == "scheduled" and ov["orbitwire_published_at"] == "2026-10-10T12:00:00+00:00"
 
 
-def test_orbitwire_top_candidate_is_shared():
+def test_orbitwire_top_candidate_is_not_a_release():
     s = state(top={"id": "wk-Q7-2026w41", "qid": "Q7", "title": "Seven"})
-    assert orbitwire.overlap("Q7", s, AT)["status"] == "top_candidate"
-    s = state(top={"id": "wk-Q7-2026w41", "title": "Seven"})
-    assert orbitwire.overlap("Q7", s, AT)["status"] == "top_candidate"
-    assert orbitwire.overlap("Q8", s, AT) is None
+    assert orbitwire.overlap("Q7", s, AT) is None
 
 
 def test_high_profile():
@@ -54,13 +51,12 @@ def test_high_profile():
     assert orbitwire.high_profile({"fame": 10_000, "region": "india"}, []) is None
 
 
-def test_waits_three_hours_after_orbitwire_and_for_its_top_candidate():
+def test_waits_three_hours_after_orbitwire():
     ov = {"status": "published", "orbitwire_published_at": "2026-10-10T07:00:00+00:00"}
     assert "3 h" in orbitwire.wait(ov, AT)
     assert orbitwire.wait(ov, AT + timedelta(hours=1)) is None
     sched = {"status": "scheduled", "orbitwire_published_at": "2026-10-10T12:00:00+00:00"}
     assert orbitwire.wait(sched, AT) and orbitwire.wait(sched, AT + timedelta(hours=6)) is None
-    assert orbitwire.wait({"status": "top_candidate"}, AT)
     assert orbitwire.wait(None, AT) is None
 
 

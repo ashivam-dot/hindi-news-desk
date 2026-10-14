@@ -26,6 +26,7 @@ from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
 MIN_PHOTOS = 3
+REPORT_PHOTOS = 2  # kh- and nw- bulletins: the fact cards and headline carry the frame, not a photo slideshow
 MAX_DEATH_DAYS = 7
 IST = timezone(timedelta(hours=5, minutes=30))
 OUTRO = "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।"
@@ -39,8 +40,9 @@ SCHEMA = {
         "title": {"type": "string"},
         "beats": {"type": "array", "minItems": 6, "maxItems": 9, "items": {
             "type": "object",
-            "properties": {"say": {"type": "string"}, "photo": {"type": "integer"}, "caption": {"type": "string"}},
-            "required": ["say", "photo", "caption"]}},
+            "properties": {"say": {"type": "string"}, "photo": {"type": "integer"}, "caption": {"type": "string"},
+                           "label": {"type": "string"}},
+            "required": ["say", "photo", "caption", "label"]}},
         "names": {"type": "array", "items": {
             "type": "object", "properties": {"hi": {"type": "string"}, "en": {"type": "string"}},
             "required": ["hi", "en"]}},
@@ -50,44 +52,45 @@ SCHEMA = {
 CHECK_SCHEMA = {"type": "object", "properties": {"unsupported": {"type": "array", "items": {"type": "string"}}},
                 "required": ["unsupported"]}
 
-SYSTEM = ("You are the head writer of a Hindi YouTube Shorts news channel for Indian viewers. You tell the biggest "
-          "stories in India and the world in natural, spoken Hindi written in Devanagari, the way a respected Hindi "
-          "news anchor tells a story to one listener: warm, clear and human, with feeling that fits the story, never "
-          "sensational. Terms Hindi news keeps in English (flight numbers, agency names such as NDRF or NASA) may stay "
-          "in Latin letters. You never invent anything.")
+SYSTEM = ("You are the news editor of a Hindi YouTube Shorts news channel for Indian viewers. You write the bulletin "
+          "a senior Hindi TV news anchor reads on air: a formal, factual news report in standard Hindi written in "
+          "Devanagari, crisp and authoritative, every line a reported fact with its source, never chatty, never a "
+          "story told to a friend, never sensational. Terms Hindi news keeps in English (flight numbers, agency names "
+          "such as NDRF or NASA) may stay in Latin letters. You never invent anything.")
 
-DEATH_BRIEF = """STORY: {name} has died. Write a Hindi tribute Short that makes a viewer who barely knew {name} feel the
-loss, and makes a fan feel {pronoun} was honoured.
+DEATH_BRIEF = """STORY: {name} has died. Write a respectful Hindi TV news obituary report: what happened, and the
+record that made {object} known.
 
-Shape:
-1. Hook (beat 1, under 14 words): say plainly that {name} has died (use respectful Hindi such as "नहीं रहे" or
-   "का निधन"), with the one detail that makes it matter.
-2. Where {pronoun} began, or the struggle before success.
-3. The turning point or breakthrough, naming the specific work from the SOURCE.
-4. The work people loved most, and what made {object} different from everyone else.
-5. A human detail from the SOURCE that shows who {pronoun} was off screen or off stage.
-6. Legacy: what {pronoun} leaves behind. The last beat is one short, moving sentence.
+Shape (a news obituary, in this order):
+1. Lead (beat 1, under 16 words): say plainly that {name} has died (respectful Hindi such as "का निधन"), with the
+   age and the date if the SOURCE gives them, and who {pronoun} was in a few words.
+2. Where and how the news was confirmed, attributed, only as the SOURCE states it.
+3. The start of the career, with the year.
+4. The best-known works or achievements, named with their years.
+5. Honours and records from the SOURCE, with years.
+6. The reactions or what follows (funeral, tributes) if the SOURCE states them, otherwise one factual line on what
+   {pronoun} leaves behind. The last beat is one short, respectful factual sentence.
 Do not describe the cause or manner of death unless the SOURCE states it plainly; never mention suicide."""
 
-INCIDENT_BRIEF = """STORY: {name}. Write a Hindi news Short that helps a viewer understand what happened and why
-everyone is watching, with compassion for everyone affected.
+INCIDENT_BRIEF = """STORY: {name}. Write a Hindi TV news report of what happened, with compassion for everyone
+affected.
 
-Shape:
-1. Hook (beat 1, under 14 words): what happened and where, stated plainly, with the detail that makes it matter.
-2. The moment it began, in order, as a story.
-3. The people involved and what they faced, with official figures only if the SOURCE gives them.
-4. The response: rescuers, officials, investigators.
-5. What is still unknown or under investigation, said honestly.
-6. Why it matters now. The last beat is one short, steady sentence.
+Shape (a news report, in this order):
+1. Lead (beat 1, under 16 words): what happened, where and when, as a plain news sentence with the key number.
+2. The details: the sequence of events with times, places and figures, each attributed ("अधिकारियों के मुताबिक").
+3. The people affected, with official figures only if the SOURCE gives them.
+4. The official response: rescuers, officials, investigators, and what they said.
+5. What is still unknown or under investigation, said plainly.
+6. आगे क्या: the next step officials have announced. The last beat is one short factual sentence.
 Never name or describe any attacker, perpetrator or suspect. Never guess at causes. No graphic detail of injuries or
 death."""
 
-PROTEST_BRIEF = """STORY: {name}. Write a Hindi news Short that explains, fairly and calmly, what this protest or
-movement is, why people took to the streets, and where it stands now.
+PROTEST_BRIEF = """STORY: {name}. Write a Hindi TV news report that explains, fairly and calmly, what this protest
+or movement is, why people took to the streets, and where it stands now.
 
-Shape:
-1. Hook (beat 1, under 14 words): the newest development in the SOURCE, stated plainly.
-2. How it began: the trigger, in order, as a story.
+Shape (a news report, in this order):
+1. Lead (beat 1, under 16 words): the newest development in the SOURCE, as a plain news sentence.
+2. How it began: the trigger, with dates.
 3. Who is involved and what they demand, attributed ("आयोजकों का कहना है", "पार्टी का कहना है").
 4. How the government, police or courts responded, attributed to them.
 5. The turning point or the latest step.
@@ -98,24 +101,27 @@ arrest or crowd figure to whoever reported it ("पुलिस के मुत
 avoid a protest. Never mention suicide."""
 
 EXPLAINER_BRIEF = """STORY: {name}, in today's news: the story the first of TODAY'S LEAD HEADLINES points at (a
-headline only shows which story; its words are not a source). Write a Hindi "क्यों हुआ" explainer Short: a viewer who
-saw only the headline understands, in 45 seconds, what happened, why, and what it means.
+headline only shows which story; its words are not a source). Write a Hindi TV news report: a viewer who saw only
+the headline knows, in 45 seconds, what happened, the key numbers, why, and what happens next.
 
-Shape:
-1. Hook (beat 1, under 14 words): name {name} and either the newest, most striking reported fact, or the story's own
-   question with "क्यों" ("... ने इस्तीफ़ा क्यों दिया?"). The next beats answer it.
-2. What exactly happened, and when, in order (from REPORTING).
-3. Why: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना है",
-   "रिपोर्टों के अनुसार"). If no report gives a reason, say plainly that no official reason has been given.
-4. Background the viewer needs: who {name} is or what it does (from the SOURCE).
-5. The other side: when the story is one side acting against, accusing or protesting another (a party against the
-   government, the opposition against an official), say what the other side said in REPORTING, attributed; if
-   REPORTING carries no response from them, say "रिपोर्टों में <them> की प्रतिक्रिया नहीं है" in one short line.
-6. What happens next, or what is still unclear, said honestly. The last beat answers the hook in one short sentence.
+Shape (a news report, in this order):
+1. Lead (beat 1, under 16 words): a plain news sentence naming {name}: who did what, where and when, with the key
+   number if there is one. Never a question, never a teaser.
+2. The details: what exactly happened, with the dates, amounts and figures the REPORTING gives, each attributed
+   ("रिपोर्टों के मुताबिक").
+3. The official statement: what the government, company, court or person said, attributed to them.
+4. क्यों: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना
+   है"). If no report gives a reason, say plainly that no official reason has been given.
+5. The other side: when the story is one side acting against, accusing or protesting another, say what the other
+   side said in REPORTING, attributed; if REPORTING carries no response from them, say "रिपोर्टों में <them> की
+   प्रतिक्रिया नहीं है" in one short line. Otherwise one line of background on {name} from the SOURCE, only the part
+   this story needs (never a biography).
+6. आगे क्या: the next step that is announced or due, or what is still unclear. The last beat is one short factual
+   sentence, never a conclusion, a moral or an opinion.
 Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
 words, and attribute every claim, allegation and criticism to whoever made it. Never guess at motives, never predict,
 never give financial, legal or medical advice. Never mention suicide, and never write "जानें" (it reads as "lives
-lost"). The title may be the story's own question (ending in "?"), never a teaser that hides the news."""
+lost"). The title is a declarative news headline that states the news (never a question, never a teaser)."""
 
 RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
@@ -124,13 +130,16 @@ RULES = """RULES (all mandatory):
   slang. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
   "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
   sentences of 10 to 18 words. Count the words before you answer.
-- Every beat must carry a specific fact from the SOURCES (a work, a year, an honour, a choice they made); feeling
-  comes from how you tell those facts, not from vague praise.
-- Tell it as a story, not a list: vary how beats open, and never start more than 2 beats with the same word.
-- Hook: beat 1 must make a scrolling viewer stop within its first 5 words: open on the most striking fact in the
-  SOURCES (a decision, a number, a first, a reversal), never on a date, a greeting or a slow introduction.
-- Keep them watching: every beat adds one new fact and leads into the next; no recap, no filler, no empty lines such
-  as "यह खबर चर्चा में है". The last beat closes what the hook opened.
+- Register: a formal Hindi TV news bulletin read by an anchor. Third person, complete sentences, attribution in
+  every beat that reports a claim ("के मुताबिक", "ने बताया", "के अनुसार"). Never address the viewer, never "आइए",
+  "दोस्तों", "सोचिए", "क्या आप जानते हैं", never an exclamation, never a rhetorical question.
+- Every beat must carry a specific, checkable fact from the SOURCES (a number, a date, a name, a decision, an official
+  statement); no vague praise, no feelings, no opinion, no moral or conclusion of your own.
+- Vary how beats open, and never start more than 2 beats with the same word.
+- Lead: beat 1 states the news itself within its first 5 words (who or what, then what happened), never a date, a
+  greeting, a question or a slow introduction.
+- Every beat adds one new fact; no recap, no filler, no empty lines such as "यह खबर चर्चा में है" or "यह देखना
+  होगा".
 - Write every number as digits: years (1994), ages (75), dates ("10 अक्टूबर 2026"), and big numbers with लाख or
   करोड़ ("3 लाख", "1.5 करोड़"). A number must be exactly what the SOURCES say (a million is 10 लाख).
 - No hype or clickbait (सनसनीखेज, चौंकाने वाला, खौफनाक, ब्रेकिंग, बड़ी खबर), no emoji, no questions put to the viewer
@@ -141,10 +150,13 @@ RULES = """RULES (all mandatory):
   it}}. Where HINDI NAMES gives a Hindi spelling, use that spelling.
 - photo: the index of the PHOTO that best fits the beat. Beat 1 uses photo {best}. Use every photo at least once if
   you can, and the same photo at most twice.
-- caption: 1 to 4 Hindi words shown on screen that carry the beat's key fact: a number with its unit, a decision, the
-  work it names with its year, a role, an honour, or a year. Never a place name: viewers read a place over a photo
-  as where the photo was taken.
-- title: Hindi, 25 to 70 characters, factual and moving, includes {name_hi}, no clickbait, no capitals for effect.
+- caption: the beat's key fact as a news graphic shows it, 1 to 4 Hindi words: a number with its unit ("11.39%",
+  "6 लाख घर", "2 घंटे"), a date, a decision ("उड़ान डायवर्ट"), a role or an honour. Prefer a number whenever the beat
+  has one. Never a place name alone: viewers read a place over a photo as where the photo was taken.
+- label: 1 to 3 Hindi words under the caption that say what the caption is ("थोक महंगाई", "बिजली गुल", "कब",
+  "फ़ैसला", "आधिकारिक बयान", "आगे क्या"). No numbers in a label.
+- title: a Hindi news headline, 25 to 70 characters, that states the news (who, what), includes {name_hi}, no
+  question, no clickbait, no capitals for effect.
 Return only the JSON."""
 
 
@@ -259,7 +271,8 @@ def not_today(text: str) -> list[str]:
 
 
 def script_text(draft: dict) -> str:
-    return " ".join(b.get("say", "") + " " + b.get("caption", "") for b in draft.get("beats", [])) + " " + \
+    return " ".join(b.get("say", "") + " " + b.get("caption", "") + " " + b.get("label", "")
+                    for b in draft.get("beats", [])) + " " + \
         draft.get("title", "")
 
 
@@ -296,6 +309,7 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         problems.append(f"the script has {words} words; it must have 95 to 120")
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
+    problems += casual(draft)
     names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
     if not beats or not subject_in(beats[0].get("say", ""), subject, names):
         problems.append(f"beat 1 must name {subject.get('hi') or subject['en']} in Hindi, and list it in names")
@@ -343,6 +357,21 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     if angle and not orbitwire.title_fits(draft.get("title", ""), angle):
         problems.append(f"the title must show this Short's angle ({orbitwire.ANGLES[angle]['label']})")
     return problems, doubtful
+
+
+CASUAL = re.compile(r"आइए|आइये|दोस्तों|सोचिए|सोचिये|क्या आप|आपको बता दें|जानिए|जानिये|!")
+
+
+def casual(draft: dict) -> list[str]:
+    """A bulletin is read, not chatted: no viewer address, no exclamation, no question headline or lead."""
+    beats = draft.get("beats") or []
+    problems = [f"beat {i + 1} talks to the viewer or exclaims ({m.group(0)}); report it in the third person"
+                for i, b in enumerate(beats) if (m := CASUAL.search(b.get("say", "")))]
+    if "?" in (draft.get("title") or ""):
+        problems.append("the title must be a news headline that states the news, not a question")
+    if beats and "?" in beats[0].get("say", ""):
+        problems.append("beat 1 must state the news, not ask a question")
+    return problems
 
 
 def unlisted_but_sourced(item: str, ground_en: str) -> bool:
@@ -791,14 +820,15 @@ def _pair_for(draft: dict, name: str) -> str | None:
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
            mood, tags, summary, hashtags, region="world", ov=None, reports=None, credit=CREDIT) -> Short:
     reports = reports or []
-    beats = [Beat(b["say"].strip(), f"photo:{b['photo']}", {"big": b["caption"].strip(), "small": ""})
-             for b in draft["beats"]]
+    beats = [Beat(b["say"].strip(), f"photo:{b['photo']}",
+                  {"big": b["caption"].strip(), "small": (b.get("label") or "").strip()}) for b in draft["beats"]]
     beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
                       pause_after=0.5))
     ground = source + "\n" + "\n".join(facts_text)
     in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
     allowed = {n for f in facts for n in f.numbers}
-    shown = " ".join(b.text + " " + (b.card or {}).get("big", "") for b in beats) + " " + draft["title"]
+    shown = " ".join(b.text + " " + (b.card or {}).get("big", "") + " " + (b.card or {}).get("small", "")
+                     for b in beats) + " " + draft["title"]
     for n in sorted({v for v, _ in hindi.numbers(shown)}):
         if n not in allowed:
             who = by_owner.get(n, [])
@@ -810,7 +840,7 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
             allowed.add(n)
     title = draft["title"].strip().strip('"')
     if not 15 <= len(title) <= 90:
-        title = f"{name_hi} को श्रद्धांजलि" if kind == "death" else f"{name_hi}: पूरा मामला"
+        title = f"{name_hi} का निधन" if kind == "death" else f"{name_hi}: पूरा मामला"
         if ov:
             title = f"{name_hi}: {orbitwire.ANGLES[ov['angle']]['label']}"
     if any(media.from_openverse(p) for p in photos):
@@ -818,7 +848,7 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     if reports:
         credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
-    scene = {"template": "story", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
+    scene = {"template": "bulletin", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
              "name_hi": name_hi, "names": draft.get("names", []), "writer": {"models": used, "rejected": log}}
     if ov:
         scene["orbitwire"] = ov
@@ -874,8 +904,8 @@ def build_report(cand: dict) -> Short:
     context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
     ov, exclude = _shared(cand, "", {}, None, context)
     photos = fill_photos(context, work / "photos", exclude)[:8] if context else []
-    if len(photos) < MIN_PHOTOS:
-        raise ValueError(f"gate: only {len(photos)} usable photos of {name} (want {MIN_PHOTOS})"
+    if len(photos) < REPORT_PHOTOS:
+        raise ValueError(f"gate: only {len(photos)} usable photos of {name} (want {REPORT_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
     kind = "protest" if cat in ("protest", "movement") else "incident"
     toll = gate.reported_toll(reports)
@@ -938,8 +968,8 @@ def build_explainer(cand: dict) -> Short:
     ov, exclude = _shared(cand, title, ent, None, context)
     photos = pick_photos(title, ent, work / "photos", person=person, exclude=exclude, places=not person,
                          context_qids=context)
-    if len(photos) < MIN_PHOTOS:
-        raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
+    if len(photos) < REPORT_PHOTOS:
+        raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {REPORT_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
     story = cand.get("story") or (cand.get("headlines") or [title])[0]
     words = [phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])

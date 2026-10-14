@@ -82,6 +82,54 @@ def test_camera_moves_with_numpy_scalars():
     assert frame.shape == (compose.H, compose.W, 3) and frame.dtype == np.uint8 and frame.mean() > 80
 
 
+def _bulletin_short():
+    from desk.spec import Beat, Fact
+
+    beats = [Beat("थोक महंगाई 11.39% रही।", "photo:0", {"big": "11.39%", "small": "थोक महंगाई"}),
+             Beat("सरकार ने आंकड़े जारी किए।", "photo:1", {"big": "आधिकारिक आंकड़े", "small": "बयान"}),
+             Beat("स्रोत विवरण में।", "outro", {"big": "", "small": ""})]
+    facts = [Fact("source-11.39", "11.39", "https://x", ["11.39"], "reported", owners=["The Hindu Group", "HT Media"])]
+    return Short(id="kh-20261014-Q1", kind="explainer", title="थोक महंगाई 11.39% पर पहुंची", beats=beats,
+                 facts=facts, sources=["https://x"], loss=False, event_time="2026-10-14",
+                 scene={"template": "bulletin", "reporting": [{"owner": "The Hindu Group", "outlet": "The Hindu",
+                                                                "outlet_hi": "द हिंदू"},
+                                                               {"owner": "HT Media", "outlet": "Hindustan Times"}]})
+
+
+def test_bulletin_cards_name_the_outlets_that_report_their_number():
+    short = _bulletin_short()
+    assert compose.card_sources(short, short.beats[0].card) == "स्रोत: द हिंदू · Hindustan Times"
+    assert compose.card_sources(short, short.beats[1].card) == ""
+    assert compose.facts_on_screen(short) == [("11.39%", "थोक महंगाई"), ("आधिकारिक आंकड़े", "बयान")]
+
+
+def test_bulletin_layers_fit_the_frame():
+    short = _bulletin_short()
+    top = compose._topbar_layer("अर्थव्यवस्था", compose.event_day(short), fresh=True)
+    head = compose._headline_layer(short.title, "स्रोत: द हिंदू · Hindustan Times")
+    card = compose._fact_layer("11.39%", "थोक महंगाई", "स्रोत: द हिंदू")
+    recap = compose._recap_layer(compose.facts_on_screen(short))
+    assert top[1].shape[1] <= compose.W and head[1].shape[1] == compose.W
+    assert compose.HEAD_Y + head[1].shape[0] + compose.CARD_GAP + card[1].shape[0] < compose.BADGE_Y
+    assert card[1].shape[1] <= compose.W - 2 * compose.CARD_X
+    assert recap[1].shape[0] < compose.TICKER_Y - compose.WIN_Y
+
+
+def test_the_ticker_scrolls_and_never_leaves_a_gap():
+    ticker = compose.Ticker([("11.39%", "थोक महंगाई")])
+    frames = []
+    for t in (0.0, 7.3, 31.0):
+        frame = np.zeros((compose.H, compose.W, 3), np.uint8)
+        ticker.draw(frame, t)
+        frames.append(frame[compose.TICKER_Y:compose.TICKER_Y + compose.TICKER_H])
+    assert not np.array_equal(frames[0], frames[1])
+    x0 = ticker.label[1].shape[1] + 16
+    mid = (x0 + compose.W) // 2
+    for band in frames:
+        lit = band.max(axis=(0, 2)) > 120
+        assert lit[x0:mid].any() and lit[mid:].any()
+
+
 def test_mix_lasts_as_long_as_the_video(tmp_path):
     import soundfile as sf
 

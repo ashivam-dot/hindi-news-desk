@@ -194,7 +194,7 @@ def test_orbitwire_stories_told_before_wikidata_knew_them_are_shared():
     assert orbitwire.overlap(None, s, NOW, title="2026 Aubagne school shooting")["status"] == "published"
     assert orbitwire.overlap("Q9", s, NOW, title="2026 Aubagne school shooting")["status"] == "published"
     assert orbitwire.overlap(None, s, NOW, story_id="wp-2026_Erie_shooting")["orbitwire_id"] == "wk-Q77"
-    assert orbitwire.overlap(None, s, NOW, title="2026 French supermarket cyber attack")["status"] == "top_candidate"
+    assert orbitwire.overlap(None, s, NOW, title="2026 French supermarket cyber attack") is None
     assert orbitwire.overlap(None, s, NOW, title="2026 Gorkha flood") is None
 
 

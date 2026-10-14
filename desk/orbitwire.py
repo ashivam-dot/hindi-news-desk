@@ -94,7 +94,7 @@ def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None
             story_id: str | None = None, reports: list[str] | None = None) -> dict | None:
     """What Orbitwire did with this story (by QID, by article for a story Wikidata did not know yet, or by outlet story
     for one Wikipedia has no article for: an nw- id or a report URL): its newest release in the last SHARED_DAYS days
-    (or a scheduled one), else whether it is Orbitwire's current top candidate; None when the story is not shared."""
+    (or a scheduled one); None when the story is not shared."""
     ids = {i for i in (story_id, article_id(title) if title else None) if i and i.startswith(("wp-", "nw-"))}
     urls = set(reports or [])
     if not qid and not ids and not urls:
@@ -112,12 +112,8 @@ def overlap(qid: str | None, state: dict, at: datetime, title: str | None = None
         return {"qid": qid, "status": "scheduled" if when > at else "published", "orbitwire_id": r.get("id"),
                 "orbitwire_published_at": when.isoformat(timespec="seconds"), "orbitwire_url": r.get("url"),
                 "orbitwire_title": r.get("title")}
-    top = (state.get("candidates", {}).get("candidates") or [None])[0]
-    if top and _same({"id": top.get("id", ""), "qid": top.get("qid"), "article": top.get("title"),
-                      "report_urls": [r.get("url") for r in top.get("reports") or []]}, qid, ids, urls):
-        return {"qid": qid, "status": "top_candidate", "orbitwire_id": top.get("id"), "orbitwire_published_at": None,
-                "orbitwire_url": None, "orbitwire_title": top.get("title"),
-                "orbitwire_seen_at": state["candidates"].get("at")}
+    # Orbitwire's top candidate is not a release: holding for it once left a story untold on both channels (Multan
+    # derailment, 13 Oct 2026), so only published and scheduled Shorts count.
     return None
 
 
@@ -154,8 +150,6 @@ def wait(ov: dict | None, at: datetime) -> str | None:
     """Why a shared story must wait before this desk publishes it, or None."""
     if not ov:
         return None
-    if ov["status"] == "top_candidate":
-        return "Orbitwire's top candidate: waiting for its release, then 3 h"
     released = _at(ov["orbitwire_published_at"])
     if at - released < GAP:
         return f"Orbitwire released it at {ov['orbitwire_published_at']}; the Hindi Short waits until 3 h after"
