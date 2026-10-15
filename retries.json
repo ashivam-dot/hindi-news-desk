@@ -150,18 +150,23 @@
   "at": "2026-10-14T17:09:30+00:00"
  },
  "kh-20261015-Q3633485": {
-  "count": 2,
+  "count": 3,
   "reason": "gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
-  "at": "2026-10-15T02:10:40+00:00"
+  "at": "2026-10-15T03:20:00+00:00"
  },
  "kh-20261015-Q140632219": {
-  "count": 2,
-  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.654, 0.783, 0.936, 0.918, 0.989, 0.975, 0.946], 'wpm': 173.9, 'clean': False, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.673, 0.783, 0.936",
-  "at": "2026-10-15T02:21:21+00:00"
+  "count": 3,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.684, 0.938, 0.933, 0.935, 0.972, 0.969, 0.973], 'wpm': 158.4, 'clean': False, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.653, 0.",
+  "at": "2026-10-15T03:29:59+00:00"
  },
  "wk-Q31705888": {
-  "count": 1,
+  "count": 2,
   "reason": "gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
-  "at": "2026-10-15T02:21:23+00:00"
+  "at": "2026-10-15T03:30:00+00:00"
+ },
+ "kh-20261015-Q6109517": {
+  "count": 1,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.925, 0.787, 0.38, 0.0, 0.772, 0.896, 0.946], 'wpm': 171.7, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.906, 0.809, 0.418, 0.",
+  "at": "2026-10-15T03:33:23+00:00"
  }
 }
