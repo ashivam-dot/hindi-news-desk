@@ -1,24 +1,17 @@
 {
- "at": "2026-10-15T02:07:18+00:00",
+ "at": "2026-10-15T02:40:46+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 18 trending",
-  "outlets: 1285 headlines from 30 feeds (19 owners), 33 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261015-Q19867977, kh-20261015-Q69906, kh-20261015-Q3633485, kh-20261015-Q140632219; dropped: explainer Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer BS-VII / April: no Wikipedia article that can be its centre; explainer 'North Korea Test-Fires Two Types Of Submarine Strategic Crui': no name to tell it by",
+  "watch: 6 candidates from 19 trending",
+  "outlets: 1284 headlines from 30 feeds (19 owners), 35 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261015-Q19867977, kh-20261015-Q3633485, kh-20261015-Q140632219, kh-20261015-Q16186720; dropped: explainer Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer BS-VII / April: no Wikipedia article that can be its centre; explainer 'North Korea Test-Fires Two Types Of Submarine Strategic Crui': no name to tell it by",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 86 h old and no longer trending live",
-  "drop wk-Q7327889: 206 h old and no longer trending live",
-  "skip kh-20261015-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
-  "skip kh-20261015-Q140632219: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.654, 0.783, 0.936, 0.918, 0.989, 0.975, 0.946], 'wpm': 173.9, 'clean': False, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.673, 0.783, 0.936, 0.959, 0.957, 0.988, 0.973], 'wpm': 159.1, 'clean': False, 'ok': Fals",
-  "skip wk-Q31705888: gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
-  "published kh-20261015-Q3506475: https://www.youtube.com/shorts/CkY8gRAEOls"
- ],
- "published": {
-  "video_id": "CkY8gRAEOls",
-  "url": "https://www.youtube.com/shorts/CkY8gRAEOls",
-  "title": "राजनाथ सिंह ने भारत-आसियान रक्षा सहयोग बढ़ाने का आह्वान किया",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "hold kh-20261015-Q3633485: last Short went out 0.2 h ago",
+  "hold kh-20261015-Q140632219: last Short went out 0.2 h ago",
+  "hold wk-Q31705888: last Short went out 0.2 h ago",
+  "hold kh-20261015-Q6109517: last Short went out 0.2 h ago",
+  "drop wk-Q5300674: 87 h old and no longer trending live",
+  "drop wk-Q7327889: 207 h old and no longer trending live"
+ ]
 }
