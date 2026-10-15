@@ -1,22 +1,11 @@
 {
- "at": "2026-10-15T05:41:22+00:00",
+ "at": "2026-10-15T06:17:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 18 trending",
-  "outlets: 1305 headlines from 31 feeds (19 owners), 24 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261014-delhi-protest, nw-20261014-ministry-protest",
-  "explainers: 4 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q51993, kh-20261015-Q223; dropped: explainer October: fewer than 3 owners' headlines name it and the story; explainer IMD: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
-  "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 90 h old and no longer trending live",
-  "drop wk-Q3205897: 162 h old and no longer trending live",
-  "published nw-20261014-delhi-protest: https://www.youtube.com/shorts/C3c7GhdBRXg"
- ],
- "published": {
-  "video_id": "C3c7GhdBRXg",
-  "url": "https://www.youtube.com/shorts/C3c7GhdBRXg",
-  "title": "दिल्ली: छात्रों के विरोध प्रदर्शन के बाद पुलिस कार्रवाई",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "watch: 0 candidates from 10 trending",
+  "outlets: 1301 headlines from 30 feeds (19 owners), 24 matched to articles, 4 candidates with 2+ owners, 2 nw- stories (on): nw-20261014-ambedkar-protest, nw-20261014-albania-protest",
+  "explainers: 2 kh- stories (on): kh-20261015-Q51993, kh-20261015-Q69906; dropped: explainer IDBI Bank: fewer than 3 owners' headlines name it and the story; explainer October: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']"
+ ]
 }
