@@ -1,23 +1,24 @@
 {
- "at": "2026-10-15T10:38:59+00:00",
+ "at": "2026-10-15T11:18:39+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 20 trending",
-  "outlets: 1402 headlines from 30 feeds (19 owners), 30 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261014-albania-protest",
-  "explainers: 7 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q200667, kh-20261015-Q3633485, kh-20261015-Q7804; dropped: explainer Connaught Place' Delhi: fewer than 3 owners' headlines name it and the story; explainer Dewi’ All / Dewi’ All: no Wikipedia article that can be its centre; explainer 'Oil prices retreat as investors weigh supply outlook, West A': no name to tell it by",
+  "learn: 15 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.77, 'typical_views_24h': 37}, 'region:india': {'n': 4, 'lift': 1.106, 'typical_views_24h': 69}}",
+  "watch: 8 candidates from 21 trending",
+  "outlets: 1422 headlines from 31 feeds (19 owners), 33 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-hindu-attack",
+  "explainers: 6 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q200667, kh-20261015-Q12638, kh-20261015-Q7199798; dropped: explainer Long-delayed China-North Korea: no Wikipedia article that can be its centre; explainer Kumar CJP's Dipke / CJP's Tricolour: no Wikipedia article that can be its centre; explainer IDBI Bank: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q139857349-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1714 headlines (KeyError)']",
+  "drop kh-20261015-Q37181: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q139998119-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 95 h old and no longer trending live",
   "drop wk-Q3205897: 167 h old and no longer trending live",
-  "published kh-20261015-Q312781: https://www.youtube.com/shorts/IL2CmZyfROk"
+  "skip wk-Q139857349-2026w42: gate: no draft passed the fact checks: unsupported: पार्टी के डेटा के मुताबिक इंस्टाग्राम पर इस राजनीतिक मंच के 3 करोड़ फॉलोअर्स हो चुके हैं।",
+  "skip nw-20261015-hindu-attack: gate: only 0 usable photos of Hindu (want 2)",
+  "skip wk-Q31705888: gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
+  "nothing eligible to publish"
  ],
- "published": {
-  "video_id": "IL2CmZyfROk",
-  "url": "https://www.youtube.com/shorts/IL2CmZyfROk",
-  "title": "इमरान खान को 28 अक्टूबर तक भारत छोड़ने का आदेश, वजह क्या है?",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ "warnings": [
+  "kh-20261015-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
+ ]
 }
