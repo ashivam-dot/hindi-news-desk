@@ -37,7 +37,10 @@ MURUGAN = [
     ("Merchant fee on UPI payments to be imposed after Diwali", "policy"),
     ("IMD issues orange alert for heavy rain in Kerala", "weather"),
     ("BJP releases first list of candidates for Bihar polls", None),
-    ("India vs Australia: Rohit Sharma's century wins the match", None),
+        ("India vs Australia: Rohit Sharma's century wins the match", "sport"),
+        ("Jailer 2 box office: Rajinikanth starrer opens big", "entertainment"),
+        ("Salman Khan opens up about marriage on Koffee With Karan", None),
+        ("Supreme Court stays release of film over censor row", "court"),
     ("Man arrested for murder of neighbour in Pune", None),
     ("Bus falls into gorge in Himachal, 12 dead", None),
     ("Gold Rate Today, October 13: check prices in Delhi", None),
@@ -182,7 +185,7 @@ def test_a_headline_with_no_special_topic_is_still_news():
     assert explain.category("Pope Leo XIV to undergo knee surgery") in ("health", "world")
     assert explain.category("Odisha cabinet approves new textbooks") == "politics"
     assert explain.category("Centre names new panel on river linking") == explain.FALLBACK
-    assert explain.category("Virat Kohli scores century in Test match") is None
+    assert explain.category("Virat Kohli scores century in Test match") == "sport"
 
 
 def test_find_skips_the_dead_disambiguations_and_known_items(monkeypatch):

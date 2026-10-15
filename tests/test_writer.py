@@ -178,20 +178,48 @@ def test_headlines_used_as_context_must_be_confirmed(headline, ok):
 
 
 class FakePen:
-    def __init__(self, verdicts):
-        self.verdicts, self.used = list(verdicts), []
+    def __init__(self, verdicts, titles=()):
+        self.verdicts, self.used, self.titles = list(verdicts), [], list(titles)
 
     def chat(self, messages, schema=None, **kw):
         self.used.append("fake")
         if schema is writer.CHECK_SCHEMA:
             return {"unsupported": self.verdicts.pop(0)}
+        if schema is writer.TITLE_SCHEMA:
+            return {"titles": self.titles}
         return draft()
 
 
-def write(verdicts, tmp_path):
-    pen = FakePen(verdicts)
-    return writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
-                        log_path=tmp_path / "log.json", pen=pen)
+def write(verdicts, tmp_path, titles=()):
+    pen = FakePen(verdicts, titles)
+    out, log, used = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                                  log_path=tmp_path / "log.json", pen=pen)
+    out.pop("titles", None)
+    return out, log, used
+
+
+def test_the_headline_editor_picks_the_first_simple_title(tmp_path):
+    out, _, _ = write([[]], tmp_path, titles=["रमेश प्रसाद वर्मा का निधन, अन्तर्राष्ट्रीय पहचान वाले गायक थे",
+                                              "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे",
+                                              "रमेश प्रसाद वर्मा का निधन"])
+    assert out["title"] == "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"
+
+
+def test_titles_with_hard_words_new_numbers_or_bare_questions_are_refused():
+    d, args = draft(), (SUBJECT, SOURCE_EN, "death", False)
+    assert writer.title_problems("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, *args) == []
+    assert any("मुद्रास्फीति" in p for p in writer.title_problems("रमेश प्रसाद वर्मा और मुद्रास्फीति की कहानी", d, *args))
+    assert any("numbers" in p for p in writer.title_problems("रमेश प्रसाद वर्मा का 95 साल में निधन", d, *args))
+    assert any("question" in p for p in writer.title_problems("रमेश प्रसाद वर्मा कौन थे?", d, *args))
+    assert writer.title_problems("रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, क्या थी वजह?", d, *args) == []
+    assert any("names no one" in p for p in writer.title_problems("मशहूर गायक का निधन, संगीत जगत में शोक", d, *args))
+    assert any("earlier part" in p for p in writer.title_problems(
+        "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, *args, earlier=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"]))
+
+
+def test_no_usable_title_keeps_the_drafts_own(tmp_path):
+    out, _, _ = write([[]], tmp_path, titles=["रमेश प्रसाद वर्मा कौन थे?"])
+    assert out["title"] == draft()["title"]
 
 
 def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):

@@ -12,7 +12,7 @@ import re
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 
-from . import config, explain, net, news, outlets, wiki
+from . import config, explain, net, news, outlets, top, wiki
 
 GEOS = ("IN", "US", "GB")
 INDIA = "Q668"
@@ -403,6 +403,10 @@ def radar(today: date | None = None) -> dict:
         errors.append(f"explainers: {type(exc).__name__}: {exc}"[:200])
     if config.EXPLAINERS:
         out += explainers
+    lists = top.read(datetime.now(timezone.utc))
+    if lists is None:
+        errors.append("top stories: no Google News India list could be read (no story is ranked by place)")
+    top.mark(out, lists)
     out.sort(key=lambda c: -c["fame"])
     return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "candidates": out, "errors": errors,
             "scanned": len(hits), "emerging": emerging, "explainers": explainers, "explainer_notes": notes[:8],

@@ -144,11 +144,12 @@ def reverse(headline: str, pool: list[dict]) -> str | None:
 
 
 def headlines(feed: str, now: datetime | None = None) -> list[dict]:
-    """[{title, outlet, outlets, at, feed}] for lead stories younger than MAX_AGE_H."""
+    """[{title, outlet, outlets, at, feed, rank}] for lead stories younger than MAX_AGE_H. rank is the story's place
+    in the feed (1 = Google News' top story)."""
     now = now or datetime.now(timezone.utc)
     root = ET.fromstring(net.get(FEEDS[feed], tries=2))
     out = []
-    for item in root.iter("item"):
+    for rank, item in enumerate(root.iter("item"), 1):
         raw = item.findtext("title") or ""
         title, _, outlet = raw.rpartition(" - ")
         if not title:
@@ -165,7 +166,8 @@ def headlines(feed: str, now: datetime | None = None) -> list[dict]:
         if (now - at).total_seconds() > MAX_AGE_H * 3600:
             continue
         outlets = max(1, (item.findtext("description") or "").count("<li>"))
-        out.append({"title": title, "outlet": outlet.strip(), "outlets": outlets, "at": at.isoformat(), "feed": feed})
+        out.append({"title": title, "outlet": outlet.strip(), "outlets": outlets, "at": at.isoformat(), "feed": feed,
+                    "rank": rank})
     return out
 
 

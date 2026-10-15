@@ -156,9 +156,64 @@ RULES = """RULES (all mandatory):
 - label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
   "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
   "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.
-- title: a Hindi news headline, 25 to 70 characters, that states the news (who, what), includes {name_hi}, no
-  question, no clickbait, no capitals for effect.
+- title: a Hindi news headline, 25 to 70 characters, in the everyday Hindi of a Hindi news website (never formal
+  Sanskritised words), that states the news (who, what), no clickbait, no capitals for effect.
 Return only the JSON."""
+
+# Owner, 2026-10-15: titles were "too much difficult hindi and not interesting". The title is what people read
+# before they decide to watch, and the headline bar on screen: a Hindi news website's headline, not a gazette's.
+TITLE_BRIEF = """Write 5 different YouTube titles in Hindi for the news Short whose SCRIPT is below.
+
+- Everyday Hindi, the words people say, the way Aaj Tak, Dainik Bhaskar or Navbharat Times write a web headline.
+  Keep the English words Hindi news keeps (IMF, GDP, IPO, RBI, सुप्रीम कोर्ट, शेयर बाजार, फ्लाइट, एयरपोर्ट, बैंक).
+  Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान, सुप्रीम कोर्ट not सर्वोच्च न्यायालय, IMF not
+  अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका not पद्धति, के बाद not उपरांत.
+- 30 to 65 characters. The most striking concrete fact first: the number, the decision, or what it means for people.
+- Name who or what it is about the way the HINDI HEADLINES below name it, when they do.
+- A headline's active voice ("सरकार बेचेगी IDBI बैंक में हिस्सेदारी", "सेंसेक्स 1100 अंक उछला"), never a stiff passive
+  ("...किया गया").
+- It may end with a short reason hook that this Short answers (", वजह क्या है?", ", क्यों?"), but only after a part
+  that states the news. Never a question alone, never a teaser that hides the news.
+- Only facts the SCRIPT states, every number exactly as the SCRIPT gives it. No clickbait (चौंकाने वाला, सनसनीखेज,
+  बड़ी खबर, ब्रेकिंग, जानिए, जानें), no exclamation mark, no emoji, no words in capitals for effect.
+{earlier}
+The kind of change wanted (old title -> better title):
+- "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया" -> "IMF ने कहा, भारत का GDP गिनने का नया तरीका सही"
+- "राजनाथ सिंह ने भारत-आसियान रक्षा सहयोग बढ़ाने का आह्वान किया" -> "राजनाथ सिंह की आसियान देशों से अपील: रक्षा में साथ बढ़ाएं"
+- "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया" -> "एयर इंडिया की फ्लाइट अचानक जयपुर उतारी गई, क्या थी वजह?"
+
+SCRIPT:
+{script}
+
+HINDI HEADLINES (how Hindi newsrooms write this story; style only, never a source):
+{hints}
+
+Return {{"titles": [5 titles]}}."""
+TITLE_SCHEMA = {"type": "object", "properties": {"titles": {"type": "array", "items": {"type": "string"}}},
+                "required": ["titles"]}
+# Formal words a Hindi web headline never uses, and what it says instead.
+HARD_WORDS = {
+    "मुद्रास्फीति": "महंगाई", "अन्तर्राष्ट्रीय मुद्रा कोष": "IMF", "अंतर्राष्ट्रीय मुद्रा कोष": "IMF",
+    "अंतरराष्ट्रीय मुद्रा कोष": "IMF", "अन्तर्राष्ट्रीय": "अंतरराष्ट्रीय", "अंतर्राष्ट्रीय": "अंतरराष्ट्रीय",
+    "सर्वोच्च न्यायालय": "सुप्रीम कोर्ट", "उच्च न्यायालय": "हाई कोर्ट", "आह्वान": "अपील", "रक्तस्रावी": "(leave it out)",
+    "पद्धति": "तरीका", "सूचकांक": "(leave it out)", "मौसम विज्ञान विभाग": "मौसम विभाग", "हेतु": "के लिए",
+    "उपरांत": "के बाद", "उपरान्त": "के बाद", "पश्चात": "के बाद", "अधिसूचना": "नोटिफिकेशन", "निर्वाचन आयोग": "चुनाव आयोग",
+    "प्रक्षेपण": "लॉन्च", "प्रक्षेपित": "लॉन्च", "विमानपत्तन": "एयरपोर्ट", "चालक दल": "क्रू", "सम्बन्धी": "से जुड़ा",
+    "संबंधी": "से जुड़ा", "आधारित": "(leave it out)", "द्वारा": "ने", "वित्तीय वर्ष": "वित्त वर्ष", "प्रतिशत": "%",
+}
+TITLE_MAX = 70
+WHY_HOOK = re.compile(r"^[^?]{12,}[,:।\-–]\s*[^,:?]{0,20}(क्यों|वजह|कारण)[^,:?]{0,20}\?$")
+CLICKBAIT = re.compile(r"सनसनीखेज|चौंकाने|खौफनाक|ख़ौफ़नाक|ब्रेकिंग|बड़ी खबर|बड़ी ख़बर|जानिए|जानिये|जानें|देखिए|!")
+
+
+def hard_words(text: str) -> list[str]:
+    return [f"write {w!r} as {easy}" for w, easy in HARD_WORDS.items() if w in text]
+
+
+def question_title(title: str) -> bool:
+    """A title that asks instead of telling: a "?" that is not a reason hook after the news."""
+    title = title.strip()
+    return "?" in title and not WHY_HOOK.match(title)
 
 
 class Pen:
@@ -368,7 +423,7 @@ def casual(draft: dict) -> list[str]:
     beats = draft.get("beats") or []
     problems = [f"beat {i + 1} talks to the viewer or exclaims ({m.group(0)}); report it in the third person"
                 for i, b in enumerate(beats) if (m := CASUAL.search(b.get("say", "")))]
-    if "?" in (draft.get("title") or ""):
+    if question_title(draft.get("title") or ""):
         problems.append("the title must be a news headline that states the news, not a question")
     if beats and "?" in beats[0].get("say", ""):
         problems.append("beat 1 must state the news, not ask a question")
@@ -392,17 +447,102 @@ def monotone(draft: dict) -> list[str]:
             for w in sorted(set(openers)) if openers.count(w) > 2]
 
 
+def hindi_hints(cand: dict) -> list[str]:
+    """The story's Hindi lead headlines, the top-ranked first."""
+    heads = (cand.get("top_headlines") or []) + (cand.get("hindi_headlines") or [])
+    return [h for h in dict.fromkeys(heads) if hindi.devanagari_share(h) > 0.3][:5]
+
+
+def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind: str, agreed_toll: bool,
+                   reports: list[dict] | None = None, earlier: list[str] | None = None) -> list[str]:
+    """What keeps a title from going out: hard words, length, a bare question, clickbait, capitals, a number the
+    script does not give, a Latin word the sources lack, no name from the story, or an earlier part's title."""
+    title = title.strip().strip('"')
+    names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
+    problems = hard_words(title)
+    if not 20 <= len(title) <= TITLE_MAX:
+        problems.append(f"{len(title)} characters (want 20-{TITLE_MAX})")
+    if hindi.devanagari_share(title) < 0.6:
+        problems.append("not in Hindi")
+    if question_title(title):
+        problems.append("a question alone: state the news first")
+    if m := CLICKBAIT.search(title):
+        problems.append(f"clickbait ({m.group(0)})")
+    problems += [f"capitals for effect ({w})" for w in re.findall(r"\b[A-Z][A-Z\-]{3,}\b", title)
+                 if w not in gate.ACRONYMS]
+    bad = hindi.unsupported_numbers(title, hindi.values(script_text(draft)))
+    if bad:
+        problems.append("numbers the script does not give: " + ", ".join(bad))
+    for w in sorted(set(hindi.latin_words(title))):
+        if not (w.upper() in gate.ACRONYMS and w.upper() == w) and not hindi.contains(ground_en, w) \
+                and len(gate.reported(w, reports or [])) < gate.OWNERS_NEEDED:
+            problems.append(f"{w!r} is not in the sources")
+    latin = {w.lower() for w in hindi.latin_words(title)}
+    named = subject_in(title, subject, names) or any(hindi.contains(title, p.get("hi", "")) for p in names if p.get("hi")) \
+        or any(w in (p.get("en") or "").lower().split() for p in names for w in latin)
+    if not named:
+        problems.append("it names no one and nothing from the story")
+    problems += gate.decorum(title, "incident" if kind in ("incident", "protest") else kind, agreed_toll)
+    if any(hindi.norm(title) == hindi.norm(e) for e in earlier or [] if e):
+        problems.append("an earlier part already has this title")
+    return problems
+
+
+def retitle(pen: "Pen", draft: dict, subject: dict, ground_en: str, kind: str, agreed_toll: bool,
+            reports: list[dict] | None = None, hints: list[str] | None = None,
+            earlier: list[str] | None = None) -> tuple[str, dict]:
+    """The best title for a draft that passed every check: the first of the headline editor's options with no
+    problem (two rounds), else the draft's own title when it has none, else the draft's title anyway. Also the
+    record of what was tried."""
+    script = "\n".join(b.get("say", "") for b in draft.get("beats") or [])
+    past = ("EARLIER TITLES (earlier parts of this story; this title must tell what is new):\n"
+            + "\n".join(f"- {e}" for e in earlier) + "\n") if earlier else ""
+    messages = [{"role": "system", "content": "You are the headline editor of a popular Hindi news website."},
+                {"role": "user", "content": TITLE_BRIEF.format(script=script, earlier=past,
+                                                               hints="\n".join(f"- {h}" for h in hints or [])
+                                                               or "- (none)")}]
+    record = {"options": [], "own": draft.get("title", "")}
+    for _ in range(2):
+        try:
+            answer = pen.chat(messages, TITLE_SCHEMA, temperature=0.8, max_tokens=600)
+        except Exception as exc:
+            record["error"] = f"{type(exc).__name__}: {exc}"[:200]
+            break
+        options = [str(t).strip().strip('"') for t in (answer.get("titles") or []) if str(t).strip()]
+        tried = [(t, title_problems(t, draft, subject, ground_en, kind, agreed_toll, reports, earlier))
+                 for t in options]
+        record["options"] += [{"title": t, "problems": p} for t, p in tried]
+        good = next((t for t, p in tried if not p), None)
+        if good:
+            record["chosen"] = good
+            return good, record
+        messages = messages + [{"role": "assistant", "content": json.dumps(answer, ensure_ascii=False)},
+                               {"role": "user", "content": "None of these can be used:\n" + "\n".join(
+                                   f"- {t}: {'; '.join(p)}" for t, p in tried) + "\nWrite 5 new titles."}]
+    own = draft.get("title", "")
+    record["chosen"] = own
+    record["own_problems"] = title_problems(own, draft, subject, ground_en, kind, agreed_toll, reports, earlier)
+    return own, record
+
+
 def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: str, source_hi: str,
           photos: list[dict], hi_names: dict[str, str], banned_names: list[str] | None = None,
           agreed_toll: bool = False, log_path: Path | None = None, headlines: list[str] | None = None,
           angle: str | None = None, pen: Pen | None = None,
-          today_ok: bool = True, reports: list[dict] | None = None) -> tuple[dict, list[dict], list[str]]:
+          today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
+          earlier: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
-    articles ({outlet, owner, at, title, excerpt, text}), see the module docstring."""
+    articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
+    lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part)."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF, "explainer": EXPLAINER_BRIEF}.get(kind, INCIDENT_BRIEF)
     brief = brief.format(name=subject["en"], pronoun=pronoun.lower(), object=obj)
+    if earlier:
+        brief += ("\n\nFOLLOW-UP: this channel already published " + str(len(earlier)) + " Short(s) on this story "
+                  "today, titled: " + "; ".join(f'"{e}"' for e in earlier) + ". The REPORTING below is newer. Lead "
+                  "with what is new in it (a new development, decision, reaction or figure), give at most one short "
+                  "line of what was already told, and never repeat the earlier Short beat by beat.")
     if angle:
         brief += (f"\n\nANGLE ({orbitwire.ANGLES[angle]['label']}): the channel's English sister channel already told "
                   f"this story its usual way, so this Hindi Short must be different. {orbitwire.ANGLES[angle]['brief']} "
@@ -438,6 +578,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                            or unlisted_but_sourced(u, ground_en)]
                 problems = [f"unsupported: {u}" for u in items if u not in ignored]
             if not problems:
+                draft["title"], draft["titles"] = retitle(pen, draft, subject, ground_en, kind, agreed_toll,
+                                                          reports, title_hints, earlier)
                 return draft, log, pen.used
             log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used),
                         "ignored": ignored})
@@ -700,7 +842,8 @@ def build_death(cand: dict) -> Short:
     reports = clean_reports(_reporting(cand, name, name_hi, person=True, since=_since(died)),
                             [name] + ([name_hi] if name_hi else []), perpetrators=False)
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
-                             log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports)
+                             log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports,
+                             title_hints=hindi_hints(cand))
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
@@ -793,7 +936,7 @@ def build_incident(cand: dict) -> Short:
     draft, log, used = write(kind, subject, "It", facts_text, source, source_hi, photos, hi_names,
                              banned_names=banned, agreed_toll=deaths is not None, log_path=work / "writer_log.json",
                              headlines=headlines, angle=angle, today_ok=ongoing or when == _today_ist(),
-                             reports=reports)
+                             reports=reports, title_hints=hindi_hints(cand))
     name_hi = name_hi or _pair_for(draft, name) or name
     loss = bool(deaths) or cat in ("attack", "strike", "conflict")
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
@@ -850,7 +993,8 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
         credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
     scene = {"template": "bulletin", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
-             "name_hi": name_hi, "names": draft.get("names", []), "writer": {"models": used, "rejected": log}}
+             "name_hi": name_hi, "names": draft.get("names", []),
+             "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
     if ov:
         scene["orbitwire"] = ov
     if reports:
@@ -922,7 +1066,7 @@ def build_report(cand: dict) -> Short:
     angle = ov["angle"] if ov else None
     draft, log, used = write(kind, subject, "It", facts_text, "", "", photos, hi_names, agreed_toll=toll is not None,
                              log_path=work / "writer_log.json", angle=angle, today_ok=when == _today_ist(),
-                             reports=reports)
+                             reports=reports, title_hints=hindi_hints(cand))
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, next((r["url"] for r in reports if r["owner"] in named), reports[0]["url"]),
                   stories.numbers_in(name), "named in the reports of " + ", ".join(named), owners=named)]
@@ -988,7 +1132,8 @@ def build_explainer(cand: dict) -> Short:
     draft, log, used = write("explainer", subject, she, facts_text, source, source_hi, photos, wiki.hindi_names(ent),
                              log_path=work / "writer_log.json",
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
-                             angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports)
+                             angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
+                             title_hints=hindi_hints(cand), earlier=cand.get("earlier"))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "

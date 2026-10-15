@@ -23,7 +23,7 @@ BANNED = [
 ACRONYMS = {"USGS", "UTC", "PAGER", "NASA", "NOAA", "GDACS", "EMSC", "ADS-B", "NTSB", "AAIB", "BEA", "MMI", "ICAO",
             "IATA", "UN", "WHO", "EU", "UK", "US", "USA", "3D", "NHC", "JTWC", "IMD", "JMA", "PTWC", "ISRO", "NDRF",
             "SDRF", "DGCA", "AAIB", "CBI", "NIA", "ICC", "IPL", "BCCI", "AIIMS", "IIT", "UNESCO", "UNICEF", "NATO",
-            "BRICS", "SAARC", "ASEAN", "AI"}
+            "BRICS", "SAARC", "ASEAN", "AI", "IDBI", "SEBI", "DRDO", "CBSE", "UPSC", "NEET", "NHAI", "IRCTC", "BSNL"}
 # Without a death toll that two sources agree on, an incident Short may not speak of casualties at all.
 CASUALTY = ["casualt*", "death toll", "killed", "fatalit*", "wounded", "injured", "मौत", "मौतें", "मौतों", "मारे",
             "मृत", "मृतक", "मृतकों", "मृतकों", "घायल", "घायलों", "हताहत", "जान गई", "जानें", "जान गंवा*",

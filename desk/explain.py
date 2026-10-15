@@ -8,8 +8,9 @@ qualifies when at least OWNERS independent English-language owners (desk/outlets
 its centre (the person or institution most of its headlines name) is an Indian Wikidata item with a Wikipedia
 article. Its facts come only from what two of those owners' articles state (gate.OWNERS_NEEDED; syndicated agency
 copy counts once) and from Wikipedia on the centre, whose Commons photos illustrate it. Elections and campaigns,
-sport, entertainment, gossip, crime, arrests, raids and trials, communal violence, market tips, opinion, roundups and
-live blogs never qualify; incidents, protests and deaths keep their own lanes.
+gossip, crime, arrests, raids and trials, communal violence, market tips, opinion, roundups and live blogs never
+qualify; sport and film qualify only as top stories (TOP_ONLY); incidents, protests and deaths keep their own lanes.
+Only stories in Google News India's top stories go out (desk/top.py, plan.unpopular).
 """
 from __future__ import annotations
 
@@ -52,9 +53,17 @@ KINDS = (
      r"Zelensky|Netanyahu|Houthis?|Israel|Iran|Ukraine|Russia|China|Pakistan|Bangladesh|Nepal|Sri Lanka)\b", "world"),
 )
 FALLBACK = "news"  # owner, 2026-10-14: the channel must be the most active; a 3-owner story needs no special topic
+# Owner, 2026-10-15: "present the highly popular news". Sport and film are what India reads most, so their stories
+# qualify, but only while they are among the day's top stories (plan.TOP_ONLY_SCORE); gossip never does.
+TOP_ONLY = {"sport": "खेल", "entertainment": "मनोरंजन"}
+TOP_ONLY_KINDS = (
+    (r"\b(cricket|ipl|t20i?|odi|test match|match|football|fifa|hockey|tennis|olympic\w*|tournament|league|squad|"
+     r"world cup|kabaddi|chess|BCCI|IND vs)\b", "sport"),
+    (r"\b(actor|actress|film|movie|box office|bollywood|superstar|starrer)\b", "entertainment"),
+)
 CATEGORY_HI = {"court": "अदालत", "science": "विज्ञान", "defence": "रक्षा", "economy": "अर्थव्यवस्था",
                "policy": "नीति", "diplomacy": "कूटनीति", "weather": "मौसम", "politics": "राजनीति",
-               "aviation": "विमानन", "health": "स्वास्थ्य", "world": "दुनिया", FALLBACK: "समाचार"}
+               "aviation": "विमानन", "health": "स्वास्थ्य", "world": "दुनिया", FALLBACK: "समाचार"} | TOP_ONLY
 # How headlines name the institutions Wikipedia's search misreads ("Supreme Court" finds the US court, "Railway" a
 # railway in general): straight to the Indian article.
 ALIASES = {
@@ -78,9 +87,8 @@ SKIP = re.compile(
     # elections and campaigns
     r"\b(elections?|electoral|polls?|polling|bypolls?|by-elections?|exit polls?|voting|vote count\w*|voters?|"
     r"voter list|SIR|campaign\w*|rallies|roadshow|manifesto|seat-sharing|candidates?|"
-    # sport, entertainment, gossip, lifestyle
-    r"cricket|ipl|t20|odi|test match|match|football|fifa|hockey|tennis|olympic\w*|tournament|league|squad|world cup|"
-    r"kabaddi|chess|actor|actress|film|movie|box office|bollywood|trailer|teaser|ott|web series|song|singer|"
+    # gossip, promotion, lifestyle (sport and film are TOP_ONLY)
+    r"trailer|teaser|ott|web series|song|singer|"
     r"bigg boss|celebrity|wedding|marriage|divorce|dating|viral|meme|horoscope|rashifal|astrology|zodiac|lottery|quiz|"
     r"recipe|tips|best deals|deal of the day|discount|movie review|film review|"
     # opinion, roundups, live blogs, service pages
@@ -126,7 +134,10 @@ def category(title: str) -> str | None:
     """The explainer category a headline names, or None (a skipped topic, an incident, or no category)."""
     if SKIP.search(title) or any(re.search(p, title, re.I) for p, _ in outlets.HEADLINE_KINDS):
         return None
-    return next((cat for pattern, cat in KINDS if re.search(pattern, title, re.I)), FALLBACK)
+    cat = next((cat for pattern, cat in KINDS if re.search(pattern, title, re.I)), None)
+    if cat != "court":
+        cat = next((c for pattern, c in TOP_ONLY_KINDS if re.search(pattern, title, re.I)), cat)
+    return cat or FALLBACK
 
 
 def _generic(word: str) -> bool:
@@ -318,6 +329,44 @@ def resolve(name: str, key: str) -> tuple[str, str, dict, bool] | None:
     return world + (False,) if world else None
 
 
+# What headlines call a person, and the words Wikidata's description uses for it. One name is often many people
+# (the actor Imran Khan is not Pakistan's former prime minister): the centre must be what the headlines say it is.
+ROLES = {"actor": ("actor", "actress"), "actress": ("actress", "actor"), "singer": ("singer",),
+         "cricketer": ("cricketer",), "footballer": ("footballer", "football"), "director": ("director", "filmmaker"),
+         "filmmaker": ("filmmaker", "director"), "activist": ("activist",), "journalist": ("journalist",),
+         "businessman": ("businessman", "businessperson", "industrialist", "entrepreneur"),
+         "minister": ("minister", "politician"), "politician": ("politician", "minister")}
+_ROLE = "|".join(ROLES)
+
+
+def headline_role(titles: list[str], name: str) -> str | None:
+    """The role most of the story's headlines put right before or after the name ("actor Imran Khan")."""
+    n = re.escape(name)
+    seen = Counter()
+    for t in titles:
+        m = re.search(rf"\b({_ROLE})\s+{n}\b|\b{n},?\s+(?:the\s+|an?\s+)?({_ROLE})\b", t, re.I)
+        if m:
+            seen[(m.group(1) or m.group(2)).lower()] += 1
+    return seen.most_common(1)[0][0] if seen else None
+
+
+def fits_role(ent: dict, role: str) -> bool:
+    """Wikidata's description fits the role, or there is no description to contradict it."""
+    about = ((ent.get("descriptions") or {}).get("en") or {}).get("value", "").lower()
+    return not about or any(w in about for w in ROLES[role])
+
+
+def resolve_as(name: str, key: str, role: str) -> tuple[str, str, dict, bool] | None:
+    """The person named `name` whose Wikidata description fits `role` (Wikipedia's search for "<name> <role>")."""
+    article = wiki.search(f"{name} {role}")
+    if not article or not names_article(article, key, name):
+        return None
+    found = _item(article)
+    if not found or not fits_role(found[2], role):
+        return None
+    return found + (indian(found[2]),)
+
+
 def hindi_names_of(label_hi: str | None) -> list[str]:
     """How Hindi headlines write the centre: its Wikidata label, and the label without abbreviation dots
     ("एल मुरुगन"). Never a surname alone: गांधी or कुमार name many people."""
@@ -389,6 +438,12 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
             looked += 1
             try:
                 found = resolve(name, key)
+                role = headline_role(titles, name)
+                if found and role and HUMAN in {x["value"] for x in wiki.claims(found[2], "P31")} \
+                        and not fits_role(found[2], role):
+                    found = resolve_as(name, key, role)
+                    if not found:
+                        notes.append(f"explainer {name}: Wikipedia's {name} is not the {role} the headlines name")
             except Exception as exc:
                 notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
                 continue

@@ -6,7 +6,9 @@ with an India connection, then the rest.
 
 Timing is the channel: a story goes out while people are looking at it, not hours later. Priority is fame (Google
 News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by age, times the India boost,
-so a fresh story beats a bigger stale one. A story older than STALE_H is dropped unless a live signal (Google Trends
+so a fresh story beats a bigger stale one, times its place in Google News India's top stories (desk/top.py); a story
+in none of those lists, not searched in India, not breaking and not very famous is dropped (unpopular), and the day's
+biggest explainer stories may go out in parts (follow_up). A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
 most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame or BREAKING_OWNERS independent outlets on
@@ -43,6 +45,16 @@ WINDOW_IST = (7.0, 24.0)
 INDIA_BOOST, LINK_BOOST = 1.6, 1.25
 QUAKE_BIG_MAG = 7.0
 COOLDOWN_DAYS = {"protest": 6, "movement": 6}
+# Owner, 2026-10-15: only the most popular news. A story must be in Google News India's top stories (desk/top.py),
+# trending in India's searches, breaking, or very famous; the higher its place, the sooner it goes out.
+TOP_WEIGHT = 2.0
+# Sport and film stories qualify only this high in the lists (about top 10 of a front page).
+TOP_ONLY_SCORE = 0.55
+# The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
+# from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS a day.
+SERIES_SCORE = 0.9
+SERIES_PARTS = 3
+SERIES_GAP = timedelta(hours=3)
 
 
 def ist_day(t: datetime) -> str:
@@ -91,7 +103,47 @@ def priority(cand: dict, at: datetime) -> float:
     from . import learn
 
     half = HALF_LIFE_H.get(cand.get("kind"), HALF_LIFE_H.get(cand.get("category"), DEFAULT_HALF_LIFE_H))
-    return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand) * learn.factor(cand)
+    return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand) * learn.factor(cand) \
+        * (1 + TOP_WEIGHT * (cand.get("top_score") or 0))
+
+
+def unpopular(cand: dict, at: datetime) -> str | None:
+    """Why a story is not top news for this channel, or None. A story the lists could not be read for (top None)
+    is not judged."""
+    from . import explain
+
+    if cand.get("top") is None:
+        return None
+    place = cand.get("top_score") or 0
+    if cand.get("category") in explain.TOP_ONLY:
+        return None if place >= TOP_ONLY_SCORE else \
+            f"a {cand['category']} story goes out only when it is a top-10 story (place {place:.2f})"
+    if place > 0 or "IN" in (cand.get("geos") or []) and cand.get("traffic", 0) > 0 \
+            or cand.get("fame", 0) >= BREAKING_FAME or is_breaking(cand, at):
+        return None
+    return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+
+
+def follow_up(cand: dict, rows: list[dict], at: datetime) -> dict | None:
+    """The next part of one of the day's biggest explainer stories, or None (see SERIES_SCORE)."""
+    from . import gate
+
+    base = cand["id"]
+    if not base.startswith("kh-") or (cand.get("top_score") or 0) < SERIES_SCORE:
+        return None
+    parts = sorted((r for r in rows if r["id"] == base or r["id"].startswith(base + "-p")),
+                   key=lambda r: r["published_at"])
+    if not parts or len(parts) >= SERIES_PARTS:
+        return None
+    if at - datetime.fromisoformat(parts[-1]["published_at"]) < SERIES_GAP:
+        return None
+    used = {u for r in parts for u in r.get("report_urls") or []}
+    fresh = [r for r in cand.get("reports") or [] if r["url"] not in used]
+    if len(outlets.owners(fresh)) < gate.OWNERS_NEEDED:
+        return None
+    n = len(parts) + 1
+    return cand | {"id": f"{base}-p{n}", "part": n, "earlier": [r.get("title") or "" for r in parts],
+                   "reports": fresh}
 
 
 def is_breaking(cand: dict, at: datetime) -> bool:
@@ -179,7 +231,7 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
     regular, urgent = can_publish(at), can_publish(at, breaking=True)
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
-        if why := stale(c, at):
+        if why := stale(c, at) or unpopular(c, at):
             notes.append(f"drop {c['id']}: {why}")
             continue
         breaking = is_breaking(c, at)
@@ -277,8 +329,16 @@ def watch(save: bool = True) -> dict:
     found["notes"] += _quake_facts(found["trending"])
     at = datetime.now(timezone.utc)
     rows = ledger.published()
-    stories = [c for c in found["trending"] if not ledger.is_done(c["id"]) and not cooling(c, at, rows)
-               and not ledger.is_done(trends.article_id(c["title"])) and not told_before(c, rows, at)]
+    stories = []
+    for c in found["trending"]:
+        if cooling(c, at, rows) or ledger.is_done(trends.article_id(c["title"])):
+            continue
+        if ledger.is_done(c["id"]) or told_before(c, rows, at):
+            part = follow_up(c, rows, at)
+            if part and not ledger.is_done(part["id"]):
+                stories.append(part)
+            continue
+        stories.append(c)
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))
