@@ -1,24 +1,15 @@
 {
- "at": "2026-10-15T07:12:57+00:00",
+ "at": "2026-10-15T08:14:43+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 19 trending",
-  "outlets: 1333 headlines from 31 feeds (19 owners), 25 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261014-ambedkar-protest, nw-20261014-ministry-protest",
-  "explainers: 6 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q51993, kh-20261015-Q21708200; dropped: explainer Dewi’ All / Dewi’ All: no Wikipedia article that can be its centre; explainer October: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
-  "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 91 h old and no longer trending live",
-  "drop wk-Q3205897: 163 h old and no longer trending live",
-  "skip kh-20261015-Q6668646: gate: fewer than 2 independent outlets' articles name KL Rahul",
-  "skip kh-20261015-Q21708200: gate: no draft passed the fact checks: unsupported: The claim that prosecutors confirmed the spying at OpenAI according to the court complaint ('अदालती शिकायत के अनुसार अभियोजकों ने ओपन एआई में हुई इस जासूसी की पुष्टि की है') is not supported; the reports state that criminal allegations were filed, not that prosecutors confirmed the spying occurred.; unsupported: The claim that investigative reports state no official motive or reason w",
-  "published kh-20261015-Q7804: https://www.youtube.com/shorts/w9vxhf0sVdY"
- ],
- "published": {
-  "video_id": "w9vxhf0sVdY",
-  "url": "https://www.youtube.com/shorts/w9vxhf0sVdY",
-  "title": "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "learn: 14 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.75, 'typical_views_24h': 37}}",
+  "watch: 3 candidates from 14 trending",
+  "outlets: 1360 headlines from 31 feeds (19 owners), 23 matched to articles, 9 candidates with 2+ owners, 3 nw- stories (on): nw-20261015-hindu-attack, nw-20261014-university-protest, nw-20261014-ministry-protest",
+  "explainers: 6 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q1348, kh-20261015-Q923628; dropped: explainer Dewi’ All / Dewi’ All: no Wikipedia article that can be its centre; explainer October: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261015-Q923628: last Short went out 0.2 h ago",
+  "hold nw-20261015-hindu-attack: last Short went out 0.2 h ago",
+  "hold kh-20261015-Q1348: last Short went out 0.2 h ago"
+ ]
 }
