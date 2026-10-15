@@ -1,10 +1,10 @@
 {
- "at": "2026-10-15T22:23:06+00:00",
+ "at": "2026-10-15T22:53:25+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 6 candidates from 16 trending",
-  "outlets: 1396 headlines from 30 feeds (19 owners), 16 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1385 headlines from 30 feeds (19 owners), 17 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 4 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q3633485, kh-20261016-Q7199798; dropped: explainer Place' Delhi HC: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
@@ -13,7 +13,7 @@
   "hold kh-20261016-Q7199798: outside 07:00-24:00 IST",
   "hold kh-20261016-Q3633485: outside 07:00-24:00 IST",
   "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 106 h old and no longer trending live",
-  "drop wk-Q3205897: 178 h old and no longer trending live"
+  "drop wk-Q5300674: 107 h old and no longer trending live",
+  "drop wk-Q3205897: 179 h old and no longer trending live"
  ]
 }
