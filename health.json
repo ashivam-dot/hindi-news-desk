@@ -1,21 +1,23 @@
 {
- "at": "2026-10-15T17:01:33+00:00",
+ "at": "2026-10-15T17:36:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 19 trending",
-  "outlets: 1468 headlines from 31 feeds (19 owners), 26 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261014-albania-protest",
-  "explainers: 5 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q783854, kh-20261015-Q3633485, kh-20261015-Q7199798; dropped: explainer Sergio Gor: fewer than 3 owners' headlines name it and the story; explainer 'North Korea and China open new bridge after 12-year delay': no name to tell it by; explainer Delhi Ramlila: fewer than 3 owners' headlines name it and the story",
+  "learn: 18 scored Shorts, lifts {'region:world': {'n': 8, 'lift': 0.8, 'typical_views_24h': 41}, 'region:india': {'n': 6, 'lift': 1.074, 'typical_views_24h': 66}}",
+  "watch: 6 candidates from 18 trending",
+  "outlets: 1469 headlines from 31 feeds (19 owners), 21 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261014-albania-protest",
+  "explainers: 4 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q783854, kh-20261015-Q7199798, kh-20261015-Q3633485; dropped: explainer Sergio Gor: fewer than 3 owners' headlines name it and the story; explainer 'North Korea and China open new bridge after 12-year delay': no name to tell it by; explainer Place' Delhi HC: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 101 h old and no longer trending live",
-  "drop wk-Q3205897: 173 h old and no longer trending live",
-  "skip kh-20261015-Q312781-p2: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.982, 0.587, 0.955, 0.967, 0.969, 1.0, 0.963, 0.973], 'wpm': 150.1, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.982, 0.573, 0.955, 0.978, 0.969, 1.0, 0.901, 0.946], 'wpm': 162.3, 'clean'",
-  "hold kh-20261015-Q2341950: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
-  "later kh-20261015-Q7199798: this run already wrote 2 scripts",
-  "later kh-20261015-Q783854: this run already wrote 2 scripts",
+  "drop wk-Q5300674: 102 h old and no longer trending live",
+  "drop wk-Q3205897: 174 h old and no longer trending live",
+  "skip kh-20261015-Q312781-p2: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.925, 0.975, 0.961, 0.65, 0.986, 0.937, 0.824, 0.973], 'wpm': 145.7, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.1-flash-tts-preview', 'coverage': [0.94, 0.938, 0.934, 0.65, 0.972, 0.968, 0.794, 0.946], 'wpm': 184.8, 'cl",
+  "skip kh-20261015-Q783854: gate: no draft passed the fact checks: unsupported: \"दस्तावेजों में इस घटना के आगे के कानूनी कदमों का विवरण दिया गया है।\"",
   "nothing eligible to publish"
+ ],
+ "warnings": [
+  "kh-20261015-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
  ]
 }
