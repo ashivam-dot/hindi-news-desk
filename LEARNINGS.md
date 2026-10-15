@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-15T11:18:39+00:00. Scored Shorts (views at 24 h): 15. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-15T14:18:48+00:00. Scored Shorts (views at 24 h): 15. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 57 views at 24 h.
 - region:india: x1.106 ranking lift (4 Shorts, typical 69 views)
@@ -8,28 +8,28 @@ Baseline: a typical Short has 57 views at 24 h.
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| kh-20261015-Q312781 | 2026-10-15T10:51 | entertainment | world | 4 |  |
-| kh-20261015-Q200667 | 2026-10-15T10:09 | aviation | india | 20 |  |
-| kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 0 |  |
-| kh-20261015-Q7804 | 2026-10-15T08:09 | economy | world | 15 |  |
-| nw-20261014-delhi-protest | 2026-10-15T05:49 | protest | world | 2 |  |
-| kh-20261015-Q51993 | 2026-10-15T05:20 | news | world | 17 |  |
-| kh-20261015-Q6109517 | 2026-10-15T04:49 | world | world | 55 |  |
-| nw-20261014-albania-protest | 2026-10-15T04:09 | protest | world | 5 |  |
-| kh-20261015-Q3506475 | 2026-10-15T02:29 | news | india | 46 |  |
+| kh-20261015-Q312781 | 2026-10-15T10:51 | entertainment | world | 61 |  |
+| kh-20261015-Q200667 | 2026-10-15T10:09 | aviation | india | 26 |  |
+| kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 39 |  |
+| kh-20261015-Q7804 | 2026-10-15T08:09 | economy | world | 20 |  |
+| nw-20261014-delhi-protest | 2026-10-15T05:49 | protest | world | 14 |  |
+| kh-20261015-Q51993 | 2026-10-15T05:20 | news | world | 19 |  |
+| kh-20261015-Q6109517 | 2026-10-15T04:49 | world | world | 58 |  |
+| nw-20261014-albania-protest | 2026-10-15T04:09 | protest | world | 6 |  |
+| kh-20261015-Q3506475 | 2026-10-15T02:29 | news | india | 48 |  |
 | kh-20261015-Q19867977 | 2026-10-15T01:50 | world | world | 52 |  |
 | kh-20261014-Q123 | 2026-10-14T18:05 | economy | world | 55 |  |
-| kh-20261014-Q116687309 | 2026-10-14T16:31 | news | india | 32 |  |
-| kh-20261014-Q131005 | 2026-10-14T15:14 | aviation | world | 80 |  |
+| kh-20261014-Q116687309 | 2026-10-14T16:31 | news | india | 34 |  |
+| kh-20261014-Q131005 | 2026-10-14T15:14 | aviation | world | 87 |  |
 | kh-20261014-Q69906 | 2026-10-14T14:29 | aviation | india | 102 |  |
-| kh-20261014-Q16186720 | 2026-10-14T09:15 | economy | india | 29 | 28 |
+| kh-20261014-Q16186720 | 2026-10-14T09:15 | economy | india | 39 | 28 |
 | kh-20261014-Q200667 | 2026-10-14T02:22 | diplomacy | india | 82 | 82 |
-| wk-Q2475741 | 2026-10-13T12:57 | death | india | 1266 | 1263 |
+| wk-Q2475741 | 2026-10-13T12:57 | death | india | 1283 | 1263 |
 | wk-Q141712628 | 2026-10-13T10:26 | attack | world | 88 | 80 |
 | wk-Q2118568 | 2026-10-13T01:43 | death | world | 159 | 145 |
 | wk-Q141695384 | 2026-10-12T02:01 | conflict | world | 8 | 3 |
 | wk-Q141679225 | 2026-10-11T11:18 | disaster | world | 9 | 7 |
-| wk-Q141680327 | 2026-10-11T10:10 | cyclone | world | 117 | 100 |
+| wk-Q141680327 | 2026-10-11T10:10 | cyclone | world | 116 | 100 |
 | wp-October_2026_King_Khalid_International_Airport_attacks | 2026-10-11T09:26 | attack | world | 10 | 10 |
 | wp-2026_anti-CEC_protests | 2026-10-11T08:26 | protest | india | 7 | 7 |
 | wk-Q141605182 | 2026-10-10T09:19 | aviation | world | 310 | 282 |
