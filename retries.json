@@ -190,9 +190,9 @@
   "at": "2026-10-15T11:23:18+00:00"
  },
  "kh-20261015-Q7199798": {
-  "count": 2,
+  "count": 3,
   "reason": "HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+in+New+Delhi.+The+Lt.+G",
-  "at": "2026-10-15T12:58:14+00:00"
+  "at": "2026-10-15T13:35:49+00:00"
  },
  "kh-20261015-Q213380": {
   "count": 2,
@@ -200,8 +200,8 @@
   "at": "2026-10-15T12:57:37+00:00"
  },
  "kh-20261015-Q796994": {
-  "count": 2,
-  "reason": "ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
-  "at": "2026-10-15T13:02:58+00:00"
+  "count": 3,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.659, 0.827, 0.919, 0.984, 0.937, 0.841, 1.0, 0.946], 'wpm': 150.9, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.614, 0.8",
+  "at": "2026-10-15T13:41:37+00:00"
  }
 }
