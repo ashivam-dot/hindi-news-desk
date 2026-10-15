@@ -1,17 +1,21 @@
 {
- "at": "2026-10-15T15:42:01+00:00",
+ "at": "2026-10-15T16:21:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 4 candidates from 11 trending",
-  "outlets: 1467 headlines from 31 feeds (19 owners), 23 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q3633485, kh-20261015-Q7199798, kh-20261015-Q2341950; dropped: explainer Long-delayed China-North Korea: no Wikipedia article that can be its centre; explainer Sergio Gor: fewer than 3 owners' headlines name it and the story",
+  "watch: 7 candidates from 19 trending",
+  "outlets: 1470 headlines from 31 feeds (19 owners), 22 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q213380, kh-20261015-Q3633485, kh-20261015-Q783854; dropped: explainer Sergio Gor: fewer than 3 owners' headlines name it and the story; explainer 'North Korea and China open new bridge after 12-year delay': no name to tell it by; explainer Place' Delhi HC: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "skip kh-20261015-Q312781-p2: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.944, 0.912, 0.455, 0.938, 0.967, 0.963, 0.966, 0.946], 'wpm': 177.3, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.963, 0.662, 0.491, 0.923, 0.95, 0.963, 0.983, 0.973], 'wpm': 168.0, 'clean': True,",
-  "hold kh-20261015-Q2341950: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
+  "drop wk-Q5300674: 100 h old and no longer trending live",
+  "drop wk-Q3205897: 172 h old and no longer trending live",
+  "hold kh-20261015-Q312781-p2: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
+  "hold kh-20261015-Q213380: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
   "later kh-20261015-Q7199798: this run already wrote 2 scripts",
+  "later kh-20261015-Q783854: this run already wrote 2 scripts",
   "nothing eligible to publish"
  ]
 }

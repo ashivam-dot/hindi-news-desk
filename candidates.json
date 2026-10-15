@@ -1,5 +1,5 @@
 {
- "at": "2026-10-15T15:42:01+00:00",
+ "at": "2026-10-15T16:21:31+00:00",
  "trending": [
   {
    "id": "kh-20261015-Q312781",
@@ -34,8 +34,8 @@
     "DB Corp",
     "BBC"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -48,12 +48,12 @@
    ],
    "hindi_headlines": [
     "आमिर खान के भांजे इमरान खान पर भड़के महाभारत के युधिष्ठिर, बोले- 24 घंटे में देश छोड़ने को कहा जाए",
-    "इमरान खान पर चुप बॉलीवुड, भड़के अभिजीत दिपके, बोले- बस इतना पूछना...",
     "भारत छोड़ने की नोटिस के खिलाफ हाई कोर्ट जाएंगे इमरान खान, CJP प्रोटेस्ट में हुए थे शामिल",
-    "आमिर खान के भांजे को क्यों छोड़ना पड़ेगा, इमरान खान के पास भारत की नहीं नागरिकता, OCI का है कार्ड",
-    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस"
+    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस",
+    "एक्टर इमरान खान को भारत छोड़ने का नोटिस:28 अक्टूबर तक की मोहलत, आरोप- भारतीय नागरिक नहीं; ज्ञानेश कुमार के खिलाफ प्रदर्शन में शामिल हुए थे",
+    "इमरान ख़ान के गढ़ को सेना ने घेरा, पाकिस्तान क्या इस मामले में 'आग से खेल रहा है'?"
    ],
-   "hindi_news": 8,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -148,19 +148,138 @@
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
-    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें"
+    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
+    "google-news:आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया"
    ],
    "top": {
-    "IN": 1,
-    "IN-hi": 10,
+    "IN": 3,
+    "IN-hi": 9,
     "IN-nation": 1,
-    "IN-hi-nation": 5
+    "IN-hi-nation": 6
    },
-   "top_score": 1.815,
+   "top_score": 1.725,
    "top_headlines": [
+    "आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया",
     "इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
     "Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
     "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
+   ]
+  },
+  {
+   "id": "kh-20261015-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+   "story_keys": [
+    "backward",
+    "can’t",
+    "claim",
+    "converting",
+    "person",
+    "quota"
+   ],
+   "date": "2026-10-15",
+   "news_at": "2026-10-15T15:48:51+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+    "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+    "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+    "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+    "Conversion does not automatically grant quota benefits: Supreme Court",
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारत का उच्चतम न्यायालय",
+   "reports": [
+    {
+     "title": "Conversion does not automatically grant quota benefits: Supreme Court",
+     "url": "https://www.thehindu.com/news/national/supreme-court-upholds-madras-hc-order-quashing-tamil-nadu-reservation-notification-for-converts-to-islam/article71586768.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T15:48:51+00:00"
+    },
+    {
+     "title": "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/hindu-converts-to-islam-can-t-claim-muslim-backward-quota-rules-supreme-court-101792046832187.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:47:11+00:00"
+    },
+    {
+     "title": "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+     "url": "https://www.news18.com/india/person-who-converts-from-hinduism-to-islam-cant-claim-backward-class-muslim-status-says-supreme-court-ws-l-10382776.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:44:26+00:00"
+    },
+    {
+     "title": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+     "url": "https://www.livemint.com/news/india/supreme-court-says-person-converting-from-hinduism-to-islam-can-t-claim-backward-quota-11792044362591.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:11:05+00:00"
+    },
+    {
+     "title": "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/cjp-jantar-mantar-protest-delhi-police-supreme-court-detentions-security-101792031690981.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T02:39:53+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "google-news:Delhi Protests: SG Tushar Mehta Objects To 'Misleading' Reports On Govt Apology In Supreme Court",
+    "google-news:Supreme Court Declines To List Maharashtra SIR Challenge With Rahul Gandhi's Plea, Says It Will Examine..."
+   ],
+   "top": {
+    "IN": 5,
+    "IN-nation": 17
+   },
+   "top_score": 0.86,
+   "top_headlines": [
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "Person who converts from Hinduism to Islam can't claim Backward Class Muslim status: Supreme Court",
+    "NEET-PG 2026: Supreme Court Issues Notice On Plea Seeking Disclosure Of Actual Questions, Options And..."
    ]
   },
   {
@@ -242,11 +361,98 @@
     "google-news:India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax"
    ],
    "top": {
-    "IN": 16
+    "IN": 17
    },
-   "top_score": 0.25,
+   "top_score": 0.2,
    "top_headlines": [
     "India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax"
+   ]
+  },
+  {
+   "id": "kh-20261015-Q783854",
+   "qid": "Q783854",
+   "title": "Fort Hood",
+   "name": "Fort Hood",
+   "phrase": "Fort Hood",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Trump says Fort Hood US shooter execution will not be livestreamed",
+   "story_keys": [
+    "execution",
+    "livestreamed",
+    "not",
+    "shooter",
+    "trump"
+   ],
+   "date": "2026-10-15",
+   "news_at": "2026-10-15T16:00:35+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "Deutsche Welle",
+    "Guardian Media Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump says Fort Hood US shooter execution will not be livestreamed",
+    "Trump says execution of Fort Hood shooter will not be livestreamed",
+    "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Trump says execution of Fort Hood shooter will not be livestreamed",
+     "url": "https://www.dw.com/en/trump-says-execution-of-fort-hood-shooter-will-not-be-livestreamed/a-79672036?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-15T15:36:00+00:00"
+    },
+    {
+     "title": "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+     "url": "https://www.theguardian.com/us-news/2026/oct/15/pete-hegseth-crec-church-execution-livestream",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-15T16:00:35+00:00"
+    },
+    {
+     "title": "Trump says Fort Hood US shooter execution will not be livestreamed",
+     "url": "https://www.aljazeera.com/news/2026/10/15/trump-says-fort-hood-shooter-execution-will-not-be-livestreamed?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-15T14:27:35+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "google-news:Trump says military execution of Fort Hood gunman will not be livestreamed"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
    ]
   },
   {
@@ -270,7 +476,7 @@
     "tranche"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T15:45:41.841610+00:00",
+   "news_at": "2026-10-15T16:22:11.939452+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -308,7 +514,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-15T15:45:41.841610+00:00"
+     "at": "2026-10-15T16:22:11.939452+00:00"
     },
     {
      "title": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
@@ -349,108 +555,134 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 4,
+    "IN-nation": 11
    },
-   "top_score": 0.84,
+   "top_score": 1.0,
    "top_headlines": [
-    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon"
+    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon",
+    "India says first phase of US trade deal nearly done, insists on edge over rivals"
    ]
   },
   {
-   "id": "kh-20261015-Q2341950",
-   "qid": "Q2341950",
-   "title": "Connaught Place, New Delhi",
-   "name": "Connaught Place",
-   "phrase": "Connaught Place' Delhi",
+   "id": "kh-20261015-Q923628",
+   "qid": "Q923628",
+   "title": "India Meteorological Department",
+   "name": "India Meteorological Department",
+   "phrase": "IMD",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
    "story_keys": [
-    "against",
-    "ahead",
-    "shut"
+    "alert",
+    "brace",
+    "capital",
+    "delhi-ncr",
+    "heavy",
+    "issue",
+    "lashe",
+    "orange",
+    "thunderstorm"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T14:54:22+00:00",
+   "news_at": "2026-10-15T15:43:18+00:00",
    "owners": [
-    "HT Media",
     "Network18",
-    "India Today Group",
-    "NDTV"
+    "HT Media",
+    "The Hindu Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-    "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-    "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march"
+    "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
+    "Delhi-NCR Braces For Rain As Dark Clouds Loom Over Capital; IMD Issues Alert For Thunderstorm",
+    "IMD issues red alert for Delhi, orange for Noida, Gurugram amid heavy rain; temperature dips",
+    "Delhi weather today: Rain lashes capital city; IMD issues orange alert",
+    "Gloomy skies prevail as rain lashes Delhi, IMD predicts another wet spell around midnight",
+    "IMD forecasts heavy rain in coastal and Rayalaseema regions till October 19"
    ],
-   "hindi_headlines": [
-    "CJP के तिरंगा मार्च से पहले कनॉट प्लेस का सेंट्रल पार्क बंद, जारी हुआ आदेश",
-    "कनॉट प्लेस में तिरंगा मार्च पर दिपके को हाईकोर्ट से राहत, पुलिस बोली- एक्‍शन लेंगे, दिल्‍ली में कल फिर ड्रामा",
-    "कनॉट प्लेस के सेंट्रल पार्क में CJP प्रोटेस्ट के लिए कोई परमिशन नहीं- सूत्र"
-   ],
-   "hindi_news": 3,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "कनॉट प्लेस",
+   "label_hi": "भारत मौसम विज्ञान विभाग",
    "reports": [
     {
-     "title": "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march",
-     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-cockroach-party-central-park-closure-connaught-place-cjp-tricolour-march-abhijeet-dipke-protest-3018252-2026-10-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "IMD forecasts heavy rain in coastal and Rayalaseema regions till October 19",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/imd-forecasts-heavy-rain-in-coastal-and-rayalaseema-regions-till-october-19/article71588960.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-15T14:54:22+00:00"
+     "at": "2026-10-15T15:43:18+00:00"
     },
     {
-     "title": "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-     "url": "https://www.news18.com/india/will-take-steps-against-cjp-abhijeet-dipke-delhi-police-vows-action-ahead-of-tricolour-assembly-at-connaught-place-ws-l-10383411.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-15T10:59:54+00:00"
-    },
-    {
-     "title": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-     "url": "https://www.hindustantimes.com/india-news/cjp-connaught-place-protest-tiranga-national-flag-delhi-police-news-security-high-court-101792045479552.html",
+     "title": "Gloomy skies prevail as rain lashes Delhi, IMD predicts another wet spell around midnight",
+     "url": "https://www.hindustantimes.com/india-news/gloomy-skies-prevail-as-rain-lashes-delhi-imd-predicts-another-wet-spell-around-midnight-101792054191631.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-15T06:29:52+00:00"
+     "at": "2026-10-15T08:49:51+00:00"
+    },
+    {
+     "title": "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
+     "url": "https://www.news18.com/india/heavy-rain-thunderstorms-sweep-delhi-ncr-imd-issues-orange-alert-ws-l-10383030.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T08:06:49+00:00"
+    },
+    {
+     "title": "Delhi weather today: Rain lashes capital city; IMD issues orange alert",
+     "url": "https://www.livemint.com/news/india/delhi-weather-today-rain-lashes-capital-city-imd-issues-orange-alert-11792050376034.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T07:48:57+00:00"
+    },
+    {
+     "title": "IMD issues red alert for Delhi, orange for Noida, Gurugram amid heavy rain; temperature dips",
+     "url": "https://www.hindustantimes.com/india-news/heavy-rain-in-parts-of-delhi-ncr-imd-issues-orange-alert-temperature-dips-101792049775205.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T07:39:11+00:00"
+    },
+    {
+     "title": "Delhi-NCR Braces For Rain As Dark Clouds Loom Over Capital; IMD Issues Alert For Thunderstorm",
+     "url": "https://www.news18.com/india/delhi-ncr-braces-for-rain-as-dark-clouds-loom-imd-issues-alert-for-thunderstorm-moderate-showers-ws-kl-10382752.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T05:59:22+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:NDTV"
+    "outlet:HT Media",
+    "outlet:The Hindu Group"
    ],
-   "top": {
-    "IN": 2,
-    "IN-nation": 6
-   },
-   "top_score": 1.175,
-   "top_headlines": [
-    "Anti-CEC protest LIVE | Delhi's Connaught Place Central Park closed on Oct. 16-17, NDMC says ahead of CJP's 'tiranga' protest",
-    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
-    "Plea In Supreme Court Seeks Guidelines Against Political Protests Inside Court Premises, Contempt...",
-    "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "qid": "Q139998119",
@@ -514,6 +746,157 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
+  },
+  {
+   "qid": "Q2475741",
+   "title": "Nana Patekar",
+   "fame": 41412,
+   "views": 16412,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-15T11:31:59+00:00",
+   "headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "नाना पाटेकर के निधन के बाद उनके गांव पहुंचे राजपाल यादव, आंखें दिखीं नम बोले- नाना आप हमेशा अमर रहेंगे"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "नाना पाटेकर",
+   "via": [
+    "wikipedia-top-2026-10-14",
+    "google-news:नाना पाटेकर के निधन के बाद उनके गांव पहुंचे राजपाल यादव, आंखें दिखीं नम बोले- नाना आप हमेशा अमर रहेंगे",
+    "outlet:NDTV"
+   ],
+   "owners": [
+    "NDTV"
+   ],
+   "reports": [
+    {
+     "title": "नाना पाटेकर के निधन के बाद उनके गांव पहुंचे राजपाल यादव, आंखें दिखीं नम बोले- नाना आप हमेशा अमर रहेंगे",
+     "url": "https://ndtv.in/bollywood/rajpal-yadav-visits-nana-patekar-village-after-death-says-nana-bhau-aap-amar-rahenge-12189894#publisher=newsstand",
+     "outlet": "NDTV India",
+     "outlet_hi": "एनडीटीवी इंडिया",
+     "owner": "NDTV",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-15T11:31:59+00:00"
+    }
+   ],
+   "id": "wk-Q2475741",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q31705888",
+   "title": "Cheruvayal Raman",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-15T15:43:49+00:00",
+   "headlines": [
+    "Cheruvayal Raman cremated with State honours"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Cheruvayal Raman cremated with State honours",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Cheruvayal Raman cremated with State honours",
+     "url": "https://www.thehindu.com/news/national/kerala/cheruvayal-raman-cremated-with-state-honours/article71587904.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T15:43:49+00:00"
+    }
+   ],
+   "id": "wk-Q31705888",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q141718063",
+   "title": "Parvinder Singh Jhota",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-14T12:25:07+00:00",
+   "headlines": [
+    "Punjab Anti-Drug Activist Parvinder Singh Jhota’s Family Seeks Security From PM Modi, Amit Shah"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Punjab Anti-Drug Activist Parvinder Singh Jhota’s Family Seeks Security From PM Modi, Amit Shah",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "Punjab Anti-Drug Activist Parvinder Singh Jhota’s Family Seeks Security From PM Modi, Amit Shah",
+     "url": "https://www.news18.com/videos/india/punjab-anti-drug-activist-parvinder-singh-jhota-s-family-seeks-security-from-pm-modi-amit-shah-10381992.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T12:25:07+00:00"
+    },
+    {
+     "title": "Parvinder Singh Jhota Murder: Ashwini Kumar Arrested, Bulldozer Action Begins | Punjab | News18",
+     "url": "https://www.news18.com/videos/breaking-news/parvinder-singh-jhota-murder-ashwini-kumar-arrested-bulldozer-action-begins-punjab-news18-10381497.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-14T08:47:40+00:00"
+    }
+   ],
+   "id": "wk-Q141718063",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-12",
+   "top": {
+    "IN-nation": 15
+   },
+   "top_score": 0.18,
+   "top_headlines": [
+    "Medical Store Owner Who Shot Dead Punjab Anti-Drug Activist Arrested"
+   ]
   },
   {
    "qid": "Q1355840",
@@ -602,34 +985,6 @@
    "top_headlines": []
   },
   {
-   "qid": "Q2475741",
-   "title": "Nana Patekar",
-   "fame": 16412,
-   "views": 16412,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "नाना पाटेकर",
-   "via": [
-    "wikipedia-top-2026-10-14"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q2475741",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-08",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
    "qid": "Q141670823",
    "title": "Hurricane Isaias (2026)",
    "fame": 14086,
@@ -655,6 +1010,118 @@
    "date": "2026-10-06",
    "coords": null,
    "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q1438992",
+   "title": "Richard Gray (game designer)",
+   "fame": 9506,
+   "views": 9506,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1438992",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q3205897",
+   "title": "L. Ian MacDonald",
+   "fame": 8491,
+   "views": 8491,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q3205897",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q11738696",
+   "title": "Ken Friar",
+   "fame": 8429,
+   "views": 8429,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q11738696",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-13",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q5300674",
+   "title": "Doug Loft",
+   "fame": 7933,
+   "views": 7933,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5300674",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-11",
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -694,8 +1161,8 @@
     "DB Corp",
     "BBC"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -708,12 +1175,12 @@
    ],
    "hindi_headlines": [
     "आमिर खान के भांजे इमरान खान पर भड़के महाभारत के युधिष्ठिर, बोले- 24 घंटे में देश छोड़ने को कहा जाए",
-    "इमरान खान पर चुप बॉलीवुड, भड़के अभिजीत दिपके, बोले- बस इतना पूछना...",
     "भारत छोड़ने की नोटिस के खिलाफ हाई कोर्ट जाएंगे इमरान खान, CJP प्रोटेस्ट में हुए थे शामिल",
-    "आमिर खान के भांजे को क्यों छोड़ना पड़ेगा, इमरान खान के पास भारत की नहीं नागरिकता, OCI का है कार्ड",
-    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस"
+    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस",
+    "एक्टर इमरान खान को भारत छोड़ने का नोटिस:28 अक्टूबर तक की मोहलत, आरोप- भारतीय नागरिक नहीं; ज्ञानेश कुमार के खिलाफ प्रदर्शन में शामिल हुए थे",
+    "इमरान ख़ान के गढ़ को सेना ने घेरा, पाकिस्तान क्या इस मामले में 'आग से खेल रहा है'?"
    ],
-   "hindi_news": 8,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -788,16 +1255,18 @@
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
-    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें"
+    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
+    "google-news:आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया"
    ],
    "top": {
-    "IN": 1,
-    "IN-hi": 10,
+    "IN": 3,
+    "IN-hi": 9,
     "IN-nation": 1,
-    "IN-hi-nation": 5
+    "IN-hi-nation": 6
    },
-   "top_score": 1.815,
+   "top_score": 1.725,
    "top_headlines": [
+    "आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया",
     "इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
     "Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
     "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
@@ -805,6 +1274,123 @@
    "part": 2,
    "earlier": [
     "इमरान खान को 28 अक्टूबर तक भारत छोड़ने का आदेश, वजह क्या है?"
+   ]
+  },
+  {
+   "id": "kh-20261015-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+   "story_keys": [
+    "backward",
+    "can’t",
+    "claim",
+    "converting",
+    "person",
+    "quota"
+   ],
+   "date": "2026-10-15",
+   "news_at": "2026-10-15T15:48:51+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+    "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+    "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+    "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+    "Conversion does not automatically grant quota benefits: Supreme Court",
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारत का उच्चतम न्यायालय",
+   "reports": [
+    {
+     "title": "Conversion does not automatically grant quota benefits: Supreme Court",
+     "url": "https://www.thehindu.com/news/national/supreme-court-upholds-madras-hc-order-quashing-tamil-nadu-reservation-notification-for-converts-to-islam/article71586768.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T15:48:51+00:00"
+    },
+    {
+     "title": "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/hindu-converts-to-islam-can-t-claim-muslim-backward-quota-rules-supreme-court-101792046832187.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:47:11+00:00"
+    },
+    {
+     "title": "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+     "url": "https://www.news18.com/india/person-who-converts-from-hinduism-to-islam-cant-claim-backward-class-muslim-status-says-supreme-court-ws-l-10382776.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:44:26+00:00"
+    },
+    {
+     "title": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+     "url": "https://www.livemint.com/news/india/supreme-court-says-person-converting-from-hinduism-to-islam-can-t-claim-backward-quota-11792044362591.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:11:05+00:00"
+    },
+    {
+     "title": "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/cjp-jantar-mantar-protest-delhi-police-supreme-court-detentions-security-101792031690981.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T02:39:53+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "google-news:Delhi Protests: SG Tushar Mehta Objects To 'Misleading' Reports On Govt Apology In Supreme Court",
+    "google-news:Supreme Court Declines To List Maharashtra SIR Challenge With Rahul Gandhi's Plea, Says It Will Examine..."
+   ],
+   "top": {
+    "IN": 5,
+    "IN-nation": 17
+   },
+   "top_score": 0.86,
+   "top_headlines": [
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "Person who converts from Hinduism to Islam can't claim Backward Class Muslim status: Supreme Court",
+    "NEET-PG 2026: Supreme Court Issues Notice On Plea Seeking Disclosure Of Actual Questions, Options And..."
    ]
   },
   {
@@ -828,7 +1414,7 @@
     "tranche"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T15:45:41.841610+00:00",
+   "news_at": "2026-10-15T16:22:11.939452+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -866,7 +1452,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-15T15:45:41.841610+00:00"
+     "at": "2026-10-15T16:22:11.939452+00:00"
     },
     {
      "title": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
@@ -907,107 +1493,100 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 4,
+    "IN-nation": 11
    },
-   "top_score": 0.84,
+   "top_score": 1.0,
    "top_headlines": [
-    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon"
+    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon",
+    "India says first phase of US trade deal nearly done, insists on edge over rivals"
    ]
   },
   {
-   "id": "kh-20261015-Q2341950",
-   "qid": "Q2341950",
-   "title": "Connaught Place, New Delhi",
-   "name": "Connaught Place",
-   "phrase": "Connaught Place' Delhi",
+   "id": "kh-20261015-Q783854",
+   "qid": "Q783854",
+   "title": "Fort Hood",
+   "name": "Fort Hood",
+   "phrase": "Fort Hood",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Trump says Fort Hood US shooter execution will not be livestreamed",
    "story_keys": [
-    "against",
-    "ahead",
-    "shut"
+    "execution",
+    "livestreamed",
+    "not",
+    "shooter",
+    "trump"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T14:54:22+00:00",
+   "news_at": "2026-10-15T16:00:35+00:00",
    "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group",
-    "NDTV"
+    "Al Jazeera Media Network",
+    "Deutsche Welle",
+    "Guardian Media Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-    "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-    "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march"
+    "Trump says Fort Hood US shooter execution will not be livestreamed",
+    "Trump says execution of Fort Hood shooter will not be livestreamed",
+    "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
    ],
-   "hindi_headlines": [
-    "CJP के तिरंगा मार्च से पहले कनॉट प्लेस का सेंट्रल पार्क बंद, जारी हुआ आदेश",
-    "कनॉट प्लेस में तिरंगा मार्च पर दिपके को हाईकोर्ट से राहत, पुलिस बोली- एक्‍शन लेंगे, दिल्‍ली में कल फिर ड्रामा",
-    "कनॉट प्लेस के सेंट्रल पार्क में CJP प्रोटेस्ट के लिए कोई परमिशन नहीं- सूत्र"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "कनॉट प्लेस",
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march",
-     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-cockroach-party-central-park-closure-connaught-place-cjp-tricolour-march-abhijeet-dipke-protest-3018252-2026-10-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Trump says execution of Fort Hood shooter will not be livestreamed",
+     "url": "https://www.dw.com/en/trump-says-execution-of-fort-hood-shooter-will-not-be-livestreamed/a-79672036?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-15T14:54:22+00:00"
+     "at": "2026-10-15T15:36:00+00:00"
     },
     {
-     "title": "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-     "url": "https://www.news18.com/india/will-take-steps-against-cjp-abhijeet-dipke-delhi-police-vows-action-ahead-of-tricolour-assembly-at-connaught-place-ws-l-10383411.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
+     "title": "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+     "url": "https://www.theguardian.com/us-news/2026/oct/15/pete-hegseth-crec-church-execution-livestream",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-15T10:59:54+00:00"
+     "at": "2026-10-15T16:00:35+00:00"
     },
     {
-     "title": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-     "url": "https://www.hindustantimes.com/india-news/cjp-connaught-place-protest-tiranga-national-flag-delhi-police-news-security-high-court-101792045479552.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Trump says Fort Hood US shooter execution will not be livestreamed",
+     "url": "https://www.aljazeera.com/news/2026/10/15/trump-says-fort-hood-shooter-execution-will-not-be-livestreamed?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-15T06:29:52+00:00"
+     "at": "2026-10-15T14:27:35+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:NDTV"
+    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "google-news:Trump says military execution of Fort Hood gunman will not be livestreamed"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 6
+    "IN": 12
    },
-   "top_score": 1.175,
+   "top_score": 0.45,
    "top_headlines": [
-    "Anti-CEC protest LIVE | Delhi's Connaught Place Central Park closed on Oct. 16-17, NDMC says ahead of CJP's 'tiranga' protest",
-    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
-    "Plea In Supreme Court Seeks Guidelines Against Political Protests Inside Court Premises, Contempt...",
-    "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
    ]
   },
   {
@@ -1039,24 +1618,80 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
+  },
+  {
+   "qid": "Q5300674",
+   "title": "Doug Loft",
+   "fame": 7933,
+   "views": 7933,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5300674",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q3205897",
+   "title": "L. Ian MacDonald",
+   "fame": 8491,
+   "views": 8491,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q3205897",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   }
  ],
  "notes": [
-  "outlets: 1467 headlines from 31 feeds (19 owners), 23 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q3633485, kh-20261015-Q7199798, kh-20261015-Q2341950; dropped: explainer Long-delayed China-North Korea: no Wikipedia article that can be its centre; explainer Sergio Gor: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again"
+  "outlets: 1470 headlines from 31 feeds (19 owners), 22 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q213380, kh-20261015-Q3633485, kh-20261015-Q783854; dropped: explainer Sergio Gor: fewer than 3 owners' headlines name it and the story; explainer 'North Korea and China open new bridge after 12-year delay': no name to tell it by; explainer Place' Delhi HC: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again",
+  "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1467,
+  "headlines": 1470,
   "feeds": 31,
   "owners": 19,
-  "matched": 23,
-  "corroborated": 4
+  "matched": 22,
+  "corroborated": 6
  },
  "emerging": [],
  "explainers": [
@@ -1093,8 +1728,8 @@
     "DB Corp",
     "BBC"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1107,12 +1742,12 @@
    ],
    "hindi_headlines": [
     "आमिर खान के भांजे इमरान खान पर भड़के महाभारत के युधिष्ठिर, बोले- 24 घंटे में देश छोड़ने को कहा जाए",
-    "इमरान खान पर चुप बॉलीवुड, भड़के अभिजीत दिपके, बोले- बस इतना पूछना...",
     "भारत छोड़ने की नोटिस के खिलाफ हाई कोर्ट जाएंगे इमरान खान, CJP प्रोटेस्ट में हुए थे शामिल",
-    "आमिर खान के भांजे को क्यों छोड़ना पड़ेगा, इमरान खान के पास भारत की नहीं नागरिकता, OCI का है कार्ड",
-    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस"
+    "‘विदेशी’ इमरान खान को भारत छोड़ने का अल्टीमेटम, मुंबई पुलिस ने भेजा नोटिस",
+    "एक्टर इमरान खान को भारत छोड़ने का नोटिस:28 अक्टूबर तक की मोहलत, आरोप- भारतीय नागरिक नहीं; ज्ञानेश कुमार के खिलाफ प्रदर्शन में शामिल हुए थे",
+    "इमरान ख़ान के गढ़ को सेना ने घेरा, पाकिस्तान क्या इस मामले में 'आग से खेल रहा है'?"
    ],
-   "hindi_news": 8,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -1207,19 +1842,138 @@
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
-    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें"
+    "google-news:इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
+    "google-news:आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया"
    ],
    "top": {
-    "IN": 1,
-    "IN-hi": 10,
+    "IN": 3,
+    "IN-hi": 9,
     "IN-nation": 1,
-    "IN-hi-nation": 5
+    "IN-hi-nation": 6
    },
-   "top_score": 1.815,
+   "top_score": 1.725,
    "top_headlines": [
+    "आमिर खान के भांजे और एक्टर इमरान खान को भारत छोड़ने का नोटिस, मुंबई पुलिस ने लिया",
     "इमरान खान को 28 अक्टूबर तक भारत छोड़ने का नोटिस, CJP विरोध प्रदर्शन में शामिल होने के बाद बढ़ीं मुश्किलें",
     "Bollywood actor Imran Khan asked to leave India after participating in protest, media says",
     "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
+   ]
+  },
+  {
+   "id": "kh-20261015-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+   "story_keys": [
+    "backward",
+    "can’t",
+    "claim",
+    "converting",
+    "person",
+    "quota"
+   ],
+   "date": "2026-10-15",
+   "news_at": "2026-10-15T15:48:51+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+    "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+    "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+    "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+    "Conversion does not automatically grant quota benefits: Supreme Court",
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारत का उच्चतम न्यायालय",
+   "reports": [
+    {
+     "title": "Conversion does not automatically grant quota benefits: Supreme Court",
+     "url": "https://www.thehindu.com/news/national/supreme-court-upholds-madras-hc-order-quashing-tamil-nadu-reservation-notification-for-converts-to-islam/article71586768.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T15:48:51+00:00"
+    },
+    {
+     "title": "Hindu converts to Islam can’t claim Muslim backward quota, rules Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/hindu-converts-to-islam-can-t-claim-muslim-backward-quota-rules-supreme-court-101792046832187.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:47:11+00:00"
+    },
+    {
+     "title": "Person Converting From Hinduism To Islam Cannot Claim 'Backward Class' Muslim Status: Supreme Court",
+     "url": "https://www.news18.com/india/person-who-converts-from-hinduism-to-islam-cant-claim-backward-class-muslim-status-says-supreme-court-ws-l-10382776.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:44:26+00:00"
+    },
+    {
+     "title": "Supreme Court says person converting from Hinduism to Islam can’t claim ‘backward’ quota",
+     "url": "https://www.livemint.com/news/india/supreme-court-says-person-converting-from-hinduism-to-islam-can-t-claim-backward-quota-11792044362591.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T06:11:05+00:00"
+    },
+    {
+     "title": "CJP’s history of mob violence can’t be ignored, cops tell Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/cjp-jantar-mantar-protest-delhi-police-supreme-court-detentions-security-101792031690981.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T02:39:53+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "google-news:Delhi Protests: SG Tushar Mehta Objects To 'Misleading' Reports On Govt Apology In Supreme Court",
+    "google-news:Supreme Court Declines To List Maharashtra SIR Challenge With Rahul Gandhi's Plea, Says It Will Examine..."
+   ],
+   "top": {
+    "IN": 5,
+    "IN-nation": 17
+   },
+   "top_score": 0.86,
+   "top_headlines": [
+    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
+    "Person who converts from Hinduism to Islam can't claim Backward Class Muslim status: Supreme Court",
+    "NEET-PG 2026: Supreme Court Issues Notice On Plea Seeking Disclosure Of Actual Questions, Options And..."
    ]
   },
   {
@@ -1301,11 +2055,98 @@
     "google-news:India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax"
    ],
    "top": {
-    "IN": 16
+    "IN": 17
    },
-   "top_score": 0.25,
+   "top_score": 0.2,
    "top_headlines": [
     "India’s IDBI Bank falls 7% as government announces $5.5 billion stake sale to Canada's Fairfax"
+   ]
+  },
+  {
+   "id": "kh-20261015-Q783854",
+   "qid": "Q783854",
+   "title": "Fort Hood",
+   "name": "Fort Hood",
+   "phrase": "Fort Hood",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Trump says Fort Hood US shooter execution will not be livestreamed",
+   "story_keys": [
+    "execution",
+    "livestreamed",
+    "not",
+    "shooter",
+    "trump"
+   ],
+   "date": "2026-10-15",
+   "news_at": "2026-10-15T16:00:35+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "Deutsche Welle",
+    "Guardian Media Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump says Fort Hood US shooter execution will not be livestreamed",
+    "Trump says execution of Fort Hood shooter will not be livestreamed",
+    "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Trump says execution of Fort Hood shooter will not be livestreamed",
+     "url": "https://www.dw.com/en/trump-says-execution-of-fort-hood-shooter-will-not-be-livestreamed/a-79672036?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-15T15:36:00+00:00"
+    },
+    {
+     "title": "Hegseth church allies backed plan for ‘public’ execution of Fort Hood shooter",
+     "url": "https://www.theguardian.com/us-news/2026/oct/15/pete-hegseth-crec-church-execution-livestream",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-15T16:00:35+00:00"
+    },
+    {
+     "title": "Trump says Fort Hood US shooter execution will not be livestreamed",
+     "url": "https://www.aljazeera.com/news/2026/10/15/trump-says-fort-hood-shooter-execution-will-not-be-livestreamed?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-15T14:27:35+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "google-news:Trump says military execution of Fort Hood gunman will not be livestreamed"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Trump says military execution of Fort Hood gunman will not be livestreamed"
    ]
   },
   {
@@ -1329,7 +2170,7 @@
     "tranche"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T15:45:41.841610+00:00",
+   "news_at": "2026-10-15T16:22:11.939452+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -1367,7 +2208,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-15T15:45:41.841610+00:00"
+     "at": "2026-10-15T16:22:11.939452+00:00"
     },
     {
      "title": "India-U.S. deal ‘finalised’, implementation after clarity on India’s competitive advantage, says Goyal",
@@ -1408,108 +2249,134 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 4,
+    "IN-nation": 11
    },
-   "top_score": 0.84,
+   "top_score": 1.0,
    "top_headlines": [
-    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon"
+    "First Tranche Of India-US Trade Deal Finalised, Draft To Be Out Soon",
+    "India says first phase of US trade deal nearly done, insists on edge over rivals"
    ]
   },
   {
-   "id": "kh-20261015-Q2341950",
-   "qid": "Q2341950",
-   "title": "Connaught Place, New Delhi",
-   "name": "Connaught Place",
-   "phrase": "Connaught Place' Delhi",
+   "id": "kh-20261015-Q923628",
+   "qid": "Q923628",
+   "title": "India Meteorological Department",
+   "name": "India Meteorological Department",
+   "phrase": "IMD",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
    "story_keys": [
-    "against",
-    "ahead",
-    "shut"
+    "alert",
+    "brace",
+    "capital",
+    "delhi-ncr",
+    "heavy",
+    "issue",
+    "lashe",
+    "orange",
+    "thunderstorm"
    ],
    "date": "2026-10-15",
-   "news_at": "2026-10-15T14:54:22+00:00",
+   "news_at": "2026-10-15T15:43:18+00:00",
    "owners": [
-    "HT Media",
     "Network18",
-    "India Today Group",
-    "NDTV"
+    "HT Media",
+    "The Hindu Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-    "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-    "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march"
+    "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
+    "Delhi-NCR Braces For Rain As Dark Clouds Loom Over Capital; IMD Issues Alert For Thunderstorm",
+    "IMD issues red alert for Delhi, orange for Noida, Gurugram amid heavy rain; temperature dips",
+    "Delhi weather today: Rain lashes capital city; IMD issues orange alert",
+    "Gloomy skies prevail as rain lashes Delhi, IMD predicts another wet spell around midnight",
+    "IMD forecasts heavy rain in coastal and Rayalaseema regions till October 19"
    ],
-   "hindi_headlines": [
-    "CJP के तिरंगा मार्च से पहले कनॉट प्लेस का सेंट्रल पार्क बंद, जारी हुआ आदेश",
-    "कनॉट प्लेस में तिरंगा मार्च पर दिपके को हाईकोर्ट से राहत, पुलिस बोली- एक्‍शन लेंगे, दिल्‍ली में कल फिर ड्रामा",
-    "कनॉट प्लेस के सेंट्रल पार्क में CJP प्रोटेस्ट के लिए कोई परमिशन नहीं- सूत्र"
-   ],
-   "hindi_news": 3,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "कनॉट प्लेस",
+   "label_hi": "भारत मौसम विज्ञान विभाग",
    "reports": [
     {
-     "title": "Delhi Central Park shut, cops issue 'stay away' order ahead of CJP's Tiranga march",
-     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-cockroach-party-central-park-closure-connaught-place-cjp-tricolour-march-abhijeet-dipke-protest-3018252-2026-10-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "IMD forecasts heavy rain in coastal and Rayalaseema regions till October 19",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/imd-forecasts-heavy-rain-in-coastal-and-rayalaseema-regions-till-october-19/article71588960.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-15T14:54:22+00:00"
+     "at": "2026-10-15T15:43:18+00:00"
     },
     {
-     "title": "'Will Take Steps Against CJP, Abhijeet Dipke': Delhi Police Vows Action Ahead Of Tricolour Assembly At CP",
-     "url": "https://www.news18.com/india/will-take-steps-against-cjp-abhijeet-dipke-delhi-police-vows-action-ahead-of-tricolour-assembly-at-connaught-place-ws-l-10383411.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-15T10:59:54+00:00"
-    },
-    {
-     "title": "'They are going to shut down Connaught Place': Delhi HC agrees to hear plea against CJP's Tricolour call",
-     "url": "https://www.hindustantimes.com/india-news/cjp-connaught-place-protest-tiranga-national-flag-delhi-police-news-security-high-court-101792045479552.html",
+     "title": "Gloomy skies prevail as rain lashes Delhi, IMD predicts another wet spell around midnight",
+     "url": "https://www.hindustantimes.com/india-news/gloomy-skies-prevail-as-rain-lashes-delhi-imd-predicts-another-wet-spell-around-midnight-101792054191631.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-15T06:29:52+00:00"
+     "at": "2026-10-15T08:49:51+00:00"
+    },
+    {
+     "title": "Heavy Rain, Thunderstorms Sweep Delhi-NCR; IMD Issues Orange Alert",
+     "url": "https://www.news18.com/india/heavy-rain-thunderstorms-sweep-delhi-ncr-imd-issues-orange-alert-ws-l-10383030.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T08:06:49+00:00"
+    },
+    {
+     "title": "Delhi weather today: Rain lashes capital city; IMD issues orange alert",
+     "url": "https://www.livemint.com/news/india/delhi-weather-today-rain-lashes-capital-city-imd-issues-orange-alert-11792050376034.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T07:48:57+00:00"
+    },
+    {
+     "title": "IMD issues red alert for Delhi, orange for Noida, Gurugram amid heavy rain; temperature dips",
+     "url": "https://www.hindustantimes.com/india-news/heavy-rain-in-parts-of-delhi-ncr-imd-issues-orange-alert-temperature-dips-101792049775205.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T07:39:11+00:00"
+    },
+    {
+     "title": "Delhi-NCR Braces For Rain As Dark Clouds Loom Over Capital; IMD Issues Alert For Thunderstorm",
+     "url": "https://www.news18.com/india/delhi-ncr-braces-for-rain-as-dark-clouds-loom-imd-issues-alert-for-thunderstorm-moderate-showers-ws-kl-10382752.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-15T05:59:22+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:NDTV"
+    "outlet:HT Media",
+    "outlet:The Hindu Group"
    ],
-   "top": {
-    "IN": 2,
-    "IN-nation": 6
-   },
-   "top_score": 1.175,
-   "top_headlines": [
-    "Anti-CEC protest LIVE | Delhi's Connaught Place Central Park closed on Oct. 16-17, NDMC says ahead of CJP's 'tiranga' protest",
-    "'Nobody Can Browbeat Us' : Supreme Court In Plea Against October 12 March By Political Leaders; Issues...",
-    "Plea In Supreme Court Seeks Guidelines Against Political Protests Inside Court Premises, Contempt...",
-    "Delhi Protest | Supreme Court Orders No Coercive Action In SC/ST Case Against Woman Journalist Who..."
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   }
  ]
 }
