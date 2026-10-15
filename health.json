@@ -1,18 +1,22 @@
 {
- "at": "2026-10-15T09:20:41+00:00",
+ "at": "2026-10-15T09:58:25+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 20 trending",
-  "outlets: 1380 headlines from 31 feeds (19 owners), 27 matched to articles, 9 candidates with 2+ owners, 3 nw- stories (on): nw-20261015-hindu-attack, nw-20261014-students-protest, nw-20261014-ministry-protest",
-  "explainers: 6 kh- stories (on): kh-20261015-Q200667, kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q923628; dropped: explainer Dewi’ All / Dewi’ All: no Wikipedia article that can be its centre; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by; explainer Neha Bora's Bangladesh / Neha Bora's Bangladesh: no Wikipedia article that can be its centre",
+  "watch: 4 candidates from 18 trending",
+  "outlets: 1407 headlines from 31 feeds (19 owners), 29 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261014-ambedkar-protest, nw-20261014-ministry-protest",
+  "explainers: 5 kh- stories (on): kh-20261015-Q200667, kh-20261015-Q923628, kh-20261015-Q3633485, kh-20261015-Q69906; dropped: explainer Dewi’ All / Dewi’ All: no Wikipedia article that can be its centre; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by; explainer Neha Bora's Bangladesh / Neha Bora's Bangladesh: no Wikipedia article that can be its centre",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 93 h old and no longer trending live",
-  "drop wk-Q3205897: 165 h old and no longer trending live",
-  "skip kh-20261015-Q200667: gate: no draft passed the fact checks: unsupported: the road length \"298 किलोमीटर लंबी\"",
-  "skip nw-20261015-hindu-attack: gate: only 0 usable photos of Hindu (want 2)",
-  "skip wk-Q31705888: gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
-  "nothing eligible to publish"
- ]
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503']",
+  "drop wk-Q5300674: 94 h old and no longer trending live",
+  "drop wk-Q3205897: 166 h old and no longer trending live",
+  "published kh-20261015-Q200667: https://www.youtube.com/shorts/cIL5e07LWzo"
+ ],
+ "published": {
+  "video_id": "cIL5e07LWzo",
+  "url": "https://www.youtube.com/shorts/cIL5e07LWzo",
+  "title": "लद्दाख़ में ₹3,350 करोड़ की विकास परियोजनाओं का उद्घाटन",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
