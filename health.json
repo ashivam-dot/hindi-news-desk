@@ -1,17 +1,22 @@
 {
- "at": "2026-10-15T00:51:17+00:00",
+ "at": "2026-10-15T01:25:51+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 8 candidates from 19 trending",
-  "outlets: 1321 headlines from 31 feeds (19 owners), 46 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261015-Q19867977, kh-20261015-Q3633485, kh-20261015-Q140632219, kh-20261015-Q69906; dropped: explainer Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer BS-VII / April: no Wikipedia article that can be its centre; explainer 'North Korea Test-Fires Two Types Of Submarine Strategic Crui': no name to tell it by",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261015-Q3633485: outside 07:00-24:00 IST",
-  "hold kh-20261015-Q140632219: outside 07:00-24:00 IST",
-  "hold kh-20261015-Q19867977: outside 07:00-24:00 IST",
-  "hold wk-Q31705888: outside 07:00-24:00 IST",
-  "hold kh-20261015-Q3506475: outside 07:00-24:00 IST",
-  "hold kh-20261015-Q6109517: outside 07:00-24:00 IST"
- ]
+  "learn: 13 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.758, 'typical_views_24h': 37}}",
+  "watch: 5 candidates from 15 trending",
+  "outlets: 1318 headlines from 31 feeds (19 owners), 29 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261015-Q69906, kh-20261015-Q19867977, kh-20261015-Q6109517, kh-20261015-Q3633485; dropped: explainer Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer BS-VII / April: no Wikipedia article that can be its centre; explainer 'North Korea Test-Fires Two Types Of Submarine Strategic Crui': no name to tell it by",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "skip kh-20261015-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
+  "skip kh-20261015-Q140632219: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.93, 0.973, 0.917, 0.935, 0.918, 0.604, 0.933, 0.973], 'wpm': 146.5, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.93, 0.757, 0.917, 0.919, 0.918, 0.585, 0.9, 0.946], 'wpm': 155.5, 'clean'",
+  "published kh-20261015-Q19867977: https://www.youtube.com/shorts/sGGOOLWDLKw"
+ ],
+ "published": {
+  "video_id": "sGGOOLWDLKw",
+  "url": "https://www.youtube.com/shorts/sGGOOLWDLKw",
+  "title": "यूक्रेन की सैन्य पहुँच स्टारलिंक पर अचानक सीमित",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
