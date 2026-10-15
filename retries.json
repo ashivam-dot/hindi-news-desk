@@ -205,8 +205,13 @@
   "at": "2026-10-15T14:32:22+00:00"
  },
  "kh-20261015-Q312781-p2": {
-  "count": 2,
+  "count": 3,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.944, 0.912, 0.455, 0.938, 0.967, 0.963, 0.966, 0.946], 'wpm': 177.3, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.963, 0.662,",
+  "at": "2026-10-15T15:55:15+00:00"
+ },
+ "kh-20261015-Q2341950": {
+  "count": 1,
   "reason": "ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
-  "at": "2026-10-15T15:09:38+00:00"
+  "at": "2026-10-15T16:04:33+00:00"
  }
 }
