@@ -169,7 +169,9 @@ TITLE_BRIEF = """Write 5 different YouTube titles in Hindi for the news Short wh
   Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान, सुप्रीम कोर्ट not सर्वोच्च न्यायालय, IMF not
   अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका not पद्धति, के बाद not उपरांत.
 - 30 to 65 characters. The most striking concrete fact first: the number, the decision, or what it means for people.
-- Name who or what it is about the way the HINDI HEADLINES below name it, when they do.
+- Name who or what it is about the way the HINDI HEADLINES below name it, when they do. Give a person the role the
+  SCRIPT gives them right before the name ("अभिनेता इमरान खान", "केंद्रीय मंत्री ..."), so no one mistakes them for
+  someone else with that name.
 - A headline's active voice ("सरकार बेचेगी IDBI बैंक में हिस्सेदारी", "सेंसेक्स 1100 अंक उछला"), never a stiff passive
   ("...किया गया").
 - It may end with a short reason hook that this Short answers (", वजह क्या है?", ", क्यों?"), but only after a part
