@@ -1,23 +1,21 @@
 {
- "at": "2026-10-15T05:08:33+00:00",
+ "at": "2026-10-15T05:41:22+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 17 trending",
-  "outlets: 1293 headlines from 31 feeds (19 owners), 23 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261014-albania-protest",
-  "explainers: 4 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q51993, kh-20261015-Q6109517; dropped: explainer October: fewer than 3 owners' headlines name it and the story; explainer IMD: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
+  "watch: 5 candidates from 18 trending",
+  "outlets: 1305 headlines from 31 feeds (19 owners), 24 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261014-delhi-protest, nw-20261014-ministry-protest",
+  "explainers: 4 kh- stories (on): kh-20261015-Q3633485, kh-20261015-Q69906, kh-20261015-Q51993, kh-20261015-Q223; dropped: explainer October: fewer than 3 owners' headlines name it and the story; explainer IMD: fewer than 3 owners' headlines name it and the story; explainer 'North Korea test-fires submarine-launched cruise missiles am': no name to tell it by",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 89 h old and no longer trending live",
-  "drop wk-Q3205897: 161 h old and no longer trending live",
-  "skip kh-20261015-Q3633485: gate: only 0 usable photos of IDBI Bank on Wikimedia Commons (want 2)",
-  "skip wk-Q31705888: gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
-  "published kh-20261015-Q51993: https://www.youtube.com/shorts/8OyF62--vv4"
+  "drop wk-Q5300674: 90 h old and no longer trending live",
+  "drop wk-Q3205897: 162 h old and no longer trending live",
+  "published nw-20261014-delhi-protest: https://www.youtube.com/shorts/C3c7GhdBRXg"
  ],
  "published": {
-  "video_id": "8OyF62--vv4",
-  "url": "https://www.youtube.com/shorts/8OyF62--vv4",
-  "title": "इबोला रक्तस्रावी बुखार के मामलों के बीच केन्या ने दूसरे मरीज की पुष्टि की",
+  "video_id": "C3c7GhdBRXg",
+  "url": "https://www.youtube.com/shorts/C3c7GhdBRXg",
+  "title": "दिल्ली: छात्रों के विरोध प्रदर्शन के बाद पुलिस कार्रवाई",
   "privacy": "public",
   "synthetic_declared": true
  }
