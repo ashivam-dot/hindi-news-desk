@@ -1,24 +1,21 @@
 {
- "at": "2026-10-15T11:18:39+00:00",
+ "at": "2026-10-15T11:57:21+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 15 scored Shorts, lifts {'region:world': {'n': 7, 'lift': 0.77, 'typical_views_24h': 37}, 'region:india': {'n': 4, 'lift': 1.106, 'typical_views_24h': 69}}",
-  "watch: 8 candidates from 21 trending",
-  "outlets: 1422 headlines from 31 feeds (19 owners), 33 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-hindu-attack",
-  "explainers: 6 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q200667, kh-20261015-Q12638, kh-20261015-Q7199798; dropped: explainer Long-delayed China-North Korea: no Wikipedia article that can be its centre; explainer Kumar CJP's Dipke / CJP's Tricolour: no Wikipedia article that can be its centre; explainer IDBI Bank: fewer than 3 owners' headlines name it and the story",
+  "watch: 8 candidates from 22 trending",
+  "outlets: 1438 headlines from 31 feeds (19 owners), 22 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261015-Q312781, kh-20261015-Q213380, kh-20261015-Q796994, kh-20261015-Q7804; dropped: explainer Long-delayed China-North Korea: no Wikipedia article that can be its centre; explainer Gyanesh Kumar CJP / CJP's Tricolour: no Wikipedia article that can be its centre; explainer IMD: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1714 headlines (KeyError)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1733 headlines (KeyError)']",
   "drop kh-20261015-Q37181: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q139998119-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 95 h old and no longer trending live",
-  "drop wk-Q3205897: 167 h old and no longer trending live",
-  "skip wk-Q139857349-2026w42: gate: no draft passed the fact checks: unsupported: पार्टी के डेटा के मुताबिक इंस्टाग्राम पर इस राजनीतिक मंच के 3 करोड़ फॉलोअर्स हो चुके हैं।",
-  "skip nw-20261015-hindu-attack: gate: only 0 usable photos of Hindu (want 2)",
-  "skip wk-Q31705888: gate: only 1 usable photos of Cheruvayal Raman on Wikimedia Commons (want 3)",
+  "drop wk-Q5300674: 96 h old and no longer trending live",
+  "drop wk-Q3205897: 168 h old and no longer trending live",
+  "hold kh-20261015-Q213380: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
+  "skip kh-20261015-Q796994: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.722, 0.93, 0.8, 0.971, 0.928, 0.93, 0.987, 0.919], 'wpm': 128.8, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.704, 0.93, 0.8, 0.957, 0.551, 0.0, 0.0, 0.973], 'wpm': 136.5, 'clean': True, 'o",
+  "later kh-20261015-Q7199798: this run already wrote 2 scripts",
+  "later wk-Q139857349-2026w42: this run already wrote 2 scripts",
   "nothing eligible to publish"
- ],
- "warnings": [
-  "kh-20261015-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
  ]
 }
