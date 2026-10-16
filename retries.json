@@ -260,8 +260,13 @@
   "at": "2026-10-16T09:48:59+00:00"
  },
  "kh-20261016-Q312781": {
-  "count": 2,
-  "reason": "gate: no draft passed the fact checks: Zulfikar Memon (जुलकर मेमन) is not in the sources (only one outlet reports it)",
-  "at": "2026-10-16T11:02:39+00:00"
+  "count": 3,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.967, 0.965, 0.667, 0.951, 1.0, 0.916, 0.946], 'wpm': 152.5, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.967, 0.929",
+  "at": "2026-10-16T11:45:36+00:00"
+ },
+ "kh-20261016-Q796994": {
+  "count": 1,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.761, 0.971, 0.966, 0.967, 0.737, 0.214, 0.0, 0.676], 'wpm': 128.6, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.817",
+  "at": "2026-10-16T11:48:02+00:00"
  }
 }
