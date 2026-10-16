@@ -114,14 +114,17 @@ Shape (a news report, in this order):
    है"). If no report gives a reason, say plainly that no official reason has been given.
 5. The other side: when the story is one side acting against, accusing or protesting another, say what the other
    side said in REPORTING, attributed; if REPORTING carries no response from them, say "रिपोर्टों में <them> की
-   प्रतिक्रिया नहीं है" in one short line. Otherwise one line of background on {name} from the SOURCE, only the part
-   this story needs (never a biography).
+   प्रतिक्रिया नहीं है" in one short line, naming them. Otherwise (a market, economy, science, weather or sports
+   story has no other side) one line of background on {name} from the SOURCE, only the part this story needs
+   (never a biography).
 6. आगे क्या: the next step that is announced or due, or what is still unclear. The last beat is one short factual
    sentence, never a conclusion, a moral or an opinion.
 Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
 words, and attribute every claim, allegation and criticism to whoever made it. Never guess at motives, never predict,
 never give financial, legal or medical advice. Never mention suicide, and never write "जानें" (it reads as "lives
-lost"). The title is a declarative news headline that states the news (never a question, never a teaser)."""
+lost"). The title is a declarative news headline that states the news (never a question, never a teaser). A change
+measured over several days or sessions names that span in the title ("4 दिन में 3% चढ़ा सेंसेक्स"), never as if it
+happened in one day."""
 
 RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
@@ -368,6 +371,9 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
     problems += casual(draft)
+    problems += [f"beat {i + 1} says no reply from an unnamed side; name who did not respond, or give background "
+                 "instead when the story has no other side" for i, b in enumerate(beats)
+                 if NOBODY_REPLIED.search(b.get("say", ""))]
     names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
     if not beats or not subject_in(beats[0].get("say", ""), subject, names):
         problems.append(f"beat 1 must name {subject.get('hi') or subject['en']} in Hindi, and list it in names")
@@ -418,6 +424,8 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
 
 
 CASUAL = re.compile(r"आइए|आइये|दोस्तों|सोचिए|सोचिये|क्या आप|आपको बता दें|जानिए|जानिये|!")
+# "रिपोर्टों में अन्य पक्षों की प्रतिक्रिया नहीं है" in a Sensex Short (2026-10-16): filler, since a market has no side.
+NOBODY_REPLIED = re.compile(r"(अन्य|दूसरे|दूसरा|किसी|विपक्षी) पक्ष\S*( की| का| से)? (कोई )?प्रतिक्रिया")
 
 
 def casual(draft: dict) -> list[str]:
