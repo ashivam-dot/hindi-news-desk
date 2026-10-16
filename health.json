@@ -1,19 +1,24 @@
 {
- "at": "2026-10-16T10:13:36+00:00",
+ "at": "2026-10-16T10:56:51+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 14 trending",
-  "outlets: 1444 headlines from 31 feeds (19 owners), 20 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
-  "explainers: 4 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q58451224; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
+  "watch: 6 candidates from 15 trending",
+  "outlets: 1452 headlines from 31 feeds (19 owners), 18 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
+  "explainers: 6 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q139857349, kh-20261016-Q312781, kh-20261016-Q213380; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q96681757: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 118 h old and no longer trending live",
-  "drop wk-Q3205897: 190 h old and no longer trending live",
+  "drop kh-20261016-Q7040049: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 119 h old and no longer trending live",
+  "drop wk-Q3205897: 191 h old and no longer trending live",
   "skip kh-20261016-Q139857349: gate: orbitwire: the title must show the 'भारत से कनेक्शन' angle",
-  "skip kh-20261016-Q312781: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.967, 0.538, 0.93, 0.658, 0.915, 1.0, 1.0, 0.973], 'wpm': 155.5, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.967, 0.523, 0.93, 0.684, 0.949, 0.966, 0.966, 0.973], 'wpm': 157.4, 'clean': Tru",
-  "skip kh-20261016-Q58451224: gate: only 0 usable photos of Madan Rathore on Wikimedia Commons (want 2)",
-  "skip nw-20261015-oregon-attack: gate: fewer than 2 independent outlets' articles about Oregon could be read",
-  "nothing eligible to publish"
- ]
+  "skip kh-20261016-Q312781: gate: no draft passed the fact checks: Zulfikar Memon (जुलकर मेमन) is not in the sources (only one outlet reports it)",
+  "published kh-20261016-Q478214: https://www.youtube.com/shorts/bbx5XceX0sI"
+ ],
+ "published": {
+  "video_id": "bbx5XceX0sI",
+  "url": "https://www.youtube.com/shorts/bbx5XceX0sI",
+  "title": "एलोन मस्क की कंपनी टेस्ला ने पेश की नई रोडस्टर स्पोर्ट्स कार",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
