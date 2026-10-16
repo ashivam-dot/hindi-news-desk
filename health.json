@@ -1,20 +1,23 @@
 {
- "at": "2026-10-16T04:17:54+00:00",
+ "at": "2026-10-16T04:58:20+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 14 trending",
-  "outlets: 1317 headlines from 31 feeds (19 owners), 11 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q317521, kh-20261016-Q1058; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre",
+  "watch: 7 candidates from 15 trending",
+  "outlets: 1334 headlines from 31 feeds (19 owners), 16 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q1058, kh-20261016-Q317521; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261016-Q139857349: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 112 h old and no longer trending live",
-  "drop wk-Q3205897: 184 h old and no longer trending live",
-  "skip wk-Q141745391: gate: only 0 usable photos of 2026 Silver Rail Elementary School shooting on Wikimedia Commons (want 3)",
-  "skip kh-20261016-Q317521: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, 0.855, 0.986, 0.953, 1.0, 0.955, 0.949, 0.973], 'wpm': 142.0, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, 0.87, 1.0, 0.942, 0.986, 0.944, 0.974, 0.946], 'wpm': 153.0, 'clean': True",
-  "nothing eligible to publish"
+  "drop wk-Q5300674: 113 h old and no longer trending live",
+  "drop wk-Q3205897: 185 h old and no longer trending live",
+  "skip kh-20261016-Q317521: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.681, 0.983, 0.952, 0.954, 0.943, 0.924, 0.892], 'wpm': 174.4, 'clean': False, 'ok': False}, {'take': 2, 'model': 'gemini-3.1-flash-tts-preview', 'coverage': [0.667, 0.958, 0.964, 0.908, 0.957, 0.913, 0.973], 'wpm': 173.5, 'clean': False, 'ok':",
+  "published kh-20261016-Q3520703: https://www.youtube.com/shorts/aegGToQDaWQ"
  ],
- "warnings": [
-  "kh-20261016-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
- ]
+ "published": {
+  "video_id": "aegGToQDaWQ",
+  "url": "https://www.youtube.com/shorts/aegGToQDaWQ",
+  "title": "IAS कुमार राजीव रंजन का वीडियो सामने आया, तीखी बहस",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
