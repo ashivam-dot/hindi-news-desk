@@ -250,9 +250,9 @@
   "at": "2026-10-16T06:57:03+00:00"
  },
  "kh-20261016-Q139881668": {
-  "count": 2,
+  "count": 3,
   "reason": "gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
-  "at": "2026-10-16T08:17:04+00:00"
+  "at": "2026-10-16T14:03:13+00:00"
  },
  "nw-20261015-oregon-attack": {
   "count": 1,
@@ -268,5 +268,10 @@
   "count": 1,
   "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.761, 0.971, 0.966, 0.967, 0.737, 0.214, 0.0, 0.676], 'wpm': 128.6, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.817",
   "at": "2026-10-16T11:48:02+00:00"
+ },
+ "kh-20261016-Q6744197": {
+  "count": 1,
+  "reason": "HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AMallikarjunKharge.png%7CFile%3AMallikarjun+Kharge+briefing+the+media+after+presenting+the+Interim+Railway+Budget+2014-15+in+New+Delhi+%28cropped%29.jpg%7CFile%3AThe+Prime+Minister%2C",
+  "at": "2026-10-16T14:03:44+00:00"
  }
 }

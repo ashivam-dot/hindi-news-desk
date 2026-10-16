@@ -1,21 +1,24 @@
 {
- "at": "2026-10-16T13:11:01+00:00",
+ "at": "2026-10-16T14:00:06+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 29 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'region:world': {'n': 16, 'lift': 0.811, 'typical_views_24h': 39}, 'region:india': {'n': 9, 'lift': 1.141, 'typical_views_24h': 62}}",
-  "watch: 4 candidates from 12 trending",
-  "outlets: 1476 headlines from 31 feeds (19 owners), 20 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
-  "explainers: 3 kh- stories (on): kh-20261016-Q139857349, kh-20261016-Q10218, kh-20261016-Q796994; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
+  "watch: 5 candidates from 14 trending",
+  "outlets: 1460 headlines from 30 feeds (18 owners), 19 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
+  "explainers: 5 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q10218, kh-20261016-Q139857349, kh-20261016-Q6744197; dropped: explainer Bank's Ajay Banga: fewer than 3 owners' headlines name it and the story; explainer Nirmala Sitharaman: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 121 h old and no longer trending live",
-  "drop wk-Q3205897: 193 h old and no longer trending live",
-  "published kh-20261016-Q10218: https://www.youtube.com/shorts/i2TSxzou8hc"
+  "drop wk-Q5300674: 122 h old and no longer trending live",
+  "drop wk-Q3205897: 194 h old and no longer trending live",
+  "skip kh-20261016-Q139881668: gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
+  "published kh-20261016-Q796994: https://www.youtube.com/shorts/Bv-u_UNMs1o"
+ ],
+ "warnings": [
+  "kh-20261016-Q6744197: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AMallikarjunKharge.png%7CFile%3AMallikarjun+Kharge+briefing+the+media+after+presenting+the+Interim+Railway+Budget+2014-15+in+New+Delhi+%28cropped%29.jpg%7CFile%3"
  ],
  "published": {
-  "video_id": "i2TSxzou8hc",
-  "url": "https://www.youtube.com/shorts/i2TSxzou8hc",
-  "title": "मार्को रुबियो की मुंबई यात्रा पर राहुल गांधी ने विदेश मंत्रालय को घेरा",
+  "video_id": "Bv-u_UNMs1o",
+  "url": "https://www.youtube.com/shorts/Bv-u_UNMs1o",
+  "title": "बीएसई सेंसेक्स 3% तक उछला, अमेरिकी फेडरल रिजर्व की नीति का असर",
   "privacy": "public",
   "synthetic_declared": true
  }
