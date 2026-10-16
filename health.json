@@ -1,13 +1,17 @@
 {
- "at": "2026-10-16T16:38:23+00:00",
+ "at": "2026-10-16T17:22:13+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 29 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'region:world': {'n': 16, 'lift': 0.811, 'typical_views_24h': 39}, 'region:india': {'n': 9, 'lift': 1.141, 'typical_views_24h': 62}}",
-  "watch: 2 candidates from 10 trending",
-  "outlets: 1471 headlines from 31 feeds (19 owners), 20 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 3 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q3520703, kh-20261016-Q124; dropped: explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Dipke's CP Tiranga' / Delhi Tiranga March: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 7 candidates from 15 trending",
+  "outlets: 1468 headlines from 31 feeds (19 owners), 22 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q124, kh-20261016-Q3520703, kh-20261016-Q54861296; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261016-Q54861296: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 125 h old and no longer trending live",
+  "drop wk-Q3205897: 197 h old and no longer trending live",
   "hold kh-20261016-Q124: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
   "hold kh-20261016-Q3520703-p2: ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
   "nothing eligible to publish"
