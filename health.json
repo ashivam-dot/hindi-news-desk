@@ -1,19 +1,21 @@
 {
- "at": "2026-10-16T12:10:19+00:00",
+ "at": "2026-10-16T13:11:01+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 3 candidates from 11 trending",
-  "outlets: 1460 headlines from 31 feeds (19 owners), 22 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
-  "explainers: 4 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q796994, kh-20261016-Q7040049; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "skip kh-20261016-Q312781: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.959, 0.959, 0.705, 0.943, 0.922, 0.95, 0.951, 0.973], 'wpm': 148.3, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': [0.939, 0.949, 0.326, 0.138, 0.922, 0.967, 0.902, 0.973], 'wpm': 160.1, 'clean': Tru",
-  "published kh-20261016-Q7040049: https://www.youtube.com/shorts/7ohvhHjAWZU"
+  "learn: 29 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'region:world': {'n': 16, 'lift': 0.811, 'typical_views_24h': 39}, 'region:india': {'n': 9, 'lift': 1.141, 'typical_views_24h': 62}}",
+  "watch: 4 candidates from 12 trending",
+  "outlets: 1476 headlines from 31 feeds (19 owners), 20 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
+  "explainers: 3 kh- stories (on): kh-20261016-Q139857349, kh-20261016-Q10218, kh-20261016-Q796994; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop wk-Q5300674: 121 h old and no longer trending live",
+  "drop wk-Q3205897: 193 h old and no longer trending live",
+  "published kh-20261016-Q10218: https://www.youtube.com/shorts/i2TSxzou8hc"
  ],
  "published": {
-  "video_id": "7ohvhHjAWZU",
-  "url": "https://www.youtube.com/shorts/7ohvhHjAWZU",
-  "title": "निर्मला सीतारमन बोलीं, जल्द पूरा हो भारत-अमेरिका व्यापार समझौता",
+  "video_id": "i2TSxzou8hc",
+  "url": "https://www.youtube.com/shorts/i2TSxzou8hc",
+  "title": "मार्को रुबियो की मुंबई यात्रा पर राहुल गांधी ने विदेश मंत्रालय को घेरा",
   "privacy": "public",
   "synthetic_declared": true
  }
