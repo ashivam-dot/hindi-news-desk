@@ -1,17 +1,26 @@
 {
- "at": "2026-10-16T05:36:57+00:00",
+ "at": "2026-10-16T06:09:20+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 16 trending",
-  "outlets: 1344 headlines from 31 feeds (19 owners), 16 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q317521, kh-20261016-Q1058; dropped: explainer Delhi Gymkhana Club: fewer than 3 owners' headlines name it and the story; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre",
+  "learn: 25 scored Shorts, lifts {'region:world': {'n': 14, 'lift': 0.775, 'typical_views_24h': 35}, 'region:india': {'n': 7, 'lift': 1.188, 'typical_views_24h': 64}}",
+  "watch: 6 candidates from 14 trending",
+  "outlets: 1347 headlines from 31 feeds (19 owners), 17 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q3520703, kh-20261016-Q7418472, kh-20261016-Q3633485; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer CJP Tiranga / Connaught: no Wikipedia article that can be its centre; explainer Delhi Gymkhana Club: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261016-Q317521: last Short went out 0.3 h ago",
-  "hold wk-Q141745391: last Short went out 0.3 h ago",
-  "hold kh-20261016-Q139857349: last Short went out 0.3 h ago",
-  "hold kh-20261016-Q7199798: last Short went out 0.3 h ago",
-  "drop kh-20261016-Q22278983: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 114 h old and no longer trending live"
- ]
+  "drop wk-Q5300674: 114 h old and no longer trending live",
+  "drop wk-Q3205897: 186 h old and no longer trending live",
+  "skip wk-Q141745391: gate: only 0 usable photos of 2026 Silver Rail Elementary School shooting on Wikimedia Commons (want 3)",
+  "published kh-20261016-Q317521: https://www.youtube.com/shorts/QT1s3ANaodI"
+ ],
+ "warnings": [
+  "kh-20261016-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
+ ],
+ "published": {
+  "video_id": "QT1s3ANaodI",
+  "url": "https://www.youtube.com/shorts/QT1s3ANaodI",
+  "title": "रिलायंस ने अक्टूबर 2026 में एलन मस्क के आरोपों पर दिया जवाब",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
