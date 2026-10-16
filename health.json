@@ -1,20 +1,18 @@
 {
- "at": "2026-10-15T23:47:11+00:00",
+ "at": "2026-10-16T00:08:09+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 19 scored Shorts, lifts {'region:world': {'n': 9, 'lift': 0.812, 'typical_views_24h': 43}, 'region:india': {'n': 6, 'lift': 1.075, 'typical_views_24h': 66}}",
-  "watch: 8 candidates from 18 trending",
-  "outlets: 1369 headlines from 31 feeds (19 owners), 22 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139881668, kh-20261016-Q139857349, kh-20261016-Q3633485; dropped: explainer Place' Delhi HC: fewer than 3 owners' headlines name it and the story; explainer White House: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q139998119-2026w42: Orbitwire published (wk-Q139998119-2026w42), not high-profile enough to tell again",
+  "watch: 9 candidates from 18 trending",
+  "outlets: 1358 headlines from 30 feeds (18 owners), 17 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261015-oregon-attack",
+  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q3633485, kh-20261016-Q7199798; dropped: explainer White House: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1438992: Orbitwire published (wk-Q1438992), not high-profile enough to tell again",
-  "trend radar errors: [\"gdacs: HTTPSConnectionPool(host='www.gdacs.org', port=443): Max retries exceeded with url: /xml/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gdacs.org', port=443) at 0x7fef62b7702\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261016-Q139857349: outside 07:00-24:00 IST",
+  "hold wp-2026_Silver_Rail_Elementary_School_shooting: outside 07:00-24:00 IST",
+  "hold kh-20261016-Q2341950: outside 07:00-24:00 IST",
   "hold kh-20261016-Q7199798: outside 07:00-24:00 IST",
   "hold kh-20261016-Q3633485: outside 07:00-24:00 IST",
-  "drop kh-20261016-Q139881668: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "hold kh-20261016-Q2855502: outside 07:00-24:00 IST",
-  "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "hold nw-20261015-oregon-attack: outside 07:00-24:00 IST"
  ]
 }
