@@ -1,13 +1,14 @@
 {
- "at": "2026-10-16T15:18:07+00:00",
+ "at": "2026-10-16T15:56:55+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 1 candidates from 8 trending",
-  "outlets: 1472 headlines from 31 feeds (19 owners), 29 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 2 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q3520703; dropped: explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Nirmala Sitharaman: fewer than 3 owners' headlines name it and the story; explainer Dipke's CP Tiranga' / Delhi Tiranga March: no Wikipedia article that can be its centre",
+  "watch: 2 candidates from 10 trending",
+  "outlets: 1466 headlines from 31 feeds (19 owners), 18 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 2 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q3520703; dropped: explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Musk's Starlink: fewer than 3 owners' headlines name it and the story; explainer Nirmala Sitharaman: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "skip kh-20261016-Q139881668: gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
+  "skip wk-Q96681757: gate: Wikidata lacks an exact birth or death date",
   "nothing eligible to publish"
  ]
 }
