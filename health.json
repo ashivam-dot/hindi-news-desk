@@ -1,28 +1,19 @@
 {
- "at": "2026-10-16T03:09:15+00:00",
+ "at": "2026-10-16T03:42:28+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 21 scored Shorts, lifts {'region:world': {'n': 10, 'lift': 0.825, 'typical_views_24h': 44}, 'region:india': {'n': 7, 'lift': 1.065, 'typical_views_24h': 64}}",
-  "watch: 7 candidates from 13 trending",
-  "outlets: 1313 headlines from 30 feeds (18 owners), 16 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q1058, kh-20261016-Q7199798",
+  "watch: 5 candidates from 13 trending",
+  "outlets: 1313 headlines from 31 feeds (19 owners), 14 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261016-Q139857349, kh-20261016-Q312781, kh-20261016-Q7199798, kh-20261016-Q1058; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261016-Q22278983: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 111 h old and no longer trending live",
-  "drop wk-Q3205897: 183 h old and no longer trending live",
-  "skip kh-20261016-Q139857349: gate: orbitwire: the title must show the 'भारत से कनेक्शन' angle",
-  "wait wk-Q141745391: gate: the article is under 6 hours old; facts may still move (ready in 0.6 h)",
-  "published kh-20261016-Q7418472: https://www.youtube.com/shorts/c0J1fo00-ds"
+  "drop kh-20261016-Q139857349: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 112 h old and no longer trending live",
+  "drop wk-Q3205897: 184 h old and no longer trending live",
+  "wait wk-Q141745391: gate: the article is under 6 hours old; facts may still move (ready in 0.1 h)",
+  "nothing eligible to publish"
  ],
  "warnings": [
   "kh-20261016-Q7199798: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+i"
- ],
- "published": {
-  "video_id": "c0J1fo00-ds",
-  "url": "https://www.youtube.com/shorts/c0J1fo00-ds",
-  "title": "सुप्रीम कोर्ट में संजय राउत पर अवमानना याचिका, क्यों?",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
