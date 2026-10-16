@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-16T16:38:23+00:00. Scored Shorts (views at 24 h): 29. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-16T20:02:30+00:00. Scored Shorts (views at 24 h): 29. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 51 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
@@ -9,19 +9,19 @@ Baseline: a typical Short has 51 views at 24 h.
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| kh-20261016-Q796994 | 2026-10-16T14:14 | economy | india | 7 |  |
-| kh-20261016-Q10218 | 2026-10-16T13:22 | news | india | 82 |  |
-| kh-20261016-Q7040049 | 2026-10-16T12:33 | economy | india | 10 |  |
-| kh-20261016-Q478214 | 2026-10-16T11:08 | news | world | 30 |  |
+| kh-20261016-Q796994 | 2026-10-16T14:14 | economy | india | 10 |  |
+| kh-20261016-Q10218 | 2026-10-16T13:22 | news | india | 231 |  |
+| kh-20261016-Q7040049 | 2026-10-16T12:33 | economy | india | 15 |  |
+| kh-20261016-Q478214 | 2026-10-16T11:08 | news | world | 39 |  |
 | kh-20261016-Q213380 | 2026-10-16T09:16 | court | india | 0 |  |
-| kh-20261016-Q317521 | 2026-10-16T06:24 | news | world | 56 |  |
-| kh-20261016-Q3520703 | 2026-10-16T05:22 | news | world | 111 |  |
-| kh-20261016-Q7418472 | 2026-10-16T03:21 | court | india | 143 |  |
-| kh-20261016-Q1058 | 2026-10-16T02:49 | diplomacy | india | 80 |  |
-| kh-20261016-Q2341950 | 2026-10-16T02:11 | news | india | 87 |  |
+| kh-20261016-Q317521 | 2026-10-16T06:24 | news | world | 58 |  |
+| kh-20261016-Q3520703 | 2026-10-16T05:22 | news | world | 129 |  |
+| kh-20261016-Q7418472 | 2026-10-16T03:21 | court | india | 160 |  |
+| kh-20261016-Q1058 | 2026-10-16T02:49 | diplomacy | india | 81 |  |
+| kh-20261016-Q2341950 | 2026-10-16T02:11 | news | india | 93 |  |
 | kh-20261015-Q312781 | 2026-10-15T10:51 | entertainment | world | 311 | 288 |
 | kh-20261015-Q200667 | 2026-10-15T10:09 | aviation | india | 45 | 44 |
-| kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 79 | 70 |
+| kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 84 | 70 |
 | kh-20261015-Q7804 | 2026-10-15T08:09 | economy | world | 27 | 27 |
 | nw-20261014-delhi-protest | 2026-10-15T05:49 | protest | world | 14 | 14 |
 | kh-20261015-Q51993 | 2026-10-15T05:20 | news | world | 25 | 23 |
