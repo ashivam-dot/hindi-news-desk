@@ -1,16 +1,17 @@
 {
- "at": "2026-10-16T03:42:28+00:00",
+ "at": "2026-10-16T04:17:54+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 13 trending",
-  "outlets: 1313 headlines from 31 feeds (19 owners), 14 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261016-Q139857349, kh-20261016-Q312781, kh-20261016-Q7199798, kh-20261016-Q1058; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre",
+  "watch: 6 candidates from 14 trending",
+  "outlets: 1317 headlines from 31 feeds (19 owners), 11 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261016-Q312781, kh-20261016-Q139857349, kh-20261016-Q317521, kh-20261016-Q1058; dropped: explainer Venezuela's Nicolas Maduro / Venezuela's Nicolas Maduro: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer Pakistan Rajasthan BJP / Pakistan Rajasthan BJP: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261016-Q139857349: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 112 h old and no longer trending live",
   "drop wk-Q3205897: 184 h old and no longer trending live",
-  "wait wk-Q141745391: gate: the article is under 6 hours old; facts may still move (ready in 0.1 h)",
+  "skip wk-Q141745391: gate: only 0 usable photos of 2026 Silver Rail Elementary School shooting on Wikimedia Commons (want 3)",
+  "skip kh-20261016-Q317521: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, 0.855, 0.986, 0.953, 1.0, 0.955, 0.949, 0.973], 'wpm': 142.0, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, 0.87, 1.0, 0.942, 0.986, 0.944, 0.974, 0.946], 'wpm': 153.0, 'clean': True",
   "nothing eligible to publish"
  ],
  "warnings": [

@@ -225,8 +225,18 @@
   "at": "2026-10-16T03:14:43+00:00"
  },
  "kh-20261016-Q7199798": {
-  "count": 3,
+  "count": 4,
   "reason": "HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APiyush+Goyal+%28cropped%29.jpg%7CFile%3APiyush+Goyal+crop.jpg%7CFile%3ANarendra+Modi+launching+the+online+Pre-Registration+to+avail+LED+bulbs+for+Household%2C+in+New+Delhi.+The+Lt.+G",
-  "at": "2026-10-16T03:46:02+00:00"
+  "at": "2026-10-16T04:28:52+00:00"
+ },
+ "wk-Q141745391": {
+  "count": 1,
+  "reason": "gate: only 0 usable photos of 2026 Silver Rail Elementary School shooting on Wikimedia Commons (want 3)",
+  "at": "2026-10-16T04:22:06+00:00"
+ },
+ "kh-20261016-Q317521": {
+  "count": 1,
+  "reason": "TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, 0.855, 0.986, 0.953, 1.0, 0.955, 0.949, 0.973], 'wpm': 142.0, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.68, ",
+  "at": "2026-10-16T04:27:56+00:00"
  }
 }
