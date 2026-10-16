@@ -273,5 +273,15 @@
   "count": 1,
   "reason": "HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AMallikarjunKharge.png%7CFile%3AMallikarjun+Kharge+briefing+the+media+after+presenting+the+Interim+Railway+Budget+2014-15+in+New+Delhi+%28cropped%29.jpg%7CFile%3AThe+Prime+Minister%2C",
   "at": "2026-10-16T14:03:44+00:00"
+ },
+ "kh-20261016-Q124": {
+  "count": 1,
+  "reason": "ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
+  "at": "2026-10-16T17:09:46+00:00"
+ },
+ "kh-20261016-Q3520703-p2": {
+  "count": 1,
+  "reason": "ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
+  "at": "2026-10-16T17:19:50+00:00"
  }
 }
