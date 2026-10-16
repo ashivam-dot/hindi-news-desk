@@ -1,18 +1,21 @@
 {
- "at": "2026-10-16T08:11:35+00:00",
+ "at": "2026-10-16T09:00:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 13 trending",
-  "outlets: 1398 headlines from 31 feeds (19 owners), 15 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261016-Q139881668, kh-20261016-Q139857349, kh-20261016-Q3520703, kh-20261016-Q58451224; dropped: explainer 'Rolls-Royce welcomes U.K. trade deal, but India price impact': no name to tell it by; explainer Sensex: fewer than 3 owners' headlines name it and the story; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name",
+  "watch: 8 candidates from 16 trending",
+  "outlets: 1412 headlines from 31 feeds (19 owners), 16 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261016-Q124, kh-20261016-Q312781, kh-20261016-Q139881668, kh-20261016-Q139857349; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q5300674: 116 h old and no longer trending live",
-  "drop wk-Q3205897: 188 h old and no longer trending live",
-  "skip kh-20261016-Q139881668: gate: only 1 usable photos of Abhijeet Dipke on Wikimedia Commons (want 2)",
-  "skip wk-Q141745391: gate: only 0 usable photos of 2026 Silver Rail Elementary School shooting on Wikimedia Commons (want 3)",
-  "skip kh-20261016-Q139857349: gate: no draft passed the fact checks: unsupported: The statement that over 6,000 police personnel and 220 CAPF companies were deployed ('रिपोर्टों के मुताबिक 6,000 से अधिक पुलिसकर्मी और 220 CAPF कंपनियां तैनात की गई हैं') is supported by only one report (India Today).; unsupported: The statement that barricades were placed at several locations ('अधिकारियों के अनुसार क्षेत्र में निषेधाज्ञा लागू करते हुए कई जगहों पर बैरिकेड लगाए गए हैं'",
-  "skip kh-20261016-Q58451224: gate: only 0 usable photos of Madan Rathore on Wikimedia Commons (want 2)",
-  "nothing eligible to publish"
- ]
+  "drop wk-Q5300674: 117 h old and no longer trending live",
+  "drop wk-Q3205897: 189 h old and no longer trending live",
+  "published kh-20261016-Q213380: https://www.youtube.com/shorts/DlsxFnGyeWk"
+ ],
+ "published": {
+  "video_id": "DlsxFnGyeWk",
+  "url": "https://www.youtube.com/shorts/DlsxFnGyeWk",
+  "title": "सॉलिसिटर जनरल तुषार मेहता ने कहा, 2 सप्ताह में आएंगे किराया नियम",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
