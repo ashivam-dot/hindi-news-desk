@@ -25,6 +25,16 @@ def test_a_world_explainer_needs_the_hindi_lists():
     assert plan.unpopular(court, NOW) is None
 
 
+def test_a_new_storys_photos_show_its_scene_not_the_citys_landmarks():
+    heads = ["19 killed, at least 35 injured in stampede at Kolkata Durga Puja pandal",
+             "At least 17 dead in stampede-like situation at Kolkata's Chorbagan Durga Puja pandal; CM at hospital",
+             "Kolkata stampede: 10 detained, including Durga Puja organisers; 19 dead",
+             "'People fainted, taken on bikes': Eyewitness on Kolkata pandal stampede",
+             "Kolkata pandal stampede: Heavy rush amid rain led to deadly incident - top developments"]
+    assert outlets.scene_words(heads, "Kolkata") == ["pandal", "durga", "puja"]
+    assert outlets.scene_words(["Fire in Delhi factory", "Delhi blaze kills 4"], "Delhi") == []
+
+
 def test_an_explainers_headline_count_never_makes_it_famous():
     unlisted = explainer(region="india", fame=500_000, top={}, top_score=0)
     assert "not in Google News India" in plan.unpopular(unlisted, NOW)

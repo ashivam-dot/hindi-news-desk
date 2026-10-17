@@ -205,6 +205,16 @@ def test_the_headline_editor_picks_the_first_simple_title(tmp_path):
     assert out["title"] == "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"
 
 
+def test_a_title_gives_a_cause_only_with_who_gives_it():
+    d, args = draft(), (SUBJECT, SOURCE_EN, "death", False)
+    assert any("cause" in p for p in writer.title_problems("रमेश प्रसाद वर्मा के कार्यक्रम में भगदड़, आयोजक बने वजह",
+                                                           d, *args))
+    assert not any("cause" in p for p in writer.title_problems(
+        "रमेश प्रसाद वर्मा के कार्यक्रम में भगदड़, पुलिस के मुताबिक आयोजक बने वजह", d, *args))
+    assert not any("cause" in p for p in writer.title_problems("बारिश के कारण रमेश प्रसाद वर्मा का कार्यक्रम रद्द",
+                                                               d, *args))
+
+
 def test_titles_with_hard_words_new_numbers_or_bare_questions_are_refused():
     d, args = draft(), (SUBJECT, SOURCE_EN, "death", False)
     assert writer.title_problems("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, *args) == []

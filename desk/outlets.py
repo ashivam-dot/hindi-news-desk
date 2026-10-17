@@ -447,6 +447,25 @@ def headline_keys(title: str) -> tuple[set[str], set[str], str | None]:
     return keys, names_, lead
 
 
+# Words every report of a loss uses, which name no scene a photo could show.
+TOLL_WORDS = set("""dead death deaths die died dying kill killed killing injured injury injuries injure hurt least
+people person victim victims toll body bodies hospital rescue rescued missing feared fear official officials eyewitness
+detained arrested probe top development developments incident deadly tragic tragedy heavy rush situation""".split())
+
+
+def scene_words(headlines: list[str], name: str, limit: int = 3) -> list[str]:
+    """The words at least half of a story's headlines share besides its place, kind and toll: what a photo of the
+    scene would show ("19 killed in stampede at Kolkata Durga Puja pandal" ... -> ['pandal', 'durga', 'puja'])."""
+    own = {_stem(w) for w in re.findall(r"[A-Za-z]+", name)}
+    counts: dict[str, int] = {}
+    for h in headlines:
+        for k in headline_keys(h)[0] - own:
+            if k not in GENERIC and k not in TOLL_WORDS and not any(ch.isdigit() for ch in k):
+                counts[k] = counts.get(k, 0) + 1
+    shared = [k for k, n in counts.items() if n * 2 >= len(headlines) and n >= 2]
+    return sorted(shared, key=lambda k: (-counts[k], k))[:limit]
+
+
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:40]
 

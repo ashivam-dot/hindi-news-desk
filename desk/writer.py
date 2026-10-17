@@ -213,6 +213,10 @@ HARD_WORDS = {
 TITLE_MAX = 70
 WHY_HOOK = re.compile(r"^[^?]{12,}[,:।\-–]\s*[^,:?]{0,20}(क्यों|वजह|कारण)[^,:?]{0,20}\?$")
 CLICKBAIT = re.compile(r"सनसनीखेज|चौंकाने|खौफनाक|ख़ौफ़नाक|ब्रेकिंग|बड़ी खबर|बड़ी ख़बर|जानिए|जानिये|जानें|देखिए|!")
+# A title may give a cause only with whoever gives it: "आयोजकों की घोषणा बनी वजह" (Kolkata dry run, 2026-10-18)
+# stated as fact what the script attributed to the chief minister.
+STATED_CAUSE = re.compile(r"(बनी|बना|बने|थी|था|है) (वजह|कारण)|(वजह|कारण) (बनी|बना|बने)")
+ATTRIBUTED = re.compile(r"मुताबिक|अनुसार|बोले|बोलीं|बोला|ने कहा|का कहना|का दावा|का आरोप|ने बताया|ने बताई")
 
 
 def hard_words(text: str) -> list[str]:
@@ -497,6 +501,9 @@ def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind:
     if not named:
         problems.append("it names no one and nothing from the story")
     problems += gate.decorum(title, "incident" if kind in ("incident", "protest") else kind, agreed_toll)
+    if STATED_CAUSE.search(title) and not ATTRIBUTED.search(title) and "?" not in title:
+        problems.append("it states a cause as fact: say who gives it (\"... के मुताबिक\", \"... बोले\") or leave the "
+                        "cause out")
     if any(hindi.norm(title) == hindi.norm(e) for e in earlier or [] if e):
         problems.append("an earlier part already has this title")
     return problems
@@ -642,9 +649,12 @@ def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
                                MIN_PHOTOS - len(kept)))[:8]
 
 
-def fill_photos(context_qids: list[str], folder: Path, exclude: set[str], need: int = MIN_PHOTOS) -> list[dict]:
+def fill_photos(context_qids: list[str], folder: Path, exclude: set[str], need: int = MIN_PHOTOS,
+                scene: tuple[str, list[str]] | None = None) -> list[dict]:
     """Photos of the places and things a story links to that feature no face: Commons (each item's main image and
-    files from its article naming it), then, while fewer than `need`, Openverse photos naming the item."""
+    files from its article naming it), then, while fewer than `need`, Openverse photos naming the item. scene (the
+    place and the scene words its headlines share) puts Commons photos of that kind of scene first, so a stampede at
+    a puja pandal opens on a pandal, not on the city's landmarks."""
     import cv2
 
     def faceless(found: list, sub: str) -> list[dict]:
@@ -657,7 +667,8 @@ def fill_photos(context_qids: list[str], folder: Path, exclude: set[str], need: 
             out.append(r)
         return out
 
-    kept = faceless(media.context(context_qids, exclude=exclude), "context")
+    kept = faceless(media.scene(*scene, exclude=exclude), "scene") if scene and scene[1] else []
+    kept += faceless(media.context(context_qids, exclude=exclude | {r["file"] for r in kept}), "context")
     if len(kept) < need:
         try:
             found = media.openverse_for(context_qids, exclude=exclude | {r["file"] for r in kept})
@@ -1062,7 +1073,9 @@ def build_report(cand: dict) -> Short:
     name_hi = wiki.label(place, "hi") if place else None
     context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
     ov, exclude = _shared(cand, "", {}, None, context)
-    photos = fill_photos(context, work / "photos", exclude)[:8] if context else []
+    photos = fill_photos(context, work / "photos", exclude,
+                         scene=(name, outlets.scene_words(cand.get("headlines") or [cand["title"]], name)))[:8] \
+        if context else []
     if len(photos) < REPORT_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} (want {REPORT_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))

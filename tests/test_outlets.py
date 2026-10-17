@@ -324,7 +324,7 @@ def test_an_nw_story_is_told_only_from_two_owners_reporting(monkeypatch, tmp_pat
     monkeypatch.setattr(writer.wiki, "hindi_names", lambda ent: {"Chamoli": "चमोली"})
     photos = [{"file": f"File:{i}.jpg", "description": "Chamoli", "credit": "फ़ोटो: A / CC BY 2.0 / Openverse (Flickr)",
                "page": f"https://flickr/{i}", "host": "Openverse (Flickr)", "license": "CC BY 2.0"} for i in range(3)]
-    monkeypatch.setattr(writer, "fill_photos", lambda qids, folder, exclude, need=3: photos)
+    monkeypatch.setattr(writer, "fill_photos", lambda qids, folder, exclude, need=3, scene=None: photos)
     seen = {}
 
     def write(kind, subject, pronoun, facts, source_en, source_hi, photos, hi_names, **kw):

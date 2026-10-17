@@ -174,6 +174,19 @@ def context(qids: list[str], limit: int = 6, exclude: set[str] | None = None) ->
     return _usable(ordered, set(), limit, exclude=exclude)
 
 
+def scene(place: str, words: list[str], limit: int = 6, exclude: set[str] | None = None) -> list[Photo]:
+    """Commons photos of the kind of scene a story happened at ("Kolkata Durga Puja pandal"): files naming the
+    place and the most-reported scene word, for a story so new that Commons has nothing of the event itself."""
+    if not words:
+        return []
+    try:
+        files = _search_files(" ".join([place] + words))
+    except Exception:
+        return []
+    keys = _keys(place) | {words[0]}
+    return _usable([(f, "search") for f in files], keys, limit, exclude=exclude)
+
+
 OPENVERSE = "https://api.openverse.org/v1/images/"
 # Openverse licence codes a Short may use: CC0, CC BY and CC BY-SA. Non-commercial, no-derivatives and the
 # public-domain mark (which asserts no licence) never pass.
