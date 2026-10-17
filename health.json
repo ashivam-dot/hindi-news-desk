@@ -1,17 +1,18 @@
 {
- "at": "2026-10-17T22:00:41+00:00",
+ "at": "2026-10-17T22:32:48+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 39 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.75, 'typical_views_24h': 26}, 'category:news': {'n': 8, 'lift': 1.208, 'typical_views_24h': 75}, 'region:world': {'n': 19, 'lift': 0.814, 'typical_views_24h': 43}, 'region:india': {'n': 16, 'lift': 1.139, 'typical_views_24h': 66}}",
   "watch: 7 candidates from 14 trending",
-  "outlets: 1345 headlines from 31 feeds (19 owners), 17 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
-  "explainers: 4 kh- stories (on): kh-20261018-Q10218, kh-20261018-Q312781, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer October / Traffic Update CR: no Wikipedia article that can be its centre; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Dubai: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1338 headlines from 31 feeds (19 owners), 14 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
+  "explainers: 4 kh- stories (on): kh-20261018-Q312781, kh-20261018-Q47035074, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer October / Delhi Traffic Update: no Wikipedia article that can be its centre; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Dubai: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261018-Q10218: outside 07:00-24:00 IST",
   "hold nw-20261017-kolkata-disaster: outside 07:00-24:00 IST",
   "hold kh-20261018-Q312781: outside 07:00-24:00 IST",
+  "drop kh-20261018-Q47035074: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261018-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 154 h old and no longer trending live"
+  "drop wk-Q5300674: 155 h old and no longer trending live"
  ]
 }
