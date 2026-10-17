@@ -1,5 +1,5 @@
 {
- "at": "2026-10-17T04:09:49+00:00",
+ "at": "2026-10-17T04:54:19+00:00",
  "trending": [
   {
    "qid": null,
@@ -8,20 +8,19 @@
    "views": 10097,
    "traffic": 0,
    "news": 400000,
-   "news_at": "2026-10-17T03:07:35+00:00",
+   "news_at": "2026-10-17T02:45:57+00:00",
    "headlines": [
     "Iran Is Giving Houthis Targeting and Intelligence for Attacks on Saudi Arabia",
-    "Why Does Saudi Arabia Struggle to Stop Houthi Attacks?",
-    "India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
+    "The Truth About the Houthis – and Why Saudi Arabia Is Struggling to Defend Itself Against Them",
     "Trump asks Saudi to take Israel's 'help' vs Houthis",
-    "How slipper-clad Houthis hit Saudi Arabia with Claude AI and China's missile parts"
+    "How slipper-clad Houthis hit Saudi Arabia with Claude AI and China's missile parts",
+    "Iran Denies Saudi Accusation Of Involvement In Houthi Attacks"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "US",
     "world"
    ],
@@ -29,9 +28,8 @@
    "via": [
     "wikipedia-top-2026-10-15",
     "google-news:Iran Is Giving Houthis Targeting and Intelligence for Attacks on Saudi Arabia",
-    "google-news:Why Does Saudi Arabia Struggle to Stop Houthi Attacks?",
-    "google-news:India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
-    "outlet:The Hindu Group",
+    "google-news:The Truth About the Houthis – and Why Saudi Arabia Is Struggling to Defend Itself Against Them",
+    "google-news:Trump asks Saudi to take Israel's 'help' vs Houthis",
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
@@ -40,7 +38,6 @@
     "outlet:Guardian Media Group"
    ],
    "owners": [
-    "The Hindu Group",
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
@@ -49,16 +46,6 @@
     "Guardian Media Group"
    ],
    "reports": [
-    {
-     "title": "India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
-     "url": "https://www.thehindu.com/news/national/india-advises-nationals-in-saudi-arabia-to-remain-vigilant-amid-escalating-regional-tensions/article71563038.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-17T03:07:35+00:00"
-    },
     {
      "title": "Trump asks Saudi to take Israel's 'help' vs Houthis",
      "url": "https://economictimes.indiatimes.com/news/defence/trump-says-saudi-arabia-should-accept-israels-helpful-offer-against-houthis/articleshow/135006004.cms",
@@ -126,9 +113,112 @@
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Missiles hit Aden airport as Saudi-led coalition intercepts missile headed for Yanbu"
+   ]
+  },
+  {
+   "id": "kh-20261017-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Trump denies limiting Ukraine access to Starlink network",
+   "story_keys": [
+    "access",
+    "denie",
+    "trump"
+   ],
+   "date": "2026-10-16",
+   "news_at": "2026-10-17T02:45:45+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "BBC",
+    "NDTV",
+    "TV9 Network",
+    "India Today Group",
+    "Amar Ujala"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump denies limiting Ukraine access to Starlink network",
+    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+    "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
+    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch"
+   ],
+   "hindi_headlines": [
+    "भारत में हाई-स्पीड नेट की पूरी तैयारी, रिलायंस-मस्क विवाद में स्टारलिंक का नया बयान",
+    "'भारत में 5 साल से बना रहे नेटवर्क...', स्टारलिंक का रिलायंस को जवाब",
+    "अंबानी-मस्क टकराव: रिलायंस की दो-टूक से तिलमिलाई स्टारलिंक, जवाब में सुरक्षित-हाई-स्पीड इंटरनेट पर क्या कहा?"
+   ],
+   "hindi_news": 3,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "स्टारलिंक",
+   "reports": [
+    {
+     "title": "Trump denies limiting Ukraine access to Starlink network",
+     "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-16T19:33:48+00:00"
+    },
+    {
+     "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+     "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-16T18:01:19+00:00"
+    },
+    {
+     "title": "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
+     "url": "https://www.ndtv.com/world-news/neither-me-nor-elon-musk-trump-denies-role-in-ukraine-losing-starlink-access-12197657#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T02:45:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "outlet:NDTV",
+    "outlet:TV9 Network",
+    "outlet:India Today Group",
+    "outlet:Amar Ujala",
+    "google-news:Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "google-news:Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch",
+    "Ambani Taps Massive Reliance Workforce to Boost Jio’s Record IPO"
+   ]
   },
   {
    "id": "kh-20261017-Q141681561",
@@ -159,10 +249,11 @@
     "Al Jazeera Media Network",
     "Deutsche Welle",
     "BBC",
-    "NDTV"
+    "NDTV",
+    "India Today Group"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -231,6 +322,16 @@
      "at": "2026-10-17T02:39:32+00:00"
     },
     {
+     "title": "If I were you, I'd reconsider this job, Trump told Zacharia before she was fired",
+     "url": "https://www.indiatoday.in/world/us-news/story/katie-do-you-need-this-trump-told-white-house-press-secretary-before-she-was-fired-3019364-2026-10-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T02:13:47+00:00"
+    },
+    {
      "title": "14-Minute Presser, Backlash Over Lawyer Tag: The Unmaking Of New White House Press Chief Katie Zacharia",
      "url": "https://www.ndtv.com/world-news/14-minute-presser-backlash-over-lawyer-tag-the-unmaking-of-new-white-house-press-chief-katie-zacharia-12197536#publisher=newsstand",
      "outlet": "NDTV",
@@ -249,16 +350,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-16T18:24:52+00:00"
-    },
-    {
-     "title": "Katie Zacharia ‘let go’ as White House Press Secretary after Trump urges her 'to reconsider job' amid lawyer claims row",
-     "url": "https://www.livemint.com/news/us-news/trump-says-he-urged-new-press-secretary-katie-zacharia-to-reconsider-job-amid-lawyer-claims-row-11792173526337.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-16T18:06:34+00:00"
     }
    ],
    "via": [
@@ -269,103 +360,17 @@
     "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:NDTV",
-    "google-news:Trump Fires Press Secretary Katie Zacharia After 5 Days On The Job: Report"
-   ],
-   "top": {
-    "IN": 4
-   },
-   "top_score": 0.85,
-   "top_headlines": [
-    "Trump Fires Press Secretary Katie Zacharia After 5 Days On The Job: Report"
-   ]
-  },
-  {
-   "id": "kh-20261017-Q19867977",
-   "qid": "Q19867977",
-   "title": "Starlink",
-   "name": "Starlink",
-   "phrase": "Starlink",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump denies limiting Ukraine access to Starlink network",
-   "story_keys": [
-    "access",
-    "denie",
-    "trump"
-   ],
-   "date": "2026-10-16",
-   "news_at": "2026-10-17T02:45:45+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "BBC",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump denies limiting Ukraine access to Starlink network",
-    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-    "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
-   ],
-   "hindi_headlines": [
-    "'भारत में 5 साल से बना रहे नेटवर्क...', स्टारलिंक का रिलायंस को जवाब"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "स्टारलिंक",
-   "reports": [
-    {
-     "title": "Trump denies limiting Ukraine access to Starlink network",
-     "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-16T19:33:48+00:00"
-    },
-    {
-     "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-     "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-16T18:01:19+00:00"
-    },
-    {
-     "title": "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-     "url": "https://www.ndtv.com/world-news/neither-me-nor-elon-musk-trump-denies-role-in-ukraine-losing-starlink-access-12197657#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-17T02:45:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "google-news:White House Press Secretary Katie Zacharia ‘let go’ just days into role"
    ],
    "top": {
-    "IN": 11
+    "IN": 4,
+    "IN-nation": 9
    },
-   "top_score": 0.5,
+   "top_score": 1.03,
    "top_headlines": [
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "White House Press Secretary Katie Zacharia ‘let go’ just days into role",
+    "US lawmakers write to Trump's secretary of state over Delhi detentions as India rejects ‘interference’"
    ]
   },
   {
@@ -383,21 +388,23 @@
     "admitted",
     "chest",
     "condition",
+    "hospitalised",
     "infection",
     "stable",
     "veteran"
    ],
    "date": "2026-10-16",
-   "news_at": "2026-10-17T01:37:16+00:00",
+   "news_at": "2026-10-17T04:24:04+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18"
+    "Network18",
+    "The Hindu Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -411,9 +418,10 @@
    "hindi_headlines": [
     "98 साल के लालकृष्ण आडवाणी की तबीयत बिगड़ी",
     "लालकृष्ण आडवाणी को दिल्ली के अपोलो अस्पताल में कराया गया भर्ती, सीने में संक्रमण की है शिकायत",
-    "लालकृष्ण आडवाणी दिल्ली के अपोलो अस्पताल में भर्ती, सीने में संक्रमण की शिकायत"
+    "लालकृष्ण आडवाणी दिल्ली के अपोलो अस्पताल में भर्ती, सीने में संक्रमण की शिकायत",
+    "बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत"
    ],
-   "hindi_news": 3,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -421,6 +429,26 @@
    "india_link": true,
    "label_hi": "लालकृष्ण आडवाणी",
    "reports": [
+    {
+     "title": "L.K. Advani hospitalised after chest infection, condition stable",
+     "url": "https://www.thehindu.com/news/national/lk-advani-health-updates-oct-16-2026/article71594161.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:24:04+00:00"
+    },
+    {
+     "title": "BJP veteran LK Advani admitted to Delhi hospital over pulmonary issues",
+     "url": "https://timesofindia.indiatimes.com/india/bjp-veteran-lk-advani-admitted-to-delhi-hospital-over-pulmonary-issues/articleshow/135007243.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:23:32+00:00"
+    },
     {
      "title": "BJP Veteran LK Advani Admitted To Apollo Hospital With Chest Infection",
      "url": "https://www.news18.com/india/bjp-veteran-lk-advani-admitted-to-apollo-hospital-with-chest-infection-10385891.html",
@@ -487,15 +515,107 @@
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 8,
+    "IN-hi": 7,
+    "IN-nation": 3,
+    "IN-hi-nation": 3
    },
-   "top_score": 0.84,
+   "top_score": 1.565,
    "top_headlines": [
+    "बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत",
     "L.K. Advani hospitalised after chest infection, condition stable"
+   ]
+  },
+  {
+   "id": "kh-20261017-Q8022057",
+   "qid": "Q8022057",
+   "title": "Willis Graham Act",
+   "name": "Willis Graham Act",
+   "phrase": "Graham Act",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+   "story_keys": [
+    "mean",
+    "oil",
+    "sanction",
+    "tariff",
+    "trump",
+    "under",
+    "waive"
+   ],
+   "date": "2026-10-16",
+   "news_at": "2026-10-17T04:18:14+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+    "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+    "Trump waives Russia sanctions, restrictions and duties under Graham Act"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+     "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:18:14+00:00"
+    },
+    {
+     "title": "Trump waives Russia sanctions, restrictions and duties under Graham Act",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/trump-waives-russia-sanctions-restrictions-and-duties-under-graham-act-diesel-us-midterms/articleshow/135005808.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T01:25:11+00:00"
+    },
+    {
+     "title": "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+     "url": "https://www.thehindu.com/sci-tech/technology/openai-to-watermark-chatgpt-text-in-eu-under-ai-act-rules/article71551205.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-16T19:19:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Donald Trump waives sanctions, tariffs on purchase of Russian oil and gas"
    ]
   },
   {
@@ -860,92 +980,207 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261017-Q19867977",
-   "qid": "Q19867977",
-   "title": "Starlink",
-   "name": "Starlink",
-   "phrase": "Starlink",
-   "person": false,
+   "id": "kh-20261017-Q141681561-p2",
+   "qid": "Q141681561",
+   "title": "Katie Zacharia",
+   "name": "Katie Zacharia",
+   "phrase": "Katie Zacharia",
+   "person": true,
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Trump denies limiting Ukraine access to Starlink network",
+   "story": "Katie Zacharia ‘let go’ as White House Press Secretary after Trump urges her 'to reconsider job' amid lawyer claims row",
    "story_keys": [
-    "access",
-    "denie",
-    "trump"
+    "fired",
+    "five",
+    "job",
+    "lawyer",
+    "let",
+    "reconsider",
+    "role"
    ],
    "date": "2026-10-16",
-   "news_at": "2026-10-17T02:45:45+00:00",
+   "news_at": "2026-10-17T02:39:32+00:00",
    "owners": [
-    "Guardian Media Group",
+    "France Médias Monde",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "Deutsche Welle",
     "BBC",
     "NDTV",
     "India Today Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Trump denies limiting Ukraine access to Starlink network",
-    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-    "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "Katie Zacharia ‘let go’ as White House Press Secretary after Trump urges her 'to reconsider job' amid lawyer claims row",
+    "Embattled new White House Press Secretary Zacharia 'let go' from her role",
+    "Trump fires Katie Zacharia after just five days as White House press secretary",
+    "White House press secretary Katie Zacharia fired after five days on the job",
+    "White House press secretary Zacharia exiting role after short tenure",
+    "Katie Zacharia leaving her White House role less than five days on the job"
    ],
-   "hindi_headlines": [
-    "'भारत में 5 साल से बना रहे नेटवर्क...', स्टारलिंक का रिलायंस को जवाब"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
-   "label_hi": "स्टारलिंक",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "Trump denies limiting Ukraine access to Starlink network",
-     "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-16T19:33:48+00:00"
-    },
-    {
-     "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-     "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-16T18:01:19+00:00"
-    },
-    {
-     "title": "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-     "url": "https://www.ndtv.com/world-news/neither-me-nor-elon-musk-trump-denies-role-in-ukraine-losing-starlink-access-12197657#publisher=newsstand",
+     "title": "\"Was An Honour To Work For Him\": Trump's Press Chief Katie Zacharia After Being Fired",
+     "url": "https://www.ndtv.com/world-news/katie-zacharia-donald-trumps-white-house-press-secretary-after-being-fired-was-an-honour-to-work-for-him-12197600#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-17T02:45:45+00:00"
+     "at": "2026-10-17T02:39:32+00:00"
+    },
+    {
+     "title": "If I were you, I'd reconsider this job, Trump told Zacharia before she was fired",
+     "url": "https://www.indiatoday.in/world/us-news/story/katie-do-you-need-this-trump-told-white-house-press-secretary-before-she-was-fired-3019364-2026-10-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T02:13:47+00:00"
+    },
+    {
+     "title": "14-Minute Presser, Backlash Over Lawyer Tag: The Unmaking Of New White House Press Chief Katie Zacharia",
+     "url": "https://www.ndtv.com/world-news/14-minute-presser-backlash-over-lawyer-tag-the-unmaking-of-new-white-house-press-chief-katie-zacharia-12197536#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T01:30:12+00:00"
+    },
+    {
+     "title": "Trump fires Katie Zacharia after just five days as White House press secretary",
+     "url": "https://timesofindia.indiatimes.com/world/us/trumps-press-secretary-katie-zacharia-let-go-five-days-into-new-job/articleshow/135001934.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-16T18:24:52+00:00"
     }
    ],
    "via": [
-    "outlet:Guardian Media Group",
+    "outlet:France Médias Monde",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "google-news:White House Press Secretary Katie Zacharia ‘let go’ just days into role"
    ],
    "top": {
-    "IN": 11
+    "IN": 4,
+    "IN-nation": 9
    },
-   "top_score": 0.5,
+   "top_score": 1.03,
    "top_headlines": [
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "White House Press Secretary Katie Zacharia ‘let go’ just days into role",
+    "US lawmakers write to Trump's secretary of state over Delhi detentions as India rejects ‘interference’"
+   ],
+   "part": 2,
+   "earlier": [
+    "वाइट हाउस प्रेस सचिव केटी जैकारिया 5 दिन में हटीं, वजह क्या है?"
+   ]
+  },
+  {
+   "id": "kh-20261017-Q8022057",
+   "qid": "Q8022057",
+   "title": "Willis Graham Act",
+   "name": "Willis Graham Act",
+   "phrase": "Graham Act",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+   "story_keys": [
+    "mean",
+    "oil",
+    "sanction",
+    "tariff",
+    "trump",
+    "under",
+    "waive"
+   ],
+   "date": "2026-10-16",
+   "news_at": "2026-10-17T04:18:14+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+    "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+    "Trump waives Russia sanctions, restrictions and duties under Graham Act"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+     "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:18:14+00:00"
+    },
+    {
+     "title": "Trump waives Russia sanctions, restrictions and duties under Graham Act",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/trump-waives-russia-sanctions-restrictions-and-duties-under-graham-act-diesel-us-midterms/articleshow/135005808.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T01:25:11+00:00"
+    },
+    {
+     "title": "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+     "url": "https://www.thehindu.com/sci-tech/technology/openai-to-watermark-chatgpt-text-in-eu-under-ai-act-rules/article71551205.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-16T19:19:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Donald Trump waives sanctions, tariffs on purchase of Russian oil and gas"
    ]
   },
   {
@@ -1080,20 +1315,19 @@
    "views": 10097,
    "traffic": 0,
    "news": 400000,
-   "news_at": "2026-10-17T03:07:35+00:00",
+   "news_at": "2026-10-17T02:45:57+00:00",
    "headlines": [
     "Iran Is Giving Houthis Targeting and Intelligence for Attacks on Saudi Arabia",
-    "Why Does Saudi Arabia Struggle to Stop Houthi Attacks?",
-    "India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
+    "The Truth About the Houthis – and Why Saudi Arabia Is Struggling to Defend Itself Against Them",
     "Trump asks Saudi to take Israel's 'help' vs Houthis",
-    "How slipper-clad Houthis hit Saudi Arabia with Claude AI and China's missile parts"
+    "How slipper-clad Houthis hit Saudi Arabia with Claude AI and China's missile parts",
+    "Iran Denies Saudi Accusation Of Involvement In Houthi Attacks"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "US",
     "world"
    ],
@@ -1101,9 +1335,8 @@
    "via": [
     "wikipedia-top-2026-10-15",
     "google-news:Iran Is Giving Houthis Targeting and Intelligence for Attacks on Saudi Arabia",
-    "google-news:Why Does Saudi Arabia Struggle to Stop Houthi Attacks?",
-    "google-news:India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
-    "outlet:The Hindu Group",
+    "google-news:The Truth About the Houthis – and Why Saudi Arabia Is Struggling to Defend Itself Against Them",
+    "google-news:Trump asks Saudi to take Israel's 'help' vs Houthis",
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
@@ -1112,7 +1345,6 @@
     "outlet:Guardian Media Group"
    ],
    "owners": [
-    "The Hindu Group",
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
@@ -1121,16 +1353,6 @@
     "Guardian Media Group"
    ],
    "reports": [
-    {
-     "title": "India advises nationals in Saudi Arabia to remain vigilant amid escalating regional tensions",
-     "url": "https://www.thehindu.com/news/national/india-advises-nationals-in-saudi-arabia-to-remain-vigilant-amid-escalating-regional-tensions/article71563038.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-17T03:07:35+00:00"
-    },
     {
      "title": "Trump asks Saudi to take Israel's 'help' vs Houthis",
      "url": "https://economictimes.indiatimes.com/news/defence/trump-says-saudi-arabia-should-accept-israels-helpful-offer-against-houthis/articleshow/135006004.cms",
@@ -1198,9 +1420,13 @@
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Missiles hit Aden airport as Saudi-led coalition intercepts missile headed for Yanbu"
+   ],
    "orbitwire": {
     "qid": null,
     "status": "published",
@@ -1209,7 +1435,7 @@
     "orbitwire_url": "https://www.youtube.com/shorts/P3_BBUFzurk",
     "orbitwire_title": "The October 2026 Houthi Attacks on Saudi Arabian Airports",
     "high_profile": "fame 410,097 >= 400,000",
-    "angle": "india"
+    "angle": "explainer"
    }
   },
   {
@@ -1270,22 +1496,121 @@
   }
  ],
  "notes": [
-  "outlets: 1292 headlines from 30 feeds (19 owners), 16 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261017-Q141681561, kh-20261017-Q19867977, kh-20261017-Q468324, kh-20261017-Q3884; dropped: explainer AI Act: fewer than 3 owners' headlines name it and the story; explainer December: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1296 headlines from 30 feeds (19 owners), 14 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261017-Q19867977, kh-20261017-Q141681561, kh-20261017-Q468324, kh-20261017-Q8022057; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1292,
+  "headlines": 1296,
   "feeds": 30,
   "owners": 19,
-  "matched": 16,
-  "corroborated": 6
+  "matched": 14,
+  "corroborated": 7
  },
  "emerging": [],
  "explainers": [
+  {
+   "id": "kh-20261017-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Trump denies limiting Ukraine access to Starlink network",
+   "story_keys": [
+    "access",
+    "denie",
+    "trump"
+   ],
+   "date": "2026-10-16",
+   "news_at": "2026-10-17T02:45:45+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "BBC",
+    "NDTV",
+    "TV9 Network",
+    "India Today Group",
+    "Amar Ujala"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump denies limiting Ukraine access to Starlink network",
+    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+    "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
+    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch"
+   ],
+   "hindi_headlines": [
+    "भारत में हाई-स्पीड नेट की पूरी तैयारी, रिलायंस-मस्क विवाद में स्टारलिंक का नया बयान",
+    "'भारत में 5 साल से बना रहे नेटवर्क...', स्टारलिंक का रिलायंस को जवाब",
+    "अंबानी-मस्क टकराव: रिलायंस की दो-टूक से तिलमिलाई स्टारलिंक, जवाब में सुरक्षित-हाई-स्पीड इंटरनेट पर क्या कहा?"
+   ],
+   "hindi_news": 3,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "स्टारलिंक",
+   "reports": [
+    {
+     "title": "Trump denies limiting Ukraine access to Starlink network",
+     "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-16T19:33:48+00:00"
+    },
+    {
+     "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+     "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-16T18:01:19+00:00"
+    },
+    {
+     "title": "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
+     "url": "https://www.ndtv.com/world-news/neither-me-nor-elon-musk-trump-denies-role-in-ukraine-losing-starlink-access-12197657#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T02:45:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "outlet:NDTV",
+    "outlet:TV9 Network",
+    "outlet:India Today Group",
+    "outlet:Amar Ujala",
+    "google-news:Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "google-news:Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'",
+    "Mukesh Ambani's Reliance Responds To Elon Musk's Claims Over Starlink India Launch",
+    "Ambani Taps Massive Reliance Workforce to Boost Jio’s Record IPO"
+   ]
+  },
   {
    "id": "kh-20261017-Q141681561",
    "qid": "Q141681561",
@@ -1315,10 +1640,11 @@
     "Al Jazeera Media Network",
     "Deutsche Welle",
     "BBC",
-    "NDTV"
+    "NDTV",
+    "India Today Group"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1387,6 +1713,16 @@
      "at": "2026-10-17T02:39:32+00:00"
     },
     {
+     "title": "If I were you, I'd reconsider this job, Trump told Zacharia before she was fired",
+     "url": "https://www.indiatoday.in/world/us-news/story/katie-do-you-need-this-trump-told-white-house-press-secretary-before-she-was-fired-3019364-2026-10-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T02:13:47+00:00"
+    },
+    {
      "title": "14-Minute Presser, Backlash Over Lawyer Tag: The Unmaking Of New White House Press Chief Katie Zacharia",
      "url": "https://www.ndtv.com/world-news/14-minute-presser-backlash-over-lawyer-tag-the-unmaking-of-new-white-house-press-chief-katie-zacharia-12197536#publisher=newsstand",
      "outlet": "NDTV",
@@ -1405,16 +1741,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-16T18:24:52+00:00"
-    },
-    {
-     "title": "Katie Zacharia ‘let go’ as White House Press Secretary after Trump urges her 'to reconsider job' amid lawyer claims row",
-     "url": "https://www.livemint.com/news/us-news/trump-says-he-urged-new-press-secretary-katie-zacharia-to-reconsider-job-amid-lawyer-claims-row-11792173526337.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-16T18:06:34+00:00"
     }
    ],
    "via": [
@@ -1425,103 +1751,17 @@
     "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:NDTV",
-    "google-news:Trump Fires Press Secretary Katie Zacharia After 5 Days On The Job: Report"
-   ],
-   "top": {
-    "IN": 4
-   },
-   "top_score": 0.85,
-   "top_headlines": [
-    "Trump Fires Press Secretary Katie Zacharia After 5 Days On The Job: Report"
-   ]
-  },
-  {
-   "id": "kh-20261017-Q19867977",
-   "qid": "Q19867977",
-   "title": "Starlink",
-   "name": "Starlink",
-   "phrase": "Starlink",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump denies limiting Ukraine access to Starlink network",
-   "story_keys": [
-    "access",
-    "denie",
-    "trump"
-   ],
-   "date": "2026-10-16",
-   "news_at": "2026-10-17T02:45:45+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "BBC",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump denies limiting Ukraine access to Starlink network",
-    "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-    "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
-   ],
-   "hindi_headlines": [
-    "'भारत में 5 साल से बना रहे नेटवर्क...', स्टारलिंक का रिलायंस को जवाब"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "स्टारलिंक",
-   "reports": [
-    {
-     "title": "Trump denies limiting Ukraine access to Starlink network",
-     "url": "https://www.bbc.co.uk/news/articles/ckz65g34wyd8o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-16T19:33:48+00:00"
-    },
-    {
-     "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
-     "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-16T18:01:19+00:00"
-    },
-    {
-     "title": "'Neither Me Nor Musk': Trump Denies Role In Ukraine Losing Starlink Access",
-     "url": "https://www.ndtv.com/world-news/neither-me-nor-elon-musk-trump-denies-role-in-ukraine-losing-starlink-access-12197657#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-17T02:45:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "google-news:White House Press Secretary Katie Zacharia ‘let go’ just days into role"
    ],
    "top": {
-    "IN": 11
+    "IN": 4,
+    "IN-nation": 9
    },
-   "top_score": 0.5,
+   "top_score": 1.03,
    "top_headlines": [
-    "Starlink disruption exposes Ukraine's reliance on US tech, Europe admits 'can't replace capability'"
+    "White House Press Secretary Katie Zacharia ‘let go’ just days into role",
+    "US lawmakers write to Trump's secretary of state over Delhi detentions as India rejects ‘interference’"
    ]
   },
   {
@@ -1539,21 +1779,23 @@
     "admitted",
     "chest",
     "condition",
+    "hospitalised",
     "infection",
     "stable",
     "veteran"
    ],
    "date": "2026-10-16",
-   "news_at": "2026-10-17T01:37:16+00:00",
+   "news_at": "2026-10-17T04:24:04+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18"
+    "Network18",
+    "The Hindu Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1567,9 +1809,10 @@
    "hindi_headlines": [
     "98 साल के लालकृष्ण आडवाणी की तबीयत बिगड़ी",
     "लालकृष्ण आडवाणी को दिल्ली के अपोलो अस्पताल में कराया गया भर्ती, सीने में संक्रमण की है शिकायत",
-    "लालकृष्ण आडवाणी दिल्ली के अपोलो अस्पताल में भर्ती, सीने में संक्रमण की शिकायत"
+    "लालकृष्ण आडवाणी दिल्ली के अपोलो अस्पताल में भर्ती, सीने में संक्रमण की शिकायत",
+    "बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत"
    ],
-   "hindi_news": 3,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -1577,6 +1820,26 @@
    "india_link": true,
    "label_hi": "लालकृष्ण आडवाणी",
    "reports": [
+    {
+     "title": "L.K. Advani hospitalised after chest infection, condition stable",
+     "url": "https://www.thehindu.com/news/national/lk-advani-health-updates-oct-16-2026/article71594161.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:24:04+00:00"
+    },
+    {
+     "title": "BJP veteran LK Advani admitted to Delhi hospital over pulmonary issues",
+     "url": "https://timesofindia.indiatimes.com/india/bjp-veteran-lk-advani-admitted-to-delhi-hospital-over-pulmonary-issues/articleshow/135007243.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:23:32+00:00"
+    },
     {
      "title": "BJP Veteran LK Advani Admitted To Apollo Hospital With Chest Infection",
      "url": "https://www.news18.com/india/bjp-veteran-lk-advani-admitted-to-apollo-hospital-with-chest-infection-10385891.html",
@@ -1643,15 +1906,107 @@
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 8,
+    "IN-hi": 7,
+    "IN-nation": 3,
+    "IN-hi-nation": 3
    },
-   "top_score": 0.84,
+   "top_score": 1.565,
    "top_headlines": [
+    "बीजेपी के वरिष्ठ नेता लालकृष्ण आडवाणी अस्पताल में भर्ती, चेस्ट इंफेक्शन की शिकायत",
     "L.K. Advani hospitalised after chest infection, condition stable"
+   ]
+  },
+  {
+   "id": "kh-20261017-Q8022057",
+   "qid": "Q8022057",
+   "title": "Willis Graham Act",
+   "name": "Willis Graham Act",
+   "phrase": "Graham Act",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+   "story_keys": [
+    "mean",
+    "oil",
+    "sanction",
+    "tariff",
+    "trump",
+    "under",
+    "waive"
+   ],
+   "date": "2026-10-16",
+   "news_at": "2026-10-17T04:18:14+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+    "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+    "Trump waives Russia sanctions, restrictions and duties under Graham Act"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Trump waives key sanctions on Russian oil, invokes Section 115 of the Graham Act: Here's what it means for India",
+     "url": "https://www.livemint.com/news/us-news/trump-waives-key-sanctions-on-russian-oil-invokes-section-115-of-the-graham-act-heres-what-it-means-for-india-11792210114695.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T04:18:14+00:00"
+    },
+    {
+     "title": "Trump waives Russia sanctions, restrictions and duties under Graham Act",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/trump-waives-russia-sanctions-restrictions-and-duties-under-graham-act-diesel-us-midterms/articleshow/135005808.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-17T01:25:11+00:00"
+    },
+    {
+     "title": "OpenAI to watermark ChatGPT text in EU under AI Act rules",
+     "url": "https://www.thehindu.com/sci-tech/technology/openai-to-watermark-chatgpt-text-in-eu-under-ai-act-rules/article71551205.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-16T19:19:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Donald Trump waives sanctions, tariffs on purchase of Russian oil and gas"
    ]
   },
   {
