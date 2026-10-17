@@ -1,17 +1,18 @@
 {
- "at": "2026-10-17T17:20:08+00:00",
+ "at": "2026-10-17T17:47:31+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 6 candidates from 12 trending",
-  "outlets: 1403 headlines from 31 feeds (19 owners), 17 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1397 headlines from 30 feeds (18 owners), 19 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 3 kh- stories (on): kh-20261017-Q6109517, kh-20261017-Q5465383, kh-20261017-Q3783; dropped: explainer Abhijeet Dipke: fewer than 3 owners' headlines name it and the story; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Dubai: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261017-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261017-Q6109517: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261017-Q3783: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 149 h old and no longer trending live",
-  "drop wk-Q3205897: 221 h old and no longer trending live"
+  "drop wk-Q5300674: 150 h old and no longer trending live",
+  "drop wk-Q3205897: 222 h old and no longer trending live",
+  "skip kh-20261017-Q6109517: gate: no draft passed the fact checks: unsupported: The statement that he held a prayer service before leaving the hospital according to the Vatican spokesperson ('वैटिकन प्रवक्ता के अनुसार अस्पताल छोड़ने से पहले उन्होंने दसवीं मंजिल के कमरे में प्रार्थना सभा आयोजित की') is unsupported: only one report (NPR) states that he celebrated Mass before leaving ('अस्पताल छोड़ने से पहले'), and neither report attributes this to the Vatican spoke",
+  "nothing eligible to publish"
  ]
 }
