@@ -303,5 +303,10 @@
   "count": 1,
   "reason": "ResumableUploadError: <HttpError 400 when requesting None returned \"The user has exceeded the number of videos they may upload.\". Details: \"[{'message': 'The user has exceeded the number of videos they may upload.', 'domain': 'youtube.video', 'reason': 'uploadLimitExceeded'}]\">",
   "at": "2026-10-17T01:38:31+00:00"
+ },
+ "kh-20261017-Q19867977": {
+  "count": 1,
+  "reason": "gate: no draft passed the fact checks: these numbers are not in the sources: 16",
+  "at": "2026-10-17T03:43:41+00:00"
  }
 }
