@@ -1,14 +1,22 @@
 {
- "at": "2026-10-17T12:39:07+00:00",
+ "at": "2026-10-17T13:15:27+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 37 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 4, 'lift': 0.757, 'typical_views_24h': 31}, 'category:news': {'n': 7, 'lift': 1.016, 'typical_views_24h': 56}, 'region:world': {'n': 19, 'lift': 0.831, 'typical_views_24h': 43}, 'region:india': {'n': 14, 'lift': 1.119, 'typical_views_24h': 63}}",
-  "watch: 2 candidates from 12 trending",
-  "outlets: 1385 headlines from 31 feeds (19 owners), 23 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 3 kh- stories (on): kh-20261017-Q96376333, kh-20261017-Q213380, kh-20261017-Q141681561; dropped: explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Air India Express: fewer than 3 owners' headlines name it and the story; explainer FSSAI: fewer than 3 owners' headlines name it and the story",
+  "watch: 4 candidates from 13 trending",
+  "outlets: 1392 headlines from 31 feeds (19 owners), 24 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261017-Q213380, kh-20261017-Q96376333, kh-20261017-Q141681561, kh-20261017-Q5465383; dropped: explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261017-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 145 h old and no longer trending live",
-  "drop wk-Q3205897: 217 h old and no longer trending live"
- ]
+  "drop wk-Q3205897: 217 h old and no longer trending live",
+  "published kh-20261017-Q213380-p2: https://www.youtube.com/shorts/9cJl02IYgsM"
+ ],
+ "published": {
+  "video_id": "9cJl02IYgsM",
+  "url": "https://www.youtube.com/shorts/9cJl02IYgsM",
+  "title": "जस्टिस जेबी पारदीवाला बोले, सोशल मीडिया से हटे बाल शोषण सामग्री",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
