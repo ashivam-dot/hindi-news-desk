@@ -109,8 +109,11 @@ as https.
 - **Stories Wikipedia has no article for yet** (`nw-<yyyymmdd>-<place>-<kind>`): at least 3 independent owners
    within 24 hours, one of them official, a public broadcaster or international (or 4 owners of any group), whose English headlines name the
   same incident or protest (same scope rules; sport, politics, trials and gossip never). They are told only from
-  the reporting (at least two owners' articles must name the place), with photos of the place (Commons, then
-  Openverse; the place must be a Wikidata item with coordinates, never a person). Once Wikipedia writes the article,
+  the reporting (at least two owners' articles must name the place), with photos of the scene first (Commons files
+  naming the place and the words half the headlines share: "Kolkata Durga Puja pandal", never a city postcard when the
+  scene has photos), then of the place (Commons, then
+  Openverse; the place must be a Wikidata item with coordinates, never a person). A title may state a cause ("... बनी
+  वजह") only with who gives it ("... के मुताबिक"). Once Wikipedia writes the article,
   the story is
   not told again for 7 days (a shared report URL, the same nw- place and kind, or its headlines naming the article),
   and Orbitwire's overlap rules match nw- ids and report URLs too. **The lane is on (2026-10-13)** through the
