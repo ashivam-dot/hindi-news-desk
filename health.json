@@ -1,17 +1,19 @@
 {
- "at": "2026-10-17T23:30:17+00:00",
+ "at": "2026-10-17T23:57:06+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 8 candidates from 15 trending",
-  "outlets: 1324 headlines from 31 feeds (19 owners), 45 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
+  "outlets: 1323 headlines from 30 feeds (19 owners), 46 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
   "explainers: 4 kh- stories (on): kh-20261018-Q312781, kh-20261018-Q47035074, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer October / Traffic Update CR: no Wikipedia article that can be its centre; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Dubai: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold wk-Q141760142: outside 07:00-24:00 IST",
   "hold nw-20261017-kolkata-disaster: outside 07:00-24:00 IST",
   "hold kh-20261018-Q312781: outside 07:00-24:00 IST",
   "drop kh-20261018-Q47035074: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261018-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 156 h old and no longer trending live",
+  "wait wk-Q141760142: gate: the article is under 6 hours old; facts may still move (ready in 4.7 h)",
+  "nothing eligible to publish"
  ]
 }
