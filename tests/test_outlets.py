@@ -292,8 +292,10 @@ def test_sport_politics_and_matched_headlines_never_make_an_nw_story():
     sport = [item(k, "Cloudburst hits Chamoli cricket match, players cut off", 1) for k in ("bbc-world", "thehindu", "toi")]
     assert outlets.stories(sport, NOW) == []
     matched = [i | {"matched": "2026 Chamoli cloudburst"} for i in _cluster()]
-    assert outlets.stories(matched, NOW) == []
+    assert outlets.stories(matched, NOW, known=["2026 Chamoli cloudburst"]) == []
     assert outlets.stories(_cluster(), NOW, known=["2026 Chamoli cloudburst"]) == []
+    listed = [i | {"matched": "List of floods in India"} for i in _cluster()]
+    assert len(outlets.stories(listed, NOW, known=["2026 Erie shooting"])) == 1  # a list tells no story
 
 
 def test_headlines_sharing_only_a_country_and_the_kind_are_different_stories():

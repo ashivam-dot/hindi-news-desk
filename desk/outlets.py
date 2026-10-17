@@ -121,8 +121,11 @@ MAX_TEXTS = 12
 MIN_TEXT = 300  # an extract shorter than this is a video page or a teaser, not an article
 REPORTS = 4  # articles in the writer's Reporting block, each from a different owner
 EXCERPT = 1400
-# A story Wikipedia has no article for: this many owners within NEW_WINDOW_H, at least one of them STRONG.
+# A story Wikipedia has no article for: this many owners within NEW_WINDOW_H, at least one of them STRONG, or
+# NATIONAL_OWNERS of any group (the Kolkata pandal stampede, 2026-10-17: six Indian newsrooms led with it for five
+# hours before an official or international outlet did).
 NEW_OWNERS = 3
+NATIONAL_OWNERS = 4
 NEW_WINDOW_H = 24
 
 _raw: dict[str, bytes] = {}
@@ -381,11 +384,13 @@ HEADLINE_KINDS = (
     (r"\b(boat|ferry|ship|vessel)\b.*\b(capsiz\w*|sinks|sank|sinking)\b", "maritime"),
     (r"\bearthquake|\bquake\b", "earthquake"),
     (r"\b(cyclone|hurricane|typhoon|tropical storm)\b", "cyclone"),
-    (r"\b(volcan\w*|eruption|erupts)\b", "volcano"),
+    (r"\b(volcan\w*|lava)\b", "volcano"),
     (r"\b(floods?|flooding|flash floods?|cloudbursts?)\b", "flood"),
     (r"\b(wildfires?|bushfires?|forest fires?)\b", "wildfire"),
     (r"\b(landslides?|mudslides?|avalanches?)\b", "landslide"),
-    (r"\b(stampede|crowd crush|building collapse|bridge collapse|fire breaks out|massive fire|blaze)\b", "disaster"),
+    (r"\b(stampede|crowd crush|(building|bridge|roof|wall|pandal|structure|stage|chimney|tank|tower|balcony|ceiling|"
+     r"house|temple|dam|tunnel|mine|flyover)s? (partly |partially )?collaps\w*|fire breaks out|massive fire|blaze)\b",
+     "disaster"),
     (r"\b(bus|truck|car|jeep|van|vehicle)\b.*\b(accident|crash|collision|plunges?|falls? into|gorge)\b", "accident"),
     (r"\b(protests?|protesters|demonstrations?|demonstrators)\b", "protest"),
 )
@@ -471,8 +476,9 @@ def strong(who: list[str]) -> list[str]:
 
 def stories(items: list[dict], now: datetime, known: list[str] | None = None,
             young: list[str] | None = None) -> list[dict]:
-    """Stories at least NEW_OWNERS independent owners report within NEW_WINDOW_H (one of them STRONG) that no
-    Wikipedia article in `known` (or that Wikipedia's search found for any of their items) is about. An article in
+    """Stories at least NEW_OWNERS independent owners report within NEW_WINDOW_H (one of them STRONG, unless there
+    are NATIONAL_OWNERS) that no
+    Wikipedia article in `known` (the articles a story can be told from) is about. An article in
     `young` is too new to be told from (stories.MIN_ARTICLE_AGE), so its story is told from the reporting meanwhile
     and carries the article's title as "article". English headlines only. Two headlines tell one story when they name the same kind and a name, and share two distinctive
     words that are not countries or institutions (one of them the name), or three when the shared name is only a
@@ -480,10 +486,11 @@ def stories(items: list[dict], now: datetime, known: list[str] | None = None,
     from . import news
 
     young = set(young or [])
-    pool = [news.pool_item(t) for t in known or [] if t not in young]
+    told_from = set(known or []) - young
+    pool = [news.pool_item(t) for t in told_from]
     rows = []
     for i in items:
-        if i["lang"] != "en" or (i.get("matched") and i["matched"] not in young):
+        if i["lang"] != "en" or i.get("matched") in told_from:
             continue
         kind = headline_kind(i["title"])
         if kind:
@@ -512,11 +519,18 @@ def stories(items: list[dict], now: datetime, known: list[str] | None = None,
     for c in clusters:
         fresh = [i for i in c["items"] if (now - datetime.fromisoformat(i["at"])).total_seconds() <= NEW_WINDOW_H * 3600]
         who = owners(fresh)
-        if len(who) < NEW_OWNERS or not any(i["group"] in STRONG for i in fresh):
+        if len(who) < NEW_OWNERS or not (any(i["group"] in STRONG for i in fresh) or len(who) >= NATIONAL_OWNERS):
             continue
         if any(news.reverse(i["title"], [p]) for p in pool for i in c["items"]):
             continue  # Wikipedia already has the story's article: it is told from there
-        named = [k for k, _ in c["counts"].most_common() if k in c["names"] and k not in GENERIC]
+        words = [[_stem(w) for w in re.findall(r"[A-Za-z][A-Za-z'’\-]*", i["title"])] for i in c["items"]]
+
+        def first_at(key: str) -> int:
+            return min(ws.index(key) if key in ws else 99 for ws in words)
+
+        # Ties go to the name the headlines write first ("Kolkata Durga Puja pandal"), never to set order.
+        named = sorted((k for k in c["counts"] if k in c["names"] and k not in GENERIC),
+                       key=lambda k: (-c["counts"][k], first_at(k), k))
         if not named:
             continue
         name_key = named[0]

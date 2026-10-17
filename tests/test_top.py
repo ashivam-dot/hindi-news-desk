@@ -57,7 +57,8 @@ def test_only_top_stories_go_out():
     assert "not in Google News India" in plan.unpopular(random, NOW)
     assert plan.unpopular(random | {"top": {"IN-hi": 12}, "top_score": 0.45}, NOW) is None
     assert plan.unpopular(random | {"traffic": 2000, "geos": ["IN"]}, NOW) is None
-    assert plan.unpopular(random | {"fame": 500_000}, NOW) is None
+    assert "not in Google News India" in plan.unpopular(random | {"fame": 500_000}, NOW)
+    assert plan.unpopular(random | {"kind": "incident", "fame": 500_000}, NOW) is None
     film = random | {"category": "entertainment", "top": {"IN": 15}, "top_score": 0.3}
     assert "top-10" in plan.unpopular(film, NOW)
     assert plan.unpopular(film | {"top": {"IN": 3}, "top_score": 0.9}, NOW) is None
@@ -75,7 +76,8 @@ def report(url, owner):
             "at": NOW.isoformat()}
 
 
-def test_a_big_story_gets_a_follow_up_part_with_new_reporting_only():
+def test_a_big_story_gets_a_follow_up_part_with_new_reporting_only(monkeypatch):
+    monkeypatch.setattr(plan, "SERIES_PARTS", 3)
     first = {"id": "kh-20261015-Q1", "published_at": (NOW - timedelta(hours=4)).isoformat(), "title": "भाग एक",
              "report_urls": ["u1", "u2"]}
     cand = {"id": "kh-20261015-Q1", "top_score": 1.2,

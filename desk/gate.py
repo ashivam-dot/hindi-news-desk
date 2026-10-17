@@ -188,7 +188,7 @@ def _story(short: Short) -> list[str]:
 
     problems = []
     photos = short.scene.get("photos", [])
-    need = 2 if short.id.startswith(("kh-", "nw-")) else 3
+    need = short.scene.get("min_photos") or (2 if short.id.startswith(("kh-", "nw-")) else 3)
     if len(photos) < need:
         problems.append(f"photos: only {len(photos)} (want {need} or more)")
     credits = " ".join(short.credits)

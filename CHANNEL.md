@@ -107,7 +107,7 @@ as https.
   every sentence about deaths, bodies or injuries is removed from the articles, as are sentences about suicide and,
   for an incident, any naming a suspect, attacker or arrest.
 - **Stories Wikipedia has no article for yet** (`nw-<yyyymmdd>-<place>-<kind>`): at least 3 independent owners
-  within 24 hours, one of them official, a public broadcaster or international, whose English headlines name the
+   within 24 hours, one of them official, a public broadcaster or international (or 4 owners of any group), whose English headlines name the
   same incident or protest (same scope rules; sport, politics, trials and gossip never). They are told only from
   the reporting (at least two owners' articles must name the place), with photos of the place (Commons, then
   Openverse; the place must be a Wikidata item with coordinates, never a person). Once Wikipedia writes the article,
@@ -165,6 +165,22 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   no toll unless the reports agree on it). The published record keeps the article's title, so the story is not told
   again from Wikipedia later.
 - An ongoing story comes back at most once in 6 days, whatever its id.
+- **What the Hindi audience watches (2026-10-18; owner: "no body is watching those, i told you to pick famous and
+  trending topics").** The channel's own numbers: Nana Patekar's death 1,301 views, Rahul Gandhi vs the MEA 554,
+  Delhi metro closures 330, actor Imran Khan told to leave India 321; White House, Pope and Starlink statements 0-35;
+  every follow-up part 4-8. Meanwhile the biggest Indian stories were lost to the desk's own rules: Abhijeet Dipke's
+  detention led Google News India for four days and failed 21 times on "1 photo (want 2)", and the Kolkata pandal
+  stampede (19 dead) never became a candidate. So:
+  - an explainer must be in Google News India's top stories (its headline-count fame never makes it "famous"), and a
+    world explainer must be in the Hindi lists (IN-hi, IN-hi-nation);
+  - follow-up parts are off (`plan.SERIES_PARTS = 1`);
+  - a kh- story about a person shows only that person's own photos (never their school or birthplace: the Dhruv
+    Rathee Short was seven frames of buildings), and one photo is enough when it is a lead story (place 0.9+);
+  - an nw- story stands on 4 independent owners of any group (or 3 with an official, public or international one);
+    collapses (pandal, building, chimney...) are incidents; only an article a story can be told from (a candidate
+    or an event-shaped title, never "List of fatal crowd crushes") holds its headlines back; ties in an nw- name go
+    to the name the headlines write first ("Kolkata Durga Puja pandal");
+  - a month or a date is never a centre ("October" from Delhi traffic headlines would have led the morning).
 - At most two loss stories in any three consecutive uploads.
 - The run happens every 15 minutes (:07, :22, :37 and :52).
 

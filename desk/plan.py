@@ -7,8 +7,9 @@ with an India connection, then the rest.
 Timing is the channel: a story goes out while people are looking at it, not hours later. Priority is fame (Google
 News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by age, times the India boost,
 so a fresh story beats a bigger stale one, times its place in Google News India's top stories (desk/top.py); a story
-in none of those lists, not searched in India, not breaking and not very famous is dropped (unpopular), and the day's
-biggest explainer stories may go out in parts (follow_up). A story older than STALE_H is dropped unless a live signal (Google Trends
+in none of those lists, not searched in India, not breaking and not very famous (an explainer's fame only counts
+headlines, so it never counts as famous) is dropped (unpopular), and so is a world explainer the Hindi lists do not
+carry (White House, Pope and Starlink statements drew 0-35 views). Follow-up parts (follow_up) are off. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
 most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame or BREAKING_OWNERS independent outlets on
@@ -52,8 +53,9 @@ TOP_WEIGHT = 2.0
 TOP_ONLY_SCORE = 0.55
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS a day.
+# Off since 2026-10-18 (SERIES_PARTS = 1): every part 2 drew 4-8 views while its first part drew 16-95.
 SERIES_SCORE = 0.9
-SERIES_PARTS = 3
+SERIES_PARTS = 1
 SERIES_GAP = timedelta(hours=3)
 
 
@@ -118,10 +120,16 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     if cand.get("category") in explain.TOP_ONLY:
         return None if place >= TOP_ONLY_SCORE else \
             f"a {cand['category']} story goes out only when it is a top-10 story (place {place:.2f})"
-    if place > 0 or "IN" in (cand.get("geos") or []) and cand.get("traffic", 0) > 0 \
-            or cand.get("fame", 0) >= BREAKING_FAME or is_breaking(cand, at):
+    if "IN" in (cand.get("geos") or []) and cand.get("traffic", 0) > 0 or is_breaking(cand, at):
         return None
-    return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+    if cand.get("kind") != "explainer" and cand.get("fame", 0) >= BREAKING_FAME:
+        return None
+    if place <= 0:
+        return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+    if cand.get("kind") == "explainer" and cand.get("region") != "india" \
+            and not any(feed in news.HINDI_FEEDS for feed in cand["top"]):
+        return "a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+    return None
 
 
 def follow_up(cand: dict, rows: list[dict], at: datetime) -> dict | None:

@@ -79,10 +79,11 @@ ALIASES = {
     "mea": "Ministry of External Affairs (India)", "election commission": "Election Commission of India",
     "nhai": "National Highways Authority of India", "lic": "Life Insurance Corporation",
 }
-# What a centre must never be: a festival, a holiday, a people, a country, a language or a religion (a story about
-# the railways' Diwali bonus is not about Diwali).
+# What a centre must never be: a festival, a holiday, a people, a country, a language, a religion or a date (a story
+# about the railways' Diwali bonus is not about Diwali; "October" is in every dated headline).
 NOT_A_CENTRE = re.compile(r"\b(festival|holiday|observance|ethnic group|nationality|citizens of|people of|"
-                          r"inhabitants of|country in|country of|sovereign state|language|religion|month of)\b", re.I)
+                          r"inhabitants of|country in|country of|sovereign state|language|religion|month of|"
+                          r"month in|calendars?|day of the week|calendar year)\b", re.I)
 SKIP = re.compile(
     # elections and campaigns
     r"\b(elections?|electoral|polls?|polling|bypolls?|by-elections?|exit polls?|voting|vote count\w*|voters?|"

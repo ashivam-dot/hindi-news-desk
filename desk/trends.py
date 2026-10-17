@@ -387,7 +387,10 @@ def radar(today: date | None = None) -> dict:
                            "coords": coords,
                            "has_coords": bool(coords or wiki.claims(ent, "P276") or wiki.claims(ent, "P1427"))})
     try:
-        emerging = outlets.stories(read, datetime.now(timezone.utc), known=list(hits), young=young_articles(out))
+        # Only an article a story can be told from holds its headlines back: on 2026-10-17 the Kolkata stampede's
+        # headlines matched "List of fatal crowd crushes" and the day's biggest story was never told.
+        known = [c["title"] for c in out] + [t for t in hits if title_kind(t, today)]
+        emerging = outlets.stories(read, datetime.now(timezone.utc), known=known, young=young_articles(out))
     except Exception as exc:
         emerging = []
         errors.append(f"outlet stories: {type(exc).__name__}: {exc}"[:200])

@@ -27,6 +27,10 @@ from .spec import Beat, Fact, Short
 WORK = Path(__file__).resolve().parents[1] / "work"
 MIN_PHOTOS = 3
 REPORT_PHOTOS = 2  # kh- and nw- bulletins: the fact cards and headline carry the frame, not a photo slideshow
+# A kh- story about a person shows only their own photos: their school or birthplace says nothing about today's news
+# (Dhruv Rathee, 2026-10-17: seven of twelve frames were buildings). One photo is enough for a story this high in
+# Google News India's top stories (Abhijeet Dipke's detention led them for four days and failed 21 times on 1 photo).
+LEAD_SCORE = 0.9
 MAX_DEATH_DAYS = 7
 IST = timezone(timedelta(hours=5, minutes=30))
 OUTRO = "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।"
@@ -1122,9 +1126,10 @@ def build_explainer(cand: dict) -> Short:
     context = person_context(ent) if person else incident_context(ent, [])
     ov, exclude = _shared(cand, title, ent, None, context)
     photos = pick_photos(title, ent, work / "photos", person=person, exclude=exclude, places=not person,
-                         context_qids=context)
-    if len(photos) < REPORT_PHOTOS:
-        raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {REPORT_PHOTOS})"
+                         context_qids=None if person else context)
+    need = 1 if person and (cand.get("top_score") or 0) >= LEAD_SCORE else REPORT_PHOTOS
+    if len(photos) < need:
+        raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {need})"
                          + (" not used by Orbitwire" if ov else ""))
     story = cand.get("story") or (cand.get("headlines") or [title])[0]
     words = [phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])
@@ -1157,7 +1162,8 @@ def build_explainer(cand: dict) -> Short:
                    summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                            "Wikipedia से।",
                    hashtags=[name_hi, label, "हिंदीसमाचार"], ov=ov, reports=reports, credit=EXPLAIN_CREDIT)
-    short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story)
+    short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
+                       min_photos=need)
     return short
 
 
