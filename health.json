@@ -1,16 +1,13 @@
 {
- "at": "2026-10-17T08:06:10+00:00",
+ "at": "2026-10-17T08:35:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 4 candidates from 13 trending",
-  "outlets: 1308 headlines from 30 feeds (19 owners), 15 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261017-Q468324, kh-20261017-Q141681561, kh-20261017-Q19867977, kh-20261017-Q3884; dropped: explainer Pope Leo XIV: fewer than 3 owners' headlines name it and the story; explainer Graham Act Here: fewer than 3 owners' headlines name it and the story; explainer Ajay Devgn’s Mumbai: fewer than 3 owners' headlines name it and the story",
+  "watch: 1 candidates from 11 trending",
+  "outlets: 1320 headlines from 30 feeds (19 owners), 13 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261017-Q468324, kh-20261017-Q19867977, kh-20261017-Q141681561, kh-20261017-Q3884; dropped: explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut: Wikipedia's Sanjay Raut is not the journalist the headlines name; explainer Sanjay Raut / Sanjay Raut: no Wikipedia article that can be its centre",
   "skip wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports: Orbitwire published (wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261017-Q3884: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 140 h old and no longer trending live",
-  "drop wk-Q3205897: 212 h old and no longer trending live"
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261017-Q3884: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
  ]
 }
