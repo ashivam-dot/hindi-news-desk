@@ -1,16 +1,20 @@
 {
- "at": "2026-10-17T05:19:29+00:00",
+ "at": "2026-10-17T05:51:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 4 candidates from 12 trending",
-  "outlets: 1284 headlines from 30 feeds (19 owners), 19 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261017-Q19867977, kh-20261017-Q468324, kh-20261017-Q141681561, kh-20261017-Q8022057; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "learn: 33 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.344, 'typical_views_24h': 103}, 'category:news': {'n': 5, 'lift': 0.995, 'typical_views_24h': 56}, 'region:world': {'n': 17, 'lift': 0.791, 'typical_views_24h': 42}, 'region:india': {'n': 12, 'lift': 1.195, 'typical_views_24h': 72}}",
+  "watch: 6 candidates from 15 trending",
+  "outlets: 1284 headlines from 30 feeds (19 owners), 17 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261017-Q468324, kh-20261017-Q19867977, kh-20261017-Q141681561, kh-20261017-Q8022057; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
   "skip wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports: Orbitwire published (wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports), not high-profile enough to tell again",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold wk-Q139857349-2026w42: last Short went out 0.3 h ago",
-  "hold kh-20261017-Q468324-p2: last Short went out 0.3 h ago",
-  "hold kh-20261017-Q8022057: last Short went out 0.3 h ago",
-  "drop kh-20261017-Q3884: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261017-Q3884: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 138 h old and no longer trending live",
+  "drop wk-Q3205897: 210 h old and no longer trending live",
+  "skip kh-20261017-Q468324-p2: gate: fewer than 2 independent outlets' articles name L. K. Advani",
+  "skip kh-20261017-Q8022057: gate: only 0 usable photos of Willis Graham Act on Wikimedia Commons (want 2)",
+  "nothing eligible to publish"
  ]
 }
