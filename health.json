@@ -1,18 +1,23 @@
 {
- "at": "2026-10-17T06:15:01+00:00",
+ "at": "2026-10-17T07:05:41+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 6 candidates from 15 trending",
-  "outlets: 1280 headlines from 30 feeds (19 owners), 16 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261017-Q19867977, kh-20261017-Q468324, kh-20261017-Q141681561, kh-20261017-Q8022057",
+  "outlets: 1291 headlines from 30 feeds (19 owners), 20 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261017-Q468324, kh-20261017-Q19867977, kh-20261017-Q213380, kh-20261017-Q141681561",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261017-Q3884: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 138 h old and no longer trending live",
-  "drop wk-Q3205897: 210 h old and no longer trending live",
-  "skip kh-20261017-Q8022057: gate: only 0 usable photos of Willis Graham Act on Wikimedia Commons (want 2)",
-  "skip wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports: gate: orbitwire: the title must show the 'पूरा मामला' angle",
-  "nothing eligible to publish"
- ]
+  "drop wk-Q5300674: 139 h old and no longer trending live",
+  "drop wk-Q3205897: 211 h old and no longer trending live",
+  "published kh-20261017-Q213380: https://www.youtube.com/shorts/lLH-gsbWyBo"
+ ],
+ "published": {
+  "video_id": "lLH-gsbWyBo",
+  "url": "https://www.youtube.com/shorts/lLH-gsbWyBo",
+  "title": "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
