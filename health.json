@@ -1,18 +1,18 @@
 {
- "at": "2026-10-17T00:08:18+00:00",
+ "at": "2026-10-17T00:51:26+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 9 candidates from 16 trending",
-  "outlets: 1339 headlines from 30 feeds (19 owners), 17 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261016-oregon-attack",
-  "explainers: 6 kh- stories (on): kh-20261017-Q139881668, kh-20261017-Q141681561, kh-20261017-Q468324, kh-20261017-Q19867977; dropped: explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Priyank Kharge Nalapad / Oct: no Wikipedia article that can be its centre",
+  "watch: 7 candidates from 14 trending",
+  "outlets: 1326 headlines from 30 feeds (19 owners), 16 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261017-Q139881668, kh-20261017-Q141681561, kh-20261017-Q468324, kh-20261017-Q317521; dropped: explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Priyank Kharge Nalapad / Oct: no Wikipedia article that can be its centre",
   "skip wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports: Orbitwire published (wp-October_2026_Houthi_attacks_on_Saudi_Arabian_airports), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261017-Q468324: outside 07:00-24:00 IST",
   "hold kh-20261017-Q139881668: outside 07:00-24:00 IST",
+  "hold kh-20261017-Q468324: outside 07:00-24:00 IST",
   "hold kh-20261017-Q141681561: outside 07:00-24:00 IST",
-  "hold kh-20261017-Q19867977: outside 07:00-24:00 IST",
-  "hold nw-20261016-oregon-attack: outside 07:00-24:00 IST",
-  "drop kh-20261017-Q6109517: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "drop kh-20261017-Q6109517: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q5300674: 133 h old and no longer trending live"
  ]
 }
