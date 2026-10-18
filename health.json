@@ -1,23 +1,20 @@
 {
- "at": "2026-10-18T02:35:37+00:00",
+ "at": "2026-10-18T03:06:54+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 16 trending",
-  "outlets: 1276 headlines from 29 feeds (18 owners), 53 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
-  "explainers: 5 kh- stories (on): kh-20261018-Q10218, kh-20261018-Q312781, kh-20261018-Q213380, kh-20261018-Q6109517; dropped: explainer October / Traffic Update CR: no Wikipedia article that can be its centre; explainer Dubai: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 3 candidates from 13 trending",
+  "outlets: 1268 headlines from 29 feeds (18 owners), 47 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
+  "explainers: 4 kh- stories (on): kh-20261018-Q10218, kh-20261018-Q155164, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer October / Traffic Update CR: no Wikipedia article that can be its centre; explainer Dubai: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261018-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q5300674: 159 h old and no longer trending live",
-  "drop wk-Q3205897: 231 h old and no longer trending live",
-  "wait wk-Q141760142: gate: the article is under 6 hours old; facts may still move (ready in 2.1 h)",
-  "published nw-20261017-kolkata-disaster: https://www.youtube.com/shorts/6Y1fQSsuE1A"
+  "published kh-20261018-Q155164: https://www.youtube.com/shorts/dNGHjXMe1ng"
  ],
  "published": {
-  "video_id": "6Y1fQSsuE1A",
-  "url": "https://www.youtube.com/shorts/6Y1fQSsuE1A",
-  "title": "कोलकाता के पूजा पंडाल में भगदड़, बारिश से बचने के दौरान मची चीख-पुकार",
+  "video_id": "dNGHjXMe1ng",
+  "url": "https://www.youtube.com/shorts/dNGHjXMe1ng",
+  "title": "अभिनेता इमरान खान पहुंचे बॉम्बे हाई कोर्ट, लीव इंडिया नोटिस को चुनौती",
   "privacy": "public",
   "synthetic_declared": true
  }
