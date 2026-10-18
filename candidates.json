@@ -1,20 +1,20 @@
 {
- "at": "2026-10-18T10:33:11+00:00",
+ "at": "2026-10-18T11:02:37+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "October 2026 Houthi attacks on Saudi Arabian airports",
-   "fame": 535097,
+   "fame": 510097,
    "views": 10097,
    "traffic": 0,
-   "news": 525000,
+   "news": 500000,
    "news_at": "2026-10-18T10:23:38+00:00",
    "headlines": [
     "'Don't stand on roof, balconies': India urges nationals in Saudi amid Houthi strikes",
     "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength",
     "Egypt's Sissi says he'll defend Saudi Arabia, if asked",
     "Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks",
-    "India urges nationals in Saudi Arabia to follow safety directives amid security concerns"
+    "Saudi Helicopter Crashes Near Yemeni Border as Houthi War Rages"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -31,7 +31,6 @@
     "google-news:Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength",
     "google-news:Egypt's Sissi says he'll defend Saudi Arabia, if asked",
     "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
@@ -39,7 +38,6 @@
    ],
    "owners": [
     "Al Jazeera Media Network",
-    "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
@@ -55,16 +53,6 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-18T10:23:38+00:00"
-    },
-    {
-     "title": "India urges nationals in Saudi Arabia to follow safety directives amid security concerns",
-     "url": "https://www.thehindu.com/news/international/india-urges-nationals-in-saudi-arabia-to-follow-safety-directives-amid-security-concerns/article71599498.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T09:15:09+00:00"
     },
     {
      "title": "Saudi Helicopter Crashes Near Yemeni Border as Houthi War Rages",
@@ -133,23 +121,20 @@
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false,
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "'Don't stand on roof, balconies': India urges nationals in Saudi amid Houthi strikes"
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
-   "qid": null,
+   "qid": "Q141762710",
    "title": "2026 French protests",
-   "fame": 200000,
+   "fame": 325000,
    "views": 0,
    "traffic": 0,
-   "news": 200000,
+   "news": 325000,
    "news_at": "2026-10-18T09:19:44+00:00",
    "headlines": [
+    "Historic French town hall burnt, shops looted, tear gas fired as 5,50,00 protest in France",
     "French police arrest 855 people in Paris as protests, violence erupt across country",
     "France protests: Thousands on streets over rising living costs, poor services - Mini French Revolution? What went wrong?",
     "Looters seize on massive French protests to raid and vandalise shops",
@@ -158,16 +143,17 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
+    "IN",
     "US",
     "world"
    ],
    "label_hi": null,
    "via": [
+    "google-news:Historic French town hall burnt, shops looted, tear gas fired as 5,50,00 protest in France",
     "google-news:French police arrest 855 people in Paris as protests, violence erupt across country",
     "google-news:France protests: Thousands on streets over rising living costs, poor services - Mini French Revolution? What went wrong?",
-    "google-news:Looters seize on massive French protests to raid and vandalise shops",
     "outlet:HT Media",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle"
@@ -229,7 +215,7 @@
      "at": "2026-10-17T14:58:54+00:00"
     }
    ],
-   "id": "wp-2026_French_protests",
+   "id": "wk-Q141762710-2026w42",
    "kind": "incident",
    "category": "protest",
    "date": "2026-10-18",
@@ -240,19 +226,126 @@
    "top_headlines": []
   },
   {
-   "qid": "Q141760142",
-   "title": "2026 Kolkata Durga Puja crowd crush",
-   "fame": 175000,
+   "id": "kh-20261018-Q324546",
+   "qid": "Q324546",
+   "title": "Marco Rubio",
+   "name": "Marco Rubio",
+   "phrase": "Rubio",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
+   "story_keys": [
+    "call",
+    "diversified",
+    "energy",
+    "hard",
+    "one",
+    "pivot",
+    "portfolio",
+    "sanction",
+    "tariff",
+    "waiver"
+   ],
+   "date": "2026-10-17",
+   "news_at": "2026-10-18T10:16:09+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-18T10:15:23+00:00",
    "headlines": [
+    "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
+    "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
+    "Trump delays tariffs as Rubio calls India key ally",
+    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver",
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver",
+     "url": "https://www.indiatoday.in/india/story/trump-russia-sanctions-tariffs-waiver-marco-rubio-says-india-diversified-energy-portfolio-3020035-2026-10-18?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T07:19:23+00:00"
+    },
+    {
+     "title": "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
+     "url": "https://www.livemint.com/news/india/russia-sanctions-waiver-rubio-calls-india-important-ally-says-it-is-hard-to-pivot-energy-portfolio-in-one-day-11792292816506.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T03:15:15+00:00"
+    },
+    {
+     "title": "Trump delays tariffs as Rubio calls India key ally",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-an-important-ally-marco-rubio-says-us-president-studying-impact-of-possible-tariffs-on-countries-like-india/articleshow/135022835.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T03:14:32+00:00"
+    },
+    {
+     "title": "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
+     "url": "https://www.hindustantimes.com/india-news/india-diversified-imports-but-hard-to-pivot-in-one-day-marco-rubio-explains-why-us-waived-some-russia-energy-tariffs-trump-russian-oil-buyer-delhi-101792287930939.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T02:33:08+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "google-news:U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "google-news:Why Marco Rubio’s visit to Mumbai has ruffled feathers in India",
+    "google-news:Rubio says Ukraine without access to Starshield, future ‘under discussion’"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
+   ]
+  },
+  {
+   "qid": "Q141760142",
+   "title": "2026 Kolkata Durga Puja crowd crush",
+   "fame": 200000,
+   "views": 0,
+   "traffic": 0,
+   "news": 150000,
+   "news_at": "2026-10-18T10:57:47+00:00",
+   "headlines": [
+    "‘Pandal will collapse’: The warning that may have triggered Kolkata Durga Puja stampede that killed 19",
+    "Devotees celebrate Durga Puja with ‘Prabhat Pheri’ procession in Visakhapatnam",
     "Kolkata Durga Puja Pandal Stampede | Safety Lapses, Arrests & Probe | Chorbagan Pandal | News18",
-    "3 killed as speeding car rams tent near Durga Puja pandal in UP",
     "Video Shows Moment Kolkata Durga Puja Stampede Broke Out, Killing 19",
-    "India news: Kolkata stampede dampens Durga Puja festivities",
-    "Kolkata stampede: How rain, crowds triggered chaos"
+    "India news: Kolkata stampede dampens Durga Puja festivities"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -265,23 +358,45 @@
    "label_hi": null,
    "via": [
     "wikipedia-current-events-2026-10-17",
+    "google-news:‘Pandal will collapse’: The warning that may have triggered Kolkata Durga Puja stampede that killed 19",
+    "google-news:Devotees celebrate Durga Puja with ‘Prabhat Pheri’ procession in Visakhapatnam",
     "google-news:Kolkata Durga Puja Pandal Stampede | Safety Lapses, Arrests & Probe | Chorbagan Pandal | News18",
-    "google-news:3 killed as speeding car rams tent near Durga Puja pandal in UP",
-    "google-news:Video Shows Moment Kolkata Durga Puja Stampede Broke Out, Killing 19",
-    "outlet:Network18",
     "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Network18",
     "outlet:NDTV",
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co."
    ],
    "owners": [
-    "Network18",
     "HT Media",
+    "The Hindu Group",
+    "Network18",
     "NDTV",
     "Deutsche Welle",
     "Bennett, Coleman & Co."
    ],
    "reports": [
+    {
+     "title": "‘Pandal will collapse’: The warning that may have triggered Kolkata Durga Puja stampede that killed 19",
+     "url": "https://www.livemint.com/news/india/pandal-will-collapse-the-warning-that-may-have-triggered-kolkata-durga-puja-stampede-that-killed-19-11792319648962.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T10:57:47+00:00"
+    },
+    {
+     "title": "Devotees celebrate Durga Puja with ‘Prabhat Pheri’ procession in Visakhapatnam",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/devotees-celebrate-durga-puja-with-prabhat-pheri-procession-in-visakhapatnam/article71593786.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T10:48:25+00:00"
+    },
     {
      "title": "Kolkata Durga Puja Pandal Stampede | Safety Lapses, Arrests & Probe | Chorbagan Pandal | News18",
      "url": "https://www.news18.com/videos/breaking-news/kolkata-durga-puja-pandal-stampede-safety-lapses-arrests-probe-chorbagan-pandal-news18-10387552.html",
@@ -341,26 +456,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-18T08:04:02+00:00"
-    },
-    {
-     "title": "Rain, a rush and a mic warning: The chain of events behind Kolkata’s Durga Puja stampede that killed 19",
-     "url": "https://www.hindustantimes.com/india-news/kolkata-durga-puja-pandal-stampede-chor-chore-bagan-tmc-bjp-deaths-news-rain-101792308175498.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T07:28:34+00:00"
-    },
-    {
-     "title": "Guwahati Airport Launches 'Utsav Aarambh' For Durga Puja",
-     "url": "https://www.ndtv.com/india-news/guwahati-airport-launches-utsav-aarambh-for-durga-puja-12201973#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T07:27:02+00:00"
     }
    ],
    "id": "wk-Q141760142",
@@ -369,6 +464,45 @@
    "date": "2026-10-17",
    "coords": null,
    "has_coords": false,
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "World Live News Updates: India asks its nationals in Saudi Arabia to follow safety directives amid security concerns"
+   ]
+  },
+  {
+   "qid": "Q141615137",
+   "title": "2026 French student protests",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-18T10:25:48+00:00",
+   "headlines": [
+    "French police arrested more than 1,800 people as protests, violence erupt across country"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-17",
+    "google-news:French police arrested more than 1,800 people as protests, violence erupt across country"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141615137-2026w42",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-18",
+   "coords": null,
+   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -511,98 +645,88 @@
    ]
   },
   {
-   "id": "kh-20261018-Q324546",
-   "qid": "Q324546",
-   "title": "Marco Rubio",
-   "name": "Marco Rubio",
-   "phrase": "Rubio",
-   "person": true,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
-   "story_keys": [
-    "call",
-    "diversified",
-    "energy",
-    "hard",
-    "one",
-    "pivot",
-    "portfolio",
-    "sanction",
-    "tariff",
-    "waiver"
-   ],
+   "id": "nw-20261017-paris-protest",
+   "qid": null,
+   "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+   "name": "Paris",
+   "kind": "incident",
+   "category": "protest",
    "date": "2026-10-17",
-   "news_at": "2026-10-18T10:16:09+00:00",
+   "news_at": "2026-10-18T10:53:54+00:00",
    "owners": [
-    "HT Media",
+    "NPR",
     "Bennett, Coleman & Co.",
-    "India Today Group"
+    "France Médias Monde",
+    "BBC"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
-    "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
-    "Trump delays tariffs as Rubio calls India key ally",
-    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver"
+    "Paris police report 855 arrests after violent clashes and looting during protests",
+    "France protests leave Paris streets buried in garbage amidst violence, looting",
+    "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+    "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
+   "geos": [
+    "world"
+   ],
    "region": "world",
    "india_link": false,
    "label_hi": null,
    "reports": [
     {
-     "title": "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver",
-     "url": "https://www.indiatoday.in/india/story/trump-russia-sanctions-tariffs-waiver-marco-rubio-says-india-diversified-energy-portfolio-3020035-2026-10-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+     "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-18T07:19:23+00:00"
+     "at": "2026-10-18T10:53:54+00:00"
     },
     {
-     "title": "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
-     "url": "https://www.livemint.com/news/india/russia-sanctions-waiver-rubio-calls-india-important-ally-says-it-is-hard-to-pivot-energy-portfolio-in-one-day-11792292816506.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+     "url": "https://www.france24.com/en/europe/20261018-live-vance-blames-immigration-for-violence-during-protests-in-france",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-18T03:15:15+00:00"
+     "at": "2026-10-18T08:06:22+00:00"
     },
     {
-     "title": "Trump delays tariffs as Rubio calls India key ally",
-     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-an-important-ally-marco-rubio-says-us-president-studying-impact-of-possible-tariffs-on-countries-like-india/articleshow/135022835.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "title": "Paris police report 855 arrests after violent clashes and looting during protests",
+     "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-17T15:57:40+00:00"
+    },
+    {
+     "title": "France protests leave Paris streets buried in garbage amidst violence, looting",
+     "url": "https://timesofindia.indiatimes.com/world/europe/france-protests-leave-paris-streets-buried-in-rubbish-amidst-violence-looting-across-nation/articleshow/135025364.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-18T03:14:32+00:00"
-    },
-    {
-     "title": "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
-     "url": "https://www.hindustantimes.com/india-news/india-diversified-imports-but-hard-to-pivot-in-one-day-marco-rubio-explains-why-us-waived-some-russia-energy-tariffs-trump-russian-oil-buyer-delhi-101792287930939.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T02:33:08+00:00"
+     "at": "2026-10-18T07:10:13+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
+    "outlet:NPR",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
+    "outlet:France Médias Monde",
+    "outlet:BBC"
    ],
+   "emerging": true,
+   "article": null,
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -675,36 +799,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-08",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q141615137",
-   "title": "2026 French student protests",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-18T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141615137-2026w42",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-18",
-   "coords": null,
-   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -962,14 +1056,15 @@
  ],
  "candidates": [
   {
-   "qid": null,
+   "qid": "Q141762710",
    "title": "2026 French protests",
-   "fame": 200000,
+   "fame": 325000,
    "views": 0,
    "traffic": 0,
-   "news": 200000,
+   "news": 325000,
    "news_at": "2026-10-18T09:19:44+00:00",
    "headlines": [
+    "Historic French town hall burnt, shops looted, tear gas fired as 5,50,00 protest in France",
     "French police arrest 855 people in Paris as protests, violence erupt across country",
     "France protests: Thousands on streets over rising living costs, poor services - Mini French Revolution? What went wrong?",
     "Looters seize on massive French protests to raid and vandalise shops",
@@ -978,16 +1073,17 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
+    "IN",
     "US",
     "world"
    ],
    "label_hi": null,
    "via": [
+    "google-news:Historic French town hall burnt, shops looted, tear gas fired as 5,50,00 protest in France",
     "google-news:French police arrest 855 people in Paris as protests, violence erupt across country",
     "google-news:France protests: Thousands on streets over rising living costs, poor services - Mini French Revolution? What went wrong?",
-    "google-news:Looters seize on massive French protests to raid and vandalise shops",
     "outlet:HT Media",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle"
@@ -1049,7 +1145,7 @@
      "at": "2026-10-17T14:58:54+00:00"
     }
    ],
-   "id": "wp-2026_French_protests",
+   "id": "wk-Q141762710-2026w42",
    "kind": "incident",
    "category": "protest",
    "date": "2026-10-18",
@@ -1062,20 +1158,25 @@
   {
    "qid": "Q141615137",
    "title": "2026 French student protests",
-   "fame": 50000,
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-18T00:00:00+00:00",
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-10-18T10:25:48+00:00",
+   "headlines": [
+    "French police arrested more than 1,800 people as protests, violence erupt across country"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "world"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-current-events-2026-10-17"
+    "wikipedia-current-events-2026-10-17",
+    "google-news:French police arrested more than 1,800 people as protests, violence erupt across country"
    ],
    "owners": [],
    "reports": [],
@@ -1085,36 +1186,6 @@
    "date": "2026-10-18",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q141535181",
-   "title": "2026 French fuel protests",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-18T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141535181-2026w42",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-18",
-   "coords": null,
-   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -1149,15 +1220,17 @@
     "Bennett, Coleman & Co.",
     "India Today Group"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
     "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
     "Trump delays tariffs as Rubio calls India key ally",
-    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver"
+    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver",
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1210,8 +1283,133 @@
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "google-news:U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "google-news:Why Marco Rubio’s visit to Mumbai has ruffled feathers in India",
+    "google-news:Rubio says Ukraine without access to Starshield, future ‘under discussion’"
    ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
+   ]
+  },
+  {
+   "id": "nw-20261017-paris-protest",
+   "qid": null,
+   "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+   "name": "Paris",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-17",
+   "news_at": "2026-10-18T10:53:54+00:00",
+   "owners": [
+    "NPR",
+    "Bennett, Coleman & Co.",
+    "France Médias Monde",
+    "BBC"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Paris police report 855 arrests after violent clashes and looting during protests",
+    "France protests leave Paris streets buried in garbage amidst violence, looting",
+    "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+    "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+     "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T10:53:54+00:00"
+    },
+    {
+     "title": "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+     "url": "https://www.france24.com/en/europe/20261018-live-vance-blames-immigration-for-violence-during-protests-in-france",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T08:06:22+00:00"
+    },
+    {
+     "title": "Paris police report 855 arrests after violent clashes and looting during protests",
+     "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-17T15:57:40+00:00"
+    },
+    {
+     "title": "France protests leave Paris streets buried in garbage amidst violence, looting",
+     "url": "https://timesofindia.indiatimes.com/world/europe/france-protests-leave-paris-streets-buried-in-rubbish-amidst-violence-looting-across-nation/articleshow/135025364.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T07:10:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NPR",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:France Médias Monde",
+    "outlet:BBC"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q141535181",
+   "title": "2026 French fuel protests",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-18T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-17"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141535181-2026w42",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-18",
+   "coords": null,
+   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -1354,19 +1552,19 @@
   }
  ],
  "notes": [
-  "outlets: 1303 headlines from 29 feeds (18 owners), 63 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
-  "explainers: 1 kh- stories (on): kh-20261018-Q324546; dropped: explainer Dubai: fewer than 3 owners' headlines name it and the story; explainer Palestine Action: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1317 headlines from 29 feeds (18 owners), 69 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261017-kolkata-disaster, nw-20261017-paris-protest",
+  "explainers: 1 kh- stories (on): kh-20261018-Q324546; dropped: explainer Pope Leo: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1303,
+  "headlines": 1317,
   "feeds": 29,
   "owners": 18,
-  "matched": 63,
-  "corroborated": 6
+  "matched": 69,
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -1471,6 +1669,93 @@
    "top_headlines": [
     "Kolkata pandal stampede LIVE | Will visit victims' families in their homes, handover compensation cheques, says CM Adhikari"
    ]
+  },
+  {
+   "id": "nw-20261017-paris-protest",
+   "qid": null,
+   "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+   "name": "Paris",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-17",
+   "news_at": "2026-10-18T10:53:54+00:00",
+   "owners": [
+    "NPR",
+    "Bennett, Coleman & Co.",
+    "France Médias Monde",
+    "BBC"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Paris police report 855 arrests after violent clashes and looting during protests",
+    "France protests leave Paris streets buried in garbage amidst violence, looting",
+    "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+    "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Burnt out cars and shattered glass on Paris streets after protests turn to riots and looting",
+     "url": "https://www.bbc.co.uk/news/articles/c574pdzl0k4no?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T10:53:54+00:00"
+    },
+    {
+     "title": "🔴 A demonstrator died from 'cardiorespiratory arrest' during Paris protests, police say",
+     "url": "https://www.france24.com/en/europe/20261018-live-vance-blames-immigration-for-violence-during-protests-in-france",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T08:06:22+00:00"
+    },
+    {
+     "title": "Paris police report 855 arrests after violent clashes and looting during protests",
+     "url": "https://www.npr.org/2026/10/17/nx-s1-6006773/student-protests-france",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-17T15:57:40+00:00"
+    },
+    {
+     "title": "France protests leave Paris streets buried in garbage amidst violence, looting",
+     "url": "https://timesofindia.indiatimes.com/world/europe/france-protests-leave-paris-streets-buried-in-rubbish-amidst-violence-looting-across-nation/articleshow/135025364.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-18T07:10:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NPR",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:France Médias Monde",
+    "outlet:BBC"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   }
  ],
  "explainers": [
@@ -1504,15 +1789,17 @@
     "Bennett, Coleman & Co.",
     "India Today Group"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Russia sanctions waiver: Rubio calls India 'important ally' says it is hard to pivot energy portfolio in one day",
     "‘India diversified imports, but hard to pivot in one day’: Marco Rubio explains why US waived some Russia energy tariffs",
     "Trump delays tariffs as Rubio calls India key ally",
-    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver"
+    "India voluntarily diversified energy portfolio: Rubio on Trump's tariff waiver",
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1565,11 +1852,19 @@
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "google-news:U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "google-news:Why Marco Rubio’s visit to Mumbai has ruffled feathers in India",
+    "google-news:Rubio says Ukraine without access to Starshield, future ‘under discussion’"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "U.S. President wants 60 days to analyse impact of Russia sanctions law, says Marco Rubio",
+    "Why Marco Rubio’s visit to Mumbai has ruffled feathers in India"
+   ]
   }
  ]
 }
