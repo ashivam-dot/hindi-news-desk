@@ -1,18 +1,18 @@
 {
- "at": "2026-10-18T05:52:01+00:00",
+ "at": "2026-10-18T06:14:18+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 15 trending",
-  "outlets: 1268 headlines from 29 feeds (18 owners), 68 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
-  "explainers: 2 kh- stories (on): kh-20261018-Q155164, kh-20261018-Q5465383; dropped: explainer Dubai: fewer than 3 owners' headlines name it and the story",
+  "watch: 6 candidates from 14 trending",
+  "outlets: 1266 headlines from 29 feeds (18 owners), 62 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
+  "explainers: 1 kh- stories (on): kh-20261018-Q5465383; dropped: explainer Dubai: fewer than 3 owners' headlines name it and the story; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261018-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141535181-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 162 h old and no longer trending live",
   "drop wk-Q3205897: 234 h old and no longer trending live",
-  "wait wp-2026_French_protests: gate: the article is under 6 hours old; facts may still move (ready in 3.6 h)",
+  "wait wp-2026_French_protests: gate: the article is under 6 hours old; facts may still move (ready in 3.2 h)",
   "nothing eligible to publish"
  ]
 }
