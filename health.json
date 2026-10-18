@@ -1,10 +1,10 @@
 {
- "at": "2026-10-18T17:32:37+00:00",
+ "at": "2026-10-18T17:45:31+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 7 candidates from 16 trending",
-  "outlets: 1365 headlines from 29 feeds (18 owners), 76 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-albania-protest",
+  "outlets: 1361 headlines from 29 feeds (18 owners), 75 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-albania-protest",
   "explainers: 1 kh- stories (on): kh-20261018-Q158467; dropped: explainer Pope Leo: fewer than 3 owners' headlines name it and the story; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story; explainer Rubio: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q141762710-2026w42: Orbitwire published (nw-20261017-paris-protest), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
@@ -14,7 +14,7 @@
   "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 174 h old and no longer trending live",
   "drop wk-Q3205897: 246 h old and no longer trending live",
-  "skip kh-20261018-Q158467: gate: no draft passed the fact checks: Chinor Road (चीनौर रोड) is not in the sources (only one outlet reports it)",
+  "skip kh-20261018-Q158467: gate: no draft passed the fact checks: unsupported: Only one report mentions that there was no official explanation (and regarding how the truck passed barricades, not the cause of the accident, which the other report attributes to mechanical failure): \"दुर्घटना के संबंध में अब तक कोई आधिकारिक कारण नहीं बताया गया है\"; unsupported: Only one report mentions ordering a detailed investigation to fix responsibility, while the second report ",
   "nothing eligible to publish"
  ]
 }
