@@ -1,10 +1,10 @@
 {
- "at": "2026-10-18T20:08:46+00:00",
+ "at": "2026-10-18T20:36:08+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 8 candidates from 16 trending",
-  "outlets: 1323 headlines from 29 feeds (18 owners), 70 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-albania-protest",
+  "watch: 9 candidates from 16 trending",
+  "outlets: 1317 headlines from 29 feeds (18 owners), 68 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-albania-protest",
   "explainers: 1 kh- stories (on): kh-20261019-Q158467; dropped: explainer Marco Rubio: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261019-Q158467: outside 07:00-24:00 IST",
@@ -12,6 +12,6 @@
   "drop nw-20261017-albania-protest: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141535181-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q141740811: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "hold wp-October_2026_Istanbul_floods: outside 07:00-24:00 IST"
  ]
 }
