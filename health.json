@@ -1,16 +1,19 @@
 {
- "at": "2026-10-18T03:36:24+00:00",
+ "at": "2026-10-18T04:10:19+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 16 trending",
-  "outlets: 1273 headlines from 29 feeds (18 owners), 67 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
-  "explainers: 4 kh- stories (on): kh-20261018-Q10218, kh-20261018-Q155164, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer October / Traffic Update CR: no Wikipedia article that can be its centre; explainer Dubai: fewer than 3 owners' headlines name it and the story",
+  "watch: 7 candidates from 18 trending",
+  "outlets: 1264 headlines from 29 feeds (18 owners), 65 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261017-kolkata-disaster",
+  "explainers: 4 kh- stories (on): kh-20261018-Q10218, kh-20261018-Q155164, kh-20261018-Q6109517, kh-20261018-Q5465383; dropped: explainer Dubai: fewer than 3 owners' headlines name it and the story; explainer CJI Surya Kant: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wp-2026_French_protests: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261018-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q141615137-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q141535181-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q5300674: 160 h old and no longer trending live",
-  "drop wk-Q3205897: 232 h old and no longer trending live"
+  "drop wk-Q3205897: 232 h old and no longer trending live",
+  "drop wk-Q19975570: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "wait wp-2026_French_protests: gate: the article is under 6 hours old; facts may still move (ready in 5.3 h)",
+  "nothing eligible to publish"
  ]
 }
