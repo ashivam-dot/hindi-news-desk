@@ -1,36 +1,36 @@
 # What this channel's own numbers say
 
-Updated 2026-10-18T08:36:08+00:00. Scored Shorts (views at 24 h): 44. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-18T12:00:15+00:00. Scored Shorts (views at 24 h): 46. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
-Baseline: a typical Short has 52 views at 24 h.
+Baseline: a typical Short has 49 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
-- category:news: x1.246 ranking lift (9 Shorts, typical 72 views)
-- region:india: x1.233 ranking lift (18 Shorts, typical 68 views)
-- region:world: x0.764 ranking lift (22 Shorts, typical 38 views)
+- region:india: x1.245 ranking lift (19 Shorts, typical 65 views)
+- category:news: x1.065 ranking lift (11 Shorts, typical 54 views)
+- region:world: x0.753 ranking lift (23 Shorts, typical 35 views)
 - category:economy: x0.75 ranking lift (5 Shorts, typical 26 views)
 - category:world: x0.75 ranking lift (5 Shorts, typical 26 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 29 |  |
-| nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 3 |  |
-| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 24 |  |
-| kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 3 |  |
-| kh-20261017-Q213380-p2 | 2026-10-17T13:25 | court | india | 19 |  |
-| kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 27 |  |
-| kh-20261017-Q19867977-p2 | 2026-10-17T09:21 | news | world | 7 |  |
-| kh-20261017-Q213380 | 2026-10-17T07:21 | court | india | 133 | 129 |
+| kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 47 |  |
+| nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 12 |  |
+| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 50 |  |
+| kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 5 |  |
+| kh-20261017-Q213380-p2 | 2026-10-17T13:25 | court | india | 27 |  |
+| kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 29 | 28 |
+| kh-20261017-Q19867977-p2 | 2026-10-17T09:21 | news | world | 7 | 7 |
+| kh-20261017-Q213380 | 2026-10-17T07:21 | court | india | 142 | 129 |
 | kh-20261017-Q141681561-p2 | 2026-10-17T05:06 | world | world | 6 | 6 |
-| kh-20261017-Q19867977 | 2026-10-17T04:18 | world | world | 35 | 35 |
+| kh-20261017-Q19867977 | 2026-10-17T04:18 | world | world | 36 | 35 |
 | kh-20261017-Q468324 | 2026-10-17T02:15 | news | india | 55 | 55 |
 | kh-20261017-Q141681561 | 2026-10-17T01:46 | world | world | 16 | 16 |
 | kh-20261016-Q796994 | 2026-10-16T14:14 | economy | india | 14 | 14 |
 | kh-20261016-Q10218 | 2026-10-16T13:22 | news | india | 571 | 548 |
 | kh-20261016-Q7040049 | 2026-10-16T12:33 | economy | india | 21 | 21 |
 | kh-20261016-Q478214 | 2026-10-16T11:08 | news | world | 48 | 47 |
-| kh-20261016-Q213380 | 2026-10-16T09:16 | court | india | 49 | 37 |
+| kh-20261016-Q213380 | 2026-10-16T09:16 | court | india | 50 | 37 |
 | kh-20261016-Q317521 | 2026-10-16T06:24 | news | world | 69 | 65 |
-| kh-20261016-Q3520703 | 2026-10-16T05:22 | news | world | 143 | 138 |
+| kh-20261016-Q3520703 | 2026-10-16T05:22 | news | world | 144 | 138 |
 | kh-20261016-Q7418472 | 2026-10-16T03:21 | court | india | 206 | 187 |
 | kh-20261016-Q1058 | 2026-10-16T02:49 | diplomacy | india | 82 | 82 |
 | kh-20261016-Q2341950 | 2026-10-16T02:11 | news | india | 94 | 94 |
