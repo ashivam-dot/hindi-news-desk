@@ -251,7 +251,7 @@ def test_narration_in_a_notices_hindi_or_from_no_one_is_sent_back():
 
 def test_formal_wikidata_labels_never_bind_the_writer():
     names = {"International Monetary Fund": "अन्तर्राष्ट्रीय मुद्रा कोष", "India Meteorological Department":
-             "भारत मौसम विज्ञान विभाग", "L. K. Advani": "लालकृष्ण आडवाणी"}
+             "भारत मौसम विज्ञान विभाग", "United States": "संयुक्त राज्य", "L. K. Advani": "लालकृष्ण आडवाणी"}
     assert writer.everyday_names(names) == {"L. K. Advani": "लालकृष्ण आडवाणी"}
     d = draft(names=NAMES + [{"hi": "IMF", "en": "International Monetary Fund"}])
     assert writer.plain_name("अन्तर्राष्ट्रीय मुद्रा कोष", d, "International Monetary Fund") == "IMF"
