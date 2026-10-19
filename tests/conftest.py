@@ -1,6 +1,6 @@
 import pytest
 
-from desk import media, outlets
+from desk import media, outlets, wiki
 
 
 @pytest.fixture(autouse=True)
@@ -13,5 +13,6 @@ def offline_outlets(monkeypatch):
     monkeypatch.setattr(outlets, "_feed", offline)
     monkeypatch.setattr(outlets, "_extract", offline)
     monkeypatch.setattr(media, "openverse_for", lambda *args, **kwargs: [])
+    monkeypatch.setattr(wiki, "hindi_spellings", lambda names: {})
     yield
     outlets.reset()

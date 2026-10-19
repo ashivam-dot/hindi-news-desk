@@ -642,13 +642,15 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     ground_en = source_en + "\n" + "\n".join(facts)
     ground_hi = source_hi + "\n" + "\n".join(facts) + "\n" + "\n".join(hi_names.values())
     log = []
+    looked: dict[str, str | None] = {}
     own = pen is None
     pen = pen or Pen()
     try:
         for attempt in range(DRAFTS):
             ignored = []
             draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
-            problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi, hi_names, banned_names or [],
+            problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
+                                          spellings(draft, hi_names, looked), banned_names or [],
                                           kind, agreed_toll, angle, reports)
             if not today_ok:
                 problems += not_today(script_text(draft))
@@ -678,6 +680,21 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
         if own:
             pen.close()
     raise ValueError("gate: no draft passed the fact checks: " + "; ".join(log[-1]["problems"])[:400])
+
+
+def spellings(draft: dict, hi_names: dict[str, str], looked: dict[str, str | None]) -> dict[str, str]:
+    """hi_names plus Wikidata's everyday Hindi spelling of each other name the draft lists; looked caches lookups."""
+    known = {en.lower() for en in hi_names}
+    new = list(dict.fromkeys(p["en"].strip() for p in draft.get("names") or []
+                             if isinstance(p, dict) and isinstance(p.get("en"), str) and p["en"].strip()
+                             and p["en"].strip().lower() not in known and p["en"].strip() not in looked))
+    if new:
+        try:
+            found = wiki.hindi_spellings(new)
+        except Exception:
+            found = {}
+        looked.update({n: found.get(n) for n in new})
+    return hi_names | everyday_names({n: hi for n, hi in looked.items() if hi})
 
 
 def _sentence_with(number: str, text: str) -> str:

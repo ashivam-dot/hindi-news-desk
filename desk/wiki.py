@@ -229,6 +229,25 @@ def hindi_names(ent: dict, pids: tuple[str, ...] = ("P17", "P27", "P19", "P20", 
     return out
 
 
+DISAMBIGUATION = "Q4167410"
+
+
+def hindi_spellings(names: list[str]) -> dict[str, str]:
+    """English name -> Wikidata's Hindi label of the item whose English Wikipedia article is that name (or a redirect
+    to it); disambiguation pages are left out. Covers names the subject's own item does not link, such as a minister
+    who visits after an attack (एकनाथ शिंदे, written "शून्डे" by the writer on 2026-10-19)."""
+    pages = page_info(list(dict.fromkeys(names)))
+    qids = {n: pages[n]["qid"] for n in names if (pages.get(n) or {}).get("qid")}
+    ents = entities(list(set(qids.values()))) if qids else {}
+    out = {}
+    for n, q in qids.items():
+        e = ents.get(q) or {}
+        hi = label(e, "hi")
+        if hi and not re.fullmatch(r"Q\d+", hi) and DISAMBIGUATION not in {c["value"] for c in claims(e, "P31")}:
+            out[n] = hi
+    return out
+
+
 def hi_to_en(titles: list[str]) -> dict[str, str]:
     """Hindi Wikipedia title -> English Wikipedia title of the same Wikidata item, where both exist."""
     out = {}

@@ -2,7 +2,7 @@ import copy
 
 import pytest
 
-from desk import writer
+from desk import wiki, writer
 
 SOURCE_EN = ("Ramesh Prasad Verma (2 March 1945 – 8 October 2026) was an Indian playback singer from Varanasi. His first "
              "album came out in 1968. He sang in 12 languages, and more than 300,000 people attended one concert in "
@@ -297,6 +297,23 @@ def test_a_sourced_name_missing_only_from_names_does_not_reject(tmp_path):
     assert not writer.unlisted_but_sourced("'पद्म श्री' (Bharat Ratna) is missing from NAMES.", SOURCE_EN)
     assert not writer.unlisted_but_sourced("'पद्म श्री' (Padma Shri) is not supported and missing from NAMES.",
                                            SOURCE_EN)
+
+
+def test_a_name_the_subject_does_not_link_is_still_held_to_wikidatas_spelling(monkeypatch):
+    calls = []
+    monkeypatch.setattr(wiki, "hindi_spellings",
+                        lambda names: calls.append(names) or {"Eknath Shinde": "एकनाथ शिंदे"})
+    looked = {}
+    bad = {"names": [{"hi": "एकनाथ शून्डे", "en": "Eknath Shinde"}, {"hi": "मुम्बई", "en": "Mumbai"}]}
+    spelled = writer.spellings(bad, {"Mumbai": "मुम्बई"}, looked)
+    assert spelled == {"Mumbai": "मुम्बई", "Eknath Shinde": "एकनाथ शिंदे"} and calls == [["Eknath Shinde"]]
+    writer.spellings(bad, {"Mumbai": "मुम्बई"}, looked)
+    assert len(calls) == 1  # a redraft does not look the same name up again
+    beats = [{"say": "महाराष्ट्र के उप मुख्यमंत्री एकनाथ शून्डे ने मुलाकात की।", "photo": 0, "caption": "x"}]
+    problems, _ = writer.validate({"title": "t", "beats": beats, "names": bad["names"][:1]}, PHOTOS,
+                                  {"en": "Eknath Shinde", "hi": None}, "Eknath Shinde visited.", "", spelled, [],
+                                  "explainer", False)
+    assert "write Eknath Shinde as एकनाथ शिंदे (Wikidata's Hindi name), not एकनाथ शून्डे" in problems
 
 
 def test_the_hindi_source_is_dropped_when_missing():
