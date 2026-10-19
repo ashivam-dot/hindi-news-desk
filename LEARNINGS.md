@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-19T04:17:38+00:00. Scored Shorts (views at 24 h): 51. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-19T07:19:49+00:00. Scored Shorts (views at 24 h): 51. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 47 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
@@ -13,15 +13,15 @@ Baseline: a typical Short has 47 views at 24 h.
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 0 |  |
+| kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 1 |  |
 | kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 64 | 64 |
-| nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 20 | 20 |
-| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 119 | 118 |
+| nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 21 | 20 |
+| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 125 | 118 |
 | kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 8 | 5 |
 | kh-20261017-Q213380-p2 | 2026-10-17T13:25 | court | india | 37 | 27 |
 | kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 35 | 28 |
 | kh-20261017-Q19867977-p2 | 2026-10-17T09:21 | news | world | 8 | 7 |
-| kh-20261017-Q213380 | 2026-10-17T07:21 | court | india | 166 | 129 |
+| kh-20261017-Q213380 | 2026-10-17T07:21 | court | india | 169 | 129 |
 | kh-20261017-Q141681561-p2 | 2026-10-17T05:06 | world | world | 6 | 6 |
 | kh-20261017-Q19867977 | 2026-10-17T04:18 | world | world | 37 | 35 |
 | kh-20261017-Q468324 | 2026-10-17T02:15 | news | india | 56 | 55 |
