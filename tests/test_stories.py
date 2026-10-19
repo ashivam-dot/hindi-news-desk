@@ -144,6 +144,19 @@ def test_music_fits_any_length():
         for seconds in (20.0, 31.3, 37.8, 44.6, 52.1):
             bed = music.score(seconds, mood, f"{mood}{seconds}")
             assert bed.shape == (int(seconds * music.SR), 2)
+            fx = music.accents(seconds, [0.2, 5.0, seconds - 0.1, seconds + 3], f"{mood}{seconds}")
+            assert fx.shape == bed.shape and np.abs(fx).max() <= 0.91
+
+
+def test_the_news_bed_is_heard_from_the_first_frame_and_the_accents_swell_into_each_beat():
+    first = slice(0, int(0.1 * music.SR))
+    news = music.score(30.0, "news", "x")
+    assert np.abs(news[first]).max() > 0.02
+    assert np.abs(music.score(30.0, "tribute", "x")[first]).max() < np.abs(news[first]).max()
+    fx = music.accents(30.0, [6.0], "x")
+    assert np.abs(fx[first]).max() > 0.3
+    swell, quiet = slice(int(5.8 * music.SR), int(6.0 * music.SR)), slice(int(3 * music.SR), int(5 * music.SR))
+    assert np.abs(fx[swell]).max() > 0.3 and np.abs(fx[quiet]).max() < 0.01
 
 
 def test_article_keeps_the_outcome_at_the_end_of_a_long_lead(monkeypatch):

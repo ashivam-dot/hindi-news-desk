@@ -83,8 +83,10 @@ INCIDENT_BRIEF = """STORY: {name}. Write a Hindi TV news report of what happened
 affected.
 
 Shape (a news report, in this order):
-1. Lead (beat 1, under 16 words): what happened, where and when, as a plain news sentence with the key number.
-2. The details: the sequence of events with times, places and figures, each attributed ("अधिकारियों के मुताबिक").
+1. Hook (beat 1, 8 to 14 words): the most striking verified fact, what happened and to whom or how many, said
+   with gravity, never for shock.
+2. Where and when, then the sequence of events with times, places and figures, each attributed ("अधिकारियों के
+   मुताबिक").
 3. The people affected, with official figures only if the SOURCE gives them.
 4. The official response: rescuers, officials, investigators, and what they said.
 5. What is still unknown or under investigation, said plainly.
@@ -96,8 +98,8 @@ PROTEST_BRIEF = """STORY: {name}. Write a Hindi TV news report that explains, fa
 or movement is, why people took to the streets, and where it stands now.
 
 Shape (a news report, in this order):
-1. Lead (beat 1, under 16 words): the newest development in the SOURCE, as a plain news sentence.
-2. How it began: the trigger, with dates.
+1. Hook (beat 1, 8 to 14 words): the newest and most striking development in the SOURCE, as a plain news sentence.
+2. Where and when, and how it began: the trigger, with dates.
 3. Who is involved and what they demand, attributed ("आयोजकों का कहना है", "पार्टी का कहना है").
 4. How the government, police or courts responded, attributed to them.
 5. The turning point or the latest step.
@@ -112,10 +114,10 @@ headline only shows which story; its words are not a source). Write a Hindi TV n
 the headline knows, in 45 seconds, what happened, the key numbers, why, and what happens next.
 
 Shape (a news report, in this order):
-1. Lead (beat 1, under 16 words): a plain news sentence naming {name}: who did what, where and when, with the key
-   number if there is one. Never a question, never a teaser.
-2. The details: what exactly happened, with the dates, amounts and figures the REPORTING gives, each attributed
-   ("रिपोर्टों के मुताबिक").
+1. Hook (beat 1, 8 to 14 words): a plain news sentence naming {name} and the most striking fact of the story, who
+   did what, with the key number if there is one. Never a question, never a teaser.
+2. Where and when, then the details: what exactly happened, with the dates, amounts and figures the REPORTING gives,
+   each attributed ("रिपोर्टों के मुताबिक").
 3. The official statement: what the government, company, court or person said, attributed to them.
 4. क्यों: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना
    है"). If no report gives a reason, say plainly that no official reason has been given.
@@ -142,7 +144,7 @@ RULES = """RULES (all mandatory):
   समाप्त, कोशिश not प्रयास, बढ़ोतरी not वृद्धि, IMF not अंतरराष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान
   विभाग, even where HINDI NAMES gives the formal name. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
   "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
-  sentences of 10 to 18 words. Count the words before you answer.
+  sentences, 8 to 18 words in all. Count the words before you answer.
 - Register: a Hindi TV news bulletin read by an anchor. Third person, complete sentences. A claim, allegation or
   reported figure says who gives it, by name ("अस्पताल ने बताया", "पुलिस का कहना है", "NDTV के मुताबिक"); a fact on
   the record (a past office, a year, a known role) needs no attribution. Use the vague "रिपोर्टों के मुताबिक" in at
@@ -151,8 +153,19 @@ RULES = """RULES (all mandatory):
 - Every beat must carry a specific, checkable fact from the SOURCES (a number, a date, a name, a decision, an official
   statement); no vague praise, no feelings, no opinion, no moral or conclusion of your own.
 - Vary how beats open, and never start more than 2 beats with the same word.
-- Lead: beat 1 states the news itself within its first 5 words (who or what, then what happened), never a date, a
-  greeting, a question or a slow introduction.
+- Hook: half the viewers decide in the first second. Beat 1 opens on the single most striking verified fact, who or
+  what and what happened, with the key number if there is one ("बस खाई में गिरी, 12 यात्रियों की मौत", not
+  "सोमवार को उत्तराखंड में एक हादसा हुआ"). Where and when can wait for beat 2. Never a date, a greeting, a
+  question, a slow introduction or a teaser that hides the news.
+- Pull: beat 2 or 3 may name the open question the rest of the Short answers, as a plain statement the SOURCES
+  support ("हमला किसने करवाया, पुलिस इसकी जांच कर रही है"), and a later beat answers it or says plainly that it is
+  still unknown.
+- Rhythm: write for the ear, the way an anchor speaks. Put the new fact first and who said it after ("..., पुलिस ने
+  बताया"); active verbs; mix one very short sentence (5 to 8 words) with longer ones, never three beats of the same
+  length in a row.
+- Completeness: cover every key point the SOURCES give: what happened, who, where, when, how many, what officials
+  or the people involved said, why (or that no reason is given), and what happens next. Leave out only what the
+  SOURCES do not support.
 - Every beat adds one new fact; no recap, no filler, no empty lines such as "यह खबर चर्चा में है" or "यह देखना
   होगा".
 - Write every number as digits: years (1994), ages (75), dates ("10 अक्टूबर 2026"), and big numbers with लाख or
@@ -167,7 +180,8 @@ RULES = """RULES (all mandatory):
   you can, and the same photo at most twice.
 - caption: the beat's key fact as a news graphic shows it, 1 to 4 Hindi words: a number with its unit ("11.39%",
   "6 लाख घर", "2 घंटे"), a date, a decision ("उड़ान डायवर्ट"), a role or an honour. Prefer a number whenever the beat
-  has one. Never a place name alone: viewers read a place over a photo as where the photo was taken.
+  has one. Never a place name alone: viewers read a place over a photo as where the photo was taken. Beat 1's
+  caption is the event itself ("कार पर फायरिंग", "12 की मौत"), never a time or a date.
 - label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
   "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
   "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.

@@ -1,7 +1,8 @@
 """A quiet score written in code for each Short (no samples, so no licence or Content ID claims).
 
-"tribute": soft piano arpeggios over a warm pad, in a minor key, slow. "news": a low pulse and pad, steadier.
-The key is chosen from the story id, so consecutive Shorts don't sound identical.
+"tribute": soft piano arpeggios over a warm pad, in a minor key, slow. "news": a low pulse, a ticking clock and a
+pad, brisker, present from the first frame. The key is chosen from the story id, so consecutive Shorts don't sound
+identical.
 """
 from __future__ import annotations
 
@@ -53,11 +54,57 @@ def _reverb(x: np.ndarray, seconds: float = 2.8, wet: float = 0.35, seed: int = 
     return (1 - wet) * x + wet * y
 
 
+def _band(noise: np.ndarray, low: float, high: float) -> np.ndarray:
+    spec = np.fft.rfft(noise)
+    f = np.fft.rfftfreq(len(noise), 1 / SR)
+    spec[(f < low) | (f > high)] = 0
+    return np.fft.irfft(spec, len(noise)).astype(np.float32)
+
+
+def _tick(rng: np.random.Generator, vel: float) -> np.ndarray:
+    n = int(0.03 * SR)
+    burst = _band(rng.standard_normal(n), 5000, 12000) * np.exp(-np.arange(n) / SR * 160)
+    return (vel * burst / max(np.abs(burst).max(), 1e-6)).astype(np.float32)
+
+
+def _whoosh(rng: np.random.Generator, dur: float = 0.45) -> np.ndarray:
+    """Filtered noise swelling into the moment it ends on."""
+    t = np.arange(int(dur * SR)) / SR
+    swell = (t / dur) ** 3 * np.minimum(1, (dur - t) / 0.04)
+    air = _band(rng.standard_normal(len(t)), 700, 7000) * swell
+    return (air / max(np.abs(air).max(), 1e-6)).astype(np.float32)
+
+
+def _impact() -> np.ndarray:
+    t = np.arange(int(0.9 * SR)) / SR
+    thump = np.sin(2 * np.pi * (48 + 40 * np.exp(-t * 18)) * t) * np.exp(-t * 4.5) * np.minimum(1, t / 0.004)
+    return thump.astype(np.float32)
+
+
+def accents(seconds: float, at: list[float], seed_text: str) -> np.ndarray:
+    """Stereo float32 [n, 2], peak about -1 dBFS: a low hit on the first frame and a whoosh swelling into each of
+    the moments `at` (seconds). Mixed beside the bed, not under it, so the narration doesn't duck it away."""
+    rng = np.random.default_rng(int(hashlib.sha1(seed_text.encode()).hexdigest()[:8], 16))
+    out = np.zeros((int(seconds * SR), 2), np.float32)
+    hit = _impact()
+    end = min(len(out), len(hit))
+    out[:end] += hit[:end, None]
+    for when in at:
+        whoosh = _whoosh(rng)
+        stop = int(when * SR)
+        start = stop - len(whoosh)
+        if start < int(0.5 * SR) or stop > len(out):
+            continue
+        out[start:stop, 0] += 0.7 * whoosh
+        out[start:stop, 1] += 0.55 * whoosh
+    return (out / max(np.abs(out).max() / 0.9, 1.0)).astype(np.float32)
+
+
 def score(seconds: float, mood: str, seed_text: str) -> np.ndarray:
     """Stereo float32 [n, 2] at 44.1 kHz, peak about -6 dBFS, with fades."""
     seed = int(hashlib.sha1(seed_text.encode()).hexdigest()[:8], 16)
     shift = [0, 2, -2, 3, -3][seed % 5]
-    bpm = 66 if mood == "tribute" else 84
+    bpm = 66 if mood == "tribute" else 96
     beat = 60 / bpm
     bar = 4 * beat
     total = int((seconds + 1 + bar + 4) * SR)
@@ -90,11 +137,15 @@ def score(seconds: float, mood: str, seed_text: str) -> np.ndarray:
                 e = min(total, s + len(tone))
                 left[s:e] += tone[:e - s]
                 right[s:e] += tone[:e - s]
+                tick = _tick(rng, 0.10 if i % 2 == 0 else 0.06)
+                e = min(total, s + len(tick))
+                left[s:e] += 0.8 * tick[:e - s]
+                right[s:e] += tick[:e - s]
         t0 += bar
         k += 1
     left, right = _reverb(left, seed=seed), _reverb(right, seed=seed + 1)
     mix = np.stack([left, right], axis=1)[: int(seconds * SR)]
-    fade_in, fade_out = int(1.0 * SR), int(1.8 * SR)
+    fade_in, fade_out = int((1.0 if mood == "tribute" else 0.08) * SR), int(1.8 * SR)
     mix[:fade_in] *= np.linspace(0, 1, fade_in)[:, None]
     mix[-fade_out:] *= np.linspace(1, 0, fade_out)[:, None]
     return (mix / max(np.abs(mix).max(), 1e-6) * 0.5).astype(np.float32)

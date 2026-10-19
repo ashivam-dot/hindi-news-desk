@@ -1,4 +1,5 @@
 import base64
+import dataclasses
 import io
 import json
 from pathlib import Path
@@ -37,6 +38,13 @@ def test_clock_times_and_symbols_are_spoken_in_hindi():
     assert voice.speakable("रात 11:00 बजे तक") == "रात 11 बजे तक"
     assert voice.speakable("सुबह 9:30 बजे") == "सुबह 9 बजकर 30 मिनट"
     assert voice.speakable("≈5% लोग") == "लगभग 5 प्रतिशत लोग"
+
+
+def test_a_report_of_deaths_is_read_gravely_and_other_news_with_urgency(short):
+    news = dict(short.scene, mood="news")
+    assert voice.direction_for(short) == voice.DIRECTION["tribute"]
+    assert voice.direction_for(dataclasses.replace(short, scene=news)) == voice.DIRECTION["loss"]
+    assert voice.direction_for(dataclasses.replace(short, scene=news, loss=False)) == voice.DIRECTION["news"]
 
 
 def test_no_key_and_no_reference_holds(short, tmp_path, no_key, monkeypatch):

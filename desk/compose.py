@@ -396,20 +396,26 @@ def _end_layers(accent: tuple, disclosure: str = DISCLOSURE) -> list[tuple[np.nd
     return [logo, src, disc]
 
 
-def _mix(narration: Path, short: Short, seconds: float, out: Path) -> Path:
+def _mix(narration: Path, short: Short, seconds: float, out: Path, accents: list[float] | None = None) -> Path:
     import soundfile as sf
 
     bed = music.score(seconds + 0.5, short.scene.get("mood", "tribute"), short.id)
     sf.write(out / "music.wav", bed, music.SR)
+    inputs = ["-i", str(narration), "-i", str(out / "music.wav")]
+    fx, layers = "", "[v][duck]"
+    if accents is not None:
+        sf.write(out / "accents.wav", music.accents(seconds + 0.5, accents, short.id), music.SR)
+        inputs += ["-i", str(out / "accents.wav")]
+        fx, layers = "[2:a]aresample=48000,volume=0.14[fx];", "[v][duck][fx]"
     mixed = out / "mix.wav"
     graph = ("[0:a]aresample=48000,highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=5:release=120,"
              "volume=1.0,asplit=2[v][key];"
              "[1:a]aresample=48000,volume=0.30[m];"
-             "[m][key]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[duck];"
-             "[v][duck]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9,"
+             "[m][key]sidechaincompress=threshold=0.03:ratio=8:attack=20:release=400[duck];" + fx +
+             f"{layers}amix=inputs={len(inputs) // 2}:duration=first:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9,"
              f"apad,atrim=0:{seconds:.3f}[out]")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(narration), "-i", str(out / "music.wav"),
-                    "-filter_complex", graph, "-map", "[out]", "-ar", "48000", "-ac", "2", str(mixed)], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", graph, "-map", "[out]",
+                    "-ar", "48000", "-ac", "2", str(mixed)], check=True)
     return mixed
 
 
@@ -753,7 +759,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     badge = _badge_layer()
     card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
     work.mkdir(parents=True, exist_ok=True)
-    mixed = _mix(work / "narration.wav", short, duration, work)
+    accents = None if short.loss else [s["start"] for s in shots[1:]]
+    mixed = _mix(work / "narration.wav", short, duration, work, accents)
     out = work / "short.mp4"
     stills = work / "stills"
     stills.mkdir(exist_ok=True)
@@ -768,7 +775,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         k = next(j for j, s in enumerate(shots) if t < s["end"] or j == len(shots) - 1)
         shot = shots[k]
         u = (t - shot["start"]) / max(shot["end"] - shot["start"], 0.1)
-        punch = 0.03 * max(0.0, 1 - (t - shot["start"]) / 0.35) if k else 0.0
+        punch = 0.03 * max(0.0, 1 - (t - shot["start"]) / 0.35) if k else 0.06 * max(0.0, 1 - t / 0.6)
         win = cam.shoot(plates[shot["photo"]], u, shot["motion"], punch)
         if k and (t - shot["start"]) * FPS < CROSSFADE:
             prev = shots[k - 1]

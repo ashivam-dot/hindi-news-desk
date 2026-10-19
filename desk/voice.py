@@ -49,12 +49,23 @@ GEMINI_TTS = ("gemini-3.8-flash-lite-tts", "gemini-3.8-flash-tts", "gemini-3.1-f
               "gemini-2.5-flash-preview-tts")
 MAX_QUOTA_WAIT = 90.0
 UNKNOWN_QUOTA_BACKOFF = (20.0, 40.0)
-_BASE = ("Read this Hindi news bulletin aloud as a senior Hindi TV news anchor on air: formal, crisp, authoritative "
-         "and measured, with clear diction, firm sentence endings and a short pause between sentences and a longer "
-         "one between lines. {mood} Not conversational, not a storyteller, never sensational, never dramatic, no "
-         "shouting. Pace: about 135 words a minute. Speak only the transcript.")
-DIRECTION = {"tribute": _BASE.format(mood="This is an obituary report: grave, respectful and steady."),
-             "news": _BASE.format(mood="This is a news report: serious, neutral and steady.")}
+# Owner, 2026-10-20: "make everyone force to listen the news ... everyone love to hear it". The 14 Oct direction
+# (measured, steady) still lost about half the viewers in the first second.
+_BASE = ("Read this Hindi news bulletin aloud as a senior prime-time Hindi TV news anchor on air: confident, crisp "
+         "and authoritative, with real energy and a sense of urgency, clear diction and firm sentence endings. Open "
+         "the first line strongly, stress the key name and number in each line, and keep a brisk forward rhythm "
+         "with a short pause between sentences and a slightly longer one between lines. {mood} Never "
+         "conversational or chatty, never a storyteller, never shouting, never melodramatic. Pace: about 140 words "
+         "a minute. Speak only the transcript.")
+DIRECTION = {"tribute": _BASE.format(mood="This is an obituary report: grave and respectful, the energy held back."),
+             "loss": _BASE.format(mood="People died or were hurt: grave, steady and compassionate, the urgency "
+                                       "held back."),
+             "news": _BASE.format(mood="This is a news report: compelling and urgent, yet neutral and factual.")}
+
+
+def direction_for(short: Short) -> str:
+    mood = short.scene.get("mood", "news")
+    return DIRECTION["loss"] if mood == "news" and short.loss else DIRECTION.get(mood, DIRECTION["news"])
 TAKES = 3
 MIN_COVERAGE = align.MIN_COVERAGE
 TARGET_WPM, AIM_WPM, HARD_WPM = (128.0, 148.0), 138.0, (110.0, 180.0)
@@ -332,8 +343,7 @@ def _paced(wav: Path, tokens, words, coverage, spoken, wpm, out_dir: Path) -> tu
 
 def _gemini_story(short: Short, out_dir: Path) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
-    mood = short.scene.get("mood", "news")
-    direction = DIRECTION.get(mood, DIRECTION["news"])
+    direction = direction_for(short)
     transcript = "\n".join(speakable(b.text) for b in short.beats)
     tokens = [(w, i) for i, b in enumerate(short.beats) for w in b.text.split()]
     wav = out_dir / "narration.wav"
@@ -401,7 +411,7 @@ def synthesize_lines(short: Short, out_dir: Path) -> dict:
     if not gemini.key():
         raise VoiceHold("hold: no Sulafat voice: GEMINI_API_KEY is not set")
     out_dir.mkdir(parents=True, exist_ok=True)
-    direction = DIRECTION["news"]
+    direction = direction_for(short)
     part = out_dir / "line.wav"
     pieces, records, tries, pinned = [], [], [], None
     for i, beat in enumerate(short.beats):
