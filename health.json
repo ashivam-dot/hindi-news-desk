@@ -1,20 +1,20 @@
 {
- "at": "2026-10-19T15:24:20+00:00",
+ "at": "2026-10-19T16:15:40+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 7 candidates from 15 trending",
-  "outlets: 1341 headlines from 30 feeds (19 owners), 50 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261019-Q324546, kh-20261019-Q140632219, kh-20261019-Q47543, kh-20261019-Q3634451; dropped: explainer Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story",
+  "watch: 9 candidates from 16 trending",
+  "outlets: 1334 headlines from 30 feeds (19 owners), 47 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261019-Q324546, kh-20261019-Q140632219, kh-20261019-Q47543, kh-20261019-Q3874799; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Delhi's Jama Masjid: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q1702112: Orbitwire published (wk-Q1702112), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261019-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261019-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop wk-Q141762710-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261019-Q3874799: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19975570: 75 h old and no longer trending live",
-  "drop wk-Q327073: 51 h old and no longer trending live"
+  "drop wk-Q19975570: 76 h old and no longer trending live"
  ]
 }
