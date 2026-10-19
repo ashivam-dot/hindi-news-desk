@@ -1,17 +1,23 @@
 {
- "at": "2026-10-19T02:56:11+00:00",
+ "at": "2026-10-19T03:39:28+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 5 candidates from 6 trending",
-  "outlets: 1235 headlines from 29 feeds (18 owners), 55 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-attack",
-  "explainers: 2 kh- stories (on): kh-20261019-Q1352, kh-20261019-Q51993; dropped: explainer Tel Aviv-Vienna: fewer than 3 owners' headlines name it and the story; explainer Treasury: fewer than 3 owners' headlines name it and the story",
+  "watch: 6 candidates from 7 trending",
+  "outlets: 1239 headlines from 30 feeds (18 owners), 57 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-attack",
+  "explainers: 3 kh- stories (on): kh-20261019-Q1352, kh-20261019-Q116758847, kh-20261019-Q51993; dropped: explainer Tel Aviv-Vienna: fewer than 3 owners' headlines name it and the story; explainer Treasury: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['wikipedia top: no Wikipedia pageview data for the last three days', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261019-Q116758847: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop wk-Q141762710-2026w42: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261019-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q141740811: 111 h old and no longer trending live",
-  "skip kh-20261019-Q1352: gate: no draft passed the fact checks: unsupported: Only one report (NDTV) mentions that water was drained using pumps \"पंपों से\".; unsupported: Only one report (Hindustan Times) mentions the months October to December, and it states the season \"sets in\" (begins) during this period, not that it lasts until December \"दिसंबर तक रहता है\".",
-  "skip nw-20261018-tiger-attack: gate: only 0 usable photos of Tiger (want 2)",
-  "nothing eligible to publish"
- ]
+  "drop wk-Q141740811: 112 h old and no longer trending live",
+  "published kh-20261019-Q1352: https://www.youtube.com/shorts/RprSViVEtag"
+ ],
+ "published": {
+  "video_id": "RprSViVEtag",
+  "url": "https://www.youtube.com/shorts/RprSViVEtag",
+  "title": "चेन्नई के पैरिस में 36 सेंटीमीटर बारिश, कई इलाकों में भरा पानी",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }

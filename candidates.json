@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T02:56:11+00:00",
+ "at": "2026-10-19T03:39:29+00:00",
  "trending": [
   {
    "qid": "Q141762710",
@@ -114,17 +114,17 @@
   {
    "qid": "Q141760142",
    "title": "2026 Kolkata Durga Puja crowd crush",
-   "fame": 250000,
+   "fame": 275000,
    "views": 0,
    "traffic": 0,
-   "news": 250000,
-   "news_at": "2026-10-19T02:56:43.397024+00:00",
+   "news": 275000,
+   "news_at": "2026-10-19T03:39:51.257601+00:00",
    "headlines": [
     "10-Day Police Custody For 7 Accused In Kolkata Durga Puja Pandal Stampede",
     "PRESIDENT OF INDIA’S GREETINGS ON DURGA PUJA",
-    "Kolkata stampede: Former cops flag lack of crowd mgmt, space constraint",
-    "Kolkata Durga Puja Stampede: BJP MLA Says ‘Mistakes Happen’, Warns Against Premature Blame",
-    "Rain, poor crowd control likely led to Kolkata Durga Puja stampede: What we know so far"
+    "Visakhapatnam’s Bengali community celebrates Durga Puja with rituals, bhog and cultural programmes",
+    "Kolkata stampede: Former cops flag lack of crowd management, space constraints",
+    "Kolkata Durga Puja Stampede: BJP MLA Says ‘Mistakes Happen’, Warns Against Premature Blame"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -138,8 +138,9 @@
    "via": [
     "google-news:10-Day Police Custody For 7 Accused In Kolkata Durga Puja Pandal Stampede",
     "google-news:PRESIDENT OF INDIA’S GREETINGS ON DURGA PUJA",
-    "google-news:Kolkata stampede: Former cops flag lack of crowd mgmt, space constraint",
+    "google-news:Visakhapatnam’s Bengali community celebrates Durga Puja with rituals, bhog and cultural programmes",
     "outlet:Government of India",
+    "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
@@ -147,6 +148,7 @@
    ],
    "owners": [
     "Government of India",
+    "The Hindu Group",
     "HT Media",
     "Network18",
     "Bennett, Coleman & Co.",
@@ -161,10 +163,30 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-19T02:56:43.397024+00:00"
+     "at": "2026-10-19T03:39:51.257601+00:00"
     },
     {
-     "title": "Kolkata stampede: Former cops flag lack of crowd mgmt, space constraint",
+     "title": "Visakhapatnam’s Bengali community celebrates Durga Puja with rituals, bhog and cultural programmes",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/visakhapatnams-bengali-community-celebrates-durga-puja-with-rituals-bhog-and-cultural-programmes/article71600609.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T02:39:20+00:00"
+    },
+    {
+     "title": "17 dead after stampede breaks out at Kolkata Durga Puja Pandal",
+     "url": "https://www.thehindu.com/news/national/west-bengal/west-bengal-pandal-collapse-updates/article71597499.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T02:32:53+00:00"
+    },
+    {
+     "title": "Kolkata stampede: Former cops flag lack of crowd management, space constraints",
      "url": "https://www.hindustantimes.com/india-news/kolkata-stampede-former-cops-flag-lack-of-crowd-mgmt-space-constraint-101792349590416.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
@@ -212,26 +234,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-18T14:05:01+00:00"
-    },
-    {
-     "title": "Kolkata Durga Puja Stampede Kills 19: 7 Arrested Sent To 10-Day Police Custody",
-     "url": "https://www.news18.com/india/kolkata-durga-puja-stampede-kills-19-7-arrested-sent-to-10-day-police-custody-ws-l-10387696.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T13:04:39+00:00"
-    },
-    {
-     "title": "BJP leader's role in puja committee under scanner amid Kolkata Chorbagan pandal stampede that killed 19",
-     "url": "https://www.hindustantimes.com/india-news/kolkata-durga-puja-stampede-hits-bjp-amid-row-over-leaders-role-in-bengal-s-puja-committees-101792326905778.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-18T12:35:05+00:00"
     }
    ],
    "id": "wk-Q141760142",
@@ -241,9 +243,9 @@
    "coords": null,
    "has_coords": true,
    "top": {
-    "IN": 3
+    "IN-nation": 2
    },
-   "top_score": 0.9,
+   "top_score": 0.57,
    "top_headlines": [
     "10-Day Police Custody For 7 Accused In Kolkata Durga Puja Pandal Stampede"
    ]
@@ -272,10 +274,11 @@
    "owners": [
     "HT Media",
     "NDTV",
-    "The Hindu Group"
+    "The Hindu Group",
+    "DB Corp"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -285,8 +288,10 @@
     "Chennai Braces For Northeast Monsoon, Heavy Rain Predicted",
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "जयपुर में ओले गिरे; MP के 11 जिलों में बारिश:केदारनाथ-बद्रीनाथ में तापमान माइनस में; चेन्नई में सड़कों पर पानी भरा"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
@@ -339,14 +344,100 @@
     "outlet:HT Media",
     "outlet:NDTV",
     "outlet:The Hindu Group",
+    "outlet:DB Corp",
     "google-news:Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
+   ]
+  },
+  {
+   "id": "kh-20261019-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+   "story_keys": [
+    "commit",
+    "public",
+    "share"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T03:23:54+00:00",
+   "owners": [
+    "BBC",
+    "India Today Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+    "Musk urges Anthropic to give pledged shares directly to people",
+    "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+     "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T02:41:41+00:00"
+    },
+    {
+     "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+     "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T03:23:54+00:00"
+    },
+    {
+     "title": "Musk urges Anthropic to give pledged shares directly to people",
+     "url": "https://www.indiatoday.in/technology/news/story/elon-musk-anthropic-5-percent-shares-public-benefit-fund-3020466-2026-10-19?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T03:19:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:Al Jazeera Media Network",
+    "google-news:Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
    ]
   },
   {
@@ -492,6 +583,7 @@
    },
    "top_score": 1.3,
    "top_headlines": [
+    "Actor Tiger Shroff escapes unhurt in Juhu firing incident; suspect detained",
     "Tiger Shroff: Bollywood actor survives shooting in Mumbai"
    ]
   },
@@ -599,10 +691,11 @@
    "owners": [
     "HT Media",
     "NDTV",
-    "The Hindu Group"
+    "The Hindu Group",
+    "DB Corp"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -612,8 +705,10 @@
     "Chennai Braces For Northeast Monsoon, Heavy Rain Predicted",
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "जयपुर में ओले गिरे; MP के 11 जिलों में बारिश:केदारनाथ-बद्रीनाथ में तापमान माइनस में; चेन्नई में सड़कों पर पानी भरा"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
@@ -666,14 +761,100 @@
     "outlet:HT Media",
     "outlet:NDTV",
     "outlet:The Hindu Group",
+    "outlet:DB Corp",
     "google-news:Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
+   ]
+  },
+  {
+   "id": "kh-20261019-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+   "story_keys": [
+    "commit",
+    "public",
+    "share"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T03:23:54+00:00",
+   "owners": [
+    "BBC",
+    "India Today Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+    "Musk urges Anthropic to give pledged shares directly to people",
+    "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+     "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T02:41:41+00:00"
+    },
+    {
+     "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+     "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T03:23:54+00:00"
+    },
+    {
+     "title": "Musk urges Anthropic to give pledged shares directly to people",
+     "url": "https://www.indiatoday.in/technology/news/story/elon-musk-anthropic-5-percent-shares-public-benefit-fund-3020466-2026-10-19?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T03:19:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:Al Jazeera Media Network",
+    "google-news:Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
    ]
   },
   {
@@ -895,6 +1076,7 @@
    },
    "top_score": 1.3,
    "top_headlines": [
+    "Actor Tiger Shroff escapes unhurt in Juhu firing incident; suspect detained",
     "Tiger Shroff: Bollywood actor survives shooting in Mumbai"
    ]
   },
@@ -1012,8 +1194,8 @@
   }
  ],
  "notes": [
-  "outlets: 1235 headlines from 29 feeds (18 owners), 55 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-attack",
-  "explainers: 2 kh- stories (on): kh-20261019-Q1352, kh-20261019-Q51993; dropped: explainer Tel Aviv-Vienna: fewer than 3 owners' headlines name it and the story; explainer Treasury: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1239 headlines from 30 feeds (18 owners), 57 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-attack",
+  "explainers: 3 kh- stories (on): kh-20261019-Q1352, kh-20261019-Q116758847, kh-20261019-Q51993; dropped: explainer Tel Aviv-Vienna: fewer than 3 owners' headlines name it and the story; explainer Treasury: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
   "wikipedia top: no Wikipedia pageview data for the last three days",
@@ -1021,11 +1203,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1235,
-  "feeds": 29,
+  "headlines": 1239,
+  "feeds": 30,
   "owners": 18,
-  "matched": 55,
-  "corroborated": 5
+  "matched": 57,
+  "corroborated": 6
  },
  "emerging": [
   {
@@ -1137,6 +1319,7 @@
    },
    "top_score": 1.3,
    "top_headlines": [
+    "Actor Tiger Shroff escapes unhurt in Juhu firing incident; suspect detained",
     "Tiger Shroff: Bollywood actor survives shooting in Mumbai"
    ]
   }
@@ -1166,10 +1349,11 @@
    "owners": [
     "HT Media",
     "NDTV",
-    "The Hindu Group"
+    "The Hindu Group",
+    "DB Corp"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1179,8 +1363,10 @@
     "Chennai Braces For Northeast Monsoon, Heavy Rain Predicted",
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "जयपुर में ओले गिरे; MP के 11 जिलों में बारिश:केदारनाथ-बद्रीनाथ में तापमान माइनस में; चेन्नई में सड़कों पर पानी भरा"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
@@ -1233,14 +1419,100 @@
     "outlet:HT Media",
     "outlet:NDTV",
     "outlet:The Hindu Group",
+    "outlet:DB Corp",
     "google-news:Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "Heavy rains lash Chennai as northeast monsoon gets active in Tamil Nadu"
+   ]
+  },
+  {
+   "id": "kh-20261019-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+   "story_keys": [
+    "commit",
+    "public",
+    "share"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T03:23:54+00:00",
+   "owners": [
+    "BBC",
+    "India Today Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+    "Musk urges Anthropic to give pledged shares directly to people",
+    "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
+     "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T02:41:41+00:00"
+    },
+    {
+     "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund",
+     "url": "https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T03:23:54+00:00"
+    },
+    {
+     "title": "Musk urges Anthropic to give pledged shares directly to people",
+     "url": "https://www.indiatoday.in/technology/news/story/elon-musk-anthropic-5-percent-shares-public-benefit-fund-3020466-2026-10-19?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T03:19:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:Al Jazeera Media Network",
+    "google-news:Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’"
    ]
   },
   {
