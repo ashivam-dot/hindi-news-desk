@@ -34,6 +34,8 @@ PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
 # Outlet reporting (desk/outlets.py) backs a fact only when this many independent owners state it; a fact only one
 # outlet reports is never said.
 OWNERS_NEEDED = 2
+# A title opens with its subject in English letters ("LK Advani: ..."), so a little under half of it may be Latin.
+TITLE_HINDI = 0.4
 _N = r"\d{1,3}(?:,\d{3})+|\d+"
 _HEDGE = r"(?P<hedge>(?:at least|more than|over|nearly|about|around|up to|some|almost|roughly)\s+)?"
 TOLLS = [
@@ -151,7 +153,7 @@ def check(short: Short) -> list[str]:
             problems.append(f"title: shouting in capitals ({word})")
     if not 15 <= len(short.title) <= 90:
         problems.append(f"title: {len(short.title)} characters (want 15-90)")
-    if hindi.devanagari_share(short.title) < 0.6:
+    if hindi.devanagari_share(short.title) < TITLE_HINDI:
         problems.append("title: not in Hindi")
     words = len(short.narration.split())
     if not 50 <= words <= 200:

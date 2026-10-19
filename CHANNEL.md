@@ -238,6 +238,20 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   viewer address (आइए, दोस्तों, जानिए), no exclamation, no rhetorical question, no question title, no biography
   padding, no moral or conclusion; `writer.casual` rejects a draft that slips. A death is a news obituary report.
   Cards carry the key fact (a number with its unit whenever the beat has one) and a label, never a place alone.
+- **Everyday Hindi, searchable titles and hashtags (owner, 2026-10-19: titles and captions in "very hard hindi",
+  "hashtags are not working").** Evidence: plain name-first titles (Nana Patekar 1,301, Rahul Gandhi 593, Imran Khan
+  321) beat titles that open with an office or a full institution name ("जस्टिस जेबी पारदीवाला की पीठ...",
+  "अन्तर्राष्ट्रीय मुद्रा कोष...", 6-50 views); Wikidata's formal Hindi labels (IMF, IMD, Supreme Court) were being forced
+  into scripts; every description led with "...की रिपोर्टों और Wikipedia से" and ended with three joined-up Devanagari
+  hashtags and no `#shorts`. Aaj Tak, ABP News and NDTV India title Shorts "<name or topic in English>: <Hinglish
+  headline>" and tag the subject in English letters plus `#shorts #hindinews #latestnews`. Now: the narration (which
+  is also the subtitles) is the spoken Hindi of Aaj Tak/ABP; `writer.bookish` sends back `HARD_WORDS` in narration or
+  cards, "स्रोत के अनुसार", and more than two "रिपोर्टों के मुताबिक" (not on the last draft, so a story is never lost to
+  wording); formal Wikidata labels never bind (`writer.everyday_names`); the headline editor prefers a
+  "LK Advani: ..." title (`writer.KICKER`); `writer.hashtags_for` gives the subject tag, its `news` form, `#hindinews
+  #shorts`, a topic tag and the broad tags (at most 14); the description opens with the title and the hashtags; the
+  YouTube title carries `#shorts` and the subject tag when it fits 100 characters (`youtube.upload_title`), while the
+  ledger and the on-screen headline keep the plain title.
 - **Engaging and visibly sourced (owner, 2026-10-13: "more attractive news ... 100% engaging ... real facts").**
   Every frame carries the channel strip (`क्यों हुआ · राजनीति`, the story's kind or explainer category) and a thin
   progress bar along the top edge; the opening shot names where the facts come from (`स्रोत: बीबीसी · द हिंदू ·

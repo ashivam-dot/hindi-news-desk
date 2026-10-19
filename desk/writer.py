@@ -56,11 +56,14 @@ SCHEMA = {
 CHECK_SCHEMA = {"type": "object", "properties": {"unsupported": {"type": "array", "items": {"type": "string"}}},
                 "required": ["unsupported"]}
 
+# Owner, 2026-10-19: "very hard hindi language" in titles and captions. The narration is also the on-screen subtitles,
+# so it is written the way Aaj Tak or ABP anchors speak, not the way a government notice reads.
 SYSTEM = ("You are the news editor of a Hindi YouTube Shorts news channel for Indian viewers. You write the bulletin "
-          "a senior Hindi TV news anchor reads on air: a formal, factual news report in standard Hindi written in "
-          "Devanagari, crisp and authoritative, every line a reported fact with its source, never chatty, never a "
-          "story told to a friend, never sensational. Terms Hindi news keeps in English (flight numbers, agency names "
-          "such as NDRF or NASA) may stay in Latin letters. You never invent anything.")
+          "a Hindi TV news anchor reads on air, in Devanagari: a serious, factual news report in the everyday spoken "
+          "Hindi of Aaj Tak or ABP News, with the English words Indians use when they talk (डॉक्टर, अस्पताल, कोर्ट, "
+          "पुलिस, सरकार, फ्लाइट, रिपोर्ट), never bookish or Sanskritised, never chatty, never a story told to a "
+          "friend, never sensational. Terms Hindi news keeps in English (flight numbers, agency names such as NDRF or "
+          "NASA) may stay in Latin letters. You never invent anything.")
 
 DEATH_BRIEF = """STORY: {name} has died. Write a respectful Hindi TV news obituary report: what happened, and the
 record that made {object} known.
@@ -133,12 +136,17 @@ happened in one day."""
 RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
   or relationship that is not written there. If you are unsure, leave it out.
-- Write in Hindi (Devanagari): simple, spoken Hindi of a good Hindi news bulletin, neither heavily Sanskritised nor
-  slang. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
+- Write in Hindi (Devanagari): the simple, spoken Hindi of Aaj Tak or ABP News, the words a viewer in Patna or
+  Indore uses, neither Sanskritised nor slang: साल के not वर्षीय, डॉक्टर not चिकित्सक, फैसला not
+  निर्णय, कोर्ट not न्यायालय, जज not न्यायाधीश, वकील not अधिवक्ता, हफ्ते not सप्ताह, शुरू not प्रारंभ, खत्म not
+  समाप्त, कोशिश not प्रयास, बढ़ोतरी not वृद्धि, IMF not अंतरराष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान
+  विभाग, even where HINDI NAMES gives the formal name. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
   "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
   sentences of 10 to 18 words. Count the words before you answer.
-- Register: a formal Hindi TV news bulletin read by an anchor. Third person, complete sentences, attribution in
-  every beat that reports a claim ("के मुताबिक", "ने बताया", "के अनुसार"). Never address the viewer, never "आइए",
+- Register: a Hindi TV news bulletin read by an anchor. Third person, complete sentences. A claim, allegation or
+  reported figure says who gives it, by name ("अस्पताल ने बताया", "पुलिस का कहना है", "NDTV के मुताबिक"); a fact on
+  the record (a past office, a year, a known role) needs no attribution. Use the vague "रिपोर्टों के मुताबिक" in at
+  most 2 beats and never "स्रोत के अनुसार". Never address the viewer, never "आइए",
   "दोस्तों", "सोचिए", "क्या आप जानते हैं", never an exclamation, never a rhetorical question.
 - Every beat must carry a specific, checkable fact from the SOURCES (a number, a date, a name, a decision, an official
   statement); no vague praise, no feelings, no opinion, no moral or conclusion of your own.
@@ -163,22 +171,30 @@ RULES = """RULES (all mandatory):
 - label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
   "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
   "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.
-- title: a Hindi news headline, 25 to 70 characters, in the everyday Hindi of a Hindi news website (never formal
-  Sanskritised words), that states the news (who, what), no clickbait, no capitals for effect.
+- title: "<who or what, in English letters>: <Hindi headline>", 30 to 75 characters, the way Aaj Tak writes a
+  Shorts title ("Rahul Gandhi: ..."), in everyday Hindi (never formal Sanskritised words), that states the news (who,
+  what), no clickbait, no capitals for effect.
 Return only the JSON."""
 
 # Owner, 2026-10-15: titles were "too much difficult hindi and not interesting". The title is what people read
 # before they decide to watch, and the headline bar on screen: a Hindi news website's headline, not a gazette's.
-TITLE_BRIEF = """Write 5 different YouTube titles in Hindi for the news Short whose SCRIPT is below.
+TITLE_BRIEF = """Write 5 different YouTube Shorts titles for the Hindi news Short whose SCRIPT is below.
 
-- Everyday Hindi, the words people say, the way Aaj Tak, Dainik Bhaskar or Navbharat Times write a web headline.
-  Keep the English words Hindi news keeps (IMF, GDP, IPO, RBI, सुप्रीम कोर्ट, शेयर बाजार, फ्लाइट, एयरपोर्ट, बैंक).
-  Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान, सुप्रीम कोर्ट not सर्वोच्च न्यायालय, IMF not
-  अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका not पद्धति, के बाद not उपरांत.
-- 30 to 65 characters. The most striking concrete fact first: the number, the decision, or what it means for people.
-- Name who or what it is about the way the HINDI HEADLINES below name it, when they do. Give a person the role the
-  SCRIPT gives them right before the name ("अभिनेता इमरान खान", "केंद्रीय मंत्री ..."), so no one mistakes them for
-  someone else with that name.
+- Shape: "<Kicker>: <headline>", the way Aaj Tak, ABP News and NDTV India title their Shorts ("Tiger Shroff Firing:
+  कहां से गिरफ्तार हुए तीनों शूटर्स?", "Akhilesh Yadav की रैली में नहीं पहुंचे लोग"). The kicker is 1 to 4 words in
+  English letters, spelled the way Indians type it into YouTube search: the famous person's name ("Rahul Gandhi",
+  "LK Advani", "Imran Khan") or the topic ("Supreme Court", "Air India", "Sensex", "Delhi Metro", "Chennai Rain").
+  Only words the English sources use.
+- The headline is everyday Hindi, the words people say, the way Aaj Tak, Dainik Bhaskar or Navbharat Times write a
+  web headline. Keep the English words Hindi news keeps (IMF, GDP, IPO, RBI, सुप्रीम कोर्ट, शेयर बाजार, फ्लाइट,
+  एयरपोर्ट, बैंक). Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान, सुप्रीम कोर्ट not सर्वोच्च
+  न्यायालय, IMF not अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका not पद्धति, के बाद not
+  उपरांत, हफ्ते not सप्ताह, बेंच not पीठ, साल के not वर्षीय.
+- 35 to 75 characters in all. After the kicker, the most striking concrete fact: the number, the decision, or what
+  it means for people. Never open with an official's title or an institution's full name ("जस्टिस ... की पीठ",
+  "सॉलिसिटर जनरल ...", "भारत मौसम विज्ञान विभाग"): viewers stop for a name they know or for what changes for them.
+- When the name could mean someone else, the headline gives the role the SCRIPT gives ("Imran Khan: अभिनेता को ...",
+  "केंद्रीय मंत्री ..."), so no one mistakes them for someone else with that name.
 - A headline's active voice ("सरकार बेचेगी IDBI बैंक में हिस्सेदारी", "सेंसेक्स 1100 अंक उछला"), never a stiff passive
   ("...किया गया").
 - It may end with a short reason hook that this Short answers (", वजह क्या है?", ", क्यों?"), but only after a part
@@ -187,9 +203,11 @@ TITLE_BRIEF = """Write 5 different YouTube titles in Hindi for the news Short wh
   बड़ी खबर, ब्रेकिंग, जानिए, जानें), no exclamation mark, no emoji, no words in capitals for effect.
 {earlier}
 The kind of change wanted (old title -> better title):
-- "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया" -> "IMF ने कहा, भारत का GDP गिनने का नया तरीका सही"
-- "राजनाथ सिंह ने भारत-आसियान रक्षा सहयोग बढ़ाने का आह्वान किया" -> "राजनाथ सिंह की आसियान देशों से अपील: रक्षा में साथ बढ़ाएं"
-- "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया" -> "एयर इंडिया की फ्लाइट अचानक जयपुर उतारी गई, क्या थी वजह?"
+- "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया" -> "IMF: भारत का GDP गिनने का नया तरीका सही"
+- "राजनाथ सिंह ने भारत-आसियान रक्षा सहयोग बढ़ाने का आह्वान किया" -> "Rajnath Singh: आसियान देशों से अपील, रक्षा में साथ बढ़ाएं"
+- "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया" -> "Air India: फ्लाइट अचानक जयपुर उतारी गई, क्या थी वजह?"
+- "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना" -> "Supreme Court: इंटरनेट अब मौलिक अधिकार, कोर्ट ने माना"
+- "लालकृष्ण आडवाणी अपोलो अस्पताल में भर्ती, सीने में संक्रमण" -> "LK Advani: 98 साल के आडवाणी अस्पताल में भर्ती, सीने में इन्फेक्शन"
 
 SCRIPT:
 {script}
@@ -209,8 +227,22 @@ HARD_WORDS = {
     "उपरांत": "के बाद", "उपरान्त": "के बाद", "पश्चात": "के बाद", "अधिसूचना": "नोटिफिकेशन", "निर्वाचन आयोग": "चुनाव आयोग",
     "प्रक्षेपण": "लॉन्च", "प्रक्षेपित": "लॉन्च", "विमानपत्तन": "एयरपोर्ट", "चालक दल": "क्रू", "सम्बन्धी": "से जुड़ा",
     "संबंधी": "से जुड़ा", "आधारित": "(leave it out)", "द्वारा": "ने", "वित्तीय वर्ष": "वित्त वर्ष", "प्रतिशत": "%",
+    "वर्षीय": "साल के", "परामर्शदाता": "डॉक्टर", "चिकित्सक": "डॉक्टर", "चिकित्सा": "इलाज",
+    "न्यायालय": "कोर्ट", "न्यायाधीश": "जज", "न्यायमूर्ति": "जस्टिस", "अधिवक्ता": "वकील", "की पीठ": "की बेंच",
+    "सप्ताह": "हफ्ते", "निर्णय": "फैसला", "प्रारंभ": "शुरू", "प्रारम्भ": "शुरू", "आरंभ": "शुरू", "आरम्भ": "शुरू",
+    "समाप्त": "खत्म", "प्रयास": "कोशिश", "वृद्धि": "बढ़ोतरी", "आवश्यक": "ज़रूरी", "प्रदान": "दिया",
+    "अंतर्गत": "के तहत", "अन्तर्गत": "के तहत", "तत्काल": "तुरंत", "यथाशीघ्र": "जल्द", "उपरोक्त": "(leave it out)",
+    "वार्ता": "बातचीत", "आग्रह": "अपील", "दुर्घटनाग्रस्त": "हादसे का शिकार", "भारत मौसम विज्ञान": "मौसम विभाग",
 }
-TITLE_MAX = 70
+# Spoken narration says "प्रतिशत"; only a title or a card writes "%".
+SAID_OK = {"प्रतिशत"}
+# "LK Advani: ..." — the name or topic in English letters, as Hindi news channels title their Shorts and as viewers
+# search for them.
+KICKER = re.compile(r"^[A-Za-z][A-Za-z0-9.&'’\- ]{1,34}:\s")
+GENERIC_SOURCE = re.compile(r"(रिपोर्टों|रिपोर्ट|सूत्रों) के (मुताबिक|अनुसार)")
+NAMELESS_SOURCE = re.compile(r"स्रोत(ों)? के (मुताबिक|अनुसार)")
+TITLE_MAX = 80
+TITLE_HINDI = gate.TITLE_HINDI
 WHY_HOOK = re.compile(r"^[^?]{12,}[,:।\-–]\s*[^,:?]{0,20}(क्यों|वजह|कारण)[^,:?]{0,20}\?$")
 CLICKBAIT = re.compile(r"सनसनीखेज|चौंकाने|खौफनाक|ख़ौफ़नाक|ब्रेकिंग|बड़ी खबर|बड़ी ख़बर|जानिए|जानिये|जानें|देखिए|!")
 # A title may give a cause only with whoever gives it: "आयोजकों की घोषणा बनी वजह" (Kolkata dry run, 2026-10-18)
@@ -219,8 +251,35 @@ STATED_CAUSE = re.compile(r"(बनी|बना|बने|थी|था|है)
 ATTRIBUTED = re.compile(r"मुताबिक|अनुसार|बोले|बोलीं|बोला|ने कहा|का कहना|का दावा|का आरोप|ने बताया|ने बताई")
 
 
-def hard_words(text: str) -> list[str]:
-    return [f"write {w!r} as {easy}" for w, easy in HARD_WORDS.items() if w in text]
+def hard_words(text: str, allowed: set[str] = frozenset()) -> list[str]:
+    return [f"write {w!r} as {easy}" for w, easy in HARD_WORDS.items() if w in text and w not in allowed]
+
+
+def everyday_names(hi_names: dict[str, str]) -> dict[str, str]:
+    """Wikidata's Hindi labels minus the formal ones (IMF is "अन्तर्राष्ट्रीय मुद्रा कोष" there, IMD "भारत मौसम विज्ञान
+    विभाग"): a formal label must never be the spelling the writer is held to."""
+    return {en: hi for en, hi in hi_names.items() if not hard_words(hi)}
+
+
+def plain_name(name_hi: str | None, draft: dict, name: str) -> str:
+    """The story's Hindi name for the description and hashtags: Wikidata's, unless formal, else the writer's."""
+    if name_hi and not hard_words(name_hi):
+        return name_hi
+    return _pair_for(draft, name) or name_hi or name
+
+
+def bookish(draft: dict) -> list[str]:
+    """Narration and cards in a government notice's Hindi, or attributed to nobody in particular."""
+    beats = draft.get("beats") or []
+    shown = " ".join(b.get("say", "") + " " + b.get("caption", "") + " " + b.get("label", "") for b in beats)
+    problems = [f"in the narration and cards, {p}" for p in hard_words(shown, SAID_OK)]
+    if any(NAMELESS_SOURCE.search(b.get("say", "")) for b in beats):
+        problems.append("never write \"स्रोत के अनुसार\": name who says it, or give an on-the-record fact plainly")
+    vague = sum(bool(GENERIC_SOURCE.search(b.get("say", ""))) for b in beats)
+    if vague > 2:
+        problems.append(f"{vague} beats say \"रिपोर्टों के मुताबिक\"; at most 2: name who says it (the hospital, the "
+                        "police, the court, the outlet), and give on-the-record facts plainly")
+    return problems
 
 
 def question_title(title: str) -> bool:
@@ -480,7 +539,7 @@ def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind:
     problems = hard_words(title)
     if not 20 <= len(title) <= TITLE_MAX:
         problems.append(f"{len(title)} characters (want 20-{TITLE_MAX})")
-    if hindi.devanagari_share(title) < 0.6:
+    if hindi.devanagari_share(title) < TITLE_HINDI:
         problems.append("not in Hindi")
     if question_title(title):
         problems.append("a question alone: state the news first")
@@ -533,7 +592,8 @@ def retitle(pen: "Pen", draft: dict, subject: dict, ground_en: str, kind: str, a
         tried = [(t, title_problems(t, draft, subject, ground_en, kind, agreed_toll, reports, earlier))
                  for t in options]
         record["options"] += [{"title": t, "problems": p} for t, p in tried]
-        good = next((t for t, p in tried if not p), None)
+        usable = [t for t, p in tried if not p]
+        good = next((t for t in usable if KICKER.match(t)), usable[0] if usable else None)
         if good:
             record["chosen"] = good
             return good, record
@@ -557,6 +617,9 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
     lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part)."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
+    hi_names = everyday_names(hi_names)
+    if subject.get("hi") and hard_words(subject["hi"]):
+        subject = subject | {"hi": None}
     brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF, "explainer": EXPLAINER_BRIEF}.get(kind, INCIDENT_BRIEF)
     brief = brief.format(name=subject["en"], pronoun=pronoun.lower(), object=obj)
     if earlier:
@@ -589,7 +652,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not today_ok:
                 problems += not_today(script_text(draft))
             if attempt < DRAFTS - 1:
-                problems += monotone(draft)
+                problems += monotone(draft) + bookish(draft)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
@@ -881,7 +944,7 @@ def build_death(cand: dict) -> Short:
                   tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
                   summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
                           f"तथ्यों से।",
-                  hashtags=[name_hi, job_hi or "श्रद्धांजलि", "हिंदीसमाचार"], ov=ov, reports=reports)
+                  cat="death", ov=ov, reports=reports)
 
 
 def build_incident(cand: dict) -> Short:
@@ -979,16 +1042,56 @@ def build_incident(cand: dict) -> Short:
                         "india news" if cand.get("region") == "india" else "world news"] + ([region] if region else []),
                   summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, "
                           f"{'Wikipedia और Wikidata' if qid else 'Wikipedia'} के तथ्यों से।",
-                  hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov, reports=reports)
+                  cat=cat, ov=ov, reports=reports)
 
 
 def _pair_for(draft: dict, name: str) -> str | None:
     return next((p["hi"] for p in draft.get("names", []) if p.get("en", "").lower() == name.lower()), None)
 
 
+# How Aaj Tak, ABP News and NDTV India tag their Shorts (read 2026-10-19): the subject in English letters, its "news"
+# form, then the broad tags Hindi news viewers search. Joined-up Devanagari tags alone (#लालकृष्णआडवाणी) are what
+# almost nobody types.
+TOPIC_TAGS = {"court": "courtnews", "economy": "businessnews", "weather": "weatherupdate", "aviation": "aviationnews",
+              "entertainment": "entertainmentnews", "health": "healthnews", "disaster": "disasternews",
+              "cyclone": "cyclone", "death": "tribute", "world": "worldnews"}
+TEXT_TAGS = (("सुप्रीम कोर्ट", "supremecourt"), ("हाई कोर्ट", "highcourt"), ("सेंसेक्स", "sensex"),
+             ("शेयर बाजार", "sharemarket"))
+BROAD_TAGS = ["latestnews", "newsinhindi", "hindisamachar"]
+
+
+def search_name(name: str) -> str:
+    """The subject the way viewers type it ("L. K. Advani" -> "LK Advani"), or "" when it is no short name (an event
+    title such as "2026 anti-CEC protests")."""
+    plain = re.sub(r"\s*\(.*?\)", "", name or "").strip()
+    plain = re.sub(r"\b([A-Z])\.\s*(?=[A-Z]\.)", r"\1", plain)
+    plain = re.sub(r"(?<![a-z])([A-Z])\.\s*", r"\1 ", plain).strip()
+    words = plain.split()
+    if not 1 <= len(words) <= 3 or len(plain) > 25 or not re.fullmatch(r"[A-Za-z][A-Za-z .'\-]*", plain):
+        return ""
+    return plain
+
+
+def hashtags_for(name: str, name_hi: str, cat: str, region: str, text: str) -> list[str]:
+    tag = re.sub(r"[^A-Za-z0-9]", "", search_name(name)).lower()
+    out = [tag, "hindinews", "shorts", tag + "news" if tag else ""]
+    out += [t for word, t in TEXT_TAGS if word in text] + [TOPIC_TAGS.get(cat, "")] + BROAD_TAGS
+    out += ["indianews" if region == "india" else "worldnews", name_hi]
+    return [t for t in dict.fromkeys(out) if t][:14]
+
+
+def search_tags(name: str) -> list[str]:
+    who = search_name(name).lower()
+    return ([who, f"{who} news", f"{who} latest news"] if who else []) + [
+        "hindi news", "latest news", "news in hindi", "today news", "hindi samachar"]
+
+
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
-           mood, tags, summary, hashtags, region="world", ov=None, reports=None, credit=CREDIT) -> Short:
+           mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT) -> Short:
     reports = reports or []
+    name_hi = plain_name(name_hi, draft, name)
+    hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
+    tags = tags + search_tags(name)
     beats = [Beat(b["say"].strip(), f"photo:{b['photo']}",
                   {"big": b["caption"].strip(), "small": (b.get("label") or "").strip()}) for b in draft["beats"]]
     beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
@@ -1105,7 +1208,7 @@ def build_report(cand: dict) -> Short:
                    tags=[name, name_hi, cat, "हिंदी समाचार", "hindi news",
                          "india news" if cand.get("region") == "india" else "world news"],
                    summary=f"{name_hi}: क्या हुआ, {', '.join(outlets.names(reports))} की रिपोर्टों से।",
-                   hashtags=[name_hi, "हिंदीसमाचार", "news"], ov=ov, reports=reports, credit=REPORT_CREDIT)
+                   cat=cat, ov=ov, reports=reports, credit=REPORT_CREDIT)
     short.scene["article"] = cand.get("article")
     short.scene["headlines"] = cand.get("headlines") or []
     return short
@@ -1174,7 +1277,7 @@ def build_explainer(cand: dict) -> Short:
                    tags=[name, name_hi, label, cat, "क्यों हुआ", "हिंदी समाचार", "hindi news", "india news"],
                    summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                            "Wikipedia से।",
-                   hashtags=[name_hi, label, "हिंदीसमाचार"], ov=ov, reports=reports, credit=EXPLAIN_CREDIT)
+                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT)
     short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
                        min_photos=need)
     return short

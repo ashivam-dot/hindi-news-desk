@@ -71,9 +71,18 @@ def test_a_long_description_drops_the_narration_before_any_source_or_credit(shor
     assert short.beats[0].text in youtube.description(short, GEMINI)
 
 
-def test_hashtags_keep_devanagari(short):
-    last = youtube.description(replace(short, hashtags=["रमेश प्रसाद वर्मा", "हिंदी समाचार", "news"]), GEMINI)
-    assert last.splitlines()[-1] == "#रमेशप्रसादवर्मा #हिंदीसमाचार #news"
+def test_hashtags_keep_devanagari_and_sit_under_the_title(short):
+    text = youtube.description(replace(short, hashtags=["rameshprasadverma", "hindinews", "रमेश प्रसाद वर्मा"]), GEMINI)
+    assert text.splitlines()[:2] == [short.title, "#rameshprasadverma #hindinews #रमेशप्रसादवर्मा"]
+    assert text.count("#hindinews") == 1
+
+
+def test_the_upload_title_carries_shorts_and_the_subject_tag_when_it_fits(short):
+    tagged = replace(short, title="LK Advani: अस्पताल से छुट्टी मिली", hashtags=["lkadvani", "hindinews"])
+    assert youtube.upload_title(tagged) == "LK Advani: अस्पताल से छुट्टी मिली #shorts #lkadvani"
+    long = replace(tagged, title="क" * 92)
+    assert youtube.upload_title(long) == "क" * 92 + " #shorts"
+    assert youtube.upload_title(replace(tagged, title="क" * 99)) == "क" * 99
 
 
 def test_tags_keep_the_marker(short):

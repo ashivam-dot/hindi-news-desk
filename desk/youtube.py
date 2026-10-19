@@ -108,8 +108,28 @@ def description(short: Short, voice: dict) -> str:
     raise ValueError(f"description is {len(text.encode())} bytes; YouTube allows {DESCRIPTION_BYTES}")
 
 
+def hashtag_line(short: Short) -> str:
+    return " ".join("#" + t for t in dict.fromkeys(hashtag(h) for h in short.hashtags) if t)
+
+
+TITLE_LIMIT = 100
+
+
+def upload_title(short: Short) -> str:
+    """The title with #shorts and the subject's hashtag after it, as Hindi news channels title their Shorts, when it
+    fits YouTube's 100 characters. The on-screen headline and the ledger keep the plain title."""
+    tags = [t for t in dict.fromkeys(["shorts"] + [hashtag(h) for h in short.hashtags[:1]]) if t]
+    for n in range(len(tags), 0, -1):
+        title = short.title + " " + " ".join("#" + t for t in tags[:n])
+        if len(title) <= TITLE_LIMIT:
+            return title
+    return short.title
+
+
 def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> str:
-    lines = [short.summary, ""]
+    # Hashtags near the top: YouTube shows the first three above the title.
+    tags = hashtag_line(short)
+    lines = ([short.summary] if short.kind == "advisory" else [short.title]) + ([tags] if tags else []) + [""]
     if short.kind != "advisory" and narration:
         lines += [" ".join(b.text for b in short.beats[:-1]), ""]
     else:
@@ -130,10 +150,8 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> s
         lines += ["श्रेय:", f"• {short.credits[0]}", f"• {photo_credits(short.scene['photos'])}", ""]
     elif short.kind != "advisory":
         lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
-    tags = [hashtag(h) for h in short.hashtags]
-    lines.append(" ".join("#" + t for t in dict.fromkeys(tags) if t))
     # YouTube rejects < and > in descriptions.
-    return "\n".join(lines).replace("<", "‹").replace(">", "›")
+    return "\n".join(lines).rstrip("\n").replace("<", "‹").replace(">", "›")
 
 
 def tags(short: Short) -> list[str]:
@@ -179,7 +197,7 @@ def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_a
         video_id = existing["id"]
     else:
         body = {
-            "snippet": {"title": short.title, "description": description(short, voice), "tags": tags(short),
+            "snippet": {"title": upload_title(short), "description": description(short, voice), "tags": tags(short),
                         "categoryId": CATEGORY, "defaultLanguage": config.LANGUAGE,
                         "defaultAudioLanguage": config.LANGUAGE},
             "status": {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True},
@@ -212,8 +230,8 @@ def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_a
         if not final["status"].get("publishAt"):
             raise RuntimeError(f"video {video_id} was not scheduled")
         return {"video_id": video_id, "url": f"https://www.youtube.com/shorts/{video_id}",
-                "title": final["snippet"]["title"], "privacy": "scheduled", "publish_at": final["status"]["publishAt"],
-                "synthetic_declared": True}
+                "youtube_title": final["snippet"]["title"], "privacy": "scheduled",
+                "publish_at": final["status"]["publishAt"], "synthetic_declared": True}
     if video["status"]["privacyStatus"] != "public":
         api.videos().update(part="status", body={"id": video_id, "status": {
             "privacyStatus": "public", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
@@ -227,5 +245,5 @@ def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_a
     else:
         raise RuntimeError(f"video {video_id} did not go public ({final['status']['privacyStatus']})")
     # containsSyntheticMedia is write-only in practice: videos.list omits it even though Studio shows "AI use: Yes".
-    return {"video_id": video_id, "url": f"https://www.youtube.com/shorts/{video_id}", "title": final["snippet"]["title"],
-            "privacy": "public", "synthetic_declared": True}
+    return {"video_id": video_id, "url": f"https://www.youtube.com/shorts/{video_id}",
+            "youtube_title": final["snippet"]["title"], "privacy": "public", "synthetic_declared": True}

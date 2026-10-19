@@ -64,7 +64,7 @@ def test_the_card_label_is_shown_under_the_caption():
     d["beats"][0]["label"] = "निधन"
     short = writer._short("kh-x", "explainer", "Ramesh Prasad Verma", "रमेश प्रसाद वर्मा", d, [], [], [],
                           [SOURCE_EN], SOURCE_EN, [{"credit": "c", "page": "p"}], ["https://x"], "2026-10-08",
-                          False, "news", [], "", [])
+                          False, "news", [], "", "")
     assert short.beats[0].card == {"big": "श्रद्धांजलि", "small": "निधन"}
     assert short.scene["template"] == "bulletin"
 
@@ -225,6 +225,50 @@ def test_titles_with_hard_words_new_numbers_or_bare_questions_are_refused():
     assert any("names no one" in p for p in writer.title_problems("मशहूर गायक का निधन, संगीत जगत में शोक", d, *args))
     assert any("earlier part" in p for p in writer.title_problems(
         "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, *args, earlier=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"]))
+
+
+def test_the_headline_editor_prefers_a_title_led_by_the_name_in_english(tmp_path):
+    out, _, _ = write([[]], tmp_path, titles=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे",
+                                              "Ramesh Prasad Verma: मशहूर गायक नहीं रहे"])
+    assert out["title"] == "Ramesh Prasad Verma: मशहूर गायक नहीं रहे"
+
+
+def test_narration_in_a_notices_hindi_or_from_no_one_is_sent_back():
+    d = draft()
+    assert writer.bookish(d) == []
+    d["beats"][1]["say"] = "स्रोत के अनुसार, 77 वर्षीय गायक को अस्पताल में भर्ती कराया गया।"
+    d["beats"][2]["caption"] = "2 सप्ताह"
+    problems = writer.bookish(d)
+    assert any("वर्षीय" in p for p in problems) and any("सप्ताह" in p for p in problems)
+    assert any("स्रोत के अनुसार" in p for p in problems)
+    d = draft()
+    for b in d["beats"][:3]:
+        b["say"] = "रिपोर्टों के मुताबिक, " + b["say"]
+    assert any("at most 2" in p for p in writer.bookish(d))
+    d["beats"][0]["say"] += " 3 प्रतिशत"
+    assert not any("प्रतिशत" in p for p in writer.bookish(d))
+
+
+def test_formal_wikidata_labels_never_bind_the_writer():
+    names = {"International Monetary Fund": "अन्तर्राष्ट्रीय मुद्रा कोष", "India Meteorological Department":
+             "भारत मौसम विज्ञान विभाग", "L. K. Advani": "लालकृष्ण आडवाणी"}
+    assert writer.everyday_names(names) == {"L. K. Advani": "लालकृष्ण आडवाणी"}
+    d = draft(names=NAMES + [{"hi": "IMF", "en": "International Monetary Fund"}])
+    assert writer.plain_name("अन्तर्राष्ट्रीय मुद्रा कोष", d, "International Monetary Fund") == "IMF"
+    assert writer.plain_name("लालकृष्ण आडवाणी", d, "L. K. Advani") == "लालकृष्ण आडवाणी"
+
+
+def test_hashtags_are_what_hindi_news_viewers_search():
+    assert writer.search_name("L. K. Advani") == "LK Advani"
+    assert writer.search_name("Imran Khan (actor)") == "Imran Khan"
+    assert writer.search_name("2026 anti-CEC protests") == ""
+    tags = writer.hashtags_for("L. K. Advani", "लालकृष्ण आडवाणी", "health", "india", "सुप्रीम कोर्ट ने कहा")
+    assert tags[:4] == ["lkadvani", "hindinews", "shorts", "lkadvaninews"]
+    assert {"supremecourt", "healthnews", "latestnews", "indianews", "लालकृष्ण आडवाणी"} <= set(tags)
+    assert len(tags) <= 15
+    event = writer.hashtags_for("2026 anti-CEC protests", "विरोध", "protest", "world", "")
+    assert event[:2] == ["hindinews", "shorts"] and "worldnews" in event
+    assert writer.search_tags("Imran Khan")[:2] == ["imran khan", "imran khan news"]
 
 
 def test_no_usable_title_keeps_the_drafts_own(tmp_path):
