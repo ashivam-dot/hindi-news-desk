@@ -121,6 +121,15 @@ def test_beat_one_names_the_subject_in_hindi():
     assert any("beat 1 must name" in p for p in problems)
 
 
+def test_beat_one_opens_on_the_person_not_on_the_place():
+    d = draft()
+    d["beats"][0]["say"] = "पटना में आज मशहूर लोक गायक रमेश प्रसाद वर्मा का 75 साल की उम्र में निधन हो गया।"
+    problems, _ = check(d)
+    assert any("beat 1 must open on" in p for p in problems)
+    d["beats"][0]["say"] = "मशहूर गायक रमेश प्रसाद वर्मा का 75 साल की उम्र में पटना में निधन हो गया।"
+    assert not any("beat 1 must" in p for p in check(d)[0])
+
+
 def test_perpetrators_are_never_named():
     problems, _ = check(draft(), banned_names=["Varanasi Attacker"], kind="incident")
     assert any("perpetrator" in p for p in problems)

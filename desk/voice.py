@@ -50,17 +50,18 @@ GEMINI_TTS = ("gemini-3.8-flash-lite-tts", "gemini-3.8-flash-tts", "gemini-3.1-f
 MAX_QUOTA_WAIT = 90.0
 UNKNOWN_QUOTA_BACKOFF = (20.0, 40.0)
 # Owner, 2026-10-20: "make everyone force to listen the news ... everyone love to hear it". The 14 Oct direction
-# (measured, steady) still lost about half the viewers in the first second.
-_BASE = ("Read this Hindi news bulletin aloud as a senior prime-time Hindi TV news anchor on air: confident, crisp "
-         "and authoritative, with real energy and a sense of urgency, clear diction and firm sentence endings. Open "
-         "the first line strongly, stress the key name and number in each line, and keep a brisk forward rhythm "
-         "with a short pause between sentences and a slightly longer one between lines. {mood} Never "
-         "conversational or chatty, never a storyteller, never shouting, never melodramatic. Pace: about 140 words "
-         "a minute. Speak only the transcript.")
+# (measured, steady) still lost about half the viewers in the first second. Asking for energy or a brisk rhythm made
+# gemini-3.8-flash-tts read at 200+ wpm (dry run 39330918911), so the urgency is carried by emphasis, not speed.
+_BASE = ("Read this Hindi news bulletin aloud as a senior prime-time Hindi TV news anchor on air: confident, "
+         "authoritative and engaging, with clear diction and firm sentence endings. Carry the urgency in the voice "
+         "through emphasis and pitch, never through speed: land the first line strongly, stress the key name and "
+         "number in each line, and pause briefly between sentences and a little longer between lines. {mood} Never "
+         "rush. Never conversational or chatty, never a storyteller, never shouting, never melodramatic. Pace: an "
+         "unhurried 130 words a minute. Speak only the transcript.")
 DIRECTION = {"tribute": _BASE.format(mood="This is an obituary report: grave and respectful, the energy held back."),
              "loss": _BASE.format(mood="People died or were hurt: grave, steady and compassionate, the urgency "
                                        "held back."),
-             "news": _BASE.format(mood="This is a news report: compelling and urgent, yet neutral and factual.")}
+             "news": _BASE.format(mood="This is a news report: compelling, yet neutral and factual.")}
 
 
 def direction_for(short: Short) -> str:

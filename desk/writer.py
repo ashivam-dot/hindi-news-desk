@@ -37,6 +37,7 @@ OUTRO = "पूरी जानकारी और सभी स्रोत व
 CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
 MIN_WORDS, MAX_WORDS = 80, 135
 DRAFTS = 4
+HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
 PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
 SCHEMA = {
     "type": "object",
@@ -459,6 +460,11 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
     if not beats or not subject_in(beats[0].get("say", ""), subject, names):
         problems.append(f"beat 1 must name {subject.get('hi') or subject['en']} in Hindi, and list it in names")
+    elif subject.get("person") and not subject_in(
+            " ".join(beats[0]["say"].split()[:HOOK_WORDS - 1 + max(1, len((subject.get("hi") or "").split()))]),
+            subject, names):
+        problems.append(f"beat 1 must open on {subject.get('hi') or subject['en']}: the name starting within its "
+                        f"first {HOOK_WORDS} words, the place and time after it")
     for b in beats:
         if not isinstance(b.get("photo"), int) or not 0 <= b["photo"] < len(photos):
             problems.append(f"photo {b.get('photo')} does not exist")
