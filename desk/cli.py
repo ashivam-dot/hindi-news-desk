@@ -190,7 +190,11 @@ def run(dry: bool = False, preview: bool = False) -> dict:
         ready, held = plan.lineup(found["candidates"])
         health["steps"] += held[:6]
         if dry and not ready:
-            ready = [c for c in found["candidates"] if not c.get("orbitwire")] or found["candidates"]
+            # Outside the window a dry run previews the story the next live run would make first.
+            now = datetime.now(timezone.utc)
+            pool = [c for c in found["candidates"] if not c.get("orbitwire")] or found["candidates"]
+            ready = [c for c in sorted(pool, key=lambda c: -plan.priority(c, now))
+                     if not (plan.stale(c, now) or plan.unpopular(c, now))] or pool
         if dry and config.DRY_KIND:
             ready = [c for c in found["candidates"] if c.get("kind") == config.DRY_KIND]
             health["steps"].append(f"dry run: only {config.DRY_KIND} candidates ({len(ready)})")
