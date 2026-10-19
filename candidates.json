@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T22:42:07+00:00",
+ "at": "2026-10-19T23:15:45+00:00",
  "trending": [
   {
    "qid": "Q141762710",
@@ -119,13 +119,9 @@
    "date": "2026-10-19",
    "coords": null,
    "has_coords": false,
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "Alappuzha toddler's death: Child Rights Commission registers case, minister calls incident shocking"
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "qid": "Q141615137",
@@ -302,10 +298,10 @@
     "google-news:US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
    ],
    "top": {
-    "IN": 7,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.955,
+   "top_score": 0.89,
    "top_headlines": [
     "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
@@ -599,9 +595,9 @@
     "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ],
    "top": {
-    "IN-nation": 10
+    "IN-nation": 11
    },
-   "top_score": 0.33,
+   "top_score": 0.3,
    "top_headlines": [
     "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ]
@@ -747,13 +743,110 @@
    ]
   },
   {
+   "id": "kh-20261020-Q90",
+   "qid": "Q90",
+   "title": "Paris",
+   "name": "Paris",
+   "phrase": "Paris",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "France imposes partial curfews in several cities, including parts of Paris",
+   "story_keys": [
+    "central",
+    "citie",
+    "curfew",
+    "part"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T21:14:53+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "France imposes partial curfews in several cities, including parts of Paris",
+    "🔴 France issues curfew for parts of central Paris",
+    "France: Partial curfews issued in Paris, Nice after unrest",
+    "Curfew imposed in parts of central Paris and other cities after rioting across France"
+   ],
+   "hindi_headlines": [
+    "फ्रांस में हिंसा के बाद सरकार का एक्शन, पेरिस समेत कई शहरों में कर्फ्यू"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "पेरिस",
+   "reports": [
+    {
+     "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+     "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T21:14:53+00:00"
+    },
+    {
+     "title": "France: Partial curfews issued in Paris, Nice after unrest",
+     "url": "https://www.dw.com/en/france-partial-curfews-issued-in-paris-nice-after-unrest/live-79707186?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:57:00+00:00"
+    },
+    {
+     "title": "🔴 France issues curfew for parts of central Paris",
+     "url": "https://www.france24.com/en/france/20261019-live-french-pm-lecornu-calls-for-partial-curfews-in-cities-hit-by-riots-and-looting",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T17:09:26+00:00"
+    },
+    {
+     "title": "France imposes partial curfews in several cities, including parts of Paris",
+     "url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T18:16:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
    "qid": null,
    "title": "2026 Shabwah missile attack",
    "fame": 50000,
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-19T22:42:07.975687+00:00",
+   "news_at": "2026-10-19T23:15:45.648038+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1182,10 +1275,10 @@
     "google-news:US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
    ],
    "top": {
-    "IN": 7,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.955,
+   "top_score": 0.89,
    "top_headlines": [
     "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
@@ -1410,12 +1503,109 @@
     "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ],
    "top": {
-    "IN-nation": 10
+    "IN-nation": 11
    },
-   "top_score": 0.33,
+   "top_score": 0.3,
    "top_headlines": [
     "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ]
+  },
+  {
+   "id": "kh-20261020-Q90",
+   "qid": "Q90",
+   "title": "Paris",
+   "name": "Paris",
+   "phrase": "Paris",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "France imposes partial curfews in several cities, including parts of Paris",
+   "story_keys": [
+    "central",
+    "citie",
+    "curfew",
+    "part"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T21:14:53+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "France imposes partial curfews in several cities, including parts of Paris",
+    "🔴 France issues curfew for parts of central Paris",
+    "France: Partial curfews issued in Paris, Nice after unrest",
+    "Curfew imposed in parts of central Paris and other cities after rioting across France"
+   ],
+   "hindi_headlines": [
+    "फ्रांस में हिंसा के बाद सरकार का एक्शन, पेरिस समेत कई शहरों में कर्फ्यू"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "पेरिस",
+   "reports": [
+    {
+     "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+     "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T21:14:53+00:00"
+    },
+    {
+     "title": "France: Partial curfews issued in Paris, Nice after unrest",
+     "url": "https://www.dw.com/en/france-partial-curfews-issued-in-paris-nice-after-unrest/live-79707186?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:57:00+00:00"
+    },
+    {
+     "title": "🔴 France issues curfew for parts of central Paris",
+     "url": "https://www.france24.com/en/france/20261019-live-french-pm-lecornu-calls-for-partial-curfews-in-cities-hit-by-riots-and-looting",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T17:09:26+00:00"
+    },
+    {
+     "title": "France imposes partial curfews in several cities, including parts of Paris",
+     "url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T18:16:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "qid": null,
@@ -1424,7 +1614,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-19T22:42:07.975687+00:00",
+   "news_at": "2026-10-19T23:15:45.648038+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1561,8 +1751,8 @@
   }
  ],
  "notes": [
-  "outlets: 1271 headlines from 30 feeds (19 owners), 25 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
-  "explainers: 4 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q140632219, kh-20261020-Q3522926, kh-20261020-Q47543; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1259 headlines from 30 feeds (19 owners), 28 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
+  "explainers: 5 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q140632219, kh-20261020-Q3522926, kh-20261020-Q47543; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Trump Paris: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "skip wk-Q1702112: Orbitwire published (wk-Q1702112), not high-profile enough to tell again"
  ],
@@ -1571,11 +1761,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1271,
+  "headlines": 1259,
   "feeds": 30,
   "owners": 19,
-  "matched": 25,
-  "corroborated": 6
+  "matched": 28,
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -1837,10 +2027,10 @@
     "google-news:US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
    ],
    "top": {
-    "IN": 7,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.955,
+   "top_score": 0.89,
    "top_headlines": [
     "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "US very close to finalising India trade pact: Marco Rubio before Jaishankar talks"
@@ -2134,12 +2324,109 @@
     "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ],
    "top": {
-    "IN-nation": 10
+    "IN-nation": 11
    },
-   "top_score": 0.33,
+   "top_score": 0.3,
    "top_headlines": [
     "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
    ]
+  },
+  {
+   "id": "kh-20261020-Q90",
+   "qid": "Q90",
+   "title": "Paris",
+   "name": "Paris",
+   "phrase": "Paris",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "France imposes partial curfews in several cities, including parts of Paris",
+   "story_keys": [
+    "central",
+    "citie",
+    "curfew",
+    "part"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T21:14:53+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "France imposes partial curfews in several cities, including parts of Paris",
+    "🔴 France issues curfew for parts of central Paris",
+    "France: Partial curfews issued in Paris, Nice after unrest",
+    "Curfew imposed in parts of central Paris and other cities after rioting across France"
+   ],
+   "hindi_headlines": [
+    "फ्रांस में हिंसा के बाद सरकार का एक्शन, पेरिस समेत कई शहरों में कर्फ्यू"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "पेरिस",
+   "reports": [
+    {
+     "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+     "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T21:14:53+00:00"
+    },
+    {
+     "title": "France: Partial curfews issued in Paris, Nice after unrest",
+     "url": "https://www.dw.com/en/france-partial-curfews-issued-in-paris-nice-after-unrest/live-79707186?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:57:00+00:00"
+    },
+    {
+     "title": "🔴 France issues curfew for parts of central Paris",
+     "url": "https://www.france24.com/en/france/20261019-live-french-pm-lecornu-calls-for-partial-curfews-in-cities-hit-by-riots-and-looting",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T17:09:26+00:00"
+    },
+    {
+     "title": "France imposes partial curfews in several cities, including parts of Paris",
+     "url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T18:16:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   }
  ]
 }
