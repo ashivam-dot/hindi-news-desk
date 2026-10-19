@@ -128,6 +128,17 @@ def test_subject_face_is_the_one_that_recurs():
     assert picks[2] is None
 
 
+def test_a_lone_group_photo_is_framed_only_on_the_face_its_caption_places():
+    me, other = np.eye(3)[0], np.eye(3)[1]
+    pair = [[{"box": (600, 0, 300, 300), "feature": other}, {"box": (100, 0, 260, 260), "feature": me}]]
+    assert faces.subject(pair) == [None]  # the largest face of a group photo may be someone else
+    assert faces.subject(pair, ["left"])[0]["feature"] is me
+    assert faces.subject([[pair[0][1]]])[0]["feature"] is me  # a solo portrait needs no confirmation
+    from desk import writer
+    side = writer.caption_side("Tiger Shroff (left) and Ali Ahmed Khan during a football event", "Tiger Shroff")
+    assert side == "left" and writer.caption_side("Ali Ahmed Khan (left) and Tiger Shroff", "Tiger Shroff") is None
+
+
 def test_music_fits_any_length():
     for mood in ("tribute", "news"):
         for seconds in (20.0, 31.3, 37.8, 44.6, 52.1):
