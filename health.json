@@ -1,18 +1,25 @@
 {
- "at": "2026-10-19T08:09:39+00:00",
+ "at": "2026-10-19T08:50:20+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 8 trending",
-  "outlets: 1265 headlines from 29 feeds (18 owners), 41 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261019-Q139857349, kh-20261019-Q468324, kh-20261019-Q324546, kh-20261019-Q116758847; dropped: explainer Austrian Airlines: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['wikipedia top: no Wikipedia pageview data for the last three days', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 7 candidates from 14 trending",
+  "outlets: 1271 headlines from 29 feeds (18 owners), 45 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261019-Q139857349, kh-20261019-Q468324, kh-20261019-Q324546, kh-20261019-Q116758847; dropped: explainer Putin: fewer than 3 owners' headlines name it and the story; explainer World Food Programme: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q1101154: Orbitwire published (wk-Q1101154), not high-profile enough to tell again",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141762710-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q116758847: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q141740811: 116 h old and no longer trending live",
-  "skip kh-20261019-Q468324: gate: no draft passed the fact checks: unsupported: The claim that the situation regarding further medical updates following discharge is not yet clear (\"डिस्चार्ज के बाद आगे के मेडिकल अपडेट पर स्थिति अभी स्पष्ट नहीं है\") is not stated in any of the sources or reporting.",
-  "skip kh-20261019-Q139857349: gate: only 1 usable photos of Cockroach Janta Party on Wikimedia Commons (want 2)",
-  "nothing eligible to publish"
- ]
+  "drop wk-Q19975570: 69 h old and no longer trending live",
+  "drop wk-Q141740811: 117 h old and no longer trending live",
+  "published kh-20261019-Q468324: https://www.youtube.com/shorts/l3ddI4ZVouI"
+ ],
+ "published": {
+  "video_id": "l3ddI4ZVouI",
+  "url": "https://www.youtube.com/shorts/l3ddI4ZVouI",
+  "title": "लालकृष्ण आडवाणी अस्पताल से डिस्चार्ज, सेहत में हुआ सुधार",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
