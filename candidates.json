@@ -1,5 +1,5 @@
 {
- "at": "2026-10-19T01:27:29+00:00",
+ "at": "2026-10-19T02:10:34+00:00",
  "trending": [
   {
    "qid": "Q141762710",
@@ -130,11 +130,11 @@
    "views": 0,
    "traffic": 0,
    "news": 275000,
-   "news_at": "2026-10-19T01:27:56.419266+00:00",
+   "news_at": "2026-10-19T02:11:04.462821+00:00",
    "headlines": [
     "10-Day Police Custody For 7 Accused In Kolkata Durga Puja Pandal Stampede",
     "PRESIDENT OF INDIA’S GREETINGS ON DURGA PUJA",
-    "Durga Puja 2026: All set for the beat of the dhak",
+    "Durga Puja reflects tradition of revering women's strength: President Murmu",
     "Kolkata Durga Puja Stampede: BJP MLA Says ‘Mistakes Happen’, Warns Against Premature Blame",
     "BJP leader's role in puja committee under scanner amid Kolkata Chorbagan pandal stampede that killed 19"
    ],
@@ -150,7 +150,7 @@
    "via": [
     "google-news:10-Day Police Custody For 7 Accused In Kolkata Durga Puja Pandal Stampede",
     "google-news:PRESIDENT OF INDIA’S GREETINGS ON DURGA PUJA",
-    "google-news:Durga Puja 2026: All set for the beat of the dhak",
+    "google-news:Durga Puja reflects tradition of revering women's strength: President Murmu",
     "outlet:Government of India",
     "outlet:The Hindu Group",
     "outlet:Network18",
@@ -175,17 +175,17 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-19T01:27:56.419266+00:00"
+     "at": "2026-10-19T02:11:04.462821+00:00"
     },
     {
-     "title": "Durga Puja 2026: All set for the beat of the dhak",
-     "url": "https://www.thehindu.com/society/history-and-culture/durga-puja-2026-stories-on-pandals-idols-food-festival/article71591166.ece",
+     "title": "Durga Puja reflects tradition of revering women's strength: President Murmu",
+     "url": "https://www.thehindu.com/news/national/durga-puja-reflects-tradition-of-revering-womens-strength-president-murmu/article71600201.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-18T23:56:28+00:00"
+     "at": "2026-10-19T01:26:50+00:00"
     },
     {
      "title": "Kolkata Durga Puja Stampede: BJP MLA Says ‘Mistakes Happen’, Warns Against Premature Blame",
@@ -294,6 +294,84 @@
    "date": "2026-10-14",
    "coords": null,
    "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "id": "kh-20261019-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+   "story_keys": [
+    "case",
+    "outbreak"
+   ],
+   "date": "2026-10-18",
+   "news_at": "2026-10-19T01:47:21+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+    "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+    "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "reports": [
+    {
+     "title": "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+     "url": "https://www.dw.com/en/ebola-kenya-cases-rise-to-8-spreads-to-8th-congo-province/a-79694614?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T22:04:00+00:00"
+    },
+    {
+     "title": "Kenya confirms eighth Ebola case amid widening regional outbreak",
+     "url": "https://www.aljazeera.com/news/2026/10/19/kenya-confirms-eighth-ebola-case-amid-widening-regional-outbreak?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T01:07:52+00:00"
+    },
+    {
+     "title": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/kenya-reports-8th-ebola-case-as-congo-outbreak-expands-across-borders/articleshow/135037641.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T01:47:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co."
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -423,6 +501,84 @@
    "top_headlines": []
   },
   {
+   "id": "kh-20261019-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+   "story_keys": [
+    "case",
+    "outbreak"
+   ],
+   "date": "2026-10-18",
+   "news_at": "2026-10-19T01:47:21+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+    "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+    "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "reports": [
+    {
+     "title": "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+     "url": "https://www.dw.com/en/ebola-kenya-cases-rise-to-8-spreads-to-8th-congo-province/a-79694614?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T22:04:00+00:00"
+    },
+    {
+     "title": "Kenya confirms eighth Ebola case amid widening regional outbreak",
+     "url": "https://www.aljazeera.com/news/2026/10/19/kenya-confirms-eighth-ebola-case-amid-widening-regional-outbreak?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T01:07:52+00:00"
+    },
+    {
+     "title": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/kenya-reports-8th-ebola-case-as-congo-outbreak-expands-across-borders/articleshow/135037641.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T01:47:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
    "qid": "Q141740811",
    "title": "Kekova shipwreck",
    "fame": 125000,
@@ -458,8 +614,8 @@
   }
  ],
  "notes": [
-  "outlets: 1225 headlines from 29 feeds (18 owners), 56 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 0 kh- stories (on); dropped: explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer Ladakh: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1227 headlines from 29 feeds (18 owners), 55 matched to articles, 3 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261019-Q51993"
  ],
  "trend_errors": [
   "wikipedia top: no Wikipedia pageview data for the last three days",
@@ -467,12 +623,91 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1225,
+  "headlines": 1227,
   "feeds": 29,
   "owners": 18,
-  "matched": 56,
-  "corroborated": 2
+  "matched": 55,
+  "corroborated": 3
  },
  "emerging": [],
- "explainers": []
+ "explainers": [
+  {
+   "id": "kh-20261019-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+   "story_keys": [
+    "case",
+    "outbreak"
+   ],
+   "date": "2026-10-18",
+   "news_at": "2026-10-19T01:47:21+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+    "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+    "Kenya confirms eighth Ebola case amid widening regional outbreak"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "reports": [
+    {
+     "title": "Ebola: Kenya cases rise to 8, spreads to 8th Congo province",
+     "url": "https://www.dw.com/en/ebola-kenya-cases-rise-to-8-spreads-to-8th-congo-province/a-79694614?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-18T22:04:00+00:00"
+    },
+    {
+     "title": "Kenya confirms eighth Ebola case amid widening regional outbreak",
+     "url": "https://www.aljazeera.com/news/2026/10/19/kenya-confirms-eighth-ebola-case-amid-widening-regional-outbreak?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T01:07:52+00:00"
+    },
+    {
+     "title": "Kenya reports 8th Ebola case as Congo outbreak expands across borders",
+     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/kenya-reports-8th-ebola-case-as-congo-outbreak-expands-across-borders/articleshow/135037641.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T01:47:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  }
+ ]
 }
