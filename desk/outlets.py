@@ -378,7 +378,8 @@ HEADLINE_KINDS = (
     (r"\b(plane|aircraft|helicopter|jet|airliner|flight)\b.*\b(crash\w*|crash-lands?)\b|\b(plane|helicopter|air) crash",
      "aviation"),
     (r"\b(shooting|gunman|gunmen|stabbing|bombing|suicide bomb\w*|terror attack|militant attack|drone strikes?|"
-     r"missile strikes?|air ?strikes?|grenade attack)\b", "attack"),
+     r"missile strikes?|air ?strikes?|grenade attack|firing|fired at|opened fire|shot at|shots fired|gunshots?|"
+     r"shooters?|stabbed)\b", "attack"),
     (r"\b(explosion|explosions|blast)\b", "explosion"),
     (r"\b(derail\w*|train (crash|collision|accident))\b", "rail"),
     (r"\b(boat|ferry|ship|vessel)\b.*\b(capsiz\w*|sinks|sank|sinking)\b", "maritime"),
@@ -397,10 +398,17 @@ HEADLINE_KINDS = (
 HEADLINE_SKIP = re.compile(
     r"\b(cricket|ipl|t20|odi|football|fifa|hockey|tennis|olympic\w*|match|tournament|league|cup|squad|championships?|"
     r"elections?|electoral|polls?|bypolls?|voting|votes?|campaign\w*|court|verdict|trial|bail|hearing|acquit\w*|"
-    r"convict\w*|sentenc\w*|actor|actress|film|movie|box office|wedding|bigg boss|celebrity|trailer|review|"
-    r"opinion|editorial|analysis|explainer|explained|live|watch|video|podcast|quiz|horoscope|anniversary|years? "
+    r"convict\w*|sentenc\w*|box office|wedding|bigg boss|trailer|review|"
+    r"opinion|editorial|analysis|explainer|explained|podcast|quiz|horoscope|anniversary|years? "
     r"after|recalls?|remember\w*|stock|sensex|nifty|ipo|minister|bjp|congress|mla|party|hc|sc|plea|petition|pil|"
     r"all about)\b|^(how|why|what|who|when|where|is|are|can|should|will|inside)\b", re.I)
+# Film and live-blog words drop a headline unless it reports violence: "Bollywood actor Tiger Shroff survives
+# shooting attempt" and "Tiger Shroff Firing Case LIVE Updates" are news; an actor "shooting" a film is not.
+SOFT_SKIP = re.compile(r"\b(actor|actress|film|movie|celebrity|live|watch|video)\b", re.I)
+VIOLENCE = re.compile(r"\b(firing|fired at|opened fire|shot at|shots fired|gunshots?|bullets?|shooters?|gunm[ae]n|"
+                      r"shooting (attempt|incident|case)|stabb\w*|attack(ed)? on)\b", re.I)
+# "Attack on Tiger Shroff": an attack on a named person (case-sensitive: two capitalised words after it).
+ATTACK_ON = re.compile(r"\b[Aa]ttack(ed)? on [A-Z][a-z]+ [A-Z][a-z]+")
 # Countries, regions and institutions name too much to tell one story by: they never identify an nw- story alone.
 GENERIC = set("""india indian pakistan pakistani china chinese bangladesh nepal sri lanka us usa america american uk
 britain british england english europe european eu israel israeli iran iranian iraq russia russian ukraine ukrainian
@@ -415,9 +423,10 @@ could can may more most than new latest update updates report reports reported d
 
 def headline_kind(title: str) -> str | None:
     """The incident or protest a headline names, or None (see HEADLINE_KINDS)."""
-    if HEADLINE_SKIP.search(title):
+    if HEADLINE_SKIP.search(title) or (SOFT_SKIP.search(title) and not VIOLENCE.search(title)):
         return None
-    return next((kind for pattern, kind in HEADLINE_KINDS if re.search(pattern, title, re.I)), None)
+    return next((kind for pattern, kind in HEADLINE_KINDS if re.search(pattern, title, re.I)),
+                "attack" if ATTACK_ON.search(title) else None)
 
 
 def _stem(word: str) -> str:
@@ -466,6 +475,35 @@ def scene_words(headlines: list[str], name: str, limit: int = 3) -> list[str]:
     return sorted(shared, key=lambda k: (-counts[k], k))[:limit]
 
 
+def _joinable(word: str) -> bool:
+    return word[0].isupper() and not _kind_word(word) and _stem(word) not in STOP and word.lower() not in GENERIC
+
+
+def phrase(key: str, items: list[dict]) -> str:
+    """The name a story's key word stands in, as most of its headlines write it: "Tiger Shroff", never "Tiger" (whose
+    photos are of the animal), "Black Sea", never "Black". Runs over 3 words are a Title Case headline, not a name;
+    a tie goes to the shorter name ("Kolkata" over "Kolkata Durga Puja")."""
+    runs: Counter = Counter()
+    spelt = None
+    for i in items:
+        words = list(re.finditer(r"[A-Za-z][A-Za-z'’\-]*", i["title"]))
+        for n, m in enumerate(words):
+            if _stem(m.group(0)) != key:
+                continue
+            spelt = spelt or m.group(0)
+            lo = hi = n
+            while lo and _joinable(words[lo - 1].group(0)) and i["title"][words[lo - 1].end():words[lo].start()] == " ":
+                lo -= 1
+            while (hi + 1 < len(words) and _joinable(words[hi + 1].group(0))
+                   and i["title"][words[hi].end():words[hi + 1].start()] == " "):
+                hi += 1
+            if hi - lo < 3:
+                runs[" ".join(re.sub(r"['’]s$", "", w.group(0)) for w in words[lo:hi + 1])] += 1
+    if runs:
+        return max(runs, key=lambda r: (runs[r], -len(r.split())))
+    return re.sub(r"['’]s$", "", spelt or key)
+
+
 def slug(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:40]
 
@@ -481,7 +519,12 @@ def same_story(a: str, b: str, days: int = 2) -> bool:
     """Two nw- ids name one story: the same place and kind, first reported within `days` of each other (the first
     report seen can shift between runs as old items leave the feeds)."""
     ma, mb = NW.match(a or ""), NW.match(b or "")
-    if not ma or not mb or ma.group(2, 3) != mb.group(2, 3):
+    if not ma or not mb or ma.group(3) != mb.group(3):
+        return False
+    # A one-word name and the phrase it heads are one story ("tiger" and "tiger-shroff", named before and after
+    # 2026-10-20).
+    pa, pb = sorted((ma.group(2).split("-"), mb.group(2).split("-")), key=len)
+    if pb[:len(pa)] != pa:
         return False
     da, db = (datetime.strptime(m.group(1), "%Y%m%d").date() for m in (ma, mb))
     return abs((da - db).days) <= days
@@ -552,10 +595,7 @@ def stories(items: list[dict], now: datetime, known: list[str] | None = None,
                        key=lambda k: (-c["counts"][k], first_at(k), k))
         if not named:
             continue
-        name_key = named[0]
-        name = next(w for i in c["items"] for w in re.findall(r"[A-Za-z][A-Za-z'’\-]*", i["title"])
-                    if _stem(w) == name_key)
-        name = re.sub(r"['’]s$", "", name)
+        name = phrase(named[0], c["items"])
         first = min(datetime.fromisoformat(i["at"]) for i in c["items"])
         newest = max(i["at"] for i in c["items"])
         lead = sorted(c["items"], key=_rank)[0]

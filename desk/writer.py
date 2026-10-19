@@ -1156,6 +1156,22 @@ def story_place(name: str) -> tuple[str | None, dict]:
     return qid, ent
 
 
+def story_person(name: str) -> tuple[str | None, str | None, dict]:
+    """(QID, Wikipedia title, Wikidata item) of the person an nw- story names ("Attack on Tiger Shroff"): Wikipedia's
+    first search hit, when its plain title is the name and the item is a human."""
+    try:
+        title = wiki.search(name)
+    except Exception:
+        return None, None, {}
+    if not title or stories.plain_title(title).lower() != name.lower():
+        return None, None, {}
+    qid = (wiki.page_info([title]).get(title) or {}).get("qid")
+    ent = wiki.entities([qid]).get(qid) if qid else None
+    if not ent or wiki.HUMAN not in {c["value"] for c in wiki.claims(ent, "P31")}:
+        return None, None, {}
+    return qid, title, ent
+
+
 def build_report(cand: dict) -> Short:
     """A story Wikipedia has no article for yet (an nw- id, desk/outlets.py stories): told only from what at least
     two independent owners' articles say, with photos of the place it happened (Commons, then Openverse), and no
@@ -1174,6 +1190,13 @@ def build_report(cand: dict) -> Short:
     if len(named) < gate.OWNERS_NEEDED:
         raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles name {name}")
     qid, place = story_place(name)
+    if not place:
+        # An attack on a famous person is told about the person, over their own face-matched portraits.
+        pid, title, person = story_person(name)
+        if person:
+            return build_explainer(cand | {"qid": pid, "title": title, "person": True, "phrase": name,
+                                           "story": cand["title"], "category_hi": "घटना",
+                                           "story_keys": sorted(outlets.headline_keys(cand["title"])[0])})
     name_hi = wiki.label(place, "hi") if place else None
     context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
     ov, exclude = _shared(cand, "", {}, None, context)

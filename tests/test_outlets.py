@@ -313,6 +313,40 @@ def test_headlines_sharing_only_a_country_and_the_kind_are_different_stories():
     assert outlets.headline_kind("Delhi HC seeks Centre's response on SOPs to regulate protests") is None
 
 
+TIGER = [("bbc-world", "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai", 5),
+         ("toi", "Tiger Shroff shooting: Videos piece together moments before, during and after attack", 4),
+         ("ndtv", "Tiger Shroff Firing Case LIVE Updates: Accused Tracked Actor For 10 Days", 3),
+         ("ht", "Attack on Tiger Shroff: 3 shooters held from Kota station en route to Nepal", 2),
+         ("ndtv", "All 3 Shooters In Tiger Shroff Firing Caught From Rajasthan's Kota", 1)]
+
+
+def test_an_attack_on_a_famous_actor_is_one_story_named_by_their_full_name():
+    got = outlets.stories([item(k, t, h) for k, t, h in TIGER], NOW)
+    assert [(c["name"], c["category"]) for c in got] == [("Tiger Shroff", "attack")]
+    assert got[0]["id"] == "nw-20261013-tiger-shroff-attack" and len(got[0]["reports"]) == 5
+    assert outlets.same_story("nw-20261013-tiger-attack", got[0]["id"])
+    assert not outlets.same_story("nw-20261013-tiger-attack", "nw-20261013-tigray-attack")
+    assert outlets.headline_kind("Attack on Tiger Shroff: All 3 accused are adults, clarifies Mumbai Police") == "attack"
+    assert outlets.headline_kind("Tiger Shroff resumes shooting for his new film in London") is None
+    assert outlets.headline_kind("Actor Rajkummar Rao's film shooting wraps in Goa") is None
+    assert outlets.headline_kind("Watch: Bollywood stars at the Diwali party") is None
+
+
+def test_an_nw_story_about_a_person_is_told_over_their_own_portraits(monkeypatch):
+    monkeypatch.setattr(config, "NEW_STORIES", True)
+    cand = outlets.stories([item(k, t, h) for k, t, h in TIGER], NOW)[0]
+    monkeypatch.setattr(writer, "_reporting", lambda c, name, **kw: [report(k, TEXT_A.replace("Chamoli", name))
+                                                                      for k in ("bbc-world", "toi", "ht")])
+    monkeypatch.setattr(writer.gate, "reported", lambda name, reports: ["BBC", "HT Media", "Bennett, Coleman & Co."])
+    monkeypatch.setattr(writer, "story_place", lambda name: (None, {}))
+    monkeypatch.setattr(writer, "story_person", lambda name: ("Q7801629", "Tiger Shroff", PERSON))
+    seen = {}
+    monkeypatch.setattr(writer, "build_explainer", lambda c: seen.update(c) or "explainer")
+    assert writer.build(cand) == "explainer"
+    assert seen["id"] == cand["id"] and seen["qid"] == "Q7801629" and seen["person"] and seen["phrase"] == "Tiger Shroff"
+    assert seen["category_hi"] == "घटना" and "shroff" in seen["story_keys"]
+
+
 def test_an_nw_story_is_told_only_from_two_owners_reporting(monkeypatch, tmp_path):
     monkeypatch.setattr(config, "NEW_STORIES", True)
     cand = outlets.stories(_cluster(), NOW)[0]
