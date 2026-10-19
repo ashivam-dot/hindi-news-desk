@@ -1,15 +1,15 @@
 {
- "at": "2026-10-19T05:00:19+00:00",
+ "at": "2026-10-19T05:37:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 4 candidates from 5 trending",
-  "outlets: 1248 headlines from 30 feeds (18 owners), 55 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 2 kh- stories (on): kh-20261019-Q51993, kh-20261019-Q116758847; dropped: explainer Tel Aviv-Vienna: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1259 headlines from 30 feeds (18 owners), 53 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 2 kh- stories (on): kh-20261019-Q51993, kh-20261019-Q116758847; dropped: explainer Austrian Airlines: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['wikipedia top: no Wikipedia pageview data for the last three days', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141762710-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261019-Q116758847: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261019-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q141740811: 113 h old and no longer trending live"
+  "drop wk-Q141740811: 114 h old and no longer trending live"
  ]
 }
