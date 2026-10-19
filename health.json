@@ -1,22 +1,21 @@
 {
- "at": "2026-10-19T12:16:00+00:00",
+ "at": "2026-10-19T13:12:24+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 15 candidates from 20 trending",
-  "outlets: 1324 headlines from 29 feeds (18 owners), 44 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261019-Q139857349, kh-20261019-Q140632219, kh-20261019-Q324546, kh-20261019-Q47543; dropped: explainer Asian Para Games: fewer than 3 owners' headlines name it and the story",
+  "watch: 11 candidates from 17 trending",
+  "outlets: 1334 headlines from 29 feeds (18 owners), 42 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261019-Q324546, kh-20261019-Q47543, kh-20261019-Q16762720, kh-20261019-Q140632219; dropped: explainer Elon Musk: fewer than 3 owners' headlines name it and the story; explainer Asian Para Games: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
+  "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261019-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261019-Q116758847: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261019-Q3874799: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop wk-Q141762710-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261019-Q3874799: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261019-Q204344: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "skip kh-20261019-Q140632219: gate: no draft passed the fact checks: unsupported: The work \"संविधान\" (Constitution) is missing from NAMES.; unsupported: The work \"आर्टिकल 19\" (Article 19) is missing from NAMES.; unsupported: The work \"आर्टिकल 21\" (Article 21) is missing from NAMES.",
-  "skip wk-Q141762710-2026w43: gate: only 0 usable photos of 2026 French protests on Wikimedia Commons (want 3)",
-  "skip kh-20261019-Q139857349: gate: only 1 usable photos of Cockroach Janta Party on Wikimedia Commons (want 2)",
+  "skip kh-20261019-Q140632219: gate: no draft passed the fact checks: unsupported: The claim that AISA called the notice an attempt to suppress the right to peaceful protest, 'AISA के मुताबिक यह नोटिस शांतिपूर्ण विरोध प्रदर्शन करने के अधिकार को दबाने की कोशिश है', is only stated in one report.",
   "nothing eligible to publish"
  ]
 }
