@@ -801,8 +801,8 @@ def _shared(cand: dict, title: str, ent: dict, extra: list[str] | None,
 SUICIDE_WORDS = ["suicid*", "आत्महत्या", "खुदकुशी", "ख़ुदकुशी"]
 # Reports name suspects and attackers; an incident Short never does, so such sentences never reach the writer.
 PERPETRATOR = re.compile(r"\b(suspect\w*|accused|attackers?|assailants?|gunm[ae]n|shooters?|perpetrators?|"
-                         r"identified as|named as|arrest\w*|detained|charged|held for)\b|आरोपी|संदिग्ध|हमलावर|"
-                         r"गिरफ्तार|गिरफ़्तार|हिरासत", re.I)
+                         r"identified as|named as|arrest\w*|detained|charged|held for|gangs?|gangsters?)\b|आरोपी|"
+                         r"संदिग्ध|हमलावर|गिरफ्तार|गिरफ़्तार|हिरासत|गैंग|गिरोह", re.I)
 # Casualty sentences never reach the writer from reports: an agreed toll comes as a confirmed fact, and any other
 # count (hedged, earlier, injured) must not be said beside it.
 REPORT_CASUALTY = gate.CASUALTY + ["dead", "died", "death", "deaths", "lives", "bodies", "body", "perish*",
