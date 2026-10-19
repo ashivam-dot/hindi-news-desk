@@ -1,21 +1,21 @@
 {
- "at": "2026-10-19T10:58:55+00:00",
+ "at": "2026-10-19T11:40:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 51 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.75, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.171, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.75, 'typical_views_24h': 26}, 'category:court': {'n': 4, 'lift': 1.224, 'typical_views_24h': 71}, 'region:world': {'n': 25,",
-  "watch: 12 candidates from 17 trending",
-  "outlets: 1291 headlines from 28 feeds (17 owners), 34 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261019-Q139857349, kh-20261019-Q324546, kh-20261019-Q47543, kh-20261019-Q468324; dropped: explainer World Food Programme: fewer than 3 owners' headlines name it and the story",
+  "watch: 15 candidates from 20 trending",
+  "outlets: 1317 headlines from 29 feeds (18 owners), 41 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261019-Q139857349, kh-20261019-Q324546, kh-20261019-Q47543, kh-20261019-Q116758847; dropped: explainer Games Nishad Kumar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261019-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261019-Q116758847: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q3874799: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261019-Q204344: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q3837943: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19975570: 71 h old and no longer trending live",
   "skip wk-Q141762710-2026w43: gate: only 0 usable photos of 2026 French protests on Wikimedia Commons (want 3)",
+  "skip kh-20261019-Q195616: TakeRejected: voice: every Sulafat take came out garbled or off pace: [{'take': 1, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.961, 0.959, 0.797, 0.0, 0.39, 0.986, 0.984, 0.919], 'wpm': 159.9, 'clean': True, 'ok': False}, {'take': 2, 'model': 'gemini-3.8-flash-lite-tts', 'coverage': [0.98, 0.945, 0.781, 0.0, 0.39, 1.0, 0.967, 0.946], 'wpm': 157.5, 'clean': True, ",
   "skip kh-20261019-Q139857349: gate: only 1 usable photos of Cockroach Janta Party on Wikimedia Commons (want 2)",
   "nothing eligible to publish"
  ]
