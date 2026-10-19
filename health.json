@@ -1,20 +1,20 @@
 {
- "at": "2026-10-19T21:37:29+00:00",
+ "at": "2026-10-19T22:10:06+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 8 candidates from 17 trending",
-  "outlets: 1296 headlines from 30 feeds (19 owners), 43 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
-  "explainers: 4 kh- stories (on): kh-20261020-Q3522926, kh-20261020-Q324546, kh-20261020-Q140632219, kh-20261020-Q47543; dropped: explainer Das Ashutosh Ranka / Das Ashutosh Ranka: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story",
+  "watch: 9 candidates from 18 trending",
+  "outlets: 1287 headlines from 30 feeds (19 owners), 38 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
+  "explainers: 4 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q140632219, kh-20261020-Q47543; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q1702112: Orbitwire published (wk-Q1702112), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503', 'top stories: no Google News India list could be read (no story is ranked by place)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold wk-Q141615137-2026w43: outside 07:00-24:00 IST",
+  "drop kh-20261020-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "hold nw-20261018-tiger-shroff-attack: outside 07:00-24:00 IST",
-  "hold kh-20261020-Q324546: outside 07:00-24:00 IST",
-  "hold wp-2026_Shabwah_missile_attack: outside 07:00-24:00 IST",
-  "hold kh-20261020-Q47543: outside 07:00-24:00 IST",
-  "hold wk-Q19729623: outside 07:00-24:00 IST",
-  "drop wk-Q19975570: 82 h old and no longer trending live"
+  "drop kh-20261020-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
  ]
 }
