@@ -130,6 +130,11 @@ def test_beat_one_opens_on_the_person_not_on_the_place():
     assert not any("beat 1 must" in p for p in check(d)[0])
 
 
+def test_a_bare_section_name_is_dropped_from_the_card():
+    assert writer.card_label(" मुख्य खबर ") == "" and writer.card_label(None) == ""
+    assert writer.card_label("पुलिस कार्रवाई") == "पुलिस कार्रवाई"
+
+
 def test_perpetrators_are_never_named():
     problems, _ = check(draft(), banned_names=["Varanasi Attacker"], kind="incident")
     assert any("perpetrator" in p for p in problems)

@@ -103,6 +103,14 @@ def test_bulletin_cards_name_the_outlets_that_report_their_number():
     assert compose.facts_on_screen(short) == [("11.39%", "थोक महंगाई"), ("आधिकारिक आंकड़े", "बयान")]
 
 
+def test_a_fact_two_beats_repeat_is_listed_once():
+    from desk.spec import Beat
+
+    short = _bulletin_short()
+    short.beats.insert(2, Beat("जांच जारी है।", "photo:0", {"big": "आधिकारिक आंकड़े", "small": "आगे क्या"}))
+    assert compose.facts_on_screen(short) == [("11.39%", "थोक महंगाई"), ("आधिकारिक आंकड़े", "बयान")]
+
+
 def test_bulletin_layers_fit_the_frame():
     short = _bulletin_short()
     top = compose._topbar_layer("अर्थव्यवस्था", compose.event_day(short), fresh=True)

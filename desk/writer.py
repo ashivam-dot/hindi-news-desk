@@ -1132,6 +1132,15 @@ def search_tags(name: str) -> list[str]:
         "hindi news", "latest news", "news in hindi", "today news", "hindi samachar"]
 
 
+SECTION_LABELS = {"मुख्य खबर", "ताजा जानकारी", "ताज़ा जानकारी", "विवरण", "अन्य पक्ष", "पृष्ठभूमि", "जानकारी"}
+
+
+def card_label(label) -> str:
+    """The writer's label, unless it is a bare section name that tells the viewer nothing."""
+    label = label.strip() if isinstance(label, str) else ""
+    return "" if label in SECTION_LABELS else label
+
+
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
            mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT) -> Short:
     reports = reports or []
@@ -1139,7 +1148,7 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
     beats = [Beat(b["say"].strip(), f"photo:{b['photo']}",
-                  {"big": b["caption"].strip(), "small": (b.get("label") or "").strip()}) for b in draft["beats"]]
+                  {"big": b["caption"].strip(), "small": card_label(b.get("label"))}) for b in draft["beats"]]
     beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
                       pause_after=0.5))
     ground = source + "\n" + "\n".join(facts_text)

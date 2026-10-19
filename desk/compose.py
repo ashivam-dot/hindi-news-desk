@@ -645,10 +645,14 @@ def _fact_layer(value: str, label: str, who: str) -> tuple[np.ndarray, np.ndarra
 
 
 def facts_on_screen(short: Short) -> list[tuple[str, str]]:
-    """(value, label) of every beat's card, in order, once each."""
+    """(value, label) of every beat's card, in order, each value once."""
     rows = [((b.card or {}).get("big", "").strip(), (b.card or {}).get("small", "").strip()) for b in short.beats
             if b.shot != "outro"]
-    return list(dict.fromkeys(r for r in rows if r[0]))
+    first = {}
+    for value, label in rows:
+        if value:
+            first.setdefault(value, label)
+    return list(first.items())
 
 
 class Ticker:
@@ -746,6 +750,12 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
                       "motion": MOTIONS[i % len(MOTIONS)], "beat": beat, "outro": beat.shot == "outro"})
     cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
              if b["beat"].card and b["beat"].card.get("big") and not b["outro"] else None for b in shots]
+    big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
+    held = [k > 0 and cards[k] is not None and cards[k - 1] is not None and big[k] == big[k - 1]
+            for k in range(len(shots))]
+    for k in range(1, len(shots)):
+        if held[k]:
+            cards[k] = cards[k - 1]
     day = event_day(short)
     fresh = day is not None and day == datetime.now(IST).date()
     top = _topbar_layer(label_for(short) or NEWS_LABEL, day, fresh)
@@ -806,7 +816,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             _blit(frame, credits[shot["photo"]], 24, WIN_Y + WIN_H - 50, 0.9)
             _blit(frame, headline, 0, HEAD_Y)
             if cards[k] is not None:
-                e = _slide(t, shot["start"]) if k else 1.0
+                e = _slide(t, shot["start"]) if k and not held[k] else 1.0
                 cw = cards[k][1].shape[1]
                 _blit(frame, cards[k], round(CARD_X - (1 - e) * (cw + CARD_X)), card_y, e)
         _blit(frame, top, 36, 40, 0.97)
