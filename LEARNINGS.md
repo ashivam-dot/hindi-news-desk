@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-18T21:33:23+00:00. Scored Shorts (views at 24 h): 48. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-19T00:48:35+00:00. Scored Shorts (views at 24 h): 48. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 47 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
@@ -16,14 +16,14 @@ Baseline: a typical Short has 47 views at 24 h.
 | kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 64 |  |
 | nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 20 |  |
 | kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 117 |  |
-| kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 6 | 5 |
+| kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 7 | 5 |
 | kh-20261017-Q213380-p2 | 2026-10-17T13:25 | court | india | 37 | 27 |
-| kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 34 | 28 |
+| kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 35 | 28 |
 | kh-20261017-Q19867977-p2 | 2026-10-17T09:21 | news | world | 7 | 7 |
 | kh-20261017-Q213380 | 2026-10-17T07:21 | court | india | 163 | 129 |
 | kh-20261017-Q141681561-p2 | 2026-10-17T05:06 | world | world | 6 | 6 |
-| kh-20261017-Q19867977 | 2026-10-17T04:18 | world | world | 36 | 35 |
-| kh-20261017-Q468324 | 2026-10-17T02:15 | news | india | 55 | 55 |
+| kh-20261017-Q19867977 | 2026-10-17T04:18 | world | world | 37 | 35 |
+| kh-20261017-Q468324 | 2026-10-17T02:15 | news | india | 56 | 55 |
 | kh-20261017-Q141681561 | 2026-10-17T01:46 | world | world | 16 | 16 |
 | kh-20261016-Q796994 | 2026-10-16T14:14 | economy | india | 14 | 14 |
 | kh-20261016-Q10218 | 2026-10-16T13:22 | news | india | 593 | 548 |
@@ -40,6 +40,6 @@ Baseline: a typical Short has 47 views at 24 h.
 | kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 86 | 70 |
 | kh-20261015-Q7804 | 2026-10-15T08:09 | economy | world | 27 | 27 |
 | nw-20261014-delhi-protest | 2026-10-15T05:49 | protest | world | 14 | 14 |
-| kh-20261015-Q51993 | 2026-10-15T05:20 | news | world | 25 | 23 |
+| kh-20261015-Q51993 | 2026-10-15T05:20 | news | world | 24 | 23 |
 | kh-20261015-Q6109517 | 2026-10-15T04:49 | world | world | 67 | 64 |
 | nw-20261014-albania-protest | 2026-10-15T04:09 | protest | world | 9 | 6 |
