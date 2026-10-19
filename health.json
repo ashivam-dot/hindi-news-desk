@@ -1,27 +1,27 @@
 {
- "at": "2026-10-19T14:06:29+00:00",
+ "at": "2026-10-19T14:46:33+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 51 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.75, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.171, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.75, 'typical_views_24h': 26}, 'category:court': {'n': 4, 'lift': 1.224, 'typical_views_24h': 71}, 'region:world': {'n': 25,",
-  "watch: 12 candidates from 18 trending",
-  "outlets: 1338 headlines from 30 feeds (19 owners), 44 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261019-Q324546, kh-20261019-Q47543, kh-20261019-Q16762720, kh-20261019-Q140632219; dropped: explainer Elon Musk: fewer than 3 owners' headlines name it and the story; explainer Saurav Das Ashutosh / Saurav Das Ashutosh: no Wikipedia article that can be its centre",
+  "watch: 9 candidates from 16 trending",
+  "outlets: 1309 headlines from 29 feeds (18 owners), 39 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261019-Q47543, kh-20261019-Q324546, kh-20261019-Q140632219, kh-20261019-Q3634451; dropped: explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Saurav Das Ashutosh / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
+  "skip wk-Q1702112: Orbitwire published (wk-Q1702112), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261019-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261019-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop wk-Q141762710-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261019-Q3874799: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261019-Q204344: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "published kh-20261019-Q140632219: https://www.youtube.com/shorts/8hTdghRDM64"
+  "drop wk-Q19975570: 75 h old and no longer trending live",
+  "drop wk-Q327073: 51 h old and no longer trending live",
+  "published kh-20261019-Q3634451: https://www.youtube.com/shorts/OSyR5RbmG1M"
  ],
  "published": {
-  "video_id": "8hTdghRDM64",
-  "url": "https://www.youtube.com/shorts/8hTdghRDM64",
-  "youtube_title": "Neha Bora: शांति बांड के नोटिस के खिलाफ दिल्ली हाईकोर्ट में याचिका, वजह क्या है? #shorts #nehabora",
+  "video_id": "OSyR5RbmG1M",
+  "url": "https://www.youtube.com/shorts/OSyR5RbmG1M",
+  "youtube_title": "Delhi Metro: जामा मस्जिद स्टेशन पर यात्री गिरफ्तार, वजह क्या है? #shorts #violetline",
   "privacy": "public",
   "synthetic_declared": true
  }
