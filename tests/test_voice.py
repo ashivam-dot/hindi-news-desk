@@ -74,9 +74,29 @@ def test_a_garbled_gemini_take_without_a_clone_is_retried_later(short, tmp_path,
     def garbled(*a, **k):
         raise voice.TakeRejected("voice: every Sulafat take came out garbled")
     monkeypatch.setattr(voice, "_gemini_story", garbled)
+    monkeypatch.setattr(voice, "synthesize_lines", lambda s, d: (_ for _ in ()).throw(voice.TakeRejected("line 4")))
     monkeypatch.setattr(voice, "reference_ready", lambda: False)
     with pytest.raises(voice.TakeRejected):
         voice.synthesize(short, tmp_path)
+
+
+def test_a_garbled_take_is_read_again_line_by_line_before_any_clone(short, tmp_path, key, monkeypatch):
+    def garbled(*a, **k):
+        raise voice.TakeRejected("voice: every Sulafat take came out garbled")
+    monkeypatch.setattr(voice, "_gemini_story", garbled)
+    monkeypatch.setattr(voice, "synthesize_lines", lambda s, d: {"voice": {"by_line": True}})
+    monkeypatch.setattr(voice, "reference_ready", lambda: True)
+    monkeypatch.setattr(voice, "_chatterbox_story", lambda *a: pytest.fail("the clone is the last resort"))
+    assert voice.synthesize(short, tmp_path)["voice"]["by_line"]
+
+
+def test_long_commons_file_names_are_asked_for_in_short_batches():
+    from desk import media
+    names = [f"File:{'Piyush Goyal at an event in New Delhi ' * 3}{i}.jpg" for i in range(40)]
+    batches = media._batches(names)
+    assert [f for b in batches for f in b] == names and len(batches) > 1
+    assert all(len("|".join(b)) <= 2500 for b in batches)
+    assert media._batches([f"File:{i}.jpg" for i in range(45)])[0] == [f"File:{i}.jpg" for i in range(40)]
 
 
 def test_a_good_gemini_take_is_timed_and_recorded(short, tmp_path, key, monkeypatch):

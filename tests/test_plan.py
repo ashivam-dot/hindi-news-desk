@@ -9,8 +9,9 @@ def utc(day, hour, minute=0):
     return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
 
 
-def test_the_desk_is_built_to_be_the_most_active_channel():
-    assert plan.MAX_PER_DAY >= 20 and plan.MIN_GAP.total_seconds() <= 20 * 60
+def test_the_desk_fills_youtubes_upload_limit_and_never_runs_past_it():
+    assert plan.MAX_PER_DAY + plan.BREAKING_EXTRA <= plan.YOUTUBE_DAILY_UPLOADS
+    assert plan.MAX_PER_DAY >= 8 and plan.MIN_GAP.total_seconds() <= 20 * 60
 
 
 def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, monkeypatch):

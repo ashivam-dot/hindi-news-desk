@@ -55,11 +55,23 @@ def _text(value: str | None, limit: int = 200) -> str:
     return text[:limit]
 
 
+def _batches(files: list[str], size: int = 40, chars: int = 2500) -> list[list[str]]:
+    """Up to `size` titles a request, and never so many long file names that the URL is refused (HTTP 414)."""
+    out, batch, used = [], [], 0
+    for f in files:
+        if batch and (len(batch) == size or used + len(f) + 1 > chars):
+            out.append(batch)
+            batch, used = [], 0
+        batch.append(f)
+        used += len(f) + 1
+    return out + ([batch] if batch else [])
+
+
 def _info(files: list[str]) -> dict[str, dict]:
     out = {}
-    for i in range(0, len(files), 40):
+    for batch in _batches(files):
         d = net.get_json(COMMONS, params={
-            "action": "query", "titles": "|".join(files[i:i + 40]), "prop": "imageinfo", "iiurlwidth": 1600,
+            "action": "query", "titles": "|".join(batch), "prop": "imageinfo", "iiurlwidth": 1600,
             "iiprop": "url|size|mime|extmetadata|sha1", "format": "json", "formatversion": 2, "redirects": 1})
         for p in d["query"].get("pages", []):
             if p.get("missing") or not p.get("imageinfo"):

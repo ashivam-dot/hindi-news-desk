@@ -159,7 +159,8 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   India-only, special-topic lane produced one or two.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
-  hour with no gap, up to two beyond the daily cap (`BREAKING_EXTRA`, set to 0 to make ten a hard cap). Wars and
+  hour with no gap, up to one beyond the daily cap of nine (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
+  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds both). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
   publishing the videos as a big incident happen").** A Wikipedia article under 6 hours old is still not used (its

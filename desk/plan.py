@@ -27,8 +27,11 @@ from . import ledger, news, orbitwire, outlets, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
-MAX_PER_DAY = 20
-BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
+# YouTube refuses this channel's uploads past about ten a day ("exceeded the number of videos they may upload" after
+# 10, 10 and 9 on 15-17 Oct 2026): the eleventh story was made and lost, so the cap keeps one slot for breaking news.
+YOUTUBE_DAILY_UPLOADS = 10
+MAX_PER_DAY = 9
+BREAKING_EXTRA = 1  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
 MIN_GAP = timedelta(minutes=20)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000

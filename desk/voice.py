@@ -547,9 +547,14 @@ def synthesize(short: Short, out_dir: Path, preview: bool = False) -> dict:
         except TTSUnavailable as exc:
             reason = str(exc)
         except TakeRejected as exc:
-            if not reference_ready():
-                raise
-            reason = str(exc)
+            # One garbled line sinks a whole take: read the story line by line before leaving Sulafat.
+            log.warning("%s; reading the story line by line", exc)
+            try:
+                return synthesize_lines(short, out_dir)
+            except (TakeRejected, VoiceHold) as again:
+                if not reference_ready():
+                    raise
+                reason = f"{exc}; {again}"
         log.warning("no Gemini Sulafat narration (%s); trying the Sulafat clone", reason)
     if reference_ready():
         return _chatterbox_story(short, out_dir, REFERENCE)
