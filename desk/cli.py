@@ -40,7 +40,7 @@ def prepare(target: str | dict):
     short = writer.build(target)
     short.scene.setdefault("category", target.get("category"))
     short.scene.setdefault("article", target.get("title"))
-    for key in ("replaces", "remake_of"):
+    for key in ("replaces", "remake_of", "case", "case_story", "angle"):
         if target.get(key):
             short.scene[key] = target[key]
     work = WORK / short.id
@@ -130,7 +130,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
            "article": short.scene.get("article"), "qid": short.scene.get("qid"),
            "report_urls": report_urls(short),
            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
-           **result}
+           **{k: short.scene[k] for k in ("case", "case_story", "angle") if short.scene.get(k)}, **result}
     if old := short.scene.get("replaces"):
         row.update(replaces=old, remake_of=short.scene.get("remake_of"))
         try:

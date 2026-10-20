@@ -43,11 +43,21 @@ def test_an_explainers_headline_count_never_makes_it_famous():
     assert plan.unpopular(death, NOW) is None
 
 
-def test_follow_up_parts_are_off():
-    first = {"id": "kh-20261017-Q1", "published_at": (NOW - timedelta(hours=4)).isoformat(), "title": "भाग एक",
-             "report_urls": ["u1"]}
+def test_a_lead_case_told_from_outlets_gets_parts_and_a_replaced_version_is_not_one():
+    # The Tiger Shroff case, 2026-10-20: published as nw-20261018-..., replaced by nw-20261019-...
+    old = {"id": "nw-20261018-tiger-shroff-attack", "video_id": "OLD", "title": "पहला",
+           "published_at": (NOW - timedelta(hours=8)).isoformat(), "report_urls": ["u1"]}
+    remake = {"id": "nw-20261019-tiger-shroff-attack", "video_id": "NEW", "replaced": "OLD", "title": "दोबारा",
+              "published_at": (NOW - timedelta(hours=3)).isoformat(), "report_urls": ["u2", "u3"]}
     reports = [{"url": f"u{n}", "owner": f"O{n}", "title": "t"} for n in range(1, 6)]
-    assert plan.follow_up({"id": "kh-20261017-Q1", "top_score": 1.9, "reports": reports}, [first], NOW) is None
+    cand = {"id": "nw-20261020-tiger-shroff-attack", "top_score": 1.15, "reports": reports}
+    part = plan.follow_up(cand, [old, remake], NOW)
+    assert part["id"] == "nw-20261020-tiger-shroff-attack-p2" and part["earlier"] == ["दोबारा"]
+    assert [r["url"] for r in part["reports"]] == ["u4", "u5"]
+    assert plan.follow_up(cand, [old, remake, remake | {"id": part["id"], "video_id": "P2", "replaced": None,
+                                                         "report_urls": ["u4", "u5"]}], NOW) is None
+    assert plan.follow_up(cand | {"top_score": 0.4}, [old, remake], NOW) is None
+    assert not plan.same_case("nw-20261019-pune-fire", "nw-20261020-tiger-shroff-attack")
 
 
 def test_a_month_is_never_a_centre():

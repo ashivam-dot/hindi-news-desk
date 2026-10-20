@@ -177,7 +177,15 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   stampede (19 dead) never became a candidate. So:
   - an explainer must be in Google News India's top stories (its headline-count fame never makes it "famous"), and a
     world explainer must be in the Hindi lists (IN-hi, IN-hi-nation);
-  - follow-up parts are off (`plan.SERIES_PARTS = 1`);
+  - follow-up parts were off from 2026-10-18 (every part 2 drew 4-8 views) and are back on from 2026-10-20 (owner:
+    "this tiger shrof case is in very lime light you can cover multiple sories of it with facts"): a story Google
+    News India leads with (`plan.SERIES_SCORE`) gets up to `plan.SERIES_PARTS` Shorts in all, `plan.SERIES_GAP`
+    apart, each from at least two owners' reports no earlier version used, kh- and nw- stories alike;
+  - a case the whole country is following gets a case file (`cases/*.json`): one Short per angle (the family's
+    response, the industry's, the probe, the government's, the scene), each from reports chosen for that angle,
+    ahead of the other ready stories and inside the daily cap and the 20-minute gap. A case Short names only the
+    people, places and bodies its file lists (`writer.off_case`): an accused is never named, only how many, where
+    they are from, where they were caught and what police say;
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
     of buildings); its pictures are the person (a Commons search, not only their article), the other people and
     the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted
@@ -229,6 +237,10 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   - each beat shows the person or place it names: that person's own portrait with a red name pill, an
     OpenStreetMap map of the place (`नक्शा`, credited), a route map when it names two places, the city police for
     a police beat; the same picture never closes one beat and opens the next (`desk/visuals.py`);
+  - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
+    place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
+    street map, a city named again shows that spot rather than its centre, and a route line joins only places that
+    are apart (Kota and Mumbai), never a spot and its own city;
   - "there is no photo" is said only after searching Commons for it (the Tiger Short claimed one photo; Commons had
     nine);
   - real incident photos and footage belong to news agencies (Content ID, strikes, no monetization) and are never

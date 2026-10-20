@@ -86,6 +86,34 @@ def test_a_long_beat_cuts_between_words_to_its_second_picture():
     assert alone[1]["photo"] == 1 and alone[1]["motion"] is compose.TIGHT
 
 
+def place(qid, en, lat, lon, pop=None, part_of=None, region=False):
+    def claim(value):
+        return {"mainsnak": {"datavalue": {"value": value}}}
+    claims = {"P625": [claim({"latitude": lat, "longitude": lon})]}
+    if pop:
+        claims["P1082"] = [claim({"amount": f"+{pop}"})]
+    if part_of:
+        claims["P131"] = [claim({"id": part_of})]
+    if region:
+        claims["P36"] = [claim({"id": "Q1"})]
+    return {"en": en, "qid": qid, "kind": "place", "ent": {"claims": claims}}
+
+
+def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
+    mumbai = place("Q1156", "Mumbai", 18.97, 72.83, pop=12_442_373)
+    juhu = place("Q1764487", "Juhu", 19.10, 72.83)
+    kota = place("Q200009", "Kota", 25.18, 75.83, pop=1_001_694)
+    maha = place("Q1191", "Maharashtra", 19.6, 75.5, pop=112_374_333, region=True)
+    assert {a: b["en"] for a, b in visuals.within([mumbai, juhu, kota, maha]).items()} == {"Juhu": "Mumbai"}
+    assert visuals.within([place("Q5", "Bandra", 19.05, 72.84, part_of="Q1156"), mumbai])["Bandra"] is mumbai
+    # "मुम्बई के जुहू": the beat shows Juhu on Mumbai's map, not Mumbai's centre, and no route between them.
+    cast = [{"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [3], "near": [5]},
+            {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [5], "near": [6], "inside": "Mumbai"}]
+    views = visuals.assign([{"say": "x", "photo": 0}, {"say": "यह मुम्बई के जुहू में हुआ।", "photo": 0},
+                            {"say": "मुम्बई पुलिस जांच कर रही है।", "photo": 0}], [0, 1], cast, first=0)
+    assert views[1][0] == 5 and 3 not in views[1]
+
+
 def test_maps_hold_every_site_inside_the_frame():
     win = visuals.window([(25.18, 75.83), (19.08, 72.88)], 300.0)
     for lat, lon in ((25.18, 75.83), (19.08, 72.88)):

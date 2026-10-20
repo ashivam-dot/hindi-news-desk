@@ -260,6 +260,43 @@ def test_a_remake_comes_back_under_a_new_id_until_its_old_video_is_replaced(tmp_
     assert plan.watch(save=False)["candidates"] == []
 
 
+def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(ledger, "STATE", tmp_path / "state")
+    monkeypatch.setattr(plan, "CASES", tmp_path / "cases")
+    monkeypatch.setattr(plan, "REMAKES", tmp_path / "remakes")
+    (tmp_path / "cases").mkdir()
+    (tmp_path / "remakes").mkdir()
+    report = {"url": "u9", "owner": "NDTV", "title": "Jackie Shroff on the firing"}
+    (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
+        {"name": "tiger", "story": "nw-20261019-tiger-shroff-attack", "until": "2099-01-01T00:00:00+00:00",
+         "names_ok": ["Tiger Shroff"], "angles": [
+             {"key": "family", "focus": "The family.", "reports": [report], "names_ok": ["Jackie Shroff"]},
+             {"key": "probe", "focus": "The probe.", "reports": [report], "arrests": True}]}))
+    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": "2026-10-20T10:01:00+00:00",
+                           "video_id": "NEW", "title": "पहला"})
+    cand = {"id": "nw-20261020-tiger-shroff-attack", "title": "Tiger Shroff attack", "category": "attack",
+            "kind": "incident", "fame": 1, "top_score": 1.15}
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [cand], "errors": []})
+    monkeypatch.setattr(plan, "_quake_facts", lambda cands: [])
+    monkeypatch.setattr(plan.orbitwire, "fetch", lambda: {"published": [], "candidates": []})
+    found = plan.watch(save=False)["candidates"]
+    angles = [c for c in found if c.get("case")]
+    assert [c["id"] for c in angles] == ["nw-20261019-tiger-shroff-attack-family",
+                                         "nw-20261019-tiger-shroff-attack-probe"]
+    family = angles[0]
+    assert family["names_ok"] == ["Tiger Shroff", "Jackie Shroff"] and family["earlier"] == ["पहला"]
+    assert family["reports"] == [report] and not family["arrests"] and angles[1]["arrests"]
+    ready, _ = plan.lineup(found + [{"id": "wk-Q1", "title": "x", "fame": 10 ** 9}], utc(20, 12))
+    assert ready[0]["id"] == family["id"]
+    ledger.record_publish({"id": family["id"], "published_at": "2026-10-20T12:00:00+00:00", "video_id": "F",
+                           "case": "tiger", "title": "परिवार"})
+    later = [c for c in plan.watch(save=False)["candidates"] if c.get("case")]
+    assert [c["id"] for c in later] == ["nw-20261019-tiger-shroff-attack-probe"]
+    assert later[0]["earlier"] == ["पहला", "परिवार"]
+
+
 def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():
     sunday = trends.story_id("Q1", "protest", date(2026, 10, 11))
     monday = trends.story_id("Q1", "protest", date(2026, 10, 12))

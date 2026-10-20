@@ -38,6 +38,10 @@ PAGE = "https://www.openstreetmap.org/copyright"
 LICENSE = "CC BY-SA 2.0"
 CREDIT = "नक्शा: © OpenStreetMap contributors / CC BY-SA 2.0"
 WIDE_KM, NEAR_KM, REGION_KM = 900.0, 36.0, 1500.0
+# A place inside another the script names (Juhu in Mumbai) is the spot: the city's map marks it, never the city's
+# centre, and a street map shows it close; the two are never joined by a route line (owner, 2026-10-20: "use the map
+# correctly if you are showing mumbai there").
+NESTED_KM, CITY_KM, STREET_KM = 40.0, 30.0, 6.0
 MARKER = (220, 30, 44)
 INK = (10, 20, 46)
 
@@ -181,6 +185,29 @@ def is_region(ent: dict) -> bool:
     return bool(wiki.claims(ent, "P36"))
 
 
+def _population(ent: dict) -> float:
+    return max((c["value"] for c in wiki.claims(ent, "P1082") if isinstance(c["value"], float)), default=0.0)
+
+
+def within(places: list[dict]) -> dict[str, dict]:
+    """{inner place's en: the place it lies in} for the places the script names: a place whose Wikidata P131 is the
+    other, or the smaller of two non-region places under NESTED_KM apart."""
+    from .stories import km_between
+
+    out = {}
+    for a in places:
+        for b in places:
+            if a is b or a["en"] in out or is_region(a["ent"]) or out.get(b["en"]) is a:
+                continue
+            pa, pb = wiki.coords(a["ent"]), wiki.coords(b["ent"])
+            inside = b["qid"] in {c["value"] for c in wiki.claims(a["ent"], "P131")}
+            near = bool(pa and pb) and not is_region(b["ent"]) and km_between(pa, pb) < NESTED_KM \
+                and _population(a["ent"]) < _population(b["ent"])
+            if inside or near:
+                out[a["en"]] = b
+    return out
+
+
 def mentions(say: str, cast: list[dict]) -> list[dict]:
     """The cast members a beat names, in the order it names them."""
     found = []
@@ -263,6 +290,8 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         named = mentions(say, members)
         people = [c for c in named if c["kind"] == "person"]
         places = [c for c in named if c["kind"] == "place"]
+        # "मुम्बई के जुहू": the spot, on its city's map, not the city's centre first.
+        places = [c for c in places if not any(s.get("inside") == c["en"] for s in places)]
         options: list[int] = []
         if k == 0:
             options.append(first if first is not None else (beat.get("photo") if beat.get("photo") in subject
@@ -350,30 +379,48 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         exclude.update(r["file"] for r in rows)
         return list(range(start, len(photos)))
 
+    try:
+        inside = within([c for c in cast if c["kind"] == "place"])
+    except Exception as exc:
+        log.warning("visuals: places not compared (%s)", exc)
+        inside = {}
+    holds = {o["en"] for o in inside.values()}
     for c in cast:
         c["photos"], c["near"] = [], []
         try:
             if c["kind"] == "person":
                 c["photos"] = add(_person_photos(c, folder / f"cast-{c['qid']}", exclude))
-            else:
-                site = wiki.coords(c["ent"])
-                if not site:
-                    continue
-                span = REGION_KM if is_region(c["ent"]) else WIDE_KM
-                c["photos"] = add([map_photo([(site, c["hi"])], span, folder / f"map-{c['qid']}-wide.jpg",
-                                             f"where {c['en']} is")])
-                times = sum(c in mentions(b.get("say", ""), [c]) for b in beats)
-                if times > 1 and not is_region(c["ent"]):
-                    c["near"] = add([map_photo([(site, c["hi"])], NEAR_KM, folder / f"map-{c['qid']}-near.jpg",
-                                               f"{c['en']} up close")])
+                continue
+            site = wiki.coords(c["ent"])
+            if not site:
+                continue
+            if outer := inside.get(c["en"]):
+                c["inside"] = outer["en"]
+                c["photos"] = add([map_photo([(site, f"{c['hi']}, {outer['hi']}")], CITY_KM,
+                                             folder / f"map-{c['qid']}-city.jpg", f"{c['en']} in {outer['en']}")])
+                c["near"] = add([map_photo([(site, c["hi"])], STREET_KM, folder / f"map-{c['qid']}-street.jpg",
+                                           f"{c['en']} up close")])
+                continue
+            span = REGION_KM if is_region(c["ent"]) else WIDE_KM
+            c["photos"] = add([map_photo([(site, c["hi"])], span, folder / f"map-{c['qid']}-wide.jpg",
+                                         f"where {c['en']} is")])
+            times = sum(c in mentions(b.get("say", ""), [c]) for b in beats)
+            if times > 1 and not is_region(c["ent"]) and c["en"] not in holds:
+                c["near"] = add([map_photo([(site, c["hi"])], NEAR_KM, folder / f"map-{c['qid']}-near.jpg",
+                                           f"{c['en']} up close")])
         except Exception as exc:
             log.warning("visuals: no picture for %s (%s)", c["en"], exc)
+    for c in cast:
+        spot = next((s for s in cast if s.get("inside") == c["en"] and s["photos"]), None)
+        if spot and c["photos"]:
+            c["near"] = spot["photos"][:1]  # a city named again shows where in it, not its centre
     places = [c for c in cast if c["kind"] == "place" and c["photos"]]
     extra = []
     for b in beats:
         named = [c for c in mentions(b.get("say", ""), places)][:2]
         pair = tuple(c["en"] for c in named)
-        if len(named) == 2 and not any(tuple(e["pair"]) in (pair, pair[::-1]) for e in extra):
+        nested = any(c.get("inside") in pair for c in named)
+        if len(named) == 2 and not nested and not any(tuple(e["pair"]) in (pair, pair[::-1]) for e in extra):
             try:
                 a, z = named
                 row = map_photo([(wiki.coords(a["ent"]), a["hi"]), (wiki.coords(z["ent"]), z["hi"])], 300.0,

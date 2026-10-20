@@ -9,7 +9,8 @@ News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) 
 so a fresh story beats a bigger stale one, times its place in Google News India's top stories (desk/top.py); a story
 in none of those lists, not searched in India, not breaking and not very famous (an explainer's fame only counts
 headlines, so it never counts as famous) is dropped (unpopular), and so is a world explainer the Hindi lists do not
-carry (White House, Pope and Starlink statements drew 0-35 views). Follow-up parts (follow_up) are off. A story older than STALE_H is dropped unless a live signal (Google Trends
+carry (White House, Pope and Starlink statements drew 0-35 views). A story Google News India leads with gets
+follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
 most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame or BREAKING_OWNERS independent outlets on
@@ -23,6 +24,7 @@ radar, ahead of the other ready stories; once the new version is public the old 
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -58,11 +60,13 @@ TOP_WEIGHT = 2.0
 # Sport and film stories qualify only this high in the lists (about top 10 of a front page).
 TOP_ONLY_SCORE = 0.55
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
-# from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS a day.
-# Off since 2026-10-18 (SERIES_PARTS = 1): every part 2 drew 4-8 views while its first part drew 16-95.
+# from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
+# Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
+# (nw-) stories too, owner: "this tiger shrof case is in very lime light you can cover multiple sories of it with
+# facts". Each part leads with what is new; every fact still needs two owners.
 SERIES_SCORE = 0.9
-SERIES_PARTS = 1
-SERIES_GAP = timedelta(hours=3)
+SERIES_PARTS = 4
+SERIES_GAP = timedelta(hours=2)
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -77,6 +81,36 @@ def remakes(at: datetime | None = None) -> list[dict]:
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(REMAKES.glob("*.json"))]
     return [s for s in specs if s["replaces"] not in done
             and at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
+
+
+CASES = Path(__file__).resolve().parents[1] / "cases"
+
+
+def cases(at: datetime | None = None) -> list[dict]:
+    """Case files still current: one story the channel follows angle by angle, each angle its own Short from
+    reporting chosen for it ({"name", "story": an id of the story, "until", "names_ok": [...], "angles": [{"key",
+    "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...]}]})."""
+    at = at or datetime.now(timezone.utc)
+    specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CASES.glob("*.json"))]
+    return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
+
+
+def angles_of(cand: dict, specs: list[dict], rows: list[dict]) -> list[dict]:
+    """The angles of the case this candidate belongs to that are not on the channel yet, in the file's order."""
+    for s in specs:
+        if not same_case(cand["id"], s["story"]):
+            continue
+        gone = {r["replaced"] for r in rows if r.get("replaced")}
+        told = sorted((r for r in rows if r.get("video_id") not in gone and (
+            same_case(r["id"], s["story"]) or r.get("case") == s["name"])), key=lambda r: r["published_at"])
+        earlier = [r.get("title") or "" for r in told]
+        stem = SUFFIX.sub("", s["story"])
+        return [cand | {"id": f"{stem}-{a['key']}", "case": s["name"], "case_story": s["story"], "angle": a["key"],
+                        "focus": a["focus"],
+                        "reports": a["reports"], "arrests": bool(a.get("arrests")), "earlier": earlier,
+                        "names_ok": s.get("names_ok", []) + a.get("names_ok", [])}
+                for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
+    return []
 
 
 def remake_of(cand: dict, specs: list[dict]) -> dict | None:
@@ -162,20 +196,32 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     return None
 
 
+SUFFIX = re.compile(r"-[pr]\d+$")
+
+
+def same_case(row_id: str, base: str) -> bool:
+    """A published id is this story or one of its parts or remakes; an nw- story's date shifts between runs."""
+    stem = SUFFIX.sub("", row_id)
+    return stem == base or (base.startswith("nw-") and outlets.same_story(stem, base))
+
+
 def follow_up(cand: dict, rows: list[dict], at: datetime) -> dict | None:
-    """The next part of one of the day's biggest explainer stories, or None (see SERIES_SCORE)."""
+    """The next part of a story Google News India leads with (SERIES_SCORE), told from reporting no earlier part
+    used, or None. A replaced version is not a part."""
     from . import gate
 
     base = cand["id"]
-    if not base.startswith("kh-") or (cand.get("top_score") or 0) < SERIES_SCORE:
+    if not base.startswith(("kh-", "nw-")) or (cand.get("top_score") or 0) < SERIES_SCORE:
         return None
-    parts = sorted((r for r in rows if r["id"] == base or r["id"].startswith(base + "-p")),
-                   key=lambda r: r["published_at"])
+    gone = {r["replaced"] for r in rows if r.get("replaced")}
+    told = [r for r in rows
+            if same_case(r["id"], base) or (r.get("case_story") and same_case(r["case_story"], base))]
+    parts = sorted((r for r in told if r.get("video_id") not in gone), key=lambda r: r["published_at"])
     if not parts or len(parts) >= SERIES_PARTS:
         return None
     if at - datetime.fromisoformat(parts[-1]["published_at"]) < SERIES_GAP:
         return None
-    used = {u for r in parts for u in r.get("report_urls") or []}
+    used = {u for r in told for u in r.get("report_urls") or []}  # a replaced version was public too
     fresh = [r for r in cand.get("reports") or [] if r["url"] not in used]
     if len(outlets.owners(fresh)) < gate.OWNERS_NEEDED:
         return None
@@ -279,7 +325,7 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
             notes.append(f"hold {c['id']}: {wait}")
         else:
             ready.append(c | {"breaking": breaking, "priority": round(priority(c, at))})
-    ready.sort(key=lambda c: not c.get("replaces"))
+    ready.sort(key=lambda c: (not c.get("replaces"), not c.get("case")))
     return ready, notes
 
 
@@ -368,8 +414,11 @@ def watch(save: bool = True) -> dict:
     found["notes"] += _quake_facts(found["trending"])
     at = datetime.now(timezone.utc)
     rows = ledger.published()
-    stories, redo = [], remakes(at)
+    stories, redo, open_cases = [], remakes(at), cases(at)
     for c in found["trending"]:
+        if angles := angles_of(c, open_cases, rows):
+            open_cases = [s for s in open_cases if s["name"] != angles[0]["case"]]
+            stories += angles
         if again := remake_of(c, redo):
             redo = [s for s in redo if s["replaces"] != again["replaces"]]
             if not ledger.is_done(again["id"]):

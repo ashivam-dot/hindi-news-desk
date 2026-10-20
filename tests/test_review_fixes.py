@@ -13,6 +13,13 @@ def test_not_today_flags_aaj_and_abhi_but_not_lasting_or_other_words():
     assert writer.not_today("आज भीड़ जमा हुई।")
 
 
+def test_a_case_short_names_only_the_people_and_places_its_file_lists():
+    draft = {"names": [{"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}, {"en": "kota", "hi": "कोटा"},
+                       {"en": "Some Accused", "hi": "कोई आरोपी"}]}
+    assert writer.off_case(draft, ["Tiger Shroff", "Kota"]) == \
+        ["Some Accused is not on this case's list of names: leave them out"]
+
+
 def test_casualty_words_cover_more_phrasings_but_not_inside_other_words():
     assert gate.found("हादसे में 12 लोगों की जान चली गई", gate.CASUALTY)
     assert gate.found("एक व्यक्ति मारा गया", gate.CASUALTY)

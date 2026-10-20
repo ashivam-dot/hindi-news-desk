@@ -415,6 +415,14 @@ def not_today(text: str) -> list[str]:
     return ["this did not happen today: remove आज/अभी and give the date"] if hits else []
 
 
+def off_case(draft: dict, names_ok: list[str]) -> list[str]:
+    """Problems for a name the case file does not list: in a case Short that is how an accused's name is kept out."""
+    ok = {n.strip().lower() for n in names_ok}
+    return [f"{p['en']} is not on this case's list of names: leave them out" for p in draft.get("names") or []
+            if isinstance(p, dict) and isinstance(p.get("en"), str) and p["en"].strip()
+            and p["en"].strip().lower() not in ok]
+
+
 def script_text(draft: dict) -> str:
     return " ".join(b.get("say", "") + " " + b.get("caption", "") + " " + b.get("label", "")
                     for b in draft.get("beats", [])) + " " + \
@@ -633,12 +641,14 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           agreed_toll: bool = False, log_path: Path | None = None, headlines: list[str] | None = None,
           angle: str | None = None, pen: Pen | None = None,
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
-          earlier: list[str] | None = None, start: dict | None = None) -> tuple[dict, list[dict], list[str]]:
+          earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
+          names_ok: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
     lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part).
-    start: a draft to check first (a remake's reviewed script); it faces every check a written draft does."""
+    start: a draft to check first (a remake's reviewed script); it faces every check a written draft does. focus: one
+    angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -646,14 +656,22 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     brief = {"death": DEATH_BRIEF, "protest": PROTEST_BRIEF, "explainer": EXPLAINER_BRIEF}.get(kind, INCIDENT_BRIEF)
     brief = brief.format(name=subject["en"], pronoun=pronoun.lower(), object=obj)
     if earlier:
-        brief += ("\n\nFOLLOW-UP: this channel already published " + str(len(earlier)) + " Short(s) on this story "
-                  "today, titled: " + "; ".join(f'"{e}"' for e in earlier) + ". The REPORTING below is newer. Lead "
+        brief += ("\n\nFOLLOW-UP: this channel already published " + str(len(earlier)) + " Short(s) on this story, "
+                  "titled: " + "; ".join(f'"{e}"' for e in earlier) + ". The REPORTING below is newer. Lead "
                   "with what is new in it (a new development, decision, reaction or figure), give at most one short "
                   "line of what was already told, and never repeat the earlier Short beat by beat.")
     if angle:
         brief += (f"\n\nANGLE ({orbitwire.ANGLES[angle]['label']}): the channel's English sister channel already told "
                   f"this story its usual way, so this Hindi Short must be different. {orbitwire.ANGLES[angle]['brief']} "
                   "Use a different hook from a plain retelling.")
+    if focus:
+        brief += ("\n\nTHIS SHORT'S ANGLE: " + focus + " Open with this angle and keep every beat on it; the case "
+                  "itself gets one short line of context at most. Every fact comes from the REPORTING below.")
+    if names_ok:
+        brief += ("\n\nName only these people, places and bodies (list each in names with its English name exactly "
+                  "as written here): " + ", ".join(names_ok) + ". Never "
+                  "name an accused, a suspect, a shooter or a gang member: say how many, where they are from and "
+                  "what police say about them.")
     if not today_ok:
         brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy, and "
                   "अभी तक or आज तक for what the REPORTING says is still unknown, are fine). Say when it happened "
@@ -679,6 +697,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                                           kind, agreed_toll, angle, reports)
             if not today_ok:
                 problems += not_today(script_text(draft))
+            if names_ok:
+                problems += off_case(draft, names_ok)
             if attempt < DRAFTS - 1:
                 problems += monotone(draft) + bookish(draft)
             if not problems:
@@ -1287,7 +1307,8 @@ def build_report(cand: dict) -> Short:
     angle = ov["angle"] if ov else None
     draft, log, used = write(kind, subject, "It", facts_text, "", "", photos, hi_names, agreed_toll=toll is not None,
                              log_path=work / "writer_log.json", angle=angle, today_ok=when == _today_ist(),
-                             reports=reports, title_hints=hindi_hints(cand), start=cand.get("draft"))
+                             reports=reports, title_hints=hindi_hints(cand), earlier=cand.get("earlier"),
+                             start=cand.get("draft"))
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, next((r["url"] for r in reports if r["owner"] in named), reports[0]["url"]),
                   stories.numbers_in(name), "named in the reports of " + ", ".join(named), owners=named)]
@@ -1322,7 +1343,8 @@ def build_explainer(cand: dict) -> Short:
     name_hi = wiki.label(ent, "hi")
     phrase = cand.get("phrase") or name
     work = WORK / sid
-    mine = [r for r in cand.get("reports") or [] if explain.about_story(r, phrase, cand.get("story_keys") or [])]
+    mine = [r for r in cand.get("reports") or []
+            if cand.get("case") or explain.about_story(r, phrase, cand.get("story_keys") or [])]
     reports = _reporting(cand | {"reports": mine}, phrase, hi=name_hi, person=person, search=False)
     if len(outlets.owners(reports)) < gate.OWNERS_NEEDED:
         raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles about {name} could "
@@ -1340,7 +1362,8 @@ def build_explainer(cand: dict) -> Short:
                          + (" not used by Orbitwire" if ov else ""))
     story = cand.get("story") or (cand.get("headlines") or [title])[0]
     words = [phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])
-    reports = clean_reports(reports, words, perpetrators=True)
+    # A case's arrests angle keeps what police say about the accused; off_case keeps their names out.
+    reports = clean_reports(reports, words, perpetrators=not (cand.get("arrests") and cand.get("names_ok")))
     source = _strip(wiki.article_text(title, limit=EXPLAIN_SOURCE, per_section=900), SUICIDE_WORDS)
     source_hi, hi_title = _hindi_source(ent, limit=2500)
     source_hi = _strip(source_hi, SUICIDE_WORDS)
@@ -1355,7 +1378,8 @@ def build_explainer(cand: dict) -> Short:
                              log_path=work / "writer_log.json",
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
-                             title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"))
+                             title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
+                             focus=cand.get("focus"), names_ok=cand.get("names_ok"))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
