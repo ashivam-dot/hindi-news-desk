@@ -1,22 +1,21 @@
 {
- "at": "2026-10-20T20:38:16+00:00",
+ "at": "2026-10-20T21:12:22+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 56 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.769, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.254, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.77, 'typical_views_24h': 26}, 'category:court': {'n': 6, 'lift': 1.332, 'typical_views_24h': 70}, 'region:world': {'n': 26",
-  "watch: 19 candidates from 19 trending",
-  "outlets: 1229 headlines from 30 feeds (19 owners), 16 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 10 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q3520790, kh-20261021-Q139857349, kh-20261021-Q1058; dropped: explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre",
+  "watch: 21 candidates from 21 trending",
+  "outlets: 1224 headlines from 30 feeds (19 owners), 20 matched to articles, 13 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 11 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q3520790, kh-20261021-Q1058, kh-20261021-Q16186720",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261021-Q139857349: outside 07:00-24:00 IST",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1527 headlines (KeyError)']",
   "hold kh-20261021-Q1058: outside 07:00-24:00 IST",
+  "hold kh-20261021-Q139857349: outside 07:00-24:00 IST",
   "hold kh-20261021-Q1353: outside 07:00-24:00 IST",
+  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "hold nw-20261019-tiger-shroff-attack-chase: outside 07:00-24:00 IST",
-  "hold nw-20261019-tiger-shroff-attack-industry: outside 07:00-24:00 IST",
-  "hold nw-20261019-tiger-shroff-attack-incident: outside 07:00-24:00 IST"
+  "hold nw-20261019-tiger-shroff-attack-industry: outside 07:00-24:00 IST"
  ]
 }
