@@ -7,6 +7,10 @@ def test_not_today_flags_aaj_and_abhi_but_not_lasting_or_other_words():
     assert not writer.not_today("उनके गीत आज भी गूंजते हैं।")
     assert not writer.not_today("वे आज़ादी के बाद मशहूर हुईं, आजकल भी याद की जाती हैं।")
     assert not writer.not_today("6 अक्टूबर 2026 को उनका निधन हुआ।")
+    # The Tiger Shroff remake failed four drafts on "so far" (2026-10-20).
+    assert not writer.not_today("हमले का मकसद अभी तक पूरी तरह से सामने नहीं आया है।")
+    assert not writer.not_today("आज तक कोई गिरफ्तारी नहीं हुई।")
+    assert writer.not_today("आज भीड़ जमा हुई।")
 
 
 def test_casualty_words_cover_more_phrasings_but_not_inside_other_words():

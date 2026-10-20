@@ -409,8 +409,9 @@ def _today_ist() -> date:
 
 
 def not_today(text: str) -> list[str]:
-    """Problems for wording that dates an older event to today."""
-    hits = re.findall(r"(?<![\u0900-\u097F])(आज|अभी)(?!\s*भी)(?![\u0900-\u097F])", text)
+    """Problems for wording that dates an older event to today. आज भी, आज तक and अभी तक (so far) say what is still
+    true, not when it happened."""
+    hits = re.findall(r"(?<![\u0900-\u097F])(आज|अभी)(?!\s*(?:भी|तक)(?![\u0900-\u097F]))(?![\u0900-\u097F])", text)
     return ["this did not happen today: remove आज/अभी and give the date"] if hits else []
 
 
@@ -653,8 +654,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                   f"this story its usual way, so this Hindi Short must be different. {orbitwire.ANGLES[angle]['brief']} "
                   "Use a different hook from a plain retelling.")
     if not today_ok:
-        brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy is "
-                  "fine); give the date instead.")
+        brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy, and "
+                  "अभी तक or आज तक for what is still unknown, are fine); give the date instead.")
     name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
                else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports)
