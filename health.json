@@ -1,22 +1,24 @@
 {
- "at": "2026-10-20T07:31:50+00:00",
+ "at": "2026-10-20T08:15:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 53 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.753, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.22, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.755, 'typical_views_24h': 26}, 'category:court': {'n': 5, 'lift': 1.229, 'typical_views_24h': 65}, 'region:world': {'n': 26",
-  "watch: 7 candidates from 16 trending",
-  "outlets: 1220 headlines from 30 feeds (19 owners), 8 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 6 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q3520790, kh-20261020-Q1951; dropped: explainer Flipkart Know / Jio IPO: no Wikipedia article that can be its centre; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre",
+  "watch: 8 candidates from 15 trending",
+  "outlets: 1224 headlines from 30 feeds (19 owners), 7 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 4 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q111, kh-20261020-Q1951; dropped: explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre; explainer Saurav Das Ashutosh / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer 'Saudi keen on ties with India on power grid systems': no name to tell it by",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261020-Q1951: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261020-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261020-Q139762081: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261020-Q1951: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261020-Q111: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q7045350: 92 h old and no longer trending live",
+  "skip nw-20261019-tiger-shroff-attack: gate: no draft passed the fact checks: unsupported: 18 अक्टूबर 2026; unsupported: हमले के पीछे की वजह का अभी तक कोई आधिकारिक खुलासा नहीं किया गया है।",
+  "skip wk-Q141615137-2026w43: gate: no draft passed the fact checks: 2026 French student protests (2026 French student protests) is not in the sources",
+  "nothing eligible to publish"
  ]
 }
