@@ -40,7 +40,7 @@ def prepare(target: str | dict):
     short = writer.build(target)
     short.scene.setdefault("category", target.get("category"))
     short.scene.setdefault("article", target.get("title"))
-    for key in ("replaces", "remake_of", "case", "case_story", "angle"):
+    for key in ("replaces", "remake_of", "case", "case_story", "angle", "hook"):
         if target.get(key):
             short.scene[key] = target[key]
     work = WORK / short.id

@@ -760,6 +760,75 @@ def _name_layer(name: str) -> tuple[np.ndarray, np.ndarray]:
     return _rgba(_pill(name, _font("ExtraBold", 40), NEWS_RED + (240,), height=62, pad=20))
 
 
+# From the study of successful news Shorts (2026-10-20: BBC Hindi, DW Hindi, Al Jazeera, AJ+, RealLifeLore and 11
+# more; owner: "take reference of famous AI news channels ... add some positive skills while video editing"). A
+# hook card over the picture from the first frame (10 of 16 channels; a statement, never a question: the bulletin
+# asks none), a place stamp in the picture's corner (BBC Hindi, DW, Al Jazeera), a one-second flash of the Short's
+# pictures (AJ+, VisualPolitik bursts), and an end card that asks the viewer to follow (Al Jazeera, DW).
+HOOK_HOLD = 3.6  # seconds the hook card stays over the picture (the study: 4-7 s, read before the first cut)
+BURST_STEP, BURST_MAX, BURST_MIN = 0.18, 5, 3  # the opening flash: up to five pictures, a fifth of a second each
+FOLLOW = "हर अपडेट के लिए चैनल फ़ॉलो करें"
+
+
+def _hookcard_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
+    """The opening line over the picture: dark text on a white box with a solid red offset shadow (BBC)."""
+    text = drawable(text, "ExtraBold")
+    width = W - 260
+    rows = wrap2(text, "ExtraBold", 70, width)
+    fonts = [_fit("ExtraBold", 70, r, width, 40) for r in rows]
+    tall = [f.getbbox(r)[3] - f.getbbox(r)[1] for f, r in zip(fonts, rows)]
+    bw = max(round(f.getlength(r)) for f, r in zip(fonts, rows)) + 64
+    bh = sum(tall) + 22 * (len(rows) - 1) + 60
+    off = 14
+    img = Image.new("RGBA", (bw + off, bh + off), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rectangle((off, off, bw + off - 1, bh + off - 1), fill=NEWS_RED + (255,))
+    d.rectangle((0, 0, bw - 1, bh - 1), fill=(255, 255, 255, 250))
+    y = 30
+    for r, f, t in zip(rows, fonts, tall):
+        b = f.getbbox(r)
+        d.text((32 - b[0], y - b[1]), r, font=f, fill=NEWS_NAVY + (255,))
+        y += t + 22
+    return _rgba(img)
+
+
+def _place_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
+    """Where the story is, pinned in the picture's top corner."""
+    text = drawable(text, "ExtraBold")
+    font, h, pad, dot = _font("ExtraBold", 36), 60, 18, 18
+    img = Image.new("RGBA", (round(font.getlength(text)) + 2 * pad + dot + 14, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, img.width - 1, h - 1), radius=10, fill=NEWS_RED + (240,))
+    cy = h // 2
+    d.ellipse((pad, cy - dot // 2, pad + dot, cy + dot // 2), fill=(255, 255, 255, 255))
+    d.ellipse((pad + 6, cy - 3, pad + dot - 6, cy + 3), fill=NEWS_RED + (255,))
+    b = font.getbbox(text)
+    d.text((pad + dot + 14 - b[0], (h - (b[3] - b[1])) / 2 - b[1]), text, font=font, fill=(255, 255, 255, 255))
+    return _rgba(img)
+
+
+def places_on(seen: list[dict], photos: list[dict]) -> list[tuple[float, str]]:
+    """[(from when, place)] for the place stamp: the first place a map or landmark photo shows, from the start, then
+    each new one as it comes on screen (a route's stamp is where it ends). "जुहू, मुंबई" never gives way to the
+    "मुंबई" or "जुहू" it already names."""
+    out: list[tuple[float, str]] = []
+    for v in seen:
+        p = photos[v["photo"]]
+        where = (p.get("who") or "").split(" - ")[-1].strip() if p.get("role") in ("map", "place") else ""
+        if where and (not out or where not in [s.strip() for s in out[-1][1].split(",")] + [out[-1][1]]):
+            out.append((v["start"], where))
+    return [(0.0, out[0][1])] + out[1:] if out else []
+
+
+def burst(seen: list[dict], photos: list[dict]) -> list[int]:
+    """The opening flash: the Short's other pictures in the order they come, maps and portraits alike, or [] when
+    there are too few to make one."""
+    first = seen[0]["photo"] if seen else None
+    pics = [i for i in dict.fromkeys(v["photo"] for v in seen if not v.get("outro")) if i != first and i in
+            range(len(photos))][:BURST_MAX]
+    return pics if len(pics) >= BURST_MIN else []
+
+
 def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     """The news-bulletin Short (see the comment above NEWS_RED)."""
     mood = short.scene.get("mood", "news")
@@ -801,10 +870,15 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     tags = {i: map_tag if p.get("role") == "map" else file_tag for i, p in enumerate(photos)}
     names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
     end = _end_layers(accent, disclosure(photos))
+    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 46), NEWS_GOLD + (255,), NEWS_NAVY + (255,), height=80, pad=26))
     badge = _badge_layer()
     card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
+    hook = _hookcard_layer(short.scene["hook"]) if short.scene.get("hook") else None
+    stamps = [(at, _place_layer(where)) for at, where in places_on(seen, photos)]
+    flash = [] if short.loss else burst(seen, photos)
+    flash_end = len(flash) * BURST_STEP
     work.mkdir(parents=True, exist_ok=True)
-    accents = None if short.loss else [s["start"] for s in shots[1:]]
+    accents = None if short.loss else [s["start"] for s in shots[1:]] + ([flash_end] if flash else [])
     mixed = _mix(work / "narration.wav", short, duration, work, accents)
     out = work / "short.mp4"
     stills = work / "stills"
@@ -822,9 +896,13 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         k = view["beat_k"]
         shot = shots[k]
         u = (t - view["start"]) / max(view["end"] - view["start"], 0.1)
-        punch = 0.03 * max(0.0, 1 - (t - view["start"]) / 0.35) if v else 0.06 * max(0.0, 1 - t / 0.6)
-        win = cam.shoot(plates[view["photo"]], u, view["motion"], punch)
-        on = view["photo"]  # the picture the tag, name and credit belong to
+        punch = 0.03 * max(0.0, 1 - (t - view["start"]) / 0.35) if v else 0.06 * max(0.0, 1 - (t - flash_end) / 0.6)
+        if t < flash_end:
+            on = flash[int(t / BURST_STEP)]
+            win = cam.shoot(plates[on], 0.0, MOTIONS[on % len(MOTIONS)], 0.05)
+        else:
+            win = cam.shoot(plates[view["photo"]], u, view["motion"], punch)
+            on = view["photo"]  # the picture the tag, name and credit belong to
         if v and not view["cut"] and (t - view["start"]) * FPS < CROSSFADE:
             prev = seen[v - 1]
             pu = (t - prev["start"]) / max(prev["end"] - prev["start"], 0.1)
@@ -839,7 +917,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             a = min(1.0, (t - shot["start"]) / 0.4)
             logo, src, disc = end
             block = ((recap[1].shape[0] + 70) if recap is not None else 0) + \
-                ((logo[1].shape[0] + 30) if logo is not None else 0) + src[1].shape[0] + 24 + disc[1].shape[0]
+                ((logo[1].shape[0] + 30) if logo is not None else 0) + src[1].shape[0] + 24 + disc[1].shape[0] + \
+                40 + follow[1].shape[0]
             y = max(WIN_Y + 40, (TICKER_Y - block) // 2)
             if recap is not None:
                 _blit(frame, recap, (W - recap[1].shape[1]) // 2, y, a)
@@ -847,6 +926,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             if logo is not None:
                 _blit(frame, logo, (W - logo[1].shape[1]) // 2, y, a)
                 y += logo[1].shape[0] + 30
+            _blit(frame, follow, (W - follow[1].shape[1]) // 2, y, a)
+            y += follow[1].shape[0] + 40
             _blit(frame, src, (W - src[1].shape[1]) // 2, y, a)
             _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + src[1].shape[0] + 24, a)
         else:
@@ -856,6 +937,12 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             if on in names:
                 _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
             _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
+            stamp = next((s for at, s in reversed(stamps) if t >= at), None)
+            if stamp is not None and t >= flash_end:
+                _blit(frame, stamp, 24, WIN_Y + 20, min(0.97, (t - flash_end) / 0.3))
+            if hook is not None and t < HOOK_HOLD:
+                a = min(1.0, t / 0.2, (HOOK_HOLD - t) / 0.3)
+                _blit(frame, hook, (W - hook[1].shape[1]) // 2, WIN_Y + WIN_H - hook[1].shape[0] - 160, a)
             _blit(frame, headline, 0, HEAD_Y)
             if cards[k] is not None:
                 e = _slide(t, shot["start"]) if k and not held[k] else 1.0

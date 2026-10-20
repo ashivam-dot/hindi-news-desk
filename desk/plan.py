@@ -93,7 +93,7 @@ def cases(at: datetime | None = None) -> list[dict]:
     now, which no angle may contradict, "names_ok": [...], "never": [an accused's
     or a gang's name, English and Hindi, the script may not contain], "angles": [{"key",
     "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...], "words": [names the angle's excerpts
-    keep sentences about]}]})."""
+    keep sentences about], "hook": its opening card's Hindi line, a reported fact and never a question}]})."""
     at = at or datetime.now(timezone.utc)
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CASES.glob("*.json"))]
     return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
@@ -119,7 +119,7 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict]) -> list[dict]:
                                         "arrests": bool(a.get("arrests")), "earlier": earlier,
                                         "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
                                         "case_words": a.get("words", []), "never": never,
-                                        "case_status": s.get("status")}
+                                        "case_status": s.get("status"), "hook": a.get("hook")}
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
     return []
 

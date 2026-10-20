@@ -123,6 +123,21 @@ def test_bulletin_layers_fit_the_frame():
     assert recap[1].shape[0] < compose.TICKER_Y - compose.WIN_Y
 
 
+def test_the_place_stamp_follows_the_maps_and_the_burst_flashes_the_other_pictures():
+    photos = [{"role": None}, {"role": "map", "who": "जुहू, मुंबई"}, {"role": "person", "who": "जैकी श्रॉफ"},
+              {"role": "map", "who": "सूरत - कोटा जंक्शन"}, {"role": "place", "who": "कोटा जंक्शन"}]
+    photos.append({"role": "map", "who": "मुंबई"})
+    seen = [{"photo": 0, "start": 0.0}, {"photo": 1, "start": 3.0}, {"photo": 5, "start": 4.5}, {"photo": 2, "start": 6.0},
+            {"photo": 3, "start": 9.0}, {"photo": 4, "start": 12.0}, {"photo": 0, "start": 15.0, "outro": True}]
+    assert compose.places_on(seen, photos) == [(0.0, "जुहू, मुंबई"), (9.0, "कोटा जंक्शन")]
+    assert compose.burst(seen, photos) == [1, 5, 2, 3, 4]
+    assert compose.burst(seen[:3], photos) == []
+    hook = compose._hookcard_layer("तीनों आरोपी कोटा में पकड़े गए")
+    stamp = compose._place_layer("जुहू, मुंबई")
+    assert hook[1].shape[1] <= compose.W - 200 and hook[1].shape[0] < compose.WIN_H // 2
+    assert stamp[1].shape[1] < compose.W // 2
+
+
 def test_the_ticker_scrolls_and_never_leaves_a_gap():
     ticker = compose.Ticker([("11.39%", "थोक महंगाई")])
     frames = []
