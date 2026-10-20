@@ -29,6 +29,13 @@ def test_text_stays_above_youtubes_own_title_and_buttons():
     assert hook[1].shape[1] <= compose.W - 120 and chip[1].shape[1] <= compose.W - 72
 
 
+def test_the_short_ends_on_the_last_word_not_on_a_trailing_take():
+    words = [{"text": "है।", "start": 26.4, "end": 27.08, "beat": 4}]
+    assert compose.spoken_until({"duration": 36.91, "words": words}) == 27.08 + compose.SPEECH_TAIL
+    assert compose.spoken_until({"duration": 27.2, "words": words}) == 27.2
+    assert compose.spoken_until({"duration": 5.0, "words": []}) == 5.0
+
+
 def test_the_scrim_darkens_top_and_bottom_and_keeps_the_middle():
     s = compose.scrim()
     assert s.shape == (compose.H, 1, 1)

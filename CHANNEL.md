@@ -277,7 +277,11 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     photo leads only a beat with no place or one naming that force ("मुंबई पुलिस"), and never a beat naming another
     force ("राजस्थान पुलिस": `visuals.other_force`); a place beat's second picture is another of its places or the
     story's route map, never the story's person (the first full-template dry run, 2026-10-21, put Mumbai Police
-    under Surat and Kota and "रेलवे स्टेशन" over Tiger Shroff's portrait);
+    under Surat and Kota and "रेलवे स्टेशन" over Tiger Shroff's portrait); in a story about a person, a beat that
+    does not name them (the injured, the interrogation) shows the police for a beat about the accused, else the
+    story's places, never their portrait (`visuals.assign(person=...)`); in a story about a person, a beat that
+    does not name them (the injured, the interrogation) shows the police for a beat about the accused, else the
+    story's places, never their portrait (`visuals.assign(person=...)`);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
     place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
     street map, a city named again shows that spot rather than its centre, and a route line joins only places that

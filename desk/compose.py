@@ -977,6 +977,14 @@ FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.555, 0.
 FULL_CAPTION_SIZE = 84
 NAME_HOLD, CHIP_HOLD = 2.6, 3.0  # seconds a name strap and a fact chip stay up
 END_HOLD = 1.2  # seconds of follow card after the last word
+SPEECH_TAIL = 0.4
+
+
+def spoken_until(timing: dict) -> float:
+    """Where the narration ends: its last word, not the end of the take. A dry run's take trailed 10 s after its
+    last word, and the Short held one photo with no captions for all of it."""
+    words = timing.get("words") or []
+    return min(timing["duration"], words[-1]["end"] + SPEECH_TAIL) if words else timing["duration"]
 SPLIT_GAP = 8
 
 
@@ -1040,7 +1048,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     shade = scrim()
     captions = Captions(timing["words"], accent, size=FULL_CAPTION_SIZE, y=FULL_CAPTION_Y)
     spans = timing["beats"]
-    speech = timing["duration"]
+    speech = spoken_until(timing)
     duration = speech + END_HOLD
     shots = []
     for i, (beat, (s, e)) in enumerate(zip(short.beats, spans)):
