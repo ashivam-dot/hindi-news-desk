@@ -190,7 +190,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     `status` says where the case stands now (an angle's reports may predate the arrests: the first dry run said
     police were still searching, a day after all three were caught), and no angle may contradict it. Each
     angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
-    so the angles keep coming until its `until` after the story leaves the radar;
+    so the angles keep coming until its `until` after the story leaves the radar. Angles go ahead of other
+    stories but at least 45 minutes apart (`CASE_GAP`), so the day's other news still runs between them, and an
+    open case's story gets no separate follow-up parts;
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
     of buildings); its pictures are the person (a Commons search, not only their article), the other people and
     the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted
@@ -240,11 +242,14 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   - never one picture for a whole Short: at least three distinct pictures (`visuals.MIN_VISUALS`, gated), and the
     picture changes every 3-4 seconds (a beat longer than `compose.CUT_AFTER` cuts at a word boundary);
   - each beat shows the person or place it names: that person's own portrait with a red name pill, an
-    OpenStreetMap map of the place (`नक्शा`, credited), a route map when it names two places, the city police for
-    a police beat (an Indian story only: a case file sets `region`, as the radar called the Tiger story "world"
-    and the police photos were skipped), and for a landmark (a station, a hospital, a beach: a place with no
-    population) its own Commons photo before its map; up to five places; the same picture never closes one beat
-    and opens the next (`desk/visuals.py`);
+    OpenStreetMap map of the place (`नक्शा`, credited), a route map when it names two places, the police of the
+    city whose police the script names (Mumbai Police, not the first home district's) for a police beat (an Indian
+    story only: a case file sets `region`, as the radar called the Tiger story "world" and the police photos were
+    skipped), and for a landmark (a station, a hospital, a beach: a place with no population) its own Commons
+    photo before its map; up to five towns and landmarks plus three states (the probe's states filled all five
+    places and Kota, where all three were caught, had no picture); a case file lists every spelling of a place
+    the writer may use (Kota Junction, Kota railway station); the same picture never closes one beat and opens
+    the next (`desk/visuals.py`);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
     place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
     street map, a city named again shows that spot rather than its centre, and a route line joins only places that
@@ -261,8 +266,9 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   the bulletin now has:
   - a hook card over the picture for the first 3.6 s (`scene.hook`, white box with a red offset shadow), a
     statement and never a question; a case angle gives its own;
-  - a place stamp in the picture's top corner from the first second that follows the story's maps and landmarks
-    (Juhu, then Surat, then Kota Junction) and never gives "जुहू, मुंबई" away to the "मुंबई" it already names;
+  - a place stamp in the picture's top corner that follows the story's maps and landmarks (Juhu, then Surat,
+    then Kota Junction), shown only over a map or a place's photo (over a portrait it put Tiger Shroff in
+    Begusarai), and never gives "जुहू, मुंबई" away to the "मुंबई" it already names;
   - a one-second opening flash of the Short's other pictures (3-5 at a fifth of a second, with an accent), never on
     a loss story;
   - "हर अपडेट के लिए चैनल फ़ॉलो करें" on the end card.

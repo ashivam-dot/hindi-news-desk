@@ -937,9 +937,10 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             if on in names:
                 _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
             _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
+            # Only over a map or a place's photo: over a portrait it would put Tiger Shroff in Begusarai.
             stamp = next((s for at, s in reversed(stamps) if t >= at), None)
-            if stamp is not None and t >= flash_end:
-                _blit(frame, stamp, 24, WIN_Y + 20, min(0.97, (t - flash_end) / 0.3))
+            if stamp is not None and t >= flash_end and photos[on].get("role") in ("map", "place"):
+                _blit(frame, stamp, 24, WIN_Y + 20, min(0.97, (t - max(flash_end, view["start"])) / 0.3))
             if hook is not None and t < HOOK_HOLD:
                 a = min(1.0, t / 0.2, (HOOK_HOLD - t) / 0.3)
                 _blit(frame, hook, (W - hook[1].shape[1]) // 2, WIN_Y + WIN_H - hook[1].shape[0] - 160, a)

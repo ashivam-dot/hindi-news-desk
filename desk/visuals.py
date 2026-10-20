@@ -24,7 +24,9 @@ from . import hindi, media, net, wiki
 log = logging.getLogger(__name__)
 
 MIN_VISUALS = 3  # distinct pictures on screen; a lead story about a person may go with 2 (writer.LEAD_SCORE)
-MAX_PEOPLE, MAX_PLACES = 3, 5
+# States are counted apart from towns and landmarks: the Tiger Shroff probe's two home states and Mumbai filled all
+# five places, and Kota, where all three were caught, had no picture.
+MAX_PEOPLE, MAX_PLACES, MAX_REGIONS = 3, 5, 3
 PERSON_PHOTOS = 2
 # A named landmark (a station, a hospital, a beach: a place with no population) shows its own Commons photo, then
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
@@ -230,7 +232,7 @@ def _subject(en: str, subject_en: str) -> bool:
 
 def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True) -> list[dict]:
     """The people and places the script names besides its subject, resolved: [{en, hi, kind, qid, title, ent}]."""
-    out, people, places = [], 0, 0
+    out, people, places, regions = [], 0, 0, 0
     for n in draft.get("names") or []:
         en, hi = (n.get("en") or "").strip(), (n.get("hi") or "").strip()
         if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out):
@@ -245,10 +247,13 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True)
         if any(c["qid"] == qid for c in out):
             continue
         kind = "person" if wiki.HUMAN in kinds(ent) else "place"
-        if kind == "person" and people >= MAX_PEOPLE or kind == "place" and (places >= MAX_PLACES or not places_too):
+        region = kind == "place" and is_region(ent)
+        if kind == "place" and not places_too or kind == "person" and people >= MAX_PEOPLE \
+                or region and regions >= MAX_REGIONS or kind == "place" and not region and places >= MAX_PLACES:
             continue
         people += kind == "person"
-        places += kind == "place"
+        regions += region
+        places += kind == "place" and not region
         out.append({"en": en, "hi": hi, "kind": kind, "qid": qid, "title": title, "ent": ent})
     return out
 
@@ -457,14 +462,18 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
                 extra.append({"kind": "route", "pair": pair, "photos": add([row])})
             except Exception as exc:
                 log.warning("visuals: no map of %s (%s)", pair, exc)
-    city = next((c for c in places if not is_region(c["ent"])), None)
-    if india and city and any(w in b.get("say", "") for b in beats for w in POLICE):
+    said = " ".join(b.get("say", "") for b in beats)
+    cities = [c for c in places if not is_region(c["ent"])]
+    # The police the script names first: the probe's first city was a home district with no police page.
+    named = {(n.get("en") or "").lower() for n in draft.get("names") or []}
+    cities.sort(key=lambda c: f"{c['en']} police".lower() not in named and not hindi.contains(said, f"{c['hi']} पुलिस"))
+    for city in cities[:2] if india and any(w in said for w in POLICE) else []:
         try:
-            rows = _police_photos(city, folder / "police", exclude)
-            if rows:
+            if rows := _police_photos(city, folder / f"police-{city['qid']}", exclude):
                 extra.append({"kind": "police", "photos": add(rows)})
+                break
         except Exception as exc:
-            log.warning("visuals: no police photo (%s)", exc)
+            log.warning("visuals: no police photo for %s (%s)", city["en"], exc)
     first = beats[0].get("photo") if beats and beats[0].get("photo") in subject else None
     views = assign(beats, subject, cast + extra, first)
     log.info("visuals: %d pictures, %d distinct on screen, cast %s", len(photos),

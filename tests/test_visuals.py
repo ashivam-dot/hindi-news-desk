@@ -3,6 +3,8 @@ from PIL import Image
 from desk import compose, visuals
 from desk.spec import shot_photos
 
+cast_for = visuals.cast_for
+
 # The Tiger Shroff script of 2026-10-20, which went out over one photo for all six beats.
 TIGER = [
     {"say": "एक्टर टाइगर श्रॉफ पर मुम्बई में फायरिंग हुई, जिसमें वे बाल-बाल बच गए।", "photo": 0},
@@ -112,6 +114,20 @@ def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
     views = visuals.assign([{"say": "x", "photo": 0}, {"say": "यह मुम्बई के जुहू में हुआ।", "photo": 0},
                             {"say": "मुम्बई पुलिस जांच कर रही है।", "photo": 0}], [0, 1], cast, first=0)
     assert views[1][0] == 5 and 3 not in views[1]
+
+
+def test_states_leave_room_for_the_towns_and_stations(monkeypatch):
+    # The probe Short of 2026-10-20: two home states, two districts, Mumbai, Rajasthan and Kota's station.
+    names = [("Haryana", "हरियाणा", True), ("Sonipat", "सोनीपत", False), ("Bihar", "बिहार", True),
+             ("Begusarai", "बेगूसराय", False), ("Mumbai", "मुम्बई", False), ("Rajasthan", "राजस्थान", True),
+             ("Kota Junction", "कोटा जंक्शन", False), ("Delhi", "दिल्ली", False), ("Gujarat", "गुजरात", True)]
+    known = {en: place(f"Q{i}", en, 20.0 + i, 75.0, region=r) for i, (en, _, r) in enumerate(names)}
+    monkeypatch.setattr(visuals, "resolve", lambda en, india: (known[en]["qid"], en, known[en]["ent"]))
+    monkeypatch.setattr(visuals, "kinds", lambda ent: set())
+    draft = {"names": [{"en": en, "hi": hi} for en, hi, _ in names],
+             "beats": [{"say": " ".join(hi for _, hi, _ in names)}]}
+    assert [c["en"] for c in cast_for(draft, "Tiger Shroff", True)] == [
+        "Haryana", "Sonipat", "Bihar", "Begusarai", "Mumbai", "Rajasthan", "Kota Junction", "Delhi"]
 
 
 def test_a_named_landmark_shows_its_photo_then_its_map_and_a_route_still_gets_the_photo():
