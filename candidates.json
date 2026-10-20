@@ -1,5 +1,5 @@
 {
- "at": "2026-10-20T05:12:18+00:00",
+ "at": "2026-10-20T05:56:31+00:00",
  "trending": [
   {
    "id": "kh-20261020-Q90",
@@ -30,8 +30,8 @@
     "India Today Group",
     "NDTV"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -39,14 +39,14 @@
     "🔴 France issues curfew for parts of central Paris",
     "French authorities impose partial curfews in Paris, Nice",
     "Curfew imposed in parts of central Paris and other cities after rioting across France",
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
    ],
    "hindi_headlines": [
-    "झोटा हत्याकांड में पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
-    "चारों तरफ आग, हाथ में जाम... पेरिस में कपल की डेट का VIDEO वायरल",
+    "फ्रांस में भड़की हिंसा और आगजनी, पेरिस समेत कई शहरों में लगा कर्फ्यू",
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
     "'पेरिस बहुत जल्द एक मुस्लिम शहर बन जाएगा', ट्रंप ने फ्रांस में लगी आग पर दिया बड़ा बयान"
    ],
-   "hindi_news": 3,
+   "hindi_news": 4,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -100,14 +100,17 @@
     "outlet:BBC",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "google-news:'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "google-news:‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to...",
+    "google-news:झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान"
    ],
    "top": {
-    "IN": 2
+    "IN": 4,
+    "IN-hi-nation": 14
    },
-   "top_score": 0.95,
+   "top_score": 0.955,
    "top_headlines": [
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
    ]
   },
   {
@@ -118,9 +121,9 @@
    "phrase": "Marco Rubio",
    "person": true,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
    "story_keys": [
     "agenda",
     "hold",
@@ -130,23 +133,24 @@
     "visit"
    ],
    "date": "2026-10-19",
-   "news_at": "2026-10-20T01:22:33+00:00",
+   "news_at": "2026-10-20T02:51:04+00:00",
    "owners": [
     "Network18",
     "Deutsche Welle",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "HT Media"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
     "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
+    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
     "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
     "Marco Rubio to to commence three-day visit to India",
-    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
+    "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -164,6 +168,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-10-19T12:31:00+00:00"
+    },
+    {
+     "title": "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+     "url": "https://www.hindustantimes.com/india-news/india-us-seek-deeper-ties-as-marco-rubio-arrives-trade-security-and-technology-on-agenda-101792463620076.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T02:51:04+00:00"
     },
     {
      "title": "Marco Rubio to to commence three-day visit to India",
@@ -200,18 +214,19 @@
     "outlet:Network18",
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
     "google-news:Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+    "google-news:India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
    ],
    "top": {
-    "IN": 4,
-    "IN-nation": 2
+    "IN": 2,
+    "IN-nation": 10
    },
-   "top_score": 1.135,
+   "top_score": 1.115,
    "top_headlines": [
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
     "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
+    "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
    ]
   },
@@ -229,6 +244,7 @@
    "story_keys": [
     "chase",
     "flee",
+    "gold",
     "jawan",
     "man",
     "nabs",
@@ -238,15 +254,16 @@
     "suspiciou"
    ],
    "date": "2026-10-19",
-   "news_at": "2026-10-20T03:01:24+00:00",
+   "news_at": "2026-10-20T04:47:17+00:00",
    "owners": [
     "HT Media",
     "Network18",
     "The Hindu Group",
-    "India Today Group"
+    "India Today Group",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -255,7 +272,7 @@
     "CISF jawan nabs ‘suspicious’ man in escalator-stairs chase at Delhi Metro station",
     "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
     "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-    "CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
+    "CISF nabs man carrying gold paste at Delhi Metro"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -266,6 +283,16 @@
    "india_link": true,
    "label_hi": "केंद्रीय औद्योगिक सुरक्षा बल",
    "reports": [
+    {
+     "title": "CISF nabs man carrying gold paste at Delhi Metro",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/watch-how-cisf-jawan-chased-suspicious-man-carrying-155-gm-gold-paste-at-delhi-jama-masjid-metro-station/articleshow/135061118.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:47:17+00:00"
+    },
     {
      "title": "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
      "url": "https://www.indiatoday.in/trending-news/story/cisf-officer-nabs-fleeing-passenger-at-delhi-metro-station-after-scanner-flags-suspicious-object-3021117-2026-10-20?utm_source=rss",
@@ -322,158 +349,108 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:India Today Group",
-    "google-news:CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Security scare at Delhi Metro: CISF jawan chases down NRI hiding ‘semi-solid substance’; CCTV captures dr"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
   },
   {
-   "id": "kh-20261020-Q47498302",
-   "qid": "Q47498302",
-   "title": "Sourav Das (actor)",
-   "name": "Saurav Das",
-   "phrase": "Saurav Das",
+   "id": "kh-20261020-Q3520790",
+   "qid": "Q3520790",
+   "title": "Mohan Bhagwat",
+   "name": "Mohan Bhagwat",
+   "phrase": "India Mohan Bhagwat",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+   "story": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
    "story_keys": [
-    "bonds’",
-    "breached",
-    "custody",
-    "deliberately",
-    "extended",
-    "judicial",
-    "respect",
-    "target",
-    "two"
+    "change",
+    "force"
    ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T04:57:37+00:00",
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T05:29:37+00:00",
    "owners": [
+    "India Today Group",
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
+    "TV9 Network",
+    "NDTV"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
-    "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
-    "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
-    "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
-    "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
-    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody"
+    "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+    "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "नई पीढ़ी को सही-गलत को समझने की कला सिखानी होगी...नागपुर में RSS के कार्यक्रम में बोले मोहन भागवत",
+    "दशहरे पर मोहन भागवत ने शराब और पियक्कड़ का उदाहरण क्यों दिया?",
+    "'हिंदू के खिलाफ काम कर रहीं आसुरी ताकतें', रिजीम चेंज पर बोले मोहन भागवत- सत्ता परिवर्तन समस्या का हल नहीं",
+    "भारत को तोड़ने वाले लोग, सत्ता के स्वार्थी देते हैं उनका साथ; मोहन भागवत ‘रिजिम चेंज’ पर बोले",
+    "'राष्ट्र निर्माण पर जोर', RSS चीफ मोहन भागवत के संबोधन की PM ने की तारीफ"
+   ],
+   "hindi_news": 10,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "मोहन भागवत",
    "reports": [
     {
-     "title": "'There is no justice': CJP's Saurav Das as court extends his judicial custody",
-     "url": "https://www.hindustantimes.com/india-news/there-is-no-justice-cjp-saurav-das-as-court-extends-his-judicial-custody-jantar-mantar-ashutosh-ranka-emergency-101792468138854.html",
+     "title": "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'",
+     "url": "https://www.news18.com/india/mohan-bhagwat-warns-against-demonic-regime-change-lobby-a-storm-has-swept-in-from-the-west-ws-lrt-10389616.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T05:29:37+00:00"
+    },
+    {
+     "title": "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+     "url": "https://www.hindustantimes.com/india-news/rss-chief-mohan-bhagwat-says-evil-forces-want-to-dismantle-india-regime-change-will-never-happen-vijayadashmi-delhi-protests-101792470403676.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:57:37+00:00"
+     "at": "2026-10-20T04:28:07+00:00"
     },
     {
-     "title": "‘Deliberately breached bonds’: Why court extended Das, Ranka’s custody by two days",
-     "url": "https://timesofindia.indiatimes.com/india/deliberately-breached-bonds-court-extends-saurav-das-ashutosh-rankas-custody-by-2-days/articleshow/135059238.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T01:09:10+00:00"
-    },
-    {
-     "title": "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
-     "url": "https://www.news18.com/india/no-respect-court-says-cjps-saurav-das-ashutosh-ranka-deliberately-breached-bonds-ws-l-10389445.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T23:55:56+00:00"
-    },
-    {
-     "title": "Saurav Das, Ashutosh Ranka’s Judicial Custody Extended By 2 Days: ‘Deliberately Breached Bonds’",
-     "url": "https://www.news18.com/india/judicial-custody-of-cjps-saurav-das-ashutosh-ranka-extended-by-two-days-10389189.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T17:11:03+00:00"
-    },
-    {
-     "title": "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
-     "url": "https://www.news18.com/india/farce-cjp-reacts-to-extension-of-ashutosh-ranka-saurav-das-judicial-custody-10389352.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T16:45:12+00:00"
-    },
-    {
-     "title": "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
-     "url": "https://www.hindustantimes.com/india-news/cjps-abhijeet-dipke-targets-pm-modi-over-extended-custody-of-saurav-das-ashutosh-ranka-101792424130812.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T16:07:10+00:00"
-    },
-    {
-     "title": "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
-     "url": "https://www.indiatoday.in/india/story/saurav-das-ashutosh-ranka-breached-bonds-showed-no-respect-for-law-court-in-order-extending-custody-3021017-2026-10-19?utm_source=rss",
+     "title": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+     "url": "https://www.indiatoday.in/india/story/evil-forces-want-to-dismantle-india-some-ambitious-leaders-joining-in-mohan-bhagwat-on-regime-change-op-3021145-2026-10-20?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T16:03:03+00:00"
-    },
-    {
-     "title": "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
-     "url": "https://timesofindia.indiatimes.com/india/feeling-strong-abhijeet-dipke-targets-pm-modi-after-das-rankas-judicial-custody-extended-shares-photo/articleshow/135051633.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T15:43:57+00:00"
+     "at": "2026-10-20T04:24:27+00:00"
     }
    ],
    "via": [
+    "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "google-news:आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?"
    ],
    "top": {
-    "IN": 5,
-    "IN-nation": 1
+    "IN-nation": 9,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.1,
+   "top_score": 0.75,
    "top_headlines": [
-    "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+    "आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’ | India News"
    ]
   },
   {
@@ -561,580 +538,6 @@
    "top_headlines": []
   },
   {
-   "id": "kh-20261020-Q47543",
-   "qid": "Q47543",
-   "title": "Organisation of Islamic Cooperation",
-   "name": "Organisation of Islamic Cooperation",
-   "phrase": "OIC",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
-   "story_keys": [
-    "anti-india’",
-    "maliciou",
-    "orchestrated",
-    "reference",
-    "reject",
-    "resolution"
-   ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T02:04:00+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
-    "India Rejects ‘Malicious, Biased’ OIC References On J&K, Says Pakistan Orchestrated Resolutions",
-    "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them",
-    "References in resolutions by OIC ‘malicious’: India"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "इस्लामिक सहकारिता का संगठन",
-   "reports": [
-    {
-     "title": "References in resolutions by OIC ‘malicious’: India",
-     "url": "https://www.hindustantimes.com/india-news/references-in-resolutions-by-oic-malicious-india-101792434266323.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T02:04:00+00:00"
-    },
-    {
-     "title": "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them",
-     "url": "https://www.thehindu.com/news/national/mea-rejects-oics-anti-india-references-accuses-pakistan-of-orchestrating-them/article71602533.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T11:08:16+00:00"
-    },
-    {
-     "title": "India Rejects ‘Malicious, Biased’ OIC References On J&K, Says Pakistan Orchestrated Resolutions",
-     "url": "https://www.news18.com/india/india-rejects-malicious-biased-oic-references-on-jk-says-pakistan-orchestrated-resolutions-10388807.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T10:37:44+00:00"
-    },
-    {
-     "title": "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
-     "url": "https://www.hindustantimes.com/india-news/malicious-false-orchestrated-by-pakistan-mea-rejects-oics-anti-india-references-during-baghdad-meet-101792405543121.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T10:36:36+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "nw-20261018-tiger-shroff-attack",
-   "qid": null,
-   "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
-   "name": "Tiger Shroff",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-18",
-   "news_at": "2026-10-20T04:42:14+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "BBC",
-    "The Hindu Group",
-    "India Today Group",
-    "NDTV",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff Targeted in Mumbai Shooting: Investigation Underway",
-    "Tiger Shroff Firing, A Screenshot And A Threat: How Lawrence Bishnoi Gang Plays The Social Media Game",
-    "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
-    "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
-    "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "region": "world",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
-     "url": "https://www.bbc.co.uk/news/articles/c6jdmy872r7vo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-19T07:35:06+00:00"
-    },
-    {
-     "title": "HT Morning Brief October 20: Rubio to arrive in India today, Tiger Shroff shooting case probe and more",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-20-marco-rubio-india-visit-cjp-leaders-custody-extended-tiger-shroff-shooting-probe-manipur-violence-deepthi-jeevanji-101792468469060.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T04:42:14+00:00"
-    },
-    {
-     "title": "Didn't know about Mumbai: Shooter's mother claims son lured into Tiger Shroff firing",
-     "url": "https://www.indiatoday.in/india/story/tiger-shroff-car-firing-accused-rehans-mother-alleges-rs-2-lakh-job-lure-says-he-did-not-know-about-mumbai-3021127-2026-10-20?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:16:51+00:00"
-    },
-    {
-     "title": "Tiger Shroff Firing: Anil Pandit Offered Accused Rs 34,000, Was Live From California During Attack",
-     "url": "https://www.news18.com/india/tiger-shroff-firing-anil-pandit-offered-accused-rs-34000-was-live-from-california-during-attack-ws-kl-10389487.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:07:23+00:00"
-    },
-    {
-     "title": "Tiger Shroff firing case: Accused lured with cash and promise of settling abroad",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/tiger-shroff-firing-case-haryana-police-arrest-anil-pandits-associate-accused-lured-with-cash-and-promise-of-settling-abroad/articleshow/135060120.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:03:58+00:00"
-    },
-    {
-     "title": "'Not an active captain': Rapido on shooter linked to Tiger Shroff firing",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/not-an-active-captain-rapido-on-accused-linked-to-tiger-shroff-firing/articleshow/135059476.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T01:56:27+00:00"
-    },
-    {
-     "title": "Tiger Shroff Shooter Works With Rapido. Taxi App Shares His Work Status",
-     "url": "https://www.ndtv.com/india-news/tiger-shroff-shooter-works-with-rapido-taxi-app-shares-his-work-status-12207440#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T01:35:03+00:00"
-    },
-    {
-     "title": "Man who put Tiger Shroff shooters in touch with Anil Pandit arrested from Haryana",
-     "url": "https://www.indiatoday.in/india/story/tiger-shroff-shooters-contact-sameer-bishnoi-gang-operative-anil-pandit-arrested-haryana-sonipat-3021108-2026-10-20?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T01:19:50+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:BBC",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1,
-    "IN-nation": 3
-   },
-   "top_score": 1.27,
-   "top_headlines": [
-    "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities",
-    "Mumbai police team taking Tiger Shroff shooting accused turns back over fears of being followed"
-   ]
-  },
-  {
-   "qid": "Q141745391",
-   "title": "2026 Silver Rail Elementary School shooting",
-   "fame": 138911,
-   "views": 13911,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-19T23:14:00+00:00",
-   "headlines": [
-    "Gun used in Oregon elementary school shooting was birthday gift from shooter's mom, sources say"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19",
-    "google-news:Gun used in Oregon elementary school shooting was birthday gift from shooter's mom, sources say"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141745391",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-15",
-   "coords": [
-    44.03444444,
-    -121.29527778
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q1889124",
-   "title": "Richard Riehle",
-   "fame": 97764,
-   "views": 97764,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1889124",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "kh-20261020-Q317521",
-   "qid": "Q317521",
-   "title": "Elon Musk",
-   "name": "Elon Musk",
-   "phrase": "Elon Musk",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-   "story_keys": [
-    "child",
-    "every",
-    "share"
-   ],
-   "date": "2026-10-20",
-   "news_at": "2026-10-20T04:03:44+00:00",
-   "owners": [
-    "HT Media",
-    "NDTV",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-    "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-    "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "एलन मस्क",
-   "reports": [
-    {
-     "title": "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-dario-amodeis-donation-elon-musk-makes-a-promise-to-every-kid-in-america-i-will-give-/articleshow/135061008.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T04:03:44+00:00"
-    },
-    {
-     "title": "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-     "url": "https://www.ndtv.com/world-news/elon-musk-pledges-to-give-away-spacex-shares-worth-10-billion-to-every-us-child-12208358#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:04:57+00:00"
-    },
-    {
-     "title": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-     "url": "https://www.livemint.com/news/us-news/trump-thanks-legendary-friend-elon-musk-for-pledging-spacex-shares-to-every-american-child-through-trump-accounts-11792463661761.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T02:46:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": null,
-   "title": "2026 Shabwah missile attack",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-10-20T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-2026_Shabwah_missile_attack",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-19",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q19729623",
-   "title": "Napoleon Bonaparte (police officer)",
-   "fame": 34903,
-   "views": 34903,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q19729623",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q141760142",
-   "title": "2026 Kolkata Durga Puja crowd crush",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-20T04:03:42+00:00",
-   "headlines": [
-    "19 Deaths Raise Questions Over Durga Puja Crowd Management In Kolkata"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "google-news:19 Deaths Raise Questions Over Durga Puja Crowd Management In Kolkata",
-    "outlet:NDTV"
-   ],
-   "owners": [
-    "NDTV"
-   ],
-   "reports": [
-    {
-     "title": "19 Deaths Raise Questions Over Durga Puja Crowd Management In Kolkata",
-     "url": "https://www.ndtv.com/india-news/19-deaths-raise-questions-over-durga-puja-crowd-management-in-kolkata-12209128#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T04:03:42+00:00"
-    }
-   ],
-   "id": "wk-Q141760142",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-10-17",
-   "coords": null,
-   "has_coords": true,
-   "top": {
-    "IN-nation": 17
-   },
-   "top_score": 0.12,
-   "top_headlines": [
-    "Charges of cops' harassment at CR Park Durga Puja pandals, police reacts to videos"
-   ]
-  },
-  {
-   "qid": "Q5115327",
-   "title": "Chuck Amato",
-   "fame": 13982,
-   "views": 13982,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5115327",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-19",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q438492",
-   "title": "Michael Forest",
-   "fame": 9607,
-   "views": 9607,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q438492",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q7045350",
-   "title": "Noah Adams",
-   "fame": 7854,
-   "views": 7854,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7045350",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-16",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  }
- ],
- "candidates": [
-  {
    "id": "kh-20261020-Q47498302",
    "qid": "Q47498302",
    "title": "Sourav Das (actor)",
@@ -1152,7 +555,6 @@
     "deliberately",
     "extended",
     "judicial",
-    "respect",
     "target",
     "two"
    ],
@@ -1161,20 +563,19 @@
    "owners": [
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
+    "Bennett, Coleman & Co."
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
     "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
     "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
-    "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
     "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
-    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody"
+    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+    "Saurav Das, Ashutosh Ranka’s Judicial Custody Extended By 2 Days: ‘Deliberately Breached Bonds’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1246,16 +647,6 @@
      "at": "2026-10-19T16:07:10+00:00"
     },
     {
-     "title": "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
-     "url": "https://www.indiatoday.in/india/story/saurav-das-ashutosh-ranka-breached-bonds-showed-no-respect-for-law-court-in-order-extending-custody-3021017-2026-10-19?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T16:03:03+00:00"
-    },
-    {
      "title": "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
      "url": "https://timesofindia.indiatimes.com/india/feeling-strong-abhijeet-dipke-targets-pm-modi-after-das-rankas-judicial-custody-extended-shares-photo/articleshow/135051633.cms",
      "outlet": "Times of India",
@@ -1264,313 +655,197 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-19T15:43:57+00:00"
+    },
+    {
+     "title": "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+     "url": "https://www.news18.com/videos/india/breaking-judicial-custody-of-cjp-s-saurav-das-ashutosh-ranka-extended-by-two-days-news18-10389290.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T14:59:01+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
     "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
    ],
    "top": {
-    "IN": 5,
-    "IN-nation": 1
+    "IN-nation": 2
    },
-   "top_score": 1.1,
+   "top_score": 0.57,
    "top_headlines": [
     "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
    ]
   },
   {
-   "id": "kh-20261020-Q90",
-   "qid": "Q90",
-   "title": "Paris",
-   "name": "Paris",
-   "phrase": "Paris",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "France imposes partial curfews in several cities, including parts of Paris",
-   "story_keys": [
-    "central",
-    "citie",
-    "curfew",
-    "impose",
-    "part",
-    "partial"
-   ],
+   "id": "nw-20261019-tiger-shroff-attack",
+   "qid": null,
+   "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
+   "name": "Tiger Shroff",
+   "kind": "incident",
+   "category": "attack",
    "date": "2026-10-19",
-   "news_at": "2026-10-19T21:14:53+00:00",
+   "news_at": "2026-10-20T04:42:14+00:00",
    "owners": [
-    "France Médias Monde",
-    "Guardian Media Group",
-    "Deutsche Welle",
+    "Network18",
     "BBC",
+    "HT Media",
+    "The Hindu Group",
     "India Today Group",
-    "NDTV"
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "France imposes partial curfews in several cities, including parts of Paris",
-    "🔴 France issues curfew for parts of central Paris",
-    "French authorities impose partial curfews in Paris, Nice",
-    "Curfew imposed in parts of central Paris and other cities after rioting across France",
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "Tiger Shroff Firing, A Screenshot And A Threat: How Lawrence Bishnoi Gang Plays The Social Media Game",
+    "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
+    "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
+    "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
+    "Bike used for firing at Tiger Shroff recovered by police, two detained"
    ],
-   "hindi_headlines": [
-    "झोटा हत्याकांड में पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
-    "चारों तरफ आग, हाथ में जाम... पेरिस में कपल की डेट का VIDEO वायरल",
-    "'पेरिस बहुत जल्द एक मुस्लिम शहर बन जाएगा', ट्रंप ने फ्रांस में लगी आग पर दिया बड़ा बयान"
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN",
+    "world"
    ],
-   "hindi_news": 3,
-   "geos": [],
    "region": "world",
    "india_link": true,
-   "label_hi": "पेरिस",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
-     "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+     "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
+     "url": "https://www.bbc.co.uk/news/articles/c6jdmy872r7vo?at_medium=RSS&at_campaign=rss",
      "outlet": "BBC",
      "outlet_hi": "बीबीसी",
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-19T21:14:53+00:00"
+     "at": "2026-10-19T07:35:06+00:00"
     },
     {
-     "title": "French authorities impose partial curfews in Paris, Nice",
-     "url": "https://www.dw.com/en/french-authorities-impose-partial-curfews-in-paris-nice/live-79707186?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-19T19:57:00+00:00"
-    },
-    {
-     "title": "🔴 France issues curfew for parts of central Paris",
-     "url": "https://www.france24.com/en/france/20261019-live-french-pm-lecornu-calls-for-partial-curfews-in-cities-hit-by-riots-and-looting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-19T17:09:26+00:00"
-    },
-    {
-     "title": "France imposes partial curfews in several cities, including parts of Paris",
-     "url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-19T18:16:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:Deutsche Welle",
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "google-news:'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
-   ]
-  },
-  {
-   "id": "kh-20261020-Q324546",
-   "qid": "Q324546",
-   "title": "Marco Rubio",
-   "name": "Marco Rubio",
-   "phrase": "Marco Rubio",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
-   "story_keys": [
-    "agenda",
-    "hold",
-    "jaishankar",
-    "marco",
-    "talk",
-    "visit"
-   ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T01:22:33+00:00",
-   "owners": [
-    "Network18",
-    "Deutsche Welle",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
-    "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
-    "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
-    "Marco Rubio to to commence three-day visit to India",
-    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
-     "url": "https://www.dw.com/en/rubio-visits-india-with-a-trip-to-the-world-s-largest-oil-refinery-topping-the-agenda/a-79699826?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-19T12:31:00+00:00"
-    },
-    {
-     "title": "Marco Rubio to to commence three-day visit to India",
-     "url": "https://economictimes.indiatimes.com/news/india/marco-rubio-to-to-commence-three-day-visit-to-india-calls-india-key-ally-says-its-russian-energy-purchases-need-to-be-understood/articleshow/135059291.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "HT Morning Brief October 20: Rubio to arrive in India today, Tiger Shroff shooting case probe and more",
+     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-20-marco-rubio-india-visit-cjp-leaders-custody-extended-tiger-shroff-shooting-probe-manipur-violence-deepthi-jeevanji-101792468469060.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T01:22:33+00:00"
+     "at": "2026-10-20T04:42:14+00:00"
     },
     {
-     "title": "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
-     "url": "https://www.news18.com/india/marco-rubio-to-visit-india-from-october-20-22-hold-talks-with-jaishankar-in-mumbai-ws-kl-10389020.html",
+     "title": "Tiger Shroff firing: Rapido says one accused worked for it, was inactive for 4 days",
+     "url": "https://www.indiatoday.in/india/story/tiger-shroff-firing-rapido-says-one-accused-an-inactive-captain-on-its-platform-3021135-2026-10-20?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:07:43+00:00"
+    },
+    {
+     "title": "Tiger Shroff Firing: Anil Pandit Offered Accused Rs 34,000, Was Live From California During Attack",
+     "url": "https://www.news18.com/india/tiger-shroff-firing-anil-pandit-offered-accused-rs-34000-was-live-from-california-during-attack-ws-kl-10389487.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T12:02:55+00:00"
+     "at": "2026-10-20T03:07:23+00:00"
     },
     {
-     "title": "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
-     "url": "https://www.news18.com/india/s-jaishankar-to-hold-talks-with-marco-rubio-in-mumbai-tomorrow-whats-on-the-agenda-ws-lr-10388248.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T06:30:14+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
-    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 2
-   },
-   "top_score": 1.135,
-   "top_headlines": [
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
-    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
-   ]
-  },
-  {
-   "id": "kh-20261020-Q317521",
-   "qid": "Q317521",
-   "title": "Elon Musk",
-   "name": "Elon Musk",
-   "phrase": "Elon Musk",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-   "story_keys": [
-    "child",
-    "every",
-    "share"
-   ],
-   "date": "2026-10-20",
-   "news_at": "2026-10-20T04:03:44+00:00",
-   "owners": [
-    "HT Media",
-    "NDTV",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-    "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-    "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "एलन मस्क",
-   "reports": [
-    {
-     "title": "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-dario-amodeis-donation-elon-musk-makes-a-promise-to-every-kid-in-america-i-will-give-/articleshow/135061008.cms",
+     "title": "Tiger Shroff firing case: Accused lured with cash and promise of settling abroad",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/tiger-shroff-firing-case-haryana-police-arrest-anil-pandits-associate-accused-lured-with-cash-and-promise-of-settling-abroad/articleshow/135060120.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:03:44+00:00"
+     "at": "2026-10-20T03:03:58+00:00"
     },
     {
-     "title": "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-     "url": "https://www.ndtv.com/world-news/elon-musk-pledges-to-give-away-spacex-shares-worth-10-billion-to-every-us-child-12208358#publisher=newsstand",
+     "title": "'Not an active captain': Rapido on shooter linked to Tiger Shroff firing",
+     "url": "https://timesofindia.indiatimes.com/city/mumbai/not-an-active-captain-rapido-on-accused-linked-to-tiger-shroff-firing/articleshow/135059476.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T01:56:27+00:00"
+    },
+    {
+     "title": "Tiger Shroff Shooter Works With Rapido. Taxi App Shares His Work Status",
+     "url": "https://www.ndtv.com/india-news/tiger-shroff-shooter-works-with-rapido-taxi-app-shares-his-work-status-12207440#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T03:04:57+00:00"
+     "at": "2026-10-20T01:35:03+00:00"
     },
     {
-     "title": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-     "url": "https://www.livemint.com/news/us-news/trump-thanks-legendary-friend-elon-musk-for-pledging-spacex-shares-to-every-american-child-through-trump-accounts-11792463661761.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
+     "title": "Man who put Tiger Shroff shooters in touch with Anil Pandit arrested from Haryana",
+     "url": "https://www.indiatoday.in/india/story/tiger-shroff-shooters-contact-sameer-bishnoi-gang-operative-anil-pandit-arrested-haryana-sonipat-3021108-2026-10-20?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T02:46:18+00:00"
+     "at": "2026-10-20T01:19:50+00:00"
     }
    ],
    "via": [
+    "outlet:Network18",
+    "outlet:BBC",
     "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:Bennett, Coleman & Co."
    ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 1,
+    "IN-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities",
+    "Tiger Shroff Shooter Works With Rapido. Taxi App Shares His Work Status"
+   ]
+  },
+  {
+   "qid": "Q1889124",
+   "title": "Richard Riehle",
+   "fame": 97764,
+   "views": 97764,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-19"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1889124",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-15",
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -1601,8 +876,8 @@
     "Network18",
     "The Hindu Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1662,8 +937,101 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:The Hindu Group",
-    "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "\"Fabricated, Hostile\": India Rejects Islamic Group's Resolution On J&K"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q111",
+   "qid": "Q111",
+   "title": "Mars",
+   "name": "Mars",
+   "phrase": "Mars",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Japan launches historic mission to bring back Mars moon samples",
+   "story_keys": [
+    "launche",
+    "mission",
+    "moon"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T04:08:33+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "BBC",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Japan launches historic mission to bring back Mars moon samples",
+    "Japan to launch world-first mission to moon of Mars",
+    "Mission blasts off for Mars to grab a piece of its moon",
+    "Japan launches spacecraft to moons of Mars"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "मंगल ग्रह",
+   "reports": [
+    {
+     "title": "Mission blasts off for Mars to grab a piece of its moon",
+     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:45:46+00:00"
+    },
+    {
+     "title": "Japan launches historic mission to bring back Mars moon samples",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-20T04:08:33+00:00"
+    },
+    {
+     "title": "Japan launches spacecraft to moons of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T19:47:49+00:00"
+    },
+    {
+     "title": "Japan to launch world-first mission to moon of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-to-launch-world-first-mission-to-moon-of-mars/articleshow/135052538.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:36:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "outlet:Al Jazeera Media Network"
    ],
    "top": {},
    "top_score": 0.0,
@@ -1728,10 +1096,10 @@
    "top_headlines": []
   },
   {
-   "qid": "Q7045350",
-   "title": "Noah Adams",
-   "fame": 7854,
-   "views": 7854,
+   "qid": "Q5115327",
+   "title": "Chuck Amato",
+   "fame": 13982,
+   "views": 13982,
    "traffic": 0,
    "news": 0,
    "news_at": null,
@@ -1747,47 +1115,653 @@
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q7045350",
+   "id": "wk-Q5115327",
    "kind": "death",
    "category": "death",
-   "date": "2026-10-16",
+   "date": "2026-10-19",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q141745391",
+   "title": "2026 Silver Rail Elementary School shooting",
+   "fame": 13911,
+   "views": 13911,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-19"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141745391",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-15",
+   "coords": [
+    44.03444444,
+    -121.29527778
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  }
+ ],
+ "candidates": [
+  {
+   "id": "kh-20261020-Q3520790",
+   "qid": "Q3520790",
+   "title": "Mohan Bhagwat",
+   "name": "Mohan Bhagwat",
+   "phrase": "India Mohan Bhagwat",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+   "story_keys": [
+    "change",
+    "force"
+   ],
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T05:29:37+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Network18",
+    "TV9 Network",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+    "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'"
+   ],
+   "hindi_headlines": [
+    "नई पीढ़ी को सही-गलत को समझने की कला सिखानी होगी...नागपुर में RSS के कार्यक्रम में बोले मोहन भागवत",
+    "दशहरे पर मोहन भागवत ने शराब और पियक्कड़ का उदाहरण क्यों दिया?",
+    "'हिंदू के खिलाफ काम कर रहीं आसुरी ताकतें', रिजीम चेंज पर बोले मोहन भागवत- सत्ता परिवर्तन समस्या का हल नहीं",
+    "भारत को तोड़ने वाले लोग, सत्ता के स्वार्थी देते हैं उनका साथ; मोहन भागवत ‘रिजिम चेंज’ पर बोले",
+    "'राष्ट्र निर्माण पर जोर', RSS चीफ मोहन भागवत के संबोधन की PM ने की तारीफ"
+   ],
+   "hindi_news": 10,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "मोहन भागवत",
+   "reports": [
+    {
+     "title": "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'",
+     "url": "https://www.news18.com/india/mohan-bhagwat-warns-against-demonic-regime-change-lobby-a-storm-has-swept-in-from-the-west-ws-lrt-10389616.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T05:29:37+00:00"
+    },
+    {
+     "title": "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+     "url": "https://www.hindustantimes.com/india-news/rss-chief-mohan-bhagwat-says-evil-forces-want-to-dismantle-india-regime-change-will-never-happen-vijayadashmi-delhi-protests-101792470403676.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:28:07+00:00"
+    },
+    {
+     "title": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+     "url": "https://www.indiatoday.in/india/story/evil-forces-want-to-dismantle-india-some-ambitious-leaders-joining-in-mohan-bhagwat-on-regime-change-op-3021145-2026-10-20?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:24:27+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "google-news:आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?"
+   ],
+   "top": {
+    "IN-nation": 9,
+    "IN-hi-nation": 2
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’ | India News"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q90",
+   "qid": "Q90",
+   "title": "Paris",
+   "name": "Paris",
+   "phrase": "Paris",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "France imposes partial curfews in several cities, including parts of Paris",
+   "story_keys": [
+    "central",
+    "citie",
+    "curfew",
+    "impose",
+    "part",
+    "partial"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-19T21:14:53+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC",
+    "India Today Group",
+    "NDTV"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "France imposes partial curfews in several cities, including parts of Paris",
+    "🔴 France issues curfew for parts of central Paris",
+    "French authorities impose partial curfews in Paris, Nice",
+    "Curfew imposed in parts of central Paris and other cities after rioting across France",
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
+   ],
+   "hindi_headlines": [
+    "फ्रांस में भड़की हिंसा और आगजनी, पेरिस समेत कई शहरों में लगा कर्फ्यू",
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
+    "'पेरिस बहुत जल्द एक मुस्लिम शहर बन जाएगा', ट्रंप ने फ्रांस में लगी आग पर दिया बड़ा बयान"
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "पेरिस",
+   "reports": [
+    {
+     "title": "Curfew imposed in parts of central Paris and other cities after rioting across France",
+     "url": "https://www.bbc.co.uk/news/articles/cx30ez03djyqo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T21:14:53+00:00"
+    },
+    {
+     "title": "French authorities impose partial curfews in Paris, Nice",
+     "url": "https://www.dw.com/en/french-authorities-impose-partial-curfews-in-paris-nice/live-79707186?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:57:00+00:00"
+    },
+    {
+     "title": "🔴 France issues curfew for parts of central Paris",
+     "url": "https://www.france24.com/en/france/20261019-live-french-pm-lecornu-calls-for-partial-curfews-in-cities-hit-by-riots-and-looting",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T17:09:26+00:00"
+    },
+    {
+     "title": "France imposes partial curfews in several cities, including parts of Paris",
+     "url": "https://www.theguardian.com/world/2026/oct/19/french-police-lost-control-during-riots-concedes-interior-minister",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-19T18:16:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "google-news:‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to...",
+    "google-news:झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-hi-nation": 14
+   },
+   "top_score": 0.955,
+   "top_headlines": [
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
+   ]
+  },
+  {
+   "id": "kh-20261020-Q324546",
+   "qid": "Q324546",
+   "title": "Marco Rubio",
+   "name": "Marco Rubio",
+   "phrase": "Marco Rubio",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
+   "story_keys": [
+    "agenda",
+    "hold",
+    "jaishankar",
+    "marco",
+    "talk",
+    "visit"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T02:51:04+00:00",
+   "owners": [
+    "Network18",
+    "Deutsche Welle",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
+    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
+    "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
+    "Marco Rubio to to commence three-day visit to India",
+    "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
+     "url": "https://www.dw.com/en/rubio-visits-india-with-a-trip-to-the-world-s-largest-oil-refinery-topping-the-agenda/a-79699826?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T12:31:00+00:00"
+    },
+    {
+     "title": "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+     "url": "https://www.hindustantimes.com/india-news/india-us-seek-deeper-ties-as-marco-rubio-arrives-trade-security-and-technology-on-agenda-101792463620076.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T02:51:04+00:00"
+    },
+    {
+     "title": "Marco Rubio to to commence three-day visit to India",
+     "url": "https://economictimes.indiatimes.com/news/india/marco-rubio-to-to-commence-three-day-visit-to-india-calls-india-key-ally-says-its-russian-energy-purchases-need-to-be-understood/articleshow/135059291.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T01:22:33+00:00"
+    },
+    {
+     "title": "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
+     "url": "https://www.news18.com/india/marco-rubio-to-visit-india-from-october-20-22-hold-talks-with-jaishankar-in-mumbai-ws-kl-10389020.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T12:02:55+00:00"
+    },
+    {
+     "title": "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
+     "url": "https://www.news18.com/india/s-jaishankar-to-hold-talks-with-marco-rubio-in-mumbai-tomorrow-whats-on-the-agenda-ws-lr-10388248.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T06:30:14+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:Deutsche Welle",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "google-news:Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
+    "google-news:India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
+    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 10
+   },
+   "top_score": 1.115,
+   "top_headlines": [
+    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
+    "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
+    "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q47543",
+   "qid": "Q47543",
+   "title": "Organisation of Islamic Cooperation",
+   "name": "Organisation of Islamic Cooperation",
+   "phrase": "OIC",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
+   "story_keys": [
+    "anti-india’",
+    "maliciou",
+    "orchestrated",
+    "reference",
+    "reject",
+    "resolution"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T02:04:00+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
+    "India Rejects ‘Malicious, Biased’ OIC References On J&K, Says Pakistan Orchestrated Resolutions",
+    "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them",
+    "References in resolutions by OIC ‘malicious’: India"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इस्लामिक सहकारिता का संगठन",
+   "reports": [
+    {
+     "title": "References in resolutions by OIC ‘malicious’: India",
+     "url": "https://www.hindustantimes.com/india-news/references-in-resolutions-by-oic-malicious-india-101792434266323.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T02:04:00+00:00"
+    },
+    {
+     "title": "MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them",
+     "url": "https://www.thehindu.com/news/national/mea-rejects-oics-anti-india-references-accuses-pakistan-of-orchestrating-them/article71602533.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T11:08:16+00:00"
+    },
+    {
+     "title": "India Rejects ‘Malicious, Biased’ OIC References On J&K, Says Pakistan Orchestrated Resolutions",
+     "url": "https://www.news18.com/india/india-rejects-malicious-biased-oic-references-on-jk-says-pakistan-orchestrated-resolutions-10388807.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T10:37:44+00:00"
+    },
+    {
+     "title": "‘Malicious, false, orchestrated by Pakistan’: MEA rejects OIC's ‘anti-India’ references during Baghdad meet",
+     "url": "https://www.hindustantimes.com/india-news/malicious-false-orchestrated-by-pakistan-mea-rejects-oics-anti-india-references-during-baghdad-meet-101792405543121.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T10:36:36+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "\"Fabricated, Hostile\": India Rejects Islamic Group's Resolution On J&K"
+   ]
+  },
+  {
+   "qid": null,
+   "title": "2026 Shabwah missile attack",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-20T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-19"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Shabwah_missile_attack",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-19",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "id": "kh-20261020-Q111",
+   "qid": "Q111",
+   "title": "Mars",
+   "name": "Mars",
+   "phrase": "Mars",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Japan launches historic mission to bring back Mars moon samples",
+   "story_keys": [
+    "launche",
+    "mission",
+    "moon"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T04:08:33+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "BBC",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Japan launches historic mission to bring back Mars moon samples",
+    "Japan to launch world-first mission to moon of Mars",
+    "Mission blasts off for Mars to grab a piece of its moon",
+    "Japan launches spacecraft to moons of Mars"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "मंगल ग्रह",
+   "reports": [
+    {
+     "title": "Mission blasts off for Mars to grab a piece of its moon",
+     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:45:46+00:00"
+    },
+    {
+     "title": "Japan launches historic mission to bring back Mars moon samples",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-20T04:08:33+00:00"
+    },
+    {
+     "title": "Japan launches spacecraft to moons of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T19:47:49+00:00"
+    },
+    {
+     "title": "Japan to launch world-first mission to moon of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-to-launch-world-first-mission-to-moon-of-mars/articleshow/135052538.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:36:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "qid": "Q19729623",
+   "title": "Napoleon Bonaparte (police officer)",
+   "fame": 34903,
+   "views": 34903,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-19"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q19729623",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-18",
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
   }
  ],
  "notes": [
-  "outlets: 1211 headlines from 30 feeds (19 owners), 8 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
-  "explainers: 7 kh- stories (on): kh-20261020-Q90, kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q47498302; dropped: explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer 'Saudi keen on ties with India on power grid systems': no name to tell it by",
+  "outlets: 1212 headlines from 30 feeds (19 owners), 8 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 8 kh- stories (on): kh-20261020-Q90, kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q3520790; dropped: explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer 'Saudi keen on ties with India on power grid systems': no name to tell it by; explainer Mahmoud Khalil: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
-  "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
-  "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again"
+  "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1211,
+  "headlines": 1212,
   "feeds": 30,
   "owners": 19,
   "matched": 8,
-  "corroborated": 8
+  "corroborated": 9
  },
  "emerging": [
   {
-   "id": "nw-20261018-tiger-shroff-attack",
+   "id": "nw-20261019-tiger-shroff-attack",
    "qid": null,
    "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
    "name": "Tiger Shroff",
    "kind": "incident",
    "category": "attack",
-   "date": "2026-10-18",
+   "date": "2026-10-19",
    "news_at": "2026-10-20T04:42:14+00:00",
    "owners": [
     "Network18",
-    "HT Media",
     "BBC",
+    "HT Media",
     "The Hindu Group",
     "India Today Group",
     "NDTV",
@@ -1798,11 +1772,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Tiger Shroff Targeted in Mumbai Shooting: Investigation Underway",
     "Tiger Shroff Firing, A Screenshot And A Threat: How Lawrence Bishnoi Gang Plays The Social Media Game",
     "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
     "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
-    "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack"
+    "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
+    "Bike used for firing at Tiger Shroff recovered by police, two detained"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1835,14 +1809,14 @@
      "at": "2026-10-20T04:42:14+00:00"
     },
     {
-     "title": "Didn't know about Mumbai: Shooter's mother claims son lured into Tiger Shroff firing",
-     "url": "https://www.indiatoday.in/india/story/tiger-shroff-car-firing-accused-rehans-mother-alleges-rs-2-lakh-job-lure-says-he-did-not-know-about-mumbai-3021127-2026-10-20?utm_source=rss",
+     "title": "Tiger Shroff firing: Rapido says one accused worked for it, was inactive for 4 days",
+     "url": "https://www.indiatoday.in/india/story/tiger-shroff-firing-rapido-says-one-accused-an-inactive-captain-on-its-platform-3021135-2026-10-20?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T03:16:51+00:00"
+     "at": "2026-10-20T04:07:43+00:00"
     },
     {
      "title": "Tiger Shroff Firing: Anil Pandit Offered Accused Rs 34,000, Was Live From California During Attack",
@@ -1897,8 +1871,8 @@
    ],
    "via": [
     "outlet:Network18",
-    "outlet:HT Media",
     "outlet:BBC",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:NDTV",
@@ -1908,12 +1882,12 @@
    "article": null,
    "top": {
     "IN": 1,
-    "IN-nation": 3
+    "IN-nation": 1
    },
-   "top_score": 1.27,
+   "top_score": 1.3,
    "top_headlines": [
     "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities",
-    "Mumbai police team taking Tiger Shroff shooting accused turns back over fears of being followed"
+    "Tiger Shroff Shooter Works With Rapido. Taxi App Shares His Work Status"
    ]
   }
  ],
@@ -1947,8 +1921,8 @@
     "India Today Group",
     "NDTV"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1956,14 +1930,14 @@
     "🔴 France issues curfew for parts of central Paris",
     "French authorities impose partial curfews in Paris, Nice",
     "Curfew imposed in parts of central Paris and other cities after rioting across France",
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
    ],
    "hindi_headlines": [
-    "झोटा हत्याकांड में पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
-    "चारों तरफ आग, हाथ में जाम... पेरिस में कपल की डेट का VIDEO वायरल",
+    "फ्रांस में भड़की हिंसा और आगजनी, पेरिस समेत कई शहरों में लगा कर्फ्यू",
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
     "'पेरिस बहुत जल्द एक मुस्लिम शहर बन जाएगा', ट्रंप ने फ्रांस में लगी आग पर दिया बड़ा बयान"
    ],
-   "hindi_news": 3,
+   "hindi_news": 4,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -2017,14 +1991,17 @@
     "outlet:BBC",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "google-news:'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "google-news:‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to...",
+    "google-news:झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान"
    ],
    "top": {
-    "IN": 2
+    "IN": 4,
+    "IN-hi-nation": 14
    },
-   "top_score": 0.95,
+   "top_score": 0.955,
    "top_headlines": [
-    "'Paris is going to be a Muslim city very soon': Trump slams Macron as riots spiral"
+    "झोटा हत्याकांड: पेरिस से लौटते ही पंजाब CM भगवंत मान ने किया CBI जांच का ऐलान",
+    "‘Paris will be a Muslim city soon’: Donald Trump blames immigration for France unrest, urges Macron to..."
    ]
   },
   {
@@ -2035,9 +2012,9 @@
    "phrase": "Marco Rubio",
    "person": true,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
    "story_keys": [
     "agenda",
     "hold",
@@ -2047,23 +2024,24 @@
     "visit"
    ],
    "date": "2026-10-19",
-   "news_at": "2026-10-20T01:22:33+00:00",
+   "news_at": "2026-10-20T02:51:04+00:00",
    "owners": [
     "Network18",
     "Deutsche Welle",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "HT Media"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
     "S Jaishankar To Hold Talks With Marco Rubio In Mumbai Tomorrow: What's On The Agenda",
+    "Marco Rubio To Visit India From October 20-22, Hold Talks With Jaishankar In Mumbai",
     "Rubio visits India with a trip to the world's largest oil refinery topping the agenda",
     "Marco Rubio to to commence three-day visit to India",
-    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
+    "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+    "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2081,6 +2059,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-10-19T12:31:00+00:00"
+    },
+    {
+     "title": "Marco Rubio to arrive in India today; trade, security and technology on agenda",
+     "url": "https://www.hindustantimes.com/india-news/india-us-seek-deeper-ties-as-marco-rubio-arrives-trade-security-and-technology-on-agenda-101792463620076.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T02:51:04+00:00"
     },
     {
      "title": "Marco Rubio to to commence three-day visit to India",
@@ -2117,18 +2105,19 @@
     "outlet:Network18",
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
     "google-news:Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
-    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+    "google-news:India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
    ],
    "top": {
-    "IN": 4,
-    "IN-nation": 2
+    "IN": 2,
+    "IN-nation": 10
    },
-   "top_score": 1.135,
+   "top_score": 1.115,
    "top_headlines": [
-    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
     "Marco Rubio’s India visit: Energy, trade, tech on table at meeting with Jaishankar today",
+    "India-US trade deal ‘taken into account’ to waive Russia oil sanctions: Marco Rubio",
     "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
    ]
   },
@@ -2146,6 +2135,7 @@
    "story_keys": [
     "chase",
     "flee",
+    "gold",
     "jawan",
     "man",
     "nabs",
@@ -2155,15 +2145,16 @@
     "suspiciou"
    ],
    "date": "2026-10-19",
-   "news_at": "2026-10-20T03:01:24+00:00",
+   "news_at": "2026-10-20T04:47:17+00:00",
    "owners": [
     "HT Media",
     "Network18",
     "The Hindu Group",
-    "India Today Group"
+    "India Today Group",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2172,7 +2163,7 @@
     "CISF jawan nabs ‘suspicious’ man in escalator-stairs chase at Delhi Metro station",
     "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
     "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-    "CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
+    "CISF nabs man carrying gold paste at Delhi Metro"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2183,6 +2174,16 @@
    "india_link": true,
    "label_hi": "केंद्रीय औद्योगिक सुरक्षा बल",
    "reports": [
+    {
+     "title": "CISF nabs man carrying gold paste at Delhi Metro",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/watch-how-cisf-jawan-chased-suspicious-man-carrying-155-gm-gold-paste-at-delhi-jama-masjid-metro-station/articleshow/135061118.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:47:17+00:00"
+    },
     {
      "title": "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
      "url": "https://www.indiatoday.in/trending-news/story/cisf-officer-nabs-fleeing-passenger-at-delhi-metro-station-after-scanner-flags-suspicious-object-3021117-2026-10-20?utm_source=rss",
@@ -2239,158 +2240,108 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:India Today Group",
-    "google-news:CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Security scare at Delhi Metro: CISF jawan chases down NRI hiding ‘semi-solid substance’; CCTV captures dr"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
   },
   {
-   "id": "kh-20261020-Q47498302",
-   "qid": "Q47498302",
-   "title": "Sourav Das (actor)",
-   "name": "Saurav Das",
-   "phrase": "Saurav Das",
+   "id": "kh-20261020-Q3520790",
+   "qid": "Q3520790",
+   "title": "Mohan Bhagwat",
+   "name": "Mohan Bhagwat",
+   "phrase": "India Mohan Bhagwat",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+   "story": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
    "story_keys": [
-    "bonds’",
-    "breached",
-    "custody",
-    "deliberately",
-    "extended",
-    "judicial",
-    "respect",
-    "target",
-    "two"
+    "change",
+    "force"
    ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T04:57:37+00:00",
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T05:29:37+00:00",
    "owners": [
+    "India Today Group",
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
+    "TV9 Network",
+    "NDTV"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
-    "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
-    "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
-    "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
-    "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
-    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody"
+    "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+    "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "नई पीढ़ी को सही-गलत को समझने की कला सिखानी होगी...नागपुर में RSS के कार्यक्रम में बोले मोहन भागवत",
+    "दशहरे पर मोहन भागवत ने शराब और पियक्कड़ का उदाहरण क्यों दिया?",
+    "'हिंदू के खिलाफ काम कर रहीं आसुरी ताकतें', रिजीम चेंज पर बोले मोहन भागवत- सत्ता परिवर्तन समस्या का हल नहीं",
+    "भारत को तोड़ने वाले लोग, सत्ता के स्वार्थी देते हैं उनका साथ; मोहन भागवत ‘रिजिम चेंज’ पर बोले",
+    "'राष्ट्र निर्माण पर जोर', RSS चीफ मोहन भागवत के संबोधन की PM ने की तारीफ"
+   ],
+   "hindi_news": 10,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "मोहन भागवत",
    "reports": [
     {
-     "title": "'There is no justice': CJP's Saurav Das as court extends his judicial custody",
-     "url": "https://www.hindustantimes.com/india-news/there-is-no-justice-cjp-saurav-das-as-court-extends-his-judicial-custody-jantar-mantar-ashutosh-ranka-emergency-101792468138854.html",
+     "title": "Mohan Bhagwat Warns Against 'Demonic' Regime Change Lobby: 'A Storm Has Swept In From The West'",
+     "url": "https://www.news18.com/india/mohan-bhagwat-warns-against-demonic-regime-change-lobby-a-storm-has-swept-in-from-the-west-ws-lrt-10389616.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T05:29:37+00:00"
+    },
+    {
+     "title": "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’",
+     "url": "https://www.hindustantimes.com/india-news/rss-chief-mohan-bhagwat-says-evil-forces-want-to-dismantle-india-regime-change-will-never-happen-vijayadashmi-delhi-protests-101792470403676.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:57:37+00:00"
+     "at": "2026-10-20T04:28:07+00:00"
     },
     {
-     "title": "‘Deliberately breached bonds’: Why court extended Das, Ranka’s custody by two days",
-     "url": "https://timesofindia.indiatimes.com/india/deliberately-breached-bonds-court-extends-saurav-das-ashutosh-rankas-custody-by-2-days/articleshow/135059238.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T01:09:10+00:00"
-    },
-    {
-     "title": "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
-     "url": "https://www.news18.com/india/no-respect-court-says-cjps-saurav-das-ashutosh-ranka-deliberately-breached-bonds-ws-l-10389445.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T23:55:56+00:00"
-    },
-    {
-     "title": "Saurav Das, Ashutosh Ranka’s Judicial Custody Extended By 2 Days: ‘Deliberately Breached Bonds’",
-     "url": "https://www.news18.com/india/judicial-custody-of-cjps-saurav-das-ashutosh-ranka-extended-by-two-days-10389189.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T17:11:03+00:00"
-    },
-    {
-     "title": "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
-     "url": "https://www.news18.com/india/farce-cjp-reacts-to-extension-of-ashutosh-ranka-saurav-das-judicial-custody-10389352.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T16:45:12+00:00"
-    },
-    {
-     "title": "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
-     "url": "https://www.hindustantimes.com/india-news/cjps-abhijeet-dipke-targets-pm-modi-over-extended-custody-of-saurav-das-ashutosh-ranka-101792424130812.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T16:07:10+00:00"
-    },
-    {
-     "title": "Saurav Das, Ashutosh Ranka showed no respect for law: Court on extending custody",
-     "url": "https://www.indiatoday.in/india/story/saurav-das-ashutosh-ranka-breached-bonds-showed-no-respect-for-law-court-in-order-extending-custody-3021017-2026-10-19?utm_source=rss",
+     "title": "Evil forces want to dismantle India: Mohan Bhagwat on 'regime change op'",
+     "url": "https://www.indiatoday.in/india/story/evil-forces-want-to-dismantle-india-some-ambitious-leaders-joining-in-mohan-bhagwat-on-regime-change-op-3021145-2026-10-20?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T16:03:03+00:00"
-    },
-    {
-     "title": "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
-     "url": "https://timesofindia.indiatimes.com/india/feeling-strong-abhijeet-dipke-targets-pm-modi-after-das-rankas-judicial-custody-extended-shares-photo/articleshow/135051633.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T15:43:57+00:00"
+     "at": "2026-10-20T04:24:27+00:00"
     }
    ],
    "via": [
+    "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "google-news:आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?"
    ],
    "top": {
-    "IN": 5,
-    "IN-nation": 1
+    "IN-nation": 9,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.1,
+   "top_score": 0.75,
    "top_headlines": [
-    "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+    "आरएसएस प्रमुख मोहन भागवत ने विजयदशमी के संबोधन में सत्ता परिवर्तन पर क्या कहा?",
+    "Mohan Bhagwat says forces trying to destabilise India: ‘Regime change doesn’t change circumstances’ | India News"
    ]
   },
   {
@@ -2478,6 +2429,150 @@
    "top_headlines": []
   },
   {
+   "id": "kh-20261020-Q47498302",
+   "qid": "Q47498302",
+   "title": "Sourav Das (actor)",
+   "name": "Saurav Das",
+   "phrase": "Saurav Das",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+   "story_keys": [
+    "bonds’",
+    "breached",
+    "custody",
+    "deliberately",
+    "extended",
+    "judicial",
+    "target",
+    "two"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T04:57:37+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+    "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+    "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
+    "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+    "Saurav Das, Ashutosh Ranka’s Judicial Custody Extended By 2 Days: ‘Deliberately Breached Bonds’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "'There is no justice': CJP's Saurav Das as court extends his judicial custody",
+     "url": "https://www.hindustantimes.com/india-news/there-is-no-justice-cjp-saurav-das-as-court-extends-his-judicial-custody-jantar-mantar-ashutosh-ranka-emergency-101792468138854.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T04:57:37+00:00"
+    },
+    {
+     "title": "‘Deliberately breached bonds’: Why court extended Das, Ranka’s custody by two days",
+     "url": "https://timesofindia.indiatimes.com/india/deliberately-breached-bonds-court-extends-saurav-das-ashutosh-rankas-custody-by-2-days/articleshow/135059238.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T01:09:10+00:00"
+    },
+    {
+     "title": "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
+     "url": "https://www.news18.com/india/no-respect-court-says-cjps-saurav-das-ashutosh-ranka-deliberately-breached-bonds-ws-l-10389445.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T23:55:56+00:00"
+    },
+    {
+     "title": "Saurav Das, Ashutosh Ranka’s Judicial Custody Extended By 2 Days: ‘Deliberately Breached Bonds’",
+     "url": "https://www.news18.com/india/judicial-custody-of-cjps-saurav-das-ashutosh-ranka-extended-by-two-days-10389189.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T17:11:03+00:00"
+    },
+    {
+     "title": "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+     "url": "https://www.news18.com/india/farce-cjp-reacts-to-extension-of-ashutosh-ranka-saurav-das-judicial-custody-10389352.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:45:12+00:00"
+    },
+    {
+     "title": "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+     "url": "https://www.hindustantimes.com/india-news/cjps-abhijeet-dipke-targets-pm-modi-over-extended-custody-of-saurav-das-ashutosh-ranka-101792424130812.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:07:10+00:00"
+    },
+    {
+     "title": "'Feeling strong?' Dipke targets PM after Das & Ranka's custody extended, shares photo",
+     "url": "https://timesofindia.indiatimes.com/india/feeling-strong-abhijeet-dipke-targets-pm-modi-after-das-rankas-judicial-custody-extended-shares-photo/articleshow/135051633.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T15:43:57+00:00"
+    },
+    {
+     "title": "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+     "url": "https://www.news18.com/videos/india/breaking-judicial-custody-of-cjp-s-saurav-das-ashutosh-ranka-extended-by-two-days-news18-10389290.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T14:59:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+   ],
+   "top": {
+    "IN-nation": 2
+   },
+   "top_score": 0.57,
+   "top_headlines": [
+    "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+   ]
+  },
+  {
    "id": "kh-20261020-Q47543",
    "qid": "Q47543",
    "title": "Organisation of Islamic Cooperation",
@@ -2503,8 +2598,8 @@
     "Network18",
     "The Hindu Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2564,87 +2659,101 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:The Hindu Group",
-    "google-news:MEA rejects OIC’s ‘anti-India’ references, accuses Pakistan of orchestrating them"
+    "outlet:The Hindu Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "\"Fabricated, Hostile\": India Rejects Islamic Group's Resolution On J&K"
+   ]
   },
   {
-   "id": "kh-20261020-Q317521",
-   "qid": "Q317521",
-   "title": "Elon Musk",
-   "name": "Elon Musk",
-   "phrase": "Elon Musk",
-   "person": true,
+   "id": "kh-20261020-Q111",
+   "qid": "Q111",
+   "title": "Mars",
+   "name": "Mars",
+   "phrase": "Mars",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
+   "story": "Japan launches historic mission to bring back Mars moon samples",
    "story_keys": [
-    "child",
-    "every",
-    "share"
+    "launche",
+    "mission",
+    "moon"
    ],
-   "date": "2026-10-20",
-   "news_at": "2026-10-20T04:03:44+00:00",
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T04:08:33+00:00",
    "owners": [
-    "HT Media",
-    "NDTV",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "BBC",
+    "Al Jazeera Media Network"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-    "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-    "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America"
+    "Japan launches historic mission to bring back Mars moon samples",
+    "Japan to launch world-first mission to moon of Mars",
+    "Mission blasts off for Mars to grab a piece of its moon",
+    "Japan launches spacecraft to moons of Mars"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": "एलन मस्क",
+   "label_hi": "मंगल ग्रह",
    "reports": [
     {
-     "title": "After Dario Amodei’s donation, Elon Musk makes a promise to every kid in America",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-dario-amodeis-donation-elon-musk-makes-a-promise-to-every-kid-in-america-i-will-give-/articleshow/135061008.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Mission blasts off for Mars to grab a piece of its moon",
+     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-19T19:45:46+00:00"
+    },
+    {
+     "title": "Japan launches historic mission to bring back Mars moon samples",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-20T04:08:33+00:00"
+    },
+    {
+     "title": "Japan launches spacecraft to moons of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:03:44+00:00"
+     "at": "2026-10-19T19:47:49+00:00"
     },
     {
-     "title": "Elon Musk Pledges To Give Away SpaceX Shares Worth $10 Billion To Every US Child",
-     "url": "https://www.ndtv.com/world-news/elon-musk-pledges-to-give-away-spacex-shares-worth-10-billion-to-every-us-child-12208358#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Japan to launch world-first mission to moon of Mars",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-to-launch-world-first-mission-to-moon-of-mars/articleshow/135052538.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T03:04:57+00:00"
-    },
-    {
-     "title": "Trump thanks ‘legendary’ friend Elon Musk for pledging SpaceX shares to every American child through Trump Accounts",
-     "url": "https://www.livemint.com/news/us-news/trump-thanks-legendary-friend-elon-musk-for-pledging-spacex-shares-to-every-american-child-through-trump-accounts-11792463661761.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T02:46:18+00:00"
+     "at": "2026-10-19T16:36:29+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "outlet:Al Jazeera Media Network"
    ],
    "top": {},
    "top_score": 0.0,
