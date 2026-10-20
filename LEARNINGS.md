@@ -1,26 +1,27 @@
 # What this channel's own numbers say
 
-Updated 2026-10-20T00:21:16+00:00. Scored Shorts (views at 24 h): 51. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-20T03:57:55+00:00. Scored Shorts (views at 24 h): 52. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
-Baseline: a typical Short has 47 views at 24 h.
+Baseline: a typical Short has 45 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
-- region:india: x1.236 ranking lift (22 Shorts, typical 61 views)
-- category:court: x1.224 ranking lift (4 Shorts, typical 71 views)
-- category:news: x1.171 ranking lift (13 Shorts, typical 58 views)
-- region:world: x0.751 ranking lift (25 Shorts, typical 33 views)
-- category:economy: x0.75 ranking lift (5 Shorts, typical 26 views)
-- category:world: x0.75 ranking lift (5 Shorts, typical 26 views)
+- category:court: x1.257 ranking lift (4 Shorts, typical 71 views)
+- category:news: x1.22 ranking lift (13 Shorts, typical 58 views)
+- region:india: x1.158 ranking lift (23 Shorts, typical 53 views)
+- region:world: x0.786 ranking lift (25 Shorts, typical 33 views)
+- category:world: x0.755 ranking lift (5 Shorts, typical 26 views)
+- category:economy: x0.753 ranking lift (5 Shorts, typical 26 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
+| nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 1 |  |
 | kh-20261019-Q3634451 | 2026-10-19T14:58 | policy | india | 4 |  |
-| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 21 |  |
+| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 23 |  |
 | kh-20261019-Q468324 | 2026-10-19T09:11 | health | india | 23 |  |
-| kh-20261019-Q312781 | 2026-10-19T07:28 | court | world | 43 |  |
-| kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 2 |  |
-| kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 81 | 64 |
+| kh-20261019-Q312781 | 2026-10-19T07:28 | court | world | 46 |  |
+| kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 2 | 2 |
+| kh-20261018-Q155164 | 2026-10-18T03:21 | news | world | 82 | 64 |
 | nw-20261017-kolkata-disaster | 2026-10-18T02:47 | disaster | india | 32 | 20 |
-| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 183 | 118 |
+| kh-20261018-Q10218 | 2026-10-18T02:07 | news | india | 189 | 118 |
 | kh-20261017-Q6109517 | 2026-10-17T18:24 | health | world | 8 | 5 |
 | kh-20261017-Q213380-p2 | 2026-10-17T13:25 | court | india | 38 | 27 |
 | kh-20261017-Q96376333 | 2026-10-17T10:12 | news | india | 35 | 28 |
@@ -42,4 +43,3 @@ Baseline: a typical Short has 47 views at 24 h.
 | kh-20261016-Q2341950 | 2026-10-16T02:11 | news | india | 96 | 94 |
 | kh-20261015-Q312781 | 2026-10-15T10:51 | entertainment | world | 321 | 288 |
 | kh-20261015-Q200667 | 2026-10-15T10:09 | aviation | india | 45 | 44 |
-| kh-20261015-Q923628 | 2026-10-15T08:54 | weather | india | 86 | 70 |
