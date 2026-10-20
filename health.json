@@ -1,20 +1,28 @@
 {
- "at": "2026-10-20T04:36:41+00:00",
+ "at": "2026-10-20T05:12:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 6 candidates from 14 trending",
-  "outlets: 1168 headlines from 29 feeds (19 owners), 11 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
-  "explainers: 5 kh- stories (on): kh-20261020-Q3522926, kh-20261020-Q90, kh-20261020-Q324546, kh-20261020-Q140632219; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story",
+  "watch: 8 candidates from 16 trending",
+  "outlets: 1211 headlines from 30 feeds (19 owners), 8 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261018-tiger-shroff-attack",
+  "explainers: 7 kh- stories (on): kh-20261020-Q90, kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q47498302; dropped: explainer World Food Programme: fewer than 3 owners' headlines name it and the story; explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer 'Saudi keen on ties with India on power grid systems': no name to tell it by",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
-  "trend radar errors: [\"outlet livehindustan: ReadTimeout: HTTPSConnectionPool(host='api.livehindustan.com', port=443): Read timed out. (read timeout=30)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261020-Q90: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261020-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261020-Q47543: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261020-Q317521: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261020-Q47543: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q19729623: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q7045350: 89 h old and no longer trending live"
- ]
+  "published kh-20261020-Q47498302: https://www.youtube.com/shorts/JEm0Ivq1_74"
+ ],
+ "published": {
+  "video_id": "JEm0Ivq1_74",
+  "url": "https://www.youtube.com/shorts/JEm0Ivq1_74",
+  "youtube_title": "Ashutosh Ranka: कोर्ट ने जमानतदार मानने से इनकार किया, क्यों? #shorts #sauravdas",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
