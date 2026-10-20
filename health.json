@@ -1,21 +1,29 @@
 {
- "at": "2026-10-20T12:12:21+00:00",
+ "at": "2026-10-20T13:12:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 8 candidates from 20 trending",
-  "outlets: 1264 headlines from 30 feeds (19 owners), 10 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 8 kh- stories (on): kh-20261020-Q3520790, kh-20261020-Q3522100, kh-20261020-Q324546, kh-20261020-Q139857349; dropped: explainer Dussehra / Delhi Traffic Police: no Wikipedia article that can be its centre",
+  "watch: 17 candidates from 18 trending",
+  "outlets: 1267 headlines from 31 feeds (19 owners), 14 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 7 kh- stories (on): kh-20261020-Q3520790, kh-20261020-Q16186720, kh-20261020-Q324546, kh-20261020-Q139857349; dropped: explainer Dussehra / Delhi Traffic Police: no Wikipedia article that can be its centre; explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q141615137-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261020-Q139762081: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261020-Q1951: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261020-Q111: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261020-Q1209093: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19729623: 48 h old and no longer trending live"
- ]
+  "drop kh-20261020-Q1951: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q19729623: 49 h old and no longer trending live",
+  "drop wk-Q7045350: 97 h old and no longer trending live",
+  "drop wk-Q141776873: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "published nw-20261019-tiger-shroff-attack-probe: https://www.youtube.com/shorts/Da2DCKJfu1k"
+ ],
+ "published": {
+  "video_id": "Da2DCKJfu1k",
+  "url": "https://www.youtube.com/shorts/Da2DCKJfu1k",
+  "youtube_title": "Tiger Shroff: कोटा में पकड़े गए तीनों आरोपी, नेपाल भागने की फिराक में थे #shorts #tigershroff",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
