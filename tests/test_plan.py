@@ -29,6 +29,9 @@ def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, 
     late = utc(9, 16)  # 21:30 IST
     assert "today" in plan.can_publish(late)
     assert plan.can_publish(late, breaking=True) is None
+    # A case angle may take the spare slot too, but MIN_GAP after the last Short.
+    assert plan.can_publish(late, spare=True) is None
+    assert "h ago" in plan.can_publish(utc(9, 10, 10), spare=True)
     # 19:00 UTC on 9 October is already 00:30 IST on 10 October: a new IST day.
     assert plan.can_publish(utc(9, 19)) is None
 

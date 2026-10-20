@@ -68,7 +68,9 @@ SERIES_SCORE = 0.9
 SERIES_PARTS = 4
 SERIES_GAP = timedelta(hours=2)
 # A case's angles go out ahead of other stories but this far apart, so the day's other news still runs between them.
-CASE_GAP = timedelta(minutes=45)
+# They may take the spare (breaking) slot, but never at night or within MIN_GAP: owner, 2026-10-20, of the Tiger
+# Shroff case, "publish few more".
+CASE_GAP = timedelta(minutes=30)
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -148,11 +150,13 @@ def ist_day(t: datetime) -> str:
     return t.astimezone(IST).date().isoformat()
 
 
-def can_publish(at: datetime | None = None, breaking: bool = False) -> str | None:
+def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool = False) -> str | None:
+    """Why no Short may go out now, or None. A breaking story may take the spare slot at once; with `spare` (a case
+    angle) it may take it MIN_GAP after the last Short."""
     at = at or datetime.now(timezone.utc)
     rows = ledger.published()
     today = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
-    if len(today) >= MAX_PER_DAY + (BREAKING_EXTRA if breaking else 0):
+    if len(today) >= MAX_PER_DAY + (BREAKING_EXTRA if breaking or spare else 0):
         return f"already {len(today)} Shorts today (IST)"
     gap = BREAKING_GAP if breaking else MIN_GAP
     times = [datetime.fromisoformat(r["published_at"]) for r in rows]
@@ -333,7 +337,7 @@ def stale(cand: dict, at: datetime) -> str | None:
 def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], list[str]]:
     """Candidates the desk would publish now, best first, and a note for each one it is holding back or dropping."""
     at = at or datetime.now(timezone.utc)
-    regular, urgent = can_publish(at), can_publish(at, breaking=True)
+    regular, urgent, spare = can_publish(at), can_publish(at, breaking=True), can_publish(at, spare=True)
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
         # A case angle runs until its file's "until": the owner chose to follow that story.
@@ -341,7 +345,8 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
             notes.append(f"drop {c['id']}: {why}")
             continue
         breaking = is_breaking(c, at)
-        wait = urgent if breaking else regular or (None if in_window(at) else "outside 07:00-24:00 IST")
+        wait = urgent if breaking else (spare if c.get("case") else regular) or (
+            None if in_window(at) else "outside 07:00-24:00 IST")
         wait = wait or orbitwire.wait(c.get("orbitwire"), at)
         if wait:
             notes.append(f"hold {c['id']}: {wait}")

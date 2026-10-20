@@ -191,8 +191,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     police were still searching, a day after all three were caught), and no angle may contradict it. Each
     angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
     so the angles keep coming until its `until` after the story leaves the radar. Angles go ahead of other
-    stories but at least 45 minutes apart (`CASE_GAP`), so the day's other news still runs between them, and an
-    open case's story gets no separate follow-up parts;
+    stories but at least 30 minutes apart (`CASE_GAP`), so the day's other news still runs between them, and an
+    open case's story gets no separate follow-up parts. An angle may take the day's spare (breaking) tenth slot,
+    still within 07:00-24:00 IST and MIN_GAP after the last Short (owner, 2026-10-20: "publish few more");
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
     of buildings); its pictures are the person (a Commons search, not only their article), the other people and
     the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted
