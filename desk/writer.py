@@ -964,6 +964,14 @@ def clean_reports(reports: list[dict], words: list[str], perpetrators: bool) -> 
     return out
 
 
+def case_hurt(hurt: dict | None, reports: list[dict]) -> dict | None:
+    """A case file's agreed injured, only when this Short's own reports include OWNERS_NEEDED of its owners: the
+    publish gate counts them there (the family angle read one, as Indian Express answered 403, and was refused)."""
+    if hurt and len(set(hurt["owners"]) & {r.get("owner") for r in reports}) >= gate.OWNERS_NEEDED:
+        return hurt
+    return None
+
+
 def reported_toll(reports: list[dict], ent: dict, listed: str | None = None) -> tuple[int, list[str]] | None:
     """A death toll the reporting agrees on (gate.reported_toll, checked against Wikidata P1120), never one that
     differs from a number the infobox lists."""
@@ -1417,7 +1425,7 @@ def build_explainer(cand: dict) -> Short:
     facts_text = [f"Centre of the story: {name}" + (f" ({name_hi})" if name_hi else "") + ".",
                   "What happened, and why, may come only from the REPORTING; the Wikipedia SOURCE is background on "
                   f"{name} and is never today's news."]
-    hurt = cand.get("case_hurt")
+    hurt = case_hurt(cand.get("case_hurt"), reports)
     if hurt:
         facts_text.append(f"Injured ({', '.join(hurt['owners'])} agree): {hurt['count']}. {hurt['en']}")
     she, _ = stories._pronouns(ent) if person else ("It", None)

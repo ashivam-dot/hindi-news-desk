@@ -73,6 +73,21 @@ def test_a_beat_that_only_quotes_the_police_shows_its_place_and_never_another_fo
     assert not visuals.other_force("मुम्बई पुलिस ने कहा", cast[-1])
 
 
+def test_a_beat_that_does_not_name_the_storys_person_never_shows_their_portrait():
+    subject, cast, at = tiger_cast()
+    beats = [TIGER[0],
+             {"say": "आरोपियों से अब पूछताछ की जा रही है।", "photo": 1},
+             {"say": "इस फायरिंग में दो लोग घायल हुए थे जो अस्पताल में हैं।", "photo": 2},
+             {"say": "पुलिस के मुताबिक आरोपी कोटा के रास्ते भाग रहे थे।", "photo": 0},
+             {"say": "टाइगर श्रॉफ ने बाद में शूटिंग फिर शुरू की।", "photo": 1}]
+    views = visuals.assign(beats, subject, cast, first=0, person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
+    assert views[1][0] == at["police"]
+    assert all(not set(v) & set(subject) for v in views[1:4]), views
+    assert views[4][0] in subject
+    # Without the person's names, a beat that names nobody falls back on the story's own photos as before.
+    assert visuals.assign(beats, subject, cast, first=0)[2][0] in subject
+
+
 def test_a_lone_portrait_still_alternates_with_maps_and_never_fills_every_beat():
     subject, cast, at = tiger_cast(own=1)
     views = visuals.assign(TIGER, subject, cast, first=0)

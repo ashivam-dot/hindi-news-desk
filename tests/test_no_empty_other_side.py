@@ -17,5 +17,12 @@ def test_a_news_short_keeps_to_the_news_not_a_biography():
     assert not writer.BIOGRAPHY.search("पुलिस के मुताबिक तीनों आरोपी कोटा स्टेशन पर पकड़े गए।")
 
 
+def test_a_cases_injured_are_said_only_when_this_shorts_reports_carry_two_of_their_owners():
+    hurt = {"count": 2, "owners": ["NDTV", "HT Media", "Indian Express Group"], "url": "u", "en": "Two hurt."}
+    assert writer.case_hurt(hurt, [{"owner": "NDTV"}, {"owner": "HT Media"}]) == hurt
+    assert writer.case_hurt(hurt, [{"owner": "NDTV"}, {"owner": "Network18"}]) is None
+    assert writer.case_hurt(None, [{"owner": "NDTV"}]) is None
+
+
 def test_the_explainer_brief_asks_for_the_span_of_a_change_in_the_title():
     assert "4 दिन में" in writer.EXPLAINER_BRIEF and "always for a crime or an attack" in writer.EXPLAINER_BRIEF

@@ -255,7 +255,8 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   between pictures; and a 1.2 s end card (logo, follow, disclosure) after the last word, with no spoken outro. The
   half-screen bulletin (framed photo, headline bar, ticker, recap card) packed four layers of text over a small
   picture and is no longer used for stories. Scripts are 60-80 words in 6-7 beats (`writer.WORDS_ASKED`, gated
-  52-90): Shorts of 15-30 s get 14% more views than a 10K-100K channel's median and those over 60 s fewer
+  52-82, at most 18 words a beat, no "आगे की कार्रवाई जारी है" ending: `writer.VAGUE`; the first dry run passed
+  90 words in five 18-word beats and ran 40 s): Shorts of 15-30 s get 14% more views than a 10K-100K channel's median and those over 60 s fewer
   (TrendReport, 3.48M Shorts), and the 45-50 s Shorts were padded with biography and "no response" lines. Every word
   on screen is the gated title, a gated card or the narration.
 - **Every beat shows what it names (owner, 2026-10-20, furious: the Tiger Shroff Short told the whole story over
@@ -272,6 +273,11 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     went out over a portrait); a case file lists every spelling of a place
     the writer may use (Kota Junction, Kota railway station); the same picture never closes one beat and opens
     the next (`desk/visuals.py`);
+  - a beat that names a place and only quotes the police ("पुलिस के अनुसार, ... सूरत") shows the place; the police
+    photo leads only a beat with no place or one naming that force ("मुंबई पुलिस"), and never a beat naming another
+    force ("राजस्थान पुलिस": `visuals.other_force`); a place beat's second picture is another of its places or the
+    story's route map, never the story's person (the first full-template dry run, 2026-10-21, put Mumbai Police
+    under Surat and Kota and "रेलवे स्टेशन" over Tiger Shroff's portrait);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
     place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
     street map, a city named again shows that spot rather than its centre, and a route line joins only places that

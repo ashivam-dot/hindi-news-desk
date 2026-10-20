@@ -37,6 +37,8 @@ POLICE = ("पुलिस",)
 # Words that may stand before "पुलिस" without naming a force ("कोटा से पकड़े गए 3 संदिग्धों को पुलिस ...").
 NOT_A_FORCE = {"की", "के", "का", "को", "ने", "और", "में", "से", "कि", "भी", "तो", "व", "एवं", "जब", "अब", "वहीं", "लेकिन",
                "हुए", "हैं", "है", "था", "थी", "गया", "बाद", "तक", "पर", "मुताबिक", "अनुसार"}
+# A beat about the accused shows the police, not the story's person.
+ACCUSED = ("आरोपी", "आरोपियों", "पूछताछ", "गिरफ्तार", "गिरफ़्तार", "रिमांड", "शूटर", "हमलावर", "संदिग्ध")
 
 # Maps fill the full-screen Short's plate (compose.Plate: the frame times compose.MARGIN).
 MAP_W, MAP_H = 1253, 2227
@@ -273,8 +275,13 @@ def other_force(say: str, police: dict) -> bool:
     return False
 
 
-def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int | None = None) -> list[list[int]]:
+def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int | None = None,
+           person: list[str] | None = None) -> list[list[int]]:
     """[main, cut] photo indices for each beat ([main] when there is no second view).
+
+    person: the spellings of the story's person when its own photos are their portraits. A beat that does not name
+    them shows the police (a beat about the accused) or the story's places instead, never their portrait: the
+    chase dry run put a smiling Tiger Shroff over the injured and the interrogation.
 
     beats: [{"say", "photo"}] as the writer wrote them; subject: indices of the story's own photos (ranked); cast:
     [{"hi", "en", "kind", "photos": [...], "near": [...]}] with photo indices, plus {"kind": "route", "pair":
@@ -287,6 +294,7 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
     routes = {tuple(c["pair"]): c for c in cast if c["kind"] == "route"}
     police = next((c for c in cast if c["kind"] == "police" and c["photos"]), None)
     members = [c for c in cast if c["kind"] in ("person", "place") and c["photos"]]
+    scene = [c for c in members if c["kind"] == "place"]
     out: list[list[int]] = []
     prev: list[int] = []
 
@@ -342,17 +350,24 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         for c in places:
             options += [sight(c)] + ([] if route else [take(c)])
         options = [i for i in dict.fromkeys(options) if i is not None]
+        about = k == 0 or not person or bool(people) or any(hindi.contains(say, w) for w in person)
         if options and k > 0 and options[0] in prev[-1:]:
             # The picture that just closed the last beat never opens this one: it moves to the cut.
-            fresh = [i for i in options if i not in prev[-1:]] or [own(set(prev), beat.get("photo"))]
+            other = own(set(prev), beat.get("photo")) if about else scenery(places or scene, options[0])
+            fresh = [i for i in options if i not in prev[-1:]] or [other]
             options = [i for i in fresh if i is not None] + [i for i in options if i not in fresh]
+        if not options and not about:
+            if police and any(w in say for w in ACCUSED) and not other_force(say, police):
+                options.append(take(police))
+            elif (i := scenery(scene, -1)) is not None:
+                options.append(i)
         main = options[0] if options else own(set(prev), beat.get("photo"))
         if main is None:
             out.append([])
             continue
         rest = [i for i in options[1:] if i != main]
-        cut = rest[0] if rest else (scenery(places, main) if places and not people else None)
-        if cut is None:
+        cut = rest[0] if rest else (scenery(places or ([] if about else scene), main) if not people else None)
+        if cut is None and about:
             cut = own({main})
         views = [main] + ([cut] if cut is not None and cut != main else [])
         for i in views:
@@ -500,7 +515,9 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         except Exception as exc:
             log.warning("visuals: no police photo for %s (%s)", city["en"], exc)
     first = beats[0].get("photo") if beats and beats[0].get("photo") in subject else None
-    views = assign(beats, subject, cast + extra, first)
+    hi = next((n.get("hi") or "" for n in draft.get("names") or [] if n.get("en") == subject_en), "")
+    person = [subject_en, *hi.split()[:1], *hi.split()[-1:]] if subject_en and not tribute else None
+    views = assign(beats, subject, cast + extra, first, [w for w in person or [] if w] or None)
     log.info("visuals: %d pictures, %d distinct on screen, cast %s", len(photos),
              len({i for v in views for i in v}), [c["en"] for c in cast if c.get("photos")])
     return photos, views
