@@ -646,14 +646,16 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           angle: str | None = None, pen: Pen | None = None,
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
           earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
-          names_ok: list[str] | None = None, never: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
+          names_ok: list[str] | None = None, never: list[str] | None = None,
+          status: str | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
     lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part).
     start: a draft to check first (a remake's reviewed script); it faces every check a written draft does. focus: one
     angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name;
-    never: words (an accused's or a gang's name) the script may not contain at all."""
+    never: words (an accused's or a gang's name) the script may not contain at all; status: where the case stands
+    now (an angle's reports may be older than the arrests)."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -671,7 +673,12 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                   "Use a different hook from a plain retelling.")
     if focus:
         brief += ("\n\nTHIS SHORT'S ANGLE: " + focus + " Open with this angle and keep every beat on it; the case "
-                  "itself gets one short line of context at most. Every fact comes from the REPORTING below.")
+                  "itself gets one short line of context at most. Every fact comes from the REPORTING below. Name the "
+                  "exact places (the station, the hospital, the police station, the street): the video shows each "
+                  "place it names.")
+    if status:
+        brief += ("\n\nWHERE THE CASE STANDS NOW (some REPORTING was written before this): " + status + " Never say "
+                  "anything that contradicts it, and where reports disagree on a figure, give it as who says it.")
     if names_ok:
         brief += ("\n\nName only these people, places and bodies (list each in names with its English name exactly "
                   "as written here): " + ", ".join(names_ok) + ". Never "
@@ -1385,7 +1392,8 @@ def build_explainer(cand: dict) -> Short:
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
                              title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
-                             focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"))
+                             focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"),
+                             status=cand.get("case_status"))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "

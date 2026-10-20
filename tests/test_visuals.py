@@ -114,6 +114,16 @@ def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
     assert views[1][0] == 5 and 3 not in views[1]
 
 
+def test_a_named_landmark_shows_its_photo_then_its_map_and_a_route_still_gets_the_photo():
+    cast = [{"en": "Kota Junction", "hi": "कोटा जंक्शन", "kind": "place", "photos": [4], "near": [], "sight": [3]},
+            {"en": "Surat", "hi": "सूरत", "kind": "place", "photos": [5], "near": []},
+            {"kind": "route", "pair": ("Surat", "Kota Junction"), "photos": [6]}]
+    views = visuals.assign([{"say": "x", "photo": 0}, {"say": "वे कोटा जंक्शन पर पकड़े गए।", "photo": 0},
+                            {"say": "वे सूरत से कोटा जंक्शन तक गए।", "photo": 0}], [0, 1], cast, first=0)
+    assert views[1] == [3, 4]
+    assert views[2][0] == 6 and 3 in views[2]
+
+
 def test_maps_hold_every_site_inside_the_frame():
     win = visuals.window([(25.18, 75.83), (19.08, 72.88)], 300.0)
     for lat, lon in ((25.18, 75.83), (19.08, 72.88)):

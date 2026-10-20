@@ -271,7 +271,7 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     report = {"url": "u9", "owner": "NDTV", "title": "Jackie Shroff on the firing"}
     (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
         {"name": "tiger", "story": "nw-20261019-tiger-shroff-attack", "until": "2099-01-01T00:00:00+00:00",
-         "names_ok": ["Tiger Shroff"], "angles": [
+         "region": "india", "status": "All three caught.", "names_ok": ["Tiger Shroff"], "angles": [
              {"key": "family", "focus": "The family.", "reports": [report], "names_ok": ["Jackie Shroff"],
               "words": ["Jackie"]},
              {"key": "probe", "focus": "The probe.", "reports": [report], "arrests": True}]}))
@@ -290,6 +290,7 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     assert family["names_ok"] == ["Tiger Shroff", "Jackie Shroff"] and family["earlier"] == ["पहला"]
     assert family["reports"] == [report] and not family["arrests"] and angles[1]["arrests"]
     assert family["case_words"] == ["Jackie"] and angles[1]["case_words"] == []
+    assert family["region"] == "india" and family["case_status"] == "All three caught."
     ready, _ = plan.lineup(found + [{"id": "wk-Q1", "title": "x", "fame": 10 ** 9}], utc(20, 12))
     assert ready[0]["id"] == family["id"]
     ledger.record_publish({"id": family["id"], "published_at": "2026-10-20T12:00:00+00:00", "video_id": "F",

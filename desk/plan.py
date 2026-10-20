@@ -89,7 +89,8 @@ CASES = Path(__file__).resolve().parents[1] / "cases"
 def cases(at: datetime | None = None) -> list[dict]:
     """Case files still current: one story the channel follows angle by angle, each angle its own Short from
     reporting chosen for it ({"name", "story": an id of the story, "until", "cand": the story's radar candidate, used
-    once it leaves the radar, "names_ok": [...], "never": [an accused's
+    once it leaves the radar, "region" (the radar may call an Indian story "world"), "status": where the case stands
+    now, which no angle may contradict, "names_ok": [...], "never": [an accused's
     or a gang's name, English and Hindi, the script may not contain], "angles": [{"key",
     "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...], "words": [names the angle's excerpts
     keep sentences about]}]})."""
@@ -112,11 +113,13 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict]) -> list[dict]:
         # A headline naming an accused or a gang would steer the writer and the excerpts towards them.
         lines = {k: [h for h in cand[k] if not (isinstance(h, str) and any(hindi.contains(h, w) for w in never))]
                  for k in ("headlines", "hindi_headlines") if isinstance(cand.get(k), list)}
-        return [cand | lines | {"id": f"{stem}-{a['key']}", "case": s["name"], "case_story": s["story"],
-                                "angle": a["key"], "focus": a["focus"], "reports": a["reports"],
-                                "arrests": bool(a.get("arrests")), "earlier": earlier,
-                                "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
-                                "case_words": a.get("words", []), "never": never}
+        where = {"region": s["region"]} if s.get("region") else {}
+        return [cand | lines | where | {"id": f"{stem}-{a['key']}", "case": s["name"], "case_story": s["story"],
+                                        "angle": a["key"], "focus": a["focus"], "reports": a["reports"],
+                                        "arrests": bool(a.get("arrests")), "earlier": earlier,
+                                        "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
+                                        "case_words": a.get("words", []), "never": never,
+                                        "case_status": s.get("status")}
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
     return []
 

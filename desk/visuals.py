@@ -4,7 +4,8 @@ seconds.
 Owner, 2026-10-20, on the Tiger Shroff Short (one smiling portrait for all 47 seconds of a shooting story): "In a
 single image you speakout the full news or story, how audience will stay to see this". After the script is written,
 each name it lists is looked up: another person it names gets their own face-matched Commons portraits (with their
-name on screen), a place gets an OpenStreetMap locator map, two places in one beat get a map of both, and a police
+name on screen), a place gets an OpenStreetMap locator map (a landmark its own Commons photo first), two places in
+one beat get a map of both, and a police
 beat in an Indian city gets that city's police (Commons). Photos of the event itself are news agencies' copyright
 and are never used; a map shows where, never what happened.
 """
@@ -23,8 +24,11 @@ from . import hindi, media, net, wiki
 log = logging.getLogger(__name__)
 
 MIN_VISUALS = 3  # distinct pictures on screen; a lead story about a person may go with 2 (writer.LEAD_SCORE)
-MAX_PEOPLE, MAX_PLACES = 3, 3
+MAX_PEOPLE, MAX_PLACES = 3, 5
 PERSON_PHOTOS = 2
+# A named landmark (a station, a hospital, a beach: a place with no population) shows its own Commons photo, then
+# its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
+SIGHT_PHOTOS = 1
 INDIA = "Q668"
 COUNTRY_KINDS = {"Q6256", "Q3624078", "Q7275"}
 POLICE = ("पुलिस",)
@@ -277,6 +281,10 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
             shown_place.add(c["en"])
         return pick
 
+    def sight(c: dict) -> int | None:
+        pool = c.get("sight") or []
+        return min(pool, key=lambda i: (i in prev, used.get(i, 0))) if pool else None
+
     def own(avoid: set[int], wish: int | None = None) -> int | None:
         pool = [i for i in subject if i not in avoid] or [i for i in subject if i not in prev] or subject
         if not pool:
@@ -303,8 +311,8 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         options += [take(c) for c in people]
         if police and any(w in say for w in POLICE) and not people:
             options.append(take(police))
-        if not route:
-            options += [take(c) for c in places]
+        for c in places:
+            options += [sight(c)] + ([] if route else [take(c)])
         options = [i for i in dict.fromkeys(options) if i is not None]
         if options and k > 0 and options[0] in prev[-1:]:
             # The picture that just closed the last beat never opens this one: it moves to the cut.
@@ -358,6 +366,22 @@ def _police_photos(city: dict, folder: Path, exclude: set[str]) -> list[dict]:
     return out[:2]
 
 
+def _sight_photos(c: dict, folder: Path, exclude: set[str]) -> list[dict]:
+    """A landmark's own Commons photos (its Wikidata image first), with no featured face, its name on screen."""
+    import cv2
+
+    from . import faces, writer
+
+    found = media.download(media.find(c["title"], c["ent"], limit=2, exclude=exclude), folder)
+    out = []
+    for r in media.as_dicts(found):
+        img = cv2.imread(r["path"])
+        if img is None or writer.featured_face(img, faces.detect(img)):
+            continue
+        out.append(r | {"focus": None, "role": "place", "who": c["hi"]})
+    return out[:SIGHT_PHOTOS]
+
+
 def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder: Path,
            exclude: set[str] | None = None, tribute: bool = False) -> tuple[list[dict], list[list[int]]]:
     """(photos with the cast's pictures added, [main, cut] indices per beat). Network failures leave a beat on the
@@ -386,7 +410,7 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         inside = {}
     holds = {o["en"] for o in inside.values()}
     for c in cast:
-        c["photos"], c["near"] = [], []
+        c["photos"], c["near"], c["sight"] = [], [], []
         try:
             if c["kind"] == "person":
                 c["photos"] = add(_person_photos(c, folder / f"cast-{c['qid']}", exclude))
@@ -394,6 +418,11 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
             site = wiki.coords(c["ent"])
             if not site:
                 continue
+            if not is_region(c["ent"]) and not _population(c["ent"]):
+                try:
+                    c["sight"] = add(_sight_photos(c, folder / f"sight-{c['qid']}", exclude))
+                except Exception as exc:
+                    log.warning("visuals: no photo of %s (%s)", c["en"], exc)
             if outer := inside.get(c["en"]):
                 c["inside"] = outer["en"]
                 c["photos"] = add([map_photo([(site, f"{c['hi']}, {outer['hi']}")], CITY_KM,
