@@ -1,30 +1,21 @@
 {
- "at": "2026-10-20T14:05:20+00:00",
+ "at": "2026-10-20T14:41:31+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 54 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.758, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.231, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.76, 'typical_views_24h': 26}, 'category:court': {'n': 5, 'lift': 1.237, 'typical_views_24h': 65}, 'region:world': {'n': 26",
-  "watch: 8 candidates from 19 trending",
-  "outlets: 1270 headlines from 31 feeds (19 owners), 12 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 8 kh- stories (on): kh-20261020-Q3520790, kh-20261020-Q139857349, kh-20261020-Q3522100, kh-20261020-Q16186720; dropped: explainer Dussehra / Delhi Traffic Police: no Wikipedia article that can be its centre",
+  "watch: 14 candidates from 16 trending",
+  "outlets: 1267 headlines from 31 feeds (19 owners), 9 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 7 kh- stories (on): kh-20261020-Q3520790, kh-20261020-Q139857349, kh-20261020-Q16186720, kh-20261020-Q324546; dropped: explainer Dussehra / Delhi Traffic Police: no Wikipedia article that can be its centre; explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261020-Q1209093: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261020-Q139762081: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop wp-2026_Shabwah_missile_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261020-Q1951: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q19729623: 50 h old and no longer trending live",
-  "drop wk-Q7045350: 98 h old and no longer trending live",
-  "published kh-20261020-Q16186720-p2: https://www.youtube.com/shorts/ipQfzEPT6LA"
- ],
- "published": {
-  "video_id": "ipQfzEPT6LA",
-  "url": "https://www.youtube.com/shorts/ipQfzEPT6LA",
-  "youtube_title": "S Jaishankar: पश्चिम एशिया के हालात पर विदेश मंत्री की बड़ी चिंता #shorts #subrahmanyamjaishankar",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "hold nw-20261019-tiger-shroff-attack-family: already 9 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-chase: already 9 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-industry: already 9 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-incident: already 9 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-government: already 9 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-hurt: already 9 Shorts today (IST)"
+ ]
 }
