@@ -655,7 +655,9 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                   "Use a different hook from a plain retelling.")
     if not today_ok:
         brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy, and "
-                  "अभी तक or आज तक for what is still unknown, are fine); give the date instead.")
+                  "अभी तक or आज तक for what the REPORTING says is still unknown, are fine). Say when it happened "
+                  "only as the FACTS or the REPORTING state it (their date, or their day such as रविवार रात); never "
+                  "work a date out yourself, and leave the time out when neither gives one.")
     name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
                else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports)
