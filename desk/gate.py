@@ -5,8 +5,8 @@ from __future__ import annotations
 
 import re
 
-from . import hindi
-from .spec import Short
+from . import hindi, visuals
+from .spec import Short, shot_photos
 
 # Gore, sensationalism and clickbait never appear in a title, a card or the narration. A trailing * matches any
 # ending ("चौंकाने*" also catches चौंकाने वाला); everything else matches whole words only (so लाश never trips on तलाश).
@@ -199,9 +199,13 @@ def _story(short: Short) -> list[str]:
             problems.append(f"photo {p.get('file')}: licence {p.get('license')!r} is not free")
         if p.get("page", "") not in credits:
             problems.append(f"photo {p.get('file')}: not credited")
-    used = {b.shot for b in short.beats if b.shot.startswith("photo:")}
-    if any(int(s.split(":")[1]) >= len(photos) for s in used):
+    shown = [shot_photos(b.shot) for b in short.beats if b.shot.startswith("photo:")]
+    if any(not s or max(s) >= len(photos) for s in shown):
         problems.append("beats: a beat points at a photo that does not exist")
+    # One portrait for a whole Short loses the viewer (Tiger Shroff, 2026-10-20: one photo for 47 s).
+    want = short.scene.get("min_visuals", visuals.MIN_VISUALS)
+    if len({i for s in shown for i in s}) < min(want, len(shown)):
+        problems.append(f"pictures: only {len({i for s in shown for i in s})} different ones on screen (want {want})")
     if "आवाज़: AI" not in compose.DISCLOSURE or "AI" not in compose.AI_BADGE:
         problems.append("end card: the AI-voice disclosure is missing")
     return problems

@@ -21,12 +21,12 @@ import re
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, explain, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, wiki
+from . import config, explain, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, visuals, wiki
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
 MIN_PHOTOS = 3
-REPORT_PHOTOS = 2  # kh- and nw- bulletins: the fact cards and headline carry the frame, not a photo slideshow
+REPORT_PHOTOS = 2  # the story's own photos for a kh- or nw- bulletin; desk/visuals.py adds who and where each beat names
 # A kh- story about a person shows only their own photos: their school or birthplace says nothing about today's news
 # (Dhruv Rathee, 2026-10-17: seven of twelve frames were buildings). One photo is enough for a story this high in
 # Google News India's top stories (Abhijeet Dipke's detention led them for four days and failed 21 times on 1 photo).
@@ -787,14 +787,16 @@ def caption_side(description: str | None, title: str) -> str | None:
 
 
 def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None,
-                files: list[str] | None, exclude: set[str] | None, places: bool) -> list[dict]:
+                files: list[str] | None, exclude: set[str] | None, places: bool, limit: int = 10) -> list[dict]:
     import cv2
 
     if files:
         found = media.picks([f for f in files if f not in (exclude or set())])
     else:
-        found = media.find(title, ent, limit=10, extra_qids=extra_qids, exclude=exclude, search=bool(exclude),
-                           places=places)
+        # A person is always searched for: Tiger Shroff's Wikidata image and category gave one photo (of someone
+        # else), a Commons search for his name gave nine of him (2026-10-20).
+        found = media.find(title, ent, limit=limit, extra_qids=extra_qids, exclude=exclude,
+                           search=bool(exclude) or person, places=places)
     found = media.download(found, folder)
     rows = media.as_dicts(found)
     images = [cv2.imread(r["path"]) for r in rows]
@@ -986,7 +988,7 @@ def build_death(cand: dict) -> Short:
              Fact("age", str(age), item, [str(age)], "computed from P569 and P570")]
     sources = [page, item] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
     return _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,
-                  sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"),
+                  sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"), person=True,
                   tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
                   summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
                           f"तथ्यों से।",
@@ -1142,13 +1144,17 @@ def card_label(label) -> str:
 
 
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
-           mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT) -> Short:
+           mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False) -> Short:
     reports = reports or []
     name_hi = plain_name(name_hi, draft, name)
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
-    beats = [Beat(b["say"].strip(), f"photo:{b['photo']}",
-                  {"big": b["caption"].strip(), "small": card_label(b.get("label"))}) for b in draft["beats"]]
+    photos, views = visuals.direct(draft, photos, name if person else "", region == "india",
+                                   WORK / sid / "photos" / "cast", set((ov or {}).get("excluded_photos") or []),
+                                   tribute=kind == "death")
+    beats = [Beat(b["say"].strip(), "photo:" + "/".join(str(i) for i in (v or [b["photo"]])),
+                  {"big": b["caption"].strip(), "small": card_label(b.get("label"))})
+             for b, v in zip(draft["beats"], views)]
     beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
                       pause_after=0.5))
     ground = source + "\n" + "\n".join(facts_text)
@@ -1172,6 +1178,8 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
             title = f"{name_hi}: {orbitwire.ANGLES[ov['angle']]['label']}"
     if any(media.from_openverse(p) for p in photos):
         credit = credit.replace("Wikimedia Commons", "Wikimedia Commons और Openverse")
+    if any(visuals.is_map(p) for p in photos):
+        credit += "; नक्शे: © OpenStreetMap contributors (CC BY-SA 2.0)"
     if reports:
         credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
@@ -1355,9 +1363,9 @@ def build_explainer(cand: dict) -> Short:
                    tags=[name, name_hi, label, cat, "क्यों हुआ", "हिंदी समाचार", "hindi news", "india news"],
                    summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                            "Wikipedia से।",
-                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT)
+                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person)
     short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
-                       min_photos=need)
+                       min_photos=need, min_visuals=visuals.MIN_VISUALS - (need == 1))
     return short
 
 

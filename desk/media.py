@@ -340,4 +340,5 @@ def from_openverse(photo: dict) -> bool:
 
 def hosts(photos: list[dict]) -> str:
     """Where a Short's photos come from, as its end card and description name them."""
-    return "Wikimedia Commons, Openverse" if any(from_openverse(p) for p in photos) else "Wikimedia Commons"
+    names = "Wikimedia Commons, Openverse" if any(from_openverse(p) for p in photos) else "Wikimedia Commons"
+    return names + (", OpenStreetMap" if any(p.get("host") == "OpenStreetMap" for p in photos) else "")

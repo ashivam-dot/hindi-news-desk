@@ -20,7 +20,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, features
 
 from . import config, depth, hindi, music
-from .spec import Short
+from .spec import Short, shot_photos
 
 W, H, FPS = 1080, 1920, 30
 MARGIN = 1.16  # the photo plate is larger than the frame so the camera can move
@@ -82,7 +82,9 @@ class Plate:
 
     def __init__(self, photo: dict, cache: Path, size: tuple[int, int] = (W, H), face_share: float = 0.17):
         img = Image.open(photo["path"]).convert("RGB")
-        dep = depth.estimate(img, cache)
+        # A map is flat: depth parallax would bend its roads and labels.
+        dep = np.full((img.height, img.width), 0.5, np.float32) if photo.get("role") == "map" \
+            else depth.estimate(img, cache)
         tw, th = size
         pw, ph = round(tw * MARGIN), round(th * MARGIN)
         iw, ih = img.size
@@ -435,7 +437,7 @@ def render(short: Short, timing: dict, work: Path) -> dict:
     spans = timing["beats"]
     shots = []
     for i, (beat, (s, e)) in enumerate(zip(short.beats, spans)):
-        idx = int(beat.shot.split(":")[1]) if beat.shot.startswith("photo:") else None
+        idx = (shot_photos(beat.shot) or [None])[0]
         if idx is None or idx not in plates:
             idx = shots[-1]["photo"] if shots else 0
         shots.append({"photo": idx, "start": s if i else 0.0, "end": e if i < len(spans) - 1 else duration,
@@ -729,6 +731,35 @@ def _slide(t: float, start: float, dur: float = 0.3) -> float:
     return _ease((t - start) / dur)
 
 
+CUT_AFTER = 3.4  # seconds: a longer beat cuts to its second picture, so the picture changes every few seconds
+TIGHT = {"z": (1.24, 1.32), "dz": (0.02, 0.03), "pan": (0, 0, 0, -12), "par": (0, 0)}  # the same photo, closer
+MAP_TAG = "नक्शा"
+
+
+def views(shots: list[dict], words: list[dict]) -> list[dict]:
+    """The pictures on screen in order. A beat longer than CUT_AFTER cuts, at the word nearest its middle, to its
+    second picture (shot["views"]), or to the same photo closer when it has none."""
+    out = []
+    for k, shot in enumerate(shots):
+        if shot["outro"] or shot["end"] - shot["start"] < CUT_AFTER:
+            out.append(shot | {"beat_k": k, "cut": False})
+            continue
+        mid = (shot["start"] + shot["end"]) / 2
+        starts = [w["start"] for w in words if shot["start"] + 1.2 < w["start"] < shot["end"] - 1.2]
+        at = min(starts, key=lambda s: abs(s - mid)) if starts else mid
+        alt = (shot.get("views") or [])[1:2]
+        photo = alt[0] if alt else shot["photo"]
+        motion = TIGHT if photo == shot["photo"] else MOTIONS[(k + 2) % len(MOTIONS)]
+        out += [shot | {"end": at, "beat_k": k, "cut": False},
+                shot | {"photo": photo, "start": at, "motion": motion, "beat_k": k, "cut": True}]
+    return out
+
+
+def _name_layer(name: str) -> tuple[np.ndarray, np.ndarray]:
+    """Who a photo shows, on it: viewers must never take someone else for the story's person."""
+    return _rgba(_pill(name, _font("ExtraBold", 40), NEWS_RED + (240,), height=62, pad=20))
+
+
 def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     """The news-bulletin Short (see the comment above NEWS_RED)."""
     mood = short.scene.get("mood", "news")
@@ -743,11 +774,12 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     spans = timing["beats"]
     shots = []
     for i, (beat, (s, e)) in enumerate(zip(short.beats, spans)):
-        idx = int(beat.shot.split(":")[1]) if beat.shot.startswith("photo:") else None
-        if idx is None or idx not in plates:
-            idx = shots[-1]["photo"] if shots else 0
-        shots.append({"photo": idx, "start": s if i else 0.0, "end": e if i < len(spans) - 1 else duration,
-                      "motion": MOTIONS[i % len(MOTIONS)], "beat": beat, "outro": beat.shot == "outro"})
+        shown = [p for p in shot_photos(beat.shot) if p in plates]
+        idx = shown[0] if shown else (shots[-1]["photo"] if shots else 0)
+        shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
+                      "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
+                      "beat": beat, "outro": beat.shot == "outro"})
+    seen = views(shots, timing["words"])
     cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
              if b["beat"].card and b["beat"].card.get("big") and not b["outro"] else None for b in shots]
     big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
@@ -764,7 +796,10 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     ticker = Ticker(facts)
     recap = _recap_layer(facts)
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
-    file_tag = _rgba(_pill(FILE_PHOTO, _font("Bold", 30), (0, 0, 0, 170), height=48, pad=14))
+    file_tag, map_tag = (_rgba(_pill(t, _font("Bold", 30), (0, 0, 0, 170), height=48, pad=14))
+                         for t in (FILE_PHOTO, MAP_TAG))
+    tags = {i: map_tag if p.get("role") == "map" else file_tag for i, p in enumerate(photos)}
+    names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
     end = _end_layers(accent, disclosure(photos))
     badge = _badge_layer()
     card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
@@ -782,16 +817,20 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     still_at = {int(n * k / 5) for k in range(5)}
     for i in range(n):
         t = i / FPS
-        k = next(j for j, s in enumerate(shots) if t < s["end"] or j == len(shots) - 1)
+        v = next(j for j, s in enumerate(seen) if t < s["end"] or j == len(seen) - 1)
+        view = seen[v]
+        k = view["beat_k"]
         shot = shots[k]
-        u = (t - shot["start"]) / max(shot["end"] - shot["start"], 0.1)
-        punch = 0.03 * max(0.0, 1 - (t - shot["start"]) / 0.35) if k else 0.06 * max(0.0, 1 - t / 0.6)
-        win = cam.shoot(plates[shot["photo"]], u, shot["motion"], punch)
-        if k and (t - shot["start"]) * FPS < CROSSFADE:
-            prev = shots[k - 1]
+        u = (t - view["start"]) / max(view["end"] - view["start"], 0.1)
+        punch = 0.03 * max(0.0, 1 - (t - view["start"]) / 0.35) if v else 0.06 * max(0.0, 1 - t / 0.6)
+        win = cam.shoot(plates[view["photo"]], u, view["motion"], punch)
+        on = view["photo"]  # the picture the tag, name and credit belong to
+        if v and not view["cut"] and (t - view["start"]) * FPS < CROSSFADE:
+            prev = seen[v - 1]
             pu = (t - prev["start"]) / max(prev["end"] - prev["start"], 0.1)
-            a = (t - shot["start"]) * FPS / CROSSFADE
+            a = (t - view["start"]) * FPS / CROSSFADE
             win = cv2.addWeighted(win, a, cam.shoot(plates[prev["photo"]], pu, prev["motion"]), 1 - a, 0)
+            on = view["photo"] if a >= 0.5 else prev["photo"]
         win = grade.apply(win, i)
         frame = _backdrop(win)
         if shot["outro"]:
@@ -812,8 +851,11 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + src[1].shape[0] + 24, a)
         else:
             frame[WIN_Y:WIN_Y + WIN_H] = win
-            _blit(frame, file_tag, W - file_tag[1].shape[1] - 24, WIN_Y + 20, 0.95)
-            _blit(frame, credits[shot["photo"]], 24, WIN_Y + WIN_H - 50, 0.9)
+            tag = tags[on]
+            _blit(frame, tag, W - tag[1].shape[1] - 24, WIN_Y + 20, 0.95)
+            if on in names:
+                _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
+            _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
             _blit(frame, headline, 0, HEAD_Y)
             if cards[k] is not None:
                 e = _slide(t, shot["start"]) if k and not held[k] else 1.0

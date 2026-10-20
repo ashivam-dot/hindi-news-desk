@@ -1,0 +1,102 @@
+from PIL import Image
+
+from desk import compose, visuals
+from desk.spec import shot_photos
+
+# The Tiger Shroff script of 2026-10-20, which went out over one photo for all six beats.
+TIGER = [
+    {"say": "एक्टर टाइगर श्रॉफ पर मुम्बई में फायरिंग हुई, जिसमें वे बाल-बाल बच गए।", "photo": 0},
+    {"say": "रिपोर्टों के मुताबिक रविवार शाम फुटबॉल खेलकर लौट रहे टाइगर की कार पर दो लोगों ने गोलियां चलाईं।", "photo": 0},
+    {"say": "महाराष्ट्र के उपमुख्यमंत्री एकनाथ शिंदे ने टाइगर से मिलकर उनके परिवार को पूरी सुरक्षा का भरोसा दिया।", "photo": 0},
+    {"say": "पुलिस ने इस हमले की कोई आधिकारिक वजह अब तक साफ नहीं की है।", "photo": 0},
+    {"say": "टाइगर एक्टर जय किशन श्राफ के बेटे हैं और उन्होंने 2014 में फिल्म heropanti से करियर शुरू किया था।", "photo": 0},
+    {"say": "कोटा से पकड़े गए 3 संदिग्धों को पुलिस अब पूछताछ के लिए मुम्बई ला रही है।", "photo": 0},
+]
+
+
+def tiger_cast(own: int = 3):
+    """Indices: the story's own photos 0..own-1, then Shinde, Jackie Shroff, maps and the police."""
+    n = own
+    shinde, jackie = [n], [n + 1]
+    mumbai, mumbai_near, maha, kota, route, police = n + 2, n + 3, n + 4, n + 5, n + 6, n + 7
+    cast = [
+        {"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [mumbai], "near": [mumbai_near]},
+        {"en": "Maharashtra", "hi": "महाराष्ट्र", "kind": "place", "photos": [maha], "near": []},
+        {"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": shinde},
+        {"en": "Jackie Shroff", "hi": "जय किशन श्राफ", "kind": "person", "photos": jackie},
+        {"en": "Kota", "hi": "कोटा", "kind": "place", "photos": [kota], "near": []},
+        {"kind": "route", "pair": ("Kota", "Mumbai"), "photos": [route]},
+        {"kind": "police", "photos": [police]},
+    ]
+    return list(range(own)), cast, dict(shinde=shinde[0], jackie=jackie[0], mumbai=mumbai, maha=maha, route=route,
+                                         police=police)
+
+
+def test_each_beat_shows_who_or_where_it_names():
+    subject, cast, at = tiger_cast()
+    views = visuals.assign(TIGER, subject, cast, first=0)
+    mains = [v[0] for v in views]
+    assert mains[0] == 0 and at["mumbai"] in views[0]
+    assert mains[1] in subject and mains[1] != 0
+    assert mains[2] == at["shinde"]
+    assert mains[3] == at["police"]
+    assert mains[4] == at["jackie"]
+    assert mains[5] == at["route"]
+    assert len({i for v in views for i in v}) >= 8
+    assert all(a[0] != b[0] for a, b in zip(views, views[1:]))
+
+
+def test_the_picture_that_closed_a_beat_never_opens_the_next():
+    subject, cast, at = tiger_cast()
+    beats = TIGER[:5] + [TIGER[5], {"say": "पुलिस ने आगे की जांच शुरू कर दी है।", "photo": 0}]
+    views = visuals.assign(beats, subject, cast, first=0)
+    flat = [i for v in views for i in v]
+    assert all(a != b for a, b in zip(flat, flat[1:]))
+    assert at["police"] in views[6]
+
+
+def test_a_lone_portrait_still_alternates_with_maps_and_never_fills_every_beat():
+    subject, cast, at = tiger_cast(own=1)
+    views = visuals.assign(TIGER, subject, cast, first=0)
+    assert sum(v[0] == 0 for v in views) <= 2
+    assert len({i for v in views for i in v}) >= 5
+
+
+def test_with_no_cast_the_own_photos_rotate():
+    views = visuals.assign(TIGER, [0, 1, 2], [], first=0)
+    mains = [v[0] for v in views]
+    assert all(a != b for a, b in zip(mains, mains[1:]))
+    assert set(mains) == {0, 1, 2}
+    assert all(len(v) == 2 and v[0] != v[1] for v in views)
+
+
+def test_shots_name_their_cut():
+    assert shot_photos("photo:3/7") == [3, 7] and shot_photos("photo:2") == [2]
+    assert shot_photos("outro") == [] and shot_photos("photo:x") == []
+
+
+def test_a_long_beat_cuts_between_words_to_its_second_picture():
+    beat = {"photo": 1, "views": [1, 4], "start": 0.0, "end": 6.0, "motion": compose.MOTIONS[0], "outro": False}
+    short_beat = beat | {"views": [2], "photo": 2, "start": 6.0, "end": 8.0}
+    words = [{"start": s, "end": s + 0.4, "text": "x"} for s in (0.2, 1.0, 2.1, 2.9, 3.6, 4.5, 6.2)]
+    seen = compose.views([beat, short_beat], words)
+    assert [(s["photo"], s["start"], s["end"], s["cut"]) for s in seen] == \
+        [(1, 0.0, 2.9, False), (4, 2.9, 6.0, True), (2, 6.0, 8.0, False)]
+    alone = compose.views([beat | {"views": [1]}], words)
+    assert alone[1]["photo"] == 1 and alone[1]["motion"] is compose.TIGHT
+
+
+def test_maps_hold_every_site_inside_the_frame():
+    win = visuals.window([(25.18, 75.83), (19.08, 72.88)], 300.0)
+    for lat, lon in ((25.18, 75.83), (19.08, 72.88)):
+        x, y = visuals.project(win, lat, lon)
+        assert 0.1 * visuals.MAP_W < x < 0.9 * visuals.MAP_W and 0.1 * visuals.MAP_H < y < 0.9 * visuals.MAP_H
+
+
+def test_a_map_is_drawn_with_its_hindi_names(tmp_path):
+    win = visuals.window([(19.08, 72.88)], visuals.WIDE_KM)
+    img = visuals.draw(Image.new("RGB", (visuals.MAP_W, visuals.MAP_H), (200, 220, 200)), win,
+                       [((19.08, 72.88), "मुम्बई")])
+    assert img.size == (visuals.MAP_W, visuals.MAP_H)
+    x, y = (round(v) for v in visuals.project(win, 19.08, 72.88))
+    assert img.getpixel((x, y))[0] > 180  # the red marker sits on the site

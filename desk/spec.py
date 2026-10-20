@@ -22,9 +22,19 @@ class Fact:
 @dataclass
 class Beat:
     text: str
-    shot: str
+    shot: str  # "photo:3", "photo:3/7" (a long beat cuts to photo 7 halfway) or "outro"
     card: dict | None = None
     pause_after: float = 0.3
+
+
+def shot_photos(shot: str) -> list[int]:
+    """The photo indices a beat's shot shows, in order ([] for the outro or a malformed shot)."""
+    if not shot.startswith("photo:"):
+        return []
+    try:
+        return [int(p) for p in shot.split(":", 1)[1].split("/")]
+    except ValueError:
+        return []
 
 
 @dataclass
