@@ -67,6 +67,8 @@ TOP_ONLY_SCORE = 0.55
 SERIES_SCORE = 0.9
 SERIES_PARTS = 4
 SERIES_GAP = timedelta(hours=2)
+# A case's angles go out ahead of other stories but this far apart, so the day's other news still runs between them.
+CASE_GAP = timedelta(minutes=45)
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -99,14 +101,22 @@ def cases(at: datetime | None = None) -> list[dict]:
     return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
 
 
-def angles_of(cand: dict, specs: list[dict], rows: list[dict]) -> list[dict]:
-    """The angles of the case this candidate belongs to that are not on the channel yet, in the file's order."""
+def case_of(cand: dict, specs: list[dict]) -> dict | None:
+    return next((s for s in specs if same_case(cand["id"], s["story"])), None)
+
+
+def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | None = None) -> list[dict]:
+    """The angles of the case this candidate belongs to that are not on the channel yet, in the file's order; none
+    until CASE_GAP after the case's last Short."""
+    at = at or datetime.now(timezone.utc)
     for s in specs:
         if not same_case(cand["id"], s["story"]):
             continue
         gone = {r["replaced"] for r in rows if r.get("replaced")}
         told = sorted((r for r in rows if r.get("video_id") not in gone and (
             same_case(r["id"], s["story"]) or r.get("case") == s["name"])), key=lambda r: r["published_at"])
+        if told and at - datetime.fromisoformat(told[-1]["published_at"].replace("Z", "+00:00")) < CASE_GAP:
+            return []
         earlier = [r.get("title") or "" for r in told]
         stem = SUFFIX.sub("", s["story"])
         never = s.get("never", [])
@@ -428,9 +438,10 @@ def watch(save: bool = True) -> dict:
     rows = ledger.published()
     stories, redo, open_cases = [], remakes(at), cases(at)
     for c in found["trending"]:
-        if angles := angles_of(c, open_cases, rows):
-            open_cases = [s for s in open_cases if s["name"] != angles[0]["case"]]
-            stories += angles
+        # An open case owns its story: its angles are the follow-ups.
+        if case := case_of(c, open_cases):
+            open_cases = [s for s in open_cases if s is not case]
+            stories += angles_of(c, [case], rows, at)
             continue
         if again := remake_of(c, redo):
             redo = [s for s in redo if s["replaces"] != again["replaces"]]
@@ -448,7 +459,7 @@ def watch(save: bool = True) -> dict:
     for s in open_cases:
         # A case outlives the story's hours on the radar: its file keeps the candidate the angles are built on.
         if s.get("cand"):
-            stories += angles_of(s["cand"], [s], rows)
+            stories += angles_of(s["cand"], [s], rows, at)
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))

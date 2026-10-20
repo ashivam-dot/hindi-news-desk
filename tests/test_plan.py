@@ -1,4 +1,4 @@
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
@@ -275,7 +275,7 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
              {"key": "family", "focus": "The family.", "reports": [report], "names_ok": ["Jackie Shroff"],
               "words": ["Jackie"]},
              {"key": "probe", "focus": "The probe.", "reports": [report], "arrests": True}]}))
-    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": "2026-10-20T10:01:00+00:00",
+    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": "2026-10-19T08:01:00+00:00",
                            "video_id": "NEW", "title": "पहला"})
     cand = {"id": "nw-20261020-tiger-shroff-attack", "title": "Tiger Shroff attack", "category": "attack",
             "kind": "incident", "fame": 1, "top_score": 1.15}
@@ -293,7 +293,7 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     assert family["region"] == "india" and family["case_status"] == "All three caught."
     ready, _ = plan.lineup(found + [{"id": "wk-Q1", "title": "x", "fame": 10 ** 9}], utc(20, 12))
     assert ready[0]["id"] == family["id"]
-    ledger.record_publish({"id": family["id"], "published_at": "2026-10-20T12:00:00+00:00", "video_id": "F",
+    ledger.record_publish({"id": family["id"], "published_at": "2026-10-19T10:00:00+00:00", "video_id": "F",
                            "case": "tiger", "title": "परिवार"})
     later = plan.watch(save=False)["candidates"]
     assert [c["id"] for c in later] == ["nw-20261019-tiger-shroff-attack-probe"]
@@ -309,6 +309,12 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     assert off[0]["headlines"] == ["Tiger Shroff shooters caught in Kota"] and off[0]["never"] == ["Bishnoi"]
     ready, notes = plan.lineup(off, utc(22, 12))
     assert [c["id"] for c in ready] == ["nw-20261019-tiger-shroff-attack-probe"], notes
+    # Within CASE_GAP of the case's last Short, neither an angle nor a follow-up part of its story comes up.
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [cand], "errors": []})
+    just = (datetime.now(timezone.utc) - timedelta(minutes=10)).isoformat(timespec="seconds")
+    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack-chase", "published_at": just, "video_id": "C",
+                           "case": "tiger", "title": "पीछा"})
+    assert plan.watch(save=False)["candidates"] == []
 
 
 def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():
