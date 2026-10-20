@@ -1,62 +1,6 @@
 {
- "at": "2026-10-20T08:15:30+00:00",
+ "at": "2026-10-20T09:00:20+00:00",
  "trending": [
-  {
-   "qid": "Q141615137",
-   "title": "2026 French student protests",
-   "fame": 251742,
-   "views": 101742,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-10-20T07:56:54+00:00",
-   "headlines": [
-    "Police ‘lost control’ during French protests, says Interior Minister",
-    "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19",
-    "google-news:Police ‘lost control’ during French protests, says Interior Minister",
-    "google-news:French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
-     "url": "https://www.theguardian.com/world/live/2026/oct/20/france-protests-paris-curfews-italy-europe-ukraine-latest-news-updates",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-20T07:56:54+00:00"
-    }
-   ],
-   "id": "wk-Q141615137-2026w43",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-20",
-   "coords": null,
-   "has_coords": true,
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "Police ‘lost control’ during French protests, says Interior Minister"
-   ]
-  },
   {
    "id": "kh-20261020-Q324546",
    "qid": "Q324546",
@@ -83,8 +27,8 @@
     "India Today Group",
     "HT Media"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -159,16 +103,351 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
-    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio",
+    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 2
+   },
+   "top_score": 1.035,
+   "top_headlines": [
+    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+    "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+   ]
+  },
+  {
+   "qid": "Q141615137",
+   "title": "2026 French student protests",
+   "fame": 276742,
+   "views": 101742,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-10-20T08:58:26+00:00",
+   "headlines": [
+    "Police ‘lost control’ during French protests, says Interior Minister",
+    "Suspect arrested after historic town hall set alight during disorder - French media",
+    "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-19",
+    "google-news:Police ‘lost control’ during French protests, says Interior Minister",
+    "google-news:Suspect arrested after historic town hall set alight during disorder - French media",
+    "google-news:French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
+    "outlet:BBC",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "BBC",
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Suspect arrested after historic town hall set alight during disorder - French media",
+     "url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-20T08:58:26+00:00"
+    },
+    {
+     "title": "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
+     "url": "https://www.theguardian.com/world/live/2026/oct/20/france-protests-paris-curfews-italy-europe-ukraine-latest-news-updates",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-20T08:29:13+00:00"
+    }
+   ],
+   "id": "wk-Q141615137-2026w43",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-10-20",
+   "coords": null,
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
+  },
+  {
+   "id": "kh-20261020-Q139857349",
+   "qid": "Q139857349",
+   "title": "Cockroach Janta Party",
+   "name": "Cockroach Janta Party",
+   "phrase": "CJP",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+   "story_keys": [
+    "custody",
+    "deliberately",
+    "extended",
+    "judicial",
+    "remain",
+    "two"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T08:22:23+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+    "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+    "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+    "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
+    "CJP: Dipke fights on as 2 leaders remain in custody"
+   ],
+   "hindi_headlines": [
+    "कॉकरोच जनता पार्टी को लगा झटका, अभी तिहाड़ से नहीं छूटेंगे सौरव दास और आशुतोष रांका, 2 दिन बढ़ी हिरासत"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कॉकरोच जनता पार्टी",
+   "reports": [
+    {
+     "title": "'People will troll, but emotions are my strength': Abhijeet Dipke as CJP colleagues remain in judicial custody",
+     "url": "https://www.hindustantimes.com/india-news/people-will-troll-but-emotions-are-my-strength-abhijeet-dipke-as-cjp-saurav-das-ranka-remain-in-judicial-custody-101792483968706.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:22:23+00:00"
+    },
+    {
+     "title": "CJP: Dipke fights on as 2 leaders remain in custody",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/cockroach-janta-partys-current-status-founder-abhijeet-dipke-tries-to-hold-ground-as-saurav-das-ashutosh-ranka-remain-in-custody/articleshow/135063162.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:01:56+00:00"
+    },
+    {
+     "title": "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
+     "url": "https://www.news18.com/india/no-respect-court-says-cjps-saurav-das-ashutosh-ranka-deliberately-breached-bonds-ws-l-10389445.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T23:55:56+00:00"
+    },
+    {
+     "title": "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+     "url": "https://www.news18.com/india/farce-cjp-reacts-to-extension-of-ashutosh-ranka-saurav-das-judicial-custody-10389352.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:45:12+00:00"
+    },
+    {
+     "title": "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+     "url": "https://www.hindustantimes.com/india-news/cjps-abhijeet-dipke-targets-pm-modi-over-extended-custody-of-saurav-das-ashutosh-ranka-101792424130812.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:07:10+00:00"
+    },
+    {
+     "title": "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+     "url": "https://www.news18.com/videos/india/breaking-judicial-custody-of-cjp-s-saurav-das-ashutosh-ranka-extended-by-two-days-news18-10389290.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T14:59:01+00:00"
+    },
+    {
+     "title": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+     "url": "https://www.hindustantimes.com/india-news/cjp-leaders-saurav-das-ashutosh-ranka-s-judicial-custody-extended-by-two-days-as-delhi-police-cite-peace-tranquillity-concerns-101792417564728.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T13:52:36+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days",
+    "google-news:Modi is the Biggest Coward India Has Seen, Unfortunate He is PM: Abhijeet Dipke, CJP",
+    "google-news:'Lawrence Bishnoi Sahab': CJP's Dipke slams Delhi Police over 'respect for gangsters'"
+   ],
+   "top": {
+    "IN": 3,
+    "IN-nation": 5
+   },
+   "top_score": 1.14,
+   "top_headlines": [
+    "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q139762081",
+   "qid": "Q139762081",
+   "title": "New Zealand–India Free Trade Agreement",
+   "name": "New Zealand–India Free Trade Agreement",
+   "phrase": "India-New Zealand FTA",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+   "story_keys": [
+    "access",
+    "agreement",
+    "come",
+    "effect",
+    "export",
+    "force",
+    "free",
+    "gain",
+    "india-new",
+    "take",
+    "tariff",
+    "today",
+    "trade",
+    "zero-duty"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T08:47:30+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+    "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+    "India-New Zealand FTA comes into effect today",
+    "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+    "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+     "url": "https://www.thehindu.com/business/Economy/india-new-zealand-fta-comes-into-force-october-20-2026/article71603429.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:47:30+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-comes-into-effect-says-pm-christopher-luxon-big-day-for-kiwi-exporters-reduced-tariffs-11792484736365.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:30:44+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+     "url": "https://www.news18.com/world/india-new-zealand-fta-takes-effect-today-gives-all-indian-goods-zero-duty-access-ws-lrt-10389507.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T03:46:57+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA comes into effect today",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-new-zealand-fta-comes-into-effect-today/articleshow/135054951.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T18:32:31+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access",
+     "url": "https://www.livemint.com/economy/indianew-zealand-fta-no-tariff-on-indian-exports-from-oct-20-textile-pharma-leather-exports-to-gain-market-access-11792426906148.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:29:00+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-to-enter-into-force-on-oct-20-labour-intensive-sectors-to-be-key-beneficiaries-goyal-11792419126336.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T15:34:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 4
    },
-   "top_score": 1.285,
+   "top_score": 1.255,
    "top_headlines": [
-    "US ‘very close’ to finalising trade deal with India, says Marco Rubio",
-    "Rubio kicks off India visit with trade deal, Russian oil on agenda"
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
    ]
   },
   {
@@ -190,7 +469,6 @@
     "man",
     "nabs",
     "object",
-    "spotted",
     "station",
     "suspiciou"
    ],
@@ -200,11 +478,10 @@
     "HT Media",
     "Network18",
     "The Hindu Group",
-    "India Today Group",
     "Bennett, Coleman & Co."
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -212,8 +489,8 @@
     "Delhi Metro Passenger Tries To Flee After X-Ray Machine Flags Suspicious Object, CISF Nabs Him",
     "CISF jawan nabs ‘suspicious’ man in escalator-stairs chase at Delhi Metro station",
     "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
-    "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-    "CISF nabs man carrying gold paste at Delhi Metro"
+    "CISF nabs man carrying gold paste at Delhi Metro",
+    "CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -233,16 +510,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-20T04:47:17+00:00"
-    },
-    {
-     "title": "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-     "url": "https://www.indiatoday.in/trending-news/story/cisf-officer-nabs-fleeing-passenger-at-delhi-metro-station-after-scanner-flags-suspicious-object-3021117-2026-10-20?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:01:24+00:00"
     },
     {
      "title": "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
@@ -289,7 +556,6 @@
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:The Hindu Group",
-    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "google-news:CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
    ],
@@ -298,87 +564,88 @@
    "top_headlines": []
   },
   {
-   "id": "kh-20261020-Q111",
-   "qid": "Q111",
-   "title": "Mars",
-   "name": "Mars",
-   "phrase": "Mars",
+   "id": "kh-20261020-Q1951",
+   "qid": "Q1951",
+   "title": "Alberta",
+   "name": "Alberta",
+   "phrase": "Alberta",
    "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Japan launches historic mission to bring back Mars moon samples",
+   "story": "Alberta rejects separation push in boost to Carney",
    "story_keys": [
-    "launche",
-    "mission",
-    "moon"
+    "reject",
+    "separation"
    ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T04:08:33+00:00",
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T06:37:00+00:00",
    "owners": [
-    "BBC",
+    "Deutsche Welle",
     "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
+    "HT Media"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Japan launches historic mission to bring back Mars moon samples",
-    "Mission blasts off for Mars to grab a piece of its moon",
-    "Japan launches spacecraft to moons of Mars",
-    "Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
+    "Alberta rejects separation push in boost to Carney",
+    "Canada: Alberta rejects separation bid, CBC projects",
+    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": "मंगल ग्रह",
+   "label_hi": "अल्बर्टा",
    "reports": [
     {
-     "title": "Mission blasts off for Mars to grab a piece of its moon",
-     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
+     "title": "Canada: Alberta rejects separation bid, CBC projects",
+     "url": "https://www.dw.com/en/canada-alberta-rejects-separation-bid-cbc-projects/a-79708520?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-19T19:45:46+00:00"
+     "at": "2026-10-20T06:13:00+00:00"
     },
     {
-     "title": "Japan launches historic mission to bring back Mars moon samples",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
+     "url": "https://www.livemint.com/news/world/oilrich-alberta-reject-leaving-canada-why-the-referendum-matters-what-it-mean-for-carney-amid-trumps-trade-war-11792475659919.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:08:33+00:00"
+     "at": "2026-10-20T06:37:00+00:00"
     },
     {
-     "title": "Japan launches spacecraft to moons of Mars",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
+     "title": "Alberta rejects separation push in boost to Carney",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/alberta-rejects-independence-amid-trumps-threats-major-victory-for-prime-minister-carney-alberta-independence-vote-canada-mark-carney-trump-donald-trump/articleshow/135062436.cms",
      "outlet": "The Economic Times",
      "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T19:47:49+00:00"
+     "at": "2026-10-20T06:27:03+00:00"
     }
    ],
    "via": [
-    "outlet:BBC",
+    "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "google-news:Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "google-news:Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
+    "outlet:HT Media",
+    "google-news:Oil-rich Alberta votes on Canada separation: All you need to know"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
+   ]
   },
   {
    "id": "nw-20261019-tiger-shroff-attack",
@@ -404,7 +671,7 @@
     "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
     "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
     "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
-    "Bike used for firing at Tiger Shroff recovered by police, two detained"
+    "'Perpetrators Operating From Outside Maharashtra, India': Fadnavis Vows Strict Action In Tiger Shroff Shooting Case"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -506,14 +773,103 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-nation": 1
    },
-   "top_score": 1.2,
+   "top_score": 1.15,
    "top_headlines": [
-    "'Whole World Loves Jackie Dada And Tiger': Suniel Shetty Reacts To Tiger Shroff Shooting Case",
-    "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities"
+    "Tiger Shroff attack: Mumbai Police team leaves Kota with three alleged assailants",
+    "Overseas Job, More Money: What Was Promised To Tiger Shroff Attackers"
    ]
+  },
+  {
+   "id": "kh-20261020-Q407343",
+   "qid": "Q407343",
+   "title": "Air India Express",
+   "name": "Air India Express",
+   "phrase": "Air India Express",
+   "person": false,
+   "kind": "explainer",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+   "story_keys": [
+    "air",
+    "bird",
+    "flight",
+    "land",
+    "safely",
+    "strike",
+    "suffer"
+   ],
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T08:11:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "HT Media",
+    "Network18"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+    "Air India Express flight to Blr suffers bird strike",
+    "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely"
+   ],
+   "hindi_headlines": [
+    "बेंगलुरु जा रही एयर इंडिया एक्सप्रेस की फ्लाइट से टकराया पक्षी, 148 यात्री थे सवार"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एयर इंडिया एक्सप्रेस",
+   "reports": [
+    {
+     "title": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+     "url": "https://www.hindustantimes.com/india-news/air-india-express-flight-suffers-bird-strike-lands-safely-at-bengaluru-airport-101792482358511.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:11:57+00:00"
+    },
+    {
+     "title": "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely",
+     "url": "https://www.ndtv.com/bangalore-news/bengaluru-bound-air-india-express-flight-hit-by-bird-lands-safely-12209177#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:31:23+00:00"
+    },
+    {
+     "title": "Air India Express flight to Blr suffers bird strike",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-express-flight-from-vizag-to-bengaluru-suffers-bird-strike/articleshow/135063962.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:28:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "qid": "Q1889124",
@@ -539,84 +895,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "kh-20261020-Q1951",
-   "qid": "Q1951",
-   "title": "Alberta",
-   "name": "Alberta",
-   "phrase": "Alberta",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Alberta rejects separation push in boost to Carney",
-   "story_keys": [
-    "reject",
-    "separation"
-   ],
-   "date": "2026-10-20",
-   "news_at": "2026-10-20T06:37:00+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Alberta rejects separation push in boost to Carney",
-    "Canada: Alberta rejects separation bid, CBC projects",
-    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "अल्बर्टा",
-   "reports": [
-    {
-     "title": "Canada: Alberta rejects separation bid, CBC projects",
-     "url": "https://www.dw.com/en/canada-alberta-rejects-separation-bid-cbc-projects/a-79708520?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-20T06:13:00+00:00"
-    },
-    {
-     "title": "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
-     "url": "https://www.livemint.com/news/world/oilrich-alberta-reject-leaving-canada-why-the-referendum-matters-what-it-mean-for-carney-amid-trumps-trade-war-11792475659919.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T06:37:00+00:00"
-    },
-    {
-     "title": "Alberta rejects separation push in boost to Carney",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/alberta-rejects-independence-amid-trumps-threats-major-victory-for-prime-minister-carney-alberta-independence-vote-canada-mark-carney-trump-donald-trump/articleshow/135062436.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T06:27:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media"
-   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -675,52 +953,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q141718063",
-   "title": "Parvinder Singh Jhota",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-20T05:09:13+00:00",
-   "headlines": [
-    "Parvinder Singh Jhota murder probe to be handed over to CBI: Bhagwant Mann"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Parvinder Singh Jhota murder probe to be handed over to CBI: Bhagwant Mann",
-    "outlet:The Hindu Group"
-   ],
-   "owners": [
-    "The Hindu Group"
-   ],
-   "reports": [
-    {
-     "title": "Parvinder Singh Jhota murder probe to be handed over to CBI: Bhagwant Mann",
-     "url": "https://www.thehindu.com/news/national/punjab/parvinder-singh-jhota-murder-probe-cbi-bhagwant-mann/article71603327.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T05:09:13+00:00"
-    }
-   ],
-   "id": "wk-Q141718063",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-13",
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -785,103 +1017,104 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
-  },
-  {
-   "qid": "Q3837943",
-   "title": "Lua Blanco",
-   "fame": 12669,
-   "views": 12669,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q3837943",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q438492",
-   "title": "Michael Forest",
-   "fame": 9607,
-   "views": 9607,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q438492",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q7045350",
-   "title": "Noah Adams",
-   "fame": 7854,
-   "views": 7854,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7045350",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-16",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
   }
  ],
  "candidates": [
   {
+   "id": "kh-20261020-Q1951",
+   "qid": "Q1951",
+   "title": "Alberta",
+   "name": "Alberta",
+   "phrase": "Alberta",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Alberta rejects separation push in boost to Carney",
+   "story_keys": [
+    "reject",
+    "separation"
+   ],
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T06:37:00+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Alberta rejects separation push in boost to Carney",
+    "Canada: Alberta rejects separation bid, CBC projects",
+    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "अल्बर्टा",
+   "reports": [
+    {
+     "title": "Canada: Alberta rejects separation bid, CBC projects",
+     "url": "https://www.dw.com/en/canada-alberta-rejects-separation-bid-cbc-projects/a-79708520?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-20T06:13:00+00:00"
+    },
+    {
+     "title": "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
+     "url": "https://www.livemint.com/news/world/oilrich-alberta-reject-leaving-canada-why-the-referendum-matters-what-it-mean-for-carney-amid-trumps-trade-war-11792475659919.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T06:37:00+00:00"
+    },
+    {
+     "title": "Alberta rejects separation push in boost to Carney",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/alberta-rejects-independence-amid-trumps-threats-major-victory-for-prime-minister-carney-alberta-independence-vote-canada-mark-carney-trump-donald-trump/articleshow/135062436.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T06:27:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "google-news:Oil-rich Alberta votes on Canada separation: All you need to know"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
+   ]
+  },
+  {
    "qid": "Q141615137",
    "title": "2026 French student protests",
-   "fame": 251742,
+   "fame": 276742,
    "views": 101742,
    "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-10-20T07:56:54+00:00",
+   "news": 175000,
+   "news_at": "2026-10-20T08:58:26+00:00",
    "headlines": [
     "Police ‘lost control’ during French protests, says Interior Minister",
+    "Suspect arrested after historic town hall set alight during disorder - French media",
     "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live"
    ],
    "hindi_news": 0,
@@ -896,13 +1129,26 @@
    "via": [
     "wikipedia-top-2026-10-19",
     "google-news:Police ‘lost control’ during French protests, says Interior Minister",
+    "google-news:Suspect arrested after historic town hall set alight during disorder - French media",
     "google-news:French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
+    "outlet:BBC",
     "outlet:Guardian Media Group"
    ],
    "owners": [
+    "BBC",
     "Guardian Media Group"
    ],
    "reports": [
+    {
+     "title": "Suspect arrested after historic town hall set alight during disorder - French media",
+     "url": "https://www.bbc.co.uk/news/articles/cw5yn5e8mezvo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-20T08:58:26+00:00"
+    },
     {
      "title": "French cities ‘calm overnight’ after targeted curfews, prime minister says – Europe live",
      "url": "https://www.theguardian.com/world/live/2026/oct/20/france-protests-paris-curfews-italy-europe-ukraine-latest-news-updates",
@@ -911,7 +1157,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-10-20T07:56:54+00:00"
+     "at": "2026-10-20T08:29:13+00:00"
     }
    ],
    "id": "wk-Q141615137-2026w43",
@@ -920,13 +1166,9 @@
    "date": "2026-10-20",
    "coords": null,
    "has_coords": true,
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "Police ‘lost control’ during French protests, says Interior Minister"
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "id": "kh-20261020-Q324546",
@@ -954,8 +1196,8 @@
     "India Today Group",
     "HT Media"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1030,17 +1272,107 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
-    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio",
+    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
    ],
    "top": {
-    "IN": 1,
+    "IN": 6,
     "IN-nation": 2
    },
-   "top_score": 1.285,
+   "top_score": 1.035,
    "top_headlines": [
-    "US ‘very close’ to finalising trade deal with India, says Marco Rubio",
-    "Rubio kicks off India visit with trade deal, Russian oil on agenda"
+    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+    "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
    ]
+  },
+  {
+   "id": "kh-20261020-Q407343",
+   "qid": "Q407343",
+   "title": "Air India Express",
+   "name": "Air India Express",
+   "phrase": "Air India Express",
+   "person": false,
+   "kind": "explainer",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+   "story_keys": [
+    "air",
+    "bird",
+    "flight",
+    "land",
+    "safely",
+    "strike",
+    "suffer"
+   ],
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T08:11:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "HT Media",
+    "Network18"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+    "Air India Express flight to Blr suffers bird strike",
+    "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely"
+   ],
+   "hindi_headlines": [
+    "बेंगलुरु जा रही एयर इंडिया एक्सप्रेस की फ्लाइट से टकराया पक्षी, 148 यात्री थे सवार"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एयर इंडिया एक्सप्रेस",
+   "reports": [
+    {
+     "title": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+     "url": "https://www.hindustantimes.com/india-news/air-india-express-flight-suffers-bird-strike-lands-safely-at-bengaluru-airport-101792482358511.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:11:57+00:00"
+    },
+    {
+     "title": "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely",
+     "url": "https://www.ndtv.com/bangalore-news/bengaluru-bound-air-india-express-flight-hit-by-bird-lands-safely-12209177#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:31:23+00:00"
+    },
+    {
+     "title": "Air India Express flight to Blr suffers bird strike",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-express-flight-from-vizag-to-bengaluru-suffers-bird-strike/articleshow/135063962.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:28:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "id": "nw-20261019-tiger-shroff-attack",
@@ -1066,7 +1398,7 @@
     "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
     "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
     "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
-    "Bike used for firing at Tiger Shroff recovered by police, two detained"
+    "'Perpetrators Operating From Outside Maharashtra, India': Fadnavis Vows Strict Action In Tiger Shroff Shooting Case"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1168,177 +1500,147 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-nation": 1
    },
-   "top_score": 1.2,
+   "top_score": 1.15,
    "top_headlines": [
-    "'Whole World Loves Jackie Dada And Tiger': Suniel Shetty Reacts To Tiger Shroff Shooting Case",
-    "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities"
+    "Tiger Shroff attack: Mumbai Police team leaves Kota with three alleged assailants",
+    "Overseas Job, More Money: What Was Promised To Tiger Shroff Attackers"
    ],
    "replaces": "zl1DewTqnP8",
    "remake_of": "nw-20261018-tiger-shroff-attack"
   },
   {
-   "id": "kh-20261020-Q1951",
-   "qid": "Q1951",
-   "title": "Alberta",
-   "name": "Alberta",
-   "phrase": "Alberta",
+   "id": "kh-20261020-Q139762081",
+   "qid": "Q139762081",
+   "title": "New Zealand–India Free Trade Agreement",
+   "name": "New Zealand–India Free Trade Agreement",
+   "phrase": "India-New Zealand FTA",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Alberta rejects separation push in boost to Carney",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
    "story_keys": [
-    "reject",
-    "separation"
-   ],
-   "date": "2026-10-20",
-   "news_at": "2026-10-20T06:37:00+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Alberta rejects separation push in boost to Carney",
-    "Canada: Alberta rejects separation bid, CBC projects",
-    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "अल्बर्टा",
-   "reports": [
-    {
-     "title": "Canada: Alberta rejects separation bid, CBC projects",
-     "url": "https://www.dw.com/en/canada-alberta-rejects-separation-bid-cbc-projects/a-79708520?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-20T06:13:00+00:00"
-    },
-    {
-     "title": "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
-     "url": "https://www.livemint.com/news/world/oilrich-alberta-reject-leaving-canada-why-the-referendum-matters-what-it-mean-for-carney-amid-trumps-trade-war-11792475659919.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T06:37:00+00:00"
-    },
-    {
-     "title": "Alberta rejects separation push in boost to Carney",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/alberta-rejects-independence-amid-trumps-threats-major-victory-for-prime-minister-carney-alberta-independence-vote-canada-mark-carney-trump-donald-trump/articleshow/135062436.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T06:27:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "kh-20261020-Q111",
-   "qid": "Q111",
-   "title": "Mars",
-   "name": "Mars",
-   "phrase": "Mars",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Japan launches historic mission to bring back Mars moon samples",
-   "story_keys": [
-    "launche",
-    "mission",
-    "moon"
+    "access",
+    "agreement",
+    "come",
+    "effect",
+    "export",
+    "force",
+    "free",
+    "gain",
+    "india-new",
+    "take",
+    "tariff",
+    "today",
+    "trade",
+    "zero-duty"
    ],
    "date": "2026-10-19",
-   "news_at": "2026-10-20T04:08:33+00:00",
+   "news_at": "2026-10-20T08:47:30+00:00",
    "owners": [
-    "BBC",
+    "HT Media",
     "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
+    "Network18",
+    "The Hindu Group"
    ],
    "fame": 225000,
    "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Japan launches historic mission to bring back Mars moon samples",
-    "Mission blasts off for Mars to grab a piece of its moon",
-    "Japan launches spacecraft to moons of Mars",
-    "Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
+    "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+    "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+    "India-New Zealand FTA comes into effect today",
+    "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+    "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": "मंगल ग्रह",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Mission blasts off for Mars to grab a piece of its moon",
-     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
+     "title": "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+     "url": "https://www.thehindu.com/business/Economy/india-new-zealand-fta-comes-into-force-october-20-2026/article71603429.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T19:45:46+00:00"
+     "at": "2026-10-20T08:47:30+00:00"
     },
     {
-     "title": "Japan launches historic mission to bring back Mars moon samples",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-comes-into-effect-says-pm-christopher-luxon-big-day-for-kiwi-exporters-reduced-tariffs-11792484736365.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-20T04:08:33+00:00"
+     "at": "2026-10-20T08:30:44+00:00"
     },
     {
-     "title": "Japan launches spacecraft to moons of Mars",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
+     "title": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+     "url": "https://www.news18.com/world/india-new-zealand-fta-takes-effect-today-gives-all-indian-goods-zero-duty-access-ws-lrt-10389507.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T03:46:57+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA comes into effect today",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-new-zealand-fta-comes-into-effect-today/articleshow/135054951.cms",
      "outlet": "The Economic Times",
      "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-19T19:47:49+00:00"
+     "at": "2026-10-19T18:32:31+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access",
+     "url": "https://www.livemint.com/economy/indianew-zealand-fta-no-tariff-on-indian-exports-from-oct-20-textile-pharma-leather-exports-to-gain-market-access-11792426906148.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:29:00+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-to-enter-into-force-on-oct-20-labour-intensive-sectors-to-be-key-beneficiaries-goyal-11792419126336.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T15:34:56+00:00"
     }
    ],
    "via": [
-    "outlet:BBC",
+    "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "google-news:Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "google-news:Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
+   "top": {
+    "IN": 1,
+    "IN-nation": 4
+   },
+   "top_score": 1.255,
+   "top_headlines": [
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
+   ]
   },
   {
    "qid": null,
@@ -1397,54 +1699,25 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
-  },
-  {
-   "qid": "Q7045350",
-   "title": "Noah Adams",
-   "fame": 7854,
-   "views": 7854,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-19"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7045350",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-16",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
   }
  ],
  "notes": [
-  "outlets: 1224 headlines from 30 feeds (19 owners), 7 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 4 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q3522926, kh-20261020-Q111, kh-20261020-Q1951; dropped: explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre; explainer Saurav Das Ashutosh / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer 'Saudi keen on ties with India on power grid systems': no name to tell it by",
+  "outlets: 1226 headlines from 30 feeds (19 owners), 9 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 6 kh- stories (on): kh-20261020-Q324546, kh-20261020-Q139857349, kh-20261020-Q139762081, kh-20261020-Q3522926; dropped: explainer Zelenskyy: fewer than 3 owners' headlines name it and the story; explainer Mohan Bhagwat: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
-  "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
-  "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
-  "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again"
+  "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1224,
+  "headlines": 1226,
   "feeds": 30,
   "owners": 19,
-  "matched": 7,
-  "corroborated": 5
+  "matched": 9,
+  "corroborated": 8
  },
  "emerging": [
   {
@@ -1471,7 +1744,7 @@
     "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
     "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
     "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
-    "Bike used for firing at Tiger Shroff recovered by police, two detained"
+    "'Perpetrators Operating From Outside Maharashtra, India': Fadnavis Vows Strict Action In Tiger Shroff Shooting Case"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1573,13 +1846,13 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-nation": 1
    },
-   "top_score": 1.2,
+   "top_score": 1.15,
    "top_headlines": [
-    "'Whole World Loves Jackie Dada And Tiger': Suniel Shetty Reacts To Tiger Shroff Shooting Case",
-    "Salman Khan, Shah Rukh Khan To Tiger Shroff: Security Cover Of Bollywood Celebrities"
+    "Tiger Shroff attack: Mumbai Police team leaves Kota with three alleged assailants",
+    "Overseas Job, More Money: What Was Promised To Tiger Shroff Attackers"
    ]
   }
  ],
@@ -1610,8 +1883,8 @@
     "India Today Group",
     "HT Media"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1686,16 +1959,285 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
-    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+    "google-news:US ‘very close’ to finalising trade deal with India, says Marco Rubio",
+    "google-news:Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 2
+   },
+   "top_score": 1.035,
+   "top_headlines": [
+    "Marco Rubio To Begin 3-Day India Tour Today, Will Honour 26/11 Victims",
+    "US ‘very close’ to finalising trade deal with India, says Marco Rubio"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q139857349",
+   "qid": "Q139857349",
+   "title": "Cockroach Janta Party",
+   "name": "Cockroach Janta Party",
+   "phrase": "CJP",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+   "story_keys": [
+    "custody",
+    "deliberately",
+    "extended",
+    "judicial",
+    "remain",
+    "two"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T08:22:23+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+    "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+    "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+    "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+    "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
+    "CJP: Dipke fights on as 2 leaders remain in custody"
+   ],
+   "hindi_headlines": [
+    "कॉकरोच जनता पार्टी को लगा झटका, अभी तिहाड़ से नहीं छूटेंगे सौरव दास और आशुतोष रांका, 2 दिन बढ़ी हिरासत"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कॉकरोच जनता पार्टी",
+   "reports": [
+    {
+     "title": "'People will troll, but emotions are my strength': Abhijeet Dipke as CJP colleagues remain in judicial custody",
+     "url": "https://www.hindustantimes.com/india-news/people-will-troll-but-emotions-are-my-strength-abhijeet-dipke-as-cjp-saurav-das-ranka-remain-in-judicial-custody-101792483968706.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:22:23+00:00"
+    },
+    {
+     "title": "CJP: Dipke fights on as 2 leaders remain in custody",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/cockroach-janta-partys-current-status-founder-abhijeet-dipke-tries-to-hold-ground-as-saurav-das-ashutosh-ranka-remain-in-custody/articleshow/135063162.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:01:56+00:00"
+    },
+    {
+     "title": "'No Respect For Law': Court Says CJP's Saurav Das, Ashutosh Ranka 'Deliberately Breached' Bonds",
+     "url": "https://www.news18.com/india/no-respect-court-says-cjps-saurav-das-ashutosh-ranka-deliberately-breached-bonds-ws-l-10389445.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T23:55:56+00:00"
+    },
+    {
+     "title": "‘Farce’: CJP Reacts To Extension Of Ashutosh Ranka, Saurav Das' Judicial Custody",
+     "url": "https://www.news18.com/india/farce-cjp-reacts-to-extension-of-ashutosh-ranka-saurav-das-judicial-custody-10389352.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:45:12+00:00"
+    },
+    {
+     "title": "CJP's Abhijeet Dipke targets PM Modi over extended custody of Saurav Das, Ashutosh Ranka",
+     "url": "https://www.hindustantimes.com/india-news/cjps-abhijeet-dipke-targets-pm-modi-over-extended-custody-of-saurav-das-ashutosh-ranka-101792424130812.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:07:10+00:00"
+    },
+    {
+     "title": "BREAKING: Judicial Custody Of CJP's Saurav Das, Ashutosh Ranka Extended By Two Days | News18",
+     "url": "https://www.news18.com/videos/india/breaking-judicial-custody-of-cjp-s-saurav-das-ashutosh-ranka-extended-by-two-days-news18-10389290.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T14:59:01+00:00"
+    },
+    {
+     "title": "CJP leaders Saurav Das, Ashutosh Ranka’s judicial custody extended by two days; Delhi Police cite ‘peace, tranquillity’ concerns",
+     "url": "https://www.hindustantimes.com/india-news/cjp-leaders-saurav-das-ashutosh-ranka-s-judicial-custody-extended-by-two-days-as-delhi-police-cite-peace-tranquillity-concerns-101792417564728.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T13:52:36+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days",
+    "google-news:Modi is the Biggest Coward India Has Seen, Unfortunate He is PM: Abhijeet Dipke, CJP",
+    "google-news:'Lawrence Bishnoi Sahab': CJP's Dipke slams Delhi Police over 'respect for gangsters'"
+   ],
+   "top": {
+    "IN": 3,
+    "IN-nation": 5
+   },
+   "top_score": 1.14,
+   "top_headlines": [
+    "Executive Magistrate Extends Custody Of CJP Leaders Saurav Das, Ashutosh Ranka By Two Days"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q139762081",
+   "qid": "Q139762081",
+   "title": "New Zealand–India Free Trade Agreement",
+   "name": "New Zealand–India Free Trade Agreement",
+   "phrase": "India-New Zealand FTA",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+   "story_keys": [
+    "access",
+    "agreement",
+    "come",
+    "effect",
+    "export",
+    "force",
+    "free",
+    "gain",
+    "india-new",
+    "take",
+    "tariff",
+    "today",
+    "trade",
+    "zero-duty"
+   ],
+   "date": "2026-10-19",
+   "news_at": "2026-10-20T08:47:30+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+    "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+    "India-New Zealand FTA comes into effect today",
+    "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+    "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports",
+     "url": "https://www.thehindu.com/business/Economy/india-new-zealand-fta-comes-into-force-october-20-2026/article71603429.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:47:30+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA comes into effect, says PM Christopher Luxon: ‘Big day for Kiwi exporters’, reduced tariffs",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-comes-into-effect-says-pm-christopher-luxon-big-day-for-kiwi-exporters-reduced-tariffs-11792484736365.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:30:44+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA Takes Effect Today, Gives All Indian Goods Zero-Duty Access",
+     "url": "https://www.news18.com/world/india-new-zealand-fta-takes-effect-today-gives-all-indian-goods-zero-duty-access-ws-lrt-10389507.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T03:46:57+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA comes into effect today",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-new-zealand-fta-comes-into-effect-today/articleshow/135054951.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T18:32:31+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA: No tariff on Indian exports from Oct 20; Textile, pharma, leather exports to gain market access",
+     "url": "https://www.livemint.com/economy/indianew-zealand-fta-no-tariff-on-indian-exports-from-oct-20-textile-pharma-leather-exports-to-gain-market-access-11792426906148.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T16:29:00+00:00"
+    },
+    {
+     "title": "India-New Zealand FTA to come into force on 20 Oct: Piyush Goyal",
+     "url": "https://www.livemint.com/news/india/indianew-zealand-fta-to-enter-into-force-on-oct-20-labour-intensive-sectors-to-be-key-beneficiaries-goyal-11792419126336.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-19T15:34:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 4
    },
-   "top_score": 1.285,
+   "top_score": 1.255,
    "top_headlines": [
-    "US ‘very close’ to finalising trade deal with India, says Marco Rubio",
-    "Rubio kicks off India visit with trade deal, Russian oil on agenda"
+    "India-New Zealand FTA comes into force; new visa categories for Indians, zero-duty access for exports"
    ]
   },
   {
@@ -1717,7 +2259,6 @@
     "man",
     "nabs",
     "object",
-    "spotted",
     "station",
     "suspiciou"
    ],
@@ -1727,11 +2268,10 @@
     "HT Media",
     "Network18",
     "The Hindu Group",
-    "India Today Group",
     "Bennett, Coleman & Co."
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1739,8 +2279,8 @@
     "Delhi Metro Passenger Tries To Flee After X-Ray Machine Flags Suspicious Object, CISF Nabs Him",
     "CISF jawan nabs ‘suspicious’ man in escalator-stairs chase at Delhi Metro station",
     "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
-    "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-    "CISF nabs man carrying gold paste at Delhi Metro"
+    "CISF nabs man carrying gold paste at Delhi Metro",
+    "CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1760,16 +2300,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-20T04:47:17+00:00"
-    },
-    {
-     "title": "CISF officer nabs fleeing man at Delhi Metro station after suspicious object spotted",
-     "url": "https://www.indiatoday.in/trending-news/story/cisf-officer-nabs-fleeing-passenger-at-delhi-metro-station-after-scanner-flags-suspicious-object-3021117-2026-10-20?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T03:01:24+00:00"
     },
     {
      "title": "Man Caught By CISF Jawan In Dramatic Delhi Metro Chase Had 155g Of Suspected Powdered Gold",
@@ -1816,92 +2346,8 @@
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:The Hindu Group",
-    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "google-news:CISF personnel nabs man attempting to flee Delhi's Jama Masjid metro station after suspicious object spotted during checking | India News"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "kh-20261020-Q111",
-   "qid": "Q111",
-   "title": "Mars",
-   "name": "Mars",
-   "phrase": "Mars",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Japan launches historic mission to bring back Mars moon samples",
-   "story_keys": [
-    "launche",
-    "mission",
-    "moon"
-   ],
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T04:08:33+00:00",
-   "owners": [
-    "BBC",
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Japan launches historic mission to bring back Mars moon samples",
-    "Mission blasts off for Mars to grab a piece of its moon",
-    "Japan launches spacecraft to moons of Mars",
-    "Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "मंगल ग्रह",
-   "reports": [
-    {
-     "title": "Mission blasts off for Mars to grab a piece of its moon",
-     "url": "https://www.bbc.co.uk/news/articles/cmvgxvkv54w1o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-19T19:45:46+00:00"
-    },
-    {
-     "title": "Japan launches historic mission to bring back Mars moon samples",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/20/japan-launches-historic-mission-to-bring-back-mars-moon-samples?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-20T04:08:33+00:00"
-    },
-    {
-     "title": "Japan launches spacecraft to moons of Mars",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/japan-launches-spacecraft-to-mysterious-moons-of-mars-in-a-bold-mission-to-bring-home-soil-samples/articleshow/135055931.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-19T19:47:49+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "google-news:Japan Launches Spacecraft to Mysterious Moons of Mars",
-    "google-news:Second Crew of Mars Astronauts NASA Locked Up for a Year Are Coming Out on October 31"
    ],
    "top": {},
    "top_score": 0.0,
@@ -1929,14 +2375,15 @@
     "Bennett, Coleman & Co.",
     "HT Media"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Alberta rejects separation push in boost to Carney",
     "Canada: Alberta rejects separation bid, CBC projects",
-    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?"
+    "Oil-rich Alberta rejects leaving Canada: Why the referendum matters? What it means for Carney amid Trump's trade war?",
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1979,7 +2426,101 @@
    "via": [
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media"
+    "outlet:HT Media",
+    "google-news:Oil-rich Alberta votes on Canada separation: All you need to know"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Oil-rich Alberta votes on Canada separation: All you need to know"
+   ]
+  },
+  {
+   "id": "kh-20261020-Q407343",
+   "qid": "Q407343",
+   "title": "Air India Express",
+   "name": "Air India Express",
+   "phrase": "Air India Express",
+   "person": false,
+   "kind": "explainer",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+   "story_keys": [
+    "air",
+    "bird",
+    "flight",
+    "land",
+    "safely",
+    "strike",
+    "suffer"
+   ],
+   "date": "2026-10-20",
+   "news_at": "2026-10-20T08:11:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "HT Media",
+    "Network18"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+    "Air India Express flight to Blr suffers bird strike",
+    "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely"
+   ],
+   "hindi_headlines": [
+    "बेंगलुरु जा रही एयर इंडिया एक्सप्रेस की फ्लाइट से टकराया पक्षी, 148 यात्री थे सवार"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एयर इंडिया एक्सप्रेस",
+   "reports": [
+    {
+     "title": "Air India Express flight suffers bird strike, lands safely at Bengaluru airport",
+     "url": "https://www.hindustantimes.com/india-news/air-india-express-flight-suffers-bird-strike-lands-safely-at-bengaluru-airport-101792482358511.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T08:11:57+00:00"
+    },
+    {
+     "title": "Bengaluru-Bound Air India Express Flight Hit By Bird, Lands Safely",
+     "url": "https://www.ndtv.com/bangalore-news/bengaluru-bound-air-india-express-flight-hit-by-bird-lands-safely-12209177#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:31:23+00:00"
+    },
+    {
+     "title": "Air India Express flight to Blr suffers bird strike",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/air-india-express-flight-from-vizag-to-bengaluru-suffers-bird-strike/articleshow/135063962.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T07:28:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:HT Media",
+    "outlet:Network18"
    ],
    "top": {},
    "top_score": 0.0,
