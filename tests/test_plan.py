@@ -235,7 +235,8 @@ def test_a_remake_comes_back_under_a_new_id_until_its_old_video_is_replaced(tmp_
     (tmp_path / "remakes").mkdir()
     (tmp_path / "remakes" / "tiger.json").write_text(json.dumps(
         {"story": "nw-20261018-tiger-shroff-attack", "replaces": "OLD", "until": "2099-01-01T00:00:00+00:00"}))
-    ledger.record_publish({"id": "nw-20261018-tiger-shroff-attack", "published_at": ledger.now(), "video_id": "OLD"})
+    ledger.record_publish({"id": "nw-20261018-tiger-shroff-attack", "published_at": "2026-10-20T02:08:25+00:00",
+                           "video_id": "OLD"})
     shifted = {"id": "nw-20261019-tiger-shroff-attack", "title": "Tiger Shroff attack", "category": "attack",
                "kind": "incident", "fame": 1}
     same = shifted | {"id": "nw-20261018-tiger-shroff-attack"}
@@ -252,7 +253,8 @@ def test_a_remake_comes_back_under_a_new_id_until_its_old_video_is_replaced(tmp_
         ready, _ = plan.lineup(found, utc(20, 8))
         assert ready[0]["id"] == new_id
 
-    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": ledger.now(), "replaces": "OLD"})
+    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": "2026-10-20T08:00:00+00:00",
+                           "replaces": "OLD"})
     assert plan.remakes() == []
     monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [shifted], "errors": []})
     assert plan.watch(save=False)["candidates"] == []
