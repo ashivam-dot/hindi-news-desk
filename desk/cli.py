@@ -205,7 +205,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             now = datetime.now(timezone.utc)
             pool = [c for c in found["candidates"] if not c.get("orbitwire")] or found["candidates"]
             ready = [c for c in sorted(pool, key=lambda c: -plan.priority(c, now))
-                     if not (plan.stale(c, now) or plan.unpopular(c, now))] or pool
+                     if c.get("case") or not (plan.stale(c, now) or plan.unpopular(c, now))] or pool
+            ready.sort(key=lambda c: (not c.get("replaces"), not c.get("case")))  # as plan.lineup orders them
         if dry and config.DRY_KIND:
             ready = [c for c in found["candidates"] if c.get("kind") == config.DRY_KIND]
             health["steps"].append(f"dry run: only {config.DRY_KIND} candidates ({len(ready)})")

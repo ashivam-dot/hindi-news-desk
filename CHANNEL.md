@@ -186,7 +186,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     ahead of the other ready stories and inside the daily cap and the 20-minute gap. A case Short names only the
     people, places and bodies its file lists (`writer.off_case`): an accused is never named, only how many, where
     they are from, where they were caught and what police say. The file's `never` list (an accused's or a gang's
-    name, in English and Hindi) may not appear anywhere in the script, and headlines carrying one are dropped. Each
+    name, in English and Hindi) may not appear anywhere in the script, and headlines carrying one are dropped. Its
+    `status` says where the case stands now (an angle's reports may predate the arrests: the first dry run said
+    police were still searching, a day after all three were caught), and no angle may contradict it. Each
     angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
     so the angles keep coming until its `until` after the story leaves the radar;
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
@@ -239,7 +241,10 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     picture changes every 3-4 seconds (a beat longer than `compose.CUT_AFTER` cuts at a word boundary);
   - each beat shows the person or place it names: that person's own portrait with a red name pill, an
     OpenStreetMap map of the place (`नक्शा`, credited), a route map when it names two places, the city police for
-    a police beat; the same picture never closes one beat and opens the next (`desk/visuals.py`);
+    a police beat (an Indian story only: a case file sets `region`, as the radar called the Tiger story "world"
+    and the police photos were skipped), and for a landmark (a station, a hospital, a beach: a place with no
+    population) its own Commons photo before its map; up to five places; the same picture never closes one beat
+    and opens the next (`desk/visuals.py`);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
     place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
     street map, a city named again shows that spot rather than its centre, and a route line joins only places that
@@ -250,6 +255,19 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     used; an AI-made picture of a real incident is never used either. The incident is shown by its place on a map,
     the people in it and the police and officials who speak;
   - before a change to the pictures is merged, a dry run is made and its frames are looked at, every beat.
+- **Editing from the channels that work (owner, 2026-10-20: "take reference of famous AI news channels ... add some
+  positive skills while video editing").** A study of 47 Shorts on 16 channels (BBC Hindi, DW Hindi, Al Jazeera,
+  AJ+, RealLifeLore and others; archived as `news-presentation-study-2026-10-20`) found what the strongest share;
+  the bulletin now has:
+  - a hook card over the picture for the first 3.6 s (`scene.hook`, white box with a red offset shadow), a
+    statement and never a question; a case angle gives its own;
+  - a place stamp in the picture's top corner from the first second that follows the story's maps and landmarks
+    (Juhu, then Surat, then Kota Junction) and never gives "जुहू, मुंबई" away to the "मुंबई" it already names;
+  - a one-second opening flash of the Short's other pictures (3-5 at a fifth of a second, with an accent), never on
+    a loss story;
+  - "हर अपडेट के लिए चैनल फ़ॉलो करें" on the end card.
+  Next to build: a map built up layer by layer as the story moves (RealLifeLore), an attention ring on the detail
+  the voice names, and a two-panel split.
 - **Pictures:** at least three real, freely licensed photos and maps (photos from Wikimedia Commons: CC0, public domain, CC BY,
   CC BY-SA; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
   licence / Wikimedia Commons`) and in the description. For a person, every photo of a person must show them: their
