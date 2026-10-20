@@ -218,15 +218,22 @@ def hindi_names(ent: dict, pids: tuple[str, ...] = ("P17", "P27", "P19", "P20", 
     """English label -> Hindi label for the item and the items its main claims point at, where Wikidata has both:
     the Hindi spellings the writer must prefer."""
     out = {}
-    if label(ent) and label(ent, "hi"):
-        out[label(ent)] = label(ent, "hi")
+    if label(ent) and spoken_label(ent):
+        out[label(ent)] = spoken_label(ent)
     linked = list(dict.fromkeys(c["value"] for pid in pids for c in claims(ent, pid)[:4]
                                 if isinstance(c["value"], str) and re.fullmatch(r"Q\d+", c["value"])))[:60]
     for e in entities(linked).values() if linked else []:
-        en, hi = label(e), label(e, "hi")
+        en, hi = label(e), spoken_label(e)
         if en and hi and not re.fullmatch(r"Q\d+", hi):
             out.setdefault(en, hi)
     return out
+
+
+def spoken_label(ent: dict) -> str | None:
+    """The Hindi label without a trailing disambiguation, which is read aloud otherwise: "बाग़ी (2000 फ़िल्म)" is
+    बाग़ी (the Tiger Shroff remake, 2026-10-20)."""
+    hi = label(ent, "hi")
+    return re.sub(r"\s*\([^()]*\)\s*$", "", hi).strip() or hi if hi else hi
 
 
 DISAMBIGUATION = "Q4167410"
@@ -242,7 +249,7 @@ def hindi_spellings(names: list[str]) -> dict[str, str]:
     out = {}
     for n, q in qids.items():
         e = ents.get(q) or {}
-        hi = label(e, "hi")
+        hi = spoken_label(e)
         if hi and not re.fullmatch(r"Q\d+", hi) and DISAMBIGUATION not in {c["value"] for c in claims(e, "P31")}:
             out[n] = hi
     return out

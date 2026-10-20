@@ -93,6 +93,14 @@ def test_a_loose_link_never_chains_two_stories():
     assert sizes == [1, 2]
 
 
+def test_a_hindi_label_is_spoken_without_its_disambiguation():
+    from desk import wiki
+
+    assert wiki.spoken_label({"labels": {"hi": {"value": "बाग़ी (2000 फ़िल्म)"}}}) == "बाग़ी"
+    assert wiki.spoken_label({"labels": {"hi": {"value": "मुंबई पुलिस"}}}) == "मुंबई पुलिस"
+    assert wiki.spoken_label({"labels": {}}) is None
+
+
 def test_hindi_spellings_drop_abbreviation_dots_but_never_use_a_bare_surname():
     assert explain.hindi_names_of("एल. मुरुगन") == ["एल. मुरुगन", "एल मुरुगन"]
     assert explain.hindi_names_of("लद्दाख़") == ["लद्दाख़"]

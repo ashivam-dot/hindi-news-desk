@@ -70,7 +70,8 @@ REMAKES = Path(__file__).resolve().parents[1] / "remakes"
 
 def remakes(at: datetime | None = None) -> list[dict]:
     """Remake requests still current whose old video no published row has replaced yet. A request is
-    {"story": published id, "replaces": its YouTube id, "until": ISO time, "why": text}."""
+    {"story": published id, "replaces": its YouTube id, "until": ISO time, "why": text, optionally "draft": a
+    reviewed script the writer checks first}."""
     at = at or datetime.now(timezone.utc)
     done = {r.get("replaces") for r in ledger.published()}
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(REMAKES.glob("*.json"))]
@@ -83,7 +84,8 @@ def remake_of(cand: dict, specs: list[dict]) -> dict | None:
     for s in specs:
         if cand["id"] == s["story"] or outlets.same_story(cand["id"], s["story"]):
             new = cand["id"] + "-r2" if cand["id"] == s["story"] else cand["id"]
-            return cand | {"id": new, "replaces": s["replaces"], "remake_of": s["story"]}
+            return cand | {"id": new, "replaces": s["replaces"], "remake_of": s["story"]} \
+                | ({"draft": s["draft"]} if s.get("draft") else {})
     return None
 
 

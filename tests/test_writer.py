@@ -212,6 +212,18 @@ def write(verdicts, tmp_path, titles=()):
     return out, log, used
 
 
+def test_a_reviewed_draft_is_checked_first_and_never_rewritten_when_it_passes(tmp_path):
+    class NoWriting(FakePen):
+        def chat(self, messages, schema=None, **kw):
+            assert schema in (writer.CHECK_SCHEMA, writer.TITLE_SCHEMA), "wrote a new draft"
+            return super().chat(messages, schema, **kw)
+
+    given = draft()
+    out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                               log_path=tmp_path / "log.json", pen=NoWriting([[]]), start=given)
+    assert out["beats"] == given["beats"] and log == []
+
+
 def test_the_headline_editor_picks_the_first_simple_title(tmp_path):
     out, _, _ = write([[]], tmp_path, titles=["रमेश प्रसाद वर्मा का निधन, अन्तर्राष्ट्रीय पहचान वाले गायक थे",
                                               "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे",

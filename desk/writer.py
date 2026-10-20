@@ -633,11 +633,12 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           agreed_toll: bool = False, log_path: Path | None = None, headlines: list[str] | None = None,
           angle: str | None = None, pen: Pen | None = None,
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
-          earlier: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
+          earlier: list[str] | None = None, start: dict | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
-    lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part)."""
+    lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part).
+    start: a draft to check first (a remake's reviewed script); it faces every check a written draft does."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -671,7 +672,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     try:
         for attempt in range(DRAFTS):
             ignored = []
-            draft = pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
+            draft = json.loads(json.dumps(start)) if start and attempt == 0 else \
+                pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
                                           spellings(draft, hi_names, looked), banned_names or [],
                                           kind, agreed_toll, angle, reports)
@@ -1285,7 +1287,7 @@ def build_report(cand: dict) -> Short:
     angle = ov["angle"] if ov else None
     draft, log, used = write(kind, subject, "It", facts_text, "", "", photos, hi_names, agreed_toll=toll is not None,
                              log_path=work / "writer_log.json", angle=angle, today_ok=when == _today_ist(),
-                             reports=reports, title_hints=hindi_hints(cand))
+                             reports=reports, title_hints=hindi_hints(cand), start=cand.get("draft"))
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, next((r["url"] for r in reports if r["owner"] in named), reports[0]["url"]),
                   stories.numbers_in(name), "named in the reports of " + ", ".join(named), owners=named)]
@@ -1353,7 +1355,7 @@ def build_explainer(cand: dict) -> Short:
                              log_path=work / "writer_log.json",
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
-                             title_hints=hindi_hints(cand), earlier=cand.get("earlier"))
+                             title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
