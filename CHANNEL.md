@@ -178,8 +178,10 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   - an explainer must be in Google News India's top stories (its headline-count fame never makes it "famous"), and a
     world explainer must be in the Hindi lists (IN-hi, IN-hi-nation);
   - follow-up parts are off (`plan.SERIES_PARTS = 1`);
-  - a kh- story about a person shows only that person's own photos (never their school or birthplace: the Dhruv
-    Rathee Short was seven frames of buildings), and one photo is enough when it is a lead story (place 0.9+);
+  - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
+    of buildings); its pictures are the person (a Commons search, not only their article), the other people and
+    the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted
+    for a lead story (place 0.9+) only because the beats bring the rest;
   - an nw- story stands on 4 independent owners of any group (or 3 with an official, public or international one);
     collapses (pandal, building, chimney...) are incidents; only an article a story can be told from (a candidate
     or an event-shaped title, never "List of fatal crowd crushes") holds its headlines back; ties in an nw- name go
@@ -220,7 +222,20 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   fact card for every beat (the sourced number or decision large, a label saying what it is, and the outlets whose
   reports state that number); subtitles; a `मुख्य तथ्य` ticker of the facts along the bottom; and a `मुख्य तथ्य`
   recap on the end card. Every word on screen is the gated title, a gated card or the narration.
-- **Pictures:** at least three real (two for kh- and nw- bulletins, where the cards carry the frame), freely licensed photos from Wikimedia Commons (CC0, public domain, CC BY,
+- **Every beat shows what it names (owner, 2026-10-20, furious: the Tiger Shroff Short told the whole story over
+  one photo; "how audience will stay to see this").** Read this before building or changing any Short:
+  - never one picture for a whole Short: at least three distinct pictures (`visuals.MIN_VISUALS`, gated), and the
+    picture changes every 3-4 seconds (a beat longer than `compose.CUT_AFTER` cuts at a word boundary);
+  - each beat shows the person or place it names: that person's own portrait with a red name pill, an
+    OpenStreetMap map of the place (`नक्शा`, credited), a route map when it names two places, the city police for
+    a police beat; the same picture never closes one beat and opens the next (`desk/visuals.py`);
+  - "there is no photo" is said only after searching Commons for it (the Tiger Short claimed one photo; Commons had
+    nine);
+  - real incident photos and footage belong to news agencies (Content ID, strikes, no monetization) and are never
+    used; an AI-made picture of a real incident is never used either. The incident is shown by its place on a map,
+    the people in it and the police and officials who speak;
+  - before a change to the pictures is merged, a dry run is made and its frames are looked at, every beat.
+- **Pictures:** at least three real, freely licensed photos and maps (photos from Wikimedia Commons: CC0, public domain, CC BY,
   CC BY-SA; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
   licence / Wikimedia Commons`) and in the description. For a person, every photo of a person must show them: their
   face is matched across the set. A story with fewer than three photos of its own (a tribute needs at least one
@@ -299,6 +314,11 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   engine read it; every upload sets YouTube's altered-or-synthetic-content flag.
 - Corrections: a wrong fact is fixed in the description and pinned comment the same day; a wrong number on screen
   means the Short is made private and re-made.
+- Remakes: a published Short that is wrong or badly presented is re-made by a file in `remakes/` (`story`: the
+  published id, `replaces`: its YouTube id, `until`, `why`). While its story is still on the radar the next run in the
+  publishing window makes it again under a new id, ahead of the other ready stories, and once the new version is
+  public the old video is made private (the ledger row records `replaces` and `replaced`). The Tiger Shroff Short
+  (zl1DewTqnP8) was the first, 2026-10-20.
 
 ## Operations
 

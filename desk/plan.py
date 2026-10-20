@@ -17,11 +17,14 @@ one incident, and under 12 hours old, or a quake USGS
 rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap; wars never
 take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
 than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
-(desk/orbitwire.py).
+(desk/orbitwire.py). A Short the owner wants made again (remakes/*.json) comes back while its story is still on the
+radar, ahead of the other ready stories; once the new version is public the old one is made private.
 """
 from __future__ import annotations
 
+import json
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 from . import ledger, news, orbitwire, outlets, trends, usgs
 from .stories import km_between
@@ -60,6 +63,28 @@ TOP_ONLY_SCORE = 0.55
 SERIES_SCORE = 0.9
 SERIES_PARTS = 1
 SERIES_GAP = timedelta(hours=3)
+
+
+REMAKES = Path(__file__).resolve().parents[1] / "remakes"
+
+
+def remakes(at: datetime | None = None) -> list[dict]:
+    """Remake requests still current whose old video no published row has replaced yet. A request is
+    {"story": published id, "replaces": its YouTube id, "until": ISO time, "why": text}."""
+    at = at or datetime.now(timezone.utc)
+    done = {r.get("replaces") for r in ledger.published()}
+    specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(REMAKES.glob("*.json"))]
+    return [s for s in specs if s["replaces"] not in done
+            and at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
+
+
+def remake_of(cand: dict, specs: list[dict]) -> dict | None:
+    """The candidate as the remake of a published Short, under an id the old upload's marker tag does not carry."""
+    for s in specs:
+        if cand["id"] == s["story"] or outlets.same_story(cand["id"], s["story"]):
+            new = cand["id"] + "-r2" if cand["id"] == s["story"] else cand["id"]
+            return cand | {"id": new, "replaces": s["replaces"], "remake_of": s["story"]}
+    return None
 
 
 def ist_day(t: datetime) -> str:
@@ -252,6 +277,7 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
             notes.append(f"hold {c['id']}: {wait}")
         else:
             ready.append(c | {"breaking": breaking, "priority": round(priority(c, at))})
+    ready.sort(key=lambda c: not c.get("replaces"))
     return ready, notes
 
 
@@ -340,8 +366,13 @@ def watch(save: bool = True) -> dict:
     found["notes"] += _quake_facts(found["trending"])
     at = datetime.now(timezone.utc)
     rows = ledger.published()
-    stories = []
+    stories, redo = [], remakes(at)
     for c in found["trending"]:
+        if again := remake_of(c, redo):
+            redo = [s for s in redo if s["replaces"] != again["replaces"]]
+            if not ledger.is_done(again["id"]):
+                stories.append(again)
+            continue
         if cooling(c, at, rows) or ledger.is_done(trends.article_id(c["title"])):
             continue
         if ledger.is_done(c["id"]) or told_before(c, rows, at):

@@ -227,6 +227,37 @@ def test_a_story_told_before_wikidata_knew_it_does_not_come_back(tmp_path, monke
     assert plan.watch(save=False)["candidates"] == []
 
 
+def test_a_remake_comes_back_under_a_new_id_until_its_old_video_is_replaced(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(ledger, "STATE", tmp_path / "state")
+    monkeypatch.setattr(plan, "REMAKES", tmp_path / "remakes")
+    (tmp_path / "remakes").mkdir()
+    (tmp_path / "remakes" / "tiger.json").write_text(json.dumps(
+        {"story": "nw-20261018-tiger-shroff-attack", "replaces": "OLD", "until": "2099-01-01T00:00:00+00:00"}))
+    ledger.record_publish({"id": "nw-20261018-tiger-shroff-attack", "published_at": ledger.now(), "video_id": "OLD"})
+    shifted = {"id": "nw-20261019-tiger-shroff-attack", "title": "Tiger Shroff attack", "category": "attack",
+               "kind": "incident", "fame": 1}
+    same = shifted | {"id": "nw-20261018-tiger-shroff-attack"}
+    other = {"id": "nw-20261019-pune-fire", "title": "Pune fire", "category": "fire", "kind": "incident", "fame": 1}
+    monkeypatch.setattr(plan, "_quake_facts", lambda cands: [])
+    monkeypatch.setattr(plan.orbitwire, "fetch", lambda: {"published": [], "candidates": []})
+
+    for cand, new_id in ((shifted, "nw-20261019-tiger-shroff-attack"), (same, "nw-20261018-tiger-shroff-attack-r2")):
+        monkeypatch.setattr(plan.trends, "radar", lambda c=cand: {"candidates": [c, other], "errors": []})
+        found = plan.watch(save=False)["candidates"]
+        again = [c for c in found if c.get("replaces")]
+        assert [(c["id"], c["replaces"], c["remake_of"]) for c in again] == \
+            [(new_id, "OLD", "nw-20261018-tiger-shroff-attack")]
+        ready, _ = plan.lineup(found, utc(20, 8))
+        assert ready[0]["id"] == new_id
+
+    ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": ledger.now(), "replaces": "OLD"})
+    assert plan.remakes() == []
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [shifted], "errors": []})
+    assert plan.watch(save=False)["candidates"] == []
+
+
 def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():
     sunday = trends.story_id("Q1", "protest", date(2026, 10, 11))
     monday = trends.story_id("Q1", "protest", date(2026, 10, 12))

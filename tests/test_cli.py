@@ -46,6 +46,23 @@ def test_a_preview_short_can_never_publish(made, monkeypatch):
         cli.publish(short.id)
 
 
+def test_a_remake_retires_the_old_video_once_the_new_one_is_public(made, monkeypatch):
+    from desk import gate, youtube
+
+    short, work = made
+    short.scene.update(replaces="OLDVIDEO123", remake_of="nw-20261018-tiger-shroff-attack")
+    short.save(work / "short.json")
+    monkeypatch.setattr(gate, "check", lambda s: [])
+    monkeypatch.setattr(cli, "publish_refusal", lambda *a: None)
+    retired = []
+    monkeypatch.setattr(youtube, "publish", lambda *a, **k: {"video_id": "NEWVIDEO456", "url": "u"})
+    monkeypatch.setattr(youtube, "retire", lambda vid: retired.append(vid))
+    cli.publish(short.id)
+    row = ledger.published()[-1]
+    assert retired == ["OLDVIDEO123"] and row["replaced"] == row["replaces"] == "OLDVIDEO123"
+    assert row["video_id"] == "NEWVIDEO456" and row["remake_of"] == "nw-20261018-tiger-shroff-attack"
+
+
 def test_publish_refuses_while_the_channel_id_is_tbd(made, monkeypatch):
     short, work = made
     monkeypatch.setattr(config, "CHANNEL_ID", "TBD")

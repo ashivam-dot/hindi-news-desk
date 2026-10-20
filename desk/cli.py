@@ -40,6 +40,9 @@ def prepare(target: str | dict):
     short = writer.build(target)
     short.scene.setdefault("category", target.get("category"))
     short.scene.setdefault("article", target.get("title"))
+    for key in ("replaces", "remake_of"):
+        if target.get(key):
+            short.scene[key] = target[key]
     work = WORK / short.id
     work.mkdir(parents=True, exist_ok=True)
     short.save(work / "short.json")
@@ -120,14 +123,22 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     result = youtube.publish(short, work / "short.mp4", voice, publish_at=publish_at)
     when = datetime.fromisoformat(publish_at.replace("Z", "+00:00")).isoformat(timespec="seconds") if publish_at \
         else ledger.now()
-    ledger.record_publish({"id": short.id, "kind": short.kind, "title": short.title, "loss": short.loss,
-                           "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
-                           "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
-                           "category": short.scene.get("category"), "region": short.scene.get("region"),
-                           "article": short.scene.get("article"), "qid": short.scene.get("qid"),
-                           "report_urls": report_urls(short),
-                           "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
-                           **result})
+    row = {"id": short.id, "kind": short.kind, "title": short.title, "loss": short.loss,
+           "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
+           "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
+           "category": short.scene.get("category"), "region": short.scene.get("region"),
+           "article": short.scene.get("article"), "qid": short.scene.get("qid"),
+           "report_urls": report_urls(short),
+           "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
+           **result}
+    if old := short.scene.get("replaces"):
+        row.update(replaces=old, remake_of=short.scene.get("remake_of"))
+        try:
+            youtube.retire(old)
+            row["replaced"] = old
+        except Exception as exc:  # the new version is already public: record it, and say why the old one stayed
+            row["replace_error"] = f"{old}: {type(exc).__name__}: {exc}"[:300]
+    ledger.record_publish(row)
     return result
 
 
