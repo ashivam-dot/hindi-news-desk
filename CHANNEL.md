@@ -246,8 +246,9 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     city whose police the script names (Mumbai Police, not the first home district's) for a police beat (an Indian
     story only: a case file sets `region`, as the radar called the Tiger story "world" and the police photos were
     skipped), and for a landmark (a station, a hospital, a beach: a place with no population) its own Commons
-    photo before its map; up to five towns and landmarks plus three states (the probe's states filled all five
-    places and Kota, where all three were caught, had no picture); a case file lists every spelling of a place
+    photo before its map; up to seven towns and landmarks plus three states, and a police force is never a place
+    (the probe's states, then "Kota Police", filled the places and Kota's station, where all three were caught,
+    went out over a portrait); a case file lists every spelling of a place
     the writer may use (Kota Junction, Kota railway station); the same picture never closes one beat and opens
     the next (`desk/visuals.py`);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a

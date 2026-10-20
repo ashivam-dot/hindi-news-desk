@@ -24,9 +24,9 @@ from . import hindi, media, net, wiki
 log = logging.getLogger(__name__)
 
 MIN_VISUALS = 3  # distinct pictures on screen; a lead story about a person may go with 2 (writer.LEAD_SCORE)
-# States are counted apart from towns and landmarks: the Tiger Shroff probe's two home states and Mumbai filled all
-# five places, and Kota, where all three were caught, had no picture.
-MAX_PEOPLE, MAX_PLACES, MAX_REGIONS = 3, 5, 3
+# States are counted apart from towns and landmarks, and a police force is no place: the Tiger Shroff probe's two
+# home states, then "Kota Police", filled the places, and Kota's station, where all three were caught, had no picture.
+MAX_PEOPLE, MAX_PLACES, MAX_REGIONS = 3, 7, 3
 PERSON_PHOTOS = 2
 # A named landmark (a station, a hospital, a beach: a place with no population) shows its own Commons photo, then
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
@@ -235,7 +235,8 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True)
     out, people, places, regions = [], 0, 0, 0
     for n in draft.get("names") or []:
         en, hi = (n.get("en") or "").strip(), (n.get("hi") or "").strip()
-        if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out):
+        if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out) \
+                or re.search(r"\bpolice\b", en, re.I) or any(w in hi for w in POLICE):
             continue
         said = any(hindi.contains(b.get("say", ""), hi) or hi in b.get("say", "") for b in draft.get("beats") or [])
         if not said:
