@@ -303,6 +303,14 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         pool = c.get("sight") or []
         return min(pool, key=lambda i: (i in prev, used.get(i, 0))) if pool else None
 
+    def scenery(places: list[dict], main: int) -> int | None:
+        # A place beat cuts to another picture of its places or the story's route, never to the story's person:
+        # the chase dry run put "रेलवे स्टेशन" over Tiger Shroff's portrait.
+        pool = [i for c in places for i in c["photos"] + (c.get("near") or []) + (c.get("sight") or [])]
+        pool += [i for r in routes.values() for i in r["photos"]]
+        pool = [i for i in dict.fromkeys(pool) if i != main and i not in prev]
+        return min(pool, key=lambda i: used.get(i, 0)) if pool else None
+
     def own(avoid: set[int], wish: int | None = None) -> int | None:
         pool = [i for i in subject if i not in avoid] or [i for i in subject if i not in prev] or subject
         if not pool:
@@ -343,7 +351,9 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
             out.append([])
             continue
         rest = [i for i in options[1:] if i != main]
-        cut = rest[0] if rest else own({main})
+        cut = rest[0] if rest else (scenery(places, main) if places and not people else None)
+        if cut is None:
+            cut = own({main})
         views = [main] + ([cut] if cut is not None and cut != main else [])
         for i in views:
             used[i] = used.get(i, 0) + 1

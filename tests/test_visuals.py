@@ -67,6 +67,7 @@ def test_a_beat_that_only_quotes_the_police_shows_its_place_and_never_another_fo
     views = visuals.assign(beats, subject, cast, first=0)
     assert views[1][0] != at["police"] and at["police"] not in views[2]
     assert views[3][0] == at["police"]
+    assert len(views[1]) == 2 and not set(views[1]) & set(subject)
     assert visuals.other_force("राजस्थान पुलिस ने बताया", cast[-1])
     assert not visuals.other_force("संदिग्धों को पुलिस अब मुम्बई ला रही है", cast[-1])
     assert not visuals.other_force("मुम्बई पुलिस ने कहा", cast[-1])
