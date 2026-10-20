@@ -109,11 +109,13 @@ def unsupported_numbers(text: str, source_values: set[str]) -> list[str]:
 
 
 def norm(text: str) -> str:
-    """For comparing spellings: NFC, no nukta, chandrabindu as anusvara, no joiners, Latin in lower case."""
+    """For comparing spellings: NFC, no nukta, chandrabindu as anusvara, a half nasal before a consonant as anusvara
+    (मुम्बई = मुंबई), no joiners, Latin in lower case."""
     text = unicodedata.normalize("NFC", text or "")
     text = unicodedata.normalize("NFD", text).replace(NUKTA, "")
     text = unicodedata.normalize("NFC", text).replace(CHANDRABINDU, ANUSVARA)
     text = re.sub("[\u200c\u200d]", "", text)
+    text = re.sub("[\u0919\u091e\u0923\u0928\u092e]\u094d(?=[\u0915-\u0939])", ANUSVARA, text)
     return re.sub(r"\s+", " ", text).strip().lower()
 
 

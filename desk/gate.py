@@ -28,6 +28,7 @@ ACRONYMS = {"USGS", "UTC", "PAGER", "NASA", "NOAA", "GDACS", "EMSC", "ADS-B", "N
 CASUALTY = ["casualt*", "death toll", "killed", "fatalit*", "wounded", "injured", "मौत", "मौतें", "मौतों", "मारे",
             "मृत", "मृतक", "मृतकों", "मृतकों", "घायल", "घायलों", "हताहत", "जान गई", "जानें", "जान गंवा*",
             "जान गँवा*", "निधन", "शहीद", "जान चली", "मारा", "दम तोड़*", "मरने वाले*", "deaths", "toll"]
+INJURY = {"wounded", "injured", "घायल", "घायलों"}
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
@@ -66,7 +67,9 @@ def found(text: str, words: list[str]) -> str | None:
     return None
 
 
-def decorum(text: str, kind: str, agreed_toll: bool) -> list[str]:
+def decorum(text: str, kind: str, agreed_toll: bool, hurt_ok: bool = False) -> list[str]:
+    """hurt_ok: the injured are an agreed fact (a case file's `hurt`), so the injury words may be said; deaths may
+    still not be."""
     problems = []
     word = found(text, BANNED)
     if word:
@@ -74,7 +77,7 @@ def decorum(text: str, kind: str, agreed_toll: bool) -> list[str]:
     if EMOJI.search(text):
         problems.append("emoji")
     if kind in ("incident", "explainer") and not agreed_toll:
-        word = found(text, CASUALTY)
+        word = found(text, [w for w in CASUALTY if not (hurt_ok and w in INJURY)])
         if word:
             problems.append(f"casualties without an agreed toll ({word})")
     return problems
@@ -139,6 +142,7 @@ def check(short: Short) -> list[str]:
     problems = []
     allowed = {n.replace(",", "") for f in short.facts for n in f.numbers}
     has_toll = any(f.key == "deaths" for f in short.facts)
+    hurt_ok = any(f.key == "injured" for f in short.facts)
     texts = [("title", short.title)] + [(f"beat {i + 1}", b.text) for i, b in enumerate(short.beats)]
     for i, b in enumerate(short.beats):
         if b.card:
@@ -147,7 +151,7 @@ def check(short: Short) -> list[str]:
         for num in numbers(text.replace("≈", "")):
             if num not in allowed:
                 problems.append(f"{where}: the number {num} isn't backed by any sourced fact")
-        problems += [f"{where}: {p}" for p in decorum(text, short.kind, has_toll)]
+        problems += [f"{where}: {p}" for p in decorum(text, short.kind, has_toll, hurt_ok)]
     for word in re.findall(r"\b[A-Z][A-Z\-]{3,}\b", short.title):
         if word not in ACRONYMS:
             problems.append(f"title: shouting in capitals ({word})")

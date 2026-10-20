@@ -453,7 +453,8 @@ def subject_in(text: str, subject: dict, names: list[dict]) -> bool:
 
 def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, ground_hi: str,
              hi_names: dict[str, str], banned_names: list[str], kind: str, agreed_toll: bool,
-             angle: str | None = None, reports: list[dict] | None = None) -> tuple[list[str], list[dict]]:
+             angle: str | None = None, reports: list[dict] | None = None,
+             hurt_ok: bool = False) -> tuple[list[str], list[dict]]:
     """Problems with a draft, and the name pairs to double-check in the fact-check pass. A number or name the
     Wikipedia/Wikidata ground lacks passes only when at least two independent owners' reports state it."""
     problems, doubtful = [], []
@@ -518,7 +519,7 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         for token in re.findall(r"[A-Z][a-z]{2,}", person):
             if re.search(r"\b" + token + r"\b", text) or token.lower() in listed.split():
                 problems.append(f"never name a perpetrator ({token})")
-    problems += gate.decorum(text, "incident" if kind in ("incident", "protest") else kind, agreed_toll)
+    problems += gate.decorum(text, "incident" if kind in ("incident", "protest") else kind, agreed_toll, hurt_ok)
     if angle and not orbitwire.title_fits(draft.get("title", ""), angle):
         problems.append(f"the title must show this Short's angle ({orbitwire.ANGLES[angle]['label']})")
     return problems, doubtful
@@ -647,7 +648,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
           earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
           names_ok: list[str] | None = None, never: list[str] | None = None,
-          status: str | None = None) -> tuple[dict, list[dict], list[str]]:
+          status: str | None = None, hurt_ok: bool = False) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
@@ -706,7 +707,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
                                           spellings(draft, hi_names, looked), banned_names or [],
-                                          kind, agreed_toll, angle, reports)
+                                          kind, agreed_toll, angle, reports, hurt_ok)
             if not today_ok:
                 problems += not_today(script_text(draft))
             if names_ok:
@@ -1384,6 +1385,9 @@ def build_explainer(cand: dict) -> Short:
     facts_text = [f"Centre of the story: {name}" + (f" ({name_hi})" if name_hi else "") + ".",
                   "What happened, and why, may come only from the REPORTING; the Wikipedia SOURCE is background on "
                   f"{name} and is never today's news."]
+    hurt = cand.get("case_hurt")
+    if hurt:
+        facts_text.append(f"Injured ({', '.join(hurt['owners'])} agree): {hurt['count']}. {hurt['en']}")
     she, _ = stories._pronouns(ent) if person else ("It", None)
     subject = {"en": name, "hi": name_hi, "person": person}
     when = date.fromisoformat(cand["date"])
@@ -1393,11 +1397,14 @@ def build_explainer(cand: dict) -> Short:
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
                              title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
                              focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"),
-                             status=cand.get("case_status"))
+                             status=cand.get("case_status"), hurt_ok=bool(hurt))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
                   + ", ".join(named), owners=named)]
+    if hurt:
+        facts.append(Fact("injured", str(hurt["count"]), hurt["url"], [str(hurt["count"])], hurt["en"],
+                          owners=hurt["owners"]))
     sources = [page, f"https://www.wikidata.org/wiki/{qid}"] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi
                                                                  else [])
     label = cand.get("category_hi") or cat

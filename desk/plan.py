@@ -131,7 +131,7 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | No
                                         "arrests": bool(a.get("arrests")), "earlier": earlier,
                                         "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
                                         "case_words": a.get("words", []), "never": never,
-                                        "case_status": s.get("status"), "hook": a.get("hook")}
+                                        "case_status": s.get("status"), "case_hurt": s.get("hurt"), "hook": a.get("hook")}
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
     return []
 

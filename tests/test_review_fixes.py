@@ -1,4 +1,17 @@
-from desk import align, gate, orbitwire, writer
+from desk import align, gate, hindi, orbitwire, writer
+
+
+def test_a_case_with_agreed_injured_may_say_hurt_but_never_dead():
+    # The Tiger Shroff family angle, 2026-10-20: every draft said "घायल" and none could pass.
+    line = "ड्राइवर और एक फैन गोली लगने से घायल हुए।"
+    assert gate.decorum(line, "explainer", False)
+    assert gate.decorum(line, "explainer", False, hurt_ok=True) == []
+    assert gate.decorum("एक व्यक्ति की मौत हुई।", "explainer", False, hurt_ok=True)
+
+
+def test_mumbai_is_one_spelling_with_a_half_nasal_or_an_anusvara():
+    assert hindi.contains("मुंबई पुलिस ने कहा", "मुम्बई पुलिस") and hindi.contains("मुम्बई में", "मुंबई")
+    assert not hindi.contains("मुंबई", "मुबई")
 
 
 def test_not_today_flags_aaj_and_abhi_but_not_lasting_or_other_words():
