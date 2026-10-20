@@ -1,21 +1,21 @@
 {
- "at": "2026-10-20T17:55:09+00:00",
+ "at": "2026-10-20T18:25:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 12 candidates from 21 trending",
-  "outlets: 1270 headlines from 31 feeds (19 owners), 10 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 11 kh- stories (on): kh-20261020-Q1353, kh-20261020-Q3520790, kh-20261020-Q139857349, kh-20261020-Q3522100; dropped: explainer Prince Harry: fewer than 3 owners' headlines name it and the story",
+  "watch: 19 candidates from 20 trending",
+  "outlets: 1273 headlines from 31 feeds (19 owners), 11 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 10 kh- stories (on): kh-20261020-Q1353, kh-20261020-Q3520790, kh-20261020-Q139857349, kh-20261020-Q1058; dropped: explainer India-New Zealand FTA / India-New Zealand FTA: no Wikipedia article that can be its centre; explainer Prince Harry: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
   "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1583 headlines (KeyError)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261020-Q139857349: already 10 Shorts today (IST)",
   "hold kh-20261020-Q1058: already 10 Shorts today (IST)",
   "hold kh-20261020-Q1353: already 10 Shorts today (IST)",
-  "drop kh-20261020-Q1209093: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261020-Q1951: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wp-2026_Abyei_market_attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+  "hold nw-20261019-tiger-shroff-attack-chase: already 10 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-industry: already 10 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-incident: already 10 Shorts today (IST)"
  ]
 }
