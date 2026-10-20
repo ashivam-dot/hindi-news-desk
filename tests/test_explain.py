@@ -99,6 +99,7 @@ def test_a_hindi_label_is_spoken_without_its_disambiguation():
     assert wiki.spoken_label({"labels": {"hi": {"value": "बाग़ी (2000 फ़िल्म)"}}}) == "बाग़ी"
     assert wiki.spoken_label({"labels": {"hi": {"value": "मुंबई पुलिस"}}}) == "मुंबई पुलिस"
     assert wiki.spoken_label({"labels": {}}) is None
+    assert wiki.spoken_label({"labels": {"hi": {"value": "heropanti"}}}) is None
 
 
 def test_hindi_spellings_drop_abbreviation_dots_but_never_use_a_bare_surname():

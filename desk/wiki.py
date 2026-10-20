@@ -231,9 +231,11 @@ def hindi_names(ent: dict, pids: tuple[str, ...] = ("P17", "P27", "P19", "P20", 
 
 def spoken_label(ent: dict) -> str | None:
     """The Hindi label without a trailing disambiguation, which is read aloud otherwise: "बाग़ी (2000 फ़िल्म)" is
-    बाग़ी (the Tiger Shroff remake, 2026-10-20)."""
+    बाग़ी (the Tiger Shroff remake, 2026-10-20). None for a label with no Devanagari ("heropanti")."""
     hi = label(ent, "hi")
-    return re.sub(r"\s*\([^()]*\)\s*$", "", hi).strip() or hi if hi else hi
+    if not hi or not re.search(r"[\u0900-\u097F]", hi):
+        return None
+    return re.sub(r"\s*\([^()]*\)\s*$", "", hi).strip() or hi
 
 
 DISAMBIGUATION = "Q4167410"
