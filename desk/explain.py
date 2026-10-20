@@ -464,7 +464,7 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
         if person and (wiki.claims(ent, "P570") or wiki.claims(ent, "P1399")):
             continue  # deaths have their own lane; people convicted of crimes are never the centre of a Short
         seen.add(qid)
-        label_hi = wiki.label(ent, "hi")
+        label_hi = wiki.common_hindi(ent)
         spellings = hindi_names_of(label_hi)
         hi_rows = [i for i in hindi_items if any(hindi.contains(i["title"], s) for s in spellings)]
         if leads is None:

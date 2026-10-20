@@ -10,7 +10,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import mwparserfromhell
 
-from . import net
+from . import hindi, net
 
 API = "https://en.wikipedia.org/w/api.php"
 WD_API = "https://www.wikidata.org/w/api.php"
@@ -198,7 +198,7 @@ def entities(qids: list[str]) -> dict[str, dict]:
     out = {}
     for i in range(0, len(qids), 50):
         d = net.get_json(WD_API, params={"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]),
-                                         "props": "claims|labels|descriptions|sitelinks", "languages": "en|hi",
+                                         "props": "claims|labels|aliases|descriptions|sitelinks", "languages": "en|hi",
                                          "format": "json"})
         out.update(d.get("entities", {}))
     return out
@@ -218,12 +218,12 @@ def hindi_names(ent: dict, pids: tuple[str, ...] = ("P17", "P27", "P19", "P20", 
     """English label -> Hindi label for the item and the items its main claims point at, where Wikidata has both:
     the Hindi spellings the writer must prefer."""
     out = {}
-    if label(ent) and spoken_label(ent):
-        out[label(ent)] = spoken_label(ent)
+    if label(ent) and common_hindi(ent):
+        out[label(ent)] = common_hindi(ent)
     linked = list(dict.fromkeys(c["value"] for pid in pids for c in claims(ent, pid)[:4]
                                 if isinstance(c["value"], str) and re.fullmatch(r"Q\d+", c["value"])))[:60]
     for e in entities(linked).values() if linked else []:
-        en, hi = label(e), spoken_label(e)
+        en, hi = label(e), common_hindi(e)
         if en and hi and not re.fullmatch(r"Q\d+", hi):
             out.setdefault(en, hi)
     return out
@@ -236,6 +236,40 @@ def spoken_label(ent: dict) -> str | None:
     if not hi or not re.search(r"[\u0900-\u097F]", hi):
         return None
     return re.sub(r"\s*\([^()]*\)\s*$", "", hi).strip() or hi
+
+
+NEWSROOM_HI = {  # where Hindi newsrooms all write a name differently from Wikidata's Hindi label
+    "Donald Trump": "डोनाल्ड ट्रंप",
+    "Joe Biden": "जो बाइडेन",
+    "Vladimir Putin": "व्लादिमीर पुतिन",
+    "Xi Jinping": "शी जिनपिंग",
+    "Benjamin Netanyahu": "बेंजामिन नेतन्याहू",
+    "Volodymyr Zelenskyy": "वोलोदिमीर जेलेंस्की",
+    "Elon Musk": "एलन मस्क",
+    "Govinda": "गोविंदा",
+    "Kangana Ranaut": "कंगना रनौत",
+}
+
+
+def common_hindi(ent: dict) -> str | None:
+    """The Hindi name people know: of Wikidata's Hindi label, its Hindi aliases and the Hindi Wikipedia title, the one
+    that sounds most like the English name. Jackie Shroff's label is his birth name, "जय किशन श्राफ"; Hindi Wikipedia
+    and every newsroom call him "जैकी श्रॉफ" (owner, 2026-10-21: "you are saying jakie shrof to jay kissan shrof").
+    A label that already sounds like the English name stays ("मिथुन चक्रवर्ती", not the alias "चक्रबर्ती"), and so
+    does one with no English name to compare with."""
+    first = spoken_label(ent)
+    en = label(ent)
+    if en in NEWSROOM_HI:
+        return NEWSROOM_HI[en]
+    options = [first, sitelink(ent, "hiwiki")] + [a.get("value") for a in ent.get("aliases", {}).get("hi", [])]
+    options = [re.sub(r"\s*\([^()]*\)\s*$", "", o).strip() for o in options
+               if isinstance(o, str) and re.search(r"[\u0900-\u097F]", o)]
+    plain = re.sub(r"\s*\([^()]*\)\s*$", "", en or "")
+    if not options or not en or (first and hindi.likeness(first, plain) >= 0.75):
+        return first
+    if len(plain.split()) > 1:
+        options = [o for o in options if len(o.split()) > 1 or o == first] or options
+    return max(dict.fromkeys(options), key=lambda o: hindi.likeness(o, plain))
 
 
 DISAMBIGUATION = "Q4167410"
@@ -251,7 +285,7 @@ def hindi_spellings(names: list[str]) -> dict[str, str]:
     out = {}
     for n, q in qids.items():
         e = ents.get(q) or {}
-        hi = spoken_label(e)
+        hi = common_hindi(e)
         if hi and not re.fullmatch(r"Q\d+", hi) and DISAMBIGUATION not in {c["value"] for c in claims(e, "P31")}:
             out[n] = hi
     return out

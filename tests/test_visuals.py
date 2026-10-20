@@ -11,7 +11,7 @@ TIGER = [
     {"say": "रिपोर्टों के मुताबिक रविवार शाम फुटबॉल खेलकर लौट रहे टाइगर की कार पर दो लोगों ने गोलियां चलाईं।", "photo": 0},
     {"say": "महाराष्ट्र के उपमुख्यमंत्री एकनाथ शिंदे ने टाइगर से मिलकर उनके परिवार को पूरी सुरक्षा का भरोसा दिया।", "photo": 0},
     {"say": "पुलिस ने इस हमले की कोई आधिकारिक वजह अब तक साफ नहीं की है।", "photo": 0},
-    {"say": "टाइगर एक्टर जय किशन श्राफ के बेटे हैं और उन्होंने 2014 में फिल्म heropanti से करियर शुरू किया था।", "photo": 0},
+    {"say": "टाइगर एक्टर जैकी श्रॉफ के बेटे हैं और उन्होंने 2014 में फिल्म heropanti से करियर शुरू किया था।", "photo": 0},
     {"say": "कोटा से पकड़े गए 3 संदिग्धों को पुलिस अब पूछताछ के लिए मुम्बई ला रही है।", "photo": 0},
 ]
 
@@ -25,7 +25,7 @@ def tiger_cast(own: int = 3):
         {"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [mumbai], "near": [mumbai_near]},
         {"en": "Maharashtra", "hi": "महाराष्ट्र", "kind": "place", "photos": [maha], "near": []},
         {"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": shinde},
-        {"en": "Jackie Shroff", "hi": "जय किशन श्राफ", "kind": "person", "photos": jackie},
+        {"en": "Jackie Shroff", "hi": "जैकी श्रॉफ", "kind": "person", "photos": jackie},
         {"en": "Kota", "hi": "कोटा", "kind": "place", "photos": [kota], "near": []},
         {"kind": "route", "pair": ("Kota", "Mumbai"), "photos": [route]},
         {"kind": "police", "photos": [police]},

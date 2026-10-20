@@ -35,8 +35,11 @@ IST = timezone(timedelta(hours=5, minutes=30))
 # YouTube refuses this channel's uploads past about ten a day ("exceeded the number of videos they may upload" after
 # 10, 10 and 9 on 15-17 Oct 2026): the eleventh story was made and lost, so the cap keeps one slot for breaking news.
 YOUTUBE_DAILY_UPLOADS = 10
-MAX_PER_DAY = 9
-BREAKING_EXTRA = 1  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
+# Owner, 2026-10-21: "No need to cover each and every incidents but those which are really high profile cases or
+# incidents those should be cover properly on time with max efforts." Fewer regular Shorts; the spare slots go to
+# breaking news and to a big case's angles.
+MAX_PER_DAY = 6
+BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
 MIN_GAP = timedelta(minutes=20)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
@@ -59,6 +62,16 @@ COOLDOWN_DAYS = {"protest": 6, "movement": 6}
 TOP_WEIGHT = 2.0
 # Sport and film stories qualify only this high in the lists (about top 10 of a front page).
 TOP_ONLY_SCORE = 0.55
+# Any other story must be at least this high (about the top 13 of a front page, or a Nation section's top 9), and a
+# kind Hindi viewers rarely watch (DEMAND under LOW_DEMAND) about the top 6.
+MIN_PLACE, LOW_DEMAND, LOW_DEMAND_PLACE = 0.35, 0.8, 0.75
+# What Hindi viewers watch, by kind: crime and security interest 84% of Hindi news users and entertainment 75%,
+# business 38% (Google/Kantar 2023, n=4,622); on this channel a star's death (1,301 views) and political rows
+# (596) led while economy, diplomacy and world explainers drew 10-60 (Oct 2026). Multiplies the ranking.
+DEMAND = {"death": 1.4, "entertainment": 1.4, "attack": 1.4, "disaster": 1.3, "accident": 1.2, "aviation": 1.2,
+          "rail": 1.2, "flood": 1.2, "earthquake": 1.2, "cyclone": 1.1, "politics": 1.1, "court": 1.0, "news": 1.0,
+          "weather": 1.0, "sport": 1.0, "health": 0.9, "policy": 0.9, "defence": 0.9, "protest": 0.8,
+          "movement": 0.8, "science": 0.7, "conflict": 0.7, "economy": 0.6, "diplomacy": 0.6, "world": 0.5}
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
@@ -97,7 +110,8 @@ def cases(at: datetime | None = None) -> list[dict]:
     now, which no angle may contradict, "names_ok": [...], "never": [an accused's
     or a gang's name, English and Hindi, the script may not contain], "angles": [{"key",
     "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...], "words": [names the angle's excerpts
-    keep sentences about], "hook": its opening card's Hindi line, a reported fact and never a question}]})."""
+    keep sentences about], "hook": its opening card's Hindi line, a reported fact and never a question, optionally
+    "replaces": the YouTube id of the angle's earlier Short, which a "<key>-r2" angle makes again}]})."""
     at = at or datetime.now(timezone.utc)
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CASES.glob("*.json"))]
     return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
@@ -132,7 +146,10 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | No
                                         "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
                                         "case_words": a.get("words", []), "never": never,
                                         "case_status": s.get("status"), "case_hurt": s.get("hurt"), "hook": a.get("hook")}
-                for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
+                | ({"replaces": a["replaces"], "remake_of": f"{stem}-{a['key'].removesuffix('-r2')}"}
+                   if a.get("replaces") else {})
+                for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")
+                and not (a.get("replaces") and a["replaces"] in gone)]
     return []
 
 
@@ -188,6 +205,10 @@ def boost(cand: dict) -> float:
     return LINK_BOOST if cand.get("india_link") else 1.0
 
 
+def demand(cand: dict) -> float:
+    return DEMAND.get(cand.get("category"), DEMAND.get(cand.get("kind"), 1.0))
+
+
 def priority(cand: dict, at: datetime) -> float:
     """Fame halved every half-life, times the India boost and the channel's own learned lift: what this desk would
     lead with right now."""
@@ -195,7 +216,7 @@ def priority(cand: dict, at: datetime) -> float:
 
     half = HALF_LIFE_H.get(cand.get("kind"), HALF_LIFE_H.get(cand.get("category"), DEFAULT_HALF_LIFE_H))
     return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand) * learn.factor(cand) \
-        * (1 + TOP_WEIGHT * (cand.get("top_score") or 0))
+        * demand(cand) * (1 + TOP_WEIGHT * (cand.get("top_score") or 0))
 
 
 def unpopular(cand: dict, at: datetime) -> str | None:
@@ -218,6 +239,11 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     if cand.get("kind") == "explainer" and cand.get("region") != "india" \
             and not any(feed in news.HINDI_FEEDS for feed in cand["top"]):
         return "a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+    if place < MIN_PLACE:
+        return f"too low in Google News India's top stories (place {place:.2f}, needs {MIN_PLACE})"
+    if demand(cand) < LOW_DEMAND and place < LOW_DEMAND_PLACE:
+        return (f"a {cand.get('category') or cand.get('kind')} story goes out only near the top of the lists "
+                f"(place {place:.2f}, needs {LOW_DEMAND_PLACE})")
     return None
 
 

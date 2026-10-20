@@ -379,7 +379,7 @@ HEADLINE_KINDS = (
      "aviation"),
     (r"\b(shooting|gunman|gunmen|stabbing|bombing|suicide bomb\w*|terror attack|militant attack|drone strikes?|"
      r"missile strikes?|air ?strikes?|grenade attack|firing|fired at|opened fire|shot at|shots fired|gunshots?|"
-     r"shooters?|stabbed)\b", "attack"),
+     r"shooters?|stabbed|shot dead|gunned down|hacked to death|murdered|attacked (in|at|outside|near))\b", "attack"),
     (r"\b(explosion|explosions|blast)\b", "explosion"),
     (r"\b(derail\w*|train (crash|collision|accident))\b", "rail"),
     (r"\b(boat|ferry|ship|vessel)\b.*\b(capsiz\w*|sinks|sank|sinking)\b", "maritime"),
@@ -396,17 +396,20 @@ HEADLINE_KINDS = (
     (r"\b(protests?|protesters|demonstrations?|demonstrators)\b", "protest"),
 )
 HEADLINE_SKIP = re.compile(
-    r"\b(cricket|ipl|t20|odi|football|fifa|hockey|tennis|olympic\w*|match|tournament|league|cup|squad|championships?|"
-    r"elections?|electoral|polls?|bypolls?|voting|votes?|campaign\w*|court|verdict|trial|bail|hearing|acquit\w*|"
+    r"\b(elections?|electoral|polls?|bypolls?|voting|votes?|campaign\w*|court|verdict|trial|bail|hearing|acquit\w*|"
     r"convict\w*|sentenc\w*|box office|wedding|bigg boss|trailer|review|"
     r"opinion|editorial|analysis|explainer|explained|podcast|quiz|horoscope|anniversary|years? "
     r"after|recalls?|remember\w*|stock|sensex|nifty|ipo|minister|bjp|congress|mla|party|hc|sc|plea|petition|pil|"
     r"all about)\b|^(how|why|what|who|when|where|is|are|can|should|will|inside)\b", re.I)
 # Film and live-blog words drop a headline unless it reports violence: "Bollywood actor Tiger Shroff survives
 # shooting attempt" and "Tiger Shroff Firing Case LIVE Updates" are news; an actor "shooting" a film is not.
-SOFT_SKIP = re.compile(r"\b(actor|actress|film|movie|celebrity|live|watch|video)\b", re.I)
+# Sport words too: "Shots fired at Tiger Shroff's car outside football ground" (2026-10-18) is news; the desk saw
+# no Tiger Shroff story for 13 hours after the firing.
+SOFT_SKIP = re.compile(r"\b(actor|actress|film|movie|celebrity|live|watch|video|cricket|ipl|t20|odi|football|fifa|"
+                       r"hockey|tennis|olympic\w*|match|tournament|league|cup|squad|championships?)\b", re.I)
 VIOLENCE = re.compile(r"\b(firing|fired at|opened fire|shot at|shots fired|gunshots?|bullets?|shooters?|gunm[ae]n|"
-                      r"shooting (attempt|incident|case)|stabb\w*|attack(ed)? on)\b", re.I)
+                      r"shooting (attempt|incident|case)|stabb\w*|attack(ed)? on|shot dead|gunned down|murdered|"
+                      r"hacked to death|attacked (in|at|outside|near))\b", re.I)
 # "Attack on Tiger Shroff": an attack on a named person (case-sensitive: two capitalised words after it).
 ATTACK_ON = re.compile(r"\b[Aa]ttack(ed)? on [A-Z][a-z]+ [A-Z][a-z]+")
 # Countries, regions and institutions name too much to tell one story by: they never identify an nw- story alone.

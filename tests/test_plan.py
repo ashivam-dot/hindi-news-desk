@@ -9,9 +9,23 @@ def utc(day, hour, minute=0):
     return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
 
 
-def test_the_desk_fills_youtubes_upload_limit_and_never_runs_past_it():
+def test_the_desk_covers_only_the_big_stories_and_never_runs_past_youtubes_limit():
+    # Owner, 2026-10-21: only the really high-profile stories, each covered properly.
     assert plan.MAX_PER_DAY + plan.BREAKING_EXTRA <= plan.YOUTUBE_DAILY_UPLOADS
-    assert plan.MAX_PER_DAY >= 8 and plan.MIN_GAP.total_seconds() <= 20 * 60
+    assert plan.MAX_PER_DAY <= 6 and plan.BREAKING_EXTRA >= 1 and plan.MIN_GAP.total_seconds() <= 20 * 60
+
+
+def test_a_low_place_or_a_low_demand_kind_needs_a_higher_place():
+    from datetime import datetime, timezone
+
+    at = datetime(2026, 10, 21, 8, tzinfo=timezone.utc)
+    base = {"id": "kh-x", "kind": "explainer", "region": "india", "top": {"IN": 15}, "fame": 1000,
+            "news_at": at.isoformat()}
+    assert "too low" in plan.unpopular(base | {"category": "court", "top_score": 0.3}, at)
+    assert plan.unpopular(base | {"category": "court", "top_score": 0.5}, at) is None
+    assert "near the top" in plan.unpopular(base | {"category": "economy", "top_score": 0.5}, at)
+    assert plan.unpopular(base | {"category": "economy", "top_score": 0.8}, at) is None
+    assert plan.demand({"category": "attack"}) > plan.demand({"category": "diplomacy"})
 
 
 def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, monkeypatch):
@@ -317,6 +331,33 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     just = (datetime.now(timezone.utc) - timedelta(minutes=10)).isoformat(timespec="seconds")
     ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack-chase", "published_at": just, "video_id": "C",
                            "case": "tiger", "title": "पीछा"})
+    assert plan.watch(save=False)["candidates"] == []
+
+
+def test_a_case_angle_is_made_again_once_and_replaces_its_old_short(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(ledger, "STATE", tmp_path / "state")
+    monkeypatch.setattr(plan, "CASES", tmp_path / "cases")
+    monkeypatch.setattr(plan, "REMAKES", tmp_path / "remakes")
+    (tmp_path / "cases").mkdir()
+    (tmp_path / "remakes").mkdir()
+    cand = {"id": "nw-20261019-tiger-shroff-attack", "title": "Tiger Shroff attack", "category": "attack",
+            "kind": "incident", "fame": 1, "top_score": 1.15, "news_at": "2026-10-19T08:00:00+00:00"}
+    angle = {"key": "family", "focus": "The family.", "reports": [{"url": "u9", "owner": "NDTV"}]}
+    (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
+        {"name": "tiger", "story": cand["id"], "until": "2099-01-01T00:00:00+00:00", "cand": cand,
+         "angles": [angle | {"key": "family-r2", "replaces": "OLD"}, angle]}))
+    ledger.record_publish({"id": cand["id"] + "-family", "published_at": "2026-10-19T10:00:00+00:00",
+                           "video_id": "OLD", "case": "tiger", "title": "जय किशन"})
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [], "errors": []})
+    monkeypatch.setattr(plan, "_quake_facts", lambda cands: [])
+    monkeypatch.setattr(plan.orbitwire, "fetch", lambda: {"published": [], "candidates": []})
+    again = plan.watch(save=False)["candidates"]
+    assert [(c["id"], c.get("replaces"), c.get("remake_of")) for c in again] == [
+        (cand["id"] + "-family-r2", "OLD", cand["id"] + "-family")]
+    ledger.record_publish({"id": cand["id"] + "-family-r3", "published_at": "2026-10-19T12:00:00+00:00",
+                           "video_id": "NEW", "case": "tiger", "title": "जैकी श्रॉफ", "replaced": "OLD"})
     assert plan.watch(save=False)["candidates"] == []
 
 

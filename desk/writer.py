@@ -33,9 +33,12 @@ REPORT_PHOTOS = 2  # the story's own photos for a kh- or nw- bulletin; desk/visu
 LEAD_SCORE = 0.9
 MAX_DEATH_DAYS = 7
 IST = timezone(timedelta(hours=5, minutes=30))
-OUTRO = "पूरी जानकारी और सभी स्रोत विवरण में दिए गए हैं।"
 CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"
-MIN_WORDS, MAX_WORDS = 80, 135
+# About 25-35 s at the narrator's 2.4 words a second. Shorts of 15-30 s get 14% more views than a 10K-100K channel's
+# median and those over 60 s fewer (TrendReport, 3.48M Shorts, 2025-26); the 45-50 s Kyun Hua Shorts padded the
+# news with biography and "no response" lines to fill 95-120 words (owner, 2026-10-21).
+MIN_WORDS, MAX_WORDS = 52, 90
+WORDS_ASKED = "60 to 80"
 DRAFTS = 4
 HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
 PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
@@ -43,7 +46,7 @@ SCHEMA = {
     "type": "object",
     "properties": {
         "title": {"type": "string"},
-        "beats": {"type": "array", "minItems": 6, "maxItems": 9, "items": {
+        "beats": {"type": "array", "minItems": 5, "maxItems": 8, "items": {
             "type": "object",
             "properties": {"say": {"type": "string"}, "photo": {"type": "integer"}, "caption": {"type": "string"},
                            "label": {"type": "string"}},
@@ -122,11 +125,10 @@ Shape (a news report, in this order):
 3. The official statement: what the government, company, court or person said, attributed to them.
 4. क्यों: the reasons the REPORTING gives, each attributed to whoever gives it ("सरकार के मुताबिक", "पार्टी का कहना
    है"). If no report gives a reason, say plainly that no official reason has been given.
-5. The other side: when the story is one side acting against, accusing or protesting another, say what the other
-   side said in REPORTING, attributed; if REPORTING carries no response from them, say "रिपोर्टों में <them> की
-   प्रतिक्रिया नहीं है" in one short line, naming them. Otherwise (a market, economy, science, weather or sports
-   story has no other side) one line of background on {name} from the SOURCE, only the part this story needs
-   (never a biography).
+5. The other side, only when the story is a dispute between two named sides (a party against a party, a government
+   against a court, a company against a regulator): what the other side said in REPORTING, attributed. Leave this
+   step out when REPORTING carries no reply, and always for a crime or an attack (attackers and accused are not a
+   side). Never a line that someone has not responded, and never a biography of {name}.
 6. आगे क्या: the next step that is announced or due, or what is still unclear. The last beat is one short factual
    sentence, never a conclusion, a moral or an opinion.
 Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
@@ -144,8 +146,15 @@ RULES = """RULES (all mandatory):
   निर्णय, कोर्ट not न्यायालय, जज not न्यायाधीश, वकील not अधिवक्ता, हफ्ते not सप्ताह, शुरू not प्रारंभ, खत्म not
   समाप्त, कोशिश not प्रयास, बढ़ोतरी not वृद्धि, IMF not अंतरराष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान
   विभाग, even where HINDI NAMES gives the formal name. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
-  "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 7 or 8 beats and 95 to 120 Hindi words in total (about 45 seconds spoken). Each beat is one or two spoken
-  sentences, 8 to 18 words in all. Count the words before you answer.
+  "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 6 or 7 beats and {words} Hindi words in total (about 30
+  seconds spoken). Each beat is one spoken sentence, or two short ones, 8 to 14 words in all. Count the words before
+  you answer.
+- Names: call every person by the name the public knows and Hindi newsrooms print (जैकी श्रॉफ, never his birth name
+  जय किशन श्रॉफ; लालकृष्ण आडवाणी), the spelling HINDI NAMES gives. A short, well-known form is fine after the first
+  mention (आडवाणी, फडणवीस).
+- News only: every beat is about today's story. No biography of anyone (their films, debut, career, parents,
+  awards) unless the story is their death or that fact is part of today's news. No line saying someone has not
+  responded or that reports carry no reaction.
 - Register: a Hindi TV news bulletin read by an anchor. Third person, complete sentences. A claim, allegation or
   reported figure says who gives it, by name ("अस्पताल ने बताया", "पुलिस का कहना है", "NDTV के मुताबिक"); a fact on
   the record (a past office, a year, a known role) needs no attribution. Use the vague "रिपोर्टों के मुताबिक" in at
@@ -249,6 +258,12 @@ HARD_WORDS = {
     "अंतर्गत": "के तहत", "अन्तर्गत": "के तहत", "तत्काल": "तुरंत", "यथाशीघ्र": "जल्द", "उपरोक्त": "(leave it out)",
     "वार्ता": "बातचीत", "आग्रह": "अपील", "दुर्घटनाग्रस्त": "हादसे का शिकार", "भारत मौसम विज्ञान": "मौसम विभाग",
     "संयुक्त राज्य": "अमेरिका", "यूनाइटेड किंगडम": "ब्रिटेन",
+    # Words in the Tiger Shroff and Nana Patekar Shorts (2026-10-20) that Aaj Tak and ABP say otherwise.
+    "गोलीबारी": "फायरिंग", "अभियुक्त": "आरोपी", "प्राथमिकी": "FIR", "चिकित्सालय": "अस्पताल", "उपचार": "इलाज",
+    "वाहन": "गाड़ी", "उपस्थित": "मौजूद", "उपस्थिति": "मौजूदगी", "वक्तव्य": "बयान", "सम्मिलित": "शामिल",
+    "रेलगाड़ी": "ट्रेन", "अन्वेषण": "जांच", "चलचित्र": "फिल्म", "अभिनीत": "वाली",
+    "पुलिस अधीक्षक": "SP", "पुलिस आयुक्त": "पुलिस कमिश्नर", "आग्नेयास्त्र": "हथियार",
+    "क्षतिग्रस्त": "टूट गया", "यात्रीगण": "यात्री", "तत्पश्चात": "इसके बाद", "किन्तु": "लेकिन", "परन्तु": "लेकिन",
 }
 # Spoken narration says "प्रतिशत"; only a title or a card writes "%".
 SAID_OK = {"प्रतिशत"}
@@ -374,7 +389,7 @@ def _messages(brief: str, facts: list[str], source_en: str, source_hi: str, phot
             + ("\n\nSOURCE (Hindi Wikipedia):\n" + source_hi if source_hi else "")
             + reporting_block(reports)
             + "\n\nHINDI NAMES (Wikidata's Hindi labels; use these spellings):\n" + names
-            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=0, name_hi=name_hi)
+            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=0, name_hi=name_hi, words=WORDS_ASKED)
             + ("\nREPORTING counts as a source under its own rule: " + REPORTING_RULE + "." if reports else ""))
     return [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
 
@@ -464,13 +479,15 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     says = " ".join(b.get("say", "") for b in beats)
     words = len(says.split())
     if not MIN_WORDS <= words <= MAX_WORDS:
-        problems.append(f"the script has {words} words; it must have 95 to 120")
+        problems.append(f"the script has {words} words; it must have {WORDS_ASKED}")
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
     problems += casual(draft)
-    problems += [f"beat {i + 1} says no reply from an unnamed side; name who did not respond, or give background "
-                 "instead when the story has no other side" for i, b in enumerate(beats)
-                 if NOBODY_REPLIED.search(b.get("say", ""))]
+    problems += [f"beat {i + 1} says someone has not responded; leave that line out and give a fact of today's news "
+                 "instead" for i, b in enumerate(beats) if NOBODY_REPLIED.search(b.get("say", ""))]
+    if kind != "death":
+        problems += [f"beat {i + 1} is biography ({m.group(0)}); keep to today's news" for i, b in enumerate(beats)
+                     if (m := BIOGRAPHY.search(b.get("say", "")))]
     names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
     if not beats or not subject_in(beats[0].get("say", ""), subject, names):
         problems.append(f"beat 1 must name {subject.get('hi') or subject['en']} in Hindi, and list it in names")
@@ -505,8 +522,9 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         elif not (en_ok or hi_ok):
             problems.append(f"{en} ({hi}) is not in the sources" + (" (only one outlet reports it)" if reported else ""))
         label = wikidata.get(en.lower())
-        if label and hindi.norm(label) != hindi.norm(hi) and not hindi.contains(text, label):
-            problems.append(f"write {en} as {label} (Wikidata's Hindi name), not {hi}")
+        newsroom = hindi.contains(ground_hi, hi) or len(gate.reported(hi, reports)) >= two
+        if label and hindi.norm(label) != hindi.norm(hi) and not hindi.contains(text, label) and not newsroom:
+            problems.append(f"write {en} as {label} (the Hindi name people know), not {hi}")
         elif not label and not hi_ok and not hindi.sounds_alike(hi, en):
             doubtful.append({"hi": hi, "en": en})
     listed = " ".join(p.get("en", "") for p in names).lower()
@@ -526,8 +544,15 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
 
 
 CASUAL = re.compile(r"आइए|आइये|दोस्तों|सोचिए|सोचिये|क्या आप|आपको बता दें|जानिए|जानिये|!")
-# "रिपोर्टों में अन्य पक्षों की प्रतिक्रिया नहीं है" in a Sensex Short (2026-10-16): filler, since a market has no side.
-NOBODY_REPLIED = re.compile(r"(अन्य|दूसरे|दूसरा|किसी|विपक्षी) पक्ष\S*( की| का| से)? (कोई )?प्रतिक्रिया")
+# "रिपोर्टों में अन्य पक्षों की प्रतिक्रिया नहीं है" in a Sensex Short (2026-10-16) and "रिपोर्टों में हमलावरों की
+# प्रतिक्रिया नहीं है" in a Tiger Shroff Short (2026-10-20): filler, and attackers are no side to hear from.
+NOBODY_REPLIED = re.compile(r"(अन्य|दूसरे|दूसरा|किसी|विपक्षी) पक्ष\S*( की| का| से)? (कोई )?प्रतिक्रिया|"
+                            r"रिपोर्ट\S* में .{0,40}प्रतिक्रिया (अभी )?(तक )?(नहीं|सामने नहीं)|"
+                            r"(हमलावर|आरोपि|आरोपी|अभियुक्त|शूटर)\S* (की|का|से) (कोई )?प्रतिक्रिया")
+# "टाइगर एक्टर जैकी श्रॉफ के बेटे हैं और उन्होंने 2014 में फिल्म हीरोपंती से करियर शुरू किया" (2026-10-20): a news
+# Short spent a beat on who someone is instead of what happened.
+BIOGRAPHY = re.compile(r"करियर (की )?(शुरू|शुरुआत)|से डेब्यू|डेब्यू किया|के बेटे हैं|की बेटी हैं|जाने-माने अभिनेता|"
+                       r"मशहूर अभिनेता हैं|अपनी (फिल्मों|फ़िल्मों) के लिए (जाने|मशहूर)")
 
 
 def casual(draft: dict) -> list[str]:
@@ -683,8 +708,10 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     if names_ok:
         brief += ("\n\nName only these people, places and bodies (list each in names with its English name exactly "
                   "as written here): " + ", ".join(names_ok) + ". Never "
-                  "name an accused, a suspect, a shooter or a gang member: say how many, where they are from and "
-                  "what police say about them.")
+                  "name an accused, a suspect or a shooter: say how many, where they are from and what police say "
+                  "about them. A gang on this list is named only as police or the REPORTING put it (\"पुलिस ... गैंग "
+                  "से जुड़े होने की जांच कर रही है\", \"सोशल मीडिया पर ... गैंग के नाम से दावा, पुलिस ने पुष्टि नहीं "
+                  "की\"), never as a fact of its own.")
     if not today_ok:
         brief += ("\n\nThis did not happen today: never write आज or अभी about it (आज भी for a lasting legacy, and "
                   "अभी तक or आज तक for what the REPORTING says is still unknown, are fine). Say when it happened "
@@ -983,7 +1010,7 @@ def build_death(cand: dict) -> Short:
                          "days only (an old death must never read as news)")
     page, item = wiki.url(title), f"https://www.wikidata.org/wiki/{qid}"
     name = stories.plain_title(wiki.label(ent) or title)
-    name_hi = wiki.label(ent, "hi")
+    name_hi = wiki.common_hindi(ent)
     she, _ = stories._pronouns(ent)
     age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
     job = (ib.get("occupation") or "").split(",")[0].strip()
@@ -1071,7 +1098,7 @@ def build_incident(cand: dict) -> Short:
     listed = stories._first(ib, "total_fatalities", "fatalities", "deaths")
     deaths = stories.agreed(listed, ent, "P1120", True)
     hurt = stories.agreed(stories._first(ib, "total_injuries", "injuries", "injured"), ent, "P1339", True)
-    name_hi = wiki.label(ent, "hi")
+    name_hi = wiki.common_hindi(ent)
     kind = "protest" if cat in ("protest", "movement") else "incident"
     reports = _reporting(cand, name, name_hi, since=None if ongoing else _since(when))
     toll = None
@@ -1193,8 +1220,6 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     beats = [Beat(b["say"].strip(), "photo:" + "/".join(str(i) for i in (v or [b["photo"]])),
                   {"big": b["caption"].strip(), "small": card_label(b.get("label"))})
              for b, v in zip(draft["beats"], views)]
-    beats.append(Beat(OUTRO, "outro", {"big": config.NAME_HI or config.NAME or "", "small": "स्रोत विवरण में"},
-                      pause_after=0.5))
     ground = source + "\n" + "\n".join(facts_text)
     in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
     allowed = {n for f in facts for n in f.numbers}
@@ -1221,8 +1246,8 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     if reports:
         credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
-    scene = {"template": "bulletin", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
-             "name_hi": name_hi, "names": draft.get("names", []),
+    scene = {"template": "full", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
+             "name_hi": name_hi, "subject_person": bool(person), "names": draft.get("names", []),
              "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
     if ov:
         scene["orbitwire"] = ov
@@ -1297,7 +1322,7 @@ def build_report(cand: dict) -> Short:
             return build_explainer(cand | {"qid": pid, "title": title, "person": True, "phrase": name,
                                            "story": cand["title"], "category_hi": "घटना",
                                            "story_keys": sorted(outlets.headline_keys(cand["title"])[0])})
-    name_hi = wiki.label(place, "hi") if place else None
+    name_hi = wiki.common_hindi(place) if place else None
     context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
     ov, exclude = _shared(cand, "", {}, None, context)
     photos = fill_photos(context, work / "photos", exclude,
@@ -1353,7 +1378,7 @@ def build_explainer(cand: dict) -> Short:
     ent = wiki.entities([qid])[qid]
     person = bool(cand.get("person"))
     name = stories.plain_title(wiki.label(ent) or title)
-    name_hi = wiki.label(ent, "hi")
+    name_hi = wiki.common_hindi(ent)
     phrase = cand.get("phrase") or name
     work = WORK / sid
     mine = [r for r in cand.get("reports") or []

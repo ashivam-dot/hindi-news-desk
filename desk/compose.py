@@ -423,6 +423,8 @@ def _mix(narration: Path, short: Short, seconds: float, out: Path, accents: list
 
 def render(short: Short, timing: dict, work: Path) -> dict:
     """short.mp4 (1080x1920, 30 fps, H.264 + AAC) and a few stills."""
+    if short.scene.get("template") == "full":
+        return render_full(short, timing, work)
     if short.scene.get("template") == "bulletin":
         return render_bulletin(short, timing, work)
     mood = short.scene.get("mood", "tribute")
@@ -770,12 +772,11 @@ BURST_STEP, BURST_MAX, BURST_MIN = 0.18, 5, 3  # the opening flash: up to five p
 FOLLOW = "हर अपडेट के लिए चैनल फ़ॉलो करें"
 
 
-def _hookcard_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
+def _hookcard_layer(text: str, size: int = 70, width: int = W - 260) -> tuple[np.ndarray, np.ndarray]:
     """The opening line over the picture: dark text on a white box with a solid red offset shadow (BBC)."""
     text = drawable(text, "ExtraBold")
-    width = W - 260
-    rows = wrap2(text, "ExtraBold", 70, width)
-    fonts = [_fit("ExtraBold", 70, r, width, 40) for r in rows]
+    rows = wrap2(text, "ExtraBold", size, width)
+    fonts = [_fit("ExtraBold", size, r, width, 40) for r in rows]
     tall = [f.getbbox(r)[3] - f.getbbox(r)[1] for f, r in zip(fonts, rows)]
     bw = max(round(f.getlength(r)) for f, r in zip(fonts, rows)) + 64
     bh = sum(tall) + 22 * (len(rows) - 1) + 60
@@ -962,3 +963,210 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "bulletin", "photos": len(photos),
             "fps": FPS, "size": [W, H]}
+
+
+# The full-screen Short (owner, 2026-10-21: "you are not able to present the video properly"). The bulletin kept the
+# photo in a window under half the frame, under a headline bar, a fact card and a ticker; the Hindi Shorts that win
+# on the same stories (The Expert Show's Nana Patekar Short, 496K; BBC Hindi, NDTV) fill the screen with the
+# picture, change it every 3-4 s and put little text on it. So: the picture edge to edge, the brand and the AI label
+# small at the top, a hook card for the first seconds, a name strap when a person first appears, the beat's fact as
+# a chip that pops up and goes, big subtitles, and a short silent follow card. Text stays above YouTube's own title
+# and buttons, which cover the bottom fifth of a Short.
+FULL_FACE = 0.24  # a portrait's face this share of the frame height
+FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.555, 0.505, 0.565, 0.715, 0.785
+FULL_CAPTION_SIZE = 84
+NAME_HOLD, CHIP_HOLD = 2.6, 3.0  # seconds a name strap and a fact chip stay up
+END_HOLD = 1.2  # seconds of follow card after the last word
+SPLIT_GAP = 8
+
+
+def scrim() -> np.ndarray:
+    """Darkening, top and bottom, so white text reads on any picture: (H, 1, 1), multiplied into a frame."""
+    y = np.linspace(0.0, 1.0, H, dtype=np.float32)
+    top = 1 - 0.5 * np.clip(1 - y / 0.14, 0, 1) ** 1.6
+    low = 1 - 0.66 * np.clip((y - 0.46) / 0.34, 0, 1) ** 1.3
+    return (top * low)[:, None, None]
+
+
+def splits(shots: list[dict], photos: list[dict]) -> dict[int, tuple[int, int]]:
+    """{beat: (top photo, bottom photo)} for each beat that names two people with their own portraits: its second
+    picture shows both, one over the other, the way news Shorts set two sides against each other."""
+    out = {}
+    for k, shot in enumerate(shots):
+        people = [i for i in dict.fromkeys(shot.get("views") or []) if 0 <= i < len(photos)
+                  and photos[i].get("role") == "person" and photos[i].get("who")]
+        if len(people) >= 2 and photos[people[0]]["who"] != photos[people[1]]["who"]:
+            out[k] = (people[0], people[1])
+    return out
+
+
+def name_straps(seen: list[dict], photos: list[dict]) -> dict[int, float]:
+    """{view: start} for the views where a person (or a police force) first comes on screen: their name strap shows
+    then and never again, so a portrait is named when it matters and the screen stays clear after."""
+    out, named = {}, set()
+    for v, view in enumerate(seen):
+        p = photos[view["photo"]]
+        who = p.get("who")
+        if who and p.get("role") not in ("map", "place") and who not in named and not view.get("outro"):
+            named.add(who)
+            out[v] = view["start"]
+    return out
+
+
+def _end_full(accent: tuple, disclosure_text: str) -> list[tuple[np.ndarray, np.ndarray] | None]:
+    name = config.NAME_HI or config.NAME
+    logo = _rgba(_text_layer([(name, _fit("ExtraBold", 120, name, W - 160), accent + (255,))], stroke=5)) \
+        if name else None
+    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 50), NEWS_RED + (255,), height=88, pad=30))
+    disc = _rgba(_text_layer([(disclosure_text, _fit("Medium", 34, disclosure_text, W - 140), (255, 255, 255, 225))],
+                             stroke=2))
+    return [logo, follow, disc]
+
+
+def render_full(short: Short, timing: dict, work: Path) -> dict:
+    """The full-screen Short (see the comment above FULL_FACE)."""
+    mood = short.scene.get("mood", "news")
+    accent = NEWS_GOLD
+    # A person story's own photos are of that person: they get the name strap and can face another person.
+    subject = short.scene.get("name_hi") if short.scene.get("subject_person") else None
+    photos = [p if p.get("who") or p.get("role") or not subject else p | {"who": subject, "role": "person"}
+              for p in short.scene["photos"]]
+    plates = {i: Plate(p, Path(p["path"]).with_suffix(".depth.npy"), face_share=FULL_FACE)
+              for i, p in enumerate(photos)}
+    half = (W, (H - SPLIT_GAP) // 2)
+    cam, cam_half = Camera(), Camera(half)
+    grade, grade_half = Grade(mood, seed=len(short.id), bands=False), Grade(mood, seed=len(short.id), size=half,
+                                                                          bands=False)
+    shade = scrim()
+    captions = Captions(timing["words"], accent, size=FULL_CAPTION_SIZE, y=FULL_CAPTION_Y)
+    spans = timing["beats"]
+    speech = timing["duration"]
+    duration = speech + END_HOLD
+    shots = []
+    for i, (beat, (s, e)) in enumerate(zip(short.beats, spans)):
+        shown = [p for p in shot_photos(beat.shot) if p in plates]
+        idx = shown[0] if shown else (shots[-1]["photo"] if shots else 0)
+        shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
+                      "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
+                      "beat": beat, "outro": beat.shot == "outro"})
+    seen = views(shots, timing["words"])
+    pair = splits(shots, photos)
+    half_plates = {i: Plate(photos[i], Path(photos[i]["path"]).with_suffix(".depth.npy"), size=half, face_share=0.42)
+                   for ab in pair.values() for i in ab}
+    end_at = next((s["start"] for s in shots if s["outro"]), speech + 0.15)
+    big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
+    chips = [_fact_layer(big[k], b["beat"].card.get("small", ""), "") if k and big[k] and not b["outro"]
+             and big[k] != big[k - 1] else None for k, b in enumerate(shots)]
+    hook_text = (short.scene.get("hook") or big[0]) if shots else ""
+    hook = _hookcard_layer(hook_text, size=84, width=W - 200) if hook_text else None
+    strip = _strip_layer(label_for(short), NEWS_RED)
+    badge = _badge_layer()
+    credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
+    names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
+    stamps = [(at, _place_layer(where)) for at, where in places_on(seen, photos)]
+    flash = [] if short.loss else burst(seen, photos)
+    flash_end = len(flash) * BURST_STEP
+    straps = {v: max(at, flash_end, HOOK_HOLD if hook_text else 0.0) for v, at in name_straps(seen, photos).items()}
+    straps = {v: at for v, at in straps.items() if at < seen[v]["end"] - 0.6}
+    logo, follow, disc = _end_full(accent, disclosure(photos))
+    work.mkdir(parents=True, exist_ok=True)
+    accents = None if short.loss else [s["start"] for s in shots[1:]] + ([flash_end] if flash else [])
+    mixed = _mix(work / "narration.wav", short, duration, work, accents)
+    out = work / "short.mp4"
+    stills = work / "stills"
+    stills.mkdir(exist_ok=True)
+    enc = subprocess.Popen(
+        ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
+         "-i", "-", "-i", str(mixed), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
+    top_y = 40
+    n = int(math.ceil(duration * FPS))
+    still_at = {int(n * k / 5) for k in range(5)}
+
+    def picture(view: dict, u: float, punch: float, i: int) -> tuple[np.ndarray, list[int]]:
+        k = view["beat_k"]
+        if view["cut"] and k in pair:
+            a, b = pair[k]
+            frame = np.zeros((H, W, 3), np.uint8)
+            frame[:half[1]] = grade_half.apply(cam_half.shoot(half_plates[a], u, MOTIONS[1], punch), i)
+            frame[H - half[1]:] = grade_half.apply(cam_half.shoot(half_plates[b], u, MOTIONS[3], punch), i)
+            frame[half[1]:H - half[1]] = NEWS_GOLD
+            return frame, [a, b]
+        return grade.apply(cam.shoot(plates[view["photo"]], u, view["motion"], punch), i), [view["photo"]]
+
+    for i in range(n):
+        t = i / FPS
+        v = next(j for j, s in enumerate(seen) if t < s["end"] or j == len(seen) - 1)
+        view = seen[v]
+        k = view["beat_k"]
+        shot = shots[k]
+        u = (t - view["start"]) / max(view["end"] - view["start"], 0.1)
+        punch = 0.03 * max(0.0, 1 - (t - view["start"]) / 0.35) if v else 0.06 * max(0.0, 1 - (t - flash_end) / 0.6)
+        if t < flash_end:
+            on = [flash[int(t / BURST_STEP)]]
+            frame = grade.apply(cam.shoot(plates[on[0]], 0.0, MOTIONS[on[0] % len(MOTIONS)], 0.05), i)
+        else:
+            frame, on = picture(view, u, punch, i)
+            if v and not view["cut"] and (t - view["start"]) * FPS < CROSSFADE:
+                prev = seen[v - 1]
+                pu = (t - prev["start"]) / max(prev["end"] - prev["start"], 0.1)
+                a = (t - view["start"]) * FPS / CROSSFADE
+                before, was = picture(prev, pu, 0.0, i)
+                frame = cv2.addWeighted(frame, a, before, 1 - a, 0)
+                on = on if a >= 0.5 else was
+        frame = (frame * shade).astype(np.uint8)
+        split = len(on) == 2
+        if t >= end_at:
+            fade = min(1.0, (t - end_at) / 0.35)
+            frame = cv2.addWeighted(frame, 1 - 0.5 * fade, np.zeros_like(frame), 0.5 * fade, 0)
+            block = ((logo[1].shape[0] + 34) if logo is not None else 0) + follow[1].shape[0] + 30 + disc[1].shape[0]
+            y = round(H * 0.42 - block / 2)
+            if logo is not None:
+                _blit(frame, logo, (W - logo[1].shape[1]) // 2, y, fade)
+                y += logo[1].shape[0] + 34
+            _blit(frame, follow, (W - follow[1].shape[1]) // 2, y, fade)
+            _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + follow[1].shape[0] + 30, fade)
+        else:
+            if split:
+                for j, p in enumerate(on):
+                    y0 = 0 if j == 0 else H - half[1]
+                    if p in names:
+                        _blit(frame, names[p], 36, y0 + half[1] - 150 if j == 0 else y0 + 30)
+                    _blit(frame, credits[p], 36, y0 + half[1] - 62 if j == 0 else round(H * FULL_CREDIT_Y), 0.85)
+            else:
+                p = on[0]
+                if v in straps and p in names and 0 <= t - straps[v] < NAME_HOLD:
+                    a = min(1.0, (t - straps[v]) / 0.2, (NAME_HOLD - (t - straps[v])) / 0.3)
+                    _blit(frame, names[p], 36, round(H * FULL_NAME_Y), a)
+                _blit(frame, credits[p], 36, round(H * FULL_CREDIT_Y), 0.85)
+                stamp = next((s for at, s in reversed(stamps) if t >= at), None)
+                if stamp is not None and t >= flash_end and photos[p].get("role") in ("map", "place"):
+                    _blit(frame, stamp, 36, top_y + (strip[1].shape[0] + 18 if strip is not None else 0),
+                          min(0.97, (t - max(flash_end, view["start"])) / 0.3))
+            if hook is not None and t < HOOK_HOLD:
+                a = min(1.0, (HOOK_HOLD - t) / 0.3)
+                _blit(frame, hook, (W - hook[1].shape[1]) // 2, round(H * FULL_HOOK_Y) - hook[1].shape[0] // 2, a)
+            elif chips[k] is not None and t - shot["start"] < CHIP_HOLD:
+                since = t - shot["start"]
+                a = min(1.0, since / 0.15, (CHIP_HOLD - since) / 0.3)
+                layer = chips[k]
+                if since < 0.15:
+                    s = 0.85 + 0.15 * since / 0.15
+                    h, w = layer[1].shape[:2]
+                    layer = (cv2.resize(layer[0], (max(1, round(w * s)), max(1, round(h * s)))),
+                             cv2.resize(layer[1], (max(1, round(w * s)), max(1, round(h * s))))[..., None])
+                y = round(H * FULL_CHIP_Y) - (0 if not split else round(H * 0.06))
+                _blit(frame, layer, 36, y, max(0.0, a))
+            captions.draw(frame, t)
+        if strip is not None:
+            _blit(frame, strip, 36, top_y, 0.96)
+        _blit(frame, badge, W - badge[1].shape[1] - 36, top_y, 0.97)
+        _progress(frame, t / duration, NEWS_RED)
+        enc.stdin.write(frame.tobytes())
+        if i in still_at:
+            Image.fromarray(frame).save(stills / f"t{i // FPS:03d}.png")
+    enc.stdin.close()
+    if enc.wait() != 0:
+        raise RuntimeError("ffmpeg failed to encode the Short")
+    return {"duration": round(duration, 2), "frames": n, "template": "full", "photos": len(photos),
+            "splits": len(pair), "fps": FPS, "size": [W, H]}

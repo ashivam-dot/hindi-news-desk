@@ -13,13 +13,11 @@ SUBJECT = {"en": "Ramesh Prasad Verma", "hi": "रमेश प्रसाद �
 PHOTOS = [{"file": f"File:{i}.jpg", "description": "Ramesh Prasad Verma"} for i in range(3)]
 SAYS = [
     "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे, 8 अक्टूबर 2026 को उनका निधन हो गया।",
-    "वाराणसी की गलियों में पले रमेश बचपन से ही मंदिर के भजनों में अपनी आवाज़ ढूंढते थे।",
+    "रमेश वाराणसी के रहने वाले थे।",
     "1968 में उनका पहला एल्बम आया और पूरे देश ने उस नई आवाज़ को ध्यान से सुना।",
     "उन्होंने 12 भाषाओं में गाया, और उनकी आवाज़ हर घर तक पहुंच गई।",
     "मुंबई के एक संगीत समारोह में 3 लाख से ज़्यादा लोग उन्हें सुनने आए थे।",
     "1999 में उन्हें पद्म श्री मिला, जिसे उन्होंने अपने गुरु को समर्पित कर दिया।",
-    "मंच के बाहर वे सादगी से रहते थे और हर किसी से प्यार से मिलते थे।",
-    "उनकी आवाज़ अब रिकॉर्ड में रहेगी, और उनके सुर हमेशा हमारे साथ रहेंगे।",
 ]
 NAMES = [{"hi": "रमेश प्रसाद वर्मा", "en": "Ramesh Prasad Verma"}, {"hi": "वाराणसी", "en": "Varanasi"},
          {"hi": "मुंबई", "en": "Mumbai"}, {"hi": "पद्म श्री", "en": "Padma Shri"}]
@@ -66,7 +64,7 @@ def test_the_card_label_is_shown_under_the_caption():
                           [SOURCE_EN], SOURCE_EN, [{"credit": "c", "page": "p"}], ["https://x"], "2026-10-08",
                           False, "news", [], "", "")
     assert short.beats[0].card == {"big": "श्रद्धांजलि", "small": "निधन"}
-    assert short.scene["template"] == "bulletin"
+    assert short.scene["template"] == "full" and short.beats[-1].shot != "outro"
 
 
 def test_a_number_not_in_the_sources_is_caught():
@@ -308,7 +306,7 @@ def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):
 
 
 def test_checker_items_that_quote_the_script_still_reject(tmp_path):
-    flagged = ["'हर किसी से प्यार से मिलते थे' is not in the sources"]
+    flagged = ["'अपने गुरु को समर्पित कर दिया' is not in the sources"]
     out, log, _ = write([flagged, ["The concert size is not stated"], []], tmp_path)
     assert out == draft() and [e["problems"] for e in log] == [
         ["unsupported: " + flagged[0]], ["unsupported: The concert size is not stated"]]
@@ -339,7 +337,7 @@ def test_a_name_the_subject_does_not_link_is_still_held_to_wikidatas_spelling(mo
     problems, _ = writer.validate({"title": "t", "beats": beats, "names": bad["names"][:1]}, PHOTOS,
                                   {"en": "Eknath Shinde", "hi": None}, "Eknath Shinde visited.", "", spelled, [],
                                   "explainer", False)
-    assert "write Eknath Shinde as एकनाथ शिंदे (Wikidata's Hindi name), not एकनाथ शून्डे" in problems
+    assert "write Eknath Shinde as एकनाथ शिंदे (the Hindi name people know), not एकनाथ शून्डे" in problems
 
 
 def test_the_hindi_source_is_dropped_when_missing():

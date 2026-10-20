@@ -102,6 +102,29 @@ def test_a_hindi_label_is_spoken_without_its_disambiguation():
     assert wiki.spoken_label({"labels": {"hi": {"value": "heropanti"}}}) is None
 
 
+def test_the_hindi_name_is_the_one_people_know_not_the_birth_name():
+    from desk import wiki
+
+    jackie = {"labels": {"en": {"value": "Jackie Shroff"}, "hi": {"value": "जय किशन श्राफ"}},
+              "sitelinks": {"hiwiki": {"title": "जैकी श्रॉफ"}}, "aliases": {"hi": [{"value": "जग्गू दादा"}]}}
+    assert wiki.common_hindi(jackie) == "जैकी श्रॉफ"
+    modi = {"labels": {"en": {"value": "Narendra Modi"}, "hi": {"value": "नरेन्द्र मोदी"}},
+            "aliases": {"hi": [{"value": "नमो"}]}}
+    assert wiki.common_hindi(modi) == "नरेन्द्र मोदी"
+    mithun = {"labels": {"en": {"value": "Mithun Chakraborty"}, "hi": {"value": "मिथुन चक्रवर्ती"}},
+              "aliases": {"hi": [{"value": "मिथुन चक्रबर्ती"}]}}
+    assert wiki.common_hindi(mithun) == "मिथुन चक्रवर्ती"
+    advani = {"labels": {"en": {"value": "L. K. Advani"}, "hi": {"value": "लालकृष्ण आडवाणी"}},
+              "aliases": {"hi": [{"value": "आडवाणी"}]}}
+    assert wiki.common_hindi(advani) == "लालकृष्ण आडवाणी"
+    assert wiki.common_hindi({"labels": {"en": {"value": "Donald Trump"}, "hi": {"value": "डॉनल्ड ट्रम्प"}}}) \
+        == "डोनाल्ड ट्रंप"
+    film = {"labels": {"en": {"value": "Baaghi (2000 film)"}, "hi": {"value": "बाग़ी (2000 फ़िल्म)"}}}
+    assert wiki.common_hindi(film) == "बाग़ी"
+    assert wiki.common_hindi({"labels": {"hi": {"value": "मुंबई पुलिस"}}}) == "मुंबई पुलिस"
+    assert wiki.common_hindi({"labels": {"en": {"value": "Kota"}}}) is None
+
+
 def test_hindi_spellings_drop_abbreviation_dots_but_never_use_a_bare_surname():
     assert explain.hindi_names_of("एल. मुरुगन") == ["एल. मुरुगन", "एल मुरुगन"]
     assert explain.hindi_names_of("लद्दाख़") == ["लद्दाख़"]

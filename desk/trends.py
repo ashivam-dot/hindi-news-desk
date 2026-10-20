@@ -263,7 +263,7 @@ def candidate(title: str) -> dict:
     cats = wiki.classify([page["qid"]])[page["qid"]]
     ent = wiki.entities([page["qid"]])[page["qid"]]
     base = {"qid": page["qid"], "title": page["title"], "id": f"wk-{page['qid']}", "fame": 0, "via": ["manual"],
-            "region": region(ent, set()), "india_link": india_link(ent, set()), "label_hi": wiki.label(ent, "hi")}
+            "region": region(ent, set()), "india_link": india_link(ent, set()), "label_hi": wiki.common_hindi(ent)}
     if "human" in cats:
         return base | {"kind": "death", "category": "death"}
     cat = next((c for c in ORDER if c in cats), None)
@@ -354,7 +354,7 @@ def radar(today: date | None = None) -> dict:
                 "news": h.get("news", 0), "news_at": news_at, "headlines": h.get("headlines", []),
                 "hindi_news": h.get("hindi_news", 0), "hindi_headlines": h.get("hindi_headlines", []),
                 "region": region(ent, geos), "india_link": india_link(ent, geos, h.get("hindi_news", 0)),
-                "geos": sorted(geos), "label_hi": wiki.label(ent, "hi"), "via": h["via"],
+                "geos": sorted(geos), "label_hi": wiki.common_hindi(ent), "via": h["via"],
                 "owners": h.get("owners", []), "reports": [outlets.compact(r) for r in h.get("reports", [])][:8]}
         if "human" in cats:
             died = next((wiki.wd_time(c["value"]) for c in wiki.claims(ent, "P570")), None)

@@ -212,17 +212,13 @@
   "Signal",
   "Telegram",
   "BMW",
-  "Rapido"
+  "Rapido",
+  "Lawrence Bishnoi",
+  "Lawrence Bishnoi gang"
  ],
  "never": [
   "Anil Pandit",
   "अनिल पंडित",
-  "Lawrence Bishnoi",
-  "Bishnoi",
-  "बिश्नोई",
-  "बिशनोई",
-  "लॉरेंस",
-  "लारेंस",
   "Anmol Bishnoi",
   "Goldy Brar",
   "गोल्डी",
@@ -230,6 +226,66 @@
   "गोदारा"
  ],
  "angles": [
+  {
+   "key": "family-r2",
+   "focus": "How Tiger Shroff's family responded: what his father Jackie Shroff, his mother Ayesha Shroff and his sister Krishna Shroff said and did after the firing (their own words as the REPORTING quotes them), Jackie Shroff's first public appearance the next day, and the ministers who met the family.",
+   "reports": [
+    {
+     "title": "Tiger is okay: Father Jackie Shroff's team breaks silence after shooting incident - India Today",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/tiger-is-okay-father-jackie-shroff-breaks-silence-after-shooting-incident-3020317-2026-10-18",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T17:15:58+00:00"
+    },
+    {
+     "title": "Ayesha Shroff says 'God is great' as Tiger Shroff escapes unhurt; Eknath Shinde on mood inside actor's home",
+     "url": "https://indianexpress.com/article/entertainment/bollywood/mother-ayesha-shroff-says-god-is-great-as-tiger-shroff-escapes-unhurt-they-are-quite-shaken-up-10927597/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T17:15:58+00:00"
+    },
+    {
+     "title": "Tiger Shroff Firing: Jackie Shroff Makes First Public Appearance Since Gun Attack On Son | Video | Bollywood News - News18",
+     "url": "https://www.news18.com/amp/movies/bollywood/tiger-shroff-firing-jackie-shroff-makes-first-public-appearance-since-gun-attack-on-son-video-ws-kl-10389408.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T17:15:58+00:00"
+    },
+    {
+     "title": "Jackie Shroff makes first public appearance after son Tiger Shroff's firing incident; attends naming ceremony of Bappi Lahiri Marg - The Times of India",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/jackie-shroff-makes-his-first-public-appearance-following-son-tiger-shroffs-firing-incident-attends-naming-ceremony-of-bappi-lahiri-marg/articleshow/135061072.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-20T17:15:58+00:00"
+    }
+   ],
+   "arrests": false,
+   "words": [
+    "Jackie",
+    "Ayesha",
+    "Krishna",
+    "Shinde",
+    "Shelar",
+    "Fadnavis",
+    "जैकी",
+    "आयशा",
+    "कृष्णा"
+   ],
+   "hook": "पिता जैकी श्रॉफ: 'टाइगर ठीक है'",
+   "replaces": "UiPy0b-Ib8A"
+  },
   {
    "key": "probe",
    "focus": "Who was caught: how many accused, their ages, which districts and states they are from, what work police say they did, whether they had earlier cases, where and when they were caught, and what police say they were promised. Never name them; say where each is from.",
@@ -798,7 +854,7 @@
   },
   {
    "key": "earlier-attacks",
-   "focus": "The earlier attacks the reports compare this one with: the April 2024 firing outside Salman Khan's Galaxy Apartments, the October 2024 shooting of Baba Siddique and the February 2026 firing outside Rohit Shetty's home, what happened in each as the REPORTING tells it, and that police have not confirmed who is behind the Tiger Shroff firing. Never name a gang or a gangster: say 'एक गैंग' if needed.",
+   "focus": "The earlier attacks the reports compare this one with: the April 2024 firing outside Salman Khan's Galaxy Apartments, the October 2024 shooting of Baba Siddique and the February 2026 firing outside Rohit Shetty's home, what happened in each as the REPORTING tells it. The Lawrence Bishnoi gang may be named only as police or the REPORTING attribute it (for example 'पुलिस लॉरेंस बिश्नोई गैंग से जुड़े होने की जांच कर रही है', or 'सोशल मीडिया पर लॉरेंस बिश्नोई गैंग के नाम से दावा, पुलिस ने पुष्टि नहीं की'), never as fact; say that police have not confirmed who is behind the Tiger Shroff firing. Never name an individual accused or gangster.",
    "reports": [
     {
      "title": "From Salman Khan, Baba Siddique to Tiger Shroff: The Lawrence Bishnoi gang hit list that keeps growing",
@@ -854,7 +910,12 @@
     "February",
     "सलमान",
     "सिद्दीकी",
-    "रोहित"
+    "रोहित",
+    "Bishnoi",
+    "gang",
+    "claim",
+    "बिश्नोई",
+    "गैंग"
    ],
    "hook": "सलमान खान से रोहित शेट्टी तक"
   }

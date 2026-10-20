@@ -332,6 +332,25 @@ def test_an_attack_on_a_famous_actor_is_one_story_named_by_their_full_name():
     assert outlets.headline_kind("Watch: Bollywood stars at the Diwali party") is None
 
 
+@pytest.mark.parametrize("title", [
+    "Shots fired at Tiger Shroff's car outside football ground in Juhu",
+    "Tiger Shroff attacked in Mumbai, driver and fan hurt",
+    "Baba Siddique shot dead in Mumbai's Bandra",
+    "Singer Sidhu Moose Wala shot dead in Punjab's Mansa",
+])
+def test_the_nights_biggest_attacks_are_seen_at_once(title):
+    assert outlets.headline_kind(title) == "attack"
+
+
+@pytest.mark.parametrize("title", [
+    "India beat Australia in the World Cup final",
+    "Kolkata doctor rape-murder: CBI arrests civic volunteer",
+    "Rahul Gandhi attacked the government over prices",
+])
+def test_sport_sexual_crimes_and_verbal_attacks_are_not_incidents(title):
+    assert outlets.headline_kind(title) is None
+
+
 def test_an_nw_story_about_a_person_is_told_over_their_own_portraits(monkeypatch):
     monkeypatch.setattr(config, "NEW_STORIES", True)
     cand = outlets.stories([item(k, t, h) for k, t, h in TIGER], NOW)[0]

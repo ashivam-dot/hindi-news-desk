@@ -35,8 +35,8 @@ INDIA = "Q668"
 COUNTRY_KINDS = {"Q6256", "Q3624078", "Q7275"}
 POLICE = ("पुलिस",)
 
-# Maps fill the bulletin's photo window plate (compose.Plate: the window times compose.MARGIN).
-MAP_W, MAP_H = 1253, 1021
+# Maps fill the full-screen Short's plate (compose.Plate: the frame times compose.MARGIN).
+MAP_W, MAP_H = 1253, 2227
 TILES = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
 CACHE = Path(__file__).resolve().parents[1] / "work" / "cache" / "osm"
 UPSCALE = 2.4  # tile pixels shown at most this much larger, so the map's own labels stay readable
@@ -368,7 +368,7 @@ def _police_photos(city: dict, folder: Path, exclude: set[str]) -> list[dict]:
         img = cv2.imread(r["path"])
         if img is None or writer.featured_face(img, faces.detect(img)):
             continue
-        out.append(r | {"focus": None, "role": "police", "who": wiki.label(ent, "hi") or f"{city['hi']} पुलिस"})
+        out.append(r | {"focus": None, "role": "police", "who": wiki.common_hindi(ent) or f"{city['hi']} पुलिस"})
     return out[:2]
 
 

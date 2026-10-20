@@ -198,10 +198,15 @@ def skeleton_en(text: str) -> str:
     return re.sub(r"[aeiouyh]", "", t)
 
 
+def likeness(hi: str, en: str) -> float:
+    """How closely a Hindi spelling transliterates an English name, 0 to 1 ("जैकी श्रॉफ" 0.73, "जय किशन श्राफ" 0.62
+    for "Jackie Shroff")."""
+    a, b = skeleton_hi(hi).replace("c", "k"), skeleton_en(en).replace("c", "k")
+    if not a or not b:
+        return 0.0
+    return difflib.SequenceMatcher(None, a, b).ratio()
+
+
 def sounds_alike(hi: str, en: str) -> bool:
     """A rough check that a Hindi spelling transliterates an English name ("चेन्नई" ~ "Chennai")."""
-    a, b = skeleton_hi(hi), skeleton_en(en)
-    a, b = a.replace("c", "k"), b.replace("c", "k")
-    if not a or not b:
-        return False
-    return difflib.SequenceMatcher(None, a, b).ratio() >= 0.6
+    return likeness(hi, en) >= 0.6
