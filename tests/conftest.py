@@ -1,6 +1,13 @@
 import pytest
 
-from desk import media, outlets, visuals, wiki
+from desk import media, outlets, plan, visuals, wiki
+
+
+@pytest.fixture(autouse=True)
+def no_live_requests(monkeypatch, tmp_path_factory):
+    """The repo's own case and remake files are live work orders; tests that need one write their own."""
+    monkeypatch.setattr(plan, "CASES", tmp_path_factory.mktemp("cases"))
+    monkeypatch.setattr(plan, "REMAKES", tmp_path_factory.mktemp("remakes"))
 
 
 @pytest.fixture(autouse=True)

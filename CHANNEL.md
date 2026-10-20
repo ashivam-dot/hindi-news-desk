@@ -185,7 +185,10 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     response, the industry's, the probe, the government's, the scene), each from reports chosen for that angle,
     ahead of the other ready stories and inside the daily cap and the 20-minute gap. A case Short names only the
     people, places and bodies its file lists (`writer.off_case`): an accused is never named, only how many, where
-    they are from, where they were caught and what police say;
+    they are from, where they were caught and what police say. The file's `never` list (an accused's or a gang's
+    name, in English and Hindi) may not appear anywhere in the script, and headlines carrying one are dropped. Each
+    angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
+    so the angles keep coming until its `until` after the story leaves the radar;
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
     of buildings); its pictures are the person (a Commons search, not only their article), the other people and
     the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted

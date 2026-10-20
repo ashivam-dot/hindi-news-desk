@@ -415,12 +415,16 @@ def not_today(text: str) -> list[str]:
     return ["this did not happen today: remove आज/अभी and give the date"] if hits else []
 
 
-def off_case(draft: dict, names_ok: list[str]) -> list[str]:
-    """Problems for a name the case file does not list: in a case Short that is how an accused's name is kept out."""
+def off_case(draft: dict, names_ok: list[str], never: list[str] | None = None) -> list[str]:
+    """Problems for a name the case file does not list, and for any of its never-say words (an accused's or a
+    gang's name in English and Hindi) anywhere in the script: in a case Short that is how they are kept out."""
     ok = {n.strip().lower() for n in names_ok}
+    text = script_text(draft) + " " + " ".join(f"{p.get('en', '')} {p.get('hi', '')}" for p in draft.get("names") or []
+                                               if isinstance(p, dict))
     return [f"{p['en']} is not on this case's list of names: leave them out" for p in draft.get("names") or []
             if isinstance(p, dict) and isinstance(p.get("en"), str) and p["en"].strip()
-            and p["en"].strip().lower() not in ok]
+            and p["en"].strip().lower() not in ok] + \
+        [f"never name {w} (an accused or a gang): leave them out" for w in never or [] if hindi.contains(text, w)]
 
 
 def script_text(draft: dict) -> str:
@@ -642,13 +646,14 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           angle: str | None = None, pen: Pen | None = None,
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
           earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
-          names_ok: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
+          names_ok: list[str] | None = None, never: list[str] | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
     lead headlines (the title's style); earlier: the titles of this story's earlier parts today (a follow-up part).
     start: a draft to check first (a remake's reviewed script); it faces every check a written draft does. focus: one
-    angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name."""
+    angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name;
+    never: words (an accused's or a gang's name) the script may not contain at all."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -698,7 +703,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not today_ok:
                 problems += not_today(script_text(draft))
             if names_ok:
-                problems += off_case(draft, names_ok)
+                problems += off_case(draft, names_ok, never)
             if attempt < DRAFTS - 1:
                 problems += monotone(draft) + bookish(draft)
             if not problems:
@@ -1361,7 +1366,8 @@ def build_explainer(cand: dict) -> Short:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {need})"
                          + (" not used by Orbitwire" if ov else ""))
     story = cand.get("story") or (cand.get("headlines") or [title])[0]
-    words = [phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])
+    words = ([phrase, name] + ([name_hi] if name_hi else []) + sorted(outlets.headline_keys(story)[0])
+             + list(cand.get("case_words") or []))
     # A case's arrests angle keeps what police say about the accused; off_case keeps their names out.
     reports = clean_reports(reports, words, perpetrators=not (cand.get("arrests") and cand.get("names_ok")))
     source = _strip(wiki.article_text(title, limit=EXPLAIN_SOURCE, per_section=900), SUICIDE_WORDS)
@@ -1379,7 +1385,7 @@ def build_explainer(cand: dict) -> Short:
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
                              title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
-                             focus=cand.get("focus"), names_ok=cand.get("names_ok"))
+                             focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"))
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "

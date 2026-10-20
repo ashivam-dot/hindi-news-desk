@@ -20,6 +20,14 @@ def test_a_case_short_names_only_the_people_and_places_its_file_lists():
         ["Some Accused is not on this case's list of names: leave them out"]
 
 
+def test_a_case_short_never_says_an_accused_or_gang_name_even_unlisted():
+    draft = {"title": "टाइगर श्रॉफ केस", "names": [{"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}],
+             "beats": [{"say": "पुलिस के मुताबिक़ बिश्नोई गैंग के नाम से दावा हुआ।", "caption": "", "label": ""}]}
+    assert writer.off_case(draft, ["Tiger Shroff"], ["Bishnoi", "बिश्नोई"]) == \
+        ["never name बिश्नोई (an accused or a gang): leave them out"]
+    assert writer.off_case(draft, ["Tiger Shroff"], ["Anil Pandit", "अनिल पंडित"]) == []
+
+
 def test_casualty_words_cover_more_phrasings_but_not_inside_other_words():
     assert gate.found("हादसे में 12 लोगों की जान चली गई", gate.CASUALTY)
     assert gate.found("एक व्यक्ति मारा गया", gate.CASUALTY)

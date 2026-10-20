@@ -272,7 +272,8 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
         {"name": "tiger", "story": "nw-20261019-tiger-shroff-attack", "until": "2099-01-01T00:00:00+00:00",
          "names_ok": ["Tiger Shroff"], "angles": [
-             {"key": "family", "focus": "The family.", "reports": [report], "names_ok": ["Jackie Shroff"]},
+             {"key": "family", "focus": "The family.", "reports": [report], "names_ok": ["Jackie Shroff"],
+              "words": ["Jackie"]},
              {"key": "probe", "focus": "The probe.", "reports": [report], "arrests": True}]}))
     ledger.record_publish({"id": "nw-20261019-tiger-shroff-attack", "published_at": "2026-10-20T10:01:00+00:00",
                            "video_id": "NEW", "title": "पहला"})
@@ -288,13 +289,25 @@ def test_a_case_comes_back_angle_by_angle_until_each_is_on_the_channel(tmp_path,
     family = angles[0]
     assert family["names_ok"] == ["Tiger Shroff", "Jackie Shroff"] and family["earlier"] == ["पहला"]
     assert family["reports"] == [report] and not family["arrests"] and angles[1]["arrests"]
+    assert family["case_words"] == ["Jackie"] and angles[1]["case_words"] == []
     ready, _ = plan.lineup(found + [{"id": "wk-Q1", "title": "x", "fame": 10 ** 9}], utc(20, 12))
     assert ready[0]["id"] == family["id"]
     ledger.record_publish({"id": family["id"], "published_at": "2026-10-20T12:00:00+00:00", "video_id": "F",
                            "case": "tiger", "title": "परिवार"})
-    later = [c for c in plan.watch(save=False)["candidates"] if c.get("case")]
+    later = plan.watch(save=False)["candidates"]
     assert [c["id"] for c in later] == ["nw-20261019-tiger-shroff-attack-probe"]
     assert later[0]["earlier"] == ["पहला", "परिवार"]
+    # Off the radar and days old, the case still runs its angles from the candidate its file keeps.
+    spec = json.loads((tmp_path / "cases" / "tiger.json").read_text())
+    (tmp_path / "cases" / "tiger.json").write_text(json.dumps(spec | {"never": ["Bishnoi"], "cand": cand | {
+        "id": "nw-20261019-tiger-shroff-attack", "news_at": "2026-10-19T08:00:00+00:00",
+        "headlines": ["How the Bishnoi gang plays it", "Tiger Shroff shooters caught in Kota"]}}))
+    monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [], "errors": []})
+    off = plan.watch(save=False)["candidates"]
+    assert [c["id"] for c in off] == ["nw-20261019-tiger-shroff-attack-probe"]
+    assert off[0]["headlines"] == ["Tiger Shroff shooters caught in Kota"] and off[0]["never"] == ["Bishnoi"]
+    ready, notes = plan.lineup(off, utc(22, 12))
+    assert [c["id"] for c in ready] == ["nw-20261019-tiger-shroff-attack-probe"], notes
 
 
 def test_an_ongoing_story_is_not_repeated_across_a_week_boundary_or_a_series():

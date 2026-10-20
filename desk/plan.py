@@ -28,7 +28,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import ledger, news, orbitwire, outlets, trends, usgs
+from . import hindi, ledger, news, orbitwire, outlets, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -88,8 +88,11 @@ CASES = Path(__file__).resolve().parents[1] / "cases"
 
 def cases(at: datetime | None = None) -> list[dict]:
     """Case files still current: one story the channel follows angle by angle, each angle its own Short from
-    reporting chosen for it ({"name", "story": an id of the story, "until", "names_ok": [...], "angles": [{"key",
-    "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...]}]})."""
+    reporting chosen for it ({"name", "story": an id of the story, "until", "cand": the story's radar candidate, used
+    once it leaves the radar, "names_ok": [...], "never": [an accused's
+    or a gang's name, English and Hindi, the script may not contain], "angles": [{"key",
+    "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...], "words": [names the angle's excerpts
+    keep sentences about]}]})."""
     at = at or datetime.now(timezone.utc)
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CASES.glob("*.json"))]
     return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
@@ -105,10 +108,15 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict]) -> list[dict]:
             same_case(r["id"], s["story"]) or r.get("case") == s["name"])), key=lambda r: r["published_at"])
         earlier = [r.get("title") or "" for r in told]
         stem = SUFFIX.sub("", s["story"])
-        return [cand | {"id": f"{stem}-{a['key']}", "case": s["name"], "case_story": s["story"], "angle": a["key"],
-                        "focus": a["focus"],
-                        "reports": a["reports"], "arrests": bool(a.get("arrests")), "earlier": earlier,
-                        "names_ok": s.get("names_ok", []) + a.get("names_ok", [])}
+        never = s.get("never", [])
+        # A headline naming an accused or a gang would steer the writer and the excerpts towards them.
+        lines = {k: [h for h in cand[k] if not (isinstance(h, str) and any(hindi.contains(h, w) for w in never))]
+                 for k in ("headlines", "hindi_headlines") if isinstance(cand.get(k), list)}
+        return [cand | lines | {"id": f"{stem}-{a['key']}", "case": s["name"], "case_story": s["story"],
+                                "angle": a["key"], "focus": a["focus"], "reports": a["reports"],
+                                "arrests": bool(a.get("arrests")), "earlier": earlier,
+                                "names_ok": s.get("names_ok", []) + a.get("names_ok", []),
+                                "case_words": a.get("words", []), "never": never}
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")]
     return []
 
@@ -315,7 +323,8 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
     regular, urgent = can_publish(at), can_publish(at, breaking=True)
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
-        if why := stale(c, at) or unpopular(c, at):
+        # A case angle runs until its file's "until": the owner chose to follow that story.
+        if why := None if c.get("case") else stale(c, at) or unpopular(c, at):
             notes.append(f"drop {c['id']}: {why}")
             continue
         breaking = is_breaking(c, at)
@@ -419,6 +428,7 @@ def watch(save: bool = True) -> dict:
         if angles := angles_of(c, open_cases, rows):
             open_cases = [s for s in open_cases if s["name"] != angles[0]["case"]]
             stories += angles
+            continue
         if again := remake_of(c, redo):
             redo = [s for s in redo if s["replaces"] != again["replaces"]]
             if not ledger.is_done(again["id"]):
@@ -432,6 +442,10 @@ def watch(save: bool = True) -> dict:
                 stories.append(part)
             continue
         stories.append(c)
+    for s in open_cases:
+        # A case outlives the story's hours on the radar: its file keeps the candidate the angles are built on.
+        if s.get("cand"):
+            stories += angles_of(s["cand"], [s], rows)
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))
