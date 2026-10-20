@@ -111,7 +111,8 @@ def cases(at: datetime | None = None) -> list[dict]:
     or a gang's name, English and Hindi, the script may not contain], "angles": [{"key",
     "focus", "reports": [outlet items], "arrests": bool, "names_ok": [...], "words": [names the angle's excerpts
     keep sentences about], "hook": its opening card's Hindi line, a reported fact and never a question, optionally
-    "replaces": the YouTube id of the angle's earlier Short, which a "<key>-r2" angle makes again}]})."""
+    "replaces": the YouTube id of the angle's earlier Short, which a "<key>-r2" angle makes again, and "draft": a
+    reviewed script the writer checks first}]})."""
     at = at or datetime.now(timezone.utc)
     specs = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CASES.glob("*.json"))]
     return [s for s in specs if at < datetime.fromisoformat(s["until"].replace("Z", "+00:00"))]
@@ -147,7 +148,7 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | No
                                         "case_words": a.get("words", []), "never": never,
                                         "case_status": s.get("status"), "case_hurt": s.get("hurt"), "hook": a.get("hook")}
                 | ({"replaces": a["replaces"], "remake_of": f"{stem}-{a['key'].removesuffix('-r2')}"}
-                   if a.get("replaces") else {})
+                   if a.get("replaces") else {}) | ({"draft": a["draft"]} if a.get("draft") else {})
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")
                 and not (a.get("replaces") and a["replaces"] in gone)]
     return []

@@ -39,4 +39,4 @@ def test_the_writer_asks_for_the_full_screen_template_and_no_spoken_outro():
     from desk import writer
 
     assert not hasattr(writer, "OUTRO")
-    assert writer.MAX_WORDS <= 90
+    assert writer.MAX_WORDS <= 82 and writer.MAX_BEAT_WORDS <= 18

@@ -57,6 +57,21 @@ def test_the_picture_that_closed_a_beat_never_opens_the_next():
     assert at["police"] in views[6]
 
 
+def test_a_beat_that_only_quotes_the_police_shows_its_place_and_never_another_forces_police():
+    subject, cast, at = tiger_cast()
+    cast[-1]["hi"] = "मुंबई"
+    beats = [TIGER[0],
+             {"say": "पुलिस के अनुसार, आरोपी कोटा पहुंचे और वहां ट्रेन में सवार हुए थे।", "photo": 0},
+             {"say": "राजस्थान पुलिस ने बताया कि तीनों आरोपी पकड़े गए।", "photo": 0},
+             {"say": "मुंबई पुलिस आरोपियों से पूछताछ कर रही है।", "photo": 0}]
+    views = visuals.assign(beats, subject, cast, first=0)
+    assert views[1][0] != at["police"] and at["police"] not in views[2]
+    assert views[3][0] == at["police"]
+    assert visuals.other_force("राजस्थान पुलिस ने बताया", cast[-1])
+    assert not visuals.other_force("संदिग्धों को पुलिस अब मुम्बई ला रही है", cast[-1])
+    assert not visuals.other_force("मुम्बई पुलिस ने कहा", cast[-1])
+
+
 def test_a_lone_portrait_still_alternates_with_maps_and_never_fills_every_beat():
     subject, cast, at = tiger_cast(own=1)
     views = visuals.assign(TIGER, subject, cast, first=0)

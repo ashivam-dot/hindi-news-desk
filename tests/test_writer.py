@@ -42,6 +42,16 @@ def test_a_grounded_hindi_draft_passes():
     assert problems == [] and doubtful == []
 
 
+def test_a_long_beat_or_a_vague_ending_goes_back_to_the_writer():
+    d = draft()
+    d["beats"][2]["say"] = ("1968 में उनका पहला एल्बम आया और पूरे देश ने उस नई आवाज़ को ध्यान से सुना और फिर "
+                            "उनकी आवाज़ हर घर और हर गली तक पहुंच गई।")
+    d["beats"][5]["say"] = "1999 में उन्हें पद्म श्री मिला, और मामले में आगे की कानूनी कार्रवाई जारी है।"
+    problems, _ = check(d)
+    assert any(p.startswith("beat 3 has 29 words") for p in problems)
+    assert any(p.startswith("beat 6 ends on filler") for p in problems)
+
+
 @pytest.mark.parametrize("say,title", [
     ("आइए जानते हैं रमेश प्रसाद वर्मा के बारे में, 8 अक्टूबर 2026 को उनका निधन हो गया।", None),
     ("दोस्तों, मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे, 8 अक्टूबर 2026 को उनका निधन हो गया!", None),

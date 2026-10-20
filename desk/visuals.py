@@ -34,6 +34,9 @@ SIGHT_PHOTOS = 1
 INDIA = "Q668"
 COUNTRY_KINDS = {"Q6256", "Q3624078", "Q7275"}
 POLICE = ("पुलिस",)
+# Words that may stand before "पुलिस" without naming a force ("कोटा से पकड़े गए 3 संदिग्धों को पुलिस ...").
+NOT_A_FORCE = {"की", "के", "का", "को", "ने", "और", "में", "से", "कि", "भी", "तो", "व", "एवं", "जब", "अब", "वहीं", "लेकिन",
+               "हुए", "हैं", "है", "था", "थी", "गया", "बाद", "तक", "पर", "मुताबिक", "अनुसार"}
 
 # Maps fill the full-screen Short's plate (compose.Plate: the frame times compose.MARGIN).
 MAP_W, MAP_H = 1253, 2227
@@ -261,6 +264,15 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True)
 
 # --- Assignment -------------------------------------------------------------------------------------------------
 
+def other_force(say: str, police: dict) -> bool:
+    """The beat names some other police force ("राजस्थान पुलिस ने बताया" when the photo is Mumbai Police)."""
+    for m in re.finditer(r"(\S+)\s+पुलिस", say):
+        word = m.group(1).strip(",.;:।'\"()")
+        if word and word not in NOT_A_FORCE and not (police.get("hi") and hindi.contains(police["hi"], word)):
+            return True
+    return False
+
+
 def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int | None = None) -> list[list[int]]:
     """[main, cut] photo indices for each beat ([main] when there is no second view).
 
@@ -315,8 +327,10 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         if route:
             options.append(route["photos"][0])
         options += [take(c) for c in people]
-        if police and any(w in say for w in POLICE) and not people:
-            options.append(take(police))
+        if police and any(w in say for w in POLICE) and not people and not other_force(say, police):
+            # "पुलिस के अनुसार, ... सूरत" is the place's beat: the dry run put Mumbai Police under Surat and Kota.
+            if not places or (police.get("hi") and hindi.contains(say, f"{police['hi']} पुलिस")):
+                options.append(take(police))
         for c in places:
             options += [sight(c)] + ([] if route else [take(c)])
         options = [i for i in dict.fromkeys(options) if i is not None]
@@ -471,7 +485,7 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     for city in cities[:2] if india and any(w in said for w in POLICE) else []:
         try:
             if rows := _police_photos(city, folder / f"police-{city['qid']}", exclude):
-                extra.append({"kind": "police", "photos": add(rows)})
+                extra.append({"kind": "police", "hi": city["hi"], "photos": add(rows)})
                 break
         except Exception as exc:
             log.warning("visuals: no police photo for %s (%s)", city["en"], exc)

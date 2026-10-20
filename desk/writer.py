@@ -37,7 +37,8 @@ CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस�
 # About 25-35 s at the narrator's 2.4 words a second. Shorts of 15-30 s get 14% more views than a 10K-100K channel's
 # median and those over 60 s fewer (TrendReport, 3.48M Shorts, 2025-26); the 45-50 s Kyun Hua Shorts padded the
 # news with biography and "no response" lines to fill 95-120 words (owner, 2026-10-21).
-MIN_WORDS, MAX_WORDS = 52, 90
+# The first dry run of the full template (2026-10-21) passed 90 words in five 18-word beats: 40 s.
+MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 52, 82, 18
 WORDS_ASKED = "60 to 80"
 DRAFTS = 4
 HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
@@ -480,6 +481,10 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     words = len(says.split())
     if not MIN_WORDS <= words <= MAX_WORDS:
         problems.append(f"the script has {words} words; it must have {WORDS_ASKED}")
+    problems += [f"beat {i + 1} has {n} words; keep each beat to 8 to 14 words (make it two beats)"
+                 for i, b in enumerate(beats) if (n := len(b.get("say", "").split())) > MAX_BEAT_WORDS]
+    problems += [f"beat {i + 1} ends on filler ({m.group(0)}); end on a fact of the news" for i, b in enumerate(beats)
+                 if (m := VAGUE.search(b.get("say", "")))]
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
     problems += casual(draft)
@@ -553,6 +558,8 @@ NOBODY_REPLIED = re.compile(r"(अन्य|दूसरे|दूसरा|क�
 # Short spent a beat on who someone is instead of what happened.
 BIOGRAPHY = re.compile(r"करियर (की )?(शुरू|शुरुआत)|से डेब्यू|डेब्यू किया|के बेटे हैं|की बेटी हैं|जाने-माने अभिनेता|"
                        r"मशहूर अभिनेता हैं|अपनी (फिल्मों|फ़िल्मों) के लिए (जाने|मशहूर)")
+# "मामले की आगे की कानूनी कार्रवाई जारी है" closed two Tiger Shroff drafts (2026-10-21): it says nothing.
+VAGUE = re.compile(r"आगे की (कानूनी )?(कार्रवाई|कार्यवाही) जारी|आगे की जांच जारी|कार्रवाई की जा रही है")
 
 
 def casual(draft: dict) -> list[str]:

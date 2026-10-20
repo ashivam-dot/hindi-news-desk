@@ -146,9 +146,17 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   it has gone cold.
 - A story more than 48 hours old is dropped unless it is trending live right now (Google Trends traffic, or a lead
   headline under 24 hours old). Wikipedia's most-read list is a day behind and never keeps an old story alive.
-- Regular Shorts go out 07:00–24:00 IST, at most twenty an IST day, at least 20 minutes apart (2026-10-14; owner:
-  the news channels must be the most active, because they live on incidents and news; ten a day and 30 minutes left
-  stories untold).
+- **Only the big stories, told properly and on time (owner, 2026-10-21: "No need to cover each and every incidents
+  but those which are really high profile cases or incidents those should be cover properly on time with max
+  efforts").** Regular Shorts go out 07:00–24:00 IST, at most six an IST day (`plan.MAX_PER_DAY`), at least 20
+  minutes apart; breaking news and a case's angles may take two more (`BREAKING_EXTRA`). Every story must be high in
+  Google News India's top stories (`MIN_PLACE`, about the top 13), and a kind Hindi viewers rarely watch
+  (`plan.DEMAND` under 0.8: protests, science, conflict, economy, diplomacy, world) about the top 6. The ranking is
+  multiplied by `plan.DEMAND`: crime and security interest 84% of Hindi news users and entertainment 75%, business
+  38% (Google/Kantar 2023); on this channel a star's death drew 1,301 views and economy, diplomacy and world
+  explainers 10-60. Half a news video's first-day views come in its first 6-7 hours, so a big story must be out
+  within hours: the Tiger Shroff firing was missed for 13.5 hours because "shot", "gunned down" and "murdered"
+  headlines were not seen as incidents and sport words skipped a firing at a football ground (`outlets.py`, fixed).
 - **The news lane (`desk/explain.py`, kh- ids, 2026-10-14).** Any story at least three independent owners report
   within 24 hours qualifies, whatever its topic, unless it is on the skip list (elections, sport, entertainment,
   gossip, crime and trials, communal violence, market tips, opinion, roundups); a headline with no special category
@@ -159,7 +167,7 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   India-only, special-topic lane produced one or two.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
-  hour with no gap, up to one beyond the daily cap of nine (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
+  hour with no gap, up to two beyond the daily cap of six (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
   day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds both). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
@@ -192,8 +200,12 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
     so the angles keep coming until its `until` after the story leaves the radar. Angles go ahead of other
     stories but at least 30 minutes apart (`CASE_GAP`), so the day's other news still runs between them, and an
-    open case's story gets no separate follow-up parts. An angle may take the day's spare (breaking) tenth slot,
-    still within 07:00-24:00 IST and MIN_GAP after the last Short (owner, 2026-10-20: "publish few more");
+    open case's story gets no separate follow-up parts. An angle may take the day's spare (breaking) slots,
+    still within 07:00-24:00 IST and MIN_GAP after the last Short (owner, 2026-10-20: "publish few more"). An angle
+    keyed `<key>-r2` with `replaces` (the old Short's YouTube id) makes that angle again and makes the old Short
+    private once the new one is public (the family Short that called Jackie Shroff "जय किशन"). A gang may be named
+    only as police or the reports attribute it ("पुलिस ... गैंग से जुड़े होने की जांच कर रही है"), never as fact, and
+    only when the file lists it in `names_ok`; an accused or gangster by name stays in `never`;
   - a kh- story about a person never fills with their school or birthplace (the Dhruv Rathee Short was seven frames
     of buildings); its pictures are the person (a Commons search, not only their article), the other people and
     the places the script names (see "Every beat shows what it names" below). One photo of the subject is accepted
@@ -231,13 +243,21 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 
 ## How a Short looks
 
-- **A TV news bulletin, not a slideshow (owner, 2026-10-14: "it really doesn't look like a news report, no facts
-  nothing is shown").** Every Short uses the bulletin template (`compose.render_bulletin`): a top bar with the
-  category in red, the channel name, `ताज़ा` for today's news and the date; the photo in a framed window marked
-  `फ़ाइल फ़ोटो` with its credit; a headline bar under it with the declarative headline and `स्रोत:` the outlets; a
-  fact card for every beat (the sourced number or decision large, a label saying what it is, and the outlets whose
-  reports state that number); subtitles; a `मुख्य तथ्य` ticker of the facts along the bottom; and a `मुख्य तथ्य`
-  recap on the end card. Every word on screen is the gated title, a gated card or the narration.
+- **Full screen, about 30 seconds (owner, 2026-10-21: "My main issue is you are not able to present the video
+  properly").** Every story Short uses the full template (`compose.render_full`, `scene.template = "full"`), as BBC
+  Hindi, DW Hindi, AJ+ and Aaj Tak's Shorts do: the picture fills the 9:16 frame (a portrait OSM map, a person's
+  face kept in the upper part, a landscape photo fitted over its own blur) under a top and bottom darkening; a hook
+  card for the first 3.6 s (`scene.hook`, or the first beat's card); a red name strap the first time each person
+  appears (after the hook); when a beat names two people who both have portraits (Tiger and Jackie Shroff), a
+  top/bottom split with a gold line; a pop-up fact chip (the number or decision and its label) for 3 s of each beat;
+  the place stamp only over a map or a place's photo; large captions (84 px) at 72% of the height, above YouTube's
+  title and buttons; the channel strip top left and the AI badge top right; a thin progress bar; a crossfade
+  between pictures; and a 1.2 s end card (logo, follow, disclosure) after the last word, with no spoken outro. The
+  half-screen bulletin (framed photo, headline bar, ticker, recap card) packed four layers of text over a small
+  picture and is no longer used for stories. Scripts are 60-80 words in 6-7 beats (`writer.WORDS_ASKED`, gated
+  52-90): Shorts of 15-30 s get 14% more views than a 10K-100K channel's median and those over 60 s fewer
+  (TrendReport, 3.48M Shorts), and the 45-50 s Shorts were padded with biography and "no response" lines. Every word
+  on screen is the gated title, a gated card or the narration.
 - **Every beat shows what it names (owner, 2026-10-20, furious: the Tiger Shroff Short told the whole story over
   one photo; "how audience will stay to see this").** Read this before building or changing any Short:
   - never one picture for a whole Short: at least three distinct pictures (`visuals.MIN_VISUALS`, gated), and the
@@ -265,7 +285,7 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 - **Editing from the channels that work (owner, 2026-10-20: "take reference of famous AI news channels ... add some
   positive skills while video editing").** A study of 47 Shorts on 16 channels (BBC Hindi, DW Hindi, Al Jazeera,
   AJ+, RealLifeLore and others; archived as `news-presentation-study-2026-10-20`) found what the strongest share;
-  the bulletin now has:
+  the full template has:
   - a hook card over the picture for the first 3.6 s (`scene.hook`, white box with a red offset shadow), a
     statement and never a question; a case angle gives its own;
   - a place stamp in the picture's top corner that follows the story's maps and landmarks (Juhu, then Surat,
@@ -274,8 +294,9 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   - a one-second opening flash of the Short's other pictures (3-5 at a fifth of a second, with an accent), never on
     a loss story;
   - "हर अपडेट के लिए चैनल फ़ॉलो करें" on the end card.
+  - name straps and the two-person split (2026-10-21).
   Next to build: a map built up layer by layer as the story moves (RealLifeLore), an attention ring on the detail
-  the voice names, and a two-panel split.
+  the voice names.
 - **Pictures:** at least three real, freely licensed photos and maps (photos from Wikimedia Commons: CC0, public domain, CC BY,
   CC BY-SA; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
   licence / Wikimedia Commons`) and in the description. For a person, every photo of a person must show them: their
@@ -291,7 +312,10 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   and in the description.
 - **A formal news report (owner, 2026-10-14: the delivery "is really very casual").** The writer is a news editor
   writing for an anchor: a lead sentence with who, what, where and the key number; the details with attribution;
-  the official statement; क्यों (or that no official reason was given); the other side; आगे क्या. Third person, no
+  the official statement; क्यों (or that no official reason was given); आगे क्या. The other side appears only in a
+  dispute between two named sides and only when it replied; never for a crime or an attack, and never a line that
+  someone "has not responded" (`writer.NOBODY_REPLIED`) or a career summary (`writer.BIOGRAPHY`, except a death).
+  Third person, no
   viewer address (आइए, दोस्तों, जानिए), no exclamation, no rhetorical question, no question title, no biography
   padding, no moral or conclusion; `writer.casual` rejects a draft that slips. A death is a news obituary report.
   Cards carry the key fact (a number with its unit whenever the beat has one) and a label, never a place alone.
@@ -309,6 +333,14 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   #shorts`, a topic tag and the broad tags (at most 14); the description opens with the title and the hashtags; the
   YouTube title carries `#shorts` and the subject tag when it fits 100 characters (`youtube.upload_title`), while the
   ledger and the on-screen headline keep the plain title.
+- **The name people know (owner, 2026-10-21: "you are saying jakie shrof to jay kissan shrof ... what all people
+  know that word will reach to maximum peoples").** Wikidata's first Hindi label is sometimes a birth name (जय किशन
+  श्रॉफ for Jackie Shroff). `wiki.common_hindi` keeps the label when it sounds like the English
+  name, otherwise picks, from the label, the Hindi Wikipedia title and the Hindi aliases, the one closest to the
+  English name (a full name over a lone surname), with `wiki.NEWSROOM_HI` for spellings newsrooms fix (डोनाल्ड
+  ट्रंप). It names the script, the strap, the police photo and the title; a spelling two owners' reports print is
+  also accepted. `HARD_WORDS` sends back bookish words for the ones TV says (फायरिंग, आरोपी, FIR, अस्पताल, इलाज,
+  गाड़ी, बयान, जांच, SP, पुलिस कमिश्नर...).
 - **Engaging and visibly sourced (owner, 2026-10-13: "more attractive news ... 100% engaging ... real facts").**
   Every frame carries the channel strip (`क्यों हुआ · राजनीति`, the story's kind or explainer category) and a thin
   progress bar along the top edge; the opening shot names where the facts come from (`स्रोत: बीबीसी · द हिंदू ·

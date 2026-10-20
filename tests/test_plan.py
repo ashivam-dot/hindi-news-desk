@@ -347,7 +347,7 @@ def test_a_case_angle_is_made_again_once_and_replaces_its_old_short(tmp_path, mo
     angle = {"key": "family", "focus": "The family.", "reports": [{"url": "u9", "owner": "NDTV"}]}
     (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
         {"name": "tiger", "story": cand["id"], "until": "2099-01-01T00:00:00+00:00", "cand": cand,
-         "angles": [angle | {"key": "family-r2", "replaces": "OLD"}, angle]}))
+         "angles": [angle | {"key": "family-r2", "replaces": "OLD", "draft": {"title": "t"}}, angle]}))
     ledger.record_publish({"id": cand["id"] + "-family", "published_at": "2026-10-19T10:00:00+00:00",
                            "video_id": "OLD", "case": "tiger", "title": "जय किशन"})
     monkeypatch.setattr(plan.trends, "radar", lambda: {"candidates": [], "errors": []})
@@ -356,6 +356,7 @@ def test_a_case_angle_is_made_again_once_and_replaces_its_old_short(tmp_path, mo
     again = plan.watch(save=False)["candidates"]
     assert [(c["id"], c.get("replaces"), c.get("remake_of")) for c in again] == [
         (cand["id"] + "-family-r2", "OLD", cand["id"] + "-family")]
+    assert again[0]["draft"] == {"title": "t"}
     ledger.record_publish({"id": cand["id"] + "-family-r3", "published_at": "2026-10-19T12:00:00+00:00",
                            "video_id": "NEW", "case": "tiger", "title": "जैकी श्रॉफ", "replaced": "OLD"})
     assert plan.watch(save=False)["candidates"] == []
