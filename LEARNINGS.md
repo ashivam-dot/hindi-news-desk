@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-20T10:55:31+00:00. Scored Shorts (views at 24 h): 54. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-20T14:05:20+00:00. Scored Shorts (views at 24 h): 54. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 44 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
@@ -13,13 +13,16 @@ Baseline: a typical Short has 44 views at 24 h.
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 4 |  |
-| kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 4 |  |
+| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 0 |  |
+| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 1 |  |
+| kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | 0 |  |
+| nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 20 |  |
+| kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 10 |  |
 | kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 12 |  |
-| kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | 4 |  |
-| nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 28 |  |
+| kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | 6 |  |
+| nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 33 |  |
 | kh-20261019-Q3634451 | 2026-10-19T14:58 | policy | india | 4 |  |
-| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 68 |  |
+| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 98 |  |
 | kh-20261019-Q468324 | 2026-10-19T09:11 | health | india | 23 | 23 |
 | kh-20261019-Q312781 | 2026-10-19T07:28 | court | world | 47 | 46 |
 | kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 2 | 2 |
@@ -40,6 +43,3 @@ Baseline: a typical Short has 44 views at 24 h.
 | kh-20261016-Q7040049 | 2026-10-16T12:33 | economy | india | 21 | 21 |
 | kh-20261016-Q478214 | 2026-10-16T11:08 | news | world | 48 | 47 |
 | kh-20261016-Q213380 | 2026-10-16T09:16 | court | india | 51 | 37 |
-| kh-20261016-Q317521 | 2026-10-16T06:24 | news | world | 69 | 65 |
-| kh-20261016-Q3520703 | 2026-10-16T05:22 | news | world | 147 | 138 |
-| kh-20261016-Q7418472 | 2026-10-16T03:21 | court | india | 206 | 187 |
