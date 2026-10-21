@@ -279,8 +279,6 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     story's route map, never the story's person (the first full-template dry run, 2026-10-21, put Mumbai Police
     under Surat and Kota and "रेलवे स्टेशन" over Tiger Shroff's portrait); in a story about a person, a beat that
     does not name them (the injured, the interrogation) shows the police for a beat about the accused, else the
-    story's places, never their portrait (`visuals.assign(person=...)`); in a story about a person, a beat that
-    does not name them (the injured, the interrogation) shows the police for a beat about the accused, else the
     story's places, never their portrait (`visuals.assign(person=...)`);
   - a map shows the right spot (owner, 2026-10-20: "use the map correctly if you are showing mumbai there"): a
     place inside another the script names (Juhu in Mumbai) is marked on the city's map as "जुहू, मुंबई" and on a
@@ -292,6 +290,32 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     used; an AI-made picture of a real incident is never used either. The incident is shown by its place on a map,
     the people in it and the police and officials who speak;
   - before a change to the pictures is merged, a dry run is made and its frames are looked at, every beat.
+- **What the voice says is what the screen shows (owner, 2026-10-21, furious: "If you are mentioning PM modi in
+  the video where is the picture of modi ji"; "you are referencing in multiple videos same images").** The Modi
+  Dussehra Short named him in its title and three beats and showed Delhi's temples, a market and a rickshaw; the
+  Kota court Short held one Kota map under six of seven beats; one Film City photo went out in five Tiger Shroff
+  Shorts. What changed, and what holds from now on:
+  - a person the headlines name is the story's centre before the city they were in ("PM Modi attends Dussehra in
+    Delhi" is about Modi; `explain.PERSON_LOOKS`); a city is the centre only when no person is named;
+  - a place-centred story no longer drops every name the script lists (an empty subject matched every name:
+    `visuals._subject`); a person is also named by their unique surname ("फडणवीस") and by the title the script
+    puts before them in two beats ("प्रधानमंत्री": `visuals.surnames`, `visuals.titles`);
+  - a person's photos are of them at the story's event first: a Commons search of their name with the word the
+    headlines share ("Narendra Modi Dussehra" found PIB's photos of him at the Red Fort's Dussehra;
+    `writer.story_words`); wax figures, statues, posters and cut-outs are not the person (`media.NOT_PERSON`);
+  - Government of India photos (PIB, PMO) under the Government Open Data License - India are free to use with
+    credit (`GODL-India`, licence link in the credit; never implying endorsement); agency and outlet photos stay
+    forbidden;
+  - a festival or tradition the script names (रामलीला) is pictured by its own Commons photos, never by a ground
+    named after it (`visuals.TOPIC`, `topic_like`);
+  - no picture stands under three beats in a row or more than half of a Short's beats (a place's maps count as
+    one), a place shown in two beats gives way to anything else its beat names, a beat that names a person shows
+    them, the title's person is on screen, and a place card ("उत्सव मैदान") sits only over that place's own map or
+    photo (else it names the place on screen or goes); all gated in `gate.said_is_shown`, retried on failure;
+  - each publish records the Commons files it showed; photos shown in the last 96 hours go last
+    (`ledger.recent_photos`, `visuals.fresh_first`);
+  - a Short found wrong whose story is too old to remake is listed in `retire.json` and made private by the next
+    run (TAuiM3yuZKk, jtpKgCtCNmw, 2026-10-21).
 - **Editing from the channels that work (owner, 2026-10-20: "take reference of famous AI news channels ... add some
   positive skills while video editing").** A study of 47 Shorts on 16 channels (BBC Hindi, DW Hindi, Al Jazeera,
   AJ+, RealLifeLore and others; archived as `news-presentation-study-2026-10-20`) found what the strongest share;
@@ -308,7 +332,7 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   Next to build: a map built up layer by layer as the story moves (RealLifeLore), an attention ring on the detail
   the voice names.
 - **Pictures:** at least three real, freely licensed photos and maps (photos from Wikimedia Commons: CC0, public domain, CC BY,
-  CC BY-SA; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
+  CC BY-SA, GODL-India; never non-commercial or fair-use files), each credited by author and licence on screen (`फ़ोटो: author /
   licence / Wikimedia Commons`) and in the description. For a person, every photo of a person must show them: their
   face is matched across the set. A story with fewer than three photos of its own (a tribute needs at least one
   matched photo of its subject) is filled with photos of the places and things it links to: a person's birthplace,
