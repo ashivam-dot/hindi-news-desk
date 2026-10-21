@@ -31,6 +31,7 @@ def test_a_low_place_or_a_low_demand_kind_needs_a_higher_place():
 def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
+    monkeypatch.setattr(plan, "YOUTUBE_DAILY_UPLOADS", 20)  # the lanes alone, past YouTube's own limit
     at = utc(9, 12)  # 17:30 IST
     assert plan.can_publish(at) is None
     ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:50:00+00:00", "loss": False})
@@ -53,12 +54,59 @@ def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, 
 def test_breaking_extra_is_two_and_can_be_switched_off(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
+    monkeypatch.setattr(plan, "YOUTUBE_DAILY_UPLOADS", 20)  # the lanes alone, past YouTube's own limit
     for i in range(12):
         ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
     assert "today" in plan.can_publish(utc(9, 15), breaking=True)
     monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)
     ledger.save("published", ledger.published()[:10])
     assert "today" in plan.can_publish(utc(9, 15), breaking=True)
+
+
+def _day(n, retired=(), start=2):
+    """n uploads on 9 October from 07:30 IST, an hour apart; those indexed in `retired` made private since."""
+    return [{"id": f"wk-{i}", "video_id": f"v{i}", "published_at": f"2026-10-09T{start + i:02d}:00:00+00:00",
+             **({"privacy": "private", "retired_at": "2026-10-09T12:00:00+00:00"} if i in retired else {})}
+            for i in range(n)]
+
+
+def test_retired_shorts_free_their_slots_but_count_toward_youtubes_limit(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    late = utc(9, 16)  # 21:30 IST
+    ledger.save("published", _day(8))
+    assert "already 8 Shorts today" in plan.can_publish(late, breaking=True)
+    # 21 Oct 2026: eight uploads, three of them retired, and every run held "already 8 Shorts today".
+    ledger.save("published", _day(8, retired={3, 4, 7}))
+    assert plan.can_publish(late) is None
+    assert plan.can_publish(late, spare=True) is None and plan.can_publish(late, breaking=True) is None
+    # YouTube counts the retired uploads too.
+    ledger.save("published", _day(10, retired={0, 1, 2, 3, 4}))
+    assert "YouTube's limit" in plan.can_publish(late, breaking=True)
+
+
+def test_a_short_and_its_remake_count_once(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    rows = _day(6)
+    ledger.save("published", rows)
+    assert "already 6 Shorts today" in plan.can_publish(utc(9, 16))
+    ledger.save("published", rows[:5] + [rows[5] | {"replaced": "v0"}])
+    assert plan.can_publish(utc(9, 16)) is None
+    assert len(plan.on_channel(ledger.published())) == 5
+
+
+def test_the_evening_keeps_two_regular_slots_but_breaking_news_never_waits(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE))  # the last at 10:30 IST
+    noon = utc(9, 11)  # 16:30 IST
+    assert "wait for 18:00 IST" in plan.can_publish(noon)
+    assert "wait for 18:00 IST" in plan.can_publish(noon, spare=True)
+    assert plan.can_publish(noon, breaking=True) is None
+    assert plan.can_publish(utc(9, 12, 30)) is None  # 18:00 IST
+    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE - 1))
+    assert plan.can_publish(noon) is None
+    ready, notes = plan.lineup([{"id": "wk-Q1", "title": "x", "fame": 10 ** 6, "news_at": noon.isoformat(),
+                                 "top": None}], noon)
+    assert ready and not notes
 
 
 def test_a_scheduled_short_only_blocks_the_half_hour_around_it(tmp_path, monkeypatch):
@@ -415,3 +463,45 @@ def test_hindi_google_news_is_watched(monkeypatch):
 
 def test_india_trends_come_first():
     assert trends.GEOS[0] == "IN"
+
+
+def test_a_case_has_three_angles_a_day_and_six_in_all_and_the_rest_wait(tmp_path, monkeypatch):
+    import json
+
+    monkeypatch.setattr(ledger, "STATE", tmp_path / "state")
+    monkeypatch.setattr(plan, "CASES", tmp_path / "cases")
+    (tmp_path / "cases").mkdir()
+    story = "nw-20261019-tiger-shroff-attack"
+    cand = {"id": story, "title": "Tiger Shroff attack", "category": "attack", "kind": "incident", "fame": 1,
+            "top_score": 1.15, "news_at": "2026-10-19T08:00:00+00:00"}
+    keys = [f"a{i}" for i in range(9)]
+    angles = [{"key": k, "focus": k, "reports": [{"url": "u", "owner": "NDTV"}]} for k in keys]
+    angles.append({"key": "a0-r2", "focus": "again", "reports": [{"url": "u", "owner": "NDTV"}], "replaces": "V0"})
+    (tmp_path / "cases" / "tiger.json").write_text(json.dumps(
+        {"name": "tiger", "story": story, "until": "2099-01-01T00:00:00+00:00", "cand": cand, "angles": angles}))
+
+    def told(i, at, **extra):
+        ledger.record_publish({"id": f"{story}-a{i}", "published_at": at, "video_id": f"V{i}", "case": "tiger",
+                               "title": f"t{i}"} | extra)
+
+    def waiting(at):
+        return {c["angle"]: c.get("case_wait") for c in plan.angles_of(cand, plan.cases(at), ledger.published(), at)}
+
+    at = utc(20, 12)  # 17:30 IST on 20 October
+    for i, hour in enumerate((3, 5, 7)):
+        told(i, f"2026-10-20T{hour:02d}:00:00+00:00")
+    held = waiting(at)
+    assert all("3 of the case's angles today" in held[k] for k in keys[3:]) and "today" in held["a0-r2"]
+    ready, notes = plan.lineup(plan.angles_of(cand, plan.cases(at), ledger.published(), at), at)
+    assert ready == [] and any(n.startswith(f"hold {story}-a3: 3 of the case's angles today") for n in notes)
+    # A retired angle is off the channel: its day's slot is free again.
+    ledger.update_published("V2", {"privacy": "private", "retired_at": "2026-10-20T09:00:00+00:00"})
+    assert waiting(at)["a3"] is None
+    # Six on the channel in all: no new angle the next day, but an angle made again replaces its old Short.
+    for i, hour in ((3, 1), (4, 2), (5, 3), (6, 4)):
+        told(i, f"2026-10-19T{hour:02d}:00:00+00:00")
+    nxt = utc(21, 13)
+    held = waiting(nxt)
+    assert "6 of the case's Shorts on the channel" in held["a7"] and held["a0-r2"] is None
+    monkeypatch.setattr(plan, "CASE_MAX_TOTAL", 7)
+    assert waiting(nxt)["a7"] is None

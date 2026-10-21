@@ -13,8 +13,9 @@ carry (White House, Pope and Starlink statements drew 0-35 views). A story Googl
 follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
-most MAX_PER_DAY an IST day and MIN_GAP apart. A breaking story (huge fame or BREAKING_OWNERS independent outlets on
-one incident, and under 12 hours old, or a quake USGS
+most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, EVENING_RESERVE of them kept
+for after EVENING_IST; a case's angles at most CASE_MAX_PER_DAY a day and CASE_MAX_TOTAL in all. A breaking story
+(huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake USGS
 rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap; wars never
 take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
 than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
@@ -84,6 +85,16 @@ SERIES_GAP = timedelta(hours=2)
 # They may take the spare (breaking) slot, but never at night or within MIN_GAP: owner, 2026-10-20, of the Tiger
 # Shroff case, "publish few more".
 CASE_GAP = timedelta(minutes=30)
+# One template on one case all day reads as mass-produced (review-latest.json, 2026-10-21: inauthentic risk "medium",
+# eleven angles on the Tiger Shroff case): at most CASE_MAX_PER_DAY of a case's angles an IST day and CASE_MAX_TOTAL
+# on the channel in all; the other angles wait. An angle made again replaces its old Short, so it is never over the
+# total. Retired and replaced Shorts are not on the channel and do not count.
+CASE_MAX_PER_DAY = 3
+CASE_MAX_TOTAL = 6
+# Hindi viewers watch most in the evening: before EVENING_IST the regular and case lanes leave EVENING_RESERVE of
+# the day's MAX_PER_DAY slots free for it. Breaking news is not held.
+EVENING_IST = 18.0
+EVENING_RESERVE = 2
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -135,6 +146,8 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | No
         if told and at - datetime.fromisoformat(told[-1]["published_at"].replace("Z", "+00:00")) < CASE_GAP:
             return []
         earlier = [r.get("title") or "" for r in told]
+        live = on_channel([r for r in rows if same_case(r["id"], s["story"]) or r.get("case") == s["name"]])
+        wait = case_wait(live, at)
         stem = SUFFIX.sub("", s["story"])
         never = s.get("never", [])
         # A headline naming an accused or a gang would steer the writer and the excerpts towards them.
@@ -149,9 +162,20 @@ def angles_of(cand: dict, specs: list[dict], rows: list[dict], at: datetime | No
                                         "case_status": s.get("status"), "case_hurt": s.get("hurt"), "hook": a.get("hook")}
                 | ({"replaces": a["replaces"], "remake_of": f"{stem}-{a['key'].removesuffix('-r2')}"}
                    if a.get("replaces") else {}) | ({"draft": a["draft"]} if a.get("draft") else {})
+                | ({"case_wait": w} if (w := wait[0] or (None if a.get("replaces") else wait[1])) else {})
                 for a in s["angles"] if not ledger.is_done(f"{stem}-{a['key']}")
                 and not (a.get("replaces") and a["replaces"] in gone)]
     return []
+
+
+def case_wait(live: list[dict], at: datetime) -> tuple[str | None, str | None]:
+    """Why a case's next angle waits: (over the day's CASE_MAX_PER_DAY, over CASE_MAX_TOTAL), each None when it is
+    not. `live` is the case's Shorts still on the channel; an angle made again is held only by the first."""
+    day = [r for r in live if ist_day(datetime.fromisoformat(r["published_at"].replace("Z", "+00:00"))) == ist_day(at)]
+    return (f"{len(day)} of the case's angles today (IST), {CASE_MAX_PER_DAY} a day" if len(day) >= CASE_MAX_PER_DAY
+            else None,
+            f"{len(live)} of the case's Shorts on the channel, {CASE_MAX_TOTAL} at most" if len(live) >= CASE_MAX_TOTAL
+            else None)
 
 
 def remake_of(cand: dict, specs: list[dict]) -> dict | None:
@@ -168,12 +192,23 @@ def ist_day(t: datetime) -> str:
     return t.astimezone(IST).date().isoformat()
 
 
+def on_channel(rows: list[dict]) -> list[dict]:
+    """The published rows still public: not retired (retire.json, once the ledger records it private) and not
+    replaced by a remake, so a Short and its remake count once."""
+    gone = {r["replaced"] for r in rows if r.get("replaced")}
+    return [r for r in rows if not r.get("retired_at") and not (r.get("video_id") and r["video_id"] in gone)]
+
+
 def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool = False) -> str | None:
     """Why no Short may go out now, or None. A breaking story may take the spare slot at once; with `spare` (a case
-    angle) it may take it MIN_GAP after the last Short."""
+    angle) it may take it MIN_GAP after the last Short. The daily cap counts the Shorts still on the channel; every
+    upload, retired or not, counts toward YouTube's own limit."""
     at = at or datetime.now(timezone.utc)
     rows = ledger.published()
-    today = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
+    uploads = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
+    if len(uploads) >= YOUTUBE_DAILY_UPLOADS:
+        return f"already {len(uploads)} uploads today (IST), YouTube's limit"
+    today = on_channel(uploads)
     if len(today) >= MAX_PER_DAY + (BREAKING_EXTRA if breaking or spare else 0):
         return f"already {len(today)} Shorts today (IST)"
     gap = BREAKING_GAP if breaking else MIN_GAP
@@ -183,6 +218,9 @@ def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool 
         return f"last Short went out {(at - max(past)).total_seconds() / 3600:.1f} h ago"
     if scheduled and min(scheduled) - at < gap:
         return f"a scheduled Short goes out in {(min(scheduled) - at).total_seconds() / 3600:.1f} h"
+    local = at.astimezone(IST)
+    if not breaking and local.hour + local.minute / 60 < EVENING_IST and len(today) >= MAX_PER_DAY - EVENING_RESERVE:
+        return f"{len(today)} Shorts today; the last {EVENING_RESERVE} wait for {EVENING_IST:02.0f}:00 IST"
     return None
 
 
@@ -374,7 +412,7 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
         breaking = is_breaking(c, at)
         wait = urgent if breaking else (spare if c.get("case") else regular) or (
             None if in_window(at) else "outside 07:00-24:00 IST")
-        wait = wait or orbitwire.wait(c.get("orbitwire"), at)
+        wait = c.get("case_wait") or wait or orbitwire.wait(c.get("orbitwire"), at)
         if wait:
             notes.append(f"hold {c['id']}: {wait}")
         else:

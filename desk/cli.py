@@ -230,8 +230,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             # Outside the window a dry run previews the story the next live run would make first.
             now = datetime.now(timezone.utc)
             pool = [c for c in found["candidates"] if not c.get("orbitwire")] or found["candidates"]
-            ready = [c for c in sorted(pool, key=lambda c: -plan.priority(c, now))
-                     if c.get("case") or not (plan.stale(c, now) or plan.unpopular(c, now))] or pool
+            ready = [c for c in sorted(pool, key=lambda c: -plan.priority(c, now)) if not c.get("case_wait")
+                     and (c.get("case") or not (plan.stale(c, now) or plan.unpopular(c, now)))] or pool
             ready.sort(key=lambda c: (not c.get("replaces"), not c.get("case")))  # as plan.lineup orders them
         if dry and config.DRY_KIND:
             ready = [c for c in found["candidates"] if c.get("kind") == config.DRY_KIND]
