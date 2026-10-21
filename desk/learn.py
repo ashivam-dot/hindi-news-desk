@@ -176,12 +176,15 @@ def read_retention(perf: dict, at: datetime, analytics=None) -> str | None:
             return "retention: the YouTube sign-in has no yt-analytics.readonly scope; avg_view_pct stays empty"
         analytics = youtube.client("youtubeAnalytics", "v2")
     ids = sorted(old, key=lambda v: old[v]["published_at"], reverse=True)[:ANALYTICS_MAX]
-    start = min(old[v]["published_at"][:10] for v in ids)
+    # Analytics days are US Pacific: a Short out 00:00-07:00 UTC has its first day on the UTC date before. The last
+    # RETENTION_MIN_AGE of days is still settling, so the window ends before it.
+    start = (min(datetime.fromisoformat(old[v]["published_at"]) for v in ids) - timedelta(days=1)).date().isoformat()
+    end = (at - RETENTION_MIN_AGE).date().isoformat()
     metrics = ANALYTICS_METRICS
     while True:
         try:
             answer = analytics.reports().query(
-                ids="channel==MINE", startDate=start, endDate=at.date().isoformat(), metrics=metrics,
+                ids="channel==MINE", startDate=start, endDate=end, metrics=metrics,
                 dimensions="video", filters="video==" + ",".join(ids), sort="-views", maxResults=len(ids)).execute()
             break
         except Exception as exc:

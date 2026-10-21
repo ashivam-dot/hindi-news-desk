@@ -161,6 +161,9 @@ def test_retention_is_read_from_youtube_analytics_for_shorts_three_days_old(monk
     q = fake.queries[0]
     assert q["dimensions"] == "video" and q["metrics"] == "views,engagedViews,averageViewPercentage"
     assert q["ids"] == "channel==MINE" and set(q["filters"][len("video=="):].split(",")) == {"v0", "v1"}
+    # Analytics days are US Pacific (v0 went out 2026-10-06 08:00 UTC, 01:00 Pacific): the window opens a day
+    # early, and ends RETENTION_MIN_AGE back, before the days whose numbers are still settling.
+    assert (q["startDate"], q["endDate"]) == ("2026-10-05", "2026-10-07")
     videos = ledger.load("performance", {})["videos"]
     assert videos["v0"][learn.RETENTION_FIELD] == 61.25 and videos["v1"][learn.ENGAGED_FIELD] == 39
     assert learn.RETENTION_FIELD not in videos["v2"]  # too young to count
