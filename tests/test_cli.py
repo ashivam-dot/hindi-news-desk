@@ -107,6 +107,25 @@ def test_a_dry_run_makes_but_never_publishes_or_writes_the_ledger(made, monkeypa
     assert not (cli.ledger.STATE / "health.json").exists() and (cli.WORK / "dry-health.json").exists()
 
 
+@pytest.mark.parametrize("held_only", [False, True])
+def test_a_dry_run_never_previews_a_case_angle_the_live_run_would_hold(made, monkeypatch, held_only):
+    short, work = made
+    held = {"id": "nw-case-hurt", "case": "A case", "kind": "death", "fame": 10 ** 7,
+            "case_wait": "3 of the case's angles today (IST), 3 a day"}
+    other = {"id": short.id, "kind": "death", "fame": 1}
+    cands = [held] if held_only else [held, other]
+    monkeypatch.setattr(plan, "watch", lambda save=True: {"candidates": cands, "trending": cands, "notes": []})
+    monkeypatch.setattr(plan, "lineup", lambda c, at=None: ([], ["hold nw-case-hurt: ..."]))  # outside the window
+    prepared = []
+    monkeypatch.setattr(cli, "prepare", lambda c: prepared.append(c["id"]) or short)
+    monkeypatch.setattr(cli, "make", lambda c, s, preview=False: (s, {"duration": 40.0,
+                                                                       "voice": {"engine": "chatterbox-preview"}}))
+    monkeypatch.setattr(cli, "publish", lambda *a, **k: pytest.fail("published in a dry run"))
+    health = cli.run(dry=True, preview=True)
+    assert "nw-case-hurt" not in prepared, health.get("trace")
+    assert prepared == ([] if held_only else [short.id])
+
+
 def test_a_voice_hold_mid_run_stops_without_counting_a_retry(made, monkeypatch):
     short, work = made
     cand = {"id": short.id, "kind": "death", "fame": 1}
