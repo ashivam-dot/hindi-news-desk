@@ -1,20 +1,20 @@
 {
- "at": "2026-10-21T10:03:05+00:00",
+ "at": "2026-10-21T10:40:21+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 16 candidates from 20 trending",
-  "outlets: 1227 headlines from 31 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 3 nw- stories (on): nw-20261021-bengaluru-explosion, nw-20261020-tiger-shroff-attack, nw-20261021-rubio-protest",
-  "explainers: 6 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q1340361, kh-20261021-Q51993, kh-20261021-Q317521; dropped: explainer Das Ashutosh Ranka / Das Ashutosh Ranka: no Wikipedia article that can be its centre; explainer Dussehra BJP / BJP MLA: no Wikipedia article that can be its centre",
+  "watch: 15 candidates from 19 trending",
+  "outlets: 1209 headlines from 30 feeds (18 owners), 10 matched to articles, 8 candidates with 2+ owners, 3 nw- stories (on): nw-20261021-bengaluru-explosion, nw-20261020-tiger-shroff-attack, nw-20261021-rubio-protest",
+  "explainers: 5 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q1340361, kh-20261021-Q51993, kh-20261021-Q317521; dropped: explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer Delhi-NCR / Dussehra Traffic: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261021-Q1340361: too low in Google News India's top stories (place 0.20, needs 0.35)",
+  "drop kh-20261021-Q1340361: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "hold nw-20261021-bengaluru-explosion: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
-  "hold nw-20261021-rubio-protest: already 8 Shorts today (IST)",
-  "hold kh-20261021-Q1352: already 8 Shorts today (IST)",
-  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop nw-20261021-rubio-protest: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
  ]
 }
