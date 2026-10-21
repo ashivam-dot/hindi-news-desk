@@ -16,6 +16,8 @@ import logging
 import math
 import re
 from collections import Counter
+from collections.abc import Iterator
+from itertools import chain
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
@@ -464,6 +466,9 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
             options += [sight(c)] + ([] if route else [take(c)])
         options = [i for i in dict.fromkeys(options) if i is not None]
         about = k == 0 or not person or bool(people) or any(hindi.contains(say, w) for w in person)
+        # The police photo is kept for the police beat that follows: the Tiger Shroff security Short's AICWA beat
+        # took it and then stood with two police beats under one picture.
+        police_next = k + 1 < len(beats) and any(w in beats[k + 1].get("say", "") for w in POLICE + ACCUSED)
         if options and k > 0 and options[0] in prev[-1:]:
             # The picture that just closed the last beat never opens this one: it moves to the cut.
             other = own(set(prev), beat.get("photo")) if about else scenery(places or scene, options[0])
@@ -474,7 +479,7 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
                 options.append(take(police))
             elif (i := scenery(scene, -1)) is not None and not stale(i):
                 options.append(i)
-            elif police and not other_force(say, police):
+            elif police and not other_force(say, police) and not police_next:
                 options.append(take(police))
             elif i is not None:
                 options.append(i)
@@ -511,6 +516,25 @@ def _person_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | 
                               recent=recent)
     rows = [r for r in rows if not r.get("others")][:PERSON_PHOTOS] or rows[:1]
     return [r | {"who": c["hi"], "role": "person"} for r in rows]
+
+
+def _cities_around(places: list[dict]) -> Iterator[dict]:
+    """The town each place lies in (Wikidata "located in", with a population), whose police come next when the
+    places have none: "जुहू" has no police page, and the Tiger Shroff security Short put his portrait over
+    "आरोपियों से पूछताछ" instead of Mumbai Police (2026-10-21). Looked up only when asked for."""
+    seen = {p.get("qid") for p in places}
+    for c in places:
+        up = next((v for v in (x.get("value") for x in wiki.claims(c["ent"], "P131")) if isinstance(v, str)), None)
+        if not up or up in seen:
+            continue
+        seen.add(up)
+        try:
+            ent = wiki.entities([up]).get(up)
+        except Exception:
+            continue
+        en = ((ent or {}).get("labels", {}).get("en") or {}).get("value")
+        if ent and en and wiki.claims(ent, "P1082"):
+            yield {"en": en, "hi": wiki.common_hindi(ent) or en, "qid": up, "ent": ent}
 
 
 def _police_photos(city: dict, folder: Path, exclude: set[str], recent: set[str] | None = None) -> list[dict]:
@@ -644,7 +668,8 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     # The police the script names first: the probe's first city was a home district with no police page.
     named = {(n.get("en") or "").lower() for n in draft.get("names") or []}
     cities.sort(key=lambda c: f"{c['en']} police".lower() not in named and not hindi.contains(said, f"{c['hi']} पुलिस"))
-    for city in cities[:2] if india and any(w in said for w in POLICE) else []:
+    policed = india and any(w in said for w in POLICE)
+    for city in chain(cities[:2], _cities_around(cities[:2])) if policed else []:
         try:
             if rows := _police_photos(city, folder / f"police-{city['qid']}", exclude, recent):
                 extra.append({"kind": "police", "hi": city["hi"], "photos": add(rows)})

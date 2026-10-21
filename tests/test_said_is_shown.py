@@ -7,8 +7,10 @@ from datetime import datetime, timedelta, timezone
 from desk import explain, gate, ledger, news, visuals, wiki
 from desk.spec import Beat
 
+from . import test_gate
 from .test_explain import BY_KEY, NOW
-from .test_gate import short  # noqa: F401,F811  (fixture)
+
+short = test_gate.short  # the fixture
 
 cast_for = visuals.cast_for  # conftest stubs visuals.cast_for for every test
 
@@ -242,6 +244,43 @@ def test_the_gate_fails_a_place_card_over_another_picture(short):
     short.scene["cast"] = [{"en": "Delhi", "hi": "दिल्ली", "kind": "place", "photos": [1]}]
     short.beats[0].shot, short.beats[0].card = "photo:0", {"big": "उत्सव मैदान", "small": "कार्यक्रम स्थल"}
     assert any("card 1 names the place" in p for p in gate.said_is_shown(short))
+
+
+def test_a_short_of_only_photos_shown_lately_is_not_made():
+    from desk import writer
+
+    photos = [{"file": f"File:Tiger Shroff {n}.jpg"} for n in range(4)] + [{"file": "OpenStreetMap: जुहू", "role": "map"}]
+    views = [[0, 4], [1], [2], [4], [3]]
+    shown_before = {p["file"] for p in photos}
+    assert "only 0 of 4 photos" in writer.stale_pictures(photos, views, shown_before)
+    assert writer.stale_pictures(photos, views, shown_before - {photos[2]["file"], photos[3]["file"]}) is None
+    assert writer.stale_pictures(photos, views, set()) is None
+    five = photos[:4] + [{"file": "File:Juhu ISKCON.jpg"}, photos[4]]
+    # The Tiger Shroff security Short: 2 of 5 new (an award portrait, Juhu's temple), the rest shown before.
+    seen = {f["file"] for f in five} - {five[0]["file"], five[4]["file"]}
+    assert "only 2 of 5" in writer.stale_pictures(five, [[0, 5], [1], [2], [3], [4]], seen)
+
+
+def test_the_police_of_the_town_a_place_lies_in(monkeypatch):
+    juhu = {"en": "Juhu", "hi": "जुहू", "qid": "Q674362", "ent": {"claims": {"P131": [claim("Q1156")]}}}
+    mumbai = {"labels": {"en": {"value": "Mumbai"}}, "claims": {"P1082": [claim({"amount": "+12442373"})]}}
+    monkeypatch.setattr(wiki, "entities", lambda qids: {"Q1156": mumbai})
+    monkeypatch.setattr(wiki, "common_hindi", lambda ent: "मुंबई")
+    around = list(visuals._cities_around([juhu]))
+    assert [(c["en"], c["hi"], c["qid"]) for c in around] == [("Mumbai", "मुंबई", "Q1156")]
+    assert list(visuals._cities_around([juhu, {**juhu, "qid": "Q2"}])) == around
+
+
+def test_the_police_photo_waits_for_the_police_beat():
+    juhu = {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [8], "near": [9]}
+    police = {"kind": "police", "hi": "मुंबई", "photos": [10]}
+    beats = [{"say": "टाइगर श्रॉफ पर फायरिंग के बाद संगठनों ने सुरक्षा मांगी।", "photo": 0},
+             {"say": "रविवार शाम जुहू में एक्टर की कार पर गोलियां चलीं।", "photo": 0},
+             {"say": "AICWA का दावा है कि कलाकारों को डराने के लिए हमले हो रहे हैं।", "photo": 0},
+             {"say": "पुलिस अब अन्य फिल्मी हस्तियों के घरों की सुरक्षा की जांच कर रही है।", "photo": 0},
+             {"say": "आरोपियों से पूछताछ कर हमले की वजह जानने की कोशिश जारी है।", "photo": 0}]
+    views = visuals.assign(beats, [0, 1, 2], [juhu, police], first=0, person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
+    assert 10 not in views[2] and 10 in views[3] and 10 in views[4]
 
 
 def test_photos_shown_lately_go_last(monkeypatch):

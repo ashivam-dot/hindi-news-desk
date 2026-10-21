@@ -313,7 +313,12 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
     them, the title's person is on screen, and a place card ("उत्सव मैदान") sits only over that place's own map or
     photo (else it names the place on screen or goes); all gated in `gate.said_is_shown`, retried on failure;
   - each publish records the Commons files it showed; photos shown in the last 96 hours go last
-    (`ledger.recent_photos`, `visuals.fresh_first`);
+    (`ledger.recent_photos`, `visuals.fresh_first`), and a Short is not made unless at least half (and at least
+    two) of the photos on screen are new to those 96 hours (`writer.stale_pictures`; maps and tributes aside): the
+    tenth Tiger Shroff Short in two days showed photos nine earlier ones had, and Commons has about nine of him;
+  - when no town the script names has a police page, the police of the town a place lies in come next (Juhu lies
+    in Mumbai: `visuals._cities_around`), and a beat right before a police beat leaves the police photo to it (the
+    security Short put his portrait over "आरोपियों से पूछताछ");
   - a Short found wrong whose story is too old to remake is listed in `retire.json` and made private by the next
     run (TAuiM3yuZKk, jtpKgCtCNmw, 2026-10-21).
 - **Editing from the channels that work (owner, 2026-10-20: "take reference of famous AI news channels ... add some

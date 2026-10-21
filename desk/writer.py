@@ -1257,16 +1257,37 @@ def card_label(label) -> str:
     return "" if label in SECTION_LABELS else label
 
 
+FRESH_PICTURES = 2
+
+
+def stale_pictures(photos: list[dict], views: list[list[int]], recent: set[str]) -> str | None:
+    """Why a Short would mostly repeat the channel's last Shorts: fewer than half (and fewer than FRESH_PICTURES) of
+    the photos on screen are new to the last ledger.RECENT_PHOTOS_H hours of Shorts (maps aside). The tenth Tiger
+    Shroff Short (2026-10-21) showed photos nine earlier ones had; Commons has about nine of him."""
+    from . import ledger
+
+    shown = {photos[i]["file"] for v in views for i in v
+             if i < len(photos) and photos[i].get("file") and not visuals.is_map(photos[i])}
+    fresh, want = shown - recent, max(FRESH_PICTURES, (len(shown) + 1) // 2)
+    if recent and len(fresh) < want:
+        return (f"gate: only {len(fresh)} of {len(shown)} photos on screen are new to the last "
+                f"{ledger.RECENT_PHOTOS_H} hours of Shorts (want {want})")
+    return None
+
+
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
            mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False) -> Short:
     reports = reports or []
     name_hi = plain_name(name_hi, draft, name)
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
+    recent = recent_photos()
     photos, views, cast = visuals.direct(draft, photos, name if person else "", region == "india",
                                          WORK / sid / "photos" / "cast",
                                          set((ov or {}).get("excluded_photos") or []), tribute=kind == "death",
-                                         recent=recent_photos())
+                                         recent=recent)
+    if kind != "death" and (stale := stale_pictures(photos, views, recent)):
+        raise ValueError(stale)
     beats = [Beat(b["say"].strip(), "photo:" + "/".join(str(i) for i in (v or [b["photo"]])),
                   visuals.card_over({"big": b["caption"].strip(), "small": card_label(b.get("label"))},
                                     v or [b["photo"]], cast))
