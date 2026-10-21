@@ -550,6 +550,14 @@ def test_ad_suitability_ranks_crime_down_and_explainers_up_but_never_breaking_ne
     assert plan.ad_class({"category": "death", "story": "actor dies in a road accident"}) == "sensitive"
     assert plan.ad_class({"title": "सोनाक्षी सिन्हा", "hindi_headlines": ["अस्पताल में भर्ती"]}) is None
     assert plan.ad_class({"category": "attack", "title": "x"}) == "sensitive"
+    # A Hindi stem inside another word is not that word; words that fit any story need their pairing word.
+    for text in ("मैच के दौरान खिलाड़ी घायल", "दामाद ने कहा", "नियमित जांच", "दिल का दौरा पड़ने से निधन",
+                 "कीमती तोहफा", "Kohli talks about retirement", "Salman Khan visits Lilavati", "Stock market crash"):
+        assert plan.ad_class({"title": text}) is None, text
+    for text in ("मोदी का जापान दौरा", "प्रधानमंत्री के दौरे से पहले", "नए नियमों से", "दामों में बढ़ोतरी",
+                 "Modi's state visit to Japan", "India-US trade talks", "Petrol price hike"):
+        assert plan.ad_class({"title": text}) == "friendly", text
+    assert plan.ad_class({"title": "Bus crash kills five"}) == "sensitive"
     assert plan.ad_factor(firing, at) == plan.AD_SENSITIVE < 1 < plan.AD_FRIENDLY == plan.ad_factor(petrol, at)
     assert plan.ad_factor(plain, at) == 1.0
     assert plan.priority(firing, at) < plan.priority(plain, at) < plan.priority(petrol, at)

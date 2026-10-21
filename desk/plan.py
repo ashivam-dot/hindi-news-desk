@@ -84,28 +84,34 @@ DEMAND = {"death": 1.4, "entertainment": 1.4, "attack": 1.4, "disaster": 1.3, "a
 AD_SENSITIVE, AD_FRIENDLY = 0.8, 1.2
 AD_SENSITIVE_KINDS = ("attack", "explosion", "court", "accident")
 AD_FRIENDLY_KINDS = ("economy", "science", "diplomacy", "policy")
-# A Hindi word must start a word ("सोना" is not "सोनाक्षी") but may take any ending (हादसे, गिरफ्तारी).
+# A Hindi word must start a word ("सोना" is not "सोनाक्षी") but may take any ending (हादसे, गिरफ्तारी), except
+# where a longer word is another word: दौरान ("during", in most headlines) is no दौरा, दामाद no दाम, नियमित no नियम,
+# and "दिल का दौरा" is a heart attack. English words that fit any story (talks, visits, prices, projects) need a
+# pairing word; a market crash is economy, not an accident.
 HI_START = r"(?<![\u0900-\u097F])"
 AD_SENSITIVE_WORDS = re.compile(
     r"\b(shootings?|shot (dead|at)|firing|gunfire|gunned|gunmen|murder\w*|kill(ed|ing|ings)?|stabb\w*|"
     r"bomb\w*|blasts?|terror\w*|(?<!cardiac )arrest(s|ed)?|detain\w*|custody|bail|courts?|judges?|verdict|"
     r"chargesheet|communal|riots?|sectarian|blasphemy|desecrat\w*|lynch\w*|stone-pelting|violen(ce|t)|clash(es)?|"
-    r"arson|accidents?|crash(es|ed)?|derail\w*|stampede|drown\w*|(building|bridge|roof|wall) collapsed?|"
-    r"hit-and-run)\b"
+    r"arson|accidents?|(?<!market )(?<!Sensex )(?<!Nifty )crash(es|ed)?|derail\w*|stampede|drown\w*|"
+    r"(building|bridge|roof|wall) collapsed?|hit-and-run)\b"
     rf"|{HI_START}(गोली|फायरिंग|फ़ायरिंग|हत्या|हत्याकांड|मर्डर|चाकू|आतंक|धमाक|विस्फोट|गिरफ्तार|गिरफ़्तार|हिरासत|"
     r"जमानत|ज़मानत|अदालत|कोर्ट|हाईकोर्ट|सुनवाई|सांप्रदायिक|दंगा|दंगे|हिंसा|हिंसक|झड़प|आगजनी|पथराव|हादस|दुर्घटना|"
     r"भगदड़|डूबने|डूबकर)", re.I)
 AD_FRIENDLY_WORDS = re.compile(
-    r"\b(petrol|diesel|fuel prices?|gold (prices?|rates?)|GST|RBI|repo rate|EMI|loans?|tax(es)?|income tax|budget|"
-    r"inflation|prices?|rupee|jobs?|recruitment|vacanc(y|ies)|hiring|exams?|NEET|JEE|UPSC|SSC|CBSE|schemes?|yojana|"
-    r"pension|ration|subsidy|telecom|TRAI|5G|UPI|Aadhaar|new rules?|metro|highway|expressway|airport|bridge|"
-    r"infrastructure|ISRO|space (mission|agency|station)|satellite|science|research|summit|visits?|talks|"
-    r"agreement|trade deal|tariffs?|treaty|MoU|GDP|economy|Sensex|internet|broadband|projects?)\b"
+    r"\b(petrol|diesel|fuel prices?|gold (prices?|rates?)|GST|RBI|repo rate|EMI|(home|car|education|personal) loans?|"
+    r"loan (rates?|waiver)|tax(es)?|income tax|budget|inflation|price (hike|cut|rise)s?|rupee|jobs?|recruitment|"
+    r"vacanc(y|ies)|hiring|exams?|NEET|JEE|UPSC|SSC|CBSE|schemes?|yojana|pension|ration|subsidy|telecom|TRAI|5G|UPI|"
+    r"Aadhaar|new rules?|metro|highway|expressway|airport|bridge|infrastructure|ISRO|space (mission|agency|station)|"
+    r"satellite|science|research|summit|(state|official|bilateral) visits?|(trade|peace|bilateral|border) talks|"
+    r"agreement|trade deal|tariffs?|treaty|MoU|GDP|economy|Sensex|internet|broadband|"
+    r"(infrastructure|rail|road|power) projects?)\b"
     rf"|{HI_START}(पेट्रोल|डीजल|डीज़ल|सोने-चांदी|सोना-चांदी|सोने (का|के|की) (भाव|दाम|कीमत)|जीएसटी|आरबीआई|"
-    r"रिज़र्व बैंक|रिजर्व बैंक|ईएमआई|लोन|टैक्स|आयकर|बजट|महंगाई|मुद्रास्फीति|कीमत|दाम|नौकरी|पदों पर भर्ती|"
-    r"भर्ती (परीक्षा|प्रक्रिया|अभियान)|परीक्षा|योजना|पेंशन|राशन|सब्सिडी|टेलीकॉम|यूपीआई|आधार कार्ड|नियम|मेट्रो|"
-    r"हाईवे|एक्सप्रेसवे|एयरपोर्ट|इसरो|अंतरिक्ष|सैटेलाइट|विज्ञान|दौरा|यात्रा|बातचीत|समझौत|शिखर सम्मेलन|टैरिफ|"
-    r"व्यापार|जीडीपी|अर्थव्यवस्था|सेंसेक्स|इंटरनेट|परियोजना)", re.I)
+    r"रिज़र्व बैंक|रिजर्व बैंक|ईएमआई|लोन|टैक्स|आयकर|बजट|महंगाई|मुद्रास्फीति|कीमत(?!ी)|दाम(?!ाद|न)|नौकरी|"
+    r"पदों पर भर्ती|भर्ती (परीक्षा|प्रक्रिया|अभियान)|परीक्षा|योजना|पेंशन|राशन|सब्सिडी|टेलीकॉम|यूपीआई|आधार कार्ड|"
+    r"नियम(?!ित)|मेट्रो|हाईवे|एक्सप्रेसवे|एयरपोर्ट|इसरो|अंतरिक्ष|सैटेलाइट|विज्ञान|(?<!दिल का )दौर(ा(?!न)|े)(?! पड़)|"
+    r"(विदेश|राजकीय|आधिकारिक) यात्रा|(शांति|द्विपक्षीय|सीमा) (वार्ता|बातचीत)|समझौत|शिखर सम्मेलन|टैरिफ|व्यापार|"
+    r"जीडीपी|अर्थव्यवस्था|सेंसेक्स|इंटरनेट|परियोजना)", re.I)
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
