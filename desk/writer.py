@@ -154,7 +154,8 @@ RULES = """RULES (all mandatory):
   you answer.
 - Names: call every person by the name the public knows and Hindi newsrooms print (जैकी श्रॉफ, never his birth name
   जय किशन श्रॉफ; लालकृष्ण आडवाणी), the spelling HINDI NAMES gives. A short, well-known form is fine after the first
-  mention (आडवाणी, फडणवीस).
+  mention (आडवाणी, फडणवीस). A name HINDI NAMES does not give is written by its own sound, never as the Hindi
+  spelling of a better-known name (Chennai's Parrys is not पैरिस, which every Hindi reader takes for Paris).
 - News only: every beat is about today's story. No biography of anyone (their films, debut, career, parents,
   awards) unless the story is their death or that fact is part of today's news. No line saying someone has not
   responded or that reports carry no reaction.
@@ -749,7 +750,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if names_ok:
                 problems += off_case(draft, names_ok, never)
             if attempt < DRAFTS - 1:
-                problems += monotone(draft) + bookish(draft)
+                problems += monotone(draft) + bookish(draft) + misread(draft, spellings(draft, hi_names, looked),
+                                                                       ground_hi, reports)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
@@ -774,6 +776,42 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
         if own:
             pen.close()
     raise ValueError("gate: no draft passed the fact checks: " + "; ".join(log[-1]["problems"])[:400])
+
+
+MISREAD_NAMES = 8  # names a draft checks against what their Hindi spelling already means
+
+
+def misread(draft: dict, hi_names: dict[str, str], ground_hi: str, reports: list[dict] | None = None) -> list[str]:
+    """Hindi spellings that viewers read as another, better-known name: Parrys (Chennai) written पैरिस is Paris to
+    every Hindi reader (2026-10-19). Only names with no Wikidata label and no Hindi source spelling are checked; a
+    word is misread when a Wikidata item's Hindi label writes it and its English sounds more like that item than
+    like the story's name."""
+    labelled = {en.lower() for en in hi_names}
+    pairs = [(p["hi"].strip(), p["en"].strip()) for p in draft.get("names") or []
+             if isinstance(p, dict) and isinstance(p.get("hi"), str) and isinstance(p.get("en"), str)
+             and p["hi"].strip() and p["en"].strip() and p["en"].strip().lower() not in labelled
+             and not hindi.contains(ground_hi, p["hi"]) and len(gate.reported(p["hi"], reports or [])) < gate.OWNERS_NEEDED]
+    pairs = pairs[:MISREAD_NAMES]
+    words = [w for hi, _ in pairs for w in hi.split() if len(w) > 2]
+    if not words:
+        return []
+    try:
+        readings = wiki.hindi_readings(words)
+    except Exception:
+        return []
+    problems = []
+    for hi, en in pairs:
+        own = [re.sub(r"[^a-z]", "", w.lower()) for w in en.split()]
+        for word in hi.split():
+            other = [w for label in readings.get(word, []) for w in re.findall(r"[A-Za-z][A-Za-z'’]+", label)
+                     if re.sub(r"[^a-z]", "", w.lower()) not in own]
+            best = max(other, key=lambda w: hindi.likeness(word, w), default=None)
+            if best and hindi.likeness(word, best) >= 0.6 and \
+                    hindi.likeness(word, best) > max(hindi.likeness(word, w) for w in en.split()):
+                problems.append(f"{hi} reads as {best} in Hindi, not {en}: spell {en} by its own sound, or say what "
+                                f"it is (इलाका, शहर) as the Hindi sources would")
+                break
+    return problems
 
 
 def spellings(draft: dict, hi_names: dict[str, str], looked: dict[str, str | None]) -> dict[str, str]:

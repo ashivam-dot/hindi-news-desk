@@ -4,6 +4,8 @@ import pytest
 
 from desk import wiki, writer
 
+REAL_READINGS = wiki.hindi_readings  # conftest stubs it for every test
+
 SOURCE_EN = ("Ramesh Prasad Verma (2 March 1945 – 8 October 2026) was an Indian playback singer from Varanasi. His first "
              "album came out in 1968. He sang in 12 languages, and more than 300,000 people attended one concert in "
              "Mumbai. He received the Padma Shri in 1999 and dedicated it to his teacher.")
@@ -354,3 +356,63 @@ def test_the_hindi_source_is_dropped_when_missing():
     msgs = writer._messages(writer.DEATH_BRIEF.format(name="X", pronoun="he", object="him"), ["f"], "src",
                             "हिंदी स्रोत", PHOTOS, "एक्स", {})
     assert "SOURCE (Hindi Wikipedia):\nहिंदी स्रोत" in msgs[1]["content"] and "- (none)" in msgs[1]["content"]
+
+
+# Wikidata's search for the two real slips, as it answered on 2026-10-22 (language=hi, uselang=en).
+PAIRIS_SEARCH = {"search": [
+    {"id": "Q209842", "label": "University of Paris", "description": "French university (c. 1150–1970)",
+     "match": {"type": "label", "language": "hi", "text": "पैरिस विश्वविद्यालय"}},
+    {"id": "Q724496", "label": "Treaty of Paris", "description": "treaty signed in 1951",
+     "match": {"type": "label", "language": "hi", "text": "पैरिस संधि"}},
+    {"id": "Q6622287", "label": "Template:Visitor attractions in Paris", "description": "Wikimedia template",
+     "match": {"type": "label", "language": "hi", "text": "पैरिस के दर्शनीय स्थल"}},
+    {"id": "Q90", "label": "Paris", "description": "capital and most populous city in France",
+     "match": {"type": "label", "language": "bho", "text": "पैरिस"}}]}
+OBAN_SEARCH = {"search": [{"id": "Q846342", "label": "Obanazawa", "description": "city in Yamagata Prefecture, Japan",
+                           "match": {"type": "label", "language": "hi", "text": "ओबानज़वा"}}]}
+
+
+def test_wikidata_readings_take_whole_hindi_words_only_and_are_cached(monkeypatch):
+    calls = []
+
+    def fake(url, params):
+        calls.append(params["search"])
+        return {"पैरिस": PAIRIS_SEARCH, "ओबान": OBAN_SEARCH}.get(params["search"], {"search": []})
+    monkeypatch.setattr(wiki.net, "get_json", fake)
+    monkeypatch.setattr(wiki, "_READINGS", {})
+    got = REAL_READINGS(["पैरिस", "ओबान"])
+    assert got == {"पैरिस": ["University of Paris", "Treaty of Paris", "Paris"]}  # ओबानज़वा is not ओबान
+    REAL_READINGS(["पैरिस"])
+    assert calls == ["पैरिस", "ओबान"]
+
+
+def test_a_spelling_hindi_readers_take_for_paris_goes_back_to_the_writer(monkeypatch):
+    monkeypatch.setattr(wiki, "hindi_readings", lambda words: {w: r for w, r in {
+        "पैरिस": ["University of Paris", "Treaty of Paris", "Paris"], "चेन्नई": ["Chennai"]}.items() if w in words})
+    rain = {"names": [{"hi": "पैरिस", "en": "Parrys"}, {"hi": "चेन्नई", "en": "Chennai"}]}
+    problems = writer.misread(rain, {}, "चेन्नई में बारिश")
+    assert len(problems) == 1 and problems[0].startswith("पैरिस reads as Paris in Hindi, not Parrys")
+    assert writer.misread({"names": [{"hi": "पैरीज़", "en": "Parrys"}]}, {}, "") == []
+    # A spelling the Hindi sources print, or a name Wikidata labels, is checked elsewhere.
+    assert writer.misread(rain, {}, "चेन्नई के पैरिस इलाके में") == []
+    assert writer.misread(rain, {"Parrys": "पैरीज़"}, "") == []
+
+
+def test_aubagne_is_held_to_a_wikidata_label_and_otherwise_passes():
+    # Aubagne (Q184047) had no Hindi label on 2026-10-22 and ओबान is no Hindi item's word (only ओबानज़वा), so
+    # ओबान cannot be caught without one: a known limit. With a label the writer is held to it.
+    beats = [{"say": "फ्रांस के ओबान शहर के एक स्कूल में फायरिंग हुई।", "photo": 0, "caption": "x"}]
+    names = [{"hi": "ओबान", "en": "Aubagne"}]
+    ground = "A shooting at a school in Aubagne, France."
+    problems, _ = writer.validate({"title": "t", "beats": beats, "names": names}, PHOTOS,
+                                  {"en": "Aubagne", "hi": None}, ground, "", {"Aubagne": "ओबान्य"}, [], "incident",
+                                  False)
+    assert "write Aubagne as ओबान्य (the Hindi name people know), not ओबान" in problems
+    assert writer.misread({"names": names}, {}, "") == []
+
+
+def test_a_misread_name_is_advisory_on_the_last_draft(tmp_path, monkeypatch):
+    monkeypatch.setattr(writer, "misread", lambda *a, **k: ["पैरिस reads as Paris in Hindi, not Parrys"])
+    out, log, _ = write([[]], tmp_path)
+    assert len(log) == writer.DRAFTS - 1 and all("Paris" in a["problems"][0] for a in log)
+    assert out["beats"] == draft()["beats"]

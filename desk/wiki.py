@@ -291,6 +291,24 @@ def hindi_spellings(names: list[str]) -> dict[str, str]:
     return out
 
 
+_READINGS: dict[str, list[str]] = {}  # Hindi word -> English labels, kept for the whole run
+
+
+def hindi_readings(words: list[str]) -> dict[str, list[str]]:
+    """Hindi word -> the English labels of the Wikidata items a Devanagari label or alias writes with that word,
+    whole (पैरिस: "Paris", the Bhojpuri label) or as its first word (पैरिस संधि: "Treaty of Paris"). What a viewer
+    reads the word as: the Chennai rain Short (2026-10-19) wrote Parrys as पैरिस. Lookups are cached."""
+    for w in dict.fromkeys(words):
+        if w in _READINGS:
+            continue
+        d = net.get_json(WD_API, params={"action": "wbsearchentities", "search": w, "language": "hi",
+                                         "uselang": "en", "type": "item", "limit": 7, "format": "json"})
+        _READINGS[w] = [r["label"] for r in d.get("search", [])
+                        if r.get("label") and "Wikimedia" not in (r.get("description") or "")
+                        and re.match(re.escape(w) + r"(\s|$)", (r.get("match") or {}).get("text") or "")]
+    return {w: _READINGS[w] for w in words if _READINGS.get(w)}
+
+
 def hi_to_en(titles: list[str]) -> dict[str, str]:
     """Hindi Wikipedia title -> English Wikipedia title of the same Wikidata item, where both exist."""
     out = {}

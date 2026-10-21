@@ -21,6 +21,7 @@ def offline_outlets(monkeypatch):
     monkeypatch.setattr(outlets, "_extract", offline)
     monkeypatch.setattr(media, "openverse_for", lambda *args, **kwargs: [])
     monkeypatch.setattr(wiki, "hindi_spellings", lambda names: {})
+    monkeypatch.setattr(wiki, "hindi_readings", lambda words: {})
     monkeypatch.setattr(visuals, "cast_for", lambda *args, **kwargs: [])
     yield
     outlets.reset()
