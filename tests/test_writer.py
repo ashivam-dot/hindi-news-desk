@@ -263,10 +263,42 @@ def test_titles_with_hard_words_new_numbers_or_bare_questions_are_refused():
         "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, *args, earlier=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"]))
 
 
-def test_the_headline_editor_prefers_a_title_led_by_the_name_in_english(tmp_path):
-    out, _, _ = write([[]], tmp_path, titles=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे",
-                                              "Ramesh Prasad Verma: मशहूर गायक नहीं रहे"])
+def test_the_headline_editor_prefers_a_natural_headline_to_a_name_label(tmp_path):
+    out, _, _ = write([[]], tmp_path, titles=["Ramesh Prasad Verma: मशहूर गायक नहीं रहे",
+                                              "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"])
+    assert out["title"] == "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"
+
+
+def test_title_style_wants_the_name_first_no_label_no_stock_tail_and_its_own_opening():
+    d = draft()
+    style = lambda t, **k: writer.title_style(t, d, SUBJECT, **k)  # noqa: E731
+    assert style("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे") == []
+    assert any("Name:" in p for p in style("Ramesh Prasad Verma: मशहूर गायक नहीं रहे"))
+    for tail in ("रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, वजह क्या है?", "रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, क्या थी वजह?",
+                 "रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, क्यों?"):
+        assert any("stock tail" in p for p in style(tail)), tail
+    assert style("रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, गुरु को क्यों दिया सम्मान?") == []
+    assert any("first 3 words" in p for p in style("संगीत जगत में शोक, मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"))
+    recent = ["मशहूर गायक रमेश प्रसाद वर्मा अस्पताल में भर्ती"]
+    assert any("also opens" in p for p in style("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", recent=recent))
+    assert style("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", recent=recent, earlier=recent) == []  # this story's own part
+
+
+def test_title_style_is_advisory_in_the_last_round(tmp_path):
+    out, _, _ = write([[]], tmp_path, titles=["Ramesh Prasad Verma: मशहूर गायक नहीं रहे"])
     assert out["title"] == "Ramesh Prasad Verma: मशहूर गायक नहीं रहे"
+    pen = FakePen([[]], ["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"])
+    title, record = writer.retitle(pen, draft(), SUBJECT, SOURCE_EN, "death", False, recent=[])
+    assert title == "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे" and len(record["options"]) == 1
+
+
+def test_recent_titles_come_from_the_ledger(tmp_path, monkeypatch):
+    from desk import ledger
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    ledger.save("published", [{"id": "kh-1", "title": "मशहूर गायक रमेश प्रसाद वर्मा अस्पताल में भर्ती"}])
+    out, _, _ = write([[]], tmp_path, titles=["मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे",
+                                              "रमेश प्रसाद वर्मा नहीं रहे, 12 भाषाओं में गाया"])
+    assert out["title"] == "रमेश प्रसाद वर्मा नहीं रहे, 12 भाषाओं में गाया"
 
 
 def test_narration_in_a_notices_hindi_or_from_no_one_is_sent_back():

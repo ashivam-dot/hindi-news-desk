@@ -22,7 +22,8 @@ from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import config, explain, faces, gate, gemini, hindi, llm, media, orbitwire, outlets, stories, trends, visuals, wiki
+from . import (config, explain, faces, gate, gemini, hindi, ledger, llm, media, orbitwire, outlets, stories, trends,
+               visuals, wiki)
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -199,49 +200,54 @@ RULES = """RULES (all mandatory):
 - label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
   "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
   "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.
-- title: "<who or what, in English letters>: <Hindi headline>", 30 to 75 characters, the way Aaj Tak writes a
-  Shorts title ("Rahul Gandhi: ..."), in everyday Hindi (never formal Sanskritised words), that states the news (who,
-  what), no clickbait, no capitals for effect.
+- title: one natural Hindi headline, 30 to 75 characters, with the name or topic people search for in its first three
+  words ("टाइगर श्रॉफ की कार पर फायरिंग, ..."), in everyday Hindi (never formal Sanskritised words), that states the
+  news (who, what) as a concrete claim; no "Name:" label before it, no "वजह क्या है" tail, no clickbait, no capitals
+  for effect.
 Return only the JSON."""
 
 # Owner, 2026-10-15: titles were "too much difficult hindi and not interesting". The title is what people read
 # before they decide to watch, and the headline bar on screen: a Hindi news website's headline, not a gazette's.
 TITLE_BRIEF = """Write 5 different YouTube Shorts titles for the Hindi news Short whose SCRIPT is below.
 
-- Shape: "<Kicker>: <headline>", the way Aaj Tak, ABP News and NDTV India title their Shorts ("Tiger Shroff Firing:
-  कहां से गिरफ्तार हुए तीनों शूटर्स?", "Akhilesh Yadav की रैली में नहीं पहुंचे लोग"). The kicker is 1 to 4 words in
-  English letters, spelled the way Indians type it into YouTube search: the famous person's name ("Rahul Gandhi",
-  "LK Advani", "Imran Khan") or the topic ("Supreme Court", "Air India", "Sensex", "Delhi Metro", "Chennai Rain").
-  Only words the English sources use.
-- The headline is everyday Hindi, the words people say, the way Aaj Tak, Dainik Bhaskar or Navbharat Times write a
-  web headline. Keep the English words Hindi news keeps (IMF, GDP, IPO, RBI, सुप्रीम कोर्ट, शेयर बाजार, फ्लाइट,
-  एयरपोर्ट, बैंक). Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान, सुप्रीम कोर्ट not सर्वोच्च
-  न्यायालय, IMF not अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका not पद्धति, के बाद not
-  उपरांत, हफ्ते not सप्ताह, बेंच not पीठ, साल के not वर्षीय.
-- 35 to 75 characters in all. After the kicker, the most striking concrete fact: the number, the decision, or what
-  it means for people. Never open with an official's title or an institution's full name ("जस्टिस ... की पीठ",
-  "सॉलिसिटर जनरल ...", "भारत मौसम विज्ञान विभाग"): viewers stop for a name they know or for what changes for them.
-- When the name could mean someone else, the headline gives the role the SCRIPT gives ("Imran Khan: अभिनेता को ...",
-  "केंद्रीय मंत्री ..."), so no one mistakes them for someone else with that name.
-- A headline's active voice ("सरकार बेचेगी IDBI बैंक में हिस्सेदारी", "सेंसेक्स 1100 अंक उछला"), never a stiff passive
-  ("...किया गया").
-- It may end with a short reason hook that this Short answers (", वजह क्या है?", ", क्यों?"), but only after a part
-  that states the news. Never a question alone, never a teaser that hides the news.
+- Shape: one natural Hindi headline, the way Dainik Bhaskar, Navbharat Times or BBC Hindi write a web headline, with
+  the name or topic people search for within its first three words, spelled as the SCRIPT spells it ("टाइगर श्रॉफ की
+  कार पर फायरिंग, 3 आरोपी कोटा से पकड़े गए", "सेंसेक्स 1100 अंक उछला"). No "Name:" label in front of the headline.
+  English letters only for what Hindi news keeps in English (IMF, GDP, IPO, RBI, Air India) and only words the
+  English sources use.
+- It makes one concrete claim (the number, the decision, or what changes for people), or asks the one specific
+  question this Short answers after a part that states the news ("..., कोर्ट क्यों पहुंचे इमरान खान?"). Never the
+  stock tails "वजह क्या है?", "क्या थी वजह?" or a bare ", क्यों?", never a question alone, never a teaser that hides
+  the news.
+- Everyday Hindi, the words people say. Keep the English words Hindi news keeps (IMF, GDP, IPO, RBI, सुप्रीम कोर्ट,
+  शेयर बाजार, फ्लाइट, एयरपोर्ट, बैंक). Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान,
+  सुप्रीम कोर्ट not सर्वोच्च न्यायालय, IMF not अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका
+  not पद्धति, के बाद not उपरांत, हफ्ते not सप्ताह, बेंच not पीठ, साल के not वर्षीय.
+- 35 to 75 characters in all. Never open with an official's title or an institution's full name ("जस्टिस ... की
+  पीठ", "सॉलिसिटर जनरल ...", "भारत मौसम विज्ञान विभाग"): viewers stop for a name they know or for what changes for
+  them.
+- When the name could mean someone else, give the role the SCRIPT gives ("अभिनेता इमरान खान को ...", "केंद्रीय मंत्री
+  ..."), so no one mistakes them for someone else with that name.
+- A headline's active voice ("सरकार बेचेगी IDBI बैंक में हिस्सेदारी"), never a stiff passive ("...किया गया").
+- Never open with the same three words as a RECENT TITLE below: each Short's title is its own.
 - Only facts the SCRIPT states, every number exactly as the SCRIPT gives it. No clickbait (चौंकाने वाला, सनसनीखेज,
   बड़ी खबर, ब्रेकिंग, जानिए, जानें), no exclamation mark, no emoji, no words in capitals for effect.
 {earlier}
 The kind of change wanted (old title -> better title):
-- "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया" -> "IMF: भारत का GDP गिनने का नया तरीका सही"
-- "राजनाथ सिंह ने भारत-आसियान रक्षा सहयोग बढ़ाने का आह्वान किया" -> "Rajnath Singh: आसियान देशों से अपील, रक्षा में साथ बढ़ाएं"
-- "एअर इंडिया की उड़ान को जयपुर डायवर्ट किया गया" -> "Air India: फ्लाइट अचानक जयपुर उतारी गई, क्या थी वजह?"
-- "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना" -> "Supreme Court: इंटरनेट अब मौलिक अधिकार, कोर्ट ने माना"
-- "लालकृष्ण आडवाणी अपोलो अस्पताल में भर्ती, सीने में संक्रमण" -> "LK Advani: 98 साल के आडवाणी अस्पताल में भर्ती, सीने में इन्फेक्शन"
+- "अन्तर्राष्ट्रीय मुद्रा कोष ने भारत की जीडीपी गणना पद्धति का समर्थन किया" -> "IMF ने माना, भारत का GDP गिनने का नया तरीका सही"
+- "Rajnath Singh: आसियान देशों से अपील, रक्षा में साथ बढ़ाएं" -> "राजनाथ सिंह की आसियान देशों से अपील, रक्षा में साथ बढ़ाएं"
+- "Air India: फ्लाइट अचानक जयपुर उतारी गई, क्या थी वजह?" -> "Air India की फ्लाइट अचानक जयपुर उतारी गई"
+- "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना" -> "सुप्रीम कोर्ट ने माना, इंटरनेट अब मौलिक अधिकार"
+- "Imran Khan: 28 अक्टूबर तक भारत छोड़ने का आदेश, वजह क्या है?" -> "अभिनेता इमरान खान को 28 अक्टूबर तक भारत छोड़ने का आदेश"
 
 SCRIPT:
 {script}
 
 HINDI HEADLINES (how Hindi newsrooms write this story; style only, never a source):
 {hints}
+
+RECENT TITLES (other stories on this channel):
+{recent}
 
 Return {{"titles": [5 titles]}}."""
 TITLE_SCHEMA = {"type": "object", "properties": {"titles": {"type": "array", "items": {"type": "string"}}},
@@ -271,9 +277,14 @@ HARD_WORDS = {
 }
 # Spoken narration says "प्रतिशत"; only a title or a card writes "%".
 SAID_OK = {"प्रतिशत"}
-# "LK Advani: ..." — the name or topic in English letters, as Hindi news channels title their Shorts and as viewers
-# search for them.
+# Titles (2026-10-22): "Name: headline" Shorts drew a median 35.5 views (20 Shorts) against 55 for the rest (54), and
+# the five with a "वजह क्या है" tail 17; one template on every title also reads as mass-produced. So a title is one
+# natural Hindi headline with the searchable name in its first TITLE_CORE_WORDS words, and never opens like one of
+# the channel's last RECENT_TITLES titles. These are style rules (title_style): advisory on the last round.
 KICKER = re.compile(r"^[A-Za-z][A-Za-z0-9.&'’\- ]{1,34}:\s")
+STOCK_TAIL = re.compile(r"((वजह|कारण) क्या (है|थी|रही)|क्या (है|थी|रही) (वजह|कारण)|[,:।\-–]\s*क्यों)\s*\?\s*$")
+TITLE_CORE_WORDS = 3
+RECENT_TITLES = 20
 GENERIC_SOURCE = re.compile(r"(रिपोर्टों|रिपोर्ट|सूत्रों) के (मुताबिक|अनुसार)")
 NAMELESS_SOURCE = re.compile(r"स्रोत(ों)? के (मुताबिक|अनुसार)")
 TITLE_MAX = 80
@@ -638,38 +649,79 @@ def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind:
     return problems
 
 
+def opening(title: str, n: int = TITLE_CORE_WORDS) -> str:
+    return " ".join(hindi.norm(re.sub(r"[^\w\u0900-\u097f]", "", w)) for w in title.split()[:n])
+
+
+def recent_titles(limit: int = RECENT_TITLES) -> list[str]:
+    """The channel's last published titles."""
+    return [r["title"] for r in ledger.published()[-limit:] if r.get("title")]
+
+
+def title_style(title: str, draft: dict, subject: dict, recent: list[str] | None = None,
+                earlier: list[str] | None = None) -> list[str]:
+    """Style problems of a title (see KICKER): a "Name:" label, a stock "वजह क्या है" tail, the searchable name
+    later than its first words, or the same first words as another story's recent title."""
+    title = title.strip().strip('"')
+    names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
+    problems = []
+    if KICKER.match(title):
+        problems.append("drop the \"Name:\" label: write one natural Hindi headline that starts with the name")
+    if m := STOCK_TAIL.search(title):
+        problems.append(f"a stock tail ({m.group(0).strip(' ,:')}): end on the concrete fact, or ask the one specific "
+                        "question this Short answers")
+    words = title.split()
+    core = [subject.get("hi") or ""] + [p.get("hi", "") for p in names
+                                        if p.get("en") and p["en"].lower() in subject["en"].lower()]
+    span = TITLE_CORE_WORDS - 1 + max([1] + [len(c.split()) for c in core if c])
+    head = " ".join(words[:span])
+    if not (subject_in(head, subject, names) or any(c and hindi.contains(head, c) for c in core)
+            or (not KICKER.match(title) and hindi.contains(head, subject["en"]))):
+        problems.append(f"put {subject.get('hi') or subject['en']} within the first {TITLE_CORE_WORDS} words: it is "
+                        "what viewers search for")
+    mine = {hindi.norm(e) for e in earlier or [] if e}
+    start = opening(title)
+    if len(words) >= TITLE_CORE_WORDS and any(opening(r) == start for r in recent or [] if hindi.norm(r) not in mine):
+        problems.append(f"another recent Short's title also opens \"{' '.join(words[:TITLE_CORE_WORDS])}\": open "
+                        "differently")
+    return problems
+
+
 def retitle(pen: "Pen", draft: dict, subject: dict, ground_en: str, kind: str, agreed_toll: bool,
             reports: list[dict] | None = None, hints: list[str] | None = None,
-            earlier: list[str] | None = None) -> tuple[str, dict]:
+            earlier: list[str] | None = None, recent: list[str] | None = None) -> tuple[str, dict]:
     """The best title for a draft that passed every check: the first of the headline editor's options with no
-    problem (two rounds), else the draft's own title when it has none, else the draft's title anyway. Also the
-    record of what was tried."""
+    problem and no style problem; in the last of two rounds the first with no problem; else the draft's own title.
+    Also the record of what was tried. recent: the channel's last titles (default: the ledger's)."""
+    recent = recent_titles() if recent is None else recent
     script = "\n".join(b.get("say", "") for b in draft.get("beats") or [])
     past = ("EARLIER TITLES (earlier parts of this story; this title must tell what is new):\n"
             + "\n".join(f"- {e}" for e in earlier) + "\n") if earlier else ""
     messages = [{"role": "system", "content": "You are the headline editor of a popular Hindi news website."},
-                {"role": "user", "content": TITLE_BRIEF.format(script=script, earlier=past,
-                                                               hints="\n".join(f"- {h}" for h in hints or [])
-                                                               or "- (none)")}]
+                {"role": "user", "content": TITLE_BRIEF.format(
+                    script=script, earlier=past, hints="\n".join(f"- {h}" for h in hints or []) or "- (none)",
+                    recent="\n".join(f"- {t}" for t in recent[-RECENT_TITLES:]) or "- (none)")}]
     record = {"options": [], "own": draft.get("title", "")}
-    for _ in range(2):
+    rounds = 2
+    for round_ in range(rounds):
         try:
             answer = pen.chat(messages, TITLE_SCHEMA, temperature=0.8, max_tokens=600)
         except Exception as exc:
             record["error"] = f"{type(exc).__name__}: {exc}"[:200]
             break
         options = [str(t).strip().strip('"') for t in (answer.get("titles") or []) if str(t).strip()]
-        tried = [(t, title_problems(t, draft, subject, ground_en, kind, agreed_toll, reports, earlier))
-                 for t in options]
-        record["options"] += [{"title": t, "problems": p} for t, p in tried]
-        usable = [t for t, p in tried if not p]
-        good = next((t for t in usable if KICKER.match(t)), usable[0] if usable else None)
+        tried = [(t, title_problems(t, draft, subject, ground_en, kind, agreed_toll, reports, earlier),
+                  title_style(t, draft, subject, recent, earlier)) for t in options]
+        record["options"] += [{"title": t, "problems": p, "style": st} for t, p, st in tried]
+        good = next((t for t, p, st in tried if not p and not st), None)
+        if good is None and round_ == rounds - 1:
+            good = next((t for t, p, _ in tried if not p), None)  # style is advisory on the last round
         if good:
             record["chosen"] = good
             return good, record
         messages = messages + [{"role": "assistant", "content": json.dumps(answer, ensure_ascii=False)},
                                {"role": "user", "content": "None of these can be used:\n" + "\n".join(
-                                   f"- {t}: {'; '.join(p)}" for t, p in tried) + "\nWrite 5 new titles."}]
+                                   f"- {t}: {'; '.join(p + st)}" for t, p, st in tried) + "\nWrite 5 new titles."}]
     own = draft.get("title", "")
     record["chosen"] = own
     record["own_problems"] = title_problems(own, draft, subject, ground_en, kind, agreed_toll, reports, earlier)
