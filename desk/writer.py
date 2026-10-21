@@ -1346,8 +1346,12 @@ def respelled(draft: dict, name: str, name_hi: str) -> dict:
     """The draft as viewers will read it: Latin digits, one spelling per famous name (hindi.SPELLINGS) and the
     subject in the spelling the description and hashtags use (name_hi), wherever the writer spelled it otherwise.
     The writer's checks have passed by now; this only evens out what they allow."""
-    own = _pair_for(draft, name)
-    subject = {own.strip(): name_hi} if own and name_hi and own.strip() != name_hi else {}
+    own = (_pair_for(draft, name) or "").strip()
+    # Only a same-length variant (नरेन्द्र मोदी -> नरेंद्र मोदी). A surname-only ट्रंप mapped to डोनाल्ड ट्रंप would
+    # double every full name already written ("डोनाल्ड डोनाल्ड ट्रंप") and glue the subject's first name onto anyone
+    # who shares the surname ("सोनिया राहुल गांधी").
+    same_length = own and name_hi and len(own.split()) == len(name_hi.split())
+    subject = {own: name_hi} if same_length and own != name_hi else {}
 
     def fix(text):
         return hindi.respell(text, subject) if isinstance(text, str) else text

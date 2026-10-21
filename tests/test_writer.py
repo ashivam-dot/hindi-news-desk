@@ -95,6 +95,31 @@ def test_the_short_reads_with_latin_digits_and_one_spelling_per_name():
     assert d["title"].startswith("रमेश प्रसाद बर्मा")  # the writer's own draft is kept as it was, for the log
 
 
+def test_a_surname_only_spelling_of_the_subject_is_not_expanded():
+    d = {"title": "डोनाल्ड ट्रंप ने टैरिफ बढ़ाया, ट्रम्प का बड़ा फैसला",
+         "beats": [{"say": "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप ने कहा", "caption": "ट्रंप", "label": ""}],
+         "names": [{"en": "Donald Trump", "hi": "ट्रंप"}]}
+    out = writer.respelled(d, "Donald Trump", "डोनाल्ड ट्रंप")
+    assert out["title"] == "डोनाल्ड ट्रंप ने टैरिफ बढ़ाया, ट्रंप का बड़ा फैसला"
+    assert out["beats"][0]["say"] == "अमेरिकी राष्ट्रपति डोनाल्ड ट्रंप ने कहा"
+    assert out["names"][0]["hi"] == "ट्रंप"
+
+
+def test_a_shared_surname_does_not_get_the_subjects_first_name():
+    d = {"title": "सोनिया गांधी और राहुल गांधी की बैठक",
+         "beats": [{"say": "सोनिया गांधी ने कहा। गांधी परिवार", "caption": "x", "label": ""}],
+         "names": [{"en": "Rahul Gandhi", "hi": "गांधी"}]}
+    out = writer.respelled(d, "Rahul Gandhi", "राहुल गांधी")
+    assert out["title"] == "सोनिया गांधी और राहुल गांधी की बैठक"
+    assert out["beats"][0]["say"] == "सोनिया गांधी ने कहा। गांधी परिवार"
+
+
+def test_a_same_length_variant_of_the_subject_is_respelled():
+    d = {"title": "राहुल गाँधी का भाषण", "beats": [],
+         "names": [{"en": "Rahul Gandhi", "hi": "राहुल गाँधी"}]}
+    assert writer.respelled(d, "Rahul Gandhi", "राहुल गांधी")["title"] == "राहुल गांधी का भाषण"
+
+
 def test_respelling_takes_whole_words_only():
     from desk import hindi
 
