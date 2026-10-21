@@ -29,7 +29,7 @@ COUNTRY = "IN"
 # At most 1,000 characters (YouTube's limit). Only what the code does: the radar (plan.py), the two-owner rule
 # (gate.OWNERS_NEEDED, outlets.py's allowlist), the writer's rules and checks (writer.py, gate.py), the retire and
 # remake path (retire.json, remakes/). No promise of a pinned correction: nothing posts one.
-ABOUT = f"""क्यों हुआ — बड़ी ख़बर, उसकी वजह के साथ। भारत की बड़ी ख़बरें एक मिनट में: क्या हुआ, क्यों हुआ और आप पर क्या असर। प्राथमिकता: पैसा और महंगाई, नौकरियाँ और परीक्षाएँ, सरकारी योजनाएँ और नियम, विज्ञान और मौसम।
+ABOUT = f"""मतलबनामा — हर ख़बर का मतलब। भारत की बड़ी ख़बरें एक मिनट में: क्या हुआ, क्यों हुआ और आप पर क्या असर। प्राथमिकता: पैसा और महंगाई, नौकरियाँ और परीक्षाएँ, सरकारी योजनाएँ और नियम, विज्ञान और मौसम।
 
 कैसे बनती है:
 • ख़बर वही, जिसे लोग आज पढ़ और खोज रहे हैं (Google News, Trends, Wikipedia)।
@@ -41,9 +41,9 @@ AI: स्क्रिप्ट AI की मदद से लिखी और A
 
 सुधार: गलती दिखे तो स्रोत के साथ कमेंट करें या ईमेल करें: {config.CONTACT}। गलती पक्की हो तो वीडियो प्राइवेट होता है, और ख़बर ताज़ा हो तो सुधरा वीडियो आता है।
 
-English: India's news explained in Hindi. AI voice."""
+English: Matlabnama, what India's news means for you, in Hindi. AI voice."""
 ABOUT_LIMIT = 1000
-KEYWORDS = ["क्यों हुआ", "हिंदी समाचार", "hindi news", "news explained in hindi", "आज की ताजा खबर", "अर्थव्यवस्था",
+KEYWORDS = ["मतलबनामा", "Matlabnama", "हिंदी समाचार", "hindi news", "news explained in hindi", "आज की ताजा खबर", "अर्थव्यवस्था",
             "महंगाई", "RBI", "GST", "नौकरी", "सरकारी योजना", "नए नियम", "विज्ञान",
             "ISRO", "मौसम", "india news", "economy news hindi"]
 KEYWORDS_LIMIT = 500
@@ -52,18 +52,18 @@ KEYWORDS_LIMIT = 500
 # each Short's). Only ad-friendly families: crime, court, attack, protest and death stories get none, and a Short
 # plan.ad_class calls sensitive (an arrest, a court) stays out of every playlist whatever its category.
 FAMILIES = {
-    "economy": ("पैसा, महंगाई और अर्थव्यवस्था | क्यों हुआ", ("economy",),
+    "economy": ("पैसा, महंगाई और अर्थव्यवस्था | मतलबनामा", ("economy",),
                 "पेट्रोल, सोना, GST, RBI, बाज़ार और व्यापार की बड़ी ख़बरें: क्या हुआ और क्यों।"),
-    "policy": ("नियम, योजनाएँ और नौकरियाँ | क्यों हुआ", ("policy",),
+    "policy": ("नियम, योजनाएँ और नौकरियाँ | मतलबनामा", ("policy",),
                "नए नियम, सरकारी योजनाएँ, परीक्षाएँ और नौकरियाँ: क्या बदला और किस पर असर।"),
     # No "health": on the 2026-10-22 ledger its only Shorts were two hospital discharges, which are not science.
-    "science": ("विज्ञान और अंतरिक्ष | क्यों हुआ", ("science",),
+    "science": ("विज्ञान और अंतरिक्ष | मतलबनामा", ("science",),
                 "ISRO, अंतरिक्ष और विज्ञान की ख़बरें, आसान हिंदी में।"),
-    "world": ("भारत और दुनिया | क्यों हुआ", ("diplomacy", "world", "defence"),
+    "world": ("भारत और दुनिया | मतलबनामा", ("diplomacy", "world", "defence"),
               "विदेश नीति, समझौते और दुनिया की वे ख़बरें जिनका भारत से वास्ता है।"),
-    "weather": ("मौसम की ख़बरें | क्यों हुआ", ("weather", "cyclone"),
+    "weather": ("मौसम की ख़बरें | मतलबनामा", ("weather", "cyclone"),
                 "बारिश, अलर्ट, चक्रवात और हवा की गुणवत्ता: क्या हुआ और क्यों।"),
-    "aviation": ("उड़ानें और हवाई सफ़र | क्यों हुआ", ("aviation",),
+    "aviation": ("उड़ानें और हवाई सफ़र | मतलबनामा", ("aviation",),
                  "उड़ानें, हवाई अड्डे और हवाई सफ़र की ख़बरें: क्या हुआ और क्यों।"),
 }
 MIN_VIDEOS = 2  # a family gets its playlist (and section) once it has this many Shorts

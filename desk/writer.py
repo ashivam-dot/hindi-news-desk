@@ -1673,7 +1673,7 @@ def build_explainer(cand: dict) -> Short:
     label = cand.get("category_hi") or cat
     short = _short(sid, "explainer", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
                    photos, sources, when.isoformat(), loss=False, mood="news", region=cand.get("region", "india"),
-                   tags=[name, name_hi, label, cat, "क्यों हुआ", "हिंदी समाचार", "hindi news", "india news"],
+                   tags=[name, name_hi, label, cat, "मतलबनामा", "हिंदी समाचार", "hindi news", "india news"],
                    summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                            "Wikipedia से।",
                    cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person)
