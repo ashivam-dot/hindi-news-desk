@@ -33,6 +33,36 @@ class NoWriteScope(RuntimeError):
     """The sign-in token may upload but not edit a video (videos.update)."""
 
 
+class QuotaExceeded(RuntimeError):
+    """The project's daily YouTube quota is spent (HTTP 403, reason quotaExceeded): nothing more until midnight
+    Pacific time, and the next upload needs what is left."""
+
+
+# HTTP 403 reasons that mean the quota, not the token: the channel jobs stop for the day instead of reporting a scope.
+QUOTA_REASONS = {"quotaExceeded", "dailyLimitExceeded", "rateLimitExceeded", "userRateLimitExceeded"}
+
+
+def status_of(exc: Exception):
+    return getattr(getattr(exc, "resp", None), "status", None)
+
+
+def error_reason(exc: Exception) -> str | None:
+    """The reason of a googleapiclient HttpError ("quotaExceeded", "forbidden", "insufficientPermissions"), if any."""
+    try:
+        details = getattr(exc, "error_details", None)
+        if isinstance(details, list) and details and isinstance(details[0], dict) and details[0].get("reason"):
+            return details[0]["reason"]
+        content = getattr(exc, "content", b"") or b""
+        error = json.loads(content.decode() if isinstance(content, bytes) else content).get("error") or {}
+        return (error.get("errors") or [{}])[0].get("reason") or None
+    except (ValueError, AttributeError, TypeError):
+        return None
+
+
+def quota_spent(exc: Exception) -> bool:
+    return status_of(exc) in (403, "403", 429, "429") and error_reason(exc) in QUOTA_REASONS
+
+
 def client(service: str = "youtube", version: str = "v3"):
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
@@ -292,7 +322,10 @@ def untag(limit: int = UNTAG_PER_RUN) -> int:
         try:
             api.videos().update(part="snippet", body=body).execute()
         except Exception as exc:
-            if getattr(getattr(exc, "resp", None), "status", None) in (403, "403"):
+            if quota_spent(exc):
+                raise QuotaExceeded(f"untag: YouTube's daily quota is spent ({error_reason(exc)}, after {done} done)") \
+                    from exc
+            if status_of(exc) in (403, "403"):
                 raise NoWriteScope(UNTAG_NO_SCOPE + f" (HTTP 403 after {done} done)") from exc
             raise
         done += 1

@@ -192,6 +192,18 @@ def _advisory(health: dict, dry: bool) -> dict | None:
     return None
 
 
+def _channel_jobs(health: dict) -> None:
+    """The owner's one-off channel setup (DESK_UNTAG words "about", "playlists"), after the publish step so it only
+    spends what the upload left, and never on a held run (no channel id, no voice, or a quota hold)."""
+    if not config.CHANNEL_JOBS or health.get("held") or not config.channel_id_ready():
+        return
+    try:
+        from . import channel
+        health["steps"].append(channel.run(config.CHANNEL_JOBS))
+    except Exception as exc:  # the setup must never stop a publish or the health record
+        health["steps"].append(f"channel: {type(exc).__name__}: {exc}"[:300])
+
+
 def run(dry: bool = False, preview: bool = False) -> dict:
     """One scheduled pass: watch, pick the best eligible story, make it, gate it, publish it. A dry run makes the
     best candidate (outside the schedule if need be) and never publishes or changes the ledger."""
@@ -317,6 +329,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
         return health
     finally:
         if not dry:
+            _channel_jobs(health)
             ledger.save("health", health)
         else:
             WORK.mkdir(parents=True, exist_ok=True)

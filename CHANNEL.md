@@ -491,8 +491,13 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 - **AI labelling (India's IT Rules, 2026, and YouTube):** every frame carries a visible "AI आवाज़" label; the end card
   says "असली तस्वीरें: Wikimedia Commons · आवाज़: AI"; the description says in Hindi that the voice is AI and which
   engine read it; every upload sets YouTube's altered-or-synthetic-content flag.
-- Corrections: a wrong fact is fixed in the description and pinned comment the same day; a wrong number on screen
-  means the Short is made private and re-made.
+- Corrections: a viewer reports a mistake in a comment or by email (the About gives both); a confirmed wrong fact
+  means the Short is made private and, while the story is still news, re-made (`remakes/`). The desk posts no pinned
+  comment, so neither the About nor a description promises one.
+- Titles and descriptions (2026-10-22): the title's hashtag is someone the title names (`youtube.title_tag`; the
+  explainer's subject tag stays only when the title names the subject), digits are Latin and famous names have one
+  spelling (`hindi.SPELLINGS`, `hindi.respell`); every non-advisory description carries one "कैसे बनी:" line
+  (`youtube.HOW_MADE`) within the 5,000-byte limit.
 - Remakes: a published Short that is wrong or badly presented is re-made by a file in `remakes/` (`story`: the
   published id, `replaces`: its YouTube id, `until`, `why`). While its story is still on the radar the next run in the
   publishing window makes it again under a new id, ahead of the other ready stories, and once the new version is
@@ -517,6 +522,16 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   uploads after keeping their ids; uploads older than the newest 50 keep it. Editing a video (`videos.update`) needs
   the `youtube` or `youtube.force-ssl` scope: a token that lists neither is never sent, and a 403 stops the step;
   either way one health line (`youtube.UNTAG_NO_SCOPE`) says the token needs re-consent, and nothing else changes.
+- **Channel setup (`desk/channel.py`, 2026-10-22).** The same variable takes more words: `DESK_UNTAG="untag about
+  playlists"` (`true` still means untag only; `run.yml` passes no other variable and is not edited). `about` writes
+  the About (`channel.ABOUT`, at most 1,000 characters), keywords, `defaultLanguage` hi and country IN by
+  read-modify-write of `brandingSettings` (its title is required), then reads it back. `playlists` makes one public
+  series playlist per ad-friendly topic family (`channel.FAMILIES`) once it has two public, unreplaced, unretired,
+  ad-friendly Shorts, adds them from the ledger's video ids, and gives each a Home-tab section (a refusal is noted,
+  not retried). `state/channel.json` keeps what is done, so a finished job costs nothing; each run spends at most
+  600 units and each Pacific day 1,500 of the 10,000, and only after the publish step of a run that is not held. A
+  `quotaExceeded`/`dailyLimitExceeded` or other 403 stops it until the next Pacific day, a rate limit only for the
+  run; one health line says what happened, and no error of it can stop a publish.
 - Never promise views or earnings; growth comes from accuracy, consistency and clarity.
 
 ## Decisions log
@@ -525,3 +540,4 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 |---|---|---|
 | 2026-10-22 | YPP push, batch 2: no public machine tag; ad-safe ranking (x0.8 crime/court/communal/accident, x1.2 economy/jobs/schemes/tech/science/diplomacy, breaking exempt); Orbitwire's stories retold only with an India connection; misread-spelling check; natural name-first titles (no "Name:" label, no "वजह क्या है" tail, no repeated opening); काम की बात last beat and no advice; retention from YouTube Analytics. Style rules are advisory on the last attempt; no fact, licence or decorum gate loosened. | Views per Short on the state branch, 2026-10-21: "Name:" titles median 35.5 (n=20) vs 55 (n=54); "वजह क्या" titles median 17 (n=5: 321, 160, 17, 16, 4); category medians attack 85 (n=13), court 112.5 (6), economy 29 (5), news 44 (18), death 732; region medians world 48 (n=29), india 53 (n=41); only one Short ever recorded an Orbitwire overlap (Nana Patekar). Wikidata, 2026-10-22: पैरिस is the Bhojpuri label of Paris (Q90) and the first word of University of Paris and Treaty of Paris; Aubagne (Q184047) and Parry's Corner (Q3406502) have no Hindi label; ओबान only begins ओबानज़वा. No view or earnings promise is made: the ad reweight trades some views for suitability. |
 | 2026-10-22 | Batch-2 review fixes: the advice check is narrowed (no "की सलाह पर", no quoted attributed appeal) and advisory on the last draft; with `MIRROR_NEEDS_INDIA` off a world story without an India connection keeps its own angle; Hindi ad keywords that are part of another word and catch-all English words (talks, visits, prices, projects) no longer count, and a market crash is no accident; the retention window opens a day early (Pacific days) and ends three days back; untag checks for a write scope and reports a missing one in one line. | Review of the batch-2 branch, 2026-10-22, by running the checks: "सरकार ने विशेषज्ञों की सलाह पर स्कूल बंद किए" and `मोदी ने कहा, "आप सब मतदान करें।"` were rejected on every draft; `मैच के दौरान खिलाड़ी घायल`, दामाद, नियमित, "Kohli talks about retirement" were ad-friendly; "Stock market crash" was ad-sensitive; with the switch off every shared world story got the India angle and a भारत title rule. YouTube Data API: `videos.update` needs `youtube` or `youtube.force-ssl`; YouTube Analytics reports days in US Pacific time. |
+| 2026-10-22 | YPP push, batch 3: the About says what the desk does (economy, prices, jobs, schemes, science; named newsrooms plus Wikipedia/Wikidata; two outlets; AI voice and AI-assisted script; human-made editorial rules; corrections by comment or email, no pinned comment) and drops हादसे/युद्ध; series playlists by ad-friendly topic family with Home sections; the title hashtag is whom the title names; Latin digits and one spelling per famous name; a "कैसे बनी" line in descriptions. All channel writes are owner-gated (`DESK_UNTAG` words), capped and idempotent. | JEm0Ivq1_74 (Ashutosh Ranka story) carried #sauravdas because `upload_title` always took `hashtags[0]`, the explainer centre's tag, while the writer's title led with Ranka; its ledger article "Sourav Das (actor)" also looks like a wrong entity match (not fixed here). The old About promised a pinned correction the desk never posts. YouTube Data API: `channels.update` replaces the whole `brandingSettings` part and needs its title; writes cost 50 units; the About allows 1,000 characters and keywords 500. No view or earnings promise is made. |

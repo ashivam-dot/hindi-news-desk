@@ -19,7 +19,12 @@ CONTACT = "aksh.shivam17@gmail.com"
 MARKER = "hindi-news-desk:"
 # Repository variable DESK_UNTAG=true lets each live run take the old marker tag off a few uploads (youtube.untag),
 # after the ledger has kept their ids. Off by default: it is a YouTube write the owner turns on.
-UNTAG = os.environ.get("DESK_UNTAG", "").lower() == "true"
+# The same variable switches on the one-off channel jobs (desk/channel.py), since it is the one the run workflow
+# already passes for channel writes: a list of words, "untag" (or "true"), "about" (the About text, keywords,
+# language and country) and "playlists" (series playlists and their Home-tab sections), e.g. "untag about playlists".
+_JOBS = {w for w in re.split(r"[\s,]+", os.environ.get("DESK_UNTAG", "").lower()) if w}
+UNTAG = bool(_JOBS & {"true", "untag"})
+CHANNEL_JOBS = frozenset(_JOBS & {"about", "playlists"})
 CATEGORY = "25"  # News & Politics
 LANGUAGE = "hi"
 
