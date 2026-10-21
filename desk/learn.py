@@ -5,6 +5,12 @@ SCORE_AT_H hours, and compares story categories and regions with the channel's b
 candidate's priority by the learned lift of its category and region. A lift needs MIN_SAMPLES scored Shorts, is
 shrunk toward 1 by n / (n + PRIOR) and stays within LIFT_RANGE, so a couple of lucky uploads cannot steer the desk.
 Everything lands in state/performance.json, with a readable state/LEARNINGS.md.
+
+Views say who clicked; how much of the Short they watched says whether the story held them. A video record that
+carries RETENTION_FIELD (YouTube Analytics' averageViewPercentage, 0-100+) adds a second score: a group's mean
+retention against the channel's, shrunk the same way by its own count, blended in at RETENTION_WEIGHT before the
+same LIFT_RANGE bounds. Nothing writes the field yet: the desk's sign-in reads the Data API's public counts only, and
+YouTube Analytics needs a token with the yt-analytics.readonly scope. Until a reader fills it, lifts are views alone.
 """
 from __future__ import annotations
 
@@ -19,6 +25,8 @@ MIN_SAMPLES = 4
 PRIOR = 4.0
 LIFT_RANGE = (0.75, 1.35)
 FEATURES = ("category", "region")
+RETENTION_FIELD = "avg_view_pct"
+RETENTION_WEIGHT = 0.5
 KEEP_SNAPSHOTS = 16
 
 _cache: dict = {}
@@ -58,6 +66,9 @@ def learn(videos: list[dict]) -> dict:
     logs = [math.log1p(v["views_24h"]) for v in scored]
     base = sum(logs) / len(logs)
     out["baseline_views_24h"] = round(math.expm1(base))
+    held_base, retention = _retention(scored)
+    if held_base is not None:
+        out["baseline_view_pct"] = round(math.expm1(held_base), 1)
     for feature in FEATURES:
         groups: dict[str, list[float]] = {}
         for v, score in zip(scored, logs):
@@ -67,11 +78,36 @@ def learn(videos: list[dict]) -> dict:
             n = len(scores)
             if n < MIN_SAMPLES:
                 continue
-            diff = sum(scores) / n - base
-            lift = min(max(math.exp(diff * n / (n + PRIOR)), LIFT_RANGE[0]), LIFT_RANGE[1])
-            out["lifts"][f"{feature}:{value}"] = {"n": n, "lift": round(lift, 3),
-                                                   "typical_views_24h": round(math.expm1(sum(scores) / n))}
+            diff = (sum(scores) / n - base) * n / (n + PRIOR)
+            entry = {"n": n, "typical_views_24h": round(math.expm1(sum(scores) / n))}
+            if (held := retention.get(f"{feature}:{value}")) is not None:
+                diff = (1 - RETENTION_WEIGHT) * diff + RETENTION_WEIGHT * held["diff"]
+                entry |= {"n_retention": held["n"], "typical_view_pct": held["typical"]}
+            lift = min(max(math.exp(diff), LIFT_RANGE[0]), LIFT_RANGE[1])
+            out["lifts"][f"{feature}:{value}"] = {"n": n, "lift": round(lift, 3)} | entry
     return out
+
+
+def _retention(scored: list[dict]) -> tuple[float | None, dict]:
+    """The channel's mean log retention and, per feature value with MIN_SAMPLES records carrying it, the shrunk
+    log-ratio of its mean to the channel's."""
+    held = [v for v in scored if isinstance(v.get(RETENTION_FIELD), (int, float)) and v[RETENTION_FIELD] >= 0]
+    if len(held) < MIN_SAMPLES:
+        return None, {}
+    logs = [math.log1p(v[RETENTION_FIELD]) for v in held]
+    base = sum(logs) / len(logs)
+    out = {}
+    for feature in FEATURES:
+        groups: dict[str, list[float]] = {}
+        for v, score in zip(held, logs):
+            if v.get(feature):
+                groups.setdefault(str(v[feature]), []).append(score)
+        for value, scores in groups.items():
+            n = len(scores)
+            if n >= MIN_SAMPLES:
+                out[f"{feature}:{value}"] = {"n": n, "diff": (sum(scores) / n - base) * n / (n + PRIOR),
+                                             "typical": round(math.expm1(sum(scores) / n), 1)}
+    return base, out
 
 
 def factor(cand: dict) -> float:
@@ -93,6 +129,9 @@ def report(perf: dict) -> str:
              f"{LIFT_RANGE[0]}-{LIFT_RANGE[1]}.", ""]
     if learned.get("baseline_views_24h") is not None:
         lines.append(f"Baseline: a typical Short has {learned['baseline_views_24h']} views at 24 h.")
+    if learned.get("baseline_view_pct") is not None:
+        lines.append(f"Retention: a typical Short is watched {learned['baseline_view_pct']}% through; a group's "
+                     f"retention is blended into its lift at {RETENTION_WEIGHT}.")
     for key, v in sorted(learned.get("lifts", {}).items(), key=lambda kv: -kv[1]["lift"]):
         lines.append(f"- {key}: x{v['lift']} ranking lift ({v['n']} Shorts, typical {v['typical_views_24h']} views)")
     if not learned.get("lifts"):

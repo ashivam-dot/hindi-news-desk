@@ -71,3 +71,42 @@ def test_refresh_snapshots_scores_and_throttles(monkeypatch, state):
     assert learn.refresh(at=AT + timedelta(hours=1), api=object()) is None
     assert learn.refresh(at=AT + learn.REFRESH, api=object()) is not None
     assert len(ledger.load("performance", {})["videos"]["v0"]["snapshots"]) == 2
+
+
+def test_without_retention_data_lifts_are_views_alone():
+    vids = [_video(i, 130, "earthquake") for i in range(4)] + [_video(10 + i, 100, "death") for i in range(4)]
+    out = learn.learn(vids)
+    assert "baseline_view_pct" not in out and "n_retention" not in out["lifts"]["category:earthquake"]
+    # Too few records with the field: still views alone.
+    few = [v | {learn.RETENTION_FIELD: 90} for v in vids[:3]] + vids[3:]
+    assert learn.learn(few)["lifts"] == out["lifts"]
+
+
+def test_retention_is_blended_into_lifts_shrunk_and_bounded():
+    same = [_video(i, 100, "earthquake") for i in range(4)] + [_video(10 + i, 100, "death") for i in range(4)]
+    held = [v | {learn.RETENTION_FIELD: 80 if v["category"] == "earthquake" else 40} for v in same]
+    out = learn.learn(held)
+    assert out["baseline_view_pct"] == pytest.approx(math.expm1((math.log(81) + math.log(41)) / 2), abs=0.1)
+    quake, death = out["lifts"]["category:earthquake"], out["lifts"]["category:death"]
+    gap = (math.log(81) - math.log(41)) / 2 * 0.5  # each side's distance from the channel's mean, shrunk by 4/8
+    assert quake["lift"] == pytest.approx(math.exp(learn.RETENTION_WEIGHT * gap), abs=1e-3)
+    assert death["lift"] == pytest.approx(math.exp(-learn.RETENTION_WEIGHT * gap), abs=1e-3)
+    assert quake["n_retention"] == 4 and quake["typical_view_pct"] == pytest.approx(80, abs=0.1)
+    # Equal views, wildly different retention: the lift stays within LIFT_RANGE.
+    wild = [v | {learn.RETENTION_FIELD: 10_000 if v["category"] == "earthquake" else 0} for v in same]
+    lifts = learn.learn(wild)["lifts"]
+    assert lifts["category:earthquake"]["lift"] == learn.LIFT_RANGE[1]
+    assert lifts["category:death"]["lift"] == learn.LIFT_RANGE[0]
+    assert "Retention: a typical Short" in learn.report({"at": "x", "learned": out, "videos": {}})
+
+
+def test_refresh_keeps_a_records_retention(monkeypatch):
+    published = (AT - timedelta(hours=30)).isoformat()
+    ledger.save("published", [{"id": "s0", "video_id": "v0", "category": "death", "region": "world",
+                               "published_at": published}])
+    ledger.save("performance", {"at": None, "videos": {"v0": {"id": "s0", "published_at": published,
+                                                              "snapshots": [], learn.RETENTION_FIELD: 55.0}}})
+    monkeypatch.setattr(youtube, "identity", lambda api: {})
+    monkeypatch.setattr(youtube, "recent", lambda api, ch: [{"id": "v0", "statistics": {"viewCount": "9"}}])
+    learn.refresh(at=AT, api=object())
+    assert ledger.load("performance", {})["videos"]["v0"][learn.RETENTION_FIELD] == 55.0
