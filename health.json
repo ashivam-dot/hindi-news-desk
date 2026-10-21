@@ -1,19 +1,20 @@
 {
- "at": "2026-10-21T08:42:11+00:00",
+ "at": "2026-10-21T09:25:03+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 60 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.791, 'typical_views_24h': 26}, 'category:news': {'n': 16, 'lift': 1.102, 'typical_views_24h': 46}, 'category:world': {'n': 5, 'lift': 0.792, 'typical_views_24h': 26}, 'category:court': {'n': 6, 'lift': 1.35, 'typical_views_24h': 70}, 'region:world': {'n': 28",
   "watch: 18 candidates from 21 trending",
-  "outlets: 1204 headlines from 31 feeds (19 owners), 10 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-bengaluru-explosion, nw-20261020-tiger-shroff-attack",
-  "explainers: 8 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q139857349, kh-20261021-Q96418672, kh-20261021-Q4900687; dropped: explainer Mukesh Ambani's Jio: fewer than 3 owners' headlines name it and the story; explainer Delhi AQI: fewer than 3 owners' headlines name it and the story; explainer Dussehra BJP / BJP MLA: no Wikipedia article that can be its centre",
+  "outlets: 1217 headlines from 31 feeds (19 owners), 7 matched to articles, 11 candidates with 2+ owners, 3 nw- stories (on): nw-20261021-bengaluru-explosion, nw-20261020-tiger-shroff-attack, nw-20261021-rubio-protest",
+  "explainers: 8 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q139857349, kh-20261021-Q1352, kh-20261021-Q4900687; dropped: explainer Delhi AQI: fewer than 3 owners' headlines name it and the story; explainer Dussehra BJP / BJP MLA: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261021-Q1352: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
   "hold kh-20261021-Q139857349: already 8 Shorts today (IST)",
   "hold kh-20261021-Q4900687: already 8 Shorts today (IST)",
-  "drop nw-20261021-bengaluru-explosion: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+  "hold nw-20261021-rubio-protest: already 8 Shorts today (IST)"
  ]
 }
