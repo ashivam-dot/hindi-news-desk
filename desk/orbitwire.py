@@ -27,6 +27,16 @@ INDIA_FAME = 25_000
 POOL = 12
 QID = re.compile(r"^wk-(Q\d+)(?:-|$)")
 
+# A story Orbitwire told goes out again in Hindi only with an India connection (2026-10-22): a Hindi retelling of
+# the English channel's world story is the mirroring YouTube's inauthentic-content policy is about, and Hindi viewers
+# come for the India side. False tells the high-profile shared stories again, as before.
+MIRROR_NEEDS_INDIA = True
+INDIA_TEXT = re.compile(
+    r"\b(India|Indian|Indians|New Delhi|Delhi|Mumbai|Kolkata|Chennai|Bengaluru|Hyderabad|Ahmedabad|Jamnagar|Pune|"
+    r"Kashmir|Bihar|Uttar Pradesh|Maharashtra|Kerala|Punjab|Assam|Gujarat|Rajasthan|Odisha|Bengal|Modi|"
+    r"Jaishankar|MEA)\b|भारत|भारतीय|दिल्ली|मुंबई|मुम्बई|कोलकाता|चेन्नई|बेंगलुरु|हैदराबाद|गुजरात|महाराष्ट्र|बिहार|"
+    r"उत्तर प्रदेश|कश्मीर|केरल|पंजाब|असम|राजस्थान|मोदी|जयशंकर|विदेश मंत्रालय")
+
 ANGLES = {
     "india": {"label": "भारत से कनेक्शन", "title": ("भारत",),
               "brief": "Tell this story through its connection to India and what it means for India: the Indian "
@@ -131,6 +141,20 @@ def high_profile(cand: dict, all_fame: list[float]) -> str | None:
         return f"an India story with {cand['hindi_news']} Hindi lead headlines"
     if cand.get("region") == "india" and fame >= INDIA_FAME:
         return f"an India story (fame {fame:,.0f}): Hindi viewers are not Orbitwire's English audience"
+    return None
+
+
+def india_connection(cand: dict) -> str | None:
+    """Why a story is India's too (an India story, a Wikidata or newsroom India link, or India in its headlines),
+    or None."""
+    if cand.get("region") == "india":
+        return "an India story"
+    if cand.get("india_link"):
+        return "linked to India"
+    text = " ".join([cand.get("title") or "", cand.get("story") or ""]
+                    + [h for k in ("headlines", "hindi_headlines", "top_headlines") for h in cand.get(k) or []])
+    if m := INDIA_TEXT.search(text):
+        return f"its headlines name {m.group(0)}"
     return None
 
 

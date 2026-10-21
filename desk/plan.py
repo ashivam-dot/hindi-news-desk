@@ -510,7 +510,8 @@ def _quake_facts(cands: list[dict]) -> list[str]:
 
 
 def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[str]]:
-    """Skip what Orbitwire covers unless it is high-profile; mark the high-profile shared stories for a new angle."""
+    """Skip what Orbitwire covers unless it is high-profile and (MIRROR_NEEDS_INDIA) India's too; mark the shared
+    stories kept for a new angle."""
     try:
         state = orbitwire.fetch()
     except Exception as exc:
@@ -529,8 +530,15 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
             notes.append(f"skip {c['id']}: Orbitwire {ov['status'].replace('_', ' ')} ({ov['orbitwire_id']}), not "
                          f"high-profile enough to tell again")
             continue
+        india = orbitwire.india_connection(c)
+        if orbitwire.MIRROR_NEEDS_INDIA and not india:
+            notes.append(f"skip {c['id']}: Orbitwire {ov['status'].replace('_', ' ')} ({ov['orbitwire_id']}) and no "
+                         f"India connection: not told again in Hindi")
+            continue
         kind = "protest" if c.get("category") in trends.ONGOING else c.get("kind", "incident")
-        ov |= {"high_profile": why, "angle": orbitwire.angle_for(kind, bool(c.get("india_link")))}
+        # An India story's own angle is not "its India connection"; a world story India is part of tells that.
+        link = bool(c.get("india_link")) or c.get("region") != "india"
+        ov |= {"high_profile": why, "india": india, "angle": orbitwire.angle_for(kind, link)}
         kept.append(c | {"orbitwire": ov})
     return kept, notes
 

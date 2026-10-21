@@ -166,3 +166,22 @@ def test_ledger_records_the_overlap(made, tmp_path, monkeypatch):
     assert row["orbitwire_overlap"] == {"qid": "Q900001", "status": "published", "orbitwire_id": "wk-Q900001",
                                         "orbitwire_published_at": released, "high_profile": "fame", "angle": "india"}
     assert row["voice"] == "gemini-sulafat"
+
+
+def test_a_shared_story_is_told_again_only_with_an_india_connection(monkeypatch):
+    s = state([(f"wk-Q{i}", "2026-10-09T10:00:00+00:00") for i in range(1, 5)])
+    monkeypatch.setattr(orbitwire, "fetch", lambda: s)
+    big = {"kind": "incident", "fame": 900_000, "india_link": False, "region": "world"}
+    cands = [big | {"id": "wk-Q1", "qid": "Q1", "title": "2026 Aubagne school shooting"},
+             big | {"id": "wk-Q2", "qid": "Q2", "title": "Marco Rubio",
+                    "headlines": ["Marco Rubio visits Reliance's Jamnagar refinery"]},
+             big | {"id": "wk-Q3", "qid": "Q3", "title": "Indiana floods"},
+             big | {"id": "wk-Q4", "qid": "Q4", "kind": "death", "title": "Nana Patekar", "region": "india"}]
+    kept, notes = plan.apply_orbitwire(cands, AT)
+    assert [c["id"] for c in kept] == ["wk-Q2", "wk-Q4"]
+    assert any("skip wk-Q1" in n and "no India connection" in n for n in notes)
+    assert any("skip wk-Q3" in n for n in notes)  # Indiana is not India
+    assert kept[0]["orbitwire"]["india"] == "its headlines name Jamnagar" and kept[0]["orbitwire"]["angle"] == "india"
+    assert kept[1]["orbitwire"]["angle"] == "timeline"  # an India story keeps its own angle
+    monkeypatch.setattr(orbitwire, "MIRROR_NEEDS_INDIA", False)
+    assert len(plan.apply_orbitwire(cands, AT)[0]) == 4
