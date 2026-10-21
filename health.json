@@ -1,13 +1,12 @@
 {
- "at": "2026-10-21T22:55:54+00:00",
+ "at": "2026-10-21T23:36:44+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 66 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.225, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:attack': {'n': 6, 'lift': 1.35, 'typical_views_24h': 72}, 'category:diplomacy': {'n': 4, 'lift': 1.069, 'typical_views_24h': 49}, 'category:economy': {'n': 5, 'lift': 0.845, 'typical_views_24h': 26, 'n_retention': 5, 'typical_view_pct': 36.6}",
   "untag: old marker tag taken off 5 uploads",
   "watch: 13 candidates from 17 trending",
-  "outlets: 1250 headlines from 31 feeds (19 owners), 18 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
-  "explainers: 5 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q7747, kh-20261022-Q1340361, kh-20261022-Q317521; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Shashi Tharoor: fewer than 3 owners' headlines name it and the story; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "outlets: 1240 headlines from 31 feeds (19 owners), 20 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
+  "explainers: 5 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q1340361, kh-20261022-Q7747, kh-20261022-Q317521; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Shashi Tharoor: fewer than 3 owners' headlines name it and the story; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
@@ -16,8 +15,8 @@
   "hold nw-20261021-jantar-mantar-protest: outside 07:00-24:00 IST",
   "hold nw-20261019-tiger-shroff-attack-hurt: 7 of the case's Shorts on the channel, 6 at most",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: 7 of the case's Shorts on the channel, 6 at most",
-  "drop kh-20261022-Q7747: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261022-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747, kh-20261022-Q317521"
+  "drop kh-20261022-Q1340361: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "drop kh-20261022-Q317521: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q317521, kh-20261022-Q7747"
  ]
 }
