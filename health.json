@@ -1,11 +1,11 @@
 {
- "at": "2026-10-21T16:59:47+00:00",
+ "at": "2026-10-21T17:37:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "watch: 11 candidates from 13 trending",
-  "outlets: 1295 headlines from 31 feeds (19 owners), 9 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q195616, kh-20261021-Q51993, kh-20261021-Q1340361; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer American Stephen Hubbard: fewer than 3 owners' headlines name it and the story; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "outlets: 1296 headlines from 31 feeds (19 owners), 6 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q195616, kh-20261021-Q51993, kh-20261021-Q1340361; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer FSSAI: fewer than 3 owners' headlines name it and the story; explainer American Stephen Hubbard: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
@@ -13,8 +13,8 @@
   "drop kh-20261021-Q195616: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
-  "drop kh-20261021-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261021-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261021-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
  ]
 }
