@@ -167,7 +167,10 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   flashpoints and accidents, x1.2 (`AD_FRIENDLY`) for economy and prices (petrol, gold, GST, RBI, EMI, tax), jobs,
   exams and schemes, telecom and tech rules, infrastructure, science and neutral diplomacy. A keyword classifier
   (`plan.ad_class`) reads the title, story and English and Hindi headlines (a Hindi word must start a word, so
-  "सोना" is not "सोनाक्षी"); sensitive wins when both match, an obituary is sensitive only through such words, and "cardiac
+  "सोना" is not "सोनाक्षी", and a longer word that is another word is no match: दौरान is no दौरा, दामाद no दाम,
+  नियमित no नियम, "दिल का दौरा" no visit); English words that fit any story need a pairing word (a state visit, trade
+  talks, a price hike, a rail project; not "Kohli talks" or "visits hospital"), and a market crash is no accident.
+  Sensitive wins when both match, an obituary is sensitive only through such words, and "cardiac
   arrest" is no arrest. It is a multiplier, never a ban, and breaking news is exempt. One health line
   (`plan.ad_note`) names the stories it moved. Honest trade-off: on this channel attack (median 85 views, 13 Shorts)
   and court (112, 6) outdrew economy (29, 5), so this costs some views for advertiser suitability; it stays mild.
@@ -245,6 +248,8 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   adds retention, shrunk the same way and blended in at half weight. `learn.read_retention` fills it and
   `engaged_views` from YouTube Analytics v2 (`dimensions=video`, `metrics=views,engagedViews,averageViewPercentage`)
   through the desk's own sign-in, only for Shorts at least three days old (the numbers settle about two days after).
+  Analytics counts US Pacific days, so the window opens the UTC day before the oldest Short and ends three days
+  back, before the days still settling.
   It needs the `yt-analytics.readonly` scope: without it (HTTP 403, or a token that lists its scopes without it)
   nothing is filled and one health note says so; lifts are then views alone.
 
@@ -266,7 +271,8 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   its headlines name India, an Indian place, Modi, Jaishankar or the MEA (`orbitwire.india_connection`; "Indiana" is
   not India); otherwise it is skipped with a note. A Hindi retelling of the English channel's world story is the
   mirroring YouTube's inauthentic-content policy is about, and Hindi viewers come for the India side. The constant
-  is the switch: `False` tells the high-profile shared stories again as before. World stories Orbitwire did not
+  is the switch: `False` tells the high-profile shared stories again as before, each with its own angle (a world
+  story with no India connection never gets the India angle, so no ungrounded India line is asked for). World stories Orbitwire did not
   tell are not affected (world Shorts drew a median of 48 views, 29 Shorts, against 53 for India's 41).
 - A high-profile shared story is told differently: its own angle (India connection when it has one; otherwise a
   timeline for a death, an explainer for an incident or protest; a world story India is part of takes the India
@@ -442,8 +448,11 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   protest or explainer says what happens next (a hearing, a deadline, the next official step) or what the news
   means for people (a closed road or service, a changed rule or price, compensation), only as the sources state it
   and attributed. `writer.value_beat` checks the last beat for such words (advisory, never on an obituary or the
-  last draft). No advice ever: `writer.advice` sends back a beat that tells viewers to buy, invest, take medicine or
+  last draft). No advice: `writer.advice` sends back a beat that tells viewers to buy, invest, take medicine or
   "आपको ... चाहिए", or that gives an unnamed expert's advice (विशेषज्ञों की सलाह), above all on money, health or law.
+  Reporting is not advice: "विशेषज्ञों की सलाह पर स्कूल बंद किए" (why something was done) and a quoted, attributed
+  appeal pass, unless the quote's speaker is an unnamed expert. Like the other style rules it is advisory on the
+  last draft, so a false match never costs a story; the writer's prompt and the fact checker still forbid advice.
 - **Hindi on screen:** Devanagari is shaped with HarfBuzz (Pillow's RAQM layout) in Mukta (OFL, bundled). Rendering
   refuses to run without RAQM, because basic layout breaks conjuncts and vowel signs. Captions appear word by word on
   Whisper's timings and always show the script's own words.
@@ -505,7 +514,9 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   `youtube.find` takes that id, then an older upload's marker tag (`config.MARKER`, kept for the uploads before
   this date), then the one recent upload no ledger row owns whose title is the story's. The repository variable
   `DESK_UNTAG=true` (off by default; an owner action) lets each live run take the old tag off five of the recent 50
-  uploads after keeping their ids; uploads older than the newest 50 keep it.
+  uploads after keeping their ids; uploads older than the newest 50 keep it. Editing a video (`videos.update`) needs
+  the `youtube` or `youtube.force-ssl` scope: a token that lists neither is never sent, and a 403 stops the step;
+  either way one health line (`youtube.UNTAG_NO_SCOPE`) says the token needs re-consent, and nothing else changes.
 - Never promise views or earnings; growth comes from accuracy, consistency and clarity.
 
 ## Decisions log
@@ -513,3 +524,4 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 | Date | Decision | Evidence |
 |---|---|---|
 | 2026-10-22 | YPP push, batch 2: no public machine tag; ad-safe ranking (x0.8 crime/court/communal/accident, x1.2 economy/jobs/schemes/tech/science/diplomacy, breaking exempt); Orbitwire's stories retold only with an India connection; misread-spelling check; natural name-first titles (no "Name:" label, no "वजह क्या है" tail, no repeated opening); काम की बात last beat and no advice; retention from YouTube Analytics. Style rules are advisory on the last attempt; no fact, licence or decorum gate loosened. | Views per Short on the state branch, 2026-10-21: "Name:" titles median 35.5 (n=20) vs 55 (n=54); "वजह क्या" titles median 17 (n=5: 321, 160, 17, 16, 4); category medians attack 85 (n=13), court 112.5 (6), economy 29 (5), news 44 (18), death 732; region medians world 48 (n=29), india 53 (n=41); only one Short ever recorded an Orbitwire overlap (Nana Patekar). Wikidata, 2026-10-22: पैरिस is the Bhojpuri label of Paris (Q90) and the first word of University of Paris and Treaty of Paris; Aubagne (Q184047) and Parry's Corner (Q3406502) have no Hindi label; ओबान only begins ओबानज़वा. No view or earnings promise is made: the ad reweight trades some views for suitability. |
+| 2026-10-22 | Batch-2 review fixes: the advice check is narrowed (no "की सलाह पर", no quoted attributed appeal) and advisory on the last draft; with `MIRROR_NEEDS_INDIA` off a world story without an India connection keeps its own angle; Hindi ad keywords that are part of another word and catch-all English words (talks, visits, prices, projects) no longer count, and a market crash is no accident; the retention window opens a day early (Pacific days) and ends three days back; untag checks for a write scope and reports a missing one in one line. | Review of the batch-2 branch, 2026-10-22, by running the checks: "सरकार ने विशेषज्ञों की सलाह पर स्कूल बंद किए" and `मोदी ने कहा, "आप सब मतदान करें।"` were rejected on every draft; `मैच के दौरान खिलाड़ी घायल`, दामाद, नियमित, "Kohli talks about retirement" were ad-friendly; "Stock market crash" was ad-sensitive; with the switch off every shared world story got the India angle and a भारत title rule. YouTube Data API: `videos.update` needs `youtube` or `youtube.force-ssl`; YouTube Analytics reports days in US Pacific time. |
