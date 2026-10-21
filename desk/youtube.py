@@ -12,7 +12,7 @@ import re
 import time
 from pathlib import Path
 
-from . import config, gate, ledger, media
+from . import config, gate, hindi, ledger, media
 from .spec import Short
 
 TOKEN_FILE = Path(__file__).resolve().parents[1] / "secrets" / "token.json"
@@ -134,11 +134,23 @@ def source_lines(short: Short) -> list[str]:
     return ["स्रोत: " + ", ".join(wiki + named)] + short.sources + [""]
 
 
+# The editorial process in one line (YouTube's reviewers read descriptions for "how was this made"; PLAN.md, the
+# revenue push of 2026-10-22). Every clause is something the code does: plan.py's radar, writer.py's checks against
+# Wikipedia/Wikidata and the reporting of two independent owners (gate.OWNERS_NEEDED), its second AI check pass, and
+# gate.py's rules. Nobody reviews each Short by hand, so it never says so. An advisory has its own hand-made line.
+HOW_MADE = ("कैसे बनी: आज की चर्चित ख़बर (Google News, Google Trends, Wikipedia)। हर नाम, तथ्य और संख्या "
+            "Wikipedia/Wikidata या कम से कम दो स्वतंत्र समाचार संस्थानों की रिपोर्टों से मिलाई गई। स्क्रिप्ट AI की मदद से "
+            "लिखी गई, फिर दूसरी AI जाँच और चैनल के संपादकीय नियमों की स्वचालित जाँच से गुज़री।")
+HOW_MADE_MARK = "कैसे बनी:"
+
+
 def description(short: Short, voice: dict) -> str:
     """The full description; when it passes YouTube's limit, without the narration (the video says it), then with
-    the photo credits grouped by licence. The sources and the AI disclosure always stay."""
-    for narration, grouped in ((True, False), (False, False), (False, True)):
-        text = _description(short, voice, narration, grouped)
+    the photo credits grouped by licence, and only then without the editorial-process line (HOW_MADE). The sources
+    and the AI disclosure always stay."""
+    for narration, grouped, how in ((True, False, True), (False, False, True), (False, True, True),
+                                    (False, True, False)):
+        text = _description(short, voice, narration, grouped, how)
         if len(text.encode()) <= DESCRIPTION_BYTES:
             return text
     raise ValueError(f"description is {len(text.encode())} bytes; YouTube allows {DESCRIPTION_BYTES}")
@@ -151,10 +163,43 @@ def hashtag_line(short: Short) -> str:
 TITLE_LIMIT = 100
 
 
+def _latin_key(name: str) -> str:
+    from .writer import search_name
+
+    return re.sub(r"[^A-Za-z0-9]", "", search_name(name)).lower()
+
+
+# The writer's tags that name no one (writer.hashtags_for): a title may carry them whatever it is about.
+NAMELESS_TAGS = {"hindinews", "shorts", "latestnews", "newsinhindi", "hindisamachar", "indianews", "worldnews"}
+
+
+def title_tag(short: Short) -> str:
+    """The hashtag the title carries after #shorts: the story's first one (the subject's) when the title names the
+    subject, else that of another person or place in the story the title names, else none. JEm0Ivq1_74 (2026-10-20)
+    went out as "Ashutosh Ranka: ... #shorts #sauravdas": the explainer's centre was Saurav Das, the writer's title
+    led with the co-accused, and the uploader took the centre's tag for granted. An advisory's tags are hand-picked."""
+    lead = hashtag(short.hashtags[0]) if short.hashtags else ""
+    if short.kind == "advisory" or lead in NAMELESS_TAGS:
+        return lead
+    title = short.title
+    latin = re.sub(r"[^a-z0-9]", "", title.lower())
+    pairs = [p for p in short.scene.get("names") or [] if isinstance(p, dict) and isinstance(p.get("en"), str)]
+
+    def named(p: dict) -> bool:
+        key = _latin_key(p["en"])
+        return bool(key and key in latin) or bool(isinstance(p.get("hi"), str) and hindi.contains(title, p["hi"]))
+
+    if lead and (lead in latin or hindi.contains(title, short.hashtags[0])
+                 or hindi.contains(title, short.scene.get("name_hi") or "")
+                 or any(_latin_key(p["en"]) == lead and named(p) for p in pairs)):
+        return lead
+    return next((key for p in pairs if (key := _latin_key(p["en"])) and named(p)), "")
+
+
 def upload_title(short: Short) -> str:
-    """The title with #shorts and the subject's hashtag after it, as Hindi news channels title their Shorts, when it
-    fits YouTube's 100 characters. The on-screen headline and the ledger keep the plain title."""
-    tags = [t for t in dict.fromkeys(["shorts"] + [hashtag(h) for h in short.hashtags[:1]]) if t]
+    """The title with #shorts and the hashtag of whom it names after it (title_tag), as Hindi news channels title
+    their Shorts, when it fits YouTube's 100 characters. The on-screen headline and the ledger keep the plain title."""
+    tags = [t for t in dict.fromkeys(["shorts", title_tag(short)]) if t]
     for n in range(len(tags), 0, -1):
         title = short.title + " " + " ".join("#" + t for t in tags[:n])
         if len(title) <= TITLE_LIMIT:
@@ -162,7 +207,7 @@ def upload_title(short: Short) -> str:
     return short.title
 
 
-def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> str:
+def _description(short: Short, voice: dict, narration: bool, grouped: bool, how: bool = True) -> str:
     # Hashtags near the top: YouTube shows the first three above the title.
     tags = hashtag_line(short)
     lines = ([short.summary] if short.kind == "advisory" else [short.title]) + ([tags] if tags else []) + [""]
@@ -179,8 +224,10 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> s
             if short.kind == "advisory" else
             f"यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं ({media.hosts(short.scene.get('photos') or [])}), उन पर "
             "हल्की 3D कैमरा मूवमेंट जोड़ी गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
-    lines += [made,
-              VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
+    lines += [made]
+    if how and short.kind != "advisory" and HOW_MADE_MARK not in "\n".join(lines):
+        lines.append(HOW_MADE)
+    lines += [VOICE_LINE.get(voice.get("engine"), "आवाज़: AI"),
               "कोई गलती दिखे तो स्रोत के साथ कमेंट करें, हम सुधार करेंगे।", ""]
     if (short.kind == "advisory" or grouped) and short.scene.get("photos"):
         lines += ["श्रेय:", f"• {short.credits[0]}", f"• {photo_credits(short.scene['photos'])}", ""]

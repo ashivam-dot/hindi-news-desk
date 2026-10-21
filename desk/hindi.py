@@ -37,6 +37,26 @@ def ascii_digits(text: str) -> str:
     return (text or "").translate(DIGITS)
 
 
+# One spelling per famous name in what viewers read: the channel wrote एलोन मस्क (bbx5XceX0sI) and एलन मस्क
+# (QT1s3ANaodI) a day apart. Each entry is a whole word, mapped to Wikidata's Hindi label (एलन मस्क, व्लादिमीर पुतिन)
+# or, where Hindi newsrooms all write another one, theirs (ट्रंप in Aaj Tak, ABP and NDTV India; the channel's own
+# titles say ट्रंप).
+SPELLINGS = {"एलोन": "एलन", "ट्रम्प": "ट्रंप", "डॉनल्ड": "डोनाल्ड", "डोनल्ड": "डोनाल्ड", "पुतीन": "पुतिन",
+             "नरेन्द्र": "नरेंद्र"}
+_WORD_EDGE = r"(?<![\w\u0900-\u097F])({})(?![\w\u0900-\u097F])"
+
+
+def respell(text: str, spellings: dict[str, str] | None = None) -> str:
+    """text with Latin digits for Devanagari ones (पोप लियो १४, T7EVpcOu8ME, next to "14" in other titles) and each
+    whole word of SPELLINGS (and of spellings, e.g. the subject's Wikidata label) in its one spelling."""
+    text = ascii_digits(text)
+    table = {unicodedata.normalize("NFC", k): v for k, v in (SPELLINGS | (spellings or {})).items() if k and k != v}
+    if not table:
+        return text
+    pattern = re.compile(_WORD_EDGE.format("|".join(sorted(map(re.escape, table), key=len, reverse=True))))
+    return pattern.sub(lambda m: table[m.group(1)], unicodedata.normalize("NFC", text))
+
+
 def _canon(value: float) -> str:
     return str(int(round(value))) if abs(value - round(value)) < 1e-9 else f"{value:.6f}".rstrip("0").rstrip(".")
 

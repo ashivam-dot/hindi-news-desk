@@ -79,6 +79,29 @@ def test_the_card_label_is_shown_under_the_caption():
     assert short.scene["template"] == "full" and short.beats[-1].shot != "outro"
 
 
+def test_the_short_reads_with_latin_digits_and_one_spelling_per_name():
+    """T7EVpcOu8ME said पोप लियो १४ where other titles say 14; bbx5XceX0sI said एलोन मस्क, QT1s3ANaodI एलन मस्क."""
+    d = draft(title="रमेश प्रसाद बर्मा: १९९९ में एलोन मस्क से मिले")
+    d["names"][0] = {"hi": "रमेश प्रसाद बर्मा", "en": "Ramesh Prasad Verma"}
+    d["beats"][0]["say"] = d["beats"][0]["say"].replace("रमेश प्रसाद वर्मा", "रमेश प्रसाद बर्मा")
+    d["beats"][1]["caption"] = "उड़ान १०७३"
+    short = writer._short("kh-x", "explainer", "Ramesh Prasad Verma", "रमेश प्रसाद वर्मा", d, [], [], [],
+                          [SOURCE_EN], SOURCE_EN, [{"credit": "c", "page": "p"}], ["https://x"], "2026-10-08",
+                          False, "news", [], "", "")
+    assert short.title == "रमेश प्रसाद वर्मा: 1999 में एलन मस्क से मिले"
+    assert short.beats[0].text.startswith("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे")
+    assert short.beats[1].card["big"] == "उड़ान 1073"
+    assert short.scene["names"][0]["hi"] == "रमेश प्रसाद वर्मा"
+    assert d["title"].startswith("रमेश प्रसाद बर्मा")  # the writer's own draft is kept as it was, for the log
+
+
+def test_respelling_takes_whole_words_only():
+    from desk import hindi
+
+    assert hindi.respell("ट्रम्प बोले, ट्रम्पकार्ड नहीं") == "ट्रंप बोले, ट्रम्पकार्ड नहीं"
+    assert hindi.respell("Pope Leo XIV: लियो १४") == "Pope Leo XIV: लियो 14"
+
+
 def test_a_number_not_in_the_sources_is_caught():
     d = draft()
     d["beats"][4]["say"] = "मुंबई के एक संगीत समारोह में 5 लाख से ज़्यादा लोग उन्हें सुनने आए थे।"

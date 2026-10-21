@@ -1342,6 +1342,23 @@ def build_incident(cand: dict) -> Short:
                   cat=cat, ov=ov, reports=reports)
 
 
+def respelled(draft: dict, name: str, name_hi: str) -> dict:
+    """The draft as viewers will read it: Latin digits, one spelling per famous name (hindi.SPELLINGS) and the
+    subject in the spelling the description and hashtags use (name_hi), wherever the writer spelled it otherwise.
+    The writer's checks have passed by now; this only evens out what they allow."""
+    own = _pair_for(draft, name)
+    subject = {own.strip(): name_hi} if own and name_hi and own.strip() != name_hi else {}
+
+    def fix(text):
+        return hindi.respell(text, subject) if isinstance(text, str) else text
+
+    out = dict(draft, title=fix(draft.get("title", "")))
+    out["beats"] = [{k: fix(v) if k in ("say", "caption", "label") else v for k, v in b.items()}
+                    for b in draft.get("beats") or []]
+    out["names"] = [dict(p, hi=fix(p.get("hi"))) if isinstance(p, dict) else p for p in draft.get("names") or []]
+    return out
+
+
 def _pair_for(draft: dict, name: str) -> str | None:
     return next((p["hi"] for p in draft.get("names", []) if p.get("en", "").lower() == name.lower()), None)
 
@@ -1413,7 +1430,8 @@ def stale_pictures(photos: list[dict], views: list[list[int]], recent: set[str])
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
            mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False) -> Short:
     reports = reports or []
-    name_hi = plain_name(name_hi, draft, name)
+    name_hi = hindi.respell(plain_name(name_hi, draft, name))
+    draft = respelled(draft, name, name_hi)
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
     recent = recent_photos()

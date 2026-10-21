@@ -63,12 +63,33 @@ def test_description_is_hindi_with_sources_credits_and_the_ai_label(short):
 def test_a_long_description_drops_the_narration_before_any_source_or_credit(short):
     url = "https://commons.wikimedia.org/wiki/File:" + "%CE%A3" * 70 + ".jpg"
     many = replace(short, credits=short.credits + [f"फ़ोटो: Author {i} / CC BY-SA 2.0 / Wikimedia Commons {url}"
-                                                   for i in range(6)])
+                                                   for i in range(5)])
     text = youtube.description(many, GEMINI)
     assert len(text.encode()) <= youtube.DESCRIPTION_BYTES
     assert short.beats[0].text not in text
-    assert all(s in text for s in short.sources) and "Author 5 / CC BY-SA 2.0" in text and "AI आवाज़" in text
+    assert all(s in text for s in short.sources) and "Author 4 / CC BY-SA 2.0" in text and "AI आवाज़" in text
+    assert youtube.HOW_MADE in text
     assert short.beats[0].text in youtube.description(short, GEMINI)
+
+
+def test_the_description_says_once_how_the_short_was_made(short):
+    text = youtube.description(short, GEMINI)
+    assert text.count(youtube.HOW_MADE_MARK) == 1 and youtube.HOW_MADE in text
+    # It sits with the AI disclosure, before the voice line, and promises no human review it does not get.
+    lines = text.splitlines()
+    assert lines.index(youtube.HOW_MADE) + 1 == next(i for i, line in enumerate(lines) if line.startswith("आवाज़:"))
+    assert "पिन" not in text and "इंसान" not in youtube.HOW_MADE
+
+
+def test_the_how_made_line_goes_last_when_the_description_is_too_long(short, monkeypatch):
+    sizes = {}
+
+    def fake(s, voice, narration, grouped, how=True):
+        sizes[(narration, grouped, how)] = True
+        return "x" * (100 if not how else 6000)
+    monkeypatch.setattr(youtube, "_description", fake)
+    assert youtube.description(short, GEMINI) == "x" * 100
+    assert list(sizes) == [(True, False, True), (False, False, True), (False, True, True), (False, True, False)]
 
 
 def test_hashtags_keep_devanagari_and_sit_under_the_title(short):
@@ -83,6 +104,25 @@ def test_the_upload_title_carries_shorts_and_the_subject_tag_when_it_fits(short)
     long = replace(tagged, title="क" * 92)
     assert youtube.upload_title(long) == "क" * 92 + " #shorts"
     assert youtube.upload_title(replace(tagged, title="क" * 99)) == "क" * 99
+
+
+def test_the_title_tag_is_whom_the_title_names(short):
+    """JEm0Ivq1_74: an explainer centred on Saurav Das, titled after Ashutosh Ranka, went out as #sauravdas."""
+    names = [{"hi": "सौरव दास", "en": "Saurav Das"}, {"hi": "आशुतोष रांका", "en": "Ashutosh Ranka"},
+             {"hi": "दिल्ली", "en": "Delhi"}]
+    ranka = replace(short, kind="explainer", title="Ashutosh Ranka: कोर्ट ने जमानतदार मानने से इनकार किया, क्यों?",
+                    hashtags=["sauravdas", "hindinews", "shorts", "sauravdasnews"],
+                    scene=dict(short.scene, names=names, name_hi="सौरव दास"))
+    assert youtube.upload_title(ranka) == ranka.title + " #shorts #ashutoshranka"
+    # The subject named in Hindi, or in English letters, keeps the subject's tag.
+    for title in ("सौरव दास की हिरासत दो दिन बढ़ी, कोर्ट ने कहा", "Saurav Das: हिरासत दो दिन बढ़ी, कोर्ट ने कहा"):
+        assert youtube.title_tag(replace(ranka, title=title)) == "sauravdas"
+    # A title that names nobody in the story carries #shorts alone; a nameless tag is fine anywhere.
+    assert youtube.upload_title(replace(ranka, title="कोर्ट ने जमानतदार मानने से इनकार किया, क्यों?")).endswith(
+        "क्यों? #shorts")
+    assert youtube.title_tag(replace(ranka, hashtags=["hindinews", "shorts"])) == "hindinews"
+    # An advisory's hand-picked tags stand.
+    assert youtube.title_tag(replace(ranka, kind="advisory", hashtags=["दिल्लीमेट्रो"])) == "दिल्लीमेट्रो"
 
 
 def test_tags_carry_no_machine_marker(short):
