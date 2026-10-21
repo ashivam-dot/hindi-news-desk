@@ -56,7 +56,7 @@ What the coordinator supplies (environment `youtube` unless noted):
 | `DESK_CHANNEL_ID` | variable | the channel's `UC…` id; the uploader refuses any other channel |
 | `DESK_CHANNEL_NAME`, `DESK_CHANNEL_NAME_HI`, `DESK_CHANNEL_HANDLE` | variables | shown on the end card and in tags |
 | `PAUSED` | repository variable | `false` to start publishing |
-| `DESK_UNTAG` | repository variable | off by default; words for owner-approved YouTube writes: `untag` (or `true`), `about`, `playlists` (see CHANNEL.md, Operations) |
+| `DESK_UNTAG` | repository variable | off by default; words for owner-approved YouTube writes: `untag` (or `true`), `about`, `playlists`, each optional (`about playlists` leaves untag off; see CHANNEL.md, Operations) |
 
 ## Data and credits
 

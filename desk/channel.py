@@ -6,13 +6,15 @@ YouTube's reviewers read the About and the playlists (YouTube Partner Programme 
 the old About promised corrections "in a pinned comment", which the desk never posts, and listed हादसे and युद्ध
 as the channel's subjects. Every job is idempotent (`state/channel.json` keeps what is done, and YouTube is read back
 before anything is added twice), costs at most RUN_UNITS a run and DAY_UNITS a Pacific day of the project's 10,000
-(an upload needs about 1,600), stops for the day on a quotaExceeded 403, and reports one health line. The caller
+(the state branch shows 10 uploads a day with no quotaExceeded, so publishing leaves this room), stops for the day on a quotaExceeded 403, and reports one health line. The caller
 runs it after the publish step and catches everything, so it can never stop a publish.
 """
 from __future__ import annotations
 
 import hashlib
 import json
+import re
+import unicodedata
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
@@ -31,8 +33,8 @@ ABOUT = f"""क्यों हुआ — बड़ी ख़बर, उसक�
 
 कैसे बनती है:
 • ख़बर वही, जिसे लोग आज पढ़ और खोज रहे हैं (Google News, Trends, Wikipedia)।
-• हर नाम, तथ्य और संख्या Wikipedia/Wikidata में या कम से कम दो स्वतंत्र समाचार संस्थानों (जैसे The Hindu, Hindustan Times, BBC, PIB) की रिपोर्टों में होनी चाहिए।
-• संपादकीय नियम इंसानों ने तय किए हैं: निष्पक्षता, हर दावा कहने वाले के नाम से, न अटकल, न सलाह। हर वीडियो इनकी स्वचालित जाँच से गुज़रता है।
+• हर नाम, तथ्य और संख्या Wikipedia/Wikidata में या कम से कम दो स्वतंत्र समाचार संस्थानों (जैसे The Hindu, Hindustan Times, BBC) की रिपोर्टों में होनी चाहिए।
+• संपादकीय नियम इंसानों ने लिखे हैं: निष्पक्षता, हर दावा कहने वाले के नाम से, न अटकल, न सलाह। हर वीडियो इनकी स्वचालित जाँच से गुज़रता है।
 • विवरण में स्रोतों के लिंक और तस्वीरों (Wikimedia Commons) का श्रेय।
 
 AI: स्क्रिप्ट AI की मदद से लिखी और AI से दोबारा जाँची जाती है; आवाज़ AI की है। तस्वीरें असली हैं।
@@ -42,7 +44,7 @@ AI: स्क्रिप्ट AI की मदद से लिखी और A
 English: India's news explained in Hindi. AI voice."""
 ABOUT_LIMIT = 1000
 KEYWORDS = ["क्यों हुआ", "हिंदी समाचार", "hindi news", "news explained in hindi", "आज की ताजा खबर", "अर्थव्यवस्था",
-            "महंगाई", "पेट्रोल डीजल", "सोने का भाव", "RBI", "GST", "नौकरी", "सरकारी योजना", "नए नियम", "विज्ञान",
+            "महंगाई", "RBI", "GST", "नौकरी", "सरकारी योजना", "नए नियम", "विज्ञान",
             "ISRO", "मौसम", "india news", "economy news hindi"]
 KEYWORDS_LIMIT = 500
 
@@ -54,8 +56,9 @@ FAMILIES = {
                 "पेट्रोल, सोना, GST, RBI, बाज़ार और व्यापार की बड़ी ख़बरें: क्या हुआ और क्यों।"),
     "policy": ("नियम, योजनाएँ और नौकरियाँ | क्यों हुआ", ("policy",),
                "नए नियम, सरकारी योजनाएँ, परीक्षाएँ और नौकरियाँ: क्या बदला और किस पर असर।"),
-    "science": ("विज्ञान, अंतरिक्ष और सेहत | क्यों हुआ", ("science", "health"),
-                "ISRO, अंतरिक्ष, विज्ञान और सेहत की ख़बरें, आसान हिंदी में।"),
+    # No "health": on the 2026-10-22 ledger its only Shorts were two hospital discharges, which are not science.
+    "science": ("विज्ञान और अंतरिक्ष | क्यों हुआ", ("science",),
+                "ISRO, अंतरिक्ष और विज्ञान की ख़बरें, आसान हिंदी में।"),
     "world": ("भारत और दुनिया | क्यों हुआ", ("diplomacy", "world", "defence"),
               "विदेश नीति, समझौते और दुनिया की वे ख़बरें जिनका भारत से वास्ता है।"),
     "weather": ("मौसम की ख़बरें | क्यों हुआ", ("weather", "cyclone"),
@@ -65,6 +68,8 @@ FAMILIES = {
 }
 MIN_VIDEOS = 2  # a family gets its playlist (and section) once it has this many Shorts
 DAY_REASONS = {"quotaExceeded", "dailyLimitExceeded"}  # a rate limit only ends this run's share
+FINAL = (400, "400", 404, "404")  # YouTube refuses this very request: the same one would be refused again
+UNSORTED = {"manualSortRequired", "invalidPlaylistItemPosition"}  # position 0 needs a hand-sorted playlist
 
 
 class Capped(Exception):
@@ -106,12 +111,27 @@ def keywords() -> str:
     return out
 
 
+def _same_text(a, b) -> bool:
+    """YouTube may store the About with other whitespace or line ends; the words are what must match."""
+    def flat(t):
+        return re.sub(r"\s+", " ", unicodedata.normalize("NFC", t or "")).strip()
+    return flat(a) == flat(b)
+
+
+def _about_settled(state: dict, version: str) -> bool:
+    """This version of the About is done, or YouTube refused it once (never asked again: a change of ABOUT is)."""
+    return version in ((state.get("about") or {}).get("version"), (state.get("about_failed") or {}).get("version"))
+
+
 def set_about(api, state: dict, budget: Budget) -> str:
     """Read-modify-write brandingSettings: channels.update replaces the whole part, and its title is required, so
-    everything YouTube returns is sent back with only the description, keywords, language and country changed."""
+    everything YouTube returns is sent back with only the description, keywords, language and country changed. A
+    version YouTube refuses (HTTP 400) or does not read back is recorded in about_failed and not written again."""
     version = about_version()
     if (state.get("about") or {}).get("version") == version:
         return "about: done"
+    if (failed := state.get("about_failed") or {}).get("version") == version:
+        return f"about: not retried ({failed.get('reason')}); change channel.ABOUT to try again"
     budget.take("list")
     items = api.channels().list(part="brandingSettings", id=config.CHANNEL_ID).execute().get("items") or []
     if len(items) != 1 or items[0].get("id") != config.CHANNEL_ID:
@@ -124,13 +144,21 @@ def set_about(api, state: dict, budget: Budget) -> str:
                         "country": COUNTRY}
     if wanted != current:
         budget.take("write")
-        api.channels().update(part="brandingSettings", body={
-            "id": config.CHANNEL_ID, "brandingSettings": branding | {"channel": wanted}}).execute()
+        try:
+            api.channels().update(part="brandingSettings", body={
+                "id": config.CHANNEL_ID, "brandingSettings": branding | {"channel": wanted}}).execute()
+        except Exception as exc:
+            if youtube.quota_spent(exc) or youtube.status_of(exc) not in FINAL:
+                raise
+            reason = f"HTTP {youtube.status_of(exc)} {youtube.error_reason(exc) or ''}".strip()
+            state["about_failed"] = {"version": version, "reason": reason, "at": ledger.now()}
+            return f"about: YouTube refused it ({reason}); not retried"
         budget.take("list")
         back = api.channels().list(part="brandingSettings", id=config.CHANNEL_ID).execute()["items"][0]
         got = back.get("brandingSettings", {}).get("channel", {})
-        if got.get("description") != ABOUT or got.get("title") != current["title"]:
-            raise RuntimeError("about: YouTube does not read back the new About text")
+        if not _same_text(got.get("description"), ABOUT) or got.get("title") != current["title"]:
+            state["about_failed"] = {"version": version, "reason": "read back differs", "at": ledger.now()}
+            return "about: YouTube does not read back the new About text; not retried"
     state["about"] = {"version": version, "at": ledger.now()}
     return "about: set and read back" if wanted != current else "about: already so"
 
@@ -164,7 +192,7 @@ def _left(row: dict, ids: list[str]) -> list[str]:
 
 def pending(state: dict, jobs) -> bool:
     """Whether any job has work left, read from the state alone: a finished setup costs no unit at all."""
-    if "about" in jobs and (state.get("about") or {}).get("version") != about_version():
+    if "about" in jobs and not _about_settled(state, about_version()):
         return True
     if "playlists" not in jobs:
         return False
@@ -191,7 +219,8 @@ def _all(api, budget: Budget, call, **kwargs) -> list[dict]:
 def playlists(api, state: dict, budget: Budget, notes: list[str]) -> None:
     """Make each family's playlist once it has MIN_VIDEOS Shorts, add its Shorts (newest first), then give it a
     Home-tab section. A playlist made before the state was saved is found again by its title; videos already in a
-    playlist are read from YouTube before any is added. A video YouTube refuses (deleted) is noted and not retried."""
+    playlist are read from YouTube before any is added. A video YouTube refuses (HTTP 400/404, e.g. deleted) is
+    noted and not retried; a 5xx or a timeout ends the run and the video is tried again next run."""
     fams = state.setdefault("playlists", {})
     want = {f: ids for f, ids in eligible().items() if len(ids) >= MIN_VIDEOS}
     made = added = sections = 0
@@ -224,12 +253,19 @@ def playlists(api, state: dict, budget: Budget, notes: list[str]) -> None:
                 todo = [v for v in todo if v not in row["videos"]]
             for vid in todo:
                 budget.take("write")
+                snippet = {"playlistId": row["id"], "resourceId": {"kind": "youtube#video", "videoId": vid}}
                 try:
-                    api.playlistItems().insert(part="snippet", body={"snippet": {
-                        "playlistId": row["id"], "position": 0,
-                        "resourceId": {"kind": "youtube#video", "videoId": vid}}}).execute()
+                    try:
+                        api.playlistItems().insert(part="snippet", body={"snippet": snippet | (
+                            {} if row.get("unsorted") else {"position": 0})}).execute()
+                    except Exception as exc:
+                        if row.get("unsorted") or youtube.error_reason(exc) not in UNSORTED:
+                            raise
+                        row["unsorted"] = True  # added at the end from now on
+                        budget.take("write")
+                        api.playlistItems().insert(part="snippet", body={"snippet": snippet}).execute()
                 except Exception as exc:
-                    if youtube.quota_spent(exc) or youtube.status_of(exc) in (403, "403", 401, "401"):
+                    if youtube.quota_spent(exc) or youtube.status_of(exc) not in FINAL:
                         raise
                     failed[vid] = f"{type(exc).__name__}: {youtube.error_reason(exc) or exc}"[:200]
                     continue
@@ -244,7 +280,8 @@ def playlists(api, state: dict, budget: Budget, notes: list[str]) -> None:
 
 def _sections(api, state: dict, budget: Budget, want: dict) -> int:
     """One singlePlaylist section per family playlist, on the channel's Home tab, unless one already shows it. A
-    refusal (YouTube allows few sections) is noted on the family and never retried."""
+    refusal (HTTP 400/403/404: YouTube allows few sections) is noted on the family and never retried; a 5xx or a
+    timeout is tried again next run."""
     fams = state["playlists"]
     todo = [f for f in want if (fams.get(f) or {}).get("id") and len(fams[f].get("videos") or []) >= MIN_VIDEOS
             and not fams[f].get("section")]
@@ -264,7 +301,7 @@ def _sections(api, state: dict, budget: Budget, want: dict) -> int:
             got = api.channelSections().insert(part="snippet,contentDetails", body={
                 "snippet": {"type": "singlePlaylist"}, "contentDetails": {"playlists": [row["id"]]}}).execute()
         except Exception as exc:
-            if youtube.quota_spent(exc) or youtube.status_of(exc) in (401, "401"):
+            if youtube.quota_spent(exc) or youtube.status_of(exc) not in FINAL + (403, "403"):
                 raise
             row["section"] = f"refused: {youtube.error_reason(exc) or type(exc).__name__}"[:200]
             continue

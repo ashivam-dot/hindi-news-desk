@@ -523,12 +523,16 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   the `youtube` or `youtube.force-ssl` scope: a token that lists neither is never sent, and a 403 stops the step;
   either way one health line (`youtube.UNTAG_NO_SCOPE`) says the token needs re-consent, and nothing else changes.
 - **Channel setup (`desk/channel.py`, 2026-10-22).** The same variable takes more words: `DESK_UNTAG="untag about
-  playlists"` (`true` still means untag only; `run.yml` passes no other variable and is not edited). `about` writes
+  playlists"` (`true` still means untag only; `run.yml` passes no other variable and is not edited; each word is
+  separate, so `DESK_UNTAG="about playlists"` sets up the channel and leaves untag off). `about` writes
   the About (`channel.ABOUT`, at most 1,000 characters), keywords, `defaultLanguage` hi and country IN by
-  read-modify-write of `brandingSettings` (its title is required), then reads it back. `playlists` makes one public
+  read-modify-write of `brandingSettings` (its title is required), then reads it back (whitespace aside); a version
+  YouTube refuses (HTTP 400) or does not read back is recorded in `about_failed` and not written again until
+  `channel.ABOUT` changes. `playlists` makes one public
   series playlist per ad-friendly topic family (`channel.FAMILIES`) once it has two public, unreplaced, unretired,
-  ad-friendly Shorts, adds them from the ledger's video ids, and gives each a Home-tab section (a refusal is noted,
-  not retried). `state/channel.json` keeps what is done, so a finished job costs nothing; each run spends at most
+  ad-friendly Shorts, adds them from the ledger's video ids, and gives each a Home-tab section (a 400/404 refusal is
+  noted and not retried; a 5xx or timeout is retried next run; a playlist that refuses position 0 gets new Shorts at
+  its end). Review the first playlists by hand: the ledger's categories are not always right. `state/channel.json` keeps what is done, so a finished job costs nothing; each run spends at most
   600 units and each Pacific day 1,500 of the 10,000, and only after the publish step of a run that is not held. A
   `quotaExceeded`/`dailyLimitExceeded` or other 403 stops it until the next Pacific day, a rate limit only for the
   run; one health line says what happened, and no error of it can stop a publish.

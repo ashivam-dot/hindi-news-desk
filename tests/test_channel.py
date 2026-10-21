@@ -139,14 +139,43 @@ def test_an_about_youtube_does_not_read_back_is_not_marked_done(fake, monkeypatc
         return res
     monkeypatch.setattr(fake, "channels", stale)
     assert "does not read back" in channel.run({"about"}, NOW)
-    assert "about" not in ledger.load(channel.STATE, {})
+    state = ledger.load(channel.STATE, {})
+    assert "about" not in state and state["about_failed"]["version"] == channel.about_version()
+    fake.calls.clear()  # the same version is not written again every run
+    assert "nothing left" in channel.run({"about"}, NOW) and fake.calls == []
+
+
+def test_an_about_read_back_with_other_whitespace_is_done(fake, monkeypatch):
+    published([])
+    real = fake.channels
+
+    def reflowed():
+        res = real()
+        update = res.update
+
+        def upd(part, body):
+            body["brandingSettings"]["channel"]["description"] = channel.ABOUT.replace("\n", "\r\n") + " "
+            return update(part=part, body=body)
+        res.update = upd
+        return res
+    monkeypatch.setattr(fake, "channels", reflowed)
+    assert "about: set and read back" in channel.run({"about"}, NOW)
+    assert ledger.load(channel.STATE, {})["about"]["version"] == channel.about_version()
+
+
+def test_an_about_youtube_refuses_is_not_retried(fake):
+    published([])
+    fake.fail["channels.update"] = Err(400, "invalidDescription")
+    assert "refused it (HTTP 400 invalidDescription)" in channel.run({"about"}, NOW)
+    fake.calls.clear()
+    assert "nothing left" in channel.run({"about"}, NOW) and fake.calls == []
 
 
 def test_families_are_ad_friendly_public_current_stories_only(fake):
     published([row("A1"), row("A2", category="crime"), row("A3", privacy="private"), row("A4", retired_at="x"),
                row("A5", kind="advisory"), row("A6", title="पेट्रोल पंप मालिक गिरफ्तार"), row("A7", replaced="A1"),
-               row("S1", category="health"), row("S2", category="science")])
-    assert channel.eligible() == {"economy": ["A7"], "science": ["S1", "S2"]}
+               row("S1", category="health"), row("S2", category="science"), row("S3", category="science")])
+    assert channel.eligible() == {"economy": ["A7"], "science": ["S2", "S3"]}
 
 
 def test_playlists_are_made_filled_and_shown_once(fake):
@@ -225,6 +254,36 @@ def test_a_deleted_video_is_noted_and_never_retried(fake):
     assert "videoNotFound" in state["playlists"]["economy"]["failed"]["A2"]
     fake.calls.clear()
     assert "nothing left" in channel.run({"playlists"}, NOW)
+
+
+def test_a_passing_server_error_is_retried_next_run(fake):
+    published([row("A1"), row("A2")])
+    fake.fail["playlistItems.insert"] = Err(503, "backendError")
+    assert "Err" in channel.run({"playlists"}, NOW)
+    assert not ledger.load(channel.STATE, {})["playlists"]["economy"].get("failed")
+    del fake.fail["playlistItems.insert"]
+    assert "2 Shorts added" in channel.run({"playlists"}, NOW)
+
+
+def test_a_playlist_that_refuses_position_0_gets_its_videos_at_the_end(fake):
+    published([row("A1"), row("A2")])
+    real = fake.playlistItems
+
+    def unsorted():
+        res = real()
+        insert = res.insert
+
+        def ins(part, body):
+            if "position" in body["snippet"]:
+                fake.calls.append("playlistItems.insert")
+                raise Err(400, "manualSortRequired")
+            return insert(part=part, body=body)
+        res.insert = ins
+        return res
+    fake.playlistItems = unsorted
+    assert "2 Shorts added" in channel.run({"playlists"}, NOW)
+    row_ = ledger.load(channel.STATE, {})["playlists"]["economy"]
+    assert row_["unsorted"] and not row_["failed"] and row_["videos"] == ["A1", "A2"]
 
 
 def test_a_refused_section_is_not_retried(fake):
