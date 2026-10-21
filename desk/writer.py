@@ -509,7 +509,7 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
                  if (m := VAGUE.search(b.get("say", "")))]
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
-    problems += casual(draft) + advice(draft)
+    problems += casual(draft)
     problems += [f"beat {i + 1} says someone has not responded; leave that line out and give a fact of today's news "
                  "instead" for i, b in enumerate(beats) if NOBODY_REPLIED.search(b.get("say", ""))]
     if kind != "death":
@@ -590,9 +590,15 @@ NEXT_OR_IMPACT = re.compile(r"आगे|अगल|अब |अभी तक|स�
                             r"उम्मीदवारों|किसानों|मरीजों|परिवार|मुआवज|हेल्पलाइन|बंद रहेग|जारी रहेग|साफ नहीं|पता नहीं|"
                             r"इंतज़ार|इंतजार|बाकी|फैसला|\S+(एगा|एगी|एंगे|ेगा|ेगी|ेंगे|ोगा|ोगी|ोंगे)(?=[\s।,.?]|$)")
 # Advice, or advice put in an unnamed expert's mouth: never on a news channel, least of all on money, health or law.
-ADVICE = re.compile(r"(विशेषज्ञ|एक्सपर्ट|जानकार)\S* (की|ने|का) (सलाह|सुझाव)|(विशेषज्ञ|एक्सपर्ट|जानकार)\S* सलाह दे|"
+# Reporting is not advice: "विशेषज्ञों की सलाह पर स्कूल बंद किए" says why something was done, and a quoted,
+# attributed appeal ("मोदी ने कहा, "आप सब मतदान करें"") is the news; quotes are left out of the check (QUOTED).
+ADVICE = re.compile(r"(विशेषज्ञ|एक्सपर्ट|जानकार)\S* (की|ने|का) (सलाह|सुझाव)(?! पर)|"
+                    r"(विशेषज्ञ|एक्सपर्ट|जानकार)\S* सलाह दे|"
                     r"(निवेश|खरीदारी|खरीद) (करें|करना चाहिए)|पैसा लगाएं|(शेयर|सोना) (खरीदें|बेचें)|दवा (लें|न लें)|"
                     r"आपको .{0,30}चाहिए|(आप|आपको) .{0,20}(करें|बचें|लें)(?=[\s।,.]|$)")
+QUOTED = re.compile(r'"[^"]*"|“[^”]*”|‘[^’]*’')
+# ...but a quote is still advice when its speaker is an unnamed expert ("विशेषज्ञों ने कहा, "सोना खरीदें"").
+EXPERT_SAYS = re.compile(r"(विशेषज्ञ|एक्सपर्ट|जानकार)\S* (ने|का) (कहा|कहना)")
 
 
 def value_beat(draft: dict, kind: str) -> list[str]:
@@ -606,8 +612,13 @@ def value_beat(draft: dict, kind: str) -> list[str]:
 
 
 def advice(draft: dict) -> list[str]:
+    """An advisory (never on the last draft, so it never costs a story): a beat that gives advice outside quotes."""
+    def found(say: str):
+        bare = QUOTED.sub(" ", say)
+        return ADVICE.search(bare) or (EXPERT_SAYS.search(bare) and ADVICE.search(say))
+
     return [f"beat {i + 1} gives advice ({m.group(0)}); report what the sources say, attributed, and give no advice"
-            for i, b in enumerate(draft.get("beats") or []) if (m := ADVICE.search(b.get("say", "")))]
+            for i, b in enumerate(draft.get("beats") or []) if (m := found(b.get("say", "")))]
 
 
 def casual(draft: dict) -> list[str]:
@@ -836,8 +847,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if names_ok:
                 problems += off_case(draft, names_ok, never)
             if attempt < DRAFTS - 1:
-                problems += monotone(draft) + bookish(draft) + value_beat(draft, kind) + misread(draft, spellings(draft, hi_names, looked),
-                                                                       ground_hi, reports)
+                problems += (monotone(draft) + bookish(draft) + value_beat(draft, kind) + advice(draft)
+                             + misread(draft, spellings(draft, hi_names, looked), ground_hi, reports))
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,

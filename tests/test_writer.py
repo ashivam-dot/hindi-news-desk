@@ -473,7 +473,18 @@ def test_advice_and_expert_personas_are_never_in_the_script():
     for say in ("RBI के मुताबिक EMI 1 नवंबर से बढ़ेगी।", "सरकार ने लोगों से घरों में रहने की अपील की।",
                 "अस्पताल ने बताया कि उनका इलाज चल रहा है।"):
         assert advice(say) == [], say
+    # Reporting a reason or an attributed, quoted appeal is the news, not advice (review, 2026-10-22).
+    for say in ("सरकार ने विशेषज्ञों की सलाह पर स्कूल बंद किए।", 'मोदी ने कहा, "आप सब मतदान करें।"',
+                "मोदी ने कहा, “आप सब मतदान करें।”"):
+        assert advice(say) == [], say
+    assert advice('विशेषज्ञों ने कहा, "अभी सोना खरीदें।"')  # a quote is no cover for an unnamed expert
+
+
+def test_advice_is_sent_back_but_advisory_on_the_last_draft(tmp_path, monkeypatch):
     d = draft()
     d["beats"][-1]["say"] = "विशेषज्ञों की सलाह है कि लोग अभी सोना खरीदें।"
-    problems, _ = check(d)
-    assert any("gives advice" in p for p in problems)
+    assert not any("gives advice" in p for p in check(d)[0])  # not a hard check: it never costs a story
+    monkeypatch.setattr(writer, "advice", lambda d: ["beat 6 gives advice (विशेषज्ञों की सलाह)"])
+    out, log, _ = write([[]], tmp_path)
+    assert len(log) == writer.DRAFTS - 1 and all("gives advice" in a["problems"][0] for a in log)
+    assert out["beats"] == draft()["beats"]
