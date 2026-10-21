@@ -1,11 +1,12 @@
 {
- "at": "2026-10-21T11:58:20+00:00",
+ "at": "2026-10-21T12:47:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 63 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:attack': {'n': 4, 'lift': 0.965, 'typical_views_24h': 38}, 'category:economy': {'n': 5, 'lift': 0.789, 'typical_views_24h': 26}, 'category:news': {'n': 17, 'lift': 1.044, 'typical_views_24h': 43}, 'category:world': {'n': 5, 'lift': 0.791, 'typical_views_24h': 26}, 'category:court': {'n'",
   "watch: 14 candidates from 18 trending",
-  "outlets: 1218 headlines from 30 feeds (18 owners), 12 matched to articles, 8 candidates with 2+ owners, 3 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-bengaluru-explosion, nw-20261021-rubio-protest",
-  "explainers: 5 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q16189572, kh-20261021-Q51993, kh-20261021-Q317521; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Modi Shah: fewer than 3 owners' headlines name it and the story; explainer GRAP / Delhi-NCR: no Wikipedia article that can be its centre",
+  "outlets: 1226 headlines from 30 feeds (18 owners), 10 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-rubio-protest",
+  "explainers: 5 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q51993, kh-20261021-Q7747, kh-20261021-Q1340361; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Modi Shah: fewer than 3 owners' headlines name it and the story; explainer GRAP / Delhi-NCR: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
@@ -13,8 +14,8 @@
   "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
   "hold nw-20261021-rubio-protest: already 8 Shorts today (IST)",
-  "drop nw-20261021-bengaluru-explosion: too low in Google News India's top stories (place 0.24, needs 0.35)",
-  "drop kh-20261021-Q16189572: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+  "drop kh-20261021-Q1340361: too low in Google News India's top stories (place 0.20, needs 0.35)",
+  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop wk-Q141615137-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
  ]
 }
