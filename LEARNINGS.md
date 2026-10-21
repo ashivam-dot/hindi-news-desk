@@ -1,39 +1,40 @@
 # What this channel's own numbers say
 
-Updated 2026-10-21T12:47:17+00:00. Scored Shorts (views at 24 h): 63. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-21T16:21:45+00:00. Scored Shorts (views at 24 h): 65. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 41 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
 - category:court: x1.35 ranking lift (6 Shorts, typical 70 views)
-- region:india: x1.063 ranking lift (30 Shorts, typical 44 views)
-- category:news: x1.044 ranking lift (17 Shorts, typical 43 views)
-- category:attack: x0.965 ranking lift (4 Shorts, typical 38 views)
-- region:world: x0.849 ranking lift (29 Shorts, typical 34 views)
-- category:world: x0.791 ranking lift (5 Shorts, typical 26 views)
-- category:economy: x0.789 ranking lift (5 Shorts, typical 26 views)
+- category:diplomacy: x1.093 ranking lift (4 Shorts, typical 49 views)
+- category:attack: x1.058 ranking lift (5 Shorts, typical 45 views)
+- region:india: x1.052 ranking lift (32 Shorts, typical 43 views)
+- category:news: x1.05 ranking lift (17 Shorts, typical 43 views)
+- region:world: x0.854 ranking lift (29 Shorts, typical 34 views)
+- category:world: x0.794 ranking lift (5 Shorts, typical 26 views)
+- category:economy: x0.792 ranking lift (5 Shorts, typical 26 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
 | nw-20261019-tiger-shroff-attack-film-security | 2026-10-21T07:42 | attack | india | 0 |  |
-| nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | 101 |  |
-| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | 386 |  |
+| nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | 166 |  |
+| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | 477 |  |
 | kh-20261021-Q1353 | 2026-10-21T04:33 | news | india | 1 |  |
 | nw-20261019-tiger-shroff-attack-incident | 2026-10-21T03:50 | attack | india | 19 |  |
-| nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | 21 |  |
-| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | 54 |  |
-| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | 838 |  |
+| nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | 28 |  |
+| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | 85 |  |
+| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | 906 |  |
 | nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | 734 |  |
-| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 11 |  |
-| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 88 |  |
-| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 15 | 15 |
+| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 12 | 11 |
+| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 92 | 89 |
+| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 17 | 15 |
 | kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | 70 | 70 |
-| nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 81 | 80 |
-| kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 15 | 14 |
-| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 38 | 36 |
+| nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 82 | 80 |
+| kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 16 | 14 |
+| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 40 | 36 |
 | kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | 9 | 9 |
 | nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 31 | 31 |
 | kh-20261019-Q3634451 | 2026-10-19T14:58 | policy | india | 4 | 4 |
-| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 157 | 100 |
+| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 160 | 100 |
 | kh-20261019-Q468324 | 2026-10-19T09:11 | health | india | 34 | 23 |
 | kh-20261019-Q312781 | 2026-10-19T07:28 | court | world | 65 | 46 |
 | kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 5 | 2 |

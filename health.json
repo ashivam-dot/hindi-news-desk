@@ -1,20 +1,21 @@
 {
- "at": "2026-10-21T15:41:11+00:00",
+ "at": "2026-10-21T16:21:45+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 13 candidates from 16 trending",
-  "outlets: 1266 headlines from 30 feeds (18 owners), 8 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-rubio-protest",
-  "explainers: 5 kh- stories (on): kh-20261021-Q195616, kh-20261021-Q7747, kh-20261021-Q51993, kh-20261021-Q1340361; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "learn: 65 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:attack': {'n': 5, 'lift': 1.058, 'typical_views_24h': 45}, 'category:diplomacy': {'n': 4, 'lift': 1.093, 'typical_views_24h': 49}, 'category:economy': {'n': 5, 'lift': 0.792, 'typical_views_24h': 26}, 'category:news': {'n': 17, 'lift': 1.05, 'typical_views_24h': 43}, 'category:world': {",
+  "watch: 11 candidates from 13 trending",
+  "outlets: 1266 headlines from 30 feeds (18 owners), 12 matched to articles, 3 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 3 kh- stories (on): kh-20261021-Q195616, kh-20261021-Q51993, kh-20261021-Q1340361; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story; explainer Gen Z Delhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'outlet tv9-hi: HTTPError: HTTP 500']",
-  "hold kh-20261021-Q195616: already 8 Shorts today (IST)",
+  "drop kh-20261021-Q195616: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
-  "hold nw-20261021-rubio-protest: already 8 Shorts today (IST)",
   "drop kh-20261021-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261021-Q7747: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
+  "drop kh-20261021-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q3424313: 100 h old and no longer trending live"
  ]
 }
