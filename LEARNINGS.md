@@ -1,36 +1,37 @@
 # What this channel's own numbers say
 
-Updated 2026-10-21T19:42:18+00:00. Scored Shorts (views at 24 h): 66. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-21T22:55:54+00:00. Scored Shorts (views at 24 h): 66. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 42 views at 24 h.
-- category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
+Retention: a typical Short is watched 42.5% through; a group's retention is blended into its lift at 0.5.
 - category:attack: x1.35 ranking lift (6 Shorts, typical 72 views)
-- category:court: x1.341 ranking lift (6 Shorts, typical 70 views)
-- region:india: x1.092 ranking lift (33 Shorts, typical 47 views)
+- category:aviation: x1.225 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.9% watched)
+- category:court: x1.182 ranking lift (6 Shorts, typical 70 views; 4 with retention, typically 46.1% watched)
+- region:india: x1.093 ranking lift (33 Shorts, typical 47 views; 22 with retention, typically 47.3% watched)
 - category:diplomacy: x1.069 ranking lift (4 Shorts, typical 49 views)
-- category:news: x1.013 ranking lift (17 Shorts, typical 43 views)
-- region:world: x0.822 ranking lift (29 Shorts, typical 34 views)
-- category:world: x0.775 ranking lift (5 Shorts, typical 26 views)
-- category:economy: x0.773 ranking lift (5 Shorts, typical 26 views)
+- category:news: x1.012 ranking lift (17 Shorts, typical 43 views; 13 with retention, typically 43.0% watched)
+- region:world: x0.891 ranking lift (29 Shorts, typical 34 views; 25 with retention, typically 40.8% watched)
+- category:world: x0.853 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.8% watched)
+- category:economy: x0.845 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 36.6% watched)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
 | nw-20261019-tiger-shroff-attack-film-security | 2026-10-21T07:42 | attack | india | 0 |  |
-| nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | 228 |  |
-| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | 618 |  |
+| nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | 276 |  |
+| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | 686 |  |
 | kh-20261021-Q1353 | 2026-10-21T04:33 | news | india | 1 |  |
 | nw-20261019-tiger-shroff-attack-incident | 2026-10-21T03:50 | attack | india | 19 |  |
-| nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | 33 |  |
-| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | 109 |  |
-| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | 1051 |  |
+| nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | 43 |  |
+| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | 115 |  |
+| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | 1065 |  |
 | nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | 734 | 734 |
-| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 12 | 11 |
-| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 93 | 89 |
-| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 19 | 15 |
+| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 13 | 11 |
+| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 97 | 89 |
+| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 22 | 15 |
 | kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | 71 | 70 |
 | nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 83 | 80 |
 | kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 19 | 14 |
-| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 41 | 36 |
+| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 43 | 36 |
 | kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | 9 | 9 |
 | nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 31 | 31 |
 | kh-20261019-Q3634451 | 2026-10-19T14:58 | policy | india | 5 | 4 |
