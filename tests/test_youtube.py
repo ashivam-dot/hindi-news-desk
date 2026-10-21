@@ -85,10 +85,103 @@ def test_the_upload_title_carries_shorts_and_the_subject_tag_when_it_fits(short)
     assert youtube.upload_title(replace(tagged, title="क" * 99)) == "क" * 99
 
 
-def test_tags_keep_the_marker(short):
+def test_tags_carry_no_machine_marker(short):
     tags = youtube.tags(replace(short, tags=[f"टैग संख्या {i}" for i in range(80)]))
-    assert tags[-1] == config.MARKER + short.id and sum(len(t) + 2 for t in tags) <= 482
+    assert not any(config.MARKER in t for t in tags) and sum(len(t) + 2 for t in tags) <= 482
+    assert youtube.tags(short)[:len(short.tags)] == short.tags
+
+
+class FakeVideos:
+    def __init__(self, items):
+        self.items = items
+
+    def list(self, **kwargs):
+        return self
+
+    def execute(self):
+        return {"items": self.items}
+
+
+class FakeApi:
+    def __init__(self, videos):
+        self._videos = videos
+
+    def playlistItems(self):
+        return FakeVideos([{"contentDetails": {"videoId": v["id"]}} for v in self._videos])
+
+    def videos(self):
+        return FakeVideos(self._videos)
+
+
+CHANNEL = {"contentDetails": {"relatedPlaylists": {"uploads": "UUx"}}}
+
+
+def video(vid, title="", tags=None):
+    return {"id": vid, "snippet": {"title": title, "tags": tags or []}}
+
+
+def test_find_uses_the_ledger_id_then_the_old_marker_then_an_unowned_title(tmp_path, monkeypatch):
+    from desk import ledger
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    api = FakeApi([video("old", "पुराना", [config.MARKER + "wk-Q1"]), video("new", "नया #shorts"),
+                   video("told", "खोया #shorts"), video("lost", "खोया #shorts")])
+    assert youtube.find(api, CHANNEL, "wk-Q1")["id"] == "old"  # uploaded before 2026-10-22
+    youtube.remember("kh-2", "new")
+    assert ledger.load("uploads", {}) == {"kh-2": "new"}
+    assert youtube.find(api, CHANNEL, "kh-2", "नया #shorts")["id"] == "new"
+    # An upload whose run died before the ledger was saved: the one same-titled video no ledger row owns.
+    ledger.save("published", [{"id": "kh-1", "video_id": "told"}])
+    assert youtube.find(api, CHANNEL, "kh-3", "खोया #shorts")["id"] == "lost"
+    assert youtube.find(api, CHANNEL, "kh-6", "नया #shorts") is None  # "new" is kh-2's
+    youtube.remember("kh-4", "lost")
+    assert youtube.find(api, CHANNEL, "kh-3", "खोया #shorts") is None
+    assert youtube.find(api, CHANNEL, "kh-5") is None
+
+
+def test_find_refuses_two_unowned_uploads_of_one_story(tmp_path, monkeypatch):
+    from desk import ledger
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    api = FakeApi([video("a", "एक #shorts"), video("b", "एक #shorts")])
+    with pytest.raises(RuntimeError, match="twice"):
+        youtube.find(api, CHANNEL, "kh-1", "एक #shorts")
 
 
 def test_upload_metadata_is_hindi_news():
     assert config.LANGUAGE == "hi" and youtube.CATEGORY == "25" and youtube.MARKER == "hindi-news-desk:"
+
+
+class FakeUpdate(FakeVideos):
+    def __init__(self, items, writes):
+        super().__init__(items)
+        self.writes = writes
+
+    def update(self, part, body):
+        self.writes.append((part, body))
+        return self
+
+
+def test_untag_keeps_the_ids_then_takes_only_the_marker_off(tmp_path, monkeypatch):
+    from desk import ledger
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(config, "CHANNEL_ID", UC)
+    items = [{"id": f"v{i}", "snippet": {"channelId": UC, "title": f"शीर्षक {i}", "description": "विवरण",
+                                         "categoryId": "25", "defaultLanguage": "hi",
+                                         "tags": ["दिल्ली", config.MARKER + f"kh-{i}"]}} for i in range(3)]
+    items.append({"id": "clean", "snippet": {"channelId": UC, "title": "साफ़", "tags": ["मुंबई"]}})
+    writes = []
+
+    class Api(FakeApi):
+        def videos(self):
+            return FakeUpdate(items, writes)
+
+        def channels(self):
+            return FakeVideos([{"id": UC, **CHANNEL}])
+
+    monkeypatch.setattr(youtube, "client", lambda *a: Api(items))
+    assert youtube.untag(limit=2) == 2
+    assert ledger.load("uploads", {}) == {"kh-0": "v0", "kh-1": "v1"}
+    assert [b["snippet"]["tags"] for _, b in writes] == [["दिल्ली"], ["दिल्ली"]]
+    assert writes[0] == ("snippet", {"id": "v0", "snippet": {"title": "शीर्षक 0", "description": "विवरण",
+                                                              "categoryId": "25", "tags": ["दिल्ली"],
+                                                              "defaultLanguage": "hi"}})
+    assert config.UNTAG is False  # off unless the owner sets DESK_UNTAG=true

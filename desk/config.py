@@ -14,9 +14,12 @@ REPO = "ashivam-dot/hindi-news-desk"  # temporary slug; may be renamed
 SITE = f"https://github.com/{REPO}"
 CONTACT = "aksh.shivam17@gmail.com"
 
-# Every upload carries MARKER + story id as a tag, so a story is never uploaded twice. Never change it after the
-# first public upload.
+# Uploads before 2026-10-22 carry MARKER + story id as a public tag; new uploads carry none (the ledger keeps their
+# video ids, see youtube.find). Keep it unchanged so the old uploads are still found.
 MARKER = "hindi-news-desk:"
+# Repository variable DESK_UNTAG=true lets each live run take the old marker tag off a few uploads (youtube.untag),
+# after the ledger has kept their ids. Off by default: it is a YouTube write the owner turns on.
+UNTAG = os.environ.get("DESK_UNTAG", "").lower() == "true"
 CATEGORY = "25"  # News & Politics
 LANGUAGE = "hi"
 

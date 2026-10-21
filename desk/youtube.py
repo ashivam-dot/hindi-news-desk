@@ -12,12 +12,12 @@ import re
 import time
 from pathlib import Path
 
-from . import config, gate, media
+from . import config, gate, ledger, media
 from .spec import Short
 
 TOKEN_FILE = Path(__file__).resolve().parents[1] / "secrets" / "token.json"
 CATEGORY = config.CATEGORY
-MARKER = config.MARKER  # published uploads carry it, so it must not change
+MARKER = config.MARKER  # uploads before 2026-10-22 carry it as a tag; find() still reads it, nothing writes it
 DESCRIPTION_BYTES = 5000  # the API counts UTF-8 bytes, and a Devanagari letter is three of them
 VOICE_LINE = {
     "gemini-sulafat": "आवाज़: AI (Google Gemini TTS की Sulafat आवाज़)",
@@ -66,11 +66,31 @@ def recent(api, channel: dict, limit: int = 50) -> list[dict]:
     return api.videos().list(part="snippet,status,statistics", id=",".join(ids)).execute().get("items", [])
 
 
-def find(api, channel: dict, short_id: str) -> dict | None:
-    hits = [v for v in recent(api, channel) if MARKER + short_id in (v["snippet"].get("tags") or [])]
+def find(api, channel: dict, short_id: str, title: str | None = None) -> dict | None:
+    """The upload already made for this story, so a story is never uploaded twice: the id the ledger kept when it
+    was uploaded, else an older upload's public marker tag, else one of the channel's recent uploads that no ledger
+    row owns and whose title is this story's."""
+    videos = recent(api, channel)
+    kept = ledger.load("uploads", {}).get(short_id)
+    if kept:
+        hit = next((v for v in videos if v["id"] == kept), None)
+        if hit:
+            return hit
+    hits = [v for v in videos if MARKER + short_id in (v["snippet"].get("tags") or [])]
+    if not hits and title:
+        owned = set(ledger.load("uploads", {}).values()) | {r.get("video_id") for r in ledger.published()}
+        hits = [v for v in videos if v["id"] not in owned and v["snippet"].get("title") == title]
     if len(hits) > 1:
         raise RuntimeError(f"{short_id} is on the channel twice: resolve by hand before publishing again")
     return hits[0] if hits else None
+
+
+def remember(short_id: str, video_id: str) -> None:
+    """Keep the upload's id the moment YouTube returns it: the state branch is saved even when the run fails, so a
+    Short still processing is found again by the next run without any tag on the video."""
+    uploads = ledger.load("uploads", {})
+    uploads[short_id] = video_id
+    ledger.save("uploads", uploads)
 
 
 def hashtag(text: str) -> str:
@@ -155,8 +175,9 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool) -> s
 
 
 def tags(short: Short) -> list[str]:
-    marker = MARKER + short.id
-    out, total = [], len(marker) + 2
+    """The story's topic tags and the channel's name, within YouTube's 500 characters. No machine tag: viewers and
+    reviewers see tags, and the desk finds its own uploads by video id (find)."""
+    out, total = [], 0
     for t in short.tags + [n for n in (config.NAME, config.NAME_HI) if n]:
         t = t.replace("<", "").replace(">", "").replace(",", " ").strip()
         if not t or t in out:
@@ -165,7 +186,41 @@ def tags(short: Short) -> list[str]:
             break
         out.append(t)
         total += len(t) + 2
-    return out + [marker]
+    return out
+
+
+UNTAG_PER_RUN = 5
+
+
+def untag(limit: int = UNTAG_PER_RUN) -> int:
+    """Take the old public marker tag off up to `limit` of the channel's recent uploads, keeping their story ids in
+    the ledger first so find() still knows them. Title, description, category and topic tags stay as they are."""
+    api = client()
+    channel = identity(api)
+    uploads = ledger.load("uploads", {})
+    done = 0
+    for v in recent(api, channel):
+        snippet = v["snippet"]
+        old = snippet.get("tags") or []
+        marks = [t for t in old if t.startswith(MARKER)]
+        if not marks:
+            continue
+        if done >= limit:
+            break
+        if snippet.get("channelId") != config.CHANNEL_ID:
+            raise WrongChannel(f"{v['id']} is on another channel")
+        for t in marks:
+            uploads.setdefault(t[len(MARKER):], v["id"])
+        ledger.save("uploads", uploads)
+        body = {"id": v["id"], "snippet": {
+            "title": snippet["title"], "description": snippet.get("description", ""),
+            "categoryId": snippet.get("categoryId", CATEGORY), "tags": [t for t in old if t not in marks]}}
+        for key in ("defaultLanguage", "defaultAudioLanguage"):
+            if snippet.get(key):
+                body["snippet"][key] = snippet[key]
+        api.videos().update(part="snippet", body=body).execute()
+        done += 1
+    return done
 
 
 def retire(video_id: str) -> None:
@@ -192,7 +247,7 @@ def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_a
         raise ValueError(refused)
     api = client()
     channel = identity(api)
-    existing = find(api, channel, short.id)
+    existing = find(api, channel, short.id, upload_title(short))
     if existing:
         video_id = existing["id"]
     else:
@@ -208,6 +263,7 @@ def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_a
         while response is None:
             _, response = request.next_chunk(num_retries=3)
         video_id = response["id"]
+        remember(short.id, video_id)
     deadline = time.monotonic() + max_wait
     while True:
         video = api.videos().list(part="snippet,status,processingDetails", id=video_id).execute()["items"][0]

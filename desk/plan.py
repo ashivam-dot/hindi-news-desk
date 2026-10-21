@@ -181,7 +181,7 @@ def case_wait(live: list[dict], at: datetime) -> tuple[str | None, str | None]:
 
 
 def remake_of(cand: dict, specs: list[dict]) -> dict | None:
-    """The candidate as the remake of a published Short, under an id the old upload's marker tag does not carry."""
+    """The candidate as the remake of a published Short, under a new id, so find() never takes the old upload for it."""
     for s in specs:
         if cand["id"] == s["story"] or outlets.same_story(cand["id"], s["story"]):
             new = cand["id"] + "-r2" if cand["id"] == s["story"] else cand["id"]

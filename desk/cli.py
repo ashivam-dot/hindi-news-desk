@@ -217,6 +217,12 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             except Exception as exc:  # the numbers steer ranking; reading them must never stop a publish
                 health["steps"].append(f"learn: {type(exc).__name__}: {exc}"[:300])
             retire_listed(health)
+            if config.UNTAG:
+                from . import youtube
+                try:
+                    health["steps"].append(f"untag: old marker tag taken off {youtube.untag()} uploads")
+                except Exception as exc:  # tidying old tags must never stop a publish
+                    health["steps"].append(f"untag: {type(exc).__name__}: {exc}"[:300])
         if done := _advisory(health, dry):
             return done
         found = plan.watch(save=not dry)
