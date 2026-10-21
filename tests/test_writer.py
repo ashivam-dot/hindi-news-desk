@@ -448,3 +448,32 @@ def test_a_misread_name_is_advisory_on_the_last_draft(tmp_path, monkeypatch):
     out, log, _ = write([[]], tmp_path)
     assert len(log) == writer.DRAFTS - 1 and all("Paris" in a["problems"][0] for a in log)
     assert out["beats"] == draft()["beats"]
+
+
+def test_the_last_beat_says_what_comes_next_or_what_it_means_for_people():
+    beats = lambda last: {"beats": [{"say": "पहली बात।"}, {"say": last}]}  # noqa: E731
+    assert writer.value_beat(beats("इस फायरिंग में टाइगर श्रॉफ बाल-बाल बच गए, उन्हें कोई गोली नहीं लगी।"), "incident")
+    assert writer.value_beat(beats("कोर्ट इस मामले पर 28 अक्टूबर को सुनवाई करेगा।"), "incident") == []
+    assert writer.value_beat(beats("नई दरें 1 नवंबर से लागू होंगी, RBI ने बताया।"), "explainer") == []
+    assert writer.value_beat(beats("मेट्रो के 45 स्टेशन आज रात तक बंद रहेंगे।"), "explainer") == []
+    assert writer.value_beat(beats("वे 12 भाषाओं में गाते थे।"), "death") == []  # an obituary ends on its tributes
+
+
+def test_a_value_beat_is_advisory_on_the_last_draft(tmp_path, monkeypatch):
+    monkeypatch.setattr(writer, "value_beat", lambda d, k: ["the last beat must say what happens next"])
+    out, log, _ = write([[]], tmp_path)
+    assert len(log) == writer.DRAFTS - 1 and out["beats"] == draft()["beats"]
+
+
+def test_advice_and_expert_personas_are_never_in_the_script():
+    advice = lambda say: writer.advice({"beats": [{"say": say}]})  # noqa: E731
+    for say in ("विशेषज्ञों की सलाह है कि अभी सोना खरीदें।", "एक्सपर्ट्स का सुझाव है कि EMI पहले चुकाएं।",
+                "ऐसे में निवेश करें तो फायदा होगा।", "आपको अभी अपना पैसा निकाल लेना चाहिए।", "डॉक्टर के बिना दवा न लें।"):
+        assert advice(say), say
+    for say in ("RBI के मुताबिक EMI 1 नवंबर से बढ़ेगी।", "सरकार ने लोगों से घरों में रहने की अपील की।",
+                "अस्पताल ने बताया कि उनका इलाज चल रहा है।"):
+        assert advice(say) == [], say
+    d = draft()
+    d["beats"][-1]["say"] = "विशेषज्ञों की सलाह है कि लोग अभी सोना खरीदें।"
+    problems, _ = check(d)
+    assert any("gives advice" in p for p in problems)

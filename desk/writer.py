@@ -98,7 +98,9 @@ Shape (a news report, in this order):
 3. The people affected, with official figures only if the SOURCE gives them.
 4. The official response: rescuers, officials, investigators, and what they said.
 5. What is still unknown or under investigation, said plainly.
-6. आगे क्या: the next step officials have announced. The last beat is one short factual sentence.
+6. आगे क्या / काम की बात: the last beat says what happens next (the next step officials announced, a hearing, a
+   deadline) or what it means for people (a road or a service closed, a helpline, compensation), only as the SOURCE
+   states it, in one short factual sentence.
 Never name or describe any attacker, perpetrator or suspect. Never guess at causes. No graphic detail of injuries or
 death."""
 
@@ -111,7 +113,9 @@ Shape (a news report, in this order):
 3. Who is involved and what they demand, attributed ("आयोजकों का कहना है", "पार्टी का कहना है").
 4. How the government, police or courts responded, attributed to them.
 5. The turning point or the latest step.
-6. What happens next, or what is still unresolved. The last beat is one short, steady sentence.
+6. आगे क्या / काम की बात: what happens next (a talk, a hearing, a deadline) or what it means for people (roads,
+   exams, services), or what is still unresolved, only as the SOURCE states it. The last beat is one short, steady
+   sentence.
 Be strictly neutral: give each side's position as the SOURCE states it, never take a side, never mock or praise any
 person, party, community or religion, and use no loaded words. Attribute every disputed claim and every injury,
 arrest or crowd figure to whoever reported it ("पुलिस के मुताबिक", "आयोजकों के अनुसार"). Never urge anyone to join or
@@ -133,8 +137,9 @@ Shape (a news report, in this order):
    against a court, a company against a regulator): what the other side said in REPORTING, attributed. Leave this
    step out when REPORTING carries no reply, and always for a crime or an attack (attackers and accused are not a
    side). Never a line that someone has not responded, and never a biography of {name}.
-6. आगे क्या: the next step that is announced or due, or what is still unclear. The last beat is one short factual
-   sentence, never a conclusion, a moral or an opinion.
+6. आगे क्या / काम की बात: what the news means for people (a price, a rule, a date, a service that changes for
+   them) or the next step that is announced or due, or what is still unclear, only as the REPORTING states it and
+   attributed. The last beat is one short factual sentence, never a conclusion, a moral, an opinion or advice.
 Be strictly neutral: never take a side, never praise or mock any person, party, community or religion, use no loaded
 words, and attribute every claim, allegation and criticism to whoever made it. Never guess at motives, never predict,
 never give financial, legal or medical advice. Never mention suicide, and never write "जानें" (it reads as "lives
@@ -165,6 +170,9 @@ RULES = """RULES (all mandatory):
   the record (a past office, a year, a known role) needs no attribution. Use the vague "रिपोर्टों के मुताबिक" in at
   most 2 beats and never "स्रोत के अनुसार". Never address the viewer, never "आइए",
   "दोस्तों", "सोचिए", "क्या आप जानते हैं", never an exclamation, never a rhetorical question.
+- Never give advice (what to buy, invest in, take or file), and never put it in an unnamed expert's mouth
+  (विशेषज्ञों की सलाह, एक्सपर्ट्स का कहना): what changes for viewers is said as the SOURCES state it, with who says it
+  ("RBI के मुताबिक", "रेलवे ने बताया").
 - Every beat must carry a specific, checkable fact from the SOURCES (a number, a date, a name, a decision, an official
   statement); no vague praise, no feelings, no opinion, no moral or conclusion of your own.
 - Vary how beats open, and never start more than 2 beats with the same word.
@@ -501,7 +509,7 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
                  if (m := VAGUE.search(b.get("say", "")))]
     if hindi.devanagari_share(says) < 0.85:
         problems.append("write the narration in Hindi (Devanagari)")
-    problems += casual(draft)
+    problems += casual(draft) + advice(draft)
     problems += [f"beat {i + 1} says someone has not responded; leave that line out and give a fact of today's news "
                  "instead" for i, b in enumerate(beats) if NOBODY_REPLIED.search(b.get("say", ""))]
     if kind != "death":
@@ -574,6 +582,32 @@ BIOGRAPHY = re.compile(r"करियर (की )?(शुरू|शुरुआ
                        r"मशहूर अभिनेता हैं|अपनी (फिल्मों|फ़िल्मों) के लिए (जाने|मशहूर)")
 # "मामले की आगे की कानूनी कार्रवाई जारी है" closed two Tiger Shroff drafts (2026-10-21): it says nothing.
 VAGUE = re.compile(r"आगे की (कानूनी )?(कार्रवाई|कार्यवाही) जारी|आगे की जांच जारी|कार्रवाई की जा रही है")
+
+
+# The last beat tells the viewer what the news means for them or what happens next (2026-10-22, for YouTube's
+# Partner Programme: every Short must add value, not just retell). A light, advisory check on its words.
+NEXT_OR_IMPACT = re.compile(r"आगे|अगल|अब |अभी तक|सुनवाई|तारीख|तक |लागू|असर|लोगों|यात्रियों|ग्राहकों|छात्रों|"
+                            r"उम्मीदवारों|किसानों|मरीजों|परिवार|मुआवज|हेल्पलाइन|बंद रहेग|जारी रहेग|साफ नहीं|पता नहीं|"
+                            r"इंतज़ार|इंतजार|बाकी|फैसला|\S+(एगा|एगी|एंगे|ेगा|ेगी|ेंगे|ोगा|ोगी|ोंगे)(?=[\s।,.?]|$)")
+# Advice, or advice put in an unnamed expert's mouth: never on a news channel, least of all on money, health or law.
+ADVICE = re.compile(r"(विशेषज्ञ|एक्सपर्ट|जानकार)\S* (की|ने|का) (सलाह|सुझाव)|(विशेषज्ञ|एक्सपर्ट|जानकार)\S* सलाह दे|"
+                    r"(निवेश|खरीदारी|खरीद) (करें|करना चाहिए)|पैसा लगाएं|(शेयर|सोना) (खरीदें|बेचें)|दवा (लें|न लें)|"
+                    r"आपको .{0,30}चाहिए|(आप|आपको) .{0,20}(करें|बचें|लें)(?=[\s।,.]|$)")
+
+
+def value_beat(draft: dict, kind: str) -> list[str]:
+    """An advisory: the last beat should say what happens next or what the news means for people (not a death,
+    whose last beat is the funeral or the tributes)."""
+    beats = draft.get("beats") or []
+    if kind == "death" or not beats or NEXT_OR_IMPACT.search(beats[-1].get("say", "")):
+        return []
+    return ["the last beat must say what happens next or what this means for people (आगे क्या / काम की बात), only "
+            "as the sources state it"]
+
+
+def advice(draft: dict) -> list[str]:
+    return [f"beat {i + 1} gives advice ({m.group(0)}); report what the sources say, attributed, and give no advice"
+            for i, b in enumerate(draft.get("beats") or []) if (m := ADVICE.search(b.get("say", "")))]
 
 
 def casual(draft: dict) -> list[str]:
@@ -802,7 +836,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if names_ok:
                 problems += off_case(draft, names_ok, never)
             if attempt < DRAFTS - 1:
-                problems += monotone(draft) + bookish(draft) + misread(draft, spellings(draft, hi_names, looked),
+                problems += monotone(draft) + bookish(draft) + value_beat(draft, kind) + misread(draft, spellings(draft, hi_names, looked),
                                                                        ground_hi, reports)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
