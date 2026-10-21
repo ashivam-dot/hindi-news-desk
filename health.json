@@ -1,20 +1,19 @@
 {
- "at": "2026-10-21T08:04:16+00:00",
+ "at": "2026-10-21T08:42:11+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "retired C-xPy3XxJPU: Owner, 2026-10-21 (same images in many videos): the tenth Tiger Shroff Short showed photos up to nine earlier ones had (3 of its 5 photos) and his portrait over \"आरोपियों से पूछताछ\" (no police photo: Juhu's town, Mumbai, was never tried). The freshness rule would now refuse it: ",
-  "watch: 15 candidates from 20 trending",
-  "outlets: 1199 headlines from 31 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-bengaluru-explosion",
-  "explainers: 7 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q4900687, kh-20261021-Q1445, kh-20261021-Q96418672; dropped: explainer Mukesh Ambani's Jio: fewer than 3 owners' headlines name it and the story; explainer Das Ashutosh Ranka / Das Ashutosh Ranka: no Wikipedia article that can be its centre; explainer Delhi AQI: fewer than 3 owners' headlines name it and the story",
+  "watch: 18 candidates from 21 trending",
+  "outlets: 1204 headlines from 31 feeds (19 owners), 10 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-bengaluru-explosion, nw-20261020-tiger-shroff-attack",
+  "explainers: 8 kh- stories (on): kh-20261021-Q324546, kh-20261021-Q139857349, kh-20261021-Q96418672, kh-20261021-Q4900687; dropped: explainer Mukesh Ambani's Jio: fewer than 3 owners' headlines name it and the story; explainer Delhi AQI: fewer than 3 owners' headlines name it and the story; explainer Dussehra BJP / BJP MLA: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261021-Q1445: already 8 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-hurt: already 8 Shorts today (IST)",
+  "hold nw-20261019-tiger-shroff-attack-earlier-attacks: already 8 Shorts today (IST)",
+  "hold kh-20261021-Q139857349: already 8 Shorts today (IST)",
   "hold kh-20261021-Q4900687: already 8 Shorts today (IST)",
-  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261021-Q317521: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop nw-20261021-bengaluru-explosion: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261021-Q96418672: too low in Google News India's top stories (place 0.30, needs 0.35)"
+  "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
  ]
 }
