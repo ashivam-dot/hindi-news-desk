@@ -38,7 +38,8 @@ uv run pytest
 
 ## GitHub Actions
 
-- `run.yml`: every 15 minutes (:07, :22, :37, :52); `workflow_dispatch` with `dry` (default on), `event`
+- `run.yml`: scheduled every 15 minutes (:07, :22, :37, :52; GitHub starts them late, about 40 minutes apart on
+  21 Oct 2026); `workflow_dispatch` with `dry` (default on), `event`
   (`wiki:<title>`, make only) and `voice_preview`. Dry runs never publish or write the ledger; the MP4, stills and
   JSON records are kept as the `short-<run id>` artifact for 14 days.
 - `health.yml`: every six hours; opens or updates an `alert` issue when the desk is silent, failing or holding.

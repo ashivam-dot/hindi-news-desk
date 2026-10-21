@@ -149,7 +149,11 @@ The desk is India-first and runs unattended; it decides what goes out and when.
 - **Only the big stories, told properly and on time (owner, 2026-10-21: "No need to cover each and every incidents
   but those which are really high profile cases or incidents those should be cover properly on time with max
   efforts").** Regular Shorts go out 07:00–24:00 IST, at most six an IST day (`plan.MAX_PER_DAY`), at least 20
-  minutes apart; breaking news and a case's angles may take two more (`BREAKING_EXTRA`). Every story must be high in
+  minutes apart; breaking news and a case's angles may take two more (`BREAKING_EXTRA`). The cap counts the Shorts
+  still on the channel (`plan.on_channel`): a retired Short frees its slot and a Short and its remake count once (on
+  21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). Before 18:00 IST
+  the regular lane and case angles stop at four (`EVENING_RESERVE`), so two slots wait for the evening; breaking
+  news is never held for it. Every story must be high in
   Google News India's top stories (`MIN_PLACE`, about the top 13), and a kind Hindi viewers rarely watch
   (`plan.DEMAND` under 0.8: protests, science, conflict, economy, diplomacy, world) about the top 6. The ranking is
   multiplied by `plan.DEMAND`: crime and security interest 84% of Hindi news users and entertainment 75%, business
@@ -168,7 +172,7 @@ The desk is India-first and runs unattended; it decides what goes out and when.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
   hour with no gap, up to two beyond the daily cap of six (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
-  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds both). Wars and
+  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
   publishing the videos as a big incident happen").** A Wikipedia article under 6 hours old is still not used (its
@@ -200,9 +204,12 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     angle's `words` keep its people's sentences in the report excerpts. The file keeps the story's radar candidate,
     so the angles keep coming until its `until` after the story leaves the radar. Angles go ahead of other
     stories but at least 30 minutes apart (`CASE_GAP`), so the day's other news still runs between them, and an
-    open case's story gets no separate follow-up parts. An angle may take the day's spare (breaking) slots,
-    still within 07:00-24:00 IST and MIN_GAP after the last Short (owner, 2026-10-20: "publish few more"). An angle
-    keyed `<key>-r2` with `replaces` (the old Short's YouTube id) makes that angle again and makes the old Short
+    open case's story gets no separate follow-up parts. At most three of a case's angles go out an IST day
+    (`plan.CASE_MAX_PER_DAY`) and six stay on the channel in all (`CASE_MAX_TOTAL`; retired and replaced Shorts do
+    not count, and an angle made again is never over the total); the other angles wait with a "hold" note (review,
+    2026-10-21: eleven angles on one case, one template, read as mass-produced). An angle may take the day's spare
+    (breaking) slots, still within 07:00-24:00 IST and MIN_GAP after the last Short (owner, 2026-10-20: "publish
+    few more"). An angle keyed `<key>-r2` with `replaces` (the old Short's YouTube id) makes that angle again and makes the old Short
     private once the new one is public (the family Short that called Jackie Shroff "जय किशन"). A gang may be named
     only as police or the reports attribute it ("पुलिस ... गैंग से जुड़े होने की जांच कर रही है"), never as fact, and
     only when the file lists it in `names_ok`; an accused or gangster by name stays in `never`;
@@ -216,7 +223,16 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     to the name the headlines write first ("Kolkata Durga Puja pandal");
   - a month or a date is never a centre ("October" from Delhi traffic headlines would have led the morning).
 - At most two loss stories in any three consecutive uploads.
-- The run happens every 15 minutes (:07, :22, :37 and :52).
+- The run is scheduled every 15 minutes (:07, :22, :37 and :52), but GitHub Actions starts scheduled runs late:
+  on 21 Oct 2026 they started about 40 minutes apart (10:37, 11:17 ... 17:34, 18:07 UTC), so a made story can wait
+  that long for the next run.
+- **The channel's own numbers steer the ranking (`desk/learn.py`).** Every 3 hours a run reads each Short's views
+  and scores it by its views at 24 h; a category or region with at least four scored Shorts gets a lift, shrunk
+  toward 1 and kept within 0.75-1.35, that multiplies its stories' priority (`state/performance.json`,
+  `state/LEARNINGS.md`). A video record that carries `avg_view_pct` (YouTube Analytics' average percentage viewed)
+  adds retention, shrunk the same way and blended in at half weight. Nothing fills that field yet: the desk's
+  sign-in reads the Data API's public counts only, and YouTube Analytics needs a token with the
+  `yt-analytics.readonly` scope.
 
 ## Orbitwire (`desk/orbitwire.py`)
 
