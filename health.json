@@ -1,26 +1,26 @@
 {
- "at": "2026-10-21T03:38:09+00:00",
+ "at": "2026-10-21T04:15:18+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 19 candidates from 18 trending",
-  "outlets: 1143 headlines from 31 feeds (19 owners), 9 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261020-tiger-shroff-attack",
-  "explainers: 9 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q324546, kh-20261021-Q4900687, kh-20261021-Q16186720; dropped: explainer Durga Puja / Durga Puja: no Wikipedia article that can be its centre; explainer Delhi AQI: fewer than 3 owners' headlines name it and the story; explainer Witkoff: fewer than 3 owners' headlines name it and the story",
+  "watch: 12 candidates from 17 trending",
+  "outlets: 1143 headlines from 31 feeds (19 owners), 11 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261020-tiger-shroff-attack",
+  "explainers: 8 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q139857349, kh-20261021-Q324546, kh-20261021-Q317521; dropped: explainer Durga Puja / Durga Puja: no Wikipedia article that can be its centre; explainer Delhi AQI: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261021-Q317521: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261021-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261021-Q19867977: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop wk-Q3424313: 88 h old and no longer trending live",
   "drop wk-Q19729623: 64 h old and no longer trending live",
-  "published nw-20261019-tiger-shroff-attack-incident: https://www.youtube.com/shorts/jtpKgCtCNmw"
+  "drop wk-Q130336535: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "published kh-20261021-Q1353: https://www.youtube.com/shorts/TAuiM3yuZKk"
  ],
  "published": {
-  "video_id": "jtpKgCtCNmw",
-  "url": "https://www.youtube.com/shorts/jtpKgCtCNmw",
-  "youtube_title": "Tiger Shroff: कोटा कोर्ट ने तीनों आरोपियों को मुंबई पुलिस को सौंपा #shorts #tigershroff",
+  "video_id": "TAuiM3yuZKk",
+  "url": "https://www.youtube.com/shorts/TAuiM3yuZKk",
+  "youtube_title": "Narendra Modi: दिल्ली में दशहरा कार्यक्रम में शामिल हुए पीएम #shorts #delhi",
   "privacy": "public",
   "synthetic_declared": true
  }
