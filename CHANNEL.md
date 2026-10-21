@@ -162,6 +162,15 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   explainers 10-60. Half a news video's first-day views come in its first 6-7 hours, so a big story must be out
   within hours: the Tiger Shroff firing was missed for 13.5 hours because "shot", "gunned down" and "murdered"
   headlines were not seen as incidents and sport words skipped a firing at a football ground (`outlets.py`, fixed).
+- **Ad-safe topic mix (2026-10-22, for YouTube's Partner Programme).** The ranking is also multiplied by
+  `plan.ad_factor`: x0.8 (`AD_SENSITIVE`) for crime, shootings, firing, arrests, bail, courts, communal or religious
+  flashpoints and accidents, x1.2 (`AD_FRIENDLY`) for economy and prices (petrol, gold, GST, RBI, EMI, tax), jobs,
+  exams and schemes, telecom and tech rules, infrastructure, science and neutral diplomacy. A keyword classifier
+  (`plan.ad_class`) reads the title, story and English and Hindi headlines (a Hindi word must start a word, so
+  "सोना" is not "सोनाक्षी"); sensitive wins when both match, an obituary is sensitive only through such words, and "cardiac
+  arrest" is no arrest. It is a multiplier, never a ban, and breaking news is exempt. One health line
+  (`plan.ad_note`) names the stories it moved. Honest trade-off: on this channel attack (median 85 views, 13 Shorts)
+  and court (112, 6) outdrew economy (29, 5), so this costs some views for advertiser suitability; it stays mild.
 - **The news lane (`desk/explain.py`, kh- ids, 2026-10-14).** Any story at least three independent owners report
   within 24 hours qualifies, whatever its topic, unless it is on the skip list (elections, sport, entertainment,
   gossip, crime and trials, communal violence, market tips, opinion, roundups); a headline with no special category
@@ -233,9 +242,11 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   and scores it by its views at 24 h; a category or region with at least four scored Shorts gets a lift, shrunk
   toward 1 and kept within 0.75-1.35, that multiplies its stories' priority (`state/performance.json`,
   `state/LEARNINGS.md`). A video record that carries `avg_view_pct` (YouTube Analytics' average percentage viewed)
-  adds retention, shrunk the same way and blended in at half weight. Nothing fills that field yet: the desk's
-  sign-in reads the Data API's public counts only, and YouTube Analytics needs a token with the
-  `yt-analytics.readonly` scope.
+  adds retention, shrunk the same way and blended in at half weight. `learn.read_retention` fills it and
+  `engaged_views` from YouTube Analytics v2 (`dimensions=video`, `metrics=views,engagedViews,averageViewPercentage`)
+  through the desk's own sign-in, only for Shorts at least three days old (the numbers settle about two days after).
+  It needs the `yt-analytics.readonly` scope: without it (HTTP 403, or a token that lists its scopes without it)
+  nothing is filled and one health note says so; lifts are then views alone.
 
 ## Orbitwire (`desk/orbitwire.py`)
 
@@ -250,8 +261,16 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 - A shared story is skipped unless it is **high-profile**: fame 400k+, or the top 10% of this run's candidates with at
   least 100k, or an India story that at least three Hindi lead headlines are about, or any India story with fame 25k+
   (Hindi viewers are not Orbitwire's English audience; 2026-10-11, after Nana Patekar's death was skipped).
+- **A shared story needs an India connection (`orbitwire.MIRROR_NEEDS_INDIA`, 2026-10-22).** Even a high-profile
+  shared story is told again in Hindi only when it is an India story, Wikidata or the newsrooms link it to India, or
+  its headlines name India, an Indian place, Modi, Jaishankar or the MEA (`orbitwire.india_connection`; "Indiana" is
+  not India); otherwise it is skipped with a note. A Hindi retelling of the English channel's world story is the
+  mirroring YouTube's inauthentic-content policy is about, and Hindi viewers come for the India side. The constant
+  is the switch: `False` tells the high-profile shared stories again as before. World stories Orbitwire did not
+  tell are not affected (world Shorts drew a median of 48 views, 29 Shorts, against 53 for India's 41).
 - A high-profile shared story is told differently: its own angle (India connection when it has one; otherwise a
-  timeline for a death, an explainer for an incident or protest), a Hindi hook and a title that shows the angle,
+  timeline for a death, an explainer for an incident or protest; a world story India is part of takes the India
+  angle), a Hindi hook and a title that shows the angle,
   and photos Orbitwire would not use (Orbitwire's own deterministic photo ranking is recomputed with a margin and
   every file in it is excluded; extra photos come from a Commons search). It goes out at least three hours after
   Orbitwire's release.
@@ -386,11 +405,18 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   headline>" and tag the subject in English letters plus `#shorts #hindinews #latestnews`. Now: the narration (which
   is also the subtitles) is the spoken Hindi of Aaj Tak/ABP; `writer.bookish` sends back `HARD_WORDS` in narration or
   cards, "स्रोत के अनुसार", and more than two "रिपोर्टों के मुताबिक" (not on the last draft, so a story is never lost to
-  wording); formal Wikidata labels never bind (`writer.everyday_names`); the headline editor prefers a
-  "LK Advani: ..." title (`writer.KICKER`); `writer.hashtags_for` gives the subject tag, its `news` form, `#hindinews
+  wording); formal Wikidata labels never bind (`writer.everyday_names`); `writer.hashtags_for` gives the subject tag, its `news` form, `#hindinews
   #shorts`, a topic tag and the broad tags (at most 14); the description opens with the title and the hashtags; the
   YouTube title carries `#shorts` and the subject tag when it fits 100 characters (`youtube.upload_title`), while the
   ledger and the on-screen headline keep the plain title.
+- **Natural headlines, the name first (2026-10-22).** The "Name: headline" template is retired: those 20 Shorts drew a
+  median 35.5 views against 55 for the other 54, and the five ending "वजह क्या है" 17; one template on every title
+  also reads as mass-produced. A title is one natural Hindi headline with the name or topic people search for in its
+  first three words, making one concrete claim or asking the one specific question the Short answers. The headline
+  brief sees the channel's last 20 titles. `writer.title_style` flags a "Name:" label (`writer.KICKER`), a stock
+  tail ("वजह क्या है?", "क्या थी वजह?", a bare ", क्यों?"), a name later than the first three words, and the same
+  first three words as any of the last 20 titles of other stories; it is advisory in the headline editor's last
+  round, so a story never loses its title to it. Every hard title check (`writer.title_problems`) is unchanged.
 - **The name people know (owner, 2026-10-21: "you are saying jakie shrof to jay kissan shrof ... what all people
   know that word will reach to maximum peoples").** Wikidata's first Hindi label is sometimes a birth name (जय किशन
   श्रॉफ for Jackie Shroff). `wiki.common_hindi` keeps the label when it sounds like the English
@@ -399,12 +425,25 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   ट्रंप). It names the script, the strap, the police photo and the title; a spelling two owners' reports print is
   also accepted. `HARD_WORDS` sends back bookish words for the ones TV says (फायरिंग, आरोपी, FIR, अस्पताल, इलाज,
   गाड़ी, बयान, जांच, SP, पुलिस कमिश्नर...).
+- **A spelling must not read as another name (2026-10-22).** The Chennai rain Short wrote Parrys as पैरिस, which
+  every Hindi reader takes for Paris. `writer.misread` looks each name with no Wikidata label and no Hindi source
+  spelling up in `wiki.hindi_readings` (Wikidata items whose Devanagari label writes that word, whole or as its first
+  word; cached for the run) and sends the draft back when the spelling sounds more like another item's English
+  name than the story's (advisory, never on the last draft). The writer's rules say so up front. Known limit: the
+  Aubagne Short's ओबान is not caught, as Wikidata has no Hindi label for Aubagne and no item is spelled ओबान (only
+  ओबानज़वा); once a label exists the writer is held to it like any other.
 - **Engaging and visibly sourced (owner, 2026-10-13: "more attractive news ... 100% engaging ... real facts").**
   Every frame carries the channel strip (`क्यों हुआ · राजनीति`, the story's kind or explainer category) and a thin
   progress bar along the top edge; the opening shot names where the facts come from (`स्रोत: बीबीसी · द हिंदू ·
   Wikipedia`). The script's first five words carry the news (never a date, a question or a slow introduction),
   every beat adds one new sourced fact, and the last beat is a short factual sentence. Engagement never comes from
   hype: the banned-wording list and every fact check still apply.
+- **काम की बात: every Short adds value (2026-10-22, for YouTube's Partner Programme).** The last beat of an incident,
+  protest or explainer says what happens next (a hearing, a deadline, the next official step) or what the news
+  means for people (a closed road or service, a changed rule or price, compensation), only as the sources state it
+  and attributed. `writer.value_beat` checks the last beat for such words (advisory, never on an obituary or the
+  last draft). No advice ever: `writer.advice` sends back a beat that tells viewers to buy, invest, take medicine or
+  "आपको ... चाहिए", or that gives an unnamed expert's advice (विशेषज्ञों की सलाह), above all on money, health or law.
 - **Hindi on screen:** Devanagari is shaped with HarfBuzz (Pillow's RAQM layout) in Mukta (OFL, bundled). Rendering
   refuses to run without RAQM, because basic layout breaks conjuncts and vowel signs. Captions appear word by word on
   Whisper's timings and always show the script's own words.
@@ -460,4 +499,17 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   only in a request header and is never logged or written to disk.
 - An open issue labelled `alert` means the desk needs attention (a failed run, four hours of silence, or a hold such
   as no Sulafat voice); GitHub emails the repo owner.
+- **No machine tag on uploads (2026-10-22).** Tags are the story's topic tags and the channel's name only; the old
+  public `hindi-news-desk:<story id>` tag is gone. The desk knows its own uploads by video id: `state/uploads.json`
+  keeps each story's video id the moment YouTube returns it (the state branch is saved even when a run fails), and
+  `youtube.find` takes that id, then an older upload's marker tag (`config.MARKER`, kept for the uploads before
+  this date), then the one recent upload no ledger row owns whose title is the story's. The repository variable
+  `DESK_UNTAG=true` (off by default; an owner action) lets each live run take the old tag off five of the recent 50
+  uploads after keeping their ids; uploads older than the newest 50 keep it.
 - Never promise views or earnings; growth comes from accuracy, consistency and clarity.
+
+## Decisions log
+
+| Date | Decision | Evidence |
+|---|---|---|
+| 2026-10-22 | YPP push, batch 2: no public machine tag; ad-safe ranking (x0.8 crime/court/communal/accident, x1.2 economy/jobs/schemes/tech/science/diplomacy, breaking exempt); Orbitwire's stories retold only with an India connection; misread-spelling check; natural name-first titles (no "Name:" label, no "वजह क्या है" tail, no repeated opening); काम की बात last beat and no advice; retention from YouTube Analytics. Style rules are advisory on the last attempt; no fact, licence or decorum gate loosened. | Views per Short on the state branch, 2026-10-21: "Name:" titles median 35.5 (n=20) vs 55 (n=54); "वजह क्या" titles median 17 (n=5: 321, 160, 17, 16, 4); category medians attack 85 (n=13), court 112.5 (6), economy 29 (5), news 44 (18), death 732; region medians world 48 (n=29), india 53 (n=41); only one Short ever recorded an Orbitwire overlap (Nana Patekar). Wikidata, 2026-10-22: पैरिस is the Bhojpuri label of Paris (Q90) and the first word of University of Paris and Treaty of Paris; Aubagne (Q184047) and Parry's Corner (Q3406502) have no Hindi label; ओबान only begins ओबानज़वा. No view or earnings promise is made: the ad reweight trades some views for suitability. |
