@@ -34,7 +34,9 @@ from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
 # YouTube refuses this channel's uploads past about ten a day ("exceeded the number of videos they may upload" after
-# 10, 10 and 9 on 15-17 Oct 2026): the eleventh story was made and lost, so the cap keeps one slot for breaking news.
+# 10, 10 and 9 on 15-17 Oct 2026): the eleventh story was made and lost. Every upload counts, retired or not, and the
+# regular and case lanes stop BREAKING_EXTRA short of it, so breaking news always has room. The desk counts IST days;
+# YouTube's own day may start elsewhere (likely midnight Pacific), and that margin also covers the overlap.
 YOUTUBE_DAILY_UPLOADS = 10
 # Owner, 2026-10-21: "No need to cover each and every incidents but those which are really high profile cases or
 # incidents those should be cover properly on time with max efforts." Fewer regular Shorts; the spare slots go to
@@ -202,12 +204,16 @@ def on_channel(rows: list[dict]) -> list[dict]:
 def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool = False) -> str | None:
     """Why no Short may go out now, or None. A breaking story may take the spare slot at once; with `spare` (a case
     angle) it may take it MIN_GAP after the last Short. The daily cap counts the Shorts still on the channel; every
-    upload, retired or not, counts toward YouTube's own limit."""
+    upload, retired or not, counts toward YouTube's own limit, whose last BREAKING_EXTRA uploads only breaking news
+    may take."""
     at = at or datetime.now(timezone.utc)
     rows = ledger.published()
     uploads = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
     if len(uploads) >= YOUTUBE_DAILY_UPLOADS:
         return f"already {len(uploads)} uploads today (IST), YouTube's limit"
+    if not breaking and len(uploads) >= YOUTUBE_DAILY_UPLOADS - BREAKING_EXTRA:
+        return (f"already {len(uploads)} uploads today (IST); the last {BREAKING_EXTRA} before YouTube's limit wait "
+                "for breaking news")
     today = on_channel(uploads)
     if len(today) >= MAX_PER_DAY + (BREAKING_EXTRA if breaking or spare else 0):
         return f"already {len(today)} Shorts today (IST)"

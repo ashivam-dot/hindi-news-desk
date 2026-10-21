@@ -75,13 +75,40 @@ def test_retired_shorts_free_their_slots_but_count_toward_youtubes_limit(tmp_pat
     late = utc(9, 16)  # 21:30 IST
     ledger.save("published", _day(8))
     assert "already 8 Shorts today" in plan.can_publish(late, breaking=True)
-    # 21 Oct 2026: eight uploads, three of them retired, and every run held "already 8 Shorts today".
-    ledger.save("published", _day(8, retired={3, 4, 7}))
+    # 21 Oct 2026: three of the day's uploads retired, and every run held "already N Shorts today".
+    ledger.save("published", _day(7, retired={3, 4}))
     assert plan.can_publish(late) is None
     assert plan.can_publish(late, spare=True) is None and plan.can_publish(late, breaking=True) is None
-    # YouTube counts the retired uploads too.
+    # YouTube counts the retired uploads too; the last two before its limit are breaking news's alone.
+    ledger.save("published", _day(8, retired={3, 4, 7}))
+    assert "wait for breaking news" in plan.can_publish(late)
+    assert "wait for breaking news" in plan.can_publish(late, spare=True)
+    assert plan.can_publish(late, breaking=True) is None
     ledger.save("published", _day(10, retired={0, 1, 2, 3, 4}))
     assert "YouTube's limit" in plan.can_publish(late, breaking=True)
+
+
+def test_retirements_never_let_regular_shorts_take_breaking_news_last_uploads(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    late = utc(9, 16)  # 21:30 IST
+    # Nine uploads, four retired: five on the channel, under every lane's cap, yet only breaking news may go.
+    ledger.save("published", _day(9, retired={0, 1, 2, 3}))
+    assert "wait for breaking news" in plan.can_publish(late)
+    assert "wait for breaking news" in plan.can_publish(late, spare=True)
+    assert plan.can_publish(late, breaking=True) is None
+    ready, notes = plan.lineup([{"id": "wk-Q1", "title": "x", "fame": 10 ** 6, "news_at": late.isoformat(),
+                                 "top": None},
+                                {"id": "nw-case-angle", "title": "y", "fame": 10, "case": "A case", "top": None}], late)
+    assert [c["id"] for c in ready] == ["wk-Q1"] and ready[0]["breaking"]
+    assert notes == ["hold nw-case-angle: already 9 uploads today (IST); the last 2 before YouTube's limit wait for "
+                     "breaking news"]
+    # Regular Shorts stop at eight uploads, so a breaking story still has the ninth and the tenth.
+    for n in range(plan.YOUTUBE_DAILY_UPLOADS - plan.BREAKING_EXTRA, plan.YOUTUBE_DAILY_UPLOADS):
+        ledger.save("published", _day(n, retired=set(range(n - 4))))
+        assert plan.can_publish(late, breaking=True) is None, n
+    monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)  # a hard cap for every lane
+    ledger.save("published", _day(9, retired={0, 1, 2, 3}))
+    assert plan.can_publish(late) is None
 
 
 def test_a_short_and_its_remake_count_once(tmp_path, monkeypatch):

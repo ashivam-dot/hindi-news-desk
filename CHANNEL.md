@@ -153,7 +153,8 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   still on the channel (`plan.on_channel`): a retired Short frees its slot and a Short and its remake count once (on
   21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). Before 18:00 IST
   the regular lane and case angles stop at four (`EVENING_RESERVE`), so two slots wait for the evening; breaking
-  news is never held for it. Every story must be high in
+  news is never held for it. Case angles are held too on purpose: they count toward the same four, and if they
+  could fill the day before 18:00 the evening would again find the cap used up. Every story must be high in
   Google News India's top stories (`MIN_PLACE`, about the top 13), and a kind Hindi viewers rarely watch
   (`plan.DEMAND` under 0.8: protests, science, conflict, economy, diplomacy, world) about the top 6. The ranking is
   multiplied by `plan.DEMAND`: crime and security interest 84% of Hindi news users and entertainment 75%, business
@@ -172,7 +173,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
   hour with no gap, up to two beyond the daily cap of six (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
-  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included). Wars and
+  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included, and the regular and case lanes
+  stop two uploads short of it, so however many Shorts were retired the last two uploads of the day stay free for
+  breaking news; the margin also covers YouTube counting a different day from the desk's IST day). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
   publishing the videos as a big incident happen").** A Wikipedia article under 6 hours old is still not used (its
