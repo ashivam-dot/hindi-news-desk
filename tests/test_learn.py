@@ -97,7 +97,12 @@ def test_retention_is_blended_into_lifts_shrunk_and_bounded():
     lifts = learn.learn(wild)["lifts"]
     assert lifts["category:earthquake"]["lift"] == learn.LIFT_RANGE[1]
     assert lifts["category:death"]["lift"] == learn.LIFT_RANGE[0]
-    assert "Retention: a typical Short" in learn.report({"at": "x", "learned": out, "videos": {}})
+    report = learn.report({"at": "x", "learned": out, "videos": {}})
+    assert "Retention: a typical Short" in report
+    assert f"category:earthquake: x{quake['lift']} ranking lift (4 Shorts, typical 100 views; 4 with retention, " \
+           "typically 80.0% watched)" in report
+    # A lift learned from views alone says nothing about retention.
+    assert "with retention" not in learn.report({"at": "x", "learned": learn.learn(same), "videos": {}})
 
 
 def test_refresh_keeps_a_records_retention(monkeypatch):

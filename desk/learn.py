@@ -133,7 +133,10 @@ def report(perf: dict) -> str:
         lines.append(f"Retention: a typical Short is watched {learned['baseline_view_pct']}% through; a group's "
                      f"retention is blended into its lift at {RETENTION_WEIGHT}.")
     for key, v in sorted(learned.get("lifts", {}).items(), key=lambda kv: -kv[1]["lift"]):
-        lines.append(f"- {key}: x{v['lift']} ranking lift ({v['n']} Shorts, typical {v['typical_views_24h']} views)")
+        held = (f"; {v['n_retention']} with retention, typically {v['typical_view_pct']}% watched"
+                if v.get("n_retention") else "")
+        lines.append(f"- {key}: x{v['lift']} ranking lift ({v['n']} Shorts, typical {v['typical_views_24h']} views"
+                     f"{held})")
     if not learned.get("lifts"):
         lines.append("- No lift yet: not enough scored Shorts per group. The desk ranks on fame and freshness alone.")
     lines += ["", "| Short | published | " + " | ".join(FEATURES) + " | views now | views at 24 h |",
