@@ -542,8 +542,9 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
                          f"India connection: not told again in Hindi")
             continue
         kind = "protest" if c.get("category") in trends.ONGOING else c.get("kind", "incident")
-        # An India story's own angle is not "its India connection"; a world story India is part of tells that.
-        link = bool(c.get("india_link")) or c.get("region") != "india"
+        # An India story's own angle is not "its India connection"; a world story India is part of tells that. With
+        # MIRROR_NEEDS_INDIA off, a world story with no India connection keeps its own angle (no ungrounded India line).
+        link = bool(c.get("india_link")) or (c.get("region") != "india" and bool(india))
         ov |= {"high_profile": why, "india": india, "angle": orbitwire.angle_for(kind, link)}
         kept.append(c | {"orbitwire": ov})
     return kept, notes

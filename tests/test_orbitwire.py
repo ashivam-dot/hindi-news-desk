@@ -184,4 +184,9 @@ def test_a_shared_story_is_told_again_only_with_an_india_connection(monkeypatch)
     assert kept[0]["orbitwire"]["india"] == "its headlines name Jamnagar" and kept[0]["orbitwire"]["angle"] == "india"
     assert kept[1]["orbitwire"]["angle"] == "timeline"  # an India story keeps its own angle
     monkeypatch.setattr(orbitwire, "MIRROR_NEEDS_INDIA", False)
-    assert len(plan.apply_orbitwire(cands, AT)[0]) == 4
+    kept = plan.apply_orbitwire(cands, AT)[0]
+    assert len(kept) == 4
+    # With the switch off, a world story with no India connection keeps its own angle: never an India hook it
+    # cannot ground, nor a title rule (भारत) every draft would fail.
+    angles = {c["id"]: c["orbitwire"]["angle"] for c in kept}
+    assert angles == {"wk-Q1": "explainer", "wk-Q2": "india", "wk-Q3": "explainer", "wk-Q4": "timeline"}
