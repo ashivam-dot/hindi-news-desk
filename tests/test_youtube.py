@@ -185,3 +185,35 @@ def test_untag_keeps_the_ids_then_takes_only_the_marker_off(tmp_path, monkeypatc
                                                               "categoryId": "25", "tags": ["दिल्ली"],
                                                               "defaultLanguage": "hi"}})
     assert config.UNTAG is False  # off unless the owner sets DESK_UNTAG=true
+
+
+def test_untag_without_a_write_scope_is_one_clear_note(tmp_path, monkeypatch):
+    from desk import ledger
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(config, "CHANNEL_ID", UC)
+    items = [{"id": "v0", "snippet": {"channelId": UC, "title": "शीर्षक", "tags": [config.MARKER + "kh-0"]}}]
+
+    class Refused(FakeUpdate):
+        def execute(self):
+            if self.writes:
+                raise type("HttpError", (Exception,), {"resp": type("R", (), {"status": 403})()})("forbidden")
+            return super().execute()
+
+    class Api(FakeApi):
+        def videos(self):
+            return Refused(items, [])
+
+        def channels(self):
+            return FakeVideos([{"id": UC, **CHANNEL}])
+
+    monkeypatch.setattr(youtube, "client", lambda *a: Api(items))
+    # A token that lists only the upload scope is never sent to videos.update.
+    monkeypatch.setattr(youtube, "scopes", lambda: {"https://www.googleapis.com/auth/youtube.upload"})
+    with pytest.raises(youtube.NoWriteScope, match="youtube.force-ssl"):
+        youtube.untag()
+    assert ledger.load("uploads", {}) == {}
+    # A token that lists no scopes is refused by YouTube with 403: the id is kept, then one clear note.
+    monkeypatch.setattr(youtube, "scopes", lambda: None)
+    with pytest.raises(youtube.NoWriteScope, match="HTTP 403 after 0 done"):
+        youtube.untag()
+    assert ledger.load("uploads", {}) == {"kh-0": "v0"}

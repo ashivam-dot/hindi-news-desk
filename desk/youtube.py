@@ -29,6 +29,10 @@ class WrongChannel(RuntimeError):
     pass
 
 
+class NoWriteScope(RuntimeError):
+    """The sign-in token may upload but not edit a video (videos.update)."""
+
+
 def client(service: str = "youtube", version: str = "v3"):
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
@@ -202,11 +206,19 @@ def tags(short: Short) -> list[str]:
 
 
 UNTAG_PER_RUN = 5
+# videos.update needs one of these; an upload-only token (youtube.upload) is refused with HTTP 403.
+WRITE_SCOPES = {"https://www.googleapis.com/auth/youtube", "https://www.googleapis.com/auth/youtube.force-ssl"}
+UNTAG_NO_SCOPE = ("untag: the YouTube sign-in has no youtube or youtube.force-ssl scope (videos.update); old tags "
+                  "stay until the owner re-consents the token with it")
 
 
 def untag(limit: int = UNTAG_PER_RUN) -> int:
     """Take the old public marker tag off up to `limit` of the channel's recent uploads, keeping their story ids in
-    the ledger first so find() still knows them. Title, description, category and topic tags stay as they are."""
+    the ledger first so find() still knows them. Title, description, category and topic tags stay as they are.
+    Raises NoWriteScope (UNTAG_NO_SCOPE) when the token lacks a WRITE_SCOPES scope or YouTube refuses with 403."""
+    listed = scopes()
+    if listed is not None and not listed & WRITE_SCOPES:
+        raise NoWriteScope(UNTAG_NO_SCOPE)
     api = client()
     channel = identity(api)
     uploads = ledger.load("uploads", {})
@@ -230,7 +242,12 @@ def untag(limit: int = UNTAG_PER_RUN) -> int:
         for key in ("defaultLanguage", "defaultAudioLanguage"):
             if snippet.get(key):
                 body["snippet"][key] = snippet[key]
-        api.videos().update(part="snippet", body=body).execute()
+        try:
+            api.videos().update(part="snippet", body=body).execute()
+        except Exception as exc:
+            if getattr(getattr(exc, "resp", None), "status", None) in (403, "403"):
+                raise NoWriteScope(UNTAG_NO_SCOPE + f" (HTTP 403 after {done} done)") from exc
+            raise
         done += 1
     return done
 

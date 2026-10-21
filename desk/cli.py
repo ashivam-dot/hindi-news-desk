@@ -223,6 +223,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 from . import youtube
                 try:
                     health["steps"].append(f"untag: old marker tag taken off {youtube.untag()} uploads")
+                except youtube.NoWriteScope as exc:  # one clear line: the token needs a write scope
+                    health["steps"].append(str(exc)[:300])
                 except Exception as exc:  # tidying old tags must never stop a publish
                     health["steps"].append(f"untag: {type(exc).__name__}: {exc}"[:300])
         if done := _advisory(health, dry):
