@@ -190,3 +190,20 @@ def test_a_shared_story_is_told_again_only_with_an_india_connection(monkeypatch)
     # cannot ground, nor a title rule (भारत) every draft would fail.
     angles = {c["id"]: c["orbitwire"]["angle"] for c in kept}
     assert angles == {"wk-Q1": "explainer", "wk-Q2": "india", "wk-Q3": "explainer", "wk-Q4": "timeline"}
+
+
+@pytest.mark.parametrize("cand", [
+    {"title": "Floods in Pakistan's Punjab kill 40"},
+    {"title": "Cyclone makes landfall in Myanmar", "headlines": ["Cyclone hits Bay of Bengal coast of Myanmar"]},
+    {"title": "Earthquake near Indian Ocean island"},
+    {"title": "Clashes in Pakistan-administered Kashmir"},
+    {"title": "US election result", "hindi_headlines": ["अमेरिकी चुनाव: भारत के लिए क्या मायने"]},
+])
+def test_a_place_that_only_sounds_like_india_is_no_india_connection(cand):
+    """The pre-push review (2026-10-22): each of these would have forced a भारत title no source backs."""
+    assert orbitwire.india_connection({"region": "world"} | cand) is None
+
+
+def test_india_beside_a_false_friend_still_counts():
+    cand = {"region": "world", "title": "Indian Ocean tsunami alert", "headlines": ["India sends ships to Sri Lanka"]}
+    assert orbitwire.india_connection(cand) == "its headlines name India"

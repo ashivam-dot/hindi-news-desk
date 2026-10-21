@@ -36,6 +36,12 @@ INDIA_TEXT = re.compile(
     r"Kashmir|Bihar|Uttar Pradesh|Maharashtra|Kerala|Punjab|Assam|Gujarat|Rajasthan|Odisha|Bengal|Modi|"
     r"Jaishankar|MEA)\b|भारत|भारतीय|दिल्ली|मुंबई|मुम्बई|कोलकाता|चेन्नई|बेंगलुरु|हैदराबाद|गुजरात|महाराष्ट्र|बिहार|"
     r"उत्तर प्रदेश|कश्मीर|केरल|पंजाब|असम|राजस्थान|मोदी|जयशंकर|विदेश मंत्रालय")
+# Names that sound like India but are not its link (the pre-push review, 2026-10-22): the Indian Ocean, the Bay of
+# Bengal, and the Punjab and Kashmir on Pakistan's side. Taken out before INDIA_TEXT looks.
+NOT_INDIA = re.compile(
+    r"\bIndian Ocean\b|\bBay of Bengal\b|\bPakistan(?:'s|-administered|-held| administered| held)?\s+(?:Punjab|Kashmir)\b|"
+    r"\b(?:Punjab|Kashmir),?\s+(?:in\s+)?Pakistan\b|\bAzad Kashmir\b|हिंद महासागर|बंगाल की खाड़ी|"
+    r"पाकिस्तान(?: के| का)?\s*(?:अधिकृत\s*)?(?:पंजाब|कश्मीर)", re.I)
 
 ANGLES = {
     "india": {"label": "भारत से कनेक्शन", "title": ("भारत",),
@@ -145,15 +151,15 @@ def high_profile(cand: dict, all_fame: list[float]) -> str | None:
 
 
 def india_connection(cand: dict) -> str | None:
-    """Why a story is India's too (an India story, a Wikidata or newsroom India link, or India in its headlines),
-    or None."""
+    """Why a story is India's too (an India story, a Wikidata or newsroom India link, or India in its source
+    headlines), or None. The Hindi headlines are style only, never evidence: they are not read."""
     if cand.get("region") == "india":
         return "an India story"
     if cand.get("india_link"):
         return "linked to India"
     text = " ".join([cand.get("title") or "", cand.get("story") or ""]
-                    + [h for k in ("headlines", "hindi_headlines", "top_headlines") for h in cand.get(k) or []])
-    if m := INDIA_TEXT.search(text):
+                    + [h for k in ("headlines", "top_headlines") for h in cand.get(k) or []])
+    if m := INDIA_TEXT.search(NOT_INDIA.sub(" ", text)):
         return f"its headlines name {m.group(0)}"
     return None
 
