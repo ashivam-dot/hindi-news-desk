@@ -532,3 +532,30 @@ def test_a_case_has_three_angles_a_day_and_six_in_all_and_the_rest_wait(tmp_path
     assert "6 of the case's Shorts on the channel" in held["a7"] and held["a0-r2"] is None
     monkeypatch.setattr(plan, "CASE_MAX_TOTAL", 7)
     assert waiting(nxt)["a7"] is None
+
+
+def test_ad_suitability_ranks_crime_down_and_explainers_up_but_never_breaking_news():
+    at = utc(21, 8)
+    base = {"kind": "explainer", "category": "news", "fame": 1000, "news_at": at.isoformat()}
+    firing = base | {"id": "kh-f", "title": "Tiger Shroff", "story": "Tiger Shroff survives shooting attempt"}
+    bail = base | {"id": "kh-b", "title": "राहुल गांधी", "hindi_headlines": ["मानहानि केस में जमानत मिली"]}
+    petrol = base | {"id": "kh-p", "title": "Petrol", "story": "Petrol and diesel prices cut by Rs 2"}
+    gold = base | {"id": "kh-g", "title": "सोना", "hindi_headlines": ["सोने के दाम में बड़ी गिरावट"]}
+    plain = base | {"id": "kh-n", "title": "Shashi Tharoor", "story": "Shashi Tharoor amid row over Rahul Gandhi"}
+    assert [plan.ad_class(c) for c in (firing, bail, petrol, gold, plain)] == \
+        ["sensitive", "sensitive", "friendly", "friendly", None]
+    # Sensitive wins; a death is not crime unless it was an accident; cardiac arrest is no arrest.
+    assert plan.ad_class(base | {"story": "GST council meets after the court verdict"}) == "sensitive"
+    assert plan.ad_class({"category": "death", "title": "Lata Mangeshkar", "story": "dies of cardiac arrest"}) is None
+    assert plan.ad_class({"category": "death", "story": "actor dies in a road accident"}) == "sensitive"
+    assert plan.ad_class({"title": "सोनाक्षी सिन्हा", "hindi_headlines": ["अस्पताल में भर्ती"]}) is None
+    assert plan.ad_class({"category": "attack", "title": "x"}) == "sensitive"
+    assert plan.ad_factor(firing, at) == plan.AD_SENSITIVE < 1 < plan.AD_FRIENDLY == plan.ad_factor(petrol, at)
+    assert plan.ad_factor(plain, at) == 1.0
+    assert plan.priority(firing, at) < plan.priority(plain, at) < plan.priority(petrol, at)
+    # Breaking news is told whatever it is about.
+    loud = firing | {"kind": "incident", "fame": 500_000, "news_at": (at - timedelta(hours=1)).isoformat()}
+    assert plan.is_breaking(loud, at) and plan.ad_factor(loud, at) == 1.0
+    note = plan.ad_note([firing, petrol, plain, loud], at)
+    assert note.startswith("ad-suitability x0.8") and "kh-f" in note and "kh-p" in note and "kh-n" not in note
+    assert plan.ad_note([plain], at) is None

@@ -75,6 +75,37 @@ DEMAND = {"death": 1.4, "entertainment": 1.4, "attack": 1.4, "disaster": 1.3, "a
           "rail": 1.2, "flood": 1.2, "earthquake": 1.2, "cyclone": 1.1, "politics": 1.1, "court": 1.0, "news": 1.0,
           "weather": 1.0, "sport": 1.0, "health": 0.9, "policy": 0.9, "defence": 0.9, "protest": 0.8,
           "movement": 0.8, "science": 0.7, "conflict": 0.7, "economy": 0.6, "diplomacy": 0.6, "world": 0.5}
+# Ad suitability (2026-10-22, for YouTube's Partner Programme): advertisers avoid crime, court, communal and
+# accident stories, so a story about them ranks at AD_SENSITIVE of its priority, and an economy, jobs, exams,
+# schemes, tech-rules, infrastructure, science or neutral foreign-policy story at AD_FRIENDLY. A multiplier, never a
+# ban, and breaking news is told whatever it is about. On this channel attack (median 85 views) and court (112)
+# outdrew economy (29), so this trades a few views for ads; it stays mild. Sensitive wins when both match; a death
+# is not sensitive unless it was an accident. Read from the title, story and headlines in English and Hindi.
+AD_SENSITIVE, AD_FRIENDLY = 0.8, 1.2
+AD_SENSITIVE_KINDS = ("attack", "explosion", "court", "accident")
+AD_FRIENDLY_KINDS = ("economy", "science", "diplomacy", "policy")
+# A Hindi word must start a word ("सोना" is not "सोनाक्षी") but may take any ending (हादसे, गिरफ्तारी).
+HI_START = r"(?<![\u0900-\u097F])"
+AD_SENSITIVE_WORDS = re.compile(
+    r"\b(shootings?|shot (dead|at)|firing|gunfire|gunned|gunmen|murder\w*|kill(ed|ing|ings)?|stabb\w*|"
+    r"bomb\w*|blasts?|terror\w*|(?<!cardiac )arrest(s|ed)?|detain\w*|custody|bail|courts?|judges?|verdict|"
+    r"chargesheet|communal|riots?|sectarian|blasphemy|desecrat\w*|lynch\w*|stone-pelting|violen(ce|t)|clash(es)?|"
+    r"arson|accidents?|crash(es|ed)?|derail\w*|stampede|drown\w*|(building|bridge|roof|wall) collapsed?|"
+    r"hit-and-run)\b"
+    rf"|{HI_START}(गोली|फायरिंग|फ़ायरिंग|हत्या|हत्याकांड|मर्डर|चाकू|आतंक|धमाक|विस्फोट|गिरफ्तार|गिरफ़्तार|हिरासत|"
+    r"जमानत|ज़मानत|अदालत|कोर्ट|हाईकोर्ट|सुनवाई|सांप्रदायिक|दंगा|दंगे|हिंसा|हिंसक|झड़प|आगजनी|पथराव|हादस|दुर्घटना|"
+    r"भगदड़|डूबने|डूबकर)", re.I)
+AD_FRIENDLY_WORDS = re.compile(
+    r"\b(petrol|diesel|fuel prices?|gold (prices?|rates?)|GST|RBI|repo rate|EMI|loans?|tax(es)?|income tax|budget|"
+    r"inflation|prices?|rupee|jobs?|recruitment|vacanc(y|ies)|hiring|exams?|NEET|JEE|UPSC|SSC|CBSE|schemes?|yojana|"
+    r"pension|ration|subsidy|telecom|TRAI|5G|UPI|Aadhaar|new rules?|metro|highway|expressway|airport|bridge|"
+    r"infrastructure|ISRO|space (mission|agency|station)|satellite|science|research|summit|visits?|talks|"
+    r"agreement|trade deal|tariffs?|treaty|MoU|GDP|economy|Sensex|internet|broadband|projects?)\b"
+    rf"|{HI_START}(पेट्रोल|डीजल|डीज़ल|सोने-चांदी|सोना-चांदी|सोने (का|के|की) (भाव|दाम|कीमत)|जीएसटी|आरबीआई|"
+    r"रिज़र्व बैंक|रिजर्व बैंक|ईएमआई|लोन|टैक्स|आयकर|बजट|महंगाई|मुद्रास्फीति|कीमत|दाम|नौकरी|पदों पर भर्ती|"
+    r"भर्ती (परीक्षा|प्रक्रिया|अभियान)|परीक्षा|योजना|पेंशन|राशन|सब्सिडी|टेलीकॉम|यूपीआई|आधार कार्ड|नियम|मेट्रो|"
+    r"हाईवे|एक्सप्रेसवे|एयरपोर्ट|इसरो|अंतरिक्ष|सैटेलाइट|विज्ञान|दौरा|यात्रा|बातचीत|समझौत|शिखर सम्मेलन|टैरिफ|"
+    r"व्यापार|जीडीपी|अर्थव्यवस्था|सेंसेक्स|इंटरनेट|परियोजना)", re.I)
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
@@ -254,14 +285,47 @@ def demand(cand: dict) -> float:
     return DEMAND.get(cand.get("category"), DEMAND.get(cand.get("kind"), 1.0))
 
 
+def ad_text(cand: dict) -> str:
+    return " ".join([cand.get("title") or "", cand.get("story") or ""] + list(cand.get("headlines") or [])[:6]
+                    + list(cand.get("hindi_headlines") or [])[:6])
+
+
+def ad_class(cand: dict) -> str | None:
+    """"sensitive", "friendly" or None, for advertisers (see AD_SENSITIVE)."""
+    text = ad_text(cand)
+    if cand.get("category") in AD_SENSITIVE_KINDS or AD_SENSITIVE_WORDS.search(text):
+        return "sensitive"
+    return "friendly" if cand.get("category") in AD_FRIENDLY_KINDS or AD_FRIENDLY_WORDS.search(text) else None
+
+
+def ad_factor(cand: dict, at: datetime) -> float:
+    """AD_SENSITIVE or AD_FRIENDLY of the ranking, 1.0 for anything else and for breaking news."""
+    if is_breaking(cand, at):
+        return 1.0
+    return {"sensitive": AD_SENSITIVE, "friendly": AD_FRIENDLY}.get(ad_class(cand), 1.0)
+
+
+def ad_note(cands: list[dict], at: datetime | None = None) -> str | None:
+    """The health line naming the candidates ad_factor moved, kept apart from lineup's hold notes so it never
+    pushes one of them out of the health log."""
+    at = at or datetime.now(timezone.utc)
+    down = [c["id"] for c in cands if ad_factor(c, at) < 1]
+    up = [c["id"] for c in cands if ad_factor(c, at) > 1]
+    if not (down or up):
+        return None
+    return (f"ad-suitability x{AD_SENSITIVE} (crime, court, communal, accident; not breaking): "
+            f"{', '.join(down[:6]) or '-'}; x{AD_FRIENDLY} (economy, jobs, schemes, tech, science, "
+            f"diplomacy): {', '.join(up[:6]) or '-'}")[:400]
+
+
 def priority(cand: dict, at: datetime) -> float:
-    """Fame halved every half-life, times the India boost and the channel's own learned lift: what this desk would
-    lead with right now."""
+    """Fame halved every half-life, times the India boost, the channel's own learned lift, what Hindi viewers watch
+    and what advertisers accept: what this desk would lead with right now."""
     from . import learn
 
     half = HALF_LIFE_H.get(cand.get("kind"), HALF_LIFE_H.get(cand.get("category"), DEFAULT_HALF_LIFE_H))
     return cand.get("fame", 0) * 0.5 ** (age_hours(cand, at) / half) * boost(cand) * learn.factor(cand) \
-        * demand(cand) * (1 + TOP_WEIGHT * (cand.get("top_score") or 0))
+        * demand(cand) * ad_factor(cand, at) * (1 + TOP_WEIGHT * (cand.get("top_score") or 0))
 
 
 def unpopular(cand: dict, at: datetime) -> str | None:

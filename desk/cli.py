@@ -232,6 +232,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             health["steps"].append(f"trend radar errors: {found['trend_errors']}")
         ready, held = plan.lineup(found["candidates"])
         health["steps"] += held[:6]
+        if note := plan.ad_note(found["candidates"]):
+            health["steps"].append(note)
         if dry and not ready:
             # Outside the window a dry run previews the story the next live run would make first.
             now = datetime.now(timezone.utc)
