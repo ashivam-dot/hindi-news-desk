@@ -1,22 +1,22 @@
 {
- "at": "2026-10-21T20:16:39+00:00",
+ "at": "2026-10-21T20:57:03+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 5 uploads",
-  "watch: 17 candidates from 20 trending",
-  "outlets: 1283 headlines from 31 feeds (19 owners), 21 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-suspected-ied-explosion, nw-20261021-jantar-mantar-protest",
-  "explainers: 7 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q195616, kh-20261022-Q1209093, kh-20261022-Q7747; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Witkoff: fewer than 3 owners' headlines name it and the story; explainer Saurav Das Ashutosh / Das Ashutosh Ranka: no Wikipedia article that can be its centre",
+  "watch: 16 candidates from 19 trending",
+  "outlets: 1276 headlines from 31 feeds (19 owners), 20 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-suspected-ied-explosion, nw-20261021-jantar-mantar-protest",
+  "explainers: 7 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q1340361, kh-20261022-Q24204320, kh-20261022-Q317521; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Witkoff: fewer than 3 owners' headlines name it and the story; explainer Shashi Tharoor: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q141758443-2026w43: Orbitwire published (wk-Q141758443-2026w43), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261022-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261022-Q195616: too low in Google News India's top stories (place 0.27, needs 0.35)",
-  "hold nw-20261021-jantar-mantar-protest: outside 07:00-24:00 IST",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503', 'top stories: no Google News India list could be read (no story is ranked by place)']",
   "hold nw-20261019-tiger-shroff-attack-hurt: 7 of the case's Shorts on the channel, 6 at most",
   "hold nw-20261019-tiger-shroff-attack-earlier-attacks: 7 of the case's Shorts on the channel, 6 at most",
-  "drop kh-20261022-Q7747: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261021-jantar-mantar-protest, nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks, wk-Q141615137-2026w43, nw-20261021-suspected-ied-explosion; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q195616, kh-20261022-Q7747, kh-20261022-Q317521"
+  "hold nw-20261021-suspected-ied-explosion: outside 07:00-24:00 IST",
+  "hold nw-20261021-jantar-mantar-protest: outside 07:00-24:00 IST",
+  "hold kh-20261022-Q1340361: outside 07:00-24:00 IST",
+  "hold kh-20261022-Q324546: outside 07:00-24:00 IST",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks, nw-20261021-suspected-ied-explosion, nw-20261021-jantar-mantar-protest; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q317521, kh-20261022-Q7747, kh-20261022-Q24204320"
  ]
 }
