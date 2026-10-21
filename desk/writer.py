@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -27,6 +28,7 @@ from .spec import Beat, Fact, Short
 WORK = Path(__file__).resolve().parents[1] / "work"
 MIN_PHOTOS = 3
 REPORT_PHOTOS = 2  # the story's own photos for a kh- or nw- bulletin; desk/visuals.py adds who and where each beat names
+SETTING_PHOTOS = 1  # a story centred on a city or state keeps one of its photos
 # A kh- story about a person shows only their own photos: their school or birthplace says nothing about today's news
 # (Dhruv Rathee, 2026-10-17: seven of twelve frames were buildings). One photo is enough for a story this high in
 # Google News India's top stories (Abhijeet Dipke's detention led them for four days and failed 21 times on 1 photo).
@@ -809,13 +811,16 @@ def featured_face(img, seen: list[dict]) -> bool:
 
 def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None = None,
                 files: list[str] | None = None, exclude: set[str] | None = None, places: bool = False,
-                context_qids: list[str] | None = None) -> list[dict]:
+                context_qids: list[str] | None = None, recent: set[str] | None = None,
+                words: list[str] | None = None) -> list[dict]:
     """Downloaded photos as dicts with a "focus" box: for a person, only photos in which their face is matched.
     files: Commons files an editor chose instead of searching; exclude: files that may not be used; places: see
     media.find; context_qids: places and things the story links to, whose photos (with no featured face) fill in
     when the story has fewer than MIN_PHOTOS of its own: Commons first, then Openverse. A person needs at least one
-    photo of their own face."""
-    kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places) if title else []
+    photo of their own face. recent: files the channel's last Shorts showed, taken last; words: the story's own
+    words, whose photos of the person come first (media.find)."""
+    kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places,
+                       recent=recent, words=words) if title else []
     if len(kept) >= MIN_PHOTOS or files or not context_qids or (person and not kept):
         return kept
     return (kept + fill_photos(context_qids, folder, (exclude or set()) | {r["file"] for r in kept},
@@ -858,8 +863,30 @@ def caption_side(description: str | None, title: str) -> str | None:
     return m.group(1).lower() if m else None
 
 
+def story_words(headlines: list[str], name: str, most: int = 2) -> list[str]:
+    """The capitalised words at least two of the story's headlines share, besides the person's name and the big
+    names every story carries (Delhi, BJP): "Dussehra" for "PM Modi attends Dussehra celebrations in Delhi"."""
+    own = {w.lower() for w in re.findall(r"[A-Za-z]+", name)} | {"pm", "cm", "shri"}
+    seen = Counter()
+    for h in dict.fromkeys(headlines):
+        seen.update({w for w in re.findall(r"\b[A-Z][a-z]{3,}\b", h)
+                     if w.lower() not in own and w.lower() not in explain.INSTITUTIONS
+                     and w.lower() not in outlets.GENERIC and w.lower() not in media.GENERIC})
+    return [w for w, n in seen.most_common() if n >= 2][:most]
+
+
+def recent_photos() -> set[str]:
+    try:
+        from . import ledger
+
+        return ledger.recent_photos()
+    except Exception:
+        return set()
+
+
 def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None,
-                files: list[str] | None, exclude: set[str] | None, places: bool, limit: int = 10) -> list[dict]:
+                files: list[str] | None, exclude: set[str] | None, places: bool, limit: int = 10,
+                recent: set[str] | None = None, words: list[str] | None = None) -> list[dict]:
     import cv2
 
     if files:
@@ -867,8 +894,12 @@ def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
     else:
         # A person is always searched for: Tiger Shroff's Wikidata image and category gave one photo (of someone
         # else), a Commons search for his name gave nine of him (2026-10-20).
-        found = media.find(title, ent, limit=limit, extra_qids=extra_qids, exclude=exclude,
-                           search=bool(exclude) or person, places=places)
+        found = media.find(title, ent, limit=limit + (len(recent or ()) and 6), extra_qids=extra_qids,
+                           exclude=exclude, search=bool(exclude) or person or bool(recent), places=places,
+                           words=words if person else None)
+        found = sorted(found, key=lambda f: (f.origin != "story", f.file in (recent or ())))
+    if person:
+        found = [f for f in found if not media.NOT_PERSON.search(f"{f.file} {f.description}")]
     found = media.download(found, folder)
     rows = media.as_dicts(found)
     images = [cv2.imread(r["path"]) for r in rows]
@@ -885,8 +916,11 @@ def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
         r["others"] = sum(g is not f and g["box"][2] * g["box"][3] >= 0.25 * f["box"][2] * f["box"][3]
                           for g in seen) if f else 0
         kept.append(r)
-    # Strangers beside the person would be shown as part of today's story: their own portraits go first.
-    return sorted(kept, key=lambda r: r["others"] > 0)[:8]
+    # Photos of the person at the story's own occasion go first; then strangers beside the person would be shown as
+    # part of today's story, so their own portraits come before group photos; photos the channel's last Shorts
+    # showed go last.
+    return sorted(kept, key=lambda r: (r.get("origin") != "story", r["others"] > 0,
+                                       r.get("file") in (recent or ())))[:8]
 
 
 PERSON_CONTEXT = ("P19", "P69", "P108", "P54", "P463", "P166", "P800")  # birthplace, school, employer, team, ...
@@ -1229,11 +1263,13 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     name_hi = plain_name(name_hi, draft, name)
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
-    photos, views = visuals.direct(draft, photos, name if person else "", region == "india",
-                                   WORK / sid / "photos" / "cast", set((ov or {}).get("excluded_photos") or []),
-                                   tribute=kind == "death")
+    photos, views, cast = visuals.direct(draft, photos, name if person else "", region == "india",
+                                         WORK / sid / "photos" / "cast",
+                                         set((ov or {}).get("excluded_photos") or []), tribute=kind == "death",
+                                         recent=recent_photos())
     beats = [Beat(b["say"].strip(), "photo:" + "/".join(str(i) for i in (v or [b["photo"]])),
-                  {"big": b["caption"].strip(), "small": card_label(b.get("label"))})
+                  visuals.card_over({"big": b["caption"].strip(), "small": card_label(b.get("label"))},
+                                    v or [b["photo"]], cast))
              for b, v in zip(draft["beats"], views)]
     ground = source + "\n" + "\n".join(facts_text)
     in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
@@ -1262,7 +1298,7 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
         credit += "; रिपोर्टिंग: " + ", ".join(outlets.names(reports))
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
     scene = {"template": "full", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
-             "name_hi": name_hi, "subject_person": bool(person), "names": draft.get("names", []),
+             "name_hi": name_hi, "subject_person": bool(person), "names": draft.get("names", []), "cast": cast,
              "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
     if ov:
         scene["orbitwire"] = ov
@@ -1340,9 +1376,10 @@ def build_report(cand: dict) -> Short:
     name_hi = wiki.common_hindi(place) if place else None
     context = list(dict.fromkeys(([qid] if qid else []) + incident_context(place, [])))[:4] if place else []
     ov, exclude = _shared(cand, "", {}, None, context)
-    photos = fill_photos(context, work / "photos", exclude,
-                         scene=(name, outlets.scene_words(cand.get("headlines") or [cand["title"]], name)))[:8] \
-        if context else []
+    photos = visuals.fresh_first(
+        fill_photos(context, work / "photos", exclude,
+                    scene=(name, outlets.scene_words(cand.get("headlines") or [cand["title"]], name))),
+        recent_photos())[:8] if context else []
     if len(photos) < REPORT_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} (want {REPORT_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
@@ -1407,9 +1444,17 @@ def build_explainer(cand: dict) -> Short:
         raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles name {name}")
     context = person_context(ent) if person else incident_context(ent, [])
     ov, exclude = _shared(cand, title, ent, None, context)
+    words = story_words([cand.get("story") or ""] + list(cand.get("headlines") or []), name) if person else None
     photos = pick_photos(title, ent, work / "photos", person=person, exclude=exclude, places=not person,
-                         context_qids=None if person else context)
-    need = 1 if person and (cand.get("top_score") or 0) >= LEAD_SCORE else REPORT_PHOTOS
+                         context_qids=None if person else context, recent=recent_photos(), words=words)
+    setting = not person and bool(wiki.claims(ent, "P1082"))
+    if setting:
+        # A city's or state's article photos are its sights (a temple, a market, a rickshaw for the Modi Dussehra
+        # Short, 2026-10-21): never the news. One of them sets the scene; the people and places the script names
+        # fill the beats, and the gate still wants MIN_VISUALS different pictures.
+        photos = photos[:SETTING_PHOTOS]
+    lead = person and (cand.get("top_score") or 0) >= LEAD_SCORE
+    need = 1 if lead or setting else REPORT_PHOTOS
     if len(photos) < need:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {need})"
                          + (" not used by Orbitwire" if ov else ""))
@@ -1455,7 +1500,7 @@ def build_explainer(cand: dict) -> Short:
                            "Wikipedia से।",
                    cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person)
     short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
-                       min_photos=need, min_visuals=visuals.MIN_VISUALS - (need == 1))
+                       min_photos=need, min_visuals=visuals.MIN_VISUALS - lead)
     return short
 
 

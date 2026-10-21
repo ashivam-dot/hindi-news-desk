@@ -119,6 +119,7 @@ OWNERS = 3
 WINDOW_H = 24
 RESOLVE = 25
 CENTRES_TRIED = 2
+PERSON_LOOKS = 2  # further names tried for a person when the first centre found is a city or state
 LEAD_FEEDS = ("IN", "IN-nation", "IN-hi", "IN-hi-nation")
 LEAD_CAP = 8
 OWNER_CAP = 8
@@ -429,8 +430,10 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
         if len(c["owners"]) < OWNERS or looked >= RESOLVE:
             break
         titles = [i["title"] for i in c["items"]]
-        found, name, tried = None, None, []
-        for key in centres(c)[:CENTRES_TRIED]:
+        found, name, tried, setting = None, None, [], None
+        for n, key in enumerate(centres(c)[:CENTRES_TRIED + PERSON_LOOKS]):
+            if n >= CENTRES_TRIED and not setting:
+                break
             name = phrase(titles, key)
             if not name or (" " not in name and not name.isupper() and name.lower() in common
                             and name.lower() not in ALIASES):
@@ -448,8 +451,18 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
             except Exception as exc:
                 notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
                 continue
+            if found and not setting and wiki.claims(found[2], "P1082"):
+                # A city named in most headlines is where, not who: "PM Modi attends Dussehra in Delhi" was told
+                # about Delhi over its temples and markets (2026-10-21). A person the headlines name comes first.
+                setting, found = (found, name), None
+                continue
+            if found and setting and HUMAN not in {x["value"] for x in wiki.claims(found[2], "P31")}:
+                found = None
+                continue
             if found:
                 break
+        if not found and setting:
+            found, name = setting
         if not tried:
             notes.append(f"explainer {titles[0][:60]!r}: no name to tell it by")
             continue

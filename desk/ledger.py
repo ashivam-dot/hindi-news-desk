@@ -45,6 +45,28 @@ def published() -> list[dict]:
     return load("published", [])
 
 
+RECENT_PHOTOS_H = 96
+
+
+def recent_photos(hours: float = RECENT_PHOTOS_H) -> set[str]:
+    """Commons files the Shorts published in the last `hours` showed: a new Short takes others first."""
+    since = datetime.now(timezone.utc).timestamp() - hours * 3600
+    out: set[str] = set()
+    for r in published():
+        try:
+            at = datetime.fromisoformat(r["published_at"]).timestamp()
+        except (KeyError, TypeError, ValueError):
+            continue
+        if at >= since:
+            out.update(f for f in r.get("photos") or [] if isinstance(f, str))
+    return out
+
+
+def update_published(video_id: str, fields: dict) -> None:
+    """Add fields to a published row where it stands (the list's order is the publishing order)."""
+    save("published", [r | fields if r.get("video_id") == video_id else r for r in published()])
+
+
 def record_publish(entry: dict) -> None:
     rows = published()
     rows = [r for r in rows if r["id"] != entry["id"]] + [entry]

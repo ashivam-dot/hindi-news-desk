@@ -15,6 +15,7 @@ import io
 import logging
 import math
 import re
+from collections import Counter
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
@@ -31,6 +32,12 @@ PERSON_PHOTOS = 2
 # A named landmark (a station, a hospital, a beach: a place with no population) shows its own Commons photo, then
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
 SIGHT_PHOTOS = 1
+TOPIC_PHOTOS = 2
+WORN = 2  # beats a place may stand under before anything else its beat names goes first
+PLACE_LABELS = ("स्थल", "स्थान", "जगह", "इलाका", "शहर", "जिला", "ज़िला", "राज्य")
+PLACE_WORDS = {"मैदान", "स्टेशन", "अस्पताल", "थाना", "अदालत", "कोर्ट", "बीच", "जंक्शन", "मंदिर", "पार्क", "चौक", "बाजार",
+               "बाज़ार", "हवाई", "एयरपोर्ट", "जेल", "मार्ग", "नगर", "कॉलोनी", "गांव", "गाँव"}
+TITLE_BEATS = 2
 INDIA = "Q668"
 COUNTRY_KINDS = {"Q6256", "Q3624078", "Q7275"}
 POLICE = ("पुलिस",)
@@ -187,8 +194,38 @@ def resolve(en: str, india: bool) -> tuple[str, str, dict] | None:
         if media.place_like(ent) and not kinds(ent) & COUNTRY_KINDS:
             if india and INDIA not in {c["value"] for c in wiki.claims(ent, "P17")}:
                 continue
+            if title.lower().startswith(en.lower() + " "):
+                continue  # "Ramlila" (the play) found "Ramlila Maidan", a ground across Delhi from the event
             return qid, title, ent
     return None
+
+
+# What a "topic" the script names may be: a festival, a rite or a performance, pictured by its own Commons photos
+# (a Ramlila stage, Ravan's effigy burning). Never an organisation, a law or a work: their pictures are logos and
+# covers.
+TOPIC = re.compile(r"\b(festival|celebrat\w*|ritual|rite|folk|re-?enactment|drama\w*|theatre|dance|tradition\w*|"
+                   r"ceremony|procession|puja)\b", re.I)
+MAX_TOPICS = 2
+
+
+def resolve_topic(en: str) -> tuple[str, str, dict] | None:
+    """(QID, title, item) for the English Wikipedia article titled exactly `en` when it is a festival, rite or
+    performance."""
+    try:
+        page = wiki.page_info([en]).get(en) or {}
+        ent = wiki.entities([page["qid"]]).get(page["qid"]) if page.get("qid") else None
+    except Exception:
+        return None
+    return (page["qid"], page.get("title") or en, ent) if ent and topic_like(ent) else None
+
+
+def topic_like(ent: dict) -> bool:
+    """A festival, rite or performance. Ramlila's item carries coordinates; a real place is also located in a
+    district or has people."""
+    if wiki.HUMAN in kinds(ent) or wiki.DISAMBIGUATION in kinds(ent) or wiki.claims(ent, "P131") \
+            or wiki.claims(ent, "P1082"):
+        return False
+    return bool(TOPIC.search(((ent.get("descriptions") or {}).get("en") or {}).get("value", "")))
 
 
 def is_region(ent: dict) -> bool:
@@ -224,20 +261,70 @@ def mentions(say: str, cast: list[dict]) -> list[dict]:
     found = []
     for c in cast:
         hi, en = c.get("hi") or "", c.get("en") or ""
-        if (hi and hindi.contains(say, hi)) or (en and re.search(rf"\b{re.escape(en)}\b", say, re.I)):
-            at = say.find(hi) if hi and hi in say else len(say)
+        alias = next((a for a in c.get("alias") or [] if hindi.contains(say, a)), None)
+        if (hi and hindi.contains(say, hi)) or alias or (en and re.search(rf"\b{re.escape(en)}\b", say, re.I)):
+            word = hi if hi and hi in say else alias
+            at = say.find(word) if word and word in say else len(say)
             found.append((at, c))
     return [c for _, c in sorted(found, key=lambda x: x[0])]
 
 
+def surnames(cast: list[dict], subject_hi: str = "") -> None:
+    """Give each person their Hindi surname as an alias when no one else in the story carries it: scripts say
+    "फडणवीस" after "देवेंद्र फडणवीस", and two beats about him showed the Juhu map (2026-10-21). Shared surnames
+    (टाइगर, जैकी and कृष्णा श्रॉफ) stay full names only."""
+    last = [((c.get("hi") or "").split() or [""])[-1] for c in cast]
+    taken = Counter(w for c, w in zip(cast, last) if c.get("kind") == "person")
+    own = set(subject_hi.split())
+    for c, w in zip(cast, last):
+        if c.get("kind") == "person" and len(hindi.norm(w)) >= 3 and taken[w] == 1 and w not in own \
+                and len((c.get("hi") or "").split()) > 1:
+            c["alias"] = [w]
+
+
+def place_card(card: dict) -> bool:
+    """A card that names where something happened ("उत्सव मैदान / कार्यक्रम स्थल")."""
+    big, small = (card or {}).get("big", ""), (card or {}).get("small", "")
+    return bool(big) and (any(w in small for w in PLACE_LABELS) or big.split()[-1] in PLACE_WORDS)
+
+
+def card_over(card: dict, shown: list[int], cast: list[dict]) -> dict:
+    """A place card sits only over its place's own map or photo: the Modi rebuild put "उत्सव मैदान" over Delhi's
+    map. Over another place it names the place on screen; over no place it goes."""
+    if not place_card(card):
+        return card
+    places = [c for c in cast if c.get("kind") == "place" and set(c.get("photos") or []) & set(shown)]
+    if any(hindi.contains(card["big"], c["hi"]) or any(hindi.contains(card["big"], a) for a in c.get("alias") or [])
+           for c in places):
+        return card
+    return {**card, "big": places[0]["hi"]} if places else {}
+
+
+def titles(beats: list[dict], subject_hi: str) -> list[str]:
+    """The word the script puts before the story's person in TITLE_BEATS beats ("प्रधानमंत्री नरेन्द्र मोदी", "अभिनेता
+    टाइगर श्रॉफ"): a later "विजयदशमी पर प्रधानमंत्री ने ..." is about them, and the Modi rebuild showed Delhi's map
+    under it instead."""
+    first = hindi.norm((subject_hi.split() or [""])[0])
+    if not first:
+        return []
+    seen: Counter = Counter()
+    for b in beats:
+        words = [hindi.norm(w) for w in re.findall(r"[\u0900-\u097F]+", b.get("say") or "")]
+        seen.update({a for a, z in zip(words, words[1:]) if z == first and len(a) >= 3
+                     and a not in hindi.FUNCTION_WORDS and a not in NOT_A_FORCE})
+    return [w for w, n in seen.items() if n >= TITLE_BEATS]
+
+
 def _subject(en: str, subject_en: str) -> bool:
+    # A story about a place passes "" here: "" is in every name, and the Modi Dussehra Short (2026-10-21) lost
+    # Narendra Modi from its pictures that way.
     a, b = en.lower().strip(), subject_en.lower().strip()
-    return bool(a) and (a == b or a in b or b in a)
+    return bool(a and b) and (a == b or a in b or b in a)
 
 
 def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True) -> list[dict]:
     """The people and places the script names besides its subject, resolved: [{en, hi, kind, qid, title, ent}]."""
-    out, people, places, regions = [], 0, 0, 0
+    out, people, places, regions, topics = [], 0, 0, 0, 0
     for n in draft.get("names") or []:
         en, hi = (n.get("en") or "").strip(), (n.get("hi") or "").strip()
         if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out) \
@@ -247,6 +334,14 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True)
         if not said:
             continue
         found = resolve(en, india)
+        if found and topic_like(found[2]):
+            found = None  # Wikipedia's search returns the Ramlila article for "Ramlila, India" on some calls
+        if not found and places_too and topics < MAX_TOPICS:
+            if found := resolve_topic(en):
+                topics += 1
+                out.append({"en": en, "hi": hi, "kind": "topic", "qid": found[0], "title": found[1],
+                            "ent": found[2], "alias": [hi + "ओं"]})  # "देश भर में राम लीलाओं का मंचन"
+            continue
         if not found:
             continue
         qid, title, ent = found
@@ -293,10 +388,19 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
     shown_place: set[str] = set()
     routes = {tuple(c["pair"]): c for c in cast if c["kind"] == "route"}
     police = next((c for c in cast if c["kind"] == "police" and c["photos"]), None)
-    members = [c for c in cast if c["kind"] in ("person", "place") and c["photos"]]
+    members = [c for c in cast if c["kind"] in ("person", "place", "topic") and c["photos"]]
     scene = [c for c in members if c["kind"] == "place"]
     out: list[list[int]] = []
     prev: list[int] = []
+    # A place's wide map, close map and photo are one place on screen: the Kota court Short held Kota for six beats.
+    group = {i: id(c) for c in scene for i in c["photos"] + (c.get("near") or []) + (c.get("sight") or [])}
+
+    def stale(i: int) -> bool:
+        g = group.get(i)
+        return g is not None and len(out) >= 2 and all(g in {group.get(j) for j in v} for v in out[-2:])
+
+    def worn(c: dict) -> bool:
+        return sum(id(c) in {group.get(j) for j in v} for v in out) >= WORN
 
     def take(c: dict) -> int:
         pool = c["photos"]
@@ -317,7 +421,7 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         pool = [i for c in places for i in c["photos"] + (c.get("near") or []) + (c.get("sight") or [])]
         pool += [i for r in routes.values() for i in r["photos"]]
         pool = [i for i in dict.fromkeys(pool) if i != main and i not in prev]
-        return min(pool, key=lambda i: used.get(i, 0)) if pool else None
+        return min(pool, key=lambda i: (stale(i), used.get(i, 0))) if pool else None
 
     def own(avoid: set[int], wish: int | None = None) -> int | None:
         pool = [i for i in subject if i not in avoid] or [i for i in subject if i not in prev] or subject
@@ -343,10 +447,19 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         if route:
             options.append(route["photos"][0])
         options += [take(c) for c in people]
+        if k > 0 and person and not people and any(hindi.contains(say, w) for w in person) \
+                and (mine := own(set(prev), beat.get("photo"))) is not None:
+            # "प्रधानमंत्री नरेन्द्र मोदी ने दिल्ली में ..." shows him, with Delhi as the cut, not Delhi alone.
+            options.append(mine)
+        options += [take(c) for c in named if c["kind"] == "topic"]
         if police and any(w in say for w in POLICE) and not people and not other_force(say, police):
             # "पुलिस के अनुसार, ... सूरत" is the place's beat: the dry run put Mumbai Police under Surat and Kota.
             if not places or (police.get("hi") and hindi.contains(say, f"{police['hi']} पुलिस")):
                 options.append(take(police))
+        # A place already under WORN beats gives way to anything else the beat names: the Modi Dussehra rebuild put
+        # Delhi's map under five of six beats because every line said "दिल्ली में".
+        tired = [c for c in places if worn(c)] if [i for i in options if i is not None] else []
+        places = [c for c in places if c not in tired]
         for c in places:
             options += [sight(c)] + ([] if route else [take(c)])
         options = [i for i in dict.fromkeys(options) if i is not None]
@@ -359,7 +472,11 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
         if not options and not about:
             if police and any(w in say for w in ACCUSED) and not other_force(say, police):
                 options.append(take(police))
-            elif (i := scenery(scene, -1)) is not None:
+            elif (i := scenery(scene, -1)) is not None and not stale(i):
+                options.append(i)
+            elif police and not other_force(say, police):
+                options.append(take(police))
+            elif i is not None:
                 options.append(i)
         main = options[0] if options else own(set(prev), beat.get("photo"))
         if main is None:
@@ -367,6 +484,8 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
             continue
         rest = [i for i in options[1:] if i != main]
         cut = rest[0] if rest else (scenery(places or ([] if about else scene), main) if not people else None)
+        if cut is not None and not places and stale(cut):
+            cut = None
         if cut is None and about:
             cut = own({main})
         views = [main] + ([cut] if cut is not None and cut != main else [])
@@ -379,15 +498,22 @@ def assign(beats: list[dict], subject: list[int], cast: list[dict], first: int |
 
 # --- Direction --------------------------------------------------------------------------------------------------
 
-def _person_photos(c: dict, folder: Path, exclude: set[str]) -> list[dict]:
+def fresh_first(rows: list[dict], recent: set[str] | None) -> list[dict]:
+    """rows with the files the channel's last Shorts did not show first (a stable sort: the order is kept within
+    each group). Seven Tiger Shroff Shorts in a day opened on the same portraits."""
+    return sorted(rows, key=lambda r: r.get("file") in (recent or ()))
+
+
+def _person_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | None = None) -> list[dict]:
     from . import writer
 
-    rows = writer._own_photos(c["title"], c["ent"], folder, True, None, None, exclude, False, limit=5)
+    rows = writer._own_photos(c["title"], c["ent"], folder, True, None, None, exclude, False, limit=8,
+                              recent=recent)
     rows = [r for r in rows if not r.get("others")][:PERSON_PHOTOS] or rows[:1]
     return [r | {"who": c["hi"], "role": "person"} for r in rows]
 
 
-def _police_photos(city: dict, folder: Path, exclude: set[str]) -> list[dict]:
+def _police_photos(city: dict, folder: Path, exclude: set[str], recent: set[str] | None = None) -> list[dict]:
     """Commons photos of the police of the story's Indian city (its main image first), with no featured face."""
     import cv2
 
@@ -401,9 +527,9 @@ def _police_photos(city: dict, folder: Path, exclude: set[str]) -> list[dict]:
         return []
     if not ent or "police" not in (title or "").lower() or INDIA not in {c["value"] for c in wiki.claims(ent, "P17")}:
         return []
-    found = media.download(media.find(title, ent, limit=3, exclude=exclude), folder)
+    found = media.download(media.find(title, ent, limit=5, exclude=exclude), folder)
     out = []
-    for r in media.as_dicts(found):
+    for r in fresh_first(media.as_dicts(found), recent):
         img = cv2.imread(r["path"])
         if img is None or writer.featured_face(img, faces.detect(img)):
             continue
@@ -411,27 +537,32 @@ def _police_photos(city: dict, folder: Path, exclude: set[str]) -> list[dict]:
     return out[:2]
 
 
-def _sight_photos(c: dict, folder: Path, exclude: set[str]) -> list[dict]:
-    """A landmark's own Commons photos (its Wikidata image first), with no featured face, its name on screen."""
+def _sight_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | None = None,
+                  keep: int = SIGHT_PHOTOS) -> list[dict]:
+    """A landmark's (or a festival's) own Commons photos (its Wikidata image first), with no featured face, its name
+    on screen."""
     import cv2
 
     from . import faces, writer
 
-    found = media.download(media.find(c["title"], c["ent"], limit=2, exclude=exclude), folder)
+    found = media.download(media.find(c["title"], c["ent"], limit=keep + 2, exclude=exclude,
+                                      search=c.get("kind") == "topic"), folder)
     out = []
-    for r in media.as_dicts(found):
+    for r in fresh_first(media.as_dicts(found), recent):
         img = cv2.imread(r["path"])
         if img is None or writer.featured_face(img, faces.detect(img)):
             continue
         out.append(r | {"focus": None, "role": "place", "who": c["hi"]})
-    return out[:SIGHT_PHOTOS]
+    return out[:keep]
 
 
 def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder: Path,
-           exclude: set[str] | None = None, tribute: bool = False) -> tuple[list[dict], list[list[int]]]:
-    """(photos with the cast's pictures added, [main, cut] indices per beat). Network failures leave a beat on the
-    story's own photos. A tribute adds only the people it names: a life's places are not today's news (Dhruv
-    Rathee, 2026-10-17: seven of twelve frames were his school and birthplace)."""
+           exclude: set[str] | None = None, tribute: bool = False, recent: set[str] | None = None
+           ) -> tuple[list[dict], list[list[int]], list[dict]]:
+    """(photos with the cast's pictures added, [main, cut] indices per beat, the cast as {en, hi, kind, photos}).
+    Network failures leave a beat on the story's own photos. A tribute adds only the people it names: a life's
+    places are not today's news (Dhruv Rathee, 2026-10-17: seven of twelve frames were his school and birthplace).
+    recent: Commons files the channel's last Shorts showed, used only when nothing fresh is left."""
     exclude = set(exclude or ()) | {p["file"] for p in photos if p.get("file")}
     photos = list(photos)
     subject = list(range(len(photos)))
@@ -441,6 +572,8 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     except Exception as exc:
         log.warning("visuals: cast lookup failed (%s)", exc)
         cast = []
+    hi = next((n.get("hi") or "" for n in draft.get("names") or [] if n.get("en") == subject_en), "")
+    surnames(cast, hi)
 
     def add(rows: list[dict]) -> list[int]:
         start = len(photos)
@@ -458,14 +591,18 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         c["photos"], c["near"], c["sight"] = [], [], []
         try:
             if c["kind"] == "person":
-                c["photos"] = add(_person_photos(c, folder / f"cast-{c['qid']}", exclude))
+                c["photos"] = add(_person_photos(c, folder / f"cast-{c['qid']}", exclude, recent))
+                continue
+            if c["kind"] == "topic":
+                rows = _sight_photos(c, folder / f"topic-{c['qid']}", exclude, recent, keep=TOPIC_PHOTOS)
+                c["photos"] = add([r | {"role": "topic"} for r in rows])
                 continue
             site = wiki.coords(c["ent"])
             if not site:
                 continue
             if not is_region(c["ent"]) and not _population(c["ent"]):
                 try:
-                    c["sight"] = add(_sight_photos(c, folder / f"sight-{c['qid']}", exclude))
+                    c["sight"] = add(_sight_photos(c, folder / f"sight-{c['qid']}", exclude, recent))
                 except Exception as exc:
                     log.warning("visuals: no photo of %s (%s)", c["en"], exc)
             if outer := inside.get(c["en"]):
@@ -509,18 +646,21 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     cities.sort(key=lambda c: f"{c['en']} police".lower() not in named and not hindi.contains(said, f"{c['hi']} पुलिस"))
     for city in cities[:2] if india and any(w in said for w in POLICE) else []:
         try:
-            if rows := _police_photos(city, folder / f"police-{city['qid']}", exclude):
+            if rows := _police_photos(city, folder / f"police-{city['qid']}", exclude, recent):
                 extra.append({"kind": "police", "hi": city["hi"], "photos": add(rows)})
                 break
         except Exception as exc:
             log.warning("visuals: no police photo for %s (%s)", city["en"], exc)
     first = beats[0].get("photo") if beats and beats[0].get("photo") in subject else None
-    hi = next((n.get("hi") or "" for n in draft.get("names") or [] if n.get("en") == subject_en), "")
     person = [subject_en, *hi.split()[:1], *hi.split()[-1:]] if subject_en and not tribute else None
+    person = person and person + titles(beats, hi)
     views = assign(beats, subject, cast + extra, first, [w for w in person or [] if w] or None)
     log.info("visuals: %d pictures, %d distinct on screen, cast %s", len(photos),
              len({i for v in views for i in v}), [c["en"] for c in cast if c.get("photos")])
-    return photos, views
+    told = [{"en": c["en"], "hi": c["hi"], "kind": c["kind"],
+             "photos": c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]] + c.get("sight", []),
+             **({"alias": c["alias"]} if c.get("alias") else {})} for c in cast]
+    return photos, views, told
 
 
 def distinct(shots: list[str]) -> int:

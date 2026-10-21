@@ -19,7 +19,7 @@ from . import config, gate, ledger, learn, plan
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
 RETRYABLE = ("words (want", "does not confirm the death", "usable photos", "no draft passed", "came out garbled",
-             "orbitwire")
+             "orbitwire", "pictures:")
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")
@@ -130,6 +130,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
            "article": short.scene.get("article"), "qid": short.scene.get("qid"),
            "report_urls": report_urls(short),
            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
+           "photos": [p["file"] for p in short.scene.get("photos") or [] if p.get("file")],
            **{k: short.scene[k] for k in ("case", "case_story", "angle") if short.scene.get(k)}, **result}
     if old := short.scene.get("replaces"):
         row.update(replaces=old, remake_of=short.scene.get("remake_of"))
@@ -140,6 +141,30 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
             row["replace_error"] = f"{old}: {type(exc).__name__}: {exc}"[:300]
     ledger.record_publish(row)
     return result
+
+
+RETIRE = ROOT / "retire.json"
+
+
+def retire_listed(health: dict) -> None:
+    """Make private each upload retire.json lists ({"video_id", "why"}) that the ledger has not retired yet: a Short
+    the owner found wrong, whose story is too old to remake. A failure is noted and tried again next run."""
+    from . import youtube
+
+    specs = json.loads(RETIRE.read_text(encoding="utf-8")) if RETIRE.exists() else []
+    rows = ledger.published()
+    for s in specs:
+        row = next((r for r in rows if r.get("video_id") == s["video_id"]), None)
+        if row is None or row.get("retired_at"):
+            continue
+        try:
+            youtube.retire(s["video_id"])
+        except Exception as exc:
+            health["steps"].append(f"retire {s['video_id']}: {type(exc).__name__}: {exc}"[:300])
+            continue
+        ledger.update_published(s["video_id"], {"privacy": "private", "retired_at": ledger.now(),
+                                                "retired_why": s["why"]})
+        health["steps"].append(f"retired {s['video_id']}: {s['why']}"[:300])
 
 
 def _advisory(health: dict, dry: bool) -> dict | None:
@@ -191,6 +216,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                     health["steps"].append(f"learn: {learned['scored']} scored Shorts, lifts {learned['lifts']}"[:400])
             except Exception as exc:  # the numbers steer ranking; reading them must never stop a publish
                 health["steps"].append(f"learn: {type(exc).__name__}: {exc}"[:300])
+            retire_listed(health)
         if done := _advisory(health, dry):
             return done
         found = plan.watch(save=not dry)

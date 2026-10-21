@@ -212,7 +212,75 @@ def _story(short: Short) -> list[str]:
         problems.append(f"pictures: only {len({i for s in shown for i in s})} different ones on screen (want {want})")
     if "आवाज़: AI" not in compose.DISCLOSURE or "AI" not in compose.AI_BADGE:
         problems.append("end card: the AI-voice disclosure is missing")
+    return problems + said_is_shown(short)
+
+
+def said_is_shown(short: Short) -> list[str]:
+    """What the voice says is what the screen shows: a beat that names a person the Short has a photo of shows
+    them, and a person the title names is on screen. The Modi Dussehra Short (2026-10-21) named Narendra Modi in its
+    title and three beats and showed Delhi's temples and markets."""
+    problems = held(short)
+    beats = [(b.text, set(shot_photos(b.shot))) for b in short.beats if b.shot.startswith("photo:")]
+    on_screen = set().union(*(s for _, s in beats)) if beats else set()
+    for c in short.scene.get("cast") or []:
+        if c.get("kind") != "person":
+            continue
+        theirs = set(c.get("photos") or [])
+        in_title = bool(c.get("hi") and hindi.contains(short.title, c["hi"])) or \
+            bool(c.get("en") and re.search(rf"\b{re.escape(c['en'])}\b", short.title, re.I))
+        if in_title and not theirs & on_screen:
+            problems.append(f"pictures: the title names {c.get('en')} but no photo of them is on screen")
+        if not theirs:
+            continue
+        for n, (say, shown) in enumerate(beats, 1):
+            if visuals.mentions(say, [c]) and not theirs & shown and not _names_other_shown(say, shown, short):
+                problems.append(f"pictures: beat {n} names {c.get('en')} but shows someone or something else")
+    cast = short.scene.get("cast")
+    for n, b in enumerate(short.beats, 1):
+        if cast is not None and b.shot.startswith("photo:") and visuals.place_card(b.card) and \
+                visuals.card_over(b.card, shot_photos(b.shot), cast) != b.card:
+            problems.append(f"pictures: card {n} names the place {b.card['big']} over another picture")
     return problems
+
+
+HELD_RUN = 3  # beats in a row one picture may not fill
+
+
+def held(short: Short) -> list[str]:
+    """No picture stands under HELD_RUN beats in a row or under more than half of a Short's beats. A place's wide
+    and close maps count as one picture: the Kota court Short (2026-10-21) showed Kota's maps under six of seven
+    beats, the injured and the recovered motorcycle included."""
+    photos = short.scene.get("photos") or []
+
+    def key(i: int):
+        p = photos[i] if i < len(photos) else {}
+        return p.get("file") if visuals.is_map(p) else i
+
+    beats = [{key(i) for i in shot_photos(b.shot)} for b in short.beats if b.shot.startswith("photo:")]
+    problems, counts, run = [], {}, {}
+    for n, keys in enumerate(beats):
+        for k in keys:
+            counts[k] = counts.get(k, 0) + 1
+        run = {k: run.get(k, 0) + 1 for k in keys}
+        for k, r in run.items():
+            if r == HELD_RUN:
+                problems.append(f"pictures: {_label(k, photos)} stays on screen for {HELD_RUN} beats in a row")
+    for k, c in counts.items():
+        if len(beats) >= 5 and c * 2 > len(beats):
+            problems.append(f"pictures: {_label(k, photos)} is under {c} of {len(beats)} beats")
+    return problems
+
+
+def _label(k, photos: list[dict]) -> str:
+    return k if isinstance(k, str) else (photos[k].get("file") or f"photo {k}")
+
+
+def _names_other_shown(say: str, shown: set[int], short: Short) -> bool:
+    """The beat also names another person whose photo it shows (two people in one beat: one of them is enough)."""
+    for c in short.scene.get("cast") or []:
+        if c.get("kind") == "person" and set(c.get("photos") or []) & shown and visuals.mentions(say, [c]):
+            return True
+    return False
 
 
 def _reported(short: Short) -> list[str]:

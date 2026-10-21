@@ -16,7 +16,14 @@ from pathlib import Path
 from . import net, wiki
 
 COMMONS = "https://commons.wikimedia.org/w/api.php"
-FREE = re.compile(r"^(CC0|Public domain|PD\b|CC BY(-SA)? \d(\.\d)?( [a-z]{2,})?$|CC BY(-SA)?$)", re.I)
+# GODL-India: the Government of India's open licence (commercial use and adaptation allowed, attribution with the
+# licence's link, no implied endorsement). It covers PIB's and the PMO's photos, the only free photos of the Prime
+# Minister at the events the news is about (Commons, "Narendra Modi Dussehra": twelve, all GODL-India).
+FREE = re.compile(r"^(CC0|Public domain|PD\b|CC BY(-SA)? \d(\.\d)?( [a-z]{2,})?$|CC BY(-SA)?$|GODL-India$)", re.I)
+GODL_URL = "https://data.gov.in/government-open-data-license-india"
+# A likeness is not the person: the Modi Short's first "photo of him" was his Madame Tussauds wax figure.
+NOT_PERSON = re.compile(r"\b(wax|tussaud\w*|statue|figurine|figure at|mural|cut-?out|poster|hoarding|billboard|"
+                        r"painting|sketch|caricature|effigy|mask|graffiti|sculpture|bust of)\b", re.I)
 NOT_PHOTO = re.compile(r"(\.svg$|\.gif$|\.tiff?$|\blogo|signature|autograph|\bmap\b|map\.\w+$|locator|location|\bflag\b|coat of arms|"
                        r"\bicon\b|\bseal\b|emblem|chart|graph|diagram|insignia|\bplan\b|route|blank|wordmark|"
                        r"collage|montage)", re.I)
@@ -43,7 +50,8 @@ class Photo:
 
     @property
     def credit(self) -> str:
-        return f"फ़ोटो: {self.author} / {self.license} / {self.host}"
+        licence = f"{self.license} ({GODL_URL})" if self.license.upper() == "GODL-INDIA" else self.license
+        return f"फ़ोटो: {self.author} / {licence} / {self.host}"
 
 
 HIDDEN = re.compile(r"<(\w+)[^>]*display:\s*none[^>]*>.*?</\1>", re.I | re.S)
@@ -125,7 +133,8 @@ def _shoot(file: str) -> str:
 
 
 def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = None,
-         exclude: set[str] | None = None, search: bool = False, places: bool = False) -> list[Photo]:
+         exclude: set[str] | None = None, search: bool = False, places: bool = False,
+         words: list[str] | None = None) -> list[Photo]:
     """Up to `limit` usable photos: the Wikidata image first, then the article's own images, then its Commons category.
 
     Article and category files must name the story (the person's surname, the storm's name) in their file name or
@@ -135,9 +144,18 @@ def find(title: str, ent: dict, limit: int = 8, extra_qids: list[str] | None = N
     files naming the story. Without both, the ranking is exactly Orbitwire's (desk/orbitwire.py relies on that).
     places: also take photos from each related item's own article whose file name names that item (a city skyline,
     the airport's terminal), for an article so new that Commons has nothing of the event itself.
+    words: the story's own words ("Dussehra"): Commons files naming the subject and one of them come first, so a
+    Short about the Prime Minister at Dussehra shows him at Dussehra, not at a summit in Kazan.
     """
     keys = _keys(wiki.label(ent) or title) | _keys(title)
     ordered: list[tuple[str, str]] = []
+    name = re.sub(r"\s*\([^)]*\)$", "", title)
+    for w in words or []:
+        try:
+            ordered += [(f, "story") for f in _search_files(f"{name} {w}", limit=20)
+                        if _names(f, {w.lower()})]
+        except Exception:
+            pass
     for c in wiki.claims(ent, "P18"):
         ordered.append(("File:" + c["value"], "wikidata"))
     try:
@@ -297,7 +315,7 @@ def _usable(ordered: list[tuple[str, str]], keys: set[str], limit: int, shoot_ca
             continue
         if min(ii["width"], ii["height"]) < MIN_SIDE or ii.get("sha1") in hashes:
             continue
-        if origin in ("article", "category", "search") and not _names(f"{f} {desc}", keys):
+        if origin in ("article", "category", "search", "story") and not _names(f"{f} {desc}", keys):
             continue
         shoot = _shoot(f)
         if shoots.get(shoot, 0) >= shoot_cap:
