@@ -1,30 +1,32 @@
 # What this channel's own numbers say
 
-Updated 2026-10-20T23:38:51+00:00. Scored Shorts (views at 24 h): 56. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-21T02:56:51+00:00. Scored Shorts (views at 24 h): 57. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 43 views at 24 h.
 - category:aviation: x1.35 ranking lift (4 Shorts, typical 103 views)
-- category:court: x1.332 ranking lift (6 Shorts, typical 70 views)
-- category:news: x1.254 ranking lift (13 Shorts, typical 58 views)
-- region:india: x1.1 ranking lift (26 Shorts, typical 48 views)
-- region:world: x0.818 ranking lift (26 Shorts, typical 34 views)
-- category:world: x0.77 ranking lift (5 Shorts, typical 26 views)
-- category:economy: x0.769 ranking lift (5 Shorts, typical 26 views)
+- category:court: x1.337 ranking lift (6 Shorts, typical 70 views)
+- category:news: x1.26 ranking lift (13 Shorts, typical 58 views)
+- region:india: x1.105 ranking lift (26 Shorts, typical 48 views)
+- region:world: x0.819 ranking lift (27 Shorts, typical 34 views)
+- category:world: x0.773 ranking lift (5 Shorts, typical 26 views)
+- category:economy: x0.771 ranking lift (5 Shorts, typical 26 views)
 
 | Short | published | category | region | views now | views at 24 h |
 |---|---|---|---|---|---|
-| nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | 145 |  |
-| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 8 |  |
-| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 70 |  |
-| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 12 |  |
-| kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | 66 |  |
+| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | 0 |  |
+| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | 0 |  |
+| nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | 558 |  |
+| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | 10 |  |
+| nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | 75 |  |
+| kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | 13 |  |
+| kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | 68 |  |
 | nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | 78 |  |
 | kh-20261020-Q90 | 2026-10-20T06:58 | news | world | 12 |  |
-| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 32 |  |
+| kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | 35 |  |
 | kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | 9 |  |
-| nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 31 |  |
+| nw-20261018-tiger-shroff-attack | 2026-10-20T02:08 | attack | world | 31 | 31 |
 | kh-20261019-Q3634451 | 2026-10-19T14:58 | policy | india | 4 | 4 |
-| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 139 | 100 |
+| kh-20261019-Q140632219 | 2026-10-19T14:24 | court | india | 148 | 100 |
 | kh-20261019-Q468324 | 2026-10-19T09:11 | health | india | 31 | 23 |
 | kh-20261019-Q312781 | 2026-10-19T07:28 | court | world | 61 | 46 |
 | kh-20261019-Q1352 | 2026-10-19T03:55 | weather | india | 5 | 2 |
@@ -41,5 +43,3 @@ Baseline: a typical Short has 43 views at 24 h.
 | kh-20261017-Q468324 | 2026-10-17T02:15 | news | india | 56 | 55 |
 | kh-20261017-Q141681561 | 2026-10-17T01:46 | world | world | 17 | 16 |
 | kh-20261016-Q796994 | 2026-10-16T14:14 | economy | india | 14 | 14 |
-| kh-20261016-Q10218 | 2026-10-16T13:22 | news | india | 596 | 548 |
-| kh-20261016-Q7040049 | 2026-10-16T12:33 | economy | india | 21 | 21 |

@@ -1,28 +1,27 @@
 {
- "at": "2026-10-21T02:11:42+00:00",
+ "at": "2026-10-21T02:56:51+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "watch: 20 candidates from 20 trending",
-  "outlets: 1145 headlines from 31 feeds (19 owners), 12 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
-  "explainers: 10 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q3520790, kh-20261021-Q19867977, kh-20261021-Q16186720; dropped: explainer Durga Puja / Durga Puja: no Wikipedia article that can be its centre; explainer Witkoff: fewer than 3 owners' headlines name it and the story",
+  "learn: 57 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.35, 'typical_views_24h': 103}, 'category:economy': {'n': 5, 'lift': 0.771, 'typical_views_24h': 26}, 'category:news': {'n': 13, 'lift': 1.26, 'typical_views_24h': 58}, 'category:world': {'n': 5, 'lift': 0.773, 'typical_views_24h': 26}, 'category:court': {'n': 6, 'lift': 1.337, 'typical_views_24h': 70}, 'region:world': {'n': 27",
+  "watch: 20 candidates from 18 trending",
+  "outlets: 1144 headlines from 31 feeds (19 owners), 9 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261019-tiger-shroff-attack",
+  "explainers: 9 kh- stories (on): kh-20261021-Q1353, kh-20261021-Q139857349, kh-20261021-Q324546, kh-20261021-Q16186720; dropped: explainer Durga Puja / Durga Puja: no Wikipedia article that can be its centre; explainer Witkoff: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
-  "skip wk-Q3837943: Orbitwire published (wk-Q3837943), not high-profile enough to tell again",
-  "skip wk-Q438492: Orbitwire published (wk-Q438492), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q141615137-2026w43: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261021-Q4900687: too low in Google News India's top stories (place 0.06, needs 0.35)",
-  "drop kh-20261021-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261021-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
-  "drop kh-20261021-Q317521: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop wk-Q3424313: 86 h old and no longer trending live",
-  "published nw-20261019-tiger-shroff-attack-chase: https://www.youtube.com/shorts/gRk7pOiv28A"
+  "drop kh-20261021-Q4900687: too low in Google News India's top stories (place 0.24, needs 0.35)",
+  "drop kh-20261021-Q317521: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261021-Q19867977: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
+  "drop kh-20261021-Q51993: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q3424313: 87 h old and no longer trending live",
+  "published nw-20261019-tiger-shroff-attack-industry: https://www.youtube.com/shorts/v_VM8xDrJaw"
  ],
  "published": {
-  "video_id": "gRk7pOiv28A",
-  "url": "https://www.youtube.com/shorts/gRk7pOiv28A",
-  "youtube_title": "Tiger Shroff: फायरिंग के बाद अंधेरी स्टेशन पहुंचे थे हमलावर, छोड़ी बाइक #shorts #tigershroff",
+  "video_id": "v_VM8xDrJaw",
+  "url": "https://www.youtube.com/shorts/v_VM8xDrJaw",
+  "youtube_title": "Tiger Shroff: घर पहुंचे कृष्णा श्रॉफ, सुरक्षा पर उठे सवाल #shorts #tigershroff",
   "privacy": "public",
   "synthetic_declared": true
  }
