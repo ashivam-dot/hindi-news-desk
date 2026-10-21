@@ -43,6 +43,18 @@ def client(service: str = "youtube", version: str = "v3"):
     return build(service, version, credentials=creds, cache_discovery=False)
 
 
+def scopes() -> set[str] | None:
+    """The scopes the sign-in token lists, or None when it lists none (then only the API can tell)."""
+    raw = os.environ.get("YOUTUBE_OAUTH_JSON") or (TOKEN_FILE.read_text() if TOKEN_FILE.exists() else "")
+    try:
+        listed = json.loads(raw).get("scopes") if raw else None
+    except (ValueError, AttributeError):
+        return None
+    if isinstance(listed, str):
+        listed = listed.split()
+    return set(listed) if listed else None
+
+
 def check_identity(items: list[dict]) -> dict:
     """The channel the token signs in to, if and only if it is the configured one."""
     if not config.channel_id_ready():

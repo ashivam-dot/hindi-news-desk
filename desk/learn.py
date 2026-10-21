@@ -9,8 +9,10 @@ Everything lands in state/performance.json, with a readable state/LEARNINGS.md.
 Views say who clicked; how much of the Short they watched says whether the story held them. A video record that
 carries RETENTION_FIELD (YouTube Analytics' averageViewPercentage, 0-100+) adds a second score: a group's mean
 retention against the channel's, shrunk the same way by its own count, blended in at RETENTION_WEIGHT before the
-same LIFT_RANGE bounds. Nothing writes the field yet: the desk's sign-in reads the Data API's public counts only, and
-YouTube Analytics needs a token with the yt-analytics.readonly scope. Until a reader fills it, lifts are views alone.
+same LIFT_RANGE bounds. read_retention fills it (and engaged_views) from YouTube Analytics v2 for Shorts at least
+RETENTION_MIN_AGE old, through the desk's own sign-in. That needs the yt-analytics.readonly scope: without it (HTTP
+403, or a token that lists its scopes without it) nothing is filled, one health note says so, and lifts are views
+alone.
 """
 from __future__ import annotations
 
@@ -28,6 +30,11 @@ FEATURES = ("category", "region")
 RETENTION_FIELD = "avg_view_pct"
 RETENTION_WEIGHT = 0.5
 KEEP_SNAPSHOTS = 16
+ENGAGED_FIELD = "engaged_views"
+RETENTION_MIN_AGE = timedelta(days=3)  # YouTube Analytics' numbers settle about two days after the day they count
+ANALYTICS_SCOPE = "https://www.googleapis.com/auth/yt-analytics.readonly"
+ANALYTICS_METRICS = "views,engagedViews,averageViewPercentage"
+ANALYTICS_MAX = 200
 
 _cache: dict = {}
 
@@ -149,9 +156,57 @@ def report(perf: dict) -> str:
     return "\n".join(lines) + "\n"
 
 
-def refresh(at: datetime | None = None, force: bool = False, api=None) -> dict | None:
+def _status(exc: Exception) -> int | None:
+    status = getattr(getattr(exc, "resp", None), "status", None)
+    return int(status) if status is not None else None
+
+
+def read_retention(perf: dict, at: datetime, analytics=None) -> str | None:
+    """Fill RETENTION_FIELD and ENGAGED_FIELD for each video at least RETENTION_MIN_AGE old from YouTube Analytics
+    (dimensions=video). Returns one health note when it cannot (no scope, HTTP 403, an error), else None."""
+    from . import youtube
+
+    old = {vid: rec for vid, rec in perf.get("videos", {}).items()
+           if at - datetime.fromisoformat(rec["published_at"]) >= RETENTION_MIN_AGE}
+    if not old:
+        return None
+    if analytics is None:
+        scopes = youtube.scopes()
+        if scopes is not None and ANALYTICS_SCOPE not in scopes:
+            return "retention: the YouTube sign-in has no yt-analytics.readonly scope; avg_view_pct stays empty"
+        analytics = youtube.client("youtubeAnalytics", "v2")
+    ids = sorted(old, key=lambda v: old[v]["published_at"], reverse=True)[:ANALYTICS_MAX]
+    start = min(old[v]["published_at"][:10] for v in ids)
+    metrics = ANALYTICS_METRICS
+    while True:
+        try:
+            answer = analytics.reports().query(
+                ids="channel==MINE", startDate=start, endDate=at.date().isoformat(), metrics=metrics,
+                dimensions="video", filters="video==" + ",".join(ids), sort="-views", maxResults=len(ids)).execute()
+            break
+        except Exception as exc:
+            if _status(exc) == 400 and "engagedViews" in metrics:
+                metrics = metrics.replace("engagedViews,", "")  # a metric this channel's report does not offer
+                continue
+            if _status(exc) == 403:
+                return "retention: YouTube Analytics refused (HTTP 403, no yt-analytics.readonly scope); avg_view_pct stays empty"
+            return f"retention: {type(exc).__name__}: {exc}"[:300]
+    cols = [c["name"] for c in answer.get("columnHeaders", [])]
+    for row in answer.get("rows") or []:
+        got = dict(zip(cols, row))
+        rec = old.get(got.get("video"))
+        if rec is None:
+            continue
+        if isinstance(got.get("averageViewPercentage"), (int, float)):
+            rec[RETENTION_FIELD] = round(float(got["averageViewPercentage"]), 2)
+        if isinstance(got.get("engagedViews"), (int, float)):
+            rec[ENGAGED_FIELD] = int(got["engagedViews"])
+    return None
+
+
+def refresh(at: datetime | None = None, force: bool = False, api=None, analytics=None) -> dict | None:
     """Read the channel's numbers and relearn, at most once per REFRESH. Returns what was learned, or None if the
-    last read is still fresh."""
+    last read is still fresh. analytics: a YouTube Analytics v2 client (default: one from the desk's sign-in)."""
     from . import youtube
 
     at = at or datetime.now(timezone.utc)
@@ -172,8 +227,15 @@ def refresh(at: datetime | None = None, force: bool = False, api=None) -> dict |
             "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
             "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])
         rec["views_24h"] = views_at(rec["snapshots"], SCORE_AT_H)
+    try:
+        note = read_retention(perf, at, analytics)
+    except Exception as exc:  # retention steers the ranking; reading it must never stop the views
+        note = f"retention: {type(exc).__name__}: {exc}"[:300]
     perf["at"] = at.isoformat(timespec="seconds")
     perf["learned"] = learn(list(perf["videos"].values()))
+    perf["retention_note"] = note
+    if note:
+        perf["learned"]["retention_note"] = note
     ledger.save("performance", perf)
     (ledger.STATE / "LEARNINGS.md").write_text(report(perf), encoding="utf-8")
     return perf["learned"]

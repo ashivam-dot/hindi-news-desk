@@ -214,6 +214,8 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 learned = learn.refresh()
                 if learned is not None:
                     health["steps"].append(f"learn: {learned['scored']} scored Shorts, lifts {learned['lifts']}"[:400])
+                    if learned.get("retention_note"):
+                        health["steps"].append(learned["retention_note"])
             except Exception as exc:  # the numbers steer ranking; reading them must never stop a publish
                 health["steps"].append(f"learn: {type(exc).__name__}: {exc}"[:300])
             retire_listed(health)

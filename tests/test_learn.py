@@ -115,3 +115,84 @@ def test_refresh_keeps_a_records_retention(monkeypatch):
     monkeypatch.setattr(youtube, "recent", lambda api, ch: [{"id": "v0", "statistics": {"viewCount": "9"}}])
     learn.refresh(at=AT, api=object())
     assert ledger.load("performance", {})["videos"]["v0"][learn.RETENTION_FIELD] == 55.0
+
+
+class FakeHttpError(Exception):
+    def __init__(self, status):
+        super().__init__(f"HTTP {status}")
+        self.resp = type("Resp", (), {"status": status})()
+
+
+class FakeAnalytics:
+    """reports().query(...).execute() as YouTube Analytics v2 answers it, recording every query."""
+
+    def __init__(self, rows=(), fail=()):
+        self.rows, self.fail, self.queries = list(rows), list(fail), []
+
+    def reports(self):
+        return self
+
+    def query(self, **kw):
+        self.queries.append(kw)
+        return self
+
+    def execute(self):
+        if self.fail:
+            raise FakeHttpError(self.fail.pop(0))
+        names = self.queries[-1]["metrics"].split(",")
+        return {"columnHeaders": [{"name": "video"}] + [{"name": n} for n in names],
+                "rows": [[r["video"]] + [r[n] for n in names] for r in self.rows]}
+
+
+def channel_of(monkeypatch, ages_h):
+    rows = [{"id": f"s{i}", "video_id": f"v{i}", "category": "death", "region": "world",
+             "published_at": (AT - timedelta(hours=h)).isoformat()} for i, h in enumerate(ages_h)]
+    ledger.save("published", rows)
+    monkeypatch.setattr(youtube, "identity", lambda api: {})
+    monkeypatch.setattr(youtube, "recent", lambda api, ch: [{"id": r["video_id"], "statistics": {"viewCount": "50"}}
+                                                           for r in rows])
+
+
+def test_retention_is_read_from_youtube_analytics_for_shorts_three_days_old(monkeypatch):
+    channel_of(monkeypatch, [100, 80, 30])  # v2 is only 30 hours old
+    fake = FakeAnalytics([{"video": f"v{i}", "views": 50, "engagedViews": 40 - i, "averageViewPercentage": 61.25 + i}
+                          for i in range(3)])
+    learned = learn.refresh(at=AT, api=object(), analytics=fake)
+    q = fake.queries[0]
+    assert q["dimensions"] == "video" and q["metrics"] == "views,engagedViews,averageViewPercentage"
+    assert q["ids"] == "channel==MINE" and set(q["filters"][len("video=="):].split(",")) == {"v0", "v1"}
+    videos = ledger.load("performance", {})["videos"]
+    assert videos["v0"][learn.RETENTION_FIELD] == 61.25 and videos["v1"][learn.ENGAGED_FIELD] == 39
+    assert learn.RETENTION_FIELD not in videos["v2"]  # too young to count
+    assert "retention_note" not in learned
+
+
+def test_without_the_analytics_scope_retention_is_a_single_note_and_nothing_else(monkeypatch):
+    channel_of(monkeypatch, [100, 80])
+    fake = FakeAnalytics(fail=[403])
+    learned = learn.refresh(at=AT, api=object(), analytics=fake)
+    assert "403" in learned["retention_note"] and len(fake.queries) == 1
+    assert all(learn.RETENTION_FIELD not in v for v in ledger.load("performance", {})["videos"].values())
+    # A token that lists its scopes without the Analytics one is never sent to YouTube Analytics.
+    monkeypatch.setattr(youtube, "scopes", lambda: {"https://www.googleapis.com/auth/youtube.upload"})
+    monkeypatch.setattr(youtube, "client", lambda *a: pytest.fail("built an Analytics client"))
+    learned = learn.refresh(at=AT + learn.REFRESH, api=object())
+    assert "no yt-analytics.readonly scope" in learned["retention_note"]
+
+
+def test_a_report_without_engaged_views_still_gives_retention(monkeypatch):
+    channel_of(monkeypatch, [100])
+    fake = FakeAnalytics([{"video": "v0", "views": 50, "averageViewPercentage": 48.0}], fail=[400])
+    learn.refresh(at=AT, api=object(), analytics=fake)
+    assert fake.queries[-1]["metrics"] == "views,averageViewPercentage"
+    rec = ledger.load("performance", {})["videos"]["v0"]
+    assert rec[learn.RETENTION_FIELD] == 48.0 and learn.ENGAGED_FIELD not in rec
+
+
+def test_token_scopes_are_read_when_the_token_lists_them(monkeypatch):
+    monkeypatch.setenv("YOUTUBE_OAUTH_JSON", '{"scopes": ["a", "b"]}')
+    assert youtube.scopes() == {"a", "b"}
+    monkeypatch.setenv("YOUTUBE_OAUTH_JSON", '{"scopes": "a b"}')
+    assert youtube.scopes() == {"a", "b"}
+    monkeypatch.setenv("YOUTUBE_OAUTH_JSON", '{"refresh_token": "x"}')
+    assert youtube.scopes() is None
