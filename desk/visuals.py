@@ -260,15 +260,22 @@ def within(places: list[dict]) -> dict[str, dict]:
 
 def mentions(say: str, cast: list[dict]) -> list[dict]:
     """The cast members a beat names, in the order it names them."""
+    return [c for _, c in located(say, cast)]
+
+
+def located(say: str, cast: list[dict]) -> list[tuple[int, dict]]:
+    """(where in say, member) for each cast member the beat names, in the order it names them: the matcher cuts on
+    the word that names the second picture (SYNC-AUDIT 4.1 step 2), so the offset is kept, spelling differences
+    aside ("मुंबई" for "मुम्बई")."""
     found = []
     for c in cast:
         hi, en = c.get("hi") or "", c.get("en") or ""
-        alias = next((a for a in c.get("alias") or [] if hindi.contains(say, a)), None)
-        if (hi and hindi.contains(say, hi)) or alias or (en and re.search(rf"\b{re.escape(en)}\b", say, re.I)):
-            word = hi if hi and hi in say else alias
-            at = say.find(word) if word and word in say else len(say)
-            found.append((at, c))
-    return [c for _, c in sorted(found, key=lambda x: x[0])]
+        at = [hindi.find(say, w) for w in [hi, *(c.get("alias") or [])] if w]
+        at = [a for a in at if a >= 0]
+        m = re.search(rf"\b{re.escape(en)}\b", say, re.I) if en else None
+        if at or m:
+            found.append((min(at) if at else m.start(), c))
+    return sorted(found, key=lambda x: x[0])
 
 
 def surnames(cast: list[dict], subject_hi: str = "") -> None:

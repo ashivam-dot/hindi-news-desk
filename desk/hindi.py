@@ -152,6 +152,22 @@ def contains(haystack: str, needle: str) -> bool:
     return False
 
 
+def find(haystack: str, needle: str) -> int:
+    """Where in haystack (its own characters) needle first starts as whole words, spelling differences aside, or
+    -1: a cut lands on the word that names its picture, and norm() changes lengths (मुम्बई is मुंबई)."""
+    n = norm(needle)
+    if not n:
+        return -1
+    h = haystack or ""
+    starts = [i for i in range(len(h)) if _letter(h[i]) and (i == 0 or not _letter(h[i - 1]))]
+    ends = [j for j in range(1, len(h) + 1) if _letter(h[j - 1]) and (j == len(h) or not _letter(h[j]))]
+    for i in starts:
+        for j in ends:
+            if j > i and norm(h[i:j]) == n:
+                return i
+    return -1
+
+
 FUNCTION_WORDS = {norm(w) for w in (
     "और का की के को ने में से पर है हैं था थी थे ही भी तो यह वह वे वो इस उस इन उन उन्हें उनके उनकी उनका उन्होंने "
     "किया गया गई गए हो कर लिए जो बहुत साथ बाद").split()}
