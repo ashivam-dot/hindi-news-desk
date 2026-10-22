@@ -1,9 +1,10 @@
 """What the channel's own numbers say, fed back into the desk.
 
 Every REFRESH the scheduled run reads each published Short's views, likes and comments, scores it by its views at
-SCORE_AT_H hours, and compares story categories and regions with the channel's baseline. The desk multiplies a
-candidate's priority by the learned lift of its category and region. A lift needs MIN_SAMPLES scored Shorts, is
-shrunk toward 1 by n / (n + PRIOR) and stays within LIFT_RANGE, so a couple of lucky uploads cannot steer the desk.
+SCORE_AT_H hours, and compares story categories, regions and lanes (plan.lane_of) with the channel's baseline. The
+desk multiplies a candidate's priority by the learned lift of its category, region and lane (a sensitive case's lift
+never above 1). A lift needs MIN_SAMPLES scored Shorts, is shrunk toward 1 by n / (n + PRIOR) and stays within
+LIFT_RANGE, so a couple of lucky uploads cannot steer the desk.
 Everything lands in state/performance.json, with a readable state/LEARNINGS.md.
 
 Views say who clicked; how much of the Short they watched says whether the story held them. A video record that
@@ -34,7 +35,10 @@ SCORE_AT_H = 24.0
 MIN_SAMPLES = 4
 PRIOR = 4.0
 LIFT_RANGE = (0.75, 1.35)
-FEATURES = ("category", "region")
+FEATURES = ("category", "region", "lane")
+# Sensitive cases are never the reason to scale (audit/kyun-hua-shorts-strategy.md §2): their lift stops at 1.
+NEVER_SCALED = ("lane:sensitive",)
+SHOWN = ("audience",)  # in the LEARNINGS.md table, never a lift
 RETENTION_FIELD = "avg_view_pct"
 RETENTION_WEIGHT = 0.5
 KEEP_SNAPSHOTS = 32  # hourly under YOUNG_H, one per REFRESH to two days, four later: 29 at most
@@ -134,7 +138,8 @@ def learn(videos: list[dict]) -> dict:
             if (held := retention.get(f"{feature}:{value}")) is not None:
                 diff = (1 - RETENTION_WEIGHT) * diff + RETENTION_WEIGHT * held["diff"]
                 entry |= {"n_retention": held["n"], "typical_view_pct": held["typical"]}
-            lift = min(max(math.exp(diff), LIFT_RANGE[0]), LIFT_RANGE[1])
+            top = 1.0 if f"{feature}:{value}" in NEVER_SCALED else LIFT_RANGE[1]
+            lift = min(max(math.exp(diff), LIFT_RANGE[0]), top)
             out["lifts"][f"{feature}:{value}"] = {"n": n, "lift": round(lift, 3)} | entry
     return out
 
@@ -190,12 +195,12 @@ def report(perf: dict) -> str:
                      f"{held})")
     if not learned.get("lifts"):
         lines.append("- No lift yet: not enough scored Shorts per group. The desk ranks on fame and freshness alone.")
-    lines += ["", "| Short | published | " + " | ".join(FEATURES) + " | views now | views at 6 h | views at 24 h |",
-              "|---" * (len(FEATURES) + 5) + "|"]
+    lines += ["", "| Short | published | " + " | ".join(FEATURES + SHOWN)
+              + " | views now | views at 6 h | views at 24 h |", "|---" * (len(FEATURES + SHOWN) + 5) + "|"]
     for v in sorted(perf.get("videos", {}).values(), key=lambda v: v["published_at"], reverse=True)[:30]:
         now = v["snapshots"][-1]["views"] if v.get("snapshots") else ""
         at6, at24 = ("" if v.get(f) is None else round(v[f]) for f in ("views_6h", "views_24h"))
-        cells = " | ".join(str(v.get(f) or "") for f in FEATURES)
+        cells = " | ".join(str(v.get(f) or "") for f in FEATURES + SHOWN)
         lines.append(f"| {v['id']} | {v['published_at'][:16]} | {cells} | {now} | {at6} | {at24} |")
     return "\n".join(lines) + "\n"
 
@@ -307,7 +312,7 @@ def read_traffic(perf: dict, at: datetime, analytics=None) -> str | None:
 def _snapshot(perf: dict, row: dict, s: dict, at: datetime) -> None:
     rec = perf["videos"].setdefault(row["video_id"], {"id": row["id"], "published_at": row["published_at"],
                                                       "snapshots": []})
-    rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES})
+    rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES + SHOWN})
     rec["snapshots"] = _thin(rec["snapshots"] + [{
         "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
         "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])
@@ -335,7 +340,7 @@ def refresh(at: datetime | None = None, force: bool = False, api=None, analytics
     """Read the channel's numbers and relearn, at most once per REFRESH. Returns what was learned, or None if the
     last read is still fresh (the Shorts under YOUNG_H old are snapshotted then all the same). analytics: a YouTube
     Analytics v2 client (default: one from the desk's sign-in)."""
-    from . import youtube
+    from . import plan, youtube
 
     at = at or datetime.now(timezone.utc)
     perf = ledger.load("performance", {"at": None, "videos": {}})
@@ -346,7 +351,7 @@ def refresh(at: datetime | None = None, force: bool = False, api=None, analytics
     if api is None:
         api = youtube.client()
     stats = {v["id"]: v.get("statistics", {}) for v in youtube.recent(api, youtube.identity(api))}
-    for row in ledger.published():
+    for row in plan.backfill_lanes(ledger.published()):  # rows from before 2026-10-22 have no lane of their own
         vid = row.get("video_id")
         if not vid or vid not in stats or _age_h(row, at) < 0:
             continue

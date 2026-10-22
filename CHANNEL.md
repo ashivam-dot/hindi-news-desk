@@ -148,13 +148,14 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   headline under 24 hours old). Wikipedia's most-read list is a day behind and never keeps an old story alive.
 - **Only the big stories, told properly and on time (owner, 2026-10-21: "No need to cover each and every incidents
   but those which are really high profile cases or incidents those should be cover properly on time with max
-  efforts").** Regular Shorts go out 07:00–24:00 IST, at most six an IST day (`plan.MAX_PER_DAY`), at least 20
-  minutes apart; breaking news and a case's angles may take two more (`BREAKING_EXTRA`). The cap counts the Shorts
+  efforts").** Regular Shorts go out 07:00–24:00 IST, at most four an IST day (`plan.MAX_PER_DAY`, six until
+  2026-10-22), at least 90 minutes apart (`plan.MIN_GAP`, 20 until 2026-10-22); breaking news and a case's angles
+  may take two more (`BREAKING_EXTRA`), so six at most. The cap counts the Shorts
   still on the channel (`plan.on_channel`): a retired Short frees its slot and a Short and its remake count once (on
-  21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). Before 18:00 IST
-  the regular lane and case angles stop at four (`EVENING_RESERVE`), so two slots wait for the evening; breaking
-  news is never held for it. Case angles are held too on purpose: they count toward the same four, and if they
-  could fill the day before 18:00 the evening would again find the cap used up. Every story must be high in
+  21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). No story is held
+  for a posting slot (the evening reserve that kept two slots for after 18:00 IST is gone): the hour's weight
+  (`plan.SLOT_WEIGHT`, 06:00–09:00 and 18:00–20:00 IST preferred, 12:00–14:00 avoided) only orders the Shorts
+  ready at once, and every weight is a hypothesis for the scorecard. Every story must be high in
   Google News India's top stories (`MIN_PLACE`, about the top 13), and a kind Hindi viewers rarely watch
   (`plan.DEMAND` under 0.8: protests, science, conflict, economy, diplomacy, world) about the top 6. The ranking is
   multiplied by `plan.DEMAND`: crime and security interest 84% of Hindi news users and entertainment 75%, business
@@ -192,9 +193,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   the item most of them used, if it still passes the same checks.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
-  hour with no gap, up to two beyond the daily cap of six (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
-  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included, and the regular and case lanes
-  stop two uploads short of it, so however many Shorts were retired the last two uploads of the day stay free for
+  hour with no gap, up to two beyond the daily cap of four (`BREAKING_EXTRA`; YouTube refuses this channel's uploads
+  past about ten a day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included, and the regular
+  and case lanes stop two uploads short of it (`UPLOAD_RESERVE`, its own switch since 2026-10-22), so however many Shorts were retired the last two uploads of the day stay free for
   breaking news; the margin also covers YouTube counting a different day from the desk's IST day). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
@@ -211,14 +212,19 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   detention led Google News India for four days and failed 21 times on "1 photo (want 2)", and the Kolkata pandal
   stampede (19 dead) never became a candidate. So:
   - an explainer must be in Google News India's top stories (its headline-count fame never makes it "famous"), and a
-    world explainer must be in the Hindi lists (IN-hi, IN-hi-nation);
+    world statement, politics or diplomacy story (any explainer from abroad, or a radar story filed under politics,
+    diplomacy or world) needs an India connection (`plan.foreign_only`, through `orbitwire.india_connection`: an
+    India link, Hindi lead stories naming its centre, or India in its headlines), however famous and even when the
+    lists are unreadable. World deaths, air incidents, storms, quakes, floods and disasters (`plan.WORLD_KEPT`) and a
+    case's angles are told without one (2026-10-22: they drew 99-310 views against a 41 baseline; foreign
+    statements a median of 16). This replaces the older "a world explainer must be in the Hindi lists" rule;
   - follow-up parts were off from 2026-10-18 (every part 2 drew 4-8 views) and are back on from 2026-10-20 (owner:
     "this tiger shrof case is in very lime light you can cover multiple sories of it with facts"): a story Google
     News India leads with (`plan.SERIES_SCORE`) gets up to `plan.SERIES_PARTS` Shorts in all, `plan.SERIES_GAP`
     apart, each from at least two owners' reports no earlier version used, kh- and nw- stories alike;
   - a case the whole country is following gets a case file (`cases/*.json`): one Short per angle (the family's
     response, the industry's, the probe, the government's, the scene), each from reports chosen for that angle,
-    ahead of the other ready stories and inside the daily cap and the 20-minute gap. A case Short names only the
+    ahead of the other ready stories and inside the daily cap and the 90-minute gap. A case Short names only the
     people, places and bodies its file lists (`writer.off_case`): an accused is never named, only how many, where
     they are from, where they were caught and what police say. The file's `never` list (an accused's or a gang's
     name, in English and Hindi) may not appear anywhere in the script, and headlines carrying one are dropped. Its
@@ -250,13 +256,19 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   on 21 Oct 2026 they started about 40 minutes apart (10:37, 11:17 ... 17:34, 18:07 UTC), so a made story can wait
   that long for the next run.
 - **The channel's own numbers steer the ranking (`desk/learn.py`).** Every 3 hours a run reads each Short's views
-  and scores it by its views at 24 h; a category or region with at least four scored Shorts gets a lift, shrunk
+  and scores it by its views at 24 h; a category, region or lane with at least four scored Shorts gets a lift, shrunk
   toward 1 and kept within 0.75-1.35, that multiplies its stories' priority (`state/performance.json`,
   `state/LEARNINGS.md`). Between those reads every run also reads the Shorts under 12 hours old (`learn.snapshot_young`,
   one `videos.list` call, 1 unit, none when no Short is that young). `views_6h` and `views_24h` are each set once,
   the first time the snapshots can tell them, and never recomputed; a 6-hour read needs a snapshot by 12 hours and
   is never scaled back from a later one. Snapshots are thinned to the first of each hour under 12 hours, then one
-  per 3 hours to two days, then the newest four (at most 32, the earliest kept). A video record that carries `avg_view_pct` (YouTube Analytics' average percentage viewed)
+  per 3 hours to two days, then the newest four (at most 32, the earliest kept).
+  Every story carries a lane (`plan.lane_of`, 2026-10-22: sensitive, obituary, breaking,
+  paisa, rajneeti, naam-niyam or other, the first that fits) and an audience (`plan.audience_of`: india when the
+  story is India's or a Google News India Nation section leads with it, else world; `region` is unchanged), set in
+  `plan.watch` and kept in the published row with its priority and series. A sensitive case's lift never goes
+  above 1: it is never the reason to scale. Rows from before lanes are labelled the same way when read
+  (`plan.backfill_lanes`; `tools/backfill_lanes.py --write` writes it into the ledger once). A video record that carries `avg_view_pct` (YouTube Analytics' average percentage viewed)
   adds retention, shrunk the same way and blended in at half weight. `learn.read_retention` fills it and
   `engaged_views` from YouTube Analytics v2 (`dimensions=video`, `metrics=views,engagedViews,averageViewPercentage,
   averageViewDuration,subscribersGained,likes,shares`) through the desk's own sign-in, only for Shorts at least
@@ -602,3 +614,6 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 | 2026-10-22 | Gating metrics (strategy P0-1): the retention query also reads plays, seconds watched, subscribers gained, likes and shares per Short; a metric the report refuses (HTTP 400) is dropped alone and listed, never views or average percentage viewed; traffic sources (`insightTrafficSourceType`) for at most 30 Shorts a run, three to 28 days old, each at most daily. Read-only; nothing in the ranking uses them yet. | No per-video subscriber or traffic data existed: the 14-day rules (engaged share, subscribers per 1K engaged views, traffic mix) could not be computed from the state branch. Channel Doctor issue #2 (data to 2026-10-20): 20 subscribers, 1.88 per 1K engaged views, only 3 videos ever gained one. The old 400 fallback could only drop `engagedViews`, so one refused new metric would have lost retention for every Short. `audit/kyun-hua-shorts-strategy.md` §1, §6, §10. |
 | 2026-10-22 | Frozen reads (strategy P0-5): Shorts under 12 hours old are read every run between the 3-hourly reads (one 1-unit `videos.list`); `views_6h` and `views_24h` are set once and never recomputed, and a 6-hour read is never guessed from a snapshot after 12 hours; snapshots are thinned hourly under 12 hours, 3-hourly to two days, newest four after, at most 32 (was 16, cut from the earliest end). The 6-hour read is logged only: nothing ranks or holds on it yet. | `_thin` kept the newest 16 snapshots, so a Short past two days (up to 16 three-hourly reads, plus up to four later ones) lost its earliest points and `views_24h`, recomputed every read, drifted; the momentum read had 21 readings, all from 19–20 Oct, 3 of them 30 or more. Runs start about 40 minutes apart (CHANNEL.md, 21 Oct), so hourly thinning keeps nearly every young read. `audit/kyun-hua-shorts-strategy.md` §1, §5, §10. |
 | 2026-10-22 | Scorecard (strategy P0-10): `desk/review.py` writes `state/REVIEW.md` once per IST day after `learn.refresh`, by lane, variant, slot and rank in day, with SCALE / HOLD / CUT / STOP or "n<10: no verdict"; sensitive cases on their own line, out of the other breakdowns, never SCALE; read-only, an error never fails the run. Lanes and variants come from the ledger (P0-6, P1-7); until then every row is `unlabelled` and a case angle `sensitive`. The cadence rule and the Studio "viewed vs swiped away" read stay with the reviewer. | §6 needs one authoritative file. Run against the state branch (01b47d0) at 2026-10-22 06:00 UTC: 66 Shorts with a 24-hour read, baseline 45 with the Tiger Shroff case left out; slot medians 06-08 55 (n=10), 08-09 73 (4), 09-12 35 (13), 12-14 27 (7), 14-18 44 (17), 18-20 64 (8, sensitive left out), 20-24 34 (5), matching the strategy's hour table; rank 5+ median 34 (n=25) against 50-55 for ranks 1-3; engaged share is empty until the first Analytics read stores plays. No verdict changes a constant. |
+| 2026-10-22 | P0-8, the world rule narrowed: a story from abroad with no India connection (`orbitwire.india_connection`) is dropped only when it is a statement (any explainer), politics, diplomacy or a "world" story (`plan.foreign_only`, checked first in `plan.unpopular`, so neither fame nor unreadable lists keep it); world deaths, air incidents, storms, quakes, floods, accidents and disasters (`plan.WORLD_KEPT`) and case angles are told without one. The old branch (a world explainer must be in the Hindi lists) is deleted, not stacked: Hindi lead stories naming an explainer's centre already make its `india_link`. A story of no known region is not judged by it. | State branch, 2026-10-21 (74 rows): foreign statements median 16 views, White House, Pope and Starlink statements 0-35; world deaths, air incidents and storms 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane Isaias 104). No view or earnings promise is made. |
+| 2026-10-22 | P0-7, cadence: at most four routine Shorts an IST day (`plan.MAX_PER_DAY`, was six) and 90 minutes apart (`plan.MIN_GAP`, was 20; case angles on the spare slots wait it too); breaking news and case angles keep two more (`BREAKING_EXTRA`), so six at most. The YouTube-limit reserve is its own switch (`UPLOAD_RESERVE`=2, was `BREAKING_EXTRA`). `EVENING_RESERVE` is removed, not kept at 1: holding a ready story for 18:00 IST is the slot hold the owner's "timing is the channel" rules out, and with a cap of four it would have held half the day. `plan.SLOT_WEIGHT` (06:00-09:00 and 18:00-20:00 IST x1.2, 12:00-14:00 x0.8) is recorded on every ready Short and is the last sort key in `plan.lineup`, never a hold; every Short ready in one run shares that run's hour, so it cannot reorder them by itself: it is a hypothesis the scorecard reads from the hour. | State branch, 2026-10-21 (74 rows): 7.9 Shorts a day for 15-21 Oct; days with 6 or fewer Shorts median 64 views vs 36.7 on days with 8-10; Shorts 1-4 of a day median 55, the 5th or later 35.7. Median at 24 h by IST hour: 06-08 55 (n=10), 08-09 73 (4), 09-12 35 (13), 12-14 27 (7), 14-18 44 (17), 18-20 88.8, 63.5 without Tiger (9), 20-24 34 (5): 4-17 Shorts a bucket, a hypothesis only. No view or earnings promise is made. |
+| 2026-10-22 | P0-6, lanes and audience: `plan.lane_of` labels every story sensitive (attack, explosion or war, or shooting, firing, murder, stabbing, bomb, terror, riot or communal words), obituary, breaking (breaking news, or an incident that is not a protest or politics), paisa (petrol, gold, GST, RBI, repo, EMI, fares, schemes, exams, new rules; not WPI, IMF or Sensex), rajneeti (politics, or a row word with a political side: "dig at", घेरा, इस्तीफे की मांग with सरकार, BJP, मंत्रालय), naam-niyam (an India-audience person, court, film or sport story) or other, the first that fits; `plan.audience_of` is india for India's own stories (`orbitwire.india_connection`) or a Nation section's lead (IN-nation, IN-hi-nation), else world. A front page alone is not enough: it led with the Pope (IN 14, IN-hi 9). `region` is unchanged. Both are set in `plan.watch` before ranking and kept with `priority` and `series` in the scene and the published row. `lane` is a learned feature; `lane:sensitive` never lifts above 1. The 74 old rows are labelled by `plan.backfill_lanes` (pure; `learn.refresh` applies it on every read) and once by `tools/backfill_lanes.py --write`, which only rewrites the local ledger file and was not run on the real state. | State branch, 2026-10-21 (74 rows, trimmed into `tests/fixtures/published-2026-10-21.json`): the backfill gives other 25, naam-niyam 23, sensitive 17 (the 11 Tiger Shroff rows among them), breaking 4, obituary 3, paisa 1 (airfares), rajneeti 1 (Rahul Gandhi vs the MEA). Imran Khan (actor), IAS Kumar Rajiv Ranjan and Reliance were tagged "world". The backfill is approximate: rows keep no fame, top-stories place or person flag, so a centre's category stands in for being a person and breaking reads as the kind. No view or earnings promise is made. |

@@ -8,19 +8,21 @@ Timing is the channel: a story goes out while people are looking at it, not hour
 News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by age, times the India boost,
 so a fresh story beats a bigger stale one, times its place in Google News India's top stories (desk/top.py); a story
 in none of those lists, not searched in India, not breaking and not very famous (an explainer's fame only counts
-headlines, so it never counts as famous) is dropped (unpopular), and so is a world explainer the Hindi lists do not
-carry (White House, Pope and Starlink statements drew 0-35 views). A story Google News India leads with gets
+headlines, so it never counts as famous) is dropped (unpopular), and so is a world statement, politics or diplomacy
+story with no India connection (foreign_only; White House, Pope and Starlink statements drew 0-35 views), while world
+deaths, air incidents, storms and disasters are still told. A story Google News India leads with gets
 follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
-most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, EVENING_RESERVE of them kept
-for after EVENING_IST; a case's angles at most CASE_MAX_PER_DAY a day and CASE_MAX_TOTAL in all. A breaking story
-(huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake USGS
-rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap; wars never
-take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
-than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
-(desk/orbitwire.py). A Short the owner wants made again (remakes/*.json) comes back while its story is still on the
-radar, ahead of the other ready stories; once the new version is public the old one is made private.
+most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, never held for a better hour
+(SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and CASE_MAX_TOTAL in all.
+A breaking story (huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake
+USGS rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap;
+wars never take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id
+changes. No more than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told
+differently (desk/orbitwire.py). A Short the owner wants made again (remakes/*.json) comes back while its story is
+still on the radar, ahead of the other ready stories; once the new version is public the old one is made private.
+Every story carries a lane and an audience (lane_of, audience_of: labels to judge by, never a reason to drop it).
 """
 from __future__ import annotations
 
@@ -35,15 +37,17 @@ from .stories import km_between
 IST = timezone(timedelta(hours=5, minutes=30))
 # YouTube refuses this channel's uploads past about ten a day ("exceeded the number of videos they may upload" after
 # 10, 10 and 9 on 15-17 Oct 2026): the eleventh story was made and lost. Every upload counts, retired or not, and the
-# regular and case lanes stop BREAKING_EXTRA short of it, so breaking news always has room. The desk counts IST days;
+# regular and case lanes stop UPLOAD_RESERVE short of it, so breaking news always has room. The desk counts IST days;
 # YouTube's own day may start elsewhere (likely midnight Pacific), and that margin also covers the overlap.
 YOUTUBE_DAILY_UPLOADS = 10
+UPLOAD_RESERVE = 2
 # Owner, 2026-10-21: "No need to cover each and every incidents but those which are really high profile cases or
 # incidents those should be cover properly on time with max efforts." Fewer regular Shorts; the spare slots go to
-# breaking news and to a big case's angles.
-MAX_PER_DAY = 6
+# breaking news and to a big case's angles. 2026-10-22 (audit/kyun-hua-shorts-strategy.md): 4 routine Shorts a day,
+# 90 minutes apart, so at most 6 with breaking news; the 6th to 10th Shorts of a day drew the least.
+MAX_PER_DAY = 4
 BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
-MIN_GAP = timedelta(minutes=20)
+MIN_GAP = timedelta(minutes=90)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
 # Or this many independent outlets on one incident, BREAKING_STRONG of them official, public or international: a big
@@ -112,6 +116,48 @@ AD_FRIENDLY_WORDS = re.compile(
     r"नियम(?!ित)|मेट्रो|हाईवे|एक्सप्रेसवे|एयरपोर्ट|इसरो|अंतरिक्ष|सैटेलाइट|विज्ञान|(?<!दिल का )दौर(ा(?!न)|े)(?! पड़)|"
     r"(विदेश|राजकीय|आधिकारिक) यात्रा|(शांति|द्विपक्षीय|सीमा) (वार्ता|बातचीत)|समझौत|शिखर सम्मेलन|टैरिफ|व्यापार|"
     r"जीडीपी|अर्थव्यवस्था|सेंसेक्स|इंटरनेट|परियोजना)", re.I)
+# A story from abroad with no India connection (orbitwire.india_connection) is not told when it is a statement (an
+# explainer: what a named person or institution abroad said or did), politics or diplomacy: foreign statements drew
+# a median of 16 views, White House, Pope and Starlink statements 0-35. World deaths, air incidents, storms and
+# disasters drew 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane
+# Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible.
+WORLD_SKIPPED = ("politics", "diplomacy", "world")
+WORLD_KEPT = ("death", "aviation", "cyclone", "disaster", "earthquake", "flood", "accident", "rail", "weather")
+# Each story's lane (2026-10-22, audit/kyun-hua-shorts-strategy.md §2), a label the scorecard and learn.py judge by,
+# never a reason to drop one: a sensitive case (shootings, attacks, crime, war), an obituary, breaking news or an
+# incident, paisa (what changes for the viewer's wallet: prices, EMI, fares, schemes, exams; WPI, IMF and Sensex
+# are not), rajneeti (a row between named political sides), naam-niyam (a known name in India's news, or a court,
+# film or sport story) and other. The first that fits wins, in LANES order. `audience` is whom the story is for:
+# india when it is India's (region, Wikidata or newsroom link, India in its headlines) or in a Google News India
+# Nation section, else world; `region` stays as it was (INDIA_BOOST, Orbitwire and the hashtags read it).
+LANES = ("sensitive", "obituary", "breaking", "paisa", "rajneeti", "naam-niyam", "other")
+SENSITIVE_KINDS = ("attack", "explosion", "conflict")
+SENSITIVE_WORDS = re.compile(
+    r"\b(shots? fired|shot (dead|at)|(?<!film )(?<!movie )shootings?|shooters?|firing|gunfire|gunned|gunmen|"
+    r"murder\w*|stabb\w*|bombs?|bombing|bombed|blasts?|terror\w*|lynch\w*|riots?(?! police)|communal|sectarian)\b"
+    rf"|{HI_START}(गोली|फायरिंग|फ़ायरिंग|हत्या|मर्डर|चाकू|आतंक|धमाक|विस्फोट|दंगा|दंगे|सांप्रदायिक)", re.I)
+PAISA_WORDS = re.compile(
+    r"\b(petrol|diesel|LPG|CNG|gold (prices?|rates?)|GST|RBI|repo rate|EMIs?|(home|car|education|personal) loans?|"
+    r"income tax|tax slabs?|air ?fares?|(train|rail|bus|metro) fares?|toll (tax|plaza)s?|schemes?|yojana|pension|"
+    r"ration|subsidy|exams?|NEET|JEE|UPSC|SSC|CBSE|recruitment|vacanc(y|ies)|DA hike|dearness allowance|UPI|Aadhaar|PAN card|"
+    r"new rules?)\b"
+    rf"|{HI_START}(पेट्रोल|डीजल|डीज़ल|एलपीजी|सिलेंडर|सोने (का|के|की) (भाव|दाम|कीमत)|जीएसटी|आरबीआई|रिज़र्व बैंक|"
+    r"रिजर्व बैंक|रेपो रेट|ईएमआई|लोन|आयकर|किराय|टोल|योजना|पेंशन|राशन|सब्सिडी|परीक्षा|भर्ती (परीक्षा|प्रक्रिया)|"
+    r"महंगाई भत्त|यूपीआई|आधार कार्ड|नए नियम)", re.I)
+# A row needs a row word and a political side: "Kohli slams a century" is no row.
+ROW_WORDS = re.compile(
+    r"\b(digs? at|slams?|slammed|hits? out|hit back|lash(es|ed)? out|accus\w*|jibes?|swipe at|war of words|"
+    r"attack(s|ed)? (the )?(Centre|govt|government|BJP|Congress|PM|Modi)|demand(s|ed)? .{0,40}resignation)\b"
+    rf"|{HI_START}(घेरा|घेरे|निशाना|पलटवार|इस्तीफे की मांग|इस्तीफ़े की मांग|आरोप लगा|हमला बोला|तंज)", re.I)
+POLITICAL_SIDES = re.compile(
+    r"\b(government|govt|Centre|BJP|Congress|AAP|TMC|RJD|JDU|Shiv Sena|NCP|opposition|ministers?|ministry|MEA|PM|"
+    r"CM|MLA|Modi)\b"
+    rf"|{HI_START}(सरकार|मंत्रालय|मंत्री|भाजपा|बीजेपी|कांग्रेस|विपक्ष|मुख्यमंत्री|प्रधानमंत्री|सांसद|विधायक|"
+    r"मोदी)", re.I)
+NAME_KINDS = ("court", "entertainment", "sport")
+# A published row does not record whether an explainer's centre was a person: one of these categories stands in.
+NAMED_ROW_KINDS = NAME_KINDS + ("news", "health", "politics", "diplomacy", "defence")
+NATION_FEEDS = ("IN-nation", "IN-hi-nation")
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
@@ -130,10 +176,11 @@ CASE_GAP = timedelta(minutes=30)
 # total. Retired and replaced Shorts are not on the channel and do not count.
 CASE_MAX_PER_DAY = 3
 CASE_MAX_TOTAL = 6
-# Hindi viewers watch most in the evening: before EVENING_IST the regular and case lanes leave EVENING_RESERVE of
-# the day's MAX_PER_DAY slots free for it. Breaking news is not held.
-EVENING_IST = 18.0
-EVENING_RESERVE = 2
+# Stories are never held for a posting slot (timing is the channel; the evening reserve that held the day's last two
+# regular Shorts for 18:00 IST is gone, 2026-10-22). The hour's weight only orders the Shorts ready at once, and
+# every weight is a hypothesis for the scorecard to test: 06:00-09:00 and 18:00-20:00 IST preferred, 12:00-14:00
+# avoided, every other hour 1.
+SLOT_WEIGHT = {6: 1.2, 7: 1.2, 8: 1.2, 12: 0.8, 13: 0.8, 18: 1.2, 19: 1.2}
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -241,15 +288,15 @@ def on_channel(rows: list[dict]) -> list[dict]:
 def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool = False) -> str | None:
     """Why no Short may go out now, or None. A breaking story may take the spare slot at once; with `spare` (a case
     angle) it may take it MIN_GAP after the last Short. The daily cap counts the Shorts still on the channel; every
-    upload, retired or not, counts toward YouTube's own limit, whose last BREAKING_EXTRA uploads only breaking news
-    may take."""
+    upload, retired or not, counts toward YouTube's own limit, whose last UPLOAD_RESERVE uploads only breaking news
+    may take. No Short is held for a better hour (SLOT_WEIGHT)."""
     at = at or datetime.now(timezone.utc)
     rows = ledger.published()
     uploads = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
     if len(uploads) >= YOUTUBE_DAILY_UPLOADS:
         return f"already {len(uploads)} uploads today (IST), YouTube's limit"
-    if not breaking and len(uploads) >= YOUTUBE_DAILY_UPLOADS - BREAKING_EXTRA:
-        return (f"already {len(uploads)} uploads today (IST); the last {BREAKING_EXTRA} before YouTube's limit wait "
+    if not breaking and len(uploads) >= YOUTUBE_DAILY_UPLOADS - UPLOAD_RESERVE:
+        return (f"already {len(uploads)} uploads today (IST); the last {UPLOAD_RESERVE} before YouTube's limit wait "
                 "for breaking news")
     today = on_channel(uploads)
     if len(today) >= MAX_PER_DAY + (BREAKING_EXTRA if breaking or spare else 0):
@@ -261,10 +308,12 @@ def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool 
         return f"last Short went out {(at - max(past)).total_seconds() / 3600:.1f} h ago"
     if scheduled and min(scheduled) - at < gap:
         return f"a scheduled Short goes out in {(min(scheduled) - at).total_seconds() / 3600:.1f} h"
-    local = at.astimezone(IST)
-    if not breaking and local.hour + local.minute / 60 < EVENING_IST and len(today) >= MAX_PER_DAY - EVENING_RESERVE:
-        return f"{len(today)} Shorts today; the last {EVENING_RESERVE} wait for {EVENING_IST:02.0f}:00 IST"
     return None
+
+
+def slot_weight(at: datetime) -> float:
+    """The IST hour's weight (SLOT_WEIGHT): a sort key among ready Shorts, never a reason to wait."""
+    return SLOT_WEIGHT.get(at.astimezone(IST).hour, 1.0)
 
 
 def age_hours(cand: dict, at: datetime) -> float:
@@ -339,6 +388,8 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     is not judged."""
     from . import explain
 
+    if foreign_only(cand):
+        return "a world statement, politics or diplomacy story with no India connection"
     if cand.get("top") is None:
         return None
     place = cand.get("top_score") or 0
@@ -351,15 +402,65 @@ def unpopular(cand: dict, at: datetime) -> str | None:
         return None
     if place <= 0:
         return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
-    if cand.get("kind") == "explainer" and cand.get("region") != "india" \
-            and not any(feed in news.HINDI_FEEDS for feed in cand["top"]):
-        return "a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
     if place < MIN_PLACE:
         return f"too low in Google News India's top stories (place {place:.2f}, needs {MIN_PLACE})"
     if demand(cand) < LOW_DEMAND and place < LOW_DEMAND_PLACE:
         return (f"a {cand.get('category') or cand.get('kind')} story goes out only near the top of the lists "
                 f"(place {place:.2f}, needs {LOW_DEMAND_PLACE})")
     return None
+
+
+def foreign_only(cand: dict) -> bool:
+    """A statement, politics or diplomacy story from abroad with no India connection (see WORLD_SKIPPED). A death,
+    an air incident, a storm or a disaster (WORLD_KEPT), a case's angle and a story of no known region never is one."""
+    if cand.get("region") != "world" or cand.get("case") or cand.get("kind") == "death" or cand.get("category") in WORLD_KEPT:
+        return False
+    if cand.get("kind") != "explainer" and cand.get("category") not in WORLD_SKIPPED:
+        return False
+    return not orbitwire.india_connection(cand)
+
+
+def audience_of(cand: dict) -> str:
+    """"india" or "world": whom the story is for (see LANES). A front page leading with it is not enough (it leads
+    with the Pope too); a Nation section is."""
+    if orbitwire.india_connection(cand) or set(cand.get("top") or {}) & set(NATION_FEEDS):
+        return "india"
+    return "world"
+
+
+def lane_of(cand: dict, at: datetime | None = None) -> str:
+    """The story's lane (LANES), from its kind, category, title and headlines; a published row works as well as a
+    candidate. With `at` a breaking story (is_breaking) is breaking news whatever it is about."""
+    text, cat, kind = ad_text(cand), cand.get("category"), cand.get("kind")
+    if cat in SENSITIVE_KINDS or SENSITIVE_WORDS.search(text):
+        return "sensitive"
+    if kind == "death" or cat == "death":
+        return "obituary"
+    if cand.get("breaking") or (at and is_breaking(cand, at)) \
+            or (kind == "incident" and cat not in trends.ONGOING + ("politics",)):
+        return "breaking"
+    if PAISA_WORDS.search(text):
+        return "paisa"
+    if cat == "politics" or (ROW_WORDS.search(text) and POLITICAL_SIDES.search(text)):
+        return "rajneeti"
+    named = cand.get("person") if cand.get("person") is not None else (
+        kind == "explainer" and bool(cand.get("qid")) and cat in NAMED_ROW_KINDS)
+    if (named or cat in NAME_KINDS) and (cand.get("audience") or audience_of(cand)) == "india":
+        return "naam-niyam"
+    return "other"
+
+
+def backfill_lanes(rows: list[dict]) -> list[dict]:
+    """The published rows with a lane and an audience where they have none (rows from before 2026-10-22). Approximate:
+    a row keeps no fame, top-stories place or person flag, so a breaking story reads as its kind and a centre's
+    category stands in for being a person (NAMED_ROW_KINDS)."""
+    out = []
+    for r in rows:
+        r = dict(r)
+        r.setdefault("audience", audience_of(r))
+        r.setdefault("lane", lane_of(r))
+        out.append(r)
+    return out
 
 
 SUFFIX = re.compile(r"-[pr]\d+$")
@@ -492,8 +593,9 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
         if wait:
             notes.append(f"hold {c['id']}: {wait}")
         else:
-            ready.append(c | {"breaking": breaking, "priority": round(priority(c, at))})
-    ready.sort(key=lambda c: (not c.get("replaces"), not c.get("case")))
+            ready.append(c | {"breaking": breaking, "priority": round(priority(c, at)), "slot_weight": slot_weight(at)})
+    # The hour breaks ties only: every Short ready now shares this run's hour, so the weight never reorders by rank.
+    ready.sort(key=lambda c: (not c.get("replaces"), not c.get("case"), -c["slot_weight"]))
     return ready, notes
 
 
@@ -617,6 +719,9 @@ def watch(save: bool = True) -> dict:
             stories += angles_of(s["cand"], [s], rows, at)
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
+    for c in stories:
+        c["audience"] = audience_of(c)
+        c["lane"] = lane_of(c, at)
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))
     if save:
         ledger.save("candidates", found)

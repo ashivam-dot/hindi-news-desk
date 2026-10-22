@@ -203,6 +203,28 @@ def test_refresh_keeps_a_records_retention(monkeypatch):
     assert ledger.load("performance", {})["videos"]["v0"][learn.RETENTION_FIELD] == 55.0
 
 
+def test_lanes_are_learned_but_a_sensitive_case_never_scales_its_lane(monkeypatch, state):
+    assert "lane" in learn.FEATURES and "region" in learn.FEATURES
+    vids = [_video(i, 10_000) | {"lane": "sensitive"} for i in range(4)] \
+        + [_video(10 + i, 10_000, "court") | {"lane": "naam-niyam"} for i in range(4)] \
+        + [_video(20 + i, 10, "economy") | {"lane": "paisa"} for i in range(4)]
+    lifts = learn.learn(vids)["lifts"]
+    assert lifts["lane:sensitive"]["lift"] == 1.0 and lifts["lane:naam-niyam"]["lift"] == learn.LIFT_RANGE[1]
+    assert lifts["lane:paisa"]["lift"] == learn.LIFT_RANGE[0]
+    # Rows from before lanes get theirs from plan.lane_of when they are read; the table shows lane and audience.
+    published = (AT - timedelta(hours=30)).isoformat()
+    ledger.save("published", [{"id": "nw-20261019-tiger-shroff-attack", "video_id": "v0", "kind": "explainer",
+                               "category": "attack", "region": "world", "title": "Tiger Shroff: फायरिंग",
+                               "headlines": ["Shots fired at actor in Mumbai"], "published_at": published}])
+    monkeypatch.setattr(youtube, "identity", lambda api: {})
+    monkeypatch.setattr(youtube, "recent", lambda api, ch: [{"id": "v0", "statistics": {"viewCount": "9"}}])
+    learn.refresh(at=AT, api=object())
+    rec = ledger.load("performance", {})["videos"]["v0"]
+    assert (rec["lane"], rec["audience"], rec["region"]) == ("sensitive", "india", "world")
+    table = (state / "LEARNINGS.md").read_text(encoding="utf-8")
+    assert "| category | region | lane | audience |" in table and "| attack | world | sensitive | india |" in table
+
+
 class FakeHttpError(Exception):
     def __init__(self, status, reason=""):
         super().__init__(f"HTTP {status}")

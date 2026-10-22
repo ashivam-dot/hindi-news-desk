@@ -37,10 +37,14 @@ def prepare(target: str | dict):
         if not kept:
             raise ValueError("orbitwire: " + "; ".join(notes))
         target = kept[0]
+    if not target.get("lane"):  # a wiki: story never went through watch()
+        target = target | {"audience": target.get("audience") or plan.audience_of(target)}
+        target["lane"] = plan.lane_of(target, datetime.now(timezone.utc))
     short = writer.build(target)
     short.scene.setdefault("category", target.get("category"))
     short.scene.setdefault("article", target.get("title"))
-    for key in ("replaces", "remake_of", "case", "case_story", "angle", "hook"):
+    for key in ("replaces", "remake_of", "case", "case_story", "angle", "hook", "lane", "audience", "priority",
+                "series"):
         if target.get(key):
             short.scene[key] = target[key]
     work = WORK / short.id
@@ -133,7 +137,8 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
            "report_urls": report_urls(short),
            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
            "photos": [p["file"] for p in short.scene.get("photos") or [] if p.get("file")],
-           **{k: short.scene[k] for k in ("case", "case_story", "angle") if short.scene.get(k)}, **result}
+           **{k: short.scene[k] for k in ("case", "case_story", "angle", "lane", "audience", "priority", "series")
+              if short.scene.get(k)}, **result}
     if old := short.scene.get("replaces"):
         row.update(replaces=old, remake_of=short.scene.get("remake_of"))
         try:

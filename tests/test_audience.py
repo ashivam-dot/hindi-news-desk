@@ -14,15 +14,40 @@ def explainer(**kw):
             "news_at": NOW.isoformat()} | kw
 
 
-def test_a_world_explainer_needs_the_hindi_lists():
-    pope = explainer(top={"IN": 14}, top_score=0.35)
-    assert "Hindi newsrooms" in plan.unpopular(pope, NOW)
-    white_house = explainer(top={"IN": 2, "IN-nation": 5}, top_score=1.09)
-    assert "Hindi newsrooms" in plan.unpopular(white_house, NOW)
-    imran = explainer(top={"IN": 5, "IN-hi-nation": 10}, top_score=1.08)
+def test_a_world_statement_needs_an_india_connection_but_world_deaths_and_incidents_do_not():
+    # 2026-10-22: foreign statements drew a median of 16 views; world deaths, air incidents and storms 99-310.
+    pope = explainer(title="Pope Leo XIV", story="Pope Leo XIV leaves hospital days after lung cancer surgery",
+                     category="health", top={"IN": 14, "IN-hi": 9}, top_score=0.8)
+    assert "no India connection" in plan.unpopular(pope, NOW)
+    white_house = explainer(story="Trump fires Katie Zacharia as White House press secretary",
+                            top={"IN": 2, "IN-nation": 5}, top_score=1.09)
+    assert "no India connection" in plan.unpopular(white_house, NOW)
+    # Even with the lists unreadable, and for a radar story filed under politics however famous.
+    assert "no India connection" in plan.unpopular(white_house | {"top": None}, NOW)
+    us_vote = {"id": "wk-Q9", "kind": "incident", "category": "politics", "region": "world", "fame": 900_000,
+               "title": "2026 United States elections", "top": {}, "top_score": 0, "news_at": NOW.isoformat()}
+    assert "no India connection" in plan.unpopular(us_vote, NOW)
+    # Hindi newsrooms leading with it (the explainer's india_link), or its headlines naming India, connect it.
+    imran = explainer(top={"IN": 5, "IN-hi-nation": 10}, top_score=1.08, india_link=True)
     assert plan.unpopular(imran, NOW) is None
+    gulf = explainer(story="UAE: Indian passengers stranded as Gulf airspace shuts", top={"IN": 6}, top_score=0.75)
+    assert plan.unpopular(gulf, NOW) is None
     court = explainer(region="india", category="court", top={"IN": 9, "IN-nation": 5}, top_score=0.84)
     assert plan.unpopular(court, NOW) is None
+    # World deaths, air incidents, storms and disasters, and a case's angles, are told without one.
+    saint = {"id": "wk-Q228928", "kind": "death", "category": "death", "region": "world", "fame": 300_000,
+             "title": "Eva Marie Saint", "top": {"IN": 12}, "top_score": 0.45, "news_at": NOW.isoformat()}
+    flydubai = {"id": "wk-Q141605182", "kind": "incident", "category": "aviation", "region": "world",
+                "fame": 150_000, "title": "Flydubai Flight 1073", "top": {"IN": 8}, "top_score": 0.65,
+                "news_at": NOW.isoformat()}
+    isaias = {"id": "wk-Q141670823", "kind": "incident", "category": None, "region": "world", "fame": 150_000,
+              "title": "Hurricane Isaias", "top": {"IN": 10}, "top_score": 0.55, "news_at": NOW.isoformat()}
+    crew_ban = explainer(category="aviation", story="Air France bans crew on Israel flights", top={"IN": 4},
+                         top_score=0.85)
+    for c in (saint, flydubai, isaias, isaias | {"category": "cyclone"}, crew_ban, white_house | {"case": "a case"}):
+        assert not plan.foreign_only(c) and plan.unpopular(c, NOW) is None, c.get("title") or c.get("story")
+    # A story of no known region is not judged by this rule.
+    assert not plan.foreign_only({"kind": "explainer", "category": "world"})
 
 
 def test_a_new_storys_photos_show_its_scene_not_the_citys_landmarks():

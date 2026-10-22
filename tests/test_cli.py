@@ -63,6 +63,28 @@ def test_a_remake_retires_the_old_video_once_the_new_one_is_public(made, monkeyp
     assert row["video_id"] == "NEWVIDEO456" and row["remake_of"] == "nw-20261018-tiger-shroff-attack"
 
 
+def test_a_storys_lane_audience_priority_and_series_reach_the_published_row(made, monkeypatch):
+    from desk import gate, writer, youtube
+
+    short, work = made
+    monkeypatch.setattr(writer, "build", lambda target: Short.load(FIXTURE))
+    monkeypatch.setattr(gate, "check", lambda s: [])
+    cand = {"id": short.id, "kind": "death", "category": "death", "region": "world", "title": "x", "lane": "obituary",
+            "audience": "india", "priority": 1234, "series": 3}
+    made_now = cli.prepare(cand)
+    assert {k: made_now.scene[k] for k in ("lane", "audience", "priority", "series")} == \
+        {"lane": "obituary", "audience": "india", "priority": 1234, "series": 3}
+    # A story that never went through watch() (make wiki:...) is labelled here.
+    bare = cli.prepare({k: v for k, v in cand.items() if k not in ("lane", "audience", "priority", "series")})
+    assert (bare.scene["lane"], bare.scene["audience"]) == ("obituary", "world") and "series" not in bare.scene
+    monkeypatch.setattr(cli, "publish_refusal", lambda *a: None)
+    monkeypatch.setattr(youtube, "publish", lambda *a, **k: {"video_id": "NEWVIDEO456", "url": "u"})
+    made_now.save(work / "short.json")
+    cli.publish(short.id)
+    row = ledger.published()[-1]
+    assert (row["lane"], row["audience"], row["priority"], row["series"]) == ("obituary", "india", 1234, 3)
+
+
 def test_publish_refuses_while_the_channel_id_is_tbd(made, monkeypatch):
     short, work = made
     monkeypatch.setattr(config, "CHANNEL_ID", "TBD")
