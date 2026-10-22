@@ -35,6 +35,12 @@ INJURY = {"wounded", "injured", "घायल", "घायलों"}
 DEATH_SAID = ["died", "dies", "passed away", "passes away", "demise", "is no more", "death of", "dead at",
               "breathed his last", "breathed her last", "निधन", "नहीं रहे", "नहीं रहीं", "देहांत", "अंतिम सांस",
               "आखिरी सांस", "मौत", "दुनिया को अलविदा"]
+# A vandalised P570 is when outlets write "X is alive": a sentence that calls the death a hoax, a rumour or false, or
+# denies it, never states it, and an article with one never confirms it (the 2026-10-22 on-air review).
+DEATH_DENIED = ["hoax*", "fake", "false", "falsely", "rumour*", "rumor*", "alive", "deny", "denies", "denied",
+                "dismiss*", "not dead", "misinformation", "अफवाह*", "झूठ*", "फर्जी", "खंडन", "जिंदा", "जीवित",
+                "स्वस्थ", "सलामत"]
+DEATH_TALK = ["report*", "news", "claim*", "post*", "खबर*", "दावा*", "पोस्ट"]  # what a denial denies
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
@@ -109,9 +115,20 @@ SENTENCE = re.compile(r"(?<=[.!?।])\s+|\n+")
 
 
 def states_death(text: str, names: list[str]) -> str | None:
-    """The first sentence of text that names one of names (whole words) and says they died (DEATH_SAID), or None."""
+    """The first sentence of text that names one of names (whole words) and says they died (DEATH_SAID), or None. A
+    sentence that also denies it (DEATH_DENIED) says nothing."""
     for s in SENTENCE.split(text or ""):
-        if found(s, DEATH_SAID) and any(n and hindi.contains(s, n) for n in names):
+        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and any(n and hindi.contains(s, n) for n in names):
+            return s.strip()
+    return None
+
+
+def denies_death(text: str, names: list[str]) -> str | None:
+    """The first sentence of text that denies (DEATH_DENIED) the person, a death or reports of one (DEATH_TALK), or
+    None: the article is about a hoax, whatever its other sentences say ("His manager said the reports are false")."""
+    for s in SENTENCE.split(text or ""):
+        if found(s, DEATH_DENIED) and (found(s, DEATH_SAID + DEATH_TALK) or any(n and hindi.contains(s, n)
+                                                                               for n in names)):
             return s.strip()
     return None
 

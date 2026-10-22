@@ -18,8 +18,9 @@ from . import config, gate, ledger, learn, plan, review
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
-RETRYABLE = ("words (want", "does not confirm the death", "usable photos", "no draft passed", "came out garbled",
-             "orbitwire", "pictures:")
+# A death no news report states yet is retried: Wikidata's P570 often comes before the outlets' items are read.
+RETRYABLE = ("words (want", "does not confirm the death", "no news report states the death", "usable photos",
+             "no draft passed", "came out garbled", "orbitwire", "pictures:")
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")

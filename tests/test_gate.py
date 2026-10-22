@@ -196,6 +196,61 @@ def test_one_confirming_report_lets_a_death_through(monkeypatch):
     assert "text" not in row  # the scene keeps the sentence, not the article
 
 
+@pytest.mark.parametrize("says", [
+    "Satish Shah is alive, family dismisses reports that he died.",
+    "Satish Shah death hoax: actor's team says reports of his demise are fake.",
+    "सतीश शाह के निधन की खबर झूठी, परिवार ने कहा- वह स्वस्थ हैं।",
+    "सतीश शाह की मौत की अफवाह, टीम ने किया खंडन।",
+])
+def test_a_sentence_that_denies_the_death_never_states_it(says):
+    # The 2026-10-22 on-air review: a vandalised P570 is when outlets write "X is alive".
+    names = ["Satish Shah", "सतीश शाह"]
+    assert gate.states_death(says, names) is None and gate.denies_death(says, names)
+    assert gate.states_death("Veteran actor Satish Shah dies at 74.", names)
+    assert gate.denies_death("Veteran actor Satish Shah dies at 74. He was cremated in Mumbai.", names) is None
+
+
+def test_an_article_about_a_death_hoax_never_confirms_it(monkeypatch):
+    from desk import writer
+
+    body = ("Ramesh Prasad Verma died on Thursday, a post on social media claimed. His manager said the reports are "
+            "false and the singer is at home. ") * 3
+    item = _verma_item(monkeypatch, body)
+    assert writer.death_reports({"reports": [item]}, [item | {"text": body}], "Ramesh Prasad Verma",
+                                "रमेश प्रसाद वर्मा", writer._since(date(2026, 10, 8))) == []
+    with pytest.raises(ValueError, match="no news report states the death"):
+        _death_build(monkeypatch, [item])()
+
+
+def test_a_hindi_report_may_write_the_name_without_its_dots(monkeypatch):
+    from desk import writer
+
+    item = _verma_item(monkeypatch, "मशहूर गायक आर पी वर्मा का गुरुवार को मुंबई में निधन हो गया। " * 5)
+    item["title"] = "गायक आर पी वर्मा नहीं रहे"
+    [row] = writer.death_reports({"reports": []}, [item | {"text": "मशहूर गायक आर पी वर्मा का गुरुवार को निधन।"}],
+                                 "R.P. Verma", "आर.पी. वर्मा", writer._since(date(2026, 10, 8)))
+    assert row["name"] == "आर पी वर्मा"
+
+
+def test_a_death_search_reads_at_most_death_reads_articles(monkeypatch):
+    from desk import outlets, writer
+
+    rows = [_verma_item(monkeypatch, "") | {"url": f"https://thehindu.example/verma-{n}",
+                                               "title": "Ramesh Prasad Verma in Mumbai"} for n in range(20)]
+    read = []
+    monkeypatch.setattr(writer, "_report_rows", lambda *a, **k: rows)
+    monkeypatch.setattr(outlets, "text", lambda url: read.append(url) or "Ramesh Prasad Verma sang in Mumbai.")
+    assert writer.death_reports({}, [], "Ramesh Prasad Verma", None, writer._since(date(2026, 10, 8))) == []
+    assert len(read) == writer.DEATH_READS
+
+
+def test_a_death_no_report_states_yet_is_retried_not_skipped():
+    # The 2026-10-22 correctness review: Wikidata's P570 comes before the outlets' items, and a skip is for good.
+    from desk import cli
+
+    assert any(m in "gate: no news report states the death of Ramesh Prasad Verma" for m in cli.RETRYABLE)
+
+
 # YM2dyGiYNJQ (2026-10-20): the reporting gave the resignation demand to Congress's Sapkal; Raut alleged "jungle raj"
 # and asked for President's Rule.
 RAUT_NAMES = [{"hi": "टाइगर श्रॉफ", "en": "Tiger Shroff"}, {"hi": "संजय राउत", "en": "Sanjay Raut"},

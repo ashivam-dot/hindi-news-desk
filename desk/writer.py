@@ -1142,16 +1142,21 @@ def _report_rows(cand: dict, title: str, hi: str | None = None, person: bool = F
     return [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
 
 
+DEATH_READS = 6  # best-ranked other outlet items read a run for a death the story's reports do not state
+
+
 def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | None, since: datetime) -> list[dict]:
     """The news reports that state the death (gate.states_death), each as an outlet item plus the name it gives and
     the sentence that says it: the story's reporting (read before clean_reports takes death sentences out), else the
-    first other outlet item about the person whose article says it. One is enough: the writer's facts still need
-    gate.OWNERS_NEEDED owners."""
-    names = [name] + ([name_hi] if name_hi else [])
+    first of DEATH_READS other outlet items about the person whose article says it. One is enough: the writer's facts
+    still need gate.OWNERS_NEEDED owners. An article that calls the death a hoax or denies it (gate.denies_death)
+    never is."""
+    names = [name] + (explain.hindi_names_of(name_hi) or ([name_hi] if name_hi else []))
 
     def confirmed(r: dict, body: str | None) -> dict | None:
-        says = gate.states_death(f"{r.get('title', '')}. {body}", names) if body else None
-        if not says:
+        text = f"{r.get('title', '')}. {body}"
+        says = gate.states_death(text, names) if body else None
+        if not says or gate.denies_death(text, names):
             return None
         return outlets.compact(r) | {"name": next(n for n in names if hindi.contains(says, n)), "says": says}
 
@@ -1163,7 +1168,7 @@ def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | Non
         rows = _report_rows(cand, name, name_hi, person=True, since=since)
     except Exception:
         rows = []
-    for r in sorted((r for r in rows if r["url"] not in seen), key=outlets._rank):
+    for r in sorted((r for r in rows if r["url"] not in seen), key=outlets._rank)[:DEATH_READS]:
         if row := confirmed(r, outlets.text(r["url"])):
             return [row]
     return []
