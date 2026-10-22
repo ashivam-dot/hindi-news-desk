@@ -240,7 +240,8 @@ def playlists(api, state: dict, budget: Budget, notes: list[str]) -> None:
                 made_pl = api.playlists().insert(part="snippet,status", body={
                     "snippet": {"title": title, "description": about, "defaultLanguage": config.LANGUAGE},
                     "status": {"privacyStatus": "public"}}).execute()
-                row.update(id=made_pl["id"], at=ledger.now(), videos=[])
+                row.update(id=made_pl["id"], at=ledger.now(), videos=[], read_back=True)  # new, so empty; a read
+                # this soon is refused with a 404 (2026-10-22: PLH0zK2WnEu4E)
                 ledger.save(STATE, state)
                 made += 1
             failed = row.setdefault("failed", {})

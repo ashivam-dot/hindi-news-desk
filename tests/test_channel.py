@@ -185,7 +185,7 @@ def test_playlists_are_made_filled_and_shown_once(fake):
     assert "1 made, 2 Shorts added, 1 sections, 0 Shorts left" in line
     (pid,) = fake.lists
     assert fake.lists[pid] == channel.FAMILIES["economy"][0] and fake.items[pid] == ["A2", "A1"]
-    assert fake.sections == [pid]
+    assert fake.sections == [pid] and "playlistItems.list" not in fake.calls  # a new playlist is not read back
     fake.calls.clear()
     assert "nothing left" in channel.run({"playlists"}, NOW) and fake.calls == []
     published([row("A1"), row("A2"), row("A3")])
@@ -205,11 +205,11 @@ def test_the_unit_caps_spread_the_work_over_runs_and_days(fake, monkeypatch):
     monkeypatch.setattr(channel, "RUN_UNITS", 160)
     monkeypatch.setattr(channel, "DAY_UNITS", 330)
     published([row(f"A{i}") for i in range(8)])
-    first = channel.run({"playlists"}, NOW)  # identity 1, playlists.list 1, insert 50, items.list 1, 2 adds
+    first = channel.run({"playlists"}, NOW)  # identity 1, playlists.list 1, insert 50, 2 adds (a new playlist is not read back)
     assert "unit cap reached" in first and "1 made, 2 Shorts added" in first and "6 Shorts left" in first
     assert "3 Shorts added" in channel.run({"playlists"}, NOW)
     third = channel.run({"playlists"}, NOW)
-    assert "0 Shorts added" in third and "305 today" in third
+    assert "0 Shorts added" in third and "304 today" in third
     assert "3 Shorts added, 0 sections, 0 Shorts left" in channel.run({"playlists"}, NOW + timedelta(days=1))
     (pid,) = fake.lists
     assert len(fake.items[pid]) == 8 and len(set(fake.items[pid])) == 8
