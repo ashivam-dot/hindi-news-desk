@@ -16,6 +16,10 @@ alone. The same query reads the gating numbers the scorecard (desk/review.py) ju
 subscribers gained, likes and shares (ANALYTICS_FIELDS); a metric the report refuses (HTTP 400) is dropped alone and
 listed in perf["analytics_dropped"]. read_traffic adds where the views came from (insightTrafficSourceType) for at
 most TRAFFIC_MAX Shorts a run.
+
+Between REFRESHes every run also reads the Shorts under YOUNG_H old (snapshot_young, one videos.list call), so the
+views at MOMENTUM_AT_H come from a snapshot near that age. Each of READS (views_6h, views_24h) is set once, the first
+time the snapshots can tell it, and never recomputed: thinning the snapshots later cannot move it.
 """
 from __future__ import annotations
 
@@ -33,7 +37,12 @@ LIFT_RANGE = (0.75, 1.35)
 FEATURES = ("category", "region")
 RETENTION_FIELD = "avg_view_pct"
 RETENTION_WEIGHT = 0.5
-KEEP_SNAPSHOTS = 16
+KEEP_SNAPSHOTS = 32  # hourly under YOUNG_H, one per REFRESH to two days, four later: 29 at most
+YOUNG_H = 12.0  # under this age every run reads the Short's views, so its 6-hour read is measured, not guessed
+MOMENTUM_AT_H = 6.0
+# (field, hours, within): each is set once. A 6-hour read needs a snapshot by 12 hours; a 24-hour score may be
+# scaled back from any later one, as before.
+READS = (("views_6h", MOMENTUM_AT_H, 2 * MOMENTUM_AT_H), ("views_24h", SCORE_AT_H, None))
 ENGAGED_FIELD = "engaged_views"
 RETENTION_MIN_AGE = timedelta(days=3)  # YouTube Analytics' numbers settle about two days after the day they count
 ANALYTICS_SCOPE = "https://www.googleapis.com/auth/yt-analytics.readonly"
@@ -56,13 +65,16 @@ def _age_h(row: dict, at: datetime) -> float:
     return (at - datetime.fromisoformat(row["published_at"])).total_seconds() / 3600
 
 
-def views_at(snapshots: list[dict], hours: float) -> float | None:
+def views_at(snapshots: list[dict], hours: float, within: float | None = None) -> float | None:
     """Views at `hours` after publishing: interpolated between snapshots, or scaled back from the first later one
-    (views grow roughly with the square root of age once a Short's first push is over). None while too young."""
+    (views grow roughly with the square root of age once a Short's first push is over). None while too young, and
+    None when the first later snapshot is older than `within` hours (too far off to say)."""
     snaps = sorted(snapshots, key=lambda s: s["age_h"])
     if not snaps or snaps[-1]["age_h"] < hours:
         return None
     later = next(s for s in snaps if s["age_h"] >= hours)
+    if within is not None and later["age_h"] > within:
+        return None
     earlier = [s for s in snaps if s["age_h"] < hours]
     if not earlier:
         return later["views"] * math.sqrt(hours / later["age_h"]) if later["age_h"] > 0 else float(later["views"])
@@ -72,10 +84,29 @@ def views_at(snapshots: list[dict], hours: float) -> float | None:
 
 
 def _thin(snapshots: list[dict]) -> list[dict]:
-    """Every snapshot of the first two days (they set the score), then the newest few."""
-    early = [s for s in snapshots if s["age_h"] <= 2 * SCORE_AT_H]
-    late = [s for s in snapshots if s["age_h"] > 2 * SCORE_AT_H]
-    return (early + late[-4:])[-KEEP_SNAPSHOTS:]
+    """The first snapshot of each hour while a Short is under YOUNG_H old and of each REFRESH until two days, then
+    the newest few; the newest is always kept (it is the views now). Past KEEP_SNAPSHOTS the earliest stay."""
+    snaps = sorted(snapshots, key=lambda s: s["age_h"])
+    step = REFRESH.total_seconds() / 3600
+    early, slots = [], set()
+    for s in snaps:
+        if s["age_h"] > 2 * SCORE_AT_H:
+            continue
+        slot = ("h", int(s["age_h"])) if s["age_h"] < YOUNG_H else ("r", int(s["age_h"] // step))
+        if slot not in slots:
+            slots.add(slot)
+            early.append(s)
+    out = early + [s for s in snaps if s["age_h"] > 2 * SCORE_AT_H][-4:]
+    if snaps and snaps[-1] not in out:
+        out.append(snaps[-1])
+    return out[:KEEP_SNAPSHOTS - 4] + out[-4:] if len(out) > KEEP_SNAPSHOTS else out
+
+
+def _freeze(rec: dict) -> None:
+    """Set each of READS once, the first time the snapshots can tell it: later runs and thinning never move it."""
+    for field, hours, within in READS:
+        if rec.get(field) is None:
+            rec[field] = views_at(rec["snapshots"], hours, within)
 
 
 def learn(videos: list[dict]) -> dict:
@@ -159,13 +190,13 @@ def report(perf: dict) -> str:
                      f"{held})")
     if not learned.get("lifts"):
         lines.append("- No lift yet: not enough scored Shorts per group. The desk ranks on fame and freshness alone.")
-    lines += ["", "| Short | published | " + " | ".join(FEATURES) + " | views now | views at 24 h |",
-              "|---" * (len(FEATURES) + 4) + "|"]
+    lines += ["", "| Short | published | " + " | ".join(FEATURES) + " | views now | views at 6 h | views at 24 h |",
+              "|---" * (len(FEATURES) + 5) + "|"]
     for v in sorted(perf.get("videos", {}).values(), key=lambda v: v["published_at"], reverse=True)[:30]:
         now = v["snapshots"][-1]["views"] if v.get("snapshots") else ""
-        at24 = "" if v.get("views_24h") is None else round(v["views_24h"])
+        at6, at24 = ("" if v.get(f) is None else round(v[f]) for f in ("views_6h", "views_24h"))
         cells = " | ".join(str(v.get(f) or "") for f in FEATURES)
-        lines.append(f"| {v['id']} | {v['published_at'][:16]} | {cells} | {now} | {at24} |")
+        lines.append(f"| {v['id']} | {v['published_at'][:16]} | {cells} | {now} | {at6} | {at24} |")
     return "\n".join(lines) + "\n"
 
 
@@ -273,14 +304,44 @@ def read_traffic(perf: dict, at: datetime, analytics=None) -> str | None:
     return None
 
 
+def _snapshot(perf: dict, row: dict, s: dict, at: datetime) -> None:
+    rec = perf["videos"].setdefault(row["video_id"], {"id": row["id"], "published_at": row["published_at"],
+                                                      "snapshots": []})
+    rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES})
+    rec["snapshots"] = _thin(rec["snapshots"] + [{
+        "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
+        "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])
+    _freeze(rec)
+
+
+def snapshot_young(perf: dict, at: datetime, api=None) -> int:
+    """Snapshot each Short under YOUNG_H old: one videos.list call (1 unit), and none when no Short is that young.
+    Returns how many were read."""
+    from . import youtube
+
+    young = [r for r in ledger.published() if r.get("video_id") and 0 <= _age_h(r, at) < YOUNG_H]
+    if not young:
+        return 0
+    if api is None:
+        api = youtube.client()
+    stats = {v["id"]: v.get("statistics", {}) for v in youtube.statistics(api, [r["video_id"] for r in young])}
+    read = [r for r in young if r["video_id"] in stats]
+    for row in read:
+        _snapshot(perf, row, stats[row["video_id"]], at)
+    return len(read)
+
+
 def refresh(at: datetime | None = None, force: bool = False, api=None, analytics=None) -> dict | None:
     """Read the channel's numbers and relearn, at most once per REFRESH. Returns what was learned, or None if the
-    last read is still fresh. analytics: a YouTube Analytics v2 client (default: one from the desk's sign-in)."""
+    last read is still fresh (the Shorts under YOUNG_H old are snapshotted then all the same). analytics: a YouTube
+    Analytics v2 client (default: one from the desk's sign-in)."""
     from . import youtube
 
     at = at or datetime.now(timezone.utc)
     perf = ledger.load("performance", {"at": None, "videos": {}})
     if not force and perf.get("at") and at - datetime.fromisoformat(perf["at"]) < REFRESH:
+        if snapshot_young(perf, at, api):
+            ledger.save("performance", perf)  # perf["at"] stays: it is the time of the last full read
         return None
     if api is None:
         api = youtube.client()
@@ -289,13 +350,7 @@ def refresh(at: datetime | None = None, force: bool = False, api=None, analytics
         vid = row.get("video_id")
         if not vid or vid not in stats or _age_h(row, at) < 0:
             continue
-        s = stats[vid]
-        rec = perf["videos"].setdefault(vid, {"id": row["id"], "published_at": row["published_at"], "snapshots": []})
-        rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES})
-        rec["snapshots"] = _thin(rec["snapshots"] + [{
-            "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
-            "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])
-        rec["views_24h"] = views_at(rec["snapshots"], SCORE_AT_H)
+        _snapshot(perf, row, stats[vid], at)
     try:
         note = read_retention(perf, at, analytics)
         if note is None:  # the same sign-in and scope: a refused retention read would refuse these too

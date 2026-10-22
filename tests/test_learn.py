@@ -73,6 +73,92 @@ def test_refresh_snapshots_scores_and_throttles(monkeypatch, state):
     assert len(ledger.load("performance", {})["videos"]["v0"]["snapshots"]) == 2
 
 
+class FakeVideos:
+    """api.videos().list(part="statistics", id=...).execute() with a changing view count, recording every call."""
+
+    def __init__(self, views):
+        self.views, self.calls = views, []
+
+    def videos(self):
+        return self
+
+    def list(self, **kw):
+        self.calls.append(kw)
+        return self
+
+    def execute(self):
+        ids = self.calls[-1]["id"].split(",")
+        return {"items": [{"id": v, "statistics": {"viewCount": str(self.views[v])}} for v in ids if v in self.views]}
+
+
+def young_channel(monkeypatch, ages_h, last_read):
+    """Published Shorts of these ages at AT, and a full read `last_read` ago, so refresh is inside REFRESH."""
+    rows = [{"id": f"s{i}", "video_id": f"v{i}", "category": "death", "region": "world",
+             "published_at": (AT - timedelta(hours=h)).isoformat()} for i, h in enumerate(ages_h)]
+    ledger.save("published", rows)
+    ledger.save("performance", {"at": (AT - last_read).isoformat(), "videos": {}})
+    monkeypatch.setattr(youtube, "recent", lambda *a: pytest.fail("a full read inside REFRESH"))
+    monkeypatch.setattr(youtube, "identity", lambda *a: pytest.fail("a channel lookup for the young Shorts"))
+
+
+def test_young_shorts_are_read_between_refreshes_and_their_6h_read_is_frozen(monkeypatch):
+    young_channel(monkeypatch, [5.4, 30], timedelta(hours=1))  # v1 is not young: only the full read takes it
+    api = FakeVideos({"v0": 100})
+    assert learn.refresh(at=AT, api=api) is None
+    assert [c["id"] for c in api.calls] == ["v0"] and api.calls[0]["part"] == "statistics"
+    perf = ledger.load("performance", {})
+    assert perf["at"] == (AT - timedelta(hours=1)).isoformat()  # the full read's clock is not moved
+    assert perf["videos"]["v0"]["views_6h"] is None and "v1" not in perf["videos"]
+    api.views["v0"] = 140
+    learn.refresh(at=AT + timedelta(hours=1), api=api)  # 6.4 h old
+    rec = ledger.load("performance", {})["videos"]["v0"]
+    assert rec["views_6h"] == pytest.approx(124)
+    # Later reads, the full one included, never move it, however the snapshots are thinned.
+    api.views["v0"] = 900
+    learn.refresh(at=AT + timedelta(hours=1.5), api=api)
+    assert len(ledger.load("performance", {})["videos"]["v0"]["snapshots"]) == 3
+    monkeypatch.setattr(youtube, "identity", lambda api: {})
+    monkeypatch.setattr(youtube, "recent", lambda api, ch: [{"id": "v0", "statistics": {"viewCount": "5000"}},
+                                                           {"id": "v1", "statistics": {"viewCount": "50"}}])
+    learn.refresh(at=AT + timedelta(hours=40), api=api)
+    rec = ledger.load("performance", {})["videos"]["v0"]
+    assert rec["views_6h"] == pytest.approx(124) and rec["views_24h"] is not None
+    frozen = rec["views_24h"]
+    learn.refresh(at=AT + timedelta(hours=60), api=api)
+    assert ledger.load("performance", {})["videos"]["v0"]["views_24h"] == frozen
+
+
+def test_no_young_short_means_no_call(monkeypatch):
+    young_channel(monkeypatch, [13, 30], timedelta(hours=1))
+    api = FakeVideos({})
+    assert learn.refresh(at=AT, api=api) is None and api.calls == []
+    assert ledger.load("performance", {})["videos"] == {}
+
+
+def test_a_6h_read_is_never_guessed_from_a_late_first_snapshot():
+    rec = {"snapshots": [{"age_h": 30, "views": 300}]}
+    learn._freeze(rec)
+    assert rec["views_6h"] is None and rec["views_24h"] == pytest.approx(300 * math.sqrt(24 / 30))
+    rec = {"snapshots": [{"age_h": 2, "views": 20}, {"age_h": 11, "views": 110}]}
+    learn._freeze(rec)
+    assert rec["views_6h"] == pytest.approx(60) and rec["views_24h"] is None
+
+
+def test_thin_keeps_the_early_points_hourly_and_the_newest():
+    every_15_min = [{"age_h": q / 4, "views": q} for q in range(4 * 72)]  # three days of runs every 15 minutes
+    kept = learn._thin(every_15_min)
+    ages = [s["age_h"] for s in kept]
+    assert len(kept) <= learn.KEEP_SNAPSHOTS and ages == sorted(ages)
+    assert ages[:13] == [float(h) for h in range(12)] + [12.0]  # the first of each hour, then of each REFRESH
+    assert ages[-1] == 71.75 and 48.0 in ages
+    # Thinning again as each new snapshot lands keeps the same early points.
+    rolling = []
+    for s in every_15_min:
+        rolling = learn._thin(rolling + [s])
+    assert [s["age_h"] for s in rolling][:13] == ages[:13] and rolling[-1]["age_h"] == 71.75
+    assert learn.views_at(rolling, 6) == learn.views_at(every_15_min, 6) == 24
+
+
 def test_without_retention_data_lifts_are_views_alone():
     vids = [_video(i, 130, "earthquake") for i in range(4)] + [_video(10 + i, 100, "death") for i in range(4)]
     out = learn.learn(vids)
