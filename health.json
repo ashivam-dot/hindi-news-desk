@@ -1,21 +1,21 @@
 {
- "at": "2026-10-22T07:19:31+00:00",
+ "at": "2026-10-22T08:09:05+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 13 candidates from 19 trending",
-  "outlets: 1295 headlines from 31 feeds (19 owners), 5 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-priyanka-gandhi-protest",
-  "explainers: 10 kh- stories (on): kh-20261022-Q163225, kh-20261022-Q139857349, kh-20261022-Q1363, kh-20261022-Q7747; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Dussehra / Delhi-NCR: no Wikipedia article that can be its centre; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped",
+  "watch: 12 candidates from 19 trending",
+  "outlets: 1319 headlines from 31 feeds (19 owners), 6 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261020-tiger-shroff-attack, nw-20261021-priyanka-gandhi-protest",
+  "explainers: 9 kh- stories (on): kh-20261022-Q163225, kh-20261022-Q139857349, kh-20261022-Q553191, kh-20261022-Q1363; dropped: explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio’s India: fewer than 3 owners' headlines name it and the story; explainer PHP / PHP Shell Govts: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261022-Q163225: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "drop kh-20261022-Q1363: too low in Google News India's top stories (place 0.24, needs 0.35)",
-  "drop kh-20261022-Q1445: too low in Google News India's top stories (place 0.33, needs 0.35)",
+  "hold kh-20261022-Q1445: 4 Shorts today; the last 2 wait for 18:00 IST",
+  "hold kh-20261022-Q1363: 4 Shorts today; the last 2 wait for 18:00 IST",
+  "hold kh-20261022-Q553191: 4 Shorts today; the last 2 wait for 18:00 IST",
+  "drop kh-20261022-Q163225: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "hold kh-20261022-Q139857349: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "drop kh-20261022-Q7747: a world statement, politics or diplomacy story with no India connection",
-  "hold kh-20261022-Q324546-p2: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261022-Q139857349; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747, kh-20261022-Q324546-p2, kh-20261022-Q96418672",
-  "channel: about: done; playlists: 0 made, 0 Shorts added, 2 sections, 0 Shorts left (102 units this run, 102 today)"
+  "drop wk-Q1699148: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261022-Q139857349; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q96418672",
+  "channel: about, playlists done; nothing left to do"
  ]
 }
