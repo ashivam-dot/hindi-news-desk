@@ -7332,6 +7332,12 @@
      "views": 1,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 2.01,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -7351,12 +7357,37 @@
      "views": 2,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 1.1,
+     "views": 0,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "explainer",
    "category": "news",
    "region": "world",
    "lane": "naam-niyam",
+   "audience": "india",
+   "views_6h": null,
+   "views_24h": null
+  },
+  "mT_oesTc-4s": {
+   "id": "kh-20261022-Q79883",
+   "published_at": "2026-10-22T03:50:57+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.43,
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "explainer",
+   "category": "news",
+   "region": "world",
+   "lane": "other",
    "audience": "india",
    "views_6h": null,
    "views_24h": null
