@@ -74,3 +74,47 @@ def test_a_listed_short_marked_retired_before_the_read_back_is_checked_once_more
     calls = api["api"].updates
     cli.retire_listed(health)
     assert api["api"].updates == calls and len(health["steps"]) == 2  # done: never read again
+
+
+class TitleApi:
+    """One video's snippet on YouTube; `ignore` makes YouTube accept the update and keep the old title."""
+
+    def __init__(self, ignore=0):
+        self.snippet = {"channelId": config.CHANNEL_ID, "title": "old", "description": "d", "categoryId": "25",
+                        "tags": ["t"], "defaultLanguage": "hi"}
+        self.ignore, self.sent = ignore, []
+
+    def videos(self):
+        api = self
+
+        class Res:
+            def list(self, part, id):
+                return Call(lambda: {"items": [{"snippet": dict(api.snippet)}]})
+
+            def update(self, part, body):
+                def go():
+                    api.sent.append(body)
+                    if len(api.sent) > api.ignore:
+                        api.snippet.update(body["snippet"])
+                    return {}
+                return Call(go)
+        return Res()
+
+
+def test_a_listed_retitle_keeps_the_rest_of_the_snippet_reads_back_and_is_done_once(api, tmp_path, monkeypatch):
+    monkeypatch.setattr(youtube, "scopes", lambda: None)
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(cli, "RETITLE", tmp_path / "retitle.json")
+    cli.RETITLE.write_text(json.dumps([{"video_id": "V", "title": "new", "why": "unclear"}]))
+    ledger.save("published", [{"id": "s", "video_id": "V", "title": "old", "privacy": "public"}])
+    api["api"] = TitleApi(ignore=1)
+    health = {"steps": []}
+    cli.retitle_listed(health)
+    assert "does not read back" in health["steps"][0] and ledger.published()[0]["title"] == "old"
+    cli.retitle_listed(health)
+    sent = api["api"].sent[-1]["snippet"]
+    assert sent == {"title": "new", "description": "d", "categoryId": "25", "tags": ["t"], "defaultLanguage": "hi"}
+    row = ledger.published()[0]
+    assert row["title"] == "new" and row["old_title"] == "old" and row["retitled_why"] == "unclear"
+    cli.retitle_listed(health)
+    assert len(api["api"].sent) == 2 and len(health["steps"]) == 2  # done: never written again

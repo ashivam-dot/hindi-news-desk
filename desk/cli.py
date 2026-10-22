@@ -152,6 +152,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
 
 
 RETIRE = ROOT / "retire.json"
+RETITLE = ROOT / "retitle.json"
 
 
 def retire_listed(health: dict) -> None:
@@ -173,6 +174,30 @@ def retire_listed(health: dict) -> None:
         ledger.update_published(s["video_id"], {"privacy": "private", "retired_why": s["why"], "retire_read_back": got,
                                                 "retired_at": row.get("retired_at") or ledger.now()})
         health["steps"].append(f"retired {s['video_id']} ({got}): {s['why']}"[:300])
+
+
+def retitle_listed(health: dict) -> None:
+    """Give each upload retitle.json lists ({"video_id", "title", "why"}) its new title, once: a true Short whose
+    title the owner or a source re-check found unclear. A failure is noted and tried again next run."""
+    from . import youtube
+
+    specs = json.loads(RETITLE.read_text(encoding="utf-8")) if RETITLE.exists() else []
+    rows = ledger.published()
+    for s in specs:
+        row = next((r for r in rows if r.get("video_id") == s["video_id"]), None)
+        if row is None or row.get("retired_at") or (row.get("retitled_at") and row.get("title") == s["title"]):
+            continue
+        try:
+            got = youtube.retitle(s["video_id"], s["title"])
+        except Exception as exc:
+            health["steps"].append(f"retitle {s['video_id']}: {type(exc).__name__}: {exc}"[:300])
+            continue
+        if got == "missing":
+            health["steps"].append(f"retitle {s['video_id']}: no such video")
+            continue
+        ledger.update_published(s["video_id"], {"title": s["title"], "old_title": row.get("title"),
+                                                "retitled_at": ledger.now(), "retitled_why": s["why"]})
+        health["steps"].append(f"retitled {s['video_id']} ({got}): {s['why']}"[:300])
 
 
 def _advisory(health: dict, dry: bool) -> dict | None:
@@ -244,6 +269,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             except Exception as exc:  # the scorecard only reports; writing it must never stop a publish
                 health["steps"].append(f"review: {type(exc).__name__}: {exc}"[:300])
             retire_listed(health)
+            retitle_listed(health)
             if config.UNTAG:
                 from . import youtube
                 try:

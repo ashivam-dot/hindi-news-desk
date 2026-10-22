@@ -367,6 +367,37 @@ def retire(video_id: str) -> str:
     raise RuntimeError(f"{video_id} still reads back {status} after the update")
 
 
+def retitle(video_id: str, title: str) -> str:
+    """Give one of this channel's videos a new title, keeping its description, category, tags and languages; says
+    "same" when it already has it, "missing" when YouTube has no such video, else "retitled" once it reads back."""
+    listed = scopes()
+    if listed is not None and not listed & WRITE_SCOPES:
+        raise NoWriteScope("retitle: the YouTube sign-in has no youtube or youtube.force-ssl scope (videos.update)")
+    api = client()
+    identity(api)
+    items = api.videos().list(part="snippet", id=video_id).execute().get("items", [])
+    if not items:
+        return "missing"
+    snippet = items[0]["snippet"]
+    if snippet["channelId"] != config.CHANNEL_ID:
+        raise WrongChannel(f"{video_id} is on another channel")
+    if snippet["title"] == title:
+        return "same"
+    body = {"id": video_id, "snippet": {"title": title, "description": snippet.get("description", ""),
+                                        "categoryId": snippet.get("categoryId", CATEGORY),
+                                        "tags": snippet.get("tags") or []}}
+    for key in ("defaultLanguage", "defaultAudioLanguage"):
+        if snippet.get(key):
+            body["snippet"][key] = snippet[key]
+    api.videos().update(part="snippet", body=body).execute()
+    for attempt in range(2):
+        time.sleep(RETIRE_WAIT)
+        got = api.videos().list(part="snippet", id=video_id).execute().get("items", [])
+        if got and got[0]["snippet"]["title"] == title:
+            return "retitled"
+    raise RuntimeError(f"{video_id} does not read back the new title")
+
+
 def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_at: str | None = None) -> dict:
     """Upload and make public now, or with publish_at (ISO UTC, in the future) leave it private for YouTube to
     release at that time."""
