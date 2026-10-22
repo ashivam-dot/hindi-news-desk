@@ -340,6 +340,9 @@ ROLES = {"actor": ("actor", "actress"), "actress": ("actress", "actor"), "singer
          "minister": ("minister", "politician"), "politician": ("politician", "minister"),
          "pm": ("minister", "politician")}
 _ROLE = "|".join(ROLES)
+# After the name, "PM" is nearly always the next person's title in a list ("Elon Musk, PM Modi discuss Starlink"),
+# which had dropped a businessman's story as "not the pm the headlines name"; it counts only before the name.
+_AFTER_ROLE = "|".join(r for r in ROLES if r != "pm")
 # The same roles in Hindi headlines, whole words only (मंत्री is never read inside प्रधानमंत्री or मुख्यमंत्री, which
 # are listed as words of their own): dNGHjXMe1ng (2026-10-21) said "अभिनेता इमरान खान" while no English headline said
 # "actor", and was told with Pakistan's former prime minister's photos (Q155164, not the actor Q312781). "पूर्व पीएम
@@ -356,7 +359,7 @@ def headline_role(titles: list[str], name: str, hindi_titles: list[str] | None =
     n = re.escape(name)
     seen = Counter()
     for t in titles:
-        m = re.search(rf"\b({_ROLE})\s+{n}\b|\b{n},?\s+(?:the\s+|an?\s+)?({_ROLE})\b", t, re.I)
+        m = re.search(rf"\b({_ROLE})\s+{n}\b|\b{n},?\s+(?:the\s+|an?\s+)?({_AFTER_ROLE})\b", t, re.I)
         if m:
             seen[(m.group(1) or m.group(2)).lower()] += 1
     for t in hindi_titles or []:
@@ -391,24 +394,23 @@ def resolve_as(name: str, key: str, role: str) -> tuple[str, str, dict, bool] | 
 
 
 SAME_NAME_DAYS = 14
-SAME_STORY_WORDS = 2
 
 
 def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict] | None = None,
-                   now: datetime | None = None,
-                   story_keys: set[str] | None = None) -> tuple[str, str, dict, bool] | None:
+                   now: datetime | None = None) -> tuple[str, str, dict, bool] | None:
     """The centre the channel's Shorts of the last SAME_NAME_DAYS gave the same name, when it is not qid: one name,
     one person across a story (xaj3hgwcaF8 showed actor Imran Khan on his notice; dNGHjXMe1ng then told it with
     Q155164, Pakistan's former prime minister). Rows whose headlines or article name the name count, retired ones never; the qid most of them used
     wins (the latest on a tie), and only if it still passes resolve_as's checks: a centre item, fitting the role
-    the headlines give. With no role, a row counts only when it is this story: its headlines share SAME_STORY_WORDS
-    of story_keys besides the name (a Pakistan jail story is not the actor's notice, whatever the channel told last
-    week). None keeps qid."""
+    the headlines give. With no role in the headlines the channel's earlier Shorts never decide (None): telling a
+    namesake's story from shared words alone flipped Pakistan court and jail stories to the actor, and every word
+    list tried (2026-10-22, three adversarial reviews) left a flip. None keeps qid."""
     from . import ledger
 
+    if not role:
+        return None
     now = now or datetime.now(timezone.utc)
     pattern = re.compile(r"\b" + re.escape(name) + r"\b", re.I)
-    own = {k for k in story_keys or set() if not _generic(k)} - {w.lower() for w in name.split()}
     used, last = Counter(), {}
     for i, r in enumerate(ledger.published() if rows is None else rows):
         try:
@@ -421,9 +423,8 @@ def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict
         heads = list(r.get("headlines") or [])
         if not any(pattern.search(t) for t in [r["article"]] + heads):
             continue
-        if role or any(len(own & keys(h)[0]) >= SAME_STORY_WORDS for h in heads):
-            used[r["qid"]] += 1
-            last[r["qid"]] = (i, r["article"])
+        used[r["qid"]] += 1
+        last[r["qid"]] = (i, r["article"])
     if not used:
         return None
     best = max(used, key=lambda q: (used[q], last[q][0]))
@@ -431,7 +432,7 @@ def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict
     if best == qid:
         return None
     found = _item(article)
-    if not found or found[1] != best or (role and not fits_role(found[2], role)):
+    if not found or found[1] != best or not fits_role(found[2], role):
         return None
     return found + (indian(found[2]),)
 
@@ -522,7 +523,7 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
                     found = resolve_as(name, key, role)
                     if not found:
                         notes.append(f"explainer {name}: Wikipedia's {name} is not the {role} the headlines name")
-                if found and (again := consistent_qid(name, found[1], role, now=now, story_keys=core_keys(c))):
+                if found and (again := consistent_qid(name, found[1], role, now=now)):
                     notes.append(f"explainer {name}: {again[1]} as in the channel's recent Shorts, not {found[1]}")
                     found = again
             except Exception as exc:

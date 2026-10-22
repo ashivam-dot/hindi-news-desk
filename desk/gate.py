@@ -38,8 +38,8 @@ DEATH_SAID = ["died", "dies", "passed away", "passes away", "demise", "is no mor
 # A vandalised P570 is when outlets write "X is alive": a sentence that calls the death a hoax, a rumour or false, or
 # denies it, never states it, and an article with one never confirms it (the 2026-10-22 on-air review).
 DEATH_DENIED = ["hoax*", "fake", "false", "falsely", "rumour*", "rumor*", "alive", "deny", "denies", "denied",
-                "dismiss*", "not dead", "misinformation", "अफवाह*", "झूठ*", "फर्जी", "खंडन", "जिंदा", "जीवित",
-                "स्वस्थ", "सलामत"]
+                "dismiss*", "not dead", "has not died", "hasn't died", "did not die", "didn't die", "misinformation", "अफवाह*", "झूठ*", "फर्जी", "खंडन", "जिंदा", "जीवित",
+                "स्वस्थ", "सलामत", "निधन नहीं", "मौत नहीं"]
 DEATH_TALK = ["report*", "news", "claim*", "post*", "खबर*", "दावा*", "पोस्ट"]  # what a denial denies
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.

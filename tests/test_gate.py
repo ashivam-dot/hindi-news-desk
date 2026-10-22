@@ -201,6 +201,10 @@ def test_one_confirming_report_lets_a_death_through(monkeypatch):
     "Satish Shah death hoax: actor's team says reports of his demise are fake.",
     "सतीश शाह के निधन की खबर झूठी, परिवार ने कहा- वह स्वस्थ हैं।",
     "सतीश शाह की मौत की अफवाह, टीम ने किया खंडन।",
+    "Satish Shah has not died, his son says after posts claimed he passed away.",
+    "Satish Shah did not die in the crash, police said.",
+    "सतीश शाह का निधन नहीं हुआ, बेटे ने बताया।",
+    "सतीश शाह की मौत नहीं हुई है।",
 ])
 def test_a_sentence_that_denies_the_death_never_states_it(says):
     # The 2026-10-22 on-air review: a vandalised P570 is when outlets write "X is alive".

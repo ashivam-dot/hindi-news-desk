@@ -373,13 +373,12 @@ def _row(qid, article, days_ago, **more):
             "published_at": (NOW - timedelta(days=days_ago)).isoformat()} | more
 
 
-def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins(monkeypatch):
+def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins_only_with_a_role(monkeypatch):
     _stub_imran(monkeypatch)
     actor = _row("Q312781", "Imran Khan (actor)", 2)
-    notice = {"leave", "notice", "imran"}  # this story's own words (core_keys); the name's never count
 
-    def again(qid, rows, role=None, keys=notice):
-        return explain.consistent_qid("Imran Khan", qid, role, rows=rows, now=NOW, story_keys=keys)
+    def again(qid, rows, role="actor"):
+        return explain.consistent_qid("Imran Khan", qid, role, rows=rows, now=NOW)
     assert again("Q155164", [actor])[:2] == ("Imran Khan (actor)", "Q312781") and again("Q155164", [actor])[3]
     assert again("Q312781", [actor]) is None  # already the same
     assert again("Q155164", [_row("Q312781", "Imran Khan (actor)", 15)]) is None
@@ -388,16 +387,26 @@ def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins(monkeypa
     # The wrong Short used the namesake once; the right one twice: most rows win.
     wrong = _row("Q155164", "Imran Khan", 1)
     assert again("Q155164", [actor, actor, wrong])[1] == "Q312781"
-    # With no role, another story about the name is not this one: one shared word, or none, keeps the qid.
-    assert again("Q155164", [actor], keys={"jail", "sentence", "against"}) is None
-    assert again("Q155164", [actor], keys={"notice", "jail"}) is None
-    assert again("Q155164", [actor], keys=None) is None
+    # With no role the channel's earlier Shorts never decide (2026-10-22: shared court words flipped Pakistan stories).
+    assert again("Q155164", [actor], None) is None
     # Re-checked like resolve_as: headlines that call him a minister keep the minister.
     assert again("Q155164", [actor], "minister") is None
     from desk import ledger
-    monkeypatch.setattr(ledger, "published", lambda: [actor])
-    [c], notes = explain.find(IMRAN, NOW)
-    assert c["qid"] == "Q312781" and any("as in the channel's recent Shorts" in n for n in notes)
+    monkeypatch.setattr(ledger, "published", lambda: [actor, actor])
+    [c], notes = explain.find(IMRAN, NOW)  # Toshakhana: Pakistan's former prime minister, whatever the ledger says
+    assert c["qid"] == "Q155164" and not any("as in the channel's recent Shorts" in n for n in notes)
+
+
+def test_a_pm_listed_after_the_name_is_not_its_role():
+    """2026-10-22 review: "Elon Musk, PM Modi discuss Starlink" read Musk as a pm and dropped the story."""
+    for t, name in (("Elon Musk, PM Modi discuss Starlink India launch", "Elon Musk"),
+                    ("Trump, PM Modi hold talks on trade deal", "Trump"),
+                    ("Virat Kohli PM Modi meet ahead of World Cup", "Virat Kohli"),
+                    ("Elon Musk, PM to discuss Starlink launch", "Elon Musk")):
+        assert explain.headline_role([t], name) is None, t
+    assert explain.headline_role(["Former PM Imran Khan moved to hospital"], "Imran Khan") == "pm"
+    assert explain.headline_role(["Imran Khan, the actor, moves Bombay HC"], "Imran Khan") == "actor"
+    assert explain.headline_role(["Imran Khan Actor Gets Leave India Notice"], "Imran Khan") == "actor"
 
 
 @pytest.mark.parametrize("titles", [
