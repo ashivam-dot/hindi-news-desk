@@ -62,15 +62,22 @@ _HEDGE_AFTER = re.compile(r"\b(?:or more|or so|plus|feared|presumed|believed|rep
 def found(text: str, words: list[str]) -> str | None:
     """The first listed word in text (whole words; a trailing * allows any ending)."""
     low = hindi.norm(text)
+    return next((w.rstrip("*") for w in words if _at(low, [w])), None)
+
+
+def _at(low: str, words: list[str]) -> list[tuple[int, int]]:
+    """Where words occur in low, a hindi.norm text, as found matches them: (start, end), in order."""
+    spans = []
     for w in words:
         stem = hindi.norm(w.rstrip("*"))
-        for m in re.finditer(re.escape(stem), low):
-            before = low[m.start() - 1] if m.start() else " "
-            after = low[m.end()] if m.end() < len(low) else " "
-            if hindi._letter(before) or (not w.endswith("*") and hindi._letter(after)):
+        for m in re.finditer(re.escape(stem), low) if stem else ():
+            end = m.end()
+            while w.endswith("*") and end < len(low) and hindi._letter(low[end]):
+                end += 1
+            if (m.start() and hindi._letter(low[m.start() - 1])) or (end < len(low) and hindi._letter(low[end])):
                 continue
-            return w.rstrip("*")
-    return None
+            spans.append((m.start(), end))
+    return sorted(spans)
 
 
 def decorum(text: str, kind: str, agreed_toll: bool, hurt_ok: bool = False) -> list[str]:
@@ -107,6 +114,106 @@ def states_death(text: str, names: list[str]) -> str | None:
         if found(s, DEATH_SAID) and any(n and hindi.contains(s, n) for n in names):
             return s.strip()
     return None
+
+
+# A named person's demand, allegation, words or order are said only as the reporting gives them: YM2dyGiYNJQ ("राउत
+# की फडणवीस से इस्तीफे की मांग", 2026-10-20) gave Sanjay Raut the resignation demand Congress's Harshwardhan Sapkal
+# made; Raut alleged "jungle raj" and asked for President's Rule. Each claim: its Hindi words, then its English ones.
+CLAIMS = {
+    "demand": (["मांग", "मांगा", "मांगी", "मांगे"],
+               ["demand*", "call for", "calls for", "called for", "calling for", "sought", "seek*", "urg*",
+                "asked for", "asks for"]),
+    "allegation": (["आरोप", "आरोपों"], ["alleg*", "accus*", "charg*", "blam*"]),  # never आरोपी (the accused)
+    "statement": (["कहा", "कही", "कहना", "कहते", "बोले", "बोलीं", "बोला"],
+                  ["said", "says", "say", "told", "stated", "according to"]),
+    "order": (["आदेश", "आदेशों", "निर्देश", "निर्देशों"], ["order*", "direct*", "instruct*"]),
+}
+# What a claim is about, when its clause says: the reporting's sentence must say it too.
+OBJECTS = {
+    "resignation": (["इस्तीफ*"], ["resign*"]),
+    "President's Rule": (["राष्ट्रपति शासन"], ["President's Rule", "President’s Rule", "President Rule"]),
+    "arrest": (["गिरफ्तार*"], ["arrest*"]),
+    "probe": (["जांच"], ["probe*", "investigat*", "inquiry", "enquiry"]),
+    "apology": (["माफी"], ["apolog*"]),
+    "dismissal": (["बर्खास्त*"], ["dismiss*", "sack*"]),
+}
+# ने, की, का or के after a name marks who makes the claim ("राउत की ... मांग"); से, को or पर marks who it is put to.
+CLAIMANT = re.compile(r"\s*(?:ने|की|का|के)" + hindi._END)
+
+
+def _name_forms(p: dict) -> list[str]:
+    """A names entry as reports write it: in full, or by its last word (Raut for Sanjay Raut)."""
+    forms = [f for f in (p.get("hi"), p.get("en")) if f]
+    return forms + [f.split()[-1] for f in forms if len(f.split()) > 1 and len(f.split()[-1]) >= 3]
+
+
+def claims(text: str, names: list[dict]) -> list[tuple[dict, str, str | None, str]]:
+    """(names entry, claim, its OBJECTS key or None, the sentence) for each Hindi claim word in text that a listed name
+    makes. Within a sentence the claimant is the nearest name before the word that ने/की/का/के marks, skipping one
+    whose marker an object follows (फडणवीस के इस्तीफे: whose resignation, not who asks), or else a name right before
+    it ("राउत बोले"). The object is the first OBJECTS word between the claimant and the claim word, and after the
+    sentence's previous claim word."""
+    out = []
+    for s in SENTENCE.split(text or ""):
+        low = hindi.norm(s)
+        heard = []
+        for p in names:
+            heard += [(a, b, p) for a, b in _at(low, _name_forms(p))]
+        objects = [(a, b, k) for k, (hi, _) in OBJECTS.items() for a, b in _at(low, hi)]
+        last = 0
+        for start, end, claim in sorted((a, b, c) for c, (hi, _) in CLAIMS.items() for a, b in _at(low, hi)):
+            who = None
+            for a, b, p in sorted((h for h in heard if h[1] <= start), key=lambda h: -h[1]):
+                m = CLAIMANT.match(low, b)
+                if m and not any(o[0] == m.end() + 1 or o[0] == m.end() for o in objects):
+                    who = (b, p)
+                    break
+                if not low[b:start].strip(" ,:'\"‘’“”"):
+                    who = (b, p)
+                    break
+            if who:
+                what = next((k for a, _, k in objects if max(who[0], last) <= a < start), None)
+                out.append((who[1], claim, what, s[:200].strip()))
+            last = end
+    return out
+
+
+def _says(sentence: str, forms: list[str]) -> bool:
+    return bool(_at(hindi.norm(sentence), forms))
+
+
+def claim_backers(p: dict, claim: str, what: str | None, reports: list[dict], ground: str = "") -> list[str]:
+    """The owners whose reports have one sentence naming p, the claim and its object ("ground" when the
+    Wikipedia/Wikidata ground has it)."""
+    words = CLAIMS[claim][0] + CLAIMS[claim][1]
+    objs = OBJECTS[what][0] + OBJECTS[what][1] if what else None
+    names = _name_forms(p)
+
+    def backs(s: str) -> bool:
+        return _says(s, names) and _says(s, words) and (objs is None or _says(s, objs))
+
+    who = {r["owner"] for r in reports for s in SENTENCE.split(f"{r.get('title') or ''}. {r.get('text') or ''}")
+           if backs(s)}
+    return sorted(who) + (["ground"] if any(backs(s) for s in SENTENCE.split(ground or "")) else [])
+
+
+def unattributed(text: str, names: list[dict], reports: list[dict], ground: str = "") -> list[str]:
+    """Each claim in text (claims) no OWNERS_NEEDED owners' reports (nor the ground) give to the same person, as a
+    problem that shows the retry what the reporting does say."""
+    problems = []
+    for p, claim, what, clause in claims(text, names):
+        backers = claim_backers(p, claim, what, reports, ground)
+        if "ground" in backers or len(backers) >= OWNERS_NEEDED:
+            continue
+        about = f" ({what})" if what else ""
+        words = CLAIMS[claim][0] + CLAIMS[claim][1]
+        objs = OBJECTS[what][0] + OBJECTS[what][1] if what else []
+        said = next((s.strip() for r in reports for s in SENTENCE.split(r.get("text") or "")
+                     if _says(s, words) and (not objs or _says(s, objs))), None)
+        problems.append(f"\"{clause}\" gives {p.get('en') or p.get('hi')} a {claim}{about} that no {OWNERS_NEEDED} "
+                        f"outlets' reports give them ({len(backers)} do): say who made it as the reporting does"
+                        + (f" (\"{said[:160]}\")" if said else "") + ", or leave it out")
+    return problems
 
 
 def reported_values(reports: list[dict]) -> dict[str, list[str]]:

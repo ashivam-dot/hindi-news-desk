@@ -423,6 +423,20 @@ def test_the_drafts_own_title_never_falls_back_over_65_characters(tmp_path):
                        "death", False, recent=[])
 
 
+def test_a_draft_or_title_that_gives_a_demand_to_the_wrong_person_goes_back():
+    from .test_gate import RAUT_NAMES, RAUT_REPORTS, RAUT_RIGHT, RAUT_WRONG
+
+    beat = {"say": "फायरिंग के बाद राउत की फडणवीस से इस्तीफे की मांग, सपकाल बोले सरकार नाकाम।", "photo": 0}
+    d = draft(names=copy.deepcopy(NAMES) + RAUT_NAMES)
+    d["beats"].append(beat)
+    problems, _ = check(d, reports=RAUT_REPORTS)
+    assert any("Sanjay Raut a demand (resignation)" in p for p in problems)
+    assert any("Harshwardhan Sapkal a statement" in p for p in problems)  # no report has Sapkal saying it
+    args = (SUBJECT, SOURCE_EN, "incident", False, RAUT_REPORTS)
+    assert any("a demand (resignation)" in p for p in writer.title_problems(RAUT_WRONG, d, *args))
+    assert not any("reporting does" in p for p in writer.title_problems(RAUT_RIGHT, d, *args))
+
+
 def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):
     out, log, _ = write([["unsupported: पंडित दीनानाथ मंगेशकर", "कुन्दन लाल सहगल"]], tmp_path)
     assert out == draft() and log == []

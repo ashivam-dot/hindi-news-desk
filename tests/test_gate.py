@@ -194,3 +194,51 @@ def test_one_confirming_report_lets_a_death_through(monkeypatch):
                                  writer._since(date(2026, 10, 8)))
     assert row["url"] == item["url"] and row["name"] == "Ramesh Prasad Verma" and row["says"] == item["title"] + "."
     assert "text" not in row  # the scene keeps the sentence, not the article
+
+
+# YM2dyGiYNJQ (2026-10-20): the reporting gave the resignation demand to Congress's Sapkal; Raut alleged "jungle raj"
+# and asked for President's Rule.
+RAUT_NAMES = [{"hi": "टाइगर श्रॉफ", "en": "Tiger Shroff"}, {"hi": "संजय राउत", "en": "Sanjay Raut"},
+              {"hi": "देवेंद्र फडणवीस", "en": "Devendra Fadnavis"}, {"hi": "हर्षवर्धन सपकाल", "en": "Harshwardhan Sapkal"}]
+RAUT_REPORTS = [
+    {"owner": "The Hindu Group", "title": "Opposition targets Fadnavis after firing at Tiger Shroff's house",
+     "text": "Shiv Sena (UBT) MP Sanjay Raut alleged 'jungle raj' in Maharashtra and demanded President's Rule. "
+             "Maharashtra Congress chief Harshwardhan Sapkal demanded the resignation of Chief Minister Devendra "
+             "Fadnavis."},
+    {"owner": "Bennett, Coleman & Co.", "title": "Raut slams Fadnavis govt, says regime change needed",
+     "text": "Raut said regime change was needed and demanded President's Rule in the state. Sapkal sought "
+             "Fadnavis's resignation over the law and order situation."},
+    {"owner": "Living Media", "title": "टाइगर श्रॉफ के घर फायरिंग पर सियासत",
+     "text": "संजय राउत ने महाराष्ट्र में 'जंगल राज' का आरोप लगाया और राष्ट्रपति शासन की मांग की।"},
+]
+RAUT_WRONG = "Tiger Shroff: फायरिंग के बाद राउत की फडणवीस से इस्तीफे की मांग"
+RAUT_RIGHT = "Tiger Shroff: फायरिंग के बाद राउत ने लगाया 'जंगल राज' का आरोप, राष्ट्रपति शासन की मांग"
+
+
+def test_a_demand_given_to_the_wrong_person_is_refused():
+    [(who, claim, what, _)] = gate.claims(RAUT_WRONG, RAUT_NAMES)
+    assert (who["en"], claim, what) == ("Sanjay Raut", "demand", "resignation")  # Fadnavis is asked, not asking
+    [problem] = gate.unattributed(RAUT_WRONG, RAUT_NAMES, RAUT_REPORTS)
+    assert "Sanjay Raut a demand (resignation)" in problem and "Sapkal demanded the resignation" in problem
+    assert gate.claim_backers(RAUT_NAMES[3], "demand", "resignation", RAUT_REPORTS) == ["Bennett, Coleman & Co.",
+                                                                                       "The Hindu Group"]
+    # ने marks Raut as the one demanding; फडणवीस के इस्तीफे is whose resignation.
+    assert gate.unattributed("राउत ने फडणवीस के इस्तीफे की मांग की।", RAUT_NAMES, RAUT_REPORTS)
+
+
+def test_a_claim_attributed_as_the_reporting_does_passes():
+    found = [(w["en"], c, o) for w, c, o, _ in gate.claims(RAUT_RIGHT, RAUT_NAMES)]
+    assert found == [("Sanjay Raut", "allegation", None), ("Sanjay Raut", "demand", "President's Rule")]
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS) == []
+    assert gate.unattributed("सपकाल ने फडणवीस के इस्तीफे की मांग की।", RAUT_NAMES, RAUT_REPORTS) == []
+
+
+def test_one_owner_is_not_enough_and_a_claim_needs_a_named_claimant():
+    # In English only The Hindu has Raut alleging anything; the Hindi report's owner was the second.
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS[:2])
+    # The Wikipedia ground backs a claim on its own, as it backs a name or a number.
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS[:2],
+                             ground="Raut alleged jungle raj in the state.") == []
+    # आरोपी is the accused, not an allegation; a demand no listed name makes is no one's claim.
+    assert gate.claims("पुलिस ने राउत के घर के पास से दो आरोपी पकड़े।", RAUT_NAMES) == []
+    assert gate.claims("मुंबई में बिजली की मांग बढ़ी।", RAUT_NAMES) == []

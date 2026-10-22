@@ -571,7 +571,8 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
             if re.search(r"\b" + token + r"\b", text) or token.lower() in listed.split():
                 problems.append(f"never name a perpetrator ({token})")
     problems += gate.decorum(text, "incident" if kind in ("incident", "protest") else kind, agreed_toll, hurt_ok)
-    own = (draft.get("title") or "").strip().strip('"')
+    problems += gate.unattributed(text, names, reports, ground_en + "\n" + ground_hi)
+    own =(draft.get("title") or "").strip().strip('"')
     if len(own) > TITLE_MAX:  # the draft's own title is retitle's fallback
         problems.append(f"the title has {len(own)} characters; keep it to {TITLE_AIM[0]}-{TITLE_AIM[1]} (never over "
                         f"{TITLE_MAX})")
@@ -696,6 +697,7 @@ def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind:
     if not named:
         problems.append("it names no one and nothing from the story")
     problems += gate.decorum(title, "incident" if kind in ("incident", "protest") else kind, agreed_toll)
+    problems += gate.unattributed(title, names, reports or [], ground_en)
     if STATED_CAUSE.search(title) and not ATTRIBUTED.search(title) and "?" not in title:
         problems.append("it states a cause as fact: say who gives it (\"... के मुताबिक\", \"... बोले\") or leave the "
                         "cause out")
