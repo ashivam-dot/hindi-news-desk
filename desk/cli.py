@@ -147,6 +147,10 @@ RETIRE = ROOT / "retire.json"
 RETITLE = ROOT / "retitle.json"
 
 
+# A retirement that fails this many runs is left to Studio: each try costs up to two status updates (100 units).
+RETIRE_TRIES = 4
+
+
 def retire_listed(health: dict) -> None:
     """Make private each upload retire.json lists ({"video_id", "why"}) that the ledger has not retired yet: a Short
     the owner found wrong, whose story is too old to remake. A failure is noted and tried again next run."""
@@ -156,15 +160,19 @@ def retire_listed(health: dict) -> None:
     rows = ledger.published()
     for s in specs:
         row = next((r for r in rows if r.get("video_id") == s["video_id"]), None)
-        if row is None or row.get("retire_page_read"):  # rows retired before the page read-back are read once more
+        if row is None or row.get("retire_public_read"):  # rows retired before this read-back are read once more
+            continue
+        if row.get("retire_tries", 0) >= RETIRE_TRIES:
+            health["steps"].append(f"retire {s['video_id']}: failed {RETIRE_TRIES} runs; make it private in Studio")
             continue
         try:
             got = youtube.retire(s["video_id"])
         except Exception as exc:
+            ledger.update_published(s["video_id"], {"retire_tries": row.get("retire_tries", 0) + 1})
             health["steps"].append(f"retire {s['video_id']}: {type(exc).__name__}: {exc}"[:300])
             continue
         ledger.update_published(s["video_id"], {"privacy": "private", "retired_why": s["why"], "retire_read_back": got,
-                                                "retire_page_read": True,
+                                                "retire_public_read": got != youtube.PAGE_UNREAD,
                                                 "retired_at": row.get("retired_at") or ledger.now()})
         health["steps"].append(f"retired {s['video_id']} ({got}): {s['why']}"[:300])
 
