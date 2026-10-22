@@ -1,22 +1,21 @@
 {
- "at": "2026-10-22T05:38:00+00:00",
+ "at": "2026-10-22T06:12:43+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 72 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.215, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:attack': {'n': 11, 'lift': 1.35, 'typical_views_24h': 101}, 'category:diplomacy': {'n': 4, 'lift': 1.046, 'typical_views_24h': 49}, 'category:economy': {'n': 5, 'lift': 0.835, 'typical_views_24h': 26, 'n_retention': 5, 'typical_view_pct': 36.",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 10 candidates from 14 trending",
-  "outlets: 1233 headlines from 30 feeds (19 owners), 6 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-priyanka-gandhi-protest",
-  "explainers: 7 kh- stories (on): kh-20261022-Q10218, kh-20261022-Q1363, kh-20261022-Q1209093, kh-20261022-Q1340361; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped",
+  "watch: 11 candidates from 17 trending",
+  "outlets: 1267 headlines from 31 feeds (19 owners), 7 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-priyanka-gandhi-protest",
+  "explainers: 9 kh- stories (on): kh-20261022-Q1363, kh-20261022-Q607685, kh-20261022-Q163225, kh-20261022-Q1445; dropped: explainer CJP's Das Ranka / CJP's Das Ranka: no Wikipedia article that can be its centre; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261022-Q1363: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "hold kh-20261022-Q10218: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "drop kh-20261022-Q1340361: too low in Google News India's top stories (place 0.15, needs 0.35)",
-  "drop kh-20261022-Q1209093: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261022-Q51993: a world statement, politics or diplomacy story with no India connection",
+  "hold kh-20261022-Q1445: 4 Shorts today; the last 2 wait for 18:00 IST",
+  "hold kh-20261022-Q163225: 4 Shorts today; the last 2 wait for 18:00 IST",
+  "drop kh-20261022-Q1340361: too low in Google News India's top stories (place 0.20, needs 0.35)",
+  "drop kh-20261022-Q7747: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261022-Q24083484: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q10218",
-  "channel: about: done; playlists: 0 made, 0 Shorts added, 0 sections, 0 Shorts left; unit cap reached (600 a run, 1500 a day); the rest goes on next run (2 units this run, 1474 today)"
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747",
+  "channel: about: done; playlists: 0 made, 0 Shorts added, 0 sections, 0 Shorts left; unit cap reached (600 a run, 1500 a day); the rest goes on next run (2 units this run, 1476 today)"
  ]
 }
