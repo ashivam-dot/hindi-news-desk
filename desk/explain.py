@@ -353,28 +353,30 @@ HINDI_ROLES = {"अभिनेता": "actor", "अभिनेत्री": 
 _HINDI_ROLE = re.compile(r"(?<![\wऀ-ॿ])(" + "|".join(HINDI_ROLES) + r")(?![\wऀ-ॿ])")
 
 
-def headline_role(titles: list[str], name: str, hindi_titles: list[str] | None = None) -> str | None:
-    """The role most of the story's own headlines put right before or after the name ("actor Imran Khan"). Only when
-    they give none, the one role every Hindi headline gives with a HINDI_ROLES word right before a Hindi spelling of
-    the name ("अभिनेता इमरान खान"); Hindi headlines that disagree give none. The Hindi ones are this run's, not only
-    this story's, so they never outvote the story's own (2026-10-22 review: a "पूर्व पीएम इमरान खान" jail headline
-    turned the actor's Bombay HC story into Pakistan's former prime minister's)."""
+def headline_role(titles: list[str], name: str) -> str | None:
+    """The role most of the story's own headlines put right before or after the name ("actor Imran Khan")."""
     n = re.escape(name)
     seen = Counter()
     for t in titles:
         m = re.search(rf"\b({_ROLE})\s+{n}\b|\b{n},?\s+(?:the\s+|an?\s+)?({_AFTER_ROLE})\b", t, re.I)
         if m:
             seen[(m.group(1) or m.group(2)).lower()] += 1
-    if seen:
-        return seen.most_common(1)[0][0]
-    hindi_seen = set()
-    for t in dict.fromkeys(hindi_titles or []):
+    return seen.most_common(1)[0][0] if seen else None
+
+
+def hindi_role(name: str, hindi_titles: list[str]) -> str | None:
+    """The one role this run's Hindi headlines give the name with a HINDI_ROLES word right before a close Hindi
+    spelling of it ("अभिनेता इमरान खान"; आमिर or इरफान खान is never Imran Khan), or None when they give none or
+    disagree. These headlines are the run's, not only the story's, so the role only ever holds a story back
+    (explain.find), never chooses its person."""
+    seen = set()
+    for t in dict.fromkeys(hindi_titles):
         for m in _HINDI_ROLE.finditer(t):
             after = re.findall(r"[ऀ-ॿ]+", t[m.end():])[:len(name.split())]
-            if len(after) == len(name.split()) and all(map(hindi.sounds_alike, after, name.split())):
-                hindi_seen.add(HINDI_ROLES[m.group(1)])
+            if len(after) == len(name.split()) and all(hindi.likeness(h, e) >= 0.9 for h, e in zip(after, name.split())):
+                seen.add(HINDI_ROLES[m.group(1)])
                 break
-    return next(iter(hindi_seen)) if len(hindi_seen) == 1 else None
+    return next(iter(seen)) if len(seen) == 1 else None
 
 
 def fits_role(ent: dict, role: str) -> bool:
@@ -472,17 +474,24 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
             looked += 1
             if leads is None:
                 leads = lead_items(now)
-            # The role is read before the centre is looked up: from the story's own headlines, else from this run's
-            # Hindi items and Google News India's Hindi lead headlines, by a role word before the name.
+            # The role is read before the centre is looked up, from the story's own headlines; this run's Hindi items
+            # and Google News India's Hindi lead headlines can only hold the story back (hindi_role).
             lead_hi_ = [h["title"] for f, rows in leads.items() if f in news.HINDI_FEEDS for h in rows]
             try:
                 found = resolve(name, key)
-                role = headline_role(titles, name, [i["title"] for i in hindi_items] + lead_hi_)
-                if found and role and HUMAN in {x["value"] for x in wiki.claims(found[2], "P31")} \
-                        and not fits_role(found[2], role):
+                role = headline_role(titles, name)
+                hi_role = None if role else hindi_role(name, [i["title"] for i in hindi_items] + lead_hi_)
+                human = found and HUMAN in {x["value"] for x in wiki.claims(found[2], "P31")}
+                if human and role and not fits_role(found[2], role):
                     found = resolve_as(name, key, role)
                     if not found:
                         notes.append(f"explainer {name}: Wikipedia's {name} is not the {role} the headlines name")
+                elif human and hi_role and not fits_role(found[2], hi_role):
+                    # dNGHjXMe1ng told the actor's notice with Pakistan's former PM; the reverse (a Pakistan jail
+                    # story told as the actor, 2026-10-22 review) is as wrong. Two people may own the name: skip.
+                    notes.append(f"explainer {name}: Hindi headlines name a {hi_role} {name}, Wikipedia's {name} is "
+                                 "not one; whose story it is stays unknown, so it is skipped")
+                    found = None
             except Exception as exc:
                 notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
                 continue

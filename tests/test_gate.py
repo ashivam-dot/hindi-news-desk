@@ -364,3 +364,36 @@ def test_a_statement_backed_in_other_spellings_or_by_a_pronoun_is_attributed():
              "resignation."}, {"owner": "B", "text": "हर्षवर्धन सपकाल ने फडणवीस के इस्तीफे की मांग की।"}]
     assert gate.unattributed("संजय राउत ने फडणवीस के इस्तीफे की मांग की।", [{"en": "Sanjay Raut", "hi": "संजय राउत"}],
                              raut)
+
+
+@pytest.mark.parametrize("text", [
+    "Satish Shah passes away?. The veteran actor is hale and hearty and at home in Mumbai, his son told reporters.",
+    "सतीश शाह का निधन?. वे घर पर आराम कर रहे हैं और बिल्कुल ठीक हैं।",
+    "Satish Shah hasn't passed away, confirms his son.",
+    "सतीश शाह की मौत की खबरें गलत।",
+    "सतीश शाह के निधन की खबर निकली गलत।",
+    "Viral posts claimed that Satish Shah died on Monday. His family said the reports are incorrect.",
+    "Several posts claimed that veteran actor Satish Shah died on Monday. Earlier today, his daughter denied the reports.",
+    "सोशल मीडिया पर सतीश शाह के निधन की खबर वायरल हुई। उनकी बेटी ने पहले ही इन खबरों का खंडन कर दिया है।",
+])
+def test_the_second_reviews_hoaxes_never_confirm_a_death(text):
+    names = ["Satish Shah", "सतीश शाह"]
+    assert gate.denies_death(text, names)
+    assert not gate.states_death("Satish Shah passes away?.", names)  # a stored "says" is refused again too
+
+
+def test_a_pronoun_or_a_sound_alike_never_gives_raut_another_persons_demand():
+    """2026-10-22 second review: रात ("night") sounded like Raut, and "Sapkal hit back at Raut. He demanded ..."
+    gave Raut the resignation demand."""
+    names = [{"en": "Sanjay Raut", "hi": "संजय राउत"}, {"en": "Devendra Fadnavis", "hi": "देवेंद्र फडणवीस"},
+             {"en": "Harshwardhan Sapkal", "hi": "हर्षवर्धन सपकाल"}]
+    line = "संजय राउत ने फडणवीस के इस्तीफे की मांग की।"
+    for reports in (
+        [{"owner": "A", "text": "देर रात कांग्रेस प्रदेश अध्यक्ष हर्षवर्धन सपकाल ने फडणवीस के इस्तीफे की मांग की।"},
+         {"owner": "B", "text": "सोमवार रात सपकाल ने मुख्यमंत्री फडणवीस से इस्तीफे की मांग की।"}],
+        [{"owner": "A", "text": "Harshwardhan Sapkal hit back at Sanjay Raut. He demanded Fadnavis's resignation."},
+         {"owner": "B", "text": "सपकाल ने राउत पर पलटवार किया। उन्होंने फडणवीस के इस्तीफे की मांग की।"}],
+        [{"owner": "A", "text": "संजय राउत मीडिया से मिले। उनके बाद सपकाल ने फडणवीस से इस्तीफे की मांग की।"},
+         {"owner": "B", "text": "संजय राउत मीडिया से मिले। उनके बाद सपकाल ने फडणवीस से इस्तीफे की मांग की।"}],
+    ):
+        assert gate.unattributed(line, names, reports), reports[0]["text"]

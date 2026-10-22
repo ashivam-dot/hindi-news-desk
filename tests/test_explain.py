@@ -332,30 +332,47 @@ def _stub_imran(monkeypatch, hindi_lead=""):
         [{"title": hindi_lead, "outlets": 2}] if hindi_lead and feed in news.HINDI_FEEDS else []))
 
 
-def test_a_hindi_role_word_picks_the_actor_not_the_namesake(monkeypatch):
+def test_a_hindi_role_word_that_wikipedias_person_does_not_fit_holds_the_story(monkeypatch):
+    """dNGHjXMe1ng told the actor's notice with Pakistan's former PM; a Hindi role never picks the person (the run's
+    Hindi headlines may be another story's), so the story is skipped instead of guessed."""
     _stub_imran(monkeypatch)
-    [c], _ = explain.find(IMRAN + IMRAN_HI, NOW)
-    assert c["qid"] == "Q312781" and c["region"] == "india"
+    found, notes = explain.find(IMRAN + IMRAN_HI, NOW)
+    assert not any(c["qid"] in ("Q155164", "Q312781") for c in found) and any("stays unknown" in n for n in notes)
     _stub_imran(monkeypatch)
     [c], _ = explain.find(IMRAN, NOW)
     assert c["qid"] == "Q155164"  # with no role anywhere Wikipedia's Imran Khan stands
-    # A Google News India Hindi lead headline is read before resolution too.
-    _stub_imran(monkeypatch, hindi_lead="अभिनेता इमरान खान को भारत छोड़ने का नोटिस")
+    _stub_imran(monkeypatch, hindi_lead="अभिनेता इमरान खान को भारत छोड़ने का नोटिस")  # a Hindi lead headline too
+    found, _ = explain.find(IMRAN, NOW)
+    assert not any(c["qid"] in ("Q155164", "Q312781") for c in found)
+    _stub_imran(monkeypatch, hindi_lead="पूर्व पीएम इमरान खान जेल में")  # a Hindi role that fits changes nothing
     [c], _ = explain.find(IMRAN, NOW)
-    assert c["qid"] == "Q312781"
+    assert c["qid"] == "Q155164"
 
 
+@pytest.mark.parametrize("hindi", [
+    [item("bhaskar", "अभिनेता इमरान खान पहुंचे बॉम्बे हाई कोर्ट, भारत छोड़ने के नोटिस को चुनौती")],
+    [item("bhaskar", "अभिनेता आमिर खान की नई फिल्म का ट्रेलर रिलीज")],
+])
+def test_a_pakistan_story_is_never_told_as_the_actor_from_another_storys_hindi_headline(monkeypatch, hindi):
+    """2026-10-22 second review: one run-wide "अभिनेता इमरान/आमिर खान" headline turned an Adiala jail story into the
+    Bollywood actor's."""
+    _stub_imran(monkeypatch)
+    pak = [item("ht", "PTI founder Imran Khan moved to hospital from Adiala jail"),
+           item("thehindu", "Imran Khan shifted to hospital from Adiala jail, says PTI", 2),
+           item("ndtv", "PTI says founder Imran Khan in hospital after Adiala jail", 3)]
+    found, _ = explain.find(pak + hindi, NOW)
+    assert all(c["qid"] != "Q312781" for c in found)
 def test_hindi_role_words_are_whole_words_before_the_name():
-    assert explain.headline_role([], "Imran Khan", ["अभिनेता इमरान खान ने कोर्ट का रुख किया"]) == "actor"
-    assert explain.headline_role([], "L Murugan", ["केंद्रीय मंत्री एल मुरुगन का इस्तीफा"]) == "minister"
-    assert explain.headline_role([], "Imran Khan", ["पूर्व प्रधानमंत्री इमरान खान जेल में"]) == "pm"
-    assert explain.headline_role([], "Imran Khan", ["पूर्व पीएम इमरान खान जेल में"]) == "pm"
-    assert explain.headline_role([], "Imran Khan", ["जेल में इमरान खान की तबीयत बिगड़ी"]) is None
+    assert explain.hindi_role("Imran Khan", ["अभिनेता इमरान खान ने कोर्ट का रुख किया"]) == "actor"
+    assert explain.hindi_role("L Murugan", ["केंद्रीय मंत्री एल मुरुगन का इस्तीफा"]) == "minister"
+    assert explain.hindi_role("Imran Khan", ["पूर्व प्रधानमंत्री इमरान खान जेल में"]) == "pm"
+    assert explain.hindi_role("Imran Khan", ["पूर्व पीएम इमरान खान जेल में"]) == "pm"
+    assert explain.hindi_role("Imran Khan", ["जेल में इमरान खान की तबीयत बिगड़ी"]) is None
+    assert explain.hindi_role("Imran Khan", ["अभिनेता सलमान खान ने इमरान खान का साथ दिया"]) is None
+    for other in ("अभिनेता आमिर खान की फिल्म", "अभिनेता इरफान खान की पुण्यतिथि"):
+        assert explain.hindi_role("Imran Khan", [other]) is None, other
     assert explain.headline_role(["Former Pakistan PM Imran Khan moved to hospital"], "Imran Khan") == "pm"
-    assert explain.headline_role([], "Imran Khan", ["अभिनेता सलमान खान ने इमरान खान का साथ दिया"]) is None
-    assert explain.headline_role(["Actor Imran Khan gets notice"], "Imran Khan") == "actor"  # the English path
-
-
+    assert explain.headline_role(["Actor Imran Khan gets notice"], "Imran Khan") == "actor"
 def test_occupations_only_speak_when_there_is_no_description(monkeypatch):
     jobs = {"Q82955": {"labels": {"en": {"value": "politician"}}}, "Q33999": {"labels": {"en": {"value": "actor"}}}}
     monkeypatch.setattr(wiki, "entities", lambda ids: {q: jobs[q] for q in ids if q in jobs})
@@ -399,11 +416,8 @@ def test_another_storys_hindi_headline_never_outvotes_the_storys_own_role(monkey
 
 def test_hindi_headlines_that_disagree_give_no_role():
     hi = ["अभिनेता इमरान खान को नोटिस", "पूर्व पीएम इमरान खान जेल में", "अभिनेता इमरान खान को नोटिस"]
-    assert explain.headline_role([], "Imran Khan", hi) is None
-    assert explain.headline_role([], "Imran Khan", hi[:1] * 3) == "actor"
-    assert explain.headline_role(["Former PM Imran Khan moved"], "Imran Khan", hi[:1]) == "pm"  # the story's own wins
-
-
+    assert explain.hindi_role("Imran Khan", hi) is None
+    assert explain.hindi_role("Imran Khan", hi[:1] * 3) == "actor"
 def test_a_pm_listed_after_the_name_is_not_its_role():
     """2026-10-22 review: "Elon Musk, PM Modi discuss Starlink" read Musk as a pm and dropped the story."""
     for t, name in (("Elon Musk, PM Modi discuss Starlink India launch", "Elon Musk"),

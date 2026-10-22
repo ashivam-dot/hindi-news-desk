@@ -432,12 +432,13 @@ def test_a_draft_or_title_that_gives_a_demand_to_the_wrong_person_goes_back():
     problems, _ = check(d, reports=RAUT_REPORTS)
     assert any("Sanjay Raut a demand (resignation)" in p for p in problems)
     assert any("Harshwardhan Sapkal a statement" in p for p in problems)  # no report has Sapkal saying it
-    # The last draft leaves the lint out: it misses spellings and "police said", so it never costs the story alone.
-    last, _ = check(d, reports=RAUT_REPORTS, attribution=False)
-    assert not any("reporting does" in p for p in last)
     args = (SUBJECT, SOURCE_EN, "incident", False, RAUT_REPORTS)
     assert any("a demand (resignation)" in p for p in writer.title_problems(RAUT_WRONG, d, *args))
     assert not any("reporting does" in p for p in writer.title_problems(RAUT_RIGHT, d, *args))
+    # A draft whose own title misattributes never falls back to it when no option passes (the run tries again).
+    with pytest.raises(ValueError, match="attribution check"):
+        writer.retitle(FakePen([], [RAUT_WRONG]), dict(d, title=RAUT_WRONG), SUBJECT, SOURCE_EN, "incident", False,
+                       RAUT_REPORTS, recent=[])
 
 
 def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):
