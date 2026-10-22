@@ -36,7 +36,7 @@ def tiger_cast(own: int = 3):
 
 def test_each_beat_shows_who_or_where_it_names():
     subject, cast, at = tiger_cast()
-    views = visuals.assign(TIGER, subject, cast, first=0)
+    views = visuals.assign_legacy(TIGER, subject, cast, first=0)
     mains = [v[0] for v in views]
     assert mains[0] == 0 and at["mumbai"] in views[0]
     assert mains[1] in subject and mains[1] != 0
@@ -51,7 +51,7 @@ def test_each_beat_shows_who_or_where_it_names():
 def test_the_picture_that_closed_a_beat_never_opens_the_next():
     subject, cast, at = tiger_cast()
     beats = TIGER[:5] + [TIGER[5], {"say": "पुलिस ने आगे की जांच शुरू कर दी है।", "photo": 0}]
-    views = visuals.assign(beats, subject, cast, first=0)
+    views = visuals.assign_legacy(beats, subject, cast, first=0)
     flat = [i for v in views for i in v]
     assert all(a != b for a, b in zip(flat, flat[1:]))
     assert at["police"] in views[6]
@@ -64,7 +64,7 @@ def test_a_beat_that_only_quotes_the_police_shows_its_place_and_never_another_fo
              {"say": "पुलिस के अनुसार, आरोपी कोटा पहुंचे और वहां ट्रेन में सवार हुए थे।", "photo": 0},
              {"say": "राजस्थान पुलिस ने बताया कि तीनों आरोपी पकड़े गए।", "photo": 0},
              {"say": "मुंबई पुलिस आरोपियों से पूछताछ कर रही है।", "photo": 0}]
-    views = visuals.assign(beats, subject, cast, first=0)
+    views = visuals.assign_legacy(beats, subject, cast, first=0)
     assert views[1][0] != at["police"] and at["police"] not in views[2]
     assert views[3][0] == at["police"]
     assert len(views[1]) == 2 and not set(views[1]) & set(subject)
@@ -80,23 +80,23 @@ def test_a_beat_that_does_not_name_the_storys_person_never_shows_their_portrait(
              {"say": "इस फायरिंग में दो लोग घायल हुए थे जो अस्पताल में हैं।", "photo": 2},
              {"say": "पुलिस के मुताबिक आरोपी कोटा के रास्ते भाग रहे थे।", "photo": 0},
              {"say": "टाइगर श्रॉफ ने बाद में शूटिंग फिर शुरू की।", "photo": 1}]
-    views = visuals.assign(beats, subject, cast, first=0, person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
+    views = visuals.assign_legacy(beats, subject, cast, first=0, person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
     assert views[1][0] == at["police"]
     assert all(not set(v) & set(subject) for v in views[1:4]), views
     assert views[4][0] in subject
     # Without the person's names, a beat that names nobody falls back on the story's own photos as before.
-    assert visuals.assign(beats, subject, cast, first=0)[2][0] in subject
+    assert visuals.assign_legacy(beats, subject, cast, first=0)[2][0] in subject
 
 
 def test_a_lone_portrait_still_alternates_with_maps_and_never_fills_every_beat():
     subject, cast, at = tiger_cast(own=1)
-    views = visuals.assign(TIGER, subject, cast, first=0)
+    views = visuals.assign_legacy(TIGER, subject, cast, first=0)
     assert sum(v[0] == 0 for v in views) <= 2
     assert len({i for v in views for i in v}) >= 5
 
 
 def test_with_no_cast_the_own_photos_rotate():
-    views = visuals.assign(TIGER, [0, 1, 2], [], first=0)
+    views = visuals.assign_legacy(TIGER, [0, 1, 2], [], first=0)
     mains = [v[0] for v in views]
     assert all(a != b for a, b in zip(mains, mains[1:]))
     assert set(mains) == {0, 1, 2}
@@ -142,7 +142,7 @@ def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
     # "मुम्बई के जुहू": the beat shows Juhu on Mumbai's map, not Mumbai's centre, and no route between them.
     cast = [{"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [3], "near": [5]},
             {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [5], "near": [6], "inside": "Mumbai"}]
-    views = visuals.assign([{"say": "x", "photo": 0}, {"say": "यह मुम्बई के जुहू में हुआ।", "photo": 0},
+    views = visuals.assign_legacy([{"say": "x", "photo": 0}, {"say": "यह मुम्बई के जुहू में हुआ।", "photo": 0},
                             {"say": "मुम्बई पुलिस जांच कर रही है।", "photo": 0}], [0, 1], cast, first=0)
     assert views[1][0] == 5 and 3 not in views[1]
 
@@ -168,7 +168,7 @@ def test_a_named_landmark_shows_its_photo_then_its_map_and_a_route_still_gets_th
     cast = [{"en": "Kota Junction", "hi": "कोटा जंक्शन", "kind": "place", "photos": [4], "near": [], "sight": [3]},
             {"en": "Surat", "hi": "सूरत", "kind": "place", "photos": [5], "near": []},
             {"kind": "route", "pair": ("Surat", "Kota Junction"), "photos": [6]}]
-    views = visuals.assign([{"say": "x", "photo": 0}, {"say": "वे कोटा जंक्शन पर पकड़े गए।", "photo": 0},
+    views = visuals.assign_legacy([{"say": "x", "photo": 0}, {"say": "वे कोटा जंक्शन पर पकड़े गए।", "photo": 0},
                             {"say": "वे सूरत से कोटा जंक्शन तक गए।", "photo": 0}], [0, 1], cast, first=0)
     assert views[1] == [3, 4]
     assert views[2][0] == 6 and 3 in views[2]

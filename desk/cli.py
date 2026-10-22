@@ -46,7 +46,7 @@ def prepare(target: str | dict):
     short.scene.setdefault("article", target.get("title"))
     for key in ("replaces", "remake_of", "case", "case_story", "angle", "hook", "lane", "audience", "priority",
                 "series"):
-        if target.get(key):
+        if target.get(key) and not (key == "hook" and key in short.scene):  # writer.hook_said kept it or not
             short.scene[key] = target[key]
     work = WORK / short.id
     work.mkdir(parents=True, exist_ok=True)

@@ -22,8 +22,8 @@ from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import (config, explain, faces, gate, gemini, hindi, ledger, llm, media, orbitwire, outlets, stories, trends,
-               visuals, wiki)
+from . import (config, explain, faces, gate, gemini, hindi, ledger, llm, match, media, orbitwire, outlets, stories,
+               trends, visuals, wiki)
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -199,8 +199,11 @@ RULES = """RULES (all mandatory):
 - names: list EVERY proper noun you used (people, places, organisations, works, events, awards) as
   {{"hi": the name exactly as written in your Hindi text, "en": the same name exactly as the English SOURCE writes
   it}}. Where HINDI NAMES gives a Hindi spelling, use that spelling.
-- photo: the index of the PHOTO that best fits the beat. Beat 1 uses photo {best}. Use every photo at least once if
-  you can, and the same photo at most twice.
+- photo: the index of the PHOTO that best fits the beat. Beat 1 uses photo {best}. Never a photo marked "not to be
+  shown", and the same photo at most twice.
+- Each beat names the person, place or police it is about: the video shows only what a beat names, and a beat that
+  names nothing shown becomes a text card. Statements by organisations or countries become text cards, at most half
+  the beats.
 - caption: the beat's key fact as a news graphic shows it, 1 to 4 Hindi words: a number with its unit ("11.39%",
   "6 लाख घर", "2 घंटे"), a date, a decision ("उड़ान डायवर्ट"), a role or an honour. Prefer a number whenever the beat
   has one. Never a place name alone: viewers read a place over a photo as where the photo was taken. Beat 1's
@@ -406,8 +409,12 @@ def reporting_block(reports: list[dict] | None) -> str:
 
 def _messages(brief: str, facts: list[str], source_en: str, source_hi: str, photos: list[dict], name_hi: str,
               hi_names: dict[str, str], headlines: list[str] | None = None,
-              reports: list[dict] | None = None) -> list[dict]:
-    listing = "\n".join(f"{i}: {p['description'] or p['file']}" for i, p in enumerate(photos))
+              reports: list[dict] | None = None, vet: list[str] | None = None) -> list[dict]:
+    # "i: (year) description", so the writer sees the 1989 yearbook photo as 1989 (Rubio, 39714003987 opened on it).
+    vet = list(vet or [""] * len(photos)) + [""] * len(photos)
+    listing = "\n".join(f"{i}: " + (f"({y}) " if (y := media.year_of(p)) else "") + (p.get("description") or p["file"])
+                         + (f" (not to be shown: {vet[i]})" if vet[i] else "") for i, p in enumerate(photos))
+    best = next((i for i in range(len(photos)) if not vet[i]), 0)
     lead = ""
     if headlines:
         lead = ("\n\nTODAY'S LEAD HEADLINES (context only: use them to choose the angle and what to put first, but "
@@ -418,7 +425,7 @@ def _messages(brief: str, facts: list[str], source_en: str, source_hi: str, phot
             + ("\n\nSOURCE (Hindi Wikipedia):\n" + source_hi if source_hi else "")
             + reporting_block(reports)
             + "\n\nHINDI NAMES (Wikidata's Hindi labels; use these spellings):\n" + names
-            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=0, name_hi=name_hi, words=WORDS_ASKED)
+            + lead + "\n\nPHOTOS:\n" + listing + "\n\n" + RULES.format(best=best, name_hi=name_hi, words=WORDS_ASKED)
             + ("\nREPORTING counts as a source under its own rule: " + REPORTING_RULE + "." if reports else ""))
     return [{"role": "system", "content": SYSTEM}, {"role": "user", "content": user}]
 
@@ -446,6 +453,42 @@ def _check_messages(script: str, names: list[dict], facts: list[str], source_en:
     return [{"role": "system", "content": "You are a meticulous, bilingual (Hindi and English) fact-checker for a "
                                           "news channel."},
             {"role": "user", "content": user}]
+
+
+def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = None, near: dict | None = None,
+               kind: str = "") -> list[str]:
+    """A problem when more than half the beats, or match.CARD_RUN in a row, name nothing a picture can show
+    (visuals.showable): they would become text cards (SYNC-AUDIT 4.1 step 4, the picture-first rewrite). The Tiger
+    Shroff "hurt" Short (39553699482) ended on the doctors and the injured, under his portrait and maps. Nothing
+    when nothing but the subject can be shown: a rewrite could only name the subject more."""
+    person = subject.get("person") is not False
+    can = visuals.showable(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
+    if not can:
+        return []
+    cast = [{"hi": h, "kind": "place"} for h in can if h != "पुलिस"]
+    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []
+    name = (subject.get("hi") or "").strip()
+    spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
+             if len(hindi.norm(w)) >= 3]
+    beats = draft.get("beats") or []
+    empty = [k + 1 for k, b in enumerate(beats) if k and not match.names(b.get("say") or "", cast, spell)]
+    run = max((len(list(g)) for g in _runs(empty)), default=0)
+    if len(empty) * 2 <= len(beats) and run < match.CARD_RUN:
+        return []
+    return [f"beats {','.join(map(str, empty))} name nothing that can be shown; SHOWABLE: {', '.join(can)}. Name "
+            f"in each beat the person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
+
+
+def _runs(nums: list[int]):
+    """Consecutive runs in a sorted list of numbers: [3, 5, 6] gives [3], [5, 6]."""
+    run: list[int] = []
+    for n in nums:
+        if run and n != run[-1] + 1:
+            yield run
+            run = []
+        run.append(n)
+    if run:
+        yield run
 
 
 def _today_ist() -> date:
@@ -799,7 +842,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           today_ok: bool = True, reports: list[dict] | None = None, title_hints: list[str] | None = None,
           earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
           names_ok: list[str] | None = None, never: list[str] | None = None,
-          status: str | None = None, hurt_ok: bool = False) -> tuple[dict, list[dict], list[str]]:
+          status: str | None = None, hurt_ok: bool = False, india: bool | None = None,
+          near: dict | None = None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
@@ -807,7 +851,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     start: a draft to check first (a remake's reviewed script); it faces every check a written draft does. focus: one
     angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name;
     never: words (an accused's or a gang's name) the script may not contain at all; status: where the case stands
-    now (an angle's reports may be older than the arrests)."""
+    now (an angle's reports may be older than the arrests). india: whether the story is Indian, for the SHOWABLE check
+    (anchorless; None skips it); near: where the story is (visuals.resolve)."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -845,7 +890,11 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                   "work a date out yourself, and leave the time out when neither gives one.")
     name_hi = (f'"{subject["hi"]}"' if subject.get("hi")
                else f"the Hindi (Devanagari) name you give {subject['en']} in names, not the English title")
-    messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports)
+    person = subject.get("person") is not False
+    vet = [match.vet_photo(i, photos, [], _today_ist().year, person, kind in ("incident", "protest", "death"))
+           for i in range(len(photos))]
+    messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports, vet)
+    shows: dict = {}
     # A Commons description is anyone's caption, not a source: the script's facts come from the sources alone.
     ground_en = source_en + "\n" + "\n".join(facts)
     ground_hi = source_hi + "\n" + "\n".join(facts) + "\n" + "\n".join(hi_names.values())
@@ -868,6 +917,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if attempt < DRAFTS - 1:
                 problems += (monotone(draft) + bookish(draft) + value_beat(draft, kind) + advice(draft)
                              + misread(draft, spellings(draft, hi_names, looked), ground_hi, reports))
+                if india is not None:
+                    problems += anchorless(draft, subject, india, shows, near, kind)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
@@ -966,7 +1017,7 @@ def featured_face(img, seen: list[dict]) -> bool:
 def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None = None,
                 files: list[str] | None = None, exclude: set[str] | None = None, places: bool = False,
                 context_qids: list[str] | None = None, recent: set[str] | None = None,
-                words: list[str] | None = None) -> list[dict]:
+                words: list[str] | None = None, events: bool = False) -> list[dict]:
     """Downloaded photos as dicts with a "focus" box: for a person, only photos in which their face is matched.
     files: Commons files an editor chose instead of searching; exclude: files that may not be used; places: see
     media.find; context_qids: places and things the story links to, whose photos (with no featured face) fill in
@@ -974,7 +1025,7 @@ def pick_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
     photo of their own face. recent: files the channel's last Shorts showed, taken last; words: the story's own
     words, whose photos of the person come first (media.find)."""
     kept = _own_photos(title, ent, folder, person, extra_qids, files, exclude, places,
-                       recent=recent, words=words) if title else []
+                       recent=recent, words=words, events=events) if title else []
     if len(kept) >= MIN_PHOTOS or files or not context_qids or (person and not kept):
         return kept
     return (kept + fill_photos(context_qids, folder, (exclude or set()) | {r["file"] for r in kept},
@@ -1040,7 +1091,10 @@ def recent_photos() -> set[str]:
 
 def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: list[str] | None,
                 files: list[str] | None, exclude: set[str] | None, places: bool, limit: int = 10,
-                recent: set[str] | None = None, words: list[str] | None = None) -> list[dict]:
+                recent: set[str] | None = None, words: list[str] | None = None, events: bool = False) -> list[dict]:
+    """events: the story is an incident or a death, where a photo of another event (a gala, an award night) would
+    pass itself off as the story's; it is then dropped (media.event_kind). A photo from the wrong time of life
+    (media.era_reject) is always dropped: the Rubio Short opened on his 1989 yearbook photo (39714003987)."""
     import cv2
 
     if files:
@@ -1067,14 +1121,21 @@ def _own_photos(title: str, ent: dict, folder: Path, person: bool, extra_qids: l
         if r["origin"] == "place" and img is not None and featured_face(img, seen):
             continue  # a place photo that features someone would pass them off as part of the story
         r["focus"] = [round(v) for v in f["box"]] if f else None
+        # How much of the frame the person's face spans: a speck in a crowd is not a picture of them (visuals).
+        r["face"] = round(f["box"][2] / min(img.shape[:2]), 3) if f and img is not None else None
         r["others"] = sum(g is not f and g["box"][2] * g["box"][3] >= 0.25 * f["box"][2] * f["box"][3]
                           for g in seen) if f else 0
         kept.append(r)
+    year, born = _today_ist().year, story_born(ent) if person else None
+    kept = [r for r in kept if not media.era_reject(r, year, born, "person" if person else "place", kept)
+            and not (events and media.event_kind(r))]
     # Photos of the person at the story's own occasion go first; then strangers beside the person would be shown as
-    # part of today's story, so their own portraits come before group photos; photos the channel's last Shorts
-    # showed go last.
+    # part of today's story, so their own portraits come before group photos; then a face too small to be them, a
+    # paparazzi watermark (media.branded: ranked lower, never dropped), photos the channel's last Shorts showed, and
+    # older photos after newer ones (SYNC-AUDIT 4.1 step 4).
     return sorted(kept, key=lambda r: (r.get("origin") != "story", r["others"] > 0,
-                                       r.get("file") in (recent or ())))[:8]
+                                       r.get("face") is not None and r["face"] < 0.12, media.branded(r),
+                                       r.get("file") in (recent or ()), -(media.year_of(r) or 0)))[:8]
 
 
 PERSON_CONTEXT = ("P19", "P69", "P108", "P54", "P463", "P166", "P800")  # birthplace, school, employer, team, ...
@@ -1266,7 +1327,7 @@ def build_death(cand: dict) -> Short:
     work = WORK / sid
     context = person_context(ent)
     ov, exclude = _shared(cand, title, ent, None, context)
-    photos = pick_photos(title, ent, work / "photos", person=True, exclude=exclude, context_qids=context)
+    photos = pick_photos(title, ent, work / "photos", person=True, exclude=exclude, context_qids=context, events=True)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
@@ -1302,7 +1363,7 @@ def build_death(cand: dict) -> Short:
                    person=True, tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
                    summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
                            f"तथ्यों से।",
-                   cat="death", ov=ov, reports=reports)
+                   cat="death", ov=ov, reports=reports, hook=cand.get("hook"), born=born.year if born else None)
     short.scene["death_reports"] = confirming
     return short
 
@@ -1338,7 +1399,7 @@ def build_incident(cand: dict) -> Short:
     context = incident_context(ent, extra)
     ov, exclude = _shared(cand, article, ent, extra, context)
     photos = pick_photos(article, ent, work / "photos", person=False, extra_qids=extra, files=cand.get("photo_files"),
-                         exclude=exclude, places=not qid, context_qids=context)
+                         exclude=exclude, places=not qid, context_qids=context, events=True)
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
@@ -1402,7 +1463,7 @@ def build_incident(cand: dict) -> Short:
                         "india news" if cand.get("region") == "india" else "world news"] + ([region] if region else []),
                   summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, "
                           f"{'Wikipedia और Wikidata' if qid else 'Wikipedia'} के तथ्यों से।",
-                  cat=cat, ov=ov, reports=reports)
+                  cat=cat, ov=ov, reports=reports, hook=cand.get("hook"))
 
 
 def respelled(draft: dict, name: str, name_hi: str) -> dict:
@@ -1479,14 +1540,18 @@ def card_label(label) -> str:
 FRESH_PICTURES = 2
 
 
-def stale_pictures(photos: list[dict], views: list[list[int]], recent: set[str]) -> str | None:
+def stale_pictures(photos: list[dict], views: list, recent: set[str]) -> str | None:
     """Why a Short would mostly repeat the channel's last Shorts: fewer than half (and fewer than FRESH_PICTURES) of
     the photos on screen are new to the last ledger.RECENT_PHOTOS_H hours of Shorts (maps aside). The tenth Tiger
-    Shroff Short (2026-10-21) showed photos nine earlier ones had; Commons has about nine of him."""
+    Shroff Short (2026-10-21) showed photos nine earlier ones had; Commons has about nine of him. views: per beat
+    the indices, or visuals.direct's rows; only pictures a beat is anchored to count (not a card's backdrop, not a
+    photo vetted out), so the floor cannot be met by pictures that should not be on screen (SYNC-AUDIT 4.1 step 4)."""
     from . import ledger
 
-    shown = {photos[i]["file"] for v in views for i in v
-             if i < len(photos) and photos[i].get("file") and not visuals.is_map(photos[i])}
+    rows = [v if isinstance(v, dict) else {"views": v} for v in views]
+    shown = {photos[i]["file"] for r in rows if r.get("plate") != match.CARD for i in r["views"]
+             if i < len(photos) and photos[i].get("file") and not visuals.is_map(photos[i])
+             and not photos[i].get("vet")}
     fresh, want = shown - recent, max(FRESH_PICTURES, (len(shown) + 1) // 2)
     if recent and len(fresh) < want:
         return (f"gate: only {len(fresh)} of {len(shown)} photos on screen are new to the last "
@@ -1494,24 +1559,52 @@ def stale_pictures(photos: list[dict], views: list[list[int]], recent: set[str])
     return None
 
 
+def hook_said(hook: str, title: str, first: str, names: list[dict]) -> bool:
+    """Whether every proper name a hook card shows is said by the title or beat 1, the words heard and read with it:
+    "शिंदे: गोली का जवाब गोली से" opened the Tiger Shroff government Short, whose narration never names Shinde
+    (39546660530)."""
+    heard = f"{title} {first}"
+    speaker = hook.split(":", 1)[0].strip() if ":" in hook else ""
+    if speaker and not hindi.quotes(speaker, heard):
+        return False
+    return all(hindi.contains(heard, n["hi"]) for n in names if n.get("hi") and hindi.contains(hook, n["hi"])
+               and not hindi.contains(speaker, n["hi"]))
+
+
+def story_born(ent: dict) -> int | None:
+    """The year a person was born (Wikidata P569), for media.era_reject."""
+    return next((d.year for d in (wiki.wd_time(c["value"]) for c in wiki.claims(ent or {}, "P569")) if d), None)
+
+
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
-           mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False) -> Short:
+           mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False,
+           hook=None, born=None, near=None) -> Short:
+    """hook: the story's opening card line (plan.cases), kept only when hook_said; born: the person's birth year;
+    near: where the story is (visuals.resolve)."""
     reports = reports or []
     name_hi = hindi.respell(plain_name(name_hi, draft, name))
     draft = respelled(draft, name, name_hi)
     hashtags = hashtags_for(name, name_hi, cat, region, script_text(draft))
     tags = tags + search_tags(name)
     recent = recent_photos()
+    year = int(event_time[:4]) if re.match(r"20\d\d", event_time or "") else _today_ist().year
     photos, views, cast = visuals.direct(draft, photos, name if person else "", region == "india",
                                          WORK / sid / "photos" / "cast",
                                          set((ov or {}).get("excluded_photos") or []), tribute=kind == "death",
-                                         recent=recent)
+                                         recent=recent, kind=kind, year=year, born=born,
+                                         incident=kind in ("incident", "protest", "death") or bool(loss),
+                                         near=near, subject_hi=name_hi)
     if kind != "death" and (stale := stale_pictures(photos, views, recent)):
         raise ValueError(stale)
-    beats = [Beat(b["say"].strip(), "photo:" + "/".join(str(i) for i in (v or [b["photo"]])),
-                  visuals.card_over({"big": b["caption"].strip(), "small": card_label(b.get("label"))},
-                                    v or [b["photo"]], cast))
-             for b, v in zip(draft["beats"], views)]
+    spell = [w for w in dict.fromkeys([name_hi, *(name_hi.split()[:1] + name_hi.split()[-1:] if person else [])])
+             if len(hindi.norm(w)) >= 3]
+    beats = []
+    for b, r in zip(draft["beats"], views):
+        shown = r["views"] or [b["photo"]]
+        card = visuals.card_over({"big": b["caption"].strip(), "small": card_label(b.get("label"))}, shown, cast,
+                                 photos, spell, r["plate"])
+        beats.append(Beat(b["say"].strip(), "photo:" + "/".join(map(str, shown)), card, plate=r["plate"],
+                          cut_word=r["cut_word"], card_view=r["card_view"]))
     ground = source + "\n" + "\n".join(facts_text)
     in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
     allowed = {n for f in facts for n in f.numbers}
@@ -1543,6 +1636,11 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
              "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
     if ov:
         scene["orbitwire"] = ov
+    if hook is not None:
+        scene["hook"] = hook if hook and hook_said(hook, title, beats[0].text if beats else "", scene["names"]) \
+            else ""
+    if born:
+        scene["born"] = born
     if reports:
         scene["reporting"] = [outlets.compact(r) for r in reports]
         scene["outlets"] = outlets.names(reports)
@@ -1557,20 +1655,56 @@ EXPLAIN_CREDIT = ("तथ्य: विश्वसनीय समाचार 
                   "तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
 
 
-def story_place(name: str) -> tuple[str | None, dict]:
-    """The Wikidata item of the place an nw- story names: Wikipedia's first search hit, when its title names it and
-    it is a place (it has coordinates and is not a person)."""
+# A report's dateline ("NEW DELHI:", "Mumbai, Oct 19 (PTI)") or its outlet's city section ("/city/delhi/"): where
+# the story is, so a same-name place is the one there (visuals.resolve; SYNC-AUDIT 4.0).
+DATELINE = re.compile(r"^\s*(?:([A-Z]{3,}(?: [A-Z]{3,})?)\s*[:(\u2014]|([A-Z][a-z]+(?: [A-Z][a-z]+)?),\s+(?:Jan|Feb|Mar|"
+                      r"Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+\d)")
+CITY_URL = re.compile(r"/cit(?:y|ies)/([a-z]+(?:-[a-z]+)?)/", re.I)
+
+
+def dateline(reports: list[dict]) -> str | None:
+    """The city most of the reports are datelined in, or None."""
+    seen: Counter = Counter()
+    for r in reports or []:
+        m = DATELINE.match(r.get("text") or r.get("excerpt") or "") or CITY_URL.search(r.get("url") or "")
+        if city := m and next(g for g in m.groups() if g):
+            seen[city.replace("-", " ").title()] += 1
+    return seen.most_common(1)[0][0] if seen else None
+
+
+def story_anchor(reports: list[dict], india: bool = True) -> dict | None:
+    """{"en": the dateline city, "at": its coordinates} for visuals.resolve's near, or None."""
+    city = dateline(reports)
+    if not city:
+        return None
     try:
-        title = wiki.search(name)
+        hit = visuals.resolve(city, india)
     except Exception:
-        return None, {}
-    if not title or name.lower() not in title.lower():
-        return None, {}
-    qid = (wiki.page_info([title]).get(title) or {}).get("qid")
-    ent = wiki.entities([qid]).get(qid) if qid else None
-    if not ent or not media.place_like(ent):
-        return None, {}
-    return qid, ent
+        hit = None
+    at = wiki.coords(hit[2]) if hit else None
+    return {"en": city, "at": at} if at else {"en": city}
+
+
+def story_place(name: str, near: dict | None = None) -> tuple[str | None, dict]:
+    """The Wikidata item of the place an nw- story names: Wikipedia's first search hit, when its title names it and
+    it is a place (it has coordinates and is not a person). near (story_anchor): "<name> <city>" is looked up too and
+    the hit nearest the story wins: the Delhi protest at Jantar Mantar was told over Jaipur's (39708703684)."""
+    city = (near or {}).get("en") or ""
+    hits: list[tuple[str, dict]] = []
+    for q in [name] + ([f"{name} {city}"] if city and city.lower() not in name.lower() else []):
+        try:
+            title = wiki.search(q)
+        except Exception:
+            break
+        if not title or name.lower() not in title.lower():
+            continue
+        qid = (wiki.page_info([title]).get(title) or {}).get("qid")
+        ent = wiki.entities([qid]).get(qid) if qid else None
+        if ent and media.place_like(ent) and all(h[0] != qid for h in hits):
+            hits.append((qid, ent))
+    if (at := (near or {}).get("at")) and len(hits) > 1:
+        hits.sort(key=lambda h: stories.km_between(c, at) if (c := wiki.coords(h[1])) else float("inf"))
+    return hits[0] if hits else (None, {})
 
 
 def story_person(name: str) -> tuple[str | None, str | None, dict]:
@@ -1606,7 +1740,8 @@ def build_report(cand: dict) -> Short:
     named = gate.reported(name, reports)
     if len(named) < gate.OWNERS_NEEDED:
         raise ValueError(f"gate: fewer than {gate.OWNERS_NEEDED} independent outlets' articles name {name}")
-    qid, place = story_place(name)
+    near = story_anchor(reports, cand.get("region", "world") == "india") if dateline(reports) else None
+    qid, place = story_place(name, **({"near": near} if near else {}))
     if not place:
         # An attack on a famous person is told about the person, over their own face-matched portraits.
         pid, title, person = story_person(name)
@@ -1639,7 +1774,7 @@ def build_report(cand: dict) -> Short:
     draft, log, used = write(kind, subject, "It", facts_text, "", "", photos, hi_names, agreed_toll=toll is not None,
                              log_path=work / "writer_log.json", angle=angle, today_ok=when == _today_ist(),
                              reports=reports, title_hints=hindi_hints(cand), earlier=cand.get("earlier"),
-                             start=cand.get("draft"))
+                             start=cand.get("draft"), india=cand.get("region", "world") == "india", near=near)
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, next((r["url"] for r in reports if r["owner"] in named), reports[0]["url"]),
                   stories.numbers_in(name), "named in the reports of " + ", ".join(named), owners=named)]
@@ -1651,7 +1786,7 @@ def build_report(cand: dict) -> Short:
                    tags=[name, name_hi, cat, "हिंदी समाचार", "hindi news",
                          "india news" if cand.get("region") == "india" else "world news"],
                    summary=f"{name_hi}: क्या हुआ, {', '.join(outlets.names(reports))} की रिपोर्टों से।",
-                   cat=cat, ov=ov, reports=reports, credit=REPORT_CREDIT)
+                   cat=cat, ov=ov, reports=reports, credit=REPORT_CREDIT, hook=cand.get("hook"), near=near)
     short.scene["article"] = cand.get("article")
     short.scene["headlines"] = cand.get("headlines") or []
     return short
@@ -1687,7 +1822,8 @@ def build_explainer(cand: dict) -> Short:
     ov, exclude = _shared(cand, title, ent, None, context)
     words = story_words([cand.get("story") or ""] + list(cand.get("headlines") or []), name) if person else None
     photos = pick_photos(title, ent, work / "photos", person=person, exclude=exclude, places=not person,
-                         context_qids=None if person else context, recent=recent_photos(), words=words)
+                         context_qids=None if person else context, recent=recent_photos(), words=words,
+                         events=bool(cand.get("case")) or cand.get("category_hi") == "घटना")
     setting = not person and bool(wiki.claims(ent, "P1082"))
     if setting:
         # A city's or state's article photos are its sights (a temple, a market, a rickshaw for the Modi Dussehra
@@ -1717,13 +1853,15 @@ def build_explainer(cand: dict) -> Short:
     she, _ = stories._pronouns(ent) if person else ("It", None)
     subject = {"en": name, "hi": name_hi, "person": person}
     when = date.fromisoformat(cand["date"])
+    near = story_anchor(reports, cand.get("region", "india") == "india") if dateline(reports) else None
     draft, log, used = write("explainer", subject, she, facts_text, source, source_hi, photos, wiki.hindi_names(ent),
                              log_path=work / "writer_log.json",
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
                              angle=ov["angle"] if ov else None, today_ok=when == _today_ist(), reports=reports,
                              title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
                              focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"),
-                             status=cand.get("case_status"), hurt_ok=bool(hurt))
+                             status=cand.get("case_status"), hurt_ok=bool(hurt),
+                             india=cand.get("region", "india") == "india", near=near)
     name_hi = name_hi or _pair_for(draft, name) or name
     page = wiki.url(title)
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
@@ -1739,7 +1877,8 @@ def build_explainer(cand: dict) -> Short:
                    tags=[name, name_hi, label, cat, "मतलबनामा", "हिंदी समाचार", "hindi news", "india news"],
                    summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                            "Wikipedia से।",
-                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person)
+                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person, hook=cand.get("hook"),
+                   born=story_born(ent) if person else None, near=near)
     short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
                        min_photos=need, min_visuals=visuals.MIN_VISUALS - lead)
     return short

@@ -279,22 +279,28 @@ def _incident(short) -> bool:
 
 
 def vet(i: int, photos: list[dict], short, cast: list[dict]) -> str:
+    """Why photo i of a saved short may not be on screen whatever the beat says, or "" (vet_photo)."""
+    return vet_photo(i, photos, cast, story_year(short), _person(short), _incident(short), short.scene.get("born"))
+
+
+def vet_photo(i: int, photos: list[dict], cast: list[dict], year: int, person: bool, incident: bool,
+              born: int | None = None) -> str:
     """Why photo i may not be on screen whatever the beat says, or "": the wrong time of life (media.era_reject),
-    another event (for a cast person, or any photo in an incident story), or a landmark that is not its place."""
+    another event (for a cast person, or any photo in an incident story), or a landmark that is not its place.
+    visuals.direct stamps it before planning and the gate reads the same reasons off the saved photos."""
     p = photos[i]
-    role, sy = p.get("role"), story_year(short)
+    role = p.get("role")
     if role == "map" or role == "topic":
         return ""
     if not role:
         pool = [q for q in photos if not q.get("role")]
-        kind = "person" if _person(short) else "place"
-        why = media.era_reject(p, sy, short.scene.get("born"), kind, pool)
-        event = media.event_kind(p) if _incident(short) else ""
+        why = media.era_reject(p, year, born, "person" if person else "place", pool)
+        event = media.event_kind(p) if incident else ""
     elif role == "person":
         pool = [q for q in photos if q.get("role") == "person" and q.get("who") == p.get("who")]
-        why, event = media.era_reject(p, sy, None, "person", pool), media.event_kind(p)
+        why, event = media.era_reject(p, year, None, "person", pool), media.event_kind(p)
     else:
-        why, event = media.era_reject(p, sy, None, "place"), ""
+        why, event = media.era_reject(p, year, None, "place"), ""
         own = next((c.get("en") for c in cast if c.get("en") and key(c) in depicts(i, p, cast)), "")
         if role == "place" and own and media.not_itself(p, own):
             why = f"a landmark at {own}, not {own} itself"
