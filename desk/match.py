@@ -26,6 +26,9 @@ CARD = "card"
 # was the subject: "फडणवीस भी उनके साथ" is not a leading pronoun, so it is not about Tiger Shroff (39508637683 b2).
 LEAD = re.compile(r"^(उन्होंने|उनके|उनका|उनकी|उन्हें|उनको|उनसे|वे|वह)(?=\s|$)")
 CONTINUITY = 2  # such beats a Short may hold, never two in a row
+# "दोनों नेताओं ने ..." right after a beat that showed two people: it is about the pair (dry run 39827809002, Tusk and
+# Modi, b3 "दोनों नेताओं ने इंडिया और पोलैंड के बीच व्यापार बढ़ाने पर चर्चा की" was a card).
+BOTH = re.compile(r"^(दोनों)(?=\s|$)")
 # Never on a pronoun alone: a harm line (Tiger Shroff smiling under "उनके ड्राइवर और एक फैन को गोली लगी",
 # 39505534156 b4) or an actor no picture is of ("मेहमान नेता", "एक व्यक्ति ने इस हमले की जिम्मेदारी ली"). Each is the
 # start of a word (says), and the forms in WHOLE whole words: "अमृतसर" is no death, "व्यक्तिगत" no person, "चोटी" no
@@ -463,6 +466,15 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
                 break  # a map is the whole of its beat
             if x not in skip and x != picks[0][1]:
                 choose(n, a, x)
+        if not picks and not found and k > 0 and BOTH.match(say.strip()) and len(pair := _pair(out[-1], photos,
+                                                                                               depict, kind_of)) == 2:
+            at = _second_word(say)
+            for n, x in enumerate(pair):
+                real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and free(i, set())]
+                if real:
+                    picks.append((min(real, key=lambda i: (i in prev, used[i], real.index(i))), x, at if n else 0))
+            if len(picks) < 2:
+                picks = []
         row = {"views": [], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
         this_held = False
         # Never under a beat that names someone or something else with no usable picture: "उनके पिता जैकी श्रॉफ ने
@@ -495,6 +507,22 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         out.append(row)
     return _map_cuts(out, photos, [b.get("say") or b.get("text") or "" for b in beats], subject=pools[SUBJECT],
                      ok=ok)
+
+
+def _pair(row: dict, photos: list[dict], depict: dict, kind_of: dict) -> list[str]:
+    """The two people a beat's views showed (the subject counts as one), in order, else []."""
+    if row["plate"] == CARD or len(row["views"]) != 2 or any(visuals.is_map(photos[i]) for i in row["views"]):
+        return []
+    keys = [next(iter(depict[i])) if len(depict[i]) == 1 else None for i in row["views"]]
+    ok = all(x is not None and (x == SUBJECT or kind_of.get(x) == "person") for x in keys)
+    return keys if ok and keys[0] != keys[1] else []
+
+
+def _second_word(say: str) -> int:
+    """Where say's word after the middle starts: the cut of a beat about a pair (no name to cut on)."""
+    starts = [m.start() for m in re.finditer(r"\S+", say)]
+    later = [a for a in starts if a >= len(say) // 2]
+    return later[0] if later else starts[-1]
 
 
 def _backdrop(backdrop, last, subject: list[int], photos: list[dict], ok: list[int]) -> list[int]:
@@ -620,6 +648,12 @@ def vet(i: int, photos: list[dict], short, cast: list[dict]) -> str:
     return vet_photo(i, photos, cast, story_year(short), _person(short), _incident(short), short.scene.get("born"))
 
 
+# A subject's photo whose file names a second person beside them ("Donald Tusk and Jonas Gahr Støre at the Polish
+# KPRM", dry run 39827809002): a face the voice never names, under "दोनों नेताओं" (Tusk and Modi) worst of all.
+WITH_OTHER = re.compile(r"\b(?:and|with|meets?|meeting|greets?|greeting)\s+(?:(?:Prime Minister|President|PM|Mr|Mrs|"
+                        r"Ms|Dr|Shri|Smt)\.?\s+)?[A-Z][a-zà-ÿ]+(?:\s+(?:[A-Z][\w-]+|de|van|von|al|bin))*\s+[A-Z][\w-]+")
+
+
 def vet_photo(i: int, photos: list[dict], cast: list[dict], year: int, person: bool, incident: bool,
               born: int | None = None) -> str:
     """Why photo i may not be on screen whatever the beat says, or "": the wrong time of life (media.era_reject),
@@ -633,6 +667,9 @@ def vet_photo(i: int, photos: list[dict], cast: list[dict], year: int, person: b
         pool = [q for q in photos if not q.get("role")]
         why = media.era_reject(p, year, born, "person" if person else "place", pool)
         event = media.event_kind(p) if incident else ""
+        other = WITH_OTHER.search(re.sub(r"^File:|\.\w+$|_", " ", p.get("file") or "")) if person else None
+        if not why and other and len(pool) > 2:
+            why = f"a photo with someone else ({other.group(0)[:40]})"
     elif role == "person":
         pool = [q for q in photos if q.get("role") == "person" and q.get("who") == p.get("who")]
         why, event = media.era_reject(p, year, None, "person", pool), media.event_kind(p)
@@ -676,7 +713,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     total = map_time = real_time = card_time = 0.0
     cards = run = held = 0
     pictures: list[int] = []
-    prev_key, prev_held, ran = None, False, False
+    prev_key, prev_held, ran, pair = None, False, False, set()
     shown_beats = [(k, b) for k, b in enumerate(short.beats) if b.shot.startswith("photo:")]
     # What has a real photo (not a map, not vetted out): a beat naming it never stands over a map.
     pictured = {x for i, p in enumerate(photos) if not visuals.is_map(p) and not vet(i, photos, short, cast)
@@ -691,10 +728,14 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
             if run >= CARD_RUN and not ran:
                 out.append(f"text cards: {run} beats in a row from beat {n - run + 1}")
                 ran = True
-            prev_key, prev_held = None, False
+            prev_key, prev_held, pair = None, False, set()
             continue
         run = 0
         named = canon({x for _, x in names(say, cast, spell, others)})
+        # "दोनों ..." right after a beat that showed two people it names is about that pair (plan's BOTH).
+        if not named and k > 0 and BOTH.match(say.strip()) and len(pair) == 2:
+            named = set(pair)
+        these = []
         shown = shot_photos(b.shot)
         weights = timed.get(k) if views else [(i, 1.0 / len(shown)) for i in shown]
         this_held, main = False, None
@@ -723,6 +764,10 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                     out.append(f"pictures: beat {n} shows a map though it names {x}, who has a photo")
             if j == 0:
                 main = SUBJECT if SUBJECT in d and ok else next(iter(d & named), None)
+            if len(d) == 1 and d <= named and not visuals.is_map(p) and (d <= {SUBJECT} or kind_of.get(
+                    next(iter(d))) == "person"):
+                these.append(next(iter(d)))
+        pair = set(these) if len(these) == 2 and len(set(these)) == 2 else set()
         held += this_held
         prev_key, prev_held = main, this_held
         big, small = (b.card or {}).get("big", ""), (b.card or {}).get("small", "")

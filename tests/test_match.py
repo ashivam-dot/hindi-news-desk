@@ -151,7 +151,10 @@ def test_jaishankar_flags_only_beat_7():
     bad = match.problems(short("39411111185"))
     # Beat 7's portraits, and (since 2026-10-22) beat 2's Mumbai map under "मार्को रुबियो", who has a photo.
     assert bad[0] == f"pictures: beat 2 shows a map though it names {hindi.norm('मार्को रुबियो')}, who has a photo"
-    assert bad[1:] and all("beat 7 shows" in p for p in bad[1:])
+    # Since 2026-10-22 (dry run 39827809002) also beat 6's "Secretary Blinken Meets with ... Jaishankar": Blinken's
+    # face under the Padma Shri line (was: only beat 7).
+    assert bad[1:] and all("beat 7 shows" in p or p.startswith("pictures: beat 6 shows photo 7")
+                           and "a photo with someone else" in p for p in bad[1:])
     rows, _ = planned(short("39411111185"))
     assert rows[6]["plate"] == match.CARD
     assert match.problems(applied(short("39411111185"), rows)) == []

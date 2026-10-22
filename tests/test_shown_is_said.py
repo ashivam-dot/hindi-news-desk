@@ -88,7 +88,10 @@ def test_jaishankar_clean_short_still_passes():
     bad = gate.said_is_shown(s)
     # Since 2026-10-22 also beat 2's Mumbai map under "मार्को रुबियो", who has a photo; planned, it is his photo.
     assert bad[0].startswith("pictures: beat 2 shows a map though it names")
-    assert bad[1:] and all("beat 7 shows" in p for p in bad[1:])
+    # Since 2026-10-22 (dry run 39827809002) also beat 6's "Secretary Blinken Meets with ... Jaishankar": Blinken's
+    # face under the Padma Shri line (was: only beat 7).
+    assert bad[1:] and all("beat 7 shows" in p or p.startswith("pictures: beat 6 shows photo 7")
+                           and "a photo with someone else" in p for p in bad[1:])
     rows, _ = planned(s)
     assert gate.said_is_shown(applied(s, rows)) == []
 

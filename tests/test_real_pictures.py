@@ -313,3 +313,25 @@ def test_a_public_figure_the_names_list_leaves_out_is_still_shown():
     rows = match.plan(spoken(s), photos, cast, [0, 1, 2, 3], s.kind, match.spellings_of(s), True, s.scene["names"])
     assert rows[1]["views"] == [len(photos) - 1] and rows[1]["plate"] == ""
     assert sum(r["plate"] == match.CARD for r in rows) == 0
+
+
+def test_both_leaders_shows_the_pair_and_never_a_third_face():
+    """Dry run 39827809002 (Tusk and Modi, with Modi now in the cast): b3 "दोनों नेताओं ने ... व्यापार ..." was a card,
+    and Tusk's pool held "Donald Tusk and Jonas Gahr Støre ..." (another leader's face). Refused on cards (2 of 5)."""
+    from .test_match import applied, planned
+
+    s = short("39827809002")
+    assert "text cards: 2 of 5 beats (at most 1)" in match.problems(s)
+    assert any("beat 4 shows photo 2" in p and "a photo with someone else" in p for p in match.problems(s))
+    rows, photos = planned(s)
+    modi = {i for i, p in enumerate(photos) if p.get("who") == "नरेंद्र मोदी"}
+    assert rows[2]["plate"] == "" and len(rows[2]["views"]) == 2 and set(rows[2]["views"]) & modi
+    assert "a photo with someone else" in photos[2]["vet"] and all(2 not in r["views"] for r in rows)
+    assert match.problems(applied(s, rows)) == []
+    # Only right after a beat that showed two people: after a card, "दोनों ..." is a card.
+    beats = [{"say": b.text, "card": b.card} for b in s.beats if b.shot != "outro"]
+    alone = [beats[0], {"say": "इस पर कोई सहमति नहीं बनी।"}, beats[2]]
+    subject = [i for i, p in enumerate(photos) if not p.get("role")]
+    again = match.plan(alone, photos, match.cast_of(s), subject, s.kind, match.spellings_of(s), True,
+                       s.scene["names"])
+    assert again[1]["plate"] == match.CARD and again[2]["plate"] == match.CARD
