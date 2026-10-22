@@ -164,7 +164,7 @@ def retire_listed(health: dict) -> None:
     rows = ledger.published()
     for s in specs:
         row = next((r for r in rows if r.get("video_id") == s["video_id"]), None)
-        if row is None or row.get("retire_read_back"):  # rows retired before the read-back are read once more
+        if row is None or row.get("retire_page_read"):  # rows retired before the page read-back are read once more
             continue
         try:
             got = youtube.retire(s["video_id"])
@@ -172,6 +172,7 @@ def retire_listed(health: dict) -> None:
             health["steps"].append(f"retire {s['video_id']}: {type(exc).__name__}: {exc}"[:300])
             continue
         ledger.update_published(s["video_id"], {"privacy": "private", "retired_why": s["why"], "retire_read_back": got,
+                                                "retire_page_read": True,
                                                 "retired_at": row.get("retired_at") or ledger.now()})
         health["steps"].append(f"retired {s['video_id']} ({got}): {s['why']}"[:300])
 

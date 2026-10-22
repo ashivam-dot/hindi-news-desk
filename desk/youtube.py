@@ -342,16 +342,34 @@ def untag(limit: int = UNTAG_PER_RUN) -> int:
 RETIRE_WAIT = 5  # seconds before the read-back is read again
 
 
+WATCH = "https://www.youtube.com/watch?v={}&hl=en"
+
+
+def plays_publicly(video_id: str) -> bool | None:
+    """Whether YouTube's public watch page still plays the video to a signed-out viewer (playabilityStatus OK), or
+    None when the page cannot be read. The API read YM2dyGiYNJQ back private while its watch page kept playing it."""
+    import requests
+
+    try:
+        page = requests.get(WATCH.format(video_id), timeout=20, headers={"Accept-Language": "en"}).text
+    except Exception:
+        return None
+    m = re.search(r'"playabilityStatus":\{"status":"([A-Z_]+)"', page)
+    return m.group(1) == "OK" if m else None
+
+
 def retire(video_id: str) -> str:
     """Make one of this channel's videos private (a version that was replaced); never touches another channel's.
-    Says "private" once YouTube reads it back private, or "missing" when YouTube has no such video; raises when the
-    video is still public after the update (2026-10-22: YM2dyGiYNJQ was logged retired and stayed public)."""
+    Says "private" once YouTube reads it back private and its public watch page no longer plays it, or "missing"
+    when YouTube has no such video; raises while it is still public, so the next run sends the update again
+    (2026-10-22: YM2dyGiYNJQ was logged retired, read back private, and its watch page still played it)."""
     api = client()
     identity(api)
     items = api.videos().list(part="snippet,status", id=video_id).execute().get("items", [])
     if not items:
         return "missing"
-    if items[0]["status"]["privacyStatus"] == "private":
+    status = items[0]["status"]["privacyStatus"]
+    if status == "private" and not plays_publicly(video_id):
         return "private"
     if items[0]["snippet"]["channelId"] != config.CHANNEL_ID:
         raise WrongChannel(f"{video_id} is on another channel")
@@ -362,8 +380,10 @@ def retire(video_id: str) -> str:
         time.sleep(RETIRE_WAIT)
         got = api.videos().list(part="status", id=video_id).execute().get("items", [])
         status = got[0]["status"]["privacyStatus"] if got else "missing"
-        if status in ("private", "missing"):
+        if status == "missing" or status == "private" and not plays_publicly(video_id):
             return status
+    if status == "private":
+        raise RuntimeError(f"{video_id} reads back private but its public watch page still plays it")
     raise RuntimeError(f"{video_id} still reads back {status} after the update")
 
 
