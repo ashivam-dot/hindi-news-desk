@@ -22,7 +22,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
-from . import hindi, media, net, wiki
+from . import hindi, media, net, things, wiki
 
 log = logging.getLogger(__name__)
 
@@ -35,6 +35,7 @@ PERSON_PHOTOS = 2
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
 SIGHT_PHOTOS = 1
 TOPIC_PHOTOS = 2
+MAX_THINGS = things.MAX_THINGS
 WORN = 2  # beats a place may stand under before anything else its beat names goes first
 PLACE_LABELS = ("स्थल", "स्थान", "जगह", "इलाका", "शहर", "जिला", "ज़िला", "राज्य")
 PLACE_WORDS = {"मैदान", "स्टेशन", "अस्पताल", "थाना", "अदालत", "कोर्ट", "बीच", "जंक्शन", "मंदिर", "पार्क", "चौक", "बाजार",
@@ -453,11 +454,16 @@ def sub_place(c: dict, beats: list[dict], india: bool) -> dict | None:
 
 
 def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True, near: dict | None = None,
-             resolver=None) -> list[dict]:
-    """The people and places the script names besides its subject, resolved: [{en, hi, kind, qid, title, ent}].
-    near: where the story is (resolve); resolver: a cached resolve (showable)."""
+             resolver=None, thing_resolver=None, thing_lookup=None) -> list[dict]:
+    """The people, places and things the script names besides its subject, resolved: [{en, hi, kind, qid, title,
+    ent}] (a thing also carries alias, its inflected forms, and files, an editor's photos). near: where the story is
+    (resolve); resolver, thing_resolver, thing_lookup: cached lookups (showable). A thing is a name of the script whose
+    article is one (things.resolve_thing), or a LEXICON noun a beat says ("तिरंगे"), which also takes the place of a
+    script name it spells (a map of "संसद" is no picture of Parliament)."""
     resolver = resolver or resolve
-    out, people, places, regions, topics = [], 0, 0, 0, 0
+    thing_resolver = thing_resolver or things.resolve_thing
+    thing_lookup = thing_lookup or things.lookup
+    out, people, places, regions, topics, found_things = [], 0, 0, 0, 0, 0
     for n in draft.get("names") or []:
         en, hi = (n.get("en") or "").strip(), (n.get("hi") or "").strip()
         if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out) \
@@ -469,11 +475,14 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         found = resolver(en, india, **({"near": near} if near else {}))
         if found and topic_like(found[2]):
             found = None  # Wikipedia's search returns the Ramlila article for "Ramlila, India" on some calls
-        if not found and places_too and topics < MAX_TOPICS:
-            if found := resolve_topic(en):
-                topics += 1
-                out.append({"en": en, "hi": hi, "kind": "topic", "qid": found[0], "title": found[1],
-                            "ent": found[2], "alias": [hi + "ओं"]})  # "देश भर में राम लीलाओं का मंचन"
+        if not found and places_too and topics < MAX_TOPICS and (topic := resolve_topic(en)):
+            topics += 1
+            out.append({"en": en, "hi": hi, "kind": "topic", "qid": topic[0], "title": topic[1],
+                        "ent": topic[2], "alias": [hi + "ओं"]})  # "देश भर में राम लीलाओं का मंचन"
+            continue
+        if not found and found_things < MAX_THINGS and (thing := thing_resolver(en)):
+            found_things += 1
+            out.append({"en": en, "hi": hi, "kind": "thing", "qid": thing[0], "title": thing[1], "ent": thing[2]})
             continue
         if not found:
             continue
@@ -494,6 +503,17 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
             if not any(c["qid"] == sub["qid"] for c in out):
                 places += 1
                 out.append(sub)
+    for e in things.lexicon_hits(draft.get("beats") or [], india):
+        forms = {hindi.norm(w) for w in [e["hi"], *e["alias"]]}
+        if any(c["kind"] == "thing" and (c["en"] == e["en"] or hindi.norm(c["hi"]) in forms) for c in out):
+            continue
+        if sum(c["kind"] == "thing" for c in out) >= MAX_THINGS:
+            break
+        hit = thing_lookup(e)
+        if hit is None and not e["files"]:
+            continue
+        out = [c for c in out if not (c["kind"] in ("place", "topic") and hindi.norm(c["hi"]) in forms)]
+        out.append(hit or e | {"qid": "", "ent": {}})
     return out
 
 
@@ -802,6 +822,10 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
                 rows = _sight_photos(c, folder / f"topic-{c['qid']}", exclude, recent, keep=TOPIC_PHOTOS)
                 c["photos"] = add([r | {"role": "topic"} for r in rows], me)
                 continue
+            if c["kind"] == "thing":
+                slug = c.get("qid") or re.sub(r"\W+", "-", c["en"]).strip("-").lower()
+                c["photos"] = add(things.photos(c, folder / f"thing-{slug}", exclude, recent), me)
+                continue
             site = wiki.coords(c["ent"])
             if not site:
                 continue
@@ -867,8 +891,9 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
             p["vet"] = why
         else:
             p.pop("vet", None)
+    # A place's own photo (its sight) before its maps: a picture first, a map only when there is none.
     told = [{"en": c["en"], "hi": c["hi"], "kind": c["kind"],
-             "photos": c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]] + c.get("sight", []),
+             "photos": c.get("sight", []) + c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]],
              **({"alias": c["alias"]} if c.get("alias") else {}), **({"inside": c["inside"]} if c.get("inside")
                                                                       else {})} for c in cast]
     if legacy:
@@ -897,8 +922,17 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
 def showable(draft: dict, subject_en: str, india: bool, cache: dict | None = None, near: dict | None = None,
              tribute: bool = False) -> list[str]:
     """The Hindi names the script lists that a vetted picture could show (SYNC-AUDIT 4.1 step 4, the writer's
-    SHOWABLE list): a person with a Wikidata image (P18), a place with coordinates, a festival or rite, and the
-    police of an Indian city it names. Wikidata only, no Commons download; cache keeps the lookups across drafts."""
+    SHOWABLE list): a person with a Wikidata image (P18), a place with coordinates, a festival or rite, a thing with
+    a photo (things: "तिरंगा"), and the police of an Indian city it names. Wikidata only, no Commons download; cache
+    keeps the lookups across drafts."""
+    return list(dict.fromkeys(r["hi"] for r in showable_rows(draft, subject_en, india, cache, near, tribute)))
+
+
+def showable_rows(draft: dict, subject_en: str, india: bool, cache: dict | None = None, near: dict | None = None,
+                  tribute: bool = False) -> list[dict]:
+    """showable as cast rows {hi, kind, alias, map_only}: map_only for a town or region, which direct shows by its
+    map alone (no sight photo: it has people or a capital), so a beat naming only such places is a map beat, and a
+    Short may have one (match.MAX_MAP_VIEWS)."""
     cache = {} if cache is None else cache
 
     def cached(en, india_, **kw):
@@ -907,16 +941,29 @@ def showable(draft: dict, subject_en: str, india: bool, cache: dict | None = Non
             cache[k] = resolve(en, india_, **kw)
         return cache[k]
 
+    def thing(en):
+        if ("thing", en) not in cache:
+            cache[("thing", en)] = things.resolve_thing(en)
+        return cache[("thing", en)]
+
+    def entry(e):
+        if ("lexicon", e["en"]) not in cache:
+            cache[("lexicon", e["en"])] = things.lookup(e)
+        return cache[("lexicon", e["en"])]
+
     try:
-        cast = cast_for(draft, subject_en, india, places_too=not tribute, near=near, resolver=cached)
+        cast = cast_for(draft, subject_en, india, places_too=not tribute, near=near, resolver=cached,
+                        thing_resolver=thing, thing_lookup=entry)
     except Exception as exc:
         log.info("visuals: showable not looked up (%s)", exc)
         return []
-    out = [c["hi"] for c in cast if c["kind"] == "topic" or c["kind"] == "person" and wiki.claims(c["ent"], "P18")
-           or c["kind"] == "place" and wiki.coords(c["ent"])]
+    out = [{"hi": c["hi"], "kind": c["kind"], "alias": list(c.get("alias") or []),
+            "map_only": c["kind"] == "place" and (is_region(c["ent"]) or bool(_population(c["ent"])))}
+           for c in cast if c["kind"] == "topic" or c["kind"] == "person" and wiki.claims(c["ent"], "P18")
+           or c["kind"] == "place" and wiki.coords(c["ent"]) or c["kind"] == "thing" and things.has_picture(c)]
     if india and any(c["kind"] == "place" and not is_region(c["ent"]) for c in cast):
-        out.append("पुलिस")
-    return list(dict.fromkeys(out))
+        out.append({"hi": "पुलिस", "kind": "police", "alias": [], "map_only": False})
+    return out
 
 
 def distinct(shots: list[str]) -> int:

@@ -13,7 +13,7 @@ from __future__ import annotations
 import re
 from collections import Counter
 
-from . import hindi, media, visuals
+from . import hindi, media, things, visuals
 from .spec import shot_photos
 
 SUBJECT, POLICE = "@subject", "@police"
@@ -41,10 +41,17 @@ OWNED = ("ड्राइवर", "ड्राइवरों", "बॉडी�
          "बेटा", "बेटी", "पत्नी", "पति", "दोस्त", "रिश्तेदार")
 _DEV = "\u0900-\u097F"
 _OWNED = re.compile(rf"\s+(?:के|की|का)\s+(?:एक\s+)?(?:{'|'.join(OWNED)})(?![{_DEV}])")
-# Paired ceilings (4.0): cards at most half the beats and never CARD_RUN in a row; maps and routes at most MAP_SHARE
-# of the picture time (Rubio: 67%), a text card's time not being picture time; no picture under HELD_RUN beats in a
-# row or more than half the beats (gate.held, which plan keeps to).
-CARD_RUN, MAP_SHARE, HELD_RUN = 3, 0.4, 3
+# Paired ceilings (4.0, tightened 2026-10-22 after CAPraPdXvns: a map of New Delhi or Bikaner House under four of
+# five beats, under "तिरंगे" and under Raihan, whose photo it had not). Cards at most a third of the beats (at least
+# one allowed) and never CARD_RUN in a row; at most MAX_MAP_VIEWS map view a Short (routes are maps), only as the
+# whole of a beat that names nothing but places, never under a beat naming a person or thing with a photo, and maps
+# at most MAP_SHARE of the picture time (a text card's time not being picture time); no picture under HELD_RUN
+# beats in a row or more than half the beats (gate.held, which plan keeps to). The floor: real photos (anchored,
+# vetted, not maps) fill at least REAL_SHARE of the Short; it pairs with shown-is-said (a photo counts only where its
+# beat names it), so it cannot be met with pictures the voice is not talking about.
+CARD_RUN, MAP_SHARE, HELD_RUN = 2, 0.2, 3
+MAX_MAP_VIEWS, REAL_SHARE = 1, 0.5
+MEMBERS = ("person", "place", "topic", "thing")
 PUNCT = "\"',.;:!?।()"
 # compose.render_full's hook card (the first HOOK_HOLD seconds) and fact chips (CHIP_HOLD each, never past the cut:
 # chip_window), here so the gate reads the same windows off render.json. A chip the cut leaves under CHIP_MIN is
@@ -168,7 +175,7 @@ def others_of(names_: list[dict] | None, cast: list[dict], spellings=()) -> list
     one of its spellings or opens and ends with the subject's first and last words (a middle name): "अमित मालवीय"
     in an Amit Shah Short is not Shah (2026-10-22 review round 2). A one-word name is a country, city or firm far more often than a person (भारत, मुंबई,
     रिलायंस: 39411111185's card "भारत दौरा" over Rubio's arrival is about his visit, not a picture of India)."""
-    members = [c for c in cast if c.get("kind") in ("person", "place", "topic")]
+    members = [c for c in cast if c.get("kind") in MEMBERS]
     known = {hindi.norm(w) for c in members for w in _spelt(c)} | {hindi.norm(w) for w in spellings if w}
     known_en = {(c.get("en") or "").lower() for c in members} - {""}
     full = max((w for w in spellings if w), key=lambda w: len(w.split()), default="").split()
@@ -195,7 +202,7 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
     city. A person a harm line names as someone's ("टाइगर के ड्राइवर ... गोली लगी") is not what it is about. A title
     spelling ("प्रधानमंत्री", visuals.titles) is the subject only when no other person's name follows it and no "X के"
     qualifies it: "पाकिस्तान के प्रधानमंत्री शहबाज शरीफ" is not Modi (2026-10-22 review round 2)."""
-    members = [c for c in cast if c.get("kind") in ("person", "place", "topic")]
+    members = [c for c in cast if c.get("kind") in MEMBERS]
     extra = others_of(others, cast, subject_spellings)
     police = next((c for c in cast if c.get("kind") == "police"), None)
     places = [w for c in members if c.get("kind") == "place" for w in _spelt(c)] + [o["hi"] for o in extra]
@@ -219,6 +226,8 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
         end = _end(say, at, n)
         if c.get("kind") == "person" and (owned(at, n) or any(a <= at < z and z - a > end - at for a, z in theirs)):
             continue  # "अनंत अंबानी" is not Mukesh Ambani by his surname
+        if c.get("kind") == "thing" and things.foreign_before(say, at):
+            continue  # "अमेरिका के सुप्रीम कोर्ट" is not India's
         if c.get("kind") == "place" and re.match(r"\s*पुलिस", say[end:]):
             if not other:
                 found.append((at, POLICE))
@@ -377,11 +386,14 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
     The main view is the picture of the first key the beat names, the cut the picture of a later different key on
     its word (cut_at: where in say, for compose.cut_time); one key, no cut; no key, a card over the last anchored
     picture that is not a map (beat 1 opens on the subject, and a person's explainer may hold the subject on the
-    strict pronoun rule). A city named next to its spot gives way to the spot's map, which marks both; two places
-    with a route map show the route. The gate's ceilings hold by construction: no picture goes under a HELD_RUN-th
-    beat in a row or over half the beats (the next picture of the key, else the next key, else a card: the chase
-    Shorts' one police photo stood under 3 of 5 beats), and map cuts said again go, latest first, while maps fill
-    more than MAP_SHARE of the picture beats."""
+    strict pronoun rule). A place shows its own photo (a landmark, its sight) before any map. A map (a route is one)
+    is rare: at most MAX_MAP_VIEWS a Short, only as the whole of a beat that names nothing but places with no photo
+    of their own, never as a cut and never as a card's backdrop; a beat that names a person or thing shows their
+    photo, else a card, never a map (CAPraPdXvns put New Delhi's map under "रेहान ने तिरंगे की तस्वीरें ..."). A city
+    named next to its spot gives way to the spot, and two places with a route map may show the route. The gate's
+    ceilings hold by construction: no picture goes under a HELD_RUN-th beat in a row or over half the beats (the
+    next picture of the key, else the next key, else a card: the chase Shorts' one police photo stood under 3 of 5
+    beats), and a map beat that would put maps over MAP_SHARE of the picture time becomes a card."""
     depict = {i: depicts(i, p, cast) for i, p in enumerate(photos)}
     up = inside(photos, cast)
     groups = group(photos, cast)
@@ -393,6 +405,9 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
     routes = {frozenset(depict[i]): i for i in ok if len(depict[i]) == 2}
     person = person and kind in ("", "explainer")
     used, counts, runs = Counter(), Counter(), {}
+    kind_of = {key(c): c.get("kind") for c in cast if c.get("kind") in MEMBERS}
+    letters = sum(max(len(b.get("say") or b.get("text") or ""), 1) for b in beats) or 1
+    maps_left = [MAX_MAP_VIEWS]
 
     def free(i: int, taken: set) -> bool:
         h = held_key(i, photos, groups)
@@ -409,13 +424,23 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         big = {x for _, x in names(_card_text(b)[0], cast, spellings, others)}
         picks: list[tuple[int, str, int]] = []
         skip: set[str] = set()
+        # Where it happened is the beat's whole point: it names places and nothing else (no person, thing, subject,
+        # police or other name), and its share of the voice leaves the maps under MAP_SHARE.
+        where = bool(found) and all(kind_of.get(x) == "place" for _, x in found) \
+            and max(len(say), 1) / letters <= MAP_SHARE
 
         def choose(n: int, a: int, x: str) -> None:
             route = next((routes[frozenset((x, y))] for _, y in found[n + 1:] if frozenset((x, y)) in routes), None)
-            cands = [route] if route is not None else pools.get(x) or []
             taken = {p for p, _, _ in picks}
             keys = {held_key(p, photos, groups) for p in taken}
-            cands = [i for i in cands if i not in taken and free(i, keys)]
+            real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and i not in taken
+                    and free(i, keys)]
+            cands = real
+            if not real and not picks and where and maps_left[0] > 0:
+                maps = [route] if route is not None else pools.get(x) or []
+                cands = [i for i in maps if i not in taken and free(i, keys)]
+            else:
+                route = None
             if cands:
                 picks.append((min(cands, key=lambda i: (i in prev, used[i], cands.index(i))), x, a))
                 skip.update(depict[route] if route is not None else ())
@@ -429,8 +454,8 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         # picture; a key said before the main view's never cuts in after it.
         rest.sort(key=lambda r: (r[1][1] not in big, r[1][1] not in on_card))
         for n, (a, x) in rest:
-            if len(picks) == 2:
-                break
+            if len(picks) == 2 or visuals.is_map(photos[picks[0][0]]):
+                break  # a map is the whole of its beat
             if x not in skip and x != picks[0][1]:
                 choose(n, a, x)
         row = {"views": [], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
@@ -449,10 +474,10 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
             row["card_view"] = next((j for j, i in enumerate(row["views"]) if depict[i] & on_card), 0)
             last, prev_key = row["views"][-1], picks[0][1]
             backdrop = next((i for i in reversed(row["views"]) if not visuals.is_map(photos[i])), backdrop)
+            maps_left[0] -= sum(visuals.is_map(photos[i]) for i in row["views"])
         else:
             row["plate"] = CARD
-            pick = backdrop if backdrop is not None else last
-            row["views"] = [pick] if pick is not None else pools[SUBJECT][:1]
+            row["views"] = _backdrop(backdrop, last, pools[SUBJECT], photos, ok)
             prev_key = None
         held += this_held
         prev_held = this_held
@@ -463,14 +488,25 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
             used[i] += 1
         prev = row["views"] if row["plate"] != CARD else prev
         out.append(row)
-    return _map_cuts(out, photos, [b.get("say") or b.get("text") or "" for b in beats])
+    return _map_cuts(out, photos, [b.get("say") or b.get("text") or "" for b in beats], subject=pools[SUBJECT],
+                     ok=ok)
 
 
-def _map_cuts(rows: list[dict], photos: list[dict], says_: list[str] = ()) -> list[dict]:
-    """Drop map cuts while maps fill over MAP_SHARE of the picture beats, by problems' per-beat weights or by the
-    time the voice will give them (a beat's length in letters, a cut from its cut_at on; a card's time counted in
-    neither): first a map already shown in an earlier beat, latest first. The hand-fixed Rubio cut to the Jamnagar
-    map in beats 1 and 2, and maps filled half its pictures; 39411041538 cut to Juhu's map on its fourth word."""
+def _backdrop(backdrop, last, subject: list[int], photos: list[dict], ok: list[int]) -> list[int]:
+    """A text card's backdrop: the last picture shown that is not a map, else the subject's, else any photo that is
+    not a map; a map only when there is nothing else (a blurred map under a card is one more map on screen)."""
+    for i in [backdrop, *subject[:1], *(j for j in ok if not visuals.is_map(photos[j]))]:
+        if i is not None and not visuals.is_map(photos[i]):
+            return [i]
+    return [last] if last is not None else subject[:1]
+
+
+def _map_cuts(rows: list[dict], photos: list[dict], says_: list[str] = (), subject=(), ok=()) -> list[dict]:
+    """The map ceilings, by problems' per-beat weights or by the time the voice will give them (a beat's length in
+    letters, a cut from its cut_at on; a card's time counted in neither): map cuts go first (latest first: the
+    hand-fixed Rubio cut to the Jamnagar map in beats 1 and 2; 39411041538 cut to Juhu's map on its fourth word),
+    then a beat whose only view is a map becomes a card, latest first, while there are more than MAX_MAP_VIEWS map
+    views or maps fill over MAP_SHARE of the picture time."""
     pics = [(r, max(len(says_[k]), 1) if k < len(says_) else 1) for k, r in enumerate(rows)
             if r["plate"] != CARD and r["views"]]
 
@@ -497,6 +533,20 @@ def _map_cuts(rows: list[dict], photos: list[dict], says_: list[str] = ()) -> li
         if share() <= MAP_SHARE:
             break
         r.update(views=r["views"][:1], cut_word="", cut_at=-1, card_view=0)
+
+    def views() -> int:
+        return sum(visuals.is_map(photos[i]) for r, _ in pics for i in r["views"])
+
+    for k in range(len(pics) - 1, -1, -1):
+        if share() <= MAP_SHARE and views() <= MAX_MAP_VIEWS:
+            break
+        r = pics[k][0]
+        if all(visuals.is_map(photos[i]) for i in r["views"]):
+            back = next((i for q, _ in pics[:k][::-1] for i in q["views"][::-1] if not visuals.is_map(photos[i])),
+                        None)
+            r.update(plate=CARD, views=_backdrop(back, r["views"][0], list(subject), photos, list(ok)), cut_word="",
+                     cut_at=-1, card_view=0)
+            pics.pop(k)
     return rows
 
 
@@ -511,7 +561,7 @@ def cast_of(short) -> list[dict]:
         seen: dict[str, dict] = {}
         for i, p in enumerate(photos):
             role = p.get("role")
-            if role in ("person", "place", "topic"):
+            if role in MEMBERS:
                 names_ = [p.get("who")] if p.get("who") else []
             elif role == "map":
                 names_ = _map_names(p, [])
@@ -572,7 +622,7 @@ def vet_photo(i: int, photos: list[dict], cast: list[dict], year: int, person: b
     visuals.direct stamps it before planning and the gate reads the same reasons off the saved photos."""
     p = photos[i]
     role = p.get("role")
-    if role == "map" or role == "topic":
+    if role in ("map", "topic", "thing"):
         return ""
     if not role:
         pool = [q for q in photos if not q.get("role")]
@@ -618,14 +668,20 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     for v in views or []:
         beat_time[v["beat_k"]] = beat_time.get(v["beat_k"], 0.0) + max(v["end"] - v["start"], 0.0)
     out: list[str] = []
-    total = map_time = 0.0
+    total = map_time = real_time = card_time = 0.0
     cards = run = held = 0
     pictures: list[int] = []
     prev_key, prev_held, ran = None, False, False
     shown_beats = [(k, b) for k, b in enumerate(short.beats) if b.shot.startswith("photo:")]
+    # What has a real photo (not a map, not vetted out): a beat naming it never stands over a map.
+    pictured = {x for i, p in enumerate(photos) if not visuals.is_map(p) and not vet(i, photos, short, cast)
+                for x in canon(depicts(i, p, cast)) if x != CONTEXT}
+    kind_of = {SUBJECT: "person" if person else "place", **{key(c): c.get("kind") for c in cast}}
+    map_views = _map_views(short, views)
     for k, b in shown_beats:
         say, n = b.text, k + 1
         if b.plate == CARD:
+            card_time += beat_time.get(k, 0.0) if views else 1.0
             cards, run = cards + 1, run + 1  # a card's time is not picture time: cards never dilute the maps
             if run >= CARD_RUN and not ran:
                 out.append(f"text cards: {run} beats in a row from beat {n - run + 1}")
@@ -652,8 +708,14 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
             ok = ok or (SUBJECT in d and k == 0)
             if not ok:
                 out.append(f"pictures: beat {n} shows {_label(i, photos)}, which the beat does not name")
-            if why := vet(i, photos, short, cast):
+            why = vet(i, photos, short, cast)
+            if why:
                 out.append(f"pictures: beat {n} shows {_label(i, photos)}: {why}")
+            real_time += w if ok and not why and not visuals.is_map(p) else 0.0
+            if visuals.is_map(p):
+                for x in sorted(x for x in named & pictured if kind_of.get(x) in ("person", "thing", "topic")
+                                or x == SUBJECT):
+                    out.append(f"pictures: beat {n} shows a map though it names {x}, who has a photo")
             if j == 0:
                 main = SUBJECT if SUBJECT in d and ok else next(iter(d & named), None)
         held += this_held
@@ -662,6 +724,9 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         # A police name too: "मुंबई पुलिस" over Tiger Shroff passed for any picture (39427875643 replan, 2026-10-22
         # review round 2). With render.json's views, the chip's own window (_chip_overrun).
         said = canon(card_keys(big, small, cast, spell, others))
+        # A town with no photo of its own, only a map, on a chip is a dateline ("जामनगर में बैठक" over Rubio): the
+        # beat may not cut to its map when it names a person (2026-10-22), so the chip stands over who is there.
+        said -= {x for x in said if kind_of.get(x) == "place" and x not in pictured}
         pic = shown[min(b.card_view, len(shown) - 1)] if shown else None
         on = canon(card_on(shown, photos, cast))
         for x in sorted(said - on):
@@ -682,13 +747,36 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                 out.append(f"pictures: the hook names {who}, whom the narration never says")
     if total and map_time / total > MAP_SHARE:
         out.append(f"pictures: maps fill {map_time / total:.0%} of the picture time (at most {MAP_SHARE:.0%})")
-    if cards * 2 > len(shown_beats):
-        out.append(f"text cards: {cards} of {len(shown_beats)} beats (at most half)")
+    if map_views > MAX_MAP_VIEWS:
+        out.append(f"pictures: {map_views} map views (at most {MAX_MAP_VIEWS})")
+    if cards > card_limit(len(shown_beats)):
+        out.append(f"text cards: {cards} of {len(shown_beats)} beats (at most {card_limit(len(shown_beats))})")
+    if total + card_time and real_time / (total + card_time) < REAL_SHARE:
+        out.append(f"pictures: real photos fill only {real_time / (total + card_time):.0%} of the Short (want at "
+                   f"least {REAL_SHARE:.0%})")
     want = min(sc.get("min_visuals", visuals.MIN_VISUALS), len(shown_beats) - cards)
     distinct, grouped = len(set(pictures)), len({groups.get(i, i) for i in pictures})
     if distinct >= want > grouped:
         out.append(f"pictures: only {grouped} different pictures once a place's maps count as one (want {want})")
     return out
+
+
+def card_limit(beats: int) -> int:
+    """The most text cards a Short of this many beats may have: a third, and one in any Short."""
+    return max(1, beats // 3)
+
+
+def _map_views(short, views: list[dict] | None = None) -> int:
+    """How many times a map comes on screen: render.json's views (one map held across a cut counts once), else one
+    per map in each picture beat's shot. A card's backdrop is not counted (plan never puts a map there)."""
+    photos = short.scene.get("photos") or []
+    if views:
+        seq = [v["photo"] for v in sorted(views, key=lambda v: v["start"]) if v.get("plate") != CARD
+               and not v.get("outro")]
+        return sum(1 for j, i in enumerate(seq) if i < len(photos) and visuals.is_map(photos[i])
+                   and (j == 0 or seq[j - 1] != i))
+    return sum(visuals.is_map(photos[i]) for b in short.beats if b.shot.startswith("photo:") and b.plate != CARD
+               for i in shot_photos(b.shot) if i < len(photos))
 
 
 def _chip_overrun(n: int, k: int, pic, views: list[dict], photos: list[dict], hooked: bool) -> list[str]:

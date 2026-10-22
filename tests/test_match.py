@@ -54,10 +54,14 @@ def test_city_never_shows_spot_map():
     rows, _ = planned(short("39714003987"))
     for k in (0, 1):  # "...जामनगर में रिलायंस रिफाइनरी", "...जामनगर परिसर में": the city only
         assert 11 not in rows[k]["views"] and 12 not in rows[k]["views"]
-    assert rows[0] == {"views": [1, 8], "cut_word": "जामनगर", "cut_at": 27, "plate": "", "card_view": 1}
-    # beat 2's Jamnagar cut would put maps at 50% of the picture time (finding 12): the hosts alone, no map
+    # No map cuts (2026-10-22, real pictures): each of these beats names Rubio or the Ambanis, whose photos it shows,
+    # and a map stands only under a beat that names nothing but places. Once rows[0] cut to Jamnagar's map on its
+    # word and rows[3] to Vantara's.
+    assert rows[0] == {"views": [1], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
     assert rows[1] == {"views": [10], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
-    assert rows[3] == {"views": [2, 11], "cut_word": "वनतारा", "cut_at": 40, "plate": "", "card_view": 1}  # Vantara's own map
+    assert rows[3] == {"views": [2], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
+    photos = short("39714003987").scene["photos"]
+    assert not any(visuals.is_map(photos[i]) for r in rows for i in r["views"])
 
 
 def test_pronoun_continuity_needs_leading_pronoun_and_prev_subject():
@@ -120,14 +124,22 @@ def test_rubio_plan_passes_and_original_blocks():
     s = short("39714003987")
     bad = match.problems(s)
     assert any("beat 1 shows" in p and "childhood" in p for p in bad)  # the 1989 yearbook photo
-    assert any(p.startswith("pictures: maps fill") for p in bad)
-    assert any("card 4 names" in p and hindi.norm("वनतारा") in p for p in bad)
+    assert "pictures: maps fill 67% of the picture time (at most 20%)" in bad
+    assert "pictures: 7 map views (at most 1)" in bad
+    assert "pictures: beat 1 shows a map though it names @subject, who has a photo" in bad
+    # Once "card 4 names वनतारा over a picture of something else": a town with only a map on a chip is a dateline
+    # now (its map may not stand under a beat naming a person), so it is not a problem.
     rows, _ = planned(s)
-    assert match.problems(applied(s, rows)) == []
-    # the hand fix held maps under 1.5 of its 3 picture beats (finding 12: card time no longer pads the share):
+    # Re-planned, every picture is a real photo the beat names; but three of its six beats (the Venezuela talks,
+    # Reliance's statement, the US officials) name nothing with a picture, over a third (match.card_limit, once
+    # half): the Short is blocked and the writer's SHOWABLE retry must name what can be shown (2026-10-22).
+    assert match.problems(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5",
+                                                "text cards: 3 of 6 beats (at most 2)"]
+    # The hand fix (maps under 1.5 of its 3 picture beats) passed at 40% once; at 20%, one map view, and no map
+    # under a beat naming Rubio, it is blocked, and so is it re-hosted.
     fixed = short("39714003987-fixed")
-    assert match.problems(fixed) == ["pictures: maps fill 50% of the picture time (at most 40%)"]
-    assert match.problems(rehosted(fixed)) == []  # beat 2 on the hosts alone, as plan() makes it
+    assert "pictures: maps fill 50% of the picture time (at most 20%)" in match.problems(fixed)
+    assert "pictures: 2 map views (at most 1)" in match.problems(rehosted(fixed))
 
 
 def rehosted(s):
@@ -137,7 +149,9 @@ def rehosted(s):
 
 def test_jaishankar_flags_only_beat_7():
     bad = match.problems(short("39411111185"))
-    assert bad and all("beat 7 shows" in p for p in bad)
+    # Beat 7's portraits, and (since 2026-10-22) beat 2's Mumbai map under "मार्को रुबियो", who has a photo.
+    assert bad[0] == f"pictures: beat 2 shows a map though it names {hindi.norm('मार्को रुबियो')}, who has a photo"
+    assert bad[1:] and all("beat 7 shows" in p for p in bad[1:])
     rows, _ = planned(short("39411111185"))
     assert rows[6]["plate"] == match.CARD
     assert match.problems(applied(short("39411111185"), rows)) == []
@@ -149,7 +163,8 @@ def test_old_jantar_photo_and_card_ceiling():
     rows, photos = planned(s)
     assert "vet" in photos[3] and all(3 not in r["views"] or r["plate"] for r in rows)
     bad = match.problems(applied(s, rows))  # 4 of 6 beats name nothing showable: blocked, never filled
-    assert "text cards: 4 of 6 beats (at most half)" in bad and "text cards: 3 beats in a row from beat 3" in bad
+    # A third of six (2, once half) and two in a row (once three).
+    assert "text cards: 4 of 6 beats (at most 2)" in bad and "text cards: 2 beats in a row from beat 3" in bad
 
 
 def test_render_views_weigh_map_time():
@@ -166,8 +181,12 @@ def test_render_views_weigh_map_time():
             t += d
         return out
 
-    assert match.problems(s, views(2)) == []  # 4 s of maps in 12 (a card's time is neither map nor picture time)
-    assert "pictures: maps fill 53% of the picture time (at most 40%)" in match.problems(s, views(7))  # 9 s in 17
+    # A card's time is neither map nor picture time: 2.5 s of maps in 10.5, then 9 s in 17. Both are over 20% now
+    # (once 40%: views(2) passed); the shares still move with the time the maps are held.
+    assert "pictures: maps fill 24% of the picture time (at most 20%)" in match.problems(s, views(0.5))
+    assert "pictures: maps fill 53% of the picture time (at most 20%)" in match.problems(s, views(7))
+    # One map held across views counts once; beats 1 and 4 show maps: two views.
+    assert "pictures: 2 map views (at most 1)" in match.problems(s, views(2))
 
 
 def test_old_short_json_loads(tmp_path):
@@ -180,5 +199,6 @@ def test_old_short_json_loads(tmp_path):
     assert s.beats[0].shot == "photo:0/8"
     rows, _ = planned(s)
     back = Short.load(applied(s, rows).save(tmp_path / "short.json"))
-    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:2/11", "वनतारा", 1)
+    # No cut to Vantara's map under the beat naming Rubio (2026-10-22; once "photo:2/11" cut on "वनतारा").
+    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:2", "", 0)
     assert back.beats[2].plate == match.CARD

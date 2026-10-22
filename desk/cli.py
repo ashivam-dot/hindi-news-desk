@@ -21,6 +21,16 @@ WORK = ROOT / "work"
 # A death no news report states yet is retried: Wikidata's P570 often comes before the outlets' items are read.
 RETRYABLE = ("words (want", "does not confirm the death", "no news report states the death", "usable photos",
              "no draft passed", "came out garbled", "orbitwire", "pictures:", "text cards", "too few showable")
+# A faceless subject (writer.FACELESS) is skipped for good whatever else the gate said: a run later the photo still
+# does not exist (CAPraPdXvns, Raihan Vadra). Picture and card ceilings stay retryable: the writer is stochastic and
+# a rewrite that names the person or thing in each beat passes, within ledger.retry's six tries.
+FACELESS = "faceless:"
+
+
+def retryable(reason: str) -> bool:
+    return FACELESS not in reason and any(m in reason for m in RETRYABLE)
+
+
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")
@@ -343,7 +353,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                     health["steps"].append(f"wait {cand['id']}: {exc}")
                     continue
                 # Thin articles, and stories still short of free photos, get another chance next run.
-                (note_retry if any(m in str(exc) for m in RETRYABLE) else note_skip)(cand["id"], str(exc)[:300])
+                (note_retry if retryable(str(exc)) else note_skip)(cand["id"], str(exc)[:300])
                 health["steps"].append(f"skip {cand['id']}: {exc}")
                 continue
             except Exception as exc:  # one malformed article must not stop the other candidates

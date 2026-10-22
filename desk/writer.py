@@ -201,9 +201,12 @@ RULES = """RULES (all mandatory):
   it}}. Where HINDI NAMES gives a Hindi spelling, use that spelling.
 - photo: the index of the PHOTO that best fits the beat. Beat 1 uses photo {best}. Never a photo marked "not to be
   shown", and the same photo at most twice.
-- Each beat names the person, place or police it is about: the video shows only what a beat names, and a beat that
-  names nothing shown becomes a text card. Statements by organisations or countries become text cards, at most half
-  the beats.
+- Each beat names the person, place, thing or police it is about: the video shows only what a beat names, and a
+  beat that names nothing shown becomes a text card. Things have real photos too: say the thing itself in the beat
+  (तिरंगा, संसद, सुप्रीम कोर्ट, लाल किला, a ship, a train, an animal) where the SOURCES name it. Statements by
+  organisations or countries become text cards: at most a third of the beats, never two beats in a row. A beat that
+  names only a city or state shows its map, and a Short may show one map at most: name the person or the thing in
+  every other beat.
 - caption: the beat's key fact as a news graphic shows it, 1 to 4 Hindi words: a number with its unit ("11.39%",
   "6 लाख घर", "2 घंटे"), a date, a decision ("उड़ान डायवर्ट"), a role or an honour. Prefer a number whenever the beat
   has one. Never a place name alone: viewers read a place over a photo as where the photo was taken. Beat 1's
@@ -457,29 +460,49 @@ def _check_messages(script: str, names: list[dict], facts: list[str], source_en:
 
 def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = None, near: dict | None = None,
                kind: str = "") -> list[str]:
-    """A problem when more than half the beats, or match.CARD_RUN in a row, name nothing a picture can show
-    (visuals.showable): they would become text cards (SYNC-AUDIT 4.1 step 4, the picture-first rewrite). The Tiger
-    Shroff "hurt" Short (39553699482) ended on the doctors and the injured, under his portrait and maps. Nothing
-    when nothing but the subject can be shown, except in a death Short: its pronoun beats ("उन्होंने", "उनकी") are
-    cards (the pronoun rule is for explainers), so naming the person is the rewrite (review round 2). A police line
-    is empty unless SHOWABLE has the police (a story outside India has no police photo: match.names)."""
+    """A problem when more than a third of the beats (match.card_limit), or match.CARD_RUN in a row, name nothing a
+    picture can show (visuals.showable_rows): they would become text cards (SYNC-AUDIT 4.1 step 4, the picture-first
+    rewrite). A beat naming only towns or regions (map_only) is a map beat, and a Short shows one map at most
+    (match.MAX_MAP_VIEWS): every map-only beat after the first is a card too (CAPraPdXvns: New Delhi's map under four
+    of five beats). The Tiger Shroff "hurt" Short (39553699482) ended on the doctors and the injured, under his
+    portrait and maps. Nothing when nothing but the subject can be shown, except in a death Short: its pronoun beats
+    ("उन्होंने", "उनकी") are cards (the pronoun rule is for explainers), so naming the person is the rewrite (review
+    round 2). A police line is empty unless SHOWABLE has the police (a story outside India has no police photo:
+    match.names). A thing ("तिरंगा") is matched in each inflected form its lexicon lists ("तिरंगे")."""
     person = subject.get("person") is not False
-    can = visuals.showable(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
+    rows = visuals.showable_rows(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
     name = (subject.get("hi") or "").strip()
+    can = list(dict.fromkeys(r["hi"] for r in rows))
     listed = ([name] if kind == "death" and person and name else []) + [h for h in can if h != name]
     if not listed or listed == [name] and kind != "death":
         return []
-    cast = [{"hi": h, "kind": "place"} for h in can if h not in ("पुलिस", name)]
+    cast = [{"hi": r["hi"], "kind": "thing" if r["kind"] == "thing" else "place", "alias": r.get("alias") or [],
+             "map_only": r.get("map_only")} for r in rows if r["hi"] not in ("पुलिस", name)]
     cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []  # no city: never "another force" (other_force)
+    maps = {match.key(c) for c in cast if c.get("map_only")}
     spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
              if len(hindi.norm(w)) >= 3]
     beats = draft.get("beats") or []
-    empty = [k + 1 for k, b in enumerate(beats) if k and not match.names(b.get("say") or "", cast, spell)]
+    empty, mapped = [], 0
+    for k, b in enumerate(beats):
+        found = {x for _, x in match.names(b.get("say") or "", cast, spell)}
+        if k and not found:
+            empty.append(k + 1)
+        elif found and found <= maps:
+            mapped += 1
+            if mapped > match.MAX_MAP_VIEWS:
+                empty.append(k + 1)
     run = max((len(list(g)) for g in _runs(empty)), default=0)
-    if len(empty) * 2 <= len(beats) and run < match.CARD_RUN:
+    if len(empty) <= match.card_limit(len(beats)) and run < match.CARD_RUN:
         return []
-    return [f"beats {','.join(map(str, empty))} name nothing that can be shown; SHOWABLE: {', '.join(listed)}. Name "
-            f"in each beat the person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
+    things_ = [r["hi"] for r in rows if r["kind"] == "thing"]
+    limit = match.card_limit(len(beats))
+    return [f"beats {','.join(map(str, empty))} name nothing that can be shown (or only a city or state, whose map "
+            f"a Short shows once); SHOWABLE: {', '.join(listed)}. Name in each beat the person, thing, place or police "
+            f"it is about (one of SHOWABLE where the SOURCES allow"
+            + (f"; things with photos: {', '.join(things_)}" if things_ else "")
+            + f"), so that at most {limit} {'beat is a text card' if limit == 1 else 'beats are text cards'} and never "
+            "two in a row."]
 
 
 def _runs(nums: list[int]):
@@ -1580,6 +1603,88 @@ def hook_said(hook: str, title: str, first: str, names: list[dict]) -> bool:
                and not hindi.contains(speaker, n["hi"]))
 
 
+# A faceless subject is no Short (owner, 2026-10-22, on CAPraPdXvns: "where is rehan photo"). Every headline was
+# about "Priyanka Gandhi's son" Raihan Vadra, whose Wikidata item has no image: the Short showed his mother, a map
+# and a card. The reason starts FACELESS, which no cli.RETRYABLE word matches: the photo will not appear by the next
+# run, so the story is skipped for good, never retried, and the health note says why.
+FACELESS = "faceless:"
+RELATIONS = {"son": "P40", "daughter": "P40", "child": "P40", "wife": "P26", "husband": "P26", "spouse": "P26",
+             "father": "P22", "mother": "P25", "brother": "P3373", "sister": "P3373"}
+RELATIVE_SHARE = 0.5  # of the story's headlines that frame it as about the relative
+KIN_HI = ("बेटे", "बेटा", "बेटी", "पत्नी", "पति", "भाई", "बहन", "मां", "माँ", "पिता", "पोते", "पोती", "भतीजे",
+          "भतीजी", "दामाद", "बहू")
+
+
+def relative_story(name: str, texts: list[str]) -> tuple[str, list[str]] | None:
+    """(relation, the capitalised words after it) when at least RELATIVE_SHARE of texts frame the story as about
+    the subject's relative ("Priyanka Gandhi's son Raihan alleges ..."): a person's name in the headlines is then
+    the relative's, not the subject's, and the Short must show the relative."""
+    words = [w for w in dict.fromkeys([name, *name.split()[-1:]]) if len(w) >= 3]
+    if not words or not texts:
+        return None
+    rel = "|".join(sorted(RELATIONS, key=len, reverse=True))
+    # The name and the relation in any case ("PRIYANKA GANDHI'S SON"), the relative's name only capitalised.
+    pat = re.compile(rf"\b(?i:{'|'.join(map(re.escape, words))})['’]s\s+(?i:({rel}))\b,?\s*((?:[A-Z][a-z]+\s*){{0,2}})")
+    hits = [m for t in texts if (m := pat.search(t or ""))]
+    if not hits or len(hits) < RELATIVE_SHARE * len(texts):
+        return None
+    relation = Counter(m.group(1).lower() for m in hits).most_common(1)[0][0]
+    return relation, sorted({w for m in hits for w in m.group(2).split()})
+
+
+def relative_faceless(cand: dict, name: str, ent: dict) -> str | None:
+    """Why a person's story is refused before any script is written: its headlines are about the subject's relative
+    (relative_story) and no relative of that kind on Wikidata (the subject's P40, P26, ...) has an image that is a
+    photo. Wikidata only, no Commons download, no writer call."""
+    texts = [t for t in [cand.get("story") or cand.get("title") or "", *(cand.get("headlines") or [])] if t]
+    texts = list(dict.fromkeys(texts))
+    found = relative_story(name, texts)
+    if not found:
+        return None
+    relation, said = found
+    qids = [c["value"] for c in wiki.claims(ent, RELATIONS[relation]) if isinstance(c["value"], str)]
+    try:
+        rows = wiki.entities(qids) if qids else {}
+    except Exception:
+        return None  # unread is not faceless: the post-writing check (faceless) still runs
+    named = [e for e in rows.values() if any(w.lower() in (wiki.label(e) or "").lower().split() for w in said)]
+    pool = named or list(rows.values())
+    if any(not media.NOT_PHOTO.search(c["value"]) for e in pool for c in wiki.claims(e, "P18")):
+        return None
+    who = (wiki.label(named[0]) if named else " ".join(w for w in said if w.lower() not in ("says", "alleges")))
+    return (f"{FACELESS} the story is about {name}'s {relation}{' ' + who if who else ''}, and Wikidata has no free "
+            "photo of them; a Short whose subject it cannot show is not made (skipped, not retried)")
+
+
+def faceless(title: str, photos: list[dict], cast: list[dict], name_hi: str, person: bool,
+             names: list[dict] | None = None) -> str | None:
+    """Why a written Short is refused before any render: the person it is about has no photo that passed vetting,
+    or its title names a person (a cast person, or a name the script lists after a kinship word: "प्रियंका वाड्रा के
+    बेटे रेहान") who has none. photos and cast as visuals.direct returns them (stamped "depicts" and "vet"); names:
+    the script's names ("भाई दूज" is a festival after a kinship word, and no name)."""
+    listed = [n.get("hi") or "" for n in names or [] if n.get("hi")]
+    def shown(key: str) -> bool:
+        return any(key in (p.get("depicts") or []) and not p.get("vet") and not visuals.is_map(p) for p in photos)
+
+    if person and name_hi and not shown(match.SUBJECT):
+        return f"{FACELESS} no photo of {name_hi} passed vetting; a Short about them is not made (skipped, not retried)"
+    pictured = [c for c in cast if c.get("kind") == "person" and shown(match.key(c))]
+    for c in cast:
+        if c.get("kind") == "person" and hindi.contains(title, c.get("hi") or "") and c not in pictured:
+            return (f"{FACELESS} the title names {c['hi']}, and no photo of them passed vetting (skipped, not "
+                    "retried)")
+    for m in re.finditer(rf"(?<![\u0900-\u097F])(?:{'|'.join(KIN_HI)})\s+([\u0900-\u097F]+)", title):
+        who = m.group(1)
+        if who in hindi.FUNCTION_WORDS or len(hindi.norm(who)) < 3 or \
+                not any(hindi.contains(n, who) for n in listed):
+            continue
+        if not any(hindi.contains(w, who) for c in pictured for w in [c.get("hi") or "", *(c.get("alias") or [])]) \
+                and not hindi.contains(name_hi, who):
+            return (f"{FACELESS} the title is about {who}, and no free photo of them was found (skipped, not "
+                    "retried)")
+    return None
+
+
 def story_born(ent: dict) -> int | None:
     """The year a person was born (Wikidata P569), for media.era_reject."""
     return next((d.year for d in (wiki.wd_time(c["value"]) for c in wiki.claims(ent or {}, "P569")) if d), None)
@@ -1603,6 +1708,8 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
                                          recent=recent, kind=kind, year=year, born=born,
                                          incident=kind in ("incident", "protest", "death") or bool(loss),
                                          near=near, subject_hi=name_hi)
+    if refused := faceless(draft["title"], photos, cast, name_hi, bool(person), draft.get("names")):
+        raise ValueError(refused)
     if kind != "death" and (stale := stale_pictures(photos, views, recent)):
         raise ValueError(stale)
     spell = [w for w in dict.fromkeys([name_hi, *(name_hi.split()[:1] + name_hi.split()[-1:] if person else [])])
@@ -1823,6 +1930,8 @@ def build_explainer(cand: dict) -> Short:
     name = stories.plain_title(wiki.label(ent) or title)
     name_hi = wiki.common_hindi(ent)
     phrase = cand.get("phrase") or name
+    if person and (refused := relative_faceless(cand, name, ent)):
+        raise ValueError(refused)
     work = WORK / sid
     mine = [r for r in cand.get("reports") or []
             if cand.get("case") or explain.about_story(r, phrase, cand.get("story_keys") or [])]

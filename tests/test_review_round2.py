@@ -113,13 +113,14 @@ def test_a_chip_ends_at_its_cut():
 
 def test_a_death_draft_naming_nothing_is_sent_back(monkeypatch):
     # Finding 6: a death Short's pronoun beats are cards, and nothing but the subject was showable: never rewritten.
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: [])
+    monkeypatch.setattr(visuals, "showable_rows", lambda *a, **k: [])
     draft = {"beats": [{"say": "दिग्गज अभिनेता धर्मेंद्र का निधन हो गया।"}, {"say": "उन्होंने 300 से ज्यादा फिल्मों में काम किया।"},
                        {"say": "उनकी फिल्म शोले आज भी याद की जाती है।"}, {"say": "उनके परिवार ने यह जानकारी दी।"}]}
     subject = {"en": "Dharmendra", "hi": "धर्मेंद्र", "person": True}
     assert writer.anchorless(draft, subject, True, kind="death") == [
-        "beats 2,3,4 name nothing that can be shown; SHOWABLE: धर्मेंद्र. Name in each beat the person, place or police "
-        "it is about (one of SHOWABLE where the SOURCES allow)."]
+        "beats 2,3,4 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: "
+        "धर्मेंद्र. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES "
+        "allow), so that at most 1 beat is a text card and never two in a row."]
     assert writer.anchorless(draft, subject, True, kind="explainer") == []  # the pronoun rule shows him there
     named = {"beats": [{"say": b["say"].replace("उन्होंने", "धर्मेंद्र ने").replace("उनकी", "धर्मेंद्र की")
                         .replace("उनके", "धर्मेंद्र के")} for b in draft["beats"]]}
@@ -153,10 +154,14 @@ def test_continuity_never_holds_the_subject_under_someone_named():
 
 def test_police_beats_are_empty_without_a_police_picture(monkeypatch):
     # Finding 9: outside India SHOWABLE has no police, yet "पुलिस ने बताया" counted as a showable beat.
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["पेरिस"])
+    def rows(*names):
+        return lambda *a, **k: [{"hi": n, "kind": "police" if n == "पुलिस" else "place", "alias": [],
+                                 "map_only": False} for n in names]
+
+    monkeypatch.setattr(visuals, "showable_rows", rows("पेरिस"))
     draft = {"beats": [{"say": "पेरिस में एक संग्रहालय में चोरी हुई।"}, {"say": "पुलिस ने बताया कि चोर खिड़की से घुसे।"},
                        {"say": "पुलिस ने दो लोगों को गिरफ्तार किया।"}, {"say": "आरोपियों से पूछताछ जारी है।"}]}
     subject = {"en": "Louvre heist", "hi": "लूव्र चोरी", "person": False}
     assert writer.anchorless(draft, subject, False, kind="incident")[0].startswith("beats 2,3,4 name nothing")
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["पेरिस", "पुलिस"])
+    monkeypatch.setattr(visuals, "showable_rows", rows("पेरिस", "पुलिस"))
     assert writer.anchorless(draft, subject, False, kind="incident") == []  # beat 4 alone is a card
