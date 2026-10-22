@@ -363,3 +363,16 @@ def test_a_bare_surname_that_is_a_word_is_retried_as_the_headlines_full_name(mon
     cands, notes = explain.find(rows, NOW_)
     assert all(c["qid"] != "Q185635" for c in cands), notes
     assert any(c["qid"] == "Q946" for c in cands) or any("Donald Tusk" in n for n in notes), (cands, notes)
+
+
+def test_both_after_an_attribution_and_beside_a_town_is_still_the_pair():
+    """Dry run 39833792083 b2 "रिपोर्टों के मुताबिक, दोनों नेताओं ने नई दिल्ली के हैदराबाद हाउस में बैठक की": New Delhi's map
+    (one map, then cut to a card by the map ceiling), so 2 of 5 beats were cards and the Short was refused."""
+    from .test_match import applied, planned
+
+    s = short("39833792083")
+    assert "text cards: 2 of 5 beats (at most 1)" in match.problems(s)
+    rows, photos = planned(s)
+    assert len(rows[1]["views"]) == 2 and rows[1]["plate"] == "" and not any(visuals.is_map(photos[i])
+                                                                           for i in rows[1]["views"])
+    assert match.problems(applied(s, rows)) == []

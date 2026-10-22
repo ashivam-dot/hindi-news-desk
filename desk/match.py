@@ -28,7 +28,8 @@ LEAD = re.compile(r"^(उन्होंने|उनके|उनका|उन�
 CONTINUITY = 2  # such beats a Short may hold, never two in a row
 # "दोनों नेताओं ने ..." right after a beat that showed two people: it is about the pair (dry run 39827809002, Tusk and
 # Modi, b3 "दोनों नेताओं ने इंडिया और पोलैंड के बीच व्यापार बढ़ाने पर चर्चा की" was a card).
-BOTH = re.compile(r"^(दोनों)(?=\s|$)")
+# After "रिपोर्टों के मुताबिक," too (dry run 39833792083 b2 "रिपोर्टों के मुताबिक, दोनों नेताओं ने ... बैठक की").
+BOTH = re.compile(r"^(?:(?:रिपोर्टों|रिपोर्ट्स|खबरों|सूत्रों|अधिकारियों) के (?:मुताबिक|अनुसार),?\s*)?(दोनों)(?=\s|$)")
 # Never on a pronoun alone: a harm line (Tiger Shroff smiling under "उनके ड्राइवर और एक फैन को गोली लगी",
 # 39505534156 b4) or an actor no picture is of ("मेहमान नेता", "एक व्यक्ति ने इस हमले की जिम्मेदारी ली"). Each is the
 # start of a word (says), and the forms in WHOLE whole words: "अमृतसर" is no death, "व्यक्तिगत" no person, "चोटी" no
@@ -448,10 +449,22 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
                 picks.append((min(cands, key=lambda i: (i in prev, used[i], cands.index(i))), x, a))
                 skip.update(depict[route] if route is not None else ())
 
+        # Places alone beside it ("दोनों नेताओं ने नई दिल्ली के हैदराबाद हाउस में बैठक की") leave it about the pair.
+        if not picks and all(kind_of.get(x) == "place" for _, x in found) and k > 0 and BOTH.match(say.strip()) \
+                and len(pair := _pair(out[-1], photos, depict, kind_of)) == 2:
+            at = _second_word(say)
+            for n, x in enumerate(pair):
+                real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and free(i, set())]
+                if real:
+                    picks.append((min(real, key=lambda i: (i in prev, used[i], real.index(i))), x, at if n else 0))
+            if len(picks) < 2:
+                picks = []
         rest = list(enumerate(found))
         # The main view: the first key said that has a real photo; only when none has one, a map. Dry run 39789422139
         # b2 "नई दिल्ली में ... यमुना प्रोजेक्ट": New Delhi's map, cut to a card by the map ceiling, hid the Yamuna's photo.
-        first = next((r for r in rest if (choose(r[0], *r[1], mapped=False), picks)[1]), None)
+        if picks:
+            rest = []
+        first = None if picks else next((r for r in rest if (choose(r[0], *r[1], mapped=False), picks)[1]), None)
         if first is not None:
             rest.remove(first)
         while rest and not picks:
@@ -466,15 +479,6 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
                 break  # a map is the whole of its beat
             if x not in skip and x != picks[0][1]:
                 choose(n, a, x)
-        if not picks and not found and k > 0 and BOTH.match(say.strip()) and len(pair := _pair(out[-1], photos,
-                                                                                               depict, kind_of)) == 2:
-            at = _second_word(say)
-            for n, x in enumerate(pair):
-                real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and free(i, set())]
-                if real:
-                    picks.append((min(real, key=lambda i: (i in prev, used[i], real.index(i))), x, at if n else 0))
-            if len(picks) < 2:
-                picks = []
         row = {"views": [], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
         this_held = False
         # Never under a beat that names someone or something else with no usable picture: "उनके पिता जैकी श्रॉफ ने
@@ -733,8 +737,8 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         run = 0
         named = canon({x for _, x in names(say, cast, spell, others)})
         # "दोनों ..." right after a beat that showed two people it names is about that pair (plan's BOTH).
-        if not named and k > 0 and BOTH.match(say.strip()) and len(pair) == 2:
-            named = set(pair)
+        if all(kind_of.get(x) == "place" for x in named) and k > 0 and BOTH.match(say.strip()) and len(pair) == 2:
+            named = named | pair
         these = []
         shown = shot_photos(b.shot)
         weights = timed.get(k) if views else [(i, 1.0 / len(shown)) for i in shown]
