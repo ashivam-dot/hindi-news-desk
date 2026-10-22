@@ -18,10 +18,11 @@ most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GA
 (SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and CASE_MAX_TOTAL in all.
 A breaking story (huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake
 USGS rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap;
-wars never take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id changes. No more
-than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told differently
-(desk/orbitwire.py). A Short the owner wants made again (remakes/*.json) comes back while its story is still on the
-radar, ahead of the other ready stories; once the new version is public the old one is made private.
+wars never take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id
+changes. No more than two loss stories in any three consecutive uploads. Stories Orbitwire covers are skipped or told
+differently (desk/orbitwire.py). A Short the owner wants made again (remakes/*.json) comes back while its story is
+still on the radar, ahead of the other ready stories; once the new version is public the old one is made private.
+Every story carries a lane and an audience (lane_of, audience_of: labels to judge by, never a reason to drop it).
 """
 from __future__ import annotations
 
@@ -122,6 +123,41 @@ AD_FRIENDLY_WORDS = re.compile(
 # Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible.
 WORLD_SKIPPED = ("politics", "diplomacy", "world")
 WORLD_KEPT = ("death", "aviation", "cyclone", "disaster", "earthquake", "flood", "accident", "rail", "weather")
+# Each story's lane (2026-10-22, audit/kyun-hua-shorts-strategy.md §2), a label the scorecard and learn.py judge by,
+# never a reason to drop one: a sensitive case (shootings, attacks, crime, war), an obituary, breaking news or an
+# incident, paisa (what changes for the viewer's wallet: prices, EMI, fares, schemes, exams; WPI, IMF and Sensex
+# are not), rajneeti (a row between named political sides), naam-niyam (a known name in India's news, or a court,
+# film or sport story) and other. The first that fits wins, in LANES order. `audience` is whom the story is for:
+# india when it is India's (region, Wikidata or newsroom link, India in its headlines) or in a Google News India
+# Nation section, else world; `region` stays as it was (INDIA_BOOST, Orbitwire and the hashtags read it).
+LANES = ("sensitive", "obituary", "breaking", "paisa", "rajneeti", "naam-niyam", "other")
+SENSITIVE_KINDS = ("attack", "explosion", "conflict")
+SENSITIVE_WORDS = re.compile(
+    r"\b(shots? fired|shot (dead|at)|(?<!film )(?<!movie )shootings?|shooters?|firing|gunfire|gunned|gunmen|"
+    r"murder\w*|stabb\w*|bombs?|bombing|bombed|blasts?|terror\w*|lynch\w*|riots?(?! police)|communal|sectarian)\b"
+    rf"|{HI_START}(गोली|फायरिंग|फ़ायरिंग|हत्या|मर्डर|चाकू|आतंक|धमाक|विस्फोट|दंगा|दंगे|सांप्रदायिक)", re.I)
+PAISA_WORDS = re.compile(
+    r"\b(petrol|diesel|LPG|CNG|gold (prices?|rates?)|GST|RBI|repo rate|EMIs?|(home|car|education|personal) loans?|"
+    r"income tax|tax slabs?|air ?fares?|(train|rail|bus|metro) fares?|toll (tax|plaza)s?|schemes?|yojana|pension|"
+    r"ration|subsidy|exams?|NEET|JEE|UPSC|SSC|CBSE|recruitment|vacanc(y|ies)|DA hike|dearness allowance|UPI|Aadhaar|PAN card|"
+    r"new rules?)\b"
+    rf"|{HI_START}(पेट्रोल|डीजल|डीज़ल|एलपीजी|सिलेंडर|सोने (का|के|की) (भाव|दाम|कीमत)|जीएसटी|आरबीआई|रिज़र्व बैंक|"
+    r"रिजर्व बैंक|रेपो रेट|ईएमआई|लोन|आयकर|किराय|टोल|योजना|पेंशन|राशन|सब्सिडी|परीक्षा|भर्ती (परीक्षा|प्रक्रिया)|"
+    r"महंगाई भत्त|यूपीआई|आधार कार्ड|नए नियम)", re.I)
+# A row needs a row word and a political side: "Kohli slams a century" is no row.
+ROW_WORDS = re.compile(
+    r"\b(digs? at|slams?|slammed|hits? out|hit back|lash(es|ed)? out|accus\w*|jibes?|swipe at|war of words|"
+    r"attack(s|ed)? (the )?(Centre|govt|government|BJP|Congress|PM|Modi)|demand(s|ed)? .{0,40}resignation)\b"
+    rf"|{HI_START}(घेरा|घेरे|निशाना|पलटवार|इस्तीफे की मांग|इस्तीफ़े की मांग|आरोप लगा|हमला बोला|तंज)", re.I)
+POLITICAL_SIDES = re.compile(
+    r"\b(government|govt|Centre|BJP|Congress|AAP|TMC|RJD|JDU|Shiv Sena|NCP|opposition|ministers?|ministry|MEA|PM|"
+    r"CM|MLA|Modi)\b"
+    rf"|{HI_START}(सरकार|मंत्रालय|मंत्री|भाजपा|बीजेपी|कांग्रेस|विपक्ष|मुख्यमंत्री|प्रधानमंत्री|सांसद|विधायक|"
+    r"मोदी)", re.I)
+NAME_KINDS = ("court", "entertainment", "sport")
+# A published row does not record whether an explainer's centre was a person: one of these categories stands in.
+NAMED_ROW_KINDS = NAME_KINDS + ("news", "health", "politics", "diplomacy", "defence")
+NATION_FEEDS = ("IN-nation", "IN-hi-nation")
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
@@ -384,6 +420,49 @@ def foreign_only(cand: dict) -> bool:
     return not orbitwire.india_connection(cand)
 
 
+def audience_of(cand: dict) -> str:
+    """"india" or "world": whom the story is for (see LANES). A front page leading with it is not enough (it leads
+    with the Pope too); a Nation section is."""
+    if orbitwire.india_connection(cand) or set(cand.get("top") or {}) & set(NATION_FEEDS):
+        return "india"
+    return "world"
+
+
+def lane_of(cand: dict, at: datetime | None = None) -> str:
+    """The story's lane (LANES), from its kind, category, title and headlines; a published row works as well as a
+    candidate. With `at` a breaking story (is_breaking) is breaking news whatever it is about."""
+    text, cat, kind = ad_text(cand), cand.get("category"), cand.get("kind")
+    if cat in SENSITIVE_KINDS or SENSITIVE_WORDS.search(text):
+        return "sensitive"
+    if kind == "death" or cat == "death":
+        return "obituary"
+    if cand.get("breaking") or (at and is_breaking(cand, at)) \
+            or (kind == "incident" and cat not in trends.ONGOING + ("politics",)):
+        return "breaking"
+    if PAISA_WORDS.search(text):
+        return "paisa"
+    if cat == "politics" or (ROW_WORDS.search(text) and POLITICAL_SIDES.search(text)):
+        return "rajneeti"
+    named = cand.get("person") if cand.get("person") is not None else (
+        kind == "explainer" and bool(cand.get("qid")) and cat in NAMED_ROW_KINDS)
+    if (named or cat in NAME_KINDS) and (cand.get("audience") or audience_of(cand)) == "india":
+        return "naam-niyam"
+    return "other"
+
+
+def backfill_lanes(rows: list[dict]) -> list[dict]:
+    """The published rows with a lane and an audience where they have none (rows from before 2026-10-22). Approximate:
+    a row keeps no fame, top-stories place or person flag, so a breaking story reads as its kind and a centre's
+    category stands in for being a person (NAMED_ROW_KINDS)."""
+    out = []
+    for r in rows:
+        r = dict(r)
+        r.setdefault("audience", audience_of(r))
+        r.setdefault("lane", lane_of(r))
+        out.append(r)
+    return out
+
+
 SUFFIX = re.compile(r"-[pr]\d+$")
 
 
@@ -640,6 +719,9 @@ def watch(save: bool = True) -> dict:
             stories += angles_of(s["cand"], [s], rows, at)
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
+    for c in stories:
+        c["audience"] = audience_of(c)
+        c["lane"] = lane_of(c, at)
     found["candidates"] = sorted(stories, key=lambda c: -priority(c, at))
     if save:
         ledger.save("candidates", found)
