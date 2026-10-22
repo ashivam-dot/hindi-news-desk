@@ -746,8 +746,8 @@ def cut_time(shot: dict, words: list[dict], k: int) -> float | None:
     token, else that place in the text mapped onto the beat's spoken time, since whisper's words drift from the
     script's ("वंतारा" for "वनतारा"). Said twice, the time of the time match.plan cut on (cut_at): the same count of
     timed words takes the same one, else the timed word nearest that place ("अंधेरी में ... अंधेरी पुलिस" cut to the
-    police photo on the first अंधेरी). None when there is no cut word, or the time is within CUT_EDGE of either end
-    of the beat."""
+    police photo on the first अंधेरी). A word said inside CUT_EDGE of the start, but not the line's first, cuts at
+    CUT_EDGE. None when there is no cut word, or the time is otherwise within CUT_EDGE of either end of the beat."""
     token = ((shot.get("cut_word") or "").split() or [""])[0].strip(match.PUNCT)
     if not token:
         return None
@@ -769,6 +769,10 @@ def cut_time(shot: dict, words: list[dict], k: int) -> float | None:
         t = min(mine_hits, key=lambda h: abs(h - guess)) if mine_hits else guess
     else:
         t = (hits or [None])[0]
+    # Named early but not first ("डोनाल्ड तुस्क और नरेंद्र मोदी ने ...", dry run 39837265455 b1: Modi at 1.18 s, so
+    # Tusk held all 10 s while the voice said Modi): the cut waits out CUT_EDGE rather than never coming.
+    if t is not None and at > 0 and t < shot["start"] + CUT_EDGE and shot["end"] - shot["start"] >= 3 * CUT_EDGE:
+        t = shot["start"] + CUT_EDGE
     if t is None or not shot["start"] + CUT_EDGE <= t <= shot["end"] - CUT_EDGE:
         return None
     return t

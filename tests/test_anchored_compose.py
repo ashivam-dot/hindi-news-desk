@@ -81,3 +81,16 @@ def test_place_stamp_only_on_its_place():
     # Never over Rubio, never over a card's backdrop, never past its map; Vantara's map says Vantara, not Jamnagar.
     assert compose.places_on(seen, photos) == [(3.0, 6.0, "जामनगर"), (9.0, 11.0, "वनतारा, जामनगर"),
                                                (11.0, 12.0, "वनतारा")]
+
+
+def test_early_second_name_still_cuts():
+    # Dry run 39837265455 beat 1: "डोनाल्ड तुस्क और नरेंद्र मोदी ने ...", Modi said 1.18 s in; it used to hold Tusk.
+    say = "डोनाल्ड तुस्क और नरेंद्र मोदी ने नई दिल्ली में रक्षा सहयोग बढ़ाने पर चर्चा की।"
+    times = (0.297, 0.669, 1.025, 1.178, 1.534, 1.822, 1.941, 2.144, 2.415, 2.551, 2.839, 3.144, 3.466, 3.585)
+    w = [{"text": t, "start": s, "end": s + 0.2, "beat": 0} for t, s in zip(say.split(), times)]
+    sh = {"photo": 0, "views": [0, 8], "start": 0.0, "end": 9.98, "motion": compose.MOTIONS[0], "outro": False,
+          "beat": Beat(say, "photo:0/8", cut_word="नरेंद्र", cut_at=say.index("नरेंद्र")), "plate": "",
+          "cut_word": "नरेंद्र", "cut_at": say.index("नरेंद्र"), "card_view": 0}
+    assert compose.cut_time(sh, w, 0) == compose.CUT_EDGE
+    seen = compose.views([sh], w, anchored=True)
+    assert [(v["photo"], v["cut"]) for v in seen] == [(0, False), (8, True)]
