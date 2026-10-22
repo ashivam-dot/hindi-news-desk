@@ -41,7 +41,7 @@ class Api:
 def api(monkeypatch):
     monkeypatch.setattr(youtube, "RETIRE_WAIT", 0)
     monkeypatch.setattr(youtube, "identity", lambda api: {})
-    monkeypatch.setattr(youtube, "plays_publicly", lambda vid: None)  # no network: an unread page trusts the API
+    monkeypatch.setattr(youtube, "plays_publicly", lambda vid: False)  # no network: the public read agrees with the API
     holder = {}
     monkeypatch.setattr(youtube, "client", lambda *a: holder["api"])
     return holder
@@ -68,7 +68,7 @@ def test_a_listed_short_marked_retired_before_the_read_back_is_checked_once_more
     api["api"] = Api(ignore=1)
     health = {"steps": []}
     cli.retire_listed(health)
-    assert "still reads back public" in health["steps"][0] and not ledger.published()[0].get("retire_page_read")
+    assert "still reads back public" in health["steps"][0] and not ledger.published()[0].get("retire_public_read")
     cli.retire_listed(health)  # the next run tries again, and this time YouTube keeps it
     row = ledger.published()[0]
     assert row["retire_read_back"] == "private" and row["retired_at"] == "2026-10-22T00:48:41"
@@ -76,10 +76,10 @@ def test_a_listed_short_marked_retired_before_the_read_back_is_checked_once_more
     cli.retire_listed(health)
     assert api["api"].updates == calls and len(health["steps"]) == 2  # done: never read again
     # A row read back through the API alone (before the page check) is read once more.
-    ledger.update_published("V", {"retire_page_read": None})
+    ledger.update_published("V", {"retire_public_read": None})
     monkeypatch.setattr(youtube, "plays_publicly", lambda vid: True)
     cli.retire_listed(health)
-    assert "watch page still plays it" in health["steps"][-1] and api["api"].updates == calls + 1
+    assert "still plays publicly" in health["steps"][-1] and api["api"].updates == calls + 2
 
 
 class TitleApi:
@@ -126,23 +126,57 @@ def test_a_listed_retitle_keeps_the_rest_of_the_snippet_reads_back_and_is_done_o
     assert len(api["api"].sent) == 2 and len(health["steps"]) == 2  # done: never written again
 
 
-def test_a_short_the_api_reads_private_but_the_watch_page_still_plays_is_sent_again(api, monkeypatch):
-    """2026-10-22: YM2dyGiYNJQ read back private through the API and its public watch page still played it."""
+def test_a_short_the_api_reads_private_but_the_watch_page_still_plays_is_sent_again(api, monkeypatch, tmp_path):
+    """2026-10-22: YM2dyGiYNJQ read back private through the API and kept playing publicly, twice."""
     plays = {"V": True}
     monkeypatch.setattr(youtube, "plays_publicly", lambda vid: plays[vid])
     api["api"] = Api(privacy="private")
-    with pytest.raises(RuntimeError, match="watch page still plays it"):
+    with pytest.raises(RuntimeError, match="still plays publicly"):
         youtube.retire("V")
-    assert api["api"].updates == 1  # the update is sent again, not skipped because the API says private
+    assert api["api"].updates == 2  # sent through unlisted and back, not skipped because the API says private
     plays["V"] = False
-    assert youtube.retire("V") == "private" and api["api"].updates == 1
+    assert youtube.retire("V") == "private" and api["api"].updates == 2
+    plays["V"] = None  # a runner's bot check: neither public read says, so the row is read again next run
+    assert youtube.retire("V") == youtube.PAGE_UNREAD and api["api"].updates == 2
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(cli, "RETIRE", tmp_path / "retire.json")
+    cli.RETIRE.write_text(json.dumps([{"video_id": "V", "why": "wrong"}]))
+    ledger.save("published", [{"id": "s", "video_id": "V", "privacy": "private", "retire_page_read": True}])
+    cli.retire_listed({"steps": []})  # the older page read-back is not trusted
+    assert ledger.published()[0]["retire_public_read"] is False
 
 
-def test_the_watch_page_status_is_read_from_its_playability(monkeypatch):
+@pytest.mark.parametrize("oembed, page, plays", [
+    (200, "", True), (403, "", False),
+    (429, '..."playabilityStatus":{"status":"OK","x":1}', True),
+    (429, '"playabilityStatus":{"status":"LOGIN_REQUIRED","reason":"Private video"}', False),
+    (429, '"playabilityStatus":{"status":"LOGIN_REQUIRED","reason":"Sign in to confirm you’re not a bot"}', None),
+    (429, "<html>consent</html>", None),
+])
+def test_the_public_read_is_oembed_then_the_watch_pages_playability(monkeypatch, oembed, page, plays):
     import requests
-    pages = {"a": '..."playabilityStatus":{"status":"OK","x":1}', "b": '"playabilityStatus":{"status":"LOGIN_REQUIRED"}',
-             "c": "<html>consent</html>"}
-    monkeypatch.setattr(requests, "get", lambda url, **kw: type("R", (), {"text": pages[url.split("v=")[1][0]]})())
-    assert [youtube.plays_publicly(v) for v in "abc"] == [True, False, None]
+
+    def get(url, **kw):
+        return type("R", (), {"status_code": oembed if "oembed" in url else 200, "text": page})()
+    monkeypatch.setattr(requests, "get", get)
+    assert youtube.plays_publicly("a") is plays
+
+
+def test_an_offline_public_read_says_nothing(monkeypatch):
+    import requests
     monkeypatch.setattr(requests, "get", lambda url, **kw: (_ for _ in ()).throw(OSError("offline")))
     assert youtube.plays_publicly("a") is None
+
+
+def test_a_retirement_that_keeps_failing_stops_spending_quota(api, tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(cli, "RETIRE", tmp_path / "retire.json")
+    monkeypatch.setattr(youtube, "plays_publicly", lambda vid: True)
+    cli.RETIRE.write_text(json.dumps([{"video_id": "V", "why": "wrong"}]))
+    ledger.save("published", [{"id": "s", "video_id": "V", "privacy": "private"}])
+    api["api"] = Api(privacy="private")
+    health = {"steps": []}
+    for _ in range(cli.RETIRE_TRIES + 2):
+        cli.retire_listed(health)
+    assert api["api"].updates == 2 * cli.RETIRE_TRIES and "make it private in Studio" in health["steps"][-1]
+

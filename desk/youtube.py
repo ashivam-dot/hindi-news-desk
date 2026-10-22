@@ -343,47 +343,66 @@ RETIRE_WAIT = 5  # seconds before the read-back is read again
 
 
 WATCH = "https://www.youtube.com/watch?v={}&hl=en"
+OEMBED = "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v={}&format=json"
+PAGE_UNREAD = "private, watch page unread"
 
 
 def plays_publicly(video_id: str) -> bool | None:
-    """Whether YouTube's public watch page still plays the video to a signed-out viewer (playabilityStatus OK), or
-    None when the page cannot be read. The API read YM2dyGiYNJQ back private while its watch page kept playing it."""
+    """Whether YouTube still plays the video to a signed-out viewer: its oEmbed answers 200 (403 when private), else
+    its watch page's playabilityStatus is OK ("LOGIN_REQUIRED" with "Private video" when private). None when neither
+    says: a bot check also reads LOGIN_REQUIRED, and a runner read YM2dyGiYNJQ that way while it played publicly."""
     import requests
 
+    try:
+        code = requests.get(OEMBED.format(video_id), timeout=20).status_code
+        if code in (200, 403):
+            return code == 200
+    except Exception:
+        pass
     try:
         page = requests.get(WATCH.format(video_id), timeout=20, headers={"Accept-Language": "en"}).text
     except Exception:
         return None
-    m = re.search(r'"playabilityStatus":\{"status":"([A-Z_]+)"', page)
-    return m.group(1) == "OK" if m else None
+    m = re.search(r'"playabilityStatus":\{"status":"([A-Z_]+)"(?:,"reason":"([^"]*)")?', page)
+    if m and m.group(1) == "OK":
+        return True
+    if m and m.group(1) == "LOGIN_REQUIRED" and (m.group(2) or "").startswith("Private video"):
+        return False
+    return None
 
 
 def retire(video_id: str) -> str:
     """Make one of this channel's videos private (a version that was replaced); never touches another channel's.
-    Says "private" once YouTube reads it back private and its public watch page no longer plays it, or "missing"
-    when YouTube has no such video; raises while it is still public, so the next run sends the update again
-    (2026-10-22: YM2dyGiYNJQ was logged retired, read back private, and its watch page still played it)."""
+    Says "private" once YouTube reads it back private and plays_publicly says it no longer plays, PAGE_UNREAD when
+    the API reads it private and neither public read says (read again next run), or "missing" when YouTube has no
+    such video; raises while it is still public, so the next run sends the update again. A video the API already
+    reads private that still plays is sent through unlisted first (2026-10-22: YM2dyGiYNJQ was updated twice, read
+    back private both times, and kept playing)."""
     api = client()
     identity(api)
     items = api.videos().list(part="snippet,status", id=video_id).execute().get("items", [])
     if not items:
         return "missing"
     status = items[0]["status"]["privacyStatus"]
-    if status == "private" and not plays_publicly(video_id):
-        return "private"
+    plays = plays_publicly(video_id) if status == "private" else True
+    if status == "private" and plays is not True:
+        return "private" if plays is False else PAGE_UNREAD
     if items[0]["snippet"]["channelId"] != config.CHANNEL_ID:
         raise WrongChannel(f"{video_id} is on another channel")
-    api.videos().update(part="status", body={"id": video_id, "status": {
-        "privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
-        "embeddable": True, "publicStatsViewable": True}}).execute()
+    for privacy in (["unlisted"] if status == "private" else []) + ["private"]:
+        api.videos().update(part="status", body={"id": video_id, "status": {
+            "privacyStatus": privacy, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
+            "embeddable": True, "publicStatsViewable": True}}).execute()
     for attempt in range(2):
         time.sleep(RETIRE_WAIT)
         got = api.videos().list(part="status", id=video_id).execute().get("items", [])
         status = got[0]["status"]["privacyStatus"] if got else "missing"
-        if status == "missing" or status == "private" and not plays_publicly(video_id):
+        if status == "missing":
             return status
+        if status == "private" and (plays := plays_publicly(video_id)) is not True:
+            return "private" if plays is False else PAGE_UNREAD
     if status == "private":
-        raise RuntimeError(f"{video_id} reads back private but its public watch page still plays it")
+        raise RuntimeError(f"{video_id} reads back private but still plays publicly")
     raise RuntimeError(f"{video_id} still reads back {status} after the update")
 
 
