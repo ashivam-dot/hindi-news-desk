@@ -319,3 +319,48 @@ def test_one_owner_is_not_enough_and_a_claim_needs_a_named_claimant():
     # आरोपी is the accused, not an allegation; a demand no listed name makes is no one's claim.
     assert gate.claims("पुलिस ने राउत के घर के पास से दो आरोपी पकड़े।", RAUT_NAMES) == []
     assert gate.claims("मुंबई में बिजली की मांग बढ़ी।", RAUT_NAMES) == []
+
+
+@pytest.mark.parametrize("text", [
+    "रमेश प्रसाद वर्मा के निधन की खबर गलत, परिवार बोला- वह ठीक हैं। सोशल मीडिया पर रमेश प्रसाद वर्मा के निधन की खबर वायरल हुई।",
+    "रमेश प्रसाद वर्मा का नहीं हुआ निधन, बेटी ने बताया सच।",
+    "Reports that Ramesh Prasad Verma died are untrue, his family said.",
+    "Ramesh Prasad Verma has not passed away, his family clarified on Thursday. He is recovering at home.",
+    "Ramesh Prasad Verma passed away? Family says the singer is doing well.",
+    "Ramesh Prasad Verma never died, his manager said.",
+])
+def test_a_hoax_debunk_never_confirms_a_death(text):
+    """2026-10-22 review: each of these articles was taken as the report that confirms the death."""
+    names = ["Ramesh Prasad Verma", "रमेश प्रसाद वर्मा"]
+    assert gate.denies_death(text, names)
+
+
+@pytest.mark.parametrize("text", [
+    "मशहूर गायक रमेश प्रसाद वर्मा का गुरुवार को मुंबई में निधन हो गया। रमेश प्रसाद वर्मा पिछले कुछ समय से स्वस्थ नहीं थे।",
+    "Veteran singer Ramesh Prasad Verma died in Mumbai on Thursday. Last year, fake reports of his death had circulated "
+    "on social media.",
+    "Veteran singer Ramesh Prasad Verma died in Mumbai on Thursday. Ramesh Prasad Verma kept the ghazal alive for five "
+    "decades.",
+    "Veteran singer Ramesh Prasad Verma died on Thursday. He was posthumously honoured by the guild, which denied entry "
+    "to fans.",
+])
+def test_an_obituary_with_a_passing_denial_word_still_confirms_the_death(text):
+    """2026-10-22 review: "स्वस्थ नहीं थे", an old hoax and "kept ... alive" each threw out a true obituary."""
+    names = ["Ramesh Prasad Verma", "रमेश प्रसाद वर्मा"]
+    assert gate.states_death(text, names) and gate.denies_death(text, names) is None
+
+
+def test_a_statement_backed_in_other_spellings_or_by_a_pronoun_is_attributed():
+    """2026-10-22 review: फडनवीस/फड़नवीस and "Fadnavis visited ... He said" backed nothing, sinking every draft."""
+    names = [{"en": "Devendra Fadnavis", "hi": "देवेंद्र फडणवीस"}]
+    spelled = [{"owner": "Amar Ujala", "title": "फडनवीस का बयान", "text": "मुख्यमंत्री देवेन्द्र फडनवीस ने कहा कि सरकार जांच कराएगी।"},
+               {"owner": "Dainik Bhaskar", "title": "फड़नवीस बोले", "text": "सीएम फड़नवीस ने कहा कि दोषियों को बख्शा नहीं जाएगा।"}]
+    assert gate.unattributed("मुख्यमंत्री देवेंद्र फडणवीस ने कहा कि सरकार जांच कराएगी।", names, spelled) == []
+    pronoun = [{"owner": "Indian Express", "text": "Chief Minister Devendra Fadnavis visited the site on Monday. He said "
+                "the guilty would not be spared."}, spelled[1]]
+    assert gate.unattributed("मुख्यमंत्री फडणवीस ने कहा कि दोषियों को बख्शा नहीं जाएगा।", names, pronoun) == []
+    # The pronoun speaks only for the sentence right before it, and another surname is never a spelling of this one.
+    raut = [{"owner": "A", "text": "Sanjay Raut met reporters. Congress's Harshwardhan Sapkal demanded Fadnavis's "
+             "resignation."}, {"owner": "B", "text": "हर्षवर्धन सपकाल ने फडणवीस के इस्तीफे की मांग की।"}]
+    assert gate.unattributed("संजय राउत ने फडणवीस के इस्तीफे की मांग की।", [{"en": "Sanjay Raut", "hi": "संजय राउत"}],
+                             raut)

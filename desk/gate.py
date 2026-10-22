@@ -37,10 +37,17 @@ DEATH_SAID = ["died", "dies", "passed away", "passes away", "demise", "is no mor
               "आखिरी सांस", "मौत", "दुनिया को अलविदा"]
 # A vandalised P570 is when outlets write "X is alive": a sentence that calls the death a hoax, a rumour or false, or
 # denies it, never states it, and an article with one never confirms it (the 2026-10-22 on-air review).
-DEATH_DENIED = ["hoax*", "fake", "false", "falsely", "rumour*", "rumor*", "alive", "deny", "denies", "denied",
-                "dismiss*", "not dead", "has not died", "hasn't died", "did not die", "didn't die", "misinformation", "अफवाह*", "झूठ*", "फर्जी", "खंडन", "जिंदा", "जीवित",
-                "स्वस्थ", "सलामत", "निधन नहीं", "मौत नहीं"]
-DEATH_TALK = ["report*", "news", "claim*", "post*", "खबर*", "दावा*", "पोस्ट"]  # what a denial denies
+DEATH_DENIED = ["hoax*", "fake", "false", "falsely", "rumour*", "rumor*", "is alive", "still alive", "alive and",
+                "deny", "denies", "denied", "dismiss*", "not dead", "has not died", "hasn't died", "did not die",
+                "didn't die", "never died", "not passed away", "untrue", "not true", "baseless", "unfounded",
+                "misinformation", "is recovering", "doing well", "अफवाह*", "झूठ*", "फर्जी", "खंडन", "जिंदा", "जीवित",
+                "स्वस्थ हैं", "स्वस्थ है", "पूरी तरह स्वस्थ", "सलामत", "निधन नहीं", "मौत नहीं", "नहीं हुआ निधन",
+                "नहीं हुई मौत", "खबर गलत", "गलत खबर", "बेबुनियाद", "भ्रामक", "निराधार", "ठीक हैं"]
+DEATH_TALK = ["report*", "news", "claim*", "post", "posts", "खबर*", "दावा*", "पोस्ट"]  # what a denial denies
+# A denial of an earlier rumour, in an obituary ("Last year, fake reports of his death had circulated"), denies
+# nothing now (the 2026-10-22 review: three true obituaries were refused).
+DENIED_BEFORE = ["last year", "earlier", "had circulated", "in the past", "years ago", "पहले", "पिछले साल",
+                 "पिछली बार"]
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
@@ -116,9 +123,9 @@ SENTENCE = re.compile(r"(?<=[.!?।])\s+|\n+")
 
 def states_death(text: str, names: list[str]) -> str | None:
     """The first sentence of text that names one of names (whole words) and says they died (DEATH_SAID), or None. A
-    sentence that also denies it (DEATH_DENIED) says nothing."""
+    sentence that also denies it (DEATH_DENIED), or asks it ("X passed away?"), says nothing."""
     for s in SENTENCE.split(text or ""):
-        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and any(n and hindi.contains(s, n) for n in names):
+        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and not s.strip().endswith("?") and any(n and hindi.contains(s, n) for n in names):
             return s.strip()
     return None
 
@@ -127,8 +134,10 @@ def denies_death(text: str, names: list[str]) -> str | None:
     """The first sentence of text that denies (DEATH_DENIED) the person, a death or reports of one (DEATH_TALK), or
     None: the article is about a hoax, whatever its other sentences say ("His manager said the reports are false")."""
     for s in SENTENCE.split(text or ""):
-        if found(s, DEATH_DENIED) and (found(s, DEATH_SAID + DEATH_TALK) or any(n and hindi.contains(s, n)
-                                                                               for n in names)):
+        if s.strip().endswith("?") and found(s, DEATH_SAID) and any(n and hindi.contains(s, n) for n in names):
+            return s.strip()  # "X passed away? Family says ..." is a hoax headline, never an obituary's
+        if found(s, DEATH_DENIED) and not found(s, DENIED_BEFORE) \
+                and (found(s, DEATH_SAID + DEATH_TALK) or any(n and hindi.contains(s, n) for n in names)):
             return s.strip()
     return None
 
@@ -211,19 +220,32 @@ def _says(sentence: str, forms: list[str]) -> bool:
     return bool(_at(hindi.norm(sentence), forms))
 
 
+PRONOUN_START = re.compile(r"\s*(?:he|she|उन्होंने|उनका|उनकी|उनके)(?![\wऀ-ॿ])", re.I)
+
+
 def claim_backers(p: dict, claim: str, what: str | None, reports: list[dict], ground: str = "") -> list[str]:
     """The owners whose reports have one sentence naming p, the claim and its object ("ground" when the
     Wikipedia/Wikidata ground has it)."""
     words = CLAIMS[claim][0] + CLAIMS[claim][1]
     objs = OBJECTS[what][0] + OBJECTS[what][1] if what else None
     names = _name_forms(p)
+    last = (p.get("en") or "").split()[-1:]
 
-    def backs(s: str) -> bool:
-        return _says(s, names) and _says(s, words) and (objs is None or _says(s, objs))
+    def named(s: str) -> bool:  # also in another Hindi spelling (फडनवीस, फड़नवीस for फडणवीस)
+        return _says(s, names) or bool(last) and len(last[0]) >= 4 and any(
+            hindi.sounds_alike(w, last[0]) for w in re.findall(r"[ऀ-ॿ]{3,}", s))
 
-    who = {r["owner"] for r in reports for s in SENTENCE.split(f"{r.get('title') or ''}. {r.get('text') or ''}")
-           if backs(s)}
-    return sorted(who) + (["ground"] if any(backs(s) for s in SENTENCE.split(ground or "")) else [])
+    def backs(s: str, before: str = "") -> bool:
+        # "Fadnavis visited the site. He said ...": a sentence opening on a pronoun speaks for the one before.
+        who = named(s) or bool(PRONOUN_START.match(s)) and named(before)
+        return who and _says(s, words) and (objs is None or _says(s, objs))
+
+    def backed(text: str) -> bool:
+        parts = SENTENCE.split(text)
+        return any(backs(s, parts[i - 1] if i else "") for i, s in enumerate(parts))
+
+    who = {r["owner"] for r in reports if backed(f"{r.get('title') or ''}. {r.get('text') or ''}")}
+    return sorted(who) + (["ground"] if backed(ground or "") else [])
 
 
 def unattributed(text: str, names: list[dict], reports: list[dict], ground: str = "") -> list[str]:

@@ -338,7 +338,7 @@ def test_a_hindi_role_word_picks_the_actor_not_the_namesake(monkeypatch):
     assert c["qid"] == "Q312781" and c["region"] == "india"
     _stub_imran(monkeypatch)
     [c], _ = explain.find(IMRAN, NOW)
-    assert c["qid"] == "Q155164"  # with no role anywhere the namesake still wins: why the ledger check exists
+    assert c["qid"] == "Q155164"  # with no role anywhere Wikipedia's Imran Khan stands
     # A Google News India Hindi lead headline is read before resolution too.
     _stub_imran(monkeypatch, hindi_lead="अभिनेता इमरान खान को भारत छोड़ने का नोटिस")
     [c], _ = explain.find(IMRAN, NOW)
@@ -368,33 +368,40 @@ def test_occupations_only_speak_when_there_is_no_description(monkeypatch):
     assert explain.fits_role({}, "actor")
 
 
-def _row(qid, article, days_ago, **more):
-    return {"qid": qid, "article": article, "headlines": ["Imran Khan gets leave India notice"],
-            "published_at": (NOW - timedelta(days=days_ago)).isoformat()} | more
-
-
-def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins_only_with_a_role(monkeypatch):
-    _stub_imran(monkeypatch)
-    actor = _row("Q312781", "Imran Khan (actor)", 2)
-
-    def again(qid, rows, role="actor"):
-        return explain.consistent_qid("Imran Khan", qid, role, rows=rows, now=NOW)
-    assert again("Q155164", [actor])[:2] == ("Imran Khan (actor)", "Q312781") and again("Q155164", [actor])[3]
-    assert again("Q312781", [actor]) is None  # already the same
-    assert again("Q155164", [_row("Q312781", "Imran Khan (actor)", 15)]) is None
-    assert again("Q155164", [actor | {"retired_at": NOW.isoformat()}]) is None
-    assert again("Q155164", [actor | {"headlines": ["Salman Khan film"], "article": "Ready (film)"}]) is None
-    # The wrong Short used the namesake once; the right one twice: most rows win.
-    wrong = _row("Q155164", "Imran Khan", 1)
-    assert again("Q155164", [actor, actor, wrong])[1] == "Q312781"
-    # With no role the channel's earlier Shorts never decide (2026-10-22: shared court words flipped Pakistan stories).
-    assert again("Q155164", [actor], None) is None
-    # Re-checked like resolve_as: headlines that call him a minister keep the minister.
-    assert again("Q155164", [actor], "minister") is None
+def test_the_channels_earlier_shorts_never_move_a_story_onto_another_person(monkeypatch):
+    """2026-10-22 review on the live ledger: a 14-day "same name, same person" rule counted rows whose headlines only
+    mentioned the name, and told Aamir Khan's story as Imran Khan's (Kharge's as Rahul Gandhi's). It is gone: only
+    the story's own headlines and Wikipedia decide."""
     from desk import ledger
+    _stub_imran(monkeypatch)
+    actor = {"qid": "Q312781", "article": "Imran Khan (actor)", "headlines": ["Imran Khan gets leave India notice"],
+             "published_at": (NOW - timedelta(days=2)).isoformat()}
     monkeypatch.setattr(ledger, "published", lambda: [actor, actor])
-    [c], notes = explain.find(IMRAN, NOW)  # Toshakhana: Pakistan's former prime minister, whatever the ledger says
-    assert c["qid"] == "Q155164" and not any("as in the channel's recent Shorts" in n for n in notes)
+    [c], notes = explain.find(IMRAN, NOW)  # Toshakhana-style: no role, so Wikipedia's Imran Khan
+    assert c["qid"] == "Q155164" and not any("recent Shorts" in n for n in notes)
+    assert not hasattr(explain, "consistent_qid")
+
+
+@pytest.mark.parametrize("lead, more", [
+    ("अडियाला जेल में बंद पूर्व पीएम इमरान खान की बहनों को मिलने से रोका", []),
+    ("", [item("bhaskar", "पूर्व प्रधानमंत्री इमरान खान की बहन का आरोप, जेल में नहीं मिलने दिया"),
+          item("bhaskar", "पीटीआई का प्रदर्शन: पूर्व पीएम इमरान खान की रिहाई की मांग", 2)]),
+])
+def test_another_storys_hindi_headline_never_outvotes_the_storys_own_role(monkeypatch, lead, more):
+    """2026-10-22 review: one unrelated "पूर्व पीएम इमरान खान" headline (counted twice, from both Hindi feeds) moved
+    the actor's Bombay HC story, whose own headline says actor, onto Pakistan's former prime minister."""
+    _stub_imran(monkeypatch, hindi_lead=lead)
+    story = IMRAN[:1] + [item("thehindu", "Bombay High Court to hear actor Imran Khan plea on leave India notice", 2)] \
+        + IMRAN[2:]
+    [c], _ = explain.find(story + more, NOW)
+    assert c["qid"] == "Q312781"
+
+
+def test_hindi_headlines_that_disagree_give_no_role():
+    hi = ["अभिनेता इमरान खान को नोटिस", "पूर्व पीएम इमरान खान जेल में", "अभिनेता इमरान खान को नोटिस"]
+    assert explain.headline_role([], "Imran Khan", hi) is None
+    assert explain.headline_role([], "Imran Khan", hi[:1] * 3) == "actor"
+    assert explain.headline_role(["Former PM Imran Khan moved"], "Imran Khan", hi[:1]) == "pm"  # the story's own wins
 
 
 def test_a_pm_listed_after_the_name_is_not_its_role():

@@ -498,9 +498,10 @@ def subject_in(text: str, subject: dict, names: list[dict]) -> bool:
 def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, ground_hi: str,
              hi_names: dict[str, str], banned_names: list[str], kind: str, agreed_toll: bool,
              angle: str | None = None, reports: list[dict] | None = None,
-             hurt_ok: bool = False) -> tuple[list[str], list[dict]]:
+             hurt_ok: bool = False, attribution: bool = True) -> tuple[list[str], list[dict]]:
     """Problems with a draft, and the name pairs to double-check in the fact-check pass. A number or name the
-    Wikipedia/Wikidata ground lacks passes only when at least two independent owners' reports state it."""
+    Wikipedia/Wikidata ground lacks passes only when at least two independent owners' reports state it. attribution:
+    whether the attribution lint (gate.unattributed) counts; the draft loop leaves it out of the last draft."""
     problems, doubtful = [], []
     reports = reports or []
     two = gate.OWNERS_NEEDED
@@ -571,7 +572,8 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
             if re.search(r"\b" + token + r"\b", text) or token.lower() in listed.split():
                 problems.append(f"never name a perpetrator ({token})")
     problems += gate.decorum(text, "incident" if kind in ("incident", "protest") else kind, agreed_toll, hurt_ok)
-    problems += gate.unattributed(text, names, reports, ground_en + "\n" + ground_hi)
+    if attribution:
+        problems += gate.unattributed(text, names, reports, ground_en + "\n" + ground_hi)
     own =(draft.get("title") or "").strip().strip('"')
     if len(own) > TITLE_MAX:  # the draft's own title is retitle's fallback
         problems.append(f"the title has {len(own)} characters; keep it to {TITLE_AIM[0]}-{TITLE_AIM[1]} (never over "
@@ -857,7 +859,10 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
                                           spellings(draft, hi_names, looked), banned_names or [],
-                                          kind, agreed_toll, angle, reports, hurt_ok)
+                                          kind, agreed_toll, angle, reports, hurt_ok,
+                                          # The lint misses spellings and generic "police said"; on the last draft
+                                          # it never costs the story (2026-10-22 review).
+                                          attribution=attempt < DRAFTS - 1)
             if not today_ok:
                 problems += not_today(script_text(draft))
             if names_ok:
