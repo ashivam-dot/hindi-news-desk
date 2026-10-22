@@ -46,6 +46,14 @@ _OWNED = re.compile(rf"\s+(?:के|की|का)\s+(?:एक\s+)?(?:{'|'.join(
 # row or more than half the beats (gate.held, which plan keeps to).
 CARD_RUN, MAP_SHARE, HELD_RUN = 3, 0.4, 3
 PUNCT = "\"',.;:!?।()"
+# compose.render_full's hook card (the first HOOK_HOLD seconds) and fact chips (CHIP_HOLD each, never past the cut:
+# chip_window), here so the gate reads the same windows off render.json. A chip the cut leaves under CHIP_MIN is
+# not shown: half a second of text is a flicker, not a fact.
+HOOK_HOLD, CHIP_HOLD, CHIP_MIN = 3.6, 3.0, 1.0
+# The harm words that say someone was hurt or died, not that something happened ("जुहू में फायरिंग" over Tiger
+# Shroff is his story): a hook with one over the subject's face says the subject was hurt (hook_problems).
+HURT = ("गोली", "घायल", "जख्मी", "ज़ख्मी", "मौत", "मृत", "हत्या", "चोट", "चोटें", "चोटों", "चोटिल", "निधन")
+OTHER_POLICE = "@another-police"  # a force that is not the one on screen ("राजस्थान पुलिस" over Mumbai Police)
 
 
 def says(say: str, words) -> int:
@@ -156,20 +164,21 @@ def others_of(names_: list[dict] | None, cast: list[dict], spellings=()) -> list
     """The script's names (scene.names, the draft's) that are neither in the cast nor the subject, nor a police
     force: [{hi, kind: "name"}]. Jackie Shroff is one when his lookup failed or MAX_PEOPLE was reached (the
     government Short 39546660530 has no cast at all), Sanjay Raut when he was not resolved: a beat or card naming
-    them is not about the subject (names, problems, visuals.card_over). A name that opens with the subject's first
-    word is the subject's own. A one-word name is a country, city or firm far more often than a person (भारत, मुंबई,
+    them is not about the subject (names, problems, visuals.card_over). A name is the subject's own only when it is
+    one of its spellings or opens and ends with the subject's first and last words (a middle name): "अमित मालवीय"
+    in an Amit Shah Short is not Shah (2026-10-22 review round 2). A one-word name is a country, city or firm far more often than a person (भारत, मुंबई,
     रिलायंस: 39411111185's card "भारत दौरा" over Rubio's arrival is about his visit, not a picture of India)."""
     members = [c for c in cast if c.get("kind") in ("person", "place", "topic")]
     known = {hindi.norm(w) for c in members for w in _spelt(c)} | {hindi.norm(w) for w in spellings if w}
     known_en = {(c.get("en") or "").lower() for c in members} - {""}
-    full = max((w for w in spellings if w), key=lambda w: len(w.split()), default="")
-    first = hindi.norm((full.split() or [""])[0])
+    full = max((w for w in spellings if w), key=lambda w: len(w.split()), default="").split()
+    ends = (hindi.norm(full[0]), hindi.norm(full[-1])) if len(full) > 1 else None
     out = []
     for n in names_ or []:
         hi = (n.get("hi") or "").strip()
         if len(hi.split()) < 2 or any(w in hi for w in visuals.POLICE) or hindi.norm(hi) in known \
-                or NOT_A_PERSON.search(n.get("en") or "") \
-                or (n.get("en") or "").lower() in known_en or first and hindi.norm(hi.split()[0]) == first:
+                or NOT_A_PERSON.search(n.get("en") or "") or (n.get("en") or "").lower() in known_en \
+                or ends and (hindi.norm(hi.split()[0]), hindi.norm(hi.split()[-1])) == ends:
             continue
         if all(o["hi"] != hi for o in out):
             out.append({"hi": hi, "kind": "name"})
@@ -181,13 +190,16 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
     visuals.located), the story's subject by any of its spellings outside every other person's name, each time it is
     said (a "श्रॉफ" inside "जैकी श्रॉफ" is not Tiger Shroff, nor is the second "जैकी श्रॉफ"), the script's other names
     (others_of: never pictured, so a beat or card naming only them shows no one), and the police for a police or
-    accused line (never another force's: "राजस्थान पुलिस"). "<city> पुलिस" names the police, not the city. A person a
-    harm line names as someone's ("टाइगर के ड्राइवर ... गोली लगी") is not what it is about."""
+    accused line when the cast has a police row (never another force's: "राजस्थान पुलिस"; without one no police
+    picture exists, so writer.anchorless counts the line as naming nothing). "<city> पुलिस" names the police, not the
+    city. A person a harm line names as someone's ("टाइगर के ड्राइवर ... गोली लगी") is not what it is about. A title
+    spelling ("प्रधानमंत्री", visuals.titles) is the subject only when no other person's name follows it and no "X के"
+    qualifies it: "पाकिस्तान के प्रधानमंत्री शहबाज शरीफ" is not Modi (2026-10-22 review round 2)."""
     members = [c for c in cast if c.get("kind") in ("person", "place", "topic")]
     extra = others_of(others, cast, subject_spellings)
     police = next((c for c in cast if c.get("kind") == "police"), None)
     places = [w for c in members if c.get("kind") == "place" for w in _spelt(c)] + [o["hi"] for o in extra]
-    other = bool(police) and visuals.other_force(say, police, places)
+    other = police is None or visuals.other_force(say, police, places)
     harm = says(say, HARM) >= 0
 
     def owned(at: int, words: int) -> bool:
@@ -197,8 +209,9 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
         return [(a, _end(say, a, len(w.split()))) for c in rows for w in _spelt(c) for a in visuals._finds(say, w)]
 
     theirs = spans(extra)
+    people = spans([m for m in members if m.get("kind") == "person"]) + theirs
     found, masked = [], list(say)
-    for a, z in spans([m for m in members if m.get("kind") == "person"]) + theirs:
+    for a, z in people:
         masked[a:z] = " " * (z - a)
     for at, c in visuals.located(say, members):
         spelt = [w for w in _spelt(c) if hindi.find(say, w) == at]
@@ -219,7 +232,16 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
     # Each time the subject is said, by its longest spelling there: "टाइगर" in "टाइगर श्रॉफ के बॉडीगार्ड" is the owner too.
     said = [(a, _end(masked, a, len(w.split()))) for w in subject_spellings if w for a in visuals._finds(masked, w)]
     said = [(a, z) for a, z in said if not any(b <= a and z <= y and (b, y) != (a, z) for b, y in said)]
-    at = [a for a, z in said if not (harm and _OWNED.match(say[z:]))]
+    full = max((w for w in subject_spellings if w), key=lambda w: len(w.split()), default="")
+    own = {hindi.norm(w) for w in [full, *full.split()]}
+
+    def titled(a: int, z: int) -> bool:  # a title another name follows, or "X के" qualifies
+        if hindi.norm(say[a:z]) in own:
+            return False
+        q = re.search(r"(\S+)\s+(?:के|की|का)\s+$", say[:a])
+        return any(z < b <= z + 2 for b, _ in people) or bool(q) and q.group(1) != "देश"
+
+    at = [a for a, z in said if not (harm and _OWNED.match(say[z:])) and not titled(a, z)]
     if at:
         found.append((min(at), SUBJECT))
     if not other:
@@ -230,6 +252,101 @@ def names(say: str, cast: list[dict], subject_spellings=(), others=()) -> list[t
     for a, k in sorted(found):
         first.setdefault(k, a)
     return sorted(((a, k) for k, a in first.items()), key=lambda x: x[0])
+
+
+def chip_window(at: float, view_end: float) -> tuple[float, float] | None:
+    """When a chip that comes up at `at` over a view ending at view_end is on screen, or None (under CHIP_MIN)."""
+    until = min(at + CHIP_HOLD, view_end)
+    return (at, until) if until - at >= CHIP_MIN else None
+
+
+def _police_said(text: str, cast: list[dict], others=()) -> str | None:
+    """Which police a card or hook line names: POLICE (the cast's force, or any when the cast has none, so it is
+    never on screen), OTHER_POLICE (another force), or None."""
+    if not any(w in text for w in visuals.POLICE):
+        return None
+    police = next((c for c in cast if c.get("kind") == "police"), None)
+    places = [w for c in cast if c.get("kind") == "place" for w in _spelt(c)] + [o["hi"] for o in others]
+    return OTHER_POLICE if police is not None and visuals.other_force(text, police, places) else POLICE
+
+
+def card_keys(big: str, small: str, cast: list[dict], spellings=(), others=()) -> set[str]:
+    """What a card says "this is X" about: everything its big line names, and its small line when that is only a
+    name (the strap "जामनगर", "मुंबई पुलिस"); a small phrase ("मुम्बई में बैठक") is a caption, not a label. Any name
+    the script lists counts, in the cast or not ("संजय राउत" over Tiger Shroff, 2026-10-22 review). The police count
+    only when the line says पुलिस (an accused word says what they did: "3 आरोपी गिरफ्तार"), and another force is
+    never what is on screen. A title alone ("प्रधानमंत्री") labels whoever is shown, not the subject."""
+    extra = others_of(others, cast, spellings)
+    out = {x for _, x in names(big, cast, spellings, others) if x != POLICE}
+    out |= {p} if (p := _police_said(big, cast, extra)) else set()
+    if small:
+        out |= {key(c) for c in cast + extra if c.get("kind") != "police" and hindi.norm(small) in
+                {hindi.norm(w) for w in _spelt(c)}}
+        full = max((w for w in spellings if w), key=lambda w: len(w.split()), default="")
+        out |= {SUBJECT} if full and hindi.norm(small) in {hindi.norm(w) for w in [full, *full.split()]} else set()
+        if re.fullmatch(r"(?:\S+\s+)?पुलिस", small.strip()):
+            out.add(_police_said(small, cast, extra))
+    return out
+
+
+def card_on(shown: list[int], photos: list[dict], cast: list[dict]) -> set[str]:
+    """What a card over these pictures may name: what they depict, and the police over their own city's picture
+    ("मुंबई पुलिस" over Mumbai's map: where the force is; never over a route or another place)."""
+    on = set().union(set(), *(depicts(i, photos[i], cast) for i in shown if i < len(photos)))
+    police = next((c for c in cast if c.get("kind") == "police"), None)
+    return on | ({POLICE} if police and police.get("hi") and hindi.norm(police["hi"]) in on else set())
+
+
+def hook_problems(hook: str, on: set[str], cast: list[dict], spellings=(), others=(), death: bool = False,
+                  named: bool = True, own: str = "") -> list[str]:
+    """What is wrong with a hook card over pictures depicting `on` (the views up in its HOOK_HOLD seconds): a name
+    it says or quotes that no picture on screen is of ("शिंदे: गोली का जवाब गोली से" over Tiger Shroff, 39546660530),
+    or a line that someone was hurt over the subject when it does not say the subject was ("ड्राइवर और एक फैन को
+    लगी गोली" over Tiger, 39553699482; 2026-10-22 review round 2). A death Short's death is its subject's. named:
+    False for beat 1's own card standing in as the hook, whose names the card check already reads; own: a place
+    story's own name, which is its SUBJECT."""
+    speaker, body = (hook.split(":", 1) if ":" in hook else ("", hook))
+    speaker = speaker.strip()
+    keys = {SUBJECT if x == own else x for x in card_keys(body, "", cast, spellings, others)}
+    out = []
+    if speaker and named:
+        full = max((w for w in spellings if w), key=lambda w: len(w.split()), default="")
+        rows = [c for c in cast + others_of(others, cast, spellings) if c.get("kind") != "police"]
+        who = SUBJECT if full and hindi.contains(full, speaker) else \
+            next((key(c) for c in rows if any(hindi.contains(w, speaker) for w in _spelt(c))), None)
+        if who not in on:
+            out.append(f"pictures: the hook quotes {speaker} over a picture of someone else")
+        if who:
+            keys.add(who)
+    for x in sorted(keys - on) if named else ():
+        out.append(f"pictures: the hook names {'another police force' if x == OTHER_POLICE else x} over a picture "
+                   f"of something else")
+    if not death and says(body, HURT) >= 0 and SUBJECT in on and SUBJECT not in keys:
+        out.append("pictures: the hook says someone was hurt over the subject's photo")
+    return out
+
+
+def opening(short, views: list[dict] | None = None) -> list[str]:
+    """hook_problems for what compose.render_full shows as the hook (the story's hook line, else beat 1's card when it
+    comes up over picture 1) over the pictures up in its HOOK_HOLD seconds: render.json's views, else beat 1's. A
+    text card's backdrop is no picture. writer._short drops a hook line this refuses."""
+    photos, sc = short.scene.get("photos") or [], short.scene
+    first = short.beats[0] if short.beats else None
+    if first is None or not first.shot.startswith("photo:") or first.plate == CARD:
+        return []
+    cast, spell, hook = cast_of(short), spellings_of(short), sc.get("hook") or ""
+    start = shot_photos(first.shot)
+    opens = bool(start) and start[min(first.card_view, len(start) - 1)] == start[0]
+    if not (hook or opens and (first.card or {}).get("big")):
+        return []
+    if views:
+        up = {v["photo"] for v in views if v.get("plate") != CARD and v["start"] < HOOK_HOLD}
+    else:
+        up = set(start)
+    own = hindi.norm(sc.get("name_hi") or "")
+    on = {SUBJECT if x == own else x for x in card_on(sorted(up), photos, cast)}
+    return hook_problems(hook or first.card["big"], on, cast, spell, sc.get("names"), short.kind == "death",
+                         named=bool(hook), own=own)
 
 
 def word_at(say: str, at: int) -> str:
@@ -318,7 +435,9 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
                 choose(n, a, x)
         row = {"views": [], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
         this_held = False
-        if not picks and (k == 0 or continues(say, prev_key, prev_held, held, person)):
+        # Never under a beat that names someone or something else with no usable picture: "उनके पिता जैकी श्रॉफ ने
+        # कहा" with Jackie's photo vetted out is a card, not Tiger (39508637683, 2026-10-22 review round 2).
+        if not picks and (k == 0 or not found and continues(say, prev_key, prev_held, held, person)):
             pool = [i for i in pools[SUBJECT] if free(i, set())]
             if pool:
                 this_held = k > 0
@@ -490,6 +609,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     def canon(keys: set[str]) -> set[str]:
         return {SUBJECT if x == own else x for x in keys}
 
+    hook = sc.get("hook") or ""
     timed: dict[int, list[tuple[int, float]]] = {}
     for v in views or []:
         if v.get("plate") != CARD:
@@ -518,7 +638,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         weights = timed.get(k) if views else [(i, 1.0 / len(shown)) for i in shown]
         this_held, main = False, None
         # The pronoun rule holds the subject for the whole beat: a cut to another of their photos stays about them.
-        may_hold = k > 0 and SUBJECT not in named and continues(say, prev_key, prev_held, held, person)
+        may_hold = k > 0 and not named and continues(say, prev_key, prev_held, held, person)
         for j, (i, w) in enumerate(weights or []):
             if i >= len(photos):
                 continue
@@ -539,17 +659,18 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         held += this_held
         prev_key, prev_held = main, this_held
         big, small = (b.card or {}).get("big", ""), (b.card or {}).get("small", "")
-        # A card's big line, or a small line that is only a name (the strap "जामनगर"), says "this is X"; a small
-        # phrase ("मुम्बई में बैठक") is a caption, not a label.
-        # Any name the script lists counts, in the cast or not: "संजय राउत" over Tiger Shroff (2026-10-22 review).
-        said = {x for _, x in names(big, cast, spell, others)}
-        said |= {key(c) for c in cast + others if c.get("kind") != "police" and small and hindi.norm(small) in
-                 {hindi.norm(w) for w in _spelt(c)}}
-        said |= {SUBJECT} if small and hindi.norm(small) in {hindi.norm(w) for w in spell} else set()
-        on = canon(set().union(*(depicts(i, photos[i], cast) for i in shown if i < len(photos))))
-        for x in canon(said) - on - {POLICE}:
-            out.append(f"pictures: card {n} names {x} over a picture of something else")
-    hook = sc.get("hook") or ""
+        # A police name too: "मुंबई पुलिस" over Tiger Shroff passed for any picture (39427875643 replan, 2026-10-22
+        # review round 2). With render.json's views, the chip's own window (_chip_overrun).
+        said = canon(card_keys(big, small, cast, spell, others))
+        pic = shown[min(b.card_view, len(shown) - 1)] if shown else None
+        on = canon(card_on(shown, photos, cast))
+        for x in sorted(said - on):
+            out.append(f"pictures: card {n} names {'another police force' if x == OTHER_POLICE else x} over a "
+                       f"picture of something else")
+        if views and big and (k == 0 or big != (short.beats[k - 1].card or {}).get("big")
+                              or short.beats[k - 1].plate == CARD):
+            out += _chip_overrun(n, k, pic, views, photos, bool(hook) or k == 0)
+    out += opening(short, views)
     if hook:
         narration = " ".join(b.text for b in short.beats)
         # "शिंदे: गोली का जवाब गोली से" over Tiger Shroff, and Shinde is never named (39546660530).
@@ -568,6 +689,23 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     if distinct >= want > grouped:
         out.append(f"pictures: only {grouped} different pictures once a place's maps count as one (want {want})")
     return out
+
+
+def _chip_overrun(n: int, k: int, pic, views: list[dict], photos: list[dict], hooked: bool) -> list[str]:
+    """A chip up over a picture it is not on: render.json's stamped window (compose.chip_spans), or for a render
+    saved before chips were stamped, CHIP_HOLD from its picture's start (after the hook card on beat 1), over
+    whatever came after the cut ("बेगूसराय" over Tiger Shroff at the airport, 39418354883)."""
+    mine = [v for v in views if v["beat_k"] == k and v.get("plate") != CARD]
+    if any(v.get("chip") for v in views):
+        spans = [tuple(v["chip"]) for v in mine if v.get("chip")]
+    else:
+        at = next((v["start"] for v in mine if v["photo"] == pic), None)
+        spans = [] if at is None else [(max(at, HOOK_HOLD) if k == 0 and hooked else at, at + CHIP_HOLD)]
+    for a, z in spans:
+        for v in mine:
+            if v["photo"] != pic and min(z, v["end"]) - max(a, v["start"]) > 0.2:
+                return [f"pictures: card {n} stays up over {_label(v['photo'], photos)} after the cut"]
+    return []
 
 
 def plain(say: str, loss: bool = False) -> bool:

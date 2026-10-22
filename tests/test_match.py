@@ -98,7 +98,11 @@ def test_claimant_beat_not_subject():
 def test_city_police_is_police():
     cast = match.cast_of(short("39411041538"))
     say = "महाराष्ट्र के मुख्यमंत्री देवेन्द्र फडणवीस ने मुम्बई पुलिस कमिश्नर को फोन कर सख्त कार्रवाई के निर्देश दिए।"
-    assert [x for _, x in match.names(say, cast)] == [hindi.norm("देवेन्द्र फडणवीस"), match.POLICE]
+    # "मुम्बई पुलिस" names the police, not Mumbai; with no police row (no police photo) it names nothing a picture
+    # could show, so writer.anchorless counts the line as empty (2026-10-22 review round 2).
+    assert [x for _, x in match.names(say, cast)] == [hindi.norm("देवेन्द्र फडणवीस")]
+    police = cast + [{"kind": "police", "hi": "मुम्बई", "photos": []}]
+    assert [x for _, x in match.names(say, police)] == [hindi.norm("देवेन्द्र फडणवीस"), match.POLICE]
 
 
 def test_surname_inside_another_name_is_not_the_subject():
@@ -155,7 +159,10 @@ def test_render_views_weigh_map_time():
     def views(map_s):
         t, out = 0.0, []
         for k, i, d in [(0, 7, 2), (0, 8, map_s), (1, 10, 4), (2, 8, 2), (3, 4, 2), (3, 11, 2), (4, 11, 2), (5, 4, 2)]:
-            out.append({"start": t, "end": t + d, "photo": i, "beat_k": k, "plate": s.beats[k].plate})
+            first = not out or out[-1]["beat_k"] != k
+            # compose.chip_spans: each chip stamped on the view it comes up over, ending at its cut
+            chip = {"chip": [t, min(t + match.CHIP_HOLD, t + d)]} if first and s.beats[k].plate != match.CARD else {}
+            out.append({"start": t, "end": t + d, "photo": i, "beat_k": k, "plate": s.beats[k].plate} | chip)
             t += d
         return out
 

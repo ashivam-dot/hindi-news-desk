@@ -460,14 +460,17 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     """A problem when more than half the beats, or match.CARD_RUN in a row, name nothing a picture can show
     (visuals.showable): they would become text cards (SYNC-AUDIT 4.1 step 4, the picture-first rewrite). The Tiger
     Shroff "hurt" Short (39553699482) ended on the doctors and the injured, under his portrait and maps. Nothing
-    when nothing but the subject can be shown: a rewrite could only name the subject more."""
+    when nothing but the subject can be shown, except in a death Short: its pronoun beats ("उन्होंने", "उनकी") are
+    cards (the pronoun rule is for explainers), so naming the person is the rewrite (review round 2). A police line
+    is empty unless SHOWABLE has the police (a story outside India has no police photo: match.names)."""
     person = subject.get("person") is not False
     can = visuals.showable(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
-    if not can:
-        return []
-    cast = [{"hi": h, "kind": "place"} for h in can if h != "पुलिस"]
-    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []  # no city: never "another force" (other_force)
     name = (subject.get("hi") or "").strip()
+    listed = ([name] if kind == "death" and person and name else []) + [h for h in can if h != name]
+    if not listed or listed == [name] and kind != "death":
+        return []
+    cast = [{"hi": h, "kind": "place"} for h in can if h not in ("पुलिस", name)]
+    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []  # no city: never "another force" (other_force)
     spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
              if len(hindi.norm(w)) >= 3]
     beats = draft.get("beats") or []
@@ -475,7 +478,7 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     run = max((len(list(g)) for g in _runs(empty)), default=0)
     if len(empty) * 2 <= len(beats) and run < match.CARD_RUN:
         return []
-    return [f"beats {','.join(map(str, empty))} name nothing that can be shown; SHOWABLE: {', '.join(can)}. Name "
+    return [f"beats {','.join(map(str, empty))} name nothing that can be shown; SHOWABLE: {', '.join(listed)}. Name "
             f"in each beat the person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
 
 
@@ -1347,9 +1350,12 @@ def build_death(cand: dict) -> Short:
     subject = {"en": name, "hi": name_hi, "person": True}
     angle = ov["angle"] if ov else None
     reports = clean_reports(raw, [name] + ([name_hi] if name_hi else []), perpetrators=False)
+    # The SHOWABLE check for every kind (review round 2: a death or wiki incident draft was never sent back).
+    india = cand.get("region", "world") == "india"
+    near = story_anchor(reports, india) if dateline(reports) else None
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
                              log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports,
-                             title_hints=hindi_hints(cand))
+                             title_hints=hindi_hints(cand), india=india, near=near)
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
              Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
@@ -1363,7 +1369,8 @@ def build_death(cand: dict) -> Short:
                    person=True, tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
                    summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
                            f"तथ्यों से।",
-                   cat="death", ov=ov, reports=reports, hook=cand.get("hook"), born=born.year if born else None)
+                   cat="death", ov=ov, reports=reports, hook=cand.get("hook"), born=born.year if born else None,
+                   near=near)
     short.scene["death_reports"] = confirming
     return short
 
@@ -1442,10 +1449,12 @@ def build_incident(cand: dict) -> Short:
     hi_names = wiki.hindi_names(ent)
     subject = {"en": name, "hi": name_hi, "person": False}
     angle = ov["angle"] if ov else None
+    india = cand.get("region", "world") == "india"
+    near = story_anchor(reports, india) if dateline(reports) else None
     draft, log, used = write(kind, subject, "It", facts_text, source, source_hi, photos, hi_names,
                              banned_names=banned, agreed_toll=deaths is not None, log_path=work / "writer_log.json",
                              headlines=headlines, angle=angle, today_ok=ongoing or when == _today_ist(),
-                             reports=reports, title_hints=hindi_hints(cand))
+                             reports=reports, title_hints=hindi_hints(cand), india=india, near=near)
     name_hi = name_hi or _pair_for(draft, name) or name
     loss = bool(deaths) or cat in ("attack", "strike", "conflict")
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
@@ -1463,7 +1472,7 @@ def build_incident(cand: dict) -> Short:
                         "india news" if cand.get("region") == "india" else "world news"] + ([region] if region else []),
                   summary=f"{name_hi}, {hindi.date_hi(when)}: क्या हुआ, "
                           f"{'Wikipedia और Wikidata' if qid else 'Wikipedia'} के तथ्यों से।",
-                  cat=cat, ov=ov, reports=reports, hook=cand.get("hook"))
+                  cat=cat, ov=ov, reports=reports, hook=cand.get("hook"), near=near)
 
 
 def respelled(draft: dict, name: str, name_hi: str) -> dict:
@@ -1579,7 +1588,7 @@ def story_born(ent: dict) -> int | None:
 def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source, photos, sources, event_time, loss,
            mood, tags, summary, cat="", region="world", ov=None, reports=None, credit=CREDIT, person=False,
            hook=None, born=None, near=None) -> Short:
-    """hook: the story's opening card line (plan.cases), kept only when hook_said; born: the person's birth year;
+    """hook: the story's opening card line (plan.cases), kept only when hook_said and its pictures show it; born: the person's birth year;
     near: where the story is (visuals.resolve)."""
     reports = reports or []
     name_hi = hindi.respell(plain_name(name_hi, draft, name))
@@ -1645,9 +1654,15 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
         scene["reporting"] = [outlets.compact(r) for r in reports]
         scene["outlets"] = outlets.names(reports)
         sources = list(dict.fromkeys(sources + [r["url"] for r in reports]))
-    return Short(id=sid, kind=kind, title=title[:90], beats=beats, facts=facts, sources=sources, loss=loss,
-                 scene=scene, event_time=event_time, tags=[t for t in dict.fromkeys(tags) if t], summary=summary,
-                 credits=credits, hashtags=[h for h in hashtags if h])
+    short = Short(id=sid, kind=kind, title=title[:90], beats=beats, facts=facts, sources=sources, loss=loss,
+                  scene=scene, event_time=event_time, tags=[t for t in dict.fromkeys(tags) if t], summary=summary,
+                  credits=credits, hashtags=[h for h in hashtags if h])
+    # A hook over pictures that do not show what it names, or an injury line over the subject's face ("ड्राइवर और एक
+    # फैन को लगी गोली" over Tiger Shroff, 39553699482): dropped, as an unsaid one is (match.opening; the gate then
+    # reads beat 1's card in its place).
+    if scene.get("hook") and match.opening(short):
+        scene["hook"] = ""
+    return short
 
 
 REPORT_CREDIT = "तथ्य: विश्वसनीय समाचार संस्थानों की रिपोर्टें; तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)"

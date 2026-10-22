@@ -459,12 +459,20 @@ def held(short: Short) -> list[str]:
     """No picture stands under HELD_RUN beats in a row or under more than half of a Short's beats. A place's wide
     and close maps count as one picture: the Kota court Short (2026-10-21) showed Kota's maps under six of seven
     beats, the injured and the recovered motorcycle included. The grouping is match.group's (a spot's maps count with
-    its city's), and a text card's backdrop is not a picture held: the card ends the run."""
+    its city's), and a text card's backdrop is not a picture held: the card ends the run. The legacy matcher (the
+    rollback) is held as main held it, a map by its file, else the photo: assign_legacy shows a spot's map under its
+    city, which the grouping would refuse (four of main's passing Shorts, Rubio's among them; review round 2)."""
     photos = short.scene.get("photos") or []
-    groups = match.group(photos, match.cast_of(short))
+    if config.MATCHER == "legacy":
+        def key(i: int):
+            p = photos[i] if i < len(photos) else {}
+            return p.get("file") if visuals.is_map(p) else i
 
-    beats = [{match.held_key(i, photos, groups) for i in shot_photos(b.shot)} if b.plate != match.CARD else set() for b in short.beats
-             if b.shot.startswith("photo:")]
+        beats = [{key(i) for i in shot_photos(b.shot)} for b in short.beats if b.shot.startswith("photo:")]
+    else:
+        groups = match.group(photos, match.cast_of(short))
+        beats = [{match.held_key(i, photos, groups) for i in shot_photos(b.shot)} if b.plate != match.CARD else set()
+                 for b in short.beats if b.shot.startswith("photo:")]
     problems, counts, run = [], {}, {}
     for n, keys in enumerate(beats):
         for k in keys:

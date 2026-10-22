@@ -84,7 +84,10 @@ def timed_views(short: Short, timing: dict | None, anchored: bool) -> list[dict]
     if not timing or len(timing.get("beats") or []) != len(short.beats):
         return None
     shots = shots_of(short, timing["beats"], timing.get("duration") or timing["beats"][-1][1])
-    return compose.view_record(compose.views(shots, timing.get("words") or [], anchored=anchored))
+    seen = compose.views(shots, timing.get("words") or [], anchored=anchored)
+    if anchored:  # render_full's chips, each stamped on its view; the legacy render held them CHIP_HOLD from the cut
+        compose.chip_plan(short, shots, seen)
+    return compose.view_record(seen)
 
 
 def replan(short: Short) -> tuple[Short, list[dict]]:
@@ -118,7 +121,10 @@ def replan(short: Short) -> tuple[Short, list[dict]]:
     if hook := scene.get("hook"):  # writer._short keeps a hook only when the title or beat 1 says its names
         first = next((b.text for b in beats), "")
         scene["hook"] = hook if writer.hook_said(hook, short.title, first, scene.get("names") or []) else ""
-    return replace(short, beats=beats, scene=scene), rows
+    out = replace(short, beats=beats, scene=scene)
+    if scene.get("hook") and match.opening(out):  # and its pictures show them (writer._short)
+        out = replace(out, scene=scene | {"hook": ""})
+    return out, rows
 
 
 def map_share(short: Short, views: list[dict] | None) -> float:

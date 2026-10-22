@@ -359,30 +359,31 @@ def card_over(card: dict, shown: list[int], cast: list[dict], photos: list[dict]
     "उत्सव मैदान" over Delhi's map. Over another place it names the place on screen; over no place it goes. A text
     card (plate match.CARD) is the words alone and is kept as written. others: the script's names (match.others_of),
     never on screen: "संजय राउत" goes even when his lookup failed and he is not in the cast."""
-    from . import match
+    from . import config, match
 
     if not card or plate == match.CARD:
         return card
-    members = [c for c in cast if c.get("kind") in ("person", "place", "topic")]
+    if config.MATCHER == "legacy":  # the rollback: main's card_over, the place check alone
+        return place_over(card, shown, cast)
     if photos is not None:
-        on = set().union(set(), *(match.depicts(i, photos[i], cast) for i in shown if i < len(photos)))
+        on = match.card_on(shown, photos, cast)
     else:
-        on = {match.key(c) for c in members if set(c.get("photos") or []) & set(shown)}
+        on = {match.key(c) for c in cast if set(c.get("photos") or []) & set(shown)}
         on |= {match.SUBJECT} if any(not any(i in (c.get("photos") or []) for c in cast) for i in shown) else set()
     big, small = card.get("big", ""), card.get("small", "")
-    if {x for _, x in match.names(big, members, spellings, others)} - on - {match.POLICE}:
+    if match.card_keys(big, "", cast, spellings, others) - on:
         big = ""
-    extra = match.others_of(others, cast, spellings)
-    spelt = {hindi.norm(w): match.key(c) for c in members + extra for w in [c.get("hi") or "", *(c.get("alias") or [])]
-             if w}
-    spelt |= {hindi.norm(w): match.SUBJECT for w in spellings if w}
-    if small and (k := spelt.get(hindi.norm(small))) and k not in on:
+    if small and match.card_keys("", small, cast, spellings, others) - on:
         small = ""
     if not big:
         big, small = small, ""
     if not big:
         return {}
-    card = {**card, "big": big, "small": small}
+    return place_over({**card, "big": big, "small": small}, shown, cast)
+
+
+def place_over(card: dict, shown: list[int], cast: list[dict]) -> dict:
+    """A place card over its own place's picture, else renamed for the place on screen, else gone (card_over)."""
     if not place_card(card):
         return card
     places = [c for c in cast if c.get("kind") == "place" and set(c.get("photos") or []) & set(shown)]

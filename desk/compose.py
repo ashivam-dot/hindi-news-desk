@@ -809,7 +809,8 @@ def view_record(seen: list[dict]) -> list[dict]:
     """render.json's views: what was on screen when, for the gate's time shares (gate.shown_is_said) and the
     frame-montage review."""
     return [{"start": round(v["start"], 2), "end": round(v["end"], 2), "photo": v["photo"], "beat_k": v["beat_k"],
-             "plate": v.get("plate") or ""} for v in seen if not v.get("outro")]
+             "plate": v.get("plate") or "", **({"chip": [round(t, 2) for t in v["chip"]]} if v.get("chip") else {})}
+            for v in seen if not v.get("outro")]
 
 
 def card_starts(shots: list[dict], seen: list[dict]) -> dict[int, float]:
@@ -823,6 +824,40 @@ def card_starts(shots: list[dict], seen: list[dict]) -> dict[int, float]:
         if at is not None:
             out[k] = at
     return out
+
+
+def chip_spans(shots: list[dict], seen: list[dict]) -> dict[int, tuple[float, float]]:
+    """{beat: (from, until)} a beat's chip is up: from card_starts, for CHIP_HOLD, but never past the end of the view
+    it came up over (match.chip_window): "जुहू में फायरिंग" stayed 1.5 s over Tiger Shroff in Bandra after the cut
+    (39508637683 replan, 2026-10-22 review round 2), as "बेगूसराय" had over Tiger at the airport (39418354883)."""
+    out = {}
+    for k, at in card_starts(shots, seen).items():
+        v = next(v for v in seen if v["beat_k"] == k and v["start"] == at)
+        if (span := match.chip_window(at, v["end"])) is not None:
+            out[k] = span
+    return out
+
+
+def chip_plan(short: Short, shots: list[dict], seen: list[dict]) -> tuple[str, dict[int, tuple[float, float]]]:
+    """render_full's hook line and {beat: chip window} of the chips it draws, each window stamped on the view it is
+    up over (render.json, for the gate: match.problems). A chip comes up with the picture it names (card_starts);
+    beat 1's card is the hook card only when it sits over the opening picture."""
+    big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
+    card = [b["plate"] == match.CARD for b in shots]
+    opens = bool(shots) and card_starts(shots, seen).get(0) == 0.0
+    hook_text = (short.scene.get("hook") or (big[0] if opens else "")) if shots else ""
+    spans = chip_spans(shots, seen)
+
+    def chipped(k: int) -> bool:
+        if not big[k] or shots[k]["outro"] or card[k] or k not in spans:
+            return False
+        return big[k] != hook_text if k == 0 else big[k] != big[k - 1] or card[k - 1]
+
+    out = {k: spans[k] for k in range(len(shots)) if chipped(k)}
+    for v in seen:
+        if v["beat_k"] in out and out[v["beat_k"]][0] == v["start"]:
+            v["chip"] = out[v["beat_k"]]
+    return hook_text, out
 
 
 def card_backdrop(rgb: np.ndarray | None) -> np.ndarray:
@@ -872,7 +907,7 @@ def _name_layer(name: str) -> tuple[np.ndarray, np.ndarray]:
 # hook card over the picture from the first frame (10 of 16 channels; a statement, never a question: the bulletin
 # asks none), a place stamp in the picture's corner (BBC Hindi, DW, Al Jazeera), a one-second flash of the Short's
 # pictures (AJ+, VisualPolitik bursts), and an end card that asks the viewer to follow (Al Jazeera, DW).
-HOOK_HOLD = 3.6  # seconds the hook card stays over the picture (the study: 4-7 s, read before the first cut)
+HOOK_HOLD = match.HOOK_HOLD  # seconds the hook card stays over the picture (the study: 4-7 s, before the first cut)
 BURST_STEP, BURST_MAX, BURST_MIN = 0.18, 5, 3  # the opening flash: up to five pictures, a fifth of a second each
 FOLLOW = "हर अपडेट के लिए चैनल फ़ॉलो करें"
 
@@ -1105,7 +1140,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
 FULL_FACE = 0.24  # a portrait's face this share of the frame height
 FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.555, 0.505, 0.565, 0.715, 0.785
 FULL_CAPTION_SIZE = 84
-NAME_HOLD, CHIP_HOLD = 2.6, 3.0  # seconds a name strap and a fact chip stay up
+NAME_HOLD, CHIP_HOLD = 2.6, match.CHIP_HOLD  # seconds a name strap and a fact chip stay up
 END_HOLD = 1.2  # seconds of follow card after the last word
 SPEECH_TAIL = 0.4
 
@@ -1199,18 +1234,8 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
     small = [(b["beat"].card or {}).get("small", "").strip() for b in shots]
     card = [b["plate"] == match.CARD for b in shots]
-    # A chip comes up with the picture it names (card_starts); beat 1's card is the hook card only when it sits over
-    # the opening picture.
-    chip_at = card_starts(shots, seen)
-    opens = bool(shots) and chip_at.get(0) == 0.0
-    hook_text = (short.scene.get("hook") or (big[0] if opens else "")) if shots else ""
-
-    def chipped(k: int) -> bool:
-        if not big[k] or shots[k]["outro"] or card[k] or k not in chip_at:
-            return False
-        return big[k] != hook_text if k == 0 else big[k] != big[k - 1] or card[k - 1]
-
-    chips = [_fact_layer(big[k], small[k], "") if chipped(k) else None for k in range(len(shots))]
+    hook_text, chip_on = chip_plan(short, shots, seen)
+    chips = [_fact_layer(big[k], small[k], "") if k in chip_on else None for k in range(len(shots))]
     hook = _hookcard_layer(hook_text, size=84, width=W - 200) if hook_text else None
     # A text card (SYNC-AUDIT 4.0): its words on the plain channel background for a harm, accused or loss line,
     # else on a dark blur of the last anchored picture; no name strap, no place stamp, the photo's credit kept.
@@ -1320,9 +1345,9 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
             if hook is not None and t < HOOK_HOLD:
                 a = min(1.0, (HOOK_HOLD - t) / 0.3)
                 _blit(frame, hook, (W - hook[1].shape[1]) // 2, round(H * FULL_HOOK_Y) - hook[1].shape[0] // 2, a)
-            elif chips[k] is not None and 0 <= t - chip_at[k] < CHIP_HOLD:
-                since = t - chip_at[k]
-                a = min(1.0, since / 0.15, (CHIP_HOLD - since) / 0.3)
+            elif chips[k] is not None and chip_on[k][0] <= t < chip_on[k][1]:
+                since = t - chip_on[k][0]
+                a = min(1.0, since / 0.15, (chip_on[k][1] - t) / 0.3)
                 layer = chips[k]
                 if since < 0.15:
                     s = 0.85 + 0.15 * since / 0.15
