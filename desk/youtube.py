@@ -339,18 +339,32 @@ def untag(limit: int = UNTAG_PER_RUN) -> int:
     return done
 
 
-def retire(video_id: str) -> None:
-    """Make one of this channel's videos private (a version that was replaced); never touches another channel's."""
+RETIRE_WAIT = 5  # seconds before the read-back is read again
+
+
+def retire(video_id: str) -> str:
+    """Make one of this channel's videos private (a version that was replaced); never touches another channel's.
+    Says "private" once YouTube reads it back private, or "missing" when YouTube has no such video; raises when the
+    video is still public after the update (2026-10-22: YM2dyGiYNJQ was logged retired and stayed public)."""
     api = client()
     identity(api)
     items = api.videos().list(part="snippet,status", id=video_id).execute().get("items", [])
-    if not items or items[0]["status"]["privacyStatus"] == "private":
-        return
+    if not items:
+        return "missing"
+    if items[0]["status"]["privacyStatus"] == "private":
+        return "private"
     if items[0]["snippet"]["channelId"] != config.CHANNEL_ID:
         raise WrongChannel(f"{video_id} is on another channel")
     api.videos().update(part="status", body={"id": video_id, "status": {
         "privacyStatus": "private", "selfDeclaredMadeForKids": False, "containsSyntheticMedia": True,
         "embeddable": True, "publicStatsViewable": True}}).execute()
+    for attempt in range(2):
+        time.sleep(RETIRE_WAIT)
+        got = api.videos().list(part="status", id=video_id).execute().get("items", [])
+        status = got[0]["status"]["privacyStatus"] if got else "missing"
+        if status in ("private", "missing"):
+            return status
+    raise RuntimeError(f"{video_id} still reads back {status} after the update")
 
 
 def publish(short: Short, mp4: Path, voice: dict, max_wait: int = 900, publish_at: str | None = None) -> dict:
