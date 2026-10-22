@@ -429,14 +429,14 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         where = bool(found) and all(kind_of.get(x) == "place" for _, x in found) \
             and max(len(say), 1) / letters <= MAP_SHARE
 
-        def choose(n: int, a: int, x: str) -> None:
+        def choose(n: int, a: int, x: str, mapped: bool = True) -> None:
             route = next((routes[frozenset((x, y))] for _, y in found[n + 1:] if frozenset((x, y)) in routes), None)
             taken = {p for p, _, _ in picks}
             keys = {held_key(p, photos, groups) for p in taken}
             real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and i not in taken
                     and free(i, keys)]
             cands = real
-            if not real and not picks and where and maps_left[0] > 0:
+            if not real and not picks and mapped and where and maps_left[0] > 0:
                 maps = [route] if route is not None else pools.get(x) or []
                 cands = [i for i in maps if i not in taken and free(i, keys)]
             else:
@@ -446,7 +446,12 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
                 skip.update(depict[route] if route is not None else ())
 
         rest = list(enumerate(found))
-        while rest and not picks:  # the main view: the first key said that has a picture
+        # The main view: the first key said that has a real photo; only when none has one, a map. Dry run 39789422139
+        # b2 "नई दिल्ली में ... यमुना प्रोजेक्ट": New Delhi's map, cut to a card by the map ceiling, hid the Yamuna's photo.
+        first = next((r for r in rest if (choose(r[0], *r[1], mapped=False), picks)[1]), None)
+        if first is not None:
+            rest.remove(first)
+        while rest and not picks:
             n, (a, x) = rest.pop(0)
             choose(n, a, x)
         # Three names, two views: of those said after the main view's, the one the card names takes the cut

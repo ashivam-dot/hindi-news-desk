@@ -269,3 +269,17 @@ def test_the_writer_is_sent_back_for_a_second_map_beat(monkeypatch):
     # The thing in its inflected forms (the lexicon's, which showable_rows carries) is a beat with a picture.
     assert writer.anchorless(draft(tiger, mumbai, "तिरंगे लहराए गए।", "तिरंगों से घर सजे।", tiger, tiger), subject,
                              True) == []
+
+
+def test_a_later_place_with_its_own_photo_beats_an_earlier_town_with_only_a_map():
+    """Dry run 39789422139 (Amit Shah, 2026-10-22), b2 "नई दिल्ली में उन्होंने ... यमुना प्रोजेक्ट शुरू किए": New Delhi
+    has only a map, the Yamuna a photo. The plan took New Delhi's map, the map ceiling made it a card, and the Yamuna
+    was never on screen."""
+    from .test_match import applied, planned
+
+    s = short("39789422139")
+    rows, photos = planned(s)
+    assert rows[1]["views"] == [10] and rows[1]["plate"] == "" and photos[10]["who"] == "यमुना"
+    shown = [i for r in rows if r["plate"] != match.CARD for i in r["views"]]
+    assert sum(visuals.is_map(photos[i]) for i in shown) <= match.MAX_MAP_VIEWS
+    assert match.problems(applied(s, rows)) == []
