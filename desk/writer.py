@@ -1154,14 +1154,14 @@ def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | Non
     first of DEATH_READS other outlet items about the person whose article says it. One is enough: the writer's facts
     still need gate.OWNERS_NEEDED owners. An article that calls the death a hoax or denies it (gate.denies_death)
     never is."""
-    names = gate.death_names([name] + (explain.hindi_names_of(name_hi) or ([name_hi] if name_hi else [])))
+    names = [name] + (explain.hindi_names_of(name_hi) or ([name_hi] if name_hi else []))
 
     def confirmed(r: dict, body: str | None) -> dict | None:
         text = f"{r.get('title', '')}. {body}"
         says = gate.states_death(text, names) if body else None
         if not says or gate.denies_death(text, names):
             return None
-        return outlets.compact(r) | {"name": next(n for n in names if hindi.contains(says, n)), "says": says}
+        return outlets.compact(r) | {"name": gate.named_in(says, names) or name, "says": says}
 
     found = [row for r in reports if (row := confirmed(r, r.get("text")))]
     if found:

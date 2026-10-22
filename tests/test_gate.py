@@ -400,27 +400,49 @@ def test_a_pronoun_or_a_sound_alike_never_gives_raut_another_persons_demand():
 
 
 @pytest.mark.parametrize("name, text", [
-    ("Krishnaswamy Kasturirangan", "Former ISRO chief K. Kasturirangan passes away at 84. He led ISRO for nine years."),
-    ("Krishnaswamy Kasturirangan", "K Kasturirangan died in Bengaluru on Friday."),
     ("V. S. Achuthanandan", "VS Achuthanandan, Former Kerala Chief Minister, Dies At 101"),
     ("V. S. Achuthanandan", "V.S. Achuthanandan died on Monday."),
+    ("V. S. Achuthanandan", "Former Kerala CM V. S. Achuthanandan passes away at 101. He was a founder of the CPI(M)."),
     ("M. T. Vasudevan Nair", "M.T. Vasudevan Nair died at a private hospital in Kozhikode."),
     ("M. T. Vasudevan Nair", "MT Vasudevan Nair dies at 91"),
+    ("एम॰ टी॰ वासुदेव नायर", "मशहूर लेखक एम. टी. वासुदेव नायर का निधन हो गया।"),
 ])
 def test_a_death_reported_with_the_persons_initials_is_stated(name, text):
-    """2026-10-22 third review: the press writes a Wikidata name by its initials, and "K. " ended a sentence."""
+    """2026-10-22 third review: the press writes a Wikidata name's initials its own way, and "V. " ended a
+    sentence."""
     assert gate.states_death(text, [name]) and gate.denies_death(text, [name]) is None
 
 
-@pytest.mark.parametrize("text", [
-    "Dharmendra dies at 89. Veteran actor Dharmendra passed away on Monday at his Mumbai home. Earlier this month, "
-    "his family had dismissed reports of his death as false after he was hospitalised.",
-    "Dharmendra dies at 89. Veteran actor Dharmendra passed away on Monday. Earlier this month, fake news of his "
-    "death had spread on social media, which Hema Malini slammed.",
-    "धर्मेंद्र का 89 साल की उम्र में निधन. धर्मेंद्र का निधन हो गया। इससे पहले इसी महीने उनके निधन की झूठी खबरें फैली थीं।",
-    "Dharmendra passes away at 89: Who was he?. He acted in Sholay.",
+@pytest.mark.parametrize("names, text", [
+    (["Mumtaz"], "Mumtaz death news: What her family said. Posts claiming that veteran actress Mumtaz died went viral "
+                 "on social media on Monday. Her family had dismissed the reports as fake days ago."),
+    (["Mumtaz"], "Mumtaz death news goes viral again. Several social media users claimed on Tuesday that veteran "
+                 "actress Mumtaz passed away in London. Her daughter Tanya had denied the reports earlier this week."),
+    (["Mumtaz", "मुमताज"], "मुमताज के निधन की खबर वायरल. सोशल मीडिया पर दावा किया गया कि दिग्गज अभिनेत्री मुमताज का "
+                           "निधन हो गया। इससे पहले उनके परिवार ने इन खबरों को अफवाह बताया था।"),
+    (["Satish Shah", "सतीश शाह"], "सतीश शाह के निधन की खबर सोशल मीडिया पर वायरल। सोशल मीडिया पर सतीश शाह के निधन की "
+                                  "खबर फैली थी, लेकिन उनके परिवार ने इसे अफवाह बताया है।"),
+    (["Satish Shah"], "Viral post claims Satish Shah died. Several X accounts posted that veteran actor Satish Shah "
+                      "died on Sunday. Reports of his death had spread quickly, but his family said they were false."),
+    (["Ratan Tata"], "Tata Sons responds to viral posts on Ratan Tata. Social media posts claimed Ratan Tata died on "
+                     "Monday. A Tata Sons spokesperson called the reports false in a statement issued in the U.S. Last "
+                     "year he had been hospitalised for routine checks."),
 ])
-def test_an_obituary_recalling_a_recent_hoax_or_asking_who_he_was_still_confirms_the_death(text):
-    """2026-10-22 third review: Dharmendra's and Ratan Tata's obituaries recalled false reports from days before."""
-    names = ["Dharmendra", "धर्मेंद्र"]
-    assert gate.states_death(text, names) and gate.denies_death(text, names) is None
+def test_a_denial_of_the_current_rumour_is_never_read_as_an_old_one(names, text):
+    """2026-10-22 fourth review: "had denied", "earlier this week" and "इससे पहले" are how a hoax story reports the
+    family's denial, so they never make a denial an obituary's memory of an old rumour."""
+    assert gate.denies_death(text, names)
+
+
+@pytest.mark.parametrize("names, text", [
+    (["Satish Shah"], "Satish Shah has been undergoing treatment in the U.S. His elder brother died in 2001."),
+    (["Ratan Tata"], "Simone Tata dies at 95. Noel Tata's mother Simone Tata died in the U.S. Ratan Tata, who was "
+                     "close to her, flew in for the funeral."),
+    (["Satish Shah", "सतीश शाह"], "दिग्गज अभिनेता सतीश शाह को सोमवार को अस्पताल में भर्ती कराया गया था. उनकी पत्नी की "
+                                  "मां का पिछले महीने निधन हुआ था."),
+    (["Amit Shah"], "Ex-corporator passes away. Former Surat corporator A. Shah passed away on Tuesday."),
+])
+def test_another_persons_death_never_states_this_ones(names, text):
+    """2026-10-22 fourth review: initials are read only inside the person's own name, never as "U.S." or "था." or an
+    initial and a shared surname."""
+    assert gate.states_death(text, names) is None
