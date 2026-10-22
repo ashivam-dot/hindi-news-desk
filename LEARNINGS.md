@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-22T18:08:56+00:00. Scored Shorts (views at 24 h): 74. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-22T21:37:11+00:00. Scored Shorts (views at 24 h): 74. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 41.1% through; a group's retention is blended into its lift at 0.5.
@@ -20,21 +20,21 @@ Retention: a typical Short is watched 41.1% through; a group's retention is blen
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
 | kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 2 |  |  |
-| kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 2 |  |  |
-| nw-20261021-priyanka-gandhi-protest | 2026-10-22T05:08 | protest | india | other | india | 44 | 10 |  |
-| kh-20261022-Q79883 | 2026-10-22T03:50 | news | world | other | india | 18 | 8 |  |
-| kh-20261022-Q324546 | 2026-10-22T03:10 | news | world | naam-niyam | india | 33 | 15 |  |
-| nw-20261021-jantar-mantar-protest | 2026-10-22T02:16 | protest | india | other | india | 24 | 6 |  |
+| kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 19 | 10 |  |
+| nw-20261021-priyanka-gandhi-protest | 2026-10-22T05:08 | protest | india | other | india | 52 | 10 |  |
+| kh-20261022-Q79883 | 2026-10-22T03:50 | news | world | other | india | 25 | 8 |  |
+| kh-20261022-Q324546 | 2026-10-22T03:10 | news | world | naam-niyam | india | 40 | 15 |  |
+| nw-20261021-jantar-mantar-protest | 2026-10-22T02:16 | protest | india | other | india | 33 | 6 |  |
 | nw-20261019-tiger-shroff-attack-film-security | 2026-10-21T07:42 | attack | india | sensitive | india | 0 | 0 | 0 |
 | nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | sensitive | india | 282 | 99 | 282 |
-| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | sensitive | india | 788 | 286 | 719 |
+| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | sensitive | india | 823 | 286 | 719 |
 | kh-20261021-Q1353 | 2026-10-21T04:33 | news | india | naam-niyam | india | 1 | 1 | 1 |
 | nw-20261019-tiger-shroff-attack-incident | 2026-10-21T03:50 | attack | india | sensitive | india | 18 | 16 | 19 |
 | nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | sensitive | india | 44 | 15 | 43 |
-| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | sensitive | india | 123 | 38 | 115 |
+| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | sensitive | india | 128 | 38 | 115 |
 | nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | sensitive | india | 1064 | 518 | 1065 |
 | nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | sensitive | india | 732 | 142 | 734 |
-| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | naam-niyam | india | 14 | 7 | 11 |
+| kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | naam-niyam | india | 16 | 7 | 11 |
 | nw-20261019-tiger-shroff-attack-probe | 2026-10-20T13:29 | attack | india | sensitive | india | 97 | 43 | 89 |
 | kh-20261020-Q3522100 | 2026-10-20T11:46 | news | india | naam-niyam | india | 23 | 9 | 15 |
 | kh-20261020-Q16186720 | 2026-10-20T11:14 | diplomacy | india | naam-niyam | india | 71 | 49 | 70 |
