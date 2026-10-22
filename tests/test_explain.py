@@ -303,3 +303,91 @@ def test_captions_do_not_break_after_an_initial():
     words = [{"text": t, "start": i, "end": i + 1} for i, t in enumerate("एल. मुरुगन ने इस्तीफ़ा दिया है. फिर".split())]
     chunks = [" ".join(w["text"] for w in c) for c in compose._chunks(words)]
     assert chunks[0].startswith("एल. मुरुगन") and any(c.endswith("है.") for c in chunks)
+
+
+# dNGHjXMe1ng (2026-10-21): no English headline said "actor", the Hindi ones did, and Wikipedia's "Imran Khan" is
+# Pakistan's former prime minister (Q155164, who has a description); the actor is Q312781.
+IMRAN = [
+    item("ht", "Imran Khan moves Bombay High Court against leave India notice"),
+    item("thehindu", "Bombay High Court to hear Imran Khan plea on leave India notice on October 26", 2),
+    item("ndtv", "Imran Khan challenges leave India notice in Bombay High Court", 3),
+]
+IMRAN_HI = [item("bhaskar", "अभिनेता इमरान खान पहुंचे बॉम्बे हाई कोर्ट, भारत छोड़ने के नोटिस को चुनौती")]
+
+
+def _stub_imran(monkeypatch, hindi_lead=""):
+    def ent(qid, about, country, hi):
+        return {"labels": {"en": {"value": "Imran Khan"}, "hi": {"value": hi}},
+                "descriptions": {"en": {"value": about}},
+                "claims": {"P31": [{"mainsnak": {"datavalue": {"value": {"id": "Q5"}}}}],
+                           "P27": [{"mainsnak": {"datavalue": {"value": {"id": country}}}}]}}
+    ents = {"Q155164": ent("Q155164", "Prime Minister of Pakistan from 2018 to 2022", "Q843", "इमरान ख़ान"),
+            "Q312781": ent("Q312781", "Indian actor", "Q668", "इमरान ख़ान (अभिनेता)")}
+    qids = {"Imran Khan": "Q155164", "Imran Khan (actor)": "Q312781"}
+    monkeypatch.setattr(wiki, "search", lambda q, lang="en": "Imran Khan (actor)" if q.endswith("actor") else
+                        "Imran Khan" if q == "Imran Khan" else None)
+    monkeypatch.setattr(wiki, "page_info", lambda titles: {t: {"title": t, "qid": qids[t]} for t in titles if t in qids})
+    monkeypatch.setattr(wiki, "entities", lambda ids: {q: ents[q] for q in ids if q in ents})
+    monkeypatch.setattr(news, "headlines", lambda feed, now=None: (
+        [{"title": hindi_lead, "outlets": 2}] if hindi_lead and feed in news.HINDI_FEEDS else []))
+
+
+def test_a_hindi_role_word_picks_the_actor_not_the_namesake(monkeypatch):
+    _stub_imran(monkeypatch)
+    [c], _ = explain.find(IMRAN + IMRAN_HI, NOW)
+    assert c["qid"] == "Q312781" and c["region"] == "india"
+    _stub_imran(monkeypatch)
+    [c], _ = explain.find(IMRAN, NOW)
+    assert c["qid"] == "Q155164"  # with no role anywhere the namesake still wins: why the ledger check exists
+    # A Google News India Hindi lead headline is read before resolution too.
+    _stub_imran(monkeypatch, hindi_lead="अभिनेता इमरान खान को भारत छोड़ने का नोटिस")
+    [c], _ = explain.find(IMRAN, NOW)
+    assert c["qid"] == "Q312781"
+
+
+def test_hindi_role_words_are_whole_words_before_the_name():
+    assert explain.headline_role([], "Imran Khan", ["अभिनेता इमरान खान ने कोर्ट का रुख किया"]) == "actor"
+    assert explain.headline_role([], "L Murugan", ["केंद्रीय मंत्री एल मुरुगन का इस्तीफा"]) == "minister"
+    assert explain.headline_role([], "Imran Khan", ["पूर्व प्रधानमंत्री इमरान खान जेल में"]) is None
+    assert explain.headline_role([], "Imran Khan", ["अभिनेता सलमान खान ने इमरान खान का साथ दिया"]) is None
+    assert explain.headline_role(["Actor Imran Khan gets notice"], "Imran Khan") == "actor"  # the English path
+
+
+def test_occupations_only_speak_when_there_is_no_description(monkeypatch):
+    jobs = {"Q82955": {"labels": {"en": {"value": "politician"}}}, "Q33999": {"labels": {"en": {"value": "actor"}}}}
+    monkeypatch.setattr(wiki, "entities", lambda ids: {q: jobs[q] for q in ids if q in jobs})
+
+    def person(job, about=""):
+        return {"descriptions": {"en": {"value": about}} if about else {},
+                "claims": {"P106": [{"mainsnak": {"datavalue": {"value": {"id": job}}}}]}}
+    assert not explain.fits_role(person("Q82955"), "actor") and explain.fits_role(person("Q33999"), "actor")
+    assert explain.fits_role(person("Q82955", "Indian actor"), "actor")  # the description decides when there is one
+    assert explain.fits_role({}, "actor")
+
+
+def _row(qid, article, days_ago, **more):
+    return {"qid": qid, "article": article, "headlines": ["Imran Khan gets leave India notice"],
+            "published_at": (NOW - timedelta(days=days_ago)).isoformat()} | more
+
+
+def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins(monkeypatch):
+    _stub_imran(monkeypatch)
+    actor = _row("Q312781", "Imran Khan (actor)", 2)
+    again = explain.consistent_qid("Imran Khan", "Q155164", rows=[actor], now=NOW)
+    assert again[:2] == ("Imran Khan (actor)", "Q312781") and again[3]
+    assert explain.consistent_qid("Imran Khan", "Q312781", rows=[actor], now=NOW) is None  # already the same
+    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[_row("Q312781", "Imran Khan (actor)", 15)],
+                                  now=NOW) is None
+    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor | {"retired_at": NOW.isoformat()}],
+                                  now=NOW) is None
+    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor | {"headlines": ["Salman Khan film"],
+                                                                          "article": "Ready (film)"}], now=NOW) is None
+    # The wrong Short used the namesake once; the right one twice: most rows win.
+    wrong = _row("Q155164", "Imran Khan", 1)
+    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor, actor, wrong], now=NOW)[1] == "Q312781"
+    # Re-checked like resolve_as: headlines that call him a minister keep the minister.
+    assert explain.consistent_qid("Imran Khan", "Q155164", "minister", rows=[actor], now=NOW) is None
+    from desk import ledger
+    monkeypatch.setattr(ledger, "published", lambda: [actor])
+    [c], notes = explain.find(IMRAN, NOW)
+    assert c["qid"] == "Q312781" and any("as in the channel's recent Shorts" in n for n in notes)
