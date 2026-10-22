@@ -14,7 +14,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import config, gate, ledger, learn, plan
+from . import config, gate, ledger, learn, plan, review
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
@@ -232,6 +232,11 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                         health["steps"].append(learned["retention_note"])
             except Exception as exc:  # the numbers steer ranking; reading them must never stop a publish
                 health["steps"].append(f"learn: {type(exc).__name__}: {exc}"[:300])
+            try:
+                if note := review.daily():
+                    health["steps"].append(note)
+            except Exception as exc:  # the scorecard only reports; writing it must never stop a publish
+                health["steps"].append(f"review: {type(exc).__name__}: {exc}"[:300])
             retire_listed(health)
             if config.UNTAG:
                 from . import youtube

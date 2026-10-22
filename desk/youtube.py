@@ -112,6 +112,13 @@ def recent(api, channel: dict, limit: int = 50) -> list[dict]:
     return api.videos().list(part="snippet,status,statistics", id=",".join(ids)).execute().get("items", [])
 
 
+def statistics(api, ids: list[str]) -> list[dict]:
+    """Views, likes and comments of these uploads (at most 50): one videos.list call, 1 unit, no channel lookup."""
+    if not ids:
+        return []
+    return api.videos().list(part="statistics", id=",".join(ids[:50])).execute().get("items", [])
+
+
 def find(api, channel: dict, short_id: str, title: str | None = None) -> dict | None:
     """The upload already made for this story, so a story is never uploaded twice: the id the ledger kept when it
     was uploaded, else an older upload's public marker tag, else one of the channel's recent uploads that no ledger
