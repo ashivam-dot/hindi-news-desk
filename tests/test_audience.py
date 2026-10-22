@@ -48,6 +48,12 @@ def test_a_world_statement_needs_an_india_connection_but_world_deaths_and_incide
         assert not plan.foreign_only(c) and plan.unpopular(c, NOW) is None, c.get("title") or c.get("story")
     # A story of no known region is not judged by this rule.
     assert not plan.foreign_only({"kind": "explainer", "category": "world"})
+    # A sport or entertainment explainer is no statement (2026-10-22 review): its own top-10 rule decides.
+    ronaldo = explainer(category="sport", story="Ronaldo scores twice as Al Nassr win", top={"IN": 3}, top_score=0.9)
+    assert not plan.foreign_only(ronaldo) and plan.unpopular(ronaldo, NOW) is None
+    swift = explainer(category="entertainment", story="Taylor Swift announces new album", top={"IN": 30},
+                      top_score=0.3)
+    assert not plan.foreign_only(swift) and "top-10 story" in plan.unpopular(swift, NOW)
 
 
 def test_a_new_storys_photos_show_its_scene_not_the_citys_landmarks():

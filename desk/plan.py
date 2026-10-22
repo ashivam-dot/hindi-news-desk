@@ -120,7 +120,8 @@ AD_FRIENDLY_WORDS = re.compile(
 # explainer: what a named person or institution abroad said or did), politics or diplomacy: foreign statements drew
 # a median of 16 views, White House, Pope and Starlink statements 0-35. World deaths, air incidents, storms and
 # disasters drew 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane
-# Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible.
+# Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible. A sport or
+# entertainment explainer (explain.TOP_ONLY) is no statement: it is told only as a top-10 story anyway.
 WORLD_SKIPPED = ("politics", "diplomacy", "world")
 WORLD_KEPT = ("death", "aviation", "cyclone", "disaster", "earthquake", "flood", "accident", "rail", "weather")
 # Each story's lane (2026-10-22, audit/kyun-hua-shorts-strategy.md §2), a label the scorecard and learn.py judge by,
@@ -412,8 +413,13 @@ def unpopular(cand: dict, at: datetime) -> str | None:
 
 def foreign_only(cand: dict) -> bool:
     """A statement, politics or diplomacy story from abroad with no India connection (see WORLD_SKIPPED). A death,
-    an air incident, a storm or a disaster (WORLD_KEPT), a case's angle and a story of no known region never is one."""
+    an air incident, a storm or a disaster (WORLD_KEPT), a sport or entertainment story, a case's angle and a story
+    of no known region never is one."""
+    from . import explain
+
     if cand.get("region") != "world" or cand.get("case") or cand.get("kind") == "death" or cand.get("category") in WORLD_KEPT:
+        return False
+    if cand.get("category") in explain.TOP_ONLY:
         return False
     if cand.get("kind") != "explainer" and cand.get("category") not in WORLD_SKIPPED:
         return False
