@@ -29,6 +29,12 @@ CASUALTY = ["casualt*", "death toll", "killed", "fatalit*", "wounded", "injured"
             "मृत", "मृतक", "मृतकों", "मृतकों", "घायल", "घायलों", "हताहत", "जान गई", "जानें", "जान गंवा*",
             "जान गँवा*", "निधन", "शहीद", "जान चली", "मारा", "दम तोड़*", "मरने वाले*", "deaths", "toll"]
 INJURY = {"wounded", "injured", "घायल", "घायलों"}
+# A death Short needs a news report whose sentence names the person and says they died: FMKaXjYtmOk (Nana Patekar,
+# 2026-10-08; true, but Orbitwire's oSAgE6PbG2k too) went out on Wikidata's P570 and the infobox alone, with
+# report_urls: [].
+DEATH_SAID = ["died", "dies", "passed away", "passes away", "demise", "is no more", "death of", "dead at",
+              "breathed his last", "breathed her last", "निधन", "नहीं रहे", "नहीं रहीं", "देहांत", "अंतिम सांस",
+              "आखिरी सांस", "मौत", "दुनिया को अलविदा"]
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
@@ -90,6 +96,17 @@ def numbers(text: str) -> list[str]:
 def reported(needle: str, reports: list[dict]) -> list[str]:
     """The independent owners whose articles write needle (whole words, Hindi spellings normalised)."""
     return sorted({r["owner"] for r in reports if r.get("text") and hindi.contains(r["text"], needle)})
+
+
+SENTENCE = re.compile(r"(?<=[.!?।])\s+|\n+")
+
+
+def states_death(text: str, names: list[str]) -> str | None:
+    """The first sentence of text that names one of names (whole words) and says they died (DEATH_SAID), or None."""
+    for s in SENTENCE.split(text or ""):
+        if found(s, DEATH_SAID) and any(n and hindi.contains(s, n) for n in names):
+            return s.strip()
+    return None
 
 
 def reported_values(reports: list[dict]) -> dict[str, list[str]]:
@@ -172,6 +189,7 @@ def check(short: Short) -> list[str]:
     problems += _story(short)
     problems += _shared(short)
     problems += _reported(short)
+    problems += _death_reported(short)
     if short.scene.get("voice_preview"):
         problems.append("voice: made with the preview voice; it can never be published")
     return problems
@@ -298,6 +316,16 @@ def _reported(short: Short) -> list[str]:
     if reports and not short.scene.get("outlets"):
         problems.append("sources: the outlets the facts come from are not named")
     return problems
+
+
+def _death_reported(short: Short) -> list[str]:
+    """A death Short (Wikidata P570 and the infobox) also needs at least one news report that states the death: its
+    scene's death_reports, each an https article with the sentence that names the person and says they died."""
+    if short.kind != "death":
+        return []
+    rows = [r for r in short.scene.get("death_reports") or []
+            if (r.get("url") or "").startswith("https://") and states_death(r.get("says", ""), [r.get("name", "")])]
+    return [] if rows else ["sources: no news report states the death (Wikidata alone is not enough)"]
 
 
 def _shared(short: Short) -> list[str]:

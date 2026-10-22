@@ -1116,6 +1116,15 @@ def _reporting(cand: dict, title: str, hi: str | None = None, person: bool = Fal
     """2-4 trusted outlets' articles about the story, each from a different owner, with their text (outlets.reporting):
     the reports matched to it at discovery, and (search) any recent outlet item that names it. [] when fewer than
     two owners' articles can be read."""
+    try:
+        return outlets.reporting(_report_rows(cand, title, hi, person, since, search))
+    except Exception:
+        return []
+
+
+def _report_rows(cand: dict, title: str, hi: str | None = None, person: bool = False,
+                 since: datetime | None = None, search: bool = True) -> list[dict]:
+    """The outlet items about the story (_reporting), not yet read."""
     found = [r for r in cand.get("reports") or [] if r.get("url")]
     if search:
         # Discovery matches a headline by one distinctive word; a report backs facts only when it names the story.
@@ -1128,11 +1137,34 @@ def _reporting(cand: dict, title: str, hi: str | None = None, person: bool = Fal
             items = []
         for i in outlets.about(title, items, since=since, person=person, hi=hi):
             found.setdefault(i["url"], i)
-    rows = [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
+    return [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
+
+
+def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | None, since: datetime) -> list[dict]:
+    """The news reports that state the death (gate.states_death), each as an outlet item plus the name it gives and
+    the sentence that says it: the story's reporting (read before clean_reports takes death sentences out), else the
+    first other outlet item about the person whose article says it. One is enough: the writer's facts still need
+    gate.OWNERS_NEEDED owners."""
+    names = [name] + ([name_hi] if name_hi else [])
+
+    def confirmed(r: dict, body: str | None) -> dict | None:
+        says = gate.states_death(f"{r.get('title', '')}. {body}", names) if body else None
+        if not says:
+            return None
+        return outlets.compact(r) | {"name": next(n for n in names if hindi.contains(says, n)), "says": says}
+
+    found = [row for r in reports if (row := confirmed(r, r.get("text")))]
+    if found:
+        return found
+    seen = {r["url"] for r in reports}
     try:
-        return outlets.reporting(rows)
+        rows = _report_rows(cand, name, name_hi, person=True, since=since)
     except Exception:
-        return []
+        rows = []
+    for r in sorted((r for r in rows if r["url"] not in seen), key=outlets._rank):
+        if row := confirmed(r, outlets.text(r["url"])):
+            return [row]
+    return []
 
 
 def clean_reports(reports: list[dict], words: list[str], perpetrators: bool) -> list[dict]:
@@ -1209,6 +1241,11 @@ def build_death(cand: dict) -> Short:
     page, item = wiki.url(title), f"https://www.wikidata.org/wiki/{qid}"
     name = stories.plain_title(wiki.label(ent) or title)
     name_hi = wiki.common_hindi(ent)
+    raw = _reporting(cand, name, name_hi, person=True, since=_since(died))
+    confirming = death_reports(cand, raw, name, name_hi, _since(died))
+    if not confirming:
+        raise ValueError(f"gate: no news report states the death of {name} (Wikidata and Wikipedia alone are not "
+                         "enough)")
     she, _ = stories._pronouns(ent)
     age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
     job = (ib.get("occupation") or "").split(",")[0].strip()
@@ -1238,8 +1275,7 @@ def build_death(cand: dict) -> Short:
     hi_names = wiki.hindi_names(ent)
     subject = {"en": name, "hi": name_hi, "person": True}
     angle = ov["angle"] if ov else None
-    reports = clean_reports(_reporting(cand, name, name_hi, person=True, since=_since(died)),
-                            [name] + ([name_hi] if name_hi else []), perpetrators=False)
+    reports = clean_reports(raw, [name] + ([name_hi] if name_hi else []), perpetrators=False)
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
                              log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports,
                              title_hints=hindi_hints(cand))
@@ -1250,12 +1286,15 @@ def build_death(cand: dict) -> Short:
              Fact("born", hindi.date_hi(born), item, [str(born.day), str(born.year)], f"Wikidata P569 = {born}"),
              Fact("age", str(age), item, [str(age)], "computed from P569 and P570")]
     sources = [page, item] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
-    return _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,
-                  sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"), person=True,
-                  tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
-                  summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
-                          f"तथ्यों से।",
-                  cat="death", ov=ov, reports=reports)
+    sources = list(dict.fromkeys(sources + [r["url"] for r in confirming]))
+    short = _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,
+                   sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"),
+                   person=True, tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
+                   summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
+                           f"तथ्यों से।",
+                   cat="death", ov=ov, reports=reports)
+    short.scene["death_reports"] = confirming
+    return short
 
 
 def build_incident(cand: dict) -> Short:

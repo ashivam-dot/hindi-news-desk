@@ -1,5 +1,6 @@
 import copy
 from dataclasses import replace
+from datetime import date
 from pathlib import Path
 
 import pytest
@@ -119,3 +120,77 @@ def test_channel_mix_limits_loss_runs():
     assert gate.channel_mix([True, True], False) is None
     assert gate.channel_mix([False, True], True) is None
     assert gate.channel_mix([], True) is None
+
+
+def test_a_death_is_held_without_a_news_report_that_states_it(short):
+    """FMKaXjYtmOk (Nana Patekar) went out on Wikidata and the infobox alone, with report_urls: []."""
+    from desk import cli
+
+    assert cli.report_urls(short) == ["https://www.thehindu.com/example/ramesh-prasad-verma"]
+    bare = replace(short, scene={k: v for k, v in short.scene.items() if k != "death_reports"})
+    assert cli.report_urls(bare) == []
+    assert any("no news report states the death" in p for p in gate.check(bare))
+    [row] = short.scene["death_reports"]
+    other = replace(short, scene=dict(short.scene, death_reports=[row | {"says": "Ramesh Prasad Verma sang in 12 "
+                                                                                 "languages."}]))
+    assert any("no news report states the death" in p for p in gate.check(other))
+    plain = replace(short, scene=dict(short.scene, death_reports=[row | {"url": "http://example.com/x"}]))
+    assert any("no news report states the death" in p for p in gate.check(plain))
+    incident = replace(bare, kind="incident")
+    assert not any("states the death" in p for p in gate.check(incident))
+
+
+def test_a_death_sentence_must_name_the_person():
+    names = ["Ramesh Prasad Verma", "रमेश प्रसाद वर्मा"]
+    assert gate.states_death("Veteran singer Ramesh Prasad Verma passed away in Mumbai on Thursday.", names)
+    assert gate.states_death("मशहूर गायक रमेश प्रसाद वर्मा का गुरुवार को निधन हो गया।", names)
+    assert gate.states_death("Ramesh Prasad Verma was admitted to hospital. His brother died in 2001.", names) is None
+    assert gate.states_death("Ramesh Prasad Verma studied in Varanasi.", names) is None
+
+
+def _verma_item(monkeypatch, body, key="thehindu"):
+    from desk import outlets
+
+    o = next(o for o in outlets.OUTLETS if o["key"] == key)
+    item = {"title": "Singer Ramesh Prasad Verma passes away", "url": f"https://{key}.example/verma",
+            "outlet": o["name"], "outlet_hi": o["name_hi"], "owner": o["owner"], "group": o["group"],
+            "lang": o["lang"], "geo": o["geo"], "feed": key, "at": "2026-10-08T10:00:00+00:00", "summary": ""}
+    monkeypatch.setattr(outlets, "text", lambda url: body if url == item["url"] else None)
+    return item
+
+
+def _death_build(monkeypatch, reports):
+    """build_death up to its death check: a Wikidata item that died on 8 October 2026 and an infobox that says so."""
+    from desk import wiki, writer
+
+    ent = {"labels": {"en": {"value": "Ramesh Prasad Verma"}, "hi": {"value": "रमेश प्रसाद वर्मा"}},
+           "claims": {p: [{"mainsnak": {"datavalue": {"value": {"time": t}}}}]
+                      for p, t in (("P569", "+1945-03-02T00:00:00Z"), ("P570", "+2026-10-08T00:00:00Z"))}}
+    monkeypatch.setattr(wiki, "entities", lambda qids: {"Q900001": ent})
+    monkeypatch.setattr(wiki, "infobox", lambda title: ("", {"occupation": "singer"}, {"death_date": "8 October 2026"}))
+    monkeypatch.setattr(writer, "_today_ist", lambda: date(2026, 10, 9))
+    monkeypatch.setattr(writer, "_shared", lambda *a: pytest.fail("past the death check"))
+    cand = {"id": "wk-Q900001", "title": "Ramesh Prasad Verma", "qid": "Q900001", "reports": reports}
+    return lambda: writer.build_death(cand)
+
+
+def test_build_death_holds_a_death_no_report_states(monkeypatch):
+    with pytest.raises(ValueError, match="no news report states the death of Ramesh Prasad Verma"):
+        _death_build(monkeypatch, [])()
+    item = _verma_item(monkeypatch, "Ramesh Prasad Verma will sing in Mumbai next month, the organisers said. " * 5)
+    item["title"] = "Ramesh Prasad Verma to sing in Mumbai"
+    with pytest.raises(ValueError, match="no news report states the death"):
+        _death_build(monkeypatch, [item])()
+
+
+def test_one_confirming_report_lets_a_death_through(monkeypatch):
+    from desk import writer
+
+    body = "Veteran playback singer Ramesh Prasad Verma died in Mumbai on Thursday, his family said. " * 5
+    item = _verma_item(monkeypatch, body)
+    with pytest.raises(pytest.fail.Exception, match="past the death check"):
+        _death_build(monkeypatch, [item])()
+    [row] = writer.death_reports({"reports": [item]}, [], "Ramesh Prasad Verma", "रमेश प्रसाद वर्मा",
+                                 writer._since(date(2026, 10, 8)))
+    assert row["url"] == item["url"] and row["name"] == "Ramesh Prasad Verma" and row["says"] == item["title"] + "."
+    assert "text" not in row  # the scene keeps the sentence, not the article
