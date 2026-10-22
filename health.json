@@ -1,21 +1,25 @@
 {
- "at": "2026-10-22T00:03:03+00:00",
+ "at": "2026-10-22T00:48:37+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "retired dNGHjXMe1ng: Source re-check, 2026-10-22: the title is about actor Imran Khan (Bombay High Court) but the story was linked to Q155164, Pakistan's former PM, and all 8 photos show the politician. A wrong person on screen: retired, not remade (xaj3hgwcaF8 tells the same story with the right ph",
+  "retired YM2dyGiYNJQ: Source re-check, 2026-10-22: the title says Sanjay Raut demanded Fadnavis's resignation; the sources have Raut calling for President's Rule, and the resignation demand came from Congress's Harshwardhan Sapkal. A misattributed claim about a real person: retired, not remade.",
+  "retired v_VM8xDrJaw: Source re-check, 2026-10-22: the Tiger Shroff case had 8 public Shorts in about 30 hours; this near-duplicate (Krishna Shroff reached the house, 28 views) adds nothing the kept four do not: retired, not remade.",
   "untag: old marker tag taken off 5 uploads",
   "watch: 13 candidates from 16 trending",
-  "outlets: 1237 headlines from 31 feeds (19 owners), 21 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
-  "explainers: 6 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q7747, kh-20261022-Q51993, kh-20261022-Q1340361; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Shashi Tharoor: fewer than 3 owners' headlines name it and the story; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "outlets: 1236 headlines from 31 feeds (19 owners), 26 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
+  "explainers: 6 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q7747, kh-20261022-Q1340361, kh-20261022-Q3042087; dropped: explainer Das Ranka / Das Ranka: no Wikipedia article that can be its centre; explainer Witkoff: fewer than 3 owners' headlines name it and the story; explainer Shashi Tharoor: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "skip wk-Q5115327: Orbitwire published (wk-Q5115327), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261022-Q324546: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "hold nw-20261021-jantar-mantar-protest: outside 07:00-24:00 IST",
-  "hold nw-20261019-tiger-shroff-attack-hurt: 7 of the case's Shorts on the channel, 6 at most",
-  "hold nw-20261019-tiger-shroff-attack-earlier-attacks: 7 of the case's Shorts on the channel, 6 at most",
+  "hold nw-20261019-tiger-shroff-attack-hurt: outside 07:00-24:00 IST",
+  "hold nw-20261019-tiger-shroff-attack-earlier-attacks: outside 07:00-24:00 IST",
   "drop kh-20261022-Q7747: a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)",
   "drop kh-20261022-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747"
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt, nw-20261019-tiger-shroff-attack-earlier-attacks; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747",
+  "channel: about: set and read back; playlists: 1 made, 0 Shorts added, 0 sections, 21 Shorts left; HttpError: <HttpError 404 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLH0zK2WnEu4E&maxResults=50&alt=json returned \"The playlist identified with the request's <code>playlistId</code> parameter cannot be found.\". Details: \"[{'message': \"The pl"
  ]
 }
