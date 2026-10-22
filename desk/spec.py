@@ -25,6 +25,13 @@ class Beat:
     shot: str  # "photo:3", "photo:3/7" (a long beat cuts to photo 7 halfway) or "outro"
     card: dict | None = None
     pause_after: float = 0.3
+    # The anchored matcher (desk/match.py): "card" when the beat names nothing that can be shown (an honest text card
+    # over the shot's photo as backdrop, never a filler picture); the word of the beat that names the cut's picture
+    # (a Hindi string: whisper's words drift from the beat's); the view (0 or 1) the beat's card sits over. Old
+    # short.json files have none of them and load as before.
+    plate: str = ""
+    cut_word: str = ""
+    card_view: int = 0
 
 
 def shot_photos(shot: str) -> list[int]:
