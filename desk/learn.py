@@ -12,11 +12,15 @@ retention against the channel's, shrunk the same way by its own count, blended i
 same LIFT_RANGE bounds. read_retention fills it (and engaged_views) from YouTube Analytics v2 for Shorts at least
 RETENTION_MIN_AGE old, through the desk's own sign-in. That needs the yt-analytics.readonly scope: without it (HTTP
 403, or a token that lists its scopes without it) nothing is filled, one health note says so, and lifts are views
-alone.
+alone. The same query reads the gating numbers the scorecard (desk/review.py) judges by: plays, seconds watched,
+subscribers gained, likes and shares (ANALYTICS_FIELDS); a metric the report refuses (HTTP 400) is dropped alone and
+listed in perf["analytics_dropped"]. read_traffic adds where the views came from (insightTrafficSourceType) for at
+most TRAFFIC_MAX Shorts a run.
 """
 from __future__ import annotations
 
 import math
+import re
 from datetime import datetime, timedelta, timezone
 
 from . import ledger
@@ -33,8 +37,17 @@ KEEP_SNAPSHOTS = 16
 ENGAGED_FIELD = "engaged_views"
 RETENTION_MIN_AGE = timedelta(days=3)  # YouTube Analytics' numbers settle about two days after the day they count
 ANALYTICS_SCOPE = "https://www.googleapis.com/auth/yt-analytics.readonly"
-ANALYTICS_METRICS = "views,engagedViews,averageViewPercentage"
+ANALYTICS_METRICS = "views,engagedViews,averageViewPercentage,averageViewDuration,subscribersGained,likes,shares"
+ANALYTICS_CORE = ("views", "averageViewPercentage")  # never dropped: without them there is no retention to read
+# Where each Analytics column lands on a video's record. Analytics' views count plays; engagedViews the old views.
+ANALYTICS_FIELDS = {"views": "plays", "engagedViews": ENGAGED_FIELD, "averageViewPercentage": RETENTION_FIELD,
+                    "averageViewDuration": "avg_view_s", "subscribersGained": "subscribers_gained",
+                    "likes": "likes", "shares": "shares"}
 ANALYTICS_MAX = 200
+TRAFFIC_FIELD = "traffic"
+TRAFFIC_MAX = 30  # one Analytics query a Short: a run reads where the views came from for at most this many
+TRAFFIC_EVERY = timedelta(days=1)
+TRAFFIC_WINDOW = timedelta(days=28)  # the scorecard's window: an older Short keeps its last read
 
 _cache: dict = {}
 
@@ -161,13 +174,34 @@ def _status(exc: Exception) -> int | None:
     return int(status) if status is not None else None
 
 
+def _old(perf: dict, at: datetime) -> dict:
+    return {vid: rec for vid, rec in perf.get("videos", {}).items()
+            if at - datetime.fromisoformat(rec["published_at"]) >= RETENTION_MIN_AGE}
+
+
+def _window(published: list[str], at: datetime) -> tuple[str, str]:
+    # Analytics days are US Pacific: a Short out 00:00-07:00 UTC has its first day on the UTC date before. The last
+    # RETENTION_MIN_AGE of days is still settling, so the window ends before it.
+    start = (min(datetime.fromisoformat(p) for p in published) - timedelta(days=1)).date().isoformat()
+    return start, (at - RETENTION_MIN_AGE).date().isoformat()
+
+
+def _refused(exc: Exception, metrics: list[str]) -> str:
+    """The metric a 400 names ("Unknown identifier (shares) given in field parameters.metrics"), else the last one
+    that may go. The message, not str(exc): a googleapiclient error's text also carries the request URL."""
+    text = str(getattr(exc, "reason", None) or exc)
+    optional = [m for m in metrics if m not in ANALYTICS_CORE]
+    return next((m for m in optional if re.search(rf"\b{m}\b", text)), optional[-1])
+
+
 def read_retention(perf: dict, at: datetime, analytics=None) -> str | None:
-    """Fill RETENTION_FIELD and ENGAGED_FIELD for each video at least RETENTION_MIN_AGE old from YouTube Analytics
-    (dimensions=video). Returns one health note when it cannot (no scope, HTTP 403, an error), else None."""
+    """Fill the ANALYTICS_FIELDS (retention, engaged views, plays, seconds watched, subscribers gained, likes,
+    shares) for each video at least RETENTION_MIN_AGE old from YouTube Analytics (dimensions=video). A metric the
+    report refuses (HTTP 400) is dropped alone and named in perf["analytics_dropped"]. Returns one health note when
+    it cannot read at all (no scope, HTTP 403, an error), else None."""
     from . import youtube
 
-    old = {vid: rec for vid, rec in perf.get("videos", {}).items()
-           if at - datetime.fromisoformat(rec["published_at"]) >= RETENTION_MIN_AGE}
+    old = _old(perf, at)
     if not old:
         return None
     if analytics is None:
@@ -176,34 +210,66 @@ def read_retention(perf: dict, at: datetime, analytics=None) -> str | None:
             return "retention: the YouTube sign-in has no yt-analytics.readonly scope; avg_view_pct stays empty"
         analytics = youtube.client("youtubeAnalytics", "v2")
     ids = sorted(old, key=lambda v: old[v]["published_at"], reverse=True)[:ANALYTICS_MAX]
-    # Analytics days are US Pacific: a Short out 00:00-07:00 UTC has its first day on the UTC date before. The last
-    # RETENTION_MIN_AGE of days is still settling, so the window ends before it.
-    start = (min(datetime.fromisoformat(old[v]["published_at"]) for v in ids) - timedelta(days=1)).date().isoformat()
-    end = (at - RETENTION_MIN_AGE).date().isoformat()
-    metrics = ANALYTICS_METRICS
+    start, end = _window([old[v]["published_at"] for v in ids], at)
+    metrics = ANALYTICS_METRICS.split(",")
     while True:
         try:
             answer = analytics.reports().query(
-                ids="channel==MINE", startDate=start, endDate=end, metrics=metrics,
+                ids="channel==MINE", startDate=start, endDate=end, metrics=",".join(metrics),
                 dimensions="video", filters="video==" + ",".join(ids), sort="-views", maxResults=len(ids)).execute()
             break
         except Exception as exc:
-            if _status(exc) == 400 and "engagedViews" in metrics:
-                metrics = metrics.replace("engagedViews,", "")  # a metric this channel's report does not offer
+            if _status(exc) == 400 and any(m not in ANALYTICS_CORE for m in metrics):
+                metrics.remove(_refused(exc, metrics))  # a metric this channel's report does not offer
                 continue
             if _status(exc) == 403:
                 return "retention: YouTube Analytics refused (HTTP 403, no yt-analytics.readonly scope); avg_view_pct stays empty"
             return f"retention: {type(exc).__name__}: {exc}"[:300]
+    perf["analytics_dropped"] = [m for m in ANALYTICS_METRICS.split(",") if m not in metrics]
     cols = [c["name"] for c in answer.get("columnHeaders", [])]
     for row in answer.get("rows") or []:
         got = dict(zip(cols, row))
         rec = old.get(got.get("video"))
         if rec is None:
             continue
-        if isinstance(got.get("averageViewPercentage"), (int, float)):
-            rec[RETENTION_FIELD] = round(float(got["averageViewPercentage"]), 2)
-        if isinstance(got.get("engagedViews"), (int, float)):
-            rec[ENGAGED_FIELD] = int(got["engagedViews"])
+        for metric, field in ANALYTICS_FIELDS.items():
+            if isinstance(got.get(metric), (int, float)):
+                rec[field] = round(float(got[metric]), 2) if metric == "averageViewPercentage" else int(got[metric])
+    return None
+
+
+def read_traffic(perf: dict, at: datetime, analytics=None) -> str | None:
+    """Where each Short's views came from (YouTube Analytics, dimensions=insightTrafficSourceType, one query a
+    Short), into rec[TRAFFIC_FIELD] as {source: views}. Only Shorts at least RETENTION_MIN_AGE old and under
+    TRAFFIC_WINDOW, each at most once per TRAFFIC_EVERY, never-read first, at most TRAFFIC_MAX a run. A Short the
+    report refuses (HTTP 400) waits TRAFFIC_EVERY; any other error stops the reads and is the one health note."""
+    from . import youtube
+
+    due = [(vid, rec) for vid, rec in _old(perf, at).items()
+           if at - datetime.fromisoformat(rec["published_at"]) < TRAFFIC_WINDOW
+           and (not rec.get("traffic_at") or at - datetime.fromisoformat(rec["traffic_at"]) >= TRAFFIC_EVERY)]
+    due.sort(key=lambda d: d[1]["published_at"], reverse=True)
+    due.sort(key=lambda d: d[1].get("traffic_at") or "")
+    if not due:
+        return None
+    if analytics is None:
+        analytics = youtube.client("youtubeAnalytics", "v2")
+    for vid, rec in due[:TRAFFIC_MAX]:
+        start, end = _window([rec["published_at"]], at)
+        try:
+            answer = analytics.reports().query(
+                ids="channel==MINE", startDate=start, endDate=end, metrics="views",
+                dimensions="insightTrafficSourceType", filters="video==" + vid, sort="-views").execute()
+        except Exception as exc:
+            if _status(exc) == 400:
+                rec["traffic_at"] = at.isoformat(timespec="seconds")
+                continue
+            return f"traffic: {type(exc).__name__}: {exc}"[:300]
+        cols = [c["name"] for c in answer.get("columnHeaders", [])]
+        rows = [dict(zip(cols, row)) for row in answer.get("rows") or []]
+        rec[TRAFFIC_FIELD] = {str(r["insightTrafficSourceType"]): int(r["views"]) for r in rows
+                              if r.get("insightTrafficSourceType") and isinstance(r.get("views"), (int, float))}
+        rec["traffic_at"] = at.isoformat(timespec="seconds")
     return None
 
 
@@ -232,6 +298,8 @@ def refresh(at: datetime | None = None, force: bool = False, api=None, analytics
         rec["views_24h"] = views_at(rec["snapshots"], SCORE_AT_H)
     try:
         note = read_retention(perf, at, analytics)
+        if note is None:  # the same sign-in and scope: a refused retention read would refuse these too
+            note = read_traffic(perf, at, analytics)
     except Exception as exc:  # retention steers the ranking; reading it must never stop the views
         note = f"retention: {type(exc).__name__}: {exc}"[:300]
     perf["at"] = at.isoformat(timespec="seconds")
