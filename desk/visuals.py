@@ -503,6 +503,16 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
             if not any(c["qid"] == sub["qid"] for c in out):
                 places += 1
                 out.append(sub)
+    # A public figure every beat may name, left out of the script's names (things.FIGURES), is still a person to show.
+    for f in things.figures_said(draft.get("beats") or []):
+        if people >= MAX_PEOPLE or _subject(f["en"], subject_en) or any(c["en"] == f["en"] for c in out):
+            continue
+        if not (found := resolver(f["en"], india, **({"near": near} if near else {}))) \
+                or wiki.HUMAN not in kinds(found[2]) or any(c.get("qid") == found[0] for c in out):
+            continue
+        people += 1
+        out.append({"en": f["en"], "hi": f["hi"], "kind": "person", "qid": found[0], "title": found[1],
+                    "ent": found[2], "alias": f["alias"]})
     for e in things.lexicon_hits(draft.get("beats") or [], india):
         forms = {hindi.norm(w) for w in [e["hi"], *e["alias"]]}
         if any(c["kind"] == "thing" and (c["en"] == e["en"] or hindi.norm(c["hi"]) in forms) for c in out):

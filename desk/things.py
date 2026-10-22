@@ -52,6 +52,39 @@ LEXICON = (
     {"hi": "तेल टैंकर", "forms": ("तेल टैंकर", "तेल टैंकरों", "टैंकर जहाज"), "en": "Oil tanker", "india": False},
     {"hi": "पद्म श्री", "forms": ("पद्म श्री", "पद्मश्री"), "en": "Padma Shri", "india": True},
 )
+# People the news names in nearly every Indian story, by their full Hindi names (never a bare surname: "ललित मोदी"),
+# in case the script's names list leaves them out. Dry run 39817474353 (Donald Tusk in Delhi, 2026-10-22) said
+# "प्रधानमंत्री नरेंद्र मोदी" in all five beats, listed only Tusk, Poland and New Delhi, and showed Modi in none.
+FIGURES = (
+    ("Narendra Modi", ("नरेंद्र मोदी", "नरेन्द्र मोदी", "प्रधानमंत्री मोदी", "पीएम मोदी")),
+    ("Amit Shah", ("अमित शाह", "गृह मंत्री शाह")),
+    ("Rahul Gandhi", ("राहुल गांधी", "राहुल गाँधी")),
+    ("Droupadi Murmu", ("द्रौपदी मुर्मू", "राष्ट्रपति मुर्मू")),
+    ("Rajnath Singh", ("राजनाथ सिंह",)),
+    ("S. Jaishankar", ("एस जयशंकर", "एस. जयशंकर", "विदेश मंत्री जयशंकर")),
+    ("Nirmala Sitharaman", ("निर्मला सीतारमण",)),
+    ("Yogi Adityanath", ("योगी आदित्यनाथ",)),
+    ("Mallikarjun Kharge", ("मल्लिकार्जुन खड़गे", "मल्लिकार्जुन खरगे")),
+    ("Sonia Gandhi", ("सोनिया गांधी", "सोनिया गाँधी")),
+    ("Priyanka Gandhi", ("प्रियंका गांधी", "प्रियंका गाँधी")),
+    ("Arvind Kejriwal", ("अरविंद केजरीवाल",)),
+    ("Mamata Banerjee", ("ममता बनर्जी",)),
+    ("Nitish Kumar", ("नीतीश कुमार",)),
+    ("Devendra Fadnavis", ("देवेंद्र फडणवीस", "देवेन्द्र फडणवीस")),
+)
+
+
+def figures_said(beats: list[dict]) -> list[dict]:
+    """The FIGURES the beats name, as script names: [{"en", "hi", "alias"}], hi the form first said."""
+    out = []
+    for en, forms in FIGURES:
+        hits = sorted((at, w) for w in forms for b in beats if (at := said_at(b.get("say") or "", (w,))) >= 0)
+        if hits:
+            hi = hits[0][1]
+            out.append({"en": en, "hi": hi, "alias": [w for w in forms if w != hi]})
+    return out
+
+
 # A country or its adjective right before a thing ("अमेरिकी सुप्रीम कोर्ट", "ब्रिटेन की संसद"): another country's.
 FOREIGN = ("अमेरिका", "अमेरिकी", "यूएस", "US", "पाकिस्तान", "पाकिस्तानी", "ब्रिटेन", "ब्रिटिश", "चीन", "चीनी", "रूस",
            "रूसी", "नेपाल", "नेपाली", "बांग्लादेश", "बांग्लादेशी", "श्रीलंका", "श्रीलंकाई", "इजराइल", "इज़राइल", "इजरायली",

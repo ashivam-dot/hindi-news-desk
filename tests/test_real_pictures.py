@@ -283,3 +283,33 @@ def test_a_later_place_with_its_own_photo_beats_an_earlier_town_with_only_a_map(
     shown = [i for r in rows if r["plate"] != match.CARD for i in r["views"]]
     assert sum(visuals.is_map(photos[i]) for i in shown) <= match.MAX_MAP_VIEWS
     assert match.problems(applied(s, rows)) == []
+
+
+def test_a_public_figure_the_names_list_leaves_out_is_still_shown():
+    """Dry run 39817474353 (Donald Tusk in Delhi): "प्रधानमंत्री नरेंद्र मोदी" in all five beats, the script's names
+    only Tusk, Poland and New Delhi, so Modi was never on screen and beat 2 was a card."""
+    s = short("39817474353")
+    draft = {"names": s.scene["names"], "beats": spoken(s)}
+    humans = {"Narendra Modi": "Q1058", "Poland": None, "New Delhi": None}
+
+    def resolver(en, india, **k):
+        q = humans.get(en)
+        return (q, en, {"claims": {"P31": [claim({"id": wiki.HUMAN})]}}) if q else None
+
+    cast = CAST_FOR(draft, "Donald Tusk", True, resolver=resolver, thing_resolver=lambda en: None,
+                    thing_lookup=lambda e: None)
+    modi = next(c for c in cast if c["en"] == "Narendra Modi")
+    assert modi["kind"] == "person" and modi["hi"] == "नरेंद्र मोदी"
+    assert [h["en"] for h in things.figures_said([{"say": "ललित मोदी लंदन में हैं"}])] == []  # never a bare surname
+    # With his photo in the pool, beat 2 ("नई दिल्ली में प्रधानमंत्री नरेंद्र मोदी ने ...") shows him, not a card.
+    photos = [dict(p) for p in s.scene["photos"]]
+    for i, p in enumerate(photos):
+        if not p.get("role"):
+            p["depicts"] = [match.SUBJECT]
+    row = {k: modi[k] for k in ("en", "hi", "kind", "alias")} | {"photos": [len(photos)]}
+    photos.append({"file": "File:Narendra Modi 2024.jpg", "role": "person", "who": modi["hi"],
+                   "depicts": [match.key(row)]})
+    cast = match.cast_of(s) + [row]
+    rows = match.plan(spoken(s), photos, cast, [0, 1, 2, 3], s.kind, match.spellings_of(s), True, s.scene["names"])
+    assert rows[1]["views"] == [len(photos) - 1] and rows[1]["plate"] == ""
+    assert sum(r["plate"] == match.CARD for r in rows) == 0
