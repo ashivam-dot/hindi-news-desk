@@ -1,5 +1,5 @@
 {
- "at": "2026-10-22T22:20:40+00:00",
+ "at": "2026-10-22T22:28:02+00:00",
  "trending": [
   {
    "qid": "Q141695384",
@@ -138,19 +138,20 @@
    },
    "top_score": 0.5,
    "top_headlines": [
-    "Attack on Saudi Arabia’s King Fahd airport kills two people"
+    "Attack on Saudi Arabia’s King Fahd airport kills two people",
+    "Stop whining: JD Vance as Vivek Ramaswamy faces flak for attack ad in Ohio race"
    ]
   },
   {
    "qid": "Q141807978",
    "title": "2026 Tibet earthquake",
-   "fame": 426000,
+   "fame": 425000,
    "views": 0,
-   "traffic": 1000,
+   "traffic": 0,
    "news": 375000,
-   "news_at": "2026-10-22T22:20:40.165067+00:00",
+   "news_at": "2026-10-22T22:28:02.006546+00:00",
    "headlines": [
-    "At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media",
+    "7.0 magnitude earthquake hit the Tibet region October 22, killing many",
     "Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
     "16 killed, 32 injured in magnitude 7 earthquake in Tibet; rescue ops under way",
@@ -167,9 +168,8 @@
    ],
    "label_hi": null,
    "via": [
-    "google-trends-IN:tibet earthquake today",
     "wikipedia-current-events-2026-10-22",
-    "google-news:At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media",
+    "google-news:7.0 magnitude earthquake hit the Tibet region October 22, killing many",
     "google-news:Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "google-news:Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
     "outlet:Al Jazeera Media Network",
@@ -271,7 +271,7 @@
    },
    "top_score": 1.0,
    "top_headlines": [
-    "At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media"
+    "7.0 magnitude earthquake hit the Tibet region October 22, killing many"
    ],
    "mag": 7.0,
    "alert": "orange",
@@ -499,78 +499,12 @@
     "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 12
    },
-   "top_score": 0.84,
+   "top_score": 0.27,
    "top_headlines": [
     "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ]
-  },
-  {
-   "qid": "Q320093",
-   "title": "Tom Skerritt",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-10-22T20:56:00+00:00",
-   "headlines": [
-    "Tom Skerritt, known for roles in \"Alien,\" \"Top Gun\" and TV's \"Picket Fences,\" dies at age 93",
-    "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-    "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Tom Skerritt, known for roles in \"Alien,\" \"Top Gun\" and TV's \"Picket Fences,\" dies at age 93",
-    "google-news:Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-    "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-    "outlet:Guardian Media Group",
-    "outlet:France Médias Monde"
-   ],
-   "owners": [
-    "Guardian Media Group",
-    "France Médias Monde"
-   ],
-   "reports": [
-    {
-     "title": "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-     "url": "https://www.theguardian.com/film/2026/oct/22/tom-skerritt-actor-dead",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-22T20:19:49+00:00"
-    },
-    {
-     "title": "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-     "url": "https://www.france24.com/en/culture/20261022-emmy-winning-us-actor-tom-skerritt-top-gun-and-picket-fences-dies-93",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T20:11:54+00:00"
-    }
-   ],
-   "id": "wk-Q320093",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "id": "nw-20261021-tiger-shroff-attack",
@@ -1051,6 +985,54 @@
    "top_headlines": []
   },
   {
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-22T20:19:49+00:00",
+   "headlines": [
+    "Tom Skerritt, Alien and Top Gun actor, dies aged 93"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Tom Skerritt, Alien and Top Gun actor, dies aged 93",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
+     "url": "https://www.theguardian.com/film/2026/oct/22/tom-skerritt-actor-dead",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-22T20:19:49+00:00"
+    }
+   ],
+   "id": "wk-Q320093",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q1889124",
    "title": "Richard Riehle",
    "fame": 23446,
@@ -1137,49 +1119,19 @@
    "top_headlines": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q2138120",
-   "title": "Georgi Nemsadze",
-   "fame": 8749,
-   "views": 8749,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-21"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q2138120",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
   {
    "qid": "Q141807978",
    "title": "2026 Tibet earthquake",
-   "fame": 426000,
+   "fame": 425000,
    "views": 0,
-   "traffic": 1000,
+   "traffic": 0,
    "news": 375000,
-   "news_at": "2026-10-22T22:20:40.165067+00:00",
+   "news_at": "2026-10-22T22:28:02.006546+00:00",
    "headlines": [
-    "At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media",
+    "7.0 magnitude earthquake hit the Tibet region October 22, killing many",
     "Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
     "16 killed, 32 injured in magnitude 7 earthquake in Tibet; rescue ops under way",
@@ -1196,9 +1148,8 @@
    ],
    "label_hi": null,
    "via": [
-    "google-trends-IN:tibet earthquake today",
     "wikipedia-current-events-2026-10-22",
-    "google-news:At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media",
+    "google-news:7.0 magnitude earthquake hit the Tibet region October 22, killing many",
     "google-news:Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "google-news:Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
     "outlet:Al Jazeera Media Network",
@@ -1300,78 +1251,13 @@
    },
    "top_score": 1.0,
    "top_headlines": [
-    "At least sixteen dead, 32 injured after 7.0 quake strikes China’s Tibet: State media"
+    "7.0 magnitude earthquake hit the Tibet region October 22, killing many"
    ],
    "mag": 7.0,
    "alert": "orange",
    "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g",
    "audience": "india",
    "lane": "breaking"
-  },
-  {
-   "qid": "Q320093",
-   "title": "Tom Skerritt",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-10-22T20:56:00+00:00",
-   "headlines": [
-    "Tom Skerritt, known for roles in \"Alien,\" \"Top Gun\" and TV's \"Picket Fences,\" dies at age 93",
-    "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-    "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Tom Skerritt, known for roles in \"Alien,\" \"Top Gun\" and TV's \"Picket Fences,\" dies at age 93",
-    "google-news:Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-    "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-    "outlet:Guardian Media Group",
-    "outlet:France Médias Monde"
-   ],
-   "owners": [
-    "Guardian Media Group",
-    "France Médias Monde"
-   ],
-   "reports": [
-    {
-     "title": "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
-     "url": "https://www.theguardian.com/film/2026/oct/22/tom-skerritt-actor-dead",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-22T20:19:49+00:00"
-    },
-    {
-     "title": "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-     "url": "https://www.france24.com/en/culture/20261022-emmy-winning-us-actor-tom-skerritt-top-gun-and-picket-fences-dies-93",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T20:11:54+00:00"
-    }
-   ],
-   "id": "wk-Q320093",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "id": "kh-20261023-Q946",
@@ -1460,6 +1346,54 @@
    "lane": "naam-niyam"
   },
   {
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-22T20:19:49+00:00",
+   "headlines": [
+    "Tom Skerritt, Alien and Top Gun actor, dies aged 93"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Tom Skerritt, Alien and Top Gun actor, dies aged 93",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Tom Skerritt, Alien and Top Gun actor, dies aged 93",
+     "url": "https://www.theguardian.com/film/2026/oct/22/tom-skerritt-actor-dead",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-22T20:19:49+00:00"
+    }
+   ],
+   "id": "wk-Q320093",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261023-Q9531",
    "qid": "Q9531",
    "title": "BBC",
@@ -1540,36 +1474,6 @@
    "top_headlines": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q2138120",
-   "title": "Georgi Nemsadze",
-   "fame": 8749,
-   "views": 8749,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-21"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q2138120",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "qid": "Q3424313",
@@ -1665,20 +1569,21 @@
   }
  ],
  "notes": [
-  "outlets: 1366 headlines from 31 feeds (19 owners), 36 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-tiger-shroff-attack, nw-20261021-delhi-protest",
-  "explainers: 4 kh- stories (on): kh-20261023-Q209330, kh-20261023-Q7089335, kh-20261023-Q946, kh-20261023-Q9531; dropped: explainer Gurugram / Electricity Strike Latest: no Wikipedia article that can be its centre; explainer Hormuz Strait: fewer than 3 owners' headlines name it and the story; explainer Vadra Priyanka Gandhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1362 headlines from 31 feeds (19 owners), 34 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261021-tiger-shroff-attack, nw-20261021-delhi-protest",
+  "explainers: 4 kh- stories (on): kh-20261023-Q209330, kh-20261023-Q7089335, kh-20261023-Q946, kh-20261023-Q9531; dropped: explainer Gurugram / Haryana Electricity Strike: no Wikipedia article that can be its centre; explainer Hormuz Strait: fewer than 3 owners' headlines name it and the story; explainer Robert Vadra Priyanka: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1366,
+  "headlines": 1362,
   "feeds": 31,
   "owners": 19,
-  "matched": 36,
-  "corroborated": 9
+  "matched": 34,
+  "corroborated": 8
  },
  "emerging": [
   {
@@ -2129,10 +2034,9 @@
     "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 12
    },
-   "top_score": 0.84,
+   "top_score": 0.27,
    "top_headlines": [
     "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ]
