@@ -4,15 +4,17 @@ seven Tiger Shroff Shorts in a day opened on the same portraits."""
 from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 
-from desk import explain, gate, ledger, news, visuals, wiki
+from desk import explain, gate, ledger, match, news, visuals, wiki
 from desk.spec import Beat
 
 from . import test_gate
 from .test_explain import BY_KEY, NOW
+from .test_visuals import TIGER_SPELT, anchored, views_of
 
 short = test_gate.short  # the fixture
 
 cast_for = visuals.cast_for  # conftest stubs visuals.cast_for for every test
+MODI_SPELT = ["नरेन्द्र मोदी", "नरेन्द्र", "मोदी"]
 
 
 def item(key, title, hours_ago=1.0):
@@ -121,12 +123,12 @@ def test_a_surname_alone_still_shows_the_person():
             {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [5], "near": []}]
     visuals.surnames(cast, "टाइगर श्रॉफ")
     assert cast[0]["alias"] == ["फडणवीस"] and "alias" not in cast[1]  # श्रॉफ is the story's own person too
-    beats = [{"say": "टाइगर श्रॉफ पर फायरिंग हुई।", "photo": 0},
-             {"say": "फडणवीस के मुताबिक हमले के मास्टरमाइंड राज्य के बाहर हैं।", "photo": 0},
-             {"say": "रविवार को जुहू में फायरिंग के वक्त टाइगर के साथ सुरक्षाकर्मी थे।", "photo": 0},
-             {"say": "फडणवीस ने कहा कि किसी भी दोषी को बख्शा नहीं जाएगा।", "photo": 0}]
-    views = visuals.assign_legacy(beats, [0, 1], cast, first=0)
-    assert views[1][0] == 3 and views[3][0] == 3 and views[2][0] == 5
+    beats = [{"say": "टाइगर श्रॉफ पर फायरिंग हुई।"},
+             {"say": "फडणवीस के मुताबिक हमले के मास्टरमाइंड राज्य के बाहर हैं।"},
+             {"say": "रविवार को जुहू में फायरिंग के वक्त टाइगर के साथ सुरक्षाकर्मी थे।"},
+             {"say": "फडणवीस ने कहा कि किसी भी दोषी को बख्शा नहीं जाएगा।"}]
+    rows = anchored(beats, [0, 1], cast, TIGER_SPELT)
+    assert views_of(rows) == [[0], [3], [5, 1], [3]] and rows[2]["cut_word"] == "टाइगर"
 
 
 KOTA = ["टाइगर श्रॉफ की कार पर फायरिंग हुई और वे सुरक्षित बचे।",
@@ -150,15 +152,13 @@ def test_one_place_never_fills_the_short(short):  # noqa: F811
     assert gate.held(replace(bad, beats=[Beat(t, s) for t, s in zip(KOTA, good)])) == []
 
 
-def test_beats_about_nobody_leave_a_place_already_shown_twice():
+def test_beats_about_nobody_are_cards_not_a_place_already_shown():
     cast = [{"en": "Kota", "hi": "कोटा", "kind": "place", "photos": [2], "near": [3]},
             {"kind": "police", "hi": "मुंबई", "photos": [4]}]
-    views = visuals.assign_legacy([{"say": t, "photo": 0} for t in KOTA], [0, 1], cast, first=0,
-                           person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
-    run = 0
-    for v in views:
-        run = run + 1 if set(v) & {2, 3} else 0
-        assert run < gate.HELD_RUN, views
+    rows = anchored([{"say": t} for t in KOTA], [0, 1], cast, TIGER_SPELT)
+    # Kota's maps only where Kota is said; the injured line is a card, not Kota or the police.
+    assert [k for k, r in enumerate(rows) if r["plate"] != match.CARD and set(r["views"]) & {2, 3}] == [1, 2]
+    assert rows[5]["plate"] == match.CARD
 
 
 def test_a_festival_is_pictured_as_itself_never_as_a_ground_named_after_it(monkeypatch):
@@ -177,9 +177,8 @@ def test_a_festival_is_pictured_as_itself_never_as_a_ground_named_after_it(monke
     assert [c["kind"] for c in found] == ["topic"]
     assert cast_for(draft, "Narendra Modi", True, places_too=False) == []
     cast = [found[0] | {"photos": [4]}]
-    views = visuals.assign_legacy([{"say": "x", "photo": 0}, {"say": "देश भर में राम लीलाओं का मंचन हुआ।", "photo": 0}],
-                           [0, 1], cast, first=0)
-    assert views[1][0] == 4
+    rows = anchored([{"say": "x"}, {"say": "देश भर में राम लीलाओं का मंचन हुआ।"}], [0, 1], cast)
+    assert views_of(rows)[1] == [4], (cast, rows)
 
 
 def test_government_of_india_photos_are_free_and_a_likeness_is_not_the_person():
@@ -204,11 +203,11 @@ def test_the_storys_words_come_from_its_headlines():
 
 def test_a_beat_that_names_the_storys_person_opens_on_them():
     cast = [{"en": "Delhi", "hi": "दिल्ली", "kind": "place", "photos": [5], "near": []}]
-    beats = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दशहरा कार्यक्रम में शामिल हुए।", "photo": 0},
-             {"say": "आयोजन दिल्ली में हुआ।", "photo": 0},
-             {"say": "नरेन्द्र मोदी ने दिल्ली में राम राज्य का जिक्र किया।", "photo": 0}]
-    views = visuals.assign_legacy(beats, [0, 1, 2], cast, first=0, person=["Narendra Modi", "नरेन्द्र", "मोदी"])
-    assert views[2][0] in (1, 2) and 5 in views[2]
+    beats = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दशहरा कार्यक्रम में शामिल हुए।"},
+             {"say": "आयोजन दिल्ली में हुआ।"},
+             {"say": "नरेन्द्र मोदी ने दिल्ली में राम राज्य का जिक्र किया।"}]
+    rows = anchored(beats, [0, 1, 2], cast, MODI_SPELT)
+    assert views_of(rows) == [[0], [5], [1, 5]] and rows[2]["cut_word"] == "दिल्ली"
 
 
 DUSSEHRA_BEATS = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दिल्ली में दशहरा के कार्यक्रम में शामिल हुए।", "photo": 0},
@@ -229,11 +228,11 @@ def test_the_title_before_the_storys_person_names_them():
 def test_a_city_every_line_names_does_not_stand_under_every_beat():
     delhi = {"en": "Delhi", "hi": "दिल्ली", "kind": "place", "photos": [5], "near": [6]}
     ramlila = {"en": "Ramlila", "hi": "राम लीला", "kind": "topic", "photos": [7, 8], "alias": ["राम लीलाओं"]}
-    person = ["Narendra Modi", "नरेन्द्र", "मोदी", *visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी")]
-    views = visuals.assign_legacy(DUSSEHRA_BEATS, [0, 1, 2], [delhi, ramlila], first=0, person=person)
-    maps = [any(i in (5, 6) for i in v) for v in views]
-    assert sum(maps) * 2 <= len(views) and "TTT" not in "".join("T" if m else "F" for m in maps)
-    assert views[5][0] in (0, 1, 2) and views[3][0] in (0, 1, 2) and views[2][0] in (7, 8)
+    spelt = MODI_SPELT + visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी")
+    views = views_of(anchored(DUSSEHRA_BEATS, [0, 1, 2], [delhi, ramlila], spelt))
+    # Delhi is named in five of six lines: it is the cut, never the main picture, except where it alone is named.
+    assert [v[0] for v in views] == [0, 6, 7, 1, 8, 2] and [len(v) for v in views] == [2, 1, 1, 2, 2, 1]
+    assert views[5][0] in (0, 1, 2)  # "प्रधानमंत्री" names him: his photo, not a city map
 
 
 def test_a_place_card_sits_only_over_its_own_place():
@@ -279,13 +278,13 @@ def test_the_police_of_the_town_a_place_lies_in(monkeypatch):
 def test_the_police_photo_waits_for_the_police_beat():
     juhu = {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [8], "near": [9]}
     police = {"kind": "police", "hi": "मुंबई", "photos": [10]}
-    beats = [{"say": "टाइगर श्रॉफ पर फायरिंग के बाद संगठनों ने सुरक्षा मांगी।", "photo": 0},
-             {"say": "रविवार शाम जुहू में एक्टर की कार पर गोलियां चलीं।", "photo": 0},
-             {"say": "AICWA का दावा है कि कलाकारों को डराने के लिए हमले हो रहे हैं।", "photo": 0},
-             {"say": "पुलिस अब अन्य फिल्मी हस्तियों के घरों की सुरक्षा की जांच कर रही है।", "photo": 0},
-             {"say": "आरोपियों से पूछताछ कर हमले की वजह जानने की कोशिश जारी है।", "photo": 0}]
-    views = visuals.assign_legacy(beats, [0, 1, 2], [juhu, police], first=0, person=["Tiger Shroff", "टाइगर", "श्रॉफ"])
-    assert 10 not in views[2] and 10 in views[3] and 10 in views[4]
+    beats = [{"say": "टाइगर श्रॉफ पर फायरिंग के बाद संगठनों ने सुरक्षा मांगी।"},
+             {"say": "रविवार शाम जुहू में एक्टर की कार पर गोलियां चलीं।"},
+             {"say": "AICWA का दावा है कि कलाकारों को डराने के लिए हमले हो रहे हैं।"},
+             {"say": "पुलिस अब अन्य फिल्मी हस्तियों के घरों की सुरक्षा की जांच कर रही है।"},
+             {"say": "आरोपियों से पूछताछ कर हमले की वजह जानने की कोशिश जारी है।"}]
+    rows = anchored(beats, [0, 1, 2], [juhu, police], TIGER_SPELT)
+    assert views_of(rows) == [[0], [8], None, [10], [10]]  # AICWA's claim: a card, not the police
 
 
 def test_photos_shown_lately_go_last(monkeypatch):
