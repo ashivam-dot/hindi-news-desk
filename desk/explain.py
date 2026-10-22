@@ -339,23 +339,41 @@ ROLES = {"actor": ("actor", "actress"), "actress": ("actress", "actor"), "singer
          "businessman": ("businessman", "businessperson", "industrialist", "entrepreneur"),
          "minister": ("minister", "politician"), "politician": ("politician", "minister")}
 _ROLE = "|".join(ROLES)
+# The same roles in Hindi headlines, whole words only (मंत्री is never प्रधानमंत्री or मुख्यमंत्री): dNGHjXMe1ng
+# (2026-10-21) said "अभिनेता इमरान खान" while no English headline said "actor", and was told with Pakistan's former
+# prime minister's photos (Q155164, not the actor Q312781).
+HINDI_ROLES = {"अभिनेता": "actor", "अभिनेत्री": "actress", "एक्टर": "actor", "एक्ट्रेस": "actress", "गायक": "singer",
+               "गायिका": "singer", "क्रिकेटर": "cricketer", "मंत्री": "minister"}
+_HINDI_ROLE = re.compile(r"(?<![\wऀ-ॿ])(" + "|".join(HINDI_ROLES) + r")(?![\wऀ-ॿ])")
 
 
-def headline_role(titles: list[str], name: str) -> str | None:
-    """The role most of the story's headlines put right before or after the name ("actor Imran Khan")."""
+def headline_role(titles: list[str], name: str, hindi_titles: list[str] | None = None) -> str | None:
+    """The role most of the story's headlines put right before or after the name ("actor Imran Khan"); in Hindi
+    headlines, a HINDI_ROLES word right before a Hindi spelling of the name ("अभिनेता इमरान खान")."""
     n = re.escape(name)
     seen = Counter()
     for t in titles:
         m = re.search(rf"\b({_ROLE})\s+{n}\b|\b{n},?\s+(?:the\s+|an?\s+)?({_ROLE})\b", t, re.I)
         if m:
             seen[(m.group(1) or m.group(2)).lower()] += 1
+    for t in hindi_titles or []:
+        for m in _HINDI_ROLE.finditer(t):
+            after = re.findall(r"[ऀ-ॿ]+", t[m.end():])[:len(name.split())]
+            if len(after) == len(name.split()) and all(map(hindi.sounds_alike, after, name.split())):
+                seen[HINDI_ROLES[m.group(1)]] += 1
+                break
     return seen.most_common(1)[0][0] if seen else None
 
 
 def fits_role(ent: dict, role: str) -> bool:
-    """Wikidata's description fits the role, or there is no description to contradict it."""
+    """Wikidata's description fits the role, or there is no description to contradict it. Only then, as an extra,
+    the occupations (P106): with no description, listed occupations that never fit the role contradict it."""
     about = ((ent.get("descriptions") or {}).get("en") or {}).get("value", "").lower()
-    return not about or any(w in about for w in ROLES[role])
+    if about:
+        return any(w in about for w in ROLES[role])
+    jobs = [x["value"] for x in wiki.claims(ent, "P106")[:5] if isinstance(x["value"], str)]
+    labels = " ".join(wiki.labels(jobs).values()).lower() if jobs else ""
+    return not labels or any(w in labels for w in ROLES[role])
 
 
 def resolve_as(name: str, key: str, role: str) -> tuple[str, str, dict, bool] | None:
@@ -365,6 +383,44 @@ def resolve_as(name: str, key: str, role: str) -> tuple[str, str, dict, bool] | 
         return None
     found = _item(article)
     if not found or not fits_role(found[2], role):
+        return None
+    return found + (indian(found[2]),)
+
+
+SAME_NAME_DAYS = 14
+
+
+def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict] | None = None,
+                   now: datetime | None = None) -> tuple[str, str, dict, bool] | None:
+    """The centre the channel's Shorts of the last SAME_NAME_DAYS gave the same name, when it is not qid: one name,
+    one person across a story (xaj3hgwcaF8 showed actor Imran Khan on his notice; dNGHjXMe1ng then told it with
+    Q155164, Pakistan's former prime minister). Rows whose headlines or article name the name count, retired ones never; the qid most of them used
+    wins (the latest on a tie), and only if it still passes resolve_as's checks: a centre item, fitting the role
+    the headlines give. None keeps qid."""
+    from . import ledger
+
+    now = now or datetime.now(timezone.utc)
+    pattern = re.compile(r"\b" + re.escape(name) + r"\b", re.I)
+    used, last = Counter(), {}
+    for i, r in enumerate(ledger.published() if rows is None else rows):
+        try:
+            at = datetime.fromisoformat(r["published_at"])
+            at = at if at.tzinfo else at.replace(tzinfo=timezone.utc)
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not r.get("qid") or not r.get("article") or r.get("retired_at") or now - at > timedelta(days=SAME_NAME_DAYS):
+            continue
+        if any(pattern.search(t) for t in [r["article"]] + list(r.get("headlines") or [])):
+            used[r["qid"]] += 1
+            last[r["qid"]] = (i, r["article"])
+    if not used:
+        return None
+    best = max(used, key=lambda q: (used[q], last[q][0]))
+    article = last[best][1]
+    if best == qid:
+        return None
+    found = _item(article)
+    if not found or found[1] != best or (role and not fits_role(found[2], role)):
         return None
     return found + (indian(found[2]),)
 
@@ -440,14 +496,24 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
                 continue
             tried.append(name)
             looked += 1
+            if leads is None:
+                leads = lead_items(now)
+            # The role is read before the centre is looked up, from Google News India's lead headlines too (English
+            # ones naming the phrase; Hindi ones, and this run's Hindi items, by a role word before the name).
+            lead_en_ = [h["title"] for f, rows in leads.items() if f not in news.HINDI_FEEDS for h in rows
+                        if re.search(r"\b" + re.escape(name) + r"\b", h["title"], re.I)]
+            lead_hi_ = [h["title"] for f, rows in leads.items() if f in news.HINDI_FEEDS for h in rows]
             try:
                 found = resolve(name, key)
-                role = headline_role(titles, name)
+                role = headline_role(titles + lead_en_, name, [i["title"] for i in hindi_items] + lead_hi_)
                 if found and role and HUMAN in {x["value"] for x in wiki.claims(found[2], "P31")} \
                         and not fits_role(found[2], role):
                     found = resolve_as(name, key, role)
                     if not found:
                         notes.append(f"explainer {name}: Wikipedia's {name} is not the {role} the headlines name")
+                if found and (again := consistent_qid(name, found[1], role, now=now)):
+                    notes.append(f"explainer {name}: {again[1]} as in the channel's recent Shorts, not {found[1]}")
+                    found = again
             except Exception as exc:
                 notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
                 continue

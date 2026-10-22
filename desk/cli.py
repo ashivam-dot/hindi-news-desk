@@ -77,7 +77,9 @@ def overlap_record(short) -> dict | None:
 
 
 def report_urls(short) -> list[str]:
-    return [r["url"] for r in short.scene.get("reporting") or []]
+    """The outlet articles a Short used: its reporting, and the reports that state a death (gate._death_reported)."""
+    return list(dict.fromkeys(r["url"] for r in (short.scene.get("reporting") or [])
+                              + (short.scene.get("death_reports") or [])))
 
 
 def publish_refusal(short, work: Path, at: datetime) -> str | None:

@@ -1,5 +1,6 @@
 import copy
 from dataclasses import replace
+from datetime import date
 from pathlib import Path
 
 import pytest
@@ -119,3 +120,125 @@ def test_channel_mix_limits_loss_runs():
     assert gate.channel_mix([True, True], False) is None
     assert gate.channel_mix([False, True], True) is None
     assert gate.channel_mix([], True) is None
+
+
+def test_a_death_is_held_without_a_news_report_that_states_it(short):
+    """FMKaXjYtmOk (Nana Patekar) went out on Wikidata and the infobox alone, with report_urls: []."""
+    from desk import cli
+
+    assert cli.report_urls(short) == ["https://www.thehindu.com/example/ramesh-prasad-verma"]
+    bare = replace(short, scene={k: v for k, v in short.scene.items() if k != "death_reports"})
+    assert cli.report_urls(bare) == []
+    assert any("no news report states the death" in p for p in gate.check(bare))
+    [row] = short.scene["death_reports"]
+    other = replace(short, scene=dict(short.scene, death_reports=[row | {"says": "Ramesh Prasad Verma sang in 12 "
+                                                                                 "languages."}]))
+    assert any("no news report states the death" in p for p in gate.check(other))
+    plain = replace(short, scene=dict(short.scene, death_reports=[row | {"url": "http://example.com/x"}]))
+    assert any("no news report states the death" in p for p in gate.check(plain))
+    incident = replace(bare, kind="incident")
+    assert not any("states the death" in p for p in gate.check(incident))
+
+
+def test_a_death_sentence_must_name_the_person():
+    names = ["Ramesh Prasad Verma", "रमेश प्रसाद वर्मा"]
+    assert gate.states_death("Veteran singer Ramesh Prasad Verma passed away in Mumbai on Thursday.", names)
+    assert gate.states_death("मशहूर गायक रमेश प्रसाद वर्मा का गुरुवार को निधन हो गया।", names)
+    assert gate.states_death("Ramesh Prasad Verma was admitted to hospital. His brother died in 2001.", names) is None
+    assert gate.states_death("Ramesh Prasad Verma studied in Varanasi.", names) is None
+
+
+def _verma_item(monkeypatch, body, key="thehindu"):
+    from desk import outlets
+
+    o = next(o for o in outlets.OUTLETS if o["key"] == key)
+    item = {"title": "Singer Ramesh Prasad Verma passes away", "url": f"https://{key}.example/verma",
+            "outlet": o["name"], "outlet_hi": o["name_hi"], "owner": o["owner"], "group": o["group"],
+            "lang": o["lang"], "geo": o["geo"], "feed": key, "at": "2026-10-08T10:00:00+00:00", "summary": ""}
+    monkeypatch.setattr(outlets, "text", lambda url: body if url == item["url"] else None)
+    return item
+
+
+def _death_build(monkeypatch, reports):
+    """build_death up to its death check: a Wikidata item that died on 8 October 2026 and an infobox that says so."""
+    from desk import wiki, writer
+
+    ent = {"labels": {"en": {"value": "Ramesh Prasad Verma"}, "hi": {"value": "रमेश प्रसाद वर्मा"}},
+           "claims": {p: [{"mainsnak": {"datavalue": {"value": {"time": t}}}}]
+                      for p, t in (("P569", "+1945-03-02T00:00:00Z"), ("P570", "+2026-10-08T00:00:00Z"))}}
+    monkeypatch.setattr(wiki, "entities", lambda qids: {"Q900001": ent})
+    monkeypatch.setattr(wiki, "infobox", lambda title: ("", {"occupation": "singer"}, {"death_date": "8 October 2026"}))
+    monkeypatch.setattr(writer, "_today_ist", lambda: date(2026, 10, 9))
+    monkeypatch.setattr(writer, "_shared", lambda *a: pytest.fail("past the death check"))
+    cand = {"id": "wk-Q900001", "title": "Ramesh Prasad Verma", "qid": "Q900001", "reports": reports}
+    return lambda: writer.build_death(cand)
+
+
+def test_build_death_holds_a_death_no_report_states(monkeypatch):
+    with pytest.raises(ValueError, match="no news report states the death of Ramesh Prasad Verma"):
+        _death_build(monkeypatch, [])()
+    item = _verma_item(monkeypatch, "Ramesh Prasad Verma will sing in Mumbai next month, the organisers said. " * 5)
+    item["title"] = "Ramesh Prasad Verma to sing in Mumbai"
+    with pytest.raises(ValueError, match="no news report states the death"):
+        _death_build(monkeypatch, [item])()
+
+
+def test_one_confirming_report_lets_a_death_through(monkeypatch):
+    from desk import writer
+
+    body = "Veteran playback singer Ramesh Prasad Verma died in Mumbai on Thursday, his family said. " * 5
+    item = _verma_item(monkeypatch, body)
+    with pytest.raises(pytest.fail.Exception, match="past the death check"):
+        _death_build(monkeypatch, [item])()
+    [row] = writer.death_reports({"reports": [item]}, [], "Ramesh Prasad Verma", "रमेश प्रसाद वर्मा",
+                                 writer._since(date(2026, 10, 8)))
+    assert row["url"] == item["url"] and row["name"] == "Ramesh Prasad Verma" and row["says"] == item["title"] + "."
+    assert "text" not in row  # the scene keeps the sentence, not the article
+
+
+# YM2dyGiYNJQ (2026-10-20): the reporting gave the resignation demand to Congress's Sapkal; Raut alleged "jungle raj"
+# and asked for President's Rule.
+RAUT_NAMES = [{"hi": "टाइगर श्रॉफ", "en": "Tiger Shroff"}, {"hi": "संजय राउत", "en": "Sanjay Raut"},
+              {"hi": "देवेंद्र फडणवीस", "en": "Devendra Fadnavis"}, {"hi": "हर्षवर्धन सपकाल", "en": "Harshwardhan Sapkal"}]
+RAUT_REPORTS = [
+    {"owner": "The Hindu Group", "title": "Opposition targets Fadnavis after firing at Tiger Shroff's house",
+     "text": "Shiv Sena (UBT) MP Sanjay Raut alleged 'jungle raj' in Maharashtra and demanded President's Rule. "
+             "Maharashtra Congress chief Harshwardhan Sapkal demanded the resignation of Chief Minister Devendra "
+             "Fadnavis."},
+    {"owner": "Bennett, Coleman & Co.", "title": "Raut slams Fadnavis govt, says regime change needed",
+     "text": "Raut said regime change was needed and demanded President's Rule in the state. Sapkal sought "
+             "Fadnavis's resignation over the law and order situation."},
+    {"owner": "Living Media", "title": "टाइगर श्रॉफ के घर फायरिंग पर सियासत",
+     "text": "संजय राउत ने महाराष्ट्र में 'जंगल राज' का आरोप लगाया और राष्ट्रपति शासन की मांग की।"},
+]
+RAUT_WRONG = "Tiger Shroff: फायरिंग के बाद राउत की फडणवीस से इस्तीफे की मांग"
+RAUT_RIGHT = "Tiger Shroff: फायरिंग के बाद राउत ने लगाया 'जंगल राज' का आरोप, राष्ट्रपति शासन की मांग"
+
+
+def test_a_demand_given_to_the_wrong_person_is_refused():
+    [(who, claim, what, _)] = gate.claims(RAUT_WRONG, RAUT_NAMES)
+    assert (who["en"], claim, what) == ("Sanjay Raut", "demand", "resignation")  # Fadnavis is asked, not asking
+    [problem] = gate.unattributed(RAUT_WRONG, RAUT_NAMES, RAUT_REPORTS)
+    assert "Sanjay Raut a demand (resignation)" in problem and "Sapkal demanded the resignation" in problem
+    assert gate.claim_backers(RAUT_NAMES[3], "demand", "resignation", RAUT_REPORTS) == ["Bennett, Coleman & Co.",
+                                                                                       "The Hindu Group"]
+    # ने marks Raut as the one demanding; फडणवीस के इस्तीफे is whose resignation.
+    assert gate.unattributed("राउत ने फडणवीस के इस्तीफे की मांग की।", RAUT_NAMES, RAUT_REPORTS)
+
+
+def test_a_claim_attributed_as_the_reporting_does_passes():
+    found = [(w["en"], c, o) for w, c, o, _ in gate.claims(RAUT_RIGHT, RAUT_NAMES)]
+    assert found == [("Sanjay Raut", "allegation", None), ("Sanjay Raut", "demand", "President's Rule")]
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS) == []
+    assert gate.unattributed("सपकाल ने फडणवीस के इस्तीफे की मांग की।", RAUT_NAMES, RAUT_REPORTS) == []
+
+
+def test_one_owner_is_not_enough_and_a_claim_needs_a_named_claimant():
+    # In English only The Hindu has Raut alleging anything; the Hindi report's owner was the second.
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS[:2])
+    # The Wikipedia ground backs a claim on its own, as it backs a name or a number.
+    assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS[:2],
+                             ground="Raut alleged jungle raj in the state.") == []
+    # आरोपी is the accused, not an allegation; a demand no listed name makes is no one's claim.
+    assert gate.claims("पुलिस ने राउत के घर के पास से दो आरोपी पकड़े।", RAUT_NAMES) == []
+    assert gate.claims("मुंबई में बिजली की मांग बढ़ी।", RAUT_NAMES) == []

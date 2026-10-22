@@ -208,10 +208,10 @@ RULES = """RULES (all mandatory):
 - label: 1 to 3 Hindi words under the caption that say what the caption measures or who said it ("थोक महंगाई",
   "बिजली गुल", "एयर इंडिया का बयान", "स्क्वॉक कोड", "आगे क्या"). Never a bare section name such as "मुख्य खबर",
   "विवरण", "अन्य पक्ष" or "पृष्ठभूमि". No numbers in a label.
-- title: one natural Hindi headline, 30 to 75 characters, with the name or topic people search for in its first three
-  words ("टाइगर श्रॉफ की कार पर फायरिंग, ..."), in everyday Hindi (never formal Sanskritised words), that states the
-  news (who, what) as a concrete claim; no "Name:" label before it, no "वजह क्या है" tail, no clickbait, no capitals
-  for effect.
+- title: one natural Hindi headline, 37 to 55 characters (never over 65), with the name or topic people search for in
+  its first three words ("टाइगर श्रॉफ की कार पर फायरिंग, ..."), in everyday Hindi (never formal Sanskritised words),
+  that states the news (who, what) as a concrete claim; no "Name:" label before it, no "वजह क्या है" tail, no
+  clickbait, no capitals for effect.
 Return only the JSON."""
 
 # Owner, 2026-10-15: titles were "too much difficult hindi and not interesting". The title is what people read
@@ -231,7 +231,7 @@ TITLE_BRIEF = """Write 5 different YouTube Shorts titles for the Hindi news Shor
   शेयर बाजार, फ्लाइट, एयरपोर्ट, बैंक). Never formal Sanskritised words: महंगाई not मुद्रास्फीति, अपील not आह्वान,
   सुप्रीम कोर्ट not सर्वोच्च न्यायालय, IMF not अंतर्राष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान विभाग, तरीका
   not पद्धति, के बाद not उपरांत, हफ्ते not सप्ताह, बेंच not पीठ, साल के not वर्षीय.
-- 35 to 75 characters in all. Never open with an official's title or an institution's full name ("जस्टिस ... की
+- 37 to 55 characters in all, never over 65. Never open with an official's title or an institution's full name ("जस्टिस ... की
   पीठ", "सॉलिसिटर जनरल ...", "भारत मौसम विज्ञान विभाग"): viewers stop for a name they know or for what changes for
   them.
 - When the name could mean someone else, give the role the SCRIPT gives ("अभिनेता इमरान खान को ...", "केंद्रीय मंत्री
@@ -288,14 +288,20 @@ SAID_OK = {"प्रतिशत"}
 # Titles (2026-10-22): "Name: headline" Shorts drew a median 35.5 views (20 Shorts) against 55 for the rest (54), and
 # the five with a "वजह क्या है" tail 17; one template on every title also reads as mass-produced. So a title is one
 # natural Hindi headline with the searchable name in its first TITLE_CORE_WORDS words, and never opens like one of
-# the channel's last RECENT_TITLES titles. These are style rules (title_style): advisory on the last round.
+# the channel's last RECENT_TITLES titles. These are style rules (title_style): advisory on the last round. The
+# "Name:" Shorts also carried hashtags and dates in their titles, so those figures cannot tell the label's effect
+# from theirs (the revenue-push audit, kyun-hua-shorts-strategy.md, 2026-10-22).
 KICKER = re.compile(r"^[A-Za-z][A-Za-z0-9.&'’\- ]{1,34}:\s")
 STOCK_TAIL = re.compile(r"((वजह|कारण) क्या (है|थी|रही)|क्या (है|थी|रही) (वजह|कारण)|[,:।\-–]\s*क्यों)\s*\?\s*$")
 TITLE_CORE_WORDS = 3
 RECENT_TITLES = 20
 GENERIC_SOURCE = re.compile(r"(रिपोर्टों|रिपोर्ट|सूत्रों) के (मुताबिक|अनुसार)")
 NAMELESS_SOURCE = re.compile(r"स्रोत(ों)? के (मुताबिक|अनुसार)")
-TITLE_MAX = 80
+# Length (audit, 2026-10-22): RULES asked 30-75 characters and TITLE_BRIEF 35-75, and a title up to 80 passed. The
+# aim is TITLE_AIM, advisory (title_style, and only its top: nothing under 37 has been tried on the channel);
+# TITLE_MAX is hard, for the headline editor's titles and for the draft's own, which is retitle's fallback.
+TITLE_AIM = (37, 55)
+TITLE_MAX = 65
 TITLE_HINDI = gate.TITLE_HINDI
 WHY_HOOK = re.compile(r"^[^?]{12,}[,:।\-–]\s*[^,:?]{0,20}(क्यों|वजह|कारण)[^,:?]{0,20}\?$")
 CLICKBAIT = re.compile(r"सनसनीखेज|चौंकाने|खौफनाक|ख़ौफ़नाक|ब्रेकिंग|बड़ी खबर|बड़ी ख़बर|जानिए|जानिये|जानें|देखिए|!")
@@ -565,6 +571,11 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
             if re.search(r"\b" + token + r"\b", text) or token.lower() in listed.split():
                 problems.append(f"never name a perpetrator ({token})")
     problems += gate.decorum(text, "incident" if kind in ("incident", "protest") else kind, agreed_toll, hurt_ok)
+    problems += gate.unattributed(text, names, reports, ground_en + "\n" + ground_hi)
+    own =(draft.get("title") or "").strip().strip('"')
+    if len(own) > TITLE_MAX:  # the draft's own title is retitle's fallback
+        problems.append(f"the title has {len(own)} characters; keep it to {TITLE_AIM[0]}-{TITLE_AIM[1]} (never over "
+                        f"{TITLE_MAX})")
     if angle and not orbitwire.title_fits(draft.get("title", ""), angle):
         problems.append(f"the title must show this Short's angle ({orbitwire.ANGLES[angle]['label']})")
     return problems, doubtful
@@ -686,6 +697,7 @@ def title_problems(title: str, draft: dict, subject: dict, ground_en: str, kind:
     if not named:
         problems.append("it names no one and nothing from the story")
     problems += gate.decorum(title, "incident" if kind in ("incident", "protest") else kind, agreed_toll)
+    problems += gate.unattributed(title, names, reports or [], ground_en)
     if STATED_CAUSE.search(title) and not ATTRIBUTED.search(title) and "?" not in title:
         problems.append("it states a cause as fact: say who gives it (\"... के मुताबिक\", \"... बोले\") or leave the "
                         "cause out")
@@ -705,11 +717,13 @@ def recent_titles(limit: int = RECENT_TITLES) -> list[str]:
 
 def title_style(title: str, draft: dict, subject: dict, recent: list[str] | None = None,
                 earlier: list[str] | None = None) -> list[str]:
-    """Style problems of a title (see KICKER): a "Name:" label, a stock "वजह क्या है" tail, the searchable name
+    """Style problems of a title (see KICKER): more than TITLE_AIM's characters, a "Name:" label, a stock "वजह क्या है" tail, the searchable name
     later than its first words, or the same first words as another story's recent title."""
     title = title.strip().strip('"')
     names = [p for p in draft.get("names") or [] if isinstance(p, dict)]
     problems = []
+    if len(title) > TITLE_AIM[1]:
+        problems.append(f"{len(title)} characters: keep the title to {TITLE_AIM[0]}-{TITLE_AIM[1]}")
     if KICKER.match(title):
         problems.append("drop the \"Name:\" label: write one natural Hindi headline that starts with the name")
     if m := STOCK_TAIL.search(title):
@@ -770,6 +784,8 @@ def retitle(pen: "Pen", draft: dict, subject: dict, ground_en: str, kind: str, a
     own = draft.get("title", "")
     record["chosen"] = own
     record["own_problems"] = title_problems(own, draft, subject, ground_en, kind, agreed_toll, reports, earlier)
+    if len(own.strip().strip('"')) > TITLE_MAX:  # validate refuses such a draft: the fallback never goes out over it
+        raise ValueError(f"gate: no title of at most {TITLE_MAX} characters ({own[:80]})")
     return own, record
 
 
@@ -1102,6 +1118,15 @@ def _reporting(cand: dict, title: str, hi: str | None = None, person: bool = Fal
     """2-4 trusted outlets' articles about the story, each from a different owner, with their text (outlets.reporting):
     the reports matched to it at discovery, and (search) any recent outlet item that names it. [] when fewer than
     two owners' articles can be read."""
+    try:
+        return outlets.reporting(_report_rows(cand, title, hi, person, since, search))
+    except Exception:
+        return []
+
+
+def _report_rows(cand: dict, title: str, hi: str | None = None, person: bool = False,
+                 since: datetime | None = None, search: bool = True) -> list[dict]:
+    """The outlet items about the story (_reporting), not yet read."""
     found = [r for r in cand.get("reports") or [] if r.get("url")]
     if search:
         # Discovery matches a headline by one distinctive word; a report backs facts only when it names the story.
@@ -1114,11 +1139,34 @@ def _reporting(cand: dict, title: str, hi: str | None = None, person: bool = Fal
             items = []
         for i in outlets.about(title, items, since=since, person=person, hi=hi):
             found.setdefault(i["url"], i)
-    rows = [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
+    return [r for r in found.values() if not since or datetime.fromisoformat(r["at"]) >= since]
+
+
+def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | None, since: datetime) -> list[dict]:
+    """The news reports that state the death (gate.states_death), each as an outlet item plus the name it gives and
+    the sentence that says it: the story's reporting (read before clean_reports takes death sentences out), else the
+    first other outlet item about the person whose article says it. One is enough: the writer's facts still need
+    gate.OWNERS_NEEDED owners."""
+    names = [name] + ([name_hi] if name_hi else [])
+
+    def confirmed(r: dict, body: str | None) -> dict | None:
+        says = gate.states_death(f"{r.get('title', '')}. {body}", names) if body else None
+        if not says:
+            return None
+        return outlets.compact(r) | {"name": next(n for n in names if hindi.contains(says, n)), "says": says}
+
+    found = [row for r in reports if (row := confirmed(r, r.get("text")))]
+    if found:
+        return found
+    seen = {r["url"] for r in reports}
     try:
-        return outlets.reporting(rows)
+        rows = _report_rows(cand, name, name_hi, person=True, since=since)
     except Exception:
-        return []
+        rows = []
+    for r in sorted((r for r in rows if r["url"] not in seen), key=outlets._rank):
+        if row := confirmed(r, outlets.text(r["url"])):
+            return [row]
+    return []
 
 
 def clean_reports(reports: list[dict], words: list[str], perpetrators: bool) -> list[dict]:
@@ -1195,6 +1243,11 @@ def build_death(cand: dict) -> Short:
     page, item = wiki.url(title), f"https://www.wikidata.org/wiki/{qid}"
     name = stories.plain_title(wiki.label(ent) or title)
     name_hi = wiki.common_hindi(ent)
+    raw = _reporting(cand, name, name_hi, person=True, since=_since(died))
+    confirming = death_reports(cand, raw, name, name_hi, _since(died))
+    if not confirming:
+        raise ValueError(f"gate: no news report states the death of {name} (Wikidata and Wikipedia alone are not "
+                         "enough)")
     she, _ = stories._pronouns(ent)
     age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
     job = (ib.get("occupation") or "").split(",")[0].strip()
@@ -1224,8 +1277,7 @@ def build_death(cand: dict) -> Short:
     hi_names = wiki.hindi_names(ent)
     subject = {"en": name, "hi": name_hi, "person": True}
     angle = ov["angle"] if ov else None
-    reports = clean_reports(_reporting(cand, name, name_hi, person=True, since=_since(died)),
-                            [name] + ([name_hi] if name_hi else []), perpetrators=False)
+    reports = clean_reports(raw, [name] + ([name_hi] if name_hi else []), perpetrators=False)
     draft, log, used = write("death", subject, she, facts_text, source, source_hi, photos, hi_names,
                              log_path=work / "writer_log.json", angle=angle, today_ok=days == 0, reports=reports,
                              title_hints=hindi_hints(cand))
@@ -1236,12 +1288,15 @@ def build_death(cand: dict) -> Short:
              Fact("born", hindi.date_hi(born), item, [str(born.day), str(born.year)], f"Wikidata P569 = {born}"),
              Fact("age", str(age), item, [str(age)], "computed from P569 and P570")]
     sources = [page, item] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
-    return _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,
-                  sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"), person=True,
-                  tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
-                  summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
-                          f"तथ्यों से।",
-                  cat="death", ov=ov, reports=reports)
+    sources = list(dict.fromkeys(sources + [r["url"] for r in confirming]))
+    short = _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,
+                   sources, died.isoformat(), loss=False, mood="tribute", region=cand.get("region", "world"),
+                   person=True, tags=[name, name_hi, job, job_hi, "श्रद्धांजलि", "tribute", "hindi news", "हिंदी समाचार"],
+                   summary=f"{name_hi} ({born.year}–{died.year}) को श्रद्धांजलि: उनकी कहानी, Wikipedia और Wikidata के "
+                           f"तथ्यों से।",
+                   cat="death", ov=ov, reports=reports)
+    short.scene["death_reports"] = confirming
+    return short
 
 
 def build_incident(cand: dict) -> Short:
