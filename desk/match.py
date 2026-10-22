@@ -485,7 +485,7 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         # Places alone beside it ("दोनों नेताओं ने नई दिल्ली के हैदराबाद हाउस में बैठक की") leave it about the pair, and
         # so does one of the pair named with "दोनों" later in the line (cut to the other on "दोनों").
         both = BOTH_ANY.search(say) if k > 0 else None
-        pair = _pair(out[-1], photos, depict, kind_of) if both else []
+        pair = (_pair(out[-1], photos, depict, kind_of) or _recent_pair(out, photos, depict, kind_of)) if both else []
         if len(pair) == 2 and all(kind_of.get(x) == "place" or x in pair for _, x in found):
             order, at = _pair_order(say, found, pair, both.start())
             for n, x in enumerate(order):
@@ -561,6 +561,24 @@ def _pair(row: dict, photos: list[dict], depict: dict, kind_of: dict) -> list[st
     keys = [next(iter(depict[i])) if len(depict[i]) == 1 else None for i in row["views"]]
     ok = all(x is not None and (x == SUBJECT or kind_of.get(x) == "person") for x in keys)
     return keys if ok and keys[0] != keys[1] else []
+
+
+def _one(row: dict, photos: list[dict], depict: dict, kind_of: dict) -> str | None:
+    """The one person a beat's single real photo showed (the subject counts), else None."""
+    if row["plate"] == CARD or len(row["views"]) != 1 or visuals.is_map(photos[row["views"][0]]):
+        return None
+    d = depict[row["views"][0]]
+    x = next(iter(d)) if len(d) == 1 else None
+    return x if x is not None and (x == SUBJECT or kind_of.get(x) == "person") else None
+
+
+def _recent_pair(out: list[dict], photos: list[dict], depict: dict, kind_of: dict) -> list[str]:
+    """"दोनों" after two beats that each showed one of two people ("तुस्क नई दिल्ली में मिले।", "मोदी ने ... चर्चा
+    की।", "दोनों नेताओं ने ..."): those two, in the order shown (dry run 39860680187 put a card there)."""
+    if len(out) < 2:
+        return []
+    keys = [_one(r, photos, depict, kind_of) for r in out[-2:]]
+    return keys if None not in keys and keys[0] != keys[1] else []
 
 
 def _pair_order(say: str, found: list[tuple[int, str]], pair: list[str], both: int) -> tuple[list[str], int]:
@@ -839,7 +857,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     total = map_time = real_time = card_time = subject_time = 0.0
     cards = run = held = 0
     pictures: list[int] = []
-    prev_key, prev_held, ran, pair = None, False, False, set()
+    prev_key, prev_held, ran, pair, alone = None, False, False, set(), []
     shown_beats = [(k, b) for k, b in enumerate(short.beats) if b.shot.startswith("photo:")]
     # What has a real photo (not a map, not vetted out): a beat naming it never stands over a map.
     pictured = {x for i, p in enumerate(photos) if not visuals.is_map(p) and not vet(i, photos, short, cast)
@@ -854,7 +872,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
             if run >= CARD_RUN and not ran:
                 out.append(f"text cards: {run} beats in a row from beat {n - run + 1}")
                 ran = True
-            prev_key, prev_held, pair = None, False, set()
+            prev_key, prev_held, pair, alone = None, False, set(), []
             continue
         run = 0
         found = names(say, cast, spell, others)
@@ -862,7 +880,10 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         # A leading pronoun that says what the subject said (plan's speaker).
         if person and k > 0 and speaker(say, found, prev_key):
             named.add(SUBJECT)
-        # "दोनों" anywhere right after a beat that showed two people, the beat naming no one else (plan's pair).
+        # "दोनों" anywhere right after a beat that showed two people, or two beats that showed one each, the beat
+        # naming no one else (plan's _pair / _recent_pair).
+        if not pair and len(alone) == 2 and None not in alone and alone[0] != alone[1]:
+            pair = set(alone)
         if k > 0 and len(pair) == 2 and BOTH_ANY.search(say) and all(kind_of.get(x) == "place" or x in pair
                                                                        for x in named):
             named = named | pair
@@ -900,6 +921,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                     next(iter(d))) == "person"):
                 these.append(next(iter(d)))
         pair = set(these) if len(these) == 2 and len(set(these)) == 2 else set()
+        alone = [*alone, these[0] if len(set(shown)) == 1 and len(set(these)) == 1 else None][-2:]
         held += this_held
         prev_key, prev_held = main, this_held
         big, small = (b.card or {}).get("big", ""), (b.card or {}).get("small", "")

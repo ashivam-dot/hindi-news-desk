@@ -140,6 +140,17 @@ def test_both_mid_line_shows_the_pair_cut_on_both():
     assert rows[1]["cut_at"] == say.index("दोनों")
 
 
+def test_both_after_two_beats_of_one_leader_each_is_the_pair():
+    # Dry run 39860680187: "तुस्क ... मिले।", "मोदी ने ... चर्चा की।", then "रिपोर्टों के मुताबिक, दोनों नेताओं ने ..."
+    # was a card; the two leaders the last two beats showed are the pair.
+    s = short("39860680187")
+    rows, photos = planned(s)
+    assert rows[2]["plate"] == "" and len(rows[2]["views"]) == 2
+    assert not photos[rows[2]["views"][0]].get("role") and photos[rows[2]["views"][1]].get("who") == "नरेंद्र मोदी"
+    assert match.problems(applied(s, rows)) == []
+    assert sum(r["plate"] == match.CARD for r in rows) == 1
+
+
 # --- F5: one picture as two files counts as one --------------------------------------------------------------------
 
 def test_a_crop_of_a_portrait_is_one_picture(tmp_path):

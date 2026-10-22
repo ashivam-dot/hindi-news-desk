@@ -59,7 +59,8 @@ def test_city_never_shows_spot_map():
     # word and rows[3] to Vantara's.
     assert rows[0] == {"views": [1], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
     assert rows[1] == {"views": [10], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
-    assert rows[3] == {"views": [2], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
+    # Rubio's other portrait: photo 2 stood in the "दोनों के बीच" pair the beat before (rows[2], Rubio and Ambani).
+    assert rows[3] == {"views": [3], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
     photos = short("39714003987").scene["photos"]
     assert not any(visuals.is_map(photos[i]) for r in rows for i in r["views"])
 
@@ -133,8 +134,9 @@ def test_rubio_plan_passes_and_original_blocks():
     # Re-planned, every picture is a real photo the beat names; but three of its six beats (the Venezuela talks,
     # Reliance's statement, the US officials) name nothing with a picture, over a third (match.card_limit, once
     # half): the Short is blocked and the writer's SHOWABLE retry must name what can be shown (2026-10-22).
-    assert match.problems(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5",
-                                                "text cards: 3 of 6 beats (at most 2)"]
+    # "रिपोर्टों के मुताबिक दोनों के बीच ..." after a Rubio beat and an Ambani beat is the pair now (dry run 39860680187,
+    # 2026-10-23), so two cards are left, but in a row.
+    assert match.problems(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5"]
     # The hand fix (maps under 1.5 of its 3 picture beats) passed at 40% once; at 20%, one map view, and no map
     # under a beat naming Rubio, it is blocked, and so is it re-hosted.
     fixed = short("39714003987-fixed")
@@ -203,5 +205,6 @@ def test_old_short_json_loads(tmp_path):
     rows, _ = planned(s)
     back = Short.load(applied(s, rows).save(tmp_path / "short.json"))
     # No cut to Vantara's map under the beat naming Rubio (2026-10-22; once "photo:2/11" cut on "वनतारा").
-    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:2", "", 0)
-    assert back.beats[2].plate == match.CARD
+    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:3", "", 0)
+    assert back.beats[2].plate == "" and back.beats[2].shot == "photo:2/10"  # "दोनों के बीच": Rubio, then Ambani
+    assert back.beats[4].plate == match.CARD

@@ -41,8 +41,7 @@ def test_rubio_hand_fix_is_blocked_now():
     assert "pictures: 2 map views (at most 1)" in bad
     assert "pictures: maps fill 50% of the picture time (at most 20%)" in gate.said_is_shown(short("39714003987-fixed"))
     rows, _ = planned(s)
-    assert gate.said_is_shown(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5",
-                                                    "text cards: 3 of 6 beats (at most 2)"]
+    assert gate.said_is_shown(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5"]
     # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time: 5.56 s of
     # maps in 17.61 s (32%, once under 40%).
     views = [{"start": 0.35, "end": 3.5, "photo": 7, "beat_k": 0}, {"start": 3.5, "end": 6.14, "photo": 8, "beat_k": 0},
