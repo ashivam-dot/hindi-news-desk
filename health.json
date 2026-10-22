@@ -1,22 +1,28 @@
 {
- "at": "2026-10-22T11:58:35+00:00",
+ "at": "2026-10-22T12:52:23+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 74 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.225, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:attack': {'n': 13, 'lift': 1.35, 'typical_views_24h': 76}, 'category:diplomacy': {'n': 4, 'lift': 1.06, 'typical_views_24h': 49}, 'category:economy': {'n': 5, 'lift': 0.843, 'typical_views_24h': 26, 'n_retention': 5, 'typical_view_pct': 36.2}",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 12 candidates from 16 trending",
-  "outlets: 1420 headlines from 31 feeds (19 owners), 11 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-tiger-shroff-attack",
-  "explainers: 8 kh- stories (on): kh-20261022-Q140632219, kh-20261022-Q163225, kh-20261022-Q10218, kh-20261022-Q5276830; dropped: explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio’s India: fewer than 3 owners' headlines name it and the story; explainer Witkoff: fewer than 3 owners' headlines name it and the story",
+  "watch: 7 candidates from 10 trending",
+  "outlets: 1429 headlines from 31 feeds (19 owners), 8 matched to articles, 4 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-tiger-shroff-attack",
+  "explainers: 3 kh- stories (on): kh-20261022-Q163225, kh-20261022-Q1340361, kh-20261022-Q30594397; dropped: explainer Witkoff: fewer than 3 owners' headlines name it and the story; explainer Shamonda: no Wikipedia article that can be its centre; explainer Cambridge Analytica: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261022-Q163225: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "drop kh-20261022-Q140632219: too low in Google News India's top stories (place 0.03, needs 0.35)",
-  "hold kh-20261022-Q10218: 4 Shorts today; the last 2 wait for 18:00 IST",
-  "drop kh-20261022-Q5276830: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261022-Q30594397: too low in Google News India's top stories (place 0.12, needs 0.35)",
-  "drop kh-20261022-Q1340361: too low in Google News India's top stories (place 0.15, needs 0.35)",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261022-Q140632219, kh-20261022-Q10218; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q7747",
+  "drop kh-20261022-Q30594397: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "drop wk-Q1699148: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261022-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q2138120: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q3424313: 121 h old and no longer trending live",
+  "drop wk-Q19729623: 97 h old and no longer trending live",
+  "published kh-20261022-Q163225: https://www.youtube.com/shorts/93SrVTtnzzk",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "93SrVTtnzzk",
+  "url": "https://www.youtube.com/shorts/93SrVTtnzzk",
+  "youtube_title": "सोनिया गाँधी ने शेयर किया अपनी नई किताब का पहला लुक #shorts #soniagandhi",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
