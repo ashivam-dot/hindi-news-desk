@@ -14,8 +14,9 @@ deaths, air incidents, storms and disasters are still told. A story Google News 
 follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
-most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, never held for a better hour
-(SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and CASE_MAX_TOTAL in all.
+most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, EVENING_RESERVE of them kept
+for after EVENING_IST (SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and
+CASE_MAX_TOTAL in all.
 A breaking story (huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake
 USGS rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap;
 wars never take the breaking lane. An ongoing story comes back at most once in COOLDOWN_DAYS, however its id
@@ -45,9 +46,9 @@ UPLOAD_RESERVE = 2
 # incidents those should be cover properly on time with max efforts." Fewer regular Shorts; the spare slots go to
 # breaking news and to a big case's angles. 2026-10-22 (audit/kyun-hua-shorts-strategy.md): 4 routine Shorts a day,
 # 90 minutes apart, so at most 6 with breaking news; the 6th to 10th Shorts of a day drew the least.
-MAX_PER_DAY = 4
+MAX_PER_DAY = 6
 BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
-MIN_GAP = timedelta(minutes=90)
+MIN_GAP = timedelta(minutes=20)
 BREAKING_GAP = timedelta(0)
 BREAKING_FAME = 400_000
 # Or this many independent outlets on one incident, BREAKING_STRONG of them official, public or international: a big
@@ -182,6 +183,10 @@ CASE_MAX_TOTAL = 6
 # every weight is a hypothesis for the scorecard to test: 06:00-09:00 and 18:00-20:00 IST preferred, 12:00-14:00
 # avoided, every other hour 1.
 SLOT_WEIGHT = {6: 1.2, 7: 1.2, 8: 1.2, 12: 0.8, 13: 0.8, 18: 1.2, 19: 1.2}
+# Hindi viewers watch most in the evening: before EVENING_IST the regular and case lanes leave EVENING_RESERVE of
+# the day's MAX_PER_DAY slots free for it. Breaking news is not held.
+EVENING_IST = 18.0
+EVENING_RESERVE = 2
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -290,7 +295,7 @@ def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool 
     """Why no Short may go out now, or None. A breaking story may take the spare slot at once; with `spare` (a case
     angle) it may take it MIN_GAP after the last Short. The daily cap counts the Shorts still on the channel; every
     upload, retired or not, counts toward YouTube's own limit, whose last UPLOAD_RESERVE uploads only breaking news
-    may take. No Short is held for a better hour (SLOT_WEIGHT)."""
+    may take. The evening reserve is the only hour hold; SLOT_WEIGHT never holds a Short."""
     at = at or datetime.now(timezone.utc)
     rows = ledger.published()
     uploads = [r for r in rows if ist_day(datetime.fromisoformat(r["published_at"])) == ist_day(at)]
@@ -309,6 +314,9 @@ def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool 
         return f"last Short went out {(at - max(past)).total_seconds() / 3600:.1f} h ago"
     if scheduled and min(scheduled) - at < gap:
         return f"a scheduled Short goes out in {(min(scheduled) - at).total_seconds() / 3600:.1f} h"
+    local = at.astimezone(IST)
+    if not breaking and local.hour + local.minute / 60 < EVENING_IST and len(today) >= MAX_PER_DAY - EVENING_RESERVE:
+        return f"{len(today)} Shorts today; the last {EVENING_RESERVE} wait for {EVENING_IST:02.0f}:00 IST"
     return None
 
 

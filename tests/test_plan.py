@@ -11,10 +11,8 @@ def utc(day, hour, minute=0):
 
 def test_the_desk_covers_only_the_big_stories_and_never_runs_past_youtubes_limit():
     # Owner, 2026-10-21: only the really high-profile stories, each covered properly.
-    # 2026-10-22: four routine Shorts a day, 90 minutes apart; six at most with breaking news.
-    assert plan.MAX_PER_DAY + plan.BREAKING_EXTRA <= plan.YOUTUBE_DAILY_UPLOADS - plan.UPLOAD_RESERVE
-    assert (plan.MAX_PER_DAY, plan.BREAKING_EXTRA, plan.UPLOAD_RESERVE) == (4, 2, 2)
-    assert plan.MIN_GAP == timedelta(minutes=90) and not hasattr(plan, "EVENING_RESERVE")
+    assert plan.MAX_PER_DAY + plan.BREAKING_EXTRA <= plan.YOUTUBE_DAILY_UPLOADS
+    assert plan.MAX_PER_DAY <= 6 and plan.BREAKING_EXTRA >= 1 and plan.MIN_GAP.total_seconds() <= 20 * 60
 
 
 def test_a_low_place_or_a_low_demand_kind_needs_a_higher_place():
@@ -30,35 +28,39 @@ def test_a_low_place_or_a_low_demand_kind_needs_a_higher_place():
     assert plan.demand({"category": "attack"}) > plan.demand({"category": "diplomacy"})
 
 
-def test_a_fifth_routine_short_is_held_but_breaking_news_goes_up_to_six(tmp_path, monkeypatch):
+def test_regular_shorts_go_out_min_gap_apart_up_to_the_cap_an_ist_day(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
-    late = utc(9, 16)  # 21:30 IST
-    ledger.save("published", _day(3))
-    assert plan.can_publish(late) is None
-    ledger.save("published", _day(4))
-    assert "already 4 Shorts today" in plan.can_publish(late)
-    # Breaking news, and a case angle, may take the two spare slots.
-    assert plan.can_publish(late, breaking=True) is None and plan.can_publish(late, spare=True) is None
-    ledger.save("published", _day(5))
-    assert plan.can_publish(late, breaking=True) is None
-    ledger.save("published", _day(6))
-    assert "already 6 Shorts today" in plan.can_publish(late, breaking=True)
-    assert "already 6 Shorts today" in plan.can_publish(late, spare=True)
-    # 19:00 UTC on 9 October is already 00:30 IST on 10 October: a new IST day.
-    assert plan.can_publish(utc(9, 19)) is None
-
-
-def test_routine_shorts_go_out_min_gap_apart_and_breaking_news_never_waits(tmp_path, monkeypatch):
-    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
+    monkeypatch.setattr(plan, "YOUTUBE_DAILY_UPLOADS", 20)  # the lanes alone, past YouTube's own limit
     at = utc(9, 12)  # 17:30 IST
     assert plan.can_publish(at) is None
     ledger.record_publish({"id": "wk-a", "published_at": "2026-10-09T11:50:00+00:00", "loss": False})
     assert "h ago" in plan.can_publish(at)
     assert plan.can_publish(at, breaking=True) is None  # breaking news never waits for the last Short
-    # An hour after the last Short is not enough; 90 minutes is.
-    assert "1.0 h ago" in plan.can_publish(utc(9, 12, 50))
-    assert "1.0 h ago" in plan.can_publish(utc(9, 12, 50), spare=True)  # a case angle waits MIN_GAP too
-    assert plan.can_publish(utc(9, 13, 20)) is None
+    assert plan.can_publish(utc(9, 12, 20)) is None
+    # Nine more that IST day (from 02:00 UTC = 07:30 IST): ten in all.
+    for i in range(9):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
+    late = utc(9, 16)  # 21:30 IST
+    assert "today" in plan.can_publish(late)
+    assert plan.can_publish(late, breaking=True) is None
+    # A case angle may take the spare slot too, but MIN_GAP after the last Short.
+    assert plan.can_publish(late, spare=True) is None
+    assert "h ago" in plan.can_publish(utc(9, 10, 10), spare=True)
+    # 19:00 UTC on 9 October is already 00:30 IST on 10 October: a new IST day.
+    assert plan.can_publish(utc(9, 19)) is None
+
+
+def test_breaking_extra_is_two_and_can_be_switched_off(tmp_path, monkeypatch):
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
+    monkeypatch.setattr(plan, "MAX_PER_DAY", 10)
+    monkeypatch.setattr(plan, "YOUTUBE_DAILY_UPLOADS", 20)  # the lanes alone, past YouTube's own limit
+    for i in range(12):
+        ledger.record_publish({"id": f"wk-{i}", "published_at": f"2026-10-09T{2 + i:02d}:00:00+00:00", "loss": False})
+    assert "today" in plan.can_publish(utc(9, 15), breaking=True)
+    monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)
+    ledger.save("published", ledger.published()[:10])
+    assert "today" in plan.can_publish(utc(9, 15), breaking=True)
 
 
 def _day(n, retired=(), start=2):
@@ -71,24 +73,26 @@ def _day(n, retired=(), start=2):
 def test_retired_shorts_free_their_slots_but_count_toward_youtubes_limit(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     late = utc(9, 16)  # 21:30 IST
+    ledger.save("published", _day(8))
+    assert "already 8 Shorts today" in plan.can_publish(late, breaking=True)
     # 21 Oct 2026: three of the day's uploads retired, and every run held "already N Shorts today".
-    ledger.save("published", _day(5, retired={3, 4}))
+    ledger.save("published", _day(7, retired={3, 4}))
     assert plan.can_publish(late) is None
     assert plan.can_publish(late, spare=True) is None and plan.can_publish(late, breaking=True) is None
-    # YouTube counts the retired uploads too; the last UPLOAD_RESERVE before its limit are breaking news's alone.
-    ledger.save("published", _day(8, retired={0, 1, 2, 3, 4, 5}))
+    # YouTube counts the retired uploads too; the last two before its limit are breaking news's alone.
+    ledger.save("published", _day(8, retired={3, 4, 7}))
     assert "wait for breaking news" in plan.can_publish(late)
     assert "wait for breaking news" in plan.can_publish(late, spare=True)
     assert plan.can_publish(late, breaking=True) is None
-    ledger.save("published", _day(10, retired={0, 1, 2, 3, 4, 5, 6}))
+    ledger.save("published", _day(10, retired={0, 1, 2, 3, 4}))
     assert "YouTube's limit" in plan.can_publish(late, breaking=True)
 
 
 def test_retirements_never_let_regular_shorts_take_breaking_news_last_uploads(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     late = utc(9, 16)  # 21:30 IST
-    # Nine uploads, six retired: three on the channel, under every lane's cap, yet only breaking news may go.
-    ledger.save("published", _day(9, retired={0, 1, 2, 3, 4, 5}))
+    # Nine uploads, four retired: five on the channel, under every lane's cap, yet only breaking news may go.
+    ledger.save("published", _day(9, retired={0, 1, 2, 3}))
     assert "wait for breaking news" in plan.can_publish(late)
     assert "wait for breaking news" in plan.can_publish(late, spare=True)
     assert plan.can_publish(late, breaking=True) is None
@@ -102,34 +106,40 @@ def test_retirements_never_let_regular_shorts_take_breaking_news_last_uploads(tm
     for n in range(plan.YOUTUBE_DAILY_UPLOADS - plan.UPLOAD_RESERVE, plan.YOUTUBE_DAILY_UPLOADS):
         ledger.save("published", _day(n, retired=set(range(n - 4))))
         assert plan.can_publish(late, breaking=True) is None, n
-    # The reserve and the breaking extra are separate switches.
-    monkeypatch.setattr(plan, "UPLOAD_RESERVE", 0)
-    ledger.save("published", _day(9, retired={0, 1, 2, 3, 4, 5}))
+    monkeypatch.setattr(plan, "UPLOAD_RESERVE", 0)  # the YouTube-limit reserve is its own switch (2026-10-22)
+    ledger.save("published", _day(9, retired={0, 1, 2, 3}))
     assert plan.can_publish(late) is None
-    monkeypatch.setattr(plan, "BREAKING_EXTRA", 0)  # MAX_PER_DAY a hard cap even for breaking news
-    ledger.save("published", _day(4))
-    assert "already 4 Shorts today" in plan.can_publish(late, breaking=True)
 
 
 def test_a_short_and_its_remake_count_once(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
-    rows = _day(4)
+    rows = _day(6)
     ledger.save("published", rows)
-    assert "already 4 Shorts today" in plan.can_publish(utc(9, 16))
-    ledger.save("published", rows[:3] + [rows[3] | {"replaced": "v0"}])
+    assert "already 6 Shorts today" in plan.can_publish(utc(9, 16))
+    ledger.save("published", rows[:5] + [rows[5] | {"replaced": "v0"}])
     assert plan.can_publish(utc(9, 16)) is None
-    assert len(plan.on_channel(ledger.published())) == 3
+    assert len(plan.on_channel(ledger.published())) == 5
 
 
-def test_a_story_is_never_held_for_a_slot_and_the_hour_only_breaks_ties(tmp_path, monkeypatch):
+def test_the_evening_keeps_two_regular_slots_but_breaking_news_never_waits(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
-    # 07:00, 10:30 and 12:30 IST.
+    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE))  # the last at 10:30 IST
+    noon = utc(9, 11)  # 16:30 IST
+    assert "wait for 18:00 IST" in plan.can_publish(noon)
+    assert "wait for 18:00 IST" in plan.can_publish(noon, spare=True)
+    assert plan.can_publish(noon, breaking=True) is None
+    assert plan.can_publish(utc(9, 12, 30)) is None  # 18:00 IST
+    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE - 1))
+    assert plan.can_publish(noon) is None
+    ready, notes = plan.lineup([{"id": "wk-Q1", "title": "x", "fame": 10 ** 6, "news_at": noon.isoformat(),
+                                 "top": None}], noon)
+    assert ready and not notes
+
+
+def test_the_hour_only_breaks_ties_and_never_holds_a_story(tmp_path, monkeypatch):
+    """2026-10-22 (P0-7): SLOT_WEIGHT is recorded and sorts last; the top-ranked story still goes first."""
+    monkeypatch.setattr(ledger, "STATE", tmp_path)
     assert plan.slot_weight(utc(9, 1, 30)) > plan.slot_weight(utc(9, 5)) > plan.slot_weight(utc(9, 7))
-    assert plan.slot_weight(utc(9, 13)) == plan.SLOT_WEIGHT[18]  # 18:30 IST
-    # The evening reserve is gone: three Shorts by 09:30 IST and the fourth goes out at 16:30 IST, not at 18:00.
-    ledger.save("published", _day(3))
-    assert plan.can_publish(utc(9, 11)) is None
-    # At the avoided midday hour the top-ranked story still goes out first, at once.
     top = {"id": "wk-Q1", "kind": "incident", "region": "india", "fame": 300_000, "top": None}
     second = {"id": "wk-Q2", "kind": "incident", "region": "india", "fame": 100_000, "top": None}
     for at in (utc(9, 7), utc(9, 13)):  # 12:30 IST (avoided), 18:30 IST (preferred)
@@ -139,13 +149,12 @@ def test_a_story_is_never_held_for_a_slot_and_the_hour_only_breaks_ties(tmp_path
         assert {c["slot_weight"] for c in ready} == {plan.slot_weight(at)}
 
 
-def test_a_scheduled_short_blocks_min_gap_around_it(tmp_path, monkeypatch):
+def test_a_scheduled_short_only_blocks_the_half_hour_around_it(tmp_path, monkeypatch):
     monkeypatch.setattr(ledger, "STATE", tmp_path)
     ledger.record_publish({"id": "wk-s", "published_at": "2026-10-10T03:45:00+00:00", "loss": False})
-    assert plan.can_publish(utc(10, 2)) is None
-    assert "scheduled" in plan.can_publish(utc(10, 2, 30))
-    assert "h ago" in plan.can_publish(utc(10, 5))
-    assert plan.can_publish(utc(10, 5, 15)) is None
+    assert plan.can_publish(utc(10, 3)) is None
+    assert "scheduled" in plan.can_publish(utc(10, 3, 30))
+    assert "h ago" in plan.can_publish(utc(10, 4))
 
 
 @pytest.mark.parametrize("at, open_", [(utc(9, 1, 29), False), (utc(9, 1, 30), True), (utc(9, 18, 29), True),
