@@ -399,20 +399,6 @@ def test_a_pronoun_or_a_sound_alike_never_gives_raut_another_persons_demand():
         assert gate.unattributed(line, names, reports), reports[0]["text"]
 
 
-@pytest.mark.parametrize("name, text", [
-    ("V. S. Achuthanandan", "VS Achuthanandan, Former Kerala Chief Minister, Dies At 101"),
-    ("V. S. Achuthanandan", "V.S. Achuthanandan died on Monday."),
-    ("V. S. Achuthanandan", "Former Kerala CM V. S. Achuthanandan passes away at 101. He was a founder of the CPI(M)."),
-    ("M. T. Vasudevan Nair", "M.T. Vasudevan Nair died at a private hospital in Kozhikode."),
-    ("M. T. Vasudevan Nair", "MT Vasudevan Nair dies at 91"),
-    ("एम॰ टी॰ वासुदेव नायर", "मशहूर लेखक एम. टी. वासुदेव नायर का निधन हो गया।"),
-])
-def test_a_death_reported_with_the_persons_initials_is_stated(name, text):
-    """2026-10-22 third review: the press writes a Wikidata name's initials its own way, and "V. " ended a
-    sentence."""
-    assert gate.states_death(text, [name]) and gate.denies_death(text, [name]) is None
-
-
 @pytest.mark.parametrize("names, text", [
     (["Mumtaz"], "Mumtaz death news: What her family said. Posts claiming that veteran actress Mumtaz died went viral "
                  "on social media on Monday. Her family had dismissed the reports as fake days ago."),
@@ -448,8 +434,13 @@ def test_a_denial_of_the_current_rumour_is_never_read_as_an_old_one(names, text)
     (["L. K. Advani"], "Kamla Advani, wife of BJP veteran L.K. Advani, died on Tuesday."),
     (["M. T. Vasudevan Nair", "एम॰ टी॰ वासुदेवन नायर"], "एम. टी. वासुदेवन नायर की पत्नी का निधन हो गया।"),
     (["Rahul Gandhi"], "Rahul Gandhi's mother Sonia Gandhi passes away."),
+    (["T. Rama Rao"], "Tributes paid to NTR. N. T. Rama Rao died on January 18, 1996, in Hyderabad."),
+    (["P. Chidambaram"], "Congress MP Karti P. Chidambaram passed away on Monday in Chennai."),
+    (["A. Raja"], "A raja of the erstwhile Travancore family died on Monday."),
+    (["B. Kumar"], "Plan B. Kumar died on Sunday, police said."),
 ])
 def test_another_persons_death_never_states_this_ones(names, text):
-    """2026-10-22 fourth review: initials are read only inside the person's own name, never as "U.S." or "था." or an
-    initial and a shared surname."""
+    """2026-10-22 fourth to sixth reviews: every way of reading a name's initials loosely ("U.S.", "था.", "A Shah",
+    "a Raja", "Ms. Dhoni", "N. T. Rama Rao" for T. Rama Rao) gave another person's death to this one, so a report
+    must write the name as Wikidata or its Hindi label does; and a relative's death is never the person's."""
     assert gate.states_death(text, names) is None

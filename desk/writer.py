@@ -1161,7 +1161,7 @@ def death_reports(cand: dict, reports: list[dict], name: str, name_hi: str | Non
         says = gate.states_death(text, names) if body else None
         if not says or gate.denies_death(text, names):
             return None
-        return outlets.compact(r) | {"name": gate.named_in(says, names) or name, "says": says}
+        return outlets.compact(r) | {"name": next(n for n in names if hindi.contains(says, n)), "says": says}
 
     found = [row for r in reports if (row := confirmed(r, r.get("text")))]
     if found:
