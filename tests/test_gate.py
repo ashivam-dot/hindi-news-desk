@@ -441,6 +441,13 @@ def test_a_denial_of_the_current_rumour_is_never_read_as_an_old_one(names, text)
     (["Satish Shah", "सतीश शाह"], "दिग्गज अभिनेता सतीश शाह को सोमवार को अस्पताल में भर्ती कराया गया था. उनकी पत्नी की "
                                   "मां का पिछले महीने निधन हुआ था."),
     (["Amit Shah"], "Ex-corporator passes away. Former Surat corporator A. Shah passed away on Tuesday."),
+    (["A. Raja"], "Thanjavur palace mourns. The death of a Raja of the old Maratha line was announced on Monday."),
+    (["MS Dhoni"], "Sakshi Dhoni's father passes away. Ms. Dhoni's father died on Monday, Sakshi said in a post."),
+    (["M. S. Swaminathan"], "Ms. Swaminathan died of a heart attack in Chennai."),
+    (["A. R. Rahman"], "AR Rahman's mother Kareema Begum passes away. She died in Chennai on Monday."),
+    (["L. K. Advani"], "Kamla Advani, wife of BJP veteran L.K. Advani, died on Tuesday."),
+    (["M. T. Vasudevan Nair", "एम॰ टी॰ वासुदेवन नायर"], "एम. टी. वासुदेवन नायर की पत्नी का निधन हो गया।"),
+    (["Rahul Gandhi"], "Rahul Gandhi's mother Sonia Gandhi passes away."),
 ])
 def test_another_persons_death_never_states_this_ones(names, text):
     """2026-10-22 fourth review: initials are read only inside the person's own name, never as "U.S." or "था." or an

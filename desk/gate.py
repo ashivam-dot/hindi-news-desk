@@ -123,6 +123,15 @@ def reported(needle: str, reports: list[dict]) -> list[str]:
 SENTENCE = re.compile(r"(?<=[.!?।])\s+|\n+")
 
 
+# A sentence about the person's relative never states their death: "AR Rahman's mother Kareema Begum passes away",
+# "Kamla Advani, wife of ... L.K. Advani, died", "... नायर की पत्नी का निधन" (the 2026-10-22 fifth review).
+_KIN = "mother|father|wife|husband|son|daughter|brother|sister|widow|grandmother|grandfather|uncle|aunt|nephew|niece|" \
+       "father-in-law|mother-in-law|son-in-law|daughter-in-law|brother-in-law|sister-in-law|grandson|granddaughter"
+_KIN_HI = "मां|माँ|माता|पिता|पत्नी|पति|बेटे|बेटा|बेटी|भाई|बहन|दादा|दादी|नाना|नानी|चाचा|चाची|मामा|मामी|ससुर|सास|बहू|दामाद|भतीजे|भतीजा|भतीजी|पोते|पोता|पोती"
+RELATIVE = re.compile(rf"['’]s\s+(?:late\s+|elder\s+|younger\s+|step-?)?(?:{_KIN})\b|\b(?:{_KIN})\s+of\b"
+                      rf"|(?:की|के|का)\s+(?:दिवंगत\s+)?(?:{_KIN_HI})(?![\u0900-\u097f])", re.I)
+
+
 def _initialed(name: str) -> re.Pattern | None:
     """How the press writes a name with initials ("V. S. Achuthanandan" as "V.S.", "VS" or "V S Achuthanandan";
     "वी. एस"), or None for a name without them. Only the whole name matches, never its initials or surname alone."""
@@ -131,11 +140,12 @@ def _initialed(name: str) -> re.Pattern | None:
                and bool(re.fullmatch(r"[\u0900-\u097f]{1,2}", w)) for w in words]
     if len(words) < 2 or not any(initial):
         return None
-    parts = [r"[\s.\u0970]*".join(map(re.escape, w)) if i and w.isascii() else re.escape(w)
-             for w, i in zip(words, initial)]
+    parts = [r"[\s.\u0970]*".join(map(re.escape, w)) if i and w.isascii() else
+             re.escape(w) if i else f"(?i:{re.escape(w)})" for w, i in zip(words, initial)]
     joined = parts[0] + "".join((r"[\s.\u0970]*" if a or b else r"\s+") + p
                                 for a, b, p in zip(initial, initial[1:], parts[1:]))
-    return re.compile(r"(?<![A-Za-z\u0900-\u097f])" + joined + r"(?![A-Za-z\u0900-\u097f])", re.I)
+    # Initials in capitals only: "a Raja" is not A. Raja, nor "Ms. Dhoni" MS Dhoni (the fifth review).
+    return re.compile(r"(?<![A-Za-z\u0900-\u097f])" + joined + r"(?![A-Za-z\u0900-\u097f])")
 
 
 def _as_named(text: str, names: list[str]) -> tuple[str, list[str]]:
@@ -145,8 +155,14 @@ def _as_named(text: str, names: list[str]) -> tuple[str, list[str]]:
     text = text or ""
     for n in names:
         if n and (pattern := _initialed(n)):
-            text = pattern.sub(lambda m: _undotted(n), text)
-    return text, [x for n in names if n for x in dict.fromkeys([n, _undotted(n)])]
+            text = pattern.sub(lambda m: _joined(n), text)
+    return text, [x for n in names if n for x in dict.fromkeys([n, _joined(n)])]
+
+
+def _joined(name: str) -> str:
+    """name with no space after its initials' dots ("V.S.Achuthanandan"): one word to SENTENCE, and never how
+    ordinary text reads, so "a Raja" never becomes A. Raja."""
+    return re.sub(r"([.\u0970])\s+", r"\1", name)
 
 
 def _undotted(name: str) -> str:
@@ -156,7 +172,12 @@ def _undotted(name: str) -> str:
 def named_in(sentence: str, names: list[str]) -> str | None:
     """How a sentence states_death returned gives the name: the first of names (or one without its initials' dots)
     it writes."""
-    return next((x for x in _as_named("", names)[1] if hindi.contains(sentence, x)), None)
+    for n in filter(None, names):
+        if hindi.contains(sentence, n):
+            return n
+        if _joined(n) != n and hindi.contains(sentence, _joined(n)):
+            return _undotted(n)
+    return None
 
 
 def states_death(text: str, names: list[str]) -> str | None:
@@ -165,7 +186,8 @@ def states_death(text: str, names: list[str]) -> str | None:
     says nothing."""
     text, names = _as_named(text, names)
     for s in SENTENCE.split(text):
-        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and not QUESTION.search(s) and any(n and hindi.contains(s, n) for n in names):
+        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and not QUESTION.search(s) and not RELATIVE.search(s) \
+                and any(n and hindi.contains(s, n) for n in names):
             return s.strip()
     return None
 
