@@ -348,7 +348,10 @@ def test_a_hindi_role_word_picks_the_actor_not_the_namesake(monkeypatch):
 def test_hindi_role_words_are_whole_words_before_the_name():
     assert explain.headline_role([], "Imran Khan", ["अभिनेता इमरान खान ने कोर्ट का रुख किया"]) == "actor"
     assert explain.headline_role([], "L Murugan", ["केंद्रीय मंत्री एल मुरुगन का इस्तीफा"]) == "minister"
-    assert explain.headline_role([], "Imran Khan", ["पूर्व प्रधानमंत्री इमरान खान जेल में"]) is None
+    assert explain.headline_role([], "Imran Khan", ["पूर्व प्रधानमंत्री इमरान खान जेल में"]) == "pm"
+    assert explain.headline_role([], "Imran Khan", ["पूर्व पीएम इमरान खान जेल में"]) == "pm"
+    assert explain.headline_role([], "Imran Khan", ["जेल में इमरान खान की तबीयत बिगड़ी"]) is None
+    assert explain.headline_role(["Former Pakistan PM Imran Khan moved to hospital"], "Imran Khan") == "pm"
     assert explain.headline_role([], "Imran Khan", ["अभिनेता सलमान खान ने इमरान खान का साथ दिया"]) is None
     assert explain.headline_role(["Actor Imran Khan gets notice"], "Imran Khan") == "actor"  # the English path
 
@@ -373,21 +376,53 @@ def _row(qid, article, days_ago, **more):
 def test_the_qid_the_channel_used_for_the_name_in_the_last_14_days_wins(monkeypatch):
     _stub_imran(monkeypatch)
     actor = _row("Q312781", "Imran Khan (actor)", 2)
-    again = explain.consistent_qid("Imran Khan", "Q155164", rows=[actor], now=NOW)
-    assert again[:2] == ("Imran Khan (actor)", "Q312781") and again[3]
-    assert explain.consistent_qid("Imran Khan", "Q312781", rows=[actor], now=NOW) is None  # already the same
-    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[_row("Q312781", "Imran Khan (actor)", 15)],
-                                  now=NOW) is None
-    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor | {"retired_at": NOW.isoformat()}],
-                                  now=NOW) is None
-    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor | {"headlines": ["Salman Khan film"],
-                                                                          "article": "Ready (film)"}], now=NOW) is None
+    notice = {"leave", "notice", "imran"}  # this story's own words (core_keys); the name's never count
+
+    def again(qid, rows, role=None, keys=notice):
+        return explain.consistent_qid("Imran Khan", qid, role, rows=rows, now=NOW, story_keys=keys)
+    assert again("Q155164", [actor])[:2] == ("Imran Khan (actor)", "Q312781") and again("Q155164", [actor])[3]
+    assert again("Q312781", [actor]) is None  # already the same
+    assert again("Q155164", [_row("Q312781", "Imran Khan (actor)", 15)]) is None
+    assert again("Q155164", [actor | {"retired_at": NOW.isoformat()}]) is None
+    assert again("Q155164", [actor | {"headlines": ["Salman Khan film"], "article": "Ready (film)"}]) is None
     # The wrong Short used the namesake once; the right one twice: most rows win.
     wrong = _row("Q155164", "Imran Khan", 1)
-    assert explain.consistent_qid("Imran Khan", "Q155164", rows=[actor, actor, wrong], now=NOW)[1] == "Q312781"
+    assert again("Q155164", [actor, actor, wrong])[1] == "Q312781"
+    # With no role, another story about the name is not this one: one shared word, or none, keeps the qid.
+    assert again("Q155164", [actor], keys={"jail", "sentence", "against"}) is None
+    assert again("Q155164", [actor], keys={"notice", "jail"}) is None
+    assert again("Q155164", [actor], keys=None) is None
     # Re-checked like resolve_as: headlines that call him a minister keep the minister.
-    assert explain.consistent_qid("Imran Khan", "Q155164", "minister", rows=[actor], now=NOW) is None
+    assert again("Q155164", [actor], "minister") is None
     from desk import ledger
     monkeypatch.setattr(ledger, "published", lambda: [actor])
     [c], notes = explain.find(IMRAN, NOW)
     assert c["qid"] == "Q312781" and any("as in the channel's recent Shorts" in n for n in notes)
+
+
+@pytest.mark.parametrize("titles", [
+    ["PTI founder Imran Khan moved to hospital from Adiala jail",
+     "Imran Khan shifted to hospital from Adiala jail, says PTI",
+     "PTI says founder Imran Khan in hospital after Adiala jail"],
+    ["Imran Khan moves high court against jail sentence", "High court to hear Imran Khan plea against jail sentence on "
+     "October 26", "Imran Khan challenges jail sentence in high court"],
+])
+def test_the_actor_short_never_takes_over_a_story_about_the_namesake(monkeypatch, titles):
+    # Both 2026-10-22 reviews: an actor row in the ledger turned Pakistan jail stories, whose headlines give no role,
+    # into the actor's (Q312781, region india). Only the same story keeps the earlier centre.
+    _stub_imran(monkeypatch)
+    from desk import ledger
+    monkeypatch.setattr(ledger, "published", lambda: [_row("Q312781", "Imran Khan (actor)", 2)])
+    items = [item(k, t, n + 1) for n, (k, t) in enumerate(zip(("ht", "thehindu", "ndtv"), titles))]
+    [c], notes = explain.find(items, NOW)
+    assert (c["qid"], c["region"]) == ("Q155164", "world")
+    assert not any("as in the channel's recent Shorts" in n for n in notes)
+
+
+def test_a_role_the_headlines_give_is_rechecked_even_on_the_same_story(monkeypatch):
+    # The notice story's own words, but a Hindi lead calls him the former PM: the actor is no PM.
+    _stub_imran(monkeypatch, hindi_lead="पूर्व पीएम इमरान खान को भारत छोड़ने का नोटिस")
+    from desk import ledger
+    monkeypatch.setattr(ledger, "published", lambda: [_row("Q312781", "Imran Khan (actor)", 2)])
+    [c], _ = explain.find(IMRAN, NOW)
+    assert c["qid"] == "Q155164"

@@ -337,13 +337,16 @@ ROLES = {"actor": ("actor", "actress"), "actress": ("actress", "actor"), "singer
          "cricketer": ("cricketer",), "footballer": ("footballer", "football"), "director": ("director", "filmmaker"),
          "filmmaker": ("filmmaker", "director"), "activist": ("activist",), "journalist": ("journalist",),
          "businessman": ("businessman", "businessperson", "industrialist", "entrepreneur"),
-         "minister": ("minister", "politician"), "politician": ("politician", "minister")}
+         "minister": ("minister", "politician"), "politician": ("politician", "minister"),
+         "pm": ("minister", "politician")}
 _ROLE = "|".join(ROLES)
-# The same roles in Hindi headlines, whole words only (मंत्री is never प्रधानमंत्री or मुख्यमंत्री): dNGHjXMe1ng
-# (2026-10-21) said "अभिनेता इमरान खान" while no English headline said "actor", and was told with Pakistan's former
-# prime minister's photos (Q155164, not the actor Q312781).
+# The same roles in Hindi headlines, whole words only (मंत्री is never read inside प्रधानमंत्री or मुख्यमंत्री, which
+# are listed as words of their own): dNGHjXMe1ng (2026-10-21) said "अभिनेता इमरान खान" while no English headline said
+# "actor", and was told with Pakistan's former prime minister's photos (Q155164, not the actor Q312781). "पूर्व पीएम
+# इमरान खान" is the other one, and says so.
 HINDI_ROLES = {"अभिनेता": "actor", "अभिनेत्री": "actress", "एक्टर": "actor", "एक्ट्रेस": "actress", "गायक": "singer",
-               "गायिका": "singer", "क्रिकेटर": "cricketer", "मंत्री": "minister"}
+               "गायिका": "singer", "क्रिकेटर": "cricketer", "मंत्री": "minister", "प्रधानमंत्री": "pm", "पीएम": "pm",
+               "मुख्यमंत्री": "minister"}
 _HINDI_ROLE = re.compile(r"(?<![\wऀ-ॿ])(" + "|".join(HINDI_ROLES) + r")(?![\wऀ-ॿ])")
 
 
@@ -388,19 +391,24 @@ def resolve_as(name: str, key: str, role: str) -> tuple[str, str, dict, bool] | 
 
 
 SAME_NAME_DAYS = 14
+SAME_STORY_WORDS = 2
 
 
 def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict] | None = None,
-                   now: datetime | None = None) -> tuple[str, str, dict, bool] | None:
+                   now: datetime | None = None,
+                   story_keys: set[str] | None = None) -> tuple[str, str, dict, bool] | None:
     """The centre the channel's Shorts of the last SAME_NAME_DAYS gave the same name, when it is not qid: one name,
     one person across a story (xaj3hgwcaF8 showed actor Imran Khan on his notice; dNGHjXMe1ng then told it with
     Q155164, Pakistan's former prime minister). Rows whose headlines or article name the name count, retired ones never; the qid most of them used
     wins (the latest on a tie), and only if it still passes resolve_as's checks: a centre item, fitting the role
-    the headlines give. None keeps qid."""
+    the headlines give. With no role, a row counts only when it is this story: its headlines share SAME_STORY_WORDS
+    of story_keys besides the name (a Pakistan jail story is not the actor's notice, whatever the channel told last
+    week). None keeps qid."""
     from . import ledger
 
     now = now or datetime.now(timezone.utc)
     pattern = re.compile(r"\b" + re.escape(name) + r"\b", re.I)
+    own = {k for k in story_keys or set() if not _generic(k)} - {w.lower() for w in name.split()}
     used, last = Counter(), {}
     for i, r in enumerate(ledger.published() if rows is None else rows):
         try:
@@ -410,7 +418,10 @@ def consistent_qid(name: str, qid: str, role: str | None = None, rows: list[dict
             continue
         if not r.get("qid") or not r.get("article") or r.get("retired_at") or now - at > timedelta(days=SAME_NAME_DAYS):
             continue
-        if any(pattern.search(t) for t in [r["article"]] + list(r.get("headlines") or [])):
+        heads = list(r.get("headlines") or [])
+        if not any(pattern.search(t) for t in [r["article"]] + heads):
+            continue
+        if role or any(len(own & keys(h)[0]) >= SAME_STORY_WORDS for h in heads):
             used[r["qid"]] += 1
             last[r["qid"]] = (i, r["article"])
     if not used:
@@ -511,7 +522,7 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
                     found = resolve_as(name, key, role)
                     if not found:
                         notes.append(f"explainer {name}: Wikipedia's {name} is not the {role} the headlines name")
-                if found and (again := consistent_qid(name, found[1], role, now=now)):
+                if found and (again := consistent_qid(name, found[1], role, now=now, story_keys=core_keys(c))):
                     notes.append(f"explainer {name}: {again[1]} as in the channel's recent Shorts, not {found[1]}")
                     found = again
             except Exception as exc:
