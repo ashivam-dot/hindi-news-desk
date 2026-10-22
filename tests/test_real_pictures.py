@@ -9,6 +9,7 @@ import pytest
 
 from desk import cli, config, gate, hindi, match, things, visuals, wiki, writer
 
+from .test_explain import NOW as NOW_
 from .test_match import short
 
 CAP = "39725154704"
@@ -335,3 +336,30 @@ def test_both_leaders_shows_the_pair_and_never_a_third_face():
     again = match.plan(alone, photos, match.cast_of(s), subject, s.kind, match.spellings_of(s), True,
                        s.scene["names"])
     assert again[1]["plate"] == match.CARD and again[2]["plate"] == match.CARD
+
+
+def test_a_bare_surname_that_is_a_word_is_retried_as_the_headlines_full_name(monkeypatch):
+    """Dry run 39827813691 (2026-10-22): most headlines wrote "Tusk", whose article is the tooth (खाँग, Q185635), so
+    Donald Tusk's Delhi visit went out as "खाँग: क्या हुआ और क्यों" with walrus tusks in its pool."""
+    from desk import explain, news
+
+    from .test_said_is_shown import item
+
+    items = {"Tusk": ("Q185635", {"labels": {"en": {"value": "tusk"}, "hi": {"value": "खाँग"}},
+                                  "descriptions": {"en": {"value": "elongated tooth"}}, "claims": {}}),
+             "Donald Tusk": ("Q946", {"labels": {"en": {"value": "Donald Tusk"}, "hi": {"value": "डोनाल्ड टस्क"}},
+                                      "claims": {"P31": [claim({"id": wiki.HUMAN})]}})}
+    monkeypatch.setattr(wiki, "search", lambda q, lang="en": "Donald Tusk" if q.startswith("Donald") else "Tusk")
+    monkeypatch.setattr(wiki, "page_info", lambda titles: {t: {"title": t, "qid": items[t][0]} for t in titles
+                                                           if t in items})
+    by_qid = {q: e for q, e in items.values()}
+    monkeypatch.setattr(wiki, "entities", lambda qids: {q: by_qid[q] for q in qids if q in by_qid})
+    monkeypatch.setattr(news, "headlines", lambda feed, now=None: [])
+    rows = [item("news18", "Tusk in Delhi: Poland's PM meets Modi on trade and defence", 3),
+            item("ht", "Tusk, Modi agree to deepen defence and trade ties in Delhi", 2),
+            item("ndtv", "Tusk and Modi hold talks on trade and defence in Delhi", 1),
+            item("thehindu", "Polish PM Donald Tusk meets Modi in Delhi, trade and defence on agenda", 2)]
+    assert explain.full_name([r["title"] for r in rows], "tusk") == "Donald Tusk"
+    cands, notes = explain.find(rows, NOW_)
+    assert all(c["qid"] != "Q185635" for c in cands), notes
+    assert any(c["qid"] == "Q946" for c in cands) or any("Donald Tusk" in n for n in notes), (cands, notes)
