@@ -8,8 +8,9 @@ Timing is the channel: a story goes out while people are looking at it, not hour
 News lead stories in English and Hindi, Google Trends traffic, Wikipedia views) decayed by age, times the India boost,
 so a fresh story beats a bigger stale one, times its place in Google News India's top stories (desk/top.py); a story
 in none of those lists, not searched in India, not breaking and not very famous (an explainer's fame only counts
-headlines, so it never counts as famous) is dropped (unpopular), and so is a world explainer the Hindi lists do not
-carry (White House, Pope and Starlink statements drew 0-35 views). A story Google News India leads with gets
+headlines, so it never counts as famous) is dropped (unpopular), and so is a world statement, politics or diplomacy
+story with no India connection (foreign_only; White House, Pope and Starlink statements drew 0-35 views), while world
+deaths, air incidents, storms and disasters are still told. A story Google News India leads with gets
 follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
@@ -112,6 +113,13 @@ AD_FRIENDLY_WORDS = re.compile(
     r"नियम(?!ित)|मेट्रो|हाईवे|एक्सप्रेसवे|एयरपोर्ट|इसरो|अंतरिक्ष|सैटेलाइट|विज्ञान|(?<!दिल का )दौर(ा(?!न)|े)(?! पड़)|"
     r"(विदेश|राजकीय|आधिकारिक) यात्रा|(शांति|द्विपक्षीय|सीमा) (वार्ता|बातचीत)|समझौत|शिखर सम्मेलन|टैरिफ|व्यापार|"
     r"जीडीपी|अर्थव्यवस्था|सेंसेक्स|इंटरनेट|परियोजना)", re.I)
+# A story from abroad with no India connection (orbitwire.india_connection) is not told when it is a statement (an
+# explainer: what a named person or institution abroad said or did), politics or diplomacy: foreign statements drew
+# a median of 16 views, White House, Pope and Starlink statements 0-35. World deaths, air incidents, storms and
+# disasters drew 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane
+# Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible.
+WORLD_SKIPPED = ("politics", "diplomacy", "world")
+WORLD_KEPT = ("death", "aviation", "cyclone", "disaster", "earthquake", "flood", "accident", "rail", "weather")
 # The day's biggest stories may be told in parts: a follow-up when the story is still this high, with reporting
 # from at least two owners that no earlier part used, SERIES_GAP after the last part, up to SERIES_PARTS in all.
 # Off 2026-10-18 (every part 2 drew 4-8 views while its first part drew 16-95); back on 2026-10-20 for outlet
@@ -339,6 +347,8 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     is not judged."""
     from . import explain
 
+    if foreign_only(cand):
+        return "a world statement, politics or diplomacy story with no India connection"
     if cand.get("top") is None:
         return None
     place = cand.get("top_score") or 0
@@ -351,15 +361,22 @@ def unpopular(cand: dict, at: datetime) -> str | None:
         return None
     if place <= 0:
         return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
-    if cand.get("kind") == "explainer" and cand.get("region") != "india" \
-            and not any(feed in news.HINDI_FEEDS for feed in cand["top"]):
-        return "a world story Hindi newsrooms do not lead with (not in Google News India's Hindi top stories)"
     if place < MIN_PLACE:
         return f"too low in Google News India's top stories (place {place:.2f}, needs {MIN_PLACE})"
     if demand(cand) < LOW_DEMAND and place < LOW_DEMAND_PLACE:
         return (f"a {cand.get('category') or cand.get('kind')} story goes out only near the top of the lists "
                 f"(place {place:.2f}, needs {LOW_DEMAND_PLACE})")
     return None
+
+
+def foreign_only(cand: dict) -> bool:
+    """A statement, politics or diplomacy story from abroad with no India connection (see WORLD_SKIPPED). A death,
+    an air incident, a storm or a disaster (WORLD_KEPT), a case's angle and a story of no known region never is one."""
+    if cand.get("region") != "world" or cand.get("case") or cand.get("kind") == "death" or cand.get("category") in WORLD_KEPT:
+        return False
+    if cand.get("kind") != "explainer" and cand.get("category") not in WORLD_SKIPPED:
+        return False
+    return not orbitwire.india_connection(cand)
 
 
 SUFFIX = re.compile(r"-[pr]\d+$")
