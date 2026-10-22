@@ -7326,6 +7326,12 @@
      "views": 0,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 1.35,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "incident",
@@ -7333,6 +7339,25 @@
    "region": "india",
    "lane": null,
    "audience": null,
+   "views_6h": null,
+   "views_24h": null
+  },
+  "I6glA-cTzns": {
+   "id": "kh-20261022-Q324546",
+   "published_at": "2026-10-22T03:10:32+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.45,
+     "views": 2,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "explainer",
+   "category": "news",
+   "region": "world",
+   "lane": "naam-niyam",
+   "audience": "india",
    "views_6h": null,
    "views_24h": null
   }

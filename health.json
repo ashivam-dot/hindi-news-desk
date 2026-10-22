@@ -1,30 +1,29 @@
 {
- "at": "2026-10-22T02:58:39+00:00",
+ "at": "2026-10-22T03:37:34+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "review: state/REVIEW.md for 2026-10-22, 67 scored Shorts, 9 groups judged",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 14 trending",
-  "outlets: 1232 headlines from 31 feeds (19 owners), 12 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
-  "explainers: 7 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q1209093, kh-20261022-Q1340361, kh-20261022-Q1445; dropped: explainer Beijing: fewer than 3 owners' headlines name it and the story; explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "watch: 9 candidates from 12 trending",
+  "outlets: 1248 headlines from 31 feeds (19 owners), 9 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261022-Q1445, kh-20261022-Q79883, kh-20261022-Q1209093, kh-20261022-Q1340361; dropped: explainer Beijing: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261022-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261022-Q1209093: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261022-Q79883: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261022-Q51993: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261022-Q6109517: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q2138120: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261019-tiger-shroff-attack-hurt; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261022-Q324546",
-  "skip nw-20261019-tiger-shroff-attack-hurt: gate: only 1 of 4 photos on screen are new to the last 96 hours of Shorts (want 2)",
-  "published kh-20261022-Q324546: https://www.youtube.com/shorts/I6glA-cTzns",
-  "channel: about: done; playlists: 0 made, 0 Shorts added, 0 sections, 0 Shorts left; unit cap reached (600 a run, 1500 a day); the rest goes on next run (2 units this run, 1466 today)"
+  "drop wk-Q3424313: 112 h old and no longer trending live",
+  "drop wk-Q19729623: 88 h old and no longer trending live",
+  "skip kh-20261022-Q1445: gate: no draft passed the fact checks: write Tirunelveli as तिरूनेलवेली (the Hindi name people know), not तीरूनेलवेली",
+  "skip kh-20261022-Q3417395: gate: only 2 of 5 photos on screen are new to the last 96 hours of Shorts (want 3)",
+  "published kh-20261022-Q79883: https://www.youtube.com/shorts/mT_oesTc-4s",
+  "channel: about: done; playlists: 0 made, 0 Shorts added, 0 sections, 0 Shorts left; unit cap reached (600 a run, 1500 a day); the rest goes on next run (2 units this run, 1468 today)"
  ],
  "published": {
-  "video_id": "I6glA-cTzns",
-  "url": "https://www.youtube.com/shorts/I6glA-cTzns",
-  "youtube_title": "मार्को रुबियो जामनगर में रिलायंस रिफाइनरी पहुंचे #shorts #marcorubio",
+  "video_id": "mT_oesTc-4s",
+  "url": "https://www.youtube.com/shorts/mT_oesTc-4s",
+  "youtube_title": "होरमुज़ जलसन्धि में कुवैत के टैंकर पर अज्ञात हमला #shorts #straitofhormuz",
   "privacy": "public",
   "synthetic_declared": true
  }

@@ -1,145 +1,218 @@
 {
- "at": "2026-10-22T02:58:41+00:00",
+ "at": "2026-10-22T03:37:35+00:00",
  "trending": [
   {
-   "id": "kh-20261022-Q324546",
-   "qid": "Q324546",
-   "title": "Marco Rubio",
-   "name": "Marco Rubio",
-   "phrase": "Rubio",
-   "person": true,
+   "id": "kh-20261022-Q1445",
+   "qid": "Q1445",
+   "title": "Tamil Nadu",
+   "name": "Tamil Nadu",
+   "phrase": "Tamil Nadu",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
    "story_keys": [
-    "energy",
-    "meet",
-    "refinery",
-    "ties",
-    "visit"
+    "alert",
+    "district",
+    "heavy",
+    "weather"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:14:00+00:00",
+   "news_at": "2026-10-22T03:10:47+00:00",
    "owners": [
-    "India Today Group",
-    "The Hindu Group",
     "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18"
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-    "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-    "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties"
+    "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
+    "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
+    "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
+    "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
+    "Tamil Nadu weather: Rain alert till October 26",
+    "Schools closed in five Tamil Nadu districts after overnight rain"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "तमिल नाडु",
+   "reports": [
+    {
+     "title": "Schools closed in five Tamil Nadu districts after overnight rain",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/schools-closed-in-five-tamil-nadu-districts-after-overnight-rain/article71609927.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T03:10:47+00:00"
+    },
+    {
+     "title": "Tamil Nadu weather: Rain alert till October 26",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/chennai-flash-flood-risk-more-school-holidays-waterlogging-and-heavy-rain-what-imds-latest-warning-means-for-tamil-nadu-till-october-26/articleshow/135104185.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T02:08:41+00:00"
+    },
+    {
+     "title": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
+     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-rains-today-school-holiday-in-chennai-weather-rain-temperature-imd-alert-101792633115022.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T01:57:33+00:00"
+    },
+    {
+     "title": "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/northeast-monsoon-2026-gathers-momentum-in-tamil-nadu-unleashes-another-round-of-downpours-over-chennai/article71606476.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T18:13:24+00:00"
+    },
+    {
+     "title": "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/heavy-rain-in-tirupati-as-low-pressure-area-forms-off-tamil-nadu-coast/article71608383.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T16:57:55+00:00"
+    },
+    {
+     "title": "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
+     "url": "https://www.hindustantimes.com/india-news/school-holiday-chennai-rains-tamil-nadu-districts-imd-forecast-latest-chennai-news-101792553117097.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T04:46:57+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Tamil Nadu rain updates: Warning to residents along Palar river"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-nation": 16
+   },
+   "top_score": 0.925,
+   "top_headlines": [
+    "Tiger Shroff Firing Case: Mumbai Court Remands Accused To Police Custody Till October 31",
+    "Heavy rain likely in Kerala till October 27; orange alert in 5 districts"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261022-Q79883",
+   "qid": "Q79883",
+   "title": "Strait of Hormuz",
+   "name": "Strait of Hormuz",
+   "phrase": "Hormuz",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+   "story_keys": [
+    "hit",
+    "kuwait-flagged",
+    "seafarer",
+    "strait",
+    "tanker"
+   ],
+   "date": "2026-10-21",
+   "news_at": "2026-10-22T02:13:13+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": null,
+   "label_hi": "होरमुज़ जलसन्धि",
    "reports": [
     {
-     "title": "Energy ties in focus as Ambani hosts Marco Rubio at Jamnagar",
-     "url": "https://www.hindustantimes.com/india-news/energy-ties-in-focus-as-ambani-hosts-marco-rubio-at-jamnagar-101792609260773.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-22T02:14:00+00:00"
+     "at": "2026-10-21T05:00:02+00:00"
     },
     {
-     "title": "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties",
-     "url": "https://www.news18.com/world/at-reliances-jamnagar-refinery-marco-rubio-pushes-for-deeper-us-india-energy-ties-ws-l-10392063.html",
+     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T01:01:43+00:00"
+     "at": "2026-10-22T02:13:13+00:00"
     },
     {
-     "title": "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-     "url": "https://timesofindia.indiatimes.com/india/at-jamnagar-refinery-rubio-and-ambanis-discuss-energy-digital-infra-giga-factories/articleshow/135100415.cms",
+     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T20:54:31+00:00"
-    },
-    {
-     "title": "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-     "url": "https://www.thehindu.com/business/Industry/discussed-opportunities-for-partnerships-in-conventional-new-energy-ril-on-rubio-visit/article71608874.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:19:57+00:00"
-    },
-    {
-     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T17:16:15+00:00"
-    },
-    {
-     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:46:17+00:00"
-    },
-    {
-     "title": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-     "url": "https://www.indiatoday.in/business/story/marco-rubio-reliance-jamnagar-refinery-mukesh-ambani-us-india-energy-ties-sergio-gor-3022095-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T13:08:38+00:00"
+     "at": "2026-10-22T02:10:23+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
+    "outlet:Guardian Media Group",
     "outlet:Network18",
-    "google-news:Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "google-news:Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling",
-    "google-news:At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories"
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 6
+    "IN": 13
    },
-   "top_score": 1.175,
+   "top_score": 0.4,
    "top_headlines": [
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
-    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "other"
   },
   {
    "id": "kh-20261022-Q1209093",
@@ -162,7 +235,7 @@
     "winning"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:59:04.944222+00:00",
+   "news_at": "2026-10-22T03:38:09.006312+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -195,7 +268,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Ravi Kartik Budigina on winning Silver at the Asian Para Games",
@@ -205,7 +278,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Himanshu Nandal on winning Bronze at the Asian Para Games",
@@ -215,7 +288,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Pranav Desai on winning Bronze at the Asian Para Games",
@@ -225,7 +298,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Rohit Kumar on winning Bronze at the Asian Para Games",
@@ -235,7 +308,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Simran on winning Gold at the Asian Para Games",
@@ -245,7 +318,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Karamjyoti on winning Bronze at the Asian Para Games",
@@ -255,7 +328,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Sukhchain on winning Bronze at the Asian Para Games",
@@ -265,161 +338,20 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     }
    ],
    "via": [
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Government of India",
-    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Suvarna Raj Clinches Top Podium Spot To Earn India's 15th Gold Medal"
+    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Sheetal Devi Eyes Top Podium Spot, India's Gold Medal Tally Swells To 15"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q141745391",
-   "title": "2026 Silver Rail Elementary School shooting",
-   "fame": 133035,
-   "views": 8035,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-21T21:26:00+00:00",
-   "headlines": [
-    "Teacher who survived Oregon school shooting recounts being shot, pretending to be dead to survive"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-21",
-    "google-news:Teacher who survived Oregon school shooting recounts being shot, pretending to be dead to survive"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141745391",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-15",
-   "coords": [
-    44.03444444,
-    -121.29527778
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "nw-20261021-jantar-mantar-protest",
-   "qid": null,
-   "title": "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23",
-   "name": "Jantar Mantar",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-21",
-   "news_at": "2026-10-21T18:22:58+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Har gali mein Jantar Mantar: Parakala Prabhakar to join Dipke at anti-SIR protest",
-    "CJP leaders Das, Ranka released from Tihar, vow no more Jantar Mantar protests",
-    "'Har Gali Me Jantar Mantar': Nirmala Sitharaman's Husband To Join CJP In Anti-CEC Protest",
-    "Rs 50k bond, no Jantar Mantar protests: What are the conditions of CJP leaders' release?",
-    "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23",
-     "url": "https://www.thehindu.com/news/cities/Delhi/economist-prabhakar-to-join-dipke-prakash-raj-neha-at-nationwide-anti-sir-protests-on-october-23/article71608796.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:22:58+00:00"
-    },
-    {
-     "title": "Rs 50k bond, no Jantar Mantar protests: What are the conditions of CJP leaders' release?",
-     "url": "https://timesofindia.indiatimes.com/india/rs-50k-bond-no-jantar-mantar-protest-call-what-are-the-conditions-of-cjp-leaders-release/articleshow/135095991.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T15:55:28+00:00"
-    },
-    {
-     "title": "'Har Gali Me Jantar Mantar': Nirmala Sitharaman's Husband To Join CJP In Anti-CEC Protest",
-     "url": "https://www.news18.com/india/har-gali-me-jantar-mantar-nirmala-sitharamans-husband-to-join-cjp-in-anti-cec-protest-10391726.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T13:51:30+00:00"
-    },
-    {
-     "title": "CJP leaders Das, Ranka released from Tihar, vow no more Jantar Mantar protests",
-     "url": "https://www.indiatoday.in/india/story/delhi-court-releases-cjp-co-convenors-saurav-das-and-ashutosh-ranka-after-days-in-judicial-custody-3022127-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T13:03:45+00:00"
-    },
-    {
-     "title": "Har gali mein Jantar Mantar: Parakala Prabhakar to join Dipke at anti-SIR protest",
-     "url": "https://www.indiatoday.in/india/story/parakala-prabhakar-sir-protest-cjp-abhijeet-dipke-prakash-raj-3022077-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T12:38:04+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 9,
-    "IN-nation": 5
-   },
-   "top_score": 0.84,
-   "top_headlines": [
-    "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23"
-   ]
   },
   {
    "id": "kh-20261022-Q1340361",
@@ -531,212 +463,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261022-Q1445",
-   "qid": "Q1445",
-   "title": "Tamil Nadu",
-   "name": "Tamil Nadu",
-   "phrase": "Tamil Nadu",
-   "person": false,
-   "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-   "story_keys": [
-    "alert",
-    "district",
-    "heavy",
-    "weather"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:43:15+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-    "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
-    "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
-    "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
-    "Tamil Nadu weather: Rain alert till October 26",
-    "Schools closed in five Tamil Nadu districts after overnight rain"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तमिल नाडु",
-   "reports": [
-    {
-     "title": "Schools closed in five Tamil Nadu districts after overnight rain",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/schools-closed-in-five-tamil-nadu-districts-after-overnight-rain/article71609927.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:43:15+00:00"
-    },
-    {
-     "title": "Tamil Nadu weather: Rain alert till October 26",
-     "url": "https://economictimes.indiatimes.com/news/new-updates/chennai-flash-flood-risk-more-school-holidays-waterlogging-and-heavy-rain-what-imds-latest-warning-means-for-tamil-nadu-till-october-26/articleshow/135104185.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:08:41+00:00"
-    },
-    {
-     "title": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-rains-today-school-holiday-in-chennai-weather-rain-temperature-imd-alert-101792633115022.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T01:57:33+00:00"
-    },
-    {
-     "title": "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/northeast-monsoon-2026-gathers-momentum-in-tamil-nadu-unleashes-another-round-of-downpours-over-chennai/article71606476.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:13:24+00:00"
-    },
-    {
-     "title": "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/heavy-rain-in-tirupati-as-low-pressure-area-forms-off-tamil-nadu-coast/article71608383.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:57:55+00:00"
-    },
-    {
-     "title": "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
-     "url": "https://www.hindustantimes.com/india-news/school-holiday-chennai-rains-tamil-nadu-districts-imd-forecast-latest-chennai-news-101792553117097.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T04:46:57+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "Tiger Shroff Firing Case: Mumbai Court Remands Accused To Police Custody Till October 31",
-    "Schools In Chennai, Nearby Districts Closed Due To Heavy Rain, Flood Risks",
-    "Heavy rain likely in Kerala till October 27; orange alert in 5 districts"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261022-Q79883",
-   "qid": "Q79883",
-   "title": "Strait of Hormuz",
-   "name": "Strait of Hormuz",
-   "phrase": "Hormuz",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-   "story_keys": [
-    "hit",
-    "kuwait-flagged",
-    "seafarer",
-    "strait",
-    "tanker"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:13:13+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "होरमुज़ जलसन्धि",
-   "reports": [
-    {
-     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-21T05:00:02+00:00"
-    },
-    {
-     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:13:13+00:00"
-    },
-    {
-     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
-     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:10:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261022-Q51993",
    "qid": "Q51993",
    "title": "Ebola",
@@ -820,86 +546,106 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261022-Q6109517",
-   "qid": "Q6109517",
-   "title": "Pope Leo XIV",
-   "name": "Leo XIV",
-   "phrase": "Pope Leo",
-   "person": true,
+   "id": "kh-20261022-Q3417395",
+   "qid": "Q3417395",
+   "title": "Jamnagar refinery",
+   "name": "Jamnagar Refinery",
+   "phrase": "Reliance’s Jamnagar",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
    "story_keys": [
-    "cancer",
-    "further",
-    "need",
-    "pope",
-    "treatment"
+    "marco",
+    "meet",
+    "news",
+    "refinery",
+    "rubio",
+    "secretary"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-21T23:47:00+00:00",
+   "news_at": "2026-10-22T03:23:00+00:00",
    "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "Deutsche Welle"
+    "The Hindu Group",
+    "HT Media",
+    "Network18"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-    "Pope Leo needs no further treatment after cancer surgery, doctors say",
-    "Pope Leo will not need further cancer treatment — Vatican"
+    "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+    "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "चौदहवें पोप लियो",
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जामनगर तेल शोधनागार",
    "reports": [
     {
-     "title": "Pope Leo will not need further cancer treatment — Vatican",
-     "url": "https://www.dw.com/en/pope-leo-will-not-need-further-cancer-treatment-vatican/a-79727154?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
+     "title": "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News",
+     "url": "https://www.news18.com/videos/india/marco-rubio-at-reliance-jamnagar-us-praises-india-s-oil-refining-power-u-s-india-news-10392198.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T23:47:00+00:00"
+     "at": "2026-10-22T03:23:00+00:00"
     },
     {
-     "title": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-     "url": "https://www.france24.com/en/europe/20261021-pope-leo-doctors-treatment-lung-cancer",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+     "url": "https://www.news18.com/videos/india/ril-hosts-us-secretary-of-state-marco-rubio-at-reliance-s-jamnagar-complex-issues-statement-news18-10391979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T21:41:19+00:00"
+     "at": "2026-10-21T17:24:20+00:00"
     },
     {
-     "title": "Pope Leo needs no further treatment after cancer surgery, doctors say",
-     "url": "https://www.aljazeera.com/news/2026/10/21/pope-leo-needs-no-further-treatment-after-cancer-surgery-doctors-say?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T23:20:58+00:00"
+     "at": "2026-10-21T17:16:15+00:00"
+    },
+    {
+     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T16:46:17+00:00"
     }
    ],
    "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle"
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Network18"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
+   "top": {
+    "IN": 12,
+    "IN-nation": 2
+   },
+   "top_score": 0.795,
+   "top_headlines": [
+    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
+    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
+   ],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -954,13 +700,9 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-13",
-   "top": {
-    "IN-nation": 17
-   },
-   "top_score": 0.12,
-   "top_headlines": [
-    "Punjab activist Jhota's kin refuse to cremate him; Amit Shah vows ‘drug-free’ state after meeting family | India News"
-   ]
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   },
   {
    "qid": "Q1889124",
@@ -1079,459 +821,42 @@
    "top_headlines": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q141745391",
+   "title": "2026 Silver Rail Elementary School shooting",
+   "fame": 8035,
+   "views": 8035,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-21"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141745391",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-15",
+   "coords": [
+    44.03444444,
+    -121.29527778
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": []
   }
  ],
  "candidates": [
-  {
-   "id": "kh-20261022-Q324546",
-   "qid": "Q324546",
-   "title": "Marco Rubio",
-   "name": "Marco Rubio",
-   "phrase": "Rubio",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-   "story_keys": [
-    "energy",
-    "meet",
-    "refinery",
-    "ties",
-    "visit"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:14:00+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-    "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-    "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Energy ties in focus as Ambani hosts Marco Rubio at Jamnagar",
-     "url": "https://www.hindustantimes.com/india-news/energy-ties-in-focus-as-ambani-hosts-marco-rubio-at-jamnagar-101792609260773.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:14:00+00:00"
-    },
-    {
-     "title": "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties",
-     "url": "https://www.news18.com/world/at-reliances-jamnagar-refinery-marco-rubio-pushes-for-deeper-us-india-energy-ties-ws-l-10392063.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T01:01:43+00:00"
-    },
-    {
-     "title": "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-     "url": "https://timesofindia.indiatimes.com/india/at-jamnagar-refinery-rubio-and-ambanis-discuss-energy-digital-infra-giga-factories/articleshow/135100415.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T20:54:31+00:00"
-    },
-    {
-     "title": "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-     "url": "https://www.thehindu.com/business/Industry/discussed-opportunities-for-partnerships-in-conventional-new-energy-ril-on-rubio-visit/article71608874.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:19:57+00:00"
-    },
-    {
-     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T17:16:15+00:00"
-    },
-    {
-     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:46:17+00:00"
-    },
-    {
-     "title": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-     "url": "https://www.indiatoday.in/business/story/marco-rubio-reliance-jamnagar-refinery-mukesh-ambani-us-india-energy-ties-sergio-gor-3022095-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T13:08:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "google-news:Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "google-news:Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling",
-    "google-news:At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories"
-   ],
-   "top": {
-    "IN": 2,
-    "IN-nation": 6
-   },
-   "top_score": 1.175,
-   "top_headlines": [
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
-    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "nw-20261019-tiger-shroff-attack-hurt",
-   "qid": null,
-   "title": "Bollywood actor Tiger Shroff survives shooting attempt in Mumbai",
-   "name": "Tiger Shroff",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-19",
-   "news_at": "2026-10-20T08:57:34+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff Firing, A Screenshot And A Threat: How Lawrence Bishnoi Gang Plays The Social Media Game",
-    "First Image Of Accused In Tiger Shroff Firing Incident Surfaces, CCTV Footage Under Probe",
-    "First Visuals Of Tiger Shroff With Bandage Emerge After Juhu Firing, Cops Recover Bike Used In Attack",
-    "Tiger Shroff Shooting: From Fan Interaction To Firing, 4 Videos Piece Together Mumbai Attack",
-    "'Perpetrators Operating From Outside Maharashtra, India': Fadnavis Vows Strict Action In Tiger Shroff Shooting Case"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 4,
-    "IN-nation": 2
-   },
-   "top_score": 1.135,
-   "top_headlines": [
-    "Tiger Shroff attack: Mumbai Police team leaves Kota with three alleged assailants",
-    "How A Cab Driver's Phone Call Helped Cops Trace Tiger Shroff Attack Suspects"
-   ],
-   "case": "tiger-shroff-2026-10-20",
-   "case_story": "nw-20261019-tiger-shroff-attack",
-   "angle": "hurt",
-   "focus": "The two people hit by the bullets: Tiger Shroff's driver and caretaker of 28 years, Firdaus Ibrahim Baloch, and the fan Umesh Chauhan, who was filming Tiger for his vlog. Who they are, where each was hit, which hospital treats them and how they are now, as the REPORTING says. Say 'गोली लगी', never a casualty count.",
-   "reports": [
-    {
-     "title": "Umesh Chauhan, vlogger who went to film Tiger Shroff, lands in ICU with bullet wound",
-     "url": "https://www.hindustantimes.com/cities/mumbai-news/umesh-chauhan-vlogger-who-went-to-film-tiger-shroff-lands-in-icu-with-bullet-wound-101792437502845.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T17:15:58+00:00"
-    },
-    {
-     "title": "Detergent seller filming Tiger Shroff hit by bullet in Juhu firing",
-     "url": "https://indianexpress.com/article/india/tiger-shroff-firing-case-detergent-seller-victim-filming-actor-hit-by-bullet-10928729/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T17:15:58+00:00"
-    },
-    {
-     "title": "Tiger Shroff's Fan Was Shooting Vlog When Shots Were Fired, A Bullet Hit Him",
-     "url": "https://www.ndtv.com/india-news/tiger-shroff-attacked-tiger-shroffs-fan-was-shooting-vlog-when-shots-were-fired-a-bullet-hit-him-12209877",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T17:15:58+00:00"
-    },
-    {
-     "title": "Trusted driver of 28 years, Tiger Shroff's personal caretaker",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/trusted-driver-of-28-years-tiger-shroffs-personal-caretaker/articleshow/135055475.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-20T17:15:58+00:00"
-    }
-   ],
-   "arrests": false,
-   "earlier": [
-    "Tiger Shroff: फायरिंग मामले में 3 आरोपी गिरफ्तार, मुंबई लाए गए",
-    "Tiger Shroff: कोटा में पकड़े गए तीनों आरोपी, नेपाल भागने की फिराक में थे",
-    "Tiger Shroff: फायरिंग के बाद पहली बार पब्लिक में आए जैकी श्रॉफ",
-    "Tiger Shroff: फायरिंग के बाद अंधेरी स्टेशन पहुंचे थे हमलावर, छोड़ी बाइक",
-    "Tiger Shroff: घर पहुंचे कृष्णा श्रॉफ, सुरक्षा पर उठे सवाल",
-    "Tiger Shroff: कोटा कोर्ट ने तीनों आरोपियों को मुंबई पुलिस को सौंपा",
-    "Tiger Shroff: फायरिंग के बाद सरकार ने दी पुलिस सुरक्षा",
-    "Tiger Shroff: फायरिंग के बाद राउत की फडणवीस से इस्तीफे की मांग",
-    "Tiger Shroff: संगठनों ने एक्टर की सुरक्षा बढ़ाने की मांग की"
-   ],
-   "names_ok": [
-    "Tiger Shroff",
-    "Jackie Shroff",
-    "Ayesha Shroff",
-    "Krishna Shroff",
-    "Disha Patani",
-    "Suniel Shetty",
-    "Vidyut Jammwal",
-    "Karan Veer Mehra",
-    "Ravi Kishan",
-    "Shatrughan Sinha",
-    "Mika Singh",
-    "Amaal Mallik",
-    "Ranvir Shorey",
-    "Rahul Dholakia",
-    "Ram Gopal Varma",
-    "Ashoke Pandit",
-    "Sunita Ahuja",
-    "Govinda",
-    "Ravi Dubey",
-    "Salman Khan",
-    "Aamir Khan",
-    "Rohit Shetty",
-    "Bappi Lahiri",
-    "Bappi Lahiri Marg",
-    "Bollywood",
-    "Heropanti",
-    "Baaghi",
-    "FWICE",
-    "AICWA",
-    "Federation of Western India Cine Employees",
-    "All Indian Cine Workers Association",
-    "IMPPA",
-    "Firdaus Ibrahim Baloch",
-    "Firdaus Baloch",
-    "Umesh Chauhan",
-    "Nanavati Hospital",
-    "Cooper Hospital",
-    "KEM Hospital",
-    "Mankhurd",
-    "Parel",
-    "Devendra Fadnavis",
-    "Eknath Shinde",
-    "Ashish Shelar",
-    "Amit Shah",
-    "Deven Bharti",
-    "Mohit Garg",
-    "Navnath Dhavale",
-    "Raj Tilak Roushan",
-    "Raj Tilak Roshan",
-    "Tejaswini Gautam",
-    "Tejaswani Gautam",
-    "Subhash Chandra Mishra",
-    "Mumbai Police",
-    "Mumbai Police Crime Branch",
-    "Crime Branch",
-    "Anti-Extortion Cell",
-    "Juhu Police",
-    "Juhu police station",
-    "Santacruz police station",
-    "Rajasthan Police",
-    "Kota Police",
-    "RPF",
-    "Anti-Gangster Task Force",
-    "Maharashtra government",
-    "Sanjay Raut",
-    "Harshwardhan Sapkal",
-    "Supriya Sule",
-    "Varsha Gaikwad",
-    "Sachin Sawant",
-    "Rohit Pawar",
-    "Zeeshan Siddique",
-    "Baba Siddique",
-    "Pradeep Purnekar",
-    "BJP",
-    "Congress",
-    "Shiv Sena",
-    "Shiv Sena (UBT)",
-    "NCP",
-    "NCP (SP)",
-    "Mahayuti",
-    "Supreme Court",
-    "Bharatiya Nyaya Sanhita",
-    "Arms Act",
-    "BMC",
-    "Mumbai",
-    "Juhu",
-    "Vile Parle",
-    "Vile Parle West",
-    "Pushpa Narsee Park",
-    "Jamnabai Narsee School",
-    "Santacruz",
-    "Bandra",
-    "Bandra West",
-    "Galaxy Apartments",
-    "Andheri",
-    "Andheri West",
-    "Andheri railway station",
-    "Borivali",
-    "Borivali railway station",
-    "SV Road",
-    "Maharashtra",
-    "Thane",
-    "Surat",
-    "Gujarat",
-    "Kota",
-    "Kota Junction",
-    "Kota railway station",
-    "Kota Junction railway station",
-    "Rajasthan",
-    "Jaipur",
-    "Pune",
-    "Pune-Jaipur Express",
-    "Delhi",
-    "Nepal",
-    "Sonipat",
-    "Haryana",
-    "Begusarai",
-    "Bihar",
-    "California",
-    "United States",
-    "Nagpur",
-    "Patna",
-    "India",
-    "India Today",
-    "Aaj Tak",
-    "AajTak",
-    "Times of India",
-    "The Times of India",
-    "Hindustan Times",
-    "Indian Express",
-    "The Indian Express",
-    "News18",
-    "ABP Live",
-    "ABP News",
-    "TV9 Bharatvarsh",
-    "NDTV",
-    "BBC",
-    "BBC Hindi",
-    "The Hindu",
-    "Amar Ujala",
-    "Dainik Bhaskar",
-    "Mint",
-    "ANI",
-    "PTI",
-    "IANS",
-    "Instagram",
-    "X",
-    "WhatsApp",
-    "Signal",
-    "Telegram",
-    "BMW",
-    "Rapido",
-    "Lawrence Bishnoi",
-    "Lawrence Bishnoi gang"
-   ],
-   "case_words": [
-    "Chauhan",
-    "Umesh",
-    "vlog",
-    "KEM",
-    "Cooper",
-    "Baloch",
-    "Firdaus",
-    "Nanavati",
-    "28",
-    "Mankhurd",
-    "wrist",
-    "उमेश",
-    "चौहान",
-    "फिरदौस",
-    "बलोच"
-   ],
-   "never": [
-    "Anil Pandit",
-    "अनिल पंडित",
-    "Anmol Bishnoi",
-    "Goldy Brar",
-    "गोल्डी",
-    "Rohit Godara",
-    "गोदारा"
-   ],
-   "case_status": "On Sunday 18 October 2026, around 7 pm, Tiger Shroff's car was fired at as it left a football ground in Juhu, Mumbai; no bullet hit him. His driver Firdaus Ibrahim Baloch and a fan, Umesh Chauhan, were hit by bullets and are in hospital, stable. All three accused were caught on the morning of Monday 19 October aboard the Pune-Jaipur Express at Kota Junction, Rajasthan, and taken to Mumbai; the Mumbai Police Crime Branch is investigating. Police say five rounds were fired (some outlets report seven). Police say the motive is not yet established and have not verified a social media claim of responsibility.",
-   "case_hurt": {
-    "count": 2,
-    "owners": [
-     "Bennett, Coleman & Co.",
-     "HT Media",
-     "Indian Express Group",
-     "NDTV"
-    ],
-    "url": "https://timesofindia.indiatimes.com/city/mumbai/trusted-driver-of-28-years-tiger-shroffs-personal-caretaker/articleshow/135055475.cms",
-    "en": "Two people were hit by bullets: Tiger Shroff's driver Firdaus Ibrahim Baloch and a fan, Umesh Chauhan; both are in hospital and stable. Nobody died, and no bullet hit Tiger Shroff."
-   },
-   "hook": "ड्राइवर और एक फैन को लगी गोली",
-   "audience": "india",
-   "lane": "sensitive"
-  },
   {
    "id": "kh-20261022-Q1445",
    "qid": "Q1445",
@@ -1550,14 +875,14 @@
     "weather"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:43:15+00:00",
+   "news_at": "2026-10-22T03:10:47+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
     "Bennett, Coleman & Co."
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1585,7 +910,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T02:43:15+00:00"
+     "at": "2026-10-22T03:10:47+00:00"
     },
     {
      "title": "Tamil Nadu weather: Rain alert till October 26",
@@ -1641,16 +966,209 @@
    "via": [
     "outlet:HT Media",
     "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Tamil Nadu rain updates: Warning to residents along Palar river"
    ],
    "top": {
-    "IN-nation": 9
+    "IN": 4,
+    "IN-nation": 16
    },
-   "top_score": 0.36,
+   "top_score": 0.925,
    "top_headlines": [
     "Tiger Shroff Firing Case: Mumbai Court Remands Accused To Police Custody Till October 31",
-    "Schools In Chennai, Nearby Districts Closed Due To Heavy Rain, Flood Risks",
     "Heavy rain likely in Kerala till October 27; orange alert in 5 districts"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261022-Q3417395",
+   "qid": "Q3417395",
+   "title": "Jamnagar refinery",
+   "name": "Jamnagar Refinery",
+   "phrase": "Reliance’s Jamnagar",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+   "story_keys": [
+    "marco",
+    "meet",
+    "news",
+    "refinery",
+    "rubio",
+    "secretary"
+   ],
+   "date": "2026-10-21",
+   "news_at": "2026-10-22T03:23:00+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Network18"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+    "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जामनगर तेल शोधनागार",
+   "reports": [
+    {
+     "title": "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News",
+     "url": "https://www.news18.com/videos/india/marco-rubio-at-reliance-jamnagar-us-praises-india-s-oil-refining-power-u-s-india-news-10392198.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T03:23:00+00:00"
+    },
+    {
+     "title": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+     "url": "https://www.news18.com/videos/india/ril-hosts-us-secretary-of-state-marco-rubio-at-reliance-s-jamnagar-complex-issues-statement-news18-10391979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T17:24:20+00:00"
+    },
+    {
+     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T17:16:15+00:00"
+    },
+    {
+     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T16:46:17+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "top": {
+    "IN": 12,
+    "IN-nation": 2
+   },
+   "top_score": 0.795,
+   "top_headlines": [
+    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
+    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261022-Q79883",
+   "qid": "Q79883",
+   "title": "Strait of Hormuz",
+   "name": "Strait of Hormuz",
+   "phrase": "Hormuz",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+   "story_keys": [
+    "hit",
+    "kuwait-flagged",
+    "seafarer",
+    "strait",
+    "tanker"
+   ],
+   "date": "2026-10-21",
+   "news_at": "2026-10-22T02:13:13+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "होरमुज़ जलसन्धि",
+   "reports": [
+    {
+     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-21T05:00:02+00:00"
+    },
+    {
+     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T02:13:13+00:00"
+    },
+    {
+     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T02:10:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
+   ],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "audience": "india",
    "lane": "other"
@@ -1785,7 +1303,7 @@
     "winning"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:59:04.944222+00:00",
+   "news_at": "2026-10-22T03:38:09.006312+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -1818,7 +1336,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Ravi Kartik Budigina on winning Silver at the Asian Para Games",
@@ -1828,7 +1346,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Himanshu Nandal on winning Bronze at the Asian Para Games",
@@ -1838,7 +1356,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Pranav Desai on winning Bronze at the Asian Para Games",
@@ -1848,7 +1366,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Rohit Kumar on winning Bronze at the Asian Para Games",
@@ -1858,7 +1376,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Simran on winning Gold at the Asian Para Games",
@@ -1868,7 +1386,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Karamjyoti on winning Bronze at the Asian Para Games",
@@ -1878,7 +1396,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Sukhchain on winning Bronze at the Asian Para Games",
@@ -1888,102 +1406,19 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     }
    ],
    "via": [
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Government of India",
-    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Suvarna Raj Clinches Top Podium Spot To Earn India's 15th Gold Medal"
+    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Sheetal Devi Eyes Top Podium Spot, India's Gold Medal Tally Swells To 15"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261022-Q79883",
-   "qid": "Q79883",
-   "title": "Strait of Hormuz",
-   "name": "Strait of Hormuz",
-   "phrase": "Hormuz",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-   "story_keys": [
-    "hit",
-    "kuwait-flagged",
-    "seafarer",
-    "strait",
-    "tanker"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:13:13+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "होरमुज़ जलसन्धि",
-   "reports": [
-    {
-     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-21T05:00:02+00:00"
-    },
-    {
-     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:13:13+00:00"
-    },
-    {
-     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
-     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:10:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "india",
    "lane": "other"
   },
   {
@@ -2062,89 +1497,6 @@
     "outlet:The Hindu Group",
     "outlet:BBC",
     "outlet:Al Jazeera Media Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261022-Q6109517",
-   "qid": "Q6109517",
-   "title": "Pope Leo XIV",
-   "name": "Leo XIV",
-   "phrase": "Pope Leo",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-   "story_keys": [
-    "cancer",
-    "further",
-    "need",
-    "pope",
-    "treatment"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-21T23:47:00+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "Deutsche Welle"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-    "Pope Leo needs no further treatment after cancer surgery, doctors say",
-    "Pope Leo will not need further cancer treatment — Vatican"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "चौदहवें पोप लियो",
-   "reports": [
-    {
-     "title": "Pope Leo will not need further cancer treatment — Vatican",
-     "url": "https://www.dw.com/en/pope-leo-will-not-need-further-cancer-treatment-vatican/a-79727154?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-21T23:47:00+00:00"
-    },
-    {
-     "title": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-     "url": "https://www.france24.com/en/europe/20261021-pope-leo-doctors-treatment-lung-cancer",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-21T21:41:19+00:00"
-    },
-    {
-     "title": "Pope Leo needs no further treatment after cancer surgery, doctors say",
-     "url": "https://www.aljazeera.com/news/2026/10/21/pope-leo-needs-no-further-treatment-after-cancer-surgery-doctors-say?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-21T23:20:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle"
    ],
    "top": {},
    "top_score": 0.0,
@@ -2244,8 +1596,8 @@
   }
  ],
  "notes": [
-  "outlets: 1232 headlines from 31 feeds (19 owners), 12 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-jantar-mantar-protest",
-  "explainers: 7 kh- stories (on): kh-20261022-Q324546, kh-20261022-Q1209093, kh-20261022-Q1340361, kh-20261022-Q1445; dropped: explainer Beijing: fewer than 3 owners' headlines name it and the story; explainer Das Ashutosh Ranka / Saurav Das Ashutosh: no Wikipedia article that can be its centre; explainer Shivamogga Dasara / Shivamogga Dasara: no Wikipedia article that can be its centre",
+  "outlets: 1248 headlines from 31 feeds (19 owners), 9 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261022-Q1445, kh-20261022-Q79883, kh-20261022-Q1209093, kh-20261022-Q1340361; dropped: explainer Beijing: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped; explainer Marco Rubio: Hindi headlines name a minister Marco Rubio, Wikipedia's Marco Rubio is not one; whose story it is stays unknown, so it is skipped",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2253,38 +1605,49 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1232,
+  "headlines": 1248,
   "feeds": 31,
   "owners": 19,
-  "matched": 12,
-  "corroborated": 7
+  "matched": 9,
+  "corroborated": 5
  },
- "emerging": [
+ "emerging": [],
+ "explainers": [
   {
-   "id": "nw-20261021-jantar-mantar-protest",
-   "qid": null,
-   "title": "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23",
-   "name": "Jantar Mantar",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-21",
-   "news_at": "2026-10-21T18:22:58+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
+   "id": "kh-20261022-Q1445",
+   "qid": "Q1445",
+   "title": "Tamil Nadu",
+   "name": "Tamil Nadu",
+   "phrase": "Tamil Nadu",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
+   "story_keys": [
+    "alert",
+    "district",
+    "heavy",
+    "weather"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "date": "2026-10-21",
+   "news_at": "2026-10-22T03:10:47+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Har gali mein Jantar Mantar: Parakala Prabhakar to join Dipke at anti-SIR protest",
-    "CJP leaders Das, Ranka released from Tihar, vow no more Jantar Mantar protests",
-    "'Har Gali Me Jantar Mantar': Nirmala Sitharaman's Husband To Join CJP In Anti-CEC Protest",
-    "Rs 50k bond, no Jantar Mantar protests: What are the conditions of CJP leaders' release?",
-    "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23"
+    "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
+    "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
+    "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
+    "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
+    "Tamil Nadu weather: Rain alert till October 26",
+    "Schools closed in five Tamil Nadu districts after overnight rain"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2293,217 +1656,175 @@
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "तमिल नाडु",
    "reports": [
     {
-     "title": "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23",
-     "url": "https://www.thehindu.com/news/cities/Delhi/economist-prabhakar-to-join-dipke-prakash-raj-neha-at-nationwide-anti-sir-protests-on-october-23/article71608796.ece",
+     "title": "Schools closed in five Tamil Nadu districts after overnight rain",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/schools-closed-in-five-tamil-nadu-districts-after-overnight-rain/article71609927.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T18:22:58+00:00"
+     "at": "2026-10-22T03:10:47+00:00"
     },
     {
-     "title": "Rs 50k bond, no Jantar Mantar protests: What are the conditions of CJP leaders' release?",
-     "url": "https://timesofindia.indiatimes.com/india/rs-50k-bond-no-jantar-mantar-protest-call-what-are-the-conditions-of-cjp-leaders-release/articleshow/135095991.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Tamil Nadu weather: Rain alert till October 26",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/chennai-flash-flood-risk-more-school-holidays-waterlogging-and-heavy-rain-what-imds-latest-warning-means-for-tamil-nadu-till-october-26/articleshow/135104185.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T15:55:28+00:00"
+     "at": "2026-10-22T02:08:41+00:00"
     },
     {
-     "title": "'Har Gali Me Jantar Mantar': Nirmala Sitharaman's Husband To Join CJP In Anti-CEC Protest",
-     "url": "https://www.news18.com/india/har-gali-me-jantar-mantar-nirmala-sitharamans-husband-to-join-cjp-in-anti-cec-protest-10391726.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
+     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-rains-today-school-holiday-in-chennai-weather-rain-temperature-imd-alert-101792633115022.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T13:51:30+00:00"
+     "at": "2026-10-22T01:57:33+00:00"
     },
     {
-     "title": "CJP leaders Das, Ranka released from Tihar, vow no more Jantar Mantar protests",
-     "url": "https://www.indiatoday.in/india/story/delhi-court-releases-cjp-co-convenors-saurav-das-and-ashutosh-ranka-after-days-in-judicial-custody-3022127-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/northeast-monsoon-2026-gathers-momentum-in-tamil-nadu-unleashes-another-round-of-downpours-over-chennai/article71606476.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T13:03:45+00:00"
+     "at": "2026-10-21T18:13:24+00:00"
     },
     {
-     "title": "Har gali mein Jantar Mantar: Parakala Prabhakar to join Dipke at anti-SIR protest",
-     "url": "https://www.indiatoday.in/india/story/parakala-prabhakar-sir-protest-cjp-abhijeet-dipke-prakash-raj-3022077-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/heavy-rain-in-tirupati-as-low-pressure-area-forms-off-tamil-nadu-coast/article71608383.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T12:38:04+00:00"
+     "at": "2026-10-21T16:57:55+00:00"
+    },
+    {
+     "title": "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
+     "url": "https://www.hindustantimes.com/india-news/school-holiday-chennai-rains-tamil-nadu-districts-imd-forecast-latest-chennai-news-101792553117097.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T04:46:57+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
+    "google-news:Tamil Nadu rain updates: Warning to residents along Palar river"
    ],
-   "emerging": true,
-   "article": null,
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 4,
+    "IN-nation": 16
    },
-   "top_score": 0.84,
+   "top_score": 0.925,
    "top_headlines": [
-    "Economist Prabhakar to join Dipke, Prakash Raj, Neha at nationwide anti-SIR protests on October 23"
-   ]
-  }
- ],
- "explainers": [
+    "Tiger Shroff Firing Case: Mumbai Court Remands Accused To Police Custody Till October 31",
+    "Heavy rain likely in Kerala till October 27; orange alert in 5 districts"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
   {
-   "id": "kh-20261022-Q324546",
-   "qid": "Q324546",
-   "title": "Marco Rubio",
-   "name": "Marco Rubio",
-   "phrase": "Rubio",
-   "person": true,
+   "id": "kh-20261022-Q79883",
+   "qid": "Q79883",
+   "title": "Strait of Hormuz",
+   "name": "Strait of Hormuz",
+   "phrase": "Hormuz",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
+   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
    "story_keys": [
-    "energy",
-    "meet",
-    "refinery",
-    "ties",
-    "visit"
+    "hit",
+    "kuwait-flagged",
+    "seafarer",
+    "strait",
+    "tanker"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:14:00+00:00",
+   "news_at": "2026-10-22T02:13:13+00:00",
    "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18"
+    "Guardian Media Group",
+    "Network18",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-    "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-    "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties"
+    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": null,
+   "label_hi": "होरमुज़ जलसन्धि",
    "reports": [
     {
-     "title": "Energy ties in focus as Ambani hosts Marco Rubio at Jamnagar",
-     "url": "https://www.hindustantimes.com/india-news/energy-ties-in-focus-as-ambani-hosts-marco-rubio-at-jamnagar-101792609260773.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
+     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-22T02:14:00+00:00"
+     "at": "2026-10-21T05:00:02+00:00"
     },
     {
-     "title": "At Reliance's Jamnagar Refinery, Marco Rubio Pushes For Deeper US-India Energy Ties",
-     "url": "https://www.news18.com/world/at-reliances-jamnagar-refinery-marco-rubio-pushes-for-deeper-us-india-energy-ties-ws-l-10392063.html",
+     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
+     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T01:01:43+00:00"
+     "at": "2026-10-22T02:13:13+00:00"
     },
     {
-     "title": "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infrastructure",
-     "url": "https://timesofindia.indiatimes.com/india/at-jamnagar-refinery-rubio-and-ambanis-discuss-energy-digital-infra-giga-factories/articleshow/135100415.cms",
+     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
+     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T20:54:31+00:00"
-    },
-    {
-     "title": "Discussed opportunities for partnerships in conventional, new energy: RIL on Rubio visit",
-     "url": "https://www.thehindu.com/business/Industry/discussed-opportunities-for-partnerships-in-conventional-new-energy-ril-on-rubio-visit/article71608874.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:19:57+00:00"
-    },
-    {
-     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
-     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T17:16:15+00:00"
-    },
-    {
-     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:46:17+00:00"
-    },
-    {
-     "title": "Marco Rubio visits Reliance's Jamnagar refinery, meets Mukesh Ambani and family",
-     "url": "https://www.indiatoday.in/business/story/marco-rubio-reliance-jamnagar-refinery-mukesh-ambani-us-india-energy-ties-sergio-gor-3022095-2026-10-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T13:08:38+00:00"
+     "at": "2026-10-22T02:10:23+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
+    "outlet:Guardian Media Group",
     "outlet:Network18",
-    "google-news:Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "google-news:Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling",
-    "google-news:At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories"
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 6
+    "IN": 13
    },
-   "top_score": 1.175,
+   "top_score": 0.4,
    "top_headlines": [
-    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
-    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
-    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
+    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Strait of Hormuz; all safe"
    ],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "other"
   },
   {
    "id": "kh-20261022-Q1209093",
@@ -2526,7 +1847,7 @@
     "winning"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-22T02:59:04.944222+00:00",
+   "news_at": "2026-10-22T03:38:09.006312+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -2559,7 +1880,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Ravi Kartik Budigina on winning Silver at the Asian Para Games",
@@ -2569,7 +1890,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Himanshu Nandal on winning Bronze at the Asian Para Games",
@@ -2579,7 +1900,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Pranav Desai on winning Bronze at the Asian Para Games",
@@ -2589,7 +1910,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Rohit Kumar on winning Bronze at the Asian Para Games",
@@ -2599,7 +1920,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Simran on winning Gold at the Asian Para Games",
@@ -2609,7 +1930,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Karamjyoti on winning Bronze at the Asian Para Games",
@@ -2619,7 +1940,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     },
     {
      "title": "Prime Minister congratulates Sukhchain on winning Bronze at the Asian Para Games",
@@ -2629,14 +1950,14 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-22T02:59:04.944222+00:00"
+     "at": "2026-10-22T03:38:09.006312+00:00"
     }
    ],
    "via": [
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Government of India",
-    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Suvarna Raj Clinches Top Podium Spot To Earn India's 15th Gold Medal"
+    "google-news:Asian Para Games 2026 Day 4 LIVE Updates: Sheetal Devi Eyes Top Podium Spot, India's Gold Medal Tally Swells To 15"
    ],
    "top": {},
    "top_score": 0.0,
@@ -2754,212 +2075,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261022-Q1445",
-   "qid": "Q1445",
-   "title": "Tamil Nadu",
-   "name": "Tamil Nadu",
-   "phrase": "Tamil Nadu",
-   "person": false,
-   "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-   "story_keys": [
-    "alert",
-    "district",
-    "heavy",
-    "weather"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:43:15+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-    "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
-    "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
-    "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
-    "Tamil Nadu weather: Rain alert till October 26",
-    "Schools closed in five Tamil Nadu districts after overnight rain"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तमिल नाडु",
-   "reports": [
-    {
-     "title": "Schools closed in five Tamil Nadu districts after overnight rain",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/schools-closed-in-five-tamil-nadu-districts-after-overnight-rain/article71609927.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:43:15+00:00"
-    },
-    {
-     "title": "Tamil Nadu weather: Rain alert till October 26",
-     "url": "https://economictimes.indiatimes.com/news/new-updates/chennai-flash-flood-risk-more-school-holidays-waterlogging-and-heavy-rain-what-imds-latest-warning-means-for-tamil-nadu-till-october-26/articleshow/135104185.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:08:41+00:00"
-    },
-    {
-     "title": "Heavy rain likely in Tamil Nadu for 2 more days: Schools shut in Tirunelveli, Thoothukudi, Kanniyakumari and Tenkasi; Chennai on yellow alert",
-     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-rains-today-school-holiday-in-chennai-weather-rain-temperature-imd-alert-101792633115022.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T01:57:33+00:00"
-    },
-    {
-     "title": "Fresh weather system to fuel another spell of heavy rain in Tamil Nadu",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/northeast-monsoon-2026-gathers-momentum-in-tamil-nadu-unleashes-another-round-of-downpours-over-chennai/article71606476.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T18:13:24+00:00"
-    },
-    {
-     "title": "Heavy rain in Tirupati as low pressure area forms off Tamil Nadu coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/heavy-rain-in-tirupati-as-low-pressure-area-forms-off-tamil-nadu-coast/article71608383.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:57:55+00:00"
-    },
-    {
-     "title": "Schools in Chennai, four other Tamil Nadu districts declare holiday amid heavy rainfall",
-     "url": "https://www.hindustantimes.com/india-news/school-holiday-chennai-rains-tamil-nadu-districts-imd-forecast-latest-chennai-news-101792553117097.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T04:46:57+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "Tiger Shroff Firing Case: Mumbai Court Remands Accused To Police Custody Till October 31",
-    "Schools In Chennai, Nearby Districts Closed Due To Heavy Rain, Flood Risks",
-    "Heavy rain likely in Kerala till October 27; orange alert in 5 districts"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261022-Q79883",
-   "qid": "Q79883",
-   "title": "Strait of Hormuz",
-   "name": "Strait of Hormuz",
-   "phrase": "Hormuz",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-   "story_keys": [
-    "hit",
-    "kuwait-flagged",
-    "seafarer",
-    "strait",
-    "tanker"
-   ],
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T02:13:13+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-    "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-    "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "होरमुज़ जलसन्धि",
-   "reports": [
-    {
-     "title": "Troubled waters: life during wartime for Iranians on the strait of Hormuz",
-     "url": "https://www.theguardian.com/artanddesign/2026/oct/21/strait-of-hormuz-life-amid-wartime-iran",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-21T05:00:02+00:00"
-    },
-    {
-     "title": "Kuwait-Flagged Tanker With 21 Indian Seafarers Hit In Strait Of Hormuz; All Crew Safe",
-     "url": "https://www.news18.com/world/kuwait-flagged-tanker-with-21-indian-seafarers-hit-in-strait-of-hormuz-all-crew-safe-ws-klt-10392074.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:13:13+00:00"
-    },
-    {
-     "title": "Kuwait-flagged tanker carrying 21 Indian seafarers hit by projectile in Hormuz",
-     "url": "https://timesofindia.indiatimes.com/india/kuwait-flagged-tanker-carrying-21-indian-seafarers-hit-by-projectile-in-strait-of-hormuz-all-safe/articleshow/135104277.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T02:10:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261022-Q51993",
    "qid": "Q51993",
    "title": "Ebola",
@@ -3043,86 +2158,106 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261022-Q6109517",
-   "qid": "Q6109517",
-   "title": "Pope Leo XIV",
-   "name": "Leo XIV",
-   "phrase": "Pope Leo",
-   "person": true,
+   "id": "kh-20261022-Q3417395",
+   "qid": "Q3417395",
+   "title": "Jamnagar refinery",
+   "name": "Jamnagar Refinery",
+   "phrase": "Reliance’s Jamnagar",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
    "story_keys": [
-    "cancer",
-    "further",
-    "need",
-    "pope",
-    "treatment"
+    "marco",
+    "meet",
+    "news",
+    "refinery",
+    "rubio",
+    "secretary"
    ],
    "date": "2026-10-21",
-   "news_at": "2026-10-21T23:47:00+00:00",
+   "news_at": "2026-10-22T03:23:00+00:00",
    "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "Deutsche Welle"
+    "The Hindu Group",
+    "HT Media",
+    "Network18"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-    "Pope Leo needs no further treatment after cancer surgery, doctors say",
-    "Pope Leo will not need further cancer treatment — Vatican"
+    "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+    "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+    "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+    "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "चौदहवें पोप लियो",
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जामनगर तेल शोधनागार",
    "reports": [
     {
-     "title": "Pope Leo will not need further cancer treatment — Vatican",
-     "url": "https://www.dw.com/en/pope-leo-will-not-need-further-cancer-treatment-vatican/a-79727154?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
+     "title": "Marco Rubio At Reliance Jamnagar: US Praises India’s Oil Refining Power | U.S India News",
+     "url": "https://www.news18.com/videos/india/marco-rubio-at-reliance-jamnagar-us-praises-india-s-oil-refining-power-u-s-india-news-10392198.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T23:47:00+00:00"
+     "at": "2026-10-22T03:23:00+00:00"
     },
     {
-     "title": "Pope Leo XIV needs no further lung cancer treatment, Vatican says",
-     "url": "https://www.france24.com/en/europe/20261021-pope-leo-doctors-treatment-lung-cancer",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "RIL Hosts US Secretary of State Marco Rubio At Reliance's Jamnagar Complex, Issues Statement| News18",
+     "url": "https://www.news18.com/videos/india/ril-hosts-us-secretary-of-state-marco-rubio-at-reliance-s-jamnagar-complex-issues-statement-news18-10391979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T21:41:19+00:00"
+     "at": "2026-10-21T17:24:20+00:00"
     },
     {
-     "title": "Pope Leo needs no further treatment after cancer surgery, doctors say",
-     "url": "https://www.aljazeera.com/news/2026/10/21/pope-leo-needs-no-further-treatment-after-cancer-surgery-doctors-say?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "US Secretary of State Marco Rubio meets Mukesh, Anant Ambani at Jamnagar refinery",
+     "url": "https://www.hindustantimes.com/india-news/us-secretary-of-state-marco-rubio-sergio-gor-meets-mukesh-anant-ambani-at-jamnagar-refinery-101792602520991.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T23:20:58+00:00"
+     "at": "2026-10-21T17:16:15+00:00"
+    },
+    {
+     "title": "Rubio meets Adani, Chandrasekaran; visits Reliance’s Jamnagar refinery",
+     "url": "https://www.thehindu.com/news/national/gujarat/marco-rubio-jamnagar-reliance-refinery-october-21/article71606843.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-21T16:46:17+00:00"
     }
    ],
    "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle"
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Network18"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
+   "top": {
+    "IN": 12,
+    "IN-nation": 2
+   },
+   "top_score": 0.795,
+   "top_headlines": [
+    "At Jamnagar refinery, Rubio and Ambanis discuss energy, digital infra, giga factories",
+    "Starlink Slowdown: Zelenskyy Says Marco Rubio Is Working To Undo Throttling"
+   ],
+   "audience": "india",
    "lane": "other"
   }
  ]
