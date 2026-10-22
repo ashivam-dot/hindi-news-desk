@@ -47,6 +47,12 @@ class Photo:
     origin: str  # "wikidata", "article", "category", ... or "openverse"
     path: str = ""
     host: str = "Wikimedia Commons"  # where the file is credited: Commons, or "Openverse (Flickr)"
+    # Vetting metadata Commons already sends (extmetadata) and the pool used to throw away (SYNC-AUDIT 4.1 step 1):
+    # the file's categories, its Credit line (a watermark's source: "Bollywood Hungama") and the year it was taken.
+    # Never a filter at the source; ranking and the gate read them (era_reject, event_kind, branded).
+    categories: str = ""
+    source_credit: str = ""
+    year: int | None = None
 
     @property
     def credit(self) -> str:
@@ -323,12 +329,95 @@ def _usable(ordered: list[tuple[str, str]], keys: set[str], limit: int, shoot_ca
         shoots[shoot] = shoots.get(shoot, 0) + 1
         hashes.add(ii.get("sha1"))
         author = _text(meta.get("Artist", {}).get("value"), 60) or "unknown author"
+        date = _text(meta.get("DateTimeOriginal", {}).get("value"), 40)
         photos.append(Photo(file=f, url=ii.get("thumburl") or ii["url"], page=ii["descriptionurl"], width=ii["width"],
-                            height=ii["height"], author=author, license=lic, description=desc,
-                            date=_text(meta.get("DateTimeOriginal", {}).get("value"), 40), origin=origin))
+                            height=ii["height"], author=author, license=lic, description=desc, date=date,
+                            origin=origin, categories=_text(meta.get("Categories", {}).get("value"), 400),
+                            source_credit=_text(meta.get("Credit", {}).get("value"), 120), year=parse_year(date)))
         if len(photos) >= limit:
             break
     return photos
+
+
+# --- Vetting: what a photo shows besides who ------------------------------------------------------------------
+# The Rubio Short (39714003987, 2026-10-22) opened on his 1989 high-school yearbook photo under "रिफाइनरी दौरा"; its
+# pool also held "Marco Rubio in 6th Grade". The Jantar Mantar Short showed a 1928 photo of the place.
+CHILD = re.compile(r"yearbook|\b\d+(st|nd|rd|th) grade\b|childhood|\bas an? (child|boy|girl|teen\w*)\b|"
+                   r"\bschool photo|\bbaby\b", re.I)
+PERSON_YEARS, PLACE_YEARS, ADULT = 20, 40, 18
+# Another event's photo: Mukesh Ambani at the 2023 NMACC gala under "welcomed him at Jamnagar", Tiger Shroff with his
+# mother at the 2015 Filmfare awards under "the court handed the accused to Mumbai Police". "party" only in lower
+# case and never "political party": a politician's file names "Bharatiya Janata Party".
+EVENT = re.compile(r"\bgala\b|\bawards?\b|premiere|red carpet|screening|wedding|filmfare|\biifa\b|\bspotted\b",
+                   re.I)
+PARTY = re.compile(r"(?<!political )\bpart(y|ies)\b")
+# Paparazzi agencies whose watermark sits on the photo: 7-10 of the 8-11 Tiger Shroff pool photos carry one, so this
+# only ranks a photo lower and never drops it (the pool would empty).
+BRANDED = re.compile(r"bollywood ?hungama|pinkvilla|filmibeat|viral ?bhayani", re.I)
+# A landmark noun the place's own name lacks: "Juhu" showed ISKCON temple, Juhu; "अंधेरी स्टेशन" the Andheri flyover.
+LANDMARK = re.compile(r"\b(temple|flyover|bridge|mall|hotel|station|stadium)s?\b", re.I)
+
+
+def _field(p, name: str):
+    return (p.get(name) if isinstance(p, dict) else getattr(p, name, None)) or ""
+
+
+def _about(p) -> str:
+    """A photo's own words: its file name, description and Commons categories."""
+    return " ".join(str(_field(p, k)) for k in ("file", "description", "categories")).replace("_", " ")
+
+
+def parse_year(date: str | None) -> int | None:
+    """The year a photo was taken from Commons' DateTimeOriginal: "circa 1988-1989" is 1988, "circa 1980's" 1980."""
+    m = re.search(r"(?<!\d)(1[89]\d\d|20\d\d)(?!\d)", date or "")
+    return int(m.group(1)) if m else None
+
+
+def year_of(p) -> int | None:
+    """A photo's year: the stamped one, else parsed from its date (artifacts written before the field existed)."""
+    y = _field(p, "year")
+    return y if isinstance(y, int) else parse_year(_field(p, "date"))
+
+
+def era_reject(p, story_year: int, born: int | None = None, role: str = "person", pool=()) -> str:
+    """Why a photo is from the wrong time of its subject's life, or "" when it is fine: a child (a yearbook, a school
+    photo, "in 6th Grade"), the person under ADULT (Wikidata P569 born), a person photo over PERSON_YEARS old while
+    a newer one of the same pool passes, a place photo over PLACE_YEARS old (1928; a 2002 heritage photo stays)."""
+    text, y = _about(p), year_of(p)
+    if role == "person":
+        if m := CHILD.search(text):
+            return f"a childhood photo ({m.group(0)})"
+        if y and born and y - born < ADULT:
+            return f"taken at {y - born}, before adulthood"
+        if y and story_year - y > PERSON_YEARS:
+            newer = [q for q in pool if q is not p and (year_of(q) or 0) > y and story_year - (year_of(q) or 0)
+                     <= PERSON_YEARS and not CHILD.search(_about(q))]
+            if newer:
+                return f"{story_year - y} years old ({y}) while a newer photo exists"
+        return ""
+    if y and story_year - y > PLACE_YEARS:
+        return f"{story_year - y} years old ({y})"
+    return ""
+
+
+def event_kind(p) -> str:
+    """The unrelated event a photo was taken at (a gala, an award night, a premiere, a sighting), or ""."""
+    text = _about(p)
+    m = EVENT.search(text) or PARTY.search(text)
+    return m.group(0).lower() if m else ""
+
+
+def branded(p) -> bool:
+    """A paparazzi agency's photo (its watermark): a ranking signal only, never a ban."""
+    return bool(BRANDED.search(" ".join([_about(p), str(_field(p, "author")), str(_field(p, "source_credit"))])))
+
+
+def not_itself(p, place_en: str) -> bool:
+    """The photo is of a landmark at the place, not the place: its words name a temple, flyover, bridge, mall,
+    hotel, station or stadium that the place's own name does not."""
+    own = (place_en or "").lower()
+    text = " ".join(str(_field(p, k)) for k in ("file", "description")).replace("_", " ")
+    return any(m.group(1).lower() not in own for m in LANDMARK.finditer(text))
 
 
 def download(photos: list[Photo], folder: Path) -> list[Photo]:
