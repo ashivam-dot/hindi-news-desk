@@ -148,13 +148,14 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   headline under 24 hours old). Wikipedia's most-read list is a day behind and never keeps an old story alive.
 - **Only the big stories, told properly and on time (owner, 2026-10-21: "No need to cover each and every incidents
   but those which are really high profile cases or incidents those should be cover properly on time with max
-  efforts").** Regular Shorts go out 07:00–24:00 IST, at most six an IST day (`plan.MAX_PER_DAY`), at least 20
-  minutes apart; breaking news and a case's angles may take two more (`BREAKING_EXTRA`). The cap counts the Shorts
+  efforts").** Regular Shorts go out 07:00–24:00 IST, at most four an IST day (`plan.MAX_PER_DAY`, six until
+  2026-10-22), at least 90 minutes apart (`plan.MIN_GAP`, 20 until 2026-10-22); breaking news and a case's angles
+  may take two more (`BREAKING_EXTRA`), so six at most. The cap counts the Shorts
   still on the channel (`plan.on_channel`): a retired Short frees its slot and a Short and its remake count once (on
-  21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). Before 18:00 IST
-  the regular lane and case angles stop at four (`EVENING_RESERVE`), so two slots wait for the evening; breaking
-  news is never held for it. Case angles are held too on purpose: they count toward the same four, and if they
-  could fill the day before 18:00 the evening would again find the cap used up. Every story must be high in
+  21 Oct every run from 13:12 IST held "already 8 Shorts today" with three of the eight private). No story is held
+  for a posting slot (the evening reserve that kept two slots for after 18:00 IST is gone): the hour's weight
+  (`plan.SLOT_WEIGHT`, 06:00–09:00 and 18:00–20:00 IST preferred, 12:00–14:00 avoided) only orders the Shorts
+  ready at once, and every weight is a hypothesis for the scorecard. Every story must be high in
   Google News India's top stories (`MIN_PLACE`, about the top 13), and a kind Hindi viewers rarely watch
   (`plan.DEMAND` under 0.8: protests, science, conflict, economy, diplomacy, world) about the top 6. The ranking is
   multiplied by `plan.DEMAND`: crime and security interest 84% of Hindi news users and entertainment 75%, business
@@ -184,9 +185,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   India-only, special-topic lane produced one or two.
 - Breaking news (under 12 hours old with fame 400k+, or an incident five independent outlets report, two of them
   official, public or international; or an earthquake USGS rates magnitude 7+ or PAGER orange/red) goes out at any
-  hour with no gap, up to two beyond the daily cap of six (`BREAKING_EXTRA`; YouTube refuses this channel's uploads past about ten a
-  day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included, and the regular and case lanes
-  stop two uploads short of it, so however many Shorts were retired the last two uploads of the day stay free for
+  hour with no gap, up to two beyond the daily cap of four (`BREAKING_EXTRA`; YouTube refuses this channel's uploads
+  past about ten a day, so `plan.YOUTUBE_DAILY_UPLOADS` bounds every upload, retired ones included, and the regular
+  and case lanes stop two uploads short of it (`UPLOAD_RESERVE`, its own switch since 2026-10-22), so however many Shorts were retired the last two uploads of the day stay free for
   breaking news; the margin also covers YouTube counting a different day from the desk's IST day). Wars and
   ongoing protests never take the breaking lane.
 - **Big incidents are told while they happen (2026-10-14; owner: "these two channels should be fully active and
@@ -215,7 +216,7 @@ The desk is India-first and runs unattended; it decides what goes out and when.
     apart, each from at least two owners' reports no earlier version used, kh- and nw- stories alike;
   - a case the whole country is following gets a case file (`cases/*.json`): one Short per angle (the family's
     response, the industry's, the probe, the government's, the scene), each from reports chosen for that angle,
-    ahead of the other ready stories and inside the daily cap and the 20-minute gap. A case Short names only the
+    ahead of the other ready stories and inside the daily cap and the 90-minute gap. A case Short names only the
     people, places and bodies its file lists (`writer.off_case`): an accused is never named, only how many, where
     they are from, where they were caught and what police say. The file's `never` list (an accused's or a gang's
     name, in English and Hindi) may not appear anywhere in the script, and headlines carrying one are dropped. Its
@@ -552,3 +553,4 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 | 2026-10-22 | YPP push, batch 3: the About says what the desk does (economy, prices, jobs, schemes, science; named newsrooms plus Wikipedia/Wikidata; two outlets; AI voice and AI-assisted script; human-made editorial rules; corrections by comment or email, no pinned comment) and drops हादसे/युद्ध; series playlists by ad-friendly topic family with Home sections; the title hashtag is whom the title names; Latin digits and one spelling per famous name; a "कैसे बनी" line in descriptions. All channel writes are owner-gated (`DESK_UNTAG` words), capped and idempotent. | JEm0Ivq1_74 (Ashutosh Ranka story) carried #sauravdas because `upload_title` always took `hashtags[0]`, the explainer centre's tag, while the writer's title led with Ranka; its ledger article "Sourav Das (actor)" also looks like a wrong entity match (not fixed here). The old About promised a pinned correction the desk never posts. YouTube Data API: `channels.update` replaces the whole `brandingSettings` part and needs its title; writes cost 50 units; the About allows 1,000 characters and keywords 500. No view or earnings promise is made. |
 | 2026-10-22 | Channel renamed Kyun Hua → मतलबनामा \| Matlabnama, handle @KyunHuaHindi → @Matlabnama (same channel id); About, keywords, playlist suffix and tags follow; repo variables `DESK_CHANNEL_NAME`, `DESK_CHANNEL_NAME_HI`, `DESK_CHANNEL_HANDLE` set | "Kyun Hua" names one beat of the format (why it happened) while every Short also says what happened and what it means for the viewer; it read as an unfinished phrase in search and on the end card. "मतलबनामा" ("the meaning, in writing") names the promise, is one searchable word, and had no existing YouTube channel. Decision note: `audit/kyun-hua-name-decision.md` |
 | 2026-10-22 | P0-8, the world rule narrowed: a story from abroad with no India connection (`orbitwire.india_connection`) is dropped only when it is a statement (any explainer), politics, diplomacy or a "world" story (`plan.foreign_only`, checked first in `plan.unpopular`, so neither fame nor unreadable lists keep it); world deaths, air incidents, storms, quakes, floods, accidents and disasters (`plan.WORLD_KEPT`) and case angles are told without one. The old branch (a world explainer must be in the Hindi lists) is deleted, not stacked: Hindi lead stories naming an explainer's centre already make its `india_link`. A story of no known region is not judged by it. | State branch, 2026-10-21 (74 rows): foreign statements median 16 views, White House, Pope and Starlink statements 0-35; world deaths, air incidents and storms 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane Isaias 104). No view or earnings promise is made. |
+| 2026-10-22 | P0-7, cadence: at most four routine Shorts an IST day (`plan.MAX_PER_DAY`, was six) and 90 minutes apart (`plan.MIN_GAP`, was 20; case angles on the spare slots wait it too); breaking news and case angles keep two more (`BREAKING_EXTRA`), so six at most. The YouTube-limit reserve is its own switch (`UPLOAD_RESERVE`=2, was `BREAKING_EXTRA`). `EVENING_RESERVE` is removed, not kept at 1: holding a ready story for 18:00 IST is the slot hold the owner's "timing is the channel" rules out, and with a cap of four it would have held half the day. `plan.SLOT_WEIGHT` (06:00-09:00 and 18:00-20:00 IST x1.2, 12:00-14:00 x0.8) is recorded on every ready Short and is the last sort key in `plan.lineup`, never a hold; every Short ready in one run shares that run's hour, so it cannot reorder them by itself: it is a hypothesis the scorecard reads from the hour. | State branch, 2026-10-21 (74 rows): 7.9 Shorts a day for 15-21 Oct; days with 6 or fewer Shorts median 64 views vs 36.7 on days with 8-10; Shorts 1-4 of a day median 55, the 5th or later 35.7. Median at 24 h by IST hour: 06-08 55 (n=10), 08-09 73 (4), 09-12 35 (13), 12-14 27 (7), 14-18 44 (17), 18-20 88.8, 63.5 without Tiger (9), 20-24 34 (5): 4-17 Shorts a bucket, a hypothesis only. No view or earnings promise is made. |
