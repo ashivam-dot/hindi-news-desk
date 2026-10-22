@@ -135,14 +135,17 @@ def denies_death(text: str, names: list[str]) -> str | None:
 
 # A named person's demand, allegation, words or order are said only as the reporting gives them: YM2dyGiYNJQ ("राउत
 # की फडणवीस से इस्तीफे की मांग", 2026-10-20) gave Sanjay Raut the resignation demand Congress's Harshwardhan Sapkal
-# made; Raut alleged "jungle raj" and asked for President's Rule. Each claim: its Hindi words, then its English ones.
+# made; Raut alleged "jungle raj" and asked for President's Rule. Each claim: its Hindi words, then the other words
+# reports back it with.
 CLAIMS = {
     "demand": (["मांग", "मांगा", "मांगी", "मांगे"],
                ["demand*", "call for", "calls for", "called for", "calling for", "sought", "seek*", "urg*",
                 "asked for", "asks for"]),
     "allegation": (["आरोप", "आरोपों"], ["alleg*", "accus*", "charg*", "blam*"]),  # never आरोपी (the accused)
+    # A report's words for saying are many ("claimed", "wrote on X", "बताया"); a Short's are कहा and बोले.
     "statement": (["कहा", "कही", "कहना", "कहते", "बोले", "बोलीं", "बोला"],
-                  ["said", "says", "say", "told", "stated", "according to"]),
+                  ["said", "says", "say", "saying", "claim*", "told", "stated", "added", "asserted", "wrote", "posted",
+                   "according to", "बताया", "लिखा"]),
     "order": (["आदेश", "आदेशों", "निर्देश", "निर्देशों"], ["order*", "direct*", "instruct*"]),
 }
 # What a claim is about, when its clause says: the reporting's sentence must say it too.
@@ -155,21 +158,27 @@ OBJECTS = {
     "dismissal": (["बर्खास्त*"], ["dismiss*", "sack*"]),
 }
 # ने, की, का or के after a name marks who makes the claim ("राउत की ... मांग"); से, को or पर marks who it is put to.
-CLAIMANT = re.compile(r"\s*(?:ने|की|का|के)" + hindi._END)
+# की, का or के with a ने before the claim word is whose, not who: "इमरान खान के वकील ने कहा" is the lawyer's.
+CLAIMANT = re.compile(r"\s*(ने|की|का|के)" + hindi._END)
+# Words that end many institutions' names and so never name one alone: "बॉम्बे हाई कोर्ट" is not "Supreme Court".
+NOT_A_SURNAME = {"court", "कोर्ट", "अदालत", "ministry", "मंत्रालय", "commission", "आयोग", "government", "सरकार",
+                 "police", "पुलिस", "party", "पार्टी", "department", "विभाग", "council", "परिषद", "office", "कार्यालय"}
 
 
 def _name_forms(p: dict) -> list[str]:
-    """A names entry as reports write it: in full, or by its last word (Raut for Sanjay Raut)."""
+    """A names entry as reports write it: in full, or by its last word (Raut for Sanjay Raut), unless that word ends
+    many names (NOT_A_SURNAME)."""
     forms = [f for f in (p.get("hi"), p.get("en")) if f]
-    return forms + [f.split()[-1] for f in forms if len(f.split()) > 1 and len(f.split()[-1]) >= 3]
+    return forms + [f.split()[-1] for f in forms if len(f.split()) > 1 and len(f.split()[-1]) >= 3
+                    and hindi.norm(f.split()[-1]) not in {hindi.norm(w) for w in NOT_A_SURNAME}]
 
 
 def claims(text: str, names: list[dict]) -> list[tuple[dict, str, str | None, str]]:
     """(names entry, claim, its OBJECTS key or None, the sentence) for each Hindi claim word in text that a listed name
     makes. Within a sentence the claimant is the nearest name before the word that ने/की/का/के marks, skipping one
-    whose marker an object follows (फडणवीस के इस्तीफे: whose resignation, not who asks), or else a name right before
-    it ("राउत बोले"). The object is the first OBJECTS word between the claimant and the claim word, and after the
-    sentence's previous claim word."""
+    whose की/का/के an object or another ने follows (फडणवीस के इस्तीफे: whose resignation, not who asks; इमरान खान के
+    वकील ने: the lawyer), or else a name right before it ("राउत बोले"). The object is the first OBJECTS word between
+    the claimant and the claim word, and after the sentence's previous claim word."""
     out = []
     for s in SENTENCE.split(text or ""):
         low = hindi.norm(s)
@@ -182,7 +191,10 @@ def claims(text: str, names: list[dict]) -> list[tuple[dict, str, str | None, st
             who = None
             for a, b, p in sorted((h for h in heard if h[1] <= start), key=lambda h: -h[1]):
                 m = CLAIMANT.match(low, b)
-                if m and not any(o[0] == m.end() + 1 or o[0] == m.end() for o in objects):
+                whose = m and m.group(1) != "ने"
+                if whose and _at(low[m.end():start], ["ने"]):
+                    continue
+                if m and not (whose and any(o[0] == m.end() + 1 or o[0] == m.end() for o in objects)):
                     who = (b, p)
                     break
                 if not low[b:start].strip(" ,:'\"‘’“”"):

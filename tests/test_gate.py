@@ -288,6 +288,24 @@ def test_a_claim_attributed_as_the_reporting_does_passes():
     assert gate.unattributed("सपकाल ने फडणवीस के इस्तीफे की मांग की।", RAUT_NAMES, RAUT_REPORTS) == []
 
 
+def test_whose_is_not_who_and_an_institutions_last_word_names_no_one():
+    # The 2026-10-22 correctness review's false refusals.
+    imran, court = [{"hi": "इमरान खान", "en": "Imran Khan"}], [{"hi": "सुप्रीम कोर्ट", "en": "Supreme Court"}]
+    assert gate.claims("इमरान खान के वकील ने कहा कि सुनवाई टली।", imran) == []  # the lawyer's words
+    assert gate.claims("बॉम्बे हाई कोर्ट ने जांच का आदेश दिया।", court) == []  # another court
+    assert [(c, o) for _, c, o, _ in gate.claims("सुप्रीम कोर्ट ने जांच का आदेश दिया।", court)] == [("order", "probe")]
+    # ने is who, whatever follows it: an object right after it is still this name's claim.
+    assert [(w["en"], c, o) for w, c, o, _ in gate.claims("राउत ने जांच की मांग की।", RAUT_NAMES)] == [
+        ("Sanjay Raut", "demand", "probe")]
+    # Reports write saying many ways: "claimed", "wrote on X", बताया.
+    rahul = [{"hi": "राहुल गांधी", "en": "Rahul Gandhi"}]
+    reports = [{"owner": "A", "title": "", "text": "Rahul Gandhi claimed votes were being stolen in Bihar."},
+               {"owner": "B", "title": "", "text": "Rahul Gandhi wrote on X that votes are being stolen."},
+               {"owner": "C", "title": "", "text": "राहुल गांधी ने बताया कि बिहार में वोट चोरी हो रही है।"}]
+    said = "राहुल गांधी ने कहा कि बिहार में वोट चोरी हो रही है।"
+    assert gate.unattributed(said, rahul, reports[:2]) == [] and gate.unattributed(said, rahul, reports[1:]) == []
+
+
 def test_one_owner_is_not_enough_and_a_claim_needs_a_named_claimant():
     # In English only The Hindu has Raut alleging anything; the Hindi report's owner was the second.
     assert gate.unattributed(RAUT_RIGHT, RAUT_NAMES, RAUT_REPORTS[:2])
