@@ -181,6 +181,16 @@ def kinds(ent: dict) -> set[str]:
     return {c["value"] for c in wiki.claims(ent, "P31")}
 
 
+def names_place(title: str, ent: dict, en: str) -> bool:
+    """The hit is the place the script names: its title, English label or an English alias holds the name as whole
+    words ("Kota, Rajasthan" for Kota, Mumbai's alias "Bombay"), not just the story city a "<name> <city>" search
+    fell back to."""
+    want = re.escape(en.strip().lower())
+    names = [title, ((ent.get("labels") or {}).get("en") or {}).get("value", "")] \
+        + [a.get("value", "") for a in (ent.get("aliases") or {}).get("en", [])]
+    return any(re.search(rf"(?<!\w){want}(?!\w)", n.lower()) for n in names if n)
+
+
 def _hit(q: str, en: str, india: bool) -> tuple[str, str, dict] | None:
     title = wiki.search(q)
     qid = (wiki.page_info([title]).get(title) or {}).get("qid") if title else None
@@ -194,6 +204,8 @@ def _hit(q: str, en: str, india: bool) -> tuple[str, str, dict] | None:
     if media.place_like(ent) and not kinds(ent) & COUNTRY_KINDS:
         if india and INDIA not in {c["value"] for c in wiki.claims(ent, "P17")}:
             return None
+        if not names_place(title, ent, en):
+            return None  # "Belonging Delhi" (a book's title next to the story city) found Delhi (39747949900)
         if title.lower().startswith(en.lower() + " "):
             return None  # "Ramlila" (the play) found "Ramlila Maidan", a ground across Delhi from the event
         return qid, title, ent

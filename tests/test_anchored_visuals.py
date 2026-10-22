@@ -101,6 +101,27 @@ def test_jantar_mantar_ranked_by_story_city(monkeypatch, items):
     assert writer.dateline([{"text": "In Chamoli, teams reached 14 villages"}]) is None  # no dateline
 
 
+
+def test_a_book_title_beside_the_story_city_is_no_place(monkeypatch, items):
+    """Sonia Gandhi's book 'बिलोंगिंग' (dry run 39747949900): "Belonging New Delhi" found Delhi and "Italy New Delhi"
+    found New Delhi, and both went up as their maps. A place hit must hold the name the script said."""
+    places = {"Belonging": "Belonging", "Belonging New Delhi": "Delhi", "Belonging, India": "India",
+              "Italy": "Italy", "Italy New Delhi": "New Delhi", "Italy, India": "India–Italy relations",
+              "Bombay": "Mumbai"}
+    ents = {"Belonging": {"P31": ["Q7725634"]}, "Delhi": {"P17": ["Q668"], "at": (28.61, 77.21)},
+            "India": {"P31": ["Q6256"], "at": (22.0, 79.0)}, "Italy": {"P31": ["Q6256"], "at": (42.0, 12.0)},
+            "New Delhi": {"P17": ["Q668"], "at": (28.61, 77.21)}, "India–Italy relations": {"P31": ["Q15221623"]},
+            "Mumbai": {"P17": ["Q668"], "at": (19.07, 72.88), "aliases": {"en": [{"value": "Bombay"}]}}}
+    monkeypatch.setattr(wiki, "search", lambda q: places.get(q))
+    monkeypatch.setattr(wiki, "page_info", lambda titles: {t: {"qid": t} for t in titles})
+    monkeypatch.setattr(wiki, "entities", lambda qids: {q: ents[q] for q in qids})
+    monkeypatch.setattr(media, "place_like", lambda ent: bool(ent.get("at")))
+    monkeypatch.setattr(visuals, "COUNTRY_KINDS", {"Q6256"})
+    near = {"en": "New Delhi", "at": (28.61, 77.21)}
+    assert visuals.resolve("Belonging", True, near) is None
+    assert visuals.resolve("Italy", True, near) is None
+    assert visuals.resolve("Bombay", True)[1] == "Mumbai"  # an alias names it
+
 def test_raut_label_dropped():
     """A card names only what its picture shows: "संजय राउत" under Tiger Shroff (39546660530's sibling), "वनतारा
     केंद्र" over the Jamnagar map (39714003987)."""
