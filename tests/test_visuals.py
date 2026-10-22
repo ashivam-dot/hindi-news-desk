@@ -112,10 +112,15 @@ def test_a_long_beat_cuts_between_words_to_its_second_picture():
     beat = {"photo": 1, "views": [1, 4], "start": 0.0, "end": 6.0, "motion": compose.MOTIONS[0], "outro": False}
     short_beat = beat | {"views": [2], "photo": 2, "start": 6.0, "end": 8.0}
     words = [{"start": s, "end": s + 0.4, "text": "x"} for s in (0.2, 1.0, 2.1, 2.9, 3.6, 4.5, 6.2)]
-    seen = compose.views([beat, short_beat], words)
+    seen = compose.views([beat, short_beat], words, anchored=False)  # the legacy matcher: at the middle
     assert [(s["photo"], s["start"], s["end"], s["cut"]) for s in seen] == \
         [(1, 0.0, 2.9, False), (4, 2.9, 6.0, True), (2, 6.0, 8.0, False)]
-    alone = compose.views([beat | {"views": [1]}], words)
+    # Anchored (SYNC-AUDIT 4.1 step 6): the second picture only on the word naming it; with no cut word, the same
+    # photo closer.
+    seen = compose.views([beat, short_beat], words)
+    assert [(s["photo"], s["start"], s["cut"]) for s in seen[:2]] == [(1, 0.0, False), (1, 2.9, True)]
+    assert seen[1]["motion"] is compose.TIGHT
+    alone = compose.views([beat | {"views": [1]}], words, anchored=False)
     assert alone[1]["photo"] == 1 and alone[1]["motion"] is compose.TIGHT
 
 

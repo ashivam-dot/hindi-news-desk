@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
 # A death no news report states yet is retried: Wikidata's P570 often comes before the outlets' items are read.
 RETRYABLE = ("words (want", "does not confirm the death", "no news report states the death", "usable photos",
-             "no draft passed", "came out garbled", "orbitwire", "pictures:")
+             "no draft passed", "came out garbled", "orbitwire", "pictures:", "text cards", "too few showable")
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")
@@ -71,7 +71,16 @@ def make(target: str | dict, short=None, preview: bool = False) -> tuple[object,
     stats["voice"] = {k: timing["voice"].get(k) for k in ("engine", "identity", "preview", "served_model", "wpm",
                                                           "coverage", "tempo")}
     (work / "render.json").write_text(json.dumps(stats, indent=1, ensure_ascii=False), encoding="utf-8")
+    # The second of the gate's three runs (prepare, here, publish): the picture time shares as rendered.
+    if problems := gate.shown_is_said(short, stats.get("views")):
+        raise ValueError("gate: " + "; ".join(problems))
     return short, stats
+
+
+def rendered_views(work: Path) -> list[dict] | None:
+    """render.json's views ({start, end, photo, beat_k, plate}), or None for a Short rendered before they existed."""
+    path = work / "render.json"
+    return json.loads(path.read_text(encoding="utf-8")).get("views") if path.exists() else None
 
 
 def overlap_record(short) -> dict | None:
@@ -121,6 +130,8 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     work = WORK / story_id
     short = Short.load(work / "short.json")
     problems = gate.check(short)
+    if (views := rendered_views(work)) is not None:  # the gate's third run, with the time shares as rendered
+        problems += [p for p in gate.shown_is_said(short, views) if p not in problems]
     if problems:
         raise ValueError("gate: " + "; ".join(problems))
     refused = publish_refusal(short, work, datetime.now(timezone.utc))

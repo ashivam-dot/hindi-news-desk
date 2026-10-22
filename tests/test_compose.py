@@ -123,15 +123,21 @@ def test_bulletin_layers_fit_the_frame():
     assert recap[1].shape[0] < compose.TICKER_Y - compose.WIN_Y
 
 
-def test_the_place_stamp_follows_the_maps_and_the_burst_flashes_the_other_pictures():
+def test_the_place_stamp_follows_the_maps_and_the_burst_flashes_beat_ones_pictures():
+    """SYNC-AUDIT 4.1 step 6: the stamp names only the picture under it, and the opening flash shows only what beat 1
+    names (it used to flash every picture, the Kota maps included, over a line about Tiger Shroff)."""
     photos = [{"role": None}, {"role": "map", "who": "जुहू, मुंबई"}, {"role": "person", "who": "जैकी श्रॉफ"},
-              {"role": "map", "who": "सूरत - कोटा जंक्शन"}, {"role": "place", "who": "कोटा जंक्शन"}]
-    photos.append({"role": "map", "who": "मुंबई"})
-    seen = [{"photo": 0, "start": 0.0}, {"photo": 1, "start": 3.0}, {"photo": 5, "start": 4.5}, {"photo": 2, "start": 6.0},
-            {"photo": 3, "start": 9.0}, {"photo": 4, "start": 12.0}, {"photo": 0, "start": 15.0, "outro": True}]
-    assert compose.places_on(seen, photos) == [(0.0, "जुहू, मुंबई"), (9.0, "कोटा जंक्शन")]
-    assert compose.burst(seen, photos) == [1, 5, 2, 3, 4]
-    assert compose.burst(seen[:3], photos) == []
+              {"role": "map", "who": "सूरत - कोटा जंक्शन"}, {"role": "place", "who": "कोटा जंक्शन"},
+              {"role": "map", "who": "मुंबई"}, {"role": None}, {"role": None}, {"role": None, "vet": "a childhood photo"}]
+    seen = [{"photo": 0, "start": 0.0, "end": 3.0, "beat_k": 0}, {"photo": 1, "start": 3.0, "end": 4.5, "beat_k": 0},
+            {"photo": 5, "start": 4.5, "end": 6.0, "beat_k": 1}, {"photo": 2, "start": 6.0, "end": 9.0, "beat_k": 2},
+            {"photo": 3, "start": 9.0, "end": 12.0, "beat_k": 3}, {"photo": 4, "start": 12.0, "end": 15.0, "beat_k": 3},
+            {"photo": 0, "start": 15.0, "end": 16.0, "beat_k": 4, "outro": True}]
+    assert compose.places_on(seen, photos) == [(3.0, 4.5, "जुहू, मुंबई"), (4.5, 6.0, "मुंबई"),
+                                               (9.0, 15.0, "कोटा जंक्शन")]
+    assert compose.burst(seen, photos) == [1, 6, 7]  # Tiger's other photos and Juhu; never Mumbai, Jackie or Kota
+    assert compose.burst(seen, photos[:7]) == []  # too few
+    assert compose.burst([v | {"plate": "card"} if v["beat_k"] == 0 else v for v in seen], photos) == []
     hook = compose._hookcard_layer("तीनों आरोपी कोटा में पकड़े गए")
     stamp = compose._place_layer("जुहू, मुंबई")
     assert hook[1].shape[1] <= compose.W - 200 and hook[1].shape[0] < compose.WIN_H // 2

@@ -19,7 +19,7 @@ import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, features
 
-from . import config, depth, hindi, music
+from . import config, depth, hindi, match, music
 from .spec import Short, shot_photos
 
 W, H, FPS = 1080, 1920, 30
@@ -738,23 +738,105 @@ TIGHT = {"z": (1.24, 1.32), "dz": (0.02, 0.03), "pan": (0, 0, 0, -12), "par": (0
 MAP_TAG = "नक्शा"
 
 
-def views(shots: list[dict], words: list[dict]) -> list[dict]:
-    """The pictures on screen in order. A beat longer than CUT_AFTER cuts, at the word nearest its middle, to its
-    second picture (shot["views"]), or to the same photo closer when it has none."""
+CUT_EDGE = 1.2  # seconds a named cut keeps from each end of its beat, else the beat stays on its picture (4.0)
+
+
+def cut_time(shot: dict, words: list[dict], k: int) -> float | None:
+    """When beat k says its cut word (SYNC-AUDIT 4.0): the timed word whose hindi.norm matches the cut word's first
+    token (the one nearest where the text says it, when it is said twice), else that place in the text mapped onto
+    the beat's spoken time, since whisper's words drift from the script's ("वंतारा" for "वनतारा"). None when there is
+    no cut word, or the time is within CUT_EDGE of either end of the beat."""
+    token = ((shot.get("cut_word") or "").split() or [""])[0].strip(match.PUNCT)
+    if not token:
+        return None
+    timed = any("beat" in w for w in words)
+    mine = [w for w in words if (w.get("beat") == k if timed else shot["start"] <= w["start"] < shot["end"])]
+    s0, s1 = (mine[0]["start"], mine[-1]["end"]) if mine else (shot["start"], shot["end"])
+    say = shot["beat"].text if shot.get("beat") is not None else shot.get("say", "")
+    at = hindi.find(say, token)
+    at = say.find(token) if at < 0 else at
+    guess = s0 + (s1 - s0) * at / max(len(say), 1) if at >= 0 else None
+    hits = [w["start"] for w in mine if hindi.norm(w["text"].strip(match.PUNCT)) == hindi.norm(token)]
+    t = min(hits, key=lambda h: abs(h - guess)) if hits and guess is not None else (hits or [guess])[0]
+    if t is None or not shot["start"] + CUT_EDGE <= t <= shot["end"] - CUT_EDGE:
+        return None
+    return t
+
+
+def views(shots: list[dict], words: list[dict], anchored: bool | None = None) -> list[dict]:
+    """The pictures on screen in order, each {.., photo, start, end, motion, beat_k, cut, plate}. Anchored (config.
+    MATCHER, SYNC-AUDIT 4.1 step 6): a beat cuts to its second picture only on the word that names it (cut_time),
+    never at its middle: the Rubio Short cut to the Vantara map at the middle of a line about crude oil. Otherwise
+    a beat longer than CUT_AFTER cuts, at the word nearest its middle, to the same photo closer; a text card never
+    cuts. The legacy matcher cuts every long beat at its middle to its second picture, as before."""
+    anchored = config.MATCHER != "legacy" if anchored is None else anchored
     out = []
     for k, shot in enumerate(shots):
-        if shot["outro"] or shot["end"] - shot["start"] < CUT_AFTER:
-            out.append(shot | {"beat_k": k, "cut": False})
+        base = shot | {"beat_k": k, "cut": False, "plate": shot.get("plate") or ""}
+        alt = (shot.get("views") or [])[1:2]
+        if shot["outro"] or base["plate"] == match.CARD:
+            out.append(base)
+            continue
+        at = cut_time(shot, words, k) if anchored and alt else None
+        if at is not None:
+            out += [base | {"end": at}, base | {"photo": alt[0], "start": at, "motion": MOTIONS[(k + 2) % len(MOTIONS)],
+                                                "cut": True}]
+            continue
+        if shot["end"] - shot["start"] < CUT_AFTER:
+            out.append(base)
             continue
         mid = (shot["start"] + shot["end"]) / 2
-        starts = [w["start"] for w in words if shot["start"] + 1.2 < w["start"] < shot["end"] - 1.2]
+        starts = [w["start"] for w in words if shot["start"] + CUT_EDGE < w["start"] < shot["end"] - CUT_EDGE]
         at = min(starts, key=lambda s: abs(s - mid)) if starts else mid
-        alt = (shot.get("views") or [])[1:2]
-        photo = alt[0] if alt else shot["photo"]
+        photo = alt[0] if alt and not anchored else shot["photo"]
         motion = TIGHT if photo == shot["photo"] else MOTIONS[(k + 2) % len(MOTIONS)]
-        out += [shot | {"end": at, "beat_k": k, "cut": False},
-                shot | {"photo": photo, "start": at, "motion": motion, "beat_k": k, "cut": True}]
+        out += [base | {"end": at}, base | {"photo": photo, "start": at, "motion": motion, "cut": True}]
     return out
+
+
+def view_record(seen: list[dict]) -> list[dict]:
+    """render.json's views: what was on screen when, for the gate's time shares (gate.shown_is_said) and the
+    frame-montage review."""
+    return [{"start": round(v["start"], 2), "end": round(v["end"], 2), "photo": v["photo"], "beat_k": v["beat_k"],
+             "plate": v.get("plate") or ""} for v in seen if not v.get("outro")]
+
+
+def card_starts(shots: list[dict], seen: list[dict]) -> dict[int, float]:
+    """{beat: when its card comes up}: when the picture the card sits over (Beat.card_view) is on screen; a beat whose
+    card picture never comes up (its cut fell inside CUT_EDGE) has none, so "जामनगर" never sits over Rubio."""
+    out = {}
+    for k, shot in enumerate(shots):
+        want = (shot.get("views") or [shot["photo"]])
+        want = want[min(shot.get("card_view") or 0, len(want) - 1)]
+        at = next((v["start"] for v in seen if v["beat_k"] == k and v["photo"] == want), None)
+        if at is not None:
+            out[k] = at
+    return out
+
+
+def card_backdrop(rgb: np.ndarray | None) -> np.ndarray:
+    """A text card's background (SYNC-AUDIT 4.0): the channel's plain navy for a harm, accused or loss line (no
+    face blurred behind "दो घायल"), else a dark blur of the last anchored picture."""
+    navy = np.array(NEWS_NAVY, np.float32)
+    if rgb is None:
+        y = np.linspace(0.0, 1.0, H, dtype=np.float32)[:, None, None]
+        return np.broadcast_to(navy * (1.15 - 0.5 * y), (H, W, 3)).astype(np.uint8)
+    y0, x0 = max((rgb.shape[0] - H) // 2, 0), max((rgb.shape[1] - W) // 2, 0)
+    small = cv2.resize(rgb[y0:y0 + H, x0:x0 + W], (W // 8, H // 8), interpolation=cv2.INTER_AREA)
+    big = cv2.resize(cv2.GaussianBlur(small, (0, 0), 6), (W, H), interpolation=cv2.INTER_LINEAR).astype(np.float32)
+    return np.clip(big * 0.32 + navy * 0.45, 0, 255).astype(np.uint8)
+
+
+def _textcard_layer(big: str, small: str) -> tuple[np.ndarray, np.ndarray] | None:
+    """A text card's words, large and centred: what the beat says when it names nothing a picture can show."""
+    big, small = drawable(big, "ExtraBold"), drawable(small, "Bold")
+    if not big:
+        return None
+    width = W - 160
+    parts = [(r, _fit("ExtraBold", 96, r, width, 48), (255, 255, 255, 255)) for r in wrap2(big, "ExtraBold", 96, width)]
+    if small:
+        parts.append((small, _fit("Bold", 54, small, width, 30), NEWS_GOLD + (255,)))
+    return _rgba(_text_layer(parts, stroke=4, gap=26))
 
 
 def _name_layer(name: str) -> tuple[np.ndarray, np.ndarray]:
@@ -808,25 +890,37 @@ def _place_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
     return _rgba(img)
 
 
-def places_on(seen: list[dict], photos: list[dict]) -> list[tuple[float, str]]:
-    """[(from when, place)] for the place stamp: the first place a map or landmark photo shows, from the start, then
-    each new one as it comes on screen (a route's stamp is where it ends). "जुहू, मुंबई" never gives way to the
-    "मुंबई" or "जुहू" it already names."""
-    out: list[tuple[float, str]] = []
+def places_on(seen: list[dict], photos: list[dict]) -> list[tuple[float, float, str]]:
+    """[(from, until, place)] for the place stamp: while a map or a place's photo is on screen, the place it shows (a
+    route's is where it ends), and never longer. A stamp names only the picture under it: one held from the first
+    map put Begusarai over Tiger Shroff (c5d6ebc), and "जुहू, मुंबई" stayed over the Mumbai map."""
+    out: list[tuple[float, float, str]] = []
     for v in seen:
+        if v.get("outro") or v.get("plate") == match.CARD:
+            continue
         p = photos[v["photo"]]
         where = (p.get("who") or "").split(" - ")[-1].strip() if p.get("role") in ("map", "place") else ""
-        if where and (not out or where not in [s.strip() for s in out[-1][1].split(",")] + [out[-1][1]]):
-            out.append((v["start"], where))
-    return [(0.0, out[0][1])] + out[1:] if out else []
+        if not where:
+            continue
+        if out and out[-1][2] == where and abs(out[-1][1] - v["start"]) < 1e-6:
+            out[-1] = (out[-1][0], v["end"], where)
+        else:
+            out.append((v["start"], v["end"], where))
+    return out
 
 
-def burst(seen: list[dict], photos: list[dict]) -> list[int]:
-    """The opening flash: the Short's other pictures in the order they come, maps and portraits alike, or [] when
-    there are too few to make one."""
-    first = seen[0]["photo"] if seen else None
-    pics = [i for i in dict.fromkeys(v["photo"] for v in seen if not v.get("outro")) if i != first and i in
-            range(len(photos))][:BURST_MAX]
+def burst(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[int]:
+    """The opening flash, over beat 1's words: other pictures of what beat 1 shows (match.depicts of its views), in
+    the order they come and then the rest of the pool, never a vetted-out photo; [] when there are too few. It once
+    flashed every picture of the Short, maps of places the voice reaches a minute later included."""
+    first = [v for v in seen if v.get("beat_k") == 0 and v.get("plate") != match.CARD and not v.get("outro")]
+    if not first:
+        return []
+    keys = set().union(*(match.depicts(v["photo"], photos[v["photo"]], cast) for v in first))
+    order = dict.fromkeys([v["photo"] for v in seen if not v.get("outro") and v.get("plate") != match.CARD]
+                          + list(range(len(photos))))
+    pics = [i for i in order if i != first[0]["photo"] and 0 <= i < len(photos) and not photos[i].get("vet")
+            and match.depicts(i, photos[i], cast) & keys][:BURST_MAX]
     return pics if len(pics) >= BURST_MIN else []
 
 
@@ -848,7 +942,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         idx = shown[0] if shown else (shots[-1]["photo"] if shots else 0)
         shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
                       "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
-                      "beat": beat, "outro": beat.shot == "outro"})
+                      "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
+                      "card_view": beat.card_view})
     seen = views(shots, timing["words"])
     cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
              if b["beat"].card and b["beat"].card.get("big") and not b["outro"] else None for b in shots]
@@ -875,8 +970,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     badge = _badge_layer()
     card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
     hook = _hookcard_layer(short.scene["hook"]) if short.scene.get("hook") else None
-    stamps = [(at, _place_layer(where)) for at, where in places_on(seen, photos)]
-    flash = [] if short.loss else burst(seen, photos)
+    stamps = [(at, until, _place_layer(where)) for at, until, where in places_on(seen, photos)]
+    flash = [] if short.loss else burst(seen, photos, match.cast_of(short))
     flash_end = len(flash) * BURST_STEP
     work.mkdir(parents=True, exist_ok=True)
     accents = None if short.loss else [s["start"] for s in shots[1:]] + ([flash_end] if flash else [])
@@ -938,10 +1033,10 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             if on in names:
                 _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
             _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
-            # Only over a map or a place's photo: over a portrait it would put Tiger Shroff in Begusarai.
-            stamp = next((s for at, s in reversed(stamps) if t >= at), None)
-            if stamp is not None and t >= flash_end and photos[on].get("role") in ("map", "place"):
-                _blit(frame, stamp, 24, WIN_Y + 20, min(0.97, (t - max(flash_end, view["start"])) / 0.3))
+            # Only over the map or place photo it names (places_on): over a portrait it put Tiger Shroff in Begusarai.
+            stamp = next(((at, s) for at, until, s in stamps if at <= t < until), None)
+            if stamp is not None and t >= flash_end and on == view["photo"]:
+                _blit(frame, stamp[1], 24, WIN_Y + 20, min(0.97, (t - max(flash_end, stamp[0])) / 0.3))
             if hook is not None and t < HOOK_HOLD:
                 a = min(1.0, t / 0.2, (HOOK_HOLD - t) / 0.3)
                 _blit(frame, hook, (W - hook[1].shape[1]) // 2, WIN_Y + WIN_H - hook[1].shape[0] - 160, a)
@@ -962,7 +1057,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "bulletin", "photos": len(photos),
-            "fps": FPS, "size": [W, H]}
+            "fps": FPS, "size": [W, H], "views": view_record(seen)}
 
 
 # The full-screen Short (owner, 2026-10-21: "you are not able to present the video properly"). The bulletin kept the
@@ -1015,7 +1110,8 @@ def name_straps(seen: list[dict], photos: list[dict]) -> dict[int, float]:
     for v, view in enumerate(seen):
         p = photos[view["photo"]]
         who = p.get("who")
-        if who and p.get("role") not in ("map", "place") and who not in named and not view.get("outro"):
+        if who and p.get("role") not in ("map", "place") and who not in named and not view.get("outro") \
+                and view.get("plate") != match.CARD:
             named.add(who)
             out[v] = view["start"]
     return out
@@ -1056,23 +1152,41 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
         idx = shown[0] if shown else (shots[-1]["photo"] if shots else 0)
         shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
                       "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
-                      "beat": beat, "outro": beat.shot == "outro"})
+                      "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
+                      "card_view": beat.card_view})
     seen = views(shots, timing["words"])
     pair = splits(shots, photos)
     half_plates = {i: Plate(photos[i], Path(photos[i]["path"]).with_suffix(".depth.npy"), size=half, face_share=0.42)
                    for ab in pair.values() for i in ab}
     end_at = next((s["start"] for s in shots if s["outro"]), speech + 0.15)
     big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
-    chips = [_fact_layer(big[k], b["beat"].card.get("small", ""), "") if k and big[k] and not b["outro"]
-             and big[k] != big[k - 1] else None for k, b in enumerate(shots)]
-    hook_text = (short.scene.get("hook") or big[0]) if shots else ""
+    small = [(b["beat"].card or {}).get("small", "").strip() for b in shots]
+    card = [b["plate"] == match.CARD for b in shots]
+    # A chip comes up with the picture it names (card_starts); beat 1's card is the hook card only when it sits over
+    # the opening picture.
+    chip_at = card_starts(shots, seen)
+    opens = bool(shots) and chip_at.get(0) == 0.0
+    hook_text = (short.scene.get("hook") or (big[0] if opens else "")) if shots else ""
+
+    def chipped(k: int) -> bool:
+        if not big[k] or shots[k]["outro"] or card[k] or k not in chip_at:
+            return False
+        return big[k] != hook_text if k == 0 else big[k] != big[k - 1] or card[k - 1]
+
+    chips = [_fact_layer(big[k], small[k], "") if chipped(k) else None for k in range(len(shots))]
     hook = _hookcard_layer(hook_text, size=84, width=W - 200) if hook_text else None
+    # A text card (SYNC-AUDIT 4.0): its words on the plain channel background for a harm, accused or loss line,
+    # else on a dark blur of the last anchored picture; no name strap, no place stamp, the photo's credit kept.
+    plain = [card[k] and match.plain(b["beat"].text, short.loss) for k, b in enumerate(shots)]
+    texts = [_textcard_layer(big[k] or small[k], small[k] if big[k] else "") if card[k] else None
+             for k in range(len(shots))]
+    backs = {k: card_backdrop(None if plain[k] else plates[b["photo"]].rgb) for k, b in enumerate(shots) if card[k]}
     strip = _strip_layer(label_for(short), NEWS_RED)
     badge = _badge_layer()
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
     names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
-    stamps = [(at, _place_layer(where)) for at, where in places_on(seen, photos)]
-    flash = [] if short.loss else burst(seen, photos)
+    stamps = [(at, until, _place_layer(where)) for at, until, where in places_on(seen, photos)]
+    flash = [] if short.loss else burst(seen, short.scene["photos"], match.cast_of(short))
     flash_end = len(flash) * BURST_STEP
     straps = {v: max(at, flash_end, HOOK_HOLD if hook_text else 0.0) for v, at in name_straps(seen, photos).items()}
     straps = {v: at for v, at in straps.items() if at < seen[v]["end"] - 0.6}
@@ -1092,15 +1206,20 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     still_at = {int(n * k / 5) for k in range(5)}
 
     def picture(view: dict, u: float, punch: float, i: int) -> tuple[np.ndarray, list[int]]:
+        """The view's frame, scrim applied, and the photos it shows ([] for a text card)."""
         k = view["beat_k"]
-        if view["cut"] and k in pair:
+        if card[k]:
+            return (backs[k] * shade).astype(np.uint8), []
+        # Both people only on a cut to the second (on its name), never on the same photo closer.
+        if view["cut"] and k in pair and view["photo"] != shots[k]["photo"]:
             a, b = pair[k]
             frame = np.zeros((H, W, 3), np.uint8)
             frame[:half[1]] = grade_half.apply(cam_half.shoot(half_plates[a], u, MOTIONS[1], punch), i)
             frame[H - half[1]:] = grade_half.apply(cam_half.shoot(half_plates[b], u, MOTIONS[3], punch), i)
             frame[half[1]:H - half[1]] = NEWS_GOLD
-            return frame, [a, b]
-        return grade.apply(cam.shoot(plates[view["photo"]], u, view["motion"], punch), i), [view["photo"]]
+            return (frame * shade).astype(np.uint8), [a, b]
+        frame = grade.apply(cam.shoot(plates[view["photo"]], u, view["motion"], punch), i)
+        return (frame * shade).astype(np.uint8), [view["photo"]]
 
     for i in range(n):
         t = i / FPS
@@ -1110,9 +1229,11 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
         shot = shots[k]
         u = (t - view["start"]) / max(view["end"] - view["start"], 0.1)
         punch = 0.03 * max(0.0, 1 - (t - view["start"]) / 0.35) if v else 0.06 * max(0.0, 1 - (t - flash_end) / 0.6)
+        src = view  # the view whose words, name and credit are on screen
         if t < flash_end:
             on = [flash[int(t / BURST_STEP)]]
-            frame = grade.apply(cam.shoot(plates[on[0]], 0.0, MOTIONS[on[0] % len(MOTIONS)], 0.05), i)
+            frame = (grade.apply(cam.shoot(plates[on[0]], 0.0, MOTIONS[on[0] % len(MOTIONS)], 0.05), i)
+                     * shade).astype(np.uint8)
         else:
             frame, on = picture(view, u, punch, i)
             if v and not view["cut"] and (t - view["start"]) * FPS < CROSSFADE:
@@ -1121,8 +1242,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
                 a = (t - view["start"]) * FPS / CROSSFADE
                 before, was = picture(prev, pu, 0.0, i)
                 frame = cv2.addWeighted(frame, a, before, 1 - a, 0)
-                on = on if a >= 0.5 else was
-        frame = (frame * shade).astype(np.uint8)
+                on, src = (on, view) if a >= 0.5 else (was, prev)
         split = len(on) == 2
         if t >= end_at:
             fade = min(1.0, (t - end_at) / 0.35)
@@ -1135,7 +1255,16 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
             _blit(frame, follow, (W - follow[1].shape[1]) // 2, y, fade)
             _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + follow[1].shape[0] + 30, fade)
         else:
-            if split:
+            ck = src["beat_k"]
+            if not on:
+                since = t - shots[ck]["start"]
+                if texts[ck] is not None:
+                    layer = texts[ck]
+                    _blit(frame, layer, (W - layer[1].shape[1]) // 2, round(H * 0.4) - layer[1].shape[0] // 2,
+                          min(1.0, max(since, 0.0) / 0.25))
+                if not plain[ck]:
+                    _blit(frame, credits[src["photo"]], 36, round(H * FULL_CREDIT_Y), 0.85)
+            elif split:
                 for j, p in enumerate(on):
                     y0 = 0 if j == 0 else H - half[1]
                     if p in names:
@@ -1147,15 +1276,15 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
                     a = min(1.0, (t - straps[v]) / 0.2, (NAME_HOLD - (t - straps[v])) / 0.3)
                     _blit(frame, names[p], 36, round(H * FULL_NAME_Y), a)
                 _blit(frame, credits[p], 36, round(H * FULL_CREDIT_Y), 0.85)
-                stamp = next((s for at, s in reversed(stamps) if t >= at), None)
-                if stamp is not None and t >= flash_end and photos[p].get("role") in ("map", "place"):
-                    _blit(frame, stamp, 36, top_y + (strip[1].shape[0] + 18 if strip is not None else 0),
-                          min(0.97, (t - max(flash_end, view["start"])) / 0.3))
+                stamp = next(((at, s) for at, until, s in stamps if at <= t < until), None)
+                if stamp is not None and t >= flash_end and p == view["photo"]:
+                    _blit(frame, stamp[1], 36, top_y + (strip[1].shape[0] + 18 if strip is not None else 0),
+                          min(0.97, (t - max(flash_end, stamp[0])) / 0.3))
             if hook is not None and t < HOOK_HOLD:
                 a = min(1.0, (HOOK_HOLD - t) / 0.3)
                 _blit(frame, hook, (W - hook[1].shape[1]) // 2, round(H * FULL_HOOK_Y) - hook[1].shape[0] // 2, a)
-            elif chips[k] is not None and t - shot["start"] < CHIP_HOLD:
-                since = t - shot["start"]
+            elif chips[k] is not None and 0 <= t - chip_at[k] < CHIP_HOLD:
+                since = t - chip_at[k]
                 a = min(1.0, since / 0.15, (CHIP_HOLD - since) / 0.3)
                 layer = chips[k]
                 if since < 0.15:
@@ -1177,4 +1306,4 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "full", "photos": len(photos),
-            "splits": len(pair), "fps": FPS, "size": [W, H]}
+            "splits": len(pair), "fps": FPS, "size": [W, H], "views": view_record(seen)}

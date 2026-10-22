@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import re
 
-from . import hindi, visuals
+from . import config, hindi, match, visuals
 from .spec import Short, shot_photos
 
 # Gore, sensationalism and clickbait never appear in a title, a card or the narration. A trailing * matches any
@@ -399,7 +399,9 @@ def _story(short: Short) -> list[str]:
     shown = [shot_photos(b.shot) for b in short.beats if b.shot.startswith("photo:")]
     if any(not s or max(s) >= len(photos) for s in shown):
         problems.append("beats: a beat points at a photo that does not exist")
-    # One portrait for a whole Short loses the viewer (Tiger Shroff, 2026-10-20: one photo for 47 s).
+    # One portrait for a whole Short loses the viewer (Tiger Shroff, 2026-10-20: one photo for 47 s). A text card's
+    # blurred backdrop is not a picture on screen (match.problems counts the cards against their own ceiling).
+    shown = [shot_photos(b.shot) for b in short.beats if b.shot.startswith("photo:") and b.plate != match.CARD]
     want = short.scene.get("min_visuals", visuals.MIN_VISUALS)
     if len({i for s in shown for i in s}) < min(want, len(shown)):
         problems.append(f"pictures: only {len({i for s in shown for i in s})} different ones on screen (want {want})")
@@ -408,11 +410,11 @@ def _story(short: Short) -> list[str]:
     return problems + said_is_shown(short)
 
 
-def said_is_shown(short: Short) -> list[str]:
+def said_is_shown(short: Short, views: list[dict] | None = None) -> list[str]:
     """What the voice says is what the screen shows: a beat that names a person the Short has a photo of shows
     them, and a person the title names is on screen. The Modi Dussehra Short (2026-10-21) named Narendra Modi in its
-    title and three beats and showed Delhi's temples and markets."""
-    problems = held(short)
+    title and three beats and showed Delhi's temples and markets. And the other way round (shown_is_said)."""
+    problems = held(short) + shown_is_said(short, views)
     beats = [(b.text, set(shot_photos(b.shot))) for b in short.beats if b.shot.startswith("photo:")]
     on_screen = set().union(*(s for _, s in beats)) if beats else set()
     for c in short.scene.get("cast") or []:
@@ -436,20 +438,37 @@ def said_is_shown(short: Short) -> list[str]:
     return problems
 
 
+def shown_is_said(short: Short, views: list[dict] | None = None) -> list[str]:
+    """What the screen shows is what the voice says (SYNC-AUDIT 4.1 step 7, match.problems): every picture is of
+    something its beat names, on screen at the right time of life and the right event, every card over its own
+    picture, a hook whose names the narration says, and the paired ceilings (maps at most 40% of the picture time,
+    cards at most half the beats and never three in a row, at most two pronoun beats, a place's maps one picture).
+    Three audits (2026-10-22) found 98 of 145 beats showing something the voice was not talking about; the gate
+    passed all of them. Run on the saved Short (cli.prepare, publish) and on render.json's views after the render.
+    The legacy matcher (config.MATCHER, the rollback) fills beats the old way, which this gate would refuse."""
+    if config.MATCHER == "legacy":
+        return []
+    return match.problems(short, views)
+
+
 HELD_RUN = 3  # beats in a row one picture may not fill
 
 
 def held(short: Short) -> list[str]:
     """No picture stands under HELD_RUN beats in a row or under more than half of a Short's beats. A place's wide
     and close maps count as one picture: the Kota court Short (2026-10-21) showed Kota's maps under six of seven
-    beats, the injured and the recovered motorcycle included."""
+    beats, the injured and the recovered motorcycle included. The grouping is match.group's (a spot's maps count with
+    its city's), and a text card's backdrop is not a picture held: the card ends the run."""
     photos = short.scene.get("photos") or []
+    groups = match.group(photos, match.cast_of(short))
 
     def key(i: int):
         p = photos[i] if i < len(photos) else {}
-        return p.get("file") if visuals.is_map(p) else i
+        g = groups.get(i, "")
+        return (g if g.startswith("place:") else p.get("file")) if visuals.is_map(p) else i
 
-    beats = [{key(i) for i in shot_photos(b.shot)} for b in short.beats if b.shot.startswith("photo:")]
+    beats = [{key(i) for i in shot_photos(b.shot)} if b.plate != match.CARD else set() for b in short.beats
+             if b.shot.startswith("photo:")]
     problems, counts, run = [], {}, {}
     for n, keys in enumerate(beats):
         for k in keys:

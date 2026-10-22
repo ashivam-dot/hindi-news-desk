@@ -1,0 +1,118 @@
+"""Shown is said (SYNC-AUDIT 4.1 step 7): the gate fails any picture the voice does not name, at prepare, after the
+render (render.json's views, for the time shares) and at publish. Three audits of 23 Shorts (2026-10-22) found 98 of
+145 beats showing something the voice was not talking about; the one clean Short (Jaishankar) must still pass."""
+import json
+import re
+from dataclasses import replace
+from pathlib import Path
+
+import pytest
+
+from desk import cli, compose, config, gate, match, voice
+
+from .test_cli import made  # noqa: F401
+from .test_match import applied, planned, short
+
+
+def beats_flagged(problems):
+    return {int(w) for p in problems for w in re.findall(r"(?:beat|card) (\d+) ", p)}
+
+
+def test_rubio_artifact_blocked():
+    # 39714003987: his 1989 yearbook photo, Mukesh Ambani at a gala, the Vantara map under crude oil and data centres.
+    bad = gate.said_is_shown(short("39714003987"))
+    assert beats_flagged(bad) == {1, 2, 3, 4, 5, 6}
+    assert "pictures: maps fill 67% of the picture time (at most 40%)" in bad
+
+
+def test_rubio_anchored_passes():
+    s = short("39714003987")
+    shots = [("photo:7/8", "", "जामनगर"), ("photo:10/8", "", "जामनगर"), ("photo:8", match.CARD, ""),
+             ("photo:4/11", "", "वनतारा"), ("photo:11", match.CARD, ""), ("photo:4", match.CARD, "")]
+    fixed = replace(s, beats=[replace(b, shot=sh, plate=pl, cut_word=w) for b, (sh, pl, w) in zip(s.beats, shots)])
+    assert gate.said_is_shown(fixed) == [] and gate.said_is_shown(short("39714003987-fixed")) == []
+    # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time.
+    views = [{"start": 0.35, "end": 3.5, "photo": 7, "beat_k": 0}, {"start": 3.5, "end": 6.14, "photo": 8, "beat_k": 0},
+             {"start": 6.14, "end": 10.0, "photo": 10, "beat_k": 1}, {"start": 10.0, "end": 12.1, "photo": 8, "beat_k": 1},
+             {"start": 12.1, "end": 17.66, "photo": 8, "beat_k": 2, "plate": match.CARD},
+             {"start": 17.66, "end": 20.6, "photo": 4, "beat_k": 3}, {"start": 20.6, "end": 23.52, "photo": 11, "beat_k": 3},
+             {"start": 23.52, "end": 29.46, "photo": 11, "beat_k": 4, "plate": match.CARD},
+             {"start": 29.46, "end": 35.47, "photo": 4, "beat_k": 5, "plate": match.CARD}]
+    assert gate.shown_is_said(fixed, views) == []
+    # The same Short cut to the Vantara map at the middle of beat 4 and held it for beats 5 and 6: maps over 40%.
+    late = views[:5] + [{"start": 17.66, "end": 18.0, "photo": 4, "beat_k": 3},
+                        {"start": 18.0, "end": 23.52, "photo": 11, "beat_k": 3}]
+    assert any("maps fill" in p for p in gate.shown_is_said(fixed, late))
+
+
+def test_accused_line_never_victim():
+    # "आरोपियों से पूछताछ..." over Tiger Shroff on a film set (39560243173 b5); "कोटा पुलिस ने ... इन्हें दबोच लिया"
+    # over Tiger Shroff in Bandra (39503061196 b4): the accused, pictured as the victim.
+    for name, k, victim in (("39560243173", 4, 6), ("39503061196", 3, 1)):
+        s = short(name)
+        assert any(p.startswith(f"pictures: beat {k + 1} shows photo {victim} ") for p in gate.said_is_shown(s))
+        rows, _ = planned(s)
+        assert rows[k]["plate"] == match.CARD  # it names no one a picture can show
+        assert not any(f"beat {k + 1} shows" in p for p in gate.said_is_shown(applied(s, rows)))
+    assert match.plain(short("39560243173").beats[4].text)  # and on the plain background, no face blurred behind
+
+
+def test_min_visuals_not_met_by_maps():
+    # Three maps of one city are one picture: Jamnagar, Vantara in Jamnagar, Vantara up close.
+    s = short("39714003987-fixed")
+    shots = ["photo:8", "photo:8", "photo:8", "photo:11/12", "photo:11", "photo:4"]
+    plates = ["", "", match.CARD, "", match.CARD, match.CARD]
+    maps = replace(s, beats=[replace(b, shot=sh, plate=pl) for b, sh, pl in zip(s.beats, shots, plates)],
+                   scene=s.scene | {"min_visuals": 3})
+    assert "pictures: only 1 different pictures once a place's maps count as one (want 3)" in gate.said_is_shown(maps)
+    assert gate.said_is_shown(replace(s, scene=s.scene | {"min_visuals": 3})) == []
+
+
+def test_jaishankar_clean_short_still_passes():
+    # The audits' one clean Short (0 of 7): only beat 7's known strictness ("आगे इस दौरे पर दोनों देशों के बीच..."
+    # names no one) is flagged, and planned it is a card and passes.
+    s = short("39411111185")
+    bad = gate.said_is_shown(s)
+    assert bad and all("beat 7 shows" in p for p in bad)
+    rows, _ = planned(s)
+    assert gate.said_is_shown(applied(s, rows)) == []
+
+
+def test_the_legacy_matcher_skips_the_gate(monkeypatch):
+    monkeypatch.setattr(config, "MATCHER", "legacy")
+    assert gate.shown_is_said(short("39714003987")) == []
+
+
+def test_shown_is_said_problems_are_retried():
+    jantar = short("39708703684")
+    problems = gate.said_is_shown(short("39714003987")) + gate.said_is_shown(applied(jantar, planned(jantar)[0]))
+    assert problems and all(any(m in p for m in cli.RETRYABLE) for p in problems)
+
+
+def test_make_gates_the_render(made, monkeypatch):  # noqa: F811
+    s, work = made
+    s.scene["photos"][1] = s.scene["photos"][1] | {"role": "map", "who": "वाराणसी"}  # b2 names it: allowed, briefly
+    monkeypatch.setattr(voice, "synthesize", lambda sh, w, preview=False: {"voice": {"engine": "gemini-sulafat"}})
+    views = [{"start": 0.0, "end": 1.0, "photo": 0, "beat_k": 0, "plate": ""},
+             {"start": 1.0, "end": 9.0, "photo": 1, "beat_k": 1, "plate": ""}]
+    monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views})
+    with pytest.raises(ValueError, match="gate: pictures: maps fill 89%"):
+        cli.make(None, s)
+    assert cli.rendered_views(work) == views  # written before the gate: the review reads what was on screen
+    monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views[:1]})
+    assert cli.make(None, s)[1]["views"] == views[:1]
+    assert cli.rendered_views(Path(work.parent / "none")) is None
+
+
+def test_publish_reruns_the_gate_on_the_render(made, monkeypatch):  # noqa: F811
+    from desk import youtube
+
+    s, work = made
+    s.scene["photos"][1] = s.scene["photos"][1] | {"role": "map", "who": "वाराणसी"}
+    s.save(work / "short.json")  # 2 of 7 beats show the map: under 40% by beats, 89% of the time as rendered
+    monkeypatch.setattr(youtube, "publish", lambda *a, **k: pytest.fail("published past the gate"))
+    views = [{"start": 0.0, "end": 1.0, "photo": 0, "beat_k": 0, "plate": ""},
+             {"start": 1.0, "end": 9.0, "photo": 1, "beat_k": 1, "plate": ""}]
+    (work / "render.json").write_text(json.dumps({"views": views}), encoding="utf-8")
+    with pytest.raises(ValueError, match="maps fill 89%"):
+        cli.publish(s.id)

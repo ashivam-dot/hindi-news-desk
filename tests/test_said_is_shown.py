@@ -90,11 +90,13 @@ def test_cast_for_resolves_modi_when_the_story_is_about_delhi(monkeypatch):
     assert [(c["en"], c["kind"]) for c in cast] == [("Narendra Modi", "person")]
 
 
-def _modi_short(short, shots, cast, title="Narendra Modi: दिल्ली में दशहरा कार्यक्रम में शामिल हुए पीएम"):
+def _modi_short(short, shots, cast, title="Narendra Modi: दिल्ली में दशहरा कार्यक्रम में शामिल हुए पीएम", plates=()):
     beats = [Beat("प्रधानमंत्री नरेन्द्र मोदी दिल्ली में दशहरा के कार्यक्रम में शामिल हुए।", shots[0]),
              Beat("यह आयोजन आईपी एक्सटेंशन के उत्सव मैदान में हुआ।", shots[1]),
              Beat("मोदी ने राम राज्य को सुशासन का मॉडल बताया।", shots[2])]
-    return replace(short, title=title, beats=beats, scene=short.scene | {"cast": cast})
+    beats = [replace(b, plate=p) for b, p in zip(beats, list(plates) + [""] * 3)]
+    return replace(short, title=title, beats=beats, scene=short.scene | {"cast": cast, "name_hi": "नरेन्द्र मोदी",
+                                                                         "subject_person": True})
 
 
 def test_the_title_person_must_be_on_screen(short):  # noqa: F811
@@ -106,8 +108,11 @@ def test_the_title_person_must_be_on_screen(short):  # noqa: F811
 def test_a_beat_that_names_someone_shows_them(short):  # noqa: F811
     modi = [{"en": "Narendra Modi", "hi": "नरेन्द्र मोदी", "kind": "person", "photos": [2]}]
     wrong = gate.said_is_shown(_modi_short(short, ["photo:0/1", "photo:1", "photo:2"], modi))
-    assert wrong == ["pictures: beat 1 names Narendra Modi but shows someone or something else"]
-    assert gate.said_is_shown(_modi_short(short, ["photo:2/0", "photo:1", "photo:0/2"], modi)) == []
+    assert "pictures: beat 1 names Narendra Modi but shows someone or something else" in wrong
+    # Beat 2 names neither Modi nor anything else that can be shown: a text card now, not his photo (shown_is_said).
+    assert any("beat 2 shows photo 1" in p for p in wrong)
+    assert gate.said_is_shown(_modi_short(short, ["photo:2/0", "photo:1", "photo:0/2"], modi, plates=["", "card"])) \
+        == []
 
 
 def test_a_surname_alone_still_shows_the_person():
