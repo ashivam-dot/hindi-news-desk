@@ -1010,7 +1010,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     # A text card (match.CARD) as render_full draws it, in the window: its words over the plain channel background
     # (a harm, accused or loss line) or a dark blur of its backdrop, no file tag, name strap or place stamp. The
     # bulletin once showed the backdrop photo itself under a line that names nothing on it (finding 10).
-    plain = [b["plate"] == match.CARD and not b["outro"] and match.plain(b["beat"].text, short.loss) for b in shots]
+    plain = [b["plate"] == match.CARD and not b["outro"] and match.card_plain(short, k) for k, b in enumerate(shots)]
     texts = {k: card_window(None if plain[k] else plates[b["photo"]].rgb, b["beat"].card or {}, size)
              for k, b in enumerate(shots) if b["plate"] == match.CARD and not b["outro"]}
     cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
@@ -1243,7 +1243,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     hook = _hookcard_layer(hook_text, size=84, width=W - 200) if hook_text else None
     # A text card (SYNC-AUDIT 4.0): its words on the plain channel background for a harm, accused or loss line,
     # else on a dark blur of the last anchored picture; no name strap, no place stamp, the photo's credit kept.
-    plain = [card[k] and match.plain(b["beat"].text, short.loss) for k, b in enumerate(shots)]
+    plain = [card[k] and match.card_plain(short, k) for k, b in enumerate(shots)]
     texts = [_textcard_layer(big[k] or small[k], small[k] if big[k] else "") if card[k] else None
              for k in range(len(shots))]
     backs = {k: card_backdrop(None if plain[k] else plates[b["photo"]].rgb) for k, b in enumerate(shots) if card[k]}

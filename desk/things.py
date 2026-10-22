@@ -28,10 +28,19 @@ MAX_THINGS = 3
 # Hindi forms (whole words; every inflection listed, hindi.find matches whole words only) -> the English Wikipedia
 # article, and for an item whose Wikidata image is a drawing, Commons photos checked by eye (2026-10-22, licences
 # re-read at runtime by media.picks). india: shown only in an Indian story ("संसद" in a story about Britain is
-# Westminster); every form is also refused after a foreign country's name ("अमेरिका के सुप्रीम कोर्ट").
+# Westminster); every form is also refused after a foreign country's name ("अमेरिका के सुप्रीम कोर्ट"). An india
+# entry's forms, and an entry's "generic" forms (any country has a national flag), are words every country uses: they
+# are also refused after any foreign word earlier in the beat ("ईरान में प्रदर्शनकारियों ने राष्ट्रीय ध्वज जलाया",
+# "जयशंकर ने ब्रिटेन में संसद को संबोधित किया") and after "X की/के/का" for an X that is not India (BY_INDIA: "पोलैंड
+# की संसद"). Review round 1 (2026-10-23) found each of these putting India's flag, Parliament or Supreme Court on
+# screen in a foreign story. not_before / not_after: the word right after / before a form that makes it another
+# thing (an idiom, a brand, a programme): "वंदे भारत मिशन" is an evacuation flight, not the train; "ताज महल पैलेस
+# होटल" is Mumbai's hotel; "सफेद हाथी" is an idiom; "बाघ बकरी" is a tea. needs: a word the beat must also say
+# ("राम मंदिर" alone may be any village's temple; Ayodhya's is "अयोध्या ... राम मंदिर").
 LEXICON = (
-    {"hi": "तिरंगा", "forms": ("तिरंगा", "तिरंगे", "तिरंगों", "राष्ट्रीय ध्वज", "राष्ट्रध्वज", "भारतीय ध्वज", "राष्ट्रीय झंडा",
-                              "राष्ट्रीय झंडे"),
+    {"hi": "तिरंगा", "forms": ("तिरंगा", "तिरंगे", "तिरंगों", "भारतीय ध्वज", "भारतीय झंडा", "भारतीय झंडे", "राष्ट्रीय ध्वज",
+                              "राष्ट्रध्वज", "राष्ट्रीय झंडा", "राष्ट्रीय झंडे"),
+     "generic": ("राष्ट्रीय ध्वज", "राष्ट्रध्वज", "राष्ट्रीय झंडा", "राष्ट्रीय झंडे"),
      "en": "Flag of India", "india": False,
      "files": ("File:Flag of India, New Delhi.jpg", "File:Shiny Indian flag on high rise.jpg",
                "File:Flag of India Kodaikanal Tamil Nadu 20060126.jpg", "File:INS Kadmatt - Indian Flag.jpg")},
@@ -42,16 +51,41 @@ LEXICON = (
     {"hi": "लाल किला", "forms": ("लाल किला", "लाल किले", "लालकिला", "लालकिले"), "en": "Red Fort", "india": True},
     {"hi": "इंडिया गेट", "forms": ("इंडिया गेट",), "en": "India Gate", "india": True},
     {"hi": "राष्ट्रपति भवन", "forms": ("राष्ट्रपति भवन",), "en": "Rashtrapati Bhavan", "india": True},
-    {"hi": "ताजमहल", "forms": ("ताजमहल", "ताज महल"), "en": "Taj Mahal", "india": False},
-    {"hi": "राम मंदिर", "forms": ("राम मंदिर", "अयोध्या राम मंदिर"), "en": "Ram Mandir", "india": True},
+    {"hi": "ताजमहल", "forms": ("ताजमहल", "ताज महल"), "en": "Taj Mahal", "india": False,
+     "not_before": ("पैलेस", "होटल")},
+    {"hi": "राम मंदिर", "forms": ("राम मंदिर", "अयोध्या राम मंदिर"), "en": "Ram Mandir", "india": True,
+     "needs": ("अयोध्या",)},
     {"hi": "वंदे भारत", "forms": ("वंदे भारत", "वंदे भारत एक्सप्रेस", "वंदे भारत ट्रेन", "वंदे भारत ट्रेनों"),
-     "en": "Vande Bharat Express", "india": True},
-    {"hi": "बाघ", "forms": ("बाघ", "बाघों", "बाघिन", "बाघिनों"), "en": "Bengal tiger", "india": False},
+     "en": "Vande Bharat Express", "india": True, "not_before": ("मिशन", "अभियान", "उड़ान", "उड़ानों", "फ्लाइट")},
+    {"hi": "बाघ", "forms": ("बाघ", "बाघों", "बाघिन", "बाघिनों"), "en": "Bengal tiger", "india": False,
+     "not_before": ("बकरी",)},
     {"hi": "तेंदुआ", "forms": ("तेंदुआ", "तेंदुए", "तेंदुओं"), "en": "Indian leopard", "india": False},
-    {"hi": "हाथी", "forms": ("हाथी", "हाथियों"), "en": "Indian elephant", "india": False},
+    {"hi": "हाथी", "forms": ("हाथी", "हाथियों"), "en": "Indian elephant", "india": False, "not_after": ("सफेद", "सफ़ेद")},
     {"hi": "तेल टैंकर", "forms": ("तेल टैंकर", "तेल टैंकरों", "टैंकर जहाज"), "en": "Oil tanker", "india": False},
     {"hi": "पद्म श्री", "forms": ("पद्म श्री", "पद्मश्री"), "en": "Padma Shri", "india": True},
+    # Rivers the news names by their own name ("यमुना सफाई", dry run 39794659993: the Yamuna was said and never
+    # shown). Yamuna's Wikidata image includes the Taj Mahal: these Delhi photos were checked by eye (2026-10-23).
+    {"hi": "यमुना", "forms": ("यमुना", "यमुना नदी"), "en": "Yamuna", "india": False,
+     "not_before": ("एक्सप्रेसवे", "एक्सप्रेस-वे", "एक्सप्रेस", "विहार", "नगर", "बैंक", "पुश्ता", "प्राधिकरण", "अथॉरिटी"),
+     "files": ("File:Sasha India, Yamuna river, view from Majnu-ka-tilla (2).jpg", "File:Seagulls at Yamuna 1.jpg",
+               "File:Delhi-Huetten am Yamuna-06-Sonnenaufgang-2016-gje.jpg")},
+    {"hi": "गंगा", "forms": ("गंगा", "गंगा नदी"), "en": "Ganges", "india": False,
+     "not_before": ("एक्सप्रेसवे", "एक्सप्रेस-वे", "एक्सप्रेस", "देवी", "प्रसाद", "राम", "नगर", "विहार", "सिंह"),
+     "not_after": ("मां", "माँ")},
 )
+# What may stand before an india form as "X की/के/का": India itself, never another country ("पोलैंड की संसद").
+BY_INDIA = ("भारत", "देश", "हिंदुस्तान", "हिन्दुस्तान", "इंडिया", "हमारे", "हमारी", "हमारा", "अपने", "अपनी", "अपना", "दिल्ली",
+            "केंद्र", "सरकार")
+# A country's adjective right before a word every country uses ("पोलिश संसद", "यूरोपीय संसद", "कनाडाई संसद").
+FOREIGN_ADJ = re.compile(r"(?:ीय|िश|ियन|ाई|ेनी|ाली)$")
+INDIAN_ADJ = {"भारतीय", "केंद्रीय", "राष्ट्रीय", "स्थानीय", "क्षेत्रीय", "संसदीय", "भाई"}
+# The Indian titles a FIGURE goes by when the story is about them ("गृह मंत्री ने यमुना सफाई ...", dry run
+# 39794659993: Amit Shah's beat showed a card over Rahul Gandhi). Only for the story's subject (visuals.titles), and
+# never after "X के" or a foreign word (match.names: "पोलैंड के प्रधानमंत्री" is Tusk) or "पूर्व" (a former one).
+ROLES = {"Narendra Modi": ("प्रधानमंत्री", "प्रधान मंत्री", "पीएम"),
+         "Amit Shah": ("गृह मंत्री", "गृहमंत्री", "केंद्रीय गृह मंत्री"),
+         "S. Jaishankar": ("विदेश मंत्री",), "Rajnath Singh": ("रक्षा मंत्री",),
+         "Nirmala Sitharaman": ("वित्त मंत्री",), "Droupadi Murmu": ("राष्ट्रपति",)}
 # People the news names in nearly every Indian story, by their full Hindi names (never a bare surname: "ललित मोदी"),
 # in case the script's names list leaves them out. Dry run 39817474353 (Donald Tusk in Delhi, 2026-10-22) said
 # "प्रधानमंत्री नरेंद्र मोदी" in all five beats, listed only Tusk, Poland and New Delhi, and showed Modi in none.
@@ -85,39 +119,104 @@ def figures_said(beats: list[dict]) -> list[dict]:
     return out
 
 
-# A country or its adjective right before a thing ("अमेरिकी सुप्रीम कोर्ट", "ब्रिटेन की संसद"): another country's.
-FOREIGN = ("अमेरिका", "अमेरिकी", "यूएस", "US", "पाकिस्तान", "पाकिस्तानी", "ब्रिटेन", "ब्रिटिश", "चीन", "चीनी", "रूस",
-           "रूसी", "नेपाल", "नेपाली", "बांग्लादेश", "बांग्लादेशी", "श्रीलंका", "श्रीलंकाई", "इजराइल", "इज़राइल", "इजरायली",
-           "ईरान", "ईरानी", "जापान", "जापानी", "कनाडा", "कनाडाई", "फ्रांस", "फ्रांसीसी", "जर्मनी", "जर्मन", "यूक्रेन",
-           "अफगानिस्तान", "ऑस्ट्रेलिया", "ऑस्ट्रेलियाई", "दक्षिण अफ्रीका", "ब्राजील", "मालदीव", "भूटान", "म्यांमार")
+# A country, its people or its adjective (Hindi spellings the news uses; review round 1 found "इजरायल", "पोलैंड",
+# "यूरोपीय", "इटली" and "दक्षिण कोरिया" missing): right before a thing it is another country's ("अमेरिकी सुप्रीम
+# कोर्ट", "ब्रिटेन की संसद"), and anywhere earlier in the beat it makes an india form another country's.
+FOREIGN = ("अमेरिका", "अमेरिकी", "अमरीका", "अमरीकी", "यूएस", "US", "पाकिस्तान", "पाकिस्तानी", "ब्रिटेन", "ब्रिटिश", "इंग्लैंड",
+           "चीन", "चीनी", "रूस", "रूसी", "नेपाल", "नेपाली", "बांग्लादेश", "बांग्लादेशी", "श्रीलंका", "श्रीलंकाई", "इजराइल",
+           "इज़राइल", "इजरायल", "इज़रायल", "इस्राइल", "इसराइल", "इजरायली", "इज़रायली", "इजराइली", "ईरान", "ईरानी", "इराक",
+           "इराकी", "जापान", "जापानी", "कनाडा", "कनाडाई", "फ्रांस", "फ्रांसीसी", "फ्रेंच", "जर्मनी", "जर्मन", "यूक्रेन", "यूक्रेनी",
+           "पोलैंड", "पोलिश", "यूरोप", "यूरोपीय", "यूरोपियन", "इटली", "इतालवी", "इटैलियन", "स्पेन", "स्पेनिश", "पुर्तगाल",
+           "नीदरलैंड", "बेल्जियम", "स्वीडन", "स्वीडिश", "नॉर्वे", "डेनमार्क", "फिनलैंड", "स्विट्जरलैंड", "ऑस्ट्रिया", "ग्रीस",
+           "हंगरी", "तुर्की", "तुर्किये", "कोरिया", "कोरियाई", "दक्षिण कोरिया", "उत्तर कोरिया", "ताइवान", "सिंगापुर", "मलेशिया",
+           "इंडोनेशिया", "थाईलैंड", "वियतनाम", "फिलीपींस", "अफगानिस्तान", "अफ़ग़ानिस्तान", "अफगान", "ऑस्ट्रेलिया",
+           "ऑस्ट्रेलियाई", "न्यूजीलैंड", "दक्षिण अफ्रीका", "अफ्रीका", "अफ्रीकी", "नाइजीरिया", "केन्या", "मिस्र", "सऊदी",
+           "सऊदी अरब", "यूएई", "कतर", "कुवैत", "ओमान", "बहरीन", "सीरिया", "लेबनान", "जॉर्डन", "यमन", "फलस्तीन",
+           "फिलिस्तीन", "फिलिस्तीनी", "गाजा", "ब्राजील", "ब्राज़ील", "अर्जेंटीना", "मेक्सिको", "मालदीव", "भूटान", "म्यांमार",
+           "विदेशी")
 # What an English article about a thing says it is (its Wikidata description).
-THING = re.compile(r"\b(ship|vessel|tanker|aircraft|airliner|helicopter|fighter|jet|submarine|carrier|frigate|"
-                   r"destroyer|corvette|warship|train|locomotive|missile|rocket|launch vehicle|rifle|tank|vehicle|"
-                   r"automobile|motorcycle|species|subspecies|breed|animal|mammal|bird|reptile|fish|dish|food|sweet|"
-                   r"dessert|bread|beverage|award|medal|decoration|honour|honor|flag|monument|memorial|building|"
-                   r"bridge|dam|fort|fortress|palace|temple|mosque|church|gurdwara|stadium|statue|tower|parliament|"
-                   r"courthouse)\b", re.I)
+THING = re.compile(r"\b(ship|vessel|tanker|aircraft|airliner|helicopter|fighter|jet|submarine|aircraft carrier|"
+                   r"frigate|destroyer|corvette|warship|train|locomotive|missile|rocket|launch vehicle|rifle|tank|"
+                   r"vehicle|automobile|motorcycle|species|subspecies|breed|animal|mammal|bird|reptile|fish|dish|food|"
+                   r"sweet|dessert|bread|beverage|civilian award|gallantry award|military award|medal|decoration|"
+                   r"national flag|flag of|monument|memorial|building|bridge|dam|fort|fortress|palace|temple|mosque|"
+                   r"church|gurdwara|stadium|statue|tower|parliament|courthouse)\b", re.I)
 # Never a thing with a picture: works (their pictures are covers and posters), bodies whose pictures are logos, and
-# brands.
+# brands: an airline ("flag carrier of India") is a company in its livery, and an award's statuette (a Grammy) is a
+# copyrighted sculpture (review round 1).
 WORK = re.compile(r"\b(film|movie|album|song|single|book|novel|series|television|TV|show|painting|magazine|"
                   r"newspaper|journal|company|organi[sz]ation|political party|party|brand|band|video game|game|"
                   r"software|website|app|application|logo|manufacturer|corporation|business|startup|conglomerate|"
                   r"agency|ministry|department|union|association|club|team|league|government|court case|case|"
-                  r"election|event|protest|scheme|programme|program|law|act|bill)\b", re.I)
+                  r"election|event|protest|scheme|programme|program|law|act|bill|airline|flag carrier|operator|"
+                  r"franchise|music award|film award|award for|statuette|trophy)\b", re.I)
 # A file that shows a work, a logo or a screen, never the thing: a book cover, a poster, an app's screenshot.
 NOT_THING = re.compile(r"\b(cover|poster|album|screenshot|screen ?shot|logo|wordmark|trademark|paintings?|"
                        r"drawings?|illustrations?|cartoons?|render(?:ing)?|model kit|toy|stamp|coin|banknote|tweet|"
                        r"instagram|facebook|miniature|watercolou?r|engraving|lithograph|artworks?|mughal art|"
-                       r"company painting)\b", re.I)
+                       r"company painting|statuette)\b", re.I)
 # Before photographs were common, a picture of a thing is a painting or an engraving (the Red Fort's Commons category
 # gave a Ghulam Ali Khan painting of 1852): a Short shows a photo of the thing as it is.
 PHOTO_YEAR = 1900
+
+
+def _foreign(word: str) -> bool:
+    w = hindi.norm(word)
+    return any(w == hindi.norm(f) for f in FOREIGN)
 
 
 def foreign_before(say: str, at: int) -> bool:
     """A country or its adjective stands right before `at` in say, or as "X की/के/का" before it."""
     head = re.sub(r"\s+(?:की|के|का)\s*$", " ", say[:at].rstrip() + " ").rstrip()
     return any(hindi.norm(head).endswith(hindi.norm(w)) and hindi.find(head, w.split()[-1]) >= 0 for w in FOREIGN)
+
+
+def abroad(say: str, at: int, by=()) -> bool:
+    """A word every country uses at `at` (an india form) is another country's: foreign_before, any FOREIGN word
+    earlier in the beat ("ईरान में ... राष्ट्रीय ध्वज"), "X की/के/का" before it for an X that is not India's (BY_INDIA,
+    or by: "अयोध्या के राम मंदिर"), or a country's adjective right before it ("पोलिश संसद", "यूरोपीय संसद")."""
+    head = say[:at]
+    if foreign_before(say, at) or any(hindi.find(head, w) >= 0 for w in FOREIGN):
+        return True
+    words = re.findall(r"[\u0900-\u097F]+", head)
+    if len(words) >= 2 and words[-1] in ("की", "के", "का"):
+        return hindi.norm(words[-2]) not in {hindi.norm(w) for w in (*BY_INDIA, *by)}
+    return bool(words) and words[-1] not in INDIAN_ADJ and bool(FOREIGN_ADJ.search(words[-1])) \
+        and words[-1] not in hindi.FUNCTION_WORDS
+
+
+def _entry(en: str) -> dict | None:
+    return next((e for e in LEXICON if e["en"] == en), None)
+
+
+def _neighbours(say: str, at: int, form: str) -> tuple[str, str]:
+    """The words right before and right after the form said at `at`."""
+    before = re.findall(r"[\u0900-\u097F]+", say[:at])
+    after = re.findall(r"[\u0900-\u097F]+", say[at + len(form):])
+    return (before[-1] if before else ""), (after[0] if after else "")
+
+
+def blocked(say: str, at: int, en: str = "", form: str = "") -> bool:
+    """Whether the thing said at `at` is not this thing: another country's (foreign_before; for an india or generic
+    form also abroad), an idiom or a brand by the word beside it (not_before, not_after), or a beat without the word
+    it needs. en: the thing's English name, for its LEXICON entry; form: the words said there (else the entry's
+    longest form said at `at`). A thing with no entry is refused only after a foreign country's name."""
+    from .visuals import _finds
+
+    e = _entry(en)
+    if e is None:
+        return foreign_before(say, at)
+    if not form:
+        form = max((f for f in e["forms"] if at in _finds(say, f)), key=len, default=e["hi"])
+    local = e["india"] or hindi.norm(form) in {hindi.norm(f) for f in e.get("generic") or ()}
+    if foreign_before(say, at) or local and abroad(say, at, e.get("needs") or ()):
+        return True
+    before, after = _neighbours(say, at, form)
+    if after and any(hindi.norm(after) == hindi.norm(w) for w in e.get("not_before") or ()):
+        return True
+    if before and any(hindi.norm(before) == hindi.norm(w) for w in e.get("not_after") or ()):
+        return True
+    return any(hindi.find(say, w) < 0 for w in e.get("needs") or ())
 
 
 def said_at(say: str, forms) -> int:
@@ -128,16 +227,34 @@ def said_at(say: str, forms) -> int:
     return min(hits, default=-1)
 
 
+def entry_at(say: str, e: dict) -> int:
+    """Where say first names a LEXICON entry as that thing (blocked never), else -1."""
+    from .visuals import _finds
+
+    return min((a for w in e["forms"] for a in _finds(say, w) if not blocked(say, a, e["en"], w)), default=-1)
+
+
 def lexicon_hits(beats: list[dict], india: bool) -> list[dict]:
-    """The LEXICON entries the beats name: [{"en", "hi", "kind": "thing", "alias", "files"}]."""
+    """The LEXICON entries the beats name: [{"en", "hi", "kind": "thing", "alias", "files"}]. An india entry, and
+    an entry's generic forms, only in an Indian story."""
     out = []
     for e in LEXICON:
         if e["india"] and not india:
             continue
-        if any(said_at(b.get("say") or "", e["forms"]) >= 0 for b in beats):
+        mine = e if india else e | {"forms": tuple(f for f in e["forms"] if f not in (e.get("generic") or ()))}
+        if any(entry_at(b.get("say") or "", mine) >= 0 for b in beats):
             out.append({"en": e["en"], "hi": e["hi"], "kind": "thing", "title": e["en"],
-                        "alias": [f for f in e["forms"] if f != e["hi"]], "files": list(e.get("files") or ())})
+                        "alias": [f for f in mine["forms"] if f != e["hi"]], "files": list(e.get("files") or ())})
     return out
+
+
+def roles(subject_hi: str) -> tuple[str, ...]:
+    """The ROLES of the FIGURE whose Hindi name is subject_hi, else ()."""
+    name = hindi.norm(subject_hi or "")
+    for en, forms in FIGURES:
+        if name and any(hindi.norm(f) == name for f in forms):
+            return ROLES.get(en, ())
+    return ()
 
 
 def thing_like(ent: dict) -> bool:

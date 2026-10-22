@@ -207,15 +207,15 @@ def test_card_ceiling_and_showable_retry(monkeypatch, tmp_path):
 
     monkeypatch.setattr(visuals, "showable_rows", rows("मुम्बई", "जुहू"))
     subject = {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ", "person": True}
-    problems = writer.anchorless(hurt_draft(), subject, True)
+    problems = writer.anchorless(hurt_draft(), subject, True, kind="incident")
     assert problems == ["beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short "
                         "shows once); SHOWABLE: मुम्बई, जुहू. Name in each beat the person, thing, place or police it "
                         "is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards "
                         "and never two in a row."]
     monkeypatch.setattr(visuals, "showable_rows", rows("मुम्बई", "जुहू", "Nanavati Hospital", "KEM Hospital"))
-    assert writer.anchorless(hurt_draft(), subject, True) == []  # beat 6 alone is a card
+    assert writer.anchorless(hurt_draft(), subject, True, kind="incident") == []  # beat 6 alone is a card
     monkeypatch.setattr(visuals, "showable_rows", rows())
-    assert writer.anchorless(hurt_draft(), subject, True) == []  # nothing to name: a rewrite cannot help
+    assert writer.anchorless(hurt_draft(), subject, True, kind="incident") == []  # nothing to name: a rewrite cannot help
     s = short("39553699482")
     rows = [{"views": [0], "plate": match.CARD if k >= 3 else "", "cut_word": "", "card_view": 0} for k in range(6)]
     from dataclasses import replace

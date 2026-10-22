@@ -14,7 +14,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import config, gate, ledger, learn, plan, review
+from . import config, gate, ledger, learn, plan, review, writer
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
@@ -29,6 +29,16 @@ FACELESS = "faceless:"
 
 def retryable(reason: str) -> bool:
     return FACELESS not in reason and any(m in reason for m in RETRYABLE)
+
+
+# A story refused for its pictures or cards gets PICTURE_TRIES writes, not ledger.retry's six: each costs a script
+# and often a render, and the same news rewritten mostly fails the same way (review round 1, F10).
+PICTURE_TRIES = 2
+PICTURE_REASONS = ("pictures:", "text cards", "name nothing that can be shown", "beats name them")
+
+
+def retry_limit(reason: str) -> int:
+    return PICTURE_TRIES if any(m in reason for m in PICTURE_REASONS) else 6
 
 
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
@@ -275,7 +285,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
     if preview and not dry:
         raise ValueError("--voice-preview is only for dry runs")
     health = {"at": ledger.now(), "ok": True, "dry": dry, "steps": []}
-    note_retry = (lambda i, r: None) if dry else ledger.retry
+    note_retry = (lambda i, r, **k: None) if dry else ledger.retry
     note_skip = (lambda i, r: None) if dry else ledger.skip
     try:
         if not dry:
@@ -342,10 +352,13 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             if written >= MAX_WRITTEN:
                 health["steps"].append(f"later {cand['id']}: this run already wrote {written} scripts")
                 continue
+            drafted = writer.DRAFTED[0]
             try:
                 short = prepare(cand)
             except ValueError as exc:
-                written += "no draft passed" in str(exc)
+                # Any refusal after a script was written cost the writing (a picture or card gate, faceless,
+                # stale photos): it counts toward MAX_WRITTEN like a failed draft (review round 1, F10).
+                written += "no draft passed" in str(exc) or writer.DRAFTED[0] > drafted
                 if ledger.waiting(str(exc)):
                     # A brand-new article waits for its facts to settle; waiting is not a failed try, and it does
                     # not take a slot from the stories that are ready now.
@@ -353,7 +366,10 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                     health["steps"].append(f"wait {cand['id']}: {exc}")
                     continue
                 # Thin articles, and stories still short of free photos, get another chance next run.
-                (note_retry if retryable(str(exc)) else note_skip)(cand["id"], str(exc)[:300])
+                if retryable(str(exc)):
+                    note_retry(cand["id"], str(exc)[:300], limit=retry_limit(str(exc)))
+                else:
+                    note_skip(cand["id"], str(exc)[:300])
                 health["steps"].append(f"skip {cand['id']}: {exc}")
                 continue
             except Exception as exc:  # one malformed article must not stop the other candidates

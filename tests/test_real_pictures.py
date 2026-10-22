@@ -375,4 +375,10 @@ def test_both_after_an_attribution_and_beside_a_town_is_still_the_pair():
     rows, photos = planned(s)
     assert len(rows[1]["views"]) == 2 and rows[1]["plate"] == "" and not any(visuals.is_map(photos[i])
                                                                            for i in rows[1]["views"])
-    assert match.problems(applied(s, rows)) == []
+    # The pair and the card are fixed, and what is left is the script: Tusk is named in one beat of five, on screen
+    # 20% of his own Short (review round 1, F2). The subject floor refuses it, and the writer now sends such a draft
+    # back before any render (writer._unnamed_subject).
+    assert match.problems(applied(s, rows)) == [
+        "pictures: the story's person fills only 20% of the Short (want at least 25%)"]
+    beats = [{"say": b.text} for b in s.beats if b.shot != "outro"]
+    assert "only 1 of 5 beats name them" in writer._unnamed_subject(beats, s.scene["name_hi"])[0]

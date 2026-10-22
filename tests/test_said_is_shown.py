@@ -225,7 +225,9 @@ DUSSEHRA_BEATS = [{"say": "प्रधानमंत्री नरेन्�
 
 def test_the_title_before_the_storys_person_names_them():
     assert visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी") == ["प्रधानमंत्री"]
-    assert visuals.titles(DUSSEHRA_BEATS[:1], "नरेन्द्र मोदी") == []
+    # A title said once is learned only for a FIGURE's own (things.ROLES): Modi is the प्रधानमंत्री.
+    assert visuals.titles(DUSSEHRA_BEATS[:1], "नरेन्द्र मोदी") == ["प्रधानमंत्री"]
+    assert visuals.titles([{"say": "अभिनेता टाइगर श्रॉफ मुम्बई में थे।"}], "टाइगर श्रॉफ") == []
     assert visuals.titles([{"say": "इस पर नरेन्द्र मोदी बोले।"}, {"say": "इस पर नरेन्द्र मोदी चुप रहे।"}],
                           "नरेन्द्र मोदी") == []
 

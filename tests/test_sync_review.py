@@ -183,7 +183,7 @@ def test_city_police_beats_are_anchored_before_the_city_is_known(monkeypatch):
     draft = {"beats": [{"say": "टाइगर श्रॉफ के घर के बाहर फायरिंग हुई।"}, {"say": "मुंबई पुलिस ने मामला दर्ज किया।"},
                        {"say": "मुंबई पुलिस की टीम मौके पर पहुंची।"}, {"say": "मुंबई पुलिस आरोपियों को खोज रही है।"},
                        {"say": "मुंबई में सुरक्षा बढ़ा दी गई है।"}]}
-    assert writer.anchorless(draft, {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}, True) == []
+    assert writer.anchorless(draft, {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}, True, kind="incident") == []
 
 
 def test_a_photoless_first_name_never_puts_a_later_one_first():

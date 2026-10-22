@@ -1,6 +1,13 @@
 import pytest
+import requests
 
-from desk import media, outlets, plan, visuals, wiki
+from desk import media, outlets, plan, things, visuals, wiki
+
+
+class Offline(RuntimeError):
+    """A test reached the network. Not a requests error, so net.get does not back off and retry: the test fails (or
+    its code's own `except Exception` degrades) at once instead of hanging in a retry loop or passing on whatever
+    Wikipedia returns that day (review round 1: three real-pictures tests called en.wikipedia.org)."""
 
 
 @pytest.fixture(autouse=True)
@@ -23,5 +30,19 @@ def offline_outlets(monkeypatch):
     monkeypatch.setattr(wiki, "hindi_spellings", lambda names: {})
     monkeypatch.setattr(wiki, "hindi_readings", lambda words: {})
     monkeypatch.setattr(visuals, "cast_for", lambda *args, **kwargs: [])
+    # The lookups cast_for makes besides resolve (a topic, a thing, a lexicon noun's item): None unless a test fakes
+    # them, so a test that runs the real cast_for never reaches Wikipedia through them.
+    monkeypatch.setattr(visuals, "resolve_topic", lambda *args, **kwargs: None)
+    monkeypatch.setattr(things, "resolve_thing", lambda *args, **kwargs: None)
+    monkeypatch.setattr(things, "lookup", lambda *args, **kwargs: None)
     yield
     outlets.reset()
+
+
+@pytest.fixture(autouse=True)
+def no_network(monkeypatch):
+    """No test reaches the network: every HTTP request raises Offline at once."""
+    def offline(self, method, url, *args, **kwargs):
+        raise Offline(f"network in tests: {method} {url}")
+
+    monkeypatch.setattr(requests.Session, "request", offline)
