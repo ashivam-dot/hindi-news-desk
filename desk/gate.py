@@ -48,8 +48,16 @@ DEATH_TALK = ["report*", "news", "claim*", "post", "posts", "खबर*", "द�
 # A denial of an earlier rumour, in an obituary ("Last year, fake reports of his death had circulated"), denies
 # nothing now (the 2026-10-22 review: three true obituaries were refused).
 DENIED_BEFORE = ["last year", "had circulated", "in the past", "years ago", "पिछले साल", "पिछली बार", "सालों पहले",
-                 "साल पहले"]
+                 "साल पहले", "earlier this month", "earlier this week", "earlier this year", "last week", "last month",
+                 "weeks ago", "days ago", "had spread", "had surfaced", "had dismissed", "had denied", "had called",
+                 "had slammed", "had rejected", "इससे पहले", "पिछले हफ्ते", "पिछले महीने", "दिन पहले", "हफ्ते पहले",
+                 "फैली थी", "फैली थीं", "उड़ी थी", "उड़ी थीं"]  # and a recent one ("Earlier this month, ... had dismissed")
 QUESTION = re.compile(r"\?[\s.\"'’”)\]]*$")  # "X passes away?", also as "X passes away?." in title + ". " + text
+CLAUSE = re.compile(r"\s[:|–—-]\s|:\s")  # "X passes away at 84: Who was he?" asks only its last clause
+# Outlets write initials their own way ("V. S.", "V.S.", "VS"; "एम॰ टी॰"): death sentences and names are read with each
+# run of initials as one word, so "K. Kasturirangan" is one sentence and the same name as "K Kasturirangan".
+EN_INITIALS = re.compile(r"\b((?:[A-Z](?:\.\s*|\s+)){1,4})(?=[A-Z][a-z])")
+HI_INITIALS = re.compile(r"(?<![\u0900-\u097f])((?:[\u0900-\u097f]{1,2}[.\u0970]\s*)+)([\u0900-\u097f]{1,2}(?![\u0900-\u097f]))?")
 EMOJI = re.compile("[\U0001F300-\U0001FAFF\u2600-\u27BF\U0001F000-\U0001F2FF]")
 # The voice identities a Short may publish with: Gemini's Sulafat, or Chatterbox cloning Sulafat's reference clip.
 PUBLISHABLE_VOICES = {"gemini-sulafat", "chatterbox-sulafat-clone"}
@@ -123,11 +131,43 @@ def reported(needle: str, reports: list[dict]) -> list[str]:
 SENTENCE = re.compile(r"(?<=[.!?।])\s+|\n+")
 
 
+def initials(text: str) -> str:
+    """text with each run of initials written as one word: "V. S. Achuthanandan" and "V.S. Achuthanandan" as
+    "VS Achuthanandan", "वी. एस" as "वीएस"."""
+    text = EN_INITIALS.sub(lambda m: re.sub(r"[^A-Z]", "", m[1]) + " ", text or "")
+    return HI_INITIALS.sub(lambda m: re.sub(r"[.\u0970\s]", "", m[0]) + " ", text)
+
+
+def death_names(names: list[str]) -> list[str]:
+    """The ways a news sentence names the person: each name with its initials as one word, and an English name of
+    full words also as its initials and surname ("Krishnaswamy Kasturirangan" as "K Kasturirangan")."""
+    out = []
+    for n in filter(None, names):
+        n = initials(n).strip()
+        out.append(n)
+        words = n.split()
+        if len(words) >= 2 and all(re.fullmatch(r"[A-Z][a-z]+", w) for w in words):
+            out.append("".join(w[0] for w in words[:-1]) + " " + words[-1])
+    return list(dict.fromkeys(out))
+
+
+def _named(s: str, names: list[str]) -> bool:
+    return any(n and hindi.contains(s, n) for n in names)
+
+
+def _asks(s: str, names: list[str]) -> bool:
+    """s asks whether the person died ("X passed away?"); "X passes away at 84: Who was he?" does not."""
+    last = CLAUSE.split(s)[-1]
+    return bool(QUESTION.search(s)) and bool(found(last, DEATH_SAID)) and _named(last, names)
+
+
 def states_death(text: str, names: list[str]) -> str | None:
-    """The first sentence of text that names one of names (whole words) and says they died (DEATH_SAID), or None. A
-    sentence that also denies it (DEATH_DENIED), or asks it ("X passed away?"), says nothing."""
-    for s in SENTENCE.split(text or ""):
-        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and not QUESTION.search(s) and any(n and hindi.contains(s, n) for n in names):
+    """The first sentence of text that names one of names (whole words, death_names) and says they died
+    (DEATH_SAID), or None. A sentence that also denies it (DEATH_DENIED), or asks it ("X passed away?"), says
+    nothing."""
+    names = death_names(names)
+    for s in SENTENCE.split(initials(text)):
+        if found(s, DEATH_SAID) and not found(s, DEATH_DENIED) and _named(s, names) and not _asks(s, names):
             return s.strip()
     return None
 
@@ -135,11 +175,12 @@ def states_death(text: str, names: list[str]) -> str | None:
 def denies_death(text: str, names: list[str]) -> str | None:
     """The first sentence of text that denies (DEATH_DENIED) the person, a death or reports of one (DEATH_TALK), or
     None: the article is about a hoax, whatever its other sentences say ("His manager said the reports are false")."""
-    for s in SENTENCE.split(text or ""):
-        if QUESTION.search(s) and found(s, DEATH_SAID) and any(n and hindi.contains(s, n) for n in names):
+    names = death_names(names)
+    for s in SENTENCE.split(initials(text)):
+        if _asks(s, names):
             return s.strip()  # "X passed away? Family says ..." is a hoax headline, never an obituary's
         if found(s, DEATH_DENIED) and not found(s, DENIED_BEFORE) \
-                and (found(s, DEATH_SAID + DEATH_TALK) or any(n and hindi.contains(s, n) for n in names)):
+                and (found(s, DEATH_SAID + DEATH_TALK) or _named(s, names)):
             return s.strip()
     return None
 

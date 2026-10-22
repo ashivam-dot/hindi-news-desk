@@ -397,3 +397,30 @@ def test_a_pronoun_or_a_sound_alike_never_gives_raut_another_persons_demand():
          {"owner": "B", "text": "संजय राउत मीडिया से मिले। उनके बाद सपकाल ने फडणवीस से इस्तीफे की मांग की।"}],
     ):
         assert gate.unattributed(line, names, reports), reports[0]["text"]
+
+
+@pytest.mark.parametrize("name, text", [
+    ("Krishnaswamy Kasturirangan", "Former ISRO chief K. Kasturirangan passes away at 84. He led ISRO for nine years."),
+    ("Krishnaswamy Kasturirangan", "K Kasturirangan died in Bengaluru on Friday."),
+    ("V. S. Achuthanandan", "VS Achuthanandan, Former Kerala Chief Minister, Dies At 101"),
+    ("V. S. Achuthanandan", "V.S. Achuthanandan died on Monday."),
+    ("M. T. Vasudevan Nair", "M.T. Vasudevan Nair died at a private hospital in Kozhikode."),
+    ("M. T. Vasudevan Nair", "MT Vasudevan Nair dies at 91"),
+])
+def test_a_death_reported_with_the_persons_initials_is_stated(name, text):
+    """2026-10-22 third review: the press writes a Wikidata name by its initials, and "K. " ended a sentence."""
+    assert gate.states_death(text, [name]) and gate.denies_death(text, [name]) is None
+
+
+@pytest.mark.parametrize("text", [
+    "Dharmendra dies at 89. Veteran actor Dharmendra passed away on Monday at his Mumbai home. Earlier this month, "
+    "his family had dismissed reports of his death as false after he was hospitalised.",
+    "Dharmendra dies at 89. Veteran actor Dharmendra passed away on Monday. Earlier this month, fake news of his "
+    "death had spread on social media, which Hema Malini slammed.",
+    "धर्मेंद्र का 89 साल की उम्र में निधन. धर्मेंद्र का निधन हो गया। इससे पहले इसी महीने उनके निधन की झूठी खबरें फैली थीं।",
+    "Dharmendra passes away at 89: Who was he?. He acted in Sholay.",
+])
+def test_an_obituary_recalling_a_recent_hoax_or_asking_who_he_was_still_confirms_the_death(text):
+    """2026-10-22 third review: Dharmendra's and Ratan Tata's obituaries recalled false reports from days before."""
+    names = ["Dharmendra", "धर्मेंद्र"]
+    assert gate.states_death(text, names) and gate.denies_death(text, names) is None
