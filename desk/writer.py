@@ -466,7 +466,7 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     if not can:
         return []
     cast = [{"hi": h, "kind": "place"} for h in can if h != "पुलिस"]
-    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []
+    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []  # no city: never "another force" (other_force)
     name = (subject.get("hi") or "").strip()
     spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
              if len(hindi.norm(w)) >= 3]
@@ -1046,7 +1046,7 @@ def fill_photos(context_qids: list[str], folder: Path, exclude: set[str], need: 
             img = cv2.imread(r["path"])
             if featured_face(img, faces.detect(img) if img is not None else []):
                 continue
-            r["focus"] = None
+            r["focus"], r["fill"] = None, True  # match.fill: context, never shown as the subject
             out.append(r)
         return out
 
@@ -1602,9 +1602,9 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     for b, r in zip(draft["beats"], views):
         shown = r["views"] or [b["photo"]]
         card = visuals.card_over({"big": b["caption"].strip(), "small": card_label(b.get("label"))}, shown, cast,
-                                 photos, spell, r["plate"])
+                                 photos, spell, r["plate"], draft.get("names") or [])
         beats.append(Beat(b["say"].strip(), "photo:" + "/".join(map(str, shown)), card, plate=r["plate"],
-                          cut_word=r["cut_word"], card_view=r["card_view"]))
+                          cut_word=r["cut_word"], card_view=r["card_view"], cut_at=r.get("cut_at", -1)))
     ground = source + "\n" + "\n".join(facts_text)
     in_ground, by_owner = hindi.values(ground), gate.reported_values(reports)
     allowed = {n for f in facts for n in f.numbers}

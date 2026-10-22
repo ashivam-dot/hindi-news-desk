@@ -45,7 +45,15 @@ COUNTRY_KINDS = {"Q6256", "Q3624078", "Q7275"}
 POLICE = ("पुलिस",)
 # Words that may stand before "पुलिस" without naming a force ("कोटा से पकड़े गए 3 संदिग्धों को पुलिस ...").
 NOT_A_FORCE = {"की", "के", "का", "को", "ने", "और", "में", "से", "कि", "भी", "तो", "व", "एवं", "जब", "अब", "वहीं", "लेकिन",
-               "हुए", "हैं", "है", "था", "थी", "गया", "बाद", "तक", "पर", "मुताबिक", "अनुसार"}
+               "हुए", "हैं", "है", "था", "थी", "गया", "बाद", "तक", "पर", "मुताबिक", "अनुसार", "उधर", "इधर", "यहां",
+               "यहाँ", "वहां", "वहाँ", "स्थानीय", "उन्हें", "इन्हें", "जिन्हें", "उसे", "इसे", "उनको", "साथ", "लिए", "दी", "दिया",
+               "कहा", "बताया", "शहर", "मामले", "फायरिंग", "आरोपी", "आरोपियों", "घटना", "हमले"}
+# "X की पुलिस" names another force only when X is a place ("राजस्थान की पुलिस"), never "साजिश की पुलिस जांच" (39333390694
+# b6) or "आरोपी के पुलिस हिरासत में": the story's places (the cast's, the script's names) and these states and cities.
+FORCE_PLACES = ("राजस्थान", "उत्तर प्रदेश", "मध्य प्रदेश", "बिहार", "गुजरात", "महाराष्ट्र", "पंजाब", "हरियाणा", "दिल्ली",
+                "कर्नाटक", "केरल", "तमिलनाडु", "तेलंगाना", "आंध्र प्रदेश", "ओडिशा", "बंगाल", "असम", "झारखंड", "छत्तीसगढ़",
+                "उत्तराखंड", "हिमाचल", "गोवा", "कश्मीर", "मुंबई", "मुम्बई", "कोलकाता", "चेन्नई", "बेंगलुरु", "हैदराबाद",
+                "पुणे", "अहमदाबाद", "जयपुर", "लखनऊ", "पटना", "भोपाल", "कोटा", "सूरत", "नोएडा", "गुरुग्राम", "चंडीगढ़")
 # A beat about the accused shows the police, not the story's person.
 ACCUSED = ("आरोपी", "आरोपियों", "पूछताछ", "गिरफ्तार", "गिरफ़्तार", "रिमांड", "शूटर", "हमलावर", "संदिग्ध")
 
@@ -343,13 +351,14 @@ def place_card(card: dict) -> bool:
 
 
 def card_over(card: dict, shown: list[int], cast: list[dict], photos: list[dict] | None = None,
-              spellings=(), plate: str = "") -> dict:
+              spellings=(), plate: str = "", others=()) -> dict:
     """The card with only what its picture shows (SYNC-AUDIT 4.1 step 3): a big line naming a cast member (or the
     subject, by spellings) that no view in shown depicts goes, and so does a small line that is only such a name; the
     other line then stands alone. "वनतारा केंद्र" sat over the Jamnagar refinery (39714003987) and "संजय राउत" over
     Tiger Shroff (39546660530). A place card sits only over its place's own map or photo: the Modi rebuild put
     "उत्सव मैदान" over Delhi's map. Over another place it names the place on screen; over no place it goes. A text
-    card (plate match.CARD) is the words alone and is kept as written."""
+    card (plate match.CARD) is the words alone and is kept as written. others: the script's names (match.others_of),
+    never on screen: "संजय राउत" goes even when his lookup failed and he is not in the cast."""
     from . import match
 
     if not card or plate == match.CARD:
@@ -361,9 +370,11 @@ def card_over(card: dict, shown: list[int], cast: list[dict], photos: list[dict]
         on = {match.key(c) for c in members if set(c.get("photos") or []) & set(shown)}
         on |= {match.SUBJECT} if any(not any(i in (c.get("photos") or []) for c in cast) for i in shown) else set()
     big, small = card.get("big", ""), card.get("small", "")
-    if {x for _, x in match.names(big, members, spellings)} - on - {match.POLICE}:
+    if {x for _, x in match.names(big, members, spellings, others)} - on - {match.POLICE}:
         big = ""
-    spelt = {hindi.norm(w): match.key(c) for c in members for w in [c.get("hi") or "", *(c.get("alias") or [])] if w}
+    extra = match.others_of(others, cast, spellings)
+    spelt = {hindi.norm(w): match.key(c) for c in members + extra for w in [c.get("hi") or "", *(c.get("alias") or [])]
+             if w}
     spelt |= {hindi.norm(w): match.SUBJECT for w in spellings if w}
     if small and (k := spelt.get(hindi.norm(small))) and k not in on:
         small = ""
@@ -475,12 +486,22 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
 
 # --- Assignment -------------------------------------------------------------------------------------------------
 
-def other_force(say: str, police: dict) -> bool:
+def other_force(say: str, police: dict, places=()) -> bool:
     """The beat names some other police force ("राजस्थान पुलिस ने बताया", "राजस्थान की पुलिस" when the photo is
-    Mumbai Police)."""
-    for m in re.finditer(r"(\S+)\s+(?:(?:की|के)\s+)?पुलिस", say):
+    Mumbai Police). "X की/के पुलिस" counts only when X is a place (places, FORCE_PLACES). A police row with no city
+    (writer.anchorless before the city is known) is no force to differ from."""
+    own = police.get("hi") or ""
+    if not own:
+        return False
+    for m in re.finditer(r"(\S+)\s+पुलिस", say):
         word = m.group(1).strip(",.;:।'\"()")
-        if word and word not in NOT_A_FORCE and not (police.get("hi") and hindi.contains(police["hi"], word)):
+        if word and word not in NOT_A_FORCE and not hindi.contains(own, word):
+            return True
+    for m in re.finditer(r"(?:की|के)\s+पुलिस", say):
+        before = say[:m.start()].rstrip()
+        place = next((w for w in [*places, *FORCE_PLACES] if w and hindi.norm(before).endswith(hindi.norm(w))
+                      and hindi.find(before, w.split()[-1]) >= 0), "")
+        if place and not hindi.contains(own, place.split()[-1]):
             return True
     return False
 
@@ -749,8 +770,8 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         exclude.update(r["file"] for r in rows if r.get("file"))
         return list(range(start, len(photos)))
 
-    for p in photos:
-        p["depicts"] = [match.SUBJECT]
+    for p in photos:  # a context fill is the story's, never the subject's (the JNU fills stood as the subject)
+        p["depicts"] = [match.CONTEXT if match.fill(p) else match.SUBJECT]
     try:
         inside = within([c for c in cast if c["kind"] == "place"])
     except Exception as exc:
@@ -853,7 +874,7 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         ranked = ([lead] if lead in subject else []) + [i for i in subject if i != lead]
         cards = [{"say": b.get("say", ""), "card": {"big": b.get("caption") or "", "small": b.get("label") or ""}}
                  for b in beats]
-        rows = match.plan(cards, photos, told + extra, ranked, kind, spell, person)
+        rows = match.plan(cards, photos, told + extra, ranked, kind, spell, person, draft.get("names") or [])
     log.info("visuals: %d pictures, %d distinct on screen, %d cards, cast %s", len(photos),
              len({i for r in rows if r["plate"] != match.CARD for i in r["views"]}),
              sum(r["plate"] == match.CARD for r in rows), [c["en"] for c in cast if c.get("photos")])

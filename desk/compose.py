@@ -19,7 +19,7 @@ import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, features
 
-from . import config, depth, hindi, match, music
+from . import config, depth, hindi, match, music, visuals
 from .spec import Short, shot_photos
 
 W, H, FPS = 1080, 1920, 30
@@ -743,9 +743,11 @@ CUT_EDGE = 1.2  # seconds a named cut keeps from each end of its beat, else the 
 
 def cut_time(shot: dict, words: list[dict], k: int) -> float | None:
     """When beat k says its cut word (SYNC-AUDIT 4.0): the timed word whose hindi.norm matches the cut word's first
-    token (the one nearest where the text says it, when it is said twice), else that place in the text mapped onto
-    the beat's spoken time, since whisper's words drift from the script's ("वंतारा" for "वनतारा"). None when there is
-    no cut word, or the time is within CUT_EDGE of either end of the beat."""
+    token, else that place in the text mapped onto the beat's spoken time, since whisper's words drift from the
+    script's ("वंतारा" for "वनतारा"). Said twice, the time of the time match.plan cut on (cut_at): the same count of
+    timed words takes the same one, else the timed word nearest that place ("अंधेरी में ... अंधेरी पुलिस" cut to the
+    police photo on the first अंधेरी). None when there is no cut word, or the time is within CUT_EDGE of either end
+    of the beat."""
     token = ((shot.get("cut_word") or "").split() or [""])[0].strip(match.PUNCT)
     if not token:
         return None
@@ -753,11 +755,20 @@ def cut_time(shot: dict, words: list[dict], k: int) -> float | None:
     mine = [w for w in words if (w.get("beat") == k if timed else shot["start"] <= w["start"] < shot["end"])]
     s0, s1 = (mine[0]["start"], mine[-1]["end"]) if mine else (shot["start"], shot["end"])
     say = shot["beat"].text if shot.get("beat") is not None else shot.get("say", "")
-    at = hindi.find(say, token)
+    cut_at = shot.get("cut_at", getattr(shot.get("beat"), "cut_at", -1))
+    said = visuals._finds(say, token)
+    at = cut_at if 0 <= cut_at < len(say) else hindi.find(say, token)
     at = say.find(token) if at < 0 else at
     guess = s0 + (s1 - s0) * at / max(len(say), 1) if at >= 0 else None
     hits = [w["start"] for w in mine if hindi.norm(w["text"].strip(match.PUNCT)) == hindi.norm(token)]
-    t = min(hits, key=lambda h: abs(h - guess)) if hits and guess is not None else (hits or [guess])[0]
+    if hits and len(hits) == len(said) and at in said:
+        t = hits[said.index(at)]
+    elif guess is not None:  # a timed word nearer another time the text says it is that one: the guess, then
+        place = {a: s0 + (s1 - s0) * a / max(len(say), 1) for a in said or [at]}
+        mine_hits = [h for h in hits if min(place, key=lambda a: abs(place[a] - h)) == at] if at in place else hits
+        t = min(mine_hits, key=lambda h: abs(h - guess)) if mine_hits else guess
+    else:
+        t = (hits or [None])[0]
     if t is None or not shot["start"] + CUT_EDGE <= t <= shot["end"] - CUT_EDGE:
         return None
     return t
@@ -825,6 +836,18 @@ def card_backdrop(rgb: np.ndarray | None) -> np.ndarray:
     small = cv2.resize(rgb[y0:y0 + H, x0:x0 + W], (W // 8, H // 8), interpolation=cv2.INTER_AREA)
     big = cv2.resize(cv2.GaussianBlur(small, (0, 0), 6), (W, H), interpolation=cv2.INTER_LINEAR).astype(np.float32)
     return np.clip(big * 0.32 + navy * 0.45, 0, 255).astype(np.uint8)
+
+
+def card_window(rgb: np.ndarray | None, card: dict, size: tuple[int, int]) -> np.ndarray:
+    """The bulletin's window for a text card: card_backdrop at the window's size, the card's words centred on it."""
+    win = cv2.resize(card_backdrop(rgb), size, interpolation=cv2.INTER_AREA)
+    big, small = card.get("big") or card.get("small") or "", card.get("small", "") if card.get("big") else ""
+    if (text := _textcard_layer(big, small)) is not None:
+        h, w = text[1].shape[:2]
+        x, y = (size[0] - w) // 2, (size[1] - h) // 2
+        a = text[1][:, :, None] if text[1].ndim == 2 else text[1]
+        win[y:y + h, x:x + w] = (win[y:y + h, x:x + w] * (1 - a) + text[0] * a).astype(np.uint8)
+    return win
 
 
 def _textcard_layer(big: str, small: str) -> tuple[np.ndarray, np.ndarray] | None:
@@ -943,10 +966,17 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
                       "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
                       "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
-                      "card_view": beat.card_view})
+                      "cut_at": beat.cut_at, "card_view": beat.card_view})
     seen = views(shots, timing["words"])
+    # A text card (match.CARD) as render_full draws it, in the window: its words over the plain channel background
+    # (a harm, accused or loss line) or a dark blur of its backdrop, no file tag, name strap or place stamp. The
+    # bulletin once showed the backdrop photo itself under a line that names nothing on it (finding 10).
+    plain = [b["plate"] == match.CARD and not b["outro"] and match.plain(b["beat"].text, short.loss) for b in shots]
+    texts = {k: card_window(None if plain[k] else plates[b["photo"]].rgb, b["beat"].card or {}, size)
+             for k, b in enumerate(shots) if b["plate"] == match.CARD and not b["outro"]}
     cards = [_fact_layer(b["beat"].card["big"], b["beat"].card.get("small", ""), card_sources(short, b["beat"].card))
-             if b["beat"].card and b["beat"].card.get("big") and not b["outro"] else None for b in shots]
+             if b["beat"].card and b["beat"].card.get("big") and not b["outro"] and k not in texts else None
+             for k, b in enumerate(shots)]
     big = [(b["beat"].card or {}).get("big", "").strip() for b in shots]
     held = [k > 0 and cards[k] is not None and cards[k - 1] is not None and big[k] == big[k - 1]
             for k in range(len(shots))]
@@ -1006,6 +1036,9 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             win = cv2.addWeighted(win, a, cam.shoot(plates[prev["photo"]], pu, prev["motion"]), 1 - a, 0)
             on = view["photo"] if a >= 0.5 else prev["photo"]
         win = grade.apply(win, i)
+        texted = k in texts and t >= flash_end
+        if texted:
+            win = texts[k]
         frame = _backdrop(win)
         if shot["outro"]:
             fade = min(1.0, (t - shot["start"]) / 0.5)
@@ -1028,14 +1061,16 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
             _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + src[1].shape[0] + 24, a)
         else:
             frame[WIN_Y:WIN_Y + WIN_H] = win
-            tag = tags[on]
-            _blit(frame, tag, W - tag[1].shape[1] - 24, WIN_Y + 20, 0.95)
-            if on in names:
-                _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
-            _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
+            if not texted:
+                tag = tags[on]
+                _blit(frame, tag, W - tag[1].shape[1] - 24, WIN_Y + 20, 0.95)
+                if on in names:
+                    _blit(frame, names[on], 24, WIN_Y + WIN_H - 128)
+            if not (texted and plain[k]):
+                _blit(frame, credits[on], 24, WIN_Y + WIN_H - 50, 0.9)
             # Only over the map or place photo it names (places_on): over a portrait it put Tiger Shroff in Begusarai.
             stamp = next(((at, s) for at, until, s in stamps if at <= t < until), None)
-            if stamp is not None and t >= flash_end and on == view["photo"]:
+            if stamp is not None and t >= flash_end and on == view["photo"] and not texted:
                 _blit(frame, stamp[1], 24, WIN_Y + 20, min(0.97, (t - max(flash_end, stamp[0])) / 0.3))
             if hook is not None and t < HOOK_HOLD:
                 a = min(1.0, t / 0.2, (HOOK_HOLD - t) / 0.3)
@@ -1133,7 +1168,9 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     accent = NEWS_GOLD
     # A person story's own photos are of that person: they get the name strap and can face another person.
     subject = short.scene.get("name_hi") if short.scene.get("subject_person") else None
-    photos = [p if p.get("who") or p.get("role") or not subject else p | {"who": subject, "role": "person"}
+    # A context fill (match.fill: no face matched) is the story's, not the subject's: no name strap on it.
+    photos = [p if p.get("who") or p.get("role") or not subject or match.fill(p) else p | {"who": subject,
+                                                                                          "role": "person"}
               for p in short.scene["photos"]]
     plates = {i: Plate(p, Path(p["path"]).with_suffix(".depth.npy"), face_share=FULL_FACE)
               for i, p in enumerate(photos)}
@@ -1153,7 +1190,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
         shots.append({"photo": idx, "views": shown or [idx], "start": s if i else 0.0,
                       "end": e if i < len(spans) - 1 else duration, "motion": MOTIONS[i % len(MOTIONS)],
                       "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
-                      "card_view": beat.card_view})
+                      "cut_at": beat.cut_at, "card_view": beat.card_view})
     seen = views(shots, timing["words"])
     pair = splits(shots, photos)
     half_plates = {i: Plate(photos[i], Path(photos[i]["path"]).with_suffix(".depth.npy"), size=half, face_share=0.42)

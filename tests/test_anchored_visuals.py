@@ -182,7 +182,7 @@ def test_card_ceiling_and_showable_retry(monkeypatch, tmp_path):
     monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["मुम्बई", "जुहू"])
     subject = {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ", "person": True}
     problems = writer.anchorless(hurt_draft(), subject, True)
-    assert problems == ["beats 4,5,6 name nothing that can be shown; SHOWABLE: मुम्बई, जुहू. Name in each beat the "
+    assert problems == ["beats 3,4,5,6 name nothing that can be shown; SHOWABLE: मुम्बई, जुहू. Name in each beat the "
                         "person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
     monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["मुम्बई", "जुहू", "Nanavati Hospital", "KEM Hospital"])
     assert writer.anchorless(hurt_draft(), subject, True) == []  # beat 6 alone is a card

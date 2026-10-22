@@ -42,7 +42,7 @@ DRY_KIND = os.environ.get("DESK_DRY_KIND") or None
 
 # How pictures are put to beats (SYNC-AUDIT 4.1 step 3): "anchored" shows only what a beat names, else a text card
 # (desk/match.py); "legacy" is the old name-then-fill assignment (visuals.assign_legacy), kept as a rollback switch.
-MATCHER = os.environ.get("DESK_MATCHER") or "anchored"
+MATCHER = (os.environ.get("DESK_MATCHER") or "anchored").strip().lower()  # run.yml: vars.DESK_MATCHER
 
 CHANNEL_ID_FORMAT = re.compile(r"^UC[0-9A-Za-z_-]{22}$")
 

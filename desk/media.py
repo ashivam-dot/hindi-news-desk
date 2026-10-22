@@ -342,15 +342,20 @@ def _usable(ordered: list[tuple[str, str]], keys: set[str], limit: int, shoot_ca
 # --- Vetting: what a photo shows besides who ------------------------------------------------------------------
 # The Rubio Short (39714003987, 2026-10-22) opened on his 1989 high-school yearbook photo under "रिफाइनरी दौरा"; its
 # pool also held "Marco Rubio in 6th Grade". The Jantar Mantar Short showed a 1928 photo of the place.
-CHILD = re.compile(r"yearbook|\b\d+(st|nd|rd|th) grade\b|childhood|\bas an? (child|boy|girl|teen\w*)\b|"
-                   r"\bschool photo|\bbaby\b", re.I)
+# "baby" only as the person's age ("as a baby", "baby photo"), never a title: "Baby John" is a 2024 film.
+CHILD = re.compile(r"yearbook|\b\d+(st|nd|rd|th) grade\b|childhood|\bas an? (child|boy|girl|baby|teen\w*)\b|"
+                   r"\bschool photo|\bbaby (photo|picture|pic)s?\b", re.I)
 PERSON_YEARS, PLACE_YEARS, ADULT = 20, 40, 18
 # Another event's photo: Mukesh Ambani at the 2023 NMACC gala under "welcomed him at Jamnagar", Tiger Shroff with his
-# mother at the 2015 Filmfare awards under "the court handed the accused to Mumbai Police". "party" only in lower
-# case and never "political party": a politician's file names "Bharatiya Janata Party".
+# mother at the 2015 Filmfare awards under "the court handed the accused to Mumbai Police". "party" only as a social
+# one (a birthday, wedding or launch party, a party at a home): a politician's photos name his party in every case
+# and order ("BJP party workers", "Congress party leader", "Bharatiya Janata Party").
 EVENT = re.compile(r"\bgala\b|\bawards?\b|premiere|red carpet|screening|wedding|filmfare|\biifa\b|\bspotted\b",
                    re.I)
-PARTY = re.compile(r"(?<!political )\bpart(y|ies)\b")
+PARTY = re.compile(r"\b(birthday|wedding|house|launch|success|wrap|farewell|engagement|cocktail|dinner|pool|after|"
+                   r"christmas|diwali|holi|new year'?s?|bachelor(ette)?|reception|theme|costume|tea|garden|dance|"
+                   r"release|anniversary|kitty|private|star-?studded) part(y|ies)\b|\bpart(y|ies) (at|hosted)\b|"
+                   r"\bpartying\b", re.I)
 # Paparazzi agencies whose watermark sits on the photo: 7-10 of the 8-11 Tiger Shroff pool photos carry one, so this
 # only ranks a photo lower and never drops it (the pool would empty).
 BRANDED = re.compile(r"bollywood ?hungama|pinkvilla|filmibeat|viral ?bhayani", re.I)
@@ -403,8 +408,9 @@ def era_reject(p, story_year: int, born: int | None = None, role: str = "person"
 def event_kind(p) -> str:
     """The unrelated event a photo was taken at (a gala, an award night, a premiere, a sighting), or ""."""
     text = _about(p)
-    m = EVENT.search(text) or PARTY.search(text)
-    return m.group(0).lower() if m else ""
+    if m := EVENT.search(text):
+        return m.group(0).lower()
+    return "party" if PARTY.search(text) else ""
 
 
 def branded(p) -> bool:

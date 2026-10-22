@@ -85,7 +85,10 @@ def test_a_beat_that_quotes_another_force_is_a_card():
              {"say": "मुंबई पुलिस आरोपियों से पूछताछ कर रही है।"}]
     rows = anchored(beats, subject, cast, TIGER_SPELT)
     kota = cast[4]["photos"][0]
-    assert views_of(rows)[1:] == [[at["police"], kota], None, [at["police"]]]  # Rajasthan's police: not Mumbai's
+    # Rajasthan's police: not Mumbai's. Kota's map, cut to on its word, would hold half the voice's picture time
+    # (beat 1 cuts to Mumbai's on its fourth word): plan drops the latest map cut (finding 12).
+    assert views_of(rows)[1:] == [[at["police"]], None, [at["police"]]]
+    assert rows[0]["views"] == [0, at["mumbai"]] and kota in cast[4]["photos"]
     assert visuals.other_force("राजस्थान पुलिस ने बताया", cast[-1])
     assert not visuals.other_force("संदिग्धों को पुलिस अब मुम्बई ला रही है", cast[-1])
     assert not visuals.other_force("मुम्बई पुलिस ने कहा", cast[-1])

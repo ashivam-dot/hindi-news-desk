@@ -205,9 +205,9 @@ def test_a_beat_that_names_the_storys_person_opens_on_them():
     cast = [{"en": "Delhi", "hi": "दिल्ली", "kind": "place", "photos": [5], "near": []}]
     beats = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दशहरा कार्यक्रम में शामिल हुए।"},
              {"say": "आयोजन दिल्ली में हुआ।"},
-             {"say": "नरेन्द्र मोदी ने दिल्ली में राम राज्य का जिक्र किया।"}]
-    rows = anchored(beats, [0, 1, 2], cast, MODI_SPELT)
-    assert views_of(rows) == [[0], [5], [1, 5]] and rows[2]["cut_word"] == "दिल्ली"
+             {"say": "नरेन्द्र मोदी ने दिल्ली में राम राज्य का जिक्र किया।"}, {"say": "मोदी ने भाषण दिया।"}]
+    rows = anchored(beats, [0, 1, 2], cast, MODI_SPELT)  # (a fourth beat: 1.5 map beats of 3 is over MAP_SHARE)
+    assert views_of(rows)[:3] == [[0], [5], [1, 5]] and rows[2]["cut_word"] == "दिल्ली"
 
 
 DUSSEHRA_BEATS = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दिल्ली में दशहरा के कार्यक्रम में शामिल हुए।", "photo": 0},
@@ -231,7 +231,8 @@ def test_a_city_every_line_names_does_not_stand_under_every_beat():
     spelt = MODI_SPELT + visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी")
     views = views_of(anchored(DUSSEHRA_BEATS, [0, 1, 2], [delhi, ramlila], spelt))
     # Delhi is named in five of six lines: it is the cut, never the main picture, except where it alone is named.
-    assert [v[0] for v in views] == [0, 6, 7, 1, 8, 2] and [len(v) for v in views] == [2, 1, 1, 2, 2, 1]
+    # Beat 5's Delhi cut would put maps at 2.5 of 6 beats, over MAP_SHARE: plan drops the latest map cut.
+    assert [v[0] for v in views] == [0, 6, 7, 1, 8, 2] and [len(v) for v in views] == [2, 1, 1, 2, 1, 1]
     assert views[5][0] in (0, 1, 2)  # "प्रधानमंत्री" names him: his photo, not a city map
 
 

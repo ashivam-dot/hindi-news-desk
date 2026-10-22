@@ -432,8 +432,9 @@ def said_is_shown(short: Short, views: list[dict] | None = None) -> list[str]:
                 problems.append(f"pictures: beat {n} names {c.get('en')} but shows someone or something else")
     cast = short.scene.get("cast")
     for n, b in enumerate(short.beats, 1):
-        if cast is not None and b.shot.startswith("photo:") and visuals.place_card(b.card) and \
-                visuals.card_over(b.card, shot_photos(b.shot), cast) != b.card:
+        # A text card (match.CARD) is the words alone, over no place: never trimmed (card_over), never flagged here.
+        if cast is not None and b.shot.startswith("photo:") and b.plate != match.CARD and \
+                visuals.place_card(b.card) and visuals.card_over(b.card, shot_photos(b.shot), cast) != b.card:
             problems.append(f"pictures: card {n} names the place {b.card['big']} over another picture")
     return problems
 
@@ -451,7 +452,7 @@ def shown_is_said(short: Short, views: list[dict] | None = None) -> list[str]:
     return match.problems(short, views)
 
 
-HELD_RUN = 3  # beats in a row one picture may not fill
+HELD_RUN = match.HELD_RUN  # beats in a row one picture may not fill (match.plan keeps under it by construction)
 
 
 def held(short: Short) -> list[str]:
@@ -462,12 +463,7 @@ def held(short: Short) -> list[str]:
     photos = short.scene.get("photos") or []
     groups = match.group(photos, match.cast_of(short))
 
-    def key(i: int):
-        p = photos[i] if i < len(photos) else {}
-        g = groups.get(i, "")
-        return (g if g.startswith("place:") else p.get("file")) if visuals.is_map(p) else i
-
-    beats = [{key(i) for i in shot_photos(b.shot)} if b.plate != match.CARD else set() for b in short.beats
+    beats = [{match.held_key(i, photos, groups) for i in shot_photos(b.shot)} if b.plate != match.CARD else set() for b in short.beats
              if b.shot.startswith("photo:")]
     problems, counts, run = [], {}, {}
     for n, keys in enumerate(beats):

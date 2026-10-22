@@ -32,6 +32,7 @@ class Beat:
     plate: str = ""
     cut_word: str = ""
     card_view: int = 0
+    cut_at: int = -1  # where in text cut_word is said (match.plan): compose cuts on that time, not its first one
 
 
 def shot_photos(shot: str) -> list[int]:

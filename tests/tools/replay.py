@@ -75,7 +75,7 @@ def shots_of(short: Short, spans: list, duration: float) -> list[dict]:
         main = shown[0] if shown else (out[-1]["photo"] if out else 0)
         out.append({"photo": main, "views": shown or [main], "start": a if k else 0.0,
                     "end": e if k < len(spans) - 1 else duration, "outro": b.shot == "outro", "beat": b,
-                    "cut_word": b.cut_word, "plate": b.plate, "card_view": b.card_view,
+                    "cut_word": b.cut_word, "cut_at": b.cut_at, "plate": b.plate, "card_view": b.card_view,
                     "motion": compose.MOTIONS[k % len(compose.MOTIONS)]})
     return out
 
@@ -101,7 +101,8 @@ def replan(short: Short) -> tuple[Short, list[dict]]:
     lead = next(iter(shot_photos(spoken[0].shot)), None) if spoken else None
     ranked = ([lead] if lead in subject else []) + [i for i in subject if i != lead]
     cards = [{"say": b.text, "card": b.card or {}} for b in spoken]
-    rows = match.plan(cards, photos, cast, ranked, short.kind, spell, match._person(short))
+    names = short.scene.get("names") or []
+    rows = match.plan(cards, photos, cast, ranked, short.kind, spell, match._person(short), names)
     it = iter(rows)
     beats = []
     for b in short.beats:
@@ -110,9 +111,9 @@ def replan(short: Short) -> tuple[Short, list[dict]]:
             continue
         r = next(it)
         shown = r["views"] or shot_photos(b.shot)[:1]
-        card = visuals.card_over(b.card or {}, shown, cast, photos, spell, r["plate"])
+        card = visuals.card_over(b.card or {}, shown, cast, photos, spell, r["plate"], names)
         beats.append(replace(b, shot="photo:" + "/".join(map(str, shown)), card=card, plate=r["plate"],
-                             cut_word=r["cut_word"], card_view=r["card_view"]))
+                             cut_word=r["cut_word"], cut_at=r["cut_at"], card_view=r["card_view"]))
     scene = short.scene | {"photos": photos}
     if hook := scene.get("hook"):  # writer._short keeps a hook only when the title or beat 1 says its names
         first = next((b.text for b in beats), "")
@@ -121,20 +122,21 @@ def replan(short: Short) -> tuple[Short, list[dict]]:
 
 
 def map_share(short: Short, views: list[dict] | None) -> float:
+    """Maps' share of the picture time, as match.problems weighs it: a text card's time is neither (finding 12)."""
     photos = short.scene.get("photos") or []
     if views:
-        total = sum(max(v["end"] - v["start"], 0.0) for v in views)
-        maps = sum(max(v["end"] - v["start"], 0.0) for v in views
-                   if v.get("plate") != match.CARD and v["photo"] < len(photos) and visuals.is_map(photos[v["photo"]]))
+        shown = [v for v in views if v.get("plate") != match.CARD and not v.get("outro")]
+        total = sum(max(v["end"] - v["start"], 0.0) for v in shown)
+        maps = sum(max(v["end"] - v["start"], 0.0) for v in shown
+                   if v["photo"] < len(photos) and visuals.is_map(photos[v["photo"]]))
         return maps / total if total else 0.0
     total = maps = 0.0
     for b in short.beats:
-        if not b.shot.startswith("photo:"):
+        if not b.shot.startswith("photo:") or b.plate == match.CARD:
             continue
         total += 1.0
-        if b.plate != match.CARD:
-            shown = shot_photos(b.shot)
-            maps += sum(visuals.is_map(photos[i]) for i in shown if i < len(photos)) / max(len(shown), 1)
+        shown = shot_photos(b.shot)
+        maps += sum(visuals.is_map(photos[i]) for i in shown if i < len(photos)) / max(len(shown), 1)
     return maps / total if total else 0.0
 
 

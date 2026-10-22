@@ -53,6 +53,12 @@ def test_event_kind():
     assert media.event_kind({"categories": "Bharatiya Janata Party politicians"}) == ""
     assert media.event_kind({"description": "a speech to the political party's workers"}) == ""
     assert media.event_kind({"description": "Shroff at a birthday party in Bandra"}) == "party"
+    # Finding 7: a politician's party in any wording is not a party he was photographed at, nor "Baby John" a baby.
+    for text in ("BJP party workers at the rally", "Congress Party leader Rahul Gandhi", "Aam Aadmi Party office"):
+        assert media.event_kind({"description": text}) == "", text
+    assert media.event_kind({"file": "File:Varun Dhawan at the wrap party of Baby John.jpg"}) == "party"
+    assert not media.CHILD.search("Varun Dhawan promoting Baby John in Mumbai")
+    assert media.CHILD.search("Tiger Shroff as a baby") and media.CHILD.search("a baby photo of him")
 
 
 def test_branded_downranked_not_dropped():

@@ -11,7 +11,7 @@ import pytest
 from desk import cli, compose, config, gate, match, voice
 
 from .test_cli import made  # noqa: F401
-from .test_match import applied, planned, short
+from .test_match import applied, planned, rehosted, short
 
 
 def beats_flagged(problems):
@@ -27,20 +27,24 @@ def test_rubio_artifact_blocked():
 
 def test_rubio_anchored_passes():
     s = short("39714003987")
-    shots = [("photo:7/8", "", "जामनगर"), ("photo:10/8", "", "जामनगर"), ("photo:8", match.CARD, ""),
+    # The hand fix cut to the Jamnagar map in beats 1 and 2: 1.5 of its 3 picture beats are maps once card time no
+    # longer pads the share (finding 12). Re-planned, beat 2 holds the hosts alone, as match.plan makes it.
+    shots = [("photo:7/8", "", "जामनगर"), ("photo:10", "", ""), ("photo:8", match.CARD, ""),
              ("photo:4/11", "", "वनतारा"), ("photo:11", match.CARD, ""), ("photo:4", match.CARD, "")]
     fixed = replace(s, beats=[replace(b, shot=sh, plate=pl, cut_word=w) for b, (sh, pl, w) in zip(s.beats, shots)])
-    assert gate.said_is_shown(fixed) == [] and gate.said_is_shown(short("39714003987-fixed")) == []
-    # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time.
+    assert gate.said_is_shown(fixed) == []
+    assert gate.said_is_shown(short("39714003987-fixed")) == ["pictures: maps fill 50% of the picture time (at most 40%)"]
+    # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time: 5.56 s of
+    # maps in 17.61 s (32%).
     views = [{"start": 0.35, "end": 3.5, "photo": 7, "beat_k": 0}, {"start": 3.5, "end": 6.14, "photo": 8, "beat_k": 0},
-             {"start": 6.14, "end": 10.0, "photo": 10, "beat_k": 1}, {"start": 10.0, "end": 12.1, "photo": 8, "beat_k": 1},
+             {"start": 6.14, "end": 12.1, "photo": 10, "beat_k": 1},
              {"start": 12.1, "end": 17.66, "photo": 8, "beat_k": 2, "plate": match.CARD},
              {"start": 17.66, "end": 20.6, "photo": 4, "beat_k": 3}, {"start": 20.6, "end": 23.52, "photo": 11, "beat_k": 3},
              {"start": 23.52, "end": 29.46, "photo": 11, "beat_k": 4, "plate": match.CARD},
              {"start": 29.46, "end": 35.47, "photo": 4, "beat_k": 5, "plate": match.CARD}]
     assert gate.shown_is_said(fixed, views) == []
     # The same Short cut to the Vantara map at the middle of beat 4 and held it for beats 5 and 6: maps over 40%.
-    late = views[:5] + [{"start": 17.66, "end": 18.0, "photo": 4, "beat_k": 3},
+    late = views[:4] + [{"start": 17.66, "end": 18.0, "photo": 4, "beat_k": 3},
                         {"start": 18.0, "end": 23.52, "photo": 11, "beat_k": 3}]
     assert any("maps fill" in p for p in gate.shown_is_said(fixed, late))
 
@@ -65,7 +69,7 @@ def test_min_visuals_not_met_by_maps():
     maps = replace(s, beats=[replace(b, shot=sh, plate=pl) for b, sh, pl in zip(s.beats, shots, plates)],
                    scene=s.scene | {"min_visuals": 3})
     assert "pictures: only 1 different pictures once a place's maps count as one (want 3)" in gate.said_is_shown(maps)
-    assert gate.said_is_shown(replace(s, scene=s.scene | {"min_visuals": 3})) == []
+    assert gate.said_is_shown(replace(rehosted(s), scene=s.scene | {"min_visuals": 3})) == []
 
 
 def test_jaishankar_clean_short_still_passes():

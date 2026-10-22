@@ -53,9 +53,11 @@ def test_map_description_depicts_own_place():
 def test_city_never_shows_spot_map():
     rows, _ = planned(short("39714003987"))
     for k in (0, 1):  # "...जामनगर में रिलायंस रिफाइनरी", "...जामनगर परिसर में": the city only
-        assert 11 not in rows[k]["views"] and 12 not in rows[k]["views"] and 8 in rows[k]["views"]
-    assert rows[0] == {"views": [1, 8], "cut_word": "जामनगर", "plate": "", "card_view": 1}
-    assert rows[3] == {"views": [2, 11], "cut_word": "वनतारा", "plate": "", "card_view": 1}  # Vantara's own map
+        assert 11 not in rows[k]["views"] and 12 not in rows[k]["views"]
+    assert rows[0] == {"views": [1, 8], "cut_word": "जामनगर", "cut_at": 27, "plate": "", "card_view": 1}
+    # beat 2's Jamnagar cut would put maps at 50% of the picture time (finding 12): the hosts alone, no map
+    assert rows[1] == {"views": [10], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
+    assert rows[3] == {"views": [2, 11], "cut_word": "वनतारा", "cut_at": 40, "plate": "", "card_view": 1}  # Vantara's own map
 
 
 def test_pronoun_continuity_needs_leading_pronoun_and_prev_subject():
@@ -107,7 +109,7 @@ def test_surname_inside_another_name_is_not_the_subject():
 
 def test_card_takes_the_view_it_names():
     rows, _ = planned(short("39411111185"))  # subject, Mumbai, Rubio; the card says "मार्को रुबियो से मुलाकात"
-    assert rows[0] == {"views": [0, 10], "cut_word": "मार्को", "plate": "", "card_view": 1}
+    assert rows[0] == {"views": [0, 10], "cut_word": "मार्को", "cut_at": 55, "plate": "", "card_view": 1}
 
 
 def test_rubio_plan_passes_and_original_blocks():
@@ -118,7 +120,15 @@ def test_rubio_plan_passes_and_original_blocks():
     assert any("card 4 names" in p and hindi.norm("वनतारा") in p for p in bad)
     rows, _ = planned(s)
     assert match.problems(applied(s, rows)) == []
-    assert match.problems(short("39714003987-fixed")) == []
+    # the hand fix held maps under 1.5 of its 3 picture beats (finding 12: card time no longer pads the share):
+    fixed = short("39714003987-fixed")
+    assert match.problems(fixed) == ["pictures: maps fill 50% of the picture time (at most 40%)"]
+    assert match.problems(rehosted(fixed)) == []  # beat 2 on the hosts alone, as plan() makes it
+
+
+def rehosted(s):
+    """The hand-fixed Rubio re-planned: beat 2 drops its Jamnagar cut and holds the Ambani photo."""
+    return replace(s, beats=[s.beats[0], replace(s.beats[1], shot="photo:10"), *s.beats[2:]])
 
 
 def test_jaishankar_flags_only_beat_7():
@@ -140,18 +150,17 @@ def test_old_jantar_photo_and_card_ceiling():
 
 def test_render_views_weigh_map_time():
     """render.json's views give the time shares: the same shots pass or fail on how long the maps are held."""
-    s = short("39714003987-fixed")
+    s = rehosted(short("39714003987-fixed"))
 
     def views(map_s):
         t, out = 0.0, []
-        for k, i, d in [(0, 7, 2), (0, 8, map_s), (1, 10, 1), (1, 8, 3), (2, 8, 2), (3, 4, 2), (3, 11, 2), (4, 11, 2),
-                        (5, 4, 2)]:
+        for k, i, d in [(0, 7, 2), (0, 8, map_s), (1, 10, 4), (2, 8, 2), (3, 4, 2), (3, 11, 2), (4, 11, 2), (5, 4, 2)]:
             out.append({"start": t, "end": t + d, "photo": i, "beat_k": k, "plate": s.beats[k].plate})
             t += d
         return out
 
-    assert match.problems(s, views(2)) == []  # 7 s of maps in 18 (a card counts its time, never as a map)
-    assert "pictures: maps fill 52% of the picture time (at most 40%)" in match.problems(s, views(7))  # 12 s in 23
+    assert match.problems(s, views(2)) == []  # 4 s of maps in 12 (a card's time is neither map nor picture time)
+    assert "pictures: maps fill 53% of the picture time (at most 40%)" in match.problems(s, views(7))  # 9 s in 17
 
 
 def test_old_short_json_loads(tmp_path):
