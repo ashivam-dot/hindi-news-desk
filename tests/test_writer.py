@@ -325,7 +325,7 @@ def test_title_style_wants_the_name_first_no_label_no_stock_tail_and_its_own_ope
     for tail in ("रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, वजह क्या है?", "रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, क्या थी वजह?",
                  "रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, क्यों?"):
         assert any("stock tail" in p for p in style(tail)), tail
-    assert style("रमेश प्रसाद वर्मा ने 12 भाषाओं में गाया, गुरु को क्यों दिया सम्मान?") == []
+    assert style("रमेश प्रसाद वर्मा ने गाया, गुरु को क्यों दिया सम्मान?") == []  # 53 characters
     assert any("first 3 words" in p for p in style("संगीत जगत में शोक, मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे"))
     recent = ["मशहूर गायक रमेश प्रसाद वर्मा अस्पताल में भर्ती"]
     assert any("also opens" in p for p in style("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", recent=recent))
@@ -390,6 +390,37 @@ def test_hashtags_are_what_hindi_news_viewers_search():
 def test_no_usable_title_keeps_the_drafts_own(tmp_path):
     out, _, _ = write([[]], tmp_path, titles=["रमेश प्रसाद वर्मा कौन थे?"])
     assert out["title"] == draft()["title"]
+
+
+SIXTY = "मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे, 12 भाषाओं में गाया था"
+SEVENTY_TWO = SIXTY + " उन्होंने भी"
+
+
+def test_a_title_over_55_characters_is_flagged_and_over_65_refused():
+    d, args = draft(), (SUBJECT, SOURCE_EN, "death", False)
+    assert len(SIXTY) == 60 and len(SEVENTY_TWO) == 72
+    assert writer.title_problems(SIXTY, d, *args) == []
+    assert any("keep the title to 37-55" in p for p in writer.title_style(SIXTY, d, SUBJECT))
+    assert writer.title_style("मशहूर गायक रमेश प्रसाद वर्मा नहीं रहे", d, SUBJECT) == []  # 37: no flag below 55
+    assert any("72 characters" in p for p in writer.title_problems(SEVENTY_TWO, d, *args))
+
+
+def test_the_drafts_own_title_never_falls_back_over_65_characters(tmp_path):
+    class LongFirst(FakePen):
+        def chat(self, messages, schema=None, **kw):
+            if schema is writer.SCHEMA and not any(m["role"] == "assistant" for m in messages):
+                self.used.append("fake")
+                return draft(title=SEVENTY_TWO)
+            return super().chat(messages, schema, **kw)
+
+    pen = LongFirst([[]], ["रमेश प्रसाद वर्मा कौन थे?"])
+    out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                               log_path=tmp_path / "log.json", pen=pen)
+    assert any("72 characters" in p for p in log[0]["problems"])
+    assert out["title"] == draft()["title"]  # no usable option: the retried draft's own title, not the long one
+    with pytest.raises(ValueError, match="at most 65"):
+        writer.retitle(FakePen([], ["रमेश प्रसाद वर्मा कौन थे?"]), draft(title=SEVENTY_TWO), SUBJECT, SOURCE_EN,
+                       "death", False, recent=[])
 
 
 def test_checker_items_that_quote_only_the_sources_are_ignored(tmp_path):
