@@ -1,12 +1,12 @@
 {
- "at": "2026-10-23T03:38:14+00:00",
+ "at": "2026-10-23T04:16:00+00:00",
  "trending": [
   {
    "qid": "Q320093",
    "title": "Tom Skerritt",
-   "fame": 521141,
+   "fame": 521241,
    "views": 371141,
-   "traffic": 0,
+   "traffic": 100,
    "news": 150000,
    "news_at": "2026-10-22T21:10:36+00:00",
    "headlines": [
@@ -16,14 +16,16 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
+    "IN",
     "US",
     "world"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-22",
+    "google-trends-IN:tom skerritt",
     "google-news:US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
     "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
     "outlet:France Médias Monde"
@@ -58,13 +60,13 @@
    "views": 0,
    "traffic": 0,
    "news": 400000,
-   "news_at": "2026-10-23T02:19:32+00:00",
+   "news_at": "2026-10-23T04:04:35+00:00",
    "headlines": [
     "Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
+    "Magnitude-7 earthquake hits China’s Tibet, killing at least 16 and destroying hundreds of homes",
     "People scream, scramble for safety after 7-magnitude quake in Tibet that killed 16",
-    "7-magnitude earthquake strikes Tibet, at least 16 killed - watch",
-    "18 Killed, Over 300 Houses Collapse After Magnitude-7 Earthquake In Tibet"
+    "7-magnitude earthquake strikes Tibet, at least 16 killed - watch"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -72,7 +74,6 @@
    "india_link": true,
    "geos": [
     "IN",
-    "US",
     "world"
    ],
    "label_hi": "२०२६ भोट भूकम्प",
@@ -80,7 +81,8 @@
     "wikipedia-current-events-2026-10-22",
     "google-news:Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
     "google-news:Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
-    "google-news:People scream, scramble for safety after 7-magnitude quake in Tibet that killed 16",
+    "google-news:Magnitude-7 earthquake hits China’s Tibet, killing at least 16 and destroying hundreds of homes",
+    "outlet:Guardian Media Group",
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
@@ -90,6 +92,7 @@
     "outlet:France Médias Monde"
    ],
    "owners": [
+    "Guardian Media Group",
     "India Today Group",
     "Bennett, Coleman & Co.",
     "NDTV",
@@ -99,6 +102,16 @@
     "France Médias Monde"
    ],
    "reports": [
+    {
+     "title": "Magnitude-7 earthquake hits China’s Tibet, killing at least 16 and destroying hundreds of homes",
+     "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-23T04:04:35+00:00"
+    },
     {
      "title": "People scream, scramble for safety after 7-magnitude quake in Tibet that killed 16",
      "url": "https://www.indiatoday.in/world/story/tibet-magnitude-7-earthquake-kills-16-injures-32-nagqu-china-3023168-2026-10-23?utm_source=rss",
@@ -168,16 +181,6 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-22T21:23:01+00:00"
-    },
-    {
-     "title": "Strong earthquake strikes China’s remote Tibet region",
-     "url": "https://www.france24.com/en/asia-pacific/20261022-many-dead-massive-earthquake-strikes-china-s-remote-tibet-region-magnitude-seven",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T21:09:38+00:00"
     }
    ],
    "id": "wk-Q141807978",
@@ -199,6 +202,123 @@
    "mag": 7.0,
    "alert": "orange",
    "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
+  },
+  {
+   "id": "kh-20261023-Q1174",
+   "qid": "Q1174",
+   "title": "Haryana",
+   "name": "Haryana",
+   "phrase": "Haryana",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+   "story_keys": [
+    "cuts",
+    "dark",
+    "face",
+    "power",
+    "privatisation",
+    "worker"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T04:12:44+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "Government of India",
+    "TV9 Network",
+    "DB Corp"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+    "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
+    "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
+    "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
+    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+    "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
+   ],
+   "hindi_headlines": [
+    "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
+    "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
+    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "hindi_news": 5,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "हरियाणा",
+   "reports": [
+    {
+     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+     "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:23:16+00:00"
+    },
+    {
+     "title": "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
+     "url": "https://www.news18.com/explainers/gurugram-faridabad-face-long-power-outages-why-haryana-electricity-employees-are-on-strike-ws-lr-10393669.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:09:57+00:00"
+    },
+    {
+     "title": "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
+     "url": "https://www.livemint.com/news/india/no-power-water-in-gurugram-faridabad-nuh-3-000-complaints-filed-in-12-hours-why-is-haryana-in-the-dark-11792688305908.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T17:16:35+00:00"
+    },
+    {
+     "title": "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
+     "url": "https://www.livemint.com/news/india/haryana-electricity-strike-latest-news-gurugram-faces-power-cuts-state-govt-to-challenge-herc-order-top-updates-11792678732912.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T15:09:32+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Government of India",
+    "outlet:TV9 Network",
+    "outlet:DB Corp",
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
+    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "top": {
+    "IN-hi-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "qid": "Q1699148",
@@ -229,6 +349,126 @@
    "top_headlines": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261023-Q209330",
+   "qid": "Q209330",
+   "title": "Instagram",
+   "name": "Instagram",
+   "phrase": "Instagram",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+   "story_keys": [
+    "book",
+    "debut",
+    "first",
+    "look",
+    "make",
+    "memoir",
+    "share",
+    "sonia",
+    "upcoming"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T02:24:10+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+    "Sonia joins Instagram, shares first look of her upcoming memoir"
+   ],
+   "hindi_headlines": [
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "इंस्टाग्राम",
+   "reports": [
+    {
+     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
+     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:24:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T20:50:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T07:45:11+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:45:44+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:30:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:DB Corp",
+    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "google-news:सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
+   ],
+   "top": {
+    "IN-hi-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
+   ]
   },
   {
    "id": "kh-20261023-Q140632219",
@@ -320,65 +560,57 @@
     "outlet:TV9 Network",
     "google-news:Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
     "google-news:Neha Bora can outwit the police. Can Indian youth leader outfox Modi?",
-    "google-news:'पहले ही बना दी बैड बॉय की इमेज', नेहा बोरा केस में HC की टिप्पणी पर सरकार की दलील- क्या ये दूध के धुले"
+    "google-news:नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज"
    ],
    "top": {
-    "IN-nation": 12,
-    "IN-hi-nation": 10
+    "IN-nation": 17,
+    "IN-hi-nation": 7
    },
-   "top_score": 0.465,
+   "top_score": 0.48,
    "top_headlines": [
-    "'पहले ही बना दी बैड बॉय की इमेज', नेहा बोरा केस में HC की टिप्पणी पर सरकार की दलील- क्या ये दूध के धुले",
+    "नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज",
     "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case"
    ]
   },
   {
-   "id": "kh-20261023-Q1174",
-   "qid": "Q1174",
-   "title": "Haryana",
-   "name": "Haryana",
-   "phrase": "Haryana",
-   "person": false,
+   "id": "kh-20261023-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
    "story_keys": [
-    "against",
-    "cuts",
-    "dark",
-    "face",
-    "power",
-    "privatisation",
-    "worker"
+    "carbon",
+    "climate",
+    "disaster’",
+    "inviting"
    ],
    "date": "2026-10-22",
-   "news_at": "2026-10-23T02:23:16+00:00",
+   "news_at": "2026-10-23T02:06:41+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "India Today Group",
-    "Government of India",
-    "TV9 Network",
-    "DB Corp"
+    "NDTV"
    ],
    "fame": 275000,
    "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
-    "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
-    "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
-    "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
-    "Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
    ],
    "hindi_headlines": [
-    "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
-    "कंपनियां बंद, पानी की सप्लाई बाधित... हड़ताल से हरियाणा में पैनिक",
-    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
+    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
+    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
+    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
    ],
    "hindi_news": 4,
    "geos": [
@@ -386,63 +618,158 @@
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "हरियाणा",
+   "label_hi": "पीयूष गोयल",
    "reports": [
     {
-     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
-     "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T02:23:16+00:00"
+     "at": "2026-10-23T02:06:41+00:00"
     },
     {
-     "title": "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-     "url": "https://www.news18.com/explainers/gurugram-faridabad-face-long-power-outages-why-haryana-electricity-employees-are-on-strike-ws-lr-10393669.html",
+     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T02:09:57+00:00"
+     "at": "2026-10-23T01:48:25+00:00"
     },
     {
-     "title": "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
-     "url": "https://www.livemint.com/news/india/no-power-water-in-gurugram-faridabad-nuh-3-000-complaints-filed-in-12-hours-why-is-haryana-in-the-dark-11792688305908.html",
+     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
      "outlet": "Mint",
      "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T17:16:35+00:00"
-    },
-    {
-     "title": "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
-     "url": "https://www.livemint.com/news/india/haryana-electricity-strike-latest-news-gurugram-faces-power-cuts-state-govt-to-challenge-herc-order-top-updates-11792678732912.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T15:09:32+00:00"
+     "at": "2026-10-22T16:20:43+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Government of India",
-    "outlet:TV9 Network",
-    "outlet:DB Corp",
-    "google-news:Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "outlet:NDTV",
+    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal",
+    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-hi": 5,
+    "IN-nation": 8,
+    "IN-hi-nation": 11
+   },
+   "top_score": 1.145,
+   "top_headlines": [
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
+    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
+   ]
+  },
+  {
+   "id": "kh-20261023-Q96418672",
+   "qid": "Q96418672",
+   "title": "Jio Platforms",
+   "name": "Jio Platforms",
+   "phrase": "Jio IPO",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+   "story_keys": [
+    "bids",
+    "crore",
+    "issue",
+    "news"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T00:17:11+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+    "IPO-bound companies defer launches to avoid Jio mega issue",
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जियो प्लेटफॉर्म्स",
+   "reports": [
+    {
+     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
+     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T00:17:11+00:00"
+    },
+    {
+     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T11:03:05+00:00"
+    },
+    {
+     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:52:57+00:00"
+    },
+    {
+     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:31:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details",
+    "eMudhra shuts global website certificate business after key flaws exposed, calls scrutiny ‘disproportionate’ | India News"
+   ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "id": "kh-20261023-Q7089335",
@@ -561,103 +888,11 @@
     "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ],
    "top": {
-    "IN-nation": 17
+    "IN-nation": 20
    },
-   "top_score": 0.12,
+   "top_score": 0.03,
    "top_headlines": [
     "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q7199798",
-   "qid": "Q7199798",
-   "title": "Piyush Goyal",
-   "name": "Piyush Goyal",
-   "phrase": "Piyush Goyal",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-   "story_keys": [
-    "carbon",
-    "climate",
-    "disaster’",
-    "inviting"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:06:41+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "hindi_headlines": [
-    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
-    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "पीयूष गोयल",
-   "reports": [
-    {
-     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:06:41+00:00"
-    },
-    {
-     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T01:48:25+00:00"
-    },
-    {
-     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T16:20:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
    ]
   },
   {
@@ -785,118 +1020,6 @@
    ]
   },
   {
-   "id": "kh-20261023-Q209330",
-   "qid": "Q209330",
-   "title": "Instagram",
-   "name": "Instagram",
-   "phrase": "Instagram",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-   "story_keys": [
-    "book",
-    "debut",
-    "first",
-    "look",
-    "make",
-    "memoir",
-    "share",
-    "sonia",
-    "upcoming"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:24:10+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-    "Sonia joins Instagram, shares first look of her upcoming memoir"
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
-    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी"
-   ],
-   "hindi_news": 2,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "इंस्टाग्राम",
-   "reports": [
-    {
-     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
-     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:24:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T20:50:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T07:45:11+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:45:44+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:30:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
    "qid": "Q452431",
    "title": "Ron Duguay",
    "fame": 92485,
@@ -1011,105 +1134,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
-  },
-  {
-   "id": "kh-20261023-Q96418672",
-   "qid": "Q96418672",
-   "title": "Jio Platforms",
-   "name": "Jio Platforms",
-   "phrase": "Jio IPO",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-   "story_keys": [
-    "bids",
-    "crore",
-    "issue",
-    "news"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T00:17:11+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-    "IPO-bound companies defer launches to avoid Jio mega issue"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "जियो प्लेटफॉर्म्स",
-   "reports": [
-    {
-     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
-     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T00:17:11+00:00"
-    },
-    {
-     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T11:03:05+00:00"
-    },
-    {
-     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:52:57+00:00"
-    },
-    {
-     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:31:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Akash Ambani takes lead at Jio Platforms IPO, signals Reliance succession shift"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q3424313",
@@ -1295,33 +1319,68 @@
  ],
  "candidates": [
   {
-   "qid": "Q1699148",
-   "title": "John Anderson (singer)",
-   "fame": 336579,
-   "views": 336579,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 521241,
+   "views": 371141,
+   "traffic": 100,
+   "news": 150000,
+   "news_at": "2026-10-22T21:10:36+00:00",
+   "headlines": [
+    "US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
+    "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
-   "geos": [],
+   "india_link": true,
+   "geos": [
+    "IN",
+    "US",
+    "world"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-22"
+    "wikipedia-top-2026-10-22",
+    "google-trends-IN:tom skerritt",
+    "google-news:US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
+    "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
+    "outlet:France Médias Monde"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1699148",
+   "owners": [
+    "France Médias Monde"
+   ],
+   "reports": [
+    {
+     "title": "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
+     "url": "https://www.france24.com/en/culture/20261022-emmy-winning-us-actor-tom-skerritt-top-gun-and-picket-fences-dies-93",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-22T20:11:54+00:00"
+    }
+   ],
+   "id": "wk-Q320093",
    "kind": "death",
    "category": "death",
    "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "audience": "world",
+   "orbitwire": {
+    "qid": "Q320093",
+    "status": "published",
+    "orbitwire_id": "wk-Q320093",
+    "orbitwire_published_at": "2026-10-22T22:48:56+00:00",
+    "orbitwire_url": "https://www.youtube.com/shorts/-5flM6V5zQs",
+    "orbitwire_title": "Tom Skerritt, Actor of Top Gun and Alien, Dies at 93",
+    "high_profile": "fame 521,241 >= 400,000",
+    "india": "linked to India",
+    "angle": "india"
+   },
+   "audience": "india",
    "lane": "obituary"
   },
   {
@@ -1336,7 +1395,6 @@
    "category_hi": "समाचार",
    "story": "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
    "story_keys": [
-    "against",
     "cuts",
     "dark",
     "face",
@@ -1345,7 +1403,7 @@
     "worker"
    ],
    "date": "2026-10-22",
-   "news_at": "2026-10-23T02:23:16+00:00",
+   "news_at": "2026-10-23T04:12:44+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -1354,8 +1412,8 @@
     "TV9 Network",
     "DB Corp"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1364,15 +1422,16 @@
     "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
     "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
     "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
-    "Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
    "hindi_headlines": [
     "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
-    "कंपनियां बंद, पानी की सप्लाई बाधित... हड़ताल से हरियाणा में पैनिक",
+    "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
     "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [
     "IN"
    ],
@@ -1428,13 +1487,150 @@
     "outlet:Government of India",
     "outlet:TV9 Network",
     "outlet:DB Corp",
-    "google-news:Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
+    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
    ],
+   "top": {
+    "IN-hi-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "qid": "Q1699148",
+   "title": "John Anderson (singer)",
+   "fame": 336579,
+   "views": 336579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-22"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1699148",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261023-Q96418672",
+   "qid": "Q96418672",
+   "title": "Jio Platforms",
+   "name": "Jio Platforms",
+   "phrase": "Jio IPO",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+   "story_keys": [
+    "bids",
+    "crore",
+    "issue",
+    "news"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T00:17:11+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+    "IPO-bound companies defer launches to avoid Jio mega issue",
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जियो प्लेटफॉर्म्स",
+   "reports": [
+    {
+     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
+     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T00:17:11+00:00"
+    },
+    {
+     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T11:03:05+00:00"
+    },
+    {
+     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:52:57+00:00"
+    },
+    {
+     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:31:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details",
+    "eMudhra shuts global website certificate business after key flaws exposed, calls scrutiny ‘disproportionate’ | India News"
+   ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "qid": "Q452431",
@@ -1550,105 +1746,6 @@
     "'He put it back': Trump says Ukraine's Starlink access restored, stays silent on Musk"
    ],
    "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261023-Q96418672",
-   "qid": "Q96418672",
-   "title": "Jio Platforms",
-   "name": "Jio Platforms",
-   "phrase": "Jio IPO",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-   "story_keys": [
-    "bids",
-    "crore",
-    "issue",
-    "news"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T00:17:11+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-    "IPO-bound companies defer launches to avoid Jio mega issue"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "जियो प्लेटफॉर्म्स",
-   "reports": [
-    {
-     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
-     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T00:17:11+00:00"
-    },
-    {
-     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T11:03:05+00:00"
-    },
-    {
-     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:52:57+00:00"
-    },
-    {
-     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:31:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Akash Ambani takes lead at Jio Platforms IPO, signals Reliance succession shift"
-   ],
-   "audience": "india",
    "lane": "other"
   },
   {
@@ -1773,9 +1870,8 @@
   }
  ],
  "notes": [
-  "outlets: 1313 headlines from 30 feeds (18 owners), 19 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-delhi-protest",
-  "explainers: 7 kh- stories (on): kh-20261023-Q140632219, kh-20261023-Q1174, kh-20261023-Q7089335, kh-20261023-Q7199798; dropped: explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Vadra Priyanka Gandhi: fewer than 3 owners' headlines name it and the story; explainer Shamonda: no Wikipedia article that can be its centre",
-  "skip wk-Q320093: Orbitwire published (wk-Q320093) and no India connection: not told again in Hindi",
+  "outlets: 1322 headlines from 30 feeds (18 owners), 21 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-delhi-protest",
+  "explainers: 7 kh- stories (on): kh-20261023-Q1174, kh-20261023-Q209330, kh-20261023-Q140632219, kh-20261023-Q7199798; dropped: explainer Raihan Vadra / Raihan Vadra: no Wikipedia article that can be its centre; explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Duo / Retailers: no Wikipedia article that can be its centre",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -1783,10 +1879,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1313,
+  "headlines": 1322,
   "feeds": 30,
   "owners": 18,
-  "matched": 19,
+  "matched": 21,
   "corroborated": 9
  },
  "emerging": [
@@ -1879,6 +1975,243 @@
  ],
  "explainers": [
   {
+   "id": "kh-20261023-Q1174",
+   "qid": "Q1174",
+   "title": "Haryana",
+   "name": "Haryana",
+   "phrase": "Haryana",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+   "story_keys": [
+    "cuts",
+    "dark",
+    "face",
+    "power",
+    "privatisation",
+    "worker"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T04:12:44+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "Government of India",
+    "TV9 Network",
+    "DB Corp"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+    "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
+    "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
+    "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
+    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+    "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
+   ],
+   "hindi_headlines": [
+    "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
+    "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
+    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "hindi_news": 5,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "हरियाणा",
+   "reports": [
+    {
+     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+     "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:23:16+00:00"
+    },
+    {
+     "title": "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
+     "url": "https://www.news18.com/explainers/gurugram-faridabad-face-long-power-outages-why-haryana-electricity-employees-are-on-strike-ws-lr-10393669.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:09:57+00:00"
+    },
+    {
+     "title": "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
+     "url": "https://www.livemint.com/news/india/no-power-water-in-gurugram-faridabad-nuh-3-000-complaints-filed-in-12-hours-why-is-haryana-in-the-dark-11792688305908.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T17:16:35+00:00"
+    },
+    {
+     "title": "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
+     "url": "https://www.livemint.com/news/india/haryana-electricity-strike-latest-news-gurugram-faces-power-cuts-state-govt-to-challenge-herc-order-top-updates-11792678732912.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T15:09:32+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Government of India",
+    "outlet:TV9 Network",
+    "outlet:DB Corp",
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
+    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "top": {
+    "IN-hi-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261023-Q209330",
+   "qid": "Q209330",
+   "title": "Instagram",
+   "name": "Instagram",
+   "phrase": "Instagram",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+   "story_keys": [
+    "book",
+    "debut",
+    "first",
+    "look",
+    "make",
+    "memoir",
+    "share",
+    "sonia",
+    "upcoming"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T02:24:10+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+    "Sonia joins Instagram, shares first look of her upcoming memoir"
+   ],
+   "hindi_headlines": [
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "इंस्टाग्राम",
+   "reports": [
+    {
+     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
+     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:24:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T20:50:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T07:45:11+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:45:44+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:30:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:DB Corp",
+    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "google-news:सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
+   ],
+   "top": {
+    "IN-hi-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
+   ]
+  },
+  {
    "id": "kh-20261023-Q140632219",
    "qid": "Q140632219",
    "title": "Neha Bora",
@@ -1968,65 +2301,57 @@
     "outlet:TV9 Network",
     "google-news:Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
     "google-news:Neha Bora can outwit the police. Can Indian youth leader outfox Modi?",
-    "google-news:'पहले ही बना दी बैड बॉय की इमेज', नेहा बोरा केस में HC की टिप्पणी पर सरकार की दलील- क्या ये दूध के धुले"
+    "google-news:नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज"
    ],
    "top": {
-    "IN-nation": 12,
-    "IN-hi-nation": 10
+    "IN-nation": 17,
+    "IN-hi-nation": 7
    },
-   "top_score": 0.465,
+   "top_score": 0.48,
    "top_headlines": [
-    "'पहले ही बना दी बैड बॉय की इमेज', नेहा बोरा केस में HC की टिप्पणी पर सरकार की दलील- क्या ये दूध के धुले",
+    "नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज",
     "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case"
    ]
   },
   {
-   "id": "kh-20261023-Q1174",
-   "qid": "Q1174",
-   "title": "Haryana",
-   "name": "Haryana",
-   "phrase": "Haryana",
-   "person": false,
+   "id": "kh-20261023-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
+   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
    "story_keys": [
-    "against",
-    "cuts",
-    "dark",
-    "face",
-    "power",
-    "privatisation",
-    "worker"
+    "carbon",
+    "climate",
+    "disaster’",
+    "inviting"
    ],
    "date": "2026-10-22",
-   "news_at": "2026-10-23T02:23:16+00:00",
+   "news_at": "2026-10-23T02:06:41+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "India Today Group",
-    "Government of India",
-    "TV9 Network",
-    "DB Corp"
+    "NDTV"
    ],
    "fame": 275000,
    "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Gurugram Faces Power Cuts As Electricity Workers Strike Over Privatisation",
-    "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
-    "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
-    "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
-    "Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
    ],
    "hindi_headlines": [
-    "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
-    "कंपनियां बंद, पानी की सप्लाई बाधित... हड़ताल से हरियाणा में पैनिक",
-    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
+    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
+    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
+    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
    ],
    "hindi_news": 4,
    "geos": [
@@ -2034,63 +2359,158 @@
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "हरियाणा",
+   "label_hi": "पीयूष गोयल",
    "reports": [
     {
-     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
-     "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T02:23:16+00:00"
+     "at": "2026-10-23T02:06:41+00:00"
     },
     {
-     "title": "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-     "url": "https://www.news18.com/explainers/gurugram-faridabad-face-long-power-outages-why-haryana-electricity-employees-are-on-strike-ws-lr-10393669.html",
+     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T02:09:57+00:00"
+     "at": "2026-10-23T01:48:25+00:00"
     },
     {
-     "title": "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
-     "url": "https://www.livemint.com/news/india/no-power-water-in-gurugram-faridabad-nuh-3-000-complaints-filed-in-12-hours-why-is-haryana-in-the-dark-11792688305908.html",
+     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
      "outlet": "Mint",
      "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T17:16:35+00:00"
-    },
-    {
-     "title": "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
-     "url": "https://www.livemint.com/news/india/haryana-electricity-strike-latest-news-gurugram-faces-power-cuts-state-govt-to-challenge-herc-order-top-updates-11792678732912.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T15:09:32+00:00"
+     "at": "2026-10-22T16:20:43+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Government of India",
-    "outlet:TV9 Network",
-    "outlet:DB Corp",
-    "google-news:Haryana power employees to go on 3-day strike over private licence; govt to appeal against HERC move"
+    "outlet:NDTV",
+    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal",
+    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-hi": 5,
+    "IN-nation": 8,
+    "IN-hi-nation": 11
+   },
+   "top_score": 1.145,
+   "top_headlines": [
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
+    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
+   ]
+  },
+  {
+   "id": "kh-20261023-Q96418672",
+   "qid": "Q96418672",
+   "title": "Jio Platforms",
+   "name": "Jio Platforms",
+   "phrase": "Jio IPO",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+   "story_keys": [
+    "bids",
+    "crore",
+    "issue",
+    "news"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T00:17:11+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+    "IPO-bound companies defer launches to avoid Jio mega issue",
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "जियो प्लेटफॉर्म्स",
+   "reports": [
+    {
+     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
+     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T00:17:11+00:00"
+    },
+    {
+     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
+     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T11:03:05+00:00"
+    },
+    {
+     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
+     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:52:57+00:00"
+    },
+    {
+     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
+     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T06:31:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Reliance Jio IPO subscription status day 1, day 2: Check QIB, NII, Retail, Employee, RIL Shareholders wise data details",
+    "eMudhra shuts global website certificate business after key flaws exposed, calls scrutiny ‘disproportionate’ | India News"
+   ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "id": "kh-20261023-Q7089335",
@@ -2209,103 +2629,11 @@
     "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
    ],
    "top": {
-    "IN-nation": 17
+    "IN-nation": 20
    },
-   "top_score": 0.12,
+   "top_score": 0.03,
    "top_headlines": [
     "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q7199798",
-   "qid": "Q7199798",
-   "title": "Piyush Goyal",
-   "name": "Piyush Goyal",
-   "phrase": "Piyush Goyal",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-   "story_keys": [
-    "carbon",
-    "climate",
-    "disaster’",
-    "inviting"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:06:41+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "hindi_headlines": [
-    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
-    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "पीयूष गोयल",
-   "reports": [
-    {
-     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:06:41+00:00"
-    },
-    {
-     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T01:48:25+00:00"
-    },
-    {
-     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T16:20:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
    ]
   },
   {
@@ -2392,217 +2720,6 @@
     "'He put it back': Trump says Ukraine's Starlink access restored, stays silent on Musk"
    ],
    "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261023-Q209330",
-   "qid": "Q209330",
-   "title": "Instagram",
-   "name": "Instagram",
-   "phrase": "Instagram",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-   "story_keys": [
-    "book",
-    "debut",
-    "first",
-    "look",
-    "make",
-    "memoir",
-    "share",
-    "sonia",
-    "upcoming"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:24:10+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-    "Sonia joins Instagram, shares first look of her upcoming memoir"
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
-    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी"
-   ],
-   "hindi_news": 2,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "इंस्टाग्राम",
-   "reports": [
-    {
-     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
-     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:24:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T20:50:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T07:45:11+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:45:44+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:30:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "id": "kh-20261023-Q96418672",
-   "qid": "Q96418672",
-   "title": "Jio Platforms",
-   "name": "Jio Platforms",
-   "phrase": "Jio IPO",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-   "story_keys": [
-    "bids",
-    "crore",
-    "issue",
-    "news"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T00:17:11+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-    "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-    "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-    "IPO-bound companies defer launches to avoid Jio mega issue"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "जियो प्लेटफॉर्म्स",
-   "reports": [
-    {
-     "title": "IPO-bound companies defer launches to avoid Jio mega issue",
-     "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-bound-companies-defer-launches-to-avoid-jio-mega-issue/articleshow/135130261.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T00:17:11+00:00"
-    },
-    {
-     "title": "Retail investors fully subscribe for Jio IPO, total bids jump 4x on Day 2",
-     "url": "https://www.thehindu.com/business/Industry/retail-portion-of-jio-platforms-ipo-fully-subscribed/article71610351.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T11:03:05+00:00"
-    },
-    {
-     "title": "Jio Platforms IPO Creates History: ₹30,213 Crore Issue Subscribed in 100 Minutes | Business News",
-     "url": "https://www.news18.com/videos/india/jio-platforms-ipo-creates-history-30-213-crore-issue-subscribed-in-100-minutes-business-news-10392554.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:52:57+00:00"
-    },
-    {
-     "title": "Jio IPO Gets ₹69,700 Crore Bids On Day 1, Issue Oversubscribed 3.2 Times | Relince | News18",
-     "url": "https://www.news18.com/videos/breaking-news/jio-ipo-gets-69-700-crore-bids-on-day-1-issue-oversubscribed-3-2-times-relince-news18-10392531.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T06:31:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Akash Ambani takes lead at Jio Platforms IPO, signals Reliance succession shift"
-   ],
-   "audience": "india",
    "lane": "other"
   }
  ]
