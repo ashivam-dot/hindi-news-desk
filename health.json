@@ -1,22 +1,22 @@
 {
- "at": "2026-10-23T05:38:35+00:00",
+ "at": "2026-10-23T06:40:12+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 10 candidates from 18 trending",
-  "outlets: 1338 headlines from 30 feeds (18 owners), 19 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261023-Q1174, kh-20261023-Q7199798, kh-20261023-Q7089335, kh-20261023-Q96418672; dropped: explainer Duo / Retailers: no Wikipedia article that can be its centre; explainer Raihan Vadra / Raihan Vadra: no Wikipedia article that can be its centre; explainer Arunachal: fewer than 3 owners' headlines name it and the story",
+  "watch: 9 candidates from 17 trending",
+  "outlets: 1362 headlines from 31 feeds (19 owners), 18 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-tiger-shroff-attack",
+  "explainers: 5 kh- stories (on): kh-20261023-Q7199798, kh-20261023-Q5276830, kh-20261023-Q7089335, kh-20261023-Q382973; dropped: explainer Raihan Vadra / Raihan Vadra: no Wikipedia article that can be its centre; explainer September / India's Mideast: no Wikipedia article that can be its centre; explainer Gurugram / Gurugram Faridabad Nuh: no Wikipedia article that can be its centre",
   "skip wk-Q320093: Orbitwire published (wk-Q320093) and no India connection: not told again in Hindi",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q1699148: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261023-Q1174: too low in Google News India's top stories (place 0.15, needs 0.35)",
   "drop wk-Q452431: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261023-Q96418672: too low in Google News India's top stories (place 0.30, needs 0.35)",
+  "drop kh-20261023-Q5276830: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261023-Q382973: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261023-Q113298143: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q28151642: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261023-Q1174; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261023-Q96418672",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261023-Q382973; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261023-Q5276830",
   "channel: about, playlists done; nothing left to do"
  ]
 }
