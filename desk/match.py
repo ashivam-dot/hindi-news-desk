@@ -88,6 +88,8 @@ SUBJECT_SHARE = 0.25
 # one long beat over its one photo (Rajiv Gandhi, 39747949900) runs 9.6 s; the old Tiger Shroff pools held one
 # police photo 10-14 s over three beats.
 HOLD_MAX = 10.0
+RETURNS = 2  # beats one photo may stand under (a fresh picture first; see plan's again)
+ONE_SHARE = 0.4  # the most of a Short's time one picture (a photo and its crops) may fill
 MEMBERS = ("person", "place", "topic", "thing")
 PUNCT = "\"',.;:!?।()"
 # compose.render_full's hook card (the first HOOK_HOLD seconds) and fact chips (CHIP_HOLD each, never past the cut:
@@ -468,6 +470,7 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
     kind_of = {key(c): c.get("kind") for c in cast if c.get("kind") in MEMBERS}
     letters = sum(max(len(b.get("say") or b.get("text") or ""), 1) for b in beats) or 1
     maps_left = [MAX_MAP_VIEWS]
+    spent, part = Counter(), [0.0]  # each picture's share of the voice so far, and this beat's
     # A journey's route map (visuals.map_scope): the beat that names both its ends shows it, and cuts to the vehicle
     # or whoever it names on their word (R3: "if you are covering any travel story then both destination and origin").
     trip = next((i for i in ok if visuals.is_map(photos[i]) and photos[i].get("travel") and len(depict[i]) == 2),
@@ -481,6 +484,14 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         h = held_key(i, photos, groups)
         return h in taken or not used[h]
 
+    def again(i: int) -> bool:
+        # With no fresh picture left, a photo may come back once instead of a text card (owner, 2026-10-23: the
+        # Chaukanna News Shorts that win return to the person's photo; ours fell back to dark text cards), never a map
+        # and never on the beat right after its last one.
+        h = held_key(i, photos, groups)
+        return not visuals.is_map(photos[i]) and used[h] < RETURNS and \
+            h not in {held_key(j, photos, groups) for j in prev} and spent[h] + part[0] <= ONE_SHARE
+
     def rank(i: int, among: list[int]):  # a look not on screen in the last beat, the least used, then as ranked
         h = held_key(i, photos, groups)
         return h in {held_key(j, photos, groups) for j in prev}, used[h], among.index(i)
@@ -489,6 +500,7 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
     said = None  # whom the last beat named first, a card's too (speaker)
     for k, b in enumerate(beats):
         say = b.get("say") or b.get("text") or ""
+        part[0] = max(len(say), 1) / letters
         found = names(say, cast, spellings, others)
         found = [(a, x) for a, x in found if not any(up.get(y) == x for _, y in found)]
         # A card beat names someone too: "कांग्रेस का कहना है कि राहुल गांधी ..." (a card since R4, 2026-10-23, Rahul's
@@ -511,6 +523,8 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
             keys = {held_key(p, photos, groups) for p in taken}
             real = [i for i in pools.get(x) or [] if not visuals.is_map(photos[i]) and i not in taken
                     and free(i, keys)]
+            if not real:
+                real = [i for i in pools.get(x) or [] if i not in taken and again(i)]
             cands = real
             if not real and not picks and mapped and where and maps_left[0] > 0:
                 maps = [route] if route is not None else pools.get(x) or []
@@ -569,7 +583,7 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         # Never under a beat that names someone or something else with no usable picture: "उनके पिता जैकी श्रॉफ ने
         # कहा" with Jackie's photo vetted out is a card, not Tiger (39508637683, 2026-10-22 review round 2).
         if not picks and (k == 0 or not found and continues(say, prev_key, prev_held, held, person)):
-            pool = [i for i in pools[SUBJECT] if free(i, set())]
+            pool = [i for i in pools[SUBJECT] if free(i, set())] or [i for i in pools[SUBJECT] if again(i)]
             if pool:
                 this_held = k > 0
                 picks = [(min(pool, key=lambda i: rank(i, pool)), SUBJECT, 0)]
@@ -600,6 +614,7 @@ def plan(beats: list[dict], photos: list[dict], cast: list[dict], subject: list[
         counts.update(shown)
         for i in row["views"] if row["plate"] != CARD else ():
             used[held_key(i, photos, groups)] += 1
+            spent[held_key(i, photos, groups)] += part[0] / len(row["views"])
         prev = row["views"] if row["plate"] != CARD else prev
         out.append(row)
     return _map_cuts(out, photos, [b.get("say") or b.get("text") or "" for b in beats], subject=pools[SUBJECT],
@@ -948,6 +963,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         beat_time[v["beat_k"]] = beat_time.get(v["beat_k"], 0.0) + max(v["end"] - v["start"], 0.0)
     out: list[str] = []
     total = map_time = real_time = card_time = subject_time = 0.0
+    per: Counter = Counter()
     cards = run = held = 0
     pictures: list[int] = []
     prev_key, prev_held, ran, pair, alone = None, False, False, set(), []
@@ -996,6 +1012,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
             p, d = photos[i], canon(depicts(i, photos[i], cast))
             total += w
             map_time += w if visuals.is_map(p) else 0.0
+            per[held_key(i, photos, groups)] += w
             pictures.append(i)
             ok = bool(d & named)
             if not ok and SUBJECT in d and may_hold:
@@ -1060,6 +1077,12 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                    f"most {HOLD_MAX:.0f} s)")
     if map_views > MAX_MAP_VIEWS:
         out.append(f"pictures: {map_views} map views (at most {MAX_MAP_VIEWS})")
+    # The published Neha Bora Short (xJsZR0dPNTQ) kept one police van up 14.6 s of its 34 across two beats and a card.
+    for h, w in per.items():
+        if total + card_time and w / (total + card_time) > ONE_SHARE:
+            i = next(j for j in pictures if held_key(j, photos, groups) == h)
+            out.append(f"pictures: {_label(i, photos)} fills {w / (total + card_time):.0%} of the Short (at most "
+                       f"{ONE_SHARE:.0%})")
     out += repeats(short, views, groups)
     if cards > card_limit(len(shown_beats)):
         out.append(f"text cards: {cards} of {len(shown_beats)} beats (at most {card_limit(len(shown_beats))})")
@@ -1095,8 +1118,9 @@ def repeats(short, views: list[dict] | None = None, groups: dict[int, str] | Non
                 on.setdefault(held_key(i, photos, groups), {}).setdefault(k + 1, i)
     out = []
     for h, beats in on.items():
-        if len(beats) > 1:
-            ks, i = sorted(beats), next(iter(beats.values()))
+        ks, i = sorted(beats), next(iter(beats.values()))
+        back = len(ks) <= RETURNS and all(b - a > 1 for a, b in zip(ks, ks[1:]))
+        if len(beats) > 1 and (visuals.is_map(photos[i]) or not back):
             said = ", ".join(map(str, ks[:-1])) + f" and {ks[-1]}"
             what = f"map of {photos[i].get('who') or photos[i].get('file')}" if visuals.is_map(photos[i]) \
                 else _label(i, photos)

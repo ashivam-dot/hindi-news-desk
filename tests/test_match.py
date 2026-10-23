@@ -165,9 +165,10 @@ def test_jaishankar_flags_only_beat_7():
     assert bad[1:] and all("beat 7 shows" in p or p.startswith(("pictures: beat 6 shows photo 7",
                                                                  "pictures: beat 4 shows photo 4"))
                            and "a photo with someone else" in p or " on beats " in p for p in bad[1:])
-    assert sum(" on beats " in p for p in bad) == 3
+    # A portrait back once with a beat between is allowed (match.RETURNS, 2026-10-23), so none of the three is a repeat.
+    assert sum(" on beats " in p for p in bad) == 0
     rows, _ = planned(short("39411111185"))
-    assert rows[6]["plate"] == match.CARD
+    assert rows[6]["plate"] == match.CARD and match.problems(applied(short("39411111185"), rows)) == []
     assert match.problems(applied(short("39411111185"), rows)) == []
 
 

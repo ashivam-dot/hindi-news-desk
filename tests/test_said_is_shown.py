@@ -118,8 +118,9 @@ def test_a_beat_that_names_someone_shows_them(short):  # noqa: F811
     modi = [modi[0] | {"photos": [2, 1]}]
     assert gate.said_is_shown(_modi_short(short, ["photo:2/0", "photo:3", "photo:1"], modi, plates=["", "card"])) \
         == []
-    assert any(" on beats 1 and 3" in p for p in gate.said_is_shown(
-        _modi_short(short, ["photo:2/0", "photo:1", "photo:0/2"], modi, plates=["", "card"])))
+    # Back on the very next beat is refused (once with a beat between is allowed: match.RETURNS, 2026-10-23).
+    assert any(" on beats 1 and 2" in p for p in gate.said_is_shown(
+        _modi_short(short, ["photo:2/0", "photo:0/2", "photo:1"], modi)))
 
 
 def test_a_surname_alone_still_shows_the_person():
@@ -135,6 +136,7 @@ def test_a_surname_alone_still_shows_the_person():
     rows = anchored(beats, [0, 1], cast, TIGER_SPELT)
     # Beat 3 names Tiger, who has a photo: his photo, never Juhu's map first (2026-10-22; once [5, 1] cut on टाइगर).
     # Fadnavis's one photo is beat 2's: beat 4 is a card (R4, 2026-10-23: one picture, one beat; it was [3] again).
+    # A return (match.RETURNS) would put his one photo over ONE_SHARE of a 4-beat Short, so beat 4 stays a card.
     assert views_of(rows) == [[0], [3], [1], None] and rows[2]["cut_word"] == ""
 
 

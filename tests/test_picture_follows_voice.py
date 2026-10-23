@@ -161,9 +161,18 @@ def test_a_second_map_beat_is_refused():
 
 def test_a_repeated_picture_is_refused():
     photos = travel_photos()
-    s = mk(["सैकड़ों फ्लाइट्स रद्द हुईं।", "यात्री परेशान।", "उड़ानें कल शुरू होंगी।"], ["photo:1", "photo:0", "photo:1"],
-           photos, plates={1: match.CARD})
-    assert any(x.startswith("pictures: photo 1") and "on beats 1 and 3" in x for x in match.problems(s))
+    says = ["सैकड़ों फ्लाइट्स रद्द हुईं।", "यात्री परेशान।", "उड़ानें कल शुरू होंगी।"]
+    # Back once with a beat between is allowed (match.RETURNS, 2026-10-23: the Chaukanna reference) ...
+    s = mk(says, ["photo:1", "photo:0", "photo:1"], photos, plates={1: match.CARD})
+    assert not any(x.startswith("pictures: photo 1") and " on beats " in x for x in match.problems(s))
+    # ... but no picture fills over ONE_SHARE of the Short: two beats of three is too much of one photo.
+    assert any(x.startswith("pictures: photo 1") and "fills 67% of the Short" in x for x in match.problems(s))
+    # ... on the very next beat, or a third time, it is refused.
+    s = mk(says, ["photo:1", "photo:1", "photo:0"], photos)
+    assert any(x.startswith("pictures: photo 1") and "on beats 1 and 2" in x for x in match.problems(s))
+    s = mk(says + ["उड़ानें फिर रद्द।", "यात्री फिर परेशान।"], ["photo:1", "photo:0", "photo:1", "photo:0", "photo:1"],
+           photos)
+    assert any(x.startswith("pictures: photo 1") and "on beats 1, 3 and 5" in x for x in match.problems(s))
 
 
 def test_plan_never_puts_one_picture_on_two_beats():

@@ -121,6 +121,7 @@ def test_make_gates_the_render(made, monkeypatch):  # noqa: F811
         cli.make(None, s)
     assert cli.rendered_views(work) == views  # written before the gate: the review reads what was on screen
     monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views[:1]})
+    monkeypatch.setattr(match, "ONE_SHARE", 1.0)  # a one-view render: this test is about the maps' share only
     assert cli.make(None, s)[1]["views"] == views[:1]
     assert cli.rendered_views(Path(work.parent / "none")) is None
 

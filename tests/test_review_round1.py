@@ -34,8 +34,10 @@ def test_the_home_ministers_title_and_his_claim_show_amit_shah():
     # "उन्होंने दावा किया कि राहुल गांधी की पार्टी ...": Shah who claims, once then Rahul on his name. One picture, one
     # beat (Matlabnama audit R4, 2026-10-23): Rahul's two photos are beats 1's and 3's, so beat 4 is a card and beat 5
     # Shah alone (a card beat's name still tells plan.speaker who is claimed about).
-    assert rows[3]["plate"] == match.CARD
-    assert rows[4]["plate"] == "" and set(rows[4]["views"]) <= shah and rows[4]["cut_word"] == ""
+    # With one return (match.RETURNS, 2026-10-23) beat 4 shows Rahul's beat-1 photo again instead of a card, and
+    # beat 5 opens on Shah.
+    assert rows[3]["plate"] == ""
+    assert rows[4]["plate"] == "" and set(rows[4]["views"][:1]) <= shah
     assert match.problems(applied(s, rows)) == []
 
 

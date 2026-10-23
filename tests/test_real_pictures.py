@@ -333,8 +333,9 @@ def test_both_leaders_shows_the_pair_and_never_a_third_face():
     # Two clean portraits each, and beats 1 and 2 show all four: one picture, one beat (Matlabnama audit R4,
     # 2026-10-23), so the pair beat and Tusk's peace-plan beat are cards and the Short is refused (it passed once,
     # showing each portrait twice). The writer's SHOWABLE retry, or more portraits, is the way out; never a repeat.
-    assert rows[2]["plate"] == rows[3]["plate"] == match.CARD
-    assert "text cards: 3 of 5 beats (at most 1)" in match.problems(applied(s, rows))
+    # With one return (match.RETURNS, 2026-10-23) Modi's portrait is back on beat 4: 2 cards, still refused.
+    assert rows[2]["plate"] == rows[4]["plate"] == match.CARD and rows[3]["plate"] == ""
+    assert "text cards: 2 of 5 beats (at most 1)" in match.problems(applied(s, rows))
     # The pair itself: right after a beat that showed both, with portraits of both left, "दोनों ..." is the pair.
     beats = [{"say": b.text, "card": b.card} for b in s.beats if b.shot != "outro"]
     subject = [i for i, p in enumerate(photos) if not p.get("role")]
@@ -391,9 +392,8 @@ def test_both_after_an_attribution_and_beside_a_town_is_still_the_pair():
     # back before any render (writer._unnamed_subject).
     # Since R4 (2026-10-23) also the three beats after the pair: Modi's two portraits are the pair's and beat 1's,
     # so his two later beats and the trade beat are cards.
+    # With one return (match.RETURNS, 2026-10-23) the portraits come back and only the subject floor is left.
     assert match.problems(applied(s, rows)) == [
-        "text cards: 2 beats in a row from beat 3", "text cards: 3 of 5 beats (at most 1)",
-        "pictures: real photos fill only 40% of the Short (want at least 50%)",
         "pictures: the story's person fills only 20% of the Short (want at least 25%)"]
     beats = [{"say": b.text} for b in s.beats if b.shot != "outro"]
     assert "only 1 of 5 beats name them" in writer._unnamed_subject(beats, s.scene["name_hi"])[0]

@@ -66,10 +66,11 @@ def test_each_beat_shows_who_or_where_it_names():
     # 2026-10-22: CAPraPdXvns's maps under beats naming people; a map stands only under a beat that names nothing but
     # places). Once [[0, mumbai], [1], [maha, shinde], [police], [2, jackie], [route, police]]. One picture, one beat
     # (Matlabnama audit R4, 2026-10-23): Tiger's photo 0 and the police photo once each, so beat 4 shows Jackie alone
-    # and beat 5, the police already shown, is a card (it was [0, jackie] and [police]).
-    assert views_of(rows) == [[0], [1], [at["shinde"], 2], [at["police"]], [at["jackie"]], None]
+    # and beat 5, the police already shown, is a card (it was [0, jackie] and [police]). A photo comes back once,
+    # never on the next beat (match.RETURNS, 2026-10-23: the Chaukanna reference), so they are [0, jackie] and [police].
+    assert views_of(rows) == [[0], [1], [at["shinde"], 2], [at["police"]], [0, at["jackie"]], [at["police"]]]
     # The second picture comes on the word that names it, never at the middle of the beat.
-    assert [r["cut_word"] for r in rows] == ["", "", "टाइगर", "", "", ""]
+    assert [r["cut_word"] for r in rows][:4] == ["", "", "टाइगर", ""] and rows[4]["cut_word"]
     assert not any(i in (at["mumbai"], at["maha"], at["route"]) for r in rows for i in r["views"])
 
 
@@ -77,11 +78,12 @@ def test_the_picture_that_closed_a_beat_opens_the_next_only_when_it_is_the_one_n
     subject, cast, at = tiger_cast()
     beats = TIGER[:5] + [TIGER[5], {"say": "पुलिस ने आगे की जांच शुरू कर दी है।"}]
     # One police photo, shown on beat 3 (R4, 2026-10-23: never again on a later beat): the two later police beats
-    # are cards. They were [[police], [police]].
-    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [None, None]
+    # are cards. They were [[police], [police]]. With one return (match.RETURNS): beat 5 shows it again (beat 4 is
+    # between), beat 6 right after it is a card.
+    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [[at["police"]], None]
     cast[-1]["photos"] = [at["police"], at["police"] + 1]  # a second police photo: the next police beat shows it
     v = views_of(anchored(beats, subject, cast, TIGER_SPELT))
-    assert set(v[3] + v[5]) == set(cast[-1]["photos"]) and v[6] is None
+    assert set(v[3] + v[5]) == set(cast[-1]["photos"]) and v[6] == [at["police"]]
 
 
 def test_a_beat_that_quotes_another_force_is_a_card():
@@ -127,7 +129,8 @@ def test_a_lone_portrait_stands_only_under_the_beats_that_name_him():
     # Once on beats 0, 1 and 4 (beats 2 and 5 name Shinde, Jackie); one picture, one beat (R4, 2026-10-23): the
     # lone portrait opens the Short and the later beats naming him are cards, never a second showing of it.
     shown = [r["views"] if r["plate"] != match.CARD else [] for r in rows]
-    assert [k for k, v in enumerate(shown) if 0 in v] == [0]
+    # With one return (match.RETURNS, 2026-10-23), beat 4, which names him, shows it a second time.
+    assert [k for k, v in enumerate(shown) if 0 in v] == [0, 4]
     # Shinde, Jackie, the police and the portrait: four real pictures (a fifth was Mumbai's map, gone 2026-10-22).
     assert len({i for v in shown for i in v}) >= 4
 
@@ -135,7 +138,8 @@ def test_a_lone_portrait_stands_only_under_the_beats_that_name_him():
 def test_with_no_cast_a_beat_naming_nothing_is_a_card():
     rows = anchored(TIGER, [0, 1, 2], [], TIGER_SPELT)
     # No police, no Kota: cards, not the own photos; and beat 4's [0] once (R4, 2026-10-23: photo 0 is beat 0's).
-    assert views_of(rows) == [[0], [1], [2], None, None, None]
+    # With one return (match.RETURNS), beat 4, which names Tiger, shows photo 0 again.
+    assert views_of(rows) == [[0], [1], [2], None, [0], None]
     assert all(not r["cut_word"] for r in rows)
 
 
