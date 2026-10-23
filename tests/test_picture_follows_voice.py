@@ -225,6 +225,17 @@ def test_the_story_own_vehicle_is_shown_not_a_stand_in():
              "cls": next(e["cls"] for e in things.LEXICON if e["en"] == "Airplane")}
     assert visuals.actual_thing(plane, story, [0, 1, 2, 3]) == [0, 2]  # VT-ALK is another Air India plane
     assert visuals.actual_thing(plane, story[1:], [0, 1, 2]) == []  # no photo says it is the one: a stand-in
+    # Dry run 39973458199 (wiki:Jeju Air Flight 2216): the flight item's own Wikidata image is the aircraft, HL8088
+    # (no hyphen; its Commons category names it); HL8295 is another Jeju Air jet.
+    jeju = [photo("File:Boeing 737 Jeju Air at Fukuoka Airport.jpg", origin="wikidata",
+                  description="Boeing 737-8AS aircraft by Jeju Air, photographed at Fukuoka Airport. Registration HL8088",
+                  categories="Images with infobox aircraft|HL8088 (aircraft)|2023 at Fukuoka Airport"),
+            photo("File:Jeju Air, Boeing 737-800 HL8295 NRT (24536186109).jpg", origin="related",
+                  description="Jeju Air, Boeing 737-800 HL8295 NRT", categories="HL8295 (aircraft)"),
+            photo("File:Aerial view of Muan Int'l Airport on 29 December 2024.jpg", origin="category",
+                  description="Aerial view of Muan International Airport, right after the crash")]
+    assert visuals.actual_thing(plane, jeju, [0, 1, 2]) == [0]
+    assert visuals.marks([jeju[0]]) == ["HL8088"]
     wreck = [photo("File:Coromandel Express.jpg", origin="article", description="The train involved, in 2019")]
     train = {"en": "Train", "hi": "ट्रेन", "kind": "thing", "stand_in": True,
              "cls": next(e["cls"] for e in things.LEXICON if e["en"] == "Train")}

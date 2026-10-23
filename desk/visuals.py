@@ -575,20 +575,31 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
 INVOLVED = re.compile(r"\b(?:involved|crashed|derailed|wrecked|accident (?:aircraft|train|ship|vessel)|"
                       r"the (?:aircraft|train|ship|vessel|plane|helicopter|bus) (?:that|which))\b", re.I)
 REGISTRATION = re.compile(r"\b[A-Z0-9]{1,2}-[A-Z0-9]{3,5}\b")
+AIRCRAFT_CAT = re.compile(r"(?:^|\|)([A-Z0-9][A-Z0-9-]{3,7}) \(aircraft\)")
+
+
+def marks(rows: list[dict]) -> list[str]:
+    """Registrations of these photos' aircraft: "VT-ANB" in a file name, "HL8088 (aircraft)" in Commons categories."""
+    out = []
+    for p in rows:
+        out += REGISTRATION.findall(p.get("file", "")) + AIRCRAFT_CAT.findall(p.get("categories") or "")
+    return list(dict.fromkeys(out))
 
 
 def actual_thing(c: dict, photos: list[dict], subject: list[int]) -> list[int]:
     """The story's own photos (subject) of the very thing a stand-in row stands for: its article's photo that says it
-    is the one involved and its class (c["cls"]), and any other story photo with that one's registration in its file
-    name (its other photos are the story's too). Matlabnama audit R2: a stand-in only when there is no free photo of the actual thing."""
+    is the one involved, or the event item's own Wikidata image, of its class (c["cls"]); and any other story photo
+    with that one's registration (its other photos are the story's too). Matlabnama audit R2: a stand-in only when
+    there is no free photo of the actual thing."""
     cls = c.get("cls")
     if not (c.get("stand_in") and cls):
         return []
     text = {i: f"{photos[i].get('file', '')} {photos[i].get('description') or ''}" for i in subject}
-    own = [i for i in subject if photos[i].get("origin") == "article" and re.search(cls, text[i], re.I)
-           and INVOLVED.search(photos[i].get("description") or "")]
-    marks = {m for i in own for m in REGISTRATION.findall(photos[i].get("file", ""))}
-    return [i for i in subject if i in own or marks & set(REGISTRATION.findall(photos[i].get("file", "")))]
+    own = [i for i in subject if re.search(cls, text[i], re.I) and (
+        photos[i].get("origin") == "wikidata"
+        or photos[i].get("origin") == "article" and INVOLVED.search(photos[i].get("description") or ""))]
+    tied = set(marks([photos[i] for i in own]))
+    return [i for i in subject if i in own or tied & set(marks([photos[i]]))]
 
 
 ACTUAL_PHOTOS = 4  # more photos of the story's own aircraft: R4 needs one per beat that says "विमान"
@@ -598,9 +609,8 @@ def actual_more(c: dict, own: list[int], photos: list[dict], folder: Path, exclu
                 recent: set[str] | None = None) -> list[dict]:
     """More free photos of the story's own aircraft: Commons' "Category:<registration> (aircraft)" (VT-ANB has 15),
     through things.photos' licence, decency and face checks; never a stand-in. A network failure keeps what it has."""
-    marks = list(dict.fromkeys(m for i in own for m in REGISTRATION.findall(photos[i].get("file", ""))))
     rows: list[dict] = []
-    for m in marks[:1]:
+    for m in marks([photos[i] for i in own])[:1]:
         try:
             files = [f for f in media._category_files(f"{m} (aircraft)") if f not in exclude]
             rows = things.photos({"en": c["en"], "hi": c["hi"], "files": files}, folder, exclude, recent,
