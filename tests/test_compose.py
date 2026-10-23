@@ -135,7 +135,9 @@ def test_the_place_stamp_follows_the_maps_and_the_burst_flashes_beat_ones_pictur
             {"photo": 0, "start": 15.0, "end": 16.0, "beat_k": 4, "outro": True}]
     assert compose.places_on(seen, photos) == [(3.0, 4.5, "जुहू, मुंबई"), (4.5, 6.0, "मुंबई"),
                                                (9.0, 15.0, "कोटा जंक्शन")]
-    assert compose.burst(seen, photos) == [1, 6, 7]  # Tiger's other photos and Juhu; never Mumbai, Jackie or Kota
+    # Tiger's other photos; never a map (review round 2: not even Juhu's, which beat 1 shows), Jackie or Kota.
+    assert compose.burst(seen, photos + [{"role": None}]) == [6, 7, 9]
+    assert compose.burst(seen, photos) == []  # too few once the maps are out
     assert compose.burst(seen, photos[:7]) == []  # too few
     assert compose.burst([v | {"plate": "card"} if v["beat_k"] == 0 else v for v in seen], photos) == []
     hook = compose._hookcard_layer("तीनों आरोपी कोटा में पकड़े गए")

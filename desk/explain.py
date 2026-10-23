@@ -238,6 +238,19 @@ def centre(c: dict) -> str | None:
     return next(iter(centres(c)), None)
 
 
+def full_name(titles: list[str], key: str) -> str | None:
+    """The capitalised 2-3 word run ending on `key` the most headlines write ("Donald Tusk" around "Tusk"), else None."""
+    seen: Counter = Counter()
+    for t in dict.fromkeys(titles):
+        words = re.findall(r"[A-Za-z][A-Za-z'’.\-]*", t)
+        for n in (2, 3):
+            for s in range(len(words) - n + 1):
+                run = words[s:s + n]
+                if all(w[0].isupper() for w in run) and outlets._stem(re.sub(r"['’]s$", "", run[-1]).strip(".")) == key:
+                    seen[re.sub(r"['’]s$", "", " ".join(run)).strip(".-")] += 1
+    return max(seen, key=lambda g: (seen[g], -len(g.split()))) if seen else None
+
+
 def phrase(titles: list[str], key: str) -> str | None:
     """The capitalised run of 1-3 words around `key` the most headlines write ("Rahul Gandhi"); the full name beats a
     bare surname that a few headlines use alone ("L Murugan" over "Murugan")."""
@@ -495,6 +508,14 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
             except Exception as exc:
                 notes.append(f"explainer {name}: wikipedia lookup failed ({type(exc).__name__})")
                 continue
+            if found and " " not in name and HUMAN not in {x["value"] for x in wiki.claims(found[2], "P31")} \
+                    and not wiki.claims(found[2], "P1082") and (full := full_name(titles, key)):
+                # A bare surname that is also a word: "Tusk" (most headlines) is the tooth's article, खाँग, and dry
+                # run 39827813691 told Donald Tusk's visit as it (2026-10-22). A headline's full name is the person.
+                other = resolve(full, key)
+                if other and HUMAN in {x["value"] for x in wiki.claims(other[2], "P31")}:
+                    found, name = other, full
+                    tried.append(full)
             if found and not setting and wiki.claims(found[2], "P1082"):
                 # A city named in most headlines is where, not who: "PM Modi attends Dussehra in Delhi" was told
                 # about Delhi over its temples and markets (2026-10-21). A person the headlines name comes first.

@@ -64,7 +64,7 @@ def test_cards_do_not_dilute_the_map_share():
     shots = ["photo:7", "photo:8", "photo:8", "photo:11", "photo:11", "photo:4"]
     plates = ["", "", match.CARD, "", match.CARD, match.CARD]
     crafted = replace(s, beats=[replace(b, shot=sh, plate=pl, cut_word="") for b, sh, pl in zip(s.beats, shots, plates)])
-    assert "pictures: maps fill 67% of the picture time (at most 40%)" in match.problems(crafted)
+    assert "pictures: maps fill 67% of the picture time (at most 20%)" in match.problems(crafted)
     from .tools import replay
     assert replay.map_share(crafted, None) == 2 / 3
     # plan() keeps under it: of the hand fix's two Jamnagar cuts it drops the one said again (beat 2), and a card's
@@ -135,7 +135,10 @@ def test_the_cut_comes_on_the_time_the_plan_cut_on():
     cast = [{"hi": "अंधेरी स्टेशन", "kind": "place", "photos": [1]}, {"hi": "अंधेरी", "kind": "place", "photos": [2]}]
     say = "वारदात के बाद दोनों आरोपी अंधेरी स्टेशन पहुंचे और वहां से पैदल चलकर अंधेरी पश्चिम की एक गली में छिप गए"
     row = match.plan([{"say": "टाइगर श्रॉफ पर हमला हुआ"}, {"say": say}], photos, cast, [0], spellings=TIGER_SPELT)[1]
-    assert row["views"] == [1, 2] and row["cut_word"] == "अंधेरी" and row["cut_at"] == say.rindex("अंधेरी")
+    # The station's photo, and no cut to Andheri's map (a map is never a cut, 2026-10-22; once [1, 2] on the second
+    # अंधेरी). compose's cut timing is pinned on the cut the old plan made.
+    assert row["views"] == [1] and row["cut_word"] == ""
+    row = {"cut_at": say.rindex("अंधेरी")}
     ws = say.split()
     words = [{"text": w, "start": 10 + 0.4 * i, "end": 10.35 + 0.4 * i, "beat": 1} for i, w in enumerate(ws)]
     second = 10 + 0.4 * ws.index("पश्चिम") - 0.4
@@ -153,7 +156,9 @@ def test_a_place_worded_text_card_is_not_a_place_card():
     s = rehosted(short("39714003987-fixed"))
     beats = list(s.beats)
     beats[2] = replace(beats[2], card={"big": "रिफाइनरी परिसर", "small": "कार्यक्रम स्थल"})
-    assert visuals.place_card(beats[2].card) and gate.said_is_shown(replace(s, beats=beats)) == []
+    assert visuals.place_card(beats[2].card)
+    # The Short is blocked on its maps now (2026-10-22), but never for card 3's wording.
+    assert not any("card 3" in p for p in gate.said_is_shown(replace(s, beats=beats)))
 
 
 def test_the_matcher_switch_is_normalised(monkeypatch):
@@ -172,16 +177,19 @@ def test_the_matcher_switch_is_normalised(monkeypatch):
 
 def test_city_police_beats_are_anchored_before_the_city_is_known(monkeypatch):
     # Finding 18: anchorless built its police row with hi "", so "मुंबई पुलिस ने ..." named "another force".
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["मुंबई", "पुलिस"])
+    monkeypatch.setattr(visuals, "showable_rows", lambda *a, **k: [
+        {"hi": "मुंबई", "kind": "place", "alias": [], "map_only": True},
+        {"hi": "पुलिस", "kind": "police", "alias": [], "map_only": False}])
     draft = {"beats": [{"say": "टाइगर श्रॉफ के घर के बाहर फायरिंग हुई।"}, {"say": "मुंबई पुलिस ने मामला दर्ज किया।"},
                        {"say": "मुंबई पुलिस की टीम मौके पर पहुंची।"}, {"say": "मुंबई पुलिस आरोपियों को खोज रही है।"},
                        {"say": "मुंबई में सुरक्षा बढ़ा दी गई है।"}]}
-    assert writer.anchorless(draft, {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}, True) == []
+    assert writer.anchorless(draft, {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ"}, True, kind="incident") == []
 
 
 def test_a_photoless_first_name_never_puts_a_later_one_first():
     # Finding 19: Jaishankar (no photo), Mumbai, then Delhi: the main view is Mumbai's, Delhi cuts in on its word.
-    photos = [{}, {"role": "map", "depicts": ["मुंबई"]}, {"role": "map", "depicts": ["दिल्ली"]}]
+    # Their own photos (a landmark each): a map is never a cut and never under a beat naming a person (2026-10-22).
+    photos = [{}, {"role": "place", "depicts": ["मुंबई"]}, {"role": "place", "depicts": ["दिल्ली"]}]
     cast = [{"hi": "जयशंकर", "kind": "person", "photos": []}, {"hi": "मुंबई", "kind": "place", "photos": [1]},
             {"hi": "दिल्ली", "kind": "place", "photos": [2]}]
     say = "जयशंकर ने मुंबई में बैठक के बाद दिल्ली लौटने की बात कही"

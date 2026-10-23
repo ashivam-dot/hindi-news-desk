@@ -15,6 +15,14 @@ artifact's own (no new Wikidata/Commons lookups, so no sub-place landmark, no re
 police, sight or route pictures, no face-size filter on new portraits), the writer is not re-run (its picture-first
 RULES and the SHOWABLE retry need the model), and stale_pictures is skipped (it needs the channel's recent files).
 The replanned refusal rate is therefore the rate BEFORE the SHOWABLE retry, on the old pipeline's photo pools.
+
+Real pictures (2026-10-22): per Short, the map views on screen (match._map_views, one map held across a cut counts
+once) and the card share, before and after; and which beats would gain a thing's picture (desk/things.py's lexicon,
+"तिरंगे" -> Flag of India) were the Short made today. Not replayed: the thing photos themselves (Commons downloads),
+so a beat that would gain one is still a card or a map here and the replanned refusals are an upper bound; the
+cast's new "thing" rows from the script's English names (Wikipedia lookups); and the prepare-time faceless refusal
+of a relative's story (writer.relative_faceless reads Wikidata). The faceless check on the saved photos
+(gate.richness) runs, but only on artifacts whose photos carry the "depicts" stamps.
 """
 from __future__ import annotations
 
@@ -29,7 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
-from desk import compose, config, gate, match, visuals, writer  # noqa: E402
+from desk import compose, config, gate, match, things, visuals, writer  # noqa: E402
 from desk.spec import Short, shot_photos  # noqa: E402
 
 
@@ -37,16 +45,21 @@ def _offline(*a, **k):
     raise OSError("replay is offline")
 
 # The picture gate; licences, credits and facts are the other checks (reported apart, never the verdict here).
-PICTURE = re.compile(r"^(pictures:|text cards:|beats:)")
+PICTURE = re.compile(r"^(pictures:|text cards:|beats:|faceless:)")
 # Problem strings by kind, for the refusal-reason tally (gate.held, gate.said_is_shown, match.problems).
 REASONS = [
     ("vetted photo on screen", r"^pictures: beat \d+ shows photo \d+ \(.*\): "),
     ("picture the beat does not name", r"which the beat does not name$"),
     ("card names what is not on screen", r"^pictures: card \d+ names"),
-    ("cards over half the beats", r"^text cards: \d+ of \d+ beats"),
-    ("3+ cards in a row", r"^text cards: \d+ beats in a row"),
-    ("maps over 40% of picture time", r"maps fill"),
+    ("cards over a third of the beats", r"^text cards: \d+ of \d+ beats"),
+    ("2+ cards in a row", r"^text cards: \d+ beats in a row"),
+    ("maps over 20% of picture time", r"maps fill"),
+    ("more than one map view", r"map views \(at most"),
+    ("map under a name with a photo", r"shows a map though it names"),
+    ("real photos under half the Short", r"real photos fill only"),
+    ("faceless subject", r"^faceless:"),
     ("hook names someone never said", r"the hook names"),
+    ("harm hook over the subject", r"the hook says someone was hurt"),
     ("too few pictures once maps group", r"once a place's maps count as one"),
     ("one picture held too long", r"in a row$|under \d+ of \d+ beats"),
     ("named person not shown", r"names .* but shows someone"),
@@ -85,9 +98,14 @@ def timed_views(short: Short, timing: dict | None, anchored: bool) -> list[dict]
         return None
     shots = shots_of(short, timing["beats"], timing.get("duration") or timing["beats"][-1][1])
     seen = compose.views(shots, timing.get("words") or [], anchored=anchored)
+    if anchored:  # a picture held past match.HOLD_MAX cut to its twin, as the renders do (compose.twins)
+        compose.twins(seen, short.scene.get("photos") or [], match.cast_of(short))
     if anchored:  # render_full's chips, each stamped on its view; the legacy render held them CHIP_HOLD from the cut
         compose.chip_plan(short, shots, seen)
-    return compose.view_record(seen)
+    # The opening flash the renders show over beat 1 (compose.burst), recorded as render.json records it.
+    flash = [] if short.loss or not anchored else compose.burst(seen, short.scene.get("photos") or [],
+                                                                 match.cast_of(short))
+    return compose.view_record(seen, flash)
 
 
 def replan(short: Short) -> tuple[Short, list[dict]]:
@@ -154,7 +172,15 @@ def verdict(short: Short, views: list[dict] | None) -> dict:
     spoken = [b for b in short.beats if b.shot.startswith("photo:")]
     return {"pass": not pictures, "problems": pictures, "other": [p for p in allp if not PICTURE.match(p)],
             "beats": len(spoken), "cards": sum(b.plate == match.CARD for b in spoken),
-            "map_share": round(map_share(short, views), 3), "timed": views is not None}
+            "map_share": round(map_share(short, views), 3), "map_views": match._map_views(short, views),
+            "timed": views is not None}
+
+
+def thing_beats(short: Short) -> list[tuple[int, str]]:
+    """(beat number, thing) for each spoken beat that names a lexicon thing (things.lexicon_hits): the picture it
+    would gain today. India-only entries count for every story (the channel's are Indian), the foreign guard holds."""
+    spoken = [b for b in short.beats if b.shot.startswith("photo:")]
+    return [(n, hit["en"]) for n, b in enumerate(spoken, 1) for hit in things.lexicon_hits([{"say": b.text}], True)]
 
 
 def replay(path: Path) -> dict:
@@ -168,7 +194,7 @@ def replay(path: Path) -> dict:
     made = path.with_name("short.mp4").exists() or path.with_name("render.json").exists()
     return {"path": str(path), "id": short.id, "kind": short.kind, "made": made,
             "preview": bool(short.scene.get("voice_preview")) or path.with_name("PREVIEW").exists(),
-            "original": before, "replanned": after | {"changed_beats": changed}}
+            "original": before, "replanned": after | {"changed_beats": changed}, "things": thing_beats(short)}
 
 
 def pct(a: int, b: int) -> str:
@@ -181,18 +207,27 @@ def summary(rows: list[dict]) -> list[str]:
     beats = sum(r["replanned"]["beats"] for r in rows)
     cards = sum(r["replanned"]["cards"] for r in rows)
     why = Counter(x for r in blocked for x in {reason(p) for p in r["replanned"]["problems"]})
+    gain = [r for r in rows if r.get("things")]
+    views = Counter(min(r["replanned"]["map_views"], 2) for r in rows)
     return [f"Shorts: {n} (rendered: {len(made)}; distinct stories: {len({r['id'] for r in rows})})",
+            f"map views per Short, original: {sum(r['original']['map_views'] for r in rows) / max(n, 1):.1f} "
+            f"(over one: {sum(r['original']['map_views'] > 1 for r in rows)}); re-planned: "
+            f"{sum(r['replanned']['map_views'] for r in rows) / max(n, 1):.1f} (0: {views[0]}, 1: {views[1]}, "
+            f"2+: {views[2]})",
+            f"original text cards: {pct(sum(r['original']['cards'] for r in rows), beats)} of spoken beats",
+            f"Shorts with a beat that would gain a thing's picture: {len(gain)} ("
+            + ", ".join(f"{r['id']} b{n} {t}" for r in gain for n, t in r["things"]) + ")",
             f"original shots BLOCKED by the new picture gate: {pct(sum(not r['original']['pass'] for r in rows), n)}",
             f"re-planned (match.plan) BLOCKED: {pct(len(blocked), n)}; would pass: {pct(n - len(blocked), n)}; "
             f"rendered only: BLOCKED {pct(sum(not r['replanned']['pass'] for r in made), len(made))}",
             f"re-planned text cards: {pct(cards, beats)} of spoken beats, {cards / max(n, 1):.1f} per Short; Shorts "
-            f"over half cards: {sum(r['replanned']['cards'] * 2 > r['replanned']['beats'] for r in rows)}",
+            f"over a third cards: {sum(r['replanned']['cards'] > match.card_limit(r['replanned']['beats']) for r in rows)}",
             "re-planned refusal reasons (Shorts): " + ", ".join(f"{k} {v}" for k, v in why.most_common())]
 
 
 def table(rows: list[dict]) -> list[str]:
-    out = ["| run | story | orig | orig flags | replan | cards | map share (orig -> replan) | replan refusal reasons |",
-           "|---|---|---|---|---|---|---|---|"]
+    out = ["| run | story | orig | orig flags | replan | cards | map share (orig -> replan) | map views | things | "
+           "replan refusal reasons |", "|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         o, a = r["original"], r["replanned"]
         run = next((p for p in Path(r["path"]).parts if re.fullmatch(r"r?\d{8,}", p)), "")
@@ -200,7 +235,8 @@ def table(rows: list[dict]) -> list[str]:
         out.append(f"| {run.lstrip('r')}{' (dry)' if r['preview'] else ''} | {r['id']} | "
                    f"{'PASS' if o['pass'] else 'BLOCK'} | {len(o['problems'])} | {'PASS' if a['pass'] else 'BLOCK'} | "
                    f"{a['cards']}/{a['beats']} | {o['map_share']:.0%} -> {a['map_share']:.0%}"
-                   f"{'' if a['timed'] else ' (per beat)'} | {why} |")
+                   f"{'' if a['timed'] else ' (per beat)'} | {o['map_views']} -> {a['map_views']} | "
+                   f"{', '.join(f'b{n} {t}' for n, t in r.get('things') or []) or '-'} | {why} |")
     return out
 
 

@@ -21,29 +21,37 @@ def beats_flagged(problems):
 def test_rubio_artifact_blocked():
     # 39714003987: his 1989 yearbook photo, Mukesh Ambani at a gala, the Vantara map under crude oil and data centres.
     bad = gate.said_is_shown(short("39714003987"))
-    assert beats_flagged(bad) == {1, 2, 3, 4, 5, 6}
-    assert "pictures: maps fill 67% of the picture time (at most 40%)" in bad
+    # Beat 4's "card 4 names वनतारा" is a dateline now (a place with only a map, match.problems): beats 1-3, 5, 6.
+    assert beats_flagged(bad) == {1, 2, 3, 5, 6}
+    assert "pictures: maps fill 67% of the picture time (at most 20%)" in bad and "pictures: 7 map views (at most 1)" in bad
 
 
-def test_rubio_anchored_passes():
+def test_rubio_hand_fix_is_blocked_now():
     s = short("39714003987")
-    # The hand fix cut to the Jamnagar map in beats 1 and 2: 1.5 of its 3 picture beats are maps once card time no
-    # longer pads the share (finding 12). Re-planned, beat 2 holds the hosts alone, as match.plan makes it.
+    # The hand fix cut to the Jamnagar map in beat 1 and the Vantara map in beat 4, both under beats naming Rubio:
+    # it passed at the 40% ceiling; since 2026-10-22 (real pictures: one map a Short, never under a beat naming a
+    # person with a photo, maps at most 20%) it is blocked. Re-planned, no picture problem is left: only the three
+    # beats that name nothing showable (a third is the card ceiling), which the writer's SHOWABLE retry rewrites.
     shots = [("photo:7/8", "", "जामनगर"), ("photo:10", "", ""), ("photo:8", match.CARD, ""),
              ("photo:4/11", "", "वनतारा"), ("photo:11", match.CARD, ""), ("photo:4", match.CARD, "")]
     fixed = replace(s, beats=[replace(b, shot=sh, plate=pl, cut_word=w) for b, (sh, pl, w) in zip(s.beats, shots)])
-    assert gate.said_is_shown(fixed) == []
-    assert gate.said_is_shown(short("39714003987-fixed")) == ["pictures: maps fill 50% of the picture time (at most 40%)"]
+    bad = gate.said_is_shown(fixed)
+    assert "pictures: beat 1 shows a map though it names @subject, who has a photo" in bad
+    assert "pictures: beat 4 shows a map though it names @subject, who has a photo" in bad
+    assert "pictures: 2 map views (at most 1)" in bad
+    assert "pictures: maps fill 50% of the picture time (at most 20%)" in gate.said_is_shown(short("39714003987-fixed"))
+    rows, _ = planned(s)
+    assert gate.said_is_shown(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5"]
     # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time: 5.56 s of
-    # maps in 17.61 s (32%).
+    # maps in 17.61 s (32%, once under 40%).
     views = [{"start": 0.35, "end": 3.5, "photo": 7, "beat_k": 0}, {"start": 3.5, "end": 6.14, "photo": 8, "beat_k": 0},
              {"start": 6.14, "end": 12.1, "photo": 10, "beat_k": 1},
              {"start": 12.1, "end": 17.66, "photo": 8, "beat_k": 2, "plate": match.CARD},
              {"start": 17.66, "end": 20.6, "photo": 4, "beat_k": 3}, {"start": 20.6, "end": 23.52, "photo": 11, "beat_k": 3},
              {"start": 23.52, "end": 29.46, "photo": 11, "beat_k": 4, "plate": match.CARD},
              {"start": 29.46, "end": 35.47, "photo": 4, "beat_k": 5, "plate": match.CARD}]
-    assert gate.shown_is_said(fixed, views) == []
-    # The same Short cut to the Vantara map at the middle of beat 4 and held it for beats 5 and 6: maps over 40%.
+    assert "pictures: maps fill 32% of the picture time (at most 20%)" in gate.shown_is_said(fixed, views)
+    # The same Short cut to the Vantara map at the middle of beat 4 and held it for beats 5 and 6: more still.
     late = views[:4] + [{"start": 17.66, "end": 18.0, "photo": 4, "beat_k": 3},
                         {"start": 18.0, "end": 23.52, "photo": 11, "beat_k": 3}]
     assert any("maps fill" in p for p in gate.shown_is_said(fixed, late))
@@ -69,7 +77,7 @@ def test_min_visuals_not_met_by_maps():
     maps = replace(s, beats=[replace(b, shot=sh, plate=pl) for b, sh, pl in zip(s.beats, shots, plates)],
                    scene=s.scene | {"min_visuals": 3})
     assert "pictures: only 1 different pictures once a place's maps count as one (want 3)" in gate.said_is_shown(maps)
-    assert gate.said_is_shown(replace(rehosted(s), scene=s.scene | {"min_visuals": 3})) == []
+    assert not any("count as one" in p for p in gate.said_is_shown(replace(rehosted(s), scene=s.scene | {"min_visuals": 3})))
 
 
 def test_jaishankar_clean_short_still_passes():
@@ -77,7 +85,12 @@ def test_jaishankar_clean_short_still_passes():
     # names no one) is flagged, and planned it is a card and passes.
     s = short("39411111185")
     bad = gate.said_is_shown(s)
-    assert bad and all("beat 7 shows" in p for p in bad)
+    # Since 2026-10-22 also beat 2's Mumbai map under "मार्को रुबियो", who has a photo; planned, it is his photo.
+    assert bad[0].startswith("pictures: beat 2 shows a map though it names")
+    # Since 2026-10-22 (dry run 39827809002) also beat 6's "Secretary Blinken Meets with ... Jaishankar": Blinken's
+    # face under the Padma Shri line (was: only beat 7).
+    assert bad[1:] and all("beat 7 shows" in p or p.startswith("pictures: beat 6 shows photo 7")
+                           and "a photo with someone else" in p for p in bad[1:])
     rows, _ = planned(s)
     assert gate.said_is_shown(applied(s, rows)) == []
 
@@ -100,7 +113,7 @@ def test_make_gates_the_render(made, monkeypatch):  # noqa: F811
     views = [{"start": 0.0, "end": 1.0, "photo": 0, "beat_k": 0, "plate": ""},
              {"start": 1.0, "end": 9.0, "photo": 1, "beat_k": 1, "plate": ""}]
     monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views})
-    with pytest.raises(ValueError, match="gate: pictures: maps fill 89%"):
+    with pytest.raises(ValueError, match="gate: .*pictures: maps fill 89%"):
         cli.make(None, s)
     assert cli.rendered_views(work) == views  # written before the gate: the review reads what was on screen
     monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views[:1]})

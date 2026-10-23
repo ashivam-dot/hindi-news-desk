@@ -414,7 +414,7 @@ def said_is_shown(short: Short, views: list[dict] | None = None) -> list[str]:
     """What the voice says is what the screen shows: a beat that names a person the Short has a photo of shows
     them, and a person the title names is on screen. The Modi Dussehra Short (2026-10-21) named Narendra Modi in its
     title and three beats and showed Delhi's temples and markets. And the other way round (shown_is_said)."""
-    problems = held(short) + shown_is_said(short, views)
+    problems = held(short) + shown_is_said(short, views) + richness(short)
     beats = [(b.text, set(shot_photos(b.shot))) for b in short.beats if b.shot.startswith("photo:")]
     on_screen = set().union(*(s for _, s in beats)) if beats else set()
     for c in short.scene.get("cast") or []:
@@ -439,11 +439,31 @@ def said_is_shown(short: Short, views: list[dict] | None = None) -> list[str]:
     return problems
 
 
+def richness(short: Short) -> list[str]:
+    """Visual richness (2026-10-22, CAPraPdXvns): the person the Short is about, and every person its title names,
+    has a photo that passed vetting (writer.faceless, read off the saved photos' "depicts" and "vet" stamps; a Short
+    saved before the stamps is not judged). The ceilings it pairs with (one map view, maps at most a fifth of the
+    picture time and never under a beat naming a person or thing with a photo, cards at most a third, real photos at
+    least half the Short) are match.problems', run by shown_is_said with render.json's time shares."""
+    from . import writer
+
+    photos = short.scene.get("photos") or []
+    if config.MATCHER == "legacy" or not any(p.get("depicts") is not None for p in photos):
+        return []
+    why = writer.faceless(short.title, photos, short.scene.get("cast") or [], short.scene.get("name_hi") or "",
+                          match._person(short) and short.kind in ("", "explainer"), short.scene.get("names"),
+                          short.scene.get("hook") or "", [b.text for b in short.beats if b.shot != "outro"],
+                          short.scene.get("names_looked"))
+    return [why] if why else []
+
+
 def shown_is_said(short: Short, views: list[dict] | None = None) -> list[str]:
     """What the screen shows is what the voice says (SYNC-AUDIT 4.1 step 7, match.problems): every picture is of
     something its beat names, on screen at the right time of life and the right event, every card over its own
-    picture, a hook whose names the narration says, and the paired ceilings (maps at most 40% of the picture time,
-    cards at most half the beats and never three in a row, at most two pronoun beats, a place's maps one picture).
+    picture, a hook whose names the narration says, and the paired ceilings (one map view, maps at most 20% of the
+    picture time and never under a beat naming a person or thing with a photo, cards at most a third of the beats
+    and never two in a row, at most two pronoun beats, a place's maps one picture), with the floor they pair with
+    (real photos, each under a beat that names it, at least half the Short).
     Three audits (2026-10-22) found 98 of 145 beats showing something the voice was not talking about; the gate
     passed all of them. Run on the saved Short (cli.prepare, publish) and on render.json's views after the render.
     The legacy matcher (config.MATCHER, the rollback) fills beats the old way, which this gate would refuse."""

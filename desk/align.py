@@ -119,3 +119,29 @@ def outside(words: list[dict], spoken: list[tuple[str, float, float]]) -> tuple[
     before = sum(len(letters(t)) for t, _, end in spoken if end <= heard[0]["start"] - 0.1)
     after = sum(len(letters(t)) for t, start, _ in spoken if start >= heard[-1]["end"] + 0.1)
     return (before if before > EXTRA_LETTERS else 0), (after if after > EXTRA_LETTERS else 0)
+
+
+# The longest a take may run with none of the script's words in it (stray): a pause between sentences is under a
+# second; the preview voice once ran 8 s of babble past beat 4's last word (dry run 39871573344, review round 2),
+# which no caption covered and over which one picture stayed up 11.7 s.
+MAX_STRAY = 1.5
+
+
+def stray(words: list[dict], duration: float, lead: float = 0.0) -> float:
+    """The longest stretch of a take of `duration` seconds (speech starting at `lead`) with no script word in it:
+    before the first heard word, between two heard words, and after the last, less the time the unheard words in it
+    may take (SECONDS_PER_LETTER each letter, generous). Whisper hears no words in babble, so it is the clip's
+    length, not what Whisper heard, that shows it."""
+    if not words:
+        return max(duration - lead, 0.0)
+    heard = [k for k, w in enumerate(words) if w.get("heard", True)]
+    if not heard:
+        return max(duration - lead - sum(len(letters(w["text"])) for w in words) * SECONDS_PER_LETTER, 0.0)
+
+    def need(ws) -> float:
+        return sum(len(letters(w["text"])) for w in ws) * SECONDS_PER_LETTER
+
+    gaps = [words[heard[0]]["start"] - lead - need(words[:heard[0]]),
+            duration - words[heard[-1]]["end"] - need(words[heard[-1] + 1:])]
+    gaps += [words[b]["start"] - words[a]["end"] - need(words[a + 1:b]) for a, b in zip(heard, heard[1:])]
+    return round(float(max(max(gaps), 0.0)), 3)

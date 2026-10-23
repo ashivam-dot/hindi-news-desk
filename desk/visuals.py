@@ -22,7 +22,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter
 
-from . import hindi, media, net, wiki
+from . import config, hindi, media, net, things, wiki
 
 log = logging.getLogger(__name__)
 
@@ -35,6 +35,7 @@ PERSON_PHOTOS = 2
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
 SIGHT_PHOTOS = 1
 TOPIC_PHOTOS = 2
+MAX_THINGS = things.MAX_THINGS
 WORN = 2  # beats a place may stand under before anything else its beat names goes first
 PLACE_LABELS = ("स्थल", "स्थान", "जगह", "इलाका", "शहर", "जिला", "ज़िला", "राज्य")
 PLACE_WORDS = {"मैदान", "स्टेशन", "अस्पताल", "थाना", "अदालत", "कोर्ट", "बीच", "जंक्शन", "मंदिर", "पार्क", "चौक", "बाजार",
@@ -212,6 +213,11 @@ def _hit(q: str, en: str, india: bool) -> tuple[str, str, dict] | None:
     return None
 
 
+# The names resolve could not read (a network or API error), as against found nothing: an unread name is no faceless
+# person (writer.faceless, cast_for's fates; review round 2).
+UNREAD: set[str] = set()
+
+
 def resolve(en: str, india: bool, near: dict | None = None) -> tuple[str, str, dict] | None:
     """(QID, title, item) of a person or place the script names: Wikipedia's first hit for the name, or for
     "<name>, India" when that is a disambiguation page or the place is abroad in an Indian story.
@@ -223,6 +229,7 @@ def resolve(en: str, india: bool, near: dict | None = None) -> tuple[str, str, d
     from .stories import km_between
 
     city = (near or {}).get("en") or ""
+    UNREAD.discard(en)
     queries = [en] + ([f"{en} {city}"] if city and city.lower() not in en.lower() else []) \
         + ([f"{en}, India"] if india else [])
     places: list[tuple[str, str, dict]] = []
@@ -233,6 +240,8 @@ def resolve(en: str, india: bool, near: dict | None = None) -> tuple[str, str, d
             hit = _hit(q, en, india)
         except Exception as exc:
             log.info("visuals: %s not resolved (%s)", q, exc)
+            if not places:
+                UNREAD.add(en)
             break
         if not hit:
             continue
@@ -408,7 +417,7 @@ def place_over(card: dict, shown: list[int], cast: list[dict]) -> dict:
 def titles(beats: list[dict], subject_hi: str) -> list[str]:
     """The word the script puts before the story's person in TITLE_BEATS beats ("प्रधानमंत्री नरेन्द्र मोदी", "अभिनेता
     टाइगर श्रॉफ"): a later "विजयदशमी पर प्रधानमंत्री ने ..." is about them, and the Modi rebuild showed Delhi's map
-    under it instead."""
+    under it instead. And a FIGURE's own title the beats say (things.roles)."""
     first = hindi.norm((subject_hi.split() or [""])[0])
     if not first:
         return []
@@ -417,7 +426,10 @@ def titles(beats: list[dict], subject_hi: str) -> list[str]:
         words = [hindi.norm(w) for w in re.findall(r"[\u0900-\u097F]+", b.get("say") or "")]
         seen.update({a for a, z in zip(words, words[1:]) if z == first and len(a) >= 3
                      and a not in hindi.FUNCTION_WORDS and a not in NOT_A_FORCE})
-    return [w for w, n in seen.items() if n >= TITLE_BEATS]
+    said = " ".join(b.get("say") or "" for b in beats)
+    # The subject's own Indian title said alone ("गृह मंत्री ने ...": Amit Shah, things.ROLES), once is enough.
+    out = [w for w, n in seen.items() if n >= TITLE_BEATS]
+    return out + [r for r in things.roles(subject_hi) if _finds(said, r) and hindi.norm(r) not in map(hindi.norm, out)]
 
 
 def _subject(en: str, subject_en: str) -> bool:
@@ -453,11 +465,22 @@ def sub_place(c: dict, beats: list[dict], india: bool) -> dict | None:
 
 
 def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True, near: dict | None = None,
-             resolver=None) -> list[dict]:
-    """The people and places the script names besides its subject, resolved: [{en, hi, kind, qid, title, ent}].
-    near: where the story is (resolve); resolver: a cached resolve (showable)."""
+             resolver=None, thing_resolver=None, thing_lookup=None, fates: dict | None = None) -> list[dict]:
+    """The people, places and things the script names besides its subject, resolved: [{en, hi, kind, qid, title,
+    ent}] (a thing also carries alias, its inflected forms, and files, an editor's photos). near: where the story is
+    (resolve); resolver, thing_resolver, thing_lookup: cached lookups (showable). A thing is a name of the script whose
+    article is one (things.resolve_thing), or a LEXICON noun a beat says ("तिरंगे"), which also takes the place of a
+    script name it spells (a map of "संसद" is no picture of Parliament).
+
+    fates: filled with {hindi.norm(hi): what the lookup of each script name said}, for writer.faceless: "unfound"
+    (looked up, nothing found), "unread" (the lookup failed), "cap" (a person past MAX_PEOPLE), "cast" (in the cast),
+    "other" (a place, firm or work: no face to want). Only an "unfound" name may make a Short faceless (review round
+    2: Air India, Delhi Metro and Bharat Mandapam read as faceless people)."""
+    fates = {} if fates is None else fates
     resolver = resolver or resolve
-    out, people, places, regions, topics = [], 0, 0, 0, 0
+    thing_resolver = thing_resolver or things.resolve_thing
+    thing_lookup = thing_lookup or things.lookup
+    out, people, places, regions, topics, found_things = [], 0, 0, 0, 0, 0
     for n in draft.get("names") or []:
         en, hi = (n.get("en") or "").strip(), (n.get("hi") or "").strip()
         if not en or not hi or _subject(en, subject_en) or any(c["en"] == en for c in out) \
@@ -467,13 +490,20 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         if not said:
             continue
         found = resolver(en, india, **({"near": near} if near else {}))
+        fate = hindi.norm(hi)
+        fates[fate] = "other" if found else "unread" if en in UNREAD else "unfound"
         if found and topic_like(found[2]):
             found = None  # Wikipedia's search returns the Ramlila article for "Ramlila, India" on some calls
-        if not found and places_too and topics < MAX_TOPICS:
-            if found := resolve_topic(en):
-                topics += 1
-                out.append({"en": en, "hi": hi, "kind": "topic", "qid": found[0], "title": found[1],
-                            "ent": found[2], "alias": [hi + "ओं"]})  # "देश भर में राम लीलाओं का मंचन"
+        if not found and places_too and topics < MAX_TOPICS and (topic := resolve_topic(en)):
+            fates[fate] = "other"
+            topics += 1
+            out.append({"en": en, "hi": hi, "kind": "topic", "qid": topic[0], "title": topic[1],
+                        "ent": topic[2], "alias": [hi + "ओं"]})  # "देश भर में राम लीलाओं का मंचन"
+            continue
+        if not found and found_things < MAX_THINGS and config.MATCHER != "legacy" and (thing := thing_resolver(en)):
+            fates[fate] = "other"
+            found_things += 1
+            out.append({"en": en, "hi": hi, "kind": "thing", "qid": thing[0], "title": thing[1], "ent": thing[2]})
             continue
         if not found:
             continue
@@ -484,7 +514,9 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         region = kind == "place" and is_region(ent)
         if kind == "place" and not places_too or kind == "person" and people >= MAX_PEOPLE \
                 or region and regions >= MAX_REGIONS or kind == "place" and not region and places >= MAX_PLACES:
+            fates[fate] = "cap" if kind == "person" else "other"
             continue
+        fates[fate] = "cast" if kind == "person" else "other"
         people += kind == "person"
         regions += region
         places += kind == "place" and not region
@@ -494,6 +526,29 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
             if not any(c["qid"] == sub["qid"] for c in out):
                 places += 1
                 out.append(sub)
+    # A public figure every beat may name, left out of the script's names (things.FIGURES), is still a person to show.
+    for f in [] if config.MATCHER == "legacy" else things.figures_said(draft.get("beats") or []):
+        if people >= MAX_PEOPLE or _subject(f["en"], subject_en) or any(c["en"] == f["en"] for c in out):
+            continue
+        if not (found := resolver(f["en"], india, **({"near": near} if near else {}))) \
+                or wiki.HUMAN not in kinds(found[2]) or any(c.get("qid") == found[0] for c in out):
+            continue
+        people += 1
+        out.append({"en": f["en"], "hi": f["hi"], "kind": "person", "qid": found[0], "title": found[1],
+                    "ent": found[2], "alias": f["alias"]})
+    # The rollback (DESK_MATCHER=legacy) shows people, places and topics only (assign_legacy): a lexicon noun would
+    # take a landmark's place and then never be on screen (review round 1: "लाल किले" lost the Red Fort's photo).
+    for e in [] if config.MATCHER == "legacy" else things.lexicon_hits(draft.get("beats") or [], india):
+        forms = {hindi.norm(w) for w in [e["hi"], *e["alias"]]}
+        if any(c["kind"] == "thing" and (c["en"] == e["en"] or hindi.norm(c["hi"]) in forms) for c in out):
+            continue
+        if sum(c["kind"] == "thing" for c in out) >= MAX_THINGS:
+            break
+        hit = thing_lookup(e)
+        if hit is None and not e["files"]:
+            continue
+        out = [c for c in out if not (c["kind"] in ("place", "topic") and hindi.norm(c["hi"]) in forms)]
+        out.append(hit or e | {"qid": "", "ent": {}})
     return out
 
 
@@ -664,6 +719,11 @@ def fresh_first(rows: list[dict], recent: set[str] | None) -> list[dict]:
 FACE_SHARE = 0.10
 
 
+def has_p18(ent: dict) -> bool:
+    """Whether a Wikidata item has an image (P18) that is a photo."""
+    return any(isinstance(v["value"], str) and not media.NOT_PHOTO.search(v["value"]) for v in wiki.claims(ent, "P18"))
+
+
 def _person_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | None = None,
                    year: int | None = None) -> list[dict]:
     """A cast person's own portraits, vetted (media.era_reject, media.event_kind, FACE_SHARE): [] when none passes,
@@ -672,6 +732,8 @@ def _person_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | 
 
     rows = writer._own_photos(c["title"], c["ent"], folder, True, None, None, exclude, False, limit=8,
                               recent=recent)
+    # Nothing downloaded though Wikidata has their photo: a failed download, retried next run (writer.faceless).
+    c["miss"] = not rows and has_p18(c.get("ent") or {})
     year = year or writer._today_ist().year
     born = next((d.year for d in (wiki.wd_time(v["value"]) for v in wiki.claims(c["ent"], "P569")) if d), None)
     rows = [r for r in rows if not media.era_reject(r, year, born, "person", rows) and not media.event_kind(r)
@@ -746,16 +808,74 @@ def _sight_photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | N
     return out[:keep]
 
 
+LOOK_MATCHES = 100  # ORB matches (Hamming < LOOK_DISTANCE) that make two photos one picture: a crop, a re-encode
+LOOK_DISTANCE = 40
+LOOK_SIDE = 512
+
+
+def _orb(path: str):
+    import cv2
+
+    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE) if path else None
+    if img is None:
+        return None
+    scale = LOOK_SIDE / max(img.shape[:2])
+    if scale < 1:
+        img = cv2.resize(img, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
+    return cv2.ORB_create(nfeatures=1500).detectAndCompute(img, None)[1]
+
+
+def same_look(a, b) -> bool:
+    """Whether two ORB descriptor sets are one picture: "Shri Narendra Modi ... (3x4 cropped)" is a crop of the
+    official portrait (693 matches; two Amit Shah files 185; different portraits of one person 38 at most)."""
+    import cv2
+
+    if a is None or b is None or not len(a) or not len(b):
+        return False
+    pairs = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True).match(a, b)
+    return sum(m.distance < LOOK_DISTANCE for m in pairs) >= LOOK_MATCHES
+
+
+def looks(photos: list[dict]) -> None:
+    """Stamp each photo that is one picture with another of the same person or place ("look": the first's file):
+    match.held_key counts them as one, so the ceilings and the rotation see it. Dry run 39845458169 held Modi's one
+    official portrait, as two files, ~30 of 33 s. Maps never; a photo with no file on disk never."""
+    def owner(p: dict):
+        return (p.get("role") or "", p.get("who") or "", tuple(p.get("depicts") or ()))
+
+    by: dict = {}
+    for i, p in enumerate(photos):
+        p.pop("look", None)
+        if p.get("role") != "map" and p.get("path") and p.get("file"):
+            by.setdefault(owner(p), []).append(i)
+    for idx in by.values():
+        if len(idx) < 2:
+            continue
+        try:
+            desc = {i: _orb(photos[i]["path"]) for i in idx}
+        except Exception as exc:  # a broken file is its own picture
+            log.warning("visuals: no look check (%s)", exc)
+            continue
+        for n, i in enumerate(idx):
+            if photos[i].get("look"):
+                continue
+            for j in idx[n + 1:]:
+                if not photos[j].get("look") and same_look(desc[i], desc[j]):
+                    photos[i]["look"] = photos[j]["look"] = photos[i]["file"]
+
+
 def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder: Path,
            exclude: set[str] | None = None, tribute: bool = False, recent: set[str] | None = None,
            kind: str = "", year: int | None = None, born: int | None = None, incident: bool = False,
-           near: dict | None = None, subject_hi: str = "") -> tuple[list[dict], list[dict], list[dict]]:
+           near: dict | None = None, subject_hi: str = "", looked: dict | None = None
+           ) -> tuple[list[dict], list[dict], list[dict]]:
     """(photos with the cast's pictures added, one row per beat {views, cut_word, plate, card_view} (match.plan),
     the cast as {en, hi, kind, photos}). Network failures leave a beat with what it could find, else a card. A
     tribute adds only the people it names: a life's places are not today's news (Dhruv Rathee, 2026-10-17: seven of
     twelve frames were his school and birthplace). recent: Commons files the channel's last Shorts showed, used only
     when nothing fresh is left; year, born, incident: for vetting (match.vet_photo); near: the story's place
-    (resolve); subject_hi: the subject's Hindi name, for a place's story too.
+    (resolve); subject_hi: the subject's Hindi name, for a place's story too; looked: filled with cast_for's fates
+    of the script's names (writer.faceless).
 
     Every picture is stamped with what it depicts and why it may not be shown ("vet"), then config.MATCHER picks
     the views: "anchored" (match.plan) or "legacy" (assign_legacy)."""
@@ -768,7 +888,8 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     year = year or writer._today_ist().year
     legacy = config.MATCHER == "legacy"
     try:
-        cast = cast_for(draft, subject_en, india, places_too=not tribute, **({"near": near} if near else {}))
+        cast = cast_for(draft, subject_en, india, places_too=not tribute, **({"near": near} if near else {}),
+                        **({"fates": looked} if looked is not None else {}))
     except Exception as exc:
         log.warning("visuals: cast lookup failed (%s)", exc)
         cast = []
@@ -802,6 +923,10 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
                 rows = _sight_photos(c, folder / f"topic-{c['qid']}", exclude, recent, keep=TOPIC_PHOTOS)
                 c["photos"] = add([r | {"role": "topic"} for r in rows], me)
                 continue
+            if c["kind"] == "thing":
+                slug = c.get("qid") or re.sub(r"\W+", "-", c["en"]).strip("-").lower()
+                c["photos"] = add(things.photos(c, folder / f"thing-{slug}", exclude, recent), me)
+                continue
             site = wiki.coords(c["ent"])
             if not site:
                 continue
@@ -828,6 +953,7 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
                                            f"{c['en']} up close")], me)
         except Exception as exc:
             log.warning("visuals: no picture for %s (%s)", c["en"], exc)
+            c["miss"] = True  # a network failure, not a subject with no photo: retried (writer.faceless)
     if legacy:
         for c in cast:
             spot = next((s for s in cast if s.get("inside") == c["en"] and s["photos"]), None)
@@ -861,16 +987,22 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
         except Exception as exc:
             log.warning("visuals: no police photo for %s (%s)", city["en"], exc)
     person = bool(subject_en) and not tribute
+    if not legacy:  # the rollback (DESK_MATCHER=legacy) as main: no look stamps (review round 2)
+        looks(photos)
     for i, p in enumerate(photos):
         why = match.vet_photo(i, photos, cast, year, bool(subject_en), incident, born)
         if why:
             p["vet"] = why
         else:
             p.pop("vet", None)
+    # A place's own photo (its sight) before its maps: a picture first, a map only when there is none.
+    # The rollback keeps main's order (maps, then the sight).
     told = [{"en": c["en"], "hi": c["hi"], "kind": c["kind"],
-             "photos": c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]] + c.get("sight", []),
+             "photos": c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]] + c.get("sight", [])
+             if legacy else c.get("sight", []) + c["photos"] + [i for i in c.get("near") or [] if i not in c["photos"]],
              **({"alias": c["alias"]} if c.get("alias") else {}), **({"inside": c["inside"]} if c.get("inside")
-                                                                      else {})} for c in cast]
+                                                                      else {}),
+             **({"miss": True} if c.get("miss") else {})} for c in cast]
     if legacy:
         first = beats[0].get("photo") if beats and beats[0].get("photo") in subject else None
         words = [subject_en, *hi.split()[:1], *hi.split()[-1:]] if person else None
@@ -897,8 +1029,17 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
 def showable(draft: dict, subject_en: str, india: bool, cache: dict | None = None, near: dict | None = None,
              tribute: bool = False) -> list[str]:
     """The Hindi names the script lists that a vetted picture could show (SYNC-AUDIT 4.1 step 4, the writer's
-    SHOWABLE list): a person with a Wikidata image (P18), a place with coordinates, a festival or rite, and the
-    police of an Indian city it names. Wikidata only, no Commons download; cache keeps the lookups across drafts."""
+    SHOWABLE list): a person with a Wikidata image (P18), a place with coordinates, a festival or rite, a thing with
+    a photo (things: "तिरंगा"), and the police of an Indian city it names. Wikidata only, no Commons download; cache
+    keeps the lookups across drafts."""
+    return list(dict.fromkeys(r["hi"] for r in showable_rows(draft, subject_en, india, cache, near, tribute)))
+
+
+def showable_rows(draft: dict, subject_en: str, india: bool, cache: dict | None = None, near: dict | None = None,
+                  tribute: bool = False) -> list[dict]:
+    """showable as cast rows {hi, kind, alias, map_only}: map_only for a town or region, which direct shows by its
+    map alone (no sight photo: it has people or a capital), so a beat naming only such places is a map beat, and a
+    Short may have one (match.MAX_MAP_VIEWS)."""
     cache = {} if cache is None else cache
 
     def cached(en, india_, **kw):
@@ -907,16 +1048,29 @@ def showable(draft: dict, subject_en: str, india: bool, cache: dict | None = Non
             cache[k] = resolve(en, india_, **kw)
         return cache[k]
 
+    def thing(en):
+        if ("thing", en) not in cache:
+            cache[("thing", en)] = things.resolve_thing(en)
+        return cache[("thing", en)]
+
+    def entry(e):
+        if ("lexicon", e["en"]) not in cache:
+            cache[("lexicon", e["en"])] = things.lookup(e)
+        return cache[("lexicon", e["en"])]
+
     try:
-        cast = cast_for(draft, subject_en, india, places_too=not tribute, near=near, resolver=cached)
+        cast = cast_for(draft, subject_en, india, places_too=not tribute, near=near, resolver=cached,
+                        thing_resolver=thing, thing_lookup=entry)
     except Exception as exc:
         log.info("visuals: showable not looked up (%s)", exc)
         return []
-    out = [c["hi"] for c in cast if c["kind"] == "topic" or c["kind"] == "person" and wiki.claims(c["ent"], "P18")
-           or c["kind"] == "place" and wiki.coords(c["ent"])]
+    out = [{"hi": c["hi"], "kind": c["kind"], "alias": list(c.get("alias") or []),
+            "map_only": c["kind"] == "place" and (is_region(c["ent"]) or bool(_population(c["ent"])))}
+           for c in cast if c["kind"] == "topic" or c["kind"] == "person" and wiki.claims(c["ent"], "P18")
+           or c["kind"] == "place" and wiki.coords(c["ent"]) or c["kind"] == "thing" and things.has_picture(c)]
     if india and any(c["kind"] == "place" and not is_region(c["ent"]) for c in cast):
-        out.append("पुलिस")
-    return list(dict.fromkeys(out))
+        out.append({"hi": "पुलिस", "kind": "police", "alias": [], "map_only": False})
+    return out
 
 
 def distinct(shots: list[str]) -> int:

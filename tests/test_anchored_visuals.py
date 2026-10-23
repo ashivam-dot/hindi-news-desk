@@ -180,7 +180,9 @@ def test_legacy_matcher_switch(monkeypatch, items, tmp_path):
 
     photos, rows, cast = run("anchored")
     assert photos[3]["depicts"] == ["मुंबई"] and photos[0]["depicts"] == [match.SUBJECT]
-    assert rows[1]["views"] == [3] and rows[2]["plate"] == match.CARD
+    # Mumbai's beat is a third of this three-beat Short's voice: its map would fill a third of the picture time
+    # (match.MAP_SHARE 20%, 2026-10-22), so it is a card over Tiger, never over the map (once rows[1] == [3]).
+    assert rows[1]["plate"] == rows[2]["plate"] == match.CARD and rows[1]["views"] == [0]
     assert own[0].get("depicts") is None  # the writer's photos are not changed in place
     _, legacy, _ = run("legacy")
     assert all(r["plate"] == "" and r["views"] for r in legacy)
@@ -200,21 +202,29 @@ def test_card_ceiling_and_showable_retry(monkeypatch, tmp_path):
     """The Tiger Shroff "hurt" Short (39553699482) ended on three beats about the hospitals and the doctors, with no
     picture of them: its own rows are three cards in a row (the ceiling), and the writer is sent back with the
     names that can be shown."""
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["मुम्बई", "जुहू"])
+    def rows(*names):
+        return lambda *a, **k: [{"hi": n, "kind": "place", "alias": [], "map_only": False} for n in names]
+
+    monkeypatch.setattr(visuals, "showable_rows", rows("मुम्बई", "जुहू"))
     subject = {"en": "Tiger Shroff", "hi": "टाइगर श्रॉफ", "person": True}
-    problems = writer.anchorless(hurt_draft(), subject, True)
-    assert problems == ["beats 3,4,5,6 name nothing that can be shown; SHOWABLE: मुम्बई, जुहू. Name in each beat the "
-                        "person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: ["मुम्बई", "जुहू", "Nanavati Hospital", "KEM Hospital"])
-    assert writer.anchorless(hurt_draft(), subject, True) == []  # beat 6 alone is a card
-    monkeypatch.setattr(visuals, "showable", lambda *a, **k: [])
-    assert writer.anchorless(hurt_draft(), subject, True) == []  # nothing to name: a rewrite cannot help
+    problems = writer.anchorless(hurt_draft(), subject, True, kind="incident")
+    assert problems == ["beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short "
+                        "shows once); SHOWABLE: मुम्बई, जुहू. Name in each beat the person, thing, place or police it "
+                        "is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards "
+                        "and never two in a row."]
+    monkeypatch.setattr(visuals, "showable_rows", rows("मुम्बई", "जुहू", "Nanavati Hospital", "KEM Hospital"))
+    assert writer.anchorless(hurt_draft(), subject, True, kind="incident") == []  # beat 6 alone is a card
+    monkeypatch.setattr(visuals, "showable_rows", rows())
+    assert writer.anchorless(hurt_draft(), subject, True, kind="incident") == []  # nothing to name: a rewrite cannot help
     s = short("39553699482")
     rows = [{"views": [0], "plate": match.CARD if k >= 3 else "", "cut_word": "", "card_view": 0} for k in range(6)]
     from dataclasses import replace
 
     carded = replace(s, beats=[replace(b, plate=r["plate"]) for b, r in zip(s.beats, rows)] + s.beats[6:])
-    assert any(p.startswith("text cards: 3 beats in a row") for p in match.problems(carded))
+    # Two cards in a row is the ceiling now (match.CARD_RUN 2, once 3), and three of six beats is over a third.
+    found = match.problems(carded)
+    assert any(p.startswith("text cards: 2 beats in a row from beat 4") for p in found)
+    assert "text cards: 3 of 6 beats (at most 2)" in found
 
     from .test_writer import HI_NAMES, PHOTOS, SOURCE_EN, SOURCE_HI, SUBJECT, FakePen
 
@@ -243,7 +253,8 @@ def test_messages_list_years_and_vetted_photos():
     assert "0: (1988) A high school yearbook" in text and "(not to be shown: a childhood photo (Yearbook))" in text
     assert "1: (2011) Official portrait" in text
     assert "Beat 1 uses photo 1." in text and "Use every photo at least once" not in text
-    assert "each beat names the person, place or police" in text.lower()
+    assert "each beat names the person, place, thing or police" in text.lower()
+    assert "a short may show one map at most" in text.lower()
 
 
 def test_stale_floor_uses_only_clean_photos():

@@ -43,8 +43,10 @@ def anchored(beats, subject, cast, spell=(), kind="", person=True):
     by_en = {c.get("en"): c for c in cast}
     for c in cast:
         keys = [match.key(by_en[e]) for e in c["pair"]] if c.get("kind") == "route" else [match.key(c)]
-        for i in [*(c.get("photos") or []), *(c.get("near") or []), *(c.get("sight") or [])]:
+        for i in [*(c.get("photos") or []), *(c.get("near") or [])]:
             photos[i] = {"depicts": keys, "role": "map" if c.get("kind") in ("place", "route") else c.get("kind")}
+        for i in c.get("sight") or []:  # a landmark's own photo, as direct stamps it (role "place", not a map)
+            photos[i] = {"depicts": keys, "role": "place"}
     for i in subject:
         photos[i] = {"depicts": [match.SUBJECT]}
     return match.plan([{"say": b["say"]} for b in beats], photos, cast, subject, kind, spell, person)
@@ -60,17 +62,19 @@ def views_of(rows):
 def test_each_beat_shows_who_or_where_it_names():
     subject, cast, at = tiger_cast()
     rows = anchored(TIGER, subject, cast, TIGER_SPELT)
-    assert views_of(rows) == [[0, at["mumbai"]], [1], [at["maha"], at["shinde"]], [at["police"]], [2, at["jackie"]],
-                              [at["route"], at["police"]]]
+    # Every beat names Tiger, Shinde, Jackie or the police: their photos, and no map at all (real pictures,
+    # 2026-10-22: CAPraPdXvns's maps under beats naming people; a map stands only under a beat that names nothing but
+    # places). Once [[0, mumbai], [1], [maha, shinde], [police], [2, jackie], [route, police]].
+    assert views_of(rows) == [[0], [1], [at["shinde"], 2], [at["police"]], [0, at["jackie"]], [at["police"]]]
     # The second picture comes on the word that names it, never at the middle of the beat.
-    assert [r["cut_word"] for r in rows] == ["मुम्बई", "", "एकनाथ", "", "जैकी", "संदिग्धों"]
-    assert len({i for v in views_of(rows) for i in v}) >= 8
+    assert [r["cut_word"] for r in rows] == ["", "", "टाइगर", "", "जैकी", ""]
+    assert not any(i in (at["mumbai"], at["maha"], at["route"]) for r in rows for i in r["views"])
 
 
 def test_the_picture_that_closed_a_beat_opens_the_next_only_when_it_is_the_one_named():
     subject, cast, at = tiger_cast()
     beats = TIGER[:5] + [TIGER[5], {"say": "पुलिस ने आगे की जांच शुरू कर दी है।"}]
-    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [[at["route"], at["police"]], [at["police"]]]
+    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [[at["police"]], [at["police"]]]
     cast[-1]["photos"] = [at["police"], at["police"] + 1]  # a second police photo: the next beat opens on it
     v = views_of(anchored(beats, subject, cast, TIGER_SPELT))
     assert v[6] != v[5][-1:] and set(v[5][-1:] + v[6]) == set(cast[-1]["photos"])
@@ -85,10 +89,10 @@ def test_a_beat_that_quotes_another_force_is_a_card():
              {"say": "मुंबई पुलिस आरोपियों से पूछताछ कर रही है।"}]
     rows = anchored(beats, subject, cast, TIGER_SPELT)
     kota = cast[4]["photos"][0]
-    # Rajasthan's police: not Mumbai's. Kota's map, cut to on its word, would hold half the voice's picture time
-    # (beat 1 cuts to Mumbai's on its fourth word): plan drops the latest map cut (finding 12).
+    # Rajasthan's police: not Mumbai's. No map cuts at all (real pictures, 2026-10-22): beat 0 once cut to Mumbai's
+    # map on its fourth word, beat 1 to Kota's.
     assert views_of(rows)[1:] == [[at["police"]], None, [at["police"]]]
-    assert rows[0]["views"] == [0, at["mumbai"]] and kota in cast[4]["photos"]
+    assert rows[0]["views"] == [0] and kota in cast[4]["photos"]
     assert visuals.other_force("राजस्थान पुलिस ने बताया", cast[-1])
     assert not visuals.other_force("संदिग्धों को पुलिस अब मुम्बई ला रही है", cast[-1])
     assert not visuals.other_force("मुम्बई पुलिस ने कहा", cast[-1])
@@ -102,7 +106,7 @@ def test_a_beat_that_does_not_name_the_storys_person_never_shows_their_portrait(
              {"say": "पुलिस के मुताबिक आरोपी कोटा के रास्ते भाग रहे थे।"},
              {"say": "टाइगर श्रॉफ ने बाद में शूटिंग फिर शुरू की।"}]
     rows = anchored(beats, subject, cast, TIGER_SPELT)
-    assert views_of(rows)[1:4] == [[at["police"]], None, [at["police"], cast[4]["photos"][0]]]
+    assert views_of(rows)[1:4] == [[at["police"]], None, [at["police"]]]  # once a cut to Kota's map
     assert rows[4]["views"][0] in subject
     # The injured beat names no one a picture is of: a card, and its backdrop is not their portrait either.
     assert not set(rows[2]["views"]) & set(subject) and match.plain(beats[2]["say"])
@@ -115,7 +119,8 @@ def test_a_lone_portrait_stands_only_under_the_beats_that_name_him():
     subject, cast, at = tiger_cast(own=1)
     rows = anchored(TIGER, subject, cast, TIGER_SPELT)
     assert [k for k, r in enumerate(rows) if 0 in r["views"]] == [0, 1, 4]  # beats 2 and 5 name Shinde, Jackie
-    assert all(r["plate"] == "" for r in rows) and len({i for r in rows for i in r["views"]}) >= 5
+    # Shinde, Jackie, the police and the portrait: four real pictures (a fifth was Mumbai's map, gone 2026-10-22).
+    assert all(r["plate"] == "" for r in rows) and len({i for r in rows for i in r["views"]}) >= 4
 
 
 def test_with_no_cast_a_beat_naming_nothing_is_a_card():
@@ -170,10 +175,19 @@ def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
     # spot-near half the legacy matcher put under its city).
     cast = [{"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [3], "near": []},
             {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [5], "near": [6], "inside": "Mumbai"}]
-    rows = anchored([{"say": "x"}, {"say": "यह मुम्बई के जुहू में हुआ।"}, {"say": "मुम्बई पुलिस जांच कर रही है।"}],
+    # Three more picture beats (two people with photos), so the place beat is a fifth of the picture time
+    # (match.MAP_SHARE): a map stands only under a beat whose point is where, and never fills more.
+    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7]},
+             {"en": "Jackie Shroff", "hi": "जैकी श्रॉफ", "kind": "person", "photos": [8]}]
+    pad = [{"say": "एकनाथ शिंदे ने परिवार से मुलाकात की और पूरी सुरक्षा का भरोसा दिया।"},
+           {"say": "जैकी श्रॉफ ने कहा कि परिवार सुरक्षित है और जांच पर भरोसा है।"},
+           {"say": "एकनाथ शिंदे ने पुलिस को जल्द जांच पूरी करने को कहा है।"}]
+    rows = anchored([{"say": "x"}, {"say": "यह मुम्बई के जुहू में हुआ।"}, {"say": "मुम्बई पुलिस जांच कर रही है।"}, *pad],
                     [0, 1], cast)
-    assert views_of(rows) == [[0], [5], None]
-    assert views_of(anchored([{"say": "x"}, {"say": "मुम्बई में बैठक हुई।"}], [0, 1], cast)) == [[0], [3]]
+    assert views_of(rows)[:3] == [[0], [5], None]
+    assert views_of(anchored([{"say": "x"}, {"say": "मुम्बई में बैठक हुई।"}, *pad], [0, 1], cast))[:2] == [[0], [3]]
+    # Unpadded, the city beat is most of the voice: a map there would fill most of the picture time, so a card.
+    assert views_of(anchored([{"say": "x"}, {"say": "मुम्बई में बैठक हुई।"}], [0, 1], cast)) == [[0], None]
 
 
 def test_states_leave_room_for_the_towns_and_stations(monkeypatch):
@@ -199,8 +213,18 @@ def test_a_named_landmark_shows_its_photo_and_two_places_their_route():
             {"kind": "route", "pair": ("Surat", "Kota Junction"), "photos": [6]}]
     rows = anchored([{"say": "x"}, {"say": "वे कोटा जंक्शन पर पकड़े गए।"}, {"say": "वे सूरत से कोटा जंक्शन तक गए।"}],
                     [0, 1], cast)
-    # One name, one picture: the station's own photo, no cut to its map (compose holds it closer, TIGHT).
-    assert views_of(rows) == [[0], [3], [6]] and rows[1]["cut_word"] == ""
+    # One name, one picture: the station's own photo, no cut to its map (compose holds it closer, TIGHT); and the
+    # station's photo, not the Surat-Kota route map, under the beat naming both (a real picture before a map,
+    # 2026-10-22). Without the station's photo, a short where-beat shows the route.
+    assert views_of(rows) == [[0], [3], [3]] and rows[1]["cut_word"] == ""
+    cast[0]["sight"] = []
+    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7]},
+             {"en": "Jackie Shroff", "hi": "जैकी श्रॉफ", "kind": "person", "photos": [8]}]
+    pad = [{"say": "एकनाथ शिंदे ने परिवार से मुलाकात की और पूरी सुरक्षा का भरोसा दिया।"},
+           {"say": "जैकी श्रॉफ ने कहा कि परिवार सुरक्षित है और जांच पर भरोसा है।"},
+           {"say": "एकनाथ शिंदे ने पुलिस को जल्द जांच पूरी करने को कहा है।"}]
+    rows = anchored([{"say": "x"}, {"say": "वे सूरत से कोटा जंक्शन तक गए।"}, *pad], [0, 1], cast)
+    assert views_of(rows)[1] == [6]
 
 
 def test_maps_hold_every_site_inside_the_frame():

@@ -378,9 +378,12 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
             end = int((words[-1]["end"] - LEAD_IN + 0.12) * SAMPLE_RATE) if after else len(raw)
             raw = raw[start:end]
         low = min(coverage) if coverage else 0.0
+        # No stretch of babble or silence with none of the script in it (align.stray, review round 2).
+        gap = align.stray(words, len(audio) / SAMPLE_RATE, LEAD_IN)
+        clean = clean and gap <= align.MAX_STRAY
         ok = bool(clean and low >= MIN_COVERAGE and wpm is not None and HARD_WPM[0] <= wpm <= HARD_WPM[1])
         takes.append({"take": take, "model": record["served_model"], "coverage": [round(c, 3) for c in coverage],
-                      "wpm": wpm, "clean": clean, "ok": ok})
+                      "wpm": wpm, "clean": clean, "stray": gap, "ok": ok})
         log.info("take %d (%s): coverage %s, %s wpm%s", take, record["served_model"],
                  " ".join(f"{c:.0%}" for c in coverage), wpm, "" if clean else ", extra speech")
         if ok and (best is None or abs(wpm - AIM_WPM) < abs(best[3] - AIM_WPM)):
@@ -432,10 +435,11 @@ def synthesize_lines(short: Short, out_dir: Path) -> dict:
             raw = raw[head:tail]
             sf.write(part, raw, SAMPLE_RATE)
             words, coverage, spoken, _ = _listen(part, tokens)
-            clean = not any(align.outside(words, spoken))
+            gap = align.stray(words, len(raw) / SAMPLE_RATE)
+            clean = not any(align.outside(words, spoken)) and gap <= align.MAX_STRAY
             heard = round(coverage[0], 3) if coverage else 0.0
             tries.append({"beat": i, "try": attempt, "model": record["served_model"], "coverage": heard,
-                          "clean": clean})
+                          "clean": clean, "stray": gap})
             log.info("line %d try %d (%s): coverage %.0f%%%s", i + 1, attempt, record["served_model"], heard * 100,
                      "" if clean else ", extra speech")
             if clean and heard >= MIN_COVERAGE:
@@ -478,6 +482,18 @@ def _chatterbox(lines: list[str], out: Path, style: dict, seed: int, voice: Path
     return json.loads((out / "lines.json").read_text(encoding="utf-8"))
 
 
+TAIL_KEEP = 0.3  # seconds a Chatterbox beat keeps after its last script word
+
+
+def _fade_out(audio: np.ndarray, seconds: float = 0.06) -> np.ndarray:
+    """audio with its last `seconds` faded to silence, so a cut tail does not click."""
+    n = min(len(audio), int(seconds * SAMPLE_RATE))
+    if n:
+        audio = audio.copy()
+        audio[-n:] *= np.linspace(1.0, 0.0, n, dtype=np.float32)
+    return audio
+
+
 def _chatterbox_story(short: Short, out_dir: Path, reference: Path | None) -> dict:
     """Chatterbox Multilingual in Hindi, one take per beat, each checked by Whisper. reference None is the preview."""
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -505,13 +521,23 @@ def _chatterbox_story(short: Short, out_dir: Path, reference: Path | None) -> di
                 # Whisper may write the spelled numbers as words or as digits; either is the line heard right.
                 said = align.align([(w, 0) for w in texts[i].split()], spoken)[1]
                 match = max(match, said[0] if said else 0.0)
-            if best is None or match > best[2]:
-                best = (audio, words, match)
-            if match >= MIN_COVERAGE:
+            # Chatterbox runs on past the line (dry run 39871573344: 8 s of babble after beat 4's last word, no
+            # caption over it): the clip ends TAIL_KEEP after the last script word, and a take with a stretch of
+            # no script words inside it (align.stray) is retaken.
+            if words and len(audio) / SAMPLE_RATE > words[-1]["end"] + TAIL_KEEP:
+                audio = _fade_out(audio[:int((words[-1]["end"] + TAIL_KEEP) * SAMPLE_RATE)])
+                sf.write(clip, audio, SAMPLE_RATE)
+            gap = align.stray(words, len(audio) / SAMPLE_RATE)
+            clean = gap <= align.MAX_STRAY
+            if best is None or (clean, match) > (best[3], best[2]):
+                best = (audio, words, match, clean, gap)
+            if clean and match >= MIN_COVERAGE:
                 break
         if best[2] < MIN_COVERAGE:
             raise TakeRejected(f"voice: beat {i + 1} came out garbled ({best[2]:.0%} of its letters heard)")
-        clips.append(best)
+        if not best[3]:
+            raise TakeRejected(f"voice: beat {i + 1} came out garbled ({best[4]:.1f} s with none of its words)")
+        clips.append(best[:3])
     pieces = [np.zeros(int(LEAD_IN * SAMPLE_RATE), np.float32)]
     t, words = LEAD_IN, []
     for index, (beat, (audio, beat_words, _)) in enumerate(zip(short.beats, clips)):

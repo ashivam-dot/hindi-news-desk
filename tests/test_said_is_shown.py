@@ -128,7 +128,8 @@ def test_a_surname_alone_still_shows_the_person():
              {"say": "रविवार को जुहू में फायरिंग के वक्त टाइगर के साथ सुरक्षाकर्मी थे।"},
              {"say": "फडणवीस ने कहा कि किसी भी दोषी को बख्शा नहीं जाएगा।"}]
     rows = anchored(beats, [0, 1], cast, TIGER_SPELT)
-    assert views_of(rows) == [[0], [3], [5, 1], [3]] and rows[2]["cut_word"] == "टाइगर"
+    # Beat 3 names Tiger, who has a photo: his photo, never Juhu's map first (2026-10-22; once [5, 1] cut on टाइगर).
+    assert views_of(rows) == [[0], [3], [1], [3]] and rows[2]["cut_word"] == ""
 
 
 KOTA = ["टाइगर श्रॉफ की कार पर फायरिंग हुई और वे सुरक्षित बचे।",
@@ -156,9 +157,10 @@ def test_beats_about_nobody_are_cards_not_a_place_already_shown():
     cast = [{"en": "Kota", "hi": "कोटा", "kind": "place", "photos": [2], "near": [3]},
             {"kind": "police", "hi": "मुंबई", "photos": [4]}]
     rows = anchored([{"say": t} for t in KOTA], [0, 1], cast, TIGER_SPELT)
-    # Kota's maps only where Kota is said; the injured line is a card, not Kota or the police.
-    assert [k for k, r in enumerate(rows) if r["plate"] != match.CARD and set(r["views"]) & {2, 3}] == [1, 2]
-    assert rows[5]["plate"] == match.CARD
+    # Both Kota lines name the arrest or the police too, so not where it happened: the police photo, never Kota's
+    # map (2026-10-22; once Kota's maps under beats 2 and 3). The injured line is a card, not Kota or the police.
+    assert [k for k, r in enumerate(rows) if set(r["views"]) & {2, 3}] == []
+    assert rows[1]["views"] == rows[2]["views"] == [4] and rows[5]["plate"] == match.CARD
 
 
 def test_a_festival_is_pictured_as_itself_never_as_a_ground_named_after_it(monkeypatch):
@@ -206,8 +208,11 @@ def test_a_beat_that_names_the_storys_person_opens_on_them():
     beats = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दशहरा कार्यक्रम में शामिल हुए।"},
              {"say": "आयोजन दिल्ली में हुआ।"},
              {"say": "नरेन्द्र मोदी ने दिल्ली में राम राज्य का जिक्र किया।"}, {"say": "मोदी ने भाषण दिया।"}]
-    rows = anchored(beats, [0, 1, 2], cast, MODI_SPELT)  # (a fourth beat: 1.5 map beats of 3 is over MAP_SHARE)
-    assert views_of(rows)[:3] == [[0], [5], [1, 5]] and rows[2]["cut_word"] == "दिल्ली"
+    rows = anchored(beats, [0, 1, 2], cast, MODI_SPELT)
+    # Beat 3 names Modi: his photo and no cut to Delhi's map (2026-10-22). Beat 2's map would be one of three picture
+    # beats, over match.MAP_SHARE (20%): a card (once [[0], [5], [1, 5]]).
+    assert views_of(rows)[:3] == [[0], None, [1]] and rows[2]["cut_word"] == ""
+    assert not any(5 in r["views"] for r in rows)
 
 
 DUSSEHRA_BEATS = [{"say": "प्रधानमंत्री नरेन्द्र मोदी दिल्ली में दशहरा के कार्यक्रम में शामिल हुए।", "photo": 0},
@@ -220,7 +225,9 @@ DUSSEHRA_BEATS = [{"say": "प्रधानमंत्री नरेन्�
 
 def test_the_title_before_the_storys_person_names_them():
     assert visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी") == ["प्रधानमंत्री"]
-    assert visuals.titles(DUSSEHRA_BEATS[:1], "नरेन्द्र मोदी") == []
+    # A title said once is learned only for a FIGURE's own (things.ROLES): Modi is the प्रधानमंत्री.
+    assert visuals.titles(DUSSEHRA_BEATS[:1], "नरेन्द्र मोदी") == ["प्रधानमंत्री"]
+    assert visuals.titles([{"say": "अभिनेता टाइगर श्रॉफ मुम्बई में थे।"}], "टाइगर श्रॉफ") == []
     assert visuals.titles([{"say": "इस पर नरेन्द्र मोदी बोले।"}, {"say": "इस पर नरेन्द्र मोदी चुप रहे।"}],
                           "नरेन्द्र मोदी") == []
 
@@ -230,9 +237,9 @@ def test_a_city_every_line_names_does_not_stand_under_every_beat():
     ramlila = {"en": "Ramlila", "hi": "राम लीला", "kind": "topic", "photos": [7, 8], "alias": ["राम लीलाओं"]}
     spelt = MODI_SPELT + visuals.titles(DUSSEHRA_BEATS, "नरेन्द्र मोदी")
     views = views_of(anchored(DUSSEHRA_BEATS, [0, 1, 2], [delhi, ramlila], spelt))
-    # Delhi is named in five of six lines: it is the cut, never the main picture, except where it alone is named.
-    # Beat 5's Delhi cut would put maps at 2.5 of 6 beats, over MAP_SHARE: plan drops the latest map cut.
-    assert [v[0] for v in views] == [0, 6, 7, 1, 8, 2] and [len(v) for v in views] == [2, 1, 1, 2, 1, 1]
+    # Delhi is named in five of six lines: its map only under the one line where it alone is named (one map a
+    # Short, never a cut: 2026-10-22; once Delhi cuts under beats 1 and 4 and its close map under beat 2).
+    assert views == [[0], [5], [7], [1], [8], [2]]
     assert views[5][0] in (0, 1, 2)  # "प्रधानमंत्री" names him: his photo, not a city map
 
 
@@ -285,7 +292,9 @@ def test_the_police_photo_waits_for_the_police_beat():
              {"say": "पुलिस अब अन्य फिल्मी हस्तियों के घरों की सुरक्षा की जांच कर रही है।"},
              {"say": "आरोपियों से पूछताछ कर हमले की वजह जानने की कोशिश जारी है।"}]
     rows = anchored(beats, [0, 1, 2], [juhu, police], TIGER_SPELT)
-    assert views_of(rows) == [[0], [8], None, [10], [10]]  # AICWA's claim: a card, not the police
+    # AICWA's claim: a card, not the police. Juhu's map would be one of four picture beats, over match.MAP_SHARE
+    # (20%): a card too (2026-10-22; once [8]), and two cards of five is over the ceiling, so the gate sends it back.
+    assert views_of(rows) == [[0], None, None, [10], [10]]
 
 
 def test_photos_shown_lately_go_last(monkeypatch):
