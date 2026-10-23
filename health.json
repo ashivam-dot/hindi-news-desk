@@ -1,28 +1,29 @@
 {
- "at": "2026-10-23T14:18:30+00:00",
+ "at": "2026-10-23T15:02:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 79 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.218, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16}, 'category:attack': {'n': 13, 'lift': 1.293, 'typical_views_24h': 76, 'n_retention': 5, 'typical_view_pct': 49.8}, 'category:diplomacy': {'n': 4, 'lift': 1.157, 'typical_views_24h': 49",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 20 trending",
-  "outlets: 1466 headlines from 31 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261023-taiwan-cyclone, nw-20261023-jordan-attack",
-  "explainers: 6 kh- stories (on): kh-20261023-Q5276830, kh-20261023-Q140632219, kh-20261023-Q3520087, kh-20261023-Q7199798; dropped: explainer WhatsApp: fewer than 3 owners' headlines name it and the story; explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by; explainer DK Shivakumar: fewer than 3 owners' headlines name it and the story",
+  "watch: 14 candidates from 19 trending",
+  "outlets: 1468 headlines from 31 feeds (19 owners), 13 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261023-jordan-attack, nw-20261023-taiwan-cyclone",
+  "explainers: 4 kh- stories (on): kh-20261023-Q140632219, kh-20261023-Q3520087, kh-20261023-Q1340361, kh-20261023-Q51993; dropped: explainer WhatsApp: fewer than 3 owners' headlines name it and the story; explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by; explainer Diljit Dosanjh: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q1699148: 50 h old and no longer trending live",
-  "drop nw-20261023-taiwan-cyclone: too low in Google News India's top stories (place 0.06, needs 0.35)",
-  "drop nw-20261023-jordan-attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "drop kh-20261023-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wk-Q1699148: 51 h old and no longer trending live",
+  "drop nw-20261023-taiwan-cyclone: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop wk-Q452431: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261023-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop wp-2026_Al-Karak_church_shooting: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261023-Q51993: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261023-Q140632219-p2, nw-20261023-jordan-attack; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261023-Q3520087",
-  "published kh-20261023-Q3520087: https://www.youtube.com/shorts/uxl0oMCqYs0",
-  "channel: about: done; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261023-Q140632219-p2, wp-2026_Al-Karak_church_shooting; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "published kh-20261023-Q140632219-p2: https://www.youtube.com/shorts/xJsZR0dPNTQ",
+  "channel: about, playlists done; nothing left to do"
  ],
  "published": {
-  "video_id": "uxl0oMCqYs0",
-  "url": "https://www.youtube.com/shorts/uxl0oMCqYs0",
-  "youtube_title": "भारत तिब्बत सीमा पुलिस बोली, सीमा पर हलचल बढ़ी #shorts #hindinews",
+  "video_id": "xJsZR0dPNTQ",
+  "url": "https://www.youtube.com/shorts/xJsZR0dPNTQ",
+  "youtube_title": "नेहा बोरा को दिल्ली हाई कोर्ट से झटका, याचिका खारिज #shorts #nehabora",
   "privacy": "public",
   "synthetic_declared": true
  }
