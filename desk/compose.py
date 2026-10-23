@@ -77,6 +77,9 @@ def _ease(u: float) -> float:
     return u * u * (3 - 2 * u)
 
 
+PANORAMA = 1.8  # a photo wider than this (width / height) is shown whole instead of filling the frame
+
+
 class Plate:
     """One photo prepared for camera moves: RGB and depth at plate size (the frame, or a bulletin's photo window)."""
 
@@ -89,8 +92,10 @@ class Plate:
         pw, ph = round(tw * MARGIN), round(th * MARGIN)
         iw, ih = img.size
         focus = photo.get("focus")
-        # Fill the plate unless the photo is far wider than it (a panorama is shown whole on a blurred copy).
-        if focus or iw / ih <= max(0.9, 1.6 * tw / th):
+        # Fill the plate unless the photo is a panorama (shown whole on a blurred copy). The bound was 0.9 for a 9:16
+        # frame, so every landscape news photo sat as a band across the middle (owner, 2026-10-23: the reference
+        # channel's photos fill the screen).
+        if focus or iw / ih <= max(PANORAMA, 1.6 * tw / th):
             if focus:
                 fx, fy, fw, fh = focus
                 cx, cy = fx + fw / 2, fy + fh / 2
@@ -1224,7 +1229,10 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
 # a chip that pops up and goes, big subtitles, and a short silent follow card. Text stays above YouTube's own title
 # and buttons, which cover the bottom fifth of a Short.
 FULL_FACE = 0.24  # a portrait's face this share of the frame height
-FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.555, 0.505, 0.565, 0.715, 0.785
+# The headline bar (owner, 2026-10-23: "take reference of chaukanna news"; its Shorts that reach 1-3K views keep the
+# story's headline on a yellow bar under the captions from the first frame to the last). Everything above it moved up.
+FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.47, 0.385, 0.43, 0.595, 0.785
+FULL_BAR_Y = 0.648  # the bar's top; it ends by about 0.74, above YouTube's own title and buttons
 FULL_CAPTION_SIZE = 84
 NAME_HOLD, CHIP_HOLD = 2.6, match.CHIP_HOLD  # seconds a name strap and a fact chip stay up
 END_HOLD = 1.2  # seconds of follow card after the last word
@@ -1271,6 +1279,33 @@ def name_straps(seen: list[dict], photos: list[dict]) -> dict[int, float]:
             named.add(who)
             out[v] = view["start"]
     return out
+
+
+def headline_of(title: str) -> str:
+    """The title as the bar shows it: no hashtags."""
+    return re.sub(r"\s*#\S+", "", title or "").strip()
+
+
+def _bar_layer(title: str) -> tuple[np.ndarray, np.ndarray] | None:
+    """The headline bar: the title on at most two lines, dark on the channel's gold, a red edge on the left."""
+    text = drawable(headline_of(title), "ExtraBold")
+    if not text:
+        return None
+    width = W - 72 - 40 - 18
+    rows = wrap2(text, "ExtraBold", 52, width)
+    fonts = [_fit("ExtraBold", 52, r, width, 34) for r in rows]
+    tall = [f.getbbox(r)[3] - f.getbbox(r)[1] for f, r in zip(fonts, rows)]
+    bh = 26 + sum(tall) + 16 * (len(rows) - 1) + 26
+    img = Image.new("RGBA", (W - 72, bh), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, img.width - 1, bh - 1), radius=10, fill=NEWS_GOLD + (250,))
+    d.rectangle((0, 0, 14, bh - 1), fill=NEWS_RED + (255,))
+    y = 26
+    for r, f, t in zip(rows, fonts, tall):
+        b = f.getbbox(r)
+        d.text((14 + 22 - b[0], y - b[1]), r, font=f, fill=NEWS_NAVY + (255,))
+        y += t + 16
+    return _rgba(img)
 
 
 def _end_full(accent: tuple, disclosure_text: str) -> list[tuple[np.ndarray, np.ndarray] | None]:
@@ -1332,6 +1367,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
              for k in range(len(shots))]
     backs = {k: card_backdrop(None if plain[k] else plates[b["photo"]].rgb) for k, b in enumerate(shots) if card[k]}
     strip = _strip_layer(label_for(short), NEWS_RED)
+    bar = _bar_layer(short.title)
     badge = _badge_layer()
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
     names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
@@ -1444,6 +1480,8 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
                              cv2.resize(layer[1], (max(1, round(w * s)), max(1, round(h * s))))[..., None])
                 y = round(H * FULL_CHIP_Y) - (0 if not split else round(H * 0.06))
                 _blit(frame, layer, 36, y, max(0.0, a))
+            if bar is not None:
+                _blit(frame, bar, 36, round(H * FULL_BAR_Y), 0.97)
             captions.draw(frame, t)
         if strip is not None:
             _blit(frame, strip, 36, top_y, 0.96)

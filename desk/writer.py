@@ -41,8 +41,10 @@ CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस�
 # median and those over 60 s fewer (TrendReport, 3.48M Shorts, 2025-26); the 45-50 s Kyun Hua Shorts padded the
 # news with biography and "no response" lines to fill 95-120 words (owner, 2026-10-21).
 # The first dry run of the full template (2026-10-21) passed 90 words in five 18-word beats: 40 s.
-MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 52, 82, 18
-WORDS_ASKED = "60 to 80"
+# 2026-10-23: about 20-25 s. The reference channel's (Chaukanna News) Shorts that reach 1-3K views run 15-26 s; ours
+# ran 31-35 s at the narrator's measured 2.3 words a second.
+MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 40, 62, 14
+WORDS_ASKED = "45 to 58"
 DRAFTS = 4
 HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
 PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
