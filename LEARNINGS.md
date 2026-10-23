@@ -1,37 +1,37 @@
 # What this channel's own numbers say
 
-Updated 2026-10-22T21:37:11+00:00. Scored Shorts (views at 24 h): 74. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-23T01:17:48+00:00. Scored Shorts (views at 24 h): 74. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 43 views at 24 h.
-Retention: a typical Short is watched 41.1% through; a group's retention is blended into its lift at 0.5.
+Retention: a typical Short is watched 40.9% through; a group's retention is blended into its lift at 0.5.
 - category:attack: x1.35 ranking lift (13 Shorts, typical 76 views)
-- category:aviation: x1.228 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
-- category:court: x1.214 ranking lift (6 Shorts, typical 70 views; 6 with retention, typically 49.0% watched)
-- region:india: x1.07 ranking lift (41 Shorts, typical 48 views; 26 with retention, typically 43.6% watched)
+- category:aviation: x1.23 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
+- category:court: x1.221 ranking lift (6 Shorts, typical 70 views; 6 with retention, typically 49.8% watched)
+- region:india: x1.066 ranking lift (41 Shorts, typical 48 views; 26 with retention, typically 43.0% watched)
 - category:diplomacy: x1.06 ranking lift (4 Shorts, typical 49 views)
-- lane:naam-niyam: x1.012 ranking lift (20 Shorts, typical 39 views; 14 with retention, typically 47.7% watched)
+- lane:naam-niyam: x1.018 ranking lift (20 Shorts, typical 39 views; 14 with retention, typically 48.3% watched)
 - lane:sensitive: x1.0 ranking lift (11 Shorts, typical 91 views)
-- category:news: x0.947 ranking lift (18 Shorts, typical 36 views; 13 with retention, typically 42.8% watched)
-- region:world: x0.895 ranking lift (29 Shorts, typical 34 views; 26 with retention, typically 40.6% watched)
-- category:world: x0.852 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.1% watched)
-- category:economy: x0.846 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 36.2% watched)
-- lane:other: x0.75 ranking lift (11 Shorts, typical 15 views; 10 with retention, typically 29.9% watched)
+- category:news: x0.948 ranking lift (18 Shorts, typical 36 views; 13 with retention, typically 42.8% watched)
+- region:world: x0.899 ranking lift (29 Shorts, typical 34 views; 26 with retention, typically 40.8% watched)
+- category:world: x0.853 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.1% watched)
+- category:economy: x0.845 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 35.9% watched)
+- lane:other: x0.75 ranking lift (11 Shorts, typical 15 views; 10 with retention, typically 28.8% watched)
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 2 |  |  |
-| kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 19 | 10 |  |
+| kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 5 | 3 |  |
+| kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 21 | 10 |  |
 | nw-20261021-priyanka-gandhi-protest | 2026-10-22T05:08 | protest | india | other | india | 52 | 10 |  |
 | kh-20261022-Q79883 | 2026-10-22T03:50 | news | world | other | india | 25 | 8 |  |
-| kh-20261022-Q324546 | 2026-10-22T03:10 | news | world | naam-niyam | india | 40 | 15 |  |
-| nw-20261021-jantar-mantar-protest | 2026-10-22T02:16 | protest | india | other | india | 33 | 6 |  |
+| kh-20261022-Q324546 | 2026-10-22T03:10 | news | world | naam-niyam | india | 44 | 15 |  |
+| nw-20261021-jantar-mantar-protest | 2026-10-22T02:16 | protest | india | other | india | 34 | 6 |  |
 | nw-20261019-tiger-shroff-attack-film-security | 2026-10-21T07:42 | attack | india | sensitive | india | 0 | 0 | 0 |
 | nw-20261019-tiger-shroff-attack-opposition | 2026-10-21T06:42 | attack | india | sensitive | india | 282 | 99 | 282 |
-| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | sensitive | india | 823 | 286 | 719 |
+| nw-20261019-tiger-shroff-attack-government | 2026-10-21T05:12 | attack | india | sensitive | india | 824 | 286 | 719 |
 | kh-20261021-Q1353 | 2026-10-21T04:33 | news | india | naam-niyam | india | 1 | 1 | 1 |
 | nw-20261019-tiger-shroff-attack-incident | 2026-10-21T03:50 | attack | india | sensitive | india | 18 | 16 | 19 |
 | nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | sensitive | india | 44 | 15 | 43 |
-| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | sensitive | india | 128 | 38 | 115 |
+| nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | sensitive | india | 130 | 38 | 115 |
 | nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | sensitive | india | 1064 | 518 | 1065 |
 | nw-20261019-tiger-shroff-attack-family | 2026-10-20T17:33 | attack | india | sensitive | india | 732 | 142 | 734 |
 | kh-20261020-Q16186720-p2 | 2026-10-20T14:25 | diplomacy | india | naam-niyam | india | 16 | 7 | 11 |
