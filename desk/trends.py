@@ -410,6 +410,7 @@ def radar(today: date | None = None) -> dict:
     if lists is None:
         errors.append("top stories: no Google News India list could be read (no story is ranked by place)")
     top.mark(out, lists)
+    top.hindi_outlets(out, read, datetime.now(timezone.utc))
     out.sort(key=lambda c: -c["fame"])
     return {"at": datetime.now(timezone.utc).isoformat(timespec="seconds"), "candidates": out, "errors": errors,
             "scanned": len(hits), "emerging": emerging, "explainers": explainers, "explainer_notes": notes[:8],
