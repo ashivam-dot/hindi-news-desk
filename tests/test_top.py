@@ -64,6 +64,56 @@ def test_only_top_stories_go_out():
     assert plan.unpopular(film | {"top": {"IN": 3}, "top_score": 0.9}, NOW) is None
 
 
+
+# Run 39986208316 (2026-10-23): the desk's own Siwan story had no Hindi label, so the Hindi list's second story and
+# three Hindi newsrooms' feeds could not name it.
+SIWAN = {"id": "nw-20261023-bihar-siwan-explosion", "kind": "incident", "category": "explosion", "name": "Bihar Siwan",
+         "qid": None, "label_hi": None, "hindi_headlines": [], "fame": 100_000, "news_at": NOW.isoformat(),
+         "headlines": ["4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan"]}
+PARIS = {"id": "nw-20261023-paris-attack", "kind": "incident", "category": "attack", "name": "Paris", "qid": None,
+         "label_hi": None, "hindi_headlines": [], "fame": 75_000, "news_at": NOW.isoformat(),
+         "headlines": ["France: 1 killed, 4 wounded after shooting near Paris"]}
+
+
+def test_a_hindi_headline_names_an_incident_by_its_place_spelt_in_devanagari():
+    lists = {"IN": [], "IN-nation": [], "IN-hi-nation": [], "IN-hi": [
+        lead("IN-hi", 2, "सिवान में अवैध पटाखा भंडार में भीषण विस्फोट: 3 लोगों की मौत, कई लापता"),
+        lead("IN-hi", 4, "घाटी से आतंकवाद के खात्मे की पूरी तैयारी: जम्मू-कश्मीर में महा-ऑपरेशन शुरू"),
+        lead("IN-hi", 6, "ITBP चीफ बोले- अरुणाचल में चीन से झड़पें हुईं, फोकस ड्रोन फोर्स पर")]}
+    siwan, paris = dict(SIWAN), dict(PARIS)
+    top.mark([siwan, paris], lists)
+    assert siwan["top"] == {"IN-hi": 2} and siwan["top_score"] > plan.MIN_PLACE
+    assert paris["top"] == {}  # ऑपरेशन and a late फोर्स are no "Paris"
+    assert top.names_incident("बिहार के सीवान में पटाखों के धमाकों से दहला गांव", SIWAN)  # सीवान, धमाका
+    assert top.names_incident("Siwan News: सिवान में पटाखा बनाते समय विस्फोट", SIWAN)
+    assert not top.names_incident("सिवान में सड़क चौड़ीकरण का काम शुरू", SIWAN)  # Siwan, but no blast
+    assert not top.names_incident("सिवान में भीषण विस्फोट", SIWAN | {"kind": "explainer"})
+
+
+def hindi_item(owner, title, hours, group="Hindi"):
+    return {"owner": owner, "title": title, "group": group, "lang": "hi",
+            "at": (NOW - timedelta(hours=hours)).isoformat()}
+
+
+def test_three_hindi_newsrooms_in_six_hours_make_a_story_trending_in_india():
+    items = [hindi_item("India Today Group", "बिहार के सीवान में पटाखों के धमाकों से दहला गांव, 4 की मौत", 2.9),
+             hindi_item("TV9 Network", "सिवान में पटाखा बनाते समय विस्फोट, 4 की मौत", 2.9),
+             hindi_item("NDTV", "सिवान में पटाखा बनाते समय फैक्ट्री में बड़ा धमाका", 3.5),
+             hindi_item("Amar Ujala", "बिहार: सीवान में पटाखा फैक्टरी में भीषण विस्फोट", 16),  # too old
+             hindi_item("Government of India", "सिवान में विस्फोट पर बयान", 1, group="official"),
+             hindi_item("NDTV", "पेरिस के पास हुई गोलीबारी में एक की मौत", 4.7)]
+    unlisted = {"top": {}, "top_score": 0}
+    siwan, paris = SIWAN | unlisted, PARIS | unlisted
+    top.hindi_outlets([siwan, paris], items, NOW)
+    assert siwan["hindi_owners"] == ["India Today Group", "TV9 Network", "NDTV"]
+    assert plan.unpopular(siwan, NOW) is None
+    assert paris["hindi_owners"] == ["NDTV"] and "not in Google News India" in plan.unpopular(paris, NOW)
+    two = siwan | {"hindi_owners": siwan["hindi_owners"][:2]}
+    assert "not in Google News India" in plan.unpopular(two, NOW)
+    film = {"id": "kh-9", "kind": "explainer", "category": "entertainment", "top": {}, "top_score": 0,
+            "hindi_owners": ["a", "b", "c"]}
+    assert "top-10" in plan.unpopular(film, NOW)  # sport and film still need a top-10 place
+
 def test_the_top_story_outranks_a_bigger_random_one():
     at = NOW
     lead_story = {"id": "kh-1", "kind": "explainer", "fame": 100_000, "news_at": at.isoformat(), "top_score": 1.0}

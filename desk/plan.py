@@ -32,7 +32,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import hindi, ledger, news, orbitwire, outlets, trends, usgs
+from . import hindi, ledger, news, orbitwire, outlets, top, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -66,7 +66,9 @@ INDIA_BOOST, LINK_BOOST = 1.6, 1.25
 QUAKE_BIG_MAG = 7.0
 COOLDOWN_DAYS = {"protest": 6, "movement": 6}
 # Owner, 2026-10-15: only the most popular news. A story must be in Google News India's top stories (desk/top.py),
-# trending in India's searches, breaking, or very famous; the higher its place, the sooner it goes out.
+# trending in India's searches, breaking, or very famous; the higher its place, the sooner it goes out. 2026-10-23: or
+# led by top.HINDI_OWNERS Hindi newsrooms' own feeds within top.HINDI_WINDOW_H (the Siwan blast, dropped while Aaj
+# Tak, NDTV India and TV9 led with it).
 TOP_WEIGHT = 2.0
 # Sport and film stories qualify only this high in the lists (about top 10 of a front page).
 TOP_ONLY_SCORE = 0.55
@@ -400,10 +402,13 @@ def unpopular(cand: dict, at: datetime) -> str | None:
             f"a {cand['category']} story goes out only when it is a top-10 story (place {place:.2f})"
     if "IN" in (cand.get("geos") or []) and cand.get("traffic", 0) > 0 or is_breaking(cand, at):
         return None
+    if len(cand.get("hindi_owners") or []) >= top.HINDI_OWNERS:
+        return None
     if cand.get("kind") != "explainer" and cand.get("fame", 0) >= BREAKING_FAME:
         return None
     if place <= 0:
-        return "not in Google News India's top stories (English or Hindi), India's searches, breaking or famous"
+        return ("not in Google News India's top stories (English or Hindi), India's searches, "
+                f"{top.HINDI_OWNERS} Hindi newsrooms' feeds, breaking or famous")
     if place < MIN_PLACE:
         return f"too low in Google News India's top stories (place {place:.2f}, needs {MIN_PLACE})"
     if demand(cand) < LOW_DEMAND and place < LOW_DEMAND_PLACE:
