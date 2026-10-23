@@ -1,5 +1,5 @@
 {
- "at": "2026-10-23T16:28:41+00:00",
+ "at": "2026-10-23T17:13:37+00:00",
  "trending": [
   {
    "id": "kh-20261023-Q140632219",
@@ -30,16 +30,18 @@
     "wrong"
    ],
    "date": "2026-10-22",
-   "news_at": "2026-10-23T16:11:46+00:00",
+   "news_at": "2026-10-23T16:44:46+00:00",
    "owners": [
     "Network18",
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
+    "The Hindu Group",
     "TV9 Network",
     "BBC",
     "India Today Group",
-    "DB Corp"
+    "DB Corp",
+    "Amar Ujala"
    ],
    "fame": 400000,
    "news": 400000,
@@ -68,6 +70,16 @@
    "india_link": true,
    "label_hi": "नेहा बोरा",
    "reports": [
+    {
+     "title": "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
+     "url": "https://www.thehindu.com/news/national/delhi-high-court-rejects-neha-boras-plea-against-police-notice-to-sign-peace-bond/article71616696.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:44:46+00:00"
+    },
     {
      "title": "Neha Bora Faces Setback: Delhi High Court Rejects Plea, Directs AISA Activist To Sign ‘Peace Bond’",
      "url": "https://www.news18.com/india/neha-bora-faces-legal-setback-delhi-high-court-rejects-her-plea-ws-l-10395044.html",
@@ -144,25 +156,34 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
+    "outlet:The Hindu Group",
     "outlet:TV9 Network",
     "outlet:BBC",
     "outlet:India Today Group",
     "outlet:DB Corp",
-    "google-news:Delhi High Court rejects plea by Neha Bora against notice to sign bond and \"maintain peace\"",
+    "outlet:Amar Ujala",
     "google-news:Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
+    "google-news:राहुल गांधी पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
     "google-news:दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील"
    ],
    "top": {
-    "IN": 2,
-    "IN-hi": 5,
-    "IN-nation": 1,
-    "IN-hi-nation": 4
+    "IN": 1,
+    "IN-hi": 7,
+    "IN-nation": 2,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.905,
+   "top_score": 1.92,
    "top_headlines": [
     "दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील",
-    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
-    "Delhi High Court rejects plea by Neha Bora against notice to sign bond and \"maintain peace\""
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "NDTV",
+    "BBC",
+    "India Today Group",
+    "HT Media",
+    "DB Corp"
    ]
   },
   {
@@ -191,7 +212,8 @@
    "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
-   "top_headlines": []
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q1699148",
@@ -220,19 +242,21 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
   },
   {
    "qid": "Q141807978",
    "title": "2026 Tibet earthquake",
-   "fame": 250000,
+   "fame": 277000,
    "views": 0,
-   "traffic": 0,
-   "news": 200000,
-   "news_at": "2026-10-23T09:34:40+00:00",
+   "traffic": 2000,
+   "news": 225000,
+   "news_at": "2026-10-23T14:05:04+00:00",
    "headlines": [
-    "Powerful earthquake in Tibet kills at least 16 people",
+    "Earthquake of magnitude 7 kills at least 16 in Tibet",
+    "Rescuers search for survivors after deadly earthquake in China’s Tibet region",
     "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
     "Powerful earthquake hits Tibet killing 16 people, reports say",
     "Earthquake Today: Magnitude 7 quake jolts Tibet killing 16; over 300 houses collapse in China's Nagqu — Top updates"
@@ -247,10 +271,11 @@
    ],
    "label_hi": "२०२६ भोट भूकम्प",
    "via": [
+    "google-trends-IN:earthquake",
     "wikipedia-current-events-2026-10-22",
-    "google-news:Powerful earthquake in Tibet kills at least 16 people",
+    "google-news:Earthquake of magnitude 7 kills at least 16 in Tibet",
+    "google-news:Rescuers search for survivors after deadly earthquake in China’s Tibet region",
     "google-news:Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-    "google-news:Powerful earthquake hits Tibet killing 16 people, reports say",
     "outlet:Guardian Media Group",
     "outlet:BBC",
     "outlet:HT Media"
@@ -301,43 +326,233 @@
     93.78
    ],
    "has_coords": true,
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Powerful earthquake in Tibet kills at least 16 people"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
    "mag": 7.0,
    "alert": "orange",
    "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
   },
   {
+   "id": "kh-20261023-Q432473",
+   "qid": "Q432473",
+   "title": "Melania Trump",
+   "name": "Melania Trump",
+   "phrase": "Melania Trump",
+   "person": true,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+   "story_keys": [
+    "broker",
+    "ceasefire",
+    "city",
+    "secure"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T16:59:51+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "BBC"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+    "Melania Trump brokers Russia-Ukraine ceasefire",
+    "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
+    "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'"
+   ],
+   "hindi_headlines": [
+    "अगर मैं दखल नहीं देती तो... मेलानिया ट्रंप ने किया रूस-यूक्रेन के एक शहर में युद्धविराम का दावा",
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "मेलानिया ट्रम्प",
+   "reports": [
+    {
+     "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+     "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T16:59:51+00:00"
+    },
+    {
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:43:49+00:00"
+    },
+    {
+     "title": "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
+     "url": "https://www.indiatoday.in/world/story/melania-trump-oleshky-ceasefire-russia-ukraine-aid-evacuation-trunce-donald-trump-3023802-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:12:04+00:00"
+    },
+    {
+     "title": "Melania Trump brokers Russia-Ukraine ceasefire",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/melania-trump-brokers-russia-ukraine-ceasefire-in-war-hit-oleshky-white-house-says/articleshow/135148161.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:04:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:BBC",
+    "google-news:मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "top": {
+    "IN-hi": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261023-Q1826411",
+   "qid": "Q1826411",
+   "title": "Line of Actual Control",
+   "name": "Line of Actual Control",
+   "phrase": "LAC",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+   "story_keys": [
+    "patrolling"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T17:01:42+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+    "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+    "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "वास्तविक नियंत्रण रेखा",
+   "reports": [
+    {
+     "title": "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+     "url": "https://www.thehindu.com/news/national/mea-india-china-lac-border-situation-itbp-dg-remarks-arunachal/article71616229.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:01:42+00:00"
+    },
+    {
+     "title": "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+     "url": "https://www.hindustantimes.com/india-news/lac-situation-disturbed-when-chinese-troops-diverge-from-patrolling-patterns-india-says-101792769158499.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:25:58+00:00"
+    },
+    {
+     "title": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+     "url": "https://www.news18.com/india/mea-remark-itbp-chief-shatrujeet-singh-kapoor-china-border-face-offs-arunachal-pradesh-ws-l-10394962.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:17:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "nw-20261023-jordan-attack",
    "qid": null,
-   "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+   "title": "Several killed, dozens wounded in Jordan church shooting",
    "name": "Jordan",
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T16:11:00+00:00",
+   "news_at": "2026-10-23T15:06:59+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
     "France Médias Monde",
-    "India Today Group",
-    "BBC"
+    "India Today Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Gunmen open fire inside church in Jordan, 6 killed",
     "At least seven killed after gunmen open fire at church in Jordan",
     "Several killed, dozens wounded in Jordan church shooting",
-    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on",
-    "Seven shot dead by gunmen at church funeral in Jordan, officials say"
+    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -348,16 +563,6 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
-    {
-     "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-     "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T16:11:00+00:00"
-    },
     {
      "title": "Several killed, dozens wounded in Jordan church shooting",
      "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
@@ -403,130 +608,41 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:BBC"
+    "outlet:India Today Group"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 12
+    "IN": 14,
+    "IN-hi": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.675,
    "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला",
     "At least seven killed after gunmen open fire at church in Jordan"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "India Today Group",
+    "NDTV"
    ],
    "audience": "world",
    "lane": "sensitive"
   },
   {
-   "id": "nw-20261023-taiwan-cyclone",
-   "qid": null,
-   "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-   "name": "Taiwan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T12:17:20+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "BBC",
-    "Network18",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
-    "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
-    "Typhoon Champi unleashes huge waves along Taiwan’s coast"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "region": "world",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-     "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T08:45:58+00:00"
-    },
-    {
-     "title": "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
-     "url": "https://www.dw.com/en/taiwan-braces-as-el-nino-supercharged-typhoon-champi-approaches-island/a-79738819?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T06:40:00+00:00"
-    },
-    {
-     "title": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T12:17:20+00:00"
-    },
-    {
-     "title": "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
-     "url": "https://www.news18.com/india/typhoon-champi-taiwan-braces-for-powerful-winds-and-heavy-rain-as-storm-heads-towards-china-japan-shil-ws-l-10394584.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T09:56:07+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:BBC",
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-nation": 17
-   },
-   "top_score": 0.12,
-   "top_headlines": [
-    "City may receive heavy rain from today",
-    "Odisha cyclone alert: IMD issues red warning for heavy rain in 5 districts"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "id": "nw-20261023-bihar-siwan-explosion",
    "qid": null,
-   "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+   "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
    "name": "Bihar Siwan",
    "kind": "incident",
    "category": "explosion",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T16:03:53+00:00",
+   "news_at": "2026-10-23T17:10:10+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "Network18"
+    "Network18",
+    "The Hindu Group"
    ],
    "fame": 100000,
    "news": 100000,
@@ -535,8 +651,8 @@
    "headlines": [
     "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
     "4 dead as blast rips through house storing firecrackers in Bihar village",
-    "At least four dead in blast in Bihar’s Siwan district",
-    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended"
+    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+    "At least four killed in blast at house storing firecrackers in Bihar’s Siwan"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -548,6 +664,16 @@
    "label_hi": null,
    "reports": [
     {
+     "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:10:10+00:00"
+    },
+    {
      "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
      "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
      "outlet": "News18",
@@ -556,16 +682,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-23T16:03:53+00:00"
-    },
-    {
-     "title": "At least four dead in blast in Bihar’s Siwan district",
-     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:41:43+00:00"
     },
     {
      "title": "4 dead as blast rips through house storing firecrackers in Bihar village",
@@ -591,111 +707,20 @@
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:The Hindu Group"
    ],
    "emerging": true,
    "article": null,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV"
+   ],
    "audience": "india",
    "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261023-Q432473",
-   "qid": "Q432473",
-   "title": "Melania Trump",
-   "name": "Melania Trump",
-   "phrase": "Melania Trump",
-   "person": true,
-   "kind": "explainer",
-   "category": "defence",
-   "category_hi": "रक्षा",
-   "story": "Melania Trump brokers Russia-Ukraine ceasefire",
-   "story_keys": [
-    "broker",
-    "ceasefire",
-    "city",
-    "secure"
-   ],
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T15:48:04+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV",
-    "BBC"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Melania Trump brokers Russia-Ukraine ceasefire",
-    "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
-    "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
-    "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "मेलानिया ट्रम्प",
-   "reports": [
-    {
-     "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-     "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T15:48:04+00:00"
-    },
-    {
-     "title": "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
-     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:26:03+00:00"
-    },
-    {
-     "title": "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
-     "url": "https://www.indiatoday.in/world/story/melania-trump-oleshky-ceasefire-russia-ukraine-aid-evacuation-trunce-donald-trump-3023802-2026-10-23?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:12:04+00:00"
-    },
-    {
-     "title": "Melania Trump brokers Russia-Ukraine ceasefire",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/melania-trump-brokers-russia-ukraine-ceasefire-in-war-hit-oleshky-white-house-says/articleshow/135148161.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T14:04:01+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:BBC"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": "Q452431",
@@ -724,6 +749,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
   },
@@ -734,7 +760,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-10-23T16:28:41.012895+00:00",
+   "news_at": "2026-10-23T17:13:37.492939+00:00",
    "headlines": [
     "Jordan: Karak church shooting leaves 7 dead, dozens injured"
    ],
@@ -773,14 +799,102 @@
    "coords": null,
    "has_coords": false,
    "top": {
-    "IN": 12
+    "IN": 14,
+    "IN-hi": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.675,
    "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला",
     "At least seven killed after gunmen open fire at church in Jordan"
+   ],
+   "hindi_owners": [
+    "NDTV"
    ],
    "audience": "world",
    "lane": "sensitive"
+  },
+  {
+   "id": "nw-20261023-taiwan-cyclone",
+   "qid": null,
+   "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+   "name": "Taiwan",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T09:56:07+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "BBC",
+    "Network18"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
+    "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "region": "world",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+     "url": "https://www.bbc.co.uk/news/articles/cw98zn304zg7o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T08:45:58+00:00"
+    },
+    {
+     "title": "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
+     "url": "https://www.dw.com/en/taiwan-braces-as-el-nino-supercharged-typhoon-champi-approaches-island/a-79738819?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T06:40:00+00:00"
+    },
+    {
+     "title": "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
+     "url": "https://www.news18.com/india/typhoon-champi-taiwan-braces-for-powerful-winds-and-heavy-rain-as-storm-heads-towards-china-japan-shil-ws-l-10394584.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T09:56:07+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:Network18"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Cyclonic storm likely by October 26; heavy rain in Coastal Andhra from October 27: IMD",
+    "City may receive heavy rain from today"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "id": "nw-20261023-paris-attack",
@@ -855,6 +969,9 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
    "audience": "world",
    "lane": "sensitive"
   },
@@ -964,6 +1081,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
@@ -1054,13 +1172,14 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 1,
-    "IN-nation": 2
+    "IN": 2,
+    "IN-nation": 3
    },
-   "top_score": 1.285,
+   "top_score": 1.22,
    "top_headlines": [
     "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
-   ]
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261023-Q51993",
@@ -1139,8 +1258,104 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261023-Q464185",
+   "qid": "Q464185",
+   "title": "Daler Mehndi",
+   "name": "Daler Mehndi",
+   "phrase": "Daler Mehndi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+   "story_keys": [
+    "apology",
+    "mika",
+    "row"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T15:36:49+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+    "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+    "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+    "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "दलेर मेंहदी",
+   "reports": [
+    {
+     "title": "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/daler-mehndi-uttarakhand-concert-row-mika-singh-reveals-brother-broke-down-crying-subodh-unniyal-3023828-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:36:49+00:00"
+    },
+    {
+     "title": "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/mika-singh-says-cm-dhami-apologised-on-behalf-of-bjp-mla-in-daler-mehndi-row-3023778-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:08:22+00:00"
+    },
+    {
+     "title": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/mika-singh-slams-uttarakhand-minister-subodh-uniyal-over-daler-mehndi-row-and-demands-apology-says-an-artist-deserves-dignity-regardless-of-the-circumstances/articleshow/135146325.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:47:03+00:00"
+    },
+    {
+     "title": "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+     "url": "https://www.hindustantimes.com/india-news/pushkar-singh-dhami-reaches-out-to-daler-mehndi-mika-singh-insists-on-minister-s-apology-101792758600411.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:29:59+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q141808612",
@@ -1171,6 +1386,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   },
@@ -1201,155 +1417,8 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q1889124",
-   "title": "Richard Riehle",
-   "fame": 10326,
-   "views": 10326,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1889124",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  },
-  {
-   "qid": "Q19729623",
-   "title": "Napoleon Bonaparte (police officer)",
-   "fame": 9763,
-   "views": 9763,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q19729623",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q28151642",
-   "title": "Kwame Dzokoto",
-   "fame": 9061,
-   "views": 9061,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q28151642",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q51641814",
-   "title": "Ann Hornaday",
-   "fame": 8519,
-   "views": 8519,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q51641814",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6261870",
-   "title": "John Vaughan (footballer, born 1964)",
-   "fame": 7892,
-   "views": 7892,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6261870",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
    "lane": "obituary"
   },
   {
@@ -1383,36 +1452,382 @@
    "has_coords": true,
    "top": {},
    "top_score": 0.0,
-   "top_headlines": []
+   "top_headlines": [],
+   "hindi_owners": []
   }
  ],
  "candidates": [
   {
+   "id": "kh-20261023-Q1826411",
+   "qid": "Q1826411",
+   "title": "Line of Actual Control",
+   "name": "Line of Actual Control",
+   "phrase": "LAC",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+   "story_keys": [
+    "patrolling"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T17:01:42+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+    "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+    "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "वास्तविक नियंत्रण रेखा",
+   "reports": [
+    {
+     "title": "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+     "url": "https://www.thehindu.com/news/national/mea-india-china-lac-border-situation-itbp-dg-remarks-arunachal/article71616229.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:01:42+00:00"
+    },
+    {
+     "title": "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+     "url": "https://www.hindustantimes.com/india-news/lac-situation-disturbed-when-chinese-troops-diverge-from-patrolling-patterns-india-says-101792769158499.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:25:58+00:00"
+    },
+    {
+     "title": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+     "url": "https://www.news18.com/india/mea-remark-itbp-chief-shatrujeet-singh-kapoor-china-border-face-offs-arunachal-pradesh-ws-l-10394962.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:17:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261023-Q140632219-p3",
+   "qid": "Q140632219",
+   "title": "Neha Bora",
+   "name": "Neha Bora",
+   "phrase": "Neha Bora",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+   "story_keys": [
+    "against",
+    "bond",
+    "change'",
+    "nothing",
+    "notice",
+    "peace",
+    "plea",
+    "regime",
+    "reject",
+    "seeking",
+    "setback",
+    "sign",
+    "today",
+    "verdict",
+    "wrong"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T16:44:46+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "The Hindu Group",
+    "TV9 Network",
+    "BBC",
+    "India Today Group",
+    "DB Corp",
+    "Amar Ujala"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+    "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
+    "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
+    "In Setback For Neha Bora, Court Rejects Her Challenge To Peace Bond Notice",
+    "Delhi HC rejects Neha Bora’s plea against peace bond",
+    "Neha Bora Faces Setback: Delhi High Court Rejects Plea, Directs AISA Activist To Sign ‘Peace Bond’"
+   ],
+   "hindi_headlines": [
+    "नेहा बोरा को दिल्ली हाईकोर्ट से नहीं मिली राहत, ‘पीस बॉन्ड’ को चुनौती देने वाली याचिका खारिज",
+    "पीस बॉन्ड भरना होगा; नेहा बोरा को हाई कोर्ट से भी लगा झटका, अदालत ने क्या कहा",
+    "राहुल पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
+    "नेहा बोरा को दिल्ली हाईकोर्ट से झटका, बेल बॉन्ड से जुड़ी याचिका खारिज",
+    "AISA अध्यक्ष नेहा बोरा को भरना ही पड़ेगा पीस बॉन्ड, दिल्ली हाई कोर्ट से बड़ा झटका"
+   ],
+   "hindi_news": 10,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "नेहा बोरा",
+   "reports": [
+    {
+     "title": "Delhi HC rejects Neha Bora’s plea against peace bond",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/delhi-hc-rejects-aisa-president-neha-boras-plea-against-police-peace-bond-notice/articleshow/135148422.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:26:56+00:00"
+    },
+    {
+     "title": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+     "url": "https://timesofindia.indiatimes.com/india/delhi-hc-rejects-aisa-chief-neha-boras-plea-against-police-notice-to-sign-peace-bond/articleshow/135147943.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:51:02+00:00"
+    },
+    {
+     "title": "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
+     "url": "https://www.hindustantimes.com/india-news/delhi-hc-rejects-neha-boras-plea-directs-her-to-sign-peace-bond-maintain-peace-oct-16-lehra-do-tiranga-101792762728415.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:42:39+00:00"
+    },
+    {
+     "title": "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
+     "url": "https://www.news18.com/videos/india/nothing-wrong-in-seeking-regime-change-neha-bora-in-delhi-hc-verdict-on-aisa-chief-s-plea-today-10395073.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:34:26+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:The Hindu Group",
+    "outlet:TV9 Network",
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:DB Corp",
+    "outlet:Amar Ujala",
+    "google-news:Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
+    "google-news:राहुल गांधी पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
+    "google-news:दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील"
+   ],
+   "top": {
+    "IN": 1,
+    "IN-hi": 7,
+    "IN-nation": 2,
+    "IN-hi-nation": 2
+   },
+   "top_score": 1.92,
+   "top_headlines": [
+    "दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील",
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "NDTV",
+    "BBC",
+    "India Today Group",
+    "HT Media",
+    "DB Corp"
+   ],
+   "part": 3,
+   "earlier": [
+    "नेहा बोरा के वकील ने दिल्ली हाई कोर्ट में दी दलीलें",
+    "नेहा बोरा को दिल्ली हाई कोर्ट से झटका, याचिका खारिज"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261023-Q432473",
+   "qid": "Q432473",
+   "title": "Melania Trump",
+   "name": "Melania Trump",
+   "phrase": "Melania Trump",
+   "person": true,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+   "story_keys": [
+    "broker",
+    "ceasefire",
+    "city",
+    "secure"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T16:59:51+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "BBC"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+    "Melania Trump brokers Russia-Ukraine ceasefire",
+    "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
+    "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'"
+   ],
+   "hindi_headlines": [
+    "अगर मैं दखल नहीं देती तो... मेलानिया ट्रंप ने किया रूस-यूक्रेन के एक शहर में युद्धविराम का दावा",
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "मेलानिया ट्रम्प",
+   "reports": [
+    {
+     "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+     "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T16:59:51+00:00"
+    },
+    {
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:43:49+00:00"
+    },
+    {
+     "title": "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
+     "url": "https://www.indiatoday.in/world/story/melania-trump-oleshky-ceasefire-russia-ukraine-aid-evacuation-trunce-donald-trump-3023802-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:12:04+00:00"
+    },
+    {
+     "title": "Melania Trump brokers Russia-Ukraine ceasefire",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/melania-trump-brokers-russia-ukraine-ceasefire-in-war-hit-oleshky-white-house-says/articleshow/135148161.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:04:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:BBC",
+    "google-news:मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "top": {
+    "IN-hi": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "nw-20261023-jordan-attack",
    "qid": null,
-   "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+   "title": "Several killed, dozens wounded in Jordan church shooting",
    "name": "Jordan",
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T16:11:00+00:00",
+   "news_at": "2026-10-23T15:06:59+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
     "France Médias Monde",
-    "India Today Group",
-    "BBC"
+    "India Today Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Gunmen open fire inside church in Jordan, 6 killed",
     "At least seven killed after gunmen open fire at church in Jordan",
     "Several killed, dozens wounded in Jordan church shooting",
-    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on",
-    "Seven shot dead by gunmen at church funeral in Jordan, officials say"
+    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1423,16 +1838,6 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
-    {
-     "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-     "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T16:11:00+00:00"
-    },
     {
      "title": "Several killed, dozens wounded in Jordan church shooting",
      "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
@@ -1478,17 +1883,23 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:BBC"
+    "outlet:India Today Group"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 12
+    "IN": 14,
+    "IN-hi": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.675,
    "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला",
     "At least seven killed after gunmen open fire at church in Jordan"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "India Today Group",
+    "NDTV"
    ],
    "audience": "world",
    "lane": "sensitive"
@@ -1500,7 +1911,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-10-23T16:28:41.012895+00:00",
+   "news_at": "2026-10-23T17:13:37.492939+00:00",
    "headlines": [
     "Jordan: Karak church shooting leaves 7 dead, dozens injured"
    ],
@@ -1539,14 +1950,101 @@
    "coords": null,
    "has_coords": false,
    "top": {
-    "IN": 12
+    "IN": 14,
+    "IN-hi": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.675,
    "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला",
     "At least seven killed after gunmen open fire at church in Jordan"
+   ],
+   "hindi_owners": [
+    "NDTV"
    ],
    "audience": "world",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261023-Q3520087-p2",
+   "qid": "Q3520087",
+   "title": "Indo-Tibetan Border Police",
+   "name": "Indo-Tibetan Border Police",
+   "phrase": "ITBP",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "'India, China continue using existing mechanisms to avoid LAC miscalculations': MEA after ITBP chief's remarks",
+   "story_keys": [
+    "remark"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T15:44:54+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'India, China continue using existing mechanisms to avoid LAC miscalculations': MEA after ITBP chief's remarks",
+    "Row over ITBP chief's Arunachal 'face-off' remark, Congress questions govt",
+    "'Border gets disturbed from time to time': MEA on ITBP chief's remark, blames China",
+    "China's patrolling deviations can disrupt LAC peace: Govt after ITBP chief's remark"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारत तिब्बत सीमा पुलिस",
+   "reports": [
+    {
+     "title": "China's patrolling deviations can disrupt LAC peace: Govt after ITBP chief's remark",
+     "url": "https://www.indiatoday.in/india/story/india-china-lac-tensions-chinese-patrol-pattern-deviations-border-peace-ptag-3023752-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:44:54+00:00"
+    },
+    {
+     "title": "Row over ITBP chief's Arunachal 'face-off' remark, Congress questions govt",
+     "url": "https://www.hindustantimes.com/india-news/row-over-itbp-chiefs-face-off-in-arunachal-remarks-congress-questions-govt-101792732160301.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T05:24:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_owners": [],
+   "part": 2,
+   "earlier": [
+    "भारत तिब्बत सीमा पुलिस बोली, सीमा पर हलचल बढ़ी"
+   ],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q1699148",
@@ -1575,8 +2073,102 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "nw-20261023-bihar-siwan-explosion",
+   "qid": null,
+   "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+   "name": "Bihar Siwan",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T17:10:10+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+    "4 dead as blast rips through house storing firecrackers in Bihar village",
+    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+    "At least four killed in blast at house storing firecrackers in Bihar’s Siwan"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:10:10+00:00"
+    },
+    {
+     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:03:53+00:00"
+    },
+    {
+     "title": "4 dead as blast rips through house storing firecrackers in Bihar village",
+     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:26:31+00:00"
+    },
+    {
+     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:23:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "nw-20261023-taiwan-cyclone",
@@ -1586,22 +2178,20 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T12:17:20+00:00",
+   "news_at": "2026-10-23T09:56:07+00:00",
    "owners": [
     "Deutsche Welle",
     "BBC",
-    "Network18",
-    "Al Jazeera Media Network"
+    "Network18"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
     "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
-    "Typhoon Champi unleashes huge waves along Taiwan’s coast"
+    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1634,16 +2224,6 @@
      "at": "2026-10-23T06:40:00+00:00"
     },
     {
-     "title": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T12:17:20+00:00"
-    },
-    {
      "title": "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
      "url": "https://www.news18.com/india/typhoon-champi-taiwan-braces-for-powerful-winds-and-heavy-rain-as-storm-heads-towards-china-japan-shil-ws-l-10394584.html",
      "outlet": "News18",
@@ -1657,110 +2237,21 @@
    "via": [
     "outlet:Deutsche Welle",
     "outlet:BBC",
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-nation": 17
-   },
-   "top_score": 0.12,
-   "top_headlines": [
-    "City may receive heavy rain from today",
-    "Odisha cyclone alert: IMD issues red warning for heavy rain in 5 districts"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "id": "nw-20261023-bihar-siwan-explosion",
-   "qid": null,
-   "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-   "name": "Bihar Siwan",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T16:03:53+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "Network18"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-    "4 dead as blast rips through house storing firecrackers in Bihar village",
-    "At least four dead in blast in Bihar’s Siwan district",
-    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T16:03:53+00:00"
-    },
-    {
-     "title": "At least four dead in blast in Bihar’s Siwan district",
-     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:41:43+00:00"
-    },
-    {
-     "title": "4 dead as blast rips through house storing firecrackers in Bihar village",
-     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:26:31+00:00"
-    },
-    {
-     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T14:23:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:Network18"
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Cyclonic storm likely by October 26; heavy rain in Coastal Andhra from October 27: IMD",
+    "City may receive heavy rain from today"
+   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "breaking"
   },
   {
    "id": "nw-20261023-paris-attack",
@@ -1835,8 +2326,106 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
    "audience": "world",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261023-Q464185",
+   "qid": "Q464185",
+   "title": "Daler Mehndi",
+   "name": "Daler Mehndi",
+   "phrase": "Daler Mehndi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+   "story_keys": [
+    "apology",
+    "mika",
+    "row"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T15:36:49+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+    "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+    "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+    "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "दलेर मेंहदी",
+   "reports": [
+    {
+     "title": "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/daler-mehndi-uttarakhand-concert-row-mika-singh-reveals-brother-broke-down-crying-subodh-unniyal-3023828-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:36:49+00:00"
+    },
+    {
+     "title": "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/mika-singh-says-cm-dhami-apologised-on-behalf-of-bjp-mla-in-daler-mehndi-row-3023778-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:08:22+00:00"
+    },
+    {
+     "title": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/mika-singh-slams-uttarakhand-minister-subodh-uniyal-over-daler-mehndi-row-and-demands-apology-says-an-artist-deserves-dignity-regardless-of-the-circumstances/articleshow/135146325.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:47:03+00:00"
+    },
+    {
+     "title": "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+     "url": "https://www.hindustantimes.com/india-news/pushkar-singh-dhami-reaches-out-to-daler-mehndi-mika-singh-insists-on-minister-s-apology-101792758600411.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:29:59+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q452431",
@@ -1865,6 +2454,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
   },
@@ -1974,102 +2564,8 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261023-Q432473",
-   "qid": "Q432473",
-   "title": "Melania Trump",
-   "name": "Melania Trump",
-   "phrase": "Melania Trump",
-   "person": true,
-   "kind": "explainer",
-   "category": "defence",
-   "category_hi": "रक्षा",
-   "story": "Melania Trump brokers Russia-Ukraine ceasefire",
-   "story_keys": [
-    "broker",
-    "ceasefire",
-    "city",
-    "secure"
-   ],
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T15:48:04+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV",
-    "BBC"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Melania Trump brokers Russia-Ukraine ceasefire",
-    "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
-    "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
-    "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "मेलानिया ट्रम्प",
-   "reports": [
-    {
-     "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-     "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T15:48:04+00:00"
-    },
-    {
-     "title": "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
-     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:26:03+00:00"
-    },
-    {
-     "title": "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
-     "url": "https://www.indiatoday.in/world/story/melania-trump-oleshky-ceasefire-russia-ukraine-aid-evacuation-trunce-donald-trump-3023802-2026-10-23?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:12:04+00:00"
-    },
-    {
-     "title": "Melania Trump brokers Russia-Ukraine ceasefire",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/melania-trump-brokers-russia-ukraine-ceasefire-in-war-hit-oleshky-white-house-says/articleshow/135148161.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T14:04:01+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:BBC"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -2149,68 +2645,9 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q28151642",
-   "title": "Kwame Dzokoto",
-   "fame": 9061,
-   "views": 9061,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q28151642",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6261870",
-   "title": "John Vaughan (footballer, born 1964)",
-   "fame": 7892,
-   "views": 7892,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6261870",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "qid": "Q3424313",
@@ -2239,67 +2676,8 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q19729623",
-   "title": "Napoleon Bonaparte (police officer)",
-   "fame": 9763,
-   "views": 9763,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q19729623",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q51641814",
-   "title": "Ann Hornaday",
-   "fame": 8519,
-   "views": 8519,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q51641814",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-18",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
    "lane": "obituary"
   },
   {
@@ -2331,53 +2709,53 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   }
  ],
  "notes": [
-  "outlets: 1464 headlines from 31 feeds (19 owners), 12 matched to articles, 10 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-jordan-attack, nw-20261023-taiwan-cyclone, nw-20261023-bihar-siwan-explosion",
-  "explainers: 5 kh- stories (on): kh-20261023-Q140632219, kh-20261023-Q432473, kh-20261023-Q1340361, kh-20261023-Q3520087; dropped: explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by; explainer Apple: fewer than 3 owners' headlines name it and the story; explainer Diljit Dosanjh: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
+  "outlets: 1463 headlines from 31 feeds (19 owners), 15 matched to articles, 12 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-jordan-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-taiwan-cyclone",
+  "explainers: 7 kh- stories (on): kh-20261023-Q140632219, kh-20261023-Q432473, kh-20261023-Q1826411, kh-20261023-Q1340361; dropped: explainer Mark Zuckerberg: fewer than 3 owners' headlines name it and the story; explainer CM Nayab Saini: fewer than 3 owners' headlines name it and the story; explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
+  "gdacs: HTTPSConnectionPool(host='www.gdacs.org', port=443): Max retries exceeded with url: /xml/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gdacs.org', port=443) at 0x7fe5834f353",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1464,
+  "headlines": 1463,
   "feeds": 31,
   "owners": 19,
-  "matched": 12,
-  "corroborated": 10
+  "matched": 15,
+  "corroborated": 12
  },
  "emerging": [
   {
    "id": "nw-20261023-jordan-attack",
    "qid": null,
-   "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
+   "title": "Several killed, dozens wounded in Jordan church shooting",
    "name": "Jordan",
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T16:11:00+00:00",
+   "news_at": "2026-10-23T15:06:59+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
     "France Médias Monde",
-    "India Today Group",
-    "BBC"
+    "India Today Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Gunmen open fire inside church in Jordan, 6 killed",
     "At least seven killed after gunmen open fire at church in Jordan",
     "Several killed, dozens wounded in Jordan church shooting",
-    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on",
-    "Seven shot dead by gunmen at church funeral in Jordan, officials say"
+    "7 killed after gunmen open fire at church in Jordan; hunt for suspects on"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2388,16 +2766,6 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
-    {
-     "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-     "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T16:11:00+00:00"
-    },
     {
      "title": "Several killed, dozens wounded in Jordan church shooting",
      "url": "https://www.france24.com/en/middle-east/20261023-several-killed-dozens-wounded-in-jordan-church-shooting",
@@ -2443,19 +2811,118 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:BBC"
+    "outlet:India Today Group"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 12
+    "IN": 14,
+    "IN-hi": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.675,
    "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला",
     "At least seven killed after gunmen open fire at church in Jordan"
    ],
+   "hindi_owners": [
+    "TV9 Network",
+    "India Today Group",
+    "NDTV"
+   ],
    "audience": "world",
+   "lane": "sensitive"
+  },
+  {
+   "id": "nw-20261023-bihar-siwan-explosion",
+   "qid": null,
+   "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+   "name": "Bihar Siwan",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T17:10:10+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+    "4 dead as blast rips through house storing firecrackers in Bihar village",
+    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+    "At least four killed in blast at house storing firecrackers in Bihar’s Siwan"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:10:10+00:00"
+    },
+    {
+     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:03:53+00:00"
+    },
+    {
+     "title": "4 dead as blast rips through house storing firecrackers in Bihar village",
+     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:26:31+00:00"
+    },
+    {
+     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:23:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV"
+   ],
+   "audience": "india",
    "lane": "sensitive"
   },
   {
@@ -2466,22 +2933,20 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-23",
-   "news_at": "2026-10-23T12:17:20+00:00",
+   "news_at": "2026-10-23T09:56:07+00:00",
    "owners": [
     "Deutsche Welle",
     "BBC",
-    "Network18",
-    "Al Jazeera Media Network"
+    "Network18"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Taiwan braces as El Nino-supercharged Typhoon Champi approaches island",
     "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
-    "Typhoon Champi unleashes huge waves along Taiwan’s coast"
+    "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2514,16 +2979,6 @@
      "at": "2026-10-23T06:40:00+00:00"
     },
     {
-     "title": "Typhoon Champi unleashes huge waves along Taiwan’s coast",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/typhoon-champi-unleashes-huge-waves-along-taiwans-coast?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T12:17:20+00:00"
-    },
-    {
      "title": "Typhoon Champi: Taiwan Braces For Powerful Winds And Heavy Rain As Storm Heads Towards China, Japan",
      "url": "https://www.news18.com/india/typhoon-champi-taiwan-braces-for-powerful-winds-and-heavy-rain-as-storm-heads-towards-china-japan-shil-ws-l-10394584.html",
      "outlet": "News18",
@@ -2537,110 +2992,21 @@
    "via": [
     "outlet:Deutsche Welle",
     "outlet:BBC",
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-nation": 17
-   },
-   "top_score": 0.12,
-   "top_headlines": [
-    "City may receive heavy rain from today",
-    "Odisha cyclone alert: IMD issues red warning for heavy rain in 5 districts"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "id": "nw-20261023-bihar-siwan-explosion",
-   "qid": null,
-   "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-   "name": "Bihar Siwan",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T16:03:53+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "Network18"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-    "4 dead as blast rips through house storing firecrackers in Bihar village",
-    "At least four dead in blast in Bihar’s Siwan district",
-    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T16:03:53+00:00"
-    },
-    {
-     "title": "At least four dead in blast in Bihar’s Siwan district",
-     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:41:43+00:00"
-    },
-    {
-     "title": "4 dead as blast rips through house storing firecrackers in Bihar village",
-     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:26:31+00:00"
-    },
-    {
-     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T14:23:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:Network18"
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Cyclonic storm likely by October 26; heavy rain in Coastal Andhra from October 27: IMD",
+    "City may receive heavy rain from today"
+   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "breaking"
   },
   {
    "id": "nw-20261023-paris-attack",
@@ -2715,6 +3081,9 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
    "audience": "world",
    "lane": "sensitive"
   }
@@ -2749,16 +3118,18 @@
     "wrong"
    ],
    "date": "2026-10-22",
-   "news_at": "2026-10-23T16:11:46+00:00",
+   "news_at": "2026-10-23T16:44:46+00:00",
    "owners": [
     "Network18",
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
+    "The Hindu Group",
     "TV9 Network",
     "BBC",
     "India Today Group",
-    "DB Corp"
+    "DB Corp",
+    "Amar Ujala"
    ],
    "fame": 400000,
    "news": 400000,
@@ -2787,6 +3158,16 @@
    "india_link": true,
    "label_hi": "नेहा बोरा",
    "reports": [
+    {
+     "title": "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
+     "url": "https://www.thehindu.com/news/national/delhi-high-court-rejects-neha-boras-plea-against-police-notice-to-sign-peace-bond/article71616696.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:44:46+00:00"
+    },
     {
      "title": "Neha Bora Faces Setback: Delhi High Court Rejects Plea, Directs AISA Activist To Sign ‘Peace Bond’",
      "url": "https://www.news18.com/india/neha-bora-faces-legal-setback-delhi-high-court-rejects-her-plea-ws-l-10395044.html",
@@ -2863,25 +3244,34 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
+    "outlet:The Hindu Group",
     "outlet:TV9 Network",
     "outlet:BBC",
     "outlet:India Today Group",
     "outlet:DB Corp",
-    "google-news:Delhi High Court rejects plea by Neha Bora against notice to sign bond and \"maintain peace\"",
+    "outlet:Amar Ujala",
     "google-news:Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
+    "google-news:राहुल गांधी पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
     "google-news:दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील"
    ],
    "top": {
-    "IN": 2,
-    "IN-hi": 5,
-    "IN-nation": 1,
-    "IN-hi-nation": 4
+    "IN": 1,
+    "IN-hi": 7,
+    "IN-nation": 2,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.905,
+   "top_score": 1.92,
    "top_headlines": [
     "दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, 'पीस बॉन्ड' भरने के खिलाफ की थी अपील",
-    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
-    "Delhi High Court rejects plea by Neha Bora against notice to sign bond and \"maintain peace\""
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "NDTV",
+    "BBC",
+    "India Today Group",
+    "HT Media",
+    "DB Corp"
    ]
   },
   {
@@ -2894,7 +3284,7 @@
    "kind": "explainer",
    "category": "defence",
    "category_hi": "रक्षा",
-   "story": "Melania Trump brokers Russia-Ukraine ceasefire",
+   "story": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
    "story_keys": [
     "broker",
     "ceasefire",
@@ -2902,28 +3292,31 @@
     "secure"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-23T15:48:04+00:00",
+   "news_at": "2026-10-23T16:59:51+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
     "BBC"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
     "Melania Trump brokers Russia-Ukraine ceasefire",
     "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
-    "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
     "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "अगर मैं दखल नहीं देती तो... मेलानिया ट्रंप ने किया रूस-यूक्रेन के एक शहर में युद्धविराम का दावा",
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "label_hi": "मेलानिया ट्रम्प",
    "reports": [
     {
@@ -2934,17 +3327,17 @@
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-23T15:48:04+00:00"
+     "at": "2026-10-23T16:59:51+00:00"
     },
     {
-     "title": "\"Situation Dire\": Melania Trump Says She Secured Ceasefire In Ukrainian City",
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
      "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T15:26:03+00:00"
+     "at": "2026-10-23T16:43:49+00:00"
     },
     {
      "title": "Melania Trump secures ceasefire in Ukraine's war-hit Oleshky for aid, evacuation",
@@ -2971,12 +3364,109 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "outlet:BBC"
+    "outlet:BBC",
+    "google-news:मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "audience": "world",
+   "top": {
+    "IN-hi": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "मेलानिया ट्रंप ने कराया रूस-यूक्रेन में सीजफायर, व्हाइट हाउस ने क्या बताया?"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261023-Q1826411",
+   "qid": "Q1826411",
+   "title": "Line of Actual Control",
+   "name": "Line of Actual Control",
+   "phrase": "LAC",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+   "story_keys": [
+    "patrolling"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T17:01:42+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+    "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+    "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "वास्तविक नियंत्रण रेखा",
+   "reports": [
+    {
+     "title": "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says",
+     "url": "https://www.thehindu.com/news/national/mea-india-china-lac-border-situation-itbp-dg-remarks-arunachal/article71616229.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:01:42+00:00"
+    },
+    {
+     "title": "LAC situation gets ‘disturbed’ when Chinese troops diverge from patrolling patterns: India",
+     "url": "https://www.hindustantimes.com/india-news/lac-situation-disturbed-when-chinese-troops-diverge-from-patrolling-patterns-india-says-101792769158499.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:25:58+00:00"
+    },
+    {
+     "title": "'China's Violation Of Patrolling Rules Disturbs Situation': MEA Responds To LAC Face-Off, Stresses Peace",
+     "url": "https://www.news18.com/india/mea-remark-itbp-chief-shatrujeet-singh-kapoor-china-border-face-offs-arunachal-pradesh-ws-l-10394962.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T13:17:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -3085,6 +3575,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
@@ -3175,13 +3666,14 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 1,
-    "IN-nation": 2
+    "IN": 2,
+    "IN-nation": 3
    },
-   "top_score": 1.285,
+   "top_score": 1.22,
    "top_headlines": [
     "Situation along LAC gets disturbed when Chinese forces diverge from established patrolling pattern: MEA"
-   ]
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261023-Q51993",
@@ -3260,8 +3752,104 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261023-Q464185",
+   "qid": "Q464185",
+   "title": "Daler Mehndi",
+   "name": "Daler Mehndi",
+   "phrase": "Daler Mehndi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+   "story_keys": [
+    "apology",
+    "mika",
+    "row"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T15:36:49+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+    "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+    "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+    "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "दलेर मेंहदी",
+   "reports": [
+    {
+     "title": "Mika Singh says Daler Mehndi broke down on call over Uttarakhand concert row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/daler-mehndi-uttarakhand-concert-row-mika-singh-reveals-brother-broke-down-crying-subodh-unniyal-3023828-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:36:49+00:00"
+    },
+    {
+     "title": "Mika Singh says CM Dhami apologised on behalf of BJP MLA in Daler Mehndi row",
+     "url": "https://www.indiatoday.in/movies/celebrities/story/mika-singh-says-cm-dhami-apologised-on-behalf-of-bjp-mla-in-daler-mehndi-row-3023778-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:08:22+00:00"
+    },
+    {
+     "title": "Mika Singh slams Uttarakhand minister Subodh Uniyal over Daler Mehndi row; demands apology",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/mika-singh-slams-uttarakhand-minister-subodh-uniyal-over-daler-mehndi-row-and-demands-apology-says-an-artist-deserves-dignity-regardless-of-the-circumstances/articleshow/135146325.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:47:03+00:00"
+    },
+    {
+     "title": "Pushkar Singh Dhami reaches out to Daler Mehndi; Mika Singh insists on minister’s apology",
+     "url": "https://www.hindustantimes.com/india-news/pushkar-singh-dhami-reaches-out-to-daler-mehndi-mika-singh-insists-on-minister-s-apology-101792758600411.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T12:29:59+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   }
  ]
 }
