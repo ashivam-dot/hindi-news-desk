@@ -66,9 +66,11 @@ def test_andheri_station_not_flyover(monkeypatch, items, tmp_path):
     draft = {"names": [{"en": "Andheri", "hi": "अंधेरी"}],
              "beats": [{"say": "हमलावर अंधेरी स्टेशन से लोकल ट्रेन में बैठे।"}, {"say": "अंधेरी में तलाशी जारी है।"}]}
     cast = visuals.cast_for(draft, "Tiger Shroff", True)
-    assert [(c["en"], c["hi"]) for c in cast] == [("Andheri", "अंधेरी"), ("Andheri railway station", "अंधेरी स्टेशन")]
+    # And "लोकल ट्रेन" a train (Matlabnama audit R1, 2026-10-23: a beat that says train shows one), a labelled stand-in.
+    assert [(c["en"], c["hi"]) for c in cast] == [("Andheri", "अंधेरी"), ("Andheri railway station", "अंधेरी स्टेशन"),
+                                                  ("Train", "ट्रेन")] and cast[2]["stand_in"]
     assert asked.count("Andheri railway station") == 1
-    assert [c["en"] for c in visuals.mentions(draft["beats"][0]["say"], cast)] == ["Andheri railway station"]
+    assert [c["en"] for c in visuals.mentions(draft["beats"][0]["say"], cast)] == ["Andheri railway station", "Train"]
     assert [c["en"] for c in visuals.mentions(draft["beats"][1]["say"], cast)] == ["Andheri"]
     commons(monkeypatch, [{"file": "File:Andheri flyover.jpg", "description": "Andheri flyover", "path": "x"},
                           {"file": "File:Andheri station platform.jpg", "description": "Andheri station", "path": "y"}])

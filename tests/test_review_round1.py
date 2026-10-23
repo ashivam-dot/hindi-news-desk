@@ -31,9 +31,11 @@ def test_the_home_ministers_title_and_his_claim_show_amit_shah():
     shah = {i for i, p in enumerate(photos) if not p.get("role")}
     # "गृह मंत्री ने यमुना सफाई ..." (once a card over Rahul Gandhi's blurred face): Shah's own photo.
     assert rows[1]["plate"] == "" and set(rows[1]["views"]) <= shah
-    # "उन्होंने दावा किया कि राहुल गांधी की पार्टी ...": Shah who claims, then Rahul on his name.
-    assert rows[4]["views"][0] in shah and photos[rows[4]["views"][1]].get("who") == "राहुल गांधी"
-    assert rows[4]["cut_word"] == "राहुल"
+    # "उन्होंने दावा किया कि राहुल गांधी की पार्टी ...": Shah who claims, once then Rahul on his name. One picture, one
+    # beat (Matlabnama audit R4, 2026-10-23): Rahul's two photos are beats 1's and 3's, so beat 4 is a card and beat 5
+    # Shah alone (a card beat's name still tells plan.speaker who is claimed about).
+    assert rows[3]["plate"] == match.CARD
+    assert rows[4]["plate"] == "" and set(rows[4]["views"]) <= shah and rows[4]["cut_word"] == ""
     assert match.problems(applied(s, rows)) == []
 
 
@@ -54,12 +56,15 @@ def test_plan_puts_a_card_over_what_its_line_names():
     beats = [{"say": "अमित शाह दिल्ली पहुंचे।", "card": {"big": "दिल्ली"}},
              {"say": "राहुल गांधी ने विरोध किया।", "card": {"big": "विरोध"}},
              {"say": "गृह मंत्री ने यमुना पर बात की।", "card": {"big": "यमुना सफाई"}}]
-    photos = [{"file": "File:Amit Shah.jpg"}, {"file": "File:Rahul.jpg", "role": "person", "who": "राहुल गांधी"}]
+    photos = [{"file": "File:Amit Shah.jpg"}, {"file": "File:Rahul.jpg", "role": "person", "who": "राहुल गांधी"},
+              {"file": "File:Amit Shah 2.jpg"}]
     cast = [{"hi": "राहुल गांधी", "en": "Rahul Gandhi", "kind": "person", "photos": [1]}]
     for i, p in enumerate(photos):
         p["depicts"] = sorted(match.depicts(i, p, cast)) if p.get("role") else [match.SUBJECT]
-    rows = match.plan(beats, photos, cast, [0], "", ["अमित शाह", "अमित", "शाह", "गृह मंत्री"], True)
-    assert rows[2]["views"] == [0]  # the title names Shah: his photo, not Rahul's (the beat before)
+    rows = match.plan(beats, photos, cast, [0, 2], "", ["अमित शाह", "अमित", "शाह", "गृह मंत्री"], True)
+    # The title names Shah: his photo, not Rahul's (the beat before); his second one, the first being beat 0's (R4,
+    # 2026-10-23: one picture, one beat).
+    assert rows[2]["views"] == [2]
 
 
 def test_the_subject_floor_refuses_a_short_its_person_is_barely_in():
@@ -143,12 +148,23 @@ def test_both_mid_line_shows_the_pair_cut_on_both():
 def test_both_after_two_beats_of_one_leader_each_is_the_pair():
     # Dry run 39860680187: "तुस्क ... मिले।", "मोदी ने ... चर्चा की।", then "रिपोर्टों के मुताबिक, दोनों नेताओं ने ..."
     # was a card; the two leaders the last two beats showed are the pair.
+    # One picture, one beat (Matlabnama audit R4, 2026-10-23): Modi's one picture (two files, one a crop of the other:
+    # one look) is beat 1's, so the pair beat is a card now (two of six: still within a third). With a second Modi
+    # picture it is the pair again.
     s = short("39860680187")
     rows, photos = planned(s)
+    assert rows[2]["plate"] == match.CARD
+    assert match.problems(applied(s, rows)) == []
+    assert sum(r["plate"] == match.CARD for r in rows) == 2
+    modi = next(i for i, p in enumerate(photos) if p.get("who") == "नरेंद्र मोदी")
+    photos.append({k: v for k, v in photos[modi].items() if k != "look"} | {"file": "File:Narendra Modi 2019.jpg"})
+    cast = [c | {"photos": [*c["photos"], len(photos) - 1]} if modi in (c.get("photos") or []) else c
+            for c in match.cast_of(s)]
+    beats = [{"say": b.text, "card": b.card} for b in s.beats if b.shot != "outro"]
+    subject = [i for i, p in enumerate(photos) if not p.get("role")]
+    rows = match.plan(beats, photos, cast, subject, s.kind, match.spellings_of(s), match._person(s), s.scene["names"])
     assert rows[2]["plate"] == "" and len(rows[2]["views"]) == 2
     assert not photos[rows[2]["views"][0]].get("role") and photos[rows[2]["views"][1]].get("who") == "नरेंद्र मोदी"
-    assert match.problems(applied(s, rows)) == []
-    assert sum(r["plate"] == match.CARD for r in rows) == 1
 
 
 # --- F5: one picture as two files counts as one --------------------------------------------------------------------
@@ -263,7 +279,7 @@ def test_a_person_with_a_wikidata_photo_and_no_download_is_a_miss(monkeypatch):
 @pytest.mark.parametrize("say", [
     "पोलैंड का राष्ट्रीय ध्वज फहराया गया।", "इजरायल की संसद ने कानून पास किया।", "यूरोपीय संसद में बहस हुई।",
     "इटली की संसद ने मंजूरी दी।", "यूक्रेनी संसद ने प्रस्ताव पास किया।", "दक्षिण कोरिया का सुप्रीम कोर्ट",
-    "पोलिश राष्ट्रीय ध्वज लहराया।", "वंदे भारत मिशन के तहत उड़ानें", "ताज महल पैलेस होटल में बैठक हुई।",
+    "पोलिश राष्ट्रीय ध्वज लहराया।", "वंदे भारत मिशन के तहत लोग लौटे", "ताज महल पैलेस होटल में बैठक हुई।",
     "यह परियोजना सफेद हाथी बन गई।", "बाघ बकरी चाय की कंपनी", "राम मंदिर नाम की एक दुकान"])
 def test_no_lexicon_thing_abroad_or_in_a_compound(say):
     assert hits(say) == []

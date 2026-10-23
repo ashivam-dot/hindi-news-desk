@@ -59,8 +59,11 @@ def test_city_never_shows_spot_map():
     # word and rows[3] to Vantara's.
     assert rows[0] == {"views": [1], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
     assert rows[1] == {"views": [10], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
-    # Rubio's other portrait: photo 2 stood in the "दोनों के बीच" pair the beat before (rows[2], Rubio and Ambani).
-    assert rows[3] == {"views": [3], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
+    # Rubio's other portrait, photo 2: it once stood in the "दोनों के बीच" pair the beat before (rows[2], Rubio and
+    # Ambani) and beat 4 took photo 3. One picture, one beat (Matlabnama audit R4, 2026-10-23): the Ambanis' photo
+    # 10 is beat 2's, so the pair is a card and photo 2 is beat 4's.
+    assert rows[2]["plate"] == match.CARD
+    assert rows[3] == {"views": [2], "cut_word": "", "cut_at": -1, "plate": "", "card_view": 0}
     photos = short("39714003987").scene["photos"]
     assert not any(visuals.is_map(photos[i]) for r in rows for i in r["views"])
 
@@ -135,8 +138,10 @@ def test_rubio_plan_passes_and_original_blocks():
     # Reliance's statement, the US officials) name nothing with a picture, over a third (match.card_limit, once
     # half): the Short is blocked and the writer's SHOWABLE retry must name what can be shown (2026-10-22).
     # "रिपोर्टों के मुताबिक दोनों के बीच ..." after a Rubio beat and an Ambani beat is the pair now (dry run 39860680187,
-    # 2026-10-23), so two cards are left, but in a row.
-    assert match.problems(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5"]
+    # 2026-10-23), so two cards were left, but in a row; and the pair's Ambani photo is beat 2's (R4, 2026-10-23),
+    # so it is a third card: refused, never padded with a picture twice.
+    assert match.problems(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5",
+                                                "text cards: 3 of 6 beats (at most 2)"]
     # The hand fix (maps under 1.5 of its 3 picture beats) passed at 40% once; at 20%, one map view, and no map
     # under a beat naming Rubio, it is blocked, and so is it re-hosted.
     fixed = short("39714003987-fixed")
@@ -155,8 +160,12 @@ def test_jaishankar_flags_only_beat_7():
     assert bad[0] == f"pictures: beat 2 shows a map though it names {hindi.norm('मार्को रुबियो')}, who has a photo"
     # Since 2026-10-22 (dry run 39827809002) also beat 6's "Secretary Blinken Meets with ... Jaishankar": Blinken's
     # face under the Padma Shri line (was: only beat 7).
-    assert bad[1:] and all("beat 7 shows" in p or p.startswith("pictures: beat 6 shows photo 7")
-                           and "a photo with someone else" in p for p in bad[1:])
+    # Since 2026-10-23 (Matlabnama audit R2, R4) beat 4's handshake crop ("shakes hands" in its file) and the three
+    # portraits it put on two beats each.
+    assert bad[1:] and all("beat 7 shows" in p or p.startswith(("pictures: beat 6 shows photo 7",
+                                                                 "pictures: beat 4 shows photo 4"))
+                           and "a photo with someone else" in p or " on beats " in p for p in bad[1:])
+    assert sum(" on beats " in p for p in bad) == 3
     rows, _ = planned(short("39411111185"))
     assert rows[6]["plate"] == match.CARD
     assert match.problems(applied(short("39411111185"), rows)) == []
@@ -168,8 +177,9 @@ def test_old_jantar_photo_and_card_ceiling():
     rows, photos = planned(s)
     assert "vet" in photos[3] and all(3 not in r["views"] or r["plate"] for r in rows)
     bad = match.problems(applied(s, rows))  # 4 of 6 beats name nothing showable: blocked, never filled
-    # A third of six (2, once half) and two in a row (once three).
-    assert "text cards: 4 of 6 beats (at most 2)" in bad and "text cards: 2 beats in a row from beat 3" in bad
+    # A third of six (2, once half) and two in a row (once three). Five cards since R4 (2026-10-23): beat 2's one
+    # Jantar Mantar picture was beat 1's (once 4, from beat 3).
+    assert "text cards: 5 of 6 beats (at most 2)" in bad and "text cards: 2 beats in a row from beat 2" in bad
 
 
 def test_render_views_weigh_map_time():
@@ -205,6 +215,8 @@ def test_old_short_json_loads(tmp_path):
     rows, _ = planned(s)
     back = Short.load(applied(s, rows).save(tmp_path / "short.json"))
     # No cut to Vantara's map under the beat naming Rubio (2026-10-22; once "photo:2/11" cut on "वनतारा").
-    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:3", "", 0)
-    assert back.beats[2].plate == "" and back.beats[2].shot == "photo:2/10"  # "दोनों के बीच": Rubio, then Ambani
+    # Rubio's photo 2, beat 4's since R4 (2026-10-23): "दोनों के बीच" (once "photo:2/10", Rubio then Ambani) is a
+    # card, the Ambanis' photo being beat 2's.
+    assert (back.beats[3].shot, back.beats[3].cut_word, back.beats[3].card_view) == ("photo:2", "", 0)
+    assert back.beats[2].plate == match.CARD
     assert back.beats[4].plate == match.CARD

@@ -30,7 +30,10 @@ MIN_VISUALS = 3  # distinct pictures on screen; a lead story about a person may 
 # States are counted apart from towns and landmarks, and a police force is no place: the Tiger Shroff probe's two
 # home states, then "Kota Police", filled the places, and Kota's station, where all three were caught, had no picture.
 MAX_PEOPLE, MAX_PLACES, MAX_REGIONS = 3, 7, 3
-PERSON_PHOTOS = 2
+# Four, not two (Matlabnama audit R4, 2026-10-23: one picture, one beat): a person named in three beats needs three
+# portraits, and two files are often one look (Modi's official portrait and its 3x4 crop, dry run 39860680187), so
+# the replay's Tusk Shorts carded every Modi beat after the first. From the eight _own_photos already downloads.
+PERSON_PHOTOS = 4
 # A named landmark (a station, a hospital, a beach: a place with no population) shows its own Commons photo, then
 # its map: the Tiger Shroff chase named five stations and showed only maps and portraits.
 SIGHT_PHOTOS = 1
@@ -542,14 +545,28 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         forms = {hindi.norm(w) for w in [e["hi"], *e["alias"]]}
         if any(c["kind"] == "thing" and (c["en"] == e["en"] or hindi.norm(c["hi"]) in forms) for c in out):
             continue
+        # The script's own vehicle ("INS Vikrant") takes a stand-in's words ("इस जहाज़ पर"): its own photo, never a
+        # container ship's, under them (Matlabnama audit R1, actual first).
+        if e.get("stand_in") and e.get("cls") and (own := next(
+                (c for c in out if c["kind"] == "thing" and re.search(e["cls"], _description(c.get("ent")), re.I)),
+                None)):
+            own["alias"] = list(dict.fromkeys([*(own.get("alias") or []), e["hi"], *e["alias"]]))
+            continue
         if sum(c["kind"] == "thing" for c in out) >= MAX_THINGS:
             break
-        hit = thing_lookup(e)
+        # A stand-in with an editor's photos needs no lookup: its Wikipedia article is the kind, not a picture.
+        hit = e | {"qid": "", "ent": {}} if e.get("stand_in") and e["files"] else thing_lookup(e)
         if hit is None and not e["files"]:
             continue
+        if e.get("stand_in") and hit:
+            hit = hit | {"stand_in": True}
         out = [c for c in out if not (c["kind"] in ("place", "topic") and hindi.norm(c["hi"]) in forms)]
         out.append(hit or e | {"qid": "", "ent": {}})
     return out
+
+
+def _description(ent: dict | None) -> str:
+    return (((ent or {}).get("descriptions") or {}).get("en") or {}).get("value", "")
 
 
 # --- Assignment -------------------------------------------------------------------------------------------------
@@ -864,6 +881,58 @@ def looks(photos: list[dict]) -> None:
                     photos[i]["look"] = photos[j]["look"] = photos[i]["file"]
 
 
+# A beat that tells a journey between the two places it names (R3): "दिल्ली से लंदन जा रही फ्लाइट", "तुस्क नई दिल्ली
+# पहुंचे", "... के लिए रवाना हुए". Only with two places in the one beat, so "दिल्ली और मुंबई में बारिश" is no journey.
+TRAVEL = re.compile(r"(?<![\u0900-\u097F])(?:जा रह[ीेा]|आ रह[ीेा]|रवाना|उड़ान|उड़ानें|फ्लाइट|फ़्लाइट|यात्रा|दौरे|दौरा|"
+                    r"पहुंच\w*|पहुँच\w*|लौट\w*|डायवर्ट|तक)(?![\u0900-\u097F])")
+
+
+def map_scope(beats: list[dict], cast: list[dict], photos: list[dict], near: dict | None = None) -> None:
+    """Stamps which maps may be shown, in place (Matlabnama audit R3, the owner's rule of 2026-10-23: "Map should be
+    shown at the time of some story where the incident happen, if you are covering any travel story then both
+    destination and origine"). A journey (a beat naming two places with a TRAVEL word, and their route map made):
+    the route map is stamped "travel" and every other map "away". Otherwise only the maps of where it happened stay:
+    the story's dateline city (near) when the cast has it, a spot in it the script names first, else the place the
+    beats name most (first said on a tie); every other map, and every route, is stamped "away" with why.
+    match.vet_photo reads the stamp, so plan never shows such a map and the gate refuses one shown."""
+    from . import match
+
+    places = [c for c in cast if c.get("kind") == "place"]
+    maps = [i for i, p in enumerate(photos) if is_map(p)]
+    keys = {i: match.depicts(i, photos[i], cast) for i in maps}
+    for b in beats:
+        say = b.get("say") or ""
+        named = [match.key(c) for c in mentions(say, places)]
+        if len(set(named)) >= 2 and TRAVEL.search(say):
+            trip = next((i for i in maps if len(keys[i]) == 2 and keys[i] == set(named[:2])), None)
+            if trip is not None:
+                photos[trip]["travel"] = True
+                for i in maps:
+                    if i != trip:
+                        photos[i]["away"] = "a one-ended map in a journey's story (its route map shows both ends)"
+                return
+    home = None
+    if near and near.get("en"):
+        want = near["en"].lower()
+        home = next((c for c in places if (c.get("en") or "").lower() == want), None) or \
+            next((c for c in places if want in (c.get("en") or "").lower() or (c.get("en") or "x").lower() in want),
+                 None)
+    said = [(n, a, c) for n, b in enumerate(beats) for a, c in located(b.get("say") or "", places)]
+    if home is not None:
+        spot = next((c for _, _, c in said if c.get("inside") == home.get("en")), None)
+        home = spot or home
+    elif said:
+        times = {}
+        for n, a, c in said:
+            times.setdefault(match.key(c), [0, (n, a), c])[0] += 1
+        home = min(times.values(), key=lambda t: (-t[0], t[1]))[2]
+    mine = match.key(home) if home is not None else None
+    for i in maps:
+        if keys[i] != {mine}:
+            who = photos[i].get("who") or photos[i].get("file") or ""
+            photos[i]["away"] = f"a map of {who}, not where the story happened"
+
+
 def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder: Path,
            exclude: set[str] | None = None, tribute: bool = False, recent: set[str] | None = None,
            kind: str = "", year: int | None = None, born: int | None = None, incident: bool = False,
@@ -989,6 +1058,7 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
     person = bool(subject_en) and not tribute
     if not legacy:  # the rollback (DESK_MATCHER=legacy) as main: no look stamps (review round 2)
         looks(photos)
+        map_scope(beats, cast, photos, near)
     for i, p in enumerate(photos):
         why = match.vet_photo(i, photos, cast, year, bool(subject_en), incident, born)
         if why:

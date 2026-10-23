@@ -12,7 +12,7 @@ import re
 import time
 from pathlib import Path
 
-from . import config, gate, hindi, ledger, media
+from . import config, gate, hindi, ledger, media, things
 from .spec import Short
 
 TOKEN_FILE = Path(__file__).resolve().parents[1] / "secrets" / "token.json"
@@ -156,8 +156,10 @@ def photo_credits(photos: list[dict]) -> str:
     by_licence: dict[str, list[str]] = {}
     for p in photos:
         names = by_licence.setdefault(p["license"], [])
-        if p["author"] not in names:
-            names.append(p["author"])
+        # A stand-in (things.label) says so here too: a free photo of the kind of thing, not the one in the story.
+        who = f"{p['author']} ({things.STAND_IN})" if p.get("stand_in") else p["author"]
+        if who not in names:
+            names.append(who)
     return "तस्वीरें (Wikimedia Commons): " + "; ".join(f"{', '.join(n)} ({lic})" for lic, n in by_licence.items())
 
 

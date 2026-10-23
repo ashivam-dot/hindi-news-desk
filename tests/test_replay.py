@@ -13,10 +13,12 @@ def test_replay_blocks_the_original_and_passes_the_replan():
     # half-the-beats cards).
     r = replay.replay(SYNC / "39714003987.json")
     assert not r["original"]["pass"] and not r["replanned"]["pass"]
-    assert r["original"]["map_share"] > 0.2 >= r["replanned"]["map_share"] and r["replanned"]["cards"] == 2
+    assert r["original"]["map_share"] > 0.2 >= r["replanned"]["map_share"] and r["replanned"]["cards"] == 3
     assert r["original"]["map_views"] == 7 and r["replanned"]["map_views"] == 0
-    # The "दोनों के बीच" beat is the Rubio/Ambani pair since dry run 39860680187 (2026-10-23): two cards, in a row.
-    assert {replay.reason(p) for p in r["replanned"]["problems"]} == {"2+ cards in a row"}
+    # The "दोनों के बीच" beat was the Rubio/Ambani pair since dry run 39860680187 (2026-10-23): two cards, in a row.
+    # One picture, one beat (Matlabnama audit R4, 2026-10-23): the Ambanis' photo is beat 2's, so it is a third card.
+    assert {replay.reason(p) for p in r["replanned"]["problems"]} == {"2+ cards in a row", "cards over a third of the beats"}
+    assert r["original"]["repeats"] > 0 and r["replanned"]["repeats"] == 0
     # The hand fix: maps under 1.5 of its 3 picture beats, two of them under beats naming Rubio.
     fixed = replay.replay(SYNC / "39714003987-fixed.json")
     assert "pictures: maps fill 50% of the picture time (at most 20%)" in fixed["original"]["problems"]

@@ -818,11 +818,20 @@ def twins(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[d
     def what(i):
         return match.depicts(i, photos[i], cast) if 0 <= i < len(photos) else set()
 
-    def twin_of(i):
+    def look_of(j):
+        return (photos[j].get("look") or j) if 0 <= j < len(photos) else j
+
+    # Never a picture another beat shows (Matlabnama audit R4: one picture, one beat).
+    beat_of: dict = {}
+    for v in seen:
+        if not v.get("outro") and v.get("plate") != match.CARD:
+            beat_of.setdefault(look_of(v["photo"]), set()).add(v["beat_k"])
+
+    def twin_of(i, k):
         d = what(i)
-        look = (photos[i].get("look") or i) if 0 <= i < len(photos) else i
         return next((j for j, p in enumerate(photos) if j != i and d and what(j) == d and not p.get("vet")
-                     and not visuals.is_map(p) and (p.get("look") or j) != look), None)
+                     and not visuals.is_map(p) and look_of(j) != look_of(i)
+                     and beat_of.get(look_of(j), {k}) <= {k}), None)
 
     out, run, held = [], None, 0.0
     for v in seen:
@@ -837,7 +846,7 @@ def twins(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[d
             run = v["photo"]
             out.append(v)
             continue
-        twin = twin_of(v["photo"])
+        twin = twin_of(v["photo"], v["beat_k"])
         if twin is None:
             held = (held if cont else 0.0) + span
             run = v["photo"]
@@ -1043,10 +1052,13 @@ def burst(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[i
     order = dict.fromkeys([v["photo"] for v in seen if not v.get("outro") and v.get("plate") != match.CARD]
                           + list(range(len(photos))))
     looks = {photos[first[0]["photo"]].get("look") or first[0]["photo"]}
+    # Never a picture a later beat shows (Matlabnama audit R4: one picture, one beat).
+    later = {photos[v["photo"]].get("look") or v["photo"] for v in seen if v.get("beat_k") != 0 and not v.get("outro")
+             and v.get("plate") != match.CARD and 0 <= v["photo"] < len(photos)}
     pics = []
     for i in order:
         if i == first[0]["photo"] or not 0 <= i < len(photos) or photos[i].get("vet") or visuals.is_map(photos[i]) \
-                or not match.depicts(i, photos[i], cast) & keys or (photos[i].get("look") or i) in looks:
+                or not match.depicts(i, photos[i], cast) & keys or (photos[i].get("look") or i) in looks | later:
             continue
         looks.add(photos[i].get("look") or i)
         pics.append(i)

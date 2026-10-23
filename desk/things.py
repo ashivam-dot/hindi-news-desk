@@ -57,12 +57,56 @@ LEXICON = (
     {"hi": "राम मंदिर", "forms": ("राम मंदिर", "अयोध्या राम मंदिर"), "en": "Ram Mandir", "india": True,
      "needs": ("अयोध्या",)},
     {"hi": "वंदे भारत", "forms": ("वंदे भारत", "वंदे भारत एक्सप्रेस", "वंदे भारत ट्रेन", "वंदे भारत ट्रेनों"),
-     "en": "Vande Bharat Express", "india": True, "not_before": ("मिशन", "अभियान", "उड़ान", "उड़ानों", "फ्लाइट")},
-    {"hi": "बाघ", "forms": ("बाघ", "बाघों", "बाघिन", "बाघिनों"), "en": "Bengal tiger", "india": False,
+     "en": "Vande Bharat Express", "india": True, "stand_in": True,
+     "not_before": ("मिशन", "अभियान", "उड़ान", "उड़ानों", "फ्लाइट")},
+    {"hi": "बाघ", "forms": ("बाघ", "बाघों", "बाघिन", "बाघिनों"), "en": "Bengal tiger", "india": False, "stand_in": True,
      "not_before": ("बकरी", "एक्सप्रेस", "मेल", "एक्सप्रेसवे")},
-    {"hi": "तेंदुआ", "forms": ("तेंदुआ", "तेंदुए", "तेंदुओं"), "en": "Indian leopard", "india": False},
-    {"hi": "हाथी", "forms": ("हाथी", "हाथियों"), "en": "Indian elephant", "india": False, "not_after": ("सफेद", "सफ़ेद")},
-    {"hi": "तेल टैंकर", "forms": ("तेल टैंकर", "तेल टैंकरों", "टैंकर जहाज"), "en": "Oil tanker", "india": False},
+    {"hi": "तेंदुआ", "forms": ("तेंदुआ", "तेंदुए", "तेंदुओं"), "en": "Indian leopard", "india": False, "stand_in": True},
+    {"hi": "हाथी", "forms": ("हाथी", "हाथियों"), "en": "Indian elephant", "india": False, "stand_in": True,
+     "not_after": ("सफेद", "सफ़ेद")},
+    # The vehicles the news names every day (owner, 2026-10-23: "if it is talking about train then train image should
+    # be displayed, if talking about flight then flight must be displayed"). Stand-ins: a free photo of the kind of
+    # thing, never the one in the story, so each says so on screen (STAND_IN) and the script's own vehicle, when
+    # Wikipedia has it, takes these words instead (visuals.cast_for: "cls", what its description must say). Files
+    # checked by eye on Commons, 2026-10-23 (licences re-read at runtime by media.picks); an aircraft, never an
+    # airline's own: "एयर इंडिया का विमान" is a plane, and an airline is a brand (WORK). India: an Indian train or bus,
+    # never under "पाकिस्तान में ट्रेन हाईजैक". not_after also reads "X के/की/का" ("पानी के टैंकर" is a lorry,
+    # "नौसेना के जहाज" a warship).
+    {"hi": "ट्रेन", "forms": ("ट्रेन", "ट्रेनें", "ट्रेनों", "रेलगाड़ी", "रेलगाड़ियां", "रेलगाड़ियों", "यात्री ट्रेन",
+                            "मालगाड़ी"),
+     "en": "Train", "india": True, "stand_in": True, "cls": r"\b(?:train|locomotive|multiple unit|railcar)\b",
+     "not_before": ("मिशन", "अभियान"), "not_after": ("भारत", "मेट्रो", "बुलेट", "खिलौना"),
+     "files": ("File:SNSI - COA Exp. (29778715606).jpg", "File:Ramgiri Pass. (32683016748).jpg",
+               "File:12717 Ratnachal Express at Marripalem 04.jpg")},
+    {"hi": "विमान", "forms": ("विमान", "विमानों", "फ्लाइट", "फ्लाइट्स", "फ़्लाइट", "फ़्लाइट्स", "उड़ान", "उड़ानें",
+                             "उड़ानों", "हवाई जहाज", "हवाई जहाज़", "हवाई जहाजों", "हवाई जहाज़ों", "प्लेन", "यात्री विमान"),
+     "en": "Airplane", "india": False, "stand_in": True,
+     "cls": r"\b(?:airliner|aeroplane|airplane|aircraft(?! carrier)|jet airliner|aircraft type)\b",
+     "not_before": ("योजना", "स्कीम", "मिशन", "अभियान"),
+     "not_after": ("लड़ाकू", "जंगी", "सैन्य", "टोही", "ड्रोन", "सपनों", "ऊंची", "नई"),
+     "files": ("File:Airbus A380.jpg", "File:ANA Cargo, Frankfurt am Main (P1090462).jpg")},
+    {"hi": "जहाज", "forms": ("जहाज", "जहाज़", "जहाजों", "जहाज़ों", "पोत", "पोतों", "मालवाहक जहाज", "कार्गो जहाज",
+                           "मालवाहक पोत"),
+     "en": "Ship", "india": False, "stand_in": True,
+     "cls": r"\b(?:ship|vessel|tanker|aircraft carrier|frigate|destroyer|corvette|warship|submarine|ferry)\b",
+     "not_after": ("हवाई", "जंगी", "नौसेना", "नौसैनिक", "युद्ध"),
+     "files": ("File:Container ship in Koper 2013.jpg", "File:00 0883 Container Ship MARUS.jpg")},
+    {"hi": "तेल टैंकर", "forms": ("तेल टैंकर", "तेल टैंकरों", "टैंकर जहाज", "टैंकर", "टैंकरों", "ऑयल टैंकर"),
+     "en": "Oil tanker", "india": False, "stand_in": True, "cls": r"\b(?:tanker|oil tanker|crude carrier)\b",
+     "not_after": ("पानी", "दूध", "गैस", "एलपीजी", "डीजल", "पेट्रोल", "केमिकल", "हवाई"),
+     "files": ("File:Tanker Destine.JPG", "File:Euronav tanker on the Saint Lawrence at Quebec City.jpg")},
+    {"hi": "हेलीकॉप्टर", "forms": ("हेलीकॉप्टर", "हेलिकॉप्टर", "हेलीकाप्टर", "हेलीकॉप्टरों", "हेलिकॉप्टरों", "चॉपर"),
+     "en": "Helicopter", "india": False, "stand_in": True, "cls": r"\bhelicopter\b",
+     "files": ("File:Tengboche, Helicopter in flight, Mountains of Nepal.jpg",
+               "File:Airbus Helicopters EC725 Super Cougar in Brazilian flight in recife bay.jpg")},
+    {"hi": "मिसाइल", "forms": ("मिसाइल", "मिसाइलों", "मिसाइलें"), "en": "Missile", "india": False, "stand_in": True,
+     "cls": r"\b(?:missile|rocket)\b", "not_before": ("मैन",),  # "मिसाइल मैन" is Abdul Kalam
+     "files": ("File:USS Lake Erie (CG 70) missile test.jpg", "File:Pershing II missile test launch in 1982.JPEG")},
+    # Never a bare "बस": it is "just" far more often than a bus.
+    {"hi": "बसें", "forms": ("बसें", "बसों", "सरकारी बस", "रोडवेज बस", "यात्री बस", "बस हादसा", "बस हादसे",
+                           "बस दुर्घटना", "बस पलटी", "बस खाई"),
+     "en": "Bus", "india": True, "stand_in": True, "cls": r"\bbus\b",
+     "files": ("File:Telangana State Road Transport Corporation bus.jpg", "File:APSRTC Bus 07122014.jpg")},
     {"hi": "पद्म श्री", "forms": ("पद्म श्री", "पद्मश्री"), "en": "Padma Shri", "india": True},
     # Rivers the news names by their own name ("यमुना सफाई", dry run 39794659993: the Yamuna was said and never
     # shown). Yamuna's Wikidata image includes the Taj Mahal: these Delhi photos were checked by eye (2026-10-23).
@@ -203,6 +247,14 @@ def _neighbours(say: str, at: int, form: str) -> tuple[str, str]:
     return (before[-1] if before else ""), (after[0] if after else "")
 
 
+def _owner(say: str, at: int) -> str:
+    """X in "X के/की/का <form>" (and "X के एक <form>"), else ""."""
+    words = re.findall(r"[\u0900-\u097F]+", say[:at])
+    if words and words[-1] == "एक":
+        words = words[:-1]
+    return words[-2] if len(words) >= 2 and words[-1] in ("की", "के", "का") else ""
+
+
 def blocked(say: str, at: int, en: str = "", form: str = "") -> bool:
     """Whether the thing said at `at` is not this thing: another country's (foreign_before; for an india or generic
     form also abroad), an idiom or a brand by the word beside it (not_before, not_after), or a beat without the word
@@ -216,12 +268,13 @@ def blocked(say: str, at: int, en: str = "", form: str = "") -> bool:
     if not form:
         form = max((f for f in e["forms"] if at in _finds(say, f)), key=len, default=e["hi"])
     local = e["india"] or hindi.norm(form) in {hindi.norm(f) for f in e.get("generic") or ()}
-    if foreign_before(say, at) or local and abroad(say, at, e.get("needs") or ()):
+    # Any country's missile is a missile: a stand-in of the world is never refused by whose it is.
+    if foreign_before(say, at) and (local or not e.get("stand_in")) or local and abroad(say, at, e.get("needs") or ()):
         return True
     before, after = _neighbours(say, at, form)
     if after and any(hindi.norm(after) == hindi.norm(w) for w in e.get("not_before") or ()):
         return True
-    if before and any(hindi.norm(before) == hindi.norm(w) for w in e.get("not_after") or ()):
+    if any(w and any(hindi.norm(w) == hindi.norm(x) for x in e.get("not_after") or ()) for w in (before, _owner(say, at))):
         return True
     return any(hindi.find(say, w) < 0 for w in e.get("needs") or ())
 
@@ -251,8 +304,22 @@ def lexicon_hits(beats: list[dict], india: bool) -> list[dict]:
         mine = e if india else e | {"forms": tuple(f for f in e["forms"] if f not in (e.get("generic") or ()))}
         if any(entry_at(b.get("say") or "", mine) >= 0 for b in beats):
             out.append({"en": e["en"], "hi": e["hi"], "kind": "thing", "title": e["en"],
-                        "alias": [f for f in mine["forms"] if f != e["hi"]], "files": list(e.get("files") or ())})
+                        "alias": [f for f in mine["forms"] if f != e["hi"]], "files": list(e.get("files") or ()),
+                        **({"stand_in": True, "cls": e.get("cls") or ""} if e.get("stand_in") else {})})
     return out
+
+
+# A stand-in's label (Matlabnama audit R2, 2026-10-23): a free photo of the kind of thing a beat names (a train, a
+# plane), never the one in the story, says so on screen beside its credit and in the description's credits, as
+# Hindi news labels a file photo. match.problems refuses a stand-in shown without it.
+STAND_IN = "प्रतीकात्मक तस्वीर"
+
+
+def label(p: dict) -> dict:
+    """A stand-in photo row, labelled once: "stand_in" stamped and STAND_IN before its credit."""
+    if p.get("stand_in") and (p.get("credit") or "").startswith(STAND_IN):
+        return p
+    return p | {"stand_in": True, "credit": f"{STAND_IN} · {p.get('credit') or ''}"}
 
 
 def roles(subject_hi: str) -> tuple[str, ...]:
@@ -327,5 +394,6 @@ def photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | None = N
         img = cv2.imread(r["path"])
         if img is None or writer.featured_face(img, faces.detect(img)):
             continue
-        out.append(r | {"focus": None, "role": "thing", "who": c["hi"]})
+        row = r | {"focus": None, "role": "thing", "who": c["hi"]}
+        out.append(label(row) if c.get("stand_in") else row)
     return out[:keep]

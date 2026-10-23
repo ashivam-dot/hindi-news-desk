@@ -62,12 +62,14 @@ def test_description_is_hindi_with_sources_credits_and_the_ai_label(short):
 
 def test_a_long_description_drops_the_narration_before_any_source_or_credit(short):
     url = "https://commons.wikimedia.org/wiki/File:" + "%CE%A3" * 70 + ".jpg"
+    # Three long credits (the fixture's seven photos, one per beat since R4 of 2026-10-23, already fill more; five
+    # once): enough to drop the narration, not so many that the credits group by licence.
     many = replace(short, credits=short.credits + [f"फ़ोटो: Author {i} / CC BY-SA 2.0 / Wikimedia Commons {url}"
-                                                   for i in range(5)])
+                                                   for i in range(3)])
     text = youtube.description(many, GEMINI)
     assert len(text.encode()) <= youtube.DESCRIPTION_BYTES
     assert short.beats[0].text not in text
-    assert all(s in text for s in short.sources) and "Author 4 / CC BY-SA 2.0" in text and "AI आवाज़" in text
+    assert all(s in text for s in short.sources) and "Author 2 / CC BY-SA 2.0" in text and "AI आवाज़" in text
     assert youtube.HOW_MADE in text
     assert short.beats[0].text in youtube.description(short, GEMINI)
 

@@ -113,8 +113,13 @@ def test_a_beat_that_names_someone_shows_them(short):  # noqa: F811
     assert "pictures: beat 1 names Narendra Modi but shows someone or something else" in wrong
     # Beat 2 names neither Modi nor anything else that can be shown: a text card now, not his photo (shown_is_said).
     assert any("beat 2 shows photo 1" in p for p in wrong)
-    assert gate.said_is_shown(_modi_short(short, ["photo:2/0", "photo:1", "photo:0/2"], modi, plates=["", "card"])) \
+    # Beat 3 shows Modi, and not photo 2 again: one picture, one beat (Matlabnama audit R4, 2026-10-23; it was
+    # "photo:0/2", photos 0 and 2 both beat 1's too). Two Modi photos, one for each Modi beat.
+    modi = [modi[0] | {"photos": [2, 1]}]
+    assert gate.said_is_shown(_modi_short(short, ["photo:2/0", "photo:3", "photo:1"], modi, plates=["", "card"])) \
         == []
+    assert any(" on beats 1 and 3" in p for p in gate.said_is_shown(
+        _modi_short(short, ["photo:2/0", "photo:1", "photo:0/2"], modi, plates=["", "card"])))
 
 
 def test_a_surname_alone_still_shows_the_person():
@@ -129,7 +134,8 @@ def test_a_surname_alone_still_shows_the_person():
              {"say": "फडणवीस ने कहा कि किसी भी दोषी को बख्शा नहीं जाएगा।"}]
     rows = anchored(beats, [0, 1], cast, TIGER_SPELT)
     # Beat 3 names Tiger, who has a photo: his photo, never Juhu's map first (2026-10-22; once [5, 1] cut on टाइगर).
-    assert views_of(rows) == [[0], [3], [1], [3]] and rows[2]["cut_word"] == ""
+    # Fadnavis's one photo is beat 2's: beat 4 is a card (R4, 2026-10-23: one picture, one beat; it was [3] again).
+    assert views_of(rows) == [[0], [3], [1], None] and rows[2]["cut_word"] == ""
 
 
 KOTA = ["टाइगर श्रॉफ की कार पर फायरिंग हुई और वे सुरक्षित बचे।",
@@ -294,7 +300,8 @@ def test_the_police_photo_waits_for_the_police_beat():
     rows = anchored(beats, [0, 1, 2], [juhu, police], TIGER_SPELT)
     # AICWA's claim: a card, not the police. Juhu's map would be one of four picture beats, over match.MAP_SHARE
     # (20%): a card too (2026-10-22; once [8]), and two cards of five is over the ceiling, so the gate sends it back.
-    assert views_of(rows) == [[0], None, None, [10], [10]]
+    # The one police photo is beat 4's: beat 5 is a card (R4, 2026-10-23: one picture, one beat; it was [10]).
+    assert views_of(rows) == [[0], None, None, [10], None]
 
 
 def test_photos_shown_lately_go_last(monkeypatch):
