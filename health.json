@@ -1,23 +1,29 @@
 {
- "at": "2026-10-23T13:30:15+00:00",
+ "at": "2026-10-23T14:18:30+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 15 candidates from 23 trending",
-  "outlets: 1465 headlines from 31 feeds (19 owners), 14 matched to articles, 10 candidates with 2+ owners, 3 nw- stories (on): nw-20261023-taiwan-cyclone, nw-20261023-paris-attack, nw-20261023-jordan-attack",
-  "explainers: 6 kh- stories (on): kh-20261023-Q5276830, kh-20261023-Q3520087, kh-20261023-Q7199798, kh-20261023-Q7635786; dropped: explainer VanDyke / Myanmar: no Wikipedia article that can be its centre; explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by; explainer DK Shivakumar: fewer than 3 owners' headlines name it and the story",
+  "watch: 14 candidates from 20 trending",
+  "outlets: 1466 headlines from 31 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261023-taiwan-cyclone, nw-20261023-jordan-attack",
+  "explainers: 6 kh- stories (on): kh-20261023-Q5276830, kh-20261023-Q140632219, kh-20261023-Q3520087, kh-20261023-Q7199798; dropped: explainer WhatsApp: fewer than 3 owners' headlines name it and the story; explainer 'Trump’s Iran War Stance Under Fire As Energy Prices Rise Ahe': no name to tell it by; explainer DK Shivakumar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261023-Q7635786: too low in Google News India's top stories (place 0.27, needs 0.35)",
   "drop wk-Q1699148: 50 h old and no longer trending live",
-  "drop nw-20261023-taiwan-cyclone: too low in Google News India's top stories (place 0.03, needs 0.35)",
-  "drop nw-20261023-paris-attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop nw-20261023-taiwan-cyclone: too low in Google News India's top stories (place 0.06, needs 0.35)",
   "drop nw-20261023-jordan-attack: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
   "drop kh-20261023-Q1340361: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261023-paris-attack, nw-20261023-jordan-attack; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261023-Q3520087, kh-20261023-Q19867977",
-  "skip kh-20261023-Q3520087: gate: no draft passed the fact checks: names lists 'शत्रुजीत कपूर', but the script never writes it exactly like that; beats 5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: राजस्थान, अलवर, अरुणाचल, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
-  "nothing eligible to publish",
-  "channel: about, playlists done; nothing left to do"
- ]
+  "drop wk-Q452431: not in Google News India's top stories (English or Hindi), India's searches, breaking or famous",
+  "drop kh-20261023-Q51993: a world statement, politics or diplomacy story with no India connection",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261023-Q140632219-p2, nw-20261023-jordan-attack; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261023-Q3520087",
+  "published kh-20261023-Q3520087: https://www.youtube.com/shorts/uxl0oMCqYs0",
+  "channel: about: done; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
+ ],
+ "published": {
+  "video_id": "uxl0oMCqYs0",
+  "url": "https://www.youtube.com/shorts/uxl0oMCqYs0",
+  "youtube_title": "भारत तिब्बत सीमा पुलिस बोली, सीमा पर हलचल बढ़ी #shorts #hindinews",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
