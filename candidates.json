@@ -1,12 +1,12 @@
 {
- "at": "2026-10-23T04:16:00+00:00",
+ "at": "2026-10-23T04:57:54+00:00",
  "trending": [
   {
    "qid": "Q320093",
    "title": "Tom Skerritt",
-   "fame": 521241,
+   "fame": 521141,
    "views": 371141,
-   "traffic": 100,
+   "traffic": 0,
    "news": 150000,
    "news_at": "2026-10-22T21:10:36+00:00",
    "headlines": [
@@ -16,16 +16,14 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "US",
     "world"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-22",
-    "google-trends-IN:tom skerritt",
     "google-news:US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
     "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
     "outlet:France Médias Monde"
@@ -63,10 +61,10 @@
    "news_at": "2026-10-23T04:04:35+00:00",
    "headlines": [
     "Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
-    "Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
+    "Powerful earthquake in China’s Tibet region collapses hundreds of homes and kills at least 16 people",
     "Magnitude-7 earthquake hits China’s Tibet, killing at least 16 and destroying hundreds of homes",
-    "People scream, scramble for safety after 7-magnitude quake in Tibet that killed 16",
-    "7-magnitude earthquake strikes Tibet, at least 16 killed - watch"
+    "7-magnitude earthquake strikes Tibet, at least 16 killed - watch",
+    "18 Killed, Over 300 Houses Collapse After Magnitude-7 Earthquake In Tibet"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -74,16 +72,16 @@
    "india_link": true,
    "geos": [
     "IN",
+    "US",
     "world"
    ],
    "label_hi": "२०२६ भोट भूकम्प",
    "via": [
     "wikipedia-current-events-2026-10-22",
     "google-news:Earthquake of magnitude 7 strikes China's Tibet, killing 16, Xinhua reports",
-    "google-news:Magnitude 7 earthquake kills 16 people in China’s Tibet, Xinhua reports",
+    "google-news:Powerful earthquake in China’s Tibet region collapses hundreds of homes and kills at least 16 people",
     "google-news:Magnitude-7 earthquake hits China’s Tibet, killing at least 16 and destroying hundreds of homes",
     "outlet:Guardian Media Group",
-    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:HT Media",
@@ -93,7 +91,6 @@
    ],
    "owners": [
     "Guardian Media Group",
-    "India Today Group",
     "Bennett, Coleman & Co.",
     "NDTV",
     "HT Media",
@@ -111,16 +108,6 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-23T04:04:35+00:00"
-    },
-    {
-     "title": "People scream, scramble for safety after 7-magnitude quake in Tibet that killed 16",
-     "url": "https://www.indiatoday.in/world/story/tibet-magnitude-7-earthquake-kills-16-injures-32-nagqu-china-3023168-2026-10-23?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:19:32+00:00"
     },
     {
      "title": "7-magnitude earthquake strikes Tibet, at least 16 killed - watch",
@@ -151,6 +138,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-23T01:26:05+00:00"
+    },
+    {
+     "title": "7.0 earthquake in Tibet kills at least 16",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/tibet-earthquake-several-dead-46-injured-as-magnitude-7-0-quake-jitters-china-houses-damaged/articleshow/135130935.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T00:43:46+00:00"
     },
     {
      "title": "Tibet rocked by 7.0-magnitude earthquake",
@@ -204,6 +201,270 @@
    "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
   },
   {
+   "qid": "Q1699148",
+   "title": "John Anderson (singer)",
+   "fame": 336579,
+   "views": 336579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-22"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1699148",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261023-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+   "story_keys": [
+    "carbon",
+    "climate",
+    "disaster’",
+    "emission",
+    "finance",
+    "inviting",
+    "you"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T04:22:53+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "NDTV",
+    "India Today Group",
+    "TV9 Network"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "Problem caused by you: Piyush Goyal blames developed nations for climate crisis",
+    "‘You are responsible for this mess’: Piyush Goyal slams West over carbon emissions, climate finance failures"
+   ],
+   "hindi_headlines": [
+    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
+    "क्लाइमेट चेंज पर पीयूष गोयल ने उधेड़ दी यूरोप की बखिया, कहा- क्या हुआ वादों का, कहां गए 100 बिलियन डॉलर",
+    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
+    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
+   ],
+   "hindi_news": 5,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "पीयूष गोयल",
+   "reports": [
+    {
+     "title": "‘You are responsible for this mess’: Piyush Goyal slams West over carbon emissions, climate finance failures",
+     "url": "https://www.hindustantimes.com/india-news/you-are-responsible-for-this-mess-piyush-goyal-slams-west-over-carbon-emissions-climate-finance-failures-101792723932578.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T04:22:53+00:00"
+    },
+    {
+     "title": "Problem caused by you: Piyush Goyal blames developed nations for climate crisis",
+     "url": "https://www.indiatoday.in/india/story/piyush-goyal-developed-nations-global-climate-crisis-finance-3023236-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T04:21:55+00:00"
+    },
+    {
+     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:06:41+00:00"
+    },
+    {
+     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T01:48:25+00:00"
+    },
+    {
+     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T16:20:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "google-news:\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
+   ],
+   "top": {
+    "IN-nation": 7,
+    "IN-hi-nation": 11
+   },
+   "top_score": 0.57,
+   "top_headlines": [
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance"
+   ]
+  },
+  {
+   "id": "kh-20261023-Q209330",
+   "qid": "Q209330",
+   "title": "Instagram",
+   "name": "Instagram",
+   "phrase": "Instagram",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+   "story_keys": [
+    "book",
+    "debut",
+    "first",
+    "look",
+    "make",
+    "memoir",
+    "share",
+    "sonia",
+    "upcoming"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T02:24:10+00:00",
+   "owners": [
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+    "Sonia joins Instagram, shares first look of her upcoming memoir"
+   ],
+   "hindi_headlines": [
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया: नई किताब का वीडियो शेयर किया, यह 10 नवंबर क..."
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "इंस्टाग्राम",
+   "reports": [
+    {
+     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
+     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:24:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T20:50:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T07:45:11+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:30:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:DB Corp",
+    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "google-news:सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया: नई किताब का वीडियो शेयर किया, यह 10 नवंबर क..."
+   ],
+   "top": {
+    "IN-hi-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
+   ]
+  },
+  {
    "id": "kh-20261023-Q1174",
    "qid": "Q1174",
    "title": "Haryana",
@@ -232,8 +493,8 @@
     "TV9 Network",
     "DB Corp"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -241,17 +502,16 @@
     "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
     "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
     "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+    "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
     "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
    "hindi_headlines": [
     "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
+    "हरियाणा में बिजली संकट: कर्मचारियों की हड़ताल के कारण 15 जिलों में हाहाकार, 28 घंटे से कटौती",
     "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
-    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
    ],
-   "hindi_news": 5,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -260,7 +520,7 @@
    "label_hi": "हरियाणा",
    "reports": [
     {
-     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+     "title": "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
      "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -307,367 +567,13 @@
     "outlet:Government of India",
     "outlet:TV9 Network",
     "outlet:DB Corp",
-    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
-    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
-   "top": {
-    "IN-hi-nation": 13
-   },
-   "top_score": 0.24,
-   "top_headlines": [
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
-   ],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
-   "qid": "Q1699148",
-   "title": "John Anderson (singer)",
-   "fame": 336579,
-   "views": 336579,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1699148",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261023-Q209330",
-   "qid": "Q209330",
-   "title": "Instagram",
-   "name": "Instagram",
-   "phrase": "Instagram",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-   "story_keys": [
-    "book",
-    "debut",
-    "first",
-    "look",
-    "make",
-    "memoir",
-    "share",
-    "sonia",
-    "upcoming"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:24:10+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-    "Sonia joins Instagram, shares first look of her upcoming memoir"
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
-    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
-    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "इंस्टाग्राम",
-   "reports": [
-    {
-     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
-     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:24:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T20:50:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T07:45:11+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:45:44+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:30:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp",
-    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
-    "google-news:सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
-   ],
-   "top": {
-    "IN-hi-nation": 19
-   },
-   "top_score": 0.06,
-   "top_headlines": [
-    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q140632219",
-   "qid": "Q140632219",
-   "title": "Neha Bora",
-   "name": "Neha Bora",
-   "phrase": "Neha Bora",
-   "person": true,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-   "story_keys": [
-    "nothing",
-    "regime",
-    "seeking",
-    "tell",
-    "wrong"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-22T22:43:41+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-    "‘Nothing wrong with regime change’, Neha Bora tells Delhi HC; cops counter her",
-    "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
-    "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
-    "Neha Bora can outwit the police. Can Indian youth leader outfox Modi?"
-   ],
-   "hindi_headlines": [
-    "नेहा बोरा की याचिका पर दिल्ली हाई कोर्ट आज सुनाएगा फैसला",
-    "तिरंगा फहराने के लिए अनुमति की जरूरत नहीं, हाई कोर्ट से बोलीं नेहा बोरा",
-    "योगेंद्र यादव बोले- इस्तीफा नहीं, निष्पक्ष चुनाव चाहिए; उधर नेहा बोरा ने CJP प्रोटेस्ट से किया किनारा, टॉप-5",
-    "नेहा बोरा ने अभिजीत दीपके को ही दे दिया झटका, प्रोटेस्ट पर कोर्ट में कह दी बड़ी बात",
-    "बिना जांच बैड बॉय टैग कैसे? नेहा बोरा केस में दिल्ली HC का पुलिस से सवाल, AISA चीफ का रिजीम चेंज पर भी जवाब"
-   ],
-   "hindi_news": 9,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "नेहा बोरा",
-   "reports": [
-    {
-     "title": "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
-     "url": "https://www.news18.com/india/nothing-wrong-in-seeking-regime-change-neha-bora-in-delhi-hc-verdict-on-aisa-chiefs-plea-today-ws-lrt-10393621.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T22:43:41+00:00"
-    },
-    {
-     "title": "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-     "url": "https://www.thehindu.com/news/cities/Delhi/neha-bora-delhi-high-court-hearing-protest-peace-bond/article71611296.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T17:12:37+00:00"
-    },
-    {
-     "title": "‘Nothing wrong with regime change’, Neha Bora tells Delhi HC; cops counter her",
-     "url": "https://www.hindustantimes.com/india-news/nothing-wrong-with-regime-change-neha-bora-says-tells-delhi-hc-cops-counter-her-delhi-police-101792672448696.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T13:40:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:TV9 Network",
-    "google-news:Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
-    "google-news:Neha Bora can outwit the police. Can Indian youth leader outfox Modi?",
-    "google-news:नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज"
-   ],
-   "top": {
-    "IN-nation": 17,
-    "IN-hi-nation": 7
-   },
-   "top_score": 0.48,
-   "top_headlines": [
-    "नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज",
-    "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q7199798",
-   "qid": "Q7199798",
-   "title": "Piyush Goyal",
-   "name": "Piyush Goyal",
-   "phrase": "Piyush Goyal",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-   "story_keys": [
-    "carbon",
-    "climate",
-    "disaster’",
-    "inviting"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:06:41+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "hindi_headlines": [
-    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
-    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
-    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
-    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
-   ],
-   "hindi_news": 4,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "पीयूष गोयल",
-   "reports": [
-    {
-     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:06:41+00:00"
-    },
-    {
-     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T01:48:25+00:00"
-    },
-    {
-     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T16:20:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal",
-    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
-   ],
-   "top": {
-    "IN-hi": 5,
-    "IN-nation": 8,
-    "IN-hi-nation": 11
-   },
-   "top_score": 1.145,
-   "top_headlines": [
-    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ]
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261023-Q96418672",
@@ -781,15 +687,13 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
+   "story": "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
    "story_keys": [
     "against",
-    "examined",
     "follow",
     "fresh",
     "impeachment",
     "motion",
-    "per",
     "rule"
    ],
    "date": "2026-10-22",
@@ -804,12 +708,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
-    "'If Motion Against CEC Moved...': LS Speaker Om Birla Amid Calls For Gyanesh Kumar's Resignation",
     "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
-    "CEC impeachment: Birla says fresh motion will be examined as per rules",
+    "'If Motion Against CEC Moved...': LS Speaker Om Birla Amid Calls For Gyanesh Kumar's Resignation",
+    "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
     "Procedures to be followed if fresh impeachment motion against CEC filed: Lok Sabha Speaker Om Birla",
-    "CEC impeachment bid will follow rules, says Om Birla"
+    "CEC impeachment bid will follow rules, says Om Birla",
+    "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -839,16 +743,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-22T17:10:20+00:00"
-    },
-    {
-     "title": "CEC impeachment: Birla says fresh motion will be examined as per rules",
-     "url": "https://timesofindia.indiatimes.com/india/cec-impeachment-speaker-om-birla-says-fresh-motion-against-gyanesh-kumar-will-be-examined-as-per-rules/articleshow/135122265.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T15:48:45+00:00"
     },
     {
      "title": "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
@@ -885,14 +779,15 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
+    "google-news:Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ],
    "top": {
-    "IN-nation": 20
+    "IN": 10,
+    "IN-nation": 5
    },
-   "top_score": 0.03,
+   "top_score": 0.79,
    "top_headlines": [
-    "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
+    "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ]
   },
   {
@@ -988,9 +883,9 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-23T01:24:16+00:00",
+   "news_at": "2026-10-22T14:01:53+00:00",
    "headlines": [
-    "Indian killed as Houthis attack Saudi Arabia’s Dammam airport"
+    "Attack on Saudi Arabia’s King Fahd airport kills two people"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1001,7 +896,7 @@
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
-    "google-news:Indian killed as Houthis attack Saudi Arabia’s Dammam airport"
+    "google-news:Attack on Saudi Arabia’s King Fahd airport kills two people"
    ],
    "owners": [],
    "reports": [],
@@ -1012,9 +907,9 @@
    "coords": null,
    "has_coords": false,
    "top": {
-    "IN": 12
+    "IN": 14
    },
-   "top_score": 0.45,
+   "top_score": 0.35,
    "top_headlines": [
     "Indian killed as Houthis attack Saudi Arabia’s Dammam airport"
    ]
@@ -1050,87 +945,47 @@
    "lane": "obituary"
   },
   {
-   "id": "nw-20261021-delhi-protest",
-   "qid": null,
-   "title": "India news: Gandhi's nephew forced to pull protest photos",
-   "name": "Delhi",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T12:58:00+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Deutsche Welle"
-   ],
-   "fame": 75000,
-   "news": 75000,
+   "qid": "Q141718063",
+   "title": "Parvinder Singh Jhota",
+   "fame": 25000,
    "views": 0,
    "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-23T04:10:14+00:00",
    "headlines": [
-    "'Not A Democracy': Priyanka Gandhi's Son Says Bikaner House Pulled Down His Delhi Protest Photos",
-    "‘They’re just pictures of Indian flag': Raihan Vadra questions removal of protest photos from Delhi exhibition",
-    "CJP Protest Row: Ashutosh Ranka, Saurav Das Released; Prakash Raj Questions Bonds | Delhi Protests",
-    "India news: Gandhi's nephew forced to pull protest photos"
+    "Parvinder Singh Jhota: Who was the anti-drug activist, why was he killed"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "region": "world",
+   "hindi_headlines": [],
+   "region": "india",
    "india_link": true,
+   "geos": [
+    "IN"
+   ],
    "label_hi": null,
+   "via": [
+    "google-news:Parvinder Singh Jhota: Who was the anti-drug activist, why was he killed",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
    "reports": [
     {
-     "title": "India news: Gandhi's nephew forced to pull protest photos",
-     "url": "https://www.dw.com/en/india-news-gandhi-s-nephew-forced-to-pull-protest-photos/live-79727462?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T12:58:00+00:00"
-    },
-    {
-     "title": "CJP Protest Row: Ashutosh Ranka, Saurav Das Released; Prakash Raj Questions Bonds | Delhi Protests",
-     "url": "https://www.news18.com/videos/india/cjp-protest-row-ashutosh-ranka-saurav-das-released-prakash-raj-questions-bonds-delhi-protests-10393052.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Parvinder Singh Jhota: Who was the anti-drug activist, why was he killed",
+     "url": "https://www.thehindu.com/news/national/punjab/parvinder-singh-jhota-anti-drug-activist-killed-punjab/article71606765.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T10:21:29+00:00"
-    },
-    {
-     "title": "‘They’re just pictures of Indian flag': Raihan Vadra questions removal of protest photos from Delhi exhibition",
-     "url": "https://www.hindustantimes.com/india-news/theyre-just-pictures-of-indian-flag-raihan-vadra-questions-removal-of-protest-photos-from-delhi-exhibition-101792653754201.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T07:37:20+00:00"
-    },
-    {
-     "title": "'Not A Democracy': Priyanka Gandhi's Son Says Bikaner House Pulled Down His Delhi Protest Photos",
-     "url": "https://www.news18.com/india/not-a-democracy-priyanka-gandhis-son-says-bikaner-house-pulled-down-his-delhi-protest-photos-10391948.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-21T16:57:44+00:00"
+     "at": "2026-10-23T04:10:14+00:00"
     }
    ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Deutsche Welle"
-   ],
-   "emerging": true,
-   "article": null,
+   "id": "wk-Q141718063",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-13",
    "top": {},
    "top_score": 0.0,
    "top_headlines": []
@@ -1163,6 +1018,36 @@
    "top_score": 0.0,
    "top_headlines": [],
    "audience": "india",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q101407760",
+   "title": "Romano Hummel",
+   "fame": 12857,
+   "views": 12857,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-22"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q101407760",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "audience": "world",
    "lane": "obituary"
   },
   {
@@ -1319,68 +1204,33 @@
  ],
  "candidates": [
   {
-   "qid": "Q320093",
-   "title": "Tom Skerritt",
-   "fame": 521241,
-   "views": 371141,
-   "traffic": 100,
-   "news": 150000,
-   "news_at": "2026-10-22T21:10:36+00:00",
-   "headlines": [
-    "US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
-    "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93"
-   ],
+   "qid": "Q1699148",
+   "title": "John Anderson (singer)",
+   "fame": 336579,
+   "views": 336579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "geos": [
-    "IN",
-    "US",
-    "world"
-   ],
+   "india_link": false,
+   "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-22",
-    "google-trends-IN:tom skerritt",
-    "google-news:US actor Tom Skerritt, who starred in Top Gun, Steel Magnolias and Alien, dies aged 93",
-    "google-news:Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-    "outlet:France Médias Monde"
+    "wikipedia-top-2026-10-22"
    ],
-   "owners": [
-    "France Médias Monde"
-   ],
-   "reports": [
-    {
-     "title": "Emmy-winning US actor Tom Skerritt, known for ‘Top Gun’ and ‘Picket Fences’, dies at 93",
-     "url": "https://www.france24.com/en/culture/20261022-emmy-winning-us-actor-tom-skerritt-top-gun-and-picket-fences-dies-93",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T20:11:54+00:00"
-    }
-   ],
-   "id": "wk-Q320093",
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1699148",
    "kind": "death",
    "category": "death",
    "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "orbitwire": {
-    "qid": "Q320093",
-    "status": "published",
-    "orbitwire_id": "wk-Q320093",
-    "orbitwire_published_at": "2026-10-22T22:48:56+00:00",
-    "orbitwire_url": "https://www.youtube.com/shorts/-5flM6V5zQs",
-    "orbitwire_title": "Tom Skerritt, Actor of Top Gun and Alien, Dies at 93",
-    "high_profile": "fame 521,241 >= 400,000",
-    "india": "linked to India",
-    "angle": "india"
-   },
-   "audience": "india",
+   "audience": "world",
    "lane": "obituary"
   },
   {
@@ -1412,8 +1262,8 @@
     "TV9 Network",
     "DB Corp"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1421,17 +1271,16 @@
     "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
     "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
     "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+    "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
     "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
    "hindi_headlines": [
     "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
+    "हरियाणा में बिजली संकट: कर्मचारियों की हड़ताल के कारण 15 जिलों में हाहाकार, 28 घंटे से कटौती",
     "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
-    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
    ],
-   "hindi_news": 5,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -1440,7 +1289,7 @@
    "label_hi": "हरियाणा",
    "reports": [
     {
-     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+     "title": "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
      "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -1487,48 +1336,13 @@
     "outlet:Government of India",
     "outlet:TV9 Network",
     "outlet:DB Corp",
-    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
-    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
-   "top": {
-    "IN-hi-nation": 13
-   },
-   "top_score": 0.24,
-   "top_headlines": [
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
-   ],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
-   "qid": "Q1699148",
-   "title": "John Anderson (singer)",
-   "fame": 336579,
-   "views": 336579,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-22"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1699148",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261023-Q96418672",
@@ -1779,6 +1593,36 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q101407760",
+   "title": "Romano Hummel",
+   "fame": 12857,
+   "views": 12857,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-22"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q101407760",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q3424313",
    "title": "Deva (composer)",
    "fame": 20344,
@@ -1870,8 +1714,9 @@
   }
  ],
  "notes": [
-  "outlets: 1322 headlines from 30 feeds (18 owners), 21 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261021-delhi-protest",
-  "explainers: 7 kh- stories (on): kh-20261023-Q1174, kh-20261023-Q209330, kh-20261023-Q140632219, kh-20261023-Q7199798; dropped: explainer Raihan Vadra / Raihan Vadra: no Wikipedia article that can be its centre; explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Duo / Retailers: no Wikipedia article that can be its centre",
+  "outlets: 1334 headlines from 31 feeds (19 owners), 18 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261023-Q7199798, kh-20261023-Q209330, kh-20261023-Q1174, kh-20261023-Q96418672; dropped: explainer Raihan Vadra / Raihan Vadra: no Wikipedia article that can be its centre; explainer Houthi: fewer than 3 owners' headlines name it and the story; explainer Arunachal: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q320093: Orbitwire published (wk-Q320093) and no India connection: not told again in Hindi",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -1879,101 +1724,248 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1322,
-  "feeds": 30,
-  "owners": 18,
-  "matched": 21,
-  "corroborated": 9
+  "headlines": 1334,
+  "feeds": 31,
+  "owners": 19,
+  "matched": 18,
+  "corroborated": 7
  },
- "emerging": [
+ "emerging": [],
+ "explainers": [
   {
-   "id": "nw-20261021-delhi-protest",
-   "qid": null,
-   "title": "India news: Gandhi's nephew forced to pull protest photos",
-   "name": "Delhi",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-10-21",
-   "news_at": "2026-10-22T12:58:00+00:00",
+   "id": "kh-20261023-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+   "story_keys": [
+    "carbon",
+    "climate",
+    "disaster’",
+    "emission",
+    "finance",
+    "inviting",
+    "you"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T04:22:53+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "Deutsche Welle"
+    "NDTV",
+    "India Today Group",
+    "TV9 Network"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Not A Democracy': Priyanka Gandhi's Son Says Bikaner House Pulled Down His Delhi Protest Photos",
-    "‘They’re just pictures of Indian flag': Raihan Vadra questions removal of protest photos from Delhi exhibition",
-    "CJP Protest Row: Ashutosh Ranka, Saurav Das Released; Prakash Raj Questions Bonds | Delhi Protests",
-    "India news: Gandhi's nephew forced to pull protest photos"
+    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "Problem caused by you: Piyush Goyal blames developed nations for climate crisis",
+    "‘You are responsible for this mess’: Piyush Goyal slams West over carbon emissions, climate finance failures"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
+    "क्लाइमेट चेंज पर पीयूष गोयल ने उधेड़ दी यूरोप की बखिया, कहा- क्या हुआ वादों का, कहां गए 100 बिलियन डॉलर",
+    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
+    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
+   ],
+   "hindi_news": 5,
    "geos": [
-    "IN",
-    "world"
+    "IN"
    ],
-   "region": "world",
+   "region": "india",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "पीयूष गोयल",
    "reports": [
     {
-     "title": "India news: Gandhi's nephew forced to pull protest photos",
-     "url": "https://www.dw.com/en/india-news-gandhi-s-nephew-forced-to-pull-protest-photos/live-79727462?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-22T12:58:00+00:00"
-    },
-    {
-     "title": "CJP Protest Row: Ashutosh Ranka, Saurav Das Released; Prakash Raj Questions Bonds | Delhi Protests",
-     "url": "https://www.news18.com/videos/india/cjp-protest-row-ashutosh-ranka-saurav-das-released-prakash-raj-questions-bonds-delhi-protests-10393052.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T10:21:29+00:00"
-    },
-    {
-     "title": "‘They’re just pictures of Indian flag': Raihan Vadra questions removal of protest photos from Delhi exhibition",
-     "url": "https://www.hindustantimes.com/india-news/theyre-just-pictures-of-indian-flag-raihan-vadra-questions-removal-of-protest-photos-from-delhi-exhibition-101792653754201.html",
+     "title": "‘You are responsible for this mess’: Piyush Goyal slams West over carbon emissions, climate finance failures",
+     "url": "https://www.hindustantimes.com/india-news/you-are-responsible-for-this-mess-piyush-goyal-slams-west-over-carbon-emissions-climate-finance-failures-101792723932578.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-22T07:37:20+00:00"
+     "at": "2026-10-23T04:22:53+00:00"
     },
     {
-     "title": "'Not A Democracy': Priyanka Gandhi's Son Says Bikaner House Pulled Down His Delhi Protest Photos",
-     "url": "https://www.news18.com/india/not-a-democracy-priyanka-gandhis-son-says-bikaner-house-pulled-down-his-delhi-protest-photos-10391948.html",
+     "title": "Problem caused by you: Piyush Goyal blames developed nations for climate crisis",
+     "url": "https://www.indiatoday.in/india/story/piyush-goyal-developed-nations-global-climate-crisis-finance-3023236-2026-10-23?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T04:21:55+00:00"
+    },
+    {
+     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:06:41+00:00"
+    },
+    {
+     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
+     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-21T16:57:44+00:00"
+     "at": "2026-10-23T01:48:25+00:00"
+    },
+    {
+     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
+     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T16:20:43+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:Deutsche Welle"
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "google-news:\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
+    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
    ],
-   "emerging": true,
-   "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": []
-  }
- ],
- "explainers": [
+   "top": {
+    "IN-nation": 7,
+    "IN-hi-nation": 11
+   },
+   "top_score": 0.57,
+   "top_headlines": [
+    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
+    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance"
+   ]
+  },
+  {
+   "id": "kh-20261023-Q209330",
+   "qid": "Q209330",
+   "title": "Instagram",
+   "name": "Instagram",
+   "phrase": "Instagram",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+   "story_keys": [
+    "book",
+    "debut",
+    "first",
+    "look",
+    "make",
+    "memoir",
+    "share",
+    "sonia",
+    "upcoming"
+   ],
+   "date": "2026-10-22",
+   "news_at": "2026-10-23T02:24:10+00:00",
+   "owners": [
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+    "Sonia joins Instagram, shares first look of her upcoming memoir"
+   ],
+   "hindi_headlines": [
+    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया: नई किताब का वीडियो शेयर किया, यह 10 नवंबर क..."
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "इंस्टाग्राम",
+   "reports": [
+    {
+     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
+     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:24:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
+     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T20:50:10+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
+     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T07:45:11+00:00"
+    },
+    {
+     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
+     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-22T05:30:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:DB Corp",
+    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
+    "google-news:सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया: नई किताब का वीडियो शेयर किया, यह 10 नवंबर क..."
+   ],
+   "top": {
+    "IN-hi-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
+   ]
+  },
   {
    "id": "kh-20261023-Q1174",
    "qid": "Q1174",
@@ -2003,8 +1995,8 @@
     "TV9 Network",
     "DB Corp"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2012,17 +2004,16 @@
     "Haryana Electricity Strike Latest News: Gurugram faces power cuts; state govt to challenge HERC order | Top updates",
     "No power, water in Gurugram, Faridabad, Nuh; 3,000 complaints filed in 12 hours | Why is Haryana in the dark?",
     "Gurugram, Faridabad Face Long Power Outages: Why Haryana Electricity Employees Are On Strike",
-    "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+    "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
     "Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
    "hindi_headlines": [
     "सीएक्यूएम ने पंजाब और हरियाणा में वायु प्रदूषण नियंत्रण उपायों की समीक्षा की, जमीनी स्तर पर तुरंत कार्रवाई करने का आह्वान किया",
+    "हरियाणा में बिजली संकट: कर्मचारियों की हड़ताल के कारण 15 जिलों में हाहाकार, 28 घंटे से कटौती",
     "हरियाणा में बिजली कर्मियों की हड़ताल का दूसरा दिन… 15 जिलों में ब्लैकआउट, 600 फीडर ठप्प, गुस्से में NH-19 किया जाम",
-    "गुरुग्राम में गहराया बिजली संकट, हरियाणा में 40,000 बिजली कर्मचारी हड़ताल पर",
-    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से",
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "टाइगर पर फायरिंग से पहले शूटर्स ने प्रैक्टिस की थी:होटल में भी मिसफायर हुआ; 3 राज्यों से 10 आरोपी गिरफ्तार, इनमें 7 हरियाणा से"
    ],
-   "hindi_news": 5,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -2031,7 +2022,7 @@
    "label_hi": "हरियाणा",
    "reports": [
     {
-     "title": "Gurugram go dark, Rewari villagers block roads amid Haryana power strike",
+     "title": "Gurugram goes dark, Rewari villagers block roads amid Haryana power strike",
      "url": "https://www.indiatoday.in/india/story/haryana-power-crisis-electricity-strike-outages-protests-eight-districts-3023164-2026-10-23?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -2078,337 +2069,13 @@
     "outlet:Government of India",
     "outlet:TV9 Network",
     "outlet:DB Corp",
-    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom",
-    "google-news:हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
+    "google-news:Haryana CM urges power staff to call off 3-day strike against grant of licence to private discom"
    ],
-   "top": {
-    "IN-hi-nation": 13
-   },
-   "top_score": 0.24,
-   "top_headlines": [
-    "हरियाणा में बिजली कर्मियों की हड़ताल: छुट्टी से 25 अधिकारी-कर्मचारी वापस बुलाए, चार राज्यों से मांगे कर्मचारी"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "audience": "india",
    "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261023-Q209330",
-   "qid": "Q209330",
-   "title": "Instagram",
-   "name": "Instagram",
-   "phrase": "Instagram",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-   "story_keys": [
-    "book",
-    "debut",
-    "first",
-    "look",
-    "make",
-    "memoir",
-    "share",
-    "sonia",
-    "upcoming"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:24:10+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-    "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-    "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-    "Sonia joins Instagram, shares first look of her upcoming memoir"
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट किस बारे में आई?",
-    "सोनिया गांधी पहली बार सोशल मीडिया पर, इंस्टाग्राम अकाउंट बनाया:नई किताब का वीडियो शेयर किया, यह 10 नवंबर को लॉन्च होगी",
-    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
-    "सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "इंस्टाग्राम",
-   "reports": [
-    {
-     "title": "Sonia joins Instagram, shares first look of her upcoming memoir",
-     "url": "https://www.hindustantimes.com/india-news/sonia-joins-instagram-shares-first-look-of-her-upcoming-memoir-101792696590445.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:24:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of her upcoming book",
-     "url": "https://timesofindia.indiatimes.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-her-upcoming-book/articleshow/135127125.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T20:50:10+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Unveils Memoir ‘Belonging’ | Instagram Debut | Book First Look",
-     "url": "https://www.news18.com/videos/india/sonia-gandhi-makes-instagram-debut-unveils-memoir-belonging-instagram-debut-book-first-look-10392645.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T07:45:11+00:00"
-    },
-    {
-     "title": "Sonia Gandhi makes Instagram debut, shares first look of upcoming memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.hindustantimes.com/india-news/sonia-gandhi-makes-instagram-debut-shares-first-look-of-upcoming-memoir-belonging-a-journey-of-love-congress-101792647619100.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:45:44+00:00"
-    },
-    {
-     "title": "Sonia Gandhi Makes Instagram Debut, Shares First Look Of Memoir ‘Belonging: A Journey Of Love’",
-     "url": "https://www.news18.com/india/sonia-gandhi-makes-instagram-debut-shares-first-look-of-memoir-belonging-a-journey-of-love-ws-l-10392346.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T05:30:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp",
-    "google-news:श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि",
-    "google-news:सोनिया गांधी ने किया इंस्टाग्राम डेब्यू, पहली पोस्ट में दिखाई आत्मकथा 'Belonging' की झलक"
-   ],
-   "top": {
-    "IN-hi-nation": 19
-   },
-   "top_score": 0.06,
-   "top_headlines": [
-    "श्रद्धा दुबे का 6 लाख वाला बैंक अकाउंट फ्रीज, 4 मोबाइल बरामद; पूछताछ में सता रही इंस्टाग्राम फॉलोअर्स की चि"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q140632219",
-   "qid": "Q140632219",
-   "title": "Neha Bora",
-   "name": "Neha Bora",
-   "phrase": "Neha Bora",
-   "person": true,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-   "story_keys": [
-    "nothing",
-    "regime",
-    "seeking",
-    "tell",
-    "wrong"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-22T22:43:41+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-    "‘Nothing wrong with regime change’, Neha Bora tells Delhi HC; cops counter her",
-    "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
-    "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
-    "Neha Bora can outwit the police. Can Indian youth leader outfox Modi?"
-   ],
-   "hindi_headlines": [
-    "नेहा बोरा की याचिका पर दिल्ली हाई कोर्ट आज सुनाएगा फैसला",
-    "तिरंगा फहराने के लिए अनुमति की जरूरत नहीं, हाई कोर्ट से बोलीं नेहा बोरा",
-    "योगेंद्र यादव बोले- इस्तीफा नहीं, निष्पक्ष चुनाव चाहिए; उधर नेहा बोरा ने CJP प्रोटेस्ट से किया किनारा, टॉप-5",
-    "नेहा बोरा ने अभिजीत दीपके को ही दे दिया झटका, प्रोटेस्ट पर कोर्ट में कह दी बड़ी बात",
-    "बिना जांच बैड बॉय टैग कैसे? नेहा बोरा केस में दिल्ली HC का पुलिस से सवाल, AISA चीफ का रिजीम चेंज पर भी जवाब"
-   ],
-   "hindi_news": 9,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "नेहा बोरा",
-   "reports": [
-    {
-     "title": "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
-     "url": "https://www.news18.com/india/nothing-wrong-in-seeking-regime-change-neha-bora-in-delhi-hc-verdict-on-aisa-chiefs-plea-today-ws-lrt-10393621.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T22:43:41+00:00"
-    },
-    {
-     "title": "Nothing wrong with seeking regime change in a democracy: Neha Bora tells Delhi High Court",
-     "url": "https://www.thehindu.com/news/cities/Delhi/neha-bora-delhi-high-court-hearing-protest-peace-bond/article71611296.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T17:12:37+00:00"
-    },
-    {
-     "title": "‘Nothing wrong with regime change’, Neha Bora tells Delhi HC; cops counter her",
-     "url": "https://www.hindustantimes.com/india-news/nothing-wrong-with-regime-change-neha-bora-says-tells-delhi-hc-cops-counter-her-delhi-police-101792672448696.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T13:40:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:TV9 Network",
-    "google-news:Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case",
-    "google-news:Neha Bora can outwit the police. Can Indian youth leader outfox Modi?",
-    "google-news:नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज"
-   ],
-   "top": {
-    "IN-nation": 17,
-    "IN-hi-nation": 7
-   },
-   "top_score": 0.48,
-   "top_headlines": [
-    "नेहा बोरा ने दिल्ली HC में कहा, 'Regime Change करने की मांग गलत नहीं', कोर्ट में तीखी कानूनी बहस, फैसला आज",
-    "Nothing wrong in call for regime change: Neha Bora to Delhi High Court in SEM notice case"
-   ]
-  },
-  {
-   "id": "kh-20261023-Q7199798",
-   "qid": "Q7199798",
-   "title": "Piyush Goyal",
-   "name": "Piyush Goyal",
-   "phrase": "Piyush Goyal",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-   "story_keys": [
-    "carbon",
-    "climate",
-    "disaster’",
-    "inviting"
-   ],
-   "date": "2026-10-22",
-   "news_at": "2026-10-23T02:06:41+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-    "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-    "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ],
-   "hindi_headlines": [
-    "'आप आपदा को बुला रहे हैं', पीयूष गोयल ने गोरों की बोलती उनके ही घर में बंद की, समझाया यूरोप ने कैसे मचाई तबाही",
-    "‘11 साल से फूटी कौड़ी नहीं दी’, पीयूष गोयल ने जर्मनी में खोला पश्चिम के पापों का बही खाता",
-    "‘ये गड़बड़ी आपने की, जिम्मेदार भारत को ठहरा रहे’, यूरोप को उसी के घर में सुना आए पीयूष गोयल",
-    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
-   ],
-   "hindi_news": 4,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "पीयूष गोयल",
-   "reports": [
-    {
-     "title": "\"Haven't Seen Dime Of That\": Piyush Goyal On $100 Billion Climate Finance",
-     "url": "https://www.ndtv.com/india-news/havent-seen-dime-of-that-piyush-goyal-on-100-billion-climate-finance-12223061#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:06:41+00:00"
-    },
-    {
-     "title": "‘You’re Inviting Disaster’: Piyush Goyal Calls Out Europe Over Carbon Emissions, Climate Commitments",
-     "url": "https://www.news18.com/world/youre-inviting-disaster-piyush-goyal-calls-out-europe-over-carbon-emissions-climate-commitments-ws-kl-10393647.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T01:48:25+00:00"
-    },
-    {
-     "title": "EU carbon tax is ‘inviting disaster’, says Piyush Goyal",
-     "url": "https://www.livemint.com/news/eu-carbon-tax-inviting-disaster-piyush-goyal-cbam-living-costs-11792679997762.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T16:20:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal",
-    "google-news:पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है"
-   ],
-   "top": {
-    "IN-hi": 5,
-    "IN-nation": 8,
-    "IN-hi-nation": 11
-   },
-   "top_score": 1.145,
-   "top_headlines": [
-    "पीयूष गोयल ने जर्मनी में कहा- यूरोप भारत से ज़्यादा कार्बन उत्सर्जन करता है",
-    "EU ‘inviting disaster’ with carbon tax on steel: Piyush Goyal"
-   ]
   },
   {
    "id": "kh-20261023-Q96418672",
@@ -2522,15 +2189,13 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
+   "story": "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
    "story_keys": [
     "against",
-    "examined",
     "follow",
     "fresh",
     "impeachment",
     "motion",
-    "per",
     "rule"
    ],
    "date": "2026-10-22",
@@ -2545,12 +2210,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
-    "'If Motion Against CEC Moved...': LS Speaker Om Birla Amid Calls For Gyanesh Kumar's Resignation",
     "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
-    "CEC impeachment: Birla says fresh motion will be examined as per rules",
+    "'If Motion Against CEC Moved...': LS Speaker Om Birla Amid Calls For Gyanesh Kumar's Resignation",
+    "Fresh Motion Against CEC Gyanesh Kumar Will Be Examined As Per Rules: Om Birla",
     "Procedures to be followed if fresh impeachment motion against CEC filed: Lok Sabha Speaker Om Birla",
-    "CEC impeachment bid will follow rules, says Om Birla"
+    "CEC impeachment bid will follow rules, says Om Birla",
+    "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2580,16 +2245,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-22T17:10:20+00:00"
-    },
-    {
-     "title": "CEC impeachment: Birla says fresh motion will be examined as per rules",
-     "url": "https://timesofindia.indiatimes.com/india/cec-impeachment-speaker-om-birla-says-fresh-motion-against-gyanesh-kumar-will-be-examined-as-per-rules/articleshow/135122265.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-22T15:48:45+00:00"
     },
     {
      "title": "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla",
@@ -2626,14 +2281,15 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "google-news:Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
+    "google-news:Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ],
    "top": {
-    "IN-nation": 20
+    "IN": 10,
+    "IN-nation": 5
    },
-   "top_score": 0.03,
+   "top_score": 0.79,
    "top_headlines": [
-    "Fresh motion against CEC Gyanesh Kumar will be examined as per procedure, says Om Birla"
+    "Any fresh impeachment motion to remove CEC Gyanesh Kumar will follow due process: Om Birla | India News"
    ]
   },
   {
