@@ -121,16 +121,13 @@ def test_a_short_and_its_remake_count_once(tmp_path, monkeypatch):
     assert len(plan.on_channel(ledger.published())) == 5
 
 
-def test_the_evening_keeps_two_regular_slots_but_breaking_news_never_waits(tmp_path, monkeypatch):
+def test_no_ready_story_waits_for_the_evening(tmp_path, monkeypatch):
+    """2026-10-23 (fast lane): the evening reserve is gone; a ready story goes out under the day's cap at any hour."""
     monkeypatch.setattr(ledger, "STATE", tmp_path)
-    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE))  # the last at 10:30 IST
+    ledger.save("published", _day(plan.MAX_PER_DAY - 2))  # the last at 10:30 IST
     noon = utc(9, 11)  # 16:30 IST
-    assert "wait for 18:00 IST" in plan.can_publish(noon)
-    assert "wait for 18:00 IST" in plan.can_publish(noon, spare=True)
-    assert plan.can_publish(noon, breaking=True) is None
-    assert plan.can_publish(utc(9, 12, 30)) is None  # 18:00 IST
-    ledger.save("published", _day(plan.MAX_PER_DAY - plan.EVENING_RESERVE - 1))
     assert plan.can_publish(noon) is None
+    assert plan.can_publish(noon, spare=True) is None
     ready, notes = plan.lineup([{"id": "wk-Q1", "title": "x", "fame": 10 ** 6, "news_at": noon.isoformat(),
                                  "top": None}], noon)
     assert ready and not notes

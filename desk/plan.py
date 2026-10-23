@@ -14,8 +14,8 @@ deaths, air incidents, storms and disasters are still told. A story Google News 
 follow-up parts (follow_up) from new reporting. A story older than STALE_H is dropped unless a live signal (Google Trends
 traffic, or a lead headline under LIVE_NEWS_H old) shows it is trending right now; Wikipedia's most-read list is a
 day behind and never keeps an old story alive. Regular Shorts go out 07:00-24:00 IST as soon as they are made, at
-most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, EVENING_RESERVE of them kept
-for after EVENING_IST (SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and
+most MAX_PER_DAY an IST day (retired and replaced Shorts not counted) and MIN_GAP apart, none held for an hour
+(SLOT_WEIGHT only orders ready Shorts); a case's angles at most CASE_MAX_PER_DAY a day and
 CASE_MAX_TOTAL in all.
 A breaking story (huge fame or BREAKING_OWNERS independent outlets on one incident, and under 12 hours old, or a quake
 USGS rates orange or red or magnitude 7+) goes out at any hour with no gap, up to BREAKING_EXTRA beyond the cap;
@@ -183,10 +183,6 @@ CASE_MAX_TOTAL = 6
 # every weight is a hypothesis for the scorecard to test: 06:00-09:00 and 18:00-20:00 IST preferred, 12:00-14:00
 # avoided, every other hour 1.
 SLOT_WEIGHT = {6: 1.2, 7: 1.2, 8: 1.2, 12: 0.8, 13: 0.8, 18: 1.2, 19: 1.2}
-# Hindi viewers watch most in the evening: before EVENING_IST the regular and case lanes leave EVENING_RESERVE of
-# the day's MAX_PER_DAY slots free for it. Breaking news is not held.
-EVENING_IST = 18.0
-EVENING_RESERVE = 2
 
 
 REMAKES = Path(__file__).resolve().parents[1] / "remakes"
@@ -314,9 +310,6 @@ def can_publish(at: datetime | None = None, breaking: bool = False, spare: bool 
         return f"last Short went out {(at - max(past)).total_seconds() / 3600:.1f} h ago"
     if scheduled and min(scheduled) - at < gap:
         return f"a scheduled Short goes out in {(min(scheduled) - at).total_seconds() / 3600:.1f} h"
-    local = at.astimezone(IST)
-    if not breaking and local.hour + local.minute / 60 < EVENING_IST and len(today) >= MAX_PER_DAY - EVENING_RESERVE:
-        return f"{len(today)} Shorts today; the last {EVENING_RESERVE} wait for {EVENING_IST:02.0f}:00 IST"
     return None
 
 

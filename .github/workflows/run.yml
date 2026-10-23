@@ -80,7 +80,14 @@ jobs:
         with:
           enable-cache: true
       - name: System packages
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+        # An apt mirror has hung this step until the job's timeout: three tries of at most three minutes each.
+        run: |
+          for i in 1 2 3; do
+            sudo timeout 180 apt-get update -qq && sudo timeout 180 apt-get install -y -qq ffmpeg > /dev/null && exit 0
+            sudo dpkg --configure -a || true
+            sleep $((i * 10))
+          done
+          exit 1
       # The fallback writer's weights (7 GB) are fetched per run: with them the cache would pass GitHub's 10 GB limit.
       - uses: actions/cache@v5
         with:
@@ -111,8 +118,12 @@ jobs:
           git add -A
           git -c user.name="hindi-news-desk bot" -c user.email="335661989+ashivam-dot@users.noreply.github.com" \
             commit -q -m "state: run $RUN_ID" || exit 0
-          git pull -q --rebase origin state
-          git push -q origin HEAD:state
+          # Runs overlap the state branch: rebase and retry when it moved, and fail the job if it never lands.
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin state && git push -q origin HEAD:state && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
       - name: Keep the Short
         if: always()
         uses: actions/upload-artifact@v6
