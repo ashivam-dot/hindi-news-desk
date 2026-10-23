@@ -809,12 +809,71 @@ def views(shots: list[dict], words: list[dict], anchored: bool | None = None) ->
     return out
 
 
-def view_record(seen: list[dict]) -> list[dict]:
+def twins(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[dict]:
+    """seen, in place, with a picture held past match.HOLD_MAX seconds in a row (the same photo across its beats'
+    views and its closer cut) cut to a twin: a photo depicting exactly what it depicts (match.depicts), of another
+    look, not vetted out, not a map. The view that would pass the ceiling goes to the twin; one view longer than the
+    ceiling by itself is split at its middle. Shown stays said: the twin is of the same person or place. With no twin
+    the hold stays and match.problems refuses it (review round 2: Neha Bora's portrait held 11.7 s)."""
+    def what(i):
+        return match.depicts(i, photos[i], cast) if 0 <= i < len(photos) else set()
+
+    def twin_of(i):
+        d = what(i)
+        look = (photos[i].get("look") or i) if 0 <= i < len(photos) else i
+        return next((j for j, p in enumerate(photos) if j != i and d and what(j) == d and not p.get("vet")
+                     and not visuals.is_map(p) and (p.get("look") or j) != look), None)
+
+    out, run, held = [], None, 0.0
+    for v in seen:
+        if v.get("outro") or v.get("plate") == match.CARD:
+            out.append(v)
+            run, held = None, 0.0
+            continue
+        span = v["end"] - v["start"]
+        cont = v["photo"] == run
+        if (held if cont else 0.0) + span <= match.HOLD_MAX:
+            held = (held if cont else 0.0) + span
+            run = v["photo"]
+            out.append(v)
+            continue
+        twin = twin_of(v["photo"])
+        if twin is None:
+            held = (held if cont else 0.0) + span
+            run = v["photo"]
+            out.append(v)
+            continue
+        # The view in equal pieces of at most HOLD_MAX, the twin and the photo by turns, the twin first when the
+        # photo was already up before it.
+        n = max(math.ceil(span / match.HOLD_MAX), 1 if cont else 2)
+        turns = [twin, v["photo"]] if cont else [v["photo"], twin]
+        for j in range(n):
+            a, z = v["start"] + span * j / n, v["start"] + span * (j + 1) / n
+            pic = turns[j % 2]
+            out.append(v | {"start": round(a, 3), "end": round(z, 3)} if pic == v["photo"] and j == 0 else
+                       v | {"photo": pic, "start": round(a, 3), "end": round(z, 3), "cut": True,
+                            "motion": MOTIONS[(v["beat_k"] + 2 + j) % len(MOTIONS)]})
+        run, held = turns[(n - 1) % 2], span / n
+    seen[:] = out
+    return seen
+
+
+def view_record(seen: list[dict], flash=()) -> list[dict]:
     """render.json's views: what was on screen when, for the gate's time shares (gate.shown_is_said) and the
-    frame-montage review."""
-    return [{"start": round(v["start"], 2), "end": round(v["end"], 2), "photo": v["photo"], "beat_k": v["beat_k"],
-             "plate": v.get("plate") or "", **({"chip": [round(t, 2) for t in v["chip"]]} if v.get("chip") else {})}
-            for v in seen if not v.get("outro")]
+    frame-montage review. flash: the opening burst's pictures (burst), each a view of beat 1 stamped "burst", the
+    first view starting after them: the gate never saw the flash, and dry run 39871573344 flashed two maps of the
+    Delhi High Court under "नेहा बोरा ने" (review round 2)."""
+    end = len(flash) * BURST_STEP
+    out = [{"start": round(j * BURST_STEP, 2), "end": round((j + 1) * BURST_STEP, 2), "photo": i, "beat_k": 0,
+            "plate": "", "burst": True} for j, i in enumerate(flash)]
+    for v in seen:
+        if v.get("outro") or end and v["end"] <= end:
+            continue
+        start = max(v["start"], end) if end and v["start"] < end else v["start"]
+        out.append({"start": round(start, 2), "end": round(v["end"], 2), "photo": v["photo"], "beat_k": v["beat_k"],
+                    "plate": v.get("plate") or "",
+                    **({"chip": [round(t, 2) for t in v["chip"]]} if v.get("chip") else {})})
+    return out
 
 
 def card_starts(shots: list[dict], seen: list[dict]) -> dict[int, float]:
@@ -973,16 +1032,25 @@ def places_on(seen: list[dict], photos: list[dict]) -> list[tuple[float, float, 
 
 def burst(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[int]:
     """The opening flash, over beat 1's words: other pictures of what beat 1 shows (match.depicts of its views), in
-    the order they come and then the rest of the pool, never a vetted-out photo; [] when there are too few. It once
-    flashed every picture of the Short, maps of places the voice reaches a minute later included."""
+    the order they come and then the rest of the pool, never a vetted-out photo, never a map (a map is one view a
+    Short, under the beat about where: the flash put two maps of the Delhi High Court under "नेहा बोरा ने", dry run
+    39871573344), one per look (a crop is the same picture); [] when there are too few. It once flashed every picture
+    of the Short, maps of places the voice reaches a minute later included."""
     first = [v for v in seen if v.get("beat_k") == 0 and v.get("plate") != match.CARD and not v.get("outro")]
     if not first:
         return []
     keys = set().union(*(match.depicts(v["photo"], photos[v["photo"]], cast) for v in first))
     order = dict.fromkeys([v["photo"] for v in seen if not v.get("outro") and v.get("plate") != match.CARD]
                           + list(range(len(photos))))
-    pics = [i for i in order if i != first[0]["photo"] and 0 <= i < len(photos) and not photos[i].get("vet")
-            and match.depicts(i, photos[i], cast) & keys][:BURST_MAX]
+    looks = {photos[first[0]["photo"]].get("look") or first[0]["photo"]}
+    pics = []
+    for i in order:
+        if i == first[0]["photo"] or not 0 <= i < len(photos) or photos[i].get("vet") or visuals.is_map(photos[i]) \
+                or not match.depicts(i, photos[i], cast) & keys or (photos[i].get("look") or i) in looks:
+            continue
+        looks.add(photos[i].get("look") or i)
+        pics.append(i)
+    pics = pics[:BURST_MAX]
     return pics if len(pics) >= BURST_MIN else []
 
 
@@ -1007,6 +1075,8 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
                       "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
                       "cut_at": beat.cut_at, "card_view": beat.card_view})
     seen = views(shots, timing["words"])
+    if config.MATCHER != "legacy":
+        twins(seen, short.scene["photos"], match.cast_of(short))
     # A text card (match.CARD) as render_full draws it, in the window: its words over the plain channel background
     # (a harm, accused or loss line) or a dark blur of its backdrop, no file tag, name strap or place stamp. The
     # bulletin once showed the backdrop photo itself under a line that names nothing on it (finding 10).
@@ -1131,7 +1201,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "bulletin", "photos": len(photos),
-            "fps": FPS, "size": [W, H], "views": view_record(seen)}
+            "fps": FPS, "size": [W, H], "views": view_record(seen, flash)}
 
 
 # The full-screen Short (owner, 2026-10-21: "you are not able to present the video properly"). The bulletin kept the
@@ -1231,6 +1301,8 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
                       "beat": beat, "outro": beat.shot == "outro", "plate": beat.plate, "cut_word": beat.cut_word,
                       "cut_at": beat.cut_at, "card_view": beat.card_view})
     seen = views(shots, timing["words"])
+    if config.MATCHER != "legacy":
+        twins(seen, short.scene["photos"], match.cast_of(short))
     pair = splits(shots, photos)
     half_plates = {i: Plate(photos[i], Path(photos[i]["path"]).with_suffix(".depth.npy"), size=half, face_share=0.42)
                    for ab in pair.values() for i in ab}
@@ -1372,4 +1444,4 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "full", "photos": len(photos),
-            "splits": len(pair), "fps": FPS, "size": [W, H], "views": view_record(seen)}
+            "splits": len(pair), "fps": FPS, "size": [W, H], "views": view_record(seen, flash)}

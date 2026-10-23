@@ -469,6 +469,8 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     ("उन्होंने", "उनकी") are cards (the pronoun rule is for explainers), so naming the person is the rewrite (review
     round 2). A police line is empty unless SHOWABLE has the police (a story outside India has no police photo:
     match.names). A thing ("तिरंगा") is matched in each inflected form its lexicon lists ("तिरंगे")."""
+    if config.MATCHER == "legacy":
+        return _anchorless_legacy(draft, subject, india, cache, near, kind)
     person = subject.get("person") is not False
     name = (subject.get("hi") or "").strip()
     beats = draft.get("beats") or []
@@ -529,6 +531,32 @@ def _unnamed_subject(beats: list[dict], name: str) -> list[str]:
         return []
     return [f"the story is about {name}, but only {len(said)} of {len(beats)} beats name them: name {name} (or their "
             f"title) in at least {want} beats, so their photo is on screen for their own story."]
+
+
+LEGACY_CARD_RUN = 3  # main's match.CARD_RUN, for the rollback's anchorless
+
+
+def _anchorless_legacy(draft: dict, subject: dict, india: bool, cache: dict | None = None, near: dict | None = None,
+                       kind: str = "") -> list[str]:
+    """main's anchorless, for DESK_MATCHER=legacy (review round 2): more than half the beats, or LEGACY_CARD_RUN in a
+    row, naming nothing visuals.showable lists; no subject-naming rule, no map-only beats."""
+    person = subject.get("person") is not False
+    can = visuals.showable(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
+    name = (subject.get("hi") or "").strip()
+    listed = ([name] if kind == "death" and person and name else []) + [h for h in can if h != name]
+    if not listed or listed == [name] and kind != "death":
+        return []
+    cast = [{"hi": h, "kind": "place"} for h in can if h not in ("पुलिस", name)]
+    cast += [{"hi": "", "kind": "police"}] if "पुलिस" in can else []
+    spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
+             if len(hindi.norm(w)) >= 3]
+    beats = draft.get("beats") or []
+    empty = [k + 1 for k, b in enumerate(beats) if k and not match.names(b.get("say") or "", cast, spell)]
+    run = max((len(list(g)) for g in _runs(empty)), default=0)
+    if len(empty) * 2 <= len(beats) and run < LEGACY_CARD_RUN:
+        return []
+    return [f"beats {','.join(map(str, empty))} name nothing that can be shown; SHOWABLE: {', '.join(listed)}. Name "
+            f"in each beat the person, place or police it is about (one of SHOWABLE where the SOURCES allow)."]
 
 
 def _runs(nums: list[int]):
@@ -973,7 +1001,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                              + misread(draft, spellings(draft, hi_names, looked), ground_hi, reports))
             # On the last draft too: a Short whose beats will be cards or maps is refused after its render otherwise,
             # and that costs a render and a writing slot (review round 1, F10).
-            if india is not None:
+            # The rollback (DESK_MATCHER=legacy) as main: no last-draft run.
+            if india is not None and (attempt < DRAFTS - 1 or config.MATCHER != "legacy"):
                 problems += anchorless(draft, subject, india, shows, near, kind)
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
@@ -1712,24 +1741,34 @@ def _face_like(n: dict) -> bool:
 
 
 def faceless(title: str, photos: list[dict], cast: list[dict], name_hi: str, person: bool,
-             names: list[dict] | None = None, hook: str = "", beats=()) -> str | None:
+             names: list[dict] | None = None, hook: str = "", beats=(), looked: dict | None = None) -> str | None:
     """Why a written Short is refused before any render: the person it is about has no photo that passed vetting,
     or its title or hook names, or TOLD_BEATS of its beats name, a person or thing with none: a cast person or
     thing, or a name the script lists that reads as a person's (_face_like: "रेहान" after "प्रियंका वाड्रा के बेटे",
     or a two-word name, kinship word or not; review round 1: "रेहान वाड्रा की प्रदर्शनी से तस्वीरें हटाई गईं"
     passed). photos and cast as visuals.direct returns them (stamped "depicts" and "vet"); names: the script's
     names; beats: the spoken lines. A cast row whose photo failed to download ("miss") is retried ("usable photos"),
-    not skipped."""
+    not skipped.
+
+    looked: visuals.cast_for's fates of the script's names. With it, a script name outside the cast is refused only
+    when its lookup ran and found nothing ("unfound"): a firm, a station or a hall it found (Air India, Delhi Metro,
+    Bharat Mandapam), a person the MAX_PEOPLE cap left out, or a lookup that failed is no faceless person (review
+    round 2: unread is not faceless). Without it (a Short saved before the fates) the old reading holds. The title
+    or hook counts only with the full name, and a one-word alias never when it is a place or a common word."""
     lines = [b if isinstance(b, str) else (b.get("say") or b.get("text") or "") for b in beats]
     heard = f"{title} {hook}"
 
     def shown(key: str) -> bool:
         return any(key in (p.get("depicts") or []) and not p.get("vet") and not visuals.is_map(p) for p in photos)
 
-    def told(hi: str, alias=()) -> bool:
+    def told(hi: str, alias=(), full: bool = False) -> bool:
         forms = [f for f in [hi, *alias] if f and len(hindi.norm(f)) >= 3]
-        return any(hindi.contains(heard, f) for f in forms) or \
+        return any(hindi.contains(heard, f) for f in (forms[:1] if full else forms)) or \
             sum(any(hindi.contains(t, f) for f in forms) for t in lines) >= TOLD_BEATS
+
+    places = {hindi.norm(w) for c in cast if c.get("kind") == "place"
+              for w in [*(c.get("hi") or "").split(), *(c.get("alias") or [])] if w}
+    places |= {hindi.norm(w) for w in visuals.FORCE_PLACES}
 
     if person and name_hi and not shown(match.SUBJECT):
         return f"{FACELESS} no photo of {name_hi} passed vetting; a Short about them is not made (skipped, not retried)"
@@ -1749,6 +1788,8 @@ def faceless(title: str, photos: list[dict], cast: list[dict], name_hi: str, per
         if not hi or hindi.norm(hi) in seen or hindi.contains(name_hi, hi) or hindi.contains(hi, name_hi) \
                 or any(w in hi for w in visuals.POLICE) or not _face_like(n):
             continue
+        if looked is not None and looked.get(hindi.norm(hi)) != "unfound":
+            continue
         first = hi.split()[0]
         # One word is a city or a firm as often as a person: only after a kinship word somewhere.
         if len(hi.split()) == 1 and (first in hindi.FUNCTION_WORDS or len(hindi.norm(first)) < 3
@@ -1756,8 +1797,10 @@ def faceless(title: str, photos: list[dict], cast: list[dict], name_hi: str, per
             continue
         if any(hindi.contains(w, first) for c in pictured for w in [c.get("hi") or "", *(c.get("alias") or [])]):
             continue
-        if told(hi, [first] if len(hindi.norm(first)) >= 3 and first not in hindi.FUNCTION_WORDS else []):
-            where = "title" if hindi.contains(title, first) else "Short"
+        alias = [first] if len(hindi.norm(first)) >= 3 and first not in hindi.FUNCTION_WORDS \
+            and hindi.norm(first) not in places and len(hi.split()) > 1 else []
+        if told(hi, alias, full=looked is not None):
+            where = "title" if hindi.contains(title, hi if looked is not None else first) else "Short"
             return (f"{FACELESS} the {where} is about {hi}, and no free photo of them was found (skipped, not "
                     "retried)")
     return None
@@ -1780,16 +1823,17 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     tags = tags + search_tags(name)
     recent = recent_photos()
     year = int(event_time[:4]) if re.match(r"20\d\d", event_time or "") else _today_ist().year
+    looked: dict = {}
     photos, views, cast = visuals.direct(draft, photos, name if person else "", region == "india",
                                          WORK / sid / "photos" / "cast",
                                          set((ov or {}).get("excluded_photos") or []), tribute=kind == "death",
                                          recent=recent, kind=kind, year=year, born=born,
                                          incident=kind in ("incident", "protest", "death") or bool(loss),
-                                         near=near, subject_hi=name_hi)
+                                         near=near, subject_hi=name_hi, looked=looked)
     # The rollback (config.MATCHER legacy) shows what it finds, as gate.richness judges it.
     if config.MATCHER != "legacy" and (refused := faceless(draft["title"], photos, cast, name_hi, bool(person),
                                                             draft.get("names"), hook or "",
-                                                            [b["say"] for b in draft["beats"]])):
+                                                            [b["say"] for b in draft["beats"]], looked)):
         raise ValueError(refused)
     if kind != "death" and (stale := stale_pictures(photos, views, recent)):
         raise ValueError(stale)
@@ -1830,7 +1874,7 @@ def _short(sid, kind, name, name_hi, draft, log, used, facts, facts_text, source
     credits = [credit] + sorted({p["credit"] + " " + p["page"] for p in photos})
     scene = {"template": "full", "mood": mood, "voice": "sulafat", "region": region, "photos": photos,
              "name_hi": name_hi, "subject_person": bool(person), "names": draft.get("names", []), "cast": cast,
-             "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
+             "names_looked": looked, "writer": {"models": used, "rejected": log, "titles": draft.get("titles")}}
     if ov:
         scene["orbitwire"] = ov
     if hook is not None:
@@ -2011,7 +2055,7 @@ def build_explainer(cand: dict) -> Short:
     name = stories.plain_title(wiki.label(ent) or title)
     name_hi = wiki.common_hindi(ent)
     phrase = cand.get("phrase") or name
-    if person and (refused := relative_faceless(cand, name, ent)):
+    if person and config.MATCHER != "legacy" and (refused := relative_faceless(cand, name, ent)):
         raise ValueError(refused)
     work = WORK / sid
     mine = [r for r in cand.get("reports") or []

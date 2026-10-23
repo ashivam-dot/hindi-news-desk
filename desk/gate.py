@@ -452,7 +452,8 @@ def richness(short: Short) -> list[str]:
         return []
     why = writer.faceless(short.title, photos, short.scene.get("cast") or [], short.scene.get("name_hi") or "",
                           match._person(short) and short.kind in ("", "explainer"), short.scene.get("names"),
-                          short.scene.get("hook") or "", [b.text for b in short.beats if b.shot != "outro"])
+                          short.scene.get("hook") or "", [b.text for b in short.beats if b.shot != "outro"],
+                          short.scene.get("names_looked"))
     return [why] if why else []
 
 

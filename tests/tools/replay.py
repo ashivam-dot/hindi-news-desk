@@ -98,9 +98,14 @@ def timed_views(short: Short, timing: dict | None, anchored: bool) -> list[dict]
         return None
     shots = shots_of(short, timing["beats"], timing.get("duration") or timing["beats"][-1][1])
     seen = compose.views(shots, timing.get("words") or [], anchored=anchored)
+    if anchored:  # a picture held past match.HOLD_MAX cut to its twin, as the renders do (compose.twins)
+        compose.twins(seen, short.scene.get("photos") or [], match.cast_of(short))
     if anchored:  # render_full's chips, each stamped on its view; the legacy render held them CHIP_HOLD from the cut
         compose.chip_plan(short, shots, seen)
-    return compose.view_record(seen)
+    # The opening flash the renders show over beat 1 (compose.burst), recorded as render.json records it.
+    flash = [] if short.loss or not anchored else compose.burst(seen, short.scene.get("photos") or [],
+                                                                 match.cast_of(short))
+    return compose.view_record(seen, flash)
 
 
 def replan(short: Short) -> tuple[Short, list[dict]]:

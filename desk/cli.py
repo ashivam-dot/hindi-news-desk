@@ -38,6 +38,10 @@ PICTURE_REASONS = ("pictures:", "text cards", "name nothing that can be shown", 
 
 
 def retry_limit(reason: str) -> int:
+    """ledger.retry's limit for a refusal: PICTURE_TRIES for a picture or card refusal, six for the rest and for
+    every refusal under DESK_MATCHER=legacy (main's six tries)."""
+    if config.MATCHER == "legacy":
+        return 6
     return PICTURE_TRIES if any(m in reason for m in PICTURE_REASONS) else 6
 
 
@@ -387,6 +391,18 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 health["steps"].append(str(exc))
                 health["held"] = str(exc)
                 return health
+            except ValueError as exc:
+                # make()'s own gate on the rendered time shares ("gate: pictures: ..."): the same tries as the
+                # prepare-time picture gate (retry_limit), not six (review round 2).
+                reason = str(exc)
+                if not reason.startswith("gate: "):  # a rejected take, a bad input: as before
+                    note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
+                elif retryable(reason):
+                    note_retry(cand["id"], reason[:300], limit=retry_limit(reason))
+                else:
+                    note_skip(cand["id"], reason[:300])
+                health["steps"].append(f"skip {cand['id']}: {reason}"[:400])
+                continue
             except Exception as exc:  # ffmpeg, a corrupt take or an encoder error: count it, try the next story
                 note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
                 health["steps"].append(f"skip {cand['id']}: {type(exc).__name__}: {exc}"[:400])

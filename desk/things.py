@@ -41,14 +41,15 @@ LEXICON = (
     {"hi": "तिरंगा", "forms": ("तिरंगा", "तिरंगे", "तिरंगों", "भारतीय ध्वज", "भारतीय झंडा", "भारतीय झंडे", "राष्ट्रीय ध्वज",
                               "राष्ट्रध्वज", "राष्ट्रीय झंडा", "राष्ट्रीय झंडे"),
      "generic": ("राष्ट्रीय ध्वज", "राष्ट्रध्वज", "राष्ट्रीय झंडा", "राष्ट्रीय झंडे"),
-     "en": "Flag of India", "india": False,
+     "en": "Flag of India", "india": False, "not_after": ("फिल्म", "फ़िल्म", "मूवी"),
      "files": ("File:Flag of India, New Delhi.jpg", "File:Shiny Indian flag on high rise.jpg",
                "File:Flag of India Kodaikanal Tamil Nadu 20060126.jpg", "File:INS Kadmatt - Indian Flag.jpg")},
     {"hi": "संसद", "forms": ("संसद", "संसद भवन", "नई संसद", "नए संसद भवन", "नया संसद भवन"),
      "en": "Parliament House, New Delhi", "india": True},
     {"hi": "सुप्रीम कोर्ट", "forms": ("सुप्रीम कोर्ट", "सर्वोच्च न्यायालय", "उच्चतम न्यायालय", "शीर्ष अदालत"),
      "en": "Supreme Court of India", "india": True},
-    {"hi": "लाल किला", "forms": ("लाल किला", "लाल किले", "लालकिला", "लालकिले"), "en": "Red Fort", "india": True},
+    {"hi": "लाल किला", "forms": ("लाल किला", "लाल किले", "लालकिला", "लालकिले"), "en": "Red Fort", "india": True,
+     "not_before": ("मेट्रो", "स्टेशन")},
     {"hi": "इंडिया गेट", "forms": ("इंडिया गेट",), "en": "India Gate", "india": True},
     {"hi": "राष्ट्रपति भवन", "forms": ("राष्ट्रपति भवन",), "en": "Rashtrapati Bhavan", "india": True},
     {"hi": "ताजमहल", "forms": ("ताजमहल", "ताज महल"), "en": "Taj Mahal", "india": False,
@@ -58,7 +59,7 @@ LEXICON = (
     {"hi": "वंदे भारत", "forms": ("वंदे भारत", "वंदे भारत एक्सप्रेस", "वंदे भारत ट्रेन", "वंदे भारत ट्रेनों"),
      "en": "Vande Bharat Express", "india": True, "not_before": ("मिशन", "अभियान", "उड़ान", "उड़ानों", "फ्लाइट")},
     {"hi": "बाघ", "forms": ("बाघ", "बाघों", "बाघिन", "बाघिनों"), "en": "Bengal tiger", "india": False,
-     "not_before": ("बकरी",)},
+     "not_before": ("बकरी", "एक्सप्रेस", "मेल", "एक्सप्रेसवे")},
     {"hi": "तेंदुआ", "forms": ("तेंदुआ", "तेंदुए", "तेंदुओं"), "en": "Indian leopard", "india": False},
     {"hi": "हाथी", "forms": ("हाथी", "हाथियों"), "en": "Indian elephant", "india": False, "not_after": ("सफेद", "सफ़ेद")},
     {"hi": "तेल टैंकर", "forms": ("तेल टैंकर", "तेल टैंकरों", "टैंकर जहाज"), "en": "Oil tanker", "india": False},
@@ -122,7 +123,7 @@ def figures_said(beats: list[dict]) -> list[dict]:
 # A country, its people or its adjective (Hindi spellings the news uses; review round 1 found "इजरायल", "पोलैंड",
 # "यूरोपीय", "इटली" and "दक्षिण कोरिया" missing): right before a thing it is another country's ("अमेरिकी सुप्रीम
 # कोर्ट", "ब्रिटेन की संसद"), and anywhere earlier in the beat it makes an india form another country's.
-FOREIGN = ("अमेरिका", "अमेरिकी", "अमरीका", "अमरीकी", "यूएस", "US", "पाकिस्तान", "पाकिस्तानी", "ब्रिटेन", "ब्रिटिश", "इंग्लैंड",
+FOREIGN = ("अमेरिका", "अमेरिकी", "अमरीका", "अमरीकी", "यूएस", "US", "पाकिस्तान", "पाकिस्तानी", "पाक", "ब्रिटेन", "ब्रिटिश", "इंग्लैंड",
            "चीन", "चीनी", "रूस", "रूसी", "नेपाल", "नेपाली", "बांग्लादेश", "बांग्लादेशी", "श्रीलंका", "श्रीलंकाई", "इजराइल",
            "इज़राइल", "इजरायल", "इज़रायल", "इस्राइल", "इसराइल", "इजरायली", "इज़रायली", "इजराइली", "ईरान", "ईरानी", "इराक",
            "इराकी", "जापान", "जापानी", "कनाडा", "कनाडाई", "फ्रांस", "फ्रांसीसी", "फ्रेंच", "जर्मनी", "जर्मन", "यूक्रेन", "यूक्रेनी",
@@ -133,7 +134,13 @@ FOREIGN = ("अमेरिका", "अमेरिकी", "अमरीका
            "ऑस्ट्रेलियाई", "न्यूजीलैंड", "दक्षिण अफ्रीका", "अफ्रीका", "अफ्रीकी", "नाइजीरिया", "केन्या", "मिस्र", "सऊदी",
            "सऊदी अरब", "यूएई", "कतर", "कुवैत", "ओमान", "बहरीन", "सीरिया", "लेबनान", "जॉर्डन", "यमन", "फलस्तीन",
            "फिलिस्तीन", "फिलिस्तीनी", "गाजा", "ब्राजील", "ब्राज़ील", "अर्जेंटीना", "मेक्सिको", "मालदीव", "भूटान", "म्यांमार",
-           "विदेशी")
+           "विदेशी",
+           # Foreign capitals and big cities the Hindi news names alone ("ढाका में सुप्रीम कोर्ट ने ...", "काठमांडू में
+           # संसद भवन में आग", review round 2 put India's Supreme Court and Parliament there).
+           "ढाका", "इस्लामाबाद", "लाहौर", "कराची", "रावलपिंडी", "पेशावर", "काठमांडू", "काठमांडो", "कोलंबो", "थिम्पू",
+           "काबुल", "लंदन", "वॉशिंगटन", "वाशिंगटन", "न्यूयॉर्क", "न्यूयार्क", "बीजिंग", "मॉस्को", "मास्को", "तेहरान",
+           "दुबई", "अबू धाबी", "रियाद", "तेल अवीव", "यरुशलम", "येरुशलम", "पेरिस", "बर्लिन", "टोक्यो", "सियोल",
+           "कीव", "ओटावा", "टोरंटो", "सिडनी", "मेलबर्न", "वारसॉ", "वारसा", "ब्रसेल्स", "जिनेवा", "बैंकॉक", "यंगून")
 # What an English article about a thing says it is (its Wikidata description).
 THING = re.compile(r"\b(ship|vessel|tanker|aircraft|airliner|helicopter|fighter|jet|submarine|aircraft carrier|"
                    r"frigate|destroyer|corvette|warship|train|locomotive|missile|rocket|launch vehicle|rifle|tank|"
