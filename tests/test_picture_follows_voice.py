@@ -202,3 +202,70 @@ def test_replay_reports_repeats_and_maps():
     s = mk(["दिल्ली में हादसा हुआ।", "दिल्ली में बचाव जारी है।"], ["photo:3", "photo:3"], photos)
     assert replay.repeats(s) == 1 and replay.map_places(s) == [DELHI]
     assert replace(s).beats[0].text == "दिल्ली में हादसा हुआ।"
+
+
+# --- Dry run 39954439164 (wiki:Air India Flight 171), the branch's own first dry run --------------------------------
+
+def _claim(pid, value):
+    return {pid: [{"rank": "normal", "mainsnak": {"datavalue": {"value": value}}}]}
+
+
+def test_the_story_own_vehicle_is_shown_not_a_stand_in():
+    """The article's "VT-ANB, the aircraft involved in the incident." stood unused while an Airbus A380 and an ANA
+    cargo jet were shown as "विमान" (R2: a stand-in only when there is no free photo of the actual thing)."""
+    story = [photo("File:Air India 787-8 (VT-ANB).jpg", origin="article",
+                   description="VT-ANB, the aircraft involved in the incident."),
+             photo("File:Sardar Vallabhbhai Patel International Airport, Ahmedabad, India 3.jpg", origin="article",
+                   description="Ahmedabad Airport"),
+             photo("File:VT-ANB B787-837 Air India BHX 25FEB14 (12781237535).jpg", origin="article",
+                   description="This was a nice surprise, arriving just as it was getting dark."),
+             photo("File:Boeing 777-337ER - Air India (VT-ALK).JPG", origin="article",
+                   description="Boeing 777-337ER - Air India (VT-ALK) aircraft")]
+    plane = {"en": "Airplane", "hi": "विमान", "kind": "thing", "stand_in": True,
+             "cls": next(e["cls"] for e in things.LEXICON if e["en"] == "Airplane")}
+    assert visuals.actual_thing(plane, story, [0, 1, 2, 3]) == [0, 2]  # VT-ALK is another Air India plane
+    assert visuals.actual_thing(plane, story[1:], [0, 1, 2]) == []  # no photo says it is the one: a stand-in
+    wreck = [photo("File:Coromandel Express.jpg", origin="article", description="The train involved, in 2019")]
+    train = {"en": "Train", "hi": "ट्रेन", "kind": "thing", "stand_in": True,
+             "cls": next(e["cls"] for e in things.LEXICON if e["en"] == "Train")}
+    assert visuals.actual_thing(train, wreck, [0]) == [0]
+    assert visuals.actual_thing(plane, wreck, [0]) == []
+
+
+def test_a_spot_resolves_in_the_city_the_script_names_first():
+    """"बी. जे. मेडिकल कॉलेज" in an Ahmedabad crash resolved to Pune's B. J. Medical College: its Pune photo stood
+    under the beat. With no dateline, the script's first city is where later spots are looked up."""
+    seen = []
+    city = {"claims": _claim("P625", {"latitude": 23.03, "longitude": 72.58}) | _claim("P1082", {"amount": "+5570585"})}
+
+    def resolver(en, india, near=None):
+        seen.append((en, near))
+        return ("Q1", "Ahmedabad", city) if en == "Ahmedabad" else None
+
+    draft = {"names": [{"en": "Ahmedabad", "hi": "अहमदाबाद"}, {"en": "B. J. Medical College", "hi": "बी. जे. कॉलेज"}],
+             "beats": [{"say": "अहमदाबाद में विमान गिरा।"}, {"say": "बी. जे. कॉलेज के हॉस्टल पर।"}]}
+    CAST_FOR(draft, "", True, resolver=resolver, thing_resolver=lambda en: None, thing_lookup=lambda e: None)
+    assert seen[0] == ("Ahmedabad", None)
+    assert seen[1] == ("B. J. Medical College", {"en": "Ahmedabad", "at": (23.03, 72.58)})
+
+
+def test_the_actual_aircraft_brings_its_registration_category(monkeypatch, tmp_path):
+    """Commons keeps "Category:VT-ANB (aircraft)" (15 free photos): later beats that say "विमान" show the same
+    aircraft again from other photos, not a stand-in and not a card (R1, R2, R4)."""
+    from desk import media
+
+    asked, given = [], []
+    monkeypatch.setattr(media, "_category_files", lambda cat, limit=60: asked.append(cat) or
+                        ["File:Air India 787-8 (VT-ANB).jpg", "File:VT-ANB.jpg", "File:VT-ANB 100624.jpg"])
+    monkeypatch.setattr(things, "photos", lambda c, folder, exclude, recent=None, keep=0:
+                        given.append((list(c["files"]), set(exclude))) or
+                        [photo(f, role="thing", who=c["hi"], focus=None) for f in c["files"] if f not in exclude])
+    story = [photo("File:Air India 787-8 (VT-ANB).jpg", origin="article",
+                   description="VT-ANB, the aircraft involved in the incident.")]
+    plane = {"en": "Airplane", "hi": "विमान", "kind": "thing"}
+    rows = visuals.actual_more(plane, [0], story, tmp_path, {"File:Air India 787-8 (VT-ANB).jpg"})
+    assert asked == ["VT-ANB (aircraft)"]
+    assert [r["file"] for r in rows] == ["File:VT-ANB.jpg", "File:VT-ANB 100624.jpg"]
+    assert all(not r.get("stand_in") for r in rows)
+    monkeypatch.setattr(media, "_category_files", lambda cat, limit=60: (_ for _ in ()).throw(OSError("down")))
+    assert visuals.actual_more(plane, [0], story, tmp_path, set()) == []  # a network failure keeps what it has

@@ -493,6 +493,11 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         if not said:
             continue
         found = resolver(en, india, **({"near": near} if near else {}))
+        if found and near is None and config.MATCHER != "legacy" and wiki.HUMAN not in kinds(found[2]) \
+                and _population(found[2]) and not is_region(found[2]) and (at := wiki.coords(found[2])):
+            # No dateline: the script's first city is where its spots are looked up (dry run 39954439164: "बी. जे.
+            # मेडिकल कॉलेज" in an Ahmedabad crash found Pune's college and showed its photo).
+            near = {"en": en, "at": at}
         fate = hindi.norm(hi)
         fates[fate] = "other" if found else "unread" if en in UNREAD else "unfound"
         if found and topic_like(found[2]):
@@ -563,6 +568,46 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         out = [c for c in out if not (c["kind"] in ("place", "topic") and hindi.norm(c["hi"]) in forms)]
         out.append(hit or e | {"qid": "", "ent": {}})
     return out
+
+
+# What says a story photo is the very vehicle of the story ("VT-ANB, the aircraft involved in the incident."), and
+# a registration or number that ties a second photo to it (dry run 39954439164, wiki:Air India Flight 171).
+INVOLVED = re.compile(r"\b(?:involved|crashed|derailed|wrecked|accident (?:aircraft|train|ship|vessel)|"
+                      r"the (?:aircraft|train|ship|vessel|plane|helicopter|bus) (?:that|which))\b", re.I)
+REGISTRATION = re.compile(r"\b[A-Z0-9]{1,2}-[A-Z0-9]{3,5}\b")
+
+
+def actual_thing(c: dict, photos: list[dict], subject: list[int]) -> list[int]:
+    """The story's own photos (subject) of the very thing a stand-in row stands for: its article's photo that says it
+    is the one involved and its class (c["cls"]), and any other story photo with that one's registration in its file
+    name (its other photos are the story's too). Matlabnama audit R2: a stand-in only when there is no free photo of the actual thing."""
+    cls = c.get("cls")
+    if not (c.get("stand_in") and cls):
+        return []
+    text = {i: f"{photos[i].get('file', '')} {photos[i].get('description') or ''}" for i in subject}
+    own = [i for i in subject if photos[i].get("origin") == "article" and re.search(cls, text[i], re.I)
+           and INVOLVED.search(photos[i].get("description") or "")]
+    marks = {m for i in own for m in REGISTRATION.findall(photos[i].get("file", ""))}
+    return [i for i in subject if i in own or marks & set(REGISTRATION.findall(photos[i].get("file", "")))]
+
+
+ACTUAL_PHOTOS = 4  # more photos of the story's own aircraft: R4 needs one per beat that says "विमान"
+
+
+def actual_more(c: dict, own: list[int], photos: list[dict], folder: Path, exclude: set[str],
+                recent: set[str] | None = None) -> list[dict]:
+    """More free photos of the story's own aircraft: Commons' "Category:<registration> (aircraft)" (VT-ANB has 15),
+    through things.photos' licence, decency and face checks; never a stand-in. A network failure keeps what it has."""
+    marks = list(dict.fromkeys(m for i in own for m in REGISTRATION.findall(photos[i].get("file", ""))))
+    rows: list[dict] = []
+    for m in marks[:1]:
+        try:
+            files = [f for f in media._category_files(f"{m} (aircraft)") if f not in exclude]
+            rows = things.photos({"en": c["en"], "hi": c["hi"], "files": files}, folder, exclude, recent,
+                                 keep=ACTUAL_PHOTOS)
+        except Exception as exc:
+            log.warning("visuals: no more photos of %s (%s)", m, exc)
+    return [r for r in rows if r.get("file") not in exclude]
 
 
 def _description(ent: dict | None) -> str:
@@ -991,6 +1036,16 @@ def direct(draft: dict, photos: list[dict], subject_en: str, india: bool, folder
             if c["kind"] == "topic":
                 rows = _sight_photos(c, folder / f"topic-{c['qid']}", exclude, recent, keep=TOPIC_PHOTOS)
                 c["photos"] = add([r | {"role": "topic"} for r in rows], me)
+                continue
+            if c["kind"] == "thing" and (own := actual_thing(c, photos, subject)):
+                # The vehicle's own photo is the thing's, no longer the story's subject (a crash's hook over the
+                # subject's photo is refused) nor a stand-in: no stand-in is fetched (dry run 39954439164).
+                for i in own:
+                    photos[i] |= {"role": "thing", "who": c["hi"], "focus": None, "depicts": [me]}
+                subject = [i for i in subject if i not in own]
+                slug = re.sub(r"\W+", "-", c["en"]).strip("-").lower()
+                more = actual_more(c, own, photos, folder / f"actual-{slug}", exclude, recent)
+                c["photos"], c["stand_in"] = own + add(more, me), False
                 continue
             if c["kind"] == "thing":
                 slug = c.get("qid") or re.sub(r"\W+", "-", c["en"]).strip("-").lower()
