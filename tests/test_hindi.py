@@ -66,6 +66,7 @@ def test_devanagari_share_and_latin_words():
     assert hindi.devanagari_share("रमेश प्रसाद वर्मा") == 1.0
     assert hindi.devanagari_share("Ramesh Prasad Verma") == 0.0
     assert hindi.latin_words("NDRF की टीम और Air India") == ["NDRF", "Air", "India"]
+    assert hindi.latin_words("La Verrière में फायरिंग, São Paulo") == ["La", "Verrière", "São", "Paulo"]
 
 
 def test_a_checker_item_must_quote_the_script():

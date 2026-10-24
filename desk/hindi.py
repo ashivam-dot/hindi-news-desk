@@ -192,8 +192,9 @@ def devanagari_share(text: str) -> float:
 
 
 def latin_words(text: str) -> list[str]:
-    """Words in Latin script inside a Hindi text (agency names, flight numbers): they must come from a source."""
-    return re.findall(r"[A-Za-z][A-Za-z0-9'’\-]*", text)
+    """Words in Latin script inside a Hindi text (agency names, flight numbers): they must come from a source. Accented
+    letters belong to the word ("La Verrière" was read as "Verri" and "re", neither in the source)."""
+    return re.findall(r"[A-Za-zÀ-ÖØ-öø-ÿ][A-Za-zÀ-ÖØ-öø-ÿ0-9'’\-]*", text)
 
 
 def date_hi(d: date) -> str:
