@@ -1,22 +1,22 @@
 {
- "at": "2026-10-24T09:55:10+00:00",
+ "at": "2026-10-24T10:35:18+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 81 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.193, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16}, 'category:attack': {'n': 13, 'lift': 1.35, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.2}, 'category:diplomacy': {'n': 4, 'lift': 1.122, 'typical_views_24h': 49",
+  "traffic: HttpError: <HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-10-14&endDate=2026-10-21&metrics=views&dimensions=insightTrafficSourceType&filters=video%3D%3DIL2CmZyfROk&sort=-views&alt=json returned \"Internal error encounter",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 10 candidates from 19 trending",
-  "outlets: 1325 headlines from 31 feeds (19 owners), 13 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261023-jordan-attack",
-  "explainers: 5 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q10218, kh-20261024-Q7199798, kh-20261024-Q51993; dropped: explainer Rajiv Gandhi My: fewer than 3 owners' headlines name it and the story; explainer MEA: fewer than 3 owners' headlines name it and the story; explainer \"'People Like Him Will Come And...': Piyush Goyal's Dig At Ab\": no name to tell it by",
+  "watch: 9 candidates from 16 trending",
+  "outlets: 1333 headlines from 31 feeds (19 owners), 13 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261023-taiwan-cyclone",
+  "explainers: 3 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q51993, kh-20261024-Q432473; dropped: explainer Rajiv Gandhi My: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Kim Jong-un: fewer than 3 owners' headlines name it and the story",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141820360: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q983618: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q1699148: 70 h old and no longer trending live",
+  "drop wk-Q1699148: 71 h old and no longer trending live",
   "drop wk-Q452431: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261024-Q51993: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q3012285: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141820360; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
-  "skip kh-20261024-Q10218: gate: no draft passed the fact checks: beats 4,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: दिल्ली, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 1 beat is a text card and never two in a row.",
-  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
