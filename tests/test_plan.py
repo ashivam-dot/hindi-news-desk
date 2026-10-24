@@ -2,7 +2,13 @@ from datetime import date, datetime, timedelta, timezone
 
 import pytest
 
-from desk import ledger, news, plan, trends
+from desk import compare, ledger, news, plan, trends
+
+
+@pytest.fixture(autouse=True)
+def no_comparisons(monkeypatch):
+    """A quiet test channel would also get an evergreen comparison (tests/test_compare.py covers that lane)."""
+    monkeypatch.setattr(compare, "candidates", lambda stories, rows, at: ([], []))
 
 
 def utc(day, hour, minute=0):

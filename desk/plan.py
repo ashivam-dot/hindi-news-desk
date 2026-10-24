@@ -629,7 +629,8 @@ def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], l
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
         # A case angle runs until its file's "until": the owner chose to follow that story.
-        if why := None if c.get("case") else stale(c, at) or unpopular(c, at):
+        # A comparison (desk/compare.py) is published data, not a trending story: it never goes stale.
+        if why := None if c.get("case") or c.get("compare") else stale(c, at) or unpopular(c, at):
             notes.append(f"drop {c['id']}: {why}")
             continue
         breaking = is_breaking(c, at)
@@ -773,6 +774,14 @@ def watch(save: bool = True) -> dict:
     stories += [c for c in more if not ledger.is_done(c["id"])]
     if said:
         found["notes"].insert(0, "; ".join(said)[:400])
+    from . import compare
+
+    try:
+        more, said = compare.candidates(stories, rows, at)
+    except Exception as exc:
+        more, said = [], [f"compare: {type(exc).__name__}: {exc}"]
+    stories += [c for c in more if not ledger.is_done(c["id"])]
+    found["notes"] += said
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     for c in stories:

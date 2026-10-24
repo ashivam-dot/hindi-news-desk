@@ -54,9 +54,13 @@ def prepare(target: str | dict):
     """Build and gate a Short from a 'wiki:<title>' string or a watcher candidate."""
     from . import trends, writer
 
+    if isinstance(target, str) and target.startswith("compare:"):
+        from . import compare
+
+        target = compare.from_target(target)
     if isinstance(target, str):
         if not target.startswith("wiki:"):
-            raise ValueError("make takes wiki:<English Wikipedia article title>")
+            raise ValueError("make takes wiki:<English Wikipedia article title> or compare:<ISO3>-<ISO3>")
         cand = trends.candidate(target[5:])
         kept, notes = plan.apply_orbitwire([cand], datetime.now(timezone.utc))
         if not kept:
@@ -354,10 +358,13 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             # A quiet channel keeps one script for the latest on a story viewers watched, however many fresh
             # stories failed before it (2026-10-24 dry run: two refused fresh stories left the Tiger update unwritten).
             spare = bool(cand.get("revisit_of")) and not revisited
+            revisited |= spare
+            # A comparison (desk/compare.py) is filled from data, no model: it costs neither a try nor a script.
+            free = bool(cand.get("compare"))
+            spare = spare or free
             if tried >= 4 and not spare:
                 continue
-            tried += 1
-            revisited |= spare
+            tried += not free
             if written >= MAX_WRITTEN and not spare:
                 health["steps"].append(f"later {cand['id']}: this run already wrote {written} scripts")
                 continue
@@ -385,7 +392,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
                 note_retry(cand["id"], f"{type(exc).__name__}: {exc}"[:300])
                 health.setdefault("warnings", []).append(f"{cand['id']}: {type(exc).__name__}: {exc}"[:300])
                 continue
-            written += 1
+            written += not free
             mix = gate.channel_mix(recent_loss, short.loss)
             if mix and not dry:
                 health["steps"].append(f"hold {cand['id']}: {mix}")
