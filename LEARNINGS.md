@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-24T17:07:10+00:00. Scored Shorts (views at 24 h): 84. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-24T20:14:13+00:00. Scored Shorts (views at 24 h): 84. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 45.1% through; a group's retention is blended into its lift at 0.5.
@@ -20,13 +20,13 @@ Retention: a typical Short is watched 45.1% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| cmp-20261024-IND-PAK | 2026-10-24T15:46 | defence | india | other | india | 0 |  |  |
-| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 189 |  |  |
-| kh-20261023-Q140632219-p2 | 2026-10-23T15:09 | court | india | naam-niyam | india | 68 | 17 | 61 |
-| kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 8 | 3 | 8 |
-| kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 29 | 4 | 25 |
-| kh-20261023-Q140632219 | 2026-10-23T01:37 | court | india | naam-niyam | india | 135 | 8 | 84 |
-| kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 556 | 3 | 384 |
+| cmp-20261024-IND-PAK | 2026-10-24T15:46 | defence | india | other | india | 12 |  |  |
+| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 334 | 251 |  |
+| kh-20261023-Q140632219-p2 | 2026-10-23T15:09 | court | india | naam-niyam | india | 70 | 17 | 61 |
+| kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 9 | 3 | 8 |
+| kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 37 | 4 | 25 |
+| kh-20261023-Q140632219 | 2026-10-23T01:37 | court | india | naam-niyam | india | 157 | 8 | 84 |
+| kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 573 | 3 | 384 |
 | kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 61 | 10 | 34 |
 | nw-20261021-priyanka-gandhi-protest | 2026-10-22T05:08 | protest | india | other | india | 52 | 10 | 52 |
 | kh-20261022-Q79883 | 2026-10-22T03:50 | news | world | other | india | 33 | 8 | 25 |
