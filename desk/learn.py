@@ -41,7 +41,8 @@ NEVER_SCALED = ("lane:sensitive",)
 SHOWN = ("audience",)  # in the LEARNINGS.md table, never a lift
 RETENTION_FIELD = "avg_view_pct"
 RETENTION_WEIGHT = 0.5
-KEEP_SNAPSHOTS = 32  # hourly under YOUNG_H, one per REFRESH to two days, four later: 29 at most
+KEEP_SNAPSHOTS = 32  # hourly under YOUNG_H, one per REFRESH through 54 h, four later: 31 at most
+OBSERVE_THROUGH_H = 54.0  # retain the actual 48–54 h pilot observations instead of only a backcast
 YOUNG_H = 12.0  # under this age every run reads the Short's views, so its 6-hour read is measured, not guessed
 MOMENTUM_AT_H = 6.0
 # (field, hours, within): each is set once. A 6-hour read needs a snapshot by 12 hours; a 24-hour score may be
@@ -88,19 +89,19 @@ def views_at(snapshots: list[dict], hours: float, within: float | None = None) -
 
 
 def _thin(snapshots: list[dict]) -> list[dict]:
-    """The first snapshot of each hour while a Short is under YOUNG_H old and of each REFRESH until two days, then
+    """The first snapshot of each hour while a Short is under YOUNG_H old and of each REFRESH through 54 h, then
     the newest few; the newest is always kept (it is the views now). Past KEEP_SNAPSHOTS the earliest stay."""
     snaps = sorted(snapshots, key=lambda s: s["age_h"])
     step = REFRESH.total_seconds() / 3600
     early, slots = [], set()
     for s in snaps:
-        if s["age_h"] > 2 * SCORE_AT_H:
+        if s["age_h"] > OBSERVE_THROUGH_H:
             continue
         slot = ("h", int(s["age_h"])) if s["age_h"] < YOUNG_H else ("r", int(s["age_h"] // step))
         if slot not in slots:
             slots.add(slot)
             early.append(s)
-    out = early + [s for s in snaps if s["age_h"] > 2 * SCORE_AT_H][-4:]
+    out = early + [s for s in snaps if s["age_h"] > OBSERVE_THROUGH_H][-4:]
     if snaps and snaps[-1] not in out:
         out.append(snaps[-1])
     return out[:KEEP_SNAPSHOTS - 4] + out[-4:] if len(out) > KEEP_SNAPSHOTS else out

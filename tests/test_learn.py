@@ -154,13 +154,14 @@ def test_thin_keeps_the_early_points_hourly_and_the_newest():
     ages = [s["age_h"] for s in kept]
     assert len(kept) <= learn.KEEP_SNAPSHOTS and ages == sorted(ages)
     assert ages[:13] == [float(h) for h in range(12)] + [12.0]  # the first of each hour, then of each REFRESH
-    assert ages[-1] == 71.75 and 48.0 in ages
+    assert ages[-1] == 71.75 and {24.0, 48.0, 51.0, 54.0} <= set(ages)
     # Thinning again as each new snapshot lands keeps the same early points.
     rolling = []
     for s in every_15_min:
         rolling = learn._thin(rolling + [s])
     assert [s["age_h"] for s in rolling][:13] == ages[:13] and rolling[-1]["age_h"] == 71.75
     assert learn.views_at(rolling, 6) == learn.views_at(every_15_min, 6) == 24
+    assert {24.0, 48.0, 51.0, 54.0} <= {s["age_h"] for s in rolling}
 
 
 def test_without_retention_data_lifts_are_views_alone():
