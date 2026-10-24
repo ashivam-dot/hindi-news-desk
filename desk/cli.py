@@ -349,11 +349,16 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             return health
         recent_loss = [r.get("loss", False) for r in ledger.published()]
         written = tried = 0
+        revisited = False
         for cand in ready:
-            if tried >= 4:
-                break
+            # A quiet channel keeps one script for the latest on a story viewers watched, however many fresh
+            # stories failed before it (2026-10-24 dry run: two refused fresh stories left the Tiger update unwritten).
+            spare = bool(cand.get("revisit_of")) and not revisited
+            if tried >= 4 and not spare:
+                continue
             tried += 1
-            if written >= MAX_WRITTEN:
+            revisited |= spare
+            if written >= MAX_WRITTEN and not spare:
                 health["steps"].append(f"later {cand['id']}: this run already wrote {written} scripts")
                 continue
             drafted = writer.DRAFTED[0]

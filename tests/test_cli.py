@@ -148,6 +148,28 @@ def test_a_dry_run_never_previews_a_case_angle_the_live_run_would_hold(made, mon
     assert prepared == ([] if held_only else [short.id])
 
 
+def test_refused_fresh_stories_never_use_up_the_quiet_channels_update(made, monkeypatch):
+    short, work = made
+    fresh = [{"id": f"kh-fresh-{i}", "kind": "explainer", "fame": 9} for i in range(5)]
+    update = {"id": "kh-20261024-Q16202406-update", "kind": "explainer", "fame": 1, "revisit_of": "nw-x"}
+    cands = fresh + [update]
+    monkeypatch.setattr(plan, "watch", lambda save=True: {"candidates": cands, "trending": cands, "notes": []})
+    monkeypatch.setattr(plan, "lineup", lambda c: (c, []))
+    prepared = []
+
+    def prepare(c):
+        prepared.append(c["id"])
+        if c is not update:
+            raise ValueError("gate: no draft passed the fact checks")
+        return short
+    monkeypatch.setattr(cli, "prepare", prepare)
+    monkeypatch.setattr(cli, "make", lambda c, s, preview=False: (s, {"duration": 20.0,
+                                                                       "voice": {"engine": "gemini"}}))
+    health = cli.run(dry=True)
+    assert prepared[-1] == update["id"] and health.get("made", {}).get("id") == short.id, health.get("steps")
+    assert prepared == ["kh-fresh-0", "kh-fresh-1", update["id"]]  # MAX_WRITTEN scripts, then the update
+
+
 def test_a_voice_hold_mid_run_stops_without_counting_a_retry(made, monkeypatch):
     short, work = made
     cand = {"id": short.id, "kind": "death", "fame": 1}
