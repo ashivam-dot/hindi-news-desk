@@ -19,6 +19,9 @@ WB = "https://api.worldbank.org/v2/country/{codes}/indicator/{code}"
 WB_PAGE = "https://data.worldbank.org/indicator/{code}?locations={iso2}"
 SPEND, SHARE, TROOPS, PEOPLE = "MS.MIL.XPND.CD", "MS.MIL.XPND.GD.ZS", "MS.MIL.TOTL.P1", "SP.POP.TOTL"
 PREFIX, PER_DAY, PAIR_DAYS, OWNERS, FAME = "cmp-", 1, 14, 3, 1
+# Off: the World Bank's military expenditure series are under SIPRI's terms (WDI metadata License_Type), which
+# require SIPRI's authorization for commercial use, a monetized channel included (2026-10-24).
+ENABLED = False
 MIN_PHOTOS = 3  # per country: the Short cuts between its forces on land, in the air and at sea
 CREDIT = ("तथ्य: World Bank World Development Indicators (SIPRI के आंकड़े, CC BY 4.0); "
           "तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
@@ -270,6 +273,8 @@ def candidates(stories: list[dict], rows: list[dict], at: datetime) -> tuple[lis
     PAIR_DAYS."""
     from . import revisit
 
+    if not ENABLED:
+        return [], []
     day = _day(at)
     mine = [r for r in rows if (r.get("id") or "").startswith(PREFIX)]
     if sum(_day(_at(r) or at) == day for r in mine) >= PER_DAY:

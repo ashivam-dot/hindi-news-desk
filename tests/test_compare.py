@@ -58,7 +58,8 @@ def rows_at(*items):
     return [{"id": sid, "published_at": at.isoformat()} for sid, at in items]
 
 
-def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day():
+def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day(monkeypatch):
+    monkeypatch.setattr(compare, "ENABLED", True)
     quiet = rows_at(("kh-20261024-Q1", AT - timedelta(hours=3)))
     (c,), _ = compare.candidates([], quiet, AT)
     assert c["id"] == "cmp-20261024-IND-PAK" and c["compare"] and c["why"] == "the channel is quiet"
@@ -71,7 +72,8 @@ def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day():
     assert c["pair"] == ["IND", "CHN"]  # a pair waits PAIR_DAYS
 
 
-def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy():
+def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy(monkeypatch):
+    monkeypatch.setattr(compare, "ENABLED", True)
     busy = rows_at(("kh-20261024-Q1", AT - timedelta(minutes=30)))
     story = {"id": "nw-x", "title": "Israel strikes Iran's air defences", "owners": ["a", "b", "c"],
              "headlines": ["Iran vows response after Israeli strikes"]}
