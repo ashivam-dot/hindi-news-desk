@@ -187,7 +187,8 @@ def candidates(rows: list[dict], at: datetime | None = None, items: list[dict] |
                 "focus": (f"WHAT HAS HAPPENED SINCE: the channel last told this story on "
                           f"{last.astimezone(IST):%d %B}. Tell only what the REPORTING says is new since then "
                           "(the progress of the case or story: arrests, court, police, statements, a decision), "
-                          "and one short line of what it is about.")}
+                          "and one short line of what it is about. The earlier Shorts' titles are only what was "
+                          "already told, never a source: say nothing from them the REPORTING does not say.")}
         if case and case.get("never"):
             cand["never"] = case["never"]
         out.append(cand)
