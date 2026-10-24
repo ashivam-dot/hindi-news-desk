@@ -3,7 +3,7 @@ from types import SimpleNamespace
 
 import pytest
 
-from desk import compare, gate, hindi, writer
+from desk import compare, gate, hindi, voice, writer
 
 AT = datetime(2026, 10, 24, 11, 0, tzinfo=timezone.utc)
 # The World Bank's WDI as of 2026-10-24.
@@ -62,6 +62,13 @@ def test_a_comparison_is_licensed_published_numbers_each_with_its_year(work):
     assert gate.check(short) == [] and gate.said_is_shown(short) == []
 
 
+def test_a_comparison_is_paced_on_the_words_the_narrator_says(work):
+    short = compare.build(compare.from_target("compare:IND-PAK", AT), get=fake_get, photos_for=fake_photos)
+    written = sum(len(b.text.split()) for b in short.beats)
+    assert voice.said_words(short) > written * 1.25  # '2020' is 'दो हज़ार बीस', '30.7' is 'तीस दशमलव सात'
+    assert voice.said_words(SimpleNamespace(id="20261024-abc", beats=short.beats)) is None
+
+
 def test_data_without_a_commercial_licence_is_refused():
     sipri = CC_BY | {compare.GDP: "SIPRI terms and conditions"}
     with pytest.raises(ValueError, match="not licensed for commercial use"):
@@ -107,7 +114,8 @@ def rows_at(*items):
     return [{"id": sid, "published_at": at.isoformat()} for sid, at in items]
 
 
-def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day():
+def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day(monkeypatch):
+    monkeypatch.setattr(compare, "ENABLED", True)
     quiet = rows_at(("kh-20261024-Q1", AT - timedelta(hours=3)))
     (c,), _ = compare.candidates([], quiet, AT)
     assert c["id"] == "cmp-20261024-IND-PAK-forces" and c["compare"] and c["why"] == "the channel is quiet"
@@ -120,19 +128,30 @@ def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day():
     assert c["pair"] == ["IND", "CHN"]  # a pair waits PAIR_DAYS
 
 
-def test_the_retired_short_counts_for_nothing():
+def test_the_retired_short_counts_for_nothing(monkeypatch):
+    monkeypatch.setattr(compare, "ENABLED", True)
     rows = rows_at(("kh-20261024-Q1", AT - timedelta(hours=3)), ("cmp-20261024-IND-PAK", AT - timedelta(hours=4)))
     (c,), _ = compare.candidates([], rows, AT)
     assert c["id"] == "cmp-20261024-IND-PAK-forces"
 
 
-def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy():
+def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy(monkeypatch):
+    monkeypatch.setattr(compare, "ENABLED", True)
     busy = rows_at(("kh-20261024-Q1", AT - timedelta(minutes=30)))
     story = {"id": "nw-x", "title": "Israel strikes Iran's air defences", "owners": ["a", "b", "c"],
              "headlines": ["Iran vows response after Israeli strikes"]}
     (c,), _ = compare.candidates([story], busy, AT)
     assert c["pair"] == ["ISR", "IRN"] and c["why"] == "in the news" and c["story"] == "nw-x"
     assert compare.candidates([story | {"owners": ["a"]}], busy, AT)[0] == []
+
+
+def test_with_the_lane_off_only_the_corrected_india_pakistan_short_runs_once():
+    busy = rows_at(("kh-20261024-Q1", AT - timedelta(minutes=30)), ("cmp-20261024-IND-PAK", AT - timedelta(hours=2)))
+    story = {"id": "nw-x", "title": "Israel strikes Iran", "owners": ["a", "b", "c"], "headlines": []}
+    (c,), _ = compare.candidates([story], busy, AT)
+    assert c["id"] == "cmp-20261024-IND-PAK-forces"  # not Israel-Iran, busy or not
+    done = busy + rows_at(("cmp-20261024-IND-PAK-forces", AT - timedelta(minutes=10)))
+    assert compare.candidates([story], done, AT + timedelta(days=20)) == ([], [])  # then nothing, ever
 
 
 @pytest.mark.parametrize("n,said", [(1463865525, "146.4 करोड़"), (9800000, "98 लाख"), (943000, "9.4 लाख")])

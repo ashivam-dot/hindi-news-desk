@@ -34,7 +34,10 @@ PREFIX, PER_DAY, PAIR_DAYS, OWNERS, FAME = "cmp-", 1, 14, 3, 1
 FORMAT = "forces"  # the id's last part: a format told once under an id is never told again under it
 # Shorts taken down: they count for nothing (not today's comparison, not their pair's last).
 RETIRED = {"cmp-20261024-IND-PAK"}
-ENABLED = True
+# Owner, 2026-10-24: "just modify this india pakistan comparison then stop". The lane stays off; ONE_OFF is the
+# corrected India-Pakistan Short, run once in place of the retired one, then nothing.
+ENABLED = False
+ONE_OFF = ("IND", "PAK")
 MIN_PHOTOS = 3  # per country: the Short cuts between its forces on land, in the air and at sea
 CREDIT = ("तथ्य: World Bank World Development Indicators (CC BY 4.0): सशस्त्र बल IISS, The Military Balance; "
           "जीडीपी: राष्ट्रीय लेखा; आबादी: UN World Population Prospects; तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
@@ -345,6 +348,8 @@ def candidates(stories: list[dict], rows: list[dict], at: datetime) -> tuple[lis
     from . import revisit
 
     if not ENABLED:
+        if ONE_OFF and not any(_pair_of(r.get("id") or "") == ONE_OFF and r["id"] not in RETIRED for r in rows):
+            return [candidate(ONE_OFF, at, "the corrected India-Pakistan comparison")], []
         return [], []
     day = _day(at)
     mine = [r for r in rows if (r.get("id") or "").startswith(PREFIX) and r["id"] not in RETIRED]
