@@ -202,14 +202,20 @@ def script(pair, data) -> dict:
     lead_in = "और जीडीपी के हिस्से में भी" if hi_share == a else "पर जीडीपी के हिस्से में"
     guessed = [COUNTRIES[k][2] for k in (a, b) if data[k]["estimate"]]
     # SIPRI's own estimate, said as one (SIPRI estimates China's, Russia's and Ukraine's 2025 spending).
-    estimate = f" {' और '.join(guessed)} के आंकड़े सिपरी का अनुमान हैं।" if guessed else ""
     mark = " · अनुमान" if data[a]["estimate"] else ""  # the card shows the lead's figure: its own mark only
+    # Its own beat, over the estimated country's photo: said over the other's (dry run 40114311827), it read as
+    # India's figure being the estimate.
+    est = [k for k in (a, b) if data[k]["estimate"]]
+    estimate = [{"say": f"{' और '.join(guessed)} के आंकड़े सिपरी का अनुमान हैं।", "show": [(k, 5) for k in est],
+                 "cut": COUNTRIES[est[-1]][2] if len(est) > 1 else "",
+                 "card": {"big": "अनुमान", "small": f"{' और '.join(guessed)} · सिपरी"}}] if est else []
     # About 65 words, about 32 s at the narrator's 115 a minute (dry run 40103609151: 70 words ran 38 s).
     beats = [
         {"say": f"सिपरी के मुताबिक, रक्षा पर {A} का खर्च {B} से {r} गुना है।", "show": [(a, 0), (b, 0)], "cut": B,
          "card": {"big": f"{r} गुना", "small": f"रक्षा खर्च · सिपरी · {ys}"}},
-        {"say": f"{ys} में {A} ने {money(sa)} और {B} ने {money(sb)} खर्च किए।{estimate}",
+        {"say": f"{ys} में {A} ने {money(sa)} और {B} ने {money(sb)} खर्च किए।",
          "show": [(a, 1), (b, 1)], "cut": B, "card": {"big": money(sa), "small": f"{A} · {ys}{mark}"}},
+        *estimate,
         {"say": f"{lead_in} {H} आगे है: {gh} प्रतिशत, {L} {gl} प्रतिशत।",
          "show": [(hi_share, 2), (lo_share, 2)], "cut": L,
          "card": {"big": f"{gh}% बनाम {gl}%", "small": f"जीडीपी में हिस्सा · {ys}"}},

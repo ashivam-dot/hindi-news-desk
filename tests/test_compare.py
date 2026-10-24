@@ -68,7 +68,10 @@ def test_a_sipri_estimate_is_said_to_be_one(monkeypatch, tmp_path):
     monkeypatch.setattr(writer, "recent_photos", lambda: set())
     short = compare.build(compare.from_target("compare:IND-CHN", AT), get=fake_get, photos_for=fake_photos,
                           sipri=SIPRI)
-    assert "चीन के आंकड़े सिपरी का अनुमान हैं" in short.beats[1].text
+    china = next(c["photos"] for c in short.scene["cast"] if c["en"] == "China")
+    assert short.beats[2].text == "चीन के आंकड़े सिपरी का अनुमान हैं।"
+    assert int(short.beats[2].shot.split(":")[1]) in china  # over China's own photo, not India's
+    assert gate.check(short) == [] and gate.said_is_shown(short) == []
     assert "अनुमान" in short.beats[1].card["small"] and "(SIPRI estimate)" in {f.key: f for f in short.facts}[
         "spend-CHN"].evidence
     sipri_us = {k: t | {"United States of America": {2025: (954387.0, ""), 2024: (1004901.0, "")}}
@@ -81,7 +84,7 @@ def test_a_sipri_estimate_is_said_to_be_one(monkeypatch, tmp_path):
     rows[compare.TROOPS] = rows[compare.TROOPS] | {"USA": {2020: 1395000}}
     s = compare.script(("USA", "CHN"), compare.figures(("USA", "CHN"), lambda *a, **k: fake_get(*a, rows=rows, **k),
                                                        sipri_us))
-    assert "अनुमान" in s["beats"][1]["say"] and "अनुमान" not in s["beats"][1]["card"]["small"]  # the US card
+    assert "अनुमान" in s["beats"][2]["say"] and "अनुमान" not in s["beats"][1]["card"]["small"]  # the US card
 
 
 def test_figures_never_mix_years_or_use_uncertain_or_unmatched_data():
