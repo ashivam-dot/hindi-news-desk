@@ -516,8 +516,10 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   reference clip made once from Gemini Sulafat by `tools/make_reference.py`. Without that clip the run holds. There
   is never a fallback to a different voice or gender. `--voice-preview` (dry runs only) uses Chatterbox's built-in
   voice to test the pipeline; such a Short is marked and can never be published.
-- **Writer:** Gemini (free tier, models discovered at run time, the next model on a 429) and the local Gemma 4 model
-  when Gemini cannot answer. Sources: English Wikipedia, Hindi Wikipedia when it has the article, Wikidata's Hindi
+- **Writer:** Gemini Flash (free tier, models discovered at run time, the next model on a 429), then free hosted
+  open models (`desk/hosted.py`: Groq, Mistral, NVIDIA NIM, OpenRouter's free models; each only when its
+  `*_API_KEY` secret is set, large models only), then Gemini Flash Lite (2026-10-24: on quota days it answered most
+  calls and ignored the length and picture rules, so no draft passed), then the local Gemma 4 model. Sources: English Wikipedia, Hindi Wikipedia when it has the article, Wikidata's Hindi
   labels, and confirmed Wikidata facts.
 
 ## Editorial standards

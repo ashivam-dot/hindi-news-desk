@@ -120,16 +120,22 @@ def _delay(error: dict) -> float | None:
     return None
 
 
+def lite(name: str) -> bool:
+    m = TEXT_MODEL.match(name)
+    return bool(m and m.group("lite"))
+
+
 def chat(messages: list[dict], schema: dict | None = None, temperature: float = 0.7,
-         max_tokens: int = 4096) -> tuple[dict | str, str]:
-    """(answer, model) from the first model with quota left. Raises Unavailable when none can answer."""
+         max_tokens: int = 4096, tier: str | None = None) -> tuple[dict | str, str]:
+    """(answer, model) from the first model with quota left; tier "flash" or "lite" keeps to that tier.
+    Raises Unavailable when none can answer."""
     global _refused
     if not available():
         raise Unavailable("GEMINI_API_KEY is not set" if not key() else "Gemini refused the key")
     body = _body(messages, schema, temperature, max_tokens)
     errors = []
     for model in models():
-        if model in _spent:
+        if model in _spent or (tier is not None and lite(model) != (tier == "lite")):
             continue
         for attempt in range(3):
             wait = _last.get(model, 0) + MIN_GAP - time.monotonic()

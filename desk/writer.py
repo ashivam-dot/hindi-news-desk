@@ -22,8 +22,8 @@ from collections import Counter
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-from . import (config, explain, faces, gate, gemini, hindi, ledger, llm, match, media, orbitwire, outlets, stories,
-               things, trends, visuals, wiki)
+from . import (config, explain, faces, gate, gemini, hindi, hosted, ledger, llm, match, media, orbitwire, outlets,
+               stories, things, trends, visuals, wiki)
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -357,7 +357,8 @@ def question_title(title: str) -> bool:
 
 
 class Pen:
-    """Gemini first, then the local Gemma model (started only if needed). Records which model answered each call."""
+    """Gemini Flash first, then free hosted open models, then Gemini Flash Lite (it ignores the length and picture
+    rules), then the local Gemma model (started only if needed). Records which model answered each call."""
 
     def __init__(self, local: str | None = None):
         self.local_name = local or llm.DEFAULT
@@ -366,12 +367,15 @@ class Pen:
 
     def chat(self, messages: list[dict], schema: dict | None = None, temperature: float = 0.7,
              max_tokens: int = 2400) -> dict | str:
-        if gemini.available():
+        tiers = [(gemini, {"tier": "flash"}), (hosted, {}), (gemini, {"tier": "lite"})]
+        for source, extra in tiers:
+            if not source.available():
+                continue
             try:
-                answer, model = gemini.chat(messages, schema, temperature, max_tokens)
+                answer, model = source.chat(messages, schema, temperature, max_tokens, **extra)
                 self.used.append(model)
                 return answer
-            except gemini.Unavailable:
+            except source.Unavailable:
                 pass
         if self.local is None:
             self.local = llm.Model(self.local_name).__enter__()
