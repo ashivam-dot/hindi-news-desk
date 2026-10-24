@@ -1,21 +1,22 @@
 {
- "at": "2026-10-24T00:12:09+00:00",
+ "at": "2026-10-24T01:16:05+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 80 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.211, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16}, 'category:attack': {'n': 13, 'lift': 1.296, 'typical_views_24h': 76, 'n_retention': 6, 'typical_view_pct': 51.1}, 'category:diplomacy': {'n': 4, 'lift': 1.139, 'typical_views_24h': 49",
   "untag: old marker tag taken off 0 uploads",
   "watch: 17 candidates from 25 trending",
-  "outlets: 1303 headlines from 31 feeds (19 owners), 25 matched to articles, 12 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-paris-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-jordan-attack",
-  "explainers: 7 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q432473, kh-20261024-Q3520087, kh-20261024-Q51993; dropped: explainer Apple: fewer than 3 owners' headlines name it and the story; explainer Punjab: fewer than 3 owners' headlines name it and the story; explainer Diljit Dosanjh's Delhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1295 headlines from 31 feeds (19 owners), 27 matched to articles, 12 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-paris-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-jordan-attack",
+  "explainers: 7 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q432473, kh-20261024-Q1826411, kh-20261024-Q3520087; dropped: explainer Apple: fewer than 3 owners' headlines name it and the story; explainer Punjab: fewer than 3 owners' headlines name it and the story; explainer Diljit Dosanjh's Delhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261024-Q1826411: outside 07:00-24:00 IST",
+  "drop wk-Q141820731: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "hold kh-20261024-Q432473: outside 07:00-24:00 IST",
   "hold nw-20261023-jordan-attack: outside 07:00-24:00 IST",
-  "drop wk-Q1699148: 60 h old and no longer trending live",
-  "hold kh-20261024-Q1826411: outside 07:00-24:00 IST",
+  "drop wk-Q1699148: 61 h old and no longer trending live",
   "drop nw-20261023-bihar-siwan-explosion: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q141820731: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261023-jordan-attack, nw-20261023-bihar-siwan-explosion, wk-Q141820731, nw-20261023-building-disaster, kh-20261024-Q6791356; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261024-Q1826411, kh-20261024-Q16186720",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141820731, nw-20261023-jordan-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-building-disaster, kh-20261024-Q6791356; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261024-Q1826411, kh-20261024-Q16186720",
   "channel: about, playlists done; nothing left to do"
  ]
 }
