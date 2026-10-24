@@ -67,6 +67,7 @@ def test_a_storys_lane_audience_priority_and_series_reach_the_published_row(made
     from desk import gate, writer, youtube
 
     short, work = made
+    monkeypatch.setenv("GITHUB_SHA", "a" * 40)
     monkeypatch.setattr(writer, "build", lambda target: Short.load(FIXTURE))
     monkeypatch.setattr(gate, "check", lambda s: [])
     cand = {"id": short.id, "kind": "death", "category": "death", "region": "world", "title": "x", "lane": "obituary",
@@ -83,6 +84,7 @@ def test_a_storys_lane_audience_priority_and_series_reach_the_published_row(made
     cli.publish(short.id)
     row = ledger.published()[-1]
     assert (row["lane"], row["audience"], row["priority"], row["series"]) == ("obituary", "india", 1234, 3)
+    assert row["production_version"] == cli.PRODUCTION_VERSION and row["producer_sha"] == "a" * 40
 
 
 def test_publish_refuses_while_the_channel_id_is_tbd(made, monkeypatch):

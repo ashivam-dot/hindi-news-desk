@@ -313,6 +313,7 @@ def _snapshot(perf: dict, row: dict, s: dict, at: datetime) -> None:
     rec = perf["videos"].setdefault(row["video_id"], {"id": row["id"], "published_at": row["published_at"],
                                                       "snapshots": []})
     rec.update({f: row.get(f) or rec.get(f) for f in ("kind",) + FEATURES + SHOWN})
+    rec.update({f: row.get(f) or rec.get(f) for f in ("production_version", "producer_sha")})
     rec["snapshots"] = _thin(rec["snapshots"] + [{
         "age_h": round(_age_h(row, at), 2), "views": int(s.get("viewCount", 0)),
         "likes": int(s.get("likeCount", 0)), "comments": int(s.get("commentCount", 0))}])

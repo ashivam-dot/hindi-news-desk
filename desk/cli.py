@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 import traceback
 from datetime import datetime, timezone
@@ -46,6 +47,7 @@ def retry_limit(reason: str) -> int:
 
 
 MAX_WRITTEN = 2  # each script costs minutes when the local model writes it
+PRODUCTION_VERSION = "news-shorts-2026-10-24"
 PREVIEW = "PREVIEW"
 log = logging.getLogger("desk")
 
@@ -70,6 +72,7 @@ def prepare(target: str | dict):
         target = target | {"audience": target.get("audience") or plan.audience_of(target)}
         target["lane"] = plan.lane_of(target, datetime.now(timezone.utc))
     short = writer.build(target)
+    short.scene.update(production_version=PRODUCTION_VERSION, producer_sha=os.environ.get("GITHUB_SHA"))
     short.scene.setdefault("category", target.get("category"))
     short.scene.setdefault("article", target.get("title"))
     for key in ("replaces", "remake_of", "case", "case_story", "angle", "hook", "lane", "audience", "priority",
@@ -172,6 +175,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     row = {"id": short.id, "kind": short.kind, "title": short.title, "loss": short.loss,
            "published_at": when, "event_time": short.event_time, "voice": voice.get("engine"),
            "voice_model": voice.get("served_model"), "orbitwire_overlap": overlap_record(short),
+           "production_version": short.scene.get("production_version"), "producer_sha": short.scene.get("producer_sha"),
            "category": short.scene.get("category"), "region": short.scene.get("region"),
            "article": short.scene.get("article"), "qid": short.scene.get("qid"),
            "report_urls": report_urls(short),
