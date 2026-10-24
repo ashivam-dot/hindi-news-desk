@@ -32,8 +32,9 @@ def test_a_comparison_is_the_published_numbers_and_passes_every_gate(monkeypatch
     assert short.title == "भारत बनाम पाकिस्तान: रक्षा खर्च में 7.8 गुना का फ़र्क"  # the bigger spender leads
     said = " ".join(b.text for b in short.beats)
     for words in ("7.8 गुना", "92.1 अरब डॉलर", "11.9 अरब डॉलर", "पाकिस्तान आगे है: 2.9 प्रतिशत", "30.7 लाख",
-                  "9.4 लाख", "63 डॉलर", "47 डॉलर", "विश्व बैंक"):
+                  "9.4 लाख", "63 डॉलर", "47 डॉलर"):
         assert words in said
+    assert all(p["tag"] in ("भारत", "पाकिस्तान") and "who" not in p for p in short.scene["photos"])
     backed = {n for f in short.facts for n in f.numbers}
     assert {v for v, _ in hindi.numbers(said + " " + short.title)} <= backed
     assert all(f.source.startswith("https://data.worldbank.org/") for f in short.facts)

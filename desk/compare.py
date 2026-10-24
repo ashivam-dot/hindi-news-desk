@@ -12,7 +12,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import hindi, match, media, net
+from . import hindi, media, net
 from .spec import Beat, Fact, Short
 
 WB = "https://api.worldbank.org/v2/country/{codes}/indicator/{code}"
@@ -29,11 +29,11 @@ COUNTRIES = {
             ["Indian Army contingent Republic Day parade", "Indian Air Force Rafale", "Indian Navy INS Vikrant",
              "Indian Army T-90 tank"]),
     "PAK": ("Pakistan", r"Pakistan\w*", "पाकिस्तान", "PK",
-            ["Pakistan Air Force JF-17 Thunder", "Pakistan Navy frigate PNS", "Pakistan Day Parade",
-             "Pakistan Army Al-Khalid tank", "Pakistan Army soldiers exercise", "Pakistan Air Force F-16"]),
+            ["Pakistan Day Parade", "Pakistan Air Force JF-17 Thunder", "Pakistan Navy frigate PNS",
+             "Pakistan Army Al-Khalid tank", "Pakistan Air Force F-16", "Pakistan Army soldiers exercise"]),
     "CHN": ("China", r"China|Chinese|Beijing", "चीन", "CN",
             ["People's Liberation Army honor guard", "PLA Navy ship", "Chengdu J-20", "PLA soldiers exercise"]),
-    "USA": ("United States", r"United States|U\.S\.|US|USS|USNS|America\w*|Pentagon", "अमेरिका", "US",
+    "USA": ("United States", r"United States|U\.S\.|U S|US|USS|USNS|America\w*|Pentagon", "अमेरिका", "US",
             ["U.S. Army soldiers exercise", "F-35A Lightning II", "USS Gerald R. Ford", "M1 Abrams tank"]),
     "RUS": ("Russia", r"Russia\w*|Kremlin|Moscow", "रूस", "RU",
             ["Moscow Victory Day Parade", "Sukhoi Su-57", "Russian Navy ship", "Russian Army T-90"]),
@@ -51,7 +51,7 @@ PAIRS = [("IND", "PAK"), ("IND", "CHN"), ("RUS", "UKR"), ("ISR", "IRN"), ("USA",
 MIN_YEAR = 2010
 NOT_FORCES = re.compile(r"insignia|emblem|flag|logo|badge|patch|seal|coat of arms|medal|roundel|ribbon|uniform "
                         r"pattern|camouflage pattern|diagram|chart|map\b|museum|memorial|grave|cemetery|statue|"
-                        r"model|toy|stamp|coin|poster|crest|terroris\w*|Gaza|screenshot|"
+                        r"model|toy|stamp|coin|poster|crest|terroris\w*|Gaza|screenshot|RHIB|"
                         # Another country's forces beside them: a joint exercise is not one country's.
                         r"alongside|counterparts|multinational|joint (?:exercise|training)|bilateral", re.I)
 # A named person's face is someone the voice never names: no ministers, generals or leaders at a parade.
@@ -114,12 +114,13 @@ def script(pair, data) -> dict:
     H, L = COUNTRIES[hi_share][2], COUNTRIES[lo_share][2]
     gh, gl = data[hi_share][SHARE][1], data[lo_share][SHARE][1]
     lead_in = "और जीडीपी के हिस्से में भी" if hi_share == a else "पर जीडीपी के हिस्से में"
-    # About 65 words: under 30 s at the narrator's 2.3 words a second (writer: 20-25 s Shorts do best).
+    # About 60 words, about 32 s at the narrator's 115 a minute (dry run 40103609151: 70 words ran 38 s). The source
+    # is on the cards, in the credits and in the description, not read out.
     beats = [
         {"say": f"रक्षा पर {A} का खर्च {B} से {r} गुना है।", "show": [(a, 0), (b, 0)], "cut": B,
          "card": {"big": f"{r} गुना", "small": "रक्षा खर्च"}},
         {"say": f"{ys} में {A} ने {money(sa)} और {B} ने {money(sb)} खर्च किए।",
-         "show": [(a, 1), (b, 1)], "cut": B, "card": {"big": money(sa), "small": f"{A} · {ys}"}},
+         "show": [(a, 1), (b, 1)], "cut": B, "card": {"big": money(sa), "small": f"{A} · {ys} · विश्व बैंक"}},
         {"say": f"{lead_in} {H} आगे है: {_one(gh)} प्रतिशत, {L} {_one(gl)} प्रतिशत।",
          "show": [(hi_share, 2), (lo_share, 2)], "cut": L,
          "card": {"big": f"{_one(gh)}% बनाम {_one(gl)}%", "small": "जीडीपी में हिस्सा"}},
@@ -128,9 +129,7 @@ def script(pair, data) -> dict:
          "card": {"big": f"{people(ta)} बनाम {people(tb)}", "small": "सशस्त्र बल, अर्धसैनिक समेत"}},
         {"say": f"हर नागरिक पर {A} {round(pa)} डॉलर और {B} {round(pb)} डॉलर खर्च करता है।",
          "show": [(a, 4), (b, 4)], "cut": B,
-         "card": {"big": f"{round(pa)} बनाम {round(pb)} डॉलर", "small": "प्रति नागरिक"}},
-        {"say": "आंकड़े: विश्व बैंक और सिपरी।", "show": [],
-         "card": {"big": "विश्व बैंक · सिपरी", "small": "आंकड़ों का स्रोत"}},
+         "card": {"big": f"{round(pa)} बनाम {round(pb)} डॉलर", "small": "प्रति नागरिक · विश्व बैंक, सिपरी"}},
     ]
     facts = [
         {"key": "spend-ratio", "phrase": f"{r} गुना", "code": SPEND, "iso3s": (a, b),
@@ -161,20 +160,23 @@ def forces_photos(iso3: str, folder: Path, taken: set[str], recent: set[str] = f
                   want: int = 5) -> list[dict]:
     """Up to `want` free Commons photos of a country's forces, one search after another, MIN_YEAR or newer, none of
     an emblem or a named person, preferring photos the channel has not shown lately."""
-    found: list = []
+    pools: list[list] = []
     for q in COUNTRIES[iso3][4]:
         try:
             files = media._search_files(q, 25)
         except Exception:
             continue
         picked = [p for p in media.picks(files, 12)
-                  if p.file not in taken and (media.year_of(p) or 0) >= MIN_YEAR and own(p, iso3)
+                  if (media.year_of(p) or 0) >= MIN_YEAR and own(p, iso3)
                   and not NOT_FORCES.search(f"{p.file} {p.description}") and not NAMED.search(p.description or "")]
-        picked.sort(key=lambda p: p.file in recent)
-        for p in picked[:2]:
-            if len(found) < want:
-                found.append(p)
-                taken.add(p.file)
+        pools.append(sorted(picked, key=lambda p: p.file in recent))
+    # One from each search in turn (a parade, a jet, a ship, a tank), not two looks at one jet.
+    found: list = []
+    for rank in range(max(map(len, pools), default=0)):
+        for pool in pools:
+            if len(found) < want and rank < len(pool) and pool[rank].file not in taken:
+                found.append(pool[rank])
+                taken.add(pool[rank].file)
     return media.as_dicts(media.download(found, folder))
 
 
@@ -193,14 +195,13 @@ def build(cand: dict, get=net.get_json, photos_for=forces_photos) -> Short:
             raise ValueError(f"compare: only {len(mine)} free photos of {COUNTRIES[k][0]}'s forces")
         own[k] = list(range(len(photos), len(photos) + len(mine)))
         for p in mine:
-            p.update(role="thing", who=COUNTRIES[k][2], depicts=[hindi.norm(COUNTRIES[k][2])])
+            # tag: the country stamped on every view of it (compose.places_on); no "who", whose one-off name strap
+            # would repeat it.
+            p.update(role="thing", tag=COUNTRIES[k][2], depicts=[hindi.norm(COUNTRIES[k][2])])
         photos += mine
     cast = [{"en": COUNTRIES[k][0], "hi": COUNTRIES[k][2], "kind": "thing", "photos": own[k]} for k in own]
     beats = []
-    for n, b in enumerate(s["beats"]):
-        if not b["show"]:  # the source line names nothing to show: an honest text card over the lead's photo
-            beats.append(Beat(b["say"], f"photo:{own[s['lead']][0]}", b["card"], plate=match.CARD))
-            continue
+    for b in s["beats"]:
         shown = [own[k][slot % len(own[k])] for k, slot in b["show"]]
         cut = b.get("cut") or ""
         at = b["say"].rfind(cut) if cut else -1
