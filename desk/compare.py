@@ -48,7 +48,8 @@ COUNTRIES = {
     "USA": ("United States", r"United States|U\.S\.|U S|US|USS|USNS|America\w*|Pentagon", "अमेरिका", "US",
             ["U.S. Army soldiers exercise", "F-35A Lightning II", "USS Gerald R. Ford", "M1 Abrams tank"]),
     "RUS": ("Russia", r"Russia\w*|Kremlin|Moscow", "रूस", "RU",
-            ["Moscow Victory Day Parade", "Sukhoi Su-57", "Russian Navy ship", "Russian Army T-90"]),
+            ["Russian Air Force Sukhoi Su-57", "Russian Navy ship", "Russian Army T-90", "Russian Ground Forces",
+             "Russian Air Force Tu-160", "Russian Navy frigate"]),
     "UKR": ("Ukraine", r"Ukrain\w*|Kyiv", "यूक्रेन", "UA",
             ["Armed Forces of Ukraine soldiers training", "Ukrainian Air Force MiG-29", "Ukrainian Navy ship",
              "Ukrainian Ground Forces exercise"]),
@@ -69,7 +70,8 @@ NOT_FORCES = re.compile(r"insignia|emblem|flag|logo|badge|patch|seal|coat of arm
                         # Another country's forces beside them: a joint exercise is not one country's.
                         r"alongside|counterparts|multinational|joint (?:exercise|training)|bilateral", re.I)
 # A named person's face is someone the voice never names: no ministers, generals or leaders at a parade.
-NAMED = re.compile(r"با حضور|از چپ|از راست|\b(?:From left|from right|L-R|pose[sd]? for|Embassy|delegation|Prime Minister|"
+NAMED = re.compile(r"با حضور|از چپ|از راست|\b(?:photo|portrait|picture|image) of [A-Z][a-z]+ [A-Z][a-z]+|"
+                   r"\b[Pp]ortrait\b|\b(?:From left|from right|L-R|pose[sd]? for|Embassy|delegation|Prime Minister|"
                    r"President|Minister|General|Gen\.|Admiral|Marshal|Chief|Secretary|Sgt\.?|Sergeant|Capt\.|Lt\.|"
                    r"Col\.|Maj\.|Pvt\.|Spc\.|Cpl\.|mentor|Modi|"
                    r"Putin|Xi Jinping|Biden|Trump|Netanyahu|Khamenei|Zelensky\w*|Shoigu|Hegseth|Austin|Sharif|"
@@ -247,11 +249,31 @@ def script(pair, data) -> dict:
     return {"lead": a, "other": b, "title": title, "beats": beats, "facts": facts, "year": ys}
 
 
+# How a photo's file or description names the country's own forces. A city or a parade is not enough: "2010 Moscow
+# Victory Day Parade-9.jpeg" (a Russian caption) shows Belarus's contingent and flag (dry run 40115521331).
+FORCES = {
+    "IND": r"Indian (?:Army|Air Force|Navy|Coast Guard)|\bIAF\b|\bINS [A-Z]|Indian Army",
+    "PAK": r"Pakistan (?:Army|Air Force|Navy)|\bPAF\b|\bPNS [A-Z]|Pakistan Day Parade",
+    "CHN": r"People's Liberation Army|\bPLA(?:\b|N)|Chinese (?:Army|Navy|Air ?Force)|PLA\(N\)|Chengdu J-20",
+    "USA": r"U\.? ?S\.? (?:Army|Navy|Air Force|Marine Corps|Marines|Space Force)|\bUSS [A-Z]|United States (?:Army|"
+           r"Navy|Air Force|Marine Corps)",
+    "RUS": r"Russian (?:Army|Air Force|Navy|navy|Aerospace Forces|Ground Forces|Armed Forces)|Russian Federation "
+           r"(?:Army|Navy|Air Force)",
+    "UKR": r"Ukrainian (?:Army|Air Force|Navy|navy|Ground Forces)|Armed Forces of Ukraine|Ukraine - Air Force|"
+           r"Ukrainian (?:soldiers|military)",
+    "ISR": r"Israel(?:i)? (?:Defense Forces|Air Force|Navy)|\bIDF\b|IAF-F-35I|Israeli Sa'ar|Saar-\d|Merkava",
+    "IRN": r"Iranian (?:army|Army|Air Force|air force|navy|Navy)|Islamic Republic of Iran (?:Navy|Air Force|Army)|"
+           r"\bIRGC\b|Army of Iran",
+}
+
+
 def own(p, iso3: str) -> bool:
-    """The photo is of this country's forces by its own words: its file or description names the country and no
-    other listed one. A "Pakistan Army parade" search returned an Indian Army regiment's bicentenary (2026-10-24)."""
-    text = f"{p.file} {p.description or ''} {' '.join(p.categories or [])}"
-    return iso3 in _iso3(f"{p.file} {p.description or ''}") and set(_iso3(text)) <= {iso3}
+    """The photo is of this country's forces by its own words: its file or description names the country's forces
+    (FORCES) and no other listed country. A "Pakistan Army parade" search returned an Indian Army regiment's
+    bicentenary (2026-10-24)."""
+    named = f"{p.file} {p.description or ''}"
+    text = f"{named} {' '.join(p.categories or [])}"
+    return bool(re.search(FORCES[iso3], named)) and set(_iso3(text)) <= {iso3}
 
 
 def forces_photos(iso3: str, folder: Path, taken: set[str], recent: set[str] = frozenset(),

@@ -137,6 +137,13 @@ def test_a_photo_must_name_its_own_country_and_no_other():
     assert not compare.own(p("File:Russian Navy ship in Vladivostok.jpg",
                              "VLADIVOSTOK, Russia (Sept. 22, 2012) Sailors aboard USS Vandegrift"), "RUS")
     assert not compare.own(p("File:Ukrainian MiG-29s.jpg", "A U.S. B-52H Stratofortress and Ukrainian MiG-29s"), "UKR")
+    # A city's parade is not the country's forces: Belarus's contingent at Moscow's 2010 parade.
+    assert not compare.own(p("File:2010 Moscow Victory Day Parade-9.jpeg",
+                             "Военный парад, посвящённый 65-летию Победы"), "RUS")
+    assert compare.own(p("File:Sukhoi Su-57 RF-81775 Army-2022.jpg", "Russian Air Force Sukhoi Su-57"), "RUS")
+    # A named person is someone the voice never names.
+    assert compare.NAMED.search("Christmas Eve photo of Andrii Pilshchykov posted by the Ukrainian Air Force")
+    assert not compare.NAMED.search("Ukrainian Air Force MiG-29 in the colours of the Ukrainian Falcons")
 
 
 def rows_at(*items):
