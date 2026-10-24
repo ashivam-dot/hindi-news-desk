@@ -302,9 +302,18 @@ def gemini_take(text: str, direction: str, models: list[str] | None = None) -> t
     raise TTSUnavailable("no Gemini TTS model read the script: " + "; ".join(errors[-6:]))
 
 
-def _wpm(tokens: list, spoken: list[tuple[str, float, float]]) -> float | None:
+def _wpm(tokens: list, spoken: list[tuple[str, float, float]], said: int | None = None) -> float | None:
     seconds = spoken[-1][2] - spoken[0][1] if spoken else 0.0
-    return round(len(tokens) * 60 / seconds, 1) if seconds > 0 else None
+    return round((said or len(tokens)) * 60 / seconds, 1) if seconds > 0 else None
+
+
+def said_words(short: Short) -> int | None:
+    """How many words a comparison Short's narrator says: its figures are spoken as several words each ('2020' is
+    'दो हज़ार बीस'), so counting the written ones makes a normal read look far too slow (dry runs 40119793567,
+    40120953202 at 103 wpm). Other Shorts keep counting written words."""
+    if not short.id.startswith("cmp-"):
+        return None
+    return sum(len(spoken_numbers(speakable(b.text)).split()) for b in short.beats)
 
 
 def _tempo(path: Path, factor: float, out: Path) -> Path:
@@ -313,10 +322,11 @@ def _tempo(path: Path, factor: float, out: Path) -> Path:
     return out
 
 
-def _listen(wav: Path, tokens: list[tuple[str, int]]) -> tuple[list[dict], list[float], list, float | None]:
+def _listen(wav: Path, tokens: list[tuple[str, int]],
+            said: int | None = None) -> tuple[list[dict], list[float], list, float | None]:
     spoken = align.heard(wav)
     words, coverage = align.align(tokens, spoken)
-    return words, coverage, spoken, _wpm(tokens, spoken)
+    return words, coverage, spoken, _wpm(tokens, spoken, said)
 
 
 def _spans(words: list[dict], beats: int, duration: float, lead: float) -> list[list[float]]:
@@ -328,13 +338,14 @@ def _spans(words: list[dict], beats: int, duration: float, lead: float) -> list[
     return [[round(a, 3), round(b, 3)] for a, b in zip(cuts, cuts[1:])]
 
 
-def _paced(wav: Path, tokens, words, coverage, spoken, wpm, out_dir: Path) -> tuple[list, list, float | None, float]:
+def _paced(wav: Path, tokens, words, coverage, spoken, wpm, out_dir: Path,
+           said: int | None = None) -> tuple[list, list, float | None, float]:
     """Gently re-time a take that is off TARGET_WPM, then listen again; the original stays if the re-timed one fails."""
     if wpm is None or TARGET_WPM[0] <= wpm <= TARGET_WPM[1]:
         return words, coverage, wpm, 1.0
     factor = min(max(AIM_WPM / wpm, TEMPO_LIMITS[0]), TEMPO_LIMITS[1])
     paced = _tempo(wav, factor, out_dir / "narration-paced.wav")
-    w2, c2, _, wpm2 = _listen(paced, tokens)
+    w2, c2, _, wpm2 = _listen(paced, tokens, said)
     if c2 and min(c2) >= MIN_COVERAGE:
         paced.replace(wav)
         return w2, c2, wpm2, round(factor, 4)
@@ -347,6 +358,7 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
     direction = direction_for(short)
     transcript = "\n".join(speakable(b.text) for b in short.beats)
     tokens = [(w, i) for i, b in enumerate(short.beats) for w in b.text.split()]
+    said = said_words(short)
     wav = out_dir / "narration.wav"
     best, takes, pinned, take = None, [], None, 0
     while take < TAKES:
@@ -368,7 +380,7 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
         for _ in range(3):
             audio = np.concatenate([np.zeros(int(LEAD_IN * SAMPLE_RATE), np.float32), raw])
             sf.write(wav, audio, SAMPLE_RATE)
-            words, coverage, spoken, wpm = _listen(wav, tokens)
+            words, coverage, spoken, wpm = _listen(wav, tokens, said)
             before, after = align.outside(words, spoken)
             if not (before or after):
                 clean = True
@@ -395,7 +407,7 @@ def _gemini_story(short: Short, out_dir: Path) -> dict:
         raise TakeRejected(f"voice: every Sulafat take came out garbled or off pace: {takes}"[:400])
     audio, record, (words, coverage, spoken), wpm = best
     sf.write(wav, audio, SAMPLE_RATE)
-    words, coverage, wpm, factor = _paced(wav, tokens, words, coverage, spoken, wpm, out_dir)
+    words, coverage, wpm, factor = _paced(wav, tokens, words, coverage, spoken, wpm, out_dir, said)
     duration = sf.info(str(wav)).duration
     lead = LEAD_IN / factor
     words = [w | {"start": max(w["start"], lead), "end": max(w["end"], lead + 0.05)} for w in words]
@@ -461,7 +473,7 @@ def synthesize_lines(short: Short, out_dir: Path) -> dict:
     wav = out_dir / "narration.wav"
     sf.write(wav, np.concatenate(chunks[:-1]), SAMPLE_RATE)
     duration = sf.info(str(wav)).duration
-    wpm = _wpm(words, [("", words[0]["start"], words[-1]["end"])])
+    wpm = _wpm(words, [("", words[0]["start"], words[-1]["end"])], said_words(short))
     if wpm is None or not HARD_WPM[0] <= wpm <= HARD_WPM[1]:
         raise TakeRejected(f"voice: the lines are read at {wpm} wpm")
     models = sorted({r["served_model"] for r in records})

@@ -1,16 +1,19 @@
-"""Defence comparison Shorts ("भारत बनाम पाकिस्तान"): two countries' military spending, its share of the economy and
-per citizen (SIPRI Military Expenditure Database, read from SIPRI's own spreadsheet and checked against the World
-Bank's copy), and their armed forces (IISS, The Military Balance, via the World Bank, CC BY 4.0), over each
+"""Country comparison Shorts ("भारत बनाम पाकिस्तान"): two countries' armed forces, the armed forces' share of the
+labour force (IISS, The Military Balance), the size of their economies (national accounts) and their populations
+(UN World Population Prospects), all from the World Bank's World Development Indicators under CC BY 4.0, over each
 country's own freely licensed Commons photos of its forces. No model writes them: every line is a template filled
-with a published number, both countries' figures from one year, a SIPRI estimate said to be one, and a figure
-SIPRI marks highly uncertain never used. So a comparison cannot say what the data does not.
+with a published number, both countries' figures from one year, each said with its year.
+
+Only data its publisher licenses for commercial use: each indicator's licence is read from the World Bank's own
+metadata before every build, and anything but CC BY is refused. SIPRI's military spending (also in the WDI) is
+under SIPRI's terms, which need SIPRI's authorization for commercial use (2026-10-24 audit; the first comparison,
+cmp-20261024-IND-PAK, used it and was set to private).
 
 A pair runs when the day's news is about both countries (a conflict story with OWNERS outlets naming both), or,
 when the channel has been quiet for revisit.IDLE, as an evergreen explainer; at most PER_DAY a day and a pair at
 most once in PAIR_DAYS days. Owner, 2026-10-24: "some times you can compare the defences of two countries"."""
 from __future__ import annotations
 
-import io
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -19,21 +22,25 @@ from . import hindi, media, net
 from .spec import Beat, Fact, Short
 
 WB = "https://api.worldbank.org/v2/country/{codes}/indicator/{code}"
+WB_META = "https://api.worldbank.org/v2/sources/2/series/{code}/metadata"
 WB_PAGE = "https://data.worldbank.org/indicator/{code}?locations={iso2}"
-SIPRI_PAGE = "https://www.sipri.org/databases/milex"
-SPEND, SHARE, TROOPS, CAPITA = "MS.MIL.XPND.CD", "MS.MIL.XPND.GD.ZS", "MS.MIL.TOTL.P1", "per capita"
-SIPRI_SHEETS = {SPEND: "Current US$", SHARE: "Share of GDP", CAPITA: "Per capita"}
-# The spreadsheet's legend: "Figures in blue are SIPRI estimates. Figures in red indicate highly uncertain data."
-# (Excel's indexed palette: 12 blue, 10 red.)
-BLUE, RED = (12, "FF0000FF"), (10, "FFFF0000")
-AGREE = 0.005  # the World Bank's copy within 0.5% of SIPRI's own figure, or the comparison is refused
+TROOPS, LABOUR, GDP, PEOPLE = "MS.MIL.TOTL.P1", "MS.MIL.TOTL.TF.ZS", "NY.GDP.MKTP.CD", "SP.POP.TOTL"
+INDICATORS = (TROOPS, LABOUR, GDP, PEOPLE)
+SOURCES = {TROOPS: "IISS, The Military Balance", LABOUR: "IISS, The Military Balance",
+           GDP: "World Bank national accounts data", PEOPLE: "UN World Population Prospects"}
+FREE = re.compile(r"^CC BY(?:-| )4\.0$", re.I)
+EVEN = 1.2  # a ratio under this is "about equal", never "1.1 गुना"
 PREFIX, PER_DAY, PAIR_DAYS, OWNERS, FAME = "cmp-", 1, 14, 3, 1
-# Off: SIPRI's data (the World Bank's military expenditure series carry "SIPRI terms and conditions", WDI
-# metadata License_Type) needs SIPRI's authorization for commercial use, a monetized channel included (2026-10-24).
+FORMAT = "forces"  # the id's last part: a format told once under an id is never told again under it
+# Shorts taken down: they count for nothing (not today's comparison, not their pair's last).
+RETIRED = {"cmp-20261024-IND-PAK"}
+# Owner, 2026-10-24: "just modify this india pakistan comparison then stop". The lane stays off; ONE_OFF is the
+# corrected India-Pakistan Short, run once in place of the retired one, then nothing.
 ENABLED = False
+ONE_OFF = ("IND", "PAK")
 MIN_PHOTOS = 3  # per country: the Short cuts between its forces on land, in the air and at sea
-CREDIT = ("तथ्य: SIPRI Military Expenditure Database (रक्षा खर्च); IISS, The Military Balance, World Bank के ज़रिये "
-          "(CC BY 4.0) (सशस्त्र बल); तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
+CREDIT = ("तथ्य: World Bank World Development Indicators (CC BY 4.0): सशस्त्र बल IISS, The Military Balance; "
+          "जीडीपी: राष्ट्रीय लेखा; आबादी: UN World Population Prospects; तस्वीरें: Wikimedia Commons (लाइसेंस नीचे)")
 
 # iso3: English name, how a headline names it, Hindi, iso2, and the Commons searches for its forces (newest first).
 COUNTRIES = {
@@ -82,50 +89,14 @@ def _iso3(text: str) -> list[str]:
     return [k for k, v in COUNTRIES.items() if re.search(rf"\b(?:{v[1]})(?!\w)", text or "")]
 
 
-SIPRI_NAMES = {"USA": "United States of America"}
-
-
-def sipri_name(iso3: str) -> str:
-    return SIPRI_NAMES.get(iso3, COUNTRIES[iso3][0])
-
-
-def _colour(cell) -> str:
-    """"estimate" (blue), "uncertain" (red) or "" for a SIPRI cell."""
-    c = cell.font.color if cell.font else None
-    if c is None:
-        return ""
-    got = c.indexed if c.type == "indexed" else (c.rgb if c.type == "rgb" else None)
-    return "estimate" if got in BLUE else "uncertain" if got in RED else ""
-
-
-def sipri_tables(content: bytes) -> dict[str, dict[str, dict[int, tuple[float, str]]]]:
-    """{sheet key: {SIPRI country name: {year: (value, "estimate" | "uncertain" | "")}}} from SIPRI's spreadsheet;
-    a cell without a number ("...", "xxx") is no figure."""
-    import openpyxl
-
-    book = openpyxl.load_workbook(io.BytesIO(content))
+def licences(get=net.get_json) -> dict[str, str]:
+    """{indicator: its licence}, from the World Bank's own metadata (License_Type)."""
     out = {}
-    for key, sheet in SIPRI_SHEETS.items():
-        ws = book[sheet]
-        head = next(r for r in ws.iter_rows() if r[0].value == "Country")
-        years = {c.column: int(float(c.value)) for c in head if re.fullmatch(r"\d{4}(\.0)?", str(c.value or ""))}
-        table: dict[str, dict] = {}
-        for row in ws.iter_rows(min_row=head[0].row + 1):
-            name = str(row[0].value or "").strip()
-            if name:
-                table[name] = {years[c.column]: (float(c.value), _colour(c)) for c in row
-                               if c.column in years and isinstance(c.value, (int, float))}
-        out[key] = table
+    for code in INDICATORS:
+        d = get(WB_META.format(code=code), params={"format": "json"}, timeout=60)
+        fields = {m["id"]: m["value"] for c in d["source"][0]["concept"] for v in c["variable"] for m in v["metatype"]}
+        out[code] = (fields.get("License_Type") or "").strip()
     return out
-
-
-def sipri_file(get=net.get) -> bytes:
-    """SIPRI's current spreadsheet, found from its database page (the file name carries the version)."""
-    page = get(SIPRI_PAGE, timeout=60).decode("utf-8", "replace")
-    m = re.search(r'href="((?:https:)?//www\.sipri\.org/[^"]*Milex-data[^"]*\.xlsx)"', page)
-    if not m:
-        raise ValueError("compare: SIPRI's database page links no spreadsheet")
-    return get(("https:" + m.group(1)) if m.group(1).startswith("//") else m.group(1), timeout=120)
 
 
 def _wb(pair, code, get) -> dict[str, dict[int, float]]:
@@ -138,34 +109,19 @@ def _wb(pair, code, get) -> dict[str, dict[int, float]]:
     return out
 
 
-def figures(pair, get=net.get_json, sipri: dict | None = None) -> dict:
-    """{"year", "troops_year", iso3: {SPEND, SHARE, CAPITA, TROOPS, "estimate"}}: the latest year SIPRI has all three
-    spending figures for both countries, none highly uncertain, each spending figure within AGREE of the World Bank's
-    copy; the latest year IISS (World Bank) has both countries' armed forces. Refuses rather than mixing years."""
-    sipri = sipri if sipri is not None else sipri_tables(sipri_file())
-    rows = {key: {k: sipri[key].get(sipri_name(k), {}) for k in pair} for key in SIPRI_SHEETS}
-    usable = [y for y in sorted(set.intersection(*(set(rows[key][k]) for key in rows for k in pair)), reverse=True)
-              if all(rows[key][k][y][1] != "uncertain" for key in rows for k in pair)]
-    if not usable:
-        raise ValueError(f"compare: SIPRI has no common year of firm figures for {' and '.join(pair)}")
-    year = usable[0]
-    wb = {SPEND: _wb(pair, SPEND, get), SHARE: _wb(pair, SHARE, get)}
-    for k in pair:
-        ours, theirs = wb[SPEND][k].get(year), rows[SPEND][k][year][0] * 1e6  # SIPRI: US$ m.
-        if ours is None or abs(ours - theirs) > AGREE * theirs:
-            raise ValueError(f"compare: {k} {year} spending: World Bank {ours} against SIPRI {theirs:.0f}")
-        ours, theirs = wb[SHARE][k].get(year), rows[SHARE][k][year][0] * 100  # SIPRI: a fraction
-        if ours is None or abs(ours - theirs) > max(0.05, AGREE * theirs):
-            raise ValueError(f"compare: {k} {year} share of GDP: World Bank {ours} against SIPRI {theirs:.2f}")
-    troops = _wb(pair, TROOPS, get)
-    both = sorted(set(troops[pair[0]]) & set(troops[pair[1]]), reverse=True)
-    if not both:
-        raise ValueError(f"compare: IISS (World Bank) has no common year of armed forces for {' and '.join(pair)}")
-    out: dict = {"year": year, "troops_year": both[0]}
-    for k in pair:
-        out[k] = {SPEND: rows[SPEND][k][year][0] * 1e6, SHARE: rows[SHARE][k][year][0] * 100,
-                  CAPITA: rows[CAPITA][k][year][0], TROOPS: troops[k][both[0]],
-                  "estimate": any(rows[key][k][year][1] == "estimate" for key in rows)}
+def figures(pair, get=net.get_json) -> dict:
+    """{indicator: (year, {iso3: value})}: for each indicator the latest year both countries have a figure, after
+    every indicator's licence is checked to be CC BY 4.0. Refuses rather than mixing years or licences."""
+    bad = {c: lic for c, lic in licences(get).items() if not FREE.match(lic)}
+    if bad:
+        raise ValueError("compare: not licensed for commercial use: " + ", ".join(f"{c} ({v!r})" for c, v in bad.items()))
+    out = {}
+    for code in INDICATORS:
+        rows = _wb(pair, code, get)
+        both = sorted(set(rows[pair[0]]) & set(rows[pair[1]]), reverse=True)
+        if not both:
+            raise ValueError(f"compare: the World Bank has no common year of {code} for {' and '.join(pair)}")
+        out[code] = (both[0], {k: rows[k][both[0]] for k in pair})
     return out
 
 
@@ -175,14 +131,14 @@ def _one(x: float) -> str:
     return s[:-2] if s.endswith(".0") else s
 
 
-def money(usd: float) -> str:
-    """"92.1 अरब डॉलर", "27.8 करोड़ डॉलर"."""
-    return f"{_one(usd / 1e9)} अरब डॉलर" if usd >= 1e9 else f"{_one(usd / 1e7)} करोड़ डॉलर"
-
-
 def people(n: float) -> str:
     """"30.7 लाख", "94 हज़ार"."""
     return f"{_one(n / 1e5)} लाख" if n >= 1e5 else f"{round(n / 1e3)} हज़ार"
+
+
+def crore(n: float) -> str:
+    """"146.4 करोड़", "98 लाख"."""
+    return f"{_one(n / 1e7)} करोड़" if n >= 1e7 else people(n)
 
 
 def times(a: float, b: float) -> str:
@@ -190,63 +146,63 @@ def times(a: float, b: float) -> str:
 
 
 def script(pair, data) -> dict:
-    """The title, the beats ({say, show: [(iso3, slot)], card}) and the facts ({key, phrase, code, iso3s, what})."""
-    a, b = sorted(pair, key=lambda k: -data[k][SPEND])  # the bigger spender leads
+    """The title, the beats ({say, show: [(iso3, slot)], cut, card}) and the facts ({key, phrase, source, what})."""
+    (yt, troops), (yl, labour), (yg, gdp), (yp, pop) = (data[c] for c in INDICATORS)
+    a, b = sorted(pair, key=lambda k: -troops[k])  # the bigger armed forces lead
     A, B = COUNTRIES[a][2], COUNTRIES[b][2]
-    ys, yt = data["year"], data["troops_year"]
-    sa, sb = data[a][SPEND], data[b][SPEND]
-    ta, tb = data[a][TROOPS], data[b][TROOPS]
-    pa, pb = round(data[a][CAPITA]), round(data[b][CAPITA])
-    r = times(sa, sb)
-    hi_share, lo_share = (a, b) if data[a][SHARE] >= data[b][SHARE] else (b, a)
-    H, L = COUNTRIES[hi_share][2], COUNTRIES[lo_share][2]
-    gh, gl = _one(data[hi_share][SHARE]), _one(data[lo_share][SHARE])
-    lead_in = "और जीडीपी के हिस्से में भी" if hi_share == a else "पर जीडीपी के हिस्से में"
-    guessed = [COUNTRIES[k][2] for k in (a, b) if data[k]["estimate"]]
-    # SIPRI's own estimate, said as one (SIPRI estimates China's, Russia's and Ukraine's 2025 spending).
-    mark = " · अनुमान" if data[a]["estimate"] else ""  # the card shows the lead's figure: its own mark only
-    # Its own beat, over the estimated country's photo: said over the other's (dry run 40114311827), it read as
-    # India's figure being the estimate.
-    est = [k for k in (a, b) if data[k]["estimate"]]
-    estimate = [{"say": f"{' और '.join(guessed)} के आंकड़े सिपरी का अनुमान हैं।", "show": [(k, 5) for k in est],
-                 "cut": COUNTRIES[est[-1]][2] if len(est) > 1 else "",
-                 "card": {"big": "अनुमान", "small": f"{' और '.join(guessed)} · सिपरी"}}] if est else []
-    # About 65 words, about 32 s at the narrator's 115 a minute (dry run 40103609151: 70 words ran 38 s).
+
+    def bigger(values: dict) -> tuple[str, str, str, bool]:
+        """(bigger, smaller, ratio, about equal) for an indicator."""
+        hi, lo = sorted(pair, key=lambda k: -values[k])
+        r = values[hi] / values[lo]
+        return hi, lo, times(values[hi], values[lo]), r < EVEN
+
+    _, _, rt, even_t = bigger(troops)
+    gh, gl, rg, even_g = bigger(gdp)
+    lh, ll, _, _ = bigger(labour)
+    G, Gl = COUNTRIES[gh][2], COUNTRIES[gl][2]
+    hook = (f"{yt} के आंकड़ों में {A} और {B} के सशस्त्र बल लगभग बराबर थे।" if even_t else
+            f"{yt} के आंकड़ों में {A} के सशस्त्र बल {B} से {rt} गुना बड़े थे।")
+    labour_lead = "और कामकाजी आबादी के हिस्से में भी" if lh == a else "पर कामकाजी आबादी के हिस्से में"
+    economy = (f"{yg} में {A} और {B} की अर्थव्यवस्थाएं लगभग बराबर हैं।" if even_g else
+               f"{'' if gh == a else 'पर '}{yg} में अर्थव्यवस्था में {G} {Gl} से {rg} गुना बड़ा है।")
+    # About 60 words, under 35 s at the narrator's 115 a minute.
     beats = [
-        {"say": f"सिपरी के मुताबिक, रक्षा पर {A} का खर्च {B} से {r} गुना है।", "show": [(a, 0), (b, 0)], "cut": B,
-         "card": {"big": f"{r} गुना", "small": f"रक्षा खर्च · सिपरी · {ys}"}},
-        {"say": f"{ys} में {A} ने {money(sa)} और {B} ने {money(sb)} खर्च किए।",
-         "show": [(a, 1), (b, 1)], "cut": B, "card": {"big": money(sa), "small": f"{A} · {ys}{mark}"}},
-        *estimate,
-        {"say": f"{lead_in} {H} आगे है: {gh} प्रतिशत, {L} {gl} प्रतिशत।",
-         "show": [(hi_share, 2), (lo_share, 2)], "cut": L,
-         "card": {"big": f"{gh}% बनाम {gl}%", "small": f"जीडीपी में हिस्सा · {ys}"}},
-        {"say": f"{yt} में {A} के सशस्त्र बल {people(ta)} और {B} के {people(tb)} थे।",
-         "show": [(a, 3), (b, 3)], "cut": B,
-         "card": {"big": f"{people(ta)} बनाम {people(tb)}", "small": f"सशस्त्र बल, अर्धसैनिक समेत · आईआईएसएस · {yt}"}},
-        {"say": f"हर नागरिक पर {A} {pa} डॉलर और {B} {pb} डॉलर खर्च करता है।",
-         "show": [(a, 4), (b, 4)], "cut": B,
-         "card": {"big": f"{pa} बनाम {pb} डॉलर", "small": f"प्रति नागरिक · सिपरी · {ys}"}},
+        {"say": hook, "show": [(a, 0), (b, 0)], "cut": B,
+         "card": {"big": "लगभग बराबर" if even_t else f"{rt} गुना", "small": f"सशस्त्र बल · आईआईएसएस · {yt}"}},
+        {"say": f"{A} के {people(troops[a])} और {B} के {people(troops[b])}, अर्धसैनिक बल मिलाकर।",
+         "show": [(a, 1), (b, 1)], "cut": B,
+         "card": {"big": f"{people(troops[a])} बनाम {people(troops[b])}", "small": f"अर्धसैनिक बल समेत · {yt}"}},
+        {"say": f"{labour_lead} {COUNTRIES[lh][2]} आगे था: {_one(labour[lh])} प्रतिशत, "
+                f"{COUNTRIES[ll][2]} {_one(labour[ll])} प्रतिशत।", "show": [(lh, 2), (ll, 2)], "cut": COUNTRIES[ll][2],
+         "card": {"big": f"{_one(labour[lh])}% बनाम {_one(labour[ll])}%", "small": f"श्रम बल में सैनिक · {yl}"}},
+        {"say": economy, "show": [(gh, 3), (gl, 3)], "cut": Gl,
+         "card": {"big": "लगभग बराबर" if even_g else f"{rg} गुना", "small": f"जीडीपी · विश्व बैंक · {yg}"}},
+        {"say": f"आबादी: {A} {crore(pop[a])}, {B} {crore(pop[b])}।", "show": [(a, 4), (b, 4)], "cut": B,
+         "card": {"big": f"{crore(pop[a])} बनाम {crore(pop[b])}", "small": f"आबादी · संयुक्त राष्ट्र · {yp}"}},
     ]
-    sipri = lambda k, what: {"source": SIPRI_PAGE, "code": SPEND, "iso3s": k,  # noqa: E731
-                             "what": f"SIPRI Military Expenditure Database, {ys}: {what}" +
-                                     (" (SIPRI estimate)" if any(data[x]["estimate"] for x in k) else "")}
+
+    def fact(key, code, phrase, what, ks=pair):
+        iso2 = ",".join(COUNTRIES[k][3] for k in ks)
+        return {"key": key, "phrase": phrase, "source": WB_PAGE.format(code=code, iso2=iso2),
+                "what": f"{SOURCES[code]} (World Bank WDI {code}, CC BY 4.0): {what}"}
+
     facts = [
-        {"key": "spend-ratio", "phrase": f"{ys} {r} गुना",
-         **sipri((a, b), f"{sa:,.0f} / {sb:,.0f} current US$ = {sa / sb:.2f}")},
-        *({"key": f"spend-{k}", "phrase": f"{ys} {money(data[k][SPEND])}",
-           **sipri((k,), f"{data[k][SPEND]:,.0f} current US$")} for k in (a, b)),
-        *({"key": f"share-{k}", "phrase": f"{ys} {_one(data[k][SHARE])} प्रतिशत",
-           **sipri((k,), f"{data[k][SHARE]:.2f}% of GDP")} for k in (a, b)),
-        *({"key": f"per-person-{k}", "phrase": f"{ys} {round(data[k][CAPITA])} डॉलर",
-           **sipri((k,), f"{data[k][CAPITA]:.2f} current US$ per capita")} for k in (a, b)),
-        *({"key": f"troops-{k}", "phrase": f"{yt} {people(data[k][TROOPS])}", "code": TROOPS, "iso3s": (k,),
-           "source": WB_PAGE.format(code=TROOPS, iso2=COUNTRIES[k][3]),
-           "what": f"IISS, The Military Balance (World Bank WDI {TROOPS}), {yt}: {data[k][TROOPS]:,.0f} armed forces "
-                   f"personnel, paramilitary included"} for k in (a, b)),
+        fact("troops-ratio", TROOPS, f"{yt} {rt} गुना", f"{yt}: {troops[a]:,.0f} / {troops[b]:,.0f}"),
+        *(fact(f"troops-{k}", TROOPS, f"{yt} {people(troops[k])}", f"{yt}: {troops[k]:,.0f} armed forces personnel, "
+               "paramilitary included", (k,)) for k in pair),
+        *(fact(f"labour-{k}", LABOUR, f"{yl} {_one(labour[k])} प्रतिशत", f"{yl}: {labour[k]:.2f}% of the labour force",
+               (k,)) for k in pair),
+        fact("gdp-ratio", GDP, f"{yg} {rg} गुना", f"{yg}: {gdp[gh]:,.0f} / {gdp[gl]:,.0f} current US$"),
+        *(fact(f"people-{k}", PEOPLE, f"{yp} {crore(pop[k])}", f"{yp}: {pop[k]:,.0f}", (k,)) for k in pair),
     ]
-    title = f"{A} बनाम {B}: रक्षा खर्च में {r} गुना का फ़र्क"
-    return {"lead": a, "other": b, "title": title, "beats": beats, "facts": facts, "year": ys}
+    # Each count names whose it is: "बराबर सेनाएं, अर्थव्यवस्था 12 गुना" read as Russia's economy being America's
+    # twelve times over (it is the other way round).
+    forces = "सेनाएं लगभग बराबर" if even_t else f"सेना में {A} {rt} गुना"
+    economy_t = "अर्थव्यवस्थाएं लगभग बराबर" if even_g else f"अर्थव्यवस्था में {G} {rg} गुना"
+    title = f"{A} बनाम {B}: {forces}, {economy_t}"
+    return {"lead": a, "other": b, "title": title, "beats": beats, "facts": facts, "year": yg,
+            "years": {c: data[c][0] for c in INDICATORS}}
 
 
 # How a photo's file or description names the country's own forces. A city or a parade is not enough: "2010 Moscow
@@ -300,9 +256,9 @@ def forces_photos(iso3: str, folder: Path, taken: set[str], recent: set[str] = f
     return media.as_dicts(media.download(found, folder))
 
 
-def build(cand: dict, get=net.get_json, photos_for=forces_photos, sipri: dict | None = None) -> Short:
+def build(cand: dict, get=net.get_json, photos_for=forces_photos) -> Short:
     pair = tuple(cand["pair"])
-    data = figures(pair, get, sipri)
+    data = figures(pair, get)
     s = script(pair, data)
     from . import writer
 
@@ -336,18 +292,18 @@ def build(cand: dict, get=net.get_json, photos_for=forces_photos, sipri: dict | 
     region = "india" if "IND" in pair else "world"
     scene = {"template": "full", "mood": "news", "voice": "sulafat", "region": region, "photos": photos,
              "name_hi": "", "subject_person": False, "names": [], "cast": cast, "category": "defence",
-             "category_hi": "रक्षा तुलना", "lane": "compare", "pair": list(pair), "min_photos": 2 * MIN_PHOTOS,
+             "category_hi": "देशों की तुलना", "lane": "compare", "pair": list(pair), "min_photos": 2 * MIN_PHOTOS,
              "hook": "", "writer": {"models": ["template"], "rejected": [], "titles": [s["title"]]}}
-    tags = [f"{en} military", f"{en} defence budget", f"{COUNTRIES[s['lead']][0]} military spending",
-            f"{COUNTRIES[s['other']][0]} military spending", "defence comparison", "hindi news", "news in hindi"]
+    tags = [f"{en} military", f"{en} army comparison", f"{en} economy", f"{COUNTRIES[s['lead']][0]} armed forces",
+            f"{COUNTRIES[s['other']][0]} armed forces", "country comparison", "hindi news", "news in hindi"]
     slug = lambda k: re.sub(r"[^a-z]", "", COUNTRIES[k][0].lower())  # noqa: E731
     hashtags = [f"{slug(s['lead'])}vs{slug(s['other'])}", "defence", "military", "hindinews", "shorts",
                 slug(s["lead"]), slug(s["other"]), "worldnews" if region == "world" else "indianews", "रक्षा"]
-    summary = (f"{A} और {B} की सेनाओं की तुलना: रक्षा खर्च, जीडीपी में हिस्सा, सशस्त्र बल और प्रति नागरिक खर्च। "
-               f"रक्षा खर्च, जीडीपी में हिस्सा और प्रति नागरिक खर्च ({s['year']}): SIPRI Military Expenditure Database; "
-               f"सशस्त्र बल ({data['troops_year']}, अर्धसैनिक बल समेत): IISS, The Military Balance (World Bank)।"
-               + (" SIPRI के अनुमान वाले आंकड़े अनुमान ही बताए गए हैं।"
-                  if any(data[k]["estimate"] for k in pair) else ""))
+    y = s["years"]
+    summary = (f"{A} और {B} की तुलना: सशस्त्र बल, श्रम बल में सैनिकों का हिस्सा, अर्थव्यवस्था और आबादी। "
+               f"स्रोत, World Bank World Development Indicators (CC BY 4.0) के ज़रिये: सशस्त्र बल और श्रम बल में "
+               f"हिस्सा ({y[TROOPS]}, अर्धसैनिक बल समेत): IISS, The Military Balance; जीडीपी ({y[GDP]}): राष्ट्रीय लेखा; "
+               f"आबादी ({y[PEOPLE]}): UN World Population Prospects। हर आंकड़े का साल वीडियो में बताया गया है।")
     return Short(id=cand["id"], kind="compare", title=s["title"], beats=beats, facts=facts, sources=sources,
                  loss=False, scene=scene, event_time=f"{s['year']}", tags=tags, summary=summary, credits=credits,
                  hashtags=hashtags)
@@ -376,9 +332,10 @@ def news_pairs(stories: list[dict]) -> list[tuple[tuple[str, str], dict]]:
 
 
 def candidate(pair, at: datetime, why: str, story: dict | None = None) -> dict:
-    a, b = pair
+    # One id per pair whichever way it is asked for (PAK-IND is IND-PAK): the cooldown reads ids.
+    a, b = next((p for p in PAIRS if set(p) == set(pair)), tuple(pair))
     title = f"{COUNTRIES[a][0]} and {COUNTRIES[b][0]} military comparison"
-    return {"id": f"{PREFIX}{_day(at)}-{a}-{b}", "kind": "compare", "compare": True, "pair": [a, b], "title": title,
+    return {"id": f"{PREFIX}{_day(at)}-{a}-{b}-{FORMAT}", "kind": "compare", "compare": True, "pair": [a, b], "title": title,
             "name": title, "category": "defence", "region": "india" if "IND" in pair else "world",
             "date": at.date().isoformat(), "news_at": at.isoformat(), "fame": FAME, "owners": [],
             "headlines": [], "top": None, "why": why, "story": (story or {}).get("id")}
@@ -391,9 +348,11 @@ def candidates(stories: list[dict], rows: list[dict], at: datetime) -> tuple[lis
     from . import revisit
 
     if not ENABLED:
+        if ONE_OFF and not any(_pair_of(r.get("id") or "") == ONE_OFF and r["id"] not in RETIRED for r in rows):
+            return [candidate(ONE_OFF, at, "the corrected India-Pakistan comparison")], []
         return [], []
     day = _day(at)
-    mine = [r for r in rows if (r.get("id") or "").startswith(PREFIX)]
+    mine = [r for r in rows if (r.get("id") or "").startswith(PREFIX) and r["id"] not in RETIRED]
     if sum(_day(_at(r) or at) == day for r in mine) >= PER_DAY:
         return [], ["compare: one ran today"]
     since = at - timedelta(days=PAIR_DAYS)
