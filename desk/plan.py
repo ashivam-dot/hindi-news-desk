@@ -81,7 +81,7 @@ MIN_PLACE, LOW_DEMAND, LOW_DEMAND_PLACE = 0.35, 0.8, 0.75
 DEMAND = {"death": 1.4, "entertainment": 1.4, "attack": 1.4, "disaster": 1.3, "accident": 1.2, "aviation": 1.2,
           "rail": 1.2, "flood": 1.2, "earthquake": 1.2, "cyclone": 1.1, "politics": 1.1, "court": 1.0, "news": 1.0,
           "weather": 1.0, "sport": 1.0, "health": 0.9, "policy": 0.9, "defence": 0.9, "protest": 0.8,
-          "movement": 0.8, "science": 0.7, "conflict": 0.7, "economy": 0.6, "diplomacy": 0.6, "world": 0.5}
+          "movement": 0.8, "science": 0.7, "conflict": 1.0, "economy": 0.6, "diplomacy": 0.6, "world": 0.5}
 # Ad suitability (2026-10-22, for YouTube's Partner Programme): advertisers avoid crime, court, communal and
 # accident stories, so a story about them ranks at AD_SENSITIVE of its priority, and an economy, jobs, exams,
 # schemes, tech-rules, infrastructure, science or neutral foreign-policy story at AD_FRIENDLY. A multiplier, never a
@@ -394,6 +394,8 @@ def unpopular(cand: dict, at: datetime) -> str | None:
 
     if foreign_only(cand):
         return "a world statement, politics or diplomacy story with no India connection"
+    if big_incident(cand):
+        return None
     if cand.get("top") is None:
         return None
     place = cand.get("top_score") or 0
@@ -422,6 +424,29 @@ def unpopular(cand: dict, at: datetime) -> str | None:
 # war drew 0-16 views here.
 WAR = re.compile(r"\b(war|ceasefire|truce|peace talks|invasion)\b|युद्ध|जंग|सीजफायर|युद्धविराम|संघर्ष ?विराम", re.I)
 WAR_HINDI_OWNERS = 2
+# Owner, 2026-10-24: "you can cover any big accident, big crime, war related stuff, etc across world or india". A big
+# incident anywhere is told whether or not Google News India leads with it, and also when Orbitwire told it in
+# English: the Trappes shootings (a Wikipedia article, 75k views) and the Jordan church attack (3 owners) were dropped
+# for their place in India's lists, the Oleshky ceasefire for having no India link. Big: BIG_OWNERS independent
+# owners report it, or it has its own Wikipedia event article this famous. Staleness, caps and every gate still apply.
+BIG_KINDS = ("attack", "explosion", "accident", "disaster", "rail", "aviation", "flood", "earthquake", "cyclone",
+             "conflict", "wildfire", "landslide", "tsunami")
+BIG_OWNERS, BIG_FAME = 3, 50_000
+
+
+def big_incident(cand: dict) -> str | None:
+    """Why this is a big accident, crime, disaster or war story anywhere (see BIG_KINDS), or None."""
+    war = bool(WAR.search(ad_text(cand)))
+    if cand.get("category") not in BIG_KINDS and not war:
+        return None
+    what = "war story" if war else f"{cand.get('category')} story"
+    who = len(cand.get("owners") or [])
+    if who >= BIG_OWNERS:
+        return f"a big {what}: {who} independent owners report it"
+    if cand.get("kind") != "explainer" and (cand.get("id") or "").startswith(("wk-", "wp-")) \
+            and cand.get("fame", 0) >= BIG_FAME:
+        return f"a big {what}: its own Wikipedia article, fame {cand['fame']:,.0f}"
+    return None
 
 
 def foreign_only(cand: dict) -> bool:
@@ -436,7 +461,7 @@ def foreign_only(cand: dict) -> bool:
         return False
     if cand.get("kind") != "explainer" and cand.get("category") not in WORLD_SKIPPED:
         return False
-    if WAR.search(ad_text(cand)) and len(cand.get("hindi_owners") or []) >= WAR_HINDI_OWNERS:
+    if WAR.search(ad_text(cand)) and (len(cand.get("hindi_owners") or []) >= WAR_HINDI_OWNERS or big_incident(cand)):
         return False
     return not orbitwire.india_connection(cand)
 
@@ -654,13 +679,14 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
         if not ov:
             kept.append(c)
             continue
-        why = high_profile(c, fame)
+        big = big_incident(c)
+        why = high_profile(c, fame) or big
         if not why:
             notes.append(f"skip {c['id']}: Orbitwire {ov['status'].replace('_', ' ')} ({ov['orbitwire_id']}), not "
                          f"high-profile enough to tell again")
             continue
         india = orbitwire.india_connection(c)
-        if orbitwire.MIRROR_NEEDS_INDIA and not india:
+        if orbitwire.MIRROR_NEEDS_INDIA and not india and not big:
             notes.append(f"skip {c['id']}: Orbitwire {ov['status'].replace('_', ' ')} ({ov['orbitwire_id']}) and no "
                          f"India connection: not told again in Hindi")
             continue
