@@ -738,6 +738,15 @@ def watch(save: bool = True) -> dict:
         # A case outlives the story's hours on the radar: its file keeps the candidate the angles are built on.
         if s.get("cand"):
             stories += angles_of(s["cand"], [s], rows, at)
+    from . import revisit
+
+    try:
+        more, said = revisit.candidates(rows, at)
+    except Exception as exc:  # the latest on an old story must never stop today's news
+        more, said = [], [f"revisit: {type(exc).__name__}: {exc}"]
+    stories += [c for c in more if not ledger.is_done(c["id"])]
+    if said:
+        found["notes"].insert(0, "; ".join(said)[:400])
     stories, notes = apply_orbitwire(stories, at)
     found["notes"] += notes
     for c in stories:
