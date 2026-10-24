@@ -1,20 +1,22 @@
 {
- "at": "2026-10-24T08:39:56+00:00",
+ "at": "2026-10-24T09:11:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 19 trending",
-  "outlets: 1311 headlines from 31 feeds (19 owners), 10 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261023-taiwan-cyclone, nw-20261023-jordan-attack",
-  "explainers: 4 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q7199798, kh-20261024-Q51993, kh-20261024-Q432473; dropped: explainer Rajiv Gandhi My: fewer than 3 owners' headlines name it and the story; explainer MEA: fewer than 3 owners' headlines name it and the story; explainer Akasa Air: fewer than 3 owners' headlines name it and the story",
+  "watch: 11 candidates from 20 trending",
+  "outlets: 1313 headlines from 31 feeds (19 owners), 8 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261023-taiwan-cyclone, nw-20261023-jordan-attack",
+  "explainers: 5 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q10218, kh-20261024-Q7199798, kh-20261024-Q51993; dropped: explainer Rajiv Gandhi My: fewer than 3 owners' headlines name it and the story; explainer LAC: fewer than 3 owners' headlines name it and the story; explainer \"'People Like Him Will Come And...': Piyush Goyal's Dig At Ab\": no name to tell it by",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wp-2026_Trappes_and_La_Verrière_shootings: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q983618: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1699148: 69 h old and no longer trending live",
   "drop wk-Q452431: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q983618: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261024-Q51993: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q3012285: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Trappes_and_La_Verrière_shootings; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "skip kh-20261024-Q10218: gate: no draft passed the fact checks: the script has 67 words; it must have 45 to 58; beat 2 has 16 words; keep each beat to 8 to 14 words (make it two beats); beats 4,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: दिल्ली, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 1 beat is a text card and never",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
