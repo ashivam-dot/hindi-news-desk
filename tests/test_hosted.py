@@ -89,6 +89,31 @@ def test_the_pen_tries_flash_then_hosted_then_lite(monkeypatch):
     assert asked == ["gemini-flash", "hosted", "gemini-lite"] and pen.used == ["gemini-3.5-flash-lite"]
 
 
+def test_repeated_gate_failures_try_the_existing_local_fallback(monkeypatch):
+    def gem(messages, schema, temperature, max_tokens, tier=None):
+        if tier == "flash":
+            raise gemini.Unavailable("quota")
+        return {"answer": "invalid draft"}, "gemini-3.5-flash-lite"
+
+    class Local:
+        name = "qwen3.5-35b-a3b"
+        def __init__(self, name): pass
+        def __enter__(self): return self
+        def __exit__(self, *exc): pass
+        def chat(self, *args, **kwargs): return {"answer": "local repair"}
+
+    monkeypatch.setattr(gemini, "available", lambda: True)
+    monkeypatch.setattr(gemini, "chat", gem)
+    monkeypatch.setattr(hosted, "available", lambda: False)
+    monkeypatch.setattr(writer.llm, "Model", Local)
+    with writer.Pen() as pen:
+        for _ in range(2):
+            assert pen.chat([], SCHEMA)["answer"] == "invalid draft"
+            pen.reject()
+        assert pen.chat([], SCHEMA)["answer"] == "local repair"
+        assert pen.used[-1] == "qwen3.5-35b-a3b"
+
+
 def test_gemini_keeps_to_its_tier(monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", KEY)
     monkeypatch.setattr(gemini, "_refused", False)

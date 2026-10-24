@@ -364,22 +364,32 @@ class Pen:
         self.local_name = local or llm.DEFAULT
         self.local = None
         self.used: list[str] = []
+        self.rejections: dict[str, int] = {}
+        self.last_tier: str | None = None
+
+    def reject(self) -> None:
+        """After two gated failures, let an existing fallback try the remaining bounded drafts."""
+        if self.last_tier:
+            self.rejections[self.last_tier] = self.rejections.get(self.last_tier, 0) + 1
 
     def chat(self, messages: list[dict], schema: dict | None = None, temperature: float = 0.7,
              max_tokens: int = 2400) -> dict | str:
         tiers = [(gemini, {"tier": "flash"}), (hosted, {}), (gemini, {"tier": "lite"})]
         for source, extra in tiers:
-            if not source.available():
+            tier = extra.get("tier", "hosted")
+            if self.rejections.get(tier, 0) >= 2 or not source.available():
                 continue
             try:
                 answer, model = source.chat(messages, schema, temperature, max_tokens, **extra)
                 self.used.append(model)
+                self.last_tier = tier
                 return answer
             except source.Unavailable:
                 pass
         if self.local is None:
             self.local = llm.Model(self.local_name).__enter__()
-        self.used.append(self.local_name)
+        self.last_tier = "local"
+        self.used.append(self.local.name)
         return self.local.chat(messages, schema, temperature=temperature, max_tokens=max_tokens)
 
     def close(self) -> None:
@@ -980,6 +990,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     vet = [match.vet_photo(i, photos, [], _today_ist().year, person, kind in ("incident", "protest", "death"))
            for i in range(len(photos))]
     messages = _messages(brief, facts, source_en, source_hi, photos, name_hi, hi_names, headlines, reports, vet)
+    base_messages = messages
     shows: dict = {}
     # A Commons description is anyone's caption, not a source: the script's facts come from the sources alone.
     ground_en = source_en + "\n" + "\n".join(facts)
@@ -988,6 +999,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     looked: dict[str, str | None] = {}
     own = pen is None
     pen = pen or Pen()
+    if isinstance(pen, Pen):
+        pen.rejections.clear()  # one difficult story must not disable a provider for every later story
     try:
         for attempt in range(DRAFTS):
             ignored = []
@@ -1027,7 +1040,11 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if log_path:
                 log_path.parent.mkdir(parents=True, exist_ok=True)
                 log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")
-            messages = messages + [{"role": "assistant", "content": json.dumps(draft, ensure_ascii=False)},
+            if isinstance(pen, Pen):
+                pen.reject()
+            # Keep the evidence, latest draft and exact feedback; four copies of a source packet and obsolete
+            # drafts can exhaust the local model's context before its final repair.
+            messages = base_messages + [{"role": "assistant", "content": json.dumps(draft, ensure_ascii=False)},
                                    {"role": "user", "content": "Rewrite the whole JSON. Fix these problems and change "
                                     "nothing else that is supported:\n- " + "\n- ".join(problems)}]
     finally:
