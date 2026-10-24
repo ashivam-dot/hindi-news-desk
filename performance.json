@@ -10684,9 +10684,9 @@
      "comments": 1
     },
     {
-     "age_h": 5.82,
-     "views": 241,
-     "likes": 1,
+     "age_h": 6.36,
+     "views": 271,
+     "likes": 2,
      "comments": 1
     }
    ],
@@ -10695,8 +10695,10 @@
    "region": "india",
    "lane": "naam-niyam",
    "audience": "india",
-   "views_6h": null,
-   "views_24h": null
+   "views_6h": 251.3960396039604,
+   "views_24h": null,
+   "production_version": null,
+   "producer_sha": null
   },
   "snPCpMmva-g": {
    "id": "cmp-20261024-IND-PAK",
@@ -10719,6 +10721,12 @@
      "views": 2,
      "likes": 0,
      "comments": 0
+    },
+    {
+     "age_h": 2.84,
+     "views": 0,
+     "likes": 0,
+     "comments": 0
     }
    ],
    "kind": "compare",
@@ -10727,7 +10735,9 @@
    "lane": "other",
    "audience": "india",
    "views_6h": null,
-   "views_24h": null
+   "views_24h": null,
+   "production_version": null,
+   "producer_sha": null
   }
  },
  "learned": {
