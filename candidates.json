@@ -1,5 +1,5 @@
 {
- "at": "2026-10-24T01:16:07+00:00",
+ "at": "2026-10-24T01:58:49+00:00",
  "trending": [
   {
    "id": "kh-20261024-Q140632219",
@@ -11,9 +11,10 @@
    "kind": "explainer",
    "category": "court",
    "category_hi": "अदालत",
-   "story": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+   "story": "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
    "story_keys": [
     "against",
+    "aisa",
     "bond",
     "notice",
     "peace",
@@ -39,12 +40,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
     "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
     "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
     "Delhi HC rejects Neha Bora’s plea against peace bond",
     "Neha Bora Faces Setback: Delhi High Court Rejects Plea, Directs AISA Activist To Sign ‘Peace Bond’",
-    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond"
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
    ],
    "hindi_headlines": [
     "पीस बॉन्ड भरना होगा; नेहा बोरा को हाई कोर्ट से भी लगा झटका, अदालत ने क्या कहा",
@@ -92,16 +93,6 @@
      "at": "2026-10-23T14:26:56+00:00"
     },
     {
-     "title": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
-     "url": "https://timesofindia.indiatimes.com/india/delhi-hc-rejects-aisa-chief-neha-boras-plea-against-police-notice-to-sign-peace-bond/articleshow/135147943.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T13:51:02+00:00"
-    },
-    {
      "title": "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
      "url": "https://www.hindustantimes.com/india-news/delhi-hc-rejects-neha-boras-plea-directs-her-to-sign-peace-bond-maintain-peace-oct-16-lehra-do-tiranga-101792762728415.html",
      "outlet": "Hindustan Times",
@@ -133,19 +124,20 @@
     "outlet:India Today Group",
     "outlet:DB Corp",
     "google-news:Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
-    "google-news:राहुल गांधी पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
+    "google-news:Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
     "google-news:दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, कहा- कार्रवाई शुरू करने के लिए पर्याप्त जानकारी और दस्तावे"
    ],
    "top": {
-    "IN": 6,
+    "IN": 5,
     "IN-hi": 7,
-    "IN-nation": 7,
+    "IN-nation": 5,
     "IN-hi-nation": 2
    },
-   "top_score": 1.595,
+   "top_score": 1.675,
    "top_headlines": [
     "दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, कहा- कार्रवाई शुरू करने के लिए पर्याप्त जानकारी और दस्तावे",
-    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
+    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond"
    ],
    "hindi_owners": []
   },
@@ -271,9 +263,13 @@
     35.79955
    ],
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-hi": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
@@ -291,10 +287,11 @@
    "story": "Melania Trump brokers Russia-Ukraine ceasefire",
    "story_keys": [
     "broker",
-    "ceasefire"
+    "ceasefire",
+    "secure"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-24T00:36:54+00:00",
+   "news_at": "2026-10-24T01:27:29+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Guardian Media Group",
@@ -340,6 +337,16 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-23T19:51:21+00:00"
+    },
+    {
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:27:29+00:00"
     },
     {
      "title": "Trump repeats India-Pak ceasefire claim",
@@ -464,12 +471,115 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Border Gets Disturbed When China Diverges From Patrolling Patterns: Centre On ITBP Chief's Face-Off Remark",
+    "MEA flags Chinese patrol deviations after ITBP chief’s border face-off remarks",
     "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261024-Q16186720",
+   "qid": "Q16186720",
+   "title": "S. Jaishankar",
+   "name": "Subrahmanyam Jaishankar",
+   "phrase": "EAM Jaishankar",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+   "story_keys": [
+    "meet",
+    "reset",
+    "ties",
+    "trade"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T20:06:48+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुब्रह्मण्यम जयशंकर",
+   "reports": [
+    {
+     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T20:06:48+00:00"
+    },
+    {
+     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:31:34+00:00"
+    },
+    {
+     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:10:58+00:00"
+    },
+    {
+     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:15:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "top": {
+    "IN": 10,
+    "IN-nation": 7
+   },
+   "top_score": 0.76,
+   "top_headlines": [
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261024-Q3520087",
@@ -481,9 +591,8 @@
    "kind": "explainer",
    "category": "diplomacy",
    "category_hi": "कूटनीति",
-   "story": "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+   "story": "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
    "story_keys": [
-    "border",
     "deviation",
     "patrolling",
     "remark"
@@ -500,7 +609,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+    "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
     "Row over ITBP chief's Arunachal 'face-off' remark, Congress questions govt",
     "'Border gets disturbed from time to time': MEA on ITBP chief's remark, blames China",
     "'India, China continue using existing mechanisms to avoid LAC miscalculations': MEA after ITBP chief's remarks",
@@ -517,7 +626,7 @@
    "label_hi": "भारत तिब्बत सीमा पुलिस",
    "reports": [
     {
-     "title": "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+     "title": "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
      "url": "https://timesofindia.indiatimes.com/india/chinas-patrolling-deviations-disturb-border-mea-on-itbp-dgs-lac-face-offs-remark/articleshow/135155021.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
@@ -579,101 +688,18 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Border Gets Disturbed When China Diverges From Patrolling Patterns: Centre On ITBP Chief's Face-Off Remark",
+    "MEA flags Chinese patrol deviations after ITBP chief’s border face-off remarks",
     "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says"
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261024-Q51993",
-   "qid": "Q51993",
-   "title": "Ebola",
-   "name": "Ebola hemorrhagic fever",
-   "phrase": "Ebola",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-   "story_keys": [
-    "case",
-    "infection"
-   ],
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T13:57:11+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "NPR",
-    "Guardian Media Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-    "African Union calls for urgent action to contain Ebola outbreak across Africa"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "इबोला रक्तस्रावी बुखार",
-   "reports": [
-    {
-     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:41:39+00:00"
-    },
-    {
-     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:11:00+00:00"
-    },
-    {
-     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T13:57:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:NPR",
-    "outlet:Guardian Media Group",
-    "google-news:African Union calls for urgent action to contain Ebola outbreak across Africa"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "qid": "Q141745391",
    "title": "2026 Silver Rail Elementary School shooting",
-   "fame": 157589,
+   "fame": 132589,
    "views": 7589,
    "traffic": 0,
-   "news": 150000,
+   "news": 125000,
    "news_at": "2026-10-23T23:14:00+00:00",
    "headlines": [
     "Father who killed Oregon school shooter speaks out for first time: ‘I have to go in’"
@@ -683,30 +709,15 @@
    "region": "world",
    "india_link": false,
    "geos": [
-    "US",
-    "world"
+    "US"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-22",
-    "google-news:Father who killed Oregon school shooter speaks out for first time: ‘I have to go in’",
-    "outlet:Guardian Media Group"
+    "google-news:Father who killed Oregon school shooter speaks out for first time: ‘I have to go in’"
    ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "Father who killed Oregon school shooter speaks out for first time: ‘I have to go in’",
-     "url": "https://www.theguardian.com/us-news/2026/oct/23/father-killed-oregon-shooter-speaks-out",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T23:10:42+00:00"
-    }
-   ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q141745391",
    "kind": "incident",
    "category": "attack",
@@ -965,12 +976,100 @@
    ],
    "emerging": true,
    "article": null,
+   "top": {
+    "IN-hi": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "सिवान में अवैध पटाखा भंडार में भीषण विस्फोट: 5 की मौत, कई लापता; थानाध्यक्ष और चौकीदार सस्पेंड"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "qid": "Q141807978",
+   "title": "2026 Tibet earthquake",
+   "fame": 100000,
+   "views": 0,
+   "traffic": 0,
+   "news": 100000,
+   "news_at": "2026-10-24T01:37:46+00:00",
+   "headlines": [
+    "Rescuers search for survivors after deadly earthquake in China’s Tibet region",
+    "4.5-magnitude earthquake rattles Tibet days after powerful tremor left 16 dead",
+    "A 4.5 magnitude earthquake struck Tibet on Saturday morning, days after a powerful quake killed 16",
+    "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": "२०२६ भोट भूकम्प",
+   "via": [
+    "google-news:Rescuers search for survivors after deadly earthquake in China’s Tibet region",
+    "google-news:4.5-magnitude earthquake rattles Tibet days after powerful tremor left 16 dead",
+    "google-news:A 4.5 magnitude earthquake struck Tibet on Saturday morning, days after a powerful quake killed 16",
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "4.5-magnitude earthquake rattles Tibet days after powerful tremor left 16 dead",
+     "url": "https://www.indiatoday.in/world/story/tibet-earthquake-magnitude-4-5-after-deadly-quake-kills-16-3023947-2026-10-24?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:37:46+00:00"
+    },
+    {
+     "title": "A 4.5 magnitude earthquake struck Tibet on Saturday morning, days after a powerful quake killed 16",
+     "url": "https://www.livemint.com/news/world/a-4-5-magnitude-earthquake-struck-tibet-on-saturday-morning-days-after-a-powerful-quake-killed-16-11792804621364.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:24:22+00:00"
+    },
+    {
+     "title": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
+     "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-23T07:53:58+00:00"
+    }
+   ],
+   "id": "wk-Q141807978",
+   "kind": "incident",
+   "category": "earthquake",
+   "date": "2026-10-22",
+   "coords": [
+    32.38,
+    93.78
+   ],
+   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
+   "mag": 7.0,
+   "alert": "orange",
+   "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
   },
   {
    "id": "nw-20261023-jordan-attack",
@@ -1067,11 +1166,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 11
+    "IN-hi": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
-    "जॉर्डन में अंतिम संस्कार के दौरान गोलीबारी, छह लोगों की मौत"
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -1186,100 +1285,85 @@
    "lane": "breaking"
   },
   {
-   "id": "kh-20261024-Q16186720",
-   "qid": "Q16186720",
-   "title": "S. Jaishankar",
-   "name": "Subrahmanyam Jaishankar",
-   "phrase": "EAM Jaishankar",
-   "person": true,
+   "id": "kh-20261024-Q207105",
+   "qid": "Q207105",
+   "title": "Oleshky",
+   "name": "Oleshky",
+   "phrase": "Oleshky",
+   "person": false,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
    "story_keys": [
-    "meet",
-    "reset",
-    "ties",
-    "trade"
+    "agree",
+    "ceasefire"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-23T20:06:48+00:00",
+   "news_at": "2026-10-24T01:37:08+00:00",
    "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
+    "Guardian Media Group",
+    "NDTV",
+    "India Today Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+    "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+    "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+    "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुब्रह्मण्यम जयशंकर",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
-     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
+     "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-23T20:06:48+00:00"
+     "at": "2026-10-23T16:10:34+00:00"
     },
     {
-     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month",
+     "url": "https://www.indiatoday.in/world/story/russia-ukraine-agree-to-oleshky-ceasefire-as-us-pushes-for-fresh-peace-talks-3023948-2026-10-24?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T17:31:34+00:00"
+     "at": "2026-10-24T01:37:08+00:00"
     },
     {
-     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+     "url": "https://www.ndtv.com/world-news/ukraine-announces-it-will-observe-ceasefire-in-russian-occupied-oleshky-12227811#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T16:10:58+00:00"
-    },
-    {
-     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:15:10+00:00"
+     "at": "2026-10-23T20:15:48+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261024-Q6791356",
@@ -1394,110 +1478,85 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q141807978",
-   "title": "2026 Tibet earthquake",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-10-23T21:51:00+00:00",
-   "headlines": [
-    "Rescuers search for survivors after deadly earthquake in China’s Tibet region",
-    "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes"
+   "id": "kh-20261024-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+   "story_keys": [
+    "case",
+    "infection"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": "२०२६ भोट भूकम्प",
-   "via": [
-    "google-news:Rescuers search for survivors after deadly earthquake in China’s Tibet region",
-    "google-news:Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-    "outlet:Guardian Media Group"
-   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T13:57:11+00:00",
    "owners": [
+    "Deutsche Welle",
+    "NPR",
     "Guardian Media Group"
    ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
    "reports": [
     {
-     "title": "Magnitude-7 earthquake hits Tibet, killing at least 16 and destroying hundreds of homes",
-     "url": "https://www.theguardian.com/world/2026/oct/23/magnitude-7-earthquake-hits-china-tibet",
+     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:41:39+00:00"
+    },
+    {
+     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:11:00+00:00"
+    },
+    {
+     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-10-23T07:53:58+00:00"
+     "at": "2026-10-23T13:57:11+00:00"
     }
    ],
-   "id": "wk-Q141807978",
-   "kind": "incident",
-   "category": "earthquake",
-   "date": "2026-10-22",
-   "coords": [
-    32.38,
-    93.78
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:NPR",
+    "outlet:Guardian Media Group"
    ],
-   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "mag": 7.0,
-   "alert": "orange",
-   "usgs": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u43g"
-  },
-  {
-   "qid": "Q141760142",
-   "title": "2026 Kolkata Durga Puja crowd crush",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-23T21:56:03+00:00",
-   "headlines": [
-    "Kolkata stampede: Death in the time of Durga Puja"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "२०२६ कोलकाता दुर्गापूजा जनसम्पीडन",
-   "via": [
-    "google-news:Kolkata stampede: Death in the time of Durga Puja",
-    "outlet:The Hindu Group"
-   ],
-   "owners": [
-    "The Hindu Group"
-   ],
-   "reports": [
-    {
-     "title": "Kolkata stampede: Death in the time of Durga Puja",
-     "url": "https://www.thehindu.com/news/national/west-bengal/kolkata-stampede-death-in-the-time-of-durga-puja/article71616855.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T21:56:03+00:00"
-    }
-   ],
-   "id": "wk-Q141760142",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-10-17",
-   "coords": null,
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q3424313",
@@ -1686,6 +1745,186 @@
  ],
  "candidates": [
   {
+   "qid": "Q141820731",
+   "title": "2026 Karak church shooting",
+   "fame": 225000,
+   "views": 0,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-10-24T00:00:00+00:00",
+   "headlines": [
+    "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+    "Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-23",
+    "google-news:Jordan: Karak church shooting leaves 7 dead, dozens injured",
+    "google-news:Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak",
+    "outlet:HT Media",
+    "outlet:Deutsche Welle"
+   ],
+   "owners": [
+    "HT Media",
+    "Deutsche Welle"
+   ],
+   "reports": [
+    {
+     "title": "Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak",
+     "url": "https://www.livemint.com/news/world/jordan-church-shooting-7-killed-34-wounded-as-gunmen-open-fire-during-funeral-in-karak-11792780973899.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T18:49:14+00:00"
+    },
+    {
+     "title": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
+     "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T18:33:00+00:00"
+    }
+   ],
+   "id": "wk-Q141820731",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-23",
+   "coords": [
+    31.289434,
+    35.79955
+   ],
+   "has_coords": true,
+   "top": {
+    "IN-hi": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
+  },
+  {
+   "id": "nw-20261023-bihar-siwan-explosion",
+   "qid": null,
+   "title": "5 Killed In Explosion At House Storing Firecrackers In Bihar",
+   "name": "Bihar Siwan",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T18:45:14+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+    "5 dead as blast rips through house storing firecrackers in Bihar village",
+    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+    "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+    "5 Killed In Explosion At House Storing Firecrackers In Bihar"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "5 Killed In Explosion At House Storing Firecrackers In Bihar",
+     "url": "https://www.ndtv.com/india-news/5-killed-in-explosion-at-house-storing-firecrackers-in-bihar-12227692#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T18:45:14+00:00"
+    },
+    {
+     "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
+     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:10:10+00:00"
+    },
+    {
+     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
+     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:03:53+00:00"
+    },
+    {
+     "title": "5 dead as blast rips through house storing firecrackers in Bihar village",
+     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T15:26:31+00:00"
+    },
+    {
+     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
+     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T14:23:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "सिवान में अवैध पटाखा भंडार में भीषण विस्फोट: 5 की मौत, कई लापता; थानाध्यक्ष और चौकीदार सस्पेंड"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
    "id": "kh-20261024-Q1826411",
    "qid": "Q1826411",
    "title": "Line of Actual Control",
@@ -1769,7 +2008,7 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Border Gets Disturbed When China Diverges From Patrolling Patterns: Centre On ITBP Chief's Face-Off Remark",
+    "MEA flags Chinese patrol deviations after ITBP chief’s border face-off remarks",
     "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says"
    ],
    "hindi_owners": [],
@@ -1777,73 +2016,107 @@
    "lane": "other"
   },
   {
-   "qid": "Q141820731",
-   "title": "2026 Karak church shooting",
-   "fame": 225000,
-   "views": 0,
-   "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-10-24T00:00:00+00:00",
-   "headlines": [
-    "Jordan: Karak church shooting leaves 7 dead, dozens injured",
-    "Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak"
+   "id": "kh-20261024-Q16186720",
+   "qid": "Q16186720",
+   "title": "S. Jaishankar",
+   "name": "Subrahmanyam Jaishankar",
+   "phrase": "EAM Jaishankar",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+   "story_keys": [
+    "meet",
+    "reset",
+    "ties",
+    "trade"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-10-23",
-    "google-news:Jordan: Karak church shooting leaves 7 dead, dozens injured",
-    "google-news:Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak",
-    "outlet:HT Media",
-    "outlet:Deutsche Welle"
-   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T20:06:48+00:00",
    "owners": [
     "HT Media",
-    "Deutsche Welle"
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
    ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुब्रह्मण्यम जयशंकर",
    "reports": [
     {
-     "title": "Jordan church shooting: 7 killed, 34 wounded as gunmen open fire during funeral in Karak",
-     "url": "https://www.livemint.com/news/world/jordan-church-shooting-7-killed-34-wounded-as-gunmen-open-fire-during-funeral-in-karak-11792780973899.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
+     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T20:06:48+00:00"
+    },
+    {
+     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:31:34+00:00"
+    },
+    {
+     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T18:49:14+00:00"
+     "at": "2026-10-23T16:10:58+00:00"
     },
     {
-     "title": "Jordan: Karak church shooting leaves 7 dead, dozens injured",
-     "url": "https://www.dw.com/en/jordan-karak-church-shooting-leaves-7-dead-dozens-injured/a-79743535?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
+     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T18:33:00+00:00"
+     "at": "2026-10-23T02:15:10+00:00"
     }
    ],
-   "id": "wk-Q141820731",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-23",
-   "coords": [
-    31.289434,
-    35.79955
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
    ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 10,
+    "IN-nation": 7
+   },
+   "top_score": 0.76,
+   "top_headlines": [
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261024-Q432473",
@@ -1858,10 +2131,11 @@
    "story": "Melania Trump brokers Russia-Ukraine ceasefire",
    "story_keys": [
     "broker",
-    "ceasefire"
+    "ceasefire",
+    "secure"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-24T00:36:54+00:00",
+   "news_at": "2026-10-24T01:27:29+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Guardian Media Group",
@@ -1907,6 +2181,16 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-23T19:51:21+00:00"
+    },
+    {
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:27:29+00:00"
     },
     {
      "title": "Trump repeats India-Pak ceasefire claim",
@@ -2042,11 +2326,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 11
+    "IN-hi": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
-    "जॉर्डन में अंतिम संस्कार के दौरान गोलीबारी, छह लोगों की मौत"
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -2082,192 +2366,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "nw-20261023-bihar-siwan-explosion",
-   "qid": null,
-   "title": "5 Killed In Explosion At House Storing Firecrackers In Bihar",
-   "name": "Bihar Siwan",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T18:45:14+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-    "5 dead as blast rips through house storing firecrackers in Bihar village",
-    "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-    "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
-    "5 Killed In Explosion At House Storing Firecrackers In Bihar"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "5 Killed In Explosion At House Storing Firecrackers In Bihar",
-     "url": "https://www.ndtv.com/india-news/5-killed-in-explosion-at-house-storing-firecrackers-in-bihar-12227692#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T18:45:14+00:00"
-    },
-    {
-     "title": "At least four killed in blast at house storing firecrackers in Bihar’s Siwan",
-     "url": "https://www.thehindu.com/news/national/bihar/several-feared-dead-in-a-firecracker-factory-blast-in-bihars-siwan-district/article71616766.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T17:10:10+00:00"
-    },
-    {
-     "title": "4 Killed In Blast At Firecracker Factory In Bihar's Siwan, Two Cops Suspended",
-     "url": "https://www.news18.com/india/siwan-factory-blast-news-death-injured-bihar-cm-samrat-choudhary-news-updates-10395090.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T16:03:53+00:00"
-    },
-    {
-     "title": "5 dead as blast rips through house storing firecrackers in Bihar village",
-     "url": "https://timesofindia.indiatimes.com/city/patna/4-dead-as-blast-rips-through-house-storing-firecrackers-in-bihar-village/articleshow/135149442.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T15:26:31+00:00"
-    },
-    {
-     "title": "4 dead, more casualties feared after blast at firecracker factory in Bihar's Siwan",
-     "url": "https://www.hindustantimes.com/india-news/blast-siwan-bihar-firecracker-factory-dead-injured-rescue-fire-101792765297355.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T14:23:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261024-Q51993",
-   "qid": "Q51993",
-   "title": "Ebola",
-   "name": "Ebola hemorrhagic fever",
-   "phrase": "Ebola",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-   "story_keys": [
-    "case",
-    "infection"
-   ],
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T13:57:11+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "NPR",
-    "Guardian Media Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-    "African Union calls for urgent action to contain Ebola outbreak across Africa"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "इबोला रक्तस्रावी बुखार",
-   "reports": [
-    {
-     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:41:39+00:00"
-    },
-    {
-     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:11:00+00:00"
-    },
-    {
-     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-23T13:57:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:NPR",
-    "outlet:Guardian Media Group",
-    "google-news:African Union calls for urgent action to contain Ebola outbreak across Africa"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": "Q452431",
@@ -2378,100 +2476,166 @@
    "lane": "breaking"
   },
   {
-   "id": "kh-20261024-Q16186720",
-   "qid": "Q16186720",
-   "title": "S. Jaishankar",
-   "name": "Subrahmanyam Jaishankar",
-   "phrase": "EAM Jaishankar",
-   "person": true,
+   "id": "kh-20261024-Q207105",
+   "qid": "Q207105",
+   "title": "Oleshky",
+   "name": "Oleshky",
+   "phrase": "Oleshky",
+   "person": false,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
    "story_keys": [
-    "meet",
-    "reset",
-    "ties",
-    "trade"
+    "agree",
+    "ceasefire"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-23T20:06:48+00:00",
+   "news_at": "2026-10-24T01:37:08+00:00",
    "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
+    "Guardian Media Group",
+    "NDTV",
+    "India Today Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+    "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+    "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+    "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुब्रह्मण्यम जयशंकर",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
-     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
+     "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-23T20:06:48+00:00"
+     "at": "2026-10-23T16:10:34+00:00"
     },
     {
-     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month",
+     "url": "https://www.indiatoday.in/world/story/russia-ukraine-agree-to-oleshky-ceasefire-as-us-pushes-for-fresh-peace-talks-3023948-2026-10-24?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T17:31:34+00:00"
+     "at": "2026-10-24T01:37:08+00:00"
     },
     {
-     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+     "url": "https://www.ndtv.com/world-news/ukraine-announces-it-will-observe-ceasefire-in-russian-occupied-oleshky-12227811#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-23T16:10:58+00:00"
-    },
-    {
-     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:15:10+00:00"
+     "at": "2026-10-23T20:15:48+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261024-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+   "story_keys": [
+    "case",
+    "infection"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T13:57:11+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "NPR",
+    "Guardian Media Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "reports": [
+    {
+     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:41:39+00:00"
+    },
+    {
+     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:11:00+00:00"
+    },
+    {
+     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-23T13:57:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:NPR",
+    "outlet:Guardian Media Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261024-Q6791356",
@@ -2779,8 +2943,8 @@
   }
  ],
  "notes": [
-  "outlets: 1295 headlines from 31 feeds (19 owners), 27 matched to articles, 12 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-paris-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-jordan-attack",
-  "explainers: 7 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q432473, kh-20261024-Q1826411, kh-20261024-Q3520087; dropped: explainer Apple: fewer than 3 owners' headlines name it and the story; explainer Punjab: fewer than 3 owners' headlines name it and the story; explainer Diljit Dosanjh's Delhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1277 headlines from 31 feeds (19 owners), 20 matched to articles, 14 candidates with 2+ owners, 4 nw- stories (on): nw-20261023-paris-attack, nw-20261023-bihar-siwan-explosion, nw-20261023-jordan-attack",
+  "explainers: 8 kh- stories (on): kh-20261024-Q140632219, kh-20261024-Q432473, kh-20261024-Q1826411, kh-20261024-Q16186720; dropped: explainer CM Nayab Saini: fewer than 3 owners' headlines name it and the story; explainer Apple: fewer than 3 owners' headlines name it and the story; explainer Punjab: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1889124: Orbitwire published (wk-Q1889124), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2788,11 +2952,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1295,
+  "headlines": 1277,
   "feeds": 31,
   "owners": 19,
-  "matched": 27,
-  "corroborated": 12
+  "matched": 20,
+  "corroborated": 14
  },
  "emerging": [
   {
@@ -3002,9 +3166,13 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-hi": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "सिवान में अवैध पटाखा भंडार में भीषण विस्फोट: 5 की मौत, कई लापता; थानाध्यक्ष और चौकीदार सस्पेंड"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
@@ -3104,11 +3272,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 11
+    "IN-hi": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
-    "जॉर्डन में अंतिम संस्कार के दौरान गोलीबारी, छह लोगों की मौत"
+    "जॉर्डन में अंतिम संस्कार के दौरान चर्च में ताबड़तोड़ फायरिंग, 7 की मौत, सरकार ने कहा- आतंकी हमला"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -3203,9 +3371,10 @@
    "kind": "explainer",
    "category": "court",
    "category_hi": "अदालत",
-   "story": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+   "story": "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
    "story_keys": [
     "against",
+    "aisa",
     "bond",
     "notice",
     "peace",
@@ -3231,12 +3400,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
+    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
     "'Nothing Wrong In Seeking Regime Change': Neha Bora In Delhi HC; Verdict On AISA Chief's Plea Today",
     "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
     "Delhi HC rejects Neha Bora’s plea against peace bond",
     "Neha Bora Faces Setback: Delhi High Court Rejects Plea, Directs AISA Activist To Sign ‘Peace Bond’",
-    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond"
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
    ],
    "hindi_headlines": [
     "पीस बॉन्ड भरना होगा; नेहा बोरा को हाई कोर्ट से भी लगा झटका, अदालत ने क्या कहा",
@@ -3284,16 +3453,6 @@
      "at": "2026-10-23T14:26:56+00:00"
     },
     {
-     "title": "Delhi HC rejects AISA chief Neha Bora's plea against notice to sign peace bond",
-     "url": "https://timesofindia.indiatimes.com/india/delhi-hc-rejects-aisa-chief-neha-boras-plea-against-police-notice-to-sign-peace-bond/articleshow/135147943.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T13:51:02+00:00"
-    },
-    {
      "title": "Delhi HC rejects Neha Bora's plea against notice to sign peace, 'maintain peace'",
      "url": "https://www.hindustantimes.com/india-news/delhi-hc-rejects-neha-boras-plea-directs-her-to-sign-peace-bond-maintain-peace-oct-16-lehra-do-tiranga-101792762728415.html",
      "outlet": "Hindustan Times",
@@ -3325,19 +3484,20 @@
     "outlet:India Today Group",
     "outlet:DB Corp",
     "google-news:Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
-    "google-news:राहुल गांधी पर पीएम मोदी के लगातार हमले लेकिन नेहा बोरा-दीपके पर चुप्पी के क्या मायने हैं",
+    "google-news:Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond",
     "google-news:दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, कहा- कार्रवाई शुरू करने के लिए पर्याप्त जानकारी और दस्तावे"
    ],
    "top": {
-    "IN": 6,
+    "IN": 5,
     "IN-hi": 7,
-    "IN-nation": 7,
+    "IN-nation": 5,
     "IN-hi-nation": 2
    },
-   "top_score": 1.595,
+   "top_score": 1.675,
    "top_headlines": [
     "दिल्ली हाईकोर्ट ने खारिज की नेहा बोरा की याचिका, कहा- कार्रवाई शुरू करने के लिए पर्याप्त जानकारी और दस्तावे",
-    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests"
+    "Delhi High Court Rejects Neha Bora's Plea Against Peace Bond Notice Amid Anti-CEC Protests",
+    "Delhi High Court rejects Neha Bora's plea against police notice to sign peace bond"
    ],
    "hindi_owners": []
   },
@@ -3354,10 +3514,11 @@
    "story": "Melania Trump brokers Russia-Ukraine ceasefire",
    "story_keys": [
     "broker",
-    "ceasefire"
+    "ceasefire",
+    "secure"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-24T00:36:54+00:00",
+   "news_at": "2026-10-24T01:27:29+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Guardian Media Group",
@@ -3403,6 +3564,16 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-23T19:51:21+00:00"
+    },
+    {
+     "title": "\"Situation Dire\": Melania Trump Secures Ceasefire In Ukrainian City",
+     "url": "https://www.ndtv.com/world-news/situation-dire-melania-trump-says-she-secured-ceasefire-in-ukrainian-city-12226918#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:27:29+00:00"
     },
     {
      "title": "Trump repeats India-Pak ceasefire claim",
@@ -3527,12 +3698,115 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Border Gets Disturbed When China Diverges From Patrolling Patterns: Centre On ITBP Chief's Face-Off Remark",
+    "MEA flags Chinese patrol deviations after ITBP chief’s border face-off remarks",
     "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261024-Q16186720",
+   "qid": "Q16186720",
+   "title": "S. Jaishankar",
+   "name": "Subrahmanyam Jaishankar",
+   "phrase": "EAM Jaishankar",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+   "story_keys": [
+    "meet",
+    "reset",
+    "ties",
+    "trade"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T20:06:48+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुब्रह्मण्यम जयशंकर",
+   "reports": [
+    {
+     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
+     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T20:06:48+00:00"
+    },
+    {
+     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
+     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T17:31:34+00:00"
+    },
+    {
+     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
+     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T16:10:58+00:00"
+    },
+    {
+     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
+     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T02:15:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "top": {
+    "IN": 10,
+    "IN-nation": 7
+   },
+   "top_score": 0.76,
+   "top_headlines": [
+    "After Operation Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261024-Q3520087",
@@ -3544,9 +3818,8 @@
    "kind": "explainer",
    "category": "diplomacy",
    "category_hi": "कूटनीति",
-   "story": "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+   "story": "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
    "story_keys": [
-    "border",
     "deviation",
     "patrolling",
     "remark"
@@ -3563,7 +3836,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+    "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
     "Row over ITBP chief's Arunachal 'face-off' remark, Congress questions govt",
     "'Border gets disturbed from time to time': MEA on ITBP chief's remark, blames China",
     "'India, China continue using existing mechanisms to avoid LAC miscalculations': MEA after ITBP chief's remarks",
@@ -3580,7 +3853,7 @@
    "label_hi": "भारत तिब्बत सीमा पुलिस",
    "reports": [
     {
-     "title": "China’s patrolling deviations disturb border: MEA on ITBP DG's face-offs remark",
+     "title": "'China’s patrolling deviations disturb border': MEA on ITBP DG's face-offs remark",
      "url": "https://timesofindia.indiatimes.com/india/chinas-patrolling-deviations-disturb-border-mea-on-itbp-dgs-lac-face-offs-remark/articleshow/135155021.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
@@ -3642,86 +3915,84 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Border Gets Disturbed When China Diverges From Patrolling Patterns: Centre On ITBP Chief's Face-Off Remark",
+    "MEA flags Chinese patrol deviations after ITBP chief’s border face-off remarks",
     "PLA’s patrolling behaviour keeps LAC disturbed, Govt. says"
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261024-Q51993",
-   "qid": "Q51993",
-   "title": "Ebola",
-   "name": "Ebola hemorrhagic fever",
-   "phrase": "Ebola",
+   "id": "kh-20261024-Q207105",
+   "qid": "Q207105",
+   "title": "Oleshky",
+   "name": "Oleshky",
+   "phrase": "Oleshky",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
    "story_keys": [
-    "case",
-    "infection"
+    "agree",
+    "ceasefire"
    ],
    "date": "2026-10-23",
-   "news_at": "2026-10-23T13:57:11+00:00",
+   "news_at": "2026-10-24T01:37:08+00:00",
    "owners": [
-    "Deutsche Welle",
-    "NPR",
-    "Guardian Media Group"
+    "Guardian Media Group",
+    "NDTV",
+    "India Today Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-    "African Union calls for urgent action to contain Ebola outbreak across Africa"
+    "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+    "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+    "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
-     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:41:39+00:00"
-    },
-    {
-     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-23T12:11:00+00:00"
-    },
-    {
-     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
-     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+     "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-10-23T13:57:11+00:00"
+     "at": "2026-10-23T16:10:34+00:00"
+    },
+    {
+     "title": "Russia, Ukraine agree to Oleshky ceasefire as peace talks set for next month",
+     "url": "https://www.indiatoday.in/world/story/russia-ukraine-agree-to-oleshky-ceasefire-as-us-pushes-for-fresh-peace-talks-3023948-2026-10-24?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T01:37:08+00:00"
+    },
+    {
+     "title": "Ukraine Says It Will Observe Ceasefire In Russian-Occupied Oleshky",
+     "url": "https://www.ndtv.com/world-news/ukraine-announces-it-will-observe-ceasefire-in-russian-occupied-oleshky-12227811#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-23T20:15:48+00:00"
     }
    ],
    "via": [
-    "outlet:Deutsche Welle",
-    "outlet:NPR",
     "outlet:Guardian Media Group",
-    "google-news:African Union calls for urgent action to contain Ebola outbreak across Africa"
+    "outlet:NDTV",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
@@ -3729,102 +4000,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261024-Q16186720",
-   "qid": "Q16186720",
-   "title": "S. Jaishankar",
-   "name": "Subrahmanyam Jaishankar",
-   "phrase": "EAM Jaishankar",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-   "story_keys": [
-    "meet",
-    "reset",
-    "ties",
-    "trade"
-   ],
-   "date": "2026-10-23",
-   "news_at": "2026-10-23T20:06:48+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-    "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-    "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-    "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुब्रह्मण्यम जयशंकर",
-   "reports": [
-    {
-     "title": "After Op Sindoor friction, Delhi & Baku reset ties with EAM Jaishankar's visit",
-     "url": "https://timesofindia.indiatimes.com/india/after-operation-sindoor-friction-delhi-baku-reset-ties-with-eam-jaishankars-visit/articleshow/135155334.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T20:06:48+00:00"
-    },
-    {
-     "title": "Jaishankar meets Azerbaijan President, Foreign Minister as India attempts reset of ties",
-     "url": "https://www.thehindu.com/news/national/jaishankar-meets-azerbaijan-president-foreign-minister-as-india-attempts-reset-of-ties/article71617306.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T17:31:34+00:00"
-    },
-    {
-     "title": "India, Azerbaijan explore stronger trade and energy ties as Jaishankar meets Aliyev in Baku",
-     "url": "https://www.hindustantimes.com/india-news/india-azerbaijan-explore-stronger-trade-and-energy-ties-as-jaishankar-meets-aliyev-in-baku-101792771858779.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T16:10:58+00:00"
-    },
-    {
-     "title": "India-US trade deal in ‘last stage’, says EAM Jaishankar: ‘It’s never done until it’s done’",
-     "url": "https://www.hindustantimes.com/india-news/s-jaishankar-india-usa-fta-free-trade-agreement-sergio-gor-marco-rubio-donald-trump-101792695270306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-23T02:15:10+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261024-Q6791356",
@@ -3937,6 +4112,87 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261024-Q51993",
+   "qid": "Q51993",
+   "title": "Ebola",
+   "name": "Ebola hemorrhagic fever",
+   "phrase": "Ebola",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+   "story_keys": [
+    "case",
+    "infection"
+   ],
+   "date": "2026-10-23",
+   "news_at": "2026-10-23T13:57:11+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "NPR",
+    "Guardian Media Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+    "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+    "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "इबोला रक्तस्रावी बुखार",
+   "reports": [
+    {
+     "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
+     "url": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:41:39+00:00"
+    },
+    {
+     "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+     "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-23T12:11:00+00:00"
+    },
+    {
+     "title": "Mystery over source of Ebola infection in Nigeria fuels concern about spread of virus",
+     "url": "https://www.theguardian.com/world/2026/oct/23/ebola-swiss-patient-nigeria-dr-congo-concerns-virus-spread",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-23T13:57:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:NPR",
+    "outlet:Guardian Media Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   }
  ]
 }
