@@ -470,11 +470,11 @@ def render(short: Short, timing: dict, work: Path) -> dict:
     out = work / "short.mp4"
     stills = work / "stills"
     stills.mkdir(exist_ok=True)
+    n = int(math.ceil(duration * FPS))
     enc = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
          "-i", "-", "-i", str(mixed), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
-    n = int(math.ceil(duration * FPS))
+         "-c:a", "aac", "-b:a", "192k", "-frames:v", str(n), "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
     still_at = {int(n * k / 5) for k in range(5)}
     for i in range(n):
         t = i / FPS
@@ -1137,11 +1137,11 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     out = work / "short.mp4"
     stills = work / "stills"
     stills.mkdir(exist_ok=True)
+    n = int(math.ceil(duration * FPS))
     enc = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
          "-i", "-", "-i", str(mixed), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
-    n = int(math.ceil(duration * FPS))
+         "-c:a", "aac", "-b:a", "192k", "-frames:v", str(n), "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
     still_at = {int(n * k / 5) for k in range(5)}
     for i in range(n):
         t = i / FPS
@@ -1385,12 +1385,12 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     out = work / "short.mp4"
     stills = work / "stills"
     stills.mkdir(exist_ok=True)
+    n = int(math.ceil(duration * FPS))
     enc = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
          "-i", "-", "-i", str(mixed), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
+         "-c:a", "aac", "-b:a", "192k", "-frames:v", str(n), "-movflags", "+faststart", str(out)], stdin=subprocess.PIPE)
     top_y = 40
-    n = int(math.ceil(duration * FPS))
     still_at = {int(n * k / 5) for k in range(5)}
 
     def picture(view: dict, u: float, punch: float, i: int) -> tuple[np.ndarray, list[int]]:
