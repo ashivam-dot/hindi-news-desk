@@ -6,30 +6,24 @@ import pytest
 from desk import compare, gate, hindi, writer
 
 AT = datetime(2026, 10, 24, 11, 0, tzinfo=timezone.utc)
-# The World Bank's copy (WDI): spending 2024-2025, personnel (IISS) 2019-2020.
+# The World Bank's WDI as of 2026-10-24.
 WB_ROWS = {
-    compare.SPEND: {"IND": {2025: 92057013588.16, 2024: 85597083119.11},
-                    "PAK": {2025: 11871380866.11, 2024: 10303476993.98},
-                    "CHN": {2025: 335524155624.44, 2024: 311900350600.82}},
-    compare.SHARE: {"IND": {2025: 2.3, 2024: 2.22}, "PAK": {2025: 2.91, 2024: 2.73}, "CHN": {2025: 1.72, 2024: 1.66}},
     compare.TROOPS: {"IND": {2020: 3068000, 2019: 3045000}, "PAK": {2020: 943000, 2019: 943000},
-                     "CHN": {2020: 2535000}},
+                     "USA": {2020: 1395000}, "RUS": {2020: 1454000}},
+    compare.LABOUR: {"IND": {2020: 0.576119558133425}, "PAK": {2020: 1.25177962110476},
+                     "USA": {2020: 0.85}, "RUS": {2020: 1.94}},
+    compare.GDP: {"IND": {2025: 3956067115771.63, 2024: 3.9e12}, "PAK": {2025: 407307214476.222, 2024: 3.7e11},
+                  "USA": {2025: 3.0e13}, "RUS": {2025: 2.1e12}},
+    compare.PEOPLE: {"IND": {2025: 1463865525}, "PAK": {2025: 255219554}, "USA": {2025: 341784857},
+                     "RUS": {2025: 143513328}},
 }
-# SIPRI's own spreadsheet, as sipri_tables reads it: US$ m., a fraction of GDP, US$ per capita; China's in blue.
-SIPRI = {
-    compare.SPEND: {"India": {2025: (92057.0135881601, ""), 2024: (85597.08, "")},
-                    "Pakistan": {2025: (11871.380866105368, ""), 2024: (10303.48, "")},
-                    "China": {2025: (335524.15562444, "estimate"), 2024: (311900.35, "estimate")}},
-    compare.SHARE: {"India": {2025: (0.022951791793515173, ""), 2024: (0.0222, "")},
-                    "Pakistan": {2025: (0.029136125148539926, ""), 2024: (0.0273, "")},
-                    "China": {2025: (0.01724723316575711, "estimate"), 2024: (0.0166, "estimate")}},
-    compare.CAPITA: {"India": {2025: (63.16370351942166, ""), 2024: (59.0, "")},
-                     "Pakistan": {2025: (46.88488347272678, ""), 2024: (41.0, "")},
-                     "China": {2025: (236.66233706007665, "estimate"), 2024: (220.0, "estimate")}},
-}
+CC_BY = {c: "CC BY-4.0" for c in compare.INDICATORS}
 
 
-def fake_get(url, params=None, timeout=None, rows=WB_ROWS):
+def fake_get(url, params=None, timeout=None, rows=WB_ROWS, licence=CC_BY):
+    if "/metadata" in url:
+        code = url.split("/series/")[1].split("/")[0]
+        return {"source": [{"concept": [{"variable": [{"metatype": [{"id": "License_Type", "value": licence[code]}]}]}]}]}
     code = url.rsplit("/", 1)[1]
     codes = url.split("/country/")[1].split("/")[0].split(";")
     return [{}, [{"countryiso3code": k, "date": str(y), "value": v} for k in codes
@@ -39,91 +33,54 @@ def fake_get(url, params=None, timeout=None, rows=WB_ROWS):
 def fake_photos(iso3, folder, taken, recent=frozenset(), want=5):
     en = compare.COUNTRIES[iso3][0]
     return [{"file": f"File:{en} forces {i}.jpg", "page": f"https://commons.wikimedia.org/wiki/File:{en}_{i}.jpg",
-             "license": "CC BY 4.0", "credit": f"फ़ोटो: A / CC BY 4.0 / Wikimedia Commons", "path": "", "year": 2023,
+             "license": "CC BY 4.0", "credit": "फ़ोटो: A / CC BY 4.0 / Wikimedia Commons", "path": "", "year": 2023,
              "description": f"{en} Army parade"} for i in range(want)]
 
 
-def test_a_comparison_is_the_published_numbers_and_passes_every_gate(monkeypatch, tmp_path):
+@pytest.fixture
+def work(monkeypatch, tmp_path):
     monkeypatch.setattr(writer, "WORK", tmp_path)
     monkeypatch.setattr(writer, "recent_photos", lambda: set())
-    short = compare.build(compare.from_target("compare:PAK-IND", AT), get=fake_get, photos_for=fake_photos,
-                          sipri=SIPRI)
-    assert short.title == "भारत बनाम पाकिस्तान: रक्षा खर्च में 7.8 गुना का फ़र्क"  # the bigger spender leads
+
+
+def test_a_comparison_is_licensed_published_numbers_each_with_its_year(work):
+    short = compare.build(compare.from_target("compare:PAK-IND", AT), get=fake_get, photos_for=fake_photos)
+    assert short.id == "cmp-20261024-IND-PAK-forces"  # never the retired cmp-20261024-IND-PAK
+    assert short.title == "भारत बनाम पाकिस्तान: सेना में भारत 3.3 गुना, अर्थव्यवस्था में भारत 9.7 गुना"
     said = " ".join(b.text for b in short.beats)
-    for words in ("सिपरी के मुताबिक", "7.8 गुना", "92.1 अरब डॉलर", "11.9 अरब डॉलर", "पाकिस्तान आगे है: 2.9 प्रतिशत",
-                  "2020 में", "30.7 लाख", "9.4 लाख", "63 डॉलर", "47 डॉलर"):  # SIPRI's per-capita, not ours
+    for words in ("2020 के आंकड़ों में भारत के सशस्त्र बल पाकिस्तान से 3.3 गुना बड़े थे", "30.7 लाख", "9.4 लाख",
+                  "अर्धसैनिक बल मिलाकर", "पाकिस्तान आगे था: 1.3 प्रतिशत, भारत 0.6 प्रतिशत",
+                  "2025 में अर्थव्यवस्था में भारत पाकिस्तान से 9.7 गुना बड़ा है", "भारत 146.4 करोड़, पाकिस्तान 25.5 करोड़"):
         assert words in said
-    assert "अनुमान" not in said  # India's and Pakistan's 2025 figures are reported, not SIPRI estimates
-    assert all(p["tag"] in ("भारत", "पाकिस्तान") and "who" not in p for p in short.scene["photos"])
+    assert "सिपरी" not in said and "खर्च" not in said  # no SIPRI data: not licensed for a monetized channel
     backed = {n for f in short.facts for n in f.numbers}
     assert {v for v, _ in hindi.numbers(said + " " + short.title)} <= backed
-    by = {f.key: f for f in short.facts}
-    assert by["spend-IND"].source == compare.SIPRI_PAGE and "IISS" in by["troops-IND"].evidence
-    assert "IISS" in short.credits[0] and "SIPRI" in short.credits[0] and "IISS" in short.summary
+    assert all(f.source.startswith("https://data.worldbank.org/indicator/") and "CC BY 4.0" in f.evidence
+               for f in short.facts)
+    assert "IISS" in short.credits[0] and "UN World Population Prospects" in short.summary
+    assert all(p["tag"] in ("भारत", "पाकिस्तान") and "who" not in p for p in short.scene["photos"])
     assert gate.check(short) == [] and gate.said_is_shown(short) == []
 
 
-def test_a_sipri_estimate_is_said_to_be_one(monkeypatch, tmp_path):
-    monkeypatch.setattr(writer, "WORK", tmp_path)
-    monkeypatch.setattr(writer, "recent_photos", lambda: set())
-    short = compare.build(compare.from_target("compare:IND-CHN", AT), get=fake_get, photos_for=fake_photos,
-                          sipri=SIPRI)
-    china = next(c["photos"] for c in short.scene["cast"] if c["en"] == "China")
-    assert short.beats[2].text == "चीन के आंकड़े सिपरी का अनुमान हैं।"
-    assert int(short.beats[2].shot.split(":")[1]) in china  # over China's own photo, not India's
-    assert gate.check(short) == [] and gate.said_is_shown(short) == []
-    assert "अनुमान" in short.beats[1].card["small"] and "(SIPRI estimate)" in {f.key: f for f in short.facts}[
-        "spend-CHN"].evidence
-    sipri_us = {k: t | {"United States of America": {2025: (954387.0, ""), 2024: (1004901.0, "")}}
-                for k, t in SIPRI.items()}
-    sipri_us[compare.SHARE]["United States of America"] = {2025: (0.031173, ""), 2024: (0.0343, "")}
-    sipri_us[compare.CAPITA]["United States of America"] = {2025: (2755.37, ""), 2024: (2950.0, "")}
-    rows = {k: dict(v) for k, v in WB_ROWS.items()}
-    rows[compare.SPEND] = rows[compare.SPEND] | {"USA": {2025: 954387000000, 2024: 1004901000000}}
-    rows[compare.SHARE] = rows[compare.SHARE] | {"USA": {2025: 3.12, 2024: 3.43}}
-    rows[compare.TROOPS] = rows[compare.TROOPS] | {"USA": {2020: 1395000}}
-    s = compare.script(("USA", "CHN"), compare.figures(("USA", "CHN"), lambda *a, **k: fake_get(*a, rows=rows, **k),
-                                                       sipri_us))
-    assert "अनुमान" in s["beats"][2]["say"] and "अनुमान" not in s["beats"][1]["card"]["small"]  # the US card
+def test_data_without_a_commercial_licence_is_refused():
+    sipri = CC_BY | {compare.GDP: "SIPRI terms and conditions"}
+    with pytest.raises(ValueError, match="not licensed for commercial use"):
+        compare.figures(("IND", "PAK"), lambda *a, **k: fake_get(*a, licence=sipri, **k))
 
 
-def test_figures_never_mix_years_or_use_uncertain_or_unmatched_data():
-    data = compare.figures(("IND", "PAK"), fake_get, SIPRI)
-    assert (data["year"], data["troops_year"]) == (2025, 2020)
-    shaky = {k: {n: dict(v) for n, v in t.items()} for k, t in SIPRI.items()}
-    shaky[compare.SPEND]["Pakistan"][2025] = (11871.38, "uncertain")
-    assert compare.figures(("IND", "PAK"), fake_get, shaky)["year"] == 2024  # both countries' last firm year
-    off = {k: {c: dict(v) for c, v in t.items()} for k, t in WB_ROWS.items()}
-    off[compare.SPEND]["PAK"][2025] = 12_500_000_000  # 5% off SIPRI's own figure
-    with pytest.raises(ValueError, match="World Bank .* against SIPRI"):
-        compare.figures(("IND", "PAK"), lambda *a, **k: fake_get(*a, rows=off, **k), SIPRI)
+def test_figures_never_mix_years():
+    data = compare.figures(("IND", "PAK"), fake_get)
+    assert data[compare.TROOPS][0] == 2020 and data[compare.GDP][0] == 2025
     lone = {k: {c: dict(v) for c, v in t.items()} for k, t in WB_ROWS.items()}
-    lone[compare.TROOPS]["PAK"] = {2019: 943000}
-    assert compare.figures(("IND", "PAK"), lambda *a, **k: fake_get(*a, rows=lone, **k), SIPRI)[
-        "troops_year"] == 2019
+    lone[compare.GDP]["PAK"] = {2024: 3.7e11}
+    assert compare.figures(("IND", "PAK"), lambda *a, **k: fake_get(*a, rows=lone, **k))[compare.GDP][0] == 2024
 
 
-def test_sipri_tables_read_the_estimate_and_uncertain_colours(tmp_path):
-    import openpyxl
-    from openpyxl.styles import Font
-    from openpyxl.styles.colors import Color
-
-    book = openpyxl.Workbook()
-    book.remove(book.active)
-    for sheet in compare.SIPRI_SHEETS.values():
-        ws = book.create_sheet(sheet)
-        ws.append(["Figures in blue are SIPRI estimates."])
-        ws.append(["Country", "Notes", 2024, 2025])
-        ws.append(["India", None, 85597.08, 92057.01])
-        ws.append(["China", None, 311900.35, 335524.16])
-        ws.append(["Korea, North", None, "...", 4000.0])
-        ws["D4"].font = Font(color=Color(indexed=12))
-        ws["D5"].font = Font(color=Color(indexed=10))
-    path = tmp_path / "milex.xlsx"
-    book.save(path)
-    t = compare.sipri_tables(path.read_bytes())[compare.SPEND]
-    assert t["India"] == {2024: (85597.08, ""), 2025: (92057.01, "")}
-    assert t["China"][2025] == (335524.16, "estimate") and t["Korea, North"] == {2025: (4000.0, "uncertain")}
+def test_nearly_equal_forces_are_said_to_be_about_equal():
+    s = compare.script(("USA", "RUS"), compare.figures(("USA", "RUS"), fake_get))
+    assert s["beats"][0]["say"] == "2020 के आंकड़ों में रूस और अमेरिका के सशस्त्र बल लगभग बराबर थे।"
+    assert s["title"] == "रूस बनाम अमेरिका: सेनाएं लगभग बराबर, अर्थव्यवस्था में अमेरिका 14.3 गुना"
+    assert s["beats"][3]["say"] == "पर 2025 में अर्थव्यवस्था में अमेरिका रूस से 14.3 गुना बड़ा है।"
 
 
 def test_a_photo_must_name_its_own_country_and_no_other():
@@ -150,22 +107,26 @@ def rows_at(*items):
     return [{"id": sid, "published_at": at.isoformat()} for sid, at in items]
 
 
-def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day(monkeypatch):
-    monkeypatch.setattr(compare, "ENABLED", True)
+def test_a_quiet_channel_gets_the_next_evergreen_pair_once_a_day():
     quiet = rows_at(("kh-20261024-Q1", AT - timedelta(hours=3)))
     (c,), _ = compare.candidates([], quiet, AT)
-    assert c["id"] == "cmp-20261024-IND-PAK" and c["compare"] and c["why"] == "the channel is quiet"
+    assert c["id"] == "cmp-20261024-IND-PAK-forces" and c["compare"] and c["why"] == "the channel is quiet"
     busy = rows_at(("kh-20261024-Q1", AT - timedelta(minutes=30)))
     assert compare.candidates([], busy, AT)[0] == []
-    ran = quiet + rows_at(("cmp-20261024-IND-PAK", AT - timedelta(hours=4)))
+    ran = quiet + rows_at(("cmp-20261024-IND-CHN-forces", AT - timedelta(hours=4)))
     assert compare.candidates([], ran, AT) == ([], ["compare: one ran today"])
-    yesterday = quiet + rows_at(("cmp-20261023-IND-PAK", AT - timedelta(days=1)))
+    yesterday = quiet + rows_at(("cmp-20261023-IND-PAK-forces", AT - timedelta(days=1)))
     (c,), _ = compare.candidates([], yesterday, AT)
     assert c["pair"] == ["IND", "CHN"]  # a pair waits PAIR_DAYS
 
 
-def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy(monkeypatch):
-    monkeypatch.setattr(compare, "ENABLED", True)
+def test_the_retired_short_counts_for_nothing():
+    rows = rows_at(("kh-20261024-Q1", AT - timedelta(hours=3)), ("cmp-20261024-IND-PAK", AT - timedelta(hours=4)))
+    (c,), _ = compare.candidates([], rows, AT)
+    assert c["id"] == "cmp-20261024-IND-PAK-forces"
+
+
+def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy():
     busy = rows_at(("kh-20261024-Q1", AT - timedelta(minutes=30)))
     story = {"id": "nw-x", "title": "Israel strikes Iran's air defences", "owners": ["a", "b", "c"],
              "headlines": ["Iran vows response after Israeli strikes"]}
@@ -174,6 +135,6 @@ def test_a_pair_in_the_news_runs_even_while_the_channel_is_busy(monkeypatch):
     assert compare.candidates([story | {"owners": ["a"]}], busy, AT)[0] == []
 
 
-@pytest.mark.parametrize("usd,said", [(92057013588, "92.1 अरब डॉलर"), (278000000, "27.8 करोड़ डॉलर")])
-def test_money_reads_in_arab_or_crore(usd, said):
-    assert compare.money(usd) == said
+@pytest.mark.parametrize("n,said", [(1463865525, "146.4 करोड़"), (9800000, "98 लाख"), (943000, "9.4 लाख")])
+def test_people_read_in_crore_or_lakh(n, said):
+    assert compare.crore(n) == said
