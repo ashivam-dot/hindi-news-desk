@@ -39,7 +39,9 @@ def test_the_flash_never_shows_a_map_and_is_recorded_as_views():
     assert compose.burst(seen, photos, match.cast_of(s)) == []
     more = photos + [{"role": None, "file": "File:Neha Bora 2.jpg"}, {"role": None, "file": "File:Neha Bora 3.jpg"}]
     flash = compose.burst(seen, more, match.cast_of(s))
-    assert flash == [3, 1, 8, 9]  # in the order they come, then the pool
+    # In the order they come, then the pool; never photo 1, beat 1's (Matlabnama audit R4, 2026-10-23: one picture,
+    # one beat; it was [3, 1, 8, 9]).
+    assert flash == [3, 8, 9]
     assert not any(visuals.is_map(more[i]) for i in flash) and 2 not in flash
     rec = compose.view_record(seen, [1, 3, 6])
     assert [v["photo"] for v in rec[:3]] == [1, 3, 6] and all(v["burst"] for v in rec[:3])
@@ -87,10 +89,17 @@ def test_the_117_second_hold_is_refused_and_a_twin_cuts_it():
     assert any("stays up 11.7 s" in p for p in match.problems(s, views))
     seen = [dict(v) for v in views]
     compose.twins(seen, s.scene["photos"], match.cast_of(s))
+    # Photo 2 is photo 1 uncropped (one look); the twin was Neha's other portrait, photo 0. But photo 0 is beats 0's
+    # and 4's (R4, 2026-10-23: one picture, one beat): no twin is left, and the hold is refused, never padded.
+    assert {v["photo"] for v in seen if v["beat_k"] == 3} == {1}
+    assert any("stays up" in p for p in match.problems(s, seen))
+    # A portrait no other beat shows is the twin.
+    photos = s.scene["photos"] + [{k: v for k, v in s.scene["photos"][0].items() if k != "look"}
+                                  | {"file": "File:Neha Bora 2.jpg"}]
+    seen = [dict(v) for v in views]
+    compose.twins(seen, photos, match.cast_of(s))
     assert match.longest_hold(seen)[0] <= match.HOLD_MAX
-    # Photo 2 is photo 1 uncropped (one look): the twin is Neha's other portrait, photo 0.
-    assert {v["photo"] for v in seen if v["beat_k"] == 3} == {0, 1}
-    assert not any("stays up" in p for p in match.problems(s, seen))
+    assert {v["photo"] for v in seen if v["beat_k"] == 3} == {1, len(photos) - 1}
 
 
 def test_one_view_past_the_ceiling_is_split_with_its_twin():

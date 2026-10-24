@@ -64,20 +64,26 @@ def test_each_beat_shows_who_or_where_it_names():
     rows = anchored(TIGER, subject, cast, TIGER_SPELT)
     # Every beat names Tiger, Shinde, Jackie or the police: their photos, and no map at all (real pictures,
     # 2026-10-22: CAPraPdXvns's maps under beats naming people; a map stands only under a beat that names nothing but
-    # places). Once [[0, mumbai], [1], [maha, shinde], [police], [2, jackie], [route, police]].
+    # places). Once [[0, mumbai], [1], [maha, shinde], [police], [2, jackie], [route, police]]. One picture, one beat
+    # (Matlabnama audit R4, 2026-10-23): Tiger's photo 0 and the police photo once each, so beat 4 shows Jackie alone
+    # and beat 5, the police already shown, is a card (it was [0, jackie] and [police]). A photo comes back once,
+    # never on the next beat (match.RETURNS, 2026-10-23: the Chaukanna reference), so they are [0, jackie] and [police].
     assert views_of(rows) == [[0], [1], [at["shinde"], 2], [at["police"]], [0, at["jackie"]], [at["police"]]]
     # The second picture comes on the word that names it, never at the middle of the beat.
-    assert [r["cut_word"] for r in rows] == ["", "", "टाइगर", "", "जैकी", ""]
+    assert [r["cut_word"] for r in rows][:4] == ["", "", "टाइगर", ""] and rows[4]["cut_word"]
     assert not any(i in (at["mumbai"], at["maha"], at["route"]) for r in rows for i in r["views"])
 
 
 def test_the_picture_that_closed_a_beat_opens_the_next_only_when_it_is_the_one_named():
     subject, cast, at = tiger_cast()
     beats = TIGER[:5] + [TIGER[5], {"say": "पुलिस ने आगे की जांच शुरू कर दी है।"}]
-    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [[at["police"]], [at["police"]]]
-    cast[-1]["photos"] = [at["police"], at["police"] + 1]  # a second police photo: the next beat opens on it
+    # One police photo, shown on beat 3 (R4, 2026-10-23: never again on a later beat): the two later police beats
+    # are cards. They were [[police], [police]]. With one return (match.RETURNS): beat 5 shows it again (beat 4 is
+    # between), beat 6 right after it is a card.
+    assert views_of(anchored(beats, subject, cast, TIGER_SPELT))[5:] == [[at["police"]], None]
+    cast[-1]["photos"] = [at["police"], at["police"] + 1]  # a second police photo: the next police beat shows it
     v = views_of(anchored(beats, subject, cast, TIGER_SPELT))
-    assert v[6] != v[5][-1:] and set(v[5][-1:] + v[6]) == set(cast[-1]["photos"])
+    assert set(v[3] + v[5]) == set(cast[-1]["photos"]) and v[6] == [at["police"]]
 
 
 def test_a_beat_that_quotes_another_force_is_a_card():
@@ -91,7 +97,8 @@ def test_a_beat_that_quotes_another_force_is_a_card():
     kota = cast[4]["photos"][0]
     # Rajasthan's police: not Mumbai's. No map cuts at all (real pictures, 2026-10-22): beat 0 once cut to Mumbai's
     # map on its fourth word, beat 1 to Kota's.
-    assert views_of(rows)[1:] == [[at["police"]], None, [at["police"]]]
+    # Mumbai's police beat after beat 1 showed the one police photo: a card (R4, 2026-10-23; it was [police]).
+    assert views_of(rows)[1:] == [[at["police"]], None, None]
     assert rows[0]["views"] == [0] and kota in cast[4]["photos"]
     assert visuals.other_force("राजस्थान पुलिस ने बताया", cast[-1])
     assert not visuals.other_force("संदिग्धों को पुलिस अब मुम्बई ला रही है", cast[-1])
@@ -106,7 +113,8 @@ def test_a_beat_that_does_not_name_the_storys_person_never_shows_their_portrait(
              {"say": "पुलिस के मुताबिक आरोपी कोटा के रास्ते भाग रहे थे।"},
              {"say": "टाइगर श्रॉफ ने बाद में शूटिंग फिर शुरू की।"}]
     rows = anchored(beats, subject, cast, TIGER_SPELT)
-    assert views_of(rows)[1:4] == [[at["police"]], None, [at["police"]]]  # once a cut to Kota's map
+    # Once a cut to Kota's map; then the police photo twice, now once (R4, 2026-10-23).
+    assert views_of(rows)[1:4] == [[at["police"]], None, None]
     assert rows[4]["views"][0] in subject
     # The injured beat names no one a picture is of: a card, and its backdrop is not their portrait either.
     assert not set(rows[2]["views"]) & set(subject) and match.plain(beats[2]["say"])
@@ -118,14 +126,20 @@ def test_a_beat_that_does_not_name_the_storys_person_never_shows_their_portrait(
 def test_a_lone_portrait_stands_only_under_the_beats_that_name_him():
     subject, cast, at = tiger_cast(own=1)
     rows = anchored(TIGER, subject, cast, TIGER_SPELT)
-    assert [k for k, r in enumerate(rows) if 0 in r["views"]] == [0, 1, 4]  # beats 2 and 5 name Shinde, Jackie
+    # Once on beats 0, 1 and 4 (beats 2 and 5 name Shinde, Jackie); one picture, one beat (R4, 2026-10-23): the
+    # lone portrait opens the Short and the later beats naming him are cards, never a second showing of it.
+    shown = [r["views"] if r["plate"] != match.CARD else [] for r in rows]
+    # With one return (match.RETURNS, 2026-10-23), beat 4, which names him, shows it a second time.
+    assert [k for k, v in enumerate(shown) if 0 in v] == [0, 4]
     # Shinde, Jackie, the police and the portrait: four real pictures (a fifth was Mumbai's map, gone 2026-10-22).
-    assert all(r["plate"] == "" for r in rows) and len({i for r in rows for i in r["views"]}) >= 4
+    assert len({i for v in shown for i in v}) >= 4
 
 
 def test_with_no_cast_a_beat_naming_nothing_is_a_card():
     rows = anchored(TIGER, [0, 1, 2], [], TIGER_SPELT)
-    assert views_of(rows) == [[0], [1], [2], None, [0], None]  # no police, no Kota: cards, not the own photos
+    # No police, no Kota: cards, not the own photos; and beat 4's [0] once (R4, 2026-10-23: photo 0 is beat 0's).
+    # With one return (match.RETURNS), beat 4, which names Tiger, shows photo 0 again.
+    assert views_of(rows) == [[0], [1], [2], None, [0], None]
     assert all(not r["cut_word"] for r in rows)
 
 
@@ -176,8 +190,9 @@ def test_a_spot_inside_a_city_is_marked_on_the_city_never_joined_to_it():
     cast = [{"en": "Mumbai", "hi": "मुम्बई", "kind": "place", "photos": [3], "near": []},
             {"en": "Juhu", "hi": "जुहू", "kind": "place", "photos": [5], "near": [6], "inside": "Mumbai"}]
     # Three more picture beats (two people with photos), so the place beat is a fifth of the picture time
-    # (match.MAP_SHARE): a map stands only under a beat whose point is where, and never fills more.
-    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7]},
+    # (match.MAP_SHARE): a map stands only under a beat whose point is where, and never fills more. Shinde has two
+    # photos: one picture, one beat (R4, 2026-10-23), so his two pad beats keep the picture time.
+    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7, 9]},
              {"en": "Jackie Shroff", "hi": "जैकी श्रॉफ", "kind": "person", "photos": [8]}]
     pad = [{"say": "एकनाथ शिंदे ने परिवार से मुलाकात की और पूरी सुरक्षा का भरोसा दिया।"},
            {"say": "जैकी श्रॉफ ने कहा कि परिवार सुरक्षित है और जांच पर भरोसा है।"},
@@ -215,10 +230,11 @@ def test_a_named_landmark_shows_its_photo_and_two_places_their_route():
                     [0, 1], cast)
     # One name, one picture: the station's own photo, no cut to its map (compose holds it closer, TIGHT); and the
     # station's photo, not the Surat-Kota route map, under the beat naming both (a real picture before a map,
-    # 2026-10-22). Without the station's photo, a short where-beat shows the route.
-    assert views_of(rows) == [[0], [3], [3]] and rows[1]["cut_word"] == ""
+    # 2026-10-22). Without the station's photo, a short where-beat shows the route. The station's photo once (R4,
+    # 2026-10-23): beat 2 was [3] again, and the route alone would be a third of the picture time, so a card.
+    assert views_of(rows) == [[0], [3], None] and rows[1]["cut_word"] == ""
     cast[0]["sight"] = []
-    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7]},
+    cast += [{"en": "Eknath Shinde", "hi": "एकनाथ शिंदे", "kind": "person", "photos": [7, 9]},
              {"en": "Jackie Shroff", "hi": "जैकी श्रॉफ", "kind": "person", "photos": [8]}]
     pad = [{"say": "एकनाथ शिंदे ने परिवार से मुलाकात की और पूरी सुरक्षा का भरोसा दिया।"},
            {"say": "जैकी श्रॉफ ने कहा कि परिवार सुरक्षित है और जांच पर भरोसा है।"},

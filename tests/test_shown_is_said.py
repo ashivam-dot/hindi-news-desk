@@ -41,7 +41,9 @@ def test_rubio_hand_fix_is_blocked_now():
     assert "pictures: 2 map views (at most 1)" in bad
     assert "pictures: maps fill 50% of the picture time (at most 20%)" in gate.said_is_shown(short("39714003987-fixed"))
     rows, _ = planned(s)
-    assert gate.said_is_shown(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5"]
+    # And the "दोनों के बीच" pair, its Ambani photo beat 2's (R4, 2026-10-23: one picture, one beat): a third card.
+    assert gate.said_is_shown(applied(s, rows)) == ["text cards: 2 beats in a row from beat 5",
+                                                    "text cards: 3 of 6 beats (at most 2)"]
     # As rendered: Rubio to 20.60 s, the Vantara map from "वनतारा"; a card's backdrop is not picture time: 5.56 s of
     # maps in 17.61 s (32%, once under 40%).
     views = [{"start": 0.35, "end": 3.5, "photo": 7, "beat_k": 0}, {"start": 3.5, "end": 6.14, "photo": 8, "beat_k": 0},
@@ -89,8 +91,10 @@ def test_jaishankar_clean_short_still_passes():
     assert bad[0].startswith("pictures: beat 2 shows a map though it names")
     # Since 2026-10-22 (dry run 39827809002) also beat 6's "Secretary Blinken Meets with ... Jaishankar": Blinken's
     # face under the Padma Shri line (was: only beat 7).
-    assert bad[1:] and all("beat 7 shows" in p or p.startswith("pictures: beat 6 shows photo 7")
-                           and "a photo with someone else" in p for p in bad[1:])
+    # Since 2026-10-23 (Matlabnama audit R2, R4) beat 4's handshake crop and three portraits on two beats each.
+    assert bad[1:] and all("beat 7 shows" in p or p.startswith(("pictures: beat 6 shows photo 7",
+                                                                 "pictures: beat 4 shows photo 4"))
+                           and "a photo with someone else" in p or " on beats " in p for p in bad[1:])
     rows, _ = planned(s)
     assert gate.said_is_shown(applied(s, rows)) == []
 
@@ -117,6 +121,7 @@ def test_make_gates_the_render(made, monkeypatch):  # noqa: F811
         cli.make(None, s)
     assert cli.rendered_views(work) == views  # written before the gate: the review reads what was on screen
     monkeypatch.setattr(compose, "render", lambda sh, t, w: {"duration": 40.0, "views": views[:1]})
+    monkeypatch.setattr(match, "ONE_SHARE", 1.0)  # a one-view render: this test is about the maps' share only
     assert cli.make(None, s)[1]["views"] == views[:1]
     assert cli.rendered_views(Path(work.parent / "none")) is None
 

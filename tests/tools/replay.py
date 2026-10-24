@@ -48,6 +48,10 @@ def _offline(*a, **k):
 PICTURE = re.compile(r"^(pictures:|text cards:|beats:|faceless:)")
 # Problem strings by kind, for the refusal-reason tally (gate.held, gate.said_is_shown, match.problems).
 REASONS = [
+    # The picture-follows-voice rules (Matlabnama audit, 2026-10-23), before the vetted-photo catch-all.
+    ("map not where it happened", r"not where the story happened|one-ended map"),
+    ("picture on two beats", r" on beats [\d, ]+ and \d+$"),
+    ("stand-in without its label", r"a stand-in, without"),
     ("vetted photo on screen", r"^pictures: beat \d+ shows photo \d+ \(.*\): "),
     ("picture the beat does not name", r"which the beat does not name$"),
     ("card names what is not on screen", r"^pictures: card \d+ names"),
@@ -111,13 +115,15 @@ def timed_views(short: Short, timing: dict | None, anchored: bool) -> list[dict]
 def replan(short: Short) -> tuple[Short, list[dict]]:
     """visuals.direct's anchored half on the artifact's own pool and cast (no network), then writer._short's beats."""
     photos, cast = [dict(p) for p in short.scene.get("photos") or []], match.cast_of(short)
+    spoken = [b for b in short.beats if b.shot.startswith("photo:")]
+    # One map, where it happened (visuals.map_scope; offline the dateline is unknown: the place named most).
+    visuals.map_scope([{"say": b.text} for b in spoken], cast, photos)
     for i, p in enumerate(photos):
         if why := match.vet(i, photos, short, cast):
             p["vet"] = why
         else:
             p.pop("vet", None)
     spell = match.spellings_of(short)
-    spoken = [b for b in short.beats if b.shot.startswith("photo:")]
     subject = [i for i, p in enumerate(photos) if not p.get("role")]
     lead = next(iter(shot_photos(spoken[0].shot)), None) if spoken else None
     ranked = ([lead] if lead in subject else []) + [i for i in subject if i != lead]
@@ -164,6 +170,34 @@ def map_share(short: Short, views: list[dict] | None) -> float:
     return maps / total if total else 0.0
 
 
+def repeats(short: Short, views: list[dict] | None = None) -> int:
+    """How many pictures (a photo or its look, a place's maps as one) are on more than one beat (match.repeats)."""
+    return len(match.repeats(short, views))
+
+
+def map_places(short: Short, views: list[dict] | None = None) -> list[str]:
+    """The places the maps on screen show, once each in the order they come (a route's two ends together)."""
+    photos, cast, out = short.scene.get("photos") or [], match.cast_of(short), []
+    for b in short.beats:
+        if b.shot.startswith("photo:") and b.plate != match.CARD:
+            for i in shot_photos(b.shot):
+                if i < len(photos) and visuals.is_map(photos[i]):
+                    out.append("+".join(sorted(match.depicts(i, photos[i], cast))))
+    return list(dict.fromkeys(out))
+
+
+def per_beat(short: Short) -> list[str]:
+    """Beat words -> what is on screen (file or "card"), for the per-beat review table."""
+    photos, out = short.scene.get("photos") or [], []
+    for n, b in enumerate([b for b in short.beats if b.shot.startswith("photo:")], 1):
+        shown = [photos[i] for i in shot_photos(b.shot) if i < len(photos)]
+        what = "card" if b.plate == match.CARD else " / ".join(
+            ("MAP " + (p.get("who") or "")) if visuals.is_map(p) else
+            f"{(p.get('file') or '')[5:60]}{' [' + things.STAND_IN + ']' if p.get('stand_in') else ''}" for p in shown)
+        out.append(f"b{n} {b.text[:60]} -> {what}{' (cut: ' + b.cut_word + ')' if b.cut_word else ''}")
+    return out
+
+
 def verdict(short: Short, views: list[dict] | None) -> dict:
     allp = gate.check(short)
     pictures = [p for p in allp if PICTURE.match(p)]
@@ -173,6 +207,7 @@ def verdict(short: Short, views: list[dict] | None) -> dict:
     return {"pass": not pictures, "problems": pictures, "other": [p for p in allp if not PICTURE.match(p)],
             "beats": len(spoken), "cards": sum(b.plate == match.CARD for b in spoken),
             "map_share": round(map_share(short, views), 3), "map_views": match._map_views(short, views),
+            "repeats": repeats(short, views), "map_places": map_places(short, views), "per_beat": per_beat(short),
             "timed": views is not None}
 
 
@@ -209,11 +244,13 @@ def summary(rows: list[dict]) -> list[str]:
     why = Counter(x for r in blocked for x in {reason(p) for p in r["replanned"]["problems"]})
     gain = [r for r in rows if r.get("things")]
     views = Counter(min(r["replanned"]["map_views"], 2) for r in rows)
+    rep = (sum(r["original"]["repeats"] > 0 for r in rows), sum(r["replanned"]["repeats"] > 0 for r in rows))
     return [f"Shorts: {n} (rendered: {len(made)}; distinct stories: {len({r['id'] for r in rows})})",
             f"map views per Short, original: {sum(r['original']['map_views'] for r in rows) / max(n, 1):.1f} "
             f"(over one: {sum(r['original']['map_views'] > 1 for r in rows)}); re-planned: "
             f"{sum(r['replanned']['map_views'] for r in rows) / max(n, 1):.1f} (0: {views[0]}, 1: {views[1]}, "
             f"2+: {views[2]})",
+            f"Shorts with a picture on two beats, original: {pct(rep[0], n)}; re-planned: {pct(rep[1], n)}",
             f"original text cards: {pct(sum(r['original']['cards'] for r in rows), beats)} of spoken beats",
             f"Shorts with a beat that would gain a thing's picture: {len(gain)} ("
             + ", ".join(f"{r['id']} b{n} {t}" for r in gain for n, t in r["things"]) + ")",
@@ -250,6 +287,8 @@ def main(argv: list[str]) -> int:
     if config.MATCHER == "legacy":
         print("DESK_MATCHER=legacy: the shown-is-said gate is off; unset it to replay", file=sys.stderr)
         return 2
+    beats = "--beats" in argv  # also print each replanned beat: its words -> what is on screen
+    argv = [a for a in argv if a != "--beats"]
     rows = []
     for p in shorts(argv):
         try:
@@ -257,6 +296,8 @@ def main(argv: list[str]) -> int:
         except Exception as exc:  # an artifact the current Short format cannot load
             print(f"skip {p}: {type(exc).__name__}: {exc}", file=sys.stderr)
     print("\n".join(summary(rows) + [""] + table(rows)))
+    for r in rows if beats else ():
+        print(f"\n{r['id']} ({'PASS' if r['replanned']['pass'] else 'BLOCK'}):\n  " + "\n  ".join(r["replanned"]["per_beat"]))
     if out_json:
         out_json.write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding="utf-8")
     return 0

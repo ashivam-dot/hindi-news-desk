@@ -148,7 +148,8 @@ def test_real_photos_must_fill_half_the_short():
     from .test_match import applied, planned
 
     rows, _ = planned(s)
-    assert "pictures: real photos fill only 33% of the Short (want at least 50%)" in match.problems(applied(s, rows))
+    # 17% since R4 (2026-10-23): its one Jantar Mantar photo stands under beat 1 only (33% once, beats 1 and 2).
+    assert "pictures: real photos fill only 17% of the Short (want at least 50%)" in match.problems(applied(s, rows))
 
 
 def test_map_views_count_a_held_map_once():
@@ -307,9 +308,11 @@ def test_a_public_figure_the_names_list_leaves_out_is_still_shown():
     for i, p in enumerate(photos):
         if not p.get("role"):
             p["depicts"] = [match.SUBJECT]
-    row = {k: modi[k] for k in ("en", "hi", "kind", "alias")} | {"photos": [len(photos)]}
-    photos.append({"file": "File:Narendra Modi 2024.jpg", "role": "person", "who": modi["hi"],
-                   "depicts": [match.key(row)]})
+    # Two of his portraits: beat 1 cuts to one on "नरेंद्र", and one picture, one beat (Matlabnama audit R4,
+    # 2026-10-23) leaves beat 2 the other (with one, beat 2 is a card).
+    row = {k: modi[k] for k in ("en", "hi", "kind", "alias")} | {"photos": [len(photos), len(photos) + 1]}
+    for f in ("File:Narendra Modi 2024.jpg", "File:Narendra Modi 2019.jpg"):
+        photos.append({"file": f, "role": "person", "who": modi["hi"], "depicts": [match.key(row)]})
     cast = match.cast_of(s) + [row]
     rows = match.plan(spoken(s), photos, cast, [0, 1, 2, 3], s.kind, match.spellings_of(s), True, s.scene["names"])
     assert rows[1]["views"] == [len(photos) - 1] and rows[1]["plate"] == ""
@@ -326,11 +329,20 @@ def test_both_leaders_shows_the_pair_and_never_a_third_face():
     assert any("beat 4 shows photo 2" in p and "a photo with someone else" in p for p in match.problems(s))
     rows, photos = planned(s)
     modi = {i for i, p in enumerate(photos) if p.get("who") == "नरेंद्र मोदी"}
-    assert rows[2]["plate"] == "" and len(rows[2]["views"]) == 2 and set(rows[2]["views"]) & modi
     assert "a photo with someone else" in photos[2]["vet"] and all(2 not in r["views"] for r in rows)
-    assert match.problems(applied(s, rows)) == []
-    # Only right after a beat that showed two people: after a card, "दोनों ..." is a card.
+    # Two clean portraits each, and beats 1 and 2 show all four: one picture, one beat (Matlabnama audit R4,
+    # 2026-10-23), so the pair beat and Tusk's peace-plan beat are cards and the Short is refused (it passed once,
+    # showing each portrait twice). The writer's SHOWABLE retry, or more portraits, is the way out; never a repeat.
+    # With one return (match.RETURNS, 2026-10-23) Modi's portrait is back on beat 4: 2 cards, still refused.
+    assert rows[2]["plate"] == rows[4]["plate"] == match.CARD and rows[3]["plate"] == ""
+    assert "text cards: 2 of 5 beats (at most 1)" in match.problems(applied(s, rows))
+    # The pair itself: right after a beat that showed both, with portraits of both left, "दोनों ..." is the pair.
     beats = [{"say": b.text, "card": b.card} for b in s.beats if b.shot != "outro"]
+    subject = [i for i, p in enumerate(photos) if not p.get("role")]
+    pair = match.plan([beats[0], beats[2]], photos, match.cast_of(s), subject, s.kind, match.spellings_of(s), True,
+                      s.scene["names"])
+    assert pair[1]["plate"] == "" and len(pair[1]["views"]) == 2 and set(pair[1]["views"]) & modi
+    # Only right after a beat that showed two people: after a card, "दोनों ..." is a card.
     alone = [beats[0], {"say": "इस पर कोई सहमति नहीं बनी।"}, beats[2]]
     subject = [i for i, p in enumerate(photos) if not p.get("role")]
     again = match.plan(alone, photos, match.cast_of(s), subject, s.kind, match.spellings_of(s), True,
@@ -378,6 +390,9 @@ def test_both_after_an_attribution_and_beside_a_town_is_still_the_pair():
     # The pair and the card are fixed, and what is left is the script: Tusk is named in one beat of five, on screen
     # 20% of his own Short (review round 1, F2). The subject floor refuses it, and the writer now sends such a draft
     # back before any render (writer._unnamed_subject).
+    # Since R4 (2026-10-23) also the three beats after the pair: Modi's two portraits are the pair's and beat 1's,
+    # so his two later beats and the trade beat are cards.
+    # With one return (match.RETURNS, 2026-10-23) the portraits come back and only the subject floor is left.
     assert match.problems(applied(s, rows)) == [
         "pictures: the story's person fills only 20% of the Short (want at least 25%)"]
     beats = [{"say": b.text} for b in s.beats if b.shot != "outro"]

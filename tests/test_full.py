@@ -29,6 +29,28 @@ def test_text_stays_above_youtubes_own_title_and_buttons():
     assert hook[1].shape[1] <= compose.W - 120 and chip[1].shape[1] <= compose.W - 72
 
 
+def test_the_headline_bar_sits_under_the_captions_and_above_youtubes_buttons():
+    # The reference channel (Chaukanna News, 2026-10-23) keeps the headline on a yellow bar for the whole Short.
+    title = "टाइगर श्रॉफ फायरिंग केस: शूटर रेहान के 2 दोस्त पकड़े गए, पूछताछ जारी #shorts #tigershroff"
+    assert compose.headline_of(title) == "टाइगर श्रॉफ फायरिंग केस: शूटर रेहान के 2 दोस्त पकड़े गए, पूछताछ जारी"
+    bar = compose._bar_layer(title)
+    top = compose.H * compose.FULL_BAR_Y
+    assert top > compose.H * compose.FULL_CAPTION_Y + compose.FULL_CAPTION_SIZE / 2
+    assert top + bar[1].shape[0] < 0.8 * compose.H and top + bar[1].shape[0] < compose.H * compose.FULL_CREDIT_Y
+    assert bar[1].shape[1] <= compose.W - 72
+    assert compose._bar_layer("#shorts") is None
+
+
+def test_a_landscape_news_photo_fills_the_frame(tmp_path):
+    # Every photo wider than 0.9 once sat as a band across the middle of a 9:16 frame (the SWAT van, xJsZR0dPNTQ).
+    from PIL import Image
+
+    for (w, h), mode in (((1500, 1000), "fill"), ((1920, 1080), "fill"), ((3000, 1000), "fit")):
+        path = tmp_path / f"{w}x{h}.jpg"
+        Image.new("RGB", (w, h), (90, 90, 90)).save(path)
+        assert compose.Plate({"path": str(path), "role": "map"}, tmp_path / "d.npy").mode == mode
+
+
 def test_the_short_ends_on_the_last_word_not_on_a_trailing_take():
     words = [{"text": "है।", "start": 26.4, "end": 27.08, "beat": 4}]
     assert compose.spoken_until({"duration": 36.91, "words": words}) == 27.08 + compose.SPEECH_TAIL
