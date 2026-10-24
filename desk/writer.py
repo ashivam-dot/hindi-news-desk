@@ -2140,6 +2140,10 @@ def build_explainer(cand: dict) -> Short:
 
 
 def build(cand: dict) -> Short:
+    if (cand.get("id") or "").startswith("cmp-"):
+        from . import compare
+
+        return compare.build(cand)
     if (cand.get("id") or "").startswith("kh-"):
         return build_explainer(cand)
     if (cand.get("id") or "").startswith("nw-"):

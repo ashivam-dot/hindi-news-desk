@@ -1028,13 +1028,15 @@ def _place_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
 def places_on(seen: list[dict], photos: list[dict]) -> list[tuple[float, float, str]]:
     """[(from, until, place)] for the place stamp: while a map or a place's photo is on screen, the place it shows (a
     route's is where it ends), and never longer. A stamp names only the picture under it: one held from the first
-    map put Begusarai over Tiger Shroff (c5d6ebc), and "जुहू, मुंबई" stayed over the Mumbai map."""
+    map put Begusarai over Tiger Shroff (c5d6ebc), and "जुहू, मुंबई" stayed over the Mumbai map. A photo's "tag"
+    (compare.py: the country whose forces it shows) is stamped the same way."""
     out: list[tuple[float, float, str]] = []
     for v in seen:
         if v.get("outro") or v.get("plate") == match.CARD:
             continue
         p = photos[v["photo"]]
-        where = (p.get("who") or "").split(" - ")[-1].strip() if p.get("role") in ("map", "place") else ""
+        where = p.get("tag") or ((p.get("who") or "").split(" - ")[-1].strip()
+                                 if p.get("role") in ("map", "place") else "")
         if not where:
             continue
         if out and out[-1][2] == where and abs(out[-1][1] - v["start"]) < 1e-6:
