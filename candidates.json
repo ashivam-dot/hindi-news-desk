@@ -1,5 +1,5 @@
 {
- "at": "2026-10-24T19:11:24+00:00",
+ "at": "2026-10-24T19:48:00+00:00",
  "trending": [
   {
    "qid": "Q320093",
@@ -144,10 +144,11 @@
     "google-news:'दुख इस बात का हुआ..': सोनिया गांधी के नाती रेहान वाड्रा पर बोलीं प्रियंका चतुर्वेदी- उनका भविष्य बहुत..."
    ],
    "top": {
-    "IN": 16,
-    "IN-hi-nation": 9
+    "IN": 15,
+    "IN-hi": 6,
+    "IN-hi-nation": 10
    },
-   "top_score": 0.485,
+   "top_score": 1.065,
    "top_headlines": [
     "'वो बहुत गुड लुकिंग थे', सोनिया गांधी ने एक्स पर साझा कीं राजीव गांधी की यादें तो लोगों ने क्या कहा?",
     "Reliance Jio Platforms IPO GMP, listing date and time, share price prediction for NSE, BSE debut - Details"
@@ -188,8 +189,7 @@
     "Pak protecting Kashmiris, claims Farooq Abdullah; BJP calls it treason",
     "Farooq Abdullah's remarks on Pakistan, Kashmiris spark row; BJP demands apology",
     "'Act of treason': BJP guns for Farooq Abdullah over 'Pak protecting Kashmiris' remark",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_headlines": [
     "'कश्मीरियों की रक्षा कर रहा है पाकिस्तान...' ये क्या बोल गए फारूक अब्दुल्ला, बीजेपी-वीएचपी आगबबूला",
@@ -252,20 +252,18 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "google-news:‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'",
     "google-news:फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'"
    ],
    "top": {
-    "IN": 2,
+    "IN": 4,
     "IN-hi": 7,
-    "IN-nation": 15,
+    "IN-nation": 9,
     "IN-hi-nation": 1
    },
-   "top_score": 1.69,
+   "top_score": 1.68,
    "top_headlines": [
     "फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -278,7 +276,7 @@
    "views": 0,
    "traffic": 0,
    "news": 150000,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [
     "World News Live Updates: Jordan’s king orders firm response to Karak church attack",
     "Jordan: Karak church shooting leaves 7 dead, dozens injured"
@@ -399,8 +397,8 @@
    "top_score": 0.9,
    "top_headlines": [
     "Riyadh, Dammam, Jeddah flights hit: Air India, IndiGo extend suspensions, Akasa follows suit",
-    "Houthis say they attacked Riyadh and Dammam airports, Saudi Aramco facility",
-    "Saudi Says Shrapnel Fell In Mecca, Medina After Houthi Attack"
+    "Saudi Says Shrapnel Fell In Mecca, Medina After Houthi Attack",
+    "Houthis say they attacked Riyadh and Dammam airports, Saudi Aramco facility"
    ],
    "hindi_owners": []
   },
@@ -526,11 +524,11 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-23",
-   "news_at": "2026-10-24T14:24:15+00:00",
+   "news_at": "2026-10-24T18:34:04+00:00",
    "owners": [
-    "BBC",
     "NPR",
-    "Guardian Media Group"
+    "Guardian Media Group",
+    "NDTV"
    ],
    "fame": 75000,
    "news": 75000,
@@ -539,7 +537,8 @@
    "headlines": [
     "Seven shot dead by gunmen at church funeral in Jordan, officials say",
     "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
-    "Nine killed and 40 injured after gunmen open fire at church funeral in Jordan"
+    "Nine killed and 40 injured after gunmen open fire at church funeral in Jordan",
+    "Death Count In Jordan Church Firing Rises To 9"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -579,12 +578,22 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-24T14:24:15+00:00"
+    },
+    {
+     "title": "Death Count In Jordan Church Firing Rises To 9",
+     "url": "https://www.ndtv.com/world-news/death-count-in-jordan-church-firing-rises-to-9-12231344#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T18:34:04+00:00"
     }
    ],
    "via": [
-    "outlet:BBC",
     "outlet:NPR",
-    "outlet:Guardian Media Group"
+    "outlet:Guardian Media Group",
+    "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
@@ -681,90 +690,85 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261025-Q19661414",
-   "qid": "Q19661414",
-   "title": "Anant Kumar Singh",
-   "name": "Anant Singh",
-   "phrase": "MLA Anant Singh",
-   "person": true,
+   "id": "kh-20261025-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
+   "category": "science",
+   "category_hi": "विज्ञान",
+   "story": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
    "story_keys": [
-    "expel"
+    "connection",
+    "satellite"
    ],
    "date": "2026-10-24",
-   "news_at": "2026-10-24T15:50:29+00:00",
+   "news_at": "2026-10-24T19:33:00+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
+    "BBC",
+    "Guardian Media Group",
+    "Deutsche Welle"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-    "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-    "JD(U) expels strongman MLA Anant Singh from the party for six years"
+    "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+    "Ukraine says Starlink connection 'now stable' after network limits",
+    "Ukraine: Starlink satellite speeds restored to normal"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "स्टारलिंक",
    "reports": [
     {
-     "title": "JD(U) expels strongman MLA Anant Singh from the party for six years",
-     "url": "https://www.thehindu.com/news/national/bihar/jdu-expels-anant-singh-for-six-years-seeks-his-disqualification-as-mla/article71620096.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
+     "title": "Ukraine: Starlink satellite speeds restored to normal",
+     "url": "https://www.dw.com/en/ukraine-starlink-satellite-speeds-restored-to-normal/a-79752155?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-24T15:50:29+00:00"
+     "at": "2026-10-24T19:33:00+00:00"
     },
     {
-     "title": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-     "url": "https://www.hindustantimes.com/india-news/jdu-expels-mokama-mla-anant-singh-from-party-for-6-years-over-controversial-remarks-101792845822306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Ukraine says Starlink connection 'now stable' after network limits",
+     "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-24T12:49:03+00:00"
+     "at": "2026-10-24T12:12:40+00:00"
     },
     {
-     "title": "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-     "url": "https://timesofindia.indiatimes.com/city/patna/jdu-expels-anant-singh-for-6-years-over-anti-party-activities-seeks-cancellation-of-his-mokama-mla-membership/articleshow/135170965.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
+     "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+     "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-24T12:48:18+00:00"
+     "at": "2026-10-24T15:47:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
+    "outlet:BBC",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle"
    ],
-   "top": {
-    "IN-nation": 16
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "Defence Secretary Rajesh Kumar Singh gets one-year extension till October 2027"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q983618",
@@ -854,7 +858,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -887,7 +891,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -920,7 +924,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1104,8 +1108,7 @@
     "Pak protecting Kashmiris, claims Farooq Abdullah; BJP calls it treason",
     "Farooq Abdullah's remarks on Pakistan, Kashmiris spark row; BJP demands apology",
     "'Act of treason': BJP guns for Farooq Abdullah over 'Pak protecting Kashmiris' remark",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_headlines": [
     "'कश्मीरियों की रक्षा कर रहा है पाकिस्तान...' ये क्या बोल गए फारूक अब्दुल्ला, बीजेपी-वीएचपी आगबबूला",
@@ -1168,110 +1171,22 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "google-news:‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'",
     "google-news:फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'"
    ],
    "top": {
-    "IN": 2,
+    "IN": 4,
     "IN-hi": 7,
-    "IN-nation": 15,
+    "IN-nation": 9,
     "IN-hi-nation": 1
    },
-   "top_score": 1.69,
+   "top_score": 1.68,
    "top_headlines": [
     "फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261025-Q19661414",
-   "qid": "Q19661414",
-   "title": "Anant Kumar Singh",
-   "name": "Anant Singh",
-   "phrase": "MLA Anant Singh",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-   "story_keys": [
-    "expel"
-   ],
-   "date": "2026-10-24",
-   "news_at": "2026-10-24T15:50:29+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-    "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-    "JD(U) expels strongman MLA Anant Singh from the party for six years"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "JD(U) expels strongman MLA Anant Singh from the party for six years",
-     "url": "https://www.thehindu.com/news/national/bihar/jdu-expels-anant-singh-for-six-years-seeks-his-disqualification-as-mla/article71620096.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T15:50:29+00:00"
-    },
-    {
-     "title": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-     "url": "https://www.hindustantimes.com/india-news/jdu-expels-mokama-mla-anant-singh-from-party-for-6-years-over-controversial-remarks-101792845822306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T12:49:03+00:00"
-    },
-    {
-     "title": "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-     "url": "https://timesofindia.indiatimes.com/city/patna/jdu-expels-anant-singh-for-6-years-over-anti-party-activities-seeks-cancellation-of-his-mokama-mla-membership/articleshow/135170965.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T12:48:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN-nation": 16
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "Defence Secretary Rajesh Kumar Singh gets one-year extension till October 2027"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "qid": "Q983618",
@@ -1330,7 +1245,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1363,7 +1278,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-24T19:11:24.448930+00:00",
+   "news_at": "2026-10-24T19:48:00.194179+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1382,6 +1297,87 @@
    "date": "2026-10-24",
    "coords": null,
    "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261025-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
+   "kind": "explainer",
+   "category": "science",
+   "category_hi": "विज्ञान",
+   "story": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+   "story_keys": [
+    "connection",
+    "satellite"
+   ],
+   "date": "2026-10-24",
+   "news_at": "2026-10-24T19:33:00+00:00",
+   "owners": [
+    "BBC",
+    "Guardian Media Group",
+    "Deutsche Welle"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+    "Ukraine says Starlink connection 'now stable' after network limits",
+    "Ukraine: Starlink satellite speeds restored to normal"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "स्टारलिंक",
+   "reports": [
+    {
+     "title": "Ukraine: Starlink satellite speeds restored to normal",
+     "url": "https://www.dw.com/en/ukraine-starlink-satellite-speeds-restored-to-normal/a-79752155?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-24T19:33:00+00:00"
+    },
+    {
+     "title": "Ukraine says Starlink connection 'now stable' after network limits",
+     "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-24T12:12:40+00:00"
+    },
+    {
+     "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+     "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-24T15:47:20+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1774,7 +1770,6 @@
    "news_at": "2026-10-24T17:23:19+00:00",
    "owners": [
     "India Today Group",
-    "NDTV",
     "HT Media",
     "Network18"
    ],
@@ -1784,11 +1779,11 @@
    "traffic": 0,
    "headlines": [
     "How Bishnoi gang tracked Tiger Shroff, plotted to shoot him in Mumbai",
-    "Guns Used In Tiger Shroff Assassination Bid Found, 11th Suspect Arrested",
     "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
     "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
     "Accused Suspected Of Using Signal, Zangi To Plot Attack On Tiger Shroff, Cops Probe Chats",
-    "3 accused in Tiger Shroff shooting case sent to police custody till October 28"
+    "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
+    "Tiger Shroff Firing Case: Handlers Alerted Shooters After Seeing Faces On TV, Say Police"
    ],
    "hindi_headlines": [],
    "region": "india",
@@ -1804,16 +1799,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-24T17:23:19+00:00"
-    },
-    {
-     "title": "Guns Used In Tiger Shroff Assassination Bid Found, 11th Suspect Arrested",
-     "url": "https://www.ndtv.com/india-news/tiger-shroff-firing-case-mumbai-crime-branch-detains-11th-suspect-from-indore-12229712#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T16:22:57+00:00"
     },
     {
      "title": "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
@@ -1874,6 +1859,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-24T05:25:42+00:00"
+    },
+    {
+     "title": "Bike taxi riders may have to buy passes as Maharashtra tightens security after attack on Tiger Shroff",
+     "url": "https://www.hindustantimes.com/cities/mumbai-news/bike-taxi-riders-may-have-to-buy-passes-as-govt-tightens-security-101792777195381.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T02:01:10+00:00"
     }
    ],
    "via": [
@@ -2134,7 +2129,7 @@
    "category": "defence",
    "region": "india",
    "date": "2026-10-24",
-   "news_at": "2026-10-24T19:14:15.421472+00:00",
+   "news_at": "2026-10-24T19:50:32.785087+00:00",
    "fame": 1,
    "owners": [],
    "headlines": [],
@@ -2146,19 +2141,19 @@
   }
  ],
  "notes": [
-  "revisit kh-20261025-Q16202406-update: 4 owners' new reports on Tiger Shroff (1075 views before); revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (556 views): 0 owners reported new news on Om Birla since its last Short; revisit Q312781 (321 views): 0 owners reported new news on Imran Khan since its last Short; revisit Q163225: last Short",
-  "outlets: 1277 headlines from 31 feeds (19 owners), 13 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261023-jordan-attack",
-  "explainers: 4 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q3517911, kh-20261025-Q56226, kh-20261025-Q19661414; dropped: explainer Jamia Millia Islamia: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Neha Bora: fewer than 3 owners' headlines name it and the story"
+  "revisit kh-20261025-Q16202406-update: 3 owners' new reports on Tiger Shroff (1075 views before); revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (556 views): 0 owners reported new news on Om Birla since its last Short; revisit Q312781 (321 views): 0 owners reported new news on Imran Khan since its last Short; revisit Q163225: last Short",
+  "outlets: 1259 headlines from 31 feeds (19 owners), 17 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261023-jordan-attack",
+  "explainers: 4 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q3517911, kh-20261025-Q56226, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Jamia Millia Islamia: fewer than 3 owners' headlines name it and the story; explainer Neha Bora: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1277,
+  "headlines": 1259,
   "feeds": 31,
   "owners": 19,
-  "matched": 13,
+  "matched": 17,
   "corroborated": 6
  },
  "emerging": [
@@ -2170,11 +2165,11 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-23",
-   "news_at": "2026-10-24T14:24:15+00:00",
+   "news_at": "2026-10-24T18:34:04+00:00",
    "owners": [
-    "BBC",
     "NPR",
-    "Guardian Media Group"
+    "Guardian Media Group",
+    "NDTV"
    ],
    "fame": 75000,
    "news": 75000,
@@ -2183,7 +2178,8 @@
    "headlines": [
     "Seven shot dead by gunmen at church funeral in Jordan, officials say",
     "Gunmen open fire at a church during a funeral in Jordan, killing 7 and wounding 40",
-    "Nine killed and 40 injured after gunmen open fire at church funeral in Jordan"
+    "Nine killed and 40 injured after gunmen open fire at church funeral in Jordan",
+    "Death Count In Jordan Church Firing Rises To 9"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2223,12 +2219,22 @@
      "group": "international",
      "lang": "en",
      "at": "2026-10-24T14:24:15+00:00"
+    },
+    {
+     "title": "Death Count In Jordan Church Firing Rises To 9",
+     "url": "https://www.ndtv.com/world-news/death-count-in-jordan-church-firing-rises-to-9-12231344#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T18:34:04+00:00"
     }
    ],
    "via": [
-    "outlet:BBC",
     "outlet:NPR",
-    "outlet:Guardian Media Group"
+    "outlet:Guardian Media Group",
+    "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
@@ -2357,10 +2363,11 @@
     "google-news:'दुख इस बात का हुआ..': सोनिया गांधी के नाती रेहान वाड्रा पर बोलीं प्रियंका चतुर्वेदी- उनका भविष्य बहुत..."
    ],
    "top": {
-    "IN": 16,
-    "IN-hi-nation": 9
+    "IN": 15,
+    "IN-hi": 6,
+    "IN-hi-nation": 10
    },
-   "top_score": 0.485,
+   "top_score": 1.065,
    "top_headlines": [
     "'वो बहुत गुड लुकिंग थे', सोनिया गांधी ने एक्स पर साझा कीं राजीव गांधी की यादें तो लोगों ने क्या कहा?",
     "Reliance Jio Platforms IPO GMP, listing date and time, share price prediction for NSE, BSE debut - Details"
@@ -2401,8 +2408,7 @@
     "Pak protecting Kashmiris, claims Farooq Abdullah; BJP calls it treason",
     "Farooq Abdullah's remarks on Pakistan, Kashmiris spark row; BJP demands apology",
     "'Act of treason': BJP guns for Farooq Abdullah over 'Pak protecting Kashmiris' remark",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_headlines": [
     "'कश्मीरियों की रक्षा कर रहा है पाकिस्तान...' ये क्या बोल गए फारूक अब्दुल्ला, बीजेपी-वीएचपी आगबबूला",
@@ -2465,20 +2471,18 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "google-news:‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'",
     "google-news:फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'"
    ],
    "top": {
-    "IN": 2,
+    "IN": 4,
     "IN-hi": 7,
-    "IN-nation": 15,
+    "IN-nation": 9,
     "IN-hi-nation": 1
    },
-   "top_score": 1.69,
+   "top_score": 1.68,
    "top_headlines": [
     "फारूक अब्दुल्ला का विवादित बयान, कहा- 'कश्मीर मुद्दे को पाकिस्तान ने जिंदा रखा, दिल्ली से हमें उम्मीद नहीं'",
-    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan",
-    "‘Act of treason’: BJP slams Farooq Abdullah over claim 'Pakistan is protecting Kashmiris'"
+    "\"Sedition\": BJP Slams Farooq Abdullah For Remarks On Kashmiris, Pakistan"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2568,90 +2572,85 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261025-Q19661414",
-   "qid": "Q19661414",
-   "title": "Anant Kumar Singh",
-   "name": "Anant Singh",
-   "phrase": "MLA Anant Singh",
-   "person": true,
+   "id": "kh-20261025-Q19867977",
+   "qid": "Q19867977",
+   "title": "Starlink",
+   "name": "Starlink",
+   "phrase": "Starlink",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
+   "category": "science",
+   "category_hi": "विज्ञान",
+   "story": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
    "story_keys": [
-    "expel"
+    "connection",
+    "satellite"
    ],
    "date": "2026-10-24",
-   "news_at": "2026-10-24T15:50:29+00:00",
+   "news_at": "2026-10-24T19:33:00+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
+    "BBC",
+    "Guardian Media Group",
+    "Deutsche Welle"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-    "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-    "JD(U) expels strongman MLA Anant Singh from the party for six years"
+    "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+    "Ukraine says Starlink connection 'now stable' after network limits",
+    "Ukraine: Starlink satellite speeds restored to normal"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "स्टारलिंक",
    "reports": [
     {
-     "title": "JD(U) expels strongman MLA Anant Singh from the party for six years",
-     "url": "https://www.thehindu.com/news/national/bihar/jdu-expels-anant-singh-for-six-years-seeks-his-disqualification-as-mla/article71620096.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
+     "title": "Ukraine: Starlink satellite speeds restored to normal",
+     "url": "https://www.dw.com/en/ukraine-starlink-satellite-speeds-restored-to-normal/a-79752155?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-24T15:50:29+00:00"
+     "at": "2026-10-24T19:33:00+00:00"
     },
     {
-     "title": "JDU expels Mokama MLA Anant Singh from party for 6 years, days after controversial remarks spark row",
-     "url": "https://www.hindustantimes.com/india-news/jdu-expels-mokama-mla-anant-singh-from-party-for-6-years-over-controversial-remarks-101792845822306.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Ukraine says Starlink connection 'now stable' after network limits",
+     "url": "https://www.bbc.co.uk/news/articles/cwkg5md14j8go?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-24T12:49:03+00:00"
+     "at": "2026-10-24T12:12:40+00:00"
     },
     {
-     "title": "JD(U) expels Anant Singh for 6 years over 'anti-party activities'",
-     "url": "https://timesofindia.indiatimes.com/city/patna/jdu-expels-anant-singh-for-6-years-over-anti-party-activities-seeks-cancellation-of-his-mokama-mla-membership/articleshow/135170965.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
+     "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+     "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-10-24T12:48:18+00:00"
+     "at": "2026-10-24T15:47:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
+    "outlet:BBC",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle"
    ],
-   "top": {
-    "IN-nation": 16
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "Defence Secretary Rajesh Kumar Singh gets one-year extension till October 2027"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   }
  ]
 }
