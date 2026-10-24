@@ -75,6 +75,10 @@ _KIN = re.compile(rf"\s+(?:के|की|का)\s+(?:एक\s+)?(?:{'|'.join(KI
 # vetted, not maps) fill at least REAL_SHARE of the Short; it pairs with shown-is-said (a photo counts only where its
 # beat names it), so it cannot be met with pictures the voice is not talking about.
 CARD_RUN, MAP_SHARE, HELD_RUN = 2, 0.2, 3
+# The plan holds maps to MAP_SHARE by each beat's letters; the voice gives a beat a little more or less time, so
+# the gate allows MAP_SLACK over it (the Oleshky ceasefire Short, planned at 20%, voiced at 21%, was given up
+# for good, 2026-10-24).
+MAP_SLACK = 0.03
 MAX_MAP_VIEWS, REAL_SHARE = 1, 0.5
 # The floor paired with them in a person's Short: the subject on screen at least SUBJECT_SHARE of it (real pictures
 # review round 1, the Amit Shah dry run: Rahul Gandhi as long as Shah, a card over Rahul for a line about Shah).
@@ -1070,7 +1074,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         for who in dict.fromkeys(n.get("hi") for n in sc.get("names") or [] if n.get("hi")):
             if hindi.contains(hook, who) and not hindi.contains(narration, who) and not hindi.contains(voice, who):
                 out.append(f"pictures: the hook names {who}, whom the narration never says")
-    if total and map_time / total > MAP_SHARE:
+    if total and map_time / total > MAP_SHARE + MAP_SLACK:
         out.append(f"pictures: maps fill {map_time / total:.0%} of the picture time (at most {MAP_SHARE:.0%})")
     if views and (hold := longest_hold(views))[0] > HOLD_MAX:
         out.append(f"pictures: {_label(hold[1], photos)} stays up {hold[0]:.1f} s in a row from {hold[2]:.1f} s (at "

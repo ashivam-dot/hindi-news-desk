@@ -577,3 +577,14 @@ def test_ad_suitability_ranks_crime_down_and_explainers_up_but_never_breaking_ne
     note = plan.ad_note([firing, petrol, plain, loud], at)
     assert note.startswith("ad-suitability x0.8") and "kh-f" in note and "kh-p" in note and "kh-n" not in note
     assert plan.ad_note([plain], at) is None
+
+
+def test_a_war_hindi_newsrooms_tell_is_not_a_foreign_statement(monkeypatch):
+    from desk import orbitwire, plan
+    monkeypatch.setattr(orbitwire, "india_connection", lambda c: False)
+    war = {"kind": "explainer", "category": "world", "region": "world", "title": "Melania Trump",
+           "story": "Russia-Ukraine war: Melania Trump brokers localised ceasefire in Oleshky", "headlines": []}
+    assert plan.foreign_only(war)
+    assert not plan.foreign_only(dict(war, hindi_owners=["Aaj Tak", "ABP"]))
+    statement = dict(war, story="White House press secretary speaks on tariffs", hindi_owners=["Aaj Tak", "ABP"])
+    assert plan.foreign_only(statement)

@@ -417,6 +417,13 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     return None
 
 
+# A war Hindi newsrooms are telling is the Hindi audience's story too (owner, 2026-10-24: "what about the russia and
+# ukraine war"): Aaj Tak and ABP run the Russia-Ukraine and West Asia wars daily, while a foreign statement with no
+# war drew 0-16 views here.
+WAR = re.compile(r"\b(war|ceasefire|truce|peace talks|invasion)\b|युद्ध|जंग|सीजफायर|युद्धविराम|संघर्ष ?विराम", re.I)
+WAR_HINDI_OWNERS = 2
+
+
 def foreign_only(cand: dict) -> bool:
     """A statement, politics or diplomacy story from abroad with no India connection (see WORLD_SKIPPED). A death,
     an air incident, a storm or a disaster (WORLD_KEPT), a sport or entertainment story, a case's angle and a story
@@ -428,6 +435,8 @@ def foreign_only(cand: dict) -> bool:
     if cand.get("category") in explain.TOP_ONLY:
         return False
     if cand.get("kind") != "explainer" and cand.get("category") not in WORLD_SKIPPED:
+        return False
+    if WAR.search(ad_text(cand)) and len(cand.get("hindi_owners") or []) >= WAR_HINDI_OWNERS:
         return False
     return not orbitwire.india_connection(cand)
 
