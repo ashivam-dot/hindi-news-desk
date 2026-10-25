@@ -1,34 +1,22 @@
 {
- "at": "2026-10-25T02:09:30+00:00",
+ "at": "2026-10-25T03:33:53+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 84 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.196, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.809, 'typical_views_24h': 16, 'n_retention': 4, 'typical_view_pct': 55.9}, 'category:attack': {'n': 13, 'lift': 1.35, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.1}, 'category:diplomacy': {'",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 18 candidates from 21 trending",
-  "revisit kh-20261025-Q16202406-update: 3 owners' new reports on Tiger Shroff (1075 views before); revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261025-Q163225-update: 2 owners' new reports on Sonia Gandhi (420 views before); revisit Q312781 (321 view",
-  "outlets: 1164 headlines from 31 feeds (19 owners), 7 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261023-jordan-attack",
-  "explainers: 6 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q140632219, kh-20261025-Q3517911, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Jamia Millia Islamia: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "watch: 15 candidates from 23 trending",
+  "outlets: 1159 headlines from 30 feeds (18 owners), 9 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q140632219, kh-20261025-Q3517911, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer New York Archdiocese: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261025-Q3517911: too low in Google News India's top stories (place 0.24, needs 0.35)",
+  "drop kh-20261025-Q3517911: a world story goes out only near the top of the lists (place 0.39, needs 0.75)",
+  "hold kh-20261025-Q19867977: last Short went out 0.1 h ago",
+  "hold kh-20261025-Q432473: last Short went out 0.1 h ago",
   "drop wk-Q141535181-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q139998119-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q1699148: 86 h old and no longer trending live",
-  "drop wk-Q452431: 62 h old and no longer trending live",
   "drop kh-20261025-Q56226: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261025-Q140632219, kh-20261025-Q16202406-update, kh-20261025-Q213380-update, kh-20261025-Q10218-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q19867977, kh-20261025-Q56226",
-  "skip kh-20261025-Q140632219: gate: only 0 of 4 photos on screen are new to the last 96 hours of Shorts (want 2)",
-  "skip kh-20261025-Q19867977: gate: no draft passed the fact checks: beats 3,4,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: वोलोदिमीर जेलेंस्की, एलन मस्क. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
-  "later kh-20261025-Q432473: this run already wrote 2 scripts",
-  "skip kh-20261025-Q16202406-update: gate: no draft passed the fact checks: unsupported: टाइगर श्रॉफ पर हमले की जांच में पुलिस को एक बड़ी कामयाबी मिली है।; unsupported: टाइगर श्रॉफ की सुरक्षा के लिए सुरक्षा घेरा कड़ा कर दिया गया है।; unsupported: पुलिस की टीमें अन्य राज्यों में छापेमारी जारी रख रही हैं।",
-  "published cmp-20261025-IND-PAK-forces: https://www.youtube.com/shorts/JUqMu14yADQ",
-  "channel: about: done; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 102 today)"
- ],
- "published": {
-  "video_id": "JUqMu14yADQ",
-  "url": "https://www.youtube.com/shorts/JUqMu14yADQ",
-  "youtube_title": "भारत बनाम पाकिस्तान: सेना में भारत 3.3 गुना, अर्थव्यवस्था में भारत 9.7 गुना #shorts",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141760142; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q19867977, kh-20261025-Q56226",
+  "channel: about, playlists done; nothing left to do"
+ ]
 }
