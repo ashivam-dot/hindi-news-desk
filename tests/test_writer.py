@@ -385,6 +385,8 @@ def test_length_repair_can_select_fewer_facts_but_still_faces_fact_checks(tmp_pa
                     assert "change nothing else" not in feedback
                 else:
                     assert "unsupported:" in feedback and "52 words TOTAL" not in feedback
+                    assert "WHOLE report within 45 to 58 spoken words" in feedback
+                    assert "never remove a necessary qualification" in feedback
             return super().chat(messages, schema, **kw)
 
     given = draft()
@@ -763,7 +765,20 @@ def test_a_hard_picture_failure_is_never_retained_for_release(tmp_path, monkeypa
 
 
 def test_actual_photo_mapping_can_rewrite_within_existing_attempts(tmp_path):
-    pen = FakePen([[], []])
+    class PictureRepairPen(FakePen):
+        repairs = 0
+
+        def chat(self, messages, schema=None, **kw):
+            if schema is writer.SCHEMA and any(m["role"] == "assistant" for m in messages):
+                self.repairs += 1
+                feedback = messages[-1]["content"]
+                assert "text cards: 4 of 6 beats" in feedback
+                assert "WHOLE report within 45 to 58 spoken words" in feedback
+                assert "remove secondary background or repetition" in feedback
+                assert "never remove a necessary qualification" in feedback
+            return super().chat(messages, schema, **kw)
+
+    pen = PictureRepairPen([[], []])
     mapped = []
 
     def pictures(d):
@@ -773,6 +788,7 @@ def test_actual_photo_mapping_can_rewrite_within_existing_attempts(tmp_path):
     out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
                                log_path=tmp_path / "log.json", pen=pen, picture_check=pictures)
     assert len(mapped) == 2 and mapped[-1] == out
+    assert pen.repairs == 1
     assert log[0]["problems"] == ["text cards: 4 of 6 beats (at most 2)"]
     assert log[0]["fact_check"]["verdict"]["unsupported"] == []
 

@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-25T15:09:30.878471+00:00",
+  "source_sha_before": "2756a554542ab45ad71fcd5df541504f9fd33200",
+  "production_run": 40202763386,
+  "measured_failure": {
+    "words_by_attempt": [
+      84,
+      92,
+      61,
+      71
+    ],
+    "third_attempt": [
+      "picture/subject matching failure"
+    ],
+    "final_attempt": [
+      "71 spoken words exceeds the unchanged hard maximum of 62"
+    ]
+  },
+  "change": "Every non-length repair retains the requested whole-report word budget and makes room for necessary subject names by omitting secondary background or repetition. Overlong drafts retain the existing stronger compression prompt.",
+  "unchanged": [
+    "DRAFTS=4",
+    "hard length bounds 40–62; request45–58",
+    "all factual, attribution, picture, date, licensing, retry and quota gates"
+  ],
+  "release_approval": false
+}

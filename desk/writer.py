@@ -1132,7 +1132,12 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 pen.reject()
             # Keep the evidence, latest draft and exact feedback; four copies of a source packet and obsolete
             # drafts can exhaust the local model's context before its final repair.
-            feedback = "Rewrite the whole JSON. Fix these problems and change nothing else that is supported."
+            feedback = (
+                "Rewrite the whole JSON. Fix these problems while preserving the essential supported facts "
+                "and attribution. Keep the WHOLE report within " + WORDS_ASKED + " spoken words, aiming for 52, "
+                "even when the requested fix concerns pictures or subject names. If adding a necessary name, "
+                "remove secondary background or repetition to make room; never remove a necessary "
+                "qualification or invent a claim. Count words in say only, not captions or labels.")
             if sum(len(b.get("say", "").split()) for b in draft.get("beats", [])) > MAX_WORDS:
                 # Run 40188532731 stayed at 80-84 words through three rewrites. Asking to
                 # preserve everything conflicted with cutting a third of a short bulletin.
