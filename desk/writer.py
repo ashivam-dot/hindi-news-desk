@@ -1053,6 +1053,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
         for attempt in range(DRAFTS):
             ignored = []
             retained_from = None
+            fact_check = None
             if not (start and attempt == 0) and attempt == (1 if start else 0):
                 DRAFTED[0] += 1  # a script the model wrote: cli counts it toward MAX_WRITTEN however it ends
             draft = json.loads(json.dumps(start)) if start and attempt == 0 else \
@@ -1077,8 +1078,13 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 problems += advisory
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
-                verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
-                                                   doubtful, reports), CHECK_SCHEMA, temperature=0.0, max_tokens=800)
+                check_messages = _check_messages(script, draft.get("names", []), facts, source_en, source_hi,
+                                                 doubtful, reports)
+                verdict = pen.chat(check_messages, CHECK_SCHEMA, temperature=0.0, max_tokens=800)
+                # A rejected draft alone cannot establish whether a fact was absent, mistranslated
+                # or cut from the source packet. Retain the exact public evidence and verdict in
+                # the existing diagnostic artifact; never retry or override the factual decision.
+                fact_check = {"messages": check_messages, "verdict": verdict}
                 items = [str(u).strip() for u in verdict.get("unsupported", []) if str(u).strip()]
                 ignored = [u for u in items if not hindi.quotes(u, script_text(draft))
                            or unlisted_but_sourced(u, ground_en)]
@@ -1096,7 +1102,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                         log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")
                 return draft, log, pen.used
             log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used),
-                        "ignored": ignored, **({"removed_unused_names": removed_names} if removed_names else {}),
+                        "ignored": ignored, **({"fact_check": fact_check} if fact_check else {}),
+                        **({"removed_unused_names": removed_names} if removed_names else {}),
                         **({"retained_from_attempt": retained_from} if retained_from is not None else {})})
             if log_path:
                 log_path.parent.mkdir(parents=True, exist_ok=True)

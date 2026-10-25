@@ -308,6 +308,31 @@ def test_a_reviewed_draft_is_checked_first_and_never_rewritten_when_it_passes(tm
     assert out["beats"] == given["beats"] and log == []
 
 
+def test_failed_fact_check_preserves_the_exact_public_evidence_and_verdict(tmp_path):
+    import json
+
+    class RecordingPen(FakePen):
+        checks = []
+
+        def chat(self, messages, schema=None, **kw):
+            if schema is writer.CHECK_SCHEMA:
+                self.checks.append(copy.deepcopy(messages))
+            return super().chat(messages, schema, **kw)
+
+    item = "unbacked claim: रमेश प्रसाद वर्मा नहीं रहे"
+    pen = RecordingPen([[item]] * writer.DRAFTS)
+    path = tmp_path / "writer_log.json"
+    with pytest.raises(ValueError, match="unsupported"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=path, pen=pen)
+    rows = json.loads(path.read_text())
+    checks = [r["fact_check"] for r in rows if "fact_check" in r]
+    assert [r["messages"] for r in checks] == pen.checks
+    assert all(r["verdict"] == {"unsupported": [item]} for r in checks)
+    assert all("unsupported:" in "; ".join(r["problems"]) for r in rows)
+    assert len(rows) == writer.DRAFTS
+
+
 @pytest.mark.parametrize("unsupported", [False, True])
 def test_length_repair_can_select_fewer_facts_but_still_faces_fact_checks(tmp_path, unsupported):
     class CompressionPen(FakePen):
