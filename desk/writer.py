@@ -671,8 +671,15 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     says = " ".join(b.get("say", "") for b in beats)
     words = len(says.split())
     if not MIN_WORDS <= words <= MAX_WORDS:
-        problems.append(f"the script has {words} words; it must have {WORDS_ASKED}")
-    problems += [f"beat {i + 1} has {n} words; keep each beat to 8 to 14 words (make it two beats)"
+        aim = 52  # Middle of the existing requested range, not a new acceptance bound.
+        change = f"cut about {words - aim}" if words > MAX_WORDS else f"add about {aim - words}"
+        counts = ", ".join(str(len(b.get("say", "").split())) for b in beats)
+        problems.append(f"the script has {words} words; it must have {WORDS_ASKED}; {change} spoken words "
+                        f"to aim for {aim} in the whole report. Current beat word counts: {counts}. "
+                        "Keep source attribution and the essential supported facts; remove repetition and "
+                        "compress wording, never invent facts or add filler")
+    problems += [f"beat {i + 1} has {n} words; shorten it to about 8 to 9 words, at most {MAX_BEAT_WORDS}, "
+                 "while retaining attribution. Do not add beats to evade the whole-report word budget"
                  for i, b in enumerate(beats) if (n := len(b.get("say", "").split())) > MAX_BEAT_WORDS]
     problems += [f"beat {i + 1} ends on filler ({m.group(0)}); end on a fact of the news" for i, b in enumerate(beats)
                  if (m := VAGUE.search(b.get("say", "")))]
