@@ -291,7 +291,7 @@ def test_explainer_reuses_the_exact_checked_mapping(monkeypatch):
         return s
 
     monkeypatch.setattr(writer, "_short", mapped)
-    monkeypatch.setattr(gate, "said_is_shown", lambda s: ["text cards: too many"] if len(created) == 1 else [])
+    monkeypatch.setattr(gate, "check", lambda s: ["text cards: too many"] if len(created) == 1 else [])
     log = [{"problems": ["text cards: too many"]}]
 
     def write(*a, **kw):

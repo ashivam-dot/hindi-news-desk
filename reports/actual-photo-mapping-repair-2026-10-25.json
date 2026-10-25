@@ -20,7 +20,7 @@
   ],
   "changes": [
     "check the sole available subject and its existing title aliases",
-    "run actual said_is_shown photo checks after factual approval and retitling within existing DRAFTS",
+    "run the unchanged full prepare gate, including actual photo mapping, after factual approval and retitling within existing DRAFTS",
     "reuse the exact accepted Short and mapping; preserve final prepare/render/publish checks"
   ],
   "unchanged": [
@@ -34,7 +34,10 @@
   "tests": {
     "focused_passed": 166,
     "network": "offline fixtures only",
-    "live_result": "pending cloud CI and live run"
+    "live_result": "pending cloud CI and live run",
+    "prior_full_cloud_passed": 918,
+    "prior_full_cloud_run": 40201213349,
+    "refinement": "Full prepare gate in place of photo subset; 166 focused tests, new cloud CI pending"
   },
   "release_approval": false
 }

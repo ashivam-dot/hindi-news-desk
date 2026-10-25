@@ -2289,7 +2289,10 @@ def build_explainer(cand: dict) -> Short:
             short = make_short(draft, [], [])
         except ValueError as exc:
             return [str(exc)]
-        problems = gate.said_is_shown(short)
+        # Use the same final prepare gate, including distinct-photo supply, licences,
+        # source attribution and the final narration/title. Never accept a draft here
+        # that prepare would immediately refuse outside the rewrite loop.
+        problems = gate.check(short)
         if not problems:
             prepared.append(short)
         return problems
