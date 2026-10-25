@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T07:59:53+00:00",
+ "at": "2026-10-25T08:37:10+00:00",
  "trending": [
   {
    "id": "kh-20261025-Q19867977",
@@ -11,30 +11,37 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Ukraine says Starlink is back to normal after disruptions",
+   "story": "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
    "story_keys": [
     "back",
+    "connection",
     "disruption",
-    "normal"
+    "normal",
+    "restored",
+    "satellite"
    ],
    "date": "2026-10-24",
-   "news_at": "2026-10-25T01:22:18+00:00",
+   "news_at": "2026-10-25T08:15:24+00:00",
    "owners": [
     "NPR",
     "Deutsche Welle",
+    "Guardian Media Group",
     "HT Media",
+    "BBC",
     "NDTV",
     "India Today Group"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
     "Ukraine says Starlink is back to normal after disruptions",
     "Ukraine: Starlink satellite speeds restored to normal",
-    "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
-    "'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+    "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+    "'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "hindi_headlines": [
     "'लोगों को मारने के लिए यूक्रेन ने किया स्टारलिंक का इस्तेमाल', खुद एलन मस्क ने लगाए आरोप",
@@ -46,6 +53,16 @@
    "india_link": true,
    "label_hi": "स्टारलिंक",
    "reports": [
+    {
+     "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+     "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-25T08:15:24+00:00"
+    },
     {
      "title": "Ukraine: Starlink satellite speeds restored to normal",
      "url": "https://www.dw.com/en/ukraine-starlink-satellite-speeds-restored-to-normal/a-79752155?maca=en-rss-en-all-1573-rdf",
@@ -67,6 +84,16 @@
      "at": "2026-10-24T17:54:25+00:00"
     },
     {
+     "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+     "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-24T21:25:58+00:00"
+    },
+    {
      "title": "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
      "url": "https://www.livemint.com/news/world/ukraine-says-starshield-back-to-normal-after-week-long-disruption-elon-musk-accuses-kyiv-of-violating-starlink-s-terms-11792890450707.html",
      "outlet": "Mint",
@@ -80,17 +107,19 @@
    "via": [
     "outlet:NPR",
     "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
     "outlet:HT Media",
+    "outlet:BBC",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "google-news:'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "top": {
-    "IN": 5
+    "IN": 12
    },
-   "top_score": 0.8,
+   "top_score": 0.45,
    "top_headlines": [
-    "Ukraine says Starshield back to normal, Musk says Kyiv violated terms"
+    "'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "hindi_owners": [
     "NDTV",
@@ -182,6 +211,65 @@
    "lane": "sensitive"
   },
   {
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-10-25T08:16:18+00:00",
+   "headlines": [
+    "Houthis say they targeted Saudi oil sites; attacks reported in Aden",
+    "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
+    "India warns nationals in Saudi Arabia against filming missile interceptions"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
+   "via": [
+    "google-news:Houthis say they targeted Saudi oil sites; attacks reported in Aden",
+    "google-news:Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
+    "google-news:India warns nationals in Saudi Arabia against filming missile interceptions",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "India warns nationals in Saudi Arabia against filming missile interceptions",
+     "url": "https://www.indiatoday.in/world/story/india-saudi-arabia-advisory-missile-drone-interceptions-flight-suspensions-ptag-3024601-2026-10-25?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T08:16:18+00:00"
+    }
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "Houthis say they targeted Saudi oil sites; attacks reported in Aden",
+    "Yemen's Houthis renew warning against using Riyadh airport"
+   ],
+   "hindi_owners": []
+  },
+  {
    "qid": "Q141760142",
    "title": "2026 Kolkata Durga Puja crowd crush",
    "fame": 125000,
@@ -217,147 +305,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
-  },
-  {
-   "id": "nw-20261024-tiger-shroff-attack",
-   "qid": null,
-   "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-   "name": "Tiger Shroff",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-24",
-   "news_at": "2026-10-25T06:33:50+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff attack handlers relayed TV news updates to shooters: Report",
-    "Tiger Shroff Firing Case: Handlers Alerted Shooters After Seeing Faces On TV, Say Police",
-    "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-    "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-    "Tiger Shroff's shooters received real-time updates, instructions based on media coverage"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-     "url": "https://www.ndtv.com/india-news/tiger-shroffs-shooters-planned-to-flee-to-delhi-via-surat-but-missed-bus-12232563#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T06:33:50+00:00"
-    },
-    {
-     "title": "HT Morning Brief October 25: EC keeps SIR software under wraps; pistols used in Shroff firing found",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-25-ec-keeps-sir-software-under-wraps-pistols-used-in-shroff-firing-found-101792898097293.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T03:25:32+00:00"
-    },
-    {
-     "title": "Tiger Shroff firing: Turkish, desi pistols recovered in Surat, youth held in MP",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/tiger-shroff-firing-turkish-desi-pistols-recovered-in-surat-youth-held-in-mp/articleshow/135181552.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T02:05:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Shooting: 11th Arrest With Haryana Engineer Held In Indore After 2 Firearms Found In Surat",
-     "url": "https://www.news18.com/india/tiger-shroff-shooting-11th-arrest-with-haryana-engineer-held-in-indore-after-2-firearms-found-in-surat-ws-lrt-10396489.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T01:17:39+00:00"
-    },
-    {
-     "title": "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
-     "url": "https://www.hindustantimes.com/india-news/another-accused-in-tiger-shroff-shooting-case-arrested-from-indore-supplied-weapons-used-in-attack-101792848024128.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T14:31:12+00:00"
-    },
-    {
-     "title": "Tiger Shroff's shooters received real-time updates, instructions based on media coverage",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroffs-shooters-received-real-time-updates-instructions-based-on-media-coverage-101792832941919.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T10:41:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-     "url": "https://www.news18.com/videos/breaking-news/tiger-shroff-firing-probe-shooters-were-in-constant-touch-with-handlers-bishnoi-gang-news18-10395835.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T07:52:21+00:00"
-    },
-    {
-     "title": "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroff-shooting-mumbai-police-accused-weapons-lawrence-bishnoi-court-101792821469464.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T06:19:57+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 12,
-    "IN-nation": 20,
-    "IN-hi-nation": 8
-   },
-   "top_score": 0.66,
-   "top_headlines": [
-    "टाइगर श्रॉफ फायरिंग केस, सूरत-इंदौर से जुड़े तार, मुंबई क्राइम ब्रांच के हाथ लगा बड़ा सुराग",
-    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
-    "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack | India News"
-   ],
-   "hindi_owners": [
-    "NDTV",
-    "India Today Group",
-    "TV9 Network"
-   ]
   },
   {
    "id": "nw-20261025-andhra-cyclone",
@@ -463,12 +410,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Amar Ujala"
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "India News Highlights, 24 October 2026: Farooq Abdullah says Pakistan kept Kashmir issue alive, BJP hits back"
    ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
   },
@@ -803,48 +752,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q141695384",
-   "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-10-25T06:33:45+00:00",
-   "headlines": [
-    "Houthis say they targeted Saudi oil sites; attacks reported in Aden",
-    "Houthis launch attacks on Saudi Arabia and Yemen’s Aden"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
-   "via": [
-    "google-news:Houthis say they targeted Saudi oil sites; attacks reported in Aden",
-    "google-news:Houthis launch attacks on Saudi Arabia and Yemen’s Aden"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141695384",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-10",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
-    "Yemen's Houthis renew warning against using Riyadh airport"
-   ],
-   "hindi_owners": []
   },
   {
    "qid": "Q1699148",
@@ -1347,12 +1254,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Amar Ujala"
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "India News Highlights, 24 October 2026: Farooq Abdullah says Pakistan kept Kashmir issue alive, BJP hits back"
    ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
   },
@@ -1793,6 +1702,103 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261025-Q213380-update",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court of India",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "India warns nationals in Saudi Arabia against filming missile interceptions",
+   "story_keys": [
+    "access",
+    "against",
+    "airfare",
+    "asks",
+    "bans",
+    "blanket",
+    "centre",
+    "children",
+    "disproportionate",
+    "fundamental",
+    "internet",
+    "order",
+    "plea",
+    "published",
+    "right",
+    "rule",
+    "tell"
+   ],
+   "date": "2026-10-25",
+   "news_at": "2026-10-25T08:16:18+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India warns nationals in Saudi Arabia against filming missile interceptions",
+    "Diwali Meets Chuseok As India, South Korea Celebrate Cultural Ties In Delhi; K-Pop Takes Centre Stage",
+    "India condemns ‘heinous’ attack that killed 8 in Jordan church, reaffirms ‘fight against terrorism’"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
+   "reports": [
+    {
+     "title": "India warns nationals in Saudi Arabia against filming missile interceptions",
+     "url": "https://www.indiatoday.in/world/story/india-saudi-arabia-advisory-missile-drone-interceptions-flight-suspensions-ptag-3024601-2026-10-25?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T08:16:18+00:00"
+    },
+    {
+     "title": "Diwali Meets Chuseok As India, South Korea Celebrate Cultural Ties In Delhi; K-Pop Takes Centre Stage",
+     "url": "https://www.news18.com/india/diwali-meets-chuseok-as-india-south-korea-celebrate-cultural-ties-in-delhi-k-pop-takes-centre-stage-ws-l-10396342.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T15:57:45+00:00"
+    },
+    {
+     "title": "India condemns ‘heinous’ attack that killed 8 in Jordan church, reaffirms ‘fight against terrorism’",
+     "url": "https://www.hindustantimes.com/india-news/india-condemns-heinous-attack-that-killed-7-in-jordan-church-reaffirms-fight-against-terrorism-101792836452822.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T10:18:05+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q213380"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261017-Q213380-p2",
+   "earlier": [
+    "सॉलिसिटर जनरल तुषार मेहता ने कहा, 2 सप्ताह में आएंगे किराया नियम",
+    "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना",
+    "जस्टिस जेबी पारदीवाला बोले, सोशल मीडिया से हटे बाल शोषण सामग्री"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 17 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
    "id": "kh-20261025-Q10218-update",
    "qid": "Q10218",
    "title": "Rahul Gandhi",
@@ -2000,97 +2006,12 @@
    "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 24 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261025-Q213380-update",
-   "qid": "Q213380",
-   "title": "Supreme Court of India",
-   "name": "Supreme Court of India",
-   "phrase": "Supreme Court of India",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Diwali Meets Chuseok As India, South Korea Celebrate Cultural Ties In Delhi; K-Pop Takes Centre Stage",
-   "story_keys": [
-    "access",
-    "against",
-    "airfare",
-    "asks",
-    "bans",
-    "blanket",
-    "centre",
-    "children",
-    "disproportionate",
-    "fundamental",
-    "internet",
-    "order",
-    "plea",
-    "published",
-    "right",
-    "rule",
-    "tell"
-   ],
-   "date": "2026-10-25",
-   "news_at": "2026-10-24T15:57:45+00:00",
-   "owners": [
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Diwali Meets Chuseok As India, South Korea Celebrate Cultural Ties In Delhi; K-Pop Takes Centre Stage",
-    "India condemns ‘heinous’ attack that killed 8 in Jordan church, reaffirms ‘fight against terrorism’"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
-   "reports": [
-    {
-     "title": "Diwali Meets Chuseok As India, South Korea Celebrate Cultural Ties In Delhi; K-Pop Takes Centre Stage",
-     "url": "https://www.news18.com/india/diwali-meets-chuseok-as-india-south-korea-celebrate-cultural-ties-in-delhi-k-pop-takes-centre-stage-ws-l-10396342.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T15:57:45+00:00"
-    },
-    {
-     "title": "India condemns ‘heinous’ attack that killed 8 in Jordan church, reaffirms ‘fight against terrorism’",
-     "url": "https://www.hindustantimes.com/india-news/india-condemns-heinous-attack-that-killed-7-in-jordan-church-reaffirms-fight-against-terrorism-101792836452822.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T10:18:05+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q213380"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261017-Q213380-p2",
-   "earlier": [
-    "सॉलिसिटर जनरल तुषार मेहता ने कहा, 2 सप्ताह में आएंगे किराया नियम",
-    "जस्टिस जेबी पारदीवाला की पीठ ने इंटरनेट को मौलिक अधिकार माना",
-    "जस्टिस जेबी पारदीवाला बोले, सोशल मीडिया से हटे बाल शोषण सामग्री"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 17 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "sensitive"
   }
  ],
  "notes": [
   "revisit tiger-shroff-2026-10-20: already revisited today; revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261025-Q163225-update: 2 owners' new reports on Sonia Gandhi (502 views before); revisit Q312781 (321 views): 0 owners reported new news on Imran",
-  "outlets: 1168 headlines from 30 feeds (18 owners), 9 matched to articles, 6 candidates with 2+ owners, 3 nw- stories (on): nw-20261024-tiger-shroff-attack, nw-20261025-andhra-cyclone, nw-20261025-florida-attack",
-  "explainers: 2 kh- stories (on): kh-20261025-Q19867977, kh-20261025-Q6971919; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Air Force Day / Air Force Day: no Wikipedia article that can be its centre",
+  "outlets: 1178 headlines from 30 feeds (18 owners), 11 matched to articles, 5 candidates with 2+ owners, 2 nw- stories (on): nw-20261025-andhra-cyclone, nw-20261025-florida-attack",
+  "explainers: 2 kh- stories (on): kh-20261025-Q19867977, kh-20261025-Q6971919; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Andhra Pradesh: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2098,154 +2019,13 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1168,
+  "headlines": 1178,
   "feeds": 30,
   "owners": 18,
-  "matched": 9,
-  "corroborated": 6
+  "matched": 11,
+  "corroborated": 5
  },
  "emerging": [
-  {
-   "id": "nw-20261024-tiger-shroff-attack",
-   "qid": null,
-   "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-   "name": "Tiger Shroff",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-24",
-   "news_at": "2026-10-25T06:33:50+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff attack handlers relayed TV news updates to shooters: Report",
-    "Tiger Shroff Firing Case: Handlers Alerted Shooters After Seeing Faces On TV, Say Police",
-    "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-    "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-    "Tiger Shroff's shooters received real-time updates, instructions based on media coverage"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-     "url": "https://www.ndtv.com/india-news/tiger-shroffs-shooters-planned-to-flee-to-delhi-via-surat-but-missed-bus-12232563#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T06:33:50+00:00"
-    },
-    {
-     "title": "HT Morning Brief October 25: EC keeps SIR software under wraps; pistols used in Shroff firing found",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-25-ec-keeps-sir-software-under-wraps-pistols-used-in-shroff-firing-found-101792898097293.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T03:25:32+00:00"
-    },
-    {
-     "title": "Tiger Shroff firing: Turkish, desi pistols recovered in Surat, youth held in MP",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/tiger-shroff-firing-turkish-desi-pistols-recovered-in-surat-youth-held-in-mp/articleshow/135181552.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T02:05:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Shooting: 11th Arrest With Haryana Engineer Held In Indore After 2 Firearms Found In Surat",
-     "url": "https://www.news18.com/india/tiger-shroff-shooting-11th-arrest-with-haryana-engineer-held-in-indore-after-2-firearms-found-in-surat-ws-lrt-10396489.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T01:17:39+00:00"
-    },
-    {
-     "title": "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
-     "url": "https://www.hindustantimes.com/india-news/another-accused-in-tiger-shroff-shooting-case-arrested-from-indore-supplied-weapons-used-in-attack-101792848024128.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T14:31:12+00:00"
-    },
-    {
-     "title": "Tiger Shroff's shooters received real-time updates, instructions based on media coverage",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroffs-shooters-received-real-time-updates-instructions-based-on-media-coverage-101792832941919.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T10:41:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-     "url": "https://www.news18.com/videos/breaking-news/tiger-shroff-firing-probe-shooters-were-in-constant-touch-with-handlers-bishnoi-gang-news18-10395835.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T07:52:21+00:00"
-    },
-    {
-     "title": "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroff-shooting-mumbai-police-accused-weapons-lawrence-bishnoi-court-101792821469464.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T06:19:57+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 12,
-    "IN-nation": 20,
-    "IN-hi-nation": 8
-   },
-   "top_score": 0.66,
-   "top_headlines": [
-    "टाइगर श्रॉफ फायरिंग केस, सूरत-इंदौर से जुड़े तार, मुंबई क्राइम ब्रांच के हाथ लगा बड़ा सुराग",
-    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
-    "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack | India News"
-   ],
-   "hindi_owners": [
-    "NDTV",
-    "India Today Group",
-    "TV9 Network"
-   ]
-  },
   {
    "id": "nw-20261025-andhra-cyclone",
    "qid": null,
@@ -2350,12 +2130,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Amar Ujala"
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "India News Highlights, 24 October 2026: Farooq Abdullah says Pakistan kept Kashmir issue alive, BJP hits back"
    ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
   },
@@ -2457,30 +2239,37 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Ukraine says Starlink is back to normal after disruptions",
+   "story": "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
    "story_keys": [
     "back",
+    "connection",
     "disruption",
-    "normal"
+    "normal",
+    "restored",
+    "satellite"
    ],
    "date": "2026-10-24",
-   "news_at": "2026-10-25T01:22:18+00:00",
+   "news_at": "2026-10-25T08:15:24+00:00",
    "owners": [
     "NPR",
     "Deutsche Welle",
+    "Guardian Media Group",
     "HT Media",
+    "BBC",
     "NDTV",
     "India Today Group"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
     "Ukraine says Starlink is back to normal after disruptions",
     "Ukraine: Starlink satellite speeds restored to normal",
-    "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
-    "'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+    "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+    "'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "hindi_headlines": [
     "'लोगों को मारने के लिए यूक्रेन ने किया स्टारलिंक का इस्तेमाल', खुद एलन मस्क ने लगाए आरोप",
@@ -2492,6 +2281,16 @@
    "india_link": true,
    "label_hi": "स्टारलिंक",
    "reports": [
+    {
+     "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+     "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-25T08:15:24+00:00"
+    },
     {
      "title": "Ukraine: Starlink satellite speeds restored to normal",
      "url": "https://www.dw.com/en/ukraine-starlink-satellite-speeds-restored-to-normal/a-79752155?maca=en-rss-en-all-1573-rdf",
@@ -2513,6 +2312,16 @@
      "at": "2026-10-24T17:54:25+00:00"
     },
     {
+     "title": "Ukraine’s military says Starlink satellite connection stable after recent restrictions",
+     "url": "https://www.theguardian.com/world/2026/oct/24/ukraine-zelenskyy-military-starlink-satellite-connection-stable-after-restrictions",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-24T21:25:58+00:00"
+    },
+    {
      "title": "Ukraine says Starshield back to normal after week-long disruption, Elon Musk accuses Kyiv of violating Starlink’s terms",
      "url": "https://www.livemint.com/news/world/ukraine-says-starshield-back-to-normal-after-week-long-disruption-elon-musk-accuses-kyiv-of-violating-starlink-s-terms-11792890450707.html",
      "outlet": "Mint",
@@ -2526,17 +2335,19 @@
    "via": [
     "outlet:NPR",
     "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
     "outlet:HT Media",
+    "outlet:BBC",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "google-news:'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "top": {
-    "IN": 5
+    "IN": 12
    },
-   "top_score": 0.8,
+   "top_score": 0.45,
    "top_headlines": [
-    "Ukraine says Starshield back to normal, Musk says Kyiv violated terms"
+    "'Ukraine Violated Starlink, Used It To Kill People': Elon Musk As Speed Restores"
    ],
    "hindi_owners": [
     "NDTV",
