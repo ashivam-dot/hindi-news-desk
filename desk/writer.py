@@ -1035,29 +1035,46 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     pen = pen or Pen()
     if isinstance(pen, Pen):
         pen.rejections.clear()  # one difficult story must not disable a provider for every later story
+    retained = None
+
+    def hard_checks(candidate, attempt):
+        problems, doubtful = validate(candidate, photos, subject, ground_en, ground_hi,
+                                      spellings(candidate, hi_names, looked), banned_names or [],
+                                      kind, agreed_toll, angle, reports, hurt_ok)
+        if not today_ok:
+            problems += not_today(script_text(candidate))
+        if names_ok:
+            problems += off_case(candidate, names_ok, never)
+        if india is not None and (attempt < DRAFTS - 1 or config.MATCHER != "legacy"):
+            problems += anchorless(candidate, subject, india, shows, near, kind)
+        return problems, doubtful
+
     try:
         for attempt in range(DRAFTS):
             ignored = []
+            retained_from = None
             if not (start and attempt == 0) and attempt == (1 if start else 0):
                 DRAFTED[0] += 1  # a script the model wrote: cli counts it toward MAX_WRITTEN however it ends
             draft = json.loads(json.dumps(start)) if start and attempt == 0 else \
                 pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
             removed_names = drop_unused_names(draft)
-            problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
-                                          spellings(draft, hi_names, looked), banned_names or [],
-                                          kind, agreed_toll, angle, reports, hurt_ok)
-            if not today_ok:
-                problems += not_today(script_text(draft))
-            if names_ok:
-                problems += off_case(draft, names_ok, never)
+            problems, doubtful = hard_checks(draft, attempt)
+            if attempt == DRAFTS - 1 and problems and retained:
+                # Style advice is already optional on the final attempt. If its rewrite regressed,
+                # recheck the earlier candidate against those same final hard gates and fact checker.
+                log.append({"attempt": attempt + 1, "problems": problems, "draft": draft,
+                            "models": list(pen.used), "ignored": [], "retained_candidate_available": True})
+                draft, retained_from = json.loads(json.dumps(retained[0])), retained[1]
+                removed_names = drop_unused_names(draft)
+                problems, doubtful = hard_checks(draft, attempt)
             if attempt < DRAFTS - 1:
-                problems += (monotone(draft) + bookish(draft) + value_beat(draft, kind) + advice(draft)
-                             + misread(draft, spellings(draft, hi_names, looked), ground_hi, reports))
-            # On the last draft too: a Short whose beats will be cards or maps is refused after its render otherwise,
-            # and that costs a render and a writing slot (review round 1, F10).
-            # The rollback (DESK_MATCHER=legacy) as main: no last-draft run.
-            if india is not None and (attempt < DRAFTS - 1 or config.MATCHER != "legacy"):
-                problems += anchorless(draft, subject, india, shows, near, kind)
+                ending_advice = value_beat(draft, kind)
+                other_advisory = (monotone(draft) + bookish(draft) + advice(draft)
+                                  + misread(draft, spellings(draft, hi_names, looked), ground_hi, reports))
+                advisory = other_advisory + ending_advice
+                if not problems and ending_advice and not other_advisory:
+                    retained = (json.loads(json.dumps(draft)), attempt + 1)
+                problems += advisory
             if not problems:
                 script = "\n".join(b["say"] for b in draft["beats"])
                 verdict = pen.chat(_check_messages(script, draft.get("names", []), facts, source_en, source_hi,
@@ -1069,16 +1086,18 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not problems:
                 draft["title"], draft["titles"] = retitle(pen, draft, subject, ground_en, kind, agreed_toll,
                                                           reports, title_hints, earlier)
-                if removed_names:
+                if removed_names or retained_from is not None:
                     log.append({"attempt": attempt + 1, "problems": [], "draft": draft,
                                 "models": list(pen.used), "ignored": [], "accepted": True,
-                                "removed_unused_names": removed_names})
+                                **({"removed_unused_names": removed_names} if removed_names else {}),
+                                **({"retained_from_attempt": retained_from} if retained_from is not None else {})})
                     if log_path:
                         log_path.parent.mkdir(parents=True, exist_ok=True)
                         log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")
                 return draft, log, pen.used
             log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used),
-                        "ignored": ignored, **({"removed_unused_names": removed_names} if removed_names else {})})
+                        "ignored": ignored, **({"removed_unused_names": removed_names} if removed_names else {}),
+                        **({"retained_from_attempt": retained_from} if retained_from is not None else {})})
             if log_path:
                 log_path.parent.mkdir(parents=True, exist_ok=True)
                 log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")

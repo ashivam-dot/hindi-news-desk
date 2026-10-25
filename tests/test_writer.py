@@ -608,6 +608,75 @@ def test_a_value_beat_is_advisory_on_the_last_draft(tmp_path, monkeypatch):
     assert len(log) == writer.DRAFTS - 1 and out["beats"] == draft()["beats"]
 
 
+class RegressingStylePen(FakePen):
+    def __init__(self, unsupported=()):
+        super().__init__([list(unsupported)])
+        self.drafts = 0
+        self.fact_checks = 0
+
+    def chat(self, messages, schema=None, **kw):
+        if schema is writer.SCHEMA:
+            self.drafts += 1
+            value = draft()
+            if self.drafts == writer.DRAFTS:
+                value["beats"][0]["say"] *= 10
+            return value
+        if schema is writer.CHECK_SCHEMA:
+            self.fact_checks += 1
+        return super().chat(messages, schema, **kw)
+
+
+def test_optional_style_rewrite_cannot_discard_a_candidate_that_passes_final_checks(tmp_path, monkeypatch):
+    # Actual run 40186424703: attempt 3 only lacked an optional value ending;
+    # attempt 4 expanded back to 65 words and introduced unshowable beats.
+    monkeypatch.setattr(writer, "value_beat", lambda *a: ["optional value ending"])
+    pictures = []
+    monkeypatch.setattr(writer, "anchorless", lambda d, *a: pictures.append(d) or [])
+    pen = RegressingStylePen()
+    out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                               log_path=tmp_path / "log.json", pen=pen, india=True)
+    assert out["beats"] == draft()["beats"]
+    assert pen.drafts == writer.DRAFTS and pen.fact_checks == 1
+    assert len(pictures) == writer.DRAFTS + 1  # retained candidate faces the final picture check again
+    assert log[-1]["accepted"] and log[-1]["retained_from_attempt"] == writer.DRAFTS - 1
+    assert log[-2]["retained_candidate_available"]
+    assert any("script has" in p for p in log[-2]["problems"])
+    assert check(out) == ([], [])
+
+
+def test_retained_candidate_still_requires_independent_fact_check(tmp_path, monkeypatch):
+    monkeypatch.setattr(writer, "value_beat", lambda *a: ["optional value ending"])
+    pen = RegressingStylePen(["unbacked claim: रमेश प्रसाद वर्मा नहीं रहे"])
+    with pytest.raises(ValueError, match="unsupported"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=tmp_path / "log.json", pen=pen)
+    assert pen.drafts == writer.DRAFTS and pen.fact_checks == 1
+
+
+def test_a_hard_picture_failure_is_never_retained_for_release(tmp_path, monkeypatch):
+    monkeypatch.setattr(writer, "value_beat", lambda *a: ["optional value ending"])
+    monkeypatch.setattr(writer, "anchorless", lambda *a: ["pictures: required subject is not shown"])
+    pen = RegressingStylePen()
+    with pytest.raises(ValueError, match="no draft passed"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=tmp_path / "log.json", pen=pen, india=True)
+    assert pen.drafts == writer.DRAFTS and pen.fact_checks == 0
+    import json
+    log = json.loads((tmp_path / "log.json").read_text())
+    assert all("pictures: required subject is not shown" in row["problems"] for row in log)
+    assert not any(row.get("retained_candidate_available") for row in log)
+
+
+def test_retention_is_limited_to_the_optional_value_ending(tmp_path, monkeypatch):
+    monkeypatch.setattr(writer, "value_beat", lambda *a: ["optional value ending"])
+    monkeypatch.setattr(writer, "advice", lambda *a: ["gives unsolicited advice"])
+    pen = RegressingStylePen()
+    with pytest.raises(ValueError, match="no draft passed"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=tmp_path / "log.json", pen=pen)
+    assert pen.drafts == writer.DRAFTS and pen.fact_checks == 0
+
+
 def test_advice_and_expert_personas_are_never_in_the_script():
     advice = lambda say: writer.advice({"beats": [{"say": say}]})  # noqa: E731
     for say in ("विशेषज्ञों की सलाह है कि अभी सोना खरीदें।", "एक्सपर्ट्स का सुझाव है कि EMI पहले चुकाएं।",
