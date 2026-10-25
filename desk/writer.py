@@ -1599,13 +1599,15 @@ def build_incident(cand: dict) -> Short:
     _, ib, raw = wiki.infobox(article)
     ongoing = cat in trends.ONGOING
     when, date_src = stories._event_date(ent), "Wikidata date"
-    if not when and (when := stories.infobox_date(ib)):
+    if not when and (when := stories.infobox_date(ib, raw)):
         date_src = "Wikipedia infobox date"
     span = date_src == "Wikipedia infobox date" and stories.infobox_span(ib)
     if ongoing:
         when = date.fromisoformat((cand.get("news_at") or datetime.now(timezone.utc).isoformat())[:10])
     if not when:
         raise ValueError("gate: neither Wikidata nor the infobox gives a date for this event")
+    if not ongoing:
+        stories.check_lead_event_date(when, wiki.article_text(article))
     page = wiki.url(article)
     item = f"https://www.wikidata.org/wiki/{qid}" if qid else page
     # The same related items Orbitwire adds, so its photo ranking can be reproduced exactly.
