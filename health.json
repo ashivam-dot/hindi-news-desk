@@ -1,20 +1,20 @@
 {
- "at": "2026-10-25T05:12:23+00:00",
+ "at": "2026-10-25T05:56:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
   "watch: 11 candidates from 19 trending",
-  "outlets: 1146 headlines from 30 feeds (18 owners), 5 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 2 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1140 headlines from 30 feeds (18 owners), 2 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 2 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q19867977; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q141535181-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q139998119-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1771537: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q1699148: 89 h old and no longer trending live",
+  "drop wk-Q1699148: 90 h old and no longer trending live",
   "drop wk-Q5218847: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q452431: 65 h old and no longer trending live",
+  "drop wk-Q452431: 66 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141760142; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
   "channel: about, playlists done; nothing left to do"
  ]
