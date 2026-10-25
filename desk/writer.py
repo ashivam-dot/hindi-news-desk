@@ -333,6 +333,17 @@ def everyday_names(hi_names: dict[str, str]) -> dict[str, str]:
     return {en: hi for en, hi in hi_names.items() if not hard_words(hi)}
 
 
+def known_name_variant(en: str, hi: str, label: str) -> bool:
+    """A bounded same-entity abbreviation, not an exception to source grounding.
+
+    Q10230 lists BJP and both Hindi abbreviations. A formal label alone was
+    wrongly rejecting the 25 October draft's valid बीजेपी (see strategy evidence).
+    """
+    return (en.casefold() in {'bjp', 'bharatiya janata party'}
+            and hindi.norm(label) == hindi.norm('भारतीय जनता पार्टी')
+            and hindi.norm(hi) in {hindi.norm('बीजेपी'), hindi.norm('भाजपा')})
+
+
 def plain_name(name_hi: str | None, draft: dict, name: str) -> str:
     """The story's Hindi name for the description and hashtags: Wikidata's, unless formal, else the writer's."""
     if name_hi and not hard_words(name_hi):
@@ -745,7 +756,8 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
             problems.append(f"{en} ({hi}) is not in the sources" + (" (only one outlet reports it)" if reported else ""))
         label = wikidata.get(en.lower())
         newsroom = hindi.contains(ground_hi, hi) or len(gate.reported(hi, reports)) >= two
-        if label and hindi.norm(label) != hindi.norm(hi) and not hindi.contains(text, label) and not newsroom:
+        if label and hindi.norm(label) != hindi.norm(hi) and not hindi.contains(text, label) and not newsroom \
+                and not known_name_variant(en, hi, label):
             problems.append(f"write {en} as {label} (the Hindi name people know), not {hi}")
         elif not label and not hi_ok and not hindi.sounds_alike(hi, en):
             doubtful.append({"hi": hi, "en": en})

@@ -624,6 +624,25 @@ def test_a_name_the_subject_does_not_link_is_still_held_to_wikidatas_spelling(mo
     assert "write Eknath Shinde as एकनाथ शिंदे (the Hindi name people know), not एकनाथ शून्डे" in problems
 
 
+@pytest.mark.parametrize('hi', ['बीजेपी', 'भाजपा'])
+def test_verified_party_abbreviation_does_not_need_its_formal_name_in_the_script(hi):
+    d = draft()
+    d['beats'][2]['caption'] = hi
+    d['names'].append({'en': 'BJP', 'hi': hi})
+    problems, doubtful = check(d, ground_en=SOURCE_EN + ' BJP issued a statement.',
+                               hi_names=HI_NAMES | {'BJP': 'भारतीय जनता पार्टी'})
+    assert not problems and not doubtful
+    # The same abbreviation cannot introduce an organization absent from the sources.
+    problems, _ = check(d, hi_names=HI_NAMES | {'BJP': 'भारतीय जनता पार्टी'})
+    assert any('BJP' in p and 'not in the sources' in p for p in problems)
+
+
+def test_party_abbreviation_exception_cannot_accept_a_typo_or_another_entity():
+    assert not writer.known_name_variant('BJP', 'बीजेपि', 'भारतीय जनता पार्टी')
+    assert not writer.known_name_variant('Congress', 'बीजेपी', 'भारतीय जनता पार्टी')
+    assert not writer.known_name_variant('BJP', 'बीजेपी', 'भारतीय कम्युनिस्ट पार्टी')
+
+
 def test_the_hindi_source_is_dropped_when_missing():
     msgs = writer._messages(writer.DEATH_BRIEF.format(name="X", pronoun="he", object="him"), ["f"], "src",
                             "हिंदी स्रोत", PHOTOS, "एक्स", {})

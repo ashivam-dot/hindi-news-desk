@@ -1,0 +1,41 @@
+{
+  "retrieved_at_utc": "2026-10-25T18:40:00+00:00",
+  "source_url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q10230&props=labels%7Caliases&languages=en%7Chi&format=json",
+  "entity": {
+    "type": "item",
+    "id": "Q10230",
+    "labels": {
+      "en": {
+        "language": "en",
+        "value": "Bharatiya Janata Party"
+      },
+      "hi": {
+        "language": "hi",
+        "value": "भारतीय जनता पार्टी"
+      }
+    },
+    "aliases": {
+      "en": [
+        {
+          "language": "en",
+          "value": "BJP"
+        },
+        {
+          "language": "en",
+          "value": "Indian People's Party"
+        }
+      ],
+      "hi": [
+        {
+          "language": "hi",
+          "value": "भाजपा"
+        },
+        {
+          "language": "hi",
+          "value": "बीजेपी"
+        }
+      ]
+    }
+  },
+  "scope": "Name identity only; factual claims still require existing report corroboration and visual checks."
+}
