@@ -27,6 +27,11 @@ NOT_PERSON = re.compile(r"\b(wax|tussaud\w*|statue|figurine|figure at|mural|cut-
 NOT_PHOTO = re.compile(r"(\.svg$|\.gif$|\.tiff?$|\blogo|signature|autograph|\bmap\b|map\.\w+$|locator|location|\bflag\b|coat of arms|"
                        r"\bicon\b|\bseal\b|emblem|chart|graph|diagram|insignia|\bplan\b|route|blank|wordmark|"
                        r"collage|montage)", re.I)
+# Run 40160034587: generic filenames hid a Starlink data plot and a Blender render.
+# Credits/categories describe the medium too; neither belongs in the real-photo pool.
+NOT_CAMERA = re.compile(r"\b(?:rendered (?:with|using|in)|3[- ]?d render(?:ing)?s?|computer[- ]generated|"
+                        r"artist['’]s (?:impression|concept|conception)|(?:line|bar|pie) chart|"
+                        r"(?:data|statistical) (?:plot|chart)|plot(?:ted)? data)\b", re.I)
 # Dignity: a Short never shows bodies, wounds or grief at a funeral.
 GRAPHIC = re.compile(r"(corpse|bodies|\bbody\b|victim|blood|wound|injur|\bdead\b|killed|funeral|cremat|coffin|casket|"
                      r"wreckage|debris|crash site|aftermath)", re.I)
@@ -245,7 +250,8 @@ def openverse(query: str, limit: int = OPENVERSE_PER_PLACE, exclude: set[str] | 
         ext = (r.get("filetype") or url.rsplit(".", 1)[-1]).lower()
         if not lic or r.get("mature") or not url.startswith("https://") or file in (exclude or set()):
             continue
-        if ext not in ("jpg", "jpeg", "png", "webp") or NOT_PHOTO.search(title) or GRAPHIC.search(title):
+        if ext not in ("jpg", "jpeg", "png", "webp") or NOT_PHOTO.search(title) or NOT_CAMERA.search(title) \
+                or GRAPHIC.search(title):
             continue
         if min(r.get("width") or 0, r.get("height") or 0) < MIN_SIDE or not _names(title, keys):
             continue
@@ -318,6 +324,10 @@ def _usable(ordered: list[tuple[str, str]], keys: set[str], limit: int, shoot_ca
         lic = _text(meta.get("LicenseShortName", {}).get("value"), 40)
         desc = _text(meta.get("ImageDescription", {}).get("value"))
         if not FREE.match(lic) or meta.get("NonFree", {}).get("value") or GRAPHIC.search(desc):
+            continue
+        medium = " ".join((f, desc, _text(meta.get("Credit", {}).get("value"), 1000),
+                           _text(meta.get("Categories", {}).get("value"), 1000)))
+        if NOT_CAMERA.search(medium):
             continue
         if min(ii["width"], ii["height"]) < MIN_SIDE or ii.get("sha1") in hashes:
             continue
