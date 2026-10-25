@@ -152,6 +152,9 @@ happened in one day."""
 RULES = """RULES (all mandatory):
 - Use ONLY information in CONFIRMED FACTS and the SOURCES. Never add a name, title, number, place, date, quote, award
   or relationship that is not written there. If you are unsure, leave it out.
+- Keep each quantity attached to what the source actually counts. Twelve flights or departures are not twelve
+  aircraft; people, services, vehicles and destinations are different quantities. A photo requirement never permits
+  changing a fact to name a visible object. Omit a secondary detail if it cannot be stated briefly and shown honestly.
 - Write in Hindi (Devanagari): the simple, spoken Hindi of Aaj Tak or ABP News, the words a viewer in Patna or
   Indore uses, neither Sanskritised nor slang: साल के not वर्षीय, डॉक्टर not चिकित्सक, फैसला not
   निर्णय, कोर्ट not न्यायालय, जज not न्यायाधीश, वकील not अधिवक्ता, हफ्ते not सप्ताह, शुरू not प्रारंभ, खत्म not
@@ -525,7 +528,10 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
             f"it is about (one of SHOWABLE where the SOURCES allow"
             + (f"; things with photos: {', '.join(things_)}" if things_ else "")
             + f"), so that at most {limit} {'beat is a text card' if limit == 1 else 'beats are text cards'} and never "
-            "two in a row."]
+            "two in a row."
+            + (" Keep quantities attached to their source nouns: a count of flights is not a count of planes. "
+               "Do not replace a service with a vehicle just to name a photographed object; preserve the source "
+               "meaning, or omit a secondary detail." if "विमान" in things_ else "")]
 
 
 def _unnamed_subject(beats: list[dict], name: str) -> list[str]:
