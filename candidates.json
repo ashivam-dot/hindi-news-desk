@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T07:13:25+00:00",
+ "at": "2026-10-25T07:59:53+00:00",
  "trending": [
   {
    "id": "kh-20261025-Q19867977",
@@ -86,11 +86,11 @@
     "google-news:'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
    ],
    "top": {
-    "IN": 1
+    "IN": 5
    },
-   "top_score": 1.0,
+   "top_score": 0.8,
    "top_headlines": [
-    "'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "Ukraine says Starshield back to normal, Musk says Kyiv violated terms"
    ],
    "hindi_owners": [
     "NDTV",
@@ -169,14 +169,15 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-25",
-   "coords": null,
-   "has_coords": false,
+   "coords": [
+    30.42611111,
+    -84.29166667
+   ],
+   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "Amar Ujala"
-   ],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   },
@@ -227,8 +228,8 @@
    "date": "2026-10-24",
    "news_at": "2026-10-25T06:33:50+00:00",
    "owners": [
-    "Network18",
     "HT Media",
+    "Network18",
     "Bennett, Coleman & Co.",
     "NDTV"
    ],
@@ -334,29 +335,171 @@
     }
    ],
    "via": [
-    "outlet:Network18",
     "outlet:HT Media",
+    "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 7,
-    "IN-nation": 1,
-    "IN-hi-nation": 9
+    "IN": 12,
+    "IN-nation": 20,
+    "IN-hi-nation": 8
    },
-   "top_score": 1.18,
+   "top_score": 0.66,
    "top_headlines": [
-    "टाइगर श्रॉफ फायरिंग केस का आरोपी MP से गिरफ्तार: इंदौर में गिरफ्तारी से 15 घंटे पहले इंस्टा स्टोरी डाली, बं...",
-    "They film Bollywood stars for ‘likes’. Then the Tiger Shroff shooting went viral"
+    "टाइगर श्रॉफ फायरिंग केस, सूरत-इंदौर से जुड़े तार, मुंबई क्राइम ब्रांच के हाथ लगा बड़ा सुराग",
+    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
+    "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack | India News"
    ],
    "hindi_owners": [
+    "NDTV",
     "India Today Group",
     "TV9 Network"
+   ]
+  },
+  {
+   "id": "nw-20261025-andhra-cyclone",
+   "qid": null,
+   "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+   "name": "Andhra",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-25",
+   "news_at": "2026-10-25T07:34:56+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+    "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+    "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+    "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+     "url": "https://www.indiatoday.in/india/story/odisha-andhra-tamil-nadu-cyclone-arnab-alert-rescue-teams-imd-red-warning-3024565-2026-10-25?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:56+00:00"
+    },
+    {
+     "title": "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports",
+     "url": "https://www.hindustantimes.com/india-news/bay-of-bengal-depression-cyclone-tracker-very-severe-cyclonic-storm-oct-28-warnings-tamil-nadu-puducherry-andhra-imd-weather-news-101792909401361.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:29:06+00:00"
+    },
+    {
+     "title": "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-cm-naidu-orders-alertness-disaster-planning-ahead-of-cyclone-rainfall/article71619149.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:15:38+00:00"
+    },
+    {
+     "title": "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-to-cross-andhra-coast-on-october-28-people-in-low-lying-areas-from-bapatla-to-vizianagaram-to-be-evacuated/article71620236.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:13+00:00"
+    },
+    {
+     "title": "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+     "url": "https://www.news18.com/india/imd-issues-cyclone-alert-for-andhra-south-odisha-coasts-landfall-likely-on-october-28-ws-kl-10396726.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:12+00:00"
+    },
+    {
+     "title": "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+     "url": "https://www.livemint.com/news/india/imd-weather-alert-bay-of-bengal-depression-to-intensify-today-very-severe-cyclone-to-hit-andhra-on-oct-28-11792890131647.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T01:32:40+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Amar Ujala"
    ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "breaking"
+  },
+  {
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 88131,
+   "views": 88131,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-24"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q320093",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "id": "nw-20261025-florida-attack",
@@ -369,17 +512,15 @@
    "news_at": "2026-10-25T06:07:47+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
-    "India Today Group",
     "NDTV",
     "Guardian Media Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "12 injured in Florida campus-area shooting",
-    "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
     "6 children among 12 injured in shooting near Florida university stadium",
     "12, Including 6 Children, Injured In Shooting Near Florida University",
     "Eleven sustain gunshot wounds in shooting near Florida university"
@@ -424,16 +565,6 @@
      "at": "2026-10-25T05:19:19+00:00"
     },
     {
-     "title": "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
-     "url": "https://www.indiatoday.in/world/us-news/story/at-least-12-injured-including-6-minors-in-shooting-near-football-stadium-in-florida-3024529-2026-10-25?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T05:05:36+00:00"
-    },
-    {
      "title": "12 injured in Florida campus-area shooting",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/12-injured-including-six-children-in-shooting-near-florida-university/articleshow/135183542.cms",
      "outlet": "The Economic Times",
@@ -446,7 +577,6 @@
    ],
    "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:Guardian Media Group"
    ],
@@ -455,38 +585,92 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
+   "hindi_owners": []
   },
   {
-   "qid": "Q320093",
-   "title": "Tom Skerritt",
-   "fame": 88131,
-   "views": 88131,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-24"
+   "id": "kh-20261025-Q6971919",
+   "qid": "Q6971919",
+   "title": "National Council of Educational Research and Training",
+   "name": "National Council of Educational Research and Training",
+   "phrase": "NCERT",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+   "story_keys": [
+    "deepfake",
+    "hour",
+    "introduce",
+    "module"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q320093",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-21",
+   "date": "2026-10-24",
+   "news_at": "2026-10-25T07:34:41+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+    "NCERT rolls out 20-hour AI module for classes 9-12",
+    "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एन सी ई आर टी",
+   "reports": [
+    {
+     "title": "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12",
+     "url": "https://www.thehindu.com/education/20-hour-introductory-module-on-computational-thinking-and-artificial-intelligence-released-by-ncert/article71622775.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:41+00:00"
+    },
+    {
+     "title": "NCERT rolls out 20-hour AI module for classes 9-12",
+     "url": "https://economictimes.indiatimes.com/industry/services/education/ncert-rolls-out-20-hour-ai-computational-thinking-module-for-classes-9-12/articleshow/135185294.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T06:35:49+00:00"
+    },
+    {
+     "title": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+     "url": "https://www.hindustantimes.com/india-news/ncert-releases-ai-module-for-classes-9-to-12-deepfakes-ethical-usage-in-focus-101792833870613.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T09:35:57+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q141820731",
@@ -653,10 +837,11 @@
    "coords": null,
    "has_coords": false,
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
+    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
     "Yemen's Houthis renew warning against using Riyadh airport"
    ],
    "hindi_owners": []
@@ -975,147 +1160,6 @@
  ],
  "candidates": [
   {
-   "id": "nw-20261024-tiger-shroff-attack",
-   "qid": null,
-   "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-   "name": "Tiger Shroff",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-24",
-   "news_at": "2026-10-25T06:33:50+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff attack handlers relayed TV news updates to shooters: Report",
-    "Tiger Shroff Firing Case: Handlers Alerted Shooters After Seeing Faces On TV, Say Police",
-    "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-    "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-    "Tiger Shroff's shooters received real-time updates, instructions based on media coverage"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-     "url": "https://www.ndtv.com/india-news/tiger-shroffs-shooters-planned-to-flee-to-delhi-via-surat-but-missed-bus-12232563#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T06:33:50+00:00"
-    },
-    {
-     "title": "HT Morning Brief October 25: EC keeps SIR software under wraps; pistols used in Shroff firing found",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-25-ec-keeps-sir-software-under-wraps-pistols-used-in-shroff-firing-found-101792898097293.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T03:25:32+00:00"
-    },
-    {
-     "title": "Tiger Shroff firing: Turkish, desi pistols recovered in Surat, youth held in MP",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/tiger-shroff-firing-turkish-desi-pistols-recovered-in-surat-youth-held-in-mp/articleshow/135181552.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T02:05:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Shooting: 11th Arrest With Haryana Engineer Held In Indore After 2 Firearms Found In Surat",
-     "url": "https://www.news18.com/india/tiger-shroff-shooting-11th-arrest-with-haryana-engineer-held-in-indore-after-2-firearms-found-in-surat-ws-lrt-10396489.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T01:17:39+00:00"
-    },
-    {
-     "title": "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
-     "url": "https://www.hindustantimes.com/india-news/another-accused-in-tiger-shroff-shooting-case-arrested-from-indore-supplied-weapons-used-in-attack-101792848024128.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T14:31:12+00:00"
-    },
-    {
-     "title": "Tiger Shroff's shooters received real-time updates, instructions based on media coverage",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroffs-shooters-received-real-time-updates-instructions-based-on-media-coverage-101792832941919.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T10:41:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-     "url": "https://www.news18.com/videos/breaking-news/tiger-shroff-firing-probe-shooters-were-in-constant-touch-with-handlers-bishnoi-gang-news18-10395835.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T07:52:21+00:00"
-    },
-    {
-     "title": "3 accused in Tiger Shroff shooting case sent to police custody till October 28",
-     "url": "https://www.hindustantimes.com/india-news/tiger-shroff-shooting-mumbai-police-accused-weapons-lawrence-bishnoi-court-101792821469464.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T06:19:57+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 7,
-    "IN-nation": 1,
-    "IN-hi-nation": 9
-   },
-   "top_score": 1.18,
-   "top_headlines": [
-    "टाइगर श्रॉफ फायरिंग केस का आरोपी MP से गिरफ्तार: इंदौर में गिरफ्तारी से 15 घंटे पहले इंस्टा स्टोरी डाली, बं...",
-    "They film Bollywood stars for ‘likes’. Then the Tiger Shroff shooting went viral"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "TV9 Network"
-   ],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
    "qid": null,
    "title": "2026 Florida A&M University shooting",
    "fame": 200000,
@@ -1187,117 +1231,215 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-10-25",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Amar Ujala"
+   "coords": [
+    30.42611111,
+    -84.29166667
    ],
-   "audience": "world",
-   "lane": "sensitive"
-  },
-  {
-   "id": "nw-20261025-florida-attack",
-   "qid": null,
-   "title": "Eleven sustain gunshot wounds in shooting near Florida university",
-   "name": "Florida",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-25",
-   "news_at": "2026-10-25T06:07:47+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV",
-    "Guardian Media Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "12 injured in Florida campus-area shooting",
-    "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
-    "6 children among 12 injured in shooting near Florida university stadium",
-    "12, Including 6 Children, Injured In Shooting Near Florida University",
-    "Eleven sustain gunshot wounds in shooting near Florida university"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "world"
-   ],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Eleven sustain gunshot wounds in shooting near Florida university",
-     "url": "https://www.theguardian.com/us-news/2026/oct/25/eleven-sustain-gunshot-wounds-in-shooting-near-florida-university",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-25T06:07:47+00:00"
-    },
-    {
-     "title": "12, Including 6 Children, Injured In Shooting Near Florida University",
-     "url": "https://www.ndtv.com/world-news/shooting-near-florida-a-m-university-tallahassee-12-including-6-children-injured-us-12232354#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T05:28:10+00:00"
-    },
-    {
-     "title": "6 children among 12 injured in shooting near Florida university stadium",
-     "url": "https://timesofindia.indiatimes.com/world/us/6-children-among-12-injured-in-shooting-near-florida-university-stadium/articleshow/135183905.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T05:19:19+00:00"
-    },
-    {
-     "title": "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
-     "url": "https://www.indiatoday.in/world/us-news/story/at-least-12-injured-including-6-minors-in-shooting-near-football-stadium-in-florida-3024529-2026-10-25?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T05:05:36+00:00"
-    },
-    {
-     "title": "12 injured in Florida campus-area shooting",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/12-injured-including-six-children-in-shooting-near-florida-university/articleshow/135183542.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T04:56:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Guardian Media Group"
-   ],
-   "emerging": true,
-   "article": "2026 Florida A&M University shooting",
+   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
+  },
+  {
+   "id": "nw-20261025-andhra-cyclone",
+   "qid": null,
+   "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+   "name": "Andhra",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-25",
+   "news_at": "2026-10-25T07:34:56+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+    "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+    "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+    "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+     "url": "https://www.indiatoday.in/india/story/odisha-andhra-tamil-nadu-cyclone-arnab-alert-rescue-teams-imd-red-warning-3024565-2026-10-25?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:56+00:00"
+    },
+    {
+     "title": "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports",
+     "url": "https://www.hindustantimes.com/india-news/bay-of-bengal-depression-cyclone-tracker-very-severe-cyclonic-storm-oct-28-warnings-tamil-nadu-puducherry-andhra-imd-weather-news-101792909401361.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:29:06+00:00"
+    },
+    {
+     "title": "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-cm-naidu-orders-alertness-disaster-planning-ahead-of-cyclone-rainfall/article71619149.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:15:38+00:00"
+    },
+    {
+     "title": "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-to-cross-andhra-coast-on-october-28-people-in-low-lying-areas-from-bapatla-to-vizianagaram-to-be-evacuated/article71620236.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:13+00:00"
+    },
+    {
+     "title": "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+     "url": "https://www.news18.com/india/imd-issues-cyclone-alert-for-andhra-south-odisha-coasts-landfall-likely-on-october-28-ws-kl-10396726.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:12+00:00"
+    },
+    {
+     "title": "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+     "url": "https://www.livemint.com/news/india/imd-weather-alert-bay-of-bengal-depression-to-intensify-today-very-severe-cyclone-to-hit-andhra-on-oct-28-11792890131647.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T01:32:40+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "id": "kh-20261025-Q6971919",
+   "qid": "Q6971919",
+   "title": "National Council of Educational Research and Training",
+   "name": "National Council of Educational Research and Training",
+   "phrase": "NCERT",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+   "story_keys": [
+    "deepfake",
+    "hour",
+    "introduce",
+    "module"
+   ],
+   "date": "2026-10-24",
+   "news_at": "2026-10-25T07:34:41+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+    "NCERT rolls out 20-hour AI module for classes 9-12",
+    "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एन सी ई आर टी",
+   "reports": [
+    {
+     "title": "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12",
+     "url": "https://www.thehindu.com/education/20-hour-introductory-module-on-computational-thinking-and-artificial-intelligence-released-by-ncert/article71622775.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:41+00:00"
+    },
+    {
+     "title": "NCERT rolls out 20-hour AI module for classes 9-12",
+     "url": "https://economictimes.indiatimes.com/industry/services/education/ncert-rolls-out-20-hour-ai-computational-thinking-module-for-classes-9-12/articleshow/135185294.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T06:35:49+00:00"
+    },
+    {
+     "title": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+     "url": "https://www.hindustantimes.com/india-news/ncert-releases-ai-module-for-classes-9-to-12-deepfakes-ethical-usage-in-focus-101792833870613.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T09:35:57+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q141535181",
@@ -1651,251 +1793,6 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261025-Q16202406-update",
-   "qid": "Q16202406",
-   "title": "Tiger Shroff",
-   "name": "Tiger Shroff",
-   "phrase": "Tiger Shroff",
-   "person": true,
-   "kind": "explainer",
-   "category": "attack",
-   "category_hi": "घटना",
-   "story": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-   "story_keys": [
-    "aamir",
-    "abroad",
-    "accused",
-    "actor",
-    "aged",
-    "aicwa",
-    "amaal",
-    "amit",
-    "andheri",
-    "april",
-    "arrest",
-    "arrested",
-    "attack",
-    "ayesha",
-    "baba",
-    "baloch",
-    "begusarai",
-    "bharti",
-    "bihar",
-    "bike",
-    "bishnoi",
-    "bodyguard",
-    "bollywood",
-    "borivali",
-    "bullet",
-    "cctv",
-    "chauhan",
-    "claim",
-    "cooper",
-    "cops",
-    "delhi",
-    "dholakia",
-    "disha",
-    "fadnavi",
-    "february",
-    "firdau",
-    "football",
-    "fwice",
-    "gaikwad",
-    "galaxy",
-    "gang",
-    "gate",
-    "gopal",
-    "haryana",
-    "incident",
-    "jackie",
-    "jaipur",
-    "jungle",
-    "karan",
-    "kishan",
-    "kota",
-    "krishna",
-    "labour",
-    "maharashtra",
-    "mankhurd",
-    "mika",
-    "minute",
-    "motorcycle",
-    "mumbai",
-    "nanavati",
-    "nepal",
-    "october",
-    "order",
-    "pandit",
-    "pawar",
-    "police",
-    "probe",
-    "protection",
-    "pune-jaipur",
-    "ranvir",
-    "rapido",
-    "raut",
-    "ravi",
-    "recce",
-    "resign",
-    "rohit",
-    "salman",
-    "santacruz",
-    "sapkal",
-    "sawant",
-    "security",
-    "shah",
-    "shatrughan",
-    "shelar",
-    "shetty",
-    "shinde",
-    "siddique",
-    "sonipat",
-    "sule",
-    "suniel",
-    "surat",
-    "threat",
-    "train",
-    "umesh",
-    "veer",
-    "vidyut",
-    "vlog",
-    "wrist",
-    "zeeshan"
-   ],
-   "date": "2026-10-25",
-   "news_at": "2026-10-25T06:33:50+00:00",
-   "owners": [
-    "NDTV",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "India Today Group"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-    "HT Morning Brief October 25: EC keeps SIR software under wraps; pistols used in Shroff firing found",
-    "Tiger Shroff firing: Turkish, desi pistols recovered in Surat, youth held in MP",
-    "Tiger Shroff Shooting: 11th Arrest With Haryana Engineer Held In Indore After 2 Firearms Found In Surat",
-    "How Bishnoi gang tracked Tiger Shroff, plotted to shoot him in Mumbai",
-    "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "टाइगर श्रॉफ",
-   "reports": [
-    {
-     "title": "Tiger Shroff's Shooters Planned To Flee To Delhi Via Surat, But Missed Bus",
-     "url": "https://www.ndtv.com/india-news/tiger-shroffs-shooters-planned-to-flee-to-delhi-via-surat-but-missed-bus-12232563#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T06:33:50+00:00"
-    },
-    {
-     "title": "HT Morning Brief October 25: EC keeps SIR software under wraps; pistols used in Shroff firing found",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-october-25-ec-keeps-sir-software-under-wraps-pistols-used-in-shroff-firing-found-101792898097293.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T03:25:32+00:00"
-    },
-    {
-     "title": "Tiger Shroff firing: Turkish, desi pistols recovered in Surat, youth held in MP",
-     "url": "https://timesofindia.indiatimes.com/city/mumbai/tiger-shroff-firing-turkish-desi-pistols-recovered-in-surat-youth-held-in-mp/articleshow/135181552.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T02:05:10+00:00"
-    },
-    {
-     "title": "Tiger Shroff Shooting: 11th Arrest With Haryana Engineer Held In Indore After 2 Firearms Found In Surat",
-     "url": "https://www.news18.com/india/tiger-shroff-shooting-11th-arrest-with-haryana-engineer-held-in-indore-after-2-firearms-found-in-surat-ws-lrt-10396489.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T01:17:39+00:00"
-    },
-    {
-     "title": "How Bishnoi gang tracked Tiger Shroff, plotted to shoot him in Mumbai",
-     "url": "https://www.indiatoday.in/india/video/how-bishnoi-gang-tracked-tiger-shroff-plotted-to-shoot-him-in-mumbai-3024459-2026-10-24?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T17:23:19+00:00"
-    },
-    {
-     "title": "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack",
-     "url": "https://www.hindustantimes.com/india-news/another-accused-in-tiger-shroff-shooting-case-arrested-from-indore-supplied-weapons-used-in-attack-101792848024128.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T14:31:12+00:00"
-    },
-    {
-     "title": "Tiger Shroff Firing Probe: Shooters Were in Constant Touch With Handlers | Bishnoi Gang | News18",
-     "url": "https://www.news18.com/videos/breaking-news/tiger-shroff-firing-probe-shooters-were-in-constant-touch-with-handlers-bishnoi-gang-news18-10395835.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T07:52:21+00:00"
-    },
-    {
-     "title": "Accused Suspected Of Using Signal, Zangi To Plot Attack On Tiger Shroff, Cops Probe Chats",
-     "url": "https://www.news18.com/india/accused-suspected-of-using-signal-zangi-to-plot-attack-on-tiger-shroff-cops-probe-chats-ws-kl-10395704.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T07:13:19+00:00"
-    }
-   ],
-   "via": [
-    "revisit:tiger-shroff-2026-10-20"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "nw-20261019-tiger-shroff-attack-government",
-   "earlier": [
-    "Tiger Shroff: कोटा में पकड़े गए तीनों आरोपी, नेपाल भागने की फिराक में थे",
-    "Tiger Shroff: फायरिंग के बाद पहली बार दिखे जय किशन, फडणवीस के साथ आए नजर",
-    "Tiger Shroff: फायरिंग के बाद पहली बार पब्लिक में आए जैकी श्रॉफ",
-    "Tiger Shroff: फायरिंग के बाद अंधेरी स्टेशन पहुंचे थे हमलावर, छोड़ी बाइक",
-    "Tiger Shroff: फायरिंग के बाद सरकार ने दी पुलिस सुरक्षा"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 21 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "never": [
-    "Anil Pandit",
-    "अनिल पंडित",
-    "Anmol Bishnoi",
-    "Goldy Brar",
-    "गोल्डी",
-    "Rohit Godara",
-    "गोदारा"
-   ],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
    "id": "kh-20261025-Q10218-update",
    "qid": "Q10218",
    "title": "Rahul Gandhi",
@@ -2191,9 +2088,9 @@
   }
  ],
  "notes": [
-  "revisit kh-20261025-Q16202406-update: 5 owners' new reports on Tiger Shroff (1075 views before); revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261025-Q163225-update: 2 owners' new reports on Sonia Gandhi (502 views before); revisit Q312781 (321 view",
-  "outlets: 1162 headlines from 30 feeds (18 owners), 7 matched to articles, 4 candidates with 2+ owners, 2 nw- stories (on): nw-20261024-tiger-shroff-attack, nw-20261025-florida-attack",
-  "explainers: 1 kh- stories (on): kh-20261025-Q19867977; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Air Force Day / Air Force Day: no Wikipedia article that can be its centre",
+  "revisit tiger-shroff-2026-10-20: already revisited today; revisit kh-20261025-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261025-Q163225-update: 2 owners' new reports on Sonia Gandhi (502 views before); revisit Q312781 (321 views): 0 owners reported new news on Imran",
+  "outlets: 1168 headlines from 30 feeds (18 owners), 9 matched to articles, 6 candidates with 2+ owners, 3 nw- stories (on): nw-20261024-tiger-shroff-attack, nw-20261025-andhra-cyclone, nw-20261025-florida-attack",
+  "explainers: 2 kh- stories (on): kh-20261025-Q19867977, kh-20261025-Q6971919; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Air Force Day / Air Force Day: no Wikipedia article that can be its centre",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2201,11 +2098,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1162,
+  "headlines": 1168,
   "feeds": 30,
   "owners": 18,
-  "matched": 7,
-  "corroborated": 4
+  "matched": 9,
+  "corroborated": 6
  },
  "emerging": [
   {
@@ -2218,8 +2115,8 @@
    "date": "2026-10-24",
    "news_at": "2026-10-25T06:33:50+00:00",
    "owners": [
-    "Network18",
     "HT Media",
+    "Network18",
     "Bennett, Coleman & Co.",
     "NDTV"
    ],
@@ -2325,29 +2222,142 @@
     }
    ],
    "via": [
-    "outlet:Network18",
     "outlet:HT Media",
+    "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 7,
-    "IN-nation": 1,
-    "IN-hi-nation": 9
+    "IN": 12,
+    "IN-nation": 20,
+    "IN-hi-nation": 8
    },
-   "top_score": 1.18,
+   "top_score": 0.66,
    "top_headlines": [
-    "टाइगर श्रॉफ फायरिंग केस का आरोपी MP से गिरफ्तार: इंदौर में गिरफ्तारी से 15 घंटे पहले इंस्टा स्टोरी डाली, बं...",
-    "They film Bollywood stars for ‘likes’. Then the Tiger Shroff shooting went viral"
+    "टाइगर श्रॉफ फायरिंग केस, सूरत-इंदौर से जुड़े तार, मुंबई क्राइम ब्रांच के हाथ लगा बड़ा सुराग",
+    "Houthis claim attacks on Saudi oil targets, airports; debris falls in Mecca, Medina as tensions escalate in Gulf | World News",
+    "Another accused in Tiger Shroff shooting case arrested from Indore, supplied weapons used in attack | India News"
    ],
    "hindi_owners": [
+    "NDTV",
     "India Today Group",
     "TV9 Network"
+   ]
+  },
+  {
+   "id": "nw-20261025-andhra-cyclone",
+   "qid": null,
+   "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+   "name": "Andhra",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-25",
+   "news_at": "2026-10-25T07:34:56+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+    "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+    "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+    "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Schools shut, shelters readied: Odisha, Andhra, Tamil Nadu gear up for cyclone",
+     "url": "https://www.indiatoday.in/india/story/odisha-andhra-tamil-nadu-cyclone-arnab-alert-rescue-teams-imd-red-warning-3024565-2026-10-25?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:56+00:00"
+    },
+    {
+     "title": "Depression over Bay of Bengal intensifies, cyclone warning issued at 9 Tamil Nadu, Puducherry ports",
+     "url": "https://www.hindustantimes.com/india-news/bay-of-bengal-depression-cyclone-tracker-very-severe-cyclonic-storm-oct-28-warnings-tamil-nadu-puducherry-andhra-imd-weather-news-101792909401361.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:29:06+00:00"
+    },
+    {
+     "title": "Andhra CM alerts officials about the cyclone in Bay of Bengal",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/andhra-cm-naidu-orders-alertness-disaster-planning-ahead-of-cyclone-rainfall/article71619149.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:15:38+00:00"
+    },
+    {
+     "title": "Cyclone to cross Andhra coast on October 28; people in low-lying areas from Bapatla to Vizianagaram to be evacuated",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-to-cross-andhra-coast-on-october-28-people-in-low-lying-areas-from-bapatla-to-vizianagaram-to-be-evacuated/article71620236.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:13+00:00"
+    },
+    {
+     "title": "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+     "url": "https://www.news18.com/india/imd-issues-cyclone-alert-for-andhra-south-odisha-coasts-landfall-likely-on-october-28-ws-kl-10396726.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:04:12+00:00"
+    },
+    {
+     "title": "IMD weather alert today: ‘Red’ alert for heavy rains in Keralam, Tamil Nadu, ‘severe’ cyclone to hit Andhra on Oct 28",
+     "url": "https://www.livemint.com/news/india/imd-weather-alert-bay-of-bengal-depression-to-intensify-today-very-severe-cyclone-to-hit-andhra-on-oct-28-11792890131647.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T01:32:40+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Amar Ujala"
    ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "breaking"
   },
   {
    "id": "nw-20261025-florida-attack",
@@ -2360,17 +2370,15 @@
    "news_at": "2026-10-25T06:07:47+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
-    "India Today Group",
     "NDTV",
     "Guardian Media Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "12 injured in Florida campus-area shooting",
-    "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
     "6 children among 12 injured in shooting near Florida university stadium",
     "12, Including 6 Children, Injured In Shooting Near Florida University",
     "Eleven sustain gunshot wounds in shooting near Florida university"
@@ -2415,16 +2423,6 @@
      "at": "2026-10-25T05:19:19+00:00"
     },
     {
-     "title": "6 minors among 12 injured in shooting near Florida stadium, gunman at large",
-     "url": "https://www.indiatoday.in/world/us-news/story/at-least-12-injured-including-6-minors-in-shooting-near-football-stadium-in-florida-3024529-2026-10-25?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T05:05:36+00:00"
-    },
-    {
      "title": "12 injured in Florida campus-area shooting",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/12-injured-including-six-children-in-shooting-near-florida-university/articleshow/135183542.cms",
      "outlet": "The Economic Times",
@@ -2437,7 +2435,6 @@
    ],
    "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:Guardian Media Group"
    ],
@@ -2446,9 +2443,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
+   "hindi_owners": []
   }
  ],
  "explainers": [
@@ -2537,16 +2532,101 @@
     "google-news:'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
    ],
    "top": {
-    "IN": 1
+    "IN": 5
    },
-   "top_score": 1.0,
+   "top_score": 0.8,
    "top_headlines": [
-    "'To kill people': Musk accuses Ukraine military of misusing Starlink for drone strikes"
+    "Ukraine says Starshield back to normal, Musk says Kyiv violated terms"
    ],
    "hindi_owners": [
     "NDTV",
     "India Today Group"
    ]
+  },
+  {
+   "id": "kh-20261025-Q6971919",
+   "qid": "Q6971919",
+   "title": "National Council of Educational Research and Training",
+   "name": "National Council of Educational Research and Training",
+   "phrase": "NCERT",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+   "story_keys": [
+    "deepfake",
+    "hour",
+    "introduce",
+    "module"
+   ],
+   "date": "2026-10-24",
+   "news_at": "2026-10-25T07:34:41+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+    "NCERT rolls out 20-hour AI module for classes 9-12",
+    "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "एन सी ई आर टी",
+   "reports": [
+    {
+     "title": "Ethical boundaries to detecting deepfakes: NCERT introduces 20-hour AI module for classes 9-12",
+     "url": "https://www.thehindu.com/education/20-hour-introductory-module-on-computational-thinking-and-artificial-intelligence-released-by-ncert/article71622775.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T07:34:41+00:00"
+    },
+    {
+     "title": "NCERT rolls out 20-hour AI module for classes 9-12",
+     "url": "https://economictimes.indiatimes.com/industry/services/education/ncert-rolls-out-20-hour-ai-computational-thinking-module-for-classes-9-12/articleshow/135185294.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T06:35:49+00:00"
+    },
+    {
+     "title": "NCERT introduces 20-hour AI module for Classes 9-12, covers deepfakes, data privacy",
+     "url": "https://www.hindustantimes.com/india-news/ncert-releases-ai-module-for-classes-9-to-12-deepfakes-ethical-usage-in-focus-101792833870613.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-24T09:35:57+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   }
  ]
 }
