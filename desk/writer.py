@@ -676,8 +676,8 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
         counts = ", ".join(str(len(b.get("say", "").split())) for b in beats)
         problems.append(f"the script has {words} words; it must have {WORDS_ASKED}; {change} spoken words "
                         f"to aim for {aim} in the whole report. Current beat word counts: {counts}. "
-                        "Keep source attribution and the essential supported facts; remove repetition and "
-                        "compress wording, never invent facts or add filler")
+                        "Preserve source attribution and the essential supported facts; change wording, "
+                        "never invent facts or add filler")
     problems += [f"beat {i + 1} has {n} words; shorten it to about 8 to 9 words, at most {MAX_BEAT_WORDS}, "
                  "while retaining attribution. Do not add beats to evade the whole-report word budget"
                  for i, b in enumerate(beats) if (n := len(b.get("say", "").split())) > MAX_BEAT_WORDS]
