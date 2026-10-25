@@ -1105,9 +1105,23 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 pen.reject()
             # Keep the evidence, latest draft and exact feedback; four copies of a source packet and obsolete
             # drafts can exhaust the local model's context before its final repair.
+            feedback = "Rewrite the whole JSON. Fix these problems and change nothing else that is supported."
+            if sum(len(b.get("say", "").split()) for b in draft.get("beats", [])) > MAX_WORDS:
+                # Run 40188532731 stayed at 80-84 words through three rewrites. Asking to
+                # preserve everything conflicted with cutting a third of a short bulletin.
+                feedback = (
+                    "Rewrite the whole JSON as a shorter report, not a line-by-line polish. "
+                    "Select the essential supported facts; you may OMIT secondary background and details. "
+                    "Do not preserve every fact from the previous draft. Keep who did what, the essential "
+                    "context and attribution, and a reported next step when one exists. "
+                    "Plan SIX spoken sentences with word budgets 9, 8, 9, 8, 9, 9: 52 words TOTAL. "
+                    "Count space-separated words in say only before returning JSON. "
+                    "Shortening captions or labels does not shorten the narration. "
+                    "Keep source-backed subject names needed to match the available photos. "
+                    "Never invent, combine claims into a new claim, remove a necessary qualification, "
+                    "or turn attributed reporting into an unattributed fact. Fix every problem below.")
             messages = base_messages + [{"role": "assistant", "content": json.dumps(draft, ensure_ascii=False)},
-                                   {"role": "user", "content": "Rewrite the whole JSON. Fix these problems and change "
-                                    "nothing else that is supported:\n- " + "\n- ".join(problems)}]
+                                       {"role": "user", "content": feedback + "\n- " + "\n- ".join(problems)}]
     finally:
         if own:
             pen.close()

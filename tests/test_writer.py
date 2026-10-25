@@ -308,6 +308,40 @@ def test_a_reviewed_draft_is_checked_first_and_never_rewritten_when_it_passes(tm
     assert out["beats"] == given["beats"] and log == []
 
 
+@pytest.mark.parametrize("unsupported", [False, True])
+def test_length_repair_can_select_fewer_facts_but_still_faces_fact_checks(tmp_path, unsupported):
+    class CompressionPen(FakePen):
+        drafts = 0
+
+        def chat(self, messages, schema=None, **kw):
+            if schema is writer.SCHEMA:
+                self.drafts += 1
+                feedback = messages[-1]["content"]
+                if self.drafts == 1:
+                    assert "may OMIT secondary background" in feedback
+                    assert "52 words TOTAL" in feedback
+                    assert "necessary qualification" in feedback
+                    assert "change nothing else" not in feedback
+                else:
+                    assert "unsupported:" in feedback and "52 words TOTAL" not in feedback
+            return super().chat(messages, schema, **kw)
+
+    given = draft()
+    given["beats"][1]["say"] *= 8
+    before = copy.deepcopy(given)
+    verdict = ["unbacked claim: रमेश प्रसाद वर्मा नहीं रहे"] if unsupported else []
+    pen = CompressionPen([verdict] * writer.DRAFTS)
+    args = ("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES)
+    if unsupported:
+        with pytest.raises(ValueError, match="unsupported"):
+            writer.write(*args, log_path=tmp_path / "log.json", pen=pen, start=given)
+    else:
+        out, log, _ = writer.write(*args, log_path=tmp_path / "log.json", pen=pen, start=given)
+        assert out["beats"] == draft()["beats"] and check(out) == ([], [])
+        assert any("script has" in p for p in log[0]["problems"])
+    assert given == before
+
+
 def test_unused_names_do_not_spend_another_draft_and_the_cleanup_is_recorded(tmp_path):
     import json
 
