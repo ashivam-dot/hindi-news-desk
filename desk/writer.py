@@ -617,6 +617,29 @@ def script_text(draft: dict) -> str:
         draft.get("title", "")
 
 
+def drop_unused_names(draft: dict) -> list[dict]:
+    """Remove stale name metadata after a rewrite, preserving every visible and spoken word.
+
+    Names in the headline, captions or labels still face the normal source checks. Malformed
+    entries also stay for validation; only complete pairs absent from all displayed text are removed.
+    """
+    names = draft.get("names")
+    if not isinstance(names, list):
+        return []
+    text = script_text(draft)
+    removed, kept = [], []
+    for pair in names:
+        if (isinstance(pair, dict) and isinstance(pair.get("hi"), str) and pair["hi"].strip()
+                and isinstance(pair.get("en"), str) and pair["en"].strip()
+                and not hindi.contains(text, pair["hi"])):
+            removed.append(pair)
+        else:
+            kept.append(pair)
+    if removed:
+        draft["names"] = kept
+    return removed
+
+
 def subject_in(text: str, subject: dict, names: list[dict]) -> bool:
     """The story's own name is said: its Wikidata Hindi label (or a person's surname in it), or the Hindi the writer
     gave for its English name."""
@@ -1009,6 +1032,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 DRAFTED[0] += 1  # a script the model wrote: cli counts it toward MAX_WRITTEN however it ends
             draft = json.loads(json.dumps(start)) if start and attempt == 0 else \
                 pen.chat(messages, SCHEMA, temperature=0.75 if attempt == 0 else 0.6)
+            removed_names = drop_unused_names(draft)
             problems, doubtful = validate(draft, photos, subject, ground_en, ground_hi,
                                           spellings(draft, hi_names, looked), banned_names or [],
                                           kind, agreed_toll, angle, reports, hurt_ok)
@@ -1035,9 +1059,16 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not problems:
                 draft["title"], draft["titles"] = retitle(pen, draft, subject, ground_en, kind, agreed_toll,
                                                           reports, title_hints, earlier)
+                if removed_names:
+                    log.append({"attempt": attempt + 1, "problems": [], "draft": draft,
+                                "models": list(pen.used), "ignored": [], "accepted": True,
+                                "removed_unused_names": removed_names})
+                    if log_path:
+                        log_path.parent.mkdir(parents=True, exist_ok=True)
+                        log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")
                 return draft, log, pen.used
             log.append({"attempt": attempt + 1, "problems": problems, "draft": draft, "models": list(pen.used),
-                        "ignored": ignored})
+                        "ignored": ignored, **({"removed_unused_names": removed_names} if removed_names else {})})
             if log_path:
                 log_path.parent.mkdir(parents=True, exist_ok=True)
                 log_path.write_text(json.dumps(log, indent=1, ensure_ascii=False), encoding="utf-8")

@@ -44,6 +44,32 @@ def test_a_grounded_hindi_draft_passes():
     assert problems == [] and doubtful == []
 
 
+def test_unused_name_metadata_is_removed_without_changing_the_report():
+    d = draft()
+    extra = {"hi": "बिहार", "en": "Bihar"}
+    d["names"].append(extra)
+    before = copy.deepcopy(d)
+    assert writer.drop_unused_names(d) == [extra]
+    assert d["names"] == NAMES
+    assert {k: v for k, v in d.items() if k != "names"} == {k: v for k, v in before.items() if k != "names"}
+    assert check(d) == ([], [])
+
+
+def test_names_in_any_displayed_text_and_malformed_pairs_stay_for_validation():
+    d = draft()
+    d["title"] += " बिहार"
+    d["beats"][1]["caption"] += " पटना"
+    d["beats"][2]["label"] = "दिल्ली"
+    pairs = [{"hi": "बिहार", "en": "Bihar"}, {"hi": "पटना", "en": "Patna"},
+             {"hi": "दिल्ली", "en": "Delhi"}, {"hi": "झारखंड"}]
+    d["names"].extend(pairs)
+    assert writer.drop_unused_names(d) == []
+    assert d["names"][-4:] == pairs
+    problems, _ = check(d)
+    assert any("Bihar" in p and "not in the sources" in p for p in problems)
+    assert "every names entry needs both hi and en" in problems
+
+
 def test_a_long_beat_or_a_vague_ending_goes_back_to_the_writer():
     d = draft()
     d["beats"][2]["say"] = ("1968 में उनका पहला एल्बम आया और पूरे देश ने उस नई आवाज़ को ध्यान से सुना और फिर "
@@ -280,6 +306,26 @@ def test_a_reviewed_draft_is_checked_first_and_never_rewritten_when_it_passes(tm
     out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
                                log_path=tmp_path / "log.json", pen=NoWriting([[]]), start=given)
     assert out["beats"] == given["beats"] and log == []
+
+
+def test_unused_names_do_not_spend_another_draft_and_the_cleanup_is_recorded(tmp_path):
+    import json
+
+    class NoWriting(FakePen):
+        def chat(self, messages, schema=None, **kw):
+            assert schema in (writer.CHECK_SCHEMA, writer.TITLE_SCHEMA), "unnecessary rewrite"
+            return super().chat(messages, schema, **kw)
+
+    given = draft()
+    extra = {"hi": "बिहार", "en": "Bihar"}
+    given["names"].append(extra)
+    path = tmp_path / "writer_log.json"
+    out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                               log_path=path, pen=NoWriting([[]]), start=given)
+    assert out["beats"] == given["beats"] and out["names"] == NAMES
+    assert given["names"][-1] == extra  # the reviewed input remains intact
+    assert log[-1]["accepted"] is True and log[-1]["removed_unused_names"] == [extra]
+    assert json.loads(path.read_text())[-1]["removed_unused_names"] == [extra]
 
 
 def test_the_headline_editor_picks_the_first_simple_title(tmp_path):
