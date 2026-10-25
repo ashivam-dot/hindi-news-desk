@@ -716,9 +716,17 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     bad = hindi.unsupported_numbers(text, values)
     if bad:
         single = [n for n in bad if gate.reported_values(reports).get(n)]
+        wording = list(dict.fromkeys(
+            m.group() for m in hindi.TOKEN.finditer(hindi.ascii_digits(text))
+            if any(value in bad for value, _ in hindi.numbers(m.group()))))
         problems.append("these numbers are not in the sources: " + ", ".join(bad)
                         + (f" ({', '.join(single)} only in one outlet's report: one outlet is not enough)"
-                           if single else ""))
+                           if single else "")
+                        + "; draft wording: " + ", ".join(wording)
+                        + ". Omit these unsupported numeric claims from narration, title, captions and labels. "
+                        "Keep the independently supported event and attribution. Never guess a replacement "
+                        "amount, change its unit or counted noun, or turn an unsupported amount into a vague "
+                        "claim about its size.")
     wikidata = {en.lower(): hi for en, hi in hi_names.items()}
     for p in names:
         hi, en = (p.get("hi") or "").strip(), (p.get("en") or "").strip()

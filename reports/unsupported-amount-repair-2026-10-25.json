@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-25T13:45:40.391102+00:00",
+  "source_run": 40195532743,
+  "source_sha": "d3afc5db9defeb66d33183b3c6831b2b88a4e36a",
+  "diagnostic_sha256": "e1413728d0b045c53f480111b1f9a462a625c3a0505539afc4782b9a722d21da",
+  "observed": "All four drafts retained 169 करोड़ after a normalized-only refusal for 1690000000.",
+  "change": "Include original numeric phrases in validation feedback and explicitly omit unsupported numeric claims from spoken and displayed text while preserving supported events and attribution.",
+  "unchanged": "Source-value checks, independent owner corroboration, all four attempt limits, full fact checker, visual fit, length, voice and upload checks. No automatic narrative editing.",
+  "verification": "99 focused writer/Hindi tests passed, including correction and repeated-refusal paths.",
+  "release_approval": false,
+  "production_outcome": "Unknown; future drafts and live deliveries still require verification."
+}

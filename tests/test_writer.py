@@ -167,6 +167,42 @@ def test_devanagari_digits_are_checked_too():
     assert any("1967" in p for p in problems)
 
 
+@pytest.mark.parametrize("keeps_amount", [False, True])
+def test_unsupported_crore_repair_identifies_spoken_amount_and_still_checks_every_draft(tmp_path, keeps_amount):
+    """Run 40195532743 repeated 169 crore after four normalized-only numeric refusals."""
+    given = draft()
+    given["beats"][0]["caption"] = "169 करोड़"
+    before = copy.deepcopy(given)
+
+    class AmountPen(FakePen):
+        repairs = 0
+
+        def chat(self, messages, schema=None, **kw):
+            if schema is writer.SCHEMA:
+                self.repairs += 1
+                feedback = messages[-1]["content"]
+                assert "1690000000" in feedback and "draft wording: 169 करोड़" in feedback
+                assert "Omit these unsupported numeric claims" in feedback
+                assert "Never guess a replacement" in feedback
+                if keeps_amount:
+                    return copy.deepcopy(given)
+            if schema is writer.CHECK_SCHEMA:
+                assert not keeps_amount, "An unsupported amount reached the fact checker"
+            return super().chat(messages, schema, **kw)
+
+    pen = AmountPen([[]])
+    args = ("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES)
+    if keeps_amount:
+        with pytest.raises(ValueError, match="1690000000"):
+            writer.write(*args, pen=pen, start=given, log_path=tmp_path / "log.json")
+        assert pen.repairs == writer.DRAFTS - 1
+    else:
+        out, log, _ = writer.write(*args, pen=pen, start=given, log_path=tmp_path / "log.json")
+        assert out["beats"] == draft()["beats"] and check(out) == ([], [])
+        assert "1690000000" in " ".join(log[0]["problems"])
+    assert given == before
+
+
 def test_every_name_pair_must_be_grounded_and_written():
     d = draft(names=NAMES + [{"hi": "कोलकाता", "en": "Kolkata"}])
     problems, _ = check(d)
