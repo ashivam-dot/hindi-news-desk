@@ -1,29 +1,21 @@
 {
- "at": "2026-10-25T03:58:45+00:00",
+ "at": "2026-10-25T04:36:49+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 15 candidates from 23 trending",
-  "outlets: 1156 headlines from 30 feeds (18 owners), 9 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q140632219, kh-20261025-Q3517911, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "watch: 12 candidates from 21 trending",
+  "outlets: 1147 headlines from 30 feeds (18 owners), 7 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 4 kh- stories (on): kh-20261025-Q163225, kh-20261025-Q140632219, kh-20261025-Q56226, kh-20261025-Q19867977; dropped: explainer Rajesh Kumar Singh / Rajesh Kumar Singh: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261025-Q3517911: too low in Google News India's top stories (place 0.06, needs 0.35)",
+  "drop kh-20261025-Q56226: a world story goes out only near the top of the lists (place 0.54, needs 0.75)",
   "drop wk-Q141535181-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q139998119-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261025-Q56226: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q1771537: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q1699148: 88 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261025-Q19867977, wk-Q141760142; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q56226",
-  "published kh-20261025-Q19867977: https://www.youtube.com/shorts/3jagFxvwCls",
+  "drop wk-Q1699148: 89 h old and no longer trending live",
+  "drop wk-Q5218847: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141760142; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q56226",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "3jagFxvwCls",
-  "url": "https://www.youtube.com/shorts/3jagFxvwCls",
-  "youtube_title": "स्टारलिंक ने यूक्रेन में इंटरनेट स्पीड बहाल की #shorts #starlink",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
