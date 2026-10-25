@@ -1,26 +1,22 @@
 {
- "at": "2026-10-25T17:26:30+00:00",
+ "at": "2026-10-25T18:01:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 86 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.182, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.825, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 61.8}, 'category:attack': {'n': 13, 'lift': 1.341, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.9}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 18 candidates from 27 trending",
+  "watch: 15 candidates from 24 trending",
   "revisit tiger-shroff-2026-10-20: already revisited today; revisit Q163225: already revisited today; revisit Q10218: already revisited today; revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit Q213380: already revisited today; revisit Q7418472 (206 views): 0 owners reported new news on Sanjay Raut since its last Short",
-  "outlets: 1243 headlines from 30 feeds (19 owners), 11 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261025-imd-cyclone",
-  "explainers: 9 kh- stories (on): kh-20261025-Q1058, kh-20261025-Q6744197, kh-20261025-Q61445, kh-20261025-Q439564; dropped: explainer Mann Ki Baat’: fewer than 3 owners' headlines name it and the story; explainer Farooq's Pakistan: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1193 headlines from 29 feeds (19 owners), 10 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261025-Q6744197, kh-20261025-Q1058, kh-20261025-Q61445, kh-20261025-Q439564; dropped: explainer Mann Ki Baat’: fewer than 3 owners' headlines name it and the story; explainer Farooq's Pakistan: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261025-Q439564: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261025-Q3595166: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261025-Q23317: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261025-Q168225: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261025-Q43723: a world statement, politics or diplomacy story with no India connection",
   "drop wp-2026_Florida_A_M_University_shooting: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Florida_A_M_University_shooting; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q23317, kh-20261025-Q43723",
-  "skip kh-20261025-Q6744197: gate: no draft passed the fact checks: write BJP as भारतीय जनता पार्टी (the Hindi name people know), not भाजपा; police (पुलिस) is not in the sources (only one outlet reports it); beats 3,4 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: मल्लिकार्जुन खरगे, नरेन्द्र मोदी, पटना, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow",
-  "skip nw-20261025-imd-cyclone: gate: only 0 usable photos of IMD (want 2)",
-  "nothing eligible to publish",
+  "drop kh-20261025-Q43723: a world statement, politics or diplomacy story with no India connection",
+  "drop wk-Q141535181-2026w43: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Florida_A_M_University_shooting; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261025-Q43723",
   "channel: about, playlists done; nothing left to do"
  ]
 }
