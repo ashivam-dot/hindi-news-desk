@@ -21,7 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
 # A death no news report states yet is retried: Wikidata's P570 often comes before the outlets' items are read.
 RETRYABLE = ("words (want", "does not confirm the death", "no news report states the death", "usable photos",
-             "no draft passed", "came out garbled", "orbitwire", "pictures:", "text cards", "too few showable")
+             "no draft passed", "came out garbled", "orbitwire", "pictures:", "text cards", "too few showable",
+             "neither Wikidata nor the infobox gives a date", "event date conflicts")
 # A faceless subject (writer.FACELESS) is skipped for good whatever else the gate said: a run later the photo still
 # does not exist (CAPraPdXvns, Raihan Vadra). Picture and card ceilings stay retryable: the writer is stochastic and
 # a rewrite that names the person or thing in each beat passes, within ledger.retry's six tries.

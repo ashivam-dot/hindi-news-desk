@@ -36,3 +36,20 @@ def test_conflicting_current_article_lead_is_held():
     stories.check_lead_event_date(date(2026, 10, 24), 'On October 24, 2026, a shooting occurred.')
     stories.check_lead_event_date(date(2026, 10, 24), 'On 24 October 2026, a shooting occurred.')
     stories.check_lead_event_date(date(2026, 10, 24), 'The date of this incident remains unclear.')
+
+
+@pytest.mark.parametrize('reason', [
+    'gate: neither Wikidata nor the infobox gives a date for this event',
+    'gate: event date conflicts between the structured source (2026-10-25) and article lead (2026-10-24)',
+])
+def test_changed_source_dates_receive_only_the_existing_bounded_retries(tmp_path, monkeypatch, reason):
+    from desk import cli, ledger
+
+    monkeypatch.setattr(ledger, 'STATE', tmp_path)
+    assert cli.retryable(reason) and cli.retry_limit(reason) == 6
+    assert ledger.retry('wp-date-test', reason, limit=cli.retry_limit(reason))
+    assert not ledger.is_done('wp-date-test')
+    for _ in range(5):
+        ledger.retry('wp-date-test', reason, limit=cli.retry_limit(reason))
+    assert ledger.is_done('wp-date-test')
+    assert not cli.retryable('faceless: event date conflicts')
