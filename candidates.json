@@ -1,5 +1,5 @@
 {
- "at": "2026-10-25T23:00:55+00:00",
+ "at": "2026-10-25T23:30:40+00:00",
  "trending": [
   {
    "id": "kh-20261026-Q6744197",
@@ -154,10 +154,10 @@
    "top": {
     "IN": 1,
     "IN-hi": 1,
-    "IN-nation": 10,
+    "IN-nation": 11,
     "IN-hi-nation": 2
    },
-   "top_score": 1.95,
+   "top_score": 1.935,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
     "BJP to hold nationwide protest on October 26 against Kharge’s ‘baap’ remark for Modi"
@@ -173,7 +173,7 @@
    "views": 0,
    "traffic": 0,
    "news": 225000,
-   "news_at": "2026-10-25T23:00:55.407152+00:00",
+   "news_at": "2026-10-25T23:30:40.639801+00:00",
    "headlines": [
     "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
     "Houthis say they targeted Saudi oil sites; attacks reported in Aden",
@@ -247,15 +247,16 @@
    "story": "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
    "story_keys": [
     "flight",
+    "indigo",
     "shift"
    ],
    "date": "2026-10-25",
    "news_at": "2026-10-25T14:42:50+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "HT Media",
     "The Hindu Group",
+    "Bennett, Coleman & Co.",
     "NDTV",
     "Network18"
    ],
@@ -265,11 +266,11 @@
    "traffic": 0,
    "headlines": [
     "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
-    "IndiGo, Air India to shift flights to Navi Mumbai",
-    "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
     "IndiGo to move 12 international flights to Navi Mumbai, free up Mumbai airport",
     "Flight ops to shift from Mumbai to Navi Mumbai airport: Adani Airports, Air India Group announce plan",
-    "IndiGo, Air India clear runway for shift to Navi Mumbai airport"
+    "IndiGo, Air India clear runway for shift to Navi Mumbai airport",
+    "IndiGo, Air India to shift flights to Navi Mumbai",
+    "IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
    ],
    "hindi_headlines": [
     "मुंबई एयरपोर्ट से शिफ्ट होंगी इंड‍िगो-एयर इंड‍िया की कई उड़ानें, जानिए नवी मुंबई एयरपोर्ट से कब शुरू होगी सर्विस?",
@@ -325,16 +326,6 @@
      "at": "2026-10-25T11:58:06+00:00"
     },
     {
-     "title": "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/deadlock-thaws-indigo-to-start-international-flights-from-navi-mumbai-in-feb/articleshow/135189487.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T11:14:52+00:00"
-    },
-    {
      "title": "IndiGo, Air India to shift flights to Navi Mumbai",
      "url": "https://economictimes.indiatimes.com/nri/latest-updates/indigo-air-india-group-to-shift-flights-to-navi-mumbai-airport-ahead-of-mumbai-t1-redevelopment/articleshow/135188919.cms",
      "outlet": "The Economic Times",
@@ -346,10 +337,10 @@
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:Network18",
     "google-news:IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
@@ -506,15 +497,55 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 12
+    "IN": 3
    },
-   "top_score": 0.45,
+   "top_score": 0.9,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "rajneeti"
+  },
+  {
+   "qid": null,
+   "title": "2026 Florida A&M University shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-25T20:47:02+00:00",
+   "headlines": [
+    "At least 12 injured, including 6 children, in a shooting near Florida A&M University"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:At least 12 injured, including 6 children, in a shooting near Florida A&M University"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Florida_A_M_University_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-25",
+   "coords": [
+    30.42611111,
+    -84.29166667
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "qid": "Q320093",
@@ -1225,10 +1256,10 @@
    "top": {
     "IN": 1,
     "IN-hi": 1,
-    "IN-nation": 10,
+    "IN-nation": 11,
     "IN-hi-nation": 2
    },
-   "top_score": 1.95,
+   "top_score": 1.935,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
     "BJP to hold nationwide protest on October 26 against Kharge’s ‘baap’ remark for Modi"
@@ -1250,15 +1281,16 @@
    "story": "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
    "story_keys": [
     "flight",
+    "indigo",
     "shift"
    ],
    "date": "2026-10-25",
    "news_at": "2026-10-25T14:42:50+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "HT Media",
     "The Hindu Group",
+    "Bennett, Coleman & Co.",
     "NDTV",
     "Network18"
    ],
@@ -1268,11 +1300,11 @@
    "traffic": 0,
    "headlines": [
     "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
-    "IndiGo, Air India to shift flights to Navi Mumbai",
-    "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
     "IndiGo to move 12 international flights to Navi Mumbai, free up Mumbai airport",
     "Flight ops to shift from Mumbai to Navi Mumbai airport: Adani Airports, Air India Group announce plan",
-    "IndiGo, Air India clear runway for shift to Navi Mumbai airport"
+    "IndiGo, Air India clear runway for shift to Navi Mumbai airport",
+    "IndiGo, Air India to shift flights to Navi Mumbai",
+    "IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
    ],
    "hindi_headlines": [
     "मुंबई एयरपोर्ट से शिफ्ट होंगी इंड‍िगो-एयर इंड‍िया की कई उड़ानें, जानिए नवी मुंबई एयरपोर्ट से कब शुरू होगी सर्विस?",
@@ -1328,16 +1360,6 @@
      "at": "2026-10-25T11:58:06+00:00"
     },
     {
-     "title": "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/deadlock-thaws-indigo-to-start-international-flights-from-navi-mumbai-in-feb/articleshow/135189487.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T11:14:52+00:00"
-    },
-    {
      "title": "IndiGo, Air India to shift flights to Navi Mumbai",
      "url": "https://economictimes.indiatimes.com/nri/latest-updates/indigo-air-india-group-to-shift-flights-to-navi-mumbai-airport-ahead-of-mumbai-t1-redevelopment/articleshow/135188919.cms",
      "outlet": "The Economic Times",
@@ -1349,10 +1371,10 @@
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:Network18",
     "google-news:IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
@@ -1509,15 +1531,55 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 12
+    "IN": 3
    },
-   "top_score": 0.45,
+   "top_score": 0.9,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "rajneeti"
+  },
+  {
+   "qid": null,
+   "title": "2026 Florida A&M University shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-25T20:47:02+00:00",
+   "headlines": [
+    "At least 12 injured, including 6 children, in a shooting near Florida A&M University"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:At least 12 injured, including 6 children, in a shooting near Florida A&M University"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Florida_A_M_University_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-25",
+   "coords": [
+    30.42611111,
+    -84.29166667
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261026-Q23317",
@@ -2350,7 +2412,7 @@
  ],
  "notes": [
   "revisit kh-20261026-Q16202406-update: 4 owners' new reports on Tiger Shroff (1075 views before); revisit Q163225 (629 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit kh-20261026-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261026-Q2133",
-  "outlets: 1161 headlines from 30 feeds (19 owners), 12 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1152 headlines from 30 feeds (19 owners), 14 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 4 kh- stories (on): kh-20261026-Q6744197, kh-20261026-Q61445, kh-20261026-Q439564, kh-20261026-Q23317; dropped: explainer Apple Watches: fewer than 3 owners' headlines name it and the story; explainer Mann Ki Baat’: fewer than 3 owners' headlines name it and the story; explainer DK Shivakumar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again"
  ],
@@ -2359,10 +2421,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1161,
+  "headlines": 1152,
   "feeds": 30,
   "owners": 19,
-  "matched": 12,
+  "matched": 14,
   "corroborated": 5
  },
  "emerging": [],
@@ -2520,10 +2582,10 @@
    "top": {
     "IN": 1,
     "IN-hi": 1,
-    "IN-nation": 10,
+    "IN-nation": 11,
     "IN-hi-nation": 2
    },
-   "top_score": 1.95,
+   "top_score": 1.935,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
     "BJP to hold nationwide protest on October 26 against Kharge’s ‘baap’ remark for Modi"
@@ -2545,15 +2607,16 @@
    "story": "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
    "story_keys": [
     "flight",
+    "indigo",
     "shift"
    ],
    "date": "2026-10-25",
    "news_at": "2026-10-25T14:42:50+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "HT Media",
     "The Hindu Group",
+    "Bennett, Coleman & Co.",
     "NDTV",
     "Network18"
    ],
@@ -2563,11 +2626,11 @@
    "traffic": 0,
    "headlines": [
     "IndiGo, Air India to shift flights to Navi Mumbai as Mumbai airport prepares Terminal 1 redevelopment",
-    "IndiGo, Air India to shift flights to Navi Mumbai",
-    "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
     "IndiGo to move 12 international flights to Navi Mumbai, free up Mumbai airport",
     "Flight ops to shift from Mumbai to Navi Mumbai airport: Adani Airports, Air India Group announce plan",
-    "IndiGo, Air India clear runway for shift to Navi Mumbai airport"
+    "IndiGo, Air India clear runway for shift to Navi Mumbai airport",
+    "IndiGo, Air India to shift flights to Navi Mumbai",
+    "IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
    ],
    "hindi_headlines": [
     "मुंबई एयरपोर्ट से शिफ्ट होंगी इंड‍िगो-एयर इंड‍िया की कई उड़ानें, जानिए नवी मुंबई एयरपोर्ट से कब शुरू होगी सर्विस?",
@@ -2623,16 +2686,6 @@
      "at": "2026-10-25T11:58:06+00:00"
     },
     {
-     "title": "Deadlock thaws: IndiGo, AI Express to start int’l flights from Navi Mumbai from Dec",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/deadlock-thaws-indigo-to-start-international-flights-from-navi-mumbai-in-feb/articleshow/135189487.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T11:14:52+00:00"
-    },
-    {
      "title": "IndiGo, Air India to shift flights to Navi Mumbai",
      "url": "https://economictimes.indiatimes.com/nri/latest-updates/indigo-air-india-group-to-shift-flights-to-navi-mumbai-airport-ahead-of-mumbai-t1-redevelopment/articleshow/135188919.cms",
      "outlet": "The Economic Times",
@@ -2644,10 +2697,10 @@
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:Network18",
     "google-news:IndiGo, Air India Group To Shift Flights To Navi Mumbai Airport"
@@ -2804,9 +2857,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 12
+    "IN": 3
    },
-   "top_score": 0.45,
+   "top_score": 0.9,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
