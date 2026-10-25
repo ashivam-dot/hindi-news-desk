@@ -1,31 +1,32 @@
 # What this channel's own numbers say
 
-Updated 2026-10-25T03:33:53+00:00. Scored Shorts (views at 24 h): 84. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-25T07:13:21+00:00. Scored Shorts (views at 24 h): 84. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 43 views at 24 h.
-Retention: a typical Short is watched 45.7% through; a group's retention is blended into its lift at 0.5.
-- category:attack: x1.35 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 60.1% watched)
-- category:court: x1.202 ranking lift (8 Shorts, typical 70 views; 6 with retention, typically 49.8% watched)
-- category:aviation: x1.196 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
-- region:india: x1.091 ranking lift (48 Shorts, typical 48 views; 41 with retention, typically 49.9% watched)
-- lane:naam-niyam: x1.072 ranking lift (25 Shorts, typical 45 views; 21 with retention, typically 52.4% watched)
-- category:diplomacy: x1.027 ranking lift (5 Shorts, typical 34 views; 4 with retention, typically 65.8% watched)
-- lane:sensitive: x1.0 ranking lift (12 Shorts, typical 81 views; 10 with retention, typically 62.4% watched)
-- category:news: x0.968 ranking lift (23 Shorts, typical 39 views; 19 with retention, typically 46.8% watched)
-- region:world: x0.869 ranking lift (32 Shorts, typical 33 views; 30 with retention, typically 42.8% watched)
-- category:world: x0.827 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.1% watched)
-- category:economy: x0.816 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 35.4% watched)
-- category:protest: x0.809 ranking lift (5 Shorts, typical 16 views; 4 with retention, typically 55.9% watched)
-- lane:other: x0.75 ranking lift (14 Shorts, typical 18 views; 12 with retention, typically 33.9% watched)
+Retention: a typical Short is watched 46.5% through; a group's retention is blended into its lift at 0.5.
+- category:attack: x1.35 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 59.9% watched)
+- category:court: x1.196 ranking lift (8 Shorts, typical 70 views; 6 with retention, typically 49.8% watched)
+- category:aviation: x1.191 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
+- region:india: x1.09 ranking lift (48 Shorts, typical 48 views; 42 with retention, typically 50.7% watched)
+- lane:naam-niyam: x1.064 ranking lift (25 Shorts, typical 45 views; 21 with retention, typically 52.4% watched)
+- category:diplomacy: x1.022 ranking lift (5 Shorts, typical 34 views; 4 with retention, typically 65.8% watched)
+- lane:sensitive: x1.0 ranking lift (12 Shorts, typical 81 views; 10 with retention, typically 62.2% watched)
+- category:news: x0.973 ranking lift (23 Shorts, typical 39 views; 20 with retention, typically 48.2% watched)
+- region:world: x0.87 ranking lift (32 Shorts, typical 33 views; 31 with retention, typically 43.7% watched)
+- category:protest: x0.832 ranking lift (5 Shorts, typical 16 views; 5 with retention, typically 61.8% watched)
+- category:world: x0.823 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.1% watched)
+- category:economy: x0.812 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 35.4% watched)
+- lane:other: x0.75 ranking lift (14 Shorts, typical 18 views; 14 with retention, typically 38.9% watched)
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| cmp-20261025-IND-PAK-forces | 2026-10-25T03:28 | defence | india | other | india | 0 |  |  |
+| kh-20261025-Q19867977 | 2026-10-25T04:06 | world | world | other | india | 1 |  |  |
+| cmp-20261025-IND-PAK-forces | 2026-10-25T03:28 | defence | india | other | india | 8 |  |  |
 | cmp-20261024-IND-PAK | 2026-10-24T15:46 | defence | india | other | india | 15 | 12 |  |
-| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 460 | 251 |  |
+| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 502 | 251 |  |
 | kh-20261023-Q140632219-p2 | 2026-10-23T15:09 | court | india | naam-niyam | india | 86 | 17 | 61 |
 | kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 9 | 3 | 8 |
-| kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 40 | 4 | 25 |
+| kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 46 | 4 | 25 |
 | kh-20261023-Q140632219 | 2026-10-23T01:37 | court | india | naam-niyam | india | 158 | 8 | 84 |
 | kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 573 | 3 | 384 |
 | kh-20261022-Q163225 | 2026-10-22T13:02 | news | india | naam-niyam | india | 61 | 10 | 34 |
@@ -49,4 +50,3 @@ Retention: a typical Short is watched 45.7% through; a group's retention is blen
 | nw-20261019-tiger-shroff-attack | 2026-10-20T10:01 | attack | world | sensitive | india | 83 | 41 | 80 |
 | kh-20261020-Q90 | 2026-10-20T06:58 | news | world | other | world | 24 | 8 | 14 |
 | kh-20261020-Q3520790 | 2026-10-20T06:18 | news | india | naam-niyam | india | 46 | 12 | 36 |
-| kh-20261020-Q47498302 | 2026-10-20T05:26 | news | india | naam-niyam | india | 9 | 4 | 9 |
