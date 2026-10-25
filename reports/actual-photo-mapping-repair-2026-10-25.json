@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-25",
+  "source_before": "4cd0285a605e85d4c2b67bdf0b8babea8705e8af",
+  "observed_run": 40199975832,
+  "observed_delivery": false,
+  "failures": {
+    "kh-20261025-Q1058": [
+      "4/6 text cards",
+      "2 consecutive text cards",
+      "real photos fill 33%"
+    ],
+    "kh-20261025-Q10230": [
+      "3/6 text cards",
+      "Kharge named over fallback photo of another person"
+    ]
+  },
+  "root_causes": [
+    "anchorless returned early when only the person subject was available",
+    "early potential visual-supply check could not detect the final actual photo mapping"
+  ],
+  "changes": [
+    "check the sole available subject and its existing title aliases",
+    "run actual said_is_shown photo checks after factual approval and retitling within existing DRAFTS",
+    "reuse the exact accepted Short and mapping; preserve final prepare/render/publish checks"
+  ],
+  "unchanged": [
+    "DRAFTS",
+    "MAX_WRITTEN",
+    "factual/face/visual/voice/render/publish gates",
+    "licensing",
+    "upload/deduplication state",
+    "story selection and retry quotas"
+  ],
+  "tests": {
+    "focused_passed": 166,
+    "network": "offline fixtures only",
+    "live_result": "pending cloud CI and live run"
+  },
+  "release_approval": false
+}

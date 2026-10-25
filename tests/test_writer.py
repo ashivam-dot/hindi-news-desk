@@ -762,6 +762,36 @@ def test_a_hard_picture_failure_is_never_retained_for_release(tmp_path, monkeypa
     assert not any(row.get("retained_candidate_available") for row in log)
 
 
+def test_actual_photo_mapping_can_rewrite_within_existing_attempts(tmp_path):
+    pen = FakePen([[], []])
+    mapped = []
+
+    def pictures(d):
+        mapped.append(copy.deepcopy(d))
+        return ["text cards: 4 of 6 beats (at most 2)"] if len(mapped) == 1 else []
+
+    out, log, _ = writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                               log_path=tmp_path / "log.json", pen=pen, picture_check=pictures)
+    assert len(mapped) == 2 and mapped[-1] == out
+    assert log[0]["problems"] == ["text cards: 4 of 6 beats (at most 2)"]
+    assert log[0]["fact_check"]["verdict"]["unsupported"] == []
+
+
+def test_actual_photo_mapping_never_bypasses_fact_or_attempt_limits(tmp_path):
+    checked = []
+    with pytest.raises(ValueError, match="no draft passed"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=tmp_path / "log.json", pen=FakePen([[] for _ in range(writer.DRAFTS)]),
+                     picture_check=lambda d: checked.append(d) or ["pictures: wrong person"])
+    assert len(checked) == writer.DRAFTS
+    checked.clear()
+    with pytest.raises(ValueError, match="unsupported"):
+        writer.write("death", SUBJECT, "He", [], SOURCE_EN, SOURCE_HI, PHOTOS, HI_NAMES,
+                     log_path=tmp_path / "unsupported.json", pen=FakePen([[SAYS[0]] for _ in range(writer.DRAFTS)]),
+                     picture_check=lambda d: checked.append(d) or [])
+    assert checked == []
+
+
 def test_retention_is_limited_to_the_optional_value_ending(tmp_path, monkeypatch):
     monkeypatch.setattr(writer, "value_beat", lambda *a: ["optional value ending"])
     monkeypatch.setattr(writer, "advice", lambda *a: ["gives unsolicited advice"])

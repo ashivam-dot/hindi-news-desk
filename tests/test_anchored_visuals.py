@@ -220,6 +220,25 @@ def test_explainer_retry_offers_its_subject_as_a_visual_anchor(monkeypatch):
     assert writer.anchorless(draft, subject, True, kind="explainer") == []
 
 
+def test_sole_subject_still_requires_showable_beats(monkeypatch):
+    # Run 40199975832: no secondary cast, four unshowable beats passed the early check.
+    subject = {"en": "Narendra Modi", "hi": "नरेंद्र मोदी", "person": True}
+    monkeypatch.setattr(visuals, "showable_rows", lambda *a, **k: [])
+    draft = {"beats": [{"say": s} for s in [
+        "नरेंद्र मोदी ने डेटा सेंटर का उद्घाटन किया।",
+        "यह सेंटर जाटनी में बनाया गया है।",
+        "इसमें भुगतान प्रणालियां होस्ट की जाएंगी।",
+        "प्रधानमंत्री ने पहले की नीतियों पर सवाल उठाए।",
+        "वित्त मंत्री और गवर्नर भी मौजूद रहे।",
+        "संस्थान प्रशिक्षण देगा।"]]}
+    problems = writer.anchorless(draft, subject, True, kind="explainer")
+    assert any("beats 2,3,5,6 name nothing" in p for p in problems)
+    assert any("SHOWABLE: नरेंद्र मोदी" in p for p in problems)
+    for k in (1, 2, 4, 5):
+        draft["beats"][k]["say"] = "नरेंद्र मोदी ने कार्यक्रम में यह बात कही।"
+    assert writer.anchorless(draft, subject, True, kind="explainer") == []
+
+
 def test_card_ceiling_and_showable_retry(monkeypatch, tmp_path):
     """The Tiger Shroff "hurt" Short (39553699482) ended on three beats about the hospitals and the doctors, with no
     picture of them: its own rows are three cards in a row (the ceiling), and the writer is sent back with the

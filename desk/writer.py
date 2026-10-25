@@ -501,7 +501,7 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     # that subject from SHOWABLE sent the Sonia rewrite toward Rajiv alone, even
     # though the matcher also accepts explicit references to Sonia herself.
     listed = ([name] if kind in ("death", "explainer") and person and name else []) + [h for h in can if h != name]
-    if not listed or listed == [name] and kind != "death":
+    if not listed:
         return out
     cast = [{"hi": r["hi"], "kind": "thing" if r["kind"] == "thing" else "place", "alias": r.get("alias") or [],
              "map_only": r.get("map_only")} for r in rows if r["hi"] not in ("पुलिस", name)]
@@ -509,6 +509,8 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     maps = {match.key(c) for c in cast if c.get("map_only")}
     spell = [w for w in dict.fromkeys([name, *(name.split()[:1] + name.split()[-1:] if person else [])])
              if len(hindi.norm(w)) >= 3]
+    if person:
+        spell += visuals.titles(beats, name)
     empty, mapped = [], 0
     for k, b in enumerate(beats):
         found = {x for _, x in match.names(b.get("say") or "", cast, spell)}
@@ -987,7 +989,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
           earlier: list[str] | None = None, start: dict | None = None, focus: str | None = None,
           names_ok: list[str] | None = None, never: list[str] | None = None,
           status: str | None = None, hurt_ok: bool = False, india: bool | None = None,
-          near: dict | None = None) -> tuple[dict, list[dict], list[str]]:
+          near: dict | None = None, picture_check=None) -> tuple[dict, list[dict], list[str]]:
     """The script as {title, beats: [{say, photo, caption}], names}, the log of rejected drafts (also kept at
     log_path), and the models that answered. kind is "death", "incident" or "protest". reports: trusted outlets'
     articles ({outlet, owner, at, title, excerpt, text}), see the module docstring. title_hints: the story's Hindi
@@ -996,7 +998,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     angle of a case (plan.cases) this Short is about; names_ok: then the only people, places and bodies it may name;
     never: words (an accused's or a gang's name) the script may not contain at all; status: where the case stands
     now (an angle's reports may be older than the arrests). india: whether the story is Indian, for the SHOWABLE check
-    (anchorless; None skips it); near: where the story is (visuals.resolve)."""
+    (anchorless; None skips it); near: where the story is (visuals.resolve). picture_check: optional final actual
+    photo-mapping check, inside these same DRAFTS attempts, after factual approval and retitling."""
     obj = {"He": "him", "She": "her"}.get(pronoun, "them")
     hi_names = everyday_names(hi_names)
     if subject.get("hi") and hard_words(subject["hi"]):
@@ -1106,6 +1109,9 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             if not problems:
                 draft["title"], draft["titles"] = retitle(pen, draft, subject, ground_en, kind, agreed_toll,
                                                           reports, title_hints, earlier)
+                if picture_check is not None:
+                    problems = picture_check(draft)
+            if not problems:
                 if removed_names or retained_from is not None:
                     log.append({"attempt": attempt + 1, "problems": [], "draft": draft,
                                 "models": list(pen.used), "ignored": [], "accepted": True,
@@ -2251,6 +2257,43 @@ def build_explainer(cand: dict) -> Short:
     subject = {"en": name, "hi": name_hi, "person": person}
     when = date.fromisoformat(cand["date"])
     near = story_anchor(reports, cand.get("region", "india") == "india") if dateline(reports) else None
+    page = wiki.url(title)
+    sources = [page, f"https://www.wikidata.org/wiki/{qid}"] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi
+                                                                 else [])
+    label = cand.get("category_hi") or cat
+
+    def make_short(draft, log, used):
+        # New facts per candidate: _short adds its supported numeric facts in place.
+        hi = name_hi or _pair_for(draft, name) or name
+        facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
+                      + ", ".join(named), owners=named)]
+        if hurt:
+            facts.append(Fact("injured", str(hurt["count"]), hurt["url"], [str(hurt["count"])], hurt["en"],
+                              owners=hurt["owners"]))
+        short = _short(sid, "explainer", name, hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
+                       photos, sources, when.isoformat(), loss=False, mood="news", region=cand.get("region", "india"),
+                       tags=[name, hi, label, cat, "मतलबनामा", "हिंदी समाचार", "hindi news", "india news"],
+                       summary=f"{hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
+                               "Wikipedia से।",
+                       cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person, hook=cand.get("hook"),
+                       born=story_born(ent) if person else None, near=near)
+        short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
+                           min_photos=need, min_visuals=visuals.MIN_VISUALS - lead)
+        return short
+
+    prepared = []
+
+    def check_pictures(draft):
+        prepared.clear()
+        try:
+            short = make_short(draft, [], [])
+        except ValueError as exc:
+            return [str(exc)]
+        problems = gate.said_is_shown(short)
+        if not problems:
+            prepared.append(short)
+        return problems
+
     draft, log, used = write("explainer", subject, she, facts_text, source, source_hi, photos, wiki.hindi_names(ent),
                              log_path=work / "writer_log.json",
                              headlines=list(dict.fromkeys([story] + (cand.get("headlines") or [])))[:6],
@@ -2258,26 +2301,11 @@ def build_explainer(cand: dict) -> Short:
                              title_hints=hindi_hints(cand), earlier=cand.get("earlier"), start=cand.get("draft"),
                              focus=cand.get("focus"), names_ok=cand.get("names_ok"), never=cand.get("never"),
                              status=cand.get("case_status"), hurt_ok=bool(hurt),
-                             india=cand.get("region", "india") == "india", near=near)
-    name_hi = name_hi or _pair_for(draft, name) or name
-    page = wiki.url(title)
-    facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title; named in the reports of "
-                  + ", ".join(named), owners=named)]
-    if hurt:
-        facts.append(Fact("injured", str(hurt["count"]), hurt["url"], [str(hurt["count"])], hurt["en"],
-                          owners=hurt["owners"]))
-    sources = [page, f"https://www.wikidata.org/wiki/{qid}"] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi
-                                                                 else [])
-    label = cand.get("category_hi") or cat
-    short = _short(sid, "explainer", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
-                   photos, sources, when.isoformat(), loss=False, mood="news", region=cand.get("region", "india"),
-                   tags=[name, name_hi, label, cat, "मतलबनामा", "हिंदी समाचार", "hindi news", "india news"],
-                   summary=f"{name_hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
-                           "Wikipedia से।",
-                   cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person, hook=cand.get("hook"),
-                   born=story_born(ent) if person else None, near=near)
-    short.scene.update(qid=qid, category=cat, category_hi=label, headlines=cand.get("headlines") or [], story=story,
-                       min_photos=need, min_visuals=visuals.MIN_VISUALS - lead)
+                             india=cand.get("region", "india") == "india", near=near,
+                             picture_check=check_pictures if config.MATCHER != "legacy" else None)
+    # Reuse the exact checked mapping; fetching and mapping again could give a different result.
+    short = prepared[0] if prepared else make_short(draft, log, used)
+    short.scene["writer"].update(models=used, rejected=log, titles=draft.get("titles"))
     return short
 
 

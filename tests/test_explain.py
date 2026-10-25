@@ -260,6 +260,54 @@ def _short(**scene):
                  event_time="2026-10-13", tags=[], summary="", credits=[], hashtags=[])
 
 
+def test_explainer_reuses_the_exact_checked_mapping(monkeypatch):
+    # A later lookup may change photo supply. Return the mapping accepted inside write,
+    # preserving the final visual gate, rather than fetching and mapping it a second time.
+    monkeypatch.setattr(config, "EXPLAINERS", True)
+    monkeypatch.setattr(config, "MATCHER", "anchored")
+    monkeypatch.setattr(wiki, "entities", lambda ids: {"Q1": {}})
+    monkeypatch.setattr(wiki, "label", lambda e: "Institution")
+    monkeypatch.setattr(wiki, "common_hindi", lambda e: "संस्थान")
+    monkeypatch.setattr(wiki, "hindi_names", lambda e: {})
+    monkeypatch.setattr(wiki, "claims", lambda *a: [])
+    monkeypatch.setattr(wiki, "article_text", lambda *a, **k: "")
+    monkeypatch.setattr(writer, "_hindi_source", lambda *a, **k: ("", None))
+    monkeypatch.setattr(writer, "incident_context", lambda *a: [])
+    monkeypatch.setattr(writer, "_shared", lambda *a: (None, set()))
+    reports = [{"owner": str(i), "url": f"https://example.com/{i}"} for i in range(3)]
+    monkeypatch.setattr(writer, "_reporting", lambda *a, **k: reports)
+    monkeypatch.setattr(gate, "reported", lambda *a: [r["owner"] for r in reports])
+    monkeypatch.setattr(writer, "clean_reports", lambda rows, *a, **k: rows)
+    monkeypatch.setattr(writer, "pick_photos", lambda *a, **k: [{"file": str(i)} for i in range(3)])
+    monkeypatch.setattr(writer, "recent_photos", lambda: set())
+    monkeypatch.setattr(writer, "dateline", lambda r: None)
+    monkeypatch.setattr(writer, "hindi_hints", lambda c: [])
+    monkeypatch.setattr(writer.outlets, "names", lambda rows: [r["owner"] for r in rows])
+    created = []
+
+    def mapped(*a, **kw):
+        s = _short(writer={"models": [], "rejected": [], "titles": None})
+        created.append(s)
+        return s
+
+    monkeypatch.setattr(writer, "_short", mapped)
+    monkeypatch.setattr(gate, "said_is_shown", lambda s: ["text cards: too many"] if len(created) == 1 else [])
+    log = [{"problems": ["text cards: too many"]}]
+
+    def write(*a, **kw):
+        d = {"titles": ["स्रोत समर्थित शीर्षक"]}
+        assert kw["picture_check"](d) == ["text cards: too many"]
+        assert kw["picture_check"](d) == []
+        return d, log, ["tested-model"]
+
+    monkeypatch.setattr(writer, "write", write)
+    got = writer.build_explainer({"id": "kh-x", "category": "politics", "qid": "Q1", "title": "Institution",
+                                  "date": "2026-10-25", "person": False, "story": "Institution opens"})
+    assert len(created) == 2 and got is created[1]
+    assert got.scene["writer"]["rejected"] is log
+    assert got.scene["writer"]["models"] == ["tested-model"]
+
+
 def test_screen_shows_the_category_and_the_sources():
     s = _short(category_hi="राजनीति", reporting=[{"outlet": "BBC", "outlet_hi": "बीबीसी"},
                                                  {"outlet": "The Hindu", "outlet_hi": "द हिंदू"}])
