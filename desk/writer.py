@@ -125,7 +125,7 @@ avoid a protest. Never mention suicide."""
 
 EXPLAINER_BRIEF = """STORY: {name}, in today's news: the story the first of TODAY'S LEAD HEADLINES points at (a
 headline only shows which story; its words are not a source). Write a Hindi TV news report: a viewer who saw only
-the headline knows, in 45 seconds, what happened, the key numbers, why, and what happens next.
+the headline knows, in about 20-25 seconds, what happened, the key numbers, why, and the reported next step.
 
 Shape (a news report, in this order):
 1. Hook (beat 1, 8 to 14 words): a plain news sentence naming {name} and the most striking fact of the story, who
@@ -157,9 +157,10 @@ RULES = """RULES (all mandatory):
   निर्णय, कोर्ट not न्यायालय, जज not न्यायाधीश, वकील not अधिवक्ता, हफ्ते not सप्ताह, शुरू not प्रारंभ, खत्म not
   समाप्त, कोशिश not प्रयास, बढ़ोतरी not वृद्धि, IMF not अंतरराष्ट्रीय मुद्रा कोष, मौसम विभाग not भारत मौसम विज्ञान
   विभाग, even where HINDI NAMES gives the formal name. Never translate an English idiom word for word: say what it means as a Hindi bulletin would ("high tea" is
-  "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). 6 or 7 beats and {words} Hindi words in total (about 30
-  seconds spoken). Each beat is one spoken sentence, or two short ones, 8 to 14 words in all. Count the words before
-  you answer.
+  "चाय पर बैठक", never "उच्च चाय"; "huddle" is "बैठक"). Use six concise beats and {words} Hindi words in total
+  (about 20-25 seconds spoken). Aim for 8-9 words per beat; a beat may use up to 14 only while the whole report stays
+  inside the total word budget. Each beat is one complete spoken sentence, or two short ones. Count all spoken
+  words across the six beats before you answer; do not give each beat its own copy of the total word budget.
 - Names: call every person by the name the public knows and Hindi newsrooms print (जैकी श्रॉफ, never his birth name
   जय किशन श्रॉफ; लालकृष्ण आडवाणी), the spelling HINDI NAMES gives. A short, well-known form is fine after the first
   mention (आडवाणी, फडणवीस). A name HINDI NAMES does not give is written by its own sound, never as the Hindi
