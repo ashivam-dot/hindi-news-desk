@@ -494,7 +494,10 @@ def anchorless(draft: dict, subject: dict, india: bool, cache: dict | None = Non
     out = _unnamed_subject(beats, name) if person and kind in ("", "explainer") else []
     rows = visuals.showable_rows(draft, subject["en"] if person else "", india, cache, near, tribute=kind == "death")
     can = list(dict.fromkeys(r["hi"] for r in rows))
-    listed = ([name] if kind == "death" and person and name else []) + [h for h in can if h != name]
+    # An explainer's own face-matched subject photos are already available. Omitting
+    # that subject from SHOWABLE sent the Sonia rewrite toward Rajiv alone, even
+    # though the matcher also accepts explicit references to Sonia herself.
+    listed = ([name] if kind in ("death", "explainer") and person and name else []) + [h for h in can if h != name]
     if not listed or listed == [name] and kind != "death":
         return out
     cast = [{"hi": r["hi"], "kind": "thing" if r["kind"] == "thing" else "place", "alias": r.get("alias") or [],

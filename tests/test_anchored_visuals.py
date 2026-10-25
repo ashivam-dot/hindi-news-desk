@@ -200,6 +200,26 @@ def hurt_draft():
                       for b in s.beats if b.shot != "outro"]}
 
 
+def test_explainer_retry_offers_its_subject_as_a_visual_anchor(monkeypatch):
+    # Run 40183742922 had eight Sonia photos and one Rajiv photo, but the writer's
+    # retry listed only Rajiv. Keep refusing unanchored beats and offer both names.
+    subject = {"en": "Sonia Gandhi", "hi": "सोनिया गाँधी", "person": True}
+    monkeypatch.setattr(visuals, "showable_rows", lambda *a, **k: [
+        {"hi": "राजीव गाँधी", "kind": "person", "alias": [], "map_only": False}])
+    draft = {"beats": [{"say": say} for say in [
+        "सोनिया गाँधी ने अपनी किताब का वीडियो साझा किया।",
+        "राजीव गाँधी से उनकी मुलाकात कैम्ब्रिज में हुई।",
+        "उन्होंने पुरानी यादें साझा कीं।",
+        "यह एक संस्मरण है।",
+        "किताब नवंबर में आएगी।"]]}
+    problems = writer.anchorless(draft, subject, True, kind="explainer")
+    assert any("beats 3,4,5 name nothing" in p for p in problems)
+    assert any("SHOWABLE: सोनिया गाँधी, राजीव गाँधी" in p for p in problems)
+    for beat in draft["beats"][2:]:
+        beat["say"] = "सोनिया गाँधी ने अपनी किताब की यादें साझा कीं।"
+    assert writer.anchorless(draft, subject, True, kind="explainer") == []
+
+
 def test_card_ceiling_and_showable_retry(monkeypatch, tmp_path):
     """The Tiger Shroff "hurt" Short (39553699482) ended on three beats about the hospitals and the doctors, with no
     picture of them: its own rows are three cards in a row (the ceiling), and the writer is sent back with the
