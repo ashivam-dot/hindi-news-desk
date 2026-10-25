@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-25T17:26:30+00:00. Scored Shorts (views at 24 h): 86. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-25T20:39:17+00:00. Scored Shorts (views at 24 h): 86. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 44 views at 24 h.
 Retention: a typical Short is watched 47.1% through; a group's retention is blended into its lift at 0.5.
@@ -23,7 +23,7 @@ Retention: a typical Short is watched 47.1% through; a group's retention is blen
 | kh-20261025-Q19867977 | 2026-10-25T04:06 | world | world | other | india | 3 | 1 |  |
 | cmp-20261025-IND-PAK-forces | 2026-10-25T03:28 | defence | india | other | india | 23 | 8 |  |
 | cmp-20261024-IND-PAK | 2026-10-24T15:46 | defence | india | other | india | 15 | 12 | 15 |
-| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 623 | 251 | 598 |
+| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 629 | 251 | 598 |
 | kh-20261023-Q140632219-p2 | 2026-10-23T15:09 | court | india | naam-niyam | india | 98 | 17 | 61 |
 | kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 10 | 3 | 8 |
 | kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 47 | 4 | 25 |
