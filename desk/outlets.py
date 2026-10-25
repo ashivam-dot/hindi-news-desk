@@ -419,6 +419,9 @@ gaza palestinian lebanon syria afghanistan africa african asia asian japan japan
 german italy spain canada australia mexico brazil indonesia philippines turkey saudi arabia uae world global
 government police army centre center state states national north south east west northern southern eastern western
 pm president un""".split())
+# Descriptive incident words still help cluster headlines, but never name the
+# place/subject that must be corroborated and photographed.
+NAMELESS = {"clash", "clashes"}
 STOP = set("""the and for from with into over after near of on in at to by a an as is are was were be been has have had
 its it this that these those their they them his her who what when where how why amid says said say will would
 could can may more most than new latest update updates report reports reported day days week year years""".split())
@@ -479,7 +482,8 @@ def scene_words(headlines: list[str], name: str, limit: int = 3) -> list[str]:
 
 
 def _joinable(word: str) -> bool:
-    return word[0].isupper() and not _kind_word(word) and _stem(word) not in STOP and word.lower() not in GENERIC
+    return (word[0].isupper() and not _kind_word(word) and _stem(word) not in STOP
+            and word.lower() not in GENERIC | NAMELESS)
 
 
 def phrase(key: str, items: list[dict]) -> str:
@@ -594,7 +598,8 @@ def stories(items: list[dict], now: datetime, known: list[str] | None = None,
             return min(ws.index(key) if key in ws else 99 for ws in words)
 
         # Ties go to the name the headlines write first ("Kolkata Durga Puja pandal"), never to set order.
-        named = sorted((k for k in c["counts"] if k in c["names"] and k not in GENERIC),
+        named = sorted((k for k in c["counts"] if k in c["names"]
+                        and k not in GENERIC | {_stem(w) for w in NAMELESS}),
                        key=lambda k: (-c["counts"][k], first_at(k), k))
         if not named:
             continue
