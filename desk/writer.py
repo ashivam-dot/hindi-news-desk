@@ -1571,6 +1571,26 @@ def build_death(cand: dict) -> Short:
     return short
 
 
+INCIDENT_SUBJECT_FIELDS = ('target', 'trains', 'train', 'line', 'operator', 'aircraft_type', 'aircraft',
+                           'airline', 'vessel', 'ship', 'origin', 'destination', 'stations')
+INCIDENT_PLACE_FIELDS = ('location', 'site', 'place', 'areas affected', 'areas', 'country')
+INCIDENT_SUBJECT_LINK = re.compile(
+    r'\b(Express|Mail|Railways?|railway station|Junction|Line|Metro|Bridge|Airlines?|Airways|Air|Airport|'
+    r'Flight|Boeing|Airbus|[Ff]erry|MV|MS|University|College|School|Stadium)\b')
+INCIDENT_BACKGROUND = re.compile(
+    r'^==\s*(Background|History|Previous incidents|Similar incidents|See also|References|External links)'
+    r'\s*==.*?(?=^==[^=]|\Z)', re.M | re.S)
+
+
+def incident_subject_links(raw: dict, wikitext: str) -> list[str]:
+    """Named vehicles and venues before broad places, matching the English desk's sourcing order."""
+    def links(text):
+        return [t.strip() for t in re.findall(r'\[\[([^\]|#]+)', text) if ':' not in t and t.strip()]
+    found = links(' '.join(raw.get(k, '') for k in INCIDENT_SUBJECT_FIELDS))
+    found += [t for t in links(INCIDENT_BACKGROUND.sub('', wikitext)) if INCIDENT_SUBJECT_LINK.search(t)]
+    return [t for t in dict.fromkeys(found) if t[:1].isupper()]
+
+
 def build_incident(cand: dict) -> Short:
     article, qid, cat = cand["title"], cand.get("qid"), cand["category"]
     name = stories.plain_title(article)
@@ -1592,11 +1612,18 @@ def build_incident(cand: dict) -> Short:
     extra = [c["value"] for pid in ("P276", "P1427", "P1444", "P121", "P137") for c in wiki.claims(ent, pid)[:1]
              if isinstance(c["value"], str) and c["value"].startswith("Q")]
     if not extra:
-        # An article Wikidata does not describe yet: the places its infobox links to give the location photos.
-        links = re.findall(r"\[\[([^\]|#]+)", " ".join(raw.get(k, "") for k in ("target", "location", "site", "place",
-                                                                                "areas affected", "areas", "country")))
-        found = wiki.page_info(list(dict.fromkeys(links))[:6]) if links else {}
-        extra = list(dict.fromkeys(p["qid"] for p in found.values() if p.get("qid")))[:3]
+        # An unlinked event still names its actual venue/vehicle in the article.
+        # Keep the same subject-first order used to reproduce Orbitwire's exclusions.
+        try:
+            text = wiki.wikitext(article)
+        except Exception:
+            text = ''
+        links = incident_subject_links(raw, text)
+        links += [t.strip() for t in re.findall(r'\[\[([^\]|#]+)',
+                  ' '.join(raw.get(k, '') for k in INCIDENT_PLACE_FIELDS)) if ':' not in t]
+        found = wiki.page_info(list(dict.fromkeys(links))[:8]) if links else {}
+        extra = list(dict.fromkeys(found[t]['qid'] for t in dict.fromkeys(links)
+                                   if (found.get(t) or {}).get('qid')))[:5]
     sid = cand.get("id") or f"wk-{qid}"
     work = WORK / sid
     context = incident_context(ent, extra)
