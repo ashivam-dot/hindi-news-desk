@@ -349,7 +349,7 @@ def run(dry: bool = False, preview: bool = False) -> dict:
             # Outside the window a dry run previews the story the next live run would make first.
             now = datetime.now(timezone.utc)
             # A case angle over its caps is held by the live run whatever the hour, so it is never previewed.
-            unheld = [c for c in found["candidates"] if not c.get("case_wait")]
+            unheld = [c for c in found["candidates"] if not c.get("case_wait") and not plan.child_harm(c)]
             pool = [c for c in unheld if not c.get("orbitwire")] or unheld
             ready = [c for c in sorted(pool, key=lambda c: -plan.priority(c, now))
                      if c.get("case") or not (plan.stale(c, now) or plan.unpopular(c, now))] or pool

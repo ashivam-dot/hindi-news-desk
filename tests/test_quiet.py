@@ -74,6 +74,21 @@ def test_quiet_word_budget(monkeypatch):
     assert max(len(b["say"].split()) for b in draft["beats"]) <= quiet.MAX_BEAT_WORDS
 
 
+@pytest.mark.parametrize("headline, out", [
+    ("Kolkata teen, father and friend paraded naked after he was caught with 13-year-old", True),
+    ("Father, 18-year-old son allegedly paraded naked over relationship with minor girl in Kolkata", True),
+    ("नाबालिग से दुष्कर्म के आरोपी को उम्रकैद", True),
+    ("Israeli strike kills 12 children in Gaza", False),
+    ("India-US relationship: more student visas, says Rubio", False),
+    ("Police assault students at Jadavpur protest", False),
+    ("Sexual harassment case against minister: court summons", False),
+])
+def test_child_harm_stories_are_dropped(headline, out):
+    from desk import plan
+
+    assert bool(plan.child_harm({"title": "", "headlines": [headline]})) is out
+
+
 def test_stale_pictures_wants_one_new_photo_when_quiet(monkeypatch):
     photos = [{"file": f"F{i}.jpg"} for i in range(4)]
     views = [[0], [1], [2], [3]]

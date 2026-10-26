@@ -622,12 +622,32 @@ def stale(cand: dict, at: datetime) -> str | None:
     return f"{age:.0f} h old and no longer trending live"
 
 
+# A child in a sexual, nudity or humiliation story is never a Short (the 26 Oct dry run made "Kolkata teen, father and
+# friend paraded naked ... 13-year-old" when the channel was quiet): child safety and YouTube's advertiser rules.
+CHILD = re.compile(r"\b(minors?|teens?|teenagers?|schoolgirls?|schoolboys?|child|children|(?:[1-9]|1[0-7])-year-old)\b"
+                   r"|नाबालिग|किशोरी|बच्ची|बच्चों|बच्चे", re.I)
+HARM = re.compile(r"\b(naked|nude|stripped|sexual\w*|rape[ds]?|molest\w*|pocso|obscene|child abuse|"
+                  r"relationship with (?:a )?(?:minor|teen\w*))\b|नग्न|नंगा|निर्वस्त्र|यौन|दुष्कर्म|बलात्कार|छेड़छाड़|अश्लील",
+                  re.I)
+
+
+def child_harm(cand: dict) -> str | None:
+    text = " ".join([cand.get("title") or "", cand.get("story") or ""]
+                    + [h for k in ("headlines", "hindi_headlines", "top_headlines") for h in cand.get(k) or []])
+    if (child := CHILD.search(text)) and (harm := HARM.search(text)):
+        return f"a child ({child.group(0)}) in a {harm.group(0)} story: never told"
+    return None
+
+
 def lineup(cands: list[dict], at: datetime | None = None) -> tuple[list[dict], list[str]]:
     """Candidates the desk would publish now, best first, and a note for each one it is holding back or dropping."""
     at = at or datetime.now(timezone.utc)
     regular, urgent, spare = can_publish(at), can_publish(at, breaking=True), can_publish(at, spare=True)
     ready, notes = [], []
     for c in sorted(cands, key=lambda c: -priority(c, at)):
+        if why := child_harm(c):
+            notes.append(f"drop {c['id']}: {why}")
+            continue
         # A case angle runs until its file's "until": the owner chose to follow that story.
         # A comparison (desk/compare.py) is published data, not a trending story: it never goes stale.
         if why := None if c.get("case") or c.get("compare") else stale(c, at) or unpopular(c, at):
