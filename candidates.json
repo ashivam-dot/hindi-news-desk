@@ -1,33 +1,34 @@
 {
- "at": "2026-10-26T15:27:06+00:00",
+ "at": "2026-10-26T16:31:08+00:00",
  "trending": [
   {
    "qid": "Q141695384",
    "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 325000,
+   "fame": 450000,
    "views": 0,
    "traffic": 0,
-   "news": 275000,
-   "news_at": "2026-10-26T14:00:33+00:00",
+   "news": 400000,
+   "news_at": "2026-10-26T15:52:06+00:00",
    "headlines": [
     "Egypt approves military support for Saudi Arabia after Houthi attacks escalate",
+    "Houthis say they attacked Saudi oil pumping stations, Riyadh airport as fighting intensifies",
     "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
     "Intercepted Houthi missiles cause damage in Saudi Arabian city"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
-    "US",
+    "IN",
     "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
     "wikipedia-current-events-2026-10-25",
     "google-news:Egypt approves military support for Saudi Arabia after Houthi attacks escalate",
+    "google-news:Houthis say they attacked Saudi oil pumping stations, Riyadh airport as fighting intensifies",
     "google-news:Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
-    "google-news:Intercepted Houthi missiles cause damage in Saudi Arabian city",
     "outlet:Al Jazeera Media Network"
    ],
    "owners": [
@@ -51,9 +52,13 @@
    "date": "2026-10-10",
    "coords": null,
    "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Egypt approves military support for Saudi Arabia after Houthi attacks escalate"
+   ],
    "hindi_owners": []
   },
   {
@@ -174,6 +179,149 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261026-Q6744197",
+   "qid": "Q6744197",
+   "title": "Mallikarjun Kharge",
+   "name": "Mallikarjun Kharge",
+   "phrase": "Kharge",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+   "story_keys": [
+    "baap'",
+    "mallikarjun",
+    "news",
+    "political",
+    "row",
+    "spark",
+    "won't"
+   ],
+   "date": "2026-10-25",
+   "news_at": "2026-10-26T13:23:27+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+    "BJP Leader Files Police Complaint Against Kharge Over 'Baap' Remarks On PM Modi",
+    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
+    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
+    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
+    "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi"
+   ],
+   "hindi_headlines": [
+    "मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
+   ],
+   "hindi_news": 2,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "मल्लिकार्जुन खरगे",
+   "reports": [
+    {
+     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
+     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T13:23:27+00:00"
+    },
+    {
+     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T13:01:52+00:00"
+    },
+    {
+     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T09:23:17+00:00"
+    },
+    {
+     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
+     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T06:34:15+00:00"
+    },
+    {
+     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
+     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T05:04:30+00:00"
+    },
+    {
+     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
+     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T04:28:26+00:00"
+    },
+    {
+     "title": "BJP Leader Files Police Complaint Against Kharge Over 'Baap' Remarks On PM Modi",
+     "url": "https://www.news18.com/india/bjp-leader-files-police-complaint-against-kharge-over-baap-remarks-on-pm-modi-10397220.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T17:01:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-hi": 2,
+    "IN-nation": 5,
+    "IN-hi-nation": 5
+   },
+   "top_score": 1.905,
+   "top_headlines": [
+    "मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "India news: BJP to protest nationwide over opposition's Modi remark",
+    "Sultanpur Court Acquits LoP Rahul Gandhi In 2018 Defamation Case Over Remarks Against Amit Shah"
+   ],
+   "hindi_owners": []
+  },
+  {
    "id": "kh-20261026-Q37181",
    "qid": "Q37181",
    "title": "Luiz Inácio Lula da Silva",
@@ -208,7 +356,7 @@
     "Brazilian leftist President Lula wins reelection against conservative challenger Flavio Bolsonaro",
     "Lula wins fourth term: What are the reactions in Brazil?",
     "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -274,14 +422,14 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
     "outlet:India Today Group",
-    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "google-news:Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "top": {
-    "IN": 4
+    "IN": 14
    },
-   "top_score": 0.85,
+   "top_score": 0.35,
    "top_headlines": [
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -324,157 +472,6 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261026-Q6744197",
-   "qid": "Q6744197",
-   "title": "Mallikarjun Kharge",
-   "name": "Mallikarjun Kharge",
-   "phrase": "Kharge",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-   "story_keys": [
-    "baap'",
-    "insult",
-    "mallikarjun",
-    "news",
-    "political",
-    "rajnath",
-    "row",
-    "singh",
-    "slam",
-    "spark",
-    "won't"
-   ],
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T13:23:27+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-    "Mallikarjun Kharge Faces Backlash Over ‘Modi Ka Baap Bhi Jayega’ Remark | BJP Vs Congress | News18",
-    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-    "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress"
-   ],
-   "hindi_headlines": [
-    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "मल्लिकार्जुन खरगे",
-   "reports": [
-    {
-     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
-     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:23:27+00:00"
-    },
-    {
-     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:01:52+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
-     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T09:23:17+00:00"
-    },
-    {
-     "title": "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress",
-     "url": "https://www.news18.com/videos/india/rajnath-singh-slams-congress-chief-kharge-insult-to-india-row-erupts-between-bjp-and-congress-10397891.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:32:42+00:00"
-    },
-    {
-     "title": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-     "url": "https://www.news18.com/india/insult-to-india-itself-rajnath-singh-slams-mallikarjun-kharge-over-pm-modi-remark-ws-l-10397872.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:31:09+00:00"
-    },
-    {
-     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T06:34:15+00:00"
-    },
-    {
-     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T05:04:30+00:00"
-    },
-    {
-     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T04:28:26+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "top": {
-    "IN": 3,
-    "IN-nation": 16
-   },
-   "top_score": 0.975,
-   "top_headlines": [
-    "India news: BJP to protest nationwide over opposition's Modi remark"
-   ],
-   "hindi_owners": []
-  },
-  {
    "id": "kh-20261026-Q116758847",
    "qid": "Q116758847",
    "title": "Anthropic",
@@ -484,11 +481,11 @@
    "kind": "explainer",
    "category": "economy",
    "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
+   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
    "story_keys": [
     "file",
     "giant",
-    "next"
+    "plan"
    ],
    "date": "2026-10-26",
    "news_at": "2026-10-26T14:40:45+00:00",
@@ -502,8 +499,8 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
     "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
+    "Anthropic said to plan for Mega-IPO Monday",
     "From Amazon to Google: The tech giants betting billions on Anthropic’s IPO",
     "Artificial Intelligence giant Anthropic files for Initial Public Offering",
     "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
@@ -546,14 +543,14 @@
      "at": "2026-10-26T13:26:27+00:00"
     },
     {
-     "title": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/ai-giant-anthropic-to-make-wall-street-debut-next-month-could-be-biggest-ever-initial-public-sale-of-stock-key-details-from-claude-makers-filing/articleshow/135212910.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Anthropic said to plan for Mega-IPO Monday",
+     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T13:18:37+00:00"
+     "at": "2026-10-26T12:23:45+00:00"
     }
    ],
    "via": [
@@ -567,11 +564,70 @@
    },
    "top_score": 0.3,
    "top_headlines": [
-    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
+    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol",
+    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": null,
+   "title": "2026 Florida A&M University shooting",
+   "fame": 165549,
+   "views": 15549,
+   "traffic": 0,
+   "news": 150000,
+   "news_at": "2026-10-26T15:37:51+00:00",
+   "headlines": [
+    "12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested",
+    "Fifteen-year-old arrested in shooting near Florida university that injured 12"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-25",
+    "google-news:12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested",
+    "google-news:Fifteen-year-old arrested in shooting near Florida university that injured 12",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Fifteen-year-old arrested in shooting near Florida university that injured 12",
+     "url": "https://www.theguardian.com/us-news/2026/oct/26/florida-famu-shooting-arrest",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-26T15:37:51+00:00"
+    }
+   ],
+   "id": "wp-2026_Florida_A_M_University_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-25",
+   "coords": [
+    30.42611111,
+    -84.29166667
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "qid": "Q5386105",
@@ -580,9 +636,9 @@
    "views": 0,
    "traffic": 0,
    "news": 150000,
-   "news_at": "2026-10-26T11:17:41+00:00",
+   "news_at": "2026-10-26T15:56:07+00:00",
    "headlines": [
-    "Eric Bauza, voice of Bugs Bunny, Daffy Duck and Porky Pig, dies at 46",
+    "Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies at 46",
     "Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46"
    ],
    "hindi_news": 0,
@@ -595,7 +651,7 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Eric Bauza, voice of Bugs Bunny, Daffy Duck and Porky Pig, dies at 46",
+    "google-news:Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies at 46",
     "google-news:Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46",
     "outlet:BBC"
    ],
@@ -622,47 +678,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "qid": null,
-   "title": "2026 Florida A&M University shooting",
-   "fame": 140549,
-   "views": 15549,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-26T13:44:06+00:00",
-   "headlines": [
-    "12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25",
-    "google-news:12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-2026_Florida_A_M_University_shooting",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-25",
-   "coords": [
-    30.42611111,
-    -84.29166667
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
   },
   {
    "qid": "Q101137",
@@ -707,7 +722,7 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-25",
-   "news_at": "2026-10-26T14:59:39+00:00",
+   "news_at": "2026-10-26T16:24:01+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -742,7 +757,17 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T14:59:39+00:00"
+     "at": "2026-10-26T16:24:01+00:00"
+    },
+    {
+     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
+     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T16:10:40+00:00"
     },
     {
      "title": "Kakinada coast braces for cyclone Arnab; 89,000 people being evacuated",
@@ -803,16 +828,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-26T10:52:39+00:00"
-    },
-    {
-     "title": "Cyclone Arnab closing in on Andhra coast, 4 states on alert ahead of landfall",
-     "url": "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-coast-landfall-odisha-telangana-chhattisgarh-puducherry-centre-alert-3025259-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T10:33:34+00:00"
     }
    ],
    "via": [
@@ -824,18 +839,18 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 1.2,
    "top_headlines": [
     "Cyclonic storm 'Arnab' to cross Andhra Pradesh-Yanam coast as very severe storm by October 28: IMD | LIVE"
    ],
    "hindi_owners": [
+    "BBC",
     "TV9 Network",
     "Network18",
-    "HT Media",
-    "India Today Group"
+    "HT Media"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -843,42 +858,23 @@
   {
    "qid": "Q141820731",
    "title": "2026 Karak church shooting",
-   "fame": 75000,
+   "fame": 50000,
    "views": 0,
    "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-26T15:27:06.273804+00:00",
-   "headlines": [
-    "Jordan arrests three following deadly terror attack on church"
-   ],
+   "news": 0,
+   "news_at": "2026-10-26T16:31:08.114599+00:00",
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "world"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-current-events-2026-10-26",
-    "google-news:Jordan arrests three following deadly terror attack on church",
-    "outlet:France Médias Monde"
+    "wikipedia-current-events-2026-10-26"
    ],
-   "owners": [
-    "France Médias Monde"
-   ],
-   "reports": [
-    {
-     "title": "Jordan arrests three following deadly terror attack on church",
-     "url": "https://www.france24.com/en/middle-east/20261026-jordan-arrests-three-following-deadly-terror-attack-on-church",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T15:12:52+00:00"
-    }
-   ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q141820731",
    "kind": "incident",
    "category": "attack",
@@ -892,94 +888,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "id": "kh-20261026-Q463735",
-   "qid": "Q463735",
-   "title": "Nilgiri Mountain Railway",
-   "name": "Nilgiri Mountain Railway",
-   "phrase": "Nilgiri Mountain Railway",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-   "story_keys": [
-    "service",
-    "train"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T15:27:44.148447+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-    "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-    "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "नीलगिरि पर्वतीय रेल",
-   "reports": [
-    {
-     "title": "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328643",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-10-26T15:27:44.148447+00:00"
-    },
-    {
-     "title": "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/nilgiri-mountain-railway-services-cancelled-from-october-27-to-29-2026/article71626939.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:17:08+00:00"
-    },
-    {
-     "title": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-     "url": "https://www.livemint.com/news/india/mumbai-local-train-services-hit-by-hanging-ohe-wire-central-railways-mainline-disrupted-11793015995884.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:07:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Government of India"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 12
-   },
-   "top_score": 0.735,
-   "top_headlines": [
-    "Mumbai local train chaos: Signal failures, overhead wire issue disrupt Central Railway services"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q320093",
@@ -1075,6 +983,183 @@
  ],
  "candidates": [
   {
+   "id": "nw-20261025-arnab-cyclone",
+   "qid": null,
+   "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-25",
+   "news_at": "2026-10-26T16:24:01+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
+    "Cyclone Arnab To Hit Andhra Coast On Oct 28; State Braces For Extremely Heavy Rainfall | Top Points",
+    "Cyclone Arnab: Where Has Very Severe Storm Reached & When Will It Make Landfall In Andhra Pradesh?",
+    "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
+    "Cyclone Arnab to make landfall on October 28 in Andhra Pradesh, evacuation of 5.7 lakh people to start soon"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/very-severe-cyclone-arnab-to-make-landfall-near-yanam-kakinada-red-alert-issued-for-seven-districts/article71626990.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T16:24:01+00:00"
+    },
+    {
+     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
+     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T16:10:40+00:00"
+    },
+    {
+     "title": "Kakinada coast braces for cyclone Arnab; 89,000 people being evacuated",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/kakinada-coast-braces-for-cyclone-arnab-89000-people-being-evacuated/article71627293.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T14:55:08+00:00"
+    },
+    {
+     "title": "Extremely heavy rain to hit Andhra on Tuesday as Cyclone Arnab comes close",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-extremely-heavy-rain-forecast-for-coastal-andhra-pradesh-odisha-and-telangana-3025392-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T14:00:38+00:00"
+    },
+    {
+     "title": "HT Evening News Brief October 26: Cyclone Arnab intensifies, Jamia protests continue, E100 cars get conditional nod",
+     "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-october-26-cyclone-arnab-jamia-protests-e100-fuel-vijay-deverakonda-rashmika-mandanna-samir-banerjee-tennis-101793017807927.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T12:41:38+00:00"
+    },
+    {
+     "title": "Weather Forecast: Heavy Rain Alert In 5 States As Cyclone Arnab Nears",
+     "url": "https://www.news18.com/india/weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-telangana-chhattisgarh-uttar-pradesh-as-cyclone-arnab-nears-ws-e-10398233.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T11:11:48+00:00"
+    },
+    {
+     "title": "Cyclone Arnab Nears Andhra, 4 States On Alert Ahead Of Landfall; Landslide Warning Issued",
+     "url": "https://www.news18.com/india/cyclone-arnab-nears-andhra-4-states-on-alert-ahead-of-landfall-landslide-warning-issued-10398221.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T11:08:01+00:00"
+    },
+    {
+     "title": "Cyclone Arnab latest updates: Andhra Pradesh landfall likely on October 28; Odisha shuts schools in 6 districts",
+     "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T10:52:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 3,
+    "IN-nation": 1
+   },
+   "top_score": 1.2,
+   "top_headlines": [
+    "Cyclonic storm 'Arnab' to cross Andhra Pradesh-Yanam coast as very severe storm by October 28: IMD | LIVE"
+   ],
+   "hindi_owners": [
+    "BBC",
+    "TV9 Network",
+    "Network18",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "qid": "Q85850332",
+   "title": "Chef Damu",
+   "fame": 249496,
+   "views": 124496,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-25T09:16:24+00:00",
+   "headlines": [
+    "Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-25",
+    "google-news:Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q85850332",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-25",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261026-Q37181",
    "qid": "Q37181",
    "title": "Luiz Inácio Lula da Silva",
@@ -1109,7 +1194,7 @@
     "Brazilian leftist President Lula wins reelection against conservative challenger Flavio Bolsonaro",
     "Lula wins fourth term: What are the reactions in Brazil?",
     "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1175,195 +1260,18 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
     "outlet:India Today Group",
-    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "google-news:Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "top": {
-    "IN": 4
+    "IN": 14
    },
-   "top_score": 0.85,
+   "top_score": 0.35,
    "top_headlines": [
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "nw-20261025-arnab-cyclone",
-   "qid": null,
-   "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
-   "name": "Arnab",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T14:59:39+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
-    "Cyclone Arnab To Hit Andhra Coast On Oct 28; State Braces For Extremely Heavy Rainfall | Top Points",
-    "Cyclone Arnab: Where Has Very Severe Storm Reached & When Will It Make Landfall In Andhra Pradesh?",
-    "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
-    "Cyclone Arnab to make landfall on October 28 in Andhra Pradesh, evacuation of 5.7 lakh people to start soon"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/very-severe-cyclone-arnab-to-make-landfall-near-yanam-kakinada-red-alert-issued-for-seven-districts/article71626990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:59:39+00:00"
-    },
-    {
-     "title": "Kakinada coast braces for cyclone Arnab; 89,000 people being evacuated",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/kakinada-coast-braces-for-cyclone-arnab-89000-people-being-evacuated/article71627293.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:55:08+00:00"
-    },
-    {
-     "title": "Extremely heavy rain to hit Andhra on Tuesday as Cyclone Arnab comes close",
-     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-extremely-heavy-rain-forecast-for-coastal-andhra-pradesh-odisha-and-telangana-3025392-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:00:38+00:00"
-    },
-    {
-     "title": "HT Evening News Brief October 26: Cyclone Arnab intensifies, Jamia protests continue, E100 cars get conditional nod",
-     "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-october-26-cyclone-arnab-jamia-protests-e100-fuel-vijay-deverakonda-rashmika-mandanna-samir-banerjee-tennis-101793017807927.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:41:38+00:00"
-    },
-    {
-     "title": "Weather Forecast: Heavy Rain Alert In 5 States As Cyclone Arnab Nears",
-     "url": "https://www.news18.com/india/weather-forecast-heavy-rain-alert-andhra-pradesh-odisha-telangana-chhattisgarh-uttar-pradesh-as-cyclone-arnab-nears-ws-e-10398233.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T11:11:48+00:00"
-    },
-    {
-     "title": "Cyclone Arnab Nears Andhra, 4 States On Alert Ahead Of Landfall; Landslide Warning Issued",
-     "url": "https://www.news18.com/india/cyclone-arnab-nears-andhra-4-states-on-alert-ahead-of-landfall-landslide-warning-issued-10398221.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T11:08:01+00:00"
-    },
-    {
-     "title": "Cyclone Arnab latest updates: Andhra Pradesh landfall likely on October 28; Odisha shuts schools in 6 districts",
-     "url": "https://www.livemint.com/news/india/cyclone-arnab-latest-updates-andhra-pradesh-landfall-likely-on-october-28-odisha-shuts-schools-in-6-districts-11793010922226.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T10:52:39+00:00"
-    },
-    {
-     "title": "Cyclone Arnab closing in on Andhra coast, 4 states on alert ahead of landfall",
-     "url": "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-coast-landfall-odisha-telangana-chhattisgarh-puducherry-centre-alert-3025259-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T10:33:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1,
-    "IN-nation": 1
-   },
-   "top_score": 1.3,
-   "top_headlines": [
-    "Cyclonic storm 'Arnab' to cross Andhra Pradesh-Yanam coast as very severe storm by October 28: IMD | LIVE"
-   ],
-   "hindi_owners": [
-    "TV9 Network",
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "qid": "Q85850332",
-   "title": "Chef Damu",
-   "fame": 249496,
-   "views": 124496,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-25T09:16:24+00:00",
-   "headlines": [
-    "Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25",
-    "google-news:Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q85850332",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
   },
   {
    "id": "kh-20261026-Q1348",
@@ -1483,94 +1391,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261026-Q463735",
-   "qid": "Q463735",
-   "title": "Nilgiri Mountain Railway",
-   "name": "Nilgiri Mountain Railway",
-   "phrase": "Nilgiri Mountain Railway",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-   "story_keys": [
-    "service",
-    "train"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T15:27:44.148447+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-    "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-    "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "नीलगिरि पर्वतीय रेल",
-   "reports": [
-    {
-     "title": "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328643",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-10-26T15:27:44.148447+00:00"
-    },
-    {
-     "title": "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/nilgiri-mountain-railway-services-cancelled-from-october-27-to-29-2026/article71626939.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:17:08+00:00"
-    },
-    {
-     "title": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-     "url": "https://www.livemint.com/news/india/mumbai-local-train-services-hit-by-hanging-ohe-wire-central-railways-mainline-disrupted-11793015995884.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:07:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Government of India"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 12
-   },
-   "top_score": 0.735,
-   "top_headlines": [
-    "Mumbai local train chaos: Signal failures, overhead wire issue disrupt Central Railway services"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261026-Q116758847",
    "qid": "Q116758847",
    "title": "Anthropic",
@@ -1580,11 +1400,11 @@
    "kind": "explainer",
    "category": "economy",
    "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
+   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
    "story_keys": [
     "file",
     "giant",
-    "next"
+    "plan"
    ],
    "date": "2026-10-26",
    "news_at": "2026-10-26T14:40:45+00:00",
@@ -1598,8 +1418,8 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
     "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
+    "Anthropic said to plan for Mega-IPO Monday",
     "From Amazon to Google: The tech giants betting billions on Anthropic’s IPO",
     "Artificial Intelligence giant Anthropic files for Initial Public Offering",
     "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
@@ -1642,14 +1462,14 @@
      "at": "2026-10-26T13:26:27+00:00"
     },
     {
-     "title": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/ai-giant-anthropic-to-make-wall-street-debut-next-month-could-be-biggest-ever-initial-public-sale-of-stock-key-details-from-claude-makers-filing/articleshow/135212910.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Anthropic said to plan for Mega-IPO Monday",
+     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T13:18:37+00:00"
+     "at": "2026-10-26T12:23:45+00:00"
     }
    ],
    "via": [
@@ -1663,7 +1483,8 @@
    },
    "top_score": 0.3,
    "top_headlines": [
-    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
+    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol",
+    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -1672,28 +1493,45 @@
   {
    "qid": null,
    "title": "2026 Florida A&M University shooting",
-   "fame": 140549,
+   "fame": 165549,
    "views": 15549,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-26T13:44:06+00:00",
+   "news": 150000,
+   "news_at": "2026-10-26T15:37:51+00:00",
    "headlines": [
-    "12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested"
+    "12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested",
+    "Fifteen-year-old arrested in shooting near Florida university that injured 12"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US"
+    "US",
+    "world"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-10-25",
-    "google-news:12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested"
+    "google-news:12 injured, including 6 children, in shooting near Florida A&M University; 15-year-old arrested",
+    "google-news:Fifteen-year-old arrested in shooting near Florida university that injured 12",
+    "outlet:Guardian Media Group"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Fifteen-year-old arrested in shooting near Florida university that injured 12",
+     "url": "https://www.theguardian.com/us-news/2026/oct/26/florida-famu-shooting-arrest",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-26T15:37:51+00:00"
+    }
+   ],
    "id": "wp-2026_Florida_A_M_University_shooting",
    "kind": "incident",
    "category": "attack",
@@ -1810,8 +1648,8 @@
  ],
  "notes": [
   "revisit tiger-shroff-2026-10-20: already revisited today; revisit Q163225 (641 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit Q213380: already revisited today; revisit Q10218: already revisited today; revisit Q140632219 (164 views): 0 owners reported new news on Neha Bora si",
-  "outlets: 1342 headlines from 29 feeds (18 owners), 14 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261025-arnab-cyclone",
-  "explainers: 5 kh- stories (on): kh-20261026-Q1348, kh-20261026-Q37181, kh-20261026-Q6744197, kh-20261026-Q116758847; dropped: explainer Machado / Venezuela: no Wikipedia article that can be its centre; explainer Oppn’s Nov / Delhi Shah: no Wikipedia article that can be its centre; explainer Niger: no Wikipedia article that can be its centre",
+  "outlets: 1351 headlines from 30 feeds (19 owners), 17 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261025-arnab-cyclone",
+  "explainers: 4 kh- stories (on): kh-20261026-Q1348, kh-20261026-Q6744197, kh-20261026-Q37181, kh-20261026-Q116758847; dropped: explainer Machado / Mar: no Wikipedia article that can be its centre; explainer BJP: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -1819,11 +1657,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1342,
-  "feeds": 29,
-  "owners": 18,
-  "matched": 14,
-  "corroborated": 6
+  "headlines": 1351,
+  "feeds": 30,
+  "owners": 19,
+  "matched": 17,
+  "corroborated": 5
  },
  "emerging": [
   {
@@ -1834,7 +1672,7 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-25",
-   "news_at": "2026-10-26T14:59:39+00:00",
+   "news_at": "2026-10-26T16:24:01+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -1869,7 +1707,17 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T14:59:39+00:00"
+     "at": "2026-10-26T16:24:01+00:00"
+    },
+    {
+     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
+     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T16:10:40+00:00"
     },
     {
      "title": "Kakinada coast braces for cyclone Arnab; 89,000 people being evacuated",
@@ -1930,16 +1778,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-26T10:52:39+00:00"
-    },
-    {
-     "title": "Cyclone Arnab closing in on Andhra coast, 4 states on alert ahead of landfall",
-     "url": "https://www.indiatoday.in/india/story/cyclone-arnab-andhra-coast-landfall-odisha-telangana-chhattisgarh-puducherry-centre-alert-3025259-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T10:33:34+00:00"
     }
    ],
    "via": [
@@ -1951,18 +1789,18 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 1.2,
    "top_headlines": [
     "Cyclonic storm 'Arnab' to cross Andhra Pradesh-Yanam coast as very severe storm by October 28: IMD | LIVE"
    ],
    "hindi_owners": [
+    "BBC",
     "TV9 Network",
     "Network18",
-    "HT Media",
-    "India Today Group"
+    "HT Media"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -2087,6 +1925,149 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261026-Q6744197",
+   "qid": "Q6744197",
+   "title": "Mallikarjun Kharge",
+   "name": "Mallikarjun Kharge",
+   "phrase": "Kharge",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+   "story_keys": [
+    "baap'",
+    "mallikarjun",
+    "news",
+    "political",
+    "row",
+    "spark",
+    "won't"
+   ],
+   "date": "2026-10-25",
+   "news_at": "2026-10-26T13:23:27+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+    "BJP Leader Files Police Complaint Against Kharge Over 'Baap' Remarks On PM Modi",
+    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
+    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
+    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
+    "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi"
+   ],
+   "hindi_headlines": [
+    "मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
+   ],
+   "hindi_news": 2,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "मल्लिकार्जुन खरगे",
+   "reports": [
+    {
+     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
+     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T13:23:27+00:00"
+    },
+    {
+     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T13:01:52+00:00"
+    },
+    {
+     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
+     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T09:23:17+00:00"
+    },
+    {
+     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
+     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T06:34:15+00:00"
+    },
+    {
+     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
+     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T05:04:30+00:00"
+    },
+    {
+     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
+     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T04:28:26+00:00"
+    },
+    {
+     "title": "BJP Leader Files Police Complaint Against Kharge Over 'Baap' Remarks On PM Modi",
+     "url": "https://www.news18.com/india/bjp-leader-files-police-complaint-against-kharge-over-baap-remarks-on-pm-modi-10397220.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-25T17:01:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-hi": 2,
+    "IN-nation": 5,
+    "IN-hi-nation": 5
+   },
+   "top_score": 1.905,
+   "top_headlines": [
+    "मल्लिकार्जुन खरगे के बयान पर अलका लांबा बोलीं- प्रधानमंत्री अब...",
+    "India news: BJP to protest nationwide over opposition's Modi remark",
+    "Sultanpur Court Acquits LoP Rahul Gandhi In 2018 Defamation Case Over Remarks Against Amit Shah"
+   ],
+   "hindi_owners": []
+  },
+  {
    "id": "kh-20261026-Q37181",
    "qid": "Q37181",
    "title": "Luiz Inácio Lula da Silva",
@@ -2121,7 +2102,7 @@
     "Brazilian leftist President Lula wins reelection against conservative challenger Flavio Bolsonaro",
     "Lula wins fourth term: What are the reactions in Brazil?",
     "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2187,169 +2168,18 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
     "outlet:India Today Group",
-    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "google-news:Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "top": {
-    "IN": 4
+    "IN": 14
    },
-   "top_score": 0.85,
+   "top_score": 0.35,
    "top_headlines": [
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+    "Bolsonaro calls for Brazil election results to be 'annulled' after loss to Lula"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261026-Q6744197",
-   "qid": "Q6744197",
-   "title": "Mallikarjun Kharge",
-   "name": "Mallikarjun Kharge",
-   "phrase": "Kharge",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-   "story_keys": [
-    "baap'",
-    "insult",
-    "mallikarjun",
-    "news",
-    "political",
-    "rajnath",
-    "row",
-    "singh",
-    "slam",
-    "spark",
-    "won't"
-   ],
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T13:23:27+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-    "Mallikarjun Kharge Faces Backlash Over ‘Modi Ka Baap Bhi Jayega’ Remark | BJP Vs Congress | News18",
-    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-    "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress"
-   ],
-   "hindi_headlines": [
-    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "मल्लिकार्जुन खरगे",
-   "reports": [
-    {
-     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
-     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:23:27+00:00"
-    },
-    {
-     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:01:52+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
-     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T09:23:17+00:00"
-    },
-    {
-     "title": "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress",
-     "url": "https://www.news18.com/videos/india/rajnath-singh-slams-congress-chief-kharge-insult-to-india-row-erupts-between-bjp-and-congress-10397891.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:32:42+00:00"
-    },
-    {
-     "title": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-     "url": "https://www.news18.com/india/insult-to-india-itself-rajnath-singh-slams-mallikarjun-kharge-over-pm-modi-remark-ws-l-10397872.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:31:09+00:00"
-    },
-    {
-     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T06:34:15+00:00"
-    },
-    {
-     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T05:04:30+00:00"
-    },
-    {
-     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T04:28:26+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "top": {
-    "IN": 3,
-    "IN-nation": 16
-   },
-   "top_score": 0.975,
-   "top_headlines": [
-    "India news: BJP to protest nationwide over opposition's Modi remark"
-   ],
-   "hindi_owners": []
   },
   {
    "id": "kh-20261026-Q116758847",
@@ -2361,11 +2191,11 @@
    "kind": "explainer",
    "category": "economy",
    "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
+   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
    "story_keys": [
     "file",
     "giant",
-    "next"
+    "plan"
    ],
    "date": "2026-10-26",
    "news_at": "2026-10-26T14:40:45+00:00",
@@ -2379,8 +2209,8 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
     "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
+    "Anthropic said to plan for Mega-IPO Monday",
     "From Amazon to Google: The tech giants betting billions on Anthropic’s IPO",
     "Artificial Intelligence giant Anthropic files for Initial Public Offering",
     "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
@@ -2423,14 +2253,14 @@
      "at": "2026-10-26T13:26:27+00:00"
     },
     {
-     "title": "AI giant Anthropic files for IPO, mega Wall Street debut next month - key details",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/ai-giant-anthropic-to-make-wall-street-debut-next-month-could-be-biggest-ever-initial-public-sale-of-stock-key-details-from-claude-makers-filing/articleshow/135212910.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Anthropic said to plan for Mega-IPO Monday",
+     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T13:18:37+00:00"
+     "at": "2026-10-26T12:23:45+00:00"
     }
    ],
    "via": [
@@ -2444,98 +2274,11 @@
    },
    "top_score": 0.3,
    "top_headlines": [
-    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol"
+    "Anthropic Files For IPO To List On NASDAQ Under 'ANT' Symbol",
+    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
    ],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261026-Q463735",
-   "qid": "Q463735",
-   "title": "Nilgiri Mountain Railway",
-   "name": "Nilgiri Mountain Railway",
-   "phrase": "Nilgiri Mountain Railway",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-   "story_keys": [
-    "service",
-    "train"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T15:27:44.148447+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-    "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-    "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "नीलगिरि पर्वतीय रेल",
-   "reports": [
-    {
-     "title": "Railway Minister and Chief Minister of West Bengal Flag Off Jaipur (Khatipura) – Tatanagar – Santragachi Express Train",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2328643",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-10-26T15:27:44.148447+00:00"
-    },
-    {
-     "title": "Nilgiri Mountain Railway services cancelled from October 27 to 29",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/nilgiri-mountain-railway-services-cancelled-from-october-27-to-29-2026/article71626939.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:17:08+00:00"
-    },
-    {
-     "title": "Mumbai local train services hit by hanging OHE wire; Central Railway's mainline disrupted",
-     "url": "https://www.livemint.com/news/india/mumbai-local-train-services-hit-by-hanging-ohe-wire-central-railways-mainline-disrupted-11793015995884.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:07:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Government of India"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 12
-   },
-   "top_score": 0.735,
-   "top_headlines": [
-    "Mumbai local train chaos: Signal failures, overhead wire issue disrupt Central Railway services"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
    "lane": "other"
   }
  ]
