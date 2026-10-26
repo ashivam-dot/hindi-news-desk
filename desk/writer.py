@@ -47,7 +47,6 @@ MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 40, 62, 14
 WORDS_ASKED = "45 to 58"
 DRAFTS = 4
 HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
-# Ensure the main subject is named in at least 2 beats to pass the photo gate (gate.py: name in at least 2 beats)
 PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
 SCHEMA = {
     "type": "object",
