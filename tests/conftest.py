@@ -1,7 +1,7 @@
 import pytest
 import requests
 
-from desk import media, outlets, plan, things, visuals, wiki
+from desk import media, outlets, plan, quiet, things, visuals, wiki
 
 
 class Offline(RuntimeError):
@@ -15,6 +15,15 @@ def no_live_requests(monkeypatch, tmp_path_factory):
     """The repo's own case and remake files are live work orders; tests that need one write their own."""
     monkeypatch.setattr(plan, "CASES", tmp_path_factory.mktemp("cases"))
     monkeypatch.setattr(plan, "REMAKES", tmp_path_factory.mktemp("remakes"))
+
+
+@pytest.fixture(autouse=True)
+def loud_channel(monkeypatch):
+    """Every gate as a busy channel has it; test_quiet turns quiet mode on itself."""
+    monkeypatch.setenv("DESK_QUIET", "off")
+    quiet.reset()
+    yield
+    quiet.reset()
 
 
 @pytest.fixture(autouse=True)

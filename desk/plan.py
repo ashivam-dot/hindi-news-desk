@@ -32,7 +32,7 @@ import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from . import hindi, ledger, news, orbitwire, outlets, top, trends, usgs
+from . import hindi, ledger, news, orbitwire, outlets, quiet, top, trends, usgs
 from .stories import km_between
 
 IST = timezone(timedelta(hours=5, minutes=30))
@@ -682,6 +682,9 @@ def apply_orbitwire(cands: list[dict], at: datetime) -> tuple[list[dict], list[s
             continue
         big = big_incident(c)
         why = high_profile(c, fame) or big
+        if not why and quiet.active() and c.get("region") == "india":
+            # 24 Orbitwire skips in the 36 h silence of 25-26 Oct: an India story is the Hindi audience's either way.
+            why = "the channel is quiet and this is an India story"
         if not why:
             notes.append(f"skip {c['id']}: Orbitwire {ov['status'].replace('_', ' ')} ({ov['orbitwire_id']}), not "
                          f"high-profile enough to tell again")

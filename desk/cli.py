@@ -15,7 +15,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-from . import config, gate, ledger, learn, plan, review, writer
+from . import config, gate, ledger, learn, plan, quiet, review, writer
 
 ROOT = Path(__file__).resolve().parents[1]
 WORK = ROOT / "work"
@@ -82,8 +82,9 @@ def prepare(target: str | dict):
             short.scene[key] = target[key]
     work = WORK / short.id
     work.mkdir(parents=True, exist_ok=True)
+    short.scene["quiet"] = quiet.active()
     short.save(work / "short.json")
-    problems = gate.check(short)
+    problems = quiet.keep(gate.check(short))
     if problems:
         raise ValueError("gate: " + "; ".join(problems))
     return short
@@ -104,7 +105,7 @@ def make(target: str | dict, short=None, preview: bool = False) -> tuple[object,
                                                           "coverage", "tempo")}
     (work / "render.json").write_text(json.dumps(stats, indent=1, ensure_ascii=False), encoding="utf-8")
     # The second of the gate's three runs (prepare, here, publish): the picture time shares as rendered.
-    if problems := gate.shown_is_said(short, stats.get("views")):
+    if problems := quiet.keep(gate.shown_is_said(short, stats.get("views"))):
         raise ValueError("gate: " + "; ".join(problems))
     return short, stats
 
@@ -164,6 +165,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
     problems = gate.check(short)
     if (views := rendered_views(work)) is not None:  # the gate's third run, with the time shares as rendered
         problems += [p for p in gate.shown_is_said(short, views) if p not in problems]
+    problems = quiet.keep(problems)
     if problems:
         raise ValueError("gate: " + "; ".join(problems))
     refused = publish_refusal(short, work, datetime.now(timezone.utc))
@@ -182,7 +184,8 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
            "report_urls": report_urls(short),
            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
            "photos": [p["file"] for p in short.scene.get("photos") or [] if p.get("file")],
-           **{k: short.scene[k] for k in ("case", "case_story", "angle", "lane", "audience", "priority", "series")
+           **{k: short.scene[k] for k in ("case", "case_story", "angle", "lane", "audience", "priority", "series",
+                                          "quiet")
               if short.scene.get(k)}, **result}
     if old := short.scene.get("replaces"):
         row.update(replaces=old, remake_of=short.scene.get("remake_of"))

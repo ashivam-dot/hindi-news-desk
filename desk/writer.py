@@ -23,7 +23,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from . import (config, explain, faces, gate, gemini, hindi, hosted, ledger, llm, match, media, orbitwire, outlets,
-               stories, things, trends, visuals, wiki)
+               quiet, stories, things, trends, visuals, wiki)
 from .spec import Beat, Fact, Short
 
 WORK = Path(__file__).resolve().parents[1] / "work"
@@ -692,17 +692,18 @@ def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, gro
     beats = draft.get("beats") or []
     says = " ".join(b.get("say", "") for b in beats)
     words = len(says.split())
-    if not MIN_WORDS <= words <= MAX_WORDS:
+    max_words, max_beat = (quiet.MAX_WORDS, quiet.MAX_BEAT_WORDS) if quiet.active() else (MAX_WORDS, MAX_BEAT_WORDS)
+    if not MIN_WORDS <= words <= max_words:
         aim = 52  # Middle of the existing requested range, not a new acceptance bound.
-        change = f"cut about {words - aim}" if words > MAX_WORDS else f"add about {aim - words}"
+        change = f"cut about {words - aim}" if words > max_words else f"add about {aim - words}"
         counts = ", ".join(str(len(b.get("say", "").split())) for b in beats)
         problems.append(f"the script has {words} words; it must have {WORDS_ASKED}; {change} spoken words "
                         f"to aim for {aim} in the whole report. Current beat word counts: {counts}. "
                         "Preserve source attribution and the essential supported facts; change wording, "
                         "never invent facts or add filler")
-    problems += [f"beat {i + 1} has {n} words; shorten it to about 8 to 9 words, at most {MAX_BEAT_WORDS}, "
+    problems += [f"beat {i + 1} has {n} words; shorten it to about 8 to 9 words, at most {max_beat}, "
                  "while retaining attribution. Do not add beats to evade the whole-report word budget"
-                 for i, b in enumerate(beats) if (n := len(b.get("say", "").split())) > MAX_BEAT_WORDS]
+                 for i, b in enumerate(beats) if (n := len(b.get("say", "").split())) > max_beat]
     problems += [f"beat {i + 1} ends on filler ({m.group(0)}); end on a fact of the news" for i, b in enumerate(beats)
                  if (m := VAGUE.search(b.get("say", "")))]
     if hindi.devanagari_share(says) < 0.85:
@@ -1076,7 +1077,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
             problems += off_case(candidate, names_ok, never)
         if india is not None and (attempt < DRAFTS - 1 or config.MATCHER != "legacy"):
             problems += anchorless(candidate, subject, india, shows, near, kind)
-        return problems, doubtful
+        return quiet.keep(problems), doubtful
 
     try:
         for attempt in range(DRAFTS):
@@ -1122,7 +1123,7 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
                 draft["title"], draft["titles"] = retitle(pen, draft, subject, ground_en, kind, agreed_toll,
                                                           reports, title_hints, earlier)
                 if picture_check is not None:
-                    problems = picture_check(draft)
+                    problems = quiet.keep(picture_check(draft))
             if not problems:
                 if removed_names or retained_from is not None:
                     log.append({"attempt": attempt + 1, "problems": [], "draft": draft,
@@ -1817,7 +1818,8 @@ def stale_pictures(photos: list[dict], views: list, recent: set[str]) -> str | N
     shown = {photos[i]["file"] for r in rows if r.get("plate") != match.CARD for i in r["views"]
              if i < len(photos) and photos[i].get("file") and not visuals.is_map(photos[i])
              and not photos[i].get("vet")}
-    fresh, want = shown - recent, max(FRESH_PICTURES, (len(shown) + 1) // 2)
+    fresh = shown - recent
+    want = quiet.FRESH_PICTURES if quiet.active() else max(FRESH_PICTURES, (len(shown) + 1) // 2)
     if recent and len(fresh) < want:
         return (f"gate: only {len(fresh)} of {len(shown)} photos on screen are new to the last "
                 f"{ledger.RECENT_PHOTOS_H} hours of Shorts (want {want})")

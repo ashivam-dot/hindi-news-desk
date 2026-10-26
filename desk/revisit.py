@@ -25,9 +25,10 @@ IST = timezone(timedelta(hours=5, minutes=30))
 IDLE = timedelta(hours=2)
 LOOKBACK_DAYS = 10
 # A hit: its best Short has at least MIN_VIEWS views and HIT_TIMES the channel's median over the lookback.
-MIN_VIEWS, HIT_TIMES = 100, 2.0
-HITS = 6  # stories looked at a run, most watched first
-PER_DAY = 2
+MIN_VIEWS, HIT_TIMES = 80, 1.5
+HITS = 12  # stories looked at a run, most watched first
+# 2026-10-26: six hits and two a day left 36 h with no Short; every hit still needs new reporting to come back.
+PER_DAY = 4
 # The story's own regular follow-up parts (plan.follow_up) cover the hours right after it.
 AFTER_LAST = timedelta(hours=12)
 SUFFIX = "-update"
