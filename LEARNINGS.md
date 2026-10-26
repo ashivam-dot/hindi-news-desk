@@ -1,31 +1,31 @@
 # What this channel's own numbers say
 
-Updated 2026-10-26T03:25:22+00:00. Scored Shorts (views at 24 h): 86. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-26T06:53:15+00:00. Scored Shorts (views at 24 h): 88. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
-Baseline: a typical Short has 44 views at 24 h.
+Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 47.2% through; a group's retention is blended into its lift at 0.5.
-- category:attack: x1.34 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 59.9% watched)
-- category:court: x1.214 ranking lift (8 Shorts, typical 70 views; 7 with retention, typically 53.9% watched)
-- category:aviation: x1.181 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
-- lane:naam-niyam: x1.117 ranking lift (26 Shorts, typical 49 views; 24 with retention, typically 54.8% watched)
-- region:india: x1.099 ranking lift (50 Shorts, typical 50 views; 45 with retention, typically 51.8% watched)
-- category:news: x1.02 ranking lift (24 Shorts, typical 44 views; 22 with retention, typically 49.8% watched)
-- category:diplomacy: x1.013 ranking lift (5 Shorts, typical 34 views; 4 with retention, typically 65.8% watched)
+- category:attack: x1.35 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 59.9% watched)
+- category:court: x1.228 ranking lift (8 Shorts, typical 70 views; 7 with retention, typically 53.9% watched)
+- category:aviation: x1.191 ranking lift (4 Shorts, typical 103 views; 4 with retention, typically 39.7% watched)
+- lane:naam-niyam: x1.134 ranking lift (26 Shorts, typical 49 views; 24 with retention, typically 54.8% watched)
+- region:india: x1.109 ranking lift (51 Shorts, typical 49 views; 45 with retention, typically 51.8% watched)
+- category:news: x1.035 ranking lift (24 Shorts, typical 44 views; 22 with retention, typically 49.8% watched)
+- category:diplomacy: x1.023 ranking lift (5 Shorts, typical 34 views; 4 with retention, typically 65.8% watched)
 - lane:sensitive: x1.0 ranking lift (12 Shorts, typical 81 views; 10 with retention, typically 62.2% watched)
-- region:world: x0.857 ranking lift (32 Shorts, typical 33 views; 31 with retention, typically 43.7% watched)
-- category:protest: x0.817 ranking lift (5 Shorts, typical 16 views; 5 with retention, typically 59.6% watched)
-- category:world: x0.816 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 37.1% watched)
-- category:economy: x0.804 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 35.4% watched)
-- lane:other: x0.75 ranking lift (15 Shorts, typical 17 views; 14 with retention, typically 38.3% watched)
+- region:world: x0.845 ranking lift (33 Shorts, typical 31 views; 31 with retention, typically 43.7% watched)
+- category:protest: x0.825 ranking lift (5 Shorts, typical 16 views; 5 with retention, typically 59.6% watched)
+- category:economy: x0.812 ranking lift (5 Shorts, typical 26 views; 5 with retention, typically 35.4% watched)
+- category:world: x0.75 ranking lift (6 Shorts, typical 19 views; 5 with retention, typically 37.1% watched)
+- lane:other: x0.75 ranking lift (17 Shorts, typical 16 views; 14 with retention, typically 38.3% watched)
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261025-Q19867977 | 2026-10-25T04:06 | world | world | other | india | 3 | 1 |  |
-| cmp-20261025-IND-PAK-forces | 2026-10-25T03:28 | defence | india | other | india | 23 | 8 |  |
+| kh-20261025-Q19867977 | 2026-10-25T04:06 | world | world | other | india | 4 | 1 | 3 |
+| cmp-20261025-IND-PAK-forces | 2026-10-25T03:28 | defence | india | other | india | 24 | 8 | 23 |
 | cmp-20261024-IND-PAK | 2026-10-24T15:46 | defence | india | other | india | 15 | 12 | 15 |
-| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 632 | 251 | 598 |
+| kh-20261024-Q163225 | 2026-10-24T12:14 | news | india | naam-niyam | india | 638 | 251 | 598 |
 | kh-20261023-Q140632219-p2 | 2026-10-23T15:09 | court | india | naam-niyam | india | 98 | 17 | 61 |
-| kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 10 | 3 | 8 |
+| kh-20261023-Q3520087 | 2026-10-23T14:32 | diplomacy | india | rajneeti | india | 11 | 3 | 8 |
 | kh-20261023-Q5276830 | 2026-10-23T13:02 | news | world | sensitive | india | 47 | 4 | 25 |
 | kh-20261023-Q140632219 | 2026-10-23T01:37 | court | india | naam-niyam | india | 158 | 8 | 84 |
 | kh-20261022-Q7089335 | 2026-10-22T16:35 | news | india | naam-niyam | india | 573 | 3 | 384 |
