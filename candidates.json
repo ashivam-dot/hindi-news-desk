@@ -1,5 +1,5 @@
 {
- "at": "2026-10-26T00:59:41+00:00",
+ "at": "2026-10-26T01:51:12+00:00",
  "trending": [
   {
    "id": "kh-20261026-Q6744197",
@@ -26,7 +26,7 @@
     "slam"
    ],
    "date": "2026-10-25",
-   "news_at": "2026-10-25T20:21:19+00:00",
+   "news_at": "2026-10-26T00:54:42+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -60,6 +60,16 @@
    "india_link": true,
    "label_hi": "मल्लिकार्जुन खरगे",
    "reports": [
+    {
+     "title": "Kharge makes 'baap' remark on Modi; BJP hits back",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/kharges-baap-remark-on-modi-creates-furore-bjp-says-language-associated-with-thugs/articleshow/135200216.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:54:42+00:00"
+    },
     {
      "title": "BJP slams Kharge over ‘indecent’ remarks on PM Modi",
      "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece",
@@ -129,16 +139,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-25T13:33:37+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s 'baap' remark on PM Modi sparks row, BJP hits back",
-     "url": "https://timesofindia.indiatimes.com/india/mallikarjun-kharges-baap-remark-on-pm-modi-sparks-row-bjp-hits-back/articleshow/135191593.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T13:29:22+00:00"
     }
    ],
    "via": [
@@ -149,18 +149,18 @@
     "outlet:The Hindu Group",
     "outlet:NDTV",
     "google-news:India will not have lasting peace until RSS ideology is dismantled: Kharge",
-    "google-news:BJP calls protest over Kharge’s ‘baap’ remark",
+    "google-news:'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi",
     "google-news:VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने"
    ],
    "top": {
     "IN-hi": 1,
-    "IN-nation": 11,
+    "IN-nation": 4,
     "IN-hi-nation": 1
    },
-   "top_score": 1.45,
+   "top_score": 1.555,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
-    "BJP calls protest over Kharge’s ‘baap’ remark"
+    "'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -296,9 +296,9 @@
   {
    "qid": "Q141695384",
    "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 250100,
+   "fame": 250000,
    "views": 0,
-   "traffic": 100,
+   "traffic": 0,
    "news": 200000,
    "news_at": "2026-10-26T00:00:00+00:00",
    "headlines": [
@@ -310,14 +310,12 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "world"
    ],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
-    "google-trends-IN:saudi arabia",
     "wikipedia-current-events-2026-10-25",
     "google-news:Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
     "google-news:Houthis say they targeted Saudi oil sites; attacks reported in Aden",
@@ -503,15 +501,102 @@
     "outlet:BBC"
    ],
    "top": {
-    "IN": 2
+    "IN": 12
    },
-   "top_score": 0.95,
+   "top_score": 0.45,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261026-Q37181",
+   "qid": "Q37181",
+   "title": "Luiz Inácio Lula da Silva",
+   "name": "Negro",
+   "phrase": "Lula",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+   "story_keys": [
+    "fourth",
+    "term"
+   ],
+   "date": "2026-10-26",
+   "news_at": "2026-10-26T00:35:00+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "India Today Group",
+    "NPR"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+    "At 80, Lula scripts history with fourth presidential term in Brazil",
+    "Brazil's left-wing President Lula elected for fourth term",
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
+   "reports": [
+    {
+     "title": "Brazil's left-wing President Lula elected for fourth term",
+     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-26T00:35:00+00:00"
+    },
+    {
+     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-26T00:19:05+00:00"
+    },
+    {
+     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
+     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:32:38+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:India Today Group",
+    "outlet:NPR",
+    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q320093",
@@ -616,87 +701,6 @@
     "outlet:Deutsche Welle",
     "outlet:HT Media",
     "outlet:Guardian Media Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261026-Q37181",
-   "qid": "Q37181",
-   "title": "Luiz Inácio Lula da Silva",
-   "name": "Luiz Inácio Lula da Silva",
-   "phrase": "Lula",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-   "story_keys": [
-    "fourth",
-    "term"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T00:35:00+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "India Today Group",
-    "NPR"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-    "At 80, Lula scripts history with fourth presidential term in Brazil",
-    "Brazil's left-wing President Lula elected for fourth term"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
-   "reports": [
-    {
-     "title": "Brazil's left-wing President Lula elected for fourth term",
-     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T00:35:00+00:00"
-    },
-    {
-     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-26T00:19:05+00:00"
-    },
-    {
-     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
-     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T00:32:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:NPR"
    ],
    "top": {},
    "top_score": 0.0,
@@ -1077,7 +1081,7 @@
     "slam"
    ],
    "date": "2026-10-25",
-   "news_at": "2026-10-25T20:21:19+00:00",
+   "news_at": "2026-10-26T00:54:42+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -1111,6 +1115,16 @@
    "india_link": true,
    "label_hi": "मल्लिकार्जुन खरगे",
    "reports": [
+    {
+     "title": "Kharge makes 'baap' remark on Modi; BJP hits back",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/kharges-baap-remark-on-modi-creates-furore-bjp-says-language-associated-with-thugs/articleshow/135200216.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:54:42+00:00"
+    },
     {
      "title": "BJP slams Kharge over ‘indecent’ remarks on PM Modi",
      "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece",
@@ -1180,16 +1194,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-25T13:33:37+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s 'baap' remark on PM Modi sparks row, BJP hits back",
-     "url": "https://timesofindia.indiatimes.com/india/mallikarjun-kharges-baap-remark-on-pm-modi-sparks-row-bjp-hits-back/articleshow/135191593.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T13:29:22+00:00"
     }
    ],
    "via": [
@@ -1200,22 +1204,109 @@
     "outlet:The Hindu Group",
     "outlet:NDTV",
     "google-news:India will not have lasting peace until RSS ideology is dismantled: Kharge",
-    "google-news:BJP calls protest over Kharge’s ‘baap’ remark",
+    "google-news:'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi",
     "google-news:VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने"
    ],
    "top": {
     "IN-hi": 1,
-    "IN-nation": 11,
+    "IN-nation": 4,
     "IN-hi-nation": 1
    },
-   "top_score": 1.45,
+   "top_score": 1.555,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
-    "BJP calls protest over Kharge’s ‘baap’ remark"
+    "'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261026-Q37181",
+   "qid": "Q37181",
+   "title": "Luiz Inácio Lula da Silva",
+   "name": "Negro",
+   "phrase": "Lula",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+   "story_keys": [
+    "fourth",
+    "term"
+   ],
+   "date": "2026-10-26",
+   "news_at": "2026-10-26T00:35:00+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "India Today Group",
+    "NPR"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+    "At 80, Lula scripts history with fourth presidential term in Brazil",
+    "Brazil's left-wing President Lula elected for fourth term",
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
+   "reports": [
+    {
+     "title": "Brazil's left-wing President Lula elected for fourth term",
+     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-26T00:35:00+00:00"
+    },
+    {
+     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-26T00:19:05+00:00"
+    },
+    {
+     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
+     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:32:38+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:India Today Group",
+    "outlet:NPR",
+    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261026-Q61445",
@@ -1485,96 +1576,15 @@
     "outlet:BBC"
    ],
    "top": {
-    "IN": 2
+    "IN": 12
    },
-   "top_score": 0.95,
+   "top_score": 0.45,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261026-Q37181",
-   "qid": "Q37181",
-   "title": "Luiz Inácio Lula da Silva",
-   "name": "Luiz Inácio Lula da Silva",
-   "phrase": "Lula",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-   "story_keys": [
-    "fourth",
-    "term"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T00:35:00+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "India Today Group",
-    "NPR"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-    "At 80, Lula scripts history with fourth presidential term in Brazil",
-    "Brazil's left-wing President Lula elected for fourth term"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
-   "reports": [
-    {
-     "title": "Brazil's left-wing President Lula elected for fourth term",
-     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T00:35:00+00:00"
-    },
-    {
-     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-26T00:19:05+00:00"
-    },
-    {
-     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
-     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T00:32:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:NPR"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261026-Q23317",
@@ -2275,8 +2285,7 @@
    "news_at": "2026-10-25T10:52:00+00:00",
    "owners": [
     "Deutsche Welle",
-    "HT Media",
-    "Network18"
+    "HT Media"
    ],
    "fame": 1,
    "news": 0,
@@ -2285,8 +2294,7 @@
    "headlines": [
     "India news: Rahul Gandhi urges protest against voter deletions, announces November 1 rally",
     "Rahul Gandhi likely to appear before special MP/MLA court in UP on October 26",
-    "Rahul Gandhi calls for ‘Chalo Dilli’ march at Delhi's Ramlila Maidan against CEC on November 1",
-    "‘Savarkar Condemned Mahatma Gandhi's Assassination’: Hindutva Ideologue's Kin In Court During Rahul Gandhi Defamation Trial"
+    "Rahul Gandhi calls for ‘Chalo Dilli’ march at Delhi's Ramlila Maidan against CEC on November 1"
    ],
    "hindi_headlines": [],
    "region": "india",
@@ -2322,16 +2330,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-25T06:08:16+00:00"
-    },
-    {
-     "title": "‘Savarkar Condemned Mahatma Gandhi's Assassination’: Hindutva Ideologue's Kin In Court During Rahul Gandhi Defamation Trial",
-     "url": "https://www.news18.com/india/savarkar-condemned-mahatma-gandhis-assassination-hindutva-ideologues-kin-in-court-during-rahul-gandhi-defamation-trial-ws-lr-10396226.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-24T13:17:05+00:00"
     }
    ],
    "via": [
@@ -2350,9 +2348,9 @@
   }
  ],
  "notes": [
-  "revisit kh-20261026-Q16202406-update: 4 owners' new reports on Tiger Shroff (1075 views before); revisit Q163225 (632 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit kh-20261026-Q10218-update: 3 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261026-Q2133",
-  "outlets: 1143 headlines from 29 feeds (18 owners), 21 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261026-Q6744197, kh-20261026-Q61445, kh-20261026-Q439564, kh-20261026-Q23317; dropped: explainer Mann Ki Baat’: fewer than 3 owners' headlines name it and the story",
+  "revisit kh-20261026-Q16202406-update: 4 owners' new reports on Tiger Shroff (1075 views before); revisit Q163225 (632 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit kh-20261026-Q10218-update: 2 owners' new reports on Rahul Gandhi (596 views before); revisit Q7089335 (573 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261026-Q2133",
+  "outlets: 1134 headlines from 29 feeds (18 owners), 22 matched to articles, 6 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261026-Q6744197, kh-20261026-Q61445, kh-20261026-Q439564, kh-20261026-Q37181; dropped: explainer Apple Watches: fewer than 3 owners' headlines name it and the story; explainer Mann Ki Baat’: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q983618: Orbitwire published (wk-Q983618), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2360,10 +2358,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1143,
+  "headlines": 1134,
   "feeds": 29,
   "owners": 18,
-  "matched": 21,
+  "matched": 22,
   "corroborated": 6
  },
  "emerging": [],
@@ -2393,7 +2391,7 @@
     "slam"
    ],
    "date": "2026-10-25",
-   "news_at": "2026-10-25T20:21:19+00:00",
+   "news_at": "2026-10-26T00:54:42+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -2427,6 +2425,16 @@
    "india_link": true,
    "label_hi": "मल्लिकार्जुन खरगे",
    "reports": [
+    {
+     "title": "Kharge makes 'baap' remark on Modi; BJP hits back",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/kharges-baap-remark-on-modi-creates-furore-bjp-says-language-associated-with-thugs/articleshow/135200216.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:54:42+00:00"
+    },
     {
      "title": "BJP slams Kharge over ‘indecent’ remarks on PM Modi",
      "url": "https://www.thehindu.com/news/national/bihar/kharges-remark-in-bihar-pm-modi-father-sparks-row-bjp-congress/article71623852.ece",
@@ -2496,16 +2504,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-25T13:33:37+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s 'baap' remark on PM Modi sparks row, BJP hits back",
-     "url": "https://timesofindia.indiatimes.com/india/mallikarjun-kharges-baap-remark-on-pm-modi-sparks-row-bjp-hits-back/articleshow/135191593.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-25T13:29:22+00:00"
     }
    ],
    "via": [
@@ -2516,18 +2514,18 @@
     "outlet:The Hindu Group",
     "outlet:NDTV",
     "google-news:India will not have lasting peace until RSS ideology is dismantled: Kharge",
-    "google-news:BJP calls protest over Kharge’s ‘baap’ remark",
+    "google-news:'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi",
     "google-news:VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने"
    ],
    "top": {
     "IN-hi": 1,
-    "IN-nation": 11,
+    "IN-nation": 4,
     "IN-hi-nation": 1
    },
-   "top_score": 1.45,
+   "top_score": 1.555,
    "top_headlines": [
     "VIDEO: मल्लिकार्जुन खरगे ने चिल्लाकर PM मोदी के पिता पर की विवादित टिप्पणी, शख्स के 'मोदी नहीं जाएगा' बोलने",
-    "BJP calls protest over Kharge’s ‘baap’ remark"
+    "'Baap' Comment Latest In M Kharge's Series Of Jibes At PM Modi"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2801,15 +2799,102 @@
     "outlet:BBC"
    ],
    "top": {
-    "IN": 2
+    "IN": 12
    },
-   "top_score": 0.95,
+   "top_score": 0.45,
    "top_headlines": [
     "‘I am here. With you’: Nobel laureate, Venezuela opposition leader Machado returns after nearly a year in"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261026-Q37181",
+   "qid": "Q37181",
+   "title": "Luiz Inácio Lula da Silva",
+   "name": "Negro",
+   "phrase": "Lula",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+   "story_keys": [
+    "fourth",
+    "term"
+   ],
+   "date": "2026-10-26",
+   "news_at": "2026-10-26T00:35:00+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "India Today Group",
+    "NPR"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+    "At 80, Lula scripts history with fourth presidential term in Brazil",
+    "Brazil's left-wing President Lula elected for fourth term",
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
+   "reports": [
+    {
+     "title": "Brazil's left-wing President Lula elected for fourth term",
+     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-26T00:35:00+00:00"
+    },
+    {
+     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
+     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-26T00:19:05+00:00"
+    },
+    {
+     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
+     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-26T00:32:38+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:India Today Group",
+    "outlet:NPR",
+    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261026-Q23317",
@@ -2885,87 +2970,6 @@
     "outlet:Deutsche Welle",
     "outlet:HT Media",
     "outlet:Guardian Media Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261026-Q37181",
-   "qid": "Q37181",
-   "title": "Luiz Inácio Lula da Silva",
-   "name": "Luiz Inácio Lula da Silva",
-   "phrase": "Lula",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-   "story_keys": [
-    "fourth",
-    "term"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T00:35:00+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "India Today Group",
-    "NPR"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-    "At 80, Lula scripts history with fourth presidential term in Brazil",
-    "Brazil's left-wing President Lula elected for fourth term"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
-   "reports": [
-    {
-     "title": "Brazil's left-wing President Lula elected for fourth term",
-     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T00:35:00+00:00"
-    },
-    {
-     "title": "Lula wins fourth term as Brazil president after historic upset over far-right Flávio Bolsonaro",
-     "url": "https://www.theguardian.com/world/2026/oct/26/lula-wins-brazil-election",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-26T00:19:05+00:00"
-    },
-    {
-     "title": "At 80, Lula scripts history with fourth presidential term in Brazil",
-     "url": "https://www.indiatoday.in/world/story/brazil-election-lula-wins-fourth-term-defeats-flavio-bolsonaro-3024931-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T00:32:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:NPR"
    ],
    "top": {},
    "top_score": 0.0,
