@@ -117,6 +117,34 @@ LEXICON = (
     {"hi": "गंगा", "forms": ("गंगा", "गंगा नदी"), "en": "Ganges", "india": False,
      "not_before": ("एक्सप्रेसवे", "एक्सप्रेस-वे", "एक्सप्रेस", "देवी", "प्रसाद", "राम", "नगर", "विहार", "सिंह"),
      "not_after": ("मां", "माँ")},
+    # What price news names every day (owner, 2026-10-29, on 9MrOG5OYxdc, "Nandini milk ₹8 costlier" over a map of
+    # Karnataka: "where is the milk picture"). Files checked by eye on Commons, 2026-10-29. Nandini is the story's own
+    # product, a packet and a booth, only beside the milk it sells; सोना alone is also "to sleep", so gold is matched
+    # only in its price phrases.
+    {"hi": "नंदिनी", "forms": ("नंदिनी", "नंदिनी दूध", "नंदिनी ब्रांड"), "en": "Karnataka Milk Federation",
+     "india": True, "needs": ("दूध",),
+     "files": ("File:Kmfmilkcurd1.jpg", "File:Milk Booth Nandini Siddhartha Mysore May24 A7CR 00081-2 Pano.jpg")},
+    {"hi": "दूध", "forms": ("दूध", "दूध के", "दूध की", "दूध का", "पैकेट वाला दूध", "पैकेट दूध"), "en": "Milk",
+     "india": False, "stand_in": True, "not_before": ("टैंकर", "टैंकरों"),
+     "files": ("File:India - Kolkata milkman - 4090.jpg", "File:A Milkmans cycle, Varanasi.jpg")},
+    {"hi": "रसोई गैस", "forms": ("रसोई गैस", "एलपीजी", "एलपीजी सिलेंडर", "गैस सिलेंडर", "गैस सिलेंडरों", "सिलेंडर",
+                               "सिलेंडरों", "LPG"),
+     "en": "Liquefied petroleum gas", "india": True, "stand_in": True, "not_before": ("टैंकर", "टैंकरों", "विस्फोट"),
+     "files": ("File:Cylinder,gas, LPG,bharat,Tamil Nadu457.jpeg", "File:Kitchen-LPG cooking gas cylinder.JPG",
+               "File:LPG cylinder (2013).jpg")},
+    {"hi": "पेट्रोल", "forms": ("पेट्रोल", "डीजल", "डीज़ल", "पेट्रोल-डीजल", "पेट्रोल-डीज़ल", "पेट्रोल पंप", "पेट्रोल पंपों"),
+     "en": "Gasoline", "india": False, "stand_in": True, "not_before": ("टैंकर", "टैंकरों", "बम"),
+     "files": ("File:Fueling Car.jpg", "File:Shankar Nagar Petrol Pump, Nagpur.jpg")},
+    {"hi": "सोना", "forms": ("सोने का भाव", "सोने के भाव", "सोने की कीमत", "सोने के दाम", "सोना महंगा", "सोना सस्ता",
+                           "सोने-चांदी", "सोना-चांदी", "सोने के गहने", "गोल्ड"),
+     "en": "Gold", "india": False, "stand_in": True,
+     "files": ("File:Bridal gold jewellery in Bangladeshi wedding.jpg",)},
+    {"hi": "प्याज", "forms": ("प्याज", "प्याज़"), "en": "Onion", "india": False, "stand_in": True,
+     "files": ("File:India - Koyambedu Market - Onions 08 (3987045248).jpg",
+               "File:India - Koyambedu Market - Onions 06 (3987043646).jpg")},
+    {"hi": "टमाटर", "forms": ("टमाटर", "टमाटरों"), "en": "Tomato", "india": False, "stand_in": True,
+     "files": ("File:India - Koyambedu Market - Tomatoes 02 (3987058522).jpg",
+               "File:India - Koyambedu Market - Tomatoes 06 (3986306253).jpg")},
 )
 # What may stand before an india form as "X की/के/का": India itself, never another country ("पोलैंड की संसद").
 BY_INDIA = ("भारत", "देश", "हिंदुस्तान", "हिन्दुस्तान", "इंडिया", "हमारे", "हमारी", "हमारा", "अपने", "अपनी", "अपना", "दिल्ली",
