@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install requests
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v7
+      - run: sudo apt-get install -y -qq ffmpeg > /dev/null && uv sync --frozen
       - env:
           VIDEO: ${{ inputs.video }}
-        run: python scripts/warp_probe.py "$VIDEO"
+        run: uv run python scripts/clip_probe.py "$VIDEO"
