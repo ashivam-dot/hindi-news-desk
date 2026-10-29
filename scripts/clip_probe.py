@@ -17,12 +17,12 @@ print("WARP proxy:", footage._warp(local=True))
 info = footage.streams(video)
 fmts = footage.candidates(info, 1080)
 print("formats through WARP:", len(fmts), [(f["format_id"], f["height"], f["protocol"]) for f in fmts[:4]])
-out = Path("/tmp/clip.mp4")
-for f in fmts[:4]:
-    try:
-        footage._ffmpeg(*footage._source(f), "-ss", "30", "-t", "4", "-an", "-c:v", "libx264", "-preset", "ultrafast", out,
-                        timeout=120)
-        print("CUT OK from format", f["format_id"], out.stat().st_size, "bytes")
-        break
-    except Exception as exc:  # noqa: BLE001
-        print("format", f["format_id"], "failed:", footage._quiet(exc)[-200:])
+folder = Path("/tmp/clip-probe")
+folder.mkdir(exist_ok=True)
+prepared = footage.prepare(video, folder, info)
+preview = folder / f"{video['id']}-preview.mp4"
+print("PREVIEW", preview.stat().st_size, "bytes", footage.probe(preview), "shots", len(prepared["shots"]),
+      "frames", len(prepared["frames"]))
+shot, best = prepared["shots"][0], fmts[0]
+out = footage.cut(best, shot[0], min(4.0, shot[1] - shot[0]), (0, 0, best["width"], best["height"]), folder / "clip.mp4")
+print("CUT", out.stat().st_size, "bytes", footage.probe(out))
