@@ -268,10 +268,23 @@ def case_wait(live: list[dict], at: datetime) -> tuple[str | None, str | None]:
             else None)
 
 
+KH = re.compile(r"^kh-(\d{8})-(Q\d+)$")
+
+
+def same_explainer(a: str, b: str, days: int = 2) -> bool:
+    """Two kh- ids name one explainer: the same Wikipedia centre, dated within `days` (the IST day of the radar run)."""
+    ma, mb = KH.match(a or ""), KH.match(b or "")
+    if not ma or not mb or ma.group(2) != mb.group(2):
+        return False
+    da, db = (datetime.strptime(m.group(1), "%Y%m%d").date() for m in (ma, mb))
+    return abs((da - db).days) <= days
+
+
 def remake_of(cand: dict, specs: list[dict]) -> dict | None:
     """The candidate as the remake of a published Short, under a new id, so find() never takes the old upload for it."""
     for s in specs:
-        if cand["id"] == s["story"] or outlets.same_story(cand["id"], s["story"]):
+        if cand["id"] == s["story"] or outlets.same_story(cand["id"], s["story"]) or \
+                same_explainer(cand["id"], s["story"]):
             new = cand["id"] + "-r2" if cand["id"] == s["story"] else cand["id"]
             return cand | {"id": new, "replaces": s["replaces"], "remake_of": s["story"]} \
                 | ({"draft": s["draft"]} if s.get("draft") else {})

@@ -78,6 +78,10 @@ ALIASES = {
     "jio": "Jio Platforms", "aiims": "All India Institute of Medical Sciences, New Delhi",
     "mea": "Ministry of External Affairs (India)", "election commission": "Election Commission of India",
     "nhai": "National Highways Authority of India", "lic": "Life Insurance Corporation",
+    # Milk brands are their makers' articles: "Nandini" found no centre on 29 Oct and the price hike was told as
+    # Karnataka over its map.
+    "nandini": "Karnataka Milk Federation", "kmf": "Karnataka Milk Federation", "amul": "Amul",
+    "mother dairy": "Mother Dairy",
 }
 # What a centre must never be: a festival, a holiday, a people, a country, a language, a religion or a date (a story
 # about the railways' Diwali bonus is not about Diwali; "October" is in every dated headline).
