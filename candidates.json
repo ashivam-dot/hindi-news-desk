@@ -1,61 +1,1090 @@
 {
- "at": "2026-10-26T18:04:07+00:00",
+ "at": "2026-10-29T13:38:30+00:00",
  "trending": [
   {
-   "qid": "Q141695384",
-   "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 350000,
+   "id": "kh-20261029-Q1185",
+   "qid": "Q1185",
+   "title": "Karnataka",
+   "name": "Karnataka",
+   "phrase": "Karnataka",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+   "story_keys": [
+    "hike",
+    "litre",
+    "milk",
+    "per",
+    "price"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T12:01:00+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Network18",
+    "Government of India",
+    "TV9 Network"
+   ],
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
-   "news": 300000,
-   "news_at": "2026-10-26T17:19:07+00:00",
    "headlines": [
-    "Egypt approves military support for Saudi Arabia after Houthi attacks escalate",
-    "Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
-    "Saudi Arabia turns to AI system to hunt Houthi missiles; why it may not be effective",
-    "Intercepted Houthi missiles cause damage in Saudi Arabian city"
+    "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+    "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+    "Milk price hiked in Karnataka",
+    "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+    "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_headlines": [
+    "कर्नाटक की राज्यपाल ने प्रधानमंत्री से मुलाकात की",
+    "दरभंगा से RJD के अनिल झा जीते, कर्नाटक में दूध 8 रुपये महंगा; पढ़ें शाम की बड़ी खबरें",
+    "कर्नाटक में नंदिनी दूध की कीमतों में 8 रुपये प्रति लीटर की हुई बढ़ोतरी, 1 नवंबर से लागू होंगी नई दरें",
+    "कर्नाटक में 8 रुपए प्रति लीटर महंगा होगा दूध, 1 नवंबर से कीमतें लागू, सरकार ने दी मंजूरी",
+    "‘कर्नाटक के SIR में कोई गड़बड़ी नहीं हुई’, DK सरकार के मंत्री के बयान पर बवाल; धर्मेंद्र प्रधान ने पूछा सवाल"
+   ],
+   "hindi_news": 9,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कर्नाटक",
+   "reports": [
+    {
+     "title": "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+     "url": "https://www.news18.com/india/nandini-milk-to-cost-8-more-per-litre-from-november-1-in-karnataka-10403621.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:01:00+00:00"
+    },
+    {
+     "title": "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+     "url": "https://www.ndtv.com/india-news/karnataka-to-raise-milk-prices-by-rs-8-per-litre-from-november-1-12253878#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:57:21+00:00"
+    },
+    {
+     "title": "Milk price hiked in Karnataka",
+     "url": "https://www.thehindu.com/news/national/karnataka/milk-price-hiked-in-karnataka/article71640242.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:53:08+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+     "url": "https://www.hindustantimes.com/india-news/karnataka-cabinet-hikes-milk-prices-by-rs-8-state-minister-nandini-milk-price-101793273245820.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:31:40+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+     "url": "https://www.indiatoday.in/india/story/karnataka-hikes-nandini-milk-prices-by-rs-8-to-rs-54-per-litre-rs-7-to-go-to-farmers-3027702-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:25:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:Government of India",
+    "outlet:TV9 Network",
+    "google-news:Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1",
+    "google-news:Milk Price Hike: झटके में 8 रुपये लीटर महंगा हुआ दूध, कर्नाटक सरकार का बड़ा फैसला",
+    "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान"
+   ],
+   "top": {
+    "IN-nation": 6
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 200179,
+   "views": 200179,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261029-Q10304982",
+   "qid": "Q10304982",
+   "title": "Jair Bolsonaro",
+   "name": "Jair Bolsonaro",
+   "phrase": "Bolsonaro",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+   "story_keys": [
+    "fleeing",
+    "himself",
+    "vio"
+   ],
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T01:14:01+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+    "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+    "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "जाइर बोल्सोनारो",
+   "reports": [
+    {
+     "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+     "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T01:14:01+00:00"
+    },
+    {
+     "title": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+     "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-28T22:26:00+00:00"
+    },
+    {
+     "title": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+     "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-28T22:06:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "google-news:How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "qid": "Q141898879",
+   "title": "2026 Toledo train collision",
+   "fame": 155105,
+   "views": 80105,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-29T00:00:00+00:00",
+   "headlines": [
+    "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "२०२६ तोलेदो रेलगाड़ी टक्कर",
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "wikipedia-current-events-2026-10-28",
+    "google-news:Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+     "url": "https://www.news18.com/explainers/spain-toledo-rail-crash-raises-alarm-for-indias-bullet-train-here-are-key-lessons-from-the-deadly-collision-ws-lrt-10402327.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T22:42:55+00:00"
+    },
+    {
+     "title": "Spain Train Crash: 46 Feared Dead in Toledo Collision | Investigation Underway | Toledo Train Ne4ws",
+     "url": "https://www.news18.com/videos/india/spain-train-crash-46-feared-dead-in-toledo-collision-investigation-underway-toledo-train-ne4ws-10401468.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T10:06:24+00:00"
+    }
+   ],
+   "id": "wk-Q141898879",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-10-28",
+   "coords": [
+    39.42777778,
+    -3.81805556
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 147425,
+   "views": 47425,
+   "traffic": 0,
+   "news": 100000,
+   "news_at": "2026-10-29T13:40:31.851735+00:00",
+   "headlines": [
+    "Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+    "‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+    "India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+    "Sawai Bhawani Singh: Jaipur evokes legacy of a maharaja who slipped into soldier's shoes"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "बृजेन्द्र पाल सिंह",
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "google-news:Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+    "google-news:‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+    "google-news:India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+    "outlet:Government of India",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "Government of India",
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330147",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-10-29T13:40:31.851735+00:00"
+    },
+    {
+     "title": "‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+     "url": "https://www.news18.com/india/accept-public-mandate-bjps-kedarnath-singh-concedes-defeat-in-varanasi-graduate-mlc-polls-ws-l-10402636.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:09:43+00:00"
+    },
+    {
+     "title": "India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+     "url": "https://www.hindustantimes.com/india-news/india-ready-to-share-battle-tested-anti-terror-expertise-with-asean-its-dialogue-partners-rajnath-singh-101793252705574.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:45:05+00:00"
+    },
+    {
+     "title": "BJP's Kedarnath Singh concedes defeat in UP MLC polls, says 'accept mandate with complete humility'",
+     "url": "https://www.hindustantimes.com/india-news/bjp-kedarnath-singh-concedes-defeat-in-varanasi-graduate-polls-101793251352168.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:24:00+00:00"
+    },
+    {
+     "title": "‘Declaration Of India’s Stance Against Terrorism’: Rajnath Singh Invokes Op Sindoor At ASEAN Meet",
+     "url": "https://www.news18.com/world/declaration-of-indias-stance-against-terrorism-rajnath-singh-invokes-op-sindoor-at-asean-meet-ws-kl-10402525.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:04:14+00:00"
+    },
+    {
+     "title": "Foreign policy had to evolve after 1991 reforms: Jaishankar at NK Singh’s book launch",
+     "url": "https://www.hindustantimes.com/india-news/foreign-policy-had-to-evolve-after-1991-reforms-jaishankar-at-nk-singh-s-book-launch-101793215223309.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T02:26:00+00:00"
+    },
+    {
+     "title": "BJP fields Hardeep Singh Puri for Rajya Sabha bypoll",
+     "url": "https://www.livemint.com/news/bjp-fields-hardeep-singh-puri-for-rajya-sabha-bypoll-11793197878461.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T15:48:56+00:00"
+    },
+    {
+     "title": "Defence minister Rajnath Singh flags concern over US military aid to Pakistan in talks with Pete Hegseth",
+     "url": "https://www.hindustantimes.com/india-news/defence-minister-rajnath-singh-flags-concern-over-us-military-aid-to-pakistan-in-talks-with-pete-hegseth-101793194533579.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T14:43:22+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {
+    "IN": 2,
+    "IN-nation": 9
+   },
+   "top_score": 1.13,
+   "top_headlines": [
+    "UP MLC Polls: BJP's Candidate Selection Under Lens, Samajwadi's Western Disturbance",
+    "Stop sermonising others; introspect why BJP lost Varanasi seats in MLC polls: Congress slams PM Modi",
+    "BJP Gains In Maharashtra MLC Polls, But Alliance Strength Tested To Its Limit"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T12:45:55+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cyclone Arnab Landfall Continues Along Andhra Coast, Storm's Centre Very Close To Shore",
+    "Cyclone Arnab Hits Andhra Pradesh: 150 km/h Winds, Flooding | Evacuations Underway | News18",
+    "Heavy Rains Lash Andhra Pradesh, Odisha As Cyclone Arnab Landfall Continues",
+    "Cyclone Arnab kills 5, damages crops and infrastructure in Andhra Pradesh; CM Naidu announces relief",
+    "Heavy rain warning in Chhattisgarh post Cyclone Arnab, schools shut in Raipur"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Railway bridge near Andhra’s Ichchapuram inundated; trains cancelled, diverted",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-railway-bridge-near-andhras-ichchapuram-inundated-trains-cancelled-diverted/article71639000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:19:32+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:04:37+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:41:30+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:37:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 7,
+    "IN-nation": 1,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश",
+    "अर्नब, वर्षा, तूफान, पवन... साइक्लोन के बीच जन्में बच्चों के लोग रख रहे ये नाम",
+    "Cyclone Arnab LIVE: New Bay system likely to head for Andhra coast; 300 villages marooned in Ganjam"
+   ],
+   "hindi_owners": [
+    "NDTV",
+    "Network18",
+    "India Today Group"
+   ],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "id": "kh-20261029-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+   "story_keys": [
+    "big",
+    "celebrate",
+    "deal",
+    "edge",
+    "farmer",
+    "india-u",
+    "people",
+    "protected",
+    "statement",
+    "trade"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T09:56:45+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+    "India to gain a big edge after US trade deal: Goyal",
+    "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+    "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal"
+   ],
+   "hindi_headlines": [
+    "केंद्रीय वाणिज्य एवं उद्योग मंत्री श्री पीयूष गोयल ने कहा, भारत के औद्योगिक रूपांतरण को गति देने के लिए गुणवत्ता, बड़े पैमाने पर उत्पादन और वैश्विक बाजारों तक पहुंच आवश्यक"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "पीयूष गोयल",
+   "reports": [
+    {
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403262.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:56:45+00:00"
+    },
+    {
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403261.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:56:45+00:00"
+    },
+    {
+     "title": "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal",
+     "url": "https://www.hindustantimes.com/india-news/india-us-trade-deal-piyush-goyal-no-farmers-interests-compromised-people-will-celebrate-comparative-advantage-fta-101793260893748.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:01:04+00:00"
+    },
+    {
+     "title": "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+     "url": "https://www.news18.com/india/farmers-interests-not-compromised-piyush-goyal-says-india-will-have-strong-advantage-in-us-trade-deal-ws-l-10403088.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T08:44:36+00:00"
+    },
+    {
+     "title": "India to gain a big edge after US trade deal: Goyal",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/piyush-goyal-india-us-trade-deal-farmers-interests/articleshow/135296411.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:56:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "qid": "Q468843",
+   "title": "Dolores Huerta",
+   "fame": 76012,
+   "views": 76012,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q468843",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261029-Q1057110",
+   "qid": "Q1057110",
+   "title": "IndiGo",
+   "name": "IndiGo",
+   "phrase": "IndiGo CEO",
+   "person": false,
+   "kind": "explainer",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+   "story_keys": [
+    "but",
+    "choice",
+    "cost",
+    "fare",
+    "fuel",
+    "hike"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T13:36:52+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+    "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+    "IndiGo may raise fares as fuel costs soar: CEO",
+    "IndiGo to hike fares amid soaring fuel costs, CEO says no choice"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "इंडीगो",
+   "reports": [
+    {
+     "title": "IndiGo to hike fares amid soaring fuel costs, CEO says no choice",
+     "url": "https://www.indiatoday.in/business/story/indigo-ticket-fare-hike-fuel-costs-loss-rs-1879-crore-ceo-willie-walsh-3027833-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T13:36:52+00:00"
+    },
+    {
+     "title": "IndiGo may raise fares as fuel costs soar: CEO",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/indigo-airfares-hike-fuel-costs-ceo-willie-walsh-aviation-fuel-prices-ticket-prices-interglobe-aviation/articleshow/135308209.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:15:03+00:00"
+    },
+    {
+     "title": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/indigo-ceo-says-no-choice-but-to-consider-fare-hikes-as-fuel-costs-surge/articleshow/135307300.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:08:51+00:00"
+    },
+    {
+     "title": "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+     "url": "https://www.hindustantimes.com/india-news/no-choice-left-but-to-look-to-increase-fares-indigo-ceo-on-very-significant-rise-in-fuel-bill-101793275288653.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:03:22+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 70990,
+   "views": 70990,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q376176",
+   "title": "Walter Koenig",
+   "fame": 58795,
+   "views": 58795,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q376176",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-25",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q5386105",
+   "title": "Eric Bauza",
+   "fame": 58143,
+   "views": 58143,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5386105",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-25",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q4738117",
+   "title": "Alvin Hellerstein",
+   "fame": 34544,
+   "views": 9544,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-28T18:58:34+00:00",
+   "headlines": [
+    "Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "google-news:Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92",
+     "url": "https://www.livemint.com/news/us-news/alvin-hellerstein-judge-in-maduro-9-11-cases-dies-at-92-11793213915155.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T18:58:34+00:00"
+    }
+   ],
+   "id": "wk-Q4738117",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q453730",
+   "title": "Fátima Báñez",
+   "fame": 33228,
+   "views": 33228,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "फ़ातिमा बान्येस",
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q453730",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q922837",
+   "title": "Cuauhtémoc Cárdenas",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-29T13:29:25+00:00",
+   "headlines": [
+    "Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US",
     "world"
    ],
+   "label_hi": null,
+   "via": [
+    "google-news:Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q922837",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-29T13:11:34+00:00",
+   "headlines": [
+    "12 Killed In Saudi Strikes In Yemen, Claim Houthis"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
    "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
-    "wikipedia-current-events-2026-10-25",
-    "google-news:Egypt approves military support for Saudi Arabia after Houthi attacks escalate",
-    "google-news:Saudi Arabia Reopens Riyadh Airport Even as Houthis Threaten Further Strikes",
-    "google-news:Saudi Arabia turns to AI system to hunt Houthi missiles; why it may not be effective",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network"
+    "google-news:12 Killed In Saudi Strikes In Yemen, Claim Houthis",
+    "outlet:NDTV"
    ],
    "owners": [
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
+    "NDTV"
    ],
    "reports": [
     {
-     "title": "Saudi Arabia turns to AI system to hunt Houthi missiles; why it may not be effective",
-     "url": "https://timesofindia.indiatimes.com/world/middle-east/saudi-arabia-turns-to-maven-like-ai-system-to-hunt-houthi-missiles-why-it-may-not-be-effective/articleshow/135216200.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "12 Killed In Saudi Strikes In Yemen, Claim Houthis",
+     "url": "https://www.ndtv.com/world-news/12-killed-in-saudi-strikes-in-yemen-claim-houthis-12254380#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T17:19:07+00:00"
-    },
-    {
-     "title": "Intercepted Houthi missiles cause damage in Saudi Arabian city",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/10/26/intercepted-houthi-missiles-cause-damage-in-saudi-arabian-city?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-26T12:54:05+00:00"
+     "at": "2026-10-29T13:11:34+00:00"
     }
    ],
    "id": "wk-Q141695384",
@@ -70,653 +1099,13 @@
    "hindi_owners": []
   },
   {
-   "id": "kh-20261026-Q6744197",
-   "qid": "Q6744197",
-   "title": "Mallikarjun Kharge",
-   "name": "Mallikarjun Kharge",
-   "phrase": "Kharge",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-   "story_keys": [
-    "baap'",
-    "insult",
-    "mallikarjun",
-    "news",
-    "rajnath",
-    "remark",
-    "row",
-    "singh",
-    "slam",
-    "spark",
-    "won't"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T13:23:27+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-    "Nitin Nabin takes ‘bankrupt mindset’ jibe at Kharge as row over PM remarks rages; effigy burnt in Patna",
-    "'Poisonous Hate, Uncultured Politics': BJP Demands Apology From Kharge Over PM Modi Remark",
-    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi"
-   ],
-   "hindi_headlines": [
-    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "मल्लिकार्जुन खरगे",
-   "reports": [
-    {
-     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
-     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:23:27+00:00"
-    },
-    {
-     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:01:52+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
-     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T09:23:17+00:00"
-    },
-    {
-     "title": "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress",
-     "url": "https://www.news18.com/videos/india/rajnath-singh-slams-congress-chief-kharge-insult-to-india-row-erupts-between-bjp-and-congress-10397891.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:32:42+00:00"
-    },
-    {
-     "title": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-     "url": "https://www.news18.com/india/insult-to-india-itself-rajnath-singh-slams-mallikarjun-kharge-over-pm-modi-remark-ws-l-10397872.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:31:09+00:00"
-    },
-    {
-     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T06:34:15+00:00"
-    },
-    {
-     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T05:04:30+00:00"
-    },
-    {
-     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T04:28:26+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "google-news:BJP Holds Protests Across Country, Seeks M Kharge's Apology Over \"Baap\" Jibe",
-    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 3
-   },
-   "top_score": 1.12,
-   "top_headlines": [
-    "India news: BJP to protest nationwide over opposition's Modi remark",
-    "BJP Holds Protests Across Country, Seeks M Kharge's Apology Over \"Baap\" Jibe"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q85850332",
-   "title": "Chef Damu",
-   "fame": 249496,
-   "views": 124496,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-25T09:16:24+00:00",
-   "headlines": [
-    "Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25",
-    "google-news:Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q85850332",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261026-Q37181",
-   "qid": "Q37181",
-   "title": "Luiz Inácio Lula da Silva",
-   "name": "Luiz Inácio Lula da Silva",
-   "phrase": "Lula",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Lula wins fourth term: What are the reactions in Brazil?",
-   "story_keys": [
-    "fourth",
-    "term",
-    "wins"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T14:20:34+00:00",
-   "owners": [
-    "NPR",
-    "France Médias Monde",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lula wins fourth term: What are the reactions in Brazil?",
-    "Brazil's left-wing President Lula elected for fourth term",
-    "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
-   "reports": [
-    {
-     "title": "Lula wins fourth term: What are the reactions in Brazil?",
-     "url": "https://www.france24.com/en/lula-wins-fourth-term-what-are-the-reactions-in-brazil",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T14:04:39+00:00"
-    },
-    {
-     "title": "Brazil's left-wing President Lula elected for fourth term",
-     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T00:35:00+00:00"
-    },
-    {
-     "title": "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-     "url": "https://www.indiatoday.in/diu/story/lula-brazil-election-win-brics-india-trade-ties-3025497-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:20:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NPR",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261026-Q116758847",
-   "qid": "Q116758847",
-   "title": "Anthropic",
-   "name": "Anthropic",
-   "phrase": "Anthropic",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-   "story_keys": [
-    "file",
-    "giant",
-    "plan"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T14:40:45+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-    "Anthropic said to plan for Mega-IPO Monday",
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-     "url": "https://www.thehindu.com/news/international/artificial-intelligence-giant-anthropic-files-papers-to-sell-shares-to-the-public-for-the-first-time/article71627679.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:40:45+00:00"
-    },
-    {
-     "title": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-     "url": "https://www.indiatoday.in/business/story/ai-giant-anthropic-files-for-ipo-to-list-its-stock-on-nasdaq-under-ant-symbol-3025483-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:26:27+00:00"
-    },
-    {
-     "title": "Anthropic said to plan for Mega-IPO Monday",
-     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:23:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:Artificial Intelligence giant Anthropic files for Initial Public Offering"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q376176",
-   "title": "Walter Koenig",
-   "fame": 150000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-10-26T17:32:07+00:00",
-   "headlines": [
-    "Walter Koenig, Chekov on Original ‘Star Trek,’ Dies at 90",
-    "Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Walter Koenig, Chekov on Original ‘Star Trek,’ Dies at 90",
-    "google-news:Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90",
-     "url": "https://www.theguardian.com/culture/2026/oct/26/walter-koenig-actor-star-trek-dies",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-26T17:18:59+00:00"
-    }
-   ],
-   "id": "wk-Q376176",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5386105",
-   "title": "Eric Bauza",
-   "fame": 150000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-10-26T16:39:34+00:00",
-   "headlines": [
-    "Eric Bauza, Modern Voice of ‘Looney Tunes’ Stars, Dies at 46",
-    "Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Eric Bauza, Modern Voice of ‘Looney Tunes’ Stars, Dies at 46",
-    "google-news:Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Eric Bauza, voice of Bugs Bunny and Daffy Duck, dies aged 46",
-     "url": "https://www.bbc.co.uk/news/articles/cwzd6q630vjeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T06:16:15+00:00"
-    }
-   ],
-   "id": "wk-Q5386105",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q101137",
-   "title": "Yasuo Fukuda",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-26T05:26:00+00:00",
-   "headlines": [
-    "Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q101137",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "nw-20261025-arnab-cyclone",
-   "qid": null,
-   "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-   "name": "Arnab",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T17:43:26+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
-    "Cyclone Arnab To Hit Andhra Coast On Oct 28; State Braces For Extremely Heavy Rainfall | Top Points",
-    "Cyclone Arnab: Where Has Very Severe Storm Reached & When Will It Make Landfall In Andhra Pradesh?",
-    "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
-    "Cyclone Arnab gains strength: Heavy rain, powerful winds to hit these cities"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-     "url": "https://www.indiatoday.in/programme/super-6/video/cyclone-arnab-triggers-red-alerts-across-4-states-dmk-leader-arrested-in-bribery-case-3025661-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T17:43:26+00:00"
-    },
-    {
-     "title": "A.P., Odisha on alert as cyclone ‘Arnab’ nears land",
-     "url": "https://www.thehindu.com/news/national/ap-odisha-on-alert-as-cyclone-arnab-nears-land/article71627868.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T17:09:46+00:00"
-    },
-    {
-     "title": "Cyclone Arnab: Andaman and Nicobar schools shut till Tuesday",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andaman-and-nicobar-schools-shut-till-tuesday-101793025513313.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:58:25+00:00"
-    },
-    {
-     "title": "Schools shut, relief measures intensified in three North Andhra districts as cyclone nears",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/schools-shut-relief-measures-intensified-in-three-north-andhra-districts-as-cyclone-nears/article71628075.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:38:10+00:00"
-    },
-    {
-     "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/very-severe-cyclone-arnab-to-make-landfall-near-yanam-kakinada-red-alert-issued-for-seven-districts/article71626990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:24:01+00:00"
-    },
-    {
-     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
-     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:10:40+00:00"
-    },
-    {
-     "title": "Extremely heavy rain to hit Andhra on Tuesday as Cyclone Arnab comes close",
-     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-extremely-heavy-rain-forecast-for-coastal-andhra-pradesh-odisha-and-telangana-3025392-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:00:38+00:00"
-    },
-    {
-     "title": "HT Evening News Brief October 26: Cyclone Arnab intensifies, Jamia protests continue, E100 cars get conditional nod",
-     "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-october-26-cyclone-arnab-jamia-protests-e100-fuel-vijay-deverakonda-rashmika-mandanna-samir-banerjee-tennis-101793017807927.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:41:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "India Today Group",
-    "BBC",
-    "HT Media"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "qid": "Q141820731",
-   "title": "2026 Karak church shooting",
-   "fame": 50000,
-   "views": 0,
+   "qid": "Q2339941",
+   "title": "Tetsuya Chiba",
+   "fame": 17745,
+   "views": 17745,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-26T18:04:07.629432+00:00",
+   "news_at": null,
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -725,7 +1114,36 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-current-events-2026-10-26"
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2339941",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-22",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141820731",
+   "title": "2026 Karak church shooting",
+   "fame": 15694,
+   "views": 15694,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "२०२६ करक गिरजा गोलीबारी",
+   "via": [
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
@@ -744,10 +1162,10 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q320093",
-   "title": "Tom Skerritt",
-   "fame": 42075,
-   "views": 42075,
+   "qid": "Q18684940",
+   "title": "Jim Boyd (newscaster)",
+   "fame": 11442,
+   "views": 11442,
    "traffic": 0,
    "news": 0,
    "news_at": null,
@@ -759,7 +1177,38 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-25"
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18684940",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 10801,
+   "views": 10801,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
@@ -775,8 +1224,8 @@
   {
    "qid": "Q1699148",
    "title": "John Anderson (singer)",
-   "fame": 21530,
-   "views": 21530,
+   "fame": 9979,
+   "views": 9979,
    "traffic": 0,
    "news": 0,
    "news_at": null,
@@ -788,7 +1237,7 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-25"
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
@@ -796,106 +1245,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-21",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": null,
-   "title": "2026 Florida A&M University shooting",
-   "fame": 15549,
-   "views": 15549,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-2026_Florida_A_M_University_shooting",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-25",
-   "coords": [
-    30.42611111,
-    -84.29166667
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
-  },
-  {
-   "qid": "Q452431",
-   "title": "Ron Duguay",
-   "fame": 10609,
-   "views": 10609,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q452431",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q7326047",
-   "title": "Richard Green (footballer)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:richard green"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7326047",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -906,15 +1255,297 @@
  ],
  "candidates": [
   {
-   "qid": "Q85850332",
-   "title": "Chef Damu",
-   "fame": 249496,
-   "views": 124496,
+   "id": "kh-20261029-Q1185",
+   "qid": "Q1185",
+   "title": "Karnataka",
+   "name": "Karnataka",
+   "phrase": "Karnataka",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+   "story_keys": [
+    "hike",
+    "litre",
+    "milk",
+    "per",
+    "price"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T12:01:00+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Network18",
+    "Government of India",
+    "TV9 Network"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-25T09:16:24+00:00",
    "headlines": [
-    "Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
+    "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+    "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+    "Milk price hiked in Karnataka",
+    "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+    "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_headlines": [
+    "कर्नाटक की राज्यपाल ने प्रधानमंत्री से मुलाकात की",
+    "दरभंगा से RJD के अनिल झा जीते, कर्नाटक में दूध 8 रुपये महंगा; पढ़ें शाम की बड़ी खबरें",
+    "कर्नाटक में नंदिनी दूध की कीमतों में 8 रुपये प्रति लीटर की हुई बढ़ोतरी, 1 नवंबर से लागू होंगी नई दरें",
+    "कर्नाटक में 8 रुपए प्रति लीटर महंगा होगा दूध, 1 नवंबर से कीमतें लागू, सरकार ने दी मंजूरी",
+    "‘कर्नाटक के SIR में कोई गड़बड़ी नहीं हुई’, DK सरकार के मंत्री के बयान पर बवाल; धर्मेंद्र प्रधान ने पूछा सवाल"
+   ],
+   "hindi_news": 9,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कर्नाटक",
+   "reports": [
+    {
+     "title": "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+     "url": "https://www.news18.com/india/nandini-milk-to-cost-8-more-per-litre-from-november-1-in-karnataka-10403621.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:01:00+00:00"
+    },
+    {
+     "title": "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+     "url": "https://www.ndtv.com/india-news/karnataka-to-raise-milk-prices-by-rs-8-per-litre-from-november-1-12253878#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:57:21+00:00"
+    },
+    {
+     "title": "Milk price hiked in Karnataka",
+     "url": "https://www.thehindu.com/news/national/karnataka/milk-price-hiked-in-karnataka/article71640242.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:53:08+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+     "url": "https://www.hindustantimes.com/india-news/karnataka-cabinet-hikes-milk-prices-by-rs-8-state-minister-nandini-milk-price-101793273245820.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:31:40+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+     "url": "https://www.indiatoday.in/india/story/karnataka-hikes-nandini-milk-prices-by-rs-8-to-rs-54-per-litre-rs-7-to-go-to-farmers-3027702-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:25:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:Government of India",
+    "outlet:TV9 Network",
+    "google-news:Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1",
+    "google-news:Milk Price Hike: झटके में 8 रुपये लीटर महंगा हुआ दूध, कर्नाटक सरकार का बड़ा फैसला",
+    "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान"
+   ],
+   "top": {
+    "IN-nation": 6
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T12:45:55+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cyclone Arnab Landfall Continues Along Andhra Coast, Storm's Centre Very Close To Shore",
+    "Cyclone Arnab Hits Andhra Pradesh: 150 km/h Winds, Flooding | Evacuations Underway | News18",
+    "Heavy Rains Lash Andhra Pradesh, Odisha As Cyclone Arnab Landfall Continues",
+    "Cyclone Arnab kills 5, damages crops and infrastructure in Andhra Pradesh; CM Naidu announces relief",
+    "Heavy rain warning in Chhattisgarh post Cyclone Arnab, schools shut in Raipur"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Railway bridge near Andhra’s Ichchapuram inundated; trains cancelled, diverted",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-railway-bridge-near-andhras-ichchapuram-inundated-trains-cancelled-diverted/article71639000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:19:32+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:04:37+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:41:30+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:37:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 7,
+    "IN-nation": 1,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश",
+    "अर्नब, वर्षा, तूफान, पवन... साइक्लोन के बीच जन्में बच्चों के लोग रख रहे ये नाम",
+    "Cyclone Arnab LIVE: New Bay system likely to head for Andhra coast; 300 villages marooned in Ganjam"
+   ],
+   "hindi_owners": [
+    "NDTV",
+    "Network18",
+    "India Today Group"
+   ],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 147425,
+   "views": 47425,
+   "traffic": 0,
+   "news": 100000,
+   "news_at": "2026-10-29T13:40:31.851735+00:00",
+   "headlines": [
+    "Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+    "‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+    "India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+    "Sawai Bhawani Singh: Jaipur evokes legacy of a maharaja who slipped into soldier's shoes"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -923,344 +1554,531 @@
    "geos": [
     "IN"
    ],
-   "label_hi": null,
+   "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "wikipedia-top-2026-10-25",
-    "google-news:Chef Damu Dies At 72, Tamil Nadu Chief Minister Vijay Pays Tribute"
+    "wikipedia-top-2026-10-28",
+    "google-news:Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+    "google-news:‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+    "google-news:India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+    "outlet:Government of India",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q85850332",
+   "owners": [
+    "Government of India",
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Union Minister Shri Rajiv Ranjan Singh to inaugurate National Workshop on People’s Plan Campaign 2026-27 in New Delhi tomorrow",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330147",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-10-29T13:40:31.851735+00:00"
+    },
+    {
+     "title": "‘Accept Public Mandate’: BJP’s Kedarnath Singh Concedes Defeat In Varanasi Graduate MLC Polls",
+     "url": "https://www.news18.com/india/accept-public-mandate-bjps-kedarnath-singh-concedes-defeat-in-varanasi-graduate-mlc-polls-ws-l-10402636.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:09:43+00:00"
+    },
+    {
+     "title": "India ready to share 'battle-tested' anti-terror expertise with ASEAN, its dialogue partners: Rajnath Singh",
+     "url": "https://www.hindustantimes.com/india-news/india-ready-to-share-battle-tested-anti-terror-expertise-with-asean-its-dialogue-partners-rajnath-singh-101793252705574.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:45:05+00:00"
+    },
+    {
+     "title": "BJP's Kedarnath Singh concedes defeat in UP MLC polls, says 'accept mandate with complete humility'",
+     "url": "https://www.hindustantimes.com/india-news/bjp-kedarnath-singh-concedes-defeat-in-varanasi-graduate-polls-101793251352168.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:24:00+00:00"
+    },
+    {
+     "title": "‘Declaration Of India’s Stance Against Terrorism’: Rajnath Singh Invokes Op Sindoor At ASEAN Meet",
+     "url": "https://www.news18.com/world/declaration-of-indias-stance-against-terrorism-rajnath-singh-invokes-op-sindoor-at-asean-meet-ws-kl-10402525.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T05:04:14+00:00"
+    },
+    {
+     "title": "Foreign policy had to evolve after 1991 reforms: Jaishankar at NK Singh’s book launch",
+     "url": "https://www.hindustantimes.com/india-news/foreign-policy-had-to-evolve-after-1991-reforms-jaishankar-at-nk-singh-s-book-launch-101793215223309.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T02:26:00+00:00"
+    },
+    {
+     "title": "BJP fields Hardeep Singh Puri for Rajya Sabha bypoll",
+     "url": "https://www.livemint.com/news/bjp-fields-hardeep-singh-puri-for-rajya-sabha-bypoll-11793197878461.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T15:48:56+00:00"
+    },
+    {
+     "title": "Defence minister Rajnath Singh flags concern over US military aid to Pakistan in talks with Pete Hegseth",
+     "url": "https://www.hindustantimes.com/india-news/defence-minister-rajnath-singh-flags-concern-over-us-military-aid-to-pakistan-in-talks-with-pete-hegseth-101793194533579.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T14:43:22+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
    "kind": "death",
    "category": "death",
-   "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "date": "2026-10-27",
+   "top": {
+    "IN": 2,
+    "IN-nation": 9
+   },
+   "top_score": 1.13,
+   "top_headlines": [
+    "UP MLC Polls: BJP's Candidate Selection Under Lens, Samajwadi's Western Disturbance",
+    "Stop sermonising others; introspect why BJP lost Varanasi seats in MLC polls: Congress slams PM Modi",
+    "BJP Gains In Maharashtra MLC Polls, But Alliance Strength Tested To Its Limit"
+   ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "obituary"
+   "lane": "sensitive"
   },
   {
-   "id": "kh-20261026-Q116758847",
-   "qid": "Q116758847",
-   "title": "Anthropic",
-   "name": "Anthropic",
-   "phrase": "Anthropic",
+   "qid": "Q141898879",
+   "title": "2026 Toledo train collision",
+   "fame": 155105,
+   "views": 80105,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-29T00:00:00+00:00",
+   "headlines": [
+    "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "२०२६ तोलेदो रेलगाड़ी टक्कर",
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "wikipedia-current-events-2026-10-28",
+    "google-news:Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+     "url": "https://www.news18.com/explainers/spain-toledo-rail-crash-raises-alarm-for-indias-bullet-train-here-are-key-lessons-from-the-deadly-collision-ws-lrt-10402327.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T22:42:55+00:00"
+    },
+    {
+     "title": "Spain Train Crash: 46 Feared Dead in Toledo Collision | Investigation Underway | Toledo Train Ne4ws",
+     "url": "https://www.news18.com/videos/india/spain-train-crash-46-feared-dead-in-toledo-collision-investigation-underway-toledo-train-ne4ws-10401468.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T10:06:24+00:00"
+    }
+   ],
+   "id": "wk-Q141898879",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-10-28",
+   "coords": [
+    39.42777778,
+    -3.81805556
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "id": "kh-20261029-Q1057110",
+   "qid": "Q1057110",
+   "title": "IndiGo",
+   "name": "IndiGo",
+   "phrase": "IndiGo CEO",
    "person": false,
    "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
    "story_keys": [
-    "file",
-    "giant",
-    "plan"
+    "but",
+    "choice",
+    "cost",
+    "fare",
+    "fuel",
+    "hike"
    ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T14:40:45+00:00",
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T13:36:52+00:00",
    "owners": [
+    "HT Media",
     "Bennett, Coleman & Co.",
-    "India Today Group",
-    "The Hindu Group"
+    "India Today Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-    "Anthropic said to plan for Mega-IPO Monday",
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering"
+    "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+    "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+    "IndiGo may raise fares as fuel costs soar: CEO",
+    "IndiGo to hike fares amid soaring fuel costs, CEO says no choice"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "इंडीगो",
    "reports": [
     {
-     "title": "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-     "url": "https://www.thehindu.com/news/international/artificial-intelligence-giant-anthropic-files-papers-to-sell-shares-to-the-public-for-the-first-time/article71627679.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:40:45+00:00"
-    },
-    {
-     "title": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-     "url": "https://www.indiatoday.in/business/story/ai-giant-anthropic-files-for-ipo-to-list-its-stock-on-nasdaq-under-ant-symbol-3025483-2026-10-26?utm_source=rss",
+     "title": "IndiGo to hike fares amid soaring fuel costs, CEO says no choice",
+     "url": "https://www.indiatoday.in/business/story/indigo-ticket-fare-hike-fuel-costs-loss-rs-1879-crore-ceo-willie-walsh-3027833-2026-10-29?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T13:26:27+00:00"
+     "at": "2026-10-29T13:36:52+00:00"
     },
     {
-     "title": "Anthropic said to plan for Mega-IPO Monday",
-     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
+     "title": "IndiGo may raise fares as fuel costs soar: CEO",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/indigo-airfares-hike-fuel-costs-ceo-willie-walsh-aviation-fuel-prices-ticket-prices-interglobe-aviation/articleshow/135308209.cms",
      "outlet": "The Economic Times",
      "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T12:23:45+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:Artificial Intelligence giant Anthropic files for Initial Public Offering"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q376176",
-   "title": "Walter Koenig",
-   "fame": 150000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-10-26T17:32:07+00:00",
-   "headlines": [
-    "Walter Koenig, Chekov on Original ‘Star Trek,’ Dies at 90",
-    "Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Walter Koenig, Chekov on Original ‘Star Trek,’ Dies at 90",
-    "google-news:Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
+     "at": "2026-10-29T12:15:03+00:00"
+    },
     {
-     "title": "Walter Koenig, actor best known as Chekov on Star Trek, dies aged 90",
-     "url": "https://www.theguardian.com/culture/2026/oct/26/walter-koenig-actor-star-trek-dies",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
+     "title": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/indigo-ceo-says-no-choice-but-to-consider-fare-hikes-as-fuel-costs-surge/articleshow/135307300.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T17:18:59+00:00"
+     "at": "2026-10-29T12:08:51+00:00"
+    },
+    {
+     "title": "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+     "url": "https://www.hindustantimes.com/india-news/no-choice-left-but-to-look-to-increase-fares-indigo-ceo-on-very-significant-rise-in-fuel-bill-101793275288653.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:03:22+00:00"
     }
    ],
-   "id": "wk-Q376176",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-25",
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "other"
   },
   {
-   "id": "nw-20261025-arnab-cyclone",
-   "qid": null,
-   "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-   "name": "Arnab",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T17:43:26+00:00",
+   "id": "kh-20261029-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+   "story_keys": [
+    "big",
+    "celebrate",
+    "deal",
+    "edge",
+    "farmer",
+    "india-u",
+    "people",
+    "protected",
+    "statement",
+    "trade"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T09:56:45+00:00",
    "owners": [
+    "Bennett, Coleman & Co.",
     "Network18",
     "HT Media",
-    "India Today Group",
-    "The Hindu Group"
+    "Government of India"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
-    "Cyclone Arnab To Hit Andhra Coast On Oct 28; State Braces For Extremely Heavy Rainfall | Top Points",
-    "Cyclone Arnab: Where Has Very Severe Storm Reached & When Will It Make Landfall In Andhra Pradesh?",
-    "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
-    "Cyclone Arnab gains strength: Heavy rain, powerful winds to hit these cities"
+    "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+    "India to gain a big edge after US trade deal: Goyal",
+    "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+    "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "केंद्रीय वाणिज्य एवं उद्योग मंत्री श्री पीयूष गोयल ने कहा, भारत के औद्योगिक रूपांतरण को गति देने के लिए गुणवत्ता, बड़े पैमाने पर उत्पादन और वैश्विक बाजारों तक पहुंच आवश्यक"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "पीयूष गोयल",
    "reports": [
     {
-     "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-     "url": "https://www.indiatoday.in/programme/super-6/video/cyclone-arnab-triggers-red-alerts-across-4-states-dmk-leader-arrested-in-bribery-case-3025661-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403262.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T17:43:26+00:00"
+     "at": "2026-10-29T09:56:45+00:00"
     },
     {
-     "title": "A.P., Odisha on alert as cyclone ‘Arnab’ nears land",
-     "url": "https://www.thehindu.com/news/national/ap-odisha-on-alert-as-cyclone-arnab-nears-land/article71627868.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403261.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T17:09:46+00:00"
+     "at": "2026-10-29T09:56:45+00:00"
     },
     {
-     "title": "Cyclone Arnab: Andaman and Nicobar schools shut till Tuesday",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andaman-and-nicobar-schools-shut-till-tuesday-101793025513313.html",
+     "title": "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal",
+     "url": "https://www.hindustantimes.com/india-news/india-us-trade-deal-piyush-goyal-no-farmers-interests-compromised-people-will-celebrate-comparative-advantage-fta-101793260893748.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T16:58:25+00:00"
+     "at": "2026-10-29T09:01:04+00:00"
     },
     {
-     "title": "Schools shut, relief measures intensified in three North Andhra districts as cyclone nears",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/schools-shut-relief-measures-intensified-in-three-north-andhra-districts-as-cyclone-nears/article71628075.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+     "url": "https://www.news18.com/india/farmers-interests-not-compromised-piyush-goyal-says-india-will-have-strong-advantage-in-us-trade-deal-ws-l-10403088.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T16:38:10+00:00"
+     "at": "2026-10-29T08:44:36+00:00"
     },
     {
-     "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/very-severe-cyclone-arnab-to-make-landfall-near-yanam-kakinada-red-alert-issued-for-seven-districts/article71626990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "India to gain a big edge after US trade deal: Goyal",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/piyush-goyal-india-us-trade-deal-farmers-interests/articleshow/135296411.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T16:24:01+00:00"
-    },
-    {
-     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
-     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:10:40+00:00"
-    },
-    {
-     "title": "Extremely heavy rain to hit Andhra on Tuesday as Cyclone Arnab comes close",
-     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-extremely-heavy-rain-forecast-for-coastal-andhra-pradesh-odisha-and-telangana-3025392-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:00:38+00:00"
-    },
-    {
-     "title": "HT Evening News Brief October 26: Cyclone Arnab intensifies, Jamia protests continue, E100 cars get conditional nod",
-     "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-october-26-cyclone-arnab-jamia-protests-e100-fuel-vijay-deverakonda-rashmika-mandanna-samir-banerjee-tennis-101793017807927.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:41:38+00:00"
+     "at": "2026-10-29T07:56:16+00:00"
     }
    ],
    "via": [
+    "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
+    "outlet:Government of India"
    ],
-   "emerging": true,
-   "article": null,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "India Today Group",
-    "BBC",
-    "HT Media"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "breaking"
+   "lane": "naam-niyam"
   },
   {
-   "qid": "Q101137",
-   "title": "Yasuo Fukuda",
-   "fame": 125000,
-   "views": 0,
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 200179,
+   "views": 200179,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-10-26T05:26:00+00:00",
-   "headlines": [
-    "Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "world"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "google-news:Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q101137",
+   "id": "wk-Q259559",
    "kind": "death",
    "category": "death",
-   "date": "2026-10-22",
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "Yasuo Fukuda, Japan's first second-generation prime minister, dies at 90, Nikkei reports"
-   ],
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
   },
   {
-   "qid": null,
-   "title": "2026 Florida A&M University shooting",
-   "fame": 15549,
-   "views": 15549,
+   "id": "kh-20261029-Q10304982",
+   "qid": "Q10304982",
+   "title": "Jair Bolsonaro",
+   "name": "Jair Bolsonaro",
+   "phrase": "Bolsonaro",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+   "story_keys": [
+    "fleeing",
+    "himself",
+    "vio"
+   ],
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T01:14:01+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+    "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+    "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "जाइर बोल्सोनारो",
+   "reports": [
+    {
+     "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+     "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T01:14:01+00:00"
+    },
+    {
+     "title": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+     "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-28T22:26:00+00:00"
+    },
+    {
+     "title": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+     "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-28T22:06:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "google-news:How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "qid": "Q453730",
+   "title": "Fátima Báñez",
+   "fame": 33228,
+   "views": 33228,
    "traffic": 0,
    "news": 0,
    "news_at": null,
@@ -1270,33 +2088,28 @@
    "region": "world",
    "india_link": false,
    "geos": [],
-   "label_hi": null,
+   "label_hi": "फ़ातिमा बान्येस",
    "via": [
-    "wikipedia-top-2026-10-25"
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
-   "id": "wp-2026_Florida_A_M_University_shooting",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-25",
-   "coords": [
-    30.42611111,
-    -84.29166667
-   ],
-   "has_coords": true,
+   "id": "wk-Q453730",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "sensitive"
+   "lane": "obituary"
   },
   {
-   "qid": "Q1699148",
-   "title": "John Anderson (singer)",
-   "fame": 21530,
-   "views": 21530,
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 70990,
+   "views": 70990,
    "traffic": 0,
    "news": 0,
    "news_at": null,
@@ -1308,7 +2121,117 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-10-25"
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q4738117",
+   "title": "Alvin Hellerstein",
+   "fame": 34544,
+   "views": 9544,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-28T18:58:34+00:00",
+   "headlines": [
+    "Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "google-news:Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Alvin Hellerstein, Judge in Maduro, 9/11 Cases, Dies at 92",
+     "url": "https://www.livemint.com/news/us-news/alvin-hellerstein-judge-in-maduro-9-11-cases-dies-at-92-11793213915155.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T18:58:34+00:00"
+    }
+   ],
+   "id": "wk-Q4738117",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q18684940",
+   "title": "Jim Boyd (newscaster)",
+   "fame": 11442,
+   "views": 11442,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18684940",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1699148",
+   "title": "John Anderson (singer)",
+   "fame": 9979,
+   "views": 9979,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-28"
    ],
    "owners": [],
    "reports": [],
@@ -1324,112 +2247,231 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q452431",
-   "title": "Ron Duguay",
-   "fame": 10609,
-   "views": 10609,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-25"
+   "id": "kh-20261029-Q163225-update",
+   "qid": "Q163225",
+   "title": "Sonia Gandhi",
+   "name": "Sonia Gandhi",
+   "phrase": "Sonia Gandhi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
+   "story_keys": [
+    "began",
+    "belonging",
+    "cambridge’",
+    "debut",
+    "falling",
+    "instagram",
+    "join",
+    "journey",
+    "look",
+    "love",
+    "love’",
+    "make",
+    "meeting",
+    "memoir",
+    "memorie",
+    "rajiv",
+    "recall",
+    "share",
+    "story",
+    "unveil"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q452431",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q7326047",
-   "title": "Richard Green (footballer)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:richard green"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7326047",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-22",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  }
- ],
- "notes": [
-  "outlets: 1353 headlines from 31 feeds (19 owners), 13 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261025-arnab-cyclone",
-  "explainers: 3 kh- stories (on): kh-20261026-Q6744197, kh-20261026-Q37181, kh-20261026-Q116758847; dropped: explainer BJP: fewer than 3 owners' headlines name it and the story; explainer Kolkata Teen: fewer than 3 owners' headlines name it and the story; explainer Anthropic IPO Losses / Anthropic IPO Losses: no Wikipedia article that can be its centre",
-  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again"
- ],
- "trend_errors": [
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
- ],
- "outlets": {
-  "headlines": 1353,
-  "feeds": 31,
-  "owners": 19,
-  "matched": 13,
-  "corroborated": 5
- },
- "emerging": [
-  {
-   "id": "nw-20261025-arnab-cyclone",
-   "qid": null,
-   "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-   "name": "Arnab",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-10-25",
-   "news_at": "2026-10-26T17:43:26+00:00",
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T09:51:01+00:00",
    "owners": [
     "Network18",
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
+    "HT Media"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 1,
+   "news": 0,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "IMD Issues Cyclone Alert For Andhra, South Odisha Coasts; Landfall Likely On October 28",
-    "Cyclone Arnab To Hit Andhra Coast On Oct 28; State Braces For Extremely Heavy Rainfall | Top Points",
-    "Cyclone Arnab: Where Has Very Severe Storm Reached & When Will It Make Landfall In Andhra Pradesh?",
-    "Satellite image shows Cyclone Arnab moving towards Andhra as storm intensifies over Bay of Bengal ahead of October 28 landfall",
-    "Cyclone Arnab gains strength: Heavy rain, powerful winds to hit these cities"
+    "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
+    "'Don't worry about police, lathis': Rahul Gandhi asks people to join ‘Chalo Dilli Ramlila March’ on November 1"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सोनिया गाँधी",
+   "reports": [
+    {
+     "title": "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
+     "url": "https://www.news18.com/india/dont-worry-about-police-lathis-rahul-gandhi-urges-people-to-join-november-1-delhi-rally-10403218.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:51:01+00:00"
+    },
+    {
+     "title": "'Don't worry about police, lathis': Rahul Gandhi asks people to join ‘Chalo Dilli Ramlila March’ on November 1",
+     "url": "https://www.hindustantimes.com/india-news/rahul-asks-people-to-join-chalo-dilli-ramlila-march-without-worrying-about-police-batons-101793260536481.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:55:35+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q163225"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261024-Q163225",
+   "earlier": [
+    "सोनिया गाँधी ने शेयर किया अपनी नई किताब का पहला लुक",
+    "एक्स पर आईं सोनिया गाँधी, वीडियो साझा कर राजीव गांधी को याद किया"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 24 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261029-Q140632219-update",
+   "qid": "Q140632219",
+   "title": "Neha Bora",
+   "name": "Neha Bora",
+   "phrase": "Neha Bora",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "From King Edward III To Neha Bora, A 1361 Law Lives On In 'Peace Bonds': NDTV Explains",
+   "story_keys": [
+    "against",
+    "aisa",
+    "bond",
+    "challenge",
+    "change",
+    "chief",
+    "court",
+    "delhi",
+    "high",
+    "move",
+    "nothing",
+    "notice",
+    "peace",
+    "plea",
+    "police",
+    "regime",
+    "reject",
+    "seeking",
+    "sign",
+    "tell",
+    "wrong"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T10:27:11+00:00",
+   "owners": [
+    "NDTV",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "From King Edward III To Neha Bora, A 1361 Law Lives On In 'Peace Bonds': NDTV Explains",
+    "SEM court directs Delhi police to give Neha Bora copies of 6 FIRs by November 20"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "नेहा बोरा",
+   "reports": [
+    {
+     "title": "From King Edward III To Neha Bora, A 1361 Law Lives On In 'Peace Bonds': NDTV Explains",
+     "url": "https://www.ndtv.com/india-news/whose-peace-how-a-1361-english-law-lives-on-in-delhis-bond-cases-of-cjps-ashutosh-ranka-saurav-das-and-aisas-neha-bora-12249121#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T10:27:11+00:00"
+    },
+    {
+     "title": "SEM court directs Delhi police to give Neha Bora copies of 6 FIRs by November 20",
+     "url": "https://www.hindustantimes.com/india-news/sem-court-directs-delhi-police-to-give-neha-bora-copies-of-6-firs-by-november-20-101793200481976.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T15:54:43+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q140632219"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261023-Q140632219-p2",
+   "earlier": [
+    "Neha Bora: शांति बांड के नोटिस के खिलाफ दिल्ली हाईकोर्ट में याचिका, वजह क्या है?",
+    "नेहा बोरा के वकील ने दिल्ली हाई कोर्ट में दी दलीलें",
+    "नेहा बोरा को दिल्ली हाई कोर्ट से झटका, याचिका खारिज"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 23 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
+  }
+ ],
+ "notes": [
+  "revisit tiger-shroff-2026-10-20 (1075 views): 0 owners reported new news on Tiger Shroff since its last Short; revisit kh-20261029-Q163225-update: 2 owners' new reports on Sonia Gandhi (655 views before); revisit Q7089335 (580 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261029-Q140632219-update: 2 owners' new reports on Neha Bora (165 views before)",
+  "outlets: 1414 headlines from 30 feeds (19 owners), 28 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261028-arnab-cyclone",
+  "explainers: 4 kh- stories (on): kh-20261029-Q1185, kh-20261029-Q10304982, kh-20261029-Q7199798, kh-20261029-Q1057110",
+  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
+  "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
+  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q2339941: Orbitwire published (wk-Q2339941), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
+  "wikipedia search failed for 3 of 1731 headlines (KeyError)"
+ ],
+ "outlets": {
+  "headlines": 1414,
+  "feeds": 30,
+  "owners": 19,
+  "matched": 28,
+  "corroborated": 6
+ },
+ "emerging": [
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T12:45:55+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cyclone Arnab Landfall Continues Along Andhra Coast, Storm's Centre Very Close To Shore",
+    "Cyclone Arnab Hits Andhra Pradesh: 150 km/h Winds, Flooding | Evacuations Underway | News18",
+    "Heavy Rains Lash Andhra Pradesh, Odisha As Cyclone Arnab Landfall Continues",
+    "Cyclone Arnab kills 5, damages crops and infrastructure in Andhra Pradesh; CM Naidu announces relief",
+    "Heavy rain warning in Chhattisgarh post Cyclone Arnab, schools shut in Raipur"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1441,102 +2483,110 @@
    "label_hi": null,
    "reports": [
     {
-     "title": "Cyclone Arnab triggers red alerts across 4 states, DMK leader arrested in bribery case",
-     "url": "https://www.indiatoday.in/programme/super-6/video/cyclone-arnab-triggers-red-alerts-across-4-states-dmk-leader-arrested-in-bribery-case-3025661-2026-10-26?utm_source=rss",
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Railway bridge near Andhra’s Ichchapuram inundated; trains cancelled, diverted",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-arnab-railway-bridge-near-andhras-ichchapuram-inundated-trains-cancelled-diverted/article71639000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:19:32+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T17:43:26+00:00"
+     "at": "2026-10-29T06:04:37+00:00"
     },
     {
-     "title": "A.P., Odisha on alert as cyclone ‘Arnab’ nears land",
-     "url": "https://www.thehindu.com/news/national/ap-odisha-on-alert-as-cyclone-arnab-nears-land/article71627868.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T17:09:46+00:00"
-    },
-    {
-     "title": "Cyclone Arnab: Andaman and Nicobar schools shut till Tuesday",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andaman-and-nicobar-schools-shut-till-tuesday-101793025513313.html",
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T16:58:25+00:00"
+     "at": "2026-10-29T04:41:30+00:00"
     },
     {
-     "title": "Schools shut, relief measures intensified in three North Andhra districts as cyclone nears",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/schools-shut-relief-measures-intensified-in-three-north-andhra-districts-as-cyclone-nears/article71628075.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:38:10+00:00"
-    },
-    {
-     "title": "Very severe cyclone ‘Arnab’ to make landfall near Yanam-Kakinada; red alert issued for seven districts",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/very-severe-cyclone-arnab-to-make-landfall-near-yanam-kakinada-red-alert-issued-for-seven-districts/article71626990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T16:24:01+00:00"
-    },
-    {
-     "title": "Mapping Cyclone Arnab’s trail: From Andhra to UP, IMD warns of heavy rain till Oct 30",
-     "url": "https://www.hindustantimes.com/india-news/mapping-cyclone-arnab-s-trail-from-andhra-to-up-imd-warns-of-heavy-rain-till-oct-30-101793019679451.html",
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T16:10:40+00:00"
-    },
-    {
-     "title": "Extremely heavy rain to hit Andhra on Tuesday as Cyclone Arnab comes close",
-     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-extremely-heavy-rain-forecast-for-coastal-andhra-pradesh-odisha-and-telangana-3025392-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:00:38+00:00"
-    },
-    {
-     "title": "HT Evening News Brief October 26: Cyclone Arnab intensifies, Jamia protests continue, E100 cars get conditional nod",
-     "url": "https://www.hindustantimes.com/india-news/ht-evening-brief-october-26-cyclone-arnab-jamia-protests-e100-fuel-vijay-deverakonda-rashmika-mandanna-samir-banerjee-tennis-101793017807927.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T12:41:38+00:00"
+     "at": "2026-10-29T04:37:46+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
     "outlet:HT Media",
+    "outlet:Network18",
     "outlet:India Today Group",
-    "outlet:The Hindu Group"
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-hi": 7,
+    "IN-nation": 1,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश",
+    "अर्नब, वर्षा, तूफान, पवन... साइक्लोन के बीच जन्में बच्चों के लोग रख रहे ये नाम",
+    "Cyclone Arnab LIVE: New Bay system likely to head for Andhra coast; 300 villages marooned in Ganjam"
+   ],
    "hindi_owners": [
+    "NDTV",
     "Network18",
-    "India Today Group",
-    "BBC",
-    "HT Media"
+    "India Today Group"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -1544,50 +2594,270 @@
  ],
  "explainers": [
   {
-   "id": "kh-20261026-Q6744197",
-   "qid": "Q6744197",
-   "title": "Mallikarjun Kharge",
-   "name": "Mallikarjun Kharge",
-   "phrase": "Kharge",
+   "id": "kh-20261029-Q1185",
+   "qid": "Q1185",
+   "title": "Karnataka",
+   "name": "Karnataka",
+   "phrase": "Karnataka",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+   "story_keys": [
+    "hike",
+    "litre",
+    "milk",
+    "per",
+    "price"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T12:01:00+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Network18",
+    "Government of India",
+    "TV9 Network"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+    "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+    "Milk price hiked in Karnataka",
+    "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+    "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_headlines": [
+    "कर्नाटक की राज्यपाल ने प्रधानमंत्री से मुलाकात की",
+    "दरभंगा से RJD के अनिल झा जीते, कर्नाटक में दूध 8 रुपये महंगा; पढ़ें शाम की बड़ी खबरें",
+    "कर्नाटक में नंदिनी दूध की कीमतों में 8 रुपये प्रति लीटर की हुई बढ़ोतरी, 1 नवंबर से लागू होंगी नई दरें",
+    "कर्नाटक में 8 रुपए प्रति लीटर महंगा होगा दूध, 1 नवंबर से कीमतें लागू, सरकार ने दी मंजूरी",
+    "‘कर्नाटक के SIR में कोई गड़बड़ी नहीं हुई’, DK सरकार के मंत्री के बयान पर बवाल; धर्मेंद्र प्रधान ने पूछा सवाल"
+   ],
+   "hindi_news": 9,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कर्नाटक",
+   "reports": [
+    {
+     "title": "Nandini Milk To Cost ₹8 More Per Litre From November 1 In Karnataka",
+     "url": "https://www.news18.com/india/nandini-milk-to-cost-8-more-per-litre-from-november-1-in-karnataka-10403621.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:01:00+00:00"
+    },
+    {
+     "title": "Karnataka To Raise Milk Prices By Rs 8 Per Litre From November 1",
+     "url": "https://www.ndtv.com/india-news/karnataka-to-raise-milk-prices-by-rs-8-per-litre-from-november-1-12253878#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:57:21+00:00"
+    },
+    {
+     "title": "Milk price hiked in Karnataka",
+     "url": "https://www.thehindu.com/news/national/karnataka/milk-price-hiked-in-karnataka/article71640242.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:53:08+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister",
+     "url": "https://www.hindustantimes.com/india-news/karnataka-cabinet-hikes-milk-prices-by-rs-8-state-minister-nandini-milk-price-101793273245820.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:31:40+00:00"
+    },
+    {
+     "title": "Karnataka hikes Nandini milk prices by Rs 8 to Rs 54 per litre; Rs 7 to go to farmers",
+     "url": "https://www.indiatoday.in/india/story/karnataka-hikes-nandini-milk-prices-by-rs-8-to-rs-54-per-litre-rs-7-to-go-to-farmers-3027702-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:25:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:Government of India",
+    "outlet:TV9 Network",
+    "google-news:Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1",
+    "google-news:Milk Price Hike: झटके में 8 रुपये लीटर महंगा हुआ दूध, कर्नाटक सरकार का बड़ा फैसला",
+    "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान"
+   ],
+   "top": {
+    "IN-nation": 6
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Karnataka hikes Nandini milk prices by Rs 8 per litre from November 1"
+   ],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261029-Q10304982",
+   "qid": "Q10304982",
+   "title": "Jair Bolsonaro",
+   "name": "Jair Bolsonaro",
+   "phrase": "Bolsonaro",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
+   "story": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
    "story_keys": [
-    "baap'",
-    "insult",
-    "mallikarjun",
-    "news",
-    "rajnath",
-    "remark",
-    "row",
-    "singh",
-    "slam",
-    "spark",
-    "won't"
+    "fleeing",
+    "himself",
+    "vio"
    ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T13:23:27+00:00",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T01:14:01+00:00",
    "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group"
+    "Guardian Media Group",
+    "Deutsche Welle",
+    "BBC"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-    "Nitin Nabin takes ‘bankrupt mindset’ jibe at Kharge as row over PM remarks rages; effigy burnt in Patna",
-    "'Poisonous Hate, Uncultured Politics': BJP Demands Apology From Kharge Over PM Modi Remark",
-    "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-    "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-    "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi"
+    "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+    "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+    "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "जाइर बोल्सोनारो",
+   "reports": [
+    {
+     "title": "Flávio Bolsonaro denies fleeing Brazil after landing in Miami",
+     "url": "https://www.bbc.co.uk/news/articles/c6kglwe4lxwzo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T01:14:01+00:00"
+    },
+    {
+     "title": "Flavio Bolsonaro lands in US, declares himself 'leader' of Brazil",
+     "url": "https://www.dw.com/en/flavio-bolsonaro-lands-in-us-declares-himself-leader-of-brazil/a-79788659?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-28T22:26:00+00:00"
+    },
+    {
+     "title": "Flávio Bolsonaro calls himself the ‘leader of Brazil’ after fleeing to Miami",
+     "url": "https://www.theguardian.com/world/2026/oct/28/flavio-bolsonaro-miami-us-fleeing-brazilian-election-defeat",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-28T22:06:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "google-news:How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "How Bolsonaro fled Brazil: A private jet, an Italian passport and a friend in White House"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261029-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+   "story_keys": [
+    "big",
+    "celebrate",
+    "deal",
+    "edge",
+    "farmer",
+    "india-u",
+    "people",
+    "protected",
+    "statement",
+    "trade"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T09:56:45+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+    "India to gain a big edge after US trade deal: Goyal",
+    "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+    "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal"
    ],
    "hindi_headlines": [
-    "\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
+    "केंद्रीय वाणिज्य एवं उद्योग मंत्री श्री पीयूष गोयल ने कहा, भारत के औद्योगिक रूपांतरण को गति देने के लिए गुणवत्ता, बड़े पैमाने पर उत्पादन और वैश्विक बाजारों तक पहुंच आवश्यक"
    ],
    "hindi_news": 1,
    "geos": [
@@ -1595,279 +2865,168 @@
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "मल्लिकार्जुन खरगे",
+   "label_hi": "पीयूष गोयल",
    "reports": [
     {
-     "title": "'Sorry anti-Indian forces, but Modi won't go': BJP hits back day after Kharge's 'baap' remark",
-     "url": "https://www.hindustantimes.com/india-news/sorry-anti-indian-forces-but-modi-wont-go-bjp-hits-back-day-after-kharges-baap-remark-101793020767537.html",
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403262.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:56:45+00:00"
+    },
+    {
+     "title": "‘People Will Celebrate!’ Piyush Goyal’s BIG STATEMENT on India-US Trade Deal | Farmers Protected?",
+     "url": "https://www.news18.com/videos/india/people-will-celebrate-piyush-goyal-s-big-statement-on-india-us-trade-deal-farmers-protected-10403261.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:56:45+00:00"
+    },
+    {
+     "title": "'People will celebrate': Piyush Goyal says India to have comparative edge in US trade deal",
+     "url": "https://www.hindustantimes.com/india-news/india-us-trade-deal-piyush-goyal-no-farmers-interests-compromised-people-will-celebrate-comparative-advantage-fta-101793260893748.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T13:23:27+00:00"
+     "at": "2026-10-29T09:01:04+00:00"
     },
     {
-     "title": "Rajnath Singh reacts to Mallikarjun Kharge's remark on PM Modi",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/rajnath-singh-reacts-to-mallikarjun-kharges-remark-on-pm-modi-3025448-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:01:52+00:00"
-    },
-    {
-     "title": "Mallikarjun Kharge’s Remark Triggers Political Storm | BJP Launches Counterattack | News18",
-     "url": "https://www.news18.com/videos/breaking-news/mallikarjun-kharge-s-remark-triggers-political-storm-bjp-launches-counterattack-news18-10398037.html",
+     "title": "‘Farmers’ Interests Not Compromised’: Piyush Goyal Says India Will Have 'Strong Advantage' In US Trade Deal",
+     "url": "https://www.news18.com/india/farmers-interests-not-compromised-piyush-goyal-says-india-will-have-strong-advantage-in-us-trade-deal-ws-l-10403088.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T09:23:17+00:00"
+     "at": "2026-10-29T08:44:36+00:00"
     },
     {
-     "title": "Rajnath Singh Slams Congress Chief Kharge | ‘Insult To India’ Row Erupts Between BJP And Congress",
-     "url": "https://www.news18.com/videos/india/rajnath-singh-slams-congress-chief-kharge-insult-to-india-row-erupts-between-bjp-and-congress-10397891.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:32:42+00:00"
-    },
-    {
-     "title": "'Insult To India Itself': Rajnath Singh Slams Mallikarjun Kharge Over PM Modi Remark",
-     "url": "https://www.news18.com/india/insult-to-india-itself-rajnath-singh-slams-mallikarjun-kharge-over-pm-modi-remark-ws-l-10397872.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T08:31:09+00:00"
-    },
-    {
-     "title": "'Shameful, arrogant': Raghav Chadha slams Kharge's 'baap' remark for PM Modi",
-     "url": "https://www.hindustantimes.com/india-news/shameful-arrogant-raghav-chadha-slams-kharge-baap-remark-for-pm-modi-bjp-congress-bihar-event-sir-eci-row-101792992417043.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T06:34:15+00:00"
-    },
-    {
-     "title": "Congress President Mallikarrjun Kharge’s Remark on PM Modi Sparks BJP-Congress Showdown | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-president-mallikarrjun-kharge-s-remark-on-pm-modi-sparks-bjp-congress-showdown-news18-10397511.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T05:04:30+00:00"
-    },
-    {
-     "title": "As Kharge's remark sparks row, 'heckler' clarifies 'Modi won't go anywhere' remark",
-     "url": "https://www.hindustantimes.com/india-news/as-kharges-remark-sparks-row-heckler-clarifies-modi-wont-go-anywhere-remark-101792981689712.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T04:28:26+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "google-news:BJP Holds Protests Across Country, Seeks M Kharge's Apology Over \"Baap\" Jibe",
-    "google-news:\"कांग्रेस पागलों की जमात, राहुल गांधी और मल्लिकार्जुन खरगे पागल हैं\", BJP सांसद निशिकांत दुबे का बयान"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 3
-   },
-   "top_score": 1.12,
-   "top_headlines": [
-    "India news: BJP to protest nationwide over opposition's Modi remark",
-    "BJP Holds Protests Across Country, Seeks M Kharge's Apology Over \"Baap\" Jibe"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261026-Q37181",
-   "qid": "Q37181",
-   "title": "Luiz Inácio Lula da Silva",
-   "name": "Luiz Inácio Lula da Silva",
-   "phrase": "Lula",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Lula wins fourth term: What are the reactions in Brazil?",
-   "story_keys": [
-    "fourth",
-    "term",
-    "wins"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T14:20:34+00:00",
-   "owners": [
-    "NPR",
-    "France Médias Monde",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lula wins fourth term: What are the reactions in Brazil?",
-    "Brazil's left-wing President Lula elected for fourth term",
-    "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "लुइज़ इंसियो लुला दा सिल्वा",
-   "reports": [
-    {
-     "title": "Lula wins fourth term: What are the reactions in Brazil?",
-     "url": "https://www.france24.com/en/lula-wins-fourth-term-what-are-the-reactions-in-brazil",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T14:04:39+00:00"
-    },
-    {
-     "title": "Brazil's left-wing President Lula elected for fourth term",
-     "url": "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-26T00:35:00+00:00"
-    },
-    {
-     "title": "Lula wins by 4.4 million votes. What does Brazil's choice mean for BRICS & India?",
-     "url": "https://www.indiatoday.in/diu/story/lula-brazil-election-win-brics-india-trade-ties-3025497-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:20:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NPR",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "google-news:Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Brazil’s Lula wins re-election, defeating Trump ally Bolsonaro"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261026-Q116758847",
-   "qid": "Q116758847",
-   "title": "Anthropic",
-   "name": "Anthropic",
-   "phrase": "Anthropic",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-   "story_keys": [
-    "file",
-    "giant",
-    "plan"
-   ],
-   "date": "2026-10-26",
-   "news_at": "2026-10-26T14:40:45+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-    "Anthropic said to plan for Mega-IPO Monday",
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-     "url": "https://www.thehindu.com/news/international/artificial-intelligence-giant-anthropic-files-papers-to-sell-shares-to-the-public-for-the-first-time/article71627679.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T14:40:45+00:00"
-    },
-    {
-     "title": "AI giant Anthropic files for IPO, plans Nasdaq listing under 'ANT' ticker",
-     "url": "https://www.indiatoday.in/business/story/ai-giant-anthropic-files-for-ipo-to-list-its-stock-on-nasdaq-under-ant-symbol-3025483-2026-10-26?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-26T13:26:27+00:00"
-    },
-    {
-     "title": "Anthropic said to plan for Mega-IPO Monday",
-     "url": "https://economictimes.indiatimes.com/ai/ai-insights/anthropic-is-said-to-plan-public-filing-for-mega-ipo-monday/articleshow/135211786.cms",
+     "title": "India to gain a big edge after US trade deal: Goyal",
+     "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/piyush-goyal-india-us-trade-deal-farmers-interests/articleshow/135296411.cms",
      "outlet": "The Economic Times",
      "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-26T12:23:45+00:00"
+     "at": "2026-10-29T07:56:16+00:00"
     }
    ],
    "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:Artificial Intelligence giant Anthropic files for Initial Public Offering"
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Government of India"
    ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Artificial Intelligence giant Anthropic files for Initial Public Offering",
-    "Jio Platforms IPO Allotment Today: Steps to check status online via PAN on KFin Technologies, NSE, BSE; demat credit and listing date"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261029-Q1057110",
+   "qid": "Q1057110",
+   "title": "IndiGo",
+   "name": "IndiGo",
+   "phrase": "IndiGo CEO",
+   "person": false,
+   "kind": "explainer",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+   "story_keys": [
+    "but",
+    "choice",
+    "cost",
+    "fare",
+    "fuel",
+    "hike"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T13:36:52+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+    "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+    "IndiGo may raise fares as fuel costs soar: CEO",
+    "IndiGo to hike fares amid soaring fuel costs, CEO says no choice"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "इंडीगो",
+   "reports": [
+    {
+     "title": "IndiGo to hike fares amid soaring fuel costs, CEO says no choice",
+     "url": "https://www.indiatoday.in/business/story/indigo-ticket-fare-hike-fuel-costs-loss-rs-1879-crore-ceo-willie-walsh-3027833-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T13:36:52+00:00"
+    },
+    {
+     "title": "IndiGo may raise fares as fuel costs soar: CEO",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/indigo-airfares-hike-fuel-costs-ceo-willie-walsh-aviation-fuel-prices-ticket-prices-interglobe-aviation/articleshow/135308209.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:15:03+00:00"
+    },
+    {
+     "title": "IndiGo CEO says ‘no choice’ but to consider fare hikes as fuel costs surge",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/indigo-ceo-says-no-choice-but-to-consider-fare-hikes-as-fuel-costs-surge/articleshow/135307300.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:08:51+00:00"
+    },
+    {
+     "title": "'No choice left but to look to increase fares': IndiGo CEO on 'very significant' rise in fuel bill",
+     "url": "https://www.hindustantimes.com/india-news/no-choice-left-but-to-look-to-increase-fares-indigo-ceo-on-very-significant-rise-in-fuel-bill-101793275288653.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:03:22+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   }
  ]

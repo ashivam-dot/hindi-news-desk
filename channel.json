@@ -1,7 +1,7 @@
 {
  "units": {
-  "day": "2026-10-24",
-  "spent": 102
+  "day": "2026-10-29",
+  "spent": 53
  },
  "about": {
   "version": "a7c01b5f33d7",
@@ -68,5 +68,10 @@
    "failed": {},
    "section": "UCS-lEPHkz_dftfUjjeTuxOA.nGzAI5pLbMY"
   }
+ },
+ "about_failed": {
+  "version": "776d406cde31",
+  "reason": "read back differs",
+  "at": "2026-10-29T14:00:07+00:00"
  }
 }
