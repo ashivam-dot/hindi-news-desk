@@ -16,4 +16,4 @@ jobs:
       - run: sudo apt-get install -y -qq ffmpeg > /dev/null && uv sync --frozen
       - env:
           VIDEO: ${{ inputs.video }}
-        run: uv run python scripts/clip_probe.py "$VIDEO"
+        run: PYTHONPATH=. uv run python scripts/clip_probe.py "$VIDEO"
