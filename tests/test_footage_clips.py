@@ -17,12 +17,21 @@ def short(beats, photos, **scene):
 
 def test_the_search_is_the_english_headlines_lead():
     assert clips.query("Karnataka hikes Nandini milk prices by ₹8 per litre from November 1: State minister") == \
-        "Karnataka hikes Nandini milk prices litre November"
+        "Karnataka hikes Nandini milk prices"
     pkg = clips.package(short([Beat("दूध महंगा।", "photo:0")], [{}], story="Nandini milk price hike: KMF",
                               cast=[{"en": "Karnataka", "hi": "कर्नाटक", "kind": "place"},
                                     {"en": "Milk", "hi": "दूध", "kind": "thing"}]))
     assert pkg["title"].startswith("Nandini milk price hike: ") and pkg["subjects"] == [
         {"name": "Karnataka", "anchor": "कर्नाटक"}] and pkg["location"] == "Karnataka"
+
+
+def test_the_search_names_the_storys_people_never_a_common_noun():
+    s = short([Beat("एक", "photo:0")], [{}], story="Neha Bora refuses peace bond for fourth time",
+              cast=[{"en": "court", "hi": "कोर्ट", "kind": "place"}],
+              names=[{"hi": "नेहा बोरा", "en": "Neha Bora"}, {"hi": "दिल्ली पुलिस", "en": "Delhi Police"},
+                     {"hi": "कोर्ट", "en": "court"}])
+    from desk import footage
+    assert footage.queries(clips.package(s)) == ["Neha Bora refuses peace bond", "Neha Bora Delhi Police"]
 
 
 def test_clips_go_on_the_hook_then_the_map_never_on_a_card_or_a_short_beat():

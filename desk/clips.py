@@ -21,7 +21,7 @@ from .spec import Short, shot_photos
 
 log = logging.getLogger(__name__)
 
-QUERY_WORDS = 7
+QUERY_WORDS = 5
 LEAST_BEAT = 1.6  # seconds: a shorter beat keeps its photo
 
 
@@ -40,10 +40,15 @@ def package(short: Short) -> dict:
     """What footage.for_story reads of a story."""
     scene = short.scene
     lead = query(scene.get("story") or "")
-    subjects = [{"name": c["en"], "anchor": c.get("hi", "")} for c in scene.get("cast") or []
-                if isinstance(c, dict) and c.get("en") and c.get("kind") != "thing"] or \
-               [{"name": p["en"], "anchor": p.get("hi", "")} for p in scene.get("names") or []
-                if isinstance(p, dict) and isinstance(p.get("en"), str)][:2]
+    # The story's own names first (a person, an organisation), then its places; a proper name only: the cast's
+    # "court" searched YouTube for every court case of the day (6GTrwBeDJYY, Neha Bora).
+    rows = [p for p in scene.get("names") or [] if isinstance(p, dict)] + \
+           [c for c in scene.get("cast") or [] if isinstance(c, dict) and c.get("kind") != "thing"]
+    subjects = []
+    for r in rows:
+        en = r.get("en")
+        if isinstance(en, str) and en[:1].isupper() and en not in {s["name"] for s in subjects}:
+            subjects.append({"name": en, "anchor": r.get("hi", "")})
     places = [c["en"] for c in scene.get("cast") or [] if isinstance(c, dict) and c.get("kind") == "place"]
     return {"title": f"{lead}: {short.title}" if lead else short.title, "headline": short.title,
             "script": short.narration, "location": ", ".join(places[:2]), "subjects": subjects[:3]}
