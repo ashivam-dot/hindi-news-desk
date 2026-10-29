@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T16:16:01+00:00",
+ "at": "2026-10-29T16:45:14+00:00",
  "trending": [
   {
    "id": "kh-20261029-Q10218",
@@ -99,11 +99,12 @@
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 9
    },
-   "top_score": 0.21,
+   "top_score": 0.36,
    "top_headlines": [
-    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally"
+    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
+    "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -143,32 +144,47 @@
   {
    "qid": "Q141898879",
    "title": "2026 Toledo train collision",
-   "fame": 155105,
+   "fame": 180105,
    "views": 80105,
    "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-29T00:00:00+00:00",
+   "news": 50000,
+   "news_at": "2026-10-29T15:38:49+00:00",
    "headlines": [
+    "Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
     "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
+   "region": "world",
    "india_link": true,
    "geos": [
-    "IN"
+    "IN",
+    "world"
    ],
    "label_hi": "२०२६ तोलेदो रेलगाड़ी टक्कर",
    "via": [
     "wikipedia-top-2026-10-28",
     "wikipedia-current-events-2026-10-28",
+    "google-news:Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
     "google-news:Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+    "outlet:France Médias Monde",
     "outlet:Network18"
    ],
    "owners": [
+    "France Médias Monde",
     "Network18"
    ],
    "reports": [
+    {
+     "title": "Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
+     "url": "https://www.france24.com/en/video/20261029-spain-s-king-felipe-vi-and-queen-letizia-visit-injured-in-train-crash-at-toledo-hospital",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T15:38:49+00:00"
+    },
     {
      "title": "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
      "url": "https://www.news18.com/explainers/spain-toledo-rail-crash-raises-alarm-for-indias-bullet-train-here-are-key-lessons-from-the-deadly-collision-ws-lrt-10402327.html",
@@ -200,9 +216,9 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 12
+    "IN": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.5,
    "top_headlines": [
     "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
    ],
@@ -301,16 +317,194 @@
     "outlet:NDTV",
     "outlet:Amar Ujala"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
+   ],
    "hindi_owners": [
     "TV9 Network",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "qid": "Q922837",
+   "title": "Cuauhtémoc Cárdenas",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-29T06:44:04+00:00",
+   "headlines": [
+    "Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q922837",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T16:13:27+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cyclone Arnab Highlights: 3 Dead In Andhra; CM Naidu Writes To Amit Shah, Seeks Assistance To Assess Damage",
+    "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+    "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+    "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+    "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+     "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T16:13:27+00:00"
+    },
+    {
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:04:37+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:41:30+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:37:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 7,
+    "IN-hi-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "qid": "Q468843",
@@ -466,6 +660,87 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261029-Q484605",
+   "qid": "Q484605",
+   "title": "Christine Lagarde",
+   "name": "Christine Lagarde",
+   "phrase": "Christine Lagarde",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+   "story_keys": [
+    "down",
+    "step"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T16:34:55+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "European Central Bank President Lagarde to step down early"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "क्रिस्टिन लैगार्डे",
+   "reports": [
+    {
+     "title": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+     "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T10:33:00+00:00"
+    },
+    {
+     "title": "European Central Bank President Lagarde to step down early",
+     "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:34:55+00:00"
+    },
+    {
+     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:05:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "qid": "Q5296666",
    "title": "Donnie Iris",
    "fame": 70990,
@@ -615,39 +890,6 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q922837",
-   "title": "Cuauhtémoc Cárdenas",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-29T13:44:00+00:00",
-   "headlines": [
-    "Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q922837",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-28",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q2339941",
    "title": "Tetsuya Chiba",
    "fame": 17745,
@@ -709,6 +951,39 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 500,
+   "views": 0,
+   "traffic": 500,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:최불암"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -810,85 +1085,16 @@
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 9
    },
-   "top_score": 0.21,
+   "top_score": 0.36,
    "top_headlines": [
-    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally"
+    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
+    "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "qid": "Q141898879",
-   "title": "2026 Toledo train collision",
-   "fame": 155105,
-   "views": 80105,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-10-29T00:00:00+00:00",
-   "headlines": [
-    "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "२०२६ तोलेदो रेलगाड़ी टक्कर",
-   "via": [
-    "wikipedia-top-2026-10-28",
-    "wikipedia-current-events-2026-10-28",
-    "google-news:Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
-    "outlet:Network18"
-   ],
-   "owners": [
-    "Network18"
-   ],
-   "reports": [
-    {
-     "title": "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
-     "url": "https://www.news18.com/explainers/spain-toledo-rail-crash-raises-alarm-for-indias-bullet-train-here-are-key-lessons-from-the-deadly-collision-ws-lrt-10402327.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-28T22:42:55+00:00"
-    },
-    {
-     "title": "Spain Train Crash: 46 Feared Dead in Toledo Collision | Investigation Underway | Toledo Train Ne4ws",
-     "url": "https://www.news18.com/videos/india/spain-train-crash-46-feared-dead-in-toledo-collision-investigation-underway-toledo-train-ne4ws-10401468.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-28T10:06:24+00:00"
-    }
-   ],
-   "id": "wk-Q141898879",
-   "kind": "incident",
-   "category": "rail",
-   "date": "2026-10-28",
-   "coords": [
-    39.42777778,
-    -3.81805556
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
   },
   {
    "id": "kh-20261029-Q271195",
@@ -981,16 +1187,246 @@
     "outlet:NDTV",
     "outlet:Amar Ujala"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
+   ],
    "hindi_owners": [
     "TV9 Network",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T16:13:27+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cyclone Arnab Highlights: 3 Dead In Andhra; CM Naidu Writes To Amit Shah, Seeks Assistance To Assess Damage",
+    "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+    "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+    "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+    "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+     "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T16:13:27+00:00"
+    },
+    {
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:04:37+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:41:30+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:37:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 7,
+    "IN-hi-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "qid": "Q141898879",
+   "title": "2026 Toledo train collision",
+   "fame": 180105,
+   "views": 80105,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-10-29T15:38:49+00:00",
+   "headlines": [
+    "Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
+    "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": "२०२६ तोलेदो रेलगाड़ी टक्कर",
+   "via": [
+    "wikipedia-top-2026-10-28",
+    "wikipedia-current-events-2026-10-28",
+    "google-news:Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
+    "google-news:Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+    "outlet:France Médias Monde",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "France Médias Monde",
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "Spain's King Felipe VI and Queen Letizia visit injured in train crash at Toledo hospital",
+     "url": "https://www.france24.com/en/video/20261029-spain-s-king-felipe-vi-and-queen-letizia-visit-injured-in-train-crash-at-toledo-hospital",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T15:38:49+00:00"
+    },
+    {
+     "title": "Spain Toledo Rail Crash Raises Alarm For India’s Bullet Train: Here Are Key Lessons From The Deadly Collision",
+     "url": "https://www.news18.com/explainers/spain-toledo-rail-crash-raises-alarm-for-indias-bullet-train-here-are-key-lessons-from-the-deadly-collision-ws-lrt-10402327.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T22:42:55+00:00"
+    },
+    {
+     "title": "Spain Train Crash: 46 Feared Dead in Toledo Collision | Investigation Underway | Toledo Train Ne4ws",
+     "url": "https://www.news18.com/videos/india/spain-train-crash-46-feared-dead-in-toledo-collision-investigation-underway-toledo-train-ne4ws-10401468.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-28T10:06:24+00:00"
+    }
+   ],
+   "id": "wk-Q141898879",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-10-28",
+   "coords": [
+    39.42777778,
+    -3.81805556
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "id": "kh-20261029-Q7199798",
@@ -1179,6 +1615,87 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261029-Q484605",
+   "qid": "Q484605",
+   "title": "Christine Lagarde",
+   "name": "Christine Lagarde",
+   "phrase": "Christine Lagarde",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+   "story_keys": [
+    "down",
+    "step"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T16:34:55+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "European Central Bank President Lagarde to step down early"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "क्रिस्टिन लैगार्डे",
+   "reports": [
+    {
+     "title": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+     "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T10:33:00+00:00"
+    },
+    {
+     "title": "European Central Bank President Lagarde to step down early",
+     "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:34:55+00:00"
+    },
+    {
+     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:05:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "qid": "Q5296666",
    "title": "Donnie Iris",
    "fame": 70990,
@@ -1210,204 +1727,204 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261029-Q140632219-update",
-   "qid": "Q140632219",
-   "title": "Neha Bora",
-   "name": "Neha Bora",
-   "phrase": "Neha Bora",
-   "person": true,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Neha Bora refuses peace bond for fourth time, summoned again on November 20",
-   "story_keys": [
-    "against",
-    "aisa",
-    "bond",
-    "change",
-    "chief",
-    "court",
-    "delhi",
-    "high",
-    "nothing",
-    "notice",
-    "peace",
-    "plea",
-    "police",
-    "regime",
-    "reject",
-    "seeking",
-    "sign",
-    "tell",
-    "wrong"
-   ],
-   "date": "2026-10-29",
-   "news_at": "2026-10-29T16:09:24+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 1,
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 500,
+   "views": 0,
+   "traffic": 500,
    "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:최불암"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  }
+ ],
+ "notes": [
+  "outlets: 1424 headlines from 30 feeds (19 owners), 12 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261028-arnab-cyclone",
+  "explainers: 4 kh- stories (on): kh-20261029-Q10218, kh-20261029-Q271195, kh-20261029-Q7199798, kh-20261029-Q484605; dropped: explainer PM-Kisan: no Wikipedia article that can be its centre; explainer November State / Nandini: no Wikipedia article that can be its centre; explainer CEO Willie Walsh: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
+  "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
+  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
+  "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
+  "skip wk-Q2339941: Orbitwire published (wk-Q2339941), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+ ],
+ "outlets": {
+  "headlines": 1424,
+  "feeds": 30,
+  "owners": 19,
+  "matched": 12,
+  "corroborated": 6
+ },
+ "emerging": [
+  {
+   "id": "nw-20261028-arnab-cyclone",
+   "qid": null,
+   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "name": "Arnab",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-10-28",
+   "news_at": "2026-10-29T16:13:27+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Neha Bora refuses peace bond for fourth time, summoned again on November 20",
-    "SEM court directs Delhi police to give Neha Bora copies of 6 FIRs by November 20"
+    "Cyclone Arnab Highlights: 3 Dead In Andhra; CM Naidu Writes To Amit Shah, Seeks Assistance To Assess Damage",
+    "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+    "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+    "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+    "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation"
    ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
    "region": "india",
    "india_link": true,
-   "label_hi": "नेहा बोरा",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Neha Bora refuses peace bond for fourth time, summoned again on November 20",
-     "url": "https://www.indiatoday.in/india/law-news/story/neha-bora-peace-bond-case-aisa-chief-refuses-peace-bond-fourth-time-summoned-again-november-20-3027999-2026-10-29?utm_source=rss",
+     "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+     "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-29T16:09:24+00:00"
+     "at": "2026-10-29T16:13:27+00:00"
     },
     {
-     "title": "SEM court directs Delhi police to give Neha Bora copies of 6 FIRs by November 20",
-     "url": "https://www.hindustantimes.com/india-news/sem-court-directs-delhi-police-to-give-neha-bora-copies-of-6-firs-by-november-20-101793200481976.html",
+     "title": "Cyclone Arnab likely drew moisture from Tamil Nadu system, but did not merge",
+     "url": "https://www.thehindu.com/sci-tech/energy-and-environment/cyclone-arnab-likely-drew-moisture-from-tamil-nadu-system-but-did-not-merge/article71640101.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:45:55+00:00"
+    },
+    {
+     "title": "Chandrababu Naidu Surveys Cyclone-Hit Andhra As Damage Estimate Reaches Rs 4,600 Crore",
+     "url": "https://www.ndtv.com/india-news/n-chandrababu-naidu-surveys-arnab-cyclone-hit-andhra-pradesh-as-damage-estimate-reaches-rs-4-600-crore-12254191#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T12:25:35+00:00"
+    },
+    {
+     "title": "Odisha plans to airlift 120 stranded in Ganjam amid Cyclone Arnab aftermath",
+     "url": "https://www.hindustantimes.com/india-news/odisha-plans-to-airlift-120-stranded-in-ganjam-amid-cyclone-arnab-aftermath-101793264429754.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-28T15:54:43+00:00"
+     "at": "2026-10-29T09:17:54+00:00"
+    },
+    {
+     "title": "Cyclone Arnab: Andhra CM orders fast-track relief, power restoration, early compensation",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-andhra-cm-orders-fast-track-relief-power-restoration-early-compensation-101793257366106.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T07:02:45+00:00"
+    },
+    {
+     "title": "Satellite captures Cyclone Arnab's giant rain shield over India. See pics",
+     "url": "https://www.indiatoday.in/science/story/cyclone-arnab-spreads-its-wings-across-india-satellite-captures-rare-space-view-3027448-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T06:04:37+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens to deep depression; triggers rains in south Odisha districts",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-to-deep-depression-triggers-rains-in-south-odisha-districts-101793248891090.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:41:30+00:00"
+    },
+    {
+     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T04:37:46+00:00"
     }
    ],
    "via": [
-    "revisit:Q140632219"
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261023-Q140632219-p2",
-   "earlier": [
-    "नेहा बोरा के वकील ने दिल्ली हाई कोर्ट में दी दलीलें",
-    "नेहा बोरा को दिल्ली हाई कोर्ट से झटका, याचिका खारिज"
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN-hi": 7,
+    "IN-hi-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
    ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 23 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261029-Q163225-update",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
-   "story_keys": [
-    "began",
-    "belonging",
-    "cambridge’",
-    "debut",
-    "falling",
-    "instagram",
-    "join",
-    "journey",
-    "look",
-    "love",
-    "love’",
-    "make",
-    "meeting",
-    "memoir",
-    "memorie",
-    "rajiv",
-    "recall",
-    "share",
-    "story",
-    "unveil"
-   ],
-   "date": "2026-10-29",
-   "news_at": "2026-10-29T09:51:01+00:00",
-   "owners": [
+   "hindi_owners": [
     "Network18",
-    "HT Media"
+    "NDTV"
    ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
-    "'Don't worry about police, lathis': Rahul Gandhi asks people to join ‘Chalo Dilli Ramlila March’ on November 1"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "‘Don’t Worry About Police, Lathis’: Rahul Gandhi Urges People To Join November 1 Delhi Rally",
-     "url": "https://www.news18.com/india/dont-worry-about-police-lathis-rahul-gandhi-urges-people-to-join-november-1-delhi-rally-10403218.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-29T09:51:01+00:00"
-    },
-    {
-     "title": "'Don't worry about police, lathis': Rahul Gandhi asks people to join ‘Chalo Dilli Ramlila March’ on November 1",
-     "url": "https://www.hindustantimes.com/india-news/rahul-asks-people-to-join-chalo-dilli-ramlila-march-without-worrying-about-police-batons-101793260536481.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-29T07:55:35+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q163225"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261024-Q163225",
-   "earlier": [
-    "सोनिया गाँधी ने शेयर किया अपनी नई किताब का पहला लुक",
-    "एक्स पर आईं सोनिया गाँधी, वीडियो साझा कर राजीव गांधी को याद किया"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 24 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "breaking"
   }
  ],
- "notes": [
-  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit kh-20261029-Q163225-update: 2 owners' new reports on Sonia Gandhi (655 views before); revisit Q7089335 (580 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261029-Q140632219-update: 2 owners' new reports on Neha Bora (158 views before)",
-  "outlets: 1423 headlines from 30 feeds (19 owners), 8 matched to articles, 3 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 3 kh- stories (on): kh-20261029-Q10218, kh-20261029-Q271195, kh-20261029-Q7199798; dropped: explainer PM-Kisan: no Wikipedia article that can be its centre; explainer November State / Nandini: no Wikipedia article that can be its centre; explainer CEO Willie Walsh: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
-  "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
-  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
-  "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
-  "skip wk-Q2339941: Orbitwire published (wk-Q2339941), not high-profile enough to tell again"
- ],
- "trend_errors": [
-  "wikidata recent deaths: HTTP 429",
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
-  "wikipedia search failed for 2 of 1747 headlines (KeyError)"
- ],
- "outlets": {
-  "headlines": 1423,
-  "feeds": 30,
-  "owners": 19,
-  "matched": 8,
-  "corroborated": 3
- },
- "emerging": [],
  "explainers": [
   {
    "id": "kh-20261029-Q10218",
@@ -1507,11 +2024,12 @@
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 9
    },
-   "top_score": 0.21,
+   "top_score": 0.36,
    "top_headlines": [
-    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally"
+    "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
+    "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1608,13 +2126,17 @@
     "outlet:NDTV",
     "outlet:Amar Ujala"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
+   ],
    "hindi_owners": [
     "TV9 Network",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "other"
@@ -1742,6 +2264,87 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261029-Q484605",
+   "qid": "Q484605",
+   "title": "Christine Lagarde",
+   "name": "Christine Lagarde",
+   "phrase": "Christine Lagarde",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+   "story_keys": [
+    "down",
+    "step"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T16:34:55+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "European Central Bank President Lagarde to step down early"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "क्रिस्टिन लैगार्डे",
+   "reports": [
+    {
+     "title": "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
+     "url": "https://www.dw.com/en/european-central-bank-ecb-head-christine-lagarde-to-step-down-in-february-before-her-term-ends/a-79794353?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T10:33:00+00:00"
+    },
+    {
+     "title": "European Central Bank President Lagarde to step down early",
+     "url": "https://www.aljazeera.com/news/2026/10/29/european-central-bank-president-lagarde-to-step-down-early?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:34:55+00:00"
+    },
+    {
+     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-29T16:05:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   }
  ]
 }
