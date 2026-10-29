@@ -2291,7 +2291,7 @@ def build_explainer(cand: dict) -> Short:
                               owners=hurt["owners"]))
         short = _short(sid, "explainer", name, hi, draft, log, used, facts, facts_text, source + "\n" + source_hi,
                        photos, sources, when.isoformat(), loss=False, mood="news", region=cand.get("region", "india"),
-                       tags=[name, hi, label, cat, "मतलबनामा", "हिंदी समाचार", "hindi news", "india news"],
+                       tags=[name, hi, label, cat, "पल पल न्यूज़", "हिंदी समाचार", "hindi news", "india news"],
                        summary=f"{hi}: क्या हुआ और क्यों, {', '.join(outlets.names(reports))} की रिपोर्टों और "
                                "Wikipedia से।",
                        cat=cat, ov=ov, reports=reports, credit=EXPLAIN_CREDIT, person=person, hook=cand.get("hook"),
