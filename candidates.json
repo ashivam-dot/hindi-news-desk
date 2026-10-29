@@ -1,5 +1,5 @@
 {
- "at": "2026-10-29T16:45:14+00:00",
+ "at": "2026-10-29T17:07:56+00:00",
  "trending": [
   {
    "id": "kh-20261029-Q10218",
@@ -39,10 +39,11 @@
    "hindi_headlines": [
     "पुलिस और लाठीचार्ज की चिंता छोड़िए... राहुल गांधी ने 'चलो दिल्ली रामलीला मार्च' के लिए झोंकी ताकत",
     "दिवाली पर दिल्ली में महाजाम की तैयारी! व्यापारियों को 20 मिनट नहीं दे रहे राहुल गांधी, बीजेपी ने बोला हमला",
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [
     "IN"
    ],
@@ -95,14 +96,17 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "google-news:राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 9
+    "IN-nation": 2,
+    "IN-hi-nation": 3
    },
-   "top_score": 0.36,
+   "top_score": 0.84,
    "top_headlines": [
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
     "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
@@ -140,6 +144,91 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261029-Q321526",
+   "qid": "Q321526",
+   "title": "Manusmriti",
+   "name": "Manusmṛti",
+   "phrase": "Manusmriti",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+   "story_keys": [
+    "cite",
+    "cow",
+    "life",
+    "slaughter"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T17:02:23+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+    "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+    "Allahabad High Court cites Manusmriti in maintenance ruling",
+    "Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "मनुस्मृति",
+   "reports": [
+    {
+     "title": "Allahabad High Court cites Manusmriti in maintenance ruling",
+     "url": "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-maintenance-order-25-percent-salary-deduction-wife-daughter-ptag-3028068-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T17:02:23+00:00"
+    },
+    {
+     "title": "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+     "url": "https://www.news18.com/india/gau-mata-may-go-extinct-gujarat-court-cites-manusmriti-rigveda-while-handing-life-term-to-3-for-cow-slaughter-ws-lrt-10403865.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T14:31:14+00:00"
+    },
+    {
+     "title": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+     "url": "https://www.hindustantimes.com/india-news/gujarat-court-sentences-3-to-life-for-cow-slaughter-cites-manusmriti-101793270711645.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:14:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "google-news:Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q141898879",
@@ -216,9 +305,9 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 11
+    "IN": 6
    },
-   "top_score": 0.5,
+   "top_score": 0.75,
    "top_headlines": [
     "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
    ],
@@ -319,9 +408,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
    ],
@@ -333,33 +422,35 @@
    "lane": "other"
   },
   {
-   "qid": "Q922837",
-   "title": "Cuauhtémoc Cárdenas",
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-10-29T06:44:04+00:00",
+   "news_at": "2026-10-29T12:49:51+00:00",
    "headlines": [
-    "Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+    "12 Killed In Saudi Strikes In Yemen, Claim Houthis"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
+   "region": "india",
+   "india_link": true,
    "geos": [
-    "world"
+    "IN"
    ],
-   "label_hi": null,
+   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
    "via": [
-    "google-news:Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+    "google-news:12 Killed In Saudi Strikes In Yemen, Claim Houthis"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q922837",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-28",
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -368,12 +459,12 @@
   {
    "id": "nw-20261028-arnab-cyclone",
    "qid": null,
-   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
    "name": "Arnab",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-28",
-   "news_at": "2026-10-29T16:13:27+00:00",
+   "news_at": "2026-10-29T16:53:53+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -401,6 +492,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
+     "url": "https://www.thehindu.com/news/national/odisha/post-arnab-cyclone-heavy-rain-wreaks-havoc-in-odishas-ganjam-gajapati-districts/article71641226.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T16:53:53+00:00"
+    },
     {
      "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
      "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
@@ -470,16 +571,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-29T04:41:30+00:00"
-    },
-    {
-     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-29T04:37:46+00:00"
     }
    ],
    "via": [
@@ -492,10 +583,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 7,
+    "IN-hi": 6,
     "IN-hi-nation": 2
    },
-   "top_score": 0.985,
+   "top_score": 1.035,
    "top_headlines": [
     "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
    ],
@@ -687,7 +778,7 @@
    "traffic": 0,
    "headlines": [
     "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
-    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
     "European Central Bank President Lagarde to step down early"
    ],
    "hindi_headlines": [],
@@ -718,7 +809,7 @@
      "at": "2026-10-29T16:34:55+00:00"
     },
     {
-     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
@@ -890,6 +981,39 @@
    "hindi_owners": []
   },
   {
+   "qid": "Q922837",
+   "title": "Cuauhtémoc Cárdenas",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-10-29T06:44:04+00:00",
+   "headlines": [
+    "Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Cuauhtémoc Cárdenas, Who Helped End One-Party Rule in Mexico, Dies at 92"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q922837",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
    "qid": "Q2339941",
    "title": "Tetsuya Chiba",
    "fame": 17745,
@@ -1025,10 +1149,11 @@
    "hindi_headlines": [
     "पुलिस और लाठीचार्ज की चिंता छोड़िए... राहुल गांधी ने 'चलो दिल्ली रामलीला मार्च' के लिए झोंकी ताकत",
     "दिवाली पर दिल्ली में महाजाम की तैयारी! व्यापारियों को 20 मिनट नहीं दे रहे राहुल गांधी, बीजेपी ने बोला हमला",
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [
     "IN"
    ],
@@ -1081,14 +1206,17 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "google-news:राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 9
+    "IN-nation": 2,
+    "IN-hi-nation": 3
    },
-   "top_score": 0.36,
+   "top_score": 0.84,
    "top_headlines": [
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
     "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
@@ -1189,9 +1317,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
    ],
@@ -1205,12 +1333,12 @@
   {
    "id": "nw-20261028-arnab-cyclone",
    "qid": null,
-   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
    "name": "Arnab",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-28",
-   "news_at": "2026-10-29T16:13:27+00:00",
+   "news_at": "2026-10-29T16:53:53+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -1238,6 +1366,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
+     "url": "https://www.thehindu.com/news/national/odisha/post-arnab-cyclone-heavy-rain-wreaks-havoc-in-odishas-ganjam-gajapati-districts/article71641226.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T16:53:53+00:00"
+    },
     {
      "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
      "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
@@ -1307,16 +1445,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-29T04:41:30+00:00"
-    },
-    {
-     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-29T04:37:46+00:00"
     }
    ],
    "via": [
@@ -1329,10 +1457,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 7,
+    "IN-hi": 6,
     "IN-hi-nation": 2
    },
-   "top_score": 0.985,
+   "top_score": 1.035,
    "top_headlines": [
     "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
    ],
@@ -1418,15 +1546,100 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 11
+    "IN": 6
    },
-   "top_score": 0.5,
+   "top_score": 0.75,
    "top_headlines": [
     "‘I held this woman in my arms. She died’: Spain mourns train crash victims"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261029-Q321526",
+   "qid": "Q321526",
+   "title": "Manusmriti",
+   "name": "Manusmṛti",
+   "phrase": "Manusmriti",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+   "story_keys": [
+    "cite",
+    "cow",
+    "life",
+    "slaughter"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T17:02:23+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+    "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+    "Allahabad High Court cites Manusmriti in maintenance ruling",
+    "Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "मनुस्मृति",
+   "reports": [
+    {
+     "title": "Allahabad High Court cites Manusmriti in maintenance ruling",
+     "url": "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-maintenance-order-25-percent-salary-deduction-wife-daughter-ptag-3028068-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T17:02:23+00:00"
+    },
+    {
+     "title": "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+     "url": "https://www.news18.com/india/gau-mata-may-go-extinct-gujarat-court-cites-manusmriti-rigveda-while-handing-life-term-to-3-for-cow-slaughter-ws-lrt-10403865.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T14:31:14+00:00"
+    },
+    {
+     "title": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+     "url": "https://www.hindustantimes.com/india-news/gujarat-court-sentences-3-to-life-for-cow-slaughter-cites-manusmriti-101793270711645.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:14:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "google-news:Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261029-Q7199798",
@@ -1642,7 +1855,7 @@
    "traffic": 0,
    "headlines": [
     "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
-    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
     "European Central Bank President Lagarde to step down early"
    ],
    "hindi_headlines": [],
@@ -1673,7 +1886,7 @@
      "at": "2026-10-29T16:34:55+00:00"
     },
     {
-     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
@@ -1761,37 +1974,38 @@
   }
  ],
  "notes": [
-  "outlets: 1424 headlines from 30 feeds (19 owners), 12 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261028-arnab-cyclone",
-  "explainers: 4 kh- stories (on): kh-20261029-Q10218, kh-20261029-Q271195, kh-20261029-Q7199798, kh-20261029-Q484605; dropped: explainer PM-Kisan: no Wikipedia article that can be its centre; explainer November State / Nandini: no Wikipedia article that can be its centre; explainer CEO Willie Walsh: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "outlets: 1424 headlines from 30 feeds (19 owners), 14 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261028-arnab-cyclone",
+  "explainers: 5 kh- stories (on): kh-20261029-Q10218, kh-20261029-Q321526, kh-20261029-Q271195, kh-20261029-Q7199798; dropped: explainer PM-Kisan: no Wikipedia article that can be its centre; explainer November State / Nandini: no Wikipedia article that can be its centre; explainer CEO Willie Walsh: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q2339941: Orbitwire published (wk-Q2339941), not high-profile enough to tell again"
  ],
  "trend_errors": [
   "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
+  "wikipedia search failed for 6 of 1741 headlines (KeyError)"
  ],
  "outlets": {
   "headlines": 1424,
   "feeds": 30,
   "owners": 19,
-  "matched": 12,
-  "corroborated": 6
+  "matched": 14,
+  "corroborated": 7
  },
  "emerging": [
   {
    "id": "nw-20261028-arnab-cyclone",
    "qid": null,
-   "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
+   "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
    "name": "Arnab",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-10-28",
-   "news_at": "2026-10-29T16:13:27+00:00",
+   "news_at": "2026-10-29T16:53:53+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -1819,6 +2033,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Post-Arnab cyclone, heavy rain wreaks havoc in Odisha’s Ganjam, Gajapati districts",
+     "url": "https://www.thehindu.com/news/national/odisha/post-arnab-cyclone-heavy-rain-wreaks-havoc-in-odishas-ganjam-gajapati-districts/article71641226.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T16:53:53+00:00"
+    },
     {
      "title": "Cyclone Arnab's rain impact makes Delhi record coldest October day in 4 years",
      "url": "https://www.indiatoday.in/cities/delhi/story/cyclone-arnab-rain-delhi-coldest-october-day-north-india-weather-ptag-3028001-2026-10-29?utm_source=rss",
@@ -1888,16 +2112,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-29T04:41:30+00:00"
-    },
-    {
-     "title": "Cyclone Arnab weakens, but Andhra, Odisha still under rain alert; Amit Shah assures Centre's aid to affected states",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-arnab-weakens-into-deep-depression-andhra-pradesh-odisha-remain-under-yellow-orange-rain-alerts-imd-weather-update-101793242842978.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-29T04:37:46+00:00"
     }
    ],
    "via": [
@@ -1910,10 +2124,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-hi": 7,
+    "IN-hi": 6,
     "IN-hi-nation": 2
    },
-   "top_score": 0.985,
+   "top_score": 1.035,
    "top_headlines": [
     "UP Rain: अर्नब तूफान का असर यूपी पहुंचा, काशी से लेकर अयोध्या तक तेज हवाओं संग बारिश"
    ],
@@ -1964,10 +2178,11 @@
    "hindi_headlines": [
     "पुलिस और लाठीचार्ज की चिंता छोड़िए... राहुल गांधी ने 'चलो दिल्ली रामलीला मार्च' के लिए झोंकी ताकत",
     "दिवाली पर दिल्ली में महाजाम की तैयारी! व्यापारियों को 20 मिनट नहीं दे रहे राहुल गांधी, बीजेपी ने बोला हमला",
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [
     "IN"
    ],
@@ -2020,20 +2235,108 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "google-news:राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "google-news:'यह सरासर पाखंड है, राहुल गांधी..': कर्नाटक SIR को लेकर कांग्रेस पर भड़के पूर्व शिक्षा मंत्री धर्मेंद्र प्रधान",
     "google-news:'जन्म से ही बदतमीज, गंवार होने की निशानी', राहुल गांधी ने गलत लिखा वित्त मंत्री का सरनेम तो भड़के कंचन गुप्ता"
    ],
    "top": {
-    "IN-nation": 9
+    "IN-nation": 2,
+    "IN-hi-nation": 3
    },
-   "top_score": 0.36,
+   "top_score": 0.84,
    "top_headlines": [
+    "राहुल गांधी ने लोगों से कहा, 'पुलिस के लाठी-डंडों की परवाह ना करें'",
     "India News Highlights, 29 October 2026: Priyanka Gandhi inspects Ramlila Maidan ahead of Nov 1 INDIA bloc rally",
     "'Don't push us': SC warns of harsh stand on firecrackers if orders go unenforced"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261029-Q321526",
+   "qid": "Q321526",
+   "title": "Manusmriti",
+   "name": "Manusmṛti",
+   "phrase": "Manusmriti",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+   "story_keys": [
+    "cite",
+    "cow",
+    "life",
+    "slaughter"
+   ],
+   "date": "2026-10-29",
+   "news_at": "2026-10-29T17:02:23+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+    "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+    "Allahabad High Court cites Manusmriti in maintenance ruling",
+    "Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "मनुस्मृति",
+   "reports": [
+    {
+     "title": "Allahabad High Court cites Manusmriti in maintenance ruling",
+     "url": "https://www.indiatoday.in/india/law-news/story/allahabad-high-court-maintenance-order-25-percent-salary-deduction-wife-daughter-ptag-3028068-2026-10-29?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T17:02:23+00:00"
+    },
+    {
+     "title": "'Gau Mata May Go Extinct': Gujarat Court Cites Manusmriti, Rigveda While Handing Life Term To 3 For Cow Slaughter",
+     "url": "https://www.news18.com/india/gau-mata-may-go-extinct-gujarat-court-cites-manusmriti-rigveda-while-handing-life-term-to-3-for-cow-slaughter-ws-lrt-10403865.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T14:31:14+00:00"
+    },
+    {
+     "title": "Gujarat court sentences 3 to life for cow slaughter, cites Manusmriti",
+     "url": "https://www.hindustantimes.com/india-news/gujarat-court-sentences-3-to-life-for-cow-slaughter-cites-manusmriti-101793270711645.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-29T11:14:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "google-news:Gujarat court cites Vedas, Manusmriti while sentencing three Muslim men to life for cow slaughter"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261029-Q271195",
@@ -2128,9 +2431,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "Diljit Dosanjh Delhi Concert: Traffic Restrictions On October 30, Check Roads To Avoid"
    ],
@@ -2293,7 +2596,7 @@
    "traffic": 0,
    "headlines": [
     "European Central Bank (ECB) head Christine Lagarde to step down in February, before her term ends",
-    "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+    "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
     "European Central Bank President Lagarde to step down early"
    ],
    "hindi_headlines": [],
@@ -2324,7 +2627,7 @@
      "at": "2026-10-29T16:34:55+00:00"
     },
     {
-     "title": "Europe’s central bank chief Christine Lagarde steps down for ‘freedom of speech’",
+     "title": "Europe’s central bank chief, Christine Lagarde, steps down for ‘freedom of speech’",
      "url": "https://www.theguardian.com/world/2026/oct/29/european-central-bank-chief-christine-lagarde-to-step-down-nine-months-early",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
