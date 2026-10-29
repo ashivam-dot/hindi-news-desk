@@ -30,11 +30,43 @@ WEIGHTS = {"ExtraBold": "Mukta-ExtraBold.ttf", "Bold": "Mukta-Bold.ttf", "SemiBo
 DISCLOSURE = "असली तस्वीरें: Wikimedia Commons · आवाज़: AI"
 
 
-def disclosure(photos: list[dict]) -> str:
-    """The end card's disclosure, naming Openverse too when a photo comes from it."""
+def disclosure(photos: list[dict], clips: list[dict] = ()) -> str:
+    """The end card's disclosure, naming Openverse too when a photo comes from it, and the footage's YouTube."""
     from . import media
 
-    return DISCLOSURE.replace("Wikimedia Commons", media.hosts(photos))
+    text = DISCLOSURE.replace("Wikimedia Commons", media.hosts(photos))
+    return text.replace(" · आवाज़", " · वीडियो: YouTube (CC BY) · आवाज़") if clips else text
+
+
+class ClipReader:
+    """A clip's frames at W x H, read in order as the Short's frames ask for them (clips.attach's footage, muted)."""
+
+    def __init__(self, path: str):
+        self.path, self.proc, self.n, self.last, self.done = path, None, -1, None, False
+
+    def frame(self, at: float) -> np.ndarray | None:
+        """The clip's frame at `at` seconds from its start, or None once the clip has ended (or can't be read)."""
+        if self.done:
+            return None
+        if self.proc is None:
+            self.proc = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-nostdin", "-i", self.path, "-an", "-vf",
+                                          f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS}",
+                                          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+        while self.n < int(at * FPS):
+            raw = self.proc.stdout.read(W * H * 3) if self.proc.stdout else b""
+            if len(raw) < W * H * 3:
+                self.close()
+                return None
+            self.last, self.n = np.frombuffer(raw, np.uint8).reshape(H, W, 3), self.n + 1
+        return self.last
+
+    def close(self) -> None:
+        if self.proc is not None and self.proc.poll() is None:
+            self.proc.kill()
+            self.proc.wait()
+        if self.proc is not None and self.proc.stdout:
+            self.proc.stdout.close()
+        self.done = True
 
 
 # On screen for the whole Short (India's IT Rules ask synthetic content to carry a visible label).
@@ -1378,7 +1410,13 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     flash_end = len(flash) * BURST_STEP
     straps = {v: max(at, flash_end, HOOK_HOLD if hook_text else 0.0) for v, at in name_straps(seen, photos).items()}
     straps = {v: at for v, at in straps.items() if at < seen[v]["end"] - 0.6}
-    logo, follow, disc = _end_full(accent, disclosure(photos))
+    # Real footage (clips.attach): a beat's clip plays over its photo from the beat's start, with its own credit.
+    footage = [c for c in short.scene.get("clips") or [] if Path(c.get("path", "")).exists()
+               and 0 <= c.get("beat", -1) < len(shots) and not card[c["beat"]]]
+    readers = {c["beat"]: ClipReader(c["path"]) for c in footage}
+    clip_len = {c["beat"]: float(c["seconds"]) for c in footage}
+    clip_credit = {c["beat"]: _credit_layer(c["credit"]) for c in footage}
+    logo, follow, disc = _end_full(accent, disclosure(photos, footage))
     work.mkdir(parents=True, exist_ok=True)
     accents = None if short.loss else [s["start"] for s in shots[1:]] + ([flash_end] if flash else [])
     mixed = _mix(work / "narration.wav", short, duration, work, accents)
@@ -1431,6 +1469,11 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
                 before, was = picture(prev, pu, 0.0, i)
                 frame = cv2.addWeighted(frame, a, before, 1 - a, 0)
                 on, src = (on, view) if a >= 0.5 else (was, prev)
+        playing = None
+        if k in readers and flash_end <= t < end_at:
+            rel = t - max(shots[k]["start"], flash_end)
+            if rel < clip_len[k] and (clip := readers[k].frame(rel)) is not None:
+                frame, on, src, playing = (clip * shade).astype(np.uint8), [], view, k
         split = len(on) == 2
         if t >= end_at:
             fade = min(1.0, (t - end_at) / 0.35)
@@ -1444,7 +1487,9 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
             _blit(frame, disc, (W - disc[1].shape[1]) // 2, y + follow[1].shape[0] + 30, fade)
         else:
             ck = src["beat_k"]
-            if not on:
+            if playing is not None:
+                _blit(frame, clip_credit[playing], 36, round(H * FULL_CREDIT_Y), 0.85)
+            elif not on:
                 since = t - shots[ck]["start"]
                 if texts[ck] is not None:
                     layer = texts[ck]
@@ -1493,7 +1538,10 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
         if i in still_at:
             Image.fromarray(frame).save(stills / f"t{i // FPS:03d}.png")
     enc.stdin.close()
+    for reader in readers.values():
+        reader.close()
     if enc.wait() != 0:
         raise RuntimeError("ffmpeg failed to encode the Short")
     return {"duration": round(duration, 2), "frames": n, "template": "full", "photos": len(photos),
-            "splits": len(pair), "fps": FPS, "size": [W, H], "views": view_record(seen, flash)}
+            "splits": len(pair), "fps": FPS, "size": [W, H], "views": view_record(seen, flash),
+            "clips": [{"beat": c["beat"], "video": c.get("video"), "seconds": c["seconds"]} for c in footage]}

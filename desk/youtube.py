@@ -262,7 +262,9 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool, how:
             + ("तस्वीरें असली हैं। " if short.scene.get("photos") else "") + "आवाज़ AI की है।"
             if short.kind == "advisory" else
             f"यह वीडियो AI आवाज़ से बना है। तस्वीरें असली हैं ({media.hosts(short.scene.get('photos') or [])}), उन पर "
-            "हल्की 3D कैमरा मूवमेंट जोड़ी गई है। स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
+            "हल्की 3D कैमरा मूवमेंट जोड़ी गई है। "
+            + ("असली वीडियो क्लिप YouTube के CC BY वीडियो से हैं (नीचे श्रेय)। " if short.scene.get("clips") else "")
+            + "स्क्रिप्ट की हर पंक्ति ऊपर दिए स्रोतों से मिलाकर जाँची गई है।")
     lines += [made]
     if how and short.kind != "advisory" and HOW_MADE_MARK not in "\n".join(lines):
         lines.append(HOW_MADE)
@@ -272,6 +274,10 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool, how:
         lines += ["श्रेय:", f"• {short.credits[0]}", f"• {photo_credits(short.scene['photos'])}", ""]
     elif short.kind != "advisory":
         lines += ["श्रेय:"] + [f"• {c}" for c in short.credits] + [""]
+    if short.scene.get("clips"):
+        from . import clips
+
+        lines += clips.credits(short) + [""]
     # YouTube rejects < and > in descriptions.
     return "\n".join(lines).rstrip("\n").replace("<", "‹").replace(">", "›")
 

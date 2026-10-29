@@ -91,7 +91,7 @@ def prepare(target: str | dict):
 
 
 def make(target: str | dict, short=None, preview: bool = False) -> tuple[object, dict]:
-    from . import compose, voice
+    from . import clips, compose, voice
 
     short = short or prepare(target)
     work = WORK / short.id
@@ -100,6 +100,8 @@ def make(target: str | dict, short=None, preview: bool = False) -> tuple[object,
         short.save(work / "short.json")
         (work / PREVIEW).write_text("made with the preview voice: never publish\n", encoding="utf-8")
     timing = voice.synthesize(short, work, preview=preview)
+    clips.attach(short, work, spans=[tuple(s) for s in timing.get("beats") or []] or None)
+    short.save(work / "short.json")
     stats = compose.render(short, timing, work)
     stats["voice"] = {k: timing["voice"].get(k) for k in ("engine", "identity", "preview", "served_model", "wpm",
                                                           "coverage", "tempo")}
