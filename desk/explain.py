@@ -81,7 +81,8 @@ ALIASES = {
     # Milk brands are their makers' articles: "Nandini" found no centre on 29 Oct and the price hike was told as
     # Karnataka over its map.
     "nandini": "Karnataka Milk Federation", "kmf": "Karnataka Milk Federation", "amul": "Amul",
-    "mother dairy": "Mother Dairy",
+    "mother dairy": "Mother Dairy", "pm-kisan": "Pradhan Mantri Kisan Samman Nidhi",
+    "pm kisan": "Pradhan Mantri Kisan Samman Nidhi",
 }
 # What a centre must never be: a festival, a holiday, a people, a country, a language, a religion or a date (a story
 # about the railways' Diwali bonus is not about Diwali; "October" is in every dated headline).

@@ -100,6 +100,9 @@ YT_DLP = "https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp"
 WGCF = "https://github.com/ViRb3/wgcf/releases/download/v2.3.1/wgcf_2.3.1_{system}_{arch}"
 WIREPROXY = "https://github.com/whyvl/wireproxy/releases/download/v1.1.3/wireproxy_{system}_{arch}.tar.gz"
 WARP_PORT = 25345
+# Cloudflare's WARP endpoints by address, tried after the profile's own when it doesn't connect: from a GitHub runner on
+# 29 Oct these all connected and YouTube served a video it refused the runner itself (scripts/warp_probe.py).
+ENDPOINTS = ("162.159.192.1:2408", "162.159.195.1:2408", "162.159.192.1:4500", "162.159.192.1:500")
 # The footage VM (Oracle Always Free, Mumbai) runs the same WARP proxy on its own 127.0.0.1:WARP_PORT. The desk reaches
 # it through SSH (FOOTAGE_HOST, FOOTAGE_SSH_KEY in base64, FOOTAGE_HOST_KEY) with a key that may only forward that port
 # or run its forced command, which gives the VM a new WARP device. YouTube served that exit (BOM) on 27 Oct, when it
@@ -422,26 +425,33 @@ def _warp(fresh: bool = False, local: bool = False) -> str:
             _download(url.format(system=system, arch=arch), folder / name)
     profile = folder / "wgcf-profile.conf"
     (folder / "wireproxy.conf").write_text(f"WGConfig = {profile}\n\n[http]\nBindAddress = 127.0.0.1:{WARP_PORT}\n")
-    url = f"http://127.0.0.1:{WARP_PORT}"
+    url, said = f"http://127.0.0.1:{WARP_PORT}", ""
     for new in ((True,) if fresh or not _warp_profile else (False, True)):
         if new:
             (folder / "wgcf-account.toml").unlink(missing_ok=True)
             for step in (["register", "--accept-tos"], ["generate"]):
                 subprocess.run([str(folder / "wgcf"), *step], cwd=folder, capture_output=True, timeout=60, check=True)
             _warp_profile = profile.read_text()
-        else:
-            profile.write_text(_warp_profile)
-        _warp_proc = subprocess.Popen([str(folder / "wireproxy"), "-c", str(folder / "wireproxy.conf")],
-                                      stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        atexit.register(_warp_proc.terminate)
-        for _ in range(20):
-            time.sleep(1)
-            if colo := _exit(url):
-                _proxy = url
-                log.info("footage: through WARP (%s profile, exit %s)", "a new" if new else "the kept", colo)
-                return url
-        _stop_warp()
-    raise RuntimeError("WARP didn't connect")
+        for endpoint in [None, *ENDPOINTS]:
+            profile.write_text(_warp_profile if endpoint is None else
+                               re.sub(r"(?m)^Endpoint\s*=.*$", f"Endpoint = {endpoint}", _warp_profile))
+            out = folder / "wireproxy.log"
+            with out.open("wb") as sink:
+                _warp_proc = subprocess.Popen([str(folder / "wireproxy"), "-c", str(folder / "wireproxy.conf")],
+                                              stdout=sink, stderr=subprocess.STDOUT)
+            atexit.register(_warp_proc.terminate)
+            for _ in range(15):
+                time.sleep(1)
+                if colo := _exit(url):
+                    _proxy = url
+                    log.info("footage: through WARP (%s profile, endpoint %s, exit %s)", "a new" if new else "the kept",
+                             endpoint or "its own", colo)
+                    return url
+                if _warp_proc.poll() is not None:
+                    break
+            _stop_warp()
+            said = out.read_text(errors="replace").strip()[-200:]
+    raise RuntimeError(f"WARP didn't connect: {said}")
 
 
 def _yt_dlp() -> list[str]:
