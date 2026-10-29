@@ -127,6 +127,16 @@ LEXICON = (
     {"hi": "दूध", "forms": ("दूध", "दूध के", "दूध की", "दूध का", "पैकेट वाला दूध", "पैकेट दूध"), "en": "Milk",
      "india": False, "stand_in": True, "not_before": ("टैंकर", "टैंकरों"),
      "files": ("File:India - Kolkata milkman - 4090.jpg", "File:A Milkmans cycle, Varanasi.jpg")},
+    # Owner, 2026-10-29: "why kisan picture is not visible" (the same Short: "किसानों ने 10 रुपये की बढ़ोतरी माँगी").
+    # People seen from afar or from behind only: a stand-in never features a face.
+    {"hi": "डेयरी", "forms": ("डेयरी", "डेयरी कोऑपरेटिव", "डेयरी कोऑपरेटिव्स", "दुग्ध संघ", "दुग्ध उत्पादक", "दूध उत्पादक",
+                            "दूध उत्पादकों", "पशुपालक", "पशुपालकों", "डेयरी किसान", "डेयरी किसानों"),
+     "en": "Dairy farming", "india": False, "stand_in": True,
+     "files": ("File:Cow Milking.jpg", "File:Cow milking, near Mehsana, Gujarat, India.jpg")},
+    {"hi": "किसान", "forms": ("किसान", "किसानों", "किसानो", "अन्नदाता"), "en": "Farmer", "india": False,
+     "stand_in": True, "not_before": ("सम्मान", "निधि", "क्रेडिट", "आंदोलन", "नेता", "मोर्चा", "यूनियन"),
+     "files": ("File:Women Farmers Sowing in Karnataka, India.jpg", "File:Anegundi - Rice Farmers - 1.jpg",
+               "File:Indian farmers.jpg")},
     {"hi": "रसोई गैस", "forms": ("रसोई गैस", "एलपीजी", "एलपीजी सिलेंडर", "गैस सिलेंडर", "गैस सिलेंडरों", "सिलेंडर",
                                "सिलेंडरों", "LPG"),
      "en": "Liquefied petroleum gas", "india": True, "stand_in": True, "not_before": ("टैंकर", "टैंकरों", "विस्फोट"),
