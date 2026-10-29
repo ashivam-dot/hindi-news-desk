@@ -11955,6 +11955,12 @@
      "views": 5,
      "likes": 0,
      "comments": 1
+    },
+    {
+     "age_h": 3.63,
+     "views": 5,
+     "likes": 0,
+     "comments": 1
     }
    ],
    "kind": "explainer",
@@ -11978,7 +11984,7 @@
      "comments": 0
     },
     {
-     "age_h": 0.45,
+     "age_h": 0.95,
      "views": 0,
      "likes": 0,
      "comments": 0
@@ -11991,6 +11997,27 @@
    "audience": "india",
    "production_version": "news-shorts-2026-10-24",
    "producer_sha": "b4b13b9e50c981d5988e3d1f45e08e73140c5b95",
+   "views_6h": null,
+   "views_24h": null
+  },
+  "gq09SbOID6A": {
+   "id": "kh-20261029-Q10218",
+   "published_at": "2026-10-29T17:34:52+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.05,
+     "views": 0,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "explainer",
+   "category": "news",
+   "region": "india",
+   "lane": "naam-niyam",
+   "audience": "india",
+   "production_version": "news-shorts-2026-10-24",
+   "producer_sha": "879950e1148c8aa8ed543525d705b470015edff1",
    "views_6h": null,
    "views_24h": null
   }
