@@ -1,10 +1,12 @@
 # Scorecard
 
-Written 2026-10-29T13:38+00:00 for IST day 2026-10-29. Next review day: 2026-11-05. Window: Shorts published in the last 28 days with a 24-hour read (89).
+Written 2026-10-29T18:53+00:00 for IST day 2026-10-30. Next review day: 2026-11-05. Window: Shorts published in the last 28 days with a 24-hour read (89).
 
 Baseline (80 Shorts, the biggest case "tiger-shroff-2026-10-20" left out): median 37 views at 24 h, engaged share 46.6%, 2.59 subscribers per 1K engaged views.
 
 Verdicts need 10 Shorts. SCALE: median at least x1.5, or engaged share +5 points with x1.5 the subscriber rate. CUT: median under x0.7 and engaged share at or below baseline. STOP: a second CUT in a row (against the last recorded review day). Sensitive cases have their own line, are left out of the other breakdowns and never SCALE. This file changes nothing: the review acts on it.
+
+Analytics note: traffic: HttpError: <HttpError 500 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2026-10-09&endDate=2026-10-26&metrics=views&dimensions=insightTrafficSourceType&filters=video%3D%3DTYsCL-64fSM&sort=-views&alt=json returned "Internal error encounter
 
 ## By lane
 
@@ -31,7 +33,7 @@ Verdicts need 10 Shorts. SCALE: median at least x1.5, or engaged share +5 points
 | 09-12 | 17 | 8 | 25 | 32.4% | 39.3% | 21 | 0.00 | 0.00 | SHORTS 81%, YT_SEARCH 17%, EXT_URL 1% | 0% | 0% | CUT (median x0.68, engaged share not above baseline) |
 | 12-14 | 7 | 23 | 27 | 45.1% | 50.1% | 26 | 0.00 | 0.00 | SHORTS 96%, YT_SEARCH 3%, YT_CHANNEL 1% | 0% | 0% | n<10: no verdict |
 | 14-18 | 18 | 20 | 46 | 45.1% | 49.7% | 22 | 2.42 | 5.35 | SHORTS 95%, YT_SEARCH 4%, EXT_URL 1% | 0% | 0% | HOLD (median x1.24) |
-| 18-20 | 9 | 11 | 34 | 51.6% | 54.7% | 30 | 1.73 | 3.34 | SHORTS 98%, YT_SEARCH 1%, EXT_URL 0% | 11% | 0% | n<10: no verdict |
+| 18-20 | 9 | 11 | 34 | 51.6% | 54.7% | 30 | 1.73 | 3.34 | SHORTS 98%, YT_SEARCH 2%, EXT_URL 0% | 11% | 0% | n<10: no verdict |
 | 20-24 | 10 | 3 | 24 | 49.9% | 47.0% | 22 | 0.00 | 0.00 | SHORTS 96%, YT_SEARCH 3%, EXT_URL 1% | 0% | 0% | HOLD (median x0.67) |
 
 ## By rank
