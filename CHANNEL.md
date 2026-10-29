@@ -333,8 +333,9 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
 - **An original clip in every Short, mandatory (owner, 2026-10-29: "in every video show original clip
   mandatory").** The story's own footage (the event, the person speaking, the product) opens the Short on the hook
   and returns in the beats that name it (`desk/clips.py`). Only clips free to reuse: YouTube CC BY from official or
-  100k+ channels, GODL-India government footage, Commons video, credited in the description. Once clip downloads
-  work on the runner (YouTube currently refuses GitHub's IPs), a Short without one is not published.
+  100k+ channels, GODL-India government footage, Commons video, credited in the description. YouTube refuses
+  GitHub's runner, so clips come through Cloudflare WARP on the runner (`footage._warp`, rotating `ENDPOINTS`;
+  checked by the `warp-probe` workflow), as Chaukanna's kit does.
 - **Full screen, about 30 seconds (owner, 2026-10-21: "My main issue is you are not able to present the video
   properly").** Every story Short uses the full template (`compose.render_full`, `scene.template = "full"`), as BBC
   Hindi, DW Hindi, AJ+ and Aaj Tak's Shorts do: the picture fills the 9:16 frame (a portrait OSM map, a person's
