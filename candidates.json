@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T22:11:07+00:00",
+ "at": "2026-10-30T22:24:35+00:00",
  "trending": [
   {
    "qid": "Q16296",
@@ -79,8 +79,8 @@
     "ABP Group",
     "DB Corp"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -88,6 +88,7 @@
     "Rahul Gandhi questions sale of IDBI Bank, FM Sitharaman counters",
     "'IDBI Bank Handed To Us In Bad Shape': Sitharaman Defends Deal, Hits Back At Rahul Gandhi",
     "Rahul Gandhi vs Nirmala Sitharaman round 2, this time over IDBI Bank stake sale",
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
    "hindi_headlines": [
@@ -154,14 +155,18 @@
     "outlet:NDTV",
     "outlet:ABP Group",
     "outlet:DB Corp",
+    "google-news:'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "google-news:Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 11
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
+   ],
    "hindi_owners": [
-    "HT Media",
-    "TV9 Network"
+    "HT Media"
    ]
   },
   {
@@ -171,7 +176,7 @@
    "views": 27388,
    "traffic": 0,
    "news": 250000,
-   "news_at": "2026-10-30T22:12:58.828905+00:00",
+   "news_at": "2026-10-30T22:25:06.136488+00:00",
    "headlines": [
     "Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme...",
     "AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
@@ -214,7 +219,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T22:12:58.828905+00:00"
+     "at": "2026-10-30T22:25:06.136488+00:00"
     },
     {
      "title": "Who is Jahnvi Singh? IIM Calcutta graduate left McKinsey to join Google, here's why, she explains difference",
@@ -422,7 +427,7 @@
    "views": 0,
    "traffic": 0,
    "news": 250000,
-   "news_at": "2026-10-30T22:12:58.828905+00:00",
+   "news_at": "2026-10-30T22:25:06.136488+00:00",
    "headlines": [
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
     "Helicopter belonging to M/S Transbharat Aviation Pvt Ltd crashes at Joshimath in Uttarakhand",
@@ -464,7 +469,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T22:12:58.828905+00:00"
+     "at": "2026-10-30T22:25:06.136488+00:00"
     },
     {
      "title": "What we know about the Uttarakhand helicopter crash that killed 6",
@@ -545,9 +550,9 @@
    "has_coords": false,
    "top": {
     "IN": 2,
-    "IN-nation": 1
+    "IN-nation": 2
    },
-   "top_score": 1.25,
+   "top_score": 1.235,
    "top_headlines": [
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
    ],
@@ -673,9 +678,9 @@
     "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
@@ -773,7 +778,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T22:12:58.828905+00:00",
+   "news_at": "2026-10-30T22:25:06.136488+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -810,7 +815,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T22:12:58.828905+00:00"
+     "at": "2026-10-30T22:25:06.136488+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -894,11 +899,10 @@
    "article": "2026 Uttarakhand helicopter crash",
    "top": {
     "IN": 2,
-    "IN-hi": 4,
-    "IN-nation": 1,
+    "IN-nation": 2,
     "IN-hi-nation": 11
    },
-   "top_score": 1.825,
+   "top_score": 1.385,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
@@ -1040,9 +1044,9 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 1
    },
-   "top_score": 1.285,
+   "top_score": 1.3,
    "top_headlines": [
     "NVS-03 launched successfully; satellite placed in intended orbit | LIVE"
    ],
@@ -1589,13 +1593,49 @@
    "lane": "sensitive"
   },
   {
+   "qid": null,
+   "title": "2026 Brčko helicopter crash",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-30T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Brčko_helicopter_crash",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-10-30",
+   "coords": [
+    44.91189,
+    18.73869
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
+  },
+  {
    "qid": "Q141776873",
    "title": "2026 Italian unrest",
    "fame": 50000,
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-30T22:11:07.596206+00:00",
+   "news_at": "2026-10-30T22:24:35.970744+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1869,7 +1909,7 @@
    "views": 0,
    "traffic": 0,
    "news": 250000,
-   "news_at": "2026-10-30T22:12:58.828905+00:00",
+   "news_at": "2026-10-30T22:25:06.136488+00:00",
    "headlines": [
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
     "Helicopter belonging to M/S Transbharat Aviation Pvt Ltd crashes at Joshimath in Uttarakhand",
@@ -1911,7 +1951,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T22:12:58.828905+00:00"
+     "at": "2026-10-30T22:25:06.136488+00:00"
     },
     {
      "title": "What we know about the Uttarakhand helicopter crash that killed 6",
@@ -1992,9 +2032,9 @@
    "has_coords": false,
    "top": {
     "IN": 2,
-    "IN-nation": 1
+    "IN-nation": 2
    },
-   "top_score": 1.25,
+   "top_score": 1.235,
    "top_headlines": [
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
    ],
@@ -2136,9 +2176,9 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 1
    },
-   "top_score": 1.285,
+   "top_score": 1.3,
    "top_headlines": [
     "NVS-03 launched successfully; satellite placed in intended orbit | LIVE"
    ],
@@ -2264,9 +2304,9 @@
     "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
@@ -2710,6 +2750,42 @@
    "lane": "other"
   },
   {
+   "qid": null,
+   "title": "2026 Brčko helicopter crash",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-10-30T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Brčko_helicopter_crash",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-10-30",
+   "coords": [
+    44.91189,
+    18.73869
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
+  },
+  {
    "qid": "Q259559",
    "title": "Susan Saint James",
    "fame": 57900,
@@ -3008,8 +3084,8 @@
   }
  ],
  "notes": [
-  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 2 owners' new reports on Narendra Modi (492 views before); revisit kh-",
-  "outlets: 1338 headlines from 30 feeds (19 owners), 38 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261030-badrinath-helicopter-aviation",
+  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 2 owners' new reports on Narendra Modi (504 views before); revisit kh-",
+  "outlets: 1335 headlines from 30 feeds (19 owners), 38 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261030-badrinath-helicopter-aviation",
   "explainers: 9 kh- stories (on): kh-20261031-Q10218, kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q320863; dropped: explainer '$6.3bn gone in 20 mins: How North Korean hackers pulled off ': no name to tell it by",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
@@ -3024,7 +3100,7 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1338,
+  "headlines": 1335,
   "feeds": 30,
   "owners": 19,
   "matched": 38,
@@ -3039,7 +3115,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T22:12:58.828905+00:00",
+   "news_at": "2026-10-30T22:25:06.136488+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -3076,7 +3152,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T22:12:58.828905+00:00"
+     "at": "2026-10-30T22:25:06.136488+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -3160,11 +3236,10 @@
    "article": "2026 Uttarakhand helicopter crash",
    "top": {
     "IN": 2,
-    "IN-hi": 4,
-    "IN-nation": 1,
+    "IN-nation": 2,
     "IN-hi-nation": 11
    },
-   "top_score": 1.825,
+   "top_score": 1.385,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
     "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
@@ -3201,8 +3276,8 @@
     "ABP Group",
     "DB Corp"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3210,6 +3285,7 @@
     "Rahul Gandhi questions sale of IDBI Bank, FM Sitharaman counters",
     "'IDBI Bank Handed To Us In Bad Shape': Sitharaman Defends Deal, Hits Back At Rahul Gandhi",
     "Rahul Gandhi vs Nirmala Sitharaman round 2, this time over IDBI Bank stake sale",
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
    "hindi_headlines": [
@@ -3276,14 +3352,18 @@
     "outlet:NDTV",
     "outlet:ABP Group",
     "outlet:DB Corp",
+    "google-news:'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "google-news:Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 11
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
+   ],
    "hindi_owners": [
-    "HT Media",
-    "TV9 Network"
+    "HT Media"
    ]
   },
   {
@@ -3519,9 +3599,9 @@
     "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
    ],
@@ -3745,9 +3825,9 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 1
    },
-   "top_score": 1.285,
+   "top_score": 1.3,
    "top_headlines": [
     "NVS-03 launched successfully; satellite placed in intended orbit | LIVE"
    ],
