@@ -425,7 +425,7 @@ def photos(c: dict, folder: Path, exclude: set[str], recent: set[str] | None = N
                   if p.file not in {f.file for f in found}]
     found = [p for p in found if p.file not in (exclude or set())
              and not NOT_THING.search(f"{p.file} {p.description} {p.categories}")
-             and not (p.year and p.year < PHOTO_YEAR) and not media.NOT_PERSON.search(p.file)
+             and not (p.year and p.year < PHOTO_YEAR) and (c.get("statue") or not media.NOT_PERSON.search(p.file))
              and not media.branded(p)]
     out = []
     for r in visuals.fresh_first(media.as_dicts(media.download(found, folder)), recent):

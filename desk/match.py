@@ -970,6 +970,8 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
     per: Counter = Counter()
     cards = run = held = 0
     pictures: list[int] = []
+    carded: dict[str, int] = {}  # what a text card's beat names that has a photo: its first such beat
+    on_screen: set[str] = set()
     prev_key, prev_held, ran, pair, alone = None, False, False, set(), []
     said = None  # whom the last beat named first, a card's too (plan's speaker)
     shown_beats = [(k, b) for k, b in enumerate(short.beats) if b.shot.startswith("photo:")]
@@ -987,7 +989,10 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                 out.append(f"text cards: {run} beats in a row from beat {n - run + 1}")
                 ran = True
             prev_key, prev_held, pair, alone = None, False, set(), []
-            said = next((x for _, x in names(say, cast, spell, others)), None)
+            found = names(say, cast, spell, others)
+            for x in canon({x for _, x in found}) & pictured:
+                carded.setdefault(x, n)
+            said = next((x for _, x in found), None)
             continue
         run = 0
         found = names(say, cast, spell, others)
@@ -1014,6 +1019,7 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
                 continue
             lead = j < len(weights) - flashed
             p, d = photos[i], canon(depicts(i, photos[i], cast))
+            on_screen |= d
             total += w
             map_time += w if visuals.is_map(p) else 0.0
             per[held_key(i, photos, groups)] += w
@@ -1064,6 +1070,11 @@ def problems(short, views: list[dict] | None = None) -> list[str]:
         if views and big and (k == 0 or big != (short.beats[k - 1].card or {}).get("big")
                               or short.beats[k - 1].plate == CARD):
             out += _chip_overrun(n, k, pic, views, photos, bool(hook) or k == 0)
+    # Not a presentation ceiling (quiet.SOFT): the voice names someone or something that has a photo, and the Short
+    # never shows it, only words (the Kevadia Short, xkatu15s0c0: "वल्लभ भाई पटेल की प्रतिमा" over a text card). A
+    # card right after the beat that showed it is the one-picture-one-beat rule, not this.
+    for x in sorted(set(carded) - on_screen):
+        out.append(f"pictures: beat {carded[x]} names {x}, who has a photo, but the Short never shows it")
     out += opening(short, views)
     if hook:
         narration = " ".join(b.text for b in short.beats)

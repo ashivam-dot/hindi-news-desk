@@ -216,6 +216,27 @@ def _hit(q: str, en: str, india: bool) -> tuple[str, str, dict] | None:
     return None
 
 
+def _exact(en: str, india: bool) -> tuple[str, str, dict] | None:
+    """The person or place whose English Wikipedia article is titled `en`, or redirects there. Search alone missed
+    the Kevadia Short's three names (xkatu15s0c0, 2026-10-30): "Sardar Vallabhbhai Patel" (the honorific is not in
+    the title "Vallabhbhai Patel"), "Ekta Nagar" (Kevadia's new name; search found its railway station) and
+    "Banaskantha" (the article is "Banaskantha district"), so beat 5 went out as a text card."""
+    try:
+        page = wiki.page_info([en]).get(en) or {}
+        ent = wiki.entities([page["qid"]]).get(page["qid"]) if page.get("qid") else None
+    except Exception:
+        return None
+    if not ent or wiki.DISAMBIGUATION in kinds(ent):
+        return None
+    hit = (page["qid"], page.get("title") or en, ent)
+    if wiki.HUMAN in kinds(ent):
+        return hit
+    if media.place_like(ent) and not kinds(ent) & COUNTRY_KINDS \
+            and not (india and INDIA not in {c["value"] for c in wiki.claims(ent, "P17")}):
+        return hit
+    return None
+
+
 # The names resolve could not read (a network or API error), as against found nothing: an unread name is no faceless
 # person (writer.faceless, cast_for's fates; review round 2).
 UNREAD: set[str] = set()
@@ -236,6 +257,10 @@ def resolve(en: str, india: bool, near: dict | None = None) -> tuple[str, str, d
     queries = [en] + ([f"{en} {city}"] if city and city.lower() not in en.lower() else []) \
         + ([f"{en}, India"] if india else [])
     places: list[tuple[str, str, dict]] = []
+    if exact := _exact(en, india):
+        if wiki.HUMAN in kinds(exact[2]):
+            return exact
+        places.append(exact)
     for q in queries:
         if places and q == f"{en}, India":
             break
@@ -467,6 +492,33 @@ def sub_place(c: dict, beats: list[dict], india: bool) -> dict | None:
     return None
 
 
+# "<person> की प्रतिमा" is the monument, not the person: "केवड़िया में वल्लभ भाई पटेल की प्रतिमा पर पुष्पांजलि" is the
+# Statue of Unity (xkatu15s0c0, 2026-10-30), one Wikipedia search for "Statue of <person>".
+STATUE_WORDS = ("प्रतिमा", "मूर्ति", "स्टैच्यू", "स्मारक")
+
+
+def statue_of(c: dict, beats: list[dict], thing_resolver=None) -> dict | None:
+    """The statue a beat names as "<person> की प्रतिमा" (STATUE_WORDS), resolved as its own thing, or None. Its
+    Hindi name is the statue word alone, so the beat still names the person and cuts from their photo to the statue's
+    on that word (match.plan)."""
+    said = " ".join(b.get("say") or "" for b in beats)
+    for name in [c["hi"], *(c.get("alias") or [])]:
+        for word in STATUE_WORDS:
+            hi = f"{name} की {word}"
+            if not hindi.contains(said, hi):
+                continue
+            try:
+                title = wiki.search(f"Statue of {c['title']}")
+            except Exception as exc:
+                log.info("visuals: %s not resolved (%s)", hi, exc)
+                return None
+            hit = (thing_resolver or things.resolve_thing)(title) if title else None
+            if hit and hit[0] != c["qid"] and re.search(r"\bstatue\b", _description(hit[2]) + " " + hit[1], re.I):
+                return {"en": hit[1], "hi": word, "kind": "thing", "qid": hit[0], "title": hit[1], "ent": hit[2],
+                        "statue": True}
+    return None
+
+
 def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True, near: dict | None = None,
              resolver=None, thing_resolver=None, thing_lookup=None, fates: dict | None = None) -> list[dict]:
     """The people, places and things the script names besides its subject, resolved: [{en, hi, kind, qid, title,
@@ -529,6 +581,11 @@ def cast_for(draft: dict, subject_en: str, india: bool, places_too: bool = True,
         regions += region
         places += kind == "place" and not region
         out.append({"en": en, "hi": hi, "kind": kind, "qid": qid, "title": title, "ent": ent})
+        if kind == "person" and found_things < MAX_THINGS and config.MATCHER != "legacy" \
+                and (statue := statue_of(out[-1], draft.get("beats") or [], thing_resolver)) \
+                and not any(c["qid"] == statue["qid"] for c in out):
+            found_things += 1
+            out.append(statue)
         if kind == "place" and not region and places < MAX_PLACES and (sub := sub_place(out[-1], draft.get("beats")
                                                                                          or [], india)):
             if not any(c["qid"] == sub["qid"] for c in out):
