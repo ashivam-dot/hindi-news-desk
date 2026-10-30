@@ -1,36 +1,26 @@
 {
- "at": "2026-10-30T05:54:34+00:00",
+ "at": "2026-10-30T06:22:17+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 89 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.176, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.813, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 59.6}, 'category:attack': {'n': 13, 'lift': 1.333, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 24 trending",
-  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit kh-20261030-Q163225-update: 2 owners' new reports on Sonia Gandhi (656 views before); revisit Q7089335 (580 views): 0 owners reported new news on Om Birla since its last Short; revisit Q140632219 (158 views): 0 owners reported new news on Neha Bora since its last Short",
-  "outlets: 1272 headlines from 31 feeds (19 owners), 22 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261029-bhutan-flood, nw-20261029-arnab-cyclone",
+  "watch: 12 candidates from 24 trending",
+  "outlets: 1286 headlines from 31 feeds (19 owners), 27 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261029-bhutan-flood, nw-20261029-arnab-cyclone",
   "explainers: 7 kh- stories (on): kh-20261030-Q10218, kh-20261030-Q51403327, kh-20261030-Q1185, kh-20261030-Q1058; dropped: explainer Moscow: fewer than 3 owners' headlines name it and the story; explainer Supreme Court: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
+  "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold wk-Q16296: last Short went out 0.1 h ago",
+  "hold nw-20261029-bhutan-flood: last Short went out 0.1 h ago",
+  "hold nw-20261029-arnab-cyclone: last Short went out 0.1 h ago",
+  "hold kh-20261030-Q163225: last Short went out 0.1 h ago",
   "drop kh-20261030-Q51403327: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261030-Q61866751: too low in Google News India's top stories (place 0.27, needs 0.35)",
-  "drop kh-20261030-Q5276830: too low in Google News India's top stories (place 0.06, needs 0.35)",
-  "drop wk-Q259559: 90 h old and no longer trending live",
-  "drop kh-20261030-Q484605: a world statement, politics or diplomacy story with no India connection",
-  "drop wk-Q5296666: 90 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141898879, wk-Q4834146; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261030-Q5276830, kh-20261030-Q484605",
-  "skip wk-Q16296: gate: no draft passed the fact checks: beat 1 must open on पैट्रिक स्टिवर्ट: the name starting within its first 4 words, the place and time after it",
-  "published kh-20261030-Q1058: https://www.youtube.com/shorts/xkatu15s0c0",
+  "hold kh-20261030-Q61866751: last Short went out 0.1 h ago",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q141898879, wk-Q4834146; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261030-Q5276830",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "xkatu15s0c0",
-  "url": "https://www.youtube.com/shorts/xkatu15s0c0",
-  "youtube_title": "प्रधानमंत्री मोदी गुजरात में अनुसंधान केंद्र पहुंचेंगे #shorts #gujarat",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
