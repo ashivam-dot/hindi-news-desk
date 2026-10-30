@@ -57,6 +57,18 @@ def test_person_ki_pratima_is_the_statue(monkeypatch):
                                                               "Statue of Unity"]
 
 
+def test_a_remake_is_not_dropped_for_leaving_the_top_lists():
+    from datetime import datetime, timezone
+
+    from desk import plan
+
+    cand = {"id": "kh-20261030-Q1058-r2", "kind": "explainer", "category": "politics", "region": "india",
+            "top": {}, "top_score": 0.0, "owners": ["News18", "The Hindu", "The Economic Times"]}
+    at = datetime(2026, 10, 30, 8, 53, tzinfo=timezone.utc)
+    assert "not in Google News India" in plan.unpopular(cand, at)
+    assert plan.unpopular(cand | {"replaces": "xkatu15s0c0"}, at) is None
+
+
 def test_named_with_a_photo_and_never_shown_refuses_even_when_quiet(monkeypatch):
     s = Short.load(SYNC / "39546660530.json")
     photos, cast = s.scene["photos"], match.cast_of(s)

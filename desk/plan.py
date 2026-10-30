@@ -405,6 +405,10 @@ def unpopular(cand: dict, at: datetime) -> str | None:
     is not judged."""
     from . import explain
 
+    # A remake corrects a Short already out, picked when it was top news: the Kevadia remake (kh-20261030-Q1058-r2)
+    # was dropped two hours later for having left the lists, and the bad Short would have stayed up.
+    if cand.get("replaces"):
+        return None
     if foreign_only(cand):
         return "a world statement, politics or diplomacy story with no India connection"
     if big_incident(cand):
