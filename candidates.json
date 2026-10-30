@@ -1,31 +1,48 @@
 {
- "at": "2026-10-30T16:24:52+00:00",
+ "at": "2026-10-30T16:40:12+00:00",
  "trending": [
   {
    "qid": "Q16296",
    "title": "Patrick Stewart",
-   "fame": 2481552,
+   "fame": 2506552,
    "views": 2356552,
    "traffic": 0,
-   "news": 125000,
+   "news": 150000,
    "news_at": "2026-10-30T15:10:00+00:00",
    "headlines": [
-    "Sir Patrick Stewart obituary"
+    "Sir Patrick Stewart obituary",
+    "'Star Trek' star Patrick Stewart dies age 86"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US"
+    "US",
+    "world"
    ],
    "label_hi": "पैट्रिक स्टिवर्ट",
    "via": [
     "wikipedia-top-2026-10-29",
-    "google-news:Sir Patrick Stewart obituary"
+    "google-news:Sir Patrick Stewart obituary",
+    "google-news:'Star Trek' star Patrick Stewart dies age 86",
+    "outlet:Deutsche Welle"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "Deutsche Welle"
+   ],
+   "reports": [
+    {
+     "title": "'Star Trek' star Patrick Stewart dies age 86",
+     "url": "https://www.dw.com/en/star-trek-star-patrick-stewart-dies-age-86/a-79803071?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-29T22:11:00+00:00"
+    }
+   ],
    "id": "wk-Q16296",
    "kind": "death",
    "category": "death",
@@ -33,6 +50,143 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 404388,
+   "views": 27388,
+   "traffic": 2000,
+   "news": 375000,
+   "news_at": "2026-10-30T16:41:46.746131+00:00",
+   "headlines": [
+    "IIFA Awards 2026 full list of winners: Dhurandhar sweeps major awards with Best Actor for Ranveer Singh; Aneet Padda takes home Best Actress | Bollywood",
+    "Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme...",
+    "AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
+    "Vayu Sena Medal Awardee, NDA Alumnus: Air Marshal Inderpal Singh Walia Set To Be Next IAF Vice Chief",
+    "Air Marshal Inderpal Singh Walia appointed next IAF Vice Chief"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "बृजेन्द्र पाल सिंह",
+   "via": [
+    "wikipedia-top-2026-10-29",
+    "google-trends-IN:uditi singh",
+    "google-news:IIFA Awards 2026 full list of winners: Dhurandhar sweeps major awards with Best Actor for Ranveer Singh; Aneet Padda takes home Best Actress | Bollywood",
+    "google-news:Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme...",
+    "google-news:AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
+    "outlet:Government of India",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "Government of India",
+    "Network18",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330557",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-10-30T16:41:46.746131+00:00"
+    },
+    {
+     "title": "Vayu Sena Medal Awardee, NDA Alumnus: Air Marshal Inderpal Singh Walia Set To Be Next IAF Vice Chief",
+     "url": "https://www.news18.com/india/air-marshal-inderpal-singh-walia-set-to-be-next-iaf-vice-chief-ws-kl-10405787.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T16:31:37+00:00"
+    },
+    {
+     "title": "Air Marshal Inderpal Singh Walia appointed next IAF Vice Chief",
+     "url": "https://www.indiatoday.in/india/story/air-marshal-inderpal-singh-walia-appointed-next-iaf-vice-chief-3028869-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T15:25:04+00:00"
+    },
+    {
+     "title": "Air Marshal Inderpal Singh Walia appointed IAF vice-chief",
+     "url": "https://timesofindia.indiatimes.com/defence/news/air-marshal-inderpal-singh-walia-appointed-iaf-vice-chief/articleshow/135363738.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T13:17:23+00:00"
+    },
+    {
+     "title": "'Giribala Singh May Influence Trials, Intimidate Witnesses': CBI Backs Twisha Death Case Transfer Plea",
+     "url": "https://www.news18.com/india/giribala-singh-may-influence-trials-intimidate-witnesses-cbi-backs-twisha-death-case-transfer-plea-ws-l-10405418.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T12:22:11+00:00"
+    },
+    {
+     "title": "'They Plotted Against Me': Ex-Manipur CM Biren Singh Accuses BJP Leaders Of Conspiring To Remove Him",
+     "url": "https://www.news18.com/india/biren-singh-claims-state-bjp-leaders-conspired-to-oust-him-ws-l-10405355.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:48:59+00:00"
+    },
+    {
+     "title": "Ex-Manipur CM Biren Singh blames BJP leaders for ouster, questions continued violence",
+     "url": "https://timesofindia.indiatimes.com/india/they-plotted-ex-manipur-cm-biren-singh-blames-bjp-leaders-for-ouster-questions-continued-violence/articleshow/135358460.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:17:32+00:00"
+    },
+    {
+     "title": "Sowjanya murder case: Karnataka names Chetan Singh Rathore as new SIT",
+     "url": "https://www.hindustantimes.com/india-news/sowjanya-murder-case-karnataka-names-chetan-singh-rathore-as-new-sit-101793358967978.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:16:07+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {
+    "IN-nation": 15
+   },
+   "top_score": 0.18,
+   "top_headlines": [
+    "Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme..."
+   ],
    "hindi_owners": []
   },
   {
@@ -73,7 +227,7 @@
     "'IDBI Bank Handed To Us In Bad Shape': Sitharaman Defends Deal, Hits Back At Rahul Gandhi",
     "Finance Minister Nirmala Sitharaman Hits Back at Rahul Gandhi Over IDBI Bank Sale | News18",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_headlines": [
     "राहुल गांधी की पंजाब रैली के जवाब में BJP का ‘सिख कॉन्क्लेव’, 1984 दंगों को लेकर कांग्रेस को घेरने की तैयारी",
@@ -140,21 +294,20 @@
     "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "google-news:'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe",
+    "google-news:'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "google-news:Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
    "top": {
-    "IN": 3,
+    "IN": 8,
     "IN-hi": 10,
-    "IN-nation": 4,
+    "IN-nation": 3,
     "IN-hi-nation": 5
    },
-   "top_score": 1.67,
+   "top_score": 1.435,
    "top_headlines": [
-    "राहुल गांधी को 12 से ज्यादा मार्केट एसोसिएशन का लेटर, 1 नवंबर की रैली रद्द करने की मांग",
-    "INDIA bloc's 'public impeachment' of CEC Gyanesh Kumar at 4 pm",
+    "राहुल गांधी के समर्थन में खुलकर उतरे शशि थरूर, बोले- अब चुप नहीं रह सकते; दिल्ली पहुंचने की अपील",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -188,10 +341,11 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "TV9 Network",
-    "NDTV"
+    "NDTV",
+    "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -263,169 +417,24 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:TV9 Network",
     "outlet:NDTV",
+    "outlet:Amar Ujala",
     "google-news:4 BJP leaders backed Akali Dal pact even when Amit Shah was against it",
-    "google-news:'अंगद का पैर है भाजपा सरकार, UP से कोई हिला नहीं सकता', अमित शाह ने लखनऊ से विपक्ष को दिया साफ संदेश",
-    "google-news:'चेहरे हटाओ, सिर्फ काम दिखाओ', अमित शाह की एंट्री से पहले UP BJP का बड़ा फरमान, नेतागिरी का पोस्टर वॉर बंद"
+    "google-news:'अंगद का पैर है भाजपा सरकार, UP से कोई हिला नहीं सकता', अमित शाह ने लखनऊ से विपक्ष को दिया साफ संदेश"
    ],
    "top": {
-    "IN-nation": 4,
-    "IN-hi-nation": 12
+    "IN": 8,
+    "IN-nation": 3
    },
-   "top_score": 0.645,
+   "top_score": 0.92,
    "top_headlines": [
-    "'चेहरे हटाओ, सिर्फ काम दिखाओ', अमित शाह की एंट्री से पहले UP BJP का बड़ा फरमान, नेतागिरी का पोस्टर वॉर बंद",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_owners": [
     "TV9 Network",
     "Network18",
     "HT Media"
    ]
-  },
-  {
-   "id": "kh-20261030-Q51403327",
-   "qid": "Q51403327",
-   "title": "Binance",
-   "name": "Binance",
-   "phrase": "Binance",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-   "story_keys": [
-    "biggest",
-    "billion",
-    "crypto",
-    "exchange",
-    "freeze",
-    "hack",
-    "heist",
-    "history",
-    "security"
-   ],
-   "date": "2026-10-30",
-   "news_at": "2026-10-30T15:37:00+00:00",
-   "owners": [
-    "HT Media",
-    "Al Jazeera Media Network",
-    "The Hindu Group",
-    "NDTV",
-    "France Médias Monde",
-    "Deutsche Welle",
-    "NPR"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-    "Crypto exchange Binance freezes assets after $6.3 billion security breach",
-    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
-    "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
-    "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
-    "Binance crypto exchange suspends trades over North Korea-linked hack"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
-     "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T15:37:00+00:00"
-    },
-    {
-     "title": "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
-     "url": "https://www.france24.com/en/video/20261030-biggest-hack-in-history-cryptocurrency-giant-binance-loses-6-3-billion",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T15:34:46+00:00"
-    },
-    {
-     "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
-     "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T13:01:22+00:00"
-    },
-    {
-     "title": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
-     "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-30T12:38:47+00:00"
-    },
-    {
-     "title": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-     "url": "https://www.ndtv.com/india-news/north-korea-linked-to-6-3-billion-binance-hack-in-biggest-crypto-heist-ever-12259950#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T14:08:28+00:00"
-    },
-    {
-     "title": "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
-     "url": "https://www.thehindu.com/sci-tech/technology/binance-crypto-exchange-confirms-major-hack-more-than-25-billion-frozen/article71643509.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T13:28:38+00:00"
-    },
-    {
-     "title": "Crypto exchange Binance freezes assets after $6.3 billion security breach",
-     "url": "https://www.livemint.com/news/crypto-exchange-binance-freezes-assets-after-6-3-billion-security-breach-11793335066186.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T04:46:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:NPR",
-    "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261030-Q502531",
@@ -529,6 +538,248 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261030-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+   "story_keys": [
+    "action'",
+    "credit",
+    "improve",
+    "rain",
+    "targeted"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T16:02:04+00:00",
+   "owners": [
+    "HT Media",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Network18"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+    "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+    "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+    "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+     "url": "https://www.news18.com/cities/new-delhi-news/delhi-air-quality-aqi-satisfactory-rain-manjinder-sirsa-10405722.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T16:02:04+00:00"
+    },
+    {
+     "title": "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/two-days-of-rain-bring-delhis-aqi-down-to-60-minister-credits-targeted-action-for-cleaner-air/articleshow/135367564.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T15:14:04+00:00"
+    },
+    {
+     "title": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-air-quality-improves-satisfactory-heavy-rain-imd-red-alert-manjinder-sirsa-bjp-3028765-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T14:25:25+00:00"
+    },
+    {
+     "title": "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+     "url": "https://www.hindustantimes.com/india-news/gurugram-overnight-rainfall-improves-aqi-waterlogging-leaves-commuters-stranded-101793346602240.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T07:50:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "google-news:Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261030-Q51403327",
+   "qid": "Q51403327",
+   "title": "Binance",
+   "name": "Binance",
+   "phrase": "Binance",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+   "story_keys": [
+    "biggest",
+    "billion",
+    "crypto",
+    "exchange",
+    "freeze",
+    "hack",
+    "heist",
+    "history",
+    "security"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T15:37:00+00:00",
+   "owners": [
+    "HT Media",
+    "Al Jazeera Media Network",
+    "The Hindu Group",
+    "NDTV",
+    "France Médias Monde",
+    "Deutsche Welle",
+    "NPR"
+   ],
+   "fame": 175000,
+   "news": 175000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+    "Crypto exchange Binance freezes assets after $6.3 billion security breach",
+    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
+    "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
+    "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
+    "Binance crypto exchange suspends trades over North Korea-linked hack"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
+     "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T15:37:00+00:00"
+    },
+    {
+     "title": "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
+     "url": "https://www.france24.com/en/video/20261030-biggest-hack-in-history-cryptocurrency-giant-binance-loses-6-3-billion",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T15:34:46+00:00"
+    },
+    {
+     "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+     "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T13:01:22+00:00"
+    },
+    {
+     "title": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
+     "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-30T12:38:47+00:00"
+    },
+    {
+     "title": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+     "url": "https://www.ndtv.com/india-news/north-korea-linked-to-6-3-billion-binance-hack-in-biggest-crypto-heist-ever-12259950#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T14:08:28+00:00"
+    },
+    {
+     "title": "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
+     "url": "https://www.thehindu.com/sci-tech/technology/binance-crypto-exchange-confirms-major-hack-more-than-25-billion-frozen/article71643509.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T13:28:38+00:00"
+    },
+    {
+     "title": "Crypto exchange Binance freezes assets after $6.3 billion security breach",
+     "url": "https://www.livemint.com/news/crypto-exchange-binance-freezes-assets-after-6-3-billion-security-breach-11793335066186.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T04:46:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Al Jazeera Media Network",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:NPR"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "id": "nw-20261030-helicopter-aviation",
    "qid": null,
    "title": "Helicopter belonging to M/S Transbharat Aviation Pvt Ltd crashes at Joshimath in Uttarakhand",
@@ -536,7 +787,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T16:28:02.988736+00:00",
+   "news_at": "2026-10-30T16:41:46.746131+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -573,7 +824,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T16:28:02.988736+00:00"
+     "at": "2026-10-30T16:41:46.746131+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -657,15 +908,15 @@
    "article": null,
    "top": {
     "IN": 1,
-    "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 14
+    "IN-hi": 2,
+    "IN-nation": 2,
+    "IN-hi-nation": 16
    },
-   "top_score": 1.905,
+   "top_score": 1.835,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Rescue operations on after Indian helicopter crashes in Himalayan state",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
+    "ECI extends SIR deadline in six States including Delhi"
    ],
    "hindi_owners": [
     "BBC",
@@ -797,12 +1048,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 6
+    "IN-nation": 16
    },
-   "top_score": 0.45,
+   "top_score": 0.15,
    "top_headlines": [
-    "Glacial lake outburst in Bhutan triggers flood alert in northern West Bengal, Assam",
-    "Parts of Delhi under IMD red alert for rain, cloudy skies may delay moon sighting on Karwa Chauth | India News"
+    "Glacial lake outburst in Bhutan triggers flood alert in northern West Bengal, Assam"
    ],
    "hindi_owners": []
   },
@@ -1221,7 +1471,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-30T16:24:52.428550+00:00",
+   "news_at": "2026-10-30T16:40:12.688289+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1269,35 +1519,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q4834146",
-   "title": "B. P. Singh",
-   "fame": 27388,
-   "views": 27388,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "बृजेन्द्र पाल सिंह",
-   "via": [
-    "wikipedia-top-2026-10-29"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4834146",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1364,6 +1585,64 @@
    "hindi_owners": []
   },
   {
+   "qid": "Q922837",
+   "title": "Cuauhtémoc Cárdenas",
+   "fame": 11357,
+   "views": 11357,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q922837",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q320093",
+   "title": "Tom Skerritt",
+   "fame": 10534,
+   "views": 10534,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q320093",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-21",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
    "qid": "Q141820731",
    "title": "2026 Karak church shooting",
    "fame": 10081,
@@ -1396,9 +1675,196 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q2339941",
+   "title": "Tetsuya Chiba",
+   "fame": 8059,
+   "views": 8059,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2339941",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-22",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q124155126",
+   "title": "Glynn Simmons",
+   "fame": 7934,
+   "views": 7934,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q124155126",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
+  {
+   "id": "kh-20261030-Q4746875-p2",
+   "qid": "Q4746875",
+   "title": "Amit Shah",
+   "name": "Amit Shah",
+   "phrase": "Amit Shah",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Prepared For Discussion': Amit Shah Challenges Oppn Over Vote Theft Allegations, Calls For Special Parliament Session",
+   "story_keys": [
+    "call",
+    "challenge",
+    "session",
+    "special",
+    "theft",
+    "vote"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T13:00:26+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Prepared For Discussion': Amit Shah Challenges Oppn Over Vote Theft Allegations, Calls For Special Parliament Session",
+    "National Unity Day 2026: Amit Shah Calls For Nationwide 'Run For Unity', Grand Parade In Gujarat",
+    "Ready for special session on ‘vote chori’, but Rahul Gandhi will never agree: Amit Shah",
+    "'BJP fully prepared': Shah challenges Rahul, Akhilesh to debate vote theft in Parliament",
+    "4 BJP leaders backed Akali Dal pact even when Amit Shah was against it"
+   ],
+   "hindi_headlines": [
+    "लखनऊ ट्रिपल मर्डरः अमित शाह के पहुंचते ही DGP-ACS ने की पीड़ित परिवार से मुलाकात; आरोपी के घर बुलडोजर चलाने की तैयारी!",
+    "'UP में अंगद का पैर है BJP', अमित शाह का राहुल-अखिलेश को चैलेंज; वोट चोरी के आरोप पर संसद में बहस की दी चुनौती",
+    "‘BJP पूरी तरह तैयार’, वोट चोरी पर संसद में बहस के लिए अमित शाह ने राहुल-अखिलेश को दी चुनौती",
+    "अयोध्या फ्लैशबैक: जब आज ही के दिन गोलियों से लाल हुई सरयू! अमित शाह ने 1990 की घटना को क्‍यों किया याद?",
+    "'सपा 5 सीटें जीती, पर भाजपा 50 जिलों में हारी', अखिलेश यादव का अमित शाह को UCC पर भी जवाब"
+   ],
+   "hindi_news": 8,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "अमित शाह",
+   "reports": [
+    {
+     "title": "'BJP fully prepared': Shah challenges Rahul, Akhilesh to debate vote theft in Parliament",
+     "url": "https://timesofindia.indiatimes.com/india/bjp-is-fully-prepared-shah-challenges-rahul-akhilesh-to-debate-vote-theft-in-parliament/articleshow/135362975.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T13:00:26+00:00"
+    },
+    {
+     "title": "Ready for special session on ‘vote chori’, but Rahul Gandhi will never agree: Amit Shah",
+     "url": "https://www.hindustantimes.com/india-news/ready-for-special-session-on-vote-chori-but-rahul-gandhi-will-never-agree-amit-shah-101793361068287.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:51:07+00:00"
+    },
+    {
+     "title": "National Unity Day 2026: Amit Shah Calls For Nationwide 'Run For Unity', Grand Parade In Gujarat",
+     "url": "https://www.news18.com/india/national-unity-day-2026-amit-shah-calls-for-nationwide-run-for-unity-grand-parade-in-gujarat-ws-l-10404857.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T08:29:41+00:00"
+    },
+    {
+     "title": "'Prepared For Discussion': Amit Shah Challenges Oppn Over Vote Theft Allegations, Calls For Special Parliament Session",
+     "url": "https://www.news18.com/india/amit-shah-challenges-opposition-to-parliament-discussion-on-vote-theft-bjp-up-working-committee-meeting-ws-l-10404738.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T08:12:53+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "google-news:4 BJP leaders backed Akali Dal pact even when Amit Shah was against it",
+    "google-news:'अंगद का पैर है भाजपा सरकार, UP से कोई हिला नहीं सकता', अमित शाह ने लखनऊ से विपक्ष को दिया साफ संदेश"
+   ],
+   "top": {
+    "IN": 8,
+    "IN-nation": 3
+   },
+   "top_score": 0.92,
+   "top_headlines": [
+    "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "HT Media"
+   ],
+   "part": 2,
+   "earlier": [
+    "अमित शाह का एलान, उत्तर प्रदेश में लागू होगा UCC"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
   {
    "id": "nw-20261030-helicopter-aviation",
    "qid": null,
@@ -1407,7 +1873,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T16:28:02.988736+00:00",
+   "news_at": "2026-10-30T16:41:46.746131+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -1444,7 +1910,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T16:28:02.988736+00:00"
+     "at": "2026-10-30T16:41:46.746131+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -1528,15 +1994,15 @@
    "article": null,
    "top": {
     "IN": 1,
-    "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 14
+    "IN-hi": 2,
+    "IN-nation": 2,
+    "IN-hi-nation": 16
    },
-   "top_score": 1.905,
+   "top_score": 1.835,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Rescue operations on after Indian helicopter crashes in Himalayan state",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
+    "ECI extends SIR deadline in six States including Delhi"
    ],
    "hindi_owners": [
     "BBC",
@@ -1647,6 +2113,195 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261030-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+   "story_keys": [
+    "action'",
+    "credit",
+    "improve",
+    "rain",
+    "targeted"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T16:02:04+00:00",
+   "owners": [
+    "HT Media",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Network18"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+    "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+    "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+    "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+     "url": "https://www.news18.com/cities/new-delhi-news/delhi-air-quality-aqi-satisfactory-rain-manjinder-sirsa-10405722.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T16:02:04+00:00"
+    },
+    {
+     "title": "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/two-days-of-rain-bring-delhis-aqi-down-to-60-minister-credits-targeted-action-for-cleaner-air/articleshow/135367564.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T15:14:04+00:00"
+    },
+    {
+     "title": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-air-quality-improves-satisfactory-heavy-rain-imd-red-alert-manjinder-sirsa-bjp-3028765-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T14:25:25+00:00"
+    },
+    {
+     "title": "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+     "url": "https://www.hindustantimes.com/india-news/gurugram-overnight-rainfall-improves-aqi-waterlogging-leaves-commuters-stranded-101793346602240.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T07:50:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "google-news:Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261030-Q6751197",
+   "qid": "Q6751197",
+   "title": "Manoj Tiwari (Delhi politician)",
+   "name": "Manoj Tiwari",
+   "phrase": "Manoj Tiwari",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
+   "story_keys": [
+    "dip",
+    "rijiju",
+    "swimming"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T11:35:14+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
+    "'Don't You Think...': Kiren Rijiju's Swimming Challenge To Manoj Tiwari After His 'Clean Yamuna' Claim",
+    "Manoj Tiwari took a dip in the yamuna… but the internet had a few notes"
+   ],
+   "hindi_headlines": [
+    "आप दिल्ली की यमुना में डुबकी लगाने कब आ रहे हैं? मनोज तिवारी का निमंत्रण, पर लेटेस्ट रिपोर्ट में क्या है नदी की हालत?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "मनोज तिवारी",
+   "reports": [
+    {
+     "title": "Manoj Tiwari took a dip in the yamuna… but the internet had a few notes",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/manoj-tiwari-took-a-dip-in-the-yamuna-but-the-internet-had-a-few-notes-3028627-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:35:14+00:00"
+    },
+    {
+     "title": "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
+     "url": "https://www.hindustantimes.com/india-news/manoj-tiwari-yamuna-dip-invites-rahul-gandhi-arvind-kejriwal-kiren-rijiju-proposes-swimming-competition-in-river-101793340452093.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T08:10:23+00:00"
+    },
+    {
+     "title": "'Don't You Think...': Kiren Rijiju's Swimming Challenge To Manoj Tiwari After His 'Clean Yamuna' Claim",
+     "url": "https://www.news18.com/india/dont-you-think-kiren-rijijus-swimming-challenge-to-manoj-tiwari-after-his-clean-yamuna-claim-ws-lrt-10404336.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T04:34:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "kh-20261030-Q51403327",
    "qid": "Q51403327",
    "title": "Binance",
@@ -1679,8 +2334,8 @@
     "Deutsche Welle",
     "NPR"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 175000,
+   "news": 175000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1776,105 +2431,14 @@
     "outlet:NDTV",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle",
-    "outlet:NPR",
-    "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261030-Q6751197",
-   "qid": "Q6751197",
-   "title": "Manoj Tiwari (Delhi politician)",
-   "name": "Manoj Tiwari",
-   "phrase": "Manoj Tiwari",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
-   "story_keys": [
-    "dip",
-    "rijiju",
-    "swimming"
-   ],
-   "date": "2026-10-30",
-   "news_at": "2026-10-30T11:35:14+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
-    "'Don't You Think...': Kiren Rijiju's Swimming Challenge To Manoj Tiwari After His 'Clean Yamuna' Claim",
-    "Manoj Tiwari took a dip in the yamuna… but the internet had a few notes"
-   ],
-   "hindi_headlines": [
-    "आप दिल्ली की यमुना में डुबकी लगाने कब आ रहे हैं? मनोज तिवारी का निमंत्रण, पर लेटेस्ट रिपोर्ट में क्या है नदी की हालत?"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "मनोज तिवारी",
-   "reports": [
-    {
-     "title": "Manoj Tiwari took a dip in the yamuna… but the internet had a few notes",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/manoj-tiwari-took-a-dip-in-the-yamuna-but-the-internet-had-a-few-notes-3028627-2026-10-30?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:35:14+00:00"
-    },
-    {
-     "title": "Rijiju's ‘swimming competition’ idea after Manoj Tiwari takes Yamuna dip; invites Rahul, Kejriwal",
-     "url": "https://www.hindustantimes.com/india-news/manoj-tiwari-yamuna-dip-invites-rahul-gandhi-arvind-kejriwal-kiren-rijiju-proposes-swimming-competition-in-river-101793340452093.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T08:10:23+00:00"
-    },
-    {
-     "title": "'Don't You Think...': Kiren Rijiju's Swimming Challenge To Manoj Tiwari After His 'Clean Yamuna' Claim",
-     "url": "https://www.news18.com/india/dont-you-think-kiren-rijijus-swimming-challenge-to-manoj-tiwari-after-his-clean-yamuna-claim-ws-lrt-10404336.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T04:34:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group"
+    "outlet:NPR"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261030-Q135635",
@@ -2105,6 +2669,37 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q124155126",
+   "title": "Glynn Simmons",
+   "fame": 7934,
+   "views": 7934,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-29"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q124155126",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 50000,
@@ -2139,25 +2734,26 @@
   }
  ],
  "notes": [
-  "outlets: 1423 headlines from 31 feeds (19 owners), 20 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-helicopter-aviation, nw-20261029-bhutan-flood",
-  "explainers: 7 kh- stories (on): kh-20261030-Q10218, kh-20261030-Q4746875, kh-20261030-Q51403327, kh-20261030-Q502531; dropped: explainer 'Air Marshal Inderpal Singh Walia appointed IAF vice-chief': no name to tell it by; explainer Credits BJP: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1422 headlines from 31 feeds (19 owners), 29 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-helicopter-aviation, nw-20261029-bhutan-flood",
+  "explainers: 8 kh- stories (on): kh-20261030-Q10218, kh-20261030-Q4746875, kh-20261030-Q502531, kh-20261030-Q2364111; dropped: explainer 'Air Marshal Inderpal Singh Walia appointed IAF vice-chief': no name to tell it by; explainer CEC Gyanesh Kumar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
-  "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again"
+  "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q2339941: Orbitwire published (wk-Q2339941), not high-profile enough to tell again"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1423,
+  "headlines": 1422,
   "feeds": 31,
   "owners": 19,
-  "matched": 20,
-  "corroborated": 9
+  "matched": 29,
+  "corroborated": 11
  },
  "emerging": [
   {
@@ -2168,7 +2764,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T16:28:02.988736+00:00",
+   "news_at": "2026-10-30T16:41:46.746131+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -2205,7 +2801,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T16:28:02.988736+00:00"
+     "at": "2026-10-30T16:41:46.746131+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -2289,15 +2885,15 @@
    "article": null,
    "top": {
     "IN": 1,
-    "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 14
+    "IN-hi": 2,
+    "IN-nation": 2,
+    "IN-hi-nation": 16
    },
-   "top_score": 1.905,
+   "top_score": 1.835,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Rescue operations on after Indian helicopter crashes in Himalayan state",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
+    "ECI extends SIR deadline in six States including Delhi"
    ],
    "hindi_owners": [
     "BBC",
@@ -2400,12 +2996,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 6
+    "IN-nation": 16
    },
-   "top_score": 0.45,
+   "top_score": 0.15,
    "top_headlines": [
-    "Glacial lake outburst in Bhutan triggers flood alert in northern West Bengal, Assam",
-    "Parts of Delhi under IMD red alert for rain, cloudy skies may delay moon sighting on Karwa Chauth | India News"
+    "Glacial lake outburst in Bhutan triggers flood alert in northern West Bengal, Assam"
    ],
    "hindi_owners": []
   }
@@ -2449,7 +3044,7 @@
     "'IDBI Bank Handed To Us In Bad Shape': Sitharaman Defends Deal, Hits Back At Rahul Gandhi",
     "Finance Minister Nirmala Sitharaman Hits Back at Rahul Gandhi Over IDBI Bank Sale | News18",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_headlines": [
     "राहुल गांधी की पंजाब रैली के जवाब में BJP का ‘सिख कॉन्क्लेव’, 1984 दंगों को लेकर कांग्रेस को घेरने की तैयारी",
@@ -2516,21 +3111,20 @@
     "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "google-news:'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe",
+    "google-news:'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally",
     "google-news:Congress Minister Defends SIR Deletions In Karnataka, BJP Jabs Rahul Gandhi"
    ],
    "top": {
-    "IN": 3,
+    "IN": 8,
     "IN-hi": 10,
-    "IN-nation": 4,
+    "IN-nation": 3,
     "IN-hi-nation": 5
    },
-   "top_score": 1.67,
+   "top_score": 1.435,
    "top_headlines": [
-    "राहुल गांधी को 12 से ज्यादा मार्केट एसोसिएशन का लेटर, 1 नवंबर की रैली रद्द करने की मांग",
-    "INDIA bloc's 'public impeachment' of CEC Gyanesh Kumar at 4 pm",
+    "राहुल गांधी के समर्थन में खुलकर उतरे शशि थरूर, बोले- अब चुप नहीं रह सकते; दिल्ली पहुंचने की अपील",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -2564,10 +3158,11 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "TV9 Network",
-    "NDTV"
+    "NDTV",
+    "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 350000,
+   "news": 350000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2639,169 +3234,24 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:TV9 Network",
     "outlet:NDTV",
+    "outlet:Amar Ujala",
     "google-news:4 BJP leaders backed Akali Dal pact even when Amit Shah was against it",
-    "google-news:'अंगद का पैर है भाजपा सरकार, UP से कोई हिला नहीं सकता', अमित शाह ने लखनऊ से विपक्ष को दिया साफ संदेश",
-    "google-news:'चेहरे हटाओ, सिर्फ काम दिखाओ', अमित शाह की एंट्री से पहले UP BJP का बड़ा फरमान, नेतागिरी का पोस्टर वॉर बंद"
+    "google-news:'अंगद का पैर है भाजपा सरकार, UP से कोई हिला नहीं सकता', अमित शाह ने लखनऊ से विपक्ष को दिया साफ संदेश"
    ],
    "top": {
-    "IN-nation": 4,
-    "IN-hi-nation": 12
+    "IN": 8,
+    "IN-nation": 3
    },
-   "top_score": 0.645,
+   "top_score": 0.92,
    "top_headlines": [
-    "'चेहरे हटाओ, सिर्फ काम दिखाओ', अमित शाह की एंट्री से पहले UP BJP का बड़ा फरमान, नेतागिरी का पोस्टर वॉर बंद",
     "INDIA bloc's 'public impeachment' of CEC postponed to Oct. 31 due to rain, Rahul Gandhi says | Highlights",
-    "'20 markets, Rs 12,000cr trade at stake': Delhi traders urge Sonia Gandhi to defer Rahul Gandhi's Novembe"
+    "'Lockdown-like gridlock': Delhi traders urge Sonia Gandhi to reschedule Rahul Gandhi's November 1 rally"
    ],
    "hindi_owners": [
     "TV9 Network",
     "Network18",
     "HT Media"
    ]
-  },
-  {
-   "id": "kh-20261030-Q51403327",
-   "qid": "Q51403327",
-   "title": "Binance",
-   "name": "Binance",
-   "phrase": "Binance",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-   "story_keys": [
-    "biggest",
-    "billion",
-    "crypto",
-    "exchange",
-    "freeze",
-    "hack",
-    "heist",
-    "history",
-    "security"
-   ],
-   "date": "2026-10-30",
-   "news_at": "2026-10-30T15:37:00+00:00",
-   "owners": [
-    "HT Media",
-    "Al Jazeera Media Network",
-    "The Hindu Group",
-    "NDTV",
-    "France Médias Monde",
-    "Deutsche Welle",
-    "NPR"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-    "Crypto exchange Binance freezes assets after $6.3 billion security breach",
-    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
-    "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
-    "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
-    "Binance crypto exchange suspends trades over North Korea-linked hack"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
-     "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T15:37:00+00:00"
-    },
-    {
-     "title": "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
-     "url": "https://www.france24.com/en/video/20261030-biggest-hack-in-history-cryptocurrency-giant-binance-loses-6-3-billion",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T15:34:46+00:00"
-    },
-    {
-     "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
-     "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T13:01:22+00:00"
-    },
-    {
-     "title": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
-     "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-10-30T12:38:47+00:00"
-    },
-    {
-     "title": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
-     "url": "https://www.ndtv.com/india-news/north-korea-linked-to-6-3-billion-binance-hack-in-biggest-crypto-heist-ever-12259950#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T14:08:28+00:00"
-    },
-    {
-     "title": "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
-     "url": "https://www.thehindu.com/sci-tech/technology/binance-crypto-exchange-confirms-major-hack-more-than-25-billion-frozen/article71643509.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T13:28:38+00:00"
-    },
-    {
-     "title": "Crypto exchange Binance freezes assets after $6.3 billion security breach",
-     "url": "https://www.livemint.com/news/crypto-exchange-binance-freezes-assets-after-6-3-billion-security-breach-11793335066186.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T04:46:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:NPR",
-    "google-news:Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261030-Q502531",
@@ -2903,6 +3353,248 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261030-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+   "story_keys": [
+    "action'",
+    "credit",
+    "improve",
+    "rain",
+    "targeted"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T16:02:04+00:00",
+   "owners": [
+    "HT Media",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Network18"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+    "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+    "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+    "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's AQI Sees Sharp Improvement After Rain; Minister Sirsa Credits BJP Govt's 'Targeted Action'",
+     "url": "https://www.news18.com/cities/new-delhi-news/delhi-air-quality-aqi-satisfactory-rain-manjinder-sirsa-10405722.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T16:02:04+00:00"
+    },
+    {
+     "title": "Two days of rain bring Delhi’s AQI down to 60; minister credits ‘targeted action’",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/two-days-of-rain-bring-delhis-aqi-down-to-60-minister-credits-targeted-action-for-cleaner-air/articleshow/135367564.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T15:14:04+00:00"
+    },
+    {
+     "title": "Delhi AQI improves to 93 after rain, BJP minister credits 'targeted action'",
+     "url": "https://www.indiatoday.in/cities/delhi/story/delhi-air-quality-improves-satisfactory-heavy-rain-imd-red-alert-manjinder-sirsa-bjp-3028765-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T14:25:25+00:00"
+    },
+    {
+     "title": "Gurugram: Overnight rainfall improves AQI; waterlogging leaves commuters stranded",
+     "url": "https://www.hindustantimes.com/india-news/gurugram-overnight-rainfall-improves-aqi-waterlogging-leaves-commuters-stranded-101793346602240.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T07:50:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "google-news:Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "Delhi-NCR feels winter chill after overnight rain, AQI improves to 'moderate'"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261030-Q51403327",
+   "qid": "Q51403327",
+   "title": "Binance",
+   "name": "Binance",
+   "phrase": "Binance",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+   "story_keys": [
+    "biggest",
+    "billion",
+    "crypto",
+    "exchange",
+    "freeze",
+    "hack",
+    "heist",
+    "history",
+    "security"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T15:37:00+00:00",
+   "owners": [
+    "HT Media",
+    "Al Jazeera Media Network",
+    "The Hindu Group",
+    "NDTV",
+    "France Médias Monde",
+    "Deutsche Welle",
+    "NPR"
+   ],
+   "fame": 175000,
+   "news": 175000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+    "Crypto exchange Binance freezes assets after $6.3 billion security breach",
+    "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
+    "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
+    "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
+    "Binance crypto exchange suspends trades over North Korea-linked hack"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
+     "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T15:37:00+00:00"
+    },
+    {
+     "title": "Biggest hack in history: Cryptocurrency giant Binance loses $6.3 billion",
+     "url": "https://www.france24.com/en/video/20261030-biggest-hack-in-history-cryptocurrency-giant-binance-loses-6-3-billion",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T15:34:46+00:00"
+    },
+    {
+     "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+     "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T13:01:22+00:00"
+    },
+    {
+     "title": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know",
+     "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-10-30T12:38:47+00:00"
+    },
+    {
+     "title": "North Korea Linked To $6.3 Billion Binance Hack In Biggest Crypto Heist Ever",
+     "url": "https://www.ndtv.com/india-news/north-korea-linked-to-6-3-billion-binance-hack-in-biggest-crypto-heist-ever-12259950#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T14:08:28+00:00"
+    },
+    {
+     "title": "Crypto platform Binance freezes $3 billion worth of funds after “security issue”",
+     "url": "https://www.thehindu.com/sci-tech/technology/binance-crypto-exchange-confirms-major-hack-more-than-25-billion-frozen/article71643509.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T13:28:38+00:00"
+    },
+    {
+     "title": "Crypto exchange Binance freezes assets after $6.3 billion security breach",
+     "url": "https://www.livemint.com/news/crypto-exchange-binance-freezes-assets-after-6-3-billion-security-breach-11793335066186.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T04:46:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Al Jazeera Media Network",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:NPR"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261030-Q6751197",
