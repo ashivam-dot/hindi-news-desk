@@ -1,5 +1,5 @@
 {
- "at": "2026-10-30T17:10:08+00:00",
+ "at": "2026-10-30T17:24:29+00:00",
  "trending": [
   {
    "qid": "Q16296",
@@ -199,13 +199,16 @@
     "crypto",
     "exchange",
     "freeze",
+    "giant",
     "hack",
     "heist",
     "history",
-    "security"
+    "linked",
+    "security",
+    "stolen"
    ],
    "date": "2026-10-30",
-   "news_at": "2026-10-30T15:37:00+00:00",
+   "news_at": "2026-10-30T16:48:12+00:00",
    "owners": [
     "HT Media",
     "Al Jazeera Media Network",
@@ -213,10 +216,11 @@
     "NDTV",
     "France Médias Monde",
     "Deutsche Welle",
+    "BBC",
     "NPR"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -234,6 +238,16 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+     "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T16:48:12+00:00"
+    },
     {
      "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
      "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
@@ -312,6 +326,7 @@
     "outlet:NDTV",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle",
+    "outlet:BBC",
     "outlet:NPR",
     "google-news:$6 billion Binance hack sends bitcoin, ether tumbling; Standard Chartered expects more pain"
    ],
@@ -329,11 +344,11 @@
   {
    "qid": "Q4834146",
    "title": "B. P. Singh",
-   "fame": 278388,
+   "fame": 277388,
    "views": 27388,
-   "traffic": 1000,
+   "traffic": 0,
    "news": 250000,
-   "news_at": "2026-10-30T17:10:40.544561+00:00",
+   "news_at": "2026-10-30T17:25:02.156885+00:00",
    "headlines": [
     "Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme...",
     "AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
@@ -351,7 +366,6 @@
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
     "wikipedia-top-2026-10-29",
-    "google-trends-IN:uditi singh",
     "google-news:Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme...",
     "google-news:AIR MARSHAL INDERPAL SINGH WALIA APPOINTED AS THE VICE CHIEF OF THE AIR STAFF",
     "google-news:Shivraj Singh Chouhan's mother Kashi Bai dies at 76",
@@ -377,7 +391,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T17:10:40.544561+00:00"
+     "at": "2026-10-30T17:25:02.156885+00:00"
     },
     {
      "title": "Shivraj Singh Chouhan's mother Kashi Bai dies at 76",
@@ -455,9 +469,9 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 13
+    "IN-nation": 10
    },
-   "top_score": 0.24,
+   "top_score": 0.33,
    "top_headlines": [
     "Twisha Sharma Case | Former Judge Giribala Singh Likely To Influence Trial In MP : CBI Tells Supreme..."
    ],
@@ -550,13 +564,9 @@
     "outlet:The Hindu Group",
     "google-news:India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
    ],
-   "top": {
-    "IN-nation": 18
-   },
-   "top_score": 0.09,
-   "top_headlines": [
-    "India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -668,7 +678,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T17:10:40.544561+00:00",
+   "news_at": "2026-10-30T17:25:02.156885+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -705,7 +715,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T17:10:40.544561+00:00"
+     "at": "2026-10-30T17:25:02.156885+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -716,6 +726,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-10-30T15:06:05+00:00"
+    },
+    {
+     "title": "Char Dham trip ends in tragedy for five Bengaluru friends as helicopter crashes in Chamoli",
+     "url": "https://www.hindustantimes.com/india-news/badrinath-helicopter-crash-char-dham-trip-ends-in-tragedy-for-five-bengaluru-friends-chamoli-chopper-accident-101793375092918.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T17:01:55+00:00"
     },
     {
      "title": "Bengaluru crime branch official, lawyers, Delhi pilot among 6 killed in Uttarakhand helicopter crash",
@@ -766,16 +786,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-30T11:17:48+00:00"
-    },
-    {
-     "title": "Uttarakhand Joshimath Helicopter Crash Updates: Karnataka Cop Among 6 On Helicopter That Crashed In Uttarakhand",
-     "url": "https://www.ndtv.com/india-news/uttarakhand-chamoli-helicopter-crash-live-updates-6-people-were-on-helicopter-that-went-missing-in-uttarakhand-badrinath-hathi-parvat-12258345#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:11:34+00:00"
     }
    ],
    "via": [
@@ -796,15 +806,14 @@
    "top_score": 1.89,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
+    "ECI extends SIR deadline in six States including Delhi"
    ],
    "hindi_owners": [
     "TV9 Network",
     "BBC",
     "NDTV"
-   ],
-   "audience": "india",
-   "lane": "breaking"
+   ]
   },
   {
    "id": "kh-20261030-Q2364111",
@@ -1026,9 +1035,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 15
+    "IN-nation": 13
    },
-   "top_score": 0.18,
+   "top_score": 0.24,
    "top_headlines": [
     "4,000 moved to safety in Bengal after Bhutan glacial lake outburst triggers flood alert"
    ],
@@ -1194,9 +1203,13 @@
     "outlet:HT Media",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "Noel Tata, N Chandrasekaran hold secret meeting to resolve differences; talks end inconclusively: Report"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -1364,7 +1377,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-30T17:10:08.306009+00:00",
+   "news_at": "2026-10-30T17:24:29.689479+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1632,152 +1645,6 @@
  ],
  "candidates": [
   {
-   "id": "nw-20261030-helicopter-aviation",
-   "qid": null,
-   "title": "Helicopter belonging to M/S Transbharat Aviation Pvt Ltd crashes at Joshimath in Uttarakhand",
-   "name": "Helicopter",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-10-30",
-   "news_at": "2026-10-30T17:10:40.544561+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "NDTV",
-    "BBC",
-    "Government of India"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Badrinath helicopter crash: 6 killed as chopper crashes near Joshimath; CM Dhami orders probe",
-    "Helicopter flying from Badrinath lost communication, tracking over Joshimath valley moments before crash",
-    "Uttarakhand Helicopter Lost Communication, Tracking Over Joshimath Valley Before Crash",
-    "Joshimath Helicopter Crash: Debris Of Crash Located By Rescue Team, Smoke And Fire Spotted | News18",
-    "Badrinath helicopter crash: Six on board, including pilot, dies, bodies found | What we know"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN",
-    "world"
-   ],
-   "region": "world",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Helicopter belonging to M/S Transbharat Aviation Pvt Ltd crashes at Joshimath in Uttarakhand",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2330663",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-10-30T17:10:40.544561+00:00"
-    },
-    {
-     "title": "Six dead after helicopter crashes in northern Indian state",
-     "url": "https://www.bbc.co.uk/news/articles/cr93zxyn9eqeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-30T15:06:05+00:00"
-    },
-    {
-     "title": "Bengaluru crime branch official, lawyers, Delhi pilot among 6 killed in Uttarakhand helicopter crash",
-     "url": "https://www.hindustantimes.com/india-news/bengaluru-crime-branch-official-lawyers-delhi-pilot-among-6-killed-in-uttarakhand-helicopter-crash-101793369443071.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T14:26:00+00:00"
-    },
-    {
-     "title": "'Helicopter Crashed Within 66 Minutes': Uttarakhand's Badrinath-Dehradun Route & The Trouble In The Air",
-     "url": "https://www.news18.com/explainers/uttarakhand-chopper-crash-what-happened-in-66-mins-after-takeoff-why-badrinath-joshimath-dehradun-is-among-most-dangerous-ws-klrt-10405495.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T13:53:07+00:00"
-    },
-    {
-     "title": "Uttarakhand Helicopter Crash: All Six On Board Confirmed Dead; AAIB To Investigate",
-     "url": "https://www.news18.com/india/uttarakhand-helicopter-crash-5-passengers-pilot-confirmed-dead-charred-bodies-found-10405357.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:44:41+00:00"
-    },
-    {
-     "title": "Uttarakhand Helicopter Crash Kills 6: All Passengers From Bengaluru, Check Names",
-     "url": "https://www.news18.com/india/uttarakhand-helicopter-crash-check-names-of-5-passengers-pilot-on-board-ws-r-10405178.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:41:43+00:00"
-    },
-    {
-     "title": "Badrinath helicopter crash: A look at 10 chopper mishaps in Uttarakhand over the years",
-     "url": "https://www.hindustantimes.com/india-news/uttarakhand-badrinath-helicopter-crash-chamoli-joshimath-a-look-at-past-mishaps-in-the-state-trans-bharat-aviation-toll-101793356239519.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:17:48+00:00"
-    },
-    {
-     "title": "Uttarakhand Joshimath Helicopter Crash Updates: Karnataka Cop Among 6 On Helicopter That Crashed In Uttarakhand",
-     "url": "https://www.ndtv.com/india-news/uttarakhand-chamoli-helicopter-crash-live-updates-6-people-were-on-helicopter-that-went-missing-in-uttarakhand-badrinath-hathi-parvat-12258345#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:11:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "outlet:BBC",
-    "outlet:Government of India"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1,
-    "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 15
-   },
-   "top_score": 1.89,
-   "top_headlines": [
-    "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
-   ],
-   "hindi_owners": [
-    "TV9 Network",
-    "BBC",
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "id": "kh-20261030-Q51403327",
    "qid": "Q51403327",
    "title": "Binance",
@@ -1794,13 +1661,16 @@
     "crypto",
     "exchange",
     "freeze",
+    "giant",
     "hack",
     "heist",
     "history",
-    "security"
+    "linked",
+    "security",
+    "stolen"
    ],
    "date": "2026-10-30",
-   "news_at": "2026-10-30T15:37:00+00:00",
+   "news_at": "2026-10-30T16:48:12+00:00",
    "owners": [
     "HT Media",
     "Al Jazeera Media Network",
@@ -1808,10 +1678,11 @@
     "NDTV",
     "France Médias Monde",
     "Deutsche Welle",
+    "BBC",
     "NPR"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1829,6 +1700,16 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+     "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T16:48:12+00:00"
+    },
     {
      "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
      "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
@@ -1907,6 +1788,7 @@
     "outlet:NDTV",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle",
+    "outlet:BBC",
     "outlet:NPR",
     "google-news:$6 billion Binance hack sends bitcoin, ether tumbling; Standard Chartered expects more pain"
    ],
@@ -2193,15 +2075,96 @@
     "outlet:The Hindu Group",
     "google-news:India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
    ],
-   "top": {
-    "IN-nation": 18
-   },
-   "top_score": 0.09,
-   "top_headlines": [
-    "India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261030-Q135635",
+   "qid": "Q135635",
+   "title": "Boston Consulting Group",
+   "name": "Boston Consulting Group",
+   "phrase": "Boston Consulting Group",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
+   "story_keys": [
+    "crore",
+    "face"
+   ],
+   "date": "2026-10-30",
+   "news_at": "2026-10-30T12:44:06+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
+    "Tech services firms face a talent decision, not a shortage, in $100-200 billion AI race, says Boston Consulting Group",
+    "Noel Tata seeks board vote on Tata Sons rejig, Rs 25,000 crore SP Group payout"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Noel Tata seeks board vote on Tata Sons rejig, Rs 25,000 crore SP Group payout",
+     "url": "https://www.indiatoday.in/business/story/tata-sons-board-vote-noel-tata-rejig-25000-crore-sp-group-payout-3028709-2026-10-30?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T12:44:06+00:00"
+    },
+    {
+     "title": "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
+     "url": "https://www.livemint.com/news/india/future-groups-biyani-brothers-face-lenders-800-crore-recovery-push-11793347642018.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T11:33:46+00:00"
+    },
+    {
+     "title": "Tech services firms face a talent decision, not a shortage, in $100-200 billion AI race, says Boston Consulting Group",
+     "url": "https://www.thehindu.com/business/tech-services-firms-face-a-talent-decision-not-a-shortage-in-100-200-billion-ai-race-says-boston-consulting-group/article71641900.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T04:36:38+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:India Today Group"
+   ],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "Noel Tata, N Chandrasekaran hold secret meeting to resolve differences; talks end inconclusively: Report"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -2299,87 +2262,6 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261030-Q135635",
-   "qid": "Q135635",
-   "title": "Boston Consulting Group",
-   "name": "Boston Consulting Group",
-   "phrase": "Boston Consulting Group",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
-   "story_keys": [
-    "crore",
-    "face"
-   ],
-   "date": "2026-10-30",
-   "news_at": "2026-10-30T12:44:06+00:00",
-   "owners": [
-    "The Hindu Group",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
-    "Tech services firms face a talent decision, not a shortage, in $100-200 billion AI race, says Boston Consulting Group",
-    "Noel Tata seeks board vote on Tata Sons rejig, Rs 25,000 crore SP Group payout"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Noel Tata seeks board vote on Tata Sons rejig, Rs 25,000 crore SP Group payout",
-     "url": "https://www.indiatoday.in/business/story/tata-sons-board-vote-noel-tata-rejig-25000-crore-sp-group-payout-3028709-2026-10-30?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T12:44:06+00:00"
-    },
-    {
-     "title": "Future Group's Biyani brothers face lenders' ₹800 crore recovery push",
-     "url": "https://www.livemint.com/news/india/future-groups-biyani-brothers-face-lenders-800-crore-recovery-push-11793347642018.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:33:46+00:00"
-    },
-    {
-     "title": "Tech services firms face a talent decision, not a shortage, in $100-200 billion AI race, says Boston Consulting Group",
-     "url": "https://www.thehindu.com/business/tech-services-firms-face-a-talent-decision-not-a-shortage-in-100-200-billion-ai-race-says-boston-consulting-group/article71641900.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T04:36:38+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -2510,7 +2392,7 @@
   }
  ],
  "notes": [
-  "outlets: 1425 headlines from 31 feeds (19 owners), 24 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-helicopter-aviation, nw-20261029-bhutan-flood",
+  "outlets: 1425 headlines from 31 feeds (19 owners), 26 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-helicopter-aviation, nw-20261029-bhutan-flood",
   "explainers: 7 kh- stories (on): kh-20261030-Q4746875, kh-20261030-Q51403327, kh-20261030-Q320863, kh-20261030-Q502531; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer 'Air Marshal Inderpal Singh Walia appointed IAF vice-chief': no name to tell it by",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
@@ -2528,7 +2410,7 @@
   "headlines": 1425,
   "feeds": 31,
   "owners": 19,
-  "matched": 24,
+  "matched": 26,
   "corroborated": 11
  },
  "emerging": [
@@ -2540,7 +2422,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-10-30",
-   "news_at": "2026-10-30T17:10:40.544561+00:00",
+   "news_at": "2026-10-30T17:25:02.156885+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -2577,7 +2459,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-10-30T17:10:40.544561+00:00"
+     "at": "2026-10-30T17:25:02.156885+00:00"
     },
     {
      "title": "Six dead after helicopter crashes in northern Indian state",
@@ -2588,6 +2470,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-10-30T15:06:05+00:00"
+    },
+    {
+     "title": "Char Dham trip ends in tragedy for five Bengaluru friends as helicopter crashes in Chamoli",
+     "url": "https://www.hindustantimes.com/india-news/badrinath-helicopter-crash-char-dham-trip-ends-in-tragedy-for-five-bengaluru-friends-chamoli-chopper-accident-101793375092918.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T17:01:55+00:00"
     },
     {
      "title": "Bengaluru crime branch official, lawyers, Delhi pilot among 6 killed in Uttarakhand helicopter crash",
@@ -2638,16 +2530,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-30T11:17:48+00:00"
-    },
-    {
-     "title": "Uttarakhand Joshimath Helicopter Crash Updates: Karnataka Cop Among 6 On Helicopter That Crashed In Uttarakhand",
-     "url": "https://www.ndtv.com/india-news/uttarakhand-chamoli-helicopter-crash-live-updates-6-people-were-on-helicopter-that-went-missing-in-uttarakhand-badrinath-hathi-parvat-12258345#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T11:11:34+00:00"
     }
    ],
    "via": [
@@ -2668,15 +2550,14 @@
    "top_score": 1.89,
    "top_headlines": [
     "बद्रीनाथ से देहरादून आ रहा हेलीकॉप्टर क्रैश, मारे गए यात्रियों के बारे में क्या पता है",
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
+    "ECI extends SIR deadline in six States including Delhi"
    ],
    "hindi_owners": [
     "TV9 Network",
     "BBC",
     "NDTV"
-   ],
-   "audience": "india",
-   "lane": "breaking"
+   ]
   },
   {
    "id": "nw-20261029-bhutan-flood",
@@ -2772,9 +2653,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 15
+    "IN-nation": 13
    },
-   "top_score": 0.18,
+   "top_score": 0.24,
    "top_headlines": [
     "4,000 moved to safety in Bengal after Bhutan glacial lake outburst triggers flood alert"
    ],
@@ -2915,13 +2796,16 @@
     "crypto",
     "exchange",
     "freeze",
+    "giant",
     "hack",
     "heist",
     "history",
-    "security"
+    "linked",
+    "security",
+    "stolen"
    ],
    "date": "2026-10-30",
-   "news_at": "2026-10-30T15:37:00+00:00",
+   "news_at": "2026-10-30T16:48:12+00:00",
    "owners": [
     "HT Media",
     "Al Jazeera Media Network",
@@ -2929,10 +2813,11 @@
     "NDTV",
     "France Médias Monde",
     "Deutsche Welle",
+    "BBC",
     "NPR"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2950,6 +2835,16 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+     "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-30T16:48:12+00:00"
+    },
     {
      "title": "Binance crypto exchange suspends trades over North Korea-linked hack",
      "url": "https://www.dw.com/en/binance-crypto-exchange-suspends-trades-over-north-korea-linked-hack/a-79803280?maca=en-rss-en-all-1573-rdf",
@@ -3028,6 +2923,7 @@
     "outlet:NDTV",
     "outlet:France Médias Monde",
     "outlet:Deutsche Welle",
+    "outlet:BBC",
     "outlet:NPR",
     "google-news:$6 billion Binance hack sends bitcoin, ether tumbling; Standard Chartered expects more pain"
    ],
@@ -3129,13 +3025,9 @@
     "outlet:The Hindu Group",
     "google-news:India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
    ],
-   "top": {
-    "IN-nation": 18
-   },
-   "top_score": 0.09,
-   "top_headlines": [
-    "India's Extreme Poverty Drops From 27.1% To 2.6% In 12 Years: World Bank"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -3496,9 +3388,13 @@
     "outlet:HT Media",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "Noel Tata, N Chandrasekaran hold secret meeting to resolve differences; talks end inconclusively: Report"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
