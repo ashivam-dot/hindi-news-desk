@@ -57,6 +57,13 @@ def test_person_ki_pratima_is_the_statue(monkeypatch):
                                                               "Statue of Unity"]
 
 
+def test_ramlila_maidan_is_never_ram_lalla():
+    from desk import hindi
+
+    assert hindi.respell("रामलला मैदान में 1 नवंबर को मार्च") == "रामलीला मैदान में 1 नवंबर को मार्च"
+    assert hindi.respell("अयोध्या में रामलला के दर्शन") == "अयोध्या में रामलला के दर्शन"
+
+
 def test_a_remake_is_not_dropped_for_leaving_the_top_lists():
     from datetime import datetime, timezone
 

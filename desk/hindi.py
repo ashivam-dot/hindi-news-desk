@@ -42,7 +42,9 @@ def ascii_digits(text: str) -> str:
 # or, where Hindi newsrooms all write another one, theirs (ट्रंप in Aaj Tak, ABP and NDTV India; the channel's own
 # titles say ट्रंप).
 SPELLINGS = {"एलोन": "एलन", "ट्रम्प": "ट्रंप", "डॉनल्ड": "डोनाल्ड", "डोनल्ड": "डोनाल्ड", "पुतीन": "पुतिन",
-             "नरेन्द्र": "नरेंद्र"}
+             "नरेन्द्र": "नरेंद्र",
+             # Delhi's ground, never Ram Lalla (the deity): umq2nm_zYgs said "रामलला मैदान" (2026-10-30).
+             "रामलला मैदान": "रामलीला मैदान"}
 _WORD_EDGE = r"(?<![\w\u0900-\u097F])({})(?![\w\u0900-\u097F])"
 
 
