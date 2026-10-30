@@ -343,8 +343,10 @@ told before Wikidata knew it on its `wp-<article title>` id or the article Orbit
   "Banaskantha district") and quiet mode waived the card ceiling. Now `visuals._exact` tries the exact Wikipedia
   title (redirects followed) first, `visuals.statue_of` makes "<person> की प्रतिमा/मूर्ति" the statue itself (Statue
   of Unity, its photos exempt from the no-statue rule for people), and `match.problems` refuses a Short whose voice
-  names someone or something with a photo that never comes on screen, quiet or not. Remade by
-  `remakes/modi-gujarat-kevadia-2026-10-30.json`.
+  names someone or something with a photo that never comes on screen, quiet or not. A remake is never dropped for
+  leaving the top lists (`plan.unpopular`). xkatu15s0c0 was not remade: two hours later only one outlet still
+  reported the Kevadia tribute, so the fact gate (rightly) refused that beat; the 31 Oct event itself is the story
+  that shows Patel and the Statue of Unity.
 - **Full screen, about 30 seconds (owner, 2026-10-21: "My main issue is you are not able to present the video
   properly").** Every story Short uses the full template (`compose.render_full`, `scene.template = "full"`), as BBC
   Hindi, DW Hindi, AJ+ and Aaj Tak's Shorts do: the picture fills the 9:16 frame (a portrait OSM map, a person's
