@@ -1,12 +1,13 @@
 {
- "at": "2026-10-31T01:10:32+00:00",
+ "at": "2026-10-31T01:24:51+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 92 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.176, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.813, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 59.6}, 'category:attack': {'n': 13, 'lift': 1.332, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 28 trending",
-  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 2 owners' new reports on Narendra Modi (504 views before); revisit kh-",
-  "outlets: 1282 headlines from 30 feeds (19 owners), 38 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-badrinath-aviation, nw-20261030-cost-protest",
+  "watch: 15 candidates from 29 trending",
+  "revisit tiger-shroff-2026-10-20 (1075 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 2 owners' new reports on Narendra Modi (544 views before); revisit Q12",
+  "outlets: 1283 headlines from 30 feeds (19 owners), 33 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261030-badrinath-aviation, nw-20261030-cost-protest",
   "explainers: 8 kh- stories (on): kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q10218, kh-20261031-Q320863; dropped: explainer '$6.3bn gone in 20 mins: How North Korean hackers pulled off ': no name to tell it by",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
@@ -14,13 +15,23 @@
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q453730: Orbitwire published (wk-Q453730), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold wp-2026_Uttarakhand_helicopter_crash: outside 07:00-24:00 IST",
-  "hold nw-20261030-badrinath-aviation: outside 07:00-24:00 IST",
-  "hold kh-20261031-Q229058: outside 07:00-24:00 IST",
   "drop kh-20261031-Q51403327: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261031-Q320863: too low in Google News India's top stories (place 0.06, needs 0.35)",
+  "drop kh-20261031-Q320863: too low in Google News India's top stories (place 0.03, needs 0.35)",
   "drop nw-20261030-cost-protest: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261031-Q95: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261031-Q135635: a world statement, politics or diplomacy story with no India connection",
+  "drop wk-Q259559: 110 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Uttarakhand_helicopter_crash, nw-20261030-badrinath-aviation, kh-20261031-Q140632219-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261031-Q229058, kh-20261031-Q320863",
+  "skip wp-2026_Uttarakhand_helicopter_crash: gate: only 0 usable photos of 2026 Uttarakhand helicopter crash on Wikimedia Commons (want 3)",
+  "hold nw-20261030-badrinath-aviation: IndexError: list index out of range",
+  "published kh-20261031-Q229058: https://www.youtube.com/shorts/RDD-MT-OvRY",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "RDD-MT-OvRY",
+  "url": "https://www.youtube.com/shorts/RDD-MT-OvRY",
+  "youtube_title": "भारतीय अंतरिक्ष अनुसंधान संगठन का नया सैटेलाइट लॉन्च #shorts #hindinews",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
