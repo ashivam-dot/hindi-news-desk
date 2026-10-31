@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-31T01:24:51+00:00. Scored Shorts (views at 24 h): 92. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-31T04:43:01+00:00. Scored Shorts (views at 24 h): 92. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 42 views at 24 h.
 Retention: a typical Short is watched 50.8% through; a group's retention is blended into its lift at 0.5.
@@ -20,11 +20,12 @@ Retention: a typical Short is watched 50.8% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261030-Q10218 | 2026-10-30T16:19 | economy | india | naam-niyam | india | 39 | 24 |  |
-| kh-20261030-Q4746875 | 2026-10-30T12:08 | news | india | rajneeti | india | 153 | 74 |  |
-| kh-20261030-Q124883782 | 2026-10-30T09:52 | politics | india | rajneeti | india | 164 | 6 |  |
-| kh-20261030-Q1058 | 2026-10-30T06:18 | news | india | rajneeti | india | 544 | 226 |  |
-| kh-20261029-Q10218 | 2026-10-29T17:34 | news | india | naam-niyam | india | 56 | 41 | 53 |
+| kh-20261031-Q229058 | 2026-10-31T01:51 | science | india | other | india | 1 |  |  |
+| kh-20261030-Q10218 | 2026-10-30T16:19 | economy | india | naam-niyam | india | 43 | 24 |  |
+| kh-20261030-Q4746875 | 2026-10-30T12:08 | news | india | rajneeti | india | 156 | 74 |  |
+| kh-20261030-Q124883782 | 2026-10-30T09:52 | politics | india | rajneeti | india | 185 | 6 |  |
+| kh-20261030-Q1058 | 2026-10-30T06:18 | news | india | rajneeti | india | 554 | 226 |  |
+| kh-20261029-Q10218 | 2026-10-29T17:34 | news | india | naam-niyam | india | 57 | 41 | 53 |
 | kh-20261029-Q140632219-update | 2026-10-29T16:40 | court | india | naam-niyam | india | 74 | 41 | 69 |
 | kh-20261029-Q1185 | 2026-10-29T14:00 | news | india | other | india | 26 | 22 | 26 |
 | kh-20261026-Q37181 | 2026-10-26T16:47 | news | world | naam-niyam | india | 13 |  | 5 |
@@ -49,4 +50,3 @@ Retention: a typical Short is watched 50.8% through; a group's retention is blen
 | nw-20261019-tiger-shroff-attack-incident | 2026-10-21T03:50 | attack | india | sensitive | india | 18 | 16 | 19 |
 | nw-20261019-tiger-shroff-attack-industry | 2026-10-21T03:06 | attack | india | sensitive | india | 44 | 15 | 43 |
 | nw-20261019-tiger-shroff-attack-chase | 2026-10-21T02:21 | attack | india | sensitive | india | 132 | 38 | 115 |
-| nw-20261019-tiger-shroff-attack-family-r2 | 2026-10-21T01:44 | attack | india | sensitive | india | 1075 | 518 | 1065 |
