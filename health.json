@@ -1,33 +1,26 @@
 {
- "at": "2026-10-31T05:41:27+00:00",
+ "at": "2026-10-31T06:11:12+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 24 trending",
-  "revisit Q163225 (657 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 3 owners' new reports on Narendra Modi (554 views before); revisit kh-20261031-Q124883782-update: 4 owners' new reports on Gyanesh Kumar (185 views before); revisit Q140632219 (158 ",
-  "outlets: 1223 headlines from 30 feeds (19 owners), 24 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q320863, kh-20261031-Q131292408; dropped: explainer Andhra Pradesh's Sriharikota: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Nov: no Wikipedia article that can be its centre",
+  "watch: 10 candidates from 27 trending",
+  "outlets: 1259 headlines from 31 feeds (19 owners), 26 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261030-badrinath-aviation",
+  "explainers: 8 kh- stories (on): kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q320863, kh-20261031-Q131292408; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Nov: no Wikipedia article that can be its centre; explainer Ajay Devgn Tiger: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261031-Q51403327: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261031-Q320863: a economy story goes out only near the top of the lists (place 0.73, needs 0.75)",
   "drop kh-20261031-Q221689: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261031-Q320863: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261031-Q16186720: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q4935748: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q7197456: 66 h old and no longer trending live",
-  "drop wk-Q5103870: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q259559: 114 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261031-Q320863",
-  "published kh-20261031-Q131292408: https://www.youtube.com/shorts/urW0hwLW8VA",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261031-Q320863, kh-20261031-Q16186720",
+  "skip wk-Q141921562: gate: only 2 usable photos of Salvadoran military intervention in Haiti on Wikimedia Commons (want 3)",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "urW0hwLW8VA",
-  "url": "https://www.youtube.com/shorts/urW0hwLW8VA",
-  "youtube_title": "थेनी जेल: 17 कैदी फरार, मुख्यमंत्री विजय ने अफसर हटाए #shorts #theni",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
