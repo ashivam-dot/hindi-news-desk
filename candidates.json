@@ -1,31 +1,23 @@
 {
- "at": "2026-10-31T21:58:03+00:00",
+ "at": "2026-10-31T22:12:27+00:00",
  "trending": [
   {
    "qid": "Q16296",
    "title": "Patrick Stewart",
-   "fame": 2132386,
+   "fame": 1882386,
    "views": 1882386,
    "traffic": 0,
-   "news": 250000,
-   "news_at": "2026-10-31T16:00:00+00:00",
-   "headlines": [
-    "Patrick Stewart dies at 86: A look at his three marriages, wife Sunny Ozell, two children and four grandc",
-    "What Patrick Stewart’s ‘brief’ dementia journey reveals about lifespans after diagnosis"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "geos": [
-    "IN",
-    "US"
-   ],
+   "india_link": false,
+   "geos": [],
    "label_hi": "पैट्रिक स्टिवर्ट",
    "via": [
-    "wikipedia-top-2026-10-30",
-    "google-news:Patrick Stewart dies at 86: A look at his three marriages, wife Sunny Ozell, two children and four grandc",
-    "google-news:What Patrick Stewart’s ‘brief’ dementia journey reveals about lifespans after diagnosis"
+    "wikipedia-top-2026-10-30"
    ],
    "owners": [],
    "reports": [],
@@ -500,9 +492,9 @@
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 7
+    "IN-nation": 8
    },
-   "top_score": 0.76,
+   "top_score": 0.745,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
@@ -526,7 +518,7 @@
     "losse"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-10-31T16:32:08+00:00",
+   "news_at": "2026-10-31T22:11:45+00:00",
    "owners": [
     "France Médias Monde",
     "BBC",
@@ -556,7 +548,7 @@
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-31T16:32:08+00:00"
+     "at": "2026-10-31T22:11:45+00:00"
     },
     {
      "title": "Binance hit by 6.3 billion dollar crypto theft",
@@ -930,7 +922,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-10-31T21:58:03.179308+00:00",
+   "news_at": "2026-10-31T22:12:27.495806+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1531,9 +1523,9 @@
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 7
+    "IN-nation": 8
    },
-   "top_score": 0.76,
+   "top_score": 0.745,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
@@ -1557,7 +1549,7 @@
     "losse"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-10-31T16:32:08+00:00",
+   "news_at": "2026-10-31T22:11:45+00:00",
    "owners": [
     "France Médias Monde",
     "BBC",
@@ -1587,7 +1579,7 @@
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-31T16:32:08+00:00"
+     "at": "2026-10-31T22:11:45+00:00"
     },
     {
      "title": "Binance hit by 6.3 billion dollar crypto theft",
@@ -1946,8 +1938,8 @@
  ],
  "notes": [
   "revisit Q124883782: last Short 7 h ago; revisit kh-20261101-Q163225-update: 2 owners' new reports on Sonia Gandhi (657 views before); revisit Q1058 (641 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit Q4746875 (172 views): 0 owners reported new news on Amit Shah since its la",
-  "outlets: 1264 headlines from 31 feeds (19 owners), 24 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261101-Q124883782, kh-20261101-Q2745305, kh-20261101-Q229058, kh-20261101-Q51403327; dropped: explainer Ramlila Maidan: fewer than 3 owners' headlines name it and the story; explainer Arnab’ Andhra Pradesh / November: no Wikipedia article that can be its centre; explainer Pat Cummins: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1259 headlines from 31 feeds (19 owners), 25 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261101-Q124883782, kh-20261101-Q2745305, kh-20261101-Q229058, kh-20261101-Q51403327; dropped: explainer Ramlila Maidan: fewer than 3 owners' headlines name it and the story; explainer After Arnab’ Andhra / November: no Wikipedia article that can be its centre",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
@@ -1959,10 +1951,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1264,
+  "headlines": 1259,
   "feeds": 31,
   "owners": 19,
-  "matched": 24,
+  "matched": 25,
   "corroborated": 8
  },
  "emerging": [],
@@ -2316,9 +2308,9 @@
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 7
+    "IN-nation": 8
    },
-   "top_score": 0.76,
+   "top_score": 0.745,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
@@ -2342,7 +2334,7 @@
     "losse"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-10-31T16:32:08+00:00",
+   "news_at": "2026-10-31T22:11:45+00:00",
    "owners": [
     "France Médias Monde",
     "BBC",
@@ -2372,7 +2364,7 @@
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-10-31T16:32:08+00:00"
+     "at": "2026-10-31T22:11:45+00:00"
     },
     {
      "title": "Binance hit by 6.3 billion dollar crypto theft",
