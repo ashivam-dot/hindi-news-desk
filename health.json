@@ -1,14 +1,13 @@
 {
- "at": "2026-10-31T04:43:01+00:00",
+ "at": "2026-10-31T05:41:27+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 92 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.176, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.813, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 59.6}, 'category:attack': {'n': 13, 'lift': 1.332, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 12 candidates from 24 trending",
-  "revisit tiger-shroff-2026-10-20 (840 views): 1 owners reported new news on Tiger Shroff since its last Short; revisit Q163225 (657 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 2 owners' new reports on Narendra Modi (554 views before); revisit kh-2",
-  "outlets: 1250 headlines from 31 feeds (19 owners), 30 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261030-badrinath-aviation",
-  "explainers: 7 kh- stories (on): kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q320863, kh-20261031-Q221689; dropped: explainer Nov: no Wikipedia article that can be its centre; explainer SRK Ajay Devgn / SRK Ajay Devgn: no Wikipedia article that can be its centre",
+  "watch: 11 candidates from 24 trending",
+  "revisit Q163225 (657 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit kh-20261031-Q1058-update: 3 owners' new reports on Narendra Modi (554 views before); revisit kh-20261031-Q124883782-update: 4 owners' new reports on Gyanesh Kumar (185 views before); revisit Q140632219 (158 ",
+  "outlets: 1223 headlines from 30 feeds (19 owners), 24 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261031-Q124883782, kh-20261031-Q51403327, kh-20261031-Q320863, kh-20261031-Q131292408; dropped: explainer Andhra Pradesh's Sriharikota: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Nov: no Wikipedia article that can be its centre",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
@@ -17,15 +16,18 @@
   "drop kh-20261031-Q51403327: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261031-Q221689: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261031-Q320863: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q7197456: 65 h old and no longer trending live",
+  "drop wk-Q7197456: 66 h old and no longer trending live",
   "drop wk-Q5103870: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q259559: 113 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Uttarakhand_helicopter_crash; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261031-Q229058-p2, kh-20261031-Q320863",
-  "skip wp-2026_Uttarakhand_helicopter_crash: gate: only 1 usable photos of 2026 Uttarakhand helicopter crash on Wikimedia Commons (want 3)",
-  "skip kh-20261031-Q229058-p2: gate: no draft passed the fact checks: beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: नरेंद्र मोदी, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
-  "skip kh-20261031-Q124883782-update: gate: no draft passed the fact checks: these numbers are not in the sources: 1 (1 only in one outlet's report: one outlet is not enough); draft wording: 1. Omit these unsupported numeric claims from narration, title, captions and labels. Keep the independently supported event and attribution. Never guess a replacement amount, change its unit or counted noun, or turn an unsupported amount into a vague claim about its size.; Mallikarjun ",
-  "later kh-20261031-Q1058-update: this run already wrote 2 scripts",
-  "nothing eligible to publish",
+  "drop wk-Q259559: 114 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261031-Q320863",
+  "published kh-20261031-Q131292408: https://www.youtube.com/shorts/urW0hwLW8VA",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "urW0hwLW8VA",
+  "url": "https://www.youtube.com/shorts/urW0hwLW8VA",
+  "youtube_title": "थेनी जेल: 17 कैदी फरार, मुख्यमंत्री विजय ने अफसर हटाए #shorts #theni",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
