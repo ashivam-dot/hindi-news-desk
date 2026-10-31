@@ -785,9 +785,9 @@
   "at": "2026-10-30T18:26:04+00:00"
  },
  "wp-2026_Uttarakhand_helicopter_crash": {
-  "count": 2,
-  "reason": "gate: only 0 usable photos of 2026 Uttarakhand helicopter crash on Wikimedia Commons (want 3)",
-  "at": "2026-10-31T02:17:23+00:00"
+  "count": 3,
+  "reason": "gate: only 1 usable photos of 2026 Uttarakhand helicopter crash on Wikimedia Commons (want 3)",
+  "at": "2026-10-31T02:50:08+00:00"
  },
  "nw-20261030-badrinath-aviation": {
   "count": 2,
@@ -795,8 +795,13 @@
   "at": "2026-10-31T02:28:01+00:00"
  },
  "kh-20261031-Q79883": {
+  "count": 2,
+  "reason": "TakeRejected: voice: line 5 never read cleanly: [{'beat': 4, 'try': 1, 'model': 'gemini-3.8-flash-tts', 'coverage': 0.692, 'clean': True, 'stray': 0.2}, {'beat': 4, 'try': 2, 'model': 'gemini-3.8-flash-tts', 'coverage': 0.692, 'clean': True, 'stray': 0.12}, {'beat': 4, 'try': 3, 'model': 'gemini-3.8",
+  "at": "2026-10-31T03:03:13+00:00"
+ },
+ "kh-20261031-Q207105": {
   "count": 1,
-  "reason": "gate: no draft passed the fact checks: the script has 64 words; it must have 45 to 58; cut about 12 spoken words to aim for 52 in the whole report. Current beat word counts: 9, 11, 10, 11, 10, 13. Preserve source attribution and the essential supported facts; change wording, never invent facts or ad",
-  "at": "2026-10-31T02:43:14+00:00"
+  "reason": "gate: no draft passed the fact checks: beats 3,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: ओलेश्की, मेलानिया ट्रंप, अनापा, याना लान्त्रातोवा. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES al",
+  "at": "2026-10-31T03:15:18+00:00"
  }
 }
