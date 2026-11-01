@@ -1,23 +1,28 @@
 {
- "at": "2026-11-01T17:46:05+00:00",
+ "at": "2026-11-01T18:01:58+00:00",
  "trending": [
   {
    "qid": "Q16296",
    "title": "Patrick Stewart",
-   "fame": 450119,
+   "fame": 575119,
    "views": 450119,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-11-01T05:11:00+00:00",
+   "headlines": [
+    "‘SNL’ Pays Tribute To Patrick Stewart With Clip From His 1994 Episode"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": "पैट्रिक स्टिवर्ट",
    "via": [
-    "wikipedia-top-2026-10-31"
+    "wikipedia-top-2026-10-31",
+    "google-news:‘SNL’ Pays Tribute To Patrick Stewart With Clip From His 1994 Episode"
    ],
    "owners": [],
    "reports": [],
@@ -28,6 +33,89 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q644401",
+   "title": "Sanjay Gupta (director)",
+   "fame": 243695,
+   "views": 168695,
+   "traffic": 0,
+   "news": 75000,
+   "news_at": "2026-10-31T17:45:29+00:00",
+   "headlines": [
+    "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+    "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed"
+   ],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "संजय गुप्ता",
+   "via": [
+    "wikipedia-top-2026-10-31",
+    "google-news:Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+    "google-news:How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
+    "google-news:पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि",
+    "outlet:ABP Group",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "ABP Group",
+    "HT Media",
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि",
+     "url": "https://www.abplive.com/entertainment/bollywood/sanjay-gupta-cremated-abhishek-bachchan-rajpal-yadav-these-bollywood-celebs-pay-tribute-3209397",
+     "outlet": "ABP Live",
+     "outlet_hi": "एबीपी लाइव",
+     "owner": "ABP Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-31T17:45:29+00:00"
+    },
+    {
+     "title": "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+     "url": "https://www.hindustantimes.com/india-news/evening-news-brief-october-31-oppn-charges-against-cec-gyanesh-kumar-sanjay-gupta-death-andhra-school-attack-omar-abdullah-101793449593698.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T13:54:38+00:00"
+    },
+    {
+     "title": "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
+     "url": "https://www.news18.com/india/how-did-sanjay-gupta-die-cctv-captures-filmmakers-fatal-fall-inside-mumbai-home-10406569.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:07:29+00:00"
+    }
+   ],
+   "id": "wk-Q644401",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-30",
+   "top": {
+    "IN": 3,
+    "IN-nation": 2
+   },
+   "top_score": 1.185,
+   "top_headlines": [
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally",
+    "Gyanesh Kumar will go to jail: Rahul Gandhi"
+   ],
    "hindi_owners": []
   },
   {
@@ -63,7 +151,7 @@
     "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
     "FBI says North Korea behind $6 billion Binance crypto theft",
     "Binance resumes crypto withdrawals after major hack blamed on North Korea",
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -118,14 +206,14 @@
     "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:France Médias Monde",
-    "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "google-news:Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -148,7 +236,7 @@
     "vision"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -182,7 +270,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness",
@@ -214,9 +302,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 4
    },
-   "top_score": 0.97,
+   "top_score": 0.955,
    "top_headlines": [
     "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness"
    ],
@@ -241,7 +329,7 @@
     "train"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -275,7 +363,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
@@ -285,7 +373,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
@@ -335,106 +423,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "qid": null,
-   "title": "2026 Bangladesh garment sector minimum wage protests",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-11-01T15:31:31+00:00",
-   "headlines": [
-    "Bangladesh forms wage board as garment workers protest",
-    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Bangladesh forms wage board as garment workers protest",
-    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T15:31:31+00:00"
-    },
-    {
-     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
-     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T09:05:53+00:00"
-    }
-   ],
-   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-01",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "Bangladesh forms wage board as garment workers protest"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": "Q644401",
-   "title": "Sanjay Gupta (director)",
-   "fame": 168695,
-   "views": 168695,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "संजय गुप्ता",
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q644401",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-30",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   },
   {
    "id": "nw-20261101-andhra-cyclone",
@@ -563,10 +551,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-nation": 1
    },
-   "top_score": 1.2,
+   "top_score": 1.15,
    "top_headlines": [
     "Cyclone ‘Murasu’ forms over Bay of Bengal, southern Odisha on high alert",
     "Trade Setup for November 2: Top 15 things to know before the opening bell"
@@ -712,6 +700,81 @@
    "hindi_owners": []
   },
   {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 75000,
+   "views": 0,
+   "traffic": 0,
+   "news": 75000,
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
+   "headlines": [
+    "AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+    "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+    "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "बृजेन्द्र पाल सिंह",
+   "via": [
+    "google-news:AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+    "google-news:Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+    "google-news:Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
+    "outlet:Government of India",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "Government of India",
+    "HT Media",
+    "Network18"
+   ],
+   "reports": [
+    {
+     "title": "AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331268",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-01T18:02:33.714596+00:00"
+    },
+    {
+     "title": "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+     "url": "https://www.hindustantimes.com/india-news/op-sindoor-drew-non-negotiable-red-line-on-terrorism-rajnath-singh-101793516624962.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T07:03:44+00:00"
+    },
+    {
+     "title": "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
+     "url": "https://www.news18.com/india/honey-singhs-nephew-among-2-killed-as-car-rams-into-tractor-trolley-in-jalandhar-ws-l-10407378.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T06:42:04+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
    "id": "kh-20261101-Q467201",
    "qid": "Q467201",
    "title": "Meira Kumar",
@@ -721,10 +784,9 @@
    "kind": "explainer",
    "category": "politics",
    "category_hi": "राजनीति",
-   "story": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+   "story": "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
    "story_keys": [
     "bloc",
-    "vote",
     "warn"
    ],
    "date": "2026-10-31",
@@ -739,9 +801,9 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
     "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
-    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament"
+    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament",
+    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -789,13 +851,14 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-nation": 2
    },
-   "top_score": 1.285,
+   "top_score": 1.185,
    "top_headlines": [
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally",
     "Gyanesh Kumar will go to jail: Rahul Gandhi",
-    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
+    "'Massive turnout at Ramlila Maidan,' says Congress; Rahul reiterates, 'Gyanesh will go to jail' | LIVE"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -911,7 +974,7 @@
     "trial"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "NDTV",
@@ -944,7 +1007,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
@@ -1027,7 +1090,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-01T17:46:05.889254+00:00",
+   "news_at": "2026-11-01T18:01:58.309990+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1062,7 +1125,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-01T17:46:05.889254+00:00",
+   "news_at": "2026-11-01T18:01:58.309990+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1085,6 +1148,69 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": null,
+   "title": "2026 Bangladesh garment sector minimum wage protests",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-01T15:31:31+00:00",
+   "headlines": [
+    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:31:31+00:00"
+    },
+    {
+     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T09:05:53+00:00"
+    }
+   ],
+   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-01",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q376176",
@@ -1110,6 +1236,53 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-25",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q2913482",
+   "title": "Ciara Mageean",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-01T13:43:57+00:00",
+   "headlines": [
+    "Ireland’s European athletics champion Ciara Mageean dies aged 34"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Ireland’s European athletics champion Ciara Mageean dies aged 34",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "owners": [
+    "Al Jazeera Media Network"
+   ],
+   "reports": [
+    {
+     "title": "Ireland’s European athletics champion Ciara Mageean dies aged 34",
+     "url": "https://www.aljazeera.com/sports/2026/11/1/irelands-european-athletics-champion-ciara-mageean-dies-aged-34?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-01T13:43:57+00:00"
+    }
+   ],
+   "id": "wk-Q2913482",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1235,194 +1408,193 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12255,
+   "views": 12255,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 11959,
+   "views": 11959,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q983618",
+   "title": "Dónal Lunny",
+   "fame": 10918,
+   "views": 10918,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q983618",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-23",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 10045,
+   "views": 10045,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q468843",
+   "title": "Dolores Huerta",
+   "fame": 9129,
+   "views": 9129,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q468843",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 8464,
+   "views": 8464,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
-  {
-   "qid": null,
-   "title": "2026 Bangladesh garment sector minimum wage protests",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-11-01T15:31:31+00:00",
-   "headlines": [
-    "Bangladesh forms wage board as garment workers protest",
-    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Bangladesh forms wage board as garment workers protest",
-    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T15:31:31+00:00"
-    },
-    {
-     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
-     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T09:05:53+00:00"
-    }
-   ],
-   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-01",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "Bangladesh forms wage board as garment workers protest"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261101-Q130318422",
-   "qid": "Q130318422",
-   "title": "Vande Bharat Sleeper Express",
-   "name": "Vande Bharat (Sleeper) Express",
-   "phrase": "Vande Bharat Sleeper",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-   "story_keys": [
-    "express",
-    "flag",
-    "off",
-    "railway",
-    "train"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-    "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
-    "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
-    "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
-    "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "वंदे भारत शयनयान एक्सप्रेस",
-   "reports": [
-    {
-     "title": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331297",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
-    },
-    {
-     "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331258",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
-    },
-    {
-     "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
-     "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mumbai-vande-bharat-sleeper-express-flagged-off-by-railway-minister/article71653630.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T15:46:43+00:00"
-    },
-    {
-     "title": "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
-     "url": "https://www.news18.com/india/game-changer-for-connectivity-pm-modi-hails-bengaluru-mumbai-vande-bharat-sleeper-train-10407775.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T13:26:57+00:00"
-    },
-    {
-     "title": "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
-     "url": "https://www.hindustantimes.com/india-news/railway-minister-ashwini-vaishnaw-flags-off-inaugural-bengaluru-mumbai-vande-bharat-sleeper-express-101793521411518.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T08:51:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Government of India",
-    "google-news:Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
-   ],
-   "top": {
-    "IN-nation": 13
-   },
-   "top_score": 0.24,
-   "top_headlines": [
-    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
   {
    "id": "kh-20261101-Q51403327",
    "qid": "Q51403327",
@@ -1456,7 +1628,7 @@
     "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
     "FBI says North Korea behind $6 billion Binance crypto theft",
     "Binance resumes crypto withdrawals after major hack blamed on North Korea",
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1511,17 +1683,131 @@
     "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:France Médias Monde",
-    "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "google-news:Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261101-Q130318422",
+   "qid": "Q130318422",
+   "title": "Vande Bharat Sleeper Express",
+   "name": "Vande Bharat (Sleeper) Express",
+   "phrase": "Vande Bharat Sleeper",
+   "person": false,
+   "kind": "explainer",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
+   "story_keys": [
+    "express",
+    "flag",
+    "off",
+    "railway",
+    "train"
+   ],
+   "date": "2026-11-01",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group",
+    "Government of India"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
+    "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
+    "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
+    "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
+    "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "वंदे भारत शयनयान एक्सप्रेस",
+   "reports": [
+    {
+     "title": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331297",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-01T18:02:33.714596+00:00"
+    },
+    {
+     "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331258",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-01T18:02:33.714596+00:00"
+    },
+    {
+     "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
+     "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mumbai-vande-bharat-sleeper-express-flagged-off-by-railway-minister/article71653630.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:46:43+00:00"
+    },
+    {
+     "title": "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
+     "url": "https://www.news18.com/india/game-changer-for-connectivity-pm-modi-hails-bengaluru-mumbai-vande-bharat-sleeper-train-10407775.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T13:26:57+00:00"
+    },
+    {
+     "title": "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
+     "url": "https://www.hindustantimes.com/india-news/railway-minister-ashwini-vaishnaw-flags-off-inaugural-bengaluru-mumbai-vande-bharat-sleeper-express-101793521411518.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T08:51:09+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Government of India",
+    "google-news:Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
+   ],
+   "top": {
+    "IN-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -1622,10 +1908,9 @@
    "kind": "explainer",
    "category": "politics",
    "category_hi": "राजनीति",
-   "story": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+   "story": "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
    "story_keys": [
     "bloc",
-    "vote",
     "warn"
    ],
    "date": "2026-10-31",
@@ -1640,9 +1925,9 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
     "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
-    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament"
+    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament",
+    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1690,13 +1975,14 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-nation": 2
    },
-   "top_score": 1.285,
+   "top_score": 1.185,
    "top_headlines": [
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally",
     "Gyanesh Kumar will go to jail: Rahul Gandhi",
-    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
+    "'Massive turnout at Ramlila Maidan,' says Congress; Rahul reiterates, 'Gyanesh will go to jail' | LIVE"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1812,7 +2098,7 @@
     "trial"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "NDTV",
@@ -1845,7 +2131,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
@@ -1897,7 +2183,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-01T17:46:05.889254+00:00",
+   "news_at": "2026-11-01T18:01:58.309990+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1924,29 +2210,248 @@
    ],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": null,
+   "title": "2026 Bangladesh garment sector minimum wage protests",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-01T15:31:31+00:00",
+   "headlines": [
+    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:31:31+00:00"
+    },
+    {
+     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T09:05:53+00:00"
+    }
+   ],
+   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-01",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 11959,
+   "views": 11959,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 10045,
+   "views": 10045,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12255,
+   "views": 12255,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 8464,
+   "views": 8464,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q983618",
+   "title": "Dónal Lunny",
+   "fame": 10918,
+   "views": 10918,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q983618",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-23",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "notes": [
   "revisit Q2745305 (2466 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (659 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (651 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7289726: last Short 11 h ago; revisit Q4746875 (186 views): 0 ",
-  "outlets: 1274 headlines from 30 feeds (19 owners), 12 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261101-andhra-cyclone",
-  "explainers: 7 kh- stories (on): kh-20261101-Q51403327, kh-20261101-Q140076608, kh-20261101-Q130318422, kh-20261101-Q271195; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre; explainer Trump Judge: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1273 headlines from 30 feeds (19 owners), 20 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261101-andhra-cyclone",
+  "explainers: 7 kh- stories (on): kh-20261101-Q51403327, kh-20261101-Q140076608, kh-20261101-Q130318422, kh-20261101-Q271195; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre; explainer Sourabh Chandrakar / Oman: no Wikipedia article that can be its centre",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
+  "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again"
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTP 429",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1274,
+  "headlines": 1273,
   "feeds": 30,
   "owners": 19,
-  "matched": 12,
-  "corroborated": 9
+  "matched": 20,
+  "corroborated": 11
  },
  "emerging": [
   {
@@ -2076,10 +2581,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-nation": 1
    },
-   "top_score": 1.2,
+   "top_score": 1.15,
    "top_headlines": [
     "Cyclone ‘Murasu’ forms over Bay of Bengal, southern Odisha on high alert",
     "Trade Setup for November 2: Top 15 things to know before the opening bell"
@@ -2121,7 +2626,7 @@
     "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
     "FBI says North Korea behind $6 billion Binance crypto theft",
     "Binance resumes crypto withdrawals after major hack blamed on North Korea",
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2176,14 +2681,14 @@
     "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:France Médias Monde",
-    "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "google-news:Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
-    "FBI blames North Korea for record $6.3bn crypto heist from Binance"
+    "Binance is publicly committed to backstopping this hacking incident with its own assets: APAC Head SB..."
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -2206,7 +2711,7 @@
     "vision"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -2240,7 +2745,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness",
@@ -2272,9 +2777,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 4
    },
-   "top_score": 0.97,
+   "top_score": 0.955,
    "top_headlines": [
     "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness"
    ],
@@ -2299,7 +2804,7 @@
     "train"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -2333,7 +2838,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
@@ -2343,7 +2848,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
@@ -2492,10 +2997,9 @@
    "kind": "explainer",
    "category": "politics",
    "category_hi": "राजनीति",
-   "story": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+   "story": "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
    "story_keys": [
     "bloc",
-    "vote",
     "warn"
    ],
    "date": "2026-10-31",
@@ -2510,9 +3014,9 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
     "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
-    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament"
+    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament",
+    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2560,13 +3064,14 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-nation": 2
    },
-   "top_score": 1.285,
+   "top_score": 1.185,
    "top_headlines": [
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally",
     "Gyanesh Kumar will go to jail: Rahul Gandhi",
-    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
+    "'Massive turnout at Ramlila Maidan,' says Congress; Rahul reiterates, 'Gyanesh will go to jail' | LIVE"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2682,7 +3187,7 @@
     "trial"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T17:48:50.848890+00:00",
+   "news_at": "2026-11-01T18:02:33.714596+00:00",
    "owners": [
     "HT Media",
     "NDTV",
@@ -2715,7 +3220,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T17:48:50.848890+00:00"
+     "at": "2026-11-01T18:02:33.714596+00:00"
     },
     {
      "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
