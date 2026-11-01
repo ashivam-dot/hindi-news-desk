@@ -1,12 +1,12 @@
 {
- "at": "2026-11-01T04:29:38+00:00",
+ "at": "2026-11-01T04:58:22+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 8 candidates from 21 trending",
+  "watch: 9 candidates from 22 trending",
   "revisit kh-20261101-Q124883782-update: 5 owners' new reports on Gyanesh Kumar (1242 views before); revisit Q2745305: last Short 3 h ago; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (641 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since i",
-  "outlets: 1176 headlines from 30 feeds (19 owners), 34 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1173 headlines from 30 feeds (19 owners), 23 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261031-rahul-gandhi-protest",
   "explainers: 5 kh- stories (on): kh-20261101-Q1353, kh-20261101-Q2745305, kh-20261101-Q124883782, kh-20261101-Q51403327; dropped: explainer Ramlila Maidan: fewer than 3 owners' headlines name it and the story; explainer Haryana's Panchkula: fewer than 3 owners' headlines name it and the story; explainer Ashwini Vaishnaw: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
@@ -20,9 +20,15 @@
   "drop wk-Q259559: 137 h old and no longer trending live",
   "drop wk-Q5296666: 137 h old and no longer trending live",
   "drop wk-Q983618: 209 h old and no longer trending live",
-  "skip wk-Q644401: gate: no draft passed the fact checks: unsupported: मुंबई पुलिस ने गिरने से हुई चोट की बात कही।",
-  "skip kh-20261101-Q124883782-update: gate: no draft passed the fact checks: unsupported: बीजेपी ने इस घटना को खतरनाक नाटक बताया।",
-  "nothing eligible to publish",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): nw-20261031-rahul-gandhi-protest",
+  "published wk-Q644401: https://www.youtube.com/shorts/LjWCvAAZzaY",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "LjWCvAAZzaY",
+  "url": "https://www.youtube.com/shorts/LjWCvAAZzaY",
+  "youtube_title": "संजय गुप्ता का 57 की उम्र में मुंबई में निधन #shorts #sanjaygupta",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
