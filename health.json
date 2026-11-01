@@ -1,27 +1,26 @@
 {
- "at": "2026-11-01T22:46:18+00:00",
+ "at": "2026-11-01T23:01:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 101 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.147, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.785, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 58.0}, 'category:attack': {'n': 13, 'lift': 1.283, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': ",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 20 trending",
+  "watch: 15 candidates from 28 trending",
   "revisit Q2745305 (3549 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit kh-20261102-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2774 views before); revisit Q163225 (662 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7289726 ",
-  "outlets: 1213 headlines from 30 feeds (19 owners), 20 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261101-andhra-cyclone, nw-20261101-florida-aviation",
+  "outlets: 1208 headlines from 30 feeds (19 owners), 25 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261101-andhra-cyclone, nw-20261101-florida-aviation",
   "explainers: 7 kh- stories (on): kh-20261102-Q10218, kh-20261102-Q51403327, kh-20261102-Q130318422, kh-20261102-Q140076608; dropped: explainer Commercial LPG / ATF: no Wikipedia article that can be its centre; explainer October / GST: no Wikipedia article that can be its centre; explainer Sourabh Chandrakar / Oman: no Wikipedia article that can be its centre",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261102-Q10218: outside 07:00-24:00 IST",
-  "drop kh-20261102-Q130318422: too low in Google News India's top stories (place 0.33, needs 0.35)",
+  "drop kh-20261102-Q130318422: too low in Google News India's top stories (place 0.30, needs 0.35)",
   "hold nw-20261101-florida-aviation: outside 07:00-24:00 IST",
   "drop kh-20261102-Q51403327: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261102-Q271195: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261102-Q60735935: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261101-florida-aviation, kh-20261102-Q60735935, kh-20261102-Q124883782-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261102-Q130318422, kh-20261102-Q271195",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261101-florida-aviation, kh-20261102-Q60735935, wk-Q141966885, kh-20261102-Q124883782-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261102-Q130318422, kh-20261102-Q271195",
   "channel: about, playlists done; nothing left to do"
  ]
 }
