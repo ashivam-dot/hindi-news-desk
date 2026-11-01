@@ -1,5 +1,5 @@
 {
- "at": "2026-11-01T01:28:33+00:00",
+ "at": "2026-11-01T01:44:39+00:00",
  "trending": [
   {
    "qid": "Q16296",
@@ -129,18 +129,16 @@
     "google-news:खतरे में उमर अब्दुल्ला की कुर्सी? 24 विधायकों ने कर दी बगावत, गुप्त बैठक कर प्लान तैयार"
    ],
    "top": {
-    "IN-nation": 16,
-    "IN-hi-nation": 11
+    "IN-nation": 15,
+    "IN-hi-nation": 13
    },
-   "top_score": 0.375,
+   "top_score": 0.33,
    "top_headlines": [
     "उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर",
-    "‘It’s done bro’: Omar Abdullah marries Nidhi Razdan, shares photos of their ‘new journey’",
+    "J&K Chief Minister Omar Abdullah Marries Journalist Nidhi Razdan In Srinagar",
     "J&K: Storm brews within Omar Abdullah’s ruling party as Ruhullah, nearly half of MLAs challenge leadership"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "hindi_owners": []
   },
   {
    "id": "kh-20261101-Q124883782",
@@ -283,17 +281,119 @@
     "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
    ],
    "top": {
-    "IN": 2,
-    "IN-hi": 8,
+    "IN": 1,
+    "IN-hi": 7,
     "IN-nation": 1,
-    "IN-hi-nation": 4
+    "IN-hi-nation": 1
    },
-   "top_score": 1.83,
+   "top_score": 1.95,
    "top_headlines": [
     "'CEC ज्ञानेश कुमार को हटाया जाए, नागरिकों के वोट का अधिकार गंभीर खतरे में', मॉक संसद में बोले खरगे",
-    "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges"
+    "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
+    "Rahul Gandhi: India's opposition rallies against voter roll revision exercise"
    ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261101-Q51403327",
+   "qid": "Q51403327",
+   "title": "Binance",
+   "name": "Binance",
+   "phrase": "Binance",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+   "story_keys": [
+    "billion",
+    "crypto",
+    "hack",
+    "losse"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-11-01T01:43:42+00:00",
+   "owners": [
+    "France Médias Monde",
+    "BBC",
+    "India Today Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+    "Binance hit by 6.3 billion dollar crypto theft",
+    "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
+    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-31T22:11:45+00:00"
+    },
+    {
+     "title": "Binance hit by 6.3 billion dollar crypto theft",
+     "url": "https://www.france24.com/en/binance-hit-by-6-3-billion-dollar-crypto-theft",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-31T11:16:54+00:00"
+    },
+    {
+     "title": "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
+     "url": "https://www.indiatoday.in/world/story/north-korea-binance-hack-fbi-record-6-billion-crypto-theft-3029656-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T01:43:42+00:00"
+    },
+    {
+     "title": "Binance replenishes 90% of stolen crypto, says it will absorb financial losses",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-replenishes-90-of-stolen-crypto-says-it-will-absorb-financial-losses/articleshow/135404287.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T14:57:08+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q141947331",
@@ -369,13 +469,12 @@
    "coords": null,
    "has_coords": true,
    "top": {
-    "IN": 13,
+    "IN": 10,
     "IN-nation": 8
    },
-   "top_score": 0.595,
+   "top_score": 0.745,
    "top_headlines": [
-    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state",
-    "California Halloween store shooting leaves one dead, six injured; suspect on loose"
+    "Uttarakhand's Joshimath: Six dead after helicopter crashes in northern Indian state"
    ],
    "hindi_owners": []
   },
@@ -501,101 +600,15 @@
     "google-news:ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 6
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.825,
+   "top_score": 0.89,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261101-Q51403327",
-   "qid": "Q51403327",
-   "title": "Binance",
-   "name": "Binance",
-   "phrase": "Binance",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-   "story_keys": [
-    "crypto",
-    "losse"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-10-31T22:11:45+00:00",
-   "owners": [
-    "France Médias Monde",
-    "BBC",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-    "Binance hit by 6.3 billion dollar crypto theft",
-    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-31T22:11:45+00:00"
-    },
-    {
-     "title": "Binance hit by 6.3 billion dollar crypto theft",
-     "url": "https://www.france24.com/en/binance-hit-by-6-3-billion-dollar-crypto-theft",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-31T11:16:54+00:00"
-    },
-    {
-     "title": "Binance replenishes 90% of stolen crypto, says it will absorb financial losses",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-replenishes-90-of-stolen-crypto-says-it-will-absorb-financial-losses/articleshow/135404287.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T14:57:08+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -625,16 +638,15 @@
     "NDTV",
     "Network18"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Air Chief Marshal Ashutosh Dixit takes charge as new Chief of Air Staff",
     "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push",
     "Ashutosh Dixit takes over as Chief of Air Staff",
-    "Air Chief Marshal Ashutosh Dixit takes charge as 29th Chief of Air Staff",
-    "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
+    "Air Chief Marshal Ashutosh Dixit takes charge as 29th Chief of Air Staff"
    ],
    "hindi_headlines": [
     "एयर चीफ मार्शल आशुतोष दीक्षित पीवीएसएम, एवीएसएम, वीएम, वीएसएम ने भारतीय वायु सेना के वायु सेना प्रमुख के रूप में आधिकारिक तौर पर कार्यभार ग्रहण किया",
@@ -694,16 +706,11 @@
     "outlet:The Hindu Group",
     "outlet:Government of India",
     "outlet:NDTV",
-    "outlet:Network18",
-    "google-news:Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
+    "outlet:Network18"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -799,6 +806,89 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 75000,
+   "views": 0,
+   "traffic": 0,
+   "news": 75000,
+   "news_at": "2026-10-31T07:29:10+00:00",
+   "headlines": [
+    "Air Chief Marshal Amar Preet Singh Retires After 42 Years of Service",
+    "End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
+    "SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "बृजेन्द्र पाल सिंह",
+   "via": [
+    "google-news:Air Chief Marshal Amar Preet Singh Retires After 42 Years of Service",
+    "google-news:End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
+    "google-news:SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1",
+    "outlet:Network18",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "Network18",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
+     "url": "https://www.news18.com/india/end-of-an-era-air-chief-ap-singh-retires-as-indian-air-force-prepares-for-new-leadership-ws-kl-10406058.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T03:40:32+00:00"
+    },
+    {
+     "title": "SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1",
+     "url": "https://www.hindustantimes.com/india-news/sc-cancels-bail-granted-to-expelled-jd-u-mla-anant-singh-directs-him-to-surrender-by-dec-1-101793386393322.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T02:13:30+00:00"
+    },
+    {
+     "title": "Air Marshal Inderpal Singh Walia named next IAF vice chief",
+     "url": "https://www.hindustantimes.com/india-news/air-marshal-inderpal-singh-walia-named-next-iaf-vice-chief-101793380612052.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T17:27:03+00:00"
+    },
+    {
+     "title": "Vayu Sena Medal Awardee, NDA Alumnus: Air Marshal Inderpal Singh Walia Set To Be Next IAF Vice Chief",
+     "url": "https://www.news18.com/india/air-marshal-inderpal-singh-walia-set-to-be-next-iaf-vice-chief-ws-kl-10405787.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-30T16:31:37+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261101-Q146929",
@@ -965,9 +1055,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Britain open to apologising for slavery, says U.K. PM Andy Burnham"
    ],
@@ -1059,87 +1149,6 @@
    "date": "2026-11-01",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q4834146",
-   "title": "B. P. Singh",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-10-31T03:40:32+00:00",
-   "headlines": [
-    "End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
-    "SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "बृजेन्द्र पाल सिंह",
-   "via": [
-    "google-news:End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
-    "google-news:SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1",
-    "outlet:Network18",
-    "outlet:HT Media"
-   ],
-   "owners": [
-    "Network18",
-    "HT Media"
-   ],
-   "reports": [
-    {
-     "title": "End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
-     "url": "https://www.news18.com/india/end-of-an-era-air-chief-ap-singh-retires-as-indian-air-force-prepares-for-new-leadership-ws-kl-10406058.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T03:40:32+00:00"
-    },
-    {
-     "title": "SC cancels bail granted to expelled JD(U) MLA Anant Singh, directs him to surrender by Dec 1",
-     "url": "https://www.hindustantimes.com/india-news/sc-cancels-bail-granted-to-expelled-jd-u-mla-anant-singh-directs-him-to-surrender-by-dec-1-101793386393322.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T02:13:30+00:00"
-    },
-    {
-     "title": "Air Marshal Inderpal Singh Walia named next IAF vice chief",
-     "url": "https://www.hindustantimes.com/india-news/air-marshal-inderpal-singh-walia-named-next-iaf-vice-chief-101793380612052.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T17:27:03+00:00"
-    },
-    {
-     "title": "Vayu Sena Medal Awardee, NDA Alumnus: Air Marshal Inderpal Singh Walia Set To Be Next IAF Vice Chief",
-     "url": "https://www.news18.com/india/air-marshal-inderpal-singh-walia-set-to-be-next-iaf-vice-chief-ws-kl-10405787.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-30T16:31:37+00:00"
-    }
-   ],
-   "id": "wk-Q4834146",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1395,110 +1404,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261101-Q2745305",
-   "qid": "Q2745305",
-   "title": "Omar Abdullah",
-   "name": "Omar Abdullah",
-   "phrase": "CM Omar Abdullah",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-   "story_keys": [
-    "journalist",
-    "share"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-10-31T13:54:03+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "NDTV",
-    "DB Corp"
-   ],
-   "fame": 350000,
-   "news": 350000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-    "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-    "Omar Abdullah, Nidhi Razdan marry; J&K CM shares"
-   ],
-   "hindi_headlines": [
-    "Omar Abdullah-Nidhi Razdan Net Worth : पति उमर अब्दुल्ला से कई गुना ज्यादा अमीर हैं निधि राजदान",
-    "उमर अब्दुल्ला ही नहीं, CM पद पर रहते हुए इन नेताओं ने भी रचाई शादी; पूरी लिस्ट",
-    "वरिष्ठ पत्रकार, हार्वर्ड के नाम पर हुआ स्कैम; कौन हैं निधि राजदान, जिन्होंने उमर अब्दुल्ला से रचाई शादी",
-    "दिल्ली में उमर अब्दुल्ला का हाई-प्रोफाइल डिनर, सिर्फ 71 खास मेहमान, लेकिन शादी पर चुप्पी",
-    "उमर अब्दुल्ला ने निधि राजदान से रचाई शादी, आज दिल्ली में रिसेप्शन"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "उमर अब्दुल्ला",
-   "reports": [
-    {
-     "title": "Omar Abdullah, Nidhi Razdan marry; J&K CM shares",
-     "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:55:41+00:00"
-    },
-    {
-     "title": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-     "url": "https://www.hindustantimes.com/india-news/jk-cm-omar-abdullah-shares-photo-with-journalist-nidhi-razdan-new-journey-began-yesterday-101793442568441.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:43:40+00:00"
-    },
-    {
-     "title": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-     "url": "https://www.indiatoday.in/india/story/jammu-kashmir-cm-omar-abdullah-journalist-nidhi-razdan-wedding-3029297-2026-10-31?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:32:02+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "outlet:DB Corp",
-    "google-news:उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर",
-    "google-news:खतरे में उमर अब्दुल्ला की कुर्सी? 24 विधायकों ने कर दी बगावत, गुप्त बैठक कर प्लान तैयार"
-   ],
-   "top": {
-    "IN-nation": 16,
-    "IN-hi-nation": 11
-   },
-   "top_score": 0.375,
-   "top_headlines": [
-    "उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर",
-    "‘It’s done bro’: Omar Abdullah marries Nidhi Razdan, shares photos of their ‘new journey’",
-    "J&K: Storm brews within Omar Abdullah’s ruling party as Ruhullah, nearly half of MLAs challenge leadership"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261101-Q229058",
    "qid": "Q229058",
    "title": "ISRO",
@@ -1620,10 +1525,10 @@
     "google-news:ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 6
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.825,
+   "top_score": 0.89,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
@@ -1643,23 +1548,27 @@
    "category_hi": "समाचार",
    "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
    "story_keys": [
+    "billion",
     "crypto",
+    "hack",
     "losse"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-10-31T22:11:45+00:00",
+   "news_at": "2026-11-01T01:43:42+00:00",
    "owners": [
     "France Médias Monde",
     "BBC",
+    "India Today Group",
     "Bennett, Coleman & Co."
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Crypto firm Binance covers 90% of losses after $6.3bn hack",
     "Binance hit by 6.3 billion dollar crypto theft",
+    "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
     "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
    ],
    "hindi_headlines": [],
@@ -1690,6 +1599,16 @@
      "at": "2026-10-31T11:16:54+00:00"
     },
     {
+     "title": "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
+     "url": "https://www.indiatoday.in/world/story/north-korea-binance-hack-fbi-record-6-billion-crypto-theft-3029656-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T01:43:42+00:00"
+    },
+    {
      "title": "Binance replenishes 90% of stolen crypto, says it will absorb financial losses",
      "url": "https://timesofindia.indiatimes.com/business/international-business/binance-replenishes-90-of-stolen-crypto-says-it-will-absorb-financial-losses/articleshow/135404287.cms",
      "outlet": "Times of India",
@@ -1703,6 +1622,7 @@
    "via": [
     "outlet:France Médias Monde",
     "outlet:BBC",
+    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "google-news:Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
    ],
@@ -1882,9 +1802,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Britain open to apologising for slavery, says U.K. PM Andy Burnham"
    ],
@@ -2112,9 +2032,8 @@
   }
  ],
  "notes": [
-  "revisit Q124883782: last Short 11 h ago; revisit Q163225 (657 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (641 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7089335 (581 views): 0 owners reported new news on Om Birla since its last Short; revisit Q4746875 (182 views): 0 owners reported new news on Amit Shah since its l",
-  "outlets: 1204 headlines from 30 feeds (18 owners), 19 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261101-Q2745305, kh-20261101-Q124883782, kh-20261101-Q229058, kh-20261101-Q51403327; dropped: explainer Ramlila Maidan: fewer than 3 owners' headlines name it and the story; explainer November / Arnab’ Andhra Pradesh: no Wikipedia article that can be its centre",
+  "outlets: 1200 headlines from 30 feeds (18 owners), 19 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261101-Q2745305, kh-20261101-Q124883782, kh-20261101-Q51403327, kh-20261101-Q229058; dropped: explainer Ramlila Maidan: fewer than 3 owners' headlines name it and the story; explainer November / Arnab’ Andhra Pradesh: no Wikipedia article that can be its centre",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
@@ -2126,7 +2045,7 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1204,
+  "headlines": 1200,
   "feeds": 30,
   "owners": 18,
   "matched": 19,
@@ -2225,18 +2144,16 @@
     "google-news:खतरे में उमर अब्दुल्ला की कुर्सी? 24 विधायकों ने कर दी बगावत, गुप्त बैठक कर प्लान तैयार"
    ],
    "top": {
-    "IN-nation": 16,
-    "IN-hi-nation": 11
+    "IN-nation": 15,
+    "IN-hi-nation": 13
    },
-   "top_score": 0.375,
+   "top_score": 0.33,
    "top_headlines": [
     "उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर",
-    "‘It’s done bro’: Omar Abdullah marries Nidhi Razdan, shares photos of their ‘new journey’",
+    "J&K Chief Minister Omar Abdullah Marries Journalist Nidhi Razdan In Srinagar",
     "J&K: Storm brews within Omar Abdullah’s ruling party as Ruhullah, nearly half of MLAs challenge leadership"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "hindi_owners": []
   },
   {
    "id": "kh-20261101-Q124883782",
@@ -2379,17 +2296,119 @@
     "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
    ],
    "top": {
-    "IN": 2,
-    "IN-hi": 8,
+    "IN": 1,
+    "IN-hi": 7,
     "IN-nation": 1,
-    "IN-hi-nation": 4
+    "IN-hi-nation": 1
    },
-   "top_score": 1.83,
+   "top_score": 1.95,
    "top_headlines": [
     "'CEC ज्ञानेश कुमार को हटाया जाए, नागरिकों के वोट का अधिकार गंभीर खतरे में', मॉक संसद में बोले खरगे",
-    "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges"
+    "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
+    "Rahul Gandhi: India's opposition rallies against voter roll revision exercise"
    ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261101-Q51403327",
+   "qid": "Q51403327",
+   "title": "Binance",
+   "name": "Binance",
+   "phrase": "Binance",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+   "story_keys": [
+    "billion",
+    "crypto",
+    "hack",
+    "losse"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-11-01T01:43:42+00:00",
+   "owners": [
+    "France Médias Monde",
+    "BBC",
+    "India Today Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+    "Binance hit by 6.3 billion dollar crypto theft",
+    "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
+    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-31T22:11:45+00:00"
+    },
+    {
+     "title": "Binance hit by 6.3 billion dollar crypto theft",
+     "url": "https://www.france24.com/en/binance-hit-by-6-3-billion-dollar-crypto-theft",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-10-31T11:16:54+00:00"
+    },
+    {
+     "title": "FBI says North Korea stole $6 billion crypto from Binance in biggest hack ever",
+     "url": "https://www.indiatoday.in/world/story/north-korea-binance-hack-fbi-record-6-billion-crypto-theft-3029656-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T01:43:42+00:00"
+    },
+    {
+     "title": "Binance replenishes 90% of stolen crypto, says it will absorb financial losses",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-replenishes-90-of-stolen-crypto-says-it-will-absorb-financial-losses/articleshow/135404287.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T14:57:08+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:BBC",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261101-Q229058",
@@ -2513,101 +2532,15 @@
     "google-news:ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 6
+    "IN": 8,
+    "IN-nation": 5
    },
-   "top_score": 0.825,
+   "top_score": 0.89,
    "top_headlines": [
     "ISRO NVS-03 launch: 5 things to know about India’s new navigation satellite"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261101-Q51403327",
-   "qid": "Q51403327",
-   "title": "Binance",
-   "name": "Binance",
-   "phrase": "Binance",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-   "story_keys": [
-    "crypto",
-    "losse"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-10-31T22:11:45+00:00",
-   "owners": [
-    "France Médias Monde",
-    "BBC",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-    "Binance hit by 6.3 billion dollar crypto theft",
-    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-31T22:11:45+00:00"
-    },
-    {
-     "title": "Binance hit by 6.3 billion dollar crypto theft",
-     "url": "https://www.france24.com/en/binance-hit-by-6-3-billion-dollar-crypto-theft",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-10-31T11:16:54+00:00"
-    },
-    {
-     "title": "Binance replenishes 90% of stolen crypto, says it will absorb financial losses",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-replenishes-90-of-stolen-crypto-says-it-will-absorb-financial-losses/articleshow/135404287.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T14:57:08+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Binance replenishes 90% of stolen crypto, says it will absorb financial losses"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -2637,16 +2570,15 @@
     "NDTV",
     "Network18"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Air Chief Marshal Ashutosh Dixit takes charge as new Chief of Air Staff",
     "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push",
     "Ashutosh Dixit takes over as Chief of Air Staff",
-    "Air Chief Marshal Ashutosh Dixit takes charge as 29th Chief of Air Staff",
-    "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
+    "Air Chief Marshal Ashutosh Dixit takes charge as 29th Chief of Air Staff"
    ],
    "hindi_headlines": [
     "एयर चीफ मार्शल आशुतोष दीक्षित पीवीएसएम, एवीएसएम, वीएम, वीएसएम ने भारतीय वायु सेना के वायु सेना प्रमुख के रूप में आधिकारिक तौर पर कार्यभार ग्रहण किया",
@@ -2706,16 +2638,11 @@
     "outlet:The Hindu Group",
     "outlet:Government of India",
     "outlet:NDTV",
-    "outlet:Network18",
-    "google-news:Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
+    "outlet:Network18"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -2977,9 +2904,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Britain open to apologising for slavery, says U.K. PM Andy Burnham"
    ],
