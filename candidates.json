@@ -1,28 +1,23 @@
 {
- "at": "2026-11-01T07:44:10+00:00",
+ "at": "2026-11-01T08:00:32+00:00",
  "trending": [
   {
    "qid": "Q16296",
    "title": "Patrick Stewart",
-   "fame": 575119,
+   "fame": 450119,
    "views": 450119,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-01T00:14:21+00:00",
-   "headlines": [
-    "‘Green Room’ Director Recalls How Patrick Stewart “Saved” Movie From Being Scrapped"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": "पैट्रिक स्टिवर्ट",
    "via": [
-    "wikipedia-top-2026-10-31",
-    "google-news:‘Green Room’ Director Recalls How Patrick Stewart “Saved” Movie From Being Scrapped"
+    "wikipedia-top-2026-10-31"
    ],
    "owners": [],
    "reports": [],
@@ -34,6 +29,133 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261101-Q7289726",
+   "qid": "Q7289726",
+   "title": "Ramlila Maidan",
+   "name": "Ramlila Maidan",
+   "phrase": "Ramlila Maidan",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+   "story_keys": [
+    "ahead",
+    "back",
+    "bloc",
+    "but",
+    "neutral",
+    "rally",
+    "traffic"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-11-01T07:50:09+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "The Hindu Group",
+    "India Today Group",
+    "TV9 Network",
+    "Zee Media",
+    "NDTV",
+    "ABP Group",
+    "DB Corp"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+    "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
+    "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
+    "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more"
+   ],
+   "hindi_headlines": [
+    "Congress Rally Live: रामलीला मैदान की ओर राहुल गांधी का कूच, ओपन बस में अखिलेश भी साथ, कार्यकर्ता कर रहे इंतजार",
+    "'राहुल गांधी के इस ड्रामे के 4 मकसद', रामलीला मैदान रैली पर नड्डा का हमला",
+    "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
+    "रैली पर तकरार: रामलीला मैदान के आयोजन पर बरसी शिवसेना, राहुल गांधी समेत विपक्षी नेताओं को घेरा",
+    "कितने में बुक होता है रामलीला मैदान? जहां विपक्ष कर रहा महारैली"
+   ],
+   "hindi_news": 23,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "रामलीला मैदान",
+   "reports": [
+    {
+     "title": "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more",
+     "url": "https://www.thehindu.com/news/cities/Delhi/india-bloc-rally-ramlila-maidan-november-1-traffic-curbs-roads-to-avoid-timings/article71648423.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T05:23:04+00:00"
+    },
+    {
+     "title": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+     "url": "https://www.hindustantimes.com/india-news/cjp-backs-india-bloc-ramlila-maidan-rally-but-wont-participate-in-it-says-abhijeet-dipke-cites-neutral-platform-identity-101793506703319.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T04:54:25+00:00"
+    },
+    {
+     "title": "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
+     "url": "https://www.news18.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-backs-india-blocs-ramlila-maidan-rally-but-refuses-to-join-ws-rt-10407076.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T17:44:57+00:00"
+    },
+    {
+     "title": "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
+     "url": "https://www.news18.com/india/india-bloc-got-nod-for-ramlila-maidan-rally-no-permission-for-march-from-connaught-place-delhi-police-ws-l-10406221.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T08:45:14+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "outlet:Zee Media",
+    "outlet:NDTV",
+    "outlet:ABP Group",
+    "outlet:DB Corp",
+    "google-news:ओवैसी, राजभर, BJP, चंद्रशेखर... रामलीला मैदान में कांग्रेस नहीं अखिलेश पर होगी इनकी नजर!",
+    "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "India Today Group",
+    "TV9 Network",
+    "Zee Media",
+    "NDTV"
+   ]
   },
   {
    "id": "kh-20261101-Q1353",
@@ -79,12 +201,12 @@
    ],
    "hindi_headlines": [
     "दिल्ली में अक्टूबर का औसत वायु गुणवत्ता सूचकांक (एक्यूआई) पिछले आठ वर्षों में सबसे कम 166 दर्ज किया गया",
+    "न फूल सूखेंगे, न खूबसूरती होगी कम! दिल्ली एक्सपो में छाई असली फूलों से बनी ज्वेलरी, कीमत ₹150",
     "दिवाली शॉपिंग करनी है? दिल्ली में शुरू हुआ 'द ग्रैंड एक्सपो 2026', एक छत के नीचे मिलेंगे हस्तशिल्प उत्पाद",
     "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
-    "दिवाली से पहले महंगा हुआ LPG सिलेंडर, दिल्ली से मुंबई तक बढ़ गए रेट",
-    "दिल्ली में विपक्ष की महारैली, अखिलेश यादव ने CEC ज्ञानेश कुमार के इस्तीफे की मांग"
+    "LPG सिलेंडर हुआ महंगा, दिवाली से पहले झटका, दिल्ली में ये नए रेट"
    ],
-   "hindi_news": 40,
+   "hindi_news": 39,
    "geos": [
     "IN"
    ],
@@ -168,10 +290,10 @@
     "google-news:Couple, daughter killed in Delhi-Mumbai Expressway crash; 2 children pulled out alive"
    ],
    "top": {
-    "IN": 4,
+    "IN": 3,
     "IN-nation": 2
    },
-   "top_score": 1.135,
+   "top_score": 1.185,
    "top_headlines": [
     "Ban on construction, non-Delhi-registered vehicles below BS-VI from November 1"
    ],
@@ -182,142 +304,109 @@
    ]
   },
   {
-   "qid": "Q644401",
-   "title": "Sanjay Gupta (director)",
-   "fame": 393695,
-   "views": 168695,
+   "id": "kh-20261101-Q2745305",
+   "qid": "Q2745305",
+   "title": "Omar Abdullah",
+   "name": "Omar Abdullah",
+   "phrase": "CM Omar Abdullah",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+   "story_keys": [
+    "journalist",
+    "share"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-10-31T10:55:41+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "Zee Media",
+    "Network18",
+    "ABP Group"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
    "traffic": 0,
-   "news": 225000,
-   "news_at": "2026-11-01T01:16:26+00:00",
    "headlines": [
-    "Sanjay Gupta, Indian Director of ‘Kaante’ and ‘Zinda,’ Dies at 59",
-    "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
-    "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed"
+    "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+    "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
+    "Omar Abdullah, Nidhi Razdan marry; J&K CM shares"
    ],
-   "hindi_news": 2,
    "hindi_headlines": [
-    "ऋतिक रोशन ने काबिल डायरेक्टर को दी श्रद्धांजलि, संजय गुप्ता के लिए लिखा- 'आपके साथ एक फिल्म काफी नहीं थी'",
-    "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि"
+    "उमर अब्दुल्ला की पत्नी निधि राजदान कितनी पढ़ी-लिखी हैं? जानें उनकी डिग्री और करियर",
+    "अमीर और गरीब के लिए अलग-अलग नियम क्यों? हिंदू महिला संग CM उमर अब्दुल्ला की शादी पर भड़के AAP विधायक",
+    "'कुर्सी के लिए कश्मीर का सौदा...,' उमर अब्दुल्ला पर आगा रुहुल्लाह का बड़ा हमला, NC में बगावत से मचेगा तूफान?",
+    "Omar Abdullah-Nidhi Razdan Net Worth : पति उमर अब्दुल्ला से कई गुना ज्यादा अमीर हैं निधि राजदान",
+    "उमर अब्दुल्ला ही नहीं, CM पद पर रहते हुए इन नेताओं ने भी रचाई शादी; पूरी लिस्ट"
    ],
-   "region": "india",
-   "india_link": true,
+   "hindi_news": 12,
    "geos": [
     "IN"
    ],
-   "label_hi": "संजय गुप्ता",
-   "via": [
-    "wikipedia-top-2026-10-31",
-    "google-news:Sanjay Gupta, Indian Director of ‘Kaante’ and ‘Zinda,’ Dies at 59",
-    "google-news:Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
-    "google-news:How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
-    "outlet:NDTV",
-    "outlet:ABP Group",
-    "outlet:HT Media",
-    "outlet:Network18"
-   ],
-   "owners": [
-    "NDTV",
-    "ABP Group",
-    "HT Media",
-    "Network18"
-   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "उमर अब्दुल्ला",
    "reports": [
     {
-     "title": "ऋतिक रोशन ने काबिल डायरेक्टर को दी श्रद्धांजलि, संजय गुप्ता के लिए लिखा- 'आपके साथ एक फिल्म काफी नहीं थी'",
-     "url": "https://ndtv.in/bollywood/hrithik-roshan-tribute-to-kaabil-director-sanjay-gupta-death-said-one-film-was-not-enough-with-you-12265611#publisher=newsstand",
-     "outlet": "NDTV India",
-     "outlet_hi": "एनडीटीवी इंडिया",
-     "owner": "NDTV",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-11-01T01:16:26+00:00"
+     "title": "Omar Abdullah, Nidhi Razdan marry; J&K CM shares",
+     "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:55:41+00:00"
     },
     {
-     "title": "संजय गुप्ता के अंतिम संस्कार में शामिल हुए अभिषेक बच्चन, राकेश रोशन और अन्य सितारे, दी अंतिम श्रद्धांजलि",
-     "url": "https://ndtv.in/bollywood/abhishek-bachchan-rakesh-roshan-and-other-celebs-attended-sanjay-gupta-funeral-and-paid-final-tribute-12265605#publisher=newsstand",
-     "outlet": "NDTV India",
-     "outlet_hi": "एनडीटीवी इंडिया",
-     "owner": "NDTV",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-11-01T01:07:20+00:00"
-    },
-    {
-     "title": "संजय गुप्ता ने 70s के इस सुपरस्टार को बताया था सच्चा जैंटलमैन, जिन्होंने ठुकराई बिग बी की फिल्म, राज कुमार की उतार दी थी विग",
-     "url": "https://ndtv.in/bollywood/sanjay-gupta-described-70s-superstar-feroz-khan-true-gentleman-who-rejected-hera-pheri-with-amitabh-bachchan-removed-raj-kumar-wig-12262589#publisher=newsstand",
-     "outlet": "NDTV India",
-     "outlet_hi": "एनडीटीवी इंडिया",
-     "owner": "NDTV",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-11-01T00:41:01+00:00"
-    },
-    {
-     "title": "संजय गुप्ता की पत्नी अनुराधा कौन है? 22 साल में की थी डायरेक्टर से शादी, फिर तलाक, 6 साल बाद उन्हीं से की शादी",
-     "url": "https://ndtv.in/bollywood/who-is-sanjay-gupta-wife-married-kaante-director-at-the-age-of-22-later-got-divorced-and-remarried-her-6-years-later-12262497#publisher=newsstand",
-     "outlet": "NDTV India",
-     "outlet_hi": "एनडीटीवी इंडिया",
-     "owner": "NDTV",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-11-01T00:40:18+00:00"
-    },
-    {
-     "title": "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि",
-     "url": "https://www.abplive.com/entertainment/bollywood/sanjay-gupta-cremated-abhishek-bachchan-rajpal-yadav-these-bollywood-celebs-pay-tribute-3209397",
-     "outlet": "ABP Live",
-     "outlet_hi": "एबीपी लाइव",
-     "owner": "ABP Group",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-10-31T17:45:29+00:00"
-    },
-    {
-     "title": "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
-     "url": "https://www.hindustantimes.com/india-news/evening-news-brief-october-31-oppn-charges-against-cec-gyanesh-kumar-sanjay-gupta-death-andhra-school-attack-omar-abdullah-101793449593698.html",
+     "title": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+     "url": "https://www.hindustantimes.com/india-news/jk-cm-omar-abdullah-shares-photo-with-journalist-nidhi-razdan-new-journey-began-yesterday-101793442568441.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-31T13:54:38+00:00"
+     "at": "2026-10-31T10:43:40+00:00"
     },
     {
-     "title": "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
-     "url": "https://www.news18.com/india/how-did-sanjay-gupta-die-cctv-captures-filmmakers-fatal-fall-inside-mumbai-home-10406569.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
+     "url": "https://www.indiatoday.in/india/story/jammu-kashmir-cm-omar-abdullah-journalist-nidhi-razdan-wedding-3029297-2026-10-31?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-10-31T10:07:29+00:00"
-    },
-    {
-     "title": "‘Kaante’ filmmaker Sanjay Gupta dies at 59 — Here's what we know about the cause of death",
-     "url": "https://www.livemint.com/news/india/kaante-filmmaker-sanjay-gupta-dies-at-59-heres-what-we-know-about-the-cause-of-death-11793431390841.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T07:30:38+00:00"
+     "at": "2026-10-31T10:32:02+00:00"
     }
    ],
-   "id": "wk-Q644401",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-30",
-   "top": {
-    "IN": 2,
-    "IN-nation": 5
-   },
-   "top_score": 1.19,
-   "top_headlines": [
-    "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
-    "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News",
-    "Supreme Court clears way for reopening of tax probe against ex-CJI’s sons over 2010 property deal | India News"
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network",
+    "outlet:Zee Media",
+    "outlet:Network18",
+    "outlet:ABP Group",
+    "google-news:कौन थीं उमर अब्दुल्ला की पहली पत्नी पायल नाथ और लव मैरेज के 31 साल बाद हुआ था दोनों का तलाक?",
+    "google-news:उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर"
    ],
-   "hindi_owners": []
+   "top": {
+    "IN-hi": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "कौन थीं उमर अब्दुल्ला की पहली पत्नी पायल नाथ और लव मैरेज के 31 साल बाद हुआ था दोनों का तलाक?"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "HT Media",
+    "Zee Media"
+   ]
   },
   {
    "id": "kh-20261101-Q124883782",
@@ -479,16 +568,16 @@
     "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 9,
-    "IN-hi-nation": 9
+    "IN": 6,
+    "IN-nation": 3,
+    "IN-hi-nation": 11
    },
-   "top_score": 1.31,
+   "top_score": 1.17,
    "top_headlines": [
     "'CEC ज्ञानेश कुमार को हटाया जाए, नागरिकों के वोट का अधिकार गंभीर खतरे में', मॉक संसद में बोले खरगे",
+    "At Mock Parliament On Gyanesh Kumar, Meira Kumar Sat On 'Nehru Chair'",
     "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
-    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally",
-    "40 villas, Rs 1.8 crore rent: Rajasthan IAS-IPS couple faces corruption probe"
+    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
    ],
    "hindi_owners": [
     "India Today Group",
@@ -497,230 +586,38 @@
    ]
   },
   {
-   "id": "kh-20261101-Q7289726",
-   "qid": "Q7289726",
-   "title": "Ramlila Maidan",
-   "name": "Ramlila Maidan",
-   "phrase": "Ramlila Maidan",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-   "story_keys": [
-    "ahead",
-    "back",
-    "bloc",
-    "but",
-    "neutral",
-    "rally",
-    "traffic"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-11-01T07:09:39+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "The Hindu Group",
-    "India Today Group",
-    "TV9 Network",
-    "Zee Media",
-    "NDTV",
-    "ABP Group",
-    "DB Corp"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
+   "qid": "Q644401",
+   "title": "Sanjay Gupta (director)",
+   "fame": 293695,
+   "views": 168695,
    "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-10-31T10:33:00+00:00",
    "headlines": [
-    "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-    "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
-    "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
-    "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more"
+    "Sanjay Gupta, Indian Director of ‘Kaante’ and ‘Zinda,’ Dies at 59"
    ],
-   "hindi_headlines": [
-    "Congress Rally Live: रामलीला मैदान की ओर राहुल गांधी का कूच, ओपन बस में अखिलेश भी साथ, कार्यकर्ता कर रहे इंतजार",
-    "'राहुल गांधी के इस ड्रामे के 4 मकसद', रामलीला मैदान रैली पर नड्डा का हमला",
-    "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
-    "रैली पर तकरार: रामलीला मैदान के आयोजन पर बरसी शिवसेना, राहुल गांधी समेत विपक्षी नेताओं को घेरा",
-    "कितने में बुक होता है रामलीला मैदान? जहां विपक्ष कर रहा महारैली"
-   ],
-   "hindi_news": 21,
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
    "geos": [
     "IN"
    ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "रामलीला मैदान",
-   "reports": [
-    {
-     "title": "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more",
-     "url": "https://www.thehindu.com/news/cities/Delhi/india-bloc-rally-ramlila-maidan-november-1-traffic-curbs-roads-to-avoid-timings/article71648423.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T05:23:04+00:00"
-    },
-    {
-     "title": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-     "url": "https://www.hindustantimes.com/india-news/cjp-backs-india-bloc-ramlila-maidan-rally-but-wont-participate-in-it-says-abhijeet-dipke-cites-neutral-platform-identity-101793506703319.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T04:54:25+00:00"
-    },
-    {
-     "title": "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
-     "url": "https://www.news18.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-backs-india-blocs-ramlila-maidan-rally-but-refuses-to-join-ws-rt-10407076.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T17:44:57+00:00"
-    },
-    {
-     "title": "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
-     "url": "https://www.news18.com/india/india-bloc-got-nod-for-ramlila-maidan-rally-no-permission-for-march-from-connaught-place-delhi-police-ws-l-10406221.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T08:45:14+00:00"
-    }
-   ],
+   "label_hi": "संजय गुप्ता",
    "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:Zee Media",
-    "outlet:NDTV",
-    "outlet:ABP Group",
-    "outlet:DB Corp",
-    "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
+    "wikipedia-top-2026-10-31",
+    "google-news:Sanjay Gupta, Indian Director of ‘Kaante’ and ‘Zinda,’ Dies at 59"
    ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
-   ],
-   "hindi_owners": [
-    "Network18",
-    "India Today Group",
-    "TV9 Network",
-    "Zee Media",
-    "NDTV"
-   ]
-  },
-  {
-   "id": "kh-20261101-Q2745305",
-   "qid": "Q2745305",
-   "title": "Omar Abdullah",
-   "name": "Omar Abdullah",
-   "phrase": "CM Omar Abdullah",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-   "story_keys": [
-    "journalist",
-    "share"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-10-31T10:55:41+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "TV9 Network",
-    "Zee Media",
-    "Network18",
-    "ABP Group"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-    "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-    "Omar Abdullah, Nidhi Razdan marry; J&K CM shares"
-   ],
-   "hindi_headlines": [
-    "उमर अब्दुल्ला की पत्नी निधि राजदान कितनी पढ़ी-लिखी हैं? जानें उनकी डिग्री और करियर",
-    "अमीर और गरीब के लिए अलग-अलग नियम क्यों? हिंदू महिला संग CM उमर अब्दुल्ला की शादी पर भड़के AAP विधायक",
-    "'कुर्सी के लिए कश्मीर का सौदा...,' उमर अब्दुल्ला पर आगा रुहुल्लाह का बड़ा हमला, NC में बगावत से मचेगा तूफान?",
-    "Omar Abdullah-Nidhi Razdan Net Worth : पति उमर अब्दुल्ला से कई गुना ज्यादा अमीर हैं निधि राजदान",
-    "उमर अब्दुल्ला ही नहीं, CM पद पर रहते हुए इन नेताओं ने भी रचाई शादी; पूरी लिस्ट"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "उमर अब्दुल्ला",
-   "reports": [
-    {
-     "title": "Omar Abdullah, Nidhi Razdan marry; J&K CM shares",
-     "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:55:41+00:00"
-    },
-    {
-     "title": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-     "url": "https://www.hindustantimes.com/india-news/jk-cm-omar-abdullah-shares-photo-with-journalist-nidhi-razdan-new-journey-began-yesterday-101793442568441.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:43:40+00:00"
-    },
-    {
-     "title": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-     "url": "https://www.indiatoday.in/india/story/jammu-kashmir-cm-omar-abdullah-journalist-nidhi-razdan-wedding-3029297-2026-10-31?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:32:02+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
-    "outlet:Zee Media",
-    "outlet:Network18",
-    "outlet:ABP Group",
-    "google-news:उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर"
-   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q644401",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-30",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "TV9 Network",
-    "HT Media",
-    "Zee Media"
-   ]
+   "hindi_owners": []
   },
   {
    "id": "kh-20261101-Q51403327",
@@ -736,6 +633,7 @@
    "story_keys": [
     "billion",
     "crypto",
+    "hack",
     "theft"
    ],
    "date": "2026-10-31",
@@ -744,8 +642,8 @@
     "France Médias Monde",
     "BBC",
     "Al Jazeera Media Network",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle"
+    "Deutsche Welle",
+    "NDTV"
    ],
    "fame": 250000,
    "news": 250000,
@@ -756,7 +654,7 @@
     "Binance hit by 6.3 billion dollar crypto theft",
     "Crypto firm Binance covers 90% of losses after $6.3bn hack",
     "FBI blames North Korea for record $6.3bn crypto heist from Binance",
-    "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft"
+    "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -806,22 +704,22 @@
      "at": "2026-11-01T02:28:38+00:00"
     },
     {
-     "title": "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-to-resume-withdrawals-after-recovering-95-of-6-3-billion-crypto-theft/articleshow/135418376.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack",
+     "url": "https://www.ndtv.com/world-news/fbi-accuses-north-korean-group-tradertraitor-of-6-billion-binance-hack-12265726#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T05:11:27+00:00"
+     "at": "2026-11-01T02:42:41+00:00"
     }
    ],
    "via": [
     "outlet:France Médias Monde",
     "outlet:BBC",
     "outlet:Al Jazeera Media Network",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:NDTV",
     "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
    ],
    "top": {
@@ -855,12 +753,12 @@
     "take"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-11-01T07:32:56+00:00",
+   "news_at": "2026-11-01T08:01:46+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
     "India Today Group",
+    "The Hindu Group",
     "Network18"
    ],
    "fame": 250000,
@@ -872,8 +770,8 @@
     "Air Chief Marshal Ashutosh Dixit takes charge as new Chief of Air Staff",
     "Ashutosh Dixit takes over as Chief of Air Staff",
     "Air Chief Marshal Dixit takes charge of IAF amid modernisation push",
-    "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
-    "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge"
+    "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge",
+    "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit"
    ],
    "hindi_headlines": [
     "चीन-पाक से कैसे निपटेगा एयरफोर्स, तेजस और AMCA को लेकर क्‍या है प्‍लान? IAF चीफ आशुतोष दीक्षित ने बताया प्‍लान"
@@ -885,6 +783,16 @@
    "label_hi": "आशुतोष दीक्षित",
    "reports": [
     {
+     "title": "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
+     "url": "https://www.thehindu.com/news/national/newly-appointed-chief-of-air-staff-air-chief-marshal-ashutosh-dixit/article71652223.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T08:01:46+00:00"
+    },
+    {
      "title": "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge",
      "url": "https://www.indiatoday.in/newsmo/short-videos/new-iaf-chief-ashutosh-dixit-salutes-mother-and-mother-in-law-after-taking-charge-3029799-2026-11-01?utm_source=rss",
      "outlet": "India Today",
@@ -893,16 +801,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-01T07:32:56+00:00"
-    },
-    {
-     "title": "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
-     "url": "https://www.thehindu.com/news/national/newly-appointed-chief-of-air-staff-air-chief-marshal-ashutosh-dixit/article71652223.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T06:11:33+00:00"
     },
     {
      "title": "Air Chief Marshal Dixit takes charge of IAF amid modernisation push",
@@ -948,16 +846,16 @@
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
+    "outlet:The Hindu Group",
     "outlet:Network18",
     "google-news:Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
    ],
    "top": {
-    "IN": 8,
-    "IN-nation": 5
+    "IN": 7,
+    "IN-nation": 4
    },
-   "top_score": 0.89,
+   "top_score": 0.955,
    "top_headlines": [
     "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
    ],
@@ -1012,10 +910,9 @@
    "coords": null,
    "has_coords": true,
    "top": {
-    "IN": 7,
-    "IN-nation": 4
+    "IN-nation": 17
    },
-   "top_score": 0.955,
+   "top_score": 0.12,
    "top_headlines": [
     "Uttarakhand helicopter crash reiterates concerns raised by Parliamentary panel"
    ],
@@ -1034,11 +931,10 @@
     "HT Media",
     "Network18",
     "Bennett, Coleman & Co.",
-    "India Today Group",
     "The Hindu Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1098,16 +994,6 @@
      "at": "2026-11-01T05:26:41+00:00"
     },
     {
-     "title": "Protest, then do some shopping: Rahul Gandhi's appeal after traders oppose rally",
-     "url": "https://www.indiatoday.in/india/story/rahul-gandhi-urges-india-bloc-rallygoers-protest-support-delhi-traders-3029710-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T04:48:42+00:00"
-    },
-    {
      "title": "‘Don’t just protest, shop’: Rahul urges INDIA bloc rally to support Delhi traders",
      "url": "https://timesofindia.indiatimes.com/india/dont-just-protest-shop-rahul-urges-india-bloc-rally-to-support-delhi-traders/articleshow/135417428.cms",
      "outlet": "Times of India",
@@ -1136,127 +1022,35 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-31T22:55:46+00:00"
+    },
+    {
+     "title": "18% GST on booking Ramlila Maidan as protest site as Rahul Gandhi’s INDIA bloc rally on Nov 1; what are other charges?",
+     "url": "https://www.livemint.com/news/india/18-gst-on-booking-ramlila-maidan-as-protest-site-as-rahul-gandhi-s-india-bloc-rally-on-nov-1-what-are-other-charges-11793447830958.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T13:15:54+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
     "outlet:The Hindu Group"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 2,
-    "IN-nation": 9
+    "IN": 6,
+    "IN-nation": 3
    },
-   "top_score": 1.13,
+   "top_score": 1.02,
    "top_headlines": [
+    "At Mock Parliament On Gyanesh Kumar, Meira Kumar Sat On 'Nehru Chair'",
     "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
     "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q4834146",
-   "title": "B. P. Singh",
-   "fame": 100000,
-   "views": 0,
-   "traffic": 0,
-   "news": 100000,
-   "news_at": "2026-11-01T07:48:04.964736+00:00",
-   "headlines": [
-    "Hon’ble Union Minister, Shri Rajiv Ranjan Singh, to visit Gangtok and Mangan Districts, Sikkim on 2nd November 2026",
-    "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
-    "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
-    "Honey Singh's nephew among 2 killed as car crashes into parked tractor in Punjab"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "बृजेन्द्र पाल सिंह",
-   "via": [
-    "google-news:Hon’ble Union Minister, Shri Rajiv Ranjan Singh, to visit Gangtok and Mangan Districts, Sikkim on 2nd November 2026",
-    "google-news:Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
-    "google-news:Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
-    "outlet:Government of India",
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "Government of India",
-    "HT Media",
-    "Network18",
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "Hon’ble Union Minister, Shri Rajiv Ranjan Singh, to visit Gangtok and Mangan Districts, Sikkim on 2nd November 2026",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331082",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-01T07:48:04.964736+00:00"
-    },
-    {
-     "title": "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
-     "url": "https://www.hindustantimes.com/india-news/op-sindoor-drew-non-negotiable-red-line-on-terrorism-rajnath-singh-101793516624962.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T07:03:44+00:00"
-    },
-    {
-     "title": "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
-     "url": "https://www.news18.com/india/honey-singhs-nephew-among-2-killed-as-car-rams-into-tractor-trolley-in-jalandhar-ws-l-10407378.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T06:42:04+00:00"
-    },
-    {
-     "title": "Honey Singh's nephew among 2 killed as car crashes into parked tractor in Punjab",
-     "url": "https://www.indiatoday.in/india/story/jalandhar-car-crash-honey-singh-nephew-among-two-killed-3029737-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T06:03:33+00:00"
-    },
-    {
-     "title": "End Of An Era: Air Chief AP Singh Retires As Indian Air Force Prepares For New Leadership",
-     "url": "https://www.news18.com/india/end-of-an-era-air-chief-ap-singh-retires-as-indian-air-force-prepares-for-new-leadership-ws-kl-10406058.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T03:40:32+00:00"
-    }
-   ],
-   "id": "wk-Q4834146",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Depression over Bay of Bengal may bring rain to Telangana, heavy showers likely in nine districts on November 2"
    ],
    "hindi_owners": []
   },
@@ -1643,190 +1437,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "qid": "Q259559",
-   "title": "Susan Saint James",
-   "fame": 12255,
-   "views": 12255,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q259559",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-26",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q965634",
-   "title": "Mišo Kovač",
-   "fame": 11959,
-   "views": 11959,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q965634",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-31",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q983618",
-   "title": "Dónal Lunny",
-   "fame": 10918,
-   "views": 10918,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q983618",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-23",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5103870",
-   "title": "Choi Bool-am",
-   "fame": 10045,
-   "views": 10045,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5103870",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-29",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q468843",
-   "title": "Dolores Huerta",
-   "fame": 9129,
-   "views": 9129,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q468843",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-28",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q5296666",
-   "title": "Donnie Iris",
-   "fame": 8464,
-   "views": 8464,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5296666",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-26",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1844,6 +1454,7 @@
    "story_keys": [
     "billion",
     "crypto",
+    "hack",
     "theft"
    ],
    "date": "2026-10-31",
@@ -1852,8 +1463,8 @@
     "France Médias Monde",
     "BBC",
     "Al Jazeera Media Network",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle"
+    "Deutsche Welle",
+    "NDTV"
    ],
    "fame": 250000,
    "news": 250000,
@@ -1864,7 +1475,7 @@
     "Binance hit by 6.3 billion dollar crypto theft",
     "Crypto firm Binance covers 90% of losses after $6.3bn hack",
     "FBI blames North Korea for record $6.3bn crypto heist from Binance",
-    "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft"
+    "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1914,22 +1525,22 @@
      "at": "2026-11-01T02:28:38+00:00"
     },
     {
-     "title": "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-to-resume-withdrawals-after-recovering-95-of-6-3-billion-crypto-theft/articleshow/135418376.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack",
+     "url": "https://www.ndtv.com/world-news/fbi-accuses-north-korean-group-tradertraitor-of-6-billion-binance-hack-12265726#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T05:11:27+00:00"
+     "at": "2026-11-01T02:42:41+00:00"
     }
    ],
    "via": [
     "outlet:France Médias Monde",
     "outlet:BBC",
     "outlet:Al Jazeera Media Network",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:NDTV",
     "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
    ],
    "top": {
@@ -2052,183 +1663,28 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q965634",
-   "title": "Mišo Kovač",
-   "fame": 11959,
-   "views": 11959,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q965634",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-31",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5103870",
-   "title": "Choi Bool-am",
-   "fame": 10045,
-   "views": 10045,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5103870",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-29",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q259559",
-   "title": "Susan Saint James",
-   "fame": 12255,
-   "views": 12255,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q259559",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-26",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5296666",
-   "title": "Donnie Iris",
-   "fame": 8464,
-   "views": 8464,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5296666",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-26",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q983618",
-   "title": "Dónal Lunny",
-   "fame": 10918,
-   "views": 10918,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-10-31"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q983618",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-23",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "notes": [
-  "outlets: 1200 headlines from 30 feeds (19 owners), 19 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261031-rahul-gandhi-protest, nw-20261101-gen-z-led-protest",
-  "explainers: 7 kh- stories (on): kh-20261101-Q1353, kh-20261101-Q124883782, kh-20261101-Q7289726, kh-20261101-Q2745305; dropped: explainer Commercial LPG / ATF: no Wikipedia article that can be its centre; explainer Ashwini Vaishnaw: fewer than 3 owners' headlines name it and the story; explainer Vande Bharat Sleeper: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1205 headlines from 30 feeds (19 owners), 8 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261031-rahul-gandhi-protest, nw-20261101-gen-z-led-protest",
+  "explainers: 7 kh- stories (on): kh-20261101-Q7289726, kh-20261101-Q1353, kh-20261101-Q2745305, kh-20261101-Q124883782; dropped: explainer Commercial LPG / ATF: no Wikipedia article that can be its centre; explainer Ashwini Vaishnaw: fewer than 3 owners' headlines name it and the story; explainer Vande Bharat Sleeper: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
-  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again"
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1200,
+  "headlines": 1205,
   "feeds": 30,
   "owners": 19,
-  "matched": 19,
-  "corroborated": 11
+  "matched": 8,
+  "corroborated": 9
  },
  "emerging": [
   {
@@ -2244,11 +1700,10 @@
     "HT Media",
     "Network18",
     "Bennett, Coleman & Co.",
-    "India Today Group",
     "The Hindu Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2308,16 +1763,6 @@
      "at": "2026-11-01T05:26:41+00:00"
     },
     {
-     "title": "Protest, then do some shopping: Rahul Gandhi's appeal after traders oppose rally",
-     "url": "https://www.indiatoday.in/india/story/rahul-gandhi-urges-india-bloc-rallygoers-protest-support-delhi-traders-3029710-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T04:48:42+00:00"
-    },
-    {
      "title": "‘Don’t just protest, shop’: Rahul urges INDIA bloc rally to support Delhi traders",
      "url": "https://timesofindia.indiatimes.com/india/dont-just-protest-shop-rahul-urges-india-bloc-rally-to-support-delhi-traders/articleshow/135417428.cms",
      "outlet": "Times of India",
@@ -2346,23 +1791,33 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-10-31T22:55:46+00:00"
+    },
+    {
+     "title": "18% GST on booking Ramlila Maidan as protest site as Rahul Gandhi’s INDIA bloc rally on Nov 1; what are other charges?",
+     "url": "https://www.livemint.com/news/india/18-gst-on-booking-ramlila-maidan-as-protest-site-as-rahul-gandhi-s-india-bloc-rally-on-nov-1-what-are-other-charges-11793447830958.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T13:15:54+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
     "outlet:The Hindu Group"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 2,
-    "IN-nation": 9
+    "IN": 6,
+    "IN-nation": 3
    },
-   "top_score": 1.13,
+   "top_score": 1.02,
    "top_headlines": [
+    "At Mock Parliament On Gyanesh Kumar, Meira Kumar Sat On 'Nehru Chair'",
     "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
     "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
    ],
@@ -2448,6 +1903,133 @@
  ],
  "explainers": [
   {
+   "id": "kh-20261101-Q7289726",
+   "qid": "Q7289726",
+   "title": "Ramlila Maidan",
+   "name": "Ramlila Maidan",
+   "phrase": "Ramlila Maidan",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+   "story_keys": [
+    "ahead",
+    "back",
+    "bloc",
+    "but",
+    "neutral",
+    "rally",
+    "traffic"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-11-01T07:50:09+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "The Hindu Group",
+    "India Today Group",
+    "TV9 Network",
+    "Zee Media",
+    "NDTV",
+    "ABP Group",
+    "DB Corp"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+    "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
+    "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
+    "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more"
+   ],
+   "hindi_headlines": [
+    "Congress Rally Live: रामलीला मैदान की ओर राहुल गांधी का कूच, ओपन बस में अखिलेश भी साथ, कार्यकर्ता कर रहे इंतजार",
+    "'राहुल गांधी के इस ड्रामे के 4 मकसद', रामलीला मैदान रैली पर नड्डा का हमला",
+    "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
+    "रैली पर तकरार: रामलीला मैदान के आयोजन पर बरसी शिवसेना, राहुल गांधी समेत विपक्षी नेताओं को घेरा",
+    "कितने में बुक होता है रामलीला मैदान? जहां विपक्ष कर रहा महारैली"
+   ],
+   "hindi_news": 23,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "रामलीला मैदान",
+   "reports": [
+    {
+     "title": "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more",
+     "url": "https://www.thehindu.com/news/cities/Delhi/india-bloc-rally-ramlila-maidan-november-1-traffic-curbs-roads-to-avoid-timings/article71648423.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T05:23:04+00:00"
+    },
+    {
+     "title": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
+     "url": "https://www.hindustantimes.com/india-news/cjp-backs-india-bloc-ramlila-maidan-rally-but-wont-participate-in-it-says-abhijeet-dipke-cites-neutral-platform-identity-101793506703319.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T04:54:25+00:00"
+    },
+    {
+     "title": "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
+     "url": "https://www.news18.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-backs-india-blocs-ramlila-maidan-rally-but-refuses-to-join-ws-rt-10407076.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T17:44:57+00:00"
+    },
+    {
+     "title": "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
+     "url": "https://www.news18.com/india/india-bloc-got-nod-for-ramlila-maidan-rally-no-permission-for-march-from-connaught-place-delhi-police-ws-l-10406221.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T08:45:14+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "outlet:Zee Media",
+    "outlet:NDTV",
+    "outlet:ABP Group",
+    "outlet:DB Corp",
+    "google-news:ओवैसी, राजभर, BJP, चंद्रशेखर... रामलीला मैदान में कांग्रेस नहीं अखिलेश पर होगी इनकी नजर!",
+    "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "India Today Group",
+    "TV9 Network",
+    "Zee Media",
+    "NDTV"
+   ]
+  },
+  {
    "id": "kh-20261101-Q1353",
    "qid": "Q1353",
    "title": "Delhi",
@@ -2491,12 +2073,12 @@
    ],
    "hindi_headlines": [
     "दिल्ली में अक्टूबर का औसत वायु गुणवत्ता सूचकांक (एक्यूआई) पिछले आठ वर्षों में सबसे कम 166 दर्ज किया गया",
+    "न फूल सूखेंगे, न खूबसूरती होगी कम! दिल्ली एक्सपो में छाई असली फूलों से बनी ज्वेलरी, कीमत ₹150",
     "दिवाली शॉपिंग करनी है? दिल्ली में शुरू हुआ 'द ग्रैंड एक्सपो 2026', एक छत के नीचे मिलेंगे हस्तशिल्प उत्पाद",
     "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
-    "दिवाली से पहले महंगा हुआ LPG सिलेंडर, दिल्ली से मुंबई तक बढ़ गए रेट",
-    "दिल्ली में विपक्ष की महारैली, अखिलेश यादव ने CEC ज्ञानेश कुमार के इस्तीफे की मांग"
+    "LPG सिलेंडर हुआ महंगा, दिवाली से पहले झटका, दिल्ली में ये नए रेट"
    ],
-   "hindi_news": 40,
+   "hindi_news": 39,
    "geos": [
     "IN"
    ],
@@ -2580,10 +2162,10 @@
     "google-news:Couple, daughter killed in Delhi-Mumbai Expressway crash; 2 children pulled out alive"
    ],
    "top": {
-    "IN": 4,
+    "IN": 3,
     "IN-nation": 2
    },
-   "top_score": 1.135,
+   "top_score": 1.185,
    "top_headlines": [
     "Ban on construction, non-Delhi-registered vehicles below BS-VI from November 1"
    ],
@@ -2591,6 +2173,111 @@
     "Network18",
     "TV9 Network",
     "India Today Group"
+   ]
+  },
+  {
+   "id": "kh-20261101-Q2745305",
+   "qid": "Q2745305",
+   "title": "Omar Abdullah",
+   "name": "Omar Abdullah",
+   "phrase": "CM Omar Abdullah",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+   "story_keys": [
+    "journalist",
+    "share"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-10-31T10:55:41+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "Zee Media",
+    "Network18",
+    "ABP Group"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+    "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
+    "Omar Abdullah, Nidhi Razdan marry; J&K CM shares"
+   ],
+   "hindi_headlines": [
+    "उमर अब्दुल्ला की पत्नी निधि राजदान कितनी पढ़ी-लिखी हैं? जानें उनकी डिग्री और करियर",
+    "अमीर और गरीब के लिए अलग-अलग नियम क्यों? हिंदू महिला संग CM उमर अब्दुल्ला की शादी पर भड़के AAP विधायक",
+    "'कुर्सी के लिए कश्मीर का सौदा...,' उमर अब्दुल्ला पर आगा रुहुल्लाह का बड़ा हमला, NC में बगावत से मचेगा तूफान?",
+    "Omar Abdullah-Nidhi Razdan Net Worth : पति उमर अब्दुल्ला से कई गुना ज्यादा अमीर हैं निधि राजदान",
+    "उमर अब्दुल्ला ही नहीं, CM पद पर रहते हुए इन नेताओं ने भी रचाई शादी; पूरी लिस्ट"
+   ],
+   "hindi_news": 12,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "उमर अब्दुल्ला",
+   "reports": [
+    {
+     "title": "Omar Abdullah, Nidhi Razdan marry; J&K CM shares",
+     "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:55:41+00:00"
+    },
+    {
+     "title": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
+     "url": "https://www.hindustantimes.com/india-news/jk-cm-omar-abdullah-shares-photo-with-journalist-nidhi-razdan-new-journey-began-yesterday-101793442568441.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:43:40+00:00"
+    },
+    {
+     "title": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
+     "url": "https://www.indiatoday.in/india/story/jammu-kashmir-cm-omar-abdullah-journalist-nidhi-razdan-wedding-3029297-2026-10-31?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:32:02+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network",
+    "outlet:Zee Media",
+    "outlet:Network18",
+    "outlet:ABP Group",
+    "google-news:कौन थीं उमर अब्दुल्ला की पहली पत्नी पायल नाथ और लव मैरेज के 31 साल बाद हुआ था दोनों का तलाक?",
+    "google-news:उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर"
+   ],
+   "top": {
+    "IN-hi": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "कौन थीं उमर अब्दुल्ला की पहली पत्नी पायल नाथ और लव मैरेज के 31 साल बाद हुआ था दोनों का तलाक?"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "HT Media",
+    "Zee Media"
    ]
   },
   {
@@ -2753,247 +2440,21 @@
     "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 9,
-    "IN-hi-nation": 9
+    "IN": 6,
+    "IN-nation": 3,
+    "IN-hi-nation": 11
    },
-   "top_score": 1.31,
+   "top_score": 1.17,
    "top_headlines": [
     "'CEC ज्ञानेश कुमार को हटाया जाए, नागरिकों के वोट का अधिकार गंभीर खतरे में', मॉक संसद में बोले खरगे",
+    "At Mock Parliament On Gyanesh Kumar, Meira Kumar Sat On 'Nehru Chair'",
     "INDIA bloc holds symbolic ‘public impeachment’ of CEC Gyanesh Kumar on six charges",
-    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally",
-    "40 villas, Rs 1.8 crore rent: Rajasthan IAS-IPS couple faces corruption probe"
+    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
    ],
    "hindi_owners": [
     "India Today Group",
     "TV9 Network",
     "HT Media"
-   ]
-  },
-  {
-   "id": "kh-20261101-Q7289726",
-   "qid": "Q7289726",
-   "title": "Ramlila Maidan",
-   "name": "Ramlila Maidan",
-   "phrase": "Ramlila Maidan",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-   "story_keys": [
-    "ahead",
-    "back",
-    "bloc",
-    "but",
-    "neutral",
-    "rally",
-    "traffic"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-11-01T07:09:39+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "The Hindu Group",
-    "India Today Group",
-    "TV9 Network",
-    "Zee Media",
-    "NDTV",
-    "ABP Group",
-    "DB Corp"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-    "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
-    "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
-    "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more"
-   ],
-   "hindi_headlines": [
-    "Congress Rally Live: रामलीला मैदान की ओर राहुल गांधी का कूच, ओपन बस में अखिलेश भी साथ, कार्यकर्ता कर रहे इंतजार",
-    "'राहुल गांधी के इस ड्रामे के 4 मकसद', रामलीला मैदान रैली पर नड्डा का हमला",
-    "इंडिया ब्लॉक की दिल्ली रैली, रामलीला मैदान में विपक्षी नेताओं का जमावड़ा और उठाए गए प्रमुख मुद्दे",
-    "रैली पर तकरार: रामलीला मैदान के आयोजन पर बरसी शिवसेना, राहुल गांधी समेत विपक्षी नेताओं को घेरा",
-    "कितने में बुक होता है रामलीला मैदान? जहां विपक्ष कर रहा महारैली"
-   ],
-   "hindi_news": 21,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "रामलीला मैदान",
-   "reports": [
-    {
-     "title": "INDIA bloc Ramlila Maidan rally traffic curbs on November 1: Which roads to avoid, timing and more",
-     "url": "https://www.thehindu.com/news/cities/Delhi/india-bloc-rally-ramlila-maidan-november-1-traffic-curbs-roads-to-avoid-timings/article71648423.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T05:23:04+00:00"
-    },
-    {
-     "title": "CJP backs INDIA bloc's Ramlila Maidan rally, but won't participate in it, says Dipke; cites ‘neutral platform’ identity",
-     "url": "https://www.hindustantimes.com/india-news/cjp-backs-india-bloc-ramlila-maidan-rally-but-wont-participate-in-it-says-abhijeet-dipke-cites-neutral-platform-identity-101793506703319.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T04:54:25+00:00"
-    },
-    {
-     "title": "CJP's Abhijeet Dipke Meets Mamata Banerjee, Backs INDIA Bloc's Ramlila Maidan Rally But Refuses To Join",
-     "url": "https://www.news18.com/india/cjps-abhijeet-dipke-meets-mamata-banerjee-backs-india-blocs-ramlila-maidan-rally-but-refuses-to-join-ws-rt-10407076.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T17:44:57+00:00"
-    },
-    {
-     "title": "INDIA Bloc Got Nod For Ramlila Maidan Rally, No Permission For March From CP: Delhi Police",
-     "url": "https://www.news18.com/india/india-bloc-got-nod-for-ramlila-maidan-rally-no-permission-for-march-from-connaught-place-delhi-police-ws-l-10406221.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T08:45:14+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:Zee Media",
-    "outlet:NDTV",
-    "outlet:ABP Group",
-    "outlet:DB Corp",
-    "google-news:रामलीला मैदान रैली से पहले रिजिजू के कांग्रेस से 5 सवाल, CEC ज्ञानेश कुमार पर क्या कहा?"
-   ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "'Fair of Thugs': BJP takes swipe at opposition with poster ahead of massive INDIA bloc rally"
-   ],
-   "hindi_owners": [
-    "Network18",
-    "India Today Group",
-    "TV9 Network",
-    "Zee Media",
-    "NDTV"
-   ]
-  },
-  {
-   "id": "kh-20261101-Q2745305",
-   "qid": "Q2745305",
-   "title": "Omar Abdullah",
-   "name": "Omar Abdullah",
-   "phrase": "CM Omar Abdullah",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-   "story_keys": [
-    "journalist",
-    "share"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-10-31T10:55:41+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "TV9 Network",
-    "Zee Media",
-    "Network18",
-    "ABP Group"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-    "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-    "Omar Abdullah, Nidhi Razdan marry; J&K CM shares"
-   ],
-   "hindi_headlines": [
-    "उमर अब्दुल्ला की पत्नी निधि राजदान कितनी पढ़ी-लिखी हैं? जानें उनकी डिग्री और करियर",
-    "अमीर और गरीब के लिए अलग-अलग नियम क्यों? हिंदू महिला संग CM उमर अब्दुल्ला की शादी पर भड़के AAP विधायक",
-    "'कुर्सी के लिए कश्मीर का सौदा...,' उमर अब्दुल्ला पर आगा रुहुल्लाह का बड़ा हमला, NC में बगावत से मचेगा तूफान?",
-    "Omar Abdullah-Nidhi Razdan Net Worth : पति उमर अब्दुल्ला से कई गुना ज्यादा अमीर हैं निधि राजदान",
-    "उमर अब्दुल्ला ही नहीं, CM पद पर रहते हुए इन नेताओं ने भी रचाई शादी; पूरी लिस्ट"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "उमर अब्दुल्ला",
-   "reports": [
-    {
-     "title": "Omar Abdullah, Nidhi Razdan marry; J&K CM shares",
-     "url": "https://economictimes.indiatimes.com/news/india/omar-abdullah-nidhi-razdan-get-married-jk-cm-shares-new-journey-post/articleshow/135398512.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:55:41+00:00"
-    },
-    {
-     "title": "‘New journey began’: J&K CM Omar Abdullah shares photo with journalist Nidhi Razdan, adds ring emoji",
-     "url": "https://www.hindustantimes.com/india-news/jk-cm-omar-abdullah-shares-photo-with-journalist-nidhi-razdan-new-journey-began-yesterday-101793442568441.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:43:40+00:00"
-    },
-    {
-     "title": "J&K Chief Minister Omar Abdullah marries journalist Nidhi Razdan",
-     "url": "https://www.indiatoday.in/india/story/jammu-kashmir-cm-omar-abdullah-journalist-nidhi-razdan-wedding-3029297-2026-10-31?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T10:32:02+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
-    "outlet:Zee Media",
-    "outlet:Network18",
-    "outlet:ABP Group",
-    "google-news:उमर अब्दुल्ला ने पत्रकार निधि राजदान से की शादी, सोशल मीडिया पर शेयर की पहली तस्वीर"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "TV9 Network",
-    "HT Media",
-    "Zee Media"
    ]
   },
   {
@@ -3010,6 +2471,7 @@
    "story_keys": [
     "billion",
     "crypto",
+    "hack",
     "theft"
    ],
    "date": "2026-10-31",
@@ -3018,8 +2480,8 @@
     "France Médias Monde",
     "BBC",
     "Al Jazeera Media Network",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle"
+    "Deutsche Welle",
+    "NDTV"
    ],
    "fame": 250000,
    "news": 250000,
@@ -3030,7 +2492,7 @@
     "Binance hit by 6.3 billion dollar crypto theft",
     "Crypto firm Binance covers 90% of losses after $6.3bn hack",
     "FBI blames North Korea for record $6.3bn crypto heist from Binance",
-    "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft"
+    "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3080,22 +2542,22 @@
      "at": "2026-11-01T02:28:38+00:00"
     },
     {
-     "title": "Binance to resume withdrawals after recovering 95% of $6.3 billion crypto theft",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/binance-to-resume-withdrawals-after-recovering-95-of-6-3-billion-crypto-theft/articleshow/135418376.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "FBI Accuses North Korean Group 'TraderTraitor' Of $6 Billion Binance Hack",
+     "url": "https://www.ndtv.com/world-news/fbi-accuses-north-korean-group-tradertraitor-of-6-billion-binance-hack-12265726#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T05:11:27+00:00"
+     "at": "2026-11-01T02:42:41+00:00"
     }
    ],
    "via": [
     "outlet:France Médias Monde",
     "outlet:BBC",
     "outlet:Al Jazeera Media Network",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:NDTV",
     "google-news:FBI blames North Korea for record $6.3bn crypto heist from Binance"
    ],
    "top": {
@@ -3129,12 +2591,12 @@
     "take"
    ],
    "date": "2026-10-31",
-   "news_at": "2026-11-01T07:32:56+00:00",
+   "news_at": "2026-11-01T08:01:46+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
     "India Today Group",
+    "The Hindu Group",
     "Network18"
    ],
    "fame": 250000,
@@ -3146,8 +2608,8 @@
     "Air Chief Marshal Ashutosh Dixit takes charge as new Chief of Air Staff",
     "Ashutosh Dixit takes over as Chief of Air Staff",
     "Air Chief Marshal Dixit takes charge of IAF amid modernisation push",
-    "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
-    "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge"
+    "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge",
+    "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit"
    ],
    "hindi_headlines": [
     "चीन-पाक से कैसे निपटेगा एयरफोर्स, तेजस और AMCA को लेकर क्‍या है प्‍लान? IAF चीफ आशुतोष दीक्षित ने बताया प्‍लान"
@@ -3159,6 +2621,16 @@
    "label_hi": "आशुतोष दीक्षित",
    "reports": [
     {
+     "title": "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
+     "url": "https://www.thehindu.com/news/national/newly-appointed-chief-of-air-staff-air-chief-marshal-ashutosh-dixit/article71652223.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T08:01:46+00:00"
+    },
+    {
      "title": "New IAF chief Ashutosh Dixit salutes mother and mother-in-law after taking charge",
      "url": "https://www.indiatoday.in/newsmo/short-videos/new-iaf-chief-ashutosh-dixit-salutes-mother-and-mother-in-law-after-taking-charge-3029799-2026-11-01?utm_source=rss",
      "outlet": "India Today",
@@ -3167,16 +2639,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-01T07:32:56+00:00"
-    },
-    {
-     "title": "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit",
-     "url": "https://www.thehindu.com/news/national/newly-appointed-chief-of-air-staff-air-chief-marshal-ashutosh-dixit/article71652223.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T06:11:33+00:00"
     },
     {
      "title": "Air Chief Marshal Dixit takes charge of IAF amid modernisation push",
@@ -3222,16 +2684,16 @@
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
+    "outlet:The Hindu Group",
     "outlet:Network18",
     "google-news:Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
    ],
    "top": {
-    "IN": 8,
-    "IN-nation": 5
+    "IN": 7,
+    "IN-nation": 4
    },
-   "top_score": 0.89,
+   "top_score": 0.955,
    "top_headlines": [
     "Air Chief Marshal Ashutosh Dixit takes charge as new IAF chief amid modernisation push | India News"
    ],
