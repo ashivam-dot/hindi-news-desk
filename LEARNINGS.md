@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-10-31T20:58:00+00:00. Scored Shorts (views at 24 h): 96. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-10-31T23:59:34+00:00. Scored Shorts (views at 24 h): 96. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 45 views at 24 h.
 Retention: a typical Short is watched 50.8% through; a group's retention is blended into its lift at 0.5.
@@ -21,17 +21,17 @@ Retention: a typical Short is watched 50.8% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261031-Q140076608 | 2026-10-31T18:32 | news | world | naam-niyam | india | 17 |  |  |
-| kh-20261031-Q124883782 | 2026-10-31T14:54 | politics | india | rajneeti | india | 1149 | 1149 |  |
+| kh-20261031-Q140076608 | 2026-10-31T18:32 | news | world | naam-niyam | india | 55 |  |  |
+| kh-20261031-Q124883782 | 2026-10-31T14:54 | politics | india | rajneeti | india | 1159 | 1149 |  |
 | kh-20261031-Q1058-update | 2026-10-31T09:45 | news | india | naam-niyam | india | 7 | 1 |  |
-| kh-20261031-Q131292408 | 2026-10-31T05:53 | news | india | other | india | 7 | 2 |  |
-| kh-20261031-Q229058 | 2026-10-31T01:51 | science | india | other | india | 10 | 1 |  |
-| kh-20261030-Q10218 | 2026-10-30T16:19 | economy | india | naam-niyam | india | 58 | 24 | 52 |
-| kh-20261030-Q4746875 | 2026-10-30T12:08 | news | india | rajneeti | india | 172 | 74 | 161 |
-| kh-20261030-Q124883782 | 2026-10-30T09:52 | politics | india | rajneeti | india | 891 | 6 | 361 |
+| kh-20261031-Q131292408 | 2026-10-31T05:53 | news | india | other | india | 9 | 2 |  |
+| kh-20261031-Q229058 | 2026-10-31T01:51 | science | india | other | india | 12 | 1 |  |
+| kh-20261030-Q10218 | 2026-10-30T16:19 | economy | india | naam-niyam | india | 60 | 24 | 52 |
+| kh-20261030-Q4746875 | 2026-10-30T12:08 | news | india | rajneeti | india | 182 | 74 | 161 |
+| kh-20261030-Q124883782 | 2026-10-30T09:52 | politics | india | rajneeti | india | 979 | 6 | 361 |
 | kh-20261030-Q1058 | 2026-10-30T06:18 | news | india | rajneeti | india | 641 | 226 | 554 |
 | kh-20261029-Q10218 | 2026-10-29T17:34 | news | india | naam-niyam | india | 58 | 41 | 53 |
-| kh-20261029-Q140632219-update | 2026-10-29T16:40 | court | india | naam-niyam | india | 75 | 41 | 69 |
+| kh-20261029-Q140632219-update | 2026-10-29T16:40 | court | india | naam-niyam | india | 76 | 41 | 69 |
 | kh-20261029-Q1185 | 2026-10-29T14:00 | news | india | other | india | 26 | 22 | 26 |
 | kh-20261026-Q37181 | 2026-10-26T16:47 | news | world | naam-niyam | india | 13 |  | 5 |
 | kh-20261025-Q19867977 | 2026-10-25T04:06 | world | world | other | india | 7 | 1 | 3 |
