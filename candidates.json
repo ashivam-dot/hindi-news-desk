@@ -1,23 +1,28 @@
 {
- "at": "2026-11-01T15:45:40+00:00",
+ "at": "2026-11-01T15:59:57+00:00",
  "trending": [
   {
    "qid": "Q16296",
    "title": "Patrick Stewart",
-   "fame": 450119,
+   "fame": 575119,
    "views": 450119,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-11-01T05:11:00+00:00",
+   "headlines": [
+    "‘SNL’ Pays Tribute To Patrick Stewart With Clip From His 1994 Episode"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": "पैट्रिक स्टिवर्ट",
    "via": [
-    "wikipedia-top-2026-10-31"
+    "wikipedia-top-2026-10-31",
+    "google-news:‘SNL’ Pays Tribute To Patrick Stewart With Clip From His 1994 Episode"
    ],
    "owners": [],
    "reports": [],
@@ -31,95 +36,159 @@
    "hindi_owners": []
   },
   {
-   "id": "kh-20261101-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-   "story_keys": [
-    "call"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T14:28:49+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
+   "qid": null,
+   "title": "2026 Bangladesh garment sector minimum wage protests",
+   "fame": 300000,
    "views": 0,
    "traffic": 0,
+   "news": 300000,
+   "news_at": "2026-11-01T15:31:31+00:00",
    "headlines": [
-    "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-    "CJI Surya Kant calls for review of urgent case listing procedures",
-    "CJI calls for strengthening public confidence in High Courts",
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
+    "Bangladesh forms wage board as garment workers protest",
+    "Bangladesh sets up wage board as garment workers' unrest shuts factories",
+    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
    "geos": [
-    "IN"
+    "IN",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Bangladesh forms wage board as garment workers protest",
+    "google-news:Bangladesh sets up wage board as garment workers' unrest shuts factories",
+    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
+     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:31:31+00:00"
+    },
+    {
+     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T09:05:53+00:00"
+    }
+   ],
+   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-01",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Bangladesh forms wage board as garment workers protest"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q644401",
+   "title": "Sanjay Gupta (director)",
+   "fame": 243695,
+   "views": 168695,
+   "traffic": 0,
+   "news": 75000,
+   "news_at": "2026-10-31T17:45:29+00:00",
+   "headlines": [
+    "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+    "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed"
+   ],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि"
    ],
    "region": "india",
    "india_link": true,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "संजय गुप्ता",
+   "via": [
+    "wikipedia-top-2026-10-31",
+    "google-news:Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+    "google-news:How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
+    "google-news:पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि",
+    "outlet:ABP Group",
+    "outlet:HT Media",
+    "outlet:Network18"
+   ],
+   "owners": [
+    "ABP Group",
+    "HT Media",
+    "Network18"
+   ],
    "reports": [
     {
-     "title": "CJI calls for strengthening public confidence in High Courts",
-     "url": "https://www.thehindu.com/news/national/kerala/cji-calls-for-strengthening-public-confidence-in-high-courts/article71652566.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T14:28:49+00:00"
+     "title": "पंचतत्व में विलीन हुए फिल्ममेकर संजय गुप्ता, बॉलीवुड सितारों ने दी श्रद्धांजलि",
+     "url": "https://www.abplive.com/entertainment/bollywood/sanjay-gupta-cremated-abhishek-bachchan-rajpal-yadav-these-bollywood-celebs-pay-tribute-3209397",
+     "outlet": "ABP Live",
+     "outlet_hi": "एबीपी लाइव",
+     "owner": "ABP Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-10-31T17:45:29+00:00"
     },
     {
-     "title": "CJI Surya Kant calls for review of urgent case listing procedures",
-     "url": "https://www.indiatoday.in/india/law-news/story/cji-surya-kant-urgent-case-listing-high-court-autonomy-ptag-3029969-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T11:36:29+00:00"
-    },
-    {
-     "title": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-     "url": "https://www.hindustantimes.com/india-news/cji-kant-calls-for-introspection-on-need-to-improve-responsiveness-of-judicial-process-101793532771816.html",
+     "title": "Evening News Brief October 31: Oppn levels 6 charges against CEC Gyanesh Kumar; filmmaker Sanjay Gupta passes away",
+     "url": "https://www.hindustantimes.com/india-news/evening-news-brief-october-31-oppn-charges-against-cec-gyanesh-kumar-sanjay-gupta-death-andhra-school-attack-omar-abdullah-101793449593698.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T11:32:51+00:00"
+     "at": "2026-10-31T13:54:38+00:00"
+    },
+    {
+     "title": "How Did Sanjay Gupta Die? Police Suspect Fatal Kitchen Fall Inside Mumbai Home, ADR Filed",
+     "url": "https://www.news18.com/india/how-did-sanjay-gupta-die-cctv-captures-filmmakers-fatal-fall-inside-mumbai-home-10406569.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T10:07:29+00:00"
     }
    ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "google-news:Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
-   ],
+   "id": "wk-Q644401",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-30",
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 1,
+    "IN-nation": 2
    },
-   "top_score": 0.84,
+   "top_score": 1.285,
    "top_headlines": [
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant"
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "hindi_owners": []
   },
   {
    "id": "kh-20261101-Q51403327",
@@ -212,9 +281,9 @@
     "google-news:Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
    ],
    "top": {
-    "IN": 13
+    "IN": 15
    },
-   "top_score": 0.4,
+   "top_score": 0.3,
    "top_headlines": [
     "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
    ],
@@ -241,7 +310,7 @@
     "train"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -258,7 +327,7 @@
     "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
     "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
     "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -275,7 +344,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
@@ -285,7 +354,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
@@ -323,113 +392,298 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "google-news:Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "google-news:Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "top": {
     "IN-nation": 12
    },
    "top_score": 0.27,
    "top_headlines": [
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "qid": null,
-   "title": "2026 Bangladesh garment sector minimum wage protests",
-   "fame": 175000,
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 200000,
    "views": 0,
    "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-11-01T15:31:31+00:00",
+   "news": 200000,
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "headlines": [
-    "Bangladesh sets up wage board as garment workers' unrest shuts factories",
-    "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
+    "Punjab polls: In a blow to AAP, 2 MLAs, Chetan Singh Jouramajra and Harmeet Singh Pathanmajra, quit party",
+    "AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+    "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+    "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
+   "region": "india",
+   "india_link": true,
    "geos": [
-    "world"
+    "IN"
    ],
-   "label_hi": null,
+   "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-news:Bangladesh sets up wage board as garment workers' unrest shuts factories",
-    "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
+    "google-news:Punjab polls: In a blow to AAP, 2 MLAs, Chetan Singh Jouramajra and Harmeet Singh Pathanmajra, quit party",
+    "google-news:AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+    "google-news:Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+    "outlet:Government of India",
     "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Network18"
    ],
    "owners": [
+    "Government of India",
     "HT Media",
-    "Bennett, Coleman & Co."
+    "Network18"
    ],
    "reports": [
     {
-     "title": "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-     "url": "https://www.livemint.com/news/world/double-pay-amid-protests-why-are-bangladesh-garment-workers-demanding-this-how-unrest-threatens-a-47-bn-export-sector-11793543085409.html",
+     "title": "AIR MARSHAL MEHTAB SINGH DESWAL AVSM, VM TAKES OVER AS AIR OFFICER COMMANDING-IN-CHIEF EASTERN AIR COMMAND",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331268",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-01T16:03:34.299965+00:00"
+    },
+    {
+     "title": "Op Sindoor drew non-negotiable red line on terrorism: Rajnath Singh",
+     "url": "https://www.hindustantimes.com/india-news/op-sindoor-drew-non-negotiable-red-line-on-terrorism-rajnath-singh-101793516624962.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T07:03:44+00:00"
+    },
+    {
+     "title": "Honey Singh's Nephew Among 2 Killed As Car Rams Into Tractor-Trolley In Jalandhar",
+     "url": "https://www.news18.com/india/honey-singhs-nephew-among-2-killed-as-car-rams-into-tractor-trolley-in-jalandhar-ws-l-10407378.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T06:42:04+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
+   "top": {
+    "IN-nation": 8
+   },
+   "top_score": 0.39,
+   "top_headlines": [
+    "2 MLAs Quit In Setback For Punjab AAP After 1st Candidates' List Announced"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141947331",
+   "title": "2026 Uttarakhand helicopter crash",
+   "fame": 150000,
+   "views": 0,
+   "traffic": 0,
+   "news": 150000,
+   "news_at": "2026-11-01T14:13:28+00:00",
+   "headlines": [
+    "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown | India News",
+    "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "२०२६ उत्तराखण्ड हेलीकॉप्टर दुर्घटना",
+   "via": [
+    "google-news:'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown | India News",
+    "google-news:'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown",
+     "url": "https://www.hindustantimes.com/india-news/two-pilots-for-char-dham-helicopters-dgca-tightens-norms-after-uttarakhand-chopper-crash-operators-threaten-shutdown-101793541447757.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T14:13:28+00:00"
+    },
+    {
+     "title": "Uttarakhand helicopter crash: Mortal remains of all six victims recovered, sent to Rishikesh AIIMS",
+     "url": "https://www.hindustantimes.com/india-news/uttarakhand-helicopter-crash-mortal-remains-of-all-six-victims-recovered-sent-to-rishikesh-aiims-101793526225186.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T09:46:01+00:00"
+    }
+   ],
+   "id": "wk-Q141947331",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-10-30",
+   "coords": null,
+   "has_coords": true,
+   "top": {
+    "IN": 4,
+    "IN-nation": 20
+   },
+   "top_score": 0.865,
+   "top_headlines": [
+    "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown | India News",
+    "DGCA mandates twin pilot operations from Monday, chopper operators threaten to suspend Char Dam flights"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "nw-20261101-andhra-cyclone",
+   "qid": null,
+   "title": "Days after Cyclone Arnab, Andhra Pradesh braces for Cyclonic Storm Murasu landfall",
+   "name": "Andhra",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-11-01",
+   "news_at": "2026-11-01T15:59:49+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Depression over Bay of Bengal intensified, says IMD; cyclone ‘Murasu’ may hit Andhra on Nov 3",
+    "Cyclone Murasu May Hit Andhra Coast On November 3 As Bay Of Bengal System Intensifies: Top Updates",
+    "Heavy rain alert in Andhra, Tamil Nadu till November 3 as another cyclone brews",
+    "Second cyclone in less than a week to hit Andhra, satellite sends pics",
+    "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainfall warning on Nov 2"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Days after Cyclone Arnab, Andhra Pradesh braces for Cyclonic Storm Murasu landfall",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/days-after-cyclone-arnab-andhra-pradesh-braces-for-cyclonic-storm-murasu-landfall/article71653421.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:59:49+00:00"
+    },
+    {
+     "title": "Cyclone Murasu: Orange alert in six Telangana districts, yellow alert in five on November 2",
+     "url": "https://www.thehindu.com/news/national/telangana/cyclone-murasu-orange-alert-in-six-telangana-districts-yellow-alert-in-five-on-november-2/article71652716.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:54:34+00:00"
+    },
+    {
+     "title": "Public urged to stay alert as cyclone Murasu set to hit Nellore, Prakasam districts",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/public-urged-to-stay-alert-as-cyclone-murasu-set-to-hit-nellore-prakasam-districts/article71653582.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:51:48+00:00"
+    },
+    {
+     "title": "HT Evening News Brief November 1: Heavy rain alert in Andhra as Cyclone brews; Priyanka Chopra channels King Kylie for Halloween",
+     "url": "https://www.hindustantimes.com/india-news/ht-evening-news-brief-november-1-cyclone-murasu-rahul-gandhi-cec-pakistan-priyanka-chopra-halloween-india-vs-new-zealand-101793533305168.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T13:34:00+00:00"
+    },
+    {
+     "title": "Cyclone 'Murasu' forms over Bay of Bengal; southern Odisha on high alert",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-forms-over-bay-of-bengal-southern-odisha-on-high-alert-101793536777114.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T12:39:36+00:00"
+    },
+    {
+     "title": "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainfall warning on Nov 2",
+     "url": "https://www.livemint.com/news/india/cyclone-murasu-telangana-issues-orange-alert-for-6-districts-amid-heavy-rainfall-warning-on-nov-2-11793531992957.html",
      "outlet": "Mint",
      "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T15:31:31+00:00"
+     "at": "2026-11-01T11:41:10+00:00"
     },
     {
-     "title": "Violent protests rock Bangladesh garment hubs as workers demand pay hike",
-     "url": "https://timesofindia.indiatimes.com/world/south-asia/violent-protests-rock-bangladesh-garment-hubs-as-workers-demand-a-steep-pay-hike/articleshow/135422113.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Second cyclone in less than a week to hit Andhra, satellite sends pics",
+     "url": "https://www.indiatoday.in/science/story/second-cyclone-in-less-than-a-week-headed-to-hit-andhra-satellite-tracks-from-space-3029784-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T09:05:53+00:00"
+     "at": "2026-11-01T07:17:15+00:00"
+    },
+    {
+     "title": "Heavy rain alert in Andhra, Tamil Nadu till November 3 as another cyclone brews",
+     "url": "https://www.hindustantimes.com/india-news/heavy-rain-alert-in-andhra-tamil-nadu-till-november-3-as-another-cyclone-brews-101793512668799.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T06:20:50+00:00"
     }
    ],
-   "id": "wp-2026_Bangladesh_garment_sector_minimum_wage_protests",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-01",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q644401",
-   "title": "Sanjay Gupta (director)",
-   "fame": 168695,
-   "views": 168695,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "संजय गुप्ता",
    "via": [
-    "wikipedia-top-2026-10-31"
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q644401",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-30",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Cyclone ‘Murasu’ forms over Bay of Bengal, southern Odisha on high alert"
+   ],
    "hindi_owners": []
   },
   {
@@ -452,7 +706,7 @@
     "trial"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -487,7 +741,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
@@ -672,11 +926,10 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 1.27,
+   "top_score": 1.285,
    "top_headlines": [
-    "Nadda terms INDIA bloc rally against CEC a ‘foolish and designed drama’",
     "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
    ],
    "hindi_owners": [],
@@ -699,7 +952,7 @@
     "vision"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -729,7 +982,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "New Indian Air Force Chief Shares His Vision: Focus On 'VAYU', Squadron Strength & Self-Reliance",
@@ -763,6 +1016,7 @@
    },
    "top_score": 0.905,
    "top_headlines": [
+    "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness",
     "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit"
    ],
    "hindi_owners": []
@@ -828,66 +1082,50 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141947331",
-   "title": "2026 Uttarakhand helicopter crash",
+   "qid": "Q2913482",
+   "title": "Ciara Mageean",
    "fame": 25000,
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-01T14:13:28+00:00",
+   "news_at": "2026-11-01T13:43:57+00:00",
    "headlines": [
-    "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown"
+    "Ireland’s European athletics champion Ciara Mageean dies aged 34"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
+   "region": "world",
+   "india_link": false,
    "geos": [
-    "IN"
+    "world"
    ],
-   "label_hi": "२०२६ उत्तराखण्ड हेलीकॉप्टर दुर्घटना",
+   "label_hi": null,
    "via": [
-    "google-news:'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown",
-    "outlet:HT Media"
+    "google-news:Ireland’s European athletics champion Ciara Mageean dies aged 34",
+    "outlet:Al Jazeera Media Network"
    ],
    "owners": [
-    "HT Media"
+    "Al Jazeera Media Network"
    ],
    "reports": [
     {
-     "title": "'2 pilots mandatory': DGCA tightens Char Dham helicopter norms after Uttarakhand crash; operators threaten shutdown",
-     "url": "https://www.hindustantimes.com/india-news/two-pilots-for-char-dham-helicopters-dgca-tightens-norms-after-uttarakhand-chopper-crash-operators-threaten-shutdown-101793541447757.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Ireland’s European athletics champion Ciara Mageean dies aged 34",
+     "url": "https://www.aljazeera.com/sports/2026/11/1/irelands-european-athletics-champion-ciara-mageean-dies-aged-34?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-01T14:13:28+00:00"
-    },
-    {
-     "title": "Uttarakhand helicopter crash: Mortal remains of all six victims recovered, sent to Rishikesh AIIMS",
-     "url": "https://www.hindustantimes.com/india-news/uttarakhand-helicopter-crash-mortal-remains-of-all-six-victims-recovered-sent-to-rishikesh-aiims-101793526225186.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T09:46:01+00:00"
+     "at": "2026-11-01T13:43:57+00:00"
     }
    ],
-   "id": "wk-Q141947331",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-10-30",
-   "coords": null,
-   "has_coords": true,
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "DGCA mandates twin pilot operations from Monday, chopper operators threaten to suspend Char Dam flights"
-   ],
+   "id": "wk-Q2913482",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -1010,414 +1248,203 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12255,
+   "views": 12255,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 11959,
+   "views": 11959,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q983618",
+   "title": "Dónal Lunny",
+   "fame": 10918,
+   "views": 10918,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q983618",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-23",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 10045,
+   "views": 10045,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q468843",
+   "title": "Dolores Huerta",
+   "fame": 9129,
+   "views": 9129,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q468843",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 8464,
+   "views": 8464,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
   {
-   "id": "kh-20261101-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-   "story_keys": [
-    "call"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T14:28:49+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-    "CJI Surya Kant calls for review of urgent case listing procedures",
-    "CJI calls for strengthening public confidence in High Courts",
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "CJI calls for strengthening public confidence in High Courts",
-     "url": "https://www.thehindu.com/news/national/kerala/cji-calls-for-strengthening-public-confidence-in-high-courts/article71652566.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T14:28:49+00:00"
-    },
-    {
-     "title": "CJI Surya Kant calls for review of urgent case listing procedures",
-     "url": "https://www.indiatoday.in/india/law-news/story/cji-surya-kant-urgent-case-listing-high-court-autonomy-ptag-3029969-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T11:36:29+00:00"
-    },
-    {
-     "title": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-     "url": "https://www.hindustantimes.com/india-news/cji-kant-calls-for-introspection-on-need-to-improve-responsiveness-of-judicial-process-101793532771816.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T11:32:51+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "google-news:Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 5
-   },
-   "top_score": 0.84,
-   "top_headlines": [
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261101-Q51403327",
-   "qid": "Q51403327",
-   "title": "Binance",
-   "name": "Binance",
-   "phrase": "Binance",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-   "story_keys": [
-    "billion",
-    "crypto",
-    "hack"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T13:11:37+00:00",
-   "owners": [
-    "India Today Group",
-    "Deutsche Welle",
-    "BBC",
-    "France Médias Monde"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-    "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
-    "FBI says North Korea behind $6 billion Binance crypto theft",
-    "Binance resumes crypto withdrawals after major hack blamed on North Korea",
-    "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
-     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-01T13:11:37+00:00"
-    },
-    {
-     "title": "FBI says North Korea behind $6 billion Binance crypto theft",
-     "url": "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-01T07:33:00+00:00"
-    },
-    {
-     "title": "Binance resumes crypto withdrawals after major hack blamed on North Korea",
-     "url": "https://www.france24.com/en/business/20261101-binance-says-resuming-withdrawals-after-major-hack",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-01T07:01:49+00:00"
-    },
-    {
-     "title": "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
-     "url": "https://www.indiatoday.in/business/story/binance-hack-covers-6-billion-north-korea-tradertraitor-crypto-theft-3029703-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T04:24:28+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Deutsche Welle",
-    "outlet:BBC",
-    "outlet:France Médias Monde",
-    "google-news:Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
-   ],
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261101-Q130318422",
-   "qid": "Q130318422",
-   "title": "Vande Bharat Sleeper Express",
-   "name": "Vande Bharat (Sleeper) Express",
-   "phrase": "Vande Bharat Sleeper",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-   "story_keys": [
-    "express",
-    "flag",
-    "off",
-    "railway",
-    "train"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group",
-    "Government of India"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-    "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
-    "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
-    "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
-    "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "वंदे भारत शयनयान एक्सप्रेस",
-   "reports": [
-    {
-     "title": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331297",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
-    },
-    {
-     "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331258",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
-    },
-    {
-     "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
-     "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mumbai-vande-bharat-sleeper-express-flagged-off-by-railway-minister/article71653630.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T15:46:43+00:00"
-    },
-    {
-     "title": "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
-     "url": "https://www.news18.com/india/game-changer-for-connectivity-pm-modi-hails-bengaluru-mumbai-vande-bharat-sleeper-train-10407775.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T13:26:57+00:00"
-    },
-    {
-     "title": "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
-     "url": "https://www.hindustantimes.com/india-news/railway-minister-ashwini-vaishnaw-flags-off-inaugural-bengaluru-mumbai-vande-bharat-sleeper-express-101793521411518.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T08:51:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Government of India",
-    "google-news:Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
-   ],
-   "top": {
-    "IN-nation": 12
-   },
-   "top_score": 0.27,
-   "top_headlines": [
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261101-Q467201",
-   "qid": "Q467201",
-   "title": "Meira Kumar",
-   "name": "Meira Kumar",
-   "phrase": "Meira Kumar",
-   "person": true,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
-   "story_keys": [
-    "bloc",
-    "vote",
-    "warn"
-   ],
-   "date": "2026-10-31",
-   "news_at": "2026-11-01T11:49:45+00:00",
-   "owners": [
-    "Network18",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
-    "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
-    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "मीरा कुमार",
-   "reports": [
-    {
-     "title": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
-     "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-says-gyanesh-kumar-will-go-to-jail-warns-modi-shah-bjp-of-legal-action-over-vote-chori-ramlila-maidan-protest-opposition-congress-delhi-101793531062268.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T11:49:45+00:00"
-    },
-    {
-     "title": "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/meira-kumars-couplet-on-hope-at-india-blocs-mock-parliament-3029922-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T10:45:10+00:00"
-    },
-    {
-     "title": "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
-     "url": "https://www.news18.com/india/not-just-impeached-youll-be-jailed-neha-bora-warns-cec-gyanesh-kumar-at-india-bloc-event-ws-lrt-10407107.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-10-31T18:59:48+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:HT Media"
-   ],
-   "top": {
-    "IN": 1,
-    "IN-nation": 3
-   },
-   "top_score": 1.27,
-   "top_headlines": [
-    "Nadda terms INDIA bloc rally against CEC a ‘foolish and designed drama’",
-    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
    "qid": null,
    "title": "2026 Bangladesh garment sector minimum wage protests",
-   "fame": 175000,
+   "fame": 300000,
    "views": 0,
    "traffic": 0,
-   "news": 175000,
+   "news": 300000,
    "news_at": "2026-11-01T15:31:31+00:00",
    "headlines": [
+    "Bangladesh forms wage board as garment workers protest",
     "Bangladesh sets up wage board as garment workers' unrest shuts factories",
     "Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
     "Violent protests rock Bangladesh garment hubs as workers demand pay hike"
@@ -1425,15 +1452,16 @@
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "geos": [
+    "IN",
     "world"
    ],
    "label_hi": null,
    "via": [
+    "google-news:Bangladesh forms wage board as garment workers protest",
     "google-news:Bangladesh sets up wage board as garment workers' unrest shuts factories",
     "google-news:Double pay amid protests? Why are Bangladesh garment workers demanding this? How unrest threatens a $47 bn export sector",
-    "google-news:Violent protests rock Bangladesh garment hubs as workers demand pay hike",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co."
    ],
@@ -1469,238 +1497,130 @@
    "date": "2026-11-01",
    "coords": null,
    "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Bangladesh forms wage board as garment workers protest"
+   ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261101-Q115804098",
-   "qid": "Q115804098",
-   "title": "Digi Yatra",
-   "name": "DigiYatra",
-   "phrase": "Digi Yatra",
+   "id": "kh-20261101-Q130318422",
+   "qid": "Q130318422",
+   "title": "Vande Bharat Sleeper Express",
+   "name": "Vande Bharat (Sleeper) Express",
+   "phrase": "Vande Bharat Sleeper",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Digi Yatra Begins International Passenger Trials at Seven Airports",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
    "story_keys": [
-    "airport",
-    "begin",
-    "digi",
-    "international",
-    "passenger",
-    "trial"
+    "express",
+    "flag",
+    "off",
+    "railway",
+    "train"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV",
+    "Network18",
+    "The Hindu Group",
     "Government of India"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Digi Yatra Begins International Passenger Trials at Seven Airports",
-    "Digi Yatra trials for international flyers begin at 7 airports; rollout set for 2027",
-    "Digi Yatra starts trials for overseas flights",
-    "Tired Of Showing Your Passport At Airports? Digi Yatra To Go International",
-    "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements"
+    "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
+    "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
+    "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
+    "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
+    "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
-   "hindi_headlines": [
-    "सात हवाई अड्डों पर अंतरराष्ट्रीय यात्रियों के लिए 'डिजी यात्रा' का ट्रायल शुरू"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
-   "label_hi": "डिजी यात्रा",
+   "india_link": false,
+   "label_hi": "वंदे भारत शयनयान एक्सप्रेस",
    "reports": [
     {
-     "title": "Digi Yatra Begins International Passenger Trials at Seven Airports",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331200",
+     "title": "Union Minister for Railways Flags Off Bengaluru-Mumbai Vande Bharat Sleeper Express Train",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331297",
      "outlet": "PIB",
      "outlet_hi": "पीआईबी",
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
-     "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
-     "url": "https://www.livemint.com/news/india/digi-yatra-trials-for-international-passengers-begin-check-eligible-airlines-and-passenger-requirements-11793540168872.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331258",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
      "lang": "en",
-     "at": "2026-11-01T14:13:26+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
-     "title": "Tired Of Showing Your Passport At Airports? Digi Yatra To Go International",
-     "url": "https://www.ndtv.com/india-news/tired-of-showing-your-passport-at-airports-digi-yatra-to-go-international-12267691#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T13:56:28+00:00"
-    },
-    {
-     "title": "Digi Yatra starts trials for overseas flights",
-     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/digi-yatra-starts-international-passenger-trials-at-seven-airports-on-select-air-india-indigo-flights/articleshow/135428793.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T13:39:49+00:00"
-    },
-    {
-     "title": "Digi Yatra trials for international flyers begin at 7 airports; rollout set for 2027",
-     "url": "https://www.hindustantimes.com/india-news/digi-yatra-trials-for-international-flyers-begin-at-7-airports-rollout-set-for-2027-101793537766173.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-01T12:58:40+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:Government of India"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  }
- ],
- "notes": [
-  "outlets: 1274 headlines from 30 feeds (19 owners), 17 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 6 kh- stories (on): kh-20261101-Q3243690, kh-20261101-Q51403327, kh-20261101-Q130318422, kh-20261101-Q115804098; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre; explainer Michigan: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
-  "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
-  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
-  "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again"
- ],
- "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
- ],
- "outlets": {
-  "headlines": 1274,
-  "feeds": 30,
-  "owners": 19,
-  "matched": 17,
-  "corroborated": 7
- },
- "emerging": [],
- "explainers": [
-  {
-   "id": "kh-20261101-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-   "story_keys": [
-    "call"
-   ],
-   "date": "2026-11-01",
-   "news_at": "2026-11-01T14:28:49+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-    "CJI Surya Kant calls for review of urgent case listing procedures",
-    "CJI calls for strengthening public confidence in High Courts",
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "CJI calls for strengthening public confidence in High Courts",
-     "url": "https://www.thehindu.com/news/national/kerala/cji-calls-for-strengthening-public-confidence-in-high-courts/article71652566.ece",
+     "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
+     "url": "https://www.thehindu.com/news/national/karnataka/bengaluru-mumbai-vande-bharat-sleeper-express-flagged-off-by-railway-minister/article71653630.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T14:28:49+00:00"
+     "at": "2026-11-01T15:46:43+00:00"
     },
     {
-     "title": "CJI Surya Kant calls for review of urgent case listing procedures",
-     "url": "https://www.indiatoday.in/india/law-news/story/cji-surya-kant-urgent-case-listing-high-court-autonomy-ptag-3029969-2026-11-01?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
+     "url": "https://www.news18.com/india/game-changer-for-connectivity-pm-modi-hails-bengaluru-mumbai-vande-bharat-sleeper-train-10407775.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T11:36:29+00:00"
+     "at": "2026-11-01T13:26:57+00:00"
     },
     {
-     "title": "CJI Kant calls for introspection on need to improve responsiveness of judicial process",
-     "url": "https://www.hindustantimes.com/india-news/cji-kant-calls-for-introspection-on-need-to-improve-responsiveness-of-judicial-process-101793532771816.html",
+     "title": "Railway minister Ashwini Vaishnaw flags off inaugural Bengaluru-Mumbai Vande Bharat Sleeper Express",
+     "url": "https://www.hindustantimes.com/india-news/railway-minister-ashwini-vaishnaw-flags-off-inaugural-bengaluru-mumbai-vande-bharat-sleeper-express-101793521411518.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-01T11:32:51+00:00"
+     "at": "2026-11-01T08:51:09+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:India Today Group",
+    "outlet:Network18",
     "outlet:The Hindu Group",
-    "google-news:SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant",
-    "google-news:Supreme Court paves way for IT assessments of two businessmen sons of former CJI Y.K. Sabharwal"
+    "outlet:Government of India",
+    "google-news:Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 12
    },
-   "top_score": 0.84,
+   "top_score": 0.27,
    "top_headlines": [
-    "SC files contempt plea over Kerala Congress X post targeting CJI Surya Kant"
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "other"
   },
   {
    "id": "kh-20261101-Q51403327",
@@ -1793,9 +1713,627 @@
     "google-news:Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
    ],
    "top": {
-    "IN": 13
+    "IN": 15
    },
-   "top_score": 0.4,
+   "top_score": 0.3,
+   "top_headlines": [
+    "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261101-Q467201",
+   "qid": "Q467201",
+   "title": "Meira Kumar",
+   "name": "Meira Kumar",
+   "phrase": "Meira Kumar",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+   "story_keys": [
+    "bloc",
+    "vote",
+    "warn"
+   ],
+   "date": "2026-10-31",
+   "news_at": "2026-11-01T11:49:45+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+    "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
+    "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "मीरा कुमार",
+   "reports": [
+    {
+     "title": "Rahul Gandhi says Gyanesh Kumar will go to jail, warns BJP of ‘legal action over vote chori’",
+     "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-says-gyanesh-kumar-will-go-to-jail-warns-modi-shah-bjp-of-legal-action-over-vote-chori-ramlila-maidan-protest-opposition-congress-delhi-101793531062268.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T11:49:45+00:00"
+    },
+    {
+     "title": "Meira Kumar's couplet on hope at INDIA bloc's mock Parliament",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/meira-kumars-couplet-on-hope-at-india-blocs-mock-parliament-3029922-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T10:45:10+00:00"
+    },
+    {
+     "title": "'Not Just Impeached, You'll Be Jailed': Neha Bora Warns CEC Gyanesh Kumar At INDIA Bloc Event",
+     "url": "https://www.news18.com/india/not-just-impeached-youll-be-jailed-neha-bora-warns-cec-gyanesh-kumar-at-india-bloc-event-ws-lrt-10407107.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-10-31T18:59:48+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:HT Media"
+   ],
+   "top": {
+    "IN": 1,
+    "IN-nation": 2
+   },
+   "top_score": 1.285,
+   "top_headlines": [
+    "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261101-Q115804098",
+   "qid": "Q115804098",
+   "title": "Digi Yatra",
+   "name": "DigiYatra",
+   "phrase": "Digi Yatra",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Digi Yatra Begins International Passenger Trials at Seven Airports",
+   "story_keys": [
+    "airport",
+    "begin",
+    "digi",
+    "international",
+    "passenger",
+    "trial"
+   ],
+   "date": "2026-11-01",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Digi Yatra Begins International Passenger Trials at Seven Airports",
+    "Digi Yatra trials for international flyers begin at 7 airports; rollout set for 2027",
+    "Digi Yatra starts trials for overseas flights",
+    "Tired Of Showing Your Passport At Airports? Digi Yatra To Go International",
+    "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements"
+   ],
+   "hindi_headlines": [
+    "सात हवाई अड्डों पर अंतरराष्ट्रीय यात्रियों के लिए 'डिजी यात्रा' का ट्रायल शुरू"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "डिजी यात्रा",
+   "reports": [
+    {
+     "title": "Digi Yatra Begins International Passenger Trials at Seven Airports",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331200",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-01T16:03:34.299965+00:00"
+    },
+    {
+     "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
+     "url": "https://www.livemint.com/news/india/digi-yatra-trials-for-international-passengers-begin-check-eligible-airlines-and-passenger-requirements-11793540168872.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T14:13:26+00:00"
+    },
+    {
+     "title": "Tired Of Showing Your Passport At Airports? Digi Yatra To Go International",
+     "url": "https://www.ndtv.com/india-news/tired-of-showing-your-passport-at-airports-digi-yatra-to-go-international-12267691#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T13:56:28+00:00"
+    },
+    {
+     "title": "Digi Yatra starts trials for overseas flights",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/digi-yatra-starts-international-passenger-trials-at-seven-airports-on-select-air-india-indigo-flights/articleshow/135428793.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T13:39:49+00:00"
+    },
+    {
+     "title": "Digi Yatra trials for international flyers begin at 7 airports; rollout set for 2027",
+     "url": "https://www.hindustantimes.com/india-news/digi-yatra-trials-for-international-flyers-begin-at-7-airports-rollout-set-for-2027-101793537766173.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T12:58:40+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 11959,
+   "views": 11959,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5103870",
+   "title": "Choi Bool-am",
+   "fame": 10045,
+   "views": 10045,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5103870",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-29",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12255,
+   "views": 12255,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5296666",
+   "title": "Donnie Iris",
+   "fame": 8464,
+   "views": 8464,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5296666",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q983618",
+   "title": "Dónal Lunny",
+   "fame": 10918,
+   "views": 10918,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-10-31"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q983618",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-23",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  }
+ ],
+ "notes": [
+  "revisit Q124883782: already revisited today; revisit Q2745305 (1725 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q163225 (659 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (650 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7089335 (582 views): 0 owners reported new news on Om Birla si",
+  "outlets: 1274 headlines from 30 feeds (19 owners), 24 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261101-andhra-cyclone",
+  "explainers: 5 kh- stories (on): kh-20261101-Q51403327, kh-20261101-Q130318422, kh-20261101-Q115804098, kh-20261101-Q467201; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre; explainer Michigan: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
+  "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
+  "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
+  "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
+  "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q468843: Orbitwire published (wk-Q468843), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
+  "wikipedia search failed for 1 of 1568 headlines (KeyError)"
+ ],
+ "outlets": {
+  "headlines": 1274,
+  "feeds": 30,
+  "owners": 19,
+  "matched": 24,
+  "corroborated": 9
+ },
+ "emerging": [
+  {
+   "id": "nw-20261101-andhra-cyclone",
+   "qid": null,
+   "title": "Days after Cyclone Arnab, Andhra Pradesh braces for Cyclonic Storm Murasu landfall",
+   "name": "Andhra",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-11-01",
+   "news_at": "2026-11-01T15:59:49+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Depression over Bay of Bengal intensified, says IMD; cyclone ‘Murasu’ may hit Andhra on Nov 3",
+    "Cyclone Murasu May Hit Andhra Coast On November 3 As Bay Of Bengal System Intensifies: Top Updates",
+    "Heavy rain alert in Andhra, Tamil Nadu till November 3 as another cyclone brews",
+    "Second cyclone in less than a week to hit Andhra, satellite sends pics",
+    "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainfall warning on Nov 2"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Days after Cyclone Arnab, Andhra Pradesh braces for Cyclonic Storm Murasu landfall",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/days-after-cyclone-arnab-andhra-pradesh-braces-for-cyclonic-storm-murasu-landfall/article71653421.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:59:49+00:00"
+    },
+    {
+     "title": "Cyclone Murasu: Orange alert in six Telangana districts, yellow alert in five on November 2",
+     "url": "https://www.thehindu.com/news/national/telangana/cyclone-murasu-orange-alert-in-six-telangana-districts-yellow-alert-in-five-on-november-2/article71652716.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:54:34+00:00"
+    },
+    {
+     "title": "Public urged to stay alert as cyclone Murasu set to hit Nellore, Prakasam districts",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/public-urged-to-stay-alert-as-cyclone-murasu-set-to-hit-nellore-prakasam-districts/article71653582.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T15:51:48+00:00"
+    },
+    {
+     "title": "HT Evening News Brief November 1: Heavy rain alert in Andhra as Cyclone brews; Priyanka Chopra channels King Kylie for Halloween",
+     "url": "https://www.hindustantimes.com/india-news/ht-evening-news-brief-november-1-cyclone-murasu-rahul-gandhi-cec-pakistan-priyanka-chopra-halloween-india-vs-new-zealand-101793533305168.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T13:34:00+00:00"
+    },
+    {
+     "title": "Cyclone 'Murasu' forms over Bay of Bengal; southern Odisha on high alert",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-forms-over-bay-of-bengal-southern-odisha-on-high-alert-101793536777114.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T12:39:36+00:00"
+    },
+    {
+     "title": "Cyclone ‘Murasu’: Telangana issues orange alert for 6 districts amid heavy rainfall warning on Nov 2",
+     "url": "https://www.livemint.com/news/india/cyclone-murasu-telangana-issues-orange-alert-for-6-districts-amid-heavy-rainfall-warning-on-nov-2-11793531992957.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T11:41:10+00:00"
+    },
+    {
+     "title": "Second cyclone in less than a week to hit Andhra, satellite sends pics",
+     "url": "https://www.indiatoday.in/science/story/second-cyclone-in-less-than-a-week-headed-to-hit-andhra-satellite-tracks-from-space-3029784-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T07:17:15+00:00"
+    },
+    {
+     "title": "Heavy rain alert in Andhra, Tamil Nadu till November 3 as another cyclone brews",
+     "url": "https://www.hindustantimes.com/india-news/heavy-rain-alert-in-andhra-tamil-nadu-till-november-3-as-another-cyclone-brews-101793512668799.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T06:20:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 2,
+    "IN-nation": 3
+   },
+   "top_score": 1.22,
+   "top_headlines": [
+    "Cyclone ‘Murasu’ forms over Bay of Bengal, southern Odisha on high alert"
+   ],
+   "hindi_owners": []
+  }
+ ],
+ "explainers": [
+  {
+   "id": "kh-20261101-Q51403327",
+   "qid": "Q51403327",
+   "title": "Binance",
+   "name": "Binance",
+   "phrase": "Binance",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+   "story_keys": [
+    "billion",
+    "crypto",
+    "hack"
+   ],
+   "date": "2026-11-01",
+   "news_at": "2026-11-01T13:11:37+00:00",
+   "owners": [
+    "India Today Group",
+    "Deutsche Welle",
+    "BBC",
+    "France Médias Monde"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+    "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
+    "FBI says North Korea behind $6 billion Binance crypto theft",
+    "Binance resumes crypto withdrawals after major hack blamed on North Korea",
+    "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Crypto firm Binance covers 90% of losses after $6.3bn hack",
+     "url": "https://www.bbc.co.uk/news/articles/ckpdg3ql4169o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-01T13:11:37+00:00"
+    },
+    {
+     "title": "FBI says North Korea behind $6 billion Binance crypto theft",
+     "url": "https://www.dw.com/en/fbi-says-north-korea-behind-6-billion-binance-crypto-theft/a-79819998?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-01T07:33:00+00:00"
+    },
+    {
+     "title": "Binance resumes crypto withdrawals after major hack blamed on North Korea",
+     "url": "https://www.france24.com/en/business/20261101-binance-says-resuming-withdrawals-after-major-hack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-01T07:01:49+00:00"
+    },
+    {
+     "title": "Binance says it has recovered $6 billion of $6.3 billion stolen in hack",
+     "url": "https://www.indiatoday.in/business/story/binance-hack-covers-6-billion-north-korea-tradertraitor-crypto-theft-3029703-2026-11-01?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-01T04:24:28+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Deutsche Welle",
+    "outlet:BBC",
+    "outlet:France Médias Monde",
+    "google-news:Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
    "top_headlines": [
     "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack"
    ],
@@ -1822,7 +2360,7 @@
     "train"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -1839,7 +2377,7 @@
     "‘Game Changer For Connectivity’: PM Modi Hails Bengaluru-Mumbai Vande Bharat Sleeper Train",
     "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
     "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1856,7 +2394,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Prime Minister highlights Bengaluru-Mumbai Vande Bharat Sleeper train as a major boost to rail connectivity",
@@ -1866,7 +2404,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Bengaluru-Mumbai Vande Bharat Sleeper Express flagged off by Railway Minister",
@@ -1904,14 +2442,14 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "google-news:Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "google-news:Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "top": {
     "IN-nation": 12
    },
    "top_score": 0.27,
    "top_headlines": [
-    "Bengaluru-Mumbai Vande Bharat sleeper to begin operations on November 1"
+    "Karnataka’s second Vande Bharat Sleeper train to run between Bengaluru and Mumbai via Hubballi: Ashwini Vaishnaw"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1937,7 +2475,7 @@
     "trial"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -1972,7 +2510,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "Digi Yatra trials for international passengers begin: Check eligible airlines and passenger requirements",
@@ -2107,11 +2645,10 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 1.27,
+   "top_score": 1.285,
    "top_headlines": [
-    "Nadda terms INDIA bloc rally against CEC a ‘foolish and designed drama’",
     "\"Gyanesh Kumar Will Go To Jail\": Rahul Gandhi Calls 2024 Polls \"Illegal\" At Delhi Rally"
    ],
    "hindi_owners": [],
@@ -2134,7 +2671,7 @@
     "vision"
    ],
    "date": "2026-11-01",
-   "news_at": "2026-11-01T15:49:21.576437+00:00",
+   "news_at": "2026-11-01T16:03:34.299965+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -2164,7 +2701,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-01T15:49:21.576437+00:00"
+     "at": "2026-11-01T16:03:34.299965+00:00"
     },
     {
      "title": "New Indian Air Force Chief Shares His Vision: Focus On 'VAYU', Squadron Strength & Self-Reliance",
@@ -2198,6 +2735,7 @@
    },
    "top_score": 0.905,
    "top_headlines": [
+    "New IAF chief Ashutosh Dixit outlines ‘VAYU’ priorities, vows to boost combat readiness",
     "Every squadron, air defence unit, air warrior must be ready to respond at moment’s notice: IAF Chief Dixit"
    ],
    "hindi_owners": []
