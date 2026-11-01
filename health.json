@@ -1,26 +1,35 @@
 {
- "at": "2026-11-01T13:30:04+00:00",
+ "at": "2026-11-01T13:45:33+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 99 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.168, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.801, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 58.0}, 'category:attack': {'n': 13, 'lift': 1.318, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 5 candidates from 16 trending",
+  "watch: 9 candidates from 23 trending",
   "revisit Q124883782: already revisited today; revisit Q2745305 (1725 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q163225 (659 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (650 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7089335 (582 views): 0 owners reported new news on Om Birla si",
-  "outlets: 1265 headlines from 31 feeds (19 owners), 9 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261101-andhra-cyclone",
-  "explainers: 5 kh- stories (on): kh-20261101-Q10218, kh-20261101-Q51403327, kh-20261101-Q140076608, kh-20261101-Q607685; dropped: explainer GST / October: no Wikipedia article that can be its centre; explainer Michigan: fewer than 3 owners' headlines name it and the story; explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre",
+  "outlets: 1267 headlines from 31 feeds (19 owners), 18 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261101-andhra-cyclone",
+  "explainers: 4 kh- stories (on): kh-20261101-Q10218, kh-20261101-Q51403327, kh-20261101-Q467201, kh-20261101-Q140076608; dropped: explainer Commercial LPG / Dhanteras Diwali ATF: no Wikipedia article that can be its centre; explainer Michigan: fewer than 3 owners' headlines name it and the story; explainer October: no Wikipedia article that can be its centre",
   "skip wk-Q141615137-2026w44: Orbitwire published (wk-Q141615137-2026w44), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q5386105: Orbitwire published (wk-Q5386105), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503', 'top stories: no Google News India list could be read (no story is ranked by place)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1564 headlines (KeyError)']",
   "drop kh-20261101-Q51403327: a world statement, politics or diplomacy story with no India connection",
-  "skip kh-20261101-Q607685: gate: fewer than 2 independent outlets' articles name Priyanka Vadra",
+  "drop wp-2026_Bangladesh_garment_sector_minimum_wage_protests: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q965634: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q5103870: 74 h old and no longer trending live",
+  "drop wk-Q259559: 146 h old and no longer trending live",
+  "drop wk-Q5296666: 146 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Bangladesh_garment_sector_minimum_wage_protests; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
   "skip wk-Q123521174-2026w44: gate: only 0 usable photos of Gaza war protests in the United Kingdom on Wikimedia Commons (want 3)",
-  "skip kh-20261101-Q23043345: gate: fewer than 2 independent outlets' articles name air pollution in Delhi",
-  "skip kh-20261101-Q140076608-update: gate: no draft passed the fact checks: gate: only 0 of 2 photos on screen are new to the last 96 hours of Shorts (want 1)",
-  "nothing eligible to publish",
+  "published kh-20261101-Q140076608-update: https://www.youtube.com/shorts/FvVXl5AgDng",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "FvVXl5AgDng",
+  "url": "https://www.youtube.com/shorts/FvVXl5AgDng",
+  "youtube_title": "वायुसेना प्रमुख आशुतोष दीक्षित ने दिया वायु विजन #shorts #ashutoshdixit",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
