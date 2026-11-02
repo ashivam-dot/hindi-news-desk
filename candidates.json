@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T21:34:21+00:00",
+ "at": "2026-11-02T21:50:39+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q213380",
@@ -89,11 +89,12 @@
     "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "top": {
-    "IN-nation": 11
+    "IN-nation": 12
    },
-   "top_score": 0.3,
+   "top_score": 0.27,
    "top_headlines": [
-    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group"
+    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
    ],
    "hindi_owners": []
   },
@@ -203,11 +204,16 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 5
+   },
+   "top_score": 0.89,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -246,7 +252,7 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-02T05:20:49+00:00",
+   "news_at": "2026-11-02T00:00:00+00:00",
    "headlines": [
     "Clashes broke out in Portugal as police stormed housing protest camps in Lisbon and Porto"
    ],
@@ -274,6 +280,153 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "nw-20261102-murasu-cyclone",
+   "qid": null,
+   "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
+   "name": "Murasu",
+   "kind": "incident",
+   "category": "cyclone",
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T21:44:53+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 150000,
+   "news": 150000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
+    "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
+    "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
+    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
+    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
+     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:44:53+00:00"
+    },
+    {
+     "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
+     "url": "https://www.news18.com/india/cyclone-murasu-tracker-live-updates-bay-of-bengal-severe-cyclonic-storm-landfall-time-imd-alert-andhra-pradesh-tamil-nadu-rains-schools-closed-liveblog-ws-kl-10408052.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:30:46+00:00"
+    },
+    {
+     "title": "Cyclone Murasu Landfall Begins, Heavy Rain Batters Andhra Coast",
+     "url": "https://www.ndtv.com/india-news/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-batter-andhra-coast-12273713#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:15:45+00:00"
+    },
+    {
+     "title": "Cyclone Murasu makes landfall in Andhra Pradesh, triggers heavy rain; thousands evacuated, coastal areas on alert",
+     "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-makes-landfall-in-andhra-pradesh-triggers-heavy-rain-thousands-evacuated-coastal-areas-on-alert-101793641721774.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:47:23+00:00"
+    },
+    {
+     "title": "Severe Cyclone Murasu: Landfall to begin in A.P. around 2-3 a.m.",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:52:45+00:00"
+    },
+    {
+     "title": "Palnadu on high alert as Cyclone Murasu to bring heavy rain",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/palnadu-on-high-alert-as-cyclone-murasu-threatens-heavy-rain/article71656303.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:09+00:00"
+    },
+    {
+     "title": "Cyclone Murasu: Andhra Braces For Landfall Tonight | Winds Up To 120 Kmph, Heavy Rain Alert | News18",
+     "url": "https://www.news18.com/videos/india/cyclone-murasu-andhra-braces-for-landfall-tonight-winds-up-to-120-kmph-heavy-rain-alert-news18-10409684.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T18:25:30+00:00"
+    },
+    {
+     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:19:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 1,
+    "IN-hi": 1,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.8,
+   "top_headlines": [
+    "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
+    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
+   ],
+   "hindi_owners": [
+    "DB Corp",
+    "NDTV",
+    "Network18"
+   ],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "qid": "Q141898879",
@@ -379,151 +532,6 @@
    "hindi_owners": []
   },
   {
-   "id": "nw-20261102-murasu-cyclone",
-   "qid": null,
-   "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
-   "name": "Murasu",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T21:30:46+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
-    "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
-    "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
-    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
-     "url": "https://www.news18.com/india/cyclone-murasu-tracker-live-updates-bay-of-bengal-severe-cyclonic-storm-landfall-time-imd-alert-andhra-pradesh-tamil-nadu-rains-schools-closed-liveblog-ws-kl-10408052.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:30:46+00:00"
-    },
-    {
-     "title": "Cyclone Murasu makes landfall in Andhra Pradesh, triggers heavy rain; thousands evacuated, coastal areas on alert",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-makes-landfall-in-andhra-pradesh-triggers-heavy-rain-thousands-evacuated-coastal-areas-on-alert-101793641721774.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T20:47:23+00:00"
-    },
-    {
-     "title": "Severe Cyclone Murasu: Landfall to begin in A.P. around 2-3 a.m.",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:52:45+00:00"
-    },
-    {
-     "title": "Palnadu on high alert as Cyclone Murasu to bring heavy rain",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/palnadu-on-high-alert-as-cyclone-murasu-threatens-heavy-rain/article71656303.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:05:09+00:00"
-    },
-    {
-     "title": "Cyclone Murasu: Andhra Braces For Landfall Tonight | Winds Up To 120 Kmph, Heavy Rain Alert | News18",
-     "url": "https://www.news18.com/videos/india/cyclone-murasu-andhra-braces-for-landfall-tonight-winds-up-to-120-kmph-heavy-rain-alert-news18-10409684.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T18:25:30+00:00"
-    },
-    {
-     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:19:50+00:00"
-    },
-    {
-     "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-nears-ap-coast-heavy-rain-alert-issued/article71657418.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:09:11+00:00"
-    },
-    {
-     "title": "Cyclone Murasu likely to bring heavy rainfall across southern states",
-     "url": "https://www.livemint.com/news/cyclone-murasu-likely-to-bring-heavy-rainfall-across-southern-states-11793625136083.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:53:20+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1,
-    "IN-hi": 1,
-    "IN-hi-nation": 1
-   },
-   "top_score": 1.8,
-   "top_headlines": [
-    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "अलर्ट! आंध्र तट की ओर बढ़ रहा चक्रवात 'मुरासु', 120 की रफ्तार से चलेंगी हवाएं, जानें कब और कहां होगा लैंडफॉ",
-    "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
-   ],
-   "hindi_owners": [
-    "DB Corp",
-    "NDTV",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "id": "nw-20261102-florida-aviation",
    "qid": null,
    "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
@@ -531,22 +539,24 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T19:58:34+00:00",
+   "news_at": "2026-11-02T21:23:31+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "BBC"
+    "BBC",
+    "Al Jazeera Media Network"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "US: 9 killed in Florida jet crash",
     "Lenny Kravitz died in Florida plane crash?",
     "Nine dead in small plane crash near Trump's Florida home",
-    "Copilot in deadly Florida jet crash identified in reports as 20-year-old"
+    "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+    "‘Work to do’: Authorities give update on Florida private jet crash"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -588,6 +598,16 @@
      "at": "2026-11-02T07:46:00+00:00"
     },
     {
+     "title": "‘Work to do’: Authorities give update on Florida private jet crash",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/work-to-do-authorities-give-update-on-florida-private-jet-crash?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-02T21:23:31+00:00"
+    },
+    {
      "title": "Lenny Kravitz died in Florida plane crash?",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/lenny-kravitz-died-in-florida-learjet-crash-rockstars-team-breaks-silence-after-viral-rumour-links-him-to-doomed-2-million-jet/articleshow/135466008.cms",
      "outlet": "The Economic Times",
@@ -602,14 +622,15 @@
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:BBC"
+    "outlet:BBC",
+    "outlet:Al Jazeera Media Network"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
    ],
@@ -794,9 +815,9 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
    ],
@@ -1349,21 +1370,22 @@
   {
    "id": "nw-20261102-murasu-cyclone",
    "qid": null,
-   "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
+   "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T21:30:46+00:00",
+   "news_at": "2026-11-02T21:44:53+00:00",
    "owners": [
     "HT Media",
     "Network18",
     "India Today Group",
     "Bennett, Coleman & Co.",
-    "The Hindu Group"
+    "The Hindu Group",
+    "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1383,6 +1405,16 @@
    "label_hi": null,
    "reports": [
     {
+     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
+     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:44:53+00:00"
+    },
+    {
      "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
      "url": "https://www.news18.com/india/cyclone-murasu-tracker-live-updates-bay-of-bengal-severe-cyclonic-storm-landfall-time-imd-alert-andhra-pradesh-tamil-nadu-rains-schools-closed-liveblog-ws-kl-10408052.html",
      "outlet": "News18",
@@ -1391,6 +1423,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T21:30:46+00:00"
+    },
+    {
+     "title": "Cyclone Murasu Landfall Begins, Heavy Rain Batters Andhra Coast",
+     "url": "https://www.ndtv.com/india-news/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-batter-andhra-coast-12273713#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:15:45+00:00"
     },
     {
      "title": "Cyclone Murasu makes landfall in Andhra Pradesh, triggers heavy rain; thousands evacuated, coastal areas on alert",
@@ -1441,26 +1483,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T17:19:50+00:00"
-    },
-    {
-     "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-nears-ap-coast-heavy-rain-alert-issued/article71657418.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:09:11+00:00"
-    },
-    {
-     "title": "Cyclone Murasu likely to bring heavy rainfall across southern states",
-     "url": "https://www.livemint.com/news/cyclone-murasu-likely-to-bring-heavy-rainfall-across-southern-states-11793625136083.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:53:20+00:00"
     }
    ],
    "via": [
@@ -1468,7 +1490,8 @@
     "outlet:Network18",
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
@@ -1479,8 +1502,8 @@
    },
    "top_score": 1.8,
    "top_headlines": [
+    "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "अलर्ट! आंध्र तट की ओर बढ़ रहा चक्रवात 'मुरासु', 120 की रफ्तार से चलेंगी हवाएं, जानें कब और कहां होगा लैंडफॉ",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -1490,109 +1513,6 @@
    ],
    "audience": "india",
    "lane": "breaking"
-  },
-  {
-   "id": "kh-20261103-Q7040049",
-   "qid": "Q7040049",
-   "title": "Nirmala Sitharaman",
-   "name": "Nirmala Sitharaman",
-   "phrase": "Sitharaman",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-   "story_keys": [
-    "dispute",
-    "out",
-    "public'",
-    "settle",
-    "urge"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T17:23:17+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "NDTV",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-    "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-    "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
-    "'Can't Be Spilling Out In Public': Nirmala Sitharaman On Tata Boardroom Battle"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "निर्मला सीतारमन",
-   "reports": [
-    {
-     "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/cannot-spill-out-in-public-sitharaman-urges-tata-sons-tata-trusts-to-settle-dispute-soon/articleshow/135468845.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:23:17+00:00"
-    },
-    {
-     "title": "'Can't Be Spilling Out In Public': Nirmala Sitharaman On Tata Boardroom Battle",
-     "url": "https://www.ndtv.com/india-news/cant-be-spilling-out-in-public-nirmala-sitharaman-on-tata-boardroom-battle-12272953#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:46:03+00:00"
-    },
-    {
-     "title": "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
-     "url": "https://www.indiatoday.in/business/story/tata-sons-tata-trusts-dispute-nirmala-sitharaman-urges-amicable-settlement-no-govt-intervention-3030946-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:37:58+00:00"
-    },
-    {
-     "title": "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-     "url": "https://www.livemint.com/news/tata-dispute-must-be-settled-amicably-and-out-of-public-view-says-sitharaman-11793626829872.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "Darius Khambata quits Tata Trusts, says Tata Sons' reputation has been sullied"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261103-Q27627866",
@@ -1700,12 +1620,120 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 5
+   },
+   "top_score": 0.89,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261103-Q7040049",
+   "qid": "Q7040049",
+   "title": "Nirmala Sitharaman",
+   "name": "Nirmala Sitharaman",
+   "phrase": "Sitharaman",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
+   "story_keys": [
+    "dispute",
+    "out",
+    "public'",
+    "settle",
+    "urge"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T17:23:17+00:00",
+   "owners": [
+    "HT Media",
+    "India Today Group",
+    "NDTV",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
+    "Tata dispute must be settled amicably and out of public view, says Sitharaman",
+    "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
+    "'Can't Be Spilling Out In Public': Nirmala Sitharaman On Tata Boardroom Battle"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "निर्मला सीतारमन",
+   "reports": [
+    {
+     "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/cannot-spill-out-in-public-sitharaman-urges-tata-sons-tata-trusts-to-settle-dispute-soon/articleshow/135468845.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:23:17+00:00"
+    },
+    {
+     "title": "'Can't Be Spilling Out In Public': Nirmala Sitharaman On Tata Boardroom Battle",
+     "url": "https://www.ndtv.com/india-news/cant-be-spilling-out-in-public-nirmala-sitharaman-on-tata-boardroom-battle-12272953#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:46:03+00:00"
+    },
+    {
+     "title": "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
+     "url": "https://www.indiatoday.in/business/story/tata-sons-tata-trusts-dispute-nirmala-sitharaman-urges-amicable-settlement-no-govt-intervention-3030946-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:37:58+00:00"
+    },
+    {
+     "title": "Tata dispute must be settled amicably and out of public view, says Sitharaman",
+     "url": "https://www.livemint.com/news/tata-dispute-must-be-settled-amicably-and-out-of-public-view-says-sitharaman-11793626829872.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:24:32+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "Darius Khambata quits Tata Trusts, says Tata Sons' reputation has been sullied"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261103-Q356359",
@@ -2550,7 +2578,7 @@
  ],
  "notes": [
   "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (7543 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2958 views before); revisit Q163225: last Short 10 h ago; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-20261103-Q7289726-update: 2 owners' new reports on Ramlila Mai",
-  "outlets: 1300 headlines from 31 feeds (19 owners), 24 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "outlets: 1293 headlines from 31 feeds (19 owners), 27 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
   "explainers: 6 kh- stories (on): kh-20261103-Q213380, kh-20261103-Q27627866, kh-20261103-Q7040049, kh-20261103-Q2512051; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by; explainer Somalia: no Wikipedia article that can be its centre",
   "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
@@ -2562,31 +2590,32 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1300,
+  "headlines": 1293,
   "feeds": 31,
   "owners": 19,
-  "matched": 24,
+  "matched": 27,
   "corroborated": 8
  },
  "emerging": [
   {
    "id": "nw-20261102-murasu-cyclone",
    "qid": null,
-   "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
+   "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T21:30:46+00:00",
+   "news_at": "2026-11-02T21:44:53+00:00",
    "owners": [
     "HT Media",
     "Network18",
     "India Today Group",
     "Bennett, Coleman & Co.",
-    "The Hindu Group"
+    "The Hindu Group",
+    "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2606,6 +2635,16 @@
    "label_hi": null,
    "reports": [
     {
+     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
+     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:44:53+00:00"
+    },
+    {
      "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
      "url": "https://www.news18.com/india/cyclone-murasu-tracker-live-updates-bay-of-bengal-severe-cyclonic-storm-landfall-time-imd-alert-andhra-pradesh-tamil-nadu-rains-schools-closed-liveblog-ws-kl-10408052.html",
      "outlet": "News18",
@@ -2614,6 +2653,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T21:30:46+00:00"
+    },
+    {
+     "title": "Cyclone Murasu Landfall Begins, Heavy Rain Batters Andhra Coast",
+     "url": "https://www.ndtv.com/india-news/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-batter-andhra-coast-12273713#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:15:45+00:00"
     },
     {
      "title": "Cyclone Murasu makes landfall in Andhra Pradesh, triggers heavy rain; thousands evacuated, coastal areas on alert",
@@ -2664,26 +2713,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T17:19:50+00:00"
-    },
-    {
-     "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-murasu-nears-ap-coast-heavy-rain-alert-issued/article71657418.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:09:11+00:00"
-    },
-    {
-     "title": "Cyclone Murasu likely to bring heavy rainfall across southern states",
-     "url": "https://www.livemint.com/news/cyclone-murasu-likely-to-bring-heavy-rainfall-across-southern-states-11793625136083.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:53:20+00:00"
     }
    ],
    "via": [
@@ -2691,7 +2720,8 @@
     "outlet:Network18",
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
+    "outlet:The Hindu Group",
+    "outlet:NDTV"
    ],
    "emerging": true,
    "article": null,
@@ -2702,8 +2732,8 @@
    },
    "top_score": 1.8,
    "top_headlines": [
+    "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "अलर्ट! आंध्र तट की ओर बढ़ रहा चक्रवात 'मुरासु', 120 की रफ्तार से चलेंगी हवाएं, जानें कब और कहां होगा लैंडफॉ",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -2722,22 +2752,24 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T19:58:34+00:00",
+   "news_at": "2026-11-02T21:23:31+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "BBC"
+    "BBC",
+    "Al Jazeera Media Network"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "US: 9 killed in Florida jet crash",
     "Lenny Kravitz died in Florida plane crash?",
     "Nine dead in small plane crash near Trump's Florida home",
-    "Copilot in deadly Florida jet crash identified in reports as 20-year-old"
+    "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+    "‘Work to do’: Authorities give update on Florida private jet crash"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2779,6 +2811,16 @@
      "at": "2026-11-02T07:46:00+00:00"
     },
     {
+     "title": "‘Work to do’: Authorities give update on Florida private jet crash",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/work-to-do-authorities-give-update-on-florida-private-jet-crash?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-02T21:23:31+00:00"
+    },
+    {
      "title": "Lenny Kravitz died in Florida plane crash?",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/lenny-kravitz-died-in-florida-learjet-crash-rockstars-team-breaks-silence-after-viral-rumour-links-him-to-doomed-2-million-jet/articleshow/135466008.cms",
      "outlet": "The Economic Times",
@@ -2793,14 +2835,15 @@
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:BBC"
+    "outlet:BBC",
+    "outlet:Al Jazeera Media Network"
    ],
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
    ],
@@ -2896,11 +2939,12 @@
     "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "top": {
-    "IN-nation": 11
+    "IN-nation": 12
    },
-   "top_score": 0.3,
+   "top_score": 0.27,
    "top_headlines": [
-    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group"
+    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
    ],
    "hindi_owners": []
   },
@@ -3010,11 +3054,16 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 5
+   },
+   "top_score": 0.89,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
