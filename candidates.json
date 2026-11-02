@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T19:34:23+00:00",
+ "at": "2026-11-02T19:49:20+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q1353",
@@ -44,7 +44,7 @@
     "GRAP-2 curbs imposed in Delhi as AQI hits ‘very poor’ category at 324",
     "Air quality of Delhi slips to ‘very poor’ for first time this winter, Stage 2 of GRAP invoked",
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News"
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
    ],
    "hindi_headlines": [
     "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
@@ -115,17 +115,17 @@
     "outlet:Amar Ujala",
     "outlet:ABP Group",
     "google-news:Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "google-news:GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
-    "google-news:Delhi pollution curbs: 1,539 vehicles turned back on day 1, Rs 68.4 lakh in fines imposed"
+    "google-news:GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
+    "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 4
+    "IN-nation": 2
    },
-   "top_score": 1.255,
+   "top_score": 1.285,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
     "Blanket Firecracker Ban 'Seems Ideal', But Not Enough Data To Show If Prohibition Solves Air Pollution :..."
    ],
    "hindi_owners": [
@@ -136,17 +136,115 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261103-Q4746875",
-   "qid": "Q4746875",
-   "title": "Amit Shah",
-   "name": "Amit Shah",
-   "phrase": "Amit Shah",
-   "person": true,
+   "id": "kh-20261103-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+   "story_keys": [
+    "airfare",
+    "don't",
+    "hike",
+    "plea",
+    "refuse",
+    "travel",
+    "urgent"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T15:43:57+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
+    "Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
+   "reports": [
+    {
+     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:43:57+00:00"
+    },
+    {
+     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T11:16:02+00:00"
+    },
+    {
+     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:55:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
+    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
+   "phrase": "NCP",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
    "story": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
    "story_keys": [
+    "buzz",
     "denie",
     "internal",
     "meet",
@@ -156,18 +254,15 @@
     "without"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-02T16:48:25+00:00",
+   "news_at": "2026-11-02T18:46:35+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Network18",
     "HT Media",
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -175,24 +270,26 @@
     "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
     "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
     "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
+    "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "hindi_headlines": [
-    "गृह मंत्री अमित शाह से मिले राम चरण-चिरंजीवी, AI-डीपफेक के दुरुपयोग का उठाया मुद्दा, मिला सख्त एक्शन का भरोसा",
-    "NCP अजित गुट ने विलय की अटकलें खारिज कीं:अमित शाह-सुनेत्रा पवार की मुलाकात के बाद पार्टी में मतभेद की खबरें आई थीं",
-    "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
-    "'पहले अपना घर ठीक करें', अमित शाह की NCP नेताओं को सख्त हिदायत",
-    "नाच ना जाने, आंगन टेढ़ा... अमित शाह का राहुल गांधी पर तंज- 'मॉक पार्लियामेंट में ही PM बन सकते हैं'"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "अमित शाह",
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
+    {
+     "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+     "url": "https://www.ndtv.com/india-news/ncp-meet-today-amid-bjp-concern-what-party-leader-said-on-rift-buzz-12273466#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T18:46:35+00:00"
+    },
     {
      "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
      "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
@@ -238,146 +335,21 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:HT Media",
-    "outlet:TV9 Network",
-    "outlet:DB Corp",
     "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah",
-    "google-news:अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना"
+    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
    "top": {
-    "IN": 8,
-    "IN-hi": 7,
-    "IN-nation": 3,
-    "IN-hi-nation": 1
+    "IN": 7,
+    "IN-nation": 1
    },
-   "top_score": 1.595,
+   "top_score": 1.0,
    "top_headlines": [
-    "अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना",
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "hindi_owners": [
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group",
-    "Network18"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261103-Q213380",
-   "qid": "Q213380",
-   "title": "Supreme Court of India",
-   "name": "Supreme Court of India",
-   "phrase": "Supreme Court",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-   "story_keys": [
-    "air'",
-    "airfare",
-    "don't",
-    "hike",
-    "plea",
-    "refuse",
-    "travel",
-    "urgent"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T15:43:57+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "NDTV",
-    "HT Media"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
-    "'Don't Travel By Air': Supreme Court On Petition Against High Ticket Prices",
-    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
-   "reports": [
-    {
-     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
-     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:43:57+00:00"
-    },
-    {
-     "title": "'Don't Travel By Air': Supreme Court On Petition Against High Ticket Prices",
-     "url": "https://www.ndtv.com/india-news/supreme-court-on-petition-against-high-ticket-prices-dont-travel-by-air-12272603#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:28:32+00:00"
-    },
-    {
-     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T11:16:02+00:00"
-    },
-    {
-     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
-     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T09:55:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:HT Media",
-    "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
-    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
-   ],
-   "top": {
-    "IN": 5,
-    "IN-nation": 8
-   },
-   "top_score": 0.995,
-   "top_headlines": [
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
-   ],
-   "hindi_owners": []
+   "lane": "other"
   },
   {
    "qid": "Q16296",
@@ -641,13 +613,12 @@
    "top": {
     "IN": 4,
     "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 2
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 2.01,
+   "top_score": 1.98,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -666,7 +637,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T16:44:01+00:00",
+   "news_at": "2026-11-02T19:37:00+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
@@ -720,7 +691,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-02T16:44:01+00:00"
+     "at": "2026-11-02T19:37:00+00:00"
     },
     {
      "title": "Lenny Kravitz died in Florida plane crash?",
@@ -877,6 +848,93 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261103-Q2512051",
+   "qid": "Q2512051",
+   "title": "Vedanta",
+   "name": "Vedanta",
+   "phrase": "Vedanta",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+   "story_keys": [
+    "against",
+    "arbitration",
+    "award",
+    "plea"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T19:19:27+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+    "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+    "SC junks plea against Vedanta arbitration awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "वेदांत",
+   "reports": [
+    {
+     "title": "SC junks plea against Vedanta arbitration awards",
+     "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:19:27+00:00"
+    },
+    {
+     "title": "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+     "url": "https://www.thehindu.com/news/national/supreme-court-raps-centre-for-stalling-enforcement-of-vedanta-arbitration-awards/article71656332.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T14:41:41+00:00"
+    },
+    {
+     "title": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+     "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:51:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q141966885",
@@ -1190,139 +1248,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261103-Q4746875",
-   "qid": "Q4746875",
-   "title": "Amit Shah",
-   "name": "Amit Shah",
-   "phrase": "Amit Shah",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
-   "story_keys": [
-    "denie",
-    "internal",
-    "meet",
-    "rift",
-    "rumour",
-    "skip",
-    "without"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T16:48:25+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "HT Media",
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 375000,
-   "news": 375000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
-    "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
-    "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
-    "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
-   ],
-   "hindi_headlines": [
-    "गृह मंत्री अमित शाह से मिले राम चरण-चिरंजीवी, AI-डीपफेक के दुरुपयोग का उठाया मुद्दा, मिला सख्त एक्शन का भरोसा",
-    "NCP अजित गुट ने विलय की अटकलें खारिज कीं:अमित शाह-सुनेत्रा पवार की मुलाकात के बाद पार्टी में मतभेद की खबरें आई थीं",
-    "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
-    "'पहले अपना घर ठीक करें', अमित शाह की NCP नेताओं को सख्त हिदायत",
-    "नाच ना जाने, आंगन टेढ़ा... अमित शाह का राहुल गांधी पर तंज- 'मॉक पार्लियामेंट में ही PM बन सकते हैं'"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "अमित शाह",
-   "reports": [
-    {
-     "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-     "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:48:25+00:00"
-    },
-    {
-     "title": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
-     "url": "https://www.news18.com/india/we-remain-united-ncp-denies-internal-rift-rumours-after-sunetra-pawar-skips-amit-shah-meet-ws-l-10409554.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:47:44+00:00"
-    },
-    {
-     "title": "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
-     "url": "https://www.news18.com/videos/breaking-news/ncp-merger-buzz-returns-amit-shah-meets-senior-leaders-without-sunetra-parth-pawar-news18-10409525.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:57:38+00:00"
-    },
-    {
-     "title": "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
-     "url": "https://timesofindia.indiatimes.com/india/ncp-united-under-sunetra-pawar-party-rejects-rift-rumours-as-she-skips-amit-shah-meet/articleshow/135465912.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:06+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:TV9 Network",
-    "outlet:DB Corp",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah",
-    "google-news:अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना"
-   ],
-   "top": {
-    "IN": 8,
-    "IN-hi": 7,
-    "IN-nation": 3,
-    "IN-hi-nation": 1
-   },
-   "top_score": 1.595,
-   "top_headlines": [
-    "अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना",
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
-   ],
-   "hindi_owners": [
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
    "id": "kh-20261103-Q1353",
    "qid": "Q1353",
    "title": "Delhi",
@@ -1365,7 +1290,7 @@
     "GRAP-2 curbs imposed in Delhi as AQI hits ‘very poor’ category at 324",
     "Air quality of Delhi slips to ‘very poor’ for first time this winter, Stage 2 of GRAP invoked",
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News"
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
    ],
    "hindi_headlines": [
     "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
@@ -1436,17 +1361,17 @@
     "outlet:Amar Ujala",
     "outlet:ABP Group",
     "google-news:Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "google-news:GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
-    "google-news:Delhi pollution curbs: 1,539 vehicles turned back on day 1, Rs 68.4 lakh in fines imposed"
+    "google-news:GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
+    "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 4
+    "IN-nation": 2
    },
-   "top_score": 1.255,
+   "top_score": 1.285,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
     "Blanket Firecracker Ban 'Seems Ideal', But Not Enough Data To Show If Prohibition Solves Air Pollution :..."
    ],
    "hindi_owners": [
@@ -1585,13 +1510,12 @@
    "top": {
     "IN": 4,
     "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 2
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 2.01,
+   "top_score": 1.98,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -1601,6 +1525,125 @@
    ],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
+   "phrase": "NCP",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
+   "story_keys": [
+    "buzz",
+    "denie",
+    "internal",
+    "meet",
+    "rift",
+    "rumour",
+    "skip",
+    "without"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T18:46:35+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
+    "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
+    "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
+    "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+    "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+     "url": "https://www.ndtv.com/india-news/ncp-meet-today-amid-bjp-concern-what-party-leader-said-on-rift-buzz-12273466#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T18:46:35+00:00"
+    },
+    {
+     "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+     "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:48:25+00:00"
+    },
+    {
+     "title": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
+     "url": "https://www.news18.com/india/we-remain-united-ncp-denies-internal-rift-rumours-after-sunetra-pawar-skips-amit-shah-meet-ws-l-10409554.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:47:44+00:00"
+    },
+    {
+     "title": "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
+     "url": "https://www.news18.com/videos/breaking-news/ncp-merger-buzz-returns-amit-shah-meets-senior-leaders-without-sunetra-parth-pawar-news18-10409525.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:57:38+00:00"
+    },
+    {
+     "title": "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
+     "url": "https://timesofindia.indiatimes.com/india/ncp-united-under-sunetra-pawar-party-rejects-rift-rumours-as-she-skips-amit-shah-meet/articleshow/135465912.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:24:06+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
+   "top": {
+    "IN": 7,
+    "IN-nation": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q7040049",
@@ -1700,6 +1743,93 @@
    "top_score": 0.2,
    "top_headlines": [
     "Darius Khambata quits Tata Trusts, says Tata Sons' reputation has been sullied"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261103-Q2512051",
+   "qid": "Q2512051",
+   "title": "Vedanta",
+   "name": "Vedanta",
+   "phrase": "Vedanta",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+   "story_keys": [
+    "against",
+    "arbitration",
+    "award",
+    "plea"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T19:19:27+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+    "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+    "SC junks plea against Vedanta arbitration awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "वेदांत",
+   "reports": [
+    {
+     "title": "SC junks plea against Vedanta arbitration awards",
+     "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:19:27+00:00"
+    },
+    {
+     "title": "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+     "url": "https://www.thehindu.com/news/national/supreme-court-raps-centre-for-stalling-enforcement-of-vedanta-arbitration-awards/article71656332.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T14:41:41+00:00"
+    },
+    {
+     "title": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+     "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:51:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1901,7 +2031,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+   "story": "NCP leaders express discontent in core committee meeting after talks with Amit Shah",
    "story_keys": [
     "again",
     "bring",
@@ -1912,8 +2042,9 @@
     "uttar"
    ],
    "date": "2026-11-03",
-   "news_at": "2026-11-02T16:48:25+00:00",
+   "news_at": "2026-11-02T19:38:54+00:00",
    "owners": [
+    "The Hindu Group",
     "HT Media",
     "Network18"
    ],
@@ -1922,6 +2053,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "NCP leaders express discontent in core committee meeting after talks with Amit Shah",
     "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
     "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18"
    ],
@@ -1930,6 +2062,16 @@
    "india_link": true,
    "label_hi": "अमित शाह",
    "reports": [
+    {
+     "title": "NCP leaders express discontent in core committee meeting after talks with Amit Shah",
+     "url": "https://www.thehindu.com/news/national/maharashtra/ncp-leaders-express-discontent-in-core-committee-meeting-after-talks-with-amit-shah/article71658188.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:38:54+00:00"
+    },
     {
      "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
      "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
@@ -2240,8 +2382,8 @@
  ],
  "notes": [
   "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (7543 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2958 views before); revisit Q163225: last Short 8 h ago; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-20261103-Q7289726-update: 2 owners' new reports on Ramlila Maid",
-  "outlets: 1319 headlines from 31 feeds (19 owners), 21 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
-  "explainers: 4 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q4746875, kh-20261103-Q213380, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Eisenkot What: fewer than 3 owners' headlines name it and the story; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by",
+  "outlets: 1314 headlines from 31 feeds (19 owners), 21 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 5 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q213380, kh-20261103-Q27627866, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Eisenkot What: fewer than 3 owners' headlines name it and the story; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by",
   "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
@@ -2250,15 +2392,14 @@
  "trend_errors": [
   "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
-  "wikipedia search failed for 1 of 1634 headlines (KeyError)"
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1319,
+  "headlines": 1314,
   "feeds": 31,
   "owners": 19,
   "matched": 21,
-  "corroborated": 6
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -2390,13 +2531,12 @@
    "top": {
     "IN": 4,
     "IN-hi": 1,
-    "IN-nation": 1,
-    "IN-hi-nation": 2
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 2.01,
+   "top_score": 1.98,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -2415,7 +2555,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T16:44:01+00:00",
+   "news_at": "2026-11-02T19:37:00+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
@@ -2469,7 +2609,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-02T16:44:01+00:00"
+     "at": "2026-11-02T19:37:00+00:00"
     },
     {
      "title": "Lenny Kravitz died in Florida plane crash?",
@@ -2540,7 +2680,7 @@
     "GRAP-2 curbs imposed in Delhi as AQI hits ‘very poor’ category at 324",
     "Air quality of Delhi slips to ‘very poor’ for first time this winter, Stage 2 of GRAP invoked",
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News"
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
    ],
    "hindi_headlines": [
     "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
@@ -2611,17 +2751,17 @@
     "outlet:Amar Ujala",
     "outlet:ABP Group",
     "google-news:Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "google-news:GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
-    "google-news:Delhi pollution curbs: 1,539 vehicles turned back on day 1, Rs 68.4 lakh in fines imposed"
+    "google-news:GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
+    "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 4
+    "IN-nation": 2
    },
-   "top_score": 1.255,
+   "top_score": 1.285,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
+    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'",
     "Blanket Firecracker Ban 'Seems Ideal', But Not Enough Data To Show If Prohibition Solves Air Pollution :..."
    ],
    "hindi_owners": [
@@ -2632,17 +2772,115 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261103-Q4746875",
-   "qid": "Q4746875",
-   "title": "Amit Shah",
-   "name": "Amit Shah",
-   "phrase": "Amit Shah",
-   "person": true,
+   "id": "kh-20261103-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+   "story_keys": [
+    "airfare",
+    "don't",
+    "hike",
+    "plea",
+    "refuse",
+    "travel",
+    "urgent"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T15:43:57+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
+    "Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
+   "reports": [
+    {
+     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:43:57+00:00"
+    },
+    {
+     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T11:16:02+00:00"
+    },
+    {
+     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:55:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
+    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
+   "phrase": "NCP",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
    "story": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
    "story_keys": [
+    "buzz",
     "denie",
     "internal",
     "meet",
@@ -2652,18 +2890,15 @@
     "without"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-02T16:48:25+00:00",
+   "news_at": "2026-11-02T18:46:35+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Network18",
     "HT Media",
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2671,24 +2906,26 @@
     "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
     "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
     "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
+    "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "hindi_headlines": [
-    "गृह मंत्री अमित शाह से मिले राम चरण-चिरंजीवी, AI-डीपफेक के दुरुपयोग का उठाया मुद्दा, मिला सख्त एक्शन का भरोसा",
-    "NCP अजित गुट ने विलय की अटकलें खारिज कीं:अमित शाह-सुनेत्रा पवार की मुलाकात के बाद पार्टी में मतभेद की खबरें आई थीं",
-    "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
-    "'पहले अपना घर ठीक करें', अमित शाह की NCP नेताओं को सख्त हिदायत",
-    "नाच ना जाने, आंगन टेढ़ा... अमित शाह का राहुल गांधी पर तंज- 'मॉक पार्लियामेंट में ही PM बन सकते हैं'"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "अमित शाह",
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
+    {
+     "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+     "url": "https://www.ndtv.com/india-news/ncp-meet-today-amid-bjp-concern-what-party-leader-said-on-rift-buzz-12273466#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T18:46:35+00:00"
+    },
     {
      "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
      "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
@@ -2734,146 +2971,21 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:HT Media",
-    "outlet:TV9 Network",
-    "outlet:DB Corp",
     "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah",
-    "google-news:अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना"
+    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
    "top": {
-    "IN": 8,
-    "IN-hi": 7,
-    "IN-nation": 3,
-    "IN-hi-nation": 1
+    "IN": 7,
+    "IN-nation": 1
    },
-   "top_score": 1.595,
+   "top_score": 1.0,
    "top_headlines": [
-    "अमित शाह ने हैदराबाद में की पदयात्रा, कांग्रेस की रैली को बताया 'घुसपैठिया बचाओ रैली'; जमकर साधा निशाना",
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "hindi_owners": [
-    "TV9 Network",
-    "DB Corp",
-    "NDTV",
-    "India Today Group",
-    "Network18"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261103-Q213380",
-   "qid": "Q213380",
-   "title": "Supreme Court of India",
-   "name": "Supreme Court of India",
-   "phrase": "Supreme Court",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-   "story_keys": [
-    "air'",
-    "airfare",
-    "don't",
-    "hike",
-    "plea",
-    "refuse",
-    "travel",
-    "urgent"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T15:43:57+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "NDTV",
-    "HT Media"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
-    "'Don't Travel By Air': Supreme Court On Petition Against High Ticket Prices",
-    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
-   "reports": [
-    {
-     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
-     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:43:57+00:00"
-    },
-    {
-     "title": "'Don't Travel By Air': Supreme Court On Petition Against High Ticket Prices",
-     "url": "https://www.ndtv.com/india-news/supreme-court-on-petition-against-high-ticket-prices-dont-travel-by-air-12272603#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:28:32+00:00"
-    },
-    {
-     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
-     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T11:16:02+00:00"
-    },
-    {
-     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
-     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T09:55:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:HT Media",
-    "google-news:“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
-    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
-   ],
-   "top": {
-    "IN": 5,
-    "IN-nation": 8
-   },
-   "top_score": 0.995,
-   "top_headlines": [
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During...",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
-   ],
-   "hindi_owners": []
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q7040049",
@@ -2973,6 +3085,93 @@
    "top_score": 0.2,
    "top_headlines": [
     "Darius Khambata quits Tata Trusts, says Tata Sons' reputation has been sullied"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261103-Q2512051",
+   "qid": "Q2512051",
+   "title": "Vedanta",
+   "name": "Vedanta",
+   "phrase": "Vedanta",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+   "story_keys": [
+    "against",
+    "arbitration",
+    "award",
+    "plea"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T19:19:27+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+    "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+    "SC junks plea against Vedanta arbitration awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "वेदांत",
+   "reports": [
+    {
+     "title": "SC junks plea against Vedanta arbitration awards",
+     "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:19:27+00:00"
+    },
+    {
+     "title": "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+     "url": "https://www.thehindu.com/news/national/supreme-court-raps-centre-for-stalling-enforcement-of-vedanta-arbitration-awards/article71656332.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T14:41:41+00:00"
+    },
+    {
+     "title": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+     "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:51:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "hindi_owners": [],
    "audience": "india",
