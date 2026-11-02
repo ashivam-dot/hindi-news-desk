@@ -1,36 +1,26 @@
 {
- "at": "2026-11-02T16:05:34+00:00",
+ "at": "2026-11-02T16:19:08+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 106 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.116, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 53.5}, 'category:attack': {'n': 13, 'lift': 1.229, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 16 candidates from 26 trending",
-  "revisit kh-20261102-Q2745305-update: 2 owners' new reports on Omar Abdullah (5923 views before); revisit Q124883782: already revisited today; revisit Q163225: already revisited today; revisit kh-20261102-Q1058-update: 2 owners' new reports on Narendra Modi (655 views before); revisit Q7289726: already revisited today; revisit Q140076608 (270 views): 0 owners reported new news on Ashutosh Dixit sin",
-  "outlets: 1332 headlines from 31 feeds (19 owners), 19 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-florida-aviation, nw-20261101-murasu-cyclone",
+  "watch: 12 candidates from 26 trending",
+  "outlets: 1333 headlines from 31 feeds (19 owners), 18 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-florida-aviation, nw-20261101-murasu-cyclone",
   "explainers: 4 kh- stories (on): kh-20261102-Q1353, kh-20261102-Q4746875, kh-20261102-Q213380, kh-20261102-Q982813; dropped: explainer 'Nuclear radiation in Russia, Ukraine? No, just hacked warnin': no name to tell it by; explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer 'Suspected cyberattack disrupts supermarket refrigeration in ': no name to tell it by",
   "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 3 of 1632 headlines (KeyError)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261102-Q4746875: last Short went out 0.1 h ago",
   "drop kh-20261102-Q982813: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q7917881: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q16146453: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q3299104: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q366714: 52 h old and no longer trending live",
-  "drop wk-Q1812342: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261102-Q213380; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261102-Q1058-update",
-  "skip kh-20261102-Q4746875: gate: no draft passed the fact checks: gate: only 0 of 1 photos on screen are new to the last 96 hours of Shorts (want 1)",
-  "published kh-20261102-Q213380: https://www.youtube.com/shorts/EZg3rNNkRyM",
+  "skip nw-20261102-florida-aviation: gate: no draft passed the fact checks: casualties without an agreed toll (मौत)",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "EZg3rNNkRyM",
-  "url": "https://www.youtube.com/shorts/EZg3rNNkRyM",
-  "youtube_title": "सुप्रीम कोर्ट ऑफ इण्डिया ने कहा, महंगे हवाई सफर मत करिए #shorts #hindinews",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
