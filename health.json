@@ -1,32 +1,29 @@
 {
- "at": "2026-11-02T11:48:31+00:00",
+ "at": "2026-11-02T12:19:28+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 105 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.117, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 53.5}, 'category:attack': {'n': 13, 'lift': 1.231, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 60.0}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 18 trending",
-  "revisit kh-20261102-Q2745305-update: 2 owners' new reports on Omar Abdullah (4637 views before); revisit Q124883782: already revisited today; revisit kh-20261102-Q163225-update: 2 owners' new reports on Sonia Gandhi (662 views before); revisit Q1058 (655 views): 0 owners reported new news on Narendra Modi since its last Short; revisit Q7289726: already revisited today; revisit Q140076608 (249 view",
-  "outlets: 1309 headlines from 30 feeds (19 owners), 13 matched to articles, 2 candidates with 2+ owners, 2 nw- stories (on): nw-20261101-murasu-cyclone, nw-20261101-florida-aviation",
-  "explainers: 0 kh- stories (on); dropped: explainer 'Russia and Ukraine accuse each other of hacking emergency al': no name to tell it by; explainer Delhi Supreme Court: fewer than 3 owners' headlines name it and the story; explainer CEC Gyanesh Kumar: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45) and no India connection: not told again in Hindi",
+  "watch: 10 candidates from 20 trending",
+  "outlets: 1314 headlines from 30 feeds (19 owners), 16 matched to articles, 4 candidates with 2+ owners, 2 nw- stories (on): nw-20261101-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 2 kh- stories (on): kh-20261102-Q1353, kh-20261102-Q213380; dropped: explainer CEC Gyanesh Kumar: fewer than 3 owners' headlines name it and the story; explainer Michigan Democrat / Republican: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
-  "trend radar errors: ['wikidata recent deaths: HTTP 429', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1610 headlines (KeyError)']",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 2 of 1613 headlines (KeyError)']",
   "drop wp-2026_Bangladesh_garment_sector_minimum_wage_protests: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q16146453: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q3299104: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q366714: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q366714: 48 h old and no longer trending live",
   "drop wk-Q1812342: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q7612484: 72 h old and no longer trending live",
-  "published kh-20261102-Q163225-update: https://www.youtube.com/shorts/bY5dPHi-ci4",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261102-Q1353, kh-20261102-Q213380, nw-20261102-florida-aviation; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "skip kh-20261102-Q1353: gate: no draft passed the fact checks: beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: NCR, सुप्रीम कोर्ट, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow; things with photos: सुप्रीम कोर्ट), so that at most 2 beats are text cards and never two in a row.",
+  "skip kh-20261102-Q213380: gate: no draft passed the fact checks: beats 2,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: सुप्रीम कोर्ट, विमान, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow; things with photos: सुप्रीम कोर्ट, विमान), so that at most 2 beats are text cards and never two in a row. Keep quantities attached to their source nouns: ",
+  "later nw-20261102-florida-aviation: this run already wrote 2 scripts",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "bY5dPHi-ci4",
-  "url": "https://www.youtube.com/shorts/bY5dPHi-ci4",
-  "youtube_title": "सोनिया गाँधी ने लालू यादव से दिल्ली में मुलाकात की #shorts #soniagandhi",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
