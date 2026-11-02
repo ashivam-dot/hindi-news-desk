@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T22:37:07+00:00",
+ "at": "2026-11-02T22:51:48+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q213380",
@@ -89,13 +89,12 @@
     "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
    ],
    "top": {
-    "IN-nation": 10
+    "IN-nation": 11
    },
-   "top_score": 0.33,
+   "top_score": 0.3,
    "top_headlines": [
     "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
-    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
+    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali"
    ],
    "hindi_owners": []
   },
@@ -207,9 +206,13 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 16
+   },
+   "top_score": 0.15,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -241,6 +244,49 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141966885",
+   "title": "2026 Palm Beach County Learjet 60 crash",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-02T21:42:00+00:00",
+   "headlines": [
+    "20-Year-Old Co-Pilot Died In Florida Learjet Crash That Killed 9, Family Says"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-01",
+    "google-news:20-Year-Old Co-Pilot Died In Florida Learjet Crash That Killed 9, Family Says"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141966885",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-11-01",
+   "coords": [
+    26.63288889,
+    -80.11311111
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
+   ],
    "hindi_owners": []
   },
   {
@@ -280,17 +326,18 @@
    "hindi_owners": []
   },
   {
-   "id": "nw-20261102-murasu-cyclone",
+   "id": "nw-20261101-murasu-cyclone",
    "qid": null,
    "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
-   "date": "2026-11-02",
+   "date": "2026-11-01",
    "news_at": "2026-11-02T22:07:18+00:00",
    "owners": [
     "HT Media",
     "Network18",
+    "Indian Express Group",
     "India Today Group",
     "Bennett, Coleman & Co.",
     "The Hindu Group",
@@ -301,11 +348,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Andhra braces for second cyclone in less than a week as ‘Murasu’ to make landfall on November 3",
     "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
     "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
     "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
-    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -400,6 +447,7 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
+    "outlet:Indian Express Group",
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
@@ -424,9 +472,7 @@
     "DB Corp",
     "NDTV",
     "Network18"
-   ],
-   "audience": "india",
-   "lane": "breaking"
+   ]
   },
   {
    "id": "nw-20261102-florida-aviation",
@@ -537,9 +583,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
    ],
@@ -775,6 +821,81 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-30",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q4834146",
+   "title": "B. P. Singh",
+   "fame": 75000,
+   "views": 0,
+   "traffic": 0,
+   "news": 75000,
+   "news_at": "2026-11-02T22:52:50.025380+00:00",
+   "headlines": [
+    "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
+    "More action in J&K’s corridors of power: Interim Chief Secretary appointed as Sajjan Singh Yadav awaits posting",
+    "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "बृजेन्द्र पाल सिंह",
+   "via": [
+    "google-news:Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
+    "google-news:More action in J&K’s corridors of power: Interim Chief Secretary appointed as Sajjan Singh Yadav awaits posting",
+    "google-news:Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims",
+    "outlet:Government of India",
+    "outlet:Indian Express Group",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "Government of India",
+    "Indian Express Group",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331820",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-02T22:52:50.025380+00:00"
+    },
+    {
+     "title": "More action in J&K’s corridors of power: Interim Chief Secretary appointed as Sajjan Singh Yadav awaits posting",
+     "url": "https://indianexpress.com/article/india/jammu-and-kashmir-interim-chief-secretary-sajjan-singh-yadav-10946997/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T07:22:51+00:00"
+    },
+    {
+     "title": "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims",
+     "url": "https://www.indiatoday.in/health/story/yuvraj-singh-protocol32-supplement-evidence-safety-concerns-3030393-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T07:00:22+00:00"
+    }
+   ],
+   "id": "wk-Q4834146",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-27",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1139,6 +1260,53 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q7917881",
+   "title": "Ved Rahi",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-02T02:45:02+00:00",
+   "headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "वेद राही",
+   "via": [
+    "google-news:साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+     "url": "https://www.aajtak.in/literature/story/famous-dogri-writer-ved-rahi-passes-away-sahitya-akademi-award-winner-ntc-pvp-dskc-2686139-2026-11-02?utm_source=rssfeed",
+     "outlet": "AajTak",
+     "outlet_hi": "आजतक",
+     "owner": "India Today Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-11-02T02:45:02+00:00"
+    }
+   ],
+   "id": "wk-Q7917881",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q366714",
    "title": "Juan Atkins",
    "fame": 24138,
@@ -1323,11 +1491,11 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141966885",
-   "title": "2026 Palm Beach County Learjet 60 crash",
-   "fame": 1000,
-   "views": 0,
-   "traffic": 1000,
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12471,
+   "views": 12471,
+   "traffic": 0,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -1335,180 +1503,86 @@
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "google-trends-US:accidente"
+    "wikipedia-top-2026-11-01"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q141966885",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-11-01",
-   "coords": [
-    26.63288889,
-    -80.11311111
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q241115",
+   "title": "Elke Sommer",
+   "fame": 10001,
+   "views": 10001,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-01"
    ],
-   "has_coords": true,
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q241115",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-28",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 8664,
+   "views": 8664,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-01"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
-  {
-   "id": "nw-20261102-murasu-cyclone",
-   "qid": null,
-   "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
-   "name": "Murasu",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T22:07:18+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
-    "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
-    "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
-    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
-     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T22:07:18+00:00"
-    },
-    {
-     "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:37:25+00:00"
-    },
-    {
-     "title": "Cyclone Murasu Tracker Updates: Landfall Process Begins Along South Andhra Coast At 1 AM",
-     "url": "https://www.news18.com/india/cyclone-murasu-tracker-live-updates-bay-of-bengal-severe-cyclonic-storm-landfall-time-imd-alert-andhra-pradesh-tamil-nadu-rains-schools-closed-liveblog-ws-kl-10408052.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:30:46+00:00"
-    },
-    {
-     "title": "Cyclone Murasu Landfall Begins, Heavy Rain Batters Andhra Coast",
-     "url": "https://www.ndtv.com/india-news/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-batter-andhra-coast-12273713#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:15:45+00:00"
-    },
-    {
-     "title": "Cyclone Murasu makes landfall in Andhra Pradesh, triggers heavy rain; thousands evacuated, coastal areas on alert",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-murasu-makes-landfall-in-andhra-pradesh-triggers-heavy-rain-thousands-evacuated-coastal-areas-on-alert-101793641721774.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T20:47:23+00:00"
-    },
-    {
-     "title": "Palnadu on high alert as Cyclone Murasu to bring heavy rain",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/palnadu-on-high-alert-as-cyclone-murasu-threatens-heavy-rain/article71656303.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:05:09+00:00"
-    },
-    {
-     "title": "Cyclone Murasu: Andhra Braces For Landfall Tonight | Winds Up To 120 Kmph, Heavy Rain Alert | News18",
-     "url": "https://www.news18.com/videos/india/cyclone-murasu-andhra-braces-for-landfall-tonight-winds-up-to-120-kmph-heavy-rain-alert-news18-10409684.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T18:25:30+00:00"
-    },
-    {
-     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:19:50+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1,
-    "IN-hi": 1,
-    "IN-hi-nation": 1
-   },
-   "top_score": 1.8,
-   "top_headlines": [
-    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "अलर्ट! आंध्र तट की ओर बढ़ रहा चक्रवात 'मुरासु', 120 की रफ्तार से चलेंगी हवाएं, जानें कब और कहां होगा लैंडफॉ",
-    "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
-   ],
-   "hindi_owners": [
-    "Amar Ujala",
-    "India Today Group",
-    "DB Corp",
-    "NDTV",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "breaking"
-  },
   {
    "id": "kh-20261103-Q1561861",
    "qid": "Q1561861",
@@ -1617,9 +1691,13 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 16
+   },
+   "top_score": 0.15,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -1812,6 +1890,53 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "qid": "Q7917881",
+   "title": "Ved Rahi",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-02T02:45:02+00:00",
+   "headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "वेद राही",
+   "via": [
+    "google-news:साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+     "url": "https://www.aajtak.in/literature/story/famous-dogri-writer-ved-rahi-passes-away-sahitya-akademi-award-winner-ntc-pvp-dskc-2686139-2026-11-02?utm_source=rssfeed",
+     "outlet": "AajTak",
+     "outlet_hi": "आजतक",
+     "owner": "India Today Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-11-02T02:45:02+00:00"
+    }
+   ],
+   "id": "wk-Q7917881",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261103-Q432808",
@@ -2148,6 +2273,37 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q965634",
+   "title": "Mišo Kovač",
+   "fame": 8664,
+   "views": 8664,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-01"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q965634",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q5386105",
    "title": "Eric Bauza",
    "fame": 27849,
@@ -2171,6 +2327,37 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-25",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q259559",
+   "title": "Susan Saint James",
+   "fame": 12471,
+   "views": 12471,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-01"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q259559",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-26",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -2570,37 +2757,34 @@
  ],
  "notes": [
   "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (8005 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2977 views before); revisit Q163225: last Short 11 h ago; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-20261103-Q7289726-update: 2 owners' new reports on Ramlila Mai",
-  "outlets: 1284 headlines from 31 feeds (19 owners), 24 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "outlets: 1344 headlines from 33 feeds (20 owners), 27 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261101-murasu-cyclone, nw-20261102-florida-aviation",
   "explainers: 6 kh- stories (on): kh-20261103-Q213380, kh-20261103-Q1561861, kh-20261103-Q7040049, kh-20261103-Q2512051; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by; explainer Somalia: no Wikipedia article that can be its centre",
   "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45) and no India connection: not told again in Hindi",
-  "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
-  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again"
- ],
- "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+  "skip wk-Q2913482: Orbitwire published (wk-Q2913482) and no India connection: not told again in Hindi",
+  "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
+  "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 1284,
-  "feeds": 31,
-  "owners": 19,
-  "matched": 24,
-  "corroborated": 8
+  "headlines": 1344,
+  "feeds": 33,
+  "owners": 20,
+  "matched": 27,
+  "corroborated": 9
  },
  "emerging": [
   {
-   "id": "nw-20261102-murasu-cyclone",
+   "id": "nw-20261101-murasu-cyclone",
    "qid": null,
    "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
-   "date": "2026-11-02",
+   "date": "2026-11-01",
    "news_at": "2026-11-02T22:07:18+00:00",
    "owners": [
     "HT Media",
     "Network18",
+    "Indian Express Group",
     "India Today Group",
     "Bennett, Coleman & Co.",
     "The Hindu Group",
@@ -2611,11 +2795,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Andhra braces for second cyclone in less than a week as ‘Murasu’ to make landfall on November 3",
     "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
     "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
     "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
-    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+    "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2710,6 +2894,7 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
+    "outlet:Indian Express Group",
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
@@ -2734,9 +2919,7 @@
     "DB Corp",
     "NDTV",
     "Network18"
-   ],
-   "audience": "india",
-   "lane": "breaking"
+   ]
   },
   {
    "id": "nw-20261102-florida-aviation",
@@ -2847,9 +3030,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
    ],
@@ -2945,13 +3128,12 @@
     "google-news:Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
    ],
    "top": {
-    "IN-nation": 10
+    "IN-nation": 11
    },
-   "top_score": 0.33,
+   "top_score": 0.3,
    "top_headlines": [
     "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
-    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali",
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
+    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali"
    ],
    "hindi_owners": []
   },
@@ -3063,9 +3245,13 @@
     "outlet:NDTV",
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 16
+   },
+   "top_score": 0.15,
+   "top_headlines": [
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
