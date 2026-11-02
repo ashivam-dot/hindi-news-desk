@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T20:49:24+00:00",
+ "at": "2026-11-02T21:05:31+00:00",
  "ok": true,
  "dry": false,
  "steps": [
@@ -15,7 +15,7 @@
   "hold kh-20261103-Q1353: outside 07:00-24:00 IST",
   "hold nw-20261102-murasu-cyclone: outside 07:00-24:00 IST",
   "drop kh-20261103-Q27627866: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261103-Q7040049: too low in Google News India's top stories (place 0.20, needs 0.35)",
+  "drop kh-20261103-Q7040049: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261103-Q356359: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261103-Q2512051: a world statement, politics or diplomacy story with no India connection",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261103-Q2512051, kh-20261103-Q124883782-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261103-Q1353",
