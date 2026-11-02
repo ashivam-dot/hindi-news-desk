@@ -1,5 +1,5 @@
 {
- "at": "2026-11-02T20:19:44+00:00",
+ "at": "2026-11-02T20:35:09+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q1353",
@@ -52,7 +52,7 @@
     "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
     "ACP से लेकर जवानों के प्रदर्शन के बाद एक्शन में दिल्ली पुलिस कमिश्नर, पुलिस-वकील विवाद सुलझाने को बनेगी कमेटी"
    ],
-   "hindi_news": 42,
+   "hindi_news": 41,
    "geos": [
     "IN"
    ],
@@ -117,10 +117,10 @@
     "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 2,
     "IN-nation": 4
    },
-   "top_score": 1.255,
+   "top_score": 1.205,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
     "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
@@ -221,19 +221,20 @@
     "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
    ],
    "top": {
-    "IN-nation": 20
+    "IN-nation": 19
    },
-   "top_score": 0.03,
+   "top_score": 0.06,
    "top_headlines": [
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -272,10 +273,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
    "reports": [
     {
      "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
@@ -337,9 +340,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
@@ -608,14 +611,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4,
+    "IN": 3,
     "IN-hi": 1,
-    "IN-nation": 3,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.995,
+   "top_score": 2.05,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: List of flights cancelled to and from Chennai, Visakhapatnam, Vijayawada",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -722,9 +726,13 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
+   ],
    "hindi_owners": []
   },
   {
@@ -935,11 +943,101 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co."
    ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261103-Q356359",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+   "story_keys": [
+    "crew",
+    "hijacked",
+    "member",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T20:12:27+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारतीय नौसेना",
+   "reports": [
+    {
+     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:12:27+00:00"
+    },
+    {
+     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:03+00:00"
+    },
+    {
+     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:49:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -1014,7 +1112,7 @@
    "views": 0,
    "traffic": 0,
    "news": 50000,
-   "news_at": "2026-11-02T20:20:32.152890+00:00",
+   "news_at": "2026-11-02T20:37:01.815623+00:00",
    "headlines": [
     "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
     "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims"
@@ -1046,7 +1144,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-02T20:20:32.152890+00:00"
+     "at": "2026-11-02T20:37:01.815623+00:00"
     },
     {
      "title": "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims",
@@ -1503,7 +1601,7 @@
     "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
     "ACP से लेकर जवानों के प्रदर्शन के बाद एक्शन में दिल्ली पुलिस कमिश्नर, पुलिस-वकील विवाद सुलझाने को बनेगी कमेटी"
    ],
-   "hindi_news": 42,
+   "hindi_news": 41,
    "geos": [
     "IN"
    ],
@@ -1568,10 +1666,10 @@
     "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 2,
     "IN-nation": 4
    },
-   "top_score": 1.255,
+   "top_score": 1.205,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
     "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
@@ -1711,14 +1809,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4,
+    "IN": 3,
     "IN-hi": 1,
-    "IN-nation": 3,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.995,
+   "top_score": 2.05,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: List of flights cancelled to and from Chennai, Visakhapatnam, Vijayawada",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -1730,10 +1829,10 @@
    "lane": "breaking"
   },
   {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -1772,10 +1871,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
    "reports": [
     {
      "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
@@ -1837,9 +1938,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
@@ -1952,51 +2053,90 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q7917881",
-   "title": "Ved Rahi",
-   "fame": 25000,
+   "id": "kh-20261103-Q356359",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+   "story_keys": [
+    "crew",
+    "hijacked",
+    "member",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T20:12:27+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-02T02:45:02+00:00",
-   "headlines": [],
-   "hindi_news": 1,
-   "hindi_headlines": [
-    "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित"
+   "headlines": [
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
    ],
    "region": "india",
    "india_link": true,
-   "geos": [],
-   "label_hi": "वेद राही",
-   "via": [
-    "google-news:साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "India Today Group"
-   ],
+   "label_hi": "भारतीय नौसेना",
    "reports": [
     {
-     "title": "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
-     "url": "https://www.aajtak.in/literature/story/famous-dogri-writer-ved-rahi-passes-away-sahitya-akademi-award-winner-ntc-pvp-dskc-2686139-2026-11-02?utm_source=rssfeed",
-     "outlet": "AajTak",
-     "outlet_hi": "आजतक",
+     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:12:27+00:00"
+    },
+    {
+     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:03+00:00"
+    },
+    {
+     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
-     "group": "Hindi",
-     "lang": "hi",
-     "at": "2026-11-02T02:45:02+00:00"
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:49:10+00:00"
     }
    ],
-   "id": "wk-Q7917881",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-01",
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q2512051",
@@ -2074,12 +2214,63 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co."
    ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "qid": "Q7917881",
+   "title": "Ved Rahi",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-02T02:45:02+00:00",
+   "headlines": [],
+   "hindi_news": 1,
+   "hindi_headlines": [
+    "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित"
+   ],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "वेद राही",
+   "via": [
+    "google-news:साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "साहित्यकार वेद राही का 93 साल की उम्र में निधन, साहित्य अकादमी पुरस्कार से थे सम्मानित",
+     "url": "https://www.aajtak.in/literature/story/famous-dogri-writer-ved-rahi-passes-away-sahitya-akademi-award-winner-ntc-pvp-dskc-2686139-2026-11-02?utm_source=rssfeed",
+     "outlet": "AajTak",
+     "outlet_hi": "आजतक",
+     "owner": "India Today Group",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-11-02T02:45:02+00:00"
+    }
+   ],
+   "id": "wk-Q7917881",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q16146453",
@@ -2689,9 +2880,9 @@
   }
  ],
  "notes": [
-  "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (7543 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2958 views before); revisit Q163225: last Short 8 h ago; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-20261103-Q7289726-update: 2 owners' new reports on Ramlila Maid",
-  "outlets: 1312 headlines from 31 feeds (19 owners), 28 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
-  "explainers: 5 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q213380, kh-20261103-Q27627866, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Eisenkot What: fewer than 3 owners' headlines name it and the story; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by",
+  "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (7543 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2958 views before); revisit Q163225: last Short 9 h ago; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-20261103-Q7289726-update: 2 owners' new reports on Ramlila Maid",
+  "outlets: 1306 headlines from 31 feeds (19 owners), 26 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 6 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q213380, kh-20261103-Q1561861, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Eisenkot What: fewer than 3 owners' headlines name it and the story; explainer 'Ukraine, Russia emergency alert apps hit by cyberattacks; fa': no name to tell it by",
   "skip wk-Q141790807-2026w45: Orbitwire published (wk-Q141790807-2026w45) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q376176: Orbitwire published (wk-Q376176), not high-profile enough to tell again",
@@ -2703,11 +2894,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1312,
+  "headlines": 1306,
   "feeds": 31,
   "owners": 19,
-  "matched": 28,
-  "corroborated": 8
+  "matched": 26,
+  "corroborated": 9
  },
  "emerging": [
   {
@@ -2837,14 +3028,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4,
+    "IN": 3,
     "IN-hi": 1,
-    "IN-nation": 3,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.995,
+   "top_score": 2.05,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: List of flights cancelled to and from Chennai, Visakhapatnam, Vijayawada",
     "Cyclone Murasu Live updates: Heavy rain lashes Konaseema as cyclone Murasu nears Andhra coast"
    ],
    "hindi_owners": [
@@ -2951,9 +3143,13 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
+   ],
    "hindi_owners": []
   }
  ],
@@ -3009,7 +3205,7 @@
     "दिल्ली बैठक में अमित शाह की NCP नेताओं को नसीहत, पहले पार्टी संभालिए, तभी मजबूत रहेगा NDA",
     "ACP से लेकर जवानों के प्रदर्शन के बाद एक्शन में दिल्ली पुलिस कमिश्नर, पुलिस-वकील विवाद सुलझाने को बनेगी कमेटी"
    ],
-   "hindi_news": 42,
+   "hindi_news": 41,
    "geos": [
     "IN"
    ],
@@ -3074,10 +3270,10 @@
     "google-news:Delhi's massive vehicle ban faces its biggest test at the borders: Can enforcement keep up?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 2,
     "IN-nation": 4
    },
-   "top_score": 1.255,
+   "top_score": 1.205,
    "top_headlines": [
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
     "GRAP-II pollution curbs imposed in Delhi-NCR as air quality dips further | India News",
@@ -3178,19 +3374,20 @@
     "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
    ],
    "top": {
-    "IN-nation": 20
+    "IN-nation": 19
    },
-   "top_score": 0.03,
+   "top_score": 0.06,
    "top_headlines": [
-    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail"
+    "Azam Khan moves Supreme Court against ED detention outside Rampur Jail",
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -3229,10 +3426,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
    "reports": [
     {
      "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
@@ -3294,9 +3493,9 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 0.985,
+   "top_score": 0.97,
    "top_headlines": [
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
@@ -3484,11 +3683,101 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co."
    ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261103-Q356359",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+   "story_keys": [
+    "crew",
+    "hijacked",
+    "member",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T20:12:27+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारतीय नौसेना",
+   "reports": [
+    {
+     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:12:27+00:00"
+    },
+    {
+     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:03+00:00"
+    },
+    {
+     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:49:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   }
  ]
