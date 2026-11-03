@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T00:05:46+00:00",
+ "at": "2026-11-03T00:22:27+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q213380",
@@ -90,13 +90,12 @@
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 7
+    "IN-nation": 9
    },
-   "top_score": 0.76,
+   "top_score": 0.73,
    "top_headlines": [
     "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
-    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali",
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali"
    ],
    "hindi_owners": []
   },
@@ -187,9 +186,9 @@
     "google-news:Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 16
    },
-   "top_score": 0.21,
+   "top_score": 0.15,
    "top_headlines": [
     "Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
@@ -198,10 +197,10 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -241,10 +240,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
    "reports": [
     {
      "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
@@ -315,9 +316,9 @@
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
    "top": {
-    "IN-nation": 9
+    "IN-nation": 11
    },
-   "top_score": 0.36,
+   "top_score": 0.3,
    "top_headlines": [
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
@@ -432,6 +433,114 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261103-Q356359",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+   "story_keys": [
+    "crew",
+    "fishing",
+    "hijacked",
+    "member",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T21:55:18+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारतीय नौसेना",
+   "reports": [
+    {
+     "title": "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
+     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-all-20-crew-of-pirated-fishing-vessel-in-arabian-sea-12273779#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:55:18+00:00"
+    },
+    {
+     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:12:27+00:00"
+    },
+    {
+     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:03+00:00"
+    },
+    {
+     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:49:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "top": {
+    "IN": 13,
+    "IN-nation": 3
+   },
+   "top_score": 0.74,
+   "top_headlines": [
+    "Navy rescues 20 crew members of fishing vessel from armed pirates over 3,000km from Mumbai, Rajnath prais",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "qid": "Q16296",
    "title": "Patrick Stewart",
    "fame": 205436,
@@ -529,44 +638,6 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141966885",
-   "title": "2026 Palm Beach County Learjet 60 crash",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-02T21:42:00+00:00",
-   "headlines": [
-    "20-Year-Old Co-Pilot Died In Florida Learjet Crash That Killed 9, Family Says"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:20-Year-Old Co-Pilot Died In Florida Learjet Crash That Killed 9, Family Says"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141966885",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-11-01",
-   "coords": [
-    26.63288889,
-    -80.11311111
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 125000,
@@ -604,12 +675,12 @@
   {
    "id": "nw-20261102-murasu-cyclone",
    "qid": null,
-   "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
+   "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T23:30:28+00:00",
+   "news_at": "2026-11-03T00:09:45+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -637,6 +708,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
+     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T00:09:45+00:00"
+    },
     {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
@@ -706,16 +787,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T18:25:30+00:00"
-    },
-    {
-     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:19:50+00:00"
     }
    ],
    "via": [
@@ -728,22 +799,24 @@
    "emerging": true,
    "article": null,
    "top": {
+    "IN": 1,
     "IN-hi": 1,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 2.1,
    "top_headlines": [
     "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
-    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट"
+    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3"
    ],
    "hindi_owners": [
+    "Network18",
     "HT Media",
     "Amar Ujala",
     "TV9 Network",
-    "India Today Group",
     "DB Corp",
-    "NDTV",
-    "Network18"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -751,18 +824,18 @@
   {
    "id": "nw-20261102-florida-aviation",
    "qid": null,
-   "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+   "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
    "name": "Florida",
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T21:23:31+00:00",
+   "news_at": "2026-11-03T00:08:14+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "BBC",
-    "Al Jazeera Media Network"
+    "Al Jazeera Media Network",
+    "BBC"
    ],
    "fame": 125000,
    "news": 125000,
@@ -772,8 +845,8 @@
     "US: 9 killed in Florida jet crash",
     "Lenny Kravitz died in Florida plane crash?",
     "Nine dead in small plane crash near Trump's Florida home",
-    "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
-    "‘Work to do’: Authorities give update on Florida private jet crash"
+    "‘Work to do’: Authorities give update on Florida private jet crash",
+    "Plane may have broken apart ahead of deadly Florida jet crash, say investigators"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -785,14 +858,14 @@
    "label_hi": null,
    "reports": [
     {
-     "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+     "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
      "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
      "outlet": "BBC",
      "outlet_hi": "बीबीसी",
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-02T19:58:34+00:00"
+     "at": "2026-11-03T00:08:14+00:00"
     },
     {
      "title": "Nine dead in small plane crash near Trump's Florida home",
@@ -839,8 +912,8 @@
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:BBC",
-    "outlet:Al Jazeera Media Network"
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC"
    ],
    "emerging": true,
    "article": null,
@@ -848,106 +921,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "id": "kh-20261103-Q356359",
-   "qid": "Q356359",
-   "title": "Indian Navy",
-   "name": "Indian Navy",
-   "phrase": "Indian Navy",
-   "person": false,
-   "kind": "explainer",
-   "category": "defence",
-   "category_hi": "रक्षा",
-   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-   "story_keys": [
-    "crew",
-    "fishing",
-    "hijacked",
-    "member",
-    "rescue",
-    "vessel"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T21:55:18+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
-    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
-    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारतीय नौसेना",
-   "reports": [
-    {
-     "title": "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
-     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-all-20-crew-of-pirated-fishing-vessel-in-arabian-sea-12273779#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:55:18+00:00"
-    },
-    {
-     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
-     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T20:12:27+00:00"
-    },
-    {
-     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:05:03+00:00"
-    },
-    {
-     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
-     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:49:10+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q644401",
@@ -1136,16 +1109,12 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q432808",
@@ -1250,7 +1219,7 @@
    "views": 0,
    "traffic": 0,
    "news": 50000,
-   "news_at": "2026-11-03T00:06:15.195569+00:00",
+   "news_at": "2026-11-03T00:23:01.987629+00:00",
    "headlines": [
     "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
     "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims"
@@ -1282,7 +1251,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T00:06:15.195569+00:00"
+     "at": "2026-11-03T00:23:01.987629+00:00"
     },
     {
      "title": "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims",
@@ -1693,12 +1662,12 @@
   {
    "id": "nw-20261102-murasu-cyclone",
    "qid": null,
-   "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
+   "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T23:30:28+00:00",
+   "news_at": "2026-11-03T00:09:45+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -1726,6 +1695,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
+     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T00:09:45+00:00"
+    },
     {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
@@ -1795,16 +1774,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T18:25:30+00:00"
-    },
-    {
-     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:19:50+00:00"
     }
    ],
    "via": [
@@ -1817,25 +1786,135 @@
    "emerging": true,
    "article": null,
    "top": {
+    "IN": 1,
     "IN-hi": 1,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 2.1,
    "top_headlines": [
     "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
-    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट"
+    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3"
    ],
    "hindi_owners": [
+    "Network18",
     "HT Media",
     "Amar Ujala",
     "TV9 Network",
-    "India Today Group",
     "DB Corp",
-    "NDTV",
-    "Network18"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261103-Q356359",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+   "story_keys": [
+    "crew",
+    "fishing",
+    "hijacked",
+    "member",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T21:55:18+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारतीय नौसेना",
+   "reports": [
+    {
+     "title": "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
+     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-all-20-crew-of-pirated-fishing-vessel-in-arabian-sea-12273779#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T21:55:18+00:00"
+    },
+    {
+     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
+     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T20:12:27+00:00"
+    },
+    {
+     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:05:03+00:00"
+    },
+    {
+     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
+     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:49:10+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "top": {
+    "IN": 13,
+    "IN-nation": 3
+   },
+   "top_score": 0.74,
+   "top_headlines": [
+    "Navy rescues 20 crew members of fishing vessel from armed pirates over 3,000km from Mumbai, Rajnath prais",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q7040049",
@@ -1943,6 +2022,137 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
+   "phrase": "NCP",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+   "story_keys": [
+    "buzz",
+    "denie",
+    "internal",
+    "meet",
+    "rift",
+    "rumour",
+    "skip",
+    "son",
+    "without"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T22:36:52+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+    "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
+    "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
+    "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
+    "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+    "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
+   "reports": [
+    {
+     "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
+     "url": "https://timesofindia.indiatimes.com/india/unhappy-with-sunetra-pawar-and-her-son-parth-six-ncp-biggies-meet-amit-shah/articleshow/135476850.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T22:36:52+00:00"
+    },
+    {
+     "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
+     "url": "https://www.ndtv.com/india-news/ncp-meet-today-amid-bjp-concern-what-party-leader-said-on-rift-buzz-12273466#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T18:46:35+00:00"
+    },
+    {
+     "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+     "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:48:25+00:00"
+    },
+    {
+     "title": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
+     "url": "https://www.news18.com/india/we-remain-united-ncp-denies-internal-rift-rumours-after-sunetra-pawar-skips-amit-shah-meet-ws-l-10409554.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:47:44+00:00"
+    },
+    {
+     "title": "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
+     "url": "https://www.news18.com/videos/breaking-news/ncp-merger-buzz-returns-amit-shah-meets-senior-leaders-without-sunetra-parth-pawar-news18-10409525.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:57:38+00:00"
+    },
+    {
+     "title": "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
+     "url": "https://timesofindia.indiatimes.com/india/ncp-united-under-sunetra-pawar-party-rejects-rift-rumours-as-she-skips-amit-shah-meet/articleshow/135465912.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:24:06+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
+   "top": {
+    "IN-nation": 11
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
+    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261103-Q1058",
    "qid": "Q1058",
    "title": "Narendra Modi",
@@ -2029,244 +2239,15 @@
     "google-news:Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 16
    },
-   "top_score": 0.21,
+   "top_score": 0.15,
    "top_headlines": [
     "Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
-   "phrase": "NCP",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-   "story_keys": [
-    "buzz",
-    "denie",
-    "internal",
-    "meet",
-    "rift",
-    "rumour",
-    "skip",
-    "son",
-    "without"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T22:36:52+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "HT Media",
-    "NDTV"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-    "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
-    "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
-    "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
-    "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
-    "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
-     "url": "https://timesofindia.indiatimes.com/india/unhappy-with-sunetra-pawar-and-her-son-parth-six-ncp-biggies-meet-amit-shah/articleshow/135476850.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T22:36:52+00:00"
-    },
-    {
-     "title": "NCP Meet Today Amid BJP 'Concern': What Party Leader Said On \"Rift\" Buzz",
-     "url": "https://www.ndtv.com/india-news/ncp-meet-today-amid-bjp-concern-what-party-leader-said-on-rift-buzz-12273466#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T18:46:35+00:00"
-    },
-    {
-     "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
-     "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:48:25+00:00"
-    },
-    {
-     "title": "'We Remain United': NCP Denies Internal Rift Rumours After Sunetra Pawar Skips Amit Shah Meet",
-     "url": "https://www.news18.com/india/we-remain-united-ncp-denies-internal-rift-rumours-after-sunetra-pawar-skips-amit-shah-meet-ws-l-10409554.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:47:44+00:00"
-    },
-    {
-     "title": "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
-     "url": "https://www.news18.com/videos/breaking-news/ncp-merger-buzz-returns-amit-shah-meets-senior-leaders-without-sunetra-parth-pawar-news18-10409525.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:57:38+00:00"
-    },
-    {
-     "title": "'NCP united under Sunetra': Party rejects rift rumours as she skips Amit Shah meet",
-     "url": "https://timesofindia.indiatimes.com/india/ncp-united-under-sunetra-pawar-party-rejects-rift-rumours-as-she-skips-amit-shah-meet/articleshow/135465912.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:06+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
-   ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261103-Q356359",
-   "qid": "Q356359",
-   "title": "Indian Navy",
-   "name": "Indian Navy",
-   "phrase": "Indian Navy",
-   "person": false,
-   "kind": "explainer",
-   "category": "defence",
-   "category_hi": "रक्षा",
-   "story": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-   "story_keys": [
-    "crew",
-    "fishing",
-    "hijacked",
-    "member",
-    "rescue",
-    "vessel"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T21:55:18+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-    "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
-    "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
-    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारतीय नौसेना",
-   "reports": [
-    {
-     "title": "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
-     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-all-20-crew-of-pirated-fishing-vessel-in-arabian-sea-12273779#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T21:55:18+00:00"
-    },
-    {
-     "title": "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
-     "url": "https://timesofindia.indiatimes.com/india/navy-rescues-20-crew-members-of-fishing-vessel-from-armed-pirates-over-3000km-from-mumbai-rajnath-praises-48-hr-op/articleshow/135473804.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T20:12:27+00:00"
-    },
-    {
-     "title": "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-     "url": "https://www.hindustantimes.com/india-news/navy-rescues-20-crew-members-from-hijacked-iranian-vessel-101793645270343.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:05:03+00:00"
-    },
-    {
-     "title": "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
-     "url": "https://www.indiatoday.in/india/story/indian-navy-rescues-20-azini-crew-arabian-sea-somali-pirates-indian-ocean-gulf-of-aden-rajnath-singh-3030992-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:49:10+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q7917881",
@@ -2314,93 +2295,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261103-Q2512051",
-   "qid": "Q2512051",
-   "title": "Vedanta",
-   "name": "Vedanta",
-   "phrase": "Vedanta",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
-   "story_keys": [
-    "against",
-    "arbitration",
-    "award",
-    "plea"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T19:19:27+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
-    "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
-    "SC junks plea against Vedanta arbitration awards"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": "वेदांत",
-   "reports": [
-    {
-     "title": "SC junks plea against Vedanta arbitration awards",
-     "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T19:19:27+00:00"
-    },
-    {
-     "title": "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
-     "url": "https://www.thehindu.com/news/national/supreme-court-raps-centre-for-stalling-enforcement-of-vedanta-arbitration-awards/article71656332.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T14:41:41+00:00"
-    },
-    {
-     "title": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
-     "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T09:51:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261103-Q51403327",
@@ -2572,6 +2466,89 @@
     "outlet:Deutsche Welle",
     "outlet:Al Jazeera Media Network",
     "outlet:France Médias Monde"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261103-Q2512051",
+   "qid": "Q2512051",
+   "title": "Vedanta",
+   "name": "Vedanta",
+   "phrase": "Vedanta",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+   "story_keys": [
+    "against",
+    "arbitration",
+    "award",
+    "plea"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T19:19:27+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+    "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+    "SC junks plea against Vedanta arbitration awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "वेदांत",
+   "reports": [
+    {
+     "title": "SC junks plea against Vedanta arbitration awards",
+     "url": "https://economictimes.indiatimes.com/industry/indl-goods/svs/metals-mining/nobody-will-trust-you-sc-junks-centres-plea-against-vedanta-arbitration-awards-ravva-oil-to-claim-us-dollar-99-million-over-oilfield-dispute-from-1994/articleshow/135472554.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T19:19:27+00:00"
+    },
+    {
+     "title": "Supreme Court raps Centre for stalling enforcement of Vedanta arbitration awards",
+     "url": "https://www.thehindu.com/news/national/supreme-court-raps-centre-for-stalling-enforcement-of-vedanta-arbitration-awards/article71656332.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T14:41:41+00:00"
+    },
+    {
+     "title": "‘Nobody will trust you’: SC rejects Centre’s plea against Vedanta arbitration awards",
+     "url": "https://www.hindustantimes.com/india-news/nobody-will-trust-you-sc-rejects-centre-s-plea-against-vedanta-arbitration-awards-101793613072223.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:51:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
    ],
    "top": {},
    "top_score": 0.0,
@@ -2880,7 +2857,7 @@
     "uttar"
    ],
    "date": "2026-11-03",
-   "news_at": "2026-11-02T19:38:54+00:00",
+   "news_at": "2026-11-02T23:53:19+00:00",
    "owners": [
     "The Hindu Group",
     "HT Media",
@@ -2908,7 +2885,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-02T19:38:54+00:00"
+     "at": "2026-11-02T23:53:19+00:00"
     },
     {
      "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
@@ -3209,8 +3186,8 @@
  ],
  "notes": [
   "revisit kh-20261103-Q2745305-update: 2 owners' new reports on Omar Abdullah (8005 views before); revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2977 views before); revisit Q163225 (662 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (655 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-202611",
-  "outlets: 1269 headlines from 31 feeds (19 owners), 28 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
-  "explainers: 8 kh- stories (on): kh-20261103-Q213380, kh-20261103-Q1058, kh-20261103-Q27627866, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Somalia: no Wikipedia article that can be its centre; explainer 'Suspected cyberattack disrupts supermarket refrigeration in ': no name to tell it by",
+  "outlets: 1268 headlines from 31 feeds (19 owners), 27 matched to articles, 11 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 8 kh- stories (on): kh-20261103-Q213380, kh-20261103-Q1058, kh-20261103-Q1561861, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Somalia: no Wikipedia article that can be its centre; explainer 'Suspected cyberattack disrupts supermarket refrigeration in ': no name to tell it by",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again"
@@ -3220,22 +3197,22 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1269,
+  "headlines": 1268,
   "feeds": 31,
   "owners": 19,
-  "matched": 28,
+  "matched": 27,
   "corroborated": 11
  },
  "emerging": [
   {
    "id": "nw-20261102-murasu-cyclone",
    "qid": null,
-   "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
+   "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
    "name": "Murasu",
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T23:30:28+00:00",
+   "news_at": "2026-11-03T00:09:45+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -3263,6 +3240,16 @@
    "india_link": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
+     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T00:09:45+00:00"
+    },
     {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
@@ -3332,16 +3319,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T18:25:30+00:00"
-    },
-    {
-     "title": "Pawan Kalyan tells officials to stay alert as Cyclone Murasu nears Nellore coast",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/pawan-kalyan-tells-officials-to-stay-alert-as-cyclone-murasu-nears-nellore-coast/article71655340.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:19:50+00:00"
     }
    ],
    "via": [
@@ -3354,22 +3331,24 @@
    "emerging": true,
    "article": null,
    "top": {
+    "IN": 1,
     "IN-hi": 1,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 2.1,
    "top_headlines": [
     "आ रहा है चक्रवात 'मुरासु', इन राज्यों में हाई अलर्ट, 120 किलोमीटर प्रति घंटे तक पहुंच सकती है हवा की रफ्तार",
-    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट"
+    "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
+    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3"
    ],
    "hindi_owners": [
+    "Network18",
     "HT Media",
     "Amar Ujala",
     "TV9 Network",
-    "India Today Group",
     "DB Corp",
-    "NDTV",
-    "Network18"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -3377,18 +3356,18 @@
   {
    "id": "nw-20261102-florida-aviation",
    "qid": null,
-   "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+   "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
    "name": "Florida",
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-02T21:23:31+00:00",
+   "news_at": "2026-11-03T00:08:14+00:00",
    "owners": [
     "Deutsche Welle",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "BBC",
-    "Al Jazeera Media Network"
+    "Al Jazeera Media Network",
+    "BBC"
    ],
    "fame": 125000,
    "news": 125000,
@@ -3398,8 +3377,8 @@
     "US: 9 killed in Florida jet crash",
     "Lenny Kravitz died in Florida plane crash?",
     "Nine dead in small plane crash near Trump's Florida home",
-    "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
-    "‘Work to do’: Authorities give update on Florida private jet crash"
+    "‘Work to do’: Authorities give update on Florida private jet crash",
+    "Plane may have broken apart ahead of deadly Florida jet crash, say investigators"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3411,14 +3390,14 @@
    "label_hi": null,
    "reports": [
     {
-     "title": "Copilot in deadly Florida jet crash identified in reports as 20-year-old",
+     "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
      "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
      "outlet": "BBC",
      "outlet_hi": "बीबीसी",
      "owner": "BBC",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-02T19:58:34+00:00"
+     "at": "2026-11-03T00:08:14+00:00"
     },
     {
      "title": "Nine dead in small plane crash near Trump's Florida home",
@@ -3465,8 +3444,8 @@
     "outlet:Deutsche Welle",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:BBC",
-    "outlet:Al Jazeera Media Network"
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC"
    ],
    "emerging": true,
    "article": null,
@@ -3566,13 +3545,12 @@
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 7
+    "IN-nation": 9
    },
-   "top_score": 0.76,
+   "top_score": 0.73,
    "top_headlines": [
     "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
-    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali",
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
+    "Supreme Court Allows Certified Green Crackers In Delhi For Diwali"
    ],
    "hindi_owners": []
   },
@@ -3663,9 +3641,9 @@
     "google-news:Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
    "top": {
-    "IN-nation": 14
+    "IN-nation": 16
    },
-   "top_score": 0.21,
+   "top_score": 0.15,
    "top_headlines": [
     "Pune Metro Line 3: PM Modi to Inaugurate 23.2-km Pink Line on November 3"
    ],
@@ -3674,10 +3652,10 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261103-Q27627866",
-   "qid": "Q27627866",
-   "title": "NCP Engineering",
-   "name": "NCP engineering",
+   "id": "kh-20261103-Q1561861",
+   "qid": "Q1561861",
+   "title": "Nationalist Congress Party",
+   "name": "Nationalist Congress Party",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -3717,10 +3695,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
    "reports": [
     {
      "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
@@ -3791,9 +3771,9 @@
     "google-news:NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
    ],
    "top": {
-    "IN-nation": 9
+    "IN-nation": 11
    },
-   "top_score": 0.36,
+   "top_score": 0.3,
    "top_headlines": [
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
     "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
@@ -3934,15 +3914,16 @@
     "Bennett, Coleman & Co.",
     "NDTV"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
     "Indian Navy foils Somali pirates' plot, rescues 20 Iranian crew from hijacked ship",
     "Navy rescues 20 crew members of fishing vessel from pirates over 3,000 km from Mumbai",
-    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea"
+    "Indian Navy Rescues All 20 Crew Of Pirated Fishing Vessel In Arabian Sea",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3998,11 +3979,18 @@
     "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 13,
+    "IN-nation": 3
+   },
+   "top_score": 0.74,
+   "top_headlines": [
+    "Navy rescues 20 crew members of fishing vessel from armed pirates over 3,000km from Mumbai, Rajnath prais",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -4165,16 +4153,12 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "“Don't Travel By Air”: Supreme Court Refuses Urgent Listing Of Plea Against Increased Airfares During..."
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261103-Q432808",
