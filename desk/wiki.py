@@ -248,6 +248,12 @@ NEWSROOM_HI = {  # where Hindi newsrooms all write a name differently from Wikid
     "Elon Musk": "एलन मस्क",
     "Govinda": "गोविंदा",
     "Kangana Ranaut": "कंगना रनौत",
+    # Institutions: the likeness pick spelt out the English ("सुप्रीम कोर्ट ऑफ इण्डिया", 2026-11-02 title).
+    "Supreme Court of India": "सुप्रीम कोर्ट",
+    "Election Commission of India": "चुनाव आयोग",
+    "Reserve Bank of India": "रिज़र्व बैंक",
+    "Central Bureau of Investigation": "सीबीआई",
+    "Enforcement Directorate": "ईडी",
 }
 
 

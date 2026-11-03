@@ -167,10 +167,12 @@ def source_lines(short: Short) -> list[str]:
     """The sources block: "स्रोत: Wikipedia, BBC, The Hindu" naming who the facts come from (when trusted outlets'
     reporting backs any), then every source URL."""
     named = short.scene.get("outlets") or []
+    # Without the #fragment: YouTube reads Google News' "#publisher=newsstand" as a hashtag (Xq9WRVgrFWs, 2026-11-03).
+    urls = list(dict.fromkeys(s.split("#", 1)[0] for s in short.sources))
     if not named:
-        return ["स्रोत:"] + short.sources + [""]
+        return ["स्रोत:"] + urls + [""]
     wiki = ["Wikipedia"] if any("wikipedia.org" in s or "wikidata.org" in s for s in short.sources) else []
-    return ["स्रोत: " + ", ".join(wiki + named)] + short.sources + [""]
+    return ["स्रोत: " + ", ".join(wiki + named)] + urls + [""]
 
 
 # The editorial process in one line (YouTube's reviewers read descriptions for "how was this made"; PLAN.md, the

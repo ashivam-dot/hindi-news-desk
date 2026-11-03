@@ -108,6 +108,9 @@ def test_the_hindi_name_is_the_one_people_know_not_the_birth_name():
     jackie = {"labels": {"en": {"value": "Jackie Shroff"}, "hi": {"value": "जय किशन श्राफ"}},
               "sitelinks": {"hiwiki": {"title": "जैकी श्रॉफ"}}, "aliases": {"hi": [{"value": "जग्गू दादा"}]}}
     assert wiki.common_hindi(jackie) == "जैकी श्रॉफ"
+    court = {"labels": {"en": {"value": "Supreme Court of India"}, "hi": {"value": "भारत का सर्वोच्च न्यायालय"}},
+             "aliases": {"hi": [{"value": "सुप्रीम कोर्ट ऑफ इण्डिया"}]}}
+    assert wiki.common_hindi(court) == "सुप्रीम कोर्ट"
     modi = {"labels": {"en": {"value": "Narendra Modi"}, "hi": {"value": "नरेन्द्र मोदी"}},
             "aliases": {"hi": [{"value": "नमो"}]}}
     assert wiki.common_hindi(modi) == "नरेन्द्र मोदी"

@@ -16,6 +16,14 @@ def short() -> Short:
     return Short.load(FIXTURE)
 
 
+def test_source_links_lose_the_fragment_youtube_reads_as_a_hashtag(short):
+    url = "https://www.ndtv.com/india-news/indian-navy-rescues-12273779"
+    for scene in (short.scene, {**short.scene, "outlets": ["NDTV"]}):
+        s = replace(short, sources=short.sources + [url + "#publisher=newsstand", url], scene=scene)
+        text = youtube.description(s, GEMINI)
+        assert text.splitlines().count(url) == 1 and "#publisher" not in text
+
+
 def test_identity_refuses_while_the_channel_id_is_tbd(monkeypatch):
     monkeypatch.setattr(config, "CHANNEL_ID", "TBD")
     with pytest.raises(youtube.WrongChannel, match="not configured"):
