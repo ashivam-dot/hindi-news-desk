@@ -1,14 +1,12 @@
 {
- "at": "2026-11-03T01:36:58+00:00",
+ "at": "2026-11-03T02:06:22+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 106 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.113, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.8}, 'category:attack': {'n': 13, 'lift': 1.224, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.9}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 18 candidates from 26 trending",
-  "revisit Q2745305 (8125 views): 1 owners reported new news on Omar Abdullah since its last Short; revisit kh-20261103-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (2983 views before); revisit Q163225 (662 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-202611",
-  "outlets: 1251 headlines from 31 feeds (19 owners), 22 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
-  "explainers: 5 kh- stories (on): kh-20261103-Q213380, kh-20261103-Q27627866, kh-20261103-Q7040049, kh-20261103-Q356359; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Somalia: no Wikipedia article that can be its centre; explainer 'Suspected cyberattack disrupts supermarket refrigeration in ': no name to tell it by",
+  "watch: 15 candidates from 27 trending",
+  "outlets: 1248 headlines from 31 feeds (19 owners), 19 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 6 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q213380, kh-20261103-Q27627866, kh-20261103-Q7040049; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Somalia: no Wikipedia article that can be its centre; explainer 'Suspected cyberattack disrupts supermarket refrigeration in ': no name to tell it by",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
@@ -19,16 +17,10 @@
   "drop kh-20261103-Q2512051: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q16146453: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q3299104: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261103-Q2512051, kh-20261103-Q124883782-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261103-Q1353, kh-20261103-Q2512051; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
   "skip nw-20261102-murasu-cyclone: gate: only 0 usable photos of Murasu (want 2)",
-  "published kh-20261103-Q356359: https://www.youtube.com/shorts/Xq9WRVgrFWs",
-  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
- ],
- "published": {
-  "video_id": "Xq9WRVgrFWs",
-  "url": "https://www.youtube.com/shorts/Xq9WRVgrFWs",
-  "youtube_title": "भारतीय नौसेना ने समंदर में 20 क्रू मेंबर्स बचाए #shorts #indiannavy",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "skip kh-20261103-Q1353: gate: no draft passed the fact checks: beats 3,4,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: CPCB, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
+  "nothing eligible to publish",
+  "channel: about, playlists done; nothing left to do"
+ ]
 }
