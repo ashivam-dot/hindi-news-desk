@@ -1,6 +1,49 @@
 {
- "at": "2026-11-03T06:36:54+00:00",
+ "at": "2026-11-03T06:52:03+00:00",
  "trending": [
+  {
+   "qid": "Q141966885",
+   "title": "2026 Palm Beach County Learjet 60 crash",
+   "fame": 345959,
+   "views": 220959,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-03T01:22:04+00:00",
+   "headlines": [
+    "20-Year-Old Nathalia Filgueiras Was a Pilot on Learjet That Crashed in Florida"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-02",
+    "google-news:20-Year-Old Nathalia Filgueiras Was a Pilot on Learjet That Crashed in Florida"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141966885",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-11-01",
+   "coords": [
+    26.63288889,
+    -80.11311111
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "Tech tycoon, wife and 2 kids killed in Learjet crash, were flying with friends"
+   ],
+   "hindi_owners": []
+  },
   {
    "id": "kh-20261103-Q356359",
    "qid": "Q356359",
@@ -11,7 +54,7 @@
    "kind": "explainer",
    "category": "defence",
    "category_hi": "रक्षा",
-   "story": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+   "story": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
    "story_keys": [
     "crew",
     "fishing",
@@ -25,13 +68,13 @@
     "vessel"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-03T06:38:48.364591+00:00",
+   "news_at": "2026-11-03T06:52:42.759187+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "The Hindu Group",
     "Network18",
+    "The Hindu Group",
     "Government of India"
    ],
    "fame": 275000,
@@ -39,11 +82,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
     "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
     "Indian Navy frees hijacked vessel Azini",
     "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
-    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
+    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
     "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA"
    ],
    "hindi_headlines": [
@@ -67,7 +110,17 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T06:38:48.364591+00:00"
+     "at": "2026-11-03T06:52:42.759187+00:00"
+    },
+    {
+     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:40:05+00:00"
     },
     {
      "title": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
@@ -78,16 +131,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T05:45:49+00:00"
-    },
-    {
-     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
-     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T05:24:53+00:00"
     },
     {
      "title": "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
@@ -124,8 +167,8 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:The Hindu Group",
     "outlet:Network18",
+    "outlet:The Hindu Group",
     "outlet:Government of India",
     "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
@@ -139,9 +182,104 @@
     "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
    "hindi_owners": [
-    "HT Media",
-    "Network18"
+    "HT Media"
    ]
+  },
+  {
+   "id": "kh-20261103-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+   "story_keys": [
+    "airfare",
+    "don't",
+    "hike",
+    "plea",
+    "refuse",
+    "travel",
+    "urgent"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T15:43:57+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
+    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
+   "reports": [
+    {
+     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:43:57+00:00"
+    },
+    {
+     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T11:16:02+00:00"
+    },
+    {
+     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:55:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "google-news:Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
+    "google-news:Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8"
+   ],
+   "hindi_owners": []
   },
   {
    "qid": "Q259559",
@@ -175,154 +313,13 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261103-Q10218",
-   "qid": "Q10218",
-   "title": "Rahul Gandhi",
-   "name": "Rahul Gandhi",
-   "phrase": "Rahul Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
-   "story_keys": [
-    "challenge",
-    "debate",
-    "foreign"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-03T06:03:58+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Network18",
-    "NDTV",
-    "BBC"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
-    "Amit Shah challenges Rahul Gandhi to debate 'vote chori' in special Parliament session",
-    "‘A Lousy Con Artist': BJP Hits Back At Rahul Gandhi Over PM Modi's 'Foreign Help' Remark",
-    "Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video"
-   ],
-   "hindi_headlines": [
-    "'मंदिरों में पुजारी रेप करते हैं': नेहा बोरा का विवादित बयान, बीजेपी ने बताया राहुल गांधी की 'पोस्टर गर्ल'",
-    "राहुल गांधी के 'विदेशी मदद' वाले वार पर BJP का पलटवार, कहा- जॉर्ज सोरोस, हिंडनबर्ग और विदेशी दौरों का सच बताएं",
-    "SIR पर राहुल गांधी को अमित शाह की बहस की चुनौती, 'सरकार स्पेशल सत्र बुलाने तैयार, संसद में चर्चा करो'",
-    "राहुल गांधी का विदेशी मदद के आरोप पर पीएम को 'खुला चैलेंज', नरेंद्र मोदी ने क्या कहा था?",
-    "नाच ना जाने, आंगन टेढ़ा... अमित शाह का राहुल गांधी पर तंज- 'मॉक पार्लियामेंट में ही PM बन सकते हैं'"
-   ],
-   "hindi_news": 11,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राहुल गाँधी",
-   "reports": [
-    {
-     "title": "‘A Lousy Con Artist': BJP Hits Back At Rahul Gandhi Over PM Modi's 'Foreign Help' Remark",
-     "url": "https://www.news18.com/india/a-lousy-con-artist-bjp-hits-back-at-rahul-gandhi-over-pm-modis-foreign-help-remark-ws-kl-10410054.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T06:03:58+00:00"
-    },
-    {
-     "title": "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
-     "url": "https://www.thehindu.com/news/national/rahul-gandhi-challenges-pm-modi-to-open-debate-on-foreign-help/article71657690.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T01:28:52+00:00"
-    },
-    {
-     "title": "Amit Shah challenges Rahul Gandhi to debate 'vote chori' in special Parliament session",
-     "url": "https://www.hindustantimes.com/india-news/amit-shah-challenges-rahul-gandhi-to-debate-vote-chori-in-special-parliament-session-101793633795907.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:00:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "outlet:BBC",
-    "google-news:Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 4
-   },
-   "top_score": 0.855,
-   "top_headlines": [
-    "Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video",
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
-   ],
-   "hindi_owners": [
-    "Network18",
-    "NDTV"
-   ]
-  },
-  {
-   "qid": "Q141966885",
-   "title": "2026 Palm Beach County Learjet 60 crash",
-   "fame": 220959,
-   "views": 220959,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-02"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141966885",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-11-01",
-   "coords": [
-    26.63288889,
-    -80.11311111
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Tech tycoon, wife and 2 kids killed in Learjet crash, were flying with friends"
-   ],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q4834146",
    "title": "B. P. Singh",
    "fame": 200000,
    "views": 0,
    "traffic": 0,
    "news": 200000,
-   "news_at": "2026-11-03T06:38:48.364591+00:00",
+   "news_at": "2026-11-03T06:52:42.759187+00:00",
    "headlines": [
     "iPhone Feature Alerts Honey Singh's Nephew's Family After Fatal Crash: How To Enable Apple's Crash Detection",
     "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
@@ -359,7 +356,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T06:38:48.364591+00:00"
+     "at": "2026-11-03T06:52:42.759187+00:00"
     },
     {
      "title": "Bihar Assembly serves notice to Anant Singh over plea to expel him",
@@ -439,7 +436,7 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-03T06:12:00+00:00",
+   "news_at": "2026-11-03T06:12:54+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -478,6 +475,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-03T06:12:00+00:00"
+    },
+    {
+     "title": "HT Morning Brief Nov 3: Indian tourist killed in Nepal; rain alert in Nilgiris after Cyclone Murasu's landfall",
+     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-november-3-indian-tourist-killed-nepal-helicopters-collide-cyclone-murasu-landfall-indian-air-force-oman-latest-news-101793685113337.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:12:54+00:00"
     },
     {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
@@ -538,16 +545,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T02:27:18+00:00"
-    },
-    {
-     "title": "Andhra Pradesh, Odisha up safety steps in wake of cyclone Murasu",
-     "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-up-safety-steps-in-wake-of-cyclone-murasu-101793672165861.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T02:22:16+00:00"
     }
    ],
    "via": [
@@ -561,15 +558,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-hi": 1,
-    "IN-nation": 2,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 2.035,
+   "top_score": 2.025,
    "top_headlines": [
     "साइक्लोन मुरासु आंध्र प्रदेश के तट से टकराया, भारी बारिश के बीच कई ट्रेनें और उड़ानें रद्द",
-    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3",
+    "Cyclone Murasu crosses Andhra coast with 120 kmph gusts, triggers heavy rain, damages in coastal district",
     "‘Murasu’ strengthens into Severe Cyclonic Storm",
     "Cyclone Murasu wreaks havoc in coastal A.P.; no power disruptions reported so far"
    ],
@@ -717,10 +714,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 5,
-    "IN-nation": 6
+    "IN": 6,
+    "IN-nation": 12
    },
-   "top_score": 1.025,
+   "top_score": 0.885,
    "top_headlines": [
     "'Don't Behave Like Protesters': Delhi Police Officers Protest Against Transfers",
     "ACP Manasvi Vashishta, who led protest outside Delhi Police headquarters, suspended for ‘violation of discipline’"
@@ -728,6 +725,105 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261103-Q10218",
+   "qid": "Q10218",
+   "title": "Rahul Gandhi",
+   "name": "Rahul Gandhi",
+   "phrase": "Rahul Gandhi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
+   "story_keys": [
+    "challenge",
+    "debate",
+    "foreign"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-03T06:49:38+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Network18",
+    "NDTV",
+    "BBC"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
+    "Amit Shah challenges Rahul Gandhi to debate 'vote chori' in special Parliament session",
+    "BJP Hits Back At Rahul Gandhi Over 'Foreign Help' Remark, Calls Him ‘A Lousy Con Artist'"
+   ],
+   "hindi_headlines": [
+    "'मंदिरों में पुजारी रेप करते हैं': नेहा बोरा का विवादित बयान, बीजेपी ने बताया राहुल गांधी की 'पोस्टर गर्ल'",
+    "राहुल गांधी के 'विदेशी मदद' वाले वार पर BJP का पलटवार, कहा- जॉर्ज सोरोस, हिंडनबर्ग और विदेशी दौरों का सच बताएं",
+    "SIR पर राहुल गांधी को अमित शाह की बहस की चुनौती, 'सरकार स्पेशल सत्र बुलाने तैयार, संसद में चर्चा करो'",
+    "राहुल गांधी का विदेशी मदद के आरोप पर पीएम को 'खुला चैलेंज', नरेंद्र मोदी ने क्या कहा था?",
+    "नाच ना जाने, आंगन टेढ़ा... अमित शाह का राहुल गांधी पर तंज- 'मॉक पार्लियामेंट में ही PM बन सकते हैं'"
+   ],
+   "hindi_news": 11,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "राहुल गाँधी",
+   "reports": [
+    {
+     "title": "BJP Hits Back At Rahul Gandhi Over 'Foreign Help' Remark, Calls Him ‘A Lousy Con Artist'",
+     "url": "https://www.news18.com/india/a-lousy-con-artist-bjp-hits-back-at-rahul-gandhi-over-pm-modis-foreign-help-remark-ws-kl-10410054.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:49:38+00:00"
+    },
+    {
+     "title": "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
+     "url": "https://www.thehindu.com/news/national/rahul-gandhi-challenges-pm-modi-to-open-debate-on-foreign-help/article71657690.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T01:28:52+00:00"
+    },
+    {
+     "title": "Amit Shah challenges Rahul Gandhi to debate 'vote chori' in special Parliament session",
+     "url": "https://www.hindustantimes.com/india-news/amit-shah-challenges-rahul-gandhi-to-debate-vote-chori-in-special-parliament-session-101793633795907.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T17:00:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN-nation": 15
+   },
+   "top_score": 0.18,
+   "top_headlines": [
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "NDTV"
+   ]
   },
   {
    "id": "nw-20261102-florida-aviation",
@@ -1402,6 +1498,143 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261103-Q356359-p2",
+   "qid": "Q356359",
+   "title": "Indian Navy",
+   "name": "Indian Navy",
+   "phrase": "Indian Navy",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
+   "story_keys": [
+    "crew",
+    "fishing",
+    "free",
+    "hijacked",
+    "hour",
+    "member",
+    "off",
+    "operation",
+    "rescue",
+    "vessel"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-03T06:52:42.759187+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "Network18",
+    "The Hindu Group",
+    "Government of India"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
+    "Indian Navy frees hijacked vessel Azini",
+    "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
+    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+    "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA"
+   ],
+   "hindi_headlines": [
+    "भारतीय नौसेना ने सोमालिया के तट के पास अपहृत मछली पकड़ने वाला जहाज ‘अजिनी’ को सफलतापूर्वक समुद्री लुटेरों से मुक्त कराया",
+    "चेत जाएं भारत के दुश्मन! समंदर में कोई भी गलती पड़ेगी भारी, भारतीय नौसेना को मिलेंगे 8 नए युद्धपोत",
+    "समंदर में भारतीय नौसेना का बड़ा एक्शन, समुद्री लुटेरों के कब्जे से 20 क्रू मेंबर्स को सुरक्षित बचाया"
+   ],
+   "hindi_news": 3,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारतीय नौसेना",
+   "reports": [
+    {
+     "title": "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331872",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-03T06:52:42.759187+00:00"
+    },
+    {
+     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:40:05+00:00"
+    },
+    {
+     "title": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
+     "url": "https://www.news18.com/india/indian-navy-rescues-20-crew-members-from-hijacked-iranian-fishing-vessel-after-48-hour-operation-ws-l-10409765.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T05:45:49+00:00"
+    },
+    {
+     "title": "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
+     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-20-crew-members-from-pirated-vessel-azini-in-48-hour-op-12274172#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:52:10+00:00"
+    },
+    {
+     "title": "Indian Navy frees hijacked vessel Azini",
+     "url": "https://economictimes.indiatimes.com/news/defence/indian-navy-rescues-20-crew-members-from-hijacked-fishing-vessel-azini-in-arabian-sea/articleshow/135478829.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:14:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Government of India",
+    "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "top": {
+    "IN": 8,
+    "IN-nation": 3
+   },
+   "top_score": 0.92,
+   "top_headlines": [
+    "Seafarer killed in attack on Indian-flagged cargo vessel ‘Al Jusufi’ off Oman coast: Govt | India News",
+    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
+   ],
+   "hindi_owners": [
+    "HT Media"
+   ],
+   "part": 2,
+   "earlier": [
+    "भारतीय नौसेना ने समंदर में 20 क्रू मेंबर्स बचाए"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "nw-20261102-delhi-protest",
    "qid": null,
    "title": "ACP Manasvi Vashishta, who led protest outside Delhi Police headquarters, suspended for ‘violation of discipline’",
@@ -1508,153 +1741,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 5,
-    "IN-nation": 6
+    "IN": 6,
+    "IN-nation": 12
    },
-   "top_score": 1.025,
+   "top_score": 0.885,
    "top_headlines": [
     "'Don't Behave Like Protesters': Delhi Police Officers Protest Against Transfers",
     "ACP Manasvi Vashishta, who led protest outside Delhi Police headquarters, suspended for ‘violation of discipline’"
    ],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261103-Q356359-p2",
-   "qid": "Q356359",
-   "title": "Indian Navy",
-   "name": "Indian Navy",
-   "phrase": "Indian Navy",
-   "person": false,
-   "kind": "explainer",
-   "category": "defence",
-   "category_hi": "रक्षा",
-   "story": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
-   "story_keys": [
-    "crew",
-    "fishing",
-    "free",
-    "hijacked",
-    "hour",
-    "member",
-    "off",
-    "operation",
-    "rescue",
-    "vessel"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-03T06:38:48.364591+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "The Hindu Group",
-    "Network18",
-    "Government of India"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
-    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
-    "Indian Navy frees hijacked vessel Azini",
-    "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
-    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
-    "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA"
-   ],
-   "hindi_headlines": [
-    "भारतीय नौसेना ने सोमालिया के तट के पास अपहृत मछली पकड़ने वाला जहाज ‘अजिनी’ को सफलतापूर्वक समुद्री लुटेरों से मुक्त कराया",
-    "चेत जाएं भारत के दुश्मन! समंदर में कोई भी गलती पड़ेगी भारी, भारतीय नौसेना को मिलेंगे 8 नए युद्धपोत",
-    "समंदर में भारतीय नौसेना का बड़ा एक्शन, समुद्री लुटेरों के कब्जे से 20 क्रू मेंबर्स को सुरक्षित बचाया"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारतीय नौसेना",
-   "reports": [
-    {
-     "title": "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2331872",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-03T06:38:48.364591+00:00"
-    },
-    {
-     "title": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
-     "url": "https://www.news18.com/india/indian-navy-rescues-20-crew-members-from-hijacked-iranian-fishing-vessel-after-48-hour-operation-ws-l-10409765.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T05:45:49+00:00"
-    },
-    {
-     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
-     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T05:24:53+00:00"
-    },
-    {
-     "title": "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
-     "url": "https://www.ndtv.com/india-news/indian-navy-rescues-20-crew-members-from-pirated-vessel-azini-in-48-hour-op-12274172#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T02:52:10+00:00"
-    },
-    {
-     "title": "Indian Navy frees hijacked vessel Azini",
-     "url": "https://economictimes.indiatimes.com/news/defence/indian-navy-rescues-20-crew-members-from-hijacked-fishing-vessel-azini-in-arabian-sea/articleshow/135478829.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T02:14:16+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:Government of India",
-    "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
-   ],
-   "top": {
-    "IN": 8,
-    "IN-nation": 3
-   },
-   "top_score": 0.92,
-   "top_headlines": [
-    "Seafarer killed in attack on Indian-flagged cargo vessel ‘Al Jusufi’ off Oman coast: Govt | India News",
-    "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
-   ],
-   "hindi_owners": [
-    "HT Media",
-    "Network18"
-   ],
-   "part": 2,
-   "earlier": [
-    "भारतीय नौसेना ने समंदर में 20 क्रू मेंबर्स बचाए"
-   ],
    "audience": "india",
    "lane": "other"
   },
@@ -2112,8 +2207,8 @@
   }
  ],
  "notes": [
-  "outlets: 1258 headlines from 31 feeds (19 owners), 11 matched to articles, 7 candidates with 2+ owners, 3 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-delhi-protest, nw-20261102-florida-aviation",
-  "explainers: 3 kh- stories (on): kh-20261103-Q356359, kh-20261103-Q10218, kh-20261103-Q51403327; dropped: explainer Diwali GRAP-II / Delhi AQI: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Somalia: no Wikipedia article that can be its centre",
+  "outlets: 1264 headlines from 31 feeds (19 owners), 12 matched to articles, 8 candidates with 2+ owners, 3 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-delhi-protest, nw-20261102-florida-aviation",
+  "explainers: 4 kh- stories (on): kh-20261103-Q356359, kh-20261103-Q213380, kh-20261103-Q10218, kh-20261103-Q51403327; dropped: explainer Diwali GRAP-II / Delhi AQI: no Wikipedia article that can be its centre; explainer Somalia: no Wikipedia article that can be its centre; explainer Which: no Wikipedia article that can be its centre",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again"
@@ -2123,11 +2218,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1258,
+  "headlines": 1264,
   "feeds": 31,
   "owners": 19,
-  "matched": 11,
-  "corroborated": 7
+  "matched": 12,
+  "corroborated": 8
  },
  "emerging": [
   {
@@ -2138,7 +2233,7 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-02",
-   "news_at": "2026-11-03T06:12:00+00:00",
+   "news_at": "2026-11-03T06:12:54+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -2177,6 +2272,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-03T06:12:00+00:00"
+    },
+    {
+     "title": "HT Morning Brief Nov 3: Indian tourist killed in Nepal; rain alert in Nilgiris after Cyclone Murasu's landfall",
+     "url": "https://www.hindustantimes.com/india-news/ht-morning-brief-november-3-indian-tourist-killed-nepal-helicopters-collide-cyclone-murasu-landfall-indian-air-force-oman-latest-news-101793685113337.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:12:54+00:00"
     },
     {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
@@ -2237,16 +2342,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T02:27:18+00:00"
-    },
-    {
-     "title": "Andhra Pradesh, Odisha up safety steps in wake of cyclone Murasu",
-     "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-up-safety-steps-in-wake-of-cyclone-murasu-101793672165861.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T02:22:16+00:00"
     }
    ],
    "via": [
@@ -2260,15 +2355,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 3,
+    "IN": 4,
     "IN-hi": 1,
-    "IN-nation": 2,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 2.035,
+   "top_score": 2.025,
    "top_headlines": [
     "साइक्लोन मुरासु आंध्र प्रदेश के तट से टकराया, भारी बारिश के बीच कई ट्रेनें और उड़ानें रद्द",
-    "Cyclone Murasu: Red alert in two Telangana districts, orange in three more on November 3",
+    "Cyclone Murasu crosses Andhra coast with 120 kmph gusts, triggers heavy rain, damages in coastal district",
     "‘Murasu’ strengthens into Severe Cyclonic Storm",
     "Cyclone Murasu wreaks havoc in coastal A.P.; no power disruptions reported so far"
    ],
@@ -2387,10 +2482,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 5,
-    "IN-nation": 6
+    "IN": 6,
+    "IN-nation": 12
    },
-   "top_score": 1.025,
+   "top_score": 0.885,
    "top_headlines": [
     "'Don't Behave Like Protesters': Delhi Police Officers Protest Against Transfers",
     "ACP Manasvi Vashishta, who led protest outside Delhi Police headquarters, suspended for ‘violation of discipline’"
@@ -2510,7 +2605,7 @@
    "kind": "explainer",
    "category": "defence",
    "category_hi": "रक्षा",
-   "story": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+   "story": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
    "story_keys": [
     "crew",
     "fishing",
@@ -2524,13 +2619,13 @@
     "vessel"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-03T06:38:48.364591+00:00",
+   "news_at": "2026-11-03T06:52:42.759187+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "The Hindu Group",
     "Network18",
+    "The Hindu Group",
     "Government of India"
    ],
    "fame": 275000,
@@ -2538,11 +2633,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
     "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation",
     "Indian Navy frees hijacked vessel Azini",
     "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
-    "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
+    "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
     "INDIAN NAVY SUCCESSFULLY RESCUES HIJACKED FISHING VESSEL ‘AZINI’ OFF THE COAST OF SOMALIA"
    ],
    "hindi_headlines": [
@@ -2566,7 +2661,17 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T06:38:48.364591+00:00"
+     "at": "2026-11-03T06:52:42.759187+00:00"
+    },
+    {
+     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
+     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T06:40:05+00:00"
     },
     {
      "title": "Indian Navy Rescues 20 Crew Members From Hijacked Iranian Fishing Vessel After 48-Hour Operation",
@@ -2577,16 +2682,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T05:45:49+00:00"
-    },
-    {
-     "title": "Indian Navy rescues hijacked fishing vessel off Somalia, frees all 20 crew members",
-     "url": "https://www.thehindu.com/news/national/indian-navy-rescues-hijacked-fishing-vessel-off-somalia-frees-all-20-crew-members/article71659504.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T05:24:53+00:00"
     },
     {
      "title": "Indian Navy Rescues 20 Crew Members From Pirated Vessel Azini In 48-Hour Op",
@@ -2623,8 +2718,8 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:The Hindu Group",
     "outlet:Network18",
+    "outlet:The Hindu Group",
     "outlet:Government of India",
     "google-news:Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
@@ -2638,9 +2733,104 @@
     "Indian Navy rescues 20 crew members from hijacked Iranian vessel after 48-hour operation | India News"
    ],
    "hindi_owners": [
-    "HT Media",
-    "Network18"
+    "HT Media"
    ]
+  },
+  {
+   "id": "kh-20261103-Q213380",
+   "qid": "Q213380",
+   "title": "Supreme Court of India",
+   "name": "Supreme Court of India",
+   "phrase": "Supreme Court",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+   "story_keys": [
+    "airfare",
+    "don't",
+    "hike",
+    "plea",
+    "refuse",
+    "travel",
+    "urgent"
+   ],
+   "date": "2026-11-02",
+   "news_at": "2026-11-02T15:43:57+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+    "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+    "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
+    "Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सुप्रीम कोर्ट ऑफ इण्डिया",
+   "reports": [
+    {
+     "title": "Airfare hike during festivals: Supreme Court tells petitioner 'don't travel by air', refuses urgent hearing",
+     "url": "https://www.livemint.com/news/india/airfare-hike-during-festivals-supreme-court-tells-petitioner-dont-travel-by-air-as-it-refuses-urgent-hearing-11793633360771.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:43:57+00:00"
+    },
+    {
+     "title": "Don't travel by air, says Supreme Court; refuses urgent listing of plea alleging 700% hike in airfares",
+     "url": "https://www.thehindu.com/news/national/dont-travel-by-air-says-supreme-court-refuses-urgent-listing-of-plea-alleging-700-hike-in-airfares/article71656239.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T11:16:02+00:00"
+    },
+    {
+     "title": "‘Don’t Travel By Air’: Supreme Court Reacts To Plea Over 700% Surge In Airfares",
+     "url": "https://www.news18.com/india/dont-travel-by-air-supreme-court-reacts-to-plea-over-700-surge-in-airfares-10408799.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:55:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "google-news:Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
+    "google-news:Supreme Court sets aside Rajasthan Election Commission's refusal to allow awareness campaigns by civil society group",
+    "google-news:Nobody will trust you: Supreme Court slams Centre for stalling enforcement of 2004, 2016 arbitral awards"
+   ],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8"
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261103-Q10218",
@@ -2659,7 +2849,7 @@
     "foreign"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-03T06:03:58+00:00",
+   "news_at": "2026-11-03T06:49:38+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -2667,15 +2857,14 @@
     "NDTV",
     "BBC"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
     "Amit Shah challenges Rahul Gandhi to debate 'vote chori' in special Parliament session",
-    "‘A Lousy Con Artist': BJP Hits Back At Rahul Gandhi Over PM Modi's 'Foreign Help' Remark",
-    "Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video"
+    "BJP Hits Back At Rahul Gandhi Over 'Foreign Help' Remark, Calls Him ‘A Lousy Con Artist'"
    ],
    "hindi_headlines": [
     "'मंदिरों में पुजारी रेप करते हैं': नेहा बोरा का विवादित बयान, बीजेपी ने बताया राहुल गांधी की 'पोस्टर गर्ल'",
@@ -2693,14 +2882,14 @@
    "label_hi": "राहुल गाँधी",
    "reports": [
     {
-     "title": "‘A Lousy Con Artist': BJP Hits Back At Rahul Gandhi Over PM Modi's 'Foreign Help' Remark",
+     "title": "BJP Hits Back At Rahul Gandhi Over 'Foreign Help' Remark, Calls Him ‘A Lousy Con Artist'",
      "url": "https://www.news18.com/india/a-lousy-con-artist-bjp-hits-back-at-rahul-gandhi-over-pm-modis-foreign-help-remark-ws-kl-10410054.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-03T06:03:58+00:00"
+     "at": "2026-11-03T06:49:38+00:00"
     },
     {
      "title": "Rahul Gandhi challenges PM Modi to open debate on ‘foreign help’",
@@ -2728,16 +2917,13 @@
     "outlet:The Hindu Group",
     "outlet:Network18",
     "outlet:NDTV",
-    "outlet:BBC",
-    "google-news:Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video"
+    "outlet:BBC"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 4
+    "IN-nation": 15
    },
-   "top_score": 0.855,
+   "top_score": 0.18,
    "top_headlines": [
-    "Rahul Gandhi Alleges \"Foreign Help\" To PM, BJP Hits Back With Old UK Video",
     "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
    ],
    "hindi_owners": [
