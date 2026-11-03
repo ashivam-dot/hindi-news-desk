@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T02:30:52+00:00",
+ "at": "2026-11-03T02:51:34+00:00",
  "trending": [
   {
    "id": "kh-20261103-Q1353",
@@ -25,11 +25,11 @@
     "Bennett, Coleman & Co.",
     "The Hindu Group",
     "Government of India",
-    "India Today Group",
     "Network18",
+    "DB Corp",
+    "India Today Group",
     "TV9 Network",
     "Amar Ujala",
-    "DB Corp",
     "NDTV",
     "ABP Group"
    ],
@@ -48,11 +48,11 @@
    "hindi_headlines": [
     "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
     "मुख्यालय एकीकृत रक्षा स्टाफ और सेंटर फॉर जॉइंट वॉरफेयर स्टडीज की साइबर-इनेबल्ड कॉग्निटिव वॉरफेयर पर संगोष्ठी का नई दिल्ली में शुभारंभ",
-    "दिल्ली-NCR की हवा बेहद खराब... AQI 334 पहुंचा, जल्द राहत नहीं",
-    "दीवाली से पहले निकला दिल्ली का दिवाला, AQI हुआ 400 पार, जहरीली हवा करने लगी बीमार",
-    "Aaj Ka Mausam: दिल्ली-UP में साफ रहेगा मौसम, बिहार से एमपी तक बारिश… कहां-कहां ‘मुरासु’ का रहेगा असर?"
+    "दि‍वाली से पहले निकला दिल्ली का दिवाला, AQI हुआ 400 पार, जहरीली हवा करने लगी बीमार",
+    "दिल्ली प्रदर्शन पर आज सुप्रीम कोर्ट में सुनवाई:पुलिस कार्रवाई और इंटरनेट बंद करने का मामला; पिछली सुनवाई में CCTV फुटेज सुरक्षित रखने के निर्देश दिए थे",
+    "दिल्ली-NCR की हवा बेहद खराब... AQI 334 पहुंचा, जल्द राहत नहीं"
    ],
-   "hindi_news": 44,
+   "hindi_news": 45,
    "geos": [
     "IN"
    ],
@@ -106,11 +106,11 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "outlet:India Today Group",
     "outlet:Network18",
+    "outlet:DB Corp",
+    "outlet:India Today Group",
     "outlet:TV9 Network",
     "outlet:Amar Ujala",
-    "outlet:DB Corp",
     "outlet:NDTV",
     "outlet:ABP Group",
     "google-news:Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
@@ -119,27 +119,25 @@
    ],
    "top": {
     "IN": 4,
-    "IN-nation": 9
+    "IN-nation": 11
    },
-   "top_score": 1.03,
+   "top_score": 1.0,
    "top_headlines": [
     "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
     "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
    ],
    "hindi_owners": [
-    "India Today Group",
     "Network18",
-    "TV9 Network"
-   ],
-   "audience": "india",
-   "lane": "other"
+    "DB Corp",
+    "India Today Group"
+   ]
   },
   {
-   "id": "kh-20261103-Q1561861",
-   "qid": "Q1561861",
-   "title": "Nationalist Congress Party",
-   "name": "Nationalist Congress Party",
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -156,7 +154,7 @@
     "without"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-02T22:36:52+00:00",
+   "news_at": "2026-11-03T02:35:06+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -176,12 +174,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
@@ -294,20 +290,20 @@
     "HT Media",
     "Network18",
     "India Today Group",
-    "Bennett, Coleman & Co.",
     "The Hindu Group",
-    "NDTV"
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
    "fame": 150000,
    "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
     "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
     "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
     "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled",
+    "Cyclone Murasu To Hit Andhra Coast Tonight? Chennai Waterlogging, Flights Cancelled, Odisha On Alert"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -327,6 +323,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T02:27:18+00:00"
+    },
+    {
+     "title": "Andhra Pradesh, Odisha up safety steps in wake of cyclone Murasu",
+     "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-up-safety-steps-in-wake-of-cyclone-murasu-101793672165861.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:22:16+00:00"
     },
     {
      "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
@@ -359,6 +365,16 @@
      "at": "2026-11-03T01:58:40+00:00"
     },
     {
+     "title": "Heavy rainfall, uprooted trees, power outages: Cyclone Murasu crosses Andhra coast",
+     "url": "https://timesofindia.indiatimes.com/city/vijayawada/cyclone-murasu-crosses-andhra-coast-with-120-kmph-gusts-triggers-heavy-rain-damages-in-coastal-districts/articleshow/135478566.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T01:56:04+00:00"
+    },
+    {
      "title": "Cyclone Murasu highlights: CM Naidu holds teleconference with District Collectors as landfall process continues",
      "url": "https://www.thehindu.com/news/national/murasu-cyclone-live-updates-on-november-2-2026-tamil-nadu-telangana-andhra-pradesh-odisha/article71654226.ece",
      "outlet": "The Hindu",
@@ -369,16 +385,6 @@
      "at": "2026-11-03T01:16:04+00:00"
     },
     {
-     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
-     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T00:09:45+00:00"
-    },
-    {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
      "outlet": "The Hindu",
@@ -387,25 +393,15 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T23:30:28+00:00"
-    },
-    {
-     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
-     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T22:07:18+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -423,12 +419,11 @@
     "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall"
    ],
    "hindi_owners": [
-    "BBC",
     "Network18",
-    "NDTV",
-    "Amar Ujala",
     "HT Media",
-    "TV9 Network"
+    "BBC",
+    "NDTV",
+    "Amar Ujala"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -463,41 +458,143 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141966885",
-   "title": "2026 Palm Beach County Learjet 60 crash",
+   "qid": "Q141921562",
+   "title": "Salvadoran military intervention in Haiti",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-03T01:22:04+00:00",
+   "news_at": "2026-11-02T16:31:18+00:00",
    "headlines": [
-    "20-Year-Old Nathalia Filgueiras Was a Pilot on Learjet That Crashed in Florida"
+    "Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "US"
+    "world"
    ],
    "label_hi": null,
    "via": [
-    "google-news:20-Year-Old Nathalia Filgueiras Was a Pilot on Learjet That Crashed in Florida"
+    "google-news:Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q141966885",
+   "id": "wk-Q141921562",
    "kind": "incident",
-   "category": "aviation",
-   "date": "2026-11-01",
-   "coords": [
-    26.63288889,
-    -80.11311111
-   ],
+   "category": "conflict",
+   "date": "2026-10-21",
+   "coords": null,
    "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "id": "nw-20261102-florida-aviation",
+   "qid": null,
+   "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
+   "name": "Florida",
+   "kind": "incident",
+   "category": "aviation",
+   "date": "2026-11-02",
+   "news_at": "2026-11-03T02:29:21+00:00",
+   "owners": [
+    "Deutsche Welle",
+    "Al Jazeera Media Network",
+    "BBC",
+    "NDTV",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "US: 9 killed in Florida jet crash",
+    "‘Work to do’: Authorities give update on Florida private jet crash",
+    "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
+    "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash",
+    "Florida jet 'broke apart' midair before crashing into roadway; victims identified"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
+     "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-03T00:08:14+00:00"
+    },
+    {
+     "title": "US: 9 killed in Florida jet crash",
+     "url": "https://www.dw.com/en/us-9-killed-in-florida-jet-crash/a-79825921?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-02T07:46:00+00:00"
+    },
+    {
+     "title": "‘Work to do’: Authorities give update on Florida private jet crash",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/work-to-do-authorities-give-update-on-florida-private-jet-crash?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-02T21:23:31+00:00"
+    },
+    {
+     "title": "Florida jet 'broke apart' midair before crashing into roadway; victims identified",
+     "url": "https://timesofindia.indiatimes.com/world/us/florida-jet-broke-apart-midair-before-crashing-into-roadway-20-year-old-woman-pilot-among-victims/articleshow/135479116.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:29:21+00:00"
+    },
+    {
+     "title": "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash",
+     "url": "https://www.ndtv.com/world-news/probe-finds-learjet-parts-broke-up-before-florida-jet-crash-12274024#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T01:24:32+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Deutsche Welle",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Learjet Co-Pilot Killed In Florida Crash Got Flying License In High School"
+   ],
    "hindi_owners": []
   },
   {
@@ -607,98 +704,6 @@
     "TV9 Network",
     "Network18"
    ]
-  },
-  {
-   "id": "nw-20261102-florida-aviation",
-   "qid": null,
-   "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
-   "name": "Florida",
-   "kind": "incident",
-   "category": "aviation",
-   "date": "2026-11-02",
-   "news_at": "2026-11-03T01:24:32+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "Al Jazeera Media Network",
-    "BBC",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US: 9 killed in Florida jet crash",
-    "‘Work to do’: Authorities give update on Florida private jet crash",
-    "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
-    "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "world"
-   ],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
-     "url": "https://www.bbc.co.uk/news/articles/cm369yy7lw73o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-03T00:08:14+00:00"
-    },
-    {
-     "title": "US: 9 killed in Florida jet crash",
-     "url": "https://www.dw.com/en/us-9-killed-in-florida-jet-crash/a-79825921?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-02T07:46:00+00:00"
-    },
-    {
-     "title": "‘Work to do’: Authorities give update on Florida private jet crash",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/2/work-to-do-authorities-give-update-on-florida-private-jet-crash?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-02T21:23:31+00:00"
-    },
-    {
-     "title": "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash",
-     "url": "https://www.ndtv.com/world-news/probe-finds-learjet-parts-broke-up-before-florida-jet-crash-12274024#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T01:24:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC",
-    "outlet:NDTV"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
-   ],
-   "hindi_owners": []
   },
   {
    "qid": "Q644401",
@@ -813,98 +818,13 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261103-Q7040049",
-   "qid": "Q7040049",
-   "title": "Nirmala Sitharaman",
-   "name": "Nirmala Sitharaman",
-   "phrase": "Sitharaman",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-   "story_keys": [
-    "dispute",
-    "out",
-    "settle",
-    "urge"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T17:23:17+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-    "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-    "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "निर्मला सीतारमन",
-   "reports": [
-    {
-     "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/cannot-spill-out-in-public-sitharaman-urges-tata-sons-tata-trusts-to-settle-dispute-soon/articleshow/135468845.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:23:17+00:00"
-    },
-    {
-     "title": "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
-     "url": "https://www.indiatoday.in/business/story/tata-sons-tata-trusts-dispute-nirmala-sitharaman-urges-amicable-settlement-no-govt-intervention-3030946-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:37:58+00:00"
-    },
-    {
-     "title": "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-     "url": "https://www.livemint.com/news/tata-dispute-must-be-settled-amicably-and-out-of-public-view-says-sitharaman-11793626829872.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "qid": "Q4834146",
    "title": "B. P. Singh",
    "fame": 50000,
    "views": 0,
    "traffic": 0,
    "news": 50000,
-   "news_at": "2026-11-03T02:32:29.905733+00:00",
+   "news_at": "2026-11-03T02:52:14.484234+00:00",
    "headlines": [
     "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
     "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims"
@@ -936,7 +856,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T02:32:29.905733+00:00"
+     "at": "2026-11-03T02:52:14.484234+00:00"
     },
     {
      "title": "Yuvraj Singh's 32-ingredient supplement faces doctors' questions over health claims",
@@ -1391,20 +1311,20 @@
     "HT Media",
     "Network18",
     "India Today Group",
-    "Bennett, Coleman & Co.",
     "The Hindu Group",
-    "NDTV"
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
    "fame": 150000,
    "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
     "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
     "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
     "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled",
+    "Cyclone Murasu To Hit Andhra Coast Tonight? Chennai Waterlogging, Flights Cancelled, Odisha On Alert"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1424,6 +1344,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T02:27:18+00:00"
+    },
+    {
+     "title": "Andhra Pradesh, Odisha up safety steps in wake of cyclone Murasu",
+     "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-up-safety-steps-in-wake-of-cyclone-murasu-101793672165861.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:22:16+00:00"
     },
     {
      "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
@@ -1456,6 +1386,16 @@
      "at": "2026-11-03T01:58:40+00:00"
     },
     {
+     "title": "Heavy rainfall, uprooted trees, power outages: Cyclone Murasu crosses Andhra coast",
+     "url": "https://timesofindia.indiatimes.com/city/vijayawada/cyclone-murasu-crosses-andhra-coast-with-120-kmph-gusts-triggers-heavy-rain-damages-in-coastal-districts/articleshow/135478566.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T01:56:04+00:00"
+    },
+    {
      "title": "Cyclone Murasu highlights: CM Naidu holds teleconference with District Collectors as landfall process continues",
      "url": "https://www.thehindu.com/news/national/murasu-cyclone-live-updates-on-november-2-2026-tamil-nadu-telangana-andhra-pradesh-odisha/article71654226.ece",
      "outlet": "The Hindu",
@@ -1466,16 +1406,6 @@
      "at": "2026-11-03T01:16:04+00:00"
     },
     {
-     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
-     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T00:09:45+00:00"
-    },
-    {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
      "outlet": "The Hindu",
@@ -1484,25 +1414,15 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T23:30:28+00:00"
-    },
-    {
-     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
-     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T22:07:18+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -1520,155 +1440,20 @@
     "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall"
    ],
    "hindi_owners": [
-    "BBC",
     "Network18",
-    "NDTV",
-    "Amar Ujala",
     "HT Media",
-    "TV9 Network"
+    "BBC",
+    "NDTV",
+    "Amar Ujala"
    ],
    "audience": "india",
    "lane": "breaking"
   },
   {
-   "id": "kh-20261103-Q1353",
-   "qid": "Q1353",
-   "title": "Delhi",
-   "name": "Delhi",
-   "phrase": "Delhi",
-   "person": false,
-   "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Delhi AQI turns 'very poor' for first time this season; doctor advises 'masks, medicines' and other precautions",
-   "story_keys": [
-    "first",
-    "season",
-    "time",
-    "very"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T17:47:57+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "Government of India",
-    "India Today Group",
-    "Network18",
-    "TV9 Network",
-    "Amar Ujala",
-    "DB Corp",
-    "NDTV",
-    "ABP Group"
-   ],
-   "fame": 400000,
-   "news": 400000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Delhi AQI turns 'very poor' for first time this season; doctor advises 'masks, medicines' and other precautions",
-    "Delhi's AQI crosses 300 for first time this season, more smog expected in coming days",
-    "Delhi gasps as AQI hits season’s worst, GRAP-II measures imposed",
-    "Air quality of Delhi slips to ‘very poor’ for first time this winter, Stage 2 of GRAP invoked",
-    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
-    "Delhi's smog came from farm fires lit after NASA's satellite passed | India News"
-   ],
-   "hindi_headlines": [
-    "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
-    "मुख्यालय एकीकृत रक्षा स्टाफ और सेंटर फॉर जॉइंट वॉरफेयर स्टडीज की साइबर-इनेबल्ड कॉग्निटिव वॉरफेयर पर संगोष्ठी का नई दिल्ली में शुभारंभ",
-    "दिल्ली-NCR की हवा बेहद खराब... AQI 334 पहुंचा, जल्द राहत नहीं",
-    "दीवाली से पहले निकला दिल्ली का दिवाला, AQI हुआ 400 पार, जहरीली हवा करने लगी बीमार",
-    "Aaj Ka Mausam: दिल्ली-UP में साफ रहेगा मौसम, बिहार से एमपी तक बारिश… कहां-कहां ‘मुरासु’ का रहेगा असर?"
-   ],
-   "hindi_news": 44,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "दिल्ली",
-   "reports": [
-    {
-     "title": "Air quality of Delhi slips to ‘very poor’ for first time this winter, Stage 2 of GRAP invoked",
-     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-chokes-aqi-324-plunges-to-very-poor-stage-ii-grap-invoked/article71657232.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:47:57+00:00"
-    },
-    {
-     "title": "Delhi gasps as AQI hits season’s worst, GRAP-II measures imposed",
-     "url": "https://timesofindia.indiatimes.com/city/delhi/air-turns-very-poor-1st-time-this-season-grap-ii-imposed/articleshow/135469478.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:27:25+00:00"
-    },
-    {
-     "title": "Delhi AQI turns 'very poor' for first time this season; doctor advises 'masks, medicines' and other precautions",
-     "url": "https://www.livemint.com/news/india/delhi-aqi-turns-very-poor-for-first-time-this-season-doctor-advises-masks-medicines-and-other-precautions-11793616039265.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T10:54:06+00:00"
-    },
-    {
-     "title": "Delhi's AQI crosses 300 for first time this season, more smog expected in coming days",
-     "url": "https://www.hindustantimes.com/india-news/delhi-aqi-turns-very-poor-for-first-time-this-season-ahead-of-diwali-air-quality-likely-to-worsen-101793587128875.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T02:57:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:Government of India",
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:TV9 Network",
-    "outlet:Amar Ujala",
-    "outlet:DB Corp",
-    "outlet:NDTV",
-    "outlet:ABP Group",
-    "google-news:Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
-    "google-news:Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "google-news:GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 9
-   },
-   "top_score": 1.03,
-   "top_headlines": [
-    "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
-    "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
-    "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261103-Q1561861",
-   "qid": "Q1561861",
-   "title": "Nationalist Congress Party",
-   "name": "Nationalist Congress Party",
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -1685,7 +1470,7 @@
     "without"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-02T22:36:52+00:00",
+   "news_at": "2026-11-03T02:35:06+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -1705,12 +1490,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
@@ -1780,91 +1563,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261103-Q7040049",
-   "qid": "Q7040049",
-   "title": "Nirmala Sitharaman",
-   "name": "Nirmala Sitharaman",
-   "phrase": "Sitharaman",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-   "story_keys": [
-    "dispute",
-    "out",
-    "settle",
-    "urge"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T17:23:17+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-    "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-    "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "निर्मला सीतारमन",
-   "reports": [
-    {
-     "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/cannot-spill-out-in-public-sitharaman-urges-tata-sons-tata-trusts-to-settle-dispute-soon/articleshow/135468845.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:23:17+00:00"
-    },
-    {
-     "title": "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
-     "url": "https://www.indiatoday.in/business/story/tata-sons-tata-trusts-dispute-nirmala-sitharaman-urges-amicable-settlement-no-govt-intervention-3030946-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:37:58+00:00"
-    },
-    {
-     "title": "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-     "url": "https://www.livemint.com/news/tata-dispute-must-be-settled-amicably-and-out-of-public-view-says-sitharaman-11793626829872.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "qid": "Q7917881",
@@ -2277,8 +1975,8 @@
   }
  ],
  "notes": [
-  "outlets: 1246 headlines from 31 feeds (19 owners), 21 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
-  "explainers: 5 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q1561861, kh-20261103-Q356359, kh-20261103-Q2512051; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Somalia: no Wikipedia article that can be its centre",
+  "outlets: 1243 headlines from 31 feeds (19 owners), 16 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "explainers: 4 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q27627866, kh-20261103-Q356359, kh-20261103-Q2512051; dropped: explainer Diwali / Delhi-NCR: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Somalia: no Wikipedia article that can be its centre",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again"
@@ -2288,11 +1986,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1246,
+  "headlines": 1243,
   "feeds": 31,
   "owners": 19,
-  "matched": 21,
-  "corroborated": 8
+  "matched": 16,
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -2308,20 +2006,20 @@
     "HT Media",
     "Network18",
     "India Today Group",
-    "Bennett, Coleman & Co.",
     "The Hindu Group",
-    "NDTV"
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
    "fame": 150000,
    "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Andhra Pradesh, Tamil Nadu on alert as cyclone ‘Murasu’ looms",
     "Cyclone Murasu now 290 km from Nellore, likely to hit Andhra coast by Tuesday; Odisha, Tamil Nadu brace for heavy rain",
     "HT Morning Brief Nov 2: Delhi AQI crosses 300 mark; Andhra, Odisha prepare for Cyclone Murasu | Top news",
     "Cyclone Murasu Intensifies Into Severe Storm; Andhra Braces For Landfall, Chennai Sees Flight Cancellations",
-    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled"
+    "Cyclone Murasu: Heavy rainfall in northern parts of TN; at least 11 flights cancelled",
+    "Cyclone Murasu To Hit Andhra Coast Tonight? Chennai Waterlogging, Flights Cancelled, Odisha On Alert"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2341,6 +2039,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-03T02:27:18+00:00"
+    },
+    {
+     "title": "Andhra Pradesh, Odisha up safety steps in wake of cyclone Murasu",
+     "url": "https://www.hindustantimes.com/india-news/andhra-pradesh-odisha-up-safety-steps-in-wake-of-cyclone-murasu-101793672165861.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:22:16+00:00"
     },
     {
      "title": "Cyclone Murasu nears A.P. coast, heavy rain alert issued",
@@ -2373,6 +2081,16 @@
      "at": "2026-11-03T01:58:40+00:00"
     },
     {
+     "title": "Heavy rainfall, uprooted trees, power outages: Cyclone Murasu crosses Andhra coast",
+     "url": "https://timesofindia.indiatimes.com/city/vijayawada/cyclone-murasu-crosses-andhra-coast-with-120-kmph-gusts-triggers-heavy-rain-damages-in-coastal-districts/articleshow/135478566.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T01:56:04+00:00"
+    },
+    {
      "title": "Cyclone Murasu highlights: CM Naidu holds teleconference with District Collectors as landfall process continues",
      "url": "https://www.thehindu.com/news/national/murasu-cyclone-live-updates-on-november-2-2026-tamil-nadu-telangana-andhra-pradesh-odisha/article71654226.ece",
      "outlet": "The Hindu",
@@ -2383,16 +2101,6 @@
      "at": "2026-11-03T01:16:04+00:00"
     },
     {
-     "title": "Cyclone Murasu makes landfall, Andhra on alert as storm unleashes 120 kmph winds",
-     "url": "https://www.indiatoday.in/india/andhra-pradesh/story/cyclone-murasu-landfall-ongole-andhra-pradesh-heavy-rain-flight-cancellations-3031064-2026-11-03?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-03T00:09:45+00:00"
-    },
-    {
      "title": "Severe Cyclone Murasu: Landfall commences near Ongole",
      "url": "https://www.thehindu.com/news/national/andhra-pradesh/severe-cyclone-murasu-landfall-on-november-3-2026/article71658293.ece",
      "outlet": "The Hindu",
@@ -2401,25 +2109,15 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-02T23:30:28+00:00"
-    },
-    {
-     "title": "Cyclone Murasu Landfall Begins; Heavy Rain, 120 Kmph Winds Lash Andhra Coast, Nearby Areas",
-     "url": "https://www.news18.com/india/cyclone-murasu-landfall-begins-heavy-rain-120-kmph-winds-lash-andhra-coast-nearby-areas-ws-l-10409721.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T22:07:18+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -2437,12 +2135,11 @@
     "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall"
    ],
    "hindi_owners": [
-    "BBC",
     "Network18",
-    "NDTV",
-    "Amar Ujala",
     "HT Media",
-    "TV9 Network"
+    "BBC",
+    "NDTV",
+    "Amar Ujala"
    ],
    "audience": "india",
    "lane": "breaking"
@@ -2455,22 +2152,24 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-02",
-   "news_at": "2026-11-03T01:24:32+00:00",
+   "news_at": "2026-11-03T02:29:21+00:00",
    "owners": [
     "Deutsche Welle",
     "Al Jazeera Media Network",
     "BBC",
-    "NDTV"
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "US: 9 killed in Florida jet crash",
     "‘Work to do’: Authorities give update on Florida private jet crash",
     "Plane may have broken apart ahead of deadly Florida jet crash, say investigators",
-    "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash"
+    "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash",
+    "Florida jet 'broke apart' midair before crashing into roadway; victims identified"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2512,6 +2211,16 @@
      "at": "2026-11-02T21:23:31+00:00"
     },
     {
+     "title": "Florida jet 'broke apart' midair before crashing into roadway; victims identified",
+     "url": "https://timesofindia.indiatimes.com/world/us/florida-jet-broke-apart-midair-before-crashing-into-roadway-20-year-old-woman-pilot-among-victims/articleshow/135479116.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:29:21+00:00"
+    },
+    {
      "title": "Probe Finds Learjet Parts Broke Up Before Florida Jet Crash",
      "url": "https://www.ndtv.com/world-news/probe-finds-learjet-parts-broke-up-before-florida-jet-crash-12274024#publisher=newsstand",
      "outlet": "NDTV",
@@ -2526,7 +2235,8 @@
     "outlet:Deutsche Welle",
     "outlet:Al Jazeera Media Network",
     "outlet:BBC",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -2535,7 +2245,7 @@
    },
    "top_score": 0.5,
    "top_headlines": [
-    "Jet crash in Florida: All nine people aboard killed, says Transportation Secretary"
+    "Learjet Co-Pilot Killed In Florida Crash Got Flying License In High School"
    ],
    "hindi_owners": []
   }
@@ -2565,11 +2275,11 @@
     "Bennett, Coleman & Co.",
     "The Hindu Group",
     "Government of India",
-    "India Today Group",
     "Network18",
+    "DB Corp",
+    "India Today Group",
     "TV9 Network",
     "Amar Ujala",
-    "DB Corp",
     "NDTV",
     "ABP Group"
    ],
@@ -2588,11 +2298,11 @@
    "hindi_headlines": [
     "दिल्ली में 'भारत रिन्यूएबल एनर्जी समिट एंड एक्सपो' के उद्घाटन के अवसर पर प्रधानमंत्री के संबोधन का मूल पाठ",
     "मुख्यालय एकीकृत रक्षा स्टाफ और सेंटर फॉर जॉइंट वॉरफेयर स्टडीज की साइबर-इनेबल्ड कॉग्निटिव वॉरफेयर पर संगोष्ठी का नई दिल्ली में शुभारंभ",
-    "दिल्ली-NCR की हवा बेहद खराब... AQI 334 पहुंचा, जल्द राहत नहीं",
-    "दीवाली से पहले निकला दिल्ली का दिवाला, AQI हुआ 400 पार, जहरीली हवा करने लगी बीमार",
-    "Aaj Ka Mausam: दिल्ली-UP में साफ रहेगा मौसम, बिहार से एमपी तक बारिश… कहां-कहां ‘मुरासु’ का रहेगा असर?"
+    "दि‍वाली से पहले निकला दिल्ली का दिवाला, AQI हुआ 400 पार, जहरीली हवा करने लगी बीमार",
+    "दिल्ली प्रदर्शन पर आज सुप्रीम कोर्ट में सुनवाई:पुलिस कार्रवाई और इंटरनेट बंद करने का मामला; पिछली सुनवाई में CCTV फुटेज सुरक्षित रखने के निर्देश दिए थे",
+    "दिल्ली-NCR की हवा बेहद खराब... AQI 334 पहुंचा, जल्द राहत नहीं"
    ],
-   "hindi_news": 44,
+   "hindi_news": 45,
    "geos": [
     "IN"
    ],
@@ -2646,11 +2356,11 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "outlet:India Today Group",
     "outlet:Network18",
+    "outlet:DB Corp",
+    "outlet:India Today Group",
     "outlet:TV9 Network",
     "outlet:Amar Ujala",
-    "outlet:DB Corp",
     "outlet:NDTV",
     "outlet:ABP Group",
     "google-news:Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
@@ -2659,27 +2369,25 @@
    ],
    "top": {
     "IN": 4,
-    "IN-nation": 9
+    "IN-nation": 11
    },
-   "top_score": 1.03,
+   "top_score": 1.0,
    "top_headlines": [
     "Diwali 2026: Supreme Court allows bursting of green crackers in Delhi-NCR on November 7 and 8",
     "Delhi's smog came from farm fires lit after NASA's satellite passed | India News",
     "GRAP-II Pollution Curbs In Delhi As Air Quality Slips To 'Very Poor'"
    ],
    "hindi_owners": [
-    "India Today Group",
     "Network18",
-    "TV9 Network"
-   ],
-   "audience": "india",
-   "lane": "other"
+    "DB Corp",
+    "India Today Group"
+   ]
   },
   {
-   "id": "kh-20261103-Q1561861",
-   "qid": "Q1561861",
-   "title": "Nationalist Congress Party",
-   "name": "Nationalist Congress Party",
+   "id": "kh-20261103-Q27627866",
+   "qid": "Q27627866",
+   "title": "NCP Engineering",
+   "name": "NCP engineering",
    "phrase": "NCP",
    "person": false,
    "kind": "explainer",
@@ -2696,7 +2404,7 @@
     "without"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-02T22:36:52+00:00",
+   "news_at": "2026-11-03T02:35:06+00:00",
    "owners": [
     "Network18",
     "HT Media",
@@ -2716,12 +2424,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राष्ट्रवादी कांग्रेस पार्टी",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Unhappy with Sunetra Pawar and her son Parth, six NCP biggies meet Amit Shah",
@@ -2982,91 +2688,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261103-Q7040049",
-   "qid": "Q7040049",
-   "title": "Nirmala Sitharaman",
-   "name": "Nirmala Sitharaman",
-   "phrase": "Sitharaman",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-   "story_keys": [
-    "dispute",
-    "out",
-    "settle",
-    "urge"
-   ],
-   "date": "2026-11-02",
-   "news_at": "2026-11-02T17:23:17+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-    "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-    "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "निर्मला सीतारमन",
-   "reports": [
-    {
-     "title": "'Cannot spill out in public': Sitharaman urges Tata Sons, Tata Trusts to settle dispute",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/cannot-spill-out-in-public-sitharaman-urges-tata-sons-tata-trusts-to-settle-dispute-soon/articleshow/135468845.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T17:23:17+00:00"
-    },
-    {
-     "title": "FM Nirmala Sitharaman urges Tata Sons and Tata Trusts to settle dispute swiftly",
-     "url": "https://www.indiatoday.in/business/story/tata-sons-tata-trusts-dispute-nirmala-sitharaman-urges-amicable-settlement-no-govt-intervention-3030946-2026-11-02?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T16:37:58+00:00"
-    },
-    {
-     "title": "Tata dispute must be settled amicably and out of public view, says Sitharaman",
-     "url": "https://www.livemint.com/news/tata-dispute-must-be-settled-amicably-and-out-of-public-view-says-sitharaman-11793626829872.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-02T15:24:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   }
  ]
 }
