@@ -55,3 +55,5 @@ def no_network(monkeypatch):
         raise Offline(f"network in tests: {method} {url}")
 
     monkeypatch.setattr(requests.Session, "request", offline)
+    from desk import seo
+    monkeypatch.setattr(seo, "fetch", lambda *args, **kwargs: [])

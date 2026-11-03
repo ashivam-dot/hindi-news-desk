@@ -141,6 +141,19 @@ def test_tags_carry_no_machine_marker(short):
     assert youtube.tags(short)[:len(short.tags)] == short.tags
 
 
+def test_tags_add_searched_phrases_the_video_backs(short, monkeypatch):
+    from desk import seo
+
+    found = {"gyanesh kumar": ["gyanesh kumar news", "gyanesh kumar ki beti dm", "gyanesh kumar roast"],
+             "ज्ञानेश कुमार": ["ज्ञानेश कुमार चुनाव आयोग", "ज्ञानेश कुमार कौन है", "ज्ञानेश कुमार अपडेट"]}
+    monkeypatch.setattr(seo, "fetch", lambda q, hl="en", gl="us": found.get(q, []))
+    s = replace(short, title="ज्ञानेश कुमार पर विपक्षी गठबंधन का सांकेतिक महाभियोग", tags=["Gyanesh Kumar", "news"],
+                scene={**short.scene, "name_hi": "ज्ञानेश कुमार"},
+                beats=[replace(short.beats[0], text="मुख्य चुनाव आयुक्त ज्ञानेश कुमार पर चुनाव आयोग के फैसलों का आरोप।")])
+    assert youtube.tags(s)[:5] == ["Gyanesh Kumar", "news", "gyanesh kumar news", "ज्ञानेश कुमार चुनाव आयोग",
+                                   "ज्ञानेश कुमार अपडेट"]
+
+
 class FakeVideos:
     def __init__(self, items):
         self.items = items

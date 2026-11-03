@@ -287,8 +287,16 @@ def _description(short: Short, voice: dict, narration: bool, grouped: bool, how:
 def tags(short: Short) -> list[str]:
     """The story's topic tags and the channel's name, within YouTube's 500 characters. No machine tag: viewers and
     reviewers see tags, and the desk finds its own uploads by video id (find)."""
+    from . import seo
+
+    said = " ".join([short.title] + [b.text for b in short.beats])
+    hindi_news = {"न्यूज़", "न्यूज", "खबर", "ख़बर", "अपडेट", "ताजा", "ताज़ा", "समाचार"}
+    searched = []
+    if short.kind != "advisory":
+        for name in dict.fromkeys(n for n in (short.tags[0] if short.tags else "", short.scene.get("name_hi")) if n):
+            searched += seo.suggested(name, said, "hi", "in", extra=hindi_news)
     out, total = [], 0
-    for t in short.tags + [n for n in (config.NAME, config.NAME_HI) if n]:
+    for t in list(dict.fromkeys(short.tags + searched)) + [n for n in (config.NAME, config.NAME_HI) if n]:
         t = t.replace("<", "").replace(">", "").replace(",", " ").strip()
         if not t or t in out:
             continue
