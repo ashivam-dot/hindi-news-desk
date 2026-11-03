@@ -1,24 +1,25 @@
 {
- "at": "2026-11-03T17:37:17+00:00",
+ "at": "2026-11-03T18:02:51+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 109 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.103, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.8}, 'category:attack': {'n': 13, 'lift': 1.208, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.9}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 15 candidates from 28 trending",
-  "outlets: 1385 headlines from 31 feeds (19 owners), 21 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-acp-protest",
-  "explainers: 6 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q796994, kh-20261103-Q356359, kh-20261103-Q51403327; dropped: explainer Midterms Texas Democrat / Midterms Texas Democrat: no Wikipedia article that can be its centre",
+  "watch: 16 candidates from 29 trending",
+  "outlets: 1385 headlines from 31 feeds (19 owners), 26 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-acp-protest",
+  "explainers: 7 kh- stories (on): kh-20261103-Q1353, kh-20261103-Q10218, kh-20261103-Q796994, kh-20261103-Q356359; dropped: explainer Midterms Texas Democrat / Midterms Texas Democrat: no Wikipedia article that can be its centre",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
   "skip wk-Q241115: Orbitwire published (wk-Q241115), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261103-Q796994: too low in Google News India's top stories (place 0.30, needs 0.35)",
-  "drop nw-20261102-acp-protest: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop nw-20261102-acp-protest: too low in Google News India's top stories (place 0.03, needs 0.35)",
   "drop kh-20261103-Q51403327: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261103-Q157894: a sport story goes out only when it is a top-10 story (place 0.00)",
   "drop wk-Q1812342: 54 h old and no longer trending live",
   "drop wk-Q3299104: 54 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261102-acp-protest; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261103-Q796994, kh-20261103-Q51403327",
+  "skip kh-20261103-Q10218-p2: gate: no draft passed the fact checks: Narendra Modi (नरेन्द्र मोदी) is not in the sources (only one outlet reports it); Amit Shah (अमित शाह) is not in the sources (only one outlet reports it); \"आर्थिक तंत्र विषय अमित शाह ने संसद में चर्चा की बात कही।\" gives Amit Shah a statement that no 2 outlets' reports give them (1 do): say who made it as the reporting does (\"\"Rajnath Singh Ji, Nitin Gadkari Ji, Shivraj Singh Chouhan Ji, Yogi Adity",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
