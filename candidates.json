@@ -1,5 +1,5 @@
 {
- "at": "2026-11-03T03:36:04+00:00",
+ "at": "2026-11-03T03:52:43+00:00",
  "trending": [
   {
    "qid": "Q259559",
@@ -142,8 +142,7 @@
    },
    "top_score": 0.24,
    "top_headlines": [
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -178,9 +177,13 @@
     -80.11311111
    ],
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "Learjet co-pilot killed in Florida crash was 20, got her licence in high school"
+   ],
    "hindi_owners": []
   },
   {
@@ -190,7 +193,7 @@
    "views": 0,
    "traffic": 0,
    "news": 200000,
-   "news_at": "2026-11-03T03:36:51.007623+00:00",
+   "news_at": "2026-11-03T03:54:01.569936+00:00",
    "headlines": [
     "iPhone Feature Alerts Honey Singh's Nephew's Family After Fatal Crash: How To Enable Apple's Crash Detection",
     "Union Minister Shri Rajiv Ranjan Singh Alias Lalan Singh Reviews Dairy and Animal Husbandry Initiatives in Sikkim During Two-Day Visit",
@@ -227,7 +230,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T03:36:51.007623+00:00"
+     "at": "2026-11-03T03:54:01.569936+00:00"
     },
     {
      "title": "Bihar Assembly serves notice to Anant Singh over plea to expel him",
@@ -254,9 +257,13 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-27",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 19
+   },
+   "top_score": 0.1,
+   "top_headlines": [
+    "Apple Unveils Touchscreen MacBook, Embracing a Feature Steve Jobs Once Banned"
+   ],
    "hindi_owners": []
   },
   {
@@ -388,14 +395,16 @@
    "emerging": true,
    "article": null,
    "top": {
+    "IN": 4,
     "IN-hi": 2,
     "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.55,
+   "top_score": 1.975,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall"
+    "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall",
+    "‘Murasu’ strengthens into Severe Cyclonic Storm"
    ],
    "hindi_owners": [
     "Amar Ujala",
@@ -429,41 +438,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-28",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q141921562",
-   "title": "Salvadoran military intervention in Haiti",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-02T16:31:18+00:00",
-   "headlines": [
-    "Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141921562",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-21",
-   "coords": null,
-   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -566,11 +540,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4
+    "IN": 2
    },
-   "top_score": 0.85,
+   "top_score": 0.95,
    "top_headlines": [
-    "All nine aboard business jet killed as aircraft nosedives into fireball near busy South Florida roadway"
+    "Learjet co-pilot killed in Florida crash was 20, got her licence in high school"
    ],
    "hindi_owners": []
   },
@@ -596,7 +570,7 @@
     "vessel"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-03T03:36:51.007623+00:00",
+   "news_at": "2026-11-03T03:54:01.569936+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -636,7 +610,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T03:36:51.007623+00:00"
+     "at": "2026-11-03T03:54:01.569936+00:00"
     },
     {
      "title": "Indian Navy frees hijacked vessel Azini",
@@ -906,6 +880,41 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q141921562",
+   "title": "Salvadoran military intervention in Haiti",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-02T16:31:18+00:00",
+   "headlines": [
+    "Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Haiti Gang Leader Calls for Peace After El Salvador Sends Troops"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141921562",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-21",
+   "coords": null,
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q7917881",
@@ -1375,8 +1384,7 @@
    },
    "top_score": 0.24,
    "top_headlines": [
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1821,10 +1829,194 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261103-Q4746875-update",
+   "qid": "Q4746875",
+   "title": "Amit Shah",
+   "name": "Amit Shah",
+   "phrase": "Amit Shah",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Get Your House In Order': Amit Shah Pulls Up NCP Leaders Over Parth Pawar",
+   "story_keys": [
+    "again",
+    "bring",
+    "leader",
+    "power",
+    "pradesh",
+    "return",
+    "uttar"
+   ],
+   "date": "2026-11-03",
+   "news_at": "2026-11-03T02:35:06+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Get Your House In Order': Amit Shah Pulls Up NCP Leaders Over Parth Pawar",
+    "NCP leaders express discontent in core committee meeting after talks with Amit Shah",
+    "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+    "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "अमित शाह",
+   "reports": [
+    {
+     "title": "'Get Your House In Order': Amit Shah Pulls Up NCP Leaders Over Parth Pawar",
+     "url": "https://www.news18.com/india/get-your-house-in-order-amit-shah-pulls-up-ncp-leaders-over-parth-pawar-ws-bl-10409809.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-03T02:35:06+00:00"
+    },
+    {
+     "title": "NCP leaders express discontent in core committee meeting after talks with Amit Shah",
+     "url": "https://www.thehindu.com/news/national/maharashtra/ncp-leaders-express-discontent-in-core-committee-meeting-after-talks-with-amit-shah/article71658188.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T23:53:19+00:00"
+    },
+    {
+     "title": "NCP leaders meet Amit Shah without Sunetra Pawar and son Parth, party denies internal rift",
+     "url": "https://www.hindustantimes.com/india-news/ncp-leaders-meet-amit-shah-without-sunetra-pawar-and-son-parth-party-denies-internal-rift-101793631871552.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T16:48:25+00:00"
+    },
+    {
+     "title": "NCP Merger Buzz Returns! Amit Shah Meets Senior Leaders Without Sunetra & Parth Pawar | News18",
+     "url": "https://www.news18.com/videos/breaking-news/ncp-merger-buzz-returns-amit-shah-meets-senior-leaders-without-sunetra-parth-pawar-news18-10409525.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T15:57:38+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q4746875"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261030-Q4746875",
+   "earlier": [
+    "अमित शाह का एलान, उत्तर प्रदेश में लागू होगा UCC"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 30 October. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261103-Q7289726-update",
+   "qid": "Q7289726",
+   "title": "Ramlila Maidan",
+   "name": "Ramlila Maidan",
+   "phrase": "Ramlila Maidan",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Delhi traders' body claims up to ₹11,000 crore losses due to INDIA bloc's Ramlila Maidan rally",
+   "story_keys": [
+    "back",
+    "bloc",
+    "delhi",
+    "dipke",
+    "india",
+    "police",
+    "rally",
+    "road",
+    "traffic"
+   ],
+   "date": "2026-11-03",
+   "news_at": "2026-11-02T09:33:56+00:00",
+   "owners": [
+    "HT Media",
+    "Network18"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi traders' body claims up to ₹11,000 crore losses due to INDIA bloc's Ramlila Maidan rally",
+    "Kiren Rijiju slams Congress over 'AI image' of INDIA bloc's Ramlila Maidan rally",
+    "'AI Image, Poor Execution': Kiren Rijiju Mocks Congress Over 'Fake' Ramlila Maidan Rally Crowd Post"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "रामलीला मैदान",
+   "reports": [
+    {
+     "title": "Delhi traders' body claims up to ₹11,000 crore losses due to INDIA bloc's Ramlila Maidan rally",
+     "url": "https://www.hindustantimes.com/india-news/traders-body-cti-claims-loss-rs-11000-crore-due-to-india-bloc-rally-ramlila-maidan-diwali-season-congress-rahul-gandhi-bjp-101793610746975.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T09:33:56+00:00"
+    },
+    {
+     "title": "Kiren Rijiju slams Congress over 'AI image' of INDIA bloc's Ramlila Maidan rally",
+     "url": "https://www.hindustantimes.com/india-news/bjp-slams-congress-over-ai-image-of-india-blocs-ramlila-maidan-rally-101793603185789.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T08:55:13+00:00"
+    },
+    {
+     "title": "'AI Image, Poor Execution': Kiren Rijiju Mocks Congress Over 'Fake' Ramlila Maidan Rally Crowd Post",
+     "url": "https://www.news18.com/india/kiren-rijiju-congress-india-bloc-ai-photo-ramlila-maidan-rally-chalo-dilli-protest-ws-l-10408165.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-02T05:00:45+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q7289726"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261102-Q7289726-update",
+   "earlier": [
+    "रामलीला मैदान में 1 नवंबर को रैली करेगा इंडिया गठबंधन",
+    "रामलीला मैदान से इंडिया गठबंधन के नेताओं का मार्च"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 02 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "rajneeti"
   }
  ],
  "notes": [
-  "outlets: 1243 headlines from 31 feeds (19 owners), 14 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
+  "revisit Q2745305 (8125 views): 1 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (2983 views): 1 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (662 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit kh-202611",
+  "outlets: 1253 headlines from 31 feeds (19 owners), 14 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261102-murasu-cyclone, nw-20261102-florida-aviation",
   "explainers: 3 kh- stories (on): kh-20261103-Q27627866, kh-20261103-Q356359, kh-20261103-Q2512051; dropped: explainer Diwali / Delhi AQI: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Somalia: no Wikipedia article that can be its centre",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q922837: Orbitwire published (wk-Q922837), not high-profile enough to tell again",
@@ -1835,7 +2027,7 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1243,
+  "headlines": 1253,
   "feeds": 31,
   "owners": 19,
   "matched": 14,
@@ -1971,14 +2163,16 @@
    "emerging": true,
    "article": null,
    "top": {
+    "IN": 4,
     "IN-hi": 2,
     "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.55,
+   "top_score": 1.975,
    "top_headlines": [
     "साइक्लोन 'मुरासु': 120 किमी की रफ़्तार से चल सकती हैं हवाएं, किन-किन राज्यों में भारी बारिश का अलर्ट",
-    "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall"
+    "Cyclone Murasu LIVE updates: Landfall continues in Andhra Pradesh, several districts on high alert amid heavy rainfall",
+    "‘Murasu’ strengthens into Severe Cyclonic Storm"
    ],
    "hindi_owners": [
     "Amar Ujala",
@@ -2085,11 +2279,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4
+    "IN": 2
    },
-   "top_score": 0.85,
+   "top_score": 0.95,
    "top_headlines": [
-    "All nine aboard business jet killed as aircraft nosedives into fireball near busy South Florida roadway"
+    "Learjet co-pilot killed in Florida crash was 20, got her licence in high school"
    ],
    "hindi_owners": []
   }
@@ -2205,8 +2399,7 @@
    },
    "top_score": 0.24,
    "top_headlines": [
-    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch",
-    "NCP merger proposal minus Sunetra, Parth reaches Amit Shah"
+    "'3 crore Bangladeshi infiltrators don't exist on voters' list': Amit Shah counters Rahul's anti-SIR pitch"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2234,7 +2427,7 @@
     "vessel"
    ],
    "date": "2026-11-02",
-   "news_at": "2026-11-03T03:36:51.007623+00:00",
+   "news_at": "2026-11-03T03:54:01.569936+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
@@ -2274,7 +2467,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-03T03:36:51.007623+00:00"
+     "at": "2026-11-03T03:54:01.569936+00:00"
     },
     {
      "title": "Indian Navy frees hijacked vessel Azini",
