@@ -1,46 +1,17 @@
 {
- "at": "2026-11-04T15:57:27+00:00",
+ "at": "2026-11-04T16:28:28+00:00",
  "trending": [
-  {
-   "qid": "Q116992476",
-   "title": "Jesús de Miguel",
-   "fame": 585060,
-   "views": 585060,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-03"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q116992476",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
   {
    "qid": "Q4834146",
    "title": "B. P. Singh",
-   "fame": 575000,
+   "fame": 600200,
    "views": 0,
-   "traffic": 0,
-   "news": 575000,
-   "news_at": "2026-11-04T15:57:42.324525+00:00",
+   "traffic": 200,
+   "news": 600000,
+   "news_at": "2026-11-04T16:29:01.331924+00:00",
    "headlines": [
-    "Chetan Singh Jouramajra resigns as MLA after quitting AAP; party strength in Assembly down to 91",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
+    "Chetan Singh Jouramajra resigns as MLA after quitting AAP; party strength in Assembly down to 91",
     "In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime",
     "India aims for Rs 3 lakh cr defence production, Rs 50,000 cr exports by 2029: Rajnath Singh",
     "India Aiming for Global Competitiveness Through Indigenous Capabilities and International Cooperation: Dr. Jitendra Singh at IPRD 2026"
@@ -54,17 +25,20 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-news:Chetan Singh Jouramajra resigns as MLA after quitting AAP; party strength in Assembly down to 91",
+    "google-trends-IN:sara ali khan",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
+    "google-news:Chetan Singh Jouramajra resigns as MLA after quitting AAP; party strength in Assembly down to 91",
     "google-news:In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime",
     "outlet:Government of India",
-    "outlet:NDTV",
-    "outlet:HT Media"
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:NDTV"
    ],
    "owners": [
     "Government of India",
-    "NDTV",
-    "HT Media"
+    "India Today Group",
+    "HT Media",
+    "NDTV"
    ],
    "reports": [
     {
@@ -75,7 +49,27 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-04T15:57:42.324525+00:00"
+     "at": "2026-11-04T16:29:01.331924+00:00"
+    },
+    {
+     "title": "CJP's Ratna Singh to face contempt for social media post against Saket magistrate",
+     "url": "https://www.indiatoday.in/india/law-news/story/cjp-legal-head-ratna-singh-contempt-proceedings-social-media-post-saket-magistrate-her-detention-3032210-2026-11-04?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-04T16:03:45+00:00"
+    },
+    {
+     "title": "MP high court rejects bail plea of ex-judge Giribala Singh in Twisha Sharma case",
+     "url": "https://www.hindustantimes.com/india-news/mp-high-court-rejects-bail-plea-of-ex-judge-giribala-singh-in-twisha-sharma-case-101793806568187.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-04T15:36:07+00:00"
     },
     {
      "title": "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
@@ -103,12 +97,43 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 11
+    "IN": 9,
+    "IN-nation": 3
    },
-   "top_score": 0.3,
+   "top_score": 0.87,
    "top_headlines": [
+    "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "Chetan Singh Jouramajra resigns as MLA after quitting AAP; party strength in Assembly down to 91"
    ],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q116992476",
+   "title": "Jesús de Miguel",
+   "fame": 585060,
+   "views": 585060,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-03"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q116992476",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -144,6 +169,41 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q3181541",
+   "title": "John Frieda",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-04T14:27:00+00:00",
+   "headlines": [
+    "‘A true icon of the hair industry’: celebrity hairstylist John Frieda dies aged 75"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:‘A true icon of the hair industry’: celebrity hairstylist John Frieda dies aged 75"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q3181541",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q16296",
@@ -587,6 +647,41 @@
  ],
  "candidates": [
   {
+   "qid": "Q3181541",
+   "title": "John Frieda",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-04T14:27:00+00:00",
+   "headlines": [
+    "‘A true icon of the hair industry’: celebrity hairstylist John Frieda dies aged 75"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:‘A true icon of the hair industry’: celebrity hairstylist John Frieda dies aged 75"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q3181541",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261104-Q8682",
    "qid": "Q8682",
    "title": "Real Madrid CF",
@@ -907,8 +1002,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9265 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3135 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: already revisited today; revisit Q330658: already revisited today; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q4746875 (606 views",
-  "outlets: 1353 headlines from 31 feeds (19 owners), 10 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261104-Q8682; dropped: explainer Democrats / Republicans: no Wikipedia article that can be its centre; explainer November Check: fewer than 3 owners' headlines name it and the story; explainer Navi Mumbai: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1320 headlines from 30 feeds (19 owners), 13 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261104-Q8682; dropped: explainer Democrats / Republicans: no Wikipedia article that can be its centre; explainer Navi Mumbai: fewer than 3 owners' headlines name it and the story; explainer CM Yogi Adityanath: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -916,10 +1011,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1353,
-  "feeds": 31,
+  "headlines": 1320,
+  "feeds": 30,
   "owners": 19,
-  "matched": 10,
+  "matched": 13,
   "corroborated": 2
  },
  "emerging": [],
