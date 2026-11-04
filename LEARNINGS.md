@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-03T20:39:11+00:00. Scored Shorts (views at 24 h): 109. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
+Updated 2026-11-03T23:54:07+00:00. Scored Shorts (views at 24 h): 109. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35.
 
 Baseline: a typical Short has 52 views at 24 h.
 Retention: a typical Short is watched 53.4% through; a group's retention is blended into its lift at 0.5.
@@ -22,21 +22,21 @@ Retention: a typical Short is watched 53.4% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261103-Q1058-update | 2026-11-03T16:29 | news | india | naam-niyam | india | 94 |  |  |
-| kh-20261103-Q330658 | 2026-11-03T12:35 | defence | india | other | india | 318 | 241 |  |
-| kh-20261103-Q4746875-update | 2026-11-03T09:07 | news | india | naam-niyam | india | 439 | 309 |  |
-| kh-20261103-Q10218 | 2026-11-03T06:33 | news | india | rajneeti | india | 35 | 19 |  |
-| kh-20261103-Q356359 | 2026-11-03T01:50 | defence | india | other | india | 95 | 81 |  |
+| kh-20261103-Q1058-update | 2026-11-03T16:29 | news | india | naam-niyam | india | 96 | 96 |  |
+| kh-20261103-Q330658 | 2026-11-03T12:35 | defence | india | other | india | 404 | 241 |  |
+| kh-20261103-Q4746875-update | 2026-11-03T09:07 | news | india | naam-niyam | india | 476 | 309 |  |
+| kh-20261103-Q10218 | 2026-11-03T06:33 | news | india | rajneeti | india | 40 | 19 |  |
+| kh-20261103-Q356359 | 2026-11-03T01:50 | defence | india | other | india | 115 | 81 |  |
 | kh-20261102-Q213380 | 2026-11-02T16:15 | court | india | paisa | india | 91 | 14 | 66 |
-| kh-20261102-Q163225-update | 2026-11-02T12:03 | news | india | naam-niyam | india | 960 | 266 | 759 |
+| kh-20261102-Q163225-update | 2026-11-02T12:03 | news | india | naam-niyam | india | 970 | 266 | 759 |
 | kh-20261102-Q7289726-update | 2026-11-02T02:34 | politics | india | rajneeti | india | 36 | 9 | 21 |
 | kh-20261101-Q140076608-update | 2026-11-01T13:57 | news | world | naam-niyam | india | 117 | 37 | 68 |
-| kh-20261101-Q124883782-update | 2026-11-01T10:36 | politics | india | rajneeti | india | 1449 | 721 | 1252 |
+| kh-20261101-Q124883782-update | 2026-11-01T10:36 | politics | india | rajneeti | india | 1469 | 721 | 1252 |
 | kh-20261101-Q7289726 | 2026-11-01T06:55 | politics | india | rajneeti | india | 528 | 126 | 362 |
-| wk-Q644401 | 2026-11-01T05:06 | death | india | obituary | india | 210 | 50 | 112 |
-| kh-20261101-Q2745305 | 2026-11-01T01:38 | news | india | naam-niyam | india | 9103 | 1128 | 3609 |
-| kh-20261031-Q140076608 | 2026-10-31T18:32 | news | world | naam-niyam | india | 298 | 56 | 173 |
-| kh-20261031-Q124883782 | 2026-10-31T14:54 | politics | india | rajneeti | india | 3096 | 1149 | 2151 |
+| wk-Q644401 | 2026-11-01T05:06 | death | india | obituary | india | 212 | 50 | 112 |
+| kh-20261101-Q2745305 | 2026-11-01T01:38 | news | india | naam-niyam | india | 9129 | 1128 | 3609 |
+| kh-20261031-Q140076608 | 2026-10-31T18:32 | news | world | naam-niyam | india | 302 | 56 | 173 |
+| kh-20261031-Q124883782 | 2026-10-31T14:54 | politics | india | rajneeti | india | 3125 | 1149 | 2151 |
 | kh-20261031-Q1058-update | 2026-10-31T09:45 | news | india | naam-niyam | india | 23 | 1 | 12 |
 | kh-20261031-Q131292408 | 2026-10-31T05:53 | news | india | other | india | 19 | 2 | 12 |
 | kh-20261031-Q229058 | 2026-10-31T01:51 | science | india | other | india | 24 | 1 | 15 |
