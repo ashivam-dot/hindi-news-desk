@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:58:58+00:00",
+ "at": "2026-11-04T22:13:15+00:00",
  "trending": [
   {
    "qid": "Q116992476",
@@ -236,10 +236,10 @@
    ],
    "top": {
     "IN-hi": 8,
-    "IN-nation": 17,
+    "IN-nation": 18,
     "IN-hi-nation": 3
    },
-   "top_score": 0.98,
+   "top_score": 0.965,
    "top_headlines": [
     "PM मोदी ने फोन कर जाना शरद पवार का हाल, ब्रीच कैंडी अस्पताल में भर्ती हैं NCP नेता",
     "Sharad Pawar hospitalised in Mumbai hours after discharge in Pune | India News"
@@ -317,9 +317,9 @@
   {
    "qid": "Q1633044",
    "title": "Hubert Aiwanger",
-   "fame": 25500,
+   "fame": 25000,
    "views": 0,
-   "traffic": 500,
+   "traffic": 0,
    "news": 25000,
    "news_at": "2026-11-04T21:00:00+00:00",
    "headlines": [
@@ -330,12 +330,10 @@
    "region": "world",
    "india_link": false,
    "geos": [
-    "US",
     "world"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-US:hubert aiwanger",
     "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
     "outlet:Deutsche Welle"
    ],
@@ -895,10 +893,10 @@
    ],
    "top": {
     "IN-hi": 8,
-    "IN-nation": 17,
+    "IN-nation": 18,
     "IN-hi-nation": 3
    },
-   "top_score": 0.98,
+   "top_score": 0.965,
    "top_headlines": [
     "PM मोदी ने फोन कर जाना शरद पवार का हाल, ब्रीच कैंडी अस्पताल में भर्ती हैं NCP नेता",
     "Sharad Pawar hospitalised in Mumbai hours after discharge in Pune | India News"
@@ -1326,17 +1324,21 @@
   }
  ],
  "notes": [
-  "revisit Q2745305 (9267 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3136 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1938 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (915 views): 0 owners reported new news on Indian Air Force since its last Short; revisit kh-",
-  "outlets: 1314 headlines from 32 feeds (19 owners), 25 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261105-Q982813; dropped: explainer Agniveers / Big Agnipath: no Wikipedia article that can be its centre; explainer VGF: fewer than 3 owners' headlines name it and the story; explainer Aapko: fewer than 3 owners' headlines name it and the story",
+  "revisit Q2745305 (9319 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3140 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2081 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1073 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
+  "outlets: 1224 headlines from 29 feeds (18 owners), 27 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261105-Q982813; dropped: explainer CM Yogi Adityanath: fewer than 3 owners' headlines name it and the story; explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Native American: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+ ],
  "outlets": {
-  "headlines": 1314,
-  "feeds": 32,
-  "owners": 19,
-  "matched": 25,
+  "headlines": 1224,
+  "feeds": 29,
+  "owners": 18,
+  "matched": 27,
   "corroborated": 2
  },
  "emerging": [],
@@ -1444,10 +1446,10 @@
    ],
    "top": {
     "IN-hi": 8,
-    "IN-nation": 17,
+    "IN-nation": 18,
     "IN-hi-nation": 3
    },
-   "top_score": 0.98,
+   "top_score": 0.965,
    "top_headlines": [
     "PM मोदी ने फोन कर जाना शरद पवार का हाल, ब्रीच कैंडी अस्पताल में भर्ती हैं NCP नेता",
     "Sharad Pawar hospitalised in Mumbai hours after discharge in Pune | India News"
