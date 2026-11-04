@@ -16147,6 +16147,12 @@
      "views": 123,
      "likes": 3,
      "comments": 1
+    },
+    {
+     "age_h": 9.65,
+     "views": 123,
+     "likes": 3,
+     "comments": 1
     }
    ],
    "kind": "explainer",
@@ -16157,6 +16163,27 @@
    "production_version": "news-shorts-2026-10-24",
    "producer_sha": "463c0340a606edcecd1a4a7ce1400ab9ba3dd3f6",
    "views_6h": 96.0,
+   "views_24h": null
+  },
+  "RD6_rMQfqXA": {
+   "id": "kh-20261104-Q1353",
+   "published_at": "2026-11-04T01:56:25+00:00",
+   "snapshots": [
+    {
+     "age_h": 0.21,
+     "views": 1,
+     "likes": 0,
+     "comments": 0
+    }
+   ],
+   "kind": "explainer",
+   "category": "weather",
+   "region": "india",
+   "lane": "other",
+   "audience": "india",
+   "production_version": "news-shorts-2026-10-24",
+   "producer_sha": "2f8fc5906284038936a14e4c2543637e3fc0af63",
+   "views_6h": null,
    "views_24h": null
   }
  },
