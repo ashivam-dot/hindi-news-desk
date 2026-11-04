@@ -1,22 +1,30 @@
 {
- "at": "2026-11-04T07:55:23+00:00",
+ "at": "2026-11-04T08:10:21+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 17 trending",
+  "watch: 11 candidates from 19 trending",
   "revisit Q2745305 (9185 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3129 views): 1 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1009 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q7289726",
-  "outlets: 1243 headlines from 31 feeds (19 owners), 24 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261104-Q1353, kh-20261104-Q2570643, kh-20261104-Q27924832, kh-20261104-Q51403327; dropped: explainer Republicans / Democrats: no Wikipedia article that can be its centre; explainer Florida Republicans: fewer than 3 owners' headlines name it and the story; explainer AQI: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1245 headlines from 31 feeds (19 owners), 22 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261104-Q1353, kh-20261104-Q2570643, kh-20261104-Q27924832, kh-20261104-Q1166; dropped: explainer Republicans / Democrats: no Wikipedia article that can be its centre; explainer Florida Republicans: fewer than 3 owners' headlines name it and the story; explainer AQI: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261104-Q2570643: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261104-Q27924832: too low in Google News India's top stories (place 0.33, needs 0.35)",
+  "drop kh-20261104-Q27924832: too low in Google News India's top stories (place 0.18, needs 0.35)",
   "drop kh-20261104-Q51403327: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q1812342: 68 h old and no longer trending live",
   "drop wk-Q366714: 92 h old and no longer trending live",
   "drop wk-Q7612484: 116 h old and no longer trending live",
+  "drop wk-Q5103870: 140 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261104-Q27924832; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261104-Q51403327",
+  "published kh-20261104-Q1166: https://www.youtube.com/shorts/0NbkJ8Q94BM",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "0NbkJ8Q94BM",
+  "url": "https://www.youtube.com/shorts/0NbkJ8Q94BM",
+  "youtube_title": "अब्दुल अल-सैयद मिशिगन से चुनाव जीतकर सीनेटर बने #shorts #michigan",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
