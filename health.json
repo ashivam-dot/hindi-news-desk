@@ -1,22 +1,22 @@
 {
- "at": "2026-11-04T20:58:55+00:00",
+ "at": "2026-11-04T21:12:36+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 17 trending",
+  "watch: 12 candidates from 18 trending",
   "revisit Q2745305 (9267 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3136 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1938 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (915 views): 0 owners reported new news on Indian Air Force since its last Short; revisit kh-",
-  "outlets: 1281 headlines from 30 feeds (18 owners), 21 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1276 headlines from 30 feeds (18 owners), 23 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 0 kh- stories (on); dropped: explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Native American: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop wk-Q313202: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "hold wp-2026_Tampa_shooting: outside 07:00-24:00 IST",
+  "drop wk-Q1633044: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q312472: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q77206: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1812342: 81 h old and no longer trending live",
   "drop wk-Q366714: 105 h old and no longer trending live",
-  "drop wk-Q7612484: 129 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261105-Q1058-update",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Tampa_shooting; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261105-Q1058-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }

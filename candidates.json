@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T20:58:57+00:00",
+ "at": "2026-11-04T21:12:37+00:00",
  "trending": [
   {
    "qid": "Q116992476",
@@ -39,7 +39,7 @@
    "news": 425000,
    "news_at": "2026-11-04T18:27:02+00:00",
    "headlines": [
-    "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+    "Madhya Pradesh High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "Bihar government removes IPS officer Bhanu Pratap Singh amid marital dispute",
@@ -54,7 +54,7 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+    "google-news:Madhya Pradesh High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "google-news:In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "outlet:India Today Group",
@@ -127,7 +127,7 @@
    "top_score": 0.79,
    "top_headlines": [
     "Chandumajras return to Akali Dal opens door for wider NDA unity in Punjab, comes close after he met Shah",
-    "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+    "Madhya Pradesh High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime"
    ],
    "hindi_owners": []
@@ -167,15 +167,15 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q313202",
-   "title": "Herbert Blomstedt",
+   "qid": null,
+   "title": "2026 Tampa shooting",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-04T16:55:00+00:00",
+   "news_at": "2026-11-04T19:07:34+00:00",
    "headlines": [
-    "Herbert Blomstedt, renowned conductor with a seven-decade career, dies aged 99"
+    "Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -186,20 +186,22 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Herbert Blomstedt, renowned conductor with a seven-decade career, dies aged 99"
+    "google-news:Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q313202",
-   "kind": "death",
-   "category": "death",
+   "id": "wp-2026_Tampa_shooting",
+   "kind": "incident",
+   "category": "attack",
    "date": "2026-11-04",
+   "coords": null,
+   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "sensitive"
   },
   {
    "qid": "Q16296",
@@ -229,6 +231,57 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q1633044",
+   "title": "Hubert Aiwanger",
+   "fame": 25200,
+   "views": 0,
+   "traffic": 200,
+   "news": 25000,
+   "news_at": "2026-11-04T21:00:00+00:00",
+   "headlines": [
+    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:hubert aiwanger",
+    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+    "outlet:Deutsche Welle"
+   ],
+   "owners": [
+    "Deutsche Welle"
+   ],
+   "reports": [
+    {
+     "title": "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+     "url": "https://www.dw.com/en/bavarian-politician-hubert-aiwanger-found-dead-in-berlin-hotel/a-79859115?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-04T21:00:00+00:00"
+    }
+   ],
+   "id": "wk-Q1633044",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q312472",
@@ -609,9 +662,9 @@
   {
    "qid": "Q4932755",
    "title": "Bob Heinz",
-   "fame": 500,
+   "fame": 2000,
    "views": 0,
-   "traffic": 500,
+   "traffic": 2000,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -642,15 +695,15 @@
  ],
  "candidates": [
   {
-   "qid": "Q313202",
-   "title": "Herbert Blomstedt",
+   "qid": null,
+   "title": "2026 Tampa shooting",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-04T16:55:00+00:00",
+   "news_at": "2026-11-04T19:07:34+00:00",
    "headlines": [
-    "Herbert Blomstedt, renowned conductor with a seven-decade career, dies aged 99"
+    "Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -661,11 +714,64 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Herbert Blomstedt, renowned conductor with a seven-decade career, dies aged 99"
+    "google-news:Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q313202",
+   "id": "wp-2026_Tampa_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-04",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
+  },
+  {
+   "qid": "Q1633044",
+   "title": "Hubert Aiwanger",
+   "fame": 25200,
+   "views": 0,
+   "traffic": 200,
+   "news": 25000,
+   "news_at": "2026-11-04T21:00:00+00:00",
+   "headlines": [
+    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:hubert aiwanger",
+    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+    "outlet:Deutsche Welle"
+   ],
+   "owners": [
+    "Deutsche Welle"
+   ],
+   "reports": [
+    {
+     "title": "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+     "url": "https://www.dw.com/en/bavarian-politician-hubert-aiwanger-found-dead-in-berlin-hotel/a-79859115?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-04T21:00:00+00:00"
+    }
+   ],
+   "id": "wk-Q1633044",
    "kind": "death",
    "category": "death",
    "date": "2026-11-04",
@@ -899,6 +1005,39 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q4932755",
+   "title": "Bob Heinz",
+   "fame": 2000,
+   "views": 0,
+   "traffic": 2000,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:bob heinz"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4932755",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-10-31",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q259559",
    "title": "Susan Saint James",
    "fame": 15600,
@@ -953,39 +1092,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-25",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q4932755",
-   "title": "Bob Heinz",
-   "fame": 500,
-   "views": 0,
-   "traffic": 500,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-US:bob heinz"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4932755",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-31",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1075,7 +1181,7 @@
  ],
  "notes": [
   "revisit Q2745305 (9267 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3136 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1938 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (915 views): 0 owners reported new news on Indian Air Force since its last Short; revisit kh-",
-  "outlets: 1281 headlines from 30 feeds (18 owners), 21 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1276 headlines from 30 feeds (18 owners), 23 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 0 kh- stories (on); dropped: explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Native American: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1084,10 +1190,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1281,
+  "headlines": 1276,
   "feeds": 30,
   "owners": 18,
-  "matched": 21,
+  "matched": 23,
   "corroborated": 1
  },
  "emerging": [],
