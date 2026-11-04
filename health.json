@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T00:24:46+00:00",
+ "at": "2026-11-04T00:39:50+00:00",
  "ok": true,
  "dry": false,
  "steps": [
@@ -15,9 +15,9 @@
   "hold kh-20261104-Q1353: outside 07:00-24:00 IST",
   "drop kh-20261104-Q113645346: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "hold kh-20261104-Q356359: outside 07:00-24:00 IST",
-  "drop wk-Q1812342: 60 h old and no longer trending live",
-  "drop wk-Q3299104: 60 h old and no longer trending live",
-  "drop wk-Q366714: 84 h old and no longer trending live",
+  "drop wk-Q1812342: 61 h old and no longer trending live",
+  "drop wk-Q3299104: 61 h old and no longer trending live",
+  "drop wk-Q366714: 85 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261104-Q1353; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
   "channel: about, playlists done; nothing left to do"
  ]
