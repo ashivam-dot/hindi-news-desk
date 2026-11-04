@@ -1,22 +1,21 @@
 {
- "at": "2026-11-04T15:27:04+00:00",
+ "at": "2026-11-04T15:42:06+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 113 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.084, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.7}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.176, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.9}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 7 candidates from 14 trending",
+  "watch: 8 candidates from 15 trending",
   "revisit Q2745305 (9265 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3135 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: already revisited today; revisit Q330658: already revisited today; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q4746875 (606 views",
-  "outlets: 1354 headlines from 31 feeds (19 owners), 16 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 0 kh- stories (on); dropped: explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer November Check: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1349 headlines from 31 feeds (19 owners), 15 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261104-Q8682; dropped: explainer Democrats / Republicans: no Wikipedia article that can be its centre; explainer November Check: fewer than 3 owners' headlines name it and the story; explainer Navi Mumbai: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261104-Q8682: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q77206: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1812342: 76 h old and no longer trending live",
   "drop wk-Q366714: 100 h old and no longer trending live",
   "drop wk-Q7612484: 124 h old and no longer trending live",
   "drop wk-Q5103870: 148 h old and no longer trending live",
-  "drop wk-Q259559: 220 h old and no longer trending live",
   "channel: about, playlists done; nothing left to do"
  ]
 }
