@@ -1,22 +1,24 @@
 {
- "at": "2026-11-04T10:56:08+00:00",
+ "at": "2026-11-04T11:11:43+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 22 trending",
+  "watch: 12 candidates from 22 trending",
   "revisit Q2745305 (9213 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3131 views): 1 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1049 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q1058 (656 views): 1 owners reported new news on Narendra Modi since its last Short; revisit Q4746875",
-  "outlets: 1297 headlines from 31 feeds (19 owners), 12 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261104-Q10218, kh-20261104-Q1353, kh-20261104-Q2570643, kh-20261104-Q1494600; dropped: explainer Agniveer / CDS: no Wikipedia article that can be its centre; explainer Black Latina: no Wikipedia article that can be its centre; explainer Florida Republicans: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1300 headlines from 31 feeds (19 owners), 13 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261104-Q10218, kh-20261104-Q1353, kh-20261104-Q2495862, kh-20261104-Q1494600; dropped: explainer Agniveer / CDS: no Wikipedia article that can be its centre; explainer Black Latina: no Wikipedia article that can be its centre; explainer Republicans / Anthony Zurcher Democrats: no Wikipedia article that can be its centre",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261104-Q1494600: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261104-Q113645346: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q3181541: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q77206: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261104-Q27924832: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1812342: 71 h old and no longer trending live",
-  "drop wk-Q366714: 95 h old and no longer trending live",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261104-Q27924832; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "skip kh-20261104-Q2495862: gate: no draft passed the fact checks: write House as घर (the Hindi name people know), not हाउस; beats 4,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: हाउस, डॉनल्ड ट्रम्प. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow; things with photos: हाउस), so that at most 2 beats are text cards and never two in a row.",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
