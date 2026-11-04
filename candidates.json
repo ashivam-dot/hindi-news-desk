@@ -1,5 +1,5 @@
 {
- "at": "2026-11-04T21:12:37+00:00",
+ "at": "2026-11-04T21:27:32+00:00",
  "trending": [
   {
    "qid": "Q116992476",
@@ -127,8 +127,7 @@
    "top_score": 0.79,
    "top_headlines": [
     "Chandumajras return to Akali Dal opens door for wider NDA unity in Punjab, comes close after he met Shah",
-    "Madhya Pradesh High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
-    "In Speaker Om Birla's presence, CM Satheesan questions credibility of anti-corruption movement against Manmohan Singh regime"
+    "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case"
    ],
    "hindi_owners": []
   },
@@ -165,43 +164,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "qid": null,
-   "title": "2026 Tampa shooting",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-04T19:07:34+00:00",
-   "headlines": [
-    "Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-2026_Tampa_shooting",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
   },
   {
    "qid": "Q16296",
@@ -331,6 +293,57 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": null,
+   "title": "2026 Kedartal trail Avalanche",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-04T13:09:05+00:00",
+   "headlines": [
+    "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
+     "url": "https://www.hindustantimes.com/india-news/uttarkashi-avalanche-rescue-teams-recover-two-more-bodies-death-toll-rises-to-4-101793797745650.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-04T13:09:05+00:00"
+    }
+   ],
+   "id": "wp-2026_Kedartal_trail_Avalanche",
+   "kind": "incident",
+   "category": "landslide",
+   "date": "2026-11-04",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "qid": "Q77206",
@@ -696,31 +709,45 @@
  "candidates": [
   {
    "qid": null,
-   "title": "2026 Tampa shooting",
-   "fame": 125000,
+   "title": "2026 Kedartal trail Avalanche",
+   "fame": 25000,
    "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-04T19:07:34+00:00",
+   "news": 25000,
+   "news_at": "2026-11-04T13:09:05+00:00",
    "headlines": [
-    "Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
+    "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
+   "region": "india",
+   "india_link": true,
    "geos": [
-    "US"
+    "IN"
    ],
    "label_hi": null,
    "via": [
-    "google-news:Tampa Citibank shooting leaves 1 wounded, shooter down in cafeteria"
+    "google-news:Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
+    "outlet:HT Media"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-2026_Tampa_shooting",
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
+     "url": "https://www.hindustantimes.com/india-news/uttarkashi-avalanche-rescue-teams-recover-two-more-bodies-death-toll-rises-to-4-101793797745650.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-04T13:09:05+00:00"
+    }
+   ],
+   "id": "wp-2026_Kedartal_trail_Avalanche",
    "kind": "incident",
-   "category": "attack",
+   "category": "landslide",
    "date": "2026-11-04",
    "coords": null,
    "has_coords": false,
@@ -728,8 +755,8 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "qid": "Q1633044",
@@ -1181,7 +1208,7 @@
  ],
  "notes": [
   "revisit Q2745305 (9267 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3136 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (1938 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (915 views): 0 owners reported new news on Indian Air Force since its last Short; revisit kh-",
-  "outlets: 1276 headlines from 30 feeds (18 owners), 23 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1269 headlines from 30 feeds (18 owners), 24 matched to articles, 1 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 0 kh- stories (on); dropped: explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Native American: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1190,10 +1217,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1276,
+  "headlines": 1269,
   "feeds": 30,
   "owners": 18,
-  "matched": 23,
+  "matched": 24,
   "corroborated": 1
  },
  "emerging": [],
