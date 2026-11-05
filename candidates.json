@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T11:00:59+00:00",
+ "at": "2026-11-05T11:15:50+00:00",
  "trending": [
   {
    "qid": "Q4834146",
@@ -8,9 +8,9 @@
    "views": 0,
    "traffic": 0,
    "news": 450000,
-   "news_at": "2026-11-05T11:01:49.686548+00:00",
+   "news_at": "2026-11-05T11:16:19.785441+00:00",
    "headlines": [
-    "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+    "MP High Court Denies Bail To Giribala Singh In Twisha Sharma Dowry Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "India Pioneers Space Debris Removal; Union Minister Dr. Jitendra Singh Announces Vision of Debris-Free Space by 2030",
@@ -25,7 +25,7 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
+    "google-news:MP High Court Denies Bail To Giribala Singh In Twisha Sharma Dowry Death Case",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "google-news:Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "outlet:Government of India",
@@ -46,7 +46,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T11:01:49.686548+00:00"
+     "at": "2026-11-05T11:16:19.785441+00:00"
     },
     {
      "title": "Dr Jitendra Singh to formally Launch Nationwide Digital Life Certificate Campaign 5",
@@ -56,7 +56,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T11:01:49.686548+00:00"
+     "at": "2026-11-05T11:16:19.785441+00:00"
     },
     {
      "title": "Development should be people-centric, eco-friendly says Rajendra Singh",
@@ -114,9 +114,9 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 13
+    "IN-nation": 12
    },
-   "top_score": 0.24,
+   "top_score": 0.27,
    "top_headlines": [
     "Supreme Court stays contempt case against Punjab Chief Secretary in DA case, seeks payment plan from government"
    ],
@@ -125,9 +125,9 @@
   {
    "qid": null,
    "title": "November 2026 Florida floods",
-   "fame": 250200,
+   "fame": 250100,
    "views": 0,
-   "traffic": 200,
+   "traffic": 100,
    "news": 250000,
    "news_at": "2026-11-05T03:35:53+00:00",
    "headlines": [
@@ -144,8 +144,7 @@
    ],
    "label_hi": null,
    "via": [
-    "google-trends-US:florida state seminoles football",
-    "google-trends-US:florida learjet",
+    "google-trends-US:fl lottery",
     "google-news:Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida",
     "google-news:The Hindu profile on Democrat Pia Dandiya who won from Florida"
    ],
@@ -383,15 +382,12 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 8,
-    "IN-nation": 1,
-    "IN-hi-nation": 1
+    "IN": 7,
+    "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 1.0,
    "top_headlines": [
-    "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse",
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
+    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -736,6 +732,55 @@
     -121.29527778
    ],
    "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-05T11:07:22+00:00",
+   "headlines": [
+    "Houthi missiles fired at Medina intercepted, Saudi coalition says"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
+   "via": [
+    "google-news:Houthi missiles fired at Medina intercepted, Saudi coalition says",
+    "outlet:France Médias Monde"
+   ],
+   "owners": [
+    "France Médias Monde"
+   ],
+   "reports": [
+    {
+     "title": "Houthi missiles fired at Medina intercepted, Saudi coalition says",
+     "url": "https://www.france24.com/en/middle-east/20261105-houthi-missiles-fired-at-medina-intercepted-saudi-coalition-says",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-05T11:07:22+00:00"
+    }
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1402,95 +1447,12 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261105-Q124883782-update",
-   "qid": "Q124883782",
-   "title": "Gyanesh Kumar",
-   "name": "Gyanesh Kumar",
-   "phrase": "Gyanesh Kumar",
-   "person": true,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Watch: INDIA bloc stages mock arrest of CEC Gyanesh Kumar at Bengaluru protest",
-   "story_keys": [
-    "bloc",
-    "charge",
-    "during",
-    "hold",
-    "impeachment",
-    "impeachment'",
-    "impeachment’",
-    "india",
-    "kharge",
-    "meira",
-    "mock",
-    "postpone",
-    "proceeding",
-    "public",
-    "rain"
-   ],
-   "date": "2026-11-05",
-   "news_at": "2026-11-05T07:33:36+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Watch: INDIA bloc stages mock arrest of CEC Gyanesh Kumar at Bengaluru protest",
-    "Youth Congress suspends 200+ office-bearers for skipping INDIA bloc’s Ramlila Maidan rally against Gyanesh Kumar"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "ज्ञानेश कुमार",
-   "reports": [
-    {
-     "title": "Watch: INDIA bloc stages mock arrest of CEC Gyanesh Kumar at Bengaluru protest",
-     "url": "https://timesofindia.indiatimes.com/india/india-bloc-stages-mock-arrest-of-cec-gyanesh-kumar-at-bengaluru-protest-watch/articleshow/135563825.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T07:33:36+00:00"
-    },
-    {
-     "title": "Youth Congress suspends 200+ office-bearers for skipping INDIA bloc’s Ramlila Maidan rally against Gyanesh Kumar",
-     "url": "https://www.hindustantimes.com/india-news/congresss-youth-wing-suspends-215-office-bearers-for-failing-to-attend-nov-1-india-bloc-rally-101793851997398.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T04:13:16+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q124883782"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261101-Q124883782-update",
-   "earlier": [
-    "ज्ञानेश कुमार पर महाभियोग कार्यक्रम बारिश के कारण टला",
-    "बीजेपी ने ज्ञानेश कुमार पर महाभियोग को मजाक बताया",
-    "ज्ञानेश कुमार पर विपक्षी गठबंधन का सांकेतिक महाभियोग"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 01 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "rajneeti"
   }
  ],
  "notes": [
-  "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit kh-20261105-Q124883782-update: 2 owners' new reports on Gyanesh Kumar (3144 views before); revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1279 headlines from 30 feeds (18 owners), 20 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 2 kh- stories (on): kh-20261105-Q392, kh-20261105-Q912899; dropped: explainer Diwali: no Wikipedia article that can be its centre; explainer Hormuz: fewer than 3 owners' headlines name it and the story; explainer Sensex: fewer than 3 owners' headlines name it and the story",
+  "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (816 views): 0 owners reported new news on Amit",
+  "outlets: 1278 headlines from 30 feeds (18 owners), 21 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 2 kh- stories (on): kh-20261105-Q392, kh-20261105-Q912899; dropped: explainer Karnataka's Nandini: no Wikipedia article that can be its centre; explainer Multiple: no Wikipedia article that can be its centre; explainer US Congress Trump: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1499,10 +1461,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1279,
+  "headlines": 1278,
   "feeds": 30,
   "owners": 18,
-  "matched": 20,
+  "matched": 21,
   "corroborated": 5
  },
  "emerging": [
@@ -1632,15 +1594,12 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 8,
-    "IN-nation": 1,
-    "IN-hi-nation": 1
+    "IN": 7,
+    "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 1.0,
    "top_headlines": [
-    "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse",
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
+    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
     "TV9 Network",
