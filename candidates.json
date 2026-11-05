@@ -1,18 +1,19 @@
 {
- "at": "2026-11-05T08:00:30+00:00",
+ "at": "2026-11-05T08:49:31+00:00",
  "trending": [
   {
    "qid": "Q4834146",
    "title": "B. P. Singh",
-   "fame": 275000,
+   "fame": 300200,
    "views": 0,
-   "traffic": 0,
-   "news": 275000,
-   "news_at": "2026-11-05T04:41:17+00:00",
+   "traffic": 200,
+   "news": 300000,
+   "news_at": "2026-11-05T08:27:42+00:00",
    "headlines": [
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
-    "Bihar shifts out Khagaria SP Bhanu Pratap Singh after wife files harassment complaint"
+    "Development should be people-centric, eco-friendly says Rajendra Singh",
+    "Bengal BJP government appoints neonatologist Arun Kumar Singh as advisor"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -23,15 +24,38 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
+    "google-trends-IN:rajasthan vs himachal pradesh",
     "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
-    "google-news:Bihar shifts out Khagaria SP Bhanu Pratap Singh after wife files harassment complaint",
+    "google-news:Development should be people-centric, eco-friendly says Rajendra Singh",
+    "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
    "owners": [
+    "The Hindu Group",
     "HT Media"
    ],
    "reports": [
+    {
+     "title": "Development should be people-centric, eco-friendly says Rajendra Singh",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/development-should-be-people-centric-eco-friendly-says-rajendra-singh/article71668969.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T08:27:42+00:00"
+    },
+    {
+     "title": "Bengal BJP government appoints neonatologist Arun Kumar Singh as advisor",
+     "url": "https://www.hindustantimes.com/india-news/bengal-bjp-government-appoints-neonatologist-arun-kumar-singh-as-advisor-101793866818858.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T08:20:18+00:00"
+    },
     {
      "title": "Bihar shifts out Khagaria SP Bhanu Pratap Singh after wife files harassment complaint",
      "url": "https://www.hindustantimes.com/india-news/bihar-shifts-out-khagaria-sp-bhanu-pratap-singh-after-wife-files-harassment-complaint-101793853677568.html",
@@ -78,9 +102,9 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 16
+    "IN-nation": 10
    },
-   "top_score": 0.15,
+   "top_score": 0.33,
    "top_headlines": [
     "Supreme Court stays criminal contempt proceedings against Punjab Chief Secretary in DA case",
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case"
@@ -97,8 +121,9 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
+   "story": "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
    "story_keys": [
+    "ahead",
     "butter",
     "curd",
     "ghee",
@@ -119,10 +144,10 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
     "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
     "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
+    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
     "Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case"
    ],
@@ -189,15 +214,44 @@
     "google-news:Karnataka hikes fares of state-run buses: Check revised BMTC and KSRTC fares"
    ],
    "top": {
-    "IN-nation": 9
+    "IN": 15,
+    "IN-nation": 14
    },
-   "top_score": 0.36,
+   "top_score": 0.405,
    "top_headlines": [
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
+    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
+    "Dalal Street Gets A Rs 7 Lakh Crore Diwali Gift After US Election Shock"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "paisa"
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q116992476",
+   "title": "Jesús de Miguel",
+   "fame": 224585,
+   "views": 224585,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-04"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q116992476",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261105-Q95",
@@ -223,15 +277,14 @@
     "India Today Group",
     "The Hindu Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Google voluntary buyouts: What's the exit package?",
     "Meta joins Microsoft and Google in offering voluntary exits to employees",
     "Google extends voluntary buyout offers to employees in several countries",
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
    "hindi_headlines": [],
@@ -276,48 +329,14 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group",
-    "google-news:Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "google-news:Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
-   "top": {
-    "IN": 19
-   },
-   "top_score": 0.1,
-   "top_headlines": [
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": "Q116992476",
-   "title": "Jesús de Miguel",
-   "fame": 224585,
-   "views": 224585,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-04"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q116992476",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "nw-20261105-chawri-bazar-disaster",
@@ -329,9 +348,9 @@
    "date": "2026-11-05",
    "news_at": "2026-11-05T07:21:00+00:00",
    "owners": [
-    "NDTV",
     "HT Media",
     "India Today Group",
+    "NDTV",
     "Network18",
     "Deutsche Welle"
    ],
@@ -340,11 +359,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar",
     "Three-storey building collapses near Delhi’s Chawri Bazar Metro Station; 2 dead, rescue work on",
     "Chawri Bazar building collapse: What probes into previous Delhi tragedies found",
     "2 dead, 6 trapped after 3-storey building collapses in Old Delhi's Chawri Bazaar",
-    "Chawri Bazar building collapse: Similar incidents that have rocked Delhi"
+    "Chawri Bazar building collapse: Similar incidents that have rocked Delhi",
+    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -397,6 +416,16 @@
      "at": "2026-11-05T06:42:54+00:00"
     },
     {
+     "title": "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar",
+     "url": "https://www.ndtv.com/india-news/several-feared-trapped-after-three-storey-building-collapses-in-delhis-chawri-bazaar-hauz-qazi-area-12285871#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T06:39:18+00:00"
+    },
+    {
      "title": "Chawri Bazar building collapse: Similar incidents that have rocked Delhi",
      "url": "https://www.hindustantimes.com/india-news/chawri-bazar-building-collapse-similar-incidents-that-have-rocked-delhi-101793859235399.html",
      "outlet": "Hindustan Times",
@@ -425,22 +454,12 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-05T06:18:49+00:00"
-    },
-    {
-     "title": "Three-storey building collapses near Delhi’s Chawri Bazar Metro Station; 2 dead, rescue work on",
-     "url": "https://www.hindustantimes.com/india-news/delhi-chawri-bazaar-building-collapse-several-feared-trapped-chawri-metro-station-diwali-101793858053984.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T05:56:48+00:00"
     }
    ],
    "via": [
-    "outlet:NDTV",
     "outlet:HT Media",
     "outlet:India Today Group",
+    "outlet:NDTV",
     "outlet:Network18",
     "outlet:Deutsche Welle"
    ],
@@ -448,13 +467,15 @@
    "article": null,
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 1
    },
-   "top_score": 0.985,
+   "top_score": 1.0,
    "top_headlines": [
     "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
    "hindi_owners": [
+    "India Today Group",
+    "TV9 Network",
     "Amar Ujala"
    ]
   },
@@ -999,39 +1020,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q5370928",
-   "title": "Emerson (footballer, born July 1980)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-US:wang xinyu"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5370928",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1059,15 +1047,14 @@
     "India Today Group",
     "The Hindu Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Google voluntary buyouts: What's the exit package?",
     "Meta joins Microsoft and Google in offering voluntary exits to employees",
     "Google extends voluntary buyout offers to employees in several countries",
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
    "hindi_headlines": [],
@@ -1112,131 +1099,14 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group",
-    "google-news:Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "google-news:Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
-   "top": {
-    "IN": 19
-   },
-   "top_score": 0.1,
-   "top_headlines": [
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261105-Q1185",
-   "qid": "Q1185",
-   "title": "Karnataka",
-   "name": "Karnataka",
-   "phrase": "Karnataka",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
-   "story_keys": [
-    "butter",
-    "curd",
-    "ghee",
-    "hike",
-    "milk",
-    "price",
-    "rise"
-   ],
-   "date": "2026-11-04",
-   "news_at": "2026-11-05T06:00:41+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "India Today Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
-    "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
-    "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
-    "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
-    "Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case"
-   ],
-   "hindi_headlines": [
-    "1.27 करोड़ महिलाओं से हुआ धोखा? 'गृह लक्ष्मी' योजना में 5000 करोड़ का घोटाला, बीजेपी का कर्नाटक सरकार पर हमला",
-    "'RSS वाले तो बहुत अच्छे हैं': कर्नाटक के मंत्री प्रियांक खरगे ने क्यों कहा ऐसा? संघ से फंड का हिसाब भी मांगा",
-    "गन्ने की मिठास में क्यों घुली कड़वाहट? '3500 रुपए प्रति टन कतई मंजूर नहीं', कर्नाटक में सड़कों पर उतरे किसान"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "कर्नाटक",
-   "reports": [
-    {
-     "title": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
-     "url": "https://www.indiatoday.in/india/karnataka/story/nandini-price-hike-ghee-butter-paneer-costlier-karnataka-milk-prices-dk-shivakumar-3032705-2026-11-05?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T06:00:41+00:00"
-    },
-    {
-     "title": "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
-     "url": "https://www.thehindu.com/news/national/karnataka/krrs-backs-milk-price-hike-opposes-criticism/article71665761.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T05:43:13+00:00"
-    },
-    {
-     "title": "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
-     "url": "https://www.thehindu.com/news/national/karnataka/after-milk-and-curd-prices-of-ghee-butter-and-paneer-too-up/article71667161.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T04:58:06+00:00"
-    },
-    {
-     "title": "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
-     "url": "https://www.news18.com/videos/india/karnataka-faces-triple-price-shock-ahead-of-diwali-milk-curd-and-transport-fares-set-to-rise-10412643.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-04T10:53:30+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "google-news:Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
-    "google-news:Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case",
-    "google-news:Karnataka hikes fares of state-run buses: Check revised BMTC and KSRTC fares"
-   ],
-   "top": {
-    "IN-nation": 9
-   },
-   "top_score": 0.36,
-   "top_headlines": [
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "paisa"
   },
   {
    "qid": "Q3181541",
@@ -1591,45 +1461,11 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q5370928",
-   "title": "Emerson (footballer, born July 1980)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-US:wang xinyu"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5370928",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "notes": [
-  "revisit Q2745305 (9345 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3140 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2130 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1088 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1225 headlines from 30 feeds (18 owners), 15 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 3 kh- stories (on): kh-20261105-Q1185, kh-20261105-Q95, kh-20261105-Q392; dropped: explainer Hormuz: fewer than 3 owners' headlines name it and the story; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer MM Somaya: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1239 headlines from 30 feeds (18 owners), 18 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 3 kh- stories (on): kh-20261105-Q1185, kh-20261105-Q95, kh-20261105-Q392; dropped: explainer Hormuz: fewer than 3 owners' headlines name it and the story; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Pakistan' CJP / Pakistan' CJP: no Wikipedia article that can be its centre",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1638,11 +1474,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1225,
+  "headlines": 1239,
   "feeds": 30,
   "owners": 18,
-  "matched": 15,
-  "corroborated": 5
+  "matched": 18,
+  "corroborated": 6
  },
  "emerging": [
   {
@@ -1655,9 +1491,9 @@
    "date": "2026-11-05",
    "news_at": "2026-11-05T07:21:00+00:00",
    "owners": [
-    "NDTV",
     "HT Media",
     "India Today Group",
+    "NDTV",
     "Network18",
     "Deutsche Welle"
    ],
@@ -1666,11 +1502,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar",
     "Three-storey building collapses near Delhi’s Chawri Bazar Metro Station; 2 dead, rescue work on",
     "Chawri Bazar building collapse: What probes into previous Delhi tragedies found",
     "2 dead, 6 trapped after 3-storey building collapses in Old Delhi's Chawri Bazaar",
-    "Chawri Bazar building collapse: Similar incidents that have rocked Delhi"
+    "Chawri Bazar building collapse: Similar incidents that have rocked Delhi",
+    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1723,6 +1559,16 @@
      "at": "2026-11-05T06:42:54+00:00"
     },
     {
+     "title": "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar",
+     "url": "https://www.ndtv.com/india-news/several-feared-trapped-after-three-storey-building-collapses-in-delhis-chawri-bazaar-hauz-qazi-area-12285871#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T06:39:18+00:00"
+    },
+    {
      "title": "Chawri Bazar building collapse: Similar incidents that have rocked Delhi",
      "url": "https://www.hindustantimes.com/india-news/chawri-bazar-building-collapse-similar-incidents-that-have-rocked-delhi-101793859235399.html",
      "outlet": "Hindustan Times",
@@ -1751,22 +1597,12 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-05T06:18:49+00:00"
-    },
-    {
-     "title": "Three-storey building collapses near Delhi’s Chawri Bazar Metro Station; 2 dead, rescue work on",
-     "url": "https://www.hindustantimes.com/india-news/delhi-chawri-bazaar-building-collapse-several-feared-trapped-chawri-metro-station-diwali-101793858053984.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T05:56:48+00:00"
     }
    ],
    "via": [
-    "outlet:NDTV",
     "outlet:HT Media",
     "outlet:India Today Group",
+    "outlet:NDTV",
     "outlet:Network18",
     "outlet:Deutsche Welle"
    ],
@@ -1774,13 +1610,15 @@
    "article": null,
    "top": {
     "IN": 7,
-    "IN-nation": 2
+    "IN-nation": 1
    },
-   "top_score": 0.985,
+   "top_score": 1.0,
    "top_headlines": [
     "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
    "hindi_owners": [
+    "India Today Group",
+    "TV9 Network",
     "Amar Ujala"
    ]
   }
@@ -1796,8 +1634,9 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
+   "story": "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
    "story_keys": [
+    "ahead",
     "butter",
     "curd",
     "ghee",
@@ -1818,10 +1657,10 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
     "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
     "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
+    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
     "Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case"
    ],
@@ -1888,15 +1727,15 @@
     "google-news:Karnataka hikes fares of state-run buses: Check revised BMTC and KSRTC fares"
    ],
    "top": {
-    "IN-nation": 9
+    "IN": 15,
+    "IN-nation": 14
    },
-   "top_score": 0.36,
+   "top_score": 0.405,
    "top_headlines": [
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
+    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
+    "Dalal Street Gets A Rs 7 Lakh Crore Diwali Gift After US Election Shock"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "paisa"
+   "hindi_owners": []
   },
   {
    "id": "kh-20261105-Q95",
@@ -1922,15 +1761,14 @@
     "India Today Group",
     "The Hindu Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Google voluntary buyouts: What's the exit package?",
     "Meta joins Microsoft and Google in offering voluntary exits to employees",
     "Google extends voluntary buyout offers to employees in several countries",
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
    "hindi_headlines": [],
@@ -1975,16 +1813,11 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group",
-    "google-news:Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg",
     "google-news:Pro-Kannada activists reach Google office; industry veterans fear move could hurt Bengaluru’s image"
    ],
-   "top": {
-    "IN": 19
-   },
-   "top_score": 0.1,
-   "top_headlines": [
-    "Google founder Larry Page publicly announced that he will give his billions to Elon Musk, but how an 'arg"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
