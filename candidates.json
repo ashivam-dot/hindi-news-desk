@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T12:14:20+00:00",
+ "at": "2026-11-05T12:30:51+00:00",
  "trending": [
   {
    "qid": "Q4834146",
@@ -8,7 +8,7 @@
    "views": 0,
    "traffic": 0,
    "news": 500000,
-   "news_at": "2026-11-05T12:16:42.473943+00:00",
+   "news_at": "2026-11-05T12:31:53.066497+00:00",
    "headlines": [
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
@@ -50,7 +50,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T12:16:42.473943+00:00"
+     "at": "2026-11-05T12:31:53.066497+00:00"
     },
     {
      "title": "Dr Jitendra Singh to formally Launch Nationwide Digital Life Certificate Campaign 5",
@@ -60,7 +60,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T12:16:42.473943+00:00"
+     "at": "2026-11-05T12:31:53.066497+00:00"
     },
     {
      "title": "US Donors, Pakistan Funding CJP? Jitendra Singh Names Abhijeet Dipke & Ashutosh Ranka | News18",
@@ -128,10 +128,11 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 12
+    "IN-nation": 6
    },
-   "top_score": 0.27,
+   "top_score": 0.45,
    "top_headlines": [
+    "Panchkula school assault case: 8-year-old granted bail; parents barred from giving him mobile phone",
     "'We Don't Appreciate Such Arm-Twisting': Supreme Court Stays Criminal Contempt Proceedings Against Punjab ..."
    ],
    "hindi_owners": []
@@ -164,6 +165,96 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261105-Q796994",
+   "qid": "Q796994",
+   "title": "BSE SENSEX",
+   "name": "S&P BSE Sensex",
+   "phrase": "Sensex",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
+   "story_keys": [
+    "higher",
+    "market",
+    "point"
+   ],
+   "date": "2026-11-05",
+   "news_at": "2026-11-05T11:52:45+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
+    "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
+    "Markets surge for sixth day; Sensex jumps 2,009 points",
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "बीएसई सेंसेक्स",
+   "reports": [
+    {
+     "title": "Markets surge for sixth day; Sensex jumps 2,009 points",
+     "url": "https://www.thehindu.com/business/markets/markets-surge-for-sixth-day-and-sensex-jumps-many-points/article71669748.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T11:52:45+00:00"
+    },
+    {
+     "title": "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
+     "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-5-november-us-iran-war-oil-prices-12285301#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:57:27+00:00"
+    },
+    {
+     "title": "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/diwali-bonanza-on-dalal-street-bse-sensex-nse-nifty50-rise-on-november-5-2026-top-reasons-why-stock-market-is-rising/articleshow/135559225.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T05:01:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "google-news:Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q1633044",
@@ -258,10 +349,10 @@
    "coords": null,
    "has_coords": false,
    "top": {
-    "IN": 8,
-    "IN-nation": 2
+    "IN": 9,
+    "IN-nation": 3
    },
-   "top_score": 0.935,
+   "top_score": 0.87,
    "top_headlines": [
     "The Hindu profile on Democrat Pia Dandiya who won from Florida"
    ],
@@ -395,18 +486,17 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 9,
-    "IN-hi": 3,
-    "IN-nation": 4,
+    "IN": 7,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.755,
+   "top_score": 1.3,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "दिल्ली के चावड़ी बाजार में इमारत ढहने से दो लोगों की मौत, मौके पर पहुंचीं CM रेखा गुप्ता; JE और AE सस्पेंड",
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
@@ -443,94 +533,10 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261105-Q796994",
-   "qid": "Q796994",
-   "title": "BSE SENSEX",
-   "name": "S&P BSE Sensex",
-   "phrase": "Sensex",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
-   "story_keys": [
-    "higher",
-    "market",
-    "point"
-   ],
-   "date": "2026-11-05",
-   "news_at": "2026-11-05T11:52:45+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
-    "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
-    "Markets surge for sixth day; Sensex jumps 2,009 points"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "बीएसई सेंसेक्स",
-   "reports": [
-    {
-     "title": "Markets surge for sixth day; Sensex jumps 2,009 points",
-     "url": "https://www.thehindu.com/business/markets/markets-surge-for-sixth-day-and-sensex-jumps-many-points/article71669748.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T11:52:45+00:00"
-    },
-    {
-     "title": "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
-     "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-5-november-us-iran-war-oil-prices-12285301#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T09:57:27+00:00"
-    },
-    {
-     "title": "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/diwali-bonanza-on-dalal-street-bse-sensex-nse-nifty50-rise-on-november-5-2026-top-reasons-why-stock-market-is-rising/articleshow/135559225.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T05:01:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -560,12 +566,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -603,9 +607,13 @@
     "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Supreme Court asks Allahabad High Court to hear Azam Khan's plea against ED arrest on November 16"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
@@ -938,9 +946,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
+   "hindi_owners": []
   },
   {
    "qid": "Q172753",
@@ -976,90 +982,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
-   "phrase": "Trinamool MLAs",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
-   "story_keys": [
-    "disqualification",
-    "plea",
-    "rebel"
-   ],
-   "date": "2026-11-05",
-   "news_at": "2026-11-05T10:12:00+00:00",
-   "owners": [
-    "NDTV",
-    "The Hindu Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
-    "Supreme Court Refuses To Hear Plea On Trinamool Rebel MLAs' Disqualification",
-    "‘Approach Calcutta HC’: SC declines plea seeking speedy disqualification of 10 rebel TMC MLAs"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
-   "reports": [
-    {
-     "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
-     "url": "https://www.thehindu.com/news/national/west-bengal/supreme-court-asks-calcutta-high-court-to-decide-plea-for-direction-on-disqualification-of-rebel-trinamool-mlas/article71669372.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T10:12:00+00:00"
-    },
-    {
-     "title": "‘Approach Calcutta HC’: SC declines plea seeking speedy disqualification of 10 rebel TMC MLAs",
-     "url": "https://www.hindustantimes.com/india-news/expeditiously-decide-plea-on-disqualification-of-rebel-tmc-mlas-sc-tells-calcutta-hc-101793870636232.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T09:42:23+00:00"
-    },
-    {
-     "title": "Supreme Court Refuses To Hear Plea On Trinamool Rebel MLAs' Disqualification",
-     "url": "https://www.ndtv.com/india-news/sc-asks-calcutta-hc-to-decide-plea-for-direction-on-disqualification-of-rebel-tmc-mlas-12286753#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T09:30:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:The Hindu Group",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261105-Q796994",
    "qid": "Q796994",
    "title": "BSE SENSEX",
@@ -1082,14 +1004,15 @@
     "The Hindu Group",
     "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
     "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
-    "Markets surge for sixth day; Sensex jumps 2,009 points"
+    "Markets surge for sixth day; Sensex jumps 2,009 points",
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1134,14 +1057,105 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
+   "phrase": "Trinamool MLAs",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
+   "story_keys": [
+    "disqualification",
+    "plea",
+    "rebel"
+   ],
+   "date": "2026-11-05",
+   "news_at": "2026-11-05T10:12:00+00:00",
+   "owners": [
+    "NDTV",
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
+    "Supreme Court Refuses To Hear Plea On Trinamool Rebel MLAs' Disqualification",
+    "‘Approach Calcutta HC’: SC declines plea seeking speedy disqualification of 10 rebel TMC MLAs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
+     "url": "https://www.thehindu.com/news/national/west-bengal/supreme-court-asks-calcutta-high-court-to-decide-plea-for-direction-on-disqualification-of-rebel-trinamool-mlas/article71669372.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T10:12:00+00:00"
+    },
+    {
+     "title": "‘Approach Calcutta HC’: SC declines plea seeking speedy disqualification of 10 rebel TMC MLAs",
+     "url": "https://www.hindustantimes.com/india-news/expeditiously-decide-plea-on-disqualification-of-rebel-tmc-mlas-sc-tells-calcutta-hc-101793870636232.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:42:23+00:00"
+    },
+    {
+     "title": "Supreme Court Refuses To Hear Plea On Trinamool Rebel MLAs' Disqualification",
+     "url": "https://www.ndtv.com/india-news/sc-asks-calcutta-hc-to-decide-plea-for-direction-on-disqualification-of-rebel-tmc-mlas-12286753#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:30:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NDTV",
+    "outlet:The Hindu Group",
+    "outlet:HT Media"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Supreme Court asks Allahabad High Court to hear Azam Khan's plea against ED arrest on November 16"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q3181541",
@@ -1390,45 +1404,12 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q5370928",
-   "title": "Emerson (footballer, born July 1980)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-IN:alexandra eala"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5370928",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
   }
  ],
  "notes": [
   "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (816 views): 0 owners reported new news on Amit",
-  "outlets: 1299 headlines from 30 feeds (18 owners), 21 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 2 kh- stories (on): kh-20261105-Q796994, kh-20261105-Q912899; dropped: explainer 'Dublin-Rome Flight Diverted To Military Air Base In France O': no name to tell it by; explainer US Congress Trump: fewer than 3 owners' headlines name it and the story; explainer MSRTC: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1305 headlines from 30 feeds (18 owners), 19 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 2 kh- stories (on): kh-20261105-Q796994, kh-20261105-Q141496943; dropped: explainer 'Dublin-Rome Flight Diverted To Military Air Base In France O': no name to tell it by; explainer MSRTC: fewer than 3 owners' headlines name it and the story; explainer Karnataka’s Nandini: no Wikipedia article that can be its centre",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1437,10 +1418,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1299,
+  "headlines": 1305,
   "feeds": 30,
   "owners": 18,
-  "matched": 21,
+  "matched": 19,
   "corroborated": 5
  },
  "emerging": [
@@ -1572,18 +1553,17 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 9,
-    "IN-hi": 3,
-    "IN-nation": 4,
+    "IN": 7,
+    "IN-nation": 1,
     "IN-hi-nation": 1
    },
-   "top_score": 1.755,
+   "top_score": 1.3,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "दिल्ली के चावड़ी बाजार में इमारत ढहने से दो लोगों की मौत, मौके पर पहुंचीं CM रेखा गुप्ता; JE और AE सस्पेंड",
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
@@ -1613,14 +1593,15 @@
     "The Hindu Group",
     "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Stock Market Highlights, Sensex Today: Sensex Closes 2,000 Points Higher As Oil Eases After Democrats Sweep Congress",
     "Sensex settles over 2,000 points higher, investors end Rs 8 lakh cr richer: Top reasons for rally",
-    "Markets surge for sixth day; Sensex jumps 2,009 points"
+    "Markets surge for sixth day; Sensex jumps 2,009 points",
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1665,20 +1646,25 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Diwali bonanza on Dalal Street: Investors add over Rs 6.9 lakh crore; top reasons behind Sensex, Nifty rally"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -1708,12 +1694,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -1751,9 +1735,13 @@
     "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Supreme Court asks Allahabad High Court to hear Azam Khan's plea against ED arrest on November 16"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
