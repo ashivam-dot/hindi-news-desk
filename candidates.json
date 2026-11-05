@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T12:30:51+00:00",
+ "at": "2026-11-05T12:49:29+00:00",
  "trending": [
   {
    "qid": "Q4834146",
@@ -8,7 +8,7 @@
    "views": 0,
    "traffic": 0,
    "news": 500000,
-   "news_at": "2026-11-05T12:31:53.066497+00:00",
+   "news_at": "2026-11-05T12:50:05.494474+00:00",
    "headlines": [
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
@@ -50,7 +50,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T12:31:53.066497+00:00"
+     "at": "2026-11-05T12:50:05.494474+00:00"
     },
     {
      "title": "Dr Jitendra Singh to formally Launch Nationwide Digital Life Certificate Campaign 5",
@@ -60,7 +60,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T12:31:53.066497+00:00"
+     "at": "2026-11-05T12:50:05.494474+00:00"
     },
     {
      "title": "US Donors, Pakistan Funding CJP? Jitendra Singh Names Abhijeet Dipke & Ashutosh Ranka | News18",
@@ -128,12 +128,56 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 6
+    "IN": 10,
+    "IN-nation": 5
    },
-   "top_score": 0.45,
+   "top_score": 0.79,
    "top_headlines": [
     "Panchkula school assault case: 8-year-old granted bail; parents barred from giving him mobile phone",
     "'We Don't Appreciate Such Arm-Twisting': Supreme Court Stays Criminal Contempt Proceedings Against Punjab ..."
+   ],
+   "hindi_owners": []
+  },
+  {
+   "qid": null,
+   "title": "November 2026 Florida floods",
+   "fame": 250000,
+   "views": 0,
+   "traffic": 0,
+   "news": 250000,
+   "news_at": "2026-11-05T03:35:53+00:00",
+   "headlines": [
+    "Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida",
+    "The Hindu profile on Democrat Pia Dandiya who won from Florida"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida",
+    "google-news:The Hindu profile on Democrat Pia Dandiya who won from Florida"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-November_2026_Florida_floods",
+   "kind": "incident",
+   "category": "flood",
+   "date": "2026-11-04",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 6,
+    "IN-nation": 2
+   },
+   "top_score": 1.035,
+   "top_headlines": [
+    "The Hindu profile on Democrat Pia Dandiya who won from Florida",
+    "Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida"
    ],
    "hindi_owners": []
   },
@@ -265,8 +309,9 @@
    "news": 175000,
    "news_at": "2026-11-05T06:34:46+00:00",
    "headlines": [
-    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
-    "Hubert Aiwanger, prominent German politician, found dead in Berlin hotel"
+    "Bavarian politician Aiwanger found dead in Berlin hotel",
+    "Hubert Aiwanger, prominent German politician, found dead in Berlin hotel",
+    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -278,8 +323,9 @@
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-11-04",
-    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+    "google-news:Bavarian politician Aiwanger found dead in Berlin hotel",
     "google-news:Hubert Aiwanger, prominent German politician, found dead in Berlin hotel",
+    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
     "outlet:Guardian Media Group",
     "outlet:Deutsche Welle"
    ],
@@ -316,46 +362,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": null,
-   "title": "November 2026 Florida floods",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-05T03:35:53+00:00",
-   "headlines": [
-    "The Hindu profile on Democrat Pia Dandiya who won from Florida"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:The Hindu profile on Democrat Pia Dandiya who won from Florida"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-November_2026_Florida_floods",
-   "kind": "incident",
-   "category": "flood",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 9,
-    "IN-nation": 3
-   },
-   "top_score": 0.87,
-   "top_headlines": [
-    "The Hindu profile on Democrat Pia Dandiya who won from Florida"
-   ],
    "hindi_owners": []
   },
   {
@@ -486,13 +492,14 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 7,
-    "IN-nation": 1,
+    "IN-hi": 3,
+    "IN-nation": 6,
     "IN-hi-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 1.425,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
+    "दिल्ली के चावड़ी बाजार में इमारत ढहने से दो लोगों की मौत, मौके पर पहुंचीं CM रेखा गुप्ता; JE और AE सस्पेंड",
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
@@ -533,10 +540,10 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261105-Q141496943",
-   "qid": "Q141496943",
-   "title": "Democratic Trinamool Congress",
-   "name": "Democratic Trinamool Congress",
+   "id": "kh-20261105-Q912899",
+   "qid": "Q912899",
+   "title": "Trinamool Congress",
+   "name": "All India Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -566,10 +573,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "तृणमूल कांग्रेस",
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -916,68 +925,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q5370928",
-   "title": "Emerson (footballer, born July 1980)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-IN:alexandra eala"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5370928",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-10-27",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q172753",
-   "title": "Alan Jones (racing driver)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-IN:alan jones"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q172753",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-05",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   }
  ],
  "candidates": [
@@ -1072,10 +1019,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261105-Q141496943",
-   "qid": "Q141496943",
-   "title": "Democratic Trinamool Congress",
-   "name": "Democratic Trinamool Congress",
+   "id": "kh-20261105-Q912899",
+   "qid": "Q912899",
+   "title": "Trinamool Congress",
+   "name": "All India Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -1105,10 +1052,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "तृणमूल कांग्रेस",
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -1331,50 +1280,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q172753",
-   "title": "Alan Jones (racing driver)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-IN:alan jones"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q172753",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-05",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "orbitwire": {
-    "qid": "Q172753",
-    "status": "published",
-    "orbitwire_id": "wk-Q172753",
-    "orbitwire_published_at": "2026-11-05T03:09:15+00:00",
-    "orbitwire_url": "https://www.youtube.com/shorts/kNp864TpRds",
-    "orbitwire_title": "Alan Jones, 1980 Formula One World Champion, Dies at 80",
-    "high_profile": "the channel is quiet and this is an India story",
-    "india": "an India story",
-    "angle": "india"
-   },
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q468843",
    "title": "Dolores Huerta",
    "fame": 16305,
@@ -1407,10 +1312,10 @@
   }
  ],
  "notes": [
-  "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (816 views): 0 owners reported new news on Amit",
-  "outlets: 1305 headlines from 30 feeds (18 owners), 19 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 2 kh- stories (on): kh-20261105-Q796994, kh-20261105-Q141496943; dropped: explainer 'Dublin-Rome Flight Diverted To Military Air Base In France O': no name to tell it by; explainer MSRTC: fewer than 3 owners' headlines name it and the story; explainer Karnataka’s Nandini: no Wikipedia article that can be its centre",
-  "skip wk-Q1633044: Orbitwire published (wk-Q1633044) and no India connection: not told again in Hindi",
+  "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (816 views): 0 owners reported new news on Amit",
+  "outlets: 1306 headlines from 30 feeds (18 owners), 18 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 2 kh- stories (on): kh-20261105-Q796994, kh-20261105-Q912899; dropped: explainer 'Dublin-Rome Flight Diverted To Military Air Base In France O': no name to tell it by; explainer MSRTC: fewer than 3 owners' headlines name it and the story; explainer Karnataka’s Nandini: no Wikipedia article that can be its centre",
+  "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -1418,10 +1323,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1305,
+  "headlines": 1306,
   "feeds": 30,
   "owners": 18,
-  "matched": 19,
+  "matched": 18,
   "corroborated": 5
  },
  "emerging": [
@@ -1553,13 +1458,14 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 7,
-    "IN-nation": 1,
+    "IN-hi": 3,
+    "IN-nation": 6,
     "IN-hi-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 1.425,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
+    "दिल्ली के चावड़ी बाजार में इमारत ढहने से दो लोगों की मौत, मौके पर पहुंचीं CM रेखा गुप्ता; JE और AE सस्पेंड",
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
@@ -1661,10 +1567,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261105-Q141496943",
-   "qid": "Q141496943",
-   "title": "Democratic Trinamool Congress",
-   "name": "Democratic Trinamool Congress",
+   "id": "kh-20261105-Q912899",
+   "qid": "Q912899",
+   "title": "Trinamool Congress",
+   "name": "All India Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -1694,10 +1600,12 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "तृणमूल कांग्रेस",
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
