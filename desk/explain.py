@@ -300,6 +300,13 @@ def indian(ent: dict) -> bool:
                                 for pid in INDIA_PIDS for x in wiki.claims(e, pid))
 
 
+def abroad(ent: dict) -> bool:
+    """The item is another country's: Wikidata gives it a country or citizenship and none is India. An item with
+    neither (a brand-new officer's page) is not judged abroad."""
+    countries = [x["value"] for pid in ("P17", "P27") for x in wiki.claims(ent, pid)]
+    return bool(countries) and INDIA not in countries and not indian(ent)
+
+
 def names_article(article: str, key: str, name: str) -> bool:
     """The article is about the name the headlines use: it contains the name's stem, or the name is the article's
     acronym ("RBI" for "Reserve Bank of India")."""
@@ -574,7 +581,7 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
                     "hindi_headlines": list(dict.fromkeys([i["title"] for i in hi_rows] + lead_hi))[:5],
                     "hindi_news": len(hi_rows) + len(lead_hi), "geos": ["IN"] if home else [],
                     "region": "india" if home else "world", "india_link": home or bool(hi_rows or lead_hi),
-                    "label_hi": label_hi,
+                    "abroad": not home and abroad(ent), "label_hi": label_hi,
                     "reports": [outlets.compact(i) for i in ranked][:8],
                     "via": [f"outlet:{o}" for o in who] + [f"google-news:{t}" for t in (lead_en + lead_hi)[:3]]})
     return sorted(out, key=lambda c: -c["fame"]), notes

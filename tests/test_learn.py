@@ -43,6 +43,19 @@ def test_lifts_are_shrunk_and_bounded():
     assert learn.learn(mild)["lifts"]["category:earthquake"]["lift"] == pytest.approx(math.exp(gap * 0.5), abs=1e-3)
 
 
+def test_many_shorts_widen_the_lift_range():
+    # Under 10 Shorts the old bounds hold; 10+ and 20+ Shorts with a big, steady gap may move the ranking further.
+    for n, (low, high) in ((4, learn.LIFT_RANGE), (12, (0.6, 1.7)), (24, (0.5, 2.0))):
+        vids = [_video(i, 10_000, "politics") for i in range(n)] + [_video(100 + i, 10, "weather") for i in range(n)]
+        lifts = learn.learn(vids)["lifts"]
+        assert learn.lift_range(n) == (low, high)
+        assert lifts["category:politics"]["lift"] == high and lifts["category:weather"]["lift"] == low
+    ledger.save("performance", {"at": "y", "learned": {"lifts": {
+        "category:weather": {"lift": 0.5}, "region:world": {"lift": 0.5}, "lane:other": {"lift": 0.5}}}})
+    assert learn.factor({"category": "weather", "region": "world", "lane": "other"}) == learn.FACTOR_RANGE[0]
+    assert learn.report({"at": "y", "learned": {"lifts": {}}, "videos": {}}).count("from 20 Shorts") == 1
+
+
 def test_factor_defaults_to_one_and_steers_priority():
     cand = {"category": "earthquake", "region": "india", "fame": 1000, "kind": "earthquake",
             "date": AT.isoformat()}

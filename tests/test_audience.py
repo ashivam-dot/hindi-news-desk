@@ -27,7 +27,8 @@ def test_a_world_statement_needs_an_india_connection_but_world_deaths_and_incide
     us_vote = {"id": "wk-Q9", "kind": "incident", "category": "politics", "region": "world", "fame": 900_000,
                "title": "2026 United States elections", "top": {}, "top_score": 0, "news_at": NOW.isoformat()}
     assert "no India connection" in plan.unpopular(us_vote, NOW)
-    # Hindi newsrooms leading with it (the explainer's india_link), or its headlines naming India, connect it.
+    # Hindi newsrooms leading with it (the explainer's india_link), or its headlines naming India, connect it while
+    # Wikidata gives its centre no other country (see the abroad test below).
     imran = explainer(top={"IN": 5, "IN-hi-nation": 10}, top_score=1.08, india_link=True)
     assert plan.unpopular(imran, NOW) is None
     gulf = explainer(story="UAE: Indian passengers stranded as Gulf airspace shuts", top={"IN": 6}, top_score=0.75)
@@ -54,6 +55,53 @@ def test_a_world_statement_needs_an_india_connection_but_world_deaths_and_incide
     swift = explainer(category="entertainment", story="Taylor Swift announces new album", top={"IN": 30},
                       top_score=0.3)
     assert not plan.foreign_only(swift) and "top-10 story" in plan.unpopular(swift, NOW)
+
+
+def test_an_explainer_centred_abroad_is_foreign_however_hindi_newsrooms_carry_it(monkeypatch):
+    # 2026-11-04: the US midterms went out three times (11-18 views) on Hindi coverage and "has India link".
+    sayed = explainer(category="news", story="US gets its first Muslim Senator: Abdul El-Sayed wins, has India link",
+                      top={"IN": 4, "IN-hi": 6}, top_score=0.9, india_link=True, abroad=True)
+    assert plan.foreign_only(sayed) and "no India connection" in plan.unpopular(sayed, NOW)
+    assert not plan.foreign_only(sayed | {"abroad": False})  # a centre Wikidata gives no country: the old test
+    # Abroad, an Indian place or leader in its own headlines still makes it India's story.
+    assert not plan.foreign_only(sayed | {"story": "Marco Rubio visits Reliance refinery in Jamnagar"})
+    assert not plan.foreign_only(sayed | {"story": "Imran Khan moves Bombay High Court"})
+    # A war Hindi newsrooms run, sport and film, air incidents and a case's angle keep their own rules.
+    for kept in (sayed | {"story": "Ukraine war: Russia strikes Kyiv", "hindi_owners": ["Aaj Tak", "ABP"]},
+                 sayed | {"category": "sport"}, sayed | {"category": "aviation"}, sayed | {"case": "a case"}):
+        assert not plan.foreign_only(kept), kept["category"]
+
+    def ent(*countries):
+        return {"claims": {"P17": [{"mainsnak": {"datavalue": {"value": {"id": c}}}} for c in countries],
+                           "P31": [{"mainsnak": {"datavalue": {"value": {"id": "Q35657"}}}}]}}
+    monkeypatch.setattr(explain.wiki, "entities", lambda ids: {})
+    assert explain.abroad(ent("Q30")) and not explain.abroad(ent("Q668")) and not explain.abroad(ent("Q30", "Q668"))
+    assert not explain.abroad({"claims": {}})  # nothing on Wikidata yet (a new officer's page) is not abroad
+
+
+def test_one_story_told_from_two_centres_goes_out_once():
+    told = {"id": "kh-20261104-Q1166", "article": "Michigan", "qid": "Q1166",
+            "published_at": (NOW - timedelta(hours=5)).isoformat(),
+            "headlines": ["US gets its first Muslim Senator: Abdul El-Sayed wins from Michigan, has India link",
+                          "Midterms: Abdul El-Sayed, Mike Rogers face off for Michigan Senate seat",
+                          "Abdul El-Sayed becomes US's 1st Muslim senator after Michigan win"]}
+    sayed = {"id": "kh-20261104-Q25752879", "kind": "explainer", "qid": "Q25752879", "title": "Abdul El-Sayed",
+             "name": "Abdul El-Sayed", "headlines": ["Abdul El-Sayed set to become first Muslim senator"]}
+    assert plan.told_before(sayed, [told], NOW)
+    assert not plan.told_before(sayed, [told | {"published_at": (NOW - timedelta(hours=30)).isoformat()}], NOW)
+    # The other way round, when the person went out first and the place's story comes next.
+    person = told | {"id": "kh-20261104-Q25752879", "article": "Abdul El-Sayed", "qid": "Q25752879",
+                     "headlines": ["Abdul El-Sayed set to become first Muslim senator"]}
+    place = {"id": "kh-20261104-Q1166", "kind": "explainer", "qid": "Q1166", "title": "Michigan", "name": "Michigan",
+             "headlines": told["headlines"]}
+    assert plan.told_before(place, [person], NOW)
+    # One-word names (a city, a party) and an update or part told on purpose are never matched this way.
+    delhi = told | {"article": "Delhi", "headlines": ["Delhi AQI very poor", "Delhi air turns severe"]}
+    metro = {"id": "kh-20261104-Q5", "kind": "explainer", "qid": "Q5", "name": "Delhi Metro",
+             "headlines": ["Delhi Metro opens new line", "Delhi Metro fares unchanged"]}
+    assert not plan.told_before(metro, [delhi], NOW)
+    assert not plan.told_before(sayed | {"id": "kh-20261104-Q25752879-update"}, [told], NOW)
+    assert not plan.told_before(sayed | {"id": "kh-20261104-Q25752879-p2", "part": 2}, [told], NOW)
 
 
 def test_a_new_storys_photos_show_its_scene_not_the_citys_landmarks():

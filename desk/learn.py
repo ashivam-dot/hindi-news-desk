@@ -35,6 +35,12 @@ SCORE_AT_H = 24.0
 MIN_SAMPLES = 4
 PRIOR = 4.0
 LIFT_RANGE = (0.75, 1.35)
+# A group with many scored Shorts may move the ranking further (2026-11-05): at 0.75-1.35 "lane:other" (24 Shorts,
+# typically 20 views against a 52 baseline), "region:world" (39, 30 views) and "lane:rajneeti" (12, 162 views) were
+# all pinned at a bound, so a famous US-midterms story still outranked India's political rows and went out at 11-18
+# views. Under 10 Shorts the old range holds (one lucky story never steers the desk).
+WIDER_RANGES = ((20, (0.5, 2.0)), (10, (0.6, 1.7)))
+FACTOR_RANGE = (0.4, 2.5)
 FEATURES = ("category", "region", "lane")
 # Sensitive cases are never the reason to scale (audit/kyun-hua-shorts-strategy.md §2): their lift stops at 1.
 NEVER_SCALED = ("lane:sensitive",)
@@ -139,10 +145,16 @@ def learn(videos: list[dict]) -> dict:
             if (held := retention.get(f"{feature}:{value}")) is not None:
                 diff = (1 - RETENTION_WEIGHT) * diff + RETENTION_WEIGHT * held["diff"]
                 entry |= {"n_retention": held["n"], "typical_view_pct": held["typical"]}
-            top = 1.0 if f"{feature}:{value}" in NEVER_SCALED else LIFT_RANGE[1]
-            lift = min(max(math.exp(diff), LIFT_RANGE[0]), top)
+            low, high = lift_range(n)
+            top = 1.0 if f"{feature}:{value}" in NEVER_SCALED else high
+            lift = min(max(math.exp(diff), low), top)
             out["lifts"][f"{feature}:{value}"] = {"n": n, "lift": round(lift, 3)} | entry
     return out
+
+
+def lift_range(n: int) -> tuple[float, float]:
+    """The bounds a group of n scored Shorts may move its lift within (WIDER_RANGES, else LIFT_RANGE)."""
+    return next((r for least, r in WIDER_RANGES if n >= least), LIFT_RANGE)
 
 
 def _retention(scored: list[dict]) -> tuple[float | None, dict]:
@@ -175,7 +187,7 @@ def factor(cand: dict) -> float:
     f = 1.0
     for feature in FEATURES:
         f *= _cache["lifts"].get(f"{feature}:{cand.get(feature)}", {}).get("lift", 1.0)
-    return min(max(f, LIFT_RANGE[0]), LIFT_RANGE[1])
+    return min(max(f, FACTOR_RANGE[0]), FACTOR_RANGE[1])
 
 
 def report(perf: dict) -> str:
@@ -183,7 +195,8 @@ def report(perf: dict) -> str:
     lines = ["# What this channel's own numbers say", "",
              f"Updated {perf.get('at')}. Scored Shorts (views at {SCORE_AT_H:.0f} h): {learned.get('scored', 0)}. "
              f"A lift needs {MIN_SAMPLES} scored Shorts in a group; it is shrunk toward 1 and kept within "
-             f"{LIFT_RANGE[0]}-{LIFT_RANGE[1]}.", ""]
+             f"{LIFT_RANGE[0]}-{LIFT_RANGE[1]} (" + ", ".join(f"{lo}-{hi} from {least} Shorts"
+                                                         for least, (lo, hi) in WIDER_RANGES) + ").", ""]
     if learned.get("baseline_views_24h") is not None:
         lines.append(f"Baseline: a typical Short has {learned['baseline_views_24h']} views at 24 h.")
     if learned.get("baseline_view_pct") is not None:

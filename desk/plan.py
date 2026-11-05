@@ -125,6 +125,16 @@ AD_FRIENDLY_WORDS = re.compile(
 # disasters drew 99-310 against a 41 baseline (Eva Marie Saint 108, RJ Mitte 145, flydubai about 282-310, Hurricane
 # Isaias 104; state branch, 2026-10-21), so those kinds and a case's angles are always eligible. A sport or
 # entertainment explainer (explain.TOP_ONLY) is no statement: it is told only as a top-10 story anyway.
+# ABROAD (2026-11-05): an explainer whose centre Wikidata puts in another country (explain.abroad) is India's story
+# only when its own English headlines name an Indian place, leader or institution. Hindi newsrooms carrying it (the
+# explainer's india_link) or the bare word "India" ("Abdul El-Sayed wins Michigan, has India link") is not enough:
+# the US midterms (11-16 views), Lula (5), the Pope (5-64), Starlink (3-55), the White House (6-16) and the IMF (27)
+# went out on that, against a 52 baseline, while India's political rows drew 162-3,600. Actor Imran Khan (a US citizen
+# on Wikidata) still qualifies through the Bombay High Court. A centre with no country on Wikidata (a new officer's
+# page: Ashutosh Dikshit 173, Kumar Rajiv Ranjan 138) keeps the old test. Wars, big incidents, sport and film keep
+# their own rules above.
+INDIA_WORD = {"India", "Indian", "Indians", "भारत", "भारतीय"}
+BOMBAY = re.compile(r"\bBombay\b")
 WORLD_SKIPPED = ("politics", "diplomacy", "world")
 WORLD_KEPT = ("death", "aviation", "cyclone", "disaster", "earthquake", "flood", "accident", "rail", "weather")
 # Each story's lane (2026-10-22, audit/kyun-hua-shorts-strategy.md §2), a label the scorecard and learn.py judge by,
@@ -480,7 +490,18 @@ def foreign_only(cand: dict) -> bool:
         return False
     if WAR.search(ad_text(cand)) and (len(cand.get("hindi_owners") or []) >= WAR_HINDI_OWNERS or big_incident(cand)):
         return False
+    if cand.get("kind") == "explainer" and cand.get("abroad"):
+        return not india_placed(cand)
     return not orbitwire.india_connection(cand)
+
+
+def india_placed(cand: dict) -> bool:
+    """The story's own English headlines name an Indian place, leader or institution (orbitwire.INDIA_TEXT), not
+    just the word India or Indian (see ABROAD)."""
+    text = orbitwire.NOT_INDIA.sub(" ", " ".join([cand.get("title") or "", cand.get("story") or ""] + [
+        h for k in ("headlines", "top_headlines") for h in cand.get(k) or []]))
+    found = [m.group(0) for m in orbitwire.INDIA_TEXT.finditer(text)] + BOMBAY.findall(text)
+    return any(m not in INDIA_WORD for m in found)
 
 
 def audience_of(cand: dict) -> str:
@@ -600,6 +621,8 @@ def told_before(cand: dict, rows: list[dict], at: datetime) -> bool:
             if cand["id"].startswith("kh-") and cand.get("qid") and r.get("qid") == cand["qid"] \
                     and age < timedelta(hours=EXPLAIN_REPEAT_H):
                 return True
+            if age < timedelta(hours=EXPLAIN_REPEAT_H) and same_names(cand, r):
+                return True
             continue
         if not (r["id"].startswith("nw-") or cand["id"].startswith("nw-")):
             continue  # stories told from Wikipedia on both sides are matched by their ids already
@@ -616,6 +639,26 @@ def told_before(cand: dict, rows: list[dict], at: datetime) -> bool:
         if title and any(news.reverse(h, [news.pool_item(title)]) for h in heads):
             return True
     return False
+
+
+def _mostly_named(name: str | None, headlines: list[str]) -> bool:
+    """A name of two or more words is in at least half of the headlines (one-word names are places and parties)."""
+    if not name or len(name.split()) < 2 or not headlines:
+        return False
+    key = name.casefold()
+    return sum(key in h.casefold() for h in headlines) * 2 >= len(headlines)
+
+
+def same_names(cand: dict, row: dict) -> bool:
+    """One explainer story told from two centres: Abdul El-Sayed (Q25752879) went out five hours after the same
+    win told from Michigan (Q1166), whose every headline named him (2026-11-04, 11 and 16 views). A follow-up part,
+    an update or a case's angle tells it again on purpose."""
+    if not cand["id"].startswith("kh-") or not row["id"].startswith("kh-") or cand.get("case") \
+            or cand["id"].endswith(("-update",)) or SUFFIX.search(cand["id"]) or cand.get("part"):
+        return False
+    name = cand.get("name") or cand.get("title")
+    return _mostly_named(name, row.get("headlines") or []) \
+        or _mostly_named(row.get("article"), cand.get("headlines") or [])
 
 
 def in_window(at: datetime) -> bool:
