@@ -1,13 +1,13 @@
 {
- "at": "2026-11-05T07:45:01+00:00",
+ "at": "2026-11-05T08:00:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 17 trending",
+  "watch: 11 candidates from 19 trending",
   "revisit Q2745305 (9345 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3140 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2130 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1088 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1228 headlines from 30 feeds (18 owners), 12 matched to articles, 3 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 1 kh- stories (on): kh-20261105-Q95; dropped: explainer Hormuz: fewer than 3 owners' headlines name it and the story; explainer Diwali / AQI AIIMS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1225 headlines from 30 feeds (18 owners), 15 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 3 kh- stories (on): kh-20261105-Q1185, kh-20261105-Q95, kh-20261105-Q392; dropped: explainer Hormuz: fewer than 3 owners' headlines name it and the story; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer MM Somaya: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
@@ -15,8 +15,17 @@
   "drop wk-Q3181541: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q312472: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wp-2026_Kedartal_avalanche: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261105-Q392: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q77206: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q7688878: 68 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261105-Q1185; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "published kh-20261105-Q1185: https://www.youtube.com/shorts/P4TyCi5om0w",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "P4TyCi5om0w",
+  "url": "https://www.youtube.com/shorts/P4TyCi5om0w",
+  "youtube_title": "कर्नाटक में नंदिनी दूध और दही के दाम बढ़े #shorts #karnataka",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
