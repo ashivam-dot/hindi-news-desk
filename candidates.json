@@ -1,20 +1,20 @@
 {
- "at": "2026-11-05T11:31:59+00:00",
+ "at": "2026-11-05T11:39:57+00:00",
  "trending": [
   {
    "qid": "Q4834146",
    "title": "B. P. Singh",
-   "fame": 375000,
+   "fame": 500000,
    "views": 0,
    "traffic": 0,
-   "news": 375000,
-   "news_at": "2026-11-05T11:32:58.473202+00:00",
+   "news": 500000,
+   "news_at": "2026-11-05T11:40:37.543041+00:00",
    "headlines": [
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
+    "Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "India Pioneers Space Debris Removal; Union Minister Dr. Jitendra Singh Announces Vision of Debris-Free Space by 2030",
-    "US Donors, Pakistan Funding CJP? Jitendra Singh Names Abhijeet Dipke & Ashutosh Ranka | News18",
-    "Hardeep Singh Puri elected unopposed to Rajya Sabha from Madhya Pradesh"
+    "US Donors, Pakistan Funding CJP? Jitendra Singh Names Abhijeet Dipke & Ashutosh Ranka | News18"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -27,7 +27,7 @@
    "via": [
     "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
-    "google-news:India Pioneers Space Debris Removal; Union Minister Dr. Jitendra Singh Announces Vision of Debris-Free Space by 2030",
+    "google-news:Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "outlet:Government of India",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
@@ -50,7 +50,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T11:32:58.473202+00:00"
+     "at": "2026-11-05T11:40:37.543041+00:00"
     },
     {
      "title": "Dr Jitendra Singh to formally Launch Nationwide Digital Life Certificate Campaign 5",
@@ -60,7 +60,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-05T11:32:58.473202+00:00"
+     "at": "2026-11-05T11:40:37.543041+00:00"
     },
     {
      "title": "US Donors, Pakistan Funding CJP? Jitendra Singh Names Abhijeet Dipke & Ashutosh Ranka | News18",
@@ -128,10 +128,12 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 12
+    "IN": 10,
+    "IN-nation": 6
    },
-   "top_score": 0.27,
+   "top_score": 0.775,
    "top_headlines": [
+    "Panchkula school assault case: 8-year-old granted bail; parents barred from giving him mobile phone",
     "'We Don't Appreciate Such Arm-Twisting': Supreme Court Stays Criminal Contempt Proceedings Against Punjab ...",
     "Foreign Donors And Pak Links: Centre Accuses CJP Of 'Anti-India' Funding"
    ],
@@ -140,28 +142,26 @@
   {
    "qid": null,
    "title": "November 2026 Florida floods",
-   "fame": 250100,
+   "fame": 250000,
    "views": 0,
-   "traffic": 100,
+   "traffic": 0,
    "news": 250000,
-   "news_at": "2026-11-05T03:35:53+00:00",
+   "news_at": "2026-11-04T21:02:00+00:00",
    "headlines": [
     "Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida",
-    "The Hindu profile on Democrat Pia Dandiya who won from Florida"
+    "From Jaipur roots to Florida victory, Pia Dandiya keeps family ties close"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
+   "region": "india",
    "india_link": true,
    "geos": [
-    "IN",
-    "US"
+    "IN"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-US:fl lottery",
     "google-news:Pia Dandiya, first-generation Indian-American, wins U.S. House of Representatives seat from Florida",
-    "google-news:The Hindu profile on Democrat Pia Dandiya who won from Florida"
+    "google-news:From Jaipur roots to Florida victory, Pia Dandiya keeps family ties close"
    ],
    "owners": [],
    "reports": [],
@@ -400,16 +400,16 @@
    "article": null,
    "top": {
     "IN": 8,
-    "IN-hi": 7,
     "IN-nation": 4,
     "IN-hi-nation": 1
    },
-   "top_score": 1.58,
+   "top_score": 1.205,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
+    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
@@ -526,10 +526,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -559,12 +559,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -606,8 +604,8 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q16296",
@@ -806,57 +804,6 @@
    "hindi_owners": []
   },
   {
-   "qid": null,
-   "title": "2026 Kedartal avalanche",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-04T13:09:05+00:00",
-   "headlines": [
-    "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
-    "outlet:HT Media"
-   ],
-   "owners": [
-    "HT Media"
-   ],
-   "reports": [
-    {
-     "title": "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
-     "url": "https://www.hindustantimes.com/india-news/uttarkashi-avalanche-rescue-teams-recover-two-more-bodies-death-toll-rises-to-4-101793797745650.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-04T13:09:05+00:00"
-    }
-   ],
-   "id": "wp-2026_Kedartal_avalanche",
-   "kind": "incident",
-   "category": "landslide",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "qid": "Q77206",
    "title": "Janosch",
    "fame": 25000,
@@ -1026,14 +973,76 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q172753",
+   "title": "Alan Jones (racing driver)",
+   "fame": 100,
+   "views": 0,
+   "traffic": 100,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:alan jones"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q172753",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-05",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   }
  ],
  "candidates": [
   {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
+   "qid": "Q3181541",
+   "title": "John Frieda",
+   "fame": 98181,
+   "views": 98181,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-04"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q3181541",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -1063,12 +1072,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -1110,39 +1117,8 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "qid": "Q3181541",
-   "title": "John Frieda",
-   "fame": 98181,
-   "views": 98181,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-04"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q3181541",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "qid": "Q312472",
@@ -1193,57 +1169,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": null,
-   "title": "2026 Kedartal avalanche",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-04T13:09:05+00:00",
-   "headlines": [
-    "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
-    "outlet:HT Media"
-   ],
-   "owners": [
-    "HT Media"
-   ],
-   "reports": [
-    {
-     "title": "Uttarkashi avalanche: Rescue teams recover two more bodies; death toll rises to 4",
-     "url": "https://www.hindustantimes.com/india-news/uttarkashi-avalanche-rescue-teams-recover-two-more-bodies-death-toll-rises-to-4-101793797745650.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-04T13:09:05+00:00"
-    }
-   ],
-   "id": "wp-2026_Kedartal_avalanche",
-   "kind": "incident",
-   "category": "landslide",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
   },
   {
    "id": "kh-20261105-Q392",
@@ -1470,17 +1395,18 @@
  ],
  "notes": [
   "revisit Q2745305 (9348 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782: already revisited today; revisit Q163225 (2130 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1099 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (816 views): 0 owners reported new news on Amit",
-  "outlets: 1282 headlines from 30 feeds (18 owners), 22 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 2 kh- stories (on): kh-20261105-Q392, kh-20261105-Q912899; dropped: explainer Karnataka's Nandini: no Wikipedia article that can be its centre; explainer Multiple: no Wikipedia article that can be its centre; explainer US Congress Trump: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1281 headlines from 30 feeds (18 owners), 22 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 2 kh- stories (on): kh-20261105-Q392, kh-20261105-Q141496943; dropped: explainer Karnataka's Nandini: no Wikipedia article that can be its centre; explainer Europe Chaos: fewer than 3 owners' headlines name it and the story; explainer US Congress Trump: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044) and no India connection: not told again in Hindi",
-  "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
+  "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
+  "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1282,
+  "headlines": 1281,
   "feeds": 30,
   "owners": 18,
   "matched": 22,
@@ -1614,16 +1540,16 @@
    "article": null,
    "top": {
     "IN": 8,
-    "IN-hi": 7,
     "IN-nation": 4,
     "IN-hi-nation": 1
    },
-   "top_score": 1.58,
+   "top_score": 1.205,
    "top_headlines": [
     "चावड़ी बाजार में हादसा, बिल्डिंग का हिस्सा गिरने से दो की मौत, JE-AE सस्पेंड",
-    "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
+    "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
@@ -1711,10 +1637,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261105-Q912899",
-   "qid": "Q912899",
-   "title": "Trinamool Congress",
-   "name": "All India Trinamool Congress",
+   "id": "kh-20261105-Q141496943",
+   "qid": "Q141496943",
+   "title": "Democratic Trinamool Congress",
+   "name": "Democratic Trinamool Congress",
    "phrase": "Trinamool MLAs",
    "person": false,
    "kind": "explainer",
@@ -1744,12 +1670,10 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "तृणमूल कांग्रेस",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
      "title": "Supreme Court asks Calcutta High Court to decide plea for direction on disqualification of rebel Trinamool MLAs",
@@ -1791,8 +1715,8 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   }
  ]
 }
