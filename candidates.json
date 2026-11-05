@@ -1,12 +1,12 @@
 {
- "at": "2026-11-05T09:00:19+00:00",
+ "at": "2026-11-05T09:15:26+00:00",
  "trending": [
   {
    "qid": "Q4834146",
    "title": "B. P. Singh",
-   "fame": 300500,
+   "fame": 300000,
    "views": 0,
-   "traffic": 500,
+   "traffic": 0,
    "news": 300000,
    "news_at": "2026-11-05T08:58:38+00:00",
    "headlines": [
@@ -24,7 +24,6 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-trends-IN:rajasthan vs himachal pradesh",
     "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "google-news:Development should be people-centric, eco-friendly says Rajendra Singh",
@@ -102,9 +101,9 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 9
+    "IN-nation": 10
    },
-   "top_score": 0.36,
+   "top_score": 0.33,
    "top_headlines": [
     "Supreme Court stays criminal contempt proceedings against Punjab Chief Secretary in DA case",
     "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case"
@@ -121,7 +120,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
+   "story": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
    "story_keys": [
     "ahead",
     "butter",
@@ -129,11 +128,12 @@
     "ghee",
     "hike",
     "milk",
+    "paneer",
     "price",
     "rise"
    ],
    "date": "2026-11-04",
-   "news_at": "2026-11-05T06:00:41+00:00",
+   "news_at": "2026-11-05T08:50:30+00:00",
    "owners": [
     "Network18",
     "The Hindu Group",
@@ -144,12 +144,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
     "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
     "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
-    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
-    "Karnataka's local jobs Bill: Why the 50:70 quota faces constitutional hurdle, industry resistance"
+    "Nandini Price Hike: Ghee, Butter And Paneer Get Costlier In Karnataka; Check New Rates | News18",
+    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
    ],
    "hindi_headlines": [
     "1.27 करोड़ महिलाओं से हुआ धोखा? 'गृह लक्ष्मी' योजना में 5000 करोड़ का घोटाला, बीजेपी का कर्नाटक सरकार पर हमला",
@@ -164,6 +164,16 @@
    "india_link": true,
    "label_hi": "कर्नाटक",
    "reports": [
+    {
+     "title": "Nandini Price Hike: Ghee, Butter And Paneer Get Costlier In Karnataka; Check New Rates | News18",
+     "url": "https://www.news18.com/videos/india/nandini-price-hike-ghee-butter-and-paneer-get-costlier-in-karnataka-check-new-rates-news18-10413855.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T08:50:30+00:00"
+    },
     {
      "title": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
      "url": "https://www.indiatoday.in/india/karnataka/story/nandini-price-hike-ghee-butter-paneer-costlier-karnataka-milk-prices-dk-shivakumar-3032705-2026-11-05?utm_source=rss",
@@ -214,12 +224,10 @@
     "google-news:Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case"
    ],
    "top": {
-    "IN": 15,
-    "IN-nation": 15
+    "IN-nation": 19
    },
-   "top_score": 0.39,
+   "top_score": 0.06,
    "top_headlines": [
-    "Dalal Street Gets A Rs 7 Lakh Crore Diwali Gift After US Election Shock",
     "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
    ],
    "hindi_owners": []
@@ -380,9 +388,9 @@
    "article": null,
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
     "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
@@ -578,6 +586,88 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261105-Q1308",
+   "qid": "Q1308",
+   "title": "Como",
+   "name": "Como",
+   "phrase": "Como",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Champions League : Lens suffer historic 9-1 defeat against Como",
+   "story_keys": [
+    "champion",
+    "historic",
+    "suffer"
+   ],
+   "date": "2026-11-05",
+   "news_at": "2026-11-05T09:02:46+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Champions League : Lens suffer historic 9-1 defeat against Como",
+    "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+    "Como hit nine in historic UCL rout, Fabregas asks players to stay humble"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "कोमो",
+   "reports": [
+    {
+     "title": "Champions League : Lens suffer historic 9-1 defeat against Como",
+     "url": "https://www.france24.com/en/tv-shows/sports/20261105-champions-league-lens-suffer-historic-9-1-defeat-against-como",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-05T08:45:02+00:00"
+    },
+    {
+     "title": "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+     "url": "https://www.aljazeera.com/sports/2026/11/5/champions-league-liverpool-suffer-3-2-loss-at-fenerbahce-como-thump-lens?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-05T07:21:01+00:00"
+    },
+    {
+     "title": "Como hit nine in historic UCL rout, Fabregas asks players to stay humble",
+     "url": "https://www.indiatoday.in/sports/football/story/cesc-fabregas-como-9-1-lens-champions-league-record-win-reaction-3032850-2026-11-05?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:02:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
@@ -1016,9 +1106,124 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q1812342",
+   "title": "John Leeson",
+   "fame": 100,
+   "views": 0,
+   "traffic": 100,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:doctor who"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1812342",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
+  {
+   "id": "kh-20261105-Q1308",
+   "qid": "Q1308",
+   "title": "Como",
+   "name": "Como",
+   "phrase": "Como",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Champions League : Lens suffer historic 9-1 defeat against Como",
+   "story_keys": [
+    "champion",
+    "historic",
+    "suffer"
+   ],
+   "date": "2026-11-05",
+   "news_at": "2026-11-05T09:02:46+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Champions League : Lens suffer historic 9-1 defeat against Como",
+    "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+    "Como hit nine in historic UCL rout, Fabregas asks players to stay humble"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "कोमो",
+   "reports": [
+    {
+     "title": "Champions League : Lens suffer historic 9-1 defeat against Como",
+     "url": "https://www.france24.com/en/tv-shows/sports/20261105-champions-league-lens-suffer-historic-9-1-defeat-against-como",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-05T08:45:02+00:00"
+    },
+    {
+     "title": "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+     "url": "https://www.aljazeera.com/sports/2026/11/5/champions-league-liverpool-suffer-3-2-loss-at-fenerbahce-como-thump-lens?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-05T07:21:01+00:00"
+    },
+    {
+     "title": "Como hit nine in historic UCL rout, Fabregas asks players to stay humble",
+     "url": "https://www.indiatoday.in/sports/football/story/cesc-fabregas-como-9-1-lens-champions-league-record-win-reaction-3032850-2026-11-05?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:02:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
   {
    "id": "kh-20261105-Q95",
    "qid": "Q95",
@@ -1455,11 +1660,44 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q1812342",
+   "title": "John Leeson",
+   "fame": 100,
+   "views": 0,
+   "traffic": 100,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:doctor who"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1812342",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-01",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "notes": [
-  "outlets: 1238 headlines from 30 feeds (18 owners), 18 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 3 kh- stories (on): kh-20261105-Q1185, kh-20261105-Q392, kh-20261105-Q95; dropped: explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Tehran: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1244 headlines from 30 feeds (18 owners), 20 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 4 kh- stories (on): kh-20261105-Q1185, kh-20261105-Q392, kh-20261105-Q95, kh-20261105-Q1308; dropped: explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer Tehran: fewer than 3 owners' headlines name it and the story; explainer Supreme Court: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1468,11 +1706,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1238,
+  "headlines": 1244,
   "feeds": 30,
   "owners": 18,
-  "matched": 18,
-  "corroborated": 6
+  "matched": 20,
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -1602,9 +1840,9 @@
    "article": null,
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
     "2 Dead, Many Feared Trapped As 3-Storey Building Collapses In Delhi's Chawri Bazaar"
    ],
@@ -1626,7 +1864,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
+   "story": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
    "story_keys": [
     "ahead",
     "butter",
@@ -1634,11 +1872,12 @@
     "ghee",
     "hike",
     "milk",
+    "paneer",
     "price",
     "rise"
    ],
    "date": "2026-11-04",
-   "news_at": "2026-11-05T06:00:41+00:00",
+   "news_at": "2026-11-05T08:50:30+00:00",
    "owners": [
     "Network18",
     "The Hindu Group",
@@ -1649,12 +1888,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
     "Karnataka Faces Triple Price Shock Ahead of Diwali: Milk, Curd, and Transport Fares Set to Rise",
     "After milk and curd, prices of ghee, butter and paneer too up in Karnataka",
     "KRRS backs milk price hike in Karnataka, questions BJP’s silence on increase in LPG and fuel prices",
-    "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
-    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat",
-    "Karnataka's local jobs Bill: Why the 50:70 quota faces constitutional hurdle, industry resistance"
+    "Nandini Price Hike: Ghee, Butter And Paneer Get Costlier In Karnataka; Check New Rates | News18",
+    "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
    ],
    "hindi_headlines": [
     "1.27 करोड़ महिलाओं से हुआ धोखा? 'गृह लक्ष्मी' योजना में 5000 करोड़ का घोटाला, बीजेपी का कर्नाटक सरकार पर हमला",
@@ -1669,6 +1908,16 @@
    "india_link": true,
    "label_hi": "कर्नाटक",
    "reports": [
+    {
+     "title": "Nandini Price Hike: Ghee, Butter And Paneer Get Costlier In Karnataka; Check New Rates | News18",
+     "url": "https://www.news18.com/videos/india/nandini-price-hike-ghee-butter-and-paneer-get-costlier-in-karnataka-check-new-rates-news18-10413855.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T08:50:30+00:00"
+    },
     {
      "title": "Karnataka's Nandini sharply hikes ghee, butter prices days after milk price rise",
      "url": "https://www.indiatoday.in/india/karnataka/story/nandini-price-hike-ghee-butter-paneer-costlier-karnataka-milk-prices-dk-shivakumar-3032705-2026-11-05?utm_source=rss",
@@ -1719,12 +1968,10 @@
     "google-news:Unlikely That BJP Protesters Would Raise “Pakistan Zindabad” Slogan: Karnataka High Court Quashes Case"
    ],
    "top": {
-    "IN": 15,
-    "IN-nation": 15
+    "IN-nation": 19
    },
-   "top_score": 0.39,
+   "top_score": 0.06,
    "top_headlines": [
-    "Dalal Street Gets A Rs 7 Lakh Crore Diwali Gift After US Election Shock",
     "Karnataka Man Catches Employee With Daughter At Home, Beats Him To Death With Bat"
    ],
    "hindi_owners": []
@@ -1884,6 +2131,88 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261105-Q1308",
+   "qid": "Q1308",
+   "title": "Como",
+   "name": "Como",
+   "phrase": "Como",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Champions League : Lens suffer historic 9-1 defeat against Como",
+   "story_keys": [
+    "champion",
+    "historic",
+    "suffer"
+   ],
+   "date": "2026-11-05",
+   "news_at": "2026-11-05T09:02:46+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Champions League : Lens suffer historic 9-1 defeat against Como",
+    "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+    "Como hit nine in historic UCL rout, Fabregas asks players to stay humble"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "label_hi": "कोमो",
+   "reports": [
+    {
+     "title": "Champions League : Lens suffer historic 9-1 defeat against Como",
+     "url": "https://www.france24.com/en/tv-shows/sports/20261105-champions-league-lens-suffer-historic-9-1-defeat-against-como",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-05T08:45:02+00:00"
+    },
+    {
+     "title": "Champions League: Liverpool suffer 3-2 loss at Fenerbahce, Como thump Lens",
+     "url": "https://www.aljazeera.com/sports/2026/11/5/champions-league-liverpool-suffer-3-2-loss-at-fenerbahce-como-thump-lens?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-05T07:21:01+00:00"
+    },
+    {
+     "title": "Como hit nine in historic UCL rout, Fabregas asks players to stay humble",
+     "url": "https://www.indiatoday.in/sports/football/story/cesc-fabregas-como-9-1-lens-champions-league-record-win-reaction-3032850-2026-11-05?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T09:02:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
