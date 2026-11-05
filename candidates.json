@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T00:44:46+00:00",
+ "at": "2026-11-05T00:59:05+00:00",
  "trending": [
   {
    "qid": "Q116992476",
@@ -98,10 +98,10 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN": 9,
-    "IN-nation": 4
+    "IN": 10,
+    "IN-nation": 5
    },
-   "top_score": 0.855,
+   "top_score": 0.79,
    "top_headlines": [
     "Chandumajras return to Akali Dal opens door for wider NDA unity in Punjab, comes close after he met Shah",
     "Madhya Pradesh High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
@@ -143,7 +143,7 @@
     "Sharad Pawar discharged from Pune hospital after complaints of chest pain, cough",
     "Rest, Supriya & I’ll look after country, PM Modi said to have told Sharad Pawar",
     "Sharad Pawar Re-Admitted To Hospital Hours After Discharge, Supriya Sule Says Further Tests Needed",
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_headlines": [
     "पुणे से डिस्चार्ज होने के बाद मुंबई में भर्ती हुए शरद पवार, PM मोदी ने फोन कर जाना हालचाल",
@@ -207,15 +207,15 @@
     "outlet:Network18",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call",
+    "google-news:Sharad Pawar hospitalised again, hours after discharge",
     "google-news:\"सुप्रिया सुले तैयार हो गई हैं\", PM मोदी ने शरद पवार से फोन पर कहा, NCP सुप्रीमो ने दिया जवाब"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 6
    },
-   "top_score": 0.15,
+   "top_score": 0.45,
    "top_headlines": [
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -279,6 +279,67 @@
    "kind": "death",
    "category": "death",
    "date": "2026-10-28",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q1633044",
+   "title": "Hubert Aiwanger",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-05T00:53:19+00:00",
+   "headlines": [
+    "Hubert Aiwanger, prominent German politician, found dead in Berlin hotel",
+    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Hubert Aiwanger, prominent German politician, found dead in Berlin hotel",
+    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle"
+   ],
+   "owners": [
+    "Guardian Media Group",
+    "Deutsche Welle"
+   ],
+   "reports": [
+    {
+     "title": "Hubert Aiwanger, prominent German politician, found dead in Berlin hotel",
+     "url": "https://www.theguardian.com/world/2026/nov/05/hubert-aiwanger-dead-german-politician-berlin-hotel",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-05T00:53:19+00:00"
+    },
+    {
+     "title": "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+     "url": "https://www.dw.com/en/bavarian-politician-hubert-aiwanger-found-dead-in-berlin-hotel/a-79859115?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-04T21:00:00+00:00"
+    }
+   ],
+   "id": "wk-Q1633044",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -358,53 +419,6 @@
    "lane": "sensitive"
   },
   {
-   "qid": "Q1633044",
-   "title": "Hubert Aiwanger",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-04T21:00:00+00:00",
-   "headlines": [
-    "Bavarian politician Hubert Aiwanger found dead in Berlin hotel"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
-    "outlet:Deutsche Welle"
-   ],
-   "owners": [
-    "Deutsche Welle"
-   ],
-   "reports": [
-    {
-     "title": "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
-     "url": "https://www.dw.com/en/bavarian-politician-hubert-aiwanger-found-dead-in-berlin-hotel/a-79859115?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-04T21:00:00+00:00"
-    }
-   ],
-   "id": "wk-Q1633044",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q312472",
    "title": "Tinto Brass",
    "fame": 25000,
@@ -455,7 +469,7 @@
   },
   {
    "qid": null,
-   "title": "2026 Kedartal trail Avalanche",
+   "title": "2026 Kedartal avalanche",
    "fame": 25000,
    "views": 0,
    "traffic": 0,
@@ -491,7 +505,7 @@
      "at": "2026-11-04T13:09:05+00:00"
     }
    ],
-   "id": "wp-2026_Kedartal_trail_Avalanche",
+   "id": "wp-2026_Kedartal_avalanche",
    "kind": "incident",
    "category": "landslide",
    "date": "2026-11-04",
@@ -900,7 +914,7 @@
     "Sharad Pawar discharged from Pune hospital after complaints of chest pain, cough",
     "Rest, Supriya & I’ll look after country, PM Modi said to have told Sharad Pawar",
     "Sharad Pawar Re-Admitted To Hospital Hours After Discharge, Supriya Sule Says Further Tests Needed",
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_headlines": [
     "पुणे से डिस्चार्ज होने के बाद मुंबई में भर्ती हुए शरद पवार, PM मोदी ने फोन कर जाना हालचाल",
@@ -964,15 +978,15 @@
     "outlet:Network18",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call",
+    "google-news:Sharad Pawar hospitalised again, hours after discharge",
     "google-news:\"सुप्रिया सुले तैयार हो गई हैं\", PM मोदी ने शरद पवार से फोन पर कहा, NCP सुप्रीमो ने दिया जवाब"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 6
    },
-   "top_score": 0.15,
+   "top_score": 0.45,
    "top_headlines": [
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -980,7 +994,7 @@
   },
   {
    "qid": null,
-   "title": "2026 Kedartal trail Avalanche",
+   "title": "2026 Kedartal avalanche",
    "fame": 25000,
    "views": 0,
    "traffic": 0,
@@ -1016,7 +1030,7 @@
      "at": "2026-11-04T13:09:05+00:00"
     }
    ],
-   "id": "wp-2026_Kedartal_trail_Avalanche",
+   "id": "wp-2026_Kedartal_avalanche",
    "kind": "incident",
    "category": "landslide",
    "date": "2026-11-04",
@@ -1422,8 +1436,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9319 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3140 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2081 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1073 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1217 headlines from 29 feeds (18 owners), 31 matched to articles, 2 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 1 kh- stories (on): kh-20261105-Q982813; dropped: explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Aapko: fewer than 3 owners' headlines name it and the story; explainer JD Vance: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1178 headlines from 28 feeds (18 owners), 32 matched to articles, 3 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 1 kh- stories (on): kh-20261105-Q982813; dropped: explainer CM Yogi Adityanath: fewer than 3 owners' headlines name it and the story; explainer Agniveers / CDS: no Wikipedia article that can be its centre; explainer Democrats / Republican: no Wikipedia article that can be its centre",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again"
  ],
@@ -1432,11 +1446,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1217,
-  "feeds": 29,
+  "headlines": 1178,
+  "feeds": 28,
   "owners": 18,
-  "matched": 31,
-  "corroborated": 2
+  "matched": 32,
+  "corroborated": 3
  },
  "emerging": [],
  "explainers": [
@@ -1474,7 +1488,7 @@
     "Sharad Pawar discharged from Pune hospital after complaints of chest pain, cough",
     "Rest, Supriya & I’ll look after country, PM Modi said to have told Sharad Pawar",
     "Sharad Pawar Re-Admitted To Hospital Hours After Discharge, Supriya Sule Says Further Tests Needed",
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_headlines": [
     "पुणे से डिस्चार्ज होने के बाद मुंबई में भर्ती हुए शरद पवार, PM मोदी ने फोन कर जाना हालचाल",
@@ -1538,15 +1552,15 @@
     "outlet:Network18",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "google-news:'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call",
+    "google-news:Sharad Pawar hospitalised again, hours after discharge",
     "google-news:\"सुप्रिया सुले तैयार हो गई हैं\", PM मोदी ने शरद पवार से फोन पर कहा, NCP सुप्रीमो ने दिया जवाब"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 6
    },
-   "top_score": 0.15,
+   "top_score": 0.45,
    "top_headlines": [
-    "'Supriya Is Ready Now': What PM Modi Told Sharad Pawar In Phone Call"
+    "Sharad Pawar hospitalised again, hours after discharge"
    ],
    "hindi_owners": [],
    "audience": "india",
