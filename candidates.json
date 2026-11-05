@@ -1,5 +1,5 @@
 {
- "at": "2026-11-05T17:17:59+00:00",
+ "at": "2026-11-05T17:32:02+00:00",
  "trending": [
   {
    "qid": "Q4834146",
@@ -10,7 +10,7 @@
    "news": 425000,
    "news_at": "2026-11-05T17:07:44+00:00",
    "headlines": [
-    "MP High Court Denies Bail To Giribala Singh In Twisha Sharma Dowry Death Case",
+    "High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "'Foreign Funded': Jitendra Singh's Explosive Charge Against Dipke & Ranka | CJP Responds | News18",
@@ -25,7 +25,7 @@
    ],
    "label_hi": "बृजेन्द्र पाल सिंह",
    "via": [
-    "google-news:MP High Court Denies Bail To Giribala Singh In Twisha Sharma Dowry Death Case",
+    "google-news:High Court Rejects Giribala Singh's Bail In Twisha Sharma Death Case",
     "google-news:Delhi government lawyer grants consent for contempt of court case against CJP's Ratna Singh",
     "google-news:Bihar IPS Officer Bhanu Pratap Singh Removed From Post Amid Marital Dispute",
     "outlet:Network18",
@@ -82,52 +82,16 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 9
+    "IN": 7,
+    "IN-nation": 1
    },
-   "top_score": 0.36,
+   "top_score": 1.0,
    "top_headlines": [
-    "No relief for Azam Khan: SC refuses bail plea in fresh ED case, transfers matter to HC",
-    "Delhi riots case: Umar Khalid and Sharjeel Imam challenge Delhi HC's bail refusal in Supreme Court",
+    "Bombay high court cancels bail granted to Sachin Waze in Antilia bomb scare and Mansukh Hiran murder case",
+    "‘Jantar Mantar at Kochi’: CJP announces anti-SIR stir on November 7; Dipke to attend | India News",
+    "Umar Khalid, Sharjeel Imam move Supreme Court for bail in 2020 Delhi riots case | India News",
     "'We Don't Appreciate Such Arm-Twisting': Supreme Court Stays Criminal Contempt Proceedings Against Punjab ..."
    ],
-   "hindi_owners": []
-  },
-  {
-   "qid": null,
-   "title": "November 2026 Florida floods",
-   "fame": 250000,
-   "views": 0,
-   "traffic": 0,
-   "news": 250000,
-   "news_at": "2026-11-05T03:35:53+00:00",
-   "headlines": [
-    "The Hindu profile on Democrat Pia Dandiya who won from Florida",
-    "What's next in the investigation of the Learjet crash in Florida that killed 9?"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "geos": [
-    "IN",
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:The Hindu profile on Democrat Pia Dandiya who won from Florida",
-    "google-news:What's next in the investigation of the Learjet crash in Florida that killed 9?"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wp-November_2026_Florida_floods",
-   "kind": "incident",
-   "category": "flood",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -166,7 +130,7 @@
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-05T17:17:59.272997+00:00",
+   "news_at": "2026-11-05T17:32:02.116419+00:00",
    "headlines": [
     "After Riots and Protests, French Workers Are Going on Strike"
    ],
@@ -194,6 +158,41 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q6410167",
+   "title": "Kimmarie Johnson",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-05T15:15:00+00:00",
+   "headlines": [
+    "‘Beverly Hills, 90210’ actress Kimmarie Johnson dead at 50"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:‘Beverly Hills, 90210’ actress Kimmarie Johnson dead at 50"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6410167",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "nw-20261105-chawri-bazar-disaster",
@@ -321,10 +320,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 8,
-    "IN-nation": 2
+    "IN-nation": 6
    },
-   "top_score": 0.935,
+   "top_score": 0.45,
    "top_headlines": [
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
@@ -785,26 +783,30 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
+  }
+ ],
+ "candidates": [
   {
    "qid": "Q6410167",
    "title": "Kimmarie Johnson",
-   "fame": 200,
+   "fame": 125000,
    "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-05T15:15:00+00:00",
+   "headlines": [
+    "‘Beverly Hills, 90210’ actress Kimmarie Johnson dead at 50"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
    "geos": [
-    "GB"
+    "US"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-GB:kimmarie johnson"
+    "google-news:‘Beverly Hills, 90210’ actress Kimmarie Johnson dead at 50"
    ],
    "owners": [],
    "reports": [],
@@ -818,9 +820,7 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  }
- ],
- "candidates": [
+  },
   {
    "qid": "Q3181541",
    "title": "John Frieda",
@@ -1121,43 +1121,10 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q6410167",
-   "title": "Kimmarie Johnson",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:kimmarie johnson"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6410167",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "notes": [
-  "outlets: 1323 headlines from 30 feeds (18 owners), 15 matched to articles, 3 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "outlets: 1323 headlines from 30 feeds (18 owners), 14 matched to articles, 3 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
   "explainers: 1 kh- stories (on): kh-20261105-Q796885; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer Balen: fewer than 3 owners' headlines name it and the story; explainer Agniveers: no Wikipedia article that can be its centre",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45) and no India connection: not told again in Hindi",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
@@ -1171,7 +1138,7 @@
   "headlines": 1323,
   "feeds": 30,
   "owners": 18,
-  "matched": 15,
+  "matched": 14,
   "corroborated": 3
  },
  "emerging": [
@@ -1301,10 +1268,9 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 8,
-    "IN-nation": 2
+    "IN-nation": 6
    },
-   "top_score": 0.935,
+   "top_score": 0.45,
    "top_headlines": [
     "Delhi Chawri Bazaar collapse: Several feared trapped after building collapse"
    ],
