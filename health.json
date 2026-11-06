@@ -1,22 +1,24 @@
 {
- "at": "2026-11-06T07:02:14+00:00",
+ "at": "2026-11-06T07:20:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 20 trending",
-  "outlets: 1210 headlines from 30 feeds (18 owners), 19 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 4 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q796885, kh-20261106-Q28408145, kh-20261106-Q338067; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer President Santiago Pe: fewer than 3 owners' headlines name it and the story; explainer First Muslim U.S / Sarah Jukaku First: no Wikipedia article that can be its centre",
+  "watch: 10 candidates from 21 trending",
+  "outlets: 1213 headlines from 30 feeds (18 owners), 19 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 5 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q982813, kh-20261106-Q796885, kh-20261106-Q126489109; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer Paraguay President Santiago: fewer than 3 owners' headlines name it and the story; explainer First Muslim U.S / Sarah Jukaku First: no Wikipedia article that can be its centre",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q6662427: Orbitwire published (wk-Q6662427), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1509 headlines (KeyError)']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/', 'wikipedia search failed for 1 of 1521 headlines (KeyError)']",
   "drop wk-Q6410167: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261106-Q796885: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q7151947: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261106-Q338067: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261106-Q28408145: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261106-Q126489109: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q312472: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "skip kh-20261106-Q982813: gate: no draft passed the fact checks: unsupported: अस्पताल ने बताया कि उनकी हालत स्थिर है।",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }

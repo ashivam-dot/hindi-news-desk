@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T07:02:16+00:00",
+ "at": "2026-11-06T07:20:16+00:00",
  "trending": [
   {
    "id": "kh-20261106-Q1353",
@@ -13,8 +13,10 @@
    "category_hi": "समाचार",
    "story": "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
    "story_keys": [
+    "ahead",
     "air",
-    "gets",
+    "capital",
+    "fire",
     "toxic"
    ],
    "date": "2026-11-05",
@@ -22,15 +24,14 @@
    "owners": [
     "India Today Group",
     "BBC",
+    "HT Media",
+    "Network18",
     "The Hindu Group",
     "Government of India",
-    "DB Corp",
-    "Network18",
-    "Amar Ujala",
     "NDTV",
-    "TV9 Network",
-    "ABP Group",
-    "HT Media"
+    "DB Corp",
+    "Amar Ujala",
+    "ABP Group"
    ],
    "fame": 400000,
    "news": 400000,
@@ -39,19 +40,19 @@
    "headlines": [
     "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
     "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
+    "Over 150 locations across Delhi to get quicker fire response ahead of Diwali",
+    "Delhi Air Quality Crosses 400-Mark Ahead Of Diwali As Thick Haze Engulfs Capital",
     "As New Delhi’s air turns toxic again, people complain of unaffordable air purification products",
-    "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
-    "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It",
-    "Sharjeel Imam Moves Supreme Court Seeking Bail In Delhi Riots UAPA Case, Says Prosecution Yet To Examine..."
+    "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot"
    ],
    "hindi_headlines": [
     "सामाजिक न्याय एवं अधिकारिता मंत्रालय के सचिव श्री सुधांश पंत ने दिल्ली के आईएनए स्थित दिल्ली हाट में आयोजित शिल्प समागम मेला 2026 का जायजा लिया",
-    "IIT दिल्ली में फैकल्टी और स्टाफ के ल‍िए होगी एम्पैथी वर्कशॉप",
-    "CJI बोले-दिल्ली के मौसम का आनंद सभी ले रहे हैं:प्रदूषण रोकने के लिए क्या कर रहे; पराली से बिगड़ते हैं हालात",
-    "'रोज पी रहे हैं 30 सिगरेट जितना जहर', दिल्ली प्रदूषण पर सुप्रीम कोर्ट में खूब हुई बहस, CJI बोले पुराने हथकंडे बंद हों",
-    "'जैसे हर दिन 30 सिगरेट पी रहे हैं': दिल्ली की हवा पर सुप्रीम कोर्ट सख्त, कहा- प्रदूषण की मुख्य वजह गाड़ियां"
+    "भारत के लिए नेपाली PM बालेन शाह ने तोड़े अपने बनाए नियम, अब दिल्ली भी आएंगे; तारीख तय",
+    "दिल्ली में 2.65 लाख के नकली नोट बरामद, बिहार के दो आरोपी गिरफ्तार",
+    "दिल्ली के लोग बहुत टैलेंटेड, नहीं काम आएंगे पुराने नियम; वायु प्रदूषण पर सुप्रीम कोर्ट सख्त",
+    "दिल्ली-NCR प्रदूषण पर सुप्रीम कोर्ट में सुनवाई, CJI का तंज-उम्मीद है आप सभी इस मौसम का आनंद ले रहे होंगे"
    ],
-   "hindi_news": 39,
+   "hindi_news": 37,
    "geos": [
     "IN"
    ],
@@ -81,6 +82,26 @@
      "at": "2026-11-06T05:03:44+00:00"
     },
     {
+     "title": "Delhi Air Quality Crosses 400-Mark Ahead Of Diwali As Thick Haze Engulfs Capital",
+     "url": "https://www.news18.com/india/delhi-air-quality-stays-very-poor-for-4th-day-inches-closer-to-severe-ahead-of-diwali-ws-l-10414839.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T02:29:25+00:00"
+    },
+    {
+     "title": "Over 150 locations across Delhi to get quicker fire response ahead of Diwali",
+     "url": "https://www.hindustantimes.com/india-news/over-150-locations-across-delhi-to-get-quicker-fire-response-ahead-of-diwali-101793929671377.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T01:47:50+00:00"
+    },
+    {
      "title": "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
      "url": "https://www.indiatoday.in/programme/5ive-live/video/delhi-air-quality-severe-aap-bjp-stubble-blame-game-ramayana-review-frvd-3033082-2026-11-05?utm_source=rss",
      "outlet": "India Today",
@@ -94,36 +115,136 @@
    "via": [
     "outlet:India Today Group",
     "outlet:BBC",
+    "outlet:HT Media",
+    "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "outlet:DB Corp",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
     "outlet:NDTV",
-    "outlet:TV9 Network",
+    "outlet:DB Corp",
+    "outlet:Amar Ujala",
     "outlet:ABP Group",
-    "outlet:HT Media",
     "google-news:Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
     "google-news:Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
-    "google-news:6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It"
+    "google-news:Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders rush to spot"
    ],
    "top": {
     "IN": 3,
-    "IN-nation": 1
+    "IN-nation": 2
    },
-   "top_score": 1.2,
+   "top_score": 1.185,
    "top_headlines": [
-    "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
+    "Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders rush to spot",
     "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
-    "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It",
-    "Sharjeel Imam Moves Supreme Court Seeking Bail In Delhi Riots UAPA Case, Says Prosecution Yet To Examine..."
+    "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?"
    ],
    "hindi_owners": [
+    "HT Media",
     "India Today Group",
-    "DB Corp",
-    "Network18",
-    "Amar Ujala"
+    "NDTV"
    ]
+  },
+  {
+   "id": "kh-20261106-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+   "story_keys": [
+    "hospital",
+    "ncp",
+    "praful"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T06:46:23+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+    "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+    "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+    "Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions"
+   ],
+   "hindi_headlines": [
+    "महाराष्ट्र की सियासत में फिर हलचल, बीमार शरद पवार से हॉस्पिटल में मिले प्रफुल्ल पटेल, क्या फिर NCP में होगा बदलाव?",
+    "'राजनीतिक मतभेद के बावजूद संबंध': शरद पवार से मिले प्रफुल्ल पटेल, बेटी के केंद्रीय मंत्री बनने की अटकलें तेज",
+    "शरद पवार 10 तारीख के बाद क्या करेंगे? बेटी के केंद्रीय मंत्री बनने की अटकलें",
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_news": 4,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+     "url": "https://www.hindustantimes.com/india-news/ncps-praful-patel-meets-sharad-pawar-at-breach-candy-hospital-in-mumbai-to-inquire-about-health-101793947043006.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T06:46:23+00:00"
+    },
+    {
+     "title": "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+     "url": "https://www.ndtv.com/india-news/differences-but-no-bitterness-with-sharad-pawar-ncps-praful-patel-12291033#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T05:33:24+00:00"
+    },
+    {
+     "title": "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+     "url": "https://timesofindia.indiatimes.com/india/ncps-praful-patel-visits-sharad-pawar-in-hospital-amid-reported-discontent-with-sunetra/articleshow/135593079.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T04:18:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "google-news:Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions",
+    "google-news:शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "top": {
+    "IN-hi-nation": 14
+   },
+   "top_score": 0.21,
+   "top_headlines": [
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_owners": [
+    "NDTV",
+    "Amar Ujala",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261106-Q796885",
@@ -239,14 +360,13 @@
    "news_at": "2026-11-06T06:11:33+00:00",
    "owners": [
     "Network18",
-    "Bennett, Coleman & Co.",
     "HT Media",
     "India Today Group",
     "NDTV",
     "The Hindu Group"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -306,16 +426,6 @@
      "at": "2026-11-06T02:09:32+00:00"
     },
     {
-     "title": "Delhi building collapse: 2 labourers killed, several feared trapped in Chawri Bazar",
-     "url": "https://timesofindia.indiatimes.com/city/delhi/2-die-several-feared-trapped-in-delhis-chawri-bazar-building-collapse-mcd-says-owner-continued-work-in-guise-of-repairs/articleshow/135589891.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-06T01:28:27+00:00"
-    },
-    {
      "title": "Chawri Bazaar Building Collapse Kills 2 | Irfan Ansari's Bangladesh Remark Sparks Row | Nithya Raman",
      "url": "https://www.news18.com/videos/india/chawri-bazaar-building-collapse-kills-2-irfan-ansari-s-bangladesh-remark-sparks-row-nithya-raman-10414264.html",
      "outlet": "News18",
@@ -344,11 +454,20 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-05T09:21:53+00:00"
+    },
+    {
+     "title": "'We Heard A Crashing Sound': Eyewitness Describes Moments After Chawri Bazar Building Collapse",
+     "url": "https://www.news18.com/india/we-heard-a-crashing-sound-eyewitness-describes-moments-after-chawri-bazar-building-collapse-ws-l-10413652.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T07:19:57+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:India Today Group",
     "outlet:NDTV",
@@ -357,15 +476,13 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 16
+    "IN-nation": 15
    },
-   "top_score": 0.15,
+   "top_score": 0.18,
    "top_headlines": [
     "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It"
    ],
-   "hindi_owners": [
-    "NDTV"
-   ]
+   "hindi_owners": []
   },
   {
    "qid": "Q4834146",
@@ -374,7 +491,7 @@
    "views": 0,
    "traffic": 0,
    "news": 100000,
-   "news_at": "2026-11-06T07:02:42.462789+00:00",
+   "news_at": "2026-11-06T07:20:47.042894+00:00",
    "headlines": [
     "Hon’ble Union Minister Shri Rajiv Ranjan Singh Releases Publication Titled “Minimum Standard Protocol for Semen Production and Standard Operating Procedures for Artificial Insemination using Liquid Semen in Pigs” to Accelerate Genetic Improvement and Enhance Livelihoods, Especially in North-East India",
     "At 93, the battles of Tokyo still live on in Dharam Singh Mann's memory",
@@ -413,7 +530,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-06T07:02:42.462789+00:00"
+     "at": "2026-11-06T07:20:47.042894+00:00"
     },
     {
      "title": "At 93, the battles of Tokyo still live on in Dharam Singh Mann's memory",
@@ -486,10 +603,10 @@
    "hindi_owners": []
   },
   {
-   "id": "kh-20261106-Q28408145",
-   "qid": "Q28408145",
-   "title": "List of career achievements by Cristiano Ronaldo",
-   "name": "list of career achieve,jynfg chnhfn ments by Cristiano Ronaldo",
+   "id": "kh-20261106-Q126489109",
+   "qid": "Q126489109",
+   "title": "Career of Cristiano Ronaldo",
+   "name": "Career of Cristiano Ronaldo",
    "phrase": "Portugal Cristiano Ronaldo",
    "person": false,
    "kind": "explainer",
@@ -522,7 +639,7 @@
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
+   "abroad": true,
    "label_hi": null,
    "reports": [
     {
@@ -1104,6 +1221,109 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261106-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+   "story_keys": [
+    "hospital",
+    "ncp",
+    "praful"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T06:46:23+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+    "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+    "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+    "Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions"
+   ],
+   "hindi_headlines": [
+    "महाराष्ट्र की सियासत में फिर हलचल, बीमार शरद पवार से हॉस्पिटल में मिले प्रफुल्ल पटेल, क्या फिर NCP में होगा बदलाव?",
+    "'राजनीतिक मतभेद के बावजूद संबंध': शरद पवार से मिले प्रफुल्ल पटेल, बेटी के केंद्रीय मंत्री बनने की अटकलें तेज",
+    "शरद पवार 10 तारीख के बाद क्या करेंगे? बेटी के केंद्रीय मंत्री बनने की अटकलें",
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_news": 4,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+     "url": "https://www.hindustantimes.com/india-news/ncps-praful-patel-meets-sharad-pawar-at-breach-candy-hospital-in-mumbai-to-inquire-about-health-101793947043006.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T06:46:23+00:00"
+    },
+    {
+     "title": "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+     "url": "https://www.ndtv.com/india-news/differences-but-no-bitterness-with-sharad-pawar-ncps-praful-patel-12291033#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T05:33:24+00:00"
+    },
+    {
+     "title": "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+     "url": "https://timesofindia.indiatimes.com/india/ncps-praful-patel-visits-sharad-pawar-in-hospital-amid-reported-discontent-with-sunetra/articleshow/135593079.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T04:18:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "google-news:Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions",
+    "google-news:शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "top": {
+    "IN-hi-nation": 14
+   },
+   "top_score": 0.21,
+   "top_headlines": [
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_owners": [
+    "NDTV",
+    "Amar Ujala",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "qid": "Q6410167",
    "title": "Kimmarie Johnson",
    "fame": 62844,
@@ -1352,10 +1572,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261106-Q28408145",
-   "qid": "Q28408145",
-   "title": "List of career achievements by Cristiano Ronaldo",
-   "name": "list of career achieve,jynfg chnhfn ments by Cristiano Ronaldo",
+   "id": "kh-20261106-Q126489109",
+   "qid": "Q126489109",
+   "title": "Career of Cristiano Ronaldo",
+   "name": "Career of Cristiano Ronaldo",
    "phrase": "Portugal Cristiano Ronaldo",
    "person": false,
    "kind": "explainer",
@@ -1388,7 +1608,7 @@
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
+   "abroad": true,
    "label_hi": null,
    "reports": [
     {
@@ -1562,8 +1782,8 @@
   }
  ],
  "notes": [
-  "outlets: 1210 headlines from 30 feeds (18 owners), 19 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
-  "explainers: 4 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q796885, kh-20261106-Q28408145, kh-20261106-Q338067; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer President Santiago Pe: fewer than 3 owners' headlines name it and the story; explainer First Muslim U.S / Sarah Jukaku First: no Wikipedia article that can be its centre",
+  "outlets: 1213 headlines from 30 feeds (18 owners), 19 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261105-chawri-bazar-disaster",
+  "explainers: 5 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q982813, kh-20261106-Q796885, kh-20261106-Q126489109; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer Paraguay President Santiago: fewer than 3 owners' headlines name it and the story; explainer First Muslim U.S / Sarah Jukaku First: no Wikipedia article that can be its centre",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q6662427: Orbitwire published (wk-Q6662427), not high-profile enough to tell again"
@@ -1571,14 +1791,14 @@
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
-  "wikipedia search failed for 1 of 1509 headlines (KeyError)"
+  "wikipedia search failed for 1 of 1521 headlines (KeyError)"
  ],
  "outlets": {
-  "headlines": 1210,
+  "headlines": 1213,
   "feeds": 30,
   "owners": 18,
   "matched": 19,
-  "corroborated": 6
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -1592,14 +1812,13 @@
    "news_at": "2026-11-06T06:11:33+00:00",
    "owners": [
     "Network18",
-    "Bennett, Coleman & Co.",
     "HT Media",
     "India Today Group",
     "NDTV",
     "The Hindu Group"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1659,16 +1878,6 @@
      "at": "2026-11-06T02:09:32+00:00"
     },
     {
-     "title": "Delhi building collapse: 2 labourers killed, several feared trapped in Chawri Bazar",
-     "url": "https://timesofindia.indiatimes.com/city/delhi/2-die-several-feared-trapped-in-delhis-chawri-bazar-building-collapse-mcd-says-owner-continued-work-in-guise-of-repairs/articleshow/135589891.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-06T01:28:27+00:00"
-    },
-    {
      "title": "Chawri Bazaar Building Collapse Kills 2 | Irfan Ansari's Bangladesh Remark Sparks Row | Nithya Raman",
      "url": "https://www.news18.com/videos/india/chawri-bazaar-building-collapse-kills-2-irfan-ansari-s-bangladesh-remark-sparks-row-nithya-raman-10414264.html",
      "outlet": "News18",
@@ -1697,11 +1906,20 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-05T09:21:53+00:00"
+    },
+    {
+     "title": "'We Heard A Crashing Sound': Eyewitness Describes Moments After Chawri Bazar Building Collapse",
+     "url": "https://www.news18.com/india/we-heard-a-crashing-sound-eyewitness-describes-moments-after-chawri-bazar-building-collapse-ws-l-10413652.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T07:19:57+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:India Today Group",
     "outlet:NDTV",
@@ -1710,15 +1928,13 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN-nation": 16
+    "IN-nation": 15
    },
-   "top_score": 0.15,
+   "top_score": 0.18,
    "top_headlines": [
     "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It"
    ],
-   "hindi_owners": [
-    "NDTV"
-   ]
+   "hindi_owners": []
   }
  ],
  "explainers": [
@@ -1734,8 +1950,10 @@
    "category_hi": "समाचार",
    "story": "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
    "story_keys": [
+    "ahead",
     "air",
-    "gets",
+    "capital",
+    "fire",
     "toxic"
    ],
    "date": "2026-11-05",
@@ -1743,15 +1961,14 @@
    "owners": [
     "India Today Group",
     "BBC",
+    "HT Media",
+    "Network18",
     "The Hindu Group",
     "Government of India",
-    "DB Corp",
-    "Network18",
-    "Amar Ujala",
     "NDTV",
-    "TV9 Network",
-    "ABP Group",
-    "HT Media"
+    "DB Corp",
+    "Amar Ujala",
+    "ABP Group"
    ],
    "fame": 400000,
    "news": 400000,
@@ -1760,19 +1977,19 @@
    "headlines": [
     "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
     "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
+    "Over 150 locations across Delhi to get quicker fire response ahead of Diwali",
+    "Delhi Air Quality Crosses 400-Mark Ahead Of Diwali As Thick Haze Engulfs Capital",
     "As New Delhi’s air turns toxic again, people complain of unaffordable air purification products",
-    "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
-    "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It",
-    "Sharjeel Imam Moves Supreme Court Seeking Bail In Delhi Riots UAPA Case, Says Prosecution Yet To Examine..."
+    "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot"
    ],
    "hindi_headlines": [
     "सामाजिक न्याय एवं अधिकारिता मंत्रालय के सचिव श्री सुधांश पंत ने दिल्ली के आईएनए स्थित दिल्ली हाट में आयोजित शिल्प समागम मेला 2026 का जायजा लिया",
-    "IIT दिल्ली में फैकल्टी और स्टाफ के ल‍िए होगी एम्पैथी वर्कशॉप",
-    "CJI बोले-दिल्ली के मौसम का आनंद सभी ले रहे हैं:प्रदूषण रोकने के लिए क्या कर रहे; पराली से बिगड़ते हैं हालात",
-    "'रोज पी रहे हैं 30 सिगरेट जितना जहर', दिल्ली प्रदूषण पर सुप्रीम कोर्ट में खूब हुई बहस, CJI बोले पुराने हथकंडे बंद हों",
-    "'जैसे हर दिन 30 सिगरेट पी रहे हैं': दिल्ली की हवा पर सुप्रीम कोर्ट सख्त, कहा- प्रदूषण की मुख्य वजह गाड़ियां"
+    "भारत के लिए नेपाली PM बालेन शाह ने तोड़े अपने बनाए नियम, अब दिल्ली भी आएंगे; तारीख तय",
+    "दिल्ली में 2.65 लाख के नकली नोट बरामद, बिहार के दो आरोपी गिरफ्तार",
+    "दिल्ली के लोग बहुत टैलेंटेड, नहीं काम आएंगे पुराने नियम; वायु प्रदूषण पर सुप्रीम कोर्ट सख्त",
+    "दिल्ली-NCR प्रदूषण पर सुप्रीम कोर्ट में सुनवाई, CJI का तंज-उम्मीद है आप सभी इस मौसम का आनंद ले रहे होंगे"
    ],
-   "hindi_news": 39,
+   "hindi_news": 37,
    "geos": [
     "IN"
    ],
@@ -1802,6 +2019,26 @@
      "at": "2026-11-06T05:03:44+00:00"
     },
     {
+     "title": "Delhi Air Quality Crosses 400-Mark Ahead Of Diwali As Thick Haze Engulfs Capital",
+     "url": "https://www.news18.com/india/delhi-air-quality-stays-very-poor-for-4th-day-inches-closer-to-severe-ahead-of-diwali-ws-l-10414839.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T02:29:25+00:00"
+    },
+    {
+     "title": "Over 150 locations across Delhi to get quicker fire response ahead of Diwali",
+     "url": "https://www.hindustantimes.com/india-news/over-150-locations-across-delhi-to-get-quicker-fire-response-ahead-of-diwali-101793929671377.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T01:47:50+00:00"
+    },
+    {
      "title": "Politics over Punjab farm fires: Same old story as Delhi air gets toxic before Diwali",
      "url": "https://www.indiatoday.in/programme/5ive-live/video/delhi-air-quality-severe-aap-bjp-stubble-blame-game-ramayana-review-frvd-3033082-2026-11-05?utm_source=rss",
      "outlet": "India Today",
@@ -1815,36 +2052,136 @@
    "via": [
     "outlet:India Today Group",
     "outlet:BBC",
+    "outlet:HT Media",
+    "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:Government of India",
-    "outlet:DB Corp",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
     "outlet:NDTV",
-    "outlet:TV9 Network",
+    "outlet:DB Corp",
+    "outlet:Amar Ujala",
     "outlet:ABP Group",
-    "outlet:HT Media",
     "google-news:Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
     "google-news:Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
-    "google-news:6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It"
+    "google-news:Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders rush to spot"
    ],
    "top": {
     "IN": 3,
-    "IN-nation": 1
+    "IN-nation": 2
    },
-   "top_score": 1.2,
+   "top_score": 1.185,
    "top_headlines": [
-    "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?",
+    "Massive fire breaks out at shop in Delhi's Karol Bagh, 22 fire tenders rush to spot",
     "Fire Erupts At Delhi's Karol Bagh Days Before Diwali, 22 Fire Engines Rushed To Spot",
-    "6 Months Before Delhi Building Collapse, Owner Got A Warning. He Ignored It",
-    "Sharjeel Imam Moves Supreme Court Seeking Bail In Delhi Riots UAPA Case, Says Prosecution Yet To Examine..."
+    "Delhi's toxic winter air is back - is the Indian capital prepared for pollution?"
    ],
    "hindi_owners": [
+    "HT Media",
     "India Today Group",
-    "DB Corp",
-    "Network18",
-    "Amar Ujala"
+    "NDTV"
    ]
+  },
+  {
+   "id": "kh-20261106-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+   "story_keys": [
+    "hospital",
+    "ncp",
+    "praful"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T06:46:23+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+    "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+    "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+    "Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions"
+   ],
+   "hindi_headlines": [
+    "महाराष्ट्र की सियासत में फिर हलचल, बीमार शरद पवार से हॉस्पिटल में मिले प्रफुल्ल पटेल, क्या फिर NCP में होगा बदलाव?",
+    "'राजनीतिक मतभेद के बावजूद संबंध': शरद पवार से मिले प्रफुल्ल पटेल, बेटी के केंद्रीय मंत्री बनने की अटकलें तेज",
+    "शरद पवार 10 तारीख के बाद क्या करेंगे? बेटी के केंद्रीय मंत्री बनने की अटकलें",
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_news": 4,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "NCP's Praful Patel meets Sharad Pawar at Breach Candy Hospital in Mumbai to inquire about health",
+     "url": "https://www.hindustantimes.com/india-news/ncps-praful-patel-meets-sharad-pawar-at-breach-candy-hospital-in-mumbai-to-inquire-about-health-101793947043006.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T06:46:23+00:00"
+    },
+    {
+     "title": "\"Political Differences But No Bitterness\" With Sharad Pawar: NCP's Praful Patel",
+     "url": "https://www.ndtv.com/india-news/differences-but-no-bitterness-with-sharad-pawar-ncps-praful-patel-12291033#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T05:33:24+00:00"
+    },
+    {
+     "title": "Praful Patel visits Sharad Pawar in hospital amid reported discontent with Sunetra",
+     "url": "https://timesofindia.indiatimes.com/india/ncps-praful-patel-visits-sharad-pawar-in-hospital-amid-reported-discontent-with-sunetra/articleshow/135593079.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T04:18:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "google-news:Praful Patel Meets Sharad Pawar In Hospital, Rejects Buzz Of Political Discussions",
+    "google-news:शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "top": {
+    "IN-hi-nation": 14
+   },
+   "top_score": 0.21,
+   "top_headlines": [
+    "शरद पवार की तबीयत को लेकर सामने आया डॉक्टर का अपडेट, जानें अब कैसी है हालत"
+   ],
+   "hindi_owners": [
+    "NDTV",
+    "Amar Ujala",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261106-Q796885",
@@ -1950,10 +2287,10 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261106-Q28408145",
-   "qid": "Q28408145",
-   "title": "List of career achievements by Cristiano Ronaldo",
-   "name": "list of career achieve,jynfg chnhfn ments by Cristiano Ronaldo",
+   "id": "kh-20261106-Q126489109",
+   "qid": "Q126489109",
+   "title": "Career of Cristiano Ronaldo",
+   "name": "Career of Cristiano Ronaldo",
    "phrase": "Portugal Cristiano Ronaldo",
    "person": false,
    "kind": "explainer",
@@ -1986,7 +2323,7 @@
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
+   "abroad": true,
    "label_hi": null,
    "reports": [
     {
