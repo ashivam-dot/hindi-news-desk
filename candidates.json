@@ -1,5 +1,5 @@
 {
- "at": "2026-11-06T00:49:43+00:00",
+ "at": "2026-11-06T01:02:34+00:00",
  "trending": [
   {
    "qid": "Q4834146",
@@ -81,9 +81,9 @@
    "category": "death",
    "date": "2026-10-27",
    "top": {
-    "IN-nation": 8
+    "IN-nation": 10
    },
-   "top_score": 0.39,
+   "top_score": 0.33,
    "top_headlines": [
     "‘Jantar Mantar at Kochi’: CJP announces anti-SIR stir on November 7; Dipke to attend | India News",
     "WhatsApp chats show Twisha Sharma was under mental distress: MP High Court denies bail to Giribala Singh"
@@ -136,6 +136,77 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": null,
+   "title": "November 2026 Florida floods",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-11-06T00:27:20+00:00",
+   "headlines": [
+    "From Jaipur roots to Florida victory, Pia Dandiya keeps family ties close",
+    "Alabama, Florida and Indiana carry out executions on same day",
+    "Florida's new tax rule puts billionaire bunkers in spotlight"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:From Jaipur roots to Florida victory, Pia Dandiya keeps family ties close",
+    "google-news:Alabama, Florida and Indiana carry out executions on same day",
+    "google-news:Florida's new tax rule puts billionaire bunkers in spotlight",
+    "outlet:Guardian Media Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "Guardian Media Group",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Alabama, Florida and Indiana carry out executions on same day",
+     "url": "https://www.theguardian.com/us-news/2026/nov/05/executions-florida-alabama-indiana",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-06T00:27:20+00:00"
+    },
+    {
+     "title": "Florida's new tax rule puts billionaire bunkers in spotlight",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/floridas-new-property-tax-rule-why-google-co-founder-larry-page-oracle-founder-larry-ellison-citadel-ceo-ken-griffin-and-other-billionaires-move-to-billionaire-bunkers-may-be-right/articleshow/135581737.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-05T17:11:01+00:00"
+    }
+   ],
+   "id": "wp-November_2026_Florida_floods",
+   "kind": "incident",
+   "category": "flood",
+   "date": "2026-11-04",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 8,
+    "IN-nation": 5
+   },
+   "top_score": 0.89,
+   "top_headlines": [
+    "From Jaipur roots to Florida victory, Pia Dandiya keeps family ties close"
+   ],
    "hindi_owners": []
   },
   {
@@ -396,9 +467,9 @@
     "outlet:Al Jazeera Media Network"
    ],
    "top": {
-    "IN": 4
+    "IN": 2
    },
-   "top_score": 0.85,
+   "top_score": 0.95,
    "top_headlines": [
     "From Keralam to Los Angeles City Hall: The rise of Nithya Raman"
    ],
@@ -436,6 +507,89 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261106-Q324546",
+   "qid": "Q324546",
+   "title": "Marco Rubio",
+   "name": "Marco Rubio",
+   "phrase": "Marco Rubio",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Marco Rubio denies plans to resign as 2028 speculation grows",
+   "story_keys": [
+    "denie",
+    "marco",
+    "plan"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T01:00:06+00:00",
+   "owners": [
+    "France Médias Monde",
+    "NDTV",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Marco Rubio denies plans to resign as 2028 speculation grows",
+    "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+    "Marco Rubio denies exit plans, vows to serve Trump's full second term"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "मार्को रूबियो",
+   "reports": [
+    {
+     "title": "Marco Rubio denies plans to resign as 2028 speculation grows",
+     "url": "https://www.france24.com/en/americas/20261106-marco-rubio-denies-resignation-2028-white-house",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-06T00:24:59+00:00"
+    },
+    {
+     "title": "Marco Rubio denies exit plans, vows to serve Trump's full second term",
+     "url": "https://www.indiatoday.in/world/us-news/story/marco-rubio-denies-trump-administration-exit-plans-2028-speculation-3033386-2026-11-06?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T01:00:06+00:00"
+    },
+    {
+     "title": "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+     "url": "https://www.ndtv.com/world-news/marco-rubio-denies-plans-to-leave-post-for-2028-presidential-race-12290393#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T00:46:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q16296",
@@ -526,69 +680,6 @@
    "date": "2026-11-06",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": null,
-   "title": "November 2026 Florida floods",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-11-06T00:27:20+00:00",
-   "headlines": [
-    "Alabama, Florida and Indiana carry out executions on same day",
-    "Florida's new tax rule puts billionaire bunkers in spotlight"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Alabama, Florida and Indiana carry out executions on same day",
-    "google-news:Florida's new tax rule puts billionaire bunkers in spotlight",
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "Alabama, Florida and Indiana carry out executions on same day",
-     "url": "https://www.theguardian.com/us-news/2026/nov/05/executions-florida-alabama-indiana",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-06T00:27:20+00:00"
-    },
-    {
-     "title": "Florida's new tax rule puts billionaire bunkers in spotlight",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/floridas-new-property-tax-rule-why-google-co-founder-larry-page-oracle-founder-larry-ellison-citadel-ceo-ken-griffin-and-other-billionaires-move-to-billionaire-bunkers-may-be-right/articleshow/135581737.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-05T17:11:01+00:00"
-    }
-   ],
-   "id": "wp-November_2026_Florida_floods",
-   "kind": "incident",
-   "category": "flood",
-   "date": "2026-11-04",
-   "coords": null,
-   "has_coords": false,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -909,9 +1000,9 @@
     "outlet:Al Jazeera Media Network"
    ],
    "top": {
-    "IN": 4
+    "IN": 2
    },
-   "top_score": 0.85,
+   "top_score": 0.95,
    "top_headlines": [
     "From Keralam to Los Angeles City Hall: The rise of Nithya Raman"
    ],
@@ -969,6 +1060,89 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261106-Q324546",
+   "qid": "Q324546",
+   "title": "Marco Rubio",
+   "name": "Marco Rubio",
+   "phrase": "Marco Rubio",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Marco Rubio denies plans to resign as 2028 speculation grows",
+   "story_keys": [
+    "denie",
+    "marco",
+    "plan"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T01:00:06+00:00",
+   "owners": [
+    "France Médias Monde",
+    "NDTV",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Marco Rubio denies plans to resign as 2028 speculation grows",
+    "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+    "Marco Rubio denies exit plans, vows to serve Trump's full second term"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "मार्को रूबियो",
+   "reports": [
+    {
+     "title": "Marco Rubio denies plans to resign as 2028 speculation grows",
+     "url": "https://www.france24.com/en/americas/20261106-marco-rubio-denies-resignation-2028-white-house",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-06T00:24:59+00:00"
+    },
+    {
+     "title": "Marco Rubio denies exit plans, vows to serve Trump's full second term",
+     "url": "https://www.indiatoday.in/world/us-news/story/marco-rubio-denies-trump-administration-exit-plans-2028-speculation-3033386-2026-11-06?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T01:00:06+00:00"
+    },
+    {
+     "title": "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+     "url": "https://www.ndtv.com/world-news/marco-rubio-denies-plans-to-leave-post-for-2028-presidential-race-12290393#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T00:46:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q3181541",
@@ -1238,8 +1412,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9376 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3144 views): 1 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2169 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1117 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1237 headlines from 30 feeds (18 owners), 29 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 2 kh- stories (on): kh-20261106-Q796885, kh-20261106-Q100728314; dropped: explainer Europe Dozens: fewer than 3 owners' headlines name it and the story; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Balen: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1242 headlines from 30 feeds (18 owners), 29 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 3 kh- stories (on): kh-20261106-Q796885, kh-20261106-Q100728314, kh-20261106-Q324546; dropped: explainer Europe Dozens: no Wikipedia article that can be its centre; explainer Supreme Court: fewer than 3 owners' headlines name it and the story; explainer Balen: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q2913482: Orbitwire published (wk-Q2913482), not high-profile enough to tell again",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again"
@@ -1249,11 +1423,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1237,
+  "headlines": 1242,
   "feeds": 30,
   "owners": 18,
   "matched": 29,
-  "corroborated": 4
+  "corroborated": 5
  },
  "emerging": [],
  "explainers": [
@@ -1464,15 +1638,98 @@
     "outlet:Al Jazeera Media Network"
    ],
    "top": {
-    "IN": 4
+    "IN": 2
    },
-   "top_score": 0.85,
+   "top_score": 0.95,
    "top_headlines": [
     "From Keralam to Los Angeles City Hall: The rise of Nithya Raman"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261106-Q324546",
+   "qid": "Q324546",
+   "title": "Marco Rubio",
+   "name": "Marco Rubio",
+   "phrase": "Marco Rubio",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Marco Rubio denies plans to resign as 2028 speculation grows",
+   "story_keys": [
+    "denie",
+    "marco",
+    "plan"
+   ],
+   "date": "2026-11-06",
+   "news_at": "2026-11-06T01:00:06+00:00",
+   "owners": [
+    "France Médias Monde",
+    "NDTV",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Marco Rubio denies plans to resign as 2028 speculation grows",
+    "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+    "Marco Rubio denies exit plans, vows to serve Trump's full second term"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "मार्को रूबियो",
+   "reports": [
+    {
+     "title": "Marco Rubio denies plans to resign as 2028 speculation grows",
+     "url": "https://www.france24.com/en/americas/20261106-marco-rubio-denies-resignation-2028-white-house",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-06T00:24:59+00:00"
+    },
+    {
+     "title": "Marco Rubio denies exit plans, vows to serve Trump's full second term",
+     "url": "https://www.indiatoday.in/world/us-news/story/marco-rubio-denies-trump-administration-exit-plans-2028-speculation-3033386-2026-11-06?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T01:00:06+00:00"
+    },
+    {
+     "title": "Marco Rubio Denies Plans To Leave Post For 2028 Presidential Race: Report",
+     "url": "https://www.ndtv.com/world-news/marco-rubio-denies-plans-to-leave-post-for-2028-presidential-race-12290393#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-06T00:46:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
   }
  ]
 }
