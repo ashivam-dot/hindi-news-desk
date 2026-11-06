@@ -1,12 +1,13 @@
 {
- "at": "2026-11-06T10:35:25+00:00",
+ "at": "2026-11-06T10:51:14+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 13 candidates from 23 trending",
-  "outlets: 1273 headlines from 30 feeds (18 owners), 19 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q169132, kh-20261106-Q796994, kh-20261106-Q3595134; dropped: explainer Aligarh Muslim University: fewer than 3 owners' headlines name it and the story; explainer Farooq Abdullah: fewer than 3 owners' headlines name it and the story",
+  "watch: 14 candidates from 24 trending",
+  "revisit Q2745305 (9377 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3143 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2169 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1118 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
+  "outlets: 1274 headlines from 30 feeds (18 owners), 12 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261106-Q1353, kh-20261106-Q169132, kh-20261106-Q796994, kh-20261106-Q796885; dropped: explainer MSRTC: fewer than 3 owners' headlines name it and the story; explainer Aligarh Muslim University: fewer than 3 owners' headlines name it and the story; explainer Farooq Abdullah: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "skip wk-Q1633044: Orbitwire published (wk-Q1633044), not high-profile enough to tell again",
   "skip wk-Q6662427: Orbitwire published (wk-Q6662427), not high-profile enough to tell again",
@@ -16,10 +17,11 @@
   "drop kh-20261106-Q7204147: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261106-Q796994: too low in Google News India's top stories (place 0.30, needs 0.35)",
   "drop wk-Q6410167: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q7151947: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261106-Q7108582, kh-20261106-Q169132, kh-20261106-Q3595134, kh-20261106-Q9570; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261106-Q796994",
+  "drop kh-20261106-Q796885: a world statement, politics or diplomacy story with no India connection",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261106-Q7108582, kh-20261106-Q3595134, kh-20261106-Q169132, kh-20261106-Q9570, wk-Q142065275; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261106-Q796994",
   "skip kh-20261106-Q7108582: gate: only 0 usable photos of Other Backward Classes on Wikimedia Commons (want 2)",
-  "skip kh-20261106-Q169132: gate: no draft passed the fact checks: beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: पटियाला, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
+  "skip kh-20261106-Q169132: gate: no draft passed the fact checks: beats 3,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: पटियाला, अमृतसर, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 1 beat is a text card and never two in a row.",
+  "skip wk-Q142065275: gate: only 0 usable photos of 2026 Tampa Citibank shooting on Wikimedia Commons (want 3) not used by Orbitwire",
   "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
