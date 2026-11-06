@@ -221,7 +221,9 @@ The desk is India-first and runs unattended; it decides what goes out and when.
   - follow-up parts were off from 2026-10-18 (every part 2 drew 4-8 views) and are back on from 2026-10-20 (owner:
     "this tiger shrof case is in very lime light you can cover multiple sories of it with facts"): a story Google
     News India leads with (`plan.SERIES_SCORE`) gets up to `plan.SERIES_PARTS` Shorts in all, `plan.SERIES_GAP`
-    apart, each from at least two owners' reports no earlier version used, kh- and nw- stories alike;
+    apart, each from at least two owners' reports no earlier version used, kh- and nw- stories alike, and since
+    2026-11-06 only when the latest part has `plan.SERIES_EARNED` (100) views: parts drew a median of 11.5 at 24 h
+    against the channel's 52, none beat its first part, and Delhi's air went out three times on 6 Nov at 1-4 views;
   - a case the whole country is following gets a case file (`cases/*.json`): one Short per angle (the family's
     response, the industry's, the probe, the government's, the scene), each from reports chosen for that angle,
     ahead of the other ready stories and inside the daily cap and the 90-minute gap. A case Short names only the

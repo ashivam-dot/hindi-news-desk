@@ -122,8 +122,9 @@ def test_an_explainers_headline_count_never_makes_it_famous():
     assert plan.unpopular(death, NOW) is None
 
 
-def test_a_lead_case_told_from_outlets_gets_parts_and_a_replaced_version_is_not_one():
+def test_a_lead_case_told_from_outlets_gets_parts_and_a_replaced_version_is_not_one(monkeypatch):
     # The Tiger Shroff case, 2026-10-20: published as nw-20261018-..., replaced by nw-20261019-...
+    monkeypatch.setattr(plan, "part_views", lambda: {"NEW": 900, "P2": 300})
     old = {"id": "nw-20261018-tiger-shroff-attack", "video_id": "OLD", "title": "पहला",
            "published_at": (NOW - timedelta(hours=8)).isoformat(), "report_urls": ["u1"]}
     remake = {"id": "nw-20261019-tiger-shroff-attack", "video_id": "NEW", "replaced": "OLD", "title": "दोबारा",

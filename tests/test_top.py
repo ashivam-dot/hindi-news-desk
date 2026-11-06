@@ -128,8 +128,9 @@ def report(url, owner):
 
 def test_a_big_story_gets_a_follow_up_part_with_new_reporting_only(monkeypatch):
     monkeypatch.setattr(plan, "SERIES_PARTS", 3)
-    first = {"id": "kh-20261015-Q1", "published_at": (NOW - timedelta(hours=4)).isoformat(), "title": "भाग एक",
-             "report_urls": ["u1", "u2"]}
+    monkeypatch.setattr(plan, "part_views", lambda: {"V1": 400})
+    first = {"id": "kh-20261015-Q1", "video_id": "V1", "published_at": (NOW - timedelta(hours=4)).isoformat(),
+             "title": "भाग एक", "report_urls": ["u1", "u2"]}
     cand = {"id": "kh-20261015-Q1", "top_score": 1.2,
             "reports": [report("u1", "A"), report("u2", "B"), report("u3", "C"), report("u4", "D")]}
     part = plan.follow_up(cand, [first], NOW)
@@ -142,3 +143,21 @@ def test_a_big_story_gets_a_follow_up_part_with_new_reporting_only(monkeypatch):
     assert plan.follow_up(old_news, [first], NOW) is None  # one owner's new report is not enough
     parts = [first | {"id": f"kh-20261015-Q1-p{n}"} for n in (2, 3)]
     assert plan.follow_up(cand, [first] + parts, NOW) is None  # three parts a day at most
+
+
+def test_a_part_follows_only_a_part_viewers_came_for(monkeypatch):
+    # Delhi's air, 6 Nov 2026: part 1 had 1 view at 3 h and parts 2 and 3 still went out (4 views each).
+    first = {"id": "kh-20261106-Q1353", "video_id": "lKmQSvcJISA", "title": "दिल्ली में हवा फिर जहरीली",
+             "published_at": (NOW - timedelta(hours=3)).isoformat(), "report_urls": ["u1", "u2"]}
+    cand = {"id": "kh-20261106-Q1353", "top_score": 1.2,
+            "reports": [report("u1", "A"), report("u2", "B"), report("u3", "C"), report("u4", "D")]}
+    monkeypatch.setattr(plan, "part_views", lambda: {"lKmQSvcJISA": 1})
+    assert plan.follow_up(cand, [first], NOW) is None
+    monkeypatch.setattr(plan, "part_views", lambda: {})
+    assert plan.follow_up(cand, [first], NOW) is None  # no read yet is no audience
+    monkeypatch.setattr(plan, "part_views", lambda: {"lKmQSvcJISA": plan.SERIES_EARNED})
+    assert plan.follow_up(cand, [first], NOW)["id"] == "kh-20261106-Q1353-p2"
+    p2 = first | {"id": "kh-20261106-Q1353-p2", "video_id": "ayQBc-SpQ2w", "report_urls": ["u3", "u4"]}
+    more = cand | {"reports": cand["reports"] + [report("u5", "E"), report("u6", "F")]}
+    monkeypatch.setattr(plan, "part_views", lambda: {"lKmQSvcJISA": 500, "ayQBc-SpQ2w": 4})
+    assert plan.follow_up(more, [first, p2], NOW) is None  # the latest part decides

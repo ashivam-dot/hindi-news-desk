@@ -180,6 +180,18 @@ NATION_FEEDS = ("IN-nation", "IN-hi-nation")
 SERIES_SCORE = 0.9
 SERIES_PARTS = 4
 SERIES_GAP = timedelta(hours=2)
+# A next part only for a story viewers came for: its latest part has SERIES_EARNED views. A lead place in the lists is
+# not an audience: parts drew a median of 11.5 views at 24 h against the channel's 52, none beat its own first part,
+# and Delhi's air went out three times on 6 Nov 2026 at 1-4 views each (state branch, 2026-11-06). A case's angles
+# are not parts and keep their own rules.
+SERIES_EARNED = 100
+
+
+def part_views() -> dict[str, int]:
+    """Each published video's latest view count (performance.json)."""
+    from . import revisit
+
+    return revisit.views_by_video()
 # A case's angles go out ahead of other stories but this far apart, so the day's other news still runs between them.
 # They may take the spare (breaking) slot, but never at night or within MIN_GAP: owner, 2026-10-20, of the Tiger
 # Shroff case, "publish few more".
@@ -571,6 +583,8 @@ def follow_up(cand: dict, rows: list[dict], at: datetime) -> dict | None:
     if not parts or len(parts) >= SERIES_PARTS:
         return None
     if at - datetime.fromisoformat(parts[-1]["published_at"]) < SERIES_GAP:
+        return None
+    if part_views().get(parts[-1].get("video_id"), 0) < SERIES_EARNED:
         return None
     used = {u for r in told for u in r.get("report_urls") or []}  # a replaced version was public too
     fresh = [r for r in cand.get("reports") or [] if r["url"] not in used]
