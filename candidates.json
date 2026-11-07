@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T20:40:49+00:00",
+ "at": "2026-11-07T20:55:30+00:00",
  "trending": [
   {
    "id": "kh-20261108-Q1355",
@@ -135,12 +135,12 @@
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
-    "IN": 8,
-    "IN-hi": 8,
-    "IN-nation": 3,
-    "IN-hi-nation": 2
+    "IN": 7,
+    "IN-hi": 7,
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 1.53,
+   "top_score": 1.605,
    "top_headlines": [
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'This plane will be hijacked': Note found in toilet triggers mid-air scare on Bengaluru-Lucknow IndiGo fl"
@@ -294,12 +294,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-hi": 2,
-    "IN-nation": 12,
+    "IN-nation": 11,
     "IN-hi-nation": 10
    },
-   "top_score": 1.775,
+   "top_score": 1.715,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -449,13 +449,13 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
+    "IN": 8,
     "IN-nation": 5
    },
-   "top_score": 0.84,
+   "top_score": 0.89,
    "top_headlines": [
     "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
-    "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali",
+    "Light lamps at home as diyas illuminate Ram Janmabhoomi: Yogi Adityanath | | Inshorts",
     "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
    ],
    "hindi_owners": [
@@ -465,54 +465,97 @@
    "lane": "sensitive"
   },
   {
-   "qid": "Q922227",
-   "title": "Richard Lloyd (guitarist)",
-   "fame": 150000,
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T20:45:45+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-11-07T20:06:25+00:00",
    "headlines": [
-    "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75"
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
    ],
-   "hindi_news": 0,
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
    "reports": [
     {
-     "title": "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
-     "url": "https://www.theguardian.com/music/2026/nov/07/richard-lloyd-punk-band-television-dies-aged-75",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-07T20:06:25+00:00"
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
     }
    ],
-   "id": "wk-Q922227",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-07",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "Washington Governor Celebrates Diwali With Indian American Community"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "nw-20261107-poland-attack",
@@ -633,11 +676,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 2
    },
-   "top_score": 0.5,
+   "top_score": 0.95,
    "top_headlines": [
-    "6 Killed, 15 Injured In Poland Shooting, Gunman Used 'Military Weapons'"
+    "6 killed as gunman opens fire in Poland's busy market, shot by cops"
    ],
    "hindi_owners": [
     "India Today Group",
@@ -657,20 +700,22 @@
    "story": "Israel's president picks Netanyahu's rival Gadi Eisenkot to form next government",
    "story_keys": [
     "form",
+    "next",
     "pick",
     "rival"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T20:06:06+00:00",
+   "news_at": "2026-11-07T20:26:58+00:00",
    "owners": [
     "France Médias Monde",
     "Guardian Media Group",
     "Deutsche Welle",
     "India Today Group",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -678,7 +723,8 @@
     "🔴 Israeli president picks Netanyahu's rival Eisenkot to try to form government",
     "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
     "Israeli president picks Gadi Eisenkot to form government",
-    "Israel President taps Netanyahu's rival Eisenkot to form government"
+    "Israel President taps Netanyahu's rival Eisenkot to form government",
+    "Israel’s president picks Eisenkot over Netanyahu to form next government"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -707,6 +753,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-07T19:38:24+00:00"
+    },
+    {
+     "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+     "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-07T20:26:58+00:00"
     },
     {
      "title": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
@@ -744,11 +800,16 @@
     "outlet:Guardian Media Group",
     "outlet:Deutsche Welle",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Israel President taps opposition leader Eisenkot to form government, challenging Netanyahu"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -760,7 +821,7 @@
    "views": 0,
    "traffic": 0,
    "news": 50000,
-   "news_at": "2026-11-07T20:40:49.597469+00:00",
+   "news_at": "2026-11-07T20:55:30.207552+00:00",
    "headlines": [
     "France sees new round of Yellow Vest, student protests",
     "French student unions say 250,000 people took part in Saturday’s protests"
@@ -932,10 +993,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 13,
+    "IN": 11,
     "IN-hi-nation": 20
    },
-   "top_score": 0.415,
+   "top_score": 0.515,
    "top_headlines": [
     "गाजियाबाद पुलिस चौकी धमाका-दिल्ली नंबर की संदिग्ध स्कूटी मिली: कश्मीर के आतंकी संगठन ने ली जिम्मेदारी, ATS-...",
     "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
@@ -1060,7 +1121,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T20:40:49.597469+00:00",
+   "news_at": "2026-11-07T20:55:30.207552+00:00",
    "headlines": [
     "Six dead after gunman opens fire ‘at random’ in Kraków market square"
    ],
@@ -1297,55 +1358,53 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141695384",
-   "title": "2026 Houthi attacks on Saudi airports",
+   "qid": "Q922227",
+   "title": "Richard Lloyd (guitarist)",
    "fame": 25000,
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T17:55:58+00:00",
+   "news_at": "2026-11-07T20:06:25+00:00",
    "headlines": [
-    "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia"
+    "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
-   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
    "via": [
-    "google-news:Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-    "outlet:India Today Group"
+    "google-news:Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
+    "outlet:Guardian Media Group"
    ],
    "owners": [
-    "India Today Group"
+    "Guardian Media Group"
    ],
    "reports": [
     {
-     "title": "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-     "url": "https://www.indiatoday.in/world/story/houthi-attacks-on-saudi-arabia-target-aramco-riyadh-airport-and-troops-in-new-wave-of-strikes-3034659-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
+     "url": "https://www.theguardian.com/music/2026/nov/07/richard-lloyd-punk-band-television-dies-aged-75",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-07T17:55:58+00:00"
+     "at": "2026-11-07T20:06:25+00:00"
     }
    ],
-   "id": "wk-Q141695384",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-10",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
-   ],
-   "hindi_owners": []
+   "id": "wk-Q922227",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-07",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q4250213",
@@ -1634,12 +1693,12 @@
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
-    "IN": 8,
-    "IN-hi": 8,
-    "IN-nation": 3,
-    "IN-hi-nation": 2
+    "IN": 7,
+    "IN-hi": 7,
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 1.53,
+   "top_score": 1.605,
    "top_headlines": [
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'This plane will be hijacked': Note found in toilet triggers mid-air scare on Bengaluru-Lucknow IndiGo fl"
@@ -1793,13 +1852,13 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
+    "IN": 8,
     "IN-nation": 5
    },
-   "top_score": 0.84,
+   "top_score": 0.89,
    "top_headlines": [
     "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
-    "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali",
+    "Light lamps at home as diyas illuminate Ram Janmabhoomi: Yogi Adityanath | | Inshorts",
     "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
    ],
    "hindi_owners": [
@@ -1807,56 +1866,6 @@
    ],
    "audience": "india",
    "lane": "sensitive"
-  },
-  {
-   "qid": "Q922227",
-   "title": "Richard Lloyd (guitarist)",
-   "fame": 150000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-11-07T20:06:25+00:00",
-   "headlines": [
-    "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
-     "url": "https://www.theguardian.com/music/2026/nov/07/richard-lloyd-punk-band-television-dies-aged-75",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-07T20:06:25+00:00"
-    }
-   ],
-   "id": "wk-Q922227",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-07",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "id": "kh-20261108-Q468324",
@@ -1951,7 +1960,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T20:40:49.597469+00:00",
+   "news_at": "2026-11-07T20:55:30.207552+00:00",
    "headlines": [
     "Six dead after gunman opens fire ‘at random’ in Kraków market square"
    ],
@@ -2041,37 +2050,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q6410167",
-   "title": "Kimmarie Johnson",
-   "fame": 82033,
-   "views": 82033,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6410167",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "id": "kh-20261108-Q796885",
    "qid": "Q796885",
    "title": "Gadi Eisenkot",
@@ -2084,20 +2062,22 @@
    "story": "Israel's president picks Netanyahu's rival Gadi Eisenkot to form next government",
    "story_keys": [
     "form",
+    "next",
     "pick",
     "rival"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T20:06:06+00:00",
+   "news_at": "2026-11-07T20:26:58+00:00",
    "owners": [
     "France Médias Monde",
     "Guardian Media Group",
     "Deutsche Welle",
     "India Today Group",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2105,7 +2085,8 @@
     "🔴 Israeli president picks Netanyahu's rival Eisenkot to try to form government",
     "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
     "Israeli president picks Gadi Eisenkot to form government",
-    "Israel President taps Netanyahu's rival Eisenkot to form government"
+    "Israel President taps Netanyahu's rival Eisenkot to form government",
+    "Israel’s president picks Eisenkot over Netanyahu to form next government"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2134,6 +2115,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-07T19:38:24+00:00"
+    },
+    {
+     "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+     "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-07T20:26:58+00:00"
     },
     {
      "title": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
@@ -2171,14 +2162,192 @@
     "outlet:Guardian Media Group",
     "outlet:Deutsche Welle",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network"
    ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Israel President taps opposition leader Eisenkot to form government, challenging Netanyahu"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T20:45:45+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
+   "reports": [
+    {
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "Washington Governor Celebrates Diwali With Indian American Community"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q922227",
+   "title": "Richard Lloyd (guitarist)",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-07T20:06:25+00:00",
+   "headlines": [
+    "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "Richard Lloyd, founding member and guitarist of punk band Television, dies aged 75",
+     "url": "https://www.theguardian.com/music/2026/nov/07/richard-lloyd-punk-band-television-dies-aged-75",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-07T20:06:25+00:00"
+    }
+   ],
+   "id": "wk-Q922227",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-07",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "other"
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6410167",
+   "title": "Kimmarie Johnson",
+   "fame": 82033,
+   "views": 82033,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-06"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6410167",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q313202",
@@ -2354,8 +2523,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9413 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: last Short 11 h ago; revisit kh-20261108-Q330658-update: 2 owners' new reports on Indian Air Force (1124 views before); revisit Q4746875 (1006 views): 0 owners reported new news on Amit S",
-  "outlets: 1211 headlines from 29 feeds (17 owners), 21 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261107-ghaziabad-explosion",
-  "explainers: 5 kh- stories (on): kh-20261108-Q1355, kh-20261108-Q163225, kh-20261108-Q417657, kh-20261108-Q796885; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer From GRAP: fewer than 3 owners' headlines name it and the story; explainer Diwali: no Wikipedia article that can be its centre",
+  "outlets: 1208 headlines from 29 feeds (17 owners), 21 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261107-ghaziabad-explosion",
+  "explainers: 6 kh- stories (on): kh-20261108-Q1355, kh-20261108-Q163225, kh-20261108-Q417657, kh-20261108-Q35525; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Delhi-NCR Cars WFH / Delhi-NCR Cars WFH: no Wikipedia article that can be its centre; explainer Diwali: no Wikipedia article that can be its centre",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
@@ -2367,11 +2536,11 @@
   "outlet tv9-hi: ReadTimeout: HTTPSConnectionPool(host='www.tv9hindi.com', port=443): Read timed out. (read timeout=30)"
  ],
  "outlets": {
-  "headlines": 1211,
+  "headlines": 1208,
   "feeds": 29,
   "owners": 17,
   "matched": 21,
-  "corroborated": 8
+  "corroborated": 9
  },
  "emerging": [
   {
@@ -2493,11 +2662,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 2
    },
-   "top_score": 0.5,
+   "top_score": 0.95,
    "top_headlines": [
-    "6 Killed, 15 Injured In Poland Shooting, Gunman Used 'Military Weapons'"
+    "6 killed as gunman opens fire in Poland's busy market, shot by cops"
    ],
    "hindi_owners": [
     "India Today Group",
@@ -2619,10 +2788,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 13,
+    "IN": 11,
     "IN-hi-nation": 20
    },
-   "top_score": 0.415,
+   "top_score": 0.515,
    "top_headlines": [
     "गाजियाबाद पुलिस चौकी धमाका-दिल्ली नंबर की संदिग्ध स्कूटी मिली: कश्मीर के आतंकी संगठन ने ली जिम्मेदारी, ATS-...",
     "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
@@ -2768,12 +2937,12 @@
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
-    "IN": 8,
-    "IN-hi": 8,
-    "IN-nation": 3,
-    "IN-hi-nation": 2
+    "IN": 7,
+    "IN-hi": 7,
+    "IN-nation": 4,
+    "IN-hi-nation": 1
    },
-   "top_score": 1.53,
+   "top_score": 1.605,
    "top_headlines": [
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'This plane will be hijacked': Note found in toilet triggers mid-air scare on Bengaluru-Lucknow IndiGo fl"
@@ -2927,12 +3096,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 3,
     "IN-hi": 2,
-    "IN-nation": 12,
+    "IN-nation": 11,
     "IN-hi-nation": 10
    },
-   "top_score": 1.775,
+   "top_score": 1.715,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -3082,13 +3251,13 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
+    "IN": 8,
     "IN-nation": 5
    },
-   "top_score": 0.84,
+   "top_score": 0.89,
    "top_headlines": [
     "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
-    "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali",
+    "Light lamps at home as diyas illuminate Ram Janmabhoomi: Yogi Adityanath | | Inshorts",
     "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
    ],
    "hindi_owners": [
@@ -3096,6 +3265,99 @@
    ],
    "audience": "india",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T20:45:45+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
+   "reports": [
+    {
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "Washington Governor Celebrates Diwali With Indian American Community"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261108-Q796885",
@@ -3110,20 +3372,22 @@
    "story": "Israel's president picks Netanyahu's rival Gadi Eisenkot to form next government",
    "story_keys": [
     "form",
+    "next",
     "pick",
     "rival"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T20:06:06+00:00",
+   "news_at": "2026-11-07T20:26:58+00:00",
    "owners": [
     "France Médias Monde",
     "Guardian Media Group",
     "Deutsche Welle",
     "India Today Group",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3131,7 +3395,8 @@
     "🔴 Israeli president picks Netanyahu's rival Eisenkot to try to form government",
     "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
     "Israeli president picks Gadi Eisenkot to form government",
-    "Israel President taps Netanyahu's rival Eisenkot to form government"
+    "Israel President taps Netanyahu's rival Eisenkot to form government",
+    "Israel’s president picks Eisenkot over Netanyahu to form next government"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3160,6 +3425,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-07T19:38:24+00:00"
+    },
+    {
+     "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+     "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-07T20:26:58+00:00"
     },
     {
      "title": "Israel’s president picks Yashar leader Gadi Eisenkot to form government",
@@ -3197,11 +3472,16 @@
     "outlet:Guardian Media Group",
     "outlet:Deutsche Welle",
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Israel President taps opposition leader Eisenkot to form government, challenging Netanyahu"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
