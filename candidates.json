@@ -1,5 +1,5 @@
 {
- "at": "2026-11-07T17:55:45+00:00",
+ "at": "2026-11-07T18:10:36+00:00",
  "trending": [
   {
    "id": "kh-20261107-Q163225",
@@ -144,10 +144,10 @@
    "top": {
     "IN": 1,
     "IN-hi": 2,
-    "IN-nation": 13,
-    "IN-hi-nation": 13
+    "IN-nation": 8,
+    "IN-hi-nation": 1
    },
-   "top_score": 1.715,
+   "top_score": 1.97,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -210,7 +210,7 @@
     "अखिलेश यादव परिवार संग करेंगे रामलला का दर्शन, सपा विधायक पवन पांडे ने बताई तारीख",
     "क्या राजा भैया की कुंडा सीट पर PDA समीकरण चलना चाहते हैं अखिलेश यादव, बाबा बागेश्वर का क्यों कर रहे विरोध"
    ],
-   "hindi_news": 8,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -303,9 +303,9 @@
    "top": {
     "IN": 2,
     "IN-nation": 3,
-    "IN-hi-nation": 10
+    "IN-hi-nation": 11
    },
-   "top_score": 1.385,
+   "top_score": 1.37,
    "top_headlines": [
     "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
     "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
@@ -316,6 +316,75 @@
     "ABP Group",
     "Network18"
    ]
+  },
+  {
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-11-07T17:55:58+00:00",
+   "headlines": [
+    "An airstrike has killed 25 people near Yemen’s capital, Houthi official says",
+    "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
+    "Houthis say at least 25 killed in Saudi air strike"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
+   "via": [
+    "google-news:An airstrike has killed 25 people near Yemen’s capital, Houthi official says",
+    "google-news:Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
+    "google-news:Houthis say at least 25 killed in Saudi air strike",
+    "outlet:India Today Group",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "India Today Group",
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
+     "url": "https://www.indiatoday.in/world/story/houthi-attacks-on-saudi-arabia-target-aramco-riyadh-airport-and-troops-in-new-wave-of-strikes-3034659-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:55:58+00:00"
+    },
+    {
+     "title": "Houthis say at least 25 killed in Saudi air strike",
+     "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T17:09:24+00:00"
+    }
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
+   ],
+   "hindi_owners": []
   },
   {
    "id": "nw-20261107-krakow-attack",
@@ -340,7 +409,7 @@
    "traffic": 0,
    "headlines": [
     "At least 6 killed, 15 injured in Poland shooting; gunman shot",
-    "At least five people killed in shooting in Poland’s Krakow",
+    "At least six people killed in shooting in Poland’s Krakow",
     "🔴 At least five people killed in shooting in Krakow, Polish police say ⤵️",
     "At least 6 killed in shooting in Polish city of Krakow, police say",
     "6 killed as gunman opens fire in Poland's busy market, shot by cops"
@@ -385,7 +454,7 @@
      "at": "2026-11-07T16:06:58+00:00"
     },
     {
-     "title": "At least five people killed in shooting in Poland’s Krakow",
+     "title": "At least six people killed in shooting in Poland’s Krakow",
      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -561,13 +630,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11,
-    "IN-nation": 18
+    "IN": 13,
+    "IN-nation": 10,
+    "IN-hi-nation": 18
    },
-   "top_score": 0.545,
+   "top_score": 0.61,
    "top_headlines": [
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News",
-    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site"
+    "गाजियाबाद पुलिस चौकी के धमाके के पीछे आतंकी संगठन? तहरीक-उल-मुजाहिदीन",
+    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site",
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -690,7 +761,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T17:55:45.837407+00:00",
+   "news_at": "2026-11-07T18:10:36.886396+00:00",
    "headlines": [
     "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
    ],
@@ -744,9 +815,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "ABP Group"
-   ],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   },
@@ -757,7 +826,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T17:55:45.837407+00:00",
+   "news_at": "2026-11-07T18:10:36.886396+00:00",
    "headlines": [
     "French student unions say 250,000 people took part in Saturday’s protests"
    ],
@@ -885,6 +954,93 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261107-Q468324",
+   "qid": "Q468324",
+   "title": "L. K. Advani",
+   "name": "L. K. Advani",
+   "phrase": "Ratna LK Advani",
+   "person": true,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+   "story_keys": [
+    "enter",
+    "good",
+    "health",
+    "special",
+    "tomorrow"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T17:32:06+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+    "Bharat Ratna LK Advani enters 100th year"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लालकृष्ण आडवाणी",
+   "reports": [
+    {
+     "title": "Bharat Ratna LK Advani enters 100th year",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:32:06+00:00"
+    },
+    {
+     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:20:55+00:00"
+    },
+    {
+     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T12:47:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261107-Q66616",
@@ -1073,57 +1229,6 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141695384",
-   "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-07T17:55:58+00:00",
-   "headlines": [
-    "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
-   "via": [
-    "google-news:Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-     "url": "https://www.indiatoday.in/world/story/houthi-attacks-on-saudi-arabia-target-aramco-riyadh-airport-and-troops-in-new-wave-of-strikes-3034659-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:55:58+00:00"
-    }
-   ],
-   "id": "wk-Q141695384",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-10",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
-   ],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q4250213",
    "title": "Sebastián Lelio",
    "fame": 15917,
@@ -1277,9 +1382,9 @@
   {
    "qid": "Q922227",
    "title": "Richard Lloyd (guitarist)",
-   "fame": 500,
+   "fame": 700,
    "views": 0,
-   "traffic": 500,
+   "traffic": 700,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -1288,11 +1393,13 @@
    "region": "world",
    "india_link": false,
    "geos": [
+    "GB",
     "US"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-US:richard lloyd"
+    "google-trends-US:richard lloyd",
+    "google-trends-GB:richard lloyd"
    ],
    "owners": [],
    "reports": [],
@@ -1332,7 +1439,7 @@
    "traffic": 0,
    "headlines": [
     "At least 6 killed, 15 injured in Poland shooting; gunman shot",
-    "At least five people killed in shooting in Poland’s Krakow",
+    "At least six people killed in shooting in Poland’s Krakow",
     "🔴 At least five people killed in shooting in Krakow, Polish police say ⤵️",
     "At least 6 killed in shooting in Polish city of Krakow, police say",
     "6 killed as gunman opens fire in Poland's busy market, shot by cops"
@@ -1377,7 +1484,7 @@
      "at": "2026-11-07T16:06:58+00:00"
     },
     {
-     "title": "At least five people killed in shooting in Poland’s Krakow",
+     "title": "At least six people killed in shooting in Poland’s Krakow",
      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -1439,13 +1546,100 @@
    "lane": "sensitive"
   },
   {
+   "id": "kh-20261107-Q468324",
+   "qid": "Q468324",
+   "title": "L. K. Advani",
+   "name": "L. K. Advani",
+   "phrase": "Ratna LK Advani",
+   "person": true,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+   "story_keys": [
+    "enter",
+    "good",
+    "health",
+    "special",
+    "tomorrow"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T17:32:06+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+    "Bharat Ratna LK Advani enters 100th year"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लालकृष्ण आडवाणी",
+   "reports": [
+    {
+     "title": "Bharat Ratna LK Advani enters 100th year",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:32:06+00:00"
+    },
+    {
+     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:20:55+00:00"
+    },
+    {
+     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T12:47:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "qid": "Q142077465",
    "title": "2026 Kraków shooting",
    "fame": 75000,
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T17:55:45.837407+00:00",
+   "news_at": "2026-11-07T18:10:36.886396+00:00",
    "headlines": [
     "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
    ],
@@ -1499,9 +1693,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "ABP Group"
-   ],
+   "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   },
@@ -1843,9 +2035,9 @@
   {
    "qid": "Q922227",
    "title": "Richard Lloyd (guitarist)",
-   "fame": 500,
+   "fame": 700,
    "views": 0,
-   "traffic": 500,
+   "traffic": 700,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -1854,11 +2046,13 @@
    "region": "world",
    "india_link": false,
    "geos": [
+    "GB",
     "US"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-US:richard lloyd"
+    "google-trends-US:richard lloyd",
+    "google-trends-GB:richard lloyd"
    ],
    "owners": [],
    "reports": [],
@@ -1876,8 +2070,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9412 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: already revisited today; revisit Q330658: already revisited today; revisit Q4746875 (1006 views): 0 owners reported new news on Amit Shah since its last Short; revisit Q1058: already revi",
-  "outlets: 1272 headlines from 30 feeds (18 owners), 10 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-krakow-attack, nw-20261107-ghaziabad-explosion",
-  "explainers: 4 kh- stories (on): kh-20261107-Q163225, kh-20261107-Q417657, kh-20261107-Q37415, kh-20261107-Q66616; dropped: explainer Lucknow-bound IndiGo / IndiGo's Bengaluru-Lucknow: no Wikipedia article that can be its centre; explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1271 headlines from 30 feeds (18 owners), 12 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-krakow-attack, nw-20261107-ghaziabad-explosion",
+  "explainers: 5 kh- stories (on): kh-20261107-Q163225, kh-20261107-Q417657, kh-20261107-Q37415, kh-20261107-Q468324; dropped: explainer Lucknow-bound IndiGo / IndiGo's Bengaluru-Lucknow: no Wikipedia article that can be its centre; explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
@@ -1888,11 +2082,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1272,
+  "headlines": 1271,
   "feeds": 30,
   "owners": 18,
-  "matched": 10,
-  "corroborated": 6
+  "matched": 12,
+  "corroborated": 8
  },
  "emerging": [
   {
@@ -1918,7 +2112,7 @@
    "traffic": 0,
    "headlines": [
     "At least 6 killed, 15 injured in Poland shooting; gunman shot",
-    "At least five people killed in shooting in Poland’s Krakow",
+    "At least six people killed in shooting in Poland’s Krakow",
     "🔴 At least five people killed in shooting in Krakow, Polish police say ⤵️",
     "At least 6 killed in shooting in Polish city of Krakow, police say",
     "6 killed as gunman opens fire in Poland's busy market, shot by cops"
@@ -1963,7 +2157,7 @@
      "at": "2026-11-07T16:06:58+00:00"
     },
     {
-     "title": "At least five people killed in shooting in Poland’s Krakow",
+     "title": "At least six people killed in shooting in Poland’s Krakow",
      "url": "https://www.aljazeera.com/news/2026/11/7/casualties-reported-after-shooting-in-polands-krakow?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -2139,13 +2333,15 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11,
-    "IN-nation": 18
+    "IN": 13,
+    "IN-nation": 10,
+    "IN-hi-nation": 18
    },
-   "top_score": 0.545,
+   "top_score": 0.61,
    "top_headlines": [
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News",
-    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site"
+    "गाजियाबाद पुलिस चौकी के धमाके के पीछे आतंकी संगठन? तहरीक-उल-मुजाहिदीन",
+    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site",
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -2298,10 +2494,10 @@
    "top": {
     "IN": 1,
     "IN-hi": 2,
-    "IN-nation": 13,
-    "IN-hi-nation": 13
+    "IN-nation": 8,
+    "IN-hi-nation": 1
    },
-   "top_score": 1.715,
+   "top_score": 1.97,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -2364,7 +2560,7 @@
     "अखिलेश यादव परिवार संग करेंगे रामलला का दर्शन, सपा विधायक पवन पांडे ने बताई तारीख",
     "क्या राजा भैया की कुंडा सीट पर PDA समीकरण चलना चाहते हैं अखिलेश यादव, बाबा बागेश्वर का क्यों कर रहे विरोध"
    ],
-   "hindi_news": 8,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -2457,9 +2653,9 @@
    "top": {
     "IN": 2,
     "IN-nation": 3,
-    "IN-hi-nation": 10
+    "IN-hi-nation": 11
    },
-   "top_score": 1.385,
+   "top_score": 1.37,
    "top_headlines": [
     "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
     "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
@@ -2556,6 +2752,93 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261107-Q468324",
+   "qid": "Q468324",
+   "title": "L. K. Advani",
+   "name": "L. K. Advani",
+   "phrase": "Ratna LK Advani",
+   "person": true,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+   "story_keys": [
+    "enter",
+    "good",
+    "health",
+    "special",
+    "tomorrow"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T17:32:06+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+    "Bharat Ratna LK Advani enters 100th year"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लालकृष्ण आडवाणी",
+   "reports": [
+    {
+     "title": "Bharat Ratna LK Advani enters 100th year",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:32:06+00:00"
+    },
+    {
+     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:20:55+00:00"
+    },
+    {
+     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T12:47:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261107-Q66616",
