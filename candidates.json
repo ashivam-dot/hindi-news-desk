@@ -1,8 +1,8 @@
 {
- "at": "2026-11-07T18:17:23+00:00",
+ "at": "2026-11-07T18:55:19+00:00",
  "trending": [
   {
-   "id": "kh-20261107-Q1355",
+   "id": "kh-20261108-Q1355",
    "qid": "Q1355",
    "title": "Bengaluru",
    "name": "Bengaluru",
@@ -11,12 +11,13 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+   "story": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
    "story_keys": [
+    "emergency",
     "flight",
     "found",
+    "full",
     "hijack",
-    "lucknow-bound",
     "onboard",
     "return",
     "security",
@@ -24,7 +25,7 @@
     "toilet"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T18:10:34+00:00",
+   "news_at": "2026-11-07T18:17:33+00:00",
    "owners": [
     "India Today Group",
     "Network18",
@@ -38,18 +39,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
     "Lucknow-bound IndiGo flight returns to Bengaluru after security threat onboard",
     "Bengaluru-Lucknow IndiGo Flight Turns Back Midway After Security Threat, Checks Underway",
-    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
+    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight"
    ],
    "hindi_headlines": [
+    "इंडिगो फ्लाइट के टॉयलेट में मिला हाईजैकिंग का धमकी भरा नोट, विमान को बेंगलुरु लौटना पड़ा",
     "इंडिगो फ्लाइट को हाईजैक की धमकी:टॉयलेट में नोट मिला; बेंगलुरु से लखनऊ जा रहा था विमान, वापस लौटा",
     "बेंगलुरु हत्याकांड- पड़ोसी राज्य में मिले पत्नी और सास के शव, गहने भी बेच आया था कैब ड्राइवर"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [
     "IN"
    ],
@@ -59,6 +61,16 @@
    "label_hi": "बेंगलुरु",
    "reports": [
     {
+     "title": "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight",
+     "url": "https://www.hindustantimes.com/india-news/bengaluru-airport-declares-full-emergency-after-security-threat-on-lucknow-bound-indigo-flight-101794074544636.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:17:33+00:00"
+    },
+    {
      "title": "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
      "url": "https://www.ndtv.com/india-news/hijack-threat-note-in-toilet-bengaluru-lucknow-flight-makes-u-turn-ignore-and-see-consequences-12298199#publisher=newsstand",
      "outlet": "NDTV",
@@ -66,7 +78,7 @@
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-07T18:10:34+00:00"
+     "at": "2026-11-07T18:15:04+00:00"
     },
     {
      "title": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
@@ -117,24 +129,25 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "google-news:Bengaluru family murders: Complete coverage"
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 4
    },
-   "top_score": 0.84,
+   "top_score": 0.855,
    "top_headlines": [
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
    "hindi_owners": [
+    "NDTV",
     "DB Corp"
    ],
    "audience": "india",
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261107-Q163225",
+   "id": "kh-20261108-Q163225",
    "qid": "Q163225",
    "title": "Sonia Gandhi",
    "name": "Sonia Gandhi",
@@ -274,12 +287,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 2,
     "IN-hi": 2,
-    "IN-nation": 10,
-    "IN-hi-nation": 1
+    "IN-nation": 11,
+    "IN-hi-nation": 11
    },
-   "top_score": 1.94,
+   "top_score": 1.725,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -287,13 +300,11 @@
    "hindi_owners": [
     "HT Media",
     "NDTV",
-    "ABP Group",
-    "Network18",
-    "BBC"
+    "ABP Group"
    ]
   },
   {
-   "id": "kh-20261107-Q417657",
+   "id": "kh-20261108-Q417657",
    "qid": "Q417657",
    "title": "Akhilesh Yadav",
    "name": "Akhilesh Yadav",
@@ -315,7 +326,7 @@
     "visit"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T17:19:56+00:00",
+   "news_at": "2026-11-07T18:11:47+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -352,6 +363,16 @@
    "label_hi": "अखिलेश यादव",
    "reports": [
     {
+     "title": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
+     "url": "https://www.ndtv.com/india-news/first-apologise-to-ram-devotees-yogi-adityanath-on-akhilesh-yadavs-ayodhya-visit-plan-12297283#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:11:47+00:00"
+    },
+    {
      "title": "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya",
      "url": "https://www.hindustantimes.com/india-news/apologise-to-ram-bhakts-first-yogi-adityanath-ahead-of-akhilesh-yadavs-visit-to-ayodhya-101794070474178.html",
      "outlet": "Hindustan Times",
@@ -360,16 +381,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-07T17:19:56+00:00"
-    },
-    {
-     "title": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
-     "url": "https://www.ndtv.com/india-news/first-apologise-to-ram-devotees-yogi-adityanath-on-akhilesh-yadavs-ayodhya-visit-plan-12297283#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:09:42+00:00"
     },
     {
      "title": "Apologise to Ram devotees: CM Yogi to Akhilesh Yadav as SP chief plans Ayodhya visit",
@@ -428,26 +439,27 @@
     "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:ABP Group",
-    "google-news:'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
-    "google-news:Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration | India News",
-    "google-news:अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद"
+    "google-news:‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "google-news:अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
+    "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 4,
-    "IN-hi-nation": 11
+    "IN": 10,
+    "IN-nation": 6,
+    "IN-hi-nation": 10
    },
-   "top_score": 1.355,
+   "top_score": 0.94,
    "top_headlines": [
     "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
-    "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
-    "Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration | India News",
-    "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali"
+    "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
    ],
    "hindi_owners": [
     "ABP Group",
     "Network18"
-   ]
+   ],
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "nw-20261107-poland-attack",
@@ -568,13 +580,14 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4
+    "IN": 1
    },
-   "top_score": 0.85,
+   "top_score": 1.0,
    "top_headlines": [
     "5 killed as gunman opens fire in Poland's busy market, shot by cops"
    ],
    "hindi_owners": [
+    "India Today Group",
     "NDTV"
    ],
    "audience": "world",
@@ -695,21 +708,111 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 12,
-    "IN-nation": 19,
+    "IN": 11,
     "IN-hi-nation": 20
    },
-   "top_score": 0.495,
+   "top_score": 0.515,
    "top_headlines": [
-    "गाजियाबाद पुलिस चौकी के धमाके के पीछे आतंकी संगठन? तहरीक-उल-मुजाहिदीन",
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News",
-    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site"
+    "गाजियाबाद पुलिस चौकी धमाका-दिल्ली नंबर की संदिग्ध स्कूटी मिली: कश्मीर के आतंकी संगठन ने ली जिम्मेदारी, ATS-...",
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
    ],
    "hindi_owners": [
     "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
+  },
+  {
+   "id": "kh-20261108-Q468324",
+   "qid": "Q468324",
+   "title": "L. K. Advani",
+   "name": "L. K. Advani",
+   "phrase": "Ratna LK Advani",
+   "person": true,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+   "story_keys": [
+    "enter",
+    "good",
+    "health",
+    "special"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T17:32:06+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "TV9 Network"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+    "Bharat Ratna LK Advani enters 100th year"
+   ],
+   "hindi_headlines": [
+    "लालकृष्ण आडवाणी का आज 100वां जन्मदिन, बड़े कार्यक्रम की तैयारी में BJP, जानें क्या होगा खास"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लालकृष्ण आडवाणी",
+   "reports": [
+    {
+     "title": "Bharat Ratna LK Advani enters 100th year",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:32:06+00:00"
+    },
+    {
+     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:20:55+00:00"
+    },
+    {
+     "title": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T12:47:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q285102",
@@ -822,25 +925,23 @@
   {
    "qid": "Q142077465",
    "title": "2026 Kraków shooting",
-   "fame": 75200,
+   "fame": 75000,
    "views": 0,
-   "traffic": 200,
+   "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T18:17:23.494835+00:00",
+   "news_at": "2026-11-07T18:55:19.174768+00:00",
    "headlines": [
     "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "world"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-IN:krakow",
     "wikipedia-current-events-2026-11-07",
     "google-news:Kraków shooting latest updates: six killed and more than a dozen injured, police say",
     "outlet:Guardian Media Group"
@@ -857,7 +958,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-07T17:59:04+00:00"
+     "at": "2026-11-07T18:39:30+00:00"
     },
     {
      "title": "Six dead after gunman opens fire ‘at random’ in Kraków market square",
@@ -883,7 +984,7 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
+   "audience": "world",
    "lane": "sensitive"
   },
   {
@@ -893,7 +994,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T18:17:23.494835+00:00",
+   "news_at": "2026-11-07T18:55:19.174768+00:00",
    "headlines": [
     "French student unions say 250,000 people took part in Saturday’s protests"
    ],
@@ -934,340 +1035,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261107-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-   "story_keys": [
-    "approval",
-    "dam",
-    "halt",
-    "urge"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T17:16:02+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-    "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-    "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "मेकेदाटु",
-   "reports": [
-    {
-     "title": "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-project-vijay-urges-modi-halt-approvals-site-inspection-3034644-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:16:02+00:00"
-    },
-    {
-     "title": "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-     "url": "https://www.ndtv.com/india-news/vijay-urges-pm-modi-to-deny-mekedatu-dam-approval-without-states-consent-12297805#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:26:32+00:00"
-    },
-    {
-     "title": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-     "url": "https://economictimes.indiatimes.com/news/india/mekedatu-row-tamil-nadu-cm-vijay-urges-pm-modi-to-halt-karnataka-dam-proposal-without-state-consent/articleshow/135635131.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T11:27:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261107-Q468324",
-   "qid": "Q468324",
-   "title": "L. K. Advani",
-   "name": "L. K. Advani",
-   "phrase": "Ratna LK Advani",
-   "person": true,
-   "kind": "explainer",
-   "category": "health",
-   "category_hi": "स्वास्थ्य",
-   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
-   "story_keys": [
-    "enter",
-    "good",
-    "health",
-    "special",
-    "tomorrow"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T17:32:06+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
-    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
-    "Bharat Ratna LK Advani enters 100th year"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "लालकृष्ण आडवाणी",
-   "reports": [
-    {
-     "title": "Bharat Ratna LK Advani enters 100th year",
-     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:32:06+00:00"
-    },
-    {
-     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
-     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:20:55+00:00"
-    },
-    {
-     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
-     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T12:47:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261107-Q66616",
-   "qid": "Q66616",
-   "title": "Indore",
-   "name": "Indore",
-   "phrase": "Indore",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-   "story_keys": [
-    "concert",
-    "diljit",
-    "dosanjh",
-    "patiala",
-    "peg'",
-    "song"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T15:38:23+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-    "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-    "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why"
-   ],
-   "hindi_headlines": [
-    "दिलजीत दोसांझ का इंदौर कॉन्सर्ट, 'पटियाला पेग' समेत 4 गानों पर रोक, बच्चों को लेकर सख्ती",
-    "इंदौर में 'पटियाला पैग' समेत 4 गाने नहीं गा पाएंगे दिलजीत दोसांझ"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंदौर",
-   "reports": [
-    {
-     "title": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-     "url": "https://www.ndtv.com/india-news/patiala-peg-3-other-songs-banned-from-diljit-dosanjhs-indore-concert-12297748#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:38:23+00:00"
-    },
-    {
-     "title": "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why",
-     "url": "https://www.indiatoday.in/entertainment/music/story/diljit-dosanjh-indore-concert-four-songs-barred-over-alcohol-gun-culture-3034533-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T14:12:23+00:00"
-    },
-    {
-     "title": "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-     "url": "https://timesofindia.indiatimes.com/city/indore/patiala-peg-5-tara-theke-among-4-diljit-dosanjh-songs-barred-from-indore-concert/articleshow/135637575.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T13:08:24+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": "Q141695384",
-   "title": "2026 Houthi attacks on Saudi airports",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-11-07T17:55:58+00:00",
-   "headlines": [
-    "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-    "Houthis say at least 25 killed in Saudi air strike"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
-   "via": [
-    "google-news:Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-    "google-news:Houthis say at least 25 killed in Saudi air strike",
-    "outlet:India Today Group",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "India Today Group",
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
-     "url": "https://www.indiatoday.in/world/story/houthi-attacks-on-saudi-arabia-target-aramco-riyadh-airport-and-troops-in-new-wave-of-strikes-3034659-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:55:58+00:00"
-    },
-    {
-     "title": "Houthis say at least 25 killed in Saudi air strike",
-     "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-07T17:09:24+00:00"
-    }
-   ],
-   "id": "wk-Q141695384",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-10",
-   "coords": null,
-   "has_coords": false,
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
-   ],
    "hindi_owners": []
   },
   {
@@ -1360,6 +1127,57 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q141695384",
+   "title": "2026 Houthi attacks on Saudi airports",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-07T17:55:58+00:00",
+   "headlines": [
+    "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "अक्तूबर २०२६ में सऊदी अरब के विमानक्षेत्रों पर आक्रमण",
+   "via": [
+    "google-news:Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Houthis claim attacks on Aramco, Riyadh airport in wave of strikes on Saudi Arabia",
+     "url": "https://www.indiatoday.in/world/story/houthi-attacks-on-saudi-arabia-target-aramco-riyadh-airport-and-troops-in-new-wave-of-strikes-3034659-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:55:58+00:00"
+    }
+   ],
+   "id": "wk-Q141695384",
+   "kind": "incident",
+   "category": "conflict",
+   "date": "2026-10-10",
+   "coords": null,
+   "has_coords": false,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
+   ],
    "hindi_owners": []
   },
   {
@@ -1512,44 +1330,11 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q922227",
-   "title": "Richard Lloyd (guitarist)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:richard lloyd"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q922227",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-07",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
   {
-   "id": "kh-20261107-Q1355",
+   "id": "kh-20261108-Q1355",
    "qid": "Q1355",
    "title": "Bengaluru",
    "name": "Bengaluru",
@@ -1558,12 +1343,13 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+   "story": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
    "story_keys": [
+    "emergency",
     "flight",
     "found",
+    "full",
     "hijack",
-    "lucknow-bound",
     "onboard",
     "return",
     "security",
@@ -1571,7 +1357,7 @@
     "toilet"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T18:10:34+00:00",
+   "news_at": "2026-11-07T18:17:33+00:00",
    "owners": [
     "India Today Group",
     "Network18",
@@ -1585,18 +1371,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
     "Lucknow-bound IndiGo flight returns to Bengaluru after security threat onboard",
     "Bengaluru-Lucknow IndiGo Flight Turns Back Midway After Security Threat, Checks Underway",
-    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
+    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight"
    ],
    "hindi_headlines": [
+    "इंडिगो फ्लाइट के टॉयलेट में मिला हाईजैकिंग का धमकी भरा नोट, विमान को बेंगलुरु लौटना पड़ा",
     "इंडिगो फ्लाइट को हाईजैक की धमकी:टॉयलेट में नोट मिला; बेंगलुरु से लखनऊ जा रहा था विमान, वापस लौटा",
     "बेंगलुरु हत्याकांड- पड़ोसी राज्य में मिले पत्नी और सास के शव, गहने भी बेच आया था कैब ड्राइवर"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [
     "IN"
    ],
@@ -1606,6 +1393,16 @@
    "label_hi": "बेंगलुरु",
    "reports": [
     {
+     "title": "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight",
+     "url": "https://www.hindustantimes.com/india-news/bengaluru-airport-declares-full-emergency-after-security-threat-on-lucknow-bound-indigo-flight-101794074544636.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:17:33+00:00"
+    },
+    {
      "title": "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
      "url": "https://www.ndtv.com/india-news/hijack-threat-note-in-toilet-bengaluru-lucknow-flight-makes-u-turn-ignore-and-see-consequences-12298199#publisher=newsstand",
      "outlet": "NDTV",
@@ -1613,7 +1410,7 @@
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-07T18:10:34+00:00"
+     "at": "2026-11-07T18:15:04+00:00"
     },
     {
      "title": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
@@ -1664,18 +1461,177 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "google-news:Bengaluru family murders: Complete coverage"
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 4
    },
-   "top_score": 0.84,
+   "top_score": 0.855,
    "top_headlines": [
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
    "hindi_owners": [
+    "NDTV",
     "DB Corp"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261108-Q417657",
+   "qid": "Q417657",
+   "title": "Akhilesh Yadav",
+   "name": "Akhilesh Yadav",
+   "phrase": "Akhilesh Yadav",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
+   "story_keys": [
+    "adityanath",
+    "ahead",
+    "apologise",
+    "consecration",
+    "devotee",
+    "first",
+    "plan",
+    "since",
+    "visit"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T18:11:47+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "India Today Group",
+    "NDTV",
+    "ABP Group"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
+    "Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration",
+    "Akhilesh Yadav To Visit Ram Temple On December 12 | First Ayodhya Visit Since Consecration | News18",
+    "Akhilesh Yadav’s December 12 Ayodhya visit: A religious pilgrimage or a political move? | News18",
+    "'Come To Ayodhya After Seeking Forgiveness': CM Yogi's Message To Akhilesh Yadav Ahead Of His Dec 12 Visit",
+    "Apologise to Ram devotees: CM Yogi to Akhilesh Yadav as SP chief plans Ayodhya visit"
+   ],
+   "hindi_headlines": [
+    "अखिलेश यादव के राम मंदिर दौरे पर सपा का खंडन, मनोज काका बोले- अभी नहीं जाएंगे",
+    "'रामभक्तों पर गोली चलवाने वाले पहले संतों से माफी मांगें...' अखिलेश यादव के अयोध्या दौरे से पहले सीएम योगी का बड़ा हमला",
+    "अखिलेश यादव को प्रिया ने दिया शादी का न्योता, साड़ी में लगीं सुंदर",
+    "अखिलेश यादव परिवार संग करेंगे रामलला का दर्शन, सपा विधायक पवन पांडे ने बताई तारीख",
+    "क्या राजा भैया की कुंडा सीट पर PDA समीकरण चलना चाहते हैं अखिलेश यादव, बाबा बागेश्वर का क्यों कर रहे विरोध"
+   ],
+   "hindi_news": 9,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "अखिलेश यादव",
+   "reports": [
+    {
+     "title": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
+     "url": "https://www.ndtv.com/india-news/first-apologise-to-ram-devotees-yogi-adityanath-on-akhilesh-yadavs-ayodhya-visit-plan-12297283#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:11:47+00:00"
+    },
+    {
+     "title": "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya",
+     "url": "https://www.hindustantimes.com/india-news/apologise-to-ram-bhakts-first-yogi-adityanath-ahead-of-akhilesh-yadavs-visit-to-ayodhya-101794070474178.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:19:56+00:00"
+    },
+    {
+     "title": "Apologise to Ram devotees: CM Yogi to Akhilesh Yadav as SP chief plans Ayodhya visit",
+     "url": "https://www.indiatoday.in/india/story/akhilesh-yadav-ayodhya-ram-temple-visit-uttar-pradesh-cm-yogi-adityanath-demands-apology-3034601-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:59:54+00:00"
+    },
+    {
+     "title": "'Come To Ayodhya After Seeking Forgiveness': CM Yogi's Message To Akhilesh Yadav Ahead Of His Dec 12 Visit",
+     "url": "https://www.news18.com/india/come-to-ayodhya-after-seeking-forgiveness-cm-yogis-message-to-akhilesh-yadav-ahead-of-his-dec-12-visit-ws-rt-10417107.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:01:49+00:00"
+    },
+    {
+     "title": "Akhilesh Yadav’s December 12 Ayodhya visit: A religious pilgrimage or a political move? | News18",
+     "url": "https://www.news18.com/videos/breaking-news/akhilesh-yadav-s-december-12-ayodhya-visit-a-religious-pilgrimage-or-a-political-move-news18-10416913.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T10:45:49+00:00"
+    },
+    {
+     "title": "Akhilesh Yadav To Visit Ram Temple On December 12 | First Ayodhya Visit Since Consecration | News18",
+     "url": "https://www.news18.com/videos/breaking-news/akhilesh-yadav-to-visit-ram-temple-on-december-12-first-ayodhya-visit-since-consecration-news18-10416794.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T09:24:35+00:00"
+    },
+    {
+     "title": "Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration",
+     "url": "https://www.hindustantimes.com/india-news/samajwadi-party-chief-akhilesh-yadav-to-visit-ayodhya-ram-temple-with-family-for-first-time-since-consecration-up-assembly-election-101794039965397.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T08:35:02+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:ABP Group",
+    "google-news:‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "google-news:अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
+    "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
+   ],
+   "top": {
+    "IN": 10,
+    "IN-nation": 6,
+    "IN-hi-nation": 10
+   },
+   "top_score": 0.94,
+   "top_headlines": [
+    "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
+    "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
+   ],
+   "hindi_owners": [
+    "ABP Group",
+    "Network18"
    ],
    "audience": "india",
    "lane": "sensitive"
@@ -1799,20 +1755,21 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4
+    "IN": 1
    },
-   "top_score": 0.85,
+   "top_score": 1.0,
    "top_headlines": [
     "5 killed as gunman opens fire in Poland's busy market, shot by cops"
    ],
    "hindi_owners": [
+    "India Today Group",
     "NDTV"
    ],
    "audience": "world",
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261107-Q468324",
+   "id": "kh-20261108-Q468324",
    "qid": "Q468324",
    "title": "L. K. Advani",
    "name": "L. K. Advani",
@@ -1821,32 +1778,34 @@
    "kind": "explainer",
    "category": "health",
    "category_hi": "स्वास्थ्य",
-   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+   "story": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
    "story_keys": [
     "enter",
     "good",
     "health",
-    "special",
-    "tomorrow"
+    "special"
    ],
    "date": "2026-11-07",
    "news_at": "2026-11-07T17:32:06+00:00",
    "owners": [
     "India Today Group",
     "Network18",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "TV9 Network"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+    "LK Advani enters 100th year today, BJP to hold special hawan for good health",
     "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
     "Bharat Ratna LK Advani enters 100th year"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "लालकृष्ण आडवाणी का आज 100वां जन्मदिन, बड़े कार्यक्रम की तैयारी में BJP, जानें क्या होगा खास"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
@@ -1876,7 +1835,7 @@
      "at": "2026-11-07T15:20:55+00:00"
     },
     {
-     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+     "title": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
      "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -1889,37 +1848,38 @@
    "via": [
     "outlet:India Today Group",
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "TV9 Network"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
   },
   {
    "qid": "Q142077465",
    "title": "2026 Kraków shooting",
-   "fame": 75200,
+   "fame": 75000,
    "views": 0,
-   "traffic": 200,
+   "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-07T18:17:23.494835+00:00",
+   "news_at": "2026-11-07T18:55:19.174768+00:00",
    "headlines": [
     "Kraków shooting latest updates: six killed and more than a dozen injured, police say"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "geos": [
-    "IN",
     "world"
    ],
    "label_hi": null,
    "via": [
-    "google-trends-IN:krakow",
     "wikipedia-current-events-2026-11-07",
     "google-news:Kraków shooting latest updates: six killed and more than a dozen injured, police say",
     "outlet:Guardian Media Group"
@@ -1936,7 +1896,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-07T17:59:04+00:00"
+     "at": "2026-11-07T18:39:30+00:00"
     },
     {
      "title": "Six dead after gunman opens fire ‘at random’ in Kraków market square",
@@ -1962,188 +1922,8 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
+   "audience": "world",
    "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261107-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-   "story_keys": [
-    "approval",
-    "dam",
-    "halt",
-    "urge"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T17:16:02+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-    "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-    "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "मेकेदाटु",
-   "reports": [
-    {
-     "title": "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-project-vijay-urges-modi-halt-approvals-site-inspection-3034644-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:16:02+00:00"
-    },
-    {
-     "title": "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-     "url": "https://www.ndtv.com/india-news/vijay-urges-pm-modi-to-deny-mekedatu-dam-approval-without-states-consent-12297805#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:26:32+00:00"
-    },
-    {
-     "title": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-     "url": "https://economictimes.indiatimes.com/news/india/mekedatu-row-tamil-nadu-cm-vijay-urges-pm-modi-to-halt-karnataka-dam-proposal-without-state-consent/articleshow/135635131.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T11:27:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261107-Q66616",
-   "qid": "Q66616",
-   "title": "Indore",
-   "name": "Indore",
-   "phrase": "Indore",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-   "story_keys": [
-    "concert",
-    "diljit",
-    "dosanjh",
-    "patiala",
-    "peg'",
-    "song"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T15:38:23+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-    "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-    "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why"
-   ],
-   "hindi_headlines": [
-    "दिलजीत दोसांझ का इंदौर कॉन्सर्ट, 'पटियाला पेग' समेत 4 गानों पर रोक, बच्चों को लेकर सख्ती",
-    "इंदौर में 'पटियाला पैग' समेत 4 गाने नहीं गा पाएंगे दिलजीत दोसांझ"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंदौर",
-   "reports": [
-    {
-     "title": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-     "url": "https://www.ndtv.com/india-news/patiala-peg-3-other-songs-banned-from-diljit-dosanjhs-indore-concert-12297748#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:38:23+00:00"
-    },
-    {
-     "title": "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why",
-     "url": "https://www.indiatoday.in/entertainment/music/story/diljit-dosanjh-indore-concert-four-songs-barred-over-alcohol-gun-culture-3034533-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T14:12:23+00:00"
-    },
-    {
-     "title": "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-     "url": "https://timesofindia.indiatimes.com/city/indore/patiala-peg-5-tara-theke-among-4-diljit-dosanjh-songs-barred-from-indore-concert/articleshow/135637575.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T13:08:24+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q5962128",
@@ -2301,43 +2081,88 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q922227",
-   "title": "Richard Lloyd (guitarist)",
-   "fame": 200,
-   "views": 0,
-   "traffic": 200,
+   "id": "kh-20261108-Q330658-update",
+   "qid": "Q330658",
+   "title": "Indian Air Force",
+   "name": "Indian Air Force",
+   "phrase": "Indian Air Force",
+   "person": false,
+   "kind": "explainer",
+   "category": "defence",
+   "category_hi": "रक्षा",
+   "story": "US launches Iron Gate task force to choke Iran's land routes to ship weapons",
+   "story_keys": [
+    "asked",
+    "chief",
+    "complex",
+    "ex-air",
+    "exclusive",
+    "govt",
+    "land",
+    "rajnath",
+    "retiring",
+    "sport",
+    "take",
+    "urged"
+   ],
+   "date": "2026-11-08",
+   "news_at": "2026-11-07T16:16:13+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 1,
    "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "US launches Iron Gate task force to choke Iran's land routes to ship weapons",
+    "'Iron Gate': US forms special task force to restrict Iran's land exports"
+   ],
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
+   "region": "india",
+   "india_link": true,
+   "label_hi": "इंडियन एयरफोर्स",
+   "reports": [
+    {
+     "title": "US launches Iron Gate task force to choke Iran's land routes to ship weapons",
+     "url": "https://www.indiatoday.in/world/story/us-military-launches-iron-gate-task-force-to-choke-irans-land-routes-to-ship-weapons-3034604-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T16:16:13+00:00"
+    },
+    {
+     "title": "'Iron Gate': US forms special task force to restrict Iran's land exports",
+     "url": "https://timesofindia.indiatimes.com/world/middle-east/iron-gate-us-forms-special-task-force-to-restrict-irans-land-exports/articleshow/135639553.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T14:33:44+00:00"
+    }
    ],
-   "label_hi": null,
    "via": [
-    "google-trends-GB:richard lloyd"
+    "revisit:Q330658"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q922227",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-07",
-   "top": {},
+   "top": null,
    "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "revisit_of": "kh-20261103-Q330658",
+   "earlier": [
+    "इंडियन एयरफोर्स के पूर्व प्रमुख ने लिखा पत्र"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 03 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "other"
   }
  ],
  "notes": [
-  "revisit Q2745305 (9412 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: already revisited today; revisit Q330658: already revisited today; revisit Q4746875 (1006 views): 0 owners reported new news on Amit Shah since its last Short; revisit Q1058: already revi",
-  "outlets: 1267 headlines from 30 feeds (18 owners), 12 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261107-ghaziabad-explosion",
-  "explainers: 6 kh- stories (on): kh-20261107-Q1355, kh-20261107-Q163225, kh-20261107-Q417657, kh-20261107-Q37415; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer K'taka: no Wikipedia article that can be its centre",
+  "revisit Q2745305 (9413 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: last Short 9 h ago; revisit kh-20261108-Q330658-update: 2 owners' new reports on Indian Air Force (1124 views before); revisit Q4746875 (1006 views): 0 owners reported new news on Amit Sh",
+  "outlets: 1268 headlines from 30 feeds (18 owners), 10 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261107-ghaziabad-explosion",
+  "explainers: 4 kh- stories (on): kh-20261108-Q1355, kh-20261108-Q163225, kh-20261108-Q417657, kh-20261108-Q468324; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Delhi-NCR Cars WFH / Delhi-NCR Cars WFH: no Wikipedia article that can be its centre",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
@@ -2348,11 +2173,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1267,
+  "headlines": 1268,
   "feeds": 30,
   "owners": 18,
-  "matched": 12,
-  "corroborated": 9
+  "matched": 10,
+  "corroborated": 6
  },
  "emerging": [
   {
@@ -2474,13 +2299,14 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 4
+    "IN": 1
    },
-   "top_score": 0.85,
+   "top_score": 1.0,
    "top_headlines": [
     "5 killed as gunman opens fire in Poland's busy market, shot by cops"
    ],
    "hindi_owners": [
+    "India Today Group",
     "NDTV"
    ],
    "audience": "world",
@@ -2601,15 +2427,13 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 12,
-    "IN-nation": 19,
+    "IN": 11,
     "IN-hi-nation": 20
    },
-   "top_score": 0.495,
+   "top_score": 0.515,
    "top_headlines": [
-    "गाजियाबाद पुलिस चौकी के धमाके के पीछे आतंकी संगठन? तहरीक-उल-मुजाहिदीन",
-    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News",
-    "One injured in explosion at Ghaziabad police outpost; ATS, bomb disposal team at site"
+    "गाजियाबाद पुलिस चौकी धमाका-दिल्ली नंबर की संदिग्ध स्कूटी मिली: कश्मीर के आतंकी संगठन ने ली जिम्मेदारी, ATS-...",
+    "Houthis claim attacks on Riyadh airport, Aramco facilities, Saudi troops in Najran | World News"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -2620,7 +2444,7 @@
  ],
  "explainers": [
   {
-   "id": "kh-20261107-Q1355",
+   "id": "kh-20261108-Q1355",
    "qid": "Q1355",
    "title": "Bengaluru",
    "name": "Bengaluru",
@@ -2629,12 +2453,13 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+   "story": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
    "story_keys": [
+    "emergency",
     "flight",
     "found",
+    "full",
     "hijack",
-    "lucknow-bound",
     "onboard",
     "return",
     "security",
@@ -2642,7 +2467,7 @@
     "toilet"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T18:10:34+00:00",
+   "news_at": "2026-11-07T18:17:33+00:00",
    "owners": [
     "India Today Group",
     "Network18",
@@ -2656,18 +2481,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
+    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
     "Lucknow-bound IndiGo flight returns to Bengaluru after security threat onboard",
     "Bengaluru-Lucknow IndiGo Flight Turns Back Midway After Security Threat, Checks Underway",
-    "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
+    "Lucknow-bound IndiGo flight returns to Bengaluru after hijack threat note found onboard",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight"
    ],
    "hindi_headlines": [
+    "इंडिगो फ्लाइट के टॉयलेट में मिला हाईजैकिंग का धमकी भरा नोट, विमान को बेंगलुरु लौटना पड़ा",
     "इंडिगो फ्लाइट को हाईजैक की धमकी:टॉयलेट में नोट मिला; बेंगलुरु से लखनऊ जा रहा था विमान, वापस लौटा",
     "बेंगलुरु हत्याकांड- पड़ोसी राज्य में मिले पत्नी और सास के शव, गहने भी बेच आया था कैब ड्राइवर"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [
     "IN"
    ],
@@ -2677,6 +2503,16 @@
    "label_hi": "बेंगलुरु",
    "reports": [
     {
+     "title": "Bengaluru airport declares full emergency after security threat on Lucknow-bound IndiGo flight",
+     "url": "https://www.hindustantimes.com/india-news/bengaluru-airport-declares-full-emergency-after-security-threat-on-lucknow-bound-indigo-flight-101794074544636.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:17:33+00:00"
+    },
+    {
      "title": "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
      "url": "https://www.ndtv.com/india-news/hijack-threat-note-in-toilet-bengaluru-lucknow-flight-makes-u-turn-ignore-and-see-consequences-12298199#publisher=newsstand",
      "outlet": "NDTV",
@@ -2684,7 +2520,7 @@
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-07T18:10:34+00:00"
+     "at": "2026-11-07T18:15:04+00:00"
     },
     {
      "title": "IndiGo's Bengaluru-Lucknow flight returns after hijack threat note found; full emergency declared at Kempegowda Airport",
@@ -2735,24 +2571,25 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:More skeletons tumble out in Bengaluru family massacre: TV at full blast, property dispute, 20-year confl"
+    "google-news:Bengaluru family murders: Complete coverage"
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 5
+    "IN-nation": 4
    },
-   "top_score": 0.84,
+   "top_score": 0.855,
    "top_headlines": [
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
    "hindi_owners": [
+    "NDTV",
     "DB Corp"
    ],
    "audience": "india",
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261107-Q163225",
+   "id": "kh-20261108-Q163225",
    "qid": "Q163225",
    "title": "Sonia Gandhi",
    "name": "Sonia Gandhi",
@@ -2892,12 +2729,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 1,
+    "IN": 2,
     "IN-hi": 2,
-    "IN-nation": 10,
-    "IN-hi-nation": 1
+    "IN-nation": 11,
+    "IN-hi-nation": 11
    },
-   "top_score": 1.94,
+   "top_score": 1.725,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -2905,13 +2742,11 @@
    "hindi_owners": [
     "HT Media",
     "NDTV",
-    "ABP Group",
-    "Network18",
-    "BBC"
+    "ABP Group"
    ]
   },
   {
-   "id": "kh-20261107-Q417657",
+   "id": "kh-20261108-Q417657",
    "qid": "Q417657",
    "title": "Akhilesh Yadav",
    "name": "Akhilesh Yadav",
@@ -2933,7 +2768,7 @@
     "visit"
    ],
    "date": "2026-11-07",
-   "news_at": "2026-11-07T17:19:56+00:00",
+   "news_at": "2026-11-07T18:11:47+00:00",
    "owners": [
     "HT Media",
     "Network18",
@@ -2970,6 +2805,16 @@
    "label_hi": "अखिलेश यादव",
    "reports": [
     {
+     "title": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
+     "url": "https://www.ndtv.com/india-news/first-apologise-to-ram-devotees-yogi-adityanath-on-akhilesh-yadavs-ayodhya-visit-plan-12297283#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T18:11:47+00:00"
+    },
+    {
      "title": "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya",
      "url": "https://www.hindustantimes.com/india-news/apologise-to-ram-bhakts-first-yogi-adityanath-ahead-of-akhilesh-yadavs-visit-to-ayodhya-101794070474178.html",
      "outlet": "Hindustan Times",
@@ -2978,16 +2823,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-07T17:19:56+00:00"
-    },
-    {
-     "title": "'Apologise To Ram Bhakts': Yogi Adityanath On Akhilesh Yadav's Ayodhya Temple Visit Plan",
-     "url": "https://www.ndtv.com/india-news/first-apologise-to-ram-devotees-yogi-adityanath-on-akhilesh-yadavs-ayodhya-visit-plan-12297283#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:09:42+00:00"
     },
     {
      "title": "Apologise to Ram devotees: CM Yogi to Akhilesh Yadav as SP chief plans Ayodhya visit",
@@ -3046,115 +2881,30 @@
     "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:ABP Group",
-    "google-news:'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
-    "google-news:Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration | India News",
-    "google-news:अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद"
+    "google-news:‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "google-news:अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
+    "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 2,
-    "IN-nation": 4,
-    "IN-hi-nation": 11
+    "IN": 10,
+    "IN-nation": 6,
+    "IN-hi-nation": 10
    },
-   "top_score": 1.355,
+   "top_score": 0.94,
    "top_headlines": [
     "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
-    "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
-    "Akhilesh Yadav to visit Ayodhya Ram Temple with family for first time since consecration | India News",
-    "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali"
+    "‘Apologise to Ram Bhakts first’: Yogi Adityanath ahead of Akhilesh Yadav's visit to Ayodhya | India News",
+    "Ahead of PM Modi's visit, India, EU conclude negotiations on flagship research, innovation programme"
    ],
    "hindi_owners": [
     "ABP Group",
     "Network18"
-   ]
-  },
-  {
-   "id": "kh-20261107-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-   "story_keys": [
-    "approval",
-    "dam",
-    "halt",
-    "urge"
    ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T17:16:02+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-    "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-    "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "मेकेदाटु",
-   "reports": [
-    {
-     "title": "CM Vijay asks PM to halt Mekedatu dam reviews, approvals amid farmers' concerns",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-project-vijay-urges-modi-halt-approvals-site-inspection-3034644-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:16:02+00:00"
-    },
-    {
-     "title": "Vijay Urges PM Modi To Deny Mekedatu Dam Approval Without States' Consent",
-     "url": "https://www.ndtv.com/india-news/vijay-urges-pm-modi-to-deny-mekedatu-dam-approval-without-states-consent-12297805#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:26:32+00:00"
-    },
-    {
-     "title": "Mekedatu row: Vijay urges PM to halt Karnataka dam",
-     "url": "https://economictimes.indiatimes.com/news/india/mekedatu-row-tamil-nadu-cm-vijay-urges-pm-modi-to-halt-karnataka-dam-proposal-without-state-consent/articleshow/135635131.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T11:27:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "sensitive"
   },
   {
-   "id": "kh-20261107-Q468324",
+   "id": "kh-20261108-Q468324",
    "qid": "Q468324",
    "title": "L. K. Advani",
    "name": "L. K. Advani",
@@ -3163,32 +2913,34 @@
    "kind": "explainer",
    "category": "health",
    "category_hi": "स्वास्थ्य",
-   "story": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+   "story": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
    "story_keys": [
     "enter",
     "good",
     "health",
-    "special",
-    "tomorrow"
+    "special"
    ],
    "date": "2026-11-07",
    "news_at": "2026-11-07T17:32:06+00:00",
    "owners": [
     "India Today Group",
     "Network18",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "TV9 Network"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+    "LK Advani enters 100th year today, BJP to hold special hawan for good health",
     "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
     "Bharat Ratna LK Advani enters 100th year"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "लालकृष्ण आडवाणी का आज 100वां जन्मदिन, बड़े कार्यक्रम की तैयारी में BJP, जानें क्या होगा खास"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
@@ -3218,7 +2970,7 @@
      "at": "2026-11-07T15:20:55+00:00"
     },
     {
-     "title": "LK Advani enters 100th year tomorrow, BJP to hold special hawan for good health",
+     "title": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
      "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -3231,108 +2983,17 @@
    "via": [
     "outlet:India Today Group",
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261107-Q66616",
-   "qid": "Q66616",
-   "title": "Indore",
-   "name": "Indore",
-   "phrase": "Indore",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-   "story_keys": [
-    "concert",
-    "diljit",
-    "dosanjh",
-    "patiala",
-    "peg'",
-    "song"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T15:38:23+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-    "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-    "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why"
-   ],
-   "hindi_headlines": [
-    "दिलजीत दोसांझ का इंदौर कॉन्सर्ट, 'पटियाला पेग' समेत 4 गानों पर रोक, बच्चों को लेकर सख्ती",
-    "इंदौर में 'पटियाला पैग' समेत 4 गाने नहीं गा पाएंगे दिलजीत दोसांझ"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंदौर",
-   "reports": [
-    {
-     "title": "'Patiala Peg', 3 Other Songs Banned From Diljit Dosanjh's Indore Concert",
-     "url": "https://www.ndtv.com/india-news/patiala-peg-3-other-songs-banned-from-diljit-dosanjhs-indore-concert-12297748#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:38:23+00:00"
-    },
-    {
-     "title": "Diljit Dosanjh can't sing 'Patiala Peg', '5 Tara Theke' at Indore concert, here's why",
-     "url": "https://www.indiatoday.in/entertainment/music/story/diljit-dosanjh-indore-concert-four-songs-barred-over-alcohol-gun-culture-3034533-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T14:12:23+00:00"
-    },
-    {
-     "title": "Dosanjh barred from singing 4 songs at Indore concert amid child safety concerns",
-     "url": "https://timesofindia.indiatimes.com/city/indore/patiala-peg-5-tara-theke-among-4-diljit-dosanjh-songs-barred-from-indore-concert/articleshow/135637575.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T13:08:24+00:00"
-    }
-   ],
-   "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:NDTV"
+    "outlet:TV9 Network"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
-    "NDTV",
-    "India Today Group"
+    "TV9 Network"
    ],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
   }
  ]
 }
