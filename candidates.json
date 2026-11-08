@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T00:41:47+00:00",
+ "at": "2026-11-08T00:56:33+00:00",
  "trending": [
   {
    "id": "kh-20261108-Q1355",
@@ -131,7 +131,7 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:Bengaluru family murders: Complete coverage",
+    "google-news:Mutton Feast, Rolls Of Tape: How Cab Driver Killed Wife, Relatives In Bengaluru",
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
@@ -145,9 +145,7 @@
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
-   "hindi_owners": [
-    "HT Media"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -243,12 +241,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 6,
+    "IN": 9,
     "IN-hi": 3,
     "IN-nation": 4,
     "IN-hi-nation": 6
    },
-   "top_score": 1.755,
+   "top_score": 1.68,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -397,17 +395,128 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 10,
+    "IN-nation": 5,
+    "IN-hi-nation": 20
    },
-   "top_score": 0.84,
+   "top_score": 0.805,
    "top_headlines": [
+    "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
     "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
     "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "boss",
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-08T00:17:57+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
+   "reports": [
+    {
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+     "url": "https://www.indiatoday.in/world/story/trump-wanted-ufc-boss-dana-white-as-white-house-press-secretary-but-he-turned-him-down-3034679-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T00:17:57+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-nation": 8
+   },
+   "top_score": 1.045,
+   "top_headlines": [
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Washington Governor Celebrates Diwali With Indian American Community",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261108-Q796885",
@@ -588,12 +697,12 @@
   {
    "id": "nw-20261107-krakow-attack",
    "qid": null,
-   "title": "Poland: Gunman kills 6 in Krakow main square",
+   "title": "Gunmen kills six in Krakow, three more bodies found at his house",
    "name": "Krakow",
    "kind": "incident",
    "category": "attack",
    "date": "2026-11-07",
-   "news_at": "2026-11-07T21:47:58+00:00",
+   "news_at": "2026-11-07T22:47:06+00:00",
    "owners": [
     "France Médias Monde",
     "India Today Group",
@@ -621,6 +730,16 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Gunmen kills six in Krakow, three more bodies found at his house",
+     "url": "https://www.france24.com/en/gunmen-kills-six-in-krakow-three-more-bodies-found-at-his-house",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T22:47:06+00:00"
+    },
     {
      "title": "Poland: Gunman kills 6 in Krakow main square",
      "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square/a-79886489?maca=en-rss-en-all-1573-rdf",
@@ -713,10 +832,11 @@
     "India Today Group",
     "Network18",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -725,9 +845,10 @@
     "Bharat Ratna LK Advani enters 100th year"
    ],
    "hindi_headlines": [
+    "लालकृष्ण आडवाणी: शताब्दी की ओर बढ़ती प्रेरणादायी यात्रा...भावुक पल; जो जिम्मेदारी मिली, पूरी निष्ठा से निभाया",
     "लालकृष्ण आडवाणी का 99वां जन्मदिन आज:मोदी ने लिखा- प्रभु उन्हें दीर्घायु प्रदान करें; भाजपा पूजा-हवन से कार्यक्रमों की शुरुआत करेगी"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [
     "IN"
    ],
@@ -771,12 +892,14 @@
     "outlet:India Today Group",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:DB Corp"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "Amar Ujala",
     "DB Corp"
    ],
    "audience": "india",
@@ -963,56 +1086,6 @@
    "lane": "sensitive"
   },
   {
-   "qid": "Q141615137",
-   "title": "2026 French student protests",
-   "fame": 75000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-08T00:00:00+00:00",
-   "headlines": [
-    "French student unions say 250,000 people took part in Saturday’s protests"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": "२०२६ फ़्रान्सीसी विद्यार्थी विरोध प्रदर्शन",
-   "via": [
-    "wikipedia-current-events-2026-11-07",
-    "google-news:French student unions say 250,000 people took part in Saturday’s protests",
-    "outlet:France Médias Monde"
-   ],
-   "owners": [
-    "France Médias Monde"
-   ],
-   "reports": [
-    {
-     "title": "French student unions say 250,000 people took part in Saturday’s protests",
-     "url": "https://www.france24.com/en/france/20261107-live-france-braces-for-more-nationwide-protests-as-yellow-vests-urge-mass-disobedience",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-07T08:17:22+00:00"
-    }
-   ],
-   "id": "wk-Q141615137-2026w45",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-08",
-   "coords": null,
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "id": "kh-20261108-Q2749583",
    "qid": "Q2749583",
    "title": "Presidency University, Kolkata",
@@ -1100,6 +1173,37 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "qid": "Q141615137",
+   "title": "2026 French student protests",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-11-08T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": "२०२६ फ़्रान्सीसी विद्यार्थी विरोध प्रदर्शन",
+   "via": [
+    "wikipedia-current-events-2026-11-07"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141615137-2026w45",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-08",
+   "coords": null,
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q116992476",
@@ -1447,7 +1551,7 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:Bengaluru family murders: Complete coverage",
+    "google-news:Mutton Feast, Rolls Of Tape: How Cab Driver Killed Wife, Relatives In Bengaluru",
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
@@ -1461,9 +1565,7 @@
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
-   "hindi_owners": [
-    "HT Media"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -1607,11 +1709,13 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 10,
+    "IN-nation": 5,
+    "IN-hi-nation": 20
    },
-   "top_score": 0.84,
+   "top_score": 0.805,
    "top_headlines": [
+    "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
     "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
     "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali"
    ],
@@ -1742,6 +1846,211 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261108-Q468324",
+   "qid": "Q468324",
+   "title": "L. K. Advani",
+   "name": "L. K. Advani",
+   "phrase": "Ratna LK Advani",
+   "person": true,
+   "kind": "explainer",
+   "category": "health",
+   "category_hi": "स्वास्थ्य",
+   "story": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+   "story_keys": [
+    "enter",
+    "good",
+    "health",
+    "special"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-07T17:32:06+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "Amar Ujala",
+    "DB Corp"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+    "Bharat Ratna LK Advani enters 100th year"
+   ],
+   "hindi_headlines": [
+    "लालकृष्ण आडवाणी: शताब्दी की ओर बढ़ती प्रेरणादायी यात्रा...भावुक पल; जो जिम्मेदारी मिली, पूरी निष्ठा से निभाया",
+    "लालकृष्ण आडवाणी का 99वां जन्मदिन आज:मोदी ने लिखा- प्रभु उन्हें दीर्घायु प्रदान करें; भाजपा पूजा-हवन से कार्यक्रमों की शुरुआत करेगी"
+   ],
+   "hindi_news": 2,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लालकृष्ण आडवाणी",
+   "reports": [
+    {
+     "title": "Bharat Ratna LK Advani enters 100th year",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T17:32:06+00:00"
+    },
+    {
+     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
+     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T15:20:55+00:00"
+    },
+    {
+     "title": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
+     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T12:47:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
+    "outlet:DB Corp"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Amar Ujala",
+    "DB Corp"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "boss",
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-08T00:17:57+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
+   "reports": [
+    {
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+     "url": "https://www.indiatoday.in/world/story/trump-wanted-ufc-boss-dana-white-as-white-house-press-secretary-but-he-turned-him-down-3034679-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T00:17:57+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-nation": 8
+   },
+   "top_score": 1.045,
+   "top_headlines": [
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Washington Governor Celebrates Diwali With Indian American Community",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261108-Q2749583",
    "qid": "Q2749583",
    "title": "Presidency University, Kolkata",
@@ -1829,98 +2138,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261108-Q468324",
-   "qid": "Q468324",
-   "title": "L. K. Advani",
-   "name": "L. K. Advani",
-   "phrase": "Ratna LK Advani",
-   "person": true,
-   "kind": "explainer",
-   "category": "health",
-   "category_hi": "स्वास्थ्य",
-   "story": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
-   "story_keys": [
-    "enter",
-    "good",
-    "health",
-    "special"
-   ],
-   "date": "2026-11-07",
-   "news_at": "2026-11-07T17:32:06+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "LK Advani enters 100th year today, BJP to hold special hawan for good health",
-    "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
-    "Bharat Ratna LK Advani enters 100th year"
-   ],
-   "hindi_headlines": [
-    "लालकृष्ण आडवाणी का 99वां जन्मदिन आज:मोदी ने लिखा- प्रभु उन्हें दीर्घायु प्रदान करें; भाजपा पूजा-हवन से कार्यक्रमों की शुरुआत करेगी"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "लालकृष्ण आडवाणी",
-   "reports": [
-    {
-     "title": "Bharat Ratna LK Advani enters 100th year",
-     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/bharat-ratna-lk-advani-ji-at-100-a-life-of-service-ideology-and-nation-building/articleshow/135643044.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:32:06+00:00"
-    },
-    {
-     "title": "Veteran BJP Leader LK Advani Enters 100th Year Tomorrow, Party Plans Special Event For His Good Health",
-     "url": "https://www.news18.com/india/veteran-bjp-leader-lk-advani-enters-100th-year-tomorrow-party-plans-special-event-for-his-good-health-10417113.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T15:20:55+00:00"
-    },
-    {
-     "title": "LK Advani enters 100th year today, BJP to hold special hawan for good health",
-     "url": "https://www.indiatoday.in/india/story/lk-advani-99th-birthday-100-years-bjp-hawan-prayers-national-headquarters-3034498-2026-11-07?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T12:47:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "DB Corp"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261108-Q796885",
@@ -2277,8 +2494,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9421 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit kh-20261108-Q163225-update: 2 owners' new reports on Sonia Gandhi (2169 views before); revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1131 headlines from 28 feeds (16 owners), 21 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261107-krakow-attack",
-  "explainers: 6 kh- stories (on): kh-20261108-Q1355, kh-20261108-Q163225, kh-20261108-Q417657, kh-20261108-Q796885; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer Delhi-NCR Cars WFH / Delhi-NCR Cars WFH: no Wikipedia article that can be its centre; explainer Diwali: no Wikipedia article that can be its centre",
+  "outlets: 1125 headlines from 28 feeds (16 owners), 18 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261107-krakow-attack",
+  "explainers: 7 kh- stories (on): kh-20261108-Q1355, kh-20261108-Q163225, kh-20261108-Q417657, kh-20261108-Q35525; dropped: explainer Diwali / Deepotsav: no Wikipedia article that can be its centre; explainer From GRAP: fewer than 3 owners' headlines name it and the story; explainer Diwali: no Wikipedia article that can be its centre",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
@@ -2290,22 +2507,22 @@
   "outlet tv9-hi: ReadTimeout: HTTPSConnectionPool(host='www.tv9hindi.com', port=443): Read timed out. (read timeout=30)"
  ],
  "outlets": {
-  "headlines": 1131,
+  "headlines": 1125,
   "feeds": 28,
   "owners": 16,
-  "matched": 21,
-  "corroborated": 7
+  "matched": 18,
+  "corroborated": 8
  },
  "emerging": [
   {
    "id": "nw-20261107-krakow-attack",
    "qid": null,
-   "title": "Poland: Gunman kills 6 in Krakow main square",
+   "title": "Gunmen kills six in Krakow, three more bodies found at his house",
    "name": "Krakow",
    "kind": "incident",
    "category": "attack",
    "date": "2026-11-07",
-   "news_at": "2026-11-07T21:47:58+00:00",
+   "news_at": "2026-11-07T22:47:06+00:00",
    "owners": [
     "France Médias Monde",
     "India Today Group",
@@ -2333,6 +2550,16 @@
    "india_link": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "Gunmen kills six in Krakow, three more bodies found at his house",
+     "url": "https://www.france24.com/en/gunmen-kills-six-in-krakow-three-more-bodies-found-at-his-house",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T22:47:06+00:00"
+    },
     {
      "title": "Poland: Gunman kills 6 in Krakow main square",
      "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square/a-79886489?maca=en-rss-en-all-1573-rdf",
@@ -2534,7 +2761,7 @@
     "outlet:NDTV",
     "outlet:DB Corp",
     "google-news:'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet",
-    "google-news:Bengaluru family murders: Complete coverage",
+    "google-news:Mutton Feast, Rolls Of Tape: How Cab Driver Killed Wife, Relatives In Bengaluru",
     "google-news:IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग"
    ],
    "top": {
@@ -2548,9 +2775,7 @@
     "IndiGo फ्लाइट को मिली धमकी, बेंगलुरु से लखनऊ जा रहे विमान की इमरजेंसी लैंडिंग",
     "'Ignore, See Consequences': IndiGo Flight Returns To Bengaluru After Hijack Threat Note Found In Toilet"
    ],
-   "hindi_owners": [
-    "HT Media"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -2646,12 +2871,12 @@
     "google-news:सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?"
    ],
    "top": {
-    "IN": 6,
+    "IN": 9,
     "IN-hi": 3,
     "IN-nation": 4,
     "IN-hi-nation": 6
    },
-   "top_score": 1.755,
+   "top_score": 1.68,
    "top_headlines": [
     "सोनिया गांधी ने इमरजेंसी, संजय गांधी और बाबरी मस्जिद पर क्या कहा?",
     "‘My thought was always: he will be killed next’: Sonia Gandhi on marrying into an Indian political dynasty and her husband’s assassination"
@@ -2800,17 +3025,128 @@
     "google-news:अखिलेश यादव बाप के नाम पर बने थे मुख्यमंत्री, BJP नेता के बयान से खलबली"
    ],
    "top": {
-    "IN": 9,
-    "IN-nation": 5
+    "IN": 10,
+    "IN-nation": 5,
+    "IN-hi-nation": 20
    },
-   "top_score": 0.84,
+   "top_score": 0.805,
    "top_headlines": [
+    "अखिलेश यादव ने चौंकाया, 12 दिसंबर को परिवार समेत अयोध्या के राम मंदिर जाएंगे, रामलला का लेंगे आशीर्वाद",
     "'First apologise to devotees, saints': UP CM Yogi ahead of Akhilesh Yadav's Ram Temple visit",
     "Ayodhya Lights Up With Over 30 Lakh Diyas Ahead Of Diwali"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261108-Q35525",
+   "qid": "Q35525",
+   "title": "White House",
+   "name": "White House",
+   "phrase": "White House",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+   "story_keys": [
+    "boss",
+    "job",
+    "offer",
+    "post",
+    "press",
+    "role",
+    "secretary",
+    "take"
+   ],
+   "date": "2026-11-07",
+   "news_at": "2026-11-08T00:17:57+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Trump offers White House press secretary role to Dana White",
+    "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "वाइट हाउस",
+   "reports": [
+    {
+     "title": "Trump offers White House press secretary role to Dana White",
+     "url": "https://www.dw.com/en/trump-offers-white-house-press-secretary-role-to-dana-white/a-79888119?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-07T19:46:00+00:00"
+    },
+    {
+     "title": "Trump wanted UFC boss Dana White as White House press secretary, but he said no",
+     "url": "https://www.indiatoday.in/world/story/trump-wanted-ufc-boss-dana-white-as-white-house-press-secretary-but-he-turned-him-down-3034679-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T00:17:57+00:00"
+    },
+    {
+     "title": "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+     "url": "https://timesofindia.indiatimes.com/world/us/dana-please-take-the-job-trump-offers-ufc-chief-white-house-press-secretary-post/articleshow/135645729.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:43:59+00:00"
+    },
+    {
+     "title": "Dana, take the job: Trump offers White House press secretary post to UFC boss",
+     "url": "https://www.indiatoday.in/world/us-news/story/trump-offers-ufc-boss-dana-white-white-house-press-secretary-post-3034670-2026-11-08?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-07T19:19:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "google-news:‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "google-news:Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-nation": 8
+   },
+   "top_score": 1.045,
+   "top_headlines": [
+    "‘Dana, please take the job!’: Trump offers UFC chief White House press secy post",
+    "Washington Governor Celebrates Diwali With Indian American Community",
+    "Donald Trump celebrates Diwali at White House with Indian-American leaders, top CEOs"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261108-Q796885",
@@ -2961,10 +3297,11 @@
     "India Today Group",
     "Network18",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2973,9 +3310,10 @@
     "Bharat Ratna LK Advani enters 100th year"
    ],
    "hindi_headlines": [
+    "लालकृष्ण आडवाणी: शताब्दी की ओर बढ़ती प्रेरणादायी यात्रा...भावुक पल; जो जिम्मेदारी मिली, पूरी निष्ठा से निभाया",
     "लालकृष्ण आडवाणी का 99वां जन्मदिन आज:मोदी ने लिखा- प्रभु उन्हें दीर्घायु प्रदान करें; भाजपा पूजा-हवन से कार्यक्रमों की शुरुआत करेगी"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [
     "IN"
    ],
@@ -3019,12 +3357,14 @@
     "outlet:India Today Group",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:DB Corp"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "Amar Ujala",
     "DB Corp"
    ],
    "audience": "india",
