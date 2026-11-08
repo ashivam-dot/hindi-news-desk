@@ -43,8 +43,11 @@ CREDIT = "तथ्य: Wikipedia (CC BY-SA 4.0) और Wikidata (CC0); तस�
 # The first dry run of the full template (2026-10-21) passed 90 words in five 18-word beats: 40 s.
 # 2026-10-23: about 20-25 s. The reference channel's (Chaukanna News) Shorts that reach 1-3K views run 15-26 s; ours
 # ran 31-35 s at the narrator's measured 2.3 words a second.
-MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 40, 62, 14
+# 2026-11-08: 62 -> 66 (about 29 s). Every length refusal since 25 Oct was a draft over the ceiling, 7 of 11 by 1-4
+# words at 63-66, and each cost a top story (kh-20261108-Q1058, PM Modi in Bastar).
+MIN_WORDS, MAX_WORDS, MAX_BEAT_WORDS = 40, 66, 14
 WORDS_ASKED = "45 to 58"
+LEAST_BEATS = 5  # SCHEMA's minItems
 DRAFTS = 4
 HOOK_WORDS = 4  # "मुम्बई में बॉलीवुड अभिनेता टाइगर श्रॉफ की कार पर..." made viewers wait for the name (2026-10-20)
 PLACE_FACE = 0.06  # a face this share of a place photo's shorter side features a person
@@ -680,6 +683,35 @@ def subject_in(text: str, subject: dict, names: list[dict]) -> bool:
     return any(o and hindi.contains(text, o) for o in options)
 
 
+def shorten(draft: dict, max_words: int) -> list[str]:
+    """Bring an over-long draft under max_words by dropping whole middle beats (never the hook or the last beat, never
+    below LEAST_BEATS or MIN_WORDS, never a beat that alone says one of the draft's names), a beat without figures
+    first, then the one leaving the total nearest 52. Returns the dropped lines. Every check still runs on the result:
+    the writer kept drafts of 63-76 words through all its rewrites (11 stories lost, 25 Oct-8 Nov)."""
+    beats = draft.get("beats") or []
+    names = [n["hi"].strip() for n in draft.get("names") or [] if isinstance(n, dict) and isinstance(n.get("hi"), str)
+             and n["hi"].strip()]
+
+    def count(b: dict) -> int:
+        return len(str(b.get("say", "")).split())
+
+    def alone(i: int) -> bool:
+        others = " ".join(str(b.get("say", "")) for j, b in enumerate(beats) if j != i)
+        return any(hindi.contains(str(beats[i].get("say", "")), n) and not hindi.contains(others, n) for n in names)
+
+    dropped = []
+    while (total := sum(count(b) for b in beats)) > max_words and len(beats) > LEAST_BEATS:
+        options = [i for i in range(1, len(beats) - 1) if not alone(i) and total - count(beats[i]) >= MIN_WORDS]
+        if not options:
+            break
+        i = min(options, key=lambda i: (bool(re.search(r"\d", str(beats[i].get("say", "")))),
+                                        abs(total - count(beats[i]) - 52)))
+        dropped.append(str(beats.pop(i).get("say", "")))
+    if dropped:
+        draft["beats"] = beats
+    return dropped
+
+
 def validate(draft: dict, photos: list[dict], subject: dict, ground_en: str, ground_hi: str,
              hi_names: dict[str, str], banned_names: list[str], kind: str, agreed_toll: bool,
              angle: str | None = None, reports: list[dict] | None = None,
@@ -1068,6 +1100,8 @@ def write(kind: str, subject: dict, pronoun: str, facts: list[str], source_en: s
     retained = None
 
     def hard_checks(candidate, attempt):
+        if cut := shorten(candidate, quiet.MAX_WORDS if quiet.active() else MAX_WORDS):
+            candidate["shortened"] = cut
         problems, doubtful = validate(candidate, photos, subject, ground_en, ground_hi,
                                       spellings(candidate, hi_names, looked), banned_names or [],
                                       kind, agreed_toll, angle, reports, hurt_ok)
@@ -1532,9 +1566,14 @@ def build_death(cand: dict) -> Short:
         raise ValueError("gate: the article has no infobox to confirm the death")
     born = next((wiki.wd_time(c["value"]) for c in wiki.claims(ent, "P569")), None)
     died = next((wiki.wd_time(c["value"]) for c in wiki.claims(ent, "P570")), None)
+    # From the headlines (explain.DEATH_NEWS) before Wikidata records it: the day it was first reported stands in for
+    # the date, which is never said, and the reports must state the death from OWNERS_NEEDED owners.
+    headline_death = bool(cand.get("reported_death")) and not died
+    if headline_death:
+        died = date.fromisoformat(cand["date"])
     if not born or not died:
         raise ValueError("gate: Wikidata lacks an exact birth or death date")
-    if str(died.year) not in raw.get("death_date", ""):
+    if not headline_death and str(died.year) not in raw.get("death_date", ""):
         raise ValueError("gate: Wikipedia's infobox does not confirm the death yet")
     days = (_today_ist() - died).days
     if days > MAX_DEATH_DAYS:
@@ -1548,6 +1587,13 @@ def build_death(cand: dict) -> Short:
     if not confirming:
         raise ValueError(f"gate: no news report states the death of {name} (Wikidata and Wikipedia alone are not "
                          "enough)")
+    if headline_death:
+        sayers = {r["owner"] for r in raw if r.get("text")
+                  and gate.states_death(f"{r.get('title', '')}. {r['text']}", [name] + ([name_hi] if name_hi else []))
+                  and not gate.denies_death(f"{r.get('title', '')}. {r['text']}", [name])}
+        if len(sayers) < gate.OWNERS_NEEDED:
+            raise ValueError(f"gate: only {len(sayers)} owners' reports state the death of {name} and Wikidata has "
+                             f"no death date yet (want {gate.OWNERS_NEEDED})")
     she, _ = stories._pronouns(ent)
     age = died.year - born.year - ((died.month, died.day) < (born.month, born.day))
     job = (ib.get("occupation") or "").split(",")[0].strip()
@@ -1562,9 +1608,11 @@ def build_death(cand: dict) -> Short:
     if len(photos) < MIN_PHOTOS:
         raise ValueError(f"gate: only {len(photos)} usable photos of {name} on Wikimedia Commons (want {MIN_PHOTOS})"
                          + (" not used by Orbitwire" if ov else ""))
-    facts_text = [f"{name} died on {stories.date_words(died)}, aged {age}.",
-                  f"{name_hi or name} का निधन {hindi.date_hi(died)} को {age} वर्ष की उम्र में हुआ।",
-                  f"Born {stories.date_words(born)}" + (f" in {ib['birth_place']}." if ib.get("birth_place") else "."),
+    death_lines = ([f"News reports of {stories.date_words(died)} say {name} has died.",
+                    f"{name_hi or name} के निधन की खबर आई है।"] if headline_death else
+                   [f"{name} died on {stories.date_words(died)}, aged {age}.",
+                    f"{name_hi or name} का निधन {hindi.date_hi(died)} को {age} वर्ष की उम्र में हुआ।"])
+    facts_text = death_lines + [f"Born {stories.date_words(born)}" + (f" in {ib['birth_place']}." if ib.get("birth_place") else "."),
                   f"जन्म: {hindi.date_hi(born)}।",
                   f"Died in {ib['death_place']}." if ib.get("death_place") else "",
                   f"Occupation: {ib.get('occupation')}." if ib.get("occupation") else "",
@@ -1586,10 +1634,14 @@ def build_death(cand: dict) -> Short:
                              title_hints=hindi_hints(cand), india=india, near=near)
     name_hi = name_hi or _pair_for(draft, name) or name
     facts = [Fact("name", name, page, stories.numbers_in(name), "Wikipedia article title"),
-             Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
-                  f"Wikidata P570 = {died.isoformat()}; infobox death_date present"),
-             Fact("born", hindi.date_hi(born), item, [str(born.day), str(born.year)], f"Wikidata P569 = {born}"),
-             Fact("age", str(age), item, [str(age)], "computed from P569 and P570")]
+             Fact("born", hindi.date_hi(born), item, [str(born.day), str(born.year)], f"Wikidata P569 = {born}")]
+    if headline_death:
+        facts.insert(1, Fact("died", str(died.year), confirming[0]["url"], [],
+                             f"news reports state the death; Wikidata has no P570 yet ({confirming[0]['says'][:120]})"))
+    else:
+        facts.insert(1, Fact("died", hindi.date_hi(died), item, [str(died.day), str(died.year)],
+                             f"Wikidata P570 = {died.isoformat()}; infobox death_date present"))
+        facts.append(Fact("age", str(age), item, [str(age)], "computed from P569 and P570"))
     sources = [page, item] + ([wiki.url(hi_title, "hi")] if hi_title and source_hi else [])
     sources = list(dict.fromkeys(sources + [r["url"] for r in confirming]))
     short = _short(sid, "death", name, name_hi, draft, log, used, facts, facts_text, source + "\n" + source_hi, photos,

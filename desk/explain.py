@@ -62,7 +62,15 @@ TOP_ONLY_KINDS = (
     (r"\b(actor|actress|film|movie|box office|bollywood|superstar|starrer|trailer|teaser|song|singer|celebrity|"
      r"celebs|bigg boss|wedding|marriage|birthday|movie review|film review)\b", "entertainment"),
 )
-CATEGORY_HI = {"court": "अदालत", "science": "विज्ञान", "defence": "रक्षा", "economy": "अर्थव्यवस्था",
+# A famous person's death told from the news, not after Wikidata records it: Wikidata gave Sanjay Gupta's death date
+# on 1 Nov 03:06 UTC (an earlier edit was undone as "not referenced"), the desk told it two hours later, and
+# Chaukanna, from the headlines, 13 hours earlier (1,896 views against 216). Only a person with a Wikipedia article and
+# no death date yet; the death writer still needs reports that state it (writer.build_death).
+DEATH_NEWS = re.compile(r"\b(dies|died|passes away|passed away|demise|no more|breathes (his|her) last|"
+                        r"death of)\b", re.I)
+VIOLENT_DEATH = re.compile(r"\b(killed|shot|murder\w*|stabb\w*|suicide|crash\w*|accident\w*|attack\w*|blast|"
+                           r"explosion|drown\w*|lynch\w*|custod\w*|encounter|hanged|found dead|body)\b", re.I)
+CATEGORY_HI = {"death": "निधन", "court": "अदालत", "science": "विज्ञान", "defence": "रक्षा", "economy": "अर्थव्यवस्था",
                "policy": "नीति", "diplomacy": "कूटनीति", "weather": "मौसम", "politics": "राजनीति",
                "aviation": "विमानन", "health": "स्वास्थ्य", "world": "दुनिया", FALLBACK: "समाचार"} | TOP_ONLY
 # How headlines name the institutions Wikipedia's search misreads ("Supreme Court" finds the US court, "Railway" a
@@ -139,7 +147,11 @@ INDIA_PIDS = ("P17", "P27", "P495", "P1001")
 
 
 def category(title: str) -> str | None:
-    """The explainer category a headline names, or None (a skipped topic, an incident, or no category)."""
+    """The explainer category a headline names, or None (a skipped topic, an incident, or no category). A headline
+    reporting a natural death is "death" (DEATH_NEWS)."""
+    if DEATH_NEWS.search(title) and not VIOLENT_DEATH.search(title) \
+            and not any(re.search(p, title, re.I) for p, _ in outlets.HEADLINE_KINDS):
+        return "death"
     if SKIP.search(title) or any(re.search(p, title, re.I) for p, _ in outlets.HEADLINE_KINDS):
         return None
     cat = next((cat for pattern, cat in KINDS if re.search(pattern, title, re.I)), None)
@@ -554,6 +566,10 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
         person = HUMAN in kinds
         if person and (wiki.claims(ent, "P570") or wiki.claims(ent, "P1399")):
             continue  # deaths have their own lane; people convicted of crimes are never the centre of a Short
+        death = c["cats"].most_common(1)[0][0] == "death"
+        if death and not person:
+            notes.append(f"explainer {name}: a death story whose centre is not a person")
+            continue
         seen.add(qid)
         label_hi = wiki.common_hindi(ent)
         spellings = hindi_names_of(label_hi)
@@ -573,8 +589,10 @@ def find(items: list[dict], now: datetime | None = None, skip_qids: set[str] | N
         newest = max(i["at"] for i in c["items"])
         ranked = sorted(own, key=outlets._rank)
         story = lead_row(c)["item"]["title"]
-        out.append({"id": story_id(now, qid), "qid": qid, "title": article, "name": wiki.label(ent) or name,
-                    "phrase": name, "person": person, "kind": "explainer", "category": cat,
+        out.append({"id": f"wk-{qid}" if death else story_id(now, qid), "qid": qid, "title": article,
+                    "name": wiki.label(ent) or name, "phrase": name, "person": person,
+                    "kind": "death" if death else "explainer", "category": cat,
+                    **({"reported_death": True} if death else {}),
                     "category_hi": CATEGORY_HI[cat], "story": story, "story_keys": core,
                     "date": first.date().isoformat(), "news_at": newest, "owners": who, "fame": fame, "news": fame,
                     "views": 0, "traffic": 0,
