@@ -1,25 +1,27 @@
 {
- "at": "2026-11-08T17:57:34+00:00",
+ "at": "2026-11-08T18:12:32+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 24 trending",
+  "watch: 12 candidates from 25 trending",
   "revisit Q2745305 (9422 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: already revisited today; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1007 views): 0 owners reported new news on Am",
-  "outlets: 1557 headlines from 46 feeds (17 owners), 16 matched to articles, 12 candidates with 2+ owners, 3 nw- stories (on): nw-20261108-egypt-rail, nw-20261107-krakow-attack, nw-20261108-senegal-maritime",
+  "outlets: 1554 headlines from 46 feeds (17 owners), 16 matched to articles, 13 candidates with 2+ owners, 3 nw- stories (on): nw-20261108-egypt-rail, nw-20261107-krakow-attack, nw-20261108-senegal-maritime",
   "explainers: 9 kh- stories (on): kh-20261108-Q1353, kh-20261108-Q468324, kh-20261108-Q163225, kh-20261108-Q796885; dropped: explainer Muhurat / Diwali: no Wikipedia article that can be its centre; explainer Diwali / Bastar: no Wikipedia article that can be its centre; explainer Seattle: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261108-Q117803537: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261108-Q138339948: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261108-Q5465383: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop nw-20261108-senegal-maritime: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q5962128: 54 h old and no longer trending live",
   "drop kh-20261108-Q6847225: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261108-Q23771218: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261108-senegal-maritime; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261108-Q117803537, kh-20261108-Q660297",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q142086610, nw-20261108-senegal-maritime; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261108-Q138339948, kh-20261108-Q660297",
+  "wait wk-Q142086610: gate: the article is under 6 hours old; facts may still move (ready in 4.8 h)",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
