@@ -1,34 +1,24 @@
 {
- "at": "2026-11-08T08:32:49+00:00",
+ "at": "2026-11-08T08:57:58+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 128 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.114, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.0}, 'category:attack': {'n': 13, 'lift': 1.224, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.8}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 11 candidates from 20 trending",
-  "revisit Q2745305 (9422 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit kh-20261108-Q163225-update: 2 owners' new reports on Sonia Gandhi (2169 views before); revisit Q330658 (1124 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1124 headlines from 29 feeds (17 owners), 8 matched to articles, 5 candidates with 2+ owners, 1 nw- stories (on): nw-20261107-krakow-attack",
-  "explainers: 4 kh- stories (on): kh-20261108-Q1353, kh-20261108-Q796885, kh-20261108-Q660297, kh-20261108-Q351609; dropped: explainer Diwali / Bastar: no Wikipedia article that can be its centre; explainer Diwali / Diwali Here: no Wikipedia article that can be its centre; explainer Diwali / Gold Muhurat: no Wikipedia article that can be its centre",
+  "watch: 8 candidates from 18 trending",
+  "outlets: 1130 headlines from 29 feeds (17 owners), 8 matched to articles, 4 candidates with 2+ owners, 1 nw- stories (on): nw-20261107-krakow-attack",
+  "explainers: 3 kh- stories (on): kh-20261108-Q1353, kh-20261108-Q796885, kh-20261108-Q351609; dropped: explainer Diwali / Bastar: no Wikipedia article that can be its centre; explainer Diwali / Diwali Here: no Wikipedia article that can be its centre; explainer Diwali / Gold Muhurat: no Wikipedia article that can be its centre",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261108-Q351609: last Short went out 0.1 h ago",
   "drop wk-Q5962128: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "hold kh-20261108-Q796885: last Short went out 0.1 h ago",
   "drop wk-Q922227: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q6410167: 93 h old and no longer trending live",
-  "drop kh-20261108-Q660297: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q313202: 93 h old and no longer trending live",
-  "drop wk-Q312472: 93 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261108-Q1353, kh-20261108-Q660297, kh-20261108-Q163225-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261108-Q351609",
-  "published kh-20261108-Q1353: https://www.youtube.com/shorts/Qzx-GPn-vlU",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261108-Q351609",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "Qzx-GPn-vlU",
-  "url": "https://www.youtube.com/shorts/Qzx-GPn-vlU",
-  "youtube_title": "दिल्ली में दीवाली की सुबह AQI 383 तक पहुंचा #shorts #delhi",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
