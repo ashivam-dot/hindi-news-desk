@@ -186,6 +186,7 @@ def publish(story_id: str, publish_at: str | None = None) -> dict:
            "report_urls": report_urls(short),
            "outlets": short.scene.get("outlets") or [], "headlines": short.scene.get("headlines") or [],
            "photos": [p["file"] for p in short.scene.get("photos") or [] if p.get("file")],
+           "clips": [c["video"] for c in short.scene.get("clips") or [] if c.get("video")],
            **{k: short.scene[k] for k in ("case", "case_story", "angle", "lane", "audience", "priority", "series",
                                           "quiet")
               if short.scene.get(k)}, **result}

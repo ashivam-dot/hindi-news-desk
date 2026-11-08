@@ -59,7 +59,8 @@ TOP_ONLY = {"sport": "खेल", "entertainment": "मनोरंजन"}
 TOP_ONLY_KINDS = (
     (r"\b(cricket|ipl|t20i?|odi|test match|match|football|fifa|hockey|tennis|olympic\w*|tournament|league|squad|"
      r"world cup|kabaddi|chess|BCCI|IND vs)\b", "sport"),
-    (r"\b(actor|actress|film|movie|box office|bollywood|superstar|starrer)\b", "entertainment"),
+    (r"\b(actor|actress|film|movie|box office|bollywood|superstar|starrer|trailer|teaser|song|singer|celebrity|"
+     r"celebs|bigg boss|wedding|marriage|birthday|movie review|film review)\b", "entertainment"),
 )
 CATEGORY_HI = {"court": "अदालत", "science": "विज्ञान", "defence": "रक्षा", "economy": "अर्थव्यवस्था",
                "policy": "नीति", "diplomacy": "कूटनीति", "weather": "मौसम", "politics": "राजनीति",
@@ -92,11 +93,11 @@ NOT_A_CENTRE = re.compile(r"\b(festival|holiday|observance|ethnic group|national
 SKIP = re.compile(
     # elections and campaigns
     r"\b(elections?|electoral|polls?|polling|bypolls?|by-elections?|exit polls?|voting|vote count\w*|voters?|"
-    r"voter list|SIR|campaign\w*|rallies|roadshow|manifesto|seat-sharing|candidates?|"
-    # gossip, promotion, lifestyle (sport and film are TOP_ONLY)
-    r"trailer|teaser|ott|web series|song|singer|"
-    r"bigg boss|celebrity|wedding|marriage|divorce|dating|viral|meme|horoscope|rashifal|astrology|zodiac|lottery|quiz|"
-    r"recipe|tips|best deals|deal of the day|discount|movie review|film review|"
+    r"voter list|manifesto|seat-sharing|candidates?|"
+    # gossip, promotion, lifestyle (film news, celebrities, weddings and birthdays are TOP_ONLY entertainment)
+    r"ott|web series|"
+    r"divorce|dating|viral|meme|horoscope|rashifal|astrology|zodiac|lottery|quiz|"
+    r"recipe|tips|best deals|deal of the day|discount|"
     # opinion, roundups, live blogs, service pages
     r"opinion|editorial|column|analysis|explained|explainer|interview|podcast|live|live updates|watch|video|photos|"
     r"in pics|gallery|brief|wrap|roundup|top news|top stories|headlines|newsletter|(rates?|prices?) today|"
@@ -112,7 +113,7 @@ SKIP = re.compile(
     r"stocks? to buy|share price|target price|buy or sell|multibagger|penny stock|dividend|q[1-4] results?|"
     r"quarterly results?|net profit|earnings|"
     # anniversaries and greetings
-    r"birthday|anniversary|years? after|on this day|wishes(?! to\b)|greetings)\b|"
+    r"anniversary|years? after|on this day|wishes(?! to\b)|greetings)\b|"
     r"^(how|why|what|who|when|where|is|are|can|should|will|inside|explained)\b|बड़ी खबरें|बड़ी ख़बरें|पढ़ें", re.I)
 # Institutions, leaders and big places named in too many stories to tell one by: two headlines naming only these must
 # share three distinctive words to be one story.

@@ -70,8 +70,10 @@ COOLDOWN_DAYS = {"protest": 6, "movement": 6}
 # led by top.HINDI_OWNERS Hindi newsrooms' own feeds within top.HINDI_WINDOW_H (the Siwan blast, dropped while Aaj
 # Tak, NDTV India and TV9 led with it).
 TOP_WEIGHT = 2.0
-# Sport and film stories qualify only this high in the lists (about top 10 of a front page).
-TOP_ONLY_SCORE = 0.55
+# Sport and film stories qualify this high in the lists, or when top.HINDI_OWNERS Hindi newsrooms lead with them.
+# At 0.55 (about top 10) none reached the channel from 1 to 8 Nov, while Chaukanna's best Shorts of those days were
+# film and cricket (Ramayana review 2,100 views, IND vs NZ 2,000, Shah Rukh Khan's birthday note 1,700).
+TOP_ONLY_SCORE = 0.35
 # Any other story must be at least this high (about the top 13 of a front page, or a Nation section's top 9), and a
 # kind Hindi viewers rarely watch (DEMAND under LOW_DEMAND) about the top 6.
 MIN_PLACE, LOW_DEMAND, LOW_DEMAND_PLACE = 0.35, 0.8, 0.75
@@ -439,8 +441,10 @@ def unpopular(cand: dict, at: datetime) -> str | None:
         return None
     place = cand.get("top_score") or 0
     if cand.get("category") in explain.TOP_ONLY:
-        return None if place >= TOP_ONLY_SCORE else \
-            f"a {cand['category']} story goes out only when it is a top-10 story (place {place:.2f})"
+        if place >= TOP_ONLY_SCORE or len(cand.get("hindi_owners") or []) >= top.HINDI_OWNERS:
+            return None
+        return (f"a {cand['category']} story goes out only as a top story (place {place:.2f}, needs "
+                f"{TOP_ONLY_SCORE}) or when {top.HINDI_OWNERS} Hindi newsrooms lead with it")
     if "IN" in (cand.get("geos") or []) and cand.get("traffic", 0) > 0 or is_breaking(cand, at):
         return None
     if len(cand.get("hindi_owners") or []) >= top.HINDI_OWNERS:

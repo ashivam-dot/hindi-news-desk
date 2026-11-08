@@ -54,7 +54,7 @@ def test_a_world_statement_needs_an_india_connection_but_world_deaths_and_incide
     assert not plan.foreign_only(ronaldo) and plan.unpopular(ronaldo, NOW) is None
     swift = explainer(category="entertainment", story="Taylor Swift announces new album", top={"IN": 30},
                       top_score=0.3)
-    assert not plan.foreign_only(swift) and "top-10 story" in plan.unpopular(swift, NOW)
+    assert not plan.foreign_only(swift) and "only as a top story" in plan.unpopular(swift, NOW)
 
 
 def test_an_explainer_centred_abroad_is_foreign_however_hindi_newsrooms_carry_it(monkeypatch):
