@@ -1,5 +1,5 @@
 {
- "at": "2026-11-08T21:29:07+00:00",
+ "at": "2026-11-08T21:43:00+00:00",
  "trending": [
   {
    "id": "kh-20261109-Q1353",
@@ -23,7 +23,7 @@
     "very"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-08T21:30:58.815879+00:00",
+   "news_at": "2026-11-08T21:46:43.862425+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
@@ -32,6 +32,7 @@
     "Government of India",
     "Network18",
     "TV9 Network",
+    "ABP Group",
     "DB Corp"
    ],
    "fame": 400000,
@@ -53,7 +54,7 @@
     "कहीं दुकान-गोदाम तो कहीं फैक्ट्री जलकर राख… दिवाली पर दिल्ली से सिक्किम तक आग का तांडव",
     "दिवाली पर दिल्ली से बिहार, कोलकाता और असम तक आगजनी... डिब्रूगढ़ में 4 की मौत"
    ],
-   "hindi_news": 21,
+   "hindi_news": 22,
    "geos": [
     "IN"
    ],
@@ -70,7 +71,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-08T21:30:58.815879+00:00"
+     "at": "2026-11-08T21:46:43.862425+00:00"
     },
     {
      "title": "Delhi Air Quality Turns 'Very Poor' On Diwali, To Turn 'Severe'",
@@ -141,6 +142,7 @@
     "outlet:Government of India",
     "outlet:Network18",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:Delhi records ‘very poor’ air quality on Diwali with 376 AQI",
     "google-news:Advocates and court staff perform essential duties: Delhi HC says while exempting them from non-BS VI vehicle ban",
@@ -178,7 +180,7 @@
     "veteran"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-08T21:30:58.815879+00:00",
+   "news_at": "2026-11-08T21:46:43.862425+00:00",
    "owners": [
     "Network18",
     "Bennett, Coleman & Co.",
@@ -223,7 +225,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-08T21:30:58.815879+00:00"
+     "at": "2026-11-08T21:46:43.862425+00:00"
     },
     {
      "title": "PM Modi visits LK Advani on his birthday as veteran BJP leader enters 100th year",
@@ -261,9 +263,9 @@
    "top": {
     "IN": 10,
     "IN-nation": 5,
-    "IN-hi-nation": 11
+    "IN-hi-nation": 9
    },
-   "top_score": 0.94,
+   "top_score": 0.97,
    "top_headlines": [
     "लालकृष्ण आडवाणी के आवास पर पहुंचे PM मोदी, 99वें जन्मदिन की दी बधाई, भावुक हुईं बेटी प्रतिभा",
     "PM Modi meets LK Advani, seeks blessings as BJP leader enters 100th year"
@@ -272,6 +274,51 @@
     "TV9 Network",
     "Network18"
    ]
+  },
+  {
+   "qid": "Q142086610",
+   "title": "2026 El Ayyat train collision",
+   "fame": 300000,
+   "views": 0,
+   "traffic": 0,
+   "news": 250000,
+   "news_at": "2026-11-08T21:43:00.302691+00:00",
+   "headlines": [
+    "Train crash kills seven, injures dozens near Egypt’s Cairo city",
+    "Collision between 2 trains in Egypt kills 7 and injures at least 125"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-08",
+    "google-news:Train crash kills seven, injures dozens near Egypt’s Cairo city",
+    "google-news:Collision between 2 trains in Egypt kills 7 and injures at least 125"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142086610",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-11-08",
+   "coords": null,
+   "has_coords": true,
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
   },
   {
    "id": "kh-20261109-Q163225",
@@ -384,114 +431,6 @@
     "\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir"
    ],
    "hindi_owners": []
-  },
-  {
-   "qid": "Q142077465",
-   "title": "2026 Kraków shooting",
-   "fame": 200000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-11-08T21:11:40+00:00",
-   "headlines": [
-    "Parents, sister of far-right Kraków shooter found dead in family home",
-    "Two police officers hailed as heroes for confronting Kraków gunman"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-07",
-    "google-news:Parents, sister of far-right Kraków shooter found dead in family home",
-    "google-news:Two police officers hailed as heroes for confronting Kraków gunman",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "Two police officers hailed as heroes for confronting Kraków gunman",
-     "url": "https://www.theguardian.com/world/2026/nov/08/two-police-officers-heroes-confronting-krakow-gunman-poland",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-08T21:11:40+00:00"
-    },
-    {
-     "title": "Polish prosecutors open terrorism investigation into Kraków shooting",
-     "url": "https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-08T11:50:15+00:00"
-    }
-   ],
-   "id": "wk-Q142077465",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-07",
-   "coords": [
-    50.06277778,
-    19.93688889
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q142086610",
-   "title": "2026 El Ayyat train collision",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-08T21:29:07.005552+00:00",
-   "headlines": [
-    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-08",
-    "google-news:Train crash kills seven, injures dozens near Egypt’s Cairo city"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142086610",
-   "kind": "incident",
-   "category": "rail",
-   "date": "2026-11-08",
-   "coords": null,
-   "has_coords": true,
-   "top": {
-    "IN": 3
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
   },
   {
    "id": "kh-20261109-Q6847225",
@@ -1014,124 +953,66 @@
    "lane": "obituary"
   },
   {
-   "id": "nw-20261107-krakow-attack",
-   "qid": null,
-   "title": "Poland in shock after 6 killed in Krakow far-right shooting",
-   "name": "Krakow",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-07",
-   "news_at": "2026-11-08T14:21:18+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "HT Media",
-    "France Médias Monde"
-   ],
+   "qid": "Q142077465",
+   "title": "2026 Kraków shooting",
    "fame": 75000,
-   "news": 75000,
    "views": 0,
    "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-08T21:11:40+00:00",
    "headlines": [
-    "Krakow horror: Gunman kills 6, injures 15 in Poland",
-    "Poland: Gunman kills 6 in Krakow main square, police say",
-    "Gunman Kills Six People in Krakow, Polish Police Say",
-    "Poland launches terrorism probe into mass shooting in Krakow",
-    "Poland begins two days of mourning over Krakow shooting"
+    "Two police officers hailed as heroes for confronting Kraków gunman"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
    "geos": [
     "world"
    ],
-   "region": "world",
-   "india_link": false,
    "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-07",
+    "google-news:Two police officers hailed as heroes for confronting Kraków gunman",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
    "reports": [
     {
-     "title": "Poland in shock after 6 killed in Krakow far-right shooting",
-     "url": "https://www.france24.com/en/poland-in-shock-after-6-killed-in-krakow-far-right-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "Two police officers hailed as heroes for confronting Kraków gunman",
+     "url": "https://www.theguardian.com/world/2026/nov/08/two-police-officers-heroes-confronting-krakow-gunman-poland",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-08T14:21:18+00:00"
+     "at": "2026-11-08T21:11:40+00:00"
     },
     {
-     "title": "Mourning in Poland after mass shooting",
-     "url": "https://www.france24.com/en/mourning-in-poland-after-mass-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "Polish prosecutors open terrorism investigation into Kraków shooting",
+     "url": "https://www.theguardian.com/world/2026/nov/08/krakow-shooting-poland-terrorism-investigation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-08T14:18:48+00:00"
-    },
-    {
-     "title": "Poland begins two days of mourning over Krakow shooting",
-     "url": "https://www.dw.com/en/poland-begins-two-days-of-mourning-over-krakow-shooting/a-79889400?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T09:43:00+00:00"
-    },
-    {
-     "title": "Poland launches terrorism probe into mass shooting in Krakow",
-     "url": "https://www.france24.com/en/europe/20261108-poland-launches-terrorism-probe-into-krakow-mass-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T08:59:56+00:00"
-    },
-    {
-     "title": "Poland: Gunman kills 6 in Krakow main square, police say",
-     "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square-police-say/a-79886489?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-07T21:34:00+00:00"
-    },
-    {
-     "title": "Gunman Kills Six People in Krakow, Polish Police Say",
-     "url": "https://www.livemint.com/news/gunman-kills-six-people-in-krakow-polish-police-say-11794088079054.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T21:47:58+00:00"
-    },
-    {
-     "title": "Krakow horror: Gunman kills 6, injures 15 in Poland",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/articleshow/135643724.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:43:41+00:00"
+     "at": "2026-11-08T11:50:15+00:00"
     }
    ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:HT Media",
-    "outlet:France Médias Monde"
+   "id": "wk-Q142077465",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-07",
+   "coords": [
+    50.06277778,
+    19.93688889
    ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "Poland mass shooting: PM says footage shows 3 bodies at suspect’s home; minister cites far-right influenc"
-   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -1204,22 +1085,18 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "At least 21 dead after migrant boat sinks off Senegal's northwestern coast"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
   },
   {
-   "id": "kh-20261109-Q138339948",
-   "qid": "Q138339948",
-   "title": "Vihaan Malhotra",
-   "name": "Vihaan Malhotra",
+   "id": "kh-20261109-Q117803537",
+   "qid": "Q117803537",
+   "title": "Vihaan Samat",
+   "name": "Vihaan Samat",
    "phrase": "Vihaan",
    "person": true,
    "kind": "explainer",
@@ -1253,9 +1130,11 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
    "abroad": false,
    "label_hi": null,
    "reports": [
@@ -1295,12 +1174,16 @@
     "outlet:NDTV",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Happy Diwali 2026: Best 40 Vibrant Wishes, Messages, Quotes, Images, Greetings Card to Share on Instagram"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261109-Q5465383",
@@ -1541,153 +1424,34 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "qid": "Q172753",
-   "title": "Alan Jones (racing driver)",
-   "fame": 12064,
-   "views": 12064,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q172753",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-05",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q77206",
-   "title": "Janosch",
-   "fame": 10546,
-   "views": 10546,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q77206",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q313202",
-   "title": "Herbert Blomstedt",
-   "fame": 10425,
-   "views": 10425,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q313202",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q312472",
-   "title": "Tinto Brass",
-   "fame": 9307,
-   "views": 9307,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q312472",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
   {
    "qid": "Q142086610",
    "title": "2026 El Ayyat train collision",
-   "fame": 175000,
+   "fame": 300000,
    "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-08T21:29:07.005552+00:00",
+   "news": 250000,
+   "news_at": "2026-11-08T21:43:00.302691+00:00",
    "headlines": [
-    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
+    "Train crash kills seven, injures dozens near Egypt’s Cairo city",
+    "Collision between 2 trains in Egypt kills 7 and injures at least 125"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
+   "region": "world",
    "india_link": true,
    "geos": [
-    "IN"
+    "IN",
+    "US"
    ],
    "label_hi": null,
    "via": [
     "wikipedia-current-events-2026-11-08",
-    "google-news:Train crash kills seven, injures dozens near Egypt’s Cairo city"
+    "google-news:Train crash kills seven, injures dozens near Egypt’s Cairo city",
+    "google-news:Collision between 2 trains in Egypt kills 7 and injures at least 125"
    ],
    "owners": [],
    "reports": [],
@@ -1709,85 +1473,97 @@
    "lane": "breaking"
   },
   {
-   "id": "nw-20261108-senegal-maritime",
-   "qid": null,
-   "title": "Migrant boat sinks off Senegal, killing at least 34 people, authorities say",
-   "name": "Senegal",
-   "kind": "incident",
-   "category": "maritime",
+   "id": "kh-20261109-Q117803537",
+   "qid": "Q117803537",
+   "title": "Vihaan Samat",
+   "name": "Vihaan Samat",
+   "phrase": "Vihaan",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
+   "story_keys": [
+    "birthday",
+    "face",
+    "first",
+    "katrina",
+    "keep",
+    "reveal",
+    "son"
+   ],
    "date": "2026-11-08",
-   "news_at": "2026-11-08T20:40:33+00:00",
+   "news_at": "2026-11-08T09:49:57+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle",
-    "France Médias Monde"
+    "HT Media",
+    "NDTV",
+    "Bennett, Coleman & Co."
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "At least 21 dead after migrant boat sinks off Senegal's northwestern coast",
-    "Many killed after migrant boat sinks off Senegal",
-    "Migrant boat sinks off Senegal, killing at least 34 people, authorities say"
+    "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
+    "Katrina Kaif and Vicky Kaushal share Diwali surprise with first clear glimpse of baby Vihaan after celebrating his first birthday",
+    "Katrina-Vicky reveal son Vihaan's face on Diwali, internet can't keep calm: PIC"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [
-    "world"
+    "IN"
    ],
-   "region": "world",
-   "india_link": false,
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
    "label_hi": null,
    "reports": [
     {
-     "title": "Migrant boat sinks off Senegal, killing at least 34 people, authorities say",
-     "url": "https://www.france24.com/en/africa/20261108-migrant-boat-sinks-off-senegal-killing-at-least-34-people-authorities-say",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T20:40:33+00:00"
-    },
-    {
-     "title": "Many killed after migrant boat sinks off Senegal",
-     "url": "https://www.dw.com/en/many-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T19:12:00+00:00"
-    },
-    {
-     "title": "At least 21 dead after migrant boat sinks off Senegal's northwestern coast",
-     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-21-dead-after-migrant-boat-sinks-off-senegals-northwestern-coast/articleshow/135659201.cms",
+     "title": "Katrina-Vicky reveal son Vihaan's face on Diwali, internet can't keep calm: PIC",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/katrina-kaif-and-vicky-kaushal-share-first-glimpse-of-son-vihaan-on-diwali-the-little-one-twins-with-parents-internet-cant-keep-calm-laddoo-pic/articleshow/135656126.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-08T12:46:51+00:00"
+     "at": "2026-11-08T09:49:57+00:00"
+    },
+    {
+     "title": "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
+     "url": "https://www.ndtv.com/entertainment/our-brightest-diwali-yet-katrina-kaif-and-vicky-kaushal-reveal-son-vihaans-face-a-day-after-his-first-birthday-12299983#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T09:49:02+00:00"
+    },
+    {
+     "title": "Katrina Kaif and Vicky Kaushal share Diwali surprise with first clear glimpse of baby Vihaan after celebrating his first birthday",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/katrina-kaif-and-vicky-kaushal-share-diwali-surprise-with-first-clear-glimpse-of-baby-vihaan-after-celebrating-his-first-birthday-101794130720176.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T09:42:28+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Deutsche Welle",
-    "outlet:France Médias Monde"
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co."
    ],
-   "emerging": true,
-   "article": null,
    "top": {
-    "IN": 14
+    "IN-nation": 18
    },
-   "top_score": 0.35,
+   "top_score": 0.09,
    "top_headlines": [
-    "At least 21 dead after migrant boat sinks off Senegal's northwestern coast"
+    "Happy Diwali 2026: Best 40 Vibrant Wishes, Messages, Quotes, Images, Greetings Card to Share on Instagram"
    ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261109-Q5465383",
@@ -1876,6 +1652,83 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "nw-20261108-senegal-maritime",
+   "qid": null,
+   "title": "Migrant boat sinks off Senegal, killing at least 34 people, authorities say",
+   "name": "Senegal",
+   "kind": "incident",
+   "category": "maritime",
+   "date": "2026-11-08",
+   "news_at": "2026-11-08T20:40:33+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle",
+    "France Médias Monde"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "At least 21 dead after migrant boat sinks off Senegal's northwestern coast",
+    "Many killed after migrant boat sinks off Senegal",
+    "Migrant boat sinks off Senegal, killing at least 34 people, authorities say"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Migrant boat sinks off Senegal, killing at least 34 people, authorities say",
+     "url": "https://www.france24.com/en/africa/20261108-migrant-boat-sinks-off-senegal-killing-at-least-34-people-authorities-say",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-08T20:40:33+00:00"
+    },
+    {
+     "title": "Many killed after migrant boat sinks off Senegal",
+     "url": "https://www.dw.com/en/many-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-08T19:12:00+00:00"
+    },
+    {
+     "title": "At least 21 dead after migrant boat sinks off Senegal's northwestern coast",
+     "url": "https://timesofindia.indiatimes.com/world/rest-of-world/at-least-21-dead-after-migrant-boat-sinks-off-senegals-northwestern-coast/articleshow/135659201.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T12:46:51+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "outlet:France Médias Monde"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
   },
   {
    "qid": "Q5962128",
@@ -2122,93 +1975,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261109-Q138339948",
-   "qid": "Q138339948",
-   "title": "Vihaan Malhotra",
-   "name": "Vihaan Malhotra",
-   "phrase": "Vihaan",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
-   "story_keys": [
-    "birthday",
-    "face",
-    "first",
-    "katrina",
-    "keep",
-    "reveal",
-    "son"
-   ],
-   "date": "2026-11-08",
-   "news_at": "2026-11-08T09:49:57+00:00",
-   "owners": [
-    "HT Media",
-    "NDTV",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
-    "Katrina Kaif and Vicky Kaushal share Diwali surprise with first clear glimpse of baby Vihaan after celebrating his first birthday",
-    "Katrina-Vicky reveal son Vihaan's face on Diwali, internet can't keep calm: PIC"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Katrina-Vicky reveal son Vihaan's face on Diwali, internet can't keep calm: PIC",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/katrina-kaif-and-vicky-kaushal-share-first-glimpse-of-son-vihaan-on-diwali-the-little-one-twins-with-parents-internet-cant-keep-calm-laddoo-pic/articleshow/135656126.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-08T09:49:57+00:00"
-    },
-    {
-     "title": "'Our Brightest Diwali Yet': Katrina Kaif And Vicky Kaushal Reveal Son Vihaan's Face A Day After His First Birthday",
-     "url": "https://www.ndtv.com/entertainment/our-brightest-diwali-yet-katrina-kaif-and-vicky-kaushal-reveal-son-vihaans-face-a-day-after-his-first-birthday-12299983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-08T09:49:02+00:00"
-    },
-    {
-     "title": "Katrina Kaif and Vicky Kaushal share Diwali surprise with first clear glimpse of baby Vihaan after celebrating his first birthday",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/katrina-kaif-and-vicky-kaushal-share-diwali-surprise-with-first-clear-glimpse-of-baby-vihaan-after-celebrating-his-first-birthday-101794130720176.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-08T09:42:28+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261109-Q23771218",
    "qid": "Q23771218",
    "title": "Hamza Choudhury",
@@ -2371,99 +2137,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q313202",
-   "title": "Herbert Blomstedt",
-   "fame": 10425,
-   "views": 10425,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q313202",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q312472",
-   "title": "Tinto Brass",
-   "fame": 9307,
-   "views": 9307,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q312472",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q77206",
-   "title": "Janosch",
-   "fame": 10546,
-   "views": 10546,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q77206",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "id": "kh-20261109-Q213380-update",
    "qid": "Q213380",
    "title": "Supreme Court of India",
@@ -2582,24 +2255,24 @@
   }
  ],
  "notes": [
-  "revisit Q2745305 (9428 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: last Short 10 h ago; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1007 views): 0 owners reported new news on Amit S",
-  "outlets: 1431 headlines from 47 feeds (18 owners), 25 matched to articles, 11 candidates with 2+ owners, 3 nw- stories (on): nw-20261108-egypt-rail, nw-20261107-krakow-attack, nw-20261108-senegal-maritime",
+  "revisit Q2745305 (9428 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225: last Short 11 h ago; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1007 views): 0 owners reported new news on Amit S",
+  "outlets: 1424 headlines from 47 feeds (18 owners), 25 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261108-egypt-rail, nw-20261108-senegal-maritime",
   "explainers: 8 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q468324, kh-20261109-Q163225, kh-20261109-Q6847225; dropped: explainer Muhurat / Nifty Sensex: no Wikipedia article that can be its centre; explainer Donald Trump's WH: fewer than 3 owners' headlines name it and the story; explainer Diwali / Bastar: no Wikipedia article that can be its centre",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q141615137-2026w45: Orbitwire published (wk-Q141615137-2026w45), not high-profile enough to tell again",
-  "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
-  "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again"
+  "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1431,
+  "headlines": 1424,
   "feeds": 47,
   "owners": 18,
   "matched": 25,
-  "corroborated": 11
+  "corroborated": 10
  },
  "emerging": [
   {
@@ -2717,127 +2390,6 @@
    "hindi_owners": []
   },
   {
-   "id": "nw-20261107-krakow-attack",
-   "qid": null,
-   "title": "Poland in shock after 6 killed in Krakow far-right shooting",
-   "name": "Krakow",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-07",
-   "news_at": "2026-11-08T14:21:18+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "HT Media",
-    "France Médias Monde"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Krakow horror: Gunman kills 6, injures 15 in Poland",
-    "Poland: Gunman kills 6 in Krakow main square, police say",
-    "Gunman Kills Six People in Krakow, Polish Police Say",
-    "Poland launches terrorism probe into mass shooting in Krakow",
-    "Poland begins two days of mourning over Krakow shooting"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "world"
-   ],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Poland in shock after 6 killed in Krakow far-right shooting",
-     "url": "https://www.france24.com/en/poland-in-shock-after-6-killed-in-krakow-far-right-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T14:21:18+00:00"
-    },
-    {
-     "title": "Mourning in Poland after mass shooting",
-     "url": "https://www.france24.com/en/mourning-in-poland-after-mass-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T14:18:48+00:00"
-    },
-    {
-     "title": "Poland begins two days of mourning over Krakow shooting",
-     "url": "https://www.dw.com/en/poland-begins-two-days-of-mourning-over-krakow-shooting/a-79889400?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T09:43:00+00:00"
-    },
-    {
-     "title": "Poland launches terrorism probe into mass shooting in Krakow",
-     "url": "https://www.france24.com/en/europe/20261108-poland-launches-terrorism-probe-into-krakow-mass-shooting",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-08T08:59:56+00:00"
-    },
-    {
-     "title": "Poland: Gunman kills 6 in Krakow main square, police say",
-     "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square-police-say/a-79886489?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-07T21:34:00+00:00"
-    },
-    {
-     "title": "Gunman Kills Six People in Krakow, Polish Police Say",
-     "url": "https://www.livemint.com/news/gunman-kills-six-people-in-krakow-polish-police-say-11794088079054.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T21:47:58+00:00"
-    },
-    {
-     "title": "Krakow horror: Gunman kills 6, injures 15 in Poland",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15/articleshow/135643724.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-07T17:43:41+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Deutsche Welle",
-    "outlet:HT Media",
-    "outlet:France Médias Monde"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "Poland mass shooting: PM says footage shows 3 bodies at suspect’s home; minister cites far-right influenc"
-   ],
-   "hindi_owners": []
-  },
-  {
    "id": "nw-20261108-senegal-maritime",
    "qid": null,
    "title": "Migrant boat sinks off Senegal, killing at least 34 people, authorities say",
@@ -2907,13 +2459,9 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "At least 21 dead after migrant boat sinks off Senegal's northwestern coast"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
@@ -2942,7 +2490,7 @@
     "very"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-08T21:30:58.815879+00:00",
+   "news_at": "2026-11-08T21:46:43.862425+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
@@ -2951,6 +2499,7 @@
     "Government of India",
     "Network18",
     "TV9 Network",
+    "ABP Group",
     "DB Corp"
    ],
    "fame": 400000,
@@ -2972,7 +2521,7 @@
     "कहीं दुकान-गोदाम तो कहीं फैक्ट्री जलकर राख… दिवाली पर दिल्ली से सिक्किम तक आग का तांडव",
     "दिवाली पर दिल्ली से बिहार, कोलकाता और असम तक आगजनी... डिब्रूगढ़ में 4 की मौत"
    ],
-   "hindi_news": 21,
+   "hindi_news": 22,
    "geos": [
     "IN"
    ],
@@ -2989,7 +2538,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-08T21:30:58.815879+00:00"
+     "at": "2026-11-08T21:46:43.862425+00:00"
     },
     {
      "title": "Delhi Air Quality Turns 'Very Poor' On Diwali, To Turn 'Severe'",
@@ -3060,6 +2609,7 @@
     "outlet:Government of India",
     "outlet:Network18",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:Delhi records ‘very poor’ air quality on Diwali with 376 AQI",
     "google-news:Advocates and court staff perform essential duties: Delhi HC says while exempting them from non-BS VI vehicle ban",
@@ -3097,7 +2647,7 @@
     "veteran"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-08T21:30:58.815879+00:00",
+   "news_at": "2026-11-08T21:46:43.862425+00:00",
    "owners": [
     "Network18",
     "Bennett, Coleman & Co.",
@@ -3142,7 +2692,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-08T21:30:58.815879+00:00"
+     "at": "2026-11-08T21:46:43.862425+00:00"
     },
     {
      "title": "PM Modi visits LK Advani on his birthday as veteran BJP leader enters 100th year",
@@ -3180,9 +2730,9 @@
    "top": {
     "IN": 10,
     "IN-nation": 5,
-    "IN-hi-nation": 11
+    "IN-hi-nation": 9
    },
-   "top_score": 0.94,
+   "top_score": 0.97,
    "top_headlines": [
     "लालकृष्ण आडवाणी के आवास पर पहुंचे PM मोदी, 99वें जन्मदिन की दी बधाई, भावुक हुईं बेटी प्रतिभा",
     "PM Modi meets LK Advani, seeks blessings as BJP leader enters 100th year"
@@ -3649,10 +3199,10 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261109-Q138339948",
-   "qid": "Q138339948",
-   "title": "Vihaan Malhotra",
-   "name": "Vihaan Malhotra",
+   "id": "kh-20261109-Q117803537",
+   "qid": "Q117803537",
+   "title": "Vihaan Samat",
+   "name": "Vihaan Samat",
    "phrase": "Vihaan",
    "person": true,
    "kind": "explainer",
@@ -3686,9 +3236,11 @@
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
    "abroad": false,
    "label_hi": null,
    "reports": [
@@ -3728,12 +3280,16 @@
     "outlet:NDTV",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 18
+   },
+   "top_score": 0.09,
+   "top_headlines": [
+    "Happy Diwali 2026: Best 40 Vibrant Wishes, Messages, Quotes, Images, Greetings Card to Share on Instagram"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261109-Q5465383",
