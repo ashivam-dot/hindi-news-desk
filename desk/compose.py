@@ -71,7 +71,7 @@ class ClipReader:
 
 # On screen for the whole Short (India's IT Rules ask synthetic content to carry a visible label).
 AI_BADGE = "AI आवाज़"
-ACCENT = {"tribute": (255, 205, 92), "news": (90, 200, 255)}
+ACCENT = {"tribute": (140, 230, 222), "news": (90, 200, 255)}
 CROSSFADE = 8  # frames
 CAPTION_Y = 0.665
 MOTIONS = [
@@ -563,9 +563,12 @@ def render(short: Short, timing: dict, work: Path) -> dict:
 # the sources, a fact card for every beat (its sourced number or decision, what it is, and who reports it), subtitles,
 # a ticker of the story's facts, and a "मुख्य तथ्य" recap at the end. Every word on screen is the gated title, a gated
 # card or the narration itself.
-NEWS_RED = (200, 28, 44)
+# Pal Pal's own palette (2026-11-09): navy, teal and a light cyan, never the red, yellow and black of the Chaukanna
+# kit it was first built from (YouTube removed Chaukanna News that day; nothing on screen should echo it).
+NEWS_ACCENT = (0, 150, 136)
 NEWS_NAVY = (10, 20, 46)
-NEWS_GOLD = (255, 200, 70)
+NEWS_HIGHLIGHT = (140, 230, 222)
+NEWS_BAR = (246, 249, 251)
 WIN_Y, WIN_H = 140, 880
 HEAD_Y = WIN_Y + WIN_H
 CARD_X, CARD_GAP = 40, 34
@@ -609,9 +612,9 @@ def _topbar_layer(label: str, when: date | None, fresh: bool) -> tuple[np.ndarra
     name = config.NAME_HI or config.NAME or ""
     bar = Image.new("RGBA", (W - 72, 76), (0, 0, 0, 0))
     x = 0
-    for text, fill, color in ((label or NEWS_LABEL, NEWS_RED + (255,), (255, 255, 255, 255)),
+    for text, fill, color in ((label or NEWS_LABEL, NEWS_ACCENT + (255,), (255, 255, 255, 255)),
                               (name, NEWS_NAVY + (235,), (255, 255, 255, 255)),
-                              ("ताज़ा" if fresh else "", NEWS_GOLD + (255,), NEWS_NAVY + (255,))):
+                              ("ताज़ा" if fresh else "", NEWS_HIGHLIGHT + (255,), NEWS_NAVY + (255,))):
         if not text:
             continue
         pill = _pill(text, _font("ExtraBold", 40), fill, color, height=76)
@@ -636,8 +639,8 @@ def _headline_layer(title: str, sources: str) -> tuple[np.ndarray, np.ndarray]:
     img = Image.new("RGBA", (W, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rectangle((0, 0, W, h), fill=NEWS_NAVY + (240,))
-    d.rectangle((0, 0, W, 8), fill=NEWS_RED + (255,))
-    d.rectangle((0, 8, 12, h), fill=NEWS_GOLD + (255,))
+    d.rectangle((0, 0, W, 8), fill=NEWS_ACCENT + (255,))
+    d.rectangle((0, 8, 12, h), fill=NEWS_HIGHLIGHT + (255,))
     y = 36
     for r, f, t in zip(rows, fonts, tall):
         b = f.getbbox(r)
@@ -645,7 +648,7 @@ def _headline_layer(title: str, sources: str) -> tuple[np.ndarray, np.ndarray]:
         y += t + 18
     if src:
         b = f_src.getbbox(src)
-        d.text((48 - b[0], y + 8 - b[1]), src, font=f_src, fill=NEWS_GOLD + (255,))
+        d.text((48 - b[0], y + 8 - b[1]), src, font=f_src, fill=NEWS_HIGHLIGHT + (255,))
     return _rgba(img)
 
 
@@ -665,7 +668,7 @@ def _fact_layer(value: str, label: str, who: str) -> tuple[np.ndarray, np.ndarra
     """A beat's fact card: the sourced value large, what it is, and who reports it."""
     value, label, who = drawable(value, "ExtraBold"), drawable(label, "Bold"), drawable(who, "Medium")
     width = W - 2 * CARD_X - 90
-    parts = [(value, _fit("ExtraBold", 92, value, width, 44), NEWS_GOLD)]
+    parts = [(value, _fit("ExtraBold", 92, value, width, 44), NEWS_HIGHLIGHT)]
     if label:
         parts.append((label, _fit("Bold", 46, label, width, 28), (255, 255, 255)))
     if who:
@@ -676,7 +679,7 @@ def _fact_layer(value: str, label: str, who: str) -> tuple[np.ndarray, np.ndarra
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((0, 0, w - 1, h - 1), radius=22, fill=(8, 14, 32, 228))
-    d.rounded_rectangle((0, 0, 14, h - 1), radius=7, fill=NEWS_RED + (255,))
+    d.rounded_rectangle((0, 0, 14, h - 1), radius=7, fill=NEWS_ACCENT + (255,))
     y = 30
     for (t, f, c), th in zip(parts, tall):
         b = f.getbbox(t)
@@ -700,7 +703,7 @@ class Ticker:
     """The bottom strip: "मुख्य तथ्य" in red, then the story's facts scrolling right to left."""
 
     def __init__(self, facts: list[tuple[str, str]]):
-        self.label = _rgba(_pill(RECAP, _font("ExtraBold", 36), NEWS_RED + (255,), height=TICKER_H))
+        self.label = _rgba(_pill(RECAP, _font("ExtraBold", 36), NEWS_ACCENT + (255,), height=TICKER_H))
         text = "     •     ".join(f"{label}: {value}" if label else value for value, label in facts)
         self.text = None
         if text:
@@ -739,12 +742,12 @@ def _recap_layer(facts: list[tuple[str, str]]) -> tuple[np.ndarray, np.ndarray] 
     img = Image.new("RGBA", (width, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle((0, 0, width - 1, h - 1), radius=26, fill=(8, 14, 32, 232))
-    d.rectangle((0, 0, width, 10), fill=NEWS_RED + (255,))
+    d.rectangle((0, 0, width, 10), fill=NEWS_ACCENT + (255,))
     b = head.getbbox(RECAP)
-    d.text((44 - b[0], 44 - b[1]), RECAP, font=head, fill=NEWS_GOLD + (255,))
+    d.text((44 - b[0], 44 - b[1]), RECAP, font=head, fill=NEWS_HIGHLIGHT + (255,))
     y = 60 + 70
     for (v, lbl), (fv, fl), (a, bb) in zip(rows, fonts, tall):
-        d.ellipse((44, y + a / 2 - 8, 60, y + a / 2 + 8), fill=NEWS_RED + (255,))
+        d.ellipse((44, y + a / 2 - 8, 60, y + a / 2 + 8), fill=NEWS_ACCENT + (255,))
         g = fv.getbbox(v)
         d.text((84 - g[0], y - g[1]), v, font=fv, fill=(255, 255, 255, 255))
         y += a
@@ -1002,13 +1005,13 @@ def _textcard_layer(big: str, small: str) -> tuple[np.ndarray, np.ndarray] | Non
     width = W - 160
     parts = [(r, _fit("ExtraBold", 96, r, width, 48), (255, 255, 255, 255)) for r in wrap2(big, "ExtraBold", 96, width)]
     if small:
-        parts.append((small, _fit("Bold", 54, small, width, 30), NEWS_GOLD + (255,)))
+        parts.append((small, _fit("Bold", 54, small, width, 30), NEWS_HIGHLIGHT + (255,)))
     return _rgba(_text_layer(parts, stroke=4, gap=26))
 
 
 def _name_layer(name: str) -> tuple[np.ndarray, np.ndarray]:
     """Who a photo shows, on it: viewers must never take someone else for the story's person."""
-    return _rgba(_pill(name, _font("ExtraBold", 40), NEWS_RED + (240,), height=62, pad=20))
+    return _rgba(_pill(name, _font("ExtraBold", 40), NEWS_ACCENT + (240,), height=62, pad=20))
 
 
 # From the study of successful news Shorts (2026-10-20: BBC Hindi, DW Hindi, Al Jazeera, AJ+, RealLifeLore and 11
@@ -1032,7 +1035,7 @@ def _hookcard_layer(text: str, size: int = 70, width: int = W - 260) -> tuple[np
     off = 14
     img = Image.new("RGBA", (bw + off, bh + off), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rectangle((off, off, bw + off - 1, bh + off - 1), fill=NEWS_RED + (255,))
+    d.rectangle((off, off, bw + off - 1, bh + off - 1), fill=NEWS_ACCENT + (255,))
     d.rectangle((0, 0, bw - 1, bh - 1), fill=(255, 255, 255, 250))
     y = 30
     for r, f, t in zip(rows, fonts, tall):
@@ -1048,10 +1051,10 @@ def _place_layer(text: str) -> tuple[np.ndarray, np.ndarray]:
     font, h, pad, dot = _font("ExtraBold", 36), 60, 18, 18
     img = Image.new("RGBA", (round(font.getlength(text)) + 2 * pad + dot + 14, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((0, 0, img.width - 1, h - 1), radius=10, fill=NEWS_RED + (240,))
+    d.rounded_rectangle((0, 0, img.width - 1, h - 1), radius=10, fill=NEWS_ACCENT + (240,))
     cy = h // 2
     d.ellipse((pad, cy - dot // 2, pad + dot, cy + dot // 2), fill=(255, 255, 255, 255))
-    d.ellipse((pad + 6, cy - 3, pad + dot - 6, cy + 3), fill=NEWS_RED + (255,))
+    d.ellipse((pad + 6, cy - 3, pad + dot - 6, cy + 3), fill=NEWS_ACCENT + (255,))
     b = font.getbbox(text)
     d.text((pad + dot + 14 - b[0], (h - (b[3] - b[1])) / 2 - b[1]), text, font=font, fill=(255, 255, 255, 255))
     return _rgba(img)
@@ -1106,9 +1109,9 @@ def burst(seen: list[dict], photos: list[dict], cast: list[dict] = ()) -> list[i
 
 
 def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
-    """The news-bulletin Short (see the comment above NEWS_RED)."""
+    """The news-bulletin Short (see the comment above NEWS_ACCENT)."""
     mood = short.scene.get("mood", "news")
-    accent = NEWS_GOLD
+    accent = NEWS_HIGHLIGHT
     photos = short.scene["photos"]
     size = (W, WIN_H)
     plates = {i: Plate(p, Path(p["path"]).with_suffix(".depth.npy"), size=size, face_share=0.3)
@@ -1156,7 +1159,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
     tags = {i: map_tag if p.get("role") == "map" else file_tag for i, p in enumerate(photos)}
     names = {i: _name_layer(p["who"]) for i, p in enumerate(photos) if p.get("who") and p.get("role") != "map"}
     end = _end_layers(accent, disclosure(photos))
-    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 46), NEWS_GOLD + (255,), NEWS_NAVY + (255,), height=80, pad=26))
+    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 46), NEWS_HIGHLIGHT + (255,), NEWS_NAVY + (255,), height=80, pad=26))
     badge = _badge_layer()
     card_y = HEAD_Y + headline[1].shape[0] + CARD_GAP
     hook = _hookcard_layer(short.scene["hook"]) if short.scene.get("hook") else None
@@ -1243,7 +1246,7 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
         _blit(frame, top, 36, 40, 0.97)
         _blit(frame, badge, 36, BADGE_Y, 0.97)
         ticker.draw(frame, t)
-        _progress(frame, t / duration, NEWS_RED)
+        _progress(frame, t / duration, NEWS_ACCENT)
         captions.draw(frame, t)
         enc.stdin.write(frame.tobytes())
         if i in still_at:
@@ -1263,8 +1266,9 @@ def render_bulletin(short: Short, timing: dict, work: Path) -> dict:
 # a chip that pops up and goes, big subtitles, and a short silent follow card. Text stays above YouTube's own title
 # and buttons, which cover the bottom fifth of a Short.
 FULL_FACE = 0.24  # a portrait's face this share of the frame height
-# The headline bar (owner, 2026-10-23: "take reference of chaukanna news"; its Shorts that reach 1-3K views keep the
-# story's headline on a yellow bar under the captions from the first frame to the last). Everything above it moved up.
+# The headline bar: the story's headline stays under the captions from the first frame to the last, on Pal Pal's
+# white bar (2026-11-09; it was a yellow bar after Chaukanna News until YouTube removed that channel). Everything
+# above it moved up.
 FULL_HOOK_Y, FULL_NAME_Y, FULL_CHIP_Y, FULL_CAPTION_Y, FULL_CREDIT_Y = 0.47, 0.385, 0.43, 0.595, 0.785
 FULL_BAR_Y = 0.648  # the bar's top; it ends by about 0.74, above YouTube's own title and buttons
 FULL_CAPTION_SIZE = 84
@@ -1321,7 +1325,7 @@ def headline_of(title: str) -> str:
 
 
 def _bar_layer(title: str) -> tuple[np.ndarray, np.ndarray] | None:
-    """The headline bar: the title on at most two lines, dark on the channel's gold, a red edge on the left."""
+    """The headline bar: the title on at most two lines, navy on white, a teal edge on the left."""
     text = drawable(headline_of(title), "ExtraBold")
     if not text:
         return None
@@ -1332,8 +1336,8 @@ def _bar_layer(title: str) -> tuple[np.ndarray, np.ndarray] | None:
     bh = 26 + sum(tall) + 16 * (len(rows) - 1) + 26
     img = Image.new("RGBA", (W - 72, bh), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    d.rounded_rectangle((0, 0, img.width - 1, bh - 1), radius=10, fill=NEWS_GOLD + (250,))
-    d.rectangle((0, 0, 14, bh - 1), fill=NEWS_RED + (255,))
+    d.rounded_rectangle((0, 0, img.width - 1, bh - 1), radius=10, fill=NEWS_BAR + (250,))
+    d.rectangle((0, 0, 14, bh - 1), fill=NEWS_ACCENT + (255,))
     y = 26
     for r, f, t in zip(rows, fonts, tall):
         b = f.getbbox(r)
@@ -1346,7 +1350,7 @@ def _end_full(accent: tuple, disclosure_text: str) -> list[tuple[np.ndarray, np.
     name = config.NAME_HI or config.NAME
     logo = _rgba(_text_layer([(name, _fit("ExtraBold", 120, name, W - 160), accent + (255,))], stroke=5)) \
         if name else None
-    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 50), NEWS_RED + (255,), height=88, pad=30))
+    follow = _rgba(_pill(FOLLOW, _font("ExtraBold", 50), NEWS_ACCENT + (255,), height=88, pad=30))
     disc = _rgba(_text_layer([(disclosure_text, _fit("Medium", 34, disclosure_text, W - 140), (255, 255, 255, 225))],
                              stroke=2))
     return [logo, follow, disc]
@@ -1355,7 +1359,7 @@ def _end_full(accent: tuple, disclosure_text: str) -> list[tuple[np.ndarray, np.
 def render_full(short: Short, timing: dict, work: Path) -> dict:
     """The full-screen Short (see the comment above FULL_FACE)."""
     mood = short.scene.get("mood", "news")
-    accent = NEWS_GOLD
+    accent = NEWS_HIGHLIGHT
     # A person story's own photos are of that person: they get the name strap and can face another person.
     subject = short.scene.get("name_hi") if short.scene.get("subject_person") else None
     # A context fill (match.fill: no face matched) is the story's, not the subject's: no name strap on it.
@@ -1400,7 +1404,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
     texts = [_textcard_layer(big[k] or small[k], small[k] if big[k] else "") if card[k] else None
              for k in range(len(shots))]
     backs = {k: card_backdrop(None if plain[k] else plates[b["photo"]].rgb) for k, b in enumerate(shots) if card[k]}
-    strip = _strip_layer(label_for(short), NEWS_RED)
+    strip = _strip_layer(label_for(short), NEWS_ACCENT)
     bar = _bar_layer(short.title)
     badge = _badge_layer()
     credits = {i: _credit_layer(p["credit"]) for i, p in enumerate(photos)}
@@ -1442,7 +1446,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
             frame = np.zeros((H, W, 3), np.uint8)
             frame[:half[1]] = grade_half.apply(cam_half.shoot(half_plates[a], u, MOTIONS[1], punch), i)
             frame[H - half[1]:] = grade_half.apply(cam_half.shoot(half_plates[b], u, MOTIONS[3], punch), i)
-            frame[half[1]:H - half[1]] = NEWS_GOLD
+            frame[half[1]:H - half[1]] = NEWS_HIGHLIGHT
             return (frame * shade).astype(np.uint8), [a, b]
         frame = grade.apply(cam.shoot(plates[view["photo"]], u, view["motion"], punch), i)
         return (frame * shade).astype(np.uint8), [view["photo"]]
@@ -1533,7 +1537,7 @@ def render_full(short: Short, timing: dict, work: Path) -> dict:
         if strip is not None:
             _blit(frame, strip, 36, top_y, 0.96)
         _blit(frame, badge, W - badge[1].shape[1] - 36, top_y, 0.97)
-        _progress(frame, t / duration, NEWS_RED)
+        _progress(frame, t / duration, NEWS_ACCENT)
         enc.stdin.write(frame.tobytes())
         if i in still_at:
             Image.fromarray(frame).save(stills / f"t{i // FPS:03d}.png")
