@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T07:29:49+00:00",
+ "at": "2026-11-09T07:47:06+00:00",
  "trending": [
   {
    "id": "kh-20261109-Q1353",
@@ -27,20 +27,19 @@
     "worsen"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-09T07:30:12.815503+00:00",
+   "news_at": "2026-11-09T07:47:34.842272+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
-    "The Hindu Group",
     "India Today Group",
     "Deutsche Welle",
     "Network18",
     "Government of India",
+    "TV9 Network",
     "Amar Ujala",
     "BBC",
     "NDTV",
-    "TV9 Network",
     "DB Corp",
     "ABP Group"
    ],
@@ -54,16 +53,16 @@
     "Delhi's air quality ‘very poor’ morning after Diwali, capital chokes with AQI at 376",
     "Delhi's air quality slips into 'severe' category on Diwali; Mumbai's AQI at 170",
     "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
-    "Delhi air pollution: AAP slams Delhi govt for alleged air quality data ‘manipulation’"
+    "Was Delhi's AQI 2000, 1300 or 500 on Diwali night? Let me clear the air"
    ],
    "hindi_headlines": [
     "स्वच्छ हवा के लिए पर्यावरण-अनुकूल दिवाली मनाएं : डब्ल्यूडब्ल्यूएफ- इंडिया ईआईएसीपी की दिल्ली-एनसीआर के निवासियों से ग्रीन दिवाली मनाने का संकल्प लेने की अपील",
+    "आग बुझाने में छूटे पसीने: दिवाली की रात दिल्ली-मुंबई में फायर ब्रिगेड को 400 कॉल्स, रातभर गूंजते रहे सायरन",
     "'दिल्ली के खिलाफ साजिश': मंत्री कपिल मिश्रा का बड़ा दावा, बोले-पंजाब में दिवाली की रात 1200 जगह जलाई पराली",
     "दिल्ली और लाहौर में भले ही फ़र्क़ हो, लेकिन हवा में घुला ज़हर है एक जैसा: मोहम्मद हनीफ़ का नज़रिया",
-    "दिल्ली में एक्यूआई 3000 पार?: आप नेता सौरभ भारद्वाज का दावा, खराब हवा के आंकड़ों पर लगाया हेराफेरी का आरोप",
-    "7 हादसे, 23 मौतें... दिल्ली से महाराष्ट्र-MP तक अग्निकांड से कोहराम"
+    "दिल्ली में एक्यूआई 3000 पार?: आप नेता सौरभ भारद्वाज का दावा, खराब हवा के आंकड़ों पर लगाया हेराफेरी का आरोप"
    ],
-   "hindi_news": 36,
+   "hindi_news": 35,
    "geos": [
     "IN"
    ],
@@ -80,7 +79,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-09T07:30:12.815503+00:00"
+     "at": "2026-11-09T07:47:34.842272+00:00"
     },
     {
      "title": "India news: Delhi air quality level 'severe' after Diwali",
@@ -123,16 +122,6 @@
      "at": "2026-11-09T06:48:21+00:00"
     },
     {
-     "title": "Delhi air pollution: AAP slams Delhi govt for alleged air quality data ‘manipulation’",
-     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T05:40:33+00:00"
-    },
-    {
      "title": "Delhi AQI crosses 400 on Diwali: Firecrackers push air quality into ‘severe’ zone as thick smog blankets city",
      "url": "https://www.livemint.com/news/india/delhi-aqi-crosses-400-on-diwali-firecrackers-push-air-quality-into-severe-zone-as-thick-smog-blankets-city-11794187239289.html",
      "outlet": "Mint",
@@ -151,39 +140,51 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-09T01:15:44+00:00"
+    },
+    {
+     "title": "Delhi's air quality ‘very poor’ morning after Diwali, capital chokes with AQI at 376",
+     "url": "https://www.hindustantimes.com/india-news/delhi-air-quality-very-poor-morning-after-diwali-capital-chokes-with-aqi-at-366-pollution-ncr-noida-gurugram-101794184711141.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T00:50:21+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:Deutsche Welle",
     "outlet:Network18",
     "outlet:Government of India",
+    "outlet:TV9 Network",
     "outlet:Amar Ujala",
     "outlet:BBC",
     "outlet:NDTV",
-    "outlet:TV9 Network",
     "outlet:DB Corp",
     "outlet:ABP Group",
     "google-news:Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies",
-    "google-news:NCR Pollution | 'Lungs Of Even Children In Delhi Not Pink', Amicus Tells Supreme Court",
-    "google-news:Bathinda 816, Delhi 635: India has 99 of world’s 100 most polluted cities after Diwali; only Lahore..."
+    "google-news:Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+    "google-news:NCR Pollution | 'Lungs Of Even Children In Delhi Not Pink', Amicus Tells Supreme Court"
    ],
    "top": {
-    "IN": 2,
+    "IN": 1,
     "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 1.3,
    "top_headlines": [
-    "Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies"
+    "Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+    "Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies",
+    "Diwali night ends in tragedy: 6 of family killed, 4 injured as fire engulfs goldsmith's 3-storey house in",
+    "Punjab fields set on fire on Diwali: Delhi govt alleges conspiracy as AQI peaks"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "Amar Ujala",
-    "BBC",
-    "India Today Group"
+    "BBC"
    ]
   },
   {
@@ -290,186 +291,53 @@
     "google-news:Israeli President picks opposition candidate Gadi Eisenkot to form government in setback for Netanyahu"
    ],
    "top": {
-    "IN": 4
+    "IN": 3
    },
-   "top_score": 0.85,
+   "top_score": 0.9,
    "top_headlines": [
     "Israeli President picks opposition candidate Gadi Eisenkot to form government in setback for Netanyahu"
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "UFC’s Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-   "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T05:40:33+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
+   "qid": "Q142086610",
+   "title": "2026 El Ayyat train collision",
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-09T00:00:00+00:00",
    "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "Trump 'kidding' about Dana White as press secy",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-    "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White"
+    "Egypt train collision kills 7, injures 125: Health Ministry"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-     "url": "https://www.aljazeera.com/news/2026/11/9/a-joke-or-test-why-trump-floated-ufcs-dana-white-as-his-press-secretary?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T05:02:16+00:00"
-    },
-    {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White",
-     "url": "https://www.ndtv.com/world-news/was-kidding-donald-trump-on-offering-press-secretary-role-to-ufc-chief-dana-white-12302121#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T05:40:33+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    },
-    {
-     "title": "Trump 'kidding' about Dana White as press secy",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-says-only-kidding-about-naming-ufc-ceo-as-white-house-press-secretary/articleshow/135668743.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:41:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q5962128",
-   "title": "Michael Locke (stuntman)",
-   "fame": 92092,
-   "views": 92092,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-06"
+    "wikipedia-current-events-2026-11-08",
+    "google-news:Egypt train collision kills 7, injures 125: Health Ministry"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q5962128",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-06",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6410167",
-   "title": "Kimmarie Johnson",
-   "fame": 82033,
-   "views": 82033,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-06"
+   "id": "wk-Q142086610",
+   "kind": "incident",
+   "category": "rail",
+   "date": "2026-11-08",
+   "coords": null,
+   "has_coords": true,
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Egypt train collision kills 7, injures 125: Health Ministry"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6410167",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "hindi_owners": []
   },
   {
    "id": "nw-20261107-poland-attack",
@@ -483,10 +351,11 @@
    "owners": [
     "Deutsche Welle",
     "France Médias Monde",
+    "Guardian Media Group",
     "Al Jazeera Media Network"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -564,23 +433,92 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-09T07:03:24+00:00"
+    },
+    {
+     "title": "Kraków shooting suspect who killed six has died, say police in Poland",
+     "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-09T06:58:03+00:00"
     }
    ],
    "via": [
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
     "outlet:Al Jazeera Media Network"
    ],
    "emerging": true,
    "article": null,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "3 Bodies Found At Gunman's House Who Killed 6 In Poland's Krakow"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q5962128",
+   "title": "Michael Locke (stuntman)",
+   "fame": 92092,
+   "views": 92092,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-06"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5962128",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-06",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6410167",
+   "title": "Kimmarie Johnson",
+   "fame": 82033,
+   "views": 82033,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-06"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6410167",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "nw-20261108-egypt-rail",
@@ -653,11 +591,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
-    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
+    "Egypt train collision kills 7, injures 125: Health Ministry"
    ],
    "hindi_owners": []
   },
@@ -788,37 +726,6 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q142086610",
-   "title": "2026 El Ayyat train collision",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-11-09T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142086610",
-   "kind": "incident",
-   "category": "rail",
-   "date": "2026-11-08",
-   "coords": null,
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q116992476",
    "title": "Jesús de Miguel",
    "fame": 33819,
@@ -879,62 +786,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q142077465",
-   "title": "2026 Kraków shooting",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-09T06:58:03+00:00",
-   "headlines": [
-    "Kraków shooting suspect who killed six has died, say police in Poland"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Kraków shooting suspect who killed six has died, say police in Poland",
-    "outlet:Guardian Media Group"
-   ],
-   "owners": [
-    "Guardian Media Group"
-   ],
-   "reports": [
-    {
-     "title": "Kraków shooting suspect who killed six has died, say police in Poland",
-     "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T06:58:03+00:00"
-    }
-   ],
-   "id": "wk-Q142077465",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-07",
-   "coords": [
-    50.06277778,
-    19.93688889
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "3 Bodies Found At Gunman's House Who Killed 6 In Poland's Krakow"
-   ],
    "hindi_owners": []
   },
   {
@@ -1090,117 +941,6 @@
   }
  ],
  "candidates": [
-  {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "UFC’s Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-   "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T05:40:33+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "Trump 'kidding' about Dana White as press secy",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-    "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-     "url": "https://www.aljazeera.com/news/2026/11/9/a-joke-or-test-why-trump-floated-ufcs-dana-white-as-his-press-secretary?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T05:02:16+00:00"
-    },
-    {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White",
-     "url": "https://www.ndtv.com/world-news/was-kidding-donald-trump-on-offering-press-secretary-role-to-ufc-chief-dana-white-12302121#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T05:40:33+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    },
-    {
-     "title": "Trump 'kidding' about Dana White as press secy",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-says-only-kidding-about-naming-ufc-ceo-as-white-house-press-secretary/articleshow/135668743.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:41:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
   {
    "qid": "Q5962128",
    "title": "Michael Locke (stuntman)",
@@ -1456,8 +1196,8 @@
  ],
  "notes": [
   "revisit Q2745305 (9430 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2170 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1373 headlines from 47 feeds (18 owners), 9 matched to articles, 6 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261108-egypt-rail",
-  "explainers: 4 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q796885, kh-20261109-Q660297, kh-20261109-Q52395487; dropped: explainer Seattle: fewer than 3 owners' headlines name it and the story; explainer Ranbir Kapoor Yash: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1375 headlines from 47 feeds (18 owners), 8 matched to articles, 5 candidates with 2+ owners, 2 nw- stories (on): nw-20261107-poland-attack, nw-20261108-egypt-rail",
+  "explainers: 3 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q796885, kh-20261109-Q52395487; dropped: explainer Seattle: fewer than 3 owners' headlines name it and the story; explainer Ranbir Kapoor Yash: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again"
@@ -1467,11 +1207,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1373,
+  "headlines": 1375,
   "feeds": 47,
   "owners": 18,
-  "matched": 9,
-  "corroborated": 6
+  "matched": 8,
+  "corroborated": 5
  },
  "emerging": [
   {
@@ -1486,10 +1226,11 @@
    "owners": [
     "Deutsche Welle",
     "France Médias Monde",
+    "Guardian Media Group",
     "Al Jazeera Media Network"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1567,22 +1308,29 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-09T07:03:24+00:00"
+    },
+    {
+     "title": "Kraków shooting suspect who killed six has died, say police in Poland",
+     "url": "https://www.theguardian.com/world/2026/nov/09/krakow-shooting-suspected-gunman-dead",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-09T06:58:03+00:00"
     }
    ],
    "via": [
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
     "outlet:Al Jazeera Media Network"
    ],
    "emerging": true,
    "article": null,
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "3 Bodies Found At Gunman's House Who Killed 6 In Poland's Krakow"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -1656,11 +1404,11 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
-    "Train crash kills seven, injures dozens near Egypt’s Cairo city"
+    "Egypt train collision kills 7, injures 125: Health Ministry"
    ],
    "hindi_owners": []
   }
@@ -1692,20 +1440,19 @@
     "worsen"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-09T07:30:12.815503+00:00",
+   "news_at": "2026-11-09T07:47:34.842272+00:00",
    "owners": [
     "HT Media",
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
-    "The Hindu Group",
     "India Today Group",
     "Deutsche Welle",
     "Network18",
     "Government of India",
+    "TV9 Network",
     "Amar Ujala",
     "BBC",
     "NDTV",
-    "TV9 Network",
     "DB Corp",
     "ABP Group"
    ],
@@ -1719,16 +1466,16 @@
     "Delhi's air quality ‘very poor’ morning after Diwali, capital chokes with AQI at 376",
     "Delhi's air quality slips into 'severe' category on Diwali; Mumbai's AQI at 170",
     "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
-    "Delhi air pollution: AAP slams Delhi govt for alleged air quality data ‘manipulation’"
+    "Was Delhi's AQI 2000, 1300 or 500 on Diwali night? Let me clear the air"
    ],
    "hindi_headlines": [
     "स्वच्छ हवा के लिए पर्यावरण-अनुकूल दिवाली मनाएं : डब्ल्यूडब्ल्यूएफ- इंडिया ईआईएसीपी की दिल्ली-एनसीआर के निवासियों से ग्रीन दिवाली मनाने का संकल्प लेने की अपील",
+    "आग बुझाने में छूटे पसीने: दिवाली की रात दिल्ली-मुंबई में फायर ब्रिगेड को 400 कॉल्स, रातभर गूंजते रहे सायरन",
     "'दिल्ली के खिलाफ साजिश': मंत्री कपिल मिश्रा का बड़ा दावा, बोले-पंजाब में दिवाली की रात 1200 जगह जलाई पराली",
     "दिल्ली और लाहौर में भले ही फ़र्क़ हो, लेकिन हवा में घुला ज़हर है एक जैसा: मोहम्मद हनीफ़ का नज़रिया",
-    "दिल्ली में एक्यूआई 3000 पार?: आप नेता सौरभ भारद्वाज का दावा, खराब हवा के आंकड़ों पर लगाया हेराफेरी का आरोप",
-    "7 हादसे, 23 मौतें... दिल्ली से महाराष्ट्र-MP तक अग्निकांड से कोहराम"
+    "दिल्ली में एक्यूआई 3000 पार?: आप नेता सौरभ भारद्वाज का दावा, खराब हवा के आंकड़ों पर लगाया हेराफेरी का आरोप"
    ],
-   "hindi_news": 36,
+   "hindi_news": 35,
    "geos": [
     "IN"
    ],
@@ -1745,7 +1492,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-09T07:30:12.815503+00:00"
+     "at": "2026-11-09T07:47:34.842272+00:00"
     },
     {
      "title": "India news: Delhi air quality level 'severe' after Diwali",
@@ -1788,16 +1535,6 @@
      "at": "2026-11-09T06:48:21+00:00"
     },
     {
-     "title": "Delhi air pollution: AAP slams Delhi govt for alleged air quality data ‘manipulation’",
-     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T05:40:33+00:00"
-    },
-    {
      "title": "Delhi AQI crosses 400 on Diwali: Firecrackers push air quality into ‘severe’ zone as thick smog blankets city",
      "url": "https://www.livemint.com/news/india/delhi-aqi-crosses-400-on-diwali-firecrackers-push-air-quality-into-severe-zone-as-thick-smog-blankets-city-11794187239289.html",
      "outlet": "Mint",
@@ -1816,39 +1553,51 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-09T01:15:44+00:00"
+    },
+    {
+     "title": "Delhi's air quality ‘very poor’ morning after Diwali, capital chokes with AQI at 376",
+     "url": "https://www.hindustantimes.com/india-news/delhi-air-quality-very-poor-morning-after-diwali-capital-chokes-with-aqi-at-366-pollution-ncr-noida-gurugram-101794184711141.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T00:50:21+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:Deutsche Welle",
     "outlet:Network18",
     "outlet:Government of India",
+    "outlet:TV9 Network",
     "outlet:Amar Ujala",
     "outlet:BBC",
     "outlet:NDTV",
-    "outlet:TV9 Network",
     "outlet:DB Corp",
     "outlet:ABP Group",
     "google-news:Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies",
-    "google-news:NCR Pollution | 'Lungs Of Even Children In Delhi Not Pink', Amicus Tells Supreme Court",
-    "google-news:Bathinda 816, Delhi 635: India has 99 of world’s 100 most polluted cities after Diwali; only Lahore..."
+    "google-news:Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+    "google-news:NCR Pollution | 'Lungs Of Even Children In Delhi Not Pink', Amicus Tells Supreme Court"
    ],
    "top": {
-    "IN": 2,
+    "IN": 1,
     "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 1.3,
    "top_headlines": [
-    "Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies"
+    "Air pollution over 66 times WHO limit in parts of Delhi as people defy ban on firecrackers on Deepavali",
+    "Parts of Delhi reel under ‘severe’ AQI category morning after Deepavali; grey haze darkens skies",
+    "Diwali night ends in tragedy: 6 of family killed, 4 injured as fire engulfs goldsmith's 3-storey house in",
+    "Punjab fields set on fire on Diwali: Delhi govt alleges conspiracy as AQI peaks"
    ],
    "hindi_owners": [
+    "TV9 Network",
     "Amar Ujala",
-    "BBC",
-    "India Today Group"
+    "BBC"
    ]
   },
   {
@@ -1955,124 +1704,13 @@
     "google-news:Israeli President picks opposition candidate Gadi Eisenkot to form government in setback for Netanyahu"
    ],
    "top": {
-    "IN": 4
+    "IN": 3
    },
-   "top_score": 0.85,
+   "top_score": 0.9,
    "top_headlines": [
     "Israeli President picks opposition candidate Gadi Eisenkot to form government in setback for Netanyahu"
    ],
    "hindi_owners": []
-  },
-  {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "UFC’s Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-   "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T05:40:33+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "Trump 'kidding' about Dana White as press secy",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-    "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "A joke or test? Why Trump floated UFC’s Dana White as his press secretary",
-     "url": "https://www.aljazeera.com/news/2026/11/9/a-joke-or-test-why-trump-floated-ufcs-dana-white-as-his-press-secretary?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T05:02:16+00:00"
-    },
-    {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "\"Was Kidding\": Trump On Offering Press Secretary Role To UFC Chief Dana White",
-     "url": "https://www.ndtv.com/world-news/was-kidding-donald-trump-on-offering-press-secretary-role-to-ufc-chief-dana-white-12302121#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T05:40:33+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    },
-    {
-     "title": "Trump 'kidding' about Dana White as press secy",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/trump-says-only-kidding-about-naming-ufc-ceo-as-white-house-press-secretary/articleshow/135668743.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:41:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261109-Q52395487",
