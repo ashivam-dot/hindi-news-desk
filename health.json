@@ -1,24 +1,25 @@
 {
- "at": "2026-11-09T09:31:14+00:00",
+ "at": "2026-11-09T09:46:20+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 133 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.13, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.0}, 'category:attack': {'n': 13, 'lift': 1.25, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.8}, 'category:diplomacy': {'n",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 9 candidates from 19 trending",
-  "outlets: 1432 headlines from 47 feeds (18 owners), 8 matched to articles, 7 candidates with 2+ owners, 2 nw- stories (on): nw-20261108-poland-attack, nw-20261108-senegal-maritime",
-  "explainers: 5 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q6744197, kh-20261109-Q796885, kh-20261109-Q6847225; dropped: explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story; explainer Vicky Kaushal: fewer than 3 owners' headlines name it and the story",
+  "watch: 10 candidates from 20 trending",
+  "outlets: 1443 headlines from 47 feeds (18 owners), 9 matched to articles, 8 candidates with 2+ owners, 2 nw- stories (on): nw-20261108-poland-attack, nw-20261108-senegal-maritime",
+  "explainers: 6 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q6744197, kh-20261109-Q796885, kh-20261109-Q23043345; dropped: explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Marco Rubio: fewer than 3 owners' headlines name it and the story; explainer Arjun Rajput / Arjun Rajput: no Wikipedia article that can be its centre",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
   "skip wk-Q172753: Orbitwire published (wk-Q172753), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold nw-20261108-poland-attack: last Short went out 0.3 h ago",
+  "drop kh-20261109-Q23043345: too low in Google News India's top stories (place 0.33, needs 0.35)",
   "drop wk-Q5962128: 70 h old and no longer trending live",
   "drop nw-20261108-senegal-maritime: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q6410167: 118 h old and no longer trending live",
   "drop kh-20261109-Q6847225: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261109-Q52395487: a world statement, politics or diplomacy story with no India connection",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261108-poland-attack, nw-20261108-senegal-maritime; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "skip nw-20261108-poland-attack: gate: no draft passed the fact checks: casualties without an agreed toll (मौत); beats 3,4,5,6 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: क्राकुव. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 2 beats are text cards and never two in a row.",
+  "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
  ]
 }
