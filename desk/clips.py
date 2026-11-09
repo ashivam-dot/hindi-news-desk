@@ -6,7 +6,7 @@ own what they film, has Gemma judge their shots, and cuts each clip muted to the
 the most relevant on the hook beat, then on the beats that stand over a map, a stand-in or a repeated photo, one clip a
 beat. A beat keeps its photo (every picture check of gate.py and match.py still holds); its clip plays over it from the
 beat's start for the clip's length, with the clip's own credit. No clip, or any failure, and the Short goes on with
-its photos. Off with DESK_FOOTAGE=off.
+its photos. Off unless DESK_FOOTAGE=on.
 """
 from __future__ import annotations
 
@@ -26,7 +26,9 @@ LEAST_BEAT = 1.6  # seconds: a shorter beat keeps its photo
 
 
 def enabled() -> bool:
-    return os.environ.get("DESK_FOOTAGE", "on").strip().lower() not in {"off", "false", "0", "no"}
+    # Off by default since 2026-11-09 (owner: no policy doubt): clips cut from other news channels' videos risk
+    # YouTube's reused-content and spam ("reposting content from others") policies; DESK_FOOTAGE=on brings them back.
+    return os.environ.get("DESK_FOOTAGE", "off").strip().lower() in {"on", "true", "1", "yes"}
 
 
 def query(story: str) -> str:

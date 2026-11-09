@@ -11,6 +11,21 @@ def no_comparisons(monkeypatch):
     monkeypatch.setattr(compare, "candidates", lambda stories, rows, at: ([], []))
 
 
+@pytest.fixture(autouse=True)
+def caps_these_tests_were_written_for(monkeypatch):
+    """The slot and cap mechanics are tested at the pre-2026-11-09 numbers; test_the_channel_posts_at_most_3_a_day
+    pins the live ones."""
+    for name, value in (("MAX_PER_DAY", 6), ("BREAKING_EXTRA", 2), ("MIN_GAP", timedelta(minutes=20)),
+                        ("BREAKING_GAP", timedelta(0)), ("CASE_MAX_PER_DAY", 3)):
+        monkeypatch.setattr(plan, name, value)
+
+
+def test_the_channel_posts_at_most_3_a_day_2_h_apart(monkeypatch):
+    monkeypatch.undo()
+    assert (plan.MAX_PER_DAY, plan.BREAKING_EXTRA, plan.MIN_GAP, plan.BREAKING_GAP, plan.CASE_MAX_PER_DAY) == (
+        3, 0, timedelta(hours=2), timedelta(hours=2), 1)
+
+
 def utc(day, hour, minute=0):
     return datetime(2026, 10, day, hour, minute, tzinfo=timezone.utc)
 

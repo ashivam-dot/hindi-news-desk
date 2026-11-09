@@ -5,8 +5,24 @@ import numpy as np
 import soundfile as sf
 from PIL import Image
 
+import pytest
+
 from desk import clips, compose, match, youtube
 from desk.spec import Beat, Short
+
+
+@pytest.fixture(autouse=True)
+def footage_on(monkeypatch):
+    monkeypatch.setenv("DESK_FOOTAGE", "on")
+
+
+def test_footage_is_off_unless_switched_on(monkeypatch, tmp_path):
+    monkeypatch.delenv("DESK_FOOTAGE")
+    assert not clips.enabled()
+    s = short([Beat("एक", "photo:0")], [{}])
+    assert clips.attach(s, tmp_path) == [] and not s.scene.get("clips")
+    monkeypatch.setenv("DESK_FOOTAGE", "on")
+    assert clips.enabled()
 
 
 def short(beats, photos, **scene):

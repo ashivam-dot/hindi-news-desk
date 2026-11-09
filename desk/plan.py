@@ -46,10 +46,12 @@ UPLOAD_RESERVE = 2
 # incidents those should be cover properly on time with max efforts." Fewer regular Shorts; the spare slots go to
 # breaking news and to a big case's angles. 2026-10-22 (audit/kyun-hua-shorts-strategy.md): 4 routine Shorts a day,
 # 90 minutes apart, so at most 6 with breaking news; the 6th to 10th Shorts of a day drew the least.
-MAX_PER_DAY = 6
-BREAKING_EXTRA = 2  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
-MIN_GAP = timedelta(minutes=20)
-BREAKING_GAP = timedelta(0)
+# Owner, 2026-11-09, after YouTube removed Chaukanna News (AI news Shorts at about 18 a day) under its spam policy's
+# "automated or synthetic mass-production" rule: at most 3 a day, 2 h apart, breaking news included.
+MAX_PER_DAY = 3
+BREAKING_EXTRA = 0  # set to 0 to make MAX_PER_DAY a hard cap even for breaking news
+MIN_GAP = timedelta(hours=2)
+BREAKING_GAP = timedelta(hours=2)
 BREAKING_FAME = 400_000
 # Or this many independent outlets on one incident, BREAKING_STRONG of them official, public or international: a big
 # story hours before Wikipedia's page views show it.
@@ -202,7 +204,7 @@ CASE_GAP = timedelta(minutes=30)
 # eleven angles on the Tiger Shroff case): at most CASE_MAX_PER_DAY of a case's angles an IST day and CASE_MAX_TOTAL
 # on the channel in all; the other angles wait. An angle made again replaces its old Short, so it is never over the
 # total. Retired and replaced Shorts are not on the channel and do not count.
-CASE_MAX_PER_DAY = 3
+CASE_MAX_PER_DAY = 1  # 2026-11-09: several Shorts a day on one case read as repetitive content
 CASE_MAX_TOTAL = 6
 # Stories are never held for a posting slot (timing is the channel; the evening reserve that held the day's last two
 # regular Shorts for 18:00 IST is gone, 2026-10-22). The hour's weight only orders the Shorts ready at once, and
