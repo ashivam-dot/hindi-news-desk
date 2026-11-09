@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T12:15:43+00:00",
+ "at": "2026-11-09T12:47:00+00:00",
  "trending": [
   {
    "id": "kh-20261109-Q1353",
@@ -28,7 +28,7 @@
     "worsen"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-09T12:18:42.952202+00:00",
+   "news_at": "2026-11-09T12:14:35+00:00",
    "owners": [
     "HT Media",
     "Al Jazeera Media Network",
@@ -36,12 +36,12 @@
     "Deutsche Welle",
     "Network18",
     "Government of India",
+    "BBC",
     "TV9 Network",
     "NDTV",
-    "BBC",
+    "ABP Group",
     "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
+    "DB Corp"
    ],
    "fame": 400000,
    "news": 400000,
@@ -56,13 +56,13 @@
     "Was Delhi's AQI 2000, 1300 or 500 on Diwali night? Let me clear the air"
    ],
    "hindi_headlines": [
+    "दिल्ली में पहली यमुना रिवर क्रूज सेवा शुरू होगी",
     "स्वच्छ हवा के लिए पर्यावरण-अनुकूल दिवाली मनाएं : डब्ल्यूडब्ल्यूएफ- इंडिया ईआईएसीपी की दिल्ली-एनसीआर के निवासियों से ग्रीन दिवाली मनाने का संकल्प लेने की अपील",
     "दिवाली के बाद दिल्ली में वायु प्रदूषण के स्तर में सुधार, जानिए क्यों",
-    "दिल्ली छठ पूजा 2026: हर्ष मल्होत्रा ने ITO छठ घाट का निरीक्षण किया",
-    "दिल्ली एनसीआर के लोनी की हवा क्यों है सबसे ज्यादा दमघोंटू, जानिए दस वजह",
-    "गुरुग्राम में गैंगवार! दिल्ली-जयपुर हाईवे पर मारा गया अशोक राठी गैंग का शूटर दीपू, कार ओवरटेक कर बदमाशों ने दागी गोलियां"
+    "शेख़ हसीना ने बांग्लादेश वापसी के लिए दिल्ली में किया पासपोर्ट अप्लाई",
+    "Delhi Pollution: दिवाली के बाद दिल्ली-NCR की हवा हुई जहरीली, बहादुरगढ़ में AQI 400; 30 शहरों में बेहद खराब हवा"
    ],
-   "hindi_news": 40,
+   "hindi_news": 37,
    "geos": [
     "IN"
    ],
@@ -71,16 +71,6 @@
    "abroad": false,
    "label_hi": "दिल्ली",
    "reports": [
-    {
-     "title": "Celebrate an Eco-Friendly Green Diwali for Cleaner Air: WWF-India EIACP appeals to citizens of Delhi-NCR to take the Green Diwali Pledge",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334104",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-09T12:18:42.952202+00:00"
-    },
     {
      "title": "India news: Delhi air quality level 'severe' after Diwali",
      "url": "https://www.dw.com/en/india-news-delhi-air-quality-level-severe-after-diwali/live-79895307?maca=en-rss-en-all-1573-rdf",
@@ -150,6 +140,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-09T00:50:21+00:00"
+    },
+    {
+     "title": "Delhi’s air quality ‘very poor’ on Diwali, expected to worsen",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-struggle-begins-ahead-of-diwali-firecrackers-records-very-poor-air-quality-with-376-aqi-101794143976910.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T13:33:49+00:00"
     }
    ],
    "via": [
@@ -159,15 +159,15 @@
     "outlet:Deutsche Welle",
     "outlet:Network18",
     "outlet:Government of India",
+    "outlet:BBC",
     "outlet:TV9 Network",
     "outlet:NDTV",
-    "outlet:BBC",
+    "outlet:ABP Group",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
-    "outlet:ABP Group",
     "google-news:Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
-    "google-news:Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "google-news:After Diwali, 93 of the world's 100 most polluted cities are in India: Worst AQI as high as 868; New Delhi not in Top 10"
+    "google-news:Just 30 km From Delhi, Air In This UP Town Is Among Most Polluted In World",
+    "google-news:Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\""
    ],
    "top": {
     "IN": 1,
@@ -175,107 +175,218 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
     "Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
     "After Diwali, 93 of the world's 100 most polluted cities are in India: Worst AQI as high as 868; New Delhi not in Top 10",
     "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
    "hindi_owners": [
     "India Today Group",
-    "TV9 Network",
-    "NDTV"
+    "BBC",
+    "TV9 Network"
    ]
   },
   {
-   "id": "kh-20261109-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
+   "id": "kh-20261109-Q1354",
+   "qid": "Q1354",
+   "title": "Dhaka",
+   "name": "Dhaka",
+   "phrase": "Dhaka",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
+   "story": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
    "story_keys": [
-    "family",
-    "memoir"
+    "livestream",
+    "off",
+    "slum",
+    "vlogger"
    ],
-   "date": "2026-11-08",
-   "news_at": "2026-11-09T09:55:13+00:00",
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T10:25:56+00:00",
    "owners": [
+    "India Today Group",
     "Network18",
-    "HT Media",
-    "The Hindu Group"
+    "NDTV"
    ],
    "fame": 275000,
    "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-    "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-    "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-    "\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir"
+    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+    "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
+    "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive"
    ],
    "hindi_headlines": [
-    "सोनिया गांधी की किताब 'बिलॉन्गिंग: ए जर्नी ऑफ लव' में खुलेगा परिवार का निजी संसार",
-    "यह कोई राजनीतिक किताब नहीं, बल्कि...अपने मेमॉयर पर क्या बोलीं सोनिया गांधी",
-    "सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
+    "भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
    ],
-   "hindi_news": 3,
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "ढाका",
+   "reports": [
+    {
+     "title": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+     "url": "https://www.ndtv.com/world-news/cow-urine-tea-filthy-homes-chinese-vloggers-pass-off-dhaka-slums-as-delhi-12302919#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T09:27:26+00:00"
+    },
+    {
+     "title": "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive",
+     "url": "https://www.news18.com/india/dhaka-slums-passed-off-as-new-delhi-inside-the-chinese-livestreams-raising-alarm-in-india-ws-l-10418223.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T06:06:50+00:00"
+    },
+    {
+     "title": "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
+     "url": "https://www.indiatoday.in/world/story/chinese-vloggers-pass-off-dhaka-slums-as-new-delhi-poverty-tourism-itspc-3034817-2026-11-09?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T01:30:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "google-news:Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+    "google-news:भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
+   ],
+   "top": {
+    "IN": 9,
+    "IN-nation": 7
+   },
+   "top_score": 0.81,
+   "top_headlines": [
+    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\""
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261109-Q169132",
+   "qid": "Q169132",
+   "title": "Punjab",
+   "name": "Punjab",
+   "phrase": "At Punjab",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+   "story_keys": [
+    "farm",
+    "fire",
+    "record",
+    "single-day"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T11:58:47+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "TV9 Network",
+    "India Today Group",
+    "Amar Ujala"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+    "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+    "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’"
+   ],
+   "hindi_headlines": [
+    "दिवाली पर 1200 जगहों पर जली पराली… BJP का दावा, दिल्ली में प्रदूषण को लेकर पंजाब की AAP सरकार को घेरा",
+    "'दिल्ली गैंग ने पंजाब में पराली जलाई...' दिवाली पर दमघोंटू हवा को BJP ने बताया 'केजरीवाल की साजिश', AAP का पलटवार",
+    "पंड्या के लिए अर्शदीप को छोड़ना पंजाब की भूल? उठे बड़े सवाल",
+    "UP-पंजाब में कब होंगे विधानसभा चुनाव, कब से लागू हो सकता है आचार संहिता? आ गया बड़ा अपडेट",
+    "पंजाब में पराली जलाने का बढ़ा कहर, टूटे सारे रिकॉर्ड!"
+   ],
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "सोनिया गांधी",
+   "label_hi": "पंजाब",
    "reports": [
     {
-     "title": "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-     "url": "https://www.thehindu.com/news/national/sonia-gandhis-belonging-a-journey-of-love-how-a-love-story-grew-into-a-deep-belonging-to-india/article71674214.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T09:55:13+00:00"
-    },
-    {
-     "title": "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-     "url": "https://www.hindustantimes.com/india-news/wanted-to-portray-my-family-honestly-sonia-gandhi-explains-reason-behind-writing-her-memoir-101794185957071.html",
+     "title": "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’",
+     "url": "https://www.hindustantimes.com/india-news/bjp-alleges-conspiracy-to-worsen-delhi-pollution-claims-punjab-farm-fires-were-deliberate-101794221407124.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T02:23:53+00:00"
+     "at": "2026-11-09T11:58:47+00:00"
     },
     {
-     "title": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-     "url": "https://www.news18.com/india/not-a-political-book-sonia-gandhis-memoir-belonging-to-explore-gandhi-familys-human-flaws-ws-rt-10417726.html",
+     "title": "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+     "url": "https://www.thehindu.com/news/national/punjab/punjab-records-seasons-biggest-single-day-jump-in-farm-fires-on-deepavali/article71681771.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T08:36:38+00:00"
+    },
+    {
+     "title": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+     "url": "https://www.news18.com/india/delhi-chokes-as-punjab-records-1152-farm-fires-on-diwali-highest-single-day-count-in-3-years-ws-kl-10418529.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-08T12:29:40+00:00"
+     "at": "2026-11-09T07:56:23+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:HT Media",
     "outlet:The Hindu Group",
-    "google-news:\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir",
-    "google-news:सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
+    "outlet:HT Media",
+    "outlet:TV9 Network",
+    "outlet:India Today Group",
+    "outlet:Amar Ujala",
+    "google-news:पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
+   "top": {
+    "IN-nation": 2,
+    "IN-hi-nation": 9
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले",
+    "Mumbai Bans Rockets, Aerial Crackers Till November 25 After Diwali Fires",
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "India Today Group"
+   ],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261109-Q6744197",
@@ -312,7 +423,7 @@
     "'True colours exposed': BJP's Giriraj Singh tears into Kharge over Diwali 'khushiyon ka Eid' remark",
     "BJP slams Kharge for calling Diwali 'Eid of joy', dares Congress to call Eid 'Diwali of joy'",
     "‘Diwali is Diwali, Eid is Eid’: BJP slams Mallikarjun Kharge over festival remark",
-    "\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge"
+    "Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark"
    ],
    "hindi_headlines": [
     "'दिवाली खुशियों की ईद है', मल्लिकार्जुन खरगे के बयान पर भड़क गई बीजेपी, बोली- कांग्रेस एंटी-सनातनी",
@@ -382,222 +493,129 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "google-news:\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge",
+    "google-news:Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark",
     "google-news:'दिवाली खुशियों की एक ईद है', कांग्रेस अध्यक्ष मल्लिकार्जुन खरगे के बयान पर विवाद, भाजपा बोली- इनकी नीति सन"
    ],
    "top": {
-    "IN-hi": 7,
-    "IN-nation": 13,
-    "IN-hi-nation": 1
+    "IN-nation": 12,
+    "IN-hi-nation": 8
    },
-   "top_score": 1.12,
+   "top_score": 0.525,
    "top_headlines": [
     "'दिवाली खुशियों की एक ईद है', कांग्रेस अध्यक्ष मल्लिकार्जुन खरगे के बयान पर विवाद, भाजपा बोली- इनकी नीति सन",
     "Diwali 2026: Indians celebrate festival with lights and fireworks",
-    "\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge",
+    "Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark",
     "US, Iran, Pakistan, UAE and more: World leaders extend Diwali wishes, call for peace and prosperity | World News"
    ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261109-Q129844",
-   "qid": "Q129844",
-   "title": "Aam Aadmi Party",
-   "name": "Aam Aadmi Party",
-   "phrase": "AAP",
-   "person": false,
+   "id": "kh-20261109-Q10218",
+   "qid": "Q10218",
+   "title": "Rahul Gandhi",
+   "name": "Rahul Gandhi",
+   "phrase": "Rahul Gandhi",
+   "person": true,
    "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
    "story_keys": [
-    "allege",
-    "data",
-    "pollution",
-    "question",
-    "row"
+    "called",
+    "challenge",
+    "debate",
+    "remark",
+    "renew"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T10:32:25+00:00",
+   "news_at": "2026-11-09T12:33:12+00:00",
    "owners": [
     "Network18",
-    "HT Media",
     "Bennett, Coleman & Co.",
-    "The Hindu Group"
+    "The Hindu Group",
+    "HT Media",
+    "NDTV"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
-    "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
-    "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’"
+    "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+    "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+    "Rahul Gandhi dares PM to debate him on who is ‘anti-national’"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "'दम है तो ईद को खुशियों की दीपावली कहकर दिखाएं', राहुल गांधी को BJP ने ललकारा; क्यों दिया ऐसा चैलेंज?",
+    "पहले मजबूत करेंगे कांग्रेस का 'हाथ', फिर लेंगे साइकिल का साथ; राहुल गांधी ने प्रियंका को दी यूपी की कमान",
+    "'आपके सामने खड़े होने की हिम्मत नहीं होगी'; राहुल गांधी ने चला अब जवानों वाला दांव, PM पर क्या बोले?",
+    "'PM ने हमें नक्सली कहा, लेकिन मैं डिबेट के लिए तैयार हूं', राहुल गांधी का पीएम मोदी को चैलेंज",
+    "राहुल गांधी 26 नवंबर को मणिपुर जाएंगे, हिंसा प्रभावित परिवारों से करेंगे मुलाकात"
+   ],
+   "hindi_news": 6,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "आम आदमी पार्टी",
+   "label_hi": "राहुल गाँधी",
    "reports": [
     {
-     "title": "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’",
-     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
+     "title": "Rahul Gandhi dares PM to debate him on who is ‘anti-national’",
+     "url": "https://www.thehindu.com/news/national/rahul-gandhi-repeats-debate-dare-after-pm-modis-dimagi-naxal-jibe/article71682318.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T10:00:31+00:00"
+     "at": "2026-11-09T12:33:12+00:00"
     },
     {
-     "title": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-     "url": "https://timesofindia.indiatimes.com/india/delhi-pollution-sparks-row-bjp-alleges-conspiracy-aap-and-congress-question-aqi-data/articleshow/135674399.cms",
+     "title": "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+     "url": "https://timesofindia.indiatimes.com/india/he-called-us-naxals-rahul-gandhi-hits-back-at-pm-modi-renews-debate-challenge/articleshow/135678276.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T07:39:51+00:00"
+     "at": "2026-11-09T10:11:36+00:00"
     },
     {
-     "title": "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
-     "url": "https://www.hindustantimes.com/india-news/delhi-aqi-crossed-3-000-aaps-saurabh-bharadwaj-alleges-aqi-data-fraud-by-government-101794202517923.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T07:19:14+00:00"
-    },
-    {
-     "title": "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
-     "url": "https://www.news18.com/videos/breaking-news/delhi-chokes-as-aap-questions-govt-s-aqi-data-claims-monitoring-stations-were-shut-down-news18-10418053.html",
+     "title": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+     "url": "https://www.news18.com/india/he-called-us-naxals-rahul-gandhi-renews-debate-challenge-to-pm-modi-over-dimagi-naxal-remark-10418758.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T03:59:43+00:00"
+     "at": "2026-11-09T10:00:01+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "google-news:Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data"
-   ],
-   "top": {
-    "IN": 5,
-    "IN-nation": 7
-   },
-   "top_score": 1.01,
-   "top_headlines": [
-    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster",
-    "Diwali air pollution: Pulmonologist shares 6 ways to protect your lungs during high AQI and warning signs to watch for | Health"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261109-Q1354",
-   "qid": "Q1354",
-   "title": "Dhaka",
-   "name": "Dhaka",
-   "phrase": "Dhaka",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-   "story_keys": [
-    "livestream",
-    "off",
-    "slum",
-    "vlogger"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T10:25:56+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-    "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
-    "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive"
-   ],
-   "hindi_headlines": [
-    "भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "ढाका",
-   "reports": [
-    {
-     "title": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-     "url": "https://www.ndtv.com/world-news/cow-urine-tea-filthy-homes-chinese-vloggers-pass-off-dhaka-slums-as-delhi-12302919#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T09:27:26+00:00"
-    },
-    {
-     "title": "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive",
-     "url": "https://www.news18.com/india/dhaka-slums-passed-off-as-new-delhi-inside-the-chinese-livestreams-raising-alarm-in-india-ws-l-10418223.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T06:06:50+00:00"
-    },
-    {
-     "title": "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
-     "url": "https://www.indiatoday.in/world/story/chinese-vloggers-pass-off-dhaka-slums-as-new-delhi-poverty-tourism-itspc-3034817-2026-11-09?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T01:30:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
+    "outlet:HT Media",
     "outlet:NDTV",
-    "google-news:भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
+    "google-news:पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती"
    ],
    "top": {
     "IN": 10,
-    "IN-nation": 6
+    "IN-hi": 7,
+    "IN-hi-nation": 1
    },
-   "top_score": 0.775,
+   "top_score": 1.275,
    "top_headlines": [
-    "'This is New Delhi': Chinese vloggers pass off Bangladesh slums as India in bizarre videos"
+    "पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती",
+    "Reds gone, but 'dimagi Naxals' still instigating people: PM Modi"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV"
+   ],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q142077465",
@@ -606,7 +624,7 @@
    "views": 78832,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-09T12:15:43.260457+00:00",
+   "news_at": "2026-11-09T12:47:00.225728+00:00",
    "headlines": [
     "Poland’s justice minister says investigation into Kraków shooting will aim to establish if the 24-year-old acted alone – Europe live"
    ],
@@ -636,7 +654,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-09T11:48:07+00:00"
+     "at": "2026-11-09T12:43:10+00:00"
     },
     {
      "title": "Kraków shooting suspect who killed six has died, Polish police say",
@@ -757,113 +775,119 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Poland mass shooting assailant dies in hospital, police say"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "Dana White",
-   "person": true,
+   "id": "kh-20261109-Q129844",
+   "qid": "Q129844",
+   "title": "Aam Aadmi Party",
+   "name": "Aam Aadmi Party",
+   "phrase": "AAP",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
    "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
+    "allege",
+    "data",
+    "pollution",
+    "question",
+    "row"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T08:49:17+00:00",
+   "news_at": "2026-11-09T12:15:35+00:00",
    "owners": [
-    "Guardian Media Group",
+    "Network18",
     "HT Media",
-    "Al Jazeera Media Network",
-    "BBC"
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "Trump ‘only kidding’ about Dana White press secretary role",
-    "Trump says he was 'kidding' about Dana White press secretary offer"
+    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+    "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
+    "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
+    "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "आम आदमी पार्टी",
    "reports": [
     {
-     "title": "Trump says he was 'kidding' about Dana White press secretary offer",
-     "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
+     "title": "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’",
+     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T08:49:17+00:00"
+     "at": "2026-11-09T12:15:35+00:00"
     },
     {
-     "title": "Trump ‘only kidding’ about Dana White press secretary role",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-only-kidding-about-dana-white-press-secretary-role?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+     "url": "https://timesofindia.indiatimes.com/india/delhi-pollution-sparks-row-bjp-alleges-conspiracy-aap-and-congress-question-aqi-data/articleshow/135674399.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T08:18:00+00:00"
+     "at": "2026-11-09T07:39:51+00:00"
     },
     {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
+     "title": "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
+     "url": "https://www.hindustantimes.com/india-news/delhi-aqi-crossed-3-000-aaps-saurabh-bharadwaj-alleges-aqi-data-fraud-by-government-101794202517923.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
+     "at": "2026-11-09T07:19:14+00:00"
+    },
+    {
+     "title": "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
+     "url": "https://www.news18.com/videos/breaking-news/delhi-chokes-as-aap-questions-govt-s-aqi-data-claims-monitoring-stations-were-shut-down-news18-10418053.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T03:59:43+00:00"
     }
    ],
    "via": [
-    "outlet:Guardian Media Group",
+    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group"
    ],
    "top": {
-    "IN": 3
+    "IN-nation": 11
    },
-   "top_score": 0.9,
+   "top_score": 0.3,
    "top_headlines": [
-    "U.S., China, Russia leaders to meet next week, says Trump; Beijing says ‘in communication with parties’"
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -957,6 +981,104 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261109-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "From Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+   "story_keys": [
+    "merger",
+    "parth",
+    "reunion"
+   ],
+   "date": "2026-11-08",
+   "news_at": "2026-11-09T10:18:01+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+    "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+    "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+    "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey"
+   ],
+   "hindi_headlines": [
+    "शरद पवार और सांसद की दिवाली मीटिंग, 48 घंटे में 2 बार मिले; होगा बड़ा ऐलान?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+     "url": "https://www.news18.com/videos/breaking-news/sunetra-parth-reject-ncp-merger-with-sharad-pawar-alliance-over-reunion-newsroom-unfiltered-10418868.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:18:01+00:00"
+    },
+    {
+     "title": "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey",
+     "url": "https://www.hindustantimes.com/india-news/from-sharad-pawar-1999-party-launch-to-2026-reunion-buzz-a-look-at-ncps-journey-ajit-pawar-sunetra-supriya-101794203500412.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T07:16:04+00:00"
+    },
+    {
+     "title": "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+     "url": "https://www.news18.com/explainers/an-almost-done-merger-flurry-of-meetings-and-pawar-family-equation-is-ncp-headed-for-reunion-ws-l-10417991.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T03:42:54+00:00"
+    },
+    {
+     "title": "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+     "url": "https://timesofindia.indiatimes.com/city/pune/parth-meets-sharad-pawar-twice-in-two-days-ncp-leaders-seek-to-revive-merger-talks/articleshow/135665085.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T19:28:12+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q142086610",
@@ -1208,112 +1330,222 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261109-Q129844",
-   "qid": "Q129844",
-   "title": "Aam Aadmi Party",
-   "name": "Aam Aadmi Party",
-   "phrase": "AAP",
+   "id": "kh-20261109-Q169132",
+   "qid": "Q169132",
+   "title": "Punjab",
+   "name": "Punjab",
+   "phrase": "At Punjab",
    "person": false,
    "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
    "story_keys": [
-    "allege",
-    "data",
-    "pollution",
-    "question",
-    "row"
+    "farm",
+    "fire",
+    "record",
+    "single-day"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T10:32:25+00:00",
+   "news_at": "2026-11-09T11:58:47+00:00",
    "owners": [
     "Network18",
+    "The Hindu Group",
     "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
+    "TV9 Network",
+    "India Today Group",
+    "Amar Ujala"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
-    "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
-    "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’"
+    "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+    "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+    "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "दिवाली पर 1200 जगहों पर जली पराली… BJP का दावा, दिल्ली में प्रदूषण को लेकर पंजाब की AAP सरकार को घेरा",
+    "'दिल्ली गैंग ने पंजाब में पराली जलाई...' दिवाली पर दमघोंटू हवा को BJP ने बताया 'केजरीवाल की साजिश', AAP का पलटवार",
+    "पंड्या के लिए अर्शदीप को छोड़ना पंजाब की भूल? उठे बड़े सवाल",
+    "UP-पंजाब में कब होंगे विधानसभा चुनाव, कब से लागू हो सकता है आचार संहिता? आ गया बड़ा अपडेट",
+    "पंजाब में पराली जलाने का बढ़ा कहर, टूटे सारे रिकॉर्ड!"
+   ],
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "आम आदमी पार्टी",
+   "label_hi": "पंजाब",
    "reports": [
     {
-     "title": "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’",
-     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T10:00:31+00:00"
-    },
-    {
-     "title": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-     "url": "https://timesofindia.indiatimes.com/india/delhi-pollution-sparks-row-bjp-alleges-conspiracy-aap-and-congress-question-aqi-data/articleshow/135674399.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T07:39:51+00:00"
-    },
-    {
-     "title": "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
-     "url": "https://www.hindustantimes.com/india-news/delhi-aqi-crossed-3-000-aaps-saurabh-bharadwaj-alleges-aqi-data-fraud-by-government-101794202517923.html",
+     "title": "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’",
+     "url": "https://www.hindustantimes.com/india-news/bjp-alleges-conspiracy-to-worsen-delhi-pollution-claims-punjab-farm-fires-were-deliberate-101794221407124.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T07:19:14+00:00"
+     "at": "2026-11-09T11:58:47+00:00"
     },
     {
-     "title": "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
-     "url": "https://www.news18.com/videos/breaking-news/delhi-chokes-as-aap-questions-govt-s-aqi-data-claims-monitoring-stations-were-shut-down-news18-10418053.html",
+     "title": "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+     "url": "https://www.thehindu.com/news/national/punjab/punjab-records-seasons-biggest-single-day-jump-in-farm-fires-on-deepavali/article71681771.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T08:36:38+00:00"
+    },
+    {
+     "title": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+     "url": "https://www.news18.com/india/delhi-chokes-as-punjab-records-1152-farm-fires-on-diwali-highest-single-day-count-in-3-years-ws-kl-10418529.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T03:59:43+00:00"
+     "at": "2026-11-09T07:56:23+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "google-news:Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data"
+    "outlet:HT Media",
+    "outlet:TV9 Network",
+    "outlet:India Today Group",
+    "outlet:Amar Ujala",
+    "google-news:पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले"
    ],
    "top": {
-    "IN": 5,
-    "IN-nation": 7
+    "IN-nation": 2,
+    "IN-hi-nation": 9
    },
-   "top_score": 1.01,
+   "top_score": 0.75,
    "top_headlines": [
-    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster",
-    "Diwali air pollution: Pulmonologist shares 6 ways to protect your lungs during high AQI and warning signs to watch for | Health"
+    "पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले",
+    "Mumbai Bans Rockets, Aerial Crackers Till November 25 After Diwali Fires",
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "India Today Group"
+   ],
    "audience": "india",
-   "lane": "other"
+   "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261109-Q10218",
+   "qid": "Q10218",
+   "title": "Rahul Gandhi",
+   "name": "Rahul Gandhi",
+   "phrase": "Rahul Gandhi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+   "story_keys": [
+    "called",
+    "challenge",
+    "debate",
+    "remark",
+    "renew"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T12:33:12+00:00",
+   "owners": [
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "HT Media",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+    "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+    "Rahul Gandhi dares PM to debate him on who is ‘anti-national’"
+   ],
+   "hindi_headlines": [
+    "'दम है तो ईद को खुशियों की दीपावली कहकर दिखाएं', राहुल गांधी को BJP ने ललकारा; क्यों दिया ऐसा चैलेंज?",
+    "पहले मजबूत करेंगे कांग्रेस का 'हाथ', फिर लेंगे साइकिल का साथ; राहुल गांधी ने प्रियंका को दी यूपी की कमान",
+    "'आपके सामने खड़े होने की हिम्मत नहीं होगी'; राहुल गांधी ने चला अब जवानों वाला दांव, PM पर क्या बोले?",
+    "'PM ने हमें नक्सली कहा, लेकिन मैं डिबेट के लिए तैयार हूं', राहुल गांधी का पीएम मोदी को चैलेंज",
+    "राहुल गांधी 26 नवंबर को मणिपुर जाएंगे, हिंसा प्रभावित परिवारों से करेंगे मुलाकात"
+   ],
+   "hindi_news": 6,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "राहुल गाँधी",
+   "reports": [
+    {
+     "title": "Rahul Gandhi dares PM to debate him on who is ‘anti-national’",
+     "url": "https://www.thehindu.com/news/national/rahul-gandhi-repeats-debate-dare-after-pm-modis-dimagi-naxal-jibe/article71682318.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T12:33:12+00:00"
+    },
+    {
+     "title": "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+     "url": "https://timesofindia.indiatimes.com/india/he-called-us-naxals-rahul-gandhi-hits-back-at-pm-modi-renews-debate-challenge/articleshow/135678276.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:11:36+00:00"
+    },
+    {
+     "title": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+     "url": "https://www.news18.com/india/he-called-us-naxals-rahul-gandhi-renews-debate-challenge-to-pm-modi-over-dimagi-naxal-remark-10418758.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:00:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "google-news:पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती"
+   ],
+   "top": {
+    "IN": 10,
+    "IN-hi": 7,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.275,
+   "top_headlines": [
+    "पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती",
+    "Reds gone, but 'dimagi Naxals' still instigating people: PM Modi"
+   ],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261109-Q1354",
@@ -1339,8 +1571,8 @@
     "Network18",
     "NDTV"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1393,211 +1625,123 @@
     "outlet:India Today Group",
     "outlet:Network18",
     "outlet:NDTV",
+    "google-news:Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
     "google-news:भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
    ],
    "top": {
-    "IN": 10,
-    "IN-nation": 6
+    "IN": 9,
+    "IN-nation": 7
    },
-   "top_score": 0.775,
+   "top_score": 0.81,
    "top_headlines": [
-    "'This is New Delhi': Chinese vloggers pass off Bangladesh slums as India in bizarre videos"
+    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\""
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261109-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
+   "id": "kh-20261109-Q129844",
+   "qid": "Q129844",
+   "title": "Aam Aadmi Party",
+   "name": "Aam Aadmi Party",
+   "phrase": "AAP",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
    "story_keys": [
-    "family",
-    "memoir"
+    "allege",
+    "data",
+    "pollution",
+    "question",
+    "row"
    ],
-   "date": "2026-11-08",
-   "news_at": "2026-11-09T09:55:13+00:00",
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T12:15:35+00:00",
    "owners": [
     "Network18",
     "HT Media",
+    "Bennett, Coleman & Co.",
     "The Hindu Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-    "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-    "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-    "\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir"
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी की किताब 'बिलॉन्गिंग: ए जर्नी ऑफ लव' में खुलेगा परिवार का निजी संसार",
-    "यह कोई राजनीतिक किताब नहीं, बल्कि...अपने मेमॉयर पर क्या बोलीं सोनिया गांधी",
-    "सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "सोनिया गांधी",
-   "reports": [
-    {
-     "title": "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-     "url": "https://www.thehindu.com/news/national/sonia-gandhis-belonging-a-journey-of-love-how-a-love-story-grew-into-a-deep-belonging-to-india/article71674214.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T09:55:13+00:00"
-    },
-    {
-     "title": "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-     "url": "https://www.hindustantimes.com/india-news/wanted-to-portray-my-family-honestly-sonia-gandhi-explains-reason-behind-writing-her-memoir-101794185957071.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:23:53+00:00"
-    },
-    {
-     "title": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-     "url": "https://www.news18.com/india/not-a-political-book-sonia-gandhis-memoir-belonging-to-explore-gandhi-familys-human-flaws-ws-rt-10417726.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-08T12:29:40+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir",
-    "google-news:सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-   "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T08:49:17+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "BBC"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "Trump ‘only kidding’ about Dana White press secretary role",
-    "Trump says he was 'kidding' about Dana White press secretary offer"
+    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+    "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
+    "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
+    "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "आम आदमी पार्टी",
    "reports": [
     {
-     "title": "Trump says he was 'kidding' about Dana White press secretary offer",
-     "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
+     "title": "Delhi AQI row: AAP alleges data fraud, BJP fires back over Punjab stubble ‘conspiracy’",
+     "url": "https://www.thehindu.com/news/cities/Delhi/delhi-air-pollution-aap-slams-delhi-govt-for-alleged-air-quality-data-manipulation/article71681459.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T08:49:17+00:00"
+     "at": "2026-11-09T12:15:35+00:00"
     },
     {
-     "title": "Trump ‘only kidding’ about Dana White press secretary role",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-only-kidding-about-dana-white-press-secretary-role?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
+     "url": "https://timesofindia.indiatimes.com/india/delhi-pollution-sparks-row-bjp-alleges-conspiracy-aap-and-congress-question-aqi-data/articleshow/135674399.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T08:18:00+00:00"
+     "at": "2026-11-09T07:39:51+00:00"
     },
     {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
+     "title": "‘Delhi AQI crossed 3,000’: AAP's Saurabh Bharadwaj alleges ‘AQI data fraud’ by government",
+     "url": "https://www.hindustantimes.com/india-news/delhi-aqi-crossed-3-000-aaps-saurabh-bharadwaj-alleges-aqi-data-fraud-by-government-101794202517923.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
+     "at": "2026-11-09T07:19:14+00:00"
+    },
+    {
+     "title": "Delhi Chokes As AAP Questions Govt’s AQI Data, Claims Monitoring Stations Were Shut Down | News18",
+     "url": "https://www.news18.com/videos/breaking-news/delhi-chokes-as-aap-questions-govt-s-aqi-data-claims-monitoring-stations-were-shut-down-news18-10418053.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T03:59:43+00:00"
     }
    ],
    "via": [
-    "outlet:Guardian Media Group",
+    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group"
    ],
    "top": {
-    "IN": 3
+    "IN-nation": 11
    },
-   "top_score": 0.9,
+   "top_score": 0.3,
    "top_headlines": [
-    "U.S., China, Russia leaders to meet next week, says Trump; Beijing says ‘in communication with parties’"
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -1694,12 +1838,114 @@
    ],
    "emerging": true,
    "article": null,
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Poland mass shooting assailant dies in hospital, police say"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261109-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "From Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+   "story_keys": [
+    "merger",
+    "parth",
+    "reunion"
+   ],
+   "date": "2026-11-08",
+   "news_at": "2026-11-09T10:18:01+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+    "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+    "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+    "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey"
+   ],
+   "hindi_headlines": [
+    "शरद पवार और सांसद की दिवाली मीटिंग, 48 घंटे में 2 बार मिले; होगा बड़ा ऐलान?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+     "url": "https://www.news18.com/videos/breaking-news/sunetra-parth-reject-ncp-merger-with-sharad-pawar-alliance-over-reunion-newsroom-unfiltered-10418868.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:18:01+00:00"
+    },
+    {
+     "title": "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey",
+     "url": "https://www.hindustantimes.com/india-news/from-sharad-pawar-1999-party-launch-to-2026-reunion-buzz-a-look-at-ncps-journey-ajit-pawar-sunetra-supriya-101794203500412.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T07:16:04+00:00"
+    },
+    {
+     "title": "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+     "url": "https://www.news18.com/explainers/an-almost-done-merger-flurry-of-meetings-and-pawar-family-equation-is-ncp-headed-for-reunion-ws-l-10417991.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T03:42:54+00:00"
+    },
+    {
+     "title": "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+     "url": "https://timesofindia.indiatimes.com/city/pune/parth-meets-sharad-pawar-twice-in-two-days-ncp-leaders-seek-to-revive-merger-talks/articleshow/135665085.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T19:28:12+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
+   "audience": "india",
+   "lane": "rajneeti"
   },
   {
    "qid": "Q922227",
@@ -1796,18 +2042,22 @@
   }
  ],
  "notes": [
-  "revisit Q2745305 (9431 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2170 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1540 headlines from 47 feeds (18 owners), 10 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261108-krakow-attack",
-  "explainers: 7 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q163225, kh-20261109-Q6744197, kh-20261109-Q129844; dropped: explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Gurfateh Pirzada: fewer than 3 owners' headlines name it and the story; explainer COP: no Wikipedia article that can be its centre",
+  "revisit Q2745305 (9433 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2170 views): 0 owners reported new news on Sonia Gandhi since its last Short; revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
+  "outlets: 1558 headlines from 47 feeds (18 owners), 8 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261108-krakow-attack",
+  "explainers: 8 kh- stories (on): kh-20261109-Q1353, kh-20261109-Q1354, kh-20261109-Q169132, kh-20261109-Q6744197; dropped: explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Diwali / Delhi’s Diwali: no Wikipedia article that can be its centre; explainer CM Shivakumar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again"
  ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+ ],
  "outlets": {
-  "headlines": 1540,
+  "headlines": 1558,
   "feeds": 47,
   "owners": 18,
-  "matched": 10,
-  "corroborated": 8
+  "matched": 8,
+  "corroborated": 9
  },
  "emerging": [
   {
@@ -1904,9 +2154,13 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Poland mass shooting assailant dies in hospital, police say"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
@@ -1940,7 +2194,7 @@
     "worsen"
    ],
    "date": "2026-11-08",
-   "news_at": "2026-11-09T12:18:42.952202+00:00",
+   "news_at": "2026-11-09T12:14:35+00:00",
    "owners": [
     "HT Media",
     "Al Jazeera Media Network",
@@ -1948,12 +2202,12 @@
     "Deutsche Welle",
     "Network18",
     "Government of India",
+    "BBC",
     "TV9 Network",
     "NDTV",
-    "BBC",
+    "ABP Group",
     "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
+    "DB Corp"
    ],
    "fame": 400000,
    "news": 400000,
@@ -1968,13 +2222,13 @@
     "Was Delhi's AQI 2000, 1300 or 500 on Diwali night? Let me clear the air"
    ],
    "hindi_headlines": [
+    "दिल्ली में पहली यमुना रिवर क्रूज सेवा शुरू होगी",
     "स्वच्छ हवा के लिए पर्यावरण-अनुकूल दिवाली मनाएं : डब्ल्यूडब्ल्यूएफ- इंडिया ईआईएसीपी की दिल्ली-एनसीआर के निवासियों से ग्रीन दिवाली मनाने का संकल्प लेने की अपील",
     "दिवाली के बाद दिल्ली में वायु प्रदूषण के स्तर में सुधार, जानिए क्यों",
-    "दिल्ली छठ पूजा 2026: हर्ष मल्होत्रा ने ITO छठ घाट का निरीक्षण किया",
-    "दिल्ली एनसीआर के लोनी की हवा क्यों है सबसे ज्यादा दमघोंटू, जानिए दस वजह",
-    "गुरुग्राम में गैंगवार! दिल्ली-जयपुर हाईवे पर मारा गया अशोक राठी गैंग का शूटर दीपू, कार ओवरटेक कर बदमाशों ने दागी गोलियां"
+    "शेख़ हसीना ने बांग्लादेश वापसी के लिए दिल्ली में किया पासपोर्ट अप्लाई",
+    "Delhi Pollution: दिवाली के बाद दिल्ली-NCR की हवा हुई जहरीली, बहादुरगढ़ में AQI 400; 30 शहरों में बेहद खराब हवा"
    ],
-   "hindi_news": 40,
+   "hindi_news": 37,
    "geos": [
     "IN"
    ],
@@ -1983,16 +2237,6 @@
    "abroad": false,
    "label_hi": "दिल्ली",
    "reports": [
-    {
-     "title": "Celebrate an Eco-Friendly Green Diwali for Cleaner Air: WWF-India EIACP appeals to citizens of Delhi-NCR to take the Green Diwali Pledge",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2334104",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-09T12:18:42.952202+00:00"
-    },
     {
      "title": "India news: Delhi air quality level 'severe' after Diwali",
      "url": "https://www.dw.com/en/india-news-delhi-air-quality-level-severe-after-diwali/live-79895307?maca=en-rss-en-all-1573-rdf",
@@ -2062,6 +2306,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-09T00:50:21+00:00"
+    },
+    {
+     "title": "Delhi’s air quality ‘very poor’ on Diwali, expected to worsen",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-struggle-begins-ahead-of-diwali-firecrackers-records-very-poor-air-quality-with-376-aqi-101794143976910.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T13:33:49+00:00"
     }
    ],
    "via": [
@@ -2071,15 +2325,15 @@
     "outlet:Deutsche Welle",
     "outlet:Network18",
     "outlet:Government of India",
+    "outlet:BBC",
     "outlet:TV9 Network",
     "outlet:NDTV",
-    "outlet:BBC",
+    "outlet:ABP Group",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
-    "outlet:ABP Group",
     "google-news:Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
-    "google-news:Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "google-news:After Diwali, 93 of the world's 100 most polluted cities are in India: Worst AQI as high as 868; New Delhi not in Top 10"
+    "google-news:Just 30 km From Delhi, Air In This UP Town Is Among Most Polluted In World",
+    "google-news:Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\""
    ],
    "top": {
     "IN": 1,
@@ -2087,107 +2341,218 @@
    },
    "top_score": 1.3,
    "top_headlines": [
-    "Smog blankets New Delhi as Diwali firecrackers worsen air quality",
     "Thick smog shrouds New Delhi after Diwali firecrackers add to seasonal pollution",
     "After Diwali, 93 of the world's 100 most polluted cities are in India: Worst AQI as high as 868; New Delhi not in Top 10",
     "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
    "hindi_owners": [
     "India Today Group",
-    "TV9 Network",
-    "NDTV"
+    "BBC",
+    "TV9 Network"
    ]
   },
   {
-   "id": "kh-20261109-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
+   "id": "kh-20261109-Q1354",
+   "qid": "Q1354",
+   "title": "Dhaka",
+   "name": "Dhaka",
+   "phrase": "Dhaka",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
+   "story": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
    "story_keys": [
-    "family",
-    "memoir"
+    "livestream",
+    "off",
+    "slum",
+    "vlogger"
    ],
-   "date": "2026-11-08",
-   "news_at": "2026-11-09T09:55:13+00:00",
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T10:25:56+00:00",
    "owners": [
+    "India Today Group",
     "Network18",
-    "HT Media",
-    "The Hindu Group"
+    "NDTV"
    ],
    "fame": 275000,
    "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-    "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-    "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-    "\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir"
+    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+    "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
+    "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive"
    ],
    "hindi_headlines": [
-    "सोनिया गांधी की किताब 'बिलॉन्गिंग: ए जर्नी ऑफ लव' में खुलेगा परिवार का निजी संसार",
-    "यह कोई राजनीतिक किताब नहीं, बल्कि...अपने मेमॉयर पर क्या बोलीं सोनिया गांधी",
-    "सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
+    "भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
    ],
-   "hindi_news": 3,
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "ढाका",
+   "reports": [
+    {
+     "title": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+     "url": "https://www.ndtv.com/world-news/cow-urine-tea-filthy-homes-chinese-vloggers-pass-off-dhaka-slums-as-delhi-12302919#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T09:27:26+00:00"
+    },
+    {
+     "title": "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive",
+     "url": "https://www.news18.com/india/dhaka-slums-passed-off-as-new-delhi-inside-the-chinese-livestreams-raising-alarm-in-india-ws-l-10418223.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T06:06:50+00:00"
+    },
+    {
+     "title": "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
+     "url": "https://www.indiatoday.in/world/story/chinese-vloggers-pass-off-dhaka-slums-as-new-delhi-poverty-tourism-itspc-3034817-2026-11-09?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T01:30:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "google-news:Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
+    "google-news:भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
+   ],
+   "top": {
+    "IN": 9,
+    "IN-nation": 7
+   },
+   "top_score": 0.81,
+   "top_headlines": [
+    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\""
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261109-Q169132",
+   "qid": "Q169132",
+   "title": "Punjab",
+   "name": "Punjab",
+   "phrase": "At Punjab",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+   "story_keys": [
+    "farm",
+    "fire",
+    "record",
+    "single-day"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T11:58:47+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "TV9 Network",
+    "India Today Group",
+    "Amar Ujala"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+    "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+    "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’"
+   ],
+   "hindi_headlines": [
+    "दिवाली पर 1200 जगहों पर जली पराली… BJP का दावा, दिल्ली में प्रदूषण को लेकर पंजाब की AAP सरकार को घेरा",
+    "'दिल्ली गैंग ने पंजाब में पराली जलाई...' दिवाली पर दमघोंटू हवा को BJP ने बताया 'केजरीवाल की साजिश', AAP का पलटवार",
+    "पंड्या के लिए अर्शदीप को छोड़ना पंजाब की भूल? उठे बड़े सवाल",
+    "UP-पंजाब में कब होंगे विधानसभा चुनाव, कब से लागू हो सकता है आचार संहिता? आ गया बड़ा अपडेट",
+    "पंजाब में पराली जलाने का बढ़ा कहर, टूटे सारे रिकॉर्ड!"
+   ],
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "सोनिया गांधी",
+   "label_hi": "पंजाब",
    "reports": [
     {
-     "title": "Sonia Gandhi’s memoir: How a love story grew into a deep belonging to India",
-     "url": "https://www.thehindu.com/news/national/sonia-gandhis-belonging-a-journey-of-love-how-a-love-story-grew-into-a-deep-belonging-to-india/article71674214.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T09:55:13+00:00"
-    },
-    {
-     "title": "'Wanted to portray my family honestly': Sonia Gandhi explains reason behind writing her memoir",
-     "url": "https://www.hindustantimes.com/india-news/wanted-to-portray-my-family-honestly-sonia-gandhi-explains-reason-behind-writing-her-memoir-101794185957071.html",
+     "title": "BJP alleges conspiracy to worsen Delhi pollution, claims Punjab farm fires were ‘deliberate’",
+     "url": "https://www.hindustantimes.com/india-news/bjp-alleges-conspiracy-to-worsen-delhi-pollution-claims-punjab-farm-fires-were-deliberate-101794221407124.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T02:23:53+00:00"
+     "at": "2026-11-09T11:58:47+00:00"
     },
     {
-     "title": "'Not A Political Book': Sonia Gandhi's Memoir 'Belonging' To Explore Gandhi Family's 'Human Flaws'",
-     "url": "https://www.news18.com/india/not-a-political-book-sonia-gandhis-memoir-belonging-to-explore-gandhi-familys-human-flaws-ws-rt-10417726.html",
+     "title": "At 1,152, Punjab records season’s biggest single-day jump in farm fires on Deepavali",
+     "url": "https://www.thehindu.com/news/national/punjab/punjab-records-seasons-biggest-single-day-jump-in-farm-fires-on-deepavali/article71681771.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T08:36:38+00:00"
+    },
+    {
+     "title": "Delhi Chokes As Punjab Records 1,152 Farm Fires On Diwali, Highest Single-Day Count In 3 Years",
+     "url": "https://www.news18.com/india/delhi-chokes-as-punjab-records-1152-farm-fires-on-diwali-highest-single-day-count-in-3-years-ws-kl-10418529.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-08T12:29:40+00:00"
+     "at": "2026-11-09T07:56:23+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:HT Media",
     "outlet:The Hindu Group",
-    "google-news:\"This Is Not a Political Book\": Sonia Gandhi Explains Why She Wrote Her Memoir",
-    "google-news:सोनिया गांधी के सिर्फ आंसू आए थे, हम तो..., बाबरी मामले पर बोले अबू आजमी"
+    "outlet:HT Media",
+    "outlet:TV9 Network",
+    "outlet:India Today Group",
+    "outlet:Amar Ujala",
+    "google-news:पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
+   "top": {
+    "IN-nation": 2,
+    "IN-hi-nation": 9
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "पंजाब में दिवाली के दिन जली सबसे ज्यादा पराली, एक दिन में आए रिकॉर्ड 1,152 मामले",
+    "Mumbai Bans Rockets, Aerial Crackers Till November 25 After Diwali Fires",
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "India Today Group"
+   ],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261109-Q6744197",
@@ -2224,7 +2589,7 @@
     "'True colours exposed': BJP's Giriraj Singh tears into Kharge over Diwali 'khushiyon ka Eid' remark",
     "BJP slams Kharge for calling Diwali 'Eid of joy', dares Congress to call Eid 'Diwali of joy'",
     "‘Diwali is Diwali, Eid is Eid’: BJP slams Mallikarjun Kharge over festival remark",
-    "\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge"
+    "Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark"
    ],
    "hindi_headlines": [
     "'दिवाली खुशियों की ईद है', मल्लिकार्जुन खरगे के बयान पर भड़क गई बीजेपी, बोली- कांग्रेस एंटी-सनातनी",
@@ -2294,22 +2659,129 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "google-news:\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge",
+    "google-news:Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark",
     "google-news:'दिवाली खुशियों की एक ईद है', कांग्रेस अध्यक्ष मल्लिकार्जुन खरगे के बयान पर विवाद, भाजपा बोली- इनकी नीति सन"
    ],
    "top": {
-    "IN-hi": 7,
-    "IN-nation": 13,
-    "IN-hi-nation": 1
+    "IN-nation": 12,
+    "IN-hi-nation": 8
    },
-   "top_score": 1.12,
+   "top_score": 0.525,
    "top_headlines": [
     "'दिवाली खुशियों की एक ईद है', कांग्रेस अध्यक्ष मल्लिकार्जुन खरगे के बयान पर विवाद, भाजपा बोली- इनकी नीति सन",
     "Diwali 2026: Indians celebrate festival with lights and fireworks",
-    "\"Khushiyon Ki Eid\": M Kharge's Diwali Greeting Draws BJP's Appeasement Charge",
+    "Anti-Hindu, vote-bank politics: BJP attacks Congress over Kharge's 'Eid of Happiness' remark",
     "US, Iran, Pakistan, UAE and more: World leaders extend Diwali wishes, call for peace and prosperity | World News"
    ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261109-Q10218",
+   "qid": "Q10218",
+   "title": "Rahul Gandhi",
+   "name": "Rahul Gandhi",
+   "phrase": "Rahul Gandhi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+   "story_keys": [
+    "called",
+    "challenge",
+    "debate",
+    "remark",
+    "renew"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T12:33:12+00:00",
+   "owners": [
+    "Network18",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "HT Media",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+    "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+    "Rahul Gandhi dares PM to debate him on who is ‘anti-national’"
+   ],
+   "hindi_headlines": [
+    "'दम है तो ईद को खुशियों की दीपावली कहकर दिखाएं', राहुल गांधी को BJP ने ललकारा; क्यों दिया ऐसा चैलेंज?",
+    "पहले मजबूत करेंगे कांग्रेस का 'हाथ', फिर लेंगे साइकिल का साथ; राहुल गांधी ने प्रियंका को दी यूपी की कमान",
+    "'आपके सामने खड़े होने की हिम्मत नहीं होगी'; राहुल गांधी ने चला अब जवानों वाला दांव, PM पर क्या बोले?",
+    "'PM ने हमें नक्सली कहा, लेकिन मैं डिबेट के लिए तैयार हूं', राहुल गांधी का पीएम मोदी को चैलेंज",
+    "राहुल गांधी 26 नवंबर को मणिपुर जाएंगे, हिंसा प्रभावित परिवारों से करेंगे मुलाकात"
+   ],
+   "hindi_news": 6,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "राहुल गाँधी",
+   "reports": [
+    {
+     "title": "Rahul Gandhi dares PM to debate him on who is ‘anti-national’",
+     "url": "https://www.thehindu.com/news/national/rahul-gandhi-repeats-debate-dare-after-pm-modis-dimagi-naxal-jibe/article71682318.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T12:33:12+00:00"
+    },
+    {
+     "title": "'He called us Naxals': Rahul Gandhi hits back at PM Modi, renews debate challenge",
+     "url": "https://timesofindia.indiatimes.com/india/he-called-us-naxals-rahul-gandhi-hits-back-at-pm-modi-renews-debate-challenge/articleshow/135678276.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:11:36+00:00"
+    },
+    {
+     "title": "'He Called Us Naxals': Rahul Gandhi Renews Debate Challenge To PM Modi Over 'Dimagi Naxal' Remark",
+     "url": "https://www.news18.com/india/he-called-us-naxals-rahul-gandhi-renews-debate-challenge-to-pm-modi-over-dimagi-naxal-remark-10418758.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:00:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "google-news:पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती"
+   ],
+   "top": {
+    "IN": 10,
+    "IN-hi": 7,
+    "IN-hi-nation": 1
+   },
+   "top_score": 1.275,
+   "top_headlines": [
+    "पीएम मोदी के बस्तर दौरे पर राहुल गांधी ने साधा निशाना, फिर दी बहस की चुनौती",
+    "Reds gone, but 'dimagi Naxals' still instigating people: PM Modi"
+   ],
+   "hindi_owners": [
+    "HT Media",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261109-Q129844",
@@ -2330,15 +2802,15 @@
     "row"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T10:32:25+00:00",
+   "news_at": "2026-11-09T12:15:35+00:00",
    "owners": [
     "Network18",
     "HT Media",
     "Bennett, Coleman & Co.",
     "The Hindu Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2365,7 +2837,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-09T10:00:31+00:00"
+     "at": "2026-11-09T12:15:35+00:00"
     },
     {
      "title": "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
@@ -2402,215 +2874,17 @@
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "google-news:Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data"
+    "outlet:The Hindu Group"
    ],
    "top": {
-    "IN": 5,
-    "IN-nation": 7
+    "IN-nation": 11
    },
-   "top_score": 1.01,
+   "top_score": 0.3,
    "top_headlines": [
-    "Delhi pollution sparks row: BJP alleges 'conspiracy'; AAP and Congress question AQI data",
-    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster",
-    "Diwali air pollution: Pulmonologist shares 6 ways to protect your lungs during high AQI and warning signs to watch for | Health"
+    "Punjab fields set ablaze on Diwali: Delhi govt alleges conspiracy in AQI disaster"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261109-Q1354",
-   "qid": "Q1354",
-   "title": "Dhaka",
-   "name": "Dhaka",
-   "phrase": "Dhaka",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-   "story_keys": [
-    "livestream",
-    "off",
-    "slum",
-    "vlogger"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T10:25:56+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-    "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
-    "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive"
-   ],
-   "hindi_headlines": [
-    "भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "ढाका",
-   "reports": [
-    {
-     "title": "Chinese Vloggers Livestream From Dhaka Slums, Say \"This Is New Delhi\"",
-     "url": "https://www.ndtv.com/world-news/cow-urine-tea-filthy-homes-chinese-vloggers-pass-off-dhaka-slums-as-delhi-12302919#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T09:27:26+00:00"
-    },
-    {
-     "title": "Dhaka Slums Passed Off As New Delhi: Inside The Chinese Livestreams Raising Alarm In India | Exclusive",
-     "url": "https://www.news18.com/india/dhaka-slums-passed-off-as-new-delhi-inside-the-chinese-livestreams-raising-alarm-in-india-ws-l-10418223.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T06:06:50+00:00"
-    },
-    {
-     "title": "Chinese vloggers livestreaming from Dhaka slums, saying they are in India. Why?",
-     "url": "https://www.indiatoday.in/world/story/chinese-vloggers-pass-off-dhaka-slums-as-new-delhi-poverty-tourism-itspc-3034817-2026-11-09?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T01:30:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:भारत को बदनाम करने के लिए चीन ने बांग्लादेश भेजी 150 व्लॉगर की 'फौज', ढाका के स्लम को बताया दिल्ली, खुलासा"
-   ],
-   "top": {
-    "IN": 10,
-    "IN-nation": 6
-   },
-   "top_score": 0.775,
-   "top_headlines": [
-    "'This is New Delhi': Chinese vloggers pass off Bangladesh slums as India in bizarre videos"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261109-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-   "story_keys": [
-    "about",
-    "kidding’",
-    "only",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T08:49:17+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "BBC"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "Trump ‘only kidding’ about Dana White press secretary role",
-    "Trump says he was 'kidding' about Dana White press secretary offer"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Trump says he was 'kidding' about Dana White press secretary offer",
-     "url": "https://www.bbc.co.uk/news/articles/ck0j0j87959eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-09T08:49:17+00:00"
-    },
-    {
-     "title": "Trump ‘only kidding’ about Dana White press secretary role",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/trump-only-kidding-about-dana-white-press-secretary-role?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T08:18:00+00:00"
-    },
-    {
-     "title": "Trump says he was ‘only kidding’ about making UFC’s Dana White next press secretary",
-     "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-dana-white-press-secretary",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T01:10:55+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
-   ],
-   "top": {
-    "IN": 3
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "U.S., China, Russia leaders to meet next week, says Trump; Beijing says ‘in communication with parties’"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -2704,6 +2978,104 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261109-Q982813",
+   "qid": "Q982813",
+   "title": "Sharad Pawar",
+   "name": "Sharad Pawar",
+   "phrase": "From Sharad Pawar",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+   "story_keys": [
+    "merger",
+    "parth",
+    "reunion"
+   ],
+   "date": "2026-11-08",
+   "news_at": "2026-11-09T10:18:01+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+    "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+    "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+    "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey"
+   ],
+   "hindi_headlines": [
+    "शरद पवार और सांसद की दिवाली मीटिंग, 48 घंटे में 2 बार मिले; होगा बड़ा ऐलान?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "शरद पवार",
+   "reports": [
+    {
+     "title": "Sunetra- Parth Reject NCP Merger With Sharad Pawar | Alliance Over Reunion? | Newsroom Unfiltered",
+     "url": "https://www.news18.com/videos/breaking-news/sunetra-parth-reject-ncp-merger-with-sharad-pawar-alliance-over-reunion-newsroom-unfiltered-10418868.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T10:18:01+00:00"
+    },
+    {
+     "title": "From Sharad Pawar's 1999 party formation to 2026 reunion buzz: A look at NCP's journey",
+     "url": "https://www.hindustantimes.com/india-news/from-sharad-pawar-1999-party-launch-to-2026-reunion-buzz-a-look-at-ncps-journey-ajit-pawar-sunetra-supriya-101794203500412.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T07:16:04+00:00"
+    },
+    {
+     "title": "An 'Almost Done' Merger, Flurry Of Meetings And Pawar Family Equation: Is NCP Headed For Reunion?",
+     "url": "https://www.news18.com/explainers/an-almost-done-merger-flurry-of-meetings-and-pawar-family-equation-is-ncp-headed-for-reunion-ws-l-10417991.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T03:42:54+00:00"
+    },
+    {
+     "title": "Parth meets Sharad Pawar twice in 2 days, NCP leaders seek to revive merger talks",
+     "url": "https://timesofindia.indiatimes.com/city/pune/parth-meets-sharad-pawar-twice-in-two-days-ncp-leaders-seek-to-revive-merger-talks/articleshow/135665085.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-08T19:28:12+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   }
  ]
 }
