@@ -1,5 +1,5 @@
 {
- "at": "2026-11-09T23:04:12+00:00",
+ "at": "2026-11-09T23:17:12+00:00",
  "trending": [
   {
    "id": "kh-20261110-Q169132",
@@ -118,16 +118,18 @@
    "story": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
    "story_keys": [
     "congressman",
+    "face",
     "impeachment",
-    "lawmaker",
-    "republican"
+    "push",
+    "republican",
+    "vote"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T21:59:45+00:00",
+   "news_at": "2026-11-09T22:51:39+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "Al Jazeera Media Network",
+    "Deutsche Welle",
     "BBC",
     "India Today Group"
    ],
@@ -139,8 +141,9 @@
     "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'",
     "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
-    "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-    "Trump's two wars defence fails to shield Hegseth from impeachment push"
+    "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+    "Trump's two wars defence fails to shield Hegseth from impeachment push",
+    "US Defense Secretary Hegseth faces expected impeachment vote this week"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -150,6 +153,16 @@
    "abroad": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "US Defense Secretary Hegseth faces expected impeachment vote this week",
+     "url": "https://www.france24.com/en/us-defense-secretary-hegseth-faces-expected-impeachment-vote-this-week",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T22:51:39+00:00"
+    },
     {
      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
@@ -161,6 +174,16 @@
      "at": "2026-11-09T21:37:02+00:00"
     },
     {
+     "title": "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+     "url": "https://www.dw.com/en/us-pentagon-chief-hegseth-faces-impeachment-push-from-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T20:15:00+00:00"
+    },
+    {
      "title": "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
      "url": "https://www.france24.com/en/americas/20261109-republican-congressman-launches-impeachment-bid-against-pentagon-chief-hegseth",
      "outlet": "France 24",
@@ -169,16 +192,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-09T19:32:26+00:00"
-    },
-    {
-     "title": "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/republican-lawmaker-moves-to-impeach-us-defense-secretary-hegseth?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T21:04:11+00:00"
     },
     {
      "title": "Trump's two wars defence fails to shield Hegseth from impeachment push",
@@ -204,15 +217,15 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:India Today Group",
     "google-news:Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
    "top": {
-    "IN": 5
+    "IN": 13
    },
-   "top_score": 0.8,
+   "top_score": 0.4,
    "top_headlines": [
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
@@ -237,7 +250,7 @@
     "support"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T23:06:49.006177+00:00",
+   "news_at": "2026-11-09T23:20:53.401109+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Network18",
@@ -255,11 +268,13 @@
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
     "Prime Minister speaks with President Volodymyr Zelenskyy"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "प्रधानमंत्री ने राष्ट्रपति वोलोदिमीर जेलेंस्की से बात की"
+   ],
+   "hindi_news": 1,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
    "label_hi": "वोलोदिमीर जेलेंस्की",
    "reports": [
@@ -271,7 +286,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-09T23:06:49.006177+00:00"
+     "at": "2026-11-09T23:20:53.401109+00:00"
     },
     {
      "title": "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
@@ -322,10 +337,10 @@
     "google-news:Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
    "top": {
-    "IN": 3,
-    "IN-nation": 2
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 1.185,
+   "top_score": 1.12,
    "top_headlines": [
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
@@ -340,7 +355,7 @@
    "views": 144105,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-09T23:04:12.779807+00:00",
+   "news_at": "2026-11-09T23:17:12.784213+00:00",
    "headlines": [
     "Polish prosecutors say ‘too early’ to tell if Kraków gunman was motivated by political ideology"
    ],
@@ -394,7 +409,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-09T23:04:12.779807+00:00",
+   "news_at": "2026-11-09T23:17:12.784213+00:00",
    "headlines": [
     "Turkey steel factory blast kills at least 17 people"
    ],
@@ -528,94 +543,6 @@
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261110-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-   "story_keys": [
-    "job",
-    "kidding’",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T22:46:27+00:00",
-   "owners": [
-    "HT Media",
-    "France Médias Monde",
-    "BBC"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
-    "Dana White declines Trump’s offer to be White House press secretary"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Dana White declines Trump’s offer to be White House press secretary",
-     "url": "https://www.bbc.co.uk/news/videos/cwm2328pyy1jo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-09T22:46:27+00:00"
-    },
-    {
-     "title": "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
-     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261109-trump-says-he-was-kidding-about-dana-white-press-secretary-job-amid-online-mix-up-claims",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-09T20:51:32+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:France Médias Monde",
-    "outlet:BBC"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "'Anybody believe this was honest?' Trump flips stance on midterms result, revives 2020-style fraud claims"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261110-Q6109517",
    "qid": "Q6109517",
    "title": "Pope Leo XIV",
@@ -695,6 +622,181 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261110-Q660297",
+   "qid": "Q660297",
+   "title": "Dana White",
+   "name": "Dana White",
+   "phrase": "Dana White",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+   "story_keys": [
+    "job",
+    "kidding’",
+    "press",
+    "secretary"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T22:46:27+00:00",
+   "owners": [
+    "HT Media",
+    "France Médias Monde",
+    "BBC"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+    "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
+    "Dana White declines Trump’s offer to be White House press secretary"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Dana White declines Trump’s offer to be White House press secretary",
+     "url": "https://www.bbc.co.uk/news/videos/cwm2328pyy1jo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T22:46:27+00:00"
+    },
+    {
+     "title": "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
+     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261109-trump-says-he-was-kidding-about-dana-white-press-secretary-job-amid-online-mix-up-claims",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T20:51:32+00:00"
+    },
+    {
+     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T02:56:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:France Médias Monde",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "'Anybody believe this was honest?' Trump flips stance on midterms result, revives 2020-style fraud claims"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261110-Q141858304",
+   "qid": "Q141858304",
+   "title": "2026 Chennai Open",
+   "name": "2026 Chennai Open",
+   "phrase": "WTA Chennai Open",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+   "story_keys": [
+    "final"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T18:41:58+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+    "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+    "WTA Chennai Open: Postponement of singles final sparks controversy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "WTA Chennai Open: Postponement of singles final sparks controversy",
+     "url": "https://www.thehindu.com/sport/wta-chennai-open-postponement-of-singles-final-sparks-controversy/article71683944.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T18:41:58+00:00"
+    },
+    {
+     "title": "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+     "url": "https://www.indiatoday.in/sports/tennis/story/chennai-open-final-magda-linette-diwali-pollution-delay-janice-tjen-3035436-2026-11-09?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T12:25:47+00:00"
+    },
+    {
+     "title": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+     "url": "https://www.news18.com/videos/breaking-news/aqi-1-556-chennai-open-final-postponed-amid-toxic-smog-janice-tjen-questions-organisers-news18-10418337.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T06:48:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "Diwali 2026: Indians celebrate festival with lights and fireworks"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -820,63 +922,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q4795757",
-   "title": "Arpita Singh",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-09T12:58:51+00:00",
-   "headlines": [
-    "Arpita Singh: in the solitude of her studio"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "अर्पिता सिंह",
-   "via": [
-    "google-news:Arpita Singh: in the solitude of her studio",
-    "outlet:The Hindu Group"
-   ],
-   "owners": [
-    "The Hindu Group"
-   ],
-   "reports": [
-    {
-     "title": "Arpita Singh: in the solitude of her studio",
-     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T12:58:51+00:00"
-    },
-    {
-     "title": "Modernist artist Arpita Singh, aged 89, passes away",
-     "url": "https://www.thehindu.com/entertainment/art/modernist-artist-arpita-singh-aged-89-passes-away/article71681531.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T06:25:11+00:00"
-    }
-   ],
-   "id": "wk-Q4795757",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q141966885",
    "title": "2026 Palm Beach County Learjet 60 crash",
    "fame": 15401,
@@ -909,126 +954,6 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "qid": "Q6410167",
-   "title": "Kimmarie Johnson",
-   "fame": 12389,
-   "views": 12389,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6410167",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q285102",
-   "title": "Jay Rockefeller",
-   "fame": 11521,
-   "views": 11521,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q285102",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-06",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q4250213",
-   "title": "Sebastián Lelio",
-   "fame": 9577,
-   "views": 9577,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4250213",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-06",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q5962128",
-   "title": "Michael Locke (stuntman)",
-   "fame": 9419,
-   "views": 9419,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5962128",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-06",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1049,7 +974,7 @@
     "support"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T23:06:49.006177+00:00",
+   "news_at": "2026-11-09T23:20:53.401109+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Network18",
@@ -1067,11 +992,13 @@
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
     "Prime Minister speaks with President Volodymyr Zelenskyy"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "प्रधानमंत्री ने राष्ट्रपति वोलोदिमीर जेलेंस्की से बात की"
+   ],
+   "hindi_news": 1,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
    "label_hi": "वोलोदिमीर जेलेंस्की",
    "reports": [
@@ -1083,7 +1010,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-09T23:06:49.006177+00:00"
+     "at": "2026-11-09T23:20:53.401109+00:00"
     },
     {
      "title": "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
@@ -1134,16 +1061,103 @@
     "google-news:Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
    "top": {
-    "IN": 3,
-    "IN-nation": 2
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 1.185,
+   "top_score": 1.12,
    "top_headlines": [
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261110-Q141858304",
+   "qid": "Q141858304",
+   "title": "2026 Chennai Open",
+   "name": "2026 Chennai Open",
+   "phrase": "WTA Chennai Open",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+   "story_keys": [
+    "final"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T18:41:58+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+    "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+    "WTA Chennai Open: Postponement of singles final sparks controversy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "WTA Chennai Open: Postponement of singles final sparks controversy",
+     "url": "https://www.thehindu.com/sport/wta-chennai-open-postponement-of-singles-final-sparks-controversy/article71683944.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T18:41:58+00:00"
+    },
+    {
+     "title": "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+     "url": "https://www.indiatoday.in/sports/tennis/story/chennai-open-final-magda-linette-diwali-pollution-delay-janice-tjen-3035436-2026-11-09?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T12:25:47+00:00"
+    },
+    {
+     "title": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+     "url": "https://www.news18.com/videos/breaking-news/aqi-1-556-chennai-open-final-postponed-amid-toxic-smog-janice-tjen-questions-organisers-news18-10418337.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T06:48:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "Diwali 2026: Indians celebrate festival with lights and fireworks"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261110-Q7172014",
@@ -1158,16 +1172,18 @@
    "story": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
    "story_keys": [
     "congressman",
+    "face",
     "impeachment",
-    "lawmaker",
-    "republican"
+    "push",
+    "republican",
+    "vote"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T21:59:45+00:00",
+   "news_at": "2026-11-09T22:51:39+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "Al Jazeera Media Network",
+    "Deutsche Welle",
     "BBC",
     "India Today Group"
    ],
@@ -1179,8 +1195,9 @@
     "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'",
     "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
-    "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-    "Trump's two wars defence fails to shield Hegseth from impeachment push"
+    "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+    "Trump's two wars defence fails to shield Hegseth from impeachment push",
+    "US Defense Secretary Hegseth faces expected impeachment vote this week"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1190,6 +1207,16 @@
    "abroad": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "US Defense Secretary Hegseth faces expected impeachment vote this week",
+     "url": "https://www.france24.com/en/us-defense-secretary-hegseth-faces-expected-impeachment-vote-this-week",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T22:51:39+00:00"
+    },
     {
      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
@@ -1201,6 +1228,16 @@
      "at": "2026-11-09T21:37:02+00:00"
     },
     {
+     "title": "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+     "url": "https://www.dw.com/en/us-pentagon-chief-hegseth-faces-impeachment-push-from-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T20:15:00+00:00"
+    },
+    {
      "title": "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
      "url": "https://www.france24.com/en/americas/20261109-republican-congressman-launches-impeachment-bid-against-pentagon-chief-hegseth",
      "outlet": "France 24",
@@ -1209,16 +1246,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-09T19:32:26+00:00"
-    },
-    {
-     "title": "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/republican-lawmaker-moves-to-impeach-us-defense-secretary-hegseth?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T21:04:11+00:00"
     },
     {
      "title": "Trump's two wars defence fails to shield Hegseth from impeachment push",
@@ -1244,15 +1271,15 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:India Today Group",
     "google-news:Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
    "top": {
-    "IN": 5
+    "IN": 13
    },
-   "top_score": 0.8,
+   "top_score": 0.4,
    "top_headlines": [
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
@@ -1261,70 +1288,13 @@
    "lane": "other"
   },
   {
-   "qid": "Q4795757",
-   "title": "Arpita Singh",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-09T12:58:51+00:00",
-   "headlines": [
-    "Arpita Singh: in the solitude of her studio"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "अर्पिता सिंह",
-   "via": [
-    "google-news:Arpita Singh: in the solitude of her studio",
-    "outlet:The Hindu Group"
-   ],
-   "owners": [
-    "The Hindu Group"
-   ],
-   "reports": [
-    {
-     "title": "Arpita Singh: in the solitude of her studio",
-     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T12:58:51+00:00"
-    },
-    {
-     "title": "Modernist artist Arpita Singh, aged 89, passes away",
-     "url": "https://www.thehindu.com/entertainment/art/modernist-artist-arpita-singh-aged-89-passes-away/article71681531.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T06:25:11+00:00"
-    }
-   ],
-   "id": "wk-Q4795757",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": null,
    "title": "2026 Aliağa factory explosion",
    "fame": 75000,
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-09T23:04:12.779807+00:00",
+   "news_at": "2026-11-09T23:17:12.784213+00:00",
    "headlines": [
     "Turkey steel factory blast kills at least 17 people"
    ],
@@ -1447,9 +1417,9 @@
     "outlet:BBC"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "'Anybody believe this was honest?' Trump flips stance on midterms result, revives 2020-style fraud claims"
    ],
@@ -1688,68 +1658,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q5962128",
-   "title": "Michael Locke (stuntman)",
-   "fame": 9419,
-   "views": 9419,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5962128",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-06",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6410167",
-   "title": "Kimmarie Johnson",
-   "fame": 12389,
-   "views": 12389,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-08"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6410167",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-04",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "id": "kh-20261110-Q1058-update",
@@ -2014,21 +1922,20 @@
  ],
  "notes": [
   "revisit Q2745305 (9436 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q163225 (2170 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit kh-20261110-Q330658-update: 2 owners' new reports on Indian Air Force (1124 views before); revisit Q4",
-  "outlets: 1482 headlines from 47 feeds (18 owners), 32 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261108-krakow-attack",
-  "explainers: 5 kh- stories (on): kh-20261110-Q169132, kh-20261110-Q7172014, kh-20261110-Q3874799, kh-20261110-Q660297; dropped: explainer COP: no Wikipedia article that can be its centre; explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Diwali / Delhi’s Diwali: no Wikipedia article that can be its centre",
-  "skip wk-Q285102: Orbitwire published (wk-Q285102), not high-profile enough to tell again",
-  "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again"
+  "outlets: 1495 headlines from 48 feeds (18 owners), 28 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261108-krakow-attack",
+  "explainers: 6 kh- stories (on): kh-20261110-Q169132, kh-20261110-Q7172014, kh-20261110-Q3874799, kh-20261110-Q6109517; dropped: explainer COP: no Wikipedia article that can be its centre; explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story; explainer Diwali / Delhi’s Diwali: no Wikipedia article that can be its centre"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1482,
-  "feeds": 47,
+  "headlines": 1495,
+  "feeds": 48,
   "owners": 18,
-  "matched": 32,
-  "corroborated": 6
+  "matched": 28,
+  "corroborated": 7
  },
  "emerging": [
   {
@@ -2238,16 +2145,18 @@
    "story": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
    "story_keys": [
     "congressman",
+    "face",
     "impeachment",
-    "lawmaker",
-    "republican"
+    "push",
+    "republican",
+    "vote"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T21:59:45+00:00",
+   "news_at": "2026-11-09T22:51:39+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "Al Jazeera Media Network",
+    "Deutsche Welle",
     "BBC",
     "India Today Group"
    ],
@@ -2259,8 +2168,9 @@
     "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'",
     "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
-    "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-    "Trump's two wars defence fails to shield Hegseth from impeachment push"
+    "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+    "Trump's two wars defence fails to shield Hegseth from impeachment push",
+    "US Defense Secretary Hegseth faces expected impeachment vote this week"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2270,6 +2180,16 @@
    "abroad": true,
    "label_hi": null,
    "reports": [
+    {
+     "title": "US Defense Secretary Hegseth faces expected impeachment vote this week",
+     "url": "https://www.france24.com/en/us-defense-secretary-hegseth-faces-expected-impeachment-vote-this-week",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T22:51:39+00:00"
+    },
     {
      "title": "Republican congressman to force impeachment vote on Defence Secretary Hegseth",
      "url": "https://www.bbc.co.uk/news/articles/cwr5y58jjp8ro?at_medium=RSS&at_campaign=rss",
@@ -2281,6 +2201,16 @@
      "at": "2026-11-09T21:37:02+00:00"
     },
     {
+     "title": "US Pentagon chief Hegseth faces impeachment push from over Iran war",
+     "url": "https://www.dw.com/en/us-pentagon-chief-hegseth-faces-impeachment-push-from-over-iran-war/a-79905323?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T20:15:00+00:00"
+    },
+    {
      "title": "Republican congressman launches impeachment bid against Pentagon chief Hegseth",
      "url": "https://www.france24.com/en/americas/20261109-republican-congressman-launches-impeachment-bid-against-pentagon-chief-hegseth",
      "outlet": "France 24",
@@ -2289,16 +2219,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-09T19:32:26+00:00"
-    },
-    {
-     "title": "Republican lawmaker moves to impeach US Defense Secretary Hegseth",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/9/republican-lawmaker-moves-to-impeach-us-defense-secretary-hegseth?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-09T21:04:11+00:00"
     },
     {
      "title": "Trump's two wars defence fails to shield Hegseth from impeachment push",
@@ -2324,15 +2244,15 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
     "outlet:BBC",
     "outlet:India Today Group",
     "google-news:Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
    "top": {
-    "IN": 5
+    "IN": 13
    },
-   "top_score": 0.8,
+   "top_score": 0.4,
    "top_headlines": [
     "Republican lawmaker pushes Hegseth impeachment, Pentagon chief says 'not worried'"
    ],
@@ -2357,7 +2277,7 @@
     "support"
    ],
    "date": "2026-11-09",
-   "news_at": "2026-11-09T23:06:49.006177+00:00",
+   "news_at": "2026-11-09T23:20:53.401109+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Network18",
@@ -2375,11 +2295,13 @@
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
     "Prime Minister speaks with President Volodymyr Zelenskyy"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "प्रधानमंत्री ने राष्ट्रपति वोलोदिमीर जेलेंस्की से बात की"
+   ],
+   "hindi_news": 1,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
    "label_hi": "वोलोदिमीर जेलेंस्की",
    "reports": [
@@ -2391,7 +2313,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-09T23:06:49.006177+00:00"
+     "at": "2026-11-09T23:20:53.401109+00:00"
     },
     {
      "title": "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov",
@@ -2442,104 +2364,16 @@
     "google-news:Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
    "top": {
-    "IN": 3,
-    "IN-nation": 2
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 1.185,
+   "top_score": 1.12,
    "top_headlines": [
     "Ahead of Abu Dhabi peace talks, Modi speaks to Zelenskyy; Jaishankar speaks to Lavrov"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261110-Q660297",
-   "qid": "Q660297",
-   "title": "Dana White",
-   "name": "Dana White",
-   "phrase": "Dana White",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-   "story_keys": [
-    "job",
-    "kidding’",
-    "press",
-    "secretary"
-   ],
-   "date": "2026-11-09",
-   "news_at": "2026-11-09T22:46:27+00:00",
-   "owners": [
-    "HT Media",
-    "France Médias Monde",
-    "BBC"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-    "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
-    "Dana White declines Trump’s offer to be White House press secretary"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Dana White declines Trump’s offer to be White House press secretary",
-     "url": "https://www.bbc.co.uk/news/videos/cwm2328pyy1jo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-09T22:46:27+00:00"
-    },
-    {
-     "title": "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
-     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261109-trump-says-he-was-kidding-about-dana-white-press-secretary-job-amid-online-mix-up-claims",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-09T20:51:32+00:00"
-    },
-    {
-     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
-     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-09T02:56:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:France Médias Monde",
-    "outlet:BBC"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "'Anybody believe this was honest?' Trump flips stance on midterms result, revives 2020-style fraud claims"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261110-Q6109517",
@@ -2621,6 +2455,181 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261110-Q660297",
+   "qid": "Q660297",
+   "title": "Dana White",
+   "name": "Dana White",
+   "phrase": "Dana White",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+   "story_keys": [
+    "job",
+    "kidding’",
+    "press",
+    "secretary"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T22:46:27+00:00",
+   "owners": [
+    "HT Media",
+    "France Médias Monde",
+    "BBC"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+    "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
+    "Dana White declines Trump’s offer to be White House press secretary"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Dana White declines Trump’s offer to be White House press secretary",
+     "url": "https://www.bbc.co.uk/news/videos/cwm2328pyy1jo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T22:46:27+00:00"
+    },
+    {
+     "title": "Trump says he was ‘kidding’ about Dana White press secretary job, amid online mix-up claims",
+     "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261109-trump-says-he-was-kidding-about-dana-white-press-secretary-job-amid-online-mix-up-claims",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-09T20:51:32+00:00"
+    },
+    {
+     "title": "‘Only kidding’: Donald Trump says amid speculations that he offered White House press secretary job to wrong Dana White",
+     "url": "https://www.livemint.com/news/us-news/only-kidding-donald-trump-says-amid-speculations-that-he-offered-white-house-press-secretary-job-to-wrong-dana-white-11794192282580.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T02:56:03+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:France Médias Monde",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "'Anybody believe this was honest?' Trump flips stance on midterms result, revives 2020-style fraud claims"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261110-Q141858304",
+   "qid": "Q141858304",
+   "title": "2026 Chennai Open",
+   "name": "2026 Chennai Open",
+   "phrase": "WTA Chennai Open",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+   "story_keys": [
+    "final"
+   ],
+   "date": "2026-11-09",
+   "news_at": "2026-11-09T18:41:58+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+    "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+    "WTA Chennai Open: Postponement of singles final sparks controversy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "WTA Chennai Open: Postponement of singles final sparks controversy",
+     "url": "https://www.thehindu.com/sport/wta-chennai-open-postponement-of-singles-final-sparks-controversy/article71683944.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T18:41:58+00:00"
+    },
+    {
+     "title": "Chennai Open final should've been played before Diwali fireworks: Champion Linette",
+     "url": "https://www.indiatoday.in/sports/tennis/story/chennai-open-final-magda-linette-diwali-pollution-delay-janice-tjen-3035436-2026-11-09?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T12:25:47+00:00"
+    },
+    {
+     "title": "AQI 1,556: Chennai Open Final Postponed Amid Toxic Smog | Janice Tjen Questions Organisers | News18",
+     "url": "https://www.news18.com/videos/breaking-news/aqi-1-556-chennai-open-final-postponed-amid-toxic-smog-janice-tjen-questions-organisers-news18-10418337.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-09T06:48:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN-nation": 19
+   },
+   "top_score": 0.06,
+   "top_headlines": [
+    "Diwali 2026: Indians celebrate festival with lights and fireworks"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   }
  ]
