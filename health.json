@@ -1,31 +1,20 @@
 {
- "at": "2026-11-10T05:33:39+00:00",
+ "at": "2026-11-10T05:50:12+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 136 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.122, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.0}, 'category:attack': {'n': 13, 'lift': 1.236, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.7}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 18 trending",
-  "revisit Q2745305 (9438 views): 0 owners reported new news on Omar Abdullah since its last Short; revisit Q124883782 (3142 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit kh-20261110-Q163225-update: 2 owners' new reports on Sonia Gandhi (2170 views before); revisit Q330658 (1124 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4",
-  "outlets: 1577 headlines from 47 feeds (18 owners), 11 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261110-Q6067643, kh-20261110-Q1353, kh-20261110-Q182477, kh-20261110-Q7172014; dropped: explainer October: no Wikipedia article that can be its centre; explainer Gurfateh Pirzada: fewer than 3 owners' headlines name it and the story; explainer Lavrov: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 9 candidates from 14 trending",
+  "outlets: 1579 headlines from 47 feeds (18 owners), 15 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261110-Q1353, kh-20261110-Q6067643, kh-20261110-Q37293, kh-20261110-Q7172014; dropped: explainer October: no Wikipedia article that can be its centre; explainer Rubio: fewer than 3 owners' headlines name it and the story; explainer Gurfateh Pirzada: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261110-Q37293: last Short went out 0.2 h ago",
   "drop kh-20261110-Q182477: a world statement, politics or diplomacy story with no India connection",
-  "drop wk-Q4795757: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "hold kh-20261110-Q7172014: last Short went out 0.2 h ago",
+  "hold wp-2026_Aliağa_factory_explosion: last Short went out 0.2 h ago",
   "drop wk-Q6267230: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q5224782: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q1487904: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q7828852: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261110-Q1353, wp-2026_Aliağa_factory_explosion; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
-  "published kh-20261110-Q1353: https://www.youtube.com/shorts/ytNxUzPyb74",
-  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
- ],
- "published": {
-  "video_id": "ytNxUzPyb74",
-  "url": "https://www.youtube.com/shorts/ytNxUzPyb74",
-  "youtube_title": "दिल्ली में दिवाली के बाद हवा की क्वालिटी बहुत खराब #shorts #delhi",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Aliağa_factory_explosion; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "channel: about, playlists done; nothing left to do"
+ ]
 }
