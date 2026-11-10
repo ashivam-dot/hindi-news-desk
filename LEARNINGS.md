@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-10T15:18:27+00:00. Scored Shorts (views at 24 h): 138. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-10T18:36:15+00:00. Scored Shorts (views at 24 h): 138. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 46 views at 24 h.
 Retention: a typical Short is watched 56.4% through; a group's retention is blended into its lift at 0.5.
@@ -24,18 +24,18 @@ Retention: a typical Short is watched 56.4% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261110-Q163225 | 2026-11-10T10:16 | news | india | naam-niyam | india | 1 |  |  |
+| kh-20261110-Q163225 | 2026-11-10T10:16 | news | india | naam-niyam | india | 2 | 2 |  |
 | kh-20261110-Q1353 | 2026-11-10T05:44 | weather | india | sensitive | india | 1 | 1 |  |
 | kh-20261110-Q3874799 | 2026-11-10T01:45 | news | world | naam-niyam | india | 0 | 0 |  |
-| kh-20261109-Q169132 | 2026-11-09T13:02 | news | india | rajneeti | india | 11 | 3 | 9 |
+| kh-20261109-Q169132 | 2026-11-09T13:02 | news | india | rajneeti | india | 12 | 3 | 9 |
 | kh-20261109-Q6744197 | 2026-11-09T09:18 | news | india | rajneeti | india | 14 | 7 | 14 |
 | kh-20261109-Q37293 | 2026-11-09T03:46 | entertainment | world | naam-niyam | india | 132 | 12 | 125 |
-| kh-20261109-Q796885 | 2026-11-09T01:42 | world | world | other | world | 126 | 0 | 104 |
+| kh-20261109-Q796885 | 2026-11-09T01:42 | world | world | other | world | 141 | 0 | 104 |
 | kh-20261108-Q163225-update | 2026-11-08T11:18 | news | india | naam-niyam | india | 60 | 16 | 52 |
 | kh-20261108-Q1353 | 2026-11-08T08:54 | weather | india | other | india | 4 | 0 | 2 |
-| kh-20261108-Q468324 | 2026-11-08T05:12 | health | india | naam-niyam | india | 93 | 11 | 37 |
+| kh-20261108-Q468324 | 2026-11-08T05:12 | health | india | naam-niyam | india | 149 | 11 | 37 |
 | kh-20261108-Q417657 | 2026-11-08T01:57 | news | india | sensitive | india | 13 | 5 | 9 |
-| kh-20261107-Q200667 | 2026-11-07T13:38 | defence | india | other | india | 223 | 132 | 157 |
+| kh-20261107-Q200667 | 2026-11-07T13:38 | defence | india | other | india | 224 | 132 | 157 |
 | kh-20261107-Q163225-update | 2026-11-07T09:45 | news | india | naam-niyam | india | 92 | 2 | 42 |
 | kh-20261107-Q3243690 | 2026-11-07T03:12 | court | india | naam-niyam | india | 72 | 34 | 62 |
 | kh-20261106-Q213380 | 2026-11-06T18:04 | court | india | naam-niyam | india | 158 | 12 | 74 |
@@ -44,7 +44,7 @@ Retention: a typical Short is watched 56.4% through; a group's retention is blen
 | kh-20261106-Q1353-p3 | 2026-11-06T12:00 | weather | india | other | india | 11 | 2 | 9 |
 | kh-20261106-Q1353-p2 | 2026-11-06T08:51 | news | india | other | india | 5 | 3 | 5 |
 | kh-20261106-Q1353 | 2026-11-06T05:31 | news | india | sensitive | india | 2 | 1 | 1 |
-| kh-20261105-Q55630357 | 2026-11-05T16:52 | defence | india | other | india | 144 | 46 | 96 |
+| kh-20261105-Q55630357 | 2026-11-05T16:52 | defence | india | other | india | 148 | 46 | 96 |
 | kh-20261105-Q1185 | 2026-11-05T08:27 | news | india | paisa | india | 2 | 0 | 2 |
 | kh-20261105-Q982813 | 2026-11-05T02:42 | news | india | naam-niyam | india | 45 | 15 | 27 |
 | kh-20261104-Q25752879 | 2026-11-04T13:16 | news | world | naam-niyam | india | 27 | 7 | 16 |
