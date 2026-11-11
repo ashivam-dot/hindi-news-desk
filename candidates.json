@@ -1,5 +1,5 @@
 {
- "at": "2026-11-11T23:36:57+00:00",
+ "at": "2026-11-11T23:55:38+00:00",
  "trending": [
   {
    "id": "kh-20261112-Q1353",
@@ -50,7 +50,7 @@
     "दिल्ली: एक्सप्रेसवे की टनल में 200 की स्पीड से दौड़ रही कार दीवार से टकराई, लगी आग; हादसे में युवक की मौत",
     "महापर्व: दिल्ली में 996 स्थानों पर बने 1482 छठ घाट, 74 एजेंसियां संभाल रहीं तैयारियां; अधिकारी-मंत्री मौके पर"
    ],
-   "hindi_news": 36,
+   "hindi_news": 35,
    "geos": [
     "IN"
    ],
@@ -106,9 +106,9 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4
+    "IN-nation": 5
    },
-   "top_score": 0.855,
+   "top_score": 0.84,
    "top_headlines": [
     "Big Boost For Noida-Greater Noida Metro Connectivity. PM Shares \"Good News\"",
     "4-year-old falls into open manhole in Delhi's Ranhola; rescue operation underway",
@@ -148,10 +148,10 @@
     "NDTV",
     "HT Media",
     "Network18",
-    "ABP Group",
     "BBC",
     "TV9 Network",
-    "Amar Ujala"
+    "Amar Ujala",
+    "ABP Group"
    ],
    "fame": 375000,
    "news": 375000,
@@ -166,11 +166,11 @@
     "From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling"
    ],
    "hindi_headlines": [
-    "सिर्फ 5 फिल्मों से छाप दिए 3282 करोड़, तगड़ा है 'रामायण' डायरेक्टर नितेश तिवारी का बॉक्स ऑफिस रिकॉर्ड",
     "हिंदी रामायण में काट दिए गए ये जरूरी सीन, इंग्लिश वर्जन में आए नजर, नाराज फैंस ने सोशल मीडिया पर उठाए सवाल",
     "रामायण पार्ट-1 : रावण को अलग नज़रिए से पेश किया, लेकिन राम के किरदार में कहां रह गई कमी?",
-    "'बॉलीवुड वालों के मुंह पर जोरदार तमाचा', रामगोपाल वर्मा ने दूसरी बार देखी 'रामायण', कर दी ये बड़ी भविष्यवाणी",
-    "आज की 10 बड़ी खबरें: कश्मीर में आतंकी हमला, अमूल दूध भी महंगा और रामायण का 1000 करोड़ का दांव"
+    "आज की 10 बड़ी खबरें: कश्मीर में आतंकी हमला, अमूल दूध भी महंगा और रामायण का 1000 करोड़ का दांव",
+    "Ramayana: रामानंद सागर की ‘रामायण’ से क्यों गायब था रावण के जीजा का किरदार, रणबीर की फिल्म में विवेक ओबेरॉय ने निभाया है ये रोल",
+    "'रामायण 2 की शूटिंग 60% पूरी', सिनेमैटोग्राफर ने खोले 4000 करोड़ी मूवी के राज, बताया कैसे बनाई है फिल्म"
    ],
    "hindi_news": 27,
    "geos": [],
@@ -234,19 +234,19 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:ABP Group",
     "outlet:BBC",
     "outlet:TV9 Network",
     "outlet:Amar Ujala",
+    "outlet:ABP Group",
     "google-news:From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling",
     "google-news:रणबीर कपूर की रामायण ने छठे दिन बॉक्स ऑफिस पर उड़ाया गर्दा, कमा डाले इतने करोड़ रुपये",
     "google-news:रामायण पार्ट-1 : रावण को अलग नज़रिए से पेश किया, लेकिन राम के किरदार में कहां रह गई कमी?"
    ],
    "top": {
     "IN-hi": 19,
-    "IN-nation": 19
+    "IN-nation": 18
    },
-   "top_score": 0.13,
+   "top_score": 0.145,
    "top_headlines": [
     "रणबीर कपूर की रामायण ने छठे दिन बॉक्स ऑफिस पर उड़ाया गर्दा, कमा डाले इतने करोड़ रुपये",
     "Net direct tax collection grows 12% to Rs 14.42 lakh crore till November 10, touches 53% of FY27 target"
@@ -353,8 +353,8 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4,
-    "IN-hi-nation": 15
+    "IN-nation": 5,
+    "IN-hi-nation": 14
    },
    "top_score": 0.945,
    "top_headlines": [
@@ -463,16 +463,10 @@
     "outlet:TV9 Network",
     "google-news:From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Hijack threat to Kolkata-Mumbai Air India flight turns out to be hoax; aircraft takes off after seven-hour delay"
-   ],
-   "hindi_owners": [
-    "TV9 Network"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -574,83 +568,6 @@
    "lane": "rajneeti"
   },
   {
-   "qid": "Q18613657",
-   "title": "Alexander Darchiev",
-   "fame": 75000,
-   "views": 0,
-   "traffic": 0,
-   "news": 75000,
-   "news_at": "2026-11-11T18:13:10+00:00",
-   "headlines": [
-    "Russia’s ambassador to US, Alexander Darchiev, dies at 66",
-    "Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
-    "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Russia’s ambassador to US, Alexander Darchiev, dies at 66",
-    "google-news:Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
-    "google-news:Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "Al Jazeera Media Network",
-    "NDTV",
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "Russia’s ambassador to US, Alexander Darchiev, dies at 66",
-     "url": "https://www.aljazeera.com/news/2026/11/11/russias-ambassador-to-the-us-alexander-darchiev-dies-at-66?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-11T18:13:10+00:00"
-    },
-    {
-     "title": "Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
-     "url": "https://www.ndtv.com/world-news/russias-ambassador-to-us-alexander-darchiev-dies-at-66-12314333#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-11T18:01:32+00:00"
-    },
-    {
-     "title": "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
-     "url": "https://www.indiatoday.in/world/story/russian-ambassador-to-us-alexander-darchiev-dies-suddenly-says-foreign-ministry-3037024-2026-11-11?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-11T17:28:56+00:00"
-    }
-   ],
-   "id": "wk-Q18613657",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "id": "kh-20261112-Q6917320",
    "qid": "Q6917320",
    "title": "Mother Dairy",
@@ -741,9 +658,9 @@
     "outlet:Bennett, Coleman & Co."
    ],
    "top": {
-    "IN": 16
+    "IN": 17
    },
-   "top_score": 0.25,
+   "top_score": 0.2,
    "top_headlines": [
     "Amul raises milk prices by ₹2-4 per litre, effective from November 12"
    ],
@@ -1103,6 +1020,69 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q18613657",
+   "title": "Alexander Darchiev",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-11T18:13:10+00:00",
+   "headlines": [
+    "Russia’s ambassador to US, Alexander Darchiev, dies at 66",
+    "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Russia’s ambassador to US, Alexander Darchiev, dies at 66",
+    "google-news:Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
+    "outlet:Al Jazeera Media Network",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "Al Jazeera Media Network",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Russia’s ambassador to US, Alexander Darchiev, dies at 66",
+     "url": "https://www.aljazeera.com/news/2026/11/11/russias-ambassador-to-the-us-alexander-darchiev-dies-at-66?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-11T18:13:10+00:00"
+    },
+    {
+     "title": "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
+     "url": "https://www.indiatoday.in/world/story/russian-ambassador-to-us-alexander-darchiev-dies-suddenly-says-foreign-ministry-3037024-2026-11-11?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-11T17:28:56+00:00"
+    }
+   ],
+   "id": "wk-Q18613657",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q5209002",
@@ -1482,8 +1462,8 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4,
-    "IN-hi-nation": 15
+    "IN-nation": 5,
+    "IN-hi-nation": 14
    },
    "top_score": 0.945,
    "top_headlines": [
@@ -1640,7 +1620,7 @@
     "दिल्ली: एक्सप्रेसवे की टनल में 200 की स्पीड से दौड़ रही कार दीवार से टकराई, लगी आग; हादसे में युवक की मौत",
     "महापर्व: दिल्ली में 996 स्थानों पर बने 1482 छठ घाट, 74 एजेंसियां संभाल रहीं तैयारियां; अधिकारी-मंत्री मौके पर"
    ],
-   "hindi_news": 36,
+   "hindi_news": 35,
    "geos": [
     "IN"
    ],
@@ -1696,9 +1676,9 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4
+    "IN-nation": 5
    },
-   "top_score": 0.855,
+   "top_score": 0.84,
    "top_headlines": [
     "Big Boost For Noida-Greater Noida Metro Connectivity. PM Shares \"Good News\"",
     "4-year-old falls into open manhole in Delhi's Ranhola; rescue operation underway",
@@ -1886,9 +1866,9 @@
     "outlet:Bennett, Coleman & Co."
    ],
    "top": {
-    "IN": 16
+    "IN": 17
    },
-   "top_score": 0.25,
+   "top_score": 0.2,
    "top_headlines": [
     "Amul raises milk prices by ₹2-4 per litre, effective from November 12"
    ],
@@ -1994,16 +1974,10 @@
     "outlet:TV9 Network",
     "google-news:From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Hijack threat to Kolkata-Mumbai Air India flight turns out to be hoax; aircraft takes off after seven-hour delay"
-   ],
-   "hindi_owners": [
-    "TV9 Network"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -2127,14 +2101,13 @@
   {
    "qid": "Q18613657",
    "title": "Alexander Darchiev",
-   "fame": 75000,
+   "fame": 50000,
    "views": 0,
    "traffic": 0,
-   "news": 75000,
+   "news": 50000,
    "news_at": "2026-11-11T18:13:10+00:00",
    "headlines": [
     "Russia’s ambassador to US, Alexander Darchiev, dies at 66",
-    "Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
     "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry"
    ],
    "hindi_news": 0,
@@ -2147,15 +2120,12 @@
    "label_hi": null,
    "via": [
     "google-news:Russia’s ambassador to US, Alexander Darchiev, dies at 66",
-    "google-news:Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
     "google-news:Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
     "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
     "outlet:India Today Group"
    ],
    "owners": [
     "Al Jazeera Media Network",
-    "NDTV",
     "India Today Group"
    ],
    "reports": [
@@ -2168,16 +2138,6 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-11T18:13:10+00:00"
-    },
-    {
-     "title": "Russia's Ambassador To US Alexander Darchiev Dies \"Suddenly\" At 66: Moscow",
-     "url": "https://www.ndtv.com/world-news/russias-ambassador-to-us-alexander-darchiev-dies-at-66-12314333#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-11T18:01:32+00:00"
     },
     {
      "title": "Russian ambassador to US Alexander Darchiev dies suddenly, says foreign ministry",
@@ -2850,8 +2810,8 @@
  ],
  "notes": [
   "revisit kh-20261112-Q163225-update: 3 owners' new reports on Sonia Gandhi (2171 views before); revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 0 owners reported new news on Amit Shah since its last Short; revisit Q9543 (932 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261112-Q3",
-  "outlets: 1672 headlines from 48 feeds (18 owners), 25 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261112-Q1353, kh-20261112-Q37293, kh-20261112-Q16909221, kh-20261112-Q22890; dropped: explainer Olympic / Bhaker Esha Singh: no Wikipedia article that can be its centre; explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Anushka Sharma: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1668 headlines from 48 feeds (18 owners), 26 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261112-Q1353, kh-20261112-Q37293, kh-20261112-Q16909221, kh-20261112-Q22890; dropped: explainer Manu Bhaker Esha: fewer than 3 owners' headlines name it and the story; explainer PM Modi: fewer than 3 owners' headlines name it and the story; explainer Anushka Sharma: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again"
  ],
@@ -2860,10 +2820,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1672,
+  "headlines": 1668,
   "feeds": 48,
   "owners": 18,
-  "matched": 25,
+  "matched": 26,
   "corroborated": 10
  },
  "emerging": [],
@@ -2917,7 +2877,7 @@
     "दिल्ली: एक्सप्रेसवे की टनल में 200 की स्पीड से दौड़ रही कार दीवार से टकराई, लगी आग; हादसे में युवक की मौत",
     "महापर्व: दिल्ली में 996 स्थानों पर बने 1482 छठ घाट, 74 एजेंसियां संभाल रहीं तैयारियां; अधिकारी-मंत्री मौके पर"
    ],
-   "hindi_news": 36,
+   "hindi_news": 35,
    "geos": [
     "IN"
    ],
@@ -2973,9 +2933,9 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4
+    "IN-nation": 5
    },
-   "top_score": 0.855,
+   "top_score": 0.84,
    "top_headlines": [
     "Big Boost For Noida-Greater Noida Metro Connectivity. PM Shares \"Good News\"",
     "4-year-old falls into open manhole in Delhi's Ranhola; rescue operation underway",
@@ -3015,10 +2975,10 @@
     "NDTV",
     "HT Media",
     "Network18",
-    "ABP Group",
     "BBC",
     "TV9 Network",
-    "Amar Ujala"
+    "Amar Ujala",
+    "ABP Group"
    ],
    "fame": 375000,
    "news": 375000,
@@ -3033,11 +2993,11 @@
     "From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling"
    ],
    "hindi_headlines": [
-    "सिर्फ 5 फिल्मों से छाप दिए 3282 करोड़, तगड़ा है 'रामायण' डायरेक्टर नितेश तिवारी का बॉक्स ऑफिस रिकॉर्ड",
     "हिंदी रामायण में काट दिए गए ये जरूरी सीन, इंग्लिश वर्जन में आए नजर, नाराज फैंस ने सोशल मीडिया पर उठाए सवाल",
     "रामायण पार्ट-1 : रावण को अलग नज़रिए से पेश किया, लेकिन राम के किरदार में कहां रह गई कमी?",
-    "'बॉलीवुड वालों के मुंह पर जोरदार तमाचा', रामगोपाल वर्मा ने दूसरी बार देखी 'रामायण', कर दी ये बड़ी भविष्यवाणी",
-    "आज की 10 बड़ी खबरें: कश्मीर में आतंकी हमला, अमूल दूध भी महंगा और रामायण का 1000 करोड़ का दांव"
+    "आज की 10 बड़ी खबरें: कश्मीर में आतंकी हमला, अमूल दूध भी महंगा और रामायण का 1000 करोड़ का दांव",
+    "Ramayana: रामानंद सागर की ‘रामायण’ से क्यों गायब था रावण के जीजा का किरदार, रणबीर की फिल्म में विवेक ओबेरॉय ने निभाया है ये रोल",
+    "'रामायण 2 की शूटिंग 60% पूरी', सिनेमैटोग्राफर ने खोले 4000 करोड़ी मूवी के राज, बताया कैसे बनाई है फिल्म"
    ],
    "hindi_news": 27,
    "geos": [],
@@ -3101,19 +3061,19 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:ABP Group",
     "outlet:BBC",
     "outlet:TV9 Network",
     "outlet:Amar Ujala",
+    "outlet:ABP Group",
     "google-news:From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling",
     "google-news:रणबीर कपूर की रामायण ने छठे दिन बॉक्स ऑफिस पर उड़ाया गर्दा, कमा डाले इतने करोड़ रुपये",
     "google-news:रामायण पार्ट-1 : रावण को अलग नज़रिए से पेश किया, लेकिन राम के किरदार में कहां रह गई कमी?"
    ],
    "top": {
     "IN-hi": 19,
-    "IN-nation": 19
+    "IN-nation": 18
    },
-   "top_score": 0.13,
+   "top_score": 0.145,
    "top_headlines": [
     "रणबीर कपूर की रामायण ने छठे दिन बॉक्स ऑफिस पर उड़ाया गर्दा, कमा डाले इतने करोड़ रुपये",
     "Net direct tax collection grows 12% to Rs 14.42 lakh crore till November 10, touches 53% of FY27 target"
@@ -3220,8 +3180,8 @@
    ],
    "top": {
     "IN": 9,
-    "IN-nation": 4,
-    "IN-hi-nation": 15
+    "IN-nation": 5,
+    "IN-hi-nation": 14
    },
    "top_score": 0.945,
    "top_headlines": [
@@ -3330,16 +3290,10 @@
     "outlet:TV9 Network",
     "google-news:From ‘Dil Se’ to ‘Ramayana’: How Indian Cinema Shattered the U.K., Ireland Box Office Glass Ceiling"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Hijack threat to Kolkata-Mumbai Air India flight turns out to be hoax; aircraft takes off after seven-hour delay"
-   ],
-   "hindi_owners": [
-    "TV9 Network"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "sensitive"
   },
@@ -3531,9 +3485,9 @@
     "outlet:Bennett, Coleman & Co."
    ],
    "top": {
-    "IN": 16
+    "IN": 17
    },
-   "top_score": 0.25,
+   "top_score": 0.2,
    "top_headlines": [
     "Amul raises milk prices by ₹2-4 per litre, effective from November 12"
    ],
