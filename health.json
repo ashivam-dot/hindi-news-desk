@@ -1,31 +1,21 @@
 {
- "at": "2026-11-11T01:37:19+00:00",
+ "at": "2026-11-11T02:08:26+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 21 candidates from 25 trending",
-  "revisit kh-20261111-Q163225-update: 4 owners' new reports on Sonia Gandhi (2170 views before); revisit Q124883782 (1550 views): 0 owners reported new news on Gyanesh Kumar since its last Short; revisit Q330658 (1124 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1010 views): 0 owners reported new news on Amit Shah since its last Short; revisit Q72897",
-  "outlets: 1649 headlines from 48 feeds (18 owners), 21 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261111-Q163225, kh-20261111-Q37293, kh-20261111-Q1353, kh-20261111-Q9543; dropped: explainer House Republican: fewer than 3 owners' headlines name it and the story; explainer Bumrah Jadeja / Bumrah Jadeja: no Wikipedia article that can be its centre; explainer Oxford University: fewer than 3 owners' headlines name it and the story",
+  "watch: 19 candidates from 27 trending",
+  "outlets: 1640 headlines from 48 feeds (18 owners), 19 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 10 kh- stories (on): kh-20261111-Q163225, kh-20261111-Q37293, kh-20261111-Q1353, kh-20261111-Q9543; dropped: explainer Pete Hegseth: Hindi headlines name a minister Pete Hegseth, Wikipedia's Pete Hegseth is not one; whose story it is stays unknown, so it is skipped; explainer Witkoff: fewer than 3 owners' headlines name it and the story; explainer Bumrah Jadeja / Bumrah Jadeja: no Wikipedia article that can be its centre",
   "skip wk-Q4250213: Orbitwire published (wk-Q4250213), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261111-Q9543: last Short went out 0.3 h ago",
   "drop kh-20261111-Q37293: a entertainment story goes out only as a top story (place 0.10, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261111-Q305177: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q23762011: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q7819982: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261111-Q235102: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q2654764: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261111-Q3524804: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261111-Q43918214, kh-20261111-Q213380-update, kh-20261111-Q163225-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
-  "skip kh-20261111-Q9543: gate: no draft passed the fact checks: these numbers are not in the sources: 2026 (2026 only in one outlet's report: one outlet is not enough); draft wording: 2026. Omit these unsupported numeric claims from narration, title, captions and labels. Keep the independently supported event and attribution. Never guess a replacement amount, change its unit or counted noun, or turn an unsupported amount into a vague claim about its size.",
-  "published kh-20261111-Q7172014: https://www.youtube.com/shorts/JNfcyIMqEts",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261111-Q43918214; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "JNfcyIMqEts",
-  "url": "https://www.youtube.com/shorts/JNfcyIMqEts",
-  "youtube_title": "पीट हेगसेथ पर महाभियोग का प्रस्ताव हाउस में रुका #shorts #petehegseth",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
