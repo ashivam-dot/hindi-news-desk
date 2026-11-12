@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T22:57:13+00:00",
+ "at": "2026-11-12T23:12:33+00:00",
  "trending": [
   {
    "qid": "Q315090",
@@ -121,9 +121,9 @@
    ],
    "top": {
     "IN": 4,
-    "IN-hi": 6
+    "IN-hi": 15
    },
-   "top_score": 1.225,
+   "top_score": 1.0,
    "top_headlines": [
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
     "Nvidia CEO Jensen Huang resigns amid spy scandal"
@@ -157,10 +157,11 @@
     "Deutsche Welle",
     "Guardian Media Group",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "NDTV"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -168,13 +169,14 @@
     "Widespread outage hits Microsoft apps",
     "Microsoft outage hits tens of thousands of users",
     "Microsoft reports mass outages in US, impacting customer accessibility",
-    "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
    "hindi_headlines": [
+    "माइक्रोसॉफ्ट की सेवाओं पर बड़ा संकट: आउटलुक से लेकर टीम्स तक ठप, 1.30 लाख यूजर्स हुए परेशान; क्या है वजह?",
     "nVIDIA की नई CEO कोलेट क्रेस कौन है? माइक्रोसॉफ्ट-Cisco में भी रह चुकी हैं CFO, फिर जेनसन हुआंग से जुड़ीं"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -192,7 +194,7 @@
      "at": "2026-11-12T21:19:00+00:00"
     },
     {
-     "title": "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
+     "title": "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
@@ -238,17 +240,20 @@
     "outlet:Deutsche Welle",
     "outlet:Guardian Media Group",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:NDTV",
-    "google-news:Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "google-news:Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
    "top": {
-    "IN": 11
+    "IN": 19
    },
-   "top_score": 0.5,
+   "top_score": 0.1,
    "top_headlines": [
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "other"
   },
@@ -603,6 +608,117 @@
    "lane": "other"
   },
   {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 160200,
+   "views": 0,
+   "traffic": 10200,
+   "news": 100000,
+   "news_at": "2026-11-12T22:58:23+00:00",
+   "headlines": [
+    "Eight killed, including two children, in New York building collapse",
+    "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "Building collapse in New York leaves 8 dead"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "GB",
+    "IN",
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:mina kimes",
+    "google-trends-GB:1321 flatbush avenue brooklyn ny",
+    "wikipedia-current-events-2026-11-11",
+    "google-news:Eight killed, including two children, in New York building collapse",
+    "google-news:8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "France Médias Monde",
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Eight killed, including two children, in New York building collapse",
+     "url": "https://www.france24.com/en/americas/20261112-eight-killed-including-two-children-in-new-york-building-collapse",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:58:23+00:00"
+    },
+    {
+     "title": "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+     "url": "https://www.indiatoday.in/world/story/8-dead-in-new-york-building-collapse-mayor-zohran-mamdani-expands-probe-to-100-sites-3037876-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T21:39:24+00:00"
+    },
+    {
+     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:42:27+00:00"
+    },
+    {
+     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:13:08+00:00"
+    },
+    {
+     "title": "Building collapse in New York leaves 8 dead",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:07:34+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.639018,
+    -73.953872
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
    "id": "kh-20261113-Q7747",
    "qid": "Q7747",
    "title": "Vladimir Putin",
@@ -736,99 +852,138 @@
    "lane": "other"
   },
   {
-   "qid": "Q142131356",
-   "title": "2026 New York City building collapse",
-   "fame": 135000,
-   "views": 0,
-   "traffic": 10000,
-   "news": 75000,
-   "news_at": "2026-11-12T21:39:24+00:00",
-   "headlines": [
-    "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "Building collapse in New York leaves 8 dead"
+   "id": "kh-20261113-Q186196",
+   "qid": "Q186196",
+   "title": "Youth Olympic Games",
+   "name": "Youth Olympic Games",
+   "phrase": "Youth Olympics",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+   "story_keys": [
+    "boxing",
+    "first-ever",
+    "gold",
+    "history",
+    "lairenlakpam",
+    "script",
+    "wins"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "geos": [
-    "GB",
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:1321 flatbush avenue brooklyn ny",
-    "wikipedia-current-events-2026-11-11",
-    "google-news:8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "google-news:Building collapse in New York leaves 8 dead",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T20:36:22+00:00",
    "owners": [
     "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co."
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "The Hindu Group"
    ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "युवा ओलम्पिक खेल",
    "reports": [
     {
-     "title": "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-     "url": "https://www.indiatoday.in/world/story/8-dead-in-new-york-building-collapse-mayor-zohran-mamdani-expands-probe-to-100-sites-3037876-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
+     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-12T21:39:24+00:00"
+     "at": "2026-11-12T19:32:25+00:00"
     },
     {
-     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Ambekar, Gunjan script history with boxing gold medals at Youth Olympics",
+     "url": "https://www.thehindu.com/sport/ambekar-gunjan-script-history-with-boxing-gold-medals-at-youth-olympics/article71695389.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T12:42:27+00:00"
+     "at": "2026-11-12T20:36:22+00:00"
     },
     {
-     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T03:13:08+00:00"
+     "at": "2026-11-12T18:17:02+00:00"
     },
     {
-     "title": "Building collapse in New York leaves 8 dead",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T03:07:34+00:00"
+     "at": "2026-11-12T17:25:00+00:00"
+    },
+    {
+     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:23:37+00:00"
+    },
+    {
+     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:13:19+00:00"
+    },
+    {
+     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:22:42+00:00"
     }
    ],
-   "id": "wk-Q142131356",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-11",
-   "coords": [
-    40.639018,
-    -73.953872
+   "via": [
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:The Hindu Group"
    ],
-   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "breaking"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q1159",
@@ -1022,7 +1177,7 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-11-12",
-   "news_at": "2026-11-12T22:39:44+00:00",
+   "news_at": "2026-11-12T22:54:05+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -1057,7 +1212,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-12T22:39:44+00:00"
+     "at": "2026-11-12T22:54:05+00:00"
     },
     {
      "title": "Police identify suspect and victim in Washington DC gym shooting that also injured four",
@@ -1119,10 +1274,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 14,
+    "IN": 11,
     "IN-hi": 14
    },
-   "top_score": 0.525,
+   "top_score": 0.675,
    "top_headlines": [
     "अमेरिका की राजधानी वॉशिंगटन डीसी में गोलीबारी, संदिग्ध हमलावर समेत दो की मौत, चार घायल",
     "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
@@ -1130,129 +1285,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261113-Q186196",
-   "qid": "Q186196",
-   "title": "Youth Olympic Games",
-   "name": "Youth Olympic Games",
-   "phrase": "Youth Olympics",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-   "story_keys": [
-    "boxing",
-    "first-ever",
-    "gold",
-    "gunjan",
-    "history",
-    "lairenlakpam",
-    "script",
-    "wins"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T19:32:25+00:00",
-   "owners": [
-    "India Today Group",
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "युवा ओलम्पिक खेल",
-   "reports": [
-    {
-     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
-     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T19:32:25+00:00"
-    },
-    {
-     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T18:17:02+00:00"
-    },
-    {
-     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:25:00+00:00"
-    },
-    {
-     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:23:37+00:00"
-    },
-    {
-     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:13:19+00:00"
-    },
-    {
-     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:22:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "nw-20261112-nasser-attack",
@@ -1684,9 +1716,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Hegseth entourage reprimanded by guard at Tomb of the Unknown Soldier"
    ],
@@ -2205,9 +2237,9 @@
    ],
    "top": {
     "IN": 4,
-    "IN-hi": 6
+    "IN-hi": 15
    },
-   "top_score": 1.225,
+   "top_score": 1.0,
    "top_headlines": [
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
     "Nvidia CEO Jensen Huang resigns amid spy scandal"
@@ -2398,124 +2430,121 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
-   "story_keys": [
-    "hits",
-    "outage",
-    "thousand",
-    "user"
-   ],
+   "id": "nw-20261112-washington-dc-attack",
+   "qid": null,
+   "title": "Washington DC shooting: police identify victim and suspect – latest updates",
+   "name": "Washington DC",
+   "kind": "incident",
+   "category": "attack",
    "date": "2026-11-12",
-   "news_at": "2026-11-12T22:08:21+00:00",
+   "news_at": "2026-11-12T22:54:05+00:00",
    "owners": [
-    "The Hindu Group",
-    "Al Jazeera Media Network",
-    "Deutsche Welle",
-    "Guardian Media Group",
     "Bennett, Coleman & Co.",
-    "NDTV"
+    "HT Media",
+    "Al Jazeera Media Network",
+    "Guardian Media Group"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
-    "Widespread outage hits Microsoft apps",
-    "Microsoft outage hits tens of thousands of users",
-    "Microsoft reports mass outages in US, impacting customer accessibility",
-    "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+    "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+    "Suspect turns gun on himself after deadly shooting in Washington DC",
+    "Deadly shooting in Washington DC",
+    "Police identify suspect and victim in Washington DC gym shooting that also injured four"
    ],
-   "hindi_headlines": [
-    "nVIDIA की नई CEO कोलेट क्रेस कौन है? माइक्रोसॉफ्ट-Cisco में भी रह चुकी हैं CFO, फिर जेनसन हुआंग से जुड़ीं"
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
    ],
-   "hindi_news": 1,
-   "geos": [],
    "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
+   "india_link": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "Microsoft reports mass outages in US, impacting customer accessibility",
-     "url": "https://www.dw.com/en/microsoft-reports-mass-outages-in-us-impacting-customer-accessibility/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T21:19:00+00:00"
-    },
-    {
-     "title": "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "title": "Washington DC shooting: police identify victim and suspect – latest updates",
+     "url": "https://www.theguardian.com/us-news/live/2026/nov/12/washington-dc-shooting-logan-circle-latest-updates",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-12T21:51:47+00:00"
+     "at": "2026-11-12T22:54:05+00:00"
     },
     {
-     "title": "Microsoft outage hits tens of thousands of users",
-     "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss",
+     "title": "Police identify suspect and victim in Washington DC gym shooting that also injured four",
+     "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T22:13:36+00:00"
+    },
+    {
+     "title": "Deadly shooting in Washington DC",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/deadly-shooting-in-washington-dc?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
      "owner": "Al Jazeera Media Network",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-12T21:03:09+00:00"
+     "at": "2026-11-12T21:18:24+00:00"
     },
     {
-     "title": "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
-     "url": "https://timesofindia.indiatimes.com/world/us/microsoft-outlook-outage-hits-thousands-globally-nearly-1-3l-users-report-email-issues/articleshow/135782745.cms",
+     "title": "Suspect turns gun on himself after deadly shooting in Washington DC",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/suspect-turns-gun-on-himself-after-deadly-shooting-in-washington-dc?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T18:02:32+00:00"
+    },
+    {
+     "title": "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+     "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:21:31+00:00"
+    },
+    {
+     "title": "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-shooting-4-people-shot-in-neighbourhood-near-white-house-area-cordoned-off/articleshow/135772622.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T22:08:21+00:00"
-    },
-    {
-     "title": "Widespread outage hits Microsoft apps",
-     "url": "https://www.thehindu.com/sci-tech/technology/internet/widespread-outage-hits-microsoft-apps/article71695400.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T21:01:36+00:00"
+     "at": "2026-11-12T14:02:56+00:00"
     }
    ],
    "via": [
-    "outlet:The Hindu Group",
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "google-news:Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "outlet:HT Media",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Guardian Media Group"
    ],
+   "emerging": true,
+   "article": null,
    "top": {
-    "IN": 11
+    "IN": 11,
+    "IN-hi": 14
    },
-   "top_score": 0.5,
+   "top_score": 0.675,
    "top_headlines": [
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "अमेरिका की राजधानी वॉशिंगटन डीसी में गोलीबारी, संदिग्ध हमलावर समेत दो की मौत, चार घायल",
+    "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
    ],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261113-Q109172193",
@@ -2630,123 +2659,6 @@
    "lane": "other"
   },
   {
-   "id": "nw-20261112-washington-dc-attack",
-   "qid": null,
-   "title": "Washington DC shooting: police identify victim and suspect – latest updates",
-   "name": "Washington DC",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T22:39:44+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "Al Jazeera Media Network",
-    "Guardian Media Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
-    "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
-    "Suspect turns gun on himself after deadly shooting in Washington DC",
-    "Deadly shooting in Washington DC",
-    "Police identify suspect and victim in Washington DC gym shooting that also injured four"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "world"
-   ],
-   "region": "world",
-   "india_link": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Washington DC shooting: police identify victim and suspect – latest updates",
-     "url": "https://www.theguardian.com/us-news/live/2026/nov/12/washington-dc-shooting-logan-circle-latest-updates",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T22:39:44+00:00"
-    },
-    {
-     "title": "Police identify suspect and victim in Washington DC gym shooting that also injured four",
-     "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T22:13:36+00:00"
-    },
-    {
-     "title": "Deadly shooting in Washington DC",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/deadly-shooting-in-washington-dc?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T21:18:24+00:00"
-    },
-    {
-     "title": "Suspect turns gun on himself after deadly shooting in Washington DC",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/suspect-turns-gun-on-himself-after-deadly-shooting-in-washington-dc?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T18:02:32+00:00"
-    },
-    {
-     "title": "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
-     "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T15:21:31+00:00"
-    },
-    {
-     "title": "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
-     "url": "https://timesofindia.indiatimes.com/world/us/us-shooting-4-people-shot-in-neighbourhood-near-white-house-area-cordoned-off/articleshow/135772622.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T14:02:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:Al Jazeera Media Network",
-    "outlet:Guardian Media Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 14,
-    "IN-hi": 14
-   },
-   "top_score": 0.525,
-   "top_headlines": [
-    "अमेरिका की राजधानी वॉशिंगटन डीसी में गोलीबारी, संदिग्ध हमलावर समेत दो की मौत, चार घायल",
-    "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
-  },
-  {
    "id": "kh-20261113-Q3053437",
    "qid": "Q3053437",
    "title": "Emraan Hashmi",
@@ -2830,6 +2742,131 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
+   "story_keys": [
+    "hits",
+    "outage",
+    "thousand",
+    "user"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T22:08:21+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Al Jazeera Media Network",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "Bennett, Coleman & Co.",
+    "Amar Ujala",
+    "NDTV"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
+    "Widespread outage hits Microsoft apps",
+    "Microsoft outage hits tens of thousands of users",
+    "Microsoft reports mass outages in US, impacting customer accessibility",
+    "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
+   ],
+   "hindi_headlines": [
+    "माइक्रोसॉफ्ट की सेवाओं पर बड़ा संकट: आउटलुक से लेकर टीम्स तक ठप, 1.30 लाख यूजर्स हुए परेशान; क्या है वजह?",
+    "nVIDIA की नई CEO कोलेट क्रेस कौन है? माइक्रोसॉफ्ट-Cisco में भी रह चुकी हैं CFO, फिर जेनसन हुआंग से जुड़ीं"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft reports mass outages in US, impacting customer accessibility",
+     "url": "https://www.dw.com/en/microsoft-reports-mass-outages-in-us-impacting-customer-accessibility/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T21:19:00+00:00"
+    },
+    {
+     "title": "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T21:51:47+00:00"
+    },
+    {
+     "title": "Microsoft outage hits tens of thousands of users",
+     "url": "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T21:03:09+00:00"
+    },
+    {
+     "title": "Microsoft Outlook outage hits thousands globally, nearly 1.3L users report email issues",
+     "url": "https://timesofindia.indiatimes.com/world/us/microsoft-outlook-outage-hits-thousands-globally-nearly-1-3l-users-report-email-issues/articleshow/135782745.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T22:08:21+00:00"
+    },
+    {
+     "title": "Widespread outage hits Microsoft apps",
+     "url": "https://www.thehindu.com/sci-tech/technology/internet/widespread-outage-hits-microsoft-apps/article71695400.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T21:01:36+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
+    "outlet:NDTV",
+    "google-news:Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
+   ],
+   "top": {
+    "IN": 19
+   },
+   "top_score": 0.1,
+   "top_headlines": [
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
+   ],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q1661243",
@@ -3189,6 +3226,251 @@
    "lane": "naam-niyam"
   },
   {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 160200,
+   "views": 0,
+   "traffic": 10200,
+   "news": 100000,
+   "news_at": "2026-11-12T22:58:23+00:00",
+   "headlines": [
+    "Eight killed, including two children, in New York building collapse",
+    "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "Building collapse in New York leaves 8 dead"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "GB",
+    "IN",
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-US:mina kimes",
+    "google-trends-GB:1321 flatbush avenue brooklyn ny",
+    "wikipedia-current-events-2026-11-11",
+    "google-news:Eight killed, including two children, in New York building collapse",
+    "google-news:8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "France Médias Monde",
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Eight killed, including two children, in New York building collapse",
+     "url": "https://www.france24.com/en/americas/20261112-eight-killed-including-two-children-in-new-york-building-collapse",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:58:23+00:00"
+    },
+    {
+     "title": "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
+     "url": "https://www.indiatoday.in/world/story/8-dead-in-new-york-building-collapse-mayor-zohran-mamdani-expands-probe-to-100-sites-3037876-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T21:39:24+00:00"
+    },
+    {
+     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:42:27+00:00"
+    },
+    {
+     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:13:08+00:00"
+    },
+    {
+     "title": "Building collapse in New York leaves 8 dead",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:07:34+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.639018,
+    -73.953872
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "id": "kh-20261113-Q186196",
+   "qid": "Q186196",
+   "title": "Youth Olympic Games",
+   "name": "Youth Olympic Games",
+   "phrase": "Youth Olympics",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+   "story_keys": [
+    "boxing",
+    "first-ever",
+    "gold",
+    "history",
+    "lairenlakpam",
+    "script",
+    "wins"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T20:36:22+00:00",
+   "owners": [
+    "India Today Group",
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "The Hindu Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "युवा ओलम्पिक खेल",
+   "reports": [
+    {
+     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
+     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T19:32:25+00:00"
+    },
+    {
+     "title": "Ambekar, Gunjan script history with boxing gold medals at Youth Olympics",
+     "url": "https://www.thehindu.com/sport/ambekar-gunjan-script-history-with-boxing-gold-medals-at-youth-olympics/article71695389.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T20:36:22+00:00"
+    },
+    {
+     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:17:02+00:00"
+    },
+    {
+     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:25:00+00:00"
+    },
+    {
+     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:23:37+00:00"
+    },
+    {
+     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:13:19+00:00"
+    },
+    {
+     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:22:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "nw-20261112-nasser-attack",
    "qid": null,
    "title": "Israeli air strike on Gaza hospital kills six, including surgeon",
@@ -3264,224 +3546,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "sensitive"
-  },
-  {
-   "qid": "Q142131356",
-   "title": "2026 New York City building collapse",
-   "fame": 135000,
-   "views": 0,
-   "traffic": 10000,
-   "news": 75000,
-   "news_at": "2026-11-12T21:39:24+00:00",
-   "headlines": [
-    "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "Building collapse in New York leaves 8 dead"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "geos": [
-    "GB",
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:1321 flatbush avenue brooklyn ny",
-    "wikipedia-current-events-2026-11-11",
-    "google-news:8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "google-news:Building collapse in New York leaves 8 dead",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "8 dead in New York building collapse, Mamdani expands probe to 100 sites",
-     "url": "https://www.indiatoday.in/world/story/8-dead-in-new-york-building-collapse-mayor-zohran-mamdani-expands-probe-to-100-sites-3037876-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T21:39:24+00:00"
-    },
-    {
-     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:42:27+00:00"
-    },
-    {
-     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T03:13:08+00:00"
-    },
-    {
-     "title": "Building collapse in New York leaves 8 dead",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T03:07:34+00:00"
-    }
-   ],
-   "id": "wk-Q142131356",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-11",
-   "coords": [
-    40.639018,
-    -73.953872
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "id": "kh-20261113-Q186196",
-   "qid": "Q186196",
-   "title": "Youth Olympic Games",
-   "name": "Youth Olympic Games",
-   "phrase": "Youth Olympics",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-   "story_keys": [
-    "boxing",
-    "first-ever",
-    "gold",
-    "gunjan",
-    "history",
-    "lairenlakpam",
-    "script",
-    "wins"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T19:32:25+00:00",
-   "owners": [
-    "India Today Group",
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "युवा ओलम्पिक खेल",
-   "reports": [
-    {
-     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
-     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T19:32:25+00:00"
-    },
-    {
-     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T18:17:02+00:00"
-    },
-    {
-     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:25:00+00:00"
-    },
-    {
-     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:23:37+00:00"
-    },
-    {
-     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:13:19+00:00"
-    },
-    {
-     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:22:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q7172014",
@@ -3565,9 +3629,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Hegseth entourage reprimanded by guard at Tomb of the Unknown Soldier"
    ],
@@ -4606,8 +4670,8 @@
  ],
  "notes": [
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 0 owners reported new news on Amit Shah since its last Short; revisit kh-20261113-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261113-Q9543-update: 2 owners' new reports on Salman Khan (932 views before); revisit kh-20261113-Q10218-u",
-  "outlets: 1676 headlines from 47 feeds (18 owners), 35 matched to articles, 16 candidates with 2+ owners, 2 nw- stories (on): nw-20261112-washington-dc-attack, nw-20261112-nasser-attack",
-  "explainers: 13 kh- stories (on): kh-20261113-Q182477, kh-20261113-Q2283, kh-20261113-Q109172193, kh-20261113-Q9535; dropped: explainer Minister Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1675 headlines from 47 feeds (18 owners), 34 matched to articles, 16 candidates with 2+ owners, 2 nw- stories (on): nw-20261112-washington-dc-attack, nw-20261112-nasser-attack",
+  "explainers: 13 kh- stories (on): kh-20261113-Q182477, kh-20261113-Q2283, kh-20261113-Q109172193, kh-20261113-Q9535; dropped: explainer Union Minister Piyush: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -4615,10 +4679,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1676,
+  "headlines": 1675,
   "feeds": 47,
   "owners": 18,
-  "matched": 35,
+  "matched": 34,
   "corroborated": 16
  },
  "emerging": [
@@ -4630,7 +4694,7 @@
    "kind": "incident",
    "category": "attack",
    "date": "2026-11-12",
-   "news_at": "2026-11-12T22:39:44+00:00",
+   "news_at": "2026-11-12T22:54:05+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -4665,7 +4729,7 @@
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-12T22:39:44+00:00"
+     "at": "2026-11-12T22:54:05+00:00"
     },
     {
      "title": "Police identify suspect and victim in Washington DC gym shooting that also injured four",
@@ -4727,10 +4791,10 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 14,
+    "IN": 11,
     "IN-hi": 14
    },
-   "top_score": 0.525,
+   "top_score": 0.675,
    "top_headlines": [
     "अमेरिका की राजधानी वॉशिंगटन डीसी में गोलीबारी, संदिग्ध हमलावर समेत दो की मौत, चार घायल",
     "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
@@ -4907,9 +4971,9 @@
    ],
    "top": {
     "IN": 4,
-    "IN-hi": 6
+    "IN-hi": 15
    },
-   "top_score": 1.225,
+   "top_score": 1.0,
    "top_headlines": [
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
     "Nvidia CEO Jensen Huang resigns amid spy scandal"
@@ -4943,10 +5007,11 @@
     "Deutsche Welle",
     "Guardian Media Group",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "NDTV"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4954,13 +5019,14 @@
     "Widespread outage hits Microsoft apps",
     "Microsoft outage hits tens of thousands of users",
     "Microsoft reports mass outages in US, impacting customer accessibility",
-    "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
    "hindi_headlines": [
+    "माइक्रोसॉफ्ट की सेवाओं पर बड़ा संकट: आउटलुक से लेकर टीम्स तक ठप, 1.30 लाख यूजर्स हुए परेशान; क्या है वजह?",
     "nVIDIA की नई CEO कोलेट क्रेस कौन है? माइक्रोसॉफ्ट-Cisco में भी रह चुकी हैं CFO, फिर जेनसन हुआंग से जुड़ीं"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4978,7 +5044,7 @@
      "at": "2026-11-12T21:19:00+00:00"
     },
     {
-     "title": "Global Microsoft outage affects Outlook and Teams users, with company ‘restarting’ servers",
+     "title": "Global Microsoft outage affects Outlook and Teams as company says fixes not providing ‘anticipated relief’",
      "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
@@ -5024,17 +5090,20 @@
     "outlet:Deutsche Welle",
     "outlet:Guardian Media Group",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:NDTV",
-    "google-news:Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "google-news:Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
    "top": {
-    "IN": 11
+    "IN": 19
    },
-   "top_score": 0.5,
+   "top_score": 0.1,
    "top_headlines": [
-    "Is Microsoft Outlook down? Some service starting to be restored after hourslong outage"
+    "Microsoft outage: Microsoft 365, Teams, Outlook, Copilot all impacted"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "other"
   },
@@ -5522,6 +5591,140 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261113-Q186196",
+   "qid": "Q186196",
+   "title": "Youth Olympic Games",
+   "name": "Youth Olympic Games",
+   "phrase": "Youth Olympics",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+   "story_keys": [
+    "boxing",
+    "first-ever",
+    "gold",
+    "history",
+    "lairenlakpam",
+    "script",
+    "wins"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T20:36:22+00:00",
+   "owners": [
+    "India Today Group",
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "The Hindu Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "युवा ओलम्पिक खेल",
+   "reports": [
+    {
+     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
+     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T19:32:25+00:00"
+    },
+    {
+     "title": "Ambekar, Gunjan script history with boxing gold medals at Youth Olympics",
+     "url": "https://www.thehindu.com/sport/ambekar-gunjan-script-history-with-boxing-gold-medals-at-youth-olympics/article71695389.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T20:36:22+00:00"
+    },
+    {
+     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
+     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:17:02+00:00"
+    },
+    {
+     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
+     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:25:00+00:00"
+    },
+    {
+     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
+     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:23:37+00:00"
+    },
+    {
+     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:13:19+00:00"
+    },
+    {
+     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
+     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:22:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:The Hindu Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "kh-20261113-Q1159",
    "qid": "Q1159",
    "title": "Andhra Pradesh",
@@ -5702,129 +5905,6 @@
    "hindi_owners": [
     "Network18"
    ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q186196",
-   "qid": "Q186196",
-   "title": "Youth Olympic Games",
-   "name": "Youth Olympic Games",
-   "phrase": "Youth Olympics",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-   "story_keys": [
-    "boxing",
-    "first-ever",
-    "gold",
-    "gunjan",
-    "history",
-    "lairenlakpam",
-    "script",
-    "wins"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T19:32:25+00:00",
-   "owners": [
-    "India Today Group",
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-    "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-    "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-    "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-    "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-    "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "युवा ओलम्पिक खेल",
-   "reports": [
-    {
-     "title": "Senegal’s wrestlers turn tradition into gold at Dakar Youth Olympics",
-     "url": "https://www.aljazeera.com/sports/2026/11/12/senegals-wrestlers-turn-tradition-into-gold-at-dakar-youth-olympics?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T19:32:25+00:00"
-    },
-    {
-     "title": "Youth Olympics: Boxers L Ambekar Meetei And Gunjan Clinch Gold For India, Make History",
-     "url": "https://sports.ndtv.com/boxing/youth-olympics-boxers-l-ambekar-meetei-and-gunjan-clinch-gold-for-india-make-history-ld-12319514#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T18:17:02+00:00"
-    },
-    {
-     "title": "Gunjan wins boxing gold for India at Youth Olympics with dominant 5-0 victory",
-     "url": "https://timesofindia.indiatimes.com/sports/boxing/gunjan-wins-second-boxing-gold-for-india-at-youth-olympics-with-dominant-5-0-victory-over-algerias-bensalah/articleshow/135778467.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:25:00+00:00"
-    },
-    {
-     "title": "Lairenlakpam Ambekar Meetei Scripts History With India's First-Ever Youth Olympics Boxing Gold",
-     "url": "https://sports.ndtv.com/boxing/lairenlakpam-ambekar-meetei-scripts-history-with-indias-first-ever-youth-olympics-boxing-gold-12318744#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:23:37+00:00"
-    },
-    {
-     "title": "Gunjan scripts history, joins Ambekar Meetei in India's Youth Olympics gold rush",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/gunjan-youth-olympics-historic-woman-boxing-gold-dakar-3037825-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:13:19+00:00"
-    },
-    {
-     "title": "Manipur's Lairenlakpam Ambekar Meetei wins India's first-ever Youth Olympics boxing gold",
-     "url": "https://www.indiatoday.in/sports/other-sports/story/lairenlakpam-ambekar-india-first-youth-olympics-boxing-gold-3037623-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:22:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -6181,9 +6261,9 @@
     "outlet:India Today Group"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "Hegseth entourage reprimanded by guard at Tomb of the Unknown Soldier"
    ],
