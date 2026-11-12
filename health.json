@@ -1,23 +1,22 @@
 {
- "at": "2026-11-12T14:40:53+00:00",
+ "at": "2026-11-12T14:55:44+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 144 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.124, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.0}, 'category:attack': {'n': 13, 'lift': 1.238, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
-  "untag: old marker tag taken off 0 uploads",
-  "watch: 27 candidates from 29 trending",
-  "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 0 owners reported new news on Amit Shah since its last Short; revisit kh-20261112-Q37293-update: 5 owners' new reports on Ramayana (998 views before); revisit Q9543 (932 views): 1 owners reported new news on Salman Khan since its last Short; revisit Q163225: last Short ",
-  "outlets: 1825 headlines from 48 feeds (18 owners), 14 matched to articles, 14 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 13 kh- stories (on): kh-20261112-Q37293, kh-20261112-Q163225, kh-20261112-Q182477, kh-20261112-Q9535; dropped: explainer Himesh Reshammiya's Chhath / Chhath Puja: no Wikipedia article that can be its centre; explainer Mississippi Senate: fewer than 3 owners' headlines name it and the story; explainer GWh / PLI ACC Scheme: no Wikipedia article that can be its centre",
+  "untag: HttpError: <HttpError 503 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=UUS-lEPHkz_dftfUjjeTuxOA&maxResults=50&alt=json returned \"The service is currently unavailable.\". Details: \"[{'message': 'The service is currently unavailable.', 'd",
+  "watch: 26 candidates from 28 trending",
+  "revisit Q330658 (1125 views): 1 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 0 owners reported new news on Amit Shah since its last Short; revisit kh-20261112-Q37293-update: 5 owners' new reports on Ramayana (998 views before); revisit Q9543 (932 views): 1 owners reported new news on Salman Khan since its last Short; revisit Q163225: last Short ",
+  "outlets: 1829 headlines from 48 feeds (18 owners), 15 matched to articles, 13 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-brooklyn-disaster",
+  "explainers: 11 kh- stories (on): kh-20261112-Q37293, kh-20261112-Q163225, kh-20261112-Q944085, kh-20261112-Q237847; dropped: explainer Himesh Reshammiya's Chhath / Chhath Puja: no Wikipedia article that can be its centre; explainer Mississippi Senate: fewer than 3 owners' headlines name it and the story; explainer GWh / PLI ACC Scheme: no Wikipedia article that can be its centre",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261112-Q237847: already 3 Shorts today (IST)",
-  "drop kh-20261112-Q182477: a world statement, politics or diplomacy story with no India connection",
   "hold kh-20261112-Q9570: already 3 Shorts today (IST)",
+  "hold kh-20261112-Q237847: already 3 Shorts today (IST)",
   "hold kh-20261112-Q163225-p2: already 3 Shorts today (IST)",
-  "hold kh-20261112-Q9535: already 3 Shorts today (IST)",
   "hold wp-2026_New_York_City_building_collapse: already 3 Shorts today (IST)",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261112-Q237847, kh-20261112-Q9570, wp-2026_New_York_City_building_collapse; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261112-Q9535, kh-20261112-Q944085, kh-20261112-Q7747",
+  "drop kh-20261112-Q3053437: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261112-Q305177: a world statement, politics or diplomacy story with no India connection",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261112-Q9570, kh-20261112-Q237847, wp-2026_New_York_City_building_collapse, nw-20261112-brooklyn-disaster; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261112-Q944085, kh-20261112-Q7747",
   "channel: about, playlists done; nothing left to do"
  ]
 }
