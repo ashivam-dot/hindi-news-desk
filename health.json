@@ -1,23 +1,22 @@
 {
- "at": "2026-11-12T21:00:03+00:00",
+ "at": "2026-11-12T21:14:16+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 144 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.124, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.0}, 'category:attack': {'n': 13, 'lift': 1.238, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 30 candidates from 29 trending",
+  "watch: 29 candidates from 28 trending",
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 0 owners reported new news on Amit Shah since its last Short; revisit kh-20261113-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261113-Q9543-update: 2 owners' new reports on Salman Khan (932 views before); revisit kh-20261113-Q10218-u",
-  "outlets: 1749 headlines from 48 feeds (18 owners), 23 matched to articles, 15 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-washington-dc-attack",
-  "explainers: 13 kh- stories (on): kh-20261113-Q9535, kh-20261113-Q182477, kh-20261113-Q56702420, kh-20261113-Q944085; dropped: explainer Minister Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1722 headlines from 47 feeds (18 owners), 24 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-washington-dc-attack",
+  "explainers: 12 kh- stories (on): kh-20261113-Q182477, kh-20261113-Q9535, kh-20261113-Q944085, kh-20261113-Q1661243; dropped: explainer Union Minister Piyush: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261113-Q9535: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "hold wp-2026_New_York_City_building_collapse: outside 07:00-24:00 IST",
+  "drop kh-20261113-Q182477: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q315090: 57 h old and no longer trending live",
   "hold nw-20261112-washington-dc-attack: outside 07:00-24:00 IST",
-  "drop kh-20261113-Q56702420: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261113-Q944085: too low in Google News India's top stories (place 0.25, needs 0.35)",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_New_York_City_building_collapse, nw-20261112-washington-dc-attack, kh-20261113-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261113-Q9535, kh-20261113-Q944085, kh-20261113-Q1159, kh-20261113-Q7747",
+  "drop kh-20261113-Q3053437: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261113-Q944085: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261112-washington-dc-attack, wp-2026_New_York_City_building_collapse, kh-20261113-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261113-Q9535, kh-20261113-Q944085, kh-20261113-Q1159, kh-20261113-Q7747",
   "channel: about, playlists done; nothing left to do"
  ]
 }
