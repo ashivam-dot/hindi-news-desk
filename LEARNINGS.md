@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-12T14:40:53+00:00. Scored Shorts (views at 24 h): 144. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-12T17:41:29+00:00. Scored Shorts (views at 24 h): 144. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 45 views at 24 h.
 Retention: a typical Short is watched 57.1% through; a group's retention is blended into its lift at 0.5.
@@ -25,12 +25,12 @@ Retention: a typical Short is watched 57.1% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261112-Q10218 | 2026-11-12T06:34 | news | india | naam-niyam | india | 402 | 260 |  |
-| kh-20261112-Q163225 | 2026-11-12T04:25 | news | india | naam-niyam | india | 439 | 244 |  |
-| kh-20261112-Q16909221 | 2026-11-12T01:54 | politics | india | rajneeti | india | 14 | 7 |  |
-| kh-20261111-Q37293-update | 2026-11-11T11:08 | entertainment | world | naam-niyam | india | 998 | 251 | 923 |
+| kh-20261112-Q10218 | 2026-11-12T06:34 | news | india | naam-niyam | india | 605 | 260 |  |
+| kh-20261112-Q163225 | 2026-11-12T04:25 | news | india | naam-niyam | india | 590 | 244 |  |
+| kh-20261112-Q16909221 | 2026-11-12T01:54 | politics | india | rajneeti | india | 20 | 7 |  |
+| kh-20261111-Q37293-update | 2026-11-11T11:08 | entertainment | world | naam-niyam | india | 999 | 251 | 923 |
 | kh-20261111-Q9543 | 2026-11-11T07:16 | entertainment | india | naam-niyam | india | 932 | 418 | 932 |
-| kh-20261111-Q7172014 | 2026-11-11T01:57 | news | world | other | world | 134 | 13 | 134 |
+| kh-20261111-Q7172014 | 2026-11-11T01:57 | news | world | other | world | 136 | 13 | 134 |
 | kh-20261110-Q163225 | 2026-11-10T10:16 | news | india | naam-niyam | india | 3 | 2 | 3 |
 | kh-20261110-Q1353 | 2026-11-10T05:44 | weather | india | sensitive | india | 1 | 1 | 1 |
 | kh-20261110-Q3874799 | 2026-11-10T01:45 | news | world | naam-niyam | india | 0 | 0 | 0 |
