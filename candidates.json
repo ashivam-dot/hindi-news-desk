@@ -1,5 +1,5 @@
 {
- "at": "2026-11-12T17:41:34+00:00",
+ "at": "2026-11-12T17:55:41+00:00",
  "trending": [
   {
    "qid": "Q315090",
@@ -160,6 +160,110 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261112-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "US lawmakers turn heat on Nvidia's China chips",
+   "story_keys": [
+    "chip",
+    "lawmaker"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:27:32+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "BBC",
+    "Amar Ujala"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "US lawmakers turn heat on Nvidia's China chips",
+    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
+    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
+    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन की जगह कुक को सीईओ बनाने के पक्ष में ट्रंप; क्या कहा?",
+    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:27:32+00:00"
+    },
+    {
+     "title": "US lawmakers turn heat on Nvidia's China chips",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T16:51:10+00:00"
+    },
+    {
+     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T04:22:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "outlet:Amar Ujala",
+    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
+    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "top": {
+    "IN": 17,
+    "IN-hi": 15
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_owners": [
+    "BBC",
+    "India Today Group"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261112-Q9535",
    "qid": "Q9535",
    "title": "Shah Rukh Khan",
@@ -190,8 +294,8 @@
     "ABP Group",
     "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -206,10 +310,10 @@
     "'मन्नत बजट के बाहर था', इमोशनल हुए शाहरुख खान, बताया कैसे मिला घर",
     "मन्नत में शाहरुख खान की नहीं चलती! खुद खोला घर का राज, बोले- कुछ भी बोलने की इजाजत नहीं",
     "न बाप न मां...घर भी नहीं था अपना, फिर हुआ ऐसा करिश्मा चुटकियों में बदली शाहरुख खान की किस्मत, अब इसे दिया क्रेडिट",
-    "शाहरुख खान के नाम वाले फ्लैट 50 करोड़ में बिके, दुबई में डैन्यूब के पेंटहाउस बिक्री ने तोड़े रिकॉर्ड",
-    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था"
+    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था",
+    "KING: 5-10 नहीं, शाहरुख खान की ‘किंग’ में दिखेंगे ये 20 सितारे, इन 5 किरदारों पर टिकीं सबकी नजरें"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -288,8 +392,7 @@
     "outlet:Network18",
     "outlet:DB Corp",
     "outlet:ABP Group",
-    "outlet:Amar Ujala",
-    "google-news:Shah Rukh Khan jokes he is not allowed to say anything about Gauri Khan's choices at Mannat: 'Ghar ke baa"
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
@@ -300,340 +403,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261112-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US lawmakers turn heat on Nvidia's China chips",
-   "story_keys": [
-    "chip",
-    "lawmaker"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:27:32+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US lawmakers turn heat on Nvidia's China chips",
-    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
-    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप",
-    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
-   ],
-   "hindi_news": 6,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:27:32+00:00"
-    },
-    {
-     "title": "US lawmakers turn heat on Nvidia's China chips",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:51:10+00:00"
-    },
-    {
-     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T04:22:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
-    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
-   ],
-   "top": {
-    "IN": 6,
-    "IN-hi": 15
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_owners": [
-    "BBC",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": null,
-   "title": "2026 New York City building collapse",
-   "fame": 276000,
-   "views": 0,
-   "traffic": 1000,
-   "news": 225000,
-   "news_at": "2026-11-12T13:44:53+00:00",
-   "headlines": [
-    "New York building collapse: At least 8 people dead as rescuers dig through rubble",
-    "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "Building collapse in New York leaves 8 dead"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "geos": [
-    "GB",
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:lisa maxwell",
-    "wikipedia-current-events-2026-11-11",
-    "google-news:New York building collapse: At least 8 people dead as rescuers dig through rubble",
-    "google-news:Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "NDTV",
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-     "url": "https://www.ndtv.com/world-news/brooklyn-building-collapse-death-count-in-new-york-building-collapse-rises-to-8-12317892#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:44:53+00:00"
-    },
-    {
-     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:42:27+00:00"
-    },
-    {
-     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T03:13:08+00:00"
-    },
-    {
-     "title": "Building collapse in New York leaves 8 dead",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T03:07:34+00:00"
-    }
-   ],
-   "id": "wp-2026_New_York_City_building_collapse",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-12",
-   "coords": [
-    40.639018,
-    -73.953872
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "id": "kh-20261112-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "CEO Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Nvidia CEO Jensen Huang resigns",
-   "story_keys": [
-    "nvidia",
-    "resign"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:07:56+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network",
-    "NDTV",
-    "France Médias Monde",
-    "India Today Group",
-    "Amar Ujala"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia CEO Jensen Huang resigns",
-    "Nvidia CEO Huang resigns with immediate effect",
-    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T15:46:08+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T14:40:20+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:07:56+00:00"
-    },
-    {
-     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:24:32+00:00"
-    },
-    {
-     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T14:41:26+00:00"
-    },
-    {
-     "title": "Nvidia CEO Huang resigns with immediate effect",
-     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:56:25+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261112-Q944085",
@@ -810,9 +579,9 @@
     "google-news:IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
@@ -859,15 +628,113 @@
    "lane": "other"
   },
   {
+   "qid": null,
+   "title": "2026 New York City building collapse",
+   "fame": 152000,
+   "views": 0,
+   "traffic": 2000,
+   "news": 100000,
+   "news_at": "2026-11-12T13:44:53+00:00",
+   "headlines": [
+    "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "Building collapse in New York leaves 8 dead"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "GB",
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:lisa maxwell",
+    "wikipedia-current-events-2026-11-11",
+    "google-news:Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "NDTV",
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+     "url": "https://www.ndtv.com/world-news/brooklyn-building-collapse-death-count-in-new-york-building-collapse-rises-to-8-12317892#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:44:53+00:00"
+    },
+    {
+     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:42:27+00:00"
+    },
+    {
+     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:13:08+00:00"
+    },
+    {
+     "title": "Building collapse in New York leaves 8 dead",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:07:34+00:00"
+    }
+   ],
+   "id": "wp-2026_New_York_City_building_collapse",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-12",
+   "coords": [
+    40.639018,
+    -73.953872
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-12T15:30:00+00:00",
+   "news_at": "2026-11-12T17:00:28+00:00",
    "headlines": [
-    "Longtime sports broadcaster Dan Hicks dies at age 64"
+    "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -878,7 +745,7 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Longtime sports broadcaster Dan Hicks dies at age 64"
+    "google-news:Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64"
    ],
    "owners": [],
    "reports": [],
@@ -1013,6 +880,208 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261112-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "CEO Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Nvidia CEO Jensen Huang resigns",
+   "story_keys": [
+    "nvidia",
+    "resign"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:07:56+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "NDTV",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia CEO Jensen Huang resigns",
+    "Nvidia CEO Huang resigns with immediate effect",
+    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T15:46:08+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T14:40:20+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:07:56+00:00"
+    },
+    {
+     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T16:24:32+00:00"
+    },
+    {
+     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:41:26+00:00"
+    },
+    {
+     "title": "Nvidia CEO Huang resigns with immediate effect",
+     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:56:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:NDTV",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
+  },
+  {
+   "id": "nw-20261112-washington-dc-attack",
+   "qid": null,
+   "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+   "name": "Washington DC",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:42:35+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "Guardian Media Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+    "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+    "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+     "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T17:42:35+00:00"
+    },
+    {
+     "title": "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+     "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:21:31+00:00"
+    },
+    {
+     "title": "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-shooting-4-people-shot-in-neighbourhood-near-white-house-area-cordoned-off/articleshow/135772622.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:02:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:Guardian Media Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
+   ],
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261112-Q3053437",
@@ -1860,134 +1929,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261112-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "CEO Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Nvidia CEO Jensen Huang resigns",
-   "story_keys": [
-    "nvidia",
-    "resign"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:07:56+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network",
-    "NDTV",
-    "France Médias Monde",
-    "India Today Group",
-    "Amar Ujala"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia CEO Jensen Huang resigns",
-    "Nvidia CEO Huang resigns with immediate effect",
-    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T15:46:08+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T14:40:20+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:07:56+00:00"
-    },
-    {
-     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:24:32+00:00"
-    },
-    {
-     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T14:41:26+00:00"
-    },
-    {
-     "title": "Nvidia CEO Huang resigns with immediate effect",
-     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:56:25+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
    "id": "kh-20261112-Q9535",
    "qid": "Q9535",
    "title": "Shah Rukh Khan",
@@ -2018,8 +1959,8 @@
     "ABP Group",
     "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2034,10 +1975,10 @@
     "'मन्नत बजट के बाहर था', इमोशनल हुए शाहरुख खान, बताया कैसे मिला घर",
     "मन्नत में शाहरुख खान की नहीं चलती! खुद खोला घर का राज, बोले- कुछ भी बोलने की इजाजत नहीं",
     "न बाप न मां...घर भी नहीं था अपना, फिर हुआ ऐसा करिश्मा चुटकियों में बदली शाहरुख खान की किस्मत, अब इसे दिया क्रेडिट",
-    "शाहरुख खान के नाम वाले फ्लैट 50 करोड़ में बिके, दुबई में डैन्यूब के पेंटहाउस बिक्री ने तोड़े रिकॉर्ड",
-    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था"
+    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था",
+    "KING: 5-10 नहीं, शाहरुख खान की ‘किंग’ में दिखेंगे ये 20 सितारे, इन 5 किरदारों पर टिकीं सबकी नजरें"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -2116,8 +2057,7 @@
     "outlet:Network18",
     "outlet:DB Corp",
     "outlet:ABP Group",
-    "outlet:Amar Ujala",
-    "google-news:Shah Rukh Khan jokes he is not allowed to say anything about Gauri Khan's choices at Mannat: 'Ghar ke baa"
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
@@ -2128,113 +2068,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261112-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US lawmakers turn heat on Nvidia's China chips",
-   "story_keys": [
-    "chip",
-    "lawmaker"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:27:32+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US lawmakers turn heat on Nvidia's China chips",
-    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
-    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप",
-    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
-   ],
-   "hindi_news": 6,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:27:32+00:00"
-    },
-    {
-     "title": "US lawmakers turn heat on Nvidia's China chips",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:51:10+00:00"
-    },
-    {
-     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T04:22:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
-    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
-   ],
-   "top": {
-    "IN": 6,
-    "IN-hi": 15
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_owners": [
-    "BBC",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261112-Q1661243",
@@ -2318,9 +2151,9 @@
     "google-news:IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
@@ -2329,103 +2162,108 @@
    "lane": "other"
   },
   {
-   "qid": null,
-   "title": "2026 New York City building collapse",
-   "fame": 276000,
-   "views": 0,
-   "traffic": 1000,
-   "news": 225000,
-   "news_at": "2026-11-12T13:44:53+00:00",
-   "headlines": [
-    "New York building collapse: At least 8 people dead as rescuers dig through rubble",
-    "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-    "Building collapse in New York leaves 8 dead"
+   "id": "kh-20261112-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "US lawmakers turn heat on Nvidia's China chips",
+   "story_keys": [
+    "chip",
+    "lawmaker"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:27:32+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "BBC",
+    "Amar Ujala"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "US lawmakers turn heat on Nvidia's China chips",
+    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
+    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
+    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन की जगह कुक को सीईओ बनाने के पक्ष में ट्रंप; क्या कहा?",
+    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
+   ],
+   "hindi_news": 6,
+   "geos": [],
    "region": "world",
    "india_link": true,
-   "geos": [
-    "GB",
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:lisa maxwell",
-    "wikipedia-current-events-2026-11-11",
-    "google-news:New York building collapse: At least 8 people dead as rescuers dig through rubble",
-    "google-news:Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "NDTV",
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
+   "abroad": true,
+   "label_hi": "एनवीडिया",
    "reports": [
     {
-     "title": "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
-     "url": "https://www.ndtv.com/world-news/brooklyn-building-collapse-death-count-in-new-york-building-collapse-rises-to-8-12317892#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:44:53+00:00"
-    },
-    {
-     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T12:42:27+00:00"
+     "at": "2026-11-12T17:27:32+00:00"
     },
     {
-     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
-     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T03:13:08+00:00"
-    },
-    {
-     "title": "Building collapse in New York leaves 8 dead",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
+     "title": "US lawmakers turn heat on Nvidia's China chips",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
      "outlet": "The Economic Times",
      "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T03:07:34+00:00"
+     "at": "2026-11-12T16:51:10+00:00"
+    },
+    {
+     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T04:22:52+00:00"
     }
    ],
-   "id": "wp-2026_New_York_City_building_collapse",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-12",
-   "coords": [
-    40.639018,
-    -73.953872
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "outlet:Amar Ujala",
+    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
+    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
+   "top": {
+    "IN": 17,
+    "IN-hi": 15
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_owners": [
+    "BBC",
+    "India Today Group"
+   ],
    "audience": "india",
-   "lane": "breaking"
+   "lane": "other"
   },
   {
    "qid": "Q315090",
@@ -2764,15 +2602,315 @@
    "lane": "paisa"
   },
   {
+   "id": "kh-20261112-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "CEO Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Nvidia CEO Jensen Huang resigns",
+   "story_keys": [
+    "nvidia",
+    "resign"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:07:56+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "NDTV",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia CEO Jensen Huang resigns",
+    "Nvidia CEO Huang resigns with immediate effect",
+    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T15:46:08+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T14:40:20+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:07:56+00:00"
+    },
+    {
+     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T16:24:32+00:00"
+    },
+    {
+     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:41:26+00:00"
+    },
+    {
+     "title": "Nvidia CEO Huang resigns with immediate effect",
+     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:56:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:NDTV",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
+  },
+  {
+   "qid": null,
+   "title": "2026 New York City building collapse",
+   "fame": 152000,
+   "views": 0,
+   "traffic": 2000,
+   "news": 100000,
+   "news_at": "2026-11-12T13:44:53+00:00",
+   "headlines": [
+    "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+    "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "Building collapse in New York leaves 8 dead"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "GB",
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:lisa maxwell",
+    "wikipedia-current-events-2026-11-11",
+    "google-news:Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+    "google-news:Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "NDTV",
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Brooklyn Building Collapse: 8 Dead In New York, Pregnant Woman Rescued From Rubble",
+     "url": "https://www.ndtv.com/world-news/brooklyn-building-collapse-death-count-in-new-york-building-collapse-rises-to-8-12317892#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:44:53+00:00"
+    },
+    {
+     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:42:27+00:00"
+    },
+    {
+     "title": "Indian-American astronaut Sunita Williams honoured as Grand Marshal of New York Veterans Parade",
+     "url": "https://www.hindustantimes.com/india-news/indian-american-astronaut-sunita-williams-honoured-as-grand-marshal-of-new-york-veterans-parade-101794452783863.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:13:08+00:00"
+    },
+    {
+     "title": "Building collapse in New York leaves 8 dead",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/building-collapse-in-brooklyn-kills-at-least-two-injures-more-than-10/articleshow/135753317.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T03:07:34+00:00"
+    }
+   ],
+   "id": "wp-2026_New_York_City_building_collapse",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-12",
+   "coords": [
+    40.639018,
+    -73.953872
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "breaking"
+  },
+  {
+   "id": "nw-20261112-washington-dc-attack",
+   "qid": null,
+   "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+   "name": "Washington DC",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:42:35+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "Guardian Media Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+    "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+    "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+     "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T17:42:35+00:00"
+    },
+    {
+     "title": "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+     "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:21:31+00:00"
+    },
+    {
+     "title": "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-shooting-4-people-shot-in-neighbourhood-near-white-house-area-cordoned-off/articleshow/135772622.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:02:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:Guardian Media Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
+   ],
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "world",
+   "lane": "sensitive"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 125000,
    "views": 0,
    "traffic": 0,
    "news": 125000,
-   "news_at": "2026-11-12T15:30:00+00:00",
+   "news_at": "2026-11-12T17:00:28+00:00",
    "headlines": [
-    "Longtime sports broadcaster Dan Hicks dies at age 64"
+    "Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -2783,7 +2921,7 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Longtime sports broadcaster Dan Hicks dies at age 64"
+    "google-news:Dan Hicks, legendary NBC Sports and golf announcer, dies at age 64"
    ],
    "owners": [],
    "reports": [],
@@ -3995,8 +4133,8 @@
  ],
  "notes": [
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 1 owners reported new news on Amit Shah since its last Short; revisit kh-20261112-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261112-Q9543-update: 3 owners' new reports on Salman Khan (932 views before); revisit Q10218: last Short 1",
-  "outlets: 1818 headlines from 48 feeds (18 owners), 13 matched to articles, 13 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 12 kh- stories (on): kh-20261112-Q37293, kh-20261112-Q9535, kh-20261112-Q182477, kh-20261112-Q305177; dropped: explainer U- Asia Cup: fewer than 3 owners' headlines name it and the story; explainer Delimitation Bill Congress: no Wikipedia article that can be its centre; explainer Minister Piyush Goyal: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1817 headlines from 48 feeds (18 owners), 11 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-washington-dc-attack",
+  "explainers: 12 kh- stories (on): kh-20261112-Q37293, kh-20261112-Q182477, kh-20261112-Q9535, kh-20261112-Q944085; dropped: explainer U- Asia Cup: fewer than 3 owners' headlines name it and the story; explainer Delimitation Bill Congress: no Wikipedia article that can be its centre; explainer Union Minister Piyush: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -4004,13 +4142,97 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1818,
+  "headlines": 1817,
   "feeds": 48,
   "owners": 18,
-  "matched": 13,
-  "corroborated": 13
+  "matched": 11,
+  "corroborated": 14
  },
- "emerging": [],
+ "emerging": [
+  {
+   "id": "nw-20261112-washington-dc-attack",
+   "qid": null,
+   "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+   "name": "Washington DC",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:42:35+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "Guardian Media Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+    "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+    "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "world"
+   ],
+   "region": "world",
+   "india_link": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Suspect in Washington DC gym shooting dead by suicide as four people injured and one dead",
+     "url": "https://www.theguardian.com/us-news/2026/nov/12/dc-shooting-logan-circle",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T17:42:35+00:00"
+    },
+    {
+     "title": "Washington DC shooting: Five people shot near White House, 1 killed; police hunt suspect",
+     "url": "https://www.livemint.com/news/us-news/washington-dc-shooting-five-people-shot-near-white-house-1-killed-police-hunt-suspect-11794496486832.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:21:31+00:00"
+    },
+    {
+     "title": "At least 1 dead, 4 hurt in firing near White House; gunman shoots self",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-shooting-4-people-shot-in-neighbourhood-near-white-house-area-cordoned-off/articleshow/135772622.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:02:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:Guardian Media Group"
+   ],
+   "emerging": true,
+   "article": null,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Man Kills 1, Injures 4 Near White House, Then Shoots Self"
+   ],
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "world",
+   "lane": "sensitive"
+  }
+ ],
  "explainers": [
   {
    "id": "kh-20261112-Q37293",
@@ -4140,6 +4362,110 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261112-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "US lawmakers turn heat on Nvidia's China chips",
+   "story_keys": [
+    "chip",
+    "lawmaker"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:27:32+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "BBC",
+    "Amar Ujala"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "US lawmakers turn heat on Nvidia's China chips",
+    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
+    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
+    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन की जगह कुक को सीईओ बनाने के पक्ष में ट्रंप; क्या कहा?",
+    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:27:32+00:00"
+    },
+    {
+     "title": "US lawmakers turn heat on Nvidia's China chips",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T16:51:10+00:00"
+    },
+    {
+     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
+     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T04:22:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "outlet:Amar Ujala",
+    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
+    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "top": {
+    "IN": 17,
+    "IN-hi": 15
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
+   ],
+   "hindi_owners": [
+    "BBC",
+    "India Today Group"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261112-Q9535",
    "qid": "Q9535",
    "title": "Shah Rukh Khan",
@@ -4170,8 +4496,8 @@
     "ABP Group",
     "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4186,10 +4512,10 @@
     "'मन्नत बजट के बाहर था', इमोशनल हुए शाहरुख खान, बताया कैसे मिला घर",
     "मन्नत में शाहरुख खान की नहीं चलती! खुद खोला घर का राज, बोले- कुछ भी बोलने की इजाजत नहीं",
     "न बाप न मां...घर भी नहीं था अपना, फिर हुआ ऐसा करिश्मा चुटकियों में बदली शाहरुख खान की किस्मत, अब इसे दिया क्रेडिट",
-    "शाहरुख खान के नाम वाले फ्लैट 50 करोड़ में बिके, दुबई में डैन्यूब के पेंटहाउस बिक्री ने तोड़े रिकॉर्ड",
-    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था"
+    "दुबई इवेंट में भावुक हुए शाहरुख खान:बोले- माता-पिता को खोने के बाद घर बनाना सबसे बड़ा सपना था, मन्नत बजट से बाहर था",
+    "KING: 5-10 नहीं, शाहरुख खान की ‘किंग’ में दिखेंगे ये 20 सितारे, इन 5 किरदारों पर टिकीं सबकी नजरें"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -4268,8 +4594,7 @@
     "outlet:Network18",
     "outlet:DB Corp",
     "outlet:ABP Group",
-    "outlet:Amar Ujala",
-    "google-news:Shah Rukh Khan jokes he is not allowed to say anything about Gauri Khan's choices at Mannat: 'Ghar ke baa"
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
@@ -4280,241 +4605,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261112-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US lawmakers turn heat on Nvidia's China chips",
-   "story_keys": [
-    "chip",
-    "lawmaker"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:27:32+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US lawmakers turn heat on Nvidia's China chips",
-    "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
-    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें",
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप",
-    "'मुझे तो कोई जासूस लड़की मिली ही नहीं': एनवीडिया विवाद पर टेलीग्राम के मालिक ने ली चुटकी; हुआंग पर क्या कहा?"
-   ],
-   "hindi_news": 6,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Jensen Huang, who quit as Nvidia CEO, to testify before Congress: US lawmaker",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-who-quit-as-nvidia-ceo-agrees-to-testify-before-congress-says-trumps-party-leader-3037835-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:27:32+00:00"
-    },
-    {
-     "title": "US lawmakers turn heat on Nvidia's China chips",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-lawmakers-to-probe-trump-administrations-nvidia-chip-exports-to-china/articleshow/135777460.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:51:10+00:00"
-    },
-    {
-     "title": "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-     "url": "https://www.thehindu.com/sci-tech/technology/military-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-records-show/article71692215.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T04:22:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "google-news:\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss",
-    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
-   ],
-   "top": {
-    "IN": 6,
-    "IN-hi": 15
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns amid spy scandal",
-    "\"Only One Man\": Trump Pitches For Apple's Tim Cook As Next Nvidia Boss"
-   ],
-   "hindi_owners": [
-    "BBC",
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261112-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "CEO Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Nvidia CEO Jensen Huang resigns",
-   "story_keys": [
-    "nvidia",
-    "resign"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-12T17:07:56+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network",
-    "NDTV",
-    "France Médias Monde",
-    "India Today Group",
-    "Amar Ujala"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia CEO Jensen Huang resigns",
-    "Nvidia CEO Huang resigns with immediate effect",
-    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के शेयर 13% तक गिरे, फिर 5% पर संभले: जेन्सन हुआंग की जगह टिम कुक को सीईओ बनाने के पक्ष में ट्रंप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
-     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T15:46:08+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T14:40:20+00:00"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:07:56+00:00"
-    },
-    {
-     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
-     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T16:24:32+00:00"
-    },
-    {
-     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
-     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T14:41:26+00:00"
-    },
-    {
-     "title": "Nvidia CEO Huang resigns with immediate effect",
-     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:56:25+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group",
-    "outlet:Amar Ujala",
-    "google-news:Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns amid spy scandal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261112-Q944085",
@@ -4691,9 +4781,9 @@
     "google-news:IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 7
    },
-   "top_score": 0.39,
+   "top_score": 0.42,
    "top_headlines": [
     "IIT Kharagpur becomes first IIT to introduce postgraduate medical courses"
    ],
@@ -4821,6 +4911,125 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261112-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "CEO Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Nvidia CEO Jensen Huang resigns",
+   "story_keys": [
+    "nvidia",
+    "resign"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-12T17:07:56+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "NDTV",
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia CEO Jensen Huang resigns",
+    "Nvidia CEO Huang resigns with immediate effect",
+    "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+    "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+    "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+    "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Nvidia CEO Jensen Huang resigns after revelations on extramarital affairs",
+     "url": "https://www.france24.com/en/video/20261112-nvidia-ceo-jensen-huang-resigns-after-revelations-on-extramarital-affairs",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T15:46:08+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T14:40:20+00:00"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns amid controversies and investigations into security and export issues",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-investigations-ytvd-3037820-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:07:56+00:00"
+    },
+    {
+     "title": "Nvidia Shares Slump 13% After Jensen Huang Resigns As CEO",
+     "url": "https://www.ndtv.com/world-news/nvidia-shares-slump-13-after-jensen-huang-resigns-as-ceo-12319133#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T16:24:32+00:00"
+    },
+    {
+     "title": "'Initiating Search For Permanent CEO': Nvidia Statement On Jensen Huang Exit",
+     "url": "https://www.ndtv.com/world-news/read-nvidias-full-statement-replacing-ceo-jensen-huang-amid-spy-affair-row-12318406#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T14:41:26+00:00"
+    },
+    {
+     "title": "Nvidia CEO Huang resigns with immediate effect",
+     "url": "https://economictimes.indiatimes.com/tech/technology/nvidia-ceo-jensen-huang-resigns-colette-kress-appointed-interim-ceo/articleshow/135772332.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:56:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:NDTV",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261112-Q3053437",
