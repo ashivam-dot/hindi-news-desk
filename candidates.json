@@ -1,41 +1,284 @@
 {
- "at": "2026-11-13T05:28:28+00:00",
+ "at": "2026-11-13T05:43:49+00:00",
  "trending": [
   {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 499893,
-   "views": 374893,
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+   "story_keys": [
+    "affair",
+    "resign",
+    "scandal",
+    "surface",
+    "third"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T05:33:17+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "India Today Group",
+    "France Médias Monde",
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "Amar Ujala",
+    "DB Corp",
+    "BBC"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
    "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+    "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
+    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "Jensen Huang had a third affair with another Nvidia employee: Report",
+    "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
+   "hindi_headlines": [
+    "'मैं बहुत घटिया इंसान हूं': इस्तीफे से पहले जेनसन ने क्यों कही थी ये बात; एनवीडिया सीईओ की रेस में कौन-कौन?",
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
+    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें"
+   ],
+   "hindi_news": 6,
+   "geos": [],
    "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:10:28+00:00"
+    },
+    {
+     "title": "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
+     "url": "https://www.theguardian.com/world/2026/nov/12/thursday-briefing-what-we-do-and-dont-know-about-alice-huang-and-the-nvidia-affair",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T06:43:31+00:00"
+    },
+    {
+     "title": "A third extramarital affair emerges after Jensen Huang resigns as NVIDIA CEO",
+     "url": "https://www.indiatoday.in/technology/video/third-extramarital-affair-emerges-after-former-nvidia-ceo-jensen-huang-resigns-ytvd-3037956-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:33:17+00:00"
+    },
+    {
+     "title": "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO",
+     "url": "https://www.ndtv.com/world-news/exclusive-former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say-12319696#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:15:42+00:00"
+    },
+    {
+     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
+     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:31:06+00:00"
+    },
+    {
+     "title": "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-scandal-white-house-weighs-ouster-of-top-trump-aide-over-china-chip-exports/articleshow/135786410.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:11:33+00:00"
+    },
+    {
+     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:50:52+00:00"
+    }
    ],
-   "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "outlet:Guardian Media Group",
+    "outlet:India Today Group",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "outlet:DB Corp",
+    "outlet:BBC",
+    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "top": {
+    "IN": 4,
+    "IN-hi": 16
+   },
+   "top_score": 0.975,
+   "top_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q3524804",
+   "qid": "Q3524804",
+   "title": "Usman Khawaja",
+   "name": "Usman Khawaja",
+   "phrase": "Khawaja",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+   "story_keys": [
+    "bus",
+    "captain",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T04:33:57+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "India Today Group",
+    "Network18",
+    "Amar Ujala",
+    "BBC",
+    "TV9 Network"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
+    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+   ],
+   "hindi_headlines": [
+    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
+    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
+    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
+    "सैंडपेपर विवाद: उस्मान ख्वाजा के आरोपों पर कल जवाब देंगे कमिंस; उससे पहले पत्नी से क्यों भिड़े? वीडियो वायरल"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "उस्मान ख़्वाजा",
+   "reports": [
+    {
+     "title": "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
+     "url": "https://www.indiatoday.in/sports/cricket/story/david-warner-backs-usman-khawaja-criticises-pat-cummins-sandpapergate-claims-3037933-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:33:57+00:00"
+    },
+    {
+     "title": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+     "url": "https://sports.ndtv.com/cricket/david-warner-blasts-pat-cummins-captain-threw-usman-khawaja-under-the-bus-12320451#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:17:17+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Amar Ujala",
+    "outlet:BBC",
+    "outlet:TV9 Network",
+    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'",
+    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "Amar Ujala",
+    "BBC",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261113-Q37293",
@@ -66,11 +309,11 @@
     "HT Media",
     "NDTV",
     "India Today Group",
+    "Amar Ujala",
     "Network18",
     "TV9 Network",
-    "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
+    "ABP Group",
+    "DB Corp"
    ],
    "fame": 400000,
    "news": 400000,
@@ -85,13 +328,13 @@
     "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal"
    ],
    "hindi_headlines": [
+    "रामायण बॉक्स ऑफिस कलेक्शन: आठवें दिन तोड़ा 'स्पाइडरमैन' का रिकॉर्ड, जानें 'धुरंधर 2' की कमाई से कितना पीछे?",
     "'रामायण' की सफलता से गदगद हुए लक्ष्मण, रणबीर-साई के साथ शेयर कीं BTS तस्वीरें, बोले- हजार वजहें हैं खुश होने की",
     "‘रामायण’ के सेट पर क्यों रोने लगी थीं सीता बनीं साई पल्लवी? अब किया बड़ा खुलासा",
     "बॉक्स ऑफिस 'रामायण' की कमाई में आई 24% की गिरावट, 8 दिन में दुनियाभर में छापे 1033 करोड़",
-    "Ramayana Box Office: 1000 करोड़ कमाने वाली देश की 11वीं फिल्म बनी रामायण, सिर्फ 8 दिन में बजरंगी भाईजान-एनिमल का खेल तमाम",
-    "'रामायण' में 70% सेट और 30% VFX, कहीं असली तो कहीं नकली, 3 साल में तैयार हुई 4000 करोड़ी फिल्म की भव्य दुनिया"
+    "Ramayana Box Office: 1000 करोड़ कमाने वाली देश की 11वीं फिल्म बनी रामायण, सिर्फ 8 दिन में बजरंगी भाईजान-एनिमल का खेल तमाम"
    ],
-   "hindi_news": 35,
+   "hindi_news": 40,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -183,12 +426,13 @@
     "outlet:HT Media",
     "outlet:NDTV",
     "outlet:India Today Group",
+    "outlet:Amar Ujala",
     "outlet:Network18",
     "outlet:TV9 Network",
-    "outlet:Amar Ujala",
-    "outlet:DB Corp",
     "outlet:ABP Group",
+    "outlet:DB Corp",
     "google-news:Ramayana Part 1 Box Office Collection Day 7: Ranbir Kapoor film crosses Rs 1000 cr worldwide, inches away from surpassing Dhurandhar 2",
+    "google-news:Lara Dutta defends Sai Pallavi's warrior Sita in Ramayana amid backlash, asks critics to stop being ‘small-minded’ | Bollywood",
     "google-news:'रामायण' को भाई दूज का मिला फायदा, 7वें दिन भारत में 511.10 करोड़ पार, दुनियाभर में छापे 934.55 करोड़"
    ],
    "top": {
@@ -199,273 +443,209 @@
     "'रामायण' को भाई दूज का मिला फायदा, 7वें दिन भारत में 511.10 करोड़ पार, दुनियाभर में छापे 934.55 करोड़"
    ],
    "hindi_owners": [
+    "Amar Ujala",
     "Network18",
     "TV9 Network",
-    "Amar Ujala",
     "NDTV"
    ]
   },
   {
-   "id": "kh-20261113-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 374893,
+   "views": 374893,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
    "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
    "story_keys": [
-    "affair",
-    "jensen",
-    "scandal",
-    "surface",
-    "third"
+    "countrie",
+    "disrupt",
+    "down",
+    "hits",
+    "major",
+    "outage",
+    "service"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T03:15:42+00:00",
+   "news_at": "2026-11-13T05:34:16+00:00",
    "owners": [
-    "Guardian Media Group",
-    "India Today Group",
-    "France Médias Monde",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "DB Corp",
-    "BBC"
-   ],
-   "fame": 375000,
-   "news": 375000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-    "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
-    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
-    "Jensen Huang had a third affair with another Nvidia employee: Report",
-    "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
-    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें"
-   ],
-   "hindi_news": 5,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T22:10:28+00:00"
-    },
-    {
-     "title": "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
-     "url": "https://www.theguardian.com/world/2026/nov/12/thursday-briefing-what-we-do-and-dont-know-about-alice-huang-and-the-nvidia-affair",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T06:43:31+00:00"
-    },
-    {
-     "title": "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO",
-     "url": "https://www.ndtv.com/world-news/exclusive-former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say-12319696#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:15:42+00:00"
-    },
-    {
-     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
-     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:31:06+00:00"
-    },
-    {
-     "title": "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-scandal-white-house-weighs-ouster-of-top-trump-aide-over-china-chip-exports/articleshow/135786410.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:11:33+00:00"
-    },
-    {
-     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:50:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:DB Corp",
-    "outlet:BBC",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
-   ],
-   "top": {
-    "IN": 5,
-    "IN-hi": 15
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "White House Is Discussing Howard Lutnicks Future As Commerce Secretary - Sources Citing People Familiar"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q3524804",
-   "qid": "Q3524804",
-   "title": "Usman Khawaja",
-   "name": "Usman Khawaja",
-   "phrase": "Khawaja",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-   "story_keys": [
-    "bus",
-    "captain",
-    "threw",
-    "under"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T04:33:57+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "NDTV",
     "India Today Group",
-    "Network18",
-    "Amar Ujala",
-    "BBC",
-    "TV9 Network"
+    "The Hindu Group",
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "TV9 Network",
+    "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-    "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
-    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+    "Microsoft Outlook down today?",
+    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
+    "Widespread outage hits Microsoft apps",
+    "Major Microsoft Outlook outage disrupts services in 74 countries",
+    "Microsoft works to restore Outlook and Teams after global outage"
    ],
    "hindi_headlines": [
-    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
-    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
-    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "सैंडपेपर विवाद: उस्मान ख्वाजा के आरोपों पर कल जवाब देंगे कमिंस; उससे पहले पत्नी से क्यों भिड़े? वीडियो वायरल"
+    "माइक्रोसॉफ्ट सर्वर डाउन: दुनियाभर में कामकाज ठप, यूजर्स परेशान",
+    "माइक्रोसॉफ्ट आउटेज का बड़ा असर: अकेले आउटलुक की 1.50 लाख से अधिक शिकायतें, क्या एआई टूल्स पर भी पड़ा कोई असर?",
+    "माइक्रोसॉफ्ट की सेवाएं हुईं ठप: Outlook से Teams तक मचा हड़कंप, आखिर क्या थी अचानक आई तकनीकी खराबी की वजह?",
+    "11 घंटे से नहीं चल रहा माइक्रोसॉफ्ट, क्यों ठप हो जाता है क्लाउड सर्वर",
+    "माइक्रोसॉफ्ट 10 घंटे से डाउन, ईमेल ओपन नहीं हो रहा, भारत समेत दुनियाभर के करोड़ों यूजर्स परेशान"
    ],
    "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
-   "label_hi": "उस्मान ख़्वाजा",
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
-     "url": "https://www.indiatoday.in/sports/cricket/story/david-warner-backs-usman-khawaja-criticises-pat-cummins-sandpapergate-claims-3037933-2026-11-13?utm_source=rss",
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:51:00+00:00"
+    },
+    {
+     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
+     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:44:22+00:00"
+    },
+    {
+     "title": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:40:14+00:00"
+    },
+    {
+     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:24:26+00:00"
+    },
+    {
+     "title": "Microsoft 365 global outage disrupts Outlook and Teams across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/major-microsoft-365-outage-disrupts-outlook-and-teams-services-globally-ytvd-3037959-2026-11-13?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:33:57+00:00"
+     "at": "2026-11-13T05:34:16+00:00"
     },
     {
-     "title": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-     "url": "https://sports.ndtv.com/cricket/david-warner-blasts-pat-cummins-captain-threw-usman-khawaja-under-the-bus-12320451#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Microsoft Outlook outage: When will it resume?",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:17:17+00:00"
+     "at": "2026-11-13T04:10:03+00:00"
     },
     {
-     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "title": "Widespread outage hits Microsoft apps",
+     "url": "https://www.thehindu.com/sci-tech/technology/internet/widespread-outage-hits-microsoft-apps/article71695400.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:15:45+00:00"
+     "at": "2026-11-13T01:46:34+00:00"
     },
     {
-     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T03:34:50+00:00"
+     "at": "2026-11-13T01:30:11+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "outlet:BBC",
+    "outlet:The Hindu Group",
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
     "outlet:TV9 Network",
-    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "outlet:Amar Ujala"
    ],
    "top": {
-    "IN": 11
+    "IN": 5
    },
-   "top_score": 0.5,
+   "top_score": 0.8,
    "top_headlines": [
-    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "Outlook email outage affects users around the world"
    ],
    "hindi_owners": [
-    "Network18",
+    "TV9 Network",
     "Amar Ujala",
-    "BBC",
-    "TV9 Network"
+    "India Today Group",
+    "NDTV"
    ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q944085",
@@ -479,17 +659,14 @@
    "category_hi": "अर्थव्यवस्था",
    "story": "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
    "story_keys": [
-    "breache",
     "crosse",
     "inflation",
     "limit",
     "retail",
-    "tolerance",
-    "two",
     "upper"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-12T21:33:14+00:00",
+   "news_at": "2026-11-12T15:24:17+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -503,7 +680,6 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "India's inflation breaches RBI's red line in October",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
-    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_headlines": [],
@@ -516,16 +692,6 @@
    "abroad": false,
    "label_hi": "रिज़र्व बैंक",
    "reports": [
-    {
-     "title": "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/at-6-09-retail-inflation-breaches-rbis-upper-tolerance-limit-after-two-years/articleshow/135782584.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T21:33:14+00:00"
-    },
     {
      "title": "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
      "url": "https://www.thehindu.com/business/Economy/retail-inflation-crosses-rbis-upper-limit-for-first-time-in-two-years-comes-in-at-61-in-october-2026/article71693503.ece",
@@ -564,115 +730,15 @@
     "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-   "story_keys": [
-    "ceo",
-    "exit",
-    "jensen"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:17:02+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-    "Jensen Huang exits Nvidia: What it means for the AI market, investors",
-    "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
-    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
-     "url": "https://www.ndtv.com/world-news/nvidia-news-jensen-huang-forfeits-108-million-in-unvested-nvidia-equity-after-exit-12320488#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:17:02+00:00"
-    },
-    {
-     "title": "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
-     "url": "https://www.ndtv.com/world-news/ex-nvidia-ceo-jensen-huang-to-testify-in-congress-over-alleged-ties-to-woman-with-suspected-chinese-spy-links-12320012#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:37:12+00:00"
-    },
-    {
-     "title": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-     "url": "https://www.news18.com/videos/india/nvidia-crisis-michael-owens-on-jensen-huang-s-nvidia-exit-why-ai-has-lost-more-than-a-ceo-news18-10423740.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T18:44:27+00:00"
-    },
-    {
-     "title": "Jensen Huang exits Nvidia: What it means for the AI market, investors",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huang-exits-nvidia-what-it-means-for-the-ai-market-investors/articleshow/135774363.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T15:13:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": "Q5213677",
@@ -704,145 +770,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q80911",
-   "qid": "Q80911",
-   "title": "Microsoft Outlook",
-   "name": "Microsoft Outlook",
-   "phrase": "Microsoft Outlook",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-   "story_keys": [
-    "down",
-    "hits",
-    "major",
-    "outage",
-    "service"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:40:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group",
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-    "Microsoft Outlook down today?",
-    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-    "Major Microsoft Outlook outage disrupts services in 74 countries",
-    "Microsoft works to restore Outlook and Teams after global outage",
-    "Microsoft Outlook outage: When will it resume?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "माइक्रोसॉफ्ट आउटलुक",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:51:00+00:00"
-    },
-    {
-     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
-     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:44:22+00:00"
-    },
-    {
-     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:24:26+00:00"
-    },
-    {
-     "title": "Microsoft Outlook outage: When will it resume?",
-     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:10:03+00:00"
-    },
-    {
-     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:30:11+00:00"
-    },
-    {
-     "title": "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-     "url": "https://www.ndtv.com/world-news/is-outlook-down-widespread-outage-hits-microsoft-apps-12319777#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:28:46+00:00"
-    },
-    {
-     "title": "Microsoft Outlook down today?",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outlook-down-today-downdetector-reports-surge-as-north-and-south-american-users-face-email-access-problems/articleshow/135781142.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:07:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Outlook email outage: Microsoft continuing to work on problem",
-    "Stock market outlook today, 13 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": "Q315090",
@@ -1324,6 +1251,104 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+   "story_keys": [
+    "ceo",
+    "exit",
+    "jensen"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T04:17:02+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+    "Jensen Huang exits Nvidia: What it means for the AI market, investors",
+    "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
+    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
+     "url": "https://www.ndtv.com/world-news/nvidia-news-jensen-huang-forfeits-108-million-in-unvested-nvidia-equity-after-exit-12320488#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:17:02+00:00"
+    },
+    {
+     "title": "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
+     "url": "https://www.ndtv.com/world-news/ex-nvidia-ceo-jensen-huang-to-testify-in-congress-over-alleged-ties-to-woman-with-suspected-chinese-spy-links-12320012#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:37:12+00:00"
+    },
+    {
+     "title": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+     "url": "https://www.news18.com/videos/india/nvidia-crisis-michael-owens-on-jensen-huang-s-nvidia-exit-why-ai-has-lost-more-than-a-ceo-news18-10423740.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:44:27+00:00"
+    },
+    {
+     "title": "Jensen Huang exits Nvidia: What it means for the AI market, investors",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huang-exits-nvidia-what-it-means-for-the-ai-market-investors/articleshow/135774363.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:13:18+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 50000,
@@ -1448,53 +1473,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q4795757",
-   "title": "Arpita Singh",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-12T13:54:32+00:00",
-   "headlines": [
-    "From the India Today archives (1988) | Arpita Singh and the new era of artists"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "अर्पिता सिंह",
-   "via": [
-    "google-news:From the India Today archives (1988) | Arpita Singh and the new era of artists",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "From the India Today archives (1988) | Arpita Singh and the new era of artists",
-     "url": "https://www.indiatoday.in/india-today-insight/story/from-the-india-today-archives-1988-arpita-singh-and-the-new-era-of-artists-3037621-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:54:32+00:00"
-    }
-   ],
-   "id": "wk-Q4795757",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q142077465",
    "title": "2026 Kraków shooting",
    "fame": 22837,
@@ -1589,157 +1567,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q114079679",
-   "title": "Solange Alexandre",
-   "fame": 11379,
-   "views": 11379,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q114079679",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-08",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6662427",
-   "title": "Lloyd Geering",
-   "fame": 11145,
-   "views": 11145,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6662427",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-05",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q18613657",
-   "title": "Alexander Darchiev",
-   "fame": 9579,
-   "views": 9579,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q18613657",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q7308546",
-   "title": "Regina Torné",
-   "fame": 9120,
-   "views": 9120,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7308546",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q116992476",
-   "title": "Jesús de Miguel",
-   "fame": 8198,
-   "views": 8198,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q116992476",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   }
  ],
  "candidates": [
@@ -1772,8 +1599,8 @@
     "BBC",
     "TV9 Network"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1847,12 +1674,13 @@
     "outlet:Amar Ujala",
     "outlet:BBC",
     "outlet:TV9 Network",
-    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'",
+    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Cummins: Khawaja's allegations 'complete and utter nonsense'"
    ],
@@ -1878,24 +1706,25 @@
    "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
    "story_keys": [
     "affair",
-    "jensen",
+    "resign",
     "scandal",
     "surface",
     "third"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T03:15:42+00:00",
+   "news_at": "2026-11-13T05:33:17+00:00",
    "owners": [
     "Guardian Media Group",
     "India Today Group",
     "France Médias Monde",
     "Bennett, Coleman & Co.",
     "NDTV",
+    "Amar Ujala",
     "DB Corp",
     "BBC"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1907,12 +1736,13 @@
     "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO"
    ],
    "hindi_headlines": [
+    "'मैं बहुत घटिया इंसान हूं': इस्तीफे से पहले जेनसन ने क्यों कही थी ये बात; एनवीडिया सीईओ की रेस में कौन-कौन?",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
     "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
     "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें"
    ],
-   "hindi_news": 5,
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -1938,6 +1768,16 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-12T06:43:31+00:00"
+    },
+    {
+     "title": "A third extramarital affair emerges after Jensen Huang resigns as NVIDIA CEO",
+     "url": "https://www.indiatoday.in/technology/video/third-extramarital-affair-emerges-after-former-nvidia-ceo-jensen-huang-resigns-ytvd-3037956-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:33:17+00:00"
     },
     {
      "title": "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO",
@@ -1986,47 +1826,46 @@
     "outlet:France Médias Monde",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
+    "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:BBC",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
     "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
    "top": {
-    "IN": 5,
-    "IN-hi": 15
+    "IN": 4,
+    "IN-hi": 16
    },
-   "top_score": 0.95,
+   "top_score": 0.975,
    "top_headlines": [
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "White House Is Discussing Howard Lutnicks Future As Commerce Secretary - Sources Citing People Familiar"
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "other"
   },
   {
    "qid": "Q4772274",
    "title": "Anthony Clark (actor)",
-   "fame": 499893,
+   "fame": 374893,
    "views": 374893,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
-   "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "wikipedia-top-2026-11-12"
    ],
    "owners": [],
    "reports": [],
@@ -2042,6 +1881,173 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+   "story_keys": [
+    "countrie",
+    "disrupt",
+    "down",
+    "hits",
+    "major",
+    "outage",
+    "service"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T05:34:16+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "India Today Group",
+    "The Hindu Group",
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "TV9 Network",
+    "Amar Ujala"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+    "Microsoft Outlook down today?",
+    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
+    "Widespread outage hits Microsoft apps",
+    "Major Microsoft Outlook outage disrupts services in 74 countries",
+    "Microsoft works to restore Outlook and Teams after global outage"
+   ],
+   "hindi_headlines": [
+    "माइक्रोसॉफ्ट सर्वर डाउन: दुनियाभर में कामकाज ठप, यूजर्स परेशान",
+    "माइक्रोसॉफ्ट आउटेज का बड़ा असर: अकेले आउटलुक की 1.50 लाख से अधिक शिकायतें, क्या एआई टूल्स पर भी पड़ा कोई असर?",
+    "माइक्रोसॉफ्ट की सेवाएं हुईं ठप: Outlook से Teams तक मचा हड़कंप, आखिर क्या थी अचानक आई तकनीकी खराबी की वजह?",
+    "11 घंटे से नहीं चल रहा माइक्रोसॉफ्ट, क्यों ठप हो जाता है क्लाउड सर्वर",
+    "माइक्रोसॉफ्ट 10 घंटे से डाउन, ईमेल ओपन नहीं हो रहा, भारत समेत दुनियाभर के करोड़ों यूजर्स परेशान"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:51:00+00:00"
+    },
+    {
+     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
+     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:44:22+00:00"
+    },
+    {
+     "title": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:40:14+00:00"
+    },
+    {
+     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:24:26+00:00"
+    },
+    {
+     "title": "Microsoft 365 global outage disrupts Outlook and Teams across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/major-microsoft-365-outage-disrupts-outlook-and-teams-services-globally-ytvd-3037959-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:34:16+00:00"
+    },
+    {
+     "title": "Microsoft Outlook outage: When will it resume?",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:10:03+00:00"
+    },
+    {
+     "title": "Widespread outage hits Microsoft apps",
+     "url": "https://www.thehindu.com/sci-tech/technology/internet/widespread-outage-hits-microsoft-apps/article71695400.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:46:34+00:00"
+    },
+    {
+     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:30:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:TV9 Network",
+    "outlet:Amar Ujala"
+   ],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Outlook email outage affects users around the world"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "Amar Ujala",
+    "India Today Group",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261113-Q944085",
    "qid": "Q944085",
    "title": "Reserve Bank of India",
@@ -2053,17 +2059,14 @@
    "category_hi": "अर्थव्यवस्था",
    "story": "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
    "story_keys": [
-    "breache",
     "crosse",
     "inflation",
     "limit",
     "retail",
-    "tolerance",
-    "two",
     "upper"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-12T21:33:14+00:00",
+   "news_at": "2026-11-12T15:24:17+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -2077,7 +2080,6 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "India's inflation breaches RBI's red line in October",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
-    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_headlines": [],
@@ -2090,16 +2092,6 @@
    "abroad": false,
    "label_hi": "रिज़र्व बैंक",
    "reports": [
-    {
-     "title": "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/at-6-09-retail-inflation-breaches-rbis-upper-tolerance-limit-after-two-years/articleshow/135782584.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T21:33:14+00:00"
-    },
     {
      "title": "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
      "url": "https://www.thehindu.com/business/Economy/retail-inflation-crosses-rbis-upper-limit-for-first-time-in-two-years-comes-in-at-61-in-october-2026/article71693503.ece",
@@ -2138,15 +2130,77 @@
     "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "qid": "Q5213677",
+   "title": "Dan Hicks (sportscaster)",
+   "fame": 157094,
+   "views": 157094,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5213677",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q305177",
@@ -2171,16 +2225,15 @@
     "Network18",
     "NDTV"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
     "Jensen Huang exits Nvidia: What it means for the AI market, investors",
     "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
-    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2234,220 +2287,18 @@
    "via": [
     "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+    "outlet:NDTV"
    ],
    "top": {
-    "IN": 5
+    "IN": 4
    },
-   "top_score": 0.8,
+   "top_score": 0.85,
    "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q5213677",
-   "title": "Dan Hicks (sportscaster)",
-   "fame": 157094,
-   "views": 157094,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5213677",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q80911",
-   "qid": "Q80911",
-   "title": "Microsoft Outlook",
-   "name": "Microsoft Outlook",
-   "phrase": "Microsoft Outlook",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-   "story_keys": [
-    "down",
-    "hits",
-    "major",
-    "outage",
-    "service"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:40:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group",
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-    "Microsoft Outlook down today?",
-    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-    "Major Microsoft Outlook outage disrupts services in 74 countries",
-    "Microsoft works to restore Outlook and Teams after global outage",
-    "Microsoft Outlook outage: When will it resume?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "माइक्रोसॉफ्ट आउटलुक",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:51:00+00:00"
-    },
-    {
-     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
-     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:44:22+00:00"
-    },
-    {
-     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:24:26+00:00"
-    },
-    {
-     "title": "Microsoft Outlook outage: When will it resume?",
-     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:10:03+00:00"
-    },
-    {
-     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:30:11+00:00"
-    },
-    {
-     "title": "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-     "url": "https://www.ndtv.com/world-news/is-outlook-down-widespread-outage-hits-microsoft-apps-12319777#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:28:46+00:00"
-    },
-    {
-     "title": "Microsoft Outlook down today?",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outlook-down-today-downdetector-reports-surge-as-north-and-south-american-users-face-email-access-problems/articleshow/135781142.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:07:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Outlook email outage: Microsoft continuing to work on problem",
-    "Stock market outlook today, 13 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -2686,53 +2537,6 @@
    "lane": "other"
   },
   {
-   "qid": "Q4795757",
-   "title": "Arpita Singh",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-12T13:54:32+00:00",
-   "headlines": [
-    "From the India Today archives (1988) | Arpita Singh and the new era of artists"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": "अर्पिता सिंह",
-   "via": [
-    "google-news:From the India Today archives (1988) | Arpita Singh and the new era of artists",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "From the India Today archives (1988) | Arpita Singh and the new era of artists",
-     "url": "https://www.indiatoday.in/india-today-insight/story/from-the-india-today-archives-1988-arpita-singh-and-the-new-era-of-artists-3037621-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T13:54:32+00:00"
-    }
-   ],
-   "id": "wk-Q4795757",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q533583",
    "title": "Richard Posner",
    "fame": 34663,
@@ -2857,99 +2661,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q18613657",
-   "title": "Alexander Darchiev",
-   "fame": 9579,
-   "views": 9579,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q18613657",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q114079679",
-   "title": "Solange Alexandre",
-   "fame": 11379,
-   "views": 11379,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q114079679",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-08",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q6662427",
-   "title": "Lloyd Geering",
-   "fame": 11145,
-   "views": 11145,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q6662427",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-05",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q7828852",
    "title": "Toukie Smith",
    "fame": 14915,
@@ -2982,23 +2693,302 @@
   }
  ],
  "notes": [
-  "outlets: 1637 headlines from 48 feeds (18 owners), 16 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261113-Q37293, kh-20261113-Q182477, kh-20261113-Q3524804, kh-20261113-Q944085; dropped: explainer Pope Leo: fewer than 3 owners' headlines name it and the story; explainer Russia-Ukraine / Ambassador William Taylor: no Wikipedia article that can be its centre; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story",
-  "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
+  "outlets: 1642 headlines from 48 feeds (18 owners), 14 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261113-Q182477, kh-20261113-Q3524804, kh-20261113-Q37293, kh-20261113-Q2283; dropped: explainer Pope Leo: fewer than 3 owners' headlines name it and the story; explainer Ramayana BTS / Thailand: no Wikipedia article that can be its centre; explainer Russia-Ukraine / Ambassador William Taylor: no Wikipedia article that can be its centre"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1637,
+  "headlines": 1642,
   "feeds": 48,
   "owners": 18,
-  "matched": 16,
+  "matched": 14,
   "corroborated": 10
  },
  "emerging": [],
  "explainers": [
+  {
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+   "story_keys": [
+    "affair",
+    "resign",
+    "scandal",
+    "surface",
+    "third"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T05:33:17+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "India Today Group",
+    "France Médias Monde",
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "Amar Ujala",
+    "DB Corp",
+    "BBC"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+    "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
+    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "Jensen Huang had a third affair with another Nvidia employee: Report",
+    "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO"
+   ],
+   "hindi_headlines": [
+    "'मैं बहुत घटिया इंसान हूं': इस्तीफे से पहले जेनसन ने क्यों कही थी ये बात; एनवीडिया सीईओ की रेस में कौन-कौन?",
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
+    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:10:28+00:00"
+    },
+    {
+     "title": "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
+     "url": "https://www.theguardian.com/world/2026/nov/12/thursday-briefing-what-we-do-and-dont-know-about-alice-huang-and-the-nvidia-affair",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T06:43:31+00:00"
+    },
+    {
+     "title": "A third extramarital affair emerges after Jensen Huang resigns as NVIDIA CEO",
+     "url": "https://www.indiatoday.in/technology/video/third-extramarital-affair-emerges-after-former-nvidia-ceo-jensen-huang-resigns-ytvd-3037956-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:33:17+00:00"
+    },
+    {
+     "title": "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO",
+     "url": "https://www.ndtv.com/world-news/exclusive-former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say-12319696#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:15:42+00:00"
+    },
+    {
+     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
+     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:31:06+00:00"
+    },
+    {
+     "title": "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-scandal-white-house-weighs-ouster-of-top-trump-aide-over-china-chip-exports/articleshow/135786410.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:11:33+00:00"
+    },
+    {
+     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:50:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:India Today Group",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:Amar Ujala",
+    "outlet:DB Corp",
+    "outlet:BBC",
+    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "top": {
+    "IN": 4,
+    "IN-hi": 16
+   },
+   "top_score": 0.975,
+   "top_headlines": [
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q3524804",
+   "qid": "Q3524804",
+   "title": "Usman Khawaja",
+   "name": "Usman Khawaja",
+   "phrase": "Khawaja",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+   "story_keys": [
+    "bus",
+    "captain",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T04:33:57+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "India Today Group",
+    "Network18",
+    "Amar Ujala",
+    "BBC",
+    "TV9 Network"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
+    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+   ],
+   "hindi_headlines": [
+    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
+    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
+    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
+    "सैंडपेपर विवाद: उस्मान ख्वाजा के आरोपों पर कल जवाब देंगे कमिंस; उससे पहले पत्नी से क्यों भिड़े? वीडियो वायरल"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "उस्मान ख़्वाजा",
+   "reports": [
+    {
+     "title": "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
+     "url": "https://www.indiatoday.in/sports/cricket/story/david-warner-backs-usman-khawaja-criticises-pat-cummins-sandpapergate-claims-3037933-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:33:57+00:00"
+    },
+    {
+     "title": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
+     "url": "https://sports.ndtv.com/cricket/david-warner-blasts-pat-cummins-captain-threw-usman-khawaja-under-the-bus-12320451#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:17:17+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:Amar Ujala",
+    "outlet:BBC",
+    "outlet:TV9 Network",
+    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'",
+    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "Amar Ujala",
+    "BBC",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
   {
    "id": "kh-20261113-Q37293",
    "qid": "Q37293",
@@ -3028,11 +3018,11 @@
     "HT Media",
     "NDTV",
     "India Today Group",
+    "Amar Ujala",
     "Network18",
     "TV9 Network",
-    "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
+    "ABP Group",
+    "DB Corp"
    ],
    "fame": 400000,
    "news": 400000,
@@ -3047,13 +3037,13 @@
     "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal"
    ],
    "hindi_headlines": [
+    "रामायण बॉक्स ऑफिस कलेक्शन: आठवें दिन तोड़ा 'स्पाइडरमैन' का रिकॉर्ड, जानें 'धुरंधर 2' की कमाई से कितना पीछे?",
     "'रामायण' की सफलता से गदगद हुए लक्ष्मण, रणबीर-साई के साथ शेयर कीं BTS तस्वीरें, बोले- हजार वजहें हैं खुश होने की",
     "‘रामायण’ के सेट पर क्यों रोने लगी थीं सीता बनीं साई पल्लवी? अब किया बड़ा खुलासा",
     "बॉक्स ऑफिस 'रामायण' की कमाई में आई 24% की गिरावट, 8 दिन में दुनियाभर में छापे 1033 करोड़",
-    "Ramayana Box Office: 1000 करोड़ कमाने वाली देश की 11वीं फिल्म बनी रामायण, सिर्फ 8 दिन में बजरंगी भाईजान-एनिमल का खेल तमाम",
-    "'रामायण' में 70% सेट और 30% VFX, कहीं असली तो कहीं नकली, 3 साल में तैयार हुई 4000 करोड़ी फिल्म की भव्य दुनिया"
+    "Ramayana Box Office: 1000 करोड़ कमाने वाली देश की 11वीं फिल्म बनी रामायण, सिर्फ 8 दिन में बजरंगी भाईजान-एनिमल का खेल तमाम"
    ],
-   "hindi_news": 35,
+   "hindi_news": 40,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3145,12 +3135,13 @@
     "outlet:HT Media",
     "outlet:NDTV",
     "outlet:India Today Group",
+    "outlet:Amar Ujala",
     "outlet:Network18",
     "outlet:TV9 Network",
-    "outlet:Amar Ujala",
-    "outlet:DB Corp",
     "outlet:ABP Group",
+    "outlet:DB Corp",
     "google-news:Ramayana Part 1 Box Office Collection Day 7: Ranbir Kapoor film crosses Rs 1000 cr worldwide, inches away from surpassing Dhurandhar 2",
+    "google-news:Lara Dutta defends Sai Pallavi's warrior Sita in Ramayana amid backlash, asks critics to stop being ‘small-minded’ | Bollywood",
     "google-news:'रामायण' को भाई दूज का मिला फायदा, 7वें दिन भारत में 511.10 करोड़ पार, दुनियाभर में छापे 934.55 करोड़"
    ],
    "top": {
@@ -3161,273 +3152,178 @@
     "'रामायण' को भाई दूज का मिला फायदा, 7वें दिन भारत में 511.10 करोड़ पार, दुनियाभर में छापे 934.55 करोड़"
    ],
    "hindi_owners": [
+    "Amar Ujala",
     "Network18",
     "TV9 Network",
-    "Amar Ujala",
     "NDTV"
    ]
   },
   {
-   "id": "kh-20261113-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
    "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
    "story_keys": [
-    "affair",
-    "jensen",
-    "scandal",
-    "surface",
-    "third"
+    "countrie",
+    "disrupt",
+    "down",
+    "hits",
+    "major",
+    "outage",
+    "service"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T03:15:42+00:00",
+   "news_at": "2026-11-13T05:34:16+00:00",
    "owners": [
-    "Guardian Media Group",
-    "India Today Group",
-    "France Médias Monde",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "DB Corp",
-    "BBC"
-   ],
-   "fame": 375000,
-   "news": 375000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-    "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
-    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
-    "Jensen Huang had a third affair with another Nvidia employee: Report",
-    "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "पति से ज्यादा कमाती थीं एनवीड‍िया के CEO की इंजीन‍ियर पत्नी लोरी!",
-    "पति-पत्नी और 'वो-दो', फंसे एनवीडिया CEO... तस्वीरों में देखें"
-   ],
-   "hindi_news": 5,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T22:10:28+00:00"
-    },
-    {
-     "title": "Thursday briefing: What we do (and don’t) know about Alice Huang and the Nvidia affair",
-     "url": "https://www.theguardian.com/world/2026/nov/12/thursday-briefing-what-we-do-and-dont-know-about-alice-huang-and-the-nvidia-affair",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T06:43:31+00:00"
-    },
-    {
-     "title": "Jensen Huang's 3rd Affair Surfaces Hours After His Exit As Nvidia CEO",
-     "url": "https://www.ndtv.com/world-news/exclusive-former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say-12319696#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:15:42+00:00"
-    },
-    {
-     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
-     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:31:06+00:00"
-    },
-    {
-     "title": "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/nvidia-scandal-white-house-weighs-ouster-of-top-trump-aide-over-china-chip-exports/articleshow/135786410.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:11:33+00:00"
-    },
-    {
-     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:50:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:DB Corp",
-    "outlet:BBC",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "google-news:एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
-   ],
-   "top": {
-    "IN": 5,
-    "IN-hi": 15
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "White House Is Discussing Howard Lutnicks Future As Commerce Secretary - Sources Citing People Familiar"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q3524804",
-   "qid": "Q3524804",
-   "title": "Usman Khawaja",
-   "name": "Usman Khawaja",
-   "phrase": "Khawaja",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-   "story_keys": [
-    "bus",
-    "captain",
-    "threw",
-    "under"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T04:33:57+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "NDTV",
     "India Today Group",
-    "Network18",
-    "Amar Ujala",
-    "BBC",
-    "TV9 Network"
+    "The Hindu Group",
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "TV9 Network",
+    "Amar Ujala"
    ],
-   "fame": 325000,
-   "news": 325000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-    "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
-    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+    "Microsoft Outlook down today?",
+    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
+    "Widespread outage hits Microsoft apps",
+    "Major Microsoft Outlook outage disrupts services in 74 countries",
+    "Microsoft works to restore Outlook and Teams after global outage"
    ],
    "hindi_headlines": [
-    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
-    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
-    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "सैंडपेपर विवाद: उस्मान ख्वाजा के आरोपों पर कल जवाब देंगे कमिंस; उससे पहले पत्नी से क्यों भिड़े? वीडियो वायरल"
+    "माइक्रोसॉफ्ट सर्वर डाउन: दुनियाभर में कामकाज ठप, यूजर्स परेशान",
+    "माइक्रोसॉफ्ट आउटेज का बड़ा असर: अकेले आउटलुक की 1.50 लाख से अधिक शिकायतें, क्या एआई टूल्स पर भी पड़ा कोई असर?",
+    "माइक्रोसॉफ्ट की सेवाएं हुईं ठप: Outlook से Teams तक मचा हड़कंप, आखिर क्या थी अचानक आई तकनीकी खराबी की वजह?",
+    "11 घंटे से नहीं चल रहा माइक्रोसॉफ्ट, क्यों ठप हो जाता है क्लाउड सर्वर",
+    "माइक्रोसॉफ्ट 10 घंटे से डाउन, ईमेल ओपन नहीं हो रहा, भारत समेत दुनियाभर के करोड़ों यूजर्स परेशान"
    ],
    "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
-   "label_hi": "उस्मान ख़्वाजा",
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "Pat Cummins threw Khawaja under the bus: David Warner on Sandpapergate denial",
-     "url": "https://www.indiatoday.in/sports/cricket/story/david-warner-backs-usman-khawaja-criticises-pat-cummins-sandpapergate-claims-3037933-2026-11-13?utm_source=rss",
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:51:00+00:00"
+    },
+    {
+     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
+     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T03:44:22+00:00"
+    },
+    {
+     "title": "‘Looks like we’ll have to talk to people’: Australia sent back to time before email with major Microsoft outage",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/major-microsoft-outage-impacts-australian-government-services-and-schools",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:40:14+00:00"
+    },
+    {
+     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T04:24:26+00:00"
+    },
+    {
+     "title": "Microsoft 365 global outage disrupts Outlook and Teams across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/major-microsoft-365-outage-disrupts-outlook-and-teams-services-globally-ytvd-3037959-2026-11-13?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:33:57+00:00"
+     "at": "2026-11-13T05:34:16+00:00"
     },
     {
-     "title": "David Warner Blasts Pat Cummins: \"Captain Threw Usman Khawaja Under The Bus\"",
-     "url": "https://sports.ndtv.com/cricket/david-warner-blasts-pat-cummins-captain-threw-usman-khawaja-under-the-bus-12320451#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Microsoft Outlook outage: When will it resume?",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:17:17+00:00"
+     "at": "2026-11-13T04:10:03+00:00"
     },
     {
-     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "title": "Widespread outage hits Microsoft apps",
+     "url": "https://www.thehindu.com/sci-tech/technology/internet/widespread-outage-hits-microsoft-apps/article71695400.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:15:45+00:00"
+     "at": "2026-11-13T01:46:34+00:00"
     },
     {
-     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T03:34:50+00:00"
+     "at": "2026-11-13T01:30:11+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "outlet:BBC",
+    "outlet:The Hindu Group",
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
     "outlet:TV9 Network",
-    "google-news:Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "outlet:Amar Ujala"
    ],
    "top": {
-    "IN": 11
+    "IN": 5
    },
-   "top_score": 0.5,
+   "top_score": 0.8,
    "top_headlines": [
-    "Cummins: Khawaja's allegations 'complete and utter nonsense'"
+    "Outlook email outage affects users around the world"
    ],
    "hindi_owners": [
-    "Network18",
+    "TV9 Network",
     "Amar Ujala",
-    "BBC",
-    "TV9 Network"
+    "India Today Group",
+    "NDTV"
    ],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q944085",
@@ -3441,17 +3337,14 @@
    "category_hi": "अर्थव्यवस्था",
    "story": "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
    "story_keys": [
-    "breache",
     "crosse",
     "inflation",
     "limit",
     "retail",
-    "tolerance",
-    "two",
     "upper"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-12T21:33:14+00:00",
+   "news_at": "2026-11-12T15:24:17+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -3465,7 +3358,6 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "India's inflation breaches RBI's red line in October",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
-    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_headlines": [],
@@ -3478,16 +3370,6 @@
    "abroad": false,
    "label_hi": "रिज़र्व बैंक",
    "reports": [
-    {
-     "title": "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/at-6-09-retail-inflation-breaches-rbis-upper-tolerance-limit-after-two-years/articleshow/135782584.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T21:33:14+00:00"
-    },
     {
      "title": "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
      "url": "https://www.thehindu.com/business/Economy/retail-inflation-crosses-rbis-upper-limit-for-first-time-in-two-years-comes-in-at-61-in-october-2026/article71693503.ece",
@@ -3526,254 +3408,15 @@
     "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-   "story_keys": [
-    "ceo",
-    "exit",
-    "jensen"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:17:02+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-    "Jensen Huang exits Nvidia: What it means for the AI market, investors",
-    "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
-    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
-     "url": "https://www.ndtv.com/world-news/nvidia-news-jensen-huang-forfeits-108-million-in-unvested-nvidia-equity-after-exit-12320488#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:17:02+00:00"
-    },
-    {
-     "title": "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
-     "url": "https://www.ndtv.com/world-news/ex-nvidia-ceo-jensen-huang-to-testify-in-congress-over-alleged-ties-to-woman-with-suspected-chinese-spy-links-12320012#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:37:12+00:00"
-    },
-    {
-     "title": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
-     "url": "https://www.news18.com/videos/india/nvidia-crisis-michael-owens-on-jensen-huang-s-nvidia-exit-why-ai-has-lost-more-than-a-ceo-news18-10423740.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T18:44:27+00:00"
-    },
-    {
-     "title": "Jensen Huang exits Nvidia: What it means for the AI market, investors",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huang-exits-nvidia-what-it-means-for-the-ai-market-investors/articleshow/135774363.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T15:13:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:NDTV",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q80911",
-   "qid": "Q80911",
-   "title": "Microsoft Outlook",
-   "name": "Microsoft Outlook",
-   "phrase": "Microsoft Outlook",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-   "story_keys": [
-    "down",
-    "hits",
-    "major",
-    "outage",
-    "service"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:40:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group",
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-    "Microsoft Outlook down today?",
-    "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-    "Major Microsoft Outlook outage disrupts services in 74 countries",
-    "Microsoft works to restore Outlook and Teams after global outage",
-    "Microsoft Outlook outage: When will it resume?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "माइक्रोसॉफ्ट आउटलुक",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:51:00+00:00"
-    },
-    {
-     "title": "Major Microsoft Outlook outage disrupts services in 74 countries",
-     "url": "https://www.france24.com/en/technology/20261113-major-microsoft-outlook-outage-disrupts-services-in-74-countries",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T03:44:22+00:00"
-    },
-    {
-     "title": "Microsoft struggles to fix huge outage affecting Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:24:26+00:00"
-    },
-    {
-     "title": "Microsoft Outlook outage: When will it resume?",
-     "url": "https://economictimes.indiatimes.com/news/new-updates/microsoft-outlook-outage-status-is-email-working-again-whats-down-whats-working-and-when-will-services-resume/articleshow/135788863.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:10:03+00:00"
-    },
-    {
-     "title": "Global outage hits Microsoft, Outlook, Teams down for 11 hours; company responds",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-outage-hits-thousands-globally-disrupts-outlook-teams-and-copilot-3037885-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:30:11+00:00"
-    },
-    {
-     "title": "Global Outage Hits Microsoft, Outlook, Other 365 Services Down",
-     "url": "https://www.ndtv.com/world-news/is-outlook-down-widespread-outage-hits-microsoft-apps-12319777#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:28:46+00:00"
-    },
-    {
-     "title": "Microsoft Outlook down today?",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outlook-down-today-downdetector-reports-surge-as-north-and-south-american-users-face-email-access-problems/articleshow/135781142.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:07:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Outlook email outage: Microsoft continuing to work on problem",
-    "Stock market outlook today, 13 Nov: Sensex, Nifty prediction - DJIA, S&P, NASDAQ, GIFT Nifty, Kospi, Nikkei, Taiwan cues"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -4112,6 +3755,104 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+   "story_keys": [
+    "ceo",
+    "exit",
+    "jensen"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T04:17:02+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+    "Jensen Huang exits Nvidia: What it means for the AI market, investors",
+    "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
+    "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Jensen Huang Forfeits $108 Million In Unvested Nvidia Equity After Exit",
+     "url": "https://www.ndtv.com/world-news/nvidia-news-jensen-huang-forfeits-108-million-in-unvested-nvidia-equity-after-exit-12320488#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:17:02+00:00"
+    },
+    {
+     "title": "Ex-Nvidia CEO Jensen Huang Agrees To Testify Before US Congress Amid Row",
+     "url": "https://www.ndtv.com/world-news/ex-nvidia-ceo-jensen-huang-to-testify-in-congress-over-alleged-ties-to-woman-with-suspected-chinese-spy-links-12320012#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:37:12+00:00"
+    },
+    {
+     "title": "Nvidia Crisis: Michael Owens on Jensen Huang's Nvidia exit: Why AI Has Lost More Than A CEO| News18",
+     "url": "https://www.news18.com/videos/india/nvidia-crisis-michael-owens-on-jensen-huang-s-nvidia-exit-why-ai-has-lost-more-than-a-ceo-news18-10423740.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:44:27+00:00"
+    },
+    {
+     "title": "Jensen Huang exits Nvidia: What it means for the AI market, investors",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huang-exits-nvidia-what-it-means-for-the-ai-market-investors/articleshow/135774363.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:13:18+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
