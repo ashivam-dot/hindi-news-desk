@@ -1,41 +1,171 @@
 {
- "at": "2026-11-13T09:13:29+00:00",
+ "at": "2026-11-13T09:28:41+00:00",
  "trending": [
   {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 499893,
-   "views": 374893,
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story_keys": [
+    "company",
+    "cyberattack",
+    "hits",
+    "hour",
+    "not",
+    "outage"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T09:08:16+00:00",
+   "owners": [
+    "India Today Group",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "BBC"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
    "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Widespread outage hits Microsoft apps",
+    "Microsoft Outlook outage: When will it resume?",
+    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
+   "hindi_headlines": [
+    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
+    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+   ],
+   "hindi_news": 4,
+   "geos": [],
    "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T09:08:16+00:00"
+    },
+    {
+     "title": "Microsoft rules out cyberattack amid global outage",
+     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:10:18+00:00"
+    },
+    {
+     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:58:40+00:00"
+    },
+    {
+     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
+     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:37:55+00:00"
+    },
+    {
+     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:47:36+00:00"
+    },
+    {
+     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:56:27+00:00"
+    },
+    {
+     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:55:12+00:00"
+    }
    ],
-   "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity",
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "top": {
+    "IN": 1,
+    "IN-hi": 17
+   },
+   "top_score": 1.1,
+   "top_headlines": [
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
+   ],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV",
+    "BBC"
+   ],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q37293",
@@ -84,12 +214,12 @@
    ],
    "hindi_headlines": [
     "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
+    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
     "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म",
     "100 से ज्यादा ऑडिशन के बाद रामायण सीरियल के लिए फाइनल हुआ था रावण का किरदार, केवट के रोल के लिए गए थे अरविंद त्रिवेदी!",
-    "मराठी में क्यों रिलीज नहीं हुई रामायण? NCP ने किया विरोध, छिड़ी भाषा पर जंग!",
     "'रामायण' ने रचा इतिहास, 1000 करोड़ पार करते ही मेकर्स ने रणबीर, साई और यश के नए धांसू पोस्टर्स से मचाया धमाल"
    ],
-   "hindi_news": 45,
+   "hindi_news": 43,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -194,177 +324,43 @@
    "top_headlines": [],
    "hindi_owners": [
     "Network18",
+    "NDTV",
     "TV9 Network",
     "India Today Group",
     "Amar Ujala",
-    "NDTV",
     "DB Corp"
    ]
   },
   {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-   "story_keys": [
-    "company",
-    "cyberattack",
-    "hits",
-    "hour",
-    "not",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:16:11+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 374893,
+   "views": 374893,
    "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-    "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
-    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
-   ],
-   "hindi_headlines": [
-    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट आउटेज: 24 घंटे बाद भी नहीं मिली राहत, 45 करोड़ यूजर्स प्रभावित, साइबर हमले पर क्या बोली कंपनी?"
-   ],
-   "hindi_news": 4,
-   "geos": [],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T08:16:11+00:00"
-    },
-    {
-     "title": "Microsoft rules out cyberattack amid global outage",
-     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
-    },
-    {
-     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:55:12+00:00"
-    }
-   ],
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
    "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
+    "wikipedia-top-2026-11-12"
    ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "NDTV",
-    "BBC"
-   ],
-   "audience": "india",
-   "lane": "other"
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -413,8 +409,7 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -483,7 +478,7 @@
     "outlet:BBC",
     "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
-    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "google-news:'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'"
    ],
    "top": {
     "IN": 13
@@ -494,132 +489,6 @@
    ],
    "hindi_owners": [
     "Network18"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-   "story_keys": [
-    "affair",
-    "another",
-    "employee",
-    "scandal",
-    "third"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:34:34+00:00",
-   "owners": [
-    "BBC",
-    "India Today Group",
-    "France Médias Monde",
-    "Bennett, Coleman & Co.",
-    "TV9 Network",
-    "NDTV"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-    "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang had a third affair with another Nvidia employee: Report",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_headlines": [
-    "NVIDIA में बड़ा फेरबदल: जेन्सन हुआंग के जाने से AI की दुनिया में क्या-क्या बदलेगा?",
-    "Nvidia CEO News: कंपनी से बाहर होने के बाद जेन्सन हुआंग को लगा $108 मिलियन का झटका, अब कितनी रह गई नेटवर्थ?"
-   ],
-   "hindi_news": 2,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T22:10:28+00:00"
-    },
-    {
-     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T17:11:48+00:00"
-    },
-    {
-     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
-     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:31:06+00:00"
-    },
-    {
-     "title": "Another affair? 3rd woman enters Huang's scandal",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:36:34+00:00"
-    },
-    {
-     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:50:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
-    "outlet:NDTV",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
-   ],
-   "hindi_owners": [
-    "TV9 Network",
-    "NDTV"
    ],
    "audience": "india",
    "lane": "naam-niyam"
@@ -641,23 +510,24 @@
     "memoir"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:43:35+00:00",
+   "news_at": "2026-11-13T09:25:32+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "RaGa urges BJP commentary on Sonia memoir",
+    "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
     "Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
-    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
-    "Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -669,6 +539,16 @@
    "abroad": false,
    "label_hi": "भारतीय जनता पार्टी",
    "reports": [
+    {
+     "title": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+     "url": "https://www.thehindu.com/news/national/sonia-gandhis-memoir-more-the-bhakts-comment-better-it-would-do-says-rahul-gandhi-on-bjps-criticisms/article71697277.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:32+00:00"
+    },
     {
      "title": "RaGa urges BJP commentary on Sonia memoir",
      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/more-the-bhakts-comment-better-it-would-do-rahul-gandhi-on-bjp-criticism-of-sonia-memoir/articleshow/135795895.cms",
@@ -704,19 +584,294 @@
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
     "google-news:Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
     "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
     "google-news:Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
    ],
    "top": {
-    "IN": 4,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 3
    },
-   "top_score": 1.105,
+   "top_score": 0.92,
    "top_headlines": [
-    "Bookstores report strong early sales of Sonia Gandhi’s memoir",
-    "In Sonia Gandhi's 'Belonging', The Delhi Of 'Chashme Buddoor': How A Lost City Is A Character In Both",
-    "'He taps my phone': Rahul Gandhi's big charge on PM Modi as he challenges him for debate"
+    "\"Taps My Phone\": Rahul Gandhi's Big Charge Against PM Modi, Then Debate Dare",
+    "Bookstores report strong early sales of Sonia Gandhi’s memoir"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+   "story_keys": [
+    "judge",
+    "list"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T07:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:48:47+00:00"
+    },
+    {
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:32:18+00:00"
+    },
+    {
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:25:26+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "entertainment",
+   "category_hi": "मनोरंजन",
+   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+   "story_keys": [
+    "scandal"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T00:36:34+00:00",
+   "owners": [
+    "BBC",
+    "France Médias Monde",
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+    "Another affair? 3rd woman enters Huang's scandal",
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+   ],
+   "hindi_headlines": [
+    "NVIDIA में बड़ा फेरबदल: जेन्सन हुआंग के जाने से AI की दुनिया में क्या-क्या बदलेगा?",
+    "Nvidia CEO News: कंपनी से बाहर होने के बाद जेन्सन हुआंग को लगा $108 मिलियन का झटका, अब कितनी रह गई नेटवर्थ?"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:10:28+00:00"
+    },
+    {
+     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T17:11:48+00:00"
+    },
+    {
+     "title": "Another affair? 3rd woman enters Huang's scandal",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:36:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q122864715",
+   "qid": "Q122864715",
+   "title": "Special session of the Parliament of India",
+   "name": "Special session of the Parliament of India",
+   "phrase": "Special Parliament",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+   "story_keys": [
+    "bill",
+    "delimitation",
+    "session"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:20:31+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+    "Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:20:31+00:00"
+    },
+    {
+     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T10:13:00+00:00"
+    },
+    {
+     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T09:43:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "top": {
+    "IN-nation": 12
+   },
+   "top_score": 0.27,
+   "top_headlines": [
+    "Why Centre may convene special sitting of Parliament before Winter Session"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -755,7 +910,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -802,12 +957,12 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
@@ -864,7 +1019,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:13:28+00:00",
+   "news_at": "2026-11-13T09:16:36+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -905,7 +1060,7 @@
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:13:28+00:00"
+     "at": "2026-11-13T09:16:36+00:00"
     },
     {
      "title": "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
@@ -979,101 +1134,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:22:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:22:13+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
    "qid": "Q315090",
    "title": "Stacy Keach",
    "fame": 142036,
@@ -1116,7 +1176,6 @@
    "category_hi": "कूटनीति",
    "story": "U.S. officials set to meet with Putin, Zelenskyy following Abu Dhabi peace talks",
    "story_keys": [
-    "envoy",
     "meet",
     "peace",
     "talk"
@@ -1125,21 +1184,17 @@
    "news_at": "2026-11-13T06:09:58+00:00",
    "owners": [
     "NPR",
-    "France Médias Monde",
     "Guardian Media Group",
-    "Al Jazeera Media Network",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "U.S. officials set to meet with Putin, Zelenskyy following Abu Dhabi peace talks",
     "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-    "Russia's Vladimir Putin suggests no Ukraine compromise in meeting with US envoys",
     "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-    "US envoys shuttle between Putin and Zelenskyy",
     "Putin Agrees To Let European Representatives Join Ukraine Peace Talks"
    ],
    "hindi_headlines": [],
@@ -1150,16 +1205,6 @@
    "abroad": true,
    "label_hi": "व्लादिमीर पुतिन",
    "reports": [
-    {
-     "title": "Russia's Vladimir Putin suggests no Ukraine compromise in meeting with US envoys",
-     "url": "https://www.france24.com/en/video/20261112-russia-s-vladimir-putin-suggests-no-ukraine-compromise-in-meeting-with-us-envoys",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T16:46:14+00:00"
-    },
     {
      "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
      "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
@@ -1179,16 +1224,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-12T09:38:46+00:00"
-    },
-    {
-     "title": "US envoys shuttle between Putin and Zelenskyy",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:12:01+00:00"
     },
     {
      "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
@@ -1213,102 +1248,13 @@
    ],
    "via": [
     "outlet:NPR",
-    "outlet:France Médias Monde",
     "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
     "outlet:NDTV"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-   "story_keys": [
-    "bill",
-    "delimitation",
-    "session"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
-    },
-    {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
-    },
-    {
-     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T09:43:21+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN-nation": 11
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Why Centre may convene special sitting of Parliament before Winter Session"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261113-Q35525",
@@ -1685,94 +1631,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-   "story_keys": [
-    "microsoft",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:00:45+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंडीगो",
-   "reports": [
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:00:45+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 50000,
@@ -1873,7 +1731,7 @@
    "news": 50000,
    "news_at": "2026-11-12T22:58:23+00:00",
    "headlines": [
-    "Eight killed, including two children, in New York building collapse",
+    "New York building collapse kills eight, including two children",
     "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured"
    ],
    "hindi_news": 0,
@@ -1885,7 +1743,7 @@
    ],
    "label_hi": null,
    "via": [
-    "google-news:Eight killed, including two children, in New York building collapse",
+    "google-news:New York building collapse kills eight, including two children",
     "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
     "outlet:France Médias Monde",
     "outlet:India Today Group"
@@ -1896,7 +1754,7 @@
    ],
    "reports": [
     {
-     "title": "Eight killed, including two children, in New York building collapse",
+     "title": "New York building collapse kills eight, including two children",
      "url": "https://www.france24.com/en/americas/20261112-eight-killed-including-two-children-in-new-york-building-collapse",
      "outlet": "France 24",
      "outlet_hi": "फ़्रांस 24",
@@ -2273,6 +2131,172 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story_keys": [
+    "company",
+    "cyberattack",
+    "hits",
+    "hour",
+    "not",
+    "outage"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T09:08:16+00:00",
+   "owners": [
+    "India Today Group",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "BBC"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Widespread outage hits Microsoft apps",
+    "Microsoft Outlook outage: When will it resume?",
+    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
+   ],
+   "hindi_headlines": [
+    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
+    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T09:08:16+00:00"
+    },
+    {
+     "title": "Microsoft rules out cyberattack amid global outage",
+     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:10:18+00:00"
+    },
+    {
+     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:58:40+00:00"
+    },
+    {
+     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
+     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:37:55+00:00"
+    },
+    {
+     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:47:36+00:00"
+    },
+    {
+     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:56:27+00:00"
+    },
+    {
+     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:55:12+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity",
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+   ],
+   "top": {
+    "IN": 1,
+    "IN-hi": 17
+   },
+   "top_score": 1.1,
+   "top_headlines": [
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
+   ],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV",
+    "BBC"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261113-Q19891094",
    "qid": "Q19891094",
    "title": "Pink Line (Delhi Metro)",
@@ -2290,7 +2314,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:13:28+00:00",
+   "news_at": "2026-11-13T09:16:36+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -2331,7 +2355,7 @@
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:13:28+00:00"
+     "at": "2026-11-13T09:16:36+00:00"
     },
     {
      "title": "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
@@ -2405,171 +2429,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-   "story_keys": [
-    "company",
-    "cyberattack",
-    "hits",
-    "hour",
-    "not",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:16:11+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-    "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
-    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
-   ],
-   "hindi_headlines": [
-    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट आउटेज: 24 घंटे बाद भी नहीं मिली राहत, 45 करोड़ यूजर्स प्रभावित, साइबर हमले पर क्या बोली कंपनी?"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T08:16:11+00:00"
-    },
-    {
-     "title": "Microsoft rules out cyberattack amid global outage",
-     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
-    },
-    {
-     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:55:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "NDTV",
-    "BBC"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261113-Q3524804",
    "qid": "Q3524804",
    "title": "Usman Khawaja",
@@ -2616,8 +2475,7 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -2686,7 +2544,7 @@
     "outlet:BBC",
     "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
-    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "google-news:'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'"
    ],
    "top": {
     "IN": 13
@@ -2700,94 +2558,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-   "story_keys": [
-    "microsoft",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:00:45+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंडीगो",
-   "reports": [
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:00:45+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q10230",
@@ -2806,23 +2576,24 @@
     "memoir"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:43:35+00:00",
+   "news_at": "2026-11-13T09:25:32+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "RaGa urges BJP commentary on Sonia memoir",
+    "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
     "Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
-    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
-    "Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2834,6 +2605,16 @@
    "abroad": false,
    "label_hi": "भारतीय जनता पार्टी",
    "reports": [
+    {
+     "title": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+     "url": "https://www.thehindu.com/news/national/sonia-gandhis-memoir-more-the-bhakts-comment-better-it-would-do-says-rahul-gandhi-on-bjps-criticisms/article71697277.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:32+00:00"
+    },
     {
      "title": "RaGa urges BJP commentary on Sonia memoir",
      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/more-the-bhakts-comment-better-it-would-do-rahul-gandhi-on-bjp-criticism-of-sonia-memoir/articleshow/135795895.cms",
@@ -2869,19 +2650,19 @@
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
     "google-news:Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
     "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
     "google-news:Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
    ],
    "top": {
-    "IN": 4,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 3
    },
-   "top_score": 1.105,
+   "top_score": 0.92,
    "top_headlines": [
-    "Bookstores report strong early sales of Sonia Gandhi’s memoir",
-    "In Sonia Gandhi's 'Belonging', The Delhi Of 'Chashme Buddoor': How A Lost City Is A Character In Both",
-    "'He taps my phone': Rahul Gandhi's big charge on PM Modi as he challenges him for debate"
+    "\"Taps My Phone\": Rahul Gandhi's Big Charge Against PM Modi, Then Debate Dare",
+    "Bookstores report strong early sales of Sonia Gandhi’s memoir"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2895,36 +2676,29 @@
    "phrase": "Jensen Huang",
    "person": true,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
+   "category": "entertainment",
+   "category_hi": "मनोरंजन",
+   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
    "story_keys": [
-    "affair",
-    "another",
-    "employee",
-    "scandal",
-    "third"
+    "scandal"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:34:34+00:00",
+   "news_at": "2026-11-13T00:36:34+00:00",
    "owners": [
     "BBC",
-    "India Today Group",
     "France Médias Monde",
     "Bennett, Coleman & Co.",
     "TV9 Network",
     "NDTV"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
     "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
     "Jensen Huang resigns as Nvidia CEO after mounting scandals",
     "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang had a third affair with another Nvidia employee: Report",
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
    ],
    "hindi_headlines": [
@@ -2959,16 +2733,6 @@
      "at": "2026-11-12T17:11:48+00:00"
     },
     {
-     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
-     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:31:06+00:00"
-    },
-    {
      "title": "Another affair? 3rd woman enters Huang's scandal",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
      "outlet": "The Economic Times",
@@ -2977,21 +2741,10 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T00:36:34+00:00"
-    },
-    {
-     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:50:52+00:00"
     }
    ],
    "via": [
     "outlet:BBC",
-    "outlet:India Today Group",
     "outlet:France Médias Monde",
     "outlet:Bennett, Coleman & Co.",
     "outlet:TV9 Network",
@@ -2999,9 +2752,9 @@
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
    ],
    "top": {
-    "IN": 5
+    "IN": 4
    },
-   "top_score": 0.8,
+   "top_score": 0.85,
    "top_headlines": [
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
@@ -3113,27 +2866,199 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+   "story_keys": [
+    "judge",
+    "list"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T07:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:48:47+00:00"
+    },
+    {
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:32:18+00:00"
+    },
+    {
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:25:26+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q122864715",
+   "qid": "Q122864715",
+   "title": "Special session of the Parliament of India",
+   "name": "Special session of the Parliament of India",
+   "phrase": "Special Parliament",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+   "story_keys": [
+    "bill",
+    "delimitation",
+    "session"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:20:31+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+    "Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:20:31+00:00"
+    },
+    {
+     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T10:13:00+00:00"
+    },
+    {
+     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T09:43:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "top": {
+    "IN-nation": 12
+   },
+   "top_score": 0.27,
+   "top_headlines": [
+    "Why Centre may convene special sitting of Parliament before Winter Session"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
    "qid": "Q4772274",
    "title": "Anthony Clark (actor)",
-   "fame": 499893,
+   "fame": 374893,
    "views": 374893,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
-   "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "wikipedia-top-2026-11-12"
    ],
    "owners": [],
    "reports": [],
@@ -3212,7 +3137,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3259,12 +3184,12 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
@@ -3273,91 +3198,35 @@
    "lane": "paisa"
   },
   {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-   "story_keys": [
-    "bill",
-    "delimitation",
-    "session"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
    "traffic": 0,
-   "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi"
-   ],
-   "hindi_headlines": [],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
-   "geos": [],
+   "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
+   "geos": [],
    "label_hi": null,
-   "reports": [
-    {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
-    },
-    {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
-    },
-    {
-     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T09:43:21+00:00"
-    }
-   ],
    "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group"
+    "wikipedia-top-2026-11-12"
    ],
-   "top": {
-    "IN-nation": 11
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Why Centre may convene special sitting of Parliament before Winter Session"
-   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q15980635",
@@ -3441,37 +3310,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   },
   {
    "qid": "Q4795757",
@@ -3650,101 +3488,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:22:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:22:13+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
   },
   {
    "qid": "Q5220508",
@@ -4079,7 +3822,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
+   "story": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
    "story_keys": [
     "chicago",
     "columbia",
@@ -4088,7 +3831,7 @@
     "visit"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T06:32:35+00:00",
+   "news_at": "2026-11-13T09:25:32+00:00",
    "owners": [
     "The Hindu Group",
     "Network18",
@@ -4100,6 +3843,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
     "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
     "Raihan Vadra, fiancee Aviva Baig's special contribution to Sonia Gandhi's book",
     "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
@@ -4110,6 +3854,16 @@
    "india_link": true,
    "label_hi": "राहुल गाँधी",
    "reports": [
+    {
+     "title": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+     "url": "https://www.thehindu.com/news/national/sonia-gandhis-memoir-more-the-bhakts-comment-better-it-would-do-says-rahul-gandhi-on-bjps-criticisms/article71697277.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:32+00:00"
+    },
     {
      "title": "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
      "url": "https://www.thehindu.com/books/articles-on-sonia-gandhi-book-belonging/article71450926.ece",
@@ -4163,12 +3917,100 @@
    "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q163225-update",
+   "qid": "Q163225",
+   "title": "Sonia Gandhi",
+   "name": "Sonia Gandhi",
+   "phrase": "Sonia Gandhi",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+   "story_keys": [
+    "assassination",
+    "become",
+    "begging",
+    "cancer",
+    "congress",
+    "emergency",
+    "face",
+    "family",
+    "indira",
+    "kill",
+    "manmohan",
+    "memoir",
+    "political",
+    "post",
+    "pranab",
+    "rajiv",
+    "recall",
+    "recount",
+    "reveal"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T09:25:32+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+    "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "सोनिया गांधी",
+   "reports": [
+    {
+     "title": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+     "url": "https://www.thehindu.com/news/national/sonia-gandhis-memoir-more-the-bhakts-comment-better-it-would-do-says-rahul-gandhi-on-bjps-criticisms/article71697277.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:32+00:00"
+    },
+    {
+     "title": "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
+     "url": "https://www.hindustantimes.com/india-news/she-has-right-to-tell-her-story-priyanka-hits-back-at-bjp-over-mother-sonia-gandhis-memoir-101794475187342.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T09:34:05+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q163225"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261112-Q163225",
+   "earlier": [
+    "सोनिया गांधी की किताब में इमरजेंसी का जिक्र",
+    "राजीव गांधी को पीएम न बनने की सोनिया ने दी थी सलाह",
+    "किताब में सोनिया गांधी ने किया पीएम पद ठुकराने का जिक्र",
+    "Belonging नाम से रिलीज हुई सोनिया गांधी की संस्मरण किताब"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
   }
  ],
  "notes": [
-  "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q37293: last Short 5 h ago; revisit Q9543: already revisited today; revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (911 views before); revisit Q163225 (798 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q468324 (421 views): 0 owners ",
-  "outlets: 1718 headlines from 48 feeds (18 owners), 8 matched to articles, 17 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 15 kh- stories (on): kh-20261113-Q37293, kh-20261113-Q2283, kh-20261113-Q3524804, kh-20261113-Q305177; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer U.S. Ambassador William: fewer than 3 owners' headlines name it and the story; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story",
+  "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q37293: last Short 6 h ago; revisit Q9543: already revisited today; revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (920 views before); revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (798 views before); revisit Q468324 (421 views): 0 owners ",
+  "outlets: 1720 headlines from 48 feeds (18 owners), 9 matched to articles, 16 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 14 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q37293, kh-20261113-Q3524804, kh-20261113-Q10230; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Russia-Ukraine / Ambassador William Taylor: no Wikipedia article that can be its centre; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -4176,14 +4018,180 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1718,
+  "headlines": 1720,
   "feeds": 48,
   "owners": 18,
-  "matched": 8,
-  "corroborated": 17
+  "matched": 9,
+  "corroborated": 16
  },
  "emerging": [],
  "explainers": [
+  {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story_keys": [
+    "company",
+    "cyberattack",
+    "hits",
+    "hour",
+    "not",
+    "outage"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T09:08:16+00:00",
+   "owners": [
+    "India Today Group",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Deutsche Welle",
+    "Guardian Media Group",
+    "BBC"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Widespread outage hits Microsoft apps",
+    "Microsoft Outlook outage: When will it resume?",
+    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
+   ],
+   "hindi_headlines": [
+    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
+    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+   ],
+   "hindi_news": 4,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft works to restore Outlook and Teams after global outage",
+     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T09:08:16+00:00"
+    },
+    {
+     "title": "Microsoft rules out cyberattack amid global outage",
+     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:10:18+00:00"
+    },
+    {
+     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:58:40+00:00"
+    },
+    {
+     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
+     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:37:55+00:00"
+    },
+    {
+     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:47:36+00:00"
+    },
+    {
+     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:56:27+00:00"
+    },
+    {
+     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:55:12+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Deutsche Welle",
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity",
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+   ],
+   "top": {
+    "IN": 1,
+    "IN-hi": 17
+   },
+   "top_score": 1.1,
+   "top_headlines": [
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
+   ],
+   "hindi_owners": [
+    "India Today Group",
+    "NDTV",
+    "BBC"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
   {
    "id": "kh-20261113-Q37293",
    "qid": "Q37293",
@@ -4231,12 +4239,12 @@
    ],
    "hindi_headlines": [
     "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
+    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
     "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म",
     "100 से ज्यादा ऑडिशन के बाद रामायण सीरियल के लिए फाइनल हुआ था रावण का किरदार, केवट के रोल के लिए गए थे अरविंद त्रिवेदी!",
-    "मराठी में क्यों रिलीज नहीं हुई रामायण? NCP ने किया विरोध, छिड़ी भाषा पर जंग!",
     "'रामायण' ने रचा इतिहास, 1000 करोड़ पार करते ही मेकर्स ने रणबीर, साई और यश के नए धांसू पोस्टर्स से मचाया धमाल"
    ],
-   "hindi_news": 45,
+   "hindi_news": 43,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4341,177 +4349,12 @@
    "top_headlines": [],
    "hindi_owners": [
     "Network18",
+    "NDTV",
     "TV9 Network",
     "India Today Group",
     "Amar Ujala",
-    "NDTV",
     "DB Corp"
    ]
-  },
-  {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-   "story_keys": [
-    "company",
-    "cyberattack",
-    "hits",
-    "hour",
-    "not",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:16:11+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
-    "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
-    "Microsoft outage hits millions worldwide; company says fixes not 'working as expected'",
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
-   ],
-   "hindi_headlines": [
-    "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट आउटेज: 24 घंटे बाद भी नहीं मिली राहत, 45 करोड़ यूजर्स प्रभावित, साइबर हमले पर क्या बोली कंपनी?"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft works to restore Outlook and Teams after global outage",
-     "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "Microsoft ‘seeing positive results’ from attempts to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T08:16:11+00:00"
-    },
-    {
-     "title": "Microsoft rules out cyberattack amid global outage",
-     "url": "https://economictimes.indiatimes.com/news/international/business/microsoft-rules-out-cyberattack-as-global-outage-hits-outlook-teams-and-copilot/articleshow/135793622.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
-    },
-    {
-     "title": "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-     "url": "https://www.indiatoday.in/trending-news/story/microsoft-outage-becomes-the-internets-favourite-excuse-to-skip-work-memes-follow-3037928-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:55:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "NDTV",
-    "BBC"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -4560,8 +4403,7 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -4630,7 +4472,7 @@
     "outlet:BBC",
     "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
-    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+    "google-news:'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'"
    ],
    "top": {
     "IN": 13
@@ -4641,132 +4483,6 @@
    ],
    "hindi_owners": [
     "Network18"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-   "story_keys": [
-    "affair",
-    "another",
-    "employee",
-    "scandal",
-    "third"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:34:34+00:00",
-   "owners": [
-    "BBC",
-    "India Today Group",
-    "France Médias Monde",
-    "Bennett, Coleman & Co.",
-    "TV9 Network",
-    "NDTV"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-    "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang had a third affair with another Nvidia employee: Report",
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "hindi_headlines": [
-    "NVIDIA में बड़ा फेरबदल: जेन्सन हुआंग के जाने से AI की दुनिया में क्या-क्या बदलेगा?",
-    "Nvidia CEO News: कंपनी से बाहर होने के बाद जेन्सन हुआंग को लगा $108 मिलियन का झटका, अब कितनी रह गई नेटवर्थ?"
-   ],
-   "hindi_news": 2,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
-     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T22:10:28+00:00"
-    },
-    {
-     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T17:11:48+00:00"
-    },
-    {
-     "title": "Jensen Huang had a third affair with another Nvidia employee: Report",
-     "url": "https://timesofindia.indiatimes.com/world/us/third-alleged-affair-ousted-nvidia-ceo-jensen-huang-had-relationship-with-second-employee-report/articleshow/135786662.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:31:06+00:00"
-    },
-    {
-     "title": "Another affair? 3rd woman enters Huang's scandal",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:36:34+00:00"
-    },
-    {
-     "title": "Jensen Huang's third affair surfaces amid scandal that toppled Nvidia CEO",
-     "url": "https://www.indiatoday.in/world/story/ousted-nvidia-ceo-jensen-huangs-affair-with-another-employee-comes-to-light-amid-scandal-3037873-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:50:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
-    "outlet:NDTV",
-    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
-   ],
-   "top": {
-    "IN": 5
-   },
-   "top_score": 0.8,
-   "top_headlines": [
-    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
-   ],
-   "hindi_owners": [
-    "TV9 Network",
-    "NDTV"
    ],
    "audience": "india",
    "lane": "naam-niyam"
@@ -4788,23 +4504,24 @@
     "memoir"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:43:35+00:00",
+   "news_at": "2026-11-13T09:25:32+00:00",
    "owners": [
     "HT Media",
     "Network18",
-    "Bennett, Coleman & Co."
+    "Bennett, Coleman & Co.",
+    "The Hindu Group"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 300000,
+   "news": 300000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "RaGa urges BJP commentary on Sonia memoir",
+    "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
     "Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
-    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
-    "Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -4816,6 +4533,16 @@
    "abroad": false,
    "label_hi": "भारतीय जनता पार्टी",
    "reports": [
+    {
+     "title": "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
+     "url": "https://www.thehindu.com/news/national/sonia-gandhis-memoir-more-the-bhakts-comment-better-it-would-do-says-rahul-gandhi-on-bjps-criticisms/article71697277.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:32+00:00"
+    },
     {
      "title": "RaGa urges BJP commentary on Sonia memoir",
      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/more-the-bhakts-comment-better-it-would-do-rahul-gandhi-on-bjp-criticism-of-sonia-memoir/articleshow/135795895.cms",
@@ -4851,19 +4578,294 @@
     "outlet:HT Media",
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
     "google-news:Sharad Pawar faces internal revolt over possible NCP merger with BJP-led NDA",
     "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ...",
     "google-news:Why the manner of Gokul win has rankled sections of BJP, Shiv Sena"
    ],
    "top": {
-    "IN": 4,
-    "IN-nation": 4
+    "IN": 8,
+    "IN-nation": 3
    },
-   "top_score": 1.105,
+   "top_score": 0.92,
    "top_headlines": [
-    "Bookstores report strong early sales of Sonia Gandhi’s memoir",
-    "In Sonia Gandhi's 'Belonging', The Delhi Of 'Chashme Buddoor': How A Lost City Is A Character In Both",
-    "'He taps my phone': Rahul Gandhi's big charge on PM Modi as he challenges him for debate"
+    "\"Taps My Phone\": Rahul Gandhi's Big Charge Against PM Modi, Then Debate Dare",
+    "Bookstores report strong early sales of Sonia Gandhi’s memoir"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+   "story_keys": [
+    "judge",
+    "list"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T07:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:48:47+00:00"
+    },
+    {
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:32:18+00:00"
+    },
+    {
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:25:26+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "entertainment",
+   "category_hi": "मनोरंजन",
+   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+   "story_keys": [
+    "scandal"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T00:36:34+00:00",
+   "owners": [
+    "BBC",
+    "France Médias Monde",
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+    "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+    "Another affair? 3rd woman enters Huang's scandal",
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+   ],
+   "hindi_headlines": [
+    "NVIDIA में बड़ा फेरबदल: जेन्सन हुआंग के जाने से AI की दुनिया में क्या-क्या बदलेगा?",
+    "Nvidia CEO News: कंपनी से बाहर होने के बाद जेन्सन हुआंग को लगा $108 मिलियन का झटका, अब कितनी रह गई नेटवर्थ?"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Jensen Huang resigns as Nvidia CEO after mounting scandals",
+     "url": "https://www.france24.com/en/tv-shows/business/20261112-jensen-huang-resigns-as-nvidia-ceo-after-mounting-scandals",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:10:28+00:00"
+    },
+    {
+     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
+     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T17:11:48+00:00"
+    },
+    {
+     "title": "Another affair? 3rd woman enters Huang's scandal",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:36:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [
+    "TV9 Network",
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q122864715",
+   "qid": "Q122864715",
+   "title": "Special session of the Parliament of India",
+   "name": "Special session of the Parliament of India",
+   "phrase": "Special Parliament",
+   "person": false,
+   "kind": "explainer",
+   "category": "politics",
+   "category_hi": "राजनीति",
+   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+   "story_keys": [
+    "bill",
+    "delimitation",
+    "session"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:20:31+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+    "Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
+     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:20:31+00:00"
+    },
+    {
+     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T10:13:00+00:00"
+    },
+    {
+     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
+     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T09:43:21+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "google-news:Centre plans special Parliament session for Women's Reservation Bill, hopes to win by 15-18 votes"
+   ],
+   "top": {
+    "IN-nation": 12
+   },
+   "top_score": 0.27,
+   "top_headlines": [
+    "Why Centre may convene special sitting of Parliament before Winter Session"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -4902,7 +4904,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -4949,12 +4951,12 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:At 6.09%, retail inflation breaches RBI's upper tolerance limit after two years"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
    ],
@@ -4980,7 +4982,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:13:28+00:00",
+   "news_at": "2026-11-13T09:16:36+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -5021,7 +5023,7 @@
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:13:28+00:00"
+     "at": "2026-11-13T09:16:36+00:00"
     },
     {
      "title": "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
@@ -5095,101 +5097,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:22:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:22:13+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
    "id": "kh-20261113-Q7747",
    "qid": "Q7747",
    "title": "Vladimir Putin",
@@ -5201,7 +5108,6 @@
    "category_hi": "कूटनीति",
    "story": "U.S. officials set to meet with Putin, Zelenskyy following Abu Dhabi peace talks",
    "story_keys": [
-    "envoy",
     "meet",
     "peace",
     "talk"
@@ -5210,21 +5116,17 @@
    "news_at": "2026-11-13T06:09:58+00:00",
    "owners": [
     "NPR",
-    "France Médias Monde",
     "Guardian Media Group",
-    "Al Jazeera Media Network",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "U.S. officials set to meet with Putin, Zelenskyy following Abu Dhabi peace talks",
     "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-    "Russia's Vladimir Putin suggests no Ukraine compromise in meeting with US envoys",
     "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-    "US envoys shuttle between Putin and Zelenskyy",
     "Putin Agrees To Let European Representatives Join Ukraine Peace Talks"
    ],
    "hindi_headlines": [],
@@ -5235,16 +5137,6 @@
    "abroad": true,
    "label_hi": "व्लादिमीर पुतिन",
    "reports": [
-    {
-     "title": "Russia's Vladimir Putin suggests no Ukraine compromise in meeting with US envoys",
-     "url": "https://www.france24.com/en/video/20261112-russia-s-vladimir-putin-suggests-no-ukraine-compromise-in-meeting-with-us-envoys",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T16:46:14+00:00"
-    },
     {
      "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
      "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
@@ -5264,16 +5156,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-12T09:38:46+00:00"
-    },
-    {
-     "title": "US envoys shuttle between Putin and Zelenskyy",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:12:01+00:00"
     },
     {
      "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
@@ -5298,102 +5180,13 @@
    ],
    "via": [
     "outlet:NPR",
-    "outlet:France Médias Monde",
     "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
     "outlet:NDTV"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
-  },
-  {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-   "story_keys": [
-    "bill",
-    "delimitation",
-    "session"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
-    },
-    {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
-    },
-    {
-     "title": "Govt plans special session of Parliament to pass women's quota amendment bill, confident of 15-18 vote margin",
-     "url": "https://www.hindustantimes.com/india-news/govt-plans-special-session-of-parliament-to-pass-women-s-quota-amendment-bill-confident-of-15-18-vote-margin-101794476601383.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T09:43:21+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN-nation": 11
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Why Centre may convene special sitting of Parliament before Winter Session"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261113-Q35525",
@@ -5765,94 +5558,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-   "story_keys": [
-    "microsoft",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:00:45+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंडीगो",
-   "reports": [
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:00:45+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue urgent alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft outage enters second day; company says not aware of malicious activity"
-   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
