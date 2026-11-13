@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T12:33:10+00:00",
+ "at": "2026-11-13T12:45:23+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -65,10 +65,11 @@
     "The Hindu Group",
     "Network18",
     "Amar Ujala",
-    "BBC"
+    "BBC",
+    "TV9 Network"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -83,9 +84,10 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
     "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -150,13 +152,14 @@
     "outlet:Network18",
     "outlet:Amar Ujala",
     "outlet:BBC",
+    "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 12
+    "IN": 13
    },
-   "top_score": 0.45,
+   "top_score": 0.4,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -174,7 +177,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
     "fix",
     "hits",
@@ -186,7 +189,7 @@
     "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:29:18+00:00",
+   "news_at": "2026-11-13T12:37:59+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
@@ -205,12 +208,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
     "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
     "Widespread outage hits Microsoft apps",
     "Failed health check, elevated load, server restart: What led to the Microsoft outage",
     "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft rules out cyberattack amid global outage"
+    "Microsoft rules out cyberattack amid global outage",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
    ],
    "hindi_headlines": [
     "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
@@ -267,6 +270,16 @@
      "at": "2026-11-13T12:16:44+00:00"
     },
     {
+     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:37:59+00:00"
+    },
+    {
      "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
      "outlet": "Times of India",
@@ -295,16 +308,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
     }
    ],
    "via": [
@@ -319,21 +322,20 @@
     "outlet:NDTV",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
    "top": {
-    "IN": 6
+    "IN": 11
    },
-   "top_score": 0.75,
+   "top_score": 0.5,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
    "hindi_owners": [
     "India Today Group",
     "TV9 Network",
     "HT Media",
-    "NDTV",
-    "BBC"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "other"
@@ -377,13 +379,13 @@
     "Anupam reveals he postponed dubbing for Jatayu in Ramayana"
    ],
    "hindi_headlines": [
+    "रामायण देखने के लिए कितने रुपये करने होंगे खर्च? BookMyShow पर ₹339 से ₹2,400 तक पहुंची टिकट की कीमत, जानें शहरों के रेट",
     "वर्ल्ड सिनेमा में लहराया रामायण का परचम, बनी सबसे ज्यादा स्क्रीन्स वाली मूवी, अवतार-एवेंजर्स एंडगेम से भी निकली आगे",
-    "लक्ष्मण सुनील लहरी ने रणबीर कपूर की रामायण पर उठाए सवाल, अरुण गोविल के दशरथ बनने पर भी प्रतिक्रिया",
     "20 Records Broken By Ramayana: रामायण ने बॉक्स ऑफिस पर रचा इतिहास, 8 दिनों में बनाए 20 बड़े रिकॉर्ड",
     "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
     "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से.."
    ],
-   "hindi_news": 37,
+   "hindi_news": 36,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -437,11 +439,9 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
-    "TV9 Network",
     "NDTV",
-    "Network18",
-    "India Today Group",
-    "Amar Ujala"
+    "TV9 Network",
+    "Network18"
    ]
   },
   {
@@ -549,6 +549,183 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q279343",
+   "qid": "Q279343",
+   "title": "Namma Metro",
+   "name": "Namma Metro",
+   "phrase": "Bengaluru Metro",
+   "person": false,
+   "kind": "explainer",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+   "story_keys": [
+    "cost",
+    "inaugurate"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T12:15:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बेंगलूरु मेट्रो",
+   "reports": [
+    {
+     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:15:57+00:00"
+    },
+    {
+     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:56:46+00:00"
+    },
+    {
+     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:49:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "top": {
+    "IN": 3,
+    "IN-nation": 6
+   },
+   "top_score": 1.125,
+   "top_headlines": [
+    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 182094,
@@ -648,7 +825,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:33:53.990116+00:00",
+   "news_at": "2026-11-13T12:46:10.273243+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -747,9 +924,9 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
@@ -769,32 +946,28 @@
    "category_hi": "समाचार",
    "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
    "story_keys": [
-    "affair",
     "fall",
-    "resign",
     "rise",
     "scandal",
     "tech"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T11:35:10+00:00",
+   "news_at": "2026-11-13T10:56:22+00:00",
    "owners": [
     "BBC",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "India Today Group",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
     "Another affair? 3rd woman enters Huang's scandal",
     "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns",
-    "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations"
+    "Fallout from Nvidia scandal spreads as Huang resigns"
    ],
    "hindi_headlines": [
     "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
@@ -827,16 +1000,6 @@
      "at": "2026-11-12T17:11:48+00:00"
     },
     {
-     "title": "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-steps-down-amid-controversies-and-federal-scrutiny-ytvd-3038243-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:35:10+00:00"
-    },
-    {
      "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
      "outlet": "The Economic Times",
@@ -861,15 +1024,14 @@
     "outlet:BBC",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 11
+    "IN": 14
    },
-   "top_score": 0.5,
+   "top_score": 0.35,
    "top_headlines": [
-    "Nvidia’s Huang, Lutnick summoned to testify to US Senate",
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
     "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
    ],
    "hindi_owners": [
@@ -877,91 +1039,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q124540932",
-   "qid": "Q124540932",
-   "title": "Mahli Beardman",
-   "name": "Mahli Beardman",
-   "phrase": "Mahli Beardman",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-   "story_keys": [
-    "debut",
-    "seal",
-    "serie"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:47:40+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-    "Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:47:40+00:00"
-    },
-    {
-     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:32:15+00:00"
-    },
-    {
-     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:51:16+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q796994",
@@ -1055,94 +1132,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-   "story_keys": [
-    "cost",
-    "inaugurate"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
-   "reports": [
-    {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
-    },
-    {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
-    },
-    {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
-   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -1280,6 +1269,92 @@
    "category": "conflict",
    "date": "2026-10-21",
    "coords": null,
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-13T12:30:18+00:00",
+   "headlines": [
+    "New York is running out of room for its waste even with Statue of Liberty sized landfill",
+    "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:New York is running out of room for its waste even with Statue of Liberty sized landfill",
+    "google-news:New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
+    "outlet:Guardian Media Group",
+    "outlet:NDTV"
+   ],
+   "owners": [
+    "Guardian Media Group",
+    "NDTV"
+   ],
+   "reports": [
+    {
+     "title": "New York is running out of room for its waste even with Statue of Liberty sized landfill",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/new-york-seneca-meadows-landfill",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:30:18+00:00"
+    },
+    {
+     "title": "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
+     "url": "https://sports.ndtv.com/us/nfl/new-york-giants-stick-with-kicker-dominic-zvada-after-costly-miss-against-washington-commanders-12322331#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:52:20+00:00"
+    },
+    {
+     "title": "Jayden Daniels Turns Two Interceptions Into Late-Game Heroics As Washington Commanders Stun New York Giants",
+     "url": "https://sports.ndtv.com/us/nfl/jayden-daniels-turns-two-interceptions-into-late-game-heroics-as-washington-commanders-stun-new-york-giants-12321897#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:19:04+00:00"
+    },
+    {
+     "title": "Cam Skattebo Turns A Sideline Scare Into A Two-Touchdown Night For The New York Giants",
+     "url": "https://sports.ndtv.com/us/nfl/cam-skattebo-turns-a-sideline-scare-into-a-two-touchdown-night-for-the-new-york-giants-12321836#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:18:05+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.63897,
+    -73.95383
+   ],
    "has_coords": true,
    "top": {},
    "top_score": 0.0,
@@ -1439,76 +1514,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q142131356",
-   "title": "2026 New York City building collapse",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-13T11:52:20+00:00",
-   "headlines": [
-    "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "google-news:New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
-    "outlet:NDTV"
-   ],
-   "owners": [
-    "NDTV"
-   ],
-   "reports": [
-    {
-     "title": "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
-     "url": "https://sports.ndtv.com/us/nfl/new-york-giants-stick-with-kicker-dominic-zvada-after-costly-miss-against-washington-commanders-12322331#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:52:20+00:00"
-    },
-    {
-     "title": "Jayden Daniels Turns Two Interceptions Into Late-Game Heroics As Washington Commanders Stun New York Giants",
-     "url": "https://sports.ndtv.com/us/nfl/jayden-daniels-turns-two-interceptions-into-late-game-heroics-as-washington-commanders-stun-new-york-giants-12321897#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:19:04+00:00"
-    },
-    {
-     "title": "Cam Skattebo Turns A Sideline Scare Into A Two-Touchdown Night For The New York Giants",
-     "url": "https://sports.ndtv.com/us/nfl/cam-skattebo-turns-a-sideline-scare-into-a-two-touchdown-night-for-the-new-york-giants-12321836#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:18:05+00:00"
-    }
-   ],
-   "id": "wk-Q142131356",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-11",
-   "coords": [
-    40.63897,
-    -73.95383
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   },
   {
    "qid": "Q142077465",
@@ -1760,6 +1765,98 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261113-Q279343",
+   "qid": "Q279343",
+   "title": "Namma Metro",
+   "name": "Namma Metro",
+   "phrase": "Bengaluru Metro",
+   "person": false,
+   "kind": "explainer",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+   "story_keys": [
+    "cost",
+    "inaugurate"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T12:15:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बेंगलूरु मेट्रो",
+   "reports": [
+    {
+     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:15:57+00:00"
+    },
+    {
+     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:56:46+00:00"
+    },
+    {
+     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:49:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "top": {
+    "IN": 3,
+    "IN-nation": 6
+   },
+   "top_score": 1.125,
+   "top_headlines": [
+    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "wk-Q2723357",
    "qid": "Q2723357",
    "title": "Moushumi Chatterjee",
@@ -1891,10 +1988,11 @@
     "The Hindu Group",
     "Network18",
     "Amar Ujala",
-    "BBC"
+    "BBC",
+    "TV9 Network"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1909,9 +2007,10 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
     "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -1976,193 +2075,20 @@
     "outlet:Network18",
     "outlet:Amar Ujala",
     "outlet:BBC",
+    "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 12
+    "IN": 13
    },
-   "top_score": 0.45,
+   "top_score": 0.4,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-   "story_keys": [
-    "fix",
-    "hits",
-    "hour",
-    "issue",
-    "out",
-    "outage",
-    "rule",
-    "service"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:29:18+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle",
-    "France Médias Monde",
-    "Guardian Media Group",
-    "TV9 Network",
-    "NDTV",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
-    "Widespread outage hits Microsoft apps",
-    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-    "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft rules out cyberattack amid global outage"
-   ],
-   "hindi_headlines": [
-    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
-    "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
-    "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
-    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
-     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T09:59:22+00:00"
-    },
-    {
-     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
-     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:29:18+00:00"
-    },
-    {
-     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:16:44+00:00"
-    },
-    {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Deutsche Welle",
-    "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:TV9 Network",
-    "outlet:NDTV",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "TV9 Network",
-    "HT Media",
-    "NDTV",
-    "BBC"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q19891094",
@@ -2185,7 +2111,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:33:53.990116+00:00",
+   "news_at": "2026-11-13T12:46:10.273243+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -2284,9 +2210,9 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
@@ -2295,90 +2221,175 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
    "person": false,
    "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
-    "cost",
-    "inaugurate"
+    "fix",
+    "hits",
+    "hour",
+    "issue",
+    "out",
+    "outage",
+    "rule",
+    "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
+   "news_at": "2026-11-13T12:37:59+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "The Hindu Group",
     "HT Media",
-    "The Hindu Group"
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle",
+    "France Médias Monde",
+    "Guardian Media Group",
+    "TV9 Network",
+    "NDTV",
+    "BBC",
+    "Amar Ujala"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances"
+    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
+    "Widespread outage hits Microsoft apps",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+    "Microsoft Outage: Will Indian flights be disrupted?",
+    "Microsoft rules out cyberattack amid global outage",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
+    "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
+    "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
    ],
-   "region": "india",
+   "hindi_news": 8,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
+     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
+     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
+     "at": "2026-11-13T09:59:22+00:00"
     },
     {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
+     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
+     "at": "2026-11-13T07:46:00+00:00"
     },
     {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:29:18+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:37:59+00:00"
+    },
+    {
+     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
+     "at": "2026-11-13T10:46:25+00:00"
+    },
+    {
+     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
+     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:40:21+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
     "outlet:HT Media",
-    "outlet:The Hindu Group"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:TV9 Network",
+    "outlet:NDTV",
+    "outlet:BBC",
+    "outlet:Amar Ujala",
+    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
    "top": {
-    "IN": 2
+    "IN": 11
    },
-   "top_score": 0.95,
+   "top_score": 0.5,
    "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "India Today Group",
+    "TV9 Network",
+    "HT Media",
+    "NDTV"
+   ],
    "audience": "india",
    "lane": "other"
   },
@@ -2671,6 +2682,37 @@
    "lane": "other"
   },
   {
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261113-Q305177",
    "qid": "Q305177",
    "title": "Jensen Huang",
@@ -2682,32 +2724,28 @@
    "category_hi": "समाचार",
    "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
    "story_keys": [
-    "affair",
     "fall",
-    "resign",
     "rise",
     "scandal",
     "tech"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T11:35:10+00:00",
+   "news_at": "2026-11-13T10:56:22+00:00",
    "owners": [
     "BBC",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "India Today Group",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
     "Another affair? 3rd woman enters Huang's scandal",
     "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns",
-    "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations"
+    "Fallout from Nvidia scandal spreads as Huang resigns"
    ],
    "hindi_headlines": [
     "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
@@ -2740,16 +2778,6 @@
      "at": "2026-11-12T17:11:48+00:00"
     },
     {
-     "title": "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-steps-down-amid-controversies-and-federal-scrutiny-ytvd-3038243-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:35:10+00:00"
-    },
-    {
      "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
      "outlet": "The Economic Times",
@@ -2774,15 +2802,14 @@
     "outlet:BBC",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 11
+    "IN": 14
    },
-   "top_score": 0.5,
+   "top_score": 0.35,
    "top_headlines": [
-    "Nvidia’s Huang, Lutnick summoned to testify to US Senate",
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
     "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
    ],
    "hindi_owners": [
@@ -2792,35 +2819,89 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "abroad": true,
    "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "qid": "Q4795757",
@@ -2882,91 +2963,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q124540932",
-   "qid": "Q124540932",
-   "title": "Mahli Beardman",
-   "name": "Mahli Beardman",
-   "phrase": "Mahli Beardman",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-   "story_keys": [
-    "debut",
-    "seal",
-    "serie"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:47:40+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-    "Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:47:40+00:00"
-    },
-    {
-     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:32:15+00:00"
-    },
-    {
-     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:51:16+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": "Q533583",
@@ -3423,21 +3419,21 @@
  ],
  "notes": [
   "revisit Q37293: last Short 9 h ago; revisit kh-20261113-Q10218-update: 3 owners' new reports on Rahul Gandhi (941 views before); revisit Q9543: already revisited today; revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (801 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its last Short; revisit Q200667 (225 views): 0 owners repor",
-  "outlets: 1740 headlines from 47 feeds (18 owners), 17 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
+  "outlets: 1750 headlines from 47 feeds (18 owners), 18 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
   "explainers: 10 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q37293, wk-Q2723357; dropped: explainer EU's Kallas: fewer than 3 owners' headlines name it and the story; explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Sunetra Pawar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "outlet pib-hi: HTTPError: 404 Client Error: Not Found for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3&reg=3",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
-  "outlet tv9-hi-sports: ReadTimeout: HTTPSConnectionPool(host='www.tv9hindi.com', port=443): Read timed out. (read timeout=30)"
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1740,
+  "headlines": 1750,
   "feeds": 47,
   "owners": 18,
-  "matched": 17,
-  "corroborated": 11
+  "matched": 18,
+  "corroborated": 12
  },
  "emerging": [],
  "explainers": [
@@ -3469,10 +3465,11 @@
     "The Hindu Group",
     "Network18",
     "Amar Ujala",
-    "BBC"
+    "BBC",
+    "TV9 Network"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3487,9 +3484,10 @@
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
     "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
     "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
     "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3554,13 +3552,14 @@
     "outlet:Network18",
     "outlet:Amar Ujala",
     "outlet:BBC",
+    "outlet:TV9 Network",
     "google-news:Cummins threw Khawaja under the bus - David Warner",
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 12
+    "IN": 13
    },
-   "top_score": 0.45,
+   "top_score": 0.4,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -3578,7 +3577,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
     "fix",
     "hits",
@@ -3590,7 +3589,7 @@
     "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:29:18+00:00",
+   "news_at": "2026-11-13T12:37:59+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
@@ -3609,12 +3608,12 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
     "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
     "Widespread outage hits Microsoft apps",
     "Failed health check, elevated load, server restart: What led to the Microsoft outage",
     "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft rules out cyberattack amid global outage"
+    "Microsoft rules out cyberattack amid global outage",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
    ],
    "hindi_headlines": [
     "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
@@ -3671,6 +3670,16 @@
      "at": "2026-11-13T12:16:44+00:00"
     },
     {
+     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:37:59+00:00"
+    },
+    {
      "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
      "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
      "outlet": "Times of India",
@@ -3699,16 +3708,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
     }
    ],
    "via": [
@@ -3723,21 +3722,20 @@
     "outlet:NDTV",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
    "top": {
-    "IN": 6
+    "IN": 11
    },
-   "top_score": 0.75,
+   "top_score": 0.5,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
    ],
    "hindi_owners": [
     "India Today Group",
     "TV9 Network",
     "HT Media",
-    "NDTV",
-    "BBC"
+    "NDTV"
    ],
    "audience": "india",
    "lane": "other"
@@ -3781,13 +3779,13 @@
     "Anupam reveals he postponed dubbing for Jatayu in Ramayana"
    ],
    "hindi_headlines": [
+    "रामायण देखने के लिए कितने रुपये करने होंगे खर्च? BookMyShow पर ₹339 से ₹2,400 तक पहुंची टिकट की कीमत, जानें शहरों के रेट",
     "वर्ल्ड सिनेमा में लहराया रामायण का परचम, बनी सबसे ज्यादा स्क्रीन्स वाली मूवी, अवतार-एवेंजर्स एंडगेम से भी निकली आगे",
-    "लक्ष्मण सुनील लहरी ने रणबीर कपूर की रामायण पर उठाए सवाल, अरुण गोविल के दशरथ बनने पर भी प्रतिक्रिया",
     "20 Records Broken By Ramayana: रामायण ने बॉक्स ऑफिस पर रचा इतिहास, 8 दिनों में बनाए 20 बड़े रिकॉर्ड",
     "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
     "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से.."
    ],
-   "hindi_news": 37,
+   "hindi_news": 36,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3841,11 +3839,9 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
-    "TV9 Network",
     "NDTV",
-    "Network18",
-    "India Today Group",
-    "Amar Ujala"
+    "TV9 Network",
+    "Network18"
    ]
   },
   {
@@ -3953,6 +3949,183 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q279343",
+   "qid": "Q279343",
+   "title": "Namma Metro",
+   "name": "Namma Metro",
+   "phrase": "Bengaluru Metro",
+   "person": false,
+   "kind": "explainer",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+   "story_keys": [
+    "cost",
+    "inaugurate"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T12:15:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बेंगलूरु मेट्रो",
+   "reports": [
+    {
+     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
+     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:15:57+00:00"
+    },
+    {
+     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
+     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:56:46+00:00"
+    },
+    {
+     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:49:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "top": {
+    "IN": 3,
+    "IN-nation": 6
+   },
+   "top_score": 1.125,
+   "top_headlines": [
+    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
+    "Political funding slugfest may cost Bengaluru Metro dearly"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261113-Q19891094",
    "qid": "Q19891094",
    "title": "Pink Line (Delhi Metro)",
@@ -3973,7 +4146,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:33:53.990116+00:00",
+   "news_at": "2026-11-13T12:46:10.273243+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -4072,9 +4245,9 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
@@ -4094,32 +4267,28 @@
    "category_hi": "समाचार",
    "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
    "story_keys": [
-    "affair",
     "fall",
-    "resign",
     "rise",
     "scandal",
     "tech"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T11:35:10+00:00",
+   "news_at": "2026-11-13T10:56:22+00:00",
    "owners": [
     "BBC",
     "Bennett, Coleman & Co.",
     "France Médias Monde",
-    "India Today Group",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
     "Another affair? 3rd woman enters Huang's scandal",
     "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns",
-    "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations"
+    "Fallout from Nvidia scandal spreads as Huang resigns"
    ],
    "hindi_headlines": [
     "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
@@ -4152,16 +4321,6 @@
      "at": "2026-11-12T17:11:48+00:00"
     },
     {
-     "title": "NVIDIA CEO Jensen Huang resigns amid affairs and federal investigations",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-steps-down-amid-controversies-and-federal-scrutiny-ytvd-3038243-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:35:10+00:00"
-    },
-    {
      "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
      "outlet": "The Economic Times",
@@ -4186,15 +4345,14 @@
     "outlet:BBC",
     "outlet:Bennett, Coleman & Co.",
     "outlet:France Médias Monde",
-    "outlet:India Today Group",
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 11
+    "IN": 14
    },
-   "top_score": 0.5,
+   "top_score": 0.35,
    "top_headlines": [
-    "Nvidia’s Huang, Lutnick summoned to testify to US Senate",
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
     "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
    ],
    "hindi_owners": [
@@ -4202,91 +4360,6 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q124540932",
-   "qid": "Q124540932",
-   "title": "Mahli Beardman",
-   "name": "Mahli Beardman",
-   "phrase": "Mahli Beardman",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-   "story_keys": [
-    "debut",
-    "seal",
-    "serie"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:47:40+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-    "Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
-     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:47:40+00:00"
-    },
-    {
-     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:32:15+00:00"
-    },
-    {
-     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
-     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:51:16+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Mahli Beardman leads rout of England with six-for on ODI debut"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q796994",
@@ -4380,94 +4453,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-   "story_keys": [
-    "cost",
-    "inaugurate"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
-   "reports": [
-    {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
-    },
-    {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
-    },
-    {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
-   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
