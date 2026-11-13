@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T20:32:20+00:00",
+ "at": "2026-11-13T20:46:14+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -165,9 +165,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -320,14 +320,14 @@
     "outlet:India Today Group",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "google-news:Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "top": {
     "IN": 5
    },
    "top_score": 0.8,
    "top_headlines": [
-    "Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "hindi_owners": [
     "NDTV",
@@ -357,10 +357,11 @@
     "Guardian Media Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -369,12 +370,13 @@
     "Behind the mystery of Nvidia's chips & empty offices",
     "US treasury secy flags 'lots of leakage' in US chip exports, slams Nvidia & Lutnick",
     "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy"
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
    ],
    "hindi_headlines": [
+    "ट्रंप तक पहुंची एनवीडिया विवाद की आंच: कैबिनेट में तकरार, लुटनिक पर भड़के बेसेंट बोले- मैं परेशान हो चुका हूं",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -436,8 +438,9 @@
     "outlet:Guardian Media Group",
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:DB Corp",
-    "google-news:U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "google-news:Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
@@ -446,11 +449,13 @@
    },
    "top_score": 1.0,
    "top_headlines": [
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "rajneeti"
   },
@@ -862,12 +867,108 @@
    },
    "top_score": 1.25,
    "top_headlines": [
-    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "At least 24 killed after bus collides with truck in north-east India"
+    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T20:48:51.250453+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-13T20:48:51.250453+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    },
+    {
+     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T23:10:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q2866609",
@@ -879,14 +980,16 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+   "story": "Gambhir concerned about India's batting collapses ahead of World Cup",
    "story_keys": [
     "against",
     "batting",
+    "collapse",
+    "concerned",
     "final"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:06:50+00:00",
+   "news_at": "2026-11-13T20:22:32+00:00",
    "owners": [
     "The Hindu Group",
     "HT Media",
@@ -898,6 +1001,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Gambhir concerned about India's batting collapses ahead of World Cup",
     "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
     "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
@@ -912,6 +1016,16 @@
    "abroad": false,
    "label_hi": "एशिया कप",
    "reports": [
+    {
+     "title": "Gambhir concerned about India's batting collapses ahead of World Cup",
+     "url": "https://www.thehindu.com/sport/cricket/gambhir-concerned-about-indias-batting-collapses-ahead-of-world-cup/article71699589.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T20:22:32+00:00"
+    },
     {
      "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
      "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
@@ -1052,6 +1166,93 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261114-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+   "story_keys": [
+    "captain",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T20:32:42+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Australia captain Cummins denies involvement in ‘Sandpapergate’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T20:32:42+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261114-Q124540932",
    "qid": "Q124540932",
    "title": "Mahli Beardman",
@@ -1163,6 +1364,7 @@
    "traffic": 0,
    "headlines": [
     "Paytm's wallet business gets a fresh lease of life with RBI nod",
+    "Paytm gets RBI nod for pre-paid instruments",
     "Paytm's wallet story gets new twist with RBI nod",
     "Paytm gets RBI’s in-principle nod to revive wallet business; shares hit record high"
    ],
@@ -1205,6 +1407,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T09:44:25+00:00"
+    },
+    {
+     "title": "Paytm gets RBI nod for pre-paid instruments",
+     "url": "https://economictimes.indiatimes.com/industry/banking/finance/paytm-gets-rbi-preliminary-nod-for-pre-paid-instruments-including-wallet/articleshow/135797560.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:39:45+00:00"
     }
    ],
    "via": [
@@ -1296,9 +1508,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Turkiye and Qatar sign mutual defence agreement"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -1333,6 +1549,67 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio",
+    "From the India Today archives (1988) | Arpita Singh and the new era of artists"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "google-news:From the India Today archives (1988) | Arpita Singh and the new era of artists",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    },
+    {
+     "title": "From the India Today archives (1988) | Arpita Singh and the new era of artists",
+     "url": "https://www.indiatoday.in/india-today-insight/story/from-the-india-today-archives-1988-arpita-singh-and-the-new-era-of-artists-3037621-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:54:32+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q533583",
@@ -1425,6 +1702,55 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T10:49:45+00:00",
+   "headlines": [
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "सी एस कर्णन",
+   "via": [
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
+   "id": "wk-Q29879031",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-13",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "obituary"
   },
   {
@@ -1553,6 +1879,157 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q114079679",
+   "title": "Solange Alexandre",
+   "fame": 11379,
+   "views": 11379,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q114079679",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6662427",
+   "title": "Lloyd Geering",
+   "fame": 11145,
+   "views": 11145,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6662427",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-05",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q18613657",
+   "title": "Alexander Darchiev",
+   "fame": 9579,
+   "views": 9579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18613657",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7308546",
+   "title": "Regina Torné",
+   "fame": 9120,
+   "views": 9120,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7308546",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q116992476",
+   "title": "Jesús de Miguel",
+   "fame": 8198,
+   "views": 8198,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q116992476",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-03",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   }
  ],
  "candidates": [
@@ -1577,10 +2054,11 @@
     "Guardian Media Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1589,12 +2067,13 @@
     "Behind the mystery of Nvidia's chips & empty offices",
     "US treasury secy flags 'lots of leakage' in US chip exports, slams Nvidia & Lutnick",
     "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy"
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
    ],
    "hindi_headlines": [
+    "ट्रंप तक पहुंची एनवीडिया विवाद की आंच: कैबिनेट में तकरार, लुटनिक पर भड़के बेसेंट बोले- मैं परेशान हो चुका हूं",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -1656,8 +2135,9 @@
     "outlet:Guardian Media Group",
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:DB Corp",
-    "google-news:U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "google-news:Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
@@ -1666,11 +2146,13 @@
    },
    "top_score": 1.0,
    "top_headlines": [
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "rajneeti"
   },
@@ -1807,9 +2289,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -1962,14 +2444,14 @@
     "outlet:India Today Group",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "google-news:Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "top": {
     "IN": 5
    },
    "top_score": 0.8,
    "top_headlines": [
-    "Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "hindi_owners": [
     "NDTV",
@@ -2089,8 +2571,7 @@
    },
    "top_score": 1.25,
    "top_headlines": [
-    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "At least 24 killed after bus collides with truck in north-east India"
+    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2487,6 +2968,55 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T10:49:45+00:00",
+   "headlines": [
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "सी एस कर्णन",
+   "via": [
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
+   "id": "wk-Q29879031",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-13",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261114-Q944085",
    "qid": "Q944085",
    "title": "Reserve Bank of India",
@@ -2517,6 +3047,7 @@
    "traffic": 0,
    "headlines": [
     "Paytm's wallet business gets a fresh lease of life with RBI nod",
+    "Paytm gets RBI nod for pre-paid instruments",
     "Paytm's wallet story gets new twist with RBI nod",
     "Paytm gets RBI’s in-principle nod to revive wallet business; shares hit record high"
    ],
@@ -2559,6 +3090,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T09:44:25+00:00"
+    },
+    {
+     "title": "Paytm gets RBI nod for pre-paid instruments",
+     "url": "https://economictimes.indiatimes.com/industry/banking/finance/paytm-gets-rbi-preliminary-nod-for-pre-paid-instruments-including-wallet/articleshow/135797560.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:39:45+00:00"
     }
    ],
    "via": [
@@ -2572,6 +3113,181 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261114-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+   "story_keys": [
+    "captain",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T20:32:42+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Australia captain Cummins denies involvement in ‘Sandpapergate’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T20:32:42+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q7267164",
+   "qid": "Q7267164",
+   "title": "Qatar–Turkey relations",
+   "name": "Qatar–Turkey relations",
+   "phrase": "Turkey Qatar",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Turkiye and Qatar sign mutual defence agreement",
+   "story_keys": [
+    "agreement",
+    "defence",
+    "mutual",
+    "sign"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T17:47:35+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Turkiye and Qatar sign mutual defence agreement",
+    "Turkey, Qatar sign mutual defence pact: Presidency",
+    "Turkey And Qatar Sign Defence Agreement To Strengthen Ties"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Turkiye and Qatar sign mutual defence agreement",
+     "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T15:49:51+00:00"
+    },
+    {
+     "title": "Turkey And Qatar Sign Defence Agreement To Strengthen Ties",
+     "url": "https://www.ndtv.com/world-news/turkey-and-qatar-sign-defence-agreement-to-strengthen-ties-12324130#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:47:35+00:00"
+    },
+    {
+     "title": "Turkey, Qatar sign mutual defence pact: Presidency",
+     "url": "https://economictimes.indiatimes.com/news/defence/turkey-qatar-sign-mutual-defence-agreement-turkish-presidency-says/articleshow/135809416.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:11:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Turkiye and Qatar sign mutual defence agreement"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q315090",
@@ -2686,90 +3402,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q7267164",
-   "qid": "Q7267164",
-   "title": "Qatar–Turkey relations",
-   "name": "Qatar–Turkey relations",
-   "phrase": "Turkey Qatar",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Turkiye and Qatar sign mutual defence agreement",
-   "story_keys": [
-    "agreement",
-    "defence",
-    "mutual",
-    "sign"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T17:47:35+00:00",
-   "owners": [
-    "Al Jazeera Media Network",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Turkiye and Qatar sign mutual defence agreement",
-    "Turkey, Qatar sign mutual defence pact: Presidency",
-    "Turkey And Qatar Sign Defence Agreement To Strengthen Ties"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Turkiye and Qatar sign mutual defence agreement",
-     "url": "https://www.aljazeera.com/news/2026/11/13/turkiye-and-qatar-sign-mutual-defence-agreement?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T15:49:51+00:00"
-    },
-    {
-     "title": "Turkey And Qatar Sign Defence Agreement To Strengthen Ties",
-     "url": "https://www.ndtv.com/world-news/turkey-and-qatar-sign-defence-agreement-to-strengthen-ties-12324130#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:47:35+00:00"
-    },
-    {
-     "title": "Turkey, Qatar sign mutual defence pact: Presidency",
-     "url": "https://economictimes.indiatimes.com/news/defence/turkey-qatar-sign-mutual-defence-agreement-turkish-presidency-says/articleshow/135809416.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:11:13+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Al Jazeera Media Network",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261114-Q2866609",
    "qid": "Q2866609",
    "title": "Asia Cup",
@@ -2779,14 +3411,16 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+   "story": "Gambhir concerned about India's batting collapses ahead of World Cup",
    "story_keys": [
     "against",
     "batting",
+    "collapse",
+    "concerned",
     "final"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:06:50+00:00",
+   "news_at": "2026-11-13T20:22:32+00:00",
    "owners": [
     "The Hindu Group",
     "HT Media",
@@ -2798,6 +3432,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Gambhir concerned about India's batting collapses ahead of World Cup",
     "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
     "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
@@ -2812,6 +3447,16 @@
    "abroad": false,
    "label_hi": "एशिया कप",
    "reports": [
+    {
+     "title": "Gambhir concerned about India's batting collapses ahead of World Cup",
+     "url": "https://www.thehindu.com/sport/cricket/gambhir-concerned-about-indias-batting-collapses-ahead-of-world-cup/article71699589.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T20:22:32+00:00"
+    },
     {
      "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
      "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
@@ -2855,6 +3500,164 @@
    "hindi_owners": [
     "ABP Group"
    ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio",
+    "From the India Today archives (1988) | Arpita Singh and the new era of artists"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "google-news:From the India Today archives (1988) | Arpita Singh and the new era of artists",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    },
+    {
+     "title": "From the India Today archives (1988) | Arpita Singh and the new era of artists",
+     "url": "https://www.indiatoday.in/india-today-insight/story/from-the-india-today-archives-1988-arpita-singh-and-the-new-era-of-artists-3037621-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T13:54:32+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T20:48:51.250453+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-13T20:48:51.250453+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    },
+    {
+     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T23:10:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
@@ -3006,6 +3809,99 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q18613657",
+   "title": "Alexander Darchiev",
+   "fame": 9579,
+   "views": 9579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18613657",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q114079679",
+   "title": "Solange Alexandre",
+   "fame": 11379,
+   "views": 11379,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q114079679",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6662427",
+   "title": "Lloyd Geering",
+   "fame": 11145,
+   "views": 11145,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6662427",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-05",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -3483,20 +4379,20 @@
  ],
  "notes": [
   "revisit kh-20261114-Q10218-update: 4 owners' new reports on Rahul Gandhi (1011 views before); revisit kh-20261114-Q37293-update: 4 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 3 owners' new reports on Sonia Gandhi (805 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1761 headlines from 48 feeds (18 owners), 20 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
-  "explainers: 10 kh- stories (on): kh-20261114-Q3524804, kh-20261114-Q2283, kh-20261114-Q182477, kh-20261114-Q2364111; dropped: explainer Kallas: fewer than 3 owners' headlines name it and the story; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Shreyas Iyer: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1756 headlines from 48 feeds (18 owners), 23 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
+  "explainers: 12 kh- stories (on): kh-20261114-Q3524804, kh-20261114-Q2283, kh-20261114-Q182477, kh-20261114-Q2364111; dropped: explainer Kallas: fewer than 3 owners' headlines name it and the story; explainer Shreyas Iyer: fewer than 3 owners' headlines name it and the story; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre",
+  "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1761,
+  "headlines": 1756,
   "feeds": 48,
   "owners": 18,
-  "matched": 20,
-  "corroborated": 11
+  "matched": 23,
+  "corroborated": 14
  },
  "emerging": [
   {
@@ -3610,8 +4506,7 @@
    },
    "top_score": 1.25,
    "top_headlines": [
-    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "At least 24 killed after bus collides with truck in north-east India"
+    "Students among 24 dead in bus-truck collision in Assam’s Kaziranga"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -3752,9 +4647,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -3907,14 +4802,14 @@
     "outlet:India Today Group",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "google-news:Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "top": {
     "IN": 5
    },
    "top_score": 0.8,
    "top_headlines": [
-    "Microsoft apologises and explains what is causing Outlook, Teams outage; says: 'Not related to cyber or A"
+    "Microsoft outage: Company reports recovery progress, but services remain disrupted"
    ],
    "hindi_owners": [
     "NDTV",
@@ -3944,10 +4839,11 @@
     "Guardian Media Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
+    "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3956,12 +4852,13 @@
     "Behind the mystery of Nvidia's chips & empty offices",
     "US treasury secy flags 'lots of leakage' in US chip exports, slams Nvidia & Lutnick",
     "Military-linked Chinese university bought Nvidia H200 chips despite US blacklist, records show",
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy"
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
    ],
    "hindi_headlines": [
+    "ट्रंप तक पहुंची एनवीडिया विवाद की आंच: कैबिनेट में तकरार, लुटनिक पर भड़के बेसेंट बोले- मैं परेशान हो चुका हूं",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4023,8 +4920,9 @@
     "outlet:Guardian Media Group",
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala",
     "outlet:DB Corp",
-    "google-news:U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "google-news:Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
@@ -4033,11 +4931,13 @@
    },
    "top_score": 1.0,
    "top_headlines": [
-    "U.S. lawmakers summon Nvidia former CEO after affair with suspected spy",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r",
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia approached Arm CEO Haas to succeed Huang, FT reports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "rajneeti"
   },
@@ -4277,6 +5177,103 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T20:48:51.250453+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-13T20:48:51.250453+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    },
+    {
+     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T23:10:29+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261114-Q2866609",
    "qid": "Q2866609",
    "title": "Asia Cup",
@@ -4286,14 +5283,16 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+   "story": "Gambhir concerned about India's batting collapses ahead of World Cup",
    "story_keys": [
     "against",
     "batting",
+    "collapse",
+    "concerned",
     "final"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:06:50+00:00",
+   "news_at": "2026-11-13T20:22:32+00:00",
    "owners": [
     "The Hindu Group",
     "HT Media",
@@ -4305,6 +5304,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Gambhir concerned about India's batting collapses ahead of World Cup",
     "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
     "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
@@ -4319,6 +5319,16 @@
    "abroad": false,
    "label_hi": "एशिया कप",
    "reports": [
+    {
+     "title": "Gambhir concerned about India's batting collapses ahead of World Cup",
+     "url": "https://www.thehindu.com/sport/cricket/gambhir-concerned-about-indias-batting-collapses-ahead-of-world-cup/article71699589.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T20:22:32+00:00"
+    },
     {
      "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
      "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
@@ -4459,6 +5469,93 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261114-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+   "story_keys": [
+    "captain",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T20:32:42+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Australia captain Cummins denies involvement in ‘Sandpapergate’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T20:32:42+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261114-Q124540932",
    "qid": "Q124540932",
    "title": "Mahli Beardman",
@@ -4570,6 +5667,7 @@
    "traffic": 0,
    "headlines": [
     "Paytm's wallet business gets a fresh lease of life with RBI nod",
+    "Paytm gets RBI nod for pre-paid instruments",
     "Paytm's wallet story gets new twist with RBI nod",
     "Paytm gets RBI’s in-principle nod to revive wallet business; shares hit record high"
    ],
@@ -4612,6 +5710,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T09:44:25+00:00"
+    },
+    {
+     "title": "Paytm gets RBI nod for pre-paid instruments",
+     "url": "https://economictimes.indiatimes.com/industry/banking/finance/paytm-gets-rbi-preliminary-nod-for-pre-paid-instruments-including-wallet/articleshow/135797560.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:39:45+00:00"
     }
    ],
    "via": [
@@ -4703,9 +5811,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Turkiye and Qatar sign mutual defence agreement"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
