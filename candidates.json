@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T09:58:57+00:00",
+ "at": "2026-11-13T10:13:04+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -51,19 +51,22 @@
    "story_keys": [
     "company",
     "cyberattack",
+    "fix",
     "hits",
-    "outage"
+    "outage",
+    "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
+   "news_at": "2026-11-13T09:59:22+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
     "Deutsche Welle",
-    "Guardian Media Group",
     "NDTV",
+    "Guardian Media Group",
+    "France Médias Monde",
     "BBC"
    ],
    "fame": 400000,
@@ -72,26 +75,36 @@
    "traffic": 0,
    "headlines": [
     "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
     "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage"
    ],
    "hindi_headlines": [
-    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
    ],
-   "hindi_news": 5,
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
+    {
+     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
+     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T09:59:22+00:00"
+    },
     {
      "title": "Microsoft works to restore Outlook and Teams after global outage",
      "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
@@ -133,6 +146,16 @@
      "at": "2026-11-13T08:14:20+00:00"
     },
     {
+     "title": "Microsoft Outage: What Went Wrong And Why Is It Taking So Long To Fix It?",
+     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:37+00:00"
+    },
+    {
      "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
      "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
      "outlet": "India Today",
@@ -151,26 +174,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
     }
    ],
    "via": [
@@ -179,192 +182,30 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
     "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:France Médias Monde",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
    ],
    "top": {
     "IN": 1,
-    "IN-hi": 17
+    "IN-hi": 18
    },
-   "top_score": 1.1,
+   "top_score": 1.075,
    "top_headlines": [
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
+    "HT Media",
     "India Today Group",
     "NDTV",
     "BBC"
    ],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q37293",
-   "qid": "Q37293",
-   "title": "Ramayana",
-   "name": "Ramayana",
-   "phrase": "Ramayana",
-   "person": false,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-   "story_keys": [
-    "box",
-    "collection",
-    "crore",
-    "crosse",
-    "fastest",
-    "film",
-    "office",
-    "worldwide"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:57:36+00:00",
-   "owners": [
-    "NDTV",
-    "HT Media",
-    "India Today Group",
-    "TV9 Network",
-    "Network18",
-    "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
-   ],
-   "fame": 400000,
-   "news": 400000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-    "'You Can't Treat Ramayana Like Baahubali': Mukesh Khanna Blasts Ranbir Kapoor Film Over 'Creative Liberties'",
-    "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
-    "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
-    "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
-    "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
-   ],
-   "hindi_headlines": [
-    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
-    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
-    "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
-    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
-    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
-   ],
-   "hindi_news": 45,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "रामायण",
-   "reports": [
-    {
-     "title": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-worldwide-box-office-collection-day-8-ranbir-kapoor-yash-sai-pallavi-film-1000-crore-rrr-kgf-chapter-2-jawan-nitesh-tiwari-namit-malhotra-101794540846417.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:57:36+00:00"
-    },
-    {
-     "title": "OG Sita Dipika Chikhlia says she always knew Ranbir Kapoor, Yash's Ramayana would be a hit as it crosses ₹1000 crore worldwide, praises VFX and cast",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/og-sita-dipika-chikhlia-says-she-always-knew-ranbir-kapoor-yashs-ramayana-would-be-a-hit-as-it-crosses-1000-crore-worldwide-praises-vfx-and-cast-101794539772178.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:39:55+00:00"
-    },
-    {
-     "title": "Ramayana: All The Box Office Records Broken By Ranbir Kapoor's Film So Far",
-     "url": "https://www.ndtv.com/entertainment/ramayana-all-the-box-office-records-broken-by-ranbir-kapoor-film-so-far-12320459#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:06:12+00:00"
-    },
-    {
-     "title": "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide",
-     "url": "https://www.ndtv.com/entertainment/ramayana-to-dhurandhar-2-fastest-indian-films-to-cross-rs-1-000-crore-worldwide-12320407#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:47:31+00:00"
-    },
-    {
-     "title": "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
-     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-enters-1000-crore-club-in-8-days-beats-animal-and-pathaan-in-india-ranbir-sai-pallavi-yash-3037882-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:47:49+00:00"
-    },
-    {
-     "title": "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-8-ranbir-kapoor-yash-film-remains-steady-crosses-560-crore-to-beat-pathaan-animal-lifetime-hauls-101794501331061.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:01:41+00:00"
-    },
-    {
-     "title": "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
-     "url": "https://www.ndtv.com/entertainment/as-ramayana-nears-rs-1-000-crore-worldwide-ravi-dubey-shares-candid-bts-pics-with-ranbir-kapoor-sai-pallavi-12317301#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:22:04+00:00"
-    },
-    {
-     "title": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-crosses-1000-crore-at-box-office-in-8-days-ranbir-kapoor-yash-sai-pallavi-starrer-is-the-third-fastest-indian-film-to-do-so-nitesh-tiwari-101794469689597.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:38:59+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "outlet:DB Corp",
-    "outlet:ABP Group",
-    "google-news:Ramayana Part One Box Office Collections: Ranbir Kapoor and Yash starrer phenomenal run continues Overseas, tops Rs. 900 Cr worldwide",
-    "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "TV9 Network",
-    "Network18",
-    "NDTV",
-    "India Today Group",
-    "Amar Ujala",
-    "DB Corp"
-   ]
   },
   {
    "id": "kh-20261113-Q182477",
@@ -382,21 +223,24 @@
     "chance",
     "employee",
     "former",
+    "replace",
     "second"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:55:07+00:00",
+   "news_at": "2026-11-13T10:15:04+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
+    "Network18",
+    "TV9 Network",
     "DB Corp",
     "BBC"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -408,16 +252,27 @@
     "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
    ],
    "hindi_headlines": [
+    "एनवीडिया के पूर्व सीईओ जेनसन हुआंग पर नए खुलासे, प्रेम संबंध और जासूसी के आरोप",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "एनवीडिया",
    "reports": [
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:15:04+00:00"
+    },
     {
      "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
      "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
@@ -485,10 +340,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:TV9 Network",
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "google-news:Investors Buy The Crash As Nvidia Stock Hits 7-Month Low: What Experts Say"
    ],
    "top": {
     "IN": 6
@@ -498,9 +356,295 @@
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "TV9 Network"
+   ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q37293",
+   "qid": "Q37293",
+   "title": "Ramayana",
+   "name": "Ramayana",
+   "phrase": "Ramayana",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+   "story_keys": [
+    "box",
+    "collection",
+    "crore",
+    "crosse",
+    "fastest",
+    "film",
+    "office",
+    "worldwide"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T04:57:36+00:00",
+   "owners": [
+    "HT Media",
+    "NDTV",
+    "India Today Group",
+    "TV9 Network",
+    "Network18",
+    "Amar Ujala",
+    "DB Corp",
+    "ABP Group"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+    "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
+    "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
+    "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
+    "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
+    "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
+   ],
+   "hindi_headlines": [
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
+    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
+    "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
+    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
+    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
+   ],
+   "hindi_news": 45,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "रामायण",
+   "reports": [
+    {
+     "title": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-worldwide-box-office-collection-day-8-ranbir-kapoor-yash-sai-pallavi-film-1000-crore-rrr-kgf-chapter-2-jawan-nitesh-tiwari-namit-malhotra-101794540846417.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:57:36+00:00"
+    },
+    {
+     "title": "OG Sita Dipika Chikhlia says she always knew Ranbir Kapoor, Yash's Ramayana would be a hit as it crosses ₹1000 crore worldwide, praises VFX and cast",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/og-sita-dipika-chikhlia-says-she-always-knew-ranbir-kapoor-yashs-ramayana-would-be-a-hit-as-it-crosses-1000-crore-worldwide-praises-vfx-and-cast-101794539772178.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:39:55+00:00"
+    },
+    {
+     "title": "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide",
+     "url": "https://www.ndtv.com/entertainment/ramayana-to-dhurandhar-2-fastest-indian-films-to-cross-rs-1-000-crore-worldwide-12320407#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:47:31+00:00"
+    },
+    {
+     "title": "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
+     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-enters-1000-crore-club-in-8-days-beats-animal-and-pathaan-in-india-ranbir-sai-pallavi-yash-3037882-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:47:49+00:00"
+    },
+    {
+     "title": "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-8-ranbir-kapoor-yash-film-remains-steady-crosses-560-crore-to-beat-pathaan-animal-lifetime-hauls-101794501331061.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:01:41+00:00"
+    },
+    {
+     "title": "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
+     "url": "https://www.ndtv.com/entertainment/as-ramayana-nears-rs-1-000-crore-worldwide-ravi-dubey-shares-candid-bts-pics-with-ranbir-kapoor-sai-pallavi-12317301#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:22:04+00:00"
+    },
+    {
+     "title": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-crosses-1000-crore-at-box-office-in-8-days-ranbir-kapoor-yash-sai-pallavi-starrer-is-the-third-fastest-indian-film-to-do-so-nitesh-tiwari-101794469689597.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T10:38:59+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "outlet:Network18",
+    "outlet:Amar Ujala",
+    "outlet:DB Corp",
+    "outlet:ABP Group",
+    "google-news:‘Ramayana: Rise Of A Legend’ Powers Past $100M+ At Global Box Office",
+    "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "NDTV",
+    "India Today Group",
+    "Amar Ujala",
+    "DB Corp"
+   ]
+  },
+  {
+   "id": "kh-20261113-Q16224322",
+   "qid": "Q16224322",
+   "title": "Matt Henry (cricketer)",
+   "name": "Matt Henry",
+   "phrase": "Matt Henry",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+   "story_keys": [
+    "all",
+    "defeat",
+    "haul",
+    "out",
+    "run",
+    "six-wicket",
+    "slump",
+    "win"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:25:31+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Network18",
+    "TV9 Network",
+    "Amar Ujala"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+    "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
+    "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
+    "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
+    "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
+    "Matt Henry six-for and Will Young hundred crush India"
+   ],
+   "hindi_headlines": [
+    "मैच हारने के बाद मिली टीम इंडिया को खुशखबरी, 6 बल्लेबाजों का शिकार करने वाले मैट हेनरी, नहीं खेल पाएंगे सीरीज का अंतिम मैच",
+    "Matt Henry: 6 विकेट… मैट हेनरी ने दोहराया 21 साल पुराना करिश्मा",
+    "मैट हेनरी की पहली 6 गेंदों में टूटे कई रिकॉर्ड, पहले ही ओवर में 0 पर 3 धुरंधर धराशायी, रोहित-विराट की हुई जगहंसाई",
+    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा",
+    "रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
+   ],
+   "hindi_news": 5,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "मैट हेनरी",
+   "reports": [
+    {
+     "title": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/india-vs-new-zealand-live-score-ind-vs-nz-4th-odi-live-updates-scorecard-live-commentary-match-today-rohit-sharma-ishan-kishan-12319335#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:31+00:00"
+    },
+    {
+     "title": "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-89-all-out-matt-henry-six-wickets-virat-kohli-rohit-sharma-report-3038119-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:13:10+00:00"
+    },
+    {
+     "title": "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
+     "url": "https://www.thehindu.com/sport/cricket/india-vs-new-zealand-fourth-odi-in-mount-maunganui/article71696407.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:35:31+00:00"
+    },
+    {
+     "title": "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
+     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-4th-odi-india-vs-new-zealand-updates-bay-oval-november-13-101794503294907.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:36:43+00:00"
+    },
+    {
+     "title": "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-live-score-4th-odi-ind-nz-match-bay-oval-mount-maunganui-3037846-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:47:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:TV9 Network",
+    "outlet:Amar Ujala",
+    "google-news:Matt Henry six-for and Will Young hundred crush India",
+    "google-news:रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Network18",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -622,9 +766,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -635,130 +779,90 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261113-Q16224322",
-   "qid": "Q16224322",
-   "title": "Matt Henry (cricketer)",
-   "name": "Matt Henry",
-   "phrase": "Matt Henry",
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
    "person": true,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
    "story_keys": [
-    "all",
-    "defeat",
-    "haul",
-    "out",
-    "run",
-    "six-wicket",
-    "slump",
-    "win"
+    "judge",
+    "list"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T09:25:31+00:00",
+   "news_at": "2026-11-13T07:48:47+00:00",
    "owners": [
-    "India Today Group",
+    "Bennett, Coleman & Co.",
     "HT Media",
-    "The Hindu Group",
-    "NDTV",
-    "Network18",
-    "TV9 Network",
-    "Amar Ujala"
+    "The Hindu Group"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
-    "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
-    "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
-    "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
-    "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
-    "Matt Henry six-for and Will Young hundred crush India"
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
-   "hindi_headlines": [
-    "मैच हारने के बाद मिली टीम इंडिया को खुशखबरी, 6 बल्लेबाजों का शिकार करने वाले मैट हेनरी, नहीं खेल पाएंगे सीरीज का अंतिम मैच",
-    "Matt Henry: 6 विकेट… मैट हेनरी ने दोहराया 21 साल पुराना करिश्मा",
-    "मैट हेनरी की पहली 6 गेंदों में टूटे कई रिकॉर्ड, पहले ही ओवर में 0 पर 3 धुरंधर धराशायी, रोहित-विराट की हुई जगहंसाई",
-    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा"
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
    ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
+   "region": "india",
    "india_link": true,
-   "abroad": true,
-   "label_hi": "मैट हेनरी",
+   "abroad": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
-     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/india-vs-new-zealand-live-score-ind-vs-nz-4th-odi-live-updates-scorecard-live-commentary-match-today-rohit-sharma-ishan-kishan-12319335#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:25:31+00:00"
-    },
-    {
-     "title": "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-89-all-out-matt-henry-six-wickets-virat-kohli-rohit-sharma-report-3038119-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:13:10+00:00"
-    },
-    {
-     "title": "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
-     "url": "https://www.thehindu.com/sport/cricket/india-vs-new-zealand-fourth-odi-in-mount-maunganui/article71696407.ece",
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T08:35:31+00:00"
+     "at": "2026-11-13T07:48:47+00:00"
     },
     {
-     "title": "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-4th-odi-india-vs-new-zealand-updates-bay-oval-november-13-101794503294907.html",
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T00:36:43+00:00"
+     "at": "2026-11-13T01:32:18+00:00"
     },
     {
-     "title": "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
-     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-live-score-4th-odi-ind-nz-match-bay-oval-mount-maunganui-3037846-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T17:47:44+00:00"
+     "at": "2026-11-12T19:25:26+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:Network18",
-    "outlet:TV9 Network",
-    "outlet:Amar Ujala",
-    "google-news:Matt Henry six-for and Will Young hundred crush India"
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "TV9 Network"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -889,7 +993,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -936,14 +1040,14 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "top": {
     "IN": 17
    },
    "top_score": 0.2,
    "top_headlines": [
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1066,145 +1170,21 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:48:47+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:48:47+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q39071562",
-   "qid": "Q39071562",
-   "title": "Pink Line (Namma Metro)",
+   "id": "kh-20261113-Q19891094",
+   "qid": "Q19891094",
+   "title": "Pink Line (Delhi Metro)",
    "name": "Pink Line",
-   "phrase": "Bengaluru Metro’s Pink",
+   "phrase": "Metro’s Pink Line",
    "person": false,
    "kind": "explainer",
    "category": "policy",
    "category_hi": "नीति",
    "story": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
    "story_keys": [
+    "flag",
     "inaugurate",
     "namma",
+    "off",
     "ride",
     "take"
    ],
@@ -1215,29 +1195,32 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18"
+    "Network18",
+    "Amar Ujala"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
     "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "PM Modi flags off Bengaluru Pink Line stretch",
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
     "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
     "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "पिंक लाइन",
    "reports": [
     {
      "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
@@ -1280,6 +1263,16 @@
      "at": "2026-11-13T07:49:05+00:00"
     },
     {
+     "title": "PM Modi flags off Bengaluru Pink Line stretch",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/railways/bengaluru-metro-pink-line-opens-south-bengaluru-commuters-get-a-new-7-5-km-route-as-pm-modi-flags-off-stretch-check-stations-and-train-timings/articleshow/135794401.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:03+00:00"
+    },
+    {
      "title": "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
      "url": "https://www.hindustantimes.com/india-news/pm-modi-flags-bengaluru-metro-pink-line-from-kalena-agrahara-undertakes-ride-with-karnataka-cm-shivakumar-101794555754620.html",
      "outlet": "Hindustan Times",
@@ -1305,103 +1298,143 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:Amar Ujala"
    ],
    "top": {
-    "IN": 2,
     "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 0.6,
    "top_headlines": [
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
-    "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
    "person": false,
    "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
    "story_keys": [
-    "delimitation",
-    "session"
+    "against",
+    "final",
+    "wicket"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
+   "news_at": "2026-11-13T09:48:47+00:00",
    "owners": [
-    "Network18",
+    "Bennett, Coleman & Co.",
+    "HT Media",
     "The Hindu Group",
-    "HT Media"
+    "ABP Group",
+    "Network18"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-    "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives"
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "एशिया कप",
    "reports": [
     {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
+     "at": "2026-11-13T09:48:47+00:00"
     },
     {
-     "title": "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives",
-     "url": "https://www.hindustantimes.com/india-news/parliament-session-delay-puzzles-opposition-on-centre-s-motives-101794511036645.html",
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T19:17:16+00:00"
+     "at": "2026-11-12T12:05:21+00:00"
     },
     {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
+     "at": "2026-11-12T11:52:43+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
-    "outlet:HT Media"
+    "outlet:ABP Group",
+    "outlet:Network18"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261113-Q7747",
@@ -1580,109 +1613,6 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group"
-   ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q943813",
-   "qid": "Q943813",
-   "title": "SpiceJet",
-   "name": "SpiceJet",
-   "phrase": "SpiceJet",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-   "story_keys": [
-    "airport",
-    "check-in",
-    "crore",
-    "dubai",
-    "operator",
-    "passenger"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:39:43+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-    "Delhi airport has a warning for SpiceJet passengers",
-    "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-    "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "स्पाइस्जेट",
-   "reports": [
-    {
-     "title": "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues",
-     "url": "https://www.indiatoday.in/india/story/dubai-airports-suspends-spicejet-check-in-services-over-unpaid-dues-3038043-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:39:43+00:00"
-    },
-    {
-     "title": "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-     "url": "https://www.hindustantimes.com/india-news/spicejet-crisis-understanding-flight-cancellations-passenger-rights-101794557801816.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:16:41+00:00"
-    },
-    {
-     "title": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-     "url": "https://www.hindustantimes.com/india-news/dubai-airports-stops-spicejet-s-check-in-services-over-non-payment-of-around-35-85-crore-101794550478664.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:14:38+00:00"
-    },
-    {
-     "title": "Delhi airport has a warning for SpiceJet passengers",
-     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/delhi-airport-warns-of-possible-flight-disruptions-due-to-spicejets-operational-challenges/articleshow/135789782.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:47:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
     "outlet:India Today Group"
    ],
    "top": {},
@@ -2206,19 +2136,22 @@
    "story_keys": [
     "company",
     "cyberattack",
+    "fix",
     "hits",
-    "outage"
+    "outage",
+    "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
+   "news_at": "2026-11-13T09:59:22+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
     "Deutsche Welle",
-    "Guardian Media Group",
     "NDTV",
+    "Guardian Media Group",
+    "France Médias Monde",
     "BBC"
    ],
    "fame": 400000,
@@ -2227,26 +2160,36 @@
    "traffic": 0,
    "headlines": [
     "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
     "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage"
    ],
    "hindi_headlines": [
-    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
    ],
-   "hindi_news": 5,
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
+    {
+     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
+     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T09:59:22+00:00"
+    },
     {
      "title": "Microsoft works to restore Outlook and Teams after global outage",
      "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
@@ -2288,6 +2231,16 @@
      "at": "2026-11-13T08:14:20+00:00"
     },
     {
+     "title": "Microsoft Outage: What Went Wrong And Why Is It Taking So Long To Fix It?",
+     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:37+00:00"
+    },
+    {
      "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
      "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
      "outlet": "India Today",
@@ -2306,26 +2259,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
     }
    ],
    "via": [
@@ -2334,22 +2267,24 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
     "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:France Médias Monde",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
    ],
    "top": {
     "IN": 1,
-    "IN-hi": 17
+    "IN-hi": 18
    },
-   "top_score": 1.1,
+   "top_score": 1.075,
    "top_headlines": [
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
+    "HT Media",
     "India Today Group",
     "NDTV",
     "BBC"
@@ -2477,9 +2412,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -2490,19 +2425,21 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261113-Q39071562",
-   "qid": "Q39071562",
-   "title": "Pink Line (Namma Metro)",
+   "id": "kh-20261113-Q19891094",
+   "qid": "Q19891094",
+   "title": "Pink Line (Delhi Metro)",
    "name": "Pink Line",
-   "phrase": "Bengaluru Metro’s Pink",
+   "phrase": "Metro’s Pink Line",
    "person": false,
    "kind": "explainer",
    "category": "policy",
    "category_hi": "नीति",
    "story": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
    "story_keys": [
+    "flag",
     "inaugurate",
     "namma",
+    "off",
     "ride",
     "take"
    ],
@@ -2513,29 +2450,32 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18"
+    "Network18",
+    "Amar Ujala"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
     "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "PM Modi flags off Bengaluru Pink Line stretch",
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
     "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
     "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "पिंक लाइन",
    "reports": [
     {
      "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
@@ -2578,6 +2518,16 @@
      "at": "2026-11-13T07:49:05+00:00"
     },
     {
+     "title": "PM Modi flags off Bengaluru Pink Line stretch",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/railways/bengaluru-metro-pink-line-opens-south-bengaluru-commuters-get-a-new-7-5-km-route-as-pm-modi-flags-off-stretch-check-stations-and-train-timings/articleshow/135794401.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:03+00:00"
+    },
+    {
      "title": "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
      "url": "https://www.hindustantimes.com/india-news/pm-modi-flags-bengaluru-metro-pink-line-from-kalena-agrahara-undertakes-ride-with-karnataka-cm-shivakumar-101794555754620.html",
      "outlet": "Hindustan Times",
@@ -2603,17 +2553,15 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:Amar Ujala"
    ],
    "top": {
-    "IN": 2,
     "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 0.6,
    "top_headlines": [
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
-    "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2714,105 +2662,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261113-Q943813",
-   "qid": "Q943813",
-   "title": "SpiceJet",
-   "name": "SpiceJet",
-   "phrase": "SpiceJet",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-   "story_keys": [
-    "airport",
-    "check-in",
-    "crore",
-    "dubai",
-    "operator",
-    "passenger"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:39:43+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-    "Delhi airport has a warning for SpiceJet passengers",
-    "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-    "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "स्पाइस्जेट",
-   "reports": [
-    {
-     "title": "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues",
-     "url": "https://www.indiatoday.in/india/story/dubai-airports-suspends-spicejet-check-in-services-over-unpaid-dues-3038043-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:39:43+00:00"
-    },
-    {
-     "title": "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-     "url": "https://www.hindustantimes.com/india-news/spicejet-crisis-understanding-flight-cancellations-passenger-rights-101794557801816.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:16:41+00:00"
-    },
-    {
-     "title": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-     "url": "https://www.hindustantimes.com/india-news/dubai-airports-stops-spicejet-s-check-in-services-over-non-payment-of-around-35-85-crore-101794550478664.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:14:38+00:00"
-    },
-    {
-     "title": "Delhi airport has a warning for SpiceJet passengers",
-     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/delhi-airport-warns-of-possible-flight-disruptions-due-to-spicejets-operational-challenges/articleshow/135789782.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:47:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261113-Q182477",
    "qid": "Q182477",
    "title": "Nvidia",
@@ -2828,21 +2677,24 @@
     "chance",
     "employee",
     "former",
+    "replace",
     "second"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:55:07+00:00",
+   "news_at": "2026-11-13T10:15:04+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
+    "Network18",
+    "TV9 Network",
     "DB Corp",
     "BBC"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2854,16 +2706,27 @@
     "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
    ],
    "hindi_headlines": [
+    "एनवीडिया के पूर्व सीईओ जेनसन हुआंग पर नए खुलासे, प्रेम संबंध और जासूसी के आरोप",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "एनवीडिया",
    "reports": [
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:15:04+00:00"
+    },
     {
      "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
      "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
@@ -2931,10 +2794,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:TV9 Network",
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "google-news:Investors Buy The Crash As Nvidia Stock Hits 7-Month Low: What Experts Say"
    ],
    "top": {
     "IN": 6
@@ -2944,7 +2810,9 @@
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "TV9 Network"
+   ],
    "audience": "india",
    "lane": "other"
   },
@@ -2985,6 +2853,94 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
+   "person": true,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+   "story_keys": [
+    "judge",
+    "list"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T07:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:48:47+00:00"
+    },
+    {
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:32:18+00:00"
+    },
+    {
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T19:25:26+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "kh-20261113-Q16224322",
    "qid": "Q16224322",
    "title": "Matt Henry (cricketer)",
@@ -3016,8 +2972,8 @@
     "TV9 Network",
     "Amar Ujala"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3032,9 +2988,10 @@
     "मैच हारने के बाद मिली टीम इंडिया को खुशखबरी, 6 बल्लेबाजों का शिकार करने वाले मैट हेनरी, नहीं खेल पाएंगे सीरीज का अंतिम मैच",
     "Matt Henry: 6 विकेट… मैट हेनरी ने दोहराया 21 साल पुराना करिश्मा",
     "मैट हेनरी की पहली 6 गेंदों में टूटे कई रिकॉर्ड, पहले ही ओवर में 0 पर 3 धुरंधर धराशायी, रोहित-विराट की हुई जगहंसाई",
-    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा"
+    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा",
+    "रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
    ],
-   "hindi_news": 4,
+   "hindi_news": 5,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3100,7 +3057,8 @@
     "outlet:Network18",
     "outlet:TV9 Network",
     "outlet:Amar Ujala",
-    "google-news:Matt Henry six-for and Will Young hundred crush India"
+    "google-news:Matt Henry six-for and Will Young hundred crush India",
+    "google-news:रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
    ],
    "top": {},
    "top_score": 0.0,
@@ -3176,7 +3134,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3223,14 +3181,14 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "top": {
     "IN": 17
    },
    "top_score": 0.2,
    "top_headlines": [
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -3266,88 +3224,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
-   "person": false,
-   "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-   "story_keys": [
-    "delimitation",
-    "session"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-    "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
-    },
-    {
-     "title": "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives",
-     "url": "https://www.hindustantimes.com/india-news/parliament-session-delay-puzzles-opposition-on-centre-s-motives-101794511036645.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T19:17:16+00:00"
-    },
-    {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261113-Q124540932",
@@ -3558,99 +3434,35 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:48:47+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 27874,
+   "views": 27874,
    "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:48:47+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
+    "wikipedia-top-2026-11-12"
    ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -3751,47 +3563,105 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "qid": "Q1395654",
-   "title": "Irma P. Hall",
-   "fame": 27874,
-   "views": 27874,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+   "story_keys": [
+    "against",
+    "final",
+    "wicket"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1395654",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group",
+    "ABP Group",
+    "Network18"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
+   ],
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 6,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "एशिया कप",
+   "reports": [
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
+    },
+    {
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:05:21+00:00"
+    },
+    {
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:52:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:ABP Group",
+    "outlet:Network18"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "qid": "Q274156",
@@ -4134,11 +4004,12 @@
  ],
  "notes": [
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q37293: last Short 6 h ago; revisit Q9543: already revisited today; revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (920 views before); revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (798 views before); revisit Q468324 (421 views): 0 owners ",
-  "outlets: 1708 headlines from 47 feeds (18 owners), 14 matched to articles, 16 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 14 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q37293, kh-20261113-Q182477, kh-20261113-Q3524804; dropped: explainer Saqib Khan: fewer than 3 owners' headlines name it and the story; explainer Sandpapergate Looking / Brook: no Wikipedia article that can be its centre; explainer Calcutta High Court: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1708 headlines from 47 feeds (18 owners), 12 matched to articles, 15 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 13 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q182477, kh-20261113-Q37293, kh-20261113-Q16224322; dropped: explainer Saqib Khan: fewer than 3 owners' headlines name it and the story; explainer Sandpapergate Looking / Brook: no Wikipedia article that can be its centre; explainer Sunetra Pawar: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "outlet pib-hi: HTTPError: 404 Client Error: Not Found for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3&reg=3",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
@@ -4146,8 +4017,8 @@
   "headlines": 1708,
   "feeds": 47,
   "owners": 18,
-  "matched": 14,
-  "corroborated": 16
+  "matched": 12,
+  "corroborated": 15
  },
  "emerging": [],
  "explainers": [
@@ -4165,19 +4036,22 @@
    "story_keys": [
     "company",
     "cyberattack",
+    "fix",
     "hits",
-    "outage"
+    "outage",
+    "service"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
+   "news_at": "2026-11-13T09:59:22+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
     "Deutsche Welle",
-    "Guardian Media Group",
     "NDTV",
+    "Guardian Media Group",
+    "France Médias Monde",
     "BBC"
    ],
    "fame": 400000,
@@ -4186,26 +4060,36 @@
    "traffic": 0,
    "headlines": [
     "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-    "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
     "Widespread outage hits Microsoft apps",
-    "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage"
    ],
    "hindi_headlines": [
-    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
    ],
-   "hindi_news": 5,
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
+    {
+     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
+     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T09:59:22+00:00"
+    },
     {
      "title": "Microsoft works to restore Outlook and Teams after global outage",
      "url": "https://www.dw.com/en/microsoft-works-to-restore-outlook-and-teams-after-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
@@ -4247,6 +4131,16 @@
      "at": "2026-11-13T08:14:20+00:00"
     },
     {
+     "title": "Microsoft Outage: What Went Wrong And Why Is It Taking So Long To Fix It?",
+     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:37+00:00"
+    },
+    {
      "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
      "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
      "outlet": "India Today",
@@ -4265,26 +4159,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T07:10:18+00:00"
-    },
-    {
-     "title": "Cyberattack or AI gone rogue? What senior Microsoft official said on mega outage",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-outage-as-cyberattack-and-rogue-ai-models-attack-theories-go-viral-copilot-evp-charles-lamanna-confirms-what-has-not-likely-caused-the-outage/articleshow/135793367.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:58:40+00:00"
-    },
-    {
-     "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-     "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:47:36+00:00"
     }
    ],
    "via": [
@@ -4293,192 +4167,30 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group",
     "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:France Médias Monde",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
+    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
    ],
    "top": {
     "IN": 1,
-    "IN-hi": 17
+    "IN-hi": 18
    },
-   "top_score": 1.1,
+   "top_score": 1.075,
    "top_headlines": [
-    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
+    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
+    "HT Media",
     "India Today Group",
     "NDTV",
     "BBC"
    ],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q37293",
-   "qid": "Q37293",
-   "title": "Ramayana",
-   "name": "Ramayana",
-   "phrase": "Ramayana",
-   "person": false,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-   "story_keys": [
-    "box",
-    "collection",
-    "crore",
-    "crosse",
-    "fastest",
-    "film",
-    "office",
-    "worldwide"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T04:57:36+00:00",
-   "owners": [
-    "NDTV",
-    "HT Media",
-    "India Today Group",
-    "TV9 Network",
-    "Network18",
-    "Amar Ujala",
-    "DB Corp",
-    "ABP Group"
-   ],
-   "fame": 400000,
-   "news": 400000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-    "'You Can't Treat Ramayana Like Baahubali': Mukesh Khanna Blasts Ranbir Kapoor Film Over 'Creative Liberties'",
-    "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
-    "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
-    "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
-    "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
-   ],
-   "hindi_headlines": [
-    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
-    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
-    "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
-    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
-    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
-   ],
-   "hindi_news": 45,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "रामायण",
-   "reports": [
-    {
-     "title": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-worldwide-box-office-collection-day-8-ranbir-kapoor-yash-sai-pallavi-film-1000-crore-rrr-kgf-chapter-2-jawan-nitesh-tiwari-namit-malhotra-101794540846417.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:57:36+00:00"
-    },
-    {
-     "title": "OG Sita Dipika Chikhlia says she always knew Ranbir Kapoor, Yash's Ramayana would be a hit as it crosses ₹1000 crore worldwide, praises VFX and cast",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/og-sita-dipika-chikhlia-says-she-always-knew-ranbir-kapoor-yashs-ramayana-would-be-a-hit-as-it-crosses-1000-crore-worldwide-praises-vfx-and-cast-101794539772178.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:39:55+00:00"
-    },
-    {
-     "title": "Ramayana: All The Box Office Records Broken By Ranbir Kapoor's Film So Far",
-     "url": "https://www.ndtv.com/entertainment/ramayana-all-the-box-office-records-broken-by-ranbir-kapoor-film-so-far-12320459#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:06:12+00:00"
-    },
-    {
-     "title": "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide",
-     "url": "https://www.ndtv.com/entertainment/ramayana-to-dhurandhar-2-fastest-indian-films-to-cross-rs-1-000-crore-worldwide-12320407#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:47:31+00:00"
-    },
-    {
-     "title": "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
-     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-enters-1000-crore-club-in-8-days-beats-animal-and-pathaan-in-india-ranbir-sai-pallavi-yash-3037882-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:47:49+00:00"
-    },
-    {
-     "title": "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-8-ranbir-kapoor-yash-film-remains-steady-crosses-560-crore-to-beat-pathaan-animal-lifetime-hauls-101794501331061.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T17:01:41+00:00"
-    },
-    {
-     "title": "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
-     "url": "https://www.ndtv.com/entertainment/as-ramayana-nears-rs-1-000-crore-worldwide-ravi-dubey-shares-candid-bts-pics-with-ranbir-kapoor-sai-pallavi-12317301#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:22:04+00:00"
-    },
-    {
-     "title": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-crosses-1000-crore-at-box-office-in-8-days-ranbir-kapoor-yash-sai-pallavi-starrer-is-the-third-fastest-indian-film-to-do-so-nitesh-tiwari-101794469689597.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T10:38:59+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "outlet:DB Corp",
-    "outlet:ABP Group",
-    "google-news:Ramayana Part One Box Office Collections: Ranbir Kapoor and Yash starrer phenomenal run continues Overseas, tops Rs. 900 Cr worldwide",
-    "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "TV9 Network",
-    "Network18",
-    "NDTV",
-    "India Today Group",
-    "Amar Ujala",
-    "DB Corp"
-   ]
   },
   {
    "id": "kh-20261113-Q182477",
@@ -4496,21 +4208,24 @@
     "chance",
     "employee",
     "former",
+    "replace",
     "second"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:55:07+00:00",
+   "news_at": "2026-11-13T10:15:04+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
+    "Network18",
+    "TV9 Network",
     "DB Corp",
     "BBC"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4522,16 +4237,27 @@
     "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
    ],
    "hindi_headlines": [
+    "एनवीडिया के पूर्व सीईओ जेनसन हुआंग पर नए खुलासे, प्रेम संबंध और जासूसी के आरोप",
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
     "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
    ],
-   "hindi_news": 2,
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
    "india_link": true,
    "abroad": true,
    "label_hi": "एनवीडिया",
    "reports": [
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:15:04+00:00"
+    },
     {
      "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
      "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
@@ -4599,10 +4325,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:TV9 Network",
     "outlet:DB Corp",
     "outlet:BBC",
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
-    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports",
+    "google-news:Investors Buy The Crash As Nvidia Stock Hits 7-Month Low: What Experts Say"
    ],
    "top": {
     "IN": 6
@@ -4612,9 +4341,295 @@
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "TV9 Network"
+   ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q37293",
+   "qid": "Q37293",
+   "title": "Ramayana",
+   "name": "Ramayana",
+   "phrase": "Ramayana",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+   "story_keys": [
+    "box",
+    "collection",
+    "crore",
+    "crosse",
+    "fastest",
+    "film",
+    "office",
+    "worldwide"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T04:57:36+00:00",
+   "owners": [
+    "HT Media",
+    "NDTV",
+    "India Today Group",
+    "TV9 Network",
+    "Network18",
+    "Amar Ujala",
+    "DB Corp",
+    "ABP Group"
+   ],
+   "fame": 400000,
+   "news": 400000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+    "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
+    "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
+    "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
+    "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
+    "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
+   ],
+   "hindi_headlines": [
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
+    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
+    "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
+    "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
+    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
+   ],
+   "hindi_news": 45,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "रामायण",
+   "reports": [
+    {
+     "title": "Ramayana worldwide box office collection day 8: Ranbir Kapoor, Yash's juggernaut sails past ₹1000 crore; outpaces RRR, KGF 2, Jawan",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-worldwide-box-office-collection-day-8-ranbir-kapoor-yash-sai-pallavi-film-1000-crore-rrr-kgf-chapter-2-jawan-nitesh-tiwari-namit-malhotra-101794540846417.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:57:36+00:00"
+    },
+    {
+     "title": "OG Sita Dipika Chikhlia says she always knew Ranbir Kapoor, Yash's Ramayana would be a hit as it crosses ₹1000 crore worldwide, praises VFX and cast",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/og-sita-dipika-chikhlia-says-she-always-knew-ranbir-kapoor-yashs-ramayana-would-be-a-hit-as-it-crosses-1000-crore-worldwide-praises-vfx-and-cast-101794539772178.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:39:55+00:00"
+    },
+    {
+     "title": "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide",
+     "url": "https://www.ndtv.com/entertainment/ramayana-to-dhurandhar-2-fastest-indian-films-to-cross-rs-1-000-crore-worldwide-12320407#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:47:31+00:00"
+    },
+    {
+     "title": "Rs 1,000 crore in 8 days: Ramayana delivers box-office blow to Animal and Pathaan",
+     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-enters-1000-crore-club-in-8-days-beats-animal-and-pathaan-in-india-ranbir-sai-pallavi-yash-3037882-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:47:49+00:00"
+    },
+    {
+     "title": "Ramayana box office collection day 8: Ranbir Kapoor, Yash film maintains momentum, surpasses lifetime hauls of Pathaan and Animal",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-8-ranbir-kapoor-yash-film-remains-steady-crosses-560-crore-to-beat-pathaan-animal-lifetime-hauls-101794501331061.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:01:41+00:00"
+    },
+    {
+     "title": "As Ramayana Nears Rs 1,000 Crore Worldwide, Ravi Dubey Shares Candid BTS Pics With Ranbir Kapoor-Sai Pallavi",
+     "url": "https://www.ndtv.com/entertainment/as-ramayana-nears-rs-1-000-crore-worldwide-ravi-dubey-shares-candid-bts-pics-with-ranbir-kapoor-sai-pallavi-12317301#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:22:04+00:00"
+    },
+    {
+     "title": "Ramayana crosses ₹1000 crore at the box office in 8 days, Ranbir Kapoor, Yash-starrer is the third fastest Indian film to do so",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-crosses-1000-crore-at-box-office-in-8-days-ranbir-kapoor-yash-sai-pallavi-starrer-is-the-third-fastest-indian-film-to-do-so-nitesh-tiwari-101794469689597.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T10:38:59+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "outlet:TV9 Network",
+    "outlet:Network18",
+    "outlet:Amar Ujala",
+    "outlet:DB Corp",
+    "outlet:ABP Group",
+    "google-news:‘Ramayana: Rise Of A Legend’ Powers Past $100M+ At Global Box Office",
+    "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "TV9 Network",
+    "Network18",
+    "NDTV",
+    "India Today Group",
+    "Amar Ujala",
+    "DB Corp"
+   ]
+  },
+  {
+   "id": "kh-20261113-Q16224322",
+   "qid": "Q16224322",
+   "title": "Matt Henry (cricketer)",
+   "name": "Matt Henry",
+   "phrase": "Matt Henry",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+   "story_keys": [
+    "all",
+    "defeat",
+    "haul",
+    "out",
+    "run",
+    "six-wicket",
+    "slump",
+    "win"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:25:31+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Network18",
+    "TV9 Network",
+    "Amar Ujala"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+    "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
+    "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
+    "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
+    "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
+    "Matt Henry six-for and Will Young hundred crush India"
+   ],
+   "hindi_headlines": [
+    "मैच हारने के बाद मिली टीम इंडिया को खुशखबरी, 6 बल्लेबाजों का शिकार करने वाले मैट हेनरी, नहीं खेल पाएंगे सीरीज का अंतिम मैच",
+    "Matt Henry: 6 विकेट… मैट हेनरी ने दोहराया 21 साल पुराना करिश्मा",
+    "मैट हेनरी की पहली 6 गेंदों में टूटे कई रिकॉर्ड, पहले ही ओवर में 0 पर 3 धुरंधर धराशायी, रोहित-विराट की हुई जगहंसाई",
+    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा",
+    "रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
+   ],
+   "hindi_news": 5,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "मैट हेनरी",
+   "reports": [
+    {
+     "title": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/india-vs-new-zealand-live-score-ind-vs-nz-4th-odi-live-updates-scorecard-live-commentary-match-today-rohit-sharma-ishan-kishan-12319335#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:25:31+00:00"
+    },
+    {
+     "title": "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-89-all-out-matt-henry-six-wickets-virat-kohli-rohit-sharma-report-3038119-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:13:10+00:00"
+    },
+    {
+     "title": "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
+     "url": "https://www.thehindu.com/sport/cricket/india-vs-new-zealand-fourth-odi-in-mount-maunganui/article71696407.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:35:31+00:00"
+    },
+    {
+     "title": "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
+     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-4th-odi-india-vs-new-zealand-updates-bay-oval-november-13-101794503294907.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:36:43+00:00"
+    },
+    {
+     "title": "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-live-score-4th-odi-ind-nz-match-bay-oval-mount-maunganui-3037846-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:47:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Network18",
+    "outlet:TV9 Network",
+    "outlet:Amar Ujala",
+    "google-news:Matt Henry six-for and Will Young hundred crush India",
+    "google-news:रोहित शर्मा-व‍िराट कोहली के पुराने दुश्मन मैट हेनरी! 2019 में तोड़ा था वर्ल्ड कप का सपना, अब 2026 में मचाया कहर"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Network18",
+    "TV9 Network"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -4736,9 +4751,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -4749,130 +4764,90 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261113-Q16224322",
-   "qid": "Q16224322",
-   "title": "Matt Henry (cricketer)",
-   "name": "Matt Henry",
-   "phrase": "Matt Henry",
+   "id": "kh-20261113-Q73092822",
+   "qid": "Q73092822",
+   "title": "Abhishek Banerjee (actor)",
+   "name": "Abhishek Banerjee",
+   "phrase": "Abhishek Banerjee",
    "person": true,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
    "story_keys": [
-    "all",
-    "defeat",
-    "haul",
-    "out",
-    "run",
-    "six-wicket",
-    "slump",
-    "win"
+    "judge",
+    "list"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T09:25:31+00:00",
+   "news_at": "2026-11-13T07:48:47+00:00",
    "owners": [
-    "India Today Group",
+    "Bennett, Coleman & Co.",
     "HT Media",
-    "The Hindu Group",
-    "NDTV",
-    "Network18",
-    "TV9 Network",
-    "Amar Ujala"
+    "The Hindu Group"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
-    "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
-    "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
-    "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
-    "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
-    "Matt Henry six-for and Will Young hundred crush India"
+    "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+    "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+    "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+    "Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
-   "hindi_headlines": [
-    "मैच हारने के बाद मिली टीम इंडिया को खुशखबरी, 6 बल्लेबाजों का शिकार करने वाले मैट हेनरी, नहीं खेल पाएंगे सीरीज का अंतिम मैच",
-    "Matt Henry: 6 विकेट… मैट हेनरी ने दोहराया 21 साल पुराना करिश्मा",
-    "मैट हेनरी की पहली 6 गेंदों में टूटे कई रिकॉर्ड, पहले ही ओवर में 0 पर 3 धुरंधर धराशायी, रोहित-विराट की हुई जगहंसाई",
-    "IND vs NZ ODI: मैट हेनरी के पंजे में फंसा भारत! 89 रन पर ढेर हुई श्रेयस की टीम; न्यूजीलैंड ने 244 रन से रौंदा"
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
    ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
+   "region": "india",
    "india_link": true,
-   "abroad": true,
-   "label_hi": "मैट हेनरी",
+   "abroad": false,
+   "label_hi": null,
    "reports": [
     {
-     "title": "India vs New Zealand Highlights, 4th ODI: India 89 All Out, Suffer Heaviest Defeat In 26 Years; NZ Clinch Stunning Win As Matt Henry Bags 6",
-     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/india-vs-new-zealand-live-score-ind-vs-nz-4th-odi-live-updates-scorecard-live-commentary-match-today-rohit-sharma-ishan-kishan-12319335#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:25:31+00:00"
-    },
-    {
-     "title": "89 all out: India relive Henry horror, slump to their 2nd biggest defeat in ODIs",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-89-all-out-matt-henry-six-wickets-virat-kohli-rohit-sharma-report-3038119-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:13:10+00:00"
-    },
-    {
-     "title": "IND vs NZ fourth ODI: Fiery Matt Henry routs India with six-wicket haul; India all out for 89",
-     "url": "https://www.thehindu.com/sport/cricket/india-vs-new-zealand-fourth-odi-in-mount-maunganui/article71696407.ece",
+     "title": "Let him give list of judges with the BJP and who aren't: Calcutta High Court takes exception to Abhishek Banerjee's remarks on judiciary",
+     "url": "https://www.thehindu.com/news/national/west-bengal/let-him-give-list-of-judges-with-the-bjp-and-who-arent-calcutta-high-court-takes-exception-to-abhishek-banerjees-remarks-on-judiciary/article71696705.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T08:35:31+00:00"
+     "at": "2026-11-13T07:48:47+00:00"
     },
     {
-     "title": "India vs New Zealand Highlights, 4th ODI: Matt Henry's six-wicket haul blows IND away for 89, NZ claim 244-run win",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-4th-odi-india-vs-new-zealand-updates-bay-oval-november-13-101794503294907.html",
+     "title": "‘Submit list of BJP and Trinamool judges’: Calcutta HC raps Abhishek Banerjee",
+     "url": "https://www.hindustantimes.com/india-news/let-abhishek-banerjee-submit-a-list-of-judges-who-belong-to-the-bjp-calcutta-high-court-101794531859436.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T00:36:43+00:00"
+     "at": "2026-11-13T01:32:18+00:00"
     },
     {
-     "title": "4th ODI Highlights: Henry takes 6 as India slump to 244-run loss",
-     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-new-zealand-live-score-4th-odi-ind-nz-match-bay-oval-mount-maunganui-3037846-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "'List judges linked to BJP, Trinamool': Calcutta HC to Abhishek Banerjee",
+     "url": "https://timesofindia.indiatimes.com/city/kolkata/ask-him-which-judges-belong-to-bjp-and-which-to-trinamool-calcutta-hc-tells-abhishek-banerjees-counsel-following-mps-comment-on-judiciarys-alleged-political-link/articleshow/135781494.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T17:47:44+00:00"
+     "at": "2026-11-12T19:25:26+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
     "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:Network18",
-    "outlet:TV9 Network",
-    "outlet:Amar Ujala",
-    "google-news:Matt Henry six-for and Will Young hundred crush India"
+    "google-news:Bamboo shed, iron gate removed from footpath outside Abhishek Banerjee's Kolkata residence",
+    "google-news:“Who Are The Judges With BJP And Who Aren't?”: Calcutta High Court Raps Abhishek Banerjee Over Remarks On ..."
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "TV9 Network"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -5003,7 +4978,7 @@
     "Retail inflation hits 6.09% in October, crosses RBI's upper tolerance limit",
     "Retail inflation crosses RBI’s upper limit for first time in two years, comes in at 6.1% in October 2026",
     "India Inflation Breaches RBI's Limit. What Happens If It Remains Above 6%",
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -5050,14 +5025,14 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "google-news:Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "top": {
     "IN": 17
    },
    "top_score": 0.2,
    "top_headlines": [
-    "Retail inflation crosses RBI’s 6% limit, food inflation at 9%; interest hikes likely"
+    "Nifty Bank, Auto, Realty skid 1% as inflation stokes RBI rate hike fears"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -5149,114 +5124,21 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q2866609",
-   "qid": "Q2866609",
-   "title": "Asia Cup",
-   "name": "Asia Cup",
-   "phrase": "Asia Cup India",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-   "story_keys": [
-    "against",
-    "final",
-    "wicket"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T09:48:47+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "ABP Group",
-    "Network18",
-    "TV9 Network"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
-   ],
-   "hindi_headlines": [
-    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
-    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
-    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
-    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
-    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "एशिया कप",
-   "reports": [
-    {
-     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
-     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:48:47+00:00"
-    },
-    {
-     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
-     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:05:21+00:00"
-    },
-    {
-     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T11:52:43+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:Network18",
-    "outlet:TV9 Network"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "sensitive"
-  },
-  {
-   "id": "kh-20261113-Q39071562",
-   "qid": "Q39071562",
-   "title": "Pink Line (Namma Metro)",
+   "id": "kh-20261113-Q19891094",
+   "qid": "Q19891094",
+   "title": "Pink Line (Delhi Metro)",
    "name": "Pink Line",
-   "phrase": "Bengaluru Metro’s Pink",
+   "phrase": "Metro’s Pink Line",
    "person": false,
    "kind": "explainer",
    "category": "policy",
    "category_hi": "नीति",
    "story": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
    "story_keys": [
+    "flag",
     "inaugurate",
     "namma",
+    "off",
     "ride",
     "take"
    ],
@@ -5267,29 +5149,32 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18"
+    "Network18",
+    "Amar Ujala"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
     "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "PM Modi flags off Bengaluru Pink Line stretch",
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
     "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
     "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "पिंक लाइन",
    "reports": [
     {
      "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
@@ -5332,6 +5217,16 @@
      "at": "2026-11-13T07:49:05+00:00"
     },
     {
+     "title": "PM Modi flags off Bengaluru Pink Line stretch",
+     "url": "https://economictimes.indiatimes.com/industry/transportation/railways/bengaluru-metro-pink-line-opens-south-bengaluru-commuters-get-a-new-7-5-km-route-as-pm-modi-flags-off-stretch-check-stations-and-train-timings/articleshow/135794401.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:03+00:00"
+    },
+    {
      "title": "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
      "url": "https://www.hindustantimes.com/india-news/pm-modi-flags-bengaluru-metro-pink-line-from-kalena-agrahara-undertakes-ride-with-karnataka-cm-shivakumar-101794555754620.html",
      "outlet": "Hindustan Times",
@@ -5357,103 +5252,112 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18"
+    "outlet:Network18",
+    "outlet:Amar Ujala"
    ],
    "top": {
-    "IN": 2,
     "IN-nation": 1
    },
-   "top_score": 1.25,
+   "top_score": 0.6,
    "top_headlines": [
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
-    "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q122864715",
-   "qid": "Q122864715",
-   "title": "Special session of the Parliament of India",
-   "name": "Special session of the Parliament of India",
-   "phrase": "Special Parliament",
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
    "person": false,
    "kind": "explainer",
-   "category": "politics",
-   "category_hi": "राजनीति",
-   "story": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
    "story_keys": [
-    "delimitation",
-    "session"
+    "against",
+    "final",
+    "wicket"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T08:20:31+00:00",
+   "news_at": "2026-11-13T09:48:47+00:00",
    "owners": [
-    "Network18",
+    "Bennett, Coleman & Co.",
+    "HT Media",
     "The Hindu Group",
-    "HT Media"
+    "ABP Group",
+    "Network18"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-    "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-    "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives"
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 6,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "एशिया कप",
    "reports": [
     {
-     "title": "Opposition not informed about possible Special Parliament session on delimitation: Priyanka Gandhi",
-     "url": "https://www.thehindu.com/news/national/opposition-not-informed-about-possible-special-parliament-session-on-delimitation-priyanka-gandhi/article71697000.ece",
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T08:20:31+00:00"
+     "at": "2026-11-13T09:48:47+00:00"
     },
     {
-     "title": "91 days since Parliament adjourned, session delay puzzles Opposition on Centre’s motives",
-     "url": "https://www.hindustantimes.com/india-news/parliament-session-delay-puzzles-opposition-on-centre-s-motives-101794511036645.html",
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T19:17:16+00:00"
+     "at": "2026-11-12T12:05:21+00:00"
     },
     {
-     "title": "Govt Mulls Special Parliament Session Soon To Push Delimitation Bill",
-     "url": "https://www.news18.com/india/govt-mulls-special-parliament-session-soon-to-push-delimitation-bill-10423087.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-12T10:13:00+00:00"
+     "at": "2026-11-12T11:52:43+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
-    "outlet:HT Media"
+    "outlet:ABP Group",
+    "outlet:Network18"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261113-Q7747",
@@ -5632,109 +5536,6 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group"
-   ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q943813",
-   "qid": "Q943813",
-   "title": "SpiceJet",
-   "name": "SpiceJet",
-   "phrase": "SpiceJet",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-   "story_keys": [
-    "airport",
-    "check-in",
-    "crore",
-    "dubai",
-    "operator",
-    "passenger"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:39:43+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-    "Delhi airport has a warning for SpiceJet passengers",
-    "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-    "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "स्पाइस्जेट",
-   "reports": [
-    {
-     "title": "Dubai airport operator suspends SpiceJet check-ins over Rs 35.8 crore unpaid dues",
-     "url": "https://www.indiatoday.in/india/story/dubai-airports-suspends-spicejet-check-in-services-over-unpaid-dues-3038043-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:39:43+00:00"
-    },
-    {
-     "title": "SpiceJet crisis: Understanding flight cancellations, passenger rights",
-     "url": "https://www.hindustantimes.com/india-news/spicejet-crisis-understanding-flight-cancellations-passenger-rights-101794557801816.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:16:41+00:00"
-    },
-    {
-     "title": "Dubai airport operator stops SpiceJet check-in over non-payment of around ₹35.85 crore",
-     "url": "https://www.hindustantimes.com/india-news/dubai-airports-stops-spicejet-s-check-in-services-over-non-payment-of-around-35-85-crore-101794550478664.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:14:38+00:00"
-    },
-    {
-     "title": "Delhi airport has a warning for SpiceJet passengers",
-     "url": "https://economictimes.indiatimes.com/industry/transportation/airlines-/-aviation/delhi-airport-warns-of-possible-flight-disruptions-due-to-spicejets-operational-challenges/articleshow/135789782.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:47:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
     "outlet:India Today Group"
    ],
    "top": {},
