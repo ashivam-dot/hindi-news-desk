@@ -1,13 +1,13 @@
 {
- "at": "2026-11-13T23:33:22+00:00",
+ "at": "2026-11-13T23:44:03+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 34 candidates from 33 trending",
+  "watch: 32 candidates from 31 trending",
   "revisit kh-20261114-Q10218-update: 4 owners' new reports on Rahul Gandhi (1028 views before); revisit kh-20261114-Q37293-update: 4 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 3 owners' new reports on Sonia Gandhi (807 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1666 headlines from 48 feeds (18 owners), 19 matched to articles, 16 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
-  "explainers: 14 kh- stories (on): kh-20261114-Q3524804, kh-20261114-Q182477, kh-20261114-Q2283, kh-20261114-Q2866609; dropped: explainer Shreyas Iyer: fewer than 3 owners' headlines name it and the story; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre; explainer Ramayana As: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1662 headlines from 48 feeds (18 owners), 20 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
+  "explainers: 12 kh- stories (on): kh-20261114-Q3524804, kh-20261114-Q182477, kh-20261114-Q2283, kh-20261114-Q2866609; dropped: explainer Shreyas Iyer: fewer than 3 owners' headlines name it and the story; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre; explainer Ramayana As: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261114-Q182477: a world statement, politics or diplomacy story with no India connection",
@@ -15,8 +15,8 @@
   "hold nw-20261113-assam-accident: outside 07:00-24:00 IST",
   "drop kh-20261114-Q3524804: a world statement, politics or diplomacy story with no India connection",
   "hold kh-20261114-Q2364111: outside 07:00-24:00 IST",
-  "drop kh-20261114-Q16224322: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261113-assam-accident, wk-Q29879031; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261114-Q62833385, kh-20261114-Q944085, kh-20261114-Q7747-update",
+  "drop wk-Q4772274: 84 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261113-assam-accident, wk-Q29879031; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261114-Q944085, kh-20261114-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
