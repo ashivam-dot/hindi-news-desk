@@ -1,20 +1,20 @@
 {
- "at": "2026-11-13T05:12:24+00:00",
+ "at": "2026-11-13T05:28:27+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
   "watch: 19 candidates from 26 trending",
-  "outlets: 1620 headlines from 47 feeds (18 owners), 13 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q37293, kh-20261113-Q182477, kh-20261113-Q3524804; dropped: explainer Pope Leo XIV: fewer than 3 owners' headlines name it and the story; explainer U.S. Ambassador William: fewer than 3 owners' headlines name it and the story; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1637 headlines from 48 feeds (18 owners), 16 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261113-Q37293, kh-20261113-Q182477, kh-20261113-Q3524804, kh-20261113-Q944085; dropped: explainer Pope Leo: fewer than 3 owners' headlines name it and the story; explainer Russia-Ukraine / Ambassador William Taylor: no Wikipedia article that can be its centre; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop kh-20261113-Q3524804: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261113-Q2283: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261113-Q182477: a world statement, politics or diplomacy story with no India connection",
-  "hold wk-Q4772274: last Short went out 1.3 h ago",
+  "hold wk-Q4772274: last Short went out 1.5 h ago",
+  "drop kh-20261113-Q944085: too low in Google News India's top stories (place 0.25, needs 0.35)",
   "drop kh-20261113-Q305177: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261113-Q944085: too low in Google News India's top stories (place 0.30, needs 0.35)",
+  "drop wk-Q5213677: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261113-Q3524804; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261113-Q944085",
   "channel: about, playlists done; nothing left to do"
  ]
