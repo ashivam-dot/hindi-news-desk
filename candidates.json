@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T17:01:27+00:00",
+ "at": "2026-11-13T17:15:45+00:00",
  "trending": [
   {
    "id": "kh-20261113-Q3524804",
@@ -184,22 +184,24 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+   "story": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
    "story_keys": [
     "down",
-    "hits",
     "hour",
     "outage",
-    "recovery"
+    "recovery",
+    "server",
+    "still"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:14:28+00:00",
+   "news_at": "2026-11-13T17:11:20+00:00",
    "owners": [
-    "India Today Group",
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
+    "India Today Group",
+    "Guardian Media Group",
     "Al Jazeera Media Network",
     "NDTV",
     "BBC"
@@ -209,7 +211,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+    "More than 16 hours after global outage, Microsoft still struggling to fix issue",
     "Widespread outage hits Microsoft apps",
     "Failed health check, elevated load, server restart: What led to the Microsoft outage",
     "Microsoft Outage: Will Indian flights be disrupted?",
@@ -218,7 +220,7 @@
    ],
    "hindi_headlines": [
     "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
     "माइक्रोसॉफ़्ट के सर्वर में आई तकनीकी दिक़्क़त को लेकर कंपनी ने अब क्या कहा?"
    ],
    "hindi_news": 3,
@@ -247,6 +249,26 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
+     "url": "https://www.indiatoday.in/world/video/microsoft-outage-and-nvidia-leadership-changes-with-sonia-gandhi-memoir-discussion-ytvd-3038563-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:11:20+00:00"
     },
     {
      "title": "'Recovery Underway, Some May Face Issues': Microsoft Update On Global Outage",
@@ -279,53 +301,34 @@
      "at": "2026-11-13T12:52:19+00:00"
     },
     {
-     "title": "Microsoft sees gradual recovery after 20-hour outage, extends email timeout to 48 hours",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-says-recovery-actions-ongoing-email-timeout-window-increased-to-48-hrs-3038224-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:18:31+00:00"
-    },
-    {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft outage: What's up and what's still down?",
+     "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-says-services-being-gradually-restored-in-asia-pacific/articleshow/135803115.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage: US govt departments and major cities witnessing downtime",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:35:44+00:00"
+     "at": "2026-11-13T12:21:51+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:Al Jazeera Media Network",
     "outlet:NDTV",
     "outlet:BBC",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "top": {
-    "IN": 11
+    "IN": 6
    },
-   "top_score": 0.5,
+   "top_score": 0.75,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "hindi_owners": [
     "India Today Group"
@@ -343,16 +346,17 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
+   "story": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
    "story_keys": [
-    "scandal"
+    "chip",
+    "company"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T16:13:02+00:00",
+   "news_at": "2026-11-13T13:36:19+00:00",
    "owners": [
-    "India Today Group",
     "Guardian Media Group",
-    "France Médias Monde",
+    "The Hindu Group",
+    "Al Jazeera Media Network",
     "DB Corp"
    ],
    "fame": 300000,
@@ -360,12 +364,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-    "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-    "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-    "Nvidia scandal: How close was ex-CEO to Trump?",
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "Nvidia scandal: What’s next for the US tech company?",
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_headlines": [
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
@@ -378,65 +381,55 @@
    "label_hi": "एनवीडिया",
    "reports": [
     {
-     "title": "Nvidia scandal: How close was ex-CEO to Trump?",
-     "url": "https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "Nvidia scandal: What’s next for the US tech company?",
+     "url": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-13T15:50:41+00:00"
+     "at": "2026-11-13T13:36:19+00:00"
     },
     {
-     "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-13T09:41:22+00:00"
+     "at": "2026-11-13T07:07:41+00:00"
     },
     {
-     "title": "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-     "url": "https://www.indiatoday.in/world/video/nvidia-controversy-and-its-impact-on-the-us-china-artificial-intelligence-race-ytvd-3038524-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T16:13:02+00:00"
-    },
-    {
-     "title": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-allegations-ytvd-3038515-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:06:04+00:00"
+     "at": "2026-11-13T11:26:34+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:Guardian Media Group",
-    "outlet:France Médias Monde",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network",
     "outlet:DB Corp",
-    "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "google-news:Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "google-news:\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "top": {
-    "IN": 12
+    "IN": 1
    },
-   "top_score": 0.45,
+   "top_score": 1.0,
    "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261113-Q313000",
@@ -807,16 +800,122 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 12
+    "IN": 15
    },
-   "top_score": 0.45,
+   "top_score": 0.3,
    "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+   "story_keys": [
+    "air",
+    "quality",
+    "severe'",
+    "worsening",
+    "zone"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T16:55:32+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+    "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:55:32+00:00"
+    },
+    {
+     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:54:03+00:00"
+    },
+    {
+     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:41:24+00:00"
+    },
+    {
+     "title": "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+     "url": "https://www.livemint.com/news/india/gurugram-news-2-ias-officers-transferred-in-haryana-reshuffle-after-monsoon-mayhem-amid-worsening-aqi-who-are-they-11794504412401.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:23:36+00:00"
+    },
+    {
+     "title": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+     "url": "https://www.livemint.com/news/india/delhi-pollution-meet-peter-singh-and-neeno-kaur-who-maintain-indoor-aqi-of-10-15-amid-worsening-air-quality-here-s-how-11794501744933.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:24:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q124540932",
@@ -1583,6 +1682,101 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+   "story_keys": [
+    "chip",
+    "company"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T13:36:19+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "The Hindu Group",
+    "Al Jazeera Media Network",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "Nvidia scandal: What’s next for the US tech company?",
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia scandal: What’s next for the US tech company?",
+     "url": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T13:36:19+00:00"
+    },
+    {
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T07:07:41+00:00"
+    },
+    {
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:26:34+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:DB Corp",
+    "google-news:Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "google-news:\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
+   ],
+   "top": {
+    "IN": 1
+   },
+   "top_score": 1.0,
+   "top_headlines": [
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
    "id": "kh-20261113-Q2283",
    "qid": "Q2283",
    "title": "Microsoft",
@@ -1592,22 +1786,24 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+   "story": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
    "story_keys": [
     "down",
-    "hits",
     "hour",
     "outage",
-    "recovery"
+    "recovery",
+    "server",
+    "still"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:14:28+00:00",
+   "news_at": "2026-11-13T17:11:20+00:00",
    "owners": [
-    "India Today Group",
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
+    "India Today Group",
+    "Guardian Media Group",
     "Al Jazeera Media Network",
     "NDTV",
     "BBC"
@@ -1617,7 +1813,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+    "More than 16 hours after global outage, Microsoft still struggling to fix issue",
     "Widespread outage hits Microsoft apps",
     "Failed health check, elevated load, server restart: What led to the Microsoft outage",
     "Microsoft Outage: Will Indian flights be disrupted?",
@@ -1626,7 +1822,7 @@
    ],
    "hindi_headlines": [
     "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
     "माइक्रोसॉफ़्ट के सर्वर में आई तकनीकी दिक़्क़त को लेकर कंपनी ने अब क्या कहा?"
    ],
    "hindi_news": 3,
@@ -1655,6 +1851,26 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
+     "url": "https://www.indiatoday.in/world/video/microsoft-outage-and-nvidia-leadership-changes-with-sonia-gandhi-memoir-discussion-ytvd-3038563-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:11:20+00:00"
     },
     {
      "title": "'Recovery Underway, Some May Face Issues': Microsoft Update On Global Outage",
@@ -1687,53 +1903,34 @@
      "at": "2026-11-13T12:52:19+00:00"
     },
     {
-     "title": "Microsoft sees gradual recovery after 20-hour outage, extends email timeout to 48 hours",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-says-recovery-actions-ongoing-email-timeout-window-increased-to-48-hrs-3038224-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:18:31+00:00"
-    },
-    {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft outage: What's up and what's still down?",
+     "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-says-services-being-gradually-restored-in-asia-pacific/articleshow/135803115.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage: US govt departments and major cities witnessing downtime",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:35:44+00:00"
+     "at": "2026-11-13T12:21:51+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:Al Jazeera Media Network",
     "outlet:NDTV",
     "outlet:BBC",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "top": {
-    "IN": 11
+    "IN": 6
    },
-   "top_score": 0.5,
+   "top_score": 0.75,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "hindi_owners": [
     "India Today Group"
@@ -1882,111 +2079,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-   "story_keys": [
-    "scandal"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T16:13:02+00:00",
-   "owners": [
-    "India Today Group",
-    "Guardian Media Group",
-    "France Médias Monde",
-    "DB Corp"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-    "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-    "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-    "Nvidia scandal: How close was ex-CEO to Trump?",
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Nvidia scandal: How close was ex-CEO to Trump?",
-     "url": "https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T15:50:41+00:00"
-    },
-    {
-     "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T09:41:22+00:00"
-    },
-    {
-     "title": "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-     "url": "https://www.indiatoday.in/world/video/nvidia-controversy-and-its-impact-on-the-us-china-artificial-intelligence-race-ytvd-3038524-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:13:02+00:00"
-    },
-    {
-     "title": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-allegations-ytvd-3038515-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:06:04+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Guardian Media Group",
-    "outlet:France Médias Monde",
-    "outlet:DB Corp",
-    "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "top": {
-    "IN": 12
-   },
-   "top_score": 0.45,
-   "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q29879031",
@@ -2486,12 +2578,11 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 12
+    "IN": 15
    },
-   "top_score": 0.45,
+   "top_score": 0.3,
    "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2849,6 +2940,113 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+   "story_keys": [
+    "air",
+    "quality",
+    "severe'",
+    "worsening",
+    "zone"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T16:55:32+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+    "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:55:32+00:00"
+    },
+    {
+     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:54:03+00:00"
+    },
+    {
+     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:41:24+00:00"
+    },
+    {
+     "title": "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+     "url": "https://www.livemint.com/news/india/gurugram-news-2-ias-officers-transferred-in-haryana-reshuffle-after-monsoon-mayhem-amid-worsening-aqi-who-are-they-11794504412401.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:23:36+00:00"
+    },
+    {
+     "title": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+     "url": "https://www.livemint.com/news/india/delhi-pollution-meet-peter-singh-and-neeno-kaur-who-maintain-indoor-aqi-of-10-15-amid-worsening-air-quality-here-s-how-11794501744933.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:24:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "qid": "Q18613657",
    "title": "Alexander Darchiev",
    "fame": 9579,
@@ -2982,7 +3180,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Bharat Summit 2026: Drone flying banned in Madhapur ahead of Rahul Gandhi, Rajnath Singh visits",
+   "story": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
    "story_keys": [
     "chicago",
     "columbia",
@@ -2991,11 +3189,11 @@
     "visit"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T16:46:42+00:00",
+   "news_at": "2026-11-13T17:11:20+00:00",
    "owners": [
+    "India Today Group",
     "The Hindu Group",
     "HT Media",
-    "India Today Group",
     "Network18"
    ],
    "fame": 1,
@@ -3003,6 +3201,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
     "Bharat Summit 2026: Drone flying banned in Madhapur ahead of Rahul Gandhi, Rajnath Singh visits",
     "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
     "Modi revisits intolerance chapter missing from Sonia Gandhi's memoir",
@@ -3013,6 +3212,16 @@
    "india_link": true,
    "label_hi": "राहुल गाँधी",
    "reports": [
+    {
+     "title": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
+     "url": "https://www.indiatoday.in/world/video/microsoft-outage-and-nvidia-leadership-changes-with-sonia-gandhi-memoir-discussion-ytvd-3038563-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:11:20+00:00"
+    },
     {
      "title": "Bharat Summit 2026: Drone flying banned in Madhapur ahead of Rahul Gandhi, Rajnath Singh visits",
      "url": "https://www.thehindu.com/news/national/telangana/bharat-summit-2026-drone-flying-banned-in-madhapur-ahead-of-rahul-gandhi-rajnath-singh-visits/article71698212.ece",
@@ -3233,7 +3442,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
+   "story": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
    "story_keys": [
     "assassination",
     "become",
@@ -3256,16 +3465,17 @@
     "reveal"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T13:02:59+00:00",
+   "news_at": "2026-11-13T17:11:20+00:00",
    "owners": [
-    "HT Media",
-    "India Today Group"
+    "India Today Group",
+    "HT Media"
    ],
    "fame": 1,
    "news": 0,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
     "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
     "Modi revisits intolerance chapter missing from Sonia Gandhi's memoir"
    ],
@@ -3274,6 +3484,16 @@
    "india_link": true,
    "label_hi": "सोनिया गांधी",
    "reports": [
+    {
+     "title": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
+     "url": "https://www.indiatoday.in/world/video/microsoft-outage-and-nvidia-leadership-changes-with-sonia-gandhi-memoir-discussion-ytvd-3038563-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:11:20+00:00"
+    },
     {
      "title": "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
      "url": "https://www.livemint.com/news/india/who-is-aviva-baig-meet-the-fianc-e-of-priyanka-gandhi-s-son-raihan-vadra-who-contributed-to-sonia-gandhis-memoir-11794570133830.html",
@@ -3321,7 +3541,7 @@
    "kind": "explainer",
    "category": "diplomacy",
    "category_hi": "कूटनीति",
-   "story": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
+   "story": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
    "story_keys": [
     "compromise",
     "dhabi",
@@ -3332,24 +3552,34 @@
     "zelensky"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:28:00+00:00",
+   "news_at": "2026-11-13T16:40:31+00:00",
    "owners": [
-    "Deutsche Welle",
-    "France Médias Monde"
+    "BBC",
+    "Deutsche Welle"
    ],
    "fame": 1,
    "news": 0,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
-    "US, Ukraine say Europe to join peace talks as Putin sticks to hardline stance"
+    "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
+    "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit"
    ],
    "hindi_headlines": [],
    "region": "world",
    "india_link": true,
    "label_hi": "व्लादिमीर पुतिन",
    "reports": [
+    {
+     "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T16:40:31+00:00"
+    },
     {
      "title": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
      "url": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427?maca=en-rss-en-all-1573-rdf",
@@ -3359,16 +3589,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-13T15:28:00+00:00"
-    },
-    {
-     "title": "US, Ukraine say Europe to join peace talks as Putin sticks to hardline stance",
-     "url": "https://www.france24.com/en/video/20261113-us-ukraine-say-europe-to-join-peace-talks-as-putin-sticks-to-hardline-stance",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:59:10+00:00"
     }
    ],
    "via": [
@@ -3387,20 +3607,21 @@
  ],
  "notes": [
   "revisit kh-20261113-Q37293-update: 4 owners' new reports on Ramayana (999 views before); revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (986 views before); revisit Q9543: already revisited today; revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (803 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its la",
-  "outlets: 1813 headlines from 48 feeds (18 owners), 15 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
-  "explainers: 8 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q182477, kh-20261113-Q313000; dropped: explainer Putin: fewer than 3 owners' headlines name it and the story; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre",
+  "outlets: 1796 headlines from 47 feeds (18 owners), 15 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
+  "explainers: 9 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q182477, kh-20261113-Q313000; dropped: explainer Kallas: fewer than 3 owners' headlines name it and the story; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "outlet pib-hi: HTTPError: 404 Client Error: Not Found for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3&reg=3",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1813,
-  "feeds": 48,
+  "headlines": 1796,
+  "feeds": 47,
   "owners": 18,
   "matched": 15,
-  "corroborated": 11
+  "corroborated": 12
  },
  "emerging": [
   {
@@ -3651,22 +3872,24 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+   "story": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
    "story_keys": [
     "down",
-    "hits",
     "hour",
     "outage",
-    "recovery"
+    "recovery",
+    "server",
+    "still"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T15:14:28+00:00",
+   "news_at": "2026-11-13T17:11:20+00:00",
    "owners": [
-    "India Today Group",
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
+    "India Today Group",
+    "Guardian Media Group",
     "Al Jazeera Media Network",
     "NDTV",
     "BBC"
@@ -3676,7 +3899,7 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+    "More than 16 hours after global outage, Microsoft still struggling to fix issue",
     "Widespread outage hits Microsoft apps",
     "Failed health check, elevated load, server restart: What led to the Microsoft outage",
     "Microsoft Outage: Will Indian flights be disrupted?",
@@ -3685,7 +3908,7 @@
    ],
    "hindi_headlines": [
     "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
     "माइक्रोसॉफ़्ट के सर्वर में आई तकनीकी दिक़्क़त को लेकर कंपनी ने अब क्या कहा?"
    ],
    "hindi_news": 3,
@@ -3714,6 +3937,26 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft server outage and Nvidia CEO change followed by Sonia Gandhi memoir talk",
+     "url": "https://www.indiatoday.in/world/video/microsoft-outage-and-nvidia-leadership-changes-with-sonia-gandhi-memoir-discussion-ytvd-3038563-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:11:20+00:00"
     },
     {
      "title": "'Recovery Underway, Some May Face Issues': Microsoft Update On Global Outage",
@@ -3746,53 +3989,34 @@
      "at": "2026-11-13T12:52:19+00:00"
     },
     {
-     "title": "Microsoft sees gradual recovery after 20-hour outage, extends email timeout to 48 hours",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-says-recovery-actions-ongoing-email-timeout-window-increased-to-48-hrs-3038224-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:18:31+00:00"
-    },
-    {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft outage: What's up and what's still down?",
+     "url": "https://economictimes.indiatimes.com/tech/technology/microsoft-says-services-being-gradually-restored-in-asia-pacific/articleshow/135803115.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage: US govt departments and major cities witnessing downtime",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:35:44+00:00"
+     "at": "2026-11-13T12:21:51+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:Al Jazeera Media Network",
     "outlet:NDTV",
     "outlet:BBC",
-    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "top": {
-    "IN": 11
+    "IN": 6
    },
-   "top_score": 0.5,
+   "top_score": 0.75,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
    ],
    "hindi_owners": [
     "India Today Group"
@@ -3810,16 +4034,17 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
+   "story": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
    "story_keys": [
-    "scandal"
+    "chip",
+    "company"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T16:13:02+00:00",
+   "news_at": "2026-11-13T13:36:19+00:00",
    "owners": [
-    "India Today Group",
     "Guardian Media Group",
-    "France Médias Monde",
+    "The Hindu Group",
+    "Al Jazeera Media Network",
     "DB Corp"
    ],
    "fame": 300000,
@@ -3827,12 +4052,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-    "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-    "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-    "Nvidia scandal: How close was ex-CEO to Trump?",
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "Nvidia scandal: What’s next for the US tech company?",
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_headlines": [
     "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना"
@@ -3845,65 +4069,55 @@
    "label_hi": "एनवीडिया",
    "reports": [
     {
-     "title": "Nvidia scandal: How close was ex-CEO to Trump?",
-     "url": "https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "Nvidia scandal: What’s next for the US tech company?",
+     "url": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-13T15:50:41+00:00"
+     "at": "2026-11-13T13:36:19+00:00"
     },
     {
-     "title": "Nvidia scandal: Howard Lutnick under pressure over alleged lack of action",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/nvidia-scandal-sparks-us-national-security-concerns-china",
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
      "outlet": "The Guardian",
      "outlet_hi": "द गार्डियन",
      "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-13T09:41:22+00:00"
+     "at": "2026-11-13T07:07:41+00:00"
     },
     {
-     "title": "Experts discuss the Nvidia scandal and its effects on the US China AI competition",
-     "url": "https://www.indiatoday.in/world/video/nvidia-controversy-and-its-impact-on-the-us-china-artificial-intelligence-race-ytvd-3038524-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T16:13:02+00:00"
-    },
-    {
-     "title": "NVIDIA CEO Jensen Huang resigns after 33 years amid multiple scandals",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-ceo-jensen-huang-resigns-amid-controversies-and-allegations-ytvd-3038515-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:06:04+00:00"
+     "at": "2026-11-13T11:26:34+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:Guardian Media Group",
-    "outlet:France Médias Monde",
+    "outlet:The Hindu Group",
+    "outlet:Al Jazeera Media Network",
     "outlet:DB Corp",
-    "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "google-news:Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "google-news:Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "google-news:\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "top": {
-    "IN": 12
+    "IN": 1
    },
-   "top_score": 0.45,
+   "top_score": 1.0,
    "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261113-Q313000",
@@ -4067,16 +4281,122 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 12
+    "IN": 15
    },
-   "top_score": 0.45,
+   "top_score": 0.3,
    "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+    "\"33 Years Of Bold Leadership\": Perplexity CEO Praises Jensen Huang's Contribution To Nvidia"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261113-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+   "story_keys": [
+    "air",
+    "quality",
+    "severe'",
+    "worsening",
+    "zone"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T16:55:32+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+    "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:55:32+00:00"
+    },
+    {
+     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:54:03+00:00"
+    },
+    {
+     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:41:24+00:00"
+    },
+    {
+     "title": "Gurugram news: IAS officers transferred in Haryana reshuffle after monsoon mayhem, amid worsening AQI; who are they?",
+     "url": "https://www.livemint.com/news/india/gurugram-news-2-ias-officers-transferred-in-haryana-reshuffle-after-monsoon-mayhem-amid-worsening-aqi-who-are-they-11794504412401.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T18:23:36+00:00"
+    },
+    {
+     "title": "Delhi Pollution: Meet Peter Singh and Neeno Kaur who maintain indoor AQI of 10-15 amid worsening air quality; here’s how",
+     "url": "https://www.livemint.com/news/india/delhi-pollution-meet-peter-singh-and-neeno-kaur-who-maintain-indoor-aqi-of-10-15-amid-worsening-air-quality-here-s-how-11794501744933.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T17:24:05+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q124540932",
