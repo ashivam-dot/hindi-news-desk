@@ -1,6 +1,42 @@
 {
- "at": "2026-11-13T09:43:49+00:00",
+ "at": "2026-11-13T09:58:57+00:00",
  "trending": [
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 499893,
+   "views": 374893,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-12T23:45:38+00:00",
+   "headlines": [
+    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12",
+    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
   {
    "id": "kh-20261113-Q2283",
    "qid": "Q2283",
@@ -11,24 +47,23 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
    "story_keys": [
+    "company",
     "cyberattack",
-    "fix",
     "hits",
-    "hour",
     "outage"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:08:16+00:00",
+   "news_at": "2026-11-13T09:40:21+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
     "Deutsche Welle",
     "Guardian Media Group",
+    "NDTV",
     "BBC"
    ],
    "fame": 400000,
@@ -36,19 +71,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
     "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
     "Widespread outage hits Microsoft apps",
     "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
    ],
    "hindi_headlines": [
     "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
     "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -78,14 +113,34 @@
      "at": "2026-11-13T09:08:16+00:00"
     },
     {
-     "title": "Microsoft 365 outage: Company reports 'positive results' in fix for Outlook, Teams",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-status-update-company-reports-positive-results-in-fix-for-outlook-teams-and-other-365-services/articleshow/135796608.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
+     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:04:12+00:00"
+     "at": "2026-11-13T09:40:21+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
+    },
+    {
+     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:22+00:00"
     },
     {
      "title": "Microsoft rules out cyberattack amid global outage",
@@ -108,16 +163,6 @@
      "at": "2026-11-13T06:58:40+00:00"
     },
     {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
      "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
      "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
      "outlet": "Hindustan Times",
@@ -126,16 +171,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
     }
    ],
    "via": [
@@ -143,12 +178,12 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
     "outlet:Deutsche Welle",
     "outlet:Guardian Media Group",
+    "outlet:NDTV",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "top": {
     "IN": 1,
@@ -156,7 +191,7 @@
    },
    "top_score": 1.1,
    "top_headlines": [
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
@@ -194,8 +229,8 @@
     "NDTV",
     "HT Media",
     "India Today Group",
-    "Network18",
     "TV9 Network",
+    "Network18",
     "Amar Ujala",
     "DB Corp",
     "ABP Group"
@@ -213,13 +248,13 @@
     "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
    ],
    "hindi_headlines": [
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
+    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
     "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
     "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
-    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म",
-    "100 से ज्यादा ऑडिशन के बाद रामायण सीरियल के लिए फाइनल हुआ था रावण का किरदार, केवट के रोल के लिए गए थे अरविंद त्रिवेदी!",
-    "'रामायण' ने रचा इतिहास, 1000 करोड़ पार करते ही मेकर्स ने रणबीर, साई और यश के नए धांसू पोस्टर्स से मचाया धमाल"
+    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
    ],
-   "hindi_news": 43,
+   "hindi_news": 45,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -311,56 +346,161 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:India Today Group",
-    "outlet:Network18",
     "outlet:TV9 Network",
+    "outlet:Network18",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:ABP Group",
-    "google-news:'Ramayana' box office collection day 9 (LIVE): Ranbir Kapoor, Yash, Sai Pallavi's film inches towards Rs",
+    "google-news:Ramayana Part One Box Office Collections: Ranbir Kapoor and Yash starrer phenomenal run continues Overseas, tops Rs. 900 Cr worldwide",
     "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "TV9 Network",
     "Network18",
     "NDTV",
-    "TV9 Network",
     "India Today Group",
     "Amar Ujala",
     "DB Corp"
    ]
   },
   {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 374893,
-   "views": 374893,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia employees demand second chance for Jensen Huang",
+   "story_keys": [
+    "board",
+    "chance",
+    "employee",
+    "former",
+    "second"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:55:07+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "DB Corp",
+    "BBC"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia employees demand second chance for Jensen Huang",
+    "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia employees urge board to bring back Jensen Huang",
+    "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+    "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
+     "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:55:07+00:00"
+    },
+    {
+     "title": "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/give-him-a-second-chance-nvidia-employees-break-down-after-jensens-exit-3038092-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:34:34+00:00"
+    },
+    {
+     "title": "Nvidia employees urge board to bring back Jensen Huang",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-employees-want-jensen-huang-back-as-ceo-internal-suggestion-box-post-draws-over-1600-comments-we-are-all-humans-and-can-make-mistakes-jensen-did-so-many-good-things-and-he-/articleshow/135793491.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:04:13+00:00"
+    },
+    {
+     "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+     "url": "https://www.thehindu.com/sci-tech/technology/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/article71696426.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:44:57+00:00"
+    },
+    {
+     "title": "Nvidia employees demand second chance for Jensen Huang",
+     "url": "https://www.indiatoday.in/technology/news/story/nvidia-employees-demand-second-chance-for-jensen-huang-return-petition-gets-over-1600-comments-3037895-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:14:00+00:00"
+    },
+    {
+     "title": "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+     "url": "https://www.livemint.com/news/trump-endorses-former-apple-ceo-tim-cook-to-replace-jensen-huang-as-nvidia-ceo-a-legend-replaces-a-legend-11794498668369.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:55:47+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:DB Corp",
+    "outlet:BBC",
+    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -482,9 +622,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -703,9 +843,9 @@
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
    ],
    "top": {
-    "IN": 5
+    "IN": 6
    },
-   "top_score": 0.8,
+   "top_score": 0.75,
    "top_headlines": [
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
@@ -810,6 +950,91 @@
    "lane": "paisa"
   },
   {
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 157094,
@@ -841,11 +1066,137 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q19891094",
-   "qid": "Q19891094",
-   "title": "Pink Line (Delhi Metro)",
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+   "story_keys": [
+    "against",
+    "final",
+    "wicket"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group",
+    "ABP Group",
+    "Network18",
+    "TV9 Network"
+   ],
+   "fame": 150000,
+   "news": 150000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
+   ],
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 8,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "एशिया कप",
+   "reports": [
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
+    },
+    {
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:05:21+00:00"
+    },
+    {
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:52:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:ABP Group",
+    "outlet:Network18",
+    "outlet:TV9 Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261113-Q39071562",
+   "qid": "Q39071562",
+   "title": "Pink Line (Namma Metro)",
    "name": "Pink Line",
-   "phrase": "Metro’s Pink Line",
+   "phrase": "Bengaluru Metro’s Pink",
    "person": false,
    "kind": "explainer",
    "category": "policy",
@@ -864,11 +1215,10 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18",
-    "Amar Ujala"
+    "Network18"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -879,17 +1229,15 @@
     "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
     "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
-   "hindi_headlines": [
-    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "पिंक लाइन",
+   "label_hi": null,
    "reports": [
     {
      "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
@@ -957,8 +1305,7 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18",
-    "outlet:Amar Ujala"
+    "outlet:Network18"
    ],
    "top": {
     "IN": 2,
@@ -966,136 +1313,13 @@
    },
    "top_score": 1.25,
    "top_headlines": [
+    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
     "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
     "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-   "story_keys": [
-    "envoy",
-    "talk"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T06:09:58+00:00",
-   "owners": [
-    "NPR",
-    "Guardian Media Group",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-    "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-    "US envoys shuttle between Putin and Zelenskyy",
-    "Putin Agrees To Let European Representatives Join Ukraine Peace Talks"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-     "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T15:26:34+00:00"
-    },
-    {
-     "title": "US envoys shuttle between Putin and Zelenskyy",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:12:01+00:00"
-    },
-    {
-     "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-     "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T22:26:37+00:00"
-    },
-    {
-     "title": "Putin Agrees To Let European Representatives Join Ukraine Peace Talks",
-     "url": "https://www.ndtv.com/world-news/russia-ukraine-war-russian-president-vladimir-putin-agrees-to-let-european-representatives-join-ukraine-peace-talks-12320780#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:09:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NPR",
-    "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   },
   {
    "id": "kh-20261113-Q122864715",
@@ -1172,47 +1396,43 @@
     "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
-   "top": {
-    "IN-nation": 10
-   },
-   "top_score": 0.33,
-   "top_headlines": [
-    "Government planning special Session to clear Delimitation Bill; Congress calls it a ‘bluster’"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261113-Q35525",
-   "qid": "Q35525",
-   "title": "White House",
-   "name": "White House",
-   "phrase": "And White House",
-   "person": false,
+   "id": "kh-20261113-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
    "story_keys": [
-    "future",
-    "secretary"
+    "envoy",
+    "talk"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T06:08:10+00:00",
+   "news_at": "2026-11-13T04:12:01+00:00",
    "owners": [
     "NPR",
-    "France Médias Monde",
-    "NDTV"
+    "Guardian Media Group",
+    "Al Jazeera Media Network"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-    "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-    "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report"
+    "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+    "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
+    "US envoys shuttle between Putin and Zelenskyy"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1220,54 +1440,48 @@
    "region": "world",
    "india_link": false,
    "abroad": true,
-   "label_hi": "वाइट हाउस",
+   "label_hi": "व्लादिमीर पुतिन",
    "reports": [
     {
-     "title": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-     "url": "https://www.france24.com/en/white-house-reportedly-discussing-howard-lutnick-s-future-as-commerce-secretary",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T19:22:28+00:00"
-    },
-    {
-     "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-     "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
+     "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+     "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
      "outlet": "NPR",
      "outlet_hi": "एनपीआर",
      "owner": "NPR",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-12T12:15:48+00:00"
+     "at": "2026-11-12T15:26:34+00:00"
     },
     {
-     "title": "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report",
-     "url": "https://www.ndtv.com/world-news/white-house-considers-removing-commerce-secretary-howard-lutnick-amid-nvidia-concerns-report-12320867#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
+     "title": "US envoys shuttle between Putin and Zelenskyy",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-13T06:08:10+00:00"
+     "at": "2026-11-13T04:12:01+00:00"
+    },
+    {
+     "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
+     "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T22:26:37+00:00"
     }
    ],
    "via": [
     "outlet:NPR",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network"
    ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -1368,9 +1582,13 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -1475,162 +1693,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-   "story_keys": [
-    "microsoft",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंडीगो",
-   "reports": [
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": "Q142131356",
-   "title": "2026 New York City building collapse",
-   "fame": 50100,
-   "views": 0,
-   "traffic": 100,
-   "news": 50000,
-   "news_at": "2026-11-12T22:58:23+00:00",
-   "headlines": [
-    "New York building collapse kills eight, including two children",
-    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:new",
-    "google-news:New York building collapse kills eight, including two children",
-    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-    "outlet:France Médias Monde",
-    "outlet:India Today Group"
-   ],
-   "owners": [
-    "France Médias Monde",
-    "India Today Group"
-   ],
-   "reports": [
-    {
-     "title": "New York building collapse kills eight, including two children",
-     "url": "https://www.france24.com/en/americas/20261112-eight-killed-including-two-children-in-new-york-building-collapse",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T22:58:23+00:00"
-    },
-    {
-     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T12:42:27+00:00"
-    }
-   ],
-   "id": "wk-Q142131356",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-11",
-   "coords": [
-    40.639018,
-    -73.953872
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 50000,
@@ -1721,6 +1783,72 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-12T22:58:23+00:00",
+   "headlines": [
+    "New York building collapse kills eight, including two children",
+    "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:New York building collapse kills eight, including two children",
+    "google-news:Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+    "outlet:France Médias Monde",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "France Médias Monde",
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "New York building collapse kills eight, including two children",
+     "url": "https://www.france24.com/en/americas/20261112-eight-killed-including-two-children-in-new-york-building-collapse",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-12T22:58:23+00:00"
+    },
+    {
+     "title": "Three-story building collapse in New York; at least 1 confirmed dead and 19 injured",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/three-story-building-collapse-in-new-york-at-least-1-confirmed-dead-and-19-injured-3037564-2026-11-12?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:42:27+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.639018,
+    -73.953872
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q533583",
@@ -2074,24 +2202,23 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
    "story_keys": [
+    "company",
     "cyberattack",
-    "fix",
     "hits",
-    "hour",
     "outage"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:08:16+00:00",
+   "news_at": "2026-11-13T09:40:21+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
     "Deutsche Welle",
     "Guardian Media Group",
+    "NDTV",
     "BBC"
    ],
    "fame": 400000,
@@ -2099,19 +2226,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
     "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
     "Widespread outage hits Microsoft apps",
     "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
    ],
    "hindi_headlines": [
     "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
     "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -2141,14 +2268,34 @@
      "at": "2026-11-13T09:08:16+00:00"
     },
     {
-     "title": "Microsoft 365 outage: Company reports 'positive results' in fix for Outlook, Teams",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-status-update-company-reports-positive-results-in-fix-for-outlook-teams-and-other-365-services/articleshow/135796608.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
+     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:04:12+00:00"
+     "at": "2026-11-13T09:40:21+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
+    },
+    {
+     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:22+00:00"
     },
     {
      "title": "Microsoft rules out cyberattack amid global outage",
@@ -2171,16 +2318,6 @@
      "at": "2026-11-13T06:58:40+00:00"
     },
     {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
      "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
      "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
      "outlet": "Hindustan Times",
@@ -2189,16 +2326,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
     }
    ],
    "via": [
@@ -2206,12 +2333,12 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
     "outlet:Deutsche Welle",
     "outlet:Guardian Media Group",
+    "outlet:NDTV",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "top": {
     "IN": 1,
@@ -2219,7 +2346,7 @@
    },
    "top_score": 1.1,
    "top_headlines": [
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
@@ -2227,139 +2354,6 @@
     "NDTV",
     "BBC"
    ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q19891094",
-   "qid": "Q19891094",
-   "title": "Pink Line (Delhi Metro)",
-   "name": "Pink Line",
-   "phrase": "Metro’s Pink Line",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
-   "story_keys": [
-    "inaugurate",
-    "namma",
-    "ride",
-    "take"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:16:36+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV",
-    "Network18",
-    "Amar Ujala"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
-    "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
-    "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
-    "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
-   ],
-   "hindi_headlines": [
-    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "पिंक लाइन",
-   "reports": [
-    {
-     "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
-     "url": "https://www.news18.com/india/namm-metro-pink-line-viksit-karnataka-modi-new-chapter-infrastructure-development-bengaluru-ws-l-10424321.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:16:36+00:00"
-    },
-    {
-     "title": "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
-     "url": "https://www.news18.com/cities/bengaluru-news/bengaluru-namma-metros-pink-line-opens-to-public-on-nov-14-stations-interchanges-fares-tickets-and-more-ws-klrt-10421968.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:08:22+00:00"
-    },
-    {
-     "title": "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
-     "url": "https://www.ndtv.com/bangalore-news/pm-modi-inaugurates-bengaluru-metros-pink-line-takes-ride-with-dk-shivakumar-12321314#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:19:49+00:00"
-    },
-    {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
-    },
-    {
-     "title": "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
-     "url": "https://www.hindustantimes.com/india-news/pm-modi-flags-bengaluru-metro-pink-line-from-kalena-agrahara-undertakes-ride-with-karnataka-cm-shivakumar-101794555754620.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:44:11+00:00"
-    },
-    {
-     "title": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
-     "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:41:13+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "outlet:Network18",
-    "outlet:Amar Ujala"
-   ],
-   "top": {
-    "IN": 2,
-    "IN-nation": 1
-   },
-   "top_score": 1.25,
-   "top_headlines": [
-    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
-    "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
-   ],
-   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
@@ -2483,9 +2477,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -2496,35 +2490,42 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
+   "id": "kh-20261113-Q39071562",
+   "qid": "Q39071562",
+   "title": "Pink Line (Namma Metro)",
+   "name": "Pink Line",
+   "phrase": "Bengaluru Metro’s Pink",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+   "category": "policy",
+   "category_hi": "नीति",
+   "story": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
    "story_keys": [
-    "microsoft",
-    "outage"
+    "inaugurate",
+    "namma",
+    "ride",
+    "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
+   "news_at": "2026-11-13T09:16:36+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
-    "The Hindu Group"
+    "Bennett, Coleman & Co.",
+    "NDTV",
+    "Network18"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
+    "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
+    "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
+    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
+    "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
+    "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2534,50 +2535,85 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "इंडीगो",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
+     "url": "https://www.news18.com/india/namm-metro-pink-line-viksit-karnataka-modi-new-chapter-infrastructure-development-bengaluru-ws-l-10424321.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
+     "at": "2026-11-13T09:16:36+00:00"
     },
     {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "title": "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
+     "url": "https://www.news18.com/cities/bengaluru-news/bengaluru-namma-metros-pink-line-opens-to-public-on-nov-14-stations-interchanges-fares-tickets-and-more-ws-klrt-10421968.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:08:22+00:00"
+    },
+    {
+     "title": "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
+     "url": "https://www.ndtv.com/bangalore-news/pm-modi-inaugurates-bengaluru-metros-pink-line-takes-ride-with-dk-shivakumar-12321314#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:19:49+00:00"
+    },
+    {
+     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:49:05+00:00"
+    },
+    {
+     "title": "PM Modi flags off Bengaluru Metro’s Pink Line, undertakes ride with CM Shivakumar",
+     "url": "https://www.hindustantimes.com/india-news/pm-modi-flags-bengaluru-metro-pink-line-from-kalena-agrahara-undertakes-ride-with-karnataka-cm-shivakumar-101794555754620.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
+     "at": "2026-11-13T07:44:11+00:00"
     },
     {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
+     "title": "PM inaugurates Bengaluru Metro's Pink Line, takes ride with DK Shivakumar",
+     "url": "https://www.indiatoday.in/cities/bengaluru/story/pm-inaugurates-bengaluru-metros-pink-line-takes-a-ride-with-karnataka-cm-dk-shivakumar-3038045-2026-11-13?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
+     "at": "2026-11-13T07:41:13+00:00"
     }
    ],
    "via": [
     "outlet:India Today Group",
     "outlet:HT Media",
-    "outlet:The Hindu Group"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "outlet:Network18"
    ],
    "top": {
-    "IN": 1
+    "IN": 2,
+    "IN-nation": 1
    },
-   "top_score": 1.0,
+   "top_score": 1.25,
    "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
+    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
+    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
+    "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2664,9 +2700,9 @@
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
    ],
    "top": {
-    "IN": 5
+    "IN": 6
    },
-   "top_score": 0.8,
+   "top_score": 0.75,
    "top_headlines": [
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
@@ -2777,22 +2813,163 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia employees demand second chance for Jensen Huang",
+   "story_keys": [
+    "board",
+    "chance",
+    "employee",
+    "former",
+    "second"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:55:07+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "DB Corp",
+    "BBC"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia employees demand second chance for Jensen Huang",
+    "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia employees urge board to bring back Jensen Huang",
+    "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+    "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
+     "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:55:07+00:00"
+    },
+    {
+     "title": "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/give-him-a-second-chance-nvidia-employees-break-down-after-jensens-exit-3038092-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:34:34+00:00"
+    },
+    {
+     "title": "Nvidia employees urge board to bring back Jensen Huang",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-employees-want-jensen-huang-back-as-ceo-internal-suggestion-box-post-draws-over-1600-comments-we-are-all-humans-and-can-make-mistakes-jensen-did-so-many-good-things-and-he-/articleshow/135793491.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:04:13+00:00"
+    },
+    {
+     "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+     "url": "https://www.thehindu.com/sci-tech/technology/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/article71696426.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:44:57+00:00"
+    },
+    {
+     "title": "Nvidia employees demand second chance for Jensen Huang",
+     "url": "https://www.indiatoday.in/technology/news/story/nvidia-employees-demand-second-chance-for-jensen-huang-return-petition-gets-over-1600-comments-3037895-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:14:00+00:00"
+    },
+    {
+     "title": "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+     "url": "https://www.livemint.com/news/trump-endorses-former-apple-ceo-tim-cook-to-replace-jensen-huang-as-nvidia-ceo-a-legend-replaces-a-legend-11794498668369.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:55:47+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:DB Corp",
+    "outlet:BBC",
+    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "qid": "Q4772274",
    "title": "Anthony Clark (actor)",
-   "fame": 374893,
+   "fame": 499893,
    "views": 374893,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 125000,
+   "news_at": "2026-11-12T23:45:38+00:00",
+   "headlines": [
+    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "US"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12"
+    "wikipedia-top-2026-11-12",
+    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
    ],
    "owners": [],
    "reports": [],
@@ -3060,6 +3237,37 @@
    "lane": "paisa"
   },
   {
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "id": "kh-20261113-Q122864715",
    "qid": "Q122864715",
    "title": "Special session of the Parliament of India",
@@ -3134,47 +3342,97 @@
     "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
-   "top": {
-    "IN-nation": 10
-   },
-   "top_score": 0.33,
-   "top_headlines": [
-    "Government planning special Session to clear Delimitation Bill; Congress calls it a ‘bluster’"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
   },
   {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "abroad": true,
    "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "qid": "Q4795757",
@@ -3269,92 +3527,6 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q35525",
-   "qid": "Q35525",
-   "title": "White House",
-   "name": "White House",
-   "phrase": "And White House",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-   "story_keys": [
-    "future",
-    "secretary"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T06:08:10+00:00",
-   "owners": [
-    "NPR",
-    "France Médias Monde",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-    "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-    "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "वाइट हाउस",
-   "reports": [
-    {
-     "title": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-     "url": "https://www.france24.com/en/white-house-reportedly-discussing-howard-lutnick-s-future-as-commerce-secretary",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T19:22:28+00:00"
-    },
-    {
-     "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-     "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T12:15:48+00:00"
-    },
-    {
-     "title": "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report",
-     "url": "https://www.ndtv.com/world-news/white-house-considers-removing-commerce-secretary-howard-lutnick-amid-nvidia-concerns-report-12320867#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:08:10+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NPR",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "qid": "Q5220508",
    "title": "Danny Kelly (journalist)",
    "fame": 29225,
@@ -3386,35 +3558,99 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q1395654",
-   "title": "Irma P. Hall",
-   "fame": 27874,
-   "views": 27874,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+   "story_keys": [
+    "against",
+    "final",
+    "wicket"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q1395654",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group",
+    "ABP Group",
+    "Network18",
+    "TV9 Network"
+   ],
+   "fame": 150000,
+   "news": 150000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
+   ],
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 8,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "एशिया कप",
+   "reports": [
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
+    },
+    {
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:05:21+00:00"
+    },
+    {
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:52:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:ABP Group",
+    "outlet:Network18",
+    "outlet:TV9 Network"
+   ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -3515,12 +3751,47 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 27874,
+   "views": 27874,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q274156",
@@ -3709,7 +3980,6 @@
    "traffic": 0,
    "headlines": [
     "Sonia Gandhi’s memoir: ‘More the bhakts comment, better it would do,’ says Rahul Gandhi on BJP’s criticisms",
-    "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
     "Raihan Vadra, fiancee Aviva Baig's special contribution to Sonia Gandhi's book",
     "'She has right to tell her story': Priyanka hits back at BJP over mother Sonia Gandhi's memoir",
     "Sonia Gandhi Book: सोनिया गांधी की किताब से उठा सियासी बवंडर, दिल्ली में जलाई गईं बुक की कॉपियां"
@@ -3728,16 +3998,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T09:31:48+00:00"
-    },
-    {
-     "title": "Sonia Gandhi’s ‘Belonging’: From being shelved to the shelves",
-     "url": "https://www.thehindu.com/books/articles-on-sonia-gandhi-book-belonging/article71450926.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:32:35+00:00"
     },
     {
      "title": "Raihan Vadra, fiancee Aviva Baig's special contribution to Sonia Gandhi's book",
@@ -3874,8 +4134,8 @@
  ],
  "notes": [
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q37293: last Short 6 h ago; revisit Q9543: already revisited today; revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (920 views before); revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (798 views before); revisit Q468324 (421 views): 0 owners ",
-  "outlets: 1704 headlines from 47 feeds (18 owners), 9 matched to articles, 15 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 13 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q37293, kh-20261113-Q3524804, kh-20261113-Q16224322; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Saqib Khan: fewer than 3 owners' headlines name it and the story; explainer U- Asia Cup: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1708 headlines from 47 feeds (18 owners), 14 matched to articles, 16 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 14 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q37293, kh-20261113-Q182477, kh-20261113-Q3524804; dropped: explainer Saqib Khan: fewer than 3 owners' headlines name it and the story; explainer Sandpapergate Looking / Brook: no Wikipedia article that can be its centre; explainer Calcutta High Court: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -3883,11 +4143,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1704,
+  "headlines": 1708,
   "feeds": 47,
   "owners": 18,
-  "matched": 9,
-  "corroborated": 15
+  "matched": 14,
+  "corroborated": 16
  },
  "emerging": [],
  "explainers": [
@@ -3901,24 +4161,23 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
+   "story": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
    "story_keys": [
+    "company",
     "cyberattack",
-    "fix",
     "hits",
-    "hour",
     "outage"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T09:08:16+00:00",
+   "news_at": "2026-11-13T09:40:21+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
     "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
     "Deutsche Welle",
     "Guardian Media Group",
+    "NDTV",
     "BBC"
    ],
    "fame": 400000,
@@ -3926,19 +4185,19 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
     "Global outage hits Microsoft, Outlook, Teams down for 14 hours; company responds",
     "Widespread outage hits Microsoft apps",
     "Microsoft Outlook outage: When will it resume?",
     "Microsoft 365 outage drags on as company observes ‘limited recovery’",
-    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over",
-    "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack"
+    "'Happy Friday, all': Internet has field day with Microsoft outage as memes take over"
    ],
    "hindi_headlines": [
     "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसे",
     "माइक्रोसॉफ्ट पर हुआ साइबर अटैक? Outlook ठप होने की असली कहानी",
     "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
     "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित",
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "hindi_news": 5,
    "geos": [],
@@ -3968,14 +4227,34 @@
      "at": "2026-11-13T09:08:16+00:00"
     },
     {
-     "title": "Microsoft 365 outage: Company reports 'positive results' in fix for Outlook, Teams",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-status-update-company-reports-positive-results-in-fix-for-outlook-teams-and-other-365-services/articleshow/135796608.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
+     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T09:04:12+00:00"
+     "at": "2026-11-13T09:40:21+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
+    },
+    {
+     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
+     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:47:22+00:00"
     },
     {
      "title": "Microsoft rules out cyberattack amid global outage",
@@ -3998,16 +4277,6 @@
      "at": "2026-11-13T06:58:40+00:00"
     },
     {
-     "title": "Service Not Improving \"As Expected\": Microsoft Outage Continues For 12 Hours",
-     "url": "https://www.ndtv.com/world-news/microsoft-outage-outlook-down-service-not-improving-as-expected-microsoft-global-outage-continues-for-12-hours-12320983#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:37:55+00:00"
-    },
-    {
      "title": "Failed health check, elevated load, server restart: What led to the Microsoft outage",
      "url": "https://www.hindustantimes.com/india-news/failed-health-check-elevated-load-server-restart-what-led-to-the-microsoft-outage-101794548856802.html",
      "outlet": "Hindustan Times",
@@ -4016,16 +4285,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T05:47:36+00:00"
-    },
-    {
-     "title": "Microsoft 365 outage hits Outlook, Teams, Copilot; users joke, some suspect cyberattack",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/massive-microsoft-365-outage-disrupts-email-teams-copilot-and-more-services-while-some-on-internet-say-take-your-time-others-see-attack-by-/articleshow/135790001.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:27+00:00"
     }
    ],
    "via": [
@@ -4033,12 +4292,12 @@
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
     "outlet:Deutsche Welle",
     "outlet:Guardian Media Group",
+    "outlet:NDTV",
     "outlet:BBC",
     "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide",
-    "google-news:साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान"
+    "google-news:माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी"
    ],
    "top": {
     "IN": 1,
@@ -4046,7 +4305,7 @@
    },
    "top_score": 1.1,
    "top_headlines": [
-    "साइबर अटैक या AI... माइक्रोसॉफ्ट के ठप होने की वजह क्या? वायरल दावों पर आया कंपनी के अधिकारी का बयान",
+    "माइक्रोसॉफ्ट के आउटलुक और माइक्रोसॉफ्ट 365 के सर्वर अचानक पड़े ठप, यूजर्स को लॉग-इन करने में परेशानी, कंपनी",
     "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
@@ -4084,8 +4343,8 @@
     "NDTV",
     "HT Media",
     "India Today Group",
-    "Network18",
     "TV9 Network",
+    "Network18",
     "Amar Ujala",
     "DB Corp",
     "ABP Group"
@@ -4103,13 +4362,13 @@
     "Ramayana To Dhurandhar 2: Fastest Indian Films To Cross Rs 1,000 Crore Worldwide"
    ],
    "hindi_headlines": [
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
+    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से..",
     "'रामायण' पर मुकेश खन्ना ने फिर साधा निशाना, बोले- 4000 करोड़ खर्च करने से कहानी बड़ी नहीं हो जाती",
     "कौन है 4000 करोड़ की रामायण में रावण का नाना, बना असुरों का राजा, 4 घंटे तक होता था मेकअप, कहा- मेरे किरदार से पूरी रामायण शुरू होती",
-    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म",
-    "100 से ज्यादा ऑडिशन के बाद रामायण सीरियल के लिए फाइनल हुआ था रावण का किरदार, केवट के रोल के लिए गए थे अरविंद त्रिवेदी!",
-    "'रामायण' ने रचा इतिहास, 1000 करोड़ पार करते ही मेकर्स ने रणबीर, साई और यश के नए धांसू पोस्टर्स से मचाया धमाल"
+    "Ramayana Day 9: 9वें दिन विदेशी बॉक्स ऑफिस पर ये नया रिकॉर्ड बना सकती है 'रामायण', 40 मिलियन डॉलर के करीब पहुंची फिल्म"
    ],
-   "hindi_news": 43,
+   "hindi_news": 45,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4201,25 +4460,161 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:India Today Group",
-    "outlet:Network18",
     "outlet:TV9 Network",
+    "outlet:Network18",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:ABP Group",
-    "google-news:'Ramayana' box office collection day 9 (LIVE): Ranbir Kapoor, Yash, Sai Pallavi's film inches towards Rs",
+    "google-news:Ramayana Part One Box Office Collections: Ranbir Kapoor and Yash starrer phenomenal run continues Overseas, tops Rs. 900 Cr worldwide",
     "google-news:नास्तिक होते हुए भी राम गोपाल वर्मा ने दो बार देखी 'रामायण', यश की तारीफ में पढ़े कसीदे, बोले- ये भारतीय सि"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "TV9 Network",
     "Network18",
     "NDTV",
-    "TV9 Network",
     "India Today Group",
     "Amar Ujala",
     "DB Corp"
    ]
+  },
+  {
+   "id": "kh-20261113-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia employees demand second chance for Jensen Huang",
+   "story_keys": [
+    "board",
+    "chance",
+    "employee",
+    "former",
+    "second"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T08:55:07+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "DB Corp",
+    "BBC"
+   ],
+   "fame": 375000,
+   "news": 375000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia employees demand second chance for Jensen Huang",
+    "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+    "Nvidia employees urge board to bring back Jensen Huang",
+    "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+    "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:पंजाब में विधायक-मंत्रियों के टिकट कटे, UP में ओवैसी-चंद्रशेखर का गठबंधन; एनवीडिया CEO का इस्तीफा; धनतेरस पर 30% ज्यादा बिका सोना",
+    "एनवीडिया के सीईओ जेनसन हुआंग ने इस्तीफ़ा दिया, अब किसे मिली ज़िम्मेदारी"
+   ],
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia Employees Rally For Jensen Huang To Return. Will Board Allow It?",
+     "url": "https://www.ndtv.com/world-news/nvidia-employees-rally-for-jensen-huang-to-return-will-board-allow-it-12321492#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:55:07+00:00"
+    },
+    {
+     "title": "\"Give him a second chance\" Nvidia employees break down after jensen's exit",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/give-him-a-second-chance-nvidia-employees-break-down-after-jensens-exit-3038092-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:34:34+00:00"
+    },
+    {
+     "title": "Nvidia employees urge board to bring back Jensen Huang",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/nvidia-employees-want-jensen-huang-back-as-ceo-internal-suggestion-box-post-draws-over-1600-comments-we-are-all-humans-and-can-make-mistakes-jensen-did-so-many-good-things-and-he-/articleshow/135793491.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T07:04:13+00:00"
+    },
+    {
+     "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+     "url": "https://www.thehindu.com/sci-tech/technology/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/article71696426.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:44:57+00:00"
+    },
+    {
+     "title": "Nvidia employees demand second chance for Jensen Huang",
+     "url": "https://www.indiatoday.in/technology/news/story/nvidia-employees-demand-second-chance-for-jensen-huang-return-petition-gets-over-1600-comments-3037895-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:14:00+00:00"
+    },
+    {
+     "title": "Trump endorses former Apple CEO Tim Cook to replace Jensen Huang as Nvidia CEO: ‘A legend replaces a legend’",
+     "url": "https://www.livemint.com/news/trump-endorses-former-apple-ceo-tim-cook-to-replace-jensen-huang-as-nvidia-ceo-a-legend-replaces-a-legend-11794498668369.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T15:55:47+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:DB Corp",
+    "outlet:BBC",
+    "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "google-news:Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "top": {
+    "IN": 6
+   },
+   "top_score": 0.75,
+   "top_headlines": [
+    "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
+    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261113-Q3524804",
@@ -4341,9 +4736,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -4562,9 +4957,9 @@
     "google-news:Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief"
    ],
    "top": {
-    "IN": 5
+    "IN": 6
    },
-   "top_score": 0.8,
+   "top_score": 0.75,
    "top_headlines": [
     "Nvidia CEO Jensen Huang resigns; CFO Kress to take over as interim chief",
     "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
@@ -4669,11 +5064,191 @@
    "lane": "paisa"
   },
   {
-   "id": "kh-20261113-Q19891094",
-   "qid": "Q19891094",
-   "title": "Pink Line (Delhi Metro)",
+   "id": "kh-20261113-Q124540932",
+   "qid": "Q124540932",
+   "title": "Mahli Beardman",
+   "name": "Mahli Beardman",
+   "phrase": "Mahli Beardman",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+   "story_keys": [
+    "debut",
+    "seal",
+    "serie"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:47:40+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+    "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+    "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+    "Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "AUS vs ENG first ODI: Mahli Beardman’s six wickets on debut sinks England",
+     "url": "https://www.thehindu.com/sport/cricket/australia-vs-england-first-odi-in-perth/article71696836.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:47:40+00:00"
+    },
+    {
+     "title": "6/24 on debut! Mahli Beardman rips through England as Australia take 1-0 lead",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/6/24-on-debut-mahli-beardman-rips-through-england-as-australia-take-1-0-lead/articleshow/135797289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:32:15+00:00"
+    },
+    {
+     "title": "Mahli Beardman records best bowling figures by an Australian on ODI debut as England fold for 131 in Perth",
+     "url": "https://www.hindustantimes.com/cricket/mahli-beardman-records-best-bowling-figures-by-an-australian-on-odi-debut-as-england-fold-for-131-in-perth-101794550827857.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:51:16+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Mahli Beardman's dream debut powers Australia to crushing win over England in Perth"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup India",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+   "story_keys": [
+    "against",
+    "final",
+    "wicket"
+   ],
+   "date": "2026-11-12",
+   "news_at": "2026-11-13T09:48:47+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group",
+    "ABP Group",
+    "Network18",
+    "TV9 Network"
+   ],
+   "fame": 150000,
+   "news": 150000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+    "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan"
+   ],
+   "hindi_headlines": [
+    "16 छक्के, 303 रन... वीरेंद्र सहवाग के बेटे आर्यवीर ने U19 एशिया कप में लगाया रनों का अंबार",
+    "Video: राहुल द्रविड़ के पुत्र अन्वय द्रविड़ ने अंडर 19 एशिया कप में मिले मौके पर क्या दिया बयान",
+    "अंडर-19 एशिया कप: लक्ष्य और आर्यवीर के तूफान में उड़ा अफगानिस्तान, फाइनल में पाकिस्तान से बदला लेने उतरेगा भारत",
+    "U19 एशिया कप सेमीफाइनल में भारत की धमाकेदार जीत, फाइनल में पाकिस्तान से होगी भिड़ंत",
+    "Video: यूथ एशिया कप में सबसे ज्यादा रन बनाने वाले आर्यवीर सहवाग का विस्फोटक इंटरव्यू"
+   ],
+   "hindi_news": 8,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "एशिया कप",
+   "reports": [
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
+    },
+    {
+     "title": "U-19 Asia Cup: India thrash Afghanistan by eight wickets to set up blockbuster final against arch-rivals Pakistan",
+     "url": "https://www.hindustantimes.com/cricket/u19-asia-cup-india-thrash-afghanistan-by-eight-wickets-to-set-up-blockbuster-final-against-arch-rivals-pakistan-101794481457465.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T12:05:21+00:00"
+    },
+    {
+     "title": "Raichandani's 93 powers India U19 to 8-wicket semifinal win over Afghanistan",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lakshya-raichandanis-93-powers-india-u19-to-eight-wicket-semifinal-win-over-afghanistan-sets-up-blockbuster-final-against-pakistan/articleshow/135768235.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-12T11:52:43+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:ABP Group",
+    "outlet:Network18",
+    "outlet:TV9 Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261113-Q39071562",
+   "qid": "Q39071562",
+   "title": "Pink Line (Namma Metro)",
    "name": "Pink Line",
-   "phrase": "Metro’s Pink Line",
+   "phrase": "Bengaluru Metro’s Pink",
    "person": false,
    "kind": "explainer",
    "category": "policy",
@@ -4692,11 +5267,10 @@
     "HT Media",
     "Bennett, Coleman & Co.",
     "NDTV",
-    "Network18",
-    "Amar Ujala"
+    "Network18"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4707,17 +5281,15 @@
     "Namma Metro’s Pink Line Opens To Public On Nov 14: Stations, Interchanges, Fares, Tickets And More",
     "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'"
    ],
-   "hindi_headlines": [
-    "'कनेक्टिविटी से बचेगा समय और पैसा': पीएम मोदी ने बंगलूरू पिंक लाइन का किया उद्घाटन, राज्य की क्यों की तरीफ?"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "पिंक लाइन",
+   "label_hi": null,
    "reports": [
     {
      "title": "'New Chapter': PM Modi Hails Namma Metro Pink Line, Development Journey Of 'Viksit Karnataka'",
@@ -4785,8 +5357,7 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:Network18",
-    "outlet:Amar Ujala"
+    "outlet:Network18"
    ],
    "top": {
     "IN": 2,
@@ -4794,105 +5365,13 @@
    },
    "top_score": 1.25,
    "top_headlines": [
+    "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line, Yeshwantpur-Madgaon Vande Bharat Express | LIVE",
     "Modi in Bengaluru: PM flags off elevated stretch of Namma Metro Pink Line | LIVE",
     "Bengaluru-Mangaluru-Goa Vande Bharat: Route, timings, ticket prices and more"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-   "story_keys": [
-    "envoy",
-    "talk"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T06:09:58+00:00",
-   "owners": [
-    "NPR",
-    "Guardian Media Group",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-    "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-    "US envoys shuttle between Putin and Zelenskyy",
-    "Putin Agrees To Let European Representatives Join Ukraine Peace Talks"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-     "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T15:26:34+00:00"
-    },
-    {
-     "title": "US envoys shuttle between Putin and Zelenskyy",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T04:12:01+00:00"
-    },
-    {
-     "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
-     "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-12T22:26:37+00:00"
-    },
-    {
-     "title": "Putin Agrees To Let European Representatives Join Ukraine Peace Talks",
-     "url": "https://www.ndtv.com/world-news/russia-ukraine-war-russian-president-vladimir-putin-agrees-to-let-european-representatives-join-ukraine-peace-talks-12320780#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:09:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NPR",
-    "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   },
   {
    "id": "kh-20261113-Q122864715",
@@ -4969,47 +5448,43 @@
     "outlet:The Hindu Group",
     "outlet:HT Media"
    ],
-   "top": {
-    "IN-nation": 10
-   },
-   "top_score": 0.33,
-   "top_headlines": [
-    "Government planning special Session to clear Delimitation Bill; Congress calls it a ‘bluster’"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261113-Q35525",
-   "qid": "Q35525",
-   "title": "White House",
-   "name": "White House",
-   "phrase": "And White House",
-   "person": false,
+   "id": "kh-20261113-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
    "story_keys": [
-    "future",
-    "secretary"
+    "envoy",
+    "talk"
    ],
    "date": "2026-11-12",
-   "news_at": "2026-11-13T06:08:10+00:00",
+   "news_at": "2026-11-13T04:12:01+00:00",
    "owners": [
     "NPR",
-    "France Médias Monde",
-    "NDTV"
+    "Guardian Media Group",
+    "Al Jazeera Media Network"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-    "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-    "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report"
+    "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+    "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
+    "US envoys shuttle between Putin and Zelenskyy"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -5017,54 +5492,48 @@
    "region": "world",
    "india_link": false,
    "abroad": true,
-   "label_hi": "वाइट हाउस",
+   "label_hi": "व्लादिमीर पुतिन",
    "reports": [
     {
-     "title": "White House reportedly discussing Howard Lutnick's future as Commerce secretary",
-     "url": "https://www.france24.com/en/white-house-reportedly-discussing-howard-lutnick-s-future-as-commerce-secretary",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T19:22:28+00:00"
-    },
-    {
-     "title": "Colom wins Mississippi Senate race. And, White House warns Dems over future probes",
-     "url": "https://www.npr.org/2026/11/12/g-s1-153171/up-first-newsletter-scott-colom-trump-democrats-ukraine-russia",
+     "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
+     "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
      "outlet": "NPR",
      "outlet_hi": "एनपीआर",
      "owner": "NPR",
      "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-12T12:15:48+00:00"
+     "at": "2026-11-12T15:26:34+00:00"
     },
     {
-     "title": "White House Considers Removing Commerce Secretary Amid Nvidia Concerns: Report",
-     "url": "https://www.ndtv.com/world-news/white-house-considers-removing-commerce-secretary-howard-lutnick-amid-nvidia-concerns-report-12320867#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
+     "title": "US envoys shuttle between Putin and Zelenskyy",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/aje-onl-nf_us-envoys-shuttle-between-putin-and-zelenskyy-121126?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-13T06:08:10+00:00"
+     "at": "2026-11-13T04:12:01+00:00"
+    },
+    {
+     "title": "Putin takes hard line in US talks as Ukraine says Starlink disrupted again",
+     "url": "https://www.theguardian.com/world/2026/nov/12/vladimir-putin-russia-target-foreign-troops-ukraine-elon-musk-starlink",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-12T22:26:37+00:00"
     }
    ],
    "via": [
     "outlet:NPR",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network"
    ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Nvidia scandal: White House weighs 'ouster' of top Trump aide over China chip exports"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261113-Q2364111",
@@ -5165,9 +5634,13 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Delhi overtakes Lahore to become world’s most polluted city as air quality worsens"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
@@ -5267,94 +5740,6 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q1057110",
-   "qid": "Q1057110",
-   "title": "IndiGo",
-   "name": "IndiGo",
-   "phrase": "IndiGo",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-   "story_keys": [
-    "microsoft",
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T09:40:21+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-    "Microsoft outage impacts IndiGo and Air India’s email support services"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "इंडीगो",
-   "reports": [
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    },
-    {
-     "title": "Microsoft outage hits businesses, Air India and IndiGo issue alerts",
-     "url": "https://www.indiatoday.in/technology/news/story/microsoft-office-outage-hits-businesses-air-india-and-indigo-issue-urgent-alerts-3038051-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:47:22+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
-   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
