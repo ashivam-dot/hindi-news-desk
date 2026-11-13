@@ -1,28 +1,23 @@
 {
- "at": "2026-11-13T14:59:33+00:00",
+ "at": "2026-11-13T15:14:41+00:00",
  "trending": [
   {
    "qid": "Q4772274",
    "title": "Anthony Clark (actor)",
-   "fame": 499893,
+   "fame": 374893,
    "views": 374893,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
-   "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US"
-   ],
+   "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
+    "wikipedia-top-2026-11-12"
    ],
    "owners": [],
    "reports": [],
@@ -38,6 +33,173 @@
    "lane": "obituary"
   },
   {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+   "story_keys": [
+    "businesse",
+    "disrupt",
+    "down",
+    "fix",
+    "hits",
+    "hour",
+    "outage",
+    "sign"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T14:56:42+00:00",
+   "owners": [
+    "India Today Group",
+    "The Hindu Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle",
+    "France Médias Monde",
+    "NDTV",
+    "Guardian Media Group",
+    "Al Jazeera Media Network",
+    "BBC"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+    "Widespread outage hits Microsoft apps",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+    "Microsoft Outage: Will Indian flights be disrupted?",
+    "Microsoft trap: 1 outage can bring businesses down",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
+   ],
+   "hindi_headlines": [
+    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
+   ],
+   "hindi_news": 3,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
+     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T10:53:41+00:00"
+    },
+    {
+     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
+     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T14:56:42+00:00"
+    },
+    {
+     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:08:18+00:00"
+    },
+    {
+     "title": "Microsoft Outlook Outage: What Went Wrong And Why It Is Taking So Long To Fix",
+     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:20:15+00:00"
+    },
+    {
+     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:46:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
+   ],
+   "hindi_owners": [
+    "India Today Group",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261113-Q3524804",
    "qid": "Q3524804",
    "title": "Usman Khawaja",
@@ -50,6 +212,7 @@
    "story": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
    "story_keys": [
     "claim",
+    "cricket",
     "hits",
     "nonsense’",
     "out",
@@ -58,7 +221,7 @@
     "utter"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T08:55:50+00:00",
+   "news_at": "2026-11-13T15:05:57+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -68,8 +231,8 @@
     "BBC",
     "TV9 Network"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -77,7 +240,8 @@
     "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
     "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
     "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’"
+    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+    "Cummins threw Khawaja under the bus - David Warner"
    ],
    "hindi_headlines": [
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
@@ -152,183 +316,19 @@
     "outlet:Amar Ujala",
     "outlet:BBC",
     "outlet:TV9 Network",
-    "google-news:Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+    "google-news:Cummins threw Khawaja under the bus - David Warner",
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
-   "story_keys": [
-    "businesse",
-    "disrupt",
-    "down",
-    "fix",
-    "hits",
-    "hour",
-    "outage",
-    "sign"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:40:11+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle",
-    "France Médias Monde",
-    "NDTV",
-    "Guardian Media Group",
-    "Al Jazeera Media Network",
-    "BBC"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
-    "Widespread outage hits Microsoft apps",
-    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-    "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft trap: 1 outage can bring businesses down",
-    "Microsoft rules out 'malicious activity' as cause for global outage"
-   ],
-   "hindi_headlines": [
-    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
-     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:53:41+00:00"
-    },
-    {
-     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
-     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:40:11+00:00"
-    },
-    {
-     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:29:18+00:00"
-    },
-    {
-     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:16:44+00:00"
-    },
-    {
-     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
-     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:37:59+00:00"
-    },
-    {
-     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:08:18+00:00"
-    },
-    {
-     "title": "Microsoft Outlook Outage: What Went Wrong And Why It Is Taking So Long To Fix",
-     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:20:15+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Deutsche Welle",
-    "outlet:France Médias Monde",
-    "outlet:NDTV",
-    "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC",
-    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
-   ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "HT Media"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q29879031",
@@ -493,88 +493,106 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q313000",
-   "qid": "Q313000",
-   "title": "Mauricio Pochettino",
-   "name": "Mauricio Pochettino",
-   "phrase": "Pochettino",
-   "person": true,
+   "id": "kh-20261113-Q796994",
+   "qid": "Q796994",
+   "title": "BSE SENSEX",
+   "name": "S&P BSE Sensex",
+   "phrase": "Sensex",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mauricio Pochettino announced as new Manchester United manager",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
    "story_keys": [
-    "manager",
-    "manchester",
-    "mauricio"
+    "market",
+    "point",
+    "rally"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T13:46:24+00:00",
+   "news_at": "2026-11-13T12:10:40+00:00",
    "owners": [
-    "NDTV",
-    "Al Jazeera Media Network",
-    "The Hindu Group"
+    "The Hindu Group",
+    "Bennett, Coleman & Co.",
+    "NDTV"
    ],
    "fame": 200000,
    "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Mauricio Pochettino announced as new Manchester United manager",
-    "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-    "Manchester United name Pochettino as new manager",
-    "Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
+    "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
+    "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
+    "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
+    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High",
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मॉरीसियो पोचेटिनो",
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बीएसई सेंसेक्स",
    "reports": [
     {
-     "title": "Mauricio Pochettino announced as new Manchester United manager",
-     "url": "https://www.aljazeera.com/sports/2026/11/13/manchester-united-new-manager-mauricio-pochettino-usa-soccer?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:39:34+00:00"
-    },
-    {
-     "title": "Manchester United name Pochettino as new manager",
-     "url": "https://www.thehindu.com/sport/manchester-united-name-pochettino-as-new-manager/article71698306.ece",
+     "title": "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
+     "url": "https://www.thehindu.com/business/markets/markets-snap-3-day-rally-sensex-drops-318-points-nifty-slips-below-25150/article71697688.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T13:46:24+00:00"
+     "at": "2026-11-13T12:10:40+00:00"
     },
     {
-     "title": "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-     "url": "https://sports.ndtv.com/football/manchester-united-announce-mauricio-pochettino-as-new-head-coach-a-day-after-sacking-michael-carrick-12322593#publisher=newsstand",
+     "title": "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High",
+     "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-13-november-us-iran-war-oil-price-12320329#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T12:27:56+00:00"
+     "at": "2026-11-13T10:06:49+00:00"
+    },
+    {
+     "title": "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
+     "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-niftys-explosive-rally-pushes-market-to-pre-middle-east-war-levels-how-long-will-they-take-to-scale-fresh-peaks/articleshow/135790975.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T05:33:06+00:00"
+    },
+    {
+     "title": "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
+     "url": "https://www.thehindu.com/business/markets/markets-fall-in-early-trade-after-three-day-rally/article71696558.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:56:15+00:00"
     }
    ],
    "via": [
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
     "outlet:The Hindu Group",
-    "google-news:Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "google-news:Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%",
+    "Apple's first-ever IoT hub HomeView, hits stores in India today"
+   ],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -638,190 +656,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q107072390",
-   "qid": "Q107072390",
-   "title": "Lavi Fair",
-   "name": "Lavi Fair",
-   "phrase": "Rampur’s Lavi Fair",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-   "story_keys": [
-    "international",
-    "trade"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T13:09:06+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "लावी मेला",
-   "reports": [
-    {
-     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
-     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:09:06+00:00"
-    },
-    {
-     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:03:25+00:00"
-    },
-    {
-     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T23:10:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q796994",
-   "qid": "Q796994",
-   "title": "BSE SENSEX",
-   "name": "S&P BSE Sensex",
-   "phrase": "Sensex",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
-   "story_keys": [
-    "market",
-    "point",
-    "rally"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:10:40+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
-    "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
-    "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
-    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "बीएसई सेंसेक्स",
-   "reports": [
-    {
-     "title": "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
-     "url": "https://www.thehindu.com/business/markets/markets-snap-3-day-rally-sensex-drops-318-points-nifty-slips-below-25150/article71697688.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:10:40+00:00"
-    },
-    {
-     "title": "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High",
-     "url": "https://www.ndtv.com/business-news/stock-market-sensex-share-market-nifty-live-updates-today-13-november-us-iran-war-oil-price-12320329#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:06:49+00:00"
-    },
-    {
-     "title": "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
-     "url": "https://economictimes.indiatimes.com/markets/stocks/news/sensex-niftys-explosive-rally-pushes-market-to-pre-middle-east-war-levels-how-long-will-they-take-to-scale-fresh-peaks/articleshow/135790975.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T05:33:06+00:00"
-    },
-    {
-     "title": "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
-     "url": "https://www.thehindu.com/business/markets/markets-fall-in-early-trade-after-three-day-rally/article71696558.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:56:15+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 16
-   },
-   "top_score": 0.25,
-   "top_headlines": [
-    "Indian stocks slip as oil, inflation cap weekly rally"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q944085",
@@ -922,72 +756,87 @@
    "lane": "paisa"
   },
   {
-   "qid": "Q142131356",
-   "title": "2026 New York City building collapse",
-   "fame": 50200,
-   "views": 0,
-   "traffic": 200,
-   "news": 50000,
-   "news_at": "2026-11-13T12:30:18+00:00",
-   "headlines": [
-    "New York is running out of room for its waste even with Statue of Liberty sized landfill",
-    "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders"
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+   "story_keys": [
+    "against",
+    "batting",
+    "final"
    ],
-   "hindi_news": 0,
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T15:06:50+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+    "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+    "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-US:what time does the stock market open",
-    "google-news:New York is running out of room for its waste even with Statue of Liberty sized landfill",
-    "google-news:New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
-    "outlet:Guardian Media Group",
-    "outlet:NDTV"
-   ],
-   "owners": [
-    "Guardian Media Group",
-    "NDTV"
-   ],
+   "abroad": false,
+   "label_hi": "एशिया कप",
    "reports": [
     {
-     "title": "New York is running out of room for its waste even with Statue of Liberty sized landfill",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/new-york-seneca-meadows-landfill",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:30:18+00:00"
-    },
-    {
-     "title": "New York Giants Stick With Kicker Dominic Zvada After Costly Miss Against Washington Commanders",
-     "url": "https://sports.ndtv.com/us/nfl/new-york-giants-stick-with-kicker-dominic-zvada-after-costly-miss-against-washington-commanders-12322331#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T11:52:20+00:00"
+     "at": "2026-11-13T15:06:50+00:00"
+    },
+    {
+     "title": "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+     "url": "https://www.hindustantimes.com/cricket/gautam-gambhir-rings-odi-world-cup-2027-alarm-bells-after-indias-batting-collapse-in-4th-odi-vs-new-zealand-101794566765660.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:16:54+00:00"
+    },
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
     }
    ],
-   "id": "wk-Q142131356",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-11",
-   "coords": [
-    40.63897,
-    -73.95383
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:India Today Group"
    ],
-   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": []
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q141921562",
@@ -1014,6 +863,72 @@
    "category": "conflict",
    "date": "2026-10-21",
    "coords": null,
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-13T14:58:50+00:00",
+   "headlines": [
+    "New York Islanders End Four-Game Winless Streak As Brayden Schenn Delivers Three Points",
+    "New York is running out of room for its waste even with Statue of Liberty-sized landfill"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:New York Islanders End Four-Game Winless Streak As Brayden Schenn Delivers Three Points",
+    "google-news:New York is running out of room for its waste even with Statue of Liberty-sized landfill",
+    "outlet:NDTV",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "NDTV",
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "New York Islanders End Four-Game Winless Streak As Brayden Schenn Delivers Three Points",
+     "url": "https://sports.ndtv.com/us/nhl/new-york-islanders-end-four-game-winless-streak-as-brayden-schenn-delivers-three-points-12323357#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T14:58:50+00:00"
+    },
+    {
+     "title": "New York is running out of room for its waste even with Statue of Liberty-sized landfill",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/new-york-seneca-meadows-landfill",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:30:18+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.63897,
+    -73.95383
+   ],
    "has_coords": true,
    "top": {},
    "top_score": 0.0,
@@ -1424,6 +1339,137 @@
  ],
  "candidates": [
   {
+   "id": "kh-20261113-Q3524804",
+   "qid": "Q3524804",
+   "title": "Usman Khawaja",
+   "name": "Usman Khawaja",
+   "phrase": "Khawaja",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
+   "story_keys": [
+    "claim",
+    "cricket",
+    "hits",
+    "nonsense’",
+    "out",
+    "row",
+    "sandpaper",
+    "utter"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T15:05:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group",
+    "Network18",
+    "Amar Ujala",
+    "BBC",
+    "TV9 Network"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
+    "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
+    "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
+    "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
+    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_headlines": [
+    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
+    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
+    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
+    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
+    "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+   ],
+   "hindi_news": 5,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "उस्मान ख़्वाजा",
+   "reports": [
+    {
+     "title": "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+     "url": "https://www.thehindu.com/sport/cricket/australia-cricket-captain-describes-khawajas-sandpapergate-claim-as-utter-nonsense/article71696379.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:55:50+00:00"
+    },
+    {
+     "title": "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/threw-usman-khawaja-under-the-bus-david-warner-hits-out-at-pat-cummins-over-sandpaper-row/articleshow/135788857.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:09:47+00:00"
+    },
+    {
+     "title": "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/sandpaper-row-will-pat-cummins-take-legal-action-against-usman-khawaja-australia-captain-answers/articleshow/135786681.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:37:26+00:00"
+    },
+    {
+     "title": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
+     "url": "https://www.hindustantimes.com/cricket/not-the-uzzie-i-know-cummins-hits-out-at-khawajas-utter-nonsense-sandpaper-claims-in-explosive-press-conference-101794525458584.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T01:47:06+00:00"
+    },
+    {
+     "title": "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/utter-nonsense-pat-cummins-breaks-silence-on-usman-khawajas-2018-sandpaper-scandal-claims/articleshow/135785693.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T00:56:17+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:Network18",
+    "outlet:Amar Ujala",
+    "outlet:BBC",
+    "outlet:TV9 Network",
+    "google-news:Cummins threw Khawaja under the bus - David Warner",
+    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
    "id": "kh-20261113-Q2283",
    "qid": "Q2283",
    "title": "Microsoft",
@@ -1445,7 +1491,7 @@
     "sign"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:40:11+00:00",
+   "news_at": "2026-11-13T14:56:42+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
@@ -1473,10 +1519,9 @@
    "hindi_headlines": [
     "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
     "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
     "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
    ],
-   "hindi_news": 4,
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -1504,6 +1549,16 @@
      "at": "2026-11-13T07:46:00+00:00"
     },
     {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T14:56:42+00:00"
+    },
+    {
      "title": "You haven’t got mail: Global Microsoft outage disrupts services",
      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
      "outlet": "Al Jazeera",
@@ -1514,16 +1569,6 @@
      "at": "2026-11-13T12:40:11+00:00"
     },
     {
-     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:29:18+00:00"
-    },
-    {
      "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
      "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
      "outlet": "The Guardian",
@@ -1532,16 +1577,6 @@
      "group": "international",
      "lang": "en",
      "at": "2026-11-13T12:16:44+00:00"
-    },
-    {
-     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
-     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:37:59+00:00"
     },
     {
      "title": "Microsoft outage: Is Outlook fixed? US cities hit",
@@ -1562,6 +1597,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T11:20:15+00:00"
+    },
+    {
+     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:46:25+00:00"
     }
    ],
    "via": [
@@ -1669,252 +1714,6 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q3524804",
-   "qid": "Q3524804",
-   "title": "Usman Khawaja",
-   "name": "Usman Khawaja",
-   "phrase": "Khawaja",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
-   "story_keys": [
-    "claim",
-    "hits",
-    "nonsense’",
-    "out",
-    "row",
-    "sandpaper",
-    "utter"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T08:55:50+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group",
-    "Network18",
-    "Amar Ujala",
-    "BBC",
-    "TV9 Network"
-   ],
-   "fame": 375000,
-   "news": 375000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
-    "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
-    "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
-    "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’"
-   ],
-   "hindi_headlines": [
-    "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
-    "'दोस्त ऐसे किसी की साख से नहीं खेलते...': उस्मान ख्वाजा के दावों पर भड़के पैट कमिंस! सैंडपेपर विवाद फिर गरमाया",
-    "'नॉनसेंस'... बॉल टेंपरिंग पर उस्मान ख़्वाजा के दावों को पैट कमिंस ने बताया '100 फ़ीसदी ग़लत'",
-    "बॉल टैंपरिंग विवाद पर भड़के पैट कमिंस, उस्मान ख्वाजा के आरोपों बताया बकवास, किया तीखा पलटवार",
-    "'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
-   ],
-   "hindi_news": 5,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "उस्मान ख़्वाजा",
-   "reports": [
-    {
-     "title": "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
-     "url": "https://www.thehindu.com/sport/cricket/australia-cricket-captain-describes-khawajas-sandpapergate-claim-as-utter-nonsense/article71696379.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:55:50+00:00"
-    },
-    {
-     "title": "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/threw-usman-khawaja-under-the-bus-david-warner-hits-out-at-pat-cummins-over-sandpaper-row/articleshow/135788857.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:09:47+00:00"
-    },
-    {
-     "title": "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/sandpaper-row-will-pat-cummins-take-legal-action-against-usman-khawaja-australia-captain-answers/articleshow/135786681.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:37:26+00:00"
-    },
-    {
-     "title": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
-     "url": "https://www.hindustantimes.com/cricket/not-the-uzzie-i-know-cummins-hits-out-at-khawajas-utter-nonsense-sandpaper-claims-in-explosive-press-conference-101794525458584.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T01:47:06+00:00"
-    },
-    {
-     "title": "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/utter-nonsense-pat-cummins-breaks-silence-on-usman-khawajas-2018-sandpaper-scandal-claims/articleshow/135785693.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:56:17+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "outlet:BBC",
-    "outlet:TV9 Network",
-    "google-news:Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
-    "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 499893,
-   "views": 374893,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-12T23:45:38+00:00",
-   "headlines": [
-    "Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Cause of death for Anthony Clark, comedian and ‘Yes, Dear’ star, revealed"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q313000",
-   "qid": "Q313000",
-   "title": "Mauricio Pochettino",
-   "name": "Mauricio Pochettino",
-   "phrase": "Pochettino",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mauricio Pochettino announced as new Manchester United manager",
-   "story_keys": [
-    "manager",
-    "manchester",
-    "mauricio"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T13:46:24+00:00",
-   "owners": [
-    "NDTV",
-    "Al Jazeera Media Network",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mauricio Pochettino announced as new Manchester United manager",
-    "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-    "Manchester United name Pochettino as new manager",
-    "Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मॉरीसियो पोचेटिनो",
-   "reports": [
-    {
-     "title": "Mauricio Pochettino announced as new Manchester United manager",
-     "url": "https://www.aljazeera.com/sports/2026/11/13/manchester-united-new-manager-mauricio-pochettino-usa-soccer?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:39:34+00:00"
-    },
-    {
-     "title": "Manchester United name Pochettino as new manager",
-     "url": "https://www.thehindu.com/sport/manchester-united-name-pochettino-as-new-manager/article71698306.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:46:24+00:00"
-    },
-    {
-     "title": "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-     "url": "https://sports.ndtv.com/football/manchester-united-announce-mauricio-pochettino-as-new-head-coach-a-day-after-sacking-michael-carrick-12322593#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:27:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
-    "google-news:Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261113-Q796994",
    "qid": "Q796994",
    "title": "BSE SENSEX",
@@ -1937,15 +1736,16 @@
     "Bennett, Coleman & Co.",
     "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
     "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
     "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
-    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High"
+    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High",
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2001,18 +1801,51 @@
    "via": [
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
    "top": {
     "IN": 16
    },
    "top_score": 0.25,
    "top_headlines": [
-    "Indian stocks slip as oil, inflation cap weekly rally"
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%",
+    "Apple's first-ever IoT hub HomeView, hits stores in India today"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 374893,
+   "views": 374893,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q5213677",
@@ -2321,81 +2154,80 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261113-Q107072390",
-   "qid": "Q107072390",
-   "title": "Lavi Fair",
-   "name": "Lavi Fair",
-   "phrase": "Rampur’s Lavi Fair",
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
    "story_keys": [
-    "international",
-    "trade"
+    "against",
+    "batting",
+    "final"
    ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T13:09:06+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T15:06:50+00:00",
    "owners": [
-    "Network18",
     "The Hindu Group",
-    "HT Media"
+    "HT Media",
+    "India Today Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+    "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+    "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
    "abroad": false,
-   "label_hi": "लावी मेला",
+   "label_hi": "एशिया कप",
    "reports": [
     {
-     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
-     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:06:50+00:00"
+    },
+    {
+     "title": "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+     "url": "https://www.hindustantimes.com/cricket/gautam-gambhir-rings-odi-world-cup-2027-alarm-bells-after-indias-batting-collapse-in-4th-odi-vs-new-zealand-101794566765660.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T13:09:06+00:00"
+     "at": "2026-11-13T11:16:54+00:00"
     },
     {
-     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T06:03:25+00:00"
-    },
-    {
-     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T23:10:29+00:00"
+     "at": "2026-11-13T09:48:47+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
     "outlet:The Hindu Group",
-    "outlet:HT Media"
+    "outlet:HT Media",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
@@ -2861,8 +2693,8 @@
  ],
  "notes": [
   "revisit Q37293: last Short 11 h ago; revisit kh-20261113-Q10218-update: 4 owners' new reports on Rahul Gandhi (941 views before); revisit Q9543: already revisited today; revisit kh-20261113-Q163225-update: 3 owners' new reports on Sonia Gandhi (801 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its last Short; revisit Q200667 (225 views): 0 owners repo",
-  "outlets: 1784 headlines from 47 feeds (18 owners), 17 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q124540932, kh-20261113-Q313000; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Putin: fewer than 3 owners' headlines name it and the story; explainer On COP: no Wikipedia article that can be its centre",
+  "outlets: 1811 headlines from 48 feeds (18 owners), 15 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 6 kh- stories (on): kh-20261113-Q2283, kh-20261113-Q3524804, kh-20261113-Q124540932, kh-20261113-Q796994; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Putin: fewer than 3 owners' headlines name it and the story; explainer On COP: no Wikipedia article that can be its centre",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
@@ -2870,14 +2702,181 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1784,
-  "feeds": 47,
+  "headlines": 1811,
+  "feeds": 48,
   "owners": 18,
-  "matched": 17,
-  "corroborated": 10
+  "matched": 15,
+  "corroborated": 9
  },
  "emerging": [],
  "explainers": [
+  {
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+   "story_keys": [
+    "businesse",
+    "disrupt",
+    "down",
+    "fix",
+    "hits",
+    "hour",
+    "outage",
+    "sign"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T14:56:42+00:00",
+   "owners": [
+    "India Today Group",
+    "The Hindu Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle",
+    "France Médias Monde",
+    "NDTV",
+    "Guardian Media Group",
+    "Al Jazeera Media Network",
+    "BBC"
+   ],
+   "fame": 325000,
+   "news": 325000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
+    "Widespread outage hits Microsoft apps",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+    "Microsoft Outage: Will Indian flights be disrupted?",
+    "Microsoft trap: 1 outage can bring businesses down",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
+   ],
+   "hindi_headlines": [
+    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
+   ],
+   "hindi_news": 3,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
+     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T10:53:41+00:00"
+    },
+    {
+     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
+     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T14:56:42+00:00"
+    },
+    {
+     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:08:18+00:00"
+    },
+    {
+     "title": "Microsoft Outlook Outage: What Went Wrong And Why It Is Taking So Long To Fix",
+     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:20:15+00:00"
+    },
+    {
+     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:46:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
+   ],
+   "hindi_owners": [
+    "India Today Group",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "other"
+  },
   {
    "id": "kh-20261113-Q3524804",
    "qid": "Q3524804",
@@ -2891,6 +2890,7 @@
    "story": "‘Not the Usman I know’: Cummins hits out at Khawaja's ‘utter nonsense’ sandpaper claims in explosive press conference",
    "story_keys": [
     "claim",
+    "cricket",
     "hits",
     "nonsense’",
     "out",
@@ -2899,7 +2899,7 @@
     "utter"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T08:55:50+00:00",
+   "news_at": "2026-11-13T15:05:57+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "HT Media",
@@ -2909,8 +2909,8 @@
     "BBC",
     "TV9 Network"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2918,7 +2918,8 @@
     "'Utter nonsense': Cummins breaks silence on Khawaja's sandpaper scandal claims",
     "Sandpaper row: Pat Cummins opens up on legal action against Usman Khawaja",
     "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’"
+    "Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+    "Cummins threw Khawaja under the bus - David Warner"
    ],
    "hindi_headlines": [
     "वह 100 फीसदी झूठ बोल रहा है... पैट कम‍िंस का उस्‍मान ख्‍वाजा पर फूटा गुस्‍सा, प्रेस कॉन्फ्रेंस कर विवाद पर तोड़ी चुप्पी",
@@ -2993,183 +2994,19 @@
     "outlet:Amar Ujala",
     "outlet:BBC",
     "outlet:TV9 Network",
-    "google-news:Australia cricket captain describes Khawaja’s Sandpapergate claim as ‘utter nonsense’",
+    "google-news:Cummins threw Khawaja under the bus - David Warner",
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
-   "story_keys": [
-    "businesse",
-    "disrupt",
-    "down",
-    "fix",
-    "hits",
-    "hour",
-    "outage",
-    "sign"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:40:11+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle",
-    "France Médias Monde",
-    "NDTV",
-    "Guardian Media Group",
-    "Al Jazeera Media Network",
-    "BBC"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for over 20 hours; company reacts",
-    "Widespread outage hits Microsoft apps",
-    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-    "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft trap: 1 outage can bring businesses down",
-    "Microsoft rules out 'malicious activity' as cause for global outage"
-   ],
-   "hindi_headlines": [
-    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
-    "माइक्रोसॉफ्ट सर्विस में गड़बड़ी का भारत में विमान सेवाओं पर असर, IGI एयरपोर्ट पर तीन उड़ानें रद्द",
-    "माइक्रोसॉफ़्ट की सेवाएं दुनियाभर में ठप, आउटलुक ईमेल भी प्रभावित"
-   ],
-   "hindi_news": 4,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
-     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:53:41+00:00"
-    },
-    {
-     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
-     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:40:11+00:00"
-    },
-    {
-     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:29:18+00:00"
-    },
-    {
-     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:16:44+00:00"
-    },
-    {
-     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
-     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:37:59+00:00"
-    },
-    {
-     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:08:18+00:00"
-    },
-    {
-     "title": "Microsoft Outlook Outage: What Went Wrong And Why It Is Taking So Long To Fix",
-     "url": "https://www.ndtv.com/business-news/microsoft-outlook-365-global-outage-what-went-wrong-why-taking-so-long-to-fix-12321248#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:20:15+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Deutsche Welle",
-    "outlet:France Médias Monde",
-    "outlet:NDTV",
-    "outlet:Guardian Media Group",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC",
-    "google-news:Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
-   ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Microsoft Outage LIVE: Microsoft begins restoring Outlook, Teams and other services after global outage"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "HT Media"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261113-Q124540932",
@@ -3257,175 +3094,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q313000",
-   "qid": "Q313000",
-   "title": "Mauricio Pochettino",
-   "name": "Mauricio Pochettino",
-   "phrase": "Pochettino",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mauricio Pochettino announced as new Manchester United manager",
-   "story_keys": [
-    "manager",
-    "manchester",
-    "mauricio"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T13:46:24+00:00",
-   "owners": [
-    "NDTV",
-    "Al Jazeera Media Network",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mauricio Pochettino announced as new Manchester United manager",
-    "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-    "Manchester United name Pochettino as new manager",
-    "Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मॉरीसियो पोचेटिनो",
-   "reports": [
-    {
-     "title": "Mauricio Pochettino announced as new Manchester United manager",
-     "url": "https://www.aljazeera.com/sports/2026/11/13/manchester-united-new-manager-mauricio-pochettino-usa-soccer?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:39:34+00:00"
-    },
-    {
-     "title": "Manchester United name Pochettino as new manager",
-     "url": "https://www.thehindu.com/sport/manchester-united-name-pochettino-as-new-manager/article71698306.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:46:24+00:00"
-    },
-    {
-     "title": "Manchester United Act Swiftly: Mauricio Pochettino Locked In A Day After Michael Carrick's Departure",
-     "url": "https://sports.ndtv.com/football/manchester-united-announce-mauricio-pochettino-as-new-head-coach-a-day-after-sacking-michael-carrick-12322593#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:27:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
-    "outlet:The Hindu Group",
-    "google-news:Man Utd allowing Mauricio Pochettino to coach final USMNT matches shows Red Devils' board still don't understand how real relegation danger is"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q107072390",
-   "qid": "Q107072390",
-   "title": "Lavi Fair",
-   "name": "Lavi Fair",
-   "phrase": "Rampur’s Lavi Fair",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-   "story_keys": [
-    "international",
-    "trade"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T13:09:06+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "लावी मेला",
-   "reports": [
-    {
-     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
-     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:09:06+00:00"
-    },
-    {
-     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
-     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T06:03:25+00:00"
-    },
-    {
-     "title": "$1 Trillion Export Sprint: How 45th India International Trade Fair Showcases Bharat’s Manufacturing Muscle",
-     "url": "https://www.news18.com/business/economy/indias-1-trillion-export-sprint-how-45th-india-international-trade-fair-showcases-bharats-manufacturing-muscle-ws-lrt-10423767.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-12T23:10:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261113-Q796994",
    "qid": "Q796994",
    "title": "BSE SENSEX",
@@ -3448,15 +3116,16 @@
     "Bennett, Coleman & Co.",
     "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Markets snap 3-day rally; Sensex drops 318 points, Nifty slips below 25,150",
     "Markets fall in early trade after three-day rally; Sensex tumbles 460 points",
     "Sensex, Nifty's explosive rally pushes market to pre-Middle East war levels. How long will they take to scale fresh peaks?",
-    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High"
+    "Stock Market Highlights, Sensex Today: Sensex Closes 310 Points Lower, Inflation Hits Two-Year High",
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3512,14 +3181,16 @@
    "via": [
     "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%"
    ],
    "top": {
     "IN": 16
    },
    "top_score": 0.25,
    "top_headlines": [
-    "Indian stocks slip as oil, inflation cap weekly rally"
+    "Stock Market Close: Sensex snaps 3-day winning run, ends 319 pts lower; Nifty at 25,144; VIX down 7%",
+    "Apple's first-ever IoT hub HomeView, hits stores in India today"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -3622,6 +3293,89 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261113-Q2866609",
+   "qid": "Q2866609",
+   "title": "Asia Cup",
+   "name": "Asia Cup",
+   "phrase": "Asia Cup",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+   "story_keys": [
+    "against",
+    "batting",
+    "final"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T15:06:50+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+    "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+    "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "एशिया कप",
+   "reports": [
+    {
+     "title": "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-2026-final-when-where-to-watch-squads-preview-3038448-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:06:50+00:00"
+    },
+    {
+     "title": "Gautam Gambhir rings 2027 ODI World Cup alarm bells after India's batting collapse in 4th ODI vs New Zealand",
+     "url": "https://www.hindustantimes.com/cricket/gautam-gambhir-rings-odi-world-cup-2027-alarm-bells-after-indias-batting-collapse-in-4th-odi-vs-new-zealand-101794566765660.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:16:54+00:00"
+    },
+    {
+     "title": "Under-19 Asia Cup final: India eyes improved batting, bowling effort against Pakistan",
+     "url": "https://www.thehindu.com/sport/cricket/under-19-asia-cup-final-india-vs-pakistan-on-november-14-2026/article71697037.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T09:48:47+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   }
  ]
 }
