@@ -1,21 +1,21 @@
 {
- "at": "2026-11-13T00:57:30+00:00",
+ "at": "2026-11-13T01:14:05+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 27 candidates from 26 trending",
+  "watch: 26 candidates from 25 trending",
   "revisit Q330658 (1125 views): 0 owners reported new news on Indian Air Force since its last Short; revisit Q4746875 (1012 views): 1 owners reported new news on Amit Shah since its last Short; revisit kh-20261113-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261113-Q9543-update: 2 owners' new reports on Salman Khan (932 views before); revisit kh-20261113-Q10218-u",
-  "outlets: 1659 headlines from 48 feeds (18 owners), 23 matched to articles, 13 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-washington-dc-attack",
-  "explainers: 11 kh- stories (on): kh-20261113-Q305177, kh-20261113-Q2283, kh-20261113-Q9535, kh-20261113-Q944085; dropped: explainer Minister Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1632 headlines from 47 feeds (18 owners), 25 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261112-washington-dc-attack",
+  "explainers: 10 kh- stories (on): kh-20261113-Q305177, kh-20261113-Q9535, kh-20261113-Q944085, kh-20261113-Q7747; dropped: explainer Minister Piyush Goyal: fewer than 3 owners' headlines name it and the story; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story; explainer And White House: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q5209002: Orbitwire published (wk-Q5209002), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q315090: 61 h old and no longer trending live",
-  "hold nw-20261112-washington-dc-attack: outside 07:00-24:00 IST",
   "drop kh-20261113-Q9535: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261113-Q305177: a world statement, politics or diplomacy story with no India connection",
+  "hold nw-20261112-washington-dc-attack: outside 07:00-24:00 IST",
   "drop kh-20261113-Q944085: too low in Google News India's top stories (place 0.30, needs 0.35)",
-  "drop kh-20261113-Q2283: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261113-Q1159: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261112-washington-dc-attack, wk-Q142131356, kh-20261113-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261113-Q9535, kh-20261113-Q944085, kh-20261113-Q1159, kh-20261113-Q7747",
   "channel: about, playlists done; nothing left to do"
  ]
