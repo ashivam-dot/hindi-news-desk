@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T12:45:23+00:00",
+ "at": "2026-11-13T12:59:32+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -157,9 +157,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -179,17 +179,21 @@
    "category_hi": "समाचार",
    "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
+    "disrupt",
+    "down",
+    "email",
     "fix",
     "hits",
     "hour",
-    "issue",
     "out",
     "outage",
     "rule",
-    "service"
+    "service",
+    "sign",
+    "you"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:37:59+00:00",
+   "news_at": "2026-11-13T12:40:11+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
@@ -197,9 +201,10 @@
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
     "France Médias Monde",
-    "Guardian Media Group",
-    "TV9 Network",
     "NDTV",
+    "Guardian Media Group",
+    "Al Jazeera Media Network",
+    "TV9 Network",
     "BBC",
     "Amar Ujala"
    ],
@@ -219,7 +224,7 @@
     "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
     "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
     "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
     "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
    ],
    "hindi_news": 8,
@@ -229,6 +234,16 @@
    "abroad": true,
    "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
+    {
+     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
+     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T10:53:41+00:00"
+    },
     {
      "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
      "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
@@ -248,6 +263,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:40:11+00:00"
     },
     {
      "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
@@ -280,34 +305,14 @@
      "at": "2026-11-13T12:37:59+00:00"
     },
     {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
+     "at": "2026-11-13T12:08:18+00:00"
     }
    ],
    "via": [
@@ -317,19 +322,20 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:TV9 Network",
     "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:TV9 Network",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
+    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "top": {
-    "IN": 11
+    "IN": 1
    },
-   "top_score": 0.5,
+   "top_score": 1.0,
    "top_headlines": [
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
+    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
     "India Today Group",
@@ -362,8 +368,8 @@
     "NDTV",
     "HT Media",
     "Bennett, Coleman & Co.",
-    "TV9 Network",
     "Network18",
+    "TV9 Network",
     "India Today Group",
     "Amar Ujala",
     "DB Corp",
@@ -379,13 +385,13 @@
     "Anupam reveals he postponed dubbing for Jatayu in Ramayana"
    ],
    "hindi_headlines": [
+    "'विद्वानों की बननी चाहिए एक विशेष समिति', रणबीर कपूर-यश की 'रामायण' पर बोले मुकेश खन्ना",
     "रामायण देखने के लिए कितने रुपये करने होंगे खर्च? BookMyShow पर ₹339 से ₹2,400 तक पहुंची टिकट की कीमत, जानें शहरों के रेट",
     "वर्ल्ड सिनेमा में लहराया रामायण का परचम, बनी सबसे ज्यादा स्क्रीन्स वाली मूवी, अवतार-एवेंजर्स एंडगेम से भी निकली आगे",
     "20 Records Broken By Ramayana: रामायण ने बॉक्स ऑफिस पर रचा इतिहास, 8 दिनों में बनाए 20 बड़े रिकॉर्ड",
-    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
-    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से.."
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज"
    ],
-   "hindi_news": 36,
+   "hindi_news": 34,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -427,8 +433,8 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
     "outlet:Network18",
+    "outlet:TV9 Network",
     "outlet:India Today Group",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
@@ -439,9 +445,9 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "Network18",
     "NDTV",
-    "TV9 Network",
-    "Network18"
+    "TV9 Network"
    ]
   },
   {
@@ -634,108 +640,14 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-   "story_keys": [
-    "cost",
-    "inaugurate"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
-   "reports": [
-    {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
-    },
-    {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
-    },
-    {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "top": {
-    "IN": 3,
-    "IN-nation": 6
-   },
-   "top_score": 1.125,
-   "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
-   "fame": 182094,
+   "fame": 157094,
    "views": 157094,
    "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-13T11:13:56+00:00",
-   "headlines": [
-    "Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
@@ -743,25 +655,10 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster",
-    "outlet:NDTV"
+    "wikipedia-top-2026-11-12"
    ],
-   "owners": [
-    "NDTV"
-   ],
-   "reports": [
-    {
-     "title": "Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster",
-     "url": "https://sports.ndtv.com/us/golf/dan-hicks-dies-at-64-hannah-storm-announces-loss-of-longtime-nbc-sports-broadcaster-12321824#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:13:56+00:00"
-    }
-   ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q5213677",
    "kind": "death",
    "category": "death",
@@ -825,7 +722,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:46:10.273243+00:00",
+   "news_at": "2026-11-13T13:02:58.792435+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -924,121 +821,17 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 3
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 0.9,
+   "top_score": 1.12,
    "top_headlines": [
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting",
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-   "story_keys": [
-    "fall",
-    "rise",
-    "scandal",
-    "tech"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T10:56:22+00:00",
-   "owners": [
-    "BBC",
-    "Bennett, Coleman & Co.",
-    "France Médias Monde",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns"
-   ],
-   "hindi_headlines": [
-    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Fallout from Nvidia scandal spreads as Huang resigns",
-     "url": "https://www.france24.com/en/video/20261113-fallout-from-nvidia-scandal-spreads-as-huang-resigns",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:56:22+00:00"
-    },
-    {
-     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T17:11:48+00:00"
-    },
-    {
-     "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:09+00:00"
-    },
-    {
-     "title": "Another affair? 3rd woman enters Huang's scandal",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:36:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q796994",
@@ -1135,6 +928,98 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Nvidia’s Jensen Huang",
+   "phrase": "Nvidia’s Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+   "story_keys": [
+    "banned",
+    "chip",
+    "company"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T11:26:34+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report"
+   ],
+   "hindi_headlines": [
+    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T07:07:41+00:00"
+    },
+    {
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:26:34+00:00"
+    },
+    {
+     "title": "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report",
+     "url": "https://www.ndtv.com/world-news/jensen-huang-alice-huang-nvidia-alice-huang-founded-chinese-company-acquired-banned-nvidia-chips-report-12321736#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:44:07+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q19757718",
@@ -1325,26 +1210,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-13T11:52:20+00:00"
-    },
-    {
-     "title": "Jayden Daniels Turns Two Interceptions Into Late-Game Heroics As Washington Commanders Stun New York Giants",
-     "url": "https://sports.ndtv.com/us/nfl/jayden-daniels-turns-two-interceptions-into-late-game-heroics-as-washington-commanders-stun-new-york-giants-12321897#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:19:04+00:00"
-    },
-    {
-     "title": "Cam Skattebo Turns A Sideline Scare Into A Two-Touchdown Night For The New York Giants",
-     "url": "https://sports.ndtv.com/us/nfl/cam-skattebo-turns-a-sideline-scare-into-a-two-touchdown-night-for-the-new-york-giants-12321836#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:18:05+00:00"
     }
    ],
    "id": "wk-Q142131356",
@@ -1765,94 +1630,181 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
+   "id": "kh-20261113-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
    "person": false,
    "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
-    "cost",
-    "inaugurate"
+    "disrupt",
+    "down",
+    "email",
+    "fix",
+    "hits",
+    "hour",
+    "out",
+    "outage",
+    "rule",
+    "service",
+    "sign",
+    "you"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
+   "news_at": "2026-11-13T12:40:11+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "The Hindu Group",
     "HT Media",
-    "The Hindu Group"
+    "Bennett, Coleman & Co.",
+    "Deutsche Welle",
+    "France Médias Monde",
+    "NDTV",
+    "Guardian Media Group",
+    "Al Jazeera Media Network",
+    "TV9 Network",
+    "BBC",
+    "Amar Ujala"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
+    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
+    "Widespread outage hits Microsoft apps",
+    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
+    "Microsoft Outage: Will Indian flights be disrupted?",
+    "Microsoft rules out cyberattack amid global outage",
+    "Microsoft rules out 'malicious activity' as cause for global outage"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
+    "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
+    "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
+    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
    ],
-   "region": "india",
+   "hindi_news": 8,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
+     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
+     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
+     "at": "2026-11-13T10:53:41+00:00"
     },
     {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
+     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
+     "at": "2026-11-13T09:59:22+00:00"
     },
     {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
+     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:40:11+00:00"
+    },
+    {
+     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:29:18+00:00"
+    },
+    {
+     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
+     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:16:44+00:00"
+    },
+    {
+     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
+     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:37:59+00:00"
+    },
+    {
+     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
+     "at": "2026-11-13T12:08:18+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
+    "outlet:India Today Group",
     "outlet:The Hindu Group",
-    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Deutsche Welle",
+    "outlet:France Médias Monde",
+    "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:TV9 Network",
+    "outlet:BBC",
+    "outlet:Amar Ujala",
+    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "top": {
-    "IN": 3,
-    "IN-nation": 6
+    "IN": 1
    },
-   "top_score": 1.125,
+   "top_score": 1.0,
    "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
+    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "India Today Group",
+    "TV9 Network",
+    "HT Media",
+    "NDTV"
+   ],
    "audience": "india",
    "lane": "other"
   },
@@ -2080,9 +2032,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -2111,7 +2063,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:46:10.273243+00:00",
+   "news_at": "2026-11-13T13:02:58.792435+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -2210,186 +2162,15 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 3
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 0.9,
+   "top_score": 1.12,
    "top_headlines": [
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting",
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
-   "story_keys": [
-    "fix",
-    "hits",
-    "hour",
-    "issue",
-    "out",
-    "outage",
-    "rule",
-    "service"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:37:59+00:00",
-   "owners": [
-    "India Today Group",
-    "The Hindu Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Deutsche Welle",
-    "France Médias Monde",
-    "Guardian Media Group",
-    "TV9 Network",
-    "NDTV",
-    "BBC",
-    "Amar Ujala"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
-    "Widespread outage hits Microsoft apps",
-    "Failed health check, elevated load, server restart: What led to the Microsoft outage",
-    "Microsoft Outage: Will Indian flights be disrupted?",
-    "Microsoft rules out cyberattack amid global outage",
-    "Microsoft rules out 'malicious activity' as cause for global outage"
-   ],
-   "hindi_headlines": [
-    "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
-    "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
-    "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
-    "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
-   ],
-   "hindi_news": 8,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
-     "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T09:59:22+00:00"
-    },
-    {
-     "title": "Microsoft rules out 'malicious activity' as cause for global outage",
-     "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T07:46:00+00:00"
-    },
-    {
-     "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:29:18+00:00"
-    },
-    {
-     "title": "First Thing: Global Microsoft outage chaos as tech firm says there are ‘signs of stabilisation’",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/first-thing-global-microsoft-outage-chaos-signs-of-stabilisation",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T12:16:44+00:00"
-    },
-    {
-     "title": "Microsoft outage disrupts Outlook, Teams and OneDrive across 74 countries",
-     "url": "https://www.indiatoday.in/technology/video/massive-global-microsoft-outage-disrupts-workplace-services-across-74-countries-ytvd-3038316-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:37:59+00:00"
-    },
-    {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Deutsche Welle",
-    "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:TV9 Network",
-    "outlet:NDTV",
-    "outlet:BBC",
-    "outlet:Amar Ujala",
-    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
-   ],
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
-   ],
-   "hindi_owners": [
-    "India Today Group",
-    "TV9 Network",
-    "HT Media",
-    "NDTV"
-   ],
    "audience": "india",
    "lane": "other"
   },
@@ -2430,52 +2211,96 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q5213677",
-   "title": "Dan Hicks (sportscaster)",
-   "fame": 182094,
-   "views": 157094,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-13T11:13:56+00:00",
-   "headlines": [
-    "Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster"
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Nvidia’s Jensen Huang",
+   "phrase": "Nvidia’s Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+   "story_keys": [
+    "banned",
+    "chip",
+    "company"
    ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12",
-    "google-news:Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster",
-    "outlet:NDTV"
-   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T11:26:34+00:00",
    "owners": [
-    "NDTV"
+    "Guardian Media Group",
+    "NDTV",
+    "The Hindu Group"
    ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report"
+   ],
+   "hindi_headlines": [
+    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
    "reports": [
     {
-     "title": "Dan Hicks Dies At 64: Hannah Storm Announces Loss Of Longtime NBC Sports Broadcaster",
-     "url": "https://sports.ndtv.com/us/golf/dan-hicks-dies-at-64-hannah-storm-announces-loss-of-longtime-nbc-sports-broadcaster-12321824#publisher=newsstand",
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T07:07:41+00:00"
+    },
+    {
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:26:34+00:00"
+    },
+    {
+     "title": "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report",
+     "url": "https://www.ndtv.com/world-news/jensen-huang-alice-huang-nvidia-alice-huang-founded-chinese-company-acquired-banned-nvidia-chips-report-12321736#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T11:13:56+00:00"
+     "at": "2026-11-13T10:44:07+00:00"
     }
    ],
-   "id": "wk-Q5213677",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q19757718",
@@ -2584,6 +2409,37 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "qid": "Q5213677",
+   "title": "Dan Hicks (sportscaster)",
+   "fame": 157094,
+   "views": 157094,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5213677",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261113-Q796994",
@@ -2711,112 +2567,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-   "story_keys": [
-    "fall",
-    "rise",
-    "scandal",
-    "tech"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T10:56:22+00:00",
-   "owners": [
-    "BBC",
-    "Bennett, Coleman & Co.",
-    "France Médias Monde",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns"
-   ],
-   "hindi_headlines": [
-    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Fallout from Nvidia scandal spreads as Huang resigns",
-     "url": "https://www.france24.com/en/video/20261113-fallout-from-nvidia-scandal-spreads-as-huang-resigns",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:56:22+00:00"
-    },
-    {
-     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T17:11:48+00:00"
-    },
-    {
-     "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:09+00:00"
-    },
-    {
-     "title": "Another affair? 3rd woman enters Huang's scandal",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:36:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q124540932",
@@ -3231,7 +2981,7 @@
     "visit"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T11:49:40+00:00",
+   "news_at": "2026-11-13T12:34:07+00:00",
    "owners": [
     "The Hindu Group",
     "India Today Group",
@@ -3261,7 +3011,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T11:49:40+00:00"
+     "at": "2026-11-13T12:34:07+00:00"
     },
     {
      "title": "Sonia Gandhi's sweet BTS moments from her viral Harper's Bazaar cover shoot",
@@ -3419,21 +3169,20 @@
  ],
  "notes": [
   "revisit Q37293: last Short 9 h ago; revisit kh-20261113-Q10218-update: 3 owners' new reports on Rahul Gandhi (941 views before); revisit Q9543: already revisited today; revisit kh-20261113-Q163225-update: 2 owners' new reports on Sonia Gandhi (801 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its last Short; revisit Q200667 (225 views): 0 owners repor",
-  "outlets: 1750 headlines from 47 feeds (18 owners), 18 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 10 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q37293, wk-Q2723357; dropped: explainer EU's Kallas: fewer than 3 owners' headlines name it and the story; explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer Sunetra Pawar: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1747 headlines from 47 feeds (18 owners), 14 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261113-Q3524804, kh-20261113-Q2283, kh-20261113-Q37293, wk-Q2723357; dropped: explainer Nvidia CEO: fewer than 3 owners' headlines name it and the story; explainer EU's Kallas: fewer than 3 owners' headlines name it and the story; explainer Pakistan-Sri Lanka: no Wikipedia article that can be its centre",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "trend_errors": [
-  "outlet pib-hi: HTTPError: 404 Client Error: Not Found for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3&reg=3",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1750,
+  "headlines": 1747,
   "feeds": 47,
   "owners": 18,
-  "matched": 18,
-  "corroborated": 12
+  "matched": 14,
+  "corroborated": 11
  },
  "emerging": [],
  "explainers": [
@@ -3557,9 +3306,9 @@
     "google-news:'ये सरासर बकवास है...', उस्मान ख्वाजा के आरोपों पर भड़के पैट कमिंस, 8 साल पुराने सैंडपेपरगेट कांड पर तोड़ी चुप्पी"
    ],
    "top": {
-    "IN": 13
+    "IN": 11
    },
-   "top_score": 0.4,
+   "top_score": 0.5,
    "top_headlines": [
     "Cummins threw Khawaja under the bus - David Warner"
    ],
@@ -3579,17 +3328,21 @@
    "category_hi": "समाचार",
    "story": "Global outage hits Microsoft, Outlook, Teams down for 15 hours; company responds",
    "story_keys": [
+    "disrupt",
+    "down",
+    "email",
     "fix",
     "hits",
     "hour",
-    "issue",
     "out",
     "outage",
     "rule",
-    "service"
+    "service",
+    "sign",
+    "you"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:37:59+00:00",
+   "news_at": "2026-11-13T12:40:11+00:00",
    "owners": [
     "India Today Group",
     "The Hindu Group",
@@ -3597,9 +3350,10 @@
     "Bennett, Coleman & Co.",
     "Deutsche Welle",
     "France Médias Monde",
-    "Guardian Media Group",
-    "TV9 Network",
     "NDTV",
+    "Guardian Media Group",
+    "Al Jazeera Media Network",
+    "TV9 Network",
     "BBC",
     "Amar Ujala"
    ],
@@ -3619,7 +3373,7 @@
     "AI की रेस और छंटनी! सत्य नडेला पर उठे सवाल, 16 घंटे से माइक्रोसॉफ्ट ठप",
     "माइक्रोसॉफ्ट 365 पर साइबर हमला, चीन और ईरान के हैकर्स से बढ़ा खतरा",
     "2 साल पहले भी माइक्रोसॉफ्ट हुआ था ठप, 50,906 करोड़ का नुकसान",
-    "Microsoft Outage Live: माइक्रोसॉफ्ट की सर्विस दूसरे दिन भी ठप; कामकाज पर असर, 70 से ज्यादा देशों में यूजर्स परेशान",
+    "Microsoft Outage Live: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी",
     "AI एजेंट ने खुद से कर दिया माइक्रोसॉफ्ट पर अटैक? पहले भी हुआ है ऐसा"
    ],
    "hindi_news": 8,
@@ -3629,6 +3383,16 @@
    "abroad": true,
    "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
+    {
+     "title": "Microsoft faces a major Outlook outage: ‘no signs of a cyberattack’",
+     "url": "https://www.france24.com/en/video/20261113-microsoft-faces-a-major-outlook-outage-no-signs-of-a-cyberattack",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-13T10:53:41+00:00"
+    },
     {
      "title": "'One of the biggest outages ever': Disruption to Microsoft services enters second day",
      "url": "https://www.france24.com/en/video/20261113-one-of-the-biggest-outages-ever-disruption-to-microsoft-services-enters-second-day",
@@ -3648,6 +3412,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-13T07:46:00+00:00"
+    },
+    {
+     "title": "You haven’t got mail: Global Microsoft outage disrupts services",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/13-11-sv-microsoft-global-outage?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T12:40:11+00:00"
     },
     {
      "title": "Microsoft scrambles to fix global outage affecting Teams and Outlook",
@@ -3680,34 +3454,14 @@
      "at": "2026-11-13T12:37:59+00:00"
     },
     {
-     "title": "More than 16 hours after global outage, Microsoft still struggling to fix issue",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-outlook-and-teams-see-incremental-improvement-but-company-says-issues-are-not-fully-fixed-yet/articleshow/135799684.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Microsoft outage: Is Outlook fixed? US cities hit",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:46:25+00:00"
-    },
-    {
-     "title": "Microsoft outage impacts IndiGo and Air India’s email support services",
-     "url": "https://www.thehindu.com/news/national/microsoft-outage-impacts-indigo-and-air-indias-email-support-services/article71697196.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:40:21+00:00"
-    },
-    {
-     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
-     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T08:14:20+00:00"
+     "at": "2026-11-13T12:08:18+00:00"
     }
    ],
    "via": [
@@ -3717,19 +3471,20 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:TV9 Network",
     "outlet:NDTV",
+    "outlet:Guardian Media Group",
+    "outlet:Al Jazeera Media Network",
+    "outlet:TV9 Network",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "google-news:Microsoft 365 outage drags on as company observes ‘limited recovery’"
+    "google-news:Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "top": {
-    "IN": 11
+    "IN": 1
    },
-   "top_score": 0.5,
+   "top_score": 1.0,
    "top_headlines": [
-    "Microsoft 365 outage drags on as company observes ‘limited recovery’"
+    "Microsoft Outage LIVE: Microsoft extends mail timeout to 48 hours as outage hits governments, organisations worldwide"
    ],
    "hindi_owners": [
     "India Today Group",
@@ -3762,8 +3517,8 @@
     "NDTV",
     "HT Media",
     "Bennett, Coleman & Co.",
-    "TV9 Network",
     "Network18",
+    "TV9 Network",
     "India Today Group",
     "Amar Ujala",
     "DB Corp",
@@ -3779,13 +3534,13 @@
     "Anupam reveals he postponed dubbing for Jatayu in Ramayana"
    ],
    "hindi_headlines": [
+    "'विद्वानों की बननी चाहिए एक विशेष समिति', रणबीर कपूर-यश की 'रामायण' पर बोले मुकेश खन्ना",
     "रामायण देखने के लिए कितने रुपये करने होंगे खर्च? BookMyShow पर ₹339 से ₹2,400 तक पहुंची टिकट की कीमत, जानें शहरों के रेट",
     "वर्ल्ड सिनेमा में लहराया रामायण का परचम, बनी सबसे ज्यादा स्क्रीन्स वाली मूवी, अवतार-एवेंजर्स एंडगेम से भी निकली आगे",
     "20 Records Broken By Ramayana: रामायण ने बॉक्स ऑफिस पर रचा इतिहास, 8 दिनों में बनाए 20 बड़े रिकॉर्ड",
-    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज",
-    "‘रामायण’ में जटायु की लड़ाई ने जीता दर्शकों का दिल, अनुपम खेर बोले- VFX की वजह से.."
+    "‘रामायण पार्ट 2’ का 60 परसेंट काम पूरा, फिर क्यों 2028 तक अटकी फिल्म? अब सिनेमैटोग्राफर ने खोला राज"
    ],
-   "hindi_news": 36,
+   "hindi_news": 34,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3827,8 +3582,8 @@
     "outlet:NDTV",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:TV9 Network",
     "outlet:Network18",
+    "outlet:TV9 Network",
     "outlet:India Today Group",
     "outlet:Amar Ujala",
     "outlet:DB Corp",
@@ -3839,9 +3594,9 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "Network18",
     "NDTV",
-    "TV9 Network",
-    "Network18"
+    "TV9 Network"
    ]
   },
   {
@@ -4034,98 +3789,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261113-Q279343",
-   "qid": "Q279343",
-   "title": "Namma Metro",
-   "name": "Namma Metro",
-   "phrase": "Bengaluru Metro",
-   "person": false,
-   "kind": "explainer",
-   "category": "policy",
-   "category_hi": "नीति",
-   "story": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-   "story_keys": [
-    "cost",
-    "inaugurate"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T12:15:57+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-    "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-    "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "बेंगलूरु मेट्रो",
-   "reports": [
-    {
-     "title": "D.K. Shivakumar seeks fairer Centre-state cost sharing for Bengaluru Metro, faster clearances",
-     "url": "https://www.thehindu.com/news/national/karnataka/dk-shivakumar-seeks-fairer-centre-state-cost-sharing-for-bengaluru-metro-faster-clearances/article71697681.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:15:57+00:00"
-    },
-    {
-     "title": "Modi inaugurates new section of Bengaluru Metro, takes operational length over 100 km",
-     "url": "https://www.hindustantimes.com/india-news/modi-inaugurates-new-section-of-bengaluru-metro-takes-operational-length-over-100-km-101794567407243.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:56:46+00:00"
-    },
-    {
-     "title": "PM Modi inaugurates Bengaluru Metro Pink Line: Route, timings, cost",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/pm-modi-inaugurates-bengaluru-metro-pink-line-route-timings-cost-and-other-key-details/articleshow/135791819.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "top": {
-    "IN": 3,
-    "IN-nation": 6
-   },
-   "top_score": 1.125,
-   "top_headlines": [
-    "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange",
-    "Political funding slugfest may cost Bengaluru Metro dearly"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261113-Q19891094",
    "qid": "Q19891094",
    "title": "Pink Line (Delhi Metro)",
@@ -4146,7 +3809,7 @@
     "take"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T12:46:10.273243+00:00",
+   "news_at": "2026-11-13T13:02:58.792435+00:00",
    "owners": [
     "India Today Group",
     "HT Media",
@@ -4245,121 +3908,17 @@
     "outlet:Network18"
    ],
    "top": {
-    "IN": 3
+    "IN": 4,
+    "IN-nation": 3
    },
-   "top_score": 0.9,
+   "top_score": 1.12,
    "top_headlines": [
+    "Mind the gap: Partial opening of Namma Metro Pink Line leaves commuters wanting",
     "Pink line: Jayadeva Hospital stop to become Bengaluru’s 3rd metro interchange"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261113-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-   "story_keys": [
-    "fall",
-    "rise",
-    "scandal",
-    "tech"
-   ],
-   "date": "2026-11-12",
-   "news_at": "2026-11-13T10:56:22+00:00",
-   "owners": [
-    "BBC",
-    "Bennett, Coleman & Co.",
-    "France Médias Monde",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-    "Another affair? 3rd woman enters Huang's scandal",
-    "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-    "Fallout from Nvidia scandal spreads as Huang resigns"
-   ],
-   "hindi_headlines": [
-    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Fallout from Nvidia scandal spreads as Huang resigns",
-     "url": "https://www.france24.com/en/video/20261113-fallout-from-nvidia-scandal-spreads-as-huang-resigns",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T10:56:22+00:00"
-    },
-    {
-     "title": "The rise and fall of Jensen Huang - how the tech superstar became mired in scandal",
-     "url": "https://www.bbc.co.uk/news/articles/cmze750zg0jeo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-12T17:11:48+00:00"
-    },
-    {
-     "title": "Jensen Huang: Rise and fall of the Taylor Swift of tech",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/jensen-huang-nvidia-ceo-resignation-rise-and-fall-alice-huang-chinese-spy-scandal-ai/articleshow/135794028.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T07:49:09+00:00"
-    },
-    {
-     "title": "Another affair? 3rd woman enters Huang's scandal",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say/articleshow/135785509.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T00:36:34+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:France Médias Monde",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "US Senate summons Nvidia’s Huang, Lutnick to testify",
-    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
-   ],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q796994",
@@ -4456,6 +4015,98 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261113-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Nvidia’s Jensen Huang",
+   "phrase": "Nvidia’s Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+   "story_keys": [
+    "banned",
+    "chip",
+    "company"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T11:26:34+00:00",
+   "owners": [
+    "Guardian Media Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+    "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+    "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report"
+   ],
+   "hindi_headlines": [
+    "रोमियो स्पाई से लेकर इंस्टाग्राम ट्रैप तक, सालों पुराना है हनीट्रैप का खेला, जानिए जेन्सन हुआंग से माता हारी तक दिलचस्प कहानी"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "A baffling trail from Australia to Singapore: what is Megaspeed, the company implicated in downfall of Nvidia’s Jensen Huang?",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/a-baffling-trail-from-australia-to-singapore-what-is-megaspeed-the-company-implicated-in-downfall-of-nvidias-jensen-huang",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T07:07:41+00:00"
+    },
+    {
+     "title": "Chinese company linked to Alice Huang obtained banned Nvidia chips: report",
+     "url": "https://www.thehindu.com/news/international/chinese-company-linked-to-alice-huang-shanghai-longteng-intelligent-computing-obtained-banned-nvidia-chips/article71697606.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T11:26:34+00:00"
+    },
+    {
+     "title": "Alice Huang-Founded Chinese Company Acquired Banned Nvidia Chips: Report",
+     "url": "https://www.ndtv.com/world-news/jensen-huang-alice-huang-nvidia-alice-huang-founded-chinese-company-acquired-banned-nvidia-chips-report-12321736#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:44:07+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "US Senate summons Nvidia’s Huang, Lutnick to testify",
+    "Former Nvidia CEO Huang had a relationship with a second employee, sources say"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261113-Q19757718",
