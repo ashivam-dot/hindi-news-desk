@@ -1,20 +1,21 @@
 {
- "at": "2026-11-14T22:05:24+00:00",
+ "at": "2026-11-14T22:21:39+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 150 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.121, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.232, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
   "watch: 26 candidates from 24 trending",
-  "revisit kh-20261115-Q10218-update: 3 owners' new reports on Rahul Gandhi (1033 views before); revisit kh-20261115-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261115-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261115-Q163225-update: 3 owners' new reports on Sonia Gandhi (816 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1585 headlines from 48 feeds (18 owners), 10 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261115-Q2866609, kh-20261115-Q1156, kh-20261115-Q1561861, kh-20261115-Q5673850; dropped: explainer October: no Wikipedia article that can be its centre; explainer US FAA: no Wikipedia article that can be its centre; explainer Ramayana Lara Dutta: fewer than 3 owners' headlines name it and the story",
+  "revisit kh-20261115-Q10218-update: 3 owners' new reports on Rahul Gandhi (1034 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit kh-20261115-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261115-Q163225-update: 3 owners' new reports on Sonia Gandhi (817 views before); revisit Q468324 (421 views): 0 o",
+  "outlets: 1582 headlines from 48 feeds (18 owners), 10 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261115-Q2866609, kh-20261115-Q1156, kh-20261115-Q1561861, kh-20261115-Q16186720; dropped: explainer October: no Wikipedia article that can be its centre; explainer US FAA: no Wikipedia article that can be its centre; explainer Ramayana Lara Dutta / Ramayana Lara Dutta: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261115-Q1561861: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "drop kh-20261115-Q1561861: too low in Google News India's top stories (place 0.24, needs 0.35)",
   "hold kh-20261115-Q1156: outside 07:00-24:00 IST",
   "hold kh-20261115-Q2866609: outside 07:00-24:00 IST",
   "drop kh-20261115-Q5673850: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261115-Q3241458: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261115-Q16186720: too low in Google News India's top stories (place 0.24, needs 0.35)",
+  "drop kh-20261115-Q16186720: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261115-Q1156, kh-20261115-Q10218-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261115-Q16186720, kh-20261115-Q163225-update",
   "channel: about, playlists done; nothing left to do"
  ]
