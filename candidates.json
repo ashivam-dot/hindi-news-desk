@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T06:47:49+00:00",
+ "at": "2026-11-14T07:18:06+00:00",
  "trending": [
   {
    "id": "kh-20261114-Q335357",
@@ -41,11 +41,11 @@
    "traffic": 0,
    "headlines": [
     "FAA lifts nationwide ground stop on all US flights",
-    "US flights resume after FAA lifts hours-long nationwide ground stop",
     "FAA grounds all fights across the US over ‘telecommunication outage’",
     "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
     "US flight chaos: What caused FAA outage that grounded departures nationwide",
-    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18"
+    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+    "FAA flight ground stop disrupts sports travel"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -96,16 +96,6 @@
      "at": "2026-11-13T23:45:22+00:00"
     },
     {
-     "title": "US flights resume after FAA lifts hours-long nationwide ground stop",
-     "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T21:32:08+00:00"
-    },
-    {
      "title": "Cleveland Browns' Sunday Game Gets Travel Concern After FAA Grounds Flights",
      "url": "https://sports.ndtv.com/us/nfl/cleveland-browns-sunday-game-gets-travel-concern-after-faa-grounds-flights-12325313#publisher=newsstand",
      "outlet": "NDTV",
@@ -134,6 +124,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US flight chaos: What caused FAA outage that grounded departures nationwide",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-flight-chaos-what-caused-faa-communication-outage-that-grounded-departures-nationwide/articleshow/135820048.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:43:32+00:00"
     }
    ],
    "via": [
@@ -147,9 +147,9 @@
     "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
@@ -190,6 +190,7 @@
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_headlines": [
@@ -245,17 +246,18 @@
     "outlet:The Hindu Group",
     "outlet:ABP Group",
     "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
+    "google-news:'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
+    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "top": {
-    "IN-nation": 10,
-    "IN-hi-nation": 19
+    "IN-nation": 8,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.36,
+   "top_score": 0.45,
    "top_headlines": [
     "अमर सिंह की बात सच निकली थी, राहुल गांधी के फोन टैपिंग के दावे पर बोले अखिलेश यादव",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_owners": [],
@@ -263,31 +265,27 @@
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
    "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
+    "outage",
+    "service"
    ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T05:52:31+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "Guardian Media Group",
     "BBC"
    ],
    "fame": 250000,
@@ -295,89 +293,105 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China",
-    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft says making progress fixing one of its longest outages",
+    "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी"
+   ],
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T05:52:31+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
+     "at": "2026-11-13T17:41:15+00:00"
     },
     {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
+     "at": "2026-11-14T07:00:00+00:00"
     },
     {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "title": "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-ends-after-over-24-hours-outlook-teams-restored-as-company-says-underlying-issue-addressed/articleshow/135825217.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
+     "at": "2026-11-14T06:52:00+00:00"
+    },
+    {
+     "title": "Microsoft says making progress fixing one of its longest outages",
+     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:01:50+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:BBC",
-    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "google-news:Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 11
+    "IN": 4
    },
-   "top_score": 0.5,
+   "top_score": 0.85,
    "top_headlines": [
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
-   "hindi_owners": [],
-   "audience": "world",
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -498,13 +512,15 @@
   {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
-   "fame": 125000,
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-13T08:03:54+00:00",
+   "news": 175000,
+   "news_at": "2026-11-14T03:51:17+00:00",
    "headlines": [
-    "Former Madras High Court Judge Justice CS Karnan Passes Away"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -515,10 +531,38 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:Former Madras High Court Judge Justice CS Karnan Passes Away"
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:The Hindu Group",
+    "outlet:HT Media"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Justice Karnan’s incident brought judicial misconduct to the forefront",
+     "url": "https://www.thehindu.com/news/national/justice-karnans-incident-brought-judicial-misconduct-to-the-forefront/article71697857.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:51:17+00:00"
+    },
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
    "id": "wk-Q29879031",
    "kind": "death",
    "category": "death",
@@ -593,86 +637,95 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang's Nvidia",
-   "phrase": "Jensen Huang's Nvidia",
-   "person": true,
+   "id": "kh-20261114-Q80338",
+   "qid": "Q80338",
+   "title": "Bengal",
+   "name": "Bengal",
+   "phrase": "Bengal",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+   "story": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
    "story_keys": [
-    "exit",
-    "race"
+    "area",
+    "cyclonic",
+    "intensify",
+    "likely",
+    "storm"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-14T06:06:04+00:00",
+   "news_at": "2026-11-14T06:56:14+00:00",
    "owners": [
+    "HT Media",
     "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co."
+    "The Hindu Group",
+    "India Today Group"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?"
+    "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+    "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+    "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
+   "hindi_headlines": [
+    "15 को दिल्ली में आएगी आंधी, बंगाल की खाड़ी में बन रहा साइक्लोन"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बंगाल",
    "reports": [
     {
-     "title": "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huangs-nvidia-exit-costs-him-rs-900-crore-how-much-wealth-does-he-have-left/articleshow/135824006.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/low-pressure-area-forms-over-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-around-november-16/article71699272.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T06:06:04+00:00"
+     "at": "2026-11-14T06:56:14+00:00"
     },
     {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "title": "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+     "url": "https://www.news18.com/india/pm-modi-to-visit-west-bengal-on-november-21-launch-several-projects-10424667.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
+     "at": "2026-11-13T12:09:33+00:00"
+    },
+    {
+     "title": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+     "url": "https://www.hindustantimes.com/india-news/low-pressure-area-in-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-by-november-16-imd-101794564170138.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:12:15+00:00"
     }
    ],
    "via": [
+    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q27780754",
@@ -906,9 +959,7 @@
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
+   "hindi_owners": []
   },
   {
    "qid": "Q142131356",
@@ -966,13 +1017,60 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q142132416",
@@ -998,6 +1096,37 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 12287,
+   "views": 12287,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1038,6 +1167,192 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q274156",
+   "title": "Marsha M. Linehan",
+   "fame": 10816,
+   "views": 10816,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q274156",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q489938",
+   "title": "Hwang Jang-lee",
+   "fame": 10376,
+   "views": 10376,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q489938",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7828852",
+   "title": "Toukie Smith",
+   "fame": 8470,
+   "views": 8470,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7828852",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 8012,
+   "views": 8012,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q533583",
+   "title": "Richard Posner",
+   "fame": 7960,
+   "views": 7960,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q533583",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 7882,
+   "views": 7882,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1076,6 +1391,7 @@
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_headlines": [
@@ -1131,17 +1447,18 @@
     "outlet:The Hindu Group",
     "outlet:ABP Group",
     "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
+    "google-news:'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
+    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "top": {
-    "IN-nation": 10,
-    "IN-hi-nation": 19
+    "IN-nation": 8,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.36,
+   "top_score": 0.45,
    "top_headlines": [
     "अमर सिंह की बात सच निकली थी, राहुल गांधी के फोन टैपिंग के दावे पर बोले अखिलेश यादव",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_owners": [],
@@ -1151,13 +1468,15 @@
   {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
-   "fame": 125000,
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-13T08:03:54+00:00",
+   "news": 175000,
+   "news_at": "2026-11-14T03:51:17+00:00",
    "headlines": [
-    "Former Madras High Court Judge Justice CS Karnan Passes Away"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1168,10 +1487,38 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:Former Madras High Court Judge Justice CS Karnan Passes Away"
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:The Hindu Group",
+    "outlet:HT Media"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "The Hindu Group",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Justice Karnan’s incident brought judicial misconduct to the forefront",
+     "url": "https://www.thehindu.com/news/national/justice-karnans-incident-brought-judicial-misconduct-to-the-forefront/article71697857.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:51:17+00:00"
+    },
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
    "id": "wk-Q29879031",
    "kind": "death",
    "category": "death",
@@ -1184,31 +1531,27 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
    "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
+    "outage",
+    "service"
    ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T05:52:31+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "Guardian Media Group",
     "BBC"
    ],
    "fame": 250000,
@@ -1216,89 +1559,105 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China",
-    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft says making progress fixing one of its longest outages",
+    "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी"
+   ],
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T05:52:31+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
+     "at": "2026-11-13T17:41:15+00:00"
     },
     {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
+     "at": "2026-11-14T07:00:00+00:00"
     },
     {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "title": "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-ends-after-over-24-hours-outlook-teams-restored-as-company-says-underlying-issue-addressed/articleshow/135825217.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
+     "at": "2026-11-14T06:52:00+00:00"
+    },
+    {
+     "title": "Microsoft says making progress fixing one of its longest outages",
+     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:01:50+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:BBC",
-    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "google-news:Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 11
+    "IN": 4
    },
-   "top_score": 0.5,
+   "top_score": 0.85,
    "top_headlines": [
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
-   "hindi_owners": [],
-   "audience": "world",
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -1502,6 +1861,97 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261114-Q80338",
+   "qid": "Q80338",
+   "title": "Bengal",
+   "name": "Bengal",
+   "phrase": "Bengal",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+   "story_keys": [
+    "area",
+    "cyclonic",
+    "intensify",
+    "likely",
+    "storm"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T06:56:14+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+    "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+    "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16"
+   ],
+   "hindi_headlines": [
+    "15 को दिल्ली में आएगी आंधी, बंगाल की खाड़ी में बन रहा साइक्लोन"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बंगाल",
+   "reports": [
+    {
+     "title": "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/low-pressure-area-forms-over-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-around-november-16/article71699272.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T06:56:14+00:00"
+    },
+    {
+     "title": "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+     "url": "https://www.news18.com/india/pm-modi-to-visit-west-bengal-on-november-21-launch-several-projects-10424667.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:09:33+00:00"
+    },
+    {
+     "title": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+     "url": "https://www.hindustantimes.com/india-news/low-pressure-area-in-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-by-november-16-imd-101794564170138.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:12:15+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 107505,
@@ -1533,42 +1983,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-11-14T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-13"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
-  },
-  {
    "qid": "Q4772274",
    "title": "Anthony Clark (actor)",
    "fame": 105784,
@@ -1598,88 +2012,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261114-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang's Nvidia",
-   "phrase": "Jensen Huang's Nvidia",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-   "story_keys": [
-    "exit",
-    "race"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T06:06:04+00:00",
-   "owners": [
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huangs-nvidia-exit-costs-him-rs-900-crore-how-much-wealth-does-he-have-left/articleshow/135824006.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T06:06:04+00:00"
-    },
-    {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261114-Q62833385",
@@ -1797,6 +2129,53 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q142132416",
    "title": "Michael John Roberts",
    "fame": 19848,
@@ -1828,482 +2207,237 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q37293-update",
-   "qid": "Q37293",
-   "title": "Ramayana",
-   "name": "Ramayana",
-   "phrase": "Ramayana",
-   "person": false,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "Ramayana Box Office Collection Day 9: Ranbir Kapoor's Film Beats Chhaava's Lifetime India Collection, Crosses Rs 1,100 Crore Worldwide",
-   "story_keys": [
-    "adipurush",
-    "animal",
-    "beat",
-    "collection",
-    "crore",
-    "crosse",
-    "dhurandhar",
-    "diwali",
-    "film",
-    "india",
-    "kapoor",
-    "lahri",
-    "lifetime",
-    "office",
-    "pallavi",
-    "past",
-    "ranbir",
-    "record",
-    "sunil",
-    "take",
-    "worldwide",
-    "yash"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T04:28:55+00:00",
-   "owners": [
-    "NDTV",
-    "ABP Group",
-    "TV9 Network",
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 12287,
+   "views": 12287,
    "traffic": 0,
-   "headlines": [
-    "Ramayana Box Office Collection Day 9: Ranbir Kapoor's Film Beats Chhaava's Lifetime India Collection, Crosses Rs 1,100 Crore Worldwide",
-    "Ramayana beats Chhaava in India on Day 9, crosses Rs 1,100 crore worldwide",
-    "Ramayana box office collection day 9: Ranbir Kapoor and Yash-starrer crosses ₹600 crore, beats lifetime haul of Vicky Kaushal's Chhaava",
-    "Anupam Kher explains why Yash's Ravana appears stronger than Ranbir Kapoor's Ram in Ramayana, says makers needed to establish the villain",
-    "Not Ranbir Kapoor, Not Yash. Thailand Is Crushing Over This Ramayana Actor",
-    "Ramayana Set For IFFI 2026 Premiere, Dhurandhar To Open Indian Panorama"
-   ],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "label_hi": "रामायण",
-   "reports": [
-    {
-     "title": "Ramayana Box Office Collection Day 9: Ranbir Kapoor's Film Beats Chhaava's Lifetime India Collection, Crosses Rs 1,100 Crore Worldwide",
-     "url": "https://www.ndtv.com/entertainment/ramayana-box-office-collection-day-9-ranbir-kapoor-film-beats-chhaavas-lifetime-india-collection-crosses-rs-1-100-crore-worldwide-12325154#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T04:28:55+00:00"
-    },
-    {
-     "title": "Ramayana beats Chhaava in India on Day 9, crosses Rs 1,100 crore worldwide",
-     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-box-office-collection-day-9-ranbir-kapoor-film-beats-chhaava-crosses-rs-1100-crore-worldwide-3038654-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:13:16+00:00"
-    },
-    {
-     "title": "Ramayana box office collection day 9: Ranbir Kapoor and Yash-starrer crosses ₹600 crore, beats lifetime haul of Vicky Kaushal's Chhaava",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-9-ranbir-kapoor-and-yash-starrer-crosses-600-crore-beats-lifetime-haul-of-chhaava-101794584692378.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:38:13+00:00"
-    },
-    {
-     "title": "Anupam Kher explains why Yash's Ravana appears stronger than Ranbir Kapoor's Ram in Ramayana, says makers needed to establish the villain",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/anupam-kher-explains-why-yashs-ravana-appears-stronger-than-ranbir-kapoors-ram-in-ramayana-namit-malhotra-sai-pallavi-101794570821864.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:21:44+00:00"
-    },
-    {
-     "title": "Not Ranbir Kapoor, Not Yash. Thailand Is Crushing Over This Ramayana Actor",
-     "url": "https://www.ndtv.com/entertainment/not-ranbir-kapoor-not-yash-thailand-is-crushing-over-this-ramayana-actor-12322348#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T11:34:37+00:00"
-    },
-    {
-     "title": "Ramayana Set For IFFI 2026 Premiere, Dhurandhar To Open Indian Panorama",
-     "url": "https://www.ndtv.com/entertainment/ramayana-set-for-iffi-2026-premiere-dhurandhar-to-open-indian-panorama-12321807#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:39:00+00:00"
-    },
-    {
-     "title": "Dhurandhar and Ramayana to feature at IFFI leading Indian Panorama, BRICS segments",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/dhurandhar-and-ramayana-to-feature-at-iffi-leading-indian-panorama-brics-segments-101794564821452.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:35:17+00:00"
-    },
-    {
-     "title": "Rs 4,000-Crore Ramayana's Biggest Advantage? It Came After Adipurush",
-     "url": "https://www.ndtv.com/entertainment/rs-4000-crore-ramayanas-biggest-advantage-it-came-after-adipurush-12321700#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T09:31:27+00:00"
-    }
-   ],
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
    "via": [
-    "revisit:Q37293"
+    "wikipedia-top-2026-11-13"
    ],
-   "top": null,
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
    "top_score": 0.0,
-   "revisit_of": "kh-20261113-Q37293",
-   "earlier": [
-    "रामायण ने भारत में कमाए 238 करोड़ रुपये",
-    "रामायण की कमाई छुट्टियों के बाद भी सिनेमाघरों में जारी",
-    "रामायण ने आठ दिन में कमाए 1,000 करोड़ रुपये"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 13 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q163225-update",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
-   "story_keys": [
-    "assassination",
-    "become",
-    "begging",
-    "cancer",
-    "congress",
-    "emergency",
-    "face",
-    "family",
-    "indira",
-    "kill",
-    "manmohan",
-    "memoir",
-    "political",
-    "post",
-    "pranab",
-    "rajiv",
-    "recall",
-    "recount",
-    "reveal"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T05:38:36+00:00",
-   "owners": [
-    "The Hindu Group",
-    "HT Media",
-    "India Today Group",
-    "Network18"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
+   "qid": "Q489938",
+   "title": "Hwang Jang-lee",
+   "fame": 10376,
+   "views": 10376,
    "traffic": 0,
-   "headlines": [
-    "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
-    "FIR registered against Kangana Ranaut for ‘highly inflammatory’ social media posts on Gandhi family",
-    "FIR against BJP MP Kangana Ranaut over social media posts on Gandhi family",
-    "'Mysterious Foreign National': Himachal Police Book BJP MP Kangana Ranaut Over X Post Against Sonia Gandhi",
-    "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
-     "url": "https://www.thehindu.com/news/national/rahul-gandhi-habitual-liar-bjp-on-congress-leaders-phone-tapping-allegation/article71698080.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T05:38:36+00:00"
-    },
-    {
-     "title": "FIR registered against Kangana Ranaut for ‘highly inflammatory’ social media posts on Gandhi family",
-     "url": "https://www.hindustantimes.com/india-news/fir-registered-against-kangana-ranaut-for-highly-inflammatory-social-media-posts-on-gandhi-family-101794626028599.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:23:30+00:00"
-    },
-    {
-     "title": "FIR against BJP MP Kangana Ranaut over social media posts on Gandhi family",
-     "url": "https://www.indiatoday.in/india/story/fir-against-kangana-ranaut-in-himachal-pradesh-over-social-media-posts-on-gandhi-family-3038658-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:14:27+00:00"
-    },
-    {
-     "title": "'Mysterious Foreign National': Himachal Police Book BJP MP Kangana Ranaut Over X Post Against Sonia Gandhi",
-     "url": "https://www.news18.com/politics/mysterious-foreign-national-himachal-police-book-bjp-mp-kangana-ranaut-over-x-post-against-sonia-gandhi-ws-lrt-10425009.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:38:30+00:00"
-    },
-    {
-     "title": "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
-     "url": "https://www.livemint.com/news/india/who-is-aviva-baig-meet-the-fianc-e-of-priyanka-gandhi-s-son-raihan-vadra-who-contributed-to-sonia-gandhis-memoir-11794570133830.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:02:59+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q163225"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261112-Q163225",
-   "earlier": [
-    "सोनिया गांधी की किताब में इमरजेंसी का जिक्र",
-    "राजीव गांधी को पीएम न बनने की सोनिया ने दी थी सलाह",
-    "किताब में सोनिया गांधी ने किया पीएम पद ठुकराने का जिक्र",
-    "Belonging नाम से रिलीज हुई सोनिया गांधी की संस्मरण किताब"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q10218-update",
-   "qid": "Q10218",
-   "title": "Rahul Gandhi",
-   "name": "Rahul Gandhi",
-   "phrase": "Rahul Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Opinion: Sonia Gandhi, 'Belonging' And Why This Story Lies On Other Side Of Politics - By Shashi Tharoor",
-   "story_keys": [
-    "chicago",
-    "columbia",
-    "next",
-    "sonia",
-    "visit"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T05:20:30+00:00",
-   "owners": [
-    "NDTV",
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 1,
    "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Opinion: Sonia Gandhi, 'Belonging' And Why This Story Lies On Other Side Of Politics - By Shashi Tharoor",
-    "'Mysterious Foreign National': Himachal Police Book BJP MP Kangana Ranaut Over X Post Against Sonia Gandhi",
-    "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राहुल गाँधी",
-   "reports": [
-    {
-     "title": "Opinion: Sonia Gandhi, 'Belonging' And Why This Story Lies On Other Side Of Politics - By Shashi Tharoor",
-     "url": "https://www.ndtv.com/opinion/sonia-gandhi-belonging-and-why-this-story-lies-on-other-side-of-politics-by-shashi-tharoor-12325282#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T05:20:30+00:00"
-    },
-    {
-     "title": "'Mysterious Foreign National': Himachal Police Book BJP MP Kangana Ranaut Over X Post Against Sonia Gandhi",
-     "url": "https://www.news18.com/politics/mysterious-foreign-national-himachal-police-book-bjp-mp-kangana-ranaut-over-x-post-against-sonia-gandhi-ws-lrt-10425009.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:38:30+00:00"
-    },
-    {
-     "title": "Who is Aviva Baig? Meet the fiancée of Priyanka Gandhi’s son Raihan Vadra who contributed to Sonia Gandhi's memoir",
-     "url": "https://www.livemint.com/news/india/who-is-aviva-baig-meet-the-fianc-e-of-priyanka-gandhi-s-son-raihan-vadra-who-contributed-to-sonia-gandhis-memoir-11794570133830.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:02:59+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q10218"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261112-Q10218",
-   "earlier": [
-    "राहुल गांधी अगले हफ्ते जाएंगे अमेरिका के दौरे पर"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q7747-update",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Vladimir Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Trump to meet Xi, Putin for three-way huddle on nuclear arms talks",
-   "story_keys": [
-    "compromise",
-    "dhabi",
-    "envoy",
-    "meet",
-    "talk",
-    "ukraine",
-    "zelensky"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T04:11:00+00:00",
-   "owners": [
-    "Deutsche Welle",
-    "HT Media",
-    "BBC"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Trump to meet Xi, Putin for three-way huddle on nuclear arms talks",
-    "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
-    "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
-    "Decoded: Is Trump helping Putin reshape Europe’s security order? What US-Russia talks could mean for NATO"
-   ],
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
    "hindi_headlines": [],
    "region": "world",
-   "india_link": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "Trump to meet Xi, Putin for three-way huddle on nuclear arms talks",
-     "url": "https://www.dw.com/en/trump-to-meet-xi-putin-for-three-way-huddle-on-nuclear-arms-talks/a-79946408?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T04:11:00+00:00"
-    },
-    {
-     "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T16:40:31+00:00"
-    },
-    {
-     "title": "Beijing faces its Russia dilemma amid talk of Xi-Trump-Putin summit",
-     "url": "https://www.dw.com/en/beijing-faces-its-russia-dilemma-amid-talk-of-xi-trump-putin-summit/a-79942427?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T15:28:00+00:00"
-    },
-    {
-     "title": "Decoded: Is Trump helping Putin reshape Europe’s security order? What US-Russia talks could mean for NATO",
-     "url": "https://www.livemint.com/news/world/decoded-is-trump-helping-putin-reshape-europe-s-security-order-what-us-russia-talks-could-mean-for-nato-11794589908589.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:32:13+00:00"
-    }
-   ],
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
    "via": [
-    "revisit:Q7747"
+    "wikipedia-top-2026-11-13"
    ],
-   "top": null,
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q489938",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
    "top_score": 0.0,
-   "revisit_of": "kh-20261113-Q7747",
-   "earlier": [
-    "व्लादिमीर पुतिन ने अमेरिकी दूतों से की दो घंटे बात"
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 7882,
+   "views": 7882,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
    ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 13 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q274156",
+   "title": "Marsha M. Linehan",
+   "fame": 10816,
+   "views": 10816,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q274156",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 8012,
+   "views": 8012,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q533583",
+   "title": "Richard Posner",
+   "fame": 7960,
+   "views": 7960,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q533583",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7828852",
+   "title": "Toukie Smith",
+   "fame": 8470,
+   "views": 8470,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7828852",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "notes": [
-  "revisit kh-20261114-Q10218-update: 3 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1597 headlines from 47 feeds (18 owners), 9 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q10218, kh-20261114-Q7747, kh-20261114-Q118125232; dropped: explainer David Warner: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1604 headlines from 47 feeds (18 owners), 14 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q10218, kh-20261114-Q2283, kh-20261114-Q118125232; dropped: explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1597,
+  "headlines": 1604,
   "feeds": 47,
   "owners": 18,
-  "matched": 9,
-  "corroborated": 7
+  "matched": 14,
+  "corroborated": 8
  },
  "emerging": [],
  "explainers": [
@@ -2347,11 +2481,11 @@
    "traffic": 0,
    "headlines": [
     "FAA lifts nationwide ground stop on all US flights",
-    "US flights resume after FAA lifts hours-long nationwide ground stop",
     "FAA grounds all fights across the US over ‘telecommunication outage’",
     "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
     "US flight chaos: What caused FAA outage that grounded departures nationwide",
-    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18"
+    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+    "FAA flight ground stop disrupts sports travel"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2402,16 +2536,6 @@
      "at": "2026-11-13T23:45:22+00:00"
     },
     {
-     "title": "US flights resume after FAA lifts hours-long nationwide ground stop",
-     "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T21:32:08+00:00"
-    },
-    {
      "title": "Cleveland Browns' Sunday Game Gets Travel Concern After FAA Grounds Flights",
      "url": "https://sports.ndtv.com/us/nfl/cleveland-browns-sunday-game-gets-travel-concern-after-faa-grounds-flights-12325313#publisher=newsstand",
      "outlet": "NDTV",
@@ -2440,6 +2564,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US flight chaos: What caused FAA outage that grounded departures nationwide",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-flight-chaos-what-caused-faa-communication-outage-that-grounded-departures-nationwide/articleshow/135820048.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:43:32+00:00"
     }
    ],
    "via": [
@@ -2453,9 +2587,9 @@
     "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
     "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
@@ -2496,6 +2630,7 @@
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
     "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_headlines": [
@@ -2551,17 +2686,18 @@
     "outlet:The Hindu Group",
     "outlet:ABP Group",
     "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
+    "google-news:'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
+    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "top": {
-    "IN-nation": 10,
-    "IN-hi-nation": 19
+    "IN-nation": 8,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.36,
+   "top_score": 0.45,
    "top_headlines": [
     "अमर सिंह की बात सच निकली थी, राहुल गांधी के फोन टैपिंग के दावे पर बोले अखिलेश यादव",
     "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "'Chhath Puja not drama': BJP accuses Rahul Gandhi of disrespecting Hindu festivals",
     "‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare"
    ],
    "hindi_owners": [],
@@ -2569,31 +2705,27 @@
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
    "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
+    "outage",
+    "service"
    ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T05:52:31+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "Guardian Media Group",
     "BBC"
    ],
    "fame": 250000,
@@ -2601,89 +2733,105 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China",
-    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+    "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft says making progress fixing one of its longest outages",
+    "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी",
+    "Microsoft Outage: माइक्रोसॉफ्ट में खराबी से करीब 45 करोड़ लोगों पर असर, ईमेल और मैसेज भेजने में परेशानी"
+   ],
+   "hindi_news": 3,
    "geos": [],
    "region": "world",
-   "india_link": false,
+   "india_link": true,
    "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
-     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T05:52:31+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
      "group": "international",
      "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
+     "at": "2026-11-13T17:41:15+00:00"
     },
     {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Microsoft resolves outage after over 36 hours, says all services, including Outlook and Teams, restored",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
+     "at": "2026-11-14T07:00:00+00:00"
     },
     {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "title": "'Deeply sorry': Microsoft services return after mega outage; tech giant reveals what happened",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-ends-after-over-24-hours-outlook-teams-restored-as-company-says-underlying-issue-addressed/articleshow/135825217.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
+     "at": "2026-11-14T06:52:00+00:00"
+    },
+    {
+     "title": "Microsoft says making progress fixing one of its longest outages",
+     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:01:50+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
+    },
+    {
+     "title": "Microsoft outage affects communication channels of, Akasa, IndiGo airlines; advisories issued",
+     "url": "https://www.hindustantimes.com/india-news/microsoft-outage-affects-communication-channels-several-indian-airlines-indigo-air-india-advisory-issued-101794551225027.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T08:14:20+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:Guardian Media Group",
     "outlet:BBC",
-    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "google-news:Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 11
+    "IN": 4
    },
-   "top_score": 0.5,
+   "top_score": 0.85,
    "top_headlines": [
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+    "Microsoft Outage updates: No ETA yet on full recovery, company says"
    ],
-   "hindi_owners": [],
-   "audience": "world",
+   "hindi_owners": [
+    "BBC"
+   ],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -2802,86 +2950,95 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang's Nvidia",
-   "phrase": "Jensen Huang's Nvidia",
-   "person": true,
+   "id": "kh-20261114-Q80338",
+   "qid": "Q80338",
+   "title": "Bengal",
+   "name": "Bengal",
+   "phrase": "Bengal",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+   "story": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
    "story_keys": [
-    "exit",
-    "race"
+    "area",
+    "cyclonic",
+    "intensify",
+    "likely",
+    "storm"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-14T06:06:04+00:00",
+   "news_at": "2026-11-14T06:56:14+00:00",
    "owners": [
+    "HT Media",
     "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co."
+    "The Hindu Group",
+    "India Today Group"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?"
+    "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+    "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+    "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
+   "hindi_headlines": [
+    "15 को दिल्ली में आएगी आंधी, बंगाल की खाड़ी में बन रहा साइक्लोन"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "बंगाल",
    "reports": [
     {
-     "title": "Jensen Huang's Nvidia exit costs him Rs 900 crore: How much wealth does he have left?",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/jensen-huangs-nvidia-exit-costs-him-rs-900-crore-how-much-wealth-does-he-have-left/articleshow/135824006.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Low pressure area forms over Bay of Bengal, likely to intensify into cyclonic storm around Nov. 16",
+     "url": "https://www.thehindu.com/news/national/andhra-pradesh/low-pressure-area-forms-over-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-around-november-16/article71699272.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T06:06:04+00:00"
+     "at": "2026-11-14T06:56:14+00:00"
     },
     {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "title": "PM Modi Likely To Visit West Bengal On November 21, Launch Several Projects",
+     "url": "https://www.news18.com/india/pm-modi-to-visit-west-bengal-on-november-21-launch-several-projects-10424667.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
+     "at": "2026-11-13T12:09:33+00:00"
+    },
+    {
+     "title": "Low-pressure area in Bay of Bengal likely to intensify into cyclonic storm by November 16: IMD",
+     "url": "https://www.hindustantimes.com/india-news/low-pressure-area-in-bay-of-bengal-likely-to-intensify-into-cyclonic-storm-by-november-16-imd-101794564170138.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:12:15+00:00"
     }
    ],
    "via": [
+    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q27780754",
