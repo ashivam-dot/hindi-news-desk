@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T05:48:37+00:00",
+ "at": "2026-11-14T06:03:35+00:00",
  "trending": [
   {
    "id": "kh-20261114-Q335357",
@@ -37,10 +37,11 @@
     "Bennett, Coleman & Co.",
     "Network18",
     "France Médias Monde",
-    "Guardian Media Group"
+    "Guardian Media Group",
+    "NDTV"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -120,6 +121,16 @@
      "at": "2026-11-13T21:32:08+00:00"
     },
     {
+     "title": "Cleveland Browns' Sunday Game Gets Travel Concern After FAA Grounds Flights",
+     "url": "https://sports.ndtv.com/us/nfl/cleveland-browns-sunday-game-gets-travel-concern-after-faa-grounds-flights-12325313#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T05:23:27+00:00"
+    },
+    {
      "title": "FAA flight ground stop disrupts sports travel",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
      "outlet": "The Economic Times",
@@ -128,16 +139,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T02:59:38+00:00"
-    },
-    {
-     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:54:41+00:00"
     }
    ],
    "via": [
@@ -147,11 +148,17 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:France Médias Monde",
-    "outlet:Guardian Media Group"
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
+   ],
    "hindi_owners": []
   },
   {
@@ -166,10 +173,10 @@
    "category_hi": "समाचार",
    "story": "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
    "story_keys": [
-    "accuse",
     "habitual",
     "liar’",
     "phone",
+    "rahul",
     "tapping"
    ],
    "date": "2026-11-13",
@@ -181,23 +188,25 @@
     "DB Corp",
     "ABP Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
-    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’"
+    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
    ],
    "hindi_headlines": [
-    "हैदराबाद में कांग्रेस की भारत समिट का दूसरा दिन:आज राहुल गांधी शामिल होंगे, गिग वर्कर्स से मिलेंगे",
+    "राहुल गांधी हैदराबाद में गिग-वर्कर्स की बाइक रैली में शामिल:डिलीबरी बॉय-ड्राइवर की समस्याएं सुनेंगे; कांग्रेस की भारत समिट का आज दूसरा दिन",
     "तेलंगाना में 14 नवंबर से लागू होगी गिग वर्कर्स वेलफेयर पॉलिसी, राहुल गांधी करेंगे शुरुआत; भारत समिट के विरोध पर बरसे सीएम रेवंत रेड्डी",
     "राहुल गांधी पर रामदास अठावले का हमला, बोले- संविधान को कोई नहीं बदल सकता",
     "इंडिया गठबंधन जीता तो पीएम पद के लिए सबसे आगे होगा राहुल गांधी का नाम, बोले वामपंथी नेता",
     "सोनिया गांधी की किताब पर निशाना साध रहे भाजपा नेता, खुश हुए राहुल गांधी; बोले- फायदा होगा"
    ],
-   "hindi_news": 6,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -242,76 +251,237 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:ABP Group"
+    "outlet:ABP Group",
+    "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "google-news:The PM’s political career will be over if we were to debate: Rahul Gandhi",
+    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 9,
+    "IN-hi-nation": 20
+   },
+   "top_score": 0.375,
+   "top_headlines": [
+    "राहुल गांधी का बड़ा आरोप, बोले- 'प्रधानमंत्री मेरा फोन टैप करवा रहे हैं'",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
   },
   {
-   "qid": "Q5213677",
-   "title": "Dan Hicks (sportscaster)",
-   "fame": 107505,
-   "views": 107505,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-13"
+   "id": "kh-20261114-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "NVIDIA",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+   "story_keys": [
+    "race",
+    "top"
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5213677",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T03:47:56+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+    "Nvidia looks to 'Arm' for a new pair of hands at top",
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:47:56+00:00"
+    },
+    {
+     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:30:13+00:00"
+    },
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:20:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:DB Corp",
+    "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
+   "audience": "india",
+   "lane": "other"
   },
   {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 105784,
-   "views": 105784,
+   "id": "kh-20261114-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "story_keys": [
+    "first",
+    "historic",
+    "hold",
+    "meeting",
+    "next",
+    "trilateral"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T05:52:31+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Al Jazeera Media Network",
+    "BBC"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
+   "headlines": [
+    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+    "Trump, Xi and Putin to hold first three-way summit in China",
+    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-13"
+   "abroad": true,
+   "label_hi": "व्लादिमीर पुतिन",
+   "reports": [
+    {
+     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T05:52:31+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin to hold first three-way summit in China",
+     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T04:55:58+00:00"
+    },
+    {
+     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:32:25+00:00"
+    },
+    {
+     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:52:39+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T00:26:37+00:00"
+    }
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -341,8 +511,8 @@
     "The Hindu Group",
     "India Today Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -350,7 +520,8 @@
     "Brar joins India’s Test squad for NZ series",
     "BCCI Selectors Release Star Spinner Days Ahead Of NZ Test Series, Adds Gurnoor Brar. Rishabh Pant Joins Team",
     "Gurnoor Brar added to Test squad, Kuldeep released as India go heavier on pace",
-    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added"
+    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added",
+    "NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -417,199 +588,155 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:The Hindu Group",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "google-news:NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-   "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T04:55:58+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 200000,
    "views": 0,
    "traffic": 0,
+   "news": 200000,
+   "news_at": "2026-11-14T03:51:17+00:00",
    "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "सी एस कर्णन",
+   "via": [
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "outlet:The Hindu Group",
+    "outlet:Indian Express Group",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "The Hindu Group",
+    "Indian Express Group",
+    "HT Media"
+   ],
    "reports": [
     {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
-    },
-    {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Justice Karnan’s incident brought judicial misconduct to the forefront",
+     "url": "https://www.thehindu.com/news/national/justice-karnans-incident-brought-judicial-misconduct-to-the-forefront/article71697857.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
+     "at": "2026-11-14T03:51:17+00:00"
     },
     {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
+     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:55:01+00:00"
+    },
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
+     "at": "2026-11-13T10:49:45+00:00"
     }
    ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "NVIDIA",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-   "story_keys": [
-    "race",
-    "top"
-   ],
+   "id": "wk-Q29879031",
+   "kind": "death",
+   "category": "death",
    "date": "2026-11-13",
-   "news_at": "2026-11-14T03:47:56+00:00",
-   "owners": [
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Nvidia looks to 'Arm' for a new pair of hands at top"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:30:13+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5213677",
+   "title": "Dan Hicks (sportscaster)",
+   "fame": 107505,
+   "views": 107505,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5213677",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 105784,
+   "views": 105784,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "id": "kh-20261114-Q124540932",
@@ -685,8 +812,8 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -770,8 +897,8 @@
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -854,8 +981,8 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -885,8 +1012,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -921,8 +1048,8 @@
     -90.06083333
    ],
    "has_coords": true,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -972,16 +1099,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T04:45:09+00:00"
-    },
-    {
-     "title": "Is Jaxson Dart's Season Really Over? John Harbaugh Keeps The Door Open For A New York Giants Comeback",
-     "url": "https://sports.ndtv.com/us/nfl/is-jaxson-darts-season-really-over-john-harbaugh-keeps-the-door-open-for-a-new-york-giants-comeback-12324957#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:13:06+00:00"
     }
    ],
    "id": "wk-Q142131356",
@@ -993,10 +1110,61 @@
     -73.95383
    ],
    "has_coords": true,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
+   ],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q142132416",
@@ -1022,8 +1190,39 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 12287,
+   "views": 12287,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1058,10 +1257,196 @@
     19.93688889
    ],
    "has_coords": true,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q274156",
+   "title": "Marsha M. Linehan",
+   "fame": 10816,
+   "views": 10816,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q274156",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q489938",
+   "title": "Hwang Jang-lee",
+   "fame": 10376,
+   "views": 10376,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q489938",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7828852",
+   "title": "Toukie Smith",
+   "fame": 8470,
+   "views": 8470,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7828852",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 8012,
+   "views": 8012,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q533583",
+   "title": "Richard Posner",
+   "fame": 7960,
+   "views": 7960,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q533583",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 7882,
+   "views": 7882,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1077,10 +1462,10 @@
    "category_hi": "समाचार",
    "story": "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
    "story_keys": [
-    "accuse",
     "habitual",
     "liar’",
     "phone",
+    "rahul",
     "tapping"
    ],
    "date": "2026-11-13",
@@ -1092,23 +1477,25 @@
     "DB Corp",
     "ABP Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
-    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’"
+    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
    ],
    "hindi_headlines": [
-    "हैदराबाद में कांग्रेस की भारत समिट का दूसरा दिन:आज राहुल गांधी शामिल होंगे, गिग वर्कर्स से मिलेंगे",
+    "राहुल गांधी हैदराबाद में गिग-वर्कर्स की बाइक रैली में शामिल:डिलीबरी बॉय-ड्राइवर की समस्याएं सुनेंगे; कांग्रेस की भारत समिट का आज दूसरा दिन",
     "तेलंगाना में 14 नवंबर से लागू होगी गिग वर्कर्स वेलफेयर पॉलिसी, राहुल गांधी करेंगे शुरुआत; भारत समिट के विरोध पर बरसे सीएम रेवंत रेड्डी",
     "राहुल गांधी पर रामदास अठावले का हमला, बोले- संविधान को कोई नहीं बदल सकता",
     "इंडिया गठबंधन जीता तो पीएम पद के लिए सबसे आगे होगा राहुल गांधी का नाम, बोले वामपंथी नेता",
     "सोनिया गांधी की किताब पर निशाना साध रहे भाजपा नेता, खुश हुए राहुल गांधी; बोले- फायदा होगा"
    ],
-   "hindi_news": 6,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -1153,14 +1540,315 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:ABP Group"
+    "outlet:ABP Group",
+    "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "google-news:The PM’s political career will be over if we were to debate: Rahul Gandhi",
+    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 9,
+    "IN-hi-nation": 20
+   },
+   "top_score": 0.375,
+   "top_headlines": [
+    "राहुल गांधी का बड़ा आरोप, बोले- 'प्रधानमंत्री मेरा फोन टैप करवा रहे हैं'",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
+  },
+  {
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 200000,
+   "views": 0,
+   "traffic": 0,
+   "news": 200000,
+   "news_at": "2026-11-14T03:51:17+00:00",
+   "headlines": [
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": "सी एस कर्णन",
+   "via": [
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
+    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "outlet:The Hindu Group",
+    "outlet:Indian Express Group",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "The Hindu Group",
+    "Indian Express Group",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Justice Karnan’s incident brought judicial misconduct to the forefront",
+     "url": "https://www.thehindu.com/news/national/justice-karnans-incident-brought-judicial-misconduct-to-the-forefront/article71697857.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:51:17+00:00"
+    },
+    {
+     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:55:01+00:00"
+    },
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
+   "id": "wk-Q29879031",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-13",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "NVIDIA",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+   "story_keys": [
+    "race",
+    "top"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T03:47:56+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+    "Nvidia looks to 'Arm' for a new pair of hands at top",
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:47:56+00:00"
+    },
+    {
+     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:30:13+00:00"
+    },
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:20:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:DB Corp",
+    "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "story_keys": [
+    "first",
+    "historic",
+    "hold",
+    "meeting",
+    "next",
+    "trilateral"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T05:52:31+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Al Jazeera Media Network",
+    "BBC"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+    "Trump, Xi and Putin to hold first three-way summit in China",
+    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "व्लादिमीर पुतिन",
+   "reports": [
+    {
+     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T05:52:31+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin to hold first three-way summit in China",
+     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T04:55:58+00:00"
+    },
+    {
+     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:32:25+00:00"
+    },
+    {
+     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:52:39+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T00:26:37+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -1190,8 +1878,8 @@
     "The Hindu Group",
     "India Today Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1199,7 +1887,8 @@
     "Brar joins India’s Test squad for NZ series",
     "BCCI Selectors Release Star Spinner Days Ahead Of NZ Test Series, Adds Gurnoor Brar. Rishabh Pant Joins Team",
     "Gurnoor Brar added to Test squad, Kuldeep released as India go heavier on pace",
-    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added"
+    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added",
+    "NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1266,10 +1955,11 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:The Hindu Group",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "google-news:NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1353,8 +2043,8 @@
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1384,8 +2074,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1420,197 +2110,12 @@
     -90.06083333
    ],
    "has_coords": true,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
-  },
-  {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-   "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T04:55:58+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
-    },
-    {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
-    },
-    {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "NVIDIA",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-   "story_keys": [
-    "race",
-    "top"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T03:47:56+00:00",
-   "owners": [
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Nvidia looks to 'Arm' for a new pair of hands at top"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:30:13+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q4772274",
@@ -1636,8 +2141,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1717,8 +2222,8 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1801,8 +2306,8 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1832,11 +2337,58 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "obituary"
   },
   {
@@ -1863,8 +2415,225 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 12287,
+   "views": 12287,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q489938",
+   "title": "Hwang Jang-lee",
+   "fame": 10376,
+   "views": 10376,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q489938",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 7882,
+   "views": 7882,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q274156",
+   "title": "Marsha M. Linehan",
+   "fame": 10816,
+   "views": 10816,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q274156",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1395654",
+   "title": "Irma P. Hall",
+   "fame": 8012,
+   "views": 8012,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1395654",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q533583",
+   "title": "Richard Posner",
+   "fame": 7960,
+   "views": 7960,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q533583",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7828852",
+   "title": "Toukie Smith",
+   "fame": 8470,
+   "views": 8470,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7828852",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-04",
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1872,26 +2641,15 @@
   }
  ],
  "notes": [
-  "outlets: 1632 headlines from 49 feeds (19 owners), 9 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q10218, kh-20261114-Q118125232, kh-20261114-Q7747; dropped: explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story; explainer David Warner: fewer than 3 owners' headlines name it and the story"
- ],
- "trend_errors": [
-  "wikidata recent deaths: HTTP 429",
-  "google news IN: HTTP 503",
-  "google news IN-nation: HTTP 503",
-  "google news IN-hi: HTTP 503",
-  "google news IN-hi-nation: HTTP 503",
-  "google news IN-hi-world: HTTP 503",
-  "google news US: HTTP 503",
-  "google news world: HTTP 503",
-  "top stories: no Google News India list could be read (no story is ranked by place)"
+  "outlets: 1638 headlines from 49 feeds (19 owners), 12 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q10218, kh-20261114-Q182477, kh-20261114-Q7747; dropped: explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story; explainer David Warner: fewer than 3 owners' headlines name it and the story; explainer October: no Wikipedia article that can be its centre"
  ],
  "outlets": {
-  "headlines": 1632,
+  "headlines": 1638,
   "feeds": 49,
   "owners": 19,
-  "matched": 9,
-  "corroborated": 8
+  "matched": 12,
+  "corroborated": 9
  },
  "emerging": [],
  "explainers": [
@@ -1931,10 +2689,11 @@
     "Bennett, Coleman & Co.",
     "Network18",
     "France Médias Monde",
-    "Guardian Media Group"
+    "Guardian Media Group",
+    "NDTV"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2014,6 +2773,16 @@
      "at": "2026-11-13T21:32:08+00:00"
     },
     {
+     "title": "Cleveland Browns' Sunday Game Gets Travel Concern After FAA Grounds Flights",
+     "url": "https://sports.ndtv.com/us/nfl/cleveland-browns-sunday-game-gets-travel-concern-after-faa-grounds-flights-12325313#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T05:23:27+00:00"
+    },
+    {
      "title": "FAA flight ground stop disrupts sports travel",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
      "outlet": "The Economic Times",
@@ -2022,16 +2791,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T02:59:38+00:00"
-    },
-    {
-     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:54:41+00:00"
     }
    ],
    "via": [
@@ -2041,11 +2800,17 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:France Médias Monde",
-    "outlet:Guardian Media Group"
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
+   ],
    "hindi_owners": []
   },
   {
@@ -2060,10 +2825,10 @@
    "category_hi": "समाचार",
    "story": "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
    "story_keys": [
-    "accuse",
     "habitual",
     "liar’",
     "phone",
+    "rahul",
     "tapping"
    ],
    "date": "2026-11-13",
@@ -2075,23 +2840,25 @@
     "DB Corp",
     "ABP Group"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Rahul Gandhi ‘habitual liar’: BJP on Congress leader’s phone tapping allegation",
     "‘I Have Proof’: Leader Of Opposition Rahul Gandhi Accuses PM Modi of Phone Tapping | BJP Hits Back",
-    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’"
+    "Rahul Gandhi claims PM Modi ‘has my phone tapped’, BJP calls him ‘habitual liar’",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
    ],
    "hindi_headlines": [
-    "हैदराबाद में कांग्रेस की भारत समिट का दूसरा दिन:आज राहुल गांधी शामिल होंगे, गिग वर्कर्स से मिलेंगे",
+    "राहुल गांधी हैदराबाद में गिग-वर्कर्स की बाइक रैली में शामिल:डिलीबरी बॉय-ड्राइवर की समस्याएं सुनेंगे; कांग्रेस की भारत समिट का आज दूसरा दिन",
     "तेलंगाना में 14 नवंबर से लागू होगी गिग वर्कर्स वेलफेयर पॉलिसी, राहुल गांधी करेंगे शुरुआत; भारत समिट के विरोध पर बरसे सीएम रेवंत रेड्डी",
     "राहुल गांधी पर रामदास अठावले का हमला, बोले- संविधान को कोई नहीं बदल सकता",
     "इंडिया गठबंधन जीता तो पीएम पद के लिए सबसे आगे होगा राहुल गांधी का नाम, बोले वामपंथी नेता",
     "सोनिया गांधी की किताब पर निशाना साध रहे भाजपा नेता, खुश हुए राहुल गांधी; बोले- फायदा होगा"
    ],
-   "hindi_news": 6,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -2136,14 +2903,237 @@
     "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:ABP Group"
+    "outlet:ABP Group",
+    "google-news:'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "google-news:The PM’s political career will be over if we were to debate: Rahul Gandhi",
+    "google-news:नेहरू की जयंती पर पीएम मोदी और राहुल गांधी ने क्या कहा"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 9,
+    "IN-hi-nation": 20
+   },
+   "top_score": 0.375,
+   "top_headlines": [
+    "राहुल गांधी का बड़ा आरोप, बोले- 'प्रधानमंत्री मेरा फोन टैप करवा रहे हैं'",
+    "'Jewel of India': PM Modi, Rahul Gandhi, Rajnath Singh pay tributes to Nehru on birth anniversary",
+    "The PM’s political career will be over if we were to debate: Rahul Gandhi"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261114-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "NVIDIA",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+   "story_keys": [
+    "race",
+    "top"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T03:47:56+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "DB Corp"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+    "Nvidia looks to 'Arm' for a new pair of hands at top",
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "hindi_headlines": [
+    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
+   ],
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
+     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:47:56+00:00"
+    },
+    {
+     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T17:30:13+00:00"
+    },
+    {
+     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
+     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:20:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:DB Corp",
+    "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "google-news:'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say",
+    "'Lot of leakage in chip export system': Treasury secy Bessent slams Nvidia, Trump aide Lutnick over spy r"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "story_keys": [
+    "first",
+    "historic",
+    "hold",
+    "meeting",
+    "next",
+    "trilateral"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T05:52:31+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "Al Jazeera Media Network",
+    "BBC"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+    "Trump, Xi and Putin to hold first three-way summit in China",
+    "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "व्लादिमीर पुतिन",
+   "reports": [
+    {
+     "title": "Trump, Putin and Xi plan historic joint meeting in China next week, White House says",
+     "url": "https://www.bbc.co.uk/news/articles/ckz74jzpy18do?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T05:52:31+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin to hold first three-way summit in China",
+     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T04:55:58+00:00"
+    },
+    {
+     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:32:25+00:00"
+    },
+    {
+     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:52:39+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T00:26:37+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network",
+    "outlet:BBC",
+    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -2173,8 +3163,8 @@
     "The Hindu Group",
     "India Today Group"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2182,7 +3172,8 @@
     "Brar joins India’s Test squad for NZ series",
     "BCCI Selectors Release Star Spinner Days Ahead Of NZ Test Series, Adds Gurnoor Brar. Rishabh Pant Joins Team",
     "Gurnoor Brar added to Test squad, Kuldeep released as India go heavier on pace",
-    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added"
+    "NZ vs IND: India release Kuldeep Yadav from Test squad, Gurnoor Brar added",
+    "NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2249,199 +3240,15 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "outlet:The Hindu Group",
-    "outlet:India Today Group"
+    "outlet:India Today Group",
+    "google-news:NZ vs IND, 2026: Kuldeep Yadav released from Test squad; Gurnoor Brar included"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-   "story_keys": [
-    "first",
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T04:55:58+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "Al Jazeera Media Network"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Xi and Putin to hold first three-way summit in China"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "Trump, Xi and Putin to hold first three-way summit in China",
-     "url": "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T04:55:58+00:00"
-    },
-    {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
-    },
-    {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:Al Jazeera Media Network"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "NVIDIA",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-   "story_keys": [
-    "race",
-    "top"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T03:47:56+00:00",
-   "owners": [
-    "Network18",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "DB Corp"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-    "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-    "Nvidia looks to 'Arm' for a new pair of hands at top"
-   ],
-   "hindi_headlines": [
-    "मॉर्निंग न्यूज ब्रीफ:राहुल का आरोप- मेरा फोन टेप हो रहा; एनवीडिया CEO का तीसरा अफेयर सामने आया; सोना एक दिन में ₹6500 सस्ता"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "NVIDIA faces a critical leadership race after Jensen Huang's exit with top global executives considered",
-     "url": "https://www.indiatoday.in/technology/video/nvidia-faces-high-stakes-succession-race-after-jensen-huang-exit-ytvd-3038674-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:56+00:00"
-    },
-    {
-     "title": "Nvidia looks to 'Arm' for a new pair of hands at top",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/nvidia-approached-arm-holdings-ceo-rene-haas-to-succeed-huang/articleshow/135811892.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:30:13+00:00"
-    },
-    {
-     "title": "Meet Three Indian-Origin CEOs In The Race To Replace Jensen Huang At Nvidia",
-     "url": "https://www.news18.com/world/three-indian-origin-ceos-in-the-race-to-replace-jensen-huang-at-nvidia-chinese-spy-alice-huang-ws-rt-10424466.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:20:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:DB Corp"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261114-Q124540932",
@@ -2517,8 +3324,8 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2602,8 +3409,8 @@
     "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -2686,8 +3493,8 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
