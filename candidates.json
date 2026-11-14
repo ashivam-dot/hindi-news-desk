@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T13:36:48+00:00",
+ "at": "2026-11-14T13:50:26+00:00",
  "trending": [
   {
    "id": "kh-20261114-Q2283",
@@ -343,9 +343,10 @@
     "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
+    "IN": 6,
     "IN-nation": 13
    },
-   "top_score": 0.24,
+   "top_score": 0.87,
    "top_headlines": [
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
@@ -545,9 +546,9 @@
     "google-news:All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
@@ -588,9 +589,9 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
@@ -615,7 +616,7 @@
     "weekly"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T13:39:40.250395+00:00",
+   "news_at": "2026-11-14T13:52:11.840590+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -654,7 +655,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-14T13:39:40.250395+00:00"
+     "at": "2026-11-14T13:52:11.840590+00:00"
     },
     {
      "title": "Railways approves weekly train service connecting Nepal's Janakpur Dham with Ayodhya",
@@ -685,9 +686,13 @@
     "outlet:Network18",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 17
+   },
+   "top_score": 0.12,
+   "top_headlines": [
+    "Bengaluru-Goa Vande Bharat Express launched by PM Modi; new Indian Railways train starts regular services"
+   ],
    "hindi_owners": [
     "TV9 Network",
     "Network18",
@@ -730,6 +735,43 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
+  },
+  {
+   "qid": null,
+   "title": "2026 Logan Circle shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-13T22:25:00+00:00",
+   "headlines": [
+    "'He was a light' | Those who knew Logan Circle shooting victim James 'Jimmy' Stuart vow to never forget him"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:'He was a light' | Those who knew Logan Circle shooting victim James 'Jimmy' Stuart vow to never forget him"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Logan_Circle_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-14",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261114-Q7916220",
@@ -997,12 +1039,15 @@
    "category_hi": "समाचार",
    "story": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
    "story_keys": [
+    "beat",
     "final",
+    "one",
     "thriller",
+    "title",
     "wicket"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T13:32:27+00:00",
+   "news_at": "2026-11-14T13:41:20+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
@@ -1018,6 +1063,7 @@
     "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
     "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
     "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
+    "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
     "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller"
    ],
    "hindi_headlines": [],
@@ -1039,6 +1085,16 @@
      "at": "2026-11-14T08:01:23+00:00"
     },
     {
+     "title": "Tricolour, celebrations and payback as India stun Pakistan in Asia Cup U19 final",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-final-mohit-ulva-sensational-chase-3039014-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:41:20+00:00"
+    },
+    {
      "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
      "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
      "outlet": "The Hindu",
@@ -1046,7 +1102,17 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T13:32:27+00:00"
+     "at": "2026-11-14T13:40:36+00:00"
+    },
+    {
+     "title": "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/mohit-ulva-stars-as-india-u19-chase-down-338-in-last-ball-thriller-to-beat-pakistan-by-one-wicket-and-clinch-asia-cup-title/articleshow/135834187.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:35:39+00:00"
     },
     {
      "title": "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
@@ -1086,9 +1152,9 @@
     "outlet:The Hindu Group"
    ],
    "top": {
-    "IN": 4
+    "IN": 5
    },
-   "top_score": 0.85,
+   "top_score": 0.8,
    "top_headlines": [
     "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
    ],
@@ -1762,9 +1828,10 @@
     "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
+    "IN": 6,
     "IN-nation": 13
    },
-   "top_score": 0.24,
+   "top_score": 0.87,
    "top_headlines": [
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
@@ -2086,117 +2153,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q140568762",
-   "qid": "Q140568762",
-   "title": "2027 AFC U-17 Asian Cup",
-   "name": "2027 AFC U-17 Asian Cup",
-   "phrase": "U Asia Cup",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
-   "story_keys": [
-    "final",
-    "thriller",
-    "wicket"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T13:32:27+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Al Jazeera Media Network",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
-    "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
-    "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
-    "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
-    "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
-     "url": "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T08:01:23+00:00"
-    },
-    {
-     "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
-     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:32:27+00:00"
-    },
-    {
-     "title": "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-pak-india-win-u19-asia-cup-final-mohit-ulva-epic-comeback-report-3038982-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:28:03+00:00"
-    },
-    {
-     "title": "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
-     "url": "https://www.indiatoday.in/sports/cricket/story/aaryavir-sehwag-fifty-virat-kohli-celebration-ind-vs-pak-u19-asia-cup-final-3038875-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:45:07+00:00"
-    },
-    {
-     "title": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-pakistan-u19-asia-cup-final-live-updates-ind-vs-pak-scorecard-sehwag-dravid-playing-xi-live-streaming-weather-oman-latest-news/liveblog/135820635.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:16:20+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Al Jazeera Media Network",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
-   ],
-   "top": {
-    "IN": 4
-   },
-   "top_score": 0.85,
-   "top_headlines": [
-    "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
    "fame": 125000,
@@ -2250,7 +2206,7 @@
     "weekly"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T13:39:40.250395+00:00",
+   "news_at": "2026-11-14T13:52:11.840590+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -2289,7 +2245,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-14T13:39:40.250395+00:00"
+     "at": "2026-11-14T13:52:11.840590+00:00"
     },
     {
      "title": "Railways approves weekly train service connecting Nepal's Janakpur Dham with Ayodhya",
@@ -2320,14 +2276,153 @@
     "outlet:Network18",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 17
+   },
+   "top_score": 0.12,
+   "top_headlines": [
+    "Bengaluru-Goa Vande Bharat Express launched by PM Modi; new Indian Railways train starts regular services"
+   ],
    "hindi_owners": [
     "TV9 Network",
     "Network18",
     "NDTV"
    ],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q140568762",
+   "qid": "Q140568762",
+   "title": "2027 AFC U-17 Asian Cup",
+   "name": "2027 AFC U-17 Asian Cup",
+   "phrase": "U Asia Cup",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
+   "story_keys": [
+    "beat",
+    "final",
+    "one",
+    "thriller",
+    "title",
+    "wicket"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T13:41:20+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Al Jazeera Media Network",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
+    "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
+    "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
+    "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
+    "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
+    "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
+     "url": "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T08:01:23+00:00"
+    },
+    {
+     "title": "Tricolour, celebrations and payback as India stun Pakistan in Asia Cup U19 final",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-final-mohit-ulva-sensational-chase-3039014-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:41:20+00:00"
+    },
+    {
+     "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
+     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:40:36+00:00"
+    },
+    {
+     "title": "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/mohit-ulva-stars-as-india-u19-chase-down-338-in-last-ball-thriller-to-beat-pakistan-by-one-wicket-and-clinch-asia-cup-title/articleshow/135834187.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:35:39+00:00"
+    },
+    {
+     "title": "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-pak-india-win-u19-asia-cup-final-mohit-ulva-epic-comeback-report-3038982-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:28:03+00:00"
+    },
+    {
+     "title": "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
+     "url": "https://www.indiatoday.in/sports/cricket/story/aaryavir-sehwag-fifty-virat-kohli-celebration-ind-vs-pak-u19-asia-cup-final-3038875-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T10:45:07+00:00"
+    },
+    {
+     "title": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-pakistan-u19-asia-cup-final-live-updates-ind-vs-pak-scorecard-sehwag-dravid-playing-xi-live-streaming-weather-oman-latest-news/liveblog/135820635.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:16:20+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Al Jazeera Media Network",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group"
+   ],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
+   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
@@ -2438,6 +2533,43 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "qid": null,
+   "title": "2026 Logan Circle shooting",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 125000,
+   "news_at": "2026-11-13T22:25:00+00:00",
+   "headlines": [
+    "'He was a light' | Those who knew Logan Circle shooting victim James 'Jimmy' Stuart vow to never forget him"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:'He was a light' | Those who knew Logan Circle shooting victim James 'Jimmy' Stuart vow to never forget him"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wp-2026_Logan_Circle_shooting",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-11-14",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261114-Q2283",
@@ -3208,7 +3340,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
+   "story": "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
    "story_keys": [
     "assassination",
     "become",
@@ -3231,11 +3363,11 @@
     "reveal"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T12:13:51+00:00",
+   "news_at": "2026-11-14T13:50:04+00:00",
    "owners": [
+    "Network18",
     "NDTV",
     "India Today Group",
-    "Network18",
     "HT Media"
    ],
    "fame": 1,
@@ -3243,18 +3375,28 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
     "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
     "From Sonia Gandhi to LK Advani: Political memoirs you won't want to put down",
     "BJP MP Kangana Ranaut Remains Defiant, Posts Another Message Targeting Sonia Gandhi | News18",
     "Ex-CBI director rejects claim on Godhra fire's cause in Sonia Gandhi's memoir",
-    "FIR registered against Kangana Ranaut for ‘highly inflammatory’ social media posts on Gandhi family",
-    "'Mysterious Foreign National': Himachal Police Book BJP MP Kangana Ranaut Over X Post Against Sonia Gandhi"
+    "FIR registered against Kangana Ranaut for ‘highly inflammatory’ social media posts on Gandhi family"
    ],
    "hindi_headlines": [],
    "region": "india",
    "india_link": true,
    "label_hi": "सोनिया गाँधी",
    "reports": [
+    {
+     "title": "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
+     "url": "https://www.news18.com/india/rakesh-asthana-rebuts-sonia-gandhi-remark-on-godhra-train-burning-in-belonging-memoir-creating-doubt-10425873.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:50:04+00:00"
+    },
     {
      "title": "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
      "url": "https://www.ndtv.com/opinion/on-pranab-mukherjee-the-gandhi-family-what-sonia-gandhis-belonging-reveals-12326500#publisher=newsstand",
@@ -3342,7 +3484,7 @@
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
+   "story": "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
    "story_keys": [
     "chicago",
     "columbia",
@@ -3351,11 +3493,11 @@
     "visit"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T12:13:51+00:00",
+   "news_at": "2026-11-14T13:50:04+00:00",
    "owners": [
+    "Network18",
     "NDTV",
     "India Today Group",
-    "Network18",
     "HT Media"
    ],
    "fame": 1,
@@ -3363,18 +3505,28 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
     "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
     "From Sonia Gandhi to LK Advani: Political memoirs you won't want to put down",
     "BJP MP Kangana Ranaut Remains Defiant, Posts Another Message Targeting Sonia Gandhi | News18",
     "Telangana BJP Chief Put Under House Arrest Ahead Of Protest Against Rahul Gandhi’s Visit",
-    "Bharat Summit 2026: BJP Yuva Morcha Protest Rahul Gandhi’s Visit, Workers Detained | News18",
-    "Blinkit sold out, Instagram lit up. Sonia Gandhi's book has people hooked, but why?"
+    "Bharat Summit 2026: BJP Yuva Morcha Protest Rahul Gandhi’s Visit, Workers Detained | News18"
    ],
    "hindi_headlines": [],
    "region": "india",
    "india_link": true,
    "label_hi": "राहुल गाँधी",
    "reports": [
+    {
+     "title": "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
+     "url": "https://www.news18.com/india/rakesh-asthana-rebuts-sonia-gandhi-remark-on-godhra-train-burning-in-belonging-memoir-creating-doubt-10425873.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:50:04+00:00"
+    },
     {
      "title": "Opinion: Sonia Gandhi Writes Of Pranab Mukherjee's PM Ambition. The Story Behind It",
      "url": "https://www.ndtv.com/opinion/on-pranab-mukherjee-the-gandhi-family-what-sonia-gandhis-belonging-reveals-12326500#publisher=newsstand",
@@ -3444,16 +3596,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T07:39:07+00:00"
-    },
-    {
-     "title": "Ex-CBI director rejects claim on Godhra fire's cause in Sonia Gandhi's memoir",
-     "url": "https://www.hindustantimes.com/india-news/excbi-director-rejects-claim-on-godhra-fires-cause-in-sonia-gandhis-memoir-101794638627592.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:24:04+00:00"
     }
    ],
    "via": [
@@ -3557,15 +3699,15 @@
  ],
  "notes": [
   "revisit kh-20261114-Q10218-update: 4 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 1 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1708 headlines from 48 feeds (18 owners), 7 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 10 kh- stories (on): kh-20261114-Q2283, kh-20261114-Q9570, kh-20261114-Q17089931, kh-20261114-Q118125232; dropped: explainer US FAA: no Wikipedia article that can be its centre; explainer Ramayana Lara Dutta: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1711 headlines from 48 feeds (18 owners), 7 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 10 kh- stories (on): kh-20261114-Q2283, kh-20261114-Q9570, kh-20261114-Q17089931, kh-20261114-Q118125232; dropped: explainer SCO / Operation Sindoor Pakistani: no Wikipedia article that can be its centre; explainer US FAA: no Wikipedia article that can be its centre; explainer Ramayana Lara Dutta: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1708,
+  "headlines": 1711,
   "feeds": 48,
   "owners": 18,
   "matched": 7,
@@ -3915,9 +4057,10 @@
     "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
+    "IN": 6,
     "IN-nation": 13
    },
-   "top_score": 0.24,
+   "top_score": 0.87,
    "top_headlines": [
     "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
@@ -4117,9 +4260,9 @@
     "google-news:All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
@@ -4144,7 +4287,7 @@
     "weekly"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T13:39:40.250395+00:00",
+   "news_at": "2026-11-14T13:52:11.840590+00:00",
    "owners": [
     "The Hindu Group",
     "Bennett, Coleman & Co.",
@@ -4183,7 +4326,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-14T13:39:40.250395+00:00"
+     "at": "2026-11-14T13:52:11.840590+00:00"
     },
     {
      "title": "Railways approves weekly train service connecting Nepal's Janakpur Dham with Ayodhya",
@@ -4214,9 +4357,13 @@
     "outlet:Network18",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 17
+   },
+   "top_score": 0.12,
+   "top_headlines": [
+    "Bengaluru-Goa Vande Bharat Express launched by PM Modi; new Indian Railways train starts regular services"
+   ],
    "hindi_owners": [
     "TV9 Network",
     "Network18",
@@ -4429,12 +4576,15 @@
    "category_hi": "समाचार",
    "story": "IND vs PAK, U19 Asia Cup final: India beat Pakistan by 1 wicket in last ball thriller",
    "story_keys": [
+    "beat",
     "final",
+    "one",
     "thriller",
+    "title",
     "wicket"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T13:32:27+00:00",
+   "news_at": "2026-11-14T13:41:20+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "Al Jazeera Media Network",
@@ -4450,6 +4600,7 @@
     "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
     "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
     "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
+    "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
     "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller"
    ],
    "hindi_headlines": [],
@@ -4471,6 +4622,16 @@
      "at": "2026-11-14T08:01:23+00:00"
     },
     {
+     "title": "Tricolour, celebrations and payback as India stun Pakistan in Asia Cup U19 final",
+     "url": "https://www.indiatoday.in/sports/cricket/story/india-vs-pakistan-u19-asia-cup-final-mohit-ulva-sensational-chase-3039014-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:41:20+00:00"
+    },
+    {
      "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
      "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
      "outlet": "The Hindu",
@@ -4478,7 +4639,17 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T13:32:27+00:00"
+     "at": "2026-11-14T13:40:36+00:00"
+    },
+    {
+     "title": "Mohit stars as India U19 chase down 338 to beat Pakistan by one wicket and clinch Asia Cup title",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/mohit-ulva-stars-as-india-u19-chase-down-338-in-last-ball-thriller-to-beat-pakistan-by-one-wicket-and-clinch-asia-cup-title/articleshow/135834187.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:35:39+00:00"
     },
     {
      "title": "U19 Asia Cup final turns into an epic, India pull last-ball heist to win title",
@@ -4518,9 +4689,9 @@
     "outlet:The Hindu Group"
    ],
    "top": {
-    "IN": 4
+    "IN": 5
    },
-   "top_score": 0.85,
+   "top_score": 0.8,
    "top_headlines": [
     "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
    ],
