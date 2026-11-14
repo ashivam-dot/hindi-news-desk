@@ -1,5 +1,5 @@
 {
- "at": "2026-11-13T23:44:04+00:00",
+ "at": "2026-11-14T00:01:30+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -433,9 +433,9 @@
     "google-news:Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 6
+    "IN": 5
    },
-   "top_score": 0.75,
+   "top_score": 0.8,
    "top_headlines": [
     "Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
@@ -468,10 +468,11 @@
    "owners": [
     "The Hindu Group",
     "HT Media",
-    "India Today Group"
+    "India Today Group",
+    "ABP Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -481,9 +482,10 @@
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
    ],
    "hindi_headlines": [
+    "U19 एशिया कप फाइनल में भारत-पाकिस्तान की टक्कर, जानें LIVE स्ट्रीमिंग डिटेल्स",
     "IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -535,6 +537,7 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:India Today Group",
+    "outlet:ABP Group",
     "google-news:IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
    "top": {},
@@ -667,35 +670,92 @@
    "lane": "other"
   },
   {
-   "qid": "Q5213677",
-   "title": "Dan Hicks (sportscaster)",
-   "fame": 157094,
-   "views": 157094,
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "SpaceX Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+   "story_keys": [
+    "booster",
+    "double-catch"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:01:01+00:00",
+   "owners": [
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "BBC"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
+   "headlines": [
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "Setback for SpaceX Starship rocket's double-catch test",
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T00:01:01+00:00"
+    },
+    {
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:13:30+00:00"
+    },
+    {
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:11:01+00:00"
+    }
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5213677",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "via": [
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q16224322",
@@ -722,11 +782,12 @@
     "The Hindu Group",
     "India Today Group",
     "TV9 Network",
+    "ABP Group",
     "Network18",
     "Amar Ujala"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 175000,
+   "news": 175000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -740,9 +801,9 @@
     "मैट हेनरी ने किया 0 पर ढेर, फिर भी विराट कोहली ने उन्हें दिया ये खास गिफ्ट",
     "मैट हेनरी ने लगाई रिकॉर्ड्स की झड़ी, 1 रन से बचा टीम इंड‍िया का ये शर्मनाक रिकॉर्ड",
     "भारत को राहत, पांचवें ODI से मैट हेनरी बाहर, सीरीज कब्जाने का मौका",
-    "Video: बे-ओवल मैदान पर 6 विकेट लेने वाले मैट हेनरी को विराट कोहली ने दिया स्पेशल ईनाम"
+    "भारत के खिलाफ सबसे ज्यादा 5 विकेट हॉल... खास लिस्ट में शामिल हुए मैट हेनरी"
    ],
-   "hindi_news": 11,
+   "hindi_news": 13,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -795,6 +856,7 @@
     "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:Network18",
     "outlet:Amar Ujala"
    ],
@@ -806,6 +868,37 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "qid": "Q5213677",
+   "title": "Dan Hicks (sportscaster)",
+   "fame": 157094,
+   "views": 157094,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5213677",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   },
   {
    "qid": "Q315090",
@@ -1031,7 +1124,7 @@
    "top_score": 1.2,
    "top_headlines": [
     "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "Truck and bus collision in India's Assam kills at least 23 people"
+    "At least 24 killed after bus collides with truck near Kaziranga National Park"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1118,6 +1211,90 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:04:22.215700+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T00:04:22.215700+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -1298,209 +1475,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261114-Q1494",
-   "qid": "Q1494",
-   "title": "Mississippi",
-   "name": "Mississippi",
-   "phrase": "Mississippi",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tanker collides with cruise ship on Mississippi in New Orleans",
-   "story_keys": [
-    "collide",
-    "cruise",
-    "ship",
-    "tanker"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:25:40+00:00",
-   "owners": [
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tanker collides with cruise ship on Mississippi in New Orleans",
-    "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-    "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मिसिसिप्पी",
-   "reports": [
-    {
-     "title": "Tanker collides with cruise ship on Mississippi in New Orleans",
-     "url": "https://www.dw.com/en/tanker-collides-with-cruise-ship-on-mississippi-in-new-orleans/a-79945080?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T21:31:00+00:00"
-    },
-    {
-     "title": "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:25:40+00:00"
-    },
-    {
-     "title": "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-     "url": "https://www.ndtv.com/world-news/tanker-collides-with-cruise-ship-on-mississippi-river-in-us-rescue-ops-on-12324453#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T20:52:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "New Orleans river cruise boat partially sinks after tanker collision, 130 aboard"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q335357",
-   "qid": "Q335357",
-   "title": "Federal Aviation Administration",
-   "name": "Federal Aviation Administration",
-   "phrase": "FAA",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-   "story_keys": [
-    "flight",
-    "ground",
-    "nationwide",
-    "stop"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:01:06+00:00",
-   "owners": [
-    "Al Jazeera Media Network",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-    "FAA grounds US flights nationwide after ‘communication issue’",
-    "FAA issues US national ground stop on all flights"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "FAA issues US national ground stop on all flights",
-     "url": "https://www.dw.com/en/faa-issues-us-national-ground-stop-on-all-flights/a-79945062?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T22:57:00+00:00"
-    },
-    {
-     "title": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-     "url": "https://www.theguardian.com/world/2026/nov/13/faa-nationwide-ground-stop-flights",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:01:06+00:00"
-    },
-    {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
-     "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T21:32:08+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q141921562",
-   "title": "Salvadoran military intervention in Haiti",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-11-13T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141921562",
-   "kind": "incident",
-   "category": "conflict",
-   "date": "2026-10-21",
-   "coords": null,
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
   },
   {
    "qid": "Q4795757",
@@ -1955,11 +1929,11 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q116992476",
-   "title": "Jesús de Miguel",
-   "fame": 8198,
-   "views": 8198,
-   "traffic": 0,
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 300,
+   "views": 0,
+   "traffic": 300,
    "news": 0,
    "news_at": null,
    "headlines": [],
@@ -1967,17 +1941,25 @@
    "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
+   "geos": [
+    "GB"
+   ],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-12"
+    "google-trends-GB:pacers vs knicks",
+    "google-trends-GB:robert de niro"
    ],
    "owners": [],
    "reports": [],
-   "id": "wk-Q116992476",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-03",
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.63897,
+    -73.95383
+   ],
+   "has_coords": true,
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -2249,9 +2231,9 @@
     "google-news:Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 6
+    "IN": 5
    },
-   "top_score": 0.75,
+   "top_score": 0.8,
    "top_headlines": [
     "Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
@@ -2361,7 +2343,7 @@
    "top_score": 1.2,
    "top_headlines": [
     "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "Truck and bus collision in India's Assam kills at least 23 people"
+    "At least 24 killed after bus collides with truck near Kaziranga National Park"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2627,37 +2609,6 @@
    "lane": "other"
   },
   {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 374893,
-   "views": 374893,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "id": "kh-20261114-Q16224322",
    "qid": "Q16224322",
    "title": "Matt Henry (cricketer)",
@@ -2682,11 +2633,12 @@
     "The Hindu Group",
     "India Today Group",
     "TV9 Network",
+    "ABP Group",
     "Network18",
     "Amar Ujala"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 175000,
+   "news": 175000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2700,9 +2652,9 @@
     "मैट हेनरी ने किया 0 पर ढेर, फिर भी विराट कोहली ने उन्हें दिया ये खास गिफ्ट",
     "मैट हेनरी ने लगाई रिकॉर्ड्स की झड़ी, 1 रन से बचा टीम इंड‍िया का ये शर्मनाक रिकॉर्ड",
     "भारत को राहत, पांचवें ODI से मैट हेनरी बाहर, सीरीज कब्जाने का मौका",
-    "Video: बे-ओवल मैदान पर 6 विकेट लेने वाले मैट हेनरी को विराट कोहली ने दिया स्पेशल ईनाम"
+    "भारत के खिलाफ सबसे ज्यादा 5 विकेट हॉल... खास लिस्ट में शामिल हुए मैट हेनरी"
    ],
-   "hindi_news": 11,
+   "hindi_news": 13,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -2755,6 +2707,7 @@
     "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:Network18",
     "outlet:Amar Ujala"
    ],
@@ -2766,6 +2719,125 @@
    ],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 374893,
+   "views": 374893,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "SpaceX Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+   "story_keys": [
+    "booster",
+    "double-catch"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:01:01+00:00",
+   "owners": [
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "BBC"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "Setback for SpaceX Starship rocket's double-catch test",
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T00:01:01+00:00"
+    },
+    {
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:13:30+00:00"
+    },
+    {
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:11:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q80338",
@@ -2861,94 +2933,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q1494",
-   "qid": "Q1494",
-   "title": "Mississippi",
-   "name": "Mississippi",
-   "phrase": "Mississippi",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tanker collides with cruise ship on Mississippi in New Orleans",
-   "story_keys": [
-    "collide",
-    "cruise",
-    "ship",
-    "tanker"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:25:40+00:00",
-   "owners": [
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tanker collides with cruise ship on Mississippi in New Orleans",
-    "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-    "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मिसिसिप्पी",
-   "reports": [
-    {
-     "title": "Tanker collides with cruise ship on Mississippi in New Orleans",
-     "url": "https://www.dw.com/en/tanker-collides-with-cruise-ship-on-mississippi-in-new-orleans/a-79945080?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T21:31:00+00:00"
-    },
-    {
-     "title": "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:25:40+00:00"
-    },
-    {
-     "title": "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-     "url": "https://www.ndtv.com/world-news/tanker-collides-with-cruise-ship-on-mississippi-river-in-us-rescue-ops-on-12324453#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T20:52:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "New Orleans river cruise boat partially sinks after tanker collision, 130 aboard"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 157094,
@@ -2978,6 +2962,90 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:04:22.215700+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T00:04:22.215700+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "qid": "Q29879031",
@@ -3127,37 +3195,6 @@
    "lane": "paisa"
   },
   {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 142036,
-   "views": 142036,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-12"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "id": "kh-20261114-Q2866609",
    "qid": "Q2866609",
    "title": "Asia Cup",
@@ -3180,10 +3217,11 @@
    "owners": [
     "The Hindu Group",
     "HT Media",
-    "India Today Group"
+    "India Today Group",
+    "ABP Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3193,9 +3231,10 @@
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
    ],
    "hindi_headlines": [
+    "U19 एशिया कप फाइनल में भारत-पाकिस्तान की टक्कर, जानें LIVE स्ट्रीमिंग डिटेल्स",
     "IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3247,6 +3286,7 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:India Today Group",
+    "outlet:ABP Group",
     "google-news:IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
    "top": {},
@@ -3257,88 +3297,35 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q335357",
-   "qid": "Q335357",
-   "title": "Federal Aviation Administration",
-   "name": "Federal Aviation Administration",
-   "phrase": "FAA",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-   "story_keys": [
-    "flight",
-    "ground",
-    "nationwide",
-    "stop"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:01:06+00:00",
-   "owners": [
-    "Al Jazeera Media Network",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
+   "qid": "Q315090",
+   "title": "Stacy Keach",
+   "fame": 142036,
+   "views": 142036,
    "traffic": 0,
-   "headlines": [
-    "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-    "FAA grounds US flights nationwide after ‘communication issue’",
-    "FAA issues US national ground stop on all flights"
-   ],
-   "hindi_headlines": [],
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
    "hindi_news": 0,
-   "geos": [],
+   "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "abroad": true,
+   "geos": [],
    "label_hi": null,
-   "reports": [
-    {
-     "title": "FAA issues US national ground stop on all flights",
-     "url": "https://www.dw.com/en/faa-issues-us-national-ground-stop-on-all-flights/a-79945062?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T22:57:00+00:00"
-    },
-    {
-     "title": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-     "url": "https://www.theguardian.com/world/2026/nov/13/faa-nationwide-ground-stop-flights",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:01:06+00:00"
-    },
-    {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
-     "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T21:32:08+00:00"
-    }
-   ],
    "via": [
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
+    "wikipedia-top-2026-11-12"
    ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "other"
+   "lane": "obituary"
   },
   {
    "id": "kh-20261114-Q7143348",
@@ -4355,7 +4342,7 @@
  ],
  "notes": [
   "revisit kh-20261114-Q10218-update: 4 owners' new reports on Rahul Gandhi (1028 views before); revisit kh-20261114-Q37293-update: 4 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 3 owners' new reports on Sonia Gandhi (807 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1662 headlines from 48 feeds (18 owners), 20 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
+  "outlets: 1648 headlines from 47 feeds (17 owners), 22 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261113-assam-accident",
   "explainers: 12 kh- stories (on): kh-20261114-Q3524804, kh-20261114-Q182477, kh-20261114-Q2283, kh-20261114-Q2866609; dropped: explainer Shreyas Iyer: fewer than 3 owners' headlines name it and the story; explainer November Snowfall / Koti Deepotsavam: no Wikipedia article that can be its centre; explainer Ramayana As: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
@@ -4364,10 +4351,10 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1662,
-  "feeds": 48,
-  "owners": 18,
-  "matched": 20,
+  "headlines": 1648,
+  "feeds": 47,
+  "owners": 17,
+  "matched": 22,
   "corroborated": 14
  },
  "emerging": [
@@ -4471,7 +4458,7 @@
    "top_score": 1.2,
    "top_headlines": [
     "Students among 24 dead in bus-truck collision in Assam’s Kaziranga",
-    "Truck and bus collision in India's Assam kills at least 23 people"
+    "At least 24 killed after bus collides with truck near Kaziranga National Park"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -4880,9 +4867,9 @@
     "google-news:Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
    "top": {
-    "IN": 6
+    "IN": 5
    },
-   "top_score": 0.75,
+   "top_score": 0.8,
    "top_headlines": [
     "Microsoft Outage LIVE: No ETA yet on full recovery, company says"
    ],
@@ -4915,10 +4902,11 @@
    "owners": [
     "The Hindu Group",
     "HT Media",
-    "India Today Group"
+    "India Today Group",
+    "ABP Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4928,9 +4916,10 @@
     "India seek revenge against Pakistan in U19 Asia Cup final, eye record ninth title"
    ],
    "hindi_headlines": [
+    "U19 एशिया कप फाइनल में भारत-पाकिस्तान की टक्कर, जानें LIVE स्ट्रीमिंग डिटेल्स",
     "IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4982,6 +4971,7 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:India Today Group",
+    "outlet:ABP Group",
     "google-news:IND vs PAK के बीच फिर होगी खिताबी जंग, जानिए कब, कहां और कैसे देख पाएंगे U19 एशिया कप का फाइनल LIVE"
    ],
    "top": {},
@@ -5114,6 +5104,94 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "SpaceX Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+   "story_keys": [
+    "booster",
+    "double-catch"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:01:01+00:00",
+   "owners": [
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "BBC"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "Setback for SpaceX Starship rocket's double-catch test",
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T00:01:01+00:00"
+    },
+    {
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:13:30+00:00"
+    },
+    {
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:11:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "top": {
+    "IN": 17
+   },
+   "top_score": 0.2,
+   "top_headlines": [
+    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261114-Q16224322",
    "qid": "Q16224322",
    "title": "Matt Henry (cricketer)",
@@ -5138,11 +5216,12 @@
     "The Hindu Group",
     "India Today Group",
     "TV9 Network",
+    "ABP Group",
     "Network18",
     "Amar Ujala"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 175000,
+   "news": 175000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -5156,9 +5235,9 @@
     "मैट हेनरी ने किया 0 पर ढेर, फिर भी विराट कोहली ने उन्हें दिया ये खास गिफ्ट",
     "मैट हेनरी ने लगाई रिकॉर्ड्स की झड़ी, 1 रन से बचा टीम इंड‍िया का ये शर्मनाक रिकॉर्ड",
     "भारत को राहत, पांचवें ODI से मैट हेनरी बाहर, सीरीज कब्जाने का मौका",
-    "Video: बे-ओवल मैदान पर 6 विकेट लेने वाले मैट हेनरी को विराट कोहली ने दिया स्पेशल ईनाम"
+    "भारत के खिलाफ सबसे ज्यादा 5 विकेट हॉल... खास लिस्ट में शामिल हुए मैट हेनरी"
    ],
-   "hindi_news": 11,
+   "hindi_news": 13,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -5211,6 +5290,7 @@
     "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:TV9 Network",
+    "outlet:ABP Group",
     "outlet:Network18",
     "outlet:Amar Ujala"
    ],
@@ -5400,6 +5480,90 @@
    "lane": "other"
   },
   {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T00:04:22.215700+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T00:04:22.215700+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
    "id": "kh-20261114-Q124540932",
    "qid": "Q124540932",
    "title": "Mahli Beardman",
@@ -5577,178 +5741,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261114-Q1494",
-   "qid": "Q1494",
-   "title": "Mississippi",
-   "name": "Mississippi",
-   "phrase": "Mississippi",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tanker collides with cruise ship on Mississippi in New Orleans",
-   "story_keys": [
-    "collide",
-    "cruise",
-    "ship",
-    "tanker"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:25:40+00:00",
-   "owners": [
-    "NDTV",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tanker collides with cruise ship on Mississippi in New Orleans",
-    "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-    "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "मिसिसिप्पी",
-   "reports": [
-    {
-     "title": "Tanker collides with cruise ship on Mississippi in New Orleans",
-     "url": "https://www.dw.com/en/tanker-collides-with-cruise-ship-on-mississippi-in-new-orleans/a-79945080?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T21:31:00+00:00"
-    },
-    {
-     "title": "‘Miracle on the Mississippi’: all accounted for after tanker collides with cruise ship in New Orleans",
-     "url": "https://www.theguardian.com/us-news/2026/nov/13/mississippi-river-crash-new-orleans",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:25:40+00:00"
-    },
-    {
-     "title": "Tanker Collides With Cruise Ship On Mississippi River In US, Rescue Ops On",
-     "url": "https://www.ndtv.com/world-news/tanker-collides-with-cruise-ship-on-mississippi-river-in-us-rescue-ops-on-12324453#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T20:52:18+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "New Orleans river cruise boat partially sinks after tanker collision, 130 aboard"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q335357",
-   "qid": "Q335357",
-   "title": "Federal Aviation Administration",
-   "name": "Federal Aviation Administration",
-   "phrase": "FAA",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-   "story_keys": [
-    "flight",
-    "ground",
-    "nationwide",
-    "stop"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T23:01:06+00:00",
-   "owners": [
-    "Al Jazeera Media Network",
-    "Deutsche Welle",
-    "Guardian Media Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-    "FAA grounds US flights nationwide after ‘communication issue’",
-    "FAA issues US national ground stop on all flights"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "FAA issues US national ground stop on all flights",
-     "url": "https://www.dw.com/en/faa-issues-us-national-ground-stop-on-all-flights/a-79945062?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-13T22:57:00+00:00"
-    },
-    {
-     "title": "Nationwide FAA ground stop: nearly 11,000 flights delayed or canceled at airports across the US",
-     "url": "https://www.theguardian.com/world/2026/nov/13/faa-nationwide-ground-stop-flights",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T23:01:06+00:00"
-    },
-    {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
-     "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T21:32:08+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Al Jazeera Media Network",
-    "outlet:Deutsche Welle",
-    "outlet:Guardian Media Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   }
  ]
 }
