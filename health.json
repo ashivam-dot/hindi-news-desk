@@ -1,21 +1,20 @@
 {
- "at": "2026-11-14T10:48:59+00:00",
+ "at": "2026-11-14T11:02:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 27 candidates from 25 trending",
-  "revisit kh-20261114-Q10218-update: 5 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit kh-20261114-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261114-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1669 headlines from 48 feeds (18 owners), 10 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 10 kh- stories (on): kh-20261114-Q80338, kh-20261114-Q182477, kh-20261114-Q130390376, kh-20261114-Q335357; dropped: explainer Sonia Gandhi: fewer than 3 owners' headlines name it and the story; explainer Summit Economist Joseph / Trump’s US: no Wikipedia article that can be its centre; explainer U Asia Cup: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 26 candidates from 24 trending",
+  "revisit kh-20261114-Q10218-update: 5 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit kh-20261114-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261114-Q163225-update: 5 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
+  "outlets: 1720 headlines from 50 feeds (19 owners), 10 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261114-Q182477, kh-20261114-Q130390376, kh-20261114-Q335357, kh-20261114-Q17089931; dropped: explainer October: no Wikipedia article that can be its centre; explainer Sonia Gandhi: fewer than 3 owners' headlines name it and the story; explainer Summit Economist Joseph / Trump’s US: no Wikipedia article that can be its centre",
   "hold kh-20261114-Q130390376: already 3 Shorts today (IST)",
-  "hold kh-20261114-Q80338: already 3 Shorts today (IST)",
   "hold kh-20261114-Q17089931: already 3 Shorts today (IST)",
   "drop wk-Q29879031: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261114-Q15864307: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261114-Q182477: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q29879031, kh-20261114-Q10218-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261114-Q62833385, kh-20261114-Q7747, kh-20261114-Q7747-update",
+  "drop kh-20261114-Q118125232: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q29879031, kh-20261114-Q10218-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261114-Q62833385, kh-20261114-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
