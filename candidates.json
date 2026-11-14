@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T04:33:31+00:00",
+ "at": "2026-11-14T04:48:32+00:00",
  "trending": [
   {
    "id": "kh-20261114-Q335357",
@@ -24,7 +24,7 @@
     "stop"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-14T03:47:23+00:00",
+   "news_at": "2026-11-14T03:32:07+00:00",
    "owners": [
     "Al Jazeera Media Network",
     "HT Media",
@@ -104,16 +104,6 @@
      "at": "2026-11-13T21:32:08+00:00"
     },
     {
-     "title": "Microsoft has a message on the FAA ground stop that delayed 10,000+ flights in the US",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-denies-role-in-faa-ground-stop-that-caused-10000-flight-delays-and-6600-cancellations-company-says-we-have-no-indication-that-/articleshow/135821753.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:23+00:00"
-    },
-    {
      "title": "FAA flight ground stop disrupts sports travel",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
      "outlet": "The Economic Times",
@@ -132,6 +122,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US flight chaos: What caused FAA outage that grounded departures nationwide",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-flight-chaos-what-caused-faa-communication-outage-that-grounded-departures-nationwide/articleshow/135820048.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:43:32+00:00"
     }
    ],
    "via": [
@@ -144,9 +144,9 @@
     "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
    "top": {
-    "IN": 1
+    "IN": 4
    },
-   "top_score": 1.0,
+   "top_score": 0.85,
    "top_headlines": [
     "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
@@ -246,9 +246,9 @@
     "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
    ],
    "top": {
-    "IN": 4
+    "IN": 11
    },
-   "top_score": 0.85,
+   "top_score": 0.5,
    "top_headlines": [
     "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
    ],
@@ -350,9 +350,9 @@
     "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
    "top": {
-    "IN": 5
+    "IN": 3
    },
-   "top_score": 0.8,
+   "top_score": 0.9,
    "top_headlines": [
     "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
@@ -363,6 +363,49 @@
    "lane": "other"
   },
   {
+   "qid": "Q142149760",
+   "title": "2026 New Orleans ship collision",
+   "fame": 180000,
+   "views": 0,
+   "traffic": 5000,
+   "news": 125000,
+   "news_at": "2026-11-14T02:00:05+00:00",
+   "headlines": [
+    "River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:new orleans cruise ship collision",
+    "wikipedia-current-events-2026-11-13",
+    "google-news:River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142149760",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-13",
+   "coords": [
+    29.93694444,
+    -90.06083333
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
+  },
+  {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
    "fame": 175000,
@@ -371,7 +414,7 @@
    "news": 175000,
    "news_at": "2026-11-14T03:51:17+00:00",
    "headlines": [
-    "Former Madras High Court Judge Justice CS Karnan Passes Away",
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
     "Justice Karnan’s incident brought judicial misconduct to the forefront",
     "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
@@ -384,7 +427,7 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:Former Madras High Court Judge Justice CS Karnan Passes Away",
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
     "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
     "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
     "outlet:The Hindu Group",
@@ -579,15 +622,95 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "SpaceX's Super Heavy rocket fails catch attempt, malfunctions and explodes on return"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T04:49:55.483679+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T04:49:55.483679+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -926,45 +1049,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 55000,
-   "views": 0,
-   "traffic": 5000,
-   "news": 0,
-   "news_at": "2026-11-14T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:new orleans cruise ship collision",
-    "wikipedia-current-events-2026-11-13"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
   },
   {
    "qid": "Q315090",
@@ -1387,7 +1471,7 @@
    "news": 175000,
    "news_at": "2026-11-14T03:51:17+00:00",
    "headlines": [
-    "Former Madras High Court Judge Justice CS Karnan Passes Away",
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
     "Justice Karnan’s incident brought judicial misconduct to the forefront",
     "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
@@ -1400,7 +1484,7 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:Former Madras High Court Judge Justice CS Karnan Passes Away",
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
     "google-news:Justice Karnan’s incident brought judicial misconduct to the forefront",
     "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
     "outlet:The Hindu Group",
@@ -1442,110 +1526,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261114-Q7747",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-   "story_keys": [
-    "historic",
-    "hold",
-    "meeting",
-    "next",
-    "trilateral"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T03:06:18+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-    "Trump, Putin, Xi to hold first-ever trilateral meeting in China next week",
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "Trump, Putin, Xi to hold first-ever trilateral meeting in China next week",
-     "url": "https://www.indiatoday.in/world/story/trump-putin-xi-jinping-trilateral-meeting-china-nuclear-arms-control-iran-war-3038653-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:06:18+00:00"
-    },
-    {
-     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
-     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:32:25+00:00"
-    },
-    {
-     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
-     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T01:52:39+00:00"
-    },
-    {
-     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
-     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T00:26:37+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
-   ],
-   "top": {
-    "IN": 4
-   },
-   "top_score": 0.85,
-   "top_headlines": [
-    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261114-Q182477",
@@ -1641,9 +1621,9 @@
     "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
    "top": {
-    "IN": 5
+    "IN": 3
    },
-   "top_score": 0.8,
+   "top_score": 0.9,
    "top_headlines": [
     "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
@@ -1652,6 +1632,153 @@
    ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q7747",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Putin",
+   "person": true,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+   "story_keys": [
+    "historic",
+    "hold",
+    "meeting",
+    "next",
+    "trilateral"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T03:06:18+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "NDTV",
+    "India Today Group"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+    "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+    "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+    "Trump, Putin, Xi to hold first-ever trilateral meeting in China next week",
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "व्लादिमीर पुतिन",
+   "reports": [
+    {
+     "title": "Trump, Putin, Xi to hold first-ever trilateral meeting in China next week",
+     "url": "https://www.indiatoday.in/world/story/trump-putin-xi-jinping-trilateral-meeting-china-nuclear-arms-control-iran-war-3038653-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T03:06:18+00:00"
+    },
+    {
+     "title": "Trump, Xi, Putin To Hold Historic Meeting In China Next Week",
+     "url": "https://www.ndtv.com/world-news/donald-trump-xi-jinping-vladimir-putin-to-meet-next-week-at-apec-summit-in-china-12324669#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:32:25+00:00"
+    },
+    {
+     "title": "In a first, Trump to hold historic trilateral meeting with Xi, Putin in China next week | All you need to know",
+     "url": "https://www.livemint.com/news/us-news/in-a-first-trump-to-hold-historic-trilateral-meeting-with-xi-putin-in-china-next-week-all-you-need-to-know-11794620781785.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:52:39+00:00"
+    },
+    {
+     "title": "Trump, Xi and Putin set for unprecedented trilateral meeting in China",
+     "url": "https://timesofindia.indiatimes.com/world/us/trump-xi-and-putin-set-for-unprecedented-trilateral-meeting-in-china/articleshow/135819647.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T00:26:37+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:NDTV",
+    "outlet:India Today Group",
+    "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "qid": "Q142149760",
+   "title": "2026 New Orleans ship collision",
+   "fame": 180000,
+   "views": 0,
+   "traffic": 5000,
+   "news": 125000,
+   "news_at": "2026-11-14T02:00:05+00:00",
+   "headlines": [
+    "River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:new orleans cruise ship collision",
+    "wikipedia-current-events-2026-11-13",
+    "google-news:River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142149760",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-13",
+   "coords": [
+    29.93694444,
+    -90.06083333
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -1825,45 +1952,6 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 55000,
-   "views": 0,
-   "traffic": 5000,
-   "news": 0,
-   "news_at": "2026-11-14T00:00:00+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "GB"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-trends-GB:new orleans cruise ship collision",
-    "wikipedia-current-events-2026-11-13"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
-  },
-  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 107505,
@@ -1887,6 +1975,121 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T04:49:55.483679+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T04:49:55.483679+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 105784,
+   "views": 105784,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1984,47 +2187,12 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "SpaceX's Super Heavy rocket fails catch attempt, malfunctions and explodes on return"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q4772274",
-   "title": "Anthony Clark (actor)",
-   "fame": 105784,
-   "views": 105784,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-13"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q4772274",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q1494",
@@ -2520,19 +2688,19 @@
   }
  ],
  "notes": [
-  "outlets: 1579 headlines from 46 feeds (17 owners), 12 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q7747, kh-20261114-Q182477, kh-20261114-Q62833385; dropped: explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story; explainer \"PM Modi inaugurates India's first 8K-resolution LED Dome Pla\": no name to tell it by"
+  "outlets: 1578 headlines from 46 feeds (17 owners), 10 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q7747, kh-20261114-Q182477, kh-20261114-Q62833385; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story; explainer \"PM Modi inaugurates India's first 8K-resolution LED Dome Pla\": no name to tell it by"
  ],
  "trend_errors": [
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1579,
+  "headlines": 1578,
   "feeds": 46,
   "owners": 17,
-  "matched": 12,
-  "corroborated": 9
+  "matched": 10,
+  "corroborated": 10
  },
  "emerging": [],
  "explainers": [
@@ -2559,7 +2727,7 @@
     "stop"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-14T03:47:23+00:00",
+   "news_at": "2026-11-14T03:32:07+00:00",
    "owners": [
     "Al Jazeera Media Network",
     "HT Media",
@@ -2639,16 +2807,6 @@
      "at": "2026-11-13T21:32:08+00:00"
     },
     {
-     "title": "Microsoft has a message on the FAA ground stop that delayed 10,000+ flights in the US",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-denies-role-in-faa-ground-stop-that-caused-10000-flight-delays-and-6600-cancellations-company-says-we-have-no-indication-that-/articleshow/135821753.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T03:47:23+00:00"
-    },
-    {
      "title": "FAA flight ground stop disrupts sports travel",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
      "outlet": "The Economic Times",
@@ -2667,6 +2825,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US flight chaos: What caused FAA outage that grounded departures nationwide",
+     "url": "https://timesofindia.indiatimes.com/world/us/us-flight-chaos-what-caused-faa-communication-outage-that-grounded-departures-nationwide/articleshow/135820048.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:43:32+00:00"
     }
    ],
    "via": [
@@ -2679,9 +2847,9 @@
     "google-news:U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
    "top": {
-    "IN": 1
+    "IN": 4
    },
-   "top_score": 1.0,
+   "top_score": 0.85,
    "top_headlines": [
     "U.S. FAA ground stop LIVE updates: Flights resume as hours-long halt lifted; Trump admin. blames ‘overloaded' systems"
    ],
@@ -2781,9 +2949,9 @@
     "google-news:Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
    ],
    "top": {
-    "IN": 4
+    "IN": 11
    },
-   "top_score": 0.85,
+   "top_score": 0.5,
    "top_headlines": [
     "Trump, Xi and Putin plan unprecedented joint meeting on sidelines of APEC in China: officials"
    ],
@@ -2885,9 +3053,9 @@
     "google-news:Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
    "top": {
-    "IN": 5
+    "IN": 3
    },
-   "top_score": 0.8,
+   "top_score": 0.9,
    "top_headlines": [
     "Ex-Nvidia CEO misled top lawyer on affair with Chinese businesswoman, sources say"
    ],
@@ -2987,15 +3155,95 @@
     "outlet:BBC",
     "outlet:Deutsche Welle"
    ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "SpaceX's Super Heavy rocket fails catch attempt, malfunctions and explodes on return"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q107072390",
+   "qid": "Q107072390",
+   "title": "Lavi Fair",
+   "name": "Lavi Fair",
+   "phrase": "Rampur’s Lavi Fair",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+   "story_keys": [
+    "international",
+    "trade"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T04:49:55.483679+00:00",
+   "owners": [
+    "The Hindu Group",
+    "HT Media",
+    "Government of India"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+    "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+    "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "लावी मेला",
+   "reports": [
+    {
+     "title": "Union Minister of Commerce and Industry Shri Piyush Goyal inaugurates 45th India International Trade Fair 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2336069",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-14T04:49:55.483679+00:00"
+    },
+    {
+     "title": "Delhi Traffic Police warns of congestion on Mathura Road, Purana Qila Road during India International Trade Fair",
+     "url": "https://www.hindustantimes.com/india-news/delhi-traffic-police-warns-of-congestion-on-mathura-road-purana-qila-road-during-india-international-trade-fair-november-14-to-27-101794566725830.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T13:09:06+00:00"
+    },
+    {
+     "title": "Rampur’s Lavi Fair: Storytelling through 300 years of Himalayan trade and tradition",
+     "url": "https://www.thehindu.com/society/lavi-fair-rampur-himachal-pradesh-story/article71660853.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:03:25+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:Government of India"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
