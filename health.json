@@ -1,29 +1,20 @@
 {
- "at": "2026-11-14T04:03:32+00:00",
+ "at": "2026-11-14T04:33:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 149 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.122, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.235, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 26 candidates from 25 trending",
-  "revisit kh-20261114-Q10218-update: 2 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit Q9543 (933 views): 0 owners reported new news on Salman Khan since its last Short; revisit kh-20261114-Q163225-update: 3 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1611 headlines from 48 feeds (18 owners), 9 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q2364111, kh-20261114-Q27780754, kh-20261114-Q62833385; dropped: explainer 'Centre extends ban on Zakir Naik’s Islamic Research Foundati': no name to tell it by; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story",
+  "watch: 21 candidates from 24 trending",
+  "outlets: 1579 headlines from 46 feeds (17 owners), 12 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261114-Q335357, kh-20261114-Q7747, kh-20261114-Q182477, kh-20261114-Q62833385; dropped: explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Usman Khawaja: fewer than 3 owners' headlines name it and the story; explainer \"PM Modi inaugurates India's first 8K-resolution LED Dome Pla\": no name to tell it by",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q29879031: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261114-Q80338: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261114-Q305177: a world statement, politics or diplomacy story with no India connection",
-  "drop wk-Q5213677: 64 h old and no longer trending live",
-  "drop kh-20261114-Q944085: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q4772274: 88 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q29879031; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261114-Q944085, kh-20261114-Q7747-update",
-  "published kh-20261114-Q335357: https://www.youtube.com/shorts/EgHKXkk6CKo",
-  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 102 today)"
- ],
- "published": {
-  "video_id": "EgHKXkk6CKo",
-  "url": "https://www.youtube.com/shorts/EgHKXkk6CKo",
-  "youtube_title": "Federal Aviation Administration ने यूएस में उड़ानों से रोक हटाई #shorts #hindinews",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "drop kh-20261114-Q7747: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261114-Q182477: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261114-Q118125232: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261114-Q27780754: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "hold wk-Q142149760: last Short went out 0.2 h ago",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q29879031; x1.2 (economy, jobs, schemes, tech, science, diplomacy): -",
+  "channel: about, playlists done; nothing left to do"
+ ]
 }
