@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-14T16:19:47+00:00. Scored Shorts (views at 24 h): 150. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-14T19:20:54+00:00. Scored Shorts (views at 24 h): 150. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 48 views at 24 h.
 Retention: a typical Short is watched 54.6% through; a group's retention is blended into its lift at 0.5.
@@ -25,14 +25,14 @@ Retention: a typical Short is watched 54.6% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| wk-Q142149760 | 2026-11-14T07:11 | disaster | world | breaking | world | 5 | 5 |  |
+| wk-Q142149760 | 2026-11-14T07:11 | disaster | world | breaking | world | 8 | 5 |  |
 | kh-20261114-Q335357 | 2026-11-14T04:23 | aviation | world | other | world | 2 | 2 |  |
 | kh-20261114-Q2364111 | 2026-11-14T01:52 | weather | world | other | india | 1 | 1 |  |
-| kh-20261113-Q9543-update | 2026-11-13T07:09 | entertainment | india | naam-niyam | india | 155 | 9 | 122 |
-| kh-20261113-Q37293 | 2026-11-13T03:59 | entertainment | world | sensitive | india | 92 | 19 | 75 |
-| kh-20261113-Q7747 | 2026-11-13T01:48 | diplomacy | world | other | world | 218 | 52 | 174 |
-| kh-20261112-Q10218 | 2026-11-12T06:34 | news | india | naam-niyam | india | 1031 | 260 | 911 |
-| kh-20261112-Q163225 | 2026-11-12T04:25 | news | india | naam-niyam | india | 813 | 244 | 797 |
+| kh-20261113-Q9543-update | 2026-11-13T07:09 | entertainment | india | naam-niyam | india | 191 | 9 | 122 |
+| kh-20261113-Q37293 | 2026-11-13T03:59 | entertainment | world | sensitive | india | 104 | 19 | 75 |
+| kh-20261113-Q7747 | 2026-11-13T01:48 | diplomacy | world | other | world | 247 | 52 | 174 |
+| kh-20261112-Q10218 | 2026-11-12T06:34 | news | india | naam-niyam | india | 1033 | 260 | 911 |
+| kh-20261112-Q163225 | 2026-11-12T04:25 | news | india | naam-niyam | india | 816 | 244 | 797 |
 | kh-20261112-Q16909221 | 2026-11-12T01:54 | politics | india | rajneeti | india | 35 | 7 | 34 |
 | kh-20261111-Q37293-update | 2026-11-11T11:08 | entertainment | world | naam-niyam | india | 999 | 251 | 923 |
 | kh-20261111-Q9543 | 2026-11-11T07:16 | entertainment | india | naam-niyam | india | 933 | 418 | 932 |
