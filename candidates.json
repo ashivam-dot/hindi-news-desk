@@ -1,5 +1,5 @@
 {
- "at": "2026-11-14T02:19:24+00:00",
+ "at": "2026-11-14T02:33:22+00:00",
  "trending": [
   {
    "qid": "Q4772274",
@@ -31,6 +31,125 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261114-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+   "story_keys": [
+    "air",
+    "area",
+    "capital",
+    "choke",
+    "crosse",
+    "gets",
+    "ito",
+    "pollution",
+    "several",
+    "severe'",
+    "worse",
+    "zone"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T16:55:32+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+    "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
+    "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+    "Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:55:32+00:00"
+    },
+    {
+     "title": "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/videos/india/delhi-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-10423970.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:22:14+00:00"
+    },
+    {
+     "title": "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
+     "url": "https://www.livemint.com/news/india/delhis-aqi-nears-500-reaches-severe-levels-in-many-areas-visibility-drops-amid-dense-fog-11794540220255.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:05+00:00"
+    },
+    {
+     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:54:03+00:00"
+    },
+    {
+     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:41:24+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark",
+    "google-news:Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
+   ],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark"
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261114-Q2283",
@@ -357,9 +476,9 @@
     "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
@@ -371,357 +490,69 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q2364111",
-   "qid": "Q2364111",
-   "title": "Air quality index",
-   "name": "air quality index",
-   "phrase": "AQI",
-   "person": false,
-   "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-   "story_keys": [
-    "air",
-    "area",
-    "capital",
-    "choke",
-    "crosse",
-    "gets",
-    "ito",
-    "pollution",
-    "several",
-    "severe'",
-    "worse",
-    "zone"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T16:55:32+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 200000,
-   "news": 200000,
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 175000,
    "views": 0,
    "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-11-13T12:55:01+00:00",
    "headlines": [
-    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
-    "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
-    "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
-     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:55:32+00:00"
-    },
-    {
-     "title": "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-     "url": "https://www.news18.com/videos/india/delhi-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-10423970.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:22:14+00:00"
-    },
-    {
-     "title": "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
-     "url": "https://www.livemint.com/news/india/delhis-aqi-nears-500-reaches-severe-levels-in-many-areas-visibility-drops-amid-dense-fog-11794540220255.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:34:05+00:00"
-    },
-    {
-     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:54:03+00:00"
-    },
-    {
-     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
-     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:41:24+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
-   ],
-   "top": {
-    "IN-nation": 10
-   },
-   "top_score": 0.33,
-   "top_headlines": [
-    "Delhi overtakes Lahore as world's most polluted city as air quality drops",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261114-Q3524953",
-   "qid": "Q3524953",
-   "title": "Ministry of External Affairs (India)",
-   "name": "Ministry of External Affairs",
-   "phrase": "MEA",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-   "story_keys": [
-    "extradition",
-    "matter",
-    "row"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T19:10:10+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-    "MEA says Hasina extradition is a legal matter",
-    "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-    "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-    "115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
-   "hindi_headlines": [
-    "बांग्लादेश के साथ कैसा संबंध चाहता है भारत, विदेश मंत्रालय ने बताया",
-    "विदेश मंत्रालय ने मंजूर किया वीजा, गृह मंत्रालय ने लगा दी रोक; भारत समिट से पहले ये कैसा विवाद?"
-   ],
-   "hindi_news": 2,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
    "geos": [
     "IN"
    ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "विदेश मन्त्रालय",
+   "label_hi": "सी एस कर्णन",
+   "via": [
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:Indian Express Group",
+    "outlet:HT Media"
+   ],
+   "owners": [
+    "Indian Express Group",
+    "HT Media"
+   ],
    "reports": [
     {
-     "title": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-     "url": "https://www.indiatoday.in/india/story/india-bangladesh-relations-sheikh-hasina-extradition-consular-dialogue-ptag-3038458-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T19:10:10+00:00"
+     "at": "2026-11-13T12:55:01+00:00"
     },
     {
-     "title": "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-     "url": "https://timesofindia.indiatimes.com/india/visa-matters-are-sovereign-mea-responds-after-115-foreign-speakers-denied-nod-for-congress-event/articleshow/135811416.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:16:51+00:00"
-    },
-    {
-     "title": "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-     "url": "https://www.hindustantimes.com/india-news/india-ready-to-discuss-all-bilateral-issues-with-bangladesh-says-mea-amid-hasina-row-101794585901429.html",
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T16:05:01+00:00"
-    },
-    {
-     "title": "MEA says Hasina extradition is a legal matter",
-     "url": "https://economictimes.indiatimes.com/news/india/legal-matter-will-be-dealt-with-accordingly-mea-on-sheikh-hasinas-extradition/articleshow/135808716.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:38:11+00:00"
+     "at": "2026-11-13T10:49:45+00:00"
     }
    ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "google-news:115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
+   "id": "wk-Q29879031",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-13",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q62833385",
-   "qid": "Q62833385",
-   "title": "SpaceX Starship",
-   "name": "Starship",
-   "phrase": "SpaceX Starship",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-   "story_keys": [
-    "booster",
-    "double-catch"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T00:01:01+00:00",
-   "owners": [
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "BBC"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-    "Setback for SpaceX Starship rocket's double-catch test",
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "स्पेसएक्स स्टारशिप",
-   "reports": [
-    {
-     "title": "Setback for SpaceX Starship rocket's double-catch test",
-     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T00:01:01+00:00"
-    },
-    {
-     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:13:30+00:00"
-    },
-    {
-     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:11:01+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:BBC",
-    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "top": {
-    "IN": 18
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-14T00:40:22+00:00",
-   "headlines": [
-    "River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-13",
-    "google-news:River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {
-    "IN-hi": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "अमेरिका के न्यू ऑरलियन्स में बड़ा हादसा, टैंकर और मुसाफ़िरों से भरे क्रूज़ में टक्कर"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
+   "lane": "obituary"
   },
   {
    "qid": "Q5213677",
@@ -795,7 +626,7 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+   "story": "US flights resume after FAA lifts hours-long nationwide ground stop",
    "story_keys": [
     "across",
     "caused",
@@ -803,6 +634,7 @@
     "communication",
     "flight",
     "ground",
+    "lift",
     "nationwide",
     "outage",
     "since",
@@ -823,11 +655,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-    "FAA grounds US flights nationwide after ‘communication issue’",
+    "US flights resume after FAA lifts hours-long nationwide ground stop",
     "Flights halted at airports across US due to ATC communications problems: FAA",
     "FAA grounds all fights across the US over ‘telecommunication outage’",
     "US flight chaos: Thousands stranded as FAA halts take-offs nationwide; what we know so far",
+    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
     "Airlines issue advisories amid FAA ground stop"
    ],
    "hindi_headlines": [],
@@ -849,7 +681,7 @@
      "at": "2026-11-13T23:45:22+00:00"
     },
     {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
+     "title": "US flights resume after FAA lifts hours-long nationwide ground stop",
      "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -1040,9 +872,13 @@
     "outlet:India Today Group",
     "outlet:Al Jazeera Media Network"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -1146,6 +982,103 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX launches Starship rocket, fails to recover booster",
+   "story_keys": [
+    "booster",
+    "double-catch",
+    "fail",
+    "rocket"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T02:24:00+00:00",
+   "owners": [
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "BBC",
+    "Deutsche Welle"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "SpaceX launches Starship rocket, fails to recover booster",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "Setback for SpaceX Starship rocket's double-catch test"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "SpaceX launches Starship rocket, fails to recover booster",
+     "url": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T02:24:00+00:00"
+    },
+    {
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T00:01:01+00:00"
+    },
+    {
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:13:30+00:00"
+    },
+    {
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:11:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "outlet:Deutsche Welle"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q124540932",
@@ -1316,9 +1249,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
@@ -1410,6 +1343,46 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": "Q142149760",
+   "title": "2026 New Orleans ship collision",
+   "fame": 50000,
+   "views": 0,
+   "traffic": 0,
+   "news": 0,
+   "news_at": "2026-11-14T00:00:00+00:00",
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-13"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142149760",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-13",
+   "coords": [
+    29.93694444,
+    -90.06083333
+   ],
+   "has_coords": true,
+   "top": {
+    "IN-hi": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "अमेरिका के न्यू ऑरलियन्स में बड़ा हादसा, टैंकर और मुसाफ़िरों से भरे क्रूज़ में टक्कर"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "breaking"
   },
   {
    "qid": "Q533583",
@@ -1507,9 +1480,9 @@
   {
    "qid": "Q142131356",
    "title": "2026 New York City building collapse",
-   "fame": 25100,
+   "fame": 25000,
    "views": 0,
-   "traffic": 100,
+   "traffic": 0,
    "news": 25000,
    "news_at": "2026-11-14T01:51:07+00:00",
    "headlines": [
@@ -1517,14 +1490,11 @@
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
    "label_hi": null,
    "via": [
-    "google-trends-IN:pacers vs knicks",
     "google-news:Rex Ryan Recalled The One New York Jets Practice Moment That Made Him Fear For His Coaching Career",
     "outlet:NDTV"
    ],
@@ -1556,6 +1526,53 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
+  },
+  {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q142077465",
@@ -1685,14 +1702,142 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q29879031",
-   "title": "C. S. Karnan",
-   "fame": 100,
-   "views": 0,
-   "traffic": 100,
+   "qid": "Q114079679",
+   "title": "Solange Alexandre",
+   "fame": 11379,
+   "views": 11379,
+   "traffic": 0,
    "news": 0,
    "news_at": null,
    "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q114079679",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6662427",
+   "title": "Lloyd Geering",
+   "fame": 11145,
+   "views": 11145,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6662427",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-05",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q18613657",
+   "title": "Alexander Darchiev",
+   "fame": 9579,
+   "views": 9579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18613657",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7308546",
+   "title": "Regina Torné",
+   "fame": 9120,
+   "views": 9120,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7308546",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  }
+ ],
+ "candidates": [
+  {
+   "qid": "Q29879031",
+   "title": "C. S. Karnan",
+   "fame": 175000,
+   "views": 0,
+   "traffic": 0,
+   "news": 175000,
+   "news_at": "2026-11-13T12:55:01+00:00",
+   "headlines": [
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "india",
@@ -1702,10 +1847,38 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-trends-IN:c.s. karnan"
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
+    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+    "outlet:Indian Express Group",
+    "outlet:HT Media"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "Indian Express Group",
+    "HT Media"
+   ],
+   "reports": [
+    {
+     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
+     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T12:55:01+00:00"
+    },
+    {
+     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
+     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T10:49:45+00:00"
+    }
+   ],
    "id": "wk-Q29879031",
    "kind": "death",
    "category": "death",
@@ -1716,9 +1889,7 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  }
- ],
- "candidates": [
+  },
   {
    "id": "kh-20261114-Q2283",
    "qid": "Q2283",
@@ -1861,51 +2032,6 @@
    "lane": "other"
   },
   {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 175000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-14T00:40:22+00:00",
-   "headlines": [
-    "River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-13",
-    "google-news:River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {
-    "IN-hi": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "अमेरिका के न्यू ऑरलियन्स में बड़ा हादसा, टैंकर और मुसाफ़िरों से भरे क्रूज़ में टक्कर"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "breaking"
-  },
-  {
    "id": "kh-20261114-Q182477",
    "qid": "Q182477",
    "title": "Nvidia",
@@ -1990,9 +2116,9 @@
     "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
@@ -2112,7 +2238,7 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+   "story": "US flights resume after FAA lifts hours-long nationwide ground stop",
    "story_keys": [
     "across",
     "caused",
@@ -2120,6 +2246,7 @@
     "communication",
     "flight",
     "ground",
+    "lift",
     "nationwide",
     "outage",
     "since",
@@ -2140,11 +2267,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-    "FAA grounds US flights nationwide after ‘communication issue’",
+    "US flights resume after FAA lifts hours-long nationwide ground stop",
     "Flights halted at airports across US due to ATC communications problems: FAA",
     "FAA grounds all fights across the US over ‘telecommunication outage’",
     "US flight chaos: Thousands stranded as FAA halts take-offs nationwide; what we know so far",
+    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
     "Airlines issue advisories amid FAA ground stop"
    ],
    "hindi_headlines": [],
@@ -2166,7 +2293,7 @@
      "at": "2026-11-13T23:45:22+00:00"
     },
     {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
+     "title": "US flights resume after FAA lifts hours-long nationwide ground stop",
      "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -2286,193 +2413,44 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q3524953",
-   "qid": "Q3524953",
-   "title": "Ministry of External Affairs (India)",
-   "name": "Ministry of External Affairs",
-   "phrase": "MEA",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-   "story_keys": [
-    "extradition",
-    "matter",
-    "row"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T19:10:10+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
+   "qid": "Q142149760",
+   "title": "2026 New Orleans ship collision",
+   "fame": 50000,
    "views": 0,
    "traffic": 0,
-   "headlines": [
-    "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-    "MEA says Hasina extradition is a legal matter",
-    "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-    "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-    "115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
-   "hindi_headlines": [
-    "बांग्लादेश के साथ कैसा संबंध चाहता है भारत, विदेश मंत्रालय ने बताया",
-    "विदेश मंत्रालय ने मंजूर किया वीजा, गृह मंत्रालय ने लगा दी रोक; भारत समिट से पहले ये कैसा विवाद?"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "विदेश मन्त्रालय",
-   "reports": [
-    {
-     "title": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-     "url": "https://www.indiatoday.in/india/story/india-bangladesh-relations-sheikh-hasina-extradition-consular-dialogue-ptag-3038458-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T19:10:10+00:00"
-    },
-    {
-     "title": "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-     "url": "https://timesofindia.indiatimes.com/india/visa-matters-are-sovereign-mea-responds-after-115-foreign-speakers-denied-nod-for-congress-event/articleshow/135811416.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:16:51+00:00"
-    },
-    {
-     "title": "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-     "url": "https://www.hindustantimes.com/india-news/india-ready-to-discuss-all-bilateral-issues-with-bangladesh-says-mea-amid-hasina-row-101794585901429.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:05:01+00:00"
-    },
-    {
-     "title": "MEA says Hasina extradition is a legal matter",
-     "url": "https://economictimes.indiatimes.com/news/india/legal-matter-will-be-dealt-with-accordingly-mea-on-sheikh-hasinas-extradition/articleshow/135808716.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:38:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "google-news:115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q62833385",
-   "qid": "Q62833385",
-   "title": "SpaceX Starship",
-   "name": "Starship",
-   "phrase": "SpaceX Starship",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-   "story_keys": [
-    "booster",
-    "double-catch"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T00:01:01+00:00",
-   "owners": [
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "BBC"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-    "Setback for SpaceX Starship rocket's double-catch test",
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "hindi_headlines": [],
+   "news": 0,
+   "news_at": "2026-11-14T00:00:00+00:00",
+   "headlines": [],
    "hindi_news": 0,
-   "geos": [],
+   "hindi_headlines": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
-   "label_hi": "स्पेसएक्स स्टारशिप",
-   "reports": [
-    {
-     "title": "Setback for SpaceX Starship rocket's double-catch test",
-     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T00:01:01+00:00"
-    },
-    {
-     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:13:30+00:00"
-    },
-    {
-     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:11:01+00:00"
-    }
-   ],
+   "geos": [],
+   "label_hi": null,
    "via": [
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:BBC",
-    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
+    "wikipedia-current-events-2026-11-13"
    ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142149760",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-13",
+   "coords": [
+    29.93694444,
+    -90.06083333
+   ],
+   "has_coords": true,
    "top": {
-    "IN": 18
+    "IN-hi": 13
    },
-   "top_score": 0.15,
+   "top_score": 0.4,
    "top_headlines": [
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
+    "अमेरिका के न्यू ऑरलियन्स में बड़ा हादसा, टैंकर और मुसाफ़िरों से भरे क्रूज़ में टक्कर"
    ],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "other"
+   "lane": "breaking"
   },
   {
    "qid": "Q5213677",
@@ -2593,15 +2571,129 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261114-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+   "story_keys": [
+    "captain",
+    "hits",
+    "threw",
+    "under"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T20:32:42+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "India Today Group",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+    "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
+    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+    "Langer backs Cummins after captain hits back at Khawaja over Sandpaper-gate claims",
+    "Australia captain Cummins denies involvement in ‘Sandpapergate’"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T20:32:42+00:00"
+    },
+    {
+     "title": "Langer backs Cummins after captain hits back at Khawaja over Sandpaper-gate claims",
+     "url": "https://www.indiatoday.in/sports/cricket/story/justin-langer-backs-pat-cummins-usman-khawaja-sandpaper-gate-claims-3038520-2026-11-13?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:15:24+00:00"
+    },
+    {
+     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
+     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:15:45+00:00"
+    },
+    {
+     "title": "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/threw-usman-khawaja-under-the-bus-david-warner-hits-out-at-pat-cummins-over-sandpaper-row/articleshow/135788857.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:09:47+00:00"
+    },
+    {
+     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q944085",
@@ -2735,107 +2827,94 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261114-Q7143348",
-   "qid": "Q7143348",
-   "title": "Pat Cummins",
-   "name": "Pat Cummins",
-   "phrase": "Pat Cummins",
-   "person": true,
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "Starship",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
+   "story": "SpaceX launches Starship rocket, fails to recover booster",
    "story_keys": [
-    "captain",
-    "hits",
-    "threw",
-    "under"
+    "booster",
+    "double-catch",
+    "fail",
+    "rocket"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-13T20:32:42+00:00",
+   "news_at": "2026-11-14T02:24:00+00:00",
    "owners": [
-    "HT Media",
+    "NDTV",
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "India Today Group",
-    "Al Jazeera Media Network"
+    "BBC",
+    "Deutsche Welle"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-    "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-    "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-    "Langer backs Cummins after captain hits back at Khawaja over Sandpaper-gate claims",
-    "Australia captain Cummins denies involvement in ‘Sandpapergate’"
+    "SpaceX launches Starship rocket, fails to recover booster",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "Setback for SpaceX Starship rocket's double-catch test"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": true,
-   "label_hi": "पॅट कमिंस",
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
    "reports": [
     {
-     "title": "Australia captain Cummins denies involvement in ‘Sandpapergate’",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/13/australia-captain-cummins-denies-involvement-in?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "SpaceX launches Starship rocket, fails to recover booster",
+     "url": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T20:32:42+00:00"
+     "at": "2026-11-14T02:24:00+00:00"
     },
     {
-     "title": "Langer backs Cummins after captain hits back at Khawaja over Sandpaper-gate claims",
-     "url": "https://www.indiatoday.in/sports/cricket/story/justin-langer-backs-pat-cummins-usman-khawaja-sandpaper-gate-claims-3038520-2026-11-13?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T16:15:24+00:00"
+     "at": "2026-11-14T00:01:01+00:00"
     },
     {
-     "title": "Cummins threw Khawaja under the bus, and what Uzzy wrote is the truth: David Warner",
-     "url": "https://www.thehindu.com/sport/cricket/cummins-threw-khawaja-under-the-bus-and-what-uzzy-wrote-is-the-truth-david-warner/article71696511.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:15:45+00:00"
-    },
-    {
-     "title": "'Threw Khawaja under the bus': Warner hits out at Cummins over sandpaper row",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/threw-usman-khawaja-under-the-bus-david-warner-hits-out-at-pat-cummins-over-sandpaper-row/articleshow/135788857.cms",
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
      "outlet": "Times of India",
      "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T04:09:47+00:00"
+     "at": "2026-11-13T23:13:30+00:00"
     },
     {
-     "title": "David Warner disappointed with Pat Cummins, says Australia captain threw Usman Khawaja ‘under the bus’: I feel for him",
-     "url": "https://www.hindustantimes.com/cricket/david-warner-disappointed-with-pat-cummins-says-australia-captain-threw-usman-khawaja-under-the-bus-i-feel-for-him-101794538285589.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T03:34:50+00:00"
+     "at": "2026-11-13T23:11:01+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
+    "outlet:NDTV",
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:Al Jazeera Media Network"
+    "outlet:BBC",
+    "outlet:Deutsche Welle"
    ],
    "top": {},
    "top_score": 0.0,
@@ -3011,6 +3090,53 @@
    "lane": "other"
   },
   {
+   "qid": "Q4795757",
+   "title": "Arpita Singh",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-13T06:02:19+00:00",
+   "headlines": [
+    "Arpita Singh: in the solitude of her studio"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": "अर्पिता सिंह",
+   "via": [
+    "google-news:Arpita Singh: in the solitude of her studio",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Arpita Singh: in the solitude of her studio",
+     "url": "https://www.thehindu.com/entertainment/art/arpita-singh-artist-tribute-delhi-studio-portrait-of-an-artist-extract/article71682495.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T06:02:19+00:00"
+    }
+   ],
+   "id": "wk-Q4795757",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q533583",
    "title": "Richard Posner",
    "fame": 34663,
@@ -3166,6 +3292,99 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q18613657",
+   "title": "Alexander Darchiev",
+   "fame": 9579,
+   "views": 9579,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q18613657",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q114079679",
+   "title": "Solange Alexandre",
+   "fame": 11379,
+   "views": 11379,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q114079679",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-08",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q6662427",
+   "title": "Lloyd Geering",
+   "fame": 11145,
+   "views": 11145,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-12"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q6662427",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-05",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q7828852",
    "title": "Toukie Smith",
    "fame": 14915,
@@ -3195,57 +3414,141 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q29879031",
-   "title": "C. S. Karnan",
-   "fame": 100,
-   "views": 0,
-   "traffic": 100,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "सी एस कर्णन",
-   "via": [
-    "google-trends-IN:c.s. karnan"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q29879031",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-13",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
   }
  ],
  "notes": [
-  "outlets: 1639 headlines from 48 feeds (18 owners), 6 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 12 kh- stories (on): kh-20261114-Q2283, kh-20261114-Q80338, kh-20261114-Q182477, kh-20261114-Q2364111; dropped: explainer Ramayana As: fewer than 3 owners' headlines name it and the story; explainer 'Centre extends ban on Zakir Naik’s Islamic Research Foundati': no name to tell it by; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre"
- ],
- "trend_errors": [
-  "wikidata recent deaths: HTTP 502"
+  "outlets: 1638 headlines from 48 feeds (18 owners), 10 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 11 kh- stories (on): kh-20261114-Q2364111, kh-20261114-Q2283, kh-20261114-Q80338, kh-20261114-Q182477; dropped: explainer 'Centre extends ban on Zakir Naik’s Islamic Research Foundati': no name to tell it by; explainer Lavi Fair Storytelling / Lavi Fair Storytelling: no Wikipedia article that can be its centre; explainer Fiery Matt Henry: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q7308546: Orbitwire published (wk-Q7308546), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 1639,
+  "headlines": 1638,
   "feeds": 48,
   "owners": 18,
-  "matched": 6,
+  "matched": 10,
   "corroborated": 12
  },
  "emerging": [],
  "explainers": [
+  {
+   "id": "kh-20261114-Q2364111",
+   "qid": "Q2364111",
+   "title": "Air quality index",
+   "name": "air quality index",
+   "phrase": "AQI",
+   "person": false,
+   "kind": "explainer",
+   "category": "weather",
+   "category_hi": "मौसम",
+   "story": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+   "story_keys": [
+    "air",
+    "area",
+    "capital",
+    "choke",
+    "crosse",
+    "gets",
+    "ito",
+    "pollution",
+    "several",
+    "severe'",
+    "worse",
+    "zone"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-13T16:55:32+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+    "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
+    "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+    "Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
+     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T16:55:32+00:00"
+    },
+    {
+     "title": "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/videos/india/delhi-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-10423970.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T04:22:14+00:00"
+    },
+    {
+     "title": "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
+     "url": "https://www.livemint.com/news/india/delhis-aqi-nears-500-reaches-severe-levels-in-many-areas-visibility-drops-amid-dense-fog-11794540220255.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T03:34:05+00:00"
+    },
+    {
+     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
+     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:54:03+00:00"
+    },
+    {
+     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
+     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T02:41:24+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark",
+    "google-news:Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
+   ],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "Thick Smog Blankets Delhi As Air Turns Severe, AQI Breaches 400 Mark"
+   ],
+   "hindi_owners": []
+  },
   {
    "id": "kh-20261114-Q2283",
    "qid": "Q2283",
@@ -3571,9 +3874,9 @@
     "google-news:US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
@@ -3582,314 +3885,6 @@
     "DB Corp"
    ],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q2364111",
-   "qid": "Q2364111",
-   "title": "Air quality index",
-   "name": "air quality index",
-   "phrase": "AQI",
-   "person": false,
-   "kind": "explainer",
-   "category": "weather",
-   "category_hi": "मौसम",
-   "story": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-   "story_keys": [
-    "air",
-    "area",
-    "capital",
-    "choke",
-    "crosse",
-    "gets",
-    "ito",
-    "pollution",
-    "several",
-    "severe'",
-    "worse",
-    "zone"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T16:55:32+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-    "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
-    "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
-    "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations in 'severe' zone",
-     "url": "https://timesofindia.indiatimes.com/city/delhi/delhis-air-turns-hazardous-as-aqi-hits-494-16-stations-record-severe-pollution-50-workforce-told-to-work-from-home/articleshow/135810317.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:55:32+00:00"
-    },
-    {
-     "title": "Delhi Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-     "url": "https://www.news18.com/videos/india/delhi-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-10423970.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T04:22:14+00:00"
-    },
-    {
-     "title": "Delhi's AQI nears 500, reaches severe levels in many areas; visibility drops amid dense fog",
-     "url": "https://www.livemint.com/news/india/delhis-aqi-nears-500-reaches-severe-levels-in-many-areas-visibility-drops-amid-dense-fog-11794540220255.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T03:34:05+00:00"
-    },
-    {
-     "title": "Delhi Air Pollution Gets Worse: AQI Crosses 450 At ITO, Several Areas In 'Severe' Zone As Capital Chokes",
-     "url": "https://www.news18.com/india/delhi-air-pollution-gets-worse-aqi-crosses-450-at-ito-several-areas-in-severe-zone-as-capital-chokes-ws-l-10423882.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:54:03+00:00"
-    },
-    {
-     "title": "Delhi’s air quality enters ‘severe’ category, AQI breaches 400",
-     "url": "https://www.hindustantimes.com/india-news/delhis-air-quality-enters-severe-category-worst-grade-on-pollution-scale-aqi-101794537350279.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T02:41:24+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "google-news:Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
-   ],
-   "top": {
-    "IN-nation": 10
-   },
-   "top_score": 0.33,
-   "top_headlines": [
-    "Delhi overtakes Lahore as world's most polluted city as air quality drops",
-    "Delhi's air turns 'hazardous' as AQI hits 494; 16 stations record severe pollution, 50% workforce told to"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261114-Q3524953",
-   "qid": "Q3524953",
-   "title": "Ministry of External Affairs (India)",
-   "name": "Ministry of External Affairs",
-   "phrase": "MEA",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-   "story_keys": [
-    "extradition",
-    "matter",
-    "row"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-13T19:10:10+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-    "MEA says Hasina extradition is a legal matter",
-    "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-    "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-    "115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
-   "hindi_headlines": [
-    "बांग्लादेश के साथ कैसा संबंध चाहता है भारत, विदेश मंत्रालय ने बताया",
-    "विदेश मंत्रालय ने मंजूर किया वीजा, गृह मंत्रालय ने लगा दी रोक; भारत समिट से पहले ये कैसा विवाद?"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "विदेश मन्त्रालय",
-   "reports": [
-    {
-     "title": "India wants positive ties with Bangladesh, says MEA amid Hasina extradition row",
-     "url": "https://www.indiatoday.in/india/story/india-bangladesh-relations-sheikh-hasina-extradition-consular-dialogue-ptag-3038458-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T19:10:10+00:00"
-    },
-    {
-     "title": "'Visa matters are sovereign': MEA on row over foreign speakers at Congress event",
-     "url": "https://timesofindia.indiatimes.com/india/visa-matters-are-sovereign-mea-responds-after-115-foreign-speakers-denied-nod-for-congress-event/articleshow/135811416.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T17:16:51+00:00"
-    },
-    {
-     "title": "India ready to discuss all bilateral issues with Bangladesh, says MEA amid Sheikh Hasina row",
-     "url": "https://www.hindustantimes.com/india-news/india-ready-to-discuss-all-bilateral-issues-with-bangladesh-says-mea-amid-hasina-row-101794585901429.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:05:01+00:00"
-    },
-    {
-     "title": "MEA says Hasina extradition is a legal matter",
-     "url": "https://economictimes.indiatimes.com/news/india/legal-matter-will-be-dealt-with-accordingly-mea-on-sheikh-hasinas-extradition/articleshow/135808716.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:38:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "google-news:115 MEA-cleared Bharat Summit speakers ‘refused entry to India’: Shashi Tharoor"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q62833385",
-   "qid": "Q62833385",
-   "title": "SpaceX Starship",
-   "name": "Starship",
-   "phrase": "SpaceX Starship",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-   "story_keys": [
-    "booster",
-    "double-catch"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T00:01:01+00:00",
-   "owners": [
-    "NDTV",
-    "Bennett, Coleman & Co.",
-    "BBC"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-    "Setback for SpaceX Starship rocket's double-catch test",
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "स्पेसएक्स स्टारशिप",
-   "reports": [
-    {
-     "title": "Setback for SpaceX Starship rocket's double-catch test",
-     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T00:01:01+00:00"
-    },
-    {
-     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
-     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:13:30+00:00"
-    },
-    {
-     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
-     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T23:11:01+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:BBC",
-    "google-news:SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "top": {
-    "IN": 18
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "SpaceX Starship test to attempt first-ever spaceship 'catch'"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -3902,7 +3897,7 @@
    "kind": "explainer",
    "category": "aviation",
    "category_hi": "विमानन",
-   "story": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+   "story": "US flights resume after FAA lifts hours-long nationwide ground stop",
    "story_keys": [
     "across",
     "caused",
@@ -3910,6 +3905,7 @@
     "communication",
     "flight",
     "ground",
+    "lift",
     "nationwide",
     "outage",
     "since",
@@ -3930,11 +3926,11 @@
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-    "FAA grounds US flights nationwide after ‘communication issue’",
+    "US flights resume after FAA lifts hours-long nationwide ground stop",
     "Flights halted at airports across US due to ATC communications problems: FAA",
     "FAA grounds all fights across the US over ‘telecommunication outage’",
     "US flight chaos: Thousands stranded as FAA halts take-offs nationwide; what we know so far",
+    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
     "Airlines issue advisories amid FAA ground stop"
    ],
    "hindi_headlines": [],
@@ -3956,7 +3952,7 @@
      "at": "2026-11-13T23:45:22+00:00"
     },
     {
-     "title": "FAA grounds US flights nationwide after ‘communication issue’",
+     "title": "US flights resume after FAA lifts hours-long nationwide ground stop",
      "url": "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss",
      "outlet": "Al Jazeera",
      "outlet_hi": "अल जज़ीरा",
@@ -4147,9 +4143,13 @@
     "outlet:India Today Group",
     "outlet:Al Jazeera Media Network"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 14
+   },
+   "top_score": 0.35,
+   "top_headlines": [
+    "Cummins threw Khawaja under the bus - David Warner"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -4253,6 +4253,103 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261114-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX launches Starship rocket, fails to recover booster",
+   "story_keys": [
+    "booster",
+    "double-catch",
+    "fail",
+    "rocket"
+   ],
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T02:24:00+00:00",
+   "owners": [
+    "NDTV",
+    "Bennett, Coleman & Co.",
+    "BBC",
+    "Deutsche Welle"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "SpaceX launches Starship rocket, fails to recover booster",
+    "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+    "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+    "Setback for SpaceX Starship rocket's double-catch test"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "SpaceX launches Starship rocket, fails to recover booster",
+     "url": "https://www.dw.com/en/spacex-launches-starship-rocket-fails-to-recover-booster/a-79946091?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T02:24:00+00:00"
+    },
+    {
+     "title": "Setback for SpaceX Starship rocket's double-catch test",
+     "url": "https://www.bbc.co.uk/news/articles/ckregdgnl0xpo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T00:01:01+00:00"
+    },
+    {
+     "title": "SpaceX's ambitious Starship double-catch attempt fails as booster ends up in Gulf",
+     "url": "https://timesofindia.indiatimes.com/science/spacexs-ambitious-starship-double-catch-attempt-fails-as-booster-ends-up-in-gulf/articleshow/135819060.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:13:30+00:00"
+    },
+    {
+     "title": "SpaceX Aborts Starship Booster Recovery Due To Technical Issue",
+     "url": "https://www.ndtv.com/world-news/spacex-aborts-starship-booster-recovery-due-to-technical-issue-12324638#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T23:11:01+00:00"
+    }
+   ],
+   "via": [
+    "outlet:NDTV",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC",
+    "outlet:Deutsche Welle"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q124540932",
@@ -4423,9 +4520,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 13
+    "IN": 12
    },
-   "top_score": 0.4,
+   "top_score": 0.45,
    "top_headlines": [
     "US Senate summons Nvidia’s Huang, Lutnick to testify"
    ],
