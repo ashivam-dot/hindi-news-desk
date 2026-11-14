@@ -1,251 +1,241 @@
 {
- "at": "2026-11-14T12:06:41+00:00",
+ "at": "2026-11-14T12:19:19+00:00",
  "trending": [
   {
-   "id": "kh-20261114-Q130390376",
-   "qid": "Q130390376",
-   "title": "Vaibhav Sooryavanshi",
-   "name": "Vaibhav Suryavanshi",
-   "phrase": "Vaibhav Sooryavanshi",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
    "story_keys": [
-    "become",
-    "captain",
-    "men",
-    "vaibhav",
-    "youngest"
+    "outage"
    ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T10:12:49+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
     "HT Media",
-    "Bennett, Coleman & Co.",
+    "Guardian Media Group",
     "The Hindu Group",
-    "ABP Group",
-    "TV9 Network",
-    "Network18",
-    "Amar Ujala"
+    "India Today Group",
+    "BBC"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-    "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-    "Sooryavanshi now youngest captain in men's T20",
-    "Sooryavanshi becomes youngest captain in men's T20 cricket history"
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft outage hits businesses worldwide; India feels impact",
+    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
    ],
    "hindi_headlines": [
-    "वैभव सूर्यवंशी पहले मैच में फ्लॉप, सूर्यकुमार यादव ने 21 बॉल में ठोके 60, SMAT का जोरदार आगाज",
-    "Vaibhav Sooryavanshi: 15 साल के वैभव सूर्यवंशी ने तोड़ा एक और वर्ल्ड रिकॉर्ड, बने सबसे युवा कप्तान, पर नहीं चला बल्ला",
-    "जिया हो बिहार के लाला...छठ पर वैभव सूर्यवंशी ने रचा इतिहास, बने दुनिया के सबसे युवा T20 कप्तान",
-    "वैभव सूर्यवंशी ने बनाया कप्तानी का 'वर्ल्ड रिकॉर्ड', लिख डाला नया इतिहास",
-    "सैयद मुश्ताक अली ट्रॉफी: टी20 के सबसे युवा कप्तान बने वैभव सूर्यवंशी, किसे पीछे छोड़ा? संभाली बिहार की कमान"
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
    ],
-   "hindi_news": 6,
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T17:41:15+00:00"
+    },
+    {
+     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T07:00:00+00:00"
+    },
+    {
+     "title": "Microsoft outage hits businesses worldwide; India feels impact",
+     "url": "https://www.thehindu.com/sci-tech/technology/microsoft-outage-hits-businesses-worldwide-india-feels-impact/article71698919.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:51:27+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Guardian Media Group",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q17089931",
+   "qid": "Q17089931",
+   "title": "D. K. Shivakumar",
+   "name": "D. K. Shivakumar",
+   "phrase": "DK Shivakumar",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+   "story_keys": [
+    "back",
+    "build",
+    "hits",
+    "pushe",
+    "right",
+    "row",
+    "stand",
+    "water"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T11:00:39+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+    "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
+    "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
+    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
+    "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
+    "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "वैभव सूर्यवंशी",
+   "label_hi": "डी. के. शिवकुमार",
    "reports": [
     {
-     "title": "Sooryavanshi becomes youngest captain in men's T20 cricket history",
-     "url": "https://www.thehindu.com/sport/cricket/sooryavanshi-becomes-youngest-captain-in-mens-t20-cricket-history/article71701393.ece",
+     "title": "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress",
+     "url": "https://www.ndtv.com/india-news/congress-vs-congress-dk-shivakumars-mekedatu-dam-push-riles-up-party-in-tamil-nadu-12325674#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T11:00:39+00:00"
+    },
+    {
+     "title": "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
+     "url": "https://www.thehindu.com/news/national/karnataka/mekedatu-is-karnatakas-right-we-will-build-dam-and-release-tamil-nadus-share-of-water-dk-shivakumar/article71701313.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T10:12:49+00:00"
+     "at": "2026-11-14T10:16:26+00:00"
     },
     {
-     "title": "Sooryavanshi now youngest captain in men's T20",
-     "url": "https://economictimes.indiatimes.com/news/sports/cricket/15-year-old-vaibhav-sooryavanshi-becomes-youngest-captain-in-mens-t20-history/articleshow/135826312.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
+     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-tamil-nadu-karnataka-manickam-tagore-opposes-dk-shivakumar-3038782-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T07:36:01+00:00"
+     "at": "2026-11-14T09:15:35+00:00"
     },
     {
-     "title": "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/vaibhav-sooryavanshi-scripts-history-becomes-youngest-captain-in-mens-t20-cricket-history/articleshow/135824695.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T06:17:52+00:00"
-    },
-    {
-     "title": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-     "url": "https://www.hindustantimes.com/cricket/vaibhav-sooryavanshi-15-becomes-youngest-ever-captain-in-mens-t20s-101794627738655.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T05:22:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:TV9 Network",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "google-news:वैभव सूर्यवंशी ने चकनाचूर किया टी20 क्रिकेट में वर्ल्ड रिकॉर्ड, 15 साल की उम्र में रचा ऐतिहासिक कीर्तिमान"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "ABP Group",
-    "TV9 Network",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q335357",
-   "qid": "Q335357",
-   "title": "Federal Aviation Administration",
-   "name": "Federal Aviation Administration",
-   "phrase": "FAA",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "FAA lifts nationwide ground stop on all US flights",
-   "story_keys": [
-    "communication",
-    "flight",
-    "ground",
-    "lift",
-    "nationwide",
-    "stop"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T03:11:35+00:00",
-   "owners": [
-    "Indian Express Group",
-    "HT Media",
-    "Network18",
-    "France Médias Monde",
-    "Bennett, Coleman & Co.",
-    "Guardian Media Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "FAA lifts nationwide ground stop on all US flights",
-    "Flights halted at airports across US due to ATC communications problems: FAA",
-    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-    "FAA flight ground stop disrupts sports travel",
-    "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "FAA lifts nationwide ground stop on all US flights",
-     "url": "https://www.france24.com/en/video/20261114-faa-lifts-nationwide-ground-stop-on-all-us-flights",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T02:50:21+00:00"
-    },
-    {
-     "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
-     "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T03:11:35+00:00"
-    },
-    {
-     "title": "FAA flight ground stop disrupts sports travel",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:59:38+00:00"
-    },
-    {
-     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
+     "title": "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
+     "url": "https://www.news18.com/india/mekedatu-dam-row-dk-shivakumar-defies-tamil-nadu-critics-says-karnataka-has-right-to-build-project-ws-l-10425310.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T01:54:41+00:00"
+     "at": "2026-11-14T08:49:07+00:00"
     },
     {
-     "title": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-     "url": "https://www.livemint.com/news/us-news/us-faa-grounds-flights-nationwide-for-second-time-since-9-11-what-caused-the-disruption-as-10-000-flights-face-delays-11794618671184.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
+     "title": "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
+     "url": "https://www.news18.com/videos/india/cauvery-water-war-dk-shivakumar-says-karnataka-has-the-right-to-build-mekedatu-dam-news18-10425410.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T01:22:04+00:00"
+     "at": "2026-11-14T07:15:42+00:00"
     },
     {
-     "title": "Flights halted at airports across US due to ATC communications problems: FAA",
-     "url": "https://indianexpress.com/article/business/aviation/us-faa-federal-aviation-administration-grounds-departing-flights-10962368/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+     "url": "https://www.news18.com/videos/india/mekedatu-dam-row-tamil-nadu-congress-pushes-back-at-dk-shivakumar-s-no-consent-stand-n18-10425187.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T21:34:47+00:00"
+     "at": "2026-11-14T04:44:41+00:00"
     }
    ],
    "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Guardian Media Group",
-    "google-news:U.S. flights resume after hours-long outage as FAA lifts nationwide ground stop"
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
-    "IN": 3
+    "IN": 6,
+    "IN-nation": 10
    },
-   "top_score": 0.9,
+   "top_score": 0.915,
    "top_headlines": [
-    "U.S. flights resume after hours-long outage as FAA lifts nationwide ground stop",
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
-   "hindi_owners": []
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -362,107 +352,105 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
+   "id": "kh-20261114-Q335357",
+   "qid": "Q335357",
+   "title": "Federal Aviation Administration",
+   "name": "Federal Aviation Administration",
+   "phrase": "FAA",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "FAA lifts nationwide ground stop on all US flights",
    "story_keys": [
-    "outage"
+    "flight",
+    "ground",
+    "nationwide",
+    "stop"
    ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T07:00:00+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T02:59:38+00:00",
    "owners": [
     "HT Media",
-    "Guardian Media Group",
-    "India Today Group",
-    "BBC"
+    "Network18",
+    "France Médias Monde",
+    "Bennett, Coleman & Co."
    ],
    "fame": 225000,
    "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-    "The big Microsoft outage, AI and a comprehension debt",
-    "Microsoft says making progress fixing one of its longest outages",
-    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "FAA lifts nationwide ground stop on all US flights",
+    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+    "FAA flight ground stop disrupts sports travel",
+    "U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
-   "hindi_headlines": [
-    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
-    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
-   ],
-   "hindi_news": 2,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
+     "title": "FAA lifts nationwide ground stop on all US flights",
+     "url": "https://www.france24.com/en/video/20261114-faa-lifts-nationwide-ground-stop-on-all-us-flights",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T17:41:15+00:00"
+     "at": "2026-11-14T02:50:21+00:00"
     },
     {
-     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "FAA flight ground stop disrupts sports travel",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T07:00:00+00:00"
+     "at": "2026-11-14T02:59:38+00:00"
     },
     {
-     "title": "Microsoft says making progress fixing one of its longest outages",
-     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
+     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+     "url": "https://www.livemint.com/news/us-news/us-faa-grounds-flights-nationwide-for-second-time-since-9-11-what-caused-the-disruption-as-10-000-flights-face-delays-11794618671184.html",
      "outlet": "Mint",
      "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T16:01:50+00:00"
-    },
-    {
-     "title": "The big Microsoft outage, AI and a comprehension debt",
-     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:02:56+00:00"
+     "at": "2026-11-14T01:22:04+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "outlet:Network18",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
    "top": {
     "IN": 4
    },
    "top_score": 0.85,
    "top_headlines": [
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
+   "hindi_owners": []
   },
   {
    "qid": "Q142149760",
@@ -499,9 +487,9 @@
    ],
    "has_coords": true,
    "top": {
-    "IN": 11
+    "IN": 12
    },
-   "top_score": 0.5,
+   "top_score": 0.45,
    "top_headlines": [
     "All passengers, crew on New Orleans cruise ship survive crash with tanker on Mississippi River"
    ],
@@ -510,15 +498,13 @@
   {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
-   "fame": 175000,
+   "fame": 125000,
    "views": 0,
    "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-11-13T12:55:01+00:00",
+   "news": 125000,
+   "news_at": "2026-11-13T08:00:33+00:00",
    "headlines": [
-    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
-    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -529,38 +515,10 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
-    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
-    "outlet:Indian Express Group",
-    "outlet:HT Media"
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai"
    ],
-   "owners": [
-    "Indian Express Group",
-    "HT Media"
-   ],
-   "reports": [
-    {
-     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:55:01+00:00"
-    },
-    {
-     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
-     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:49:45+00:00"
-    }
-   ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q29879031",
    "kind": "death",
    "category": "death",
@@ -571,160 +529,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261114-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
-   "story_keys": [
-    "back",
-    "build",
-    "hits",
-    "pushe",
-    "right",
-    "row",
-    "stand",
-    "water"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T11:00:39+00:00",
-   "owners": [
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "The Hindu Group",
-    "Indian Express Group",
-    "NDTV"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
-    "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
-    "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
-    "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
-    "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "मेकेदाटु",
-   "reports": [
-    {
-     "title": "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress",
-     "url": "https://www.ndtv.com/india-news/congress-vs-congress-dk-shivakumars-mekedatu-dam-push-riles-up-party-in-tamil-nadu-12325674#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T11:00:39+00:00"
-    },
-    {
-     "title": "‘Unacceptable’: TN Congress chief hits out at DK Shivakumar over Mekedatu dam remarks",
-     "url": "https://indianexpress.com/article/india/cauvery-mekedatu-dam-dispute-manickam-tagore-dk-shivakumar-10963029/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:43:15+00:00"
-    },
-    {
-     "title": "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
-     "url": "https://www.thehindu.com/news/national/karnataka/mekedatu-is-karnatakas-right-we-will-build-dam-and-release-tamil-nadus-share-of-water-dk-shivakumar/article71701313.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:16:26+00:00"
-    },
-    {
-     "title": "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-tamil-nadu-karnataka-manickam-tagore-opposes-dk-shivakumar-3038782-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:15:35+00:00"
-    },
-    {
-     "title": "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-     "url": "https://timesofindia.indiatimes.com/india/mekedatu-dam-row-stalin-seeks-united-tamil-nadu-stand-asks-vijay-to-call-all-party-meeting/articleshow/135827511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:06:10+00:00"
-    },
-    {
-     "title": "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
-     "url": "https://www.news18.com/india/mekedatu-dam-row-dk-shivakumar-defies-tamil-nadu-critics-says-karnataka-has-right-to-build-project-ws-l-10425310.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T08:49:07+00:00"
-    },
-    {
-     "title": "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
-     "url": "https://timesofindia.indiatimes.com/india/it-is-my-state-my-right-dk-shivakumar-hits-back-at-tamil-nadu-congress-over-mekedatu-dam-row/articleshow/135826537.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:49:05+00:00"
-    },
-    {
-     "title": "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
-     "url": "https://www.news18.com/videos/india/cauvery-water-war-dk-shivakumar-says-karnataka-has-the-right-to-build-mekedatu-dam-news18-10425410.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:15:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
-    "India News Live Updates, 14 November 2026: Rahul Gandhi slams BJP-RSS over gig workers’ rights at Telangana rally"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q5213677",
@@ -886,183 +690,89 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
+   "id": "kh-20261114-Q140568762",
+   "qid": "Q140568762",
+   "title": "2027 AFC U-17 Asian Cup",
+   "name": "2027 AFC U-17 Asian Cup",
+   "phrase": "U Asia Cup",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Noel Tata worries market listing will change the 'Tata way'",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
    "story_keys": [
-    "change",
-    "listing",
-    "way'"
+    "final"
    ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T11:43:40+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T10:45:07+00:00",
    "owners": [
-    "Indian Express Group",
-    "HT Media",
     "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Noel Tata worries market listing will change the 'Tata way'",
-    "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-    "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy"
-   ],
-   "hindi_headlines": [
-    "'मालिक न तो रिटायर होते हैं, न खत्‍म और न ही खरीदे जा सकते', नोएल टाटा ने समझाया- क्‍यों Tata Sons का प्राइवेट रहना है जरूरी"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/will-change-the-tata-way-noel-warns-tata-sons-listing-could-put-profits-ahead-of-philanthropy/articleshow/135831024.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T11:43:40+00:00"
-    },
-    {
-     "title": "Noel Tata worries market listing will change the 'Tata way'",
-     "url": "https://www.hindustantimes.com/india-news/noel-tata-worries-market-listing-will-change-the-tata-way-hindustan-times-leadership-summit-101794645066605.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T08:49:20+00:00"
-    },
-    {
-     "title": "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-     "url": "https://indianexpress.com/article/business/tata-sons-listing-tata-trusts-governance-dispute-10962068/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:41:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q16122677",
-   "qid": "Q16122677",
-   "title": "Vijay Singh (civil servant)",
-   "name": "Vijay Singh",
-   "phrase": "Srinivasan Vijay Singh",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-   "story_keys": [
-    "call",
-    "him"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T11:10:08+00:00",
-   "owners": [
     "The Hindu Group",
-    "Indian Express Group",
-    "NDTV"
+    "India Today Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-    "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-    "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call"
+    "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+    "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+    "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
    "abroad": false,
    "label_hi": null,
    "reports": [
     {
-     "title": "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call",
-     "url": "https://sports.ndtv.com/cricket/its-not-often-you-get-a-player-like-hardik-pandya-punjab-kings-co-owner-explains-arshdeep-singh-trade-call-12325821#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
+     "url": "https://www.indiatoday.in/sports/cricket/story/aaryavir-sehwag-fifty-virat-kohli-celebration-ind-vs-pak-u19-asia-cup-final-3038875-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T11:10:08+00:00"
+     "at": "2026-11-14T10:45:07+00:00"
     },
     {
-     "title": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-     "url": "https://indianexpress.com/article/india/jitu-patwari-calls-himself-digvijaya-singhs-political-son-but-bjp-has-a-warning-for-him-10962926/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:11:34+00:00"
-    },
-    {
-     "title": "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-     "url": "https://www.thehindu.com/business/tata-feud-venu-srinivasan-vijay-singh-hit-back-at-khambata-accuse-him-of-ignoring-governance-failures/article71699470.ece",
+     "title": "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T17:40:48+00:00"
+     "at": "2026-11-14T10:08:45+00:00"
+    },
+    {
+     "title": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-pakistan-u19-asia-cup-final-live-updates-ind-vs-pak-scorecard-sehwag-dravid-playing-xi-live-streaming-weather-oman-latest-news/liveblog/135820635.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:16:20+00:00"
     }
    ],
    "via": [
+    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
+    "outlet:India Today Group"
    ],
    "top": {
-    "IN": 16
+    "IN": 5
    },
-   "top_score": 0.25,
+   "top_score": 0.8,
    "top_headlines": [
-    "Khambata 'strategised' to oust Srinivasan, say Tata Trusts VCs"
+    "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261114-Q16186720",
@@ -1202,6 +912,58 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q142131356",
+   "title": "2026 New York City building collapse",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-14T12:00:44+00:00",
+   "headlines": [
+    "‘Enough is enough’: rising number of deadly ebike battery fires spark fear in New York City"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:‘Enough is enough’: rising number of deadly ebike battery fires spark fear in New York City",
+    "outlet:Guardian Media Group"
+   ],
+   "owners": [
+    "Guardian Media Group"
+   ],
+   "reports": [
+    {
+     "title": "‘Enough is enough’: rising number of deadly ebike battery fires spark fear in New York City",
+     "url": "https://www.theguardian.com/us-news/2026/nov/14/new-york-city-ebike-battery-fires-deaths",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T12:00:44+00:00"
+    }
+   ],
+   "id": "wk-Q142131356",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-11",
+   "coords": [
+    40.63897,
+    -73.95383
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q4795757",
@@ -1535,129 +1297,12 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261114-Q130390376",
-   "qid": "Q130390376",
-   "title": "Vaibhav Sooryavanshi",
-   "name": "Vaibhav Suryavanshi",
-   "phrase": "Vaibhav Sooryavanshi",
+   "id": "kh-20261114-Q17089931",
+   "qid": "Q17089931",
+   "title": "D. K. Shivakumar",
+   "name": "D. K. Shivakumar",
+   "phrase": "DK Shivakumar",
    "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-   "story_keys": [
-    "become",
-    "captain",
-    "men",
-    "vaibhav",
-    "youngest"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T10:12:49+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "ABP Group",
-    "TV9 Network",
-    "Network18",
-    "Amar Ujala"
-   ],
-   "fame": 300000,
-   "news": 300000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-    "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-    "Sooryavanshi now youngest captain in men's T20",
-    "Sooryavanshi becomes youngest captain in men's T20 cricket history"
-   ],
-   "hindi_headlines": [
-    "वैभव सूर्यवंशी पहले मैच में फ्लॉप, सूर्यकुमार यादव ने 21 बॉल में ठोके 60, SMAT का जोरदार आगाज",
-    "Vaibhav Sooryavanshi: 15 साल के वैभव सूर्यवंशी ने तोड़ा एक और वर्ल्ड रिकॉर्ड, बने सबसे युवा कप्तान, पर नहीं चला बल्ला",
-    "जिया हो बिहार के लाला...छठ पर वैभव सूर्यवंशी ने रचा इतिहास, बने दुनिया के सबसे युवा T20 कप्तान",
-    "वैभव सूर्यवंशी ने बनाया कप्तानी का 'वर्ल्ड रिकॉर्ड', लिख डाला नया इतिहास",
-    "सैयद मुश्ताक अली ट्रॉफी: टी20 के सबसे युवा कप्तान बने वैभव सूर्यवंशी, किसे पीछे छोड़ा? संभाली बिहार की कमान"
-   ],
-   "hindi_news": 6,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "वैभव सूर्यवंशी",
-   "reports": [
-    {
-     "title": "Sooryavanshi becomes youngest captain in men's T20 cricket history",
-     "url": "https://www.thehindu.com/sport/cricket/sooryavanshi-becomes-youngest-captain-in-mens-t20-cricket-history/article71701393.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:12:49+00:00"
-    },
-    {
-     "title": "Sooryavanshi now youngest captain in men's T20",
-     "url": "https://economictimes.indiatimes.com/news/sports/cricket/15-year-old-vaibhav-sooryavanshi-becomes-youngest-captain-in-mens-t20-history/articleshow/135826312.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:36:01+00:00"
-    },
-    {
-     "title": "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/vaibhav-sooryavanshi-scripts-history-becomes-youngest-captain-in-mens-t20-cricket-history/articleshow/135824695.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T06:17:52+00:00"
-    },
-    {
-     "title": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-     "url": "https://www.hindustantimes.com/cricket/vaibhav-sooryavanshi-15-becomes-youngest-ever-captain-in-mens-t20s-101794627738655.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T05:22:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:TV9 Network",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "google-news:वैभव सूर्यवंशी ने चकनाचूर किया टी20 क्रिकेट में वर्ल्ड रिकॉर्ड, 15 साल की उम्र में रचा ऐतिहासिक कीर्तिमान"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "ABP Group",
-    "TV9 Network",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
@@ -1676,23 +1321,21 @@
    "news_at": "2026-11-14T11:00:39+00:00",
    "owners": [
     "Network18",
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "The Hindu Group",
-    "Indian Express Group",
     "NDTV"
    ],
-   "fame": 150000,
-   "news": 150000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
     "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
-    "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
     "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
-    "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back"
+    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
+    "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
+    "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1702,7 +1345,7 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "मेकेदाटु",
+   "label_hi": "डी. के. शिवकुमार",
    "reports": [
     {
      "title": "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress",
@@ -1713,16 +1356,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T11:00:39+00:00"
-    },
-    {
-     "title": "‘Unacceptable’: TN Congress chief hits out at DK Shivakumar over Mekedatu dam remarks",
-     "url": "https://indianexpress.com/article/india/cauvery-mekedatu-dam-dispute-manickam-tagore-dk-shivakumar-10963029/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:43:15+00:00"
     },
     {
      "title": "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
@@ -1745,16 +1378,6 @@
      "at": "2026-11-14T09:15:35+00:00"
     },
     {
-     "title": "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-     "url": "https://timesofindia.indiatimes.com/india/mekedatu-dam-row-stalin-seeks-united-tamil-nadu-stand-asks-vijay-to-call-all-party-meeting/articleshow/135827511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:06:10+00:00"
-    },
-    {
      "title": "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
      "url": "https://www.news18.com/india/mekedatu-dam-row-dk-shivakumar-defies-tamil-nadu-critics-says-karnataka-has-right-to-build-project-ws-l-10425310.html",
      "outlet": "News18",
@@ -1765,16 +1388,6 @@
      "at": "2026-11-14T08:49:07+00:00"
     },
     {
-     "title": "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
-     "url": "https://timesofindia.indiatimes.com/india/it-is-my-state-my-right-dk-shivakumar-hits-back-at-tamil-nadu-congress-over-mekedatu-dam-row/articleshow/135826537.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:49:05+00:00"
-    },
-    {
      "title": "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
      "url": "https://www.news18.com/videos/india/cauvery-water-war-dk-shivakumar-says-karnataka-has-the-right-to-build-mekedatu-dam-news18-10425410.html",
      "outlet": "News18",
@@ -1783,40 +1396,132 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T07:15:42+00:00"
+    },
+    {
+     "title": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+     "url": "https://www.news18.com/videos/india/mekedatu-dam-row-tamil-nadu-congress-pushes-back-at-dk-shivakumar-s-no-consent-stand-n18-10425187.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T04:44:41+00:00"
     }
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
-    "IN": 6
+    "IN": 6,
+    "IN-nation": 10
    },
-   "top_score": 0.75,
+   "top_score": 0.915,
    "top_headlines": [
-    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
-    "India News Live Updates, 14 November 2026: Rahul Gandhi slams BJP-RSS over gig workers’ rights at Telangana rally"
+    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261114-Q140568762",
+   "qid": "Q140568762",
+   "title": "2027 AFC U-17 Asian Cup",
+   "name": "2027 AFC U-17 Asian Cup",
+   "phrase": "U Asia Cup",
+   "person": false,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+   "story_keys": [
+    "final"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T10:45:07+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "India Today Group"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+    "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+    "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
+     "url": "https://www.indiatoday.in/sports/cricket/story/aaryavir-sehwag-fifty-virat-kohli-celebration-ind-vs-pak-u19-asia-cup-final-3038875-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T10:45:07+00:00"
+    },
+    {
+     "title": "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T10:08:45+00:00"
+    },
+    {
+     "title": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-pakistan-u19-asia-cup-final-live-updates-ind-vs-pak-scorecard-sehwag-dravid-playing-xi-live-streaming-weather-oman-latest-news/liveblog/135820635.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:16:20+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group"
+   ],
+   "top": {
+    "IN": 5
+   },
+   "top_score": 0.8,
+   "top_headlines": [
+    "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q29879031",
    "title": "C. S. Karnan",
-   "fame": 175000,
+   "fame": 125000,
    "views": 0,
    "traffic": 0,
-   "news": 175000,
-   "news_at": "2026-11-13T12:55:01+00:00",
+   "news": 125000,
+   "news_at": "2026-11-13T08:00:33+00:00",
    "headlines": [
-    "C.S. Karnan, controversial former High Court judge, passes away in Chennai",
-    "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-    "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71"
+    "C.S. Karnan, controversial former High Court judge, passes away in Chennai"
    ],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1827,38 +1532,10 @@
    ],
    "label_hi": "सी एस कर्णन",
    "via": [
-    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai",
-    "google-news:Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-    "google-news:Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
-    "outlet:Indian Express Group",
-    "outlet:HT Media"
+    "google-news:C.S. Karnan, controversial former High Court judge, passes away in Chennai"
    ],
-   "owners": [
-    "Indian Express Group",
-    "HT Media"
-   ],
-   "reports": [
-    {
-     "title": "Caste, confrontation and contempt: Former High Court judge C S Karnan dies at 71",
-     "url": "https://indianexpress.com/article/india/cs-karnan-dead-former-high-court-judge-contempt-case-obituary-10961980/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T12:55:01+00:00"
-    },
-    {
-     "title": "Former Madras HC judge CS Karnan, first sitting judge jailed for contempt, dies at 71",
-     "url": "https://www.hindustantimes.com/india-news/former-madras-hc-judge-cs-karnan-first-sitting-judge-jailed-for-contempt-dies-at-71-101794566985763.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T10:49:45+00:00"
-    }
-   ],
+   "owners": [],
+   "reports": [],
    "id": "wk-Q29879031",
    "kind": "death",
    "category": "death",
@@ -1985,109 +1662,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-   "story_keys": [
-    "outage"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T07:00:00+00:00",
-   "owners": [
-    "HT Media",
-    "Guardian Media Group",
-    "India Today Group",
-    "BBC"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-    "The big Microsoft outage, AI and a comprehension debt",
-    "Microsoft says making progress fixing one of its longest outages",
-    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
-   ],
-   "hindi_headlines": [
-    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
-    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
-   ],
-   "hindi_news": 2,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-13T17:41:15+00:00"
-    },
-    {
-     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:00:00+00:00"
-    },
-    {
-     "title": "Microsoft says making progress fixing one of its longest outages",
-     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T16:01:50+00:00"
-    },
-    {
-     "title": "The big Microsoft outage, AI and a comprehension debt",
-     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:02:56+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
-   ],
-   "top": {
-    "IN": 4
-   },
-   "top_score": 0.85,
-   "top_headlines": [
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261114-Q16186720",
    "qid": "Q16186720",
    "title": "S. Jaishankar",
@@ -2196,92 +1770,109 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q16122677",
-   "qid": "Q16122677",
-   "title": "Vijay Singh (civil servant)",
-   "name": "Vijay Singh",
-   "phrase": "Srinivasan Vijay Singh",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
+   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
    "story_keys": [
-    "call",
-    "him"
+    "outage"
    ],
    "date": "2026-11-13",
-   "news_at": "2026-11-14T11:10:08+00:00",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
+    "HT Media",
+    "Guardian Media Group",
     "The Hindu Group",
-    "Indian Express Group",
-    "NDTV"
+    "India Today Group",
+    "BBC"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-    "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-    "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call"
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft outage hits businesses worldwide; India feels impact",
+    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
    ],
-   "region": "india",
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": null,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
    "reports": [
     {
-     "title": "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call",
-     "url": "https://sports.ndtv.com/cricket/its-not-often-you-get-a-player-like-hardik-pandya-punjab-kings-co-owner-explains-arshdeep-singh-trade-call-12325821#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
      "lang": "en",
-     "at": "2026-11-14T11:10:08+00:00"
+     "at": "2026-11-13T17:41:15+00:00"
     },
     {
-     "title": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-     "url": "https://indianexpress.com/article/india/jitu-patwari-calls-himself-digvijaya-singhs-political-son-but-bjp-has-a-warning-for-him-10962926/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T09:11:34+00:00"
+     "at": "2026-11-14T07:00:00+00:00"
     },
     {
-     "title": "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-     "url": "https://www.thehindu.com/business/tata-feud-venu-srinivasan-vijay-singh-hit-back-at-khambata-accuse-him-of-ignoring-governance-failures/article71699470.ece",
+     "title": "Microsoft outage hits businesses worldwide; India feels impact",
+     "url": "https://www.thehindu.com/sci-tech/technology/microsoft-outage-hits-businesses-worldwide-india-feels-impact/article71698919.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T17:40:48+00:00"
+     "at": "2026-11-14T01:51:27+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
     }
    ],
    "via": [
+    "outlet:HT Media",
+    "outlet:Guardian Media Group",
     "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
    ],
    "top": {
-    "IN": 16
+    "IN": 15
    },
-   "top_score": 0.25,
+   "top_score": 0.3,
    "top_headlines": [
-    "Khambata 'strategised' to oust Srinivasan, say Tata Trusts VCs"
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "other"
   },
   {
    "id": "kh-20261114-Q62833385",
@@ -2379,97 +1970,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Noel Tata worries market listing will change the 'Tata way'",
-   "story_keys": [
-    "change",
-    "listing",
-    "way'"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T11:43:40+00:00",
-   "owners": [
-    "Indian Express Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Noel Tata worries market listing will change the 'Tata way'",
-    "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-    "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy"
-   ],
-   "hindi_headlines": [
-    "'मालिक न तो रिटायर होते हैं, न खत्‍म और न ही खरीदे जा सकते', नोएल टाटा ने समझाया- क्‍यों Tata Sons का प्राइवेट रहना है जरूरी"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/will-change-the-tata-way-noel-warns-tata-sons-listing-could-put-profits-ahead-of-philanthropy/articleshow/135831024.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T11:43:40+00:00"
-    },
-    {
-     "title": "Noel Tata worries market listing will change the 'Tata way'",
-     "url": "https://www.hindustantimes.com/india-news/noel-tata-worries-market-listing-will-change-the-tata-way-hindustan-times-leadership-summit-101794645066605.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T08:49:20+00:00"
-    },
-    {
-     "title": "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-     "url": "https://indianexpress.com/article/business/tata-sons-listing-tata-trusts-governance-dispute-10962068/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:41:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "qid": "Q5213677",
@@ -3470,263 +2970,257 @@
  ],
  "notes": [
   "revisit kh-20261114-Q10218-update: 5 owners' new reports on Rahul Gandhi (1030 views before); revisit kh-20261114-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit kh-20261114-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261114-Q163225-update: 5 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1726 headlines from 50 feeds (19 owners), 14 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261114-Q130390376, kh-20261114-Q335357, kh-20261114-Q118125232, kh-20261114-Q2283; dropped: explainer Nepal’s Janakpur Dham: fewer than 3 owners' headlines name it and the story; explainer HT Leadership Summit / Bharat Summit: no Wikipedia article that can be its centre; explainer SMS: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1690 headlines from 48 feeds (18 owners), 7 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261114-Q2283, kh-20261114-Q17089931, kh-20261114-Q118125232, kh-20261114-Q335357; dropped: explainer HT Leadership Summit / Bharat Summit: no Wikipedia article that can be its centre; explainer SMS: fewer than 3 owners' headlines name it and the story; explainer Sonia Gandhi: fewer than 3 owners' headlines name it and the story"
+ ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1726,
-  "feeds": 50,
-  "owners": 19,
-  "matched": 14,
-  "corroborated": 10
+  "headlines": 1690,
+  "feeds": 48,
+  "owners": 18,
+  "matched": 7,
+  "corroborated": 7
  },
  "emerging": [],
  "explainers": [
   {
-   "id": "kh-20261114-Q130390376",
-   "qid": "Q130390376",
-   "title": "Vaibhav Sooryavanshi",
-   "name": "Vaibhav Suryavanshi",
-   "phrase": "Vaibhav Sooryavanshi",
-   "person": true,
+   "id": "kh-20261114-Q2283",
+   "qid": "Q2283",
+   "title": "Microsoft",
+   "name": "Microsoft",
+   "phrase": "Microsoft",
+   "person": false,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
    "story_keys": [
-    "become",
-    "captain",
-    "men",
-    "vaibhav",
-    "youngest"
+    "outage"
    ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T10:12:49+00:00",
+   "date": "2026-11-13",
+   "news_at": "2026-11-14T07:00:00+00:00",
    "owners": [
     "HT Media",
-    "Bennett, Coleman & Co.",
+    "Guardian Media Group",
     "The Hindu Group",
-    "ABP Group",
-    "TV9 Network",
-    "Network18",
-    "Amar Ujala"
+    "India Today Group",
+    "BBC"
    ],
-   "fame": 300000,
-   "news": 300000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-    "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-    "Sooryavanshi now youngest captain in men's T20",
-    "Sooryavanshi becomes youngest captain in men's T20 cricket history"
+    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+    "The big Microsoft outage, AI and a comprehension debt",
+    "Microsoft outage hits businesses worldwide; India feels impact",
+    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
    ],
    "hindi_headlines": [
-    "वैभव सूर्यवंशी पहले मैच में फ्लॉप, सूर्यकुमार यादव ने 21 बॉल में ठोके 60, SMAT का जोरदार आगाज",
-    "Vaibhav Sooryavanshi: 15 साल के वैभव सूर्यवंशी ने तोड़ा एक और वर्ल्ड रिकॉर्ड, बने सबसे युवा कप्तान, पर नहीं चला बल्ला",
-    "जिया हो बिहार के लाला...छठ पर वैभव सूर्यवंशी ने रचा इतिहास, बने दुनिया के सबसे युवा T20 कप्तान",
-    "वैभव सूर्यवंशी ने बनाया कप्तानी का 'वर्ल्ड रिकॉर्ड', लिख डाला नया इतिहास",
-    "सैयद मुश्ताक अली ट्रॉफी: टी20 के सबसे युवा कप्तान बने वैभव सूर्यवंशी, किसे पीछे छोड़ा? संभाली बिहार की कमान"
+    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
+    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
    ],
-   "hindi_news": 6,
+   "hindi_news": 2,
+   "geos": [],
+   "region": "world",
+   "india_link": true,
+   "abroad": true,
+   "label_hi": "माइक्रोसॉफ़्ट",
+   "reports": [
+    {
+     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-13T17:41:15+00:00"
+    },
+    {
+     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
+     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T07:00:00+00:00"
+    },
+    {
+     "title": "Microsoft outage hits businesses worldwide; India feels impact",
+     "url": "https://www.thehindu.com/sci-tech/technology/microsoft-outage-hits-businesses-worldwide-india-feels-impact/article71698919.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:51:27+00:00"
+    },
+    {
+     "title": "The big Microsoft outage, AI and a comprehension debt",
+     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-13T15:02:56+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Guardian Media Group",
+    "outlet:The Hindu Group",
+    "outlet:India Today Group",
+    "outlet:BBC",
+    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261114-Q17089931",
+   "qid": "Q17089931",
+   "title": "D. K. Shivakumar",
+   "name": "D. K. Shivakumar",
+   "phrase": "DK Shivakumar",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+   "story_keys": [
+    "back",
+    "build",
+    "hits",
+    "pushe",
+    "right",
+    "row",
+    "stand",
+    "water"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T11:00:39+00:00",
+   "owners": [
+    "Network18",
+    "India Today Group",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+    "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
+    "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
+    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
+    "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
+    "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "वैभव सूर्यवंशी",
+   "label_hi": "डी. के. शिवकुमार",
    "reports": [
     {
-     "title": "Sooryavanshi becomes youngest captain in men's T20 cricket history",
-     "url": "https://www.thehindu.com/sport/cricket/sooryavanshi-becomes-youngest-captain-in-mens-t20-cricket-history/article71701393.ece",
+     "title": "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress",
+     "url": "https://www.ndtv.com/india-news/congress-vs-congress-dk-shivakumars-mekedatu-dam-push-riles-up-party-in-tamil-nadu-12325674#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T11:00:39+00:00"
+    },
+    {
+     "title": "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
+     "url": "https://www.thehindu.com/news/national/karnataka/mekedatu-is-karnatakas-right-we-will-build-dam-and-release-tamil-nadus-share-of-water-dk-shivakumar/article71701313.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T10:12:49+00:00"
+     "at": "2026-11-14T10:16:26+00:00"
     },
     {
-     "title": "Sooryavanshi now youngest captain in men's T20",
-     "url": "https://economictimes.indiatimes.com/news/sports/cricket/15-year-old-vaibhav-sooryavanshi-becomes-youngest-captain-in-mens-t20-history/articleshow/135826312.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
+     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-tamil-nadu-karnataka-manickam-tagore-opposes-dk-shivakumar-3038782-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T07:36:01+00:00"
+     "at": "2026-11-14T09:15:35+00:00"
     },
     {
-     "title": "Vaibhav Sooryavanshi breaks men's T20 world record at 15 years and 232 days",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/vaibhav-sooryavanshi-scripts-history-becomes-youngest-captain-in-mens-t20-cricket-history/articleshow/135824695.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T06:17:52+00:00"
-    },
-    {
-     "title": "Vaibhav Sooryavanshi, 15, becomes youngest-ever captain in men's T20s",
-     "url": "https://www.hindustantimes.com/cricket/vaibhav-sooryavanshi-15-becomes-youngest-ever-captain-in-mens-t20s-101794627738655.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T05:22:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "outlet:TV9 Network",
-    "outlet:Network18",
-    "outlet:Amar Ujala",
-    "google-news:वैभव सूर्यवंशी ने चकनाचूर किया टी20 क्रिकेट में वर्ल्ड रिकॉर्ड, 15 साल की उम्र में रचा ऐतिहासिक कीर्तिमान"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "ABP Group",
-    "TV9 Network",
-    "Network18"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q335357",
-   "qid": "Q335357",
-   "title": "Federal Aviation Administration",
-   "name": "Federal Aviation Administration",
-   "phrase": "FAA",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "FAA lifts nationwide ground stop on all US flights",
-   "story_keys": [
-    "communication",
-    "flight",
-    "ground",
-    "lift",
-    "nationwide",
-    "stop"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T03:11:35+00:00",
-   "owners": [
-    "Indian Express Group",
-    "HT Media",
-    "Network18",
-    "France Médias Monde",
-    "Bennett, Coleman & Co.",
-    "Guardian Media Group"
-   ],
-   "fame": 275000,
-   "news": 275000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "FAA lifts nationwide ground stop on all US flights",
-    "Flights halted at airports across US due to ATC communications problems: FAA",
-    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-    "FAA flight ground stop disrupts sports travel",
-    "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "FAA lifts nationwide ground stop on all US flights",
-     "url": "https://www.france24.com/en/video/20261114-faa-lifts-nationwide-ground-stop-on-all-us-flights",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T02:50:21+00:00"
-    },
-    {
-     "title": "US flight outage: FAA lifts nationwide ground stop; Trump officials suggest new tech overwhelmed old equipment – as it happened",
-     "url": "https://www.theguardian.com/us-news/live/2026/nov/13/us-politics-latest-news-updates-democrats-republicans-donald-trump-van-hollen-chuck-schumer",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T03:11:35+00:00"
-    },
-    {
-     "title": "FAA flight ground stop disrupts sports travel",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T02:59:38+00:00"
-    },
-    {
-     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
-     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
+     "title": "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
+     "url": "https://www.news18.com/india/mekedatu-dam-row-dk-shivakumar-defies-tamil-nadu-critics-says-karnataka-has-right-to-build-project-ws-l-10425310.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T01:54:41+00:00"
+     "at": "2026-11-14T08:49:07+00:00"
     },
     {
-     "title": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
-     "url": "https://www.livemint.com/news/us-news/us-faa-grounds-flights-nationwide-for-second-time-since-9-11-what-caused-the-disruption-as-10-000-flights-face-delays-11794618671184.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
+     "title": "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
+     "url": "https://www.news18.com/videos/india/cauvery-water-war-dk-shivakumar-says-karnataka-has-the-right-to-build-mekedatu-dam-news18-10425410.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T01:22:04+00:00"
+     "at": "2026-11-14T07:15:42+00:00"
     },
     {
-     "title": "Flights halted at airports across US due to ATC communications problems: FAA",
-     "url": "https://indianexpress.com/article/business/aviation/us-faa-federal-aviation-administration-grounds-departing-flights-10962368/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
+     "url": "https://www.news18.com/videos/india/mekedatu-dam-row-tamil-nadu-congress-pushes-back-at-dk-shivakumar-s-no-consent-stand-n18-10425187.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T21:34:47+00:00"
+     "at": "2026-11-14T04:44:41+00:00"
     }
    ],
    "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
     "outlet:Network18",
-    "outlet:France Médias Monde",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Guardian Media Group",
-    "google-news:U.S. flights resume after hours-long outage as FAA lifts nationwide ground stop"
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "google-news:PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
    "top": {
-    "IN": 3
+    "IN": 6,
+    "IN-nation": 10
    },
-   "top_score": 0.9,
+   "top_score": 0.915,
    "top_headlines": [
-    "U.S. flights resume after hours-long outage as FAA lifts nationwide ground stop",
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar"
    ],
-   "hindi_owners": []
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261114-Q118125232",
@@ -3843,261 +3337,105 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261114-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
+   "id": "kh-20261114-Q335357",
+   "qid": "Q335357",
+   "title": "Federal Aviation Administration",
+   "name": "Federal Aviation Administration",
+   "phrase": "FAA",
    "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
+   "category": "aviation",
+   "category_hi": "विमानन",
+   "story": "FAA lifts nationwide ground stop on all US flights",
    "story_keys": [
-    "outage"
+    "flight",
+    "ground",
+    "nationwide",
+    "stop"
    ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T07:00:00+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T02:59:38+00:00",
    "owners": [
     "HT Media",
-    "Guardian Media Group",
-    "India Today Group",
-    "BBC"
+    "Network18",
+    "France Médias Monde",
+    "Bennett, Coleman & Co."
    ],
    "fame": 225000,
    "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-    "The big Microsoft outage, AI and a comprehension debt",
-    "Microsoft says making progress fixing one of its longest outages",
-    "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "FAA lifts nationwide ground stop on all US flights",
+    "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+    "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+    "FAA flight ground stop disrupts sports travel",
+    "U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
-   "hindi_headlines": [
-    "वैश्विक आउटेज के बाद माइक्रोसॉफ़्ट ने मांफ़ी मांगी, बताया तकनीकी दिक्क़त ख़त्म करने की कोशिश कहां तक पहुंची",
-    "माइक्रोसॉफ्ट सिस्टम ठप के पीछे क्या साइबर अटैक? जानें कैसे हुई इतनी बड़ी गड़बड़ी"
-   ],
-   "hindi_news": 2,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
+   "label_hi": null,
    "reports": [
     {
-     "title": "Microsoft outage: company scrambles to fix global issue that took down Outlook and Teams",
-     "url": "https://www.theguardian.com/technology/2026/nov/13/microsoft-outage-outlook-teams-word-excel-reports",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
+     "title": "FAA lifts nationwide ground stop on all US flights",
+     "url": "https://www.france24.com/en/video/20261114-faa-lifts-nationwide-ground-stop-on-all-us-flights",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-13T17:41:15+00:00"
+     "at": "2026-11-14T02:50:21+00:00"
     },
     {
-     "title": "Microsoft resolves 36-hour outage, restores Outlook, Teams and all other services",
-     "url": "https://www.indiatoday.in/technology/story/microsoft-resolves-outage-after-over-36-hours-says-all-services-including-outlook-and-teams-restored-3038739-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "FAA flight ground stop disrupts sports travel",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/faa-flight-ground-stop-disrupts-nba-nhl-and-college-football-travel-this-weekend/articleshow/135821070.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T07:00:00+00:00"
+     "at": "2026-11-14T02:59:38+00:00"
     },
     {
-     "title": "Microsoft says making progress fixing one of its longest outages",
-     "url": "https://www.livemint.com/news/microsoft-says-making-progress-fixing-one-of-its-longest-outages-11794585527972.html",
+     "title": "FAA Communications Failure Grounds US Flights: Thousands Stranded, Recovery May Take Days | N18",
+     "url": "https://www.news18.com/videos/breakingnews/faa-communications-failure-grounds-us-flights-thousands-stranded-recovery-may-take-days-n18-10425035.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T01:54:41+00:00"
+    },
+    {
+     "title": "US FAA grounds flights nationwide for second time since 9/11: What caused the disruption as 10,000 flights face delays?",
+     "url": "https://www.livemint.com/news/us-news/us-faa-grounds-flights-nationwide-for-second-time-since-9-11-what-caused-the-disruption-as-10-000-flights-face-delays-11794618671184.html",
      "outlet": "Mint",
      "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T16:01:50+00:00"
-    },
-    {
-     "title": "The big Microsoft outage, AI and a comprehension debt",
-     "url": "https://www.hindustantimes.com/india-news/the-big-microsoft-outage-ai-and-a-comprehension-debt-101794582176775.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T15:02:56+00:00"
+     "at": "2026-11-14T01:22:04+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Guardian Media Group",
-    "outlet:India Today Group",
-    "outlet:BBC",
-    "google-news:Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "outlet:Network18",
+    "outlet:France Médias Monde",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
    "top": {
     "IN": 4
    },
    "top_score": 0.85,
    "top_headlines": [
-    "Microsoft Outage updates: Global outage ends after tech giant restores services across all affected systems"
+    "U.S. FAA ground stop updates: Flights resume as hours-long halt lifted; Trump admin. blames 'overloaded' systems"
    ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261114-Q37415",
-   "qid": "Q37415",
-   "title": "Mekedatu",
-   "name": "Mekedaatu",
-   "phrase": "Mekedatu",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
-   "story_keys": [
-    "back",
-    "build",
-    "hits",
-    "pushe",
-    "right",
-    "row",
-    "stand",
-    "water"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T11:00:39+00:00",
-   "owners": [
-    "Network18",
-    "Bennett, Coleman & Co.",
-    "India Today Group",
-    "The Hindu Group",
-    "Indian Express Group",
-    "NDTV"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mekedatu Dam Row: Tamil Nadu Congress Pushes Back At DK Shivakumar's 'No Consent' Stand | N18",
-    "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
-    "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
-    "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
-    "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-    "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "मेकेदाटु",
-   "reports": [
-    {
-     "title": "PM Modi By His Side, DK Shivakumar Pushes For Mekedatu Dam, Triggers Congress vs Congress",
-     "url": "https://www.ndtv.com/india-news/congress-vs-congress-dk-shivakumars-mekedatu-dam-push-riles-up-party-in-tamil-nadu-12325674#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T11:00:39+00:00"
-    },
-    {
-     "title": "‘Unacceptable’: TN Congress chief hits out at DK Shivakumar over Mekedatu dam remarks",
-     "url": "https://indianexpress.com/article/india/cauvery-mekedatu-dam-dispute-manickam-tagore-dk-shivakumar-10963029/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:43:15+00:00"
-    },
-    {
-     "title": "Mekedatu is Karnataka’s right, we will build dam and release Tamil Nadu’s share of water: D.K. Shivakumar",
-     "url": "https://www.thehindu.com/news/national/karnataka/mekedatu-is-karnatakas-right-we-will-build-dam-and-release-tamil-nadus-share-of-water-dk-shivakumar/article71701313.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T10:16:26+00:00"
-    },
-    {
-     "title": "DK Shivakumar pushes for Mekedatu dam in front of PM, TN Congress chief hits back",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/mekedatu-dam-tamil-nadu-karnataka-manickam-tagore-opposes-dk-shivakumar-3038782-2026-11-14?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:15:35+00:00"
-    },
-    {
-     "title": "Mekedatu Dam row: Stalin seeks united TN stand, asks CM Vijay to call all-party meeting",
-     "url": "https://timesofindia.indiatimes.com/india/mekedatu-dam-row-stalin-seeks-united-tamil-nadu-stand-asks-vijay-to-call-all-party-meeting/articleshow/135827511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:06:10+00:00"
-    },
-    {
-     "title": "Mekedatu Dam Row: Congress vs Congress As Tamil Nadu Unit Takes On DK Shivakumar",
-     "url": "https://www.news18.com/india/mekedatu-dam-row-dk-shivakumar-defies-tamil-nadu-critics-says-karnataka-has-right-to-build-project-ws-l-10425310.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T08:49:07+00:00"
-    },
-    {
-     "title": "'My state, my right': DKS hits back at TN Cong over Mekedatu Dam row",
-     "url": "https://timesofindia.indiatimes.com/india/it-is-my-state-my-right-dk-shivakumar-hits-back-at-tamil-nadu-congress-over-mekedatu-dam-row/articleshow/135826537.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:49:05+00:00"
-    },
-    {
-     "title": "Cauvery Water War: DK Shivakumar Says Karnataka Has The Right To Build Mekedatu Dam | News18",
-     "url": "https://www.news18.com/videos/india/cauvery-water-war-dk-shivakumar-says-karnataka-has-the-right-to-build-mekedatu-dam-news18-10425410.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:15:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "PM Modi Inaugurates Bengaluru Metro's Pink Line, Takes Ride With DK Shivakumar",
-    "India News Live Updates, 14 November 2026: Rahul Gandhi slams BJP-RSS over gig workers’ rights at Telangana rally"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
+   "hindi_owners": []
   },
   {
    "id": "kh-20261114-Q62833385",
@@ -4197,183 +3535,89 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261114-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
+   "id": "kh-20261114-Q140568762",
+   "qid": "Q140568762",
+   "title": "2027 AFC U-17 Asian Cup",
+   "name": "2027 AFC U-17 Asian Cup",
+   "phrase": "U Asia Cup",
+   "person": false,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Noel Tata worries market listing will change the 'Tata way'",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
    "story_keys": [
-    "change",
-    "listing",
-    "way'"
+    "final"
    ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T11:43:40+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T10:45:07+00:00",
    "owners": [
-    "Indian Express Group",
-    "HT Media",
     "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Noel Tata worries market listing will change the 'Tata way'",
-    "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-    "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy"
-   ],
-   "hindi_headlines": [
-    "'मालिक न तो रिटायर होते हैं, न खत्‍म और न ही खरीदे जा सकते', नोएल टाटा ने समझाया- क्‍यों Tata Sons का प्राइवेट रहना है जरूरी"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "'Will change Tata way': Noel warns Tata Sons listing may put profits ahead of philanthropy",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/will-change-the-tata-way-noel-warns-tata-sons-listing-could-put-profits-ahead-of-philanthropy/articleshow/135831024.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T11:43:40+00:00"
-    },
-    {
-     "title": "Noel Tata worries market listing will change the 'Tata way'",
-     "url": "https://www.hindustantimes.com/india-news/noel-tata-worries-market-listing-will-change-the-tata-way-hindustan-times-leadership-summit-101794645066605.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T08:49:20+00:00"
-    },
-    {
-     "title": "Tata power tussle: Venu, Vijay Singh defend listing, flag 7-month leadership uncertainty",
-     "url": "https://indianexpress.com/article/business/tata-sons-listing-tata-trusts-governance-dispute-10962068/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-13T13:41:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261114-Q16122677",
-   "qid": "Q16122677",
-   "title": "Vijay Singh (civil servant)",
-   "name": "Vijay Singh",
-   "phrase": "Srinivasan Vijay Singh",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-   "story_keys": [
-    "call",
-    "him"
-   ],
-   "date": "2026-11-13",
-   "news_at": "2026-11-14T11:10:08+00:00",
-   "owners": [
     "The Hindu Group",
-    "Indian Express Group",
-    "NDTV"
+    "India Today Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-    "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-    "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call"
+    "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+    "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+    "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
    "abroad": false,
    "label_hi": null,
    "reports": [
     {
-     "title": "\"It's Not Often You Get A Player Like Hardik Pandya\": Punjab Kings Co-Owner Explains Arshdeep Singh Trade Call",
-     "url": "https://sports.ndtv.com/cricket/its-not-often-you-get-a-player-like-hardik-pandya-punjab-kings-co-owner-explains-arshdeep-singh-trade-call-12325821#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Aaryavir Sehwag brings Kohli vibes to U19 Asia Cup final with brave fifty",
+     "url": "https://www.indiatoday.in/sports/cricket/story/aaryavir-sehwag-fifty-virat-kohli-celebration-ind-vs-pak-u19-asia-cup-final-3038875-2026-11-14?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T11:10:08+00:00"
+     "at": "2026-11-14T10:45:07+00:00"
     },
     {
-     "title": "Jitu Patwari calls himself Digvijaya Singh’s ‘political son’ but BJP has a warning for him",
-     "url": "https://indianexpress.com/article/india/jitu-patwari-calls-himself-digvijaya-singhs-political-son-but-bjp-has-a-warning-for-him-10962926/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:11:34+00:00"
-    },
-    {
-     "title": "Tata feud: Venu Srinivasan, Vijay Singh hit back at Khambata, accuse him of ignoring governance failures",
-     "url": "https://www.thehindu.com/business/tata-feud-venu-srinivasan-vijay-singh-hit-back-at-khambata-accuse-him-of-ignoring-governance-failures/article71699470.ece",
+     "title": "U19 Asia Cup final: Usman Khan's hundred lifts Pakistan to 337 for 9 against India",
+     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-13T17:40:48+00:00"
+     "at": "2026-11-14T10:08:45+00:00"
+    },
+    {
+     "title": "IND vs PAK, Asia Cup Final: Double blow for India! Pakistan dismiss Raichandani and Dravid",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-pakistan-u19-asia-cup-final-live-updates-ind-vs-pak-scorecard-sehwag-dravid-playing-xi-live-streaming-weather-oman-latest-news/liveblog/135820635.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T02:16:20+00:00"
     }
    ],
    "via": [
+    "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
+    "outlet:India Today Group"
    ],
    "top": {
-    "IN": 16
+    "IN": 5
    },
-   "top_score": 0.25,
+   "top_score": 0.8,
    "top_headlines": [
-    "Khambata 'strategised' to oust Srinivasan, say Tata Trusts VCs"
+    "Usman century and fifties from Qadir and Yousaf set India 338 to win Under-19 Asia Cup"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261114-Q16186720",
