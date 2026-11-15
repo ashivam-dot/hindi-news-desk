@@ -1,30 +1,32 @@
 {
- "at": "2026-11-15T01:35:38+00:00",
+ "at": "2026-11-15T02:08:01+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 150 scored Shorts, lifts {'category:aviation': {'n': 4, 'lift': 1.121, 'typical_views_24h': 103, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.233, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 27 candidates from 24 trending",
-  "revisit kh-20261115-Q10218-update: 3 owners' new reports on Rahul Gandhi (1037 views before); revisit kh-20261115-Q37293-update: 5 owners' new reports on Ramayana (999 views before); revisit kh-20261115-Q9543-update: 2 owners' new reports on Salman Khan (933 views before); revisit kh-20261115-Q163225-update: 3 owners' new reports on Sonia Gandhi (817 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1529 headlines from 47 feeds (17 owners), 7 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261115-Q1156, kh-20261115-Q2866609, kh-20261115-Q1561861, kh-20261115-Q3241458; dropped: explainer Xi Putin: fewer than 3 owners' headlines name it and the story; explainer Kuldeep / NZ Tests Brar: no Wikipedia article that can be its centre; explainer Leadership Summit Economist: fewer than 3 owners' headlines name it and the story",
+  "watch: 29 candidates from 27 trending",
+  "revisit kh-20261115-Q10218-update: 3 owners' new reports on Rahul Gandhi (1037 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (999 views before); revisit Q9543: already revisited today; revisit kh-20261115-Q163225-update: 3 owners' new reports on Sonia Gandhi (817 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its l",
+  "outlets: 1529 headlines from 47 feeds (17 owners), 7 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 12 kh- stories (on): kh-20261115-Q1156, kh-20261115-Q3241458, kh-20261115-Q2866609, kh-20261115-Q130390376; dropped: explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer SCO Civilisational Dialogue / SCO Civilisational Dialogue: no Wikipedia article that can be its centre",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "drop kh-20261115-Q1561861: too low in Google News India's top stories (place 0.33, needs 0.35)",
+  "drop kh-20261115-Q130390376: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261115-Q62833385: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261115-Q16186720: a economy story goes out only near the top of the lists (place 0.42, needs 0.75)",
   "drop wk-Q5564237: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261115-Q276: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261115-Q6573931: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop wk-Q5213677: 86 h old and no longer trending live",
-  "drop wk-Q142084937-2026w46: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261115-Q118125232: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261115-Q1156, kh-20261115-Q10218-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261115-Q16186720, kh-20261115-Q163225-update",
-  "skip kh-20261115-Q1561861: gate: no draft passed the fact checks: these numbers are not in the sources: 14, 2026 (14, 2026 only in one outlet's report: one outlet is not enough); draft wording: 14, 2026. Omit these unsupported numeric claims from narration, title, captions and labels. Keep the independently supported event and attribution. Never guess a replacement amount, change its unit or counted noun, or turn an unsupported amount into a vague claim about it",
-  "skip kh-20261115-Q1156: gate: no draft passed the fact checks: unsupported: पुलिस मामले में आगे की कानूनी कार्रवाई कर रही है।",
-  "later kh-20261115-Q5673850: this run already wrote 2 scripts",
-  "skip kh-20261115-Q9543-update: gate: fewer than 2 independent outlets' articles name Salman Khan",
-  "nothing eligible to publish",
+  "published kh-20261115-Q1156: https://www.youtube.com/shorts/h7ZurDWr5lE",
   "channel: about, playlists done; nothing left to do"
  ],
  "warnings": [
   "kh-20261115-Q3241458: KeyError: 'query'"
- ]
+ ],
+ "published": {
+  "video_id": "h7ZurDWr5lE",
+  "url": "https://www.youtube.com/shorts/h7ZurDWr5lE",
+  "youtube_title": "मुंबई चाबाड हाउस की रेकी का आरोपी केरल में पकड़ा #shorts #mumbai",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
