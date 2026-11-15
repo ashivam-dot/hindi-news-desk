@@ -1,22 +1,21 @@
 {
- "at": "2026-11-15T20:10:09+00:00",
+ "at": "2026-11-15T20:24:35+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 153 scored Shorts, lifts {'category:aviation': {'n': 5, 'lift': 0.951, 'typical_views_24h': 50, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.75, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.253, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {'",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 22 candidates from 21 trending",
+  "watch: 18 candidates from 18 trending",
   "revisit Q10218 (1109 views): 1 owners reported new news on Rahul Gandhi since its last Short; revisit kh-20261116-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit Q9543 (936 views): 1 owners reported new news on Salman Khan since its last Short; revisit Q163225 (814 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q468324 (421 views): 0 o",
-  "outlets: 1614 headlines from 49 feeds (18 owners), 17 matched to articles, 9 candidates with 2+ owners, 2 nw- stories (on): nw-20261115-rajasthan-explosion, nw-20261115-bengal-attack",
-  "explainers: 7 kh- stories (on): kh-20261116-Q37293, kh-20261116-Q486814, kh-20261116-Q18704255, kh-20261116-Q113758110; dropped: explainer Delhi-NCR AQI / Delhi-NCR AQI: no Wikipedia article that can be its centre; explainer ODI Tom Banton: fewer than 3 owners' headlines name it and the story; explainer Piyush Goyal: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503', 'top stories: no Google News India list could be read (no story is ranked by place)']",
+  "outlets: 1569 headlines from 47 feeds (17 owners), 19 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-bengal-attack",
+  "explainers: 7 kh- stories (on): kh-20261116-Q37293, kh-20261116-Q7199798, kh-20261116-Q486814, kh-20261116-Q113758110; dropped: explainer Delhi-NCR AQI / Delhi-NCR AQI: no Wikipedia article that can be its centre; explainer ODI Tom Banton: fewer than 3 owners' headlines name it and the story; explainer Arshdeep: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold nw-20261115-bengal-attack: outside 07:00-24:00 IST",
-  "hold kh-20261116-Q37293: outside 07:00-24:00 IST",
-  "hold nw-20261115-rajasthan-explosion: outside 07:00-24:00 IST",
-  "hold kh-20261116-Q3345479: outside 07:00-24:00 IST",
-  "hold wk-Q5564237: outside 07:00-24:00 IST",
-  "hold kh-20261116-Q18704255: outside 07:00-24:00 IST",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261115-bengal-attack, kh-20261116-Q37293, nw-20261115-rajasthan-explosion; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q7768, kh-20261116-Q37293-update, kh-20261116-Q7747-update",
+  "drop kh-20261116-Q37293: a entertainment story goes out only as a top story (place 0.10, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261116-Q7199798: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "drop kh-20261116-Q3345479: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q142084937-2026w46: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q5564237: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): nw-20261115-bengal-attack, kh-20261116-Q37293; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q7199798, kh-20261116-Q7768, kh-20261116-Q37293-update, kh-20261116-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
