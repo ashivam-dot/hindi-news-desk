@@ -1500,9 +1500,9 @@
   "at": "2026-11-15T01:49:41+00:00"
  },
  "kh-20261115-Q3241458": {
-  "count": 4,
+  "count": 5,
   "reason": "KeyError: 'query'",
-  "at": "2026-11-15T06:57:23+00:00"
+  "at": "2026-11-15T07:11:43+00:00"
  },
  "kh-20261115-Q1156": {
   "count": 1,
@@ -1525,8 +1525,18 @@
   "at": "2026-11-15T06:58:36+00:00"
  },
  "kh-20261115-Q163225-update": {
+  "count": 2,
+  "reason": "gate: no draft passed the fact checks: Rakesh Asthana (राकेश अस्थाना) is not in the sources (only one outlet reports it); CBI (CBI) is not in the sources (only one outlet reports it); \"राकेश अस्थाना बयान अस्थाना ने कहा कि फॉरेंसिक सबूतों से वजह साफ है।\" gives Rakesh Asthana a statement that no 2 out",
+  "at": "2026-11-15T07:47:27+00:00"
+ },
+ "kh-20261115-Q39594": {
   "count": 1,
-  "reason": "gate: no draft passed the fact checks: beat 4 has 15 words; shorten it to about 8 to 9 words, at most 14, while retaining attribution. Do not add beats to evade the whole-report word budget; Rakesh Asthana (राकेश अस्थाना) is not in the sources (only one outlet reports it); beats 2,3,5 name nothing t",
-  "at": "2026-11-15T07:02:26+00:00"
+  "reason": "gate: no draft passed the fact checks: write Tamil Nadu as तमिल नाडु (the Hindi name people know), not तमिलनाडु",
+  "at": "2026-11-15T07:28:29+00:00"
+ },
+ "kh-20261115-Q1057110": {
+  "count": 1,
+  "reason": "gate: no draft passed the fact checks: beats 3,4 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: पुणे, गुवाहाटी, विमान, पुलिस. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow; things with phot",
+  "at": "2026-11-15T07:31:14+00:00"
  }
 }
