@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T10:23:47+00:00",
+ "at": "2026-11-15T10:37:58+00:00",
  "trending": [
   {
    "id": "kh-20261115-Q3241458",
@@ -117,9 +117,13 @@
     "google-news:‘God Save The King’: Lalit Modi announces British citizenship, 16 years after he fled India",
     "google-news:भगोड़े ललित मोदी ने हासिल की ब्रिटिश नागरिकता, खुद की घोषणा, कहा- 'ये एक सौभाग्य है'"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "‘God Save The King’: Lalit Modi announces British citizenship, 16 years after he fled India"
+   ],
    "hindi_owners": []
   },
   {
@@ -151,22 +155,21 @@
    "owners": [
     "HT Media",
     "Network18",
-    "India Today Group",
     "The Hindu Group",
     "Government of India",
     "DB Corp"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction",
     "Guwahati-Bound IndiGo Flight Returns To Pune After Landing Gear Fails To Retract, 192 On Board Safe",
-    "Guwahati-bound IndiGo flight returns to Pune after landing gear glitch mid-air",
     "Guwahati-bound IndiGo flight returns to Pune due to technical issue; all 192 persons onboard safe",
     "IndiGo Pune-Guwahati Flight Makes Emergency Return After Landing Gear Malfunction | News18",
-    "Guwahati-bound IndiGo flight returns to Pune due to technical snag; all passengers safe — Here's all you need to know"
+    "Guwahati-bound IndiGo flight returns to Pune due to technical snag; all passengers safe — Here's all you need to know",
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_headlines": [
     "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह महाराष्ट्र के पुणे में एनएचईसी मल्टी स्टेट सहकारी संस्था का भूमि पूजन करेंगे",
@@ -215,16 +218,6 @@
      "at": "2026-11-15T07:10:46+00:00"
     },
     {
-     "title": "Guwahati-bound IndiGo flight returns to Pune after landing gear glitch mid-air",
-     "url": "https://www.indiatoday.in/india/story/indigo-pune-guwahati-flight-returns-after-take-off-as-landing-gear-fails-to-retract-ptag-3039258-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T06:41:05+00:00"
-    },
-    {
      "title": "Guwahati-Bound IndiGo Flight Returns To Pune After Landing Gear Fails To Retract, 192 On Board Safe",
      "url": "https://www.news18.com/india/indigo-flight-makes-emergency-landing-in-pune-after-landing-gear-fails-to-retract-192-on-board-safe-ws-l-10426326.html",
      "outlet": "News18",
@@ -248,22 +241,21 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:Government of India",
     "outlet:DB Corp",
-    "google-news:Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News",
+    "google-news:IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune",
     "google-news:Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract",
     "google-news:2-day Pune traffic curbs: Routes affected by Amit Shah visit, marathon"
    ],
    "top": {
-    "IN": 3,
+    "IN": 2,
     "IN-nation": 3
    },
-   "top_score": 1.17,
+   "top_score": 1.22,
    "top_headlines": [
-    "Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract",
-    "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News"
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune",
+    "Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract"
    ],
    "hindi_owners": [
     "HT Media",
@@ -393,13 +385,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा"
+    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
+    "google-news:राहुल गांधी पर रवि किशन ने कसा तंज हम उनका फोन टैप कर रहे थे क्योंकि..."
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 9
    },
-   "top_score": 0.39,
+   "top_score": 0.36,
    "top_headlines": [
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
@@ -408,98 +400,6 @@
    ],
    "audience": "india",
    "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261115-Q3345479",
-   "qid": "Q3345479",
-   "title": "Virender Sehwag",
-   "name": "Virender Sehwag",
-   "phrase": "Sehwag",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-   "story_keys": [
-    "son"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:03:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "India Today Group",
-    "TV9 Network",
-    "BBC"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-    "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-    "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-    "Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "hindi_headlines": [
-    "U-19 Asia Cup: जीत से PM नरेंद्र मोदी भी रोमांचित, टीम इंडिया को ऐसे दी बधाई, वीरेंद्र सहवाग ने कही ये बात",
-    "आर्यवीर सहवाग बने अंडर-19 एशिया कप 2026 में 'प्लेयर ऑफ़ द टूर्नामेंट', पिता वीरेंद्र सहवाग ने भारत की जीत पर क्या कहा"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "वीरेंद्र सहवाग",
-   "reports": [
-    {
-     "title": "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/sehwags-son-chanted-sita-ram-for-an-hour-before-indias-win-3039345-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:03:13+00:00"
-    },
-    {
-     "title": "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-     "url": "https://www.thehindu.com/sport/cricket/aaryavir-sehwag-virender-sehwags-son-takes-first-steps-towards-forging-own-identity/article71704216.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T06:29:38+00:00"
-    },
-    {
-     "title": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/virender-sehwags-son-aaryavir-shines-with-361-runs-to-claim-player-of-the-tournament-award-at-u19-asia-cup/articleshow/135835217.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T14:23:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:BBC",
-    "google-news:Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q62833385",
@@ -593,110 +493,15 @@
     "google-news:SpaceX’s Starship returns to launch pad from orbit in victory for company"
    ],
    "top": {
-    "IN": 3
+    "IN": 2
    },
-   "top_score": 0.9,
+   "top_score": 0.95,
    "top_headlines": [
-    "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News"
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-   "story_keys": [
-    "hope",
-    "meeting",
-    "you"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T03:53:53+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "Amar Ujala"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:43:15+00:00"
-    },
-    {
-     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:40:22+00:00"
-    },
-    {
-     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T12:11:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Amar Ujala",
-    "google-news:Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_owners": [
-    "Amar Ujala"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q796885",
@@ -777,9 +582,9 @@
     "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
    "top": {
-    "IN": 12
+    "IN": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.5,
    "top_headlines": [
     "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
@@ -888,12 +693,12 @@
     "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "top": {
-    "IN-nation": 12
+    "IN-nation": 15
    },
-   "top_score": 0.27,
+   "top_score": 0.18,
    "top_headlines": [
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202",
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list"
+    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
+    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -907,23 +712,23 @@
    "phrase": "Miami",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
+   "category": "news",
+   "category_hi": "समाचार",
    "story": "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
    "story_keys": [
-    "aircraft",
     "airport",
     "collision",
     "hit",
     "pilot",
-    "somebody"
+    "somebody",
+    "you"
    ],
    "date": "2026-11-15",
    "news_at": "2026-11-15T09:38:19+00:00",
    "owners": [
+    "India Today Group",
     "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "fame": 200000,
    "news": 200000,
@@ -931,10 +736,8 @@
    "traffic": 0,
    "headlines": [
     "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
-    "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
     "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-    "'Somebody hit us': Audio captures moment jets collided at Miami airport",
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_headlines": [
     "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
@@ -975,88 +778,26 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T07:08:44+00:00"
-    },
-    {
-     "title": "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
-     "url": "https://timesofindia.indiatimes.com/world/us/two-planes-collide-at-miami-airport-passenger-shares-footage-of-crushed-aircraft-nose/articleshow/135847604.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T04:52:37+00:00"
     }
    ],
    "via": [
+    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_owners": [
     "India Today Group"
    ],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "qid": "Q5564237",
-   "title": "Giri Babu",
-   "fame": 182926,
-   "views": 32926,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-11-15T09:22:57+00:00",
-   "headlines": [
-    "Veteran Telugu Actor Giri Babu Passes Away at 80",
-    "Veteran Telugu actor Giri Babu dies at 80"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-14",
-    "google-news:Veteran Telugu Actor Giri Babu Passes Away at 80",
-    "google-news:Veteran Telugu actor Giri Babu dies at 80",
-    "outlet:The Hindu Group"
-   ],
-   "owners": [
-    "The Hindu Group"
-   ],
-   "reports": [
-    {
-     "title": "Veteran Telugu actor Giri Babu dies at 80",
-     "url": "https://www.thehindu.com/news/national/telangana/veteran-telugu-actor-giri-babu-dies-at-80/article71702232.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:22:57+00:00"
-    }
-   ],
-   "id": "wk-Q5564237",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
   },
   {
    "qid": "Q142149760",
@@ -1098,127 +839,91 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141820731",
-   "title": "2026 Karak church shooting",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-15T08:17:36+00:00",
-   "headlines": [
-    "Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "२०२६ करक गिरजा गोलीबारी",
-   "via": [
-    "google-news:Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141820731",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-23",
-   "coords": [
-    31.289434,
-    35.79955
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261115-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
+   "id": "kh-20261115-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
    "story_keys": [
-    "listing"
+    "hope",
+    "meeting",
+    "you"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T16:37:33+00:00",
+   "news_at": "2026-11-15T03:53:53+00:00",
    "owners": [
     "HT Media",
-    "Indian Express Group",
-    "Bennett, Coleman & Co."
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Amar Ujala"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-    "Tata Sons listing could change the ‘Tata way’: Noel"
+    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
    ],
-   "region": "india",
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
    "reports": [
     {
-     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T16:37:33+00:00"
+     "at": "2026-11-15T03:43:15+00:00"
     },
     {
-     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T13:09:51+00:00"
+     "at": "2026-11-15T03:40:22+00:00"
     },
     {
-     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T12:42:39+00:00"
+     "at": "2026-11-14T12:11:05+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -1323,9 +1028,9 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 18
    },
-   "top_score": 0.15,
+   "top_score": 0.09,
    "top_headlines": [
     "Air severe at Delhi's 17 stations, don’t pin too much hope on rain"
    ],
@@ -1419,111 +1124,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q6573931",
-   "qid": "Q6573931",
-   "title": "List of India ODI cricketers",
-   "name": "list of India ODI cricketers",
-   "phrase": "ODI India",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "runs",
-    "serie",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:56:43+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-    "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-    "Batters need to fire as India targets series win",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "भारत के एकदिवसीय क्रिकेट खिलाड़ियों की सूची",
-   "reports": [
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    },
-    {
-     "title": "Batters need to fire as India targets series win",
-     "url": "https://www.thehindu.com/sport/cricket/batters-need-to-fire-as-india-targets-series-win/article71702919.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T20:11:33+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-5th-odi-2026-match-today-scorecard-virat-kohli-rohit-sharma-weather-forecast-live-streaming/liveblog/135837247.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:08:43+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-5th-odi-india-have-100-overs-to-win-series-build-confidence-101794660218979.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:37:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261115-Q276",
    "qid": "Q276",
    "title": "Eurovision Song Contest",
@@ -1606,6 +1206,56 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": "Q5564237",
+   "title": "Giri Babu",
+   "fame": 57926,
+   "views": 32926,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T09:22:57+00:00",
+   "headlines": [
+    "Veteran Telugu actor Giri Babu dies at 80"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [
+    "IN"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14",
+    "google-news:Veteran Telugu actor Giri Babu dies at 80",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Veteran Telugu actor Giri Babu dies at 80",
+     "url": "https://www.thehindu.com/news/national/telangana/veteran-telugu-actor-giri-babu-dies-at-80/article71702232.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:22:57+00:00"
+    }
+   ],
+   "id": "wk-Q5564237",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
   },
   {
    "qid": "Q142084937",
@@ -1931,23 +1581,23 @@
    "phrase": "Miami",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
+   "category": "news",
+   "category_hi": "समाचार",
    "story": "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
    "story_keys": [
-    "aircraft",
     "airport",
     "collision",
     "hit",
     "pilot",
-    "somebody"
+    "somebody",
+    "you"
    ],
    "date": "2026-11-15",
    "news_at": "2026-11-15T09:38:19+00:00",
    "owners": [
+    "India Today Group",
     "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "fame": 200000,
    "news": 200000,
@@ -1955,10 +1605,8 @@
    "traffic": 0,
    "headlines": [
     "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
-    "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
     "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-    "'Somebody hit us': Audio captures moment jets collided at Miami airport",
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_headlines": [
     "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
@@ -1999,30 +1647,20 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T07:08:44+00:00"
-    },
-    {
-     "title": "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
-     "url": "https://timesofindia.indiatimes.com/world/us/two-planes-collide-at-miami-airport-passenger-shares-footage-of-crushed-aircraft-nose/articleshow/135847604.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T04:52:37+00:00"
     }
    ],
    "via": [
+    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_owners": [
     "India Today Group"
@@ -2153,13 +1791,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा"
+    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
+    "google-news:राहुल गांधी पर रवि किशन ने कसा तंज हम उनका फोन टैप कर रहे थे क्योंकि..."
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 9
    },
-   "top_score": 0.39,
+   "top_score": 0.36,
    "top_headlines": [
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
@@ -2172,13 +1810,12 @@
   {
    "qid": "Q5564237",
    "title": "Giri Babu",
-   "fame": 182926,
+   "fame": 57926,
    "views": 32926,
    "traffic": 0,
-   "news": 150000,
+   "news": 25000,
    "news_at": "2026-11-15T09:22:57+00:00",
    "headlines": [
-    "Veteran Telugu Actor Giri Babu Passes Away at 80",
     "Veteran Telugu actor Giri Babu dies at 80"
    ],
    "hindi_news": 0,
@@ -2191,7 +1828,6 @@
    "label_hi": null,
    "via": [
     "wikipedia-top-2026-11-14",
-    "google-news:Veteran Telugu Actor Giri Babu Passes Away at 80",
     "google-news:Veteran Telugu actor Giri Babu dies at 80",
     "outlet:The Hindu Group"
    ],
@@ -2220,193 +1856,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261115-Q3345479",
-   "qid": "Q3345479",
-   "title": "Virender Sehwag",
-   "name": "Virender Sehwag",
-   "phrase": "Sehwag",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-   "story_keys": [
-    "son"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:03:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "India Today Group",
-    "TV9 Network",
-    "BBC"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-    "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-    "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-    "Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "hindi_headlines": [
-    "U-19 Asia Cup: जीत से PM नरेंद्र मोदी भी रोमांचित, टीम इंडिया को ऐसे दी बधाई, वीरेंद्र सहवाग ने कही ये बात",
-    "आर्यवीर सहवाग बने अंडर-19 एशिया कप 2026 में 'प्लेयर ऑफ़ द टूर्नामेंट', पिता वीरेंद्र सहवाग ने भारत की जीत पर क्या कहा"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "वीरेंद्र सहवाग",
-   "reports": [
-    {
-     "title": "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/sehwags-son-chanted-sita-ram-for-an-hour-before-indias-win-3039345-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:03:13+00:00"
-    },
-    {
-     "title": "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-     "url": "https://www.thehindu.com/sport/cricket/aaryavir-sehwag-virender-sehwags-son-takes-first-steps-towards-forging-own-identity/article71704216.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T06:29:38+00:00"
-    },
-    {
-     "title": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/virender-sehwags-son-aaryavir-shines-with-361-runs-to-claim-player-of-the-tournament-award-at-u19-asia-cup/articleshow/135835217.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T14:23:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:BBC",
-    "google-news:Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-   "story_keys": [
-    "hope",
-    "meeting",
-    "you"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T03:53:53+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "Amar Ujala"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:43:15+00:00"
-    },
-    {
-     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:40:22+00:00"
-    },
-    {
-     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T12:11:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Amar Ujala",
-    "google-news:Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_owners": [
-    "Amar Ujala"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q62833385",
@@ -2500,11 +1949,11 @@
     "google-news:SpaceX’s Starship returns to launch pad from orbit in victory for company"
    ],
    "top": {
-    "IN": 3
+    "IN": 2
    },
-   "top_score": 0.9,
+   "top_score": 0.95,
    "top_headlines": [
-    "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News"
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -2611,97 +2060,103 @@
     "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "top": {
-    "IN-nation": 12
+    "IN-nation": 15
    },
-   "top_score": 0.27,
+   "top_score": 0.18,
    "top_headlines": [
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202",
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list"
+    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
+    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261115-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
+   "id": "kh-20261115-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
    "story_keys": [
-    "listing"
+    "hope",
+    "meeting",
+    "you"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T16:37:33+00:00",
+   "news_at": "2026-11-15T03:53:53+00:00",
    "owners": [
     "HT Media",
-    "Indian Express Group",
-    "Bennett, Coleman & Co."
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Amar Ujala"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-    "Tata Sons listing could change the ‘Tata way’: Noel"
+    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
    ],
-   "region": "india",
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
    "reports": [
     {
-     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T16:37:33+00:00"
+     "at": "2026-11-15T03:43:15+00:00"
     },
     {
-     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T13:09:51+00:00"
+     "at": "2026-11-15T03:40:22+00:00"
     },
     {
-     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T12:42:39+00:00"
+     "at": "2026-11-14T12:11:05+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -2784,12 +2239,96 @@
     "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
    "top": {
-    "IN": 12
+    "IN": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.5,
    "top_headlines": [
     "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261115-Q276",
+   "qid": "Q276",
+   "title": "Eurovision Song Contest",
+   "name": "Eurovision Song Contest",
+   "phrase": "Eurovision",
+   "person": false,
+   "kind": "explainer",
+   "category": "entertainment",
+   "category_hi": "मनोरंजन",
+   "story": "Philippines wins first Eurovision Song Contest Asia",
+   "story_keys": [
+    "contest",
+    "first",
+    "philippine",
+    "song",
+    "wins"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T22:44:00+00:00",
+   "owners": [
+    "BBC",
+    "Guardian Media Group",
+    "Deutsche Welle"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Philippines wins first Eurovision Song Contest Asia",
+    "Philippines’ Carmelle wins first Eurovision contest in Asia"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "यूरोविज़न संगीत प्रतियोगिता",
+   "reports": [
+    {
+     "title": "Philippines wins first Eurovision Song Contest Asia",
+     "url": "https://www.dw.com/en/philippines-wins-first-eurovision-song-contest-asia/a-79950050?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T22:44:00+00:00"
+    },
+    {
+     "title": "Philippines wins first Eurovision Song Contest Asia",
+     "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T18:17:58+00:00"
+    },
+    {
+     "title": "Philippines’ Carmelle wins first Eurovision contest in Asia",
+     "url": "https://www.theguardian.com/tv-and-radio/2026/nov/14/philippines-carmelle-wins-first-eurovision-contest-in-asia",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T19:01:32+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:Guardian Media Group",
+    "outlet:Deutsche Welle"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
@@ -2895,204 +2434,15 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 18
    },
-   "top_score": 0.15,
+   "top_score": 0.09,
    "top_headlines": [
     "Air severe at Delhi's 17 stations, don’t pin too much hope on rain"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261115-Q276",
-   "qid": "Q276",
-   "title": "Eurovision Song Contest",
-   "name": "Eurovision Song Contest",
-   "phrase": "Eurovision",
-   "person": false,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "Philippines wins first Eurovision Song Contest Asia",
-   "story_keys": [
-    "contest",
-    "first",
-    "philippine",
-    "song",
-    "wins"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-14T22:44:00+00:00",
-   "owners": [
-    "BBC",
-    "Guardian Media Group",
-    "Deutsche Welle"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Philippines wins first Eurovision Song Contest Asia",
-    "Philippines’ Carmelle wins first Eurovision contest in Asia"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "यूरोविज़न संगीत प्रतियोगिता",
-   "reports": [
-    {
-     "title": "Philippines wins first Eurovision Song Contest Asia",
-     "url": "https://www.dw.com/en/philippines-wins-first-eurovision-song-contest-asia/a-79950050?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T22:44:00+00:00"
-    },
-    {
-     "title": "Philippines wins first Eurovision Song Contest Asia",
-     "url": "https://www.bbc.co.uk/news/articles/cqrlgnx9dx6eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T18:17:58+00:00"
-    },
-    {
-     "title": "Philippines’ Carmelle wins first Eurovision contest in Asia",
-     "url": "https://www.theguardian.com/tv-and-radio/2026/nov/14/philippines-carmelle-wins-first-eurovision-contest-in-asia",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T19:01:32+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:Guardian Media Group",
-    "outlet:Deutsche Welle"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q6573931",
-   "qid": "Q6573931",
-   "title": "List of India ODI cricketers",
-   "name": "list of India ODI cricketers",
-   "phrase": "ODI India",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "runs",
-    "serie",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:56:43+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-    "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-    "Batters need to fire as India targets series win",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "भारत के एकदिवसीय क्रिकेट खिलाड़ियों की सूची",
-   "reports": [
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    },
-    {
-     "title": "Batters need to fire as India targets series win",
-     "url": "https://www.thehindu.com/sport/cricket/batters-need-to-fire-as-india-targets-series-win/article71702919.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T20:11:33+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-5th-odi-2026-match-today-scorecard-virat-kohli-rohit-sharma-weather-forecast-live-streaming/liveblog/135837247.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:08:43+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-5th-odi-india-have-100-overs-to-win-series-build-confidence-101794660218979.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:37:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "qid": "Q142084937",
@@ -4103,15 +3453,19 @@
  ],
  "notes": [
   "revisit kh-20261115-Q10218-update: 2 owners' new reports on Rahul Gandhi (1042 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (993 views before); revisit Q9543: already revisited today; revisit kh-20261115-Q163225-update: 2 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its l",
-  "outlets: 1627 headlines from 49 feeds (18 owners), 11 matched to articles, 14 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 14 kh- stories (on): kh-20261115-Q3241458, kh-20261115-Q1538, kh-20261115-Q10218, kh-20261115-Q3345479; dropped: explainer Raichandani: fewer than 3 owners' headlines name it and the story; explainer Mekedatu: fewer than 3 owners' headlines name it and the story; explainer Trade Harshal Patel: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1602 headlines from 47 feeds (17 owners), 10 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 11 kh- stories (on): kh-20261115-Q3241458, kh-20261115-Q1538, kh-20261115-Q10218, kh-20261115-Q62833385; dropped: explainer Raichandani: fewer than 3 owners' headlines name it and the story; explainer Trade Harshal Patel: fewer than 3 owners' headlines name it and the story; explainer ODI / Arshdeep Singh Co: no Wikipedia article that can be its centre"
+ ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1627,
-  "feeds": 49,
-  "owners": 18,
-  "matched": 11,
-  "corroborated": 14
+  "headlines": 1602,
+  "feeds": 47,
+  "owners": 17,
+  "matched": 10,
+  "corroborated": 11
  },
  "emerging": [],
  "explainers": [
@@ -4231,9 +3585,13 @@
     "google-news:‘God Save The King’: Lalit Modi announces British citizenship, 16 years after he fled India",
     "google-news:भगोड़े ललित मोदी ने हासिल की ब्रिटिश नागरिकता, खुद की घोषणा, कहा- 'ये एक सौभाग्य है'"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 10
+   },
+   "top_score": 0.33,
+   "top_headlines": [
+    "‘God Save The King’: Lalit Modi announces British citizenship, 16 years after he fled India"
+   ],
    "hindi_owners": []
   },
   {
@@ -4265,22 +3623,21 @@
    "owners": [
     "HT Media",
     "Network18",
-    "India Today Group",
     "The Hindu Group",
     "Government of India",
     "DB Corp"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction",
     "Guwahati-Bound IndiGo Flight Returns To Pune After Landing Gear Fails To Retract, 192 On Board Safe",
-    "Guwahati-bound IndiGo flight returns to Pune after landing gear glitch mid-air",
     "Guwahati-bound IndiGo flight returns to Pune due to technical issue; all 192 persons onboard safe",
     "IndiGo Pune-Guwahati Flight Makes Emergency Return After Landing Gear Malfunction | News18",
-    "Guwahati-bound IndiGo flight returns to Pune due to technical snag; all passengers safe — Here's all you need to know"
+    "Guwahati-bound IndiGo flight returns to Pune due to technical snag; all passengers safe — Here's all you need to know",
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_headlines": [
     "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह महाराष्ट्र के पुणे में एनएचईसी मल्टी स्टेट सहकारी संस्था का भूमि पूजन करेंगे",
@@ -4329,16 +3686,6 @@
      "at": "2026-11-15T07:10:46+00:00"
     },
     {
-     "title": "Guwahati-bound IndiGo flight returns to Pune after landing gear glitch mid-air",
-     "url": "https://www.indiatoday.in/india/story/indigo-pune-guwahati-flight-returns-after-take-off-as-landing-gear-fails-to-retract-ptag-3039258-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T06:41:05+00:00"
-    },
-    {
      "title": "Guwahati-Bound IndiGo Flight Returns To Pune After Landing Gear Fails To Retract, 192 On Board Safe",
      "url": "https://www.news18.com/india/indigo-flight-makes-emergency-landing-in-pune-after-landing-gear-fails-to-retract-192-on-board-safe-ws-l-10426326.html",
      "outlet": "News18",
@@ -4362,22 +3709,21 @@
    "via": [
     "outlet:HT Media",
     "outlet:Network18",
-    "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:Government of India",
     "outlet:DB Corp",
-    "google-news:Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News",
+    "google-news:IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune",
     "google-news:Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract",
     "google-news:2-day Pune traffic curbs: Routes affected by Amit Shah visit, marathon"
    ],
    "top": {
-    "IN": 3,
+    "IN": 2,
     "IN-nation": 3
    },
-   "top_score": 1.17,
+   "top_score": 1.22,
    "top_headlines": [
-    "Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract",
-    "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News"
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune",
+    "Guwahati-Bound IndiGo Flight Returns To Pune As Landing Gear Fails To Retract"
    ],
    "hindi_owners": [
     "HT Media",
@@ -4507,13 +3853,13 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
     "google-news:Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit",
-    "google-news:‘My phone tapped by PM Modi’: Rahul Gandhi’s Instagram video and a dare",
-    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा"
+    "google-news:राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
+    "google-news:राहुल गांधी पर रवि किशन ने कसा तंज हम उनका फोन टैप कर रहे थे क्योंकि..."
    ],
    "top": {
-    "IN-nation": 8
+    "IN-nation": 9
    },
-   "top_score": 0.39,
+   "top_score": 0.36,
    "top_headlines": [
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
@@ -4522,98 +3868,6 @@
    ],
    "audience": "india",
    "lane": "rajneeti"
-  },
-  {
-   "id": "kh-20261115-Q3345479",
-   "qid": "Q3345479",
-   "title": "Virender Sehwag",
-   "name": "Virender Sehwag",
-   "phrase": "Sehwag",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-   "story_keys": [
-    "son"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:03:13+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "India Today Group",
-    "TV9 Network",
-    "BBC"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-    "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-    "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-    "Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "hindi_headlines": [
-    "U-19 Asia Cup: जीत से PM नरेंद्र मोदी भी रोमांचित, टीम इंडिया को ऐसे दी बधाई, वीरेंद्र सहवाग ने कही ये बात",
-    "आर्यवीर सहवाग बने अंडर-19 एशिया कप 2026 में 'प्लेयर ऑफ़ द टूर्नामेंट', पिता वीरेंद्र सहवाग ने भारत की जीत पर क्या कहा"
-   ],
-   "hindi_news": 2,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "वीरेंद्र सहवाग",
-   "reports": [
-    {
-     "title": "Sehwag's son chanted 'Sita Ram' for an hour before India's win",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/sehwags-son-chanted-sita-ram-for-an-hour-before-indias-win-3039345-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:03:13+00:00"
-    },
-    {
-     "title": "Aaryavir Sehwag, Virender Sehwag’s son, takes first steps towards forging own identity",
-     "url": "https://www.thehindu.com/sport/cricket/aaryavir-sehwag-virender-sehwags-son-takes-first-steps-towards-forging-own-identity/article71704216.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T06:29:38+00:00"
-    },
-    {
-     "title": "Sehwag's son Aaryavir shines to claim Player of the Tournament award at U19 Asia Cup",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/virender-sehwags-son-aaryavir-shines-with-361-runs-to-claim-player-of-the-tournament-award-at-u19-asia-cup/articleshow/135835217.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T14:23:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:TV9 Network",
-    "outlet:BBC",
-    "google-news:Aaryavir Sehwag earns special two-word praise from Vaibhav Sooryavanshi"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q62833385",
@@ -4707,110 +3961,15 @@
     "google-news:SpaceX’s Starship returns to launch pad from orbit in victory for company"
    ],
    "top": {
-    "IN": 3
+    "IN": 2
    },
-   "top_score": 0.9,
+   "top_score": 0.95,
    "top_headlines": [
-    "Guwahati-bound IndiGo flight carrying 193 passengers returns to Pune after landing gear malfunction | India News"
+    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-   "story_keys": [
-    "hope",
-    "meeting",
-    "you"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T03:53:53+00:00",
-   "owners": [
-    "HT Media",
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "Amar Ujala"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:43:15+00:00"
-    },
-    {
-     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
-     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:40:22+00:00"
-    },
-    {
-     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
-     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T12:11:05+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Amar Ujala",
-    "google-news:Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Jensen Huang | AI rainmaker meets his Waterloo"
-   ],
-   "hindi_owners": [
-    "Amar Ujala"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q796885",
@@ -4891,9 +4050,9 @@
     "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
    "top": {
-    "IN": 12
+    "IN": 11
    },
-   "top_score": 0.45,
+   "top_score": 0.5,
    "top_headlines": [
     "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
    ],
@@ -5002,12 +4161,12 @@
     "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "top": {
-    "IN-nation": 12
+    "IN-nation": 15
    },
-   "top_score": 0.27,
+   "top_score": 0.18,
    "top_headlines": [
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202",
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list"
+    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
+    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -5021,23 +4180,23 @@
    "phrase": "Miami",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
+   "category": "news",
+   "category_hi": "समाचार",
    "story": "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
    "story_keys": [
-    "aircraft",
     "airport",
     "collision",
     "hit",
     "pilot",
-    "somebody"
+    "somebody",
+    "you"
    ],
    "date": "2026-11-15",
    "news_at": "2026-11-15T09:38:19+00:00",
    "owners": [
+    "India Today Group",
     "Bennett, Coleman & Co.",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
    "fame": 200000,
    "news": 200000,
@@ -5045,10 +4204,8 @@
    "traffic": 0,
    "headlines": [
     "\"Somebody Hit Us\": Pilot's Chilling Audio After Miami Airport Collision",
-    "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
     "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-    "'Somebody hit us': Audio captures moment jets collided at Miami airport",
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_headlines": [
     "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
@@ -5089,30 +4246,20 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T07:08:44+00:00"
-    },
-    {
-     "title": "2 planes collide at Miami airport; passenger shares footage of crushed aircraft nose",
-     "url": "https://timesofindia.indiatimes.com/world/us/two-planes-collide-at-miami-airport-passenger-shares-footage-of-crushed-aircraft-nose/articleshow/135847604.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T04:52:37+00:00"
     }
    ],
    "via": [
+    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:NDTV",
-    "outlet:India Today Group",
-    "google-news:Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "top": {
-    "IN": 2
+    "IN": 3
    },
-   "top_score": 0.95,
+   "top_score": 0.9,
    "top_headlines": [
-    "Two planes collide at Miami airport; passenger shares footage of crushed aircraft nose"
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "hindi_owners": [
     "India Today Group"
@@ -5121,85 +4268,91 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
+   "id": "kh-20261115-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
    "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+   "story": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
    "story_keys": [
-    "listing"
+    "hope",
+    "meeting",
+    "you"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-14T16:37:33+00:00",
+   "news_at": "2026-11-15T03:53:53+00:00",
    "owners": [
     "HT Media",
-    "Indian Express Group",
-    "Bennett, Coleman & Co."
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "Amar Ujala"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-    "Tata Sons listing could change the ‘Tata way’: Noel"
+    "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+    "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+    "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
+   "hindi_headlines": [
+    "एनवीडिया: पूर्व सीईओ जेन्सन हुआंग की चीनी महिला एलिस के साथ तस्वीरें वायरल, बेटी के सामने गले लगाते दिखे"
    ],
-   "region": "india",
+   "hindi_news": 1,
+   "geos": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
    "reports": [
     {
-     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "title": "'I hope you die': Jensen Huang told Indian-origin Nvidia VP during a meeting",
+     "url": "https://timesofindia.indiatimes.com/technology/tech-news/when-nvidias-ex-ceo-jensen-huang-in-a-closed-door-meeting-with-more-than-30-company-executives-reportedly-told-a-senior-vp-i-hope-you-die-and-put-us-all-/articleshow/135846614.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T16:37:33+00:00"
+     "at": "2026-11-15T03:43:15+00:00"
     },
     {
-     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
-     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "I hope you die: Inside Jensen Huang's reported tirades at Nvidia board meetings",
+     "url": "https://www.indiatoday.in/world/story/jensen-huang-nvidia-workplace-allegations-executive-outbursts-resignation-3039203-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T13:09:51+00:00"
+     "at": "2026-11-15T03:40:22+00:00"
     },
     {
-     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
-     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "title": "‘Why did you cheat?’: How sharing Jensen Huang’s name became blessing and a headache for AI founder",
+     "url": "https://www.livemint.com/news/trends/why-did-you-cheat-how-sharing-jensen-huang-s-name-became-blessing-and-a-headache-for-ai-founder-11794657341734.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T12:42:39+00:00"
+     "at": "2026-11-14T12:11:05+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:Bennett, Coleman & Co."
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Amar Ujala"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "Amar Ujala"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -5304,9 +4457,9 @@
     "outlet:HT Media"
    ],
    "top": {
-    "IN-nation": 16
+    "IN-nation": 18
    },
-   "top_score": 0.15,
+   "top_score": 0.09,
    "top_headlines": [
     "Air severe at Delhi's 17 stations, don’t pin too much hope on rain"
    ],
@@ -5398,111 +4551,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q6573931",
-   "qid": "Q6573931",
-   "title": "List of India ODI cricketers",
-   "name": "list of India ODI cricketers",
-   "phrase": "ODI India",
-   "person": false,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "runs",
-    "serie",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:56:43+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-    "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-    "Batters need to fire as India targets series win",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "भारत के एकदिवसीय क्रिकेट खिलाड़ियों की सूची",
-   "reports": [
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    },
-    {
-     "title": "Batters need to fire as India targets series win",
-     "url": "https://www.thehindu.com/sport/cricket/batters-need-to-fire-as-india-targets-series-win/article71702919.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T20:11:33+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India win by 20 runs to clinch the ODI series 3-1",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-5th-odi-2026-match-today-scorecard-virat-kohli-rohit-sharma-weather-forecast-live-streaming/liveblog/135837247.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:08:43+00:00"
-    },
-    {
-     "title": "IND vs NZ, 5th ODI: India have 100 overs to win series, build confidence",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-5th-odi-india-have-100-overs-to-win-series-build-confidence-101794660218979.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:37:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q276",
