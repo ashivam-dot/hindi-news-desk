@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T14:24:37+00:00",
+ "at": "2026-11-15T14:39:23+00:00",
  "trending": [
   {
    "id": "kh-20261115-Q3241458",
@@ -22,32 +22,28 @@
    "news_at": "2026-11-15T04:44:36+00:00",
    "owners": [
     "India Today Group",
-    "Bennett, Coleman & Co.",
     "Network18",
     "HT Media",
     "BBC",
     "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "IPL founder Lalit Modi announces British citizenship, says UK is now his home",
-    "IPL founder Lalit Modi announces British citizenship",
     "'God Save The King': Former IPL Chairman Lalit Modi Announces British Citizenship",
     "IPL founder Lalit Modi announces British citizenship over a decade after fleeing India: ‘A new chapter’",
-    "IPL founder Lalit Modi is British citizen now; if you want, can you apply? Process, eligibility who can, who can’t",
-    "IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’"
+    "IPL founder Lalit Modi is British citizen now; if you want, can you apply? Process, eligibility who can, who can’t"
    ],
    "hindi_headlines": [
     "ललित मोदी को मिली ब्रिटिश नागरिकता, भारत के लिए उन्हें वापस लाना कितना मुश्किल?",
     "आईपीएल के संस्थापक ललित मोदी बने ब्रिटिश नागरिक: कब मिली थी नागरिकता? ऑक्सफोर्ड यूनियन में किया बड़ा खुलासा",
-    "IPL फाउंडर ललित मोदी अब ब्रिटिश नागरिक:सितंबर में नागरिकता मिली, 16 साल से लंदन में हैं; भारतीय नागरिकता 2025 में ही खत्म हो चुकी",
-    "भगोड़े ललित मोदी को ब्रिटेन ने दी नागरिकता, बोले- यह नया घर"
+    "IPL फाउंडर ललित मोदी अब ब्रिटिश नागरिक:सितंबर में नागरिकता मिली, 16 साल से लंदन में हैं; भारतीय नागरिकता 2025 में ही खत्म हो चुकी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 3,
    "geos": [
     "IN"
    ],
@@ -87,16 +83,6 @@
      "at": "2026-11-14T18:52:14+00:00"
     },
     {
-     "title": "IPL founder Lalit Modi announces British citizenship",
-     "url": "https://economictimes.indiatimes.com/news/india/ipl-founder-lalit-modi-announces-british-citizenship-at-oxford-union-says-uk-is-his-home/articleshow/135841114.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T18:48:13+00:00"
-    },
-    {
      "title": "IPL founder Lalit Modi announces British citizenship, says UK is now his home",
      "url": "https://www.indiatoday.in/india/story/former-ipl-chairman-lalit-modi-announces-british-citizenship-says-uk-has-been-his-home-for-years-3039177-2026-11-14?utm_source=rss",
      "outlet": "India Today",
@@ -109,25 +95,69 @@
    ],
    "via": [
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "outlet:DB Corp",
-    "google-news:IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’",
-    "google-news:भगोड़े ललित मोदी को ब्रिटेन ने दी नागरिकता, बोले- यह नया घर"
+    "outlet:DB Corp"
    ],
-   "top": {
-    "IN-nation": 5
-   },
-   "top_score": 0.48,
-   "top_headlines": [
-    "IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’"
-   ],
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
    "hindi_owners": [
     "BBC"
    ]
+  },
+  {
+   "qid": "Q142084937",
+   "title": "2026 Bangladesh garment workers protests",
+   "fame": 125000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T14:39:23.953573+00:00",
+   "headlines": [
+    "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-14",
+    "wikipedia-current-events-2026-11-15",
+    "google-news:Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
+   "reports": [
+    {
+     "title": "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+     "url": "https://www.indiatoday.in/world/story/bangladesh-garment-protests-factory-closures-minimum-wage-board-meeting-3039408-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:10:09+00:00"
+    }
+   ],
+   "id": "wk-Q142084937-2026w46",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-15",
+   "coords": null,
+   "has_coords": false,
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261115-Q62833385",
@@ -158,8 +188,8 @@
     "Network18",
     "India Today Group"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -167,8 +197,7 @@
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "SpaceX’s Starship returns to launch pad from orbit in victory for company",
     "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
-    "SpaceX catches megarocket Starship using Chopsticks, makes history",
-    "SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
+    "SpaceX catches megarocket Starship using Chopsticks, makes history"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -234,327 +263,10 @@
     "outlet:BBC",
     "outlet:Guardian Media Group",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "google-news:SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
+    "outlet:India Today Group"
    ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 2
-   },
-   "top_score": 0.985,
-   "top_headlines": [
-    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q60734086",
-   "qid": "Q60734086",
-   "title": "Arshdeep Singh",
-   "name": "Arshdeep Singh",
-   "phrase": "Arshdeep",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "bowler",
-    "runs",
-    "seal",
-    "serie",
-    "star",
-    "wicket",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T12:12:51+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-    "Arshdeep and Co help India defend 209 for 3-1 series win"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "अर्शदीप सिंह",
-   "reports": [
-    {
-     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T11:38:41+00:00"
-    },
-    {
-     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:54:27+00:00"
-    },
-    {
-     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:46:27+00:00"
-    },
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "google-news:Arshdeep and Co help India defend 209 for 3-1 series win"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q7768",
-   "qid": "Q7768",
-   "title": "ASEAN",
-   "name": "ASEAN",
-   "phrase": "ASEAN",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-   "story_keys": [
-    "summit"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T13:47:42+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Network18"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
-   "reports": [
-    {
-     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:26:00+00:00"
-    },
-    {
-     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:18:35+00:00"
-    },
-    {
-     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T13:47:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Network18",
-    "google-news:ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "qid": "Q142149760",
-   "title": "2026 New Orleans ship collision",
-   "fame": 148921,
-   "views": 23921,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-14T22:27:06+00:00",
-   "headlines": [
-    "New Orleans port sues tanker owners over cruise ship collision for $1m"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US"
-   ],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-14",
-    "google-news:New Orleans port sues tanker owners over cruise ship collision for $1m"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142149760",
-   "kind": "incident",
-   "category": "disaster",
-   "date": "2026-11-13",
-   "coords": [
-    29.93694444,
-    -90.06083333
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q141820731",
-   "title": "2026 Karak church shooting",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-15T11:08:08+00:00",
-   "headlines": [
-    "Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": "२०२६ करक गिरजा गोलीबारी",
-   "via": [
-    "google-news:Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141820731",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-23",
-   "coords": [
-    31.289434,
-    35.79955
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "qid": "Q142084937",
-   "title": "2026 Bangladesh garment workers protests",
-   "fame": 100000,
-   "views": 0,
-   "traffic": 0,
-   "news": 0,
-   "news_at": "2026-11-15T14:24:37.600145+00:00",
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-14",
-    "wikipedia-current-events-2026-11-15"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142084937-2026w46",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-15",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -650,8 +362,8 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -771,8 +483,8 @@
     "outlet:Indian Express Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -871,8 +583,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -959,45 +671,153 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:BBC"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q4650561",
-   "qid": "Q4650561",
-   "title": "Under-19 Men's Asia Cup",
-   "name": "ACC Under-19 Cup",
-   "phrase": "Under- Asia Cup",
-   "person": false,
+   "id": "kh-20261115-Q60734086",
+   "qid": "Q60734086",
+   "title": "Arshdeep Singh",
+   "name": "Arshdeep Singh",
+   "phrase": "Arshdeep",
+   "person": true,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
    "story_keys": [
-    "team",
+    "bowler",
+    "runs",
+    "seal",
+    "serie",
+    "star",
+    "wicket",
     "win"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-15T10:52:36+00:00",
+   "news_at": "2026-11-15T12:12:51+00:00",
    "owners": [
-    "Network18",
-    "Al Jazeera Media Network",
-    "HT Media"
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-    "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win"
+    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "अर्शदीप सिंह",
+   "reports": [
+    {
+     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
+     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:38:41+00:00"
+    },
+    {
+     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:54:27+00:00"
+    },
+    {
+     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:46:27+00:00"
+    },
+    {
+     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:56:43+00:00"
+    },
+    {
+     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T01:28:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261115-Q7768",
+   "qid": "Q7768",
+   "title": "ASEAN",
+   "name": "ASEAN",
+   "phrase": "ASEAN",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+   "story_keys": [
+    "summit"
+   ],
+   "date": "2026-11-15",
+   "news_at": "2026-11-15T13:47:42+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Network18"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1005,46 +825,46 @@
    "region": "world",
    "india_link": false,
    "abroad": false,
-   "label_hi": "एसीसी अंडर 19 कप",
+   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
    "reports": [
     {
-     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-15T10:52:36+00:00"
+     "at": "2026-11-15T12:26:00+00:00"
     },
     {
-     "title": "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win",
-     "url": "https://www.hindustantimes.com/cricket/ulva-stuns-pakistan-and-takes-india-to-9th-u-19-asia-cup-win-101794673265186.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-14T16:35:10+00:00"
+     "at": "2026-11-15T12:18:35+00:00"
     },
     {
-     "title": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-     "url": "https://www.news18.com/india/immensely-proud-pm-modi-congratulates-india-u-19-team-after-thrilling-asia-cup-win-against-pakistan-ws-r-10425920.html",
+     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
+     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T14:30:42+00:00"
+     "at": "2026-11-15T13:47:42+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
-    "outlet:HT Media"
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Network18"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1091,8 +911,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1124,12 +944,65 @@
    "date": "2026-11-15",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "qid": "Q142149760",
+   "title": "2026 New Orleans ship collision",
+   "fame": 48921,
+   "views": 23921,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T14:33:59+00:00",
+   "headlines": [
+    "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14",
+    "google-news:New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "New Orleans port files $1m lawsuit over 'miracle on the Mississippi' tanker collision",
+     "url": "https://www.bbc.co.uk/news/articles/cwe89y2r5j20o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-15T14:33:59+00:00"
+    }
+   ],
+   "id": "wk-Q142149760",
+   "kind": "incident",
+   "category": "disaster",
+   "date": "2026-11-13",
+   "coords": [
+    29.93694444,
+    -90.06083333
+   ],
+   "has_coords": true,
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": []
   },
   {
    "qid": "Q5213677",
@@ -1155,8 +1028,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1186,8 +1059,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1219,8 +1092,8 @@
    "date": "2026-10-21",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": []
   },
@@ -1248,8 +1121,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-12",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1279,8 +1152,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1310,8 +1183,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1341,8 +1214,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1372,8 +1245,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1381,93 +1254,6 @@
   }
  ],
  "candidates": [
-  {
-   "id": "kh-20261115-Q7768",
-   "qid": "Q7768",
-   "title": "ASEAN",
-   "name": "ASEAN",
-   "phrase": "ASEAN",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-   "story_keys": [
-    "summit"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T13:47:42+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Network18"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
-   "reports": [
-    {
-     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:26:00+00:00"
-    },
-    {
-     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:18:35+00:00"
-    },
-    {
-     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T13:47:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Network18",
-    "google-news:ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
   {
    "qid": "Q5564237",
    "title": "Giri Babu",
@@ -1509,8 +1295,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1609,8 +1395,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1730,244 +1516,62 @@
     "outlet:Indian Express Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261115-Q60734086",
-   "qid": "Q60734086",
-   "title": "Arshdeep Singh",
-   "name": "Arshdeep Singh",
-   "phrase": "Arshdeep",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "bowler",
-    "runs",
-    "seal",
-    "serie",
-    "star",
-    "wicket",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T12:12:51+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
+   "qid": "Q142084937",
+   "title": "2026 Bangladesh garment workers protests",
+   "fame": 125000,
    "views": 0,
    "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T14:39:23.953573+00:00",
    "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-    "Arshdeep and Co help India defend 209 for 3-1 series win"
+    "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand"
    ],
-   "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "अर्शदीप सिंह",
-   "reports": [
-    {
-     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T11:38:41+00:00"
-    },
-    {
-     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:54:27+00:00"
-    },
-    {
-     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:46:27+00:00"
-    },
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "google-news:Arshdeep and Co help India defend 209 for 3-1 series win"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q62833385",
-   "qid": "Q62833385",
-   "title": "SpaceX Starship",
-   "name": "Starship",
-   "phrase": "Starship",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
-   "story_keys": [
-    "catch",
-    "catche",
-    "history",
-    "make",
-    "orbit",
-    "return",
-    "rocket"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T09:43:30+00:00",
-   "owners": [
-    "France Médias Monde",
-    "BBC",
-    "Guardian Media Group",
-    "Network18",
-    "India Today Group"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
-    "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
-    "SpaceX’s Starship returns to launch pad from orbit in victory for company",
-    "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
-    "SpaceX catches megarocket Starship using Chopsticks, makes history",
-    "SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
-   ],
    "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
-   "label_hi": "स्पेसएक्स स्टारशिप",
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-14",
+    "wikipedia-current-events-2026-11-15",
+    "google-news:Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+    "outlet:India Today Group"
+   ],
+   "owners": [
+    "India Today Group"
+   ],
    "reports": [
     {
-     "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
-     "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T22:09:40+00:00"
-    },
-    {
-     "title": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
-     "url": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T20:51:24+00:00"
-    },
-    {
-     "title": "SpaceX’s Starship returns to launch pad from orbit in victory for company",
-     "url": "https://www.theguardian.com/science/2026/nov/14/spacex-starship-double-catch",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-14T22:35:06+00:00"
-    },
-    {
-     "title": "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
-     "url": "https://www.news18.com/videos/breaking-news/spacex-starship-makes-history-tower-arms-catch-rocket-in-stunning-landing-elon-musk-news18-10426513.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:43:30+00:00"
-    },
-    {
-     "title": "SpaceX catches megarocket Starship using Chopsticks, makes history",
-     "url": "https://www.indiatoday.in/science/story/ship-42-returns-from-orbit-and-is-caught-by-starbases-launch-tower-3039186-2026-11-15?utm_source=rss",
+     "title": "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+     "url": "https://www.indiatoday.in/world/story/bangladesh-garment-protests-factory-closures-minimum-wage-board-meeting-3039408-2026-11-15?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T21:20:44+00:00"
+     "at": "2026-11-15T11:10:09+00:00"
     }
    ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:BBC",
-    "outlet:Guardian Media Group",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "google-news:SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
-   ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 2
-   },
-   "top_score": 0.985,
-   "top_headlines": [
-    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
-   ],
+   "id": "wk-Q142084937-2026w46",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-15",
+   "coords": null,
+   "has_coords": false,
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -2051,48 +1655,204 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:BBC"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "qid": "Q142084937",
-   "title": "2026 Bangladesh garment workers protests",
-   "fame": 100000,
+   "id": "kh-20261115-Q7768",
+   "qid": "Q7768",
+   "title": "ASEAN",
+   "name": "ASEAN",
+   "phrase": "ASEAN",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+   "story_keys": [
+    "summit"
+   ],
+   "date": "2026-11-15",
+   "news_at": "2026-11-15T13:47:42+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Network18"
+   ],
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
-   "news": 0,
-   "news_at": "2026-11-15T14:24:37.600145+00:00",
-   "headlines": [],
-   "hindi_news": 0,
+   "headlines": [
+    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda"
+   ],
    "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
    "region": "world",
    "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-14",
-    "wikipedia-current-events-2026-11-15"
+   "abroad": false,
+   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
+   "reports": [
+    {
+     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-15T12:26:00+00:00"
+    },
+    {
+     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-15T12:18:35+00:00"
+    },
+    {
+     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
+     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T13:47:42+00:00"
+    }
    ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q142084937-2026w46",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-15",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Network18"
+   ],
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "world",
+   "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261115-Q60734086",
+   "qid": "Q60734086",
+   "title": "Arshdeep Singh",
+   "name": "Arshdeep Singh",
+   "phrase": "Arshdeep",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+   "story_keys": [
+    "bowler",
+    "runs",
+    "seal",
+    "serie",
+    "star",
+    "wicket",
+    "win"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-15T12:12:51+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "अर्शदीप सिंह",
+   "reports": [
+    {
+     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
+     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:38:41+00:00"
+    },
+    {
+     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:54:27+00:00"
+    },
+    {
+     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:46:27+00:00"
+    },
+    {
+     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:56:43+00:00"
+    },
+    {
+     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T01:28:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q276",
@@ -2184,8 +1944,121 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261115-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
+   "phrase": "Starship",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
+   "story_keys": [
+    "catch",
+    "catche",
+    "history",
+    "make",
+    "orbit",
+    "return",
+    "rocket"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-15T09:43:30+00:00",
+   "owners": [
+    "France Médias Monde",
+    "BBC",
+    "Guardian Media Group",
+    "Network18",
+    "India Today Group"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
+    "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+    "SpaceX’s Starship returns to launch pad from orbit in victory for company",
+    "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
+    "SpaceX catches megarocket Starship using Chopsticks, makes history"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": "स्पेसएक्स स्टारशिप",
+   "reports": [
+    {
+     "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
+     "url": "https://www.bbc.co.uk/news/videos/cwlym2gy3y3eo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T22:09:40+00:00"
+    },
+    {
+     "title": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
+     "url": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-14T20:51:24+00:00"
+    },
+    {
+     "title": "SpaceX’s Starship returns to launch pad from orbit in victory for company",
+     "url": "https://www.theguardian.com/science/2026/nov/14/spacex-starship-double-catch",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-14T22:35:06+00:00"
+    },
+    {
+     "title": "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
+     "url": "https://www.news18.com/videos/breaking-news/spacex-starship-makes-history-tower-arms-catch-rocket-in-stunning-landing-elon-musk-news18-10426513.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:43:30+00:00"
+    },
+    {
+     "title": "SpaceX catches megarocket Starship using Chopsticks, makes history",
+     "url": "https://www.indiatoday.in/science/story/ship-42-returns-from-orbit-and-is-caught-by-starbases-launch-tower-3039186-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T21:20:44+00:00"
+    }
+   ],
+   "via": [
+    "outlet:France Médias Monde",
+    "outlet:BBC",
+    "outlet:Guardian Media Group",
+    "outlet:Network18",
+    "outlet:India Today Group"
+   ],
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2217,8 +2090,8 @@
    "date": "2026-11-15",
    "coords": null,
    "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2248,8 +2121,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2279,8 +2152,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-12",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2310,94 +2183,12 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261115-Q4650561",
-   "qid": "Q4650561",
-   "title": "Under-19 Men's Asia Cup",
-   "name": "ACC Under-19 Cup",
-   "phrase": "Under- Asia Cup",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-   "story_keys": [
-    "team",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T10:52:36+00:00",
-   "owners": [
-    "Network18",
-    "Al Jazeera Media Network",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-    "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "एसीसी अंडर 19 कप",
-   "reports": [
-    {
-     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-15T10:52:36+00:00"
-    },
-    {
-     "title": "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win",
-     "url": "https://www.hindustantimes.com/cricket/ulva-stuns-pakistan-and-takes-india-to-9th-u-19-asia-cup-win-101794673265186.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:35:10+00:00"
-    },
-    {
-     "title": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-     "url": "https://www.news18.com/india/immensely-proud-pm-modi-congratulates-india-u-19-team-after-thrilling-asia-cup-win-against-pakistan-ws-r-10425920.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T14:30:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q315090",
@@ -2423,8 +2214,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2454,8 +2245,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2485,8 +2276,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2516,8 +2307,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-09",
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2682,148 +2473,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261115-Q163225-update",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Sonia Gandhi’s ‘Belonging’ Triggers Record Book Rush Ahead Of Delhi Launch | Congress | News18",
-   "story_keys": [
-    "assassination",
-    "become",
-    "begging",
-    "cancer",
-    "congress",
-    "emergency",
-    "face",
-    "family",
-    "indira",
-    "kill",
-    "manmohan",
-    "memoir",
-    "political",
-    "post",
-    "pranab",
-    "rajiv",
-    "recall",
-    "recount",
-    "reveal"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T07:00:33+00:00",
-   "owners": [
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Sonia Gandhi’s ‘Belonging’ Triggers Record Book Rush Ahead Of Delhi Launch | Congress | News18",
-    "'Vendetta': Himachal BJP On FIR Against Kangana Ranaut Over Sonia Gandhi Remark, Congress Responds",
-    "Telangana Summit Row: Global Outreach Or Political Controversy? Rahul Gandhi Faces Questions |News18",
-    "'Doesn't Behave Like Indian': BJP, BRS Slam Rahul Gandhi Over Foreign Leader's 'Vote Thief' Remark At Congress Event",
-    "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
-    "BJP MP Kangana Ranaut Remains Defiant, Posts Another Message Targeting Sonia Gandhi | News18"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "Sonia Gandhi’s ‘Belonging’ Triggers Record Book Rush Ahead Of Delhi Launch | Congress | News18",
-     "url": "https://www.news18.com/videos/breaking-news/sonia-gandhi-s-belonging-triggers-record-book-rush-ahead-of-delhi-launch-congress-news18-10426391.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:00:33+00:00"
-    },
-    {
-     "title": "'Vendetta': Himachal BJP On FIR Against Kangana Ranaut Over Sonia Gandhi Remark, Congress Responds",
-     "url": "https://www.news18.com/india/vendetta-himachal-bjp-on-fir-against-kangana-ranaut-over-sonia-gandhi-remark-congress-responds-ws-l-10426175.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:05:06+00:00"
-    },
-    {
-     "title": "Telangana Summit Row: Global Outreach Or Political Controversy? Rahul Gandhi Faces Questions |News18",
-     "url": "https://www.news18.com/videos/india/telangana-summit-row-global-outreach-or-political-controversy-rahul-gandhi-faces-questions-news18-10426016.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:44:53+00:00"
-    },
-    {
-     "title": "'Doesn't Behave Like Indian': BJP, BRS Slam Rahul Gandhi Over Foreign Leader's 'Vote Thief' Remark At Congress Event",
-     "url": "https://www.news18.com/india/doesnt-behave-like-indian-bjp-brs-slam-rahul-gandhi-over-foreign-leader-vote-thief-remark-at-congress-event-bharat-summit-10425960.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T16:09:47+00:00"
-    },
-    {
-     "title": "'Creating Doubt': Ex-CBI Sleuth Who Probed Godhra Carnage Rebuts Sonia Gandhi's Remark On Fire In Memoir",
-     "url": "https://www.news18.com/india/rakesh-asthana-rebuts-sonia-gandhi-remark-on-godhra-train-burning-in-belonging-memoir-creating-doubt-10425873.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:50:04+00:00"
-    },
-    {
-     "title": "BJP MP Kangana Ranaut Remains Defiant, Posts Another Message Targeting Sonia Gandhi | News18",
-     "url": "https://www.news18.com/videos/breaking-news/bjp-mp-kangana-ranaut-remains-defiant-posts-another-message-targeting-sonia-gandhi-news18-10425565.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T09:15:05+00:00"
-    },
-    {
-     "title": "Ex-CBI director rejects claim on Godhra fire's cause in Sonia Gandhi's memoir",
-     "url": "https://www.hindustantimes.com/india-news/excbi-director-rejects-claim-on-godhra-fires-cause-in-sonia-gandhis-memoir-101794638627592.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:24:04+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q163225"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261112-Q163225",
-   "earlier": [
-    "सोनिया गांधी की किताब में इमरजेंसी का जिक्र",
-    "राजीव गांधी को पीएम न बनने की सोनिया ने दी थी सलाह",
-    "किताब में सोनिया गांधी ने किया पीएम पद ठुकराने का जिक्र",
-    "Belonging नाम से रिलीज हुई सोनिया गांधी की संस्मरण किताब"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
    "id": "kh-20261115-Q10218-update",
    "qid": "Q10218",
    "title": "Rahul Gandhi",
@@ -2933,16 +2582,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-14T07:39:07+00:00"
-    },
-    {
-     "title": "Ex-CBI director rejects claim on Godhra fire's cause in Sonia Gandhi's memoir",
-     "url": "https://www.hindustantimes.com/india-news/excbi-director-rejects-claim-on-godhra-fires-cause-in-sonia-gandhis-memoir-101794638627592.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T07:24:04+00:00"
     }
    ],
    "via": [
@@ -3141,16 +2780,26 @@
   }
  ],
  "notes": [
-  "revisit kh-20261115-Q10218-update: 2 owners' new reports on Rahul Gandhi (1077 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (994 views before); revisit Q9543: already revisited today; revisit kh-20261115-Q163225-update: 2 owners' new reports on Sonia Gandhi (814 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its l",
-  "outlets: 1694 headlines from 49 feeds (18 owners), 10 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261115-Q3241458, kh-20261115-Q62833385, kh-20261115-Q60734086, kh-20261115-Q7768; dropped: explainer Delhi-NCR AQI / Delhi-NCR AQI: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Ranbir Kapoor Yash: fewer than 3 owners' headlines name it and the story"
+  "revisit kh-20261115-Q10218-update: 2 owners' new reports on Rahul Gandhi (1077 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (994 views before); revisit Q9543: already revisited today; revisit Q163225 (814 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its l",
+  "outlets: 1696 headlines from 49 feeds (18 owners), 11 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261115-Q3241458, kh-20261115-Q62833385, kh-20261115-Q276, kh-20261115-Q36812; dropped: explainer Delhi-NCR AQI / Delhi-NCR AQI: no Wikipedia article that can be its centre; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story; explainer Under- Asia Cup: fewer than 3 owners' headlines name it and the story"
+ ],
+ "trend_errors": [
+  "google news IN: HTTP 503",
+  "google news IN-nation: HTTP 503",
+  "google news IN-hi: HTTP 503",
+  "google news IN-hi-nation: HTTP 503",
+  "google news IN-hi-world: HTTP 503",
+  "google news US: HTTP 503",
+  "google news world: HTTP 503",
+  "top stories: no Google News India list could be read (no story is ranked by place)"
  ],
  "outlets": {
-  "headlines": 1694,
+  "headlines": 1696,
   "feeds": 49,
   "owners": 18,
-  "matched": 10,
-  "corroborated": 9
+  "matched": 11,
+  "corroborated": 8
  },
  "emerging": [],
  "explainers": [
@@ -3175,32 +2824,28 @@
    "news_at": "2026-11-15T04:44:36+00:00",
    "owners": [
     "India Today Group",
-    "Bennett, Coleman & Co.",
     "Network18",
     "HT Media",
     "BBC",
     "Amar Ujala",
     "DB Corp"
    ],
-   "fame": 375000,
-   "news": 375000,
+   "fame": 150000,
+   "news": 150000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "IPL founder Lalit Modi announces British citizenship, says UK is now his home",
-    "IPL founder Lalit Modi announces British citizenship",
     "'God Save The King': Former IPL Chairman Lalit Modi Announces British Citizenship",
     "IPL founder Lalit Modi announces British citizenship over a decade after fleeing India: ‘A new chapter’",
-    "IPL founder Lalit Modi is British citizen now; if you want, can you apply? Process, eligibility who can, who can’t",
-    "IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’"
+    "IPL founder Lalit Modi is British citizen now; if you want, can you apply? Process, eligibility who can, who can’t"
    ],
    "hindi_headlines": [
     "ललित मोदी को मिली ब्रिटिश नागरिकता, भारत के लिए उन्हें वापस लाना कितना मुश्किल?",
     "आईपीएल के संस्थापक ललित मोदी बने ब्रिटिश नागरिक: कब मिली थी नागरिकता? ऑक्सफोर्ड यूनियन में किया बड़ा खुलासा",
-    "IPL फाउंडर ललित मोदी अब ब्रिटिश नागरिक:सितंबर में नागरिकता मिली, 16 साल से लंदन में हैं; भारतीय नागरिकता 2025 में ही खत्म हो चुकी",
-    "भगोड़े ललित मोदी को ब्रिटेन ने दी नागरिकता, बोले- यह नया घर"
+    "IPL फाउंडर ललित मोदी अब ब्रिटिश नागरिक:सितंबर में नागरिकता मिली, 16 साल से लंदन में हैं; भारतीय नागरिकता 2025 में ही खत्म हो चुकी"
    ],
-   "hindi_news": 4,
+   "hindi_news": 3,
    "geos": [
     "IN"
    ],
@@ -3240,16 +2885,6 @@
      "at": "2026-11-14T18:52:14+00:00"
     },
     {
-     "title": "IPL founder Lalit Modi announces British citizenship",
-     "url": "https://economictimes.indiatimes.com/news/india/ipl-founder-lalit-modi-announces-british-citizenship-at-oxford-union-says-uk-is-his-home/articleshow/135841114.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T18:48:13+00:00"
-    },
-    {
      "title": "IPL founder Lalit Modi announces British citizenship, says UK is now his home",
      "url": "https://www.indiatoday.in/india/story/former-ipl-chairman-lalit-modi-announces-british-citizenship-says-uk-has-been-his-home-for-years-3039177-2026-11-14?utm_source=rss",
      "outlet": "India Today",
@@ -3262,22 +2897,15 @@
    ],
    "via": [
     "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
     "outlet:Network18",
     "outlet:HT Media",
     "outlet:BBC",
     "outlet:Amar Ujala",
-    "outlet:DB Corp",
-    "google-news:IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’",
-    "google-news:भगोड़े ललित मोदी को ब्रिटेन ने दी नागरिकता, बोले- यह नया घर"
+    "outlet:DB Corp"
    ],
-   "top": {
-    "IN-nation": 5
-   },
-   "top_score": 0.48,
-   "top_headlines": [
-    "IPL founder Lalit Modi acquires British citizenship, calls it ‘home for many years’"
-   ],
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
    "hindi_owners": [
     "BBC"
    ]
@@ -3311,8 +2939,8 @@
     "Network18",
     "India Today Group"
    ],
-   "fame": 250000,
-   "news": 250000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3320,8 +2948,7 @@
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "SpaceX’s Starship returns to launch pad from orbit in victory for company",
     "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
-    "SpaceX catches megarocket Starship using Chopsticks, makes history",
-    "SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
+    "SpaceX catches megarocket Starship using Chopsticks, makes history"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3387,219 +3014,13 @@
     "outlet:BBC",
     "outlet:Guardian Media Group",
     "outlet:Network18",
-    "outlet:India Today Group",
-    "google-news:SpaceX’s Starship returns from orbit and is captured by launch pad arms in a dramatic first"
+    "outlet:India Today Group"
    ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 2
-   },
-   "top_score": 0.985,
-   "top_headlines": [
-    "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q60734086",
-   "qid": "Q60734086",
-   "title": "Arshdeep Singh",
-   "name": "Arshdeep Singh",
-   "phrase": "Arshdeep",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-   "story_keys": [
-    "bowler",
-    "runs",
-    "seal",
-    "serie",
-    "star",
-    "wicket",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T12:12:51+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-    "Arshdeep and Co help India defend 209 for 3-1 series win"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "अर्शदीप सिंह",
-   "reports": [
-    {
-     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
-     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T11:38:41+00:00"
-    },
-    {
-     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
-     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:54:27+00:00"
-    },
-    {
-     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:46:27+00:00"
-    },
-    {
-     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:56:43+00:00"
-    },
-    {
-     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
-     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T01:28:13+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "google-news:Arshdeep and Co help India defend 209 for 3-1 series win"
-   ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q7768",
-   "qid": "Q7768",
-   "title": "ASEAN",
-   "name": "ASEAN",
-   "phrase": "ASEAN",
-   "person": false,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-   "story_keys": [
-    "summit"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T13:47:42+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Network18"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
-   "reports": [
-    {
-     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
-     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:26:00+00:00"
-    },
-    {
-     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
-     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-15T12:18:35+00:00"
-    },
-    {
-     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
-     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T13:47:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Network18",
-    "google-news:ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "top": {
-    "IN": 14
-   },
-   "top_score": 0.35,
-   "top_headlines": [
-    "ASEAN not easing Myanmar approach, bloc's special envoy says"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -3692,8 +3113,8 @@
     "outlet:Deutsche Welle",
     "outlet:France Médias Monde"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -3813,8 +3234,8 @@
     "outlet:Indian Express Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -3913,8 +3334,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -4001,45 +3422,153 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:BBC"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q4650561",
-   "qid": "Q4650561",
-   "title": "Under-19 Men's Asia Cup",
-   "name": "ACC Under-19 Cup",
-   "phrase": "Under- Asia Cup",
-   "person": false,
+   "id": "kh-20261115-Q60734086",
+   "qid": "Q60734086",
+   "title": "Arshdeep Singh",
+   "name": "Arshdeep Singh",
+   "phrase": "Arshdeep",
+   "person": true,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
    "story_keys": [
-    "team",
+    "bowler",
+    "runs",
+    "seal",
+    "serie",
+    "star",
+    "wicket",
     "win"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-15T10:52:36+00:00",
+   "news_at": "2026-11-15T12:12:51+00:00",
    "owners": [
-    "Network18",
-    "Al Jazeera Media Network",
-    "HT Media"
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-    "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win"
+    "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+    "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+    "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+    "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+    "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "अर्शदीप सिंह",
+   "reports": [
+    {
+     "title": "Mohammad Siraj, Arshdeep Singh Star As India Seal ODI Series Win In New Zealand",
+     "url": "https://sports.ndtv.com/cricket/mohammad-siraj-arshdeep-singh-star-as-india-seal-odi-series-win-in-new-zealand-12329710#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:38:41+00:00"
+    },
+    {
+     "title": "MoM Arshdeep reveals ‘these runs will be crucial’ conversation with Siraj after win in fifth ODI",
+     "url": "https://www.hindustantimes.com/cricket/mom-arshdeep-reveals-these-runs-will-be-crucial-conversation-with-siraj-after-win-in-fifth-odi-101794738905768.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:54:27+00:00"
+    },
+    {
+     "title": "'I've got a really nice partner': Arshdeep opens up about fiancee after India's win",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ive-got-a-really-nice-partner-arshdeep-singh-opens-up-about-fiancee-after-indias-dramatic-series-triumph/articleshow/135853379.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:46:27+00:00"
+    },
+    {
+     "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win vs New Zealand",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:56:43+00:00"
+    },
+    {
+     "title": "India vs New Zealand Highlights, 5th ODI: Arshdeep stars with 3 wickets as IND win by 22 runs; seal series 3-1",
+     "url": "https://www.hindustantimes.com/cricket/ind-vs-nz-live-score-5th-odi-india-vs-new-zealand-updates-mount-maunganui-15-november-101794705621492.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T01:28:13+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": null,
+   "top_score": null,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261115-Q7768",
+   "qid": "Q7768",
+   "title": "ASEAN",
+   "name": "ASEAN",
+   "phrase": "ASEAN",
+   "person": false,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+   "story_keys": [
+    "summit"
+   ],
+   "date": "2026-11-15",
+   "news_at": "2026-11-15T13:47:42+00:00",
+   "owners": [
+    "France Médias Monde",
+    "Deutsche Welle",
+    "Network18"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+    "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+    "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -4047,46 +3576,46 @@
    "region": "world",
    "india_link": false,
    "abroad": false,
-   "label_hi": "एसीसी अंडर 19 कप",
+   "label_hi": "दक्षिण पूर्वी एशियाई राष्ट्रों का संगठन",
    "reports": [
     {
-     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
-     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
+     "title": "ASEAN offers Myanmar's sidelined leaders a path back to summits, but says restrictions will stay until there is meaningful progress on its peace plan",
+     "url": "https://www.dw.com/en/asean-offers-myanmar-s-sidelined-leaders-a-path-back-to-summits-but-says-restrictions-will-stay-until-there-is-meaningful-progress-on-its-peace-plan/a-79951878?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-15T10:52:36+00:00"
+     "at": "2026-11-15T12:26:00+00:00"
     },
     {
-     "title": "Ulva stuns Pakistan and takes India to 9th U-19 Asia Cup win",
-     "url": "https://www.hindustantimes.com/cricket/ulva-stuns-pakistan-and-takes-india-to-9th-u-19-asia-cup-win-101794673265186.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "The Philippines and Australia strengthen joint military deterrence at ASEAN summit",
+     "url": "https://www.france24.com/en/the-philippines-and-australia-strengthen-joint-military-deterrence-at-asean-summit",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-14T16:35:10+00:00"
+     "at": "2026-11-15T12:18:35+00:00"
     },
     {
-     "title": "'Immensely Proud': PM Modi Congratulates India U-19 Team After Thrilling Asia Cup Win Against Pakistan",
-     "url": "https://www.news18.com/india/immensely-proud-pm-modi-congratulates-india-u-19-team-after-thrilling-asia-cup-win-against-pakistan-ws-r-10425920.html",
+     "title": "PM Modi On Manila Visit From Nov 16-17: ASEAN Summit, Maritime Cooperation And More On Agenda",
+     "url": "https://www.news18.com/india/pm-modis-nov-16-17-manila-visit-asean-india-summit-maritime-cooperation-and-more-on-agenda-ws-klrt-10426674.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-14T14:30:42+00:00"
+     "at": "2026-11-15T13:47:42+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
-    "outlet:HT Media"
+    "outlet:France Médias Monde",
+    "outlet:Deutsche Welle",
+    "outlet:Network18"
    ],
-   "top": {},
-   "top_score": 0.0,
+   "top": null,
+   "top_score": null,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
