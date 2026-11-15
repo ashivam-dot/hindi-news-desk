@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:24:36+00:00",
+ "at": "2026-11-15T20:35:52+00:00",
  "trending": [
   {
    "id": "kh-20261116-Q37293",
@@ -133,7 +133,7 @@
    "views": 0,
    "traffic": 0,
    "news": 150000,
-   "news_at": "2026-11-15T20:24:36.701266+00:00",
+   "news_at": "2026-11-15T20:35:52.018438+00:00",
    "headlines": [
     "Clothing factories shut in Bangladesh as workers strike over pay"
    ],
@@ -210,8 +210,7 @@
    "headlines": [
     "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
     "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
-    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal",
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal"
    ],
    "hindi_headlines": [
     "इंडिया-US ट्रेड डील पर पीयूष गोयल ने दिया बड़ा अपडेट, बोले- 'भारत को कम...'"
@@ -261,14 +260,16 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:ABP Group",
-    "google-news:India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "google-news:'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal"
    ],
    "top": {
-    "IN-nation": 16
+    "IN": 2,
+    "IN-nation": 11
    },
-   "top_score": 0.15,
+   "top_score": 1.1,
    "top_headlines": [
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+    "Jaishankar says India-US trade deal almost at finish line, remaining concerns more on American side | India News"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -412,12 +413,12 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 2,
+    "IN": 3,
     "IN-hi": 2,
     "IN-nation": 2,
     "IN-hi-nation": 6
    },
-   "top_score": 1.935,
+   "top_score": 1.91,
    "top_headlines": [
     "बंगाल: शुभेंदु सरकार में 5वां एनकाउंटर, पुलिस पर गोली चलाने वाला हिस्ट्रीशीटर ढेर",
     "Man accused of opening fire at cop in Bengal’s Santiniketan killed in police encounter"
@@ -897,6 +898,54 @@
    "lane": "other"
   },
   {
+   "qid": "Q5564237",
+   "title": "Giri Babu",
+   "fame": 57926,
+   "views": 32926,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T09:22:57+00:00",
+   "headlines": [
+    "Veteran Telugu actor Giri Babu dies at 80"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14",
+    "google-news:Veteran Telugu actor Giri Babu dies at 80",
+    "outlet:The Hindu Group"
+   ],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Veteran Telugu actor Giri Babu dies at 80",
+     "url": "https://www.thehindu.com/news/national/telangana/veteran-telugu-actor-giri-babu-dies-at-80/article71702232.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:22:57+00:00"
+    }
+   ],
+   "id": "wk-Q5564237",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q141615137",
    "title": "2026 French civil unrest",
    "fame": 50000,
@@ -958,37 +1007,6 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5564237",
-   "title": "Giri Babu",
-   "fame": 32926,
-   "views": 32926,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-14"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5564237",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
    "lane": "obituary"
   },
   {
@@ -1148,6 +1166,130 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "qid": "Q7329244",
+   "title": "Richard Sterban",
+   "fame": 12752,
+   "views": 12752,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7329244",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7819982",
+   "title": "Tommy Walsh (builder)",
+   "fame": 12405,
+   "views": 12405,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7819982",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q142132416",
+   "title": "Michael John Roberts",
+   "fame": 11303,
+   "views": 11303,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142132416",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 8758,
+   "views": 8758,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1235,12 +1377,12 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 2,
+    "IN": 3,
     "IN-hi": 2,
     "IN-nation": 2,
     "IN-hi-nation": 6
    },
-   "top_score": 1.935,
+   "top_score": 1.91,
    "top_headlines": [
     "बंगाल: शुभेंदु सरकार में 5वां एनकाउंटर, पुलिस पर गोली चलाने वाला हिस्ट्रीशीटर ढेर",
     "Man accused of opening fire at cop in Bengal’s Santiniketan killed in police encounter"
@@ -1251,6 +1393,102 @@
    ],
    "audience": "india",
    "lane": "sensitive"
+  },
+  {
+   "id": "kh-20261116-Q7199798",
+   "qid": "Q7199798",
+   "title": "Piyush Goyal",
+   "name": "Piyush Goyal",
+   "phrase": "Piyush Goyal",
+   "person": true,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+   "story_keys": [
+    "access",
+    "preferential",
+    "trade"
+   ],
+   "date": "2026-11-15",
+   "news_at": "2026-11-15T17:10:50+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "The Hindu Group",
+    "ABP Group"
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+    "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
+    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal"
+   ],
+   "hindi_headlines": [
+    "इंडिया-US ट्रेड डील पर पीयूष गोयल ने दिया बड़ा अपडेट, बोले- 'भारत को कम...'"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "पीयूष गोयल",
+   "reports": [
+    {
+     "title": "India, U.S. agreed on preferential market access for Indian goods in America: Goyal",
+     "url": "https://www.thehindu.com/news/national/india-us-agreed-on-preferential-market-access-for-indian-goods-in-america-goyal/article71705526.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T17:10:50+00:00"
+    },
+    {
+     "title": "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
+     "url": "https://www.news18.com/india/india-egypt-eye-upi-linkage-local-currency-trade-to-boost-bilateral-business-piyush-goyal-10426582.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:34:22+00:00"
+    },
+    {
+     "title": "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/preferential-trade-access-already-agreed-piyush-goyals-big-update-on-india-us-trade-deal/articleshow/135851339.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T08:35:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:ABP Group",
+    "google-news:'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 11
+   },
+   "top_score": 1.1,
+   "top_headlines": [
+    "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+    "Jaishankar says India-US trade deal almost at finish line, remaining concerns more on American side | India News"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "paisa"
   },
   {
    "id": "kh-20261116-Q37293",
@@ -1378,101 +1616,6 @@
    "lane": "sensitive"
   },
   {
-   "id": "kh-20261116-Q7199798",
-   "qid": "Q7199798",
-   "title": "Piyush Goyal",
-   "name": "Piyush Goyal",
-   "phrase": "Piyush Goyal",
-   "person": true,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
-   "story_keys": [
-    "access",
-    "preferential",
-    "trade"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T17:10:50+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "The Hindu Group",
-    "ABP Group"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
-    "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
-    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal",
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
-   ],
-   "hindi_headlines": [
-    "इंडिया-US ट्रेड डील पर पीयूष गोयल ने दिया बड़ा अपडेट, बोले- 'भारत को कम...'"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "पीयूष गोयल",
-   "reports": [
-    {
-     "title": "India, U.S. agreed on preferential market access for Indian goods in America: Goyal",
-     "url": "https://www.thehindu.com/news/national/india-us-agreed-on-preferential-market-access-for-indian-goods-in-america-goyal/article71705526.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T17:10:50+00:00"
-    },
-    {
-     "title": "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
-     "url": "https://www.news18.com/india/india-egypt-eye-upi-linkage-local-currency-trade-to-boost-bilateral-business-piyush-goyal-10426582.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T11:34:22+00:00"
-    },
-    {
-     "title": "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/preferential-trade-access-already-agreed-piyush-goyals-big-update-on-india-us-trade-deal/articleshow/135851339.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T08:35:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:ABP Group",
-    "google-news:India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
-   ],
-   "top": {
-    "IN-nation": 16
-   },
-   "top_score": 0.15,
-   "top_headlines": [
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "paisa"
-  },
-  {
    "id": "kh-20261116-Q3345479",
    "qid": "Q3345479",
    "title": "Virender Sehwag",
@@ -1563,7 +1706,7 @@
    "views": 0,
    "traffic": 0,
    "news": 150000,
-   "news_at": "2026-11-15T20:24:36.701266+00:00",
+   "news_at": "2026-11-15T20:35:52.018438+00:00",
    "headlines": [
     "Clothing factories shut in Bangladesh as workers strike over pay"
    ],
@@ -1612,12 +1755,14 @@
   {
    "qid": "Q5564237",
    "title": "Giri Babu",
-   "fame": 32926,
+   "fame": 57926,
    "views": 32926,
    "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
+   "news": 25000,
+   "news_at": "2026-11-15T09:22:57+00:00",
+   "headlines": [
+    "Veteran Telugu actor Giri Babu dies at 80"
+   ],
    "hindi_news": 0,
    "hindi_headlines": [],
    "region": "india",
@@ -1625,10 +1770,25 @@
    "geos": [],
    "label_hi": null,
    "via": [
-    "wikipedia-top-2026-11-14"
+    "wikipedia-top-2026-11-14",
+    "google-news:Veteran Telugu actor Giri Babu dies at 80",
+    "outlet:The Hindu Group"
    ],
-   "owners": [],
-   "reports": [],
+   "owners": [
+    "The Hindu Group"
+   ],
+   "reports": [
+    {
+     "title": "Veteran Telugu actor Giri Babu dies at 80",
+     "url": "https://www.thehindu.com/news/national/telangana/veteran-telugu-actor-giri-babu-dies-at-80/article71702232.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:22:57+00:00"
+    }
+   ],
    "id": "wk-Q5564237",
    "kind": "death",
    "category": "death",
@@ -2057,6 +2217,37 @@
    "lane": "other"
   },
   {
+   "qid": "Q7329244",
+   "title": "Richard Sterban",
+   "fame": 12752,
+   "views": 12752,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7329244",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 40928,
@@ -2173,6 +2364,99 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q142132416",
+   "title": "Michael John Roberts",
+   "fame": 11303,
+   "views": 11303,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q142132416",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q2262364",
+   "title": "Tony Richards (musician)",
+   "fame": 8758,
+   "views": 8758,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q2262364",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-11",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q7819982",
+   "title": "Tommy Walsh (builder)",
+   "fame": 12405,
+   "views": 12405,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-14"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q7819982",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-09",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -2497,19 +2781,18 @@
  ],
  "notes": [
   "revisit Q10218 (1109 views): 1 owners reported new news on Rahul Gandhi since its last Short; revisit kh-20261116-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit Q9543 (936 views): 1 owners reported new news on Salman Khan since its last Short; revisit Q163225 (814 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q468324 (421 views): 0 o",
-  "outlets: 1569 headlines from 47 feeds (17 owners), 19 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-bengal-attack",
+  "outlets: 1567 headlines from 47 feeds (17 owners), 21 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-bengal-attack",
   "explainers: 7 kh- stories (on): kh-20261116-Q37293, kh-20261116-Q7199798, kh-20261116-Q486814, kh-20261116-Q113758110; dropped: explainer Delhi-NCR AQI / Delhi-NCR AQI: no Wikipedia article that can be its centre; explainer ODI Tom Banton: fewer than 3 owners' headlines name it and the story; explainer Arshdeep: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1569,
+  "headlines": 1567,
   "feeds": 47,
   "owners": 17,
-  "matched": 19,
+  "matched": 21,
   "corroborated": 8
  },
  "emerging": [
@@ -2597,12 +2880,12 @@
    "emerging": true,
    "article": null,
    "top": {
-    "IN": 2,
+    "IN": 3,
     "IN-hi": 2,
     "IN-nation": 2,
     "IN-hi-nation": 6
    },
-   "top_score": 1.935,
+   "top_score": 1.91,
    "top_headlines": [
     "बंगाल: शुभेंदु सरकार में 5वां एनकाउंटर, पुलिस पर गोली चलाने वाला हिस्ट्रीशीटर ढेर",
     "Man accused of opening fire at cop in Bengal’s Santiniketan killed in police encounter"
@@ -2772,8 +3055,7 @@
    "headlines": [
     "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
     "India, Egypt Eye UPI Linkage, Local Currency Trade To Boost Bilateral Business: Piyush Goyal",
-    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal",
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "India, U.S. agreed on preferential market access for Indian goods in America: Goyal"
    ],
    "hindi_headlines": [
     "इंडिया-US ट्रेड डील पर पीयूष गोयल ने दिया बड़ा अपडेट, बोले- 'भारत को कम...'"
@@ -2823,14 +3105,16 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:ABP Group",
-    "google-news:India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "google-news:'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal"
    ],
    "top": {
-    "IN-nation": 16
+    "IN": 2,
+    "IN-nation": 11
    },
-   "top_score": 0.15,
+   "top_score": 1.1,
    "top_headlines": [
-    "India-US trade deal: Lower tariffs than rival nations 'already agreed', says Piyush Goyal"
+    "'Preferential trade access already agreed': Piyush Goyal's big update on India-US trade deal",
+    "Jaishankar says India-US trade deal almost at finish line, remaining concerns more on American side | India News"
    ],
    "hindi_owners": [],
    "audience": "india",
