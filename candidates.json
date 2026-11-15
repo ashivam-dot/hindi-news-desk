@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T11:07:19+00:00",
+ "at": "2026-11-15T11:23:12+00:00",
  "trending": [
   {
    "id": "kh-20261115-Q1353",
@@ -55,7 +55,7 @@
     "एकतरफा प्यार, अनबन और फिर रेत दिया गला...दिल्ली में महिला का ट्रायल रूम में मिला शव, आरोपी गिरफ्तार",
     "गले में खराश, आंखों में जलन…दिल्ली की हवा ने बढ़ाई लोगों की मुश्किलें"
    ],
-   "hindi_news": 34,
+   "hindi_news": 31,
    "geos": [
     "IN"
    ],
@@ -148,7 +148,7 @@
     "outlet:DB Corp",
     "outlet:ABP Group",
     "outlet:BBC",
-    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not disclose satisfactory compliance'",
+    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not d",
     "google-news:Air severe at Delhi's 17 stations, don’t pin too much hope on rain",
     "google-news:Teen employee found murdered inside Delhi shop's trial room, accused on the run"
    ],
@@ -334,7 +334,7 @@
     "'Who Laughs When India Is Insulted?': BJP's Veiled Jibe At Rahul Gandhi Over Foreign Leader's 'Vote Chor' Remark"
    ],
    "hindi_headlines": [
-    "'देश के अपमान पर कौन हंसता है?' विदेशी नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
+    "'देश के अपमान पर कौन हंसता है?' इटैलियन नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
     "'भारत विरोधी समिट में गए, लेकिन ...', BJP ने फिर राहुल गांधी पर साधा निशाना",
     "राहुल गांधी के मंच से इटली के नेता ने लगाए ‘वोट चोर, गद्दी छोड़’ के नारे, BJP ने विदेशी दखल बताया",
     "'देश में अब लोकतंत्र नहीं रहा', भारत समिट में राहुल गांधी का बड़ा बयान",
@@ -421,10 +421,12 @@
     "google-news:Rahul Gandhi promises social security, insurance cover for gig workers in Telangana"
    ],
    "top": {
-    "IN-nation": 20
+    "IN-nation": 11,
+    "IN-hi-nation": 7
    },
-   "top_score": 0.03,
+   "top_score": 0.57,
    "top_headlines": [
+    "राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
    "hindi_owners": [
@@ -436,10 +438,10 @@
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261115-Q2003852",
-   "qid": "Q2003852",
-   "title": "Starship",
-   "name": "starship",
+   "id": "kh-20261115-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
    "phrase": "Starship",
    "person": false,
    "kind": "explainer",
@@ -448,6 +450,9 @@
    "story": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
    "story_keys": [
     "catch",
+    "catche",
+    "history",
+    "make",
     "orbit",
     "return",
     "rocket"
@@ -458,10 +463,11 @@
     "France Médias Monde",
     "BBC",
     "Guardian Media Group",
-    "Network18"
+    "Network18",
+    "India Today Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -469,6 +475,7 @@
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "SpaceX’s Starship returns to launch pad from orbit in victory for company",
     "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
+    "SpaceX catches megarocket Starship using Chopsticks, makes history",
     "SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "hindi_headlines": [],
@@ -477,7 +484,7 @@
    "region": "world",
    "india_link": false,
    "abroad": false,
-   "label_hi": "तारायान",
+   "label_hi": "स्पेसएक्स स्टारशिप",
    "reports": [
     {
      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
@@ -518,6 +525,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T09:43:30+00:00"
+    },
+    {
+     "title": "SpaceX catches megarocket Starship using Chopsticks, makes history",
+     "url": "https://www.indiatoday.in/science/story/ship-42-returns-from-orbit-and-is-caught-by-starbases-launch-tower-3039186-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T21:20:44+00:00"
     }
    ],
    "via": [
@@ -525,220 +542,19 @@
     "outlet:BBC",
     "outlet:Guardian Media Group",
     "outlet:Network18",
+    "outlet:India Today Group",
     "google-news:SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "top": {
-    "IN": 3
+    "IN": 1
    },
-   "top_score": 0.9,
+   "top_score": 1.0,
    "top_headlines": [
     "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q796885",
-   "qid": "Q796885",
-   "title": "Gadi Eisenkot",
-   "name": "Gadi Eisenkot",
-   "phrase": "Eisenkot",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-   "story_keys": [
-    "call",
-    "netanyahu",
-    "unity"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T07:56:52+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-    "Netanyahu sends plea to Eisenkot for unity government",
-    "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-     "url": "https://www.france24.com/en/middle-east/20261114-netanyahu-renews-call-for-israeli-government-unity-as-eisenkot-dismisses-tricks",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T20:35:22+00:00"
-    },
-    {
-     "title": "Netanyahu sends plea to Eisenkot for unity government",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/netanyahu-sends-plea-to-eisenkot-for-unity-government?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-15T01:33:11+00:00"
-    },
-    {
-     "title": "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-     "url": "https://www.ndtv.com/world-news/israel-netanyahu-calls-for-unity-government-eisenkot-says-hes-playing-tricks-12329262#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:56:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q36812",
-   "qid": "Q36812",
-   "title": "William, Prince of Wales",
-   "name": "William, Prince of Wales",
-   "phrase": "Prince William",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-   "story_keys": [
-    "earthshot",
-    "princess",
-    "prize",
-    "visit"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T10:34:34+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-    "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
-    "Prince William, Kate to visit India this week",
-    "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
-    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "विलियम, वेल्स के राजकुमार",
-   "reports": [
-    {
-     "title": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-     "url": "https://www.thehindu.com/news/national/maharashtra/prince-william-princess-kate-to-visit-mumbai-from-nov-16-18/article71703990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:34:34+00:00"
-    },
-    {
-     "title": "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
-     "url": "https://www.hindustantimes.com/india-news/princess-kate-to-join-husband-william-on-india-visit-in-biggest-foreign-trip-since-chemo-101794720652256.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:27:53+00:00"
-    },
-    {
-     "title": "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
-     "url": "https://www.livemint.com/news/india/2026-earthshot-prize-prince-william-kate-middleton-to-visit-india-taj-mahal-kaziranga-mumbai-delhi-on-itinerary-11794714082243.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:50:44+00:00"
-    },
-    {
-     "title": "Prince William, Kate to visit India this week",
-     "url": "https://economictimes.indiatimes.com/news/india/uks-prince-william-to-be-joined-by-wife-kate-for-india-visit-this-week/articleshow/135845054.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T00:59:54+00:00"
-    },
-    {
-     "title": "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
-     "url": "https://www.thehindu.com/news/national/maharashtra/mumbai-police-announce-traffic-diversion-ahead-ofbritains-prince-william-visit/article71702944.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T21:41:27+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "top": {
-    "IN-nation": 12
-   },
-   "top_score": 0.27,
-   "top_headlines": [
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q8652",
@@ -775,13 +591,11 @@
     "'Somebody hit us': Audio captures moment jets collided at Miami airport",
     "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision"
    ],
-   "hindi_headlines": [
-    "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "abroad": true,
    "label_hi": "मियामी",
    "reports": [
@@ -823,16 +637,14 @@
     "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "top": {
-    "IN": 1
+    "IN": 3
    },
-   "top_score": 1.0,
+   "top_score": 0.9,
    "top_headlines": [
     "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
-   "hindi_owners": [
-    "India Today Group"
-   ],
-   "audience": "india",
+   "hindi_owners": [],
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -875,44 +687,6 @@
    "hindi_owners": []
   },
   {
-   "qid": "Q141820731",
-   "title": "2026 Karak church shooting",
-   "fame": 125000,
-   "views": 0,
-   "traffic": 0,
-   "news": 125000,
-   "news_at": "2026-11-15T08:17:36+00:00",
-   "headlines": [
-    "Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [
-    "IN"
-   ],
-   "label_hi": "२०२६ करक गिरजा गोलीबारी",
-   "via": [
-    "google-news:Jordan sentences three men to death by hanging after deadly church attack"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q141820731",
-   "kind": "incident",
-   "category": "attack",
-   "date": "2026-10-23",
-   "coords": [
-    31.289434,
-    35.79955
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "id": "kh-20261115-Q140568762",
    "qid": "Q140568762",
    "title": "2027 AFC U-17 Asian Cup",
@@ -922,7 +696,7 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
+   "story": "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
    "story_keys": [
     "beat",
     "one",
@@ -932,22 +706,24 @@
     "win"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-15T10:02:42+00:00",
+   "news_at": "2026-11-15T10:52:36+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "The Hindu Group",
     "Network18",
-    "NDTV"
+    "NDTV",
+    "Al Jazeera Media Network"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
     "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
     "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
-    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
-    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026"
+    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
+    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -957,6 +733,16 @@
    "abroad": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
+     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-15T10:52:36+00:00"
+    },
     {
      "title": "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
      "url": "https://sports.ndtv.com/cricket/gautam-gambhirs-post-storms-internet-as-india-beat-pakistan-to-win-u19-asia-cup-2026-12328963#publisher=newsstand",
@@ -1002,13 +788,78 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
     "outlet:Network18",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
+   "lane": "other"
+  },
+  {
+   "qid": "Q142084937",
+   "title": "2026 Bangladesh garment workers protests",
+   "fame": 100000,
+   "views": 0,
+   "traffic": 0,
+   "news": 50000,
+   "news_at": "2026-11-15T11:10:09+00:00",
+   "headlines": [
+    "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+    "Bangladesh unrest shuts garment factories"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-current-events-2026-11-14",
+    "google-news:Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+    "google-news:Bangladesh unrest shuts garment factories",
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co."
+   ],
+   "reports": [
+    {
+     "title": "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+     "url": "https://www.indiatoday.in/world/story/bangladesh-garment-protests-factory-closures-minimum-wage-board-meeting-3039408-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:10:09+00:00"
+    },
+    {
+     "title": "Bangladesh unrest shuts garment factories",
+     "url": "https://economictimes.indiatimes.com/news/international/world-news/fresh-unrest-shuts-garment-factories-in-bangladesh-ahead-of-wage-board-meeting/articleshow/135853171.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:33:29+00:00"
+    }
+   ],
+   "id": "wk-Q142084937-2026w46",
+   "kind": "incident",
+   "category": "protest",
+   "date": "2026-11-15",
+   "coords": null,
+   "has_coords": false,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -1109,215 +960,177 @@
    "lane": "other"
   },
   {
-   "qid": "Q142084937",
-   "title": "2026 Bangladesh garment workers protests",
-   "fame": 75000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-15T10:33:29+00:00",
-   "headlines": [
-    "Bangladesh unrest shuts garment factories"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-current-events-2026-11-14",
-    "google-news:Bangladesh unrest shuts garment factories",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "owners": [
-    "Bennett, Coleman & Co."
-   ],
-   "reports": [
-    {
-     "title": "Bangladesh unrest shuts garment factories",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/fresh-unrest-shuts-garment-factories-in-bangladesh-ahead-of-wage-board-meeting/articleshow/135853171.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:33:29+00:00"
-    }
-   ],
-   "id": "wk-Q142084937-2026w46",
-   "kind": "incident",
-   "category": "protest",
-   "date": "2026-11-15",
-   "coords": null,
-   "has_coords": false,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q141759242",
-   "qid": "Q141759242",
-   "title": "Mumbai CSMT–SMVT Bengaluru Vande Bharat Sleeper Express",
-   "name": "Mumbai CSMT–KSR Bengaluru Vande Bharat Sleeper Express",
-   "phrase": "Mumbai's CSMT",
+   "id": "kh-20261115-Q486814",
+   "qid": "Q486814",
+   "title": "Wedding of Prince William and Catherine Middleton",
+   "name": "wedding of Prince William and Catherine Middleton",
+   "phrase": "Prince William Kate",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
    "story_keys": [
-    "nothing",
-    "search",
-    "security",
-    "threat"
+    "ceremony",
+    "earthshot",
+    "prince",
+    "princess",
+    "prize",
+    "visit"
    ],
    "date": "2026-11-15",
-   "news_at": "2026-11-15T10:14:33+00:00",
+   "news_at": "2026-11-15T10:34:34+00:00",
    "owners": [
-    "NDTV",
-    "India Today Group",
-    "HT Media"
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-    "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-    "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops"
+    "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
+    "Prince William, Kate to visit India this week",
+    "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
+    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
-   "label_hi": null,
+   "abroad": true,
+   "label_hi": "कैम्ब्रिज के ड्यूक राजकुमार विलियम तथा कैथरीन मिडलटन का विवाह",
    "reports": [
     {
-     "title": "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops",
-     "url": "https://www.hindustantimes.com/india-news/mumbai-bomb-threat-to-csmt-turns-out-to-be-hoax-after-security-agencies-launch-search-ops-101794737673832.html",
+     "title": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
+     "url": "https://www.thehindu.com/news/national/maharashtra/prince-william-princess-kate-to-visit-mumbai-from-nov-16-18/article71703990.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:34:34+00:00"
+    },
+    {
+     "title": "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
+     "url": "https://www.hindustantimes.com/india-news/princess-kate-to-join-husband-william-on-india-visit-in-biggest-foreign-trip-since-chemo-101794720652256.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T10:14:33+00:00"
+     "at": "2026-11-15T07:27:53+00:00"
     },
     {
-     "title": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-     "url": "https://www.indiatoday.in/cities/mumbai/story/mumbai-csmt-bomb-threat-three-hour-security-search-finds-nothing-3039334-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
+     "url": "https://www.livemint.com/news/india/2026-earthshot-prize-prince-william-kate-middleton-to-visit-india-taj-mahal-kaziranga-mumbai-delhi-on-itinerary-11794714082243.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T08:50:09+00:00"
+     "at": "2026-11-15T03:50:44+00:00"
     },
     {
-     "title": "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-     "url": "https://www.ndtv.com/mumbai-news/mumbais-csmt-railway-station-searched-after-bomb-threat-nothing-suspicious-found-12329241#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Prince William, Kate to visit India this week",
+     "url": "https://economictimes.indiatimes.com/news/india/uks-prince-william-to-be-joined-by-wife-kate-for-india-visit-this-week/articleshow/135845054.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T07:28:12+00:00"
+     "at": "2026-11-15T00:59:54+00:00"
     }
    ],
    "via": [
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:HT Media"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
-   "id": "kh-20261115-Q113758110",
-   "qid": "Q113758110",
-   "title": "Sameer Wankhede",
-   "name": "Sameer Wankhede",
-   "phrase": "Wankhede",
+   "id": "kh-20261115-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
    "person": true,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
    "story_keys": [
-    "leg",
-    "request",
-    "shift",
-    "stadium"
+    "listing"
    ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T09:30:40+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T16:37:33+00:00",
    "owners": [
     "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
+    "Indian Express Group",
+    "Bennett, Coleman & Co."
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-    "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-    "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium"
+    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+    "Tata Sons listing could change the ‘Tata way’: Noel"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "नोएल टाटा",
    "reports": [
     {
-     "title": "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium",
-     "url": "https://www.indiatoday.in/sports/cricket/story/wpl-2026-wankhede-stadium-to-host-brabourne-shifted-bcci-3039362-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:30:40+00:00"
-    },
-    {
-     "title": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/wpl/wpl-2027-bcci-shifts-mumbai-leg-from-brabourne-to-wankhede-on-icc-request-heres-why/articleshow/135851741.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T09:08:53+00:00"
+     "at": "2026-11-14T16:37:33+00:00"
     },
     {
-     "title": "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-     "url": "https://www.hindustantimes.com/cricket/bcci-shifts-second-leg-of-womens-premier-league-2027-to-wankhede-stadium-on-iccs-request-101794730451431.html",
+     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:09:51+00:00"
+    },
+    {
+     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T08:31:44+00:00"
+     "at": "2026-11-14T12:42:39+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
+    "outlet:Indian Express Group",
+    "outlet:Bennett, Coleman & Co."
    ],
    "top": {},
    "top_score": 0.0,
@@ -1660,101 +1473,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261115-Q8652",
-   "qid": "Q8652",
-   "title": "Miami",
-   "name": "Miami",
-   "phrase": "Miami",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-   "story_keys": [
-    "airport",
-    "collision",
-    "hit",
-    "pilot",
-    "somebody",
-    "you"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T10:10:40+00:00",
-   "owners": [
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-    "'Somebody hit us': Audio captures moment jets collided at Miami airport",
-    "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision"
-   ],
-   "hindi_headlines": [
-    "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "मियामी",
-   "reports": [
-    {
-     "title": "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision",
-     "url": "https://www.ndtv.com/world-news/somebody-hit-us-pilots-chilling-audio-after-copa-and-ups-boeing-miami-airport-collision-12329190#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:10:40+00:00"
-    },
-    {
-     "title": "'Somebody hit us': Audio captures moment jets collided at Miami airport",
-     "url": "https://timesofindia.indiatimes.com/world/us/somebody-hit-us-audio-captures-moment-jets-collided-at-miami-airport/articleshow/135852224.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:38:19+00:00"
-    },
-    {
-     "title": "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
-     "url": "https://www.indiatoday.in/world/us-news/story/miami-airport-collision-atc-audio-copa-airlines-jet-ups-cargo-plane-faa-probe-3039340-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:08:06+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:NDTV",
-    "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
-   ],
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
-   ],
-   "hindi_owners": [
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261115-Q10218",
    "qid": "Q10218",
    "title": "Rahul Gandhi",
@@ -1796,7 +1514,7 @@
     "'Who Laughs When India Is Insulted?': BJP's Veiled Jibe At Rahul Gandhi Over Foreign Leader's 'Vote Chor' Remark"
    ],
    "hindi_headlines": [
-    "'देश के अपमान पर कौन हंसता है?' विदेशी नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
+    "'देश के अपमान पर कौन हंसता है?' इटैलियन नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
     "'भारत विरोधी समिट में गए, लेकिन ...', BJP ने फिर राहुल गांधी पर साधा निशाना",
     "राहुल गांधी के मंच से इटली के नेता ने लगाए ‘वोट चोर, गद्दी छोड़’ के नारे, BJP ने विदेशी दखल बताया",
     "'देश में अब लोकतंत्र नहीं रहा', भारत समिट में राहुल गांधी का बड़ा बयान",
@@ -1883,10 +1601,12 @@
     "google-news:Rahul Gandhi promises social security, insurance cover for gig workers in Telangana"
    ],
    "top": {
-    "IN-nation": 20
+    "IN-nation": 11,
+    "IN-hi-nation": 7
    },
-   "top_score": 0.03,
+   "top_score": 0.57,
    "top_headlines": [
+    "राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
    "hindi_owners": [
@@ -1896,6 +1616,97 @@
    ],
    "audience": "india",
    "lane": "rajneeti"
+  },
+  {
+   "id": "kh-20261115-Q8652",
+   "qid": "Q8652",
+   "title": "Miami",
+   "name": "Miami",
+   "phrase": "Miami",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
+   "story_keys": [
+    "airport",
+    "collision",
+    "hit",
+    "pilot",
+    "somebody",
+    "you"
+   ],
+   "date": "2026-11-15",
+   "news_at": "2026-11-15T10:10:40+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport",
+    "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "मियामी",
+   "reports": [
+    {
+     "title": "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision",
+     "url": "https://www.ndtv.com/world-news/somebody-hit-us-pilots-chilling-audio-after-copa-and-ups-boeing-miami-airport-collision-12329190#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:10:40+00:00"
+    },
+    {
+     "title": "'Somebody hit us': Audio captures moment jets collided at Miami airport",
+     "url": "https://timesofindia.indiatimes.com/world/us/somebody-hit-us-audio-captures-moment-jets-collided-at-miami-airport/articleshow/135852224.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:38:19+00:00"
+    },
+    {
+     "title": "Did you hit that aircraft? ATC's tense exchange with pilots after Miami collision",
+     "url": "https://www.indiatoday.in/world/us-news/story/miami-airport-collision-atc-audio-copa-airlines-jet-ups-cargo-plane-faa-probe-3039340-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T09:08:06+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV",
+    "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
+   ],
+   "top": {
+    "IN": 3
+   },
+   "top_score": 0.9,
+   "top_headlines": [
+    "'Somebody hit us': Audio captures moment jets collided at Miami airport"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261115-Q1353",
@@ -1951,7 +1762,7 @@
     "एकतरफा प्यार, अनबन और फिर रेत दिया गला...दिल्ली में महिला का ट्रायल रूम में मिला शव, आरोपी गिरफ्तार",
     "गले में खराश, आंखों में जलन…दिल्ली की हवा ने बढ़ाई लोगों की मुश्किलें"
    ],
-   "hindi_news": 34,
+   "hindi_news": 31,
    "geos": [
     "IN"
    ],
@@ -2044,7 +1855,7 @@
     "outlet:DB Corp",
     "outlet:ABP Group",
     "outlet:BBC",
-    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not disclose satisfactory compliance'",
+    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not d",
     "google-news:Air severe at Delhi's 17 stations, don’t pin too much hope on rain",
     "google-news:Teen employee found murdered inside Delhi shop's trial room, accused on the run"
    ],
@@ -2114,10 +1925,10 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261115-Q2003852",
-   "qid": "Q2003852",
-   "title": "Starship",
-   "name": "starship",
+   "id": "kh-20261115-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
    "phrase": "Starship",
    "person": false,
    "kind": "explainer",
@@ -2126,6 +1937,9 @@
    "story": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
    "story_keys": [
     "catch",
+    "catche",
+    "history",
+    "make",
     "orbit",
     "return",
     "rocket"
@@ -2136,10 +1950,11 @@
     "France Médias Monde",
     "BBC",
     "Guardian Media Group",
-    "Network18"
+    "Network18",
+    "India Today Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2147,6 +1962,7 @@
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "SpaceX’s Starship returns to launch pad from orbit in victory for company",
     "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
+    "SpaceX catches megarocket Starship using Chopsticks, makes history",
     "SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "hindi_headlines": [],
@@ -2155,7 +1971,7 @@
    "region": "world",
    "india_link": false,
    "abroad": false,
-   "label_hi": "तारायान",
+   "label_hi": "स्पेसएक्स स्टारशिप",
    "reports": [
     {
      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
@@ -2196,6 +2012,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T09:43:30+00:00"
+    },
+    {
+     "title": "SpaceX catches megarocket Starship using Chopsticks, makes history",
+     "url": "https://www.indiatoday.in/science/story/ship-42-returns-from-orbit-and-is-caught-by-starbases-launch-tower-3039186-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T21:20:44+00:00"
     }
    ],
    "via": [
@@ -2203,12 +2029,13 @@
     "outlet:BBC",
     "outlet:Guardian Media Group",
     "outlet:Network18",
+    "outlet:India Today Group",
     "google-news:SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "top": {
-    "IN": 3
+    "IN": 1
    },
-   "top_score": 0.9,
+   "top_score": 1.0,
    "top_headlines": [
     "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
@@ -2217,124 +2044,40 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q113758110",
-   "qid": "Q113758110",
-   "title": "Sameer Wankhede",
-   "name": "Sameer Wankhede",
-   "phrase": "Wankhede",
-   "person": true,
+   "id": "kh-20261115-Q486814",
+   "qid": "Q486814",
+   "title": "Wedding of Prince William and Catherine Middleton",
+   "name": "wedding of Prince William and Catherine Middleton",
+   "phrase": "Prince William Kate",
+   "person": false,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
    "story_keys": [
-    "leg",
-    "request",
-    "shift",
-    "stadium"
+    "ceremony",
+    "earthshot",
+    "prince",
+    "princess",
+    "prize",
+    "visit"
    ],
    "date": "2026-11-15",
-   "news_at": "2026-11-15T09:30:40+00:00",
+   "news_at": "2026-11-15T10:34:34+00:00",
    "owners": [
-    "HT Media",
     "Bennett, Coleman & Co.",
-    "India Today Group"
+    "HT Media",
+    "The Hindu Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-    "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-    "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium",
-     "url": "https://www.indiatoday.in/sports/cricket/story/wpl-2026-wankhede-stadium-to-host-brabourne-shifted-bcci-3039362-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:30:40+00:00"
-    },
-    {
-     "title": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/wpl/wpl-2027-bcci-shifts-mumbai-leg-from-brabourne-to-wankhede-on-icc-request-heres-why/articleshow/135851741.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:08:53+00:00"
-    },
-    {
-     "title": "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-     "url": "https://www.hindustantimes.com/cricket/bcci-shifts-second-leg-of-womens-premier-league-2027-to-wankhede-stadium-on-iccs-request-101794730451431.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T08:31:44+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q36812",
-   "qid": "Q36812",
-   "title": "William, Prince of Wales",
-   "name": "William, Prince of Wales",
-   "phrase": "Prince William",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-   "story_keys": [
-    "earthshot",
-    "princess",
-    "prize",
-    "visit"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T10:34:34+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
     "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-    "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
     "Prince William, Kate to visit India this week",
     "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
-    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
+    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2342,7 +2085,7 @@
    "region": "world",
    "india_link": false,
    "abroad": true,
-   "label_hi": "विलियम, वेल्स के राजकुमार",
+   "label_hi": "कैम्ब्रिज के ड्यूक राजकुमार विलियम तथा कैथरीन मिडलटन का विवाह",
    "reports": [
     {
      "title": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
@@ -2383,129 +2126,30 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T00:59:54+00:00"
-    },
-    {
-     "title": "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
-     "url": "https://www.thehindu.com/news/national/maharashtra/mumbai-police-announce-traffic-diversion-ahead-ofbritains-prince-william-visit/article71702944.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T21:41:27+00:00"
     }
    ],
    "via": [
-    "outlet:The Hindu Group",
     "outlet:Bennett, Coleman & Co.",
     "outlet:HT Media",
-    "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "top": {
-    "IN-nation": 12
-   },
-   "top_score": 0.27,
-   "top_headlines": [
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261115-Q141759242",
-   "qid": "Q141759242",
-   "title": "Mumbai CSMT–SMVT Bengaluru Vande Bharat Sleeper Express",
-   "name": "Mumbai CSMT–KSR Bengaluru Vande Bharat Sleeper Express",
-   "phrase": "Mumbai's CSMT",
-   "person": false,
-   "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-   "story_keys": [
-    "nothing",
-    "search",
-    "security",
-    "threat"
-   ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T10:14:33+00:00",
-   "owners": [
-    "NDTV",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-    "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-    "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops",
-     "url": "https://www.hindustantimes.com/india-news/mumbai-bomb-threat-to-csmt-turns-out-to-be-hoax-after-security-agencies-launch-search-ops-101794737673832.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:14:33+00:00"
-    },
-    {
-     "title": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-     "url": "https://www.indiatoday.in/cities/mumbai/story/mumbai-csmt-bomb-threat-three-hour-security-search-finds-nothing-3039334-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T08:50:09+00:00"
-    },
-    {
-     "title": "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-     "url": "https://www.ndtv.com/mumbai-news/mumbais-csmt-railway-station-searched-after-bomb-threat-nothing-suspicious-found-12329241#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:28:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:HT Media"
+    "outlet:The Hindu Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
    "qid": "Q142084937",
    "title": "2026 Bangladesh garment workers protests",
-   "fame": 75000,
+   "fame": 100000,
    "views": 0,
    "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-15T10:33:29+00:00",
+   "news": 50000,
+   "news_at": "2026-11-15T11:10:09+00:00",
    "headlines": [
+    "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
     "Bangladesh unrest shuts garment factories"
    ],
    "hindi_news": 0,
@@ -2516,13 +2160,26 @@
    "label_hi": null,
    "via": [
     "wikipedia-current-events-2026-11-14",
+    "google-news:Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
     "google-news:Bangladesh unrest shuts garment factories",
+    "outlet:India Today Group",
     "outlet:Bennett, Coleman & Co."
    ],
    "owners": [
+    "India Today Group",
     "Bennett, Coleman & Co."
    ],
    "reports": [
+    {
+     "title": "Fresh unrest hits Bangladesh garment sector, 50 factories shut over wage hike demand",
+     "url": "https://www.indiatoday.in/world/story/bangladesh-garment-protests-factory-closures-minimum-wage-board-meeting-3039408-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T11:10:09+00:00"
+    },
     {
      "title": "Bangladesh unrest shuts garment factories",
      "url": "https://economictimes.indiatimes.com/news/international/world-news/fresh-unrest-shuts-garment-factories-in-bangladesh-ahead-of-wage-board-meeting/articleshow/135853171.cms",
@@ -2546,6 +2203,89 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261115-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+   "story_keys": [
+    "listing"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T16:37:33+00:00",
+   "owners": [
+    "HT Media",
+    "Indian Express Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+    "Tata Sons listing could change the ‘Tata way’: Noel"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नोएल टाटा",
+   "reports": [
+    {
+     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T16:37:33+00:00"
+    },
+    {
+     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:09:51+00:00"
+    },
+    {
+     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T12:42:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Indian Express Group",
+    "outlet:Bennett, Coleman & Co."
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q276",
@@ -2645,95 +2385,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q796885",
-   "qid": "Q796885",
-   "title": "Gadi Eisenkot",
-   "name": "Gadi Eisenkot",
-   "phrase": "Eisenkot",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-   "story_keys": [
-    "call",
-    "netanyahu",
-    "unity"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T07:56:52+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-    "Netanyahu sends plea to Eisenkot for unity government",
-    "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-     "url": "https://www.france24.com/en/middle-east/20261114-netanyahu-renews-call-for-israeli-government-unity-as-eisenkot-dismisses-tricks",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T20:35:22+00:00"
-    },
-    {
-     "title": "Netanyahu sends plea to Eisenkot for unity government",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/netanyahu-sends-plea-to-eisenkot-for-unity-government?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-15T01:33:11+00:00"
-    },
-    {
-     "title": "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-     "url": "https://www.ndtv.com/world-news/israel-netanyahu-calls-for-unity-government-eisenkot-says-hes-playing-tricks-12329262#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:56:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "qid": "Q141615137",
    "title": "2026 French civil unrest",
    "fame": 50000,
@@ -2764,6 +2415,118 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261115-Q140568762",
+   "qid": "Q140568762",
+   "title": "2027 AFC U-17 Asian Cup",
+   "name": "2027 AFC U-17 Asian Cup",
+   "phrase": "U Asia Cup",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
+   "story_keys": [
+    "beat",
+    "one",
+    "thriller",
+    "title",
+    "wicket",
+    "win"
+   ],
+   "date": "2026-11-14",
+   "news_at": "2026-11-15T10:52:36+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "Network18",
+    "NDTV",
+    "Al Jazeera Media Network"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
+    "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
+    "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
+    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
+    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
+     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-15T10:52:36+00:00"
+    },
+    {
+     "title": "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
+     "url": "https://sports.ndtv.com/cricket/gautam-gambhirs-post-storms-internet-as-india-beat-pakistan-to-win-u19-asia-cup-2026-12328963#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:02:42+00:00"
+    },
+    {
+     "title": "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
+     "url": "https://www.news18.com/videos/breaking-news/india-u-19-beat-pakistan-in-last-ball-thriller-to-win-record-ninth-asia-cup-title-news18-10426192.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T02:58:56+00:00"
+    },
+    {
+     "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
+     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:40:36+00:00"
+    },
+    {
+     "title": "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/mohit-ulva-stars-as-india-u19-chase-down-338-in-last-ball-thriller-to-beat-pakistan-by-one-wicket-and-clinch-asia-cup-title/articleshow/135834187.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:35:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "other"
   },
   {
@@ -2827,105 +2590,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261115-Q140568762",
-   "qid": "Q140568762",
-   "title": "2027 AFC U-17 Asian Cup",
-   "name": "2027 AFC U-17 Asian Cup",
-   "phrase": "U Asia Cup",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
-   "story_keys": [
-    "beat",
-    "one",
-    "thriller",
-    "title",
-    "wicket",
-    "win"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T10:02:42+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "Network18",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
-    "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
-    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
-    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
-     "url": "https://sports.ndtv.com/cricket/gautam-gambhirs-post-storms-internet-as-india-beat-pakistan-to-win-u19-asia-cup-2026-12328963#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:02:42+00:00"
-    },
-    {
-     "title": "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
-     "url": "https://www.news18.com/videos/breaking-news/india-u-19-beat-pakistan-in-last-ball-thriller-to-win-record-ninth-asia-cup-title-news18-10426192.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T02:58:56+00:00"
-    },
-    {
-     "title": "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
-     "url": "https://www.thehindu.com/sport/cricket/u19-asia-cup-final-india-vs-pakistan-usman-khan-nov-14-2026/article71701378.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:40:36+00:00"
-    },
-    {
-     "title": "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/mohit-ulva-stars-as-india-u19-chase-down-338-in-last-ball-thriller-to-beat-pakistan-by-one-wicket-and-clinch-asia-cup-title/articleshow/135834187.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T13:35:39+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:Network18",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "qid": "Q4772274",
@@ -3636,7 +3300,6 @@
    "owners": [
     "NDTV",
     "Network18",
-    "Al Jazeera Media Network",
     "France Médias Monde",
     "Guardian Media Group"
    ],
@@ -3646,7 +3309,6 @@
    "traffic": 0,
    "headlines": [
     "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-    "Netanyahu sends plea to Eisenkot for unity government",
     "Eisenkot condemns Netanyahu’s ‘racist’ campaign against Israel’s Arab citizens",
     "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
     "Benjamin Netanyahu Calls For National Unity Government With Eisenkot | Israel Elections | News18"
@@ -3665,16 +3327,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-14T20:35:22+00:00"
-    },
-    {
-     "title": "Netanyahu sends plea to Eisenkot for unity government",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/netanyahu-sends-plea-to-eisenkot-for-unity-government?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-15T01:33:11+00:00"
     },
     {
      "title": "Eisenkot condemns Netanyahu’s ‘racist’ campaign against Israel’s Arab citizens",
@@ -3723,19 +3375,15 @@
  ],
  "notes": [
   "revisit kh-20261115-Q10218-update: 2 owners' new reports on Rahul Gandhi (1042 views before); revisit kh-20261115-Q37293-update: 6 owners' new reports on Ramayana (994 views before); revisit Q9543: already revisited today; revisit kh-20261115-Q163225-update: 2 owners' new reports on Sonia Gandhi (814 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its l",
-  "outlets: 1610 headlines from 47 feeds (17 owners), 9 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 11 kh- stories (on): kh-20261115-Q1353, kh-20261115-Q3241458, kh-20261115-Q10218, kh-20261115-Q2003852; dropped: explainer Raichandani: fewer than 3 owners' headlines name it and the story; explainer Guwahati-bound IndiGo / Guwahati-bound IndiGo: no Wikipedia article that can be its centre; explainer Trade Harshal Patel: fewer than 3 owners' headlines name it and the story"
- ],
- "trend_errors": [
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+  "outlets: 1649 headlines from 49 feeds (18 owners), 11 matched to articles, 10 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261115-Q1353, kh-20261115-Q3241458, kh-20261115-Q10218, kh-20261115-Q62833385; dropped: explainer Arshdeep: fewer than 3 owners' headlines name it and the story; explainer New York Newark: fewer than 3 owners' headlines name it and the story; explainer Guwahati-bound IndiGo / Guwahati-bound IndiGo: no Wikipedia article that can be its centre"
  ],
  "outlets": {
-  "headlines": 1610,
-  "feeds": 47,
-  "owners": 17,
-  "matched": 9,
-  "corroborated": 11
+  "headlines": 1649,
+  "feeds": 49,
+  "owners": 18,
+  "matched": 11,
+  "corroborated": 10
  },
  "emerging": [],
  "explainers": [
@@ -3793,7 +3441,7 @@
     "एकतरफा प्यार, अनबन और फिर रेत दिया गला...दिल्ली में महिला का ट्रायल रूम में मिला शव, आरोपी गिरफ्तार",
     "गले में खराश, आंखों में जलन…दिल्ली की हवा ने बढ़ाई लोगों की मुश्किलें"
    ],
-   "hindi_news": 34,
+   "hindi_news": 31,
    "geos": [
     "IN"
    ],
@@ -3886,7 +3534,7 @@
     "outlet:DB Corp",
     "outlet:ABP Group",
     "outlet:BBC",
-    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not disclose satisfactory compliance'",
+    "google-news:Sonakshi Sinha morphed photos case: Mumbai court holds Delhi arrest illegal, says, 'The record does not d",
     "google-news:Air severe at Delhi's 17 stations, don’t pin too much hope on rain",
     "google-news:Teen employee found murdered inside Delhi shop's trial room, accused on the run"
    ],
@@ -4072,7 +3720,7 @@
     "'Who Laughs When India Is Insulted?': BJP's Veiled Jibe At Rahul Gandhi Over Foreign Leader's 'Vote Chor' Remark"
    ],
    "hindi_headlines": [
-    "'देश के अपमान पर कौन हंसता है?' विदेशी नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
+    "'देश के अपमान पर कौन हंसता है?' इटैलियन नेता के 'वोट चोर' नारे पर ताली बजाने को लेकर किरेन रिजिजू का राहुल गांधी पर तंज",
     "'भारत विरोधी समिट में गए, लेकिन ...', BJP ने फिर राहुल गांधी पर साधा निशाना",
     "राहुल गांधी के मंच से इटली के नेता ने लगाए ‘वोट चोर, गद्दी छोड़’ के नारे, BJP ने विदेशी दखल बताया",
     "'देश में अब लोकतंत्र नहीं रहा', भारत समिट में राहुल गांधी का बड़ा बयान",
@@ -4159,10 +3807,12 @@
     "google-news:Rahul Gandhi promises social security, insurance cover for gig workers in Telangana"
    ],
    "top": {
-    "IN-nation": 20
+    "IN-nation": 11,
+    "IN-hi-nation": 7
    },
-   "top_score": 0.03,
+   "top_score": 0.57,
    "top_headlines": [
+    "राहुल गांधी के सामने इटली के नेता ने लगाए 'वोट चोर, गद्दी छोड़ के नारे', कहा- 'भारत में लोकतंत्र पर हो रहा",
     "Rahul Gandhi flags ‘vote chori’, Italian delegate raises slogan at Bharat Summit"
    ],
    "hindi_owners": [
@@ -4174,10 +3824,10 @@
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261115-Q2003852",
-   "qid": "Q2003852",
-   "title": "Starship",
-   "name": "starship",
+   "id": "kh-20261115-Q62833385",
+   "qid": "Q62833385",
+   "title": "SpaceX Starship",
+   "name": "Starship",
    "phrase": "Starship",
    "person": false,
    "kind": "explainer",
@@ -4186,6 +3836,9 @@
    "story": "SpaceX's Starship completes first-ever mid-air catch after return from orbit",
    "story_keys": [
     "catch",
+    "catche",
+    "history",
+    "make",
     "orbit",
     "return",
     "rocket"
@@ -4196,10 +3849,11 @@
     "France Médias Monde",
     "BBC",
     "Guardian Media Group",
-    "Network18"
+    "Network18",
+    "India Today Group"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4207,6 +3861,7 @@
     "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
     "SpaceX’s Starship returns to launch pad from orbit in victory for company",
     "SpaceX Starship Makes History: Tower Arms Catch Rocket In Stunning Landing | Elon Musk | News18",
+    "SpaceX catches megarocket Starship using Chopsticks, makes history",
     "SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "hindi_headlines": [],
@@ -4215,7 +3870,7 @@
    "region": "world",
    "india_link": false,
    "abroad": false,
-   "label_hi": "तारायान",
+   "label_hi": "स्पेसएक्स स्टारशिप",
    "reports": [
     {
      "title": "'Can you believe it?': SpaceX catches part of its Starship rocket on return to Earth",
@@ -4256,6 +3911,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-15T09:43:30+00:00"
+    },
+    {
+     "title": "SpaceX catches megarocket Starship using Chopsticks, makes history",
+     "url": "https://www.indiatoday.in/science/story/ship-42-returns-from-orbit-and-is-caught-by-starbases-launch-tower-3039186-2026-11-15?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T21:20:44+00:00"
     }
    ],
    "via": [
@@ -4263,220 +3928,19 @@
     "outlet:BBC",
     "outlet:Guardian Media Group",
     "outlet:Network18",
+    "outlet:India Today Group",
     "google-news:SpaceX’s Starship captured by launchpad arms in dramatic first"
    ],
    "top": {
-    "IN": 3
+    "IN": 1
    },
-   "top_score": 0.9,
+   "top_score": 1.0,
    "top_headlines": [
     "IndiGo flight’s landing gear fails to retract after take-off, makes safe emergency landing in Pune"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q796885",
-   "qid": "Q796885",
-   "title": "Gadi Eisenkot",
-   "name": "Gadi Eisenkot",
-   "phrase": "Eisenkot",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-   "story_keys": [
-    "call",
-    "netanyahu",
-    "unity"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T07:56:52+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-    "Netanyahu sends plea to Eisenkot for unity government",
-    "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Netanyahu renews call for Israeli unity government as Eisenkot dismisses 'tricks'",
-     "url": "https://www.france24.com/en/middle-east/20261114-netanyahu-renews-call-for-israeli-government-unity-as-eisenkot-dismisses-tricks",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-14T20:35:22+00:00"
-    },
-    {
-     "title": "Netanyahu sends plea to Eisenkot for unity government",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/15/netanyahu-sends-plea-to-eisenkot-for-unity-government?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-15T01:33:11+00:00"
-    },
-    {
-     "title": "Netanyahu Calls For \"Unity Government\", Eisenkot Says He's \"Playing Tricks\"",
-     "url": "https://www.ndtv.com/world-news/israel-netanyahu-calls-for-unity-government-eisenkot-says-hes-playing-tricks-12329262#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:56:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Al Jazeera Media Network",
-    "outlet:NDTV",
-    "google-news:‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "top": {
-    "IN": 13
-   },
-   "top_score": 0.4,
-   "top_headlines": [
-    "‘These tricks don’t work on me’: Eisenkot rejects Netanyahu’s 'unity government' appeal"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261115-Q36812",
-   "qid": "Q36812",
-   "title": "William, Prince of Wales",
-   "name": "William, Prince of Wales",
-   "phrase": "Prince William",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-   "story_keys": [
-    "earthshot",
-    "princess",
-    "prize",
-    "visit"
-   ],
-   "date": "2026-11-14",
-   "news_at": "2026-11-15T10:34:34+00:00",
-   "owners": [
-    "The Hindu Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-    "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
-    "Prince William, Kate to visit India this week",
-    "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
-    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "विलियम, वेल्स के राजकुमार",
-   "reports": [
-    {
-     "title": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
-     "url": "https://www.thehindu.com/news/national/maharashtra/prince-william-princess-kate-to-visit-mumbai-from-nov-16-18/article71703990.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T10:34:34+00:00"
-    },
-    {
-     "title": "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
-     "url": "https://www.hindustantimes.com/india-news/princess-kate-to-join-husband-william-on-india-visit-in-biggest-foreign-trip-since-chemo-101794720652256.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T07:27:53+00:00"
-    },
-    {
-     "title": "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
-     "url": "https://www.livemint.com/news/india/2026-earthshot-prize-prince-william-kate-middleton-to-visit-india-taj-mahal-kaziranga-mumbai-delhi-on-itinerary-11794714082243.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T03:50:44+00:00"
-    },
-    {
-     "title": "Prince William, Kate to visit India this week",
-     "url": "https://economictimes.indiatimes.com/news/india/uks-prince-william-to-be-joined-by-wife-kate-for-india-visit-this-week/articleshow/135845054.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T00:59:54+00:00"
-    },
-    {
-     "title": "Mumbai police announce traffic diversion ahead of Britain’s Prince William visit",
-     "url": "https://www.thehindu.com/news/national/maharashtra/mumbai-police-announce-traffic-diversion-ahead-ofbritains-prince-william-visit/article71702944.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-14T21:41:27+00:00"
-    }
-   ],
-   "via": [
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "google-news:Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "top": {
-    "IN-nation": 12
-   },
-   "top_score": 0.27,
-   "top_headlines": [
-    "Kerala lottery Samrudhi SM-81 result today 15/11/2026: ₹1 cr first prize for MC 846516 | Check complete list",
-    "Prince William, Kate Middleton to attend Earthshot Prize in Mumbai in first joint overseas tour since 202"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261115-Q8652",
@@ -4513,13 +3977,11 @@
     "'Somebody hit us': Audio captures moment jets collided at Miami airport",
     "\"Somebody Hit Us\": Pilot Remarks After Miami Airport Collision"
    ],
-   "hindi_headlines": [
-    "अमेरिका के मियामी एयरपोर्ट पर दो प्लेन टकराए, दो घायल"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [],
    "region": "world",
-   "india_link": true,
+   "india_link": false,
    "abroad": true,
    "label_hi": "मियामी",
    "reports": [
@@ -4561,16 +4023,14 @@
     "google-news:'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
    "top": {
-    "IN": 1
+    "IN": 3
    },
-   "top_score": 1.0,
+   "top_score": 0.9,
    "top_headlines": [
     "'Somebody hit us': Audio captures moment jets collided at Miami airport"
    ],
-   "hindi_owners": [
-    "India Today Group"
-   ],
-   "audience": "india",
+   "hindi_owners": [],
+   "audience": "world",
    "lane": "other"
   },
   {
@@ -4583,7 +4043,7 @@
    "kind": "explainer",
    "category": "world",
    "category_hi": "दुनिया",
-   "story": "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
+   "story": "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
    "story_keys": [
     "beat",
     "one",
@@ -4593,22 +4053,24 @@
     "win"
    ],
    "date": "2026-11-14",
-   "news_at": "2026-11-15T10:02:42+00:00",
+   "news_at": "2026-11-15T10:52:36+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "The Hindu Group",
     "Network18",
-    "NDTV"
+    "NDTV",
+    "Al Jazeera Media Network"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
+    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
     "Mohit stars as India beat Pakistan by one wicket to clinch U19 Asia Cup title",
     "U19 Asia Cup final: India overcome Pakistan by one wicket in thriller",
-    "India U-19 Beat Pakistan In Last-Ball Thriller To Win Record Ninth Asia Cup Title | News18",
-    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026"
+    "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
+    "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -4618,6 +4080,16 @@
    "abroad": false,
    "label_hi": null,
    "reports": [
+    {
+     "title": "India’s Under-19 Asia Cup win over Pakistan marred by post-match aggression",
+     "url": "https://www.aljazeera.com/sports/2026/11/15/indias-under-19-asia-cup-win-over-pakistan-marred-by-post-match-aggression?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-15T10:52:36+00:00"
+    },
     {
      "title": "Gautam Gambhir's Post Storms Internet As India Beat Pakistan To Win U19 Asia Cup 2026",
      "url": "https://sports.ndtv.com/cricket/gautam-gambhirs-post-storms-internet-as-india-beat-pakistan-to-win-u19-asia-cup-2026-12328963#publisher=newsstand",
@@ -4663,7 +4135,8 @@
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
     "outlet:Network18",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "outlet:Al Jazeera Media Network"
    ],
    "top": {},
    "top_score": 0.0,
@@ -4770,165 +4243,177 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261115-Q141759242",
-   "qid": "Q141759242",
-   "title": "Mumbai CSMT–SMVT Bengaluru Vande Bharat Sleeper Express",
-   "name": "Mumbai CSMT–KSR Bengaluru Vande Bharat Sleeper Express",
-   "phrase": "Mumbai's CSMT",
+   "id": "kh-20261115-Q486814",
+   "qid": "Q486814",
+   "title": "Wedding of Prince William and Catherine Middleton",
+   "name": "wedding of Prince William and Catherine Middleton",
+   "phrase": "Prince William Kate",
    "person": false,
    "kind": "explainer",
-   "category": "aviation",
-   "category_hi": "विमानन",
-   "story": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
    "story_keys": [
-    "nothing",
-    "search",
-    "security",
-    "threat"
+    "ceremony",
+    "earthshot",
+    "prince",
+    "princess",
+    "prize",
+    "visit"
    ],
    "date": "2026-11-15",
-   "news_at": "2026-11-15T10:14:33+00:00",
+   "news_at": "2026-11-15T10:34:34+00:00",
    "owners": [
-    "NDTV",
-    "India Today Group",
-    "HT Media"
+    "Bennett, Coleman & Co.",
+    "HT Media",
+    "The Hindu Group"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-    "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-    "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops"
+    "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
+    "Prince William, Kate to visit India this week",
+    "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
+    "Princess Kate to join husband William on India visit in biggest foreign trip since chemo"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
    "geos": [],
    "region": "world",
    "india_link": false,
-   "abroad": false,
-   "label_hi": null,
+   "abroad": true,
+   "label_hi": "कैम्ब्रिज के ड्यूक राजकुमार विलियम तथा कैथरीन मिडलटन का विवाह",
    "reports": [
     {
-     "title": "Mumbai: Bomb threat to CSMT turns out to be hoax after security agencies launch search ops",
-     "url": "https://www.hindustantimes.com/india-news/mumbai-bomb-threat-to-csmt-turns-out-to-be-hoax-after-security-agencies-launch-search-ops-101794737673832.html",
+     "title": "Prince William, Princess Kate to visit Mumbai for Earthshot Prize ceremony",
+     "url": "https://www.thehindu.com/news/national/maharashtra/prince-william-princess-kate-to-visit-mumbai-from-nov-16-18/article71703990.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-15T10:34:34+00:00"
+    },
+    {
+     "title": "Princess Kate to join husband William on India visit in biggest foreign trip since chemo",
+     "url": "https://www.hindustantimes.com/india-news/princess-kate-to-join-husband-william-on-india-visit-in-biggest-foreign-trip-since-chemo-101794720652256.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T10:14:33+00:00"
+     "at": "2026-11-15T07:27:53+00:00"
     },
     {
-     "title": "Mumbai's CSMT gets bomb threat, security teams find nothing after 3-hour search",
-     "url": "https://www.indiatoday.in/cities/mumbai/story/mumbai-csmt-bomb-threat-three-hour-security-search-finds-nothing-3039334-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
+     "title": "2026 Earthshot Prize: Prince William, Kate Middleton to visit India, Taj Mahal, Kaziranga, Mumbai, Delhi on itinerary",
+     "url": "https://www.livemint.com/news/india/2026-earthshot-prize-prince-william-kate-middleton-to-visit-india-taj-mahal-kaziranga-mumbai-delhi-on-itinerary-11794714082243.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T08:50:09+00:00"
+     "at": "2026-11-15T03:50:44+00:00"
     },
     {
-     "title": "Mumbai's CSMT Station Searched After Bomb Threat, Nothing Suspicious Found",
-     "url": "https://www.ndtv.com/mumbai-news/mumbais-csmt-railway-station-searched-after-bomb-threat-nothing-suspicious-found-12329241#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
+     "title": "Prince William, Kate to visit India this week",
+     "url": "https://economictimes.indiatimes.com/news/india/uks-prince-william-to-be-joined-by-wife-kate-for-india-visit-this-week/articleshow/135845054.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T07:28:12+00:00"
+     "at": "2026-11-15T00:59:54+00:00"
     }
    ],
    "via": [
-    "outlet:NDTV",
-    "outlet:India Today Group",
-    "outlet:HT Media"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media",
+    "outlet:The Hindu Group"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "sensitive"
+   "lane": "other"
   },
   {
-   "id": "kh-20261115-Q113758110",
-   "qid": "Q113758110",
-   "title": "Sameer Wankhede",
-   "name": "Sameer Wankhede",
-   "phrase": "Wankhede",
+   "id": "kh-20261115-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
    "person": true,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
    "story_keys": [
-    "leg",
-    "request",
-    "shift",
-    "stadium"
+    "listing"
    ],
-   "date": "2026-11-15",
-   "news_at": "2026-11-15T09:30:40+00:00",
+   "date": "2026-11-14",
+   "news_at": "2026-11-14T16:37:33+00:00",
    "owners": [
     "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
+    "Indian Express Group",
+    "Bennett, Coleman & Co."
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-    "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-    "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium"
+    "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+    "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+    "Tata Sons listing could change the ‘Tata way’: Noel"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "नोएल टाटा",
    "reports": [
     {
-     "title": "WPL 2027: Mumbai leg shifted from Brabourne to Wankhede Stadium",
-     "url": "https://www.indiatoday.in/sports/cricket/story/wpl-2026-wankhede-stadium-to-host-brabourne-shifted-bcci-3039362-2026-11-15?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-15T09:30:40+00:00"
-    },
-    {
-     "title": "WPL: BCCI shifts Mumbai leg from Brabourne to Wankhede on ICC request; here's why",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/wpl/wpl-2027-bcci-shifts-mumbai-leg-from-brabourne-to-wankhede-on-icc-request-heres-why/articleshow/135851741.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Tata Sons listing could change the ‘Tata way’: Noel",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/public-listing-may-change-tata-way-put-profits-ahead-of-philanthropy-noel-tata/articleshow/135837824.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T09:08:53+00:00"
+     "at": "2026-11-14T16:37:33+00:00"
     },
     {
-     "title": "BCCI shifts second leg of Women's Premier League 2027 to Wankhede Stadium on ICC's request",
-     "url": "https://www.hindustantimes.com/cricket/bcci-shifts-second-leg-of-womens-premier-league-2027-to-wankhede-stadium-on-iccs-request-101794730451431.html",
+     "title": "Noel Tata warns listing Tata Sons could alter ‘Tata way of working’",
+     "url": "https://indianexpress.com/article/business/noel-tata-warns-tata-sons-listing-could-alter-tata-way-of-working-philanthropy-10963180/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-14T13:09:51+00:00"
+    },
+    {
+     "title": "HT Exclusive: Noel Tata opposes listing, says profit may take precedence over philanthropy",
+     "url": "https://www.hindustantimes.com/india-news/ht-exclusive-noel-tata-opposes-listing-says-profit-may-take-precedence-over-philanthropy-tata-sons-dispute-news-101794659954226.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-15T08:31:44+00:00"
+     "at": "2026-11-14T12:42:39+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
+    "outlet:Indian Express Group",
+    "outlet:Bennett, Coleman & Co."
    ],
    "top": {},
    "top_score": 0.0,
