@@ -1,20 +1,20 @@
 {
- "at": "2026-11-16T08:12:30+00:00",
+ "at": "2026-11-16T08:25:48+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 19 trending",
-  "outlets: 1631 headlines from 49 feeds (18 owners), 10 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-andhra-cyclone",
-  "explainers: 9 kh- stories (on): kh-20261116-Q85770988, kh-20261116-Q5276830, kh-20261116-Q10230, kh-20261116-Q39594; dropped: explainer ODI Mahli Beardman: fewer than 3 owners' headlines name it and the story; explainer New Zealand / ODI: no Wikipedia article that can be its centre; explainer Chhath / Yamuna' AAP BJP: no Wikipedia article that can be its centre",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\"]",
-  "hold kh-20261116-Q2578792: already 3 Shorts today (IST)",
-  "hold nw-20261115-andhra-cyclone: already 3 Shorts today (IST)",
+  "watch: 18 candidates from 22 trending",
+  "outlets: 1598 headlines from 47 feeds (17 owners), 12 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-imd-cyclone",
+  "explainers: 9 kh- stories (on): kh-20261116-Q85770988, kh-20261116-Q5276830, kh-20261116-Q10230, kh-20261116-Q39594; dropped: explainer New Zealand / ODI: no Wikipedia article that can be its centre; explainer ASEAN Summit: fewer than 3 owners' headlines name it and the story; explainer Chhath / Yamuna' AAP BJP: no Wikipedia article that can be its centre",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold nw-20261116-imd-cyclone: already 3 Shorts today (IST)",
   "drop kh-20261116-Q5276830: a world statement, politics or diplomacy story with no India connection",
   "hold kh-20261116-Q85770988: already 3 Shorts today (IST)",
   "hold kh-20261116-Q36812: already 3 Shorts today (IST)",
+  "drop kh-20261116-Q330658: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1621643: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q2578792, kh-20261116-Q85770988, kh-20261116-Q5348534",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q85770988, kh-20261116-Q5348534",
   "channel: about, playlists done; nothing left to do"
  ]
 }
