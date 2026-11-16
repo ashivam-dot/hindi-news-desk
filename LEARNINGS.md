@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-16T17:59:20+00:00. Scored Shorts (views at 24 h): 156. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-16T21:01:15+00:00. Scored Shorts (views at 24 h): 156. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 44 views at 24 h.
 Retention: a typical Short is watched 55.2% through; a group's retention is blended into its lift at 0.5.
@@ -28,7 +28,7 @@ Retention: a typical Short is watched 55.2% through; a group's retention is blen
 | kh-20261116-Q10230 | 2026-11-16T07:54 | news | india | sensitive | india | 17 | 12 |  |
 | kh-20261116-Q7768 | 2026-11-16T05:40 | diplomacy | world | other | india | 1 | 0 |  |
 | kh-20261116-Q37293-update | 2026-11-16T02:10 | entertainment | world | naam-niyam | india | 11 | 3 |  |
-| kh-20261115-Q1538 | 2026-11-15T08:20 | aviation | india | sensitive | india | 67 | 41 | 47 |
+| kh-20261115-Q1538 | 2026-11-15T08:20 | aviation | india | sensitive | india | 72 | 41 | 47 |
 | kh-20261115-Q16186720 | 2026-11-15T04:42 | economy | india | naam-niyam | india | 3 | 1 | 3 |
 | kh-20261115-Q1156 | 2026-11-15T02:27 | news | india | sensitive | india | 2 | 2 | 2 |
 | wk-Q142149760 | 2026-11-14T07:11 | disaster | world | breaking | world | 18 | 5 | 11 |
