@@ -1,5 +1,5 @@
 {
- "at": "2026-11-16T22:44:04+00:00",
+ "at": "2026-11-16T22:58:58+00:00",
  "trending": [
   {
    "id": "kh-20261117-Q163225",
@@ -150,22 +150,23 @@
     "outlet:The Hindu Group",
     "outlet:BBC",
     "outlet:TV9 Network",
+    "google-news:At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story",
     "google-news:Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
     "google-news:सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?"
    ],
    "top": {
     "IN": 7,
     "IN-hi": 1,
+    "IN-nation": 2,
     "IN-hi-nation": 1
    },
-   "top_score": 1.65,
+   "top_score": 1.935,
    "top_headlines": [
     "सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?",
-    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir"
+    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
+    "At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story"
    ],
-   "hindi_owners": [
-    "Network18"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -213,7 +214,8 @@
     "'Huge spending, no improvement': SC raps admins over Yamuna pollution, warns of fines",
     "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
     "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis"
+    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
    ],
    "hindi_headlines": [
     "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
@@ -299,15 +301,126 @@
     "outlet:HT Media",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
-    "google-news:'यमुना के पानी की गुणवत्ता खराब हुई तो लगेगा जुर्माना', सुप्रीम कोर्ट नाराज, क्यों दी चेतावनी?"
+    "google-news:'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ...",
+    "google-news:Chhath Puja: Despite politics over Yamuna, Delhi stretch of river continues to be polluted",
+    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
    ],
    "top": {
-    "IN-hi-nation": 10
+    "IN-nation": 16,
+    "IN-hi-nation": 9
    },
-   "top_score": 0.33,
+   "top_score": 0.435,
    "top_headlines": [
-    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
+    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261117-Q3243690",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "CJI",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+   "story_keys": [
+    "against",
+    "deserve",
+    "don't",
+    "escorted",
+    "out",
+    "remark",
+    "you"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T22:18:03+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+    "Lawyer led out after making derogatory remarks in court against CJI",
+    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+    "Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T22:18:03+00:00"
+    },
+    {
+     "title": "Lawyer led out after making derogatory remarks in court against CJI",
+     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:33:55+00:00"
+    },
+    {
+     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:15:15+00:00"
+    },
+    {
+     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:59:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
+   ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Don't lecture India: Meloni ally slams Italian socialist over 'vote chor' remark"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -411,15 +524,105 @@
     "google-news:Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
    "top": {
-    "IN": 3
+    "IN": 5
    },
-   "top_score": 0.9,
+   "top_score": 0.8,
    "top_headlines": [
     "Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261117-Q137218643",
+   "qid": "Q137218643",
+   "title": "Aadhav Arjuna",
+   "name": "Aadhav Arjuna",
+   "phrase": "Nadu Minister Aadhav",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+   "story_keys": [
+    "announce",
+    "separate",
+    "wife"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T14:54:30+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
+     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T14:54:30+00:00"
+    },
+    {
+     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T10:16:55+00:00"
+    },
+    {
+     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T07:10:27+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "google-news:Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q85770988",
@@ -565,243 +768,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "nw-20261116-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T20:19:08+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "IMD weather update: Andhra, Odisha on high alert as third cyclone brews over Bay of Bengal in 3 weeks",
-    "Cyclone Akwan: Odisha Begins Evacuation, Tamil Nadu Braces For Very Heavy Rains As IMD Warns Of Severe Storm",
-    "Cyclone ‘Akvan’ brewing over Bay of Bengal; likely to move towards Andhra Pradesh",
-    "Cyclone Akvan Tracker: When Will The Storm Reach Andhra, Odisha Coast? Check Landfall Time, Location",
-    "Cyclone 'Akvan' likely to cause heavy rain in Kolkata, Howrah, other southern districts of West Bengal from November 19"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T20:19:08+00:00"
-    },
-    {
-     "title": "Cyclone Akvan forms over Bay of Bengal, likely to hit Andhra coast on November 20",
-     "url": "https://www.indiatoday.in/india/story/cyclone-akvan-andhra-odisha-coast-landfall-november-20-imd-orange-alert-3040322-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T18:06:49+00:00"
-    },
-    {
-     "title": "Cyclone Akvan to make landfall between Nellore and Tuni in Andhra as very severe storm on November 20",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-akvan-to-cross-andhra-coast-between-nellore-and-tuni-by-november-20-noon-says-imd/article71706785.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T17:04:51+00:00"
-    },
-    {
-     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
-     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:57:43+00:00"
-    },
-    {
-     "title": "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm",
-     "url": "https://www.news18.com/explainers/cyclone-akvan-after-murasu-arnab-why-bay-of-bengal-remains-in-the-eye-of-the-storm-ws-elrt-10427790.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:37:23+00:00"
-    },
-    {
-     "title": "Cyclone 'Akvan' Third Storm In Three Weeks: How It Will Affect Farmers In Andhra, Odisha, Tamil Nadu, Bengal",
-     "url": "https://www.news18.com/india/cyclone-akvan-third-storm-in-three-weeks-how-it-will-affect-farmers-in-andhra-odisha-tamil-nadu-bengal-ws-l-10427922.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:34:14+00:00"
-    },
-    {
-     "title": "El Nino is fueling rare triple-cyclone spell over Bay of Bengal, say experts",
-     "url": "https://www.hindustantimes.com/india-news/el-nino-is-fueling-rare-triple-cyclone-spell-over-bay-of-bengal-say-experts-101794829552222.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T11:45:51+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: When and where will it make landfall? Wind speed, rainfall forecast and states on IMD's weather alert",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-when-and-where-will-it-make-landfall-wind-speed-rainfall-forecast-and-states-on-imds-weather-alert-11794823300014.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:21:30+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Cyclone Akvan to develop into severe storm by November 17 evening; heavy rain to batter Andhra, Tamil Nadu, Bengal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
-   "id": "kh-20261117-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-   "story_keys": [
-    "against",
-    "deserve",
-    "don't",
-    "escorted",
-    "out",
-    "remark",
-    "you"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T22:18:03+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-    "Lawyer led out after making derogatory remarks in court against CJI",
-    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
-     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T22:18:03+00:00"
-    },
-    {
-     "title": "Lawyer led out after making derogatory remarks in court against CJI",
-     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:33:55+00:00"
-    },
-    {
-     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:15:15+00:00"
-    },
-    {
-     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:59:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q21622335",
@@ -1107,98 +1073,13 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261117-Q137218643",
-   "qid": "Q137218643",
-   "title": "Aadhav Arjuna",
-   "name": "Aadhav Arjuna",
-   "phrase": "Minister Aadhav Arjuna",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-   "story_keys": [
-    "announce",
-    "separate",
-    "wife"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T14:54:30+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
-     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T14:54:30+00:00"
-    },
-    {
-     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:16:55+00:00"
-    },
-    {
-     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T07:10:27+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "qid": "Q142179721",
    "title": "2026 Patong fire",
    "fame": 50000,
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-16T22:44:04.842756+00:00",
+   "news_at": "2026-11-16T22:58:58.229043+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1287,6 +1168,44 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q141820731",
+   "title": "2026 Karak church shooting",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-15T21:25:04+00:00",
+   "headlines": [
+    "Jordan Sentences 3 to Death Over Greek Orthodox Church Attack"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": "२०२६ करक गिरजा गोलीबारी",
+   "via": [
+    "google-news:Jordan Sentences 3 to Death Over Greek Orthodox Church Attack"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q141820731",
+   "kind": "incident",
+   "category": "attack",
+   "date": "2026-10-23",
+   "coords": [
+    31.289434,
+    35.79955
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 24532,
@@ -1341,6 +1260,130 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 14582,
+   "views": 14582,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 13722,
+   "views": 13722,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q26923261",
+   "title": "Eddie Eckstein",
+   "fame": 13156,
+   "views": 13156,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q26923261",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q1621643",
+   "title": "Miguel Ángel Félix Gallardo",
+   "fame": 10184,
+   "views": 10184,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1621643",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-15",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1499,22 +1542,23 @@
     "outlet:The Hindu Group",
     "outlet:BBC",
     "outlet:TV9 Network",
+    "google-news:At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story",
     "google-news:Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
     "google-news:सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?"
    ],
    "top": {
     "IN": 7,
     "IN-hi": 1,
+    "IN-nation": 2,
     "IN-hi-nation": 1
    },
-   "top_score": 1.65,
+   "top_score": 1.935,
    "top_headlines": [
     "सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?",
-    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir"
+    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
+    "At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story"
    ],
-   "hindi_owners": [
-    "Network18"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -1562,7 +1606,8 @@
     "'Huge spending, no improvement': SC raps admins over Yamuna pollution, warns of fines",
     "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
     "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis"
+    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
    ],
    "hindi_headlines": [
     "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
@@ -1648,15 +1693,18 @@
     "outlet:HT Media",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
-    "google-news:'यमुना के पानी की गुणवत्ता खराब हुई तो लगेगा जुर्माना', सुप्रीम कोर्ट नाराज, क्यों दी चेतावनी?"
+    "google-news:'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ...",
+    "google-news:Chhath Puja: Despite politics over Yamuna, Delhi stretch of river continues to be polluted",
+    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
    ],
    "top": {
-    "IN-hi-nation": 10
+    "IN-nation": 16,
+    "IN-hi-nation": 9
    },
-   "top_score": 0.33,
+   "top_score": 0.435,
    "top_headlines": [
-    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
+    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -1760,9 +1808,9 @@
     "google-news:Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
    "top": {
-    "IN": 3
+    "IN": 5
    },
-   "top_score": 0.9,
+   "top_score": 0.8,
    "top_headlines": [
     "Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
@@ -1771,30 +1819,36 @@
    "lane": "paisa"
   },
   {
-   "id": "nw-20261116-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T20:19:08+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group",
-    "India Today Group"
+   "id": "kh-20261117-Q137218643",
+   "qid": "Q137218643",
+   "title": "Aadhav Arjuna",
+   "name": "Aadhav Arjuna",
+   "phrase": "Nadu Minister Aadhav",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+   "story_keys": [
+    "announce",
+    "separate",
+    "wife"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T14:54:30+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 200000,
+   "news": 200000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "IMD weather update: Andhra, Odisha on high alert as third cyclone brews over Bay of Bengal in 3 weeks",
-    "Cyclone Akwan: Odisha Begins Evacuation, Tamil Nadu Braces For Very Heavy Rains As IMD Warns Of Severe Storm",
-    "Cyclone ‘Akvan’ brewing over Bay of Bengal; likely to move towards Andhra Pradesh",
-    "Cyclone Akvan Tracker: When Will The Storm Reach Andhra, Odisha Coast? Check Landfall Time, Location",
-    "Cyclone 'Akvan' likely to cause heavy rain in Kolkata, Howrah, other southern districts of West Bengal from November 19"
+    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1803,107 +1857,164 @@
    ],
    "region": "india",
    "india_link": true,
+   "abroad": false,
    "label_hi": null,
    "reports": [
     {
-     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
+     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T20:19:08+00:00"
+     "at": "2026-11-16T14:54:30+00:00"
     },
     {
-     "title": "Cyclone Akvan forms over Bay of Bengal, likely to hit Andhra coast on November 20",
-     "url": "https://www.indiatoday.in/india/story/cyclone-akvan-andhra-odisha-coast-landfall-november-20-imd-orange-alert-3040322-2026-11-16?utm_source=rss",
+     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T10:16:55+00:00"
+    },
+    {
+     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T18:06:49+00:00"
+     "at": "2026-11-16T07:10:27+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "google-news:Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261117-Q3243690",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "CJI",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+   "story_keys": [
+    "against",
+    "deserve",
+    "don't",
+    "escorted",
+    "out",
+    "remark",
+    "you"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T22:18:03+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+    "Lawyer led out after making derogatory remarks in court against CJI",
+    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+    "Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T22:18:03+00:00"
     },
     {
-     "title": "Cyclone Akvan to make landfall between Nellore and Tuni in Andhra as very severe storm on November 20",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-akvan-to-cross-andhra-coast-between-nellore-and-tuni-by-november-20-noon-says-imd/article71706785.ece",
+     "title": "Lawyer led out after making derogatory remarks in court against CJI",
+     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
      "outlet": "The Hindu",
      "outlet_hi": "द हिंदू",
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T17:04:51+00:00"
+     "at": "2026-11-16T16:33:55+00:00"
     },
     {
-     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
-     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:57:43+00:00"
-    },
-    {
-     "title": "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm",
-     "url": "https://www.news18.com/explainers/cyclone-akvan-after-murasu-arnab-why-bay-of-bengal-remains-in-the-eye-of-the-storm-ws-elrt-10427790.html",
+     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T13:37:23+00:00"
+     "at": "2026-11-16T13:15:15+00:00"
     },
     {
-     "title": "Cyclone 'Akvan' Third Storm In Three Weeks: How It Will Affect Farmers In Andhra, Odisha, Tamil Nadu, Bengal",
-     "url": "https://www.news18.com/india/cyclone-akvan-third-storm-in-three-weeks-how-it-will-affect-farmers-in-andhra-odisha-tamil-nadu-bengal-ws-l-10427922.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T12:34:14+00:00"
-    },
-    {
-     "title": "El Nino is fueling rare triple-cyclone spell over Bay of Bengal, say experts",
-     "url": "https://www.hindustantimes.com/india-news/el-nino-is-fueling-rare-triple-cyclone-spell-over-bay-of-bengal-say-experts-101794829552222.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T11:45:51+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: When and where will it make landfall? Wind speed, rainfall forecast and states on IMD's weather alert",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-when-and-where-will-it-make-landfall-wind-speed-rainfall-forecast-and-states-on-imds-weather-alert-11794823300014.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:21:30+00:00"
+     "at": "2026-11-16T12:59:11+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
+    "outlet:India Today Group",
     "outlet:Network18",
     "outlet:The Hindu Group",
-    "outlet:India Today Group"
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
    ],
-   "emerging": true,
-   "article": null,
    "top": {
-    "IN": 1
+    "IN-nation": 20
    },
-   "top_score": 1.0,
+   "top_score": 0.03,
    "top_headlines": [
-    "Cyclone Akvan to develop into severe storm by November 17 evening; heavy rain to batter Andhra, Tamil Nadu, Bengal"
+    "Don't lecture India: Meloni ally slams Italian socialist over 'vote chor' remark"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "breaking"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q85770988",
@@ -2049,193 +2160,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261117-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-   "story_keys": [
-    "against",
-    "deserve",
-    "don't",
-    "escorted",
-    "out",
-    "remark",
-    "you"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T22:18:03+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-    "Lawyer led out after making derogatory remarks in court against CJI",
-    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
-     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T22:18:03+00:00"
-    },
-    {
-     "title": "Lawyer led out after making derogatory remarks in court against CJI",
-     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:33:55+00:00"
-    },
-    {
-     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:15:15+00:00"
-    },
-    {
-     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:59:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261117-Q137218643",
-   "qid": "Q137218643",
-   "title": "Aadhav Arjuna",
-   "name": "Aadhav Arjuna",
-   "phrase": "Minister Aadhav Arjuna",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-   "story_keys": [
-    "announce",
-    "separate",
-    "wife"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T14:54:30+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
-     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T14:54:30+00:00"
-    },
-    {
-     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:16:55+00:00"
-    },
-    {
-     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T07:10:27+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:HT Media"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q21622335",
@@ -2466,7 +2390,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-16T22:44:04.842756+00:00",
+   "news_at": "2026-11-16T22:58:58.229043+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -2605,6 +2529,68 @@
    "lane": "other"
   },
   {
+   "qid": "Q1621643",
+   "title": "Miguel Ángel Félix Gallardo",
+   "fame": 10184,
+   "views": 10184,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q1621643",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-15",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q26923261",
+   "title": "Eddie Eckstein",
+   "fame": 13156,
+   "views": 13156,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q26923261",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 43605,
@@ -2636,6 +2622,37 @@
    "lane": "obituary"
   },
   {
+   "qid": "Q582473",
+   "title": "Brian Tracy",
+   "fame": 13722,
+   "views": 13722,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q582473",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-12",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
    "qid": "Q315090",
    "title": "Stacy Keach",
    "fame": 19389,
@@ -2656,6 +2673,37 @@
    "owners": [],
    "reports": [],
    "id": "wk-Q315090",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-10",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q4772274",
+   "title": "Anthony Clark (actor)",
+   "fame": 14582,
+   "views": 14582,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-15"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q4772274",
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
@@ -3321,159 +3369,21 @@
  ],
  "notes": [
   "revisit kh-20261117-Q10218-update: 6 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261117-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit kh-20261117-Q9543-update: 2 owners' new reports on Salman Khan (936 views before); revisit kh-20261117-Q163225-update: 6 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1662 headlines from 48 feeds (18 owners), 20 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-akvan-cyclone",
-  "explainers: 8 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q2377884, kh-20261117-Q85770988; dropped: explainer 'Batman is Bond! Robert Pattinson announced as the new James ': no name to tell it by; explainer Rwanda: no Wikipedia article that can be its centre; explainer Grammy Awards: fewer than 3 owners' headlines name it and the story"
+  "outlets: 1657 headlines from 48 feeds (18 owners), 21 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q3243690, kh-20261117-Q2377884; dropped: explainer 'Batman is Bond! Robert Pattinson announced as the new James ': no name to tell it by; explainer Rwanda: no Wikipedia article that can be its centre; explainer Grammy Awards: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
-  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/",
-  "google news world: HTTP 429"
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1662,
+  "headlines": 1657,
   "feeds": 48,
   "owners": 18,
-  "matched": 20,
-  "corroborated": 9
+  "matched": 21,
+  "corroborated": 8
  },
- "emerging": [
-  {
-   "id": "nw-20261116-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T20:19:08+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "The Hindu Group",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "IMD weather update: Andhra, Odisha on high alert as third cyclone brews over Bay of Bengal in 3 weeks",
-    "Cyclone Akwan: Odisha Begins Evacuation, Tamil Nadu Braces For Very Heavy Rains As IMD Warns Of Severe Storm",
-    "Cyclone ‘Akvan’ brewing over Bay of Bengal; likely to move towards Andhra Pradesh",
-    "Cyclone Akvan Tracker: When Will The Storm Reach Andhra, Odisha Coast? Check Landfall Time, Location",
-    "Cyclone 'Akvan' likely to cause heavy rain in Kolkata, Howrah, other southern districts of West Bengal from November 19"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
-     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T20:19:08+00:00"
-    },
-    {
-     "title": "Cyclone Akvan forms over Bay of Bengal, likely to hit Andhra coast on November 20",
-     "url": "https://www.indiatoday.in/india/story/cyclone-akvan-andhra-odisha-coast-landfall-november-20-imd-orange-alert-3040322-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T18:06:49+00:00"
-    },
-    {
-     "title": "Cyclone Akvan to make landfall between Nellore and Tuni in Andhra as very severe storm on November 20",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-akvan-to-cross-andhra-coast-between-nellore-and-tuni-by-november-20-noon-says-imd/article71706785.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T17:04:51+00:00"
-    },
-    {
-     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
-     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:57:43+00:00"
-    },
-    {
-     "title": "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm",
-     "url": "https://www.news18.com/explainers/cyclone-akvan-after-murasu-arnab-why-bay-of-bengal-remains-in-the-eye-of-the-storm-ws-elrt-10427790.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:37:23+00:00"
-    },
-    {
-     "title": "Cyclone 'Akvan' Third Storm In Three Weeks: How It Will Affect Farmers In Andhra, Odisha, Tamil Nadu, Bengal",
-     "url": "https://www.news18.com/india/cyclone-akvan-third-storm-in-three-weeks-how-it-will-affect-farmers-in-andhra-odisha-tamil-nadu-bengal-ws-l-10427922.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:34:14+00:00"
-    },
-    {
-     "title": "El Nino is fueling rare triple-cyclone spell over Bay of Bengal, say experts",
-     "url": "https://www.hindustantimes.com/india-news/el-nino-is-fueling-rare-triple-cyclone-spell-over-bay-of-bengal-say-experts-101794829552222.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T11:45:51+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: When and where will it make landfall? Wind speed, rainfall forecast and states on IMD's weather alert",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-when-and-where-will-it-make-landfall-wind-speed-rainfall-forecast-and-states-on-imds-weather-alert-11794823300014.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:21:30+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 1
-   },
-   "top_score": 1.0,
-   "top_headlines": [
-    "Cyclone Akvan to develop into severe storm by November 17 evening; heavy rain to batter Andhra, Tamil Nadu, Bengal"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  }
- ],
+ "emerging": [],
  "explainers": [
   {
    "id": "kh-20261117-Q163225",
@@ -3624,22 +3534,23 @@
     "outlet:The Hindu Group",
     "outlet:BBC",
     "outlet:TV9 Network",
+    "google-news:At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story",
     "google-news:Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
     "google-news:सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?"
    ],
    "top": {
     "IN": 7,
     "IN-hi": 1,
+    "IN-nation": 2,
     "IN-hi-nation": 1
    },
-   "top_score": 1.65,
+   "top_score": 1.935,
    "top_headlines": [
     "सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?",
-    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir"
+    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
+    "At Sonia Gandhi's Book Event, BJP's Amarinder Singh Lands In The Middle Of A Congress Family Story"
    ],
-   "hindi_owners": [
-    "Network18"
-   ],
+   "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -3687,7 +3598,8 @@
     "'Huge spending, no improvement': SC raps admins over Yamuna pollution, warns of fines",
     "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
     "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis"
+    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
    ],
    "hindi_headlines": [
     "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
@@ -3773,15 +3685,126 @@
     "outlet:HT Media",
     "outlet:India Today Group",
     "outlet:NDTV",
-    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
-    "google-news:'यमुना के पानी की गुणवत्ता खराब हुई तो लगेगा जुर्माना', सुप्रीम कोर्ट नाराज, क्यों दी चेतावनी?"
+    "google-news:'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ...",
+    "google-news:Chhath Puja: Despite politics over Yamuna, Delhi stretch of river continues to be polluted",
+    "google-news:Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
    ],
    "top": {
-    "IN-hi-nation": 10
+    "IN-nation": 16,
+    "IN-hi-nation": 9
    },
-   "top_score": 0.33,
+   "top_score": 0.435,
    "top_headlines": [
-    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?"
+    "Delhi Yamuna River Pollution: कालिंदी कुंज पर झाग और कई जगह साफ, हर जगह अलग क्यों दिखी यमुना?",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261117-Q3243690",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "CJI",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+   "story_keys": [
+    "against",
+    "deserve",
+    "don't",
+    "escorted",
+    "out",
+    "remark",
+    "you"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T22:18:03+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+    "Lawyer led out after making derogatory remarks in court against CJI",
+    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+    "Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
+     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T22:18:03+00:00"
+    },
+    {
+     "title": "Lawyer led out after making derogatory remarks in court against CJI",
+     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:33:55+00:00"
+    },
+    {
+     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
+     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:15:15+00:00"
+    },
+    {
+     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
+     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:59:11+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Counsel Escorted Out Of Courtroom After Outburst At CJI Surya Kant"
+   ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Don't lecture India: Meloni ally slams Italian socialist over 'vote chor' remark"
    ],
    "hindi_owners": [],
    "audience": "india",
@@ -3885,15 +3908,105 @@
     "google-news:Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
    "top": {
-    "IN": 3
+    "IN": 5
    },
-   "top_score": 0.9,
+   "top_score": 0.8,
    "top_headlines": [
     "Tata Sons listing critical, will dismantle culture of secrecy: Jimmy N Tata"
    ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
+  },
+  {
+   "id": "kh-20261117-Q137218643",
+   "qid": "Q137218643",
+   "title": "Aadhav Arjuna",
+   "name": "Aadhav Arjuna",
+   "phrase": "Nadu Minister Aadhav",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+   "story_keys": [
+    "announce",
+    "separate",
+    "wife"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T14:54:30+00:00",
+   "owners": [
+    "India Today Group",
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
+     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T14:54:30+00:00"
+    },
+    {
+     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
+     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T10:16:55+00:00"
+    },
+    {
+     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
+     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T07:10:27+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "google-news:Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "top": {
+    "IN-nation": 9
+   },
+   "top_score": 0.36,
+   "top_headlines": [
+    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q85770988",
@@ -4039,108 +4152,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "paisa"
-  },
-  {
-   "id": "kh-20261117-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-   "story_keys": [
-    "against",
-    "deserve",
-    "don't",
-    "escorted",
-    "out",
-    "remark",
-    "you"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T22:18:03+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "The Hindu Group",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-    "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-    "Lawyer led out after making derogatory remarks in court against CJI",
-    "Miffed lawyer questions CJI's 'integrity', advocates seek action against him"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "Miffed lawyer questions CJI's 'integrity', advocates seek action against him",
-     "url": "https://timesofindia.indiatimes.com/india/miffed-lawyer-questions-cjis-integrity-advocates-seek-action-against-him/articleshow/135902674.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T22:18:03+00:00"
-    },
-    {
-     "title": "Lawyer led out after making derogatory remarks in court against CJI",
-     "url": "https://www.thehindu.com/news/national/lawyer-led-out-after-making-derogatory-remarks-in-court-against-cji/article71708974.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:33:55+00:00"
-    },
-    {
-     "title": "'You Don't Deserve That Chair': Lawyer Escorted Out After Unpleasant Remarks Against CJI Surya Kant In SC",
-     "url": "https://www.news18.com/india/you-dont-deserve-that-chair-lawyer-escorted-out-after-unpleasant-remarks-against-cji-surya-kant-in-sc-10427993.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:15:15+00:00"
-    },
-    {
-     "title": "You don't deserve that chair: Lawyer escorted out after remarks at CJI",
-     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-lawyer-escorted-out-remarks-cji-surya-kant-3040078-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:59:11+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q21622335",
@@ -4356,91 +4367,6 @@
     "outlet:Network18",
     "outlet:India Today Group",
     "outlet:BBC"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261117-Q137218643",
-   "qid": "Q137218643",
-   "title": "Aadhav Arjuna",
-   "name": "Aadhav Arjuna",
-   "phrase": "Minister Aadhav Arjuna",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-   "story_keys": [
-    "announce",
-    "separate",
-    "wife"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T14:54:30+00:00",
-   "owners": [
-    "India Today Group",
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-    "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-    "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tamil Nadu Minister Aadhav Arjuna’s wife Daisy Martin announces split after 14 years",
-     "url": "https://www.hindustantimes.com/india-news/tamil-nadu-minister-aadhav-arjuna-s-wife-daisy-martin-announces-split-after-14-years-101794837043590.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T14:54:30+00:00"
-    },
-    {
-     "title": "‘Embrace Separate Paths’: TVK Minister Aadhav Arjuna, Wife Daisy Announce Separation After 14 Years",
-     "url": "https://www.news18.com/india/embrace-separate-paths-tvk-minister-aadhav-arjuna-wife-daisy-announce-separation-after-14-years-10427597.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:16:55+00:00"
-    },
-    {
-     "title": "Tamil Nadu minister Aadhav Arjuna, wife Daisy separate after 14 years of marriage",
-     "url": "https://www.indiatoday.in/india/tamil-nadu/story/tamil-nadu-minister-aadhav-arjuna-wife-daisy-martin-part-ways-after-14-years-of-marriage-3039795-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T07:10:27+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:Network18",
-    "outlet:HT Media"
    ],
    "top": {},
    "top_score": 0.0,
