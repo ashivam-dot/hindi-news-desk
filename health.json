@@ -1,30 +1,19 @@
 {
- "at": "2026-11-16T05:27:53+00:00",
+ "at": "2026-11-16T05:56:42+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 155 scored Shorts, lifts {'category:aviation': {'n': 5, 'lift': 0.959, 'typical_views_24h': 50, 'n_retention': 4, 'typical_view_pct': 39.9}, 'category:protest': {'n': 5, 'lift': 0.753, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.267, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 19 candidates from 24 trending",
-  "revisit Q10218 (1134 views): 1 owners reported new news on Rahul Gandhi since its last Short; revisit Q37293: already revisited today; revisit Q9543 (936 views): 0 owners reported new news on Salman Khan since its last Short; revisit Q163225 (815 views): 1 owners reported new news on Sonia Gandhi since its last Short; revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since it",
-  "outlets: 1538 headlines from 49 feeds (18 owners), 9 matched to articles, 13 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-bengal-attack",
-  "explainers: 12 kh- stories (on): kh-20261116-Q37293, kh-20261116-Q7768, kh-20261116-Q2578792, kh-20261116-Q39594; dropped: explainer 'Prince William, Princess Kate to meet PM Modi in New Delhi t': no name to tell it by; explainer Mumbai CNG / Mumbai CNG: no Wikipedia article that can be its centre; explainer Parliament: fewer than 3 owners' headlines name it and the story",
+  "watch: 20 candidates from 24 trending",
+  "outlets: 1546 headlines from 49 feeds (18 owners), 5 matched to articles, 13 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 13 kh- stories (on): kh-20261116-Q85770988, kh-20261116-Q182477, kh-20261116-Q2578792, kh-20261116-Q7768; dropped: explainer 'Prince William, Princess Kate to meet PM Modi in New Delhi t': no name to tell it by; explainer San Francisco Declaration: fewer than 3 owners' headlines name it and the story; explainer MoM Arshdeep / ODI Bowlers: no Wikipedia article that can be its centre",
+  "hold kh-20261116-Q2578792: last Short went out 0.3 h ago",
   "drop kh-20261116-Q451791: a world statement, politics or diplomacy story with no India connection",
+  "hold kh-20261116-Q85770988: last Short went out 0.3 h ago",
   "drop wk-Q1621643: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q5564237: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261116-Q182477: a world statement, politics or diplomacy story with no India connection",
-  "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261116-Q5276830: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q2578792, kh-20261116-Q451791, kh-20261116-Q7768",
-  "skip kh-20261116-Q2578792: gate: only 0 usable photos of Look East policy on Wikimedia Commons (want 2)",
-  "published kh-20261116-Q7768: https://www.youtube.com/shorts/vJFfgvBLfQc",
-  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 102 today)"
- ],
- "published": {
-  "video_id": "vJFfgvBLfQc",
-  "url": "https://www.youtube.com/shorts/vJFfgvBLfQc",
-  "youtube_title": "आसियान सम्मेलन के लिए फिलीपींस जा रहे हैं नरेंद्र मोदी #shorts #asean",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+  "drop wk-Q5564237: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261116-Q2578792, kh-20261116-Q451791, kh-20261116-Q85770988, kh-20261116-Q3884, kh-20261116-Q5348534",
+  "channel: about, playlists done; nothing left to do"
+ ]
 }
