@@ -1580,14 +1580,14 @@
   "at": "2026-11-16T07:45:09+00:00"
  },
  "nw-20261116-akvan-cyclone": {
-  "count": 3,
+  "count": 4,
   "reason": "gate: only 0 usable photos of Akvan (want 2)",
-  "at": "2026-11-17T06:52:16+00:00"
+  "at": "2026-11-17T07:56:29+00:00"
  },
  "nw-20261117-uttarakhand-accident": {
-  "count": 2,
-  "reason": "gate: no draft passed the fact checks: these numbers are not in the sources: 26, 8 (26 only in one outlet's report: one outlet is not enough); draft wording: 8, 26. Omit these unsupported numeric claims from narration, title, captions and labels. Keep the independently supported event and attributio",
-  "at": "2026-11-17T06:51:07+00:00"
+  "count": 3,
+  "reason": "gate: no draft passed the fact checks: casualties without an agreed toll (घायल)",
+  "at": "2026-11-17T07:54:57+00:00"
  },
  "wk-Q142179721": {
   "count": 2,
@@ -1598,5 +1598,10 @@
   "count": 2,
   "reason": "gate: no draft passed the fact checks: unsupported: सोनू सूद और अमिताभ बच्चन भी मदद के लिए आए।",
   "at": "2026-11-17T07:22:28+00:00"
+ },
+ "nw-20261117-delhi-disaster": {
+  "count": 1,
+  "reason": "KeyError: 'query'",
+  "at": "2026-11-17T07:56:27+00:00"
  }
 }
