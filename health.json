@@ -1,22 +1,28 @@
 {
- "at": "2026-11-17T09:47:19+00:00",
+ "at": "2026-11-17T10:03:09+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
   "watch: 15 candidates from 22 trending",
   "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: last Short 6 h ago; revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its last Short; revisit Q7747: already revisited today; revisit Q200667 (225 views): 0 owners reported new news on Ladakh since its last Short; revisit Q796885 (15",
-  "outlets: 1813 headlines from 50 feeds (19 owners), 15 matched to articles, 13 candidates with 2+ owners, 3 nw- stories (on): nw-20261116-akvan-cyclone, nw-20261117-uttarakhand-accident, nw-20261117-delhi-disaster",
-  "explainers: 10 kh- stories (on): kh-20261117-Q36767, kh-20261117-Q1159, kh-20261117-Q163225, kh-20261117-Q132726; dropped: explainer Putin Xi: fewer than 3 owners' headlines name it and the story; explainer COP / Turkiye: no Wikipedia article that can be its centre; explainer Zelle: fewer than 3 owners' headlines name it and the story",
-  "drop kh-20261117-Q1159: too low in Google News India's top stories (place 0.18, needs 0.35)",
+  "outlets: 1823 headlines from 50 feeds (19 owners), 21 matched to articles, 13 candidates with 2+ owners, 3 nw- stories (on): nw-20261116-akvan-cyclone, nw-20261117-uttarakhand-accident, nw-20261117-delhi-disaster",
+  "explainers: 10 kh- stories (on): kh-20261117-Q1159, kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q3243690; dropped: explainer Putin Xi: fewer than 3 owners' headlines name it and the story; explainer COP / Turkiye: no Wikipedia article that can be its centre; explainer Zelle: fewer than 3 owners' headlines name it and the story",
+  "drop kh-20261117-Q1159: too low in Google News India's top stories (place 0.12, needs 0.35)",
   "drop kh-20261117-Q73092822: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261117-Q36767: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261117-Q62233423: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q3243690: too low in Google News India's top stories (place 0.03, needs 0.35)",
-  "drop kh-20261117-Q7920469: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q73092822, kh-20261117-Q3243690; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q2377884, kh-20261117-Q7835",
-  "skip wk-Q1621643: gate: no news report states the death of Miguel Ángel Félix Gallardo (Wikidata and Wikipedia alone are not enough)",
-  "nothing eligible to publish",
+  "drop wk-Q1621643: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261117-Q2377884: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q3243690, kh-20261117-Q73092822; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q2377884, kh-20261117-Q7835",
+  "published kh-20261117-Q3243690: https://www.youtube.com/shorts/94TTrr9JEaM",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "94TTrr9JEaM",
+  "url": "https://www.youtube.com/shorts/94TTrr9JEaM",
+  "youtube_title": "मुख्य न्यायाधीश पर टिप्पणी, वकील पर चलेगा अवमानना केस #shorts #hindinews",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
