@@ -1,21 +1,20 @@
 {
- "at": "2026-11-17T17:32:56+00:00",
+ "at": "2026-11-17T17:50:03+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 16 candidates from 18 trending",
+  "watch: 17 candidates from 21 trending",
   "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit kh-20261117-Q163225-update: 3 owners' new reports on Sonia Gandhi (812 views before); revisit Q468324 (421 views): 0 owners reported new news on L. K. Advani since its last Short; revisit Q3243690: last Short 7 h ago; revisit Q7747: already revisited today; revisit Q796",
-  "outlets: 1850 headlines from 48 feeds (18 owners), 14 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 9 kh- stories (on): kh-20261117-Q1058, kh-20261117-Q396412, kh-20261117-Q182477, kh-20261117-Q7489358; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer COP: no Wikipedia article that can be its centre; explainer Putin Xi: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "outlets: 1907 headlines from 50 feeds (19 owners), 16 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261116-akvan-cyclone, nw-20261117-uttarakhand-accident",
+  "explainers: 10 kh- stories (on): kh-20261117-Q10218, kh-20261117-Q1058, kh-20261117-Q1159, kh-20261117-Q396412; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer Putin Xi: fewer than 3 owners' headlines name it and the story; explainer LTCG: no Wikipedia article that can be its centre",
+  "hold kh-20261117-Q10218: already 3 Shorts today (IST)",
   "drop kh-20261117-Q396412: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261117-Q7489358: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261117-Q1159: too low in Google News India's top stories (place 0.09, needs 0.35)",
   "drop kh-20261117-Q470774: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261117-Q1430541: too low in Google News India's top stories (place 0.18, needs 0.35)",
-  "drop kh-20261117-Q182477: a world statement, politics or diplomacy story with no India connection",
+  "hold kh-20261117-Q542549: already 3 Shorts today (IST)",
   "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q7835",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q10218; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q542549, kh-20261117-Q7835",
   "channel: about, playlists done; nothing left to do"
  ]
 }
