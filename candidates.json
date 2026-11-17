@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T21:49:22+00:00",
+ "at": "2026-11-17T22:33:08+00:00",
  "trending": [
   {
    "id": "kh-20261118-Q10218",
@@ -27,9 +27,9 @@
     "Network18",
     "The Hindu Group",
     "BBC",
+    "ABP Group",
     "HT Media",
     "NDTV",
-    "ABP Group",
     "DB Corp"
    ],
    "fame": 400000,
@@ -46,10 +46,10 @@
    ],
    "hindi_headlines": [
     "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
+    "राहुल गांधी के बयान पर छिड़े विवाद पर बोले विजेता दहिया, 'उन्होंने जो काम किया है वो...'",
     "मम्मी-पापा की गोद वाली लड़ाई अलाउद्दीन तक आई, भाजपा ने राहुल गांधी से पूछा काफूर वाला सवाल",
     "राहुल गांधी की शिव-पार्वती वाली दलील पर भाजपा ने पूछ लिया अलाउद्दीन खिलजी-मलिक काफूर वाला सवाल",
-    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?",
-    "राहुल गांधी ने शेयर की शिव-पार्वती की तस्वीर तो भड़क उठे ये CM, 'पापा की गोद में मम्मा' पर फिर तंज"
+    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?"
    ],
    "hindi_news": 14,
    "geos": [
@@ -106,9 +106,9 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:BBC",
+    "outlet:ABP Group",
     "outlet:HT Media",
     "outlet:NDTV",
-    "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "google-news:Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment",
@@ -116,22 +116,20 @@
    ],
    "top": {
     "IN": 2,
-    "IN-hi": 7,
-    "IN-nation": 4,
-    "IN-hi-nation": 1
+    "IN-hi": 8,
+    "IN-nation": 3,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.855,
+   "top_score": 1.83,
    "top_headlines": [
     "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
     "राहुल गांधी की मौजूदगी में इटली के नेता ने लगाया 'वोट चोर-गद्दी छोड़' का नारा, बीजेपी क्या बोली",
     "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment"
    ],
-   "hindi_owners": [
-    "BBC"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q396412",
@@ -284,6 +282,73 @@
    "lane": "naam-niyam"
   },
   {
+   "qid": "Q142193498",
+   "title": "2026 Crimean Bridge explosions",
+   "fame": 152000,
+   "views": 0,
+   "traffic": 2000,
+   "news": 150000,
+   "news_at": "2026-11-17T21:24:35+00:00",
+   "headlines": [
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:kerch bridge attack today",
+    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T21:24:35+00:00"
+    },
+    {
+     "title": "How the attack on Crimean Bridge unfolded",
+     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T15:38:10+00:00"
+    }
+   ],
+   "id": "wk-Q142193498",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-11-16",
+   "coords": [
+    45.308617,
+    36.505798
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
+  },
+  {
    "id": "kh-20261118-Q305177",
    "qid": "Q305177",
    "title": "Jensen Huang",
@@ -418,7 +483,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-17T21:49:22.944410+00:00",
+   "news_at": "2026-11-17T22:33:08.454265+00:00",
    "headlines": [
     "Bangladesh’s $40 billion garment industry faces fresh protests over wages: Could supply chain disruptions benefit India?"
    ],
@@ -470,7 +535,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-17",
-   "news_at": "2026-11-17T21:25:43+00:00",
+   "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "India Today Group",
@@ -507,6 +572,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-17T21:06:11+00:00"
+    },
+    {
+     "title": "Russian military plane crash in Siberia kills 19",
+     "url": "https://www.aljazeera.com/news/2026/11/17/russian-military-plane-crash-in-siberia-kills-19?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-17T22:21:16+00:00"
     },
     {
      "title": "Moment Russian military plane crashes in Siberia, killing 19",
@@ -901,163 +976,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q142193498",
-   "title": "2026 Crimean Bridge explosions",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-17T21:24:35+00:00",
-   "headlines": [
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "How the attack on Crimean Bridge unfolded",
-     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T15:38:10+00:00"
-    }
-   ],
-   "id": "wk-Q142193498",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-11-16",
-   "coords": [
-    45.308617,
-    36.505798
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 10903,
-   "views": 10903,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q5564237",
-   "title": "Giri Babu",
-   "fame": 10411,
-   "views": 10411,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5564237",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q553872",
-   "title": "Tim Holden",
-   "fame": 8471,
-   "views": 8471,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q553872",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
   }
  ],
  "candidates": [
@@ -1087,9 +1005,9 @@
     "Network18",
     "The Hindu Group",
     "BBC",
+    "ABP Group",
     "HT Media",
     "NDTV",
-    "ABP Group",
     "DB Corp"
    ],
    "fame": 400000,
@@ -1106,10 +1024,10 @@
    ],
    "hindi_headlines": [
     "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
+    "राहुल गांधी के बयान पर छिड़े विवाद पर बोले विजेता दहिया, 'उन्होंने जो काम किया है वो...'",
     "मम्मी-पापा की गोद वाली लड़ाई अलाउद्दीन तक आई, भाजपा ने राहुल गांधी से पूछा काफूर वाला सवाल",
     "राहुल गांधी की शिव-पार्वती वाली दलील पर भाजपा ने पूछ लिया अलाउद्दीन खिलजी-मलिक काफूर वाला सवाल",
-    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?",
-    "राहुल गांधी ने शेयर की शिव-पार्वती की तस्वीर तो भड़क उठे ये CM, 'पापा की गोद में मम्मा' पर फिर तंज"
+    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?"
    ],
    "hindi_news": 14,
    "geos": [
@@ -1166,9 +1084,9 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:BBC",
+    "outlet:ABP Group",
     "outlet:HT Media",
     "outlet:NDTV",
-    "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "google-news:Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment",
@@ -1176,22 +1094,20 @@
    ],
    "top": {
     "IN": 2,
-    "IN-hi": 7,
-    "IN-nation": 4,
-    "IN-hi-nation": 1
+    "IN-hi": 8,
+    "IN-nation": 3,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.855,
+   "top_score": 1.83,
    "top_headlines": [
     "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
     "राहुल गांधी की मौजूदगी में इटली के नेता ने लगाया 'वोट चोर-गद्दी छोड़' का नारा, बीजेपी क्या बोली",
     "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment"
    ],
-   "hindi_owners": [
-    "BBC"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q396412",
@@ -1578,7 +1494,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-17",
-   "news_at": "2026-11-17T21:25:43+00:00",
+   "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "India Today Group",
@@ -1615,6 +1531,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-17T21:06:11+00:00"
+    },
+    {
+     "title": "Russian military plane crash in Siberia kills 19",
+     "url": "https://www.aljazeera.com/news/2026/11/17/russian-military-plane-crash-in-siberia-kills-19?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-17T22:21:16+00:00"
     },
     {
      "title": "Moment Russian military plane crashes in Siberia, killing 19",
@@ -1682,7 +1608,7 @@
    "views": 0,
    "traffic": 0,
    "news": 25000,
-   "news_at": "2026-11-17T21:49:22.944410+00:00",
+   "news_at": "2026-11-17T22:33:08.454265+00:00",
    "headlines": [
     "Bangladesh’s $40 billion garment industry faces fresh protests over wages: Could supply chain disruptions benefit India?"
    ],
@@ -1725,6 +1651,73 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "qid": "Q142193498",
+   "title": "2026 Crimean Bridge explosions",
+   "fame": 152000,
+   "views": 0,
+   "traffic": 2000,
+   "news": 150000,
+   "news_at": "2026-11-17T21:24:35+00:00",
+   "headlines": [
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "GB",
+    "US",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-trends-GB:kerch bridge attack today",
+    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T21:24:35+00:00"
+    },
+    {
+     "title": "How the attack on Crimean Bridge unfolded",
+     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T15:38:10+00:00"
+    }
+   ],
+   "id": "wk-Q142193498",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-11-16",
+   "coords": [
+    45.308617,
+    36.505798
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "sensitive"
   },
   {
    "qid": "Q1621643",
@@ -1839,37 +1832,6 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q5564237",
-   "title": "Giri Babu",
-   "fame": 10411,
-   "views": 10411,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5564237",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q7329244",
    "title": "Richard Sterban",
    "fame": 25255,
@@ -1901,70 +1863,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q142193498",
-   "title": "2026 Crimean Bridge explosions",
-   "fame": 25000,
-   "views": 0,
-   "traffic": 0,
-   "news": 25000,
-   "news_at": "2026-11-17T21:24:35+00:00",
-   "headlines": [
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "How the attack on Crimean Bridge unfolded",
-     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T15:38:10+00:00"
-    }
-   ],
-   "id": "wk-Q142193498",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-11-16",
-   "coords": [
-    45.308617,
-    36.505798
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
-  },
-  {
    "qid": "Q5213677",
    "title": "Dan Hicks (sportscaster)",
    "fame": 64158,
@@ -1988,68 +1886,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q553872",
-   "title": "Tim Holden",
-   "fame": 8471,
-   "views": 8471,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q553872",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q315090",
-   "title": "Stacy Keach",
-   "fame": 10903,
-   "views": 10903,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q315090",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-10",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -2168,16 +2004,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T04:15:53+00:00"
-    },
-    {
-     "title": "Salman Khan Extends 'Financial Help' To Sharad Kapoor After Viral Video, Cine Workers' Body Thanks Superstar",
-     "url": "https://www.ndtv.com/entertainment/salman-khan-extends-financial-help-to-sharad-kapoor-after-viral-video-cine-workers-body-thanks-superstar-12333437#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T10:35:49+00:00"
     }
    ],
    "via": [
@@ -2191,6 +2017,109 @@
     "सलमान ख़ान की फिल्म मातृभूमि का नया ट्रेलर आया"
    ],
    "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 13 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261118-Q3243690-update",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "Chief Justice of India",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "India’s footballers celebrate SAFF final win against Pakistan",
+   "story_keys": [
+    "action",
+    "against",
+    "chair'",
+    "contempt",
+    "deserve",
+    "don't",
+    "escorted",
+    "kant",
+    "lawyer",
+    "plea",
+    "remark",
+    "seek",
+    "surya"
+   ],
+   "date": "2026-11-18",
+   "news_at": "2026-11-17T19:56:00+00:00",
+   "owners": [
+    "Al Jazeera Media Network",
+    "The Hindu Group",
+    "HT Media",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "India’s footballers celebrate SAFF final win against Pakistan",
+    "All-too fallible: On India’s vote against moratorium on death penalty",
+    "India seek a Test high at Basin Reserve",
+    "Ugly scenes! Palestine player kicks, makes racist gesture against India - Watch"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "India’s footballers celebrate SAFF final win against Pakistan",
+     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/17/indias-footballers-celebrate-saff-final-win-against-pakistan?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-17T19:56:00+00:00"
+    },
+    {
+     "title": "All-too fallible: On India’s vote against moratorium on death penalty",
+     "url": "https://www.thehindu.com/opinion/editorial/the-hindu-editorial-on-indias-vote-against-moratorium-on-death-penalty/article71713256.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T18:26:51+00:00"
+    },
+    {
+     "title": "India seek a Test high at Basin Reserve",
+     "url": "https://www.hindustantimes.com/cricket/india-seek-a-test-high-at-basin-reserve-101794931462372.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T16:17:19+00:00"
+    },
+    {
+     "title": "Ugly scenes! Palestine player kicks, makes racist gesture against India - Watch",
+     "url": "https://timesofindia.indiatimes.com/sports/football/top-stories/ugly-scenes-against-india-palestine-player-thows-kicks-makes-alleged-racist-gesture-watch/articleshow/135925500.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:04:33+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q3243690"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261117-Q3243690",
+   "earlier": [
+    "मुख्य न्यायाधीश पर टिप्पणी, वकील पर चलेगा अवमानना केस"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 17 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
    "audience": "india",
    "lane": "naam-niyam"
   },
@@ -2656,9 +2585,9 @@
     "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
     "Trump to meet Chinese leader Xi Jinping and Russia's Vladimir Putin for joint summit",
     "FAA ground stop still affecting thousands of flights. And, Trump meets Xi, Putin in Asia",
-    "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
     "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
-    "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi"
+    "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi",
+    "Trump, Xi, Putin to meet in Shenzhen: Beijing’s bargain, big optics and what it means for India"
    ],
    "hindi_headlines": [],
    "region": "world",
@@ -2694,16 +2623,6 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-16T12:08:14+00:00"
-    },
-    {
-     "title": "Trump heads to Asia to meet with Xi and Putin amid Nvidia fallout",
-     "url": "https://www.npr.org/2026/11/16/nx-s1-6041738/trump-xi-and-putin-china-nvidia",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T10:00:00+00:00"
     },
     {
      "title": "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
@@ -2752,15 +2671,16 @@
  ],
  "notes": [
   "revisit kh-20261118-Q10218-update: 2 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261118-Q37293-update: 4 owners' new reports on Ramayana (994 views before); revisit kh-20261118-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261118-Q163225-update: 2 owners' new reports on Sonia Gandhi (812 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1761 headlines from 48 feeds (18 owners), 26 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261117-siberia-aviation",
+  "outlets: 1743 headlines from 48 feeds (18 owners), 26 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261117-siberia-aviation",
   "explainers: 5 kh- stories (on): kh-20261118-Q10218, kh-20261118-Q396412, kh-20261118-Q305177, kh-20261118-Q470774; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer COP: no Wikipedia article that can be its centre; explainer China’s Baidu: fewer than 3 owners' headlines name it and the story"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1761,
+  "headlines": 1743,
   "feeds": 48,
   "owners": 18,
   "matched": 26,
@@ -2775,7 +2695,7 @@
    "kind": "incident",
    "category": "aviation",
    "date": "2026-11-17",
-   "news_at": "2026-11-17T21:25:43+00:00",
+   "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
     "India Today Group",
@@ -2812,6 +2732,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-17T21:06:11+00:00"
+    },
+    {
+     "title": "Russian military plane crash in Siberia kills 19",
+     "url": "https://www.aljazeera.com/news/2026/11/17/russian-military-plane-crash-in-siberia-kills-19?traffic_source=rss",
+     "outlet": "Al Jazeera",
+     "outlet_hi": "अल जज़ीरा",
+     "owner": "Al Jazeera Media Network",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-17T22:21:16+00:00"
     },
     {
      "title": "Moment Russian military plane crashes in Siberia, killing 19",
@@ -2900,9 +2830,9 @@
     "Network18",
     "The Hindu Group",
     "BBC",
+    "ABP Group",
     "HT Media",
     "NDTV",
-    "ABP Group",
     "DB Corp"
    ],
    "fame": 400000,
@@ -2919,10 +2849,10 @@
    ],
    "hindi_headlines": [
     "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
+    "राहुल गांधी के बयान पर छिड़े विवाद पर बोले विजेता दहिया, 'उन्होंने जो काम किया है वो...'",
     "मम्मी-पापा की गोद वाली लड़ाई अलाउद्दीन तक आई, भाजपा ने राहुल गांधी से पूछा काफूर वाला सवाल",
     "राहुल गांधी की शिव-पार्वती वाली दलील पर भाजपा ने पूछ लिया अलाउद्दीन खिलजी-मलिक काफूर वाला सवाल",
-    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?",
-    "राहुल गांधी ने शेयर की शिव-पार्वती की तस्वीर तो भड़क उठे ये CM, 'पापा की गोद में मम्मा' पर फिर तंज"
+    "जब राहुल गांधी अपनी गर्लफ्रेंड को लेकर उसी रेस्तरां पहुंचे, जहां मिले थे राजीव और सोनिया, तब क्या हुआ?"
    ],
    "hindi_news": 14,
    "geos": [
@@ -2979,9 +2909,9 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:BBC",
+    "outlet:ABP Group",
     "outlet:HT Media",
     "outlet:NDTV",
-    "outlet:ABP Group",
     "outlet:DB Corp",
     "google-news:Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "google-news:Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment",
@@ -2989,22 +2919,20 @@
    ],
    "top": {
     "IN": 2,
-    "IN-hi": 7,
-    "IN-nation": 4,
-    "IN-hi-nation": 1
+    "IN-hi": 8,
+    "IN-nation": 3,
+    "IN-hi-nation": 2
    },
-   "top_score": 1.855,
+   "top_score": 1.83,
    "top_headlines": [
     "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
     "राहुल गांधी की मौजूदगी में इटली के नेता ने लगाया 'वोट चोर-गद्दी छोड़' का नारा, बीजेपी क्या बोली",
     "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
     "Rahul Gandhi's Shiva-Parvati Post As BJP Mocks His 'Mom In Papa's Lap' Comment"
    ],
-   "hindi_owners": [
-    "BBC"
-   ],
+   "hindi_owners": [],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q396412",
