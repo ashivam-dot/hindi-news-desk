@@ -1,29 +1,19 @@
 {
- "at": "2026-11-17T01:30:55+00:00",
+ "at": "2026-11-17T02:01:46+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 24 candidates from 22 trending",
-  "revisit kh-20261117-Q10218-update: 4 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261117-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit kh-20261117-Q9543-update: 2 owners' new reports on Salman Khan (936 views before); revisit kh-20261117-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1627 headlines from 48 feeds (18 owners), 10 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-akvan-cyclone",
-  "explainers: 10 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q7768, kh-20261117-Q137218643; dropped: explainer Rwanda: no Wikipedia article that can be its centre; explainer Grammy Awards: fewer than 3 owners' headlines name it and the story; explainer Khan / Sharad Kapoor Salman: no Wikipedia article that can be its centre",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261117-Q3243690: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q137218643: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "watch: 16 candidates from 19 trending",
+  "outlets: 1660 headlines from 50 feeds (19 owners), 14 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-akvan-cyclone",
+  "explainers: 7 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q2377884, kh-20261117-Q1058; dropped: explainer Rwanda: no Wikipedia article that can be its centre; explainer Grammy Awards: fewer than 3 owners' headlines name it and the story; explainer Khan / Sharad Kapoor Salman: no Wikipedia article that can be its centre",
+  "hold kh-20261117-Q163225: last Short went out 0.3 h ago",
+  "hold nw-20261116-akvan-cyclone: last Short went out 0.3 h ago",
+  "drop kh-20261117-Q2377884: too low in Google News India's top stories (place 0.30, needs 0.35)",
+  "drop kh-20261117-Q1058: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261117-Q85770988: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q2377884: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q2578792: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q36812: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q132726, kh-20261117-Q163225, kh-20261117-Q3243690; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q85770988, kh-20261117-Q2377884, kh-20261117-Q2578792, kh-20261117-Q36812, kh-20261117-Q37293-update, kh-20261117-Q7747-update",
-  "published kh-20261117-Q132726: https://www.youtube.com/shorts/3Y3nK9xXS38",
+  "hold wk-Q142179721: last Short went out 0.3 h ago",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q2377884, kh-20261117-Q1058, kh-20261117-Q85770988, kh-20261117-Q36812",
   "channel: about, playlists done; nothing left to do"
- ],
- "published": {
-  "video_id": "3Y3nK9xXS38",
-  "url": "https://www.youtube.com/shorts/3Y3nK9xXS38",
-  "youtube_title": "यमुना में गिर रहे 520 नाले, सुप्रीम कोर्ट ने लगाई फटकार #shorts #yamuna",
-  "privacy": "public",
-  "synthetic_declared": true
- }
+ ]
 }
