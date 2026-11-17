@@ -1,20 +1,21 @@
 {
- "at": "2026-11-17T01:01:54+00:00",
+ "at": "2026-11-17T01:16:54+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 26 candidates from 24 trending",
-  "revisit kh-20261117-Q10218-update: 5 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261117-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit kh-20261117-Q9543-update: 2 owners' new reports on Salman Khan (936 views before); revisit kh-20261117-Q163225-update: 5 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1685 headlines from 50 feeds (19 owners), 12 matched to articles, 13 candidates with 2+ owners, 1 nw- stories (on): nw-20261115-andhra-cyclone",
-  "explainers: 12 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q7768, kh-20261117-Q7920469; dropped: explainer Grammy Awards: fewer than 3 owners' headlines name it and the story; explainer Khan / Sharad Kapoor Salman: no Wikipedia article that can be its centre; explainer COP / Turkiye: no Wikipedia article that can be its centre",
+  "watch: 25 candidates from 23 trending",
+  "revisit kh-20261117-Q10218-update: 4 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261117-Q37293-update: 5 owners' new reports on Ramayana (994 views before); revisit kh-20261117-Q9543-update: 2 owners' new reports on Salman Khan (936 views before); revisit kh-20261117-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit Q468324 (421 views): 0 o",
+  "outlets: 1612 headlines from 47 feeds (18 owners), 18 matched to articles, 12 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-akvan-cyclone",
+  "explainers: 11 kh- stories (on): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q2377884, kh-20261117-Q2578792; dropped: explainer Grammy Awards: fewer than 3 owners' headlines name it and the story; explainer Khan / Kapoor Salman Khan: no Wikipedia article that can be its centre; explainer US-led / San Francisco Declaration: no Wikipedia article that can be its centre",
+  "trend radar errors: ['outlet pib-hi: HTTPError: 404 Client Error: Not Found for url: https://www.pib.gov.in/RssMain.aspx?ModId=6&Lang=2&Regid=3&reg=3', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261117-Q163225: outside 07:00-24:00 IST",
-  "drop kh-20261117-Q132726: too low in Google News India's top stories (place 0.15, needs 0.35)",
-  "hold nw-20261115-andhra-cyclone: outside 07:00-24:00 IST",
-  "drop kh-20261117-Q7920469: too low in Google News India's top stories (place 0.20, needs 0.35)",
-  "drop kh-20261117-Q85770988: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261117-Q2377884: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q3243690; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q85770988, kh-20261117-Q2377884, kh-20261117-Q2578792, kh-20261117-Q36812, kh-20261117-Q37293-update, kh-20261117-Q7747-update",
+  "hold nw-20261116-akvan-cyclone: outside 07:00-24:00 IST",
+  "drop kh-20261117-Q132726: too low in Google News India's top stories (place 0.28, needs 0.35)",
+  "drop kh-20261117-Q2377884: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "hold kh-20261117-Q2578792: outside 07:00-24:00 IST",
+  "drop kh-20261117-Q3243690: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q3243690; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261117-Q2377884, kh-20261117-Q2578792, kh-20261117-Q85770988, kh-20261117-Q36812, kh-20261117-Q37293-update, kh-20261117-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
