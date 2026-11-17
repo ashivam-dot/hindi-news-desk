@@ -1,5 +1,5 @@
 {
- "at": "2026-11-17T05:32:27+00:00",
+ "at": "2026-11-17T05:46:29+00:00",
  "trending": [
   {
    "id": "kh-20261117-Q36767",
@@ -28,8 +28,8 @@
     "TV9 Network",
     "Network18"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -45,7 +45,7 @@
     "James Bond Explainer: क्या है ‘007’ का असली कोड, कैसे अमेजन के हाथ लगी कमान? शॉन कॉनरी से रॉबर्ट पैटिनसन तक, जानें बॉन्ड की पूरी कहानी",
     "James Bond: कभी वैम्पायर बनकर जीता दिल, अब बने नए जेम्स बॉन्ड, कौन हैं नए 007 रॉबर्ट पैटिनसन?"
    ],
-   "hindi_news": 6,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -101,10 +101,12 @@
     "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:TV9 Network",
-    "outlet:Network18"
+    "outlet:Network18",
+    "google-news:Robert Pattinson is named the 7th James Bond, taking over the role from Daniel Craig",
+    "google-news:Robert Pattinson on James Bond: कभी रहा सपना, अब हॉलीवुड के नए 'जेम्स बॉन्ड' बनकर गदगद हुए रॉबर्ट पैटिनसन, बोले- जिंदगी भर का सम्मान है"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala",
@@ -147,8 +149,8 @@
     "BBC",
     "NDTV"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -166,7 +168,7 @@
     "सास और पति की हत्या के पलों को लिखना बेहद कठिन था, राहुल-प्रियंका ने दिलाई याद: किताब पर बोलीं सोनिया गांधी",
     "सोनिया गांधी की किताब के विमोचन में पहुंचे कई पुराने कांग्रेसी- जनार्दन द्विवेदी, मोंटेक और कौन-कौन?"
    ],
-   "hindi_news": 7,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -263,12 +265,511 @@
     "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:BBC",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Amarinder Singh, Vijay: Leaders Who Attended Sonia Gandhi's Book Launch",
+    "google-news:Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
+    "google-news:सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 2,
+    "IN-nation": 8
+   },
+   "top_score": 1.145,
+   "top_headlines": [
+    "Amarinder Singh, Vijay: Leaders Who Attended Sonia Gandhi's Book Launch",
+    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir"
+   ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261117-Q132726",
+   "qid": "Q132726",
+   "title": "Yamuna",
+   "name": "Yamuna",
+   "phrase": "Yamuna",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+   "story_keys": [
+    "cleaning",
+    "despite",
+    "expenditure",
+    "huge",
+    "increased",
+    "penaltie",
+    "polluted'",
+    "pollution",
+    "spent",
+    "sums",
+    "warn",
+    "yet"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T01:13:07+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
+    "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+    "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_headlines": [
+    "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
+    "यमुना का पानी खराब हुआ तो राज्यों पर लगेगा भारी जुर्माना, सुप्रीम कोर्ट सख्त",
+    "'अब जुर्माना लगाएंगे' करोड़ों रुपये खर्च कर भी मैली रही यमुना, सुप्रीम कोर्ट ने दे दी सख्त चेतावनी",
+    "'यह AI नहीं, यमुना है': दिल्ली में 'जहरीले झाग' के बीच छठ पूजा पर AAP और BJP सियासी तकरार"
+   ],
+   "hindi_news": 4,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "यमुना",
+   "reports": [
+    {
+     "title": "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
+     "url": "https://www.hindustantimes.com/india-news/should-be-held-accountable-penalised-sc-warns-states-uts-and-districts-of-fines-over-yamuna-pollution-101794877217271.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T01:13:07+00:00"
+    },
+    {
+     "title": "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+     "url": "https://www.indiatoday.in/programme/5ive-live/video/yamuna-turns-toxic-during-chhath-puja-supreme-court-flags-delhis-pollution-crisis-3040220-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T15:30:07+00:00"
+    },
+    {
+     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court-101794832111722.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:00:15+00:00"
+    },
+    {
+     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+     "url": "https://www.thehindu.com/news/cities/Delhi/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court/article71707841.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:35:59+00:00"
+    },
+    {
+     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
+     "url": "https://www.news18.com/videos/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-news18-10427935.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:08:48+00:00"
+    },
+    {
+     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+     "url": "https://www.news18.com/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-ws-l-10427783.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T11:35:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ...",
+    "google-news:Chhath Puja: Despite politics over Yamuna, Delhi stretch of river continues to be polluted",
+    "google-news:'यह AI नहीं, यमुना है': दिल्ली में 'जहरीले झाग' के बीच छठ पूजा पर AAP और BJP सियासी तकरार"
+   ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261117-Q2377884",
+   "qid": "Q2377884",
+   "title": "Tata Sons",
+   "name": "Tata Sons",
+   "phrase": "Tata Sons",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+   "story_keys": [
+    "accuse",
+    "back",
+    "back-door",
+    "comply",
+    "listing",
+    "takeover’",
+    "tell"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T03:19:24+00:00",
+   "owners": [
+    "Indian Express Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+    "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
+    "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
+    "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
+    "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
+    "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’"
+   ],
+   "hindi_headlines": [
+    "टाटा संस पर फिर सख्त हुआ RBI, कहा- अपर लेयर NBFC नियमों के तहत लिस्टिंग जरूरी, क्या अब शेयर बाजार में उतरेगी कंपनी?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "टाटा संस",
+   "reports": [
+    {
+     "title": "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’",
+     "url": "https://www.thehindu.com/business/Industry/jimmy-tata-backs-tata-sons-listing-accuses-noel-of-back-door-takeover/article71708314.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T03:19:24+00:00"
+    },
+    {
+     "title": "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/tata-sons-facing-back-door-takeover-warns-jimmy-tata/articleshow/135905376.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T23:47:13+00:00"
+    },
+    {
+     "title": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+     "url": "https://www.livemint.com/news/jimmy-tata-accuses-noel-of-a-back-door-takeover-of-tata-sons-backs-listing-11794850273823.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T18:14:09+00:00"
+    },
+    {
+     "title": "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
+     "url": "https://www.livemint.com/news/rbi-tells-tata-sons-to-comply-with-upper-layer-nbfc-rules-including-listing-11794844359846.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T17:07:35+00:00"
+    },
+    {
+     "title": "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
+     "url": "https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:53:31+00:00"
+    },
+    {
+     "title": "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
+     "url": "https://indianexpress.com/article/business/ratan-tata-brother-jimmy-tata-sons-listing-chandra-10964880/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T05:58:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "google-news:RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "paisa"
+  },
+  {
+   "id": "kh-20261117-Q41254",
+   "qid": "Q41254",
+   "title": "Grammy Awards",
+   "name": "Grammy Awards",
+   "phrase": "Grammy",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+   "story_keys": [
+    "lead",
+    "nomination",
+    "raye",
+    "rosal"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T03:17:13+00:00",
+   "owners": [
+    "BBC",
+    "The Hindu Group",
+    "Deutsche Welle",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+    "Grammy Awards: Raye and Rosalia lead nominations",
+    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+    "Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "ग्रैमी पुरस्कार",
+   "reports": [
+    {
+     "title": "Grammy Awards: Raye and Rosalia lead nominations",
+     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-16T18:14:00+00:00"
+    },
+    {
+     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-16T14:48:55+00:00"
+    },
+    {
+     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T03:17:13+00:00"
+    },
+    {
+     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:14:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:The Hindu Group",
+    "outlet:Deutsche Welle",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261117-Q1058",
+   "qid": "Q1058",
+   "title": "Narendra Modi",
+   "name": "Narendra Modi",
+   "phrase": "PM Modi",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+   "story_keys": [
+    "attire",
+    "dinner",
+    "gala",
+    "news",
+    "summit",
+    "traditional"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T23:42:03+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नरेन्द्र मोदी",
+   "reports": [
+    {
+     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T15:26:07+00:00"
+    },
+    {
+     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:34:50+00:00"
+    },
+    {
+     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:07:04+00:00"
+    },
+    {
+     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:39:52+00:00"
+    },
+    {
+     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T09:38:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "nw-20261117-uttarakhand-accident",
@@ -400,9 +901,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 3
+   },
+   "top_score": 0.92,
+   "top_headlines": [
+    "6 Killed, 20 Injured After Bus Falls Into Ravine In Uttarakhand's Tehri Garhwal"
+   ],
    "hindi_owners": [
     "Amar Ujala",
     "India Today Group",
@@ -519,8 +1025,8 @@
     "outlet:HT Media",
     "outlet:Amar Ujala"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala"
@@ -605,16 +1111,6 @@
      "at": "2026-11-17T03:13:00+00:00"
     },
     {
-     "title": "Cyclone Akvan Likely To Hit Andhra Coast On November 20 With 120 Kmph Winds",
-     "url": "https://www.ndtv.com/india-news/cyclone-akvan-likely-to-hit-andhra-coast-on-november-20-with-120-kmph-winds-12336306#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:57:13+00:00"
-    },
-    {
      "title": "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
      "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html",
      "outlet": "Mint",
@@ -625,16 +1121,6 @@
      "at": "2026-11-17T01:47:29+00:00"
     },
     {
-     "title": "Odisha Deploys 74 Rescue Teams, Starts Evacuation As Cyclone Akvan Set To Hit Andhra",
-     "url": "https://www.ndtv.com/india-news/odisha-deploys-74-rescue-teams-starts-evacuation-as-cyclone-akvan-set-to-hit-andhra-pradesh-12336282#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:40:13+00:00"
-    },
-    {
      "title": "Cyclone Akvan likely to intensify into ‘very severe’ storm, hit Andhra coast on November 20: IMD",
      "url": "https://indianexpress.com/article/india/cyclone-akvan-andhra-pradesh-landfall-november-20-imd-10965954/",
      "outlet": "The Indian Express",
@@ -643,6 +1129,26 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-16T23:13:54+00:00"
+    },
+    {
+     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T20:19:08+00:00"
+    },
+    {
+     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
+     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:57:43+00:00"
     }
    ],
    "via": [
@@ -654,9 +1160,16 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 1,
+    "IN-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "Cyclone Akvan brews over Bay of Bengal: What you need to know",
+    "Cyclone Akvan likely to turn ‘severe’ today; Odisha deploys 74 rescue teams, AP on alert | Hindustan Times",
+    "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17"
+   ],
    "hindi_owners": [
     "BBC",
     "HT Media",
@@ -664,463 +1177,6 @@
    ],
    "audience": "india",
    "lane": "breaking"
-  },
-  {
-   "id": "kh-20261117-Q2377884",
-   "qid": "Q2377884",
-   "title": "Tata Sons",
-   "name": "Tata Sons",
-   "phrase": "Tata Sons",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-   "story_keys": [
-    "accuse",
-    "back",
-    "back-door",
-    "comply",
-    "listing",
-    "takeover’",
-    "tell"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T03:19:24+00:00",
-   "owners": [
-    "Indian Express Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-    "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
-    "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
-    "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
-    "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
-    "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’"
-   ],
-   "hindi_headlines": [
-    "टाटा संस पर फिर सख्त हुआ RBI, कहा- अपर लेयर NBFC नियमों के तहत लिस्टिंग जरूरी, क्या अब शेयर बाजार में उतरेगी कंपनी?"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "टाटा संस",
-   "reports": [
-    {
-     "title": "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’",
-     "url": "https://www.thehindu.com/business/Industry/jimmy-tata-backs-tata-sons-listing-accuses-noel-of-back-door-takeover/article71708314.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:19:24+00:00"
-    },
-    {
-     "title": "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/tata-sons-facing-back-door-takeover-warns-jimmy-tata/articleshow/135905376.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T23:47:13+00:00"
-    },
-    {
-     "title": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-     "url": "https://www.livemint.com/news/jimmy-tata-accuses-noel-of-a-back-door-takeover-of-tata-sons-backs-listing-11794850273823.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T18:14:09+00:00"
-    },
-    {
-     "title": "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
-     "url": "https://www.livemint.com/news/rbi-tells-tata-sons-to-comply-with-upper-layer-nbfc-rules-including-listing-11794844359846.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T17:07:35+00:00"
-    },
-    {
-     "title": "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
-     "url": "https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:53:31+00:00"
-    },
-    {
-     "title": "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
-     "url": "https://indianexpress.com/article/business/ratan-tata-brother-jimmy-tata-sons-listing-chandra-10964880/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T05:58:50+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "paisa"
-  },
-  {
-   "id": "kh-20261117-Q132726",
-   "qid": "Q132726",
-   "title": "Yamuna",
-   "name": "Yamuna",
-   "phrase": "Yamuna",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-   "story_keys": [
-    "cleaning",
-    "despite",
-    "expenditure",
-    "huge",
-    "increased",
-    "penaltie",
-    "polluted'",
-    "pollution",
-    "spent",
-    "sums",
-    "warn",
-    "yet"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T01:13:07+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
-    "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
-    "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution"
-   ],
-   "hindi_headlines": [
-    "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
-    "यमुना का पानी खराब हुआ तो राज्यों पर लगेगा भारी जुर्माना, सुप्रीम कोर्ट सख्त",
-    "'अब जुर्माना लगाएंगे' करोड़ों रुपये खर्च कर भी मैली रही यमुना, सुप्रीम कोर्ट ने दे दी सख्त चेतावनी"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "यमुना",
-   "reports": [
-    {
-     "title": "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
-     "url": "https://www.hindustantimes.com/india-news/should-be-held-accountable-penalised-sc-warns-states-uts-and-districts-of-fines-over-yamuna-pollution-101794877217271.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:13:07+00:00"
-    },
-    {
-     "title": "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
-     "url": "https://www.indiatoday.in/programme/5ive-live/video/yamuna-turns-toxic-during-chhath-puja-supreme-court-flags-delhis-pollution-crisis-3040220-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T15:30:07+00:00"
-    },
-    {
-     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-     "url": "https://www.hindustantimes.com/india-news/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court-101794832111722.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:00:15+00:00"
-    },
-    {
-     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-     "url": "https://www.thehindu.com/news/cities/Delhi/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court/article71707841.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:35:59+00:00"
-    },
-    {
-     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
-     "url": "https://www.news18.com/videos/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-news18-10427935.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:08:48+00:00"
-    },
-    {
-     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-     "url": "https://www.news18.com/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-ws-l-10427783.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T11:35:39+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261117-Q41254",
-   "qid": "Q41254",
-   "title": "Grammy Awards",
-   "name": "Grammy Awards",
-   "phrase": "Grammy",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-   "story_keys": [
-    "lead",
-    "nomination",
-    "raye",
-    "rosal"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T03:17:13+00:00",
-   "owners": [
-    "BBC",
-    "The Hindu Group",
-    "Deutsche Welle",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-    "Grammy Awards: Raye and Rosalia lead nominations",
-    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "ग्रैमी पुरस्कार",
-   "reports": [
-    {
-     "title": "Grammy Awards: Raye and Rosalia lead nominations",
-     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T18:14:00+00:00"
-    },
-    {
-     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T14:48:55+00:00"
-    },
-    {
-     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
-     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:17:13+00:00"
-    },
-    {
-     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:14:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:The Hindu Group",
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US banks face online outage days after major Microsoft disruption",
-   "story_keys": [
-    "bank",
-    "outage",
-    "system"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T05:17:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US banks face online outage days after major Microsoft disruption",
-    "Outlook outage: On Microsoft and dangers of centralising digital systems",
-    "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-    "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages"
-   ],
-   "hindi_headlines": [
-    "7 दिन में तीसरा टेक्निकल लोचा, पहले माइक्रोसॉफ्ट और अब अमेरिकी बैंक ठप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages",
-     "url": "https://www.indiatoday.in/technology/news/story/nightmare-november-for-tech-microsoft-banks-airlines-and-more-hit-by-outages-3040459-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:17:14+00:00"
-    },
-    {
-     "title": "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-     "url": "https://www.ndtv.com/world-news/microsoft-then-flights-now-banks-what-disrupted-us-jpmorgan-chase-bank-of-america-zelle-12336337#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T02:24:58+00:00"
-    },
-    {
-     "title": "Outlook outage: On Microsoft and dangers of centralising digital systems",
-     "url": "https://www.thehindu.com/opinion/editorial/outlook-outage-the-hindu-editorial-on-microsoft-and-dangers-of-centralising-systems/article71708179.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T20:00:40+00:00"
-    },
-    {
-     "title": "US banks face online outage days after major Microsoft disruption",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T19:11:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261117-Q174769",
@@ -1213,8 +1269,8 @@
     "outlet:Guardian Media Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "NDTV"
@@ -1265,122 +1321,12 @@
    "date": "2026-11-17",
    "coords": null,
    "has_coords": false,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-   "story_keys": [
-    "attire",
-    "dinner",
-    "gala",
-    "news",
-    "summit",
-    "traditional"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T23:42:03+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
-   "reports": [
-    {
-     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
-     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T15:26:07+00:00"
-    },
-    {
-     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:34:50+00:00"
-    },
-    {
-     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:07:04+00:00"
-    },
-    {
-     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:39:52+00:00"
-    },
-    {
-     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T09:38:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q396412",
@@ -1459,8 +1405,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1543,8 +1489,8 @@
     "outlet:Network18",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1574,8 +1520,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1605,8 +1551,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1638,8 +1584,8 @@
    "date": "2026-11-16",
    "coords": null,
    "has_coords": false,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1671,8 +1617,8 @@
    "date": "2026-10-21",
    "coords": null,
    "has_coords": true,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": []
   },
@@ -1700,8 +1646,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1731,8 +1677,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1762,8 +1708,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -1793,8 +1739,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -1932,9 +1878,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 3
+   },
+   "top_score": 0.92,
+   "top_headlines": [
+    "6 Killed, 20 Injured After Bus Falls Into Ravine In Uttarakhand's Tehri Garhwal"
+   ],
    "hindi_owners": [
     "Amar Ujala",
     "India Today Group",
@@ -2021,16 +1972,6 @@
      "at": "2026-11-17T03:13:00+00:00"
     },
     {
-     "title": "Cyclone Akvan Likely To Hit Andhra Coast On November 20 With 120 Kmph Winds",
-     "url": "https://www.ndtv.com/india-news/cyclone-akvan-likely-to-hit-andhra-coast-on-november-20-with-120-kmph-winds-12336306#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:57:13+00:00"
-    },
-    {
      "title": "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
      "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html",
      "outlet": "Mint",
@@ -2041,16 +1982,6 @@
      "at": "2026-11-17T01:47:29+00:00"
     },
     {
-     "title": "Odisha Deploys 74 Rescue Teams, Starts Evacuation As Cyclone Akvan Set To Hit Andhra",
-     "url": "https://www.ndtv.com/india-news/odisha-deploys-74-rescue-teams-starts-evacuation-as-cyclone-akvan-set-to-hit-andhra-pradesh-12336282#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:40:13+00:00"
-    },
-    {
      "title": "Cyclone Akvan likely to intensify into ‘very severe’ storm, hit Andhra coast on November 20: IMD",
      "url": "https://indianexpress.com/article/india/cyclone-akvan-andhra-pradesh-landfall-november-20-imd-10965954/",
      "outlet": "The Indian Express",
@@ -2059,6 +1990,26 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-16T23:13:54+00:00"
+    },
+    {
+     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T20:19:08+00:00"
+    },
+    {
+     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
+     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:57:43+00:00"
     }
    ],
    "via": [
@@ -2070,9 +2021,16 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 1,
+    "IN-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "Cyclone Akvan brews over Bay of Bengal: What you need to know",
+    "Cyclone Akvan likely to turn ‘severe’ today; Odisha deploys 74 rescue teams, AP on alert | Hindustan Times",
+    "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17"
+   ],
    "hindi_owners": [
     "BBC",
     "HT Media",
@@ -2080,6 +2038,123 @@
    ],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261117-Q1058",
+   "qid": "Q1058",
+   "title": "Narendra Modi",
+   "name": "Narendra Modi",
+   "phrase": "PM Modi",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+   "story_keys": [
+    "attire",
+    "dinner",
+    "gala",
+    "news",
+    "summit",
+    "traditional"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T23:42:03+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नरेन्द्र मोदी",
+   "reports": [
+    {
+     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T15:26:07+00:00"
+    },
+    {
+     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:34:50+00:00"
+    },
+    {
+     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:07:04+00:00"
+    },
+    {
+     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:39:52+00:00"
+    },
+    {
+     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T09:38:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q2377884",
@@ -2110,8 +2185,8 @@
     "The Hindu Group",
     "NDTV"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2200,11 +2275,16 @@
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
     "outlet:The Hindu Group",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
+   ],
    "hindi_owners": [
     "NDTV"
    ],
@@ -2238,8 +2318,8 @@
     "TV9 Network",
     "Network18"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2255,7 +2335,7 @@
     "James Bond Explainer: क्या है ‘007’ का असली कोड, कैसे अमेजन के हाथ लगी कमान? शॉन कॉनरी से रॉबर्ट पैटिनसन तक, जानें बॉन्ड की पूरी कहानी",
     "James Bond: कभी वैम्पायर बनकर जीता दिल, अब बने नए जेम्स बॉन्ड, कौन हैं नए 007 रॉबर्ट पैटिनसन?"
    ],
-   "hindi_news": 6,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -2311,10 +2391,12 @@
     "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:TV9 Network",
-    "outlet:Network18"
+    "outlet:Network18",
+    "google-news:Robert Pattinson is named the 7th James Bond, taking over the role from Daniel Craig",
+    "google-news:Robert Pattinson on James Bond: कभी रहा सपना, अब हॉलीवुड के नए 'जेम्स बॉन्ड' बनकर गदगद हुए रॉबर्ट पैटिनसन, बोले- जिंदगी भर का सम्मान है"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala",
@@ -2402,8 +2484,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -2486,122 +2568,111 @@
     "outlet:Network18",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261117-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
+   "id": "kh-20261117-Q41254",
+   "qid": "Q41254",
+   "title": "Grammy Awards",
+   "name": "Grammy Awards",
+   "phrase": "Grammy",
+   "person": false,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
    "story_keys": [
-    "attire",
-    "dinner",
-    "gala",
-    "news",
-    "summit",
-    "traditional"
+    "lead",
+    "nomination",
+    "raye",
+    "rosal"
    ],
    "date": "2026-11-16",
-   "news_at": "2026-11-16T23:42:03+00:00",
+   "news_at": "2026-11-17T03:17:13+00:00",
    "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
+    "BBC",
+    "The Hindu Group",
+    "Deutsche Welle",
+    "Bennett, Coleman & Co."
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 225000,
+   "news": 225000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog"
+    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+    "Grammy Awards: Raye and Rosalia lead nominations",
+    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+    "Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "ग्रैमी पुरस्कार",
    "reports": [
     {
-     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
-     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
+     "title": "Grammy Awards: Raye and Rosalia lead nominations",
+     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-16T15:26:07+00:00"
+     "at": "2026-11-16T18:14:00+00:00"
     },
     {
-     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-16T13:34:50+00:00"
+     "at": "2026-11-16T14:48:55+00:00"
     },
     {
-     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T13:07:04+00:00"
+     "at": "2026-11-17T03:17:13+00:00"
     },
     {
-     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-16T12:39:52+00:00"
-    },
-    {
-     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T09:38:46+00:00"
+     "at": "2026-11-16T16:14:19+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group"
+    "outlet:BBC",
+    "outlet:The Hindu Group",
+    "outlet:Deutsche Welle",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q1621643",
@@ -2627,8 +2698,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2660,8 +2731,8 @@
    "date": "2026-11-16",
    "coords": null,
    "has_coords": false,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -2758,8 +2829,8 @@
     "outlet:Guardian Media Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "NDTV"
@@ -2810,208 +2881,11 @@
    "date": "2026-11-17",
    "coords": null,
    "has_coords": false,
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US banks face online outage days after major Microsoft disruption",
-   "story_keys": [
-    "bank",
-    "outage",
-    "system"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T05:17:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US banks face online outage days after major Microsoft disruption",
-    "Outlook outage: On Microsoft and dangers of centralising digital systems",
-    "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-    "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages"
-   ],
-   "hindi_headlines": [
-    "7 दिन में तीसरा टेक्निकल लोचा, पहले माइक्रोसॉफ्ट और अब अमेरिकी बैंक ठप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages",
-     "url": "https://www.indiatoday.in/technology/news/story/nightmare-november-for-tech-microsoft-banks-airlines-and-more-hit-by-outages-3040459-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:17:14+00:00"
-    },
-    {
-     "title": "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-     "url": "https://www.ndtv.com/world-news/microsoft-then-flights-now-banks-what-disrupted-us-jpmorgan-chase-bank-of-america-zelle-12336337#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T02:24:58+00:00"
-    },
-    {
-     "title": "Outlook outage: On Microsoft and dangers of centralising digital systems",
-     "url": "https://www.thehindu.com/opinion/editorial/outlook-outage-the-hindu-editorial-on-microsoft-and-dangers-of-centralising-systems/article71708179.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T20:00:40+00:00"
-    },
-    {
-     "title": "US banks face online outage days after major Microsoft disruption",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T19:11:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q41254",
-   "qid": "Q41254",
-   "title": "Grammy Awards",
-   "name": "Grammy Awards",
-   "phrase": "Grammy",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-   "story_keys": [
-    "lead",
-    "nomination",
-    "raye",
-    "rosal"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T03:17:13+00:00",
-   "owners": [
-    "BBC",
-    "The Hindu Group",
-    "Deutsche Welle",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-    "Grammy Awards: Raye and Rosalia lead nominations",
-    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "ग्रैमी पुरस्कार",
-   "reports": [
-    {
-     "title": "Grammy Awards: Raye and Rosalia lead nominations",
-     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T18:14:00+00:00"
-    },
-    {
-     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T14:48:55+00:00"
-    },
-    {
-     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
-     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:17:13+00:00"
-    },
-    {
-     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:14:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:The Hindu Group",
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
    "lane": "other"
   },
   {
@@ -3121,8 +2995,8 @@
     "outlet:HT Media",
     "outlet:Amar Ujala"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala"
@@ -3154,8 +3028,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -3185,8 +3059,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-14",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -3216,8 +3090,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-11",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -3247,8 +3121,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -3278,8 +3152,8 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-10",
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
@@ -3287,20 +3161,15 @@
   }
  ],
  "notes": [
-  "outlets: 1690 headlines from 50 feeds (19 owners), 15 matched to articles, 13 candidates with 2+ owners, 2 nw- stories (on): nw-20261117-uttarakhand-accident, nw-20261116-akvan-cyclone",
-  "explainers: 11 kh- stories (on): kh-20261117-Q36767, kh-20261117-Q163225, kh-20261117-Q182477, kh-20261117-Q2377884; dropped: explainer Rwanda: no Wikipedia article that can be its centre; explainer COP / Turkiye: no Wikipedia article that can be its centre; explainer Test Marques Ackerman: fewer than 3 owners' headlines name it and the story"
- ],
- "trend_errors": [
-  "google news IN-hi-nation: HTTP 429",
-  "google news world: HTTP 429",
-  "top stories: no Google News India list could be read (no story is ranked by place)"
+  "outlets: 1704 headlines from 50 feeds (19 owners), 14 matched to articles, 12 candidates with 2+ owners, 2 nw- stories (on): nw-20261117-uttarakhand-accident, nw-20261116-akvan-cyclone",
+  "explainers: 10 kh- stories (on): kh-20261117-Q36767, kh-20261117-Q163225, kh-20261117-Q132726, kh-20261117-Q2377884; dropped: explainer Sharad Kapoor Salman / Sharad Kapoor Salman: no Wikipedia article that can be its centre; explainer Rwanda: no Wikipedia article that can be its centre; explainer COP / Turkiye: no Wikipedia article that can be its centre"
  ],
  "outlets": {
-  "headlines": 1690,
+  "headlines": 1704,
   "feeds": 50,
   "owners": 19,
-  "matched": 15,
-  "corroborated": 13
+  "matched": 14,
+  "corroborated": 12
  },
  "emerging": [
   {
@@ -3433,9 +3302,14 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 8,
+    "IN-nation": 3
+   },
+   "top_score": 0.92,
+   "top_headlines": [
+    "6 Killed, 20 Injured After Bus Falls Into Ravine In Uttarakhand's Tehri Garhwal"
+   ],
    "hindi_owners": [
     "Amar Ujala",
     "India Today Group",
@@ -3522,16 +3396,6 @@
      "at": "2026-11-17T03:13:00+00:00"
     },
     {
-     "title": "Cyclone Akvan Likely To Hit Andhra Coast On November 20 With 120 Kmph Winds",
-     "url": "https://www.ndtv.com/india-news/cyclone-akvan-likely-to-hit-andhra-coast-on-november-20-with-120-kmph-winds-12336306#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:57:13+00:00"
-    },
-    {
      "title": "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
      "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html",
      "outlet": "Mint",
@@ -3542,16 +3406,6 @@
      "at": "2026-11-17T01:47:29+00:00"
     },
     {
-     "title": "Odisha Deploys 74 Rescue Teams, Starts Evacuation As Cyclone Akvan Set To Hit Andhra",
-     "url": "https://www.ndtv.com/india-news/odisha-deploys-74-rescue-teams-starts-evacuation-as-cyclone-akvan-set-to-hit-andhra-pradesh-12336282#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:40:13+00:00"
-    },
-    {
      "title": "Cyclone Akvan likely to intensify into ‘very severe’ storm, hit Andhra coast on November 20: IMD",
      "url": "https://indianexpress.com/article/india/cyclone-akvan-andhra-pradesh-landfall-november-20-imd-10965954/",
      "outlet": "The Indian Express",
@@ -3560,6 +3414,26 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-16T23:13:54+00:00"
+    },
+    {
+     "title": "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17",
+     "url": "https://www.thehindu.com/news/national/tamil-nadu/cyclone-akvan-to-bring-light-rainfall-to-parts-of-coastal-tn-on-november-17/article71707572.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T20:19:08+00:00"
+    },
+    {
+     "title": "Cyclone Akvan likely to make landfall along Andhra-Yanam coast around noon on November 20: IMD",
+     "url": "https://www.hindustantimes.com/india-news/when-and-where-will-cyclone-akvan-make-landfall-andhra-yanam-coast-november-20-imd-101794836408132.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:57:43+00:00"
     }
    ],
    "via": [
@@ -3571,9 +3445,16 @@
    ],
    "emerging": true,
    "article": null,
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 1,
+    "IN-nation": 1
+   },
+   "top_score": 1.3,
+   "top_headlines": [
+    "Cyclone Akvan brews over Bay of Bengal: What you need to know",
+    "Cyclone Akvan likely to turn ‘severe’ today; Odisha deploys 74 rescue teams, AP on alert | Hindustan Times",
+    "Cyclone Akvan to bring light rainfall to parts of coastal T.N. on November 17"
+   ],
    "hindi_owners": [
     "BBC",
     "HT Media",
@@ -3611,8 +3492,8 @@
     "TV9 Network",
     "Network18"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 400000,
+   "news": 400000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3628,7 +3509,7 @@
     "James Bond Explainer: क्या है ‘007’ का असली कोड, कैसे अमेजन के हाथ लगी कमान? शॉन कॉनरी से रॉबर्ट पैटिनसन तक, जानें बॉन्ड की पूरी कहानी",
     "James Bond: कभी वैम्पायर बनकर जीता दिल, अब बने नए जेम्स बॉन्ड, कौन हैं नए 007 रॉबर्ट पैटिनसन?"
    ],
-   "hindi_news": 6,
+   "hindi_news": 7,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -3684,10 +3565,12 @@
     "outlet:Amar Ujala",
     "outlet:DB Corp",
     "outlet:TV9 Network",
-    "outlet:Network18"
+    "outlet:Network18",
+    "google-news:Robert Pattinson is named the 7th James Bond, taking over the role from Daniel Craig",
+    "google-news:Robert Pattinson on James Bond: कभी रहा सपना, अब हॉलीवुड के नए 'जेम्स बॉन्ड' बनकर गदगद हुए रॉबर्ट पैटिनसन, बोले- जिंदगी भर का सम्मान है"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala",
@@ -3730,8 +3613,8 @@
     "BBC",
     "NDTV"
    ],
-   "fame": 175000,
-   "news": 175000,
+   "fame": 375000,
+   "news": 375000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -3749,7 +3632,7 @@
     "सास और पति की हत्या के पलों को लिखना बेहद कठिन था, राहुल-प्रियंका ने दिलाई याद: किताब पर बोलीं सोनिया गांधी",
     "सोनिया गांधी की किताब के विमोचन में पहुंचे कई पुराने कांग्रेसी- जनार्दन द्विवेदी, मोंटेक और कौन-कौन?"
    ],
-   "hindi_news": 7,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -3846,12 +3729,511 @@
     "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:BBC",
-    "outlet:NDTV"
+    "outlet:NDTV",
+    "google-news:Amarinder Singh, Vijay: Leaders Who Attended Sonia Gandhi's Book Launch",
+    "google-news:Wanted to set the record straight, says Sonia Gandhi at official launch of memoir",
+    "google-news:सोनिया गांधी ने बताया क्यों लगता था इंदिरा गांधी से डर, राजीव गांधी की हत्या के बाद कैसे बदल गई थी ज़िंदगी?"
    ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
+   "top": {
+    "IN": 2,
+    "IN-nation": 8
+   },
+   "top_score": 1.145,
+   "top_headlines": [
+    "Amarinder Singh, Vijay: Leaders Who Attended Sonia Gandhi's Book Launch",
+    "Wanted to set the record straight, says Sonia Gandhi at official launch of memoir"
+   ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261117-Q132726",
+   "qid": "Q132726",
+   "title": "Yamuna",
+   "name": "Yamuna",
+   "phrase": "Yamuna",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+   "story_keys": [
+    "cleaning",
+    "despite",
+    "expenditure",
+    "huge",
+    "increased",
+    "penaltie",
+    "polluted'",
+    "pollution",
+    "spent",
+    "sums",
+    "warn",
+    "yet"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T01:13:07+00:00",
+   "owners": [
+    "Network18",
+    "The Hindu Group",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 300000,
+   "news": 300000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
+    "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+    "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_headlines": [
+    "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
+    "यमुना का पानी खराब हुआ तो राज्यों पर लगेगा भारी जुर्माना, सुप्रीम कोर्ट सख्त",
+    "'अब जुर्माना लगाएंगे' करोड़ों रुपये खर्च कर भी मैली रही यमुना, सुप्रीम कोर्ट ने दे दी सख्त चेतावनी",
+    "'यह AI नहीं, यमुना है': दिल्ली में 'जहरीले झाग' के बीच छठ पूजा पर AAP और BJP सियासी तकरार"
+   ],
+   "hindi_news": 4,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "यमुना",
+   "reports": [
+    {
+     "title": "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
+     "url": "https://www.hindustantimes.com/india-news/should-be-held-accountable-penalised-sc-warns-states-uts-and-districts-of-fines-over-yamuna-pollution-101794877217271.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T01:13:07+00:00"
+    },
+    {
+     "title": "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
+     "url": "https://www.indiatoday.in/programme/5ive-live/video/yamuna-turns-toxic-during-chhath-puja-supreme-court-flags-delhis-pollution-crisis-3040220-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T15:30:07+00:00"
+    },
+    {
+     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+     "url": "https://www.hindustantimes.com/india-news/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court-101794832111722.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:00:15+00:00"
+    },
+    {
+     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
+     "url": "https://www.thehindu.com/news/cities/Delhi/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court/article71707841.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:35:59+00:00"
+    },
+    {
+     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
+     "url": "https://www.news18.com/videos/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-news18-10427935.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:08:48+00:00"
+    },
+    {
+     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
+     "url": "https://www.news18.com/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-ws-l-10427783.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T11:35:39+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:The Hindu Group",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ...",
+    "google-news:Chhath Puja: Despite politics over Yamuna, Delhi stretch of river continues to be polluted",
+    "google-news:'यह AI नहीं, यमुना है': दिल्ली में 'जहरीले झाग' के बीच छठ पूजा पर AAP और BJP सियासी तकरार"
+   ],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "'Despite Huge Sums Spent On Cleaning Yamuna, Pollution Has Only Increased', Supreme Court Warns Penalties ..."
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261117-Q2377884",
+   "qid": "Q2377884",
+   "title": "Tata Sons",
+   "name": "Tata Sons",
+   "phrase": "Tata Sons",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+   "story_keys": [
+    "accuse",
+    "back",
+    "back-door",
+    "comply",
+    "listing",
+    "takeover’",
+    "tell"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T03:19:24+00:00",
+   "owners": [
+    "Indian Express Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "The Hindu Group",
+    "NDTV"
+   ],
+   "fame": 250000,
+   "news": 250000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+    "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
+    "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
+    "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
+    "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
+    "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’"
+   ],
+   "hindi_headlines": [
+    "टाटा संस पर फिर सख्त हुआ RBI, कहा- अपर लेयर NBFC नियमों के तहत लिस्टिंग जरूरी, क्या अब शेयर बाजार में उतरेगी कंपनी?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "टाटा संस",
+   "reports": [
+    {
+     "title": "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’",
+     "url": "https://www.thehindu.com/business/Industry/jimmy-tata-backs-tata-sons-listing-accuses-noel-of-back-door-takeover/article71708314.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T03:19:24+00:00"
+    },
+    {
+     "title": "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
+     "url": "https://timesofindia.indiatimes.com/business/india-business/tata-sons-facing-back-door-takeover-warns-jimmy-tata/articleshow/135905376.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T23:47:13+00:00"
+    },
+    {
+     "title": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
+     "url": "https://www.livemint.com/news/jimmy-tata-accuses-noel-of-a-back-door-takeover-of-tata-sons-backs-listing-11794850273823.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T18:14:09+00:00"
+    },
+    {
+     "title": "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
+     "url": "https://www.livemint.com/news/rbi-tells-tata-sons-to-comply-with-upper-layer-nbfc-rules-including-listing-11794844359846.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T17:07:35+00:00"
+    },
+    {
+     "title": "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
+     "url": "https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:53:31+00:00"
+    },
+    {
+     "title": "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
+     "url": "https://indianexpress.com/article/business/ratan-tata-brother-jimmy-tata-sons-listing-chandra-10964880/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T05:58:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "google-news:RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "RBI reiterates listing mandate for Tata Sons, seeks compliance with norms"
+   ],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "paisa"
+  },
+  {
+   "id": "kh-20261117-Q41254",
+   "qid": "Q41254",
+   "title": "Grammy Awards",
+   "name": "Grammy Awards",
+   "phrase": "Grammy",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+   "story_keys": [
+    "lead",
+    "nomination",
+    "raye",
+    "rosal"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-17T03:17:13+00:00",
+   "owners": [
+    "BBC",
+    "The Hindu Group",
+    "Deutsche Welle",
+    "Bennett, Coleman & Co."
+   ],
+   "fame": 225000,
+   "news": 225000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+    "Grammy Awards: Raye and Rosalia lead nominations",
+    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+    "Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "ग्रैमी पुरस्कार",
+   "reports": [
+    {
+     "title": "Grammy Awards: Raye and Rosalia lead nominations",
+     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
+     "outlet": "DW",
+     "outlet_hi": "डीडब्ल्यू",
+     "owner": "Deutsche Welle",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-16T18:14:00+00:00"
+    },
+    {
+     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
+     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-16T14:48:55+00:00"
+    },
+    {
+     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
+     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T03:17:13+00:00"
+    },
+    {
+     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
+     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T16:14:19+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:The Hindu Group",
+    "outlet:Deutsche Welle",
+    "outlet:Bennett, Coleman & Co.",
+    "google-news:Grammy 2027 nominations announced | Bruno Mars received 6 nominations | Inshorts"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261117-Q1058",
+   "qid": "Q1058",
+   "title": "Narendra Modi",
+   "name": "Narendra Modi",
+   "phrase": "PM Modi",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+   "story_keys": [
+    "attire",
+    "dinner",
+    "gala",
+    "news",
+    "summit",
+    "traditional"
+   ],
+   "date": "2026-11-16",
+   "news_at": "2026-11-16T23:42:03+00:00",
+   "owners": [
+    "Network18",
+    "HT Media",
+    "India Today Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नरेन्द्र मोदी",
+   "reports": [
+    {
+     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
+     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T15:26:07+00:00"
+    },
+    {
+     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
+     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:34:50+00:00"
+    },
+    {
+     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
+     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T13:07:04+00:00"
+    },
+    {
+     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
+     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T12:39:52+00:00"
+    },
+    {
+     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
+     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-16T09:38:46+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:India Today Group",
+    "google-news:PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "PM Modi visits Gurudwara Khalsa Diwan in Manila, offers prayers"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q182477",
@@ -3960,468 +4342,11 @@
     "outlet:HT Media",
     "outlet:Amar Ujala"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "Amar Ujala"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q2377884",
-   "qid": "Q2377884",
-   "title": "Tata Sons",
-   "name": "Tata Sons",
-   "phrase": "Tata Sons",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-   "story_keys": [
-    "accuse",
-    "back",
-    "back-door",
-    "comply",
-    "listing",
-    "takeover’",
-    "tell"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T03:19:24+00:00",
-   "owners": [
-    "Indian Express Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-    "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
-    "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
-    "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
-    "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
-    "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’"
-   ],
-   "hindi_headlines": [
-    "टाटा संस पर फिर सख्त हुआ RBI, कहा- अपर लेयर NBFC नियमों के तहत लिस्टिंग जरूरी, क्या अब शेयर बाजार में उतरेगी कंपनी?"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "टाटा संस",
-   "reports": [
-    {
-     "title": "Jimmy Tata backs Tata Sons listing, accuses Noel of ‘back-door takeover’",
-     "url": "https://www.thehindu.com/business/Industry/jimmy-tata-backs-tata-sons-listing-accuses-noel-of-back-door-takeover/article71708314.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:19:24+00:00"
-    },
-    {
-     "title": "Jimmy flags ‘back-door takeover’ of Tata Sons by Trusts, supports Chandra & listing",
-     "url": "https://timesofindia.indiatimes.com/business/india-business/tata-sons-facing-back-door-takeover-warns-jimmy-tata/articleshow/135905376.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T23:47:13+00:00"
-    },
-    {
-     "title": "Jimmy Tata accuses Noel of a ‘back-door takeover’ of Tata Sons, backs listing",
-     "url": "https://www.livemint.com/news/jimmy-tata-accuses-noel-of-a-back-door-takeover-of-tata-sons-backs-listing-11794850273823.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T18:14:09+00:00"
-    },
-    {
-     "title": "RBI tells Tata Sons to comply with upper-layer NBFC rules, including listing",
-     "url": "https://www.livemint.com/news/rbi-tells-tata-sons-to-comply-with-upper-layer-nbfc-rules-including-listing-11794844359846.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T17:07:35+00:00"
-    },
-    {
-     "title": "RBI reiterates Tata Sons listing requirement, leaves little room for manoeuvre",
-     "url": "https://indianexpress.com/article/business/rbi-reiterates-demand-listing-tata-sons-nbfc-noel-tata-n-chandrasekaran-upper-layer-norms-group-rift-10965810/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:53:31+00:00"
-    },
-    {
-     "title": "Ratan Tata’s brother Jimmy backs Tata Sons listing, Chandra reappointment",
-     "url": "https://indianexpress.com/article/business/ratan-tata-brother-jimmy-tata-sons-listing-chandra-10964880/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T05:58:50+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "paisa"
-  },
-  {
-   "id": "kh-20261117-Q132726",
-   "qid": "Q132726",
-   "title": "Yamuna",
-   "name": "Yamuna",
-   "phrase": "Yamuna",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-   "story_keys": [
-    "cleaning",
-    "despite",
-    "expenditure",
-    "huge",
-    "increased",
-    "penaltie",
-    "polluted'",
-    "pollution",
-    "spent",
-    "sums",
-    "warn",
-    "yet"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T01:13:07+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-    "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
-    "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-    "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
-    "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution"
-   ],
-   "hindi_headlines": [
-    "Delhi में छठ के बाद जहरीले झाग से ढकी यमुना!",
-    "यमुना का पानी खराब हुआ तो राज्यों पर लगेगा भारी जुर्माना, सुप्रीम कोर्ट सख्त",
-    "'अब जुर्माना लगाएंगे' करोड़ों रुपये खर्च कर भी मैली रही यमुना, सुप्रीम कोर्ट ने दे दी सख्त चेतावनी"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "यमुना",
-   "reports": [
-    {
-     "title": "‘Should be held accountable, penalised’: SC warns states, UTs and districts of fines over Yamuna pollution",
-     "url": "https://www.hindustantimes.com/india-news/should-be-held-accountable-penalised-sc-warns-states-uts-and-districts-of-fines-over-yamuna-pollution-101794877217271.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:13:07+00:00"
-    },
-    {
-     "title": "Yamuna turns toxic during Chhath Puja; Supreme Court flags Delhi's pollution crisis",
-     "url": "https://www.indiatoday.in/programme/5ive-live/video/yamuna-turns-toxic-during-chhath-puja-supreme-court-flags-delhis-pollution-crisis-3040220-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T15:30:07+00:00"
-    },
-    {
-     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-     "url": "https://www.hindustantimes.com/india-news/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court-101794832111722.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:00:15+00:00"
-    },
-    {
-     "title": "Pollution in Yamuna increased despite huge expenditure on cleaning: Supreme Court",
-     "url": "https://www.thehindu.com/news/cities/Delhi/pollution-in-yamuna-increased-despite-huge-expenditure-on-cleaning-supreme-court/article71707841.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:35:59+00:00"
-    },
-    {
-     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties | News18",
-     "url": "https://www.news18.com/videos/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-news18-10427935.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:08:48+00:00"
-    },
-    {
-     "title": "'Huge Sums Spent, Yet Yamuna More Polluted': Supreme Court Warns States Of Penalties",
-     "url": "https://www.news18.com/india/huge-sums-spent-yet-yamuna-more-polluted-supreme-court-warns-states-of-penalties-ws-l-10427783.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T11:35:39+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261117-Q41254",
-   "qid": "Q41254",
-   "title": "Grammy Awards",
-   "name": "Grammy Awards",
-   "phrase": "Grammy",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-   "story_keys": [
-    "lead",
-    "nomination",
-    "raye",
-    "rosal"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T03:17:13+00:00",
-   "owners": [
-    "BBC",
-    "The Hindu Group",
-    "Deutsche Welle",
-    "Bennett, Coleman & Co."
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-    "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-    "Grammy Awards: Raye and Rosalia lead nominations",
-    "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "ग्रैमी पुरस्कार",
-   "reports": [
-    {
-     "title": "Grammy Awards: Raye and Rosalia lead nominations",
-     "url": "https://www.dw.com/en/grammy-awards-raye-and-rosalia-lead-nominations/a-79961198?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T18:14:00+00:00"
-    },
-    {
-     "title": "Raye, Rosalía and Dolly Parton recognised in Grammy nominations",
-     "url": "https://www.bbc.co.uk/news/articles/cq9vwkggpx73o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-16T14:48:55+00:00"
-    },
-    {
-     "title": "Miley Cyrus expresses gratitude for the joint Grammy 2027 nomination with Dolly Parton",
-     "url": "https://timesofindia.indiatimes.com/entertainment/english/music/news/grammy-2027-miley-cyrus-reacts-to-scoring-nomination-with-dolly-parton-says-its-a-beautiful-way-to-honour-her-enormous-heart/articleshow/135908712.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:17:13+00:00"
-    },
-    {
-     "title": "Raye leads 2027 Grammy nominations, followed by Rosalía, Ella Langley, Olivia Rodrigo and more",
-     "url": "https://www.thehindu.com/entertainment/music/raye-leads-2027-grammy-nominations-followed-by-rosalia-ella-langley-olivia-rodrigo-and-more/article71709052.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T16:14:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:The Hindu Group",
-    "outlet:Deutsche Welle",
-    "outlet:Bennett, Coleman & Co."
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q2283",
-   "qid": "Q2283",
-   "title": "Microsoft",
-   "name": "Microsoft",
-   "phrase": "Microsoft",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "US banks face online outage days after major Microsoft disruption",
-   "story_keys": [
-    "bank",
-    "outage",
-    "system"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-17T05:17:14+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "NDTV",
-    "India Today Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "US banks face online outage days after major Microsoft disruption",
-    "Outlook outage: On Microsoft and dangers of centralising digital systems",
-    "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-    "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages"
-   ],
-   "hindi_headlines": [
-    "7 दिन में तीसरा टेक्निकल लोचा, पहले माइक्रोसॉफ्ट और अब अमेरिकी बैंक ठप"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "माइक्रोसॉफ़्ट",
-   "reports": [
-    {
-     "title": "Nightmare November for tech: Microsoft, banks, airlines and more hit by outages",
-     "url": "https://www.indiatoday.in/technology/news/story/nightmare-november-for-tech-microsoft-banks-airlines-and-more-hit-by-outages-3040459-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:17:14+00:00"
-    },
-    {
-     "title": "Microsoft, Then Flights, Now Banks: What Disrupted US Financial System",
-     "url": "https://www.ndtv.com/world-news/microsoft-then-flights-now-banks-what-disrupted-us-jpmorgan-chase-bank-of-america-zelle-12336337#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T02:24:58+00:00"
-    },
-    {
-     "title": "Outlook outage: On Microsoft and dangers of centralising digital systems",
-     "url": "https://www.thehindu.com/opinion/editorial/outlook-outage-the-hindu-editorial-on-microsoft-and-dangers-of-centralising-systems/article71708179.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T20:00:40+00:00"
-    },
-    {
-     "title": "US banks face online outage days after major Microsoft disruption",
-     "url": "https://timesofindia.indiatimes.com/technology/tech-news/customers-of-bank-of-america-chase-jp-morgan-wells-fargo-and-zelle-report-issues-accessing-accounts-online/articleshow/135901095.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T19:11:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [
-    "India Today Group"
    ],
    "audience": "india",
    "lane": "other"
@@ -4517,124 +4442,14 @@
     "outlet:Guardian Media Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
     "NDTV"
    ],
    "audience": "india",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261117-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-   "story_keys": [
-    "attire",
-    "dinner",
-    "gala",
-    "news",
-    "summit",
-    "traditional"
-   ],
-   "date": "2026-11-16",
-   "news_at": "2026-11-16T23:42:03+00:00",
-   "owners": [
-    "Network18",
-    "HT Media",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-    "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-    "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-    "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-    "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
-   "reports": [
-    {
-     "title": "PM Modi trades his signature kurta for a traditional Filipino attire, Barong Tagalog",
-     "url": "https://www.indiatoday.in/lifestyle/fashion/story/pm-narendra-modi-wears-barong-tagalog-at-asean-summit-gala-dinner-manila-philippines-3040182-2026-11-16?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T15:26:07+00:00"
-    },
-    {
-     "title": "PM Modi dons traditional Philippines attire for President's gala dinner, watches Ramayana performance in Manila",
-     "url": "https://www.hindustantimes.com/india-news/pm-modi-attends-manila-gala-dinner-hosted-by-philippines-president-dons-traditional-attire-barong-tagalog-ramayana-101794832785156.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:34:50+00:00"
-    },
-    {
-     "title": "PM Modi Wears Traditional Filipino Attire At Manila Gala Dinner Ahead Of ASEAN Summit",
-     "url": "https://www.news18.com/india/pm-modi-wears-traditional-filipino-attire-at-manila-gala-dinner-ahead-of-asean-summit-10427979.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T13:07:04+00:00"
-    },
-    {
-     "title": "ASEAN Summit 2026: PM Modi And Global Leaders Attend Philippines President's Gala Dinner | News18",
-     "url": "https://www.news18.com/videos/world/asean-summit-2026-pm-modi-and-global-leaders-attend-philippines-president-s-gala-dinner-news18-10427972.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T12:39:52+00:00"
-    },
-    {
-     "title": "PM Modi Arrives In Manila: ASEAN Summit, Quad Meet & Indo-Pacific Strategy In Focus | News18",
-     "url": "https://www.news18.com/videos/breaking-news/pm-modi-arrives-in-manila-asean-summit-quad-meet-indo-pacific-strategy-in-focus-news18-10427585.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-16T09:38:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:India Today Group"
-   ],
-   "top": null,
-   "top_score": null,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261117-Q396412",
@@ -4713,8 +4528,8 @@
     "outlet:India Today Group",
     "outlet:NDTV"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
@@ -4797,8 +4612,8 @@
     "outlet:Network18",
     "outlet:The Hindu Group"
    ],
-   "top": null,
-   "top_score": null,
+   "top": {},
+   "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
