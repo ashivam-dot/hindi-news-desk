@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-17T15:48:42+00:00. Scored Shorts (views at 24 h): 159. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-17T18:49:34+00:00. Scored Shorts (views at 24 h): 159. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 42 views at 24 h.
 Retention: a typical Short is watched 53.9% through; a group's retention is blended into its lift at 0.5.
@@ -25,10 +25,10 @@ Retention: a typical Short is watched 53.9% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 211 |  |  |
-| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 10 | 5 |  |
-| kh-20261117-Q132726 | 2026-11-17T01:48 | court | india | naam-niyam | india | 25 | 7 |  |
-| kh-20261116-Q10230 | 2026-11-16T07:54 | news | india | sensitive | india | 20 | 12 | 17 |
+| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 288 | 227 |  |
+| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 13 | 5 |  |
+| kh-20261117-Q132726 | 2026-11-17T01:48 | court | india | naam-niyam | india | 32 | 7 |  |
+| kh-20261116-Q10230 | 2026-11-16T07:54 | news | india | sensitive | india | 29 | 12 | 17 |
 | kh-20261116-Q7768 | 2026-11-16T05:40 | diplomacy | world | other | india | 1 | 0 | 1 |
 | kh-20261116-Q37293-update | 2026-11-16T02:10 | entertainment | world | naam-niyam | india | 11 | 3 | 11 |
 | kh-20261115-Q1538 | 2026-11-15T08:20 | aviation | india | sensitive | india | 84 | 41 | 47 |
