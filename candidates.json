@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T01:32:29+00:00",
+ "at": "2026-11-18T02:20:20+00:00",
  "trending": [
   {
    "id": "kh-20261118-Q305177",
@@ -26,14 +26,14 @@
     "rule"
    ],
    "date": "2026-11-17",
-   "news_at": "2026-11-17T23:55:37+00:00",
+   "news_at": "2026-11-18T00:33:57+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
     "India Today Group",
     "France Médias Monde",
     "Guardian Media Group",
-    "NDTV"
+    "NDTV",
+    "The Hindu Group"
    ],
    "fame": 350000,
    "news": 350000,
@@ -42,10 +42,10 @@
    "headlines": [
     "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
     "'I own my mistakes': Jensen Huang breaks silence on return as CEO after Nvidia scandal",
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
     "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
     "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
-    "Nvidia board rules out Jensen Huang reinstatement after he says ready to return"
+    "Nvidia rules out rehiring Jensen Huang after he says ready to return",
+    "Nvidia chairman rules out Jensen Huang's return; company doubles revenue"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -86,6 +86,16 @@
      "at": "2026-11-17T23:32:16+00:00"
     },
     {
+     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T00:33:57+00:00"
+    },
+    {
      "title": "Jensen Huang 'Ready To Return', Nvidia Chairman Says Will Not Reinstate Him",
      "url": "https://www.ndtv.com/world-news/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo-12341411#publisher=newsstand",
      "outlet": "NDTV",
@@ -106,7 +116,7 @@
      "at": "2026-11-17T23:07:26+00:00"
     },
     {
-     "title": "Nvidia board rules out Jensen Huang reinstatement after he says ready to return",
+     "title": "Nvidia rules out rehiring Jensen Huang after he says ready to return",
      "url": "https://www.indiatoday.in/world/story/no-comeback-for-jensen-huang-nvidia-chairman-rules-out-return-as-ceo-3041166-2026-11-18?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -124,34 +134,24 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T18:43:08+00:00"
-    },
-    {
-     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T18:17:12+00:00"
     }
    ],
    "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:France Médias Monde",
     "outlet:Guardian Media Group",
     "outlet:NDTV",
-    "google-news:Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+    "outlet:The Hindu Group",
+    "google-news:'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
     "google-news:Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
    ],
    "top": {
-    "IN": 3
+    "IN": 4
    },
-   "top_score": 0.9,
+   "top_score": 0.85,
    "top_headlines": [
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+    "'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
     "Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
    ],
    "hindi_owners": [],
@@ -159,113 +159,90 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261118-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "At Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-   "story_keys": [
-    "first",
-    "met",
-    "parent",
-    "restaurant"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T05:27:32+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "BBC",
-    "India Today Group"
-   ],
-   "fame": 325000,
-   "news": 325000,
+   "qid": "Q142193498",
+   "title": "2026 Crimean Bridge explosions",
+   "fame": 300000,
    "views": 0,
    "traffic": 0,
+   "news": 300000,
+   "news_at": "2026-11-18T00:41:21+00:00",
    "headlines": [
-    "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-    "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-    "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-    "Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\""
+    "Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet",
+    "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
+    "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
    ],
-   "hindi_headlines": [
-    "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
-    "सोनिया गांधी को कौन-कौन से भारतीय व्यंजन पसंद हैं? खुद खोला राज",
-    "सोनिया गांधी की किताब के लॉन्च में बीजेपी नेता अमरिंदर सिंह, इस मंत्री का आ गया बयान, क्या कांग्रेस में होगी वापसी?",
-    "सोनिया गांधी के बुक लॉन्च में पहुंचे कैप्टन अमरिंदर सिंह, क्या बोली बीजेपी?",
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है"
-   ],
-   "hindi_news": 7,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
    "india_link": true,
-   "abroad": false,
-   "label_hi": "सोनिया गाँधी",
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet",
+    "google-news:How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
+    "google-news:Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "BBC"
+   ],
    "reports": [
     {
-     "title": "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-     "url": "https://indianexpress.com/article/india/rahul-sonia-gandhi-memoir-belonging-rajiv-varsity-restaurant-10966208/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+     "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T05:27:32+00:00"
+     "at": "2026-11-18T00:41:21+00:00"
     },
     {
-     "title": "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-     "url": "https://www.news18.com/india/shes-a-friend-now-rahul-gandhis-recounts-cambridge-date-at-restaurant-where-his-parents-first-met-ws-l-10428424.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
+     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-17T05:00:30+00:00"
+     "at": "2026-11-17T21:24:35+00:00"
     },
     {
-     "title": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-     "url": "https://www.hindustantimes.com/india-news/went-with-girlfriend-to-cambridge-restaurant-where-parents-first-met-rahul-gandhi-the-varsity-sonia-gandhi-book-launch-rajiv-gandhi-101794886157401.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
+     "title": "How the attack on Crimean Bridge unfolded",
+     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
      "lang": "en",
-     "at": "2026-11-17T04:54:59+00:00"
+     "at": "2026-11-17T15:38:10+00:00"
     }
    ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "google-news:Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\"",
-    "google-news:सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "google-news:सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या"
+   "id": "wk-Q142193498",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-11-16",
+   "coords": [
+    45.308617,
+    36.505798
    ],
+   "has_coords": true,
    "top": {
-    "IN": 4,
-    "IN-nation": 5,
-    "IN-hi-nation": 8
+    "IN": 11
    },
-   "top_score": 1.285,
+   "top_score": 0.5,
    "top_headlines": [
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या",
-    "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
-    "As a true Hindu...: Rahul Gandhi jabs BJP-RSS over Mama on Papa's lap remark row"
+    "Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet"
    ],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "naam-niyam"
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261118-Q396412",
@@ -280,7 +257,6 @@
    "story": "IPL 2027 retention: Full list of retained, released players and remaining purse of all 10 teams",
    "story_keys": [
     "all",
-    "highlight",
     "list",
     "player",
     "purse",
@@ -332,24 +308,14 @@
      "at": "2026-11-17T19:21:53+00:00"
     },
     {
-     "title": "IPL 2027 Auction: Purse Remaining For Each Team After Retention Announcement",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-auction-purse-remaining-for-each-team-after-retention-announcement-csk-mi-rcb-kkr-rr-srh-pbks-dc-gt-lsg-12340163#publisher=newsstand",
+     "title": "\"Confident About Turning Delhi Capitals' Fortunes Around\": Head Coach Sourav Ganguly After IPL Retention",
+     "url": "https://sports.ndtv.com/ipl-2027/confident-about-turning-delhi-capitals-fortunes-around-head-coach-sourav-ganguly-after-ipl-retention-12340678#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T18:16:56+00:00"
-    },
-    {
-     "title": "IPL 2027 Retention Highlights: Full Retention List Out. MI Release Two Big Names, KKR Let Go Of Rs 18 Crore Star",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-retention-live-updates-retained-released-players-team-wise-list-yashasvi-jaiswal-kkr-csk-rcb-mi-pbks-12336728#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:54:30+00:00"
+     "at": "2026-11-17T18:34:05+00:00"
     },
     {
      "title": "IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends",
@@ -400,6 +366,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T15:34:55+00:00"
+    },
+    {
+     "title": "IPL 2027: Mumbai Indians retention list, released players and remaining purse",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2027-mumbai-indians-retention-list-released-players-and-remaining-purse/articleshow/135930108.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T14:48:26+00:00"
     }
    ],
    "via": [
@@ -408,7 +384,7 @@
     "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends"
+    "google-news:IPL 2027 retention: All players retained and released"
    ],
    "top": {},
    "top_score": 0.0,
@@ -441,10 +417,11 @@
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
+    "India Today Group",
     "Amar Ujala"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -455,9 +432,10 @@
     "British actor Robert Pattinson named as new James Bond"
    ],
    "hindi_headlines": [
+    "कभी वैम्पायर फिर बैटमैन, अब जेम्स बॉन्ड बनकर छाएंगे रॉबर्ट पैटिनसन!",
     "रॉबर्ट पैटिनसन: जेम्स बॉन्ड बनने पर क्या बोले अभिनेता? शाही परिवार ने किया स्वागत, नेटिजंस ने दिया ऐसा रिएक्शन"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -509,8 +487,134 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
     "outlet:Amar Ujala",
     "google-news:British actor Robert Pattinson named as new James Bond"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "India Today Group"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261118-Q470774",
+   "qid": "Q470774",
+   "title": "MS Dhoni",
+   "name": "MS Dhoni",
+   "phrase": "MS Dhoni",
+   "person": true,
+   "kind": "explainer",
+   "category": "sport",
+   "category_hi": "खेल",
+   "story": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+   "story_keys": [
+    "retention",
+    "retirement"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T01:55:44+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
+    "Network18"
+   ],
+   "fame": 125000,
+   "news": 125000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+    "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+    "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+    "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+    "MS Dhoni's first reaction after CSK retirement",
+    "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet"
+   ],
+   "hindi_headlines": [
+    "महेंद्र सिंह धोनी बतौर मेंटोर हो चुके है फेल, 2021 में टीम इंडिया के साथ किया था काम, चेन्नई सुपर किंग्स के लिए कैसे करेंगे चमत्कार?"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "महेंद्र सिंह धोनी",
+   "reports": [
+    {
+     "title": "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet",
+     "url": "https://sports.ndtv.com/cricket/wife-sakshis-emotional-post-after-ms-dhonis-ipl-retirement-breaks-the-internet-12341652#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T01:55:44+00:00"
+    },
+    {
+     "title": "MS Dhoni's first reaction after CSK retirement",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/mai-har-ek-pal-ka-shayar-hu-ms-dhonis-first-reaction-after-csk-retirement-shares-heartfelt-instagram-post/articleshow/135927055.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:17:40+00:00"
+    },
+    {
+     "title": "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-instagram-post-song-ipl-retirement-main-pal-do-pal-3040905-2026-11-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:04:59+00:00"
+    },
+    {
+     "title": "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-retirement-mumbai-indians-ipl-tributes-rohit-sharma-csk-mentor-3040882-2026-11-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:58:31+00:00"
+    },
+    {
+     "title": "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/there-is-no-csk-without-ms-dhoni-n-srinivasans-emotional-message-calls-signing-thala-in-2008-his-best-decision/articleshow/135919783.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T09:59:54+00:00"
+    },
+    {
+     "title": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+     "url": "https://www.hindustantimes.com/cricket/ms-dhonis-uncertain-ipl-future-how-a-possible-retirement-could-affect-csks-retentions-and-auction-budget-for-2027-101794889591990.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T04:38:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "outlet:Network18"
    ],
    "top": {},
    "top_score": 0.0,
@@ -529,22 +633,21 @@
    "date": "2026-11-17",
    "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
     "BBC",
     "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Russia military transport plane crashes in Siberia, all 17 on board killed",
     "17 killed after Russian military aircraft crashes in Siberia's Kemerovo region",
     "19 Killed As Russian Military Transport Plane Crashes In Siberia",
     "Russian military plane crashes, killing all 19 on board",
-    "Moment Russian military plane crashes in Siberia, killing 19"
+    "Moment Russian military plane crashes in Siberia, killing 19",
+    "Russian military plane crash in Siberia kills 19"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -604,20 +707,9 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T18:40:28+00:00"
-    },
-    {
-     "title": "Russia military transport plane crashes in Siberia, all 17 on board killed",
-     "url": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:36:38+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:BBC",
@@ -625,449 +717,16 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "19 Killed As Russian Military Transport Plane Crashes In Siberia"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
-  },
-  {
-   "id": "kh-20261118-Q1159",
-   "qid": "Q1159",
-   "title": "Andhra Pradesh",
-   "name": "Andhra Pradesh",
-   "phrase": "Andhra",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-   "story_keys": [
-    "evacuated",
-    "gas",
-    "leak",
-    "panic",
-    "trigger"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T06:41:48+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "DB Corp",
-    "India Today Group"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-    "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-    "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-    "Gas leak sparks panic in Andhra Pradesh, villages evacuated"
-   ],
-   "hindi_headlines": [
-    "Cyclone Akvan LIVE Updates: 'अकवान' तूफान के खतरे से हड़कंप! आंध्र प्रदेश में भारी तबाही की आशंका, ओडिशा से 2 लाख लोग होंगे शिफ्ट",
-    "चक्रवात अकवान आंध्र प्रदेश की ओर बढ़ा:तीन राज्यों में बारिश का अलर्ट, बद्रीनाथ में नदी जमी, दिल्ली में AQI 333 तक पहुंचा",
-    "आंध्र प्रदेश की तरफ क्यों आ रहा तीसरा साइक्लोन? IMD ने बताई वजह"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "आन्ध्र प्रदेश",
-   "reports": [
-    {
-     "title": "Gas leak sparks panic in Andhra Pradesh, villages evacuated",
-     "url": "https://indianexpress.com/article/india/gas-leak-at-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-10966374/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:41:48+00:00"
-    },
-    {
-     "title": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-     "url": "https://www.news18.com/india/ongc-gas-leak-triggers-panic-in-andhra-pradesh-residents-within-1-km-radius-evacuated-ws-l-10428539.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:11:00+00:00"
-    },
-    {
-     "title": "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-     "url": "https://www.livemint.com/news/india/andhra-gas-leak-ongc-well-incident-triggers-safety-alert-in-konaseema-district-11794891525548.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:05:19+00:00"
-    },
-    {
-     "title": "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-     "url": "https://www.hindustantimes.com/india-news/major-gas-leak-from-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-101794885034474.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:15:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:DB Corp",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "DB Corp"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
-   "id": "nw-20261116-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone 'Akvan' updates: Akvan stationary, likely to move slowly north-northwestwards",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-16",
-   "news_at": "2026-11-18T01:20:04+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Cyclone Akvan likely to intensify into ‘very severe’ storm, hit Andhra coast on November 20: IMD",
-    "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
-    "Cyclone Akvan: Odisha govt steps up precautionary measures in flood-hit Ganjam",
-    "HT morning news brief Nov 17: Cyclone Akvan likely to turn 'severe' today; Gangster Goldy Dhillon's death threats to Amitabh Bachchan",
-    "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone 'Akvan' updates: Akvan stationary, likely to move slowly north-northwestwards",
-     "url": "https://www.thehindu.com/news/national/cyclone-akvan-cyclonic-storm-forms-over-bay-of-bengal-andhra-pradesh-november-17-2026-live-updates/article71710277.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T01:20:04+00:00"
-    },
-    {
-     "title": "Cyclone Akvan moves slowly, likely to intensify further by November 18 morning",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-akvan-moves-slowly-likely-to-intensify-further-by-november-18-morning/article71712487.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:35:17+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: RMC forecasts moderate rainfall for Chennai on Wednesday",
-     "url": "https://www.thehindu.com/news/cities/chennai/cyclone-akvan-rmc-forecasts-moderate-rainfall-for-chennai-on-wednesday/article71712804.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:29:48+00:00"
-    },
-    {
-     "title": "Delhi-NCR temperatures to drop, Cyclone Akvan to intensify on Wednesday",
-     "url": "https://www.indiatoday.in/science/story/imd-weather-forecast-november-18-cyclone-akvan-delhi-3040761-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T14:00:00+00:00"
-    },
-    {
-     "title": "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm",
-     "url": "https://www.news18.com/explainers/cyclone-akvan-after-murasu-arnab-why-bay-of-bengal-remains-in-the-eye-of-the-storm-ws-elrt-10427790.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:15:00+00:00"
-    },
-    {
-     "title": "HT morning news brief Nov 17: Cyclone Akvan likely to turn 'severe' today; Gangster Goldy Dhillon's death threats to Amitabh Bachchan",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-news-brief-november-17-cyclone-akvan-amitabh-bachchan-death-threats-ipl-2027-us-iran-war-jpmorgan-chase-banks-101794885957909.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:34:04+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: Odisha govt steps up precautionary measures in flood-hit Ganjam",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-akvan-odisha-govt-steps-up-precautionary-measures-in-flood-hit-ganjam-101794885124867.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:13:00+00:00"
-    },
-    {
-     "title": "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
-     "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:47:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 9,
-    "IN-nation": 4
-   },
-   "top_score": 0.855,
-   "top_headlines": [
-    "Cyclone Akvan: Meaning, Origin, And Why Iran Named Latest Bay Of Bengal Storm"
-   ],
-   "hindi_owners": [
-    "Network18",
-    "DB Corp"
-   ]
-  },
-  {
-   "id": "nw-20261117-uttarakhand-accident",
-   "qid": null,
-   "title": "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal",
-   "name": "Uttarakhand",
-   "kind": "incident",
-   "category": "accident",
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T17:21:23+00:00",
-   "owners": [
-    "HT Media",
-    "Indian Express Group",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "6 killed after vehicle falls into deep gorge on Banswada-Mohankhal road in Uttarakhand's Rudraprayag",
-    "9 killed, up to 30 injured as bus plunges into gorge in Uttarakhand",
-    "8 Killed, 26 Injured As Bus Plunges Into Gorge In Uttarakhand's Tehri; Survivor Alleges Driver Was Speeding",
-    "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal",
-     "url": "https://www.thehindu.com/news/national/uttarakhand/bus-plunges-into-100-metre-gorge-in-uttarakhand-tehri-garhwal-casualties/article71710325.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:21:23+00:00"
-    },
-    {
-     "title": "8 Killed, 26 Injured As Bus Plunges Into Gorge In Uttarakhand's Tehri; Survivor Alleges Driver Was Speeding",
-     "url": "https://www.news18.com/india/uttarakhand-bus-accident-death-toll-bus-plunges-into-ravine-tehri-garhwal-gular-bazar-10428338.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:10:25+00:00"
-    },
-    {
-     "title": "9 killed, up to 30 injured as bus plunges into gorge in Uttarakhand",
-     "url": "https://indianexpress.com/article/india/bus-plunges-into-gorge-in-uttarakhand-tehri-garhwal-haridwar-dead-injuries-10966200/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:29:08+00:00"
-    },
-    {
-     "title": "6 killed after vehicle falls into deep gorge on Banswada-Mohankhal road in Uttarakhand's Rudraprayag",
-     "url": "https://www.hindustantimes.com/india-news/vehicle-falls-into-deep-gorge-on-banswada-mohankhal-road-in-uttarakhands-rudraprayag-death-toll-injured-101794885243290.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:18:36+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:Network18",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-nation": 18
-   },
-   "top_score": 0.09,
-   "top_headlines": [
-    "13 killed, 32 injured in two seperate accidents in Uttarakhand ; bus, bolero plunge into gorges"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261118-Q470774",
-   "qid": "Q470774",
-   "title": "MS Dhoni",
-   "name": "MS Dhoni",
-   "phrase": "MS Dhoni",
-   "person": true,
-   "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-   "story_keys": [
-    "ahead",
-    "retire"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T13:56:47+00:00",
-   "owners": [
-    "India Today Group",
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "Network18"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-    "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-    "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-    "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027"
-   ],
-   "hindi_headlines": [
-    "महेंद्र सिंह धोनी बतौर मेंटोर हो चुके है फेल, 2021 में टीम इंडिया के साथ किया था काम, चेन्नई सुपर किंग्स के लिए कैसे करेंगे चमत्कार?"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "महेंद्र सिंह धोनी",
-   "reports": [
-    {
-     "title": "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-at-csk-5-titles-10-finals-and-a-new-role-ahead-of-ipl-2027/articleshow/135920178.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T10:04:43+00:00"
-    },
-    {
-     "title": "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-retires-from-ipl-ahead-of-2027-season-to-be-csk-mentor/articleshow/135918991.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:30:39+00:00"
-    },
-    {
-     "title": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-     "url": "https://www.hindustantimes.com/cricket/ms-dhoni-retires-takes-up-csk-mentor-role-ahead-of-ipl-2027-101794907415538.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:26:53+00:00"
-    },
-    {
-     "title": "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-mentor-ipl-2027-chennai-super-kings-3040680-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:22:03+00:00"
-    }
-   ],
-   "via": [
-    "outlet:India Today Group",
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q796885",
@@ -1338,88 +997,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "qid": "Q142193498",
-   "title": "2026 Crimean Bridge explosions",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-11-18T00:41:21+00:00",
-   "headlines": [
-    "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-     "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T00:41:21+00:00"
-    },
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "How the attack on Crimean Bridge unfolded",
-     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T15:38:10+00:00"
-    }
-   ],
-   "id": "wk-Q142193498",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-11-16",
-   "coords": [
-    45.308617,
-    36.505798
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
   },
   {
    "qid": "Q141921562",
@@ -1612,115 +1189,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261118-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "At Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-   "story_keys": [
-    "first",
-    "met",
-    "parent",
-    "restaurant"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T05:27:32+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "BBC",
-    "India Today Group"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-    "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-    "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-    "Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\""
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
-    "सोनिया गांधी को कौन-कौन से भारतीय व्यंजन पसंद हैं? खुद खोला राज",
-    "सोनिया गांधी की किताब के लॉन्च में बीजेपी नेता अमरिंदर सिंह, इस मंत्री का आ गया बयान, क्या कांग्रेस में होगी वापसी?",
-    "सोनिया गांधी के बुक लॉन्च में पहुंचे कैप्टन अमरिंदर सिंह, क्या बोली बीजेपी?",
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है"
-   ],
-   "hindi_news": 7,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-     "url": "https://indianexpress.com/article/india/rahul-sonia-gandhi-memoir-belonging-rajiv-varsity-restaurant-10966208/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:27:32+00:00"
-    },
-    {
-     "title": "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-     "url": "https://www.news18.com/india/shes-a-friend-now-rahul-gandhis-recounts-cambridge-date-at-restaurant-where-his-parents-first-met-ws-l-10428424.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:00:30+00:00"
-    },
-    {
-     "title": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-     "url": "https://www.hindustantimes.com/india-news/went-with-girlfriend-to-cambridge-restaurant-where-parents-first-met-rahul-gandhi-the-varsity-sonia-gandhi-book-launch-rajiv-gandhi-101794886157401.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:54:59+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "google-news:Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\"",
-    "google-news:सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "google-news:सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 5,
-    "IN-hi-nation": 8
-   },
-   "top_score": 1.285,
-   "top_headlines": [
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या",
-    "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
-    "As a true Hindu...: Rahul Gandhi jabs BJP-RSS over Mama on Papa's lap remark row"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261118-Q396412",
    "qid": "Q396412",
    "title": "Indian Premier League",
@@ -1733,7 +1201,6 @@
    "story": "IPL 2027 retention: Full list of retained, released players and remaining purse of all 10 teams",
    "story_keys": [
     "all",
-    "highlight",
     "list",
     "player",
     "purse",
@@ -1785,24 +1252,14 @@
      "at": "2026-11-17T19:21:53+00:00"
     },
     {
-     "title": "IPL 2027 Auction: Purse Remaining For Each Team After Retention Announcement",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-auction-purse-remaining-for-each-team-after-retention-announcement-csk-mi-rcb-kkr-rr-srh-pbks-dc-gt-lsg-12340163#publisher=newsstand",
+     "title": "\"Confident About Turning Delhi Capitals' Fortunes Around\": Head Coach Sourav Ganguly After IPL Retention",
+     "url": "https://sports.ndtv.com/ipl-2027/confident-about-turning-delhi-capitals-fortunes-around-head-coach-sourav-ganguly-after-ipl-retention-12340678#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T18:16:56+00:00"
-    },
-    {
-     "title": "IPL 2027 Retention Highlights: Full Retention List Out. MI Release Two Big Names, KKR Let Go Of Rs 18 Crore Star",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-retention-live-updates-retained-released-players-team-wise-list-yashasvi-jaiswal-kkr-csk-rcb-mi-pbks-12336728#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:54:30+00:00"
+     "at": "2026-11-17T18:34:05+00:00"
     },
     {
      "title": "IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends",
@@ -1853,6 +1310,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T15:34:55+00:00"
+    },
+    {
+     "title": "IPL 2027: Mumbai Indians retention list, released players and remaining purse",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2027-mumbai-indians-retention-list-released-players-and-remaining-purse/articleshow/135930108.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T14:48:26+00:00"
     }
    ],
    "via": [
@@ -1861,7 +1328,7 @@
     "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends"
+    "google-news:IPL 2027 retention: All players retained and released"
    ],
    "top": {},
    "top_score": 0.0,
@@ -1869,163 +1336,6 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q305177",
-   "qid": "Q305177",
-   "title": "Jensen Huang",
-   "name": "Jensen Huang",
-   "phrase": "Jensen Huang",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
-   "story_keys": [
-    "board",
-    "chairman",
-    "company",
-    "double",
-    "not",
-    "out",
-    "ready",
-    "reinstate",
-    "return",
-    "revenue",
-    "rule"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T23:55:37+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "The Hindu Group",
-    "India Today Group",
-    "France Médias Monde",
-    "Guardian Media Group",
-    "NDTV"
-   ],
-   "fame": 350000,
-   "news": 350000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
-    "'I own my mistakes': Jensen Huang breaks silence on return as CEO after Nvidia scandal",
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-    "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
-    "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
-    "Nvidia board rules out Jensen Huang reinstatement after he says ready to return"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "जेन्सन हुआंग",
-   "reports": [
-    {
-     "title": "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
-     "url": "https://www.france24.com/en/technology/20261117-nvidia-board-rules-that-co-founder-jensen-huang-will-not-return-as-ceo",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T22:50:32+00:00"
-    },
-    {
-     "title": "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
-     "url": "https://www.france24.com/en/tv-shows/business/20261117-jensen-huang-says-he-d-be-honoured-to-return-to-nvidia-as-ceo",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T20:56:06+00:00"
-    },
-    {
-     "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
-     "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-17T23:32:16+00:00"
-    },
-    {
-     "title": "Jensen Huang 'Ready To Return', Nvidia Chairman Says Will Not Reinstate Him",
-     "url": "https://www.ndtv.com/world-news/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo-12341411#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T23:55:37+00:00"
-    },
-    {
-     "title": "Nvidia chairman rules out Jensen Huang's return; company doubles revenue",
-     "url": "https://timesofindia.indiatimes.com/business/international-business/board-has-no-plans-to-reinstate-him-as-ceo-nvidia-chairman-rules-out-jensen-huangs-return/articleshow/135943448.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T23:07:26+00:00"
-    },
-    {
-     "title": "Nvidia board rules out Jensen Huang reinstatement after he says ready to return",
-     "url": "https://www.indiatoday.in/world/story/no-comeback-for-jensen-huang-nvidia-chairman-rules-out-return-as-ceo-3041166-2026-11-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T23:06:42+00:00"
-    },
-    {
-     "title": "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
-     "url": "https://www.indiatoday.in/technology/video/jensen-huang-shows-readiness-to-return-to-nvidia-amid-board-decision-ytvd-3041155-2026-11-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T18:43:08+00:00"
-    },
-    {
-     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T18:17:12+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
-    "outlet:India Today Group",
-    "outlet:France Médias Monde",
-    "outlet:Guardian Media Group",
-    "outlet:NDTV",
-    "google-news:Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-    "google-news:Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
-   ],
-   "top": {
-    "IN": 3
-   },
-   "top_score": 0.9,
-   "top_headlines": [
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-    "Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "id": "kh-20261118-Q36767",
@@ -2051,10 +1361,11 @@
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
+    "India Today Group",
     "Amar Ujala"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -2065,9 +1376,10 @@
     "British actor Robert Pattinson named as new James Bond"
    ],
    "hindi_headlines": [
+    "कभी वैम्पायर फिर बैटमैन, अब जेम्स बॉन्ड बनकर छाएंगे रॉबर्ट पैटिनसन!",
     "रॉबर्ट पैटिनसन: जेम्स बॉन्ड बनने पर क्या बोले अभिनेता? शाही परिवार ने किया स्वागत, नेटिजंस ने दिया ऐसा रिएक्शन"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -2119,15 +1431,261 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
     "outlet:Amar Ujala",
     "google-news:British actor Robert Pattinson named as new James Bond"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
+   "hindi_owners": [
+    "India Today Group"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261118-Q305177",
+   "qid": "Q305177",
+   "title": "Jensen Huang",
+   "name": "Jensen Huang",
+   "phrase": "Jensen Huang",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
+   "story_keys": [
+    "board",
+    "chairman",
+    "company",
+    "double",
+    "not",
+    "out",
+    "ready",
+    "reinstate",
+    "return",
+    "revenue",
+    "rule"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T00:33:57+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "France Médias Monde",
+    "Guardian Media Group",
+    "NDTV",
+    "The Hindu Group"
+   ],
+   "fame": 350000,
+   "news": 350000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
+    "'I own my mistakes': Jensen Huang breaks silence on return as CEO after Nvidia scandal",
+    "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
+    "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
+    "Nvidia rules out rehiring Jensen Huang after he says ready to return",
+    "Nvidia chairman rules out Jensen Huang's return; company doubles revenue"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "जेन्सन हुआंग",
+   "reports": [
+    {
+     "title": "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
+     "url": "https://www.france24.com/en/technology/20261117-nvidia-board-rules-that-co-founder-jensen-huang-will-not-return-as-ceo",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T22:50:32+00:00"
+    },
+    {
+     "title": "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
+     "url": "https://www.france24.com/en/tv-shows/business/20261117-jensen-huang-says-he-d-be-honoured-to-return-to-nvidia-as-ceo",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T20:56:06+00:00"
+    },
+    {
+     "title": "Nvidia doubles revenue as board says it does not intend to reinstate Jensen Huang",
+     "url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-17T23:32:16+00:00"
+    },
+    {
+     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T00:33:57+00:00"
+    },
+    {
+     "title": "Jensen Huang 'Ready To Return', Nvidia Chairman Says Will Not Reinstate Him",
+     "url": "https://www.ndtv.com/world-news/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo-12341411#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T23:55:37+00:00"
+    },
+    {
+     "title": "Nvidia chairman rules out Jensen Huang's return; company doubles revenue",
+     "url": "https://timesofindia.indiatimes.com/business/international-business/board-has-no-plans-to-reinstate-him-as-ceo-nvidia-chairman-rules-out-jensen-huangs-return/articleshow/135943448.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T23:07:26+00:00"
+    },
+    {
+     "title": "Nvidia rules out rehiring Jensen Huang after he says ready to return",
+     "url": "https://www.indiatoday.in/world/story/no-comeback-for-jensen-huang-nvidia-chairman-rules-out-return-as-ceo-3041166-2026-11-18?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T23:06:42+00:00"
+    },
+    {
+     "title": "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
+     "url": "https://www.indiatoday.in/technology/video/jensen-huang-shows-readiness-to-return-to-nvidia-amid-board-decision-ytvd-3041155-2026-11-18?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T18:43:08+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:France Médias Monde",
+    "outlet:Guardian Media Group",
+    "outlet:NDTV",
+    "outlet:The Hindu Group",
+    "google-news:'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
+    "google-news:Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
+   ],
+   "top": {
+    "IN": 4
+   },
+   "top_score": 0.85,
+   "top_headlines": [
+    "'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
+    "Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "qid": "Q142193498",
+   "title": "2026 Crimean Bridge explosions",
+   "fame": 300000,
+   "views": 0,
+   "traffic": 0,
+   "news": 300000,
+   "news_at": "2026-11-18T00:41:21+00:00",
+   "headlines": [
+    "Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet",
+    "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
+    "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "geos": [
+    "IN",
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet",
+    "google-news:How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
+    "google-news:Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
+     "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T00:41:21+00:00"
+    },
+    {
+     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T21:24:35+00:00"
+    },
+    {
+     "title": "How the attack on Crimean Bridge unfolded",
+     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T15:38:10+00:00"
+    }
+   ],
+   "id": "wk-Q142193498",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-11-16",
+   "coords": [
+    45.308617,
+    36.505798
+   ],
+   "has_coords": true,
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "Ukraine strikes Putin's prized Crimean Bridge, destroys central road section ahead of US-China meet"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261118-Q470774",
@@ -2139,28 +1697,31 @@
    "kind": "explainer",
    "category": "sport",
    "category_hi": "खेल",
-   "story": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
+   "story": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
    "story_keys": [
-    "ahead",
-    "retire"
+    "retention",
+    "retirement"
    ],
    "date": "2026-11-17",
-   "news_at": "2026-11-17T13:56:47+00:00",
+   "news_at": "2026-11-18T01:55:44+00:00",
    "owners": [
-    "India Today Group",
     "HT Media",
     "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
     "Network18"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-    "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-    "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-    "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027"
+    "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+    "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+    "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+    "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+    "MS Dhoni's first reaction after CSK retirement",
+    "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet"
    ],
    "hindi_headlines": [
     "महेंद्र सिंह धोनी बतौर मेंटोर हो चुके है फेल, 2021 में टीम इंडिया के साथ किया था काम, चेन्नई सुपर किंग्स के लिए कैसे करेंगे चमत्कार?"
@@ -2175,50 +1736,71 @@
    "label_hi": "महेंद्र सिंह धोनी",
    "reports": [
     {
-     "title": "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-at-csk-5-titles-10-finals-and-a-new-role-ahead-of-ipl-2027/articleshow/135920178.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet",
+     "url": "https://sports.ndtv.com/cricket/wife-sakshis-emotional-post-after-ms-dhonis-ipl-retirement-breaks-the-internet-12341652#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T01:55:44+00:00"
+    },
+    {
+     "title": "MS Dhoni's first reaction after CSK retirement",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/mai-har-ek-pal-ka-shayar-hu-ms-dhonis-first-reaction-after-csk-retirement-shares-heartfelt-instagram-post/articleshow/135927055.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T10:04:43+00:00"
+     "at": "2026-11-17T13:17:40+00:00"
     },
     {
-     "title": "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-retires-from-ipl-ahead-of-2027-season-to-be-csk-mentor/articleshow/135918991.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:30:39+00:00"
-    },
-    {
-     "title": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-     "url": "https://www.hindustantimes.com/cricket/ms-dhoni-retires-takes-up-csk-mentor-role-ahead-of-ipl-2027-101794907415538.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:26:53+00:00"
-    },
-    {
-     "title": "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-mentor-ipl-2027-chennai-super-kings-3040680-2026-11-17?utm_source=rss",
+     "title": "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-instagram-post-song-ipl-retirement-main-pal-do-pal-3040905-2026-11-17?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T09:22:03+00:00"
+     "at": "2026-11-17T13:04:59+00:00"
+    },
+    {
+     "title": "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-retirement-mumbai-indians-ipl-tributes-rohit-sharma-csk-mentor-3040882-2026-11-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:58:31+00:00"
+    },
+    {
+     "title": "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/there-is-no-csk-without-ms-dhoni-n-srinivasans-emotional-message-calls-signing-thala-in-2008-his-best-decision/articleshow/135919783.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T09:59:54+00:00"
+    },
+    {
+     "title": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+     "url": "https://www.hindustantimes.com/cricket/ms-dhonis-uncertain-ipl-future-how-a-possible-retirement-could-affect-csks-retentions-and-auction-budget-for-2027-101794889591990.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T04:38:50+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
     "outlet:Network18"
    ],
    "top": {},
@@ -2238,22 +1820,21 @@
    "date": "2026-11-17",
    "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
     "BBC",
     "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Russia military transport plane crashes in Siberia, all 17 on board killed",
     "17 killed after Russian military aircraft crashes in Siberia's Kemerovo region",
     "19 Killed As Russian Military Transport Plane Crashes In Siberia",
     "Russian military plane crashes, killing all 19 on board",
-    "Moment Russian military plane crashes in Siberia, killing 19"
+    "Moment Russian military plane crashes in Siberia, killing 19",
+    "Russian military plane crash in Siberia kills 19"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2313,20 +1894,9 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T18:40:28+00:00"
-    },
-    {
-     "title": "Russia military transport plane crashes in Siberia, all 17 on board killed",
-     "url": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:36:38+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:BBC",
@@ -2334,9 +1904,13 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "19 Killed As Russian Military Transport Plane Crashes In Siberia"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
@@ -2436,115 +2010,6 @@
    "lane": "rajneeti"
   },
   {
-   "id": "kh-20261118-Q1159",
-   "qid": "Q1159",
-   "title": "Andhra Pradesh",
-   "name": "Andhra Pradesh",
-   "phrase": "Andhra",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-   "story_keys": [
-    "evacuated",
-    "gas",
-    "leak",
-    "panic",
-    "trigger"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T06:41:48+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "DB Corp",
-    "India Today Group"
-   ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-    "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-    "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-    "Gas leak sparks panic in Andhra Pradesh, villages evacuated"
-   ],
-   "hindi_headlines": [
-    "Cyclone Akvan LIVE Updates: 'अकवान' तूफान के खतरे से हड़कंप! आंध्र प्रदेश में भारी तबाही की आशंका, ओडिशा से 2 लाख लोग होंगे शिफ्ट",
-    "चक्रवात अकवान आंध्र प्रदेश की ओर बढ़ा:तीन राज्यों में बारिश का अलर्ट, बद्रीनाथ में नदी जमी, दिल्ली में AQI 333 तक पहुंचा",
-    "आंध्र प्रदेश की तरफ क्यों आ रहा तीसरा साइक्लोन? IMD ने बताई वजह"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "आन्ध्र प्रदेश",
-   "reports": [
-    {
-     "title": "Gas leak sparks panic in Andhra Pradesh, villages evacuated",
-     "url": "https://indianexpress.com/article/india/gas-leak-at-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-10966374/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:41:48+00:00"
-    },
-    {
-     "title": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-     "url": "https://www.news18.com/india/ongc-gas-leak-triggers-panic-in-andhra-pradesh-residents-within-1-km-radius-evacuated-ws-l-10428539.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:11:00+00:00"
-    },
-    {
-     "title": "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-     "url": "https://www.livemint.com/news/india/andhra-gas-leak-ongc-well-incident-triggers-safety-alert-in-konaseema-district-11794891525548.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:05:19+00:00"
-    },
-    {
-     "title": "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-     "url": "https://www.hindustantimes.com/india-news/major-gas-leak-from-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-101794885034474.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:15:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:DB Corp",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "DB Corp"
-   ],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "qid": "Q1621643",
    "title": "Miguel Ángel Félix Gallardo",
    "fame": 70590,
@@ -2574,88 +2039,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "qid": "Q142193498",
-   "title": "2026 Crimean Bridge explosions",
-   "fame": 50000,
-   "views": 0,
-   "traffic": 0,
-   "news": 50000,
-   "news_at": "2026-11-18T00:41:21+00:00",
-   "headlines": [
-    "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-     "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T00:41:21+00:00"
-    },
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "How the attack on Crimean Bridge unfolded",
-     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T15:38:10+00:00"
-    }
-   ],
-   "id": "wk-Q142193498",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-11-16",
-   "coords": [
-    45.308617,
-    36.505798
-   ],
-   "has_coords": true,
-   "top": {
-    "IN": 11
-   },
-   "top_score": 0.5,
-   "top_headlines": [
-    "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "sensitive"
   },
   {
    "qid": "Q142084937",
@@ -2772,37 +2155,6 @@
    "lane": "naam-niyam"
   },
   {
-   "qid": "Q5564237",
-   "title": "Giri Babu",
-   "fame": 10411,
-   "views": 10411,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-16"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q5564237",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q7329244",
    "title": "Richard Sterban",
    "fame": 25255,
@@ -2831,6 +2183,37 @@
    "top_headlines": [],
    "hindi_owners": [],
    "audience": "world",
+   "lane": "obituary"
+  },
+  {
+   "qid": "Q5564237",
+   "title": "Giri Babu",
+   "fame": 10411,
+   "views": 10411,
+   "traffic": 0,
+   "news": 0,
+   "news_at": null,
+   "headlines": [],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "geos": [],
+   "label_hi": null,
+   "via": [
+    "wikipedia-top-2026-11-16"
+   ],
+   "owners": [],
+   "reports": [],
+   "id": "wk-Q5564237",
+   "kind": "death",
+   "category": "death",
+   "date": "2026-11-14",
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
    "lane": "obituary"
   },
   {
@@ -2925,857 +2308,23 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261118-Q37293-update",
-   "qid": "Q37293",
-   "title": "Ramayana",
-   "name": "Ramayana",
-   "phrase": "Ramayana",
-   "person": false,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "Ramayana box office Day 13: Rs 1,483 crore haul, beats The Odyssey on IMDb",
-   "story_keys": [
-    "adipurush",
-    "animal",
-    "beat",
-    "bollywood",
-    "claim",
-    "collection",
-    "crore",
-    "crosse",
-    "dhurandhar",
-    "diwali",
-    "earn",
-    "film",
-    "gopal",
-    "india",
-    "kapoor",
-    "kunal",
-    "lahri",
-    "less",
-    "lifetime",
-    "mark",
-    "office",
-    "pallavi",
-    "part",
-    "past",
-    "ranbir",
-    "record",
-    "sunil",
-    "take",
-    "varma",
-    "worldwide",
-    "yash"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-18T01:14:34+00:00",
-   "owners": [
-    "India Today Group",
-    "Bennett, Coleman & Co.",
-    "HT Media",
-    "NDTV"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Ramayana box office Day 13: Rs 1,483 crore haul, beats The Odyssey on IMDb",
-    "‘Ramayana’ nears Rs 1,500 crore mark at worldwide box office",
-    "'Ramayan' TV's Lakshman praises Yash's performance in 'Ramayana' but feels spiritual connection was absent",
-    "Ramayana box office collection day 13: Ranbir Kapoor, Yash's epic inches closer to beat Dhurandhar's lifetime haul despite second-week slowdown",
-    "Javed Akhtar hails Lord Ram and reacts to 'Ramayana': 'I haven’t watched the film yet'",
-    "Ranbir Kapoor Asked Indira Krishnan For A Selfie On 1st Day Of Ramayana Shoot"
-   ],
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "रामायण",
-   "reports": [
-    {
-     "title": "Ramayana box office Day 13: Rs 1,483 crore haul, beats The Odyssey on IMDb",
-     "url": "https://www.indiatoday.in/movies/bollywood/story/ramayana-box-office-collection-day-13-rs-1483-crore-haul-beats-the-odyssey-on-imdb-3041172-2026-11-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T01:14:34+00:00"
-    },
-    {
-     "title": "‘Ramayana’ nears Rs 1,500 crore mark at worldwide box office",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/box-office/ramayana-box-office-collection-day-13-ranbir-kapoor-and-yash-starrer-nears-rs-1500-crore-worldwide-despite-second-tuesday-dip/articleshow/135943827.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T00:11:57+00:00"
-    },
-    {
-     "title": "'Ramayan' TV's Lakshman praises Yash's performance in 'Ramayana' but feels spiritual connection was absent",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/ramayan-tv-actor-sunil-lahri-praises-yashs-performance-in-ramayana-rise-of-a-legend-but-feels-spiritual-connection-was-absent-the-film-did-not-create-an-impact-in-its-totality/articleshow/135933474.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:14:59+00:00"
-    },
-    {
-     "title": "Ramayana box office collection day 13: Ranbir Kapoor, Yash's epic inches closer to beat Dhurandhar's lifetime haul despite second-week slowdown",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-13-ranbir-kapoor-yash-epic-crosses-820-crore-milestone-despite-second-week-slowdown-nitesh-tiwari-101794934020656.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:02:20+00:00"
-    },
-    {
-     "title": "Javed Akhtar hails Lord Ram and reacts to 'Ramayana': 'I haven’t watched the film yet'",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/javed-akhtar-hails-lord-ram-and-reacts-to-nitesh-tiwaris-ramayana-ram-is-not-just-a-person-ram-is-an-ideal-a-morality-ram-is-a-way-of-living-i-havent-watched-the-film-yet/articleshow/135932705.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T16:16:45+00:00"
-    },
-    {
-     "title": "Ranbir Kapoor Asked Indira Krishnan For A Selfie On 1st Day Of Ramayana Shoot",
-     "url": "https://www.ndtv.com/entertainment/ranbir-kapoor-asked-indira-krishnan-for-a-selfie-on-1st-day-of-ramayana-shoot-12339380#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T13:05:35+00:00"
-    },
-    {
-     "title": "Will Ramayana Recover Its Rs 4,000 Crore Budget? Lara Dutta Thinks It'll 'Far Surpass' It",
-     "url": "https://www.ndtv.com/entertainment/will-ramayana-recover-its-rs-4-000-crore-budget-lara-dutta-thinks-itll-far-surpass-it-12338837#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T11:36:52+00:00"
-    },
-    {
-     "title": "'Ramayana' box office collection day 13 (LIVE)",
-     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/ramayana-box-office-collection-day-13-live-the-ranbir-kapoor-sai-pallavi-yash-starrer-begins-to-see-a-drop-after-crossing-rs-800-crore-net-in-india/articleshow/135917709.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:47:01+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q37293"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261116-Q37293-update",
-   "earlier": [
-    "रामायण ने भारत में कमाए 238 करोड़ रुपये",
-    "रामायण की कमाई छुट्टियों के बाद भी सिनेमाघरों में जारी",
-    "रामायण ने आठ दिन में कमाए 1,000 करोड़ रुपये",
-    "रामायण ने दूसरे रविवार कमाए 75 करोड़ रुपये"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 16 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q9543-update",
-   "qid": "Q9543",
-   "title": "Salman Khan",
-   "name": "Salman Khan",
-   "phrase": "Salman Khan",
-   "person": true,
-   "kind": "explainer",
-   "category": "entertainment",
-   "category_hi": "मनोरंजन",
-   "story": "ED To Move Supreme Court Against Allahabad HC Bail Order To Azam Khan In Money Laundering Case",
-   "story_keys": [
-    "against",
-    "ahead",
-    "chinese",
-    "clash",
-    "eetha",
-    "kapoor",
-    "maatrubhumi",
-    "maatrubhumi'",
-    "message",
-    "office",
-    "praise",
-    "shraddha",
-    "take",
-    "trailer",
-    "troop"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-17T17:33:38+00:00",
-   "owners": [
-    "Network18",
-    "NDTV",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "ED To Move Supreme Court Against Allahabad HC Bail Order To Azam Khan In Money Laundering Case",
-    "Video: Sona Mohapatra Takes A Dig At Maatrubhumi Song, Revisits Past Feud With Salman Khan",
-    "Salman Khan surprises Maatrubhumi cast and crew with luxury watches worth up to ₹6 lakh at Panvel farmhouse",
-    "Maatrubhumi: Choreographer Abhishree Sen On Salman Khan's Role In Her Acting Debut",
-    "Supreme Court junks UP's plea against HC stay on Azam Khan's conviction in fake birth certificate case",
-    "All Indian Cine Workers Association thanks Salman Khan and Sonu Sood for helping Sharad Kapoor, urges film industry to support struggling artists"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सलमान ख़ान",
-   "reports": [
-    {
-     "title": "ED To Move Supreme Court Against Allahabad HC Bail Order To Azam Khan In Money Laundering Case",
-     "url": "https://www.news18.com/india/ed-to-move-supreme-court-against-allahabad-hc-bail-order-to-azam-khan-in-money-laundering-case-ws-l-10429911.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:33:38+00:00"
-    },
-    {
-     "title": "Video: Sona Mohapatra Takes A Dig At Maatrubhumi Song, Revisits Past Feud With Salman Khan",
-     "url": "https://www.ndtv.com/entertainment/video-sona-mohapatra-takes-a-dig-at-maatrubhumi-song-revisits-past-feud-with-salman-khan-12340041#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:58:20+00:00"
-    },
-    {
-     "title": "Salman Khan surprises Maatrubhumi cast and crew with luxury watches worth up to ₹6 lakh at Panvel farmhouse",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/salman-khan-surprises-maatrubhumi-cast-and-crew-with-luxury-watches-worth-up-to-6-lakh-at-panvel-farmhouse-101794927089087.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:00:37+00:00"
-    },
-    {
-     "title": "Maatrubhumi: Choreographer Abhishree Sen On Salman Khan's Role In Her Acting Debut",
-     "url": "https://www.ndtv.com/entertainment/abhishree-sen-reveals-how-salman-khan-helped-her-land-debut-film-maatrubhumi-12337218#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:04:52+00:00"
-    },
-    {
-     "title": "Supreme Court junks UP's plea against HC stay on Azam Khan's conviction in fake birth certificate case",
-     "url": "https://www.hindustantimes.com/india-news/supreme-court-junks-uttar-pradesh-plea-against-hc-stay-on-azam-khans-conviction-in-fake-birth-certificate-case-101794896341509.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:28:25+00:00"
-    },
-    {
-     "title": "All Indian Cine Workers Association thanks Salman Khan and Sonu Sood for helping Sharad Kapoor, urges film industry to support struggling artists",
-     "url": "https://www.hindustantimes.com/entertainment/bollywood/all-indian-cine-workers-association-thanks-salman-khan-and-sonu-sood-for-helping-sharad-kapoor-urges-film-industry-to-support-struggling-artists-101794883535770.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:15:53+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q9543"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261113-Q9543-update",
-   "earlier": [
-    "सलमान खान की फिल्म मातृभूमि का ट्रेलर रिलीज",
-    "सलमान ख़ान की फिल्म मातृभूमि का नया ट्रेलर आया"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 13 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q3243690-update",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "Chief Justice of India",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "COP31: India seeks to strengthen climate engagement with small island nations",
-   "story_keys": [
-    "action",
-    "against",
-    "chair'",
-    "contempt",
-    "deserve",
-    "don't",
-    "escorted",
-    "kant",
-    "lawyer",
-    "plea",
-    "remark",
-    "seek",
-    "surya"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-17T22:16:50+00:00",
-   "owners": [
-    "Indian Express Group",
-    "The Hindu Group",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "COP31: India seeks to strengthen climate engagement with small island nations",
-    "All-too fallible: On India’s vote against moratorium on death penalty",
-    "India seek a Test high at Basin Reserve"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "COP31: India seeks to strengthen climate engagement with small island nations",
-     "url": "https://indianexpress.com/article/india/cop31-climate-conference-engagement-with-small-island-nations-10967527/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T22:16:50+00:00"
-    },
-    {
-     "title": "All-too fallible: On India’s vote against moratorium on death penalty",
-     "url": "https://www.thehindu.com/opinion/editorial/the-hindu-editorial-on-indias-vote-against-moratorium-on-death-penalty/article71713256.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T18:26:51+00:00"
-    },
-    {
-     "title": "India seek a Test high at Basin Reserve",
-     "url": "https://www.hindustantimes.com/cricket/india-seek-a-test-high-at-basin-reserve-101794931462372.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T16:17:19+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q3243690"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261117-Q3243690",
-   "earlier": [
-    "मुख्य न्यायाधीश पर टिप्पणी, वकील पर चलेगा अवमानना केस"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 17 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q163225-update",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rahul Gandhi's Personal PDA Moment: Sonia-Rajiv Romance Followed By Political Battle | HARD FACTS",
-   "story_keys": [
-    "assassination",
-    "become",
-    "begging",
-    "belonging",
-    "belonging’",
-    "call",
-    "cancer",
-    "face",
-    "family",
-    "indira",
-    "kill",
-    "manmohan",
-    "memoir",
-    "opposition",
-    "political",
-    "post",
-    "pranab",
-    "rajiv",
-    "recall",
-    "recount",
-    "reveal",
-    "wrote"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-17T16:24:03+00:00",
-   "owners": [
-    "Network18",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rahul Gandhi's Personal PDA Moment: Sonia-Rajiv Romance Followed By Political Battle | HARD FACTS",
-    "Rahul Gandhi posts ‘Satyam Shivam Sundaram’ after BJP dig; Himanta Sarma hits back",
-    "Congress’s Seating Arrangement At Sonia Gandhi’s Memoir Launch Puts India Bloc Allies | News18",
-    "‘If you want to fall in love...never eat chicken chasseur’: Rahul Gandhi's lighthearted tale at Sonia's memoir launch",
-    "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "Rahul Gandhi's Personal PDA Moment: Sonia-Rajiv Romance Followed By Political Battle | HARD FACTS",
-     "url": "https://www.news18.com/videos/india/rahul-gandhi-s-personal-pda-moment-sonia-rajiv-romance-followed-by-political-battle-hard-facts-10429863.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T16:24:03+00:00"
-    },
-    {
-     "title": "Rahul Gandhi posts ‘Satyam Shivam Sundaram’ after BJP dig; Himanta Sarma hits back",
-     "url": "https://www.hindustantimes.com/india-news/rahul-gandhi-posts-satyam-shivam-sundaram-after-bjp-dig-at-sonia-gandhi-rajiv-gandhi-lap-himanta-sarma-hits-back-101794920094880.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T13:56:34+00:00"
-    },
-    {
-     "title": "Congress’s Seating Arrangement At Sonia Gandhi’s Memoir Launch Puts India Bloc Allies | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-s-seating-arrangement-at-sonia-gandhi-s-memoir-launch-puts-india-bloc-allies-news18-10428894.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:15:32+00:00"
-    },
-    {
-     "title": "‘If you want to fall in love...never eat chicken chasseur’: Rahul Gandhi's lighthearted tale at Sonia's memoir launch",
-     "url": "https://www.livemint.com/news/trends/if-you-want-to-fall-in-love-never-eat-chicken-chasseur-rahul-gandhis-lighthearted-tale-at-sonias-memoir-launch-11794898937789.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T07:49:57+00:00"
-    },
-    {
-     "title": "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-     "url": "https://www.news18.com/india/shes-a-friend-now-rahul-gandhis-recounts-cambridge-date-at-restaurant-where-his-parents-first-met-ws-l-10428424.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:00:30+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q163225"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261117-Q163225",
-   "earlier": [
-    "राजीव गांधी को पीएम न बनने की सोनिया ने दी थी सलाह",
-    "किताब में सोनिया गांधी ने किया पीएम पद ठुकराने का जिक्र",
-    "Belonging नाम से रिलीज हुई सोनिया गांधी की संस्मरण किताब",
-    "सोनिया गाँधी ने नई दिल्ली में लॉन्च की किताब Belonging"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 17 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q10218-update",
-   "qid": "Q10218",
-   "title": "Rahul Gandhi",
-   "name": "Rahul Gandhi",
-   "phrase": "Rahul Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "‘Can't stop anyone’: BJP on Amarinder Singh's presence at Sonia Gandhi's book launch",
-   "story_keys": [
-    "chicago",
-    "columbia",
-    "next",
-    "sonia",
-    "visit"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-17T11:00:20+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Can't stop anyone’: BJP on Amarinder Singh's presence at Sonia Gandhi's book launch",
-    "Rahul Gandhi As Congress’s Disrupter-In-Chief: What He Actually Revealed At Sonia Gandhi’s Book Launch",
-    "Congress’s Seating Arrangement At Sonia Gandhi’s Memoir Launch Puts India Bloc Allies | News18",
-    "Sonia Gandhi’s Book Row: Prithviraj Chavan Says Critics Are Free To Challenge Her Account | News18",
-    "‘If you want to fall in love...never eat chicken chasseur’: Rahul Gandhi's lighthearted tale at Sonia's memoir launch",
-    "At Sonia Gandhi’s book launch, Rahul says his parents fought only once"
-   ],
-   "hindi_headlines": [],
-   "region": "india",
-   "india_link": true,
-   "label_hi": "राहुल गाँधी",
-   "reports": [
-    {
-     "title": "‘Can't stop anyone’: BJP on Amarinder Singh's presence at Sonia Gandhi's book launch",
-     "url": "https://www.hindustantimes.com/india-news/cant-stop-anyone-bjp-on-amarinder-singhs-presence-at-sonia-gandhis-book-launch-101794908908152.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T11:00:20+00:00"
-    },
-    {
-     "title": "Rahul Gandhi As Congress’s Disrupter-In-Chief: What He Actually Revealed At Sonia Gandhi’s Book Launch",
-     "url": "https://www.news18.com/india/congresss-disrupter-in-chief-what-rahul-gandhi-actually-revealed-at-sonia-gandhis-book-launch-ws-klrt-10429075.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T10:27:02+00:00"
-    },
-    {
-     "title": "Congress’s Seating Arrangement At Sonia Gandhi’s Memoir Launch Puts India Bloc Allies | News18",
-     "url": "https://www.news18.com/videos/breaking-news/congress-s-seating-arrangement-at-sonia-gandhi-s-memoir-launch-puts-india-bloc-allies-news18-10428894.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:15:32+00:00"
-    },
-    {
-     "title": "Sonia Gandhi’s Book Row: Prithviraj Chavan Says Critics Are Free To Challenge Her Account | News18",
-     "url": "https://www.news18.com/videos/breaking-news/sonia-gandhi-s-book-row-prithviraj-chavan-says-critics-are-free-to-challenge-her-account-news18-10428866.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:03:23+00:00"
-    },
-    {
-     "title": "‘If you want to fall in love...never eat chicken chasseur’: Rahul Gandhi's lighthearted tale at Sonia's memoir launch",
-     "url": "https://www.livemint.com/news/trends/if-you-want-to-fall-in-love-never-eat-chicken-chasseur-rahul-gandhis-lighthearted-tale-at-sonias-memoir-launch-11794898937789.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T07:49:57+00:00"
-    },
-    {
-     "title": "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-     "url": "https://indianexpress.com/article/india/rahul-sonia-gandhi-memoir-belonging-rajiv-varsity-restaurant-10966208/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:27:32+00:00"
-    },
-    {
-     "title": "Captain Amarinder Singh's presence at Sonia Gandhi's book launch sparks curiosity ahead of Punjab polls",
-     "url": "https://www.hindustantimes.com/india-news/amarinder-singh-punjab-polls-elections-india-bloc-sonia-gandhi-book-launch-event-belonging-rahul-gandhi-bjp-charanjit-singh-channi-101794891931658.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:15:27+00:00"
-    },
-    {
-     "title": "INDIA bloc leaders turn out for Sonia Gandhi’s memoir launch",
-     "url": "https://www.hindustantimes.com/india-news/indiabloc-sonia-gandhi-book-launch-belonging-rajiv-gandhi-rahul-gandhi-indira-gandhi-congress-101794882463130.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T02:38:28+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q10218"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261112-Q10218",
-   "earlier": [
-    "राहुल गांधी अगले हफ्ते जाएंगे अमेरिका के दौरे पर"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 12 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q7747-update",
-   "qid": "Q7747",
-   "title": "Vladimir Putin",
-   "name": "Vladimir Putin",
-   "phrase": "Vladimir Putin",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-   "story_keys": [
-    "compromise",
-    "dhabi",
-    "envoy",
-    "meet",
-    "talk",
-    "ukraine",
-    "zelensky"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-18T00:41:21+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "BBC",
-    "Guardian Media Group",
-    "India Today Group",
-    "NPR",
-    "HT Media"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "Trump to meet Chinese leader Xi Jinping and Russia's Vladimir Putin for joint summit",
-    "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
-    "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-    "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi",
-    "Trump, Xi, Putin to meet in Shenzhen: Beijing’s bargain, big optics and what it means for India"
-   ],
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": "व्लादिमीर पुतिन",
-   "reports": [
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "Trump to meet Chinese leader Xi Jinping and Russia's Vladimir Putin for joint summit",
-     "url": "https://www.npr.org/2026/11/17/nx-s1-6042448/trump-to-meet-chinese-leader-xi-jinping-and-russias-vladimir-putin-for-joint-summit",
-     "outlet": "NPR",
-     "outlet_hi": "एनपीआर",
-     "owner": "NPR",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T09:46:00+00:00"
-    },
-    {
-     "title": "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
-     "url": "https://www.theguardian.com/world/2026/nov/17/how-ukraine-struck-kerch-bridge-symbol-vladimir-putin-rule",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-17T17:30:40+00:00"
-    },
-    {
-     "title": "Ukraine strikes Putin's prized Crimean Bridge ahead of meeting with US-China",
-     "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T00:41:21+00:00"
-    },
-    {
-     "title": "Ukraine blows up Putin's prized Crimea bridge days before meeting with Trump, Xi",
-     "url": "https://www.indiatoday.in/world/story/ukraine-blows-up-putins-prized-crimea-bridge-days-before-meeting-with-donald-trump-xi-jinping-3041040-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:35:14+00:00"
-    },
-    {
-     "title": "Trump, Xi, Putin to meet in Shenzhen: Beijing’s bargain, big optics and what it means for India",
-     "url": "https://www.hindustantimes.com/india-news/trump-xi-putin-to-meet-in-shenzhen-beijing-s-bargain-low-expectations-and-what-it-means-for-india-101794899023432.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T07:23:51+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q7747"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261113-Q7747",
-   "earlier": [
-    "व्लादिमीर पुतिन ने अमेरिकी दूतों से की दो घंटे बात"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 13 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q796885-update",
-   "qid": "Q796885",
-   "title": "Gadi Eisenkot",
-   "name": "Gadi Eisenkot",
-   "phrase": "Gadi Eisenkot",
-   "person": true,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Israel parliament elects Gadi Eisenkot ally Matan Kahana as new speaker",
-   "story_keys": [
-    "form",
-    "government",
-    "israel",
-    "netanyahu",
-    "pick",
-    "president"
-   ],
-   "date": "2026-11-18",
-   "news_at": "2026-11-17T23:28:54+00:00",
-   "owners": [
-    "Al Jazeera Media Network",
-    "NDTV"
-   ],
-   "fame": 1,
-   "news": 0,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Israel parliament elects Gadi Eisenkot ally Matan Kahana as new speaker",
-    "Israel Parliament Elects Gadi Eisenkot Ally As Speaker In Blow For Netanyahu"
-   ],
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Israel parliament elects Gadi Eisenkot ally Matan Kahana as new speaker",
-     "url": "https://www.aljazeera.com/news/2026/11/17/israel-parliament-elects-gadi-eisenkot-ally-matan-kahana-as-new-speaker?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-17T23:28:54+00:00"
-    },
-    {
-     "title": "Israel Parliament Elects Gadi Eisenkot Ally As Speaker In Blow For Netanyahu",
-     "url": "https://www.ndtv.com/world-news/israel-parliament-elects-gadi-eisenkot-ally-matan-kahana-as-speaker-in-blow-for-netanyahu-12341395#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T22:14:12+00:00"
-    }
-   ],
-   "via": [
-    "revisit:Q796885"
-   ],
-   "top": null,
-   "top_score": 0.0,
-   "revisit_of": "kh-20261109-Q796885",
-   "earlier": [
-    "गादी आइज़नकोट को इस्राइल में नई सरकार बनाने का निर्देश"
-   ],
-   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 09 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
-   "audience": "india",
-   "lane": "naam-niyam"
   }
  ],
  "notes": [
-  "revisit kh-20261118-Q10218-update: 3 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261118-Q37293-update: 4 owners' new reports on Ramayana (994 views before); revisit kh-20261118-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261118-Q163225-update: 2 owners' new reports on Sonia Gandhi (812 views before); revisit Q468324 (421 views): 0 o",
-  "outlets: 1717 headlines from 50 feeds (19 owners), 21 matched to articles, 12 candidates with 2+ owners, 3 nw- stories (on): nw-20261117-siberia-aviation, nw-20261116-akvan-cyclone, nw-20261117-uttarakhand-accident",
-  "explainers: 8 kh- stories (on): kh-20261118-Q305177, kh-20261118-Q163225, kh-20261118-Q396412, kh-20261118-Q36767; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer LTCG: no Wikipedia article that can be its centre; explainer COP: no Wikipedia article that can be its centre",
+  "outlets: 1655 headlines from 48 feeds (18 owners), 16 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261117-siberia-aviation",
+  "explainers: 6 kh- stories (on): kh-20261118-Q305177, kh-20261118-Q396412, kh-20261118-Q36767, kh-20261118-Q470774; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer Manila: fewer than 3 owners' headlines name it and the story; explainer Azam Khan: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again"
  ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+ ],
  "outlets": {
-  "headlines": 1717,
-  "feeds": 50,
-  "owners": 19,
-  "matched": 21,
-  "corroborated": 12
+  "headlines": 1655,
+  "feeds": 48,
+  "owners": 18,
+  "matched": 16,
+  "corroborated": 8
  },
  "emerging": [
   {
@@ -3788,22 +2337,21 @@
    "date": "2026-11-17",
    "news_at": "2026-11-17T22:21:16+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
     "India Today Group",
     "NDTV",
     "BBC",
     "Al Jazeera Media Network"
    ],
-   "fame": 125000,
-   "news": 125000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Russia military transport plane crashes in Siberia, all 17 on board killed",
     "17 killed after Russian military aircraft crashes in Siberia's Kemerovo region",
     "19 Killed As Russian Military Transport Plane Crashes In Siberia",
     "Russian military plane crashes, killing all 19 on board",
-    "Moment Russian military plane crashes in Siberia, killing 19"
+    "Moment Russian military plane crashes in Siberia, killing 19",
+    "Russian military plane crash in Siberia kills 19"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -3863,20 +2411,9 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T18:40:28+00:00"
-    },
-    {
-     "title": "Russia military transport plane crashes in Siberia, all 17 on board killed",
-     "url": "https://timesofindia.indiatimes.com/world/europe/russia-military-transport-plane-crashes-in-siberia-all-17-on-board-killed/articleshow/135931511.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:36:38+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
     "outlet:India Today Group",
     "outlet:NDTV",
     "outlet:BBC",
@@ -3884,241 +2421,16 @@
    ],
    "emerging": true,
    "article": null,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 13
+   },
+   "top_score": 0.4,
+   "top_headlines": [
+    "19 Killed As Russian Military Transport Plane Crashes In Siberia"
+   ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "breaking"
-  },
-  {
-   "id": "nw-20261116-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone 'Akvan' updates: Akvan stationary, likely to move slowly north-northwestwards",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-16",
-   "news_at": "2026-11-18T01:20:04+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Cyclone Akvan likely to intensify into ‘very severe’ storm, hit Andhra coast on November 20: IMD",
-    "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
-    "Cyclone Akvan: Odisha govt steps up precautionary measures in flood-hit Ganjam",
-    "HT morning news brief Nov 17: Cyclone Akvan likely to turn 'severe' today; Gangster Goldy Dhillon's death threats to Amitabh Bachchan",
-    "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone 'Akvan' updates: Akvan stationary, likely to move slowly north-northwestwards",
-     "url": "https://www.thehindu.com/news/national/cyclone-akvan-cyclonic-storm-forms-over-bay-of-bengal-andhra-pradesh-november-17-2026-live-updates/article71710277.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T01:20:04+00:00"
-    },
-    {
-     "title": "Cyclone Akvan moves slowly, likely to intensify further by November 18 morning",
-     "url": "https://www.thehindu.com/news/national/andhra-pradesh/cyclone-akvan-moves-slowly-likely-to-intensify-further-by-november-18-morning/article71712487.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:35:17+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: RMC forecasts moderate rainfall for Chennai on Wednesday",
-     "url": "https://www.thehindu.com/news/cities/chennai/cyclone-akvan-rmc-forecasts-moderate-rainfall-for-chennai-on-wednesday/article71712804.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:29:48+00:00"
-    },
-    {
-     "title": "Delhi-NCR temperatures to drop, Cyclone Akvan to intensify on Wednesday",
-     "url": "https://www.indiatoday.in/science/story/imd-weather-forecast-november-18-cyclone-akvan-delhi-3040761-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T14:00:00+00:00"
-    },
-    {
-     "title": "Cyclone Akvan After Murasu, Arnab: Why Bay Of Bengal Remains In The Eye Of The Storm",
-     "url": "https://www.news18.com/explainers/cyclone-akvan-after-murasu-arnab-why-bay-of-bengal-remains-in-the-eye-of-the-storm-ws-elrt-10427790.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:15:00+00:00"
-    },
-    {
-     "title": "HT morning news brief Nov 17: Cyclone Akvan likely to turn 'severe' today; Gangster Goldy Dhillon's death threats to Amitabh Bachchan",
-     "url": "https://www.hindustantimes.com/india-news/ht-morning-news-brief-november-17-cyclone-akvan-amitabh-bachchan-death-threats-ipl-2027-us-iran-war-jpmorgan-chase-banks-101794885957909.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:34:04+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: Odisha govt steps up precautionary measures in flood-hit Ganjam",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-akvan-odisha-govt-steps-up-precautionary-measures-in-flood-hit-ganjam-101794885124867.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:13:00+00:00"
-    },
-    {
-     "title": "IMD weather update: ‘Yellow’ alert issued for Andhra, Odisha as Cyclone Akvan turns ‘very severe’ ahead of landfall",
-     "url": "https://www.livemint.com/news/india/imd-weather-update-yellow-alert-issued-for-andhra-odisha-as-cyclone-akvan-turns-very-severe-ahead-of-landfall-11794878693669.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T01:47:29+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN": 9,
-    "IN-nation": 4
-   },
-   "top_score": 0.855,
-   "top_headlines": [
-    "Cyclone Akvan: Meaning, Origin, And Why Iran Named Latest Bay Of Bengal Storm"
-   ],
-   "hindi_owners": [
-    "Network18",
-    "DB Corp"
-   ]
-  },
-  {
-   "id": "nw-20261117-uttarakhand-accident",
-   "qid": null,
-   "title": "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal",
-   "name": "Uttarakhand",
-   "kind": "incident",
-   "category": "accident",
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T17:21:23+00:00",
-   "owners": [
-    "HT Media",
-    "Indian Express Group",
-    "Network18",
-    "The Hindu Group"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "6 killed after vehicle falls into deep gorge on Banswada-Mohankhal road in Uttarakhand's Rudraprayag",
-    "9 killed, up to 30 injured as bus plunges into gorge in Uttarakhand",
-    "8 Killed, 26 Injured As Bus Plunges Into Gorge In Uttarakhand's Tehri; Survivor Alleges Driver Was Speeding",
-    "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Nine killed, 26 injured as bus plunges into 100-metre gorge in Uttarakhand's Tehri Garhwal",
-     "url": "https://www.thehindu.com/news/national/uttarakhand/bus-plunges-into-100-metre-gorge-in-uttarakhand-tehri-garhwal-casualties/article71710325.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:21:23+00:00"
-    },
-    {
-     "title": "8 Killed, 26 Injured As Bus Plunges Into Gorge In Uttarakhand's Tehri; Survivor Alleges Driver Was Speeding",
-     "url": "https://www.news18.com/india/uttarakhand-bus-accident-death-toll-bus-plunges-into-ravine-tehri-garhwal-gular-bazar-10428338.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:10:25+00:00"
-    },
-    {
-     "title": "9 killed, up to 30 injured as bus plunges into gorge in Uttarakhand",
-     "url": "https://indianexpress.com/article/india/bus-plunges-into-gorge-in-uttarakhand-tehri-garhwal-haridwar-dead-injuries-10966200/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:29:08+00:00"
-    },
-    {
-     "title": "6 killed after vehicle falls into deep gorge on Banswada-Mohankhal road in Uttarakhand's Rudraprayag",
-     "url": "https://www.hindustantimes.com/india-news/vehicle-falls-into-deep-gorge-on-banswada-mohankhal-road-in-uttarakhands-rudraprayag-death-toll-injured-101794885243290.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:18:36+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:Network18",
-    "outlet:The Hindu Group"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-nation": 18
-   },
-   "top_score": 0.09,
-   "top_headlines": [
-    "13 killed, 32 injured in two seperate accidents in Uttarakhand ; bus, bolero plunge into gorges"
-   ],
-   "hindi_owners": []
   }
  ],
  "explainers": [
@@ -4147,14 +2459,14 @@
     "rule"
    ],
    "date": "2026-11-17",
-   "news_at": "2026-11-17T23:55:37+00:00",
+   "news_at": "2026-11-18T00:33:57+00:00",
    "owners": [
     "Bennett, Coleman & Co.",
-    "The Hindu Group",
     "India Today Group",
     "France Médias Monde",
     "Guardian Media Group",
-    "NDTV"
+    "NDTV",
+    "The Hindu Group"
    ],
    "fame": 350000,
    "news": 350000,
@@ -4163,10 +2475,10 @@
    "headlines": [
     "Nvidia board rules that co-founder Jensen Huang will not return as CEO",
     "'I own my mistakes': Jensen Huang breaks silence on return as CEO after Nvidia scandal",
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
     "Jensen Huang is ready to return to NVIDIA if the board decides it's best for all stakeholders",
     "Jensen Huang says he'd be honoured to return to Nvidia as CEO",
-    "Nvidia board rules out Jensen Huang reinstatement after he says ready to return"
+    "Nvidia rules out rehiring Jensen Huang after he says ready to return",
+    "Nvidia chairman rules out Jensen Huang's return; company doubles revenue"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -4207,6 +2519,16 @@
      "at": "2026-11-17T23:32:16+00:00"
     },
     {
+     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T00:33:57+00:00"
+    },
+    {
      "title": "Jensen Huang 'Ready To Return', Nvidia Chairman Says Will Not Reinstate Him",
      "url": "https://www.ndtv.com/world-news/nvidia-chairman-says-board-does-not-intend-to-reinstate-jensen-huang-as-ceo-12341411#publisher=newsstand",
      "outlet": "NDTV",
@@ -4227,7 +2549,7 @@
      "at": "2026-11-17T23:07:26+00:00"
     },
     {
-     "title": "Nvidia board rules out Jensen Huang reinstatement after he says ready to return",
+     "title": "Nvidia rules out rehiring Jensen Huang after he says ready to return",
      "url": "https://www.indiatoday.in/world/story/no-comeback-for-jensen-huang-nvidia-chairman-rules-out-return-as-ceo-3041166-2026-11-18?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
@@ -4245,148 +2567,29 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T18:43:08+00:00"
-    },
-    {
-     "title": "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
-     "url": "https://www.thehindu.com/news/international/ex-nvidia-ceo-jensen-huang-acknowledges-mistakes-signals-interest-in-return-if-company-chooses/article71713348.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T18:17:12+00:00"
     }
    ],
    "via": [
     "outlet:Bennett, Coleman & Co.",
-    "outlet:The Hindu Group",
     "outlet:India Today Group",
     "outlet:France Médias Monde",
     "outlet:Guardian Media Group",
     "outlet:NDTV",
-    "google-news:Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+    "outlet:The Hindu Group",
+    "google-news:'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
     "google-news:Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
    ],
    "top": {
-    "IN": 3
+    "IN": 4
    },
-   "top_score": 0.9,
+   "top_score": 0.85,
    "top_headlines": [
-    "Ex-Nvidia CEO Jensen Huang acknowledges ‘mistakes,’ signals interest in return if company chooses",
+    "'Board accepted his resignation': Nvidia chairman rules out Jensen Huang's return",
     "Nvidia Beats Estimates In First Earnings Report Without Jensen Huang"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261118-Q163225",
-   "qid": "Q163225",
-   "title": "Sonia Gandhi",
-   "name": "Sonia Gandhi",
-   "phrase": "At Sonia Gandhi",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-   "story_keys": [
-    "first",
-    "met",
-    "parent",
-    "restaurant"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T05:27:32+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "BBC",
-    "India Today Group"
-   ],
-   "fame": 325000,
-   "news": 325000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-    "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-    "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-    "Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\""
-   ],
-   "hindi_headlines": [
-    "सोनिया गांधी की किताब की लॉन्चिंग पर राहुल गांधी ने कौन से किस्से सुनाए?",
-    "सोनिया गांधी को कौन-कौन से भारतीय व्यंजन पसंद हैं? खुद खोला राज",
-    "सोनिया गांधी की किताब के लॉन्च में बीजेपी नेता अमरिंदर सिंह, इस मंत्री का आ गया बयान, क्या कांग्रेस में होगी वापसी?",
-    "सोनिया गांधी के बुक लॉन्च में पहुंचे कैप्टन अमरिंदर सिंह, क्या बोली बीजेपी?",
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है"
-   ],
-   "hindi_news": 7,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "सोनिया गाँधी",
-   "reports": [
-    {
-     "title": "At Sonia Gandhi’s book launch, Rahul says his parents fought only once",
-     "url": "https://indianexpress.com/article/india/rahul-sonia-gandhi-memoir-belonging-rajiv-varsity-restaurant-10966208/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:27:32+00:00"
-    },
-    {
-     "title": "'She's A Friend Now': Rahul Gandhi Recounts Cambridge Date At Restaurant Where His Parents First Met",
-     "url": "https://www.news18.com/india/shes-a-friend-now-rahul-gandhis-recounts-cambridge-date-at-restaurant-where-his-parents-first-met-ws-l-10428424.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:00:30+00:00"
-    },
-    {
-     "title": "Went with girlfriend to Cambridge restaurant where parents first met: Rahul Gandhi",
-     "url": "https://www.hindustantimes.com/india-news/went-with-girlfriend-to-cambridge-restaurant-where-parents-first-met-rahul-gandhi-the-varsity-sonia-gandhi-book-launch-rajiv-gandhi-101794886157401.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T04:54:59+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:BBC",
-    "outlet:India Today Group",
-    "google-news:Amarinder Singh At Sonia Gandhi's Book Launch, BJP Says \"It's Personal\"",
-    "google-news:सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "google-news:सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या"
-   ],
-   "top": {
-    "IN": 4,
-    "IN-nation": 5,
-    "IN-hi-nation": 8
-   },
-   "top_score": 1.285,
-   "top_headlines": [
-    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
-    "सोनिया गांधी की बुक लॉन्च में पहुंचे अमरिंदर सिंह, सियासी गलियारों में शुरू हुई चर्चा, जानें कैप्टन ने क्या",
-    "Rahul Gandhi's \"She's A Friend Now\" Reply On Question About Girlfriend",
-    "As a true Hindu...: Rahul Gandhi jabs BJP-RSS over Mama on Papa's lap remark row"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q396412",
@@ -4401,7 +2604,6 @@
    "story": "IPL 2027 retention: Full list of retained, released players and remaining purse of all 10 teams",
    "story_keys": [
     "all",
-    "highlight",
     "list",
     "player",
     "purse",
@@ -4453,24 +2655,14 @@
      "at": "2026-11-17T19:21:53+00:00"
     },
     {
-     "title": "IPL 2027 Auction: Purse Remaining For Each Team After Retention Announcement",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-auction-purse-remaining-for-each-team-after-retention-announcement-csk-mi-rcb-kkr-rr-srh-pbks-dc-gt-lsg-12340163#publisher=newsstand",
+     "title": "\"Confident About Turning Delhi Capitals' Fortunes Around\": Head Coach Sourav Ganguly After IPL Retention",
+     "url": "https://sports.ndtv.com/ipl-2027/confident-about-turning-delhi-capitals-fortunes-around-head-coach-sourav-ganguly-after-ipl-retention-12340678#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T18:16:56+00:00"
-    },
-    {
-     "title": "IPL 2027 Retention Highlights: Full Retention List Out. MI Release Two Big Names, KKR Let Go Of Rs 18 Crore Star",
-     "url": "https://sports.ndtv.com/ipl-2027/ipl-2027-retention-live-updates-retained-released-players-team-wise-list-yashasvi-jaiswal-kkr-csk-rcb-mi-pbks-12336728#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T17:54:30+00:00"
+     "at": "2026-11-17T18:34:05+00:00"
     },
     {
      "title": "IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends",
@@ -4521,6 +2713,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-17T15:34:55+00:00"
+    },
+    {
+     "title": "IPL 2027: Mumbai Indians retention list, released players and remaining purse",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ipl-2027-mumbai-indians-retention-list-released-players-and-remaining-purse/articleshow/135930108.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T14:48:26+00:00"
     }
    ],
    "via": [
@@ -4529,7 +2731,7 @@
     "outlet:India Today Group",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "google-news:IPL 2027 retention highlights: Dhoni retires, teams announce lists of released and retained players as deadline ends"
+    "google-news:IPL 2027 retention: All players retained and released"
    ],
    "top": {},
    "top_score": 0.0,
@@ -4562,10 +2764,11 @@
     "The Hindu Group",
     "HT Media",
     "Bennett, Coleman & Co.",
+    "India Today Group",
     "Amar Ujala"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -4576,9 +2779,10 @@
     "British actor Robert Pattinson named as new James Bond"
    ],
    "hindi_headlines": [
+    "कभी वैम्पायर फिर बैटमैन, अब जेम्स बॉन्ड बनकर छाएंगे रॉबर्ट पैटिनसन!",
     "रॉबर्ट पैटिनसन: जेम्स बॉन्ड बनने पर क्या बोले अभिनेता? शाही परिवार ने किया स्वागत, नेटिजंस ने दिया ऐसा रिएक्शन"
    ],
-   "hindi_news": 1,
+   "hindi_news": 2,
    "geos": [],
    "region": "world",
    "india_link": true,
@@ -4630,124 +2834,18 @@
     "outlet:The Hindu Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
     "outlet:Amar Ujala",
     "google-news:British actor Robert Pattinson named as new James Bond"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261118-Q1159",
-   "qid": "Q1159",
-   "title": "Andhra Pradesh",
-   "name": "Andhra Pradesh",
-   "phrase": "Andhra",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-   "story_keys": [
-    "evacuated",
-    "gas",
-    "leak",
-    "panic",
-    "trigger"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T06:41:48+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "Indian Express Group",
-    "DB Corp",
+   "hindi_owners": [
     "India Today Group"
    ],
-   "fame": 125000,
-   "news": 125000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-    "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-    "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-    "Gas leak sparks panic in Andhra Pradesh, villages evacuated"
-   ],
-   "hindi_headlines": [
-    "Cyclone Akvan LIVE Updates: 'अकवान' तूफान के खतरे से हड़कंप! आंध्र प्रदेश में भारी तबाही की आशंका, ओडिशा से 2 लाख लोग होंगे शिफ्ट",
-    "चक्रवात अकवान आंध्र प्रदेश की ओर बढ़ा:तीन राज्यों में बारिश का अलर्ट, बद्रीनाथ में नदी जमी, दिल्ली में AQI 333 तक पहुंचा",
-    "आंध्र प्रदेश की तरफ क्यों आ रहा तीसरा साइक्लोन? IMD ने बताई वजह"
-   ],
-   "hindi_news": 3,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "आन्ध्र प्रदेश",
-   "reports": [
-    {
-     "title": "Gas leak sparks panic in Andhra Pradesh, villages evacuated",
-     "url": "https://indianexpress.com/article/india/gas-leak-at-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-10966374/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:41:48+00:00"
-    },
-    {
-     "title": "ONGC Gas Leak Triggers Panic In Andhra Pradesh, Residents Within 1-Km Radius Evacuated",
-     "url": "https://www.news18.com/india/ongc-gas-leak-triggers-panic-in-andhra-pradesh-residents-within-1-km-radius-evacuated-ws-l-10428539.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T06:11:00+00:00"
-    },
-    {
-     "title": "Andhra gas leak: ONGC well incident triggers safety alert in Konaseema district",
-     "url": "https://www.livemint.com/news/india/andhra-gas-leak-ongc-well-incident-triggers-safety-alert-in-konaseema-district-11794891525548.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T05:05:19+00:00"
-    },
-    {
-     "title": "ONGC controls gas leak in Andhra’s Konaseema, continues to monitor situation",
-     "url": "https://www.hindustantimes.com/india-news/major-gas-leak-from-ongc-well-in-andhra-pradesh-konaseema-residents-evacuated-101794885034474.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T03:15:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:Indian Express Group",
-    "outlet:DB Corp",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "Network18",
-    "DB Corp"
-   ],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261118-Q470774",
@@ -4759,28 +2857,31 @@
    "kind": "explainer",
    "category": "sport",
    "category_hi": "खेल",
-   "story": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
+   "story": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
    "story_keys": [
-    "ahead",
-    "retire"
+    "retention",
+    "retirement"
    ],
    "date": "2026-11-17",
-   "news_at": "2026-11-17T13:56:47+00:00",
+   "news_at": "2026-11-18T01:55:44+00:00",
    "owners": [
-    "India Today Group",
     "HT Media",
     "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV",
     "Network18"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "fame": 125000,
+   "news": 125000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-    "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-    "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-    "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027"
+    "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+    "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+    "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+    "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+    "MS Dhoni's first reaction after CSK retirement",
+    "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet"
    ],
    "hindi_headlines": [
     "महेंद्र सिंह धोनी बतौर मेंटोर हो चुके है फेल, 2021 में टीम इंडिया के साथ किया था काम, चेन्नई सुपर किंग्स के लिए कैसे करेंगे चमत्कार?"
@@ -4795,50 +2896,71 @@
    "label_hi": "महेंद्र सिंह धोनी",
    "reports": [
     {
-     "title": "MS Dhoni at CSK: 5 titles, 10 finals and a new role ahead of IPL 2027",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-at-csk-5-titles-10-finals-and-a-new-role-ahead-of-ipl-2027/articleshow/135920178.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "title": "Wife Sakshi's Emotional Post After MS Dhoni's IPL Retirement Breaks The Internet",
+     "url": "https://sports.ndtv.com/cricket/wife-sakshis-emotional-post-after-ms-dhonis-ipl-retirement-breaks-the-internet-12341652#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T01:55:44+00:00"
+    },
+    {
+     "title": "MS Dhoni's first reaction after CSK retirement",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/mai-har-ek-pal-ka-shayar-hu-ms-dhonis-first-reaction-after-csk-retirement-shares-heartfelt-instagram-post/articleshow/135927055.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
      "owner": "Bennett, Coleman & Co.",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T10:04:43+00:00"
+     "at": "2026-11-17T13:17:40+00:00"
     },
     {
-     "title": "MS Dhoni retires from IPL ahead of 2027 season, to be CSK Mentor",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/ipl/top-stories/ms-dhoni-retires-from-ipl-ahead-of-2027-season-to-be-csk-mentor/articleshow/135918991.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:30:39+00:00"
-    },
-    {
-     "title": "MS Dhoni retires, appointed CSK mentor ahead of IPL 2027",
-     "url": "https://www.hindustantimes.com/cricket/ms-dhoni-retires-takes-up-csk-mentor-role-ahead-of-ipl-2027-101794907415538.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T09:26:53+00:00"
-    },
-    {
-     "title": "MS Dhoni retires from IPL, becomes Chennai Super Kings mentor",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-mentor-ipl-2027-chennai-super-kings-3040680-2026-11-17?utm_source=rss",
+     "title": "MS Dhoni reuses favourite 'main pal do pal' song to announce IPL retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-instagram-post-song-ipl-retirement-main-pal-do-pal-3040905-2026-11-17?utm_source=rss",
      "outlet": "India Today",
      "outlet_hi": "इंडिया टुडे",
      "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T09:22:03+00:00"
+     "at": "2026-11-17T13:04:59+00:00"
+    },
+    {
+     "title": "MI stand out as IPL rivals unite to celebrate MS Dhoni on retirement",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ms-dhoni-retirement-mumbai-indians-ipl-tributes-rohit-sharma-csk-mentor-3040882-2026-11-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:58:31+00:00"
+    },
+    {
+     "title": "'Best decision I ever took': Srinivasan's tribute to Dhoni after IPL retirement",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/there-is-no-csk-without-ms-dhoni-n-srinivasans-emotional-message-calls-signing-thala-in-2008-his-best-decision/articleshow/135919783.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T09:59:54+00:00"
+    },
+    {
+     "title": "MS Dhoni's uncertain IPL future: How a possible retirement could affect CSK's retentions and auction budget for 2027",
+     "url": "https://www.hindustantimes.com/cricket/ms-dhonis-uncertain-ipl-future-how-a-possible-retirement-could-affect-csks-retentions-and-auction-budget-for-2027-101794889591990.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T04:38:50+00:00"
     }
    ],
    "via": [
-    "outlet:India Today Group",
     "outlet:HT Media",
     "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
     "outlet:Network18"
    ],
    "top": {},
