@@ -1,20 +1,20 @@
 {
- "at": "2026-11-18T02:44:09+00:00",
+ "at": "2026-11-18T03:20:41+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 15 candidates from 19 trending",
-  "outlets: 1707 headlines from 50 feeds (19 owners), 21 matched to articles, 10 candidates with 2+ owners, 2 nw- stories (on): nw-20261116-akvan-cyclone, nw-20261117-siberia-aviation",
-  "explainers: 7 kh- stories (on): kh-20261118-Q396412, kh-20261118-Q163225, kh-20261118-Q305177, kh-20261118-Q470774; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer Delhi-NCR / GRAP Stage III: no Wikipedia article that can be its centre; explainer Andhra Pradesh: fewer than 3 owners' headlines name it and the story",
+  "watch: 17 candidates from 21 trending",
+  "outlets: 1699 headlines from 50 feeds (19 owners), 21 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261116-akvan-cyclone",
+  "explainers: 8 kh- stories (on): kh-20261118-Q396412, kh-20261118-Q163225, kh-20261118-Q7489358, kh-20261118-Q305177; dropped: explainer Washington: no Wikipedia article that can be its centre; explainer Andhra Pradesh: fewer than 3 owners' headlines name it and the story; explainer Manila: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
+  "drop kh-20261118-Q7489358: too low in Google News India's top stories (place 0.05, needs 0.35)",
   "drop kh-20261118-Q396412: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261118-Q470774: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261118-Q796885: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261118-Q470774: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261118-Q36767: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261118-Q305177: a world statement, politics or diplomacy story with no India connection",
-  "hold wk-Q142193498: last Short went out 0.7 h ago",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q142193498, nw-20261117-siberia-aviation; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261118-Q470774",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wk-Q142193498; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261118-Q470774",
   "channel: about, playlists done; nothing left to do"
  ]
 }
