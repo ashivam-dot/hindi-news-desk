@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-18T15:19:41+00:00. Scored Shorts (views at 24 h): 162. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-18T18:22:51+00:00. Scored Shorts (views at 24 h): 162. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 54.4% through; a group's retention is blended into its lift at 0.5.
@@ -25,16 +25,16 @@ Retention: a typical Short is watched 54.4% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261118-Q37293-update | 2026-11-18T08:39 | entertainment | world | sensitive | india | 12 | 12 |  |
-| wk-Q142193498 | 2026-11-18T05:14 | explosion | world | sensitive | world | 3 | 3 |  |
-| kh-20261118-Q163225 | 2026-11-18T02:03 | news | india | naam-niyam | india | 76 | 7 |  |
-| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 442 | 227 | 398 |
-| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 20 | 5 | 19 |
+| kh-20261118-Q37293-update | 2026-11-18T08:39 | entertainment | world | sensitive | india | 26 | 12 |  |
+| wk-Q142193498 | 2026-11-18T05:14 | explosion | world | sensitive | world | 4 | 3 |  |
+| kh-20261118-Q163225 | 2026-11-18T02:03 | news | india | naam-niyam | india | 108 | 7 |  |
+| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 463 | 227 | 398 |
+| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 25 | 5 | 19 |
 | kh-20261117-Q132726 | 2026-11-17T01:48 | court | india | naam-niyam | india | 40 | 7 | 38 |
 | kh-20261116-Q10230 | 2026-11-16T07:54 | news | india | sensitive | india | 41 | 12 | 17 |
 | kh-20261116-Q7768 | 2026-11-16T05:40 | diplomacy | world | other | india | 1 | 0 | 1 |
 | kh-20261116-Q37293-update | 2026-11-16T02:10 | entertainment | world | naam-niyam | india | 11 | 3 | 11 |
-| kh-20261115-Q1538 | 2026-11-15T08:20 | aviation | india | sensitive | india | 87 | 41 | 47 |
+| kh-20261115-Q1538 | 2026-11-15T08:20 | aviation | india | sensitive | india | 88 | 41 | 47 |
 | kh-20261115-Q16186720 | 2026-11-15T04:42 | economy | india | naam-niyam | india | 3 | 1 | 3 |
 | kh-20261115-Q1156 | 2026-11-15T02:27 | news | india | sensitive | india | 4 | 2 | 2 |
 | wk-Q142149760 | 2026-11-14T07:11 | disaster | world | breaking | world | 18 | 5 | 11 |
