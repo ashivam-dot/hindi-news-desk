@@ -1,22 +1,21 @@
 {
- "at": "2026-11-18T18:22:51+00:00",
+ "at": "2026-11-18T19:27:03+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 162 scored Shorts, lifts {'category:aviation': {'n': 6, 'lift': 1.043, 'typical_views_24h': 50, 'n_retention': 6, 'typical_view_pct': 53.9}, 'category:protest': {'n': 5, 'lift': 0.761, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.286, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
+  "review: state/REVIEW.md for 2026-11-19, 88 scored Shorts, 13 groups judged; review day 2026-11-19 recorded",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 22 candidates from 20 trending",
-  "revisit kh-20261119-Q10218-update: 6 owners' new reports on Rahul Gandhi (1153 views before); revisit Q37293: last Short 10 h ago; revisit kh-20261119-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261119-Q163225-update: 6 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261119-Q3243690-update: 3 owners' new reports on Chief Justice of India",
-  "outlets: 1852 headlines from 48 feeds (18 owners), 34 matched to articles, 11 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 10 kh- stories (on): kh-20261119-Q163225, kh-20261119-Q3764926, kh-20261119-Q5640425, kh-20261119-Q3002584; dropped: explainer November / Jeddah Riyadh Madinah: no Wikipedia article that can be its centre; explainer Sharad Kapoor: fewer than 3 owners' headlines name it and the story; explainer Ramayana: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['wikidata recent deaths: HTTP 502', 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "watch: 27 candidates from 28 trending",
+  "revisit kh-20261119-Q10218-update: 6 owners' new reports on Rahul Gandhi (1153 views before); revisit Q37293: last Short 11 h ago; revisit kh-20261119-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261119-Q163225-update: 7 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261119-Q3243690-update: 4 owners' new reports on Chief Justice of India",
+  "outlets: 1870 headlines from 50 feeds (19 owners), 34 matched to articles, 16 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
+  "explainers: 14 kh- stories (on): kh-20261119-Q213380, kh-20261119-Q163225, kh-20261119-Q59177, kh-20261119-Q10218; dropped: explainer COP India: fewer than 3 owners' headlines name it and the story; explainer Sharad Kapoor: fewer than 3 owners' headlines name it and the story; explainer Ramayana: fewer than 3 owners' headlines name it and the story",
   "hold wp-2026_Kulgam_attack: outside 07:00-24:00 IST",
-  "drop kh-20261119-Q3764926: too low in Google News India's top stories (place 0.09, needs 0.35)",
-  "drop kh-20261119-Q141539509: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "hold kh-20261119-Q213380: outside 07:00-24:00 IST",
   "drop kh-20261119-Q5640425: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261119-Q470774: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261119-Q3002584: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Kulgam_attack, kh-20261119-Q3764926, kh-20261119-Q3243690-update, kh-20261119-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q7747-update",
+  "hold nw-20261118-akvan-cyclone: outside 07:00-24:00 IST",
+  "drop kh-20261119-Q141539509: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "hold kh-20261119-Q2747456: outside 07:00-24:00 IST",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Kulgam_attack, kh-20261119-Q213380, kh-20261119-Q36678, kh-20261119-Q5024800, kh-20261119-Q3243690-update, kh-20261119-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }

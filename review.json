@@ -1,5 +1,5 @@
 {
- "day": "2026-11-18",
+ "day": "2026-11-19",
  "reviews": {
   "2026-11-05": {
    "lane:naam-niyam": "HOLD (median x1.34)",
@@ -23,6 +23,30 @@
    "rank:3": "HOLD (median x1.13)",
    "rank:4": "HOLD (median x1.46)",
    "rank:5+": "HOLD (median x0.72)"
+  },
+  "2026-11-19": {
+   "lane:breaking": "n<10: no verdict",
+   "lane:naam-niyam": "HOLD (median x1.49)",
+   "lane:obituary": "n<10: no verdict",
+   "lane:other": "STOP (second cut in a row, median x0.37)",
+   "lane:paisa": "n<10: no verdict",
+   "lane:rajneeti": "SCALE (engaged share and subscriber rate)",
+   "lane:sensitive": "CUT (median x0.31, engaged share not above baseline)",
+   "lane:unlabelled": "n<10: no verdict",
+   "variant:none": "HOLD (median x1.18)",
+   "slot:00-06": "n<10: no verdict",
+   "slot:06-08": "HOLD (median x0.86)",
+   "slot:08-09": "n<10: no verdict",
+   "slot:09-12": "HOLD (median x0.75)",
+   "slot:12-14": "n<10: no verdict",
+   "slot:14-18": "SCALE (median x2.56)",
+   "slot:18-20": "n<10: no verdict",
+   "slot:20-24": "SCALE (median x1.59)",
+   "rank:1": "HOLD (median x0.82)",
+   "rank:2": "HOLD (median x0.94)",
+   "rank:3": "HOLD (median x1.43)",
+   "rank:4": "HOLD (median x1.25)",
+   "rank:5+": "n<10: no verdict"
   }
  }
 }
