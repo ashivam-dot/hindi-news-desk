@@ -1,5 +1,5 @@
 {
- "at": "2026-11-18T06:49:16+00:00",
+ "at": "2026-11-18T07:05:50+00:00",
  "trending": [
   {
    "id": "kh-20261118-Q10218",
@@ -9,8 +9,8 @@
    "phrase": "Rahul Gandhi",
    "person": true,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
    "story": "'Leader Of Anti-India Propaganda': BJP Slams Rahul Gandhi Over 'Economic Disaster' Remark At Columbia",
    "story_keys": [
     "anti-india",
@@ -32,7 +32,8 @@
     "HT Media",
     "Amar Ujala",
     "NDTV",
-    "BBC"
+    "BBC",
+    "ABP Group"
    ],
    "fame": 400000,
    "news": 400000,
@@ -132,20 +133,20 @@
     "outlet:Amar Ujala",
     "outlet:NDTV",
     "outlet:BBC",
+    "outlet:ABP Group",
     "google-news:India sitting on 'economic disaster': Rahul Gandhi at Columbia University",
     "google-news:Rahul Gandhi invokes Hindu faith to defend his ‘Mama sitting on Papa’s lap’ remark",
     "google-news:Warning for Rahul Gandhi from ex-ally: You weakened CJP movement, divided the streets"
    ],
    "top": {
-    "IN-nation": 10,
-    "IN-hi-nation": 11
+    "IN-hi": 7,
+    "IN-nation": 7,
+    "IN-hi-nation": 6
    },
-   "top_score": 0.48,
+   "top_score": 1.135,
    "top_headlines": [
-    "राहुल गांधी की शिव-पार्वती वाली दलील पर BJP ने कसा तंज, अलाउद्दीन खिलजी वाला पूछा सवाल",
-    "राहुल गांधी की मौजूदगी में इटली के नेता ने लगाया 'वोट चोर-गद्दी छोड़' का नारा, बीजेपी क्या बोली",
-    "India sitting on 'economic disaster': Rahul Gandhi at Columbia University",
-    "Rahul Gandhi invokes Hindu faith to defend his ‘Mama sitting on Papa’s lap’ remark"
+    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
+    "India sitting on 'economic disaster': Rahul Gandhi at Columbia University"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -392,6 +393,215 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261118-Q3243690",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "CJI",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+   "story_keys": [
+    "against",
+    "contempt",
+    "issue",
+    "lawyer",
+    "notice",
+    "plea",
+    "remark"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T06:15:17+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+    "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
+    "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
+    "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
+    "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
+    "Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
+     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-contempt-notice-lawyer-remarks-chief-justice-of-india-surya-kant-ptag-3041272-2026-11-18?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T06:15:17+00:00"
+    },
+    {
+     "title": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+     "url": "https://www.hindustantimes.com/india-news/supreme-court-cji-surya-kant-notice-contempt-petition-101794981935302.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T06:09:36+00:00"
+    },
+    {
+     "title": "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
+     "url": "https://timesofindia.indiatimes.com/india/supreme-court-issues-contempt-notice-to-lawyer-over-remarks-against-cji-surya-kant/articleshow/135951002.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T05:57:50+00:00"
+    },
+    {
+     "title": "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
+     "url": "https://www.hindustantimes.com/india-news/unsavoury-remarks-against-cji-sc-issues-contempt-notice-to-lawyer-101794980386255.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T05:39:45+00:00"
+    },
+    {
+     "title": "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
+     "url": "https://www.hindustantimes.com/india-news/supreme-court-to-hear-tomorrow-plea-for-contempt-action-against-lawyer-over-remarks-at-cji-surya-kant-pravin-singhal-101794903651130.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T08:24:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "google-news:Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant",
+    "google-news:Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 5
+   },
+   "top_score": 0.99,
+   "top_headlines": [
+    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant",
+    "Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261118-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+   "story_keys": [
+    "chip"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-17T13:31:09+00:00",
+   "owners": [
+    "BBC",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia partner Megaspeed being investigated by US government over chip exports",
+    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T11:17:32+00:00"
+    },
+    {
+     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:31:09+00:00"
+    },
+    {
+     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:32:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "google-news:Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "Modi Tries to End Photo-Op With Trump in Awkward Quad Briefing",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
    "id": "kh-20261118-Q13562231",
    "qid": "Q13562231",
    "title": "Mary Peltola",
@@ -484,9 +694,9 @@
     "google-news:Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
    "top": {
-    "IN": 3
+    "IN": 4
    },
-   "top_score": 0.9,
+   "top_score": 0.85,
    "top_headlines": [
     "Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
@@ -495,280 +705,13 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261118-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-   "story_keys": [
-    "against",
-    "contempt",
-    "issue",
-    "lawyer",
-    "notice",
-    "plea",
-    "remark"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-18T06:15:17+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-    "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
-    "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
-    "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
-    "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
-    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
-     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-contempt-notice-lawyer-remarks-chief-justice-of-india-surya-kant-ptag-3041272-2026-11-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T06:15:17+00:00"
-    },
-    {
-     "title": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-     "url": "https://www.hindustantimes.com/india-news/supreme-court-cji-surya-kant-notice-contempt-petition-101794981935302.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T06:09:36+00:00"
-    },
-    {
-     "title": "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
-     "url": "https://timesofindia.indiatimes.com/india/supreme-court-issues-contempt-notice-to-lawyer-over-remarks-against-cji-surya-kant/articleshow/135951002.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T05:57:50+00:00"
-    },
-    {
-     "title": "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
-     "url": "https://www.hindustantimes.com/india-news/unsavoury-remarks-against-cji-sc-issues-contempt-notice-to-lawyer-101794980386255.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T05:39:45+00:00"
-    },
-    {
-     "title": "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
-     "url": "https://www.hindustantimes.com/india-news/supreme-court-to-hear-tomorrow-plea-for-contempt-action-against-lawyer-over-remarks-at-cji-surya-kant-pravin-singhal-101794903651130.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:24:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "google-news:Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "top": {
-    "IN-nation": 11
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261118-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-   "story_keys": [
-    "chip"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T13:31:09+00:00",
-   "owners": [
-    "BBC",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia partner Megaspeed being investigated by US government over chip exports",
-    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-    "Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T11:17:32+00:00"
-    },
-    {
-     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T13:31:09+00:00"
-    },
-    {
-     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T12:32:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "rajneeti"
-  },
-  {
-   "qid": "Q142193498",
-   "title": "2026 Crimean Bridge explosions",
-   "fame": 150000,
-   "views": 0,
-   "traffic": 0,
-   "news": 150000,
-   "news_at": "2026-11-18T02:30:00+00:00",
-   "headlines": [
-    "How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
-    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
-   ],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [
-    "US",
-    "world"
-   ],
-   "label_hi": null,
-   "via": [
-    "google-news:How Ukraine struck the Kerch bridge, a symbol of Putin’s rule",
-    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-    "outlet:BBC"
-   ],
-   "owners": [
-    "BBC"
-   ],
-   "reports": [
-    {
-     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T21:24:35+00:00"
-    },
-    {
-     "title": "How the attack on Crimean Bridge unfolded",
-     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T15:38:10+00:00"
-    }
-   ],
-   "id": "wk-Q142193498",
-   "kind": "incident",
-   "category": "explosion",
-   "date": "2026-11-16",
-   "coords": [
-    45.308617,
-    36.505798
-   ],
-   "has_coords": true,
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": []
-  },
-  {
    "qid": "Q142084937",
    "title": "2026 Bangladesh garment workers protests",
    "fame": 100000,
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-18T06:49:16.934363+00:00",
+   "news_at": "2026-11-18T07:05:50.934208+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -893,6 +836,7 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "TV9 Network",
     "India Today Group",
     "Network18",
     "HT Media"
@@ -984,9 +928,9 @@
     "outlet:TV9 Network"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "CA sets up 'independent forum' into Sandpapergate but will not re-litigate the incident"
    ],
@@ -1026,6 +970,89 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261118-Q2652980",
+   "qid": "Q2652980",
+   "title": "Crimean Bridge",
+   "name": "Crimean Bridge",
+   "phrase": "Kerch Bridge",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+   "story_keys": [
+    "strike"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T03:48:49+00:00",
+   "owners": [
+    "HT Media",
+    "BBC",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+    "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge",
+    "Ukrainian Drones, Missiles Strike Kerch Bridge That Links Russia With Crimea"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge",
+     "url": "https://www.bbc.co.uk/news/articles/cq7825234lgmo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T17:19:57+00:00"
+    },
+    {
+     "title": "Ukrainian Drones, Missiles Strike Kerch Bridge That Links Russia With Crimea",
+     "url": "https://www.ndtv.com/world-news/ukrainian-drones-missiles-strike-kerch-bridge-that-links-russia-with-crimea-12341620#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T03:48:49+00:00"
+    },
+    {
+     "title": "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+     "url": "https://www.livemint.com/news/world/russiaukraine-war-section-of-kerch-bridge-connecting-moscow-to-its-prized-territory-crimea-collapses-in-kyiv-strike-11794903231307.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T08:25:41+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:BBC",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "US launches fresh strikes on Iran, targets missile site on Qeshm Island"
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261118-Q1058",
@@ -1105,9 +1132,13 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
@@ -1321,6 +1352,68 @@
    "hindi_owners": []
   },
   {
+   "qid": "Q142193498",
+   "title": "2026 Crimean Bridge explosions",
+   "fame": 25000,
+   "views": 0,
+   "traffic": 0,
+   "news": 25000,
+   "news_at": "2026-11-17T21:24:35+00:00",
+   "headlines": [
+    "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine"
+   ],
+   "hindi_news": 0,
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": false,
+   "geos": [
+    "world"
+   ],
+   "label_hi": null,
+   "via": [
+    "google-news:Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+    "outlet:BBC"
+   ],
+   "owners": [
+    "BBC"
+   ],
+   "reports": [
+    {
+     "title": "Putin's Crimean Bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
+     "url": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T21:24:35+00:00"
+    },
+    {
+     "title": "How the attack on Crimean Bridge unfolded",
+     "url": "https://www.bbc.co.uk/news/articles/crz9dgz28zwdo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T15:38:10+00:00"
+    }
+   ],
+   "id": "wk-Q142193498",
+   "kind": "incident",
+   "category": "explosion",
+   "date": "2026-11-16",
+   "coords": [
+    45.308617,
+    36.505798
+   ],
+   "has_coords": true,
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": []
+  },
+  {
    "qid": "Q141921562",
    "title": "Salvadoran military intervention in Haiti",
    "fame": 21891,
@@ -1406,68 +1499,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q2344792",
-   "title": "Hossein Wahid Khorasani",
-   "fame": 13310,
-   "views": 13310,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q2344792",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-17",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q7329244",
-   "title": "Richard Sterban",
-   "fame": 9414,
-   "views": 9414,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7329244",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -1570,9 +1601,9 @@
     "google-news:Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
    "top": {
-    "IN": 3
+    "IN": 4
    },
-   "top_score": 0.9,
+   "top_score": 0.85,
    "top_headlines": [
     "Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
@@ -1913,12 +1944,104 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "TV9 Network",
     "India Today Group",
     "Network18",
     "HT Media"
    ],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261118-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+   "story_keys": [
+    "chip"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-17T13:31:09+00:00",
+   "owners": [
+    "BBC",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia partner Megaspeed being investigated by US government over chip exports",
+    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T11:17:32+00:00"
+    },
+    {
+     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:31:09+00:00"
+    },
+    {
+     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:32:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "google-news:Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "Modi Tries to End Photo-Op With Trump in Awkward Quad Briefing",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
   },
   {
    "id": "kh-20261118-Q3002584",
@@ -2004,9 +2127,9 @@
     "outlet:TV9 Network"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "CA sets up 'independent forum' into Sandpapergate but will not re-litigate the incident"
    ],
@@ -2017,91 +2140,93 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261118-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
+   "id": "kh-20261118-Q1058",
+   "qid": "Q1058",
+   "title": "Narendra Modi",
+   "name": "Narendra Modi",
+   "phrase": "PM Modi",
+   "person": true,
    "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
    "story_keys": [
-    "chip"
+    "constructive",
+    "manila",
+    "summit"
    ],
    "date": "2026-11-17",
-   "news_at": "2026-11-17T13:31:09+00:00",
+   "news_at": "2026-11-17T15:07:56+00:00",
    "owners": [
-    "BBC",
     "HT Media",
-    "The Hindu Group"
+    "Network18",
+    "India Today Group"
    ],
-   "fame": 200000,
-   "news": 200000,
+   "fame": 75000,
+   "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Nvidia partner Megaspeed being investigated by US government over chip exports",
-    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-    "Nvidia board says Jensen Huang will not return as CEO"
+    "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
+    "'A Constructive And Trusted Partnership': PM Modi At Quad Summit In Manila",
+    "\"Shall we move?\" PM Modi signals time to get down to business at Quad summit"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नरेन्द्र मोदी",
    "reports": [
     {
-     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T11:17:32+00:00"
-    },
-    {
-     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
+     "title": "\"Shall we move?\" PM Modi signals time to get down to business at Quad summit",
+     "url": "https://www.indiatoday.in/newsmo/short-videos/shall-we-move-pm-modi-signals-time-to-get-down-to-business-at-quad-summit-3041021-2026-11-17?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T13:31:09+00:00"
+     "at": "2026-11-17T15:07:56+00:00"
     },
     {
-     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
+     "title": "'A Constructive And Trusted Partnership': PM Modi At Quad Summit In Manila",
+     "url": "https://www.news18.com/india/it-is-a-constructed-and-trusted-partnership-pm-modi-speaks-at-quad-summit-in-manila-10429261.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:11:52+00:00"
+    },
+    {
+     "title": "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
+     "url": "https://www.hindustantimes.com/india-news/constructive-and-trusted-partnership-pm-modi-on-quad-partnership-at-manila-summit-101794913706456.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-17T12:32:58+00:00"
+     "at": "2026-11-17T11:12:23+00:00"
     }
    ],
    "via": [
-    "outlet:BBC",
     "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:Nvidia board says Jensen Huang will not return as CEO"
+    "outlet:Network18",
+    "outlet:India Today Group"
    ],
    "top": {
-    "IN": 6
+    "IN": 12
    },
-   "top_score": 0.75,
+   "top_score": 0.45,
    "top_headlines": [
-    "Nvidia board says Jensen Huang will not return as CEO"
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila"
    ],
    "hindi_owners": [],
-   "audience": "world",
-   "lane": "rajneeti"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "qid": "Q7298201",
@@ -2223,7 +2348,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-18T06:49:16.934363+00:00",
+   "news_at": "2026-11-18T07:05:50.934208+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -2249,91 +2374,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261118-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
-   "story_keys": [
-    "constructive",
-    "manila",
-    "summit"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T15:07:56+00:00",
-   "owners": [
-    "HT Media",
-    "Network18",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
-    "'A Constructive And Trusted Partnership': PM Modi At Quad Summit In Manila",
-    "\"Shall we move?\" PM Modi signals time to get down to business at Quad summit"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
-   "reports": [
-    {
-     "title": "\"Shall we move?\" PM Modi signals time to get down to business at Quad summit",
-     "url": "https://www.indiatoday.in/newsmo/short-videos/shall-we-move-pm-modi-signals-time-to-get-down-to-business-at-quad-summit-3041021-2026-11-17?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T15:07:56+00:00"
-    },
-    {
-     "title": "'A Constructive And Trusted Partnership': PM Modi At Quad Summit In Manila",
-     "url": "https://www.news18.com/india/it-is-a-constructed-and-trusted-partnership-pm-modi-speaks-at-quad-summit-in-manila-10429261.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T13:11:52+00:00"
-    },
-    {
-     "title": "‘Constructive and trusted’: PM Modi on Quad partnership at Manila Summit",
-     "url": "https://www.hindustantimes.com/india-news/constructive-and-trusted-partnership-pm-modi-on-quad-partnership-at-manila-summit-101794913706456.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T11:12:23+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Network18",
-    "outlet:India Today Group"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
   },
   {
    "qid": "Q123054388",
@@ -2429,37 +2469,6 @@
    "lane": "obituary"
   },
   {
-   "qid": "Q2344792",
-   "title": "Hossein Wahid Khorasani",
-   "fame": 13310,
-   "views": 13310,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q2344792",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-17",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
    "qid": "Q1621643",
    "title": "Miguel Ángel Félix Gallardo",
    "fame": 15039,
@@ -2483,37 +2492,6 @@
    "kind": "death",
    "category": "death",
    "date": "2026-11-15",
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "obituary"
-  },
-  {
-   "qid": "Q7329244",
-   "title": "Richard Sterban",
-   "fame": 9414,
-   "views": 9414,
-   "traffic": 0,
-   "news": 0,
-   "news_at": null,
-   "headlines": [],
-   "hindi_news": 0,
-   "hindi_headlines": [],
-   "region": "world",
-   "india_link": false,
-   "geos": [],
-   "label_hi": null,
-   "via": [
-    "wikipedia-top-2026-11-17"
-   ],
-   "owners": [],
-   "reports": [],
-   "id": "wk-Q7329244",
-   "kind": "death",
-   "category": "death",
-   "date": "2026-11-14",
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
@@ -2554,20 +2532,21 @@
   }
  ],
  "notes": [
-  "outlets: 1695 headlines from 48 feeds (18 owners), 14 matched to articles, 10 candidates with 2+ owners, 1 nw- stories (on): nw-20261117-akvan-cyclone",
-  "explainers: 9 kh- stories (on): kh-20261118-Q10218, kh-20261118-Q470774, kh-20261118-Q396412, kh-20261118-Q13562231; dropped: explainer Trump Xi: fewer than 3 owners' headlines name it and the story; explainer Crimea: fewer than 3 owners' headlines name it and the story; explainer 'For 7 Years, Fans Guessed The Next James Bond. No One Saw Ro': no name to tell it by",
+  "outlets: 1711 headlines from 48 feeds (18 owners), 9 matched to articles, 11 candidates with 2+ owners, 1 nw- stories (on): nw-20261117-akvan-cyclone",
+  "explainers: 10 kh- stories (on): kh-20261118-Q10218, kh-20261118-Q470774, kh-20261118-Q396412, kh-20261118-Q3243690; dropped: explainer Trump Xi: fewer than 3 owners' headlines name it and the story; explainer 'For 7 Years, Fans Guessed The Next James Bond. No One Saw Ro': no name to tell it by; explainer Xi Jinping: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again"
  ],
  "trend_errors": [
+  "wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)",
   "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1695,
+  "headlines": 1711,
   "feeds": 48,
   "owners": 18,
-  "matched": 14,
-  "corroborated": 10
+  "matched": 9,
+  "corroborated": 11
  },
  "emerging": [
   {
@@ -2668,6 +2647,7 @@
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [
+    "TV9 Network",
     "India Today Group",
     "Network18",
     "HT Media"
@@ -2685,8 +2665,8 @@
    "phrase": "Rahul Gandhi",
    "person": true,
    "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
    "story": "'Leader Of Anti-India Propaganda': BJP Slams Rahul Gandhi Over 'Economic Disaster' Remark At Columbia",
    "story_keys": [
     "anti-india",
@@ -2708,7 +2688,8 @@
     "HT Media",
     "Amar Ujala",
     "NDTV",
-    "BBC"
+    "BBC",
+    "ABP Group"
    ],
    "fame": 400000,
    "news": 400000,
@@ -2808,20 +2789,20 @@
     "outlet:Amar Ujala",
     "outlet:NDTV",
     "outlet:BBC",
+    "outlet:ABP Group",
     "google-news:India sitting on 'economic disaster': Rahul Gandhi at Columbia University",
     "google-news:Rahul Gandhi invokes Hindu faith to defend his ‘Mama sitting on Papa’s lap’ remark",
     "google-news:Warning for Rahul Gandhi from ex-ally: You weakened CJP movement, divided the streets"
    ],
    "top": {
-    "IN-nation": 10,
-    "IN-hi-nation": 11
+    "IN-hi": 7,
+    "IN-nation": 7,
+    "IN-hi-nation": 6
    },
-   "top_score": 0.48,
+   "top_score": 1.135,
    "top_headlines": [
-    "राहुल गांधी की शिव-पार्वती वाली दलील पर BJP ने कसा तंज, अलाउद्दीन खिलजी वाला पूछा सवाल",
-    "राहुल गांधी की मौजूदगी में इटली के नेता ने लगाया 'वोट चोर-गद्दी छोड़' का नारा, बीजेपी क्या बोली",
-    "India sitting on 'economic disaster': Rahul Gandhi at Columbia University",
-    "Rahul Gandhi invokes Hindu faith to defend his ‘Mama sitting on Papa’s lap’ remark"
+    "सोनिया गांधी की किताब के लॉन्च पर राहुल गांधी ने निजी ज़िंदगी के बारे में क्या बताया, ज‍िसकी चर्चा हो रही है",
+    "India sitting on 'economic disaster': Rahul Gandhi at Columbia University"
    ],
    "hindi_owners": [
     "TV9 Network",
@@ -3068,6 +3049,215 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261118-Q3243690",
+   "qid": "Q3243690",
+   "title": "Chief Justice of India",
+   "name": "Chief Justice of India",
+   "phrase": "CJI",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+   "story_keys": [
+    "against",
+    "contempt",
+    "issue",
+    "lawyer",
+    "notice",
+    "plea",
+    "remark"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T06:15:17+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "India Today Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+    "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
+    "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
+    "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
+    "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
+    "Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारत के मुख्य न्यायाधीश",
+   "reports": [
+    {
+     "title": "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
+     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-contempt-notice-lawyer-remarks-chief-justice-of-india-surya-kant-ptag-3041272-2026-11-18?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T06:15:17+00:00"
+    },
+    {
+     "title": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
+     "url": "https://www.hindustantimes.com/india-news/supreme-court-cji-surya-kant-notice-contempt-petition-101794981935302.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T06:09:36+00:00"
+    },
+    {
+     "title": "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
+     "url": "https://timesofindia.indiatimes.com/india/supreme-court-issues-contempt-notice-to-lawyer-over-remarks-against-cji-surya-kant/articleshow/135951002.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T05:57:50+00:00"
+    },
+    {
+     "title": "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
+     "url": "https://www.hindustantimes.com/india-news/unsavoury-remarks-against-cji-sc-issues-contempt-notice-to-lawyer-101794980386255.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T05:39:45+00:00"
+    },
+    {
+     "title": "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
+     "url": "https://www.hindustantimes.com/india-news/supreme-court-to-hear-tomorrow-plea-for-contempt-action-against-lawyer-over-remarks-at-cji-surya-kant-pravin-singhal-101794903651130.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T08:24:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "google-news:Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant",
+    "google-news:Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 5
+   },
+   "top_score": 0.99,
+   "top_headlines": [
+    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant",
+    "Supreme Court seeks lawyer’s response to contempt of court case for his remarks against CJI Surya Kant"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261118-Q182477",
+   "qid": "Q182477",
+   "title": "Nvidia",
+   "name": "Nvidia",
+   "phrase": "Nvidia",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+   "story_keys": [
+    "chip"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-17T13:31:09+00:00",
+   "owners": [
+    "BBC",
+    "HT Media",
+    "The Hindu Group"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Nvidia partner Megaspeed being investigated by US government over chip exports",
+    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "एनवीडिया",
+   "reports": [
+    {
+     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
+     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T11:17:32+00:00"
+    },
+    {
+     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
+     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T13:31:09+00:00"
+    },
+    {
+     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
+     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T12:32:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:BBC",
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "google-news:Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "google-news:Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "top": {
+    "IN": 2
+   },
+   "top_score": 0.95,
+   "top_headlines": [
+    "Modi Tries to End Photo-Op With Trump in Awkward Quad Briefing",
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila",
+    "Nvidia Board does not intend to reinstate Jensen Huang as CEO: Chairperson"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "rajneeti"
+  },
+  {
    "id": "kh-20261118-Q13562231",
    "qid": "Q13562231",
    "title": "Mary Peltola",
@@ -3160,217 +3350,15 @@
     "google-news:Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
    "top": {
-    "IN": 3
+    "IN": 4
    },
-   "top_score": 0.9,
+   "top_score": 0.85,
    "top_headlines": [
     "Mary Peltola flips Alaska Senate seat in another Democratic win"
    ],
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261118-Q3243690",
-   "qid": "Q3243690",
-   "title": "Chief Justice of India",
-   "name": "Chief Justice of India",
-   "phrase": "CJI",
-   "person": false,
-   "kind": "explainer",
-   "category": "court",
-   "category_hi": "अदालत",
-   "story": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-   "story_keys": [
-    "against",
-    "contempt",
-    "issue",
-    "lawyer",
-    "notice",
-    "plea",
-    "remark"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-18T06:15:17+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-    "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
-    "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
-    "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
-    "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
-    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारत के मुख्य न्यायाधीश",
-   "reports": [
-    {
-     "title": "Lawyer challenges CJI's integrity in courtroom, SC initiates contempt proceedings",
-     "url": "https://www.indiatoday.in/india/law-news/story/supreme-court-contempt-notice-lawyer-remarks-chief-justice-of-india-surya-kant-ptag-3041272-2026-11-18?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T06:15:17+00:00"
-    },
-    {
-     "title": "Supreme Court issues notice on contempt plea against lawyer over remarks on CJI",
-     "url": "https://www.hindustantimes.com/india-news/supreme-court-cji-surya-kant-notice-contempt-petition-101794981935302.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T06:09:36+00:00"
-    },
-    {
-     "title": "SC issues contempt notice to lawyer over remarks against CJI Surya Kant",
-     "url": "https://timesofindia.indiatimes.com/india/supreme-court-issues-contempt-notice-to-lawyer-over-remarks-against-cji-surya-kant/articleshow/135951002.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T05:57:50+00:00"
-    },
-    {
-     "title": "Unsavoury remarks against CJI: SC issues contempt notice to lawyer",
-     "url": "https://www.hindustantimes.com/india-news/unsavoury-remarks-against-cji-sc-issues-contempt-notice-to-lawyer-101794980386255.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-18T05:39:45+00:00"
-    },
-    {
-     "title": "Plea in SC seeks contempt action against lawyer over remarks on CJI, hearing tomorrow",
-     "url": "https://www.hindustantimes.com/india-news/supreme-court-to-hear-tomorrow-plea-for-contempt-action-against-lawyer-over-remarks-at-cji-surya-kant-pravin-singhal-101794903651130.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T08:24:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group",
-    "google-news:Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "top": {
-    "IN-nation": 11
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "Supreme Court Issues Contempt Notice To Advocate Who Insulted CJI Surya Kant"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "kh-20261118-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "world",
-   "category_hi": "दुनिया",
-   "story": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-   "story_keys": [
-    "chip"
-   ],
-   "date": "2026-11-17",
-   "news_at": "2026-11-17T13:31:09+00:00",
-   "owners": [
-    "BBC",
-    "HT Media",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Nvidia partner Megaspeed being investigated by US government over chip exports",
-    "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-    "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-    "Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "Nvidia partner Megaspeed being investigated by US government over chip exports",
-     "url": "https://www.bbc.co.uk/news/articles/cmn504nq5033o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-17T11:17:32+00:00"
-    },
-    {
-     "title": "U.S. blocks China’s remote access to AI chips after Nvidia scandal; China slams move",
-     "url": "https://www.thehindu.com/news/international/us-blocks-chinas-remote-access-to-ai-chips-after-nvidia-scandal-china-slams-move/article71711869.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T13:31:09+00:00"
-    },
-    {
-     "title": "US began investigating Singaporean company Megaspeed in 2024 over suspected transfer of Nvidia chips to China",
-     "url": "https://www.livemint.com/news/us-news/us-began-investigating-singaporean-company-megaspeed-in-2024-over-suspected-transfer-of-nvidia-chips-to-china-11794917051040.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-17T12:32:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:BBC",
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "google-news:Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "top": {
-    "IN": 6
-   },
-   "top_score": 0.75,
-   "top_headlines": [
-    "Nvidia board says Jensen Huang will not return as CEO"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "rajneeti"
   },
   {
    "id": "kh-20261118-Q3002584",
@@ -3456,9 +3444,9 @@
     "outlet:TV9 Network"
    ],
    "top": {
-    "IN": 13
+    "IN": 14
    },
-   "top_score": 0.4,
+   "top_score": 0.35,
    "top_headlines": [
     "CA sets up 'independent forum' into Sandpapergate but will not re-litigate the incident"
    ],
@@ -3467,6 +3455,89 @@
    ],
    "audience": "india",
    "lane": "other"
+  },
+  {
+   "id": "kh-20261118-Q2652980",
+   "qid": "Q2652980",
+   "title": "Crimean Bridge",
+   "name": "Crimean Bridge",
+   "phrase": "Kerch Bridge",
+   "person": false,
+   "kind": "explainer",
+   "category": "world",
+   "category_hi": "दुनिया",
+   "story": "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+   "story_keys": [
+    "strike"
+   ],
+   "date": "2026-11-17",
+   "news_at": "2026-11-18T03:48:49+00:00",
+   "owners": [
+    "HT Media",
+    "BBC",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+    "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge",
+    "Ukrainian Drones, Missiles Strike Kerch Bridge That Links Russia With Crimea"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "'It was really scary': Mother describes sheltering during Russia strikes on Kyiv bridge",
+     "url": "https://www.bbc.co.uk/news/articles/cq7825234lgmo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-17T17:19:57+00:00"
+    },
+    {
+     "title": "Ukrainian Drones, Missiles Strike Kerch Bridge That Links Russia With Crimea",
+     "url": "https://www.ndtv.com/world-news/ukrainian-drones-missiles-strike-kerch-bridge-that-links-russia-with-crimea-12341620#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-18T03:48:49+00:00"
+    },
+    {
+     "title": "Russia-Ukraine war: Section of Kerch Bridge, connecting Moscow to its prized territory Crimea, collapses in Kyiv strike",
+     "url": "https://www.livemint.com/news/world/russiaukraine-war-section-of-kerch-bridge-connecting-moscow-to-its-prized-territory-crimea-collapses-in-kyiv-strike-11794903231307.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-17T08:25:41+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:BBC",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 11
+   },
+   "top_score": 0.5,
+   "top_headlines": [
+    "US launches fresh strikes on Iran, targets missile site on Qeshm Island"
+   ],
+   "hindi_owners": []
   },
   {
    "id": "kh-20261118-Q1058",
@@ -3546,9 +3617,13 @@
     "outlet:Network18",
     "outlet:India Today Group"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "Trump talks Nvidia, rare earths as he attends Quad and Asean meetings in Manila"
+   ],
    "hindi_owners": [],
    "audience": "india",
    "lane": "naam-niyam"
