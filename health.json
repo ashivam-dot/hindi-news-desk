@@ -1,20 +1,21 @@
 {
- "at": "2026-11-18T16:51:05+00:00",
+ "at": "2026-11-18T17:07:26+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 23 candidates from 27 trending",
+  "watch: 24 candidates from 25 trending",
   "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit kh-20261118-Q163225-update: 6 owners' new reports on Sonia Gandhi (813 views before); revisit Q3243690: already revisited today; revisit kh-20261118-Q7747-update: 4 owners' new reports on Vladimir Putin (253 views before); revisit Q796885 (159 views): 0 owners reported ",
-  "outlets: 1922 headlines from 50 feeds (19 owners), 20 matched to articles, 15 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
-  "explainers: 14 kh- stories (on): kh-20261118-Q213380, kh-20261118-Q163225, kh-20261118-Q10218, kh-20261118-Q7489358; dropped: explainer 'Alia Bhatt, Sonam Kapoor, Karan Johar Bring Bollywood Glam T': no name to tell it by; explainer COP India: fewer than 3 owners' headlines name it and the story; explainer Cricket Australia: fewer than 3 owners' headlines name it and the story",
-  "hold kh-20261118-Q213380: already 3 Shorts today (IST)",
+  "outlets: 1865 headlines from 48 feeds (18 owners), 32 matched to articles, 14 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 13 kh- stories (on): kh-20261118-Q163225, kh-20261118-Q141539509, kh-20261118-Q3764926, kh-20261118-Q7747; dropped: explainer Sharad Kapoor: fewer than 3 owners' headlines name it and the story; explainer Ramayana: fewer than 3 owners' headlines name it and the story; explainer Cricket Australia: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold wp-2026_Kulgam_attack: already 3 Shorts today (IST)",
   "drop kh-20261118-Q141539509: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "hold nw-20261118-akvan-cyclone: already 3 Shorts today (IST)",
-  "drop kh-20261118-Q7489358: too low in Google News India's top stories (place 0.05, needs 0.35)",
-  "drop kh-20261118-Q5640425: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261118-Q3764926: too low in Google News India's top stories (place 0.15, needs 0.35)",
   "hold kh-20261118-Q943813: already 3 Shorts today (IST)",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261118-Q213380, kh-20261118-Q5024800, kh-20261118-Q7801; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261118-Q7747-update",
+  "drop kh-20261118-Q5640425: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261118-Q7747: a world statement, politics or diplomacy story with no India connection",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Kulgam_attack, kh-20261118-Q3764926, kh-20261118-Q943813, kh-20261118-Q36678, kh-20261118-Q5024800, kh-20261118-Q7801; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261118-Q7747, kh-20261118-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
