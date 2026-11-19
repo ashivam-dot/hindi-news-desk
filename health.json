@@ -1,27 +1,30 @@
 {
- "at": "2026-11-19T09:29:01+00:00",
+ "at": "2026-11-19T10:53:55+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 165 scored Shorts, lifts {'category:aviation': {'n': 6, 'lift': 1.047, 'typical_views_24h': 50, 'n_retention': 6, 'typical_view_pct': 53.2}, 'category:protest': {'n': 5, 'lift': 0.767, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.298, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 13 candidates from 14 trending",
-  "revisit kh-20261119-Q10218-update: 4 owners' new reports on Rahul Gandhi (1153 views before); revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261119-Q7747-update: 8 owners' new reports on Vladimir Putin (253 views before); revisit Q7172014 (135 views): 1 owners reporte",
-  "outlets: 1745 headlines from 47 feeds (18 owners), 21 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
-  "explainers: 5 kh- stories (on): kh-20261119-Q163225, kh-20261119-Q173476, kh-20261119-Q106807, kh-20261119-Q5640425; dropped: explainer Modi: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Ranbir Kapoor Yash: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261119-Q5640425: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261119-Q173476: a world statement, politics or diplomacy story with no India connection",
+  "watch: 17 candidates from 18 trending",
+  "revisit kh-20261119-Q10218-update: 5 owners' new reports on Rahul Gandhi (1153 views before); revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261119-Q7747-update: 6 owners' new reports on Vladimir Putin (253 views before); revisit Q7172014 (135 views): 1 owners reporte",
+  "outlets: 1837 headlines from 49 feeds (19 owners), 28 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
+  "explainers: 5 kh- stories (on): kh-20261119-Q3520161, kh-20261119-Q796994, kh-20261119-Q558182, kh-20261119-Q173476; dropped: explainer PUC / BS-VI: no Wikipedia article that can be its centre; explainer Modi: fewer than 3 owners' headlines name it and the story; explainer Ranbir Kapoor: fewer than 3 owners' headlines name it and the story",
+  "drop kh-20261119-Q3520161: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261119-Q470774: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261119-Q558182: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop kh-20261119-Q796994: too low in Google News India's top stories (place 0.15, needs 0.35)",
   "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop wk-Q1134918: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261119-Q106807: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261119-Q7143348: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261119-Q163225; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q7747-update",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q796994, kh-20261119-Q7747-update",
   "skip nw-20261118-akvan-cyclone: gate: only 0 usable photos of Akvan (want 2)",
-  "skip kh-20261119-Q163225: gate: no draft passed the fact checks: beat 1 must open on सोनिया गाँधी: the name starting within its first 4 words, the place and time after it",
-  "skip kh-20261119-Q10218-update: gate: no draft passed the fact checks: unsupported: राहुल गाँधी का यह दौरा आगे भी जारी रहेगा",
-  "later kh-20261119-Q7747-update: this run already wrote 2 scripts",
-  "nothing eligible to publish",
-  "channel: about, playlists done; nothing left to do"
- ]
+  "skip kh-20261119-Q10218-update: gate: fewer than 2 independent outlets' articles name Rahul Gandhi",
+  "published kh-20261119-Q7747-update: https://www.youtube.com/shorts/pstBcatNog4",
+  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
+ ],
+ "published": {
+  "video_id": "pstBcatNog4",
+  "url": "https://www.youtube.com/shorts/pstBcatNog4",
+  "youtube_title": "व्लादिमीर पुतिन ने ट्रंप और जिनपिंग के साथ की समिट #shorts #vladimirputin",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
