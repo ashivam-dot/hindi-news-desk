@@ -1,5 +1,5 @@
 {
- "at": "2026-11-19T22:19:27+00:00",
+ "at": "2026-11-19T22:48:50+00:00",
  "trending": [
   {
    "id": "kh-20261120-Q37293",
@@ -238,9 +238,9 @@
     "google-news:EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
    ],
@@ -355,14 +355,15 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-18",
-   "news_at": "2026-11-19T21:23:48+00:00",
+   "news_at": "2026-11-19T22:30:40+00:00",
    "owners": [
     "HT Media",
     "Indian Express Group",
     "Network18",
     "Deutsche Welle",
     "India Today Group",
-    "The Hindu Group"
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
    ],
    "fame": 150000,
    "news": 150000,
@@ -394,6 +395,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-19T08:58:00+00:00"
+    },
+    {
+     "title": "Cyclone Akvan: Odisha braces for landfall; 3 lakh evacuated, CM holds midnight meet",
+     "url": "https://timesofindia.indiatimes.com/india/cyclone-akvan-odisha-braces-for-landfall-3-lakh-evacuated-cm-majhi-holds-midnight-meet/articleshow/136005443.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T22:30:40+00:00"
     },
     {
      "title": "Several Bengal districts under alert as cyclone Akvan likely to bring heavy rainfall",
@@ -454,16 +465,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-19T12:43:39+00:00"
-    },
-    {
-     "title": "Cyclone Akvan landfall on November 20; Andhra on alert, Odisha evacuates tons as storm's track changes",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-akvan-updates-landfall-imd-rain-alert-andhra-pradesh-odisha-cyclone-tracker-narsapur-puri-101795081832311.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T10:24:29+00:00"
     }
    ],
    "via": [
@@ -472,7 +473,8 @@
     "outlet:Network18",
     "outlet:Deutsche Welle",
     "outlet:India Today Group",
-    "outlet:The Hindu Group"
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -642,9 +644,9 @@
    "has_coords": false,
    "top": {
     "IN": 10,
-    "IN-nation": 9
+    "IN-nation": 8
    },
-   "top_score": 0.73,
+   "top_score": 0.745,
    "top_headlines": [
     "Video call, and a ‘no’ to surrender: Kashmir’s last listed local terrorist killed in Kulgam gunfight"
    ],
@@ -731,9 +733,10 @@
     "google-news:Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
    "top": {
+    "IN": 7,
     "IN-nation": 3
    },
-   "top_score": 0.54,
+   "top_score": 0.97,
    "top_headlines": [
     "Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
@@ -799,7 +802,7 @@
   },
   {
    "qid": "Q141921562",
-   "title": "Salvadoran military intervention in Haiti",
+   "title": "2026 Salvadoran military intervention in Haiti",
    "fame": 71546,
    "views": 21546,
    "traffic": 0,
@@ -1256,9 +1259,10 @@
     "google-news:Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
    "top": {
+    "IN": 7,
     "IN-nation": 3
    },
-   "top_score": 0.54,
+   "top_score": 0.97,
    "top_headlines": [
     "Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
@@ -1395,105 +1399,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "kh-20261120-Q116758847",
-   "qid": "Q116758847",
-   "title": "Anthropic",
-   "name": "Anthropic",
-   "phrase": "Anthropic",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
-   "story_keys": [
-    "debut",
-    "trillion"
-   ],
-   "date": "2026-11-19",
-   "news_at": "2026-11-19T21:36:10+00:00",
-   "owners": [
-    "Indian Express Group",
-    "India Today Group",
-    "The Hindu Group"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
-    "Anthropic’s $81.3 billion IPO beats SpaceX’s market debut record",
-    "Anthropic blows past $2 trillion in Nasdaq debut, tops SpaceX’s June listing",
-    "Wall Street ends sharply lower as Anthropic’s debut fails to revive AI fervour",
-    "The Anthropic IPO: You're Buying the Future, But at What Price?"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Wall Street ends sharply lower as Anthropic’s debut fails to revive AI fervour",
-     "url": "https://www.thehindu.com/business/markets/wall-street-ends-sharply-lower-as-anthropics-debut-fails-to-revive-ai-fervour/article71721814.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T21:36:10+00:00"
-    },
-    {
-     "title": "Anthropic blows past $2 trillion in Nasdaq debut, tops SpaceX’s June listing",
-     "url": "https://indianexpress.com/article/business/world-market/anthropic-nasdaq-debut-valuation-ai-ipo-10970472/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T17:37:36+00:00"
-    },
-    {
-     "title": "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
-     "url": "https://www.indiatoday.in/business/story/anthropic-shares-surge-34-in-nasdaq-debut-push-ai-firms-valuation-to-2-trillion-3042723-2026-11-19?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T17:04:23+00:00"
-    },
-    {
-     "title": "Anthropic’s $81.3 billion IPO beats SpaceX’s market debut record",
-     "url": "https://indianexpress.com/article/business/world-market/anthropics-81-3-billion-ipo-beats-spacexs-market-debut-record-10969125/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T02:13:42+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:India Today Group",
-    "outlet:The Hindu Group",
-    "google-news:The Anthropic IPO: You're Buying the Future, But at What Price?"
-   ],
-   "top": {
-    "IN": 15
-   },
-   "top_score": 0.3,
-   "top_headlines": [
-    "The Anthropic IPO: You're Buying the Future, But at What Price?"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261120-Q3520161",
    "qid": "Q3520161",
    "title": "Employees' Provident Fund Organisation",
@@ -1601,11 +1506,110 @@
     "google-news:EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261120-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
+   "story_keys": [
+    "debut",
+    "trillion"
+   ],
+   "date": "2026-11-19",
+   "news_at": "2026-11-19T21:36:10+00:00",
+   "owners": [
+    "Indian Express Group",
+    "India Today Group",
+    "The Hindu Group"
+   ],
+   "fame": 200000,
+   "news": 200000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
+    "Anthropic’s $81.3 billion IPO beats SpaceX’s market debut record",
+    "Anthropic blows past $2 trillion in Nasdaq debut, tops SpaceX’s June listing",
+    "Wall Street ends sharply lower as Anthropic’s debut fails to revive AI fervour",
+    "The Anthropic IPO: You're Buying the Future, But at What Price?"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Wall Street ends sharply lower as Anthropic’s debut fails to revive AI fervour",
+     "url": "https://www.thehindu.com/business/markets/wall-street-ends-sharply-lower-as-anthropics-debut-fails-to-revive-ai-fervour/article71721814.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T21:36:10+00:00"
+    },
+    {
+     "title": "Anthropic blows past $2 trillion in Nasdaq debut, tops SpaceX’s June listing",
+     "url": "https://indianexpress.com/article/business/world-market/anthropic-nasdaq-debut-valuation-ai-ipo-10970472/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T17:37:36+00:00"
+    },
+    {
+     "title": "Anthropic hits $2 trillion valuation in blockbuster Nasdaq debut, surpasses SpaceX",
+     "url": "https://www.indiatoday.in/business/story/anthropic-shares-surge-34-in-nasdaq-debut-push-ai-firms-valuation-to-2-trillion-3042723-2026-11-19?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T17:04:23+00:00"
+    },
+    {
+     "title": "Anthropic’s $81.3 billion IPO beats SpaceX’s market debut record",
+     "url": "https://indianexpress.com/article/business/world-market/anthropics-81-3-billion-ipo-beats-spacexs-market-debut-record-10969125/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T02:13:42+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:India Today Group",
+    "outlet:The Hindu Group",
+    "google-news:The Anthropic IPO: You're Buying the Future, But at What Price?"
+   ],
+   "top": {
+    "IN": 15
+   },
+   "top_score": 0.3,
+   "top_headlines": [
+    "The Anthropic IPO: You're Buying the Future, But at What Price?"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -2057,6 +2061,7 @@
     "HT Media",
     "The Hindu Group",
     "Indian Express Group",
+    "Bennett, Coleman & Co.",
     "Network18"
    ],
    "fame": 1,
@@ -2197,7 +2202,8 @@
     "India Today Group",
     "The Hindu Group",
     "HT Media",
-    "Indian Express Group"
+    "Indian Express Group",
+    "Bennett, Coleman & Co."
    ],
    "fame": 1,
    "news": 0,
@@ -2209,7 +2215,7 @@
     "Graca Machel conferred Indira Gandhi Prize; Sonia Gandhi recalls shared ideals of social justice",
     "Siddaramaiah clears air around seating at Sonia Gandhi's book launch: ‘Arrived late, front row was taken'",
     "‘World knew the Prime Minister, we knew a loving person’: Sonia Gandhi shares memories with Indira Gandhi",
-    "Savarkar's grandnephew mulls legal action against Sonia Gandhi over remarks in memoir"
+    "Sikh family preserves Sonia Gandhi's ancestral home in Italian village"
    ],
    "hindi_headlines": [],
    "region": "india",
@@ -2265,6 +2271,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-19T12:47:33+00:00"
+    },
+    {
+     "title": "Sikh family preserves Sonia Gandhi's ancestral home in Italian village",
+     "url": "https://timesofindia.indiatimes.com/india/as-sonia-gandhis-memoir-draws-attention-sikh-family-preserves-her-ancestral-home-in-italian-village/articleshow/135986304.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T11:03:13+00:00"
     },
     {
      "title": "Savarkar's grandnephew mulls legal action against Sonia Gandhi over remarks in memoir",
@@ -2576,16 +2592,16 @@
   }
  ],
  "notes": [
-  "revisit kh-20261120-Q10218-update: 4 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261120-Q37293-update: 5 owners' new reports on Ramayana (995 views before); revisit kh-20261120-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261120-Q163225-update: 6 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261120-Q3243690-upd",
-  "outlets: 1789 headlines from 50 feeds (19 owners), 20 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
-  "explainers: 5 kh- stories (on): kh-20261120-Q37293, kh-20261120-Q3520161, kh-20261120-Q116758847, kh-20261120-Q4725343; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer GTA VI / Modi’s GTA VI: no Wikipedia article that can be its centre; explainer Trump Putin / Trump Putin: no Wikipedia article that can be its centre",
+  "revisit kh-20261120-Q10218-update: 5 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261120-Q37293-update: 5 owners' new reports on Ramayana (995 views before); revisit kh-20261120-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261120-Q163225-update: 7 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261120-Q3243690-upd",
+  "outlets: 1778 headlines from 50 feeds (19 owners), 19 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
+  "explainers: 5 kh- stories (on): kh-20261120-Q37293, kh-20261120-Q3520161, kh-20261120-Q116758847, kh-20261120-Q4725343; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer GTA VI / Modi’s GTA VI: no Wikipedia article that can be its centre; explainer Siraj Jadeja / Test Siraj Jadeja: no Wikipedia article that can be its centre",
   "skip wk-Q7489916: Orbitwire published (wk-Q7489916), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 1789,
+  "headlines": 1778,
   "feeds": 50,
   "owners": 19,
-  "matched": 20,
+  "matched": 19,
   "corroborated": 6
  },
  "emerging": [
@@ -2597,14 +2613,15 @@
    "kind": "incident",
    "category": "cyclone",
    "date": "2026-11-18",
-   "news_at": "2026-11-19T21:23:48+00:00",
+   "news_at": "2026-11-19T22:30:40+00:00",
    "owners": [
     "HT Media",
     "Indian Express Group",
     "Network18",
     "Deutsche Welle",
     "India Today Group",
-    "The Hindu Group"
+    "The Hindu Group",
+    "Bennett, Coleman & Co."
    ],
    "fame": 150000,
    "news": 150000,
@@ -2636,6 +2653,16 @@
      "group": "public broadcaster",
      "lang": "en",
      "at": "2026-11-19T08:58:00+00:00"
+    },
+    {
+     "title": "Cyclone Akvan: Odisha braces for landfall; 3 lakh evacuated, CM holds midnight meet",
+     "url": "https://timesofindia.indiatimes.com/india/cyclone-akvan-odisha-braces-for-landfall-3-lakh-evacuated-cm-majhi-holds-midnight-meet/articleshow/136005443.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-19T22:30:40+00:00"
     },
     {
      "title": "Several Bengal districts under alert as cyclone Akvan likely to bring heavy rainfall",
@@ -2696,16 +2723,6 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-19T12:43:39+00:00"
-    },
-    {
-     "title": "Cyclone Akvan landfall on November 20; Andhra on alert, Odisha evacuates tons as storm's track changes",
-     "url": "https://www.hindustantimes.com/india-news/cyclone-akvan-updates-landfall-imd-rain-alert-andhra-pradesh-odisha-cyclone-tracker-narsapur-puri-101795081832311.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-19T10:24:29+00:00"
     }
    ],
    "via": [
@@ -2714,7 +2731,8 @@
     "outlet:Network18",
     "outlet:Deutsche Welle",
     "outlet:India Today Group",
-    "outlet:The Hindu Group"
+    "outlet:The Hindu Group",
+    "outlet:Bennett, Coleman & Co."
    ],
    "emerging": true,
    "article": null,
@@ -2965,9 +2983,9 @@
     "google-news:EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
    ],
    "top": {
-    "IN": 17
+    "IN": 16
    },
-   "top_score": 0.2,
+   "top_score": 0.25,
    "top_headlines": [
     "EPFO to cut minimum PF balance requirement to 10% from 25%: What it means"
    ],
@@ -3281,9 +3299,10 @@
     "google-news:Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
    "top": {
+    "IN": 7,
     "IN-nation": 3
    },
-   "top_score": 0.54,
+   "top_score": 0.97,
    "top_headlines": [
     "Removal proceedings against me infructuous after resignation: Justice Varma tells Lok Sabha Secretariat"
    ],
