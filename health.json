@@ -1,24 +1,27 @@
 {
- "at": "2026-11-19T13:20:44+00:00",
+ "at": "2026-11-19T13:51:15+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 14 candidates from 17 trending",
+  "watch: 11 candidates from 18 trending",
   "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit Q7747: already revisited today; revisit Q7172014 (135 views): 1 owners reported new news on Pete Hegseth since its last Short; revisit Q1538 (88 views): 0 owners reported new news on Pu",
-  "outlets: 1891 headlines from 50 feeds (19 owners), 18 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
-  "explainers: 5 kh- stories (on): kh-20261119-Q1058, kh-20261119-Q185142, kh-20261119-Q3520161, wk-Q139303649; dropped: explainer PUC / BS-VI: no Wikipedia article that can be its centre; explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer January / December: no Wikipedia article that can be its centre",
-  "drop kh-20261119-Q185142: too low in Google News India's top stories (place 0.30, needs 0.35)",
+  "outlets: 1912 headlines from 50 feeds (19 owners), 17 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
+  "explainers: 6 kh- stories (on): kh-20261119-Q23761458, kh-20261119-Q37293, kh-20261119-Q3520161, kh-20261119-Q1058; dropped: explainer GTA VI / PM Modi’s GTA: no Wikipedia article that can be its centre; explainer PUC / BS-VI: no Wikipedia article that can be its centre; explainer Rohingya / Myanmar: no Wikipedia article that can be its centre",
+  "trend radar errors: ['google news IN: HTTP 503', 'google news IN-nation: HTTP 503', 'google news IN-hi: HTTP 503', 'google news IN-hi-nation: HTTP 503', 'google news IN-hi-world: HTTP 503', 'google news US: HTTP 503', 'google news world: HTTP 503', 'top stories: no Google News India list could be read (no story is ranked by place)']",
   "drop kh-20261119-Q3520161: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261119-Q5640425: a world statement, politics or diplomacy story with no India connection",
-  "drop wk-Q1134918: 49 h old and no longer trending live",
-  "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q7298201: 73 h old and no longer trending live",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q1058, kh-20261119-Q185142",
-  "skip kh-20261119-Q1058: gate: no draft passed the fact checks: the story is about नरेन्द्र मोदी, but only 1 of 5 beats name them: name नरेन्द्र मोदी (or their title) in at least 2 beats, so their photo is on screen for their own story.; beats 2,3,4,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: नरेन्द्र मोदी. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES",
-  "skip wk-Q139303649: gate: Wikidata lacks an exact birth or death date",
-  "skip nw-20261118-akvan-cyclone: gate: only 0 usable photos of Akvan (want 2)",
+  "drop wk-Q1134918: 50 h old and no longer trending live",
+  "drop wk-Q7298201: 74 h old and no longer trending live",
+  "drop wk-Q123054388: 74 h old and no longer trending live",
+  "drop wk-Q732057: 50 h old and no longer trending live",
+  "drop wk-Q3181229: 98 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q185142",
+  "skip kh-20261119-Q185142: gate: no draft passed the fact checks: SpaceX (SpaceX) is not in the sources (only one outlet reports it); write SpaceX as स्पेसएक्स (the Hindi name people know), not SpaceX; Nasdaq (नैस्डैक) is not in the sources (only one outlet reports it); 'SpaceX' is not in the English source; banned wording 'बड़ी खबर'; beats 2,4,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: नैस्डैक. Name in ea",
+  "skip wk-Q142084937-2026w47: gate: only 0 usable photos of 2026 Bangladesh garment workers protests on Wikimedia Commons (want 3)",
   "nothing eligible to publish",
   "channel: about, playlists done; nothing left to do"
+ ],
+ "warnings": [
+  "kh-20261119-Q23761458: HTTPError: 414 Client Error: URI Too Long for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AMohammad+Siraj+in+PMO+New+Delhi.jpg%7CFile%3APrime+Minister+Of+Bharat+Shri+Narendra+Damodardas+Modi+with+Mohammad+Siraj+%28cropped%29.jpg%7CFile%3ACricketball."
  ]
 }
