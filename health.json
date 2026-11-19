@@ -1,21 +1,33 @@
 {
- "at": "2026-11-19T00:53:51+00:00",
+ "at": "2026-11-19T02:30:09+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 163 scored Shorts, lifts {'category:aviation': {'n': 6, 'lift': 1.036, 'typical_views_24h': 50, 'n_retention': 6, 'typical_view_pct': 53.2}, 'category:protest': {'n': 5, 'lift': 0.76, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.281, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {'",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 28 candidates from 24 trending",
-  "revisit kh-20261119-Q10218-update: 5 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261119-Q37293-update: 2 owners' new reports on Ramayana (995 views before); revisit kh-20261119-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261119-Q163225-update: 5 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261119-Q3243690-upd",
-  "outlets: 1682 headlines from 48 feeds (18 owners), 38 matched to articles, 14 candidates with 2+ owners, 1 nw- stories (on): nw-20261118-akvan-cyclone",
-  "explainers: 11 kh- stories (on): kh-20261119-Q213380, kh-20261119-Q163225, kh-20261119-Q141539509, kh-20261119-Q5640425; dropped: explainer Tom Latham: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Sharad Kapoor: fewer than 3 owners' headlines name it and the story",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "hold kh-20261119-Q163225: outside 07:00-24:00 IST",
-  "hold kh-20261119-Q213380: outside 07:00-24:00 IST",
-  "hold wp-2026_Kulgam_attack: outside 07:00-24:00 IST",
-  "hold nw-20261118-akvan-cyclone: outside 07:00-24:00 IST",
-  "drop kh-20261119-Q141539509: a entertainment story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "watch: 25 candidates from 22 trending",
+  "revisit kh-20261119-Q10218-update: 4 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261119-Q37293-update: 2 owners' new reports on Ramayana (995 views before); revisit kh-20261119-Q9543-update: 3 owners' new reports on Salman Khan (936 views before); revisit kh-20261119-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261119-Q3243690-upd",
+  "outlets: 1497 headlines from 45 feeds (18 owners), 25 matched to articles, 12 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 10 kh- stories (on): kh-20261119-Q163225, kh-20261119-Q135230927, kh-20261119-Q185142, kh-20261119-Q182477; dropped: explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Hamas-controlled / Yellow Line: no Wikipedia article that can be its centre; explainer New Zealand Gavaskar: fewer than 3 owners' headlines name it and the story",
+  "trend radar errors: ['outlet thehindu: HTTPError: 403 Client Error: Forbidden for url: https://www.thehindu.com/news/national/feeder/default.rss', 'outlet thehindu-business: HTTPError: 403 Client Error: Forbidden for url: https://www.thehindu.com/business/feeder/default.rss', 'outlet thehindu-scitech: HTTPError: 403 Client Error: Forbidden for url: https://www.thehindu.com/sci-tech/feeder/default.rss', 'outlet thehindu-ent: HTTPError: 403 Client Error: Forbidden for url: https://www.thehindu.com/entertainment/feeder/default.rss', 'outlet thehindu-sport: HTTPError: 403 Client Error: Forbidden for url: https://www.thehindu.com/sport/feeder/default.rss']",
+  "drop kh-20261119-Q141539509: a entertainment story goes out only as a top story (place 0.10, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261119-Q185142: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261119-Q5640425: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261119-Q213380, wp-2026_Kulgam_attack, kh-20261119-Q36678, kh-20261119-Q5024800, kh-20261119-Q3243690-update, kh-20261119-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q7747, kh-20261119-Q484876, kh-20261119-Q37293-update, kh-20261119-Q7747-update",
+  "drop kh-20261119-Q182477: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261119-Q186233: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "drop wk-Q7298201: 63 h old and no longer trending live",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): wp-2026_Kulgam_attack, kh-20261119-Q5024800, kh-20261119-Q3243690-update, kh-20261119-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261119-Q185142, kh-20261119-Q7747, kh-20261119-Q163225-update, kh-20261119-Q37293-update, kh-20261119-Q7747-update",
+  "skip kh-20261119-Q163225: gate: no draft passed the fact checks: Shiv Sena (शिव सेना) is not in the sources (only one outlet reports it); write Shiv Sena as शिवसेना (the Hindi name people know), not शिव सेना; VD Savarkar (वी डी सावरकर) is not in the sources (only one outlet reports it); write VD Savarkar as विनायक दामोदर सावरकर (the Hindi name people know), not वी डी सावरकर; Shaina NC (शाइना एनसी) is not in the sources (only one outlet reports it); write Shaina",
+  "skip wp-2026_Kulgam_attack: gate: only 0 usable photos of 2026 Kulgam attack on Wikimedia Commons (want 3)",
+  "skip kh-20261119-Q163225-update: gate: fewer than 2 independent outlets' articles name Sonia Gandhi",
+  "published kh-20261119-Q37293-update: https://www.youtube.com/shorts/2hqSaT1rqt8",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "2hqSaT1rqt8",
+  "url": "https://www.youtube.com/shorts/2hqSaT1rqt8",
+  "youtube_title": "रामायण ने 14 दिन में कमाए 844.40 करोड़ रुपये #shorts #ramayana",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }

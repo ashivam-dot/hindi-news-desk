@@ -1,35 +1,35 @@
 # What this channel's own numbers say
 
-Updated 2026-11-18T22:26:37+00:00. Scored Shorts (views at 24 h): 162. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-19T02:30:09+00:00. Scored Shorts (views at 24 h): 163. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 54.4% through; a group's retention is blended into its lift at 0.5.
-- lane:rajneeti: x1.589 ranking lift (15 Shorts, typical 103 views; 15 with retention, typically 74.1% watched)
-- category:entertainment: x1.35 ranking lift (7 Shorts, typical 165 views; 6 with retention, typically 59.9% watched)
+- lane:rajneeti: x1.585 ranking lift (15 Shorts, typical 103 views; 15 with retention, typically 74.4% watched)
+- category:entertainment: x1.35 ranking lift (7 Shorts, typical 165 views; 7 with retention, typically 56.9% watched)
 - category:defence: x1.35 ranking lift (6 Shorts, typical 86 views; 6 with retention, typically 108.3% watched)
 - category:politics: x1.35 ranking lift (6 Shorts, typical 254 views; 6 with retention, typically 92.3% watched)
-- category:attack: x1.286 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 59.6% watched)
-- category:court: x1.281 ranking lift (14 Shorts, typical 75 views; 12 with retention, typically 59.0% watched)
-- lane:naam-niyam: x1.23 ranking lift (57 Shorts, typical 61 views; 54 with retention, typically 59.3% watched)
-- region:india: x1.145 ranking lift (107 Shorts, typical 50 views; 102 with retention, typically 61.5% watched)
-- category:aviation: x1.043 ranking lift (6 Shorts, typical 50 views; 6 with retention, typically 53.9% watched)
-- category:news: x0.965 ranking lift (59 Shorts, typical 39 views; 57 with retention, typically 55.6% watched)
-- category:diplomacy: x0.935 ranking lift (7 Shorts, typical 28 views; 6 with retention, typically 66.3% watched)
-- category:world: x0.849 ranking lift (7 Shorts, typical 24 views; 7 with retention, typically 55.8% watched)
-- lane:sensitive: x0.841 ranking lift (21 Shorts, typical 32 views; 18 with retention, typically 47.4% watched)
-- category:protest: x0.761 ranking lift (5 Shorts, typical 16 views; 5 with retention, typically 51.3% watched)
-- region:world: x0.755 ranking lift (51 Shorts, typical 28 views; 49 with retention, typically 44.0% watched)
+- category:attack: x1.281 ranking lift (13 Shorts, typical 76 views; 12 with retention, typically 59.6% watched)
+- category:court: x1.279 ranking lift (14 Shorts, typical 75 views; 12 with retention, typically 59.3% watched)
+- lane:naam-niyam: x1.232 ranking lift (58 Shorts, typical 63 views; 55 with retention, typically 59.0% watched)
+- region:india: x1.148 ranking lift (108 Shorts, typical 51 views; 102 with retention, typically 61.7% watched)
+- category:aviation: x1.036 ranking lift (6 Shorts, typical 50 views; 6 with retention, typically 53.2% watched)
+- category:news: x0.974 ranking lift (60 Shorts, typical 40 views; 57 with retention, typically 55.9% watched)
+- category:diplomacy: x0.933 ranking lift (7 Shorts, typical 28 views; 6 with retention, typically 66.3% watched)
+- category:world: x0.847 ranking lift (7 Shorts, typical 24 views; 7 with retention, typically 55.8% watched)
+- lane:sensitive: x0.843 ranking lift (21 Shorts, typical 32 views; 18 with retention, typically 48.1% watched)
+- category:protest: x0.76 ranking lift (5 Shorts, typical 16 views; 5 with retention, typically 51.3% watched)
+- region:world: x0.751 ranking lift (51 Shorts, typical 28 views; 50 with retention, typically 44.0% watched)
 - category:economy: x0.75 ranking lift (8 Shorts, typical 18 views; 8 with retention, typically 43.8% watched)
 - category:weather: x0.75 ranking lift (7 Shorts, typical 5 views; 7 with retention, typically 16.2% watched)
-- lane:other: x0.724 ranking lift (35 Shorts, typical 19 views; 34 with retention, typically 57.9% watched)
+- lane:other: x0.721 ranking lift (35 Shorts, typical 19 views; 34 with retention, typically 57.9% watched)
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261118-Q37293-update | 2026-11-18T08:39 | entertainment | world | sensitive | india | 44 | 12 |  |
+| kh-20261118-Q37293-update | 2026-11-18T08:39 | entertainment | world | sensitive | india | 48 | 12 |  |
 | wk-Q142193498 | 2026-11-18T05:14 | explosion | world | sensitive | world | 5 | 3 |  |
-| kh-20261118-Q163225 | 2026-11-18T02:03 | news | india | naam-niyam | india | 160 | 7 |  |
-| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 505 | 227 | 398 |
-| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 33 | 5 | 19 |
+| kh-20261118-Q163225 | 2026-11-18T02:03 | news | india | naam-niyam | india | 168 | 7 | 167 |
+| kh-20261117-Q3243690 | 2026-11-17T10:31 | court | india | naam-niyam | india | 517 | 227 | 398 |
+| kh-20261117-Q163225 | 2026-11-17T04:04 | news | india | sensitive | india | 36 | 5 | 19 |
 | kh-20261117-Q132726 | 2026-11-17T01:48 | court | india | naam-niyam | india | 40 | 7 | 38 |
 | kh-20261116-Q10230 | 2026-11-16T07:54 | news | india | sensitive | india | 41 | 12 | 17 |
 | kh-20261116-Q7768 | 2026-11-16T05:40 | diplomacy | world | other | india | 1 | 0 | 1 |
