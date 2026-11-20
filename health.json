@@ -1,20 +1,21 @@
 {
- "at": "2026-11-20T08:57:35+00:00",
+ "at": "2026-11-20T09:12:37+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 12 candidates from 16 trending",
-  "outlets: 1792 headlines from 50 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
-  "explainers: 8 kh- stories (on): kh-20261120-Q1353, kh-20261120-Q10218, kh-20261120-Q1185, kh-20261120-Q10230; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer WTC: no Wikipedia article that can be its centre; explainer Test Siraj Jadeja / Test Siraj Jadeja: no Wikipedia article that can be its centre",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\", 'google news US: HTTP 429']",
-  "hold kh-20261120-Q10218: last Short went out 0.5 h ago",
-  "hold kh-20261120-Q10230: last Short went out 0.5 h ago",
+  "watch: 13 candidates from 18 trending",
+  "outlets: 1729 headlines from 48 feeds (18 owners), 12 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261120-Q1353, kh-20261120-Q37293, kh-20261120-Q213380, kh-20261120-Q10218; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer WTC: no Wikipedia article that can be its centre; explainer Test Siraj Jadeja / Test Siraj Jadeja: no Wikipedia article that can be its centre",
+  "skip wk-Q1130103: Orbitwire published (wk-Q1130103), not high-profile enough to tell again",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
+  "hold kh-20261120-Q10218: last Short went out 0.7 h ago",
+  "hold kh-20261120-Q213380: last Short went out 0.7 h ago",
   "drop kh-20261120-Q1353: a diplomacy story goes out only near the top of the lists (place 0.39, needs 0.75)",
   "drop wk-Q1806102: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261120-Q116758847: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261120-Q139731201: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q1353; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q10218, kh-20261120-Q139731201",
+  "drop kh-20261120-Q111772343: too low in Google News India's top stories (place 0.15, needs 0.35)",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q213380, kh-20261120-Q1353; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q10218, kh-20261120-Q116758847",
   "channel: about, playlists done; nothing left to do"
  ]
 }
