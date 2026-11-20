@@ -1,25 +1,29 @@
 {
- "at": "2026-11-20T11:27:03+00:00",
+ "at": "2026-11-20T11:43:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 12 candidates from 16 trending",
+  "watch: 11 candidates from 15 trending",
   "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261120-Q7747-update: 8 owners' new reports on Vladimir Putin (253 views before); revisit Q7172014 (135 views): 0 owners reported new news on Pete Hegseth since its last Short; revi",
-  "outlets: 1772 headlines from 48 feeds (18 owners), 7 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
-  "explainers: 6 kh- stories (on): kh-20261120-Q1185, kh-20261120-Q116758847, kh-20261120-Q796994, kh-20261120-Q7747; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story; explainer Rahul Gandhi: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1841 headlines from 50 feeds (19 owners), 6 matched to articles, 6 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
+  "explainers: 5 kh- stories (on): kh-20261120-Q10218, kh-20261120-Q116758847, kh-20261120-Q796994, kh-20261120-Q7747; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer Ranbir Kapoor's Ramayana / Ranbir Kapoor's Ramayana': no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q1130103: Orbitwire published (wk-Q1130103), not high-profile enough to tell again",
-  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
-  "drop kh-20261120-Q56026072: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
+  "drop kh-20261120-Q7747: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q1806102: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261120-Q796994: too low in Google News India's top stories (place 0.30, needs 0.35)",
   "drop kh-20261120-Q116758847: a world statement, politics or diplomacy story with no India connection",
-  "drop kh-20261120-Q111772343: too low in Google News India's top stories (place 0.27, needs 0.35)",
+  "drop kh-20261120-Q35525: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "ad-suitability x0.8 (crime, court, communal, accident; not breaking): -; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q7747, kh-20261120-Q796994, kh-20261120-Q116758847, kh-20261120-Q7747-update",
-  "skip kh-20261120-Q7747: gate: no draft passed the fact checks: beats 2,4,5 name nothing that can be shown (or only a city or state, whose map a Short shows once); SHOWABLE: व्लादिमीर पुतिन, शेन्झेन. Name in each beat the person, thing, place or police it is about (one of SHOWABLE where the SOURCES allow), so that at most 1 beat is a text card and never two in a row.",
-  "skip kh-20261120-Q7747-update: gate: no draft passed the fact checks: beat 1 has 15 words; shorten it to about 8 to 9 words, at most 14, while retaining attribution. Do not add beats to evade the whole-report word budget; these numbers are not in the sources: 90 (90 only in one outlet's report: one outlet is not enough); draft wording: 90. Omit these unsupported numeric claims from narration, title, captions and labels. Keep the independently supported event and att",
-  "nothing eligible to publish",
-  "channel: about, playlists done; nothing left to do"
- ]
+  "published kh-20261120-Q7747-update: https://www.youtube.com/shorts/s1lrWWUfQrI",
+  "channel: about: not retried (read back differs); change channel.ABOUT to try again; playlists: 0 made, 1 Shorts added, 0 sections, 0 Shorts left (51 units this run, 51 today)"
+ ],
+ "published": {
+  "video_id": "s1lrWWUfQrI",
+  "url": "https://www.youtube.com/shorts/s1lrWWUfQrI",
+  "youtube_title": "व्लादिमीर पुतिन, ट्रंप और जिनपिंग का शांति घोषणापत्र #shorts #vladimirputin",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
