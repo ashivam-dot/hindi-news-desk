@@ -1,28 +1,30 @@
 {
- "at": "2026-11-20T07:27:21+00:00",
+ "at": "2026-11-20T08:12:56+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "learn: 166 scored Shorts, lifts {'category:aviation': {'n': 6, 'lift': 1.048, 'typical_views_24h': 50, 'n_retention': 6, 'typical_view_pct': 53.2}, 'category:protest': {'n': 5, 'lift': 0.768, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.3, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {'n",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 15 candidates from 17 trending",
-  "revisit kh-20261120-Q10218-update: 2 owners' new reports on Rahul Gandhi (1153 views before); revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261120-Q7747-update: 8 owners' new reports on Vladimir Putin (253 views before); revisit Q7172014 (135 views): 0 owners reporte",
-  "outlets: 1695 headlines from 48 feeds (18 owners), 15 matched to articles, 7 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
-  "explainers: 6 kh- stories (on): kh-20261120-Q213380, kh-20261120-Q1185, kh-20261120-Q116758847, kh-20261120-Q139731201; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer Cincinnati: a death story whose centre is not a person; explainer Test Siraj Jadeja / Test Siraj Jadeja: no Wikipedia article that can be its centre",
+  "watch: 16 candidates from 19 trending",
+  "revisit Q10218: already revisited today; revisit Q37293: already revisited today; revisit Q9543: already revisited today; revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261120-Q7747-update: 8 owners' new reports on Vladimir Putin (253 views before); revisit Q7172014 (135 views): 0 owners reported new news on Pete Hegseth since its last Short; revi",
+  "outlets: 1707 headlines from 48 feeds (18 owners), 9 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261120-Q213380, kh-20261120-Q10218, kh-20261120-Q1185, kh-20261120-Q7747; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer PAK: no Wikipedia article that can be its centre; explainer Test Siraj Jadeja / Test Siraj Jadeja: no Wikipedia article that can be its centre",
   "skip wk-Q1130103: Orbitwire published (wk-Q1130103), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "drop wk-Q1806102: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop kh-20261120-Q139731201: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261120-Q7747: a world statement, politics or diplomacy story with no India connection",
+  "drop kh-20261120-Q111772343: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261120-Q116758847: a world statement, politics or diplomacy story with no India connection",
   "drop kh-20261120-Q3520161: a world statement, politics or diplomacy story with no India connection",
   "drop wk-Q142084937-2026w47: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "drop wk-Q142084444: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q1185, kh-20261120-Q213380; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q139731201, kh-20261120-Q116758847, kh-20261120-Q7747-update",
-  "skip kh-20261120-Q1185: gate: no draft passed the fact checks: the script has 68 words; it must have 45 to 58; cut about 16 spoken words to aim for 52 in the whole report. Current beat word counts: 15, 14, 13, 13, 13. Preserve source attribution and the essential supported facts; change wording, never invent facts or add filler; beat 1 has 15 words; shorten it to about 8 to 9 words, at most 14, while retaining attribution. Do not add beats to evade the whole-",
-  "skip kh-20261120-Q213380: gate: no draft passed the fact checks: unsupported: वकील ने जज के हित टकराव का आरोप लगाया",
-  "skip kh-20261120-Q10218-update: gate: fewer than 2 independent outlets' articles about Rahul Gandhi could be read",
-  "later kh-20261120-Q7747-update: this run already wrote 2 scripts",
-  "nothing eligible to publish",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q1185, kh-20261120-Q213380; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q10218, kh-20261120-Q7747, kh-20261120-Q111772343, kh-20261120-Q116758847, kh-20261120-Q7747-update",
+  "published kh-20261120-Q1185: https://www.youtube.com/shorts/PB1nNvQ_aao",
   "channel: about, playlists done; nothing left to do"
- ]
+ ],
+ "published": {
+  "video_id": "PB1nNvQ_aao",
+  "url": "https://www.youtube.com/shorts/PB1nNvQ_aao",
+  "youtube_title": "कर्नाटक को नहीं देना होगा अतिरिक्त कावेरी नदी का पानी #shorts #karnataka",
+  "privacy": "public",
+  "synthetic_declared": true
+ }
 }
