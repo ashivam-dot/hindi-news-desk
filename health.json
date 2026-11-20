@@ -1,20 +1,21 @@
 {
- "at": "2026-11-20T10:13:53+00:00",
+ "at": "2026-11-20T10:28:37+00:00",
  "ok": true,
  "dry": false,
  "steps": [
+  "learn: 166 scored Shorts, lifts {'category:aviation': {'n': 6, 'lift': 1.048, 'typical_views_24h': 50, 'n_retention': 6, 'typical_view_pct': 53.2}, 'category:protest': {'n': 5, 'lift': 0.768, 'typical_views_24h': 16, 'n_retention': 5, 'typical_view_pct': 51.3}, 'category:attack': {'n': 13, 'lift': 1.3, 'typical_views_24h': 76, 'n_retention': 12, 'typical_view_pct': 59.6}, 'category:diplomacy': {'n",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 12 candidates from 16 trending",
-  "outlets: 1838 headlines from 50 feeds (19 owners), 10 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
-  "explainers: 8 kh- stories (on): kh-20261120-Q1353, kh-20261120-Q213380, kh-20261120-Q10218, kh-20261120-Q1185; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer WTC: no Wikipedia article that can be its centre; explainer Siraj / Test Siraj Jadeja: no Wikipedia article that can be its centre",
-  "trend radar errors: [\"wikidata recent deaths: HTTPSConnectionPool(host='query.wikidata.org', port=443): Read timed out. (read timeout=45)\"]",
-  "hold kh-20261120-Q213380: last Short went out 1.8 h ago",
-  "hold kh-20261120-Q10218: last Short went out 1.8 h ago",
-  "hold kh-20261120-Q1353: last Short went out 1.8 h ago",
+  "watch: 13 candidates from 18 trending",
+  "outlets: 1835 headlines from 50 feeds (19 owners), 8 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261119-akvan-cyclone",
+  "explainers: 7 kh- stories (on): kh-20261120-Q213380, kh-20261120-Q10218, kh-20261120-Q1185, kh-20261120-Q796994; dropped: explainer Rohingya / Myanmar: no Wikipedia article that can be its centre; explainer WTC: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story",
+  "skip wk-Q1130103: Orbitwire published (wk-Q1130103), not high-profile enough to tell again",
+  "hold kh-20261120-Q213380: last Short went out 2.0 h ago",
+  "hold kh-20261120-Q10218: last Short went out 2.0 h ago",
   "drop kh-20261120-Q796994: too low in Google News India's top stories (place 0.30, needs 0.35)",
   "drop wk-Q1806102: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
   "drop kh-20261120-Q116758847: a world statement, politics or diplomacy story with no India connection",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q213380, kh-20261120-Q1353; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q10218, kh-20261120-Q796994, kh-20261120-Q116758847",
+  "drop kh-20261120-Q111772343: too low in Google News India's top stories (place 0.27, needs 0.35)",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261120-Q213380; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261120-Q10218, kh-20261120-Q796994, kh-20261120-Q116758847",
   "channel: about, playlists done; nothing left to do"
  ]
 }
