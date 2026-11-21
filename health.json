@@ -1,23 +1,23 @@
 {
- "at": "2026-11-21T21:04:53+00:00",
+ "at": "2026-11-21T21:11:29+00:00",
  "ok": true,
  "dry": false,
  "steps": [
   "untag: old marker tag taken off 0 uploads",
-  "watch: 23 candidates from 19 trending",
-  "revisit Q10218 (1153 views): 1 owners reported new news on Rahul Gandhi since its last Short; revisit kh-20261122-Q6668646-update: 2 owners' new reports on KL Rahul (1006 views before); revisit kh-20261122-Q163225-update: 4 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261122-Q3243690-update: 6 owners' new reports on Chief Justice of India (727 views before); revisit kh-2026",
-  "outlets: 1487 headlines from 46 feeds (18 owners), 14 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 8 kh- stories (on): kh-20261122-Q8062264, kh-20261122-Q213380, kh-20261122-Q4746875, kh-20261122-Q116758847; dropped: explainer Nitish Setu: fewer than 3 owners' headlines name it and the story; explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer AI’ Riemann / Claude: no Wikipedia article that can be its centre",
+  "watch: 25 candidates from 20 trending",
+  "revisit kh-20261122-Q10218-update: 2 owners' new reports on Rahul Gandhi (1153 views before); revisit kh-20261122-Q6668646-update: 2 owners' new reports on KL Rahul (1006 views before); revisit kh-20261122-Q163225-update: 3 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261122-Q3243690-update: 5 owners' new reports on Chief Justice of India (727 views before); revisit kh-2026",
+  "outlets: 1655 headlines from 47 feeds (18 owners), 12 matched to articles, 9 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 9 kh- stories (on): kh-20261122-Q8062264, kh-20261122-Q6579447, kh-20261122-Q4746875, kh-20261122-Q111772343; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Op Sindoor / China's Pak: no Wikipedia article that can be its centre; explainer AI’ Riemann / Claude: no Wikipedia article that can be its centre",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again",
-  "trend radar errors: ['outlet aajtak: HTTPError: 403 Client Error: Forbidden for url: https://www.aajtak.in/rssfeeds/?id=home', 'outlet indiatoday: HTTPError: 403 Client Error: Forbidden for url: https://www.indiatoday.in/rss/home', 'outlet it-sports: HTTPError: 403 Client Error: Forbidden for url: https://www.indiatoday.in/rss/1206550']",
+  "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261122-Q8062264: outside 07:00-24:00 IST",
-  "drop kh-20261122-Q213380: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "hold kh-20261122-Q6579447: outside 07:00-24:00 IST",
   "hold kh-20261122-Q9141: outside 07:00-24:00 IST",
-  "hold kh-20261122-Q4746875: outside 07:00-24:00 IST",
+  "drop kh-20261122-Q4746875: too low in Google News India's top stories (place 0.18, needs 0.35)",
   "drop kh-20261122-Q28549275: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
-  "drop kh-20261122-Q3418385: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261122-Q213380, kh-20261122-Q4746875, kh-20261122-Q116758847, kh-20261122-Q3243690-update, kh-20261122-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261122-Q9141, kh-20261122-Q111772343, kh-20261122-Q163225-update, kh-20261122-Q7747-update",
+  "drop kh-20261122-Q528496: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261122-Q4746875, kh-20261122-Q116758847, kh-20261122-Q3243690-update, kh-20261122-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261122-Q6579447, kh-20261122-Q9141, kh-20261122-Q111772343, kh-20261122-Q163225-update, kh-20261122-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
