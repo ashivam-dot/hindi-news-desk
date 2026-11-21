@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T10:31:59+00:00",
+ "at": "2026-11-21T10:46:49+00:00",
  "trending": [
   {
    "id": "kh-20261121-Q3002584",
@@ -113,35 +113,32 @@
    "phrase": "Anthropic",
    "person": false,
    "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
    "story_keys": [
     "gain",
     "sell-off",
     "slide",
-    "stock",
-    "tech"
+    "stock"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T04:15:13+00:00",
+   "news_at": "2026-11-20T22:42:47+00:00",
    "owners": [
-    "Indian Express Group",
     "The Hindu Group",
     "Guardian Media Group",
     "BBC"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
     "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
     "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -172,16 +169,6 @@
      "at": "2026-11-20T21:38:17+00:00"
     },
     {
-     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:15:13+00:00"
-    },
-    {
      "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
      "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
      "outlet": "The Hindu",
@@ -190,24 +177,14 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-20T16:02:24+00:00"
-    },
-    {
-     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
-     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T13:09:52+00:00"
     }
    ],
    "via": [
-    "outlet:Indian Express Group",
     "outlet:The Hindu Group",
     "outlet:Guardian Media Group",
     "outlet:BBC",
-    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
+    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "google-news:Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
    ],
    "top": {
     "IN": 16
@@ -318,142 +295,6 @@
    "lane": "other"
   },
   {
-   "id": "nw-20261120-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T10:29:06+00:00",
-   "owners": [
-    "HT Media",
-    "Indian Express Group",
-    "The Hindu Group",
-    "Network18"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "3 Lakh Evacuated, 47 Trains Cancelled: Odisha On High Alert As Cyclone Akvan Heads For Landfall Near Gopalpur Today",
-    "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
-    "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
-    "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Cyclone Akvan crosses Odisha coast near Gopalpur, brings heavy rain"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-     "url": "https://www.news18.com/india/cyclone-akvan-aftermath-odisha-steps-up-flood-preparedness-14-flights-cancelled-10435408.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T10:29:06+00:00"
-    },
-    {
-     "title": "Remnants of Cyclone Akvan to bring rain in Bengal till November 22: IMD",
-     "url": "https://www.thehindu.com/news/national/west-bengal/remnants-of-cyclone-akvan-to-bring-rain-in-bengal-till-november-22-imd/article71727586.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:33:58+00:00"
-    },
-    {
-     "title": "Odisha steps up flood preparedness as Cyclone Akvan weakens",
-     "url": "https://www.hindustantimes.com/india-news/odisha-steps-up-flood-preparedness-as-cyclone-akvan-weakens-101795246117718.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:28:37+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: IMD forecasts rain in West Bengal on Sunday",
-     "url": "https://www.hindustantimes.com/india-news/imd-forecasts-rain-for-west-bengal-on-sunday-as-fallout-of-cyclone-akvan-india-meteorological-department-101795242322421.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:46:49+00:00"
-    },
-    {
-     "title": "Heavy rain alert in Odisha, West Bengal; Cyclone Akvan weakens into depression",
-     "url": "https://indianexpress.com/article/india/cyclone-akvan-weakens-heavy-rain-alert-continues-odisha-west-bengal-10972506/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:29:32+00:00"
-    },
-    {
-     "title": "Cyclone Akvan latest updates: IMD issues red alert in Odisha’s Mayurbhanj, Balasore; heavy rain to lash Bengal, Bihar",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-latest-updates-imd-issues-red-alert-in-odisha-s-mayurbhanj-balasore-heavy-rain-to-lash-bengal-bihar-11795224562125.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:35:02+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-over-70-trains-cancelled-29-rescheduled-air-travel-hit-air-india-indigo-issue-advisories-11795226051144.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:12:45+00:00"
-    },
-    {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:The Hindu Group",
-    "outlet:Network18"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-hi": 4,
-    "IN-hi-nation": 2
-   },
-   "top_score": 1.135,
-   "top_headlines": [
-    "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "id": "kh-20261121-Q6668646",
    "qid": "Q6668646",
    "title": "KL Rahul",
@@ -556,126 +397,101 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+   ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261121-Q3351379",
-   "qid": "Q3351379",
-   "title": "Indian Youth Congress",
-   "name": "Indian Youth Congress",
-   "phrase": "Youth Congress",
-   "person": false,
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
    "story_keys": [
-    "account",
-    "issue",
-    "office",
-    "storm",
-    "worker"
+    "security"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T08:01:17+00:00",
+   "news_at": "2026-11-21T05:23:12+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
     "HT Media",
-    "NDTV"
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-    "Youth Congress vandalises Meta offices in Hyd, Bom"
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "भारतीय युवा कांग्रेस",
+   "label_hi": "सैफ अली खान",
    "reports": [
     {
-     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
-     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T08:01:17+00:00"
-    },
-    {
-     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:06:26+00:00"
+     "at": "2026-11-21T05:23:12+00:00"
     },
     {
-     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:49:05+00:00"
-    },
-    {
-     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T17:50:30+00:00"
+     "at": "2026-11-20T18:35:37+00:00"
     },
     {
-     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T17:08:50+00:00"
+     "at": "2026-11-20T12:46:40+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:NDTV"
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
    ],
-   "top": {
-    "IN": 1,
-    "IN-nation": 5
-   },
-   "top_score": 1.24,
-   "top_headlines": [
-    "Meta's India offices hit by opposition protests over account removals"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261121-Q7143348",
@@ -771,96 +587,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261121-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-   "story_keys": [
-    "board",
-    "fresh",
-    "meeting",
-    "recording"
-   ],
-   "date": "2026-11-21",
-   "news_at": "2026-11-21T06:30:06+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Indian Express Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-    "Noel Tata fires fresh salvo at Tata Sons board",
-    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
-   ],
-   "hindi_headlines": [
-    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
-     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:30:06+00:00"
-    },
-    {
-     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:46:53+00:00"
-    },
-    {
-     "title": "Noel Tata fires fresh salvo at Tata Sons board",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T00:00:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261121-Q1487",
    "qid": "Q1487",
    "title": "Hacker",
@@ -936,9 +662,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 12
    },
-   "top_score": 0.35,
+   "top_score": 0.45,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
    ],
@@ -1017,7 +743,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T10:31:59.557841+00:00",
+   "news_at": "2026-11-21T10:46:49.617748+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1363,142 +1089,6 @@
    "lane": "naam-niyam"
   },
   {
-   "id": "nw-20261120-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T10:29:06+00:00",
-   "owners": [
-    "HT Media",
-    "Indian Express Group",
-    "The Hindu Group",
-    "Network18"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "3 Lakh Evacuated, 47 Trains Cancelled: Odisha On High Alert As Cyclone Akvan Heads For Landfall Near Gopalpur Today",
-    "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
-    "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
-    "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Cyclone Akvan crosses Odisha coast near Gopalpur, brings heavy rain"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-     "url": "https://www.news18.com/india/cyclone-akvan-aftermath-odisha-steps-up-flood-preparedness-14-flights-cancelled-10435408.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T10:29:06+00:00"
-    },
-    {
-     "title": "Remnants of Cyclone Akvan to bring rain in Bengal till November 22: IMD",
-     "url": "https://www.thehindu.com/news/national/west-bengal/remnants-of-cyclone-akvan-to-bring-rain-in-bengal-till-november-22-imd/article71727586.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:33:58+00:00"
-    },
-    {
-     "title": "Odisha steps up flood preparedness as Cyclone Akvan weakens",
-     "url": "https://www.hindustantimes.com/india-news/odisha-steps-up-flood-preparedness-as-cyclone-akvan-weakens-101795246117718.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:28:37+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: IMD forecasts rain in West Bengal on Sunday",
-     "url": "https://www.hindustantimes.com/india-news/imd-forecasts-rain-for-west-bengal-on-sunday-as-fallout-of-cyclone-akvan-india-meteorological-department-101795242322421.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:46:49+00:00"
-    },
-    {
-     "title": "Heavy rain alert in Odisha, West Bengal; Cyclone Akvan weakens into depression",
-     "url": "https://indianexpress.com/article/india/cyclone-akvan-weakens-heavy-rain-alert-continues-odisha-west-bengal-10972506/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:29:32+00:00"
-    },
-    {
-     "title": "Cyclone Akvan latest updates: IMD issues red alert in Odisha’s Mayurbhanj, Balasore; heavy rain to lash Bengal, Bihar",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-latest-updates-imd-issues-red-alert-in-odisha-s-mayurbhanj-balasore-heavy-rain-to-lash-bengal-bihar-11795224562125.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:35:02+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-over-70-trains-cancelled-29-rescheduled-air-travel-hit-air-india-indigo-issue-advisories-11795226051144.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:12:45+00:00"
-    },
-    {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:The Hindu Group",
-    "outlet:Network18"
-   ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-hi": 4,
-    "IN-hi-nation": 2
-   },
-   "top_score": 1.135,
-   "top_headlines": [
-    "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "breaking"
-  },
-  {
    "id": "kh-20261121-Q1513",
    "qid": "Q1513",
    "title": "Nagpur",
@@ -1595,212 +1185,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261121-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-   "story_keys": [
-    "board",
-    "fresh",
-    "meeting",
-    "recording"
-   ],
-   "date": "2026-11-21",
-   "news_at": "2026-11-21T06:30:06+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Indian Express Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-    "Noel Tata fires fresh salvo at Tata Sons board",
-    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
-   ],
-   "hindi_headlines": [
-    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
-     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:30:06+00:00"
-    },
-    {
-     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:46:53+00:00"
-    },
-    {
-     "title": "Noel Tata fires fresh salvo at Tata Sons board",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T00:00:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
-   "id": "kh-20261121-Q3351379",
-   "qid": "Q3351379",
-   "title": "Indian Youth Congress",
-   "name": "Indian Youth Congress",
-   "phrase": "Youth Congress",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-   "story_keys": [
-    "account",
-    "issue",
-    "office",
-    "storm",
-    "worker"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T08:01:17+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
-    "HT Media",
-    "NDTV"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-    "Youth Congress vandalises Meta offices in Hyd, Bom"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "भारतीय युवा कांग्रेस",
-   "reports": [
-    {
-     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
-     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T08:01:17+00:00"
-    },
-    {
-     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:06:26+00:00"
-    },
-    {
-     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:49:05+00:00"
-    },
-    {
-     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T17:50:30+00:00"
-    },
-    {
-     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T17:08:50+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
-    "outlet:HT Media",
-    "outlet:NDTV"
-   ],
-   "top": {
-    "IN": 1,
-    "IN-nation": 5
-   },
-   "top_score": 1.24,
-   "top_headlines": [
-    "Meta's India offices hit by opposition protests over account removals"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "id": "kh-20261121-Q1487",
    "qid": "Q1487",
    "title": "Hacker",
@@ -1876,11 +1260,191 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 12
    },
-   "top_score": 0.35,
+   "top_score": 0.45,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+   "story_keys": [
+    "security"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T05:23:12+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
+   ],
+   "hindi_headlines": [
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "सैफ अली खान",
+   "reports": [
+    {
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:23:12+00:00"
+    },
+    {
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T18:35:37+00:00"
+    },
+    {
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T12:46:40+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+   "story_keys": [
+    "gain",
+    "sell-off",
+    "slide",
+    "stock"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-20T22:42:47+00:00",
+   "owners": [
+    "The Hindu Group",
+    "Guardian Media Group",
+    "BBC"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+    "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T22:42:47+00:00"
+    },
+    {
+     "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-20T21:38:17+00:00"
+    },
+    {
+     "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+     "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T16:02:24+00:00"
+    }
+   ],
+   "via": [
+    "outlet:The Hindu Group",
+    "outlet:Guardian Media Group",
+    "outlet:BBC",
+    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "google-news:Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Nasdaq 100 sinks 5.6% in worst week since Covid, S&P 500 corrects to 3.7% as investors sell off AI, tech stocks",
+    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
    ],
    "hindi_owners": [],
    "audience": "world",
@@ -1916,122 +1480,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  },
-  {
-   "id": "kh-20261121-Q116758847",
-   "qid": "Q116758847",
-   "title": "Anthropic",
-   "name": "Anthropic",
-   "phrase": "Anthropic",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
-   "story_keys": [
-    "gain",
-    "sell-off",
-    "slide",
-    "stock",
-    "tech"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T04:15:13+00:00",
-   "owners": [
-    "Indian Express Group",
-    "The Hindu Group",
-    "Guardian Media Group",
-    "BBC"
-   ],
-   "fame": 225000,
-   "news": 225000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
-    "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
-    "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": true,
-   "label_hi": null,
-   "reports": [
-    {
-     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
-     "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-20T22:42:47+00:00"
-    },
-    {
-     "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T21:38:17+00:00"
-    },
-    {
-     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:15:13+00:00"
-    },
-    {
-     "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
-     "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T16:02:24+00:00"
-    },
-    {
-     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
-     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T13:09:52+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Indian Express Group",
-    "outlet:The Hindu Group",
-    "outlet:Guardian Media Group",
-    "outlet:BBC",
-    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
-   ],
-   "top": {
-    "IN": 16
-   },
-   "top_score": 0.25,
-   "top_headlines": [
-    "Nasdaq 100 sinks 5.6% in worst week since Covid, S&P 500 corrects to 3.7% as investors sell off AI, tech stocks",
-    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
   },
   {
    "qid": null,
@@ -2073,7 +1521,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T10:31:59.557841+00:00",
+   "news_at": "2026-11-21T10:46:49.617748+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -2346,159 +1794,428 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
-  }
- ],
- "notes": [
-  "outlets: 1746 headlines from 50 feeds (19 owners), 9 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261120-akvan-cyclone",
-  "explainers: 8 kh- stories (on): kh-20261121-Q3002584, kh-20261121-Q116758847, kh-20261121-Q1513, kh-20261121-Q6668646; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Nitish Setu’: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre",
-  "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
-  "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
- ],
- "outlets": {
-  "headlines": 1746,
-  "feeds": 50,
-  "owners": 19,
-  "matched": 9,
-  "corroborated": 9
- },
- "emerging": [
+  },
   {
-   "id": "nw-20261120-akvan-cyclone",
-   "qid": null,
-   "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-   "name": "Akvan",
-   "kind": "incident",
-   "category": "cyclone",
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T10:29:06+00:00",
-   "owners": [
-    "HT Media",
-    "Indian Express Group",
-    "The Hindu Group",
-    "Network18"
+   "id": "kh-20261121-Q37293-update",
+   "qid": "Q37293",
+   "title": "Ramayana",
+   "name": "Ramayana",
+   "phrase": "Ramayana",
+   "person": false,
+   "kind": "explainer",
+   "category": "entertainment",
+   "category_hi": "मनोरंजन",
+   "story": "'Ramayana: Part 1' box office collection day 17 (LIVE)",
+   "story_keys": [
+    "beat",
+    "bollywood",
+    "budget",
+    "claim",
+    "collection",
+    "crore",
+    "crosse",
+    "dhurandhar",
+    "dutta",
+    "earn",
+    "fastest",
+    "film",
+    "gopal",
+    "haul",
+    "india",
+    "kapoor",
+    "kunal",
+    "lahri",
+    "lara",
+    "less",
+    "lifetime",
+    "mark",
+    "office",
+    "part",
+    "pushpa",
+    "question",
+    "race",
+    "ramayana'",
+    "ranbir",
+    "record",
+    "sight",
+    "sold",
+    "sunil",
+    "surpasse",
+    "take",
+    "ticket",
+    "time",
+    "unstoppable",
+    "varma",
+    "worldwide",
+    "yash",
+    "yash-starrer"
    ],
-   "fame": 100000,
-   "news": 100000,
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:23:03+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "TV9 Network",
+    "NDTV",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "3 Lakh Evacuated, 47 Trains Cancelled: Odisha On High Alert As Cyclone Akvan Heads For Landfall Near Gopalpur Today",
-    "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
-    "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
-    "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Cyclone Akvan crosses Odisha coast near Gopalpur, brings heavy rain"
+    "'Ramayana: Part 1' box office collection day 17 (LIVE)",
+    "'Hanuman Ansh' Vishal Chaturvedi calls Ranbir Kapoor's 'Ramayana' part of a 'cultural renaissance'",
+    "Ramayana Box Office Collection Day 16: Ranbir Kapoor-Starrer Becomes Second Fastest Hindi Film To Cross Rs 650 Crore Net",
+    "'Ramayana' day 16: Ranbir, Yash film maintains strong hold; earns Rs 16.30 cr on Friday",
+    "Ramayana box office collection Day 16: Ranbir Kapoor, Yash film crosses ₹880 crore, becomes second-fastest to cross ₹650 crore in Hindi",
+    "Imtiaz Ali Feels There Is Space For Films Like Both Ramayana And Pyre. Here's Why"
    ],
    "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
+   "region": "world",
    "india_link": true,
-   "label_hi": null,
+   "label_hi": "रामायण",
    "reports": [
     {
-     "title": "Cyclone Akvan Aftermath: Odisha Steps Up Flood Preparedness, 14 Flights Cancelled",
-     "url": "https://www.news18.com/india/cyclone-akvan-aftermath-odisha-steps-up-flood-preparedness-14-flights-cancelled-10435408.html",
+     "title": "'Ramayana: Part 1' box office collection day 17 (LIVE)",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/box-office/ramayana-part-1-box-office-collection-day-17-the-ranbir-kapoor-yash-sai-pallavi-starrer-expected-to-enter-rs-900-crore-net-in-india-club-on-dev-diwali-will-be-the-third-fastest-film-to-do-so-after-pushpa-2-and-dhurandhar-2/articleshow/136048711.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:23:03+00:00"
+    },
+    {
+     "title": "'Hanuman Ansh' Vishal Chaturvedi calls Ranbir Kapoor's 'Ramayana' part of a 'cultural renaissance'",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/news/hanuman-ansh-director-vishal-chaturvedi-calls-ranbir-kapoors-ramayana-rise-of-a-legend-part-of-a-cultural-renaissance-says-i-am-very-excited-to-watch-nitesh-tiwaris-epic/articleshow/136046289.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:05:04+00:00"
+    },
+    {
+     "title": "Ramayana Box Office Collection Day 16: Ranbir Kapoor-Starrer Becomes Second Fastest Hindi Film To Cross Rs 650 Crore Net",
+     "url": "https://www.ndtv.com/entertainment/ramayana-box-office-collection-day-16-film-creates-history-becomes-only-hindi-film-to-cross-rs-650-crore-net-12357314#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:22:22+00:00"
+    },
+    {
+     "title": "'Ramayana' day 16: Ranbir, Yash film maintains strong hold; earns Rs 16.30 cr on Friday",
+     "url": "https://timesofindia.indiatimes.com/entertainment/hindi/bollywood/box-office/ramayana-rise-of-a-legend-box-office-collection-day-16-ranbir-kapoor-yash-film-maintains-strong-hold-earns-rs-16-30-cr-on-friday-worldwide-gross-climbs-to-rs-1574-60-cr/articleshow/136042264.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T00:34:37+00:00"
+    },
+    {
+     "title": "Ramayana box office collection Day 16: Ranbir Kapoor, Yash film crosses ₹880 crore, becomes second-fastest to cross ₹650 crore in Hindi",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/ramayana-box-office-collection-day-16-ranbir-kapoor-yash-film-crosses-875-crore-becomes-second-fastest-to-cross-650-crore-in-hindi-101795185782669.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T16:37:14+00:00"
+    },
+    {
+     "title": "Imtiaz Ali Feels There Is Space For Films Like Both Ramayana And Pyre. Here's Why",
+     "url": "https://www.ndtv.com/entertainment/imtiaz-ali-reflects-on-audience-patterns-today-the-same-people-who-are-watching-ramayana-want-12353950#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T10:01:14+00:00"
+    },
+    {
+     "title": "21-Year-Old Hanuman Ansh Producer On Ranbir Kapoor's 'Phenomenal Job' As Lord Rama In Ramayana",
+     "url": "https://www.ndtv.com/entertainment/21-year-old-hanuman-ansh-producer-on-ranbir-kapoors-phenomenal-job-as-lord-rama-in-ramayana-12353824#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T09:30:03+00:00"
+    },
+    {
+     "title": "Ramayana Box Office: अब 1600 करोड़ से इतनी दूर है ‘रामायण’, ओवरसीज में 16वें दिन हुई छप्परफाड़ कमाई, भारत में कितने छापे?",
+     "url": "https://www.tv9hindi.com/entertainment/bollywood-news/ramayana-close-to-1600-crore-from-worldwide-box-office-how-much-collects-from-overseas-on-day-16-3970154.html",
+     "outlet": "TV9 Bharatvarsh",
+     "outlet_hi": "टीवी9 भारतवर्ष",
+     "owner": "TV9 Network",
+     "group": "Hindi",
+     "lang": "hi",
+     "at": "2026-11-21T04:59:42+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q37293"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261120-Q37293-update",
+   "earlier": [
+    "रामायण की कमाई छुट्टियों के बाद भी सिनेमाघरों में जारी",
+    "रामायण ने आठ दिन में कमाए 1,000 करोड़ रुपये",
+    "रामायण ने दूसरे रविवार कमाए 75 करोड़ रुपये",
+    "रामायण की कमाई 1,500 करोड़ रुपये के करीब पहुंची",
+    "रामायण ने 14 दिन में कमाए 844.40 करोड़ रुपये",
+    "रामायण ने 15 दिन में कमाए 1,547 करोड़ रुपये"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 20 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q1185-update",
+   "qid": "Q1185",
+   "title": "Karnataka",
+   "name": "Karnataka",
+   "phrase": "Karnataka",
+   "person": false,
+   "kind": "explainer",
+   "category": "court",
+   "category_hi": "अदालत",
+   "story": "'Better To Regulate Than Ban': Supreme Court Backs Bike Taxis, Rejects Karnataka's Plea",
+   "story_keys": [
+    "cauvery",
+    "court",
+    "dismisse",
+    "dispute",
+    "nadu",
+    "plea",
+    "reject",
+    "release",
+    "seeking",
+    "tamil",
+    "water"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-20T16:41:24+00:00",
+   "owners": [
+    "Network18",
+    "HT Media"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Better To Regulate Than Ban': Supreme Court Backs Bike Taxis, Rejects Karnataka's Plea",
+    "'Bike taxis safer for young girls': Supreme Court allows ops to continue in Karnataka",
+    "Cauvery Water Row: Supreme Court Rejects Tamil Nadu’s Pleas For 11 TMC From Karnataka | News 18",
+    "Cauvery Row: Supreme Court Rejects Tamil Nadu's 11 TMC Water Plea | Karnataka News | South News"
+   ],
+   "hindi_headlines": [],
+   "region": "india",
+   "india_link": true,
+   "label_hi": "कर्नाटक",
+   "reports": [
+    {
+     "title": "'Better To Regulate Than Ban': Supreme Court Backs Bike Taxis, Rejects Karnataka's Plea",
+     "url": "https://www.news18.com/india/better-to-regulate-than-ban-supreme-court-backs-bike-taxis-rejects-karnatakas-plea-10434654.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T10:29:06+00:00"
+     "at": "2026-11-20T16:41:24+00:00"
     },
     {
-     "title": "Remnants of Cyclone Akvan to bring rain in Bengal till November 22: IMD",
-     "url": "https://www.thehindu.com/news/national/west-bengal/remnants-of-cyclone-akvan-to-bring-rain-in-bengal-till-november-22-imd/article71727586.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T07:33:58+00:00"
-    },
-    {
-     "title": "Odisha steps up flood preparedness as Cyclone Akvan weakens",
-     "url": "https://www.hindustantimes.com/india-news/odisha-steps-up-flood-preparedness-as-cyclone-akvan-weakens-101795246117718.html",
+     "title": "'Bike taxis safer for young girls': Supreme Court allows ops to continue in Karnataka",
+     "url": "https://www.hindustantimes.com/india-news/bike-taxis-safer-for-young-girls-supreme-court-allows-ops-to-continue-in-karnataka-101795169207507.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:28:37+00:00"
+     "at": "2026-11-20T13:00:53+00:00"
     },
     {
-     "title": "Cyclone Akvan: IMD forecasts rain in West Bengal on Sunday",
-     "url": "https://www.hindustantimes.com/india-news/imd-forecasts-rain-for-west-bengal-on-sunday-as-fallout-of-cyclone-akvan-india-meteorological-department-101795242322421.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Cauvery Water Row: Supreme Court Rejects Tamil Nadu’s Pleas For 11 TMC From Karnataka | News 18",
+     "url": "https://www.news18.com/videos/india/cauvery-water-row-supreme-court-rejects-tamil-nadu-s-pleas-for-11-tmc-from-karnataka-news-18-10434232.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T06:46:49+00:00"
+     "at": "2026-11-20T10:42:00+00:00"
     },
     {
-     "title": "Heavy rain alert in Odisha, West Bengal; Cyclone Akvan weakens into depression",
-     "url": "https://indianexpress.com/article/india/cyclone-akvan-weakens-heavy-rain-alert-continues-odisha-west-bengal-10972506/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
+     "title": "Cauvery Row: Supreme Court Rejects Tamil Nadu's 11 TMC Water Plea | Karnataka News | South News",
+     "url": "https://www.news18.com/videos/india/cauvery-row-supreme-court-rejects-tamil-nadu-s-11-tmc-water-plea-karnataka-news-south-news-10434065.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T06:29:32+00:00"
-    },
-    {
-     "title": "Cyclone Akvan latest updates: IMD issues red alert in Odisha’s Mayurbhanj, Balasore; heavy rain to lash Bengal, Bihar",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-latest-updates-imd-issues-red-alert-in-odisha-s-mayurbhanj-balasore-heavy-rain-to-lash-bengal-bihar-11795224562125.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:35:02+00:00"
-    },
-    {
-     "title": "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories",
-     "url": "https://www.livemint.com/news/india/cyclone-akvan-over-70-trains-cancelled-29-rescheduled-air-travel-hit-air-india-indigo-issue-advisories-11795226051144.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:12:45+00:00"
-    },
-    {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
+     "at": "2026-11-20T09:16:55+00:00"
     }
    ],
    "via": [
-    "outlet:HT Media",
-    "outlet:Indian Express Group",
-    "outlet:The Hindu Group",
-    "outlet:Network18"
+    "revisit:Q1185"
    ],
-   "emerging": true,
-   "article": null,
-   "top": {
-    "IN-hi": 4,
-    "IN-hi-nation": 2
-   },
-   "top_score": 1.135,
-   "top_headlines": [
-    "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी"
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261120-Q1185",
+   "earlier": [
+    "कर्नाटक को नहीं देना होगा अतिरिक्त कावेरी नदी का पानी"
    ],
-   "hindi_owners": [],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 20 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
    "audience": "india",
-   "lane": "breaking"
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q7747-update",
+   "qid": "Q7747",
+   "title": "Vladimir Putin",
+   "name": "Vladimir Putin",
+   "phrase": "Vladimir Putin",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+   "story_keys": [
+    "allie",
+    "berlin",
+    "bridge",
+    "china",
+    "compromise",
+    "dhabi",
+    "envoy",
+    "europe",
+    "historic",
+    "meet",
+    "meeting",
+    "peace",
+    "russia",
+    "talk",
+    "trilateral",
+    "trump",
+    "trump-putin-xi",
+    "ukraine",
+    "zelensky"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:10:25+00:00",
+   "owners": [
+    "BBC",
+    "NDTV",
+    "HT Media",
+    "France Médias Monde",
+    "NPR"
+   ],
+   "fame": 1,
+   "news": 0,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+    "🔴Watch live: Trump holds press conference after meeting with Xi, Putin",
+    "Trump touts meeting with Xi and Putin but offers little results",
+    "Trump Calls Putin His \"Friend\", Says Not Sure If He Is \"To America\"",
+    "Ukraine could get NATO-style security, Putin could keep seized land: What Trump’s peace plan may offer"
+   ],
+   "hindi_headlines": [],
+   "region": "world",
+   "india_link": true,
+   "label_hi": "व्लादिमीर पुतिन",
+   "reports": [
+    {
+     "title": "Zelensky says Putin is a 'killer' after Trump calls Russian leader a friend",
+     "url": "https://www.bbc.co.uk/news/articles/cxnv4zvmdy0jo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-21T08:10:25+00:00"
+    },
+    {
+     "title": "🔴Watch live: Trump holds press conference after meeting with Xi, Putin",
+     "url": "https://www.france24.com/en/americas/20261120-watch-live-trump-holds-press-conference-meeting-xi-putin",
+     "outlet": "France 24",
+     "outlet_hi": "फ़्रांस 24",
+     "owner": "France Médias Monde",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T17:26:57+00:00"
+    },
+    {
+     "title": "Trump touts meeting with Xi and Putin but offers little results",
+     "url": "https://www.npr.org/2026/11/20/nx-s1-6047594/trump-asia-trip-xi-putin-press-conference",
+     "outlet": "NPR",
+     "outlet_hi": "एनपीआर",
+     "owner": "NPR",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T15:00:00+00:00"
+    },
+    {
+     "title": "Trump Calls Putin His \"Friend\", Says Not Sure If He Is \"To America\"",
+     "url": "https://www.ndtv.com/world-news/trump-calls-putin-his-friend-says-not-sure-if-he-is-to-america-apec-summit-12356727#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:44:35+00:00"
+    },
+    {
+     "title": "Ukraine could get NATO-style security, Putin could keep seized land: What Trump’s peace plan may offer",
+     "url": "https://www.livemint.com/news/world/ukraine-could-get-nato-style-security-putin-could-keep-seized-land-what-trump-s-peace-plan-may-offer-11795232093104.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:46:21+00:00"
+    }
+   ],
+   "via": [
+    "revisit:Q7747"
+   ],
+   "top": null,
+   "top_score": 0.0,
+   "revisit_of": "kh-20261120-Q7747-update",
+   "earlier": [
+    "व्लादिमीर पुतिन ने अमेरिकी दूतों से की दो घंटे बात",
+    "व्लादिमीर पुतिन ने ट्रंप और जिनपिंग के साथ की समिट",
+    "व्लादिमीर पुतिन, ट्रंप और जिनपिंग का शांति घोषणापत्र"
+   ],
+   "focus": "WHAT HAS HAPPENED SINCE: the channel last told this story on 20 November. Tell only what the REPORTING says is new since then (the progress of the case or story: arrests, court, police, statements, a decision), and one short line of what it is about. The earlier Shorts' titles are only what was already told, never a source: say nothing from them the REPORTING does not say.",
+   "audience": "india",
+   "lane": "naam-niyam"
   }
  ],
+ "notes": [
+  "revisit Q10218: already revisited today; revisit kh-20261121-Q37293-update: 4 owners' new reports on Ramayana (995 views before); revisit Q163225: already revisited today; revisit Q3243690: already revisited today; revisit kh-20261121-Q7747-update: 5 owners' new reports on Vladimir Putin (285 views before); revisit Q9543: already revisited today; revisit kh-20261121-Q1185-update: 2 owners' new rep",
+  "outlets: 1711 headlines from 48 feeds (18 owners), 6 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261121-Q3002584, kh-20261121-Q116758847, kh-20261121-Q1513, kh-20261121-Q6668646; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Nitish Setu’: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre",
+  "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
+  "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
+ ],
+ "trend_errors": [
+  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
+  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
+ ],
+ "outlets": {
+  "headlines": 1711,
+  "feeds": 48,
+  "owners": 18,
+  "matched": 6,
+  "corroborated": 7
+ },
+ "emerging": [],
  "explainers": [
   {
    "id": "kh-20261121-Q3002584",
@@ -2612,35 +2329,32 @@
    "phrase": "Anthropic",
    "person": false,
    "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
    "story_keys": [
     "gain",
     "sell-off",
     "slide",
-    "stock",
-    "tech"
+    "stock"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T04:15:13+00:00",
+   "news_at": "2026-11-20T22:42:47+00:00",
    "owners": [
-    "Indian Express Group",
     "The Hindu Group",
     "Guardian Media Group",
     "BBC"
    ],
-   "fame": 225000,
-   "news": 225000,
+   "fame": 275000,
+   "news": 275000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Tech stock sell-off drags markets down as Anthropic shares slide",
-    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
     "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
     "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
-    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2671,16 +2385,6 @@
      "at": "2026-11-20T21:38:17+00:00"
     },
     {
-     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
-     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:15:13+00:00"
-    },
-    {
      "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
      "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
      "outlet": "The Hindu",
@@ -2689,24 +2393,14 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-20T16:02:24+00:00"
-    },
-    {
-     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
-     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T13:09:52+00:00"
     }
    ],
    "via": [
-    "outlet:Indian Express Group",
     "outlet:The Hindu Group",
     "outlet:Guardian Media Group",
     "outlet:BBC",
-    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears"
+    "google-news:Asia’s stock markets dive as Anthropic debut fails to allay AI bubble fears",
+    "google-news:Apple Stock Has a New AI Catalyst -- It Could Take on OpenAI, Meta and Anthropic"
    ],
    "top": {
     "IN": 16
@@ -2919,126 +2613,101 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN-nation": 20
+   },
+   "top_score": 0.03,
+   "top_headlines": [
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+   ],
    "hindi_owners": []
   },
   {
-   "id": "kh-20261121-Q3351379",
-   "qid": "Q3351379",
-   "title": "Indian Youth Congress",
-   "name": "Indian Youth Congress",
-   "phrase": "Youth Congress",
-   "person": false,
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
    "story_keys": [
-    "account",
-    "issue",
-    "office",
-    "storm",
-    "worker"
+    "security"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T08:01:17+00:00",
+   "news_at": "2026-11-21T05:23:12+00:00",
    "owners": [
-    "Bennett, Coleman & Co.",
-    "Network18",
     "HT Media",
-    "NDTV"
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-    "Youth Congress vandalises Meta offices in Hyd, Bom"
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
+   "hindi_headlines": [
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
+   ],
+   "hindi_news": 1,
    "geos": [
     "IN"
    ],
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "भारतीय युवा कांग्रेस",
+   "label_hi": "सैफ अली खान",
    "reports": [
     {
-     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
-     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T08:01:17+00:00"
-    },
-    {
-     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
-     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:06:26+00:00"
+     "at": "2026-11-21T05:23:12+00:00"
     },
     {
-     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
-     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:49:05+00:00"
-    },
-    {
-     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
-     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T17:50:30+00:00"
+     "at": "2026-11-20T18:35:37+00:00"
     },
     {
-     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
-     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T17:08:50+00:00"
+     "at": "2026-11-20T12:46:40+00:00"
     }
    ],
    "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:NDTV"
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
    ],
-   "top": {
-    "IN": 1,
-    "IN-nation": 5
-   },
-   "top_score": 1.24,
-   "top_headlines": [
-    "Meta's India offices hit by opposition protests over account removals"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [],
    "audience": "india",
-   "lane": "other"
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261121-Q7143348",
@@ -3134,96 +2803,6 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261121-Q12779926",
-   "qid": "Q12779926",
-   "title": "Noel Tata",
-   "name": "Noel Tata",
-   "phrase": "Noel Tata",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-   "story_keys": [
-    "board",
-    "fresh",
-    "meeting",
-    "recording"
-   ],
-   "date": "2026-11-21",
-   "news_at": "2026-11-21T06:30:06+00:00",
-   "owners": [
-    "Bennett, Coleman & Co.",
-    "Indian Express Group",
-    "NDTV"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-    "Noel Tata fires fresh salvo at Tata Sons board",
-    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
-   ],
-   "hindi_headlines": [
-    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
-   ],
-   "hindi_news": 1,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "नोएल टाटा",
-   "reports": [
-    {
-     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
-     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:30:06+00:00"
-    },
-    {
-     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
-     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
-     "outlet": "The Indian Express",
-     "outlet_hi": "द इंडियन एक्सप्रेस",
-     "owner": "Indian Express Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:46:53+00:00"
-    },
-    {
-     "title": "Noel Tata fires fresh salvo at Tata Sons board",
-     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T00:00:00+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:Indian Express Group",
-    "outlet:NDTV"
-   ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
-   "hindi_owners": [
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "naam-niyam"
-  },
-  {
    "id": "kh-20261121-Q1487",
    "qid": "Q1487",
    "title": "Hacker",
@@ -3299,9 +2878,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 12
    },
-   "top_score": 0.35,
+   "top_score": 0.45,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
    ],
