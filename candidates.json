@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T09:16:27+00:00",
+ "at": "2026-11-21T09:32:07+00:00",
  "trending": [
   {
    "id": "kh-20261121-Q10218",
@@ -36,7 +36,6 @@
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
     "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
@@ -46,7 +45,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 9,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -92,19 +91,17 @@
     "outlet:The Hindu Group",
     "outlet:DB Corp",
     "outlet:NDTV",
-    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
+    "google-news:विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "google-news:ट्रंप-जिनपिंग-पुतिन की तस्वीर शेयर कर राहुल गांधी बोले- समझौता करने वाला PM यहां नहीं बैठ सकता"
    ],
    "top": {
-    "IN-nation": 10,
+    "IN-nation": 20,
     "IN-hi-nation": 17
    },
-   "top_score": 0.39,
+   "top_score": 0.135,
    "top_headlines": [
     "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
@@ -114,42 +111,255 @@
    "lane": "paisa"
   },
   {
-   "id": "kh-20261121-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
+   "id": "kh-20261121-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
    "story_keys": [
-    "attend",
-    "dialogue",
-    "forum"
+    "gain",
+    "sell-off",
+    "slide",
+    "stock",
+    "tech"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:16:50.523594+00:00",
+   "news_at": "2026-11-21T04:15:13+00:00",
    "owners": [
-    "Network18",
-    "Government of India",
-    "HT Media"
+    "Indian Express Group",
+    "The Hindu Group",
+    "Guardian Media Group",
+    "BBC"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
-    "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
-    "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
-    "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-    "PM Modi says cultural connect can guarantee global peace",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting"
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+    "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+    "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T22:42:47+00:00"
+    },
+    {
+     "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-20T21:38:17+00:00"
+    },
+    {
+     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
+     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:15:13+00:00"
+    },
+    {
+     "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+     "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T16:02:24+00:00"
+    },
+    {
+     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T13:09:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:The Hindu Group",
+    "outlet:Guardian Media Group",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Nasdaq 100 sinks 5.6% in worst week since Covid, S&P 500 corrects to 3.7% as investors sell off AI, tech stocks"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q6668646",
+   "qid": "Q6668646",
+   "title": "KL Rahul",
+   "name": "KL Rahul",
+   "phrase": "KL Rahul",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+   "story_keys": [
+    "achieve",
+    "against",
+    "century",
+    "feat",
+    "first",
+    "zealand"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:43:30+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+    "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
+    "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
+    "KL Rahul's Century, Shubman Gill's 98 Put India Firmly In Control Against New Zealand"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "के॰ एल॰ राहुल",
+   "reports": [
+    {
+     "title": "KL Rahul's Century, Shubman Gill's 98 Put India Firmly In Control Against New Zealand",
+     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/kl-rahuls-century-shubman-gills-98-put-india-firmly-in-control-against-new-zealand-12357592#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:43:30+00:00"
+    },
+    {
+     "title": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-kl-rahul-yashasvi-jaiswal-and-devdutt-padikkal-achieve-rare-feat-with-two-century-stands-in-first-test/articleshow/136044883.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:05:41+00:00"
+    },
+    {
+     "title": "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
+     "url": "https://www.hindustantimes.com/cricket/kl-rahul-becomes-first-indian-opener-to-score-test-century-in-all-sena-countries-101795224097923.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T01:47:00+00:00"
+    },
+    {
+     "title": "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-kl-rahul-century-elite-sena-club-wellington-test-virat-kohli-3043651-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T01:26:48+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 13
+   },
+   "top_score": 0.87,
+   "top_headlines": [
+    "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+   "story_keys": [
+    "security"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T05:23:12+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
    ],
    "hindi_headlines": [
-    "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
    ],
    "hindi_news": 1,
    "geos": [
@@ -158,270 +368,53 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
+   "label_hi": "सैफ अली खान",
    "reports": [
     {
-     "title": "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339362",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-21T09:16:50.523594+00:00"
-    },
-    {
-     "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-     "url": "https://www.hindustantimes.com/india-news/congress-slams-pm-modi-govt-over-red-carpet-for-pakistan-minister-at-sco-dialogue-cites-pahalgam-101795188016801.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T15:57:27+00:00"
-    },
-    {
-     "title": "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
-     "url": "https://www.news18.com/india/feed-him-biryani-congress-targets-bjp-after-pm-modi-pak-minister-sit-in-front-row-at-sco-forum-10434493.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T14:34:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Government of India",
-    "outlet:HT Media",
-    "google-news:PM Modi says cultural connect can guarantee global peace",
-    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "google-news:India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar”s Vaishali"
-   ],
-   "top": {
-    "IN-nation": 1
-   },
-   "top_score": 0.6,
-   "top_headlines": [
-    "PM Modi says cultural connect can guarantee global peace",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "wk-Q4683097",
-   "qid": "Q4683097",
-   "title": "Yogi Adityanath",
-   "name": "Yogi Adityanath",
-   "phrase": "UP CM Yogi",
-   "person": true,
-   "kind": "death",
-   "category": "death",
-   "reported_death": true,
-   "category_hi": "निधन",
-   "story": "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-   "story_keys": [
-    "adityanath",
-    "mother",
-    "uttarakhand"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T07:57:54+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "NDTV",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-    "'No Shade Like Mother's': UP CM Yogi Bids Final Farewell To Mother In Uttarakhand's Panchur",
-    "Telangana CM condoles demise of UP CM Yogi Adiyanath’s mother",
-    "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend"
-   ],
-   "hindi_headlines": [
-    "उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ के परिवार में कौन-कौन? 7 भाई-बहनों में सीएम किस नंबर पर?",
-    "मां को कंधा देते समय फूट-फूट कर रोये CM योगी आदित्यनाथ",
-    "पीएम मोदी ने यूपी सीएम योगी आदित्यनाथ से की बात, मां के निधन पर जताया दुख",
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
-   ],
-   "hindi_news": 4,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "योगी आदित्यनाथ",
-   "reports": [
-    {
-     "title": "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend",
-     "url": "https://www.ndtv.com/india-news/up-chief-minister-yogi-adityanath-performs-mother-savitri-devis-last-rites-in-haridwar-many-leaders-attend-12357943#publisher=newsstand",
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:57:54+00:00"
+     "at": "2026-11-21T05:23:12+00:00"
     },
     {
-     "title": "Telangana CM condoles demise of UP CM Yogi Adiyanath’s mother",
-     "url": "https://www.thehindu.com/news/national/telangana/telangana-cm-condoles-demise-of-up-cm-yogi-adiyanaths-mother/article71725569.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:21:46+00:00"
-    },
-    {
-     "title": "'No Shade Like Mother's': UP CM Yogi Bids Final Farewell To Mother In Uttarakhand's Panchur",
-     "url": "https://www.news18.com/india/no-shade-like-mothers-up-cm-yogi-bids-final-farewell-to-mother-in-uttarakhands-panchur-ws-lrt-10434988.html",
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T04:59:38+00:00"
+     "at": "2026-11-20T18:35:37+00:00"
     },
     {
-     "title": "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-     "url": "https://www.news18.com/india/yogi-adityanaths-mother-savitri-devi-dies-at-91-in-uttarakhand-ws-l-10434024.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T09:25:56+00:00"
+     "at": "2026-11-20T12:46:40+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:India Today Group",
     "outlet:HT Media",
-    "google-news:यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
    ],
-   "top": {
-    "IN-hi": 10,
-    "IN-hi-nation": 7
-   },
-   "top_score": 0.76,
-   "top_headlines": [
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [
-    "NDTV",
-    "India Today Group"
-   ]
-  },
-  {
-   "id": "kh-20261121-Q7888355",
-   "qid": "Q7888355",
-   "title": "United Nations Climate Change Conference",
-   "name": "United Nations Climate Change Conference",
-   "phrase": "COP UN Climate",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-   "story_keys": [
-    "deal",
-    "fossil",
-    "fuel"
+    "Amar Ujala"
    ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T07:31:05+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Al Jazeera Media Network",
-    "BBC"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-    "COP31: UN Climate summit enters final phase with no deal in sight",
-    "COP31 deal stalls as nations struggle to agree on climate plan",
-    "Fight over fossil fuels leaves COP31 climate talks in deadlock"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "संयुक्त राष्ट्र जलवायु परिवर्तन सम्मेलन",
-   "reports": [
-    {
-     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-     "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-21T07:31:05+00:00"
-    },
-    {
-     "title": "COP31: UN Climate summit enters final phase with no deal in sight",
-     "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-20T20:31:00+00:00"
-    },
-    {
-     "title": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-     "url": "https://www.france24.com/en/video/20261120-cop31-wrapping-up-in-turkey-climate-deal-elusive-as-fossil-fuels-go-unmentioned",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-20T14:38:56+00:00"
-    },
-    {
-     "title": "COP31 deal stalls as nations struggle to agree on climate plan",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-21T01:44:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Fossil fuel talks deadlock pushes COP31 climate summit into overtime"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261121-Q5184955",
@@ -579,7 +572,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:16:27.163052+00:00",
+   "news_at": "2026-11-21T09:32:07.568197+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -855,7 +848,6 @@
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
     "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
@@ -865,7 +857,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 9,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -911,19 +903,17 @@
     "outlet:The Hindu Group",
     "outlet:DB Corp",
     "outlet:NDTV",
-    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
+    "google-news:विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "google-news:ट्रंप-जिनपिंग-पुतिन की तस्वीर शेयर कर राहुल गांधी बोले- समझौता करने वाला PM यहां नहीं बैठ सकता"
    ],
    "top": {
-    "IN-nation": 10,
+    "IN-nation": 20,
     "IN-hi-nation": 17
    },
-   "top_score": 0.39,
+   "top_score": 0.135,
    "top_headlines": [
     "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
@@ -933,104 +923,93 @@
    "lane": "paisa"
   },
   {
-   "id": "kh-20261121-Q7888355",
-   "qid": "Q7888355",
-   "title": "United Nations Climate Change Conference",
-   "name": "United Nations Climate Change Conference",
-   "phrase": "COP UN Climate",
-   "person": false,
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
    "kind": "explainer",
    "category": "news",
    "category_hi": "समाचार",
-   "story": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
    "story_keys": [
-    "deal",
-    "fossil",
-    "fuel"
+    "security"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T07:31:05+00:00",
+   "news_at": "2026-11-21T05:23:12+00:00",
    "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Al Jazeera Media Network",
-    "BBC"
+    "HT Media",
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
    ],
    "fame": 100000,
    "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-    "COP31: UN Climate summit enters final phase with no deal in sight",
-    "COP31 deal stalls as nations struggle to agree on climate plan",
-    "Fight over fossil fuels leaves COP31 climate talks in deadlock"
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
    ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
+   "hindi_headlines": [
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
    "abroad": false,
-   "label_hi": "संयुक्त राष्ट्र जलवायु परिवर्तन सम्मेलन",
+   "label_hi": "सैफ अली खान",
    "reports": [
     {
-     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-     "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:31:05+00:00"
+     "at": "2026-11-21T05:23:12+00:00"
     },
     {
-     "title": "COP31: UN Climate summit enters final phase with no deal in sight",
-     "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T20:31:00+00:00"
+     "at": "2026-11-20T18:35:37+00:00"
     },
     {
-     "title": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-     "url": "https://www.france24.com/en/video/20261120-cop31-wrapping-up-in-turkey-climate-deal-elusive-as-fossil-fuels-go-unmentioned",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T14:38:56+00:00"
-    },
-    {
-     "title": "COP31 deal stalls as nations struggle to agree on climate plan",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-21T01:44:09+00:00"
+     "at": "2026-11-20T12:46:40+00:00"
     }
    ],
    "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
+    "outlet:HT Media",
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
    ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Fossil fuel talks deadlock pushes COP31 climate summit into overtime"
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "Amar Ujala"
    ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261121-Q5184955",
@@ -1188,7 +1167,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:16:27.163052+00:00",
+   "news_at": "2026-11-21T09:32:07.568197+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1244,6 +1223,119 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261121-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
+   "kind": "explainer",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
+   "story_keys": [
+    "gain",
+    "sell-off",
+    "slide",
+    "stock",
+    "tech"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T04:15:13+00:00",
+   "owners": [
+    "Indian Express Group",
+    "The Hindu Group",
+    "Guardian Media Group",
+    "BBC"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+    "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+    "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T22:42:47+00:00"
+    },
+    {
+     "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-20T21:38:17+00:00"
+    },
+    {
+     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
+     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:15:13+00:00"
+    },
+    {
+     "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+     "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T16:02:24+00:00"
+    },
+    {
+     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T13:09:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:The Hindu Group",
+    "outlet:Guardian Media Group",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Nasdaq 100 sinks 5.6% in worst week since Covid, S&P 500 corrects to 3.7% as investors sell off AI, tech stocks"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q2571033",
@@ -1371,20 +1463,16 @@
   }
  ],
  "notes": [
-  "outlets: 1678 headlines from 48 feeds (18 owners), 11 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 5 kh- stories (on): kh-20261121-Q10218, kh-20261121-Q1058, wk-Q4683097, kh-20261121-Q7888355; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer KL Rahul: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre",
+  "outlets: 1737 headlines from 50 feeds (19 owners), 6 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261121-Q10218, kh-20261121-Q116758847, kh-20261121-Q6668646, kh-20261121-Q252290; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Delhi: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
  ],
- "trend_errors": [
-  "outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/",
-  "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
- ],
  "outlets": {
-  "headlines": 1678,
-  "feeds": 48,
-  "owners": 18,
-  "matched": 11,
+  "headlines": 1737,
+  "feeds": 50,
+  "owners": 19,
+  "matched": 6,
   "corroborated": 5
  },
  "emerging": [],
@@ -1424,7 +1512,6 @@
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
     "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
@@ -1434,7 +1521,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 9,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -1480,19 +1567,17 @@
     "outlet:The Hindu Group",
     "outlet:DB Corp",
     "outlet:NDTV",
-    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
+    "google-news:विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "google-news:ट्रंप-जिनपिंग-पुतिन की तस्वीर शेयर कर राहुल गांधी बोले- समझौता करने वाला PM यहां नहीं बैठ सकता"
    ],
    "top": {
-    "IN-nation": 10,
+    "IN-nation": 20,
     "IN-hi-nation": 17
    },
-   "top_score": 0.39,
+   "top_score": 0.135,
    "top_headlines": [
     "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
@@ -1502,42 +1587,255 @@
    "lane": "paisa"
   },
   {
-   "id": "kh-20261121-Q1058",
-   "qid": "Q1058",
-   "title": "Narendra Modi",
-   "name": "Narendra Modi",
-   "phrase": "PM Modi",
-   "person": true,
+   "id": "kh-20261121-Q116758847",
+   "qid": "Q116758847",
+   "title": "Anthropic",
+   "name": "Anthropic",
+   "phrase": "Anthropic",
+   "person": false,
    "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
+   "category": "economy",
+   "category_hi": "अर्थव्यवस्था",
+   "story": "Tech stock sell-off drags markets down as Anthropic shares slide",
    "story_keys": [
-    "attend",
-    "dialogue",
-    "forum"
+    "gain",
+    "sell-off",
+    "slide",
+    "stock",
+    "tech"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:16:50.523594+00:00",
+   "news_at": "2026-11-21T04:15:13+00:00",
    "owners": [
-    "Network18",
-    "Government of India",
-    "HT Media"
+    "Indian Express Group",
+    "The Hindu Group",
+    "Guardian Media Group",
+    "BBC"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
-    "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
-    "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
-    "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-    "PM Modi says cultural connect can guarantee global peace",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting"
+    "Tech stock sell-off drags markets down as Anthropic shares slide",
+    "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+    "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+    "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+    "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Tech stock sell-off drags markets down as Anthropic shares slide",
+     "url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlet_hi": "बीबीसी",
+     "owner": "BBC",
+     "group": "public broadcaster",
+     "lang": "en",
+     "at": "2026-11-20T22:42:47+00:00"
+    },
+    {
+     "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+     "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+     "outlet": "The Guardian",
+     "outlet_hi": "द गार्डियन",
+     "owner": "Guardian Media Group",
+     "group": "international",
+     "lang": "en",
+     "at": "2026-11-20T21:38:17+00:00"
+    },
+    {
+     "title": "Anthropic stock loses flight as AI tech sell-off deepens, Nvidia plunges further",
+     "url": "https://indianexpress.com/article/business/world-market/nthropic-stock-falls-erases-ipo-surge-nasdaq-drop-nvidia-probe-10972267/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:15:13+00:00"
+    },
+    {
+     "title": "Anthropic’s 17% IPO gain fails to lift AI stocks as Nasdaq slides 2.25%",
+     "url": "https://www.thehindu.com/business/anthropics-17-ipo-gain-fails-to-lift-ai-stocks-as-nasdaq-slides-225/article71725100.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T16:02:24+00:00"
+    },
+    {
+     "title": "Anthropic falls 10% premarket a day after biggest IPO as global stocks slide",
+     "url": "https://indianexpress.com/article/business/world-market/anthropic-tanks-trade-day-after-nasdaq-stock-listing-10971718/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T13:09:52+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Indian Express Group",
+    "outlet:The Hindu Group",
+    "outlet:Guardian Media Group",
+    "outlet:BBC"
+   ],
+   "top": {
+    "IN": 16
+   },
+   "top_score": 0.25,
+   "top_headlines": [
+    "Nasdaq 100 sinks 5.6% in worst week since Covid, S&P 500 corrects to 3.7% as investors sell off AI, tech stocks"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q6668646",
+   "qid": "Q6668646",
+   "title": "KL Rahul",
+   "name": "KL Rahul",
+   "phrase": "KL Rahul",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+   "story_keys": [
+    "achieve",
+    "against",
+    "century",
+    "feat",
+    "first",
+    "zealand"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:43:30+00:00",
+   "owners": [
+    "India Today Group",
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+    "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
+    "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
+    "KL Rahul's Century, Shubman Gill's 98 Put India Firmly In Control Against New Zealand"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "के॰ एल॰ राहुल",
+   "reports": [
+    {
+     "title": "KL Rahul's Century, Shubman Gill's 98 Put India Firmly In Control Against New Zealand",
+     "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/kl-rahuls-century-shubman-gills-98-put-india-firmly-in-control-against-new-zealand-12357592#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:43:30+00:00"
+    },
+    {
+     "title": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-kl-rahul-yashasvi-jaiswal-and-devdutt-padikkal-achieve-rare-feat-with-two-century-stands-in-first-test/articleshow/136044883.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:05:41+00:00"
+    },
+    {
+     "title": "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
+     "url": "https://www.hindustantimes.com/cricket/kl-rahul-becomes-first-indian-opener-to-score-test-century-in-all-sena-countries-101795224097923.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T01:47:00+00:00"
+    },
+    {
+     "title": "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
+     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-kl-rahul-century-elite-sena-club-wellington-test-virat-kohli-3043651-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T01:26:48+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 6,
+    "IN-nation": 13
+   },
+   "top_score": 0.87,
+   "top_headlines": [
+    "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
+   ],
+   "hindi_owners": []
+  },
+  {
+   "id": "kh-20261121-Q252290",
+   "qid": "Q252290",
+   "title": "Saif Ali Khan",
+   "name": "Saif Ali Khan",
+   "phrase": "Saif Ali Khan",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+   "story_keys": [
+    "security"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T05:23:12+00:00",
+   "owners": [
+    "HT Media",
+    "Network18",
+    "NDTV",
+    "Amar Ujala"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+    "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+    "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security"
    ],
    "hindi_headlines": [
-    "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
+    "सैफ अली खान: धमकी मिलने के बाद फिल्म बॉडी एक्टिव, बिग बी समेत इन सेलेब्स की सुरक्षा को लेकर की ये पांच मांगें"
    ],
    "hindi_news": 1,
    "geos": [
@@ -1546,270 +1844,53 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": "नरेन्द्र मोदी",
+   "label_hi": "सैफ अली खान",
    "reports": [
     {
-     "title": "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339362",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-21T09:16:50.523594+00:00"
-    },
-    {
-     "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-     "url": "https://www.hindustantimes.com/india-news/congress-slams-pm-modi-govt-over-red-carpet-for-pakistan-minister-at-sco-dialogue-cites-pahalgam-101795188016801.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T15:57:27+00:00"
-    },
-    {
-     "title": "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
-     "url": "https://www.news18.com/india/feed-him-biryani-congress-targets-bjp-after-pm-modi-pak-minister-sit-in-front-row-at-sco-forum-10434493.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-20T14:34:46+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Network18",
-    "outlet:Government of India",
-    "outlet:HT Media",
-    "google-news:PM Modi says cultural connect can guarantee global peace",
-    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "google-news:India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar”s Vaishali"
-   ],
-   "top": {
-    "IN-nation": 1
-   },
-   "top_score": 0.6,
-   "top_headlines": [
-    "PM Modi says cultural connect can guarantee global peace",
-    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
-   ],
-   "hindi_owners": []
-  },
-  {
-   "id": "wk-Q4683097",
-   "qid": "Q4683097",
-   "title": "Yogi Adityanath",
-   "name": "Yogi Adityanath",
-   "phrase": "UP CM Yogi",
-   "person": true,
-   "kind": "death",
-   "category": "death",
-   "reported_death": true,
-   "category_hi": "निधन",
-   "story": "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-   "story_keys": [
-    "adityanath",
-    "mother",
-    "uttarakhand"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T07:57:54+00:00",
-   "owners": [
-    "Network18",
-    "The Hindu Group",
-    "NDTV",
-    "India Today Group",
-    "HT Media"
-   ],
-   "fame": 250000,
-   "news": 250000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-    "'No Shade Like Mother's': UP CM Yogi Bids Final Farewell To Mother In Uttarakhand's Panchur",
-    "Telangana CM condoles demise of UP CM Yogi Adiyanath’s mother",
-    "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend"
-   ],
-   "hindi_headlines": [
-    "उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ के परिवार में कौन-कौन? 7 भाई-बहनों में सीएम किस नंबर पर?",
-    "मां को कंधा देते समय फूट-फूट कर रोये CM योगी आदित्यनाथ",
-    "पीएम मोदी ने यूपी सीएम योगी आदित्यनाथ से की बात, मां के निधन पर जताया दुख",
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
-   ],
-   "hindi_news": 4,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "योगी आदित्यनाथ",
-   "reports": [
-    {
-     "title": "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend",
-     "url": "https://www.ndtv.com/india-news/up-chief-minister-yogi-adityanath-performs-mother-savitri-devis-last-rites-in-haridwar-many-leaders-attend-12357943#publisher=newsstand",
+     "title": "\"Still Scared\": Salman Khan On Constant Safety Concerns Despite Heavy Security",
+     "url": "https://www.ndtv.com/entertainment/salman-khan-reflects-on-constant-safety-concerns-reveals-even-with-full-security-he-is-still-worried-12357423#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T07:57:54+00:00"
+     "at": "2026-11-21T05:23:12+00:00"
     },
     {
-     "title": "Telangana CM condoles demise of UP CM Yogi Adiyanath’s mother",
-     "url": "https://www.thehindu.com/news/national/telangana/telangana-cm-condoles-demise-of-up-cm-yogi-adiyanaths-mother/article71725569.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:21:46+00:00"
-    },
-    {
-     "title": "'No Shade Like Mother's': UP CM Yogi Bids Final Farewell To Mother In Uttarakhand's Panchur",
-     "url": "https://www.news18.com/india/no-shade-like-mothers-up-cm-yogi-bids-final-farewell-to-mother-in-uttarakhands-panchur-ws-lrt-10434988.html",
+     "title": "Pakistan Withdraws Security From Maulana Fazlur Rehman's Homes In Islamabad, Dera Ismail Khan",
+     "url": "https://www.news18.com/india/pakistan-withdraws-security-from-maulana-fazlur-rehmans-homes-in-islamabad-dera-ismail-khan-ws-l-10434714.html",
      "outlet": "News18",
      "outlet_hi": "न्यूज़18",
      "owner": "Network18",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T04:59:38+00:00"
+     "at": "2026-11-20T18:35:37+00:00"
     },
     {
-     "title": "UP CM Yogi Adityanath's Mother Savitri Devi Dies At 91 In Uttarakhand",
-     "url": "https://www.news18.com/india/yogi-adityanaths-mother-savitri-devi-dies-at-91-in-uttarakhand-ws-l-10434024.html",
-     "outlet": "News18",
-     "outlet_hi": "न्यूज़18",
-     "owner": "Network18",
+     "title": "Cine workers' body writes to Maharashtra CM requesting stronger security for Saif Ali Khan, Amitabh Bachchan after threats",
+     "url": "https://www.hindustantimes.com/entertainment/bollywood/cine-workers-body-writes-to-maharashtra-cm-requesting-stronger-security-for-saif-ali-khan-amitabh-bachchan-after-threats-101795176848368.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T09:25:56+00:00"
+     "at": "2026-11-20T12:46:40+00:00"
     }
    ],
    "via": [
-    "outlet:Network18",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:India Today Group",
     "outlet:HT Media",
-    "google-news:यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
+    "outlet:Network18",
+    "outlet:NDTV",
+    "outlet:Amar Ujala"
    ],
-   "top": {
-    "IN-hi": 10,
-    "IN-hi-nation": 7
-   },
-   "top_score": 0.76,
-   "top_headlines": [
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": [
-    "NDTV",
-    "India Today Group"
-   ]
-  },
-  {
-   "id": "kh-20261121-Q7888355",
-   "qid": "Q7888355",
-   "title": "United Nations Climate Change Conference",
-   "name": "United Nations Climate Change Conference",
-   "phrase": "COP UN Climate",
-   "person": false,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-   "story_keys": [
-    "deal",
-    "fossil",
-    "fuel"
+    "Amar Ujala"
    ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T07:31:05+00:00",
-   "owners": [
-    "France Médias Monde",
-    "Deutsche Welle",
-    "Al Jazeera Media Network",
-    "BBC"
-   ],
-   "fame": 100000,
-   "news": 100000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-    "COP31: UN Climate summit enters final phase with no deal in sight",
-    "COP31 deal stalls as nations struggle to agree on climate plan",
-    "Fight over fossil fuels leaves COP31 climate talks in deadlock"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [],
-   "region": "world",
-   "india_link": false,
-   "abroad": false,
-   "label_hi": "संयुक्त राष्ट्र जलवायु परिवर्तन सम्मेलन",
-   "reports": [
-    {
-     "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-     "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
-     "outlet": "BBC",
-     "outlet_hi": "बीबीसी",
-     "owner": "BBC",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-21T07:31:05+00:00"
-    },
-    {
-     "title": "COP31: UN Climate summit enters final phase with no deal in sight",
-     "url": "https://www.dw.com/en/cop31-un-climate-summit-enters-final-phase-with-no-deal-in-sight/live-79999516?maca=en-rss-en-all-1573-rdf",
-     "outlet": "DW",
-     "outlet_hi": "डीडब्ल्यू",
-     "owner": "Deutsche Welle",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-20T20:31:00+00:00"
-    },
-    {
-     "title": "COP31 wrapping up in Turkey: Climate deal elusive as fossil fuels go unmentioned",
-     "url": "https://www.france24.com/en/video/20261120-cop31-wrapping-up-in-turkey-climate-deal-elusive-as-fossil-fuels-go-unmentioned",
-     "outlet": "France 24",
-     "outlet_hi": "फ़्रांस 24",
-     "owner": "France Médias Monde",
-     "group": "public broadcaster",
-     "lang": "en",
-     "at": "2026-11-20T14:38:56+00:00"
-    },
-    {
-     "title": "COP31 deal stalls as nations struggle to agree on climate plan",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/21/cop31-deal-stalls-as-nations-struggle-to-agree-on-climate-plan?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-21T01:44:09+00:00"
-    }
-   ],
-   "via": [
-    "outlet:France Médias Monde",
-    "outlet:Deutsche Welle",
-    "outlet:Al Jazeera Media Network",
-    "outlet:BBC"
-   ],
-   "top": {
-    "IN": 2
-   },
-   "top_score": 0.95,
-   "top_headlines": [
-    "Fossil fuel talks deadlock pushes COP31 climate summit into overtime"
-   ],
-   "hindi_owners": [],
-   "audience": "world",
-   "lane": "other"
+   "audience": "india",
+   "lane": "naam-niyam"
   },
   {
    "id": "kh-20261121-Q5184955",
