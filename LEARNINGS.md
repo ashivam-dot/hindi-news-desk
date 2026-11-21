@@ -1,6 +1,6 @@
 # What this channel's own numbers say
 
-Updated 2026-11-21T15:03:55+00:00. Scored Shorts (views at 24 h): 170. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
+Updated 2026-11-21T18:18:48+00:00. Scored Shorts (views at 24 h): 170. A lift needs 4 scored Shorts in a group; it is shrunk toward 1 and kept within 0.75-1.35 (0.5-2.0 from 20 Shorts, 0.6-1.7 from 10 Shorts).
 
 Baseline: a typical Short has 43 views at 24 h.
 Retention: a typical Short is watched 53.7% through; a group's retention is blended into its lift at 0.5.
@@ -26,12 +26,12 @@ Retention: a typical Short is watched 53.7% through; a group's retention is blen
 
 | Short | published | category | region | lane | audience | views now | views at 6 h | views at 24 h |
 |---|---|---|---|---|---|---|---|---|
-| kh-20261121-Q1185-update | 2026-11-21T11:17 | court | india | naam-niyam | india | 6 |  |  |
-| kh-20261121-Q6668646 | 2026-11-21T08:47 | news | india | naam-niyam | india | 560 | 537 |  |
-| kh-20261121-Q1058 | 2026-11-21T01:57 | diplomacy | india | rajneeti | india | 34 | 16 |  |
+| kh-20261121-Q1185-update | 2026-11-21T11:17 | court | india | naam-niyam | india | 7 | 6 |  |
+| kh-20261121-Q6668646 | 2026-11-21T08:47 | news | india | naam-niyam | india | 993 | 537 |  |
+| kh-20261121-Q1058 | 2026-11-21T01:57 | diplomacy | india | rajneeti | india | 48 | 16 |  |
 | kh-20261120-Q7747-update | 2026-11-20T11:52 | diplomacy | world | naam-niyam | india | 297 | 160 | 291 |
-| kh-20261120-Q1185 | 2026-11-20T08:34 | court | india | paisa | india | 203 | 53 | 172 |
-| kh-20261120-Q37293-update | 2026-11-20T04:44 | entertainment | world | naam-niyam | india | 12 | 2 | 11 |
+| kh-20261120-Q1185 | 2026-11-20T08:34 | court | india | paisa | india | 207 | 53 | 172 |
+| kh-20261120-Q37293-update | 2026-11-20T04:44 | entertainment | world | naam-niyam | india | 13 | 2 | 11 |
 | kh-20261119-Q7747-update | 2026-11-19T11:16 | diplomacy | world | naam-niyam | india | 183 | 33 | 132 |
 | kh-20261119-Q37293-update | 2026-11-19T03:07 | entertainment | world | naam-niyam | india | 34 | 9 | 25 |
 | kh-20261118-Q37293-update | 2026-11-18T08:39 | entertainment | world | sensitive | india | 96 | 12 | 63 |
