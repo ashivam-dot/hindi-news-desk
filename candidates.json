@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T12:17:41+00:00",
+ "at": "2026-11-21T12:32:28+00:00",
  "trending": [
   {
    "id": "kh-20261121-Q3002584",
@@ -122,7 +122,7 @@
     "six-lane"
    ],
    "date": "2026-11-21",
-   "news_at": "2026-11-21T12:18:03.597573+00:00",
+   "news_at": "2026-11-21T12:32:46.306435+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
@@ -142,10 +142,8 @@
     "PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali",
     "Prime Minister Shri Narendra Modi inaugurates, lays foundation stones for, and dedicates to the nation development projects worth around Rs. 34,470 crore in Vaishali, Bihar"
    ],
-   "hindi_headlines": [
-    "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
@@ -162,7 +160,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali",
@@ -172,7 +170,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T11:54:40+00:00"
+     "at": "2026-11-21T12:13:23+00:00"
     },
     {
      "title": "After Big Hug For Nitish Kumar, PM Modi Inaugurates Bridge Named After Him In Bihar's Vaishali",
@@ -227,14 +225,106 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 1.285,
+   "top_score": 1.27,
    "top_headlines": [
     "PM Modi inaugurates Nitish Setu in Bihar, recreates 'poll victory' moment with 'gamcha' wave",
     "India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali"
    ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261121-Q1661243",
+   "qid": "Q1661243",
+   "title": "IIT Kharagpur",
+   "name": "Indian Institute of Technology Kharagpur",
+   "phrase": "IIT Kharagpur",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Break limits: PM's message to IIT Kharagpur students",
+   "story_keys": [
+    "message",
+    "student"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:45:48+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Break limits: PM's message to IIT Kharagpur students",
+    "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+    "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+    "Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारतीय प्रौद्योगिकी संस्थान खड़गपुर",
+   "reports": [
+    {
+     "title": "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+     "url": "https://www.ndtv.com/india-news/pm-narendra-modi-west-bengal-visit-i-challenge-challenges-pm-modis-message-to-iit-kharagpur-students-12358092#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:45:48+00:00"
+    },
+    {
+     "title": "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+     "url": "https://www.indiatoday.in/technology/news/story/google-gives-iit-kharagpur-5-million-for-ai-research-sundar-pichai-shares-emotional-link-3043759-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:58:30+00:00"
+    },
+    {
+     "title": "Break limits: PM's message to IIT Kharagpur students",
+     "url": "https://economictimes.indiatimes.com/news/india/nation-recognises-true-potential-when-it-breaks-limits-of-thinking-pm-modis-message-to-iit-kharagpur-students/articleshow/136047006.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:32:35+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "google-news:Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "google-news:Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "top": {
+    "IN-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261121-Q111772343",
@@ -329,12 +419,11 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
     "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’",
     "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
    ],
    "hindi_owners": [
@@ -362,7 +451,7 @@
     "shri"
    ],
    "date": "2026-11-21",
-   "news_at": "2026-11-21T12:18:03.597573+00:00",
+   "news_at": "2026-11-21T12:32:46.306435+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -385,11 +474,11 @@
    "hindi_headlines": [
     "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह 22 नवंबर, 2026 को अरुणाचल प्रदेश के ईटानगर में सहकारिता समारोह में भाग लेंगे तथा राज्य की विभिन्न विकास परियोजनाओं का शुभारंभ करेंगे",
     "केन्द्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह ने आज ईटानगर में अरुणाचल प्रदेश पुलिस को राष्ट्रपति निशान (President’s Colour) प्रदान किया",
+    "'कश्मीर में अब एक भी भारत में जन्मा आतंकवादी नहीं बचा': अमित शाह बोले, आर्टिकल-370 हटने से बदली तस्वीर",
     "अमित शाह ने किया अरुणाचल का दौरा; सियांग बांध के प्रदर्शनकारियों से साधा संपर्क, क्या बोले",
-    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा",
-    "अरुणांचल में सियांग नदी पर मेगा बांध का विरोध कर रहे लोगों से मिले अमित शाह, बोले-संस्कृति से समझौता नहीं"
+    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा"
    ],
-   "hindi_news": 7,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -406,7 +495,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar",
@@ -416,7 +505,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
@@ -459,20 +548,18 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
-    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’"
+    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests"
    ],
    "hindi_owners": [
-    "HT Media",
     "Network18",
-    "NDTV"
+    "HT Media"
    ],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "sensitive"
   },
   {
    "id": "nw-20261120-akvan-cyclone",
@@ -498,7 +585,7 @@
     "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
     "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
     "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan"
+    "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -580,14 +667,14 @@
      "at": "2026-11-21T02:12:45+00:00"
     },
     {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
+     "url": "https://indianexpress.com/article/india/cyclone-akvan-odisha-gopalpur-landfall-casualties-evacuation-10971128/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
+     "at": "2026-11-20T07:13:06+00:00"
     }
    ],
    "via": [
@@ -602,9 +689,9 @@
     "IN": 3,
     "IN-hi": 5,
     "IN-nation": 1,
-    "IN-hi-nation": 8
+    "IN-hi-nation": 4
    },
-   "top_score": 1.795,
+   "top_score": 1.855,
    "top_headlines": [
     "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी",
     "14 flights cancelled at Ranchi airport amid Cyclone 'Akvan' | HIGHLIGHTS"
@@ -883,9 +970,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 13
    },
-   "top_score": 0.35,
+   "top_score": 0.4,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
    ],
@@ -964,7 +1051,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T12:17:41.171526+00:00",
+   "news_at": "2026-11-21T12:32:28.991815+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1206,137 +1293,6 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261121-Q4746875",
-   "qid": "Q4746875",
-   "title": "Amit Shah",
-   "name": "Amit Shah",
-   "phrase": "Minister Amit Shah",
-   "person": true,
-   "kind": "explainer",
-   "category": "diplomacy",
-   "category_hi": "कूटनीति",
-   "story": "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
-   "story_keys": [
-    "cooperation",
-    "dam",
-    "itanagar",
-    "project",
-    "shri"
-   ],
-   "date": "2026-11-21",
-   "news_at": "2026-11-21T12:18:03.597573+00:00",
-   "owners": [
-    "HT Media",
-    "The Hindu Group",
-    "NDTV",
-    "Government of India",
-    "Network18",
-    "Amar Ujala"
-   ],
-   "fame": 150000,
-   "news": 150000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
-    "Two Arunachal organisations urge Union Home Minister Amit Shah to scrap Siang mega dam project",
-    "Concerns of people of Siang Valley over dam project to be addressed through dialogue: Shah",
-    "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
-    "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar"
-   ],
-   "hindi_headlines": [
-    "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह 22 नवंबर, 2026 को अरुणाचल प्रदेश के ईटानगर में सहकारिता समारोह में भाग लेंगे तथा राज्य की विभिन्न विकास परियोजनाओं का शुभारंभ करेंगे",
-    "केन्द्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह ने आज ईटानगर में अरुणाचल प्रदेश पुलिस को राष्ट्रपति निशान (President’s Colour) प्रदान किया",
-    "अमित शाह ने किया अरुणाचल का दौरा; सियांग बांध के प्रदर्शनकारियों से साधा संपर्क, क्या बोले",
-    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा",
-    "अरुणांचल में सियांग नदी पर मेगा बांध का विरोध कर रहे लोगों से मिले अमित शाह, बोले-संस्कृति से समझौता नहीं"
-   ],
-   "hindi_news": 7,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "अमित शाह",
-   "reports": [
-    {
-     "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339565",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
-    },
-    {
-     "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar",
-     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339555",
-     "outlet": "PIB",
-     "outlet_hi": "पीआईबी",
-     "owner": "Government of India",
-     "group": "official",
-     "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
-    },
-    {
-     "title": "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
-     "url": "https://www.ndtv.com/india-news/traditions-wont-be-compromised-amit-shah-to-arunachal-dam-protestors-12358524#publisher=newsstand",
-     "outlet": "NDTV",
-     "outlet_hi": "एनडीटीवी",
-     "owner": "NDTV",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T10:46:37+00:00"
-    },
-    {
-     "title": "Concerns of people of Siang Valley over dam project to be addressed through dialogue: Shah",
-     "url": "https://www.thehindu.com/news/national/arunachal-pradesh/concerns-of-people-of-siang-valley-over-dam-project-to-be-addressed-through-dialogue-shah/article71727685.ece",
-     "outlet": "The Hindu",
-     "outlet_hi": "द हिंदू",
-     "owner": "The Hindu Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T08:13:53+00:00"
-    },
-    {
-     "title": "Two Arunachal organisations urge Union Home Minister Amit Shah to scrap Siang mega dam project",
-     "url": "https://www.hindustantimes.com/india-news/two-arunachal-organisations-urge-union-home-minister-amit-shah-to-scrap-siang-mega-dam-project-101795236478467.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T04:47:58+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:The Hindu Group",
-    "outlet:NDTV",
-    "outlet:Government of India",
-    "outlet:Network18",
-    "outlet:Amar Ujala"
-   ],
-   "top": {
-    "IN": 7,
-    "IN-nation": 3
-   },
-   "top_score": 0.97,
-   "top_headlines": [
-    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’"
-   ],
-   "hindi_owners": [
-    "HT Media",
-    "Network18",
-    "NDTV"
-   ],
-   "audience": "india",
-   "lane": "rajneeti"
-  },
-  {
    "id": "nw-20261120-akvan-cyclone",
    "qid": null,
    "title": "14 flights cancelled at Ranchi airport amid Cyclone 'Akvan' | HIGHLIGHTS",
@@ -1360,7 +1316,7 @@
     "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
     "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
     "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan"
+    "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1442,14 +1398,14 @@
      "at": "2026-11-21T02:12:45+00:00"
     },
     {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
+     "url": "https://indianexpress.com/article/india/cyclone-akvan-odisha-gopalpur-landfall-casualties-evacuation-10971128/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
+     "at": "2026-11-20T07:13:06+00:00"
     }
    ],
    "via": [
@@ -1464,9 +1420,9 @@
     "IN": 3,
     "IN-hi": 5,
     "IN-nation": 1,
-    "IN-hi-nation": 8
+    "IN-hi-nation": 4
    },
-   "top_score": 1.795,
+   "top_score": 1.855,
    "top_headlines": [
     "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी",
     "14 flights cancelled at Ranchi airport amid Cyclone 'Akvan' | HIGHLIGHTS"
@@ -1474,6 +1430,98 @@
    "hindi_owners": [],
    "audience": "india",
    "lane": "breaking"
+  },
+  {
+   "id": "kh-20261121-Q1661243",
+   "qid": "Q1661243",
+   "title": "IIT Kharagpur",
+   "name": "Indian Institute of Technology Kharagpur",
+   "phrase": "IIT Kharagpur",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Break limits: PM's message to IIT Kharagpur students",
+   "story_keys": [
+    "message",
+    "student"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:45:48+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Break limits: PM's message to IIT Kharagpur students",
+    "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+    "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+    "Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारतीय प्रौद्योगिकी संस्थान खड़गपुर",
+   "reports": [
+    {
+     "title": "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+     "url": "https://www.ndtv.com/india-news/pm-narendra-modi-west-bengal-visit-i-challenge-challenges-pm-modis-message-to-iit-kharagpur-students-12358092#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:45:48+00:00"
+    },
+    {
+     "title": "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+     "url": "https://www.indiatoday.in/technology/news/story/google-gives-iit-kharagpur-5-million-for-ai-research-sundar-pichai-shares-emotional-link-3043759-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:58:30+00:00"
+    },
+    {
+     "title": "Break limits: PM's message to IIT Kharagpur students",
+     "url": "https://economictimes.indiatimes.com/news/india/nation-recognises-true-potential-when-it-breaks-limits-of-thinking-pm-modis-message-to-iit-kharagpur-students/articleshow/136047006.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:32:35+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "google-news:Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "google-news:Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "top": {
+    "IN-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261121-Q3002584",
@@ -1579,6 +1627,135 @@
    "lane": "naam-niyam"
   },
   {
+   "id": "kh-20261121-Q4746875",
+   "qid": "Q4746875",
+   "title": "Amit Shah",
+   "name": "Amit Shah",
+   "phrase": "Minister Amit Shah",
+   "person": true,
+   "kind": "explainer",
+   "category": "diplomacy",
+   "category_hi": "कूटनीति",
+   "story": "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
+   "story_keys": [
+    "cooperation",
+    "dam",
+    "itanagar",
+    "project",
+    "shri"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T12:32:46.306435+00:00",
+   "owners": [
+    "HT Media",
+    "The Hindu Group",
+    "NDTV",
+    "Government of India",
+    "Network18",
+    "Amar Ujala"
+   ],
+   "fame": 150000,
+   "news": 150000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
+    "Two Arunachal organisations urge Union Home Minister Amit Shah to scrap Siang mega dam project",
+    "Concerns of people of Siang Valley over dam project to be addressed through dialogue: Shah",
+    "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
+    "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar"
+   ],
+   "hindi_headlines": [
+    "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह 22 नवंबर, 2026 को अरुणाचल प्रदेश के ईटानगर में सहकारिता समारोह में भाग लेंगे तथा राज्य की विभिन्न विकास परियोजनाओं का शुभारंभ करेंगे",
+    "केन्द्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह ने आज ईटानगर में अरुणाचल प्रदेश पुलिस को राष्ट्रपति निशान (President’s Colour) प्रदान किया",
+    "'कश्मीर में अब एक भी भारत में जन्मा आतंकवादी नहीं बचा': अमित शाह बोले, आर्टिकल-370 हटने से बदली तस्वीर",
+    "अमित शाह ने किया अरुणाचल का दौरा; सियांग बांध के प्रदर्शनकारियों से साधा संपर्क, क्या बोले",
+    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा"
+   ],
+   "hindi_news": 8,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "अमित शाह",
+   "reports": [
+    {
+     "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah to participate in Cooperative Function and launch various development projects of Arunachal Pradesh at Itanagar on November 22, 2026",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339565",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-21T12:32:46.306435+00:00"
+    },
+    {
+     "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar",
+     "url": "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2339555",
+     "outlet": "PIB",
+     "outlet_hi": "पीआईबी",
+     "owner": "Government of India",
+     "group": "official",
+     "lang": "en",
+     "at": "2026-11-21T12:32:46.306435+00:00"
+    },
+    {
+     "title": "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
+     "url": "https://www.ndtv.com/india-news/traditions-wont-be-compromised-amit-shah-to-arunachal-dam-protestors-12358524#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T10:46:37+00:00"
+    },
+    {
+     "title": "Concerns of people of Siang Valley over dam project to be addressed through dialogue: Shah",
+     "url": "https://www.thehindu.com/news/national/arunachal-pradesh/concerns-of-people-of-siang-valley-over-dam-project-to-be-addressed-through-dialogue-shah/article71727685.ece",
+     "outlet": "The Hindu",
+     "outlet_hi": "द हिंदू",
+     "owner": "The Hindu Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:13:53+00:00"
+    },
+    {
+     "title": "Two Arunachal organisations urge Union Home Minister Amit Shah to scrap Siang mega dam project",
+     "url": "https://www.hindustantimes.com/india-news/two-arunachal-organisations-urge-union-home-minister-amit-shah-to-scrap-siang-mega-dam-project-101795236478467.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:47:58+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:The Hindu Group",
+    "outlet:NDTV",
+    "outlet:Government of India",
+    "outlet:Network18",
+    "outlet:Amar Ujala"
+   ],
+   "top": {
+    "IN": 7,
+    "IN-nation": 2
+   },
+   "top_score": 0.985,
+   "top_headlines": [
+    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests"
+   ],
+   "hindi_owners": [
+    "Network18",
+    "HT Media"
+   ],
+   "audience": "india",
+   "lane": "sensitive"
+  },
+  {
    "id": "kh-20261121-Q111772343",
    "qid": "Q111772343",
    "title": "Balen Shah",
@@ -1671,12 +1848,11 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
     "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’",
     "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
    ],
    "hindi_owners": [
@@ -1761,9 +1937,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 13
    },
-   "top_score": 0.35,
+   "top_score": 0.4,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
    ],
@@ -1842,7 +2018,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T12:17:41.171526+00:00",
+   "news_at": "2026-11-21T12:32:28.991815+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -2134,17 +2310,17 @@
   }
  ],
  "notes": [
-  "outlets: 1778 headlines from 49 feeds (19 owners), 11 matched to articles, 8 candidates with 2+ owners, 1 nw- stories (on): nw-20261120-akvan-cyclone",
-  "explainers: 7 kh- stories (on): kh-20261121-Q3002584, kh-20261121-Q1058, kh-20261121-Q111772343, kh-20261121-Q4746875; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Ranbir Kapoor Yash / Hindi: no Wikipedia article that can be its centre; explainer CEA Nageswaran: fewer than 3 owners' headlines name it and the story",
+  "outlets: 1787 headlines from 49 feeds (19 owners), 12 matched to articles, 9 candidates with 2+ owners, 1 nw- stories (on): nw-20261120-akvan-cyclone",
+  "explainers: 8 kh- stories (on): kh-20261121-Q3002584, kh-20261121-Q1058, kh-20261121-Q1661243, kh-20261121-Q111772343; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Ranbir Kapoor Yash / Hindi: no Wikipedia article that can be its centre; explainer One Nation: fewer than 3 owners' headlines name it and the story",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 1778,
+  "headlines": 1787,
   "feeds": 49,
   "owners": 19,
-  "matched": 11,
-  "corroborated": 8
+  "matched": 12,
+  "corroborated": 9
  },
  "emerging": [
   {
@@ -2171,7 +2347,7 @@
     "Cyclone Akvan Disrupts Train Services: 47 Cancelled, 28 Rescheduled; Check Your Train Status",
     "Cyclone Akvan Disrupts Flights: Air India, IndiGo Issue Alerts – Check Affected Routes",
     "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
-    "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan"
+    "Cyclone Akvan: Over 70 trains cancelled, 29 rescheduled; air travel hit, Air India, IndiGo issue advisories"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -2253,14 +2429,14 @@
      "at": "2026-11-21T02:12:45+00:00"
     },
     {
-     "title": "Odisha Assembly adjourned till Nov 23 morning due to Cyclone Akvan",
-     "url": "https://www.hindustantimes.com/india-news/odisha-assembly-adjourned-till-nov-23-morning-due-to-cyclone-akvan-101795163112963.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
+     "title": "Coastal, southern Odisha receive heavy rainfall as Cyclone Akvan makes landfall; no casualty reported",
+     "url": "https://indianexpress.com/article/india/cyclone-akvan-odisha-gopalpur-landfall-casualties-evacuation-10971128/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T08:31:19+00:00"
+     "at": "2026-11-20T07:13:06+00:00"
     }
    ],
    "via": [
@@ -2275,9 +2451,9 @@
     "IN": 3,
     "IN-hi": 5,
     "IN-nation": 1,
-    "IN-hi-nation": 8
+    "IN-hi-nation": 4
    },
-   "top_score": 1.795,
+   "top_score": 1.855,
    "top_headlines": [
     "Bihar Weather Update: बिहार में चक्रवात 'अकवान' का असर, पटना समेत 13 जिलों में आंधी और बिजली गिरने की चेतावनी",
     "14 flights cancelled at Ranchi airport amid Cyclone 'Akvan' | HIGHLIGHTS"
@@ -2409,7 +2585,7 @@
     "six-lane"
    ],
    "date": "2026-11-21",
-   "news_at": "2026-11-21T12:18:03.597573+00:00",
+   "news_at": "2026-11-21T12:32:46.306435+00:00",
    "owners": [
     "HT Media",
     "India Today Group",
@@ -2429,10 +2605,8 @@
     "PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali",
     "Prime Minister Shri Narendra Modi inaugurates, lays foundation stones for, and dedicates to the nation development projects worth around Rs. 34,470 crore in Vaishali, Bihar"
    ],
-   "hindi_headlines": [
-    "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
-   ],
-   "hindi_news": 1,
+   "hindi_headlines": [],
+   "hindi_news": 0,
    "geos": [
     "IN"
    ],
@@ -2449,7 +2623,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali",
@@ -2459,7 +2633,7 @@
      "owner": "The Hindu Group",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T11:54:40+00:00"
+     "at": "2026-11-21T12:13:23+00:00"
     },
     {
      "title": "After Big Hug For Nitish Kumar, PM Modi Inaugurates Bridge Named After Him In Bihar's Vaishali",
@@ -2514,14 +2688,106 @@
    ],
    "top": {
     "IN": 1,
-    "IN-nation": 2
+    "IN-nation": 3
    },
-   "top_score": 1.285,
+   "top_score": 1.27,
    "top_headlines": [
     "PM Modi inaugurates Nitish Setu in Bihar, recreates 'poll victory' moment with 'gamcha' wave",
     "India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar’s Vaishali"
    ],
    "hindi_owners": []
+  },
+  {
+   "id": "kh-20261121-Q1661243",
+   "qid": "Q1661243",
+   "title": "IIT Kharagpur",
+   "name": "Indian Institute of Technology Kharagpur",
+   "phrase": "IIT Kharagpur",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Break limits: PM's message to IIT Kharagpur students",
+   "story_keys": [
+    "message",
+    "student"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:45:48+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "India Today Group",
+    "NDTV"
+   ],
+   "fame": 275000,
+   "news": 275000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Break limits: PM's message to IIT Kharagpur students",
+    "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+    "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+    "Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "भारतीय प्रौद्योगिकी संस्थान खड़गपुर",
+   "reports": [
+    {
+     "title": "'I Challenge Challenges': PM Modi's Message To IIT Kharagpur Students",
+     "url": "https://www.ndtv.com/india-news/pm-narendra-modi-west-bengal-visit-i-challenge-challenges-pm-modis-message-to-iit-kharagpur-students-12358092#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:45:48+00:00"
+    },
+    {
+     "title": "Google gives IIT Kharagpur $5 million for AI research, Pichai shares emotional message",
+     "url": "https://www.indiatoday.in/technology/news/story/google-gives-iit-kharagpur-5-million-for-ai-research-sundar-pichai-shares-emotional-link-3043759-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:58:30+00:00"
+    },
+    {
+     "title": "Break limits: PM's message to IIT Kharagpur students",
+     "url": "https://economictimes.indiatimes.com/news/india/nation-recognises-true-potential-when-it-breaks-limits-of-thinking-pm-modis-message-to-iit-kharagpur-students/articleshow/136047006.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:32:35+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:India Today Group",
+    "outlet:NDTV",
+    "google-news:Google to provide IIT Kharagpur Rs 46 crore for AI research",
+    "google-news:Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "top": {
+    "IN-nation": 13
+   },
+   "top_score": 0.24,
+   "top_headlines": [
+    "Break free of limiting beliefs to achieve new heights: PM Modi at IIT Kharagpur"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
   },
   {
    "id": "kh-20261121-Q111772343",
@@ -2616,12 +2882,11 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
     "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’",
     "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
    ],
    "hindi_owners": [
@@ -2649,7 +2914,7 @@
     "shri"
    ],
    "date": "2026-11-21",
-   "news_at": "2026-11-21T12:18:03.597573+00:00",
+   "news_at": "2026-11-21T12:32:46.306435+00:00",
    "owners": [
     "HT Media",
     "The Hindu Group",
@@ -2672,11 +2937,11 @@
    "hindi_headlines": [
     "केंद्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह 22 नवंबर, 2026 को अरुणाचल प्रदेश के ईटानगर में सहकारिता समारोह में भाग लेंगे तथा राज्य की विभिन्न विकास परियोजनाओं का शुभारंभ करेंगे",
     "केन्द्रीय गृह एवं सहकारिता मंत्री श्री अमित शाह ने आज ईटानगर में अरुणाचल प्रदेश पुलिस को राष्ट्रपति निशान (President’s Colour) प्रदान किया",
+    "'कश्मीर में अब एक भी भारत में जन्मा आतंकवादी नहीं बचा': अमित शाह बोले, आर्टिकल-370 हटने से बदली तस्वीर",
     "अमित शाह ने किया अरुणाचल का दौरा; सियांग बांध के प्रदर्शनकारियों से साधा संपर्क, क्या बोले",
-    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा",
-    "अरुणांचल में सियांग नदी पर मेगा बांध का विरोध कर रहे लोगों से मिले अमित शाह, बोले-संस्कृति से समझौता नहीं"
+    "'...तब मुझे हंसी आती है': अमित शाह ने कांग्रेस पर कसा तंज, सियांग प्रोजेक्ट को लेकर अरुणाचल को दिया भरोसा"
    ],
-   "hindi_news": 7,
+   "hindi_news": 8,
    "geos": [
     "IN"
    ],
@@ -2693,7 +2958,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "Union Home Minister and Minister of Cooperation Shri Amit Shah presents the President’s Colour to Arunachal Pradesh Police in Itanagar",
@@ -2703,7 +2968,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T12:18:03.597573+00:00"
+     "at": "2026-11-21T12:32:46.306435+00:00"
     },
     {
      "title": "\"Traditions Won't Be Compromised\": Amit Shah To Arunachal Dam Protestors",
@@ -2746,20 +3011,18 @@
    ],
    "top": {
     "IN": 7,
-    "IN-nation": 3
+    "IN-nation": 2
    },
-   "top_score": 0.97,
+   "top_score": 0.985,
    "top_headlines": [
-    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests",
-    "In first remarks on Siang, Amit Shah cites ‘national project’, ‘strategic interests’"
+    "'Will find way forward through dialogue': Amit Shah assures Arunachal locals amid Siang dam protests"
    ],
    "hindi_owners": [
-    "HT Media",
     "Network18",
-    "NDTV"
+    "HT Media"
    ],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "sensitive"
   },
   {
    "id": "kh-20261121-Q116758847",
@@ -3031,9 +3294,9 @@
     "outlet:NDTV"
    ],
    "top": {
-    "IN": 14
+    "IN": 13
    },
-   "top_score": 0.35,
+   "top_score": 0.4,
    "top_headlines": [
     "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
    ],
