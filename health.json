@@ -1,24 +1,23 @@
 {
- "at": "2026-11-21T18:34:39+00:00",
+ "at": "2026-11-21T18:48:28+00:00",
  "ok": true,
  "dry": false,
  "steps": [
-  "review: state/REVIEW.md for 2026-11-22, 84 scored Shorts, 11 groups judged",
   "untag: old marker tag taken off 0 uploads",
-  "watch: 22 candidates from 18 trending",
+  "watch: 23 candidates from 19 trending",
   "revisit kh-20261122-Q10218-update: 2 owners' new reports on Rahul Gandhi (1153 views before); revisit Q6668646: last Short 10 h ago; revisit kh-20261122-Q163225-update: 3 owners' new reports on Sonia Gandhi (813 views before); revisit kh-20261122-Q3243690-update: 5 owners' new reports on Chief Justice of India (727 views before); revisit kh-20261122-Q7747-update: 4 owners' new reports on Vladimir ",
-  "outlets: 1724 headlines from 47 feeds (18 owners), 14 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261122-Q8062264, kh-20261122-Q6579447, kh-20261122-Q4746875, kh-20261122-Q116758847; dropped: explainer Op Sindoor / China's Pak: no Wikipedia article that can be its centre; explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer COP / COP Deep: no Wikipedia article that can be its centre",
+  "outlets: 1722 headlines from 47 feeds (18 owners), 15 matched to articles, 8 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 8 kh- stories (on): kh-20261122-Q8062264, kh-20261122-Q6579447, kh-20261122-Q4746875, kh-20261122-Q111772343; dropped: explainer Op Sindoor / Operation Sindoor’ US: no Wikipedia article that can be its centre; explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer COP / COP Deep: no Wikipedia article that can be its centre",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again",
   "trend radar errors: ['outlet indianexpress: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/india/feed/', 'outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/']",
   "hold kh-20261122-Q8062264: outside 07:00-24:00 IST",
   "hold kh-20261122-Q6579447: outside 07:00-24:00 IST",
+  "hold kh-20261122-Q9141: outside 07:00-24:00 IST",
   "hold kh-20261122-Q4746875: outside 07:00-24:00 IST",
-  "drop kh-20261122-Q9141: a diplomacy story goes out only near the top of the lists (place 0.70, needs 0.75)",
   "drop kh-20261122-Q28549275: a sport story goes out only as a top story (place 0.00, needs 0.35) or when 3 Hindi newsrooms lead with it",
   "drop kh-20261122-Q528496: not in Google News India's top stories (English or Hindi), India's searches, 3 Hindi newsrooms' feeds, breaking or famous",
-  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261122-Q4746875, kh-20261122-Q116758847, kh-20261122-Q3243690-update, kh-20261122-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261122-Q6579447, kh-20261122-Q9141, kh-20261122-Q163225-update, kh-20261122-Q7747-update",
+  "ad-suitability x0.8 (crime, court, communal, accident; not breaking): kh-20261122-Q4746875, kh-20261122-Q116758847, kh-20261122-Q3243690-update, kh-20261122-Q9543-update; x1.2 (economy, jobs, schemes, tech, science, diplomacy): kh-20261122-Q6579447, kh-20261122-Q9141, kh-20261122-Q111772343, kh-20261122-Q163225-update, kh-20261122-Q7747-update",
   "channel: about, playlists done; nothing left to do"
  ]
 }
