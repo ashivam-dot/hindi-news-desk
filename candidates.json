@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T09:02:48+00:00",
+ "at": "2026-11-21T09:16:27+00:00",
  "trending": [
   {
    "id": "kh-20261121-Q10218",
@@ -14,30 +14,30 @@
    "story": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
    "story_keys": [
     "back",
+    "century",
     "hits",
     "jibe",
-    "war"
+    "question"
    ],
    "date": "2026-11-20",
    "news_at": "2026-11-21T07:27:28+00:00",
    "owners": [
     "Network18",
-    "Al Jazeera Media Network",
+    "HT Media",
     "The Hindu Group",
     "DB Corp",
-    "HT Media",
     "NDTV"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
-    "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post"
+    "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
     "रिजिजू बोले- 1962 युद्ध पर कांग्रेस माफी मांगे:केंद्रीय मंत्री ने राहुल गांधी के ‘कम्प्रोमाइज्ड PM’ वाले तंज पर 4 सवाल पूछे",
@@ -46,7 +46,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -56,16 +56,6 @@
    "label_hi": "राहुल गाँधी",
    "reports": [
     {
-     "title": "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/rahul-gandhi-backs-strong-india-israel-ties-despite-gaza-war?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T23:20:50+00:00"
-    },
-    {
      "title": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
      "url": "https://www.thehindu.com/news/national/kiren-rijiju-hits-back-at-rahul-gandhis-compromised-pm-jibe-questions-congress-on-1962-war-poverty/article71727457.ece",
      "outlet": "The Hindu",
@@ -74,6 +64,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-21T07:27:28+00:00"
+    },
+    {
+     "title": "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+     "url": "https://www.hindustantimes.com/india-news/selective-political-commentary-traders-body-hits-out-at-rahul-gandhi-s-remarks-on-demonetisation-gst-101795232556570.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:43:53+00:00"
     },
     {
      "title": "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
@@ -88,28 +88,30 @@
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:HT Media",
     "outlet:NDTV",
+    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post",
     "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
    ],
    "top": {
-    "IN-nation": 18
+    "IN-nation": 10,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.09,
+   "top_score": 0.39,
    "top_headlines": [
+    "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
-    "DB Corp",
-    "HT Media"
+    "DB Corp"
    ],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "paisa"
   },
   {
    "id": "kh-20261121-Q1058",
@@ -128,7 +130,7 @@
     "forum"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:03:07.281433+00:00",
+   "news_at": "2026-11-21T09:16:50.523594+00:00",
    "owners": [
     "Network18",
     "Government of India",
@@ -144,7 +146,7 @@
     "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
     "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
     "PM Modi says cultural connect can guarantee global peace",
-    "PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News"
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting"
    ],
    "hindi_headlines": [
     "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
@@ -166,7 +168,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T09:03:07.281433+00:00"
+     "at": "2026-11-21T09:16:50.523594+00:00"
     },
     {
      "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
@@ -194,18 +196,17 @@
     "outlet:Government of India",
     "outlet:HT Media",
     "google-news:PM Modi says cultural connect can guarantee global peace",
-    "google-news:PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News",
-    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "google-news:India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar”s Vaishali"
    ],
    "top": {
-    "IN": 1,
     "IN-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 0.6,
    "top_headlines": [
-    "'Trampling Sikh sentiments': Congress questions naming of Bihar bridge as Nitish Setu",
     "PM Modi says cultural connect can guarantee global peace",
-    "PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News"
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": []
   },
@@ -232,12 +233,11 @@
     "Network18",
     "The Hindu Group",
     "NDTV",
-    "TV9 Network",
     "India Today Group",
     "HT Media"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -247,13 +247,12 @@
     "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend"
    ],
    "hindi_headlines": [
-    "सीएम योगी आदित्यनाथ ने नम आंखों से मां सावित्री देवी को हरिद्वार में दी अंतिम विदाई",
     "उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ के परिवार में कौन-कौन? 7 भाई-बहनों में सीएम किस नंबर पर?",
     "मां को कंधा देते समय फूट-फूट कर रोये CM योगी आदित्यनाथ",
     "पीएम मोदी ने यूपी सीएम योगी आदित्यनाथ से की बात, मां के निधन पर जताया दुख",
-    "मां के पार्थिव शरीर को देख CM योगी आदित्यनाथ की आंख में आ गए आंसू, हरिद्वार में आज अंतिम संस्कार"
+    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
-   "hindi_news": 6,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -307,116 +306,22 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "outlet:TV9 Network",
     "outlet:India Today Group",
     "outlet:HT Media",
     "google-news:यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
    "top": {
-    "IN-hi": 2,
-    "IN-nation": 20,
-    "IN-hi-nation": 9
+    "IN-hi": 10,
+    "IN-hi-nation": 7
    },
-   "top_score": 1.145,
+   "top_score": 0.76,
    "top_headlines": [
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया",
-    "Kangana Ranaut, Ravi Kishan, Arun Govil and Manoj Muntashir mourn Yogi Adityanath’s mother Savitri Devi:"
+    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
    "hindi_owners": [
-    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
-  },
-  {
-   "id": "kh-20261121-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "California investigates Nvidia over whether chip exports ended up in China",
-   "story_keys": [
-    "chip",
-    "export"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T02:56:21+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "California investigates Nvidia over whether chip exports ended up in China",
-    ":o new curbs needed on Nvidia chip exports: US",
-    "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के हुआंग का नया कनेक्शन, इंडियाज गॉट लेटेंट में नया बवाल; टॉप-5 न्यूज"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "California investigates Nvidia over whether chip exports ended up in China",
-     "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T09:18:30+00:00"
-    },
-    {
-     "title": "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-     "url": "https://www.livemint.com/news/us-news/trump-backs-huangs-return-as-nvidia-ceo-says-xi-jinping-called-him-brilliant-as-us-maintains-china-chip-policy-11795229406386.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:56:21+00:00"
-    },
-    {
-     "title": ":o new curbs needed on Nvidia chip exports: US",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-treasury-secretary-says-no-further-restrictions-needed-for-nvidia-chip-exports-to-china/articleshow/136042468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:04:31+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "google-news:Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261121-Q7888355",
@@ -517,105 +422,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261121-Q6668646",
-   "qid": "Q6668646",
-   "title": "KL Rahul",
-   "name": "KL Rahul",
-   "phrase": "KL Rahul",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-   "story_keys": [
-    "century",
-    "first",
-    "two"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T06:11:47+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-    "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
-    "IND vs NZ: KL Rahul hits century, Gill misses ton by two runs as India dominate",
-    "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "के॰ एल॰ राहुल",
-   "reports": [
-    {
-     "title": "IND vs NZ: KL Rahul hits century, Gill misses ton by two runs as India dominate",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-1st-test-kl-rahul-hits-century-shubman-gill-misses-ton-by-two-runs-as-india-dominate/articleshow/136046678.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:11:47+00:00"
-    },
-    {
-     "title": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-kl-rahul-yashasvi-jaiswal-and-devdutt-padikkal-achieve-rare-feat-with-two-century-stands-in-first-test/articleshow/136044883.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:05:41+00:00"
-    },
-    {
-     "title": "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
-     "url": "https://www.hindustantimes.com/cricket/kl-rahul-becomes-first-indian-opener-to-score-test-century-in-all-sena-countries-101795224097923.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:47:00+00:00"
-    },
-    {
-     "title": "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-kl-rahul-century-elite-sena-club-wellington-test-virat-kohli-3043651-2026-11-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:26:48+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 5
-   },
-   "top_score": 0.84,
-   "top_headlines": [
-    "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
-   ],
-   "hindi_owners": []
   },
   {
    "id": "kh-20261121-Q5184955",
@@ -773,7 +579,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:02:48.364653+00:00",
+   "news_at": "2026-11-21T09:16:27.163052+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1027,30 +833,30 @@
    "story": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
    "story_keys": [
     "back",
+    "century",
     "hits",
     "jibe",
-    "war"
+    "question"
    ],
    "date": "2026-11-20",
    "news_at": "2026-11-21T07:27:28+00:00",
    "owners": [
     "Network18",
-    "Al Jazeera Media Network",
+    "HT Media",
     "The Hindu Group",
     "DB Corp",
-    "HT Media",
     "NDTV"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
-    "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post"
+    "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
     "रिजिजू बोले- 1962 युद्ध पर कांग्रेस माफी मांगे:केंद्रीय मंत्री ने राहुल गांधी के ‘कम्प्रोमाइज्ड PM’ वाले तंज पर 4 सवाल पूछे",
@@ -1059,7 +865,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -1069,16 +875,6 @@
    "label_hi": "राहुल गाँधी",
    "reports": [
     {
-     "title": "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/rahul-gandhi-backs-strong-india-israel-ties-despite-gaza-war?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T23:20:50+00:00"
-    },
-    {
      "title": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
      "url": "https://www.thehindu.com/news/national/kiren-rijiju-hits-back-at-rahul-gandhis-compromised-pm-jibe-questions-congress-on-1962-war-poverty/article71727457.ece",
      "outlet": "The Hindu",
@@ -1087,6 +883,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-21T07:27:28+00:00"
+    },
+    {
+     "title": "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+     "url": "https://www.hindustantimes.com/india-news/selective-political-commentary-traders-body-hits-out-at-rahul-gandhi-s-remarks-on-demonetisation-gst-101795232556570.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:43:53+00:00"
     },
     {
      "title": "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
@@ -1101,28 +907,30 @@
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:HT Media",
     "outlet:NDTV",
+    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post",
     "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
    ],
    "top": {
-    "IN-nation": 18
+    "IN-nation": 10,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.09,
+   "top_score": 0.39,
    "top_headlines": [
+    "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
-    "DB Corp",
-    "HT Media"
+    "DB Corp"
    ],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "paisa"
   },
   {
    "id": "kh-20261121-Q7888355",
@@ -1341,96 +1149,6 @@
    "lane": "obituary"
   },
   {
-   "id": "kh-20261121-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "California investigates Nvidia over whether chip exports ended up in China",
-   "story_keys": [
-    "chip",
-    "export"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T02:56:21+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "California investigates Nvidia over whether chip exports ended up in China",
-    ":o new curbs needed on Nvidia chip exports: US",
-    "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के हुआंग का नया कनेक्शन, इंडियाज गॉट लेटेंट में नया बवाल; टॉप-5 न्यूज"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "California investigates Nvidia over whether chip exports ended up in China",
-     "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T09:18:30+00:00"
-    },
-    {
-     "title": "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-     "url": "https://www.livemint.com/news/us-news/trump-backs-huangs-return-as-nvidia-ceo-says-xi-jinping-called-him-brilliant-as-us-maintains-china-chip-policy-11795229406386.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:56:21+00:00"
-    },
-    {
-     "title": ":o new curbs needed on Nvidia chip exports: US",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-treasury-secretary-says-no-further-restrictions-needed-for-nvidia-chip-exports-to-china/articleshow/136042468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:04:31+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "google-news:Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
-  },
-  {
    "qid": null,
    "title": "2026 Bayelsa boat disaster",
    "fame": 50000,
@@ -1470,7 +1188,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:02:48.364653+00:00",
+   "news_at": "2026-11-21T09:16:27.163052+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -1653,8 +1371,8 @@
   }
  ],
  "notes": [
-  "outlets: 1674 headlines from 48 feeds (18 owners), 10 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 7 kh- stories (on): kh-20261121-Q10218, kh-20261121-Q1058, wk-Q4683097, kh-20261121-Q182477; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Meta / Youth Congress: no Wikipedia article that can be its centre",
+  "outlets: 1678 headlines from 48 feeds (18 owners), 11 matched to articles, 5 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 5 kh- stories (on): kh-20261121-Q10218, kh-20261121-Q1058, wk-Q4683097, kh-20261121-Q7888355; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer KL Rahul: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
  ],
@@ -1663,11 +1381,11 @@
   "outlet ie-business: HTTPError: 403 Client Error: Forbidden for url: https://indianexpress.com/section/business/feed/"
  ],
  "outlets": {
-  "headlines": 1674,
+  "headlines": 1678,
   "feeds": 48,
   "owners": 18,
-  "matched": 10,
-  "corroborated": 7
+  "matched": 11,
+  "corroborated": 5
  },
  "emerging": [],
  "explainers": [
@@ -1684,30 +1402,30 @@
    "story": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
    "story_keys": [
     "back",
+    "century",
     "hits",
     "jibe",
-    "war"
+    "question"
    ],
    "date": "2026-11-20",
    "news_at": "2026-11-21T07:27:28+00:00",
    "owners": [
     "Network18",
-    "Al Jazeera Media Network",
+    "HT Media",
     "The Hindu Group",
     "DB Corp",
-    "HT Media",
     "NDTV"
    ],
-   "fame": 350000,
-   "news": 350000,
+   "fame": 325000,
+   "news": 325000,
    "views": 0,
    "traffic": 0,
    "headlines": [
     "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
     "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
-    "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post"
+    "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_headlines": [
     "रिजिजू बोले- 1962 युद्ध पर कांग्रेस माफी मांगे:केंद्रीय मंत्री ने राहुल गांधी के ‘कम्प्रोमाइज्ड PM’ वाले तंज पर 4 सवाल पूछे",
@@ -1716,7 +1434,7 @@
     "राजस्थान पंचायत चुनाव के नतीजों से राहुल गांधी गदगद, बोले- सीधे 'डबल इंजन' को जवाब",
     "'देश को नीचा दिखाने में लगे हैं राहुल गांधी', कांग्रेस नेता पर क्यों भड़कीं हेमा मालिनी; खूब सुनाया"
    ],
-   "hindi_news": 10,
+   "hindi_news": 9,
    "geos": [
     "IN"
    ],
@@ -1726,16 +1444,6 @@
    "label_hi": "राहुल गाँधी",
    "reports": [
     {
-     "title": "Rahul Gandhi backs strong India-Israel ties despite Gaza war",
-     "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/rahul-gandhi-backs-strong-india-israel-ties-despite-gaza-war?traffic_source=rss",
-     "outlet": "Al Jazeera",
-     "outlet_hi": "अल जज़ीरा",
-     "owner": "Al Jazeera Media Network",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T23:20:50+00:00"
-    },
-    {
      "title": "Kiren Rijiju hits back at Rahul Gandhi’s 'compromised PM' jibe, questions Congress on 1962 war, poverty",
      "url": "https://www.thehindu.com/news/national/kiren-rijiju-hits-back-at-rahul-gandhis-compromised-pm-jibe-questions-congress-on-1962-war-poverty/article71727457.ece",
      "outlet": "The Hindu",
@@ -1744,6 +1452,16 @@
      "group": "Indian national",
      "lang": "en",
      "at": "2026-11-21T07:27:28+00:00"
+    },
+    {
+     "title": "‘Selective political commentary’: Traders’ body hits out at Rahul Gandhi’s remarks on demonetisation, GST",
+     "url": "https://www.hindustantimes.com/india-news/selective-political-commentary-traders-body-hits-out-at-rahul-gandhi-s-remarks-on-demonetisation-gst-101795232556570.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:43:53+00:00"
     },
     {
      "title": "Rahul Gandhi's 'Side Player' Jibe At Modi: Is India Losing Its Global Influence? BJP Hits Back",
@@ -1758,28 +1476,30 @@
    ],
    "via": [
     "outlet:Network18",
-    "outlet:Al Jazeera Media Network",
+    "outlet:HT Media",
     "outlet:The Hindu Group",
     "outlet:DB Corp",
-    "outlet:HT Media",
     "outlet:NDTV",
+    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
     "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
-    "google-news:1962 To Poverty: Kiren Rijiju's 4 Questions To Congress Over Rahul Gandhi 'Compromised PM' Post",
     "google-news:राजस्थान पंचायत चुनाव में जीत से गदगद हुए राहुल गांधी, बताया क्यों हारी बीजेपी"
    ],
    "top": {
-    "IN-nation": 18
+    "IN-nation": 10,
+    "IN-hi-nation": 17
    },
-   "top_score": 0.09,
+   "top_score": 0.39,
    "top_headlines": [
+    "विदेश में बोलने की राहुल गांधी की रणनीति का राजनीतिक फ़ायदा और नुक़सान क्या है?",
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "'Sonia Gandhi was real owner of Maruti': BJP's Nishikant Dubey makes big claim; raises questions over '19",
     "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": [
-    "DB Corp",
-    "HT Media"
+    "DB Corp"
    ],
    "audience": "india",
-   "lane": "rajneeti"
+   "lane": "paisa"
   },
   {
    "id": "kh-20261121-Q1058",
@@ -1798,7 +1518,7 @@
     "forum"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:03:07.281433+00:00",
+   "news_at": "2026-11-21T09:16:50.523594+00:00",
    "owners": [
     "Network18",
     "Government of India",
@@ -1814,7 +1534,7 @@
     "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
     "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
     "PM Modi says cultural connect can guarantee global peace",
-    "PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News"
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting"
    ],
    "hindi_headlines": [
     "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
@@ -1836,7 +1556,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T09:03:07.281433+00:00"
+     "at": "2026-11-21T09:16:50.523594+00:00"
     },
     {
      "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
@@ -1864,18 +1584,17 @@
     "outlet:Government of India",
     "outlet:HT Media",
     "google-news:PM Modi says cultural connect can guarantee global peace",
-    "google-news:PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News",
-    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "google-news:'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "google-news:India News Live Updates, 21 November 2026: PM Modi inaugurates bridge named after Nitish Kumar in Bihar”s Vaishali"
    ],
    "top": {
-    "IN": 1,
     "IN-nation": 1
    },
-   "top_score": 1.3,
+   "top_score": 0.6,
    "top_headlines": [
-    "'Trampling Sikh sentiments': Congress questions naming of Bihar bridge as Nitish Setu",
     "PM Modi says cultural connect can guarantee global peace",
-    "PM Modi to inaugurate ‘Nitish Setu’ in Bihar today: What we know about six-lane, cable-stayed bridge | India News"
+    "'If Congress were in power...': Rahul Gandhi targets PM Modi over Trump-Xi-Putin trilateral meeting",
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
    ],
    "hindi_owners": []
   },
@@ -1902,12 +1621,11 @@
     "Network18",
     "The Hindu Group",
     "NDTV",
-    "TV9 Network",
     "India Today Group",
     "HT Media"
    ],
-   "fame": 275000,
-   "news": 275000,
+   "fame": 250000,
+   "news": 250000,
    "views": 0,
    "traffic": 0,
    "headlines": [
@@ -1917,13 +1635,12 @@
     "Yogi Adityanath Performs Mother's Last Rites In Haridwar, Many Leaders Attend"
    ],
    "hindi_headlines": [
-    "सीएम योगी आदित्यनाथ ने नम आंखों से मां सावित्री देवी को हरिद्वार में दी अंतिम विदाई",
     "उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ के परिवार में कौन-कौन? 7 भाई-बहनों में सीएम किस नंबर पर?",
     "मां को कंधा देते समय फूट-फूट कर रोये CM योगी आदित्यनाथ",
     "पीएम मोदी ने यूपी सीएम योगी आदित्यनाथ से की बात, मां के निधन पर जताया दुख",
-    "मां के पार्थिव शरीर को देख CM योगी आदित्यनाथ की आंख में आ गए आंसू, हरिद्वार में आज अंतिम संस्कार"
+    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
-   "hindi_news": 6,
+   "hindi_news": 4,
    "geos": [
     "IN"
    ],
@@ -1977,116 +1694,22 @@
     "outlet:Network18",
     "outlet:The Hindu Group",
     "outlet:NDTV",
-    "outlet:TV9 Network",
     "outlet:India Today Group",
     "outlet:HT Media",
     "google-news:यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
    "top": {
-    "IN-hi": 2,
-    "IN-nation": 20,
-    "IN-hi-nation": 9
+    "IN-hi": 10,
+    "IN-hi-nation": 7
    },
-   "top_score": 1.145,
+   "top_score": 0.76,
    "top_headlines": [
-    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया",
-    "Kangana Ranaut, Ravi Kishan, Arun Govil and Manoj Muntashir mourn Yogi Adityanath’s mother Savitri Devi:"
+    "यूपी के CM योगी आदित्यनाथ की माताजी का अंतिम संस्कार आज, जानें कहां होगी अंतिम क्रिया"
    ],
    "hindi_owners": [
-    "TV9 Network",
     "NDTV",
     "India Today Group"
    ]
-  },
-  {
-   "id": "kh-20261121-Q182477",
-   "qid": "Q182477",
-   "title": "Nvidia",
-   "name": "Nvidia",
-   "phrase": "Nvidia",
-   "person": false,
-   "kind": "explainer",
-   "category": "economy",
-   "category_hi": "अर्थव्यवस्था",
-   "story": "California investigates Nvidia over whether chip exports ended up in China",
-   "story_keys": [
-    "chip",
-    "export"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T02:56:21+00:00",
-   "owners": [
-    "Guardian Media Group",
-    "Bennett, Coleman & Co.",
-    "HT Media"
-   ],
-   "fame": 200000,
-   "news": 200000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "California investigates Nvidia over whether chip exports ended up in China",
-    ":o new curbs needed on Nvidia chip exports: US",
-    "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_headlines": [
-    "एनवीडिया के हुआंग का नया कनेक्शन, इंडियाज गॉट लेटेंट में नया बवाल; टॉप-5 न्यूज"
-   ],
-   "hindi_news": 1,
-   "geos": [],
-   "region": "world",
-   "india_link": true,
-   "abroad": true,
-   "label_hi": "एनवीडिया",
-   "reports": [
-    {
-     "title": "California investigates Nvidia over whether chip exports ended up in China",
-     "url": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
-     "outlet": "The Guardian",
-     "outlet_hi": "द गार्डियन",
-     "owner": "Guardian Media Group",
-     "group": "international",
-     "lang": "en",
-     "at": "2026-11-20T09:18:30+00:00"
-    },
-    {
-     "title": "Trump backs Huang's return as Nvidia CEO, says Xi Jinping called him 'brilliant' as US maintains China chip policy",
-     "url": "https://www.livemint.com/news/us-news/trump-backs-huangs-return-as-nvidia-ceo-says-xi-jinping-called-him-brilliant-as-us-maintains-china-chip-policy-11795229406386.html",
-     "outlet": "Mint",
-     "outlet_hi": "मिंट",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T02:56:21+00:00"
-    },
-    {
-     "title": ":o new curbs needed on Nvidia chip exports: US",
-     "url": "https://economictimes.indiatimes.com/news/international/world-news/us-treasury-secretary-says-no-further-restrictions-needed-for-nvidia-chip-exports-to-china/articleshow/136042468.cms",
-     "outlet": "The Economic Times",
-     "outlet_hi": "द इकोनॉमिक टाइम्स",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:04:31+00:00"
-    }
-   ],
-   "via": [
-    "outlet:Guardian Media Group",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:HT Media",
-    "google-news:Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "top": {
-    "IN": 17
-   },
-   "top_score": 0.2,
-   "top_headlines": [
-    "Nvidia HR Flagged Jensen Huang's Sexual Comments In 2005. He Was Fired"
-   ],
-   "hindi_owners": [],
-   "audience": "india",
-   "lane": "other"
   },
   {
    "id": "kh-20261121-Q7888355",
@@ -2187,105 +1810,6 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "other"
-  },
-  {
-   "id": "kh-20261121-Q6668646",
-   "qid": "Q6668646",
-   "title": "KL Rahul",
-   "name": "KL Rahul",
-   "phrase": "KL Rahul",
-   "person": true,
-   "kind": "explainer",
-   "category": "news",
-   "category_hi": "समाचार",
-   "story": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-   "story_keys": [
-    "century",
-    "first",
-    "two"
-   ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T06:11:47+00:00",
-   "owners": [
-    "HT Media",
-    "Bennett, Coleman & Co.",
-    "India Today Group"
-   ],
-   "fame": 75000,
-   "news": 75000,
-   "views": 0,
-   "traffic": 0,
-   "headlines": [
-    "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-    "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
-    "IND vs NZ: KL Rahul hits century, Gill misses ton by two runs as India dominate",
-    "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century"
-   ],
-   "hindi_headlines": [],
-   "hindi_news": 0,
-   "geos": [
-    "IN"
-   ],
-   "region": "india",
-   "india_link": true,
-   "abroad": false,
-   "label_hi": "के॰ एल॰ राहुल",
-   "reports": [
-    {
-     "title": "IND vs NZ: KL Rahul hits century, Gill misses ton by two runs as India dominate",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-1st-test-kl-rahul-hits-century-shubman-gill-misses-ton-by-two-runs-as-india-dominate/articleshow/136046678.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T06:11:47+00:00"
-    },
-    {
-     "title": "Rahul, Jaiswal and Padikkal achieve rare feat with two century stands in first Test",
-     "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/ind-vs-nz-kl-rahul-yashasvi-jaiswal-and-devdutt-padikkal-achieve-rare-feat-with-two-century-stands-in-first-test/articleshow/136044883.cms",
-     "outlet": "Times of India",
-     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
-     "owner": "Bennett, Coleman & Co.",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:05:41+00:00"
-    },
-    {
-     "title": "KL Rahul becomes first Indian opener to score Test century in all SENA countries",
-     "url": "https://www.hindustantimes.com/cricket/kl-rahul-becomes-first-indian-opener-to-score-test-century-in-all-sena-countries-101795224097923.html",
-     "outlet": "Hindustan Times",
-     "outlet_hi": "हिंदुस्तान टाइम्स",
-     "owner": "HT Media",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:47:00+00:00"
-    },
-    {
-     "title": "KL Rahul joins Kohli, Tendulkar in elite club after record Wellington century",
-     "url": "https://www.indiatoday.in/sports/cricket/story/ind-vs-nz-kl-rahul-century-elite-sena-club-wellington-test-virat-kohli-3043651-2026-11-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T01:26:48+00:00"
-    }
-   ],
-   "via": [
-    "outlet:HT Media",
-    "outlet:Bennett, Coleman & Co.",
-    "outlet:India Today Group"
-   ],
-   "top": {
-    "IN": 9,
-    "IN-nation": 5
-   },
-   "top_score": 0.84,
-   "top_headlines": [
-    "A new Nepal, an old neighbour - Balendra Shah's India test on first visit"
-   ],
-   "hindi_owners": []
   },
   {
    "id": "kh-20261121-Q5184955",
