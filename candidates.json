@@ -1,5 +1,5 @@
 {
- "at": "2026-11-21T09:47:44+00:00",
+ "at": "2026-11-21T10:02:27+00:00",
  "trending": [
   {
    "id": "kh-20261121-Q1058",
@@ -17,7 +17,7 @@
     "forum"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:49:02.804057+00:00",
+   "news_at": "2026-11-21T10:04:06.976237+00:00",
    "owners": [
     "Network18",
     "Government of India",
@@ -31,9 +31,9 @@
     "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
     "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
     "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-    "PM Modi says cultural connect can guarantee global peace",
     "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
+    "New Garia to Sector V in 30 mins: PM Modi to launch Kolkata Metro stretch soon"
    ],
    "hindi_headlines": [
     "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
@@ -55,7 +55,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T09:49:02.804057+00:00"
+     "at": "2026-11-21T10:04:06.976237+00:00"
     },
     {
      "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
@@ -82,18 +82,18 @@
     "outlet:Network18",
     "outlet:Government of India",
     "outlet:HT Media",
-    "google-news:PM Modi says cultural connect can guarantee global peace",
     "google-news:Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
+    "google-news:New Garia to Sector V in 30 mins: PM Modi to launch Kolkata Metro stretch soon"
    ],
    "top": {
-    "IN-nation": 1
+    "IN": 3,
+    "IN-nation": 7
    },
-   "top_score": 0.6,
+   "top_score": 1.11,
    "top_headlines": [
-    "PM Modi says cultural connect can guarantee global peace",
-    "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
+    "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News"
    ],
    "hindi_owners": []
   },
@@ -200,13 +200,9 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -319,36 +315,41 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261121-Q5184955",
-   "qid": "Q5184955",
-   "title": "Cricket Association for the Blind in India",
-   "name": "Cricket Association for the Blind in India",
-   "phrase": "Blind Asia Cup",
+   "id": "kh-20261121-Q3351379",
+   "qid": "Q3351379",
+   "title": "Indian Youth Congress",
+   "name": "Indian Youth Congress",
+   "phrase": "Youth Congress",
    "person": false,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
    "story_keys": [
-    "cricket",
-    "row",
-    "team"
+    "account",
+    "issue",
+    "office",
+    "storm",
+    "worker"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T08:05:12+00:00",
+   "news_at": "2026-11-21T08:01:17+00:00",
    "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
     "HT Media",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-    "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-    "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row"
+    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+    "Youth Congress vandalises Meta offices in Hyd, Bom"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -358,50 +359,356 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "भारतीय युवा कांग्रेस",
    "reports": [
     {
-     "title": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-     "url": "https://sports.ndtv.com/cricket/conflict-of-interest-in-asia-cup-row-involving-pakistan-indian-blind-cricket-team-left-fuming-12356338#publisher=newsstand",
+     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:01:17+00:00"
+    },
+    {
+     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T08:05:12+00:00"
+     "at": "2026-11-21T07:06:26+00:00"
     },
     {
-     "title": "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row",
-     "url": "https://www.indiatoday.in/sports/cricket/story/india-blind-cricket-durga-rao-pakistan-asia-cup-final-controversy-exclusive-3043727-2026-11-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:43:54+00:00"
-    },
-    {
-     "title": "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-     "url": "https://www.hindustantimes.com/cricket/india-blind-cricket-team-boycotts-presentation-after-pakistan-were-awarded-asia-cup-title-101795187562300.html",
+     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T15:17:09+00:00"
+     "at": "2026-11-21T04:49:05+00:00"
+    },
+    {
+     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:50:30+00:00"
+    },
+    {
+     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:08:50+00:00"
     }
    ],
    "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:India Today Group"
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 2
+   },
+   "top_score": 1.235,
+   "top_headlines": [
+    "Meta's India offices hit by opposition protests over account removals"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+   "story_keys": [
+    "captaincy",
+    "lose"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T03:57:51+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+    "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+    "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+    "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+    "'To protect integrity': CA drops big statement on Cummins captaincy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "'To protect integrity': CA drops big statement on Cummins captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/to-protect-integrity-of-australian-cricket-ca-drops-big-statement-on-cummins-captaincy-amid-sandpapergate-row/articleshow/136044252.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:57:51+00:00"
+    },
+    {
+     "title": "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+     "url": "https://www.indiatoday.in/sports/cricket/story/pat-cummins-australia-captaincy-future-sandpapergate-ca-forum-3043673-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:09:26+00:00"
+    },
+    {
+     "title": "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+     "url": "https://www.hindustantimes.com/cricket/josh-hazlewood-says-he-would-consider-his-australia-future-if-pat-cummins-loses-captaincy-back-everything-he-said-in-his-press-conference-101795227708728.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T02:40:03+00:00"
+    },
+    {
+     "title": "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/josh-hazlewood-threatens-to-quit-if-great-leader-pat-cummins-loses-captaincy-as-sandpapergate-rocks-australia-cricket/articleshow/136041696.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:32:27+00:00"
+    },
+    {
+     "title": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+     "url": "https://www.indiatoday.in/sports/cricket/story/josh-hazlewood-backs-pat-cummins-sandpapergate-australia-test-exit-3043645-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:11:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+   "story_keys": [
+    "board",
+    "fresh",
+    "meeting",
+    "recording"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T06:30:06+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Indian Express Group",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+    "Noel Tata fires fresh salvo at Tata Sons board",
+    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
+   ],
+   "hindi_headlines": [
+    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नोएल टाटा",
+   "reports": [
+    {
+     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
+     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:30:06+00:00"
+    },
+    {
+     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:46:53+00:00"
+    },
+    {
+     "title": "Noel Tata fires fresh salvo at Tata Sons board",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T00:00:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Indian Express Group",
+    "outlet:NDTV"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q1487",
+   "qid": "Q1487",
+   "title": "Hacker",
+   "name": "hacker",
+   "phrase": "Hackers",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+   "story_keys": [
+    "again",
+    "target"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:09:27+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+    "FBI hacked again: Hackers target crime database",
+    "Hackers Target US Agriculture Department, FBI Days After Tech Outages"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Hackers Target US Agriculture Department, FBI Days After Tech Outages",
+     "url": "https://www.ndtv.com/world-news/hackers-target-us-agriculture-department-fbi-days-after-tech-outages-12357720#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:09:27+00:00"
+    },
+    {
+     "title": "FBI hacked again: Hackers target crime database",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/fbi-hacked-again-hackers-target-worlds-top-investigating-agencys-crime-database-used-by-police-across-us/articleshow/136044594.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:22:56+00:00"
+    },
+    {
+     "title": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+     "url": "https://www.livemint.com/news/us-news/hackers-target-fbi-again-second-breach-since-september-kash-patel-says-bureau-taking-on-cybercriminals-globally-11795233961169.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:12:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q1806102",
@@ -474,7 +781,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:47:44.824584+00:00",
+   "news_at": "2026-11-21T10:02:27.253950+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -716,36 +1023,131 @@
  ],
  "candidates": [
   {
-   "id": "kh-20261121-Q5184955",
-   "qid": "Q5184955",
-   "title": "Cricket Association for the Blind in India",
-   "name": "Cricket Association for the Blind in India",
-   "phrase": "Blind Asia Cup",
-   "person": false,
+   "id": "kh-20261121-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
+   "person": true,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
    "story_keys": [
-    "cricket",
-    "row",
-    "team"
+    "board",
+    "fresh",
+    "meeting",
+    "recording"
    ],
-   "date": "2026-11-20",
-   "news_at": "2026-11-21T08:05:12+00:00",
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T06:30:06+00:00",
    "owners": [
-    "HT Media",
-    "NDTV",
-    "India Today Group"
+    "Bennett, Coleman & Co.",
+    "Indian Express Group",
+    "NDTV"
    ],
    "fame": 75000,
    "news": 75000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-    "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-    "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row"
+    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+    "Noel Tata fires fresh salvo at Tata Sons board",
+    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
+   ],
+   "hindi_headlines": [
+    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नोएल टाटा",
+   "reports": [
+    {
+     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
+     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:30:06+00:00"
+    },
+    {
+     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:46:53+00:00"
+    },
+    {
+     "title": "Noel Tata fires fresh salvo at Tata Sons board",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T00:00:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Indian Express Group",
+    "outlet:NDTV"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
+   "audience": "india",
+   "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q3351379",
+   "qid": "Q3351379",
+   "title": "Indian Youth Congress",
+   "name": "Indian Youth Congress",
+   "phrase": "Youth Congress",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+   "story_keys": [
+    "account",
+    "issue",
+    "office",
+    "storm",
+    "worker"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T08:01:17+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
+    "HT Media",
+    "NDTV"
+   ],
+   "fame": 100000,
+   "news": 100000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+    "Youth Congress vandalises Meta offices in Hyd, Bom"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -755,50 +1157,162 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "भारतीय युवा कांग्रेस",
    "reports": [
     {
-     "title": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-     "url": "https://sports.ndtv.com/cricket/conflict-of-interest-in-asia-cup-row-involving-pakistan-indian-blind-cricket-team-left-fuming-12356338#publisher=newsstand",
+     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:01:17+00:00"
+    },
+    {
+     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T08:05:12+00:00"
+     "at": "2026-11-21T07:06:26+00:00"
     },
     {
-     "title": "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row",
-     "url": "https://www.indiatoday.in/sports/cricket/story/india-blind-cricket-durga-rao-pakistan-asia-cup-final-controversy-exclusive-3043727-2026-11-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:43:54+00:00"
-    },
-    {
-     "title": "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-     "url": "https://www.hindustantimes.com/cricket/india-blind-cricket-team-boycotts-presentation-after-pakistan-were-awarded-asia-cup-title-101795187562300.html",
+     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T15:17:09+00:00"
+     "at": "2026-11-21T04:49:05+00:00"
+    },
+    {
+     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:50:30+00:00"
+    },
+    {
+     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:08:50+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
+    "outlet:HT Media",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 2
+   },
+   "top_score": 1.235,
+   "top_headlines": [
+    "Meta's India offices hit by opposition protests over account removals"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q1487",
+   "qid": "Q1487",
+   "title": "Hacker",
+   "name": "hacker",
+   "phrase": "Hackers",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+   "story_keys": [
+    "again",
+    "target"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:09:27+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+    "FBI hacked again: Hackers target crime database",
+    "Hackers Target US Agriculture Department, FBI Days After Tech Outages"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Hackers Target US Agriculture Department, FBI Days After Tech Outages",
+     "url": "https://www.ndtv.com/world-news/hackers-target-us-agriculture-department-fbi-days-after-tech-outages-12357720#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:09:27+00:00"
+    },
+    {
+     "title": "FBI hacked again: Hackers target crime database",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/fbi-hacked-again-hackers-target-worlds-top-investigating-agencys-crime-database-used-by-police-across-us/articleshow/136044594.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:22:56+00:00"
+    },
+    {
+     "title": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+     "url": "https://www.livemint.com/news/us-news/hackers-target-fbi-again-second-breach-since-september-kash-patel-says-bureau-taking-on-cybercriminals-globally-11795233961169.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:12:23+00:00"
     }
    ],
    "via": [
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:India Today Group"
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
    ],
-   "top": {},
-   "top_score": 0.0,
-   "top_headlines": [],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
+   ],
    "hindi_owners": [],
-   "audience": "india",
-   "lane": "naam-niyam"
+   "audience": "world",
+   "lane": "other"
   },
   {
    "qid": "Q7175059",
@@ -871,7 +1385,7 @@
    "views": 0,
    "traffic": 0,
    "news": 0,
-   "news_at": "2026-11-21T09:47:44.824584+00:00",
+   "news_at": "2026-11-21T10:02:27.253950+00:00",
    "headlines": [],
    "hindi_news": 0,
    "hindi_headlines": [],
@@ -927,6 +1441,110 @@
    "hindi_owners": [],
    "audience": "world",
    "lane": "obituary"
+  },
+  {
+   "id": "kh-20261121-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+   "story_keys": [
+    "captaincy",
+    "lose"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T03:57:51+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+    "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+    "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+    "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+    "'To protect integrity': CA drops big statement on Cummins captaincy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "'To protect integrity': CA drops big statement on Cummins captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/to-protect-integrity-of-australian-cricket-ca-drops-big-statement-on-cummins-captaincy-amid-sandpapergate-row/articleshow/136044252.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:57:51+00:00"
+    },
+    {
+     "title": "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+     "url": "https://www.indiatoday.in/sports/cricket/story/pat-cummins-australia-captaincy-future-sandpapergate-ca-forum-3043673-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:09:26+00:00"
+    },
+    {
+     "title": "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+     "url": "https://www.hindustantimes.com/cricket/josh-hazlewood-says-he-would-consider-his-australia-future-if-pat-cummins-loses-captaincy-back-everything-he-said-in-his-press-conference-101795227708728.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T02:40:03+00:00"
+    },
+    {
+     "title": "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/josh-hazlewood-threatens-to-quit-if-great-leader-pat-cummins-loses-captaincy-as-sandpapergate-rocks-australia-cricket/articleshow/136041696.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:32:27+00:00"
+    },
+    {
+     "title": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+     "url": "https://www.indiatoday.in/sports/cricket/story/josh-hazlewood-backs-pat-cummins-sandpapergate-australia-test-exit-3043645-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:11:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   },
   {
    "id": "kh-20261121-Q116758847",
@@ -1163,17 +1781,17 @@
   }
  ],
  "notes": [
-  "outlets: 1740 headlines from 50 feeds (19 owners), 2 matched to articles, 4 candidates with 2+ owners, 0 nw- stories (on)",
-  "explainers: 4 kh- stories (on): kh-20261121-Q1058, kh-20261121-Q6668646, kh-20261121-Q116758847, kh-20261121-Q5184955; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre; explainer Meta / Youth Congress: no Wikipedia article that can be its centre",
+  "outlets: 1746 headlines from 50 feeds (19 owners), 9 matched to articles, 7 candidates with 2+ owners, 0 nw- stories (on)",
+  "explainers: 7 kh- stories (on): kh-20261121-Q1058, kh-20261121-Q6668646, kh-20261121-Q116758847, kh-20261121-Q3351379; dropped: explainer \"'Dadasaheb Phalke Film Awards': Taylor Swift, Kamal Haasan, \": no name to tell it by; explainer Nitish Setu’: fewer than 3 owners' headlines name it and the story; explainer Myanmar / Rohingya: no Wikipedia article that can be its centre",
   "skip wk-Q3138557: Orbitwire published (wk-Q3138557), not high-profile enough to tell again",
   "skip wk-Q321457: Orbitwire published (wk-Q321457), not high-profile enough to tell again"
  ],
  "outlets": {
-  "headlines": 1740,
+  "headlines": 1746,
   "feeds": 50,
   "owners": 19,
-  "matched": 2,
-  "corroborated": 4
+  "matched": 9,
+  "corroborated": 7
  },
  "emerging": [],
  "explainers": [
@@ -1193,7 +1811,7 @@
     "forum"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T09:49:02.804057+00:00",
+   "news_at": "2026-11-21T10:04:06.976237+00:00",
    "owners": [
     "Network18",
     "Government of India",
@@ -1207,9 +1825,9 @@
     "Prime Minister Shri Narendra Modi inaugurates First SCO Civilisational Dialogue Forum",
     "'Feed Him Biryani': Congress Targets BJP After PM Modi, Pak Minister Sit In Front Row At SCO Forum",
     "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
-    "PM Modi says cultural connect can guarantee global peace",
     "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
+    "New Garia to Sector V in 30 mins: PM Modi to launch Kolkata Metro stretch soon"
    ],
    "hindi_headlines": [
     "प्रधानमंत्री श्री नरेन्‍द्र मोदी ने प्रथम एससीओ सभ्यतागत संवाद फोरम का उद्घाटन किया"
@@ -1231,7 +1849,7 @@
      "owner": "Government of India",
      "group": "official",
      "lang": "en",
-     "at": "2026-11-21T09:49:02.804057+00:00"
+     "at": "2026-11-21T10:04:06.976237+00:00"
     },
     {
      "title": "Congress slams PM Modi govt over ‘red carpet’ for Pakistan minister at SCO dialogue, cites Pahalgam",
@@ -1258,18 +1876,18 @@
     "outlet:Network18",
     "outlet:Government of India",
     "outlet:HT Media",
-    "google-news:PM Modi says cultural connect can guarantee global peace",
     "google-news:Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "google-news:Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’",
+    "google-news:New Garia to Sector V in 30 mins: PM Modi to launch Kolkata Metro stretch soon"
    ],
    "top": {
-    "IN-nation": 1
+    "IN": 3,
+    "IN-nation": 7
    },
-   "top_score": 0.6,
+   "top_score": 1.11,
    "top_headlines": [
-    "PM Modi says cultural connect can guarantee global peace",
-    "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News",
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
+    "Pakistan Climate Minister arrives in Delhi to attend SCO Civilisations Dialogue Forum",
+    "Yogi Adityanath’s mother Savitri Devi dies at 91; PM Modi condoles demise | India News"
    ],
    "hindi_owners": []
   },
@@ -1376,13 +1994,9 @@
     "outlet:Network18",
     "outlet:Bennett, Coleman & Co."
    ],
-   "top": {
-    "IN-nation": 20
-   },
-   "top_score": 0.03,
-   "top_headlines": [
-    "Rahul Gandhi calls PM Modi’s Ficci address his ‘own confession’, reminds him that ‘monopoly doesn’t create jobs’"
-   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
    "hindi_owners": []
   },
   {
@@ -1495,36 +2109,41 @@
    "lane": "other"
   },
   {
-   "id": "kh-20261121-Q5184955",
-   "qid": "Q5184955",
-   "title": "Cricket Association for the Blind in India",
-   "name": "Cricket Association for the Blind in India",
-   "phrase": "Blind Asia Cup",
+   "id": "kh-20261121-Q3351379",
+   "qid": "Q3351379",
+   "title": "Indian Youth Congress",
+   "name": "Indian Youth Congress",
+   "phrase": "Youth Congress",
    "person": false,
    "kind": "explainer",
-   "category": "sport",
-   "category_hi": "खेल",
-   "story": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
    "story_keys": [
-    "cricket",
-    "row",
-    "team"
+    "account",
+    "issue",
+    "office",
+    "storm",
+    "worker"
    ],
    "date": "2026-11-20",
-   "news_at": "2026-11-21T08:05:12+00:00",
+   "news_at": "2026-11-21T08:01:17+00:00",
    "owners": [
+    "Bennett, Coleman & Co.",
+    "Network18",
     "HT Media",
-    "NDTV",
-    "India Today Group"
+    "NDTV"
    ],
-   "fame": 75000,
-   "news": 75000,
+   "fame": 100000,
+   "news": 100000,
    "views": 0,
    "traffic": 0,
    "headlines": [
-    "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-    "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-    "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row"
+    "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+    "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+    "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+    "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+    "Youth Congress vandalises Meta offices in Hyd, Bom"
    ],
    "hindi_headlines": [],
    "hindi_news": 0,
@@ -1534,50 +2153,356 @@
    "region": "india",
    "india_link": true,
    "abroad": false,
-   "label_hi": null,
+   "label_hi": "भारतीय युवा कांग्रेस",
    "reports": [
     {
-     "title": "'Conflict Of Interest' In Asia Cup Row Involving Pakistan? Indian Blind Cricket Team Left Fuming",
-     "url": "https://sports.ndtv.com/cricket/conflict-of-interest-in-asia-cup-row-involving-pakistan-indian-blind-cricket-team-left-fuming-12356338#publisher=newsstand",
+     "title": "Youth Congress vandalises Meta offices in Hyd, Bom",
+     "url": "https://economictimes.indiatimes.com/news/politics-and-nation/youth-congress-vandalises-meta-offices-in-hyderabad-and-mumbai-over-suspension-of-social-media-accounts/articleshow/136048468.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:01:17+00:00"
+    },
+    {
+     "title": "Congress Workers Damage Meta Mumbai, Hyderabad Offices Over Account Removals",
+     "url": "https://www.ndtv.com/india-news/youth-congress-protest-outside-hyderabad-meta-office-over-account-curbs-12356134#publisher=newsstand",
      "outlet": "NDTV",
      "outlet_hi": "एनडीटीवी",
      "owner": "NDTV",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-21T08:05:12+00:00"
+     "at": "2026-11-21T07:06:26+00:00"
     },
     {
-     "title": "India were cheated: Durga Rao slams Pakistan over Blind Asia Cup final row",
-     "url": "https://www.indiatoday.in/sports/cricket/story/india-blind-cricket-durga-rao-pakistan-asia-cup-final-controversy-exclusive-3043727-2026-11-21?utm_source=rss",
-     "outlet": "India Today",
-     "outlet_hi": "इंडिया टुडे",
-     "owner": "India Today Group",
-     "group": "Indian national",
-     "lang": "en",
-     "at": "2026-11-21T05:43:54+00:00"
-    },
-    {
-     "title": "India blind cricket team boycotts presentation after Pakistan were awarded Asia Cup title",
-     "url": "https://www.hindustantimes.com/cricket/india-blind-cricket-team-boycotts-presentation-after-pakistan-were-awarded-asia-cup-title-101795187562300.html",
+     "title": "Youth Congress issues 7-day ‘ultimatum’ to Meta over alleged censorship",
+     "url": "https://www.hindustantimes.com/india-news/youth-congress-issues-7-day-ultimatum-to-meta-over-alleged-censorship-101795235670731.html",
      "outlet": "Hindustan Times",
      "outlet_hi": "हिंदुस्तान टाइम्स",
      "owner": "HT Media",
      "group": "Indian national",
      "lang": "en",
-     "at": "2026-11-20T15:17:09+00:00"
+     "at": "2026-11-21T04:49:05+00:00"
+    },
+    {
+     "title": "Youth Congress Workers Storm Meta Office In Hyderabad Over Leaders' Account Suspensions, Create Chaos",
+     "url": "https://www.news18.com/india/youth-congress-workers-storm-meta-office-in-hyderabad-over-leaders-account-suspensions-create-chaos-10434700.html",
+     "outlet": "News18",
+     "outlet_hi": "न्यूज़18",
+     "owner": "Network18",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:50:30+00:00"
+    },
+    {
+     "title": "'Grow a spine': Youth Congress workers storm Meta office premises; issue ultimatum",
+     "url": "https://timesofindia.indiatimes.com/city/hyderabad/meta-blocks-youth-congress-leaders-accounts-workers-storm-hyderabad-office-damage-flower-pots-21-detained/articleshow/136034626.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T17:08:50+00:00"
     }
    ],
    "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Network18",
     "outlet:HT Media",
-    "outlet:NDTV",
-    "outlet:India Today Group"
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 2,
+    "IN-nation": 2
+   },
+   "top_score": 1.235,
+   "top_headlines": [
+    "Meta's India offices hit by opposition protests over account removals"
+   ],
+   "hindi_owners": [],
+   "audience": "india",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q7143348",
+   "qid": "Q7143348",
+   "title": "Pat Cummins",
+   "name": "Pat Cummins",
+   "phrase": "Pat Cummins",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+   "story_keys": [
+    "captaincy",
+    "lose"
+   ],
+   "date": "2026-11-20",
+   "news_at": "2026-11-21T03:57:51+00:00",
+   "owners": [
+    "India Today Group",
+    "Bennett, Coleman & Co.",
+    "HT Media"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+    "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+    "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+    "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+    "'To protect integrity': CA drops big statement on Cummins captaincy"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": true,
+   "label_hi": "पॅट कमिंस",
+   "reports": [
+    {
+     "title": "'To protect integrity': CA drops big statement on Cummins captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/to-protect-integrity-of-australian-cricket-ca-drops-big-statement-on-cummins-captaincy-amid-sandpapergate-row/articleshow/136044252.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:57:51+00:00"
+    },
+    {
+     "title": "Defiant Cummins won't quit captaincy, backs Australia's Sandpapergate forum",
+     "url": "https://www.indiatoday.in/sports/cricket/story/pat-cummins-australia-captaincy-future-sandpapergate-ca-forum-3043673-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T03:09:26+00:00"
+    },
+    {
+     "title": "Josh Hazlewood says he would consider his Australia future if Pat Cummins loses captaincy: ‘Back everything he said in his press conference’",
+     "url": "https://www.hindustantimes.com/cricket/josh-hazlewood-says-he-would-consider-his-australia-future-if-pat-cummins-loses-captaincy-back-everything-he-said-in-his-press-conference-101795227708728.html",
+     "outlet": "Hindustan Times",
+     "outlet_hi": "हिंदुस्तान टाइम्स",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T02:40:03+00:00"
+    },
+    {
+     "title": "Sandpapergate bombshell: Hazlewood hints at quitting if Cummins loses captaincy",
+     "url": "https://timesofindia.indiatimes.com/sports/cricket/news/josh-hazlewood-threatens-to-quit-if-great-leader-pat-cummins-loses-captaincy-as-sandpapergate-rocks-australia-cricket/articleshow/136041696.cms",
+     "outlet": "Times of India",
+     "outlet_hi": "टाइम्स ऑफ़ इंडिया",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:32:27+00:00"
+    },
+    {
+     "title": "Sandpapergate: Hazlewood threatens Test exit if Cummins loses Australia captaincy",
+     "url": "https://www.indiatoday.in/sports/cricket/story/josh-hazlewood-backs-pat-cummins-sandpapergate-australia-test-exit-3043645-2026-11-21?utm_source=rss",
+     "outlet": "India Today",
+     "outlet_hi": "इंडिया टुडे",
+     "owner": "India Today Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-20T23:11:45+00:00"
+    }
+   ],
+   "via": [
+    "outlet:India Today Group",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:HT Media"
    ],
    "top": {},
    "top_score": 0.0,
    "top_headlines": [],
    "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
+  },
+  {
+   "id": "kh-20261121-Q12779926",
+   "qid": "Q12779926",
+   "title": "Noel Tata",
+   "name": "Noel Tata",
+   "phrase": "Noel Tata",
+   "person": true,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+   "story_keys": [
+    "board",
+    "fresh",
+    "meeting",
+    "recording"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T06:30:06+00:00",
+   "owners": [
+    "Bennett, Coleman & Co.",
+    "Indian Express Group",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+    "Noel Tata fires fresh salvo at Tata Sons board",
+    "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row"
+   ],
+   "hindi_headlines": [
+    "Tata Sons में नया विवाद? नोएल टाटा ने बोर्ड मीटिंग की ऑडियो-वीडियो रिकॉर्डिंग मांगी, वेणु की भूमिका और चंद्रा के री-अपॉइंटमेंट पर सवाल"
+   ],
+   "hindi_news": 1,
+   "geos": [
+    "IN"
+   ],
+   "region": "india",
+   "india_link": true,
+   "abroad": false,
+   "label_hi": "नोएल टाटा",
+   "reports": [
+    {
+     "title": "Noel Tata Seeks Board Meeting Recordings Amid Tata Chairman Row",
+     "url": "https://www.ndtv.com/india-news/noel-tata-seeks-board-meeting-recordings-amid-tata-chairman-row-12357691#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T06:30:06+00:00"
+    },
+    {
+     "title": "Tata Sons may not accept Noel’s fresh demand for board meeting recordings",
+     "url": "https://indianexpress.com/article/business/tata-sons-board-noel-tata-demand-audio-video-recordings-n-chandrasekaran-reappointment-10972477/",
+     "outlet": "The Indian Express",
+     "outlet_hi": "द इंडियन एक्सप्रेस",
+     "owner": "Indian Express Group",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T05:46:53+00:00"
+    },
+    {
+     "title": "Noel Tata fires fresh salvo at Tata Sons board",
+     "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-chair-noel-tata-fires-stronger-salvo-at-tata-sons-board-in-new-letter/articleshow/136038611.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T00:00:00+00:00"
+    }
+   ],
+   "via": [
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:Indian Express Group",
+    "outlet:NDTV"
+   ],
+   "top": {},
+   "top_score": 0.0,
+   "top_headlines": [],
+   "hindi_owners": [
+    "NDTV"
+   ],
    "audience": "india",
    "lane": "naam-niyam"
+  },
+  {
+   "id": "kh-20261121-Q1487",
+   "qid": "Q1487",
+   "title": "Hacker",
+   "name": "hacker",
+   "phrase": "Hackers",
+   "person": false,
+   "kind": "explainer",
+   "category": "news",
+   "category_hi": "समाचार",
+   "story": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+   "story_keys": [
+    "again",
+    "target"
+   ],
+   "date": "2026-11-21",
+   "news_at": "2026-11-21T08:09:27+00:00",
+   "owners": [
+    "HT Media",
+    "Bennett, Coleman & Co.",
+    "NDTV"
+   ],
+   "fame": 75000,
+   "news": 75000,
+   "views": 0,
+   "traffic": 0,
+   "headlines": [
+    "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+    "FBI hacked again: Hackers target crime database",
+    "Hackers Target US Agriculture Department, FBI Days After Tech Outages"
+   ],
+   "hindi_headlines": [],
+   "hindi_news": 0,
+   "geos": [],
+   "region": "world",
+   "india_link": false,
+   "abroad": false,
+   "label_hi": null,
+   "reports": [
+    {
+     "title": "Hackers Target US Agriculture Department, FBI Days After Tech Outages",
+     "url": "https://www.ndtv.com/world-news/hackers-target-us-agriculture-department-fbi-days-after-tech-outages-12357720#publisher=newsstand",
+     "outlet": "NDTV",
+     "outlet_hi": "एनडीटीवी",
+     "owner": "NDTV",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T08:09:27+00:00"
+    },
+    {
+     "title": "FBI hacked again: Hackers target crime database",
+     "url": "https://economictimes.indiatimes.com/news/new-updates/fbi-hacked-again-hackers-target-worlds-top-investigating-agencys-crime-database-used-by-police-across-us/articleshow/136044594.cms",
+     "outlet": "The Economic Times",
+     "outlet_hi": "द इकोनॉमिक टाइम्स",
+     "owner": "Bennett, Coleman & Co.",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:22:56+00:00"
+    },
+    {
+     "title": "Hackers target FBI again, second breach since September; Kash Patel says bureau taking on cybercriminals globally",
+     "url": "https://www.livemint.com/news/us-news/hackers-target-fbi-again-second-breach-since-september-kash-patel-says-bureau-taking-on-cybercriminals-globally-11795233961169.html",
+     "outlet": "Mint",
+     "outlet_hi": "मिंट",
+     "owner": "HT Media",
+     "group": "Indian national",
+     "lang": "en",
+     "at": "2026-11-21T04:12:23+00:00"
+    }
+   ],
+   "via": [
+    "outlet:HT Media",
+    "outlet:Bennett, Coleman & Co.",
+    "outlet:NDTV"
+   ],
+   "top": {
+    "IN": 12
+   },
+   "top_score": 0.45,
+   "top_headlines": [
+    "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times"
+   ],
+   "hindi_owners": [],
+   "audience": "world",
+   "lane": "other"
   }
  ]
 }
